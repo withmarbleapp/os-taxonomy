@@ -2,11 +2,12 @@
   "note": "Standards extracted from external frameworks. Each carries its own upstream license — see PROVENANCE.md. Sources marked textIncluded:false ship codes/keys only.",
   "codesOnlySources": [
     "c3-social-studies",
+    "head-start-elof",
     "ib-pyp-pspe",
     "ngss-k5",
     "ngss-ms"
   ],
-  "curriculumCount": 7,
+  "curriculumCount": 8,
   "curricula": [
     {
       "slug": "uk-nc-2013",
@@ -37397,6 +37398,102 @@
         {
           "key": "ngss-ms:MS-PS4-3",
           "code": "MS-PS4-3"
+        }
+      ]
+    },
+    {
+      "slug": "head-start-elof",
+      "country": "US",
+      "name": "Head Start Early Learning Outcomes Framework: Ages Birth to Five",
+      "version": "2015",
+      "sourceUrl": "https://headstart.gov/interactive-head-start-early-learning-outcomes-framework-ages-birth-five",
+      "textIncluded": false,
+      "license": "Codes only pending upstream discussion of early-childhood standards treatment. See PROVENANCE.md.",
+      "topicCount": 21,
+      "topics": [
+        {
+          "key": "head-start-elof:IT-LC.1",
+          "code": "IT-LC.1"
+        },
+        {
+          "key": "head-start-elof:IT-LC.4",
+          "code": "IT-LC.4"
+        },
+        {
+          "key": "head-start-elof:IT-LC.5",
+          "code": "IT-LC.5"
+        },
+        {
+          "key": "head-start-elof:IT-LC.6",
+          "code": "IT-LC.6"
+        },
+        {
+          "key": "head-start-elof:IT-LC.7",
+          "code": "IT-LC.7"
+        },
+        {
+          "key": "head-start-elof:IT-LC.8",
+          "code": "IT-LC.8"
+        },
+        {
+          "key": "head-start-elof:IT-LC.9",
+          "code": "IT-LC.9"
+        },
+        {
+          "key": "head-start-elof:IT-LC.10",
+          "code": "IT-LC.10"
+        },
+        {
+          "key": "head-start-elof:IT-LC.11",
+          "code": "IT-LC.11"
+        },
+        {
+          "key": "head-start-elof:IT-LC.12",
+          "code": "IT-LC.12"
+        },
+        {
+          "key": "head-start-elof:P-LC.1",
+          "code": "P-LC.1"
+        },
+        {
+          "key": "head-start-elof:P-LC.2",
+          "code": "P-LC.2"
+        },
+        {
+          "key": "head-start-elof:P-LC.4",
+          "code": "P-LC.4"
+        },
+        {
+          "key": "head-start-elof:P-LC.5",
+          "code": "P-LC.5"
+        },
+        {
+          "key": "head-start-elof:P-LC.6",
+          "code": "P-LC.6"
+        },
+        {
+          "key": "head-start-elof:P-LC.7",
+          "code": "P-LC.7"
+        },
+        {
+          "key": "head-start-elof:P-LIT.1",
+          "code": "P-LIT.1"
+        },
+        {
+          "key": "head-start-elof:P-LIT.2",
+          "code": "P-LIT.2"
+        },
+        {
+          "key": "head-start-elof:P-LIT.3",
+          "code": "P-LIT.3"
+        },
+        {
+          "key": "head-start-elof:P-LIT.4",
+          "code": "P-LIT.4"
+        },
+        {
+          "key": "head-start-elof:P-LIT.5",
+          "code": "P-LIT.5"
         }
       ]
     }

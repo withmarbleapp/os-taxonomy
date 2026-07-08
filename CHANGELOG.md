@@ -4,6 +4,14 @@ All notable changes to the Marble Skill Taxonomy dataset are documented here.
 Dataset releases are versioned independently of the taxonomy `version` field
 (the underlying taxonomy is `v1`).
 
+## [Unreleased]
+
+### Added
+- 27 early-childhood precursor topics, including 26 English topics for ages 2-5 and one Learning to Learn shared-attention prerequisite.
+- 66 prerequisite edges connecting toddler/preschool oral language, early grammar, narrative, print-awareness, and phonological-awareness precursors into the existing English graph.
+- Codes-only Head Start ELOF source records for early-childhood alignment discussion.
+- 5 age-2 English domain clusters.
+
 ## [1.0.0] — 2026-07-08
 
 Initial public release.

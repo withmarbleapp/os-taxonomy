@@ -1,8 +1,8 @@
 # Marble Skill Taxonomy
 
-An open, structured taxonomy of **what children learn** across the primary/elementary years — decomposed into fine-grained "micro-topics", wired into a prerequisite graph, and aligned to national curriculum standards. Produced by [Marble](https://withmarble.com).
+An open, structured taxonomy of **what children learn** across the early childhood and primary/elementary years — decomposed into fine-grained "micro-topics", wired into a prerequisite graph, and aligned to national curriculum standards. Produced by [Marble](https://withmarble.com).
 
-> **Version:** `v1` · **Topics:** 1,590 · **Prerequisite edges:** 3,221 · **Subjects:** 8
+> **Version:** `v1` · **Topics:** 1,617 · **Prerequisite edges:** 3,287 · **Subjects:** 8
 
 ## See it
 
@@ -15,10 +15,10 @@ Every dot is a micro-topic, colored by subject; height is age; each thread is a 
 
 Most curriculum data is either a flat list of standards or locked inside a product. This dataset is a **connected graph of learning**:
 
-- **1,590 micro-topics** — a single, teachable idea (e.g. *"Building sentences"*, *"Apparent brightness of stars"*), each with a plain-language description, mastery **evidence** criteria, a type (conceptual / procedural / representational / language / meta), a subject + domain, and an approximate age range.
-- **3,221 prerequisite dependencies** — a directed acyclic graph: *"topic X depends on prerequisite Y"*, each edge tagged `hard`/`soft` and carrying a one-line **reason**.
-- **Curriculum alignment** — each micro-topic links to the standards it was distilled from (NGSS, Common Core, the UK National Curriculum, and more).
-- **Domain clusters** — 183 parent-friendly one-paragraph summaries per (subject, domain, age band).
+- **1,617 micro-topics** — a single, teachable idea (e.g. *"Building sentences"*, *"Apparent brightness of stars"*), each with a plain-language description, mastery **evidence** criteria, a type (conceptual / procedural / representational / language / meta), a subject + domain, and an approximate age range.
+- **3,287 prerequisite dependencies** — a directed acyclic graph: *"topic X depends on prerequisite Y"*, each edge tagged `hard`/`soft` and carrying a one-line **reason**.
+- **Curriculum alignment** — each micro-topic links to the standards it was distilled from (Head Start ELOF, NGSS, Common Core, the UK National Curriculum, and more).
+- **Domain clusters** — 188 parent-friendly one-paragraph summaries per (subject, domain, age band).
 
 ### Subjects
 
@@ -26,12 +26,12 @@ Most curriculum data is either a flat list of standards or locked inside a produ
 |---|---:|
 | Science | 547 |
 | Mathematics | 503 |
-| English | 286 |
+| English | 312 |
 | History | 90 |
 | Personal & Social Development | 88 |
 | Life Skills | 37 |
 | Computing | 21 |
-| Learning to Learn | 18 |
+| Learning to Learn | 19 |
 
 ## Files
 

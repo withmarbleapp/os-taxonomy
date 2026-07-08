@@ -23,6 +23,12 @@ For encumbered sources we ship only the **standard code** (e.g. `1-ESS1-1`) and 
 - **Required notice:** *"© Copyright 2010 National Governors Association Center for Best Practices and Council of Chief State School Officers."*
 - **We ship:** full standard text, under the CCSS Public License.
 
+### 🟡 `head-start-elof` — Head Start Early Learning Outcomes Framework: Ages Birth to Five — **codes only**
+- **Publisher / rights:** U.S. Department of Health and Human Services, Administration for Children and Families, Office of Head Start.
+- **License:** early-childhood source treatment is proposed for maintainer discussion. The Framework is published on HeadStart.gov, but this contribution does not attempt to relicense or redistribute verbatim ELOF goal, progression, or indicator text.
+- **Required notice:** Head Start and Early Head Start word marks and logos are registered trademarks owned by HHS.
+- **We ship:** codes/keys only (verbatim text omitted). The use of ELOF as the early-childhood alignment source is intentionally open for discussion before full upstream acceptance.
+
 ### 🔴 `ngss-k5`, `ngss-ms` — Next Generation Science Standards — **codes only**
 - **Publisher / rights:** copyright held by the National Academies Press. *"NGSS"* and *"Next Generation Science Standards"* are **registered trademarks of WestEd**.
 - **License:** non-commercial entities may freely copy/adapt. **Commercial** entities may use the standards only with restrictions — including submitting samples for approval and a mandatory trademark disclaimer. Not relicensable under ODbL.

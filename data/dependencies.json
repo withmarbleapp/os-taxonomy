@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3221,
+  "edgeCount": 3287,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -19328,6 +19328,402 @@
       "prerequisiteId": "mt_M_xcaRcvSo",
       "strength": "soft",
       "reason": "Knight knowledge provides military context for the Crusades"
+    },
+    {
+      "topicId": "mt_ec_en_familiar_object_words",
+      "prerequisiteId": "mt_ec_shared_attention_play",
+      "strength": "hard",
+      "reason": "Shared attention is needed for adult-guided word learning with objects, photos, books, and routines"
+    },
+    {
+      "topicId": "mt_ec_en_people_body_words",
+      "prerequisiteId": "mt_ec_shared_attention_play",
+      "strength": "hard",
+      "reason": "Shared attention supports identifying familiar people and body words in songs, photos, and care routines"
+    },
+    {
+      "topicId": "mt_ec_en_common_action_words",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Action-word learning usually involves familiar people, objects, and routines"
+    },
+    {
+      "topicId": "mt_ec_en_basic_attribute_words",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Attribute words require familiar referents to compare or describe"
+    },
+    {
+      "topicId": "mt_ec_en_categories_functions",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Category and function language depends on a base of familiar object words"
+    },
+    {
+      "topicId": "mt_ec_en_categories_functions",
+      "prerequisiteId": "mt_ec_en_basic_attribute_words",
+      "strength": "soft",
+      "reason": "Attributes often help children notice how objects are alike or different"
+    },
+    {
+      "topicId": "mt_ec_en_one_step_directions",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "One-step directions rely on familiar object words"
+    },
+    {
+      "topicId": "mt_ec_en_one_step_directions",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "soft",
+      "reason": "Action-word knowledge makes spoken directions easier to follow"
+    },
+    {
+      "topicId": "mt_ec_en_two_step_directions",
+      "prerequisiteId": "mt_ec_en_one_step_directions",
+      "strength": "hard",
+      "reason": "Two-step directions build on reliable one-step direction following"
+    },
+    {
+      "topicId": "mt_ec_en_what_who_questions",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "What questions about objects need familiar object vocabulary"
+    },
+    {
+      "topicId": "mt_ec_en_what_who_questions",
+      "prerequisiteId": "mt_ec_en_people_body_words",
+      "strength": "soft",
+      "reason": "People words and family names support who questions"
+    },
+    {
+      "topicId": "mt_ec_en_in_on_under",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Spatial prompts need familiar objects to place or find"
+    },
+    {
+      "topicId": "mt_ec_en_in_on_under",
+      "prerequisiteId": "mt_ec_en_one_step_directions",
+      "strength": "hard",
+      "reason": "In, on, and under are first followed as one-step spatial directions"
+    },
+    {
+      "topicId": "mt_ec_en_where_questions",
+      "prerequisiteId": "mt_ec_en_in_on_under",
+      "strength": "hard",
+      "reason": "Where questions become meaningful once children understand basic location words"
+    },
+    {
+      "topicId": "mt_ec_en_where_questions",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Where questions require familiar referents to locate"
+    },
+    {
+      "topicId": "mt_ec_en_which_choice_questions",
+      "prerequisiteId": "mt_ec_en_basic_attribute_words",
+      "strength": "hard",
+      "reason": "Which-choice questions often depend on selecting by a visible attribute"
+    },
+    {
+      "topicId": "mt_ec_en_which_choice_questions",
+      "prerequisiteId": "mt_ec_en_categories_functions",
+      "strength": "soft",
+      "reason": "Category and function words support which-choice questions"
+    },
+    {
+      "topicId": "mt_ec_en_why_because_talk",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "hard",
+      "reason": "Early why and because talk needs simple event and action understanding"
+    },
+    {
+      "topicId": "mt_ec_en_why_because_talk",
+      "prerequisiteId": "mt_ec_en_what_who_questions",
+      "strength": "soft",
+      "reason": "What and who question answering supports later causal conversation"
+    },
+    {
+      "topicId": "mt_ec_en_conversation_turn_taking",
+      "prerequisiteId": "mt_ec_shared_attention_play",
+      "strength": "hard",
+      "reason": "Conversation turn-taking builds from shared attention and adult-child interaction"
+    },
+    {
+      "topicId": "mt_ec_en_conversation_turn_taking",
+      "prerequisiteId": "mt_ec_en_what_who_questions",
+      "strength": "soft",
+      "reason": "Question-answer exchanges give practice with conversational turns"
+    },
+    {
+      "topicId": "mt_ec_en_two_word_combinations",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Two-word combinations require a base of meaningful words"
+    },
+    {
+      "topicId": "mt_ec_en_two_word_combinations",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "soft",
+      "reason": "Action words support early combinations such as daddy go or baby sleep"
+    },
+    {
+      "topicId": "mt_ec_en_event_phrases",
+      "prerequisiteId": "mt_ec_en_two_word_combinations",
+      "strength": "hard",
+      "reason": "Early event phrases build from combining two meaningful words"
+    },
+    {
+      "topicId": "mt_ec_en_event_phrases",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "hard",
+      "reason": "Event phrases require action-word knowledge"
+    },
+    {
+      "topicId": "mt_ec_en_expanded_spatial_words",
+      "prerequisiteId": "mt_ec_en_in_on_under",
+      "strength": "hard",
+      "reason": "Expanded spatial words build from earlier in, on, and under understanding"
+    },
+    {
+      "topicId": "mt_ec_en_plural_ing_seeds",
+      "prerequisiteId": "mt_ec_en_two_word_combinations",
+      "strength": "soft",
+      "reason": "Early phrase use provides contexts for plural and -ing forms"
+    },
+    {
+      "topicId": "mt_ec_en_plural_ing_seeds",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "hard",
+      "reason": "Ongoing-action forms such as eating and running depend on action-word knowledge"
+    },
+    {
+      "topicId": "mt_ec_en_book_handling_picture_meaning",
+      "prerequisiteId": "mt_ec_shared_attention_play",
+      "strength": "hard",
+      "reason": "Shared book attention is the foundation for book handling and picture meaning"
+    },
+    {
+      "topicId": "mt_ec_en_environmental_print_awareness",
+      "prerequisiteId": "mt_ec_en_book_handling_picture_meaning",
+      "strength": "hard",
+      "reason": "Environmental print awareness builds from noticing that books and pictures carry meaning"
+    },
+    {
+      "topicId": "mt_ec_en_letter_names_meaningful_context",
+      "prerequisiteId": "mt_ec_en_environmental_print_awareness",
+      "strength": "hard",
+      "reason": "Meaningful print contexts make early letter names useful rather than isolated drill"
+    },
+    {
+      "topicId": "mt_ec_en_picture_event_talk",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "hard",
+      "reason": "Picture event talk depends on understanding common actions"
+    },
+    {
+      "topicId": "mt_ec_en_picture_event_talk",
+      "prerequisiteId": "mt_ec_en_what_who_questions",
+      "strength": "hard",
+      "reason": "Event talk uses who and what information from pictures or photos"
+    },
+    {
+      "topicId": "mt_ec_en_picture_event_talk",
+      "prerequisiteId": "mt_ec_en_where_questions",
+      "strength": "soft",
+      "reason": "Where questions enrich picture event talk with setting information"
+    },
+    {
+      "topicId": "mt_ec_en_picture_event_talk",
+      "prerequisiteId": "mt_ec_en_book_handling_picture_meaning",
+      "strength": "soft",
+      "reason": "Book and picture meaning supports talking about picture events"
+    },
+    {
+      "topicId": "mt_ec_en_first_then_event_sequences",
+      "prerequisiteId": "mt_ec_en_picture_event_talk",
+      "strength": "hard",
+      "reason": "First-then sequencing builds from talking about single picture events"
+    },
+    {
+      "topicId": "mt_ec_en_first_then_event_sequences",
+      "prerequisiteId": "mt_ec_en_two_step_directions",
+      "strength": "soft",
+      "reason": "Two-step direction following supports holding two ordered events in mind"
+    },
+    {
+      "topicId": "mt_ec_en_rhyme_song_participation",
+      "prerequisiteId": "mt_ec_shared_attention_play",
+      "strength": "hard",
+      "reason": "Rhyme and song participation begins as shared adult-child sound play"
+    },
+    {
+      "topicId": "mt_ec_en_rhyme_recognition",
+      "prerequisiteId": "mt_ec_en_rhyme_song_participation",
+      "strength": "hard",
+      "reason": "Rhyme recognition builds from repeated playful exposure to songs and rhyming refrains"
+    },
+    {
+      "topicId": "mt_ec_en_syllable_beats",
+      "prerequisiteId": "mt_ec_en_rhyme_song_participation",
+      "strength": "soft",
+      "reason": "Songs and chants make larger word beats easier to notice"
+    },
+    {
+      "topicId": "mt_ec_en_beginning_sound_noticing",
+      "prerequisiteId": "mt_ec_en_rhyme_recognition",
+      "strength": "soft",
+      "reason": "Rhyme awareness supports later attention to smaller sound units"
+    },
+    {
+      "topicId": "mt_ec_en_beginning_sound_noticing",
+      "prerequisiteId": "mt_ec_en_syllable_beats",
+      "strength": "hard",
+      "reason": "Beginning-sound noticing comes after broader spoken-word sound play"
+    },
+    {
+      "topicId": "mt_yBJyCfhtem",
+      "prerequisiteId": "mt_ec_en_familiar_object_words",
+      "strength": "hard",
+      "reason": "Formal noun and verb use builds on earlier familiar object-word understanding"
+    },
+    {
+      "topicId": "mt_yBJyCfhtem",
+      "prerequisiteId": "mt_ec_en_common_action_words",
+      "strength": "hard",
+      "reason": "Formal noun and verb use requires a base of common action words"
+    },
+    {
+      "topicId": "mt_oL9s_bufDp",
+      "prerequisiteId": "mt_ec_en_categories_functions",
+      "strength": "hard",
+      "reason": "Sorting words into categories builds from sorting familiar objects by category or function"
+    },
+    {
+      "topicId": "mt_6lHBTwQPrS",
+      "prerequisiteId": "mt_ec_en_what_who_questions",
+      "strength": "hard",
+      "reason": "Formal question-word use builds from answering early what and who questions"
+    },
+    {
+      "topicId": "mt_6lHBTwQPrS",
+      "prerequisiteId": "mt_ec_en_where_questions",
+      "strength": "soft",
+      "reason": "Where-question understanding supports the broader set of question words"
+    },
+    {
+      "topicId": "mt_f8n4txtLej",
+      "prerequisiteId": "mt_ec_en_why_because_talk",
+      "strength": "soft",
+      "reason": "Early why and because talk prepares children to ask questions to extend understanding"
+    },
+    {
+      "topicId": "mt_mB7DVai-Uf",
+      "prerequisiteId": "mt_ec_en_conversation_turn_taking",
+      "strength": "soft",
+      "reason": "Back-and-forth conversation turn-taking supports later listening and responding in groups"
+    },
+    {
+      "topicId": "mt_n6GhzDPllD",
+      "prerequisiteId": "mt_ec_en_conversation_turn_taking",
+      "strength": "hard",
+      "reason": "Exploring ideas through talk requires earlier back-and-forth conversational turns"
+    },
+    {
+      "topicId": "mt_4A7FYmvVhA",
+      "prerequisiteId": "mt_ec_en_picture_event_talk",
+      "strength": "hard",
+      "reason": "Describing aloud builds from talking about people, actions, places, and details in pictures"
+    },
+    {
+      "topicId": "mt_VY3rBq8RyP",
+      "prerequisiteId": "mt_ec_en_in_on_under",
+      "strength": "hard",
+      "reason": "Frequent prepositions build from the earliest spatial words in, on, and under"
+    },
+    {
+      "topicId": "mt_VY3rBq8RyP",
+      "prerequisiteId": "mt_ec_en_expanded_spatial_words",
+      "strength": "soft",
+      "reason": "Expanded spatial words support later use of a broader preposition set"
+    },
+    {
+      "topicId": "mt_N8CpN1EJrP",
+      "prerequisiteId": "mt_ec_en_two_word_combinations",
+      "strength": "hard",
+      "reason": "Understanding and composing sentences builds from meaningful two-word combinations"
+    },
+    {
+      "topicId": "mt_N8CpN1EJrP",
+      "prerequisiteId": "mt_ec_en_event_phrases",
+      "strength": "soft",
+      "reason": "Early event phrases provide oral sentence foundations"
+    },
+    {
+      "topicId": "mt_18qkgxr_-T",
+      "prerequisiteId": "mt_ec_en_plural_ing_seeds",
+      "strength": "soft",
+      "reason": "Early plural awareness supports later explicit use of regular plural nouns"
+    },
+    {
+      "topicId": "mt_1KCwbGvm1F",
+      "prerequisiteId": "mt_ec_en_book_handling_picture_meaning",
+      "strength": "hard",
+      "reason": "Print concepts build from book handling and understanding that pictures and books carry meaning"
+    },
+    {
+      "topicId": "mt_1KCwbGvm1F",
+      "prerequisiteId": "mt_ec_en_environmental_print_awareness",
+      "strength": "soft",
+      "reason": "Environmental print awareness supports understanding that printed marks carry meaning"
+    },
+    {
+      "topicId": "mt_frDIaXzWbx",
+      "prerequisiteId": "mt_ec_en_letter_names_meaningful_context",
+      "strength": "soft",
+      "reason": "Recognizing letters in meaningful contexts supports later broad alphabet knowledge"
+    },
+    {
+      "topicId": "mt_4GiE83rJF_",
+      "prerequisiteId": "mt_ec_en_rhyme_recognition",
+      "strength": "hard",
+      "reason": "Recognizing rhymes is a prerequisite for producing and using rhyming words"
+    },
+    {
+      "topicId": "mt_UvNrOXny1i",
+      "prerequisiteId": "mt_ec_en_syllable_beats",
+      "strength": "hard",
+      "reason": "Clapping or tapping word beats prepares children to count and segment syllables"
+    },
+    {
+      "topicId": "mt_PvU3eoikev",
+      "prerequisiteId": "mt_ec_en_beginning_sound_noticing",
+      "strength": "soft",
+      "reason": "Beginning-sound noticing supports later onset-rime and phoneme work"
+    },
+    {
+      "topicId": "mt_sSQlLOnAow",
+      "prerequisiteId": "mt_ec_en_picture_event_talk",
+      "strength": "hard",
+      "reason": "Identifying story characters, settings, and events builds from supported picture event talk"
+    },
+    {
+      "topicId": "mt_sSQlLOnAow",
+      "prerequisiteId": "mt_ec_en_first_then_event_sequences",
+      "strength": "soft",
+      "reason": "First-then event sequencing supports ordered story retell"
+    },
+    {
+      "topicId": "mt_OlhMP7ShFT",
+      "prerequisiteId": "mt_ec_en_book_handling_picture_meaning",
+      "strength": "hard",
+      "reason": "Understanding pictures in books is foundational for connecting pictures with text"
+    },
+    {
+      "topicId": "mt_8-POYyg7GJ",
+      "prerequisiteId": "mt_ec_en_first_then_event_sequences",
+      "strength": "soft",
+      "reason": "Simple event sequencing supports later prediction about what happens next"
     }
   ]
 }

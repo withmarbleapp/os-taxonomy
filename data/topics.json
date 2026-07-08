@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1590,
+  "topicCount": 1617,
   "topics": [
     {
       "id": "mt_AzTrT5ySCx",
@@ -31220,6 +31220,578 @@
       "evidence": [],
       "assessmentPrompt": "Has {{name}} heard of geoengineering? Can they describe one proposal for deliberately cooling the Earth and explain one potential risk of attempting it — and say whether they think individuals or governments bear more responsibility for tackling climate change?",
       "standards": []
+    },
+    {
+      "id": "mt_ec_shared_attention_play",
+      "type": "META",
+      "subject": "Learning to Learn",
+      "domain": "Learning to Learn",
+      "name": "Shared attention in adult-guided play",
+      "description": "Attend with a familiar adult to the same object, picture, book, sound, or simple prompt long enough for a brief back-and-forth learning moment",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Looks, points, taps, gestures, or vocalizes toward the same object or picture as an adult",
+        "Stays with a short shared book, photo, object, or sound-play routine without distress",
+        "Shifts attention between the adult and the shared focus during play"
+      ],
+      "assessmentPrompt": "During a short playful activity, can {{name}} share attention with an adult on the same object, picture, sound, or page for a few turns?",
+      "standards": []
+    },
+    {
+      "id": "mt_ec_en_familiar_object_words",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Vocabulary",
+      "name": "Familiar object words",
+      "description": "Understand and begin using words for familiar household objects, toys, foods, clothing, animals, vehicles, and places across real objects, pictures, and daily routines",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Identifies a named familiar object from real objects or pictures",
+        "Recognizes familiar object words across more than one room, book, or picture set",
+        "Uses a word, sign, gesture, or approximation to refer to a familiar object"
+      ],
+      "assessmentPrompt": "If you ask {{name}} to find or point to familiar things like a cup, shoe, ball, or dog, can they do it across real objects and pictures?",
+      "standards": [
+        "head-start-elof:IT-LC.7",
+        "head-start-elof:IT-LC.8",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_people_body_words",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Vocabulary",
+      "name": "People and body words",
+      "description": "Understand and begin using names or words for familiar people, family roles, and common body parts in play, care routines, songs, books, and photos",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Identifies familiar people in photos or in person when named",
+        "Points to common body parts during songs, routines, or play",
+        "Uses names, role words, signs, gestures, or approximations for people or body parts"
+      ],
+      "assessmentPrompt": "Can {{name}} identify familiar people and common body parts in everyday routines, songs, photos, or books?",
+      "standards": [
+        "head-start-elof:IT-LC.7",
+        "head-start-elof:IT-LC.8",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_common_action_words",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Vocabulary",
+      "name": "Common action words",
+      "description": "Understand and begin using common action words for visible routines and events, such as eat, sleep, run, wash, open, close, help, go, and stop",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Identifies a named action in a picture, book, routine, or short real-life event",
+        "Acts out or follows familiar action words during play",
+        "Uses a word, sign, gesture, or approximation for a familiar action"
+      ],
+      "assessmentPrompt": "When you name an action like eating, sleeping, washing, opening, or running, can {{name}} recognize it in play, pictures, books, or routines?",
+      "standards": [
+        "head-start-elof:IT-LC.7",
+        "head-start-elof:IT-LC.8",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_basic_attribute_words",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Vocabulary",
+      "name": "Basic attribute words",
+      "description": "Understand and begin using common descriptor words for visible or experienced attributes such as big, little, hot, cold, wet, dry, clean, dirty, loud, quiet, and color words used to distinguish objects",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Chooses an object based on a familiar attribute, such as the big cup or wet towel",
+        "Uses or imitates descriptor words in routines, books, or play",
+        "Distinguishes an attribute when object vocabulary alone is not enough"
+      ],
+      "assessmentPrompt": "If two familiar objects differ by size, temperature, color, or condition, can {{name}} use or respond to words like big, little, hot, cold, wet, or red?",
+      "standards": [
+        "head-start-elof:P-LC.6",
+        "head-start-elof:P-LC.7"
+      ]
+    },
+    {
+      "id": "mt_ec_en_categories_functions",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Vocabulary",
+      "name": "Basic categories and object functions",
+      "description": "Group familiar objects by simple categories and functions, such as foods, animals, clothes, toys, things we eat, things we wear, and things that move",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Sorts or chooses familiar objects by category, such as food or animals",
+        "Answers or acts on simple function prompts, such as what do we wear or what do we eat",
+        "Explains, gestures, or shows why two familiar items go together"
+      ],
+      "assessmentPrompt": "Can {{name}} group familiar things like foods, animals, or clothes, or choose an object by what it is used for?",
+      "standards": [
+        "head-start-elof:P-LC.6",
+        "head-start-elof:P-LC.7"
+      ]
+    },
+    {
+      "id": "mt_ec_en_one_step_directions",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "One-step directions with familiar words",
+      "description": "Follow simple one-step spoken directions involving familiar people, objects, places, or actions in meaningful routines and play",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Completes a familiar direction such as get the ball, give me the cup, or roll the car",
+        "Responds to one-step directions in more than one routine or setting",
+        "Follows the direction with little support beyond repetition or natural gesture"
+      ],
+      "assessmentPrompt": "Can {{name}} follow simple one-step directions with familiar words during ordinary routines or play?",
+      "standards": [
+        "head-start-elof:IT-LC.1",
+        "head-start-elof:P-LC.2"
+      ]
+    },
+    {
+      "id": "mt_ec_en_two_step_directions",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "Two-step directions",
+      "description": "Follow simple two-step directions, first with related actions in a routine and later with less-related actions that require holding both parts in mind",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Follows related two-step directions such as get your shoes and bring them here",
+        "Follows simple first-then directions during play or routines",
+        "Begins to follow unrelated two-step directions when the words and setting are familiar"
+      ],
+      "assessmentPrompt": "Can {{name}} follow a simple two-part direction, especially when the steps fit a familiar routine?",
+      "standards": [
+        "head-start-elof:IT-LC.1",
+        "head-start-elof:P-LC.2"
+      ]
+    },
+    {
+      "id": "mt_ec_en_what_who_questions",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "What and who questions",
+      "description": "Understand and answer simple what and who questions about familiar objects, people, characters, and visible actions using pointing, gestures, words, signs, or short phrases",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Answers or acts on what questions about familiar objects or actions",
+        "Answers or indicates who questions about familiar people or characters",
+        "Uses pointing, gesture, word, sign, or phrase responses without requiring a full sentence"
+      ],
+      "assessmentPrompt": "When you ask simple what or who questions about familiar people, objects, pictures, or actions, can {{name}} answer or show you?",
+      "standards": [
+        "head-start-elof:IT-LC.6",
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_where_questions",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "Where questions",
+      "description": "Understand and answer simple where questions about visible or recently seen people, objects, and places using pointing, action, words, signs, or short phrases",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Indicates where a familiar person or object is when it is visible",
+        "Answers where questions about common places or recent routines",
+        "Uses location words, pointing, or actions to show the answer"
+      ],
+      "assessmentPrompt": "If you ask where a familiar person or object is, can {{name}} show or tell you the location?",
+      "standards": [
+        "head-start-elof:IT-LC.6",
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_which_choice_questions",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "Which-choice questions",
+      "description": "Answer or act on simple which questions by choosing between familiar options based on an attribute, category, function, preference, or routine need",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Chooses an object based on a requested feature, such as which one is big",
+        "Chooses an item by category or function, such as which one do we eat",
+        "Makes a preference choice and may add a word, sign, gesture, or brief explanation"
+      ],
+      "assessmentPrompt": "Can {{name}} answer a simple which question by choosing the item that matches a feature, category, function, or preference?",
+      "standards": [
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.6",
+        "head-start-elof:P-LC.7"
+      ]
+    },
+    {
+      "id": "mt_ec_en_why_because_talk",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "Early why and because talk",
+      "description": "Participate in simple cause-and-effect talk around familiar routines and events, including early why questions and because explanations without requiring formal reasoning",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Responds to simple why questions with a familiar reason, gesture, or choice",
+        "Uses or accepts because language in daily routines, such as because it is raining",
+        "Connects a visible event with a simple cause or purpose during conversation"
+      ],
+      "assessmentPrompt": "In a familiar situation, can {{name}} connect what happened with a simple reason, such as because it is cold or because we are going outside?",
+      "standards": [
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_conversation_turn_taking",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Speaking & Listening",
+      "name": "Conversation turn-taking",
+      "description": "Take short back-and-forth turns in conversation or play by responding, waiting, adding information, requesting more, or repairing when misunderstood",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Takes at least two turns in a short adult-child exchange",
+        "Responds to another person by gesture, word, sign, action, or short phrase",
+        "Repeats, points, changes wording, or seeks help when communication breaks down"
+      ],
+      "assessmentPrompt": "Can {{name}} take short back-and-forth turns with an adult or peer during play, books, routines, or conversation?",
+      "standards": [
+        "head-start-elof:IT-LC.4",
+        "head-start-elof:IT-LC.5",
+        "head-start-elof:P-LC.4"
+      ]
+    },
+    {
+      "id": "mt_ec_en_two_word_combinations",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Grammar & Punctuation",
+      "name": "Two-word combinations",
+      "description": "Combine two meaningful words, signs, or approximations to express requests, labels, actions, possession, recurrence, disappearance, or simple comments",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Uses combinations such as more milk, daddy go, big truck, or bye-bye dog",
+        "Combines words or signs for more than one communicative purpose",
+        "Uses combinations spontaneously or with light adult expansion rather than only immediate imitation"
+      ],
+      "assessmentPrompt": "Does {{name}} combine two meaningful words, signs, or approximations to communicate about wants, actions, people, or objects?",
+      "standards": [
+        "head-start-elof:IT-LC.5",
+        "head-start-elof:IT-LC.8",
+        "head-start-elof:P-LC.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_event_phrases",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Grammar & Punctuation",
+      "name": "Early event phrases",
+      "description": "Use or understand short spoken combinations that connect participants, actions, objects, and descriptors, such as daddy eating, wash hands, open door, or big dog",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Combines a person or thing with an action, such as baby sleep or dog run",
+        "Combines an action with an object, such as wash hands or open door",
+        "Combines a descriptor with a noun, such as big ball or red cup"
+      ],
+      "assessmentPrompt": "Can {{name}} understand or use short phrases that connect people, things, actions, objects, or descriptors?",
+      "standards": [
+        "head-start-elof:IT-LC.5",
+        "head-start-elof:P-LC.5",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_in_on_under",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Grammar & Punctuation",
+      "name": "In, on, and under",
+      "description": "Understand and begin using the spatial words in, on, and under with familiar objects in real play, routines, books, and pictures",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Places an object in, on, or under another object when asked",
+        "Finds a familiar object described with in, on, or under",
+        "Uses or imitates in, on, or under in a meaningful play or routine context"
+      ],
+      "assessmentPrompt": "If you ask {{name}} to put or find a familiar object in, on, or under something, can they do it in real play or routines?",
+      "standards": [
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_expanded_spatial_words",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Grammar & Punctuation",
+      "name": "Expanded spatial words",
+      "description": "Understand and begin using additional spatial words and phrases such as out, off, behind, next to, between, near, far, up, down, inside, and outside",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Follows directions using spatial words beyond in, on, and under",
+        "Describes object locations with a word, gesture, sign, or short phrase",
+        "Uses spatial words across more than one setting or material set"
+      ],
+      "assessmentPrompt": "Can {{name}} understand or use location words like behind, next to, out, off, inside, or outside during play and routines?",
+      "standards": [
+        "head-start-elof:P-LC.2",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_plural_ing_seeds",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Grammar & Punctuation",
+      "name": "Early plural and -ing seeds",
+      "description": "Notice, understand, and begin using early grammatical markers in meaningful speech, especially common plurals and ongoing-action forms such as dogs, shoes, eating, and running",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Shows understanding of one versus more than one in familiar object groups",
+        "Uses or imitates simple plural forms in meaningful contexts",
+        "Uses or understands -ing action words during visible ongoing events"
+      ],
+      "assessmentPrompt": "Does {{name}} begin to notice or use simple forms like dogs, shoes, eating, or running in meaningful speech?",
+      "standards": [
+        "head-start-elof:P-LC.5",
+        "head-start-elof:P-LC.6"
+      ]
+    },
+    {
+      "id": "mt_ec_en_book_handling_picture_meaning",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Reading Comprehension",
+      "name": "Book handling and picture meaning",
+      "description": "Engage with books as meaningful objects by holding or turning pages, attending to pictures, and using sounds, gestures, signs, or words to connect pictures with people, objects, actions, and events",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Turns pages, orients a familiar book, or seeks out a book for shared reading",
+        "Points, gestures, vocalizes, signs, or comments about pictures in a book",
+        "Connects a picture with a familiar person, object, action, or event"
+      ],
+      "assessmentPrompt": "When sharing a picture book, does {{name}} handle the book and show that the pictures connect to people, objects, actions, or events?",
+      "standards": [
+        "head-start-elof:IT-LC.10",
+        "head-start-elof:IT-LC.12",
+        "head-start-elof:P-LIT.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_environmental_print_awareness",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Environmental print awareness",
+      "description": "Notice that familiar signs, labels, logos, names, and book text carry meaning without treating logo or name recognition as decoding",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Recognizes or points out familiar signs, labels, logos, names, or book titles",
+        "Asks about print or indicates that print means something",
+        "Connects familiar print with a place, person, object, routine, or message"
+      ],
+      "assessmentPrompt": "Does {{name}} notice familiar signs, labels, logos, names, or book text and understand that print can carry meaning?",
+      "standards": [
+        "head-start-elof:IT-LC.11",
+        "head-start-elof:P-LIT.2"
+      ]
+    },
+    {
+      "id": "mt_ec_en_letter_names_meaningful_context",
+      "type": "LANGUAGE",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Letter names in meaningful contexts",
+      "description": "Recognize or name some letters in meaningful contexts such as the child name, family names, favorite signs, labels, books, or playful alphabet materials, without treating letter naming as reading",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Recognizes or names some letters from personally meaningful print",
+        "Shows interest in letters during books, signs, labels, or play",
+        "Matches a familiar letter across at least two meaningful contexts"
+      ],
+      "assessmentPrompt": "Can {{name}} recognize or name a few letters that matter to them, such as letters in their name, family names, signs, labels, or favorite books?",
+      "standards": [
+        "head-start-elof:P-LIT.3"
+      ]
+    },
+    {
+      "id": "mt_ec_en_picture_event_talk",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Reading Comprehension",
+      "name": "Picture event talk",
+      "description": "Use pictures, photos, books, or real events to talk about who is there, what is happening, where it happens, and one salient detail without requiring a complete formal sentence",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Identifies a participant, action, place, or object in a picture or photo event",
+        "Uses pointing, gesture, word, sign, phrase, or adult-supported sentence to describe an event",
+        "Adds at least one relevant detail when looking at a familiar picture, photo, or book page"
+      ],
+      "assessmentPrompt": "When looking at a familiar photo, picture, or book page, can {{name}} show or say who is there, what is happening, or where it is happening?",
+      "standards": [
+        "head-start-elof:IT-LC.12",
+        "head-start-elof:P-LIT.4",
+        "head-start-elof:P-LIT.5"
+      ]
+    },
+    {
+      "id": "mt_ec_en_first_then_event_sequences",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Reading Comprehension",
+      "name": "First-then event sequences",
+      "description": "Understand and talk about two-step event order using first, then, before, after, or equivalent sequence language in routines, photos, picture cards, and simple stories",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Orders two familiar photos, pictures, or routine steps in a sensible sequence",
+        "Uses or responds to first-then language in a routine or story",
+        "Retells a simple two-event sequence with gestures, words, signs, or adult support"
+      ],
+      "assessmentPrompt": "Can {{name}} put two familiar events in order or use first-then language with a routine, photo sequence, or simple story?",
+      "standards": [
+        "head-start-elof:IT-LC.12",
+        "head-start-elof:P-LIT.4"
+      ]
+    },
+    {
+      "id": "mt_ec_en_rhyme_song_participation",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Rhyme and song participation",
+      "description": "Participate in songs, nursery rhymes, repeated refrains, chants, and playful sound patterns through attention, movement, gesture, vocalization, signs, words, or requests for repetition",
+      "ageRangeStart": 2,
+      "ageRangeEnd": 4,
+      "centrality": null,
+      "evidence": [
+        "Joins in with a familiar song, rhyme, chant, or repeated book refrain",
+        "Anticipates a repeated sound pattern, pause, movement, or word in a familiar rhyme",
+        "Requests, repeats, moves to, or vocalizes during familiar sound play"
+      ],
+      "assessmentPrompt": "Does {{name}} participate in familiar songs, rhymes, chants, or repeated refrains through movement, gesture, sounds, words, or requests for more?",
+      "standards": [
+        "head-start-elof:IT-LC.9",
+        "head-start-elof:P-LIT.1"
+      ]
+    },
+    {
+      "id": "mt_ec_en_rhyme_recognition",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Rhyme recognition",
+      "description": "Recognize when two spoken words or playful word parts sound alike at the end, especially in familiar songs, books, names, and simple high-contrast word pairs",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Identifies or chooses a word that rhymes with a familiar target in a small set",
+        "Notices when a familiar rhyme is changed or completed with a non-rhyming word",
+        "Enjoys or participates in playful rhyming without requiring accurate speech-sound production"
+      ],
+      "assessmentPrompt": "When playing with simple words like cat and hat or with a familiar rhyming book, can {{name}} notice which words rhyme?",
+      "standards": [
+        "head-start-elof:P-LIT.1"
+      ]
+    },
+    {
+      "id": "mt_ec_en_syllable_beats",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Syllable beats",
+      "description": "Notice and clap, tap, step, or otherwise mark larger beats in spoken words, especially names and familiar multi-syllable words",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 5,
+      "centrality": null,
+      "evidence": [
+        "Claps, taps, steps, or moves to the beats in a familiar name or word with adult support",
+        "Notices that some familiar words have more beats than others",
+        "Segments simple multi-syllable words through movement or sound play"
+      ],
+      "assessmentPrompt": "Can {{name}} clap, tap, or move with the beats in familiar words or names, such as their own name or banana?",
+      "standards": [
+        "head-start-elof:P-LIT.1"
+      ]
+    },
+    {
+      "id": "mt_ec_en_beginning_sound_noticing",
+      "type": "PROCEDURAL",
+      "subject": "English",
+      "domain": "Phonics & Word Reading",
+      "name": "Beginning-sound noticing",
+      "description": "Notice when familiar words, names, or playful phrases start with the same sound, especially in songs, alliteration, names, and meaningful spoken-word play",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6,
+      "centrality": null,
+      "evidence": [
+        "Notices that two familiar words or names start with the same sound",
+        "Joins in alliterative phrases or games using a familiar beginning sound",
+        "Identifies a beginning sound in a familiar word with adult support"
+      ],
+      "assessmentPrompt": "Can {{name}} notice that familiar words or names start the same way, such as mama and moon or Sam and sun?",
+      "standards": [
+        "head-start-elof:P-LIT.1",
+        "head-start-elof:P-LIT.3"
+      ]
     }
   ]
 }
