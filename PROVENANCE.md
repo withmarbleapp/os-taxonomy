@@ -4,7 +4,6 @@ The micro-topics, the prerequisite graph, and all of Marble's authored text are 
 
 **`data/curriculum-standards.json` is different.** Those standards are extracted from external curriculum frameworks that Marble does **not** own and **cannot** relicense. You can only receive from us the rights the upstream holders grant. Each source's terms — and exactly what we ship — are below.
 
-> ⚠️ **Before publishing or redistributing**, confirm these terms with counsel, especially for the codes-only sources. Marble is a commercial entity, which narrows what several of these licenses permit.
 
 ## The "codes-only" distinction
 
