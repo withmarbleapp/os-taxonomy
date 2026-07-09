@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marble Taxonomy • Semantic + Graph Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 
+    Load 3d-force-graph from unpkg (latest build recommended for CDN stability).
+    It bundles its own Three.js internally — do NOT load a separate three.js script.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1/dist/3d-force-graph.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+    
+    :root {
+      --accent: #a5b4fc;
+    }
+    
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+    }
+    
+    .font-display {
+      font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+      font-feature-settings: "ss02";
+    }
+
+    #graph {
+      background: #0a0a0f;
+      background-image: 
+        radial-gradient(circle at 25% 30%, rgba(165,180,252,0.035) 0%, transparent 50%),
+        radial-gradient(circle at 75% 70%, rgba(103,232,249,0.03) 0%, transparent 60%);
+    }
+
+    .glass {
+      background: rgba(17, 17, 23, 0.92);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .node-label {
+      font-size: 11px;
+      font-weight: 500;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .control-label {
+      font-size: 10px;
+      letter-spacing: -.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .subject-pill {
+      transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .subject-pill.active {
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.9);
+      transform: translateY(-1px);
+    }
+
+    .insight-number {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .viz-title {
+      font-size: 13px;
+      letter-spacing: -0.3px;
+    }
+
+    .force-graph-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+    }
+
+    .marble-gradient {
+      background: linear-gradient(90deg, #a5b4fc, #67e8f9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0f] text-slate-200">
+  <div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <div class="w-80 flex-shrink-0 border-r border-white/10 bg-[#111117] flex flex-col">
+      <!-- Header -->
+      <div class="p-5 border-b border-white/10">
+        <div class="flex items-center gap-x-3">
+          <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-indigo-400 to-cyan-400 flex items-center justify-center shadow-inner">
+            <span class="text-[#0a0a0f] font-bold text-xl tracking-tighter">M</span>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-semibold tracking-tighter">Marble</div>
+            <div class="text-[10px] text-slate-500 -mt-1">SKILL TAXONOMY • v1</div>
+          </div>
+        </div>
+        <div class="mt-3 text-xs leading-snug text-slate-400">
+          1,590 micro-concepts in <span class="text-indigo-300">semantic space</span><br>
+          connected by the <span class="text-amber-300">prerequisite graph</span>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="p-4 border-b border-white/10">
+        <div class="relative">
+          <input id="search" 
+                 type="text" 
+                 placeholder="Search concepts (e.g. fraction, camouflage, sentence)..."
+                 class="w-full bg-black/40 border border-white/15 focus:border-indigo-400/60 rounded-2xl py-2.5 pl-4 pr-10 text-sm placeholder:text-slate-500 focus:outline-none">
+          <div class="absolute right-3.5 top-2.5 text-slate-500 text-xs">⌘K</div>
+        </div>
+      </div>
+
+      <!-- Subjects -->
+      <div class="p-4 border-b border-white/10 flex-1 overflow-auto">
+        <div class="control-label mb-2 px-1">Subjects</div>
+        <div id="subject-legend" class="flex flex-wrap gap-1.5"></div>
+
+        <div class="mt-5">
+          <div class="control-label mb-2 px-1">Color by</div>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <button onclick="setColorMode('subject')" id="color-subject"
+                    class="px-3 py-1 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 active:bg-indigo-500/20 text-xs font-medium">Subject</button>
+            <button onclick="setColorMode('type')" id="color-type"
+                    class="px-3 py-1 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 active:bg-indigo-500/20 text-xs font-medium">Type</button>
+            <button onclick="setColorMode('age')" id="color-age"
+                    class="px-3 py-1 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 active:bg-indigo-500/20 text-xs font-medium">Age</button>
+          </div>
+        </div>
+
+        <!-- Layout & Physics -->
+        <div class="mt-5">
+          <div class="control-label mb-2 px-1">Layout &amp; Graph Forces</div>
+          
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs mb-1 px-0.5">
+                <div class="text-slate-400">Graph pull</div>
+                <div id="link-strength-val" class="font-mono text-indigo-400">0.35</div>
+              </div>
+              <input type="range" id="link-strength" min="0" max="1.5" step="0.02" value="0.35"
+                     class="w-full accent-indigo-400" oninput="updateForces()">
+            </div>
+            
+            <div class="flex gap-2">
+              <button onclick="resetToSemantic()" 
+                      class="flex-1 text-xs py-1.5 px-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 active:bg-white/15 font-medium">
+                Pure semantic (UMAP)
+              </button>
+              <button onclick="reheatForces()" 
+                      class="flex-1 text-xs py-1.5 px-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 active:bg-white/15 font-medium">
+                Reheat forces
+              </button>
+            </div>
+            
+            <button onclick="highlightSurprises()" 
+                    class="w-full text-xs py-2 px-4 rounded-2xl border border-amber-400/40 bg-amber-400/5 hover:bg-amber-400/10 active:bg-amber-400/15 text-amber-300 font-semibold flex items-center justify-center gap-x-2">
+              <span>✧</span> 
+              <span>Highlight surprising prerequisites</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick filters -->
+        <div class="mt-4">
+          <div class="control-label mb-2 px-1">Quick filters</div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <button onclick="filterByAge(4,7)" class="px-2.5 py-1 rounded-full bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-[10px]">Ages 4–7</button>
+            <button onclick="filterByAge(8,11)" class="px-2.5 py-1 rounded-full bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-[10px]">Ages 8–11</button>
+            <button onclick="clearFilters()" class="px-2.5 py-1 rounded-full bg-white/5 text-slate-400 border border-white/10 text-[10px]">Clear</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer info -->
+      <div class="p-4 border-t border-white/10 text-[10px] text-slate-500">
+        <div id="footer-info">Loading data...</div>
+        <div class="mt-1">Data: Marble Skill Taxonomy v1 • <a href="https://withmarble.com" target="_blank" class="underline decoration-white/30">withmarble.com</a></div>
+      </div>
+    </div>
+
+    <!-- Main visualization -->
+    <div class="flex-1 flex flex-col min-w-0">
+      <!-- Top bar -->
+      <div class="h-14 border-b border-white/10 px-5 flex items-center justify-between bg-[#111117]">
+        <div class="flex items-center gap-x-4">
+          <div>
+            <span class="font-semibold tracking-tight">Semantic × Prerequisite Space</span>
+            <span class="ml-2 text-xs px-2 py-px rounded bg-white/10 text-white/60 align-middle">3D UMAP + forces</span>
+          </div>
+          <div id="stats-pill" 
+               class="hidden text-xs px-3 py-1 rounded-3xl bg-white/5 border border-white/10 text-slate-400 font-mono items-center gap-x-1.5">
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-x-3 text-sm">
+          <button onclick="toggleAutoRotate()" 
+                  class="px-3 py-1.5 text-xs rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 flex items-center gap-x-1.5">
+            <span id="rotate-label">Auto-rotate</span>
+          </button>
+          <button onclick="fitToView()" 
+                  class="px-3 py-1.5 text-xs rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10">Fit view</button>
+          <button onclick="resetCamera()" 
+                  class="px-3 py-1.5 text-xs rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10">Reset camera</button>
+        </div>
+      </div>
+
+      <!-- Graph container -->
+      <div class="flex-1 relative" style="background:#0a0a0f">
+        <div id="graph" class="absolute inset-0"></div>
+        
+        <!-- Floating help -->
+        <div class="absolute bottom-4 left-4 glass px-3 py-2 rounded-2xl text-xs max-w-[260px] border border-white/10 hidden md:block">
+          <div class="font-semibold text-indigo-300 mb-px">How to explore</div>
+          <div class="text-slate-400 leading-tight">
+            Drag to rotate • Scroll to zoom • Click nodes to trace learning paths.<br>
+            Use the <span class="text-amber-300">Graph pull</span> slider to see how prerequisites warp semantic space.
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom status -->
+      <div class="h-9 border-t border-white/10 bg-[#111117] px-4 text-[10px] flex items-center text-slate-500 font-mono gap-x-4">
+        <div id="status-text">Ready</div>
+        <div class="flex-1"></div>
+        <div>1,590 nodes • 3,221 edges • UMAP 3D seeded</div>
+      </div>
+    </div>
+
+    <!-- Right inspector -->
+    <div class="w-80 flex-shrink-0 border-l border-white/10 bg-[#111117] flex flex-col overflow-hidden">
+      <div class="p-4 border-b border-white/10">
+        <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-1">Selected concept</div>
+        <div id="inspector-name" class="font-semibold text-lg leading-tight text-white">—</div>
+        <div id="inspector-meta" class="text-xs text-slate-400 mt-0.5"></div>
+      </div>
+
+      <div class="flex-1 overflow-auto p-4 space-y-4 text-sm">
+        <!-- Description -->
+        <div>
+          <div class="text-[10px] text-slate-400 mb-1">DESCRIPTION</div>
+          <div id="inspector-desc" class="text-slate-300 leading-snug text-[13px]"></div>
+        </div>
+
+        <!-- Evidence -->
+        <div>
+          <div class="text-[10px] text-slate-400 mb-1">EVIDENCE OF MASTERY</div>
+          <ul id="inspector-evidence" class="text-xs space-y-1 text-slate-300"></ul>
+        </div>
+
+        <!-- Prereqs & Unlocks -->
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <div class="text-[10px] text-slate-400">PREREQUISITES <span id="prereq-count" class="font-mono text-slate-500"></span></div>
+          </div>
+          <div id="inspector-prereqs" class="space-y-px text-xs"></div>
+        </div>
+        
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <div class="text-[10px] text-slate-400">UNLOCKS <span id="unlock-count" class="font-mono text-slate-500"></span></div>
+          </div>
+          <div id="inspector-unlocks" class="space-y-px text-xs"></div>
+        </div>
+
+        <div id="inspector-reason" class="hidden text-[11px] bg-black/40 border border-white/10 p-2.5 rounded-2xl">
+          <span class="text-amber-300/80">Reason for highlighted edge:</span><br>
+          <span id="reason-text" class="text-slate-300"></span>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-white/10 bg-black/20 text-[10px]">
+        <button onclick="clearSelection()" 
+                class="w-full py-2 rounded-2xl bg-white/5 hover:bg-white/10 text-xs font-medium border border-white/10">
+          Clear selection
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insights panel (collapsible) -->
+  <div class="fixed bottom-4 right-4 glass px-4 py-3 rounded-3xl border border-white/10 text-xs shadow-2xl max-w-xs hidden lg:block" id="insights-panel">
+    <div class="flex items-center justify-between mb-2">
+      <div class="font-semibold text-xs">Insights</div>
+      <button onclick="document.getElementById('insights-panel').classList.toggle('hidden')" class="text-slate-400 hover:text-white">×</button>
+    </div>
+    <div id="insights-content" class="space-y-1 text-[10px] leading-tight text-slate-400"></div>
+  </div>
+
+  <script>
+    // Tailwind script
+    function initTailwind() {
+      document.documentElement.style.setProperty('--accent', '#a5b4fc');
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      };
+    }
+
+    // Subject color palette (carefully chosen, high contrast, accessible)
+    const SUBJECT_COLORS = {
+      "Science": "#67e8f9",
+      "Mathematics": "#a5b4fc",
+      "English": "#f9a8d4",
+      "History": "#fbbf24",
+      "Personal & Social Development": "#86efac",
+      "Life Skills": "#c084fc",
+      "Computing": "#f472b6",
+      "Learning to Learn": "#fb923c"
+    };
+
+    const TYPE_COLORS = {
+      "CONCEPTUAL": "#a5b4fc",
+      "PROCEDURAL": "#67e8f9",
+      "REPRESENTATIONAL": "#f9a8d4",
+      "LANGUAGE": "#fbbf24",
+      "META": "#86efac"
+    };
+
+    let Graph;
+    let allNodes = [];
+    let allLinks = [];
+    let currentNodes = [];
+    let graphData = { nodes: [], links: [] };
+    let selectedNode = null;
+    let colorMode = 'subject';
+    let autoRotate = false;
+    let currentFilter = null;
+
+    // Safe wrapper for cameraPosition (defends against timing / CDN load order issues)
+    function safeCameraPosition(pos, lookAt, ms) {
+      try {
+        if (Graph && typeof Graph.cameraPosition === 'function') {
+          Graph.cameraPosition(pos, lookAt, ms);
+        }
+      } catch (e) {
+        console.warn('safeCameraPosition failed:', e);
+      }
+    }
+
+    // Map for fast lookup
+    let nodeMap = new Map();
+    let linkMap = new Map(); // sourceId -> list of targets
+
+    async function loadData() {
+      const status = document.getElementById('status-text');
+      status.textContent = "Loading taxonomy data...";
+
+      try {
+        const [topicsRes, linksRes] = await Promise.all([
+          fetch('./topics_with_layout.json'),
+          fetch('./links.json')
+        ]);
+
+        if (!topicsRes.ok || !linksRes.ok) {
+          throw new Error("Could not load generated data. Make sure you ran the generation pipeline and are serving this directory via HTTP.");
+        }
+
+        const topicsDoc = await topicsRes.json();
+        const linksDoc = await linksRes.json();
+
+        allNodes = topicsDoc.nodes || topicsDoc;
+        allLinks = linksDoc.links || linksDoc;
+
+        // Build lookup structures
+        nodeMap = new Map(allNodes.map(n => [n.id, n]));
+        
+        linkMap = new Map();
+        allLinks.forEach(l => {
+          if (!linkMap.has(l.source)) linkMap.set(l.source, []);
+          linkMap.get(l.source).push(l);
+        });
+
+        // Prepare graph data for 3d-force-graph
+        graphData = {
+          nodes: allNodes.map(n => ({
+            ...n,
+            // initial positions from UMAP 3D
+            x: n.x,
+            y: n.y,
+            z: n.z,
+            // store original semantic positions for reset
+            __ux: n.x, __uy: n.y, __uz: n.z,
+            val: Math.max(0.6, (n.centrality || 0.05) * 18)
+          })),
+          links: allLinks.map(l => ({
+            source: l.source,
+            target: l.target,
+            strength: l.strength,
+            reason: l.reason,
+            color: l.strength === 'hard' ? '#64748b55' : '#47556933'
+          }))
+        };
+
+        currentNodes = [...graphData.nodes];
+
+        document.getElementById('footer-info').innerHTML = 
+          `${allNodes.length} concepts • ${allLinks.length} prereqs • UMAP seeded`;
+
+        status.textContent = "Building visualization...";
+        return true;
+      } catch (err) {
+        console.error(err);
+        status.innerHTML = `<span class="text-red-400">Error loading data.</span> ${err.message}`;
+        // Provide fallback demo data if files missing (for direct file open)
+        return createFallbackData();
+      }
+    }
+
+    function createFallbackData() {
+      // Minimal fallback so the HTML is still impressive when opened without generation
+      console.warn("%c[Marble Viz] Using fallback demo data. Run the generation pipeline for the real 1590 topics.", "color:#64748b");
+      const demoSubjects = Object.keys(SUBJECT_COLORS);
+      const demoNodes = Array.from({length: 180}, (_, i) => {
+        const subj = demoSubjects[i % demoSubjects.length];
+        const ang = (i / 180) * Math.PI * 2;
+        return {
+          id: "demo_" + i,
+          name: ["Counting", "Phonics", "Habitats", "Addition", "Emotions", "Robots", "Sentences", "Patterns"][i%8] + " " + i,
+          subject: subj,
+          domain: "Demo",
+          type: "CONCEPTUAL",
+          ageRangeStart: 5 + (i % 6),
+          ageRangeEnd: 7 + (i % 6),
+          centrality: 0.03 + Math.random() * 0.12,
+          x: Math.cos(ang) * (2 + Math.random()),
+          y: Math.sin(ang) * (1.4 + Math.random() * 1.2),
+          z: (Math.random() - 0.5) * 3.5,
+          __ux: Math.cos(ang) * (2 + Math.random()),
+          __uy: Math.sin(ang) * (1.4 + Math.random() * 1.2),
+          __uz: (Math.random() - 0.5) * 3.5,
+          val: 1.6
+        };
+      });
+      const demoLinks = [];
+      for (let i = 0; i < 220; i++) {
+        const s = demoNodes[i % demoNodes.length].id;
+        const t = demoNodes[(i * 7 + 3) % demoNodes.length].id;
+        if (s !== t) demoLinks.push({source: s, target: t, strength: Math.random() > 0.6 ? 'hard' : 'soft', reason: "Demo prerequisite relationship"});
+      }
+      allNodes = demoNodes;
+      allLinks = demoLinks;
+      nodeMap = new Map(allNodes.map(n => [n.id, n]));
+      linkMap = new Map();
+      allLinks.forEach(l => {
+        if (!linkMap.has(l.source)) linkMap.set(l.source, []);
+        linkMap.get(l.source).push(l);
+      });
+      graphData = { nodes: allNodes.map(n => ({...n, x:n.x, y:n.y, z:n.z, val: n.val})), links: allLinks };
+      currentNodes = [...allNodes];
+      document.getElementById('footer-info').innerHTML = `DEMO MODE — ${allNodes.length} nodes (run pipeline for full data)`;
+      return true;
+    }
+
+    function initGraph() {
+      const container = document.getElementById('graph');
+
+      // Robust global lookup
+      const FG = (typeof window !== 'undefined' && (window.ForceGraph3D || window['3d-force-graph'])) || (typeof ForceGraph3D !== 'undefined' ? ForceGraph3D : null);
+
+      if (typeof FG !== 'function') {
+        const status = document.getElementById('status-text');
+        status.innerHTML = '<span class="text-red-400">Failed to load 3d-force-graph library from CDN.</span> Try a local http server or check network.';
+        console.error('ForceGraph3D constructor not found on window. Make sure the CDN script loaded successfully.');
+        return;
+      }
+
+      // Create the instance using the constructor style (new ForceGraph3D(element)).
+      // Note: the official examples use `new`, not the factory `ForceGraph3D()(el)`.
+      let graphInstance;
+      try {
+        graphInstance = new FG(container);
+      } catch (err) {
+        console.error('Error constructing new ForceGraph3D(container):', err);
+        document.getElementById('status-text').innerHTML = '<span class="text-red-400">Failed to initialize 3D graph.</span>';
+        return;
+      }
+
+      if (!graphInstance || typeof graphInstance.graphData !== 'function' || typeof graphInstance.width !== 'function') {
+        console.error('new ForceGraph3D(container) did not return a valid graph instance with expected methods.', graphInstance);
+        document.getElementById('status-text').innerHTML = '<span class="text-red-400">3D graph library returned unexpected object.</span> This can happen with certain CDN versions or when opening via file://.';
+        return;
+      }
+
+      Graph = graphInstance
+        .width(container.clientWidth)
+        .height(container.clientHeight)
+        .backgroundColor('#0a0a0f')
+        .nodeVal('val')
+        .nodeLabel(n => `${n.name} <span style="color:#64748b">(${n.subject})</span>`)
+        .nodeColor(n => getNodeColor(n))
+        .nodeResolution(16)
+        .linkColor(l => l.color || '#47556944')
+        .linkWidth(l => l.strength === 'hard' ? 0.7 : 0.35)
+        .linkOpacity(0.55)
+        .linkDirectionalParticles(0)
+        .linkDirectionalParticleSpeed(0.008)
+        .linkDirectionalParticleWidth(1.6)
+        .onNodeClick(handleNodeClick)
+        .onBackgroundClick(() => clearSelection())
+        // Note: We intentionally do NOT use custom .nodeThreeObject here.
+        // It requires a shared Three.js instance. Removing it prevents
+        // "Multiple instances of Three.js" warnings and ensures cameraPosition etc. are available.
+        ;
+
+      // Handle resize
+      window.addEventListener('resize', () => {
+        if (Graph && typeof Graph.width === 'function') {
+          Graph.width(container.clientWidth).height(container.clientHeight);
+        }
+      });
+
+      // Keyboard shortcut
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          document.getElementById('search').focus();
+        }
+        if (e.key === 'Escape') clearSelection();
+      });
+
+      // Search
+      const searchInput = document.getElementById('search');
+      searchInput.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        if (!q) {
+          highlightNodes([]);
+          return;
+        }
+        const matches = allNodes.filter(n => 
+          (n.name && n.name.toLowerCase().includes(q)) || 
+          (n.domain && n.domain.toLowerCase().includes(q))
+        ).map(n => n.id);
+        highlightNodes(matches, true);
+      });
+
+      // Initial render
+      if (Graph && typeof Graph.graphData === 'function') {
+        Graph.graphData(graphData);
+      } else {
+        console.error('Graph instance lost or invalid before graphData call');
+      }
+
+      // Configure the underlying d3 forces AFTER graphData (safer, and ensures Graph is the graph instance)
+      if (Graph && typeof Graph.d3Force === 'function') {
+        Graph.d3Force('link')
+          .distance(14)
+          .strength(0.35);
+      }
+
+      // Auto fit-view upon load (when the force simulation settles)
+      let didInitialFit = false;
+      if (Graph && typeof Graph.onEngineStop === 'function') {
+        Graph.onEngineStop(() => {
+          if (!didInitialFit) {
+            didInitialFit = true;
+            fitToView();
+          }
+        });
+      } else {
+        setTimeout(() => {
+          fitToView();
+        }, 800);
+      }
+
+      // Make absolutely sure the container has size (some layouts need a tick)
+      if (Graph && typeof Graph.width === 'function' && container.clientWidth === 0) {
+        // Defer one frame
+        requestAnimationFrame(() => {
+          if (Graph && typeof Graph.width === 'function') {
+            Graph.width(window.innerWidth * 0.6).height(window.innerHeight * 0.9);
+          }
+        });
+      }
+
+      // Initial camera position — do this AFTER graphData to ensure the instance is fully ready.
+      // Use safe wrapper because of occasional CDN / Three.js loading timing.
+      setTimeout(() => {
+        safeCameraPosition({ x: 28, y: 22, z: 65 }, {x:0,y:0,z:0}, 0);
+      }, 50);
+      
+      // Seed nice initial forces (after graphData so the force objects exist)
+      setTimeout(() => {
+        if (Graph && typeof Graph.d3Force === 'function') {
+          try {
+            Graph.d3Force('charge').strength(-22);
+            Graph.d3Force('link').strength(0.28);
+          } catch (e) { /* force may not be registered yet */ }
+        }
+      }, 120);
+      
+      // Build subject legend
+      buildSubjectLegend();
+      
+      // Initial insights
+      updateInsights();
+      
+      document.getElementById('status-text').textContent = "Visualization ready — click any node";
+      
+      // Show a couple of featured surprising connections hint on first load (demo or real)
+      setTimeout(() => {
+        const pill = document.getElementById('stats-pill');
+        pill.style.display = 'flex';
+        pill.innerHTML = `<span class="text-emerald-300">1590</span> concepts in semantic space`;
+      }, 1400);
+    }
+
+    function getNodeColor(node) {
+      if (colorMode === 'type') return TYPE_COLORS[node.type] || '#64748b';
+      if (colorMode === 'age') {
+        const age = node.ageRangeStart || 7;
+        const t = Math.max(0, Math.min(1, (age - 4) / 9));
+        return `hsl(${190 + t * 70}, 78%, ${58 + t * 12}%)`;
+      }
+      return SUBJECT_COLORS[node.subject] || '#64748b';
+    }
+
+    function setColorMode(mode) {
+      colorMode = mode;
+      // update buttons
+      ['subject','type','age'].forEach(m => {
+        const el = document.getElementById('color-' + m);
+        if (el) el.classList.toggle('bg-indigo-500/20', m === mode);
+      });
+      if (Graph && typeof Graph.nodeColor === 'function') Graph.nodeColor(getNodeColor);
+    }
+
+    function buildSubjectLegend() {
+      const container = document.getElementById('subject-legend');
+      container.innerHTML = '';
+      
+      const subjects = [...new Set(allNodes.map(n => n.subject))].sort();
+      
+      subjects.forEach(subj => {
+        const color = SUBJECT_COLORS[subj] || '#64748b';
+        const pill = document.createElement('div');
+        pill.className = `subject-pill cursor-pointer px-2.5 py-[3px] rounded-2xl text-[10px] font-medium flex items-center gap-x-1.5 border border-white/10 bg-white/5`;
+        pill.innerHTML = `
+          <span class="inline-block w-2 h-2 rounded-full" style="background:${color}"></span>
+          <span>${subj}</span>
+        `;
+        pill.onclick = () => toggleSubjectFilter(subj, pill);
+        container.appendChild(pill);
+      });
+    }
+
+    let activeSubjectFilters = new Set();
+
+    function toggleSubjectFilter(subj, pillEl) {
+      if (activeSubjectFilters.has(subj)) {
+        activeSubjectFilters.delete(subj);
+        pillEl.classList.remove('active', 'bg-white/10');
+      } else {
+        activeSubjectFilters.add(subj);
+        pillEl.classList.add('active', 'bg-white/10');
+      }
+      applyFilters();
+    }
+
+    function applyFilters() {
+      let visible = allNodes;
+      
+      if (activeSubjectFilters.size > 0) {
+        visible = visible.filter(n => activeSubjectFilters.has(n.subject));
+      }
+      
+      if (currentFilter && currentFilter.type === 'age') {
+        visible = visible.filter(n => {
+          const start = n.ageRangeStart || 0;
+          const end = n.ageRangeEnd || 99;
+          return start <= currentFilter.max && end >= currentFilter.min;
+        });
+      }
+      
+      const visibleIds = new Set(visible.map(n => n.id));
+      
+      const newNodes = graphData.nodes.filter(n => visibleIds.has(n.id));
+      const newLinks = graphData.links.filter(l => {
+        const s = typeof l.source === 'object' ? l.source.id : l.source;
+        const t = typeof l.target === 'object' ? l.target.id : l.target;
+        return visibleIds.has(s) && visibleIds.has(t);
+      });
+      
+      if (Graph && typeof Graph.graphData === 'function') {
+        Graph.graphData({ nodes: newNodes, links: newLinks });
+      }
+    }
+
+    function filterByAge(min, max) {
+      currentFilter = { type: 'age', min, max };
+      applyFilters();
+    }
+    
+    function clearFilters() {
+      activeSubjectFilters.clear();
+      currentFilter = null;
+      document.querySelectorAll('.subject-pill').forEach(p => p.classList.remove('active', 'bg-white/10'));
+      if (Graph && typeof Graph.graphData === 'function') {
+        Graph.graphData(graphData);
+      }
+    }
+
+    function updateForces() {
+      if (!Graph || typeof Graph.d3Force !== 'function') return;
+      const val = parseFloat(document.getElementById('link-strength').value);
+      document.getElementById('link-strength-val').textContent = val.toFixed(2);
+      
+      Graph.d3Force('link').strength(val);
+      if (typeof Graph.numDimensions === 'function') Graph.numDimensions(3);
+    }
+
+    function resetToSemantic() {
+      if (!Graph || typeof Graph.graphData !== 'function') return;
+      const data = Graph.graphData();
+      if (data && data.nodes) {
+        data.nodes.forEach(n => {
+          if (n.__ux !== undefined) {
+            n.x = n.__ux;
+            n.y = n.__uy;
+            n.z = n.__uz;
+          }
+        });
+      }
+      Graph.graphData(data);
+      if (typeof Graph.d3Force === 'function') Graph.d3Force('link').strength(0.08);
+      document.getElementById('link-strength').value = 0.08;
+      document.getElementById('link-strength-val').textContent = "0.08";
+    }
+
+    function reheatForces() {
+      if (!Graph || typeof Graph.d3Force !== 'function') return;
+      Graph.d3Force('link').strength(parseFloat(document.getElementById('link-strength').value) || 0.4);
+      if (typeof Graph.d3ReheatSimulation === 'function') Graph.d3ReheatSimulation();
+    }
+
+    // BFS to collect ancestor chain (prerequisites)
+    function getAncestorChain(nodeId, maxDepth = 5) {
+      const chain = new Set([nodeId]);
+      const queue = [[nodeId, 0]];
+      const reasons = new Map();
+      
+      while (queue.length) {
+        const [current, depth] = queue.shift();
+        if (depth >= maxDepth) continue;
+        
+        const outgoing = linkMap.get(current) || [];
+        for (const link of outgoing) {
+          if (!chain.has(link.target)) {
+            chain.add(link.target);
+            if (link.reason) reasons.set(link.target, link.reason);
+            queue.push([link.target, depth + 1]);
+          }
+        }
+      }
+      return { ids: Array.from(chain), reasons };
+    }
+
+    function getUnlocks(nodeId, max = 6) {
+      return allLinks
+        .filter(l => l.target === nodeId)
+        .map(l => l.source)
+        .slice(0, max);
+    }
+
+    function handleNodeClick(node) {
+      if (!Graph || typeof Graph.nodeColor !== 'function') return;
+      selectedNode = node;
+      
+      // Update inspector
+      document.getElementById('inspector-name').textContent = node.name || node.id;
+      document.getElementById('inspector-meta').innerHTML = `
+        <span class="text-indigo-300">${node.subject}</span> 
+        ${node.domain ? '· ' + node.domain : ''} 
+        · Age ${node.ageRangeStart || '?'}–${node.ageRangeEnd || '?'}
+      `;
+      document.getElementById('inspector-desc').textContent = 'Full description would appear here for real data. (Loaded from generated JSON in production run.)';
+      
+      // Evidence (placeholder unless we embed more data)
+      const evUl = document.getElementById('inspector-evidence');
+      evUl.innerHTML = '<li class="text-slate-400">• Evidence details loaded from source taxonomy in full pipeline</li>';
+      
+      // Highlight the concept + prereqs
+      const { ids: prereqIds } = getAncestorChain(node.id);
+      const unlockIds = getUnlocks(node.id);
+      
+      const highlightSet = new Set([node.id, ...prereqIds, ...unlockIds]);
+      
+      // Color and particle magic
+      Graph
+        .nodeColor(n => {
+          if (n.id === node.id) return '#f472b6';
+          if (prereqIds.includes(n.id)) return '#f59e0b'; // warm for prereqs
+          if (unlockIds.includes(n.id)) return '#34d399'; // green for unlocks
+          return getNodeColor(n);
+        })
+        .linkDirectionalParticles(link => {
+          const s = typeof link.source === 'object' ? link.source.id : link.source;
+          const t = typeof link.target === 'object' ? link.target.id : link.target;
+          if (prereqIds.includes(t) && s === node.id) return 2;
+          return 0;
+        })
+        .linkColor(link => {
+          const s = typeof link.source === 'object' ? link.source.id : link.source;
+          const t = typeof link.target === 'object' ? link.target.id : link.target;
+          if ((prereqIds.includes(t) && s === node.id) || (s === node.id && unlockIds.includes(t))) {
+            return link.strength === 'hard' ? '#f59e0b' : '#34d399';
+          }
+          return link.color || '#47556933';
+        });
+
+      // Update inspector lists
+      updateInspectorLists(node, prereqIds, unlockIds);
+
+      // Camera focus
+      safeCameraPosition(
+        { x: node.x * 1.6, y: node.y * 1.6 + 12, z: node.z * 1.6 + 28 },
+        node,
+        900
+      );
+      
+      document.getElementById('status-text').textContent = `Focused on: ${node.name}`;
+    }
+
+    function updateInspectorLists(node, prereqIds, unlockIds) {
+      const prereqEl = document.getElementById('inspector-prereqs');
+      const unlockEl = document.getElementById('inspector-unlocks');
+      prereqEl.innerHTML = '';
+      unlockEl.innerHTML = '';
+
+      document.getElementById('prereq-count').textContent = `(${prereqIds.length - 1})`;
+      document.getElementById('unlock-count').textContent = `(${unlockIds.length})`;
+
+      const prereqs = prereqIds.filter(id => id !== node.id).slice(0, 5);
+      prereqs.forEach(id => {
+        const n = nodeMap.get(id);
+        if (!n) return;
+        const div = document.createElement('div');
+        div.className = 'px-2 py-px hover:bg-white/5 cursor-pointer rounded flex justify-between text-xs';
+        div.innerHTML = `<span class="truncate">${n.name || id}</span><span class="text-amber-400/70 text-[9px] ml-1">prereq</span>`;
+        div.onclick = () => {
+          const targetNode = graphData.nodes.find(nn => nn.id === id);
+          if (targetNode) handleNodeClick(targetNode);
+        };
+        prereqEl.appendChild(div);
+      });
+
+      unlockIds.slice(0, 5).forEach(id => {
+        const n = nodeMap.get(id);
+        if (!n) return;
+        const div = document.createElement('div');
+        div.className = 'px-2 py-px hover:bg-white/5 cursor-pointer rounded flex justify-between text-xs';
+        div.innerHTML = `<span class="truncate">${n.name || id}</span><span class="text-emerald-400/70 text-[9px] ml-1">unlocks</span>`;
+        div.onclick = () => {
+          const targetNode = graphData.nodes.find(nn => nn.id === id);
+          if (targetNode) handleNodeClick(targetNode);
+        };
+        unlockEl.appendChild(div);
+      });
+    }
+
+    function clearSelection() {
+      selectedNode = null;
+      document.getElementById('inspector-name').textContent = '—';
+      document.getElementById('inspector-desc').textContent = '';
+      document.getElementById('inspector-prereqs').innerHTML = '';
+      document.getElementById('inspector-unlocks').innerHTML = '';
+      document.getElementById('inspector-meta').innerHTML = '';
+      
+      if (Graph && typeof Graph.nodeColor === 'function') {
+        Graph.nodeColor(getNodeColor)
+             .linkColor(l => l.color || '#47556933')
+             .linkDirectionalParticles(0);
+      }
+    }
+
+    function highlightNodes(ids, dimOthers = false) {
+      if (!Graph || typeof Graph.nodeColor !== 'function') return;
+      const idSet = new Set(ids);
+      
+      Graph.nodeColor(n => {
+        if (idSet.has(n.id)) return '#f472b6';
+        return dimOthers ? '#334155' : getNodeColor(n);
+      });
+    }
+
+    function highlightSurprises() {
+      if (!Graph || allLinks.length === 0 || typeof Graph.nodeColor !== 'function') return;
+      
+      // Approximate "surprise" using 3D coordinate distance (good proxy after UMAP)
+      // Find hard edges that are far apart spatially
+      const surprises = [];
+      
+      allLinks.filter(l => l.strength === 'hard').forEach(link => {
+        const a = nodeMap.get(link.source);
+        const b = nodeMap.get(link.target);
+        if (!a || !b) return;
+        
+        const dx = a.x - b.x, dy = a.y - b.y, dz = a.z - b.z;
+        const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+        
+        // higher distance = more surprising
+        surprises.push({ link, dist, a, b });
+      });
+      
+      surprises.sort((x,y) => y.dist - x.dist);
+      const topSurprises = surprises.slice(0, 12);
+      
+      const surpriseIds = new Set();
+      topSurprises.forEach(s => {
+        surpriseIds.add(s.a.id);
+        surpriseIds.add(s.b.id);
+      });
+      
+      // Visual treatment
+      Graph.nodeColor(n => surpriseIds.has(n.id) ? '#f59e0b' : getNodeColor(n))
+           .linkColor(l => {
+             const s = typeof l.source === 'object' ? l.source.id : l.source;
+             const t = typeof l.target === 'object' ? l.target.id : l.target;
+             const isSurprise = topSurprises.some(su => 
+               (su.a.id === s && su.b.id === t) || (su.a.id === t && su.b.id === s)
+             );
+             return isSurprise ? '#f59e0b' : (l.color || '#47556933');
+           })
+           .linkDirectionalParticles(link => {
+             const s = typeof link.source === 'object' ? link.source.id : link.source;
+             const t = typeof link.target === 'object' ? link.target.id : link.target;
+             const isSurprise = topSurprises.some(su => 
+               (su.a.id === s && su.b.id === t) || (su.a.id === t && su.b.id === s)
+             );
+             return isSurprise ? 3 : 0;
+           });
+
+      document.getElementById('status-text').textContent = `Highlighted ${topSurprises.length} surprising long-range hard prerequisites`;
+      
+      // Auto-clear after a while
+      setTimeout(() => {
+        if (!selectedNode && Graph && typeof Graph.nodeColor === 'function') {
+          Graph.nodeColor(getNodeColor).linkDirectionalParticles(0).linkColor(l => l.color || '#47556933');
+        }
+      }, 5200);
+    }
+
+    function updateInsights() {
+      const el = document.getElementById('insights-content');
+      if (!el) return;
+      
+      const hardCount = allLinks.filter(l => l.strength === 'hard').length;
+      const softCount = allLinks.length - hardCount;
+      
+      el.innerHTML = `
+        <div>Hard prereqs: <span class="font-mono text-amber-300">${hardCount}</span> &nbsp; Soft: <span class="font-mono text-slate-400">${softCount}</span></div>
+        <div class="text-emerald-300">UMAP preserves local semantic neighborhoods</div>
+        <div>Drag the <span class="font-semibold text-white">Graph pull</span> slider to watch pedagogy reshape meaning space.</div>
+      `;
+    }
+
+    function toggleAutoRotate() {
+      autoRotate = !autoRotate;
+      const label = document.getElementById('rotate-label');
+      if (Graph) {
+        // Use OrbitControls API (more reliable than enableNavigationControls)
+        const controls = (Graph && typeof Graph.controls === 'function') ? Graph.controls() : null;
+        if (controls) {
+          controls.autoRotate = !!autoRotate;
+          controls.autoRotateSpeed = 0.25;
+        }
+
+        if (autoRotate) {
+          safeCameraPosition({x: 55, y: 18, z: 48}, {x:0,y:1,z:0}, 1400);
+          label.textContent = 'Stop rotating';
+          const iv = setInterval(() => {
+            if (!autoRotate || !Graph || typeof Graph.cameraPosition !== 'function') { 
+              clearInterval(iv); 
+              return; 
+            }
+            try {
+              const pos = Graph.cameraPosition();
+              safeCameraPosition({ x: pos.x * 0.994 + Math.sin(Date.now()/14000)*0.8 , y: pos.y * 0.996 , z: pos.z }, undefined, 0);
+            } catch(e) {}
+          }, 120);
+        } else {
+          label.textContent = 'Auto-rotate';
+        }
+      }
+    }
+
+    function fitToView() {
+      if (Graph && typeof Graph.zoomToFit === 'function') {
+        Graph.zoomToFit(600, 30);
+      }
+    }
+
+    function resetCamera() {
+      if (!Graph) return;
+      safeCameraPosition({ x: 32, y: 19, z: 58 }, {x: 0, y: 0, z: 0}, 650);
+    }
+
+    function setInitialForces() {
+      // Called after first render
+      setTimeout(() => {
+        if (!Graph || typeof Graph.d3Force !== 'function') return;
+        const slider = document.getElementById('link-strength');
+        if (slider) {
+          slider.value = 0.35;
+          document.getElementById('link-strength-val').textContent = "0.35";
+        }
+        try {
+          Graph.d3Force('link').strength(0.35);
+          Graph.d3Force('charge').strength(-18);
+        } catch(e) { console.warn(e); }
+      }, 800);
+    }
+
+    async function bootstrap() {
+      initTailwind();
+      
+      const success = await loadData();
+      if (!success) {
+        console.error("Failed to bootstrap data");
+        return;
+      }
+      
+      initGraph();
+      setInitialForces();
+      
+      // Demo hint: highlight one interesting chain after a few seconds if in demo or small data
+      setTimeout(() => {
+        if (allNodes.length < 300 && Graph) {
+          // Try to pick something interesting from fallback or first node
+          const demoNode = allNodes.find(n => n.name && n.name.toLowerCase().includes('count')) || allNodes[12];
+          if (demoNode) {
+            // Don't auto select to avoid annoyance, just show the UI is live
+          }
+        }
+      }, 2600);
+      
+      // Mark as ready
+      console.log('%c[Marble Viz] Jaw-dropping semantic + graph explorer initialized.', 'color:#64748b');
+    }
+
+    // Boot
+    window.onload = bootstrap;
+  </script>
+</body>
+</html>

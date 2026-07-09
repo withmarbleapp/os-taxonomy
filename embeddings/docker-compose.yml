@@ -1,0 +1,20 @@
+# embeddings/docker-compose.yml
+# One-shot generation of embeddings, Chroma vector DB, UMAP layouts, and viz-ready artifacts.
+
+services:
+  generate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: marble-taxonomy-embeddings:latest
+    container_name: marble-embeddings
+    volumes:
+      # Read-only access to the canonical data
+      - ../data:/data:ro
+      # Write artifacts + vector DB here
+      - ../generated:/output
+    environment:
+      - EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+    # Override for custom UMAP params if desired:
+    # command: python generate.py --data-dir /data --output-dir /output --n-neighbors 25 --min-dist 0.1
+    restart: "no"

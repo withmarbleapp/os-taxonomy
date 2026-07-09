@@ -123,3 +123,22 @@ Plus the upstream notices in [PROVENANCE.md](PROVENANCE.md) for any curriculum s
 ## What's *not* here
 
 Deliberately excluded from this release: semantic embeddings (derived, recomputable) and any per-child / user data (never published). See [CHANGELOG.md](CHANGELOG.md).
+
+## Semantic spatial explorer (community contribution)
+
+A Docker-powered pipeline exists to generate embeddings and an interactive visualization that places every micro-topic in 3D semantic space (via UMAP) while overlaying and respecting the prerequisite graph structure.
+
+See [EMBEDDINGS.md](EMBEDDINGS.md) for full documentation.
+
+```bash
+./scripts/generate-viz.sh
+# then open generated/viz.html (or serve the directory)
+```
+
+The explorer lets you:
+- See conceptual clusters (semantic diversity)
+- Trace prerequisite chains that sometimes span large distances in meaning-space
+- Dial graph forces live to watch the "web of learning" pull concepts together
+- Discover surprising long-range dependencies
+
+This is the perfect complement to the existing 3D age-based prerequisite graph. Both are now possible from the same open dataset.

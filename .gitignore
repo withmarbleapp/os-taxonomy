@@ -3,3 +3,12 @@ node_modules/
 *.log
 .env
 .env.*
+
+# Generated embeddings, vector DB (recomputable)
+generated/
+embeddings/chroma/
+*.chroma
+
+# Do not ignore the source viz template
+!embeddings/viz.html
+

@@ -7,6 +7,8 @@
   "license": "(ODbL-1.0 AND CC-BY-SA-4.0)",
   "homepage": "https://withmarble.com",
   "scripts": {
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "generate-viz": "bash scripts/generate-viz.sh",
+    "serve-viz": "cd generated && python3 -m http.server 8080"
   }
 }

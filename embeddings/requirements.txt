@@ -1,0 +1,12 @@
+# embeddings/requirements.txt
+# Pinned for reproducibility. CPU-friendly defaults.
+sentence-transformers==3.1.1
+umap-learn==0.5.6
+chromadb==0.5.5
+numpy==1.26.4
+tqdm==4.66.5
+# networkx optional for any pre-hybrid layout
+networkx==3.3
+scikit-learn==1.5.1
+# For nicer CLI / provenance
+rich==13.7.1
