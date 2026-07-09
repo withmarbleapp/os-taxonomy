@@ -17,6 +17,13 @@ For encumbered sources we ship only the **standard code** (e.g. `1-ESS1-1`) and 
 - **Required notice:** *"Contains public sector information licensed under the Open Government Licence v3.0."*
 - **We ship:** full standard text.
 
+### 🟢 `acara-v9` — Australian Curriculum, Version 9 (F–6) — **full text**
+- **Publisher / rights:** © Australian Curriculum, Assessment and Reporting Authority (ACARA) 2010 to present, unless otherwise indicated.
+- **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Permits commercial use, adaptation, and redistribution with attribution. **No share-alike.**
+- **Required notice:** *"Australian Curriculum material © ACARA, licensed under CC BY 4.0."*
+- **We ship:** full content-description text (614 F–6 content descriptions across 7 subjects).
+- **Provenance:** community contribution; parsed from ACARA's official DOCX downloads with a reproducible, tested parser: <https://github.com/curiousape-ai/acara-v9-f6-json>.
+
 ### 🟡 `ccss-ela`, `ccss-math` — Common Core State Standards — **full text**
 - **Publisher / rights:** © 2010 National Governors Association Center for Best Practices (NGA Center) and Council of Chief State School Officers (CCSSO).
 - **License:** the CCSS Public License grants *"a limited, non-exclusive, royalty-free license to copy, publish, distribute, and display the Common Core State Standards **for purposes that support the Common Core State Standards Initiative**."* This is **purpose-limited**, and it does **not** clearly grant derivative-work or sublicensing rights — so the CCSS-derived records remain under the CCSS Public License, **not** ODbL.
