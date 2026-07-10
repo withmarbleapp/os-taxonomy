@@ -1,12 +1,21 @@
 {
   "name": "marble-taxonomy",
   "version": "1.0.0",
-  "description": "An open, graph-structured taxonomy of primary/elementary learning.",
+  "description": "An open, graph-structured taxonomy of primary/elementary learning, plus a weekend worksheet app.",
   "private": true,
   "type": "module",
   "license": "(ODbL-1.0 AND CC-BY-SA-4.0)",
   "homepage": "https://withmarble.com",
+  "workspaces": [
+    "app"
+  ],
   "scripts": {
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "dev": "npm run dev -w weekend-worksheets",
+    "build": "npm run build -w weekend-worksheets",
+    "start": "npm run start -w weekend-worksheets",
+    "seed": "npm run seed -w weekend-worksheets",
+    "test": "npm run test -w weekend-worksheets",
+    "test:e2e": "npm run test:e2e -w weekend-worksheets"
   }
 }

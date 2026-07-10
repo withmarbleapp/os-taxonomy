@@ -100,6 +100,16 @@ Validate structure + referential integrity:
 node scripts/validate.mjs
 ```
 
+## Weekend Worksheets app
+
+This repo also includes a local web app in [`app/`](app/) that generates themed printable PDF worksheets and tracks each child's progress against this taxonomy. See [`app/README.md`](app/README.md).
+
+```bash
+npm install
+npm run dev          # UI http://127.0.0.1:5173 · API :8787
+npm test             # unit + API tests
+```
+
 ## License
 
 This dataset is **multi-licensed** — read this before you use or redistribute it.

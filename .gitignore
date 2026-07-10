@@ -3,3 +3,10 @@ node_modules/
 *.log
 .env
 .env.*
+!.env.example
+app/storage/
+app/dist/
+app/test-results/
+app/playwright-report/
+*.db
+*.db-*
