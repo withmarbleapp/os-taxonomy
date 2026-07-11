@@ -1,6 +1,8 @@
 export const STORAGE_KEY = "marble-taxonomy:learner-profiles";
-export const STORAGE_VERSION = 1;
+export const STORAGE_VERSION = 2;
 export const PROGRESS_STATUSES = new Set(["learning", "mastered"]);
+export const ACTIVITY_ACTIONS = new Set(["learning", "mastered", "assessed", "cleared"]);
+const ACTIVITY_LIMIT = 500;
 
 function makeId() {
   if (globalThis.crypto?.randomUUID) return globalThis.crypto.randomUUID();
@@ -22,6 +24,21 @@ function sanitizeAssessment(value) {
     evidence: Array.isArray(value.evidence) ? value.evidence.filter(Number.isInteger) : [],
     assessedAt: typeof value.assessedAt === "string" ? value.assessedAt : new Date(0).toISOString(),
   };
+}
+
+function sanitizeActivities(value) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .filter((activity) =>
+      activity &&
+      typeof activity.id === "string" &&
+      typeof activity.topicId === "string" &&
+      activity.topicId.startsWith("mt_") &&
+      ACTIVITY_ACTIONS.has(activity.action) &&
+      typeof activity.at === "string",
+    )
+    .slice(-ACTIVITY_LIMIT)
+    .map(({ id, topicId, action, at }) => ({ id, topicId, action, at }));
 }
 
 export function sanitizeState(value) {
@@ -54,6 +71,7 @@ export function sanitizeState(value) {
       createdAt: typeof candidate.createdAt === "string" ? candidate.createdAt : new Date(0).toISOString(),
       updatedAt: typeof candidate.updatedAt === "string" ? candidate.updatedAt : new Date(0).toISOString(),
       progress,
+      activities: sanitizeActivities(candidate.activities),
     });
   }
 
@@ -115,7 +133,7 @@ export class ProfileStore {
     const cleanedName = cleanName(name);
     if (!cleanedName) throw new Error("Please enter a name.");
     const timestamp = this.#now().toISOString();
-    const profile = { id: makeId(), name: cleanedName, createdAt: timestamp, updatedAt: timestamp, progress: {} };
+    const profile = { id: makeId(), name: cleanedName, createdAt: timestamp, updatedAt: timestamp, progress: {}, activities: [] };
     return this.#commit({ ...this.#state, activeProfileId: profile.id, profiles: [...this.#state.profiles, profile] });
   }
 
@@ -146,7 +164,12 @@ export class ProfileStore {
     if (!topicId.startsWith("mt_")) throw new Error("Invalid topic identifier.");
     if (status !== null && !PROGRESS_STATUSES.has(status)) throw new Error("Invalid progress status.");
 
+    const activeProfile = this.#state.profiles.find(({ id }) => id === this.#state.activeProfileId);
+    const previous = activeProfile?.progress[topicId];
+    if (!verified && (previous?.status ?? null) === status) return this.state;
+
     const timestamp = this.#now().toISOString();
+    const action = verified ? "assessed" : status === "learning" ? "learning" : status === "mastered" ? "mastered" : "cleared";
     return this.#commit({
       ...this.#state,
       profiles: this.#state.profiles.map((profile) => {
@@ -164,7 +187,11 @@ export class ProfileStore {
               : existingAssessment ? { assessment: existingAssessment } : {}),
           };
         }
-        return { ...profile, progress, updatedAt: timestamp };
+        const activities = [
+          ...profile.activities,
+          { id: makeId(), topicId, action, at: timestamp },
+        ].slice(-ACTIVITY_LIMIT);
+        return { ...profile, progress, activities, updatedAt: timestamp };
       }),
     });
   }
@@ -175,7 +202,7 @@ export class ProfileStore {
     return this.#commit({
       ...this.#state,
       profiles: this.#state.profiles.map((profile) =>
-        profile.id === this.#state.activeProfileId ? { ...profile, progress: {}, updatedAt: timestamp } : profile,
+        profile.id === this.#state.activeProfileId ? { ...profile, progress: {}, activities: [], updatedAt: timestamp } : profile,
       ),
     });
   }

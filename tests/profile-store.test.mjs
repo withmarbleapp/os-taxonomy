@@ -66,9 +66,23 @@ describe("ProfileStore", () => {
     first.setProgress("mt_one", "learning");
     const restored = new ProfileStore(storage, () => date);
 
-    assert.equal(JSON.parse(storage.getItem(STORAGE_KEY)).version, 1);
+    assert.equal(JSON.parse(storage.getItem(STORAGE_KEY)).version, 2);
     assert.equal(restored.activeProfile.name, "Ada");
     assert.equal(restored.activeProfile.progress.mt_one.status, "learning");
+  });
+
+  it("keeps a chronological activity log and clears it with progress", () => {
+    const storage = new MemoryStorage();
+    const store = new ProfileStore(storage, () => date);
+    store.addProfile("Ada");
+    store.setProgress("mt_one", "learning");
+    store.setProgress("mt_one", "mastered");
+    store.setProgress("mt_one", "mastered", { verified: true, evidence: [0] });
+
+    assert.deepEqual(store.activeProfile.activities.map(({ action }) => action), ["learning", "mastered", "assessed"]);
+    assert.equal(store.activeProfile.activities[0].topicId, "mt_one");
+    store.resetActiveProgress();
+    assert.deepEqual(store.activeProfile.activities, []);
   });
 });
 
@@ -86,5 +100,6 @@ describe("sanitizeState", () => {
     assert.equal(state.profiles.length, 1);
     assert.equal(state.profiles[0].name, "Ada");
     assert.deepEqual(Object.keys(state.profiles[0].progress), ["mt_ok"]);
+    assert.deepEqual(state.profiles[0].activities, []);
   });
 });

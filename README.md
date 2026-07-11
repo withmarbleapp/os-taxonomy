@@ -104,11 +104,16 @@ node scripts/validate.mjs
 
 This repository includes a dependency-free browser explorer that can track learning progress privately on one device. It supports multiple child profiles, `learning` and `known` states, evidence-based assessments, subject/age/search filters, and dimming or hiding concepts a child already knows.
 
+Two complementary views share the same local profile:
+
+- **Graph** visualizes all prerequisite relationships and opens the evidence checklist for any concept.
+- **Logbook** summarizes known, learning, assessed, and not-yet-started concepts; suggests next topics whose hard prerequisites are complete; shows subject journeys; and keeps a chronological activity trail.
+
 ```bash
 npm run serve
 ```
 
-Then open [http://localhost:4173/explorer/](http://localhost:4173/explorer/). Profiles and progress are versioned and stored only in the browser's `localStorage`; the explorer makes no network requests after loading the taxonomy JSON. Use **Manage** beside the profile picker to rename or delete a profile, or reset its progress.
+Then open [http://localhost:4173/explorer/](http://localhost:4173/explorer/). A child's name is requested once and substituted automatically into every assessment prompt. Profiles, progress, and the most recent 500 logbook activities are versioned and stored only in the browser's `localStorage`; the explorer makes no network requests after loading the taxonomy JSON. Use **Manage** beside the profile picker to explicitly edit a name, delete a profile, or reset its progress and activity trail.
 
 The explorer is intentionally a static ES-module application with no build step. Its persistence layer lives in `explorer/src/profile-store.js`, independently of the graph renderer, so a server-backed profile adapter can replace it later without changing the taxonomy data or graph interaction.
 
