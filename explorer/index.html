@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the Marble Skill Taxonomy and privately track a child's learning progress in this browser."
+    />
+    <title>Marble Learning Map</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="../" aria-label="Marble Skill Taxonomy home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>
+          <strong>Learning Map</strong>
+          <small>Marble Skill Taxonomy</small>
+        </span>
+      </a>
+
+      <div class="profile-controls">
+        <label class="sr-only" for="profile-select">Child profile</label>
+        <select id="profile-select" aria-label="Child profile"></select>
+        <button id="add-profile" class="icon-button" type="button" title="Add a child" aria-label="Add a child">+</button>
+        <button id="manage-profile" class="button secondary" type="button">Manage</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="graph-shell" aria-label="Interactive learning graph">
+        <div class="toolbar">
+          <div class="search-container">
+            <label class="search-field">
+              <span class="sr-only">Search concepts</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+              <input id="search" type="search" placeholder="Search 1,590 concepts…" autocomplete="off" aria-controls="search-results" aria-expanded="false" />
+            </label>
+            <div id="search-results" class="search-results" role="listbox" aria-label="Concept search results" hidden></div>
+          </div>
+
+          <label>
+            <span>Subject</span>
+            <select id="subject-filter"><option value="">All subjects</option></select>
+          </label>
+
+          <label>
+            <span>Age</span>
+            <select id="age-filter"><option value="">All ages</option></select>
+          </label>
+
+          <label>
+            <span>Known concepts</span>
+            <select id="mastery-filter">
+              <option value="dim">Dim</option>
+              <option value="show">Show normally</option>
+              <option value="hide">Hide</option>
+              <option value="only">Show only known</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="summary-bar" aria-live="polite">
+          <div class="progress-copy">
+            <strong id="profile-greeting">Learning overview</strong>
+            <span id="progress-summary">Loading the taxonomy…</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Concepts known" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span id="progress-bar"></span>
+          </div>
+          <div class="legend" aria-label="Graph legend">
+            <span><i class="dot untracked"></i>Not started</span>
+            <span><i class="dot learning"></i>Learning</span>
+            <span><i class="dot mastered"></i>Known</span>
+            <span><i class="dot assessed"></i>Assessed</span>
+          </div>
+        </div>
+
+        <div id="canvas-wrap" class="canvas-wrap">
+          <canvas id="graph" aria-label="Concept graph. Select concepts using the search or graph."></canvas>
+          <div class="graph-actions">
+            <button id="zoom-in" class="icon-button glass" type="button" aria-label="Zoom in">+</button>
+            <button id="zoom-out" class="icon-button glass" type="button" aria-label="Zoom out">−</button>
+            <button id="reset-view" class="icon-button glass reset-view" type="button" aria-label="Fit graph to view" title="Fit graph to view">⌂</button>
+          </div>
+          <p class="graph-hint">Drag to move · Scroll to zoom · Select a dot to inspect</p>
+          <div id="empty-state" class="empty-state" hidden>
+            <strong>No concepts match these filters</strong>
+            <button id="clear-filters" class="button secondary" type="button">Clear filters</button>
+          </div>
+        </div>
+      </section>
+
+      <aside id="details" class="details-panel" aria-label="Concept details">
+        <div id="details-empty" class="details-empty">
+          <div class="empty-orbit" aria-hidden="true"><span></span></div>
+          <h1>Pick a concept</h1>
+          <p>Select any point in the graph to see what it means, how to assess it, and what it unlocks.</p>
+        </div>
+        <div id="details-content" hidden></div>
+      </aside>
+    </main>
+
+    <dialog id="profile-dialog">
+      <form method="dialog" class="dialog-card">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">Local profile</p>
+            <h2 id="dialog-title">Add a child</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </div>
+        <p class="privacy-note">Profiles and learning progress stay in this browser. Nothing is uploaded.</p>
+        <label class="field">
+          <span>Name</span>
+          <input id="profile-name" maxlength="60" required autocomplete="off" placeholder="Child's first name" />
+        </label>
+        <div class="dialog-actions">
+          <button value="cancel" class="button secondary">Cancel</button>
+          <button id="save-profile" value="default" class="button primary">Save profile</button>
+        </div>
+        <div id="profile-danger" class="danger-zone" hidden>
+          <p><strong>Progress controls</strong><br /><span id="danger-copy"></span></p>
+          <div>
+            <button id="reset-progress" type="button" class="button danger">Reset progress</button>
+            <button id="delete-profile" type="button" class="button text-danger">Delete profile</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

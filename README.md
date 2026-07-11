@@ -100,6 +100,18 @@ Validate structure + referential integrity:
 node scripts/validate.mjs
 ```
 
+## Learning Map explorer
+
+This repository includes a dependency-free browser explorer that can track learning progress privately on one device. It supports multiple child profiles, `learning` and `known` states, evidence-based assessments, subject/age/search filters, and dimming or hiding concepts a child already knows.
+
+```bash
+npm run serve
+```
+
+Then open [http://localhost:4173/explorer/](http://localhost:4173/explorer/). Profiles and progress are versioned and stored only in the browser's `localStorage`; the explorer makes no network requests after loading the taxonomy JSON. Use **Manage** beside the profile picker to rename or delete a profile, or reset its progress.
+
+The explorer is intentionally a static ES-module application with no build step. Its persistence layer lives in `explorer/src/profile-store.js`, independently of the graph renderer, so a server-backed profile adapter can replace it later without changing the taxonomy data or graph interaction.
+
 ## License
 
 This dataset is **multi-licensed** — read this before you use or redistribute it.
