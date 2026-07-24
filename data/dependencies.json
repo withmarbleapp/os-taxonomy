@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3221,
+  "edgeCount": 3225,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -19328,6 +19328,30 @@
       "prerequisiteId": "mt_M_xcaRcvSo",
       "strength": "soft",
       "reason": "Knight knowledge provides military context for the Crusades"
+    },
+    {
+      "topicId": "mt_rnsjXikmnK",
+      "prerequisiteId": "mt_u5HkSxZECM",
+      "strength": "hard",
+      "reason": "Must understand data vocabulary (pictogram, bar chart, frequency) before working with pie charts"
+    },
+    {
+      "topicId": "mt_rnsjXikmnK",
+      "prerequisiteId": "mt_H6LlpWgEYS",
+      "strength": "hard",
+      "reason": "Interpreting bar graphs builds the foundational chart-reading skills needed for pie charts"
+    },
+    {
+      "topicId": "mt_rnsjXikmnK",
+      "prerequisiteId": "mt_4MFUAsbx_6",
+      "strength": "hard",
+      "reason": "Constructing pie charts requires measuring and drawing angles with a protractor"
+    },
+    {
+      "topicId": "mt_rnsjXikmnK",
+      "prerequisiteId": "mt_4Km38F4L-6",
+      "strength": "soft",
+      "reason": "Understanding fractions of a whole supports interpreting pie chart sectors as proportions"
     }
   ]
 }

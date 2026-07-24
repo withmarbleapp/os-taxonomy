@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1590,
+  "topicCount": 1591,
   "topics": [
     {
       "id": "mt_AzTrT5ySCx",
@@ -11435,6 +11435,26 @@
       ],
       "assessmentPrompt": "Can {{name}} read a pie chart — for example, one showing how a family spends its weekly budget — and use it to answer questions and solve problems?",
       "standards": []
+    },
+    {
+      "id": "mt_rnsjXikmnK",
+      "type": "PROCEDURAL",
+      "subject": "Mathematics",
+      "domain": "Data & Statistics",
+      "name": "Pie Charts",
+      "description": "Interpret and construct pie charts; understand that a pie chart represents proportions of a whole where each sector angle is proportional to the frequency it represents; use pie charts to solve comparison, sum, and proportion problems",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "centrality": 0.15,
+      "evidence": [
+        "Interpret a pie chart by identifying what each sector represents and comparing relative proportions",
+        "Construct a pie chart from a frequency table by calculating each sector angle (category frequency ÷ total × 360°) and drawing with a protractor",
+        "Use a pie chart to solve problems — given the total, calculate the actual quantity represented by any sector"
+      ],
+      "assessmentPrompt": "Can {{name}} look at a pie chart — for example, one showing how a group of children spend their weekly pocket money — and answer questions like 'which category is the largest?' and 'if the total is £60, how much is spent on snacks?'",
+      "standards": [
+        "uk-nc-2013:Ma6/5.1a"
+      ]
     },
     {
       "id": "mt_IHipFGTFEY",
