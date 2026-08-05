@@ -17,7 +17,7 @@ Most curriculum data is either a flat list of standards or locked inside a produ
 
 - **1,590 micro-topics** — a single, teachable idea (e.g. *"Building sentences"*, *"Apparent brightness of stars"*), each with a plain-language description, mastery **evidence** criteria, a type (conceptual / procedural / representational / language / meta), a subject + domain, and an approximate age range.
 - **3,221 prerequisite dependencies** — a directed acyclic graph: *"topic X depends on prerequisite Y"*, each edge tagged `hard`/`soft` and carrying a one-line **reason**.
-- **Curriculum alignment** — each micro-topic links to the standards it was distilled from (NGSS, Common Core, the UK National Curriculum, and more).
+- **Curriculum alignment** — each micro-topic links to the standards it was distilled from or aligned to (NGSS, Common Core, the UK National Curriculum, the French programmes scolaires, and more).
 - **Domain clusters** — 183 parent-friendly one-paragraph summaries per (subject, domain, age band).
 
 ### Subjects
