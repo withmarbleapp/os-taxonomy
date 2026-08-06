@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://withmarble.com/taxonomy/schema/crosswalks.schema.json",
+  "title": "Marble Skill Taxonomy — cross-language skill crosswalks",
+  "type": "object",
+  "required": ["crosswalkCount", "crosswalks"],
+  "properties": {
+    "note": { "type": "string" },
+    "crosswalkCount": { "type": "integer", "minimum": 0 },
+    "crosswalks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topicId", "counterpartId", "relation", "transfer"],
+        "properties": {
+          "topicId": { "type": "string" },
+          "counterpartId": { "type": "string" },
+          "relation": { "const": "same-skill-different-language" },
+          "transfer": { "enum": ["high", "partial"] },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
