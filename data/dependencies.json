@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3221,
+  "edgeCount": 3835,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -19328,6 +19328,3690 @@
       "prerequisiteId": "mt_M_xcaRcvSo",
       "strength": "soft",
       "reason": "Knight knowledge provides military context for the Crusades"
+    },
+    {
+      "topicId": "mt_bEh9yUWD2u",
+      "prerequisiteId": "mt_Winq7Tu99m",
+      "strength": "hard",
+      "reason": "Words must be known before they can be sorted into categories and networks."
+    },
+    {
+      "topicId": "mt_GujqvhlHt1",
+      "prerequisiteId": "mt_OylZBRJT5o",
+      "strength": "soft",
+      "reason": "Varied pronouns feed into building longer multi-clause utterances."
+    },
+    {
+      "topicId": "mt_GujqvhlHt1",
+      "prerequisiteId": "mt_SxnjkJHMkG",
+      "strength": "soft",
+      "reason": "An emerging tense system supports linking clauses in time."
+    },
+    {
+      "topicId": "mt_mAschyjZAT",
+      "prerequisiteId": "mt_wLroTdOoZh",
+      "strength": "soft",
+      "reason": "Articulation work begins with consonant contrasts before nasal vowel contrasts."
+    },
+    {
+      "topicId": "mt_aYkkFOD2Tc",
+      "prerequisiteId": "mt_GcFzGTN8bl",
+      "strength": "hard",
+      "reason": "A child must enter verbal exchanges before narrating actions in them."
+    },
+    {
+      "topicId": "mt_aYkkFOD2Tc",
+      "prerequisiteId": "mt_SxnjkJHMkG",
+      "strength": "soft",
+      "reason": "Talking about past and future actions leans on emerging verb tenses."
+    },
+    {
+      "topicId": "mt_zTIgJGJF0E",
+      "prerequisiteId": "mt_aYkkFOD2Tc",
+      "strength": "hard",
+      "reason": "Recounting actions in shared context precedes recounting for an uninformed listener."
+    },
+    {
+      "topicId": "mt_zTIgJGJF0E",
+      "prerequisiteId": "mt_GujqvhlHt1",
+      "strength": "soft",
+      "reason": "Explicit decontextualized messages require complex connected utterances."
+    },
+    {
+      "topicId": "mt_evsiCYlHqu",
+      "prerequisiteId": "mt_wLroTdOoZh",
+      "strength": "soft",
+      "reason": "Clear articulation makes memorized texts intelligible when performed."
+    },
+    {
+      "topicId": "mt_fr3qMFCcsz",
+      "prerequisiteId": "mt_GcFzGTN8bl",
+      "strength": "hard",
+      "reason": "Entering exchanges precedes holding a shared topic across turns."
+    },
+    {
+      "topicId": "mt_hqlrIsRgUH",
+      "prerequisiteId": "mt_fr3qMFCcsz",
+      "strength": "soft",
+      "reason": "Sustained on-topic exchange creates the occasions for reformulation."
+    },
+    {
+      "topicId": "mt_hqlrIsRgUH",
+      "prerequisiteId": "mt_zTIgJGJF0E",
+      "strength": "soft",
+      "reason": "Noticing a listener's viewpoint underlies noticing one wasn't understood."
+    },
+    {
+      "topicId": "mt_5ANH390hDA",
+      "prerequisiteId": "mt_GujqvhlHt1",
+      "strength": "soft",
+      "reason": "Hypotheses need complex frames like 'peut-être que' and 'si… alors'."
+    },
+    {
+      "topicId": "mt_r3Gw5YG9Ji",
+      "prerequisiteId": "mt_Winq7Tu99m",
+      "strength": "soft",
+      "reason": "A stock of known words supports understanding heard messages."
+    },
+    {
+      "topicId": "mt_r3Gw5YG9Ji",
+      "prerequisiteId": "mt_fr3qMFCcsz",
+      "strength": "soft",
+      "reason": "Holding attention on a topic in exchanges trains sustained listening."
+    },
+    {
+      "topicId": "mt_yMXio98VMx",
+      "prerequisiteId": "mt_aYkkFOD2Tc",
+      "strength": "hard",
+      "reason": "Narrating one's actions is the seed of a brief organized production."
+    },
+    {
+      "topicId": "mt_yMXio98VMx",
+      "prerequisiteId": "mt_zTIgJGJF0E",
+      "strength": "soft",
+      "reason": "Presenting assumes making oneself understood without shared context."
+    },
+    {
+      "topicId": "mt_yMXio98VMx",
+      "prerequisiteId": "mt_GujqvhlHt1",
+      "strength": "soft",
+      "reason": "Organized productions require multi-clause sentences."
+    },
+    {
+      "topicId": "mt_wAhcLjXPoH",
+      "prerequisiteId": "mt_GcFzGTN8bl",
+      "strength": "hard",
+      "reason": "One must already engage in dialogue before following its formal rules."
+    },
+    {
+      "topicId": "mt_wAhcLjXPoH",
+      "prerequisiteId": "mt_fr3qMFCcsz",
+      "strength": "soft",
+      "reason": "Staying in the topic is an early form of respecting exchange norms."
+    },
+    {
+      "topicId": "mt_D3XxXSipSK",
+      "prerequisiteId": "mt_yMXio98VMx",
+      "strength": "hard",
+      "reason": "There must be oral productions before they can be judged with criteria."
+    },
+    {
+      "topicId": "mt_D3XxXSipSK",
+      "prerequisiteId": "mt_hqlrIsRgUH",
+      "strength": "soft",
+      "reason": "Self-listening and reformulating seed criteria-based self-evaluation."
+    },
+    {
+      "topicId": "mt_veLe2y6Xv6",
+      "prerequisiteId": "mt_yMXio98VMx",
+      "strength": "hard",
+      "reason": "Basic organized delivery comes before working an audience."
+    },
+    {
+      "topicId": "mt_veLe2y6Xv6",
+      "prerequisiteId": "mt_evsiCYlHqu",
+      "strength": "soft",
+      "reason": "Performing memorized texts builds early audience awareness."
+    },
+    {
+      "topicId": "mt_S1YaPzm9Vo",
+      "prerequisiteId": "mt_wAhcLjXPoH",
+      "strength": "hard",
+      "reason": "Turn-taking and listening rules precede building on others' words."
+    },
+    {
+      "topicId": "mt_S1YaPzm9Vo",
+      "prerequisiteId": "mt_fr3qMFCcsz",
+      "strength": "soft",
+      "reason": "Staying in the topic underlies connecting to what was said."
+    },
+    {
+      "topicId": "mt_522lmt0p24",
+      "prerequisiteId": "mt_yMXio98VMx",
+      "strength": "hard",
+      "reason": "Brief organized productions scale up into long structured ones."
+    },
+    {
+      "topicId": "mt_522lmt0p24",
+      "prerequisiteId": "mt_SxnjkJHMkG",
+      "strength": "soft",
+      "reason": "Narrating and explaining at length demands control of verb tenses."
+    },
+    {
+      "topicId": "mt_522lmt0p24",
+      "prerequisiteId": "mt_zTIgJGJF0E",
+      "strength": "soft",
+      "reason": "Long productions presume fully decontextualized speech."
+    },
+    {
+      "topicId": "mt_jnt3Zctt30",
+      "prerequisiteId": "mt_r3Gw5YG9Ji",
+      "strength": "hard",
+      "reason": "Extracting information from messages precedes steering one's own listening."
+    },
+    {
+      "topicId": "mt_jnt3Zctt30",
+      "prerequisiteId": "mt_wAhcLjXPoH",
+      "strength": "soft",
+      "reason": "Listening to others in exchanges trains the auditor's posture."
+    },
+    {
+      "topicId": "mt_2oCsGyaLN0",
+      "prerequisiteId": "mt_r3Gw5YG9Ji",
+      "strength": "hard",
+      "reason": "Understanding direct messages precedes mediated ones like reports."
+    },
+    {
+      "topicId": "mt_2oCsGyaLN0",
+      "prerequisiteId": "mt_jnt3Zctt30",
+      "strength": "soft",
+      "reason": "Goal-directed listening supports parsing interviews and reports."
+    },
+    {
+      "topicId": "mt_jJODNlogGc",
+      "prerequisiteId": "mt_r3Gw5YG9Ji",
+      "strength": "hard",
+      "reason": "Grasping heard information precedes restating it in one's own words."
+    },
+    {
+      "topicId": "mt_jJODNlogGc",
+      "prerequisiteId": "mt_hqlrIsRgUH",
+      "strength": "soft",
+      "reason": "Reformulating one's own speech transfers to reformulating others' texts."
+    },
+    {
+      "topicId": "mt_A9T3FWKRXf",
+      "prerequisiteId": "mt_522lmt0p24",
+      "strength": "soft",
+      "reason": "Producing different discourse types makes their features recognizable."
+    },
+    {
+      "topicId": "mt_A9T3FWKRXf",
+      "prerequisiteId": "mt_2oCsGyaLN0",
+      "strength": "soft",
+      "reason": "Media messages supply the interviews and reports whose genres are identified."
+    },
+    {
+      "topicId": "mt_75CsdV6QUz",
+      "prerequisiteId": "mt_r3Gw5YG9Ji",
+      "strength": "soft",
+      "reason": "One must understand a heard text before responding to it personally."
+    },
+    {
+      "topicId": "mt_75CsdV6QUz",
+      "prerequisiteId": "mt_jnt3Zctt30",
+      "strength": "soft",
+      "reason": "Attentive listening lets the effects of a text register."
+    },
+    {
+      "topicId": "mt_SeB8WmRd2L",
+      "prerequisiteId": "mt_evsiCYlHqu",
+      "strength": "hard",
+      "reason": "Performing memorized texts precedes expressive public reading."
+    },
+    {
+      "topicId": "mt_SeB8WmRd2L",
+      "prerequisiteId": "mt_veLe2y6Xv6",
+      "strength": "soft",
+      "reason": "Holding an audience carries over from presentations to read-alouds."
+    },
+    {
+      "topicId": "mt_n9FSAKzrtZ",
+      "prerequisiteId": "mt_5ANH390hDA",
+      "strength": "soft",
+      "reason": "Early hypothesising in talk grows into using speech to reason."
+    },
+    {
+      "topicId": "mt_n9FSAKzrtZ",
+      "prerequisiteId": "mt_hqlrIsRgUH",
+      "strength": "soft",
+      "reason": "Hearing and reworking one's own words underpins reflective talk."
+    },
+    {
+      "topicId": "mt_uEFHm3cPAQ",
+      "prerequisiteId": "mt_wAhcLjXPoH",
+      "strength": "hard",
+      "reason": "Classroom exchange rules ground the wider codes of taking the floor."
+    },
+    {
+      "topicId": "mt_QYBIa1XOgH",
+      "prerequisiteId": "mt_522lmt0p24",
+      "strength": "soft",
+      "reason": "Structured productions motivate choosing structures for each goal."
+    },
+    {
+      "topicId": "mt_QYBIa1XOgH",
+      "prerequisiteId": "mt_1mrYWvG3L7",
+      "strength": "soft",
+      "reason": "Register awareness prepares matching language forms to purpose."
+    },
+    {
+      "topicId": "mt_S8Gw0boNjH",
+      "prerequisiteId": "mt_522lmt0p24",
+      "strength": "hard",
+      "reason": "A structured production must exist before it can be adjusted live."
+    },
+    {
+      "topicId": "mt_S8Gw0boNjH",
+      "prerequisiteId": "mt_D3XxXSipSK",
+      "strength": "soft",
+      "reason": "Criteria-based evaluation guides adjusting one's own speech."
+    },
+    {
+      "topicId": "mt_uenCZ0Dij3",
+      "prerequisiteId": "mt_S1YaPzm9Vo",
+      "strength": "hard",
+      "reason": "Building on others' contributions is the engine of collective analysis."
+    },
+    {
+      "topicId": "mt_uenCZ0Dij3",
+      "prerequisiteId": "mt_n9FSAKzrtZ",
+      "strength": "soft",
+      "reason": "Talk as a thinking tool powers analysis carried out in interaction."
+    },
+    {
+      "topicId": "mt_JmUWr3vqWd",
+      "prerequisiteId": "mt_1mrYWvG3L7",
+      "strength": "hard",
+      "reason": "Knowing the registers is required to adapt discourse to situations."
+    },
+    {
+      "topicId": "mt_JmUWr3vqWd",
+      "prerequisiteId": "mt_uEFHm3cPAQ",
+      "strength": "soft",
+      "reason": "The codes of speaking feed into full situational adaptation."
+    },
+    {
+      "topicId": "mt_cdH7BZsrFC",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "soft",
+      "reason": "Vocal play builds on attentive listening to sounds"
+    },
+    {
+      "topicId": "mt_Hs9avrybZu",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "soft",
+      "reason": "Attending to speech sounds precedes isolating words in it"
+    },
+    {
+      "topicId": "mt_fm7otUV5C2",
+      "prerequisiteId": "mt_Hs9avrybZu",
+      "strength": "soft",
+      "reason": "Isolating words precedes breaking them into syllables"
+    },
+    {
+      "topicId": "mt_6dRQbIcIpn",
+      "prerequisiteId": "mt_fm7otUV5C2",
+      "strength": "hard",
+      "reason": "Must segment syllables before transforming them"
+    },
+    {
+      "topicId": "mt_a2TBXq6yvu",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "soft",
+      "reason": "Reciting close-phoneme rhymes builds on sound listening"
+    },
+    {
+      "topicId": "mt_InzPatRmaJ",
+      "prerequisiteId": "mt_a2TBXq6yvu",
+      "strength": "soft",
+      "reason": "Rhyme play grows out of known comptines"
+    },
+    {
+      "topicId": "mt_InzPatRmaJ",
+      "prerequisiteId": "mt_fm7otUV5C2",
+      "strength": "soft",
+      "reason": "A syllable ear prepares attention to word endings"
+    },
+    {
+      "topicId": "mt_JdVY4wP8E9",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "hard",
+      "reason": "Phoneme discrimination refines general sound listening"
+    },
+    {
+      "topicId": "mt_JdVY4wP8E9",
+      "prerequisiteId": "mt_a2TBXq6yvu",
+      "strength": "soft",
+      "reason": "Close-phoneme comptines train the discriminating ear"
+    },
+    {
+      "topicId": "mt_HILTMh7jiN",
+      "prerequisiteId": "mt_JdVY4wP8E9",
+      "strength": "hard",
+      "reason": "Must hear a phoneme before locating it"
+    },
+    {
+      "topicId": "mt_HILTMh7jiN",
+      "prerequisiteId": "mt_fm7otUV5C2",
+      "strength": "soft",
+      "reason": "Syllable positions scaffold locating sounds in words"
+    },
+    {
+      "topicId": "mt_kcsUOP38lV",
+      "prerequisiteId": "mt_HILTMh7jiN",
+      "strength": "hard",
+      "reason": "Isolating a sound precedes deleting or swapping it"
+    },
+    {
+      "topicId": "mt_kcsUOP38lV",
+      "prerequisiteId": "mt_6dRQbIcIpn",
+      "strength": "soft",
+      "reason": "Syllable manipulation rehearses the same operations on larger units"
+    },
+    {
+      "topicId": "mt_kcsUOP38lV",
+      "prerequisiteId": "mt_InzPatRmaJ",
+      "strength": "soft",
+      "reason": "Rhyme production is an early form of sound substitution"
+    },
+    {
+      "topicId": "mt_PxUPwBrhtK",
+      "prerequisiteId": "mt_JdVY4wP8E9",
+      "strength": "hard",
+      "reason": "Minimal pairs differ by exactly one phoneme"
+    },
+    {
+      "topicId": "mt_Mx8hVyMEuY",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "soft",
+      "reason": "Holding sound sequences builds on attentive listening"
+    },
+    {
+      "topicId": "mt_oYU7lcp86k",
+      "prerequisiteId": "mt_j4b2sJaRzJ",
+      "strength": "soft",
+      "reason": "Comparing languages starts from listening to their sounds"
+    },
+    {
+      "topicId": "mt_5M4rpAqTii",
+      "prerequisiteId": "mt_IlmIhpm8BW",
+      "strength": "soft",
+      "reason": "The name label is the child's first meaningful print"
+    },
+    {
+      "topicId": "mt_2CqJoklvkl",
+      "prerequisiteId": "mt_5M4rpAqTii",
+      "strength": "hard",
+      "reason": "Known prénom letters anchor learning the full alphabet"
+    },
+    {
+      "topicId": "mt_35dh2HFwOo",
+      "prerequisiteId": "mt_5M4rpAqTii",
+      "strength": "hard",
+      "reason": "Letters must be known in one script before matching across scripts"
+    },
+    {
+      "topicId": "mt_yv2ITsQ0K4",
+      "prerequisiteId": "mt_35dh2HFwOo",
+      "strength": "hard",
+      "reason": "Cursive forms are the standard's tool for separating look-alikes"
+    },
+    {
+      "topicId": "mt_c31dOeumjo",
+      "prerequisiteId": "mt_5M4rpAqTii",
+      "strength": "hard",
+      "reason": "Letters must be recognised before sounds attach to them"
+    },
+    {
+      "topicId": "mt_c31dOeumjo",
+      "prerequisiteId": "mt_JdVY4wP8E9",
+      "strength": "hard",
+      "reason": "The sound must be heard before mapping it to a letter"
+    },
+    {
+      "topicId": "mt_QYa8M6hfvX",
+      "prerequisiteId": "mt_IlmIhpm8BW",
+      "strength": "hard",
+      "reason": "Knowing what écrits are for precedes sorting their forms"
+    },
+    {
+      "topicId": "mt_TtvCWOTl0w",
+      "prerequisiteId": "mt_c31dOeumjo",
+      "strength": "hard",
+      "reason": "Systematic CGP work builds on the alphabetic principle"
+    },
+    {
+      "topicId": "mt_TtvCWOTl0w",
+      "prerequisiteId": "mt_kcsUOP38lV",
+      "strength": "soft",
+      "reason": "Phoneme awareness makes grapheme sounds meaningful"
+    },
+    {
+      "topicId": "mt_TtvCWOTl0w",
+      "prerequisiteId": "mt_2CqJoklvkl",
+      "strength": "soft",
+      "reason": "Letter naming supports learning grapheme sounds"
+    },
+    {
+      "topicId": "mt_TtvCWOTl0w",
+      "prerequisiteId": "mt_yv2ITsQ0K4",
+      "strength": "soft",
+      "reason": "Secure letterforms prevent b/d confusions in CGP work"
+    },
+    {
+      "topicId": "mt_WUQMTfo9zk",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Graphemes must be known before blending them"
+    },
+    {
+      "topicId": "mt_WUQMTfo9zk",
+      "prerequisiteId": "mt_kcsUOP38lV",
+      "strength": "soft",
+      "reason": "Oral blending rehearses written fusion"
+    },
+    {
+      "topicId": "mt_ENCTwbu1C6",
+      "prerequisiteId": "mt_WUQMTfo9zk",
+      "strength": "hard",
+      "reason": "Words are read by blending syllable after syllable"
+    },
+    {
+      "topicId": "mt_ENCTwbu1C6",
+      "prerequisiteId": "mt_fm7otUV5C2",
+      "strength": "soft",
+      "reason": "Oral syllabation guides word segmentation"
+    },
+    {
+      "topicId": "mt_jSuAiWoQ0h",
+      "prerequisiteId": "mt_2CqJoklvkl",
+      "strength": "soft",
+      "reason": "Letter knowledge supports memorising word forms"
+    },
+    {
+      "topicId": "mt_jSuAiWoQ0h",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "soft",
+      "reason": "First decoding anchors sight memorisation of frequent words"
+    },
+    {
+      "topicId": "mt_Ii1RCqHpjx",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Sentences are read word by word"
+    },
+    {
+      "topicId": "mt_Ii1RCqHpjx",
+      "prerequisiteId": "mt_jSuAiWoQ0h",
+      "strength": "soft",
+      "reason": "Instant mots-outils keep sentence reading flowing"
+    },
+    {
+      "topicId": "mt_12EXxjdoSI",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Single-letter CGP come before two-letter graphemes"
+    },
+    {
+      "topicId": "mt_12EXxjdoSI",
+      "prerequisiteId": "mt_WUQMTfo9zk",
+      "strength": "soft",
+      "reason": "Digraph syllables use the same blending routine"
+    },
+    {
+      "topicId": "mt_uyvFueH6tO",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Accents modify already-known letter sounds"
+    },
+    {
+      "topicId": "mt_9ftF5KJ8Bx",
+      "prerequisiteId": "mt_12EXxjdoSI",
+      "strength": "hard",
+      "reason": "Complex graphemes extend the digraph principle"
+    },
+    {
+      "topicId": "mt_ZF0FqbGUp9",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Base values of c, g and s must be known first"
+    },
+    {
+      "topicId": "mt_ZF0FqbGUp9",
+      "prerequisiteId": "mt_12EXxjdoSI",
+      "strength": "soft",
+      "reason": "Reading beyond letter-by-letter prepares context-dependent rules"
+    },
+    {
+      "topicId": "mt_RRUDXCwOfa",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "The confusable graphemes must first be taught"
+    },
+    {
+      "topicId": "mt_RRUDXCwOfa",
+      "prerequisiteId": "mt_PxUPwBrhtK",
+      "strength": "soft",
+      "reason": "Auditory minimal pairs underpin written ones"
+    },
+    {
+      "topicId": "mt_RRUDXCwOfa",
+      "prerequisiteId": "mt_yv2ITsQ0K4",
+      "strength": "soft",
+      "reason": "Visual look-alikes compound sound confusions"
+    },
+    {
+      "topicId": "mt_3vAYe9jwvy",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Silent letters only arise once words are being decoded"
+    },
+    {
+      "topicId": "mt_gKIMW4OeRi",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Long words extend syllable-by-syllable decoding"
+    },
+    {
+      "topicId": "mt_gKIMW4OeRi",
+      "prerequisiteId": "mt_6dRQbIcIpn",
+      "strength": "soft",
+      "reason": "Oral syllable skill guides chunking written words"
+    },
+    {
+      "topicId": "mt_gKIMW4OeRi",
+      "prerequisiteId": "mt_12EXxjdoSI",
+      "strength": "soft",
+      "reason": "Long words routinely contain digraphs"
+    },
+    {
+      "topicId": "mt_EirhxUYZSS",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "hard",
+      "reason": "Texts chain the sentences already mastered"
+    },
+    {
+      "topicId": "mt_EirhxUYZSS",
+      "prerequisiteId": "mt_jSuAiWoQ0h",
+      "strength": "soft",
+      "reason": "Decodable texts rely on instant mots-outils"
+    },
+    {
+      "topicId": "mt_GfaUyBjaN5",
+      "prerequisiteId": "mt_EirhxUYZSS",
+      "strength": "hard",
+      "reason": "Rate benchmarks are measured on practised decodable reading"
+    },
+    {
+      "topicId": "mt_GfaUyBjaN5",
+      "prerequisiteId": "mt_jSuAiWoQ0h",
+      "strength": "soft",
+      "reason": "Sight words buy the speed the benchmark needs"
+    },
+    {
+      "topicId": "mt_UWEociuJ0w",
+      "prerequisiteId": "mt_EirhxUYZSS",
+      "strength": "hard",
+      "reason": "Automaticity comes from accumulated text practice"
+    },
+    {
+      "topicId": "mt_UWEociuJ0w",
+      "prerequisiteId": "mt_9ftF5KJ8Bx",
+      "strength": "hard",
+      "reason": "All CGP must be known before all can be automatised"
+    },
+    {
+      "topicId": "mt_N5ykI6KU71",
+      "prerequisiteId": "mt_UWEociuJ0w",
+      "strength": "hard",
+      "reason": "Direct recognition grows out of automatised decoding"
+    },
+    {
+      "topicId": "mt_N5ykI6KU71",
+      "prerequisiteId": "mt_jSuAiWoQ0h",
+      "strength": "hard",
+      "reason": "The first sight vocabulary seeds the larger one"
+    },
+    {
+      "topicId": "mt_1ofKh6apEO",
+      "prerequisiteId": "mt_GfaUyBjaN5",
+      "strength": "hard",
+      "reason": "70-90 words per minute builds on the CP benchmark"
+    },
+    {
+      "topicId": "mt_1ofKh6apEO",
+      "prerequisiteId": "mt_UWEociuJ0w",
+      "strength": "hard",
+      "reason": "Speed depends on effortless decoding"
+    },
+    {
+      "topicId": "mt_qNpdcW5gCL",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "hard",
+      "reason": "Punctuation is worked once sentences are being read"
+    },
+    {
+      "topicId": "mt_mZKXl1TLvM",
+      "prerequisiteId": "mt_3vAYe9jwvy",
+      "strength": "hard",
+      "reason": "Liaison sounds precisely the letters that are usually silent"
+    },
+    {
+      "topicId": "mt_mZKXl1TLvM",
+      "prerequisiteId": "mt_1ofKh6apEO",
+      "strength": "soft",
+      "reason": "Natural liaison needs comfortable reading speed"
+    },
+    {
+      "topicId": "mt_2DIf53cokX",
+      "prerequisiteId": "mt_qNpdcW5gCL",
+      "strength": "hard",
+      "reason": "Expression builds on respected punctuation"
+    },
+    {
+      "topicId": "mt_2DIf53cokX",
+      "prerequisiteId": "mt_GfaUyBjaN5",
+      "strength": "soft",
+      "reason": "Expression needs decoding to no longer absorb all effort"
+    },
+    {
+      "topicId": "mt_lBWhZkhm4w",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Self-correction supposes words are being decoded"
+    },
+    {
+      "topicId": "mt_lBWhZkhm4w",
+      "prerequisiteId": "mt_3vAYe9jwvy",
+      "strength": "soft",
+      "reason": "Silent letters are a prime case for sense-checking"
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "hard",
+      "reason": "Grasping global meaning is the core of autonomous comprehension"
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_WZc33fwcw9",
+      "strength": "hard",
+      "reason": "Tracking referents is needed to follow a text alone"
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_9K2dpnYIBw",
+      "strength": "soft",
+      "reason": "Word-solving strategies sustain comprehension of new texts"
+    },
+    {
+      "topicId": "mt_BEUsU2Ibxp",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "soft",
+      "reason": "Inference builds on a first global grasp of the text"
+    },
+    {
+      "topicId": "mt_nFP5Yde86O",
+      "prerequisiteId": "mt_BEUsU2Ibxp",
+      "strength": "hard",
+      "reason": "Clue-plus-knowledge inference extends simple inference"
+    },
+    {
+      "topicId": "mt_vype7CDBQG",
+      "prerequisiteId": "mt_BEUsU2Ibxp",
+      "strength": "hard",
+      "reason": "Classifying implicit information requires making inferences first"
+    },
+    {
+      "topicId": "mt_vype7CDBQG",
+      "prerequisiteId": "mt_nFP5Yde86O",
+      "strength": "soft",
+      "reason": "Experience with complex inference sharpens the distinction"
+    },
+    {
+      "topicId": "mt_Xgya9v1Ecq",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "soft",
+      "reason": "One returns to a text already globally understood"
+    },
+    {
+      "topicId": "mt_BUDsNDrM6R",
+      "prerequisiteId": "mt_Xgya9v1Ecq",
+      "strength": "hard",
+      "reason": "Text-based justification grows out of the return-to-text habit"
+    },
+    {
+      "topicId": "mt_BUDsNDrM6R",
+      "prerequisiteId": "mt_vype7CDBQG",
+      "strength": "soft",
+      "reason": "Knowing what is stated versus inferred grounds justification"
+    },
+    {
+      "topicId": "mt_9eN2q96tPO",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "hard",
+      "reason": "Strategies serve the meaning-making goal established earlier"
+    },
+    {
+      "topicId": "mt_9eN2q96tPO",
+      "prerequisiteId": "mt_Xgya9v1Ecq",
+      "strength": "soft",
+      "reason": "Re-reading is the first repair strategy"
+    },
+    {
+      "topicId": "mt_9eN2q96tPO",
+      "prerequisiteId": "mt_9K2dpnYIBw",
+      "strength": "soft",
+      "reason": "Word-level strategies precede text-level strategies"
+    },
+    {
+      "topicId": "mt_kYBltng0LH",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "soft",
+      "reason": "Text types are distinguished by the meaning they carry"
+    },
+    {
+      "topicId": "mt_XTgb6fmxIo",
+      "prerequisiteId": "mt_kYBltng0LH",
+      "strength": "hard",
+      "reason": "Recognising literary forms builds on basic text types"
+    },
+    {
+      "topicId": "mt_tEqtCxUX81",
+      "prerequisiteId": "mt_kYBltng0LH",
+      "strength": "hard",
+      "reason": "Genre criteria refine the narrative/informative distinction"
+    },
+    {
+      "topicId": "mt_tEqtCxUX81",
+      "prerequisiteId": "mt_XTgb6fmxIo",
+      "strength": "soft",
+      "reason": "Layout recognition supports naming the genres"
+    },
+    {
+      "topicId": "mt_QFLzL1HBaI",
+      "prerequisiteId": "mt_kYBltng0LH",
+      "strength": "soft",
+      "reason": "Identifying document nature extends text-type knowledge"
+    },
+    {
+      "topicId": "mt_4dAsaniBlQ",
+      "prerequisiteId": "mt_Zm8u8UZB4N",
+      "strength": "hard",
+      "reason": "Locating information presupposes autonomous reading"
+    },
+    {
+      "topicId": "mt_4dAsaniBlQ",
+      "prerequisiteId": "mt_kYBltng0LH",
+      "strength": "soft",
+      "reason": "Knowing informational texts guides where to search"
+    },
+    {
+      "topicId": "mt_I2SASLM3we",
+      "prerequisiteId": "mt_4dAsaniBlQ",
+      "strength": "hard",
+      "reason": "Composite documents extend information-finding to mixed media"
+    },
+    {
+      "topicId": "mt_tMJ6Xtxk7s",
+      "prerequisiteId": "mt_4dAsaniBlQ",
+      "strength": "hard",
+      "reason": "Cross-document work requires finding information in each"
+    },
+    {
+      "topicId": "mt_tMJ6Xtxk7s",
+      "prerequisiteId": "mt_QFLzL1HBaI",
+      "strength": "soft",
+      "reason": "Comparing documents draws on knowing their nature and source"
+    },
+    {
+      "topicId": "mt_YjngdHJdiJ",
+      "prerequisiteId": "mt_I2SASLM3we",
+      "strength": "soft",
+      "reason": "Image reading is isolated out of composite-document work"
+    },
+    {
+      "topicId": "mt_lrxQqaQgXt",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "hard",
+      "reason": "Summarising presupposes grasping the global meaning"
+    },
+    {
+      "topicId": "mt_lrxQqaQgXt",
+      "prerequisiteId": "mt_vype7CDBQG",
+      "strength": "soft",
+      "reason": "A full restitution includes implicit information"
+    },
+    {
+      "topicId": "mt_ExxzCIhfW1",
+      "prerequisiteId": "mt_nFP5Yde86O",
+      "strength": "hard",
+      "reason": "Emotions and intent are read through inference"
+    },
+    {
+      "topicId": "mt_ExxzCIhfW1",
+      "prerequisiteId": "mt_ruSxQLf1ss",
+      "strength": "soft",
+      "reason": "Character types give a first frame for reading characters"
+    },
+    {
+      "topicId": "mt_JJtsZabgvh",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "soft",
+      "reason": "Following whole works builds on global comprehension"
+    },
+    {
+      "topicId": "mt_vjkiQqA7Us",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "soft",
+      "reason": "Choosing well grows from experience of varied works"
+    },
+    {
+      "topicId": "mt_vjkiQqA7Us",
+      "prerequisiteId": "mt_7xp3CkQA2h",
+      "strength": "soft",
+      "reason": "Library visits provide the occasions for choosing"
+    },
+    {
+      "topicId": "mt_MaouCYgczW",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "hard",
+      "reason": "One needs several works read to network them"
+    },
+    {
+      "topicId": "mt_z5TkgRci2L",
+      "prerequisiteId": "mt_MaouCYgczW",
+      "strength": "hard",
+      "reason": "Cultural connections deepen the earlier reading network"
+    },
+    {
+      "topicId": "mt_z5TkgRci2L",
+      "prerequisiteId": "mt_tEqtCxUX81",
+      "strength": "soft",
+      "reason": "Genre knowledge feeds comparisons between works"
+    },
+    {
+      "topicId": "mt_4R5JcmD0N1",
+      "prerequisiteId": "mt_vjkiQqA7Us",
+      "strength": "soft",
+      "reason": "Choice according to taste feeds reading pleasure"
+    },
+    {
+      "topicId": "mt_4R5JcmD0N1",
+      "prerequisiteId": "mt_Zm8u8UZB4N",
+      "strength": "hard",
+      "reason": "Pleasure and perseverance require comfortable autonomous reading"
+    },
+    {
+      "topicId": "mt_HvN4HZXctD",
+      "prerequisiteId": "mt_4R5JcmD0N1",
+      "strength": "soft",
+      "reason": "One shares readings one has invested in"
+    },
+    {
+      "topicId": "mt_HvN4HZXctD",
+      "prerequisiteId": "mt_BUDsNDrM6R",
+      "strength": "soft",
+      "reason": "Debating readings uses text-grounded justification"
+    },
+    {
+      "topicId": "mt_MzN9rKS6Nn",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "hard",
+      "reason": "6e integral study builds on years of whole works"
+    },
+    {
+      "topicId": "mt_MzN9rKS6Nn",
+      "prerequisiteId": "mt_4R5JcmD0N1",
+      "strength": "soft",
+      "reason": "Cursive reading relies on an established reading appetite"
+    },
+    {
+      "topicId": "mt_hSnsldvcVd",
+      "prerequisiteId": "mt_BUDsNDrM6R",
+      "strength": "hard",
+      "reason": "Interpretation must be grounded in textual evidence"
+    },
+    {
+      "topicId": "mt_hSnsldvcVd",
+      "prerequisiteId": "mt_z5TkgRci2L",
+      "strength": "soft",
+      "reason": "Connections between works enrich interpretation"
+    },
+    {
+      "topicId": "mt_hSnsldvcVd",
+      "prerequisiteId": "mt_ExxzCIhfW1",
+      "strength": "soft",
+      "reason": "Reading characters and authorial intent prepares interpretation"
+    },
+    {
+      "topicId": "mt_CDzhcTiRLD",
+      "prerequisiteId": "mt_ruSxQLf1ss",
+      "strength": "hard",
+      "reason": "The hero entrée deepens early character types"
+    },
+    {
+      "topicId": "mt_CDzhcTiRLD",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "soft",
+      "reason": "Reflection on heroes draws on works already read"
+    },
+    {
+      "topicId": "mt_fRYpT72ziF",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "hard",
+      "reason": "The entrée assumes prior experience of contes and albums"
+    },
+    {
+      "topicId": "mt_wJLCA713Ce",
+      "prerequisiteId": "mt_JJtsZabgvh",
+      "strength": "soft",
+      "reason": "Identification grows out of reading whole works"
+    },
+    {
+      "topicId": "mt_wJLCA713Ce",
+      "prerequisiteId": "mt_CDzhcTiRLD",
+      "strength": "soft",
+      "reason": "Hero figures are prime supports for identification"
+    },
+    {
+      "topicId": "mt_k2vhOd4VPF",
+      "prerequisiteId": "mt_BEUsU2Ibxp",
+      "strength": "hard",
+      "reason": "A story's lesson is implicit and must be inferred"
+    },
+    {
+      "topicId": "mt_k2vhOd4VPF",
+      "prerequisiteId": "mt_CDzhcTiRLD",
+      "strength": "soft",
+      "reason": "Values carried by heroes open the moral question"
+    },
+    {
+      "topicId": "mt_VppKv86vDU",
+      "prerequisiteId": "mt_XTgb6fmxIo",
+      "strength": "soft",
+      "reason": "Recognising the poem form precedes savouring its language"
+    },
+    {
+      "topicId": "mt_NUFOPEodFE",
+      "prerequisiteId": "mt_VppKv86vDU",
+      "strength": "hard",
+      "reason": "6e poetic imagery deepens the cycle-3 poetic posture"
+    },
+    {
+      "topicId": "mt_0hpFy5vVV2",
+      "prerequisiteId": "mt_wJLCA713Ce",
+      "strength": "soft",
+      "reason": "Following a character's growth extends identification"
+    },
+    {
+      "topicId": "mt_0hpFy5vVV2",
+      "prerequisiteId": "mt_ruSxQLf1ss",
+      "strength": "soft",
+      "reason": "Character knowledge underlies reading their evolution"
+    },
+    {
+      "topicId": "mt_jnRZUJV9Sc",
+      "prerequisiteId": "mt_fRYpT72ziF",
+      "strength": "soft",
+      "reason": "Myths extend familiarity with the marvellous"
+    },
+    {
+      "topicId": "mt_jnRZUJV9Sc",
+      "prerequisiteId": "mt_tEqtCxUX81",
+      "strength": "soft",
+      "reason": "Recognising myth and conte étiologique uses genre criteria"
+    },
+    {
+      "topicId": "mt_OHvRQT5z5C",
+      "prerequisiteId": "mt_XTgb6fmxIo",
+      "strength": "hard",
+      "reason": "Requires reading the theatre form fluently"
+    },
+    {
+      "topicId": "mt_OHvRQT5z5C",
+      "prerequisiteId": "mt_ruSxQLf1ss",
+      "strength": "soft",
+      "reason": "The trickster is a familiar character type"
+    },
+    {
+      "topicId": "mt_WLwX6bq31x",
+      "prerequisiteId": "mt_Zm8u8UZB4N",
+      "strength": "soft",
+      "reason": "Adventure novels require autonomous longer reading"
+    },
+    {
+      "topicId": "mt_WLwX6bq31x",
+      "prerequisiteId": "mt_CDzhcTiRLD",
+      "strength": "soft",
+      "reason": "The adventurer extends reflection on heroes"
+    },
+    {
+      "topicId": "mt_ZfTiZXGeqU",
+      "prerequisiteId": "mt_fRYpT72ziF",
+      "strength": "hard",
+      "reason": "Monsters emerge from the marvellous and the strange"
+    },
+    {
+      "topicId": "mt_ZfTiZXGeqU",
+      "prerequisiteId": "mt_k2vhOd4VPF",
+      "strength": "soft",
+      "reason": "Judging the monster mobilises moral reading"
+    },
+    {
+      "topicId": "mt_XBCfwi8xU8",
+      "prerequisiteId": "mt_LBoNQi8srq",
+      "strength": "soft",
+      "reason": "General and fine motor control precedes a controlled pencil grip"
+    },
+    {
+      "topicId": "mt_YvIMzQaZ3v",
+      "prerequisiteId": "mt_LBoNQi8srq",
+      "strength": "hard",
+      "reason": "Graphic patterns train the straight and curved strokes capitals are built from"
+    },
+    {
+      "topicId": "mt_YvIMzQaZ3v",
+      "prerequisiteId": "mt_XBCfwi8xU8",
+      "strength": "soft",
+      "reason": "A workable grip makes controlled letter tracing possible"
+    },
+    {
+      "topicId": "mt_sniGoQ4vSO",
+      "prerequisiteId": "mt_XBCfwi8xU8",
+      "strength": "hard",
+      "reason": "Cursive ligatures require the pincer grip and arm coordination"
+    },
+    {
+      "topicId": "mt_sniGoQ4vSO",
+      "prerequisiteId": "mt_YvIMzQaZ3v",
+      "strength": "soft",
+      "reason": "Capitals give first experience of deliberate letter tracing before cursive"
+    },
+    {
+      "topicId": "mt_uQglVRFf2r",
+      "prerequisiteId": "mt_sniGoQ4vSO",
+      "strength": "hard",
+      "reason": "CP cursive writing builds on maternelle cursive initiation and ligatures"
+    },
+    {
+      "topicId": "mt_1ggWCBjdcI",
+      "prerequisiteId": "mt_uQglVRFf2r",
+      "strength": "hard",
+      "reason": "Transcribing script into cursive requires secure cursive minuscules"
+    },
+    {
+      "topicId": "mt_bi9OQlmtHd",
+      "prerequisiteId": "mt_uQglVRFf2r",
+      "strength": "hard",
+      "reason": "Cursive capitals are learned once cursive minuscules are in place"
+    },
+    {
+      "topicId": "mt_bi9OQlmtHd",
+      "prerequisiteId": "mt_1ggWCBjdcI",
+      "strength": "soft",
+      "reason": "Recognising capital forms across scripts supports learning their cursive tracé"
+    },
+    {
+      "topicId": "mt_fEbeMduSfW",
+      "prerequisiteId": "mt_uQglVRFf2r",
+      "strength": "hard",
+      "reason": "Copying words presupposes writing the cursive letters they contain"
+    },
+    {
+      "topicId": "mt_bzUR1Yqk3K",
+      "prerequisiteId": "mt_fEbeMduSfW",
+      "strength": "hard",
+      "reason": "Strategies to chunk and memorise build on basic accurate copying"
+    },
+    {
+      "topicId": "mt_aWvUxH9hU9",
+      "prerequisiteId": "mt_fEbeMduSfW",
+      "strength": "hard",
+      "reason": "Speed and volume come after accuracy on short copies"
+    },
+    {
+      "topicId": "mt_aWvUxH9hU9",
+      "prerequisiteId": "mt_bzUR1Yqk3K",
+      "strength": "soft",
+      "reason": "Efficient copy strategies are what make fast error-free copying possible"
+    },
+    {
+      "topicId": "mt_coX7FLdbl0",
+      "prerequisiteId": "mt_LBoNQi8srq",
+      "strength": "soft",
+      "reason": "Deliberate letter-like marks need basic tool control"
+    },
+    {
+      "topicId": "mt_Fj69abNI8T",
+      "prerequisiteId": "mt_Fp696Nhf6m",
+      "strength": "soft",
+      "reason": "Dictating to an adult builds on sensing that writing fixes speech"
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_Fp696Nhf6m",
+      "strength": "hard",
+      "reason": "Trying to write words requires grasp of the alphabetic principle"
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_YvIMzQaZ3v",
+      "strength": "soft",
+      "reason": "First word-writing attempts typically use the capitals the child can trace"
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_coX7FLdbl0",
+      "strength": "soft",
+      "reason": "Pretend writing precedes genuine sound-based attempts"
+    },
+    {
+      "topicId": "mt_9d81Xsclaa",
+      "prerequisiteId": "mt_Fp696Nhf6m",
+      "strength": "soft",
+      "reason": "Noticing norms presupposes treating writing as meaningful code"
+    },
+    {
+      "topicId": "mt_H20DE2Yp5d",
+      "prerequisiteId": "mt_nEqAwlxifz",
+      "strength": "hard",
+      "reason": "Guided CP writing extends maternelle writing attempts"
+    },
+    {
+      "topicId": "mt_H20DE2Yp5d",
+      "prerequisiteId": "mt_Fj69abNI8T",
+      "strength": "soft",
+      "reason": "Dictée à l'adulte experience feeds into guided own writing"
+    },
+    {
+      "topicId": "mt_H20DE2Yp5d",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "soft",
+      "reason": "Encoding known words is the engine of first guided sentences"
+    },
+    {
+      "topicId": "mt_heOLlJFkQ3",
+      "prerequisiteId": "mt_H20DE2Yp5d",
+      "strength": "hard",
+      "reason": "Autonomous short texts follow teacher-scaffolded first writings"
+    },
+    {
+      "topicId": "mt_heOLlJFkQ3",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Producing lines of text requires encoding words independently"
+    },
+    {
+      "topicId": "mt_SJpKDeqSIP",
+      "prerequisiteId": "mt_H20DE2Yp5d",
+      "strength": "hard",
+      "reason": "Transforming a model text presupposes writing simple sentences with support"
+    },
+    {
+      "topicId": "mt_eb5n4ym2YM",
+      "prerequisiteId": "mt_nEqAwlxifz",
+      "strength": "soft",
+      "reason": "Persevering through prepare-say-revise starts from first productions"
+    },
+    {
+      "topicId": "mt_TH3sg20WoZ",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "hard",
+      "reason": "Spotting dysfunctions requires a text of one's own to re-read"
+    },
+    {
+      "topicId": "mt_TH3sg20WoZ",
+      "prerequisiteId": "mt_eb5n4ym2YM",
+      "strength": "soft",
+      "reason": "Re-reading for faults is one step of the writing method"
+    },
+    {
+      "topicId": "mt_g4HbaKsDjJ",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "hard",
+      "reason": "Linking sentences presupposes writing several sentences"
+    },
+    {
+      "topicId": "mt_AlPk0e7piH",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "soft",
+      "reason": "Audience awareness develops once short texts are produced with ease"
+    },
+    {
+      "topicId": "mt_KhbQpgM60a",
+      "prerequisiteId": "mt_g4HbaKsDjJ",
+      "strength": "hard",
+      "reason": "A ten-line text depends on chaining sentences coherently"
+    },
+    {
+      "topicId": "mt_KhbQpgM60a",
+      "prerequisiteId": "mt_AlPk0e7piH",
+      "strength": "soft",
+      "reason": "Longer typed texts are shaped by purpose and recipient"
+    },
+    {
+      "topicId": "mt_FeNfQCqc4B",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "hard",
+      "reason": "Rule-application micro-texts assume fluent short-text writing"
+    },
+    {
+      "topicId": "mt_YRaawyc9FY",
+      "prerequisiteId": "mt_KhbQpgM60a",
+      "strength": "soft",
+      "reason": "Reformulating lessons draws on autonomous mid-length writing"
+    },
+    {
+      "topicId": "mt_88hRofXkru",
+      "prerequisiteId": "mt_KhbQpgM60a",
+      "strength": "soft",
+      "reason": "Note-taking and comparison writing build on secure text production"
+    },
+    {
+      "topicId": "mt_oyqB6ntGDW",
+      "prerequisiteId": "mt_88hRofXkru",
+      "strength": "hard",
+      "reason": "Summarising builds directly on sorting relevant information"
+    },
+    {
+      "topicId": "mt_oyqB6ntGDW",
+      "prerequisiteId": "mt_YRaawyc9FY",
+      "strength": "soft",
+      "reason": "Reformulating essentials is the stepping stone to formal résumé"
+    },
+    {
+      "topicId": "mt_Xdd8ZhkOyP",
+      "prerequisiteId": "mt_KhbQpgM60a",
+      "strength": "hard",
+      "reason": "Explaining a viewpoint needs command of a coherent developed text"
+    },
+    {
+      "topicId": "mt_Xdd8ZhkOyP",
+      "prerequisiteId": "mt_AlPk0e7piH",
+      "strength": "soft",
+      "reason": "Arguing a viewpoint presumes writing aimed at a reader"
+    },
+    {
+      "topicId": "mt_WLafqphLug",
+      "prerequisiteId": "mt_KhbQpgM60a",
+      "strength": "hard",
+      "reason": "Exploring text modes requires producing ten-line texts of different types"
+    },
+    {
+      "topicId": "mt_WLafqphLug",
+      "prerequisiteId": "mt_SJpKDeqSIP",
+      "strength": "soft",
+      "reason": "Model transformation seeds the tools of narrating and describing"
+    },
+    {
+      "topicId": "mt_xydMjmgbfk",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "hard",
+      "reason": "Daily personal writing grows out of fluent short texts"
+    },
+    {
+      "topicId": "mt_xydMjmgbfk",
+      "prerequisiteId": "mt_WLafqphLug",
+      "strength": "soft",
+      "reason": "Enriching a suite de texte reuses description and dialogue modes"
+    },
+    {
+      "topicId": "mt_Pfl7zaWAXG",
+      "prerequisiteId": "mt_eb5n4ym2YM",
+      "strength": "hard",
+      "reason": "The brouillon is the concrete tool of the plan-draft-revise method"
+    },
+    {
+      "topicId": "mt_sGM334ibtZ",
+      "prerequisiteId": "mt_9d81Xsclaa",
+      "strength": "hard",
+      "reason": "Autonomous respect of codes builds on knowing the norm exists"
+    },
+    {
+      "topicId": "mt_sGM334ibtZ",
+      "prerequisiteId": "mt_eb5n4ym2YM",
+      "strength": "soft",
+      "reason": "Code vigilance is exercised within the writing method"
+    },
+    {
+      "topicId": "mt_q6kt5Jfbf8",
+      "prerequisiteId": "mt_g4HbaKsDjJ",
+      "strength": "hard",
+      "reason": "Whole-text coherence generalises early sentence linking"
+    },
+    {
+      "topicId": "mt_q6kt5Jfbf8",
+      "prerequisiteId": "mt_KhbQpgM60a",
+      "strength": "soft",
+      "reason": "Coherence principles become visible in longer texts"
+    },
+    {
+      "topicId": "mt_cPUEZ0aebE",
+      "prerequisiteId": "mt_TH3sg20WoZ",
+      "strength": "hard",
+      "reason": "Improving a text starts from finding its faults"
+    },
+    {
+      "topicId": "mt_cPUEZ0aebE",
+      "prerequisiteId": "mt_Pfl7zaWAXG",
+      "strength": "soft",
+      "reason": "Revision works through successive draft versions"
+    },
+    {
+      "topicId": "mt_cPUEZ0aebE",
+      "prerequisiteId": "mt_q6kt5Jfbf8",
+      "strength": "soft",
+      "reason": "Self-evaluation of a text uses coherence criteria"
+    },
+    {
+      "topicId": "mt_ghyRu36g60",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "hard",
+      "reason": "Must know what a sentence is before classifying its types"
+    },
+    {
+      "topicId": "mt_95Yy5b0m6w",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "soft",
+      "reason": "Sentence concept underlies work on its forms"
+    },
+    {
+      "topicId": "mt_B3Kuqj4Fia",
+      "prerequisiteId": "mt_ghyRu36g60",
+      "strength": "hard",
+      "reason": "Transforming types requires knowing the types"
+    },
+    {
+      "topicId": "mt_B3Kuqj4Fia",
+      "prerequisiteId": "mt_95Yy5b0m6w",
+      "strength": "hard",
+      "reason": "Transforming forms requires knowing the forms"
+    },
+    {
+      "topicId": "mt_JodVIiKlBZ",
+      "prerequisiteId": "mt_ghyRu36g60",
+      "strength": "hard",
+      "reason": "Interrogative realisations build on the interrogative type"
+    },
+    {
+      "topicId": "mt_maDNMWFlau",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "hard",
+      "reason": "Final punctuation extends the sentence markers"
+    },
+    {
+      "topicId": "mt_maDNMWFlau",
+      "prerequisiteId": "mt_ghyRu36g60",
+      "strength": "soft",
+      "reason": "Choosing . ! ? relies on sentence type"
+    },
+    {
+      "topicId": "mt_OYeUUr8vjT",
+      "prerequisiteId": "mt_UjSlxq1AWh",
+      "strength": "hard",
+      "reason": "Naming classes follows sorting into classes"
+    },
+    {
+      "topicId": "mt_lhPPTv6TAi",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Determiner subtypes assume the class is known"
+    },
+    {
+      "topicId": "mt_WTGgn8C4Lr",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Adverb identification builds on word-class work"
+    },
+    {
+      "topicId": "mt_oDBKPCJ6VV",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Needs the pronom personnel class"
+    },
+    {
+      "topicId": "mt_oDBKPCJ6VV",
+      "prerequisiteId": "mt_gqdMDjFnhN",
+      "strength": "soft",
+      "reason": "Sujet vs complément distinction leans on sentence analysis"
+    },
+    {
+      "topicId": "mt_30d3hQZTtw",
+      "prerequisiteId": "mt_oDBKPCJ6VV",
+      "strength": "hard",
+      "reason": "Must know the pronouns before substituting them"
+    },
+    {
+      "topicId": "mt_30d3hQZTtw",
+      "prerequisiteId": "mt_AM08xWhmMY",
+      "strength": "soft",
+      "reason": "One replaces a GN, so GN delimitation helps"
+    },
+    {
+      "topicId": "mt_1IBJ8cNfju",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "soft",
+      "reason": "Extends the word-class inventory"
+    },
+    {
+      "topicId": "mt_S0xgXqcBUl",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "soft",
+      "reason": "Extends the word-class inventory"
+    },
+    {
+      "topicId": "mt_sCT0vxjc3k",
+      "prerequisiteId": "mt_S0xgXqcBUl",
+      "strength": "soft",
+      "reason": "Contrasted against coordinating conjunctions"
+    },
+    {
+      "topicId": "mt_sCT0vxjc3k",
+      "prerequisiteId": "mt_TYQZnvXtfb",
+      "strength": "soft",
+      "reason": "Subordination is met inside complex sentences"
+    },
+    {
+      "topicId": "mt_3XIjIX0izJ",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Nature = the word classes already learned"
+    },
+    {
+      "topicId": "mt_3XIjIX0izJ",
+      "prerequisiteId": "mt_XgcyKbYkE4",
+      "strength": "hard",
+      "reason": "Fonction = the sentence roles already met"
+    },
+    {
+      "topicId": "mt_b3rGKWvZGn",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Variation criteria apply to known classes"
+    },
+    {
+      "topicId": "mt_b3rGKWvZGn",
+      "prerequisiteId": "mt_VBuvDs6k5V",
+      "strength": "soft",
+      "reason": "Genre is one of the criteria"
+    },
+    {
+      "topicId": "mt_b3rGKWvZGn",
+      "prerequisiteId": "mt_vTUIRFIBCI",
+      "strength": "soft",
+      "reason": "Nombre is one of the criteria"
+    },
+    {
+      "topicId": "mt_mFF27pg6UJ",
+      "prerequisiteId": "mt_UjSlxq1AWh",
+      "strength": "soft",
+      "reason": "Needs a first idea of nom and verbe"
+    },
+    {
+      "topicId": "mt_mFF27pg6UJ",
+      "prerequisiteId": "mt_qfAIn8vBoT",
+      "strength": "soft",
+      "reason": "Observing verb variation reveals the subject's command"
+    },
+    {
+      "topicId": "mt_XgcyKbYkE4",
+      "prerequisiteId": "mt_mFF27pg6UJ",
+      "strength": "hard",
+      "reason": "GS and verbe come from the sujet-verbe relation"
+    },
+    {
+      "topicId": "mt_XgcyKbYkE4",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "hard",
+      "reason": "One analyses constituents of a recognised sentence"
+    },
+    {
+      "topicId": "mt_gqdMDjFnhN",
+      "prerequisiteId": "mt_XgcyKbYkE4",
+      "strength": "hard",
+      "reason": "Refines the GS/verbe identification"
+    },
+    {
+      "topicId": "mt_9rDQUTLkUM",
+      "prerequisiteId": "mt_gqdMDjFnhN",
+      "strength": "hard",
+      "reason": "Inverted subjects extend reliable subject-finding"
+    },
+    {
+      "topicId": "mt_odbwgymqBs",
+      "prerequisiteId": "mt_XgcyKbYkE4",
+      "strength": "hard",
+      "reason": "Manipulations operate on sentence groups"
+    },
+    {
+      "topicId": "mt_aFDpik0PY2",
+      "prerequisiteId": "mt_gqdMDjFnhN",
+      "strength": "hard",
+      "reason": "Complements are found after verb and subject"
+    },
+    {
+      "topicId": "mt_aFDpik0PY2",
+      "prerequisiteId": "mt_odbwgymqBs",
+      "strength": "soft",
+      "reason": "Deletion/movement tests drive the distinction"
+    },
+    {
+      "topicId": "mt_mGwb3LiYk5",
+      "prerequisiteId": "mt_aFDpik0PY2",
+      "strength": "hard",
+      "reason": "COD/COI split assumes the object is identified"
+    },
+    {
+      "topicId": "mt_ygqX6i29jr",
+      "prerequisiteId": "mt_aFDpik0PY2",
+      "strength": "hard",
+      "reason": "Classifying CCs assumes they are identified"
+    },
+    {
+      "topicId": "mt_QSbjO3ixAZ",
+      "prerequisiteId": "mt_mGwb3LiYk5",
+      "strength": "hard",
+      "reason": "Attribut is defined against the COD"
+    },
+    {
+      "topicId": "mt_QSbjO3ixAZ",
+      "prerequisiteId": "mt_9xp2wsRjLm",
+      "strength": "soft",
+      "reason": "Attribut is contrasted with épithète"
+    },
+    {
+      "topicId": "mt_AM08xWhmMY",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "GN parts are the classes dét/nom/adj"
+    },
+    {
+      "topicId": "mt_AM08xWhmMY",
+      "prerequisiteId": "mt_lhPPTv6TAi",
+      "strength": "soft",
+      "reason": "Determiner knowledge helps delimit the GN"
+    },
+    {
+      "topicId": "mt_9xp2wsRjLm",
+      "prerequisiteId": "mt_AM08xWhmMY",
+      "strength": "hard",
+      "reason": "Épithète lives inside the GN"
+    },
+    {
+      "topicId": "mt_JUqQ5cOKDE",
+      "prerequisiteId": "mt_AM08xWhmMY",
+      "strength": "hard",
+      "reason": "Noun expansion presupposes the GN and its noyau"
+    },
+    {
+      "topicId": "mt_JUqQ5cOKDE",
+      "prerequisiteId": "mt_1IBJ8cNfju",
+      "strength": "soft",
+      "reason": "The complément du nom is a prepositional group"
+    },
+    {
+      "topicId": "mt_TYQZnvXtfb",
+      "prerequisiteId": "mt_gqdMDjFnhN",
+      "strength": "hard",
+      "reason": "Counting conjugated verbs requires finding them"
+    },
+    {
+      "topicId": "mt_zkwjVWi77G",
+      "prerequisiteId": "mt_TYQZnvXtfb",
+      "strength": "hard",
+      "reason": "Linking modes concern complex sentences"
+    },
+    {
+      "topicId": "mt_zkwjVWi77G",
+      "prerequisiteId": "mt_S0xgXqcBUl",
+      "strength": "soft",
+      "reason": "Coordination uses the known conjunctions"
+    },
+    {
+      "topicId": "mt_GDC4A6TNeZ",
+      "prerequisiteId": "mt_oDBKPCJ6VV",
+      "strength": "hard",
+      "reason": "Antecedent work assumes pronoun knowledge"
+    },
+    {
+      "topicId": "mt_sm92PqOYTE",
+      "prerequisiteId": "mt_3XIjIX0izJ",
+      "strength": "hard",
+      "reason": "Full analysis names natures and fonctions"
+    },
+    {
+      "topicId": "mt_sm92PqOYTE",
+      "prerequisiteId": "mt_mGwb3LiYk5",
+      "strength": "soft",
+      "reason": "Object functions belong to the full analysis"
+    },
+    {
+      "topicId": "mt_sm92PqOYTE",
+      "prerequisiteId": "mt_QSbjO3ixAZ",
+      "strength": "soft",
+      "reason": "Attribut belongs to the full analysis"
+    },
+    {
+      "topicId": "mt_qfAIn8vBoT",
+      "prerequisiteId": "mt_UjSlxq1AWh",
+      "strength": "soft",
+      "reason": "One must first single out the verbs"
+    },
+    {
+      "topicId": "mt_hT3zLBJbcb",
+      "prerequisiteId": "mt_qfAIn8vBoT",
+      "strength": "soft",
+      "reason": "First conjugations follow the discovery of verb variation"
+    },
+    {
+      "topicId": "mt_Nb9QuHPWvC",
+      "prerequisiteId": "mt_qfAIn8vBoT",
+      "strength": "hard",
+      "reason": "Radical/terminaison explains the observed variation"
+    },
+    {
+      "topicId": "mt_Nb9QuHPWvC",
+      "prerequisiteId": "mt_hT3zLBJbcb",
+      "strength": "soft",
+      "reason": "First conjugated forms give material to analyse"
+    },
+    {
+      "topicId": "mt_b5zmbaIsV7",
+      "prerequisiteId": "mt_Nb9QuHPWvC",
+      "strength": "hard",
+      "reason": "Groups are defined by infinitive endings"
+    },
+    {
+      "topicId": "mt_92jVBmoQ0h",
+      "prerequisiteId": "mt_hT3zLBJbcb",
+      "strength": "hard",
+      "reason": "Extends the first present-tense conjugations"
+    },
+    {
+      "topicId": "mt_92jVBmoQ0h",
+      "prerequisiteId": "mt_mFF27pg6UJ",
+      "strength": "soft",
+      "reason": "Person endings follow the subject"
+    },
+    {
+      "topicId": "mt_krJBKdwbhN",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "hard",
+      "reason": "Second tense learned after the present"
+    },
+    {
+      "topicId": "mt_krJBKdwbhN",
+      "prerequisiteId": "mt_Nb9QuHPWvC",
+      "strength": "soft",
+      "reason": "Imparfait endings attach to the radical"
+    },
+    {
+      "topicId": "mt_8MFGBW3C7e",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "hard",
+      "reason": "Learned after the present is secure"
+    },
+    {
+      "topicId": "mt_8MFGBW3C7e",
+      "prerequisiteId": "mt_Nb9QuHPWvC",
+      "strength": "soft",
+      "reason": "The -r- mark is read inside the terminaison"
+    },
+    {
+      "topicId": "mt_L4eztTTGyk",
+      "prerequisiteId": "mt_hT3zLBJbcb",
+      "strength": "hard",
+      "reason": "Auxiliaries au présent build the passé composé"
+    },
+    {
+      "topicId": "mt_L4eztTTGyk",
+      "prerequisiteId": "mt_95Yy5b0m6w",
+      "strength": "soft",
+      "reason": "Negation placement around the auxiliary"
+    },
+    {
+      "topicId": "mt_BszFzxiesN",
+      "prerequisiteId": "mt_krJBKdwbhN",
+      "strength": "soft",
+      "reason": "Both are narrative past tenses, met together in récits"
+    },
+    {
+      "topicId": "mt_BszFzxiesN",
+      "prerequisiteId": "mt_mlGpFa16iI",
+      "strength": "soft",
+      "reason": "Regular marks help memorise passé simple forms"
+    },
+    {
+      "topicId": "mt_LKZgiIwkU4",
+      "prerequisiteId": "mt_L4eztTTGyk",
+      "strength": "hard",
+      "reason": "Same two-part build with a new auxiliary tense"
+    },
+    {
+      "topicId": "mt_LKZgiIwkU4",
+      "prerequisiteId": "mt_krJBKdwbhN",
+      "strength": "hard",
+      "reason": "The auxiliary is conjugated at the imparfait"
+    },
+    {
+      "topicId": "mt_cECdOpxWRh",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "hard",
+      "reason": "Impératif forms lean on the présent"
+    },
+    {
+      "topicId": "mt_cECdOpxWRh",
+      "prerequisiteId": "mt_8MFGBW3C7e",
+      "strength": "soft",
+      "reason": "Conditionnel = future -r- + imparfait endings"
+    },
+    {
+      "topicId": "mt_mlGpFa16iI",
+      "prerequisiteId": "mt_Nb9QuHPWvC",
+      "strength": "hard",
+      "reason": "Decomposing the terminaison refines radical/terminaison"
+    },
+    {
+      "topicId": "mt_mlGpFa16iI",
+      "prerequisiteId": "mt_krJBKdwbhN",
+      "strength": "soft",
+      "reason": "-ai- mark is abstracted from imparfait forms"
+    },
+    {
+      "topicId": "mt_mlGpFa16iI",
+      "prerequisiteId": "mt_8MFGBW3C7e",
+      "strength": "soft",
+      "reason": "-r- mark is abstracted from future forms"
+    },
+    {
+      "topicId": "mt_910k5deGGr",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "hard",
+      "reason": "Stem changes appear across present conjugation"
+    },
+    {
+      "topicId": "mt_910k5deGGr",
+      "prerequisiteId": "mt_b5zmbaIsV7",
+      "strength": "soft",
+      "reason": "Affected verbs are located by group"
+    },
+    {
+      "topicId": "mt_9RtGio3aH4",
+      "prerequisiteId": "mt_krJBKdwbhN",
+      "strength": "soft",
+      "reason": "Imparfait's background value presupposes its forms"
+    },
+    {
+      "topicId": "mt_9RtGio3aH4",
+      "prerequisiteId": "mt_BszFzxiesN",
+      "strength": "soft",
+      "reason": "Récit values contrast imparfait and passé simple"
+    },
+    {
+      "topicId": "mt_byhtOaiSkI",
+      "prerequisiteId": "mt_b5zmbaIsV7",
+      "strength": "soft",
+      "reason": "Tables are organised by verb group"
+    },
+    {
+      "topicId": "mt_byhtOaiSkI",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "soft",
+      "reason": "One checks tenses already being learned"
+    },
+    {
+      "topicId": "mt_ON27v5YWUr",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Simple sound-letter encoding comes before multi-letter graphemes"
+    },
+    {
+      "topicId": "mt_DxqjeCFELm",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Children must encode the letters they hear before adding ones they don't"
+    },
+    {
+      "topicId": "mt_sPd4fWeY9x",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Phonetic encoding underpins memorising whole written word forms"
+    },
+    {
+      "topicId": "mt_sPd4fWeY9x",
+      "prerequisiteId": "mt_ON27v5YWUr",
+      "strength": "soft",
+      "reason": "Many frequent words contain complex graphemes"
+    },
+    {
+      "topicId": "mt_H4sCByXNyi",
+      "prerequisiteId": "mt_sPd4fWeY9x",
+      "strength": "soft",
+      "reason": "Invariable words extend the frequent-word memorisation routine"
+    },
+    {
+      "topicId": "mt_Spah1wzixx",
+      "prerequisiteId": "mt_ON27v5YWUr",
+      "strength": "hard",
+      "reason": "Letter-value rules refine choices among already-known graphemes"
+    },
+    {
+      "topicId": "mt_6kZarYNUDX",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Accented e graphemes build on basic sound-letter encoding"
+    },
+    {
+      "topicId": "mt_Lhh8Jcs0r1",
+      "prerequisiteId": "mt_DxqjeCFELm",
+      "strength": "hard",
+      "reason": "Word families explain silent letters the child has already met"
+    },
+    {
+      "topicId": "mt_Lhh8Jcs0r1",
+      "prerequisiteId": "mt_Spah1wzixx",
+      "strength": "soft",
+      "reason": "Derivation keeps letter values consistent across related words"
+    },
+    {
+      "topicId": "mt_6EMriBHEqs",
+      "prerequisiteId": "mt_sPd4fWeY9x",
+      "strength": "soft",
+      "reason": "Elided forms involve the most frequent little words"
+    },
+    {
+      "topicId": "mt_zLtVw9oaD5",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "soft",
+      "reason": "Writing words comes before noticing written agreement marks"
+    },
+    {
+      "topicId": "mt_x2BNUzBpsA",
+      "prerequisiteId": "mt_zLtVw9oaD5",
+      "strength": "soft",
+      "reason": "The number concept anchors the written plural mark"
+    },
+    {
+      "topicId": "mt_x2BNUzBpsA",
+      "prerequisiteId": "mt_DxqjeCFELm",
+      "strength": "soft",
+      "reason": "The plural -s is a silent letter children must learn to expect"
+    },
+    {
+      "topicId": "mt_dusaTYQfZg",
+      "prerequisiteId": "mt_zLtVw9oaD5",
+      "strength": "soft",
+      "reason": "The gender concept anchors feminine spelling patterns"
+    },
+    {
+      "topicId": "mt_dusaTYQfZg",
+      "prerequisiteId": "mt_DxqjeCFELm",
+      "strength": "soft",
+      "reason": "The feminine -e reveals silent final consonants (grand/grande)"
+    },
+    {
+      "topicId": "mt_pgcM1qZoZj",
+      "prerequisiteId": "mt_x2BNUzBpsA",
+      "strength": "hard",
+      "reason": "Number marks on nouns feed the full agreement chain"
+    },
+    {
+      "topicId": "mt_pgcM1qZoZj",
+      "prerequisiteId": "mt_dusaTYQfZg",
+      "strength": "hard",
+      "reason": "Gender marks on nouns and adjectives feed the full agreement chain"
+    },
+    {
+      "topicId": "mt_pgcM1qZoZj",
+      "prerequisiteId": "mt_zLtVw9oaD5",
+      "strength": "hard",
+      "reason": "Applying the chain requires understanding it as a system"
+    },
+    {
+      "topicId": "mt_aXMo9fmGlk",
+      "prerequisiteId": "mt_pgcM1qZoZj",
+      "strength": "hard",
+      "reason": "Naming the giver systematises agreements already practised"
+    },
+    {
+      "topicId": "mt_ksqVdBSJge",
+      "prerequisiteId": "mt_pgcM1qZoZj",
+      "strength": "hard",
+      "reason": "Irregular forms refine an established agreement routine"
+    },
+    {
+      "topicId": "mt_LkZNCEdRWh",
+      "prerequisiteId": "mt_zLtVw9oaD5",
+      "strength": "soft",
+      "reason": "Agreement-system awareness extends from the noun group to the verb"
+    },
+    {
+      "topicId": "mt_LkZNCEdRWh",
+      "prerequisiteId": "mt_x2BNUzBpsA",
+      "strength": "soft",
+      "reason": "Noun plural -s contrasts with the verb's plural -nt"
+    },
+    {
+      "topicId": "mt_feQ98KiTC0",
+      "prerequisiteId": "mt_LkZNCEdRWh",
+      "strength": "hard",
+      "reason": "The -nt mark is the first step of full subject-verb agreement"
+    },
+    {
+      "topicId": "mt_feQ98KiTC0",
+      "prerequisiteId": "mt_aXMo9fmGlk",
+      "strength": "soft",
+      "reason": "The noyau of a GN subject decides the verb's number"
+    },
+    {
+      "topicId": "mt_J45mKInlvK",
+      "prerequisiteId": "mt_feQ98KiTC0",
+      "strength": "hard",
+      "reason": "Tricky subjects extend a secure basic agreement routine"
+    },
+    {
+      "topicId": "mt_J45mKInlvK",
+      "prerequisiteId": "mt_aXMo9fmGlk",
+      "strength": "soft",
+      "reason": "Finding the head noun defuses distractor nouns near the verb"
+    },
+    {
+      "topicId": "mt_KXATPhbHrk",
+      "prerequisiteId": "mt_LkZNCEdRWh",
+      "strength": "hard",
+      "reason": "Choosing -nt presupposes knowing the verb's plural mark"
+    },
+    {
+      "topicId": "mt_KXATPhbHrk",
+      "prerequisiteId": "mt_x2BNUzBpsA",
+      "strength": "hard",
+      "reason": "Choosing -s presupposes knowing the noun's plural mark"
+    },
+    {
+      "topicId": "mt_Pbk8uXVRQA",
+      "prerequisiteId": "mt_feQ98KiTC0",
+      "strength": "hard",
+      "reason": "The attribut chain runs through the subject-verb link"
+    },
+    {
+      "topicId": "mt_Pbk8uXVRQA",
+      "prerequisiteId": "mt_dusaTYQfZg",
+      "strength": "soft",
+      "reason": "Attribut agreement reuses feminine and plural adjective forms"
+    },
+    {
+      "topicId": "mt_BfYjieGrsn",
+      "prerequisiteId": "mt_feQ98KiTC0",
+      "strength": "hard",
+      "reason": "Participle agreement builds on locating the subject reliably"
+    },
+    {
+      "topicId": "mt_BfYjieGrsn",
+      "prerequisiteId": "mt_dusaTYQfZg",
+      "strength": "soft",
+      "reason": "Participle endings reuse gender and number marks"
+    },
+    {
+      "topicId": "mt_vXv7lGffOj",
+      "prerequisiteId": "mt_BfYjieGrsn",
+      "strength": "hard",
+      "reason": "The avoir rule is defined against the mastered être rule"
+    },
+    {
+      "topicId": "mt_ZJQWjelxVj",
+      "prerequisiteId": "mt_BfYjieGrsn",
+      "strength": "soft",
+      "reason": "The -é/-er choice arises once past participles are in use"
+    },
+    {
+      "topicId": "mt_Ia2g4owfRD",
+      "prerequisiteId": "mt_sPd4fWeY9x",
+      "strength": "hard",
+      "reason": "Homophone pairs are among the most frequent written words"
+    },
+    {
+      "topicId": "mt_Ia2g4owfRD",
+      "prerequisiteId": "mt_LkZNCEdRWh",
+      "strength": "soft",
+      "reason": "Spotting verb forms (sont/ont) relies on verb-mark awareness"
+    },
+    {
+      "topicId": "mt_afmgrWyNZT",
+      "prerequisiteId": "mt_Ia2g4owfRD",
+      "strength": "hard",
+      "reason": "The substitution habit extends from the first series to harder pairs"
+    },
+    {
+      "topicId": "mt_afmgrWyNZT",
+      "prerequisiteId": "mt_KXATPhbHrk",
+      "strength": "soft",
+      "reason": "Both require deciding a word's class before spelling it"
+    },
+    {
+      "topicId": "mt_purBYPc0pe",
+      "prerequisiteId": "mt_Ij6D5uAO46",
+      "strength": "hard",
+      "reason": "Dictation mobilises the encoding skill under memory load"
+    },
+    {
+      "topicId": "mt_purBYPc0pe",
+      "prerequisiteId": "mt_ON27v5YWUr",
+      "strength": "soft",
+      "reason": "Sentence dictations quickly include complex graphemes"
+    },
+    {
+      "topicId": "mt_4upF9c1ZqL",
+      "prerequisiteId": "mt_purBYPc0pe",
+      "strength": "hard",
+      "reason": "Reasoning aloud presupposes the basic dictation routine"
+    },
+    {
+      "topicId": "mt_4upF9c1ZqL",
+      "prerequisiteId": "mt_pgcM1qZoZj",
+      "strength": "soft",
+      "reason": "Justifying accords needs the agreement rules to argue with"
+    },
+    {
+      "topicId": "mt_4upF9c1ZqL",
+      "prerequisiteId": "mt_Ia2g4owfRD",
+      "strength": "soft",
+      "reason": "Homophone substitution tests are core dictée arguments"
+    },
+    {
+      "topicId": "mt_vfA1tnW65C",
+      "prerequisiteId": "mt_fEbeMduSfW",
+      "strength": "soft",
+      "reason": "Checking a copy against its model is the first proofreading"
+    },
+    {
+      "topicId": "mt_KK4TbW5oJX",
+      "prerequisiteId": "mt_vfA1tnW65C",
+      "strength": "soft",
+      "reason": "Monitoring while writing grows out of checking afterwards"
+    },
+    {
+      "topicId": "mt_KK4TbW5oJX",
+      "prerequisiteId": "mt_sPd4fWeY9x",
+      "strength": "soft",
+      "reason": "Vigilance needs a stock of known correct forms to compare against"
+    },
+    {
+      "topicId": "mt_LeCb11sLFS",
+      "prerequisiteId": "mt_vfA1tnW65C",
+      "strength": "hard",
+      "reason": "Tools serve a rereading habit that already spots doubts"
+    },
+    {
+      "topicId": "mt_LeCb11sLFS",
+      "prerequisiteId": "mt_KK4TbW5oJX",
+      "strength": "soft",
+      "reason": "Doubting a spelling triggers the reflex to check it"
+    },
+    {
+      "topicId": "mt_JNXzU8lXMo",
+      "prerequisiteId": "mt_pgcM1qZoZj",
+      "strength": "hard",
+      "reason": "GN agreement must be secure before it can automatise in texts"
+    },
+    {
+      "topicId": "mt_JNXzU8lXMo",
+      "prerequisiteId": "mt_feQ98KiTC0",
+      "strength": "hard",
+      "reason": "Subject-verb agreement must be secure before it can automatise in texts"
+    },
+    {
+      "topicId": "mt_JNXzU8lXMo",
+      "prerequisiteId": "mt_KK4TbW5oJX",
+      "strength": "soft",
+      "reason": "Self-monitoring while writing carries the accords into drafts"
+    },
+    {
+      "topicId": "mt_869ePerXKt",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "hard",
+      "reason": "Words must be acquired in context before they can be reused deliberately."
+    },
+    {
+      "topicId": "mt_v5wp28FJCa",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Repertoires collect the words met in reading and lessons."
+    },
+    {
+      "topicId": "mt_VMFOUvdBB9",
+      "prerequisiteId": "mt_869ePerXKt",
+      "strength": "soft",
+      "reason": "Fluent retrieval builds on deliberate reuse of learned words."
+    },
+    {
+      "topicId": "mt_VMFOUvdBB9",
+      "prerequisiteId": "mt_v5wp28FJCa",
+      "strength": "soft",
+      "reason": "Fluency drills draw on the constituted word repertoires."
+    },
+    {
+      "topicId": "mt_v1klxDdFx4",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Relating words requires a stock of known words to relate."
+    },
+    {
+      "topicId": "mt_v1klxDdFx4",
+      "prerequisiteId": "mt_v5wp28FJCa",
+      "strength": "soft",
+      "reason": "Sorting and pairing words prepares synonym and antonym work."
+    },
+    {
+      "topicId": "mt_eoA0YvYz5f",
+      "prerequisiteId": "mt_v5wp28FJCa",
+      "strength": "soft",
+      "reason": "Hierarchies grow out of category-sorting work on word collections."
+    },
+    {
+      "topicId": "mt_Mwusz8Zn6t",
+      "prerequisiteId": "mt_v1klxDdFx4",
+      "strength": "soft",
+      "reason": "Synonymy and antonymy are core semantic relations drawn upon."
+    },
+    {
+      "topicId": "mt_Mwusz8Zn6t",
+      "prerequisiteId": "mt_eoA0YvYz5f",
+      "strength": "soft",
+      "reason": "The generic-specific hierarchy is one of the relations used."
+    },
+    {
+      "topicId": "mt_Mwusz8Zn6t",
+      "prerequisiteId": "mt_ONRrG6BHYn",
+      "strength": "soft",
+      "reason": "Morphological relations rest on identified affixes."
+    },
+    {
+      "topicId": "mt_J7807gGeUV",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Noticing multiple senses requires a growing word stock met in context."
+    },
+    {
+      "topicId": "mt_aNW8OssMhc",
+      "prerequisiteId": "mt_J7807gGeUV",
+      "strength": "hard",
+      "reason": "The propre/figuré distinction presupposes awareness that words carry several senses."
+    },
+    {
+      "topicId": "mt_JutmYqey8T",
+      "prerequisiteId": "mt_J7807gGeUV",
+      "strength": "hard",
+      "reason": "Using polysemous words builds directly on early polysemy awareness."
+    },
+    {
+      "topicId": "mt_JutmYqey8T",
+      "prerequisiteId": "mt_aNW8OssMhc",
+      "strength": "soft",
+      "reason": "The propre/figuré distinction supports choosing the right sense in context."
+    },
+    {
+      "topicId": "mt_KYEbrOCCmD",
+      "prerequisiteId": "mt_aNW8OssMhc",
+      "strength": "soft",
+      "reason": "Many locutions are understood through their figurative sense."
+    },
+    {
+      "topicId": "mt_KYEbrOCCmD",
+      "prerequisiteId": "mt_v5wp28FJCa",
+      "strength": "soft",
+      "reason": "Expressions and locutions extend the repertoires built earlier."
+    },
+    {
+      "topicId": "mt_1mrYWvG3L7",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Comparing registers requires words met in varied contexts."
+    },
+    {
+      "topicId": "mt_b0TbKtR4Ku",
+      "prerequisiteId": "mt_1mrYWvG3L7",
+      "strength": "hard",
+      "reason": "Registers must be perceived before a child can switch between them."
+    },
+    {
+      "topicId": "mt_b0TbKtR4Ku",
+      "prerequisiteId": "mt_v1klxDdFx4",
+      "strength": "soft",
+      "reason": "Register switching relies on choosing among synonyms."
+    },
+    {
+      "topicId": "mt_ONRrG6BHYn",
+      "prerequisiteId": "mt_6kCHUxxboj",
+      "strength": "soft",
+      "reason": "Derivatives are first met inside word families."
+    },
+    {
+      "topicId": "mt_y5MAAEA5PZ",
+      "prerequisiteId": "mt_ONRrG6BHYn",
+      "strength": "hard",
+      "reason": "Inferring meaning from word parts requires identified prefixes and suffixes."
+    },
+    {
+      "topicId": "mt_y5MAAEA5PZ",
+      "prerequisiteId": "mt_6kCHUxxboj",
+      "strength": "soft",
+      "reason": "Family resemblance between words supports meaning inference."
+    },
+    {
+      "topicId": "mt_0XnMx3rGQe",
+      "prerequisiteId": "mt_ONRrG6BHYn",
+      "strength": "hard",
+      "reason": "Analysing derivation requires solid affix knowledge."
+    },
+    {
+      "topicId": "mt_0XnMx3rGQe",
+      "prerequisiteId": "mt_6kCHUxxboj",
+      "strength": "soft",
+      "reason": "Word families ground the analysis of derivation and composition."
+    },
+    {
+      "topicId": "mt_IAQNOm0Inv",
+      "prerequisiteId": "mt_0XnMx3rGQe",
+      "strength": "soft",
+      "reason": "Etymology extends the analysis of how words are formed."
+    },
+    {
+      "topicId": "mt_IAQNOm0Inv",
+      "prerequisiteId": "mt_G1X2DL3mtc",
+      "strength": "soft",
+      "reason": "Etymological information is found in dictionary entries."
+    },
+    {
+      "topicId": "mt_Z1p7fzi8Bd",
+      "prerequisiteId": "mt_y5MAAEA5PZ",
+      "strength": "hard",
+      "reason": "The strategy combines morphological analysis with context clues."
+    },
+    {
+      "topicId": "mt_Z1p7fzi8Bd",
+      "prerequisiteId": "mt_G1X2DL3mtc",
+      "strength": "soft",
+      "reason": "Verifying a deduced meaning requires dictionary skill."
+    },
+    {
+      "topicId": "mt_Z1p7fzi8Bd",
+      "prerequisiteId": "mt_JutmYqey8T",
+      "strength": "soft",
+      "reason": "Weighing several possible senses helps pick the right meaning in context."
+    },
+    {
+      "topicId": "mt_G1X2DL3mtc",
+      "prerequisiteId": "mt_ZoJUoRwcal",
+      "strength": "hard",
+      "reason": "Finding an entry requires mastering alphabetical order."
+    },
+    {
+      "topicId": "mt_H42xqPNWTs",
+      "prerequisiteId": "mt_869ePerXKt",
+      "strength": "soft",
+      "reason": "Precise disciplinary use builds on the habit of reusing learned words."
+    },
+    {
+      "topicId": "mt_H42xqPNWTs",
+      "prerequisiteId": "mt_Z1p7fzi8Bd",
+      "strength": "soft",
+      "reason": "New disciplinary terms are cracked with unknown-word strategies."
+    },
+    {
+      "topicId": "mt_H42xqPNWTs",
+      "prerequisiteId": "mt_G1X2DL3mtc",
+      "strength": "soft",
+      "reason": "Glossaries and dictionaries anchor the meaning of technical terms."
+    },
+    {
+      "topicId": "mt_6kCHUxxboj",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Spotting related words requires a growing lexicon."
+    },
+    {
+      "topicId": "mt_AO6PdCKyXu",
+      "prerequisiteId": "mt_AiuoYrRwow",
+      "strength": "soft",
+      "reason": "Natural cycles of days and seasons ground the calendar's structure"
+    },
+    {
+      "topicId": "mt_mQe6CJvsUF",
+      "prerequisiteId": "mt_AO6PdCKyXu",
+      "strength": "soft",
+      "reason": "Knowing the day divides into hours comes before reading clocks"
+    },
+    {
+      "topicId": "mt_U86Qkjs6CV",
+      "prerequisiteId": "mt_oPBNVJOEKg",
+      "strength": "hard",
+      "reason": "Ordering with avant/après is required to build a timeline"
+    },
+    {
+      "topicId": "mt_U86Qkjs6CV",
+      "prerequisiteId": "mt_AO6PdCKyXu",
+      "strength": "soft",
+      "reason": "Calendar landmarks help place life events on a frise"
+    },
+    {
+      "topicId": "mt_HBH84gXV4C",
+      "prerequisiteId": "mt_oPBNVJOEKg",
+      "strength": "hard",
+      "reason": "Before/after concepts underpin near versus distant past"
+    },
+    {
+      "topicId": "mt_HBH84gXV4C",
+      "prerequisiteId": "mt_U86Qkjs6CV",
+      "strength": "soft",
+      "reason": "The personal timeline extends naturally to longer time scales"
+    },
+    {
+      "topicId": "mt_jM9PxHDMCi",
+      "prerequisiteId": "mt_HBH84gXV4C",
+      "strength": "hard",
+      "reason": "A sense of centuries and millennia is needed to grasp the great periods"
+    },
+    {
+      "topicId": "mt_d7uMOWw4Zd",
+      "prerequisiteId": "mt_9REmUc8r4D",
+      "strength": "soft",
+      "reason": "The general evidence-from-the-past idea underpins identifying French traces"
+    },
+    {
+      "topicId": "mt_d7uMOWw4Zd",
+      "prerequisiteId": "mt_HBH84gXV4C",
+      "strength": "soft",
+      "reason": "Situating traces in time requires the near/distant past distinction"
+    },
+    {
+      "topicId": "mt_hRM8l1sHFi",
+      "prerequisiteId": "mt_jM9PxHDMCi",
+      "strength": "soft",
+      "reason": "Knowing the Préhistoire as a period frames Paleolithic life"
+    },
+    {
+      "topicId": "mt_hRM8l1sHFi",
+      "prerequisiteId": "mt_d7uMOWw4Zd",
+      "strength": "soft",
+      "reason": "Cave art and fossils are traces through which the era is known"
+    },
+    {
+      "topicId": "mt_mhnvxtVge2",
+      "prerequisiteId": "mt_hRM8l1sHFi",
+      "strength": "hard",
+      "reason": "The Neolithic change is understood by contrast with nomadic life"
+    },
+    {
+      "topicId": "mt_5DqK4DgyCN",
+      "prerequisiteId": "mt_hRM8l1sHFi",
+      "strength": "soft",
+      "reason": "Deepens the Paleolithic with human origins and migrations"
+    },
+    {
+      "topicId": "mt_XJIXHjaMo0",
+      "prerequisiteId": "mt_mhnvxtVge2",
+      "strength": "hard",
+      "reason": "Builds on the farming revolution to explain its diffusion"
+    },
+    {
+      "topicId": "mt_XJIXHjaMo0",
+      "prerequisiteId": "mt_5DqK4DgyCN",
+      "strength": "soft",
+      "reason": "Background on migrations helps grasp the spread of farming"
+    },
+    {
+      "topicId": "mt_DqN8qUO01K",
+      "prerequisiteId": "mt_mhnvxtVge2",
+      "strength": "soft",
+      "reason": "Celtic farming societies build on Neolithic foundations"
+    },
+    {
+      "topicId": "mt_DqN8qUO01K",
+      "prerequisiteId": "mt_d7uMOWw4Zd",
+      "strength": "soft",
+      "reason": "The Celtic worlds are known mainly through archaeology"
+    },
+    {
+      "topicId": "mt_72zFvG57Lx",
+      "prerequisiteId": "mt_DqN8qUO01K",
+      "strength": "hard",
+      "reason": "One must know who the Gauls were before studying their Mediterranean ties"
+    },
+    {
+      "topicId": "mt_72zFvG57Lx",
+      "prerequisiteId": "mt_vm4dT6FpEp",
+      "strength": "soft",
+      "reason": "The CE2 memory of Alésia anchors the end point of the story"
+    },
+    {
+      "topicId": "mt_vm4dT6FpEp",
+      "prerequisiteId": "mt_jM9PxHDMCi",
+      "strength": "soft",
+      "reason": "Places the conquest of Gaul within the Antiquité"
+    },
+    {
+      "topicId": "mt_ZAx5McrNDj",
+      "prerequisiteId": "mt_vm4dT6FpEp",
+      "strength": "soft",
+      "reason": "The conquest explains why Gaul became Roman"
+    },
+    {
+      "topicId": "mt_ZAx5McrNDj",
+      "prerequisiteId": "mt_6nqVnVdexe",
+      "strength": "soft",
+      "reason": "Knowledge of Roman town life transfers to Gallo-Roman cities"
+    },
+    {
+      "topicId": "mt_Kkucc7Hiw4",
+      "prerequisiteId": "mt_jM9PxHDMCi",
+      "strength": "soft",
+      "reason": "Situates the kings of France within the Moyen Âge"
+    },
+    {
+      "topicId": "mt_Kkucc7Hiw4",
+      "prerequisiteId": "mt_2DBPJ38iWl",
+      "strength": "soft",
+      "reason": "The basic idea of kings and queens comes first"
+    },
+    {
+      "topicId": "mt_xghBhO6vrX",
+      "prerequisiteId": "mt_Kkucc7Hiw4",
+      "strength": "soft",
+      "reason": "The dynastic context gives meaning to the sacre"
+    },
+    {
+      "topicId": "mt_z6JdFGbpeC",
+      "prerequisiteId": "mt_Kkucc7Hiw4",
+      "strength": "hard",
+      "reason": "The kingdom at stake must be known before its great war"
+    },
+    {
+      "topicId": "mt_ha7QtW8H0e",
+      "prerequisiteId": "mt_bjlY5TE1y-",
+      "strength": "soft",
+      "reason": "The feudal pyramid idea prepares the French seigneurie"
+    },
+    {
+      "topicId": "mt_ha7QtW8H0e",
+      "prerequisiteId": "mt_oN7fI4d_kU",
+      "strength": "soft",
+      "reason": "Knowing what a castle is helps grasp the seigneur's power"
+    },
+    {
+      "topicId": "mt_qOUk7qg9Gw",
+      "prerequisiteId": "mt_ha7QtW8H0e",
+      "strength": "hard",
+      "reason": "Peasant obligations presuppose the seigneurie"
+    },
+    {
+      "topicId": "mt_qOUk7qg9Gw",
+      "prerequisiteId": "mt_PThM5P7Umd",
+      "strength": "soft",
+      "reason": "Generic medieval village life primes the French countryside"
+    },
+    {
+      "topicId": "mt_WA8cPfejTl",
+      "prerequisiteId": "mt_LuwHnQItF_",
+      "strength": "soft",
+      "reason": "General medieval Church knowledge precedes the French paroisse frame"
+    },
+    {
+      "topicId": "mt_WA8cPfejTl",
+      "prerequisiteId": "mt_ha7QtW8H0e",
+      "strength": "soft",
+      "reason": "Seigneurie and paroisse are the paired frames of medieval life"
+    },
+    {
+      "topicId": "mt_ST75YFIbQU",
+      "prerequisiteId": "mt_WA8cPfejTl",
+      "strength": "soft",
+      "reason": "The church's central role motivates studying its architecture"
+    },
+    {
+      "topicId": "mt_qDobIAB2qB",
+      "prerequisiteId": "mt_Kkucc7Hiw4",
+      "strength": "soft",
+      "reason": "Continuity of the royaume de France into the Renaissance"
+    },
+    {
+      "topicId": "mt_qDobIAB2qB",
+      "prerequisiteId": "mt_rf23aL6KwH",
+      "strength": "soft",
+      "reason": "Renaissance context supports the roi mécène story"
+    },
+    {
+      "topicId": "mt_C3wZLZJiyl",
+      "prerequisiteId": "mt_qDobIAB2qB",
+      "strength": "soft",
+      "reason": "Chronological chain of the three studied kings"
+    },
+    {
+      "topicId": "mt_UlEvlYvpNW",
+      "prerequisiteId": "mt_C3wZLZJiyl",
+      "strength": "soft",
+      "reason": "The pacified kingdom precedes absolute monarchy"
+    },
+    {
+      "topicId": "mt_UlEvlYvpNW",
+      "prerequisiteId": "mt_xghBhO6vrX",
+      "strength": "soft",
+      "reason": "Rituals of royal authority culminate in absolute power"
+    },
+    {
+      "topicId": "mt_LoI8A8nxyK",
+      "prerequisiteId": "mt_qOUk7qg9Gw",
+      "strength": "soft",
+      "reason": "Medieval social roles evolve into the society of orders"
+    },
+    {
+      "topicId": "mt_8ciz4bQroT",
+      "prerequisiteId": "mt_jM9PxHDMCi",
+      "strength": "soft",
+      "reason": "1492 marks the entry into the Temps modernes"
+    },
+    {
+      "topicId": "mt_eVd49pdgXv",
+      "prerequisiteId": "mt_8ciz4bQroT",
+      "strength": "hard",
+      "reason": "The explorations precede and enable the colonial empires"
+    },
+    {
+      "topicId": "mt_inPxYOilxq",
+      "prerequisiteId": "mt_eVd49pdgXv",
+      "strength": "hard",
+      "reason": "Plantation colonies are the setting of the traite"
+    },
+    {
+      "topicId": "mt_mN2YzHcZvc",
+      "prerequisiteId": "mt_LoI8A8nxyK",
+      "strength": "hard",
+      "reason": "The unfair society of orders is the backdrop of the 1789 crisis"
+    },
+    {
+      "topicId": "mt_mN2YzHcZvc",
+      "prerequisiteId": "mt_UlEvlYvpNW",
+      "strength": "soft",
+      "reason": "Absolute monarchy is what 1789 challenges"
+    },
+    {
+      "topicId": "mt_QeOowyopqr",
+      "prerequisiteId": "mt_mN2YzHcZvc",
+      "strength": "hard",
+      "reason": "Causes come before the events of the revolutionary year"
+    },
+    {
+      "topicId": "mt_hgy3qYWQhi",
+      "prerequisiteId": "mt_QeOowyopqr",
+      "strength": "hard",
+      "reason": "The Déclaration arises directly from the events of 1789"
+    },
+    {
+      "topicId": "mt_VGQhizA1MK",
+      "prerequisiteId": "mt_HBH84gXV4C",
+      "strength": "hard",
+      "reason": "Century and millennium concepts precede Roman-numeral notation"
+    },
+    {
+      "topicId": "mt_13OTqZZZZA",
+      "prerequisiteId": "mt_jM9PxHDMCi",
+      "strength": "hard",
+      "reason": "One must know the periods before questioning how they were built"
+    },
+    {
+      "topicId": "mt_13OTqZZZZA",
+      "prerequisiteId": "mt_Lu4H4mbsqO",
+      "strength": "soft",
+      "reason": "Evidence-versus-interpretation thinking supports debating conventions"
+    },
+    {
+      "topicId": "mt_EhehnBobqp",
+      "prerequisiteId": "mt_QeOowyopqr",
+      "strength": "hard",
+      "reason": "The Revolution of 1789 leads directly into 1792"
+    },
+    {
+      "topicId": "mt_EhehnBobqp",
+      "prerequisiteId": "mt_hgy3qYWQhi",
+      "strength": "soft",
+      "reason": "Republican principles come from the Déclaration"
+    },
+    {
+      "topicId": "mt_i4PNEkxshS",
+      "prerequisiteId": "mt_EhehnBobqp",
+      "strength": "hard",
+      "reason": "The Republic precedes the Empire that replaces it"
+    },
+    {
+      "topicId": "mt_RG20h7iDtR",
+      "prerequisiteId": "mt_inPxYOilxq",
+      "strength": "hard",
+      "reason": "Understanding slavery precedes understanding its abolitions"
+    },
+    {
+      "topicId": "mt_RG20h7iDtR",
+      "prerequisiteId": "mt_EhehnBobqp",
+      "strength": "soft",
+      "reason": "The first abolition of 1794 is an act of the young Republic"
+    },
+    {
+      "topicId": "mt_dguDbqSqU7",
+      "prerequisiteId": "mt_EhehnBobqp",
+      "strength": "soft",
+      "reason": "The republican ideal of 1792 matures into founding laws"
+    },
+    {
+      "topicId": "mt_dguDbqSqU7",
+      "prerequisiteId": "mt_hgy3qYWQhi",
+      "strength": "soft",
+      "reason": "The great laws put the Déclaration's principles into practice"
+    },
+    {
+      "topicId": "mt_QBTIQnVdWa",
+      "prerequisiteId": "mt_QeOowyopqr",
+      "strength": "soft",
+      "reason": "The 14 juillet and the tricolore originate in the Revolution"
+    },
+    {
+      "topicId": "mt_QBTIQnVdWa",
+      "prerequisiteId": "mt_EhehnBobqp",
+      "strength": "soft",
+      "reason": "La Marseillaise and Marianne are born with the Republic"
+    },
+    {
+      "topicId": "mt_PKmBVeFeOE",
+      "prerequisiteId": "mt_eVd49pdgXv",
+      "strength": "soft",
+      "reason": "The first colonial empires precede the 19th-century empire"
+    },
+    {
+      "topicId": "mt_PKmBVeFeOE",
+      "prerequisiteId": "mt_dguDbqSqU7",
+      "strength": "soft",
+      "reason": "The IIIe République is the context of colonial expansion"
+    },
+    {
+      "topicId": "mt_Tien19MlpL",
+      "prerequisiteId": "mt_i4PNEkxshS",
+      "strength": "soft",
+      "reason": "Chronological entry into 19th-century France"
+    },
+    {
+      "topicId": "mt_9kDBaMu0o2",
+      "prerequisiteId": "mt_Tien19MlpL",
+      "strength": "hard",
+      "reason": "Factories and mines create the worker's world being described"
+    },
+    {
+      "topicId": "mt_9Ll4uIly29",
+      "prerequisiteId": "mt_dguDbqSqU7",
+      "strength": "soft",
+      "reason": "It is the rooted Republic that goes to war in 1914"
+    },
+    {
+      "topicId": "mt_NNpkbGyVWb",
+      "prerequisiteId": "mt_9Ll4uIly29",
+      "strength": "hard",
+      "reason": "The war's frame is needed before the soldiers' daily life"
+    },
+    {
+      "topicId": "mt_6JjPBlyULG",
+      "prerequisiteId": "mt_9Ll4uIly29",
+      "strength": "hard",
+      "reason": "Total-war mobilisation presupposes the war's frame"
+    },
+    {
+      "topicId": "mt_6JjPBlyULG",
+      "prerequisiteId": "mt_PKmBVeFeOE",
+      "strength": "soft",
+      "reason": "Colonial troops and workers joined the war effort"
+    },
+    {
+      "topicId": "mt_iEcXvW1mA0",
+      "prerequisiteId": "mt_9Ll4uIly29",
+      "strength": "soft",
+      "reason": "The aftermath of 14-18 frames the new world war"
+    },
+    {
+      "topicId": "mt_dskXQuTb4S",
+      "prerequisiteId": "mt_iEcXvW1mA0",
+      "strength": "hard",
+      "reason": "The Occupation follows from the defeat of 1940"
+    },
+    {
+      "topicId": "mt_Go6dBQAYH3",
+      "prerequisiteId": "mt_iEcXvW1mA0",
+      "strength": "hard",
+      "reason": "The appel du 18 juin answers the defeat"
+    },
+    {
+      "topicId": "mt_Go6dBQAYH3",
+      "prerequisiteId": "mt_dskXQuTb4S",
+      "strength": "soft",
+      "reason": "Resisting means acting within occupied France"
+    },
+    {
+      "topicId": "mt_AVGQbauDAf",
+      "prerequisiteId": "mt_iEcXvW1mA0",
+      "strength": "hard",
+      "reason": "The Vichy regime is born of the defeat"
+    },
+    {
+      "topicId": "mt_AVGQbauDAf",
+      "prerequisiteId": "mt_dskXQuTb4S",
+      "strength": "soft",
+      "reason": "The Occupation is the context of collaboration and the rafles"
+    },
+    {
+      "topicId": "mt_hhO9tckkKf",
+      "prerequisiteId": "mt_dskXQuTb4S",
+      "strength": "hard",
+      "reason": "The Liberation ends the Occupation"
+    },
+    {
+      "topicId": "mt_hhO9tckkKf",
+      "prerequisiteId": "mt_Go6dBQAYH3",
+      "strength": "soft",
+      "reason": "The Résistance takes part in the liberation of France"
+    },
+    {
+      "topicId": "mt_otuUvBDmay",
+      "prerequisiteId": "mt_hhO9tckkKf",
+      "strength": "soft",
+      "reason": "Post-war rebuilding starts from 1944-1945"
+    },
+    {
+      "topicId": "mt_otuUvBDmay",
+      "prerequisiteId": "mt_dguDbqSqU7",
+      "strength": "soft",
+      "reason": "The new Republic extends the lineage of republican laws"
+    },
+    {
+      "topicId": "mt_dRKpqLc9Bg",
+      "prerequisiteId": "mt_otuUvBDmay",
+      "strength": "soft",
+      "reason": "The political frame precedes the social transformations"
+    },
+    {
+      "topicId": "mt_dRKpqLc9Bg",
+      "prerequisiteId": "mt_Tien19MlpL",
+      "strength": "soft",
+      "reason": "19th-century transformations prefigure post-war modernisation"
+    },
+    {
+      "topicId": "mt_hLhE0t2uk8",
+      "prerequisiteId": "mt_hhO9tckkKf",
+      "strength": "soft",
+      "reason": "The European project answers the devastation of the wars"
+    },
+    {
+      "topicId": "mt_hLhE0t2uk8",
+      "prerequisiteId": "mt_otuUvBDmay",
+      "strength": "soft",
+      "reason": "Post-war France is a driving force of European construction"
+    },
+    {
+      "topicId": "mt_freRCcNXMS",
+      "prerequisiteId": "mt_VQgsI3JUXF",
+      "strength": "hard",
+      "reason": "Recognising the flag comes before learning the full set of republican symbols"
+    },
+    {
+      "topicId": "mt_freRCcNXMS",
+      "prerequisiteId": "mt_Qv3sczVfd9",
+      "strength": "soft",
+      "reason": "Knowing the anthem feeds recognition of the wider symbol set"
+    },
+    {
+      "topicId": "mt_n7oA1O0n2s",
+      "prerequisiteId": "mt_freRCcNXMS",
+      "strength": "soft",
+      "reason": "The fête nationale is first met as one symbol among the others before its history"
+    },
+    {
+      "topicId": "mt_3qZ4PJFzhk",
+      "prerequisiteId": "mt_mDp-1vlL3R",
+      "strength": "soft",
+      "reason": "A working idea of fairness and equality helps unpack Égalité"
+    },
+    {
+      "topicId": "mt_HmrxL0Md0b",
+      "prerequisiteId": "mt_3qZ4PJFzhk",
+      "strength": "soft",
+      "reason": "The devise introduces fraternité before it is deepened as a principle"
+    },
+    {
+      "topicId": "mt_HmrxL0Md0b",
+      "prerequisiteId": "mt_lAvS72LOUO",
+      "strength": "soft",
+      "reason": "Everyday kindness and helping are the lived base for fraternité"
+    },
+    {
+      "topicId": "mt_QCMXUpUT63",
+      "prerequisiteId": "mt_mDp-1vlL3R",
+      "strength": "hard",
+      "reason": "The concept of equality and fair treatment underpins equality in law"
+    },
+    {
+      "topicId": "mt_QCMXUpUT63",
+      "prerequisiteId": "mt_3qZ4PJFzhk",
+      "strength": "soft",
+      "reason": "Égalité in the devise precedes its legal meaning"
+    },
+    {
+      "topicId": "mt_ybZEuNhyYX",
+      "prerequisiteId": "mt_3qZ4PJFzhk",
+      "strength": "soft",
+      "reason": "Liberté as a republican value frames freedom of conscience"
+    },
+    {
+      "topicId": "mt_EMDmPxEyde",
+      "prerequisiteId": "mt_ybZEuNhyYX",
+      "strength": "hard",
+      "reason": "Laïcité at school is understood as protecting liberté de conscience"
+    },
+    {
+      "topicId": "mt_EMDmPxEyde",
+      "prerequisiteId": "mt_DkzsZdyaL2",
+      "strength": "soft",
+      "reason": "Awareness of diverse beliefs motivates why school stays neutral"
+    },
+    {
+      "topicId": "mt_7F7pBdzSHg",
+      "prerequisiteId": "mt_EMDmPxEyde",
+      "strength": "hard",
+      "reason": "The lived school experience precedes laïcité as a legal principle"
+    },
+    {
+      "topicId": "mt_7F7pBdzSHg",
+      "prerequisiteId": "mt_ybZEuNhyYX",
+      "strength": "soft",
+      "reason": "The principle is defined by the freedom it guarantees"
+    },
+    {
+      "topicId": "mt_Ozq6wrvwWi",
+      "prerequisiteId": "mt_8fZEVouvlH",
+      "strength": "soft",
+      "reason": "Rights met at school scaffold the idea of universal children's rights"
+    },
+    {
+      "topicId": "mt_8fZEVouvlH",
+      "prerequisiteId": "mt_rkrG2w7WXI",
+      "strength": "hard",
+      "reason": "Understanding why rules exist precedes reading them as rights and duties"
+    },
+    {
+      "topicId": "mt_aDCuwp5vD9",
+      "prerequisiteId": "mt_Ozq6wrvwWi",
+      "strength": "soft",
+      "reason": "Children's rights are the first encounter with codified rights texts"
+    },
+    {
+      "topicId": "mt_aDCuwp5vD9",
+      "prerequisiteId": "mt_QCMXUpUT63",
+      "strength": "soft",
+      "reason": "Equality in law prepares the founding declarations of rights"
+    },
+    {
+      "topicId": "mt_mALuYAtatP",
+      "prerequisiteId": "mt_aDCuwp5vD9",
+      "strength": "hard",
+      "reason": "You must know the freedoms before studying their legal limits"
+    },
+    {
+      "topicId": "mt_mALuYAtatP",
+      "prerequisiteId": "mt_h_shhH-6DC",
+      "strength": "soft",
+      "reason": "Rights-with-responsibilities thinking prepares limits on freedoms"
+    },
+    {
+      "topicId": "mt_8Qg8V4RfU8",
+      "prerequisiteId": "mt_HFN1pGASpZ",
+      "strength": "hard",
+      "reason": "Understanding prejudice and discrimination precedes the law that punishes them"
+    },
+    {
+      "topicId": "mt_8Qg8V4RfU8",
+      "prerequisiteId": "mt_QCMXUpUT63",
+      "strength": "soft",
+      "reason": "Anti-discrimination law is equality in law applied"
+    },
+    {
+      "topicId": "mt_8Qg8V4RfU8",
+      "prerequisiteId": "mt_2oswCNuapH",
+      "strength": "soft",
+      "reason": "Spotting stereotypes underlies deconstructing préjugés"
+    },
+    {
+      "topicId": "mt_6jxLpvgowC",
+      "prerequisiteId": "mt_Ozq6wrvwWi",
+      "strength": "soft",
+      "reason": "The CIDE grounds the child's right to privacy"
+    },
+    {
+      "topicId": "mt_6jxLpvgowC",
+      "prerequisiteId": "mt_zIzJGkaj0Q",
+      "strength": "soft",
+      "reason": "Basic digital citizenship precedes data, traces and image rights online"
+    },
+    {
+      "topicId": "mt_4Y5RgzJ6Px",
+      "prerequisiteId": "mt_qCR9dSTl4D",
+      "strength": "soft",
+      "reason": "Knowing what voting is gives meaning to gaining political rights at 18"
+    },
+    {
+      "topicId": "mt_vjxGgVIhBt",
+      "prerequisiteId": "mt_4Y5RgzJ6Px",
+      "strength": "hard",
+      "reason": "One must know what a citizen is before the citizen's duties"
+    },
+    {
+      "topicId": "mt_vjxGgVIhBt",
+      "prerequisiteId": "mt_8fZEVouvlH",
+      "strength": "soft",
+      "reason": "School droits and devoirs are the small-scale model of civic duties"
+    },
+    {
+      "topicId": "mt_vjxGgVIhBt",
+      "prerequisiteId": "mt_TvYT0b7nBV",
+      "strength": "soft",
+      "reason": "Everyday civic behaviour precedes formal civic duties"
+    },
+    {
+      "topicId": "mt_TvYT0b7nBV",
+      "prerequisiteId": "mt_fLp3msw9wk",
+      "strength": "hard",
+      "reason": "Civisme is defined as acting for the public good, which requires the bien commun idea"
+    },
+    {
+      "topicId": "mt_TvYT0b7nBV",
+      "prerequisiteId": "mt_UHQfb-n-w3",
+      "strength": "soft",
+      "reason": "Seeing that actions have consequences underpins judging incivilités"
+    },
+    {
+      "topicId": "mt_g1XrkbSc9h",
+      "prerequisiteId": "mt_fLp3msw9wk",
+      "strength": "soft",
+      "reason": "Shared services and equipment introduce what the commune manages"
+    },
+    {
+      "topicId": "mt_NmaqxzAVHx",
+      "prerequisiteId": "mt_g1XrkbSc9h",
+      "strength": "soft",
+      "reason": "The concrete local elected official scaffolds the national one"
+    },
+    {
+      "topicId": "mt_qCR9dSTl4D",
+      "prerequisiteId": "mt_NmaqxzAVHx",
+      "strength": "soft",
+      "reason": "Knowing the president is elected seeds the general idea of democracy"
+    },
+    {
+      "topicId": "mt_qCR9dSTl4D",
+      "prerequisiteId": "mt_8ad4U6msea",
+      "strength": "soft",
+      "reason": "Athenian origins illuminate the word and idea of démocratie"
+    },
+    {
+      "topicId": "mt_t81hCcBgio",
+      "prerequisiteId": "mt_4Y5RgzJ6Px",
+      "strength": "soft",
+      "reason": "French citizenship comes before the added layer of EU citizenship"
+    },
+    {
+      "topicId": "mt_fLp3msw9wk",
+      "prerequisiteId": "mt_FwI7q7DSIx",
+      "strength": "soft",
+      "reason": "Sharing and turn-taking are the first experience of common goods"
+    },
+    {
+      "topicId": "mt_ICfB8NcBrD",
+      "prerequisiteId": "mt_fLp3msw9wk",
+      "strength": "hard",
+      "reason": "L'intérêt général formalises the bien commun learned earlier"
+    },
+    {
+      "topicId": "mt_ICfB8NcBrD",
+      "prerequisiteId": "mt_TvYT0b7nBV",
+      "strength": "soft",
+      "reason": "Civisme practises the general interest before it is formally defined"
+    },
+    {
+      "topicId": "mt_oZquEA6cjb",
+      "prerequisiteId": "mt_qCR9dSTl4D",
+      "strength": "hard",
+      "reason": "Electing representatives presupposes understanding voting and democracy"
+    },
+    {
+      "topicId": "mt_oZquEA6cjb",
+      "prerequisiteId": "mt_ICfB8NcBrD",
+      "strength": "soft",
+      "reason": "Representatives are understood as serving l'intérêt général"
+    },
+    {
+      "topicId": "mt_oZquEA6cjb",
+      "prerequisiteId": "mt_w4nSIDhIgC",
+      "strength": "soft",
+      "reason": "Experience of roles in a group prepares the formal role of a délégué"
+    },
+    {
+      "topicId": "mt_SeB8WmRd2L",
+      "prerequisiteId": "mt_2DIf53cokX",
+      "strength": "soft",
+      "reason": "Expressive read-aloud in cycle 2 precedes performative reading to an audience"
+    },
+    {
+      "topicId": "mt_DxqjeCFELm",
+      "prerequisiteId": "mt_3vAYe9jwvy",
+      "strength": "soft",
+      "reason": "Recognising silent letters in reading precedes producing them in spelling"
+    },
+    {
+      "topicId": "mt_GloNrsIFPD",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "soft",
+      "reason": "Grasping the gist of a READ text presupposes reading first simple sentences (heard texts remain possible, hence soft)."
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_EirhxUYZSS",
+      "strength": "hard",
+      "reason": "Understanding a text read independently is impossible without being able to decode whole short texts."
+    },
+    {
+      "topicId": "mt_BEUsU2Ibxp",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "soft",
+      "reason": "Inference work on written texts presupposes reading simple sentences; oral texts can substitute early on."
+    },
+    {
+      "topicId": "mt_WZc33fwcw9",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "soft",
+      "reason": "Tracking pronoun chains across written sentences presupposes reading them; also trainable on heard texts."
+    },
+    {
+      "topicId": "mt_Xgya9v1Ecq",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Pointing to the words that prove an answer requires being able to (re)read those words."
+    },
+    {
+      "topicId": "mt_9K2dpnYIBw",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "You only meet unknown WRITTEN words if you can decode them in the first place."
+    },
+    {
+      "topicId": "mt_kYBltng0LH",
+      "prerequisiteId": "mt_QYa8M6hfvX",
+      "strength": "soft",
+      "reason": "Maternelle recognition of kinds of écrits by look prepares the functional narrative/informative/prescriptive typology."
+    },
+    {
+      "topicId": "mt_4dAsaniBlQ",
+      "prerequisiteId": "mt_UWEociuJ0w",
+      "strength": "soft",
+      "reason": "Scanning documents for information needs decoding that no longer consumes attention."
+    },
+    {
+      "topicId": "mt_9eN2q96tPO",
+      "prerequisiteId": "mt_UWEociuJ0w",
+      "strength": "soft",
+      "reason": "Deliberate comprehension strategies only become workable once decoding is automatic and attention is freed."
+    },
+    {
+      "topicId": "mt_JJtsZabgvh",
+      "prerequisiteId": "mt_EirhxUYZSS",
+      "strength": "soft",
+      "reason": "Works can be heard, but reading them oneself presupposes decoding whole short texts."
+    },
+    {
+      "topicId": "mt_4R5JcmD0N1",
+      "prerequisiteId": "mt_1ofKh6apEO",
+      "strength": "hard",
+      "reason": "Reading stamina and pleasure over full books cannot develop without fluent decoding (~70-90 wpm)."
+    },
+    {
+      "topicId": "mt_MzN9rKS6Nn",
+      "prerequisiteId": "mt_1ofKh6apEO",
+      "strength": "hard",
+      "reason": "Autonomous lecture cursive and guided lecture intégrale of full works presuppose fluent reading."
+    },
+    {
+      "topicId": "mt_vjkiQqA7Us",
+      "prerequisiteId": "mt_QYa8M6hfvX",
+      "strength": "soft",
+      "reason": "Choosing books by kind and subject leans on recognising types of écrits by their look."
+    },
+    {
+      "topicId": "mt_GloNrsIFPD",
+      "prerequisiteId": "mt_r3Gw5YG9Ji",
+      "strength": "soft",
+      "reason": "Extracting key information from a spoken message is the oral rehearsal of getting a text's gist."
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_zTIgJGJF0E",
+      "strength": "soft",
+      "reason": "A written text shares no situation with its reader; decontextualised language understanding prepares that."
+    },
+    {
+      "topicId": "mt_BEUsU2Ibxp",
+      "prerequisiteId": "mt_5ANH390hDA",
+      "strength": "soft",
+      "reason": "Orally hypothesising 'peut-être que…' trains the guessing-from-clues move behind first inferences."
+    },
+    {
+      "topicId": "mt_WZc33fwcw9",
+      "prerequisiteId": "mt_OylZBRJT5o",
+      "strength": "soft",
+      "reason": "Using il/elle/ils/nous orally precedes and supports tracking those pronouns' referents in text."
+    },
+    {
+      "topicId": "mt_HvN4HZXctD",
+      "prerequisiteId": "mt_S1YaPzm9Vo",
+      "strength": "soft",
+      "reason": "Debating one's readings presupposes the oral habit of building on what others have said."
+    },
+    {
+      "topicId": "mt_A9T3FWKRXf",
+      "prerequisiteId": "mt_kYBltng0LH",
+      "strength": "soft",
+      "reason": "Knowing narrative/informative/prescriptive text types helps recognise the parallel genres of spoken discourse."
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_fm7otUV5C2",
+      "strength": "hard",
+      "reason": "First tries at writing words require segmenting speech into syllables before mapping them to letters."
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_c31dOeumjo",
+      "strength": "hard",
+      "reason": "Inventive spelling only makes sense once the child knows letters carry sounds (alphabetic principle)."
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_5M4rpAqTii",
+      "strength": "soft",
+      "reason": "Knowing one's first letters gives the material for first independent writing tries."
+    },
+    {
+      "topicId": "mt_nEqAwlxifz",
+      "prerequisiteId": "mt_JdVY4wP8E9",
+      "strength": "soft",
+      "reason": "Isolating some phonemes to write them is easier once close speech sounds are discriminated."
+    },
+    {
+      "topicId": "mt_H20DE2Yp5d",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Writing graphemes, syllables and first words with help presupposes the first taught CGP."
+    },
+    {
+      "topicId": "mt_uQglVRFf2r",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "One can only write 'every grapheme studied in the decoding progression' after studying those graphemes."
+    },
+    {
+      "topicId": "mt_1ggWCBjdcI",
+      "prerequisiteId": "mt_35dh2HFwOo",
+      "strength": "hard",
+      "reason": "Transcribing between script and cursive presupposes matching the same letter across graphies."
+    },
+    {
+      "topicId": "mt_fEbeMduSfW",
+      "prerequisiteId": "mt_35dh2HFwOo",
+      "strength": "soft",
+      "reason": "Copying from a printed model into handwriting is supported by matching letters across the three graphies."
+    },
+    {
+      "topicId": "mt_SJpKDeqSIP",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "hard",
+      "reason": "Using a read text as a springboard ('à la manière de') requires being able to read that model."
+    },
+    {
+      "topicId": "mt_SJpKDeqSIP",
+      "prerequisiteId": "mt_GloNrsIFPD",
+      "strength": "soft",
+      "reason": "Transforming a model text on a few points presupposes grasping what the model says."
+    },
+    {
+      "topicId": "mt_oyqB6ntGDW",
+      "prerequisiteId": "mt_Zm8u8UZB4N",
+      "strength": "hard",
+      "reason": "You cannot hierarchise and reduce a text you cannot yet understand independently."
+    },
+    {
+      "topicId": "mt_oyqB6ntGDW",
+      "prerequisiteId": "mt_lrxQqaQgXt",
+      "strength": "soft",
+      "reason": "Giving back a text's essentials faithfully is the direct rehearsal of the written résumé."
+    },
+    {
+      "topicId": "mt_88hRofXkru",
+      "prerequisiteId": "mt_4dAsaniBlQ",
+      "strength": "hard",
+      "reason": "Note-taking to sort relevant information presupposes locating information in documents."
+    },
+    {
+      "topicId": "mt_Xdd8ZhkOyP",
+      "prerequisiteId": "mt_Xgya9v1Ecq",
+      "strength": "soft",
+      "reason": "Defending a viewpoint from documents builds on the justify-by-returning-to-the-text habit."
+    },
+    {
+      "topicId": "mt_Fj69abNI8T",
+      "prerequisiteId": "mt_aYkkFOD2Tc",
+      "strength": "soft",
+      "reason": "Dictating a text to an adult presupposes putting events into words orally first."
+    },
+    {
+      "topicId": "mt_heOLlJFkQ3",
+      "prerequisiteId": "mt_zTIgJGJF0E",
+      "strength": "soft",
+      "reason": "Writing for an absent reader extends the maternelle skill of being understood out of situation."
+    },
+    {
+      "topicId": "mt_g4HbaKsDjJ",
+      "prerequisiteId": "mt_yMXio98VMx",
+      "strength": "soft",
+      "reason": "Oral use of d'abord/ensuite/enfin in short prepared talk precedes chaining written sentences with connectors."
+    },
+    {
+      "topicId": "mt_WLafqphLug",
+      "prerequisiteId": "mt_QYBIa1XOgH",
+      "strength": "soft",
+      "reason": "Choosing oral structures to narrate/explain/argue prepares the same choices in written modes."
+    },
+    {
+      "topicId": "mt_Xdd8ZhkOyP",
+      "prerequisiteId": "mt_522lmt0p24",
+      "strength": "soft",
+      "reason": "Organising an oral argumentation/justification comes before arguing a viewpoint in writing."
+    },
+    {
+      "topicId": "mt_YRaawyc9FY",
+      "prerequisiteId": "mt_jJODNlogGc",
+      "strength": "soft",
+      "reason": "Reformulating heard content in one's own words is the oral counterpart trained before written reformulation."
+    },
+    {
+      "topicId": "mt_q6kt5Jfbf8",
+      "prerequisiteId": "mt_fr3qMFCcsz",
+      "strength": "soft",
+      "reason": "Holding a topic through an oral exchange prefigures thematic unity in a written text."
+    },
+    {
+      "topicId": "mt_c31dOeumjo",
+      "prerequisiteId": "mt_Fp696Nhf6m",
+      "strength": "soft",
+      "reason": "Discovering that writing encodes speech prepares the stricter insight that each letter carries a sound."
+    },
+    {
+      "topicId": "mt_JdVY4wP8E9",
+      "prerequisiteId": "mt_wLroTdOoZh",
+      "strength": "soft",
+      "reason": "Articulating close consonant pairs (t/d, f/v…) supports hearing them apart in phoneme discrimination."
+    },
+    {
+      "topicId": "mt_KhbQpgM60a",
+      "prerequisiteId": "mt_KK4TbW5oJX",
+      "strength": "soft",
+      "reason": "Holding studied spelling rules while composing ten lines relies on in-flight orthographic vigilance."
+    },
+    {
+      "topicId": "mt_purBYPc0pe",
+      "prerequisiteId": "mt_uQglVRFf2r",
+      "strength": "hard",
+      "reason": "Taking dictation requires handwriting all studied graphemes fluently enough to keep up."
+    },
+    {
+      "topicId": "mt_JNXzU8lXMo",
+      "prerequisiteId": "mt_heOLlJFkQ3",
+      "strength": "soft",
+      "reason": "Automatising agreements while composing presupposes already producing short autonomous texts."
+    },
+    {
+      "topicId": "mt_Ij6D5uAO46",
+      "prerequisiteId": "mt_kcsUOP38lV",
+      "strength": "hard",
+      "reason": "Encoding starts by segmenting the spoken word into phonemes — the manipulation skill itself."
+    },
+    {
+      "topicId": "mt_Ij6D5uAO46",
+      "prerequisiteId": "mt_TtvCWOTl0w",
+      "strength": "hard",
+      "reason": "Choosing a grapheme for each sound presupposes knowing the first CGP."
+    },
+    {
+      "topicId": "mt_ON27v5YWUr",
+      "prerequisiteId": "mt_12EXxjdoSI",
+      "strength": "hard",
+      "reason": "Spelling ou/oi/an/on/in presupposes knowing these two-letter graphemes from reading."
+    },
+    {
+      "topicId": "mt_ON27v5YWUr",
+      "prerequisiteId": "mt_9ftF5KJ8Bx",
+      "strength": "hard",
+      "reason": "Spelling eau/gn/ill/ain presupposes the complex graphemes studied in decoding."
+    },
+    {
+      "topicId": "mt_6kZarYNUDX",
+      "prerequisiteId": "mt_uyvFueH6tO",
+      "strength": "hard",
+      "reason": "Writing the right accent on e presupposes knowing how é/è/ê change the letter's sound in reading."
+    },
+    {
+      "topicId": "mt_Spah1wzixx",
+      "prerequisiteId": "mt_ZF0FqbGUp9",
+      "strength": "hard",
+      "reason": "Choosing s/ss, c/ç, g/gu in writing presupposes knowing these letters change sound with context in reading."
+    },
+    {
+      "topicId": "mt_sPd4fWeY9x",
+      "prerequisiteId": "mt_jSuAiWoQ0h",
+      "strength": "soft",
+      "reason": "Instant reading recognition of the small frequent words prepares memorising their spelling."
+    },
+    {
+      "topicId": "mt_Lhh8Jcs0r1",
+      "prerequisiteId": "mt_6kCHUxxboj",
+      "strength": "hard",
+      "reason": "Using a family word to reveal a silent letter presupposes the concept of famille de mots."
+    },
+    {
+      "topicId": "mt_zLtVw9oaD5",
+      "prerequisiteId": "mt_VBuvDs6k5V",
+      "strength": "hard",
+      "reason": "Seeing the GN vary together presupposes the notion of gender signalled by the determiner."
+    },
+    {
+      "topicId": "mt_zLtVw9oaD5",
+      "prerequisiteId": "mt_vTUIRFIBCI",
+      "strength": "hard",
+      "reason": "Seeing the GN vary together presupposes the notion of number signalled by the determiner."
+    },
+    {
+      "topicId": "mt_x2BNUzBpsA",
+      "prerequisiteId": "mt_vTUIRFIBCI",
+      "strength": "hard",
+      "reason": "Marking plural -s/-x in writing presupposes the singular/plural concept."
+    },
+    {
+      "topicId": "mt_dusaTYQfZg",
+      "prerequisiteId": "mt_VBuvDs6k5V",
+      "strength": "hard",
+      "reason": "Writing feminine forms presupposes the masculine/feminine distinction."
+    },
+    {
+      "topicId": "mt_pgcM1qZoZj",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Agreeing déterminant-nom-adjectif requires identifying and naming those word classes."
+    },
+    {
+      "topicId": "mt_aXMo9fmGlk",
+      "prerequisiteId": "mt_AM08xWhmMY",
+      "strength": "hard",
+      "reason": "Finding the giver of agreement presupposes identifying the GN and its nom noyau."
+    },
+    {
+      "topicId": "mt_LkZNCEdRWh",
+      "prerequisiteId": "mt_mFF27pg6UJ",
+      "strength": "hard",
+      "reason": "Writing -nt only makes sense once one knows the subject commands the verb."
+    },
+    {
+      "topicId": "mt_feQ98KiTC0",
+      "prerequisiteId": "mt_gqdMDjFnhN",
+      "strength": "hard",
+      "reason": "Agreeing the verb starts with reliably locating the verb and its subject in any sentence."
+    },
+    {
+      "topicId": "mt_J45mKInlvK",
+      "prerequisiteId": "mt_9rDQUTLkUM",
+      "strength": "hard",
+      "reason": "Agreement with inverted subjects presupposes recognising a subject placed after the verb."
+    },
+    {
+      "topicId": "mt_Pbk8uXVRQA",
+      "prerequisiteId": "mt_QSbjO3ixAZ",
+      "strength": "hard",
+      "reason": "Agreeing the attribut presupposes recognising the attribut du sujet after state verbs."
+    },
+    {
+      "topicId": "mt_BfYjieGrsn",
+      "prerequisiteId": "mt_L4eztTTGyk",
+      "strength": "hard",
+      "reason": "Participle agreement with être presupposes building the passé composé (auxiliary + participle)."
+    },
+    {
+      "topicId": "mt_vXv7lGffOj",
+      "prerequisiteId": "mt_L4eztTTGyk",
+      "strength": "hard",
+      "reason": "The avoir rule presupposes building the passé composé and identifying its participle."
+    },
+    {
+      "topicId": "mt_vXv7lGffOj",
+      "prerequisiteId": "mt_mGwb3LiYk5",
+      "strength": "hard",
+      "reason": "Agreement with a COD placed before the verb presupposes identifying the COD."
+    },
+    {
+      "topicId": "mt_ZJQWjelxVj",
+      "prerequisiteId": "mt_b5zmbaIsV7",
+      "strength": "hard",
+      "reason": "The -é/-er substitution test uses a 3e groupe verb — verb groups must be known."
+    },
+    {
+      "topicId": "mt_KXATPhbHrk",
+      "prerequisiteId": "mt_OYeUUr8vjT",
+      "strength": "hard",
+      "reason": "Choosing -nt vs -s for il élève/des élèves presupposes telling the verb class from the noun class."
+    },
+    {
+      "topicId": "mt_Ia2g4owfRD",
+      "prerequisiteId": "mt_hT3zLBJbcb",
+      "strength": "hard",
+      "reason": "The a/à, est/et, ont/on tests rest on recognising forms of être and avoir au présent."
+    },
+    {
+      "topicId": "mt_afmgrWyNZT",
+      "prerequisiteId": "mt_3XIjIX0izJ",
+      "strength": "hard",
+      "reason": "ce/se, ces/ses, c'est/s'est are resolved by analysing each word's class and function."
+    },
+    {
+      "topicId": "mt_ksqVdBSJge",
+      "prerequisiteId": "mt_b3rGKWvZGn",
+      "strength": "soft",
+      "reason": "Knowing which classes vary in genre and nombre frames the irregular forms as exceptions."
+    },
+    {
+      "topicId": "mt_4upF9c1ZqL",
+      "prerequisiteId": "mt_XgcyKbYkE4",
+      "strength": "soft",
+      "reason": "Justifying each accord with a grammatical argument leans on naming the sentence's constituents."
+    },
+    {
+      "topicId": "mt_b3rGKWvZGn",
+      "prerequisiteId": "mt_zLtVw9oaD5",
+      "strength": "soft",
+      "reason": "Having seen the GN vary as a system prepares formalising which classes vary and how."
+    },
+    {
+      "topicId": "mt_g4HbaKsDjJ",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "hard",
+      "reason": "Chaining sentences presupposes knowing what a sentence is and where it starts and ends."
+    },
+    {
+      "topicId": "mt_H20DE2Yp5d",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "soft",
+      "reason": "Writing first sentences is supported by the capital-to-full-stop sentence concept."
+    },
+    {
+      "topicId": "mt_TH3sg20WoZ",
+      "prerequisiteId": "mt_DTpBKnp9Vn",
+      "strength": "soft",
+      "reason": "Hearing that a sentence is broken presupposes a norm of the complete sentence."
+    },
+    {
+      "topicId": "mt_q6kt5Jfbf8",
+      "prerequisiteId": "mt_30d3hQZTtw",
+      "strength": "soft",
+      "reason": "Keeping referents clear across a text leans on replacing groups with the right pronoun."
+    },
+    {
+      "topicId": "mt_WLafqphLug",
+      "prerequisiteId": "mt_maDNMWFlau",
+      "strength": "soft",
+      "reason": "Writing dialogue uses guillemets and direct-speech punctuation."
+    },
+    {
+      "topicId": "mt_WLafqphLug",
+      "prerequisiteId": "mt_krJBKdwbhN",
+      "strength": "soft",
+      "reason": "Narrating and describing in the past presupposes the imparfait."
+    },
+    {
+      "topicId": "mt_cPUEZ0aebE",
+      "prerequisiteId": "mt_odbwgymqBs",
+      "strength": "soft",
+      "reason": "Déplacement, substitution and suppression are the concrete tools of sentence revision."
+    },
+    {
+      "topicId": "mt_sGM334ibtZ",
+      "prerequisiteId": "mt_maDNMWFlau",
+      "strength": "soft",
+      "reason": "Monitoring punctuation and capitals presupposes the studied punctuation norms."
+    },
+    {
+      "topicId": "mt_KhbQpgM60a",
+      "prerequisiteId": "mt_92jVBmoQ0h",
+      "strength": "soft",
+      "reason": "Respecting syntax over ten lines includes writing correct present-tense verb forms."
+    },
+    {
+      "topicId": "mt_DTpBKnp9Vn",
+      "prerequisiteId": "mt_Ii1RCqHpjx",
+      "strength": "soft",
+      "reason": "Noticing capitals and final punctuation presupposes reading first simple sentences."
+    },
+    {
+      "topicId": "mt_maDNMWFlau",
+      "prerequisiteId": "mt_qNpdcW5gCL",
+      "strength": "soft",
+      "reason": "Using punctuation in one's own writing follows using it to phrase reading aloud."
+    },
+    {
+      "topicId": "mt_qfAIn8vBoT",
+      "prerequisiteId": "mt_SxnjkJHMkG",
+      "strength": "soft",
+      "reason": "The oral past/present/future system gives the material for observing that verbs change form."
+    },
+    {
+      "topicId": "mt_UjSlxq1AWh",
+      "prerequisiteId": "mt_bEh9yUWD2u",
+      "strength": "soft",
+      "reason": "Sorting words into semantic categories in maternelle prepares sorting them into grammatical classes."
+    },
+    {
+      "topicId": "mt_Zm8u8UZB4N",
+      "prerequisiteId": "mt_23ORyRWx9f",
+      "strength": "soft",
+      "reason": "Breadth of vocabulary met in context conditions independent text comprehension."
+    },
+    {
+      "topicId": "mt_9K2dpnYIBw",
+      "prerequisiteId": "mt_6kCHUxxboj",
+      "strength": "soft",
+      "reason": "Word-family knowledge is one of the 'word parts' levers for working out unknown words."
+    },
+    {
+      "topicId": "mt_VppKv86vDU",
+      "prerequisiteId": "mt_aNW8OssMhc",
+      "strength": "soft",
+      "reason": "Savouring poetic word play presupposes tasting the gap between literal and figurative senses."
+    },
+    {
+      "topicId": "mt_Z1p7fzi8Bd",
+      "prerequisiteId": "mt_9K2dpnYIBw",
+      "strength": "soft",
+      "reason": "The cycle-3 verify-your-deduction strategy deepens the cycle-2 habit of working out unknown words while reading."
+    },
+    {
+      "topicId": "mt_KhbQpgM60a",
+      "prerequisiteId": "mt_869ePerXKt",
+      "strength": "soft",
+      "reason": "Reusing precise vocabulary in a ten-line text presupposes deliberate reuse of learned words."
+    },
+    {
+      "topicId": "mt_xydMjmgbfk",
+      "prerequisiteId": "mt_b0TbKtR4Ku",
+      "strength": "soft",
+      "reason": "Nuancing opinion and voice in personal texts draws on choosing the fitting register."
+    },
+    {
+      "topicId": "mt_AlPk0e7piH",
+      "prerequisiteId": "mt_1mrYWvG3L7",
+      "strength": "soft",
+      "reason": "Shaping a text for its recipient draws on perceiving familier/courant/soutenu."
+    },
+    {
+      "topicId": "mt_JmUWr3vqWd",
+      "prerequisiteId": "mt_b0TbKtR4Ku",
+      "strength": "soft",
+      "reason": "Adapting a whole discourse to the situation includes switching register, learned on words first."
+    },
+    {
+      "topicId": "mt_ZoJUoRwcal",
+      "prerequisiteId": "mt_2CqJoklvkl",
+      "strength": "hard",
+      "reason": "Alphabetical ordering presupposes knowing the letters' names and sequence."
+    },
+    {
+      "topicId": "mt_G1X2DL3mtc",
+      "prerequisiteId": "mt_ENCTwbu1C6",
+      "strength": "hard",
+      "reason": "Reading a dictionary entry presupposes decoding words."
+    },
+    {
+      "topicId": "mt_23ORyRWx9f",
+      "prerequisiteId": "mt_Winq7Tu99m",
+      "strength": "soft",
+      "reason": "Maternelle corpus work (learn, memorise, reuse) is the direct ancestor of vocabulary-in-context learning."
+    },
+    {
+      "topicId": "mt_v5wp28FJCa",
+      "prerequisiteId": "mt_bEh9yUWD2u",
+      "strength": "soft",
+      "reason": "Sorting words by category and meaning in maternelle prepares building sorted word repertoires."
+    },
+    {
+      "topicId": "mt_v1klxDdFx4",
+      "prerequisiteId": "mt_bEh9yUWD2u",
+      "strength": "soft",
+      "reason": "Linking words as contraires and neighbours orally prepares formal synonymy and antonymy."
     }
   ]
 }

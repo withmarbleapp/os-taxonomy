@@ -28,6 +28,8 @@ const deps = load('dependencies.json');
 const standards = load('curriculum-standards.json');
 const clusters = load('clusters.json');
 const manifest = load('manifest.json');
+let crosswalks = null;
+try { crosswalks = load('crosswalks.json'); } catch { /* optional file */ }
 
 // --- declared counts match reality -----------------------------------------
 check(topics.topicCount === topics.topics.length, `topics: topicCount ${topics.topicCount} != ${topics.topics.length}`);
@@ -83,6 +85,22 @@ for (const t of topics.topics) {
 }
 if (danglingRefs > 5) errors.push(`…and ${danglingRefs - 5} more unknown standard references`);
 
+// --- referential integrity: crosswalks --------------------------------------
+if (crosswalks) {
+  check(crosswalks.crosswalkCount === crosswalks.crosswalks.length, `crosswalks: crosswalkCount != length`);
+  const seenXw = new Set();
+  for (const x of crosswalks.crosswalks) {
+    check(topicIds.has(x.topicId), `crosswalk references unknown topicId ${x.topicId}`);
+    check(topicIds.has(x.counterpartId), `crosswalk references unknown counterpartId ${x.counterpartId}`);
+    check(x.topicId !== x.counterpartId, `self-crosswalk on ${x.topicId}`);
+    check(x.relation === 'same-skill-different-language', `bad crosswalk relation ${x.relation}`);
+    check(x.transfer === 'high' || x.transfer === 'partial', `bad crosswalk transfer ${x.transfer}`);
+    const k = `${x.topicId}|${x.counterpartId}`;
+    if (seenXw.has(k)) errors.push(`duplicate crosswalk ${k}`);
+    seenXw.add(k);
+  }
+}
+
 // --- manifest checksums -----------------------------------------------------
 for (const [name, meta] of Object.entries(manifest.files ?? {})) {
   const actual = createHash('sha256').update(bytesOf(name)).digest('hex');
@@ -97,6 +115,7 @@ if (errors.length) {
 }
 console.log(
   `✓ valid — ${topics.topics.length} topics, ${deps.dependencies.length} dependencies, ` +
-    `${standardKeys.size} standards, ${clusters.clusters.length} clusters. ` +
-    `Referential integrity + checksums OK.`,
+    `${standardKeys.size} standards, ${clusters.clusters.length} clusters` +
+    (crosswalks ? `, ${crosswalks.crosswalks.length} crosswalks` : '') +
+    `. Referential integrity + checksums OK.`,
 );
