@@ -1,0 +1,7 @@
+steps:
+  validate:
+    image: node:22-alpine
+    commands:
+      - npm test
+      - npm run validate
+      - find explorer/src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -exec node --check {} \;

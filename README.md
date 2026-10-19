@@ -100,6 +100,25 @@ Validate structure + referential integrity:
 node scripts/validate.mjs
 ```
 
+## Learning Map explorer
+
+This repository includes a dependency-free browser explorer that can track learning progress privately on one device. It supports multiple child profiles, `learning` and `known` states, evidence-based assessments, subject/age/search filters, and dimming or hiding concepts a child already knows.
+
+Three complementary views share the same local profile:
+
+- **Play** turns the taxonomy's own Quick Assessments into a child-friendly learning path. Choose an age (starting at five) and subject, open a ready challenge, then let the child answer aloud or type a response. The controls and guidance are available in English and Romanian; source assignment prompts are currently English and can be read aloud when the browser supports speech. Answers stay in memory only and are not saved. A grown-up checks the concept's existing evidence before marking it known; hard prerequisites then open the next linked challenges. Unfinished attempts can be saved as learning. Guest play works without a profile, while a profile is needed to save progress and unlock the path.
+
+- **Graph** visualizes all prerequisite relationships and opens the evidence checklist for any concept.
+- **Logbook** summarizes known, learning, assessed, and not-yet-started concepts; suggests next topics whose hard prerequisites are complete; shows subject journeys; and keeps a chronological activity trail.
+
+```bash
+npm run serve
+```
+
+Then open [http://localhost:4173/explorer/](http://localhost:4173/explorer/). A child's name is requested once and substituted automatically into every quick assignment. Profiles, progress, and the most recent 500 logbook activities are versioned and stored only in the browser's `localStorage`; the explorer makes no network requests after loading the taxonomy JSON. Assignment responses are never written to storage. Use **Manage** beside the profile picker to explicitly edit a name, delete a profile, or reset its progress and activity trail.
+
+The explorer is intentionally a static ES-module application with no build step. Its persistence layer lives in `explorer/src/profile-store.js`, independently of the graph renderer, so a server-backed profile adapter can replace it later without changing the taxonomy data or graph interaction.
+
 ## License
 
 This dataset is **multi-licensed** — read this before you use or redistribute it.

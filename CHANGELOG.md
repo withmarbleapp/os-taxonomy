@@ -4,6 +4,17 @@ All notable changes to the Marble Skill Taxonomy dataset are documented here.
 Dataset releases are versioned independently of the taxonomy `version` field
 (the underlying taxonomy is `v1`).
 
+## Unreleased — Explorer
+
+- Turn Play into a child-friendly path through the taxonomy's existing Quick
+  Assessments. Age- and subject-filtered challenges follow hard prerequisites.
+- Offer English and Romanian prompts with optional browser read-aloud and
+  transient responses that are not persisted.
+- Let a grown-up confirm the existing evidence criteria; known concepts unlock
+  their linked challenges in the learning path.
+- Keep Graph and Logbook available and preserve existing browser profiles.
+- Add a Woodpecker validation pipeline; no GitHub Actions workflow is required.
+
 ## [1.0.0] — 2026-07-08
 
 Initial public release.
