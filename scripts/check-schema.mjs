@@ -1,6 +1,19 @@
 // Dependency-free validation for the keywords used by this dataset's schemas.
 // Unknown keywords fail closed; this is not a general JSON Schema implementation.
 const supported = new Set(['$schema', '$id', 'title', 'description', 'type', 'const', 'enum', 'anyOf', 'properties', 'required', 'additionalProperties', 'propertyNames', 'items', 'minItems', 'maxItems', 'minLength', 'pattern', 'format', 'minimum', 'maximum']);
+// RFC 3339 date-time (JSON Schema `format: date-time`). Date.parse alone accepts
+// loose strings such as "1", "2024" or "March 7 2024".
+const RFC3339 = /^(\d{4})-(\d{2})-(\d{2})[Tt](\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(?:[Zz]|[+-](\d{2}):(\d{2}))$/;
+function isRfc3339DateTime(value) {
+  const m = RFC3339.exec(value);
+  if (!m) return false;
+  const [year, month, day, hour, minute, second] = m.slice(1, 7).map(Number);
+  const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
+  if (month < 1 || month > 12 || day < 1 || day > daysInMonth) return false;
+  if (hour > 23 || minute > 59 || second > 60) return false;
+  if (m[7] !== undefined && (Number(m[7]) > 23 || Number(m[8]) > 59)) return false;
+  return Number.isFinite(Date.parse(value));
+}
 export function checkSchema(value, schema, path = '$', errors = []) {
   for (const key of Object.keys(schema)) if (!supported.has(key)) throw Error(`Unsupported schema keyword: ${key}`);
   const fail = message => errors.push(`${path}: ${message}`);
@@ -14,7 +27,7 @@ export function checkSchema(value, schema, path = '$', errors = []) {
   if (typeof value === 'string') {
     if (schema.minLength !== undefined && [...value].length < schema.minLength) fail('string too short');
     if (schema.pattern && !new RegExp(schema.pattern).test(value)) fail('pattern mismatch');
-    if (schema.format === 'date-time' && !Number.isFinite(Date.parse(value))) fail('invalid date-time');
+    if (schema.format === 'date-time' && !isRfc3339DateTime(value)) fail('invalid date-time');
     if (schema.format === 'uri') { try { new URL(value); } catch { fail('invalid absolute URI'); } }
     if (schema.format && !['date-time', 'uri'].includes(schema.format)) throw Error(`Unsupported format: ${schema.format}`);
   }

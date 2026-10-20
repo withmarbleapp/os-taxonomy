@@ -33,3 +33,8 @@ test('chart research follows the pie/line split and the updated recovery routes'
  assert.equal(grouped.assess.errorPatterns.find(e => /Wrong representation/.test(e.pattern)).reteachPrerequisiteId, 'mt_ChjMU2GDJa');
  assert.equal(grouped.assess.errorPatterns.find(e => /Pie angle/.test(e.pattern)).reteachPrerequisiteId, 'mt_bESTSBB0wK');
 });
+test('date-time format requires RFC 3339 timestamps', () => {
+ const schema = { type: 'string', format: 'date-time' };
+ for (const ok of ['2026-07-01T12:00:00Z', '2026-07-01T12:00:00.123+09:00']) assert.deepEqual(checkSchema(ok, schema), []);
+ for (const bad of ['1', '2024', 'March 7 2024', '2026-02-30T00:00:00Z', '2026-07-01']) assert.ok(checkSchema(bad, schema).length > 0, bad);
+});
