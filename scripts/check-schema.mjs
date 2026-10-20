@@ -8,11 +8,15 @@ function isRfc3339DateTime(value) {
   const m = RFC3339.exec(value);
   if (!m) return false;
   const [year, month, day, hour, minute, second] = m.slice(1, 7).map(Number);
-  const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
-  if (month < 1 || month > 12 || day < 1 || day > daysInMonth) return false;
+  if (month < 1 || month > 12) return false;
+  // Date.UTC maps years 0-99 to 1900-1999, so count leap years directly.
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  const daysInMonth = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+  if (day < 1 || day > daysInMonth) return false;
+  // Every field is range-checked here; Date.parse would also reject a leap second (:60).
   if (hour > 23 || minute > 59 || second > 60) return false;
   if (m[7] !== undefined && (Number(m[7]) > 23 || Number(m[8]) > 59)) return false;
-  return Number.isFinite(Date.parse(value));
+  return true;
 }
 export function checkSchema(value, schema, path = '$', errors = []) {
   for (const key of Object.keys(schema)) if (!supported.has(key)) throw Error(`Unsupported schema keyword: ${key}`);

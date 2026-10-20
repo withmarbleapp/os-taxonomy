@@ -38,3 +38,8 @@ test('date-time format requires RFC 3339 timestamps', () => {
  for (const ok of ['2026-07-01T12:00:00Z', '2026-07-01T12:00:00.123+09:00']) assert.deepEqual(checkSchema(ok, schema), []);
  for (const bad of ['1', '2024', 'March 7 2024', '2026-02-30T00:00:00Z', '2026-07-01']) assert.ok(checkSchema(bad, schema).length > 0, bad);
 });
+test('date-time format follows Gregorian leap years and allows a leap second', () => {
+ const schema = { type: 'string', format: 'date-time' };
+ for (const ok of ['0000-02-29T00:00:00Z', '2000-02-29T00:00:00Z', '2024-02-29T00:00:00Z', '2016-12-31T23:59:60Z']) assert.deepEqual(checkSchema(ok, schema), [], ok);
+ for (const bad of ['1900-02-29T00:00:00Z', '2023-02-29T00:00:00Z', '2016-12-31T23:59:61Z']) assert.ok(checkSchema(bad, schema).length > 0, bad);
+});
