@@ -31,7 +31,7 @@ For encumbered sources we ship only the **standard code** (e.g. `1-ESS1-1`) and 
 - **Source snapshot:** 22 October 2026; nine documents, 77 courses, 3,862 expectations (805 overall and 3,057 specific). Source API responses, hashes and the normalizer are retained with the private import tooling. The staging catalogue preserves official wording and source metadata.
 - **What this export includes:** expectation identifiers, topic–expectation associations and links to the official documents. Verbatim expectation payloads are omitted under this export’s conservative publication policy. This omission is not a claim that all Ontario material is legally prohibited from redistribution, or that Marble grants rights to the official text; consult the applicable upstream terms.
 - **Identifiers:** codes include document, edition, grade and program where needed. Native Languages has unnumbered expectations; its identifiers are generated source-position references, not invented official expectation codes.
-- **Coverage:** catalogue ingestion does not establish taxonomy coverage. The focused authoring pass covers Grade 1 Mathematics; the rest of the Ontario catalogue is available for subsequent mapping.
+- **Coverage:** catalogue ingestion does not establish taxonomy coverage. Focused authoring passes cover Grades 1–4 Mathematics; the rest of the Ontario catalogue is available for subsequent mapping.
 
 | Export source | Official document | Edition | Expectations |
 |---|---|---:|---:|

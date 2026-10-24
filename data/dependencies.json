@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3887,
+  "edgeCount": 3919,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -480,8 +480,14 @@
     {
       "topicId": "mt_18fK9sQdIz",
       "prerequisiteId": "mt_K5jM7vlVhA",
-      "strength": "hard",
-      "reason": "Written multiplication requires fluent table facts"
+      "strength": "soft",
+      "reason": "347 × 6 needs single-digit facts, not the 11 and 12 tables"
+    },
+    {
+      "topicId": "mt_18fK9sQdIz",
+      "prerequisiteId": "mt_WX30dzi4dt",
+      "strength": "soft",
+      "reason": "fluent single-digit facts support formal short multiplication; the retained hard DyGB (2-digit × 1-digit with known facts and partitioning) is the real foundation"
     },
     {
       "topicId": "mt_18qkgxr_-T",
@@ -2495,9 +2501,15 @@
     },
     {
       "topicId": "mt_6oxQPNLHNv",
-      "prerequisiteId": "mt_BFJ-ch_8QU",
+      "prerequisiteId": "mt_AQcVRBddko",
       "strength": "hard",
-      "reason": "Extends comparing/ordering measures to adding/subtracting them"
+      "reason": "comparing measurements in the same unit needs comparing numbers with < / >"
+    },
+    {
+      "topicId": "mt_6oxQPNLHNv",
+      "prerequisiteId": "mt_BFJ-ch_8QU",
+      "strength": "soft",
+      "reason": "comparing two same-unit measurements is measuring (DOe8, kept hard) plus comparing numbers; the separate Y2 comparison claim is a teaching step"
     },
     {
       "topicId": "mt_6oxQPNLHNv",
@@ -7428,8 +7440,8 @@
     {
       "topicId": "mt_EmR5n58jZt",
       "prerequisiteId": "mt_wh3UqnWsa7",
-      "strength": "hard",
-      "reason": "Scaling and correspondence problems extend Y2 problem-solving with mult/div"
+      "strength": "soft",
+      "reason": "scaling/correspondence problems need written/known-fact multiplication and division (DyGB, kept hard); the Y2 problem claim (near-duplicate of PZ90/GRWw) is a teaching step"
     },
     {
       "topicId": "mt_eMtV6tBSJm",
@@ -8072,6 +8084,12 @@
       "prerequisiteId": "mt_BtMbZibZUj",
       "strength": "soft",
       "reason": "Related vowel knowledge supports diphthongs"
+    },
+    {
+      "topicId": "mt_fmm-P17Vka",
+      "prerequisiteId": "mt_qwFJvRRucu",
+      "strength": "soft",
+      "reason": "the statistics vocabulary claim defines and calculates the median"
     },
     {
       "topicId": "mt_fmm-P17Vka",
@@ -10055,15 +10073,39 @@
     },
     {
       "topicId": "mt_i2F1nWxJjv",
-      "prerequisiteId": "mt_QhFEDyIwSO",
+      "prerequisiteId": "mt_AQcVRBddko",
       "strength": "hard",
-      "reason": "Solving inequalities uses the same inverse-operation methods as solving equations"
+      "reason": "representing and checking solution sets needs comparing/ordering numbers with < / > on a number line"
+    },
+    {
+      "topicId": "mt_i2F1nWxJjv",
+      "prerequisiteId": "mt_ehGS_uVSJv",
+      "strength": "hard",
+      "reason": "one-step inequalities are solved with the inverse relationship of addition and subtraction"
+    },
+    {
+      "topicId": "mt_i2F1nWxJjv",
+      "prerequisiteId": "mt_GDG9_SZmsO",
+      "strength": "soft",
+      "reason": "seeing division as an unknown-factor problem supports two-step inequalities (soft: GDG9 has no GB context and is a supporting route)"
+    },
+    {
+      "topicId": "mt_i2F1nWxJjv",
+      "prerequisiteId": "mt_LpSuPgL31x",
+      "strength": "hard",
+      "reason": "undoing a whole-number coefficient (3x < 9, so x < 3) uses division as equal sharing; complete timed fact fluency is not required"
+    },
+    {
+      "topicId": "mt_i2F1nWxJjv",
+      "prerequisiteId": "mt_QhFEDyIwSO",
+      "strength": "soft",
+      "reason": "one-/two-step inequalities need inverse operations, not brackets, unknowns on both sides or rational coefficients"
     },
     {
       "topicId": "mt_i2F1nWxJjv",
       "prerequisiteId": "mt_uDJY0X0hgo",
-      "strength": "hard",
-      "reason": "Representing inequality solutions on a number line requires ordering integers, decimals, and fractions together"
+      "strength": "soft",
+      "reason": "showing solution sets of simple inequalities needs ordering numbers on a number line with < / >, not ordering negatives, fractions and decimals together"
     },
     {
       "topicId": "mt_i2-QaXbyzB",
@@ -11262,8 +11304,8 @@
     {
       "topicId": "mt_JH_6RpNWjr",
       "prerequisiteId": "mt_Ac7oMWhyPw",
-      "strength": "hard",
-      "reason": "Adding/subtracting decimals requires reading and comparing decimals to thousandths"
+      "strength": "soft",
+      "reason": "adding and subtracting decimals to hundredths does not need reading/comparing thousandths"
     },
     {
       "topicId": "mt_JH_6RpNWjr",
@@ -11273,9 +11315,21 @@
     },
     {
       "topicId": "mt_JH_6RpNWjr",
-      "prerequisiteId": "mt_Yw1_4Nfsql",
+      "prerequisiteId": "mt_mpS-JK_p_m",
       "strength": "hard",
-      "reason": "Decimal addition/subtraction builds on fluent whole-number columnar algorithm"
+      "reason": "columnar addition/subtraction with exchange (up to four digits) is the real foundation of the decimal written method"
+    },
+    {
+      "topicId": "mt_JH_6RpNWjr",
+      "prerequisiteId": "mt_TqDq6jyOmL",
+      "strength": "hard",
+      "reason": "decimal notation for tenths and hundredths is the real foundation for lining up and regrouping hundredths"
+    },
+    {
+      "topicId": "mt_JH_6RpNWjr",
+      "prerequisiteId": "mt_Yw1_4Nfsql",
+      "strength": "soft",
+      "reason": "lining up 3.45 + 2.78 needs the columnar method, not fluency with more than four digits"
     },
     {
       "topicId": "mt_jHgRQ4hR0g",
@@ -11456,6 +11510,30 @@
       "prerequisiteId": "mt_Wyd-l-6H7G",
       "strength": "hard",
       "reason": "KS3 species distribution and climate change extends KS2 understanding that environmental change can threaten living things"
+    },
+    {
+      "topicId": "mt_JTuhd-cPiV",
+      "prerequisiteId": "mt_5UtPmgdoQ9",
+      "strength": "soft",
+      "reason": "testing and debugging supports checking the predicted repeat count"
+    },
+    {
+      "topicId": "mt_JTuhd-cPiV",
+      "prerequisiteId": "mt_6XbAmdmjDb",
+      "strength": "hard",
+      "reason": "a nested loop is a loop whose body contains a loop: writing, predicting and altering it needs the single-loop procedure"
+    },
+    {
+      "topicId": "mt_JTuhd-cPiV",
+      "prerequisiteId": "mt_nfGAtwqSvP",
+      "strength": "soft",
+      "reason": "a decision placed inside a loop is an allowed alternative nested structure (glossary example), not required"
+    },
+    {
+      "topicId": "mt_JTuhd-cPiV",
+      "prerequisiteId": "mt_zQfWqImxva",
+      "strength": "soft",
+      "reason": "following repetition with steps inside it in a flowchart supports reasoning about nested structure"
     },
     {
       "topicId": "mt_Juxx4n-8mu",
@@ -11807,6 +11885,12 @@
     },
     {
       "topicId": "mt_KCS9GbZgU_",
+      "prerequisiteId": "mt_qwFJvRRucu",
+      "strength": "soft",
+      "reason": "quartiles are medians of halves; the focused median supports them"
+    },
+    {
+      "topicId": "mt_KCS9GbZgU_",
       "prerequisiteId": "mt_XSXnTQoQ4l",
       "strength": "hard",
       "reason": "Quartiles are medians of each half and the topic compares IQR with range and outliers, all of which are taught in this topic"
@@ -11856,8 +11940,8 @@
     {
       "topicId": "mt_kDMKJ5Ztt6",
       "prerequisiteId": "mt_doX1BhmFgk",
-      "strength": "hard",
-      "reason": "Must understand hundredths to identify digit values when dividing by 10/100"
+      "strength": "soft",
+      "reason": "dividing by 10/100 and naming tenths/hundredths needs hundredths notation (TqDq, kept hard) and place value, not the separate hundredths-counting procedure"
     },
     {
       "topicId": "mt_kDMKJ5Ztt6",
@@ -13460,6 +13544,12 @@
       "prerequisiteId": "mt_QHT16CrFO-",
       "strength": "hard",
       "reason": "Comparing data sets builds on representing and describing categorical data"
+    },
+    {
+      "topicId": "mt_mn765HbXi1",
+      "prerequisiteId": "mt_RX7PZgjX9q",
+      "strength": "soft",
+      "reason": "the AU Year 6 digital comparison bundle uses side-by-side column graphs (extracted foundation; kept whole)"
     },
     {
       "topicId": "mt_mn765HbXi1",
@@ -15683,6 +15773,12 @@
     },
     {
       "topicId": "mt_pjfmCMMPjO",
+      "prerequisiteId": "mt_DyGBW3ZHh3",
+      "strength": "hard",
+      "reason": "mental multiplication with known and derived facts builds on calculating multiplication/division statements with known tables, mentally and in writing"
+    },
+    {
+      "topicId": "mt_pjfmCMMPjO",
       "prerequisiteId": "mt_jY7uf0Cb7o",
       "strength": "soft",
       "reason": "Place-value knowledge supports mental strategies like 40 × 6"
@@ -15690,8 +15786,14 @@
     {
       "topicId": "mt_pjfmCMMPjO",
       "prerequisiteId": "mt_K5jM7vlVhA",
-      "strength": "hard",
-      "reason": "Mental multiplication requires known table facts"
+      "strength": "soft",
+      "reason": "40 × 6, ×0/×1 and three-factor products use known/derived single-digit facts and place value, not all 12 × 12 facts"
+    },
+    {
+      "topicId": "mt_pjfmCMMPjO",
+      "prerequisiteId": "mt_WX30dzi4dt",
+      "strength": "soft",
+      "reason": "fluent facts support mental multiplication but are not required (facts can be derived)"
     },
     {
       "topicId": "mt_p_jxNLdus4",
@@ -16720,6 +16822,30 @@
       "reason": "'Apostrophes for shared ownership' builds on 'Apostrophes for possession (age 7+)'"
     },
     {
+      "topicId": "mt_qwFJvRRucu",
+      "prerequisiteId": "mt_AQcVRBddko",
+      "strength": "hard",
+      "reason": "the median is found from the values in order: comparing and ordering numbers"
+    },
+    {
+      "topicId": "mt_qwFJvRRucu",
+      "prerequisiteId": "mt_cFltwUQi-d",
+      "strength": "soft",
+      "reason": "finding half of a quantity supports finding the value halfway between two middle values"
+    },
+    {
+      "topicId": "mt_qwFJvRRucu",
+      "prerequisiteId": "mt_F_zEAJ8VIo",
+      "strength": "soft",
+      "reason": "locating \"about halfway\" on a number line supports the even-count case"
+    },
+    {
+      "topicId": "mt_qwFJvRRucu",
+      "prerequisiteId": "mt_ryyJWULiP5",
+      "strength": "soft",
+      "reason": "contrasting with the mode supports explaining what the median shows"
+    },
+    {
       "topicId": "mt_QwWo6an9N1",
       "prerequisiteId": "mt_edaoZRkK6M",
       "strength": "hard",
@@ -17524,6 +17650,24 @@
       "reason": "Absolute value requires understanding negative numbers on a number line"
     },
     {
+      "topicId": "mt_RX7PZgjX9q",
+      "prerequisiteId": "mt_gTI7MuS-y8",
+      "strength": "soft",
+      "reason": "comparing two groups category by category supports reading grouped bars"
+    },
+    {
+      "topicId": "mt_RX7PZgjX9q",
+      "prerequisiteId": "mt_QpJydot2Kh",
+      "strength": "soft",
+      "reason": "choosing a display for a purpose supports deciding when to group bars"
+    },
+    {
+      "topicId": "mt_RX7PZgjX9q",
+      "prerequisiteId": "mt_r8XnXwRA6g",
+      "strength": "hard",
+      "reason": "a multiple-bar graph is built from scaled bars: drawing and reading a scaled bar graph"
+    },
+    {
       "topicId": "mt_rxInpOQ74w",
       "prerequisiteId": "mt_9QzSnn8m80",
       "strength": "hard",
@@ -18210,8 +18354,8 @@
     {
       "topicId": "mt_SXbZ3bC9z7",
       "prerequisiteId": "mt_ebPelt-qAl",
-      "strength": "hard",
-      "reason": "Must generate equivalent fractions before using common denominators to compare"
+      "strength": "soft",
+      "reason": "SXbZ allows \"common denominators/numerators OR a benchmark\"; generating equivalents serves one method only. Same-numerator/denominator comparison (HnKb) stays hard"
     },
     {
       "topicId": "mt_SXbZ3bC9z7",
@@ -18422,6 +18566,36 @@
       "prerequisiteId": "mt_nTL-owFJTF",
       "strength": "hard",
       "reason": "KS3 volume of prisms extends KS2 volume of cuboids (V = l × w × h)"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "prerequisiteId": "mt_1VSfm9yiLn",
+      "strength": "soft",
+      "reason": "asking and answering questions about data supports reading the plot"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "prerequisiteId": "mt_aPBzD28_mT",
+      "strength": "hard",
+      "reason": "each value is split into stem and leaf by the place value of its digits (hundreds, tens, ones)"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "prerequisiteId": "mt_AQcVRBddko",
+      "strength": "hard",
+      "reason": "stems and leaves must be put in order: comparing and ordering numbers by place value"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "prerequisiteId": "mt_c29FaCTNsx",
+      "strength": "soft",
+      "reason": "experience with simple displays and keys supports making a plot"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "prerequisiteId": "mt_ebQURBOsM5",
+      "strength": "soft",
+      "reason": "collecting the data is helpful context, but a plot can be made from a data set that is already provided"
     },
     {
       "topicId": "mt_tAtMET4EIU",
@@ -18809,15 +18983,27 @@
     },
     {
       "topicId": "mt_TqDq6jyOmL",
-      "prerequisiteId": "mt_doX1BhmFgk",
+      "prerequisiteId": "mt_aPBzD28_mT",
       "strength": "hard",
-      "reason": "Must understand hundredths before writing decimal equivalents"
+      "reason": "decimal notation extends whole-number place value (each digit's value depends on its position)"
+    },
+    {
+      "topicId": "mt_TqDq6jyOmL",
+      "prerequisiteId": "mt_doX1BhmFgk",
+      "strength": "soft",
+      "reason": "counting up/down in hundredths is a fluency sequence, not required to write 45/100 = 0.45: hundredths as a quantity come from the generic a/b meaning (ndGq, hard) and digit value by position (aPBz, hard)"
+    },
+    {
+      "topicId": "mt_TqDq6jyOmL",
+      "prerequisiteId": "mt_ndGqFPWyen",
+      "strength": "hard",
+      "reason": "generic fraction meaning (a/b as a parts of size 1/b, no denominator limit) gives tenths and hundredths as quantities to write in decimal notation"
     },
     {
       "topicId": "mt_TqDq6jyOmL",
       "prerequisiteId": "mt_W17Kbwm0-u",
-      "strength": "hard",
-      "reason": "Writing decimal equivalents of tenths and hundredths requires decimal point and place-value vocabulary"
+      "strength": "soft",
+      "reason": "W17K is an integrated notation bundle (percentages, thousandths, 1/2 = 0.5 = 50%); writing decimal equivalents of tenths/hundredths does not need prior percent mastery"
     },
     {
       "topicId": "mt_tqgZH11cP5",
@@ -21612,8 +21798,8 @@
     {
       "topicId": "mt_Xp-rj46S2w",
       "prerequisiteId": "mt_hyvHv2BCwb",
-      "strength": "hard",
-      "reason": "Understanding equal shares of different shapes requires concept of more shares = smaller"
+      "strength": "soft",
+      "reason": "Xp-r partitions into 2/3/4 equal shares, names halves/thirds/fourths and checks that different-looking shares are equal; none of its description, evidence or question compares share size across different numbers of shares. \"More shares make smaller shares\" (hyvH) is a helpful relationship/teaching sequence, not a prerequisite; xACS (partition into halves and quarters) stays hard"
     },
     {
       "topicId": "mt_Xp-rj46S2w",
@@ -21698,6 +21884,12 @@
       "prerequisiteId": "mt_fmm-P17Vka",
       "strength": "hard",
       "reason": "Describing distributions using mean, median, mode, and range requires all these statistical terms"
+    },
+    {
+      "topicId": "mt_XSXnTQoQ4l",
+      "prerequisiteId": "mt_qwFJvRRucu",
+      "strength": "soft",
+      "reason": "the averages-and-range bundle uses the focused median procedure (extracted foundation, soft as in G2 extractions)"
     },
     {
       "topicId": "mt_XSXnTQoQ4l",

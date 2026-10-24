@@ -2,7 +2,7 @@
 
 An open, structured taxonomy of **what children learn** across the primary/elementary years — decomposed into fine-grained "micro-topics", wired into a prerequisite graph, and aligned to national curriculum standards. Produced by [Marble](https://withmarble.com).
 
-> **Version:** `v1` · **Topics:** 1,838 · **Prerequisite edges:** 3,887 · **Subjects:** 9
+> **Version:** `v1` · **Topics:** 1,842 · **Prerequisite edges:** 3,919 · **Subjects:** 9
 
 ## See it
 
@@ -15,10 +15,10 @@ Every dot is a micro-topic, colored by subject; height is age; each thread is a 
 
 Most curriculum data is either a flat list of standards or locked inside a product. This dataset is a **connected graph of learning**:
 
-- **1,838 micro-topics** — a single, teachable idea (e.g. *"Building sentences"*, *"Apparent brightness of stars"*), each with a plain-language description, mastery **evidence** criteria, a type (conceptual / procedural / representational / language / meta), a subject + domain, and an approximate age range.
-- **3,887 prerequisite dependencies** — a directed acyclic graph: *"topic X depends on prerequisite Y"*, each edge tagged `hard`/`soft` and carrying a one-line **reason**.
+- **1,842 micro-topics** — a single, teachable idea (e.g. *"Building sentences"*, *"Apparent brightness of stars"*), each with a plain-language description, mastery **evidence** criteria, a type (conceptual / procedural / representational / language / meta), a subject + domain, and an approximate age range.
+- **3,919 prerequisite dependencies** — a directed acyclic graph: *"topic X depends on prerequisite Y"*, each edge tagged `hard`/`soft` and carrying a one-line **reason**.
 - **Curriculum alignment** — each micro-topic links to the standards it was distilled from (NGSS, Common Core, the UK National Curriculum, and more).
-- **Teaching research** — 1,049 records. Coverage is partial; 789 topics have no research in this release.
+- **Teaching research** — 1,049 records. Coverage is partial; 793 topics have no research in this release.
 - **Domain clusters** — 176 parent-friendly one-paragraph summaries per (subject, domain, age band).
 
 ### Subjects
@@ -49,7 +49,7 @@ All data lives in [`data/`](data/) as UTF-8 JSON. See [`schema/`](schema/) for J
 | [`data/archived-teaching-research.json`](data/archived-teaching-research.json) | Historical guidance for merged or refocused topics, with original records and current topic associations. |
 | [`data/manifest.json`](data/manifest.json) | Counts, per-subject breakdown, per-file checksums. |
 
-The catalogue contains **17 sources / 7,743 expectations**. It includes 620 Australian Curriculum v9 content descriptions and 3,862 Ontario expectations from nine elementary documents. Ontario is exported as codes and official source links only; ingestion of source expectations is separate from authoring topic coverage. Ontario Grades 1, 2 and 3 Mathematics have received focused taxonomy authoring passes. The [Grade 2 report](reports/ontario-grade2-mathematics-2026-10-23.md) distinguishes reused claims, extracted elementary claims and the concurrency gap; mappings do not certify learner mastery of every linked topic. The [Grade 3 report](reports/ontario-grade3-mathematics-2026-10-23.md) records reuse of 114 existing topics, the congruence extension and prerequisite repairs; no topics were added.
+The catalogue contains **17 sources / 7,743 expectations**. It includes 620 Australian Curriculum v9 content descriptions and 3,862 Ontario expectations from nine elementary documents. Ontario is exported as codes and official source links only; ingestion of source expectations is separate from authoring topic coverage. Ontario Grades 1–4 Mathematics have received focused taxonomy authoring passes. The [Grade 2 report](reports/ontario-grade2-mathematics-2026-10-23.md) distinguishes reused claims, extracted elementary claims and the concurrency gap; mappings do not certify learner mastery of every linked topic. The [Grade 3 report](reports/ontario-grade3-mathematics-2026-10-23.md) records reuse of 114 existing topics, the congruence extension and prerequisite repairs; no topics were added. The [Grade 4 report](reports/ontario-grade4-mathematics-2026-10-24.md) records reuse of 126 existing topics, two missing skills, two focused extractions and prerequisite repairs.
 
 The Australian cleanup reviewed all 314 additions and 14 later edited IDs, consolidated repeated skills and redistributed bundled requirements. All 593 selected expectation codes remain linked. Those links do not certify whole-standard coverage: 572 previous Full claims have not been independently recertified. The 27 PE/movement descriptions remain excluded. Read the [cleanup report](reports/acara-v9-cleanup-2026-10-23.md) and [current area-by-area mapping counts](reports/acara-v9-scope-coverage.md).
 
@@ -115,7 +115,7 @@ subject trees.
 
 [`data/teaching-research.json`](data/teaching-research.json) adds **how a topic
 might be taught** to the graph of what children learn. It contains **1,049 active topic records**. `coverage.missingTopicIds` and per-subject counts
-make the **789 topics without research** explicit; absence is not a judgement
+make the **793 topics without research** explicit; absence is not a judgement
 about whether a topic can be taught.
 
 [`archived-teaching-research.json`](data/archived-teaching-research.json) preserves two historical records excluded from active coverage after a topic merge and a change in learning scope. Each entry includes the original topic and research record, its archive reason, and related current topic IDs. The archive also records the assessment prerequisite reference redirected after the merge.

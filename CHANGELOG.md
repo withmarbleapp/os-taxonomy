@@ -6,6 +6,8 @@ Dataset releases are versioned independently of the taxonomy `version` field
 
 ## [Unreleased]
 
+- Map Ontario Grade 4 Mathematics after auditing 48 specific and 12 overall expectations: 186 pairs on 126 existing topics and four new claims (two gaps, two focused extractions). Repair unnecessary prerequisites and add eight source-backed foundation components. Preserve old topic bodies, all old pairs, learner records and research. Refresh the verified staging export (1,842 topics / 3,919 edges); publish the [code-by-code report](reports/ontario-grade4-mathematics-2026-10-24.md).
+
 - Map Ontario Grade 3 Mathematics onto 114 existing topics with 155 topic-code pairs after auditing 46 specific and 12 overall expectations. Add no topics; extend the existing congruence concept to 3D matching, repair unnecessary prerequisite gates and add two source-backed foundation alignments. Preserve all old pairs, learner records and research. Refresh the verified staging export (1,838 topics / 3,887 edges); publish the [code-by-code report](reports/ontario-grade3-mathematics-2026-10-23.md).
 
 - Map Ontario Grade 2 Mathematics after a reuse-first audit of 39 specific and 12 overall expectations. Add four focused elementary claims extracted from broader topics and one concurrent-code skill; clarify three existing evidence items and repair unnecessary prerequisite gates. Preserve all existing curriculum pairs, learner records and research. Refresh the verified staging export (1,838 topics / 3,878 edges); publish the [code-by-code report](reports/ontario-grade2-mathematics-2026-10-23.md).

@@ -1,0 +1,879 @@
+{
+  "scope": "Ontario Mathematics 2020 Grade 4; 48 specific and 12 overall expectations. Semantic authoring judgments, not learner certification. Public mapping includes codes and official source links; full official text and detailed clauses remain in staging/private evidence.",
+  "newTopicCount": 4,
+  "newTopics": [
+    {
+      "topicId": "mt_qwFJvRRucu",
+      "name": "Finding the median",
+      "reason": "focused claim extracted from broader existing knowledge"
+    },
+    {
+      "topicId": "mt_RX7PZgjX9q",
+      "name": "Multiple-bar graphs",
+      "reason": "focused claim extracted from broader existing knowledge"
+    },
+    {
+      "topicId": "mt_JTuhd-cPiV",
+      "name": "Nested loops in code",
+      "reason": "missing representation/procedure"
+    },
+    {
+      "topicId": "mt_talf-sLn9a",
+      "name": "Stem-and-leaf plots",
+      "reason": "missing representation/procedure"
+    }
+  ],
+  "counts": {
+    "grade4TopicCodePairs": 186,
+    "distinctTopics": 130,
+    "directlyLinkedCodes": 50,
+    "topics": 1842,
+    "dependencies": 3919
+  },
+  "rows": [
+    {
+      "externalId": "ON-MATH-2020-G4-A1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_20WfHhnL39",
+        "mt_35-DhMh_Yr",
+        "mt_8dstvf-KKb",
+        "mt_EBYGhd8X3x",
+        "mt_IM1G_7QzTa",
+        "mt_Iwg2diBSyW",
+        "mt_LhkP_KKIRS",
+        "mt_QxsoqVUt6u",
+        "mt_S4G6GLKr1-",
+        "mt_TMoHjMhRS2",
+        "mt_UGf6jICEhs",
+        "mt_WkKkb7W9Qd",
+        "mt_YbX3LD0Eca",
+        "mt_f67qGDhyfi",
+        "mt_j8Pv3s7TZR",
+        "mt_kJ5wYzO8qC",
+        "mt_pAuo9Op89t"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-B1.1",
+        "ON-MATH-2020-G4-B1.2",
+        "ON-MATH-2020-G4-B1.3",
+        "ON-MATH-2020-G4-B1.4",
+        "ON-MATH-2020-G4-B1.5",
+        "ON-MATH-2020-G4-B1.6",
+        "ON-MATH-2020-G4-B1.7",
+        "ON-MATH-2020-G4-B1.8",
+        "ON-MATH-2020-G4-B1.9"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_jY7uf0Cb7o",
+        "mt_lC_Q5mSL_I",
+        "mt_x8TshvbbQT"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_MHaiUd2FLA"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_NLSfvB9vUl"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Kr3IyA6m-O",
+        "mt_ndGqFPWyen"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.5",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_HnKbuCliNS",
+        "mt_IfEgu0X449",
+        "mt_LpSuPgL31x",
+        "mt_SXbZ3bC9z7",
+        "mt_Xp-rj46S2w",
+        "mt_ndGqFPWyen"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.6",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_09sySPqM9Z",
+        "mt_NoB20kVa4w",
+        "mt_YzM5goBctT"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.7",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_IegHBHERVa",
+        "mt_TqDq6jyOmL",
+        "mt_W17Kbwm0-u"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.8",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Fl7b8q9pI1"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B1.9",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_FbDKeLfBCo",
+        "mt_TqDq6jyOmL"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-B2.1",
+        "ON-MATH-2020-G4-B2.2",
+        "ON-MATH-2020-G4-B2.3",
+        "ON-MATH-2020-G4-B2.4",
+        "ON-MATH-2020-G4-B2.5",
+        "ON-MATH-2020-G4-B2.6",
+        "ON-MATH-2020-G4-B2.7",
+        "ON-MATH-2020-G4-B2.8"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_GDG9_SZmsO",
+        "mt_Lb2ZnMdkYR",
+        "mt_QCgbiVrwnp",
+        "mt_QaYfeVL-0C",
+        "mt_anAe11HAEH",
+        "mt_ehGS_uVSJv"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_HhuSDxwDNM",
+        "mt_WX30dzi4dt",
+        "mt_gtTl3R5buH",
+        "mt_wQ89AEXhz3"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_8A3pZNOp7Z",
+        "mt_JH_6RpNWjr",
+        "mt_QqG6IdmTSE",
+        "mt_kDMKJ5Ztt6",
+        "mt_kJ5wYzO8qC",
+        "mt_pjfmCMMPjO"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_JH_6RpNWjr",
+        "mt_mpS-JK_p_m",
+        "mt_yTWxkzzoOZ"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.5",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_18fK9sQdIz",
+        "mt_8A3pZNOp7Z",
+        "mt_AQo4u7O4sM",
+        "mt_DyGBW3ZHh3",
+        "mt_gtTl3R5buH"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.6",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_GRWwTDZ3wD",
+        "mt_LpSuPgL31x",
+        "mt_MCu_SNg_OW",
+        "mt_ndGqFPWyen"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.7",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_09sySPqM9Z",
+        "mt_PZ909yPrEC",
+        "mt_TgHxujL81r"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-B2.8",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-B2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_EmR5n58jZt",
+        "mt_U4cIBXVug4",
+        "mt_gtTl3R5buH"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-C1.1",
+        "ON-MATH-2020-G4-C1.2",
+        "ON-MATH-2020-G4-C1.3",
+        "ON-MATH-2020-G4-C1.4"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C1.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_W3VOAuFwVw",
+        "mt_ZjIFGc6zPW"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C1.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Cqm8iy48UI",
+        "mt_W3VOAuFwVw",
+        "mt_ZjIFGc6zPW",
+        "mt_c29FaCTNsx",
+        "mt_i5_HnoFOYw"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C1.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_W3VOAuFwVw",
+        "mt_ZjIFGc6zPW",
+        "mt_fZTn0W_iZR"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C1.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_TqDq6jyOmL",
+        "mt_W3VOAuFwVw",
+        "mt_YzM5goBctT",
+        "mt_kDMKJ5Ztt6"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C2",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-C2.1",
+        "ON-MATH-2020-G4-C2.2",
+        "ON-MATH-2020-G4-C2.3"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C2.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_H4BfdHIdhD",
+        "mt_anAe11HAEH"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C2.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_3JgrHY221M",
+        "mt_anAe11HAEH",
+        "mt_oIzycTBeE4",
+        "mt_xZvDCYA5Ae"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C2.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_MHaiUd2FLA",
+        "mt_i2F1nWxJjv"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C3",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-C3.1",
+        "ON-MATH-2020-G4-C3.2"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C3.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C3",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_6XbAmdmjDb",
+        "mt_JTuhd-cPiV",
+        "mt_XXpEz9tyu6",
+        "mt_sPV503BQnI"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C3.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-C3",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_5UtPmgdoQ9",
+        "mt_6XbAmdmjDb",
+        "mt_JTuhd-cPiV",
+        "mt_XXpEz9tyu6",
+        "mt_sPV503BQnI"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-C4",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_IM1G_7QzTa",
+        "mt_WkKkb7W9Qd",
+        "mt_f67qGDhyfi",
+        "mt_fLOkq-HfPB",
+        "mt_iQYPw8bMfN"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-D1.1",
+        "ON-MATH-2020-G4-D1.2",
+        "ON-MATH-2020-G4-D1.3",
+        "ON-MATH-2020-G4-D1.4",
+        "ON-MATH-2020-G4-D1.5",
+        "ON-MATH-2020-G4-D1.6"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_ChjMU2GDJa",
+        "mt_ebQURBOsM5",
+        "mt_x8TshvbbQT"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_ebQURBOsM5",
+        "mt_gTI7MuS-y8",
+        "mt_talf-sLn9a"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_ChjMU2GDJa",
+        "mt_QpJydot2Kh",
+        "mt_RX7PZgjX9q",
+        "mt_c29FaCTNsx",
+        "mt_r8XnXwRA6g"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_QpJydot2Kh",
+        "mt_RX7PZgjX9q",
+        "mt_ebQURBOsM5",
+        "mt_kxeuXm6EyC",
+        "mt_talf-sLn9a"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.5",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Cg8VPguS_V",
+        "mt_qwFJvRRucu",
+        "mt_ryyJWULiP5"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D1.6",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_1VSfm9yiLn",
+        "mt_RX7PZgjX9q",
+        "mt_gTI7MuS-y8",
+        "mt_kxeuXm6EyC",
+        "mt_r8XnXwRA6g",
+        "mt_talf-sLn9a"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D2",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-D2.1",
+        "ON-MATH-2020-G4-D2.2"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D2.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_J4j7d3iAfg",
+        "mt_UcGn2hjhYU",
+        "mt_iFFKZd-Vgv",
+        "mt_xSgAgg9Ej_"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-D2.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-D2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Cg8VPguS_V",
+        "mt_gTI7MuS-y8",
+        "mt_qwFJvRRucu",
+        "mt_ryyJWULiP5"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-E1.1",
+        "ON-MATH-2020-G4-E1.2",
+        "ON-MATH-2020-G4-E1.3"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E1.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_MFfYcnv6Tv",
+        "mt_hRZyKvz1KN",
+        "mt_u23IGDxOpk"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E1.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Uq5vYqboCR",
+        "mt_i5_HnoFOYw",
+        "mt_jBQS-CicNn"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E1.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_Uq5vYqboCR",
+        "mt_efOeaGFyGM"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-E2.1",
+        "ON-MATH-2020-G4-E2.2",
+        "ON-MATH-2020-G4-E2.3",
+        "ON-MATH-2020-G4-E2.4",
+        "ON-MATH-2020-G4-E2.5",
+        "ON-MATH-2020-G4-E2.6"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_-af65bxfdp",
+        "mt_NSC3LT_-ch",
+        "mt_Zks8xyInSG"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_6oxQPNLHNv",
+        "mt_DOe893F6gN",
+        "mt_Zks8xyInSG"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_EXlmTURK_o",
+        "mt_IL86kadLSS",
+        "mt__N55B7u7HD"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_LBT-9jz7kR",
+        "mt_h0CVtqI2xo"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.5",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_GzcJEVkNRn",
+        "mt_Jvvh5P06NV"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-E2.6",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-E2",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_GzcJEVkNRn",
+        "mt_eiB3-6pu6a",
+        "mt_xZvDCYA5Ae"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1",
+      "expectationType": "overall",
+      "parentExternalId": null,
+      "coverageJudgment": "Full",
+      "directLink": false,
+      "topicIds": [],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math",
+      "rollupChildCodes": [
+        "ON-MATH-2020-G4-F1.1",
+        "ON-MATH-2020-G4-F1.2",
+        "ON-MATH-2020-G4-F1.3",
+        "ON-MATH-2020-G4-F1.4",
+        "ON-MATH-2020-G4-F1.5"
+      ]
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1.1",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-F1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_K8_RYIvrTV"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1.2",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-F1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_AKAtWEwpcj",
+        "mt_QaYfeVL-0C",
+        "mt_aWOK1npO5s"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1.3",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-F1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_9gpUHWVKMR",
+        "mt_Qzbh-_v0Gq",
+        "mt__ab4knIaSL",
+        "mt_phpn6KhCAv",
+        "mt_tF6XuKIq8_",
+        "mt_uP9faJlnRq",
+        "mt_uSUqTjOl8m",
+        "mt_zrCyqhngYm"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1.4",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-F1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_My0OL6fhGL",
+        "mt_Qzbh-_v0Gq",
+        "mt__ab4knIaSL",
+        "mt_r1hw-KenpK",
+        "mt_zrCyqhngYm"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    },
+    {
+      "externalId": "ON-MATH-2020-G4-F1.5",
+      "expectationType": "specific",
+      "parentExternalId": "ON-MATH-2020-G4-F1",
+      "coverageJudgment": "Full",
+      "directLink": true,
+      "topicIds": [
+        "mt_My0OL6fhGL",
+        "mt_Qe2PsFmSAH",
+        "mt__ab4knIaSL"
+      ],
+      "officialSourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g4-math"
+    }
+  ]
+}
