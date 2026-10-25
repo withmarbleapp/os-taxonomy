@@ -1,23 +1,63 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://withmarble.com/taxonomy/schema/dependencies.schema.json",
-  "title": "Marble Skill Taxonomy — dependencies",
+  "title": "Marble Skill Taxonomy \u2014 dependencies",
   "type": "object",
-  "required": ["version", "edgeCount", "dependencies"],
+  "required": [
+    "version",
+    "edgeCount",
+    "dependencies"
+  ],
   "properties": {
-    "version": { "type": "string" },
-    "note": { "type": "string" },
-    "edgeCount": { "type": "integer", "minimum": 0 },
+    "version": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "edgeCount": {
+      "type": "integer",
+      "minimum": 0
+    },
     "dependencies": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["topicId", "prerequisiteId", "strength"],
+        "required": [
+          "topicId",
+          "prerequisiteId",
+          "strength",
+          "reason"
+        ],
         "properties": {
-          "topicId": { "type": "string", "pattern": "^mt_" },
-          "prerequisiteId": { "type": "string", "pattern": "^mt_" },
-          "strength": { "type": "string", "enum": ["hard", "soft"] },
-          "reason": { "type": ["string", "null"] }
+          "topicId": {
+            "type": "string",
+            "pattern": "^mt_"
+          },
+          "prerequisiteId": {
+            "type": "string",
+            "pattern": "^mt_"
+          },
+          "strength": {
+            "type": "string",
+            "enum": [
+              "hard",
+              "soft"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 10
+          },
+          "reviewStatus": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "reviewed",
+              "approved"
+            ],
+            "default": "draft"
+          }
         },
         "additionalProperties": false
       }
