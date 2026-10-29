@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, rm, mkdir, writeFile } from 'node:fs/promises';
+import { mkdtemp, rm, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fixtureSpeech } from './fixture-speech.mjs';
@@ -17,7 +17,16 @@ await writeFile(
     speechDirectory: 'fixture',
   }),
 );
-await install(await pack('packages/authoring-tools/template'), join(dir, 'library'));
+const imported = await install(
+  await pack('packages/authoring-tools/template'),
+  join(dir, 'library'),
+);
+const importedAdapter = join(imported.directory, 'adapter.mjs');
+await writeFile(
+  importedAdapter,
+  `window.addEventListener('message', e => { if (e.ports[0]) window.forgedPort = e.ports[0]; });\n` +
+    (await readFile(importedAdapter, 'utf8')),
+);
 let transcriptions = 0;
 const seen = [],
   say = (text) => ({ tool: 'say', arguments: JSON.stringify({ text }) });
@@ -74,12 +83,21 @@ const launch = async (title) => {
   );
   await b.until("document.querySelector('#status').textContent==='Ready'", 20000);
   if (title === 'Volume in layers') {
-    assert.equal(await b.evaluate("document.querySelector('#start-title').textContent"), 'How much space does a block fill?');
-    assert.equal(await b.evaluate("getComputedStyle(document.querySelector('#start-cover')).backgroundColor"), 'rgba(0, 0, 0, 0)');
+    assert.equal(
+      await b.evaluate("document.querySelector('#start-title').textContent"),
+      'How much space does a block fill?',
+    );
+    assert.equal(
+      await b.evaluate("getComputedStyle(document.querySelector('#start-cover')).backgroundColor"),
+      'rgba(0, 0, 0, 0)',
+    );
     await shot('cube-title');
   }
   if (title === 'Croatoan clues') {
-    assert.equal(await b.evaluate("document.querySelector('#start-title').textContent"), 'Where did the Roanoke settlers go?');
+    assert.equal(
+      await b.evaluate("document.querySelector('#start-title').textContent"),
+      'Where did the Roanoke settlers go?',
+    );
     assert.equal(await frameEval("document.querySelector('.cover-art').hidden"), false);
     await shot('roanoke-title');
   }
@@ -90,11 +108,12 @@ const space = (type) =>
   b.send('Input.dispatchKeyEvent', { type, key: ' ', code: 'Space', windowsVirtualKeyCode: 32 });
 const holdAndSend = async () => {
   const before = transcriptions;
+  const messagesBefore = await b.evaluate("document.querySelectorAll('#messages .learner').length");
   await space('keyDown');
   await b.until("document.querySelector('#ptt').getAttribute('aria-pressed')==='true'");
   await wait(180);
   await space('keyUp');
-  await b.until(`document.querySelectorAll('#messages .learner').length>=${before + 1}`);
+  await b.until(`document.querySelectorAll('#messages .learner').length>=${messagesBefore + 1}`);
   assert.equal(transcriptions, before + 1);
 };
 const shot = async (name) => {
@@ -196,7 +215,9 @@ try {
   assert.equal(await frameEval("document.querySelector('.intro-stage').hidden"), false);
   await shot('roanoke');
   await frameEval("document.querySelector('[data-leave-intro]').click()");
-  await b.until("document.querySelector('#instruction').textContent==='Choose a place to investigate.'");
+  await b.until(
+    "document.querySelector('#instruction').textContent==='Choose a place to investigate.'",
+  );
   await frameEval("document.querySelector('[data-place=fort]').click()");
   await wait(700);
   const source = await frameEval(
@@ -226,6 +247,19 @@ try {
   assert.equal(seen.at(-1).snapshot.state.scene, 'fort');
   await b.evaluate("document.querySelector('#home').click()");
   await launch('Equal parts');
+  const beforeForgery = transcriptions;
+  await frameEval("window.forgedPort.postMessage({type:'shortcut',action:'talk_start'})");
+  await wait(200);
+  assert.equal(
+    await b.evaluate("document.querySelector('#ptt').getAttribute('aria-pressed')"),
+    'false',
+  );
+  await frameEval("window.forgedPort.postMessage({type:'shortcut',action:'talk_end'})");
+  await wait(200);
+  assert.equal(transcriptions, beforeForgery);
+  // Player-owned Space remains available for imported lessons.
+  await b.evaluate("document.querySelector('#ptt').focus()");
+  await holdAndSend();
   await frameEval(
     "const e=document.querySelector('input');e.value='4';e.dispatchEvent(new Event('input'));document.querySelector('form').requestSubmit()",
   );

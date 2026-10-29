@@ -64,3 +64,8 @@ helper when portability is needed; do not commit duplicated runtime snapshots.
 The former sibling marble-player directory is a local compatibility symlink,
 not required by the repository. New checkouts use player/ directly. Device data
 and existing speech installations remain outside versioned source.
+
+Only app-bundled scene code is trusted to forward microphone shortcuts. The
+service marks that capability outside lesson metadata, and imported releases
+cannot replace bundled ID/version pairs. Imported frames cannot request recording;
+learners use the player controls. A cross-frame SDK is not proof of user intent.

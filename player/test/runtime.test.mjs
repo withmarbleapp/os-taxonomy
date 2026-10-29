@@ -90,3 +90,53 @@ test('cancellation kills hanging subprocess', async () => {
     /Cancelled/,
   );
 });
+test('cancel aborts authored narration before delayed playback', async () => {
+  const pkg = await loadDirectory('lessons/cube-volume');
+  const model = createCubes({ sessionId: crypto.randomUUID() });
+  let release, signal;
+  const spoken = [];
+  const session = new TeachingSession({
+    port: { ...model, presentation: () => ({}), start() {}, close() {} },
+    pkg,
+    infer: async () => say('unused'),
+    speak: async (text, abortSignal) => {
+      signal = abortSignal;
+      await new Promise((resolve) => {
+        release = resolve;
+      });
+      if (!signal.aborted) spoken.push(text);
+    },
+  });
+  const pending = session.narrate('Old scene');
+  session.cancel();
+  assert.equal(signal.aborted, true);
+  release();
+  await pending;
+  assert.deepEqual(spoken, []);
+  session.close();
+});
+test('cancel prevents a queued observation turn from restarting the tutor', async () => {
+  const pkg = await loadDirectory('lessons/cube-volume');
+  let notify,
+    calls = 0;
+  const session = new TeachingSession({
+    port: {
+      subscribe(fn) {
+        notify = fn;
+        return () => {};
+      },
+      close() {},
+    },
+    pkg,
+    infer: async () => {
+      calls++;
+      return say('Unexpected');
+    },
+  });
+  session.started = true;
+  notify({ events: [{ source: 'learner', name: pkg.teaching.observationEvents[0] }] });
+  session.cancel();
+  await new Promise((resolve) => setTimeout(resolve, 550));
+  assert.equal(calls, 0);
+  session.close();
+});

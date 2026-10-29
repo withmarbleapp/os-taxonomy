@@ -17,7 +17,8 @@ A correct action is not automatically evidence of an independently understood sk
 Use learner observation events for meaningful interaction, not every drag or edit.
 Instruction labels stay short and distinct from spoken narration. Route voice and
 typed dialogue through the player. The SDK preserves scene input fields while
-forwarding Space push-to-talk gestures.
+forwarding Space push-to-talk gestures for app-bundled scenes. Imported lessons
+cannot request recording through the bridge and use the player controls.
 
 Inspect [examples](examples.md) for concrete implementations. Keep research,
 representation limitations and source provenance with the authored lesson.

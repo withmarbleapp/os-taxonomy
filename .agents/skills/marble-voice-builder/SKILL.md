@@ -139,7 +139,9 @@ Keep the walkie-talkie, Space shortcut, cancellation, optional captions and the
 adult conversation menu in the shared player. Scenes fill the viewport, with
 safe areas for the bottom-right walkie and top-right menu; use scene-base.css
 layout variables. Keep typed replies in the player’s keyboard composer; do not duplicate controls. The shared SDK
-handles Space in the scene while preserving lesson text and number inputs.
+handles Space in app-bundled scenes while preserving lesson text and number inputs.
+Imported lessons use player-owned controls for recording; never grant a package
+microphone control just because it implements the SDK.
 Brief scene instructions and spoken dialogue have separate slots. Avoid technical
 agent/runtime language in the child's flow. Use the child's language and locale
 throughout; do not present English speech support as multilingual validation.

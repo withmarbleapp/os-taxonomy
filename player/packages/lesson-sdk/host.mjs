@@ -39,7 +39,11 @@ export async function connectLesson(
       return;
     }
     try {
-      if (m.type === 'shortcut' && ['talk_start', 'talk_end', 'talk_cancel'].includes(m.action))
+      if (
+        pkg.trustedShortcuts === true &&
+        m.type === 'shortcut' &&
+        ['talk_start', 'talk_end', 'talk_cancel'].includes(m.action)
+      )
         onShortcut(m.action);
       else if (m.type === 'update' && snapshot) {
         validateUpdate(pkg.experience, snapshot, m.update);
@@ -93,7 +97,8 @@ export async function connectLesson(
       return result;
     },
     start: () => rpc('start', {}),
-    setShortcutsEnabled: (enabled) => rpc('setShortcutsEnabled', { enabled }),
+    setShortcutsEnabled: (enabled) =>
+      rpc('setShortcutsEnabled', { enabled: enabled && pkg.trustedShortcuts === true }),
     tutorEvent: (e) => rpc('tutorEvent', e),
     close: () => {
       closed = true;

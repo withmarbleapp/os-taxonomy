@@ -6,6 +6,7 @@ import { randomUUID } from 'node:crypto';
 import {
   loadDirectory,
   install,
+  unpack,
   pack,
   MAX_ARCHIVE,
 } from '../../packages/authoring-tools/archive.mjs';
@@ -79,11 +80,13 @@ export async function createService({
     if (e.code !== 'ENOENT') throw e;
   }
   const token = randomUUID(),
-    catalog = new Map();
+    catalog = new Map(),
+    bundled = new Map();
   let speech = suppliedSpeech,
     active = 0;
   async function refresh() {
     catalog.clear();
+    bundled.clear();
     for (const base of [join(root, 'lessons'), join(dataDir, 'library')]) {
       for (const name of await readdir(base)) {
         if (name.startsWith('.')) continue;
@@ -93,7 +96,11 @@ export async function createService({
         for (const d of dirs) {
           try {
             const p = await loadDirectory(d);
-            catalog.set(p.manifest.id + '@' + p.manifest.version, p);
+            const key = p.manifest.id + '@' + p.manifest.version;
+            if (base === join(root, 'lessons')) bundled.set(key, p);
+            // A device library can never override an app-owned release, even
+            // if it was installed by an older version of the player.
+            if (!catalog.has(key)) catalog.set(key, p);
           } catch (e) {
             console.error('Skipped invalid lesson:', d, e.message);
           }
@@ -153,6 +160,7 @@ export async function createService({
           json(
             200,
             [...catalog.values()].map((p) => ({
+              trustedShortcuts: bundled.get(p.manifest.id + '@' + p.manifest.version) === p,
               manifest: p.manifest,
               teaching: p.teaching,
               experience: p.experience,
@@ -202,7 +210,18 @@ export async function createService({
         });
         try {
           if (path === '/api/import') {
-            const p = await install(await body(req, MAX_ARCHIVE), join(dataDir, 'library'));
+            const bytes = await body(req, MAX_ARCHIVE);
+            const incoming = unpack(bytes);
+            const prior = bundled.get(incoming.manifest.id + '@' + incoming.manifest.version);
+            if (prior) {
+              if (unpack(await pack(prior.directory)).hash !== incoming.hash)
+                throw Error(
+                  'This bundled version already exists with different content; increment the version',
+                );
+              json(200, prior.manifest);
+              return;
+            }
+            const p = await install(bytes, join(dataDir, 'library'));
             await refresh();
             json(200, p.manifest);
           } else if (path === '/api/settings') {

@@ -79,7 +79,9 @@ Mac and Windows packaging and hardware behavior remain untested.
 
 Lessons fill the window. The player overlays the shared walkie-talkie: hold its
 red button or Space to talk, then release to send. Space also works after clicking
-inside the lesson, but leaves text fields and open menus alone. Enter on the red
+inside app-bundled lessons, but leaves text fields and open menus alone. Imported
+lessons use the player walkie button, or Space after focusing that button; their
+untrusted code cannot start microphone recording through the frame bridge. Enter on the red
 button toggles recording. The keyboard button opens a typed reply; the cog opens
 Settings. Opening either pauses recording and tutor speech. The lesson menu offers
 optional captions, conversation history, settings and return to the library.

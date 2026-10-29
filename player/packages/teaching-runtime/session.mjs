@@ -85,6 +85,7 @@ export class TeachingSession {
     });
   }
   cancel() {
+    clearTimeout(this.timer);
     this.epoch++;
     this.controller?.abort();
     this.busy = false;
@@ -99,10 +100,24 @@ export class TeachingSession {
     );
   }
   async narrate(text) {
+    if (this.closed) return;
     this.cancel();
+    const epoch = this.epoch;
+    const controller = (this.controller = new AbortController());
+    this.busy = true;
+    this.onState('speaking');
     this.history.push({ role: 'assistant', text, authored: true });
     this.log({ type: 'reply', text, authored: true });
-    await this.speak(text);
+    try {
+      await this.speak(text, controller.signal);
+    } catch (error) {
+      if (!controller.signal.aborted) throw error;
+    } finally {
+      if (epoch === this.epoch) {
+        this.busy = false;
+        this.onState('idle');
+      }
+    }
   }
   async turn(text, origin = 'learner') {
     if (this.closed) return;

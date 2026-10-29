@@ -73,3 +73,31 @@ test('service isolates opaque lesson frames from privileged APIs', async () => {
     await rm(dir, { recursive: true, force: true });
   }
 });
+test('imports cannot replace a bundled release or grant shortcut trust', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'marble-import-'));
+  let service;
+  try {
+    const { cp, writeFile } = await import('node:fs/promises');
+    const modified = join(dir, 'modified');
+    await cp('lessons/cube-volume', modified, { recursive: true });
+    await writeFile(join(modified, 'index.html'), '<p>replacement</p>');
+    const conflict = await pack(modified);
+    // Also verify an existing library collision cannot shadow the bundled copy.
+    await install(conflict, join(dir, 'library'));
+    service = await createService({ dataDir: dir });
+    const headers = { 'x-marble-token': service.token, origin: service.origin };
+    const post = (bytes) =>
+      fetch(service.origin + '/api/import', { method: 'POST', headers, body: bytes });
+    assert.equal((await post(conflict)).status, 400);
+    assert.equal((await post(await pack('lessons/cube-volume'))).status, 200);
+    assert.equal((await post(await pack('packages/authoring-tools/template'))).status, 200);
+    const catalog = await (await fetch(service.origin + '/api/library', { headers })).json();
+    const cube = catalog.find((p) => p.manifest.id === 'cube-volume');
+    assert.equal(cube.trustedShortcuts, true);
+    assert.match(await (await fetch(service.origin + cube.url)).text(), /canvas/);
+    assert.equal(catalog.find((p) => p.manifest.id === 'equal-parts').trustedShortcuts, false);
+  } finally {
+    await service?.close();
+    await rm(dir, { recursive: true, force: true });
+  }
+});

@@ -61,8 +61,11 @@ controls in a lesson. Scenes fill the viewport. Leave the bottom-right controls 
 `--marble-controls-right` and `--marble-controls-bottom` from scene-base.css;
 reserve `--marble-menu-right` for the top-right menu. These adapt on mobile.
 
-The frame SDK forwards trusted Space hold/release gestures to the player while
-the lesson is active. It ignores editable fields and open dialogs, suppresses
+For app-bundled lessons only, the frame SDK forwards Space hold/release gestures
+to the player while the lesson is active. This permission comes from the server
+catalog, never package metadata. Imported JavaScript can forge SDK messages, so
+imported lessons cannot invoke recording through the bridge. Their learners use
+the player-owned walkie or focus it before using Space. It ignores editable fields and open dialogs, suppresses
 repeated keydown events, and cancels on focus loss. Lessons need no keyboard
 or audio implementation for these controls.
 
