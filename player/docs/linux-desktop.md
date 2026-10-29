@@ -49,8 +49,8 @@ sudo rm /etc/apparmor.d/marble-local
 ```
 
 The profile generator and parser validation were checked on the development host.
-Installing the profile requires administrator authentication; native launch after
-installation remains to be verified. Production packaging needs a stable install
+Installing the profile requires administrator authentication. Native window loading
+and normal shutdown were verified after installation with sandboxing enabled. Production packaging needs a stable install
 path and a distribution-specific installation policy, plus microphone and speech
 validation in the actual desktop app. Do not disable sandboxing or globally relax
 AppArmor as an installer workaround.

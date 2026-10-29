@@ -33,7 +33,7 @@ npm run skill:validate
 
 Configure voice and a tutor connection using [player setup](player/README.md).
 The app is a developer preview; native Linux launch on the current development
-machine needs sandbox setup. Models are installed separately, not stored in Git.
+machine works after the documented AppArmor setup. Models are installed separately, not stored in Git.
 Local speech can be paired with local inference or an experimental CLI provider.
 See the README for platform and provider limitations.
 

@@ -35,3 +35,10 @@ synthesis/recognition smoke-tested; Linux unpacked application builds. Native
 launch is blocked on this host by Linux sandbox configuration. No live Claude/
 Codex account inference, child learning, Mac or Windows validation was performed.
 The new player is a developer preview; see its README for distribution limits.
+
+## Native startup follow-up
+
+After installing the app-specific Ubuntu AppArmor profile, the native Electron
+window loaded and exited successfully with sandboxing enabled. Startup must use
+app.whenReady().then(...) rather than top-level await, which stalled ESM loading.
+This verifies window startup, not native microphone/lesson operation.

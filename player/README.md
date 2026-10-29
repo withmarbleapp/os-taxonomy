@@ -19,12 +19,11 @@ npm run dev                 # local browser player at http://127.0.0.1:3235
 Before starting a lesson, choose a tutor connection and configure local voice in
 Settings. Lessons use voice, with a keyboard button for typed replies.
 
-On this Ubuntu machine, Electron cannot start because unprivileged namespaces are
-restricted and its SUID sandbox helper is not installed with system permissions.
-The browser player is the working development route. A properly installed Linux
-package needs an administrator-managed sandbox setup / distribution policy. Do
-not ship or use `--no-sandbox` as the solution. See the [path-specific AppArmor
-setup](docs/linux-desktop.md) for this Ubuntu host. No system permissions were changed.
+On Ubuntu 24.04, native launch requires an app-specific user-namespace permission.
+See the [path-specific AppArmor setup](docs/linux-desktop.md). Native startup has
+been verified on this development host after that setup, with sandboxing enabled.
+Do not ship or use `--no-sandbox` as a workaround. Production installer setup and
+native microphone/lesson qualification remain separate work.
 
 ## Tutor connections
 
@@ -132,6 +131,6 @@ Tests cover package import/export, traversal/tampering rejection, API isolation,
 wrong→correct cube attempts, stale decisions, provider flags and cancellation.
 Browser fixtures cover both scenes and import a third lesson without changing a
 registry. Real local synthesis/recognition was smoke-tested; no paid or live
-subscription inference was run. Linux unpacked build succeeds; native launch on
-this host is blocked by the sandbox installation described above. Other operating
+subscription inference was run. Linux unpacked build succeeds; native startup on
+this host passes after the AppArmor setup described above. Other operating
 systems and actual child learning have not been validated.
