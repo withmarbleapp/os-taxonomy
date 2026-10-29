@@ -1,0 +1,287 @@
+/* Marble WalkieTalkieDocument / WalkieTalkieSizer: 144×220 chassis,
+   40px side controls at (5,54)/(99,54), 120px talk control at (12,89). */
+#talk-controls {
+  left: auto;
+  right: 24px;
+  bottom: 24px;
+  transform: none;
+  display: block;
+  width: 144px;
+  height: 220px;
+  pointer-events: none;
+}
+#walkie-chassis {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-4.25deg);
+  transform-origin: 100% 100%;
+  transition: scale 80ms ease-out;
+  pointer-events: none;
+}
+#walkie-chassis[data-phase='listening'] {
+  scale: 1.04;
+}
+.walkie-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.walkie-side {
+  position: absolute;
+  width: 27.7778%;
+  height: 18.1818%;
+  top: 24.5455%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(#c1c1c1, #e8e8e8);
+  box-shadow:
+    inset 0 1px 2px #fff,
+    inset 0 -3px 2px #0006;
+  pointer-events: auto;
+  display: grid;
+  place-items: center;
+  touch-action: manipulation;
+}
+.walkie-side.camera {
+  left: 3.4722%;
+}
+.walkie-side.keyboard {
+  right: 3.4722%;
+}
+.walkie-side img {
+  width: 60%;
+  height: 60%;
+  pointer-events: none;
+}
+.walkie-side:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+.walkie-side:active:not(:disabled) {
+  filter: brightness(0.78);
+}
+.walkie-side::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+}
+#ptt {
+  position: absolute;
+  left: 8.3333%;
+  top: 40.4545%;
+  width: 83.3333%;
+  height: 54.5455%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 4.6px solid white;
+  border-radius: 50%;
+  background: #f42324;
+  box-shadow:
+    inset 0 3px 2px #ffffff6b,
+    inset 0 -9px 2px #8b0023;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  touch-action: none;
+  user-select: none;
+  translate: none;
+  transition: filter 80ms ease-out;
+}
+#ptt:hover {
+  background: #f42324;
+  filter: brightness(1.04);
+}
+#ptt[aria-pressed='true'],
+#ptt:active {
+  background: #bd1b1c;
+  box-shadow:
+    inset 0 2px 3px #690019,
+    inset 0 -3px 2px #8b0023;
+  translate: none;
+  filter: none;
+}
+#ptt:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+#ptt kbd {
+  font:
+    500 16px/1 'Baloo 2',
+    sans-serif;
+  letter-spacing: 0.2px;
+  color: #fff;
+  border: 1.5px solid #ffffffb3;
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-top: -3px;
+  background: #ffffff0a;
+  pointer-events: none;
+}
+.walkie-side:focus-visible,
+#ptt:focus-visible {
+  outline: 4px solid #a080dc;
+  outline-offset: 5px;
+}
+#walkie-lights {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+}
+#walkie-chassis[data-phase='thinking'] #walkie-lights {
+  display: block;
+}
+#walkie-lights g,
+#walkie-lights circle {
+  fill: #828282;
+}
+#walkie-chassis[data-phase='thinking'] #walkie-lights g {
+  animation: walkie-column 1.5s steps(1, end) infinite;
+  animation-delay: calc(var(--column) * 0.3s);
+}
+@keyframes walkie-column {
+  0% {
+    fill: #f42324;
+  }
+  20% {
+    fill: #ea879f;
+  }
+  40%,
+  100% {
+    fill: #828282;
+  }
+}
+#walkie-lights g circle {
+  fill: inherit;
+}
+.walkie-sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: none;
+}
+#walkie-chassis[data-phase='speaking'] .walkie-sparks {
+  display: block;
+}
+.spark {
+  position: absolute;
+  animation: walkie-spark 0.65s ease-in-out infinite alternate;
+}
+.spark-center {
+  width: 31.27%;
+  height: 27.51%;
+  left: -20.5%;
+  top: -31.03%;
+  animation-delay: 0.1s;
+}
+.spark-left {
+  width: 27.29%;
+  height: 14.5%;
+  left: -32.4%;
+  top: -5.43%;
+}
+.spark-right {
+  width: 30.93%;
+  height: 14.6%;
+  left: 14.4%;
+  top: -11.85%;
+  animation-delay: 0.2s;
+}
+@keyframes walkie-spark {
+  from {
+    translate: 0 -1px;
+  }
+  to {
+    translate: 0 1px;
+  }
+}
+#actions {
+  right: 210px;
+  bottom: 30px;
+}
+@media (max-width: 800px) {
+  #talk-controls {
+    width: 122.4px;
+    height: 187px;
+    right: 20px;
+    bottom: max(20px, env(safe-area-inset-bottom));
+  }
+  #ptt {
+    border-width: 3.9px;
+  }
+  #ptt kbd {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  #actions {
+    left: 16px;
+    right: 166px;
+    bottom: 24px;
+    gap: 8px;
+  }
+  #predictions {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 8px;
+  }
+  #commit {
+    margin-left: 0;
+  }
+}
+@media (max-height: 620px) and (min-width: 801px) {
+  #talk-controls {
+    width: 115.2px;
+    height: 176px;
+    right: 20px;
+    bottom: 16px;
+  }
+  #ptt {
+    border-width: 3.7px;
+  }
+  #ptt kbd {
+    font-size: 14px;
+  }
+  #actions {
+    right: 180px;
+    bottom: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #walkie-chassis {
+    transition: none;
+  }
+  #walkie-chassis[data-phase='thinking'] #walkie-lights g,
+  .spark {
+    animation: none;
+  }
+  #walkie-chassis[data-phase='thinking'] #walkie-lights g {
+    fill: #f42324;
+  }
+}
+
+#talk-controls {
+  position: fixed;
+  z-index: 12;
+}
+.walkie-side svg {
+  width: 60%;
+  height: 60%;
+  pointer-events: none;
+}
+#ptt kbd {
+  font-family: Baloo, sans-serif;
+}
+#walkie-chassis[data-phase='thinking'] #walkie-lights {
+  display: block;
+}

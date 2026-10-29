@@ -4,6 +4,46 @@ An open, structured taxonomy of **what children learn** across the primary/eleme
 
 > **Version:** `v1` · **Topics:** 1,855 · **Prerequisite edges:** 3,986 · **Subjects:** 9
 
+## Interactive audio lessons and local app
+
+This repository also owns the [Marble player](player/README.md) and the
+[audio lesson authoring skill](.agents/skills/marble-voice-builder/SKILL.md).
+The taxonomy stays in `data/` and `schema/`; the software has its own dependency
+lock and build inside `player/`.
+
+| Location | Responsibility |
+|---|---|
+| `player/apps/desktop` | Local Electron app and device permissions |
+| `player/apps/player` | Shared lesson UI, walkie-talkie, typed replies |
+| `player/apps/local-service` | Local APIs, provider calls and session logs |
+| `player/packages/lesson-contract`, `lesson-sdk` | Portable lesson format and scene bridge |
+| `player/packages/teaching-runtime` | Adaptive tutor orchestration |
+| `player/packages/voice`, `providers` | Local speech and inference connections |
+| `player/lessons` | Cube volume and Roanoke example packages |
+| `.agents/skills/marble-voice-builder` | Research, pedagogy and audio lesson authoring guidance |
+
+```sh
+npm run player:install          # install pinned player dependencies (Node 24+)
+npm run player:dev              # browser development at localhost:3235
+npm run player:start            # native Electron app, with system sandbox support
+npm run player:test
+npm run player:test:browser
+npm run skill:validate
+```
+
+Configure voice and a tutor connection using [player setup](player/README.md).
+The app is a developer preview; native Linux launch on the current development
+machine needs sandbox setup. Models are installed separately, not stored in Git.
+Local speech can be paired with local inference or an experimental CLI provider.
+See the README for platform and provider limitations.
+
+The skill references `player/` directly. It never maintains a second runtime.
+Its `scripts/create_experience.py` creates a content-only lesson package;
+`scripts/create_player.py` exports a standalone source starter when needed.
+Settings, credentials, learner logs, recordings, weights, dependencies and builds
+are not repository content. For contract changes, update the SDK, affected lesson
+examples and authoring guidance together in this repo.
+
 ## See it
 
 ![The taxonomy as a rotating 3D graph: every dot a micro-topic, colored by subject, wired by prerequisites](media/curriculum-viz.gif)

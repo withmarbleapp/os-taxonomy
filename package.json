@@ -8,6 +8,12 @@
   "homepage": "https://withmarble.com",
   "scripts": {
     "validate": "node scripts/validate.mjs",
-    "test": "node --test scripts/*.test.mjs"
+    "test": "node --test scripts/*.test.mjs",
+    "player:install": "npm --prefix player ci",
+    "player:dev": "npm --prefix player run dev",
+    "player:start": "npm --prefix player start",
+    "player:test": "npm --prefix player test",
+    "player:test:browser": "npm --prefix player run test:browser",
+    "skill:validate": "python3 .agents/skills/marble-voice-builder/scripts/validate_bundle.py"
   }
 }

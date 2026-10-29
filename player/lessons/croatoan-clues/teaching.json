@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "croatoan-clues",
+  "releaseId": "croatoan-lesson-v2",
+  "experienceReleaseId": "croatoan-inquiry-v2",
+  "curriculum": ["mt_Lu4H4mbsqO", "mt_TTzJTF-OkG", "mt_wWlZoLQBR6"],
+  "introduction": {
+    "objective": "Use historical sources to distinguish a reported clue from an explanation, and explain an idea with evidence and uncertainty.",
+    "successCriteria": "On a less-supported source, distinguish what is reported from what is inferred, explain a relevant connection and a limit. Do not require a particular theory."
+  },
+  "learningGoals": [
+    {
+      "id": "clue-and-explanation",
+      "objective": "Distinguish a source’s report from an inference about it.",
+      "criteria": [
+        {
+          "id": "separate-report",
+          "lookFor": [
+            "Distinguishes the word on a post from a claim that all settlers survived.",
+            "On another passage or source, explains what the account supports and what remains uncertain."
+          ],
+          "notEnough": [
+            "Names Croatoan without reasoning.",
+            "Repeats the tutor’s explanation or taps an object."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "source-and-reason",
+      "objective": "Use a source’s origin and content to support a cautious historical explanation.",
+      "criteria": [
+        {
+          "id": "grounded-claim",
+          "lookFor": [
+            "Connects a relevant source to an idea in their own words.",
+            "Recognises a limitation such as not witnessing an event, a later report, alternative explanations, or shared source origins."
+          ],
+          "notEnough": [
+            "Collects a set number of cards.",
+            "Chooses an authored preferred theory.",
+            "Says they are confident."
+          ]
+        }
+      ]
+    }
+  ],
+  "teachingProgression": [
+    {
+      "id": "responsive-investigation",
+      "purpose": "Explain the intention and context, examine a source together, invite small contributions, then choose support, comparison or a fresh source from the actual response. These are flexible intentions, not mandatory steps."
+    }
+  ],
+  "diagnosticChallenges": [
+    {
+      "id": "fresh-account",
+      "difficulty": "terminal",
+      "coversGoals": ["clue-and-explanation", "source-and-reason"],
+      "setupAction": "begin_investigation",
+      "setupArgs": {
+        "sourceId": "chests",
+        "mode": "independent"
+      },
+      "promptGuidance": "Candidate only. If this source has already been explained, choose another unassisted source. Introduce whose account this is before asking what was found and what is the author’s explanation. Later invite the child’s own explanation with a source and a limit. No final exam gate.",
+      "lookFor": ["Evidence-linked reasoning, source awareness and appropriate uncertainty."],
+      "notEnough": ["A destination alone.", "An answer copied from highlighted support."],
+      "ifIncomplete": "Name the actual gap, explain it briefly with the visible document, ask one smaller question, permit revision and check a different source later if useful."
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "carving-proves-survival",
+      "indicators": ["The word proves everyone reached Croatoan safely."],
+      "strategies": [
+        "Acknowledge that the word suggests a destination; explain that White did not meet the settlers there."
+      ]
+    },
+    {
+      "id": "eyewitness-knows-everything",
+      "indicators": ["White saw broken chests so he also saw who broke them."],
+      "strategies": ["Show his reported damage separately from his attribution."]
+    },
+    {
+      "id": "later-means-useless",
+      "indicators": ["A later book cannot tell us anything."],
+      "strategies": [
+        "Explain that later family accounts can preserve information; ask what the author heard rather than witnessed."
+      ]
+    },
+    {
+      "id": "objects-prove-residents",
+      "indicators": ["English objects mean the missing settlers definitely lived there."],
+      "strategies": [
+        "Explain that trade is another route for objects. Do not discount the finds entirely."
+      ]
+    }
+  ],
+  "completion": {
+    "recap": "You used historical sources to explain an idea and considered what they leave uncertain.",
+    "incompleteRecap": "We explored clues from Roanoke and what they might tell us. There are still questions to investigate.",
+    "evidenceScope": "A summary of this conversation. Reasoning is a tutor interpretation of actual words or saved notebook work, not a deterministic historical truth or durable mastery. Confidence is separate."
+  },
+  "tutorGuidance": "Use familiar English, ages 10–11, 15–35 words, one question. Start with the short visual story: world location, 1587 arrival, the three-year delay, and White’s 1590 return. Context, not a quiz. Narrate only the beat currently visible in introduction, using its matching text/dates from introductionCatalog. Allow skipping, replay and questions. Stay with their current question. Then show the Roanoke map and let the child choose a place. Art is reconstructed. Introduce documents through their objects: who made them, when, and how they knew. Explain what is useful now; no unexplained source quiz.\nScaffold through conversation. Explain a notion, invite a small contribution, and respond to its meaning. Prior knowledge permits a fresh source sooner. No repeated demonstrated answers, rephrasing demands, response menus, readiness loops or warnings without an error. Correct the specific overclaim, recognise what is right, and offer a smaller supported question and revision when useful.\nNavigation never answers a verbal question. Introduce the visible clue briefly with one useful question. On returning to a scene, briefly orient the child without quizzing. Wording toggles need no speech. A click never answers a pending question. Highlight_source reveals reasoning help. For a fresh try use begin_investigation(mode:independent), introduce your question, and withhold highlights until help is needed. Previously guided sources stay assisted. Discuss replacing an unanswered question first. No fixed stages, mandatory tour, clue quota or terminal test gate.\nRead sourceCatalog, latest notebook and prior actual replies. Never invent letters, dates, witnesses or excavation records. The notebook is actual work: acknowledge corrected writing without requiring spoken repetition. Interpret reasoning, not a preferred destination. Cautious uncertainty with a reason can be excellent. Ask for explanation only where reasoning remains unclear. Correct contradictions against the visible passage. Supported repair is useful, not fresh independent success.\nA carving does not prove all settlers survived; no cross does not guarantee safety; dismantled houses do not prove a calm departure; broken chests do not identify an attacker. White’s attribution is not eyewitness knowledge. Multiple things could have happened to different settlers. White’s extracts are one account, not independent corroboration. Summaries may depend on older sources. Later accounts can matter; eyewitness accounts can err. Lawson’s 1709 book mediates Hatteras family accounts: respect their knowledge without treating his writing as a direct transcript or appearance as proof of ancestry.\nLet the child choose sources and ask questions. The notebook is optional in voice conversation. When ready, offer a fresh source, then an explanation with a clue and limitation. Finish with a brief specific response and self-assessment of worked-on skills. Confidence is separate from understanding. Respect stopping or declining.",
+  "representationLimits": "Art is schematic reconstruction, not primary evidence or a precise excavation map. Source cards use labelled paraphrases and short extracts; links open the full sources. No surviving colonist letter is invented. White’s 1590 visit is distinct from this 1600 edition. Dig card is a modern NPS summary, not a field report; it supplies no exact discovery year. Source selection is partial and does not resolve the fate of the settlers. There is no numeric or predetermined-theory score.",
+  "dialogue": {
+    "mode": "adaptive-general",
+    "probes": [],
+    "focuses": [
+      {
+        "id": "observation-inference",
+        "description": "Tell what a source reports from an explanation built from it.",
+        "goals": ["clue-and-explanation"]
+      },
+      {
+        "id": "source-origin",
+        "description": "Consider who made a source, when, and how they learned what they report.",
+        "goals": ["source-and-reason"]
+      },
+      {
+        "id": "supported-explanation",
+        "description": "Explain an idea using a relevant source and a meaningful limitation.",
+        "goals": ["clue-and-explanation", "source-and-reason"]
+      }
+    ]
+  },
+  "teaching": [
+    {
+      "id": "intro-where",
+      "focus": "observation-inference",
+      "label": "A small island. A lasting mystery.",
+      "state": {},
+      "action": "show_introduction",
+      "args": {
+        "beat": "where"
+      },
+      "text": "Let’s use clues to explore a mystery. Our story begins on Roanoke Island, on North America’s Atlantic coast, in today’s North Carolina. Indigenous communities already called this region home. We’re going back more than four hundred years."
+    },
+    {
+      "id": "intro-arrival",
+      "focus": "observation-inference",
+      "label": "Families cross the Atlantic.",
+      "state": {},
+      "action": "show_introduction",
+      "args": {
+        "beat": "arrival"
+      },
+      "text": "In 1587, English families arrived at Roanoke. John White was their leader. Soon he sailed back to England for supplies, leaving his daughter and granddaughter with the settlers."
+    },
+    {
+      "id": "intro-delay",
+      "focus": "observation-inference",
+      "label": "A journey that took too long.",
+      "state": {},
+      "action": "show_introduction",
+      "args": {
+        "beat": "delay"
+      },
+      "text": "White hoped to return soon. War between England and Spain delayed him. Three years passed before he reached Roanoke again, hoping to find his family and the other settlers."
+    },
+    {
+      "id": "intro-return",
+      "focus": "observation-inference",
+      "label": "The people are gone. The clues remain.",
+      "state": {},
+      "action": "show_introduction",
+      "args": {
+        "beat": "return"
+      },
+      "text": "In 1590, White found the settlement empty, with CROATOAN carved on a post. What had happened remained uncertain. We’ll use the clues to learn how to build an explanation and say what is still uncertain."
+    },
+    {
+      "id": "carved-word",
+      "focus": "observation-inference",
+      "label": "Look closely at the carved word.",
+      "state": {},
+      "action": "begin_investigation",
+      "args": {
+        "sourceId": "carving",
+        "mode": "guided"
+      },
+      "text": "This picture is a reconstruction. John White described finding CROATOAN carved on a post. It names a place and a people; the word gives us a clue, but not the whole story."
+    },
+    {
+      "id": "report-and-idea",
+      "focus": "observation-inference",
+      "label": "Compare the clue with an explanation.",
+      "state": {},
+      "action": "highlight_source",
+      "args": {
+        "part": "both"
+      },
+      "text": "What White found and what he thought it meant are different. The source can help us build an explanation without proving every part of it."
+    },
+    {
+      "id": "later-book",
+      "focus": "source-origin",
+      "label": "Meet a different source.",
+      "state": {},
+      "action": "begin_investigation",
+      "args": {
+        "sourceId": "lawson",
+        "mode": "guided"
+      },
+      "text": "Lawson wrote this book more than a hundred years later. He recorded what Hatteras people told him about their ancestors. Their account reaches us through his writing."
+    }
+  ],
+  "selfEvaluation": {
+    "skills": [
+      {
+        "id": "clue-or-explanation",
+        "description": "Tell a reported clue from an explanation.",
+        "prompt": "How do you feel about telling a clue from someone’s explanation of it?",
+        "focuses": ["observation-inference"]
+      },
+      {
+        "id": "explain-with-sources",
+        "description": "Use a source to explain an idea and what remains uncertain.",
+        "prompt": "How do you feel about using a historical source to explain an idea, including what you still don’t know?",
+        "focuses": ["source-origin", "supported-explanation"]
+      }
+    ]
+  },
+  "learnerRequests": [],
+  "evidenceEvents": ["notebook_saved"],
+  "observationEvents": [
+    "place_visited",
+    "source_opened",
+    "evidence_discovered",
+    "source_read_requested",
+    "notebook_saved"
+  ],
+  "observationPrompt": "Check the latest purposeful learner event against the currently visible source. On place_visited with no activeSource, briefly acknowledge the current scene and invite exploring, without a quiz or repeating the introduction. On source_opened, acknowledge the visible clue without repeating its full introduction. On evidence_discovered, introduce what the child found using its sourceCatalog text and provenance, then invite one small grounded observation or inference in natural language. This is discovery, not an answer: do not record learning from the click or grade an older spoken reply. If a previous question remains unanswered, acknowledge the change of focus rather than treating it as answered. Use prior understanding to avoid repetition. On source_read_requested, read the visible passage and briefly invite thought if useful. Rapid taps may open several sources: discuss only the currently visible one; if none is visible, do not narrate a departed clue. On notebook_saved, assess the latest written work, recognise supported reasoning, correct a specific overclaim and choose the next move without re-asking what is already written. Scene returns need only brief orientation; wording changes need no response. The live activeSource overrides the previous conversation topic."
+}

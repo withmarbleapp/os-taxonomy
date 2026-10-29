@@ -1,0 +1,463 @@
+{
+  "protocolVersion": 1,
+  "kind": "cube-volume",
+  "apiVersion": 1,
+  "releaseId": "cube-volume-v2",
+  "description": "A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. Rotate to inspect; open whole horizontal layers to see occluded and interior cubes. A fully buried cube exists only when every dimension exceeds two. Rotation does not change volume. Filling, stacking and adding back rows are real learner actions; opening layers does not add cubes. The model scores submitted layer plans exactly; events alone do not establish understanding. No required stage count.",
+  "stateSchema": {
+    "type": "object",
+    "properties": {
+      "task": {
+        "enum": ["fill", "explore", "plan"]
+      },
+      "teachingFocus": {
+        "enum": ["none", "unit", "layers", "inside"]
+      },
+      "taughtConcepts": {
+        "type": "array",
+        "maxItems": 3,
+        "items": {
+          "enum": ["volume", "layers", "inside"]
+        }
+      },
+      "layerExampleSeen": {
+        "type": "boolean"
+      },
+      "cubesPerLayer": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 999
+      },
+      "layerCount": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 999
+      },
+      "sceneId": {
+        "type": "string"
+      },
+      "dims": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        }
+      },
+      "filled": {
+        "type": "array",
+        "maxItems": 6,
+        "items": {
+          "type": "string"
+        }
+      },
+      "layerComplete": {
+        "type": "boolean"
+      },
+      "hasStack": {
+        "type": "boolean"
+      },
+      "canDeepen": {
+        "type": "boolean"
+      },
+      "layersOpen": {
+        "type": "boolean"
+      },
+      "rotation": {
+        "type": "number"
+      },
+      "assisted": {
+        "type": "boolean"
+      },
+      "revealed": {
+        "type": "boolean"
+      },
+      "plan": {
+        "type": "object",
+        "properties": {
+          "perLayer": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "layers": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "total": {
+            "type": "string",
+            "maxLength": 3
+          }
+        },
+        "required": ["perLayer", "layers", "total"],
+        "additionalProperties": false
+      },
+      "attempts": {
+        "type": "array",
+        "maxItems": 32,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "sceneId": {
+              "type": "string"
+            },
+            "dims": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 8
+              }
+            },
+            "perLayer": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999
+            },
+            "layers": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999
+            },
+            "total": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999
+            },
+            "correct": {
+              "type": "boolean"
+            },
+            "assisted": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "sceneId",
+            "dims",
+            "perLayer",
+            "layers",
+            "total",
+            "correct",
+            "assisted"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "interiorCount": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 999
+      },
+      "hasInterior": {
+        "type": "boolean"
+      },
+      "totalCubes": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 999
+      },
+      "learnerActions": {
+        "type": "array",
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            },
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["name", "label", "enabled"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "task",
+      "teachingFocus",
+      "taughtConcepts",
+      "layerExampleSeen",
+      "cubesPerLayer",
+      "layerCount",
+      "sceneId",
+      "dims",
+      "filled",
+      "layerComplete",
+      "hasStack",
+      "canDeepen",
+      "layersOpen",
+      "rotation",
+      "assisted",
+      "revealed",
+      "plan",
+      "attempts",
+      "interiorCount",
+      "hasInterior",
+      "totalCubes",
+      "learnerActions"
+    ],
+    "additionalProperties": false
+  },
+  "actions": [
+    {
+      "name": "show_teaching",
+      "description": "Physical visual support used by explain_model. Highlights a unit cube, opens/highlights complete layers, or highlights actual interior cubes. Records exposure and assistance, not understanding.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "focus": {
+            "enum": ["unit", "layers", "inside"]
+          }
+        },
+        "required": ["focus"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "show_example",
+      "description": "Physical worked example used by explain_model: layer example is 3 by 2 by 2, inside example is a different 3 by 3 by 3 block. A new case is explicitly announced by the authored explanation. This is teaching, not a test.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": ["layers", "inside"]
+          }
+        },
+        "required": ["kind"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "prepare_activity",
+      "description": "Start a small fill-and-stack investigation (kind fill, a 3 by 2 bottom layer), or inspect a filled 3 by 3 by 3 solid (kind explore). Discuss replacing unfinished work first. Filling launches the complete fill request automatically. These are optional teaching formats. Never reset to filling after the learner already explains layers and hidden cubes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "enum": ["fill", "explore"]
+          }
+        },
+        "required": ["kind"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "prepare_fresh_box",
+      "description": "Offer an optional fresh independent layer-plan problem, excluding previously seen shapes and their rotations. The first small problem is 2 by 2 by 2. Choose small, buried or long to address a remaining uncertainty. The learner must enter all three fields and Check my plan. Do not supply counts or open layers before commitment unless help is requested. This launches the complete plan request automatically. No three-stage gate.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "difficulty": {
+            "enum": ["small", "buried", "long"]
+          }
+        },
+        "required": ["difficulty"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "reopen_plan",
+      "description": "Let the learner revise this checked plan with help. Keep the old submitted attempt unchanged; reopen the same fields and mark the new attempt assisted. Use after correcting the specific error. A correct revision is practice, not a fresh independent check.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "set_support",
+      "description": "Open or close whole layers. Opening before a plan submission permanently marks that attempt assisted; closing does not erase assistance. It does not change cube count. Use explain_model when teaching the idea, or this action when the learner asks only to open or close the layers. Never expose an independent answer before commitment unless help is needed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "opened": {
+            "type": "boolean"
+          }
+        },
+        "required": ["opened"],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "events": {
+    "teaching_shown": {
+      "type": "object",
+      "properties": {
+        "focus": {
+          "enum": ["unit", "layers", "inside"]
+        }
+      },
+      "required": ["focus"],
+      "additionalProperties": false
+    },
+    "cube_placed": {
+      "type": "object",
+      "properties": {
+        "filled": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "layerComplete": {
+          "type": "boolean"
+        }
+      },
+      "required": ["filled", "layerComplete"],
+      "additionalProperties": false
+    },
+    "layer_stacked": {
+      "type": "object",
+      "properties": {
+        "layers": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "totalCubes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        }
+      },
+      "required": ["layers", "totalCubes"],
+      "additionalProperties": false
+    },
+    "back_rows_added": {
+      "type": "object",
+      "properties": {
+        "added": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "totalCubes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        }
+      },
+      "required": ["added", "totalCubes"],
+      "additionalProperties": false
+    },
+    "layers_opened": {
+      "type": "object",
+      "properties": {
+        "opened": {
+          "type": "boolean"
+        }
+      },
+      "required": ["opened"],
+      "additionalProperties": false
+    },
+    "block_rotated": {
+      "type": "object",
+      "properties": {
+        "rotation": {
+          "type": "number"
+        }
+      },
+      "required": ["rotation"],
+      "additionalProperties": false
+    },
+    "plan_edited": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "enum": ["perLayer", "layers", "total"]
+        }
+      },
+      "required": ["field"],
+      "additionalProperties": false
+    },
+    "response_committed": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sceneId": {
+          "type": "string"
+        },
+        "dims": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          }
+        },
+        "perLayer": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "layers": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 999
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "assisted": {
+          "type": "boolean"
+        }
+      },
+      "required": ["id", "sceneId", "dims", "perLayer", "layers", "total", "correct", "assisted"],
+      "additionalProperties": false
+    },
+    "activity_prepared": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": ["fill", "explore", "plan"]
+        },
+        "sceneId": {
+          "type": "string"
+        }
+      },
+      "required": ["kind", "sceneId"],
+      "additionalProperties": false
+    },
+    "support_changed": {
+      "type": "object",
+      "properties": {
+        "opened": {
+          "type": "boolean"
+        }
+      },
+      "required": ["opened"],
+      "additionalProperties": false
+    },
+    "plan_reopened": {
+      "type": "object",
+      "properties": {
+        "sceneId": {
+          "type": "string"
+        }
+      },
+      "required": ["sceneId"],
+      "additionalProperties": false
+    }
+  }
+}

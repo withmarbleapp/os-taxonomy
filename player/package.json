@@ -1,0 +1,60 @@
+{
+  "name": "marble-player",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Marble player and portable interactive lessons",
+  "main": "apps/desktop/main.mjs",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "node apps/local-service/start.mjs",
+    "test": "node --test --test-isolation=none test/*.test.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "marble": "node packages/authoring-tools/cli.mjs",
+    "setup:voice": "node packages/voice/setup.mjs",
+    "dist:linux": "electron-builder --linux dir",
+    "dist:mac": "electron-builder --mac dir",
+    "dist:win": "electron-builder --win dir",
+    "format": "prettier --write apps packages scripts test"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "ws": "8.22.0"
+  },
+  "build": {
+    "appId": "org.marble.player",
+    "productName": "Marble",
+    "asar": true,
+    "files": [
+      "apps/**",
+      "packages/**",
+      "lessons/**",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": "dir",
+      "category": "Education"
+    },
+    "mac": {
+      "category": "public.app-category.education",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "Marble uses your microphone to talk with the tutor. Speech recognition runs locally."
+      }
+    },
+    "win": {
+      "target": "dir"
+    }
+  },
+  "devDependencies": {
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0",
+    "prettier": "3.9.10"
+  },
+  "author": "Marble"
+}

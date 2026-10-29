@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  /><title>Marble</title
+  ><link rel="stylesheet" href="/player/style.css" /><link
+    rel="stylesheet"
+    href="/player/walkie.css"
+  />
+  <body>
+    <main id="library">
+      <header><span class="brand">marble</span><button id="settings-open">Settings</button></header>
+      <div class="welcome">
+        <p class="eyebrow">A little curiosity goes a long way</p>
+        <h1>What shall we discover?</h1>
+        <p>Your lessons, on your computer.</p>
+      </div>
+      <div id="lessons"></div>
+      <label class="import"
+        >＋ Add a lesson<input id="import" type="file" accept=".lesson,.zip" hidden
+      /></label>
+      <p id="library-status" role="status"></p>
+    </main>
+    <section id="player" hidden>
+      <iframe id="scene" sandbox="allow-scripts allow-forms" title="Interactive lesson"></iframe>
+      <button id="lesson-menu" aria-label="Lesson menu" aria-haspopup="dialog">☰</button>
+      <p id="instruction"></p>
+      <div id="start-cover">
+        <h1 id="start-title"></h1>
+        <button id="start">Let’s explore ↗</button>
+      </div>
+      <aside id="caption" hidden></aside>
+      <div id="talk-controls" hidden aria-label="Walkie-talkie">
+        <div id="walkie-chassis" data-phase="idle">
+          <img
+            class="walkie-face"
+            src="/player/assets/walkie-talkie.svg"
+            alt=""
+            draggable="false"
+          />
+          <div class="walkie-sparks" aria-hidden="true">
+            <img class="spark spark-center" src="/player/assets/walkie-spark-0.svg" alt="" /><img
+              class="spark spark-left"
+              src="/player/assets/walkie-spark-1.svg"
+              alt=""
+            /><img class="spark spark-right" src="/player/assets/walkie-spark-2.svg" alt="" />
+          </div>
+          <svg id="walkie-lights" viewBox="0 0 144 220" aria-hidden="true"></svg>
+          <button
+            id="type-reply"
+            class="walkie-side camera"
+            aria-label="Type instead of speaking"
+            title="Type instead"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="2"
+                y="5"
+                width="20"
+                height="14"
+                rx="2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M6 9h1m4 0h1m4 0h1M6 12h1m4 0h1m4 0h1M7 16h10"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="walkie-settings"
+            class="walkie-side keyboard"
+            aria-label="Settings"
+            title="Settings"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10 3h4l.6 3 2 .9 2.7-1 2 3.4-2.2 2v2.3l2.2 2-2 3.4-2.7-1-2 .9-.6 3h-4l-.6-3-2-.9-2.7 1-2-3.4 2.2-2v-2.3l-2.2-2 2-3.4 2.7 1 2-.9Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="12"
+                cy="12.5"
+                r="3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+          <button
+            id="ptt"
+            aria-label="Hold to talk. Hold Space and release to send. Press Enter to start or finish recording."
+            aria-pressed="false"
+            aria-keyshortcuts="Space"
+          >
+            <kbd aria-hidden="true">Space</kbd>
+          </button>
+        </div>
+        <span id="status" role="status"></span>
+      </div>
+    </section>
+    <dialog id="compose">
+      <form id="reply-form">
+        <div class="dialog-title">
+          <h2>What would you like to say?</h2>
+          <button type="button" data-close="compose" aria-label="Close">×</button>
+        </div>
+        <label for="reply-text">Your message</label>
+        <textarea id="reply-text" rows="3" required autofocus></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </dialog>
+    <dialog id="settings">
+      <form id="settings-form">
+        <div class="dialog-title">
+          <h2>Your tutor</h2>
+          <button type="button" data-close="settings">×</button>
+        </div>
+        <label
+          >Connection<select name="provider">
+            <option value="preview" disabled>Choose your tutor connection</option>
+            <option value="local">Local model · offline inference</option>
+            <option value="claude">Claude Code · your subscription</option>
+            <option value="codex">Codex · your subscription (developer preview)</option>
+          </select></label
+        >
+        <p>
+          Claude and Codex send the conversation to their provider. Sign in through their official
+          CLI in a terminal: <code>claude auth login</code> or <code>codex login</code>. Marble does
+          not collect account tokens.
+        </p>
+        <label
+          >Model (required for local models)<input name="model" placeholder="Model name" /></label
+        ><label>Local model endpoint<input name="endpoint" /></label
+        ><label
+          >Local speech installation folder<input
+            name="speechDirectory"
+            placeholder="Folder containing .venv and local-speech"
+        /></label>
+        <p>
+          Voice models are installed once with <code>npm run setup:voice -- /path/to/voice</code>.
+          Microphone audio is processed locally and is not saved.
+        </p>
+        <p id="storage"></p>
+        <p id="settings-status" role="status"></p>
+        <button type="submit">Save settings</button>
+        <button type="button" id="test-voice">Test saved audio settings</button>
+      </form>
+    </dialog>
+    <dialog id="conversation">
+      <div class="dialog-title">
+        <h2 id="title">Lesson menu</h2>
+        <button data-close="conversation">×</button>
+      </div>
+
+      <div class="menu-actions">
+        <button id="home">← My lessons</button
+        ><button id="lesson-settings">Audio and tutor settings</button>
+      </div>
+      <label class="row"><input id="show-captions" type="checkbox" /> Show captions</label>
+      <details>
+        <summary>Conversation history</summary>
+        <div id="messages"></div>
+      </details>
+      <button id="download-log">Download session log</button>
+    </dialog>
+    <script type="module" src="/player/app.mjs"></script>
+  </body>
+</html>
