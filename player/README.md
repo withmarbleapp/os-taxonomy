@@ -23,7 +23,8 @@ On this Ubuntu machine, Electron cannot start because unprivileged namespaces ar
 restricted and its SUID sandbox helper is not installed with system permissions.
 The browser player is the working development route. A properly installed Linux
 package needs an administrator-managed sandbox setup / distribution policy. Do
-not ship or use `--no-sandbox` as the solution. No system permissions were changed.
+not ship or use `--no-sandbox` as the solution. See the [path-specific AppArmor
+setup](docs/linux-desktop.md) for this Ubuntu host. No system permissions were changed.
 
 ## Tutor connections
 
