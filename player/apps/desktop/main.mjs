@@ -1,4 +1,4 @@
-import { app, BrowserWindow, session, dialog } from 'electron';
+import { app, BrowserWindow, session, dialog, Menu } from 'electron';
 import { createService } from '../local-service/server.mjs';
 let service, window;
 app.setName('Marble');
@@ -9,6 +9,7 @@ else
     .then(async () => {
       // Do not await readiness at module scope: Electron must finish loading this
       // ESM entry before it can emit ready.
+      if (process.platform !== 'darwin') Menu.setApplicationMenu(null);
       service = await createService({ dataDir: app.getPath('userData') });
       const trusted = (url) => {
         try {
