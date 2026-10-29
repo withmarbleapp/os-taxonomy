@@ -266,7 +266,10 @@ async function send(text) {
   await session.turn(text);
 }
 $('start').onclick = async () => {
-  if (!['claude', 'codex', 'local'].includes(settings.provider)) {
+  if (
+    (['ollama', 'lmstudio'].includes(settings.provider) && !settings.model) ||
+    !['claude', 'codex', 'local', 'ollama', 'lmstudio'].includes(settings.provider)
+  ) {
     openSettings();
     $('settings-status').textContent = 'Choose a tutor and set up local audio to begin.';
     return;

@@ -1,10 +1,18 @@
 export function createSettings({ request, getSettings, setSettings, voice, fixture, pause }) {
   const $ = (id) => document.getElementById(id);
+  const providers = ['claude', 'codex', 'ollama', 'lmstudio'];
+  const isLocal = (p) => p === 'ollama' || p === 'lmstudio';
+  let modelLists = {},
+    selectedModels = {};
   let statuses = {},
     checking,
     voiceTask,
     saving = Promise.resolve();
   const labels = {
+    available: 'Choose a model',
+    no_models: 'No models found',
+    choose_model: 'Choose a model',
+    auth_required: 'Server requires authentication',
     missing: 'Not installed',
     unavailable: 'Could not start',
     sign_in: 'Sign in needed',
@@ -15,12 +23,30 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   };
   const selected = () => $('settings-form').elements.provider.value;
   function render() {
-    for (const p of ['claude', 'codex'])
-      $(p + '-status').textContent = labels[statuses[p]] ?? 'Checking…';
+    for (const p of providers)
+      $(p + '-status').textContent =
+        isLocal(p) && statuses[p] === 'unavailable'
+          ? 'Not running'
+          : (labels[statuses[p]] ?? 'Checking…');
     const p = selected();
+    $('local-model-choice').hidden = !isLocal(p);
+    $('provider-help-note').textContent = isLocal(p)
+      ? 'If the check fails, make sure the server is running and the selected chat model supports structured JSON replies. First loading a model can take a moment.'
+      : 'If you’re already signed in, check your subscription’s usage allowance and try again.';
+    $('connection-note').textContent = isLocal(p)
+      ? 'Marble sends the conversation only to the local app on this computer. Choose a downloaded chat model; there is no cloud fallback.'
+      : 'Uses your subscription: Claude Haiku 5.5 or GPT-6 Luna. Your conversation goes to the provider; microphone audio stays on this device.';
+    if (isLocal(p)) {
+      const select = $('local-model');
+      select.replaceChildren(
+        new Option('Choose a model', ''),
+        ...(modelLists[p] ?? []).map((id) => new Option(id, id)),
+      );
+      select.value = selectedModels[p] ?? '';
+    }
     $('connection-retry').disabled = !p || !!checking;
     $('connection-help').hidden = !!p && statuses[p] === 'ready';
-    for (const name of ['claude', 'codex']) $(name + '-help').hidden = p ? name !== p : false;
+    for (const name of providers) $(name + '-help').hidden = p ? name !== p : false;
     if (statuses[p] === 'ready') {
       $('provider-help').hidden = true;
       $('connection-help').setAttribute('aria-expanded', 'false');
@@ -38,8 +64,15 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   }
   async function discover() {
     try {
-      for (const s of await (await request('connections')).json())
-        if (statuses[s.provider] !== 'ready') statuses[s.provider] = s.state;
+      for (const s of await (await request('connections')).json()) {
+        if (isLocal(s.provider)) {
+          modelLists[s.provider] = s.models ?? [];
+          if (!modelLists[s.provider].includes(selectedModels[s.provider]))
+            selectedModels[s.provider] =
+              modelLists[s.provider].length === 1 ? modelLists[s.provider][0] : '';
+        }
+        if (isLocal(s.provider) || statuses[s.provider] !== 'ready') statuses[s.provider] = s.state;
+      }
       render();
     } catch {
       $('settings-status').textContent =
@@ -49,12 +82,18 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   async function check() {
     const p = selected();
     if (!p || checking) return;
+    const model = selectedModels[p] ?? '';
+    if (isLocal(p) && !model) {
+      if (statuses[p] === 'available' || statuses[p] === 'ready') statuses[p] = 'choose_model';
+      render();
+      return;
+    }
     checking = p;
     statuses[p] = 'checking';
     render();
     try {
       const result = await (
-        await request('provider-check', { method: 'POST', body: { provider: p } })
+        await request('provider-check', { method: 'POST', body: { provider: p, model } })
       ).json();
       statuses[p] = result.state;
     } catch {
@@ -63,7 +102,10 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       checking = null;
       render();
     }
-    if (selected() !== p) await check();
+    if (selected() !== p || (isLocal(p) && selectedModels[p] !== model)) {
+      statuses[p] = 'available';
+      await check();
+    }
   }
   function voiceStatus(text, busy = false, ratio) {
     $('voice-status').textContent = text;
@@ -108,11 +150,21 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   function open() {
     pause();
     $('conversation').close();
-    $('settings-form').elements.provider.value = getSettings().provider;
+    const saved = getSettings();
+    $('settings-form').elements.provider.value = saved.provider;
+    if (isLocal(saved.provider)) selectedModels[saved.provider] = saved.model;
     $('settings').showModal();
     render();
     discover().then(() => {
-      if (selected() && statuses[selected()] !== 'ready') check();
+      if (selected() && statuses[selected()] !== 'ready') {
+        if (isLocal(selected()))
+          save({ provider: selected(), model: selectedModels[selected()] ?? '' })
+            .then(check)
+            .catch((e) => {
+              $('settings-status').textContent = e.message;
+            });
+        else check();
+      }
     });
     if (voice.ready || fixture) voiceStatus('Ready · listening and speaking stay on this device');
     else if (!voiceTask)
@@ -133,7 +185,10 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
     input.onchange = async () => {
       render();
       try {
-        await save({ provider: selected(), model: '' });
+        await save({
+          provider: selected(),
+          model: isLocal(selected()) ? (selectedModels[selected()] ?? '') : '',
+        });
         await check();
       } catch (error) {
         $('settings-status').textContent = error.message;
@@ -141,7 +196,23 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       // Selecting a tutor is all the setup needed; models are managed by Marble.
       prepareVoice().catch(() => {});
     };
-  $('connection-retry').onclick = check;
+  $('local-model').onchange = async () => {
+    const p = selected();
+    selectedModels[p] = $('local-model').value;
+    statuses[p] = 'available';
+    try {
+      await save({ provider: p, model: selectedModels[p] });
+      await check();
+    } catch (e) {
+      $('settings-status').textContent = e.message;
+    }
+  };
+  $('connection-retry').onclick = async () => {
+    await discover();
+    if (isLocal(selected()))
+      await save({ provider: selected(), model: selectedModels[selected()] ?? '' });
+    await check();
+  };
   $('connection-help').onclick = () => {
     const show = $('provider-help').hidden;
     $('provider-help').hidden = !show;
@@ -151,7 +222,11 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   $('settings-form').onsubmit = async (event) => {
     event.preventDefault();
     if (!selected()) {
-      $('settings-status').textContent = 'Choose Claude or Codex to continue.';
+      $('settings-status').textContent = 'Choose a tutor connection to continue.';
+      return;
+    }
+    if (isLocal(selected()) && !selectedModels[selected()]) {
+      $('settings-status').textContent = 'Choose a local chat model first.';
       return;
     }
     await saving.catch(() => {});

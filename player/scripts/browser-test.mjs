@@ -32,7 +32,12 @@ const seen = [],
   say = (text) => ({ tool: 'say', arguments: JSON.stringify({ text }) });
 const service = await createService({
     dataDir: dir,
-    availability:async provider=>({provider,state:'missing'}),
+    localDiscovery: async (provider) => ({
+      provider,
+      state: 'available',
+      models: ['model-a', 'model-b'],
+    }),
+    availability: async (provider) => ({ provider, state: 'missing' }),
     speech: {
       ...fixtureSpeech,
       transcribe: async () => {
@@ -41,6 +46,7 @@ const service = await createService({
       },
     },
     inference: async ({ context, messages }) => {
+      if (!context.snapshot) return say('ready');
       seen.push(structuredClone(context));
       const last = messages.at(-1),
         s = context.snapshot.state;
@@ -271,6 +277,24 @@ try {
     'allow-scripts allow-forms',
   );
   assert.deepEqual(b.errors, []);
+  await b.evaluate("document.querySelector('#settings-open').click()");
+  await b.until("document.querySelector('#ollama-status').textContent==='Choose a model'");
+  await b.evaluate("document.querySelector('[value=ollama]').click()");
+  await b.until("document.querySelector('#local-model').options.length===3");
+  await b.evaluate(
+    "const select=document.querySelector('#local-model');select.value='model-b';select.dispatchEvent(new Event('change'))",
+  );
+  await b.until("document.querySelector('#ollama-status').textContent==='Connected'");
+  const configAfter = await b.evaluate(
+    "fetch('/api/config').then(r=>r.json()).then(c=>c.settings)",
+  );
+  assert.equal(configAfter.provider, 'ollama');
+  assert.equal(configAfter.model, 'model-b');
+  await b.evaluate("document.querySelector('[data-close=settings]').click()");
+  await b.evaluate("document.querySelector('#settings-open').click()");
+  await b.until("document.querySelector('#local-model').value==='model-b'");
+  assert.deepEqual(b.errors, []);
+  await shot('local-settings');
   console.log(
     'PASS: cube wrong→correct revision; Roanoke source→scene focus; imported third lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
   );

@@ -1,3 +1,8 @@
+import {
+  localEndpoints,
+  localAvailability,
+  subscriptionModels,
+} from '../../packages/providers/local.mjs';
 import http from 'node:http';
 import { readFile, writeFile, mkdir, readdir, appendFile } from 'node:fs/promises';
 import { join, resolve, extname } from 'node:path';
@@ -28,7 +33,7 @@ export const defaults = {
 export function checkSettings(input) {
   const s = { ...defaults };
   if (!input || typeof input !== 'object') throw Error('Invalid settings');
-  if (!['preview', 'local', 'claude', 'codex'].includes(input.provider))
+  if (!['preview', 'local', 'claude', 'codex', 'ollama', 'lmstudio'].includes(input.provider))
     throw Error('Unknown provider');
   for (const k of ['model', 'endpoint', 'speechDirectory'])
     if (input[k] !== undefined && (typeof input[k] !== 'string' || input[k].length > 1000))
@@ -42,6 +47,8 @@ export function checkSettings(input) {
     ),
   );
   if (typeof s.speech !== 'boolean') throw Error('Invalid speech setting');
+  if (subscriptionModels[s.provider]) s.model = subscriptionModels[s.provider];
+  if (localEndpoints[s.provider]) s.endpoint = localEndpoints[s.provider];
   if (s.provider === 'local') {
     const url = new URL(s.endpoint);
     if (
@@ -71,6 +78,7 @@ export async function createService({
   inference = infer,
   speech: suppliedSpeech,
   availability = providerAvailability,
+  localDiscovery = localAvailability,
   modelStore: suppliedModelStore,
 } = {}) {
   if (!dataDir) throw Error('dataDir is required');
@@ -180,7 +188,11 @@ export async function createService({
         if (req.method === 'GET' && path === '/api/connections') {
           json(
             200,
-            await Promise.all(['claude', 'codex'].map((provider) => availability(provider))),
+            await Promise.all(
+              ['claude', 'codex', 'ollama', 'lmstudio'].map((provider) =>
+                localEndpoints[provider] ? localDiscovery(provider) : availability(provider),
+              ),
+            ),
           );
           return;
         }
@@ -255,10 +267,15 @@ export async function createService({
           } else if (path === '/api/voice-prepare') {
             json(200, models.prepare());
           } else if (path === '/api/provider-check') {
-            const { provider } = JSON.parse(await body(req, 1000));
-            const status = await availability(provider);
-            if (status.state !== 'signed_in') {
+            const { provider, model } = JSON.parse(await body(req, 3000));
+            const isLocal = !!localEndpoints[provider];
+            const status = await (isLocal ? localDiscovery(provider) : availability(provider));
+            if (isLocal ? status.state !== 'available' : status.state !== 'signed_in') {
               json(200, status);
+              return;
+            }
+            if (isLocal && !status.models.includes(model)) {
+              json(200, { provider, state: 'choose_model', models: status.models });
               return;
             }
             try {
@@ -266,14 +283,17 @@ export async function createService({
                 settings: {
                   ...settings,
                   provider,
-                  model: provider === settings.provider ? settings.model : '',
+                  model: isLocal ? model : subscriptionModels[provider],
                 },
                 system:
                   'Connection check. Return one JSON decision with tool say and arguments containing text ready. No explanation is needed.',
                 messages: [],
                 context: {},
                 tools: [teachingTools.find((t) => t.name === 'say')],
-                signal: AbortSignal.any([controller.signal, AbortSignal.timeout(30000)]),
+                signal: AbortSignal.any([
+                  controller.signal,
+                  AbortSignal.timeout(isLocal ? 120000 : 30000),
+                ]),
               });
               validate(decisionSchema, result);
               if (result.tool !== 'say' || typeof JSON.parse(result.arguments).text !== 'string')

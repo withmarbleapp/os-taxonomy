@@ -1,3 +1,4 @@
+import { localEndpoints, subscriptionModels, requireLocalModel } from './local.mjs';
 import { spawn } from 'node:child_process';
 import { mkdtemp, writeFile, readFile, rm } from 'node:fs/promises';
 import { tmpdir, homedir } from 'node:os';
@@ -66,6 +67,7 @@ export async function infer({
   context,
   signal,
   runner = runProcess,
+  fetcher = fetch,
 }) {
   if (settings.provider === 'preview')
     return {
@@ -74,30 +76,48 @@ export async function infer({
         text: 'You can explore this lesson here. Choose a tutor connection in Settings to have a conversation.',
       }),
     };
+  settings = {
+    ...settings,
+    ...(subscriptionModels[settings.provider]
+      ? { model: subscriptionModels[settings.provider] }
+      : {}),
+  };
   const prompt = JSON.stringify({ system, tools, messages, context });
-  if (settings.provider === 'local') {
-    const url = new URL(settings.endpoint);
+  if (settings.provider === 'local' || localEndpoints[settings.provider]) {
+    if (localEndpoints[settings.provider])
+      await requireLocalModel(settings.provider, settings.model, fetcher);
+    const ollama = settings.provider === 'ollama';
+    const url = new URL(localEndpoints[settings.provider] ?? settings.endpoint);
     if (!['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname) || url.protocol !== 'http:')
       throw Error('Local inference requires an HTTP loopback endpoint');
-    const response = await fetch(url.href.replace(/\/$/, '') + '/chat/completions', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      signal: AbortSignal.any([signal, AbortSignal.timeout(120000)]),
-      body: JSON.stringify({
-        model: settings.model,
-        messages: [
-          { role: 'system', content: system },
-          { role: 'user', content: JSON.stringify({ tools, messages, context }) },
-        ],
-        response_format: {
-          type: 'json_schema',
-          json_schema: { name: 'tutor_decision', strict: true, schema: decisionSchema },
-        },
-        max_tokens: 1200,
-      }),
-    });
+    const response = await fetcher(
+      url.href.replace(/\/$/, '') + (ollama ? '/api/chat' : '/chat/completions'),
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        signal: AbortSignal.any([...(signal ? [signal] : []), AbortSignal.timeout(120000)]),
+        redirect: 'error',
+        body: JSON.stringify({
+          model: settings.model,
+          messages: [
+            { role: 'system', content: system },
+            { role: 'user', content: JSON.stringify({ tools, messages, context }) },
+          ],
+          ...(ollama
+            ? { format: decisionSchema, stream: false, options: { num_predict: 1200 } }
+            : {
+                response_format: {
+                  type: 'json_schema',
+                  json_schema: { name: 'tutor_decision', strict: true, schema: decisionSchema },
+                },
+                max_tokens: 1200,
+              }),
+        }),
+      },
+    );
     if (!response.ok) throw Error(`Local model HTTP ${response.status}`);
-    return JSON.parse((await response.json()).choices[0].message.content);
+    const data = await response.json();
+    return JSON.parse(ollama ? data.message.content : data.choices[0].message.content);
   }
   const env = providerEnvironment();
   const cwd = await mkdtemp(join(tmpdir(), 'marble-tutor-'));

@@ -39,7 +39,7 @@ try {
   await b.until("document.querySelector('#claude-status').textContent==='Not installed'");
   assert.equal(
     await b.evaluate(
-      "document.querySelectorAll('#settings input:not([type=radio]), #settings select').length",
+      "document.querySelectorAll('#settings input:not([type=radio]), #settings select:not(#local-model)').length",
     ),
     0,
   );

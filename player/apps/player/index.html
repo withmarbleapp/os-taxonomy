@@ -138,8 +138,24 @@
               ><strong>Codex</strong><small id="codex-status">Checking…</small></span
             ></label
           >
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="ollama" /><span
+              ><strong>Ollama</strong><small id="ollama-status">Checking…</small></span
+            ></label
+          >
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="lmstudio" /><span
+              ><strong>LM Studio</strong><small id="lmstudio-status">Checking…</small></span
+            ></label
+          >
         </fieldset>
-        <p class="settings-note">
+        <section id="local-model-choice" hidden>
+          <label for="local-model">Model on your device</label
+          ><select id="local-model">
+            <option value="">Choose a model</option>
+          </select>
+        </section>
+        <p class="settings-note" id="connection-note">
           Uses your subscription. Your conversation goes to the provider; your microphone audio
           stays on this device. Choosing a tutor runs a short connection check.
         </p>
@@ -150,6 +166,49 @@
           </button>
         </div>
         <section id="provider-help" hidden>
+          <div id="ollama-help" hidden>
+            <h3>Connect Ollama</h3>
+            <ol>
+              <li>
+                <a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer"
+                  >Install Ollama ↗</a
+                >
+                and open it (or run <code>ollama serve</code>).
+              </li>
+              <li>Download a local chat model in Ollama.</li>
+              <li>Use the default port 11434, then press Check again and choose the model here.</li>
+            </ol>
+            <p>
+              Cloud models are excluded.
+              <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer"
+                >Ollama getting started ↗</a
+              >
+            </p>
+          </div>
+          <div id="lmstudio-help" hidden>
+            <h3>Connect LM Studio</h3>
+            <ol>
+              <li>
+                <a href="https://lmstudio.ai/download" target="_blank" rel="noopener noreferrer"
+                  >Install LM Studio ↗</a
+                >
+                and download a chat model.
+              </li>
+              <li>
+                Load the model and start the local server in the Developer tab on port 1234. This
+                connection uses the local server without authentication.
+              </li>
+              <li>Press Check again, then choose the model here.</li>
+            </ol>
+            <p>
+              <a
+                href="https://lmstudio.ai/docs/developer/core/server"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Local server guide ↗</a
+              >
+            </p>
+          </div>
           <div id="claude-help" hidden>
             <h3>Connect Claude</h3>
             <ol>
@@ -187,7 +246,7 @@
               <li>Come back and select <strong>Check again</strong>.</li>
             </ol>
           </div>
-          <p>
+          <p id="provider-help-note">
             If you’re already signed in, check your subscription’s usage allowance and try again.
           </p>
         </section>
@@ -198,8 +257,8 @@
           </div>
           <progress id="voice-progress" hidden></progress>
           <p class="settings-note">
-            Marble downloads and stores the voice models for you. Listening and speaking then
-            work locally on this device.
+            Marble downloads and stores the voice models for you. Listening and speaking then work
+            locally on this device.
           </p>
           <div class="settings-actions">
             <button type="button" id="prepare-voice">Set up voice</button

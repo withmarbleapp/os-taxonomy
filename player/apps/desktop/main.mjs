@@ -53,6 +53,10 @@ else
           },
         });
         const helpUrls = new Set([
+          'https://ollama.com/download',
+          'https://docs.ollama.com/quickstart',
+          'https://lmstudio.ai/download',
+          'https://lmstudio.ai/docs/developer/core/server',
           'https://code.claude.com/docs/en/setup',
           'https://developers.openai.com/codex/cli/',
         ]);
