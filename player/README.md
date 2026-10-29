@@ -58,21 +58,26 @@ Official integration references:
 
 ## Local voice
 
-The existing Moonshine / Phonon worker stack is reused. Install `uv` and `curl`,
-then provision its pinned dependencies and checksummed models once:
+Choose **Claude** or **Codex** in Settings. Marble checks installation and subscription
+sign-in, then makes a small inference check for the selected provider. If it cannot
+connect, Setup instructions links to the official installation and login guides.
+No account tokens are collected by Marble. CLI defaults select the model.
 
-```sh
-npm run setup:voice -- /absolute/path/to/marble-voice
-```
+Speech now runs in browser workers inside Electron: pinned Moonshine WASM 0.1.5
+(small-streaming English, browser-compatible 26_07_30 bundle) and Phonon 0.5.0
+(Q8 English / the original Freya voice). Selecting a tutor prepares voice automatically;
+Set up voice / Retry is also available. About 230 MB is downloaded once into the
+app's per-user data directory, with size and SHA-256 verification before use.
+Existing configured native model files are reused when their checksums match.
+There is no Python, uv, curl, speech-folder field, cloud speech, or OS-voice fallback
+in this path. Native Python adapters remain as development reference, not the default.
 
-Set that directory in Settings. An existing prototype
-installation containing `.venv` and `local-speech/models` can be used directly.
-Microphone audio stays local and is not saved. The current player uses complete
-hold/release recordings and WAV playback; native streaming worker methods are
-preserved but streaming playback is not yet connected in this new UI. No cloud
-speech or OS-voice fallback is used. An end-user installer for Python and model
-provisioning remains to be built. English/Linux is the checked configuration;
-Mac and Windows packaging and hardware behavior remain untested.
+Hold/release recordings are decoded and transcribed in a worker. Phonon streams
+PCM to Web Audio for prompt playback and interruption. Audio is not saved or
+sent to a provider. The browser prototype has passed real synthesis/transcription,
+interruption, and offline-reload tests on Linux Chromium; child speech accuracy,
+Mac/Windows and mobile browsers are not yet qualified. See
+[browser speech](docs/browser-speech.md) for hosting requirements and test commands.
 
 ## Lesson controls
 

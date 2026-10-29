@@ -1,7 +1,7 @@
 import { spawn } from 'node:child_process';
 import { mkdtemp, writeFile, readFile, rm } from 'node:fs/promises';
-import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { tmpdir, homedir } from 'node:os';
+import { join, delimiter } from 'node:path';
 export const decisionSchema = {
   type: 'object',
   properties: { tool: { type: 'string' }, arguments: { type: 'string' } },
@@ -99,30 +99,7 @@ export async function infer({
     if (!response.ok) throw Error(`Local model HTTP ${response.status}`);
     return JSON.parse((await response.json()).choices[0].message.content);
   }
-  const env = Object.fromEntries(
-    [
-      'PATH',
-      'HOME',
-      'USER',
-      'USERPROFILE',
-      'APPDATA',
-      'LOCALAPPDATA',
-      'SystemRoot',
-      'SYSTEMROOT',
-      'WINDIR',
-      'TEMP',
-      'TMP',
-      'TMPDIR',
-      'XDG_CONFIG_HOME',
-      'XDG_DATA_HOME',
-      'XDG_CACHE_HOME',
-      'HTTPS_PROXY',
-      'HTTP_PROXY',
-      'NO_PROXY',
-    ]
-      .filter((k) => process.env[k] !== undefined)
-      .map((k) => [k, process.env[k]]),
-  );
+  const env = providerEnvironment();
   const cwd = await mkdtemp(join(tmpdir(), 'marble-tutor-'));
   try {
     if (settings.provider === 'claude') {
@@ -199,4 +176,41 @@ export async function infer({
   } finally {
     await rm(cwd, { recursive: true, force: true });
   }
+}
+
+export function providerEnvironment() {
+  const env = Object.fromEntries(
+    [
+      'PATH',
+      'HOME',
+      'USER',
+      'USERPROFILE',
+      'APPDATA',
+      'LOCALAPPDATA',
+      'SystemRoot',
+      'SYSTEMROOT',
+      'WINDIR',
+      'TEMP',
+      'TMP',
+      'TMPDIR',
+      'XDG_CONFIG_HOME',
+      'XDG_DATA_HOME',
+      'XDG_CACHE_HOME',
+      'HTTPS_PROXY',
+      'HTTP_PROXY',
+      'NO_PROXY',
+    ]
+      .filter((k) => process.env[k] !== undefined)
+      .map((k) => [k, process.env[k]]),
+  );
+  // Desktop launchers often omit the official native CLI install directory.
+  env.PATH = [
+    ...new Set([
+      ...(env.PATH ?? '').split(delimiter).filter(Boolean),
+      join(homedir(), '.local', 'bin'),
+      '/usr/local/bin',
+      '/opt/homebrew/bin',
+    ]),
+  ].join(delimiter);
+  return env;
 }

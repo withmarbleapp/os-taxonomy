@@ -1,4 +1,4 @@
-import { app, BrowserWindow, session, dialog, Menu } from 'electron';
+import { app, BrowserWindow, session, dialog, Menu, shell } from 'electron';
 import { createService } from '../local-service/server.mjs';
 let service, window;
 app.setName('Marble');
@@ -52,7 +52,14 @@ else
             webviewTag: false,
           },
         });
-        window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
+        const helpUrls = new Set([
+          'https://code.claude.com/docs/en/setup',
+          'https://developers.openai.com/codex/cli/',
+        ]);
+        window.webContents.setWindowOpenHandler(({ url }) => {
+          if (helpUrls.has(url)) shell.openExternal(url).catch(console.error);
+          return { action: 'deny' };
+        });
         window.webContents.on('will-navigate', (e, url) => {
           if (!trusted(url)) e.preventDefault();
         });

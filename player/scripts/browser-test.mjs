@@ -32,6 +32,7 @@ const seen = [],
   say = (text) => ({ tool: 'say', arguments: JSON.stringify({ text }) });
 const service = await createService({
     dataDir: dir,
+    availability:async provider=>({provider,state:'missing'}),
     speech: {
       ...fixtureSpeech,
       transcribe: async () => {

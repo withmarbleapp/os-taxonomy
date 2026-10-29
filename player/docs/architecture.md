@@ -8,7 +8,7 @@ packages/lesson-contract   Versioned metadata and update validation
 packages/lesson-sdk        MessagePort bridge between scene and player
 packages/teaching-runtime  Adaptive decisions, latest context, cancellation
 packages/providers        Local structured-output HTTP and official CLI adapters
-packages/voice            Persistent local speech workers and model provisioning
+packages/voice            Browser speech workers, capture/playback and verified model provisioning
 packages/authoring-tools  Archive validation, CLI and minimal lesson starter
 lessons/                  Cubes and Croatoan models, visuals and teaching packages
 ```
@@ -40,8 +40,8 @@ A future production authentication adapter must be qualified with its provider;
 the development CLI adapters are not a commercial-auth promise.
 
 Current limits: no signatures/trust catalog, automatic updates, account sync,
-crash recovery of ongoing sessions, packaged Python interpreter, managed LLM
-weights, streaming voice UI, or signed/notarized installers. Imported JS can
+crash recovery of ongoing sessions, managed LLM weights, or signed/notarized
+installers. Browser speech is implemented; hosted deployment is not yet shipped. Imported JS can
 still consume resources; sandboxing is not a resource quota. Providers are
 experimental integrations; their real tool exposure and latency need versioned
 integration qualification before distributing to families.

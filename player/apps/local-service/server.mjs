@@ -13,7 +13,9 @@ import {
 import { safePath } from '../../packages/lesson-contract/package.mjs';
 import { validate } from '../../packages/lesson-contract/contracts.mjs';
 import { tutorSystem, teachingTools } from '../../packages/teaching-runtime/session.mjs';
+import { providerAvailability } from '../../packages/providers/availability.mjs';
 import { infer, decisionSchema } from '../../packages/providers/index.mjs';
+import { createModelStore } from '../../packages/voice/model-store.mjs';
 import { createLocalSpeech } from '../../packages/voice/local-speech.mjs';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 export const defaults = {
@@ -68,6 +70,8 @@ export async function createService({
   port = 0,
   inference = infer,
   speech: suppliedSpeech,
+  availability = providerAvailability,
+  modelStore: suppliedModelStore,
 } = {}) {
   if (!dataDir) throw Error('dataDir is required');
   await mkdir(dataDir, { recursive: true, mode: 0o700 });
@@ -79,6 +83,12 @@ export async function createService({
   } catch (e) {
     if (e.code !== 'ENOENT') throw e;
   }
+  const models =
+    suppliedModelStore ??
+    createModelStore({
+      directory: join(dataDir, 'voice-models'),
+      legacyDirectory: settings.speechDirectory,
+    });
   const token = randomUUID(),
     catalog = new Map(),
     bundled = new Map();
@@ -129,9 +139,11 @@ export async function createService({
       path = url.pathname;
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Referrer-Policy', 'no-referrer');
+    res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+    res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
     res.setHeader(
       'Content-Security-Policy',
-      "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+      "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
     );
     try {
       if (path.startsWith('/api/')) {
@@ -145,7 +157,12 @@ export async function createService({
           return;
         }
         if (path === '/api/config' && req.method === 'GET') {
-          json(200, { token, settings, dataDir });
+          json(200, {
+            token,
+            settings,
+            dataDir,
+            speechBackend: suppliedSpeech ? 'fixture' : 'browser',
+          });
           return;
         }
         if (req.headers['x-marble-token'] !== token) {
@@ -154,6 +171,17 @@ export async function createService({
         }
         if (req.method === 'POST' && req.headers.origin !== origin) {
           json(403, { error: 'Player origin required' });
+          return;
+        }
+        if (req.method === 'GET' && path === '/api/voice') {
+          json(200, await models.inspect());
+          return;
+        }
+        if (req.method === 'GET' && path === '/api/connections') {
+          json(
+            200,
+            await Promise.all(['claude', 'codex'].map((provider) => availability(provider))),
+          );
           return;
         }
         if (req.method === 'GET' && path === '/api/library') {
@@ -224,8 +252,40 @@ export async function createService({
             const p = await install(bytes, join(dataDir, 'library'));
             await refresh();
             json(200, p.manifest);
+          } else if (path === '/api/voice-prepare') {
+            json(200, models.prepare());
+          } else if (path === '/api/provider-check') {
+            const { provider } = JSON.parse(await body(req, 1000));
+            const status = await availability(provider);
+            if (status.state !== 'signed_in') {
+              json(200, status);
+              return;
+            }
+            try {
+              const result = await inference({
+                settings: {
+                  ...settings,
+                  provider,
+                  model: provider === settings.provider ? settings.model : '',
+                },
+                system:
+                  'Connection check. Return one JSON decision with tool say and arguments containing text ready. No explanation is needed.',
+                messages: [],
+                context: {},
+                tools: [teachingTools.find((t) => t.name === 'say')],
+                signal: AbortSignal.any([controller.signal, AbortSignal.timeout(30000)]),
+              });
+              validate(decisionSchema, result);
+              if (result.tool !== 'say' || typeof JSON.parse(result.arguments).text !== 'string')
+                throw Error('Unexpected reply');
+              json(200, { provider, state: 'ready' });
+            } catch {
+              json(200, { provider, state: 'failed' });
+            }
           } else if (path === '/api/settings') {
-            const next = checkSettings(JSON.parse(await body(req, 12000)));
+            const input = JSON.parse(await body(req, 12000));
+            // The simple UI selects a provider; preserve internally managed voice settings.
+            const next = checkSettings({ ...settings, ...input });
             await writeFile(join(dataDir, 'settings.json'), JSON.stringify(next, null, 2), {
               mode: 0o600,
             });
@@ -291,7 +351,9 @@ export async function createService({
       }
       let file,
         lesson = false;
-      if (path.startsWith('/content/')) {
+      if (path.startsWith('/speech-models/')) {
+        file = models.path(path.slice('/speech-models/'.length));
+      } else if (path.startsWith('/content/')) {
         const [, , id, version, ...parts] = path.split('/'),
           p = catalog.get(id + '@' + version),
           rel = parts.join('/');
@@ -307,6 +369,8 @@ export async function createService({
           '/runtime/': 'packages/teaching-runtime/',
           '/lesson-contract/': 'packages/lesson-contract/',
           '/voice/': 'packages/voice/',
+          '/speech-vendor/moonshine/': 'node_modules/@moonshine-ai/moonshine-wasm/dist/',
+          '/speech-vendor/phonon/': 'node_modules/phonon-tts/',
         };
         if (path === '/') file = join(root, 'apps/player/index.html');
         else {
@@ -316,6 +380,11 @@ export async function createService({
         }
       }
       const mime = {
+        '.wasm': 'application/wasm',
+        '.ort': 'application/octet-stream',
+        '.bin': 'application/octet-stream',
+        '.gguf': 'application/octet-stream',
+        '.safetensors': 'application/octet-stream',
         '.html': 'text/html',
         '.mjs': 'text/javascript',
         '.js': 'text/javascript',
@@ -328,6 +397,13 @@ export async function createService({
         '.txt': 'text/plain',
       }[extname(file)];
       if (!mime) throw Error('Unknown asset type');
+      // Emscripten's embind uses Function() for bindings. Permit it only inside
+      // the trusted STT worker; never in the player page or imported lessons.
+      if (path === '/voice/browser-stt-worker.mjs' || path.startsWith('/speech-vendor/moonshine/'))
+        res.setHeader(
+          'Content-Security-Policy',
+          "default-src 'self'; script-src 'self' 'unsafe-eval'; worker-src 'self'; connect-src 'self';",
+        );
       if (lesson) {
         res.setHeader(
           'Content-Security-Policy',
@@ -339,8 +415,10 @@ export async function createService({
         path.startsWith('/sdk/') ||
         path === '/player/scene-base.css' ||
         path.startsWith('/player/assets/')
-      )
+      ) {
         res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+      }
       res.writeHead(200, { 'content-type': mime, 'cache-control': 'no-store' });
       res.end(await readFile(file));
     } catch (e) {

@@ -1,3 +1,5 @@
+import { BrowserSpeech } from '/voice/browser-speech.mjs';
+import { createSettings } from './settings.mjs';
 import { bindTalkShortcut } from '/sdk/shortcuts.mjs';
 import { connectLesson } from '/sdk/host.mjs';
 import { TeachingSession } from '/runtime/session.mjs';
@@ -16,6 +18,19 @@ let settings = config.settings,
   recordEpoch = 0,
   captureSource = null;
 const capture = new PushToTalkCapture();
+const browserVoice = new BrowserSpeech();
+let speechController;
+const settingsUI = createSettings({
+  request,
+  getSettings: () => settings,
+  setSettings: (value) => {
+    settings = value;
+  },
+  voice: browserVoice,
+  fixture: config.speechBackend === 'fixture',
+  pause: pauseControls,
+});
+const openSettings = () => settingsUI.open();
 for (const [column, x] of [56.62, 64.41, 72.19, 79.98, 87.77].entries()) {
   const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
   group.style.setProperty('--column', column);
@@ -97,6 +112,8 @@ function message(text, learner = false) {
   if ($('conversation').open) p.scrollIntoView({ block: 'nearest' });
 }
 function stopAudio() {
+  speechController?.abort();
+  speechController = null;
   if (audio) {
     audio.pause();
     audio.dispatchEvent(new Event('ended'));
@@ -115,6 +132,14 @@ async function speak(text, signal) {
   if (!settings.speech) throw Error('Set up local audio before starting a lesson.');
   phase('speaking');
   try {
+    if (config.speechBackend === 'browser') {
+      speechController = new AbortController();
+      await browserVoice.speak(
+        text,
+        signal ? AbortSignal.any([signal, speechController.signal]) : speechController.signal,
+      );
+      return;
+    }
     const r = await request('speak', { method: 'POST', body: { text }, signal });
     if (signal?.aborted) return;
     audioUrl = URL.createObjectURL(await r.blob());
@@ -241,12 +266,17 @@ async function send(text) {
   await session.turn(text);
 }
 $('start').onclick = async () => {
-  if (!settings.speech || !settings.speechDirectory || settings.provider === 'preview') {
+  if (!['claude', 'codex', 'local'].includes(settings.provider)) {
     openSettings();
     $('settings-status').textContent = 'Choose a tutor and set up local audio to begin.';
     return;
   }
+  const startLabel = $('start').textContent;
+  $('start').disabled = true;
   try {
+    if (config.speechBackend === 'browser' && !browserVoice.ready)
+      $('start').textContent = 'Preparing voice…';
+    await settingsUI.prepareVoice();
     const microphone = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
     microphone.getTracks().forEach((track) => track.stop());
     $('start-cover').hidden = true;
@@ -259,6 +289,9 @@ $('start').onclick = async () => {
       e.name === 'NotAllowedError'
         ? 'Allow microphone access to start the voice lesson.'
         : e.message;
+  } finally {
+    $('start').disabled = false;
+    $('start').textContent = startLabel;
   }
 };
 $('home').onclick = () => {
@@ -336,9 +369,12 @@ async function endTalk() {
       return;
     }
     status('Listening to your words…');
-    const { text } = await (
-      await request('transcribe', { method: 'POST', body: blob, type: blob.type })
-    ).json();
+    const { text } =
+      config.speechBackend === 'browser'
+        ? await browserVoice.transcribe(blob)
+        : await (
+            await request('transcribe', { method: 'POST', body: blob, type: blob.type })
+          ).json();
     if (epoch === recordEpoch) {
       if (text.trim()) await send(text);
       else {
@@ -387,39 +423,8 @@ for (const dialog of [$('conversation'), $('settings'), $('compose')])
   dialog.addEventListener('close', () => {
     if (canTalk()) port?.setShortcutsEnabled(true).catch(error);
   });
-function openSettings() {
-  pauseControls();
-  $('conversation').close();
-  for (const [k, v] of Object.entries(settings)) {
-    const el = $('settings-form').elements[k];
-    if (el) el.value = v;
-  }
-  $('storage').textContent = 'Session logs and imported lessons: ' + config.dataDir;
-  $('settings').showModal();
-}
 $('settings-open').onclick = openSettings;
 $('lesson-settings').onclick = openSettings;
-$('settings-form').onsubmit = async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  try {
-    settings = await (
-      await request('settings', {
-        method: 'POST',
-        body: {
-          provider: form.provider.value,
-          model: form.model.value,
-          endpoint: form.endpoint.value,
-          speechDirectory: form.speechDirectory.value,
-          speech: true,
-        },
-      })
-    ).json();
-    $('settings').close();
-  } catch (e) {
-    $('settings-status').textContent = e.message;
-  }
-};
 $('import').onchange = async (e) => {
   const f = e.target.files[0];
   if (!f) return;
@@ -452,6 +457,15 @@ $('test-voice').onclick = async () => {
   button.disabled = true;
   $('settings-status').textContent = 'Testing local voice…';
   try {
+    if (config.speechBackend === 'browser') {
+      await settingsUI.prepareVoice();
+      stopAudio();
+      speechController = new AbortController();
+      await browserVoice.speak('Hello! Your Marble audio is working.', speechController.signal);
+      $('settings-status').textContent =
+        'Voice is working. Hold the walkie-talkie or Space to speak during a lesson.';
+      return;
+    }
     const response = await request('speak', {
       method: 'POST',
       body: { text: 'Hello! Your Marble audio is working.' },

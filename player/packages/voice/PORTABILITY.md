@@ -1,5 +1,10 @@
 # Moonshine / Phonon portability
 
+The default player now uses browser speech workers. See [browser speech](../../docs/browser-speech.md)
+for the current implementation and measured checks. The native/Python details
+below describe the retained legacy implementation only; they are not setup
+requirements for the app.
+
 The scene and teaching runtime keep the same provider-neutral ports. The browser
 owns microphone capture and playback; the desktop server exchanges PCM/text with
 persistent speech workers. No experience or lesson code needs to change per OS.

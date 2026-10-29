@@ -37,9 +37,9 @@ npm start                     # development app
 ./dist/linux-unpacked/marble-player   # packaged local app
 ```
 
-The native app has its own per-user data directory. Select the existing speech
-installation and tutor connection in its Settings; browser development settings
-are not silently imported. No new model download is required when reusing them.
+The native app has its own per-user data directory. Choose Claude or Codex in Settings; Marble manages browser speech downloads.
+Browser development settings are not silently imported. Previously configured
+native models are reused if their checksums match the browser model manifest.
 
 Regenerate and reload the profile if the executable paths change. To undo:
 

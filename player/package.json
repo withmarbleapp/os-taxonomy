@@ -21,7 +21,9 @@
     "format": "prettier --write apps packages scripts test"
   },
   "dependencies": {
+    "@moonshine-ai/moonshine-wasm": "0.1.5",
     "fflate": "0.8.3",
+    "phonon-tts": "0.5.0",
     "ws": "8.22.0"
   },
   "build": {

@@ -6,8 +6,11 @@ provider connections, development commands and distribution limitations.
 
 `player/packages/voice` contains capture/playback, worker source, dependency locks,
 checksummed model manifests and setup tools. Large models are installed locally,
-not committed or included in lesson packages. Existing speech installations can
-be selected in Settings; moving the repository does not require downloading them.
+not committed or included in lesson packages. Settings offers Claude or Codex and manages browser speech setup automatically.
+Moonshine and Phonon run in browser workers; Python is not required. Model files
+live in the player data directory and are verified against the pinned manifest.
+See the [browser speech notes](../../../../player/docs/browser-speech.md) for
+hosting requirements and validation limits.
 
 `player/packages/teaching-runtime` orchestrates adaptive conversation and fresh
 state. `player/packages/providers` contains inference adapters. `player/apps/player`

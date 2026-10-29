@@ -125,35 +125,89 @@
           <h2>Your tutor</h2>
           <button type="button" data-close="settings">×</button>
         </div>
-        <label
-          >Connection<select name="provider">
-            <option value="preview" disabled>Choose your tutor connection</option>
-            <option value="local">Local model · offline inference</option>
-            <option value="claude">Claude Code · your subscription</option>
-            <option value="codex">Codex · your subscription (developer preview)</option>
-          </select></label
-        >
-        <p>
-          Claude and Codex send the conversation to their provider. Sign in through their official
-          CLI in a terminal: <code>claude auth login</code> or <code>codex login</code>. Marble does
-          not collect account tokens.
+        <p class="settings-intro">Choose who you’d like to learn with.</p>
+        <fieldset class="provider-choices">
+          <legend class="sr-only">Tutor provider</legend>
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="claude" /><span
+              ><strong>Claude</strong><small id="claude-status">Checking…</small></span
+            ></label
+          >
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="codex" /><span
+              ><strong>Codex</strong><small id="codex-status">Checking…</small></span
+            ></label
+          >
+        </fieldset>
+        <p class="settings-note">
+          Uses your subscription. Your conversation goes to the provider; your microphone audio
+          stays on this device. Choosing a tutor runs a short connection check.
         </p>
-        <label
-          >Model (required for local models)<input name="model" placeholder="Model name" /></label
-        ><label>Local model endpoint<input name="endpoint" /></label
-        ><label
-          >Local speech installation folder<input
-            name="speechDirectory"
-            placeholder="Folder containing .venv and local-speech"
-        /></label>
-        <p>
-          Voice models are installed once with <code>npm run setup:voice -- /path/to/voice</code>.
-          Microphone audio is processed locally and is not saved.
-        </p>
-        <p id="storage"></p>
+        <div class="settings-actions">
+          <button type="button" id="connection-retry">Check again</button
+          ><button type="button" id="connection-help" aria-expanded="false">
+            Setup instructions
+          </button>
+        </div>
+        <section id="provider-help" hidden>
+          <div id="claude-help" hidden>
+            <h3>Connect Claude</h3>
+            <ol>
+              <li>
+                Install Claude Code using the
+                <a
+                  href="https://code.claude.com/docs/en/setup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >official setup guide ↗</a
+                >.
+              </li>
+              <li>
+                Open a terminal and run <code>claude auth login</code>. Sign in with your Claude
+                subscription.
+              </li>
+              <li>Come back and select <strong>Check again</strong>.</li>
+            </ol>
+          </div>
+          <div id="codex-help" hidden>
+            <h3>Connect Codex</h3>
+            <ol>
+              <li>
+                Install Codex CLI using the
+                <a
+                  href="https://developers.openai.com/codex/cli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >official setup guide ↗</a
+                >.
+              </li>
+              <li>
+                Open a terminal and run <code>codex login</code>. Choose your ChatGPT account.
+              </li>
+              <li>Come back and select <strong>Check again</strong>.</li>
+            </ol>
+          </div>
+          <p>
+            If you’re already signed in, check your subscription’s usage allowance and try again.
+          </p>
+        </section>
+        <section class="speech-settings">
+          <div>
+            <h3>Voice on your device</h3>
+            <p id="voice-status" role="status">Checking voice…</p>
+          </div>
+          <progress id="voice-progress" hidden></progress>
+          <p class="settings-note">
+            Marble downloads the voice models once. Listening and speaking then work locally,
+            without Python or a setup folder.
+          </p>
+          <div class="settings-actions">
+            <button type="button" id="prepare-voice">Set up voice</button
+            ><button type="button" id="test-voice" disabled>Test voice</button>
+          </div>
+        </section>
         <p id="settings-status" role="status"></p>
-        <button type="submit">Save settings</button>
-        <button type="button" id="test-voice">Test saved audio settings</button>
+        <button type="submit" id="settings-done">Done</button>
       </form>
     </dialog>
     <dialog id="conversation">
