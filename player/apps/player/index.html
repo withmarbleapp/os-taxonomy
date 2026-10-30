@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  /><title>Marble</title
+  ><link rel="stylesheet" href="/player/style.css" /><link
+    rel="stylesheet"
+    href="/player/walkie.css"
+  />
+  <body>
+    <main id="library">
+      <header class="library-header">
+        <img
+          class="brand"
+          src="/player/assets/marble-wordmark.svg"
+          alt="Marble"
+          width="142"
+          height="33"
+        />
+        <button id="settings-open" class="icon-button" aria-label="Settings" title="Settings">
+          <img src="/player/assets/settings-gear.svg" alt="" width="24" height="24" />
+        </button>
+      </header>
+      <div class="library-heading">
+        <h1>My lessons</h1>
+        <button id="add-lesson" class="primary-button">
+          <span aria-hidden="true">＋</span> Add a lesson
+        </button>
+        <input id="import" type="file" accept=".lesson,.zip" hidden />
+      </div>
+      <div id="lessons" aria-label="Lessons"></div>
+      <p id="library-status" role="status"></p>
+    </main>
+    <section id="player" hidden>
+      <iframe id="scene" sandbox="allow-scripts allow-forms" title="Interactive lesson"></iframe>
+      <button id="lesson-menu" aria-label="Lesson menu" aria-haspopup="dialog">☰</button>
+      <p id="instruction"></p>
+      <div id="start-cover">
+        <h1 id="start-title"></h1>
+        <button id="start">Let’s explore ↗</button>
+      </div>
+      <aside id="caption" hidden></aside>
+      <div id="talk-controls" hidden aria-label="Walkie-talkie">
+        <div id="walkie-chassis" data-phase="idle">
+          <img
+            class="walkie-face"
+            src="/player/assets/walkie-talkie.svg"
+            alt=""
+            draggable="false"
+          />
+          <div class="walkie-sparks" aria-hidden="true">
+            <img class="spark spark-center" src="/player/assets/walkie-spark-0.svg" alt="" /><img
+              class="spark spark-left"
+              src="/player/assets/walkie-spark-1.svg"
+              alt=""
+            /><img class="spark spark-right" src="/player/assets/walkie-spark-2.svg" alt="" />
+          </div>
+          <svg id="walkie-lights" viewBox="0 0 144 220" aria-hidden="true"></svg>
+          <button
+            id="type-reply"
+            class="walkie-side camera"
+            aria-label="Type instead of speaking"
+            title="Type instead"
+            aria-controls="compose"
+            aria-expanded="false"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect
+                x="2"
+                y="5"
+                width="20"
+                height="14"
+                rx="2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M6 9h1m4 0h1m4 0h1M6 12h1m4 0h1m4 0h1M7 16h10"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button
+            id="walkie-settings"
+            class="walkie-side keyboard"
+            aria-label="Settings"
+            title="Settings"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10 3h4l.6 3 2 .9 2.7-1 2 3.4-2.2 2v2.3l2.2 2-2 3.4-2.7-1-2 .9-.6 3h-4l-.6-3-2-.9-2.7 1-2-3.4 2.2-2v-2.3l-2.2-2 2-3.4 2.7 1 2-.9Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="12"
+                cy="12.5"
+                r="3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+          <button
+            id="ptt"
+            aria-label="Hold to talk. Hold Space and release to send. Press Enter to start or finish recording."
+            aria-pressed="false"
+            aria-keyshortcuts="Space"
+          >
+            <kbd aria-hidden="true">Space</kbd>
+          </button>
+        </div>
+        <span id="status" role="status"></span>
+      </div>
+    </section>
+    <section id="compose" aria-label="Type to your tutor" hidden>
+      <form id="reply-form">
+        <input
+          id="reply-text"
+          type="text"
+          aria-label="Your message"
+          placeholder="Talk to your tutor…"
+          autocomplete="off"
+          enterkeyhint="send"
+          required
+        />
+        <button type="submit" aria-label="Send message"><span>SEND</span></button>
+      </form>
+    </section>
+    <dialog id="settings" aria-labelledby="settings-heading">
+      <form id="settings-form">
+        <div class="dialog-title">
+          <h2 id="settings-heading">Settings</h2>
+          <button type="button" data-close="settings" aria-label="Close settings">×</button>
+        </div>
+        <h3>Your tutor</h3>
+        <p class="settings-intro">Choose who you’d like to learn with.</p>
+        <fieldset class="provider-choices">
+          <legend class="sr-only">Tutor provider</legend>
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="claude" /><span
+              ><strong>Claude</strong><small id="claude-status">Checking…</small></span
+            ></label
+          >
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="codex" /><span
+              ><strong>Codex</strong><small id="codex-status">Checking…</small></span
+            ></label
+          >
+          <label class="provider-choice"
+            ><input type="radio" name="provider" value="device" /><span
+              ><strong>On this device</strong><small id="device-status">Checking…</small></span
+            ></label
+          >
+        </fieldset>
+        <section id="device-setup" hidden>
+          <p>
+            Private, offline tutoring. Marble downloads Qwen3.5 4B once · 2.74 GB. Speed depends on
+            your computer.
+          </p>
+          <button type="button" id="prepare-device">Download tutor</button>
+          <p id="device-progress-label" role="status"></p>
+          <progress id="device-progress" max="1" hidden></progress>
+        </section>
+        <p class="settings-note" id="connection-note">
+          Uses your subscription. Your conversation goes to the provider; your microphone audio
+          stays on this device. Choosing a tutor runs a short connection check.
+        </p>
+        <div class="settings-actions">
+          <button type="button" id="connection-retry">Check again</button
+          ><button type="button" id="connection-help" aria-expanded="false">
+            Setup instructions
+          </button>
+        </div>
+        <section id="provider-help" hidden>
+          <div id="device-help" hidden>
+            <h3>Learn on this device</h3>
+            <p>
+              Download the tutor above, then check it. No account or other app is needed. If it
+              cannot run, close other demanding apps and retry, or choose Claude or Codex.
+            </p>
+          </div>
+          <div id="claude-help" hidden>
+            <h3>Connect Claude</h3>
+            <ol>
+              <li>
+                Install Claude Code using the
+                <a
+                  href="https://code.claude.com/docs/en/setup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >official setup guide ↗</a
+                >.
+              </li>
+              <li>
+                Open a terminal and run <code>claude auth login</code>. Sign in with your Claude
+                subscription.
+              </li>
+              <li>Come back and select <strong>Check again</strong>.</li>
+            </ol>
+          </div>
+          <div id="codex-help" hidden>
+            <h3>Connect Codex</h3>
+            <ol>
+              <li>
+                Install Codex CLI using the
+                <a
+                  href="https://developers.openai.com/codex/cli/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >official setup guide ↗</a
+                >.
+              </li>
+              <li>
+                Open a terminal and run <code>codex login</code>. Choose your ChatGPT account.
+              </li>
+              <li>Come back and select <strong>Check again</strong>.</li>
+            </ol>
+          </div>
+          <p id="provider-help-note">
+            If you’re already signed in, check your subscription’s usage allowance and try again.
+          </p>
+        </section>
+        <section class="speech-settings">
+          <div>
+            <h3>Voice on your device</h3>
+            <p id="voice-status" role="status">Checking voice…</p>
+          </div>
+          <progress id="voice-progress" hidden></progress>
+          <p class="settings-note">
+            Marble downloads and stores the voice models for you. Listening and speaking then work
+            locally on this device.
+          </p>
+          <div class="settings-actions">
+            <button type="button" id="prepare-voice">Set up voice</button
+            ><button type="button" id="test-voice" disabled>Test voice</button>
+          </div>
+        </section>
+        <p id="settings-status" role="status"></p>
+        <button type="submit" id="settings-done">Done</button>
+      </form>
+    </dialog>
+    <dialog id="conversation">
+      <div class="dialog-title">
+        <h2 id="title">Lesson menu</h2>
+        <button data-close="conversation" aria-label="Close lesson menu">×</button>
+      </div>
+
+      <div class="menu-actions">
+        <button id="home">← My lessons</button
+        ><button id="lesson-settings">Audio and tutor settings</button>
+      </div>
+      <label class="row"><input id="show-captions" type="checkbox" /> Show captions</label>
+      <details>
+        <summary>Conversation history</summary>
+        <div id="messages"></div>
+      </details>
+      <button id="export-lesson">Export lesson</button>
+      <button id="download-log">Download session log</button>
+    </dialog>
+    <dialog id="remove-lesson" aria-labelledby="remove-title" aria-describedby="remove-description">
+      <h2 id="remove-title">Remove lesson?</h2>
+      <p id="remove-description"></p>
+      <p id="remove-status" role="status"></p>
+      <div class="menu-actions">
+        <button id="cancel-remove" data-close="remove-lesson">Keep lesson</button>
+        <button id="confirm-remove">Remove lesson</button>
+      </div>
+    </dialog>
+    <script type="module" src="/player/app.mjs"></script>
+  </body>
+</html>
