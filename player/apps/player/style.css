@@ -1,18 +1,14 @@
 @font-face {
   font-family: Baloo;
   src: url('/player/assets/Baloo2-variable.ttf');
-}
-/* iOS Design: PColor.Marble, PFontStyle.parentBrand*, PAuthButton. */
-@font-face {
-  font-family: Merel;
-  src: url('/player/assets/Merel-Regular.otf');
-  font-weight: 400;
+  font-weight: 400 800;
   font-display: swap;
 }
+/* Marble surfaces with openly licensed typography. */
 @font-face {
-  font-family: Merel;
-  src: url('/player/assets/Merel-Black.otf');
-  font-weight: 800;
+  font-family: Inter;
+  src: url('/player/assets/InterVariable.ttf');
+  font-weight: 100 900;
   font-display: swap;
 }
 @font-face {
@@ -37,7 +33,7 @@ body {
   background: var(--canvas);
   color: var(--ink);
   font:
-    16px/1.5 Merel,
+    16px/1.5 Inter,
     system-ui;
   letter-spacing: -0.02em;
 }
@@ -883,5 +879,148 @@ dialog {
   }
   #settings .dialog-title h2 {
     font-size: 36px;
+  }
+}
+
+/* Separate library management from the full-row launch target. */
+/* iOS SeedDetailSheet closeButton: 40pt circle, 16pt semibold xmark,
+   MarbleControls.raisedSurface. Keep a 44px pointer target around the face. */
+.lesson-remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0;
+  background: var(--surface);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px var(--ledge);
+  color: var(--ink);
+}
+.lesson-remove::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+}
+.lesson-remove svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lesson-remove:hover {
+  background: var(--secondary);
+}
+.lesson-remove:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px var(--ledge);
+}
+@media (max-width: 600px) {
+  .lesson-arrow {
+    display: none;
+  }
+}
+
+#remove-lesson button {
+  border: 1px solid #c9c3b8;
+}
+
+/* Unity TextChatDocument: grille chassis and red PebbleButton. */
+#compose {
+  position: fixed;
+  z-index: 12;
+  left: 50%;
+  bottom: calc(96px + env(safe-area-inset-bottom) + var(--keyboard-inset, 0px));
+  transform: translateX(-50%);
+  width: min(720px, calc(100% - 400px));
+}
+#reply-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 64px;
+  padding: 5px 6px 5px 28px;
+  border: 1px solid #0000000f;
+  border-radius: 32px;
+  background: #f1efed url('/player/assets/composer-grille.png') repeat;
+  background-size: 32px 32px;
+  box-shadow: 0 3px 12px #00000012;
+}
+#reply-text {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #282828;
+  caret-color: var(--brand);
+  font:
+    400 22px Baloo,
+    sans-serif;
+  box-shadow: none;
+  outline: none;
+}
+#reply-text::placeholder {
+  color: #a4a3a1;
+  opacity: 1;
+}
+#reply-form:focus-within {
+  outline: 2px solid #14141440;
+  outline-offset: 3px;
+}
+#reply-form button[type='submit'] {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #f42324;
+  color: #8e0009;
+  box-shadow:
+    inset 0 2px 2px #ffffff80,
+    inset 0 -4px 2px #8b002380;
+  transform: rotate(-6.32deg);
+  font:
+    800 13px Baloo,
+    sans-serif;
+  text-shadow: 0 1px #ffffff40;
+}
+#reply-form button[type='submit']:hover {
+  background: #fa3435;
+}
+#reply-form button[type='submit']:active {
+  transform: rotate(-6.32deg) translateY(2px);
+  box-shadow: inset 0 2px 4px #8b002380;
+}
+body:has(#compose:not([hidden])) #caption {
+  bottom: 176px;
+}
+@media (max-width: 850px) {
+  #compose {
+    width: calc(100% - 32px);
+    bottom: calc(190px + env(safe-area-inset-bottom) + var(--keyboard-inset, 0px));
+  }
+  #compose.keyboard-visible {
+    bottom: calc(16px + var(--keyboard-inset, 0px));
+  }
+  body:has(#compose:not([hidden])) #caption {
+    bottom: 270px;
   }
 }

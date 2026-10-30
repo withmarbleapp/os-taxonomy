@@ -48,7 +48,8 @@ const canTalk = () =>
   !!session &&
   $('start-cover').hidden &&
   !$('player').hidden &&
-  !document.querySelector('dialog[open]');
+  !document.querySelector('dialog[open]') &&
+  $('compose').hidden;
 function shortcut(action, source = 'keyboard') {
   if (action === 'talk_start') {
     if (canTalk() && !recording) {
@@ -75,6 +76,7 @@ function cancelRecording() {
   phase('idle');
 }
 function pauseControls() {
+  closeComposer(false);
   keys.cancel();
   cancelRecording();
   session?.cancel();
@@ -210,11 +212,43 @@ async function library() {
     arrow.className = 'lesson-arrow';
     arrow.setAttribute('aria-hidden', 'true');
     arrow.innerHTML = '<svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
-    card.append(mark, copy, arrow, open);
+    const remove = document.createElement('button');
+    remove.className = 'lesson-remove';
+    remove.setAttribute('aria-label', 'Remove ' + pkg.manifest.title);
+    remove.innerHTML =
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg>';
+    remove.onclick = () => {
+      $('remove-title').textContent = 'Remove “' + pkg.manifest.title + '”?';
+      $('remove-description').textContent = pkg.trustedShortcuts
+        ? 'This built-in lesson will be hidden from your library. Import its .lesson package to add it again. Session logs are kept.'
+        : 'This lesson will be deleted from your library. Your original .lesson file and session logs are kept, so you can import it again.';
+      $('remove-status').textContent = '';
+      $('confirm-remove').onclick = async () => {
+        $('confirm-remove').disabled = true;
+        try {
+          await request('remove-lesson', {
+            method: 'POST',
+            body: { id: pkg.manifest.id, version: pkg.manifest.version },
+          });
+          await library();
+          $('remove-lesson').close();
+          $('library-status').textContent = pkg.manifest.title + ' removed.';
+          $('add-lesson').focus();
+        } catch (e) {
+          $('remove-status').textContent = e.message;
+        } finally {
+          $('confirm-remove').disabled = false;
+        }
+      };
+      $('remove-lesson').showModal();
+      $('cancel-remove').focus();
+    };
+    card.append(mark, copy, arrow, open, remove);
     $('lessons').append(card);
   }
 }
 async function launch(pkg) {
+  closeComposer(false);
   $('export-lesson').onclick = async () => {
     try {
       const r = await request(
@@ -321,6 +355,7 @@ $('start').onclick = async () => {
   }
 };
 $('home').onclick = () => {
+  closeComposer(false);
   $('conversation').close();
   keys.cancel();
   $('talk-controls').hidden = true;
@@ -335,17 +370,47 @@ $('home').onclick = () => {
   $('player').hidden = true;
   $('library').hidden = false;
 };
+function closeComposer(restoreFocus = true) {
+  const wasOpen = !$('compose').hidden;
+  $('compose').hidden = true;
+  $('type-reply').setAttribute('aria-expanded', 'false');
+  $('reply-text').value = '';
+  if (wasOpen && restoreFocus) $('type-reply').focus();
+  if (wasOpen && restoreFocus && canTalk()) port?.setShortcutsEnabled(true).catch(error);
+}
+function positionComposer() {
+  const viewport = window.visualViewport;
+  const keyboard = viewport ? Math.max(0, innerHeight - viewport.height - viewport.offsetTop) : 0;
+  $('compose').style.setProperty('--keyboard-inset', keyboard + 'px');
+  $('compose').classList.toggle('keyboard-visible', keyboard > 80);
+}
+window.visualViewport?.addEventListener('resize', positionComposer);
+window.visualViewport?.addEventListener('scroll', positionComposer);
 $('type-reply').onclick = () => {
+  if (!$('compose').hidden) {
+    closeComposer();
+    return;
+  }
   pauseControls();
-  $('compose').showModal();
-  $('reply-text').focus();
+  $('compose').hidden = false;
+  $('type-reply').setAttribute('aria-expanded', 'true');
+  positionComposer();
+  $('reply-text').focus({ preventScroll: true });
 };
+$('compose').addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    event.stopPropagation();
+    closeComposer();
+  }
+  // An IME confirmation must not send an unfinished message.
+  if (event.key === 'Enter' && event.isComposing) event.preventDefault();
+});
 $('reply-form').onsubmit = (event) => {
   event.preventDefault();
   const text = $('reply-text').value.trim();
   if (!text) return;
-  $('reply-text').value = '';
-  $('compose').close();
+  closeComposer();
   send(text).catch(error);
 };
 async function beginTalk() {
@@ -445,7 +510,7 @@ $('show-captions').onchange = () => {
 };
 for (const b of document.querySelectorAll('[data-close]'))
   b.onclick = () => $(b.dataset.close).close();
-for (const dialog of [$('conversation'), $('settings'), $('compose')])
+for (const dialog of [$('conversation'), $('settings')])
   dialog.addEventListener('close', () => {
     if (canTalk()) port?.setShortcutsEnabled(true).catch(error);
   });

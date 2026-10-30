@@ -32,3 +32,39 @@ sidebar dashboard or a stack of instructional cards.
 
 The reference examples contain topic-specific visual exceptions. Their number
 fields, horizon inset and older layout choices are not universal requirements.
+
+
+## Establish a game-world art direction
+
+For immersive lessons, aim for a coherent, inviting game scene rather than a
+prototype made from unstyled primitives. References such as Breath of the Wild
+can guide painterly terrain, composed vistas, soft atmospheric depth, stylized
+materials and restrained effects; create original assets and keep Marble's
+interface roles. A named reference alone is not an art specification.
+
+Specify the palette, silhouettes, environment layers, materials, lighting,
+camera composition and motion treatment in the brief. Make a representative
+scene beautiful before multiplying it: foreground/midground/background depth,
+crafted terrain and vegetation, believable contact shadows, textured surfaces,
+and purposeful water/light animation where relevant. Use licensed or generated
+assets when they materially improve the scene; retain provenance. Avoid flat
+empty grounds, generic spheres and boxes, uniform plastic materials and debug
+labels as finished artwork. Detail should support attention, not obscure the
+phenomenon or compete with the tutor.
+
+Inspect screenshots of the opening, focused exploration and explanatory
+close-up, not only the home screen. Compare them against the stated art direction,
+check composition and readability with controls present, and refine weak scenes.
+Check motion in the browser too: responsiveness, camera comfort, touch targets,
+reduced-motion behavior and performance on the intended device. Report visual
+or asset limitations honestly rather than calling a functional prototype polished.
+
+## Redistributable assets
+
+Visual references do not grant redistribution rights to their assets. In this
+open-source player and exported lessons, use fonts and third-party assets with
+verified redistribution terms and include their license notices. The player
+bundles OFL-licensed Inter, Baloo 2 and EB Garamond; reuse those. Do not copy
+proprietary Merel or Bureau Brut Round files from the iOS/Unity prototypes.
+Match their visual role with an openly licensed font instead. Check actual
+font files and their notices before packaging, not just the CSS family names.

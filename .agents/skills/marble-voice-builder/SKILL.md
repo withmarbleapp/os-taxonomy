@@ -62,10 +62,16 @@ Do not turn a lesson-specific flow or a previous failure into a universal gate.
 Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md) for examples of
 branching decisions, evidence and concise child-facing language.
 
+Before implementation, read [interaction-and-scaffolding.md](references/interaction-and-scaffolding.md).
+Map the learning relationships to focused situations, direct object interactions,
+agent tools and observable evidence. Plan a representative polished scene using
+[visual-design.md](references/visual-design.md); do not defer art direction until
+all activities are built. A collection of controls is not an interaction design.
+
 Present a compact concept: the goal, illustrative opening, visual relationship,
 example back-and-forth, supports, candidate fresh problems, what an explanation
-would establish, and closing confidence questions. Explain data flow and the
-chosen inference/speech mode. Ask for refinement and confirm the concept before
+would establish, and closing confidence questions. Keep the concept focused on
+teaching and the interactive representation. Ask for refinement and confirm the concept before
 full lesson implementation. Existing explicit approval counts; do not restart
 an approval ceremony. A request to revise an agreed lesson permits routine fixes.
 
@@ -126,15 +132,20 @@ local teaching model: cloud inference sends final words and model context to the
 configured provider. The player can also download and run its managed local teaching model in-app;
 see the player README for hardware and packaging limits.
 
-The player asks for a tutor connection and local voice before starting a lesson.
-`npm start` launches the desktop shell; `npm run dev` launches its browser player. No silent provider fallback. Before enabling a paid or
-external inference path, explain the provider, content sent and account usage,
-and obtain explicit author approval unless that is already established. A
-skill invocation alone does not authorise transmitting child recordings or
-running paid live evaluations. Do not extract subscription/session credentials;
-subscription adapters invoke official Claude/Codex CLIs as experimental local
-developer integrations. Their commercial eligibility and live behavior are not
-proven by the package tests; consult the player README before distribution.
+Tutor selection and speech setup belong to Marble Settings, not the lesson
+proposal. Author a provider-independent `.lesson` package. Do not propose an
+on-device or cloud tutor, ask the author to approve a speech/inference mode, or
+add a privacy/approval preamble to ordinary lesson authoring. The person running
+the package chooses their tutor in the player; the lesson does not change it.
+
+For testing, inspect and reuse the existing player configuration. A request to
+test with that configured tutor is sufficient; do not ask again because the
+selected provider is cloud-based. If a live test actually requires a new account,
+provider change, download or paid service outside the user's authorized scope,
+raise that concrete dependency when needed. Continue model, package and browser
+checks independently. Use synthetic learner inputs rather than private child
+records. `npm start` launches the desktop shell; `npm run dev` launches its
+browser player. See the player README for provider setup and distribution limits.
 
 Keep the walkie-talkie, Space shortcut, cancellation, optional captions and the
 adult conversation menu in the shared player. Scenes fill the viewport, with

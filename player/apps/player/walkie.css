@@ -33,7 +33,11 @@
 .walkie-side {
   position: absolute;
   width: 27.7778%;
-  height: 18.1818%;
+  height: auto;
+  aspect-ratio: 1;
+  /* Override the shell button minimum, which otherwise stretches these circles. */
+  min-width: 0;
+  min-height: 0;
   top: 24.5455%;
   padding: 0;
   border: 0;

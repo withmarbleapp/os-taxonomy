@@ -93,6 +93,9 @@ untrusted code cannot start microphone recording through the frame bridge. Enter
 button toggles recording. The keyboard button opens a typed reply; the cog opens
 Settings. Opening either pauses recording and tutor speech. The lesson menu offers
 optional captions, conversation history, settings and return to the library.
+The keyboard button toggles a nonmodal text composer near the bottom center of
+the scene. Enter or SEND submits; Escape or the keyboard button closes it.
+Space types normally while composing, and the scene remains interactive.
 
 ## Portable lesson packages
 
@@ -109,6 +112,13 @@ npm run marble -- inspect /path/to/my-lesson.lesson
 Use Add a lesson in the library to import; Export lesson produces a shareable
 file. Versions are immutable: different content requires an increased version.
 Files carry SHA-256 integrity checks, not publisher authenticity signatures.
+The circled cross at the top-right of a lesson card opens a removal confirmation. Removing an imported
+lesson deletes its installed package; removing a built-in lesson hides it from
+the library without changing application files. Both choices survive restarts.
+Import the original `.lesson` package to add it again. Original export files and
+session logs are retained. Hidden built-in versions are tracked in
+`removed-lessons.json` in the player data directory.
+
 Anyone with the compatible player can import the package. There is no hosted
 catalog, upload service or automatic update mechanism yet.
 

@@ -62,6 +62,8 @@
             class="walkie-side camera"
             aria-label="Type instead of speaking"
             title="Type instead"
+            aria-controls="compose"
+            aria-expanded="false"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect
@@ -118,17 +120,20 @@
         <span id="status" role="status"></span>
       </div>
     </section>
-    <dialog id="compose">
+    <section id="compose" aria-label="Type to your tutor" hidden>
       <form id="reply-form">
-        <div class="dialog-title">
-          <h2>What would you like to say?</h2>
-          <button type="button" data-close="compose" aria-label="Close">×</button>
-        </div>
-        <label for="reply-text">Your message</label>
-        <textarea id="reply-text" rows="3" required autofocus></textarea>
-        <button type="submit">Send</button>
+        <input
+          id="reply-text"
+          type="text"
+          aria-label="Your message"
+          placeholder="Talk to your tutor…"
+          autocomplete="off"
+          enterkeyhint="send"
+          required
+        />
+        <button type="submit" aria-label="Send message"><span>SEND</span></button>
       </form>
-    </dialog>
+    </section>
     <dialog id="settings" aria-labelledby="settings-heading">
       <form id="settings-form">
         <div class="dialog-title">
@@ -259,6 +264,15 @@
       </details>
       <button id="export-lesson">Export lesson</button>
       <button id="download-log">Download session log</button>
+    </dialog>
+    <dialog id="remove-lesson" aria-labelledby="remove-title" aria-describedby="remove-description">
+      <h2 id="remove-title">Remove lesson?</h2>
+      <p id="remove-description"></p>
+      <p id="remove-status" role="status"></p>
+      <div class="menu-actions">
+        <button id="cancel-remove" data-close="remove-lesson">Keep lesson</button>
+        <button id="confirm-remove">Remove lesson</button>
+      </div>
     </dialog>
     <script type="module" src="/player/app.mjs"></script>
   </body>

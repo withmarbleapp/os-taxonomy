@@ -4,8 +4,8 @@ import {
   subscriptionModels,
 } from '../../packages/providers/local.mjs';
 import http from 'node:http';
-import { readFile, writeFile, mkdir, readdir, appendFile } from 'node:fs/promises';
-import { join, resolve, extname } from 'node:path';
+import { readFile, writeFile, mkdir, readdir, appendFile, rm, realpath } from 'node:fs/promises';
+import { join, resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
 import {
@@ -93,6 +93,14 @@ export async function createService({
   await mkdir(dataDir, { recursive: true, mode: 0o700 });
   await mkdir(join(dataDir, 'library'), { recursive: true });
   await mkdir(join(dataDir, 'logs'), { recursive: true });
+  const removedFile = join(dataDir, 'removed-lessons.json');
+  let removed = new Set();
+  try {
+    removed = new Set(JSON.parse(await readFile(removedFile, 'utf8')));
+  } catch (e) {
+    if (e.code !== 'ENOENT') throw e;
+  }
+  const saveRemoved = () => writeFile(removedFile, JSON.stringify([...removed]));
   let settings = { ...defaults };
   try {
     settings = checkSettings(JSON.parse(await readFile(join(dataDir, 'settings.json'), 'utf8')));
@@ -230,13 +238,15 @@ export async function createService({
         if (req.method === 'GET' && path === '/api/library') {
           json(
             200,
-            [...catalog.values()].map((p) => ({
-              trustedShortcuts: bundled.get(p.manifest.id + '@' + p.manifest.version) === p,
-              manifest: p.manifest,
-              teaching: p.teaching,
-              experience: p.experience,
-              url: `/content/${p.manifest.id}/${p.manifest.version}/${p.manifest.entry}`,
-            })),
+            [...catalog.values()]
+              .filter((p) => !removed.has(p.manifest.id + '@' + p.manifest.version))
+              .map((p) => ({
+                trustedShortcuts: bundled.get(p.manifest.id + '@' + p.manifest.version) === p,
+                manifest: p.manifest,
+                teaching: p.teaching,
+                experience: p.experience,
+                url: `/content/${p.manifest.id}/${p.manifest.version}/${p.manifest.entry}`,
+              })),
           );
           return;
         }
@@ -280,7 +290,23 @@ export async function createService({
           if (!res.writableEnded) controller.abort();
         });
         try {
-          if (path === '/api/import') {
+          if (path === '/api/remove-lesson') {
+            const { id, version } = JSON.parse(await body(req, 3000));
+            const key = id + '@' + version;
+            const p = catalog.get(key);
+            if (!p) throw Error('Unknown lesson');
+            if (bundled.get(key) !== p) {
+              // Never follow an imported directory outside the managed library.
+              const libraryRoot = await realpath(join(dataDir, 'library'));
+              const directory = await realpath(p.directory);
+              if (!directory.startsWith(libraryRoot + sep)) throw Error('Invalid lesson location');
+              await rm(p.directory, { recursive: true, force: true });
+            }
+            removed.add(key);
+            await saveRemoved();
+            await refresh();
+            json(200, { removed: true });
+          } else if (path === '/api/import') {
             const bytes = await body(req, MAX_ARCHIVE);
             const incoming = unpack(bytes);
             const prior = bundled.get(incoming.manifest.id + '@' + incoming.manifest.version);
@@ -289,10 +315,14 @@ export async function createService({
                 throw Error(
                   'This bundled version already exists with different content; increment the version',
                 );
+              removed.delete(prior.manifest.id + '@' + prior.manifest.version);
+              await saveRemoved();
               json(200, prior.manifest);
               return;
             }
             const p = await install(bytes, join(dataDir, 'library'));
+            removed.delete(p.manifest.id + '@' + p.manifest.version);
+            await saveRemoved();
             await refresh();
             json(200, p.manifest);
           } else if (path === '/api/device-prepare') {

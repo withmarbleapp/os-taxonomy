@@ -167,7 +167,38 @@ try {
   );
   await b.evaluate("document.querySelector('[data-close=conversation]').click()");
   await b.evaluate("document.querySelector('#type-reply').click()");
-  await b.until("document.querySelector('#compose').open");
+  await b.until("!document.querySelector('#compose').hidden");
+  assert.equal(await b.evaluate("document.querySelector('dialog[open]') === null"), true);
+  await shot('keyboard-composer');
+  await b.send('Emulation.setDeviceMetricsOverride', {
+    width: 390,
+    height: 844,
+    deviceScaleFactor: 1,
+    mobile: true,
+  });
+  await shot('keyboard-composer-mobile');
+  assert.equal(
+    await b.evaluate(
+      "(()=>{const r=document.querySelector('#compose').getBoundingClientRect();return r.left>=0 && r.right<=innerWidth && r.bottom<=innerHeight})()",
+    ),
+    true,
+  );
+  await b.evaluate(
+    "document.querySelector('#reply-text').dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}))",
+  );
+  assert.equal(await b.evaluate("document.querySelector('#compose').hidden"), true);
+  await b.evaluate(
+    "document.querySelector('#type-reply').click(); document.querySelector('#type-reply').click()",
+  );
+  assert.equal(await b.evaluate("document.querySelector('#compose').hidden"), true);
+  await b.send('Emulation.setDeviceMetricsOverride', {
+    width: 1440,
+    height: 960,
+    deviceScaleFactor: 1,
+    mobile: false,
+  });
+  await b.evaluate("document.querySelector('#type-reply').click()");
+
   const beforeTyping = transcriptions;
   await space('keyDown');
   await space('keyUp');
@@ -178,7 +209,7 @@ try {
   await b.until(
     "document.querySelector('#messages').textContent.includes('Can we count together?')",
   );
-  assert.equal(await b.evaluate("document.querySelector('#compose').open"), false);
+  assert.equal(await b.evaluate("!document.querySelector('#compose').hidden"), false);
   await b.evaluate("document.querySelector('#walkie-settings').click()");
   assert.equal(await b.evaluate("document.querySelector('#settings').open"), true);
   await b.evaluate("document.querySelector('[data-close=settings]').click()");
@@ -310,6 +341,25 @@ try {
   await b.until("document.querySelector('[value=device]').checked");
   assert.deepEqual(b.errors, []);
   await shot('local-settings');
+  await b.evaluate(
+    "document.querySelector('[data-close=settings]').click(); document.querySelector('#home').click()",
+  );
+  await b.evaluate("document.querySelector('.lesson-remove').click()");
+  await b.until("document.querySelector('#remove-lesson').open");
+  assert.equal(await b.evaluate('document.activeElement.id'), 'cancel-remove');
+  await shot('remove-lesson');
+  await b.evaluate("document.querySelector('#cancel-remove').click()");
+  assert.equal(await b.evaluate("document.querySelectorAll('.lesson-card').length"), 3);
+  await b.evaluate(
+    "document.querySelector('.lesson-remove').click(); document.querySelector('#confirm-remove').click()",
+  );
+  await b.until(
+    "!document.querySelector('#remove-lesson').open && document.querySelectorAll('.lesson-card').length===2",
+  );
+  await b.send('Page.reload');
+  await b.until("document.querySelectorAll('.lesson-card').length===2");
+  assert.deepEqual(b.errors, []);
+
   console.log(
     'PASS: cube wrong→correct revision; Roanoke source→scene focus; imported third lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
   );

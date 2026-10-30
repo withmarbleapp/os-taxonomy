@@ -29,3 +29,8 @@ sentences to TTS, warms the voice engine, and prepares one sentence ahead.
 Do not reproduce provider setup, audio queues or playback in a lesson package.
 See [in-app inference](../../../../player/docs/device-inference.md) for the
 current model, measured checks and platform limits.
+
+Provider selection is owned by the player at run time. A new lesson must not
+choose an inference backend or ask the author to approve one during its proposal.
+Use the existing player configuration for requested live tests; see SKILL.md for
+testing scope. Keep setup instructions conditional on an actual missing dependency.
