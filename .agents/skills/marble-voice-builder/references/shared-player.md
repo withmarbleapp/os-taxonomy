@@ -26,4 +26,5 @@ Confidence is distinct from demonstrated understanding.
 
 Settings, credentials, weights and learner journals are device-local. Subscription
 inference sends transcripts and context to the selected provider; it is not
-fully local. Local model inference is a separate configurable provider.
+fully local. On this device downloads a verified model and runs it inside the
+app; learners do not need Ollama or LM Studio.

@@ -86,3 +86,22 @@ Sources: [Moonshine 0.1.5 files](https://pypi.org/project/moonshine-voice/0.1.5/
 [ptts 0.5.0 files](https://pypi.org/project/ptts/0.5.0/#files),
 [Phonon runtime and wheel requirements](https://github.com/gradium-ai/xn-ptts/tree/main/ptts-pyo3),
 [Moonshine platforms](https://github.com/moonshine-ai/moonshine).
+
+### Low-latency playback
+
+Browser voice setup silently synthesizes a short warm-up phrase before marking
+speech ready. `SpeechOutput` reuses one interactive AudioContext until disposal;
+interruptions stop scheduled sources and cancel synthesis without closing it.
+The shared tutor sentence queue prepares the current sentence plus one ahead,
+while keeping narration/captions ordered at playback time. Prepared PCM is bounded
+to 60 seconds per sentence and discarded on interruption or a stale turn.
+Scene-changing decisions still execute before their speech is prepared.
+
+Session logs include `tts_timing`: `firstPcmMs` (from preparation),
+`playbackScheduledMs` (from preparation, including intentional queued time),
+`playbackWaitMs` (from playback request), and the browser's reported
+`outputLatencyMs`. Scheduling is not a measurement of audible speaker output.
+Run `node scripts/tts-latency-smoke.mjs <running-player-url>` with local models
+installed to compare cold/warmed startup and two-sentence lookahead. One local
+headless Chrome run measured ~73 ms cold versus ~17 ms warmed to first scheduled
+audio; hardware output latency and concurrent local LLM work can change this.

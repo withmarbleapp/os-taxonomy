@@ -22,6 +22,8 @@ import { providerAvailability } from '../../packages/providers/availability.mjs'
 import { infer, decisionSchema } from '../../packages/providers/index.mjs';
 import { createModelStore } from '../../packages/voice/model-store.mjs';
 import { createLocalSpeech } from '../../packages/voice/local-speech.mjs';
+import { createInferenceStore } from '../../packages/inference/model-store.mjs';
+import { createInferenceEngine } from '../../packages/inference/engine.mjs';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 export const defaults = {
   provider: 'preview',
@@ -33,7 +35,11 @@ export const defaults = {
 export function checkSettings(input) {
   const s = { ...defaults };
   if (!input || typeof input !== 'object') throw Error('Invalid settings');
-  if (!['preview', 'local', 'claude', 'codex', 'ollama', 'lmstudio'].includes(input.provider))
+  if (
+    !['preview', 'local', 'claude', 'codex', 'ollama', 'lmstudio', 'device'].includes(
+      input.provider,
+    )
+  )
     throw Error('Unknown provider');
   for (const k of ['model', 'endpoint', 'speechDirectory'])
     if (input[k] !== undefined && (typeof input[k] !== 'string' || input[k].length > 1000))
@@ -80,6 +86,8 @@ export async function createService({
   availability = providerAvailability,
   localDiscovery = localAvailability,
   modelStore: suppliedModelStore,
+  inferenceStore: suppliedInferenceStore,
+  deviceEngine: suppliedDeviceEngine,
 } = {}) {
   if (!dataDir) throw Error('dataDir is required');
   await mkdir(dataDir, { recursive: true, mode: 0o700 });
@@ -91,6 +99,19 @@ export async function createService({
   } catch (e) {
     if (e.code !== 'ENOENT') throw e;
   }
+  if (['ollama', 'lmstudio'].includes(settings.provider))
+    settings = { ...settings, provider: 'device', model: '' };
+  const inferenceModels =
+    suppliedInferenceStore ??
+    createInferenceStore({ directory: join(dataDir, 'inference-models') });
+  const deviceEngine =
+    suppliedDeviceEngine ?? createInferenceEngine({ modelPath: inferenceModels.path });
+  const runInference = async (input) => {
+    if (input.settings.provider !== 'device') return inference(input);
+    if ((await inferenceModels.inspect()).state !== 'ready')
+      throw Error('Download the on-device tutor in Settings first.');
+    return deviceEngine.infer(input);
+  };
   const models =
     suppliedModelStore ??
     createModelStore({
@@ -185,13 +206,23 @@ export async function createService({
           json(200, await models.inspect());
           return;
         }
+        if (req.method === 'GET' && path === '/api/device-model') {
+          json(200, await inferenceModels.inspect());
+          return;
+        }
         if (req.method === 'GET' && path === '/api/connections') {
           json(
             200,
             await Promise.all(
-              ['claude', 'codex', 'ollama', 'lmstudio'].map((provider) =>
-                localEndpoints[provider] ? localDiscovery(provider) : availability(provider),
-              ),
+              ['claude', 'codex', 'device'].map(async (provider) => {
+                if (provider !== 'device') return availability(provider);
+                const state = await inferenceModels.inspect();
+                return {
+                  ...state,
+                  provider,
+                  state: state.state === 'ready' ? 'installed' : state.state,
+                };
+              }),
             ),
           );
           return;
@@ -264,13 +295,24 @@ export async function createService({
             const p = await install(bytes, join(dataDir, 'library'));
             await refresh();
             json(200, p.manifest);
+          } else if (path === '/api/device-prepare') {
+            json(200, inferenceModels.prepare());
           } else if (path === '/api/voice-prepare') {
             json(200, models.prepare());
           } else if (path === '/api/provider-check') {
             const { provider, model } = JSON.parse(await body(req, 3000));
             const isLocal = !!localEndpoints[provider];
-            const status = await (isLocal ? localDiscovery(provider) : availability(provider));
-            if (isLocal ? status.state !== 'available' : status.state !== 'signed_in') {
+            const isDevice = provider === 'device';
+            const status = isDevice
+              ? { provider, ...(await inferenceModels.inspect()) }
+              : await (isLocal ? localDiscovery(provider) : availability(provider));
+            if (
+              isDevice
+                ? status.state !== 'ready'
+                : isLocal
+                  ? status.state !== 'available'
+                  : status.state !== 'signed_in'
+            ) {
               json(200, status);
               return;
             }
@@ -279,7 +321,7 @@ export async function createService({
               return;
             }
             try {
-              const result = await inference({
+              const result = await runInference({
                 settings: {
                   ...settings,
                   provider,
@@ -292,7 +334,7 @@ export async function createService({
                 tools: [teachingTools.find((t) => t.name === 'say')],
                 signal: AbortSignal.any([
                   controller.signal,
-                  AbortSignal.timeout(isLocal ? 120000 : 30000),
+                  AbortSignal.timeout(isLocal || isDevice ? 120000 : 30000),
                 ]),
               });
               validate(decisionSchema, result);
@@ -322,7 +364,7 @@ export async function createService({
               { mode: 0o600 },
             );
             json(200, { saved: true });
-          } else if (path === '/api/infer') {
+          } else if (path === '/api/infer' || path === '/api/infer-stream') {
             const input = JSON.parse(await body(req, 750000)),
               p = catalog.get(input.lessonId + '@' + input.version);
             if (!p) throw Error('Unknown lesson');
@@ -335,19 +377,42 @@ export async function createService({
                 input.context.snapshot.availableActions.includes(a.name),
               ),
             ];
-            const decision = await inference({
-              settings,
-              system: tutorSystem(p),
-              tools,
-              messages: input.messages,
-              context: input.context,
-              signal: controller.signal,
-            });
-            validate(decisionSchema, decision);
-            const t = tools.find((t) => t.name === decision.tool);
-            if (!t) throw Error('Unavailable tutor tool');
-            validate(t.inputSchema, JSON.parse(decision.arguments));
-            json(200, decision);
+            const streaming = path === '/api/infer-stream';
+            const event = (data) => {
+              if (streaming && !res.destroyed) res.write(JSON.stringify(data) + '\n');
+            };
+            if (streaming)
+              res.writeHead(200, {
+                'content-type': 'application/x-ndjson',
+                'cache-control': 'no-store',
+              });
+            try {
+              const decision = await runInference({
+                settings,
+                system: tutorSystem(p),
+                tools,
+                standingTools: [...teachingTools, ...p.experience.actions],
+                messages: input.messages,
+                context: input.context,
+                signal: controller.signal,
+                onEvent: (data) => {
+                  if (data.type === 'speech' && typeof data.text === 'string') event(data);
+                  else if (data.type === 'inference_metrics') event(data);
+                },
+              });
+              validate(decisionSchema, decision);
+              const t = tools.find((t) => t.name === decision.tool);
+              if (!t) throw Error('Unavailable tutor tool');
+              validate(t.inputSchema, JSON.parse(decision.arguments));
+              if (streaming) {
+                event({ type: 'decision', decision });
+                res.end();
+              } else json(200, decision);
+            } catch (error) {
+              if (!streaming) throw error;
+              event({ type: 'error', message: error.message });
+              res.end();
+            }
           } else if (path === '/api/transcribe') {
             const audio = await body(req, 4000000);
             json(200, {
@@ -411,6 +476,7 @@ export async function createService({
         '.css': 'text/css',
         '.svg': 'image/svg+xml',
         '.ttf': 'font/ttf',
+        '.otf': 'font/otf',
         '.woff2': 'font/woff2',
         '.json': 'application/json',
         '.md': 'text/plain',
@@ -458,6 +524,8 @@ export async function createService({
     origin: `http://127.0.0.1:${server.address().port}`,
     token,
     close: () => {
+      inferenceModels.close();
+      deviceEngine.close();
       speech?.close();
       server.closeAllConnections();
       return new Promise((r) => server.close(r));

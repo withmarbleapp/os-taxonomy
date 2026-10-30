@@ -1,8 +1,25 @@
-import { localEndpoints, subscriptionModels, requireLocalModel } from './local.mjs';
+import { claudeStream, codexStream, decisionStream } from './subscription-stream.mjs';
+import {
+  localEndpoints,
+  subscriptionModels,
+  requireLocalModel,
+  ollamaTutorOptions,
+} from './local.mjs';
 import { spawn } from 'node:child_process';
-import { mkdtemp, writeFile, readFile, rm } from 'node:fs/promises';
+import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir, homedir } from 'node:os';
 import { join, delimiter } from 'node:path';
+import { validate } from '../lesson-contract/contracts.mjs';
+export function ollamaDecisionSchema(tools) {
+  return {
+    anyOf: tools.map((tool) => ({
+      type: 'object',
+      properties: { tool: { const: tool.name }, arguments: tool.inputSchema },
+      required: ['tool', 'arguments'],
+      additionalProperties: false,
+    })),
+  };
+}
 export const decisionSchema = {
   type: 'object',
   properties: { tool: { type: 'string' }, arguments: { type: 'string' } },
@@ -12,7 +29,15 @@ export const decisionSchema = {
 export function runProcess(
   command,
   args,
-  { input = '', cwd, signal, env = process.env, timeout = 120000, maxBytes = 2_000_000 } = {},
+  {
+    input = '',
+    cwd,
+    signal,
+    env = process.env,
+    timeout = 120000,
+    maxBytes = 2_000_000,
+    onStdout,
+  } = {},
 ) {
   return new Promise((resolve, reject) => {
     if (signal?.aborted) return reject(Error('Cancelled'));
@@ -27,25 +52,33 @@ export function runProcess(
       signal?.removeEventListener('abort', abort);
       error ? reject(error) : resolve(value);
     };
-    const abort = () => {
+    const terminate = (error) => {
       child.kill('SIGTERM');
       const kill = setTimeout(() => child.kill('SIGKILL'), 1500);
       kill.unref();
-      finish(Error('Cancelled'));
+      finish(error);
     };
+    const abort = () => terminate(Error('Cancelled'));
     const timer = setTimeout(abort, timeout);
     signal?.addEventListener('abort', abort, { once: true });
     child.on('error', (e) =>
       finish(Error(e.code === 'ENOENT' ? `${command} is not installed or not on PATH` : e.message)),
     );
+    child.stdout.setEncoding('utf8');
     child.stdout.on('data', (b) => {
+      if (settled) return;
       output += b;
-      if (output.length > maxBytes) abort();
+      if (output.length > maxBytes) return abort();
+      try {
+        onStdout?.(b);
+      } catch (error) {
+        terminate(error);
+      }
     });
     child.stderr.on('data', (b) => {
       errors = (errors + b).slice(-2000);
     });
-    child.on('exit', (code) =>
+    child.on('close', (code) =>
       finish(
         code === 0
           ? null
@@ -67,6 +100,8 @@ export async function infer({
   context,
   signal,
   runner = runProcess,
+  codexRunner = codexStream,
+  onEvent,
   fetcher = fetch,
 }) {
   if (settings.provider === 'preview')
@@ -84,9 +119,18 @@ export async function infer({
   };
   const prompt = JSON.stringify({ system, tools, messages, context });
   if (settings.provider === 'local' || localEndpoints[settings.provider]) {
-    if (localEndpoints[settings.provider])
-      await requireLocalModel(settings.provider, settings.model, fetcher);
+    const localModel = localEndpoints[settings.provider]
+      ? await requireLocalModel(settings.provider, settings.model, fetcher)
+      : null;
     const ollama = settings.provider === 'ollama';
+    const localSchema = ollama ? ollamaDecisionSchema(tools) : null;
+    const localSystem = ollama
+      ? system.replace(
+          'Return one decision as JSON: {tool:string,arguments:string}, where arguments is a JSON object encoded as a string.',
+          'Return one decision as JSON: {tool:string,arguments:object}.',
+        ) +
+        '\nReturn exactly one tool decision. The arguments field must be a JSON object matching the selected tool inputSchema, not a string. Example: {"tool":"say","arguments":{"text":"Ready."}}'
+      : system;
     const url = new URL(localEndpoints[settings.provider] ?? settings.endpoint);
     if (!['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname) || url.protocol !== 'http:')
       throw Error('Local inference requires an HTTP loopback endpoint');
@@ -100,11 +144,15 @@ export async function infer({
         body: JSON.stringify({
           model: settings.model,
           messages: [
-            { role: 'system', content: system },
+            { role: 'system', content: localSystem },
             { role: 'user', content: JSON.stringify({ tools, messages, context }) },
           ],
           ...(ollama
-            ? { format: decisionSchema, stream: false, options: { num_predict: 1200 } }
+            ? {
+                format: localSchema,
+                stream: false,
+                ...ollamaTutorOptions(settings.model, localModel?.thinking),
+              }
             : {
                 response_format: {
                   type: 'json_schema',
@@ -117,20 +165,51 @@ export async function infer({
     );
     if (!response.ok) throw Error(`Local model HTTP ${response.status}`);
     const data = await response.json();
-    return JSON.parse(ollama ? data.message.content : data.choices[0].message.content);
+    if (ollama) {
+      const decision = JSON.parse(data.message.content);
+      const tool = tools.find((t) => t.name === decision.tool);
+      if (!tool) throw Error('Local model returned an unknown tool');
+      validate(tool.inputSchema, decision.arguments);
+      return { tool: decision.tool, arguments: JSON.stringify(decision.arguments) };
+    }
+    return JSON.parse(data.choices[0].message.content);
   }
   const env = providerEnvironment();
   const cwd = await mkdtemp(join(tmpdir(), 'marble-tutor-'));
   try {
+    const stream = decisionStream(tools, onEvent, signal);
+    const subscriptionPrompt =
+      JSON.stringify({
+        system: system.replace(
+          'Return one decision as JSON: {tool:string,arguments:string}, where arguments is a JSON object encoded as a string.',
+          'Return one decision as JSON: {tool:string,arguments:object}.',
+        ),
+        tools,
+        messages,
+        context,
+      }) +
+      '\nReturn a single JSON object, tool first then arguments as an OBJECT (not an encoded string). For say, put text first inside arguments. Example: {"tool":"say","arguments":{"text":"Hello."}}';
+    const schema = {
+      type: 'object',
+      properties: {
+        tool: { type: 'string' },
+        arguments: { anyOf: tools.map((tool) => tool.inputSchema) },
+      },
+      required: ['tool', 'arguments'],
+      additionalProperties: false,
+    };
     if (settings.provider === 'claude') {
+      const events = claudeStream(stream);
       const output = await runner(
         'claude',
         [
           '-p',
           '--output-format',
-          'json',
+          'stream-json',
+          '--verbose',
+          '--include-partial-messages',
           '--json-schema',
-          JSON.stringify(decisionSchema),
+          JSON.stringify(schema),
           '--tools',
           '',
           '--strict-mcp-config',
@@ -145,52 +224,20 @@ export async function infer({
           'Return only the requested tutor decision. Do not use filesystem, shell, network or coding tools.',
           ...(settings.model ? ['--model', settings.model] : []),
         ],
-        { input: prompt, cwd, signal, env },
+        { input: subscriptionPrompt, cwd, signal, env, onStdout: events.push },
       );
-      const result = JSON.parse(output);
-      if (result.is_error) throw Error('Claude could not complete this turn');
-      return result.structured_output ?? JSON.parse(result.result);
+      return events.finish(output);
     }
     if (settings.provider === 'codex') {
-      const schema = join(cwd, 'schema.json'),
-        output = join(cwd, 'decision.json');
-      await writeFile(schema, JSON.stringify(decisionSchema));
-      await runner(
-        'codex',
-        [
-          'exec',
-          '--ignore-user-config',
-          '--ignore-rules',
-          '--ephemeral',
-          '--skip-git-repo-check',
-          '--sandbox',
-          'read-only',
-          '-c',
-          'features.shell_tool=false',
-          '-c',
-          'features.unified_exec=false',
-          '-c',
-          'features.apps=false',
-          '-c',
-          'features.browser_use=false',
-          '-c',
-          'features.browser_use_external=false',
-          '-c',
-          'features.computer_use=false',
-          '-c',
-          'features.in_app_browser=false',
-          '-c',
-          'web_search="disabled"',
-          '--output-schema',
-          schema,
-          '--output-last-message',
-          output,
-          ...(settings.model ? ['--model', settings.model] : []),
-          '-',
-        ],
-        { input: prompt, cwd, signal, env },
-      );
-      return JSON.parse(await readFile(output, 'utf8'));
+      return await codexRunner({
+        cwd,
+        env,
+        signal,
+        model: settings.model,
+        prompt: subscriptionPrompt,
+        schema,
+        stream,
+      });
     }
     throw Error('Unknown tutor provider');
   } finally {

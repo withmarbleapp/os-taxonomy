@@ -1,3 +1,4 @@
+import { readInferenceResponse } from '/runtime/inference-stream.mjs';
 import { BrowserSpeech } from '/voice/browser-speech.mjs';
 import { createSettings } from './settings.mjs';
 import { bindTalkShortcut } from '/sdk/shortcuts.mjs';
@@ -110,6 +111,7 @@ function message(text, learner = false) {
   p.className = learner ? 'learner' : '';
   $('messages').append(p);
   if ($('conversation').open) p.scrollIntoView({ block: 'nearest' });
+  return p;
 }
 function stopAudio() {
   speechController?.abort();
@@ -124,9 +126,14 @@ function stopAudio() {
     audioUrl = null;
   }
 }
-async function speak(text, signal) {
+let speechGroup, speechMessage;
+async function speak(text, signal, { group, prepared } = {}) {
   stopAudio();
-  message(text);
+  if (group && speechGroup === group) speechMessage.textContent += ' ' + text;
+  else {
+    speechMessage = message(text);
+    speechGroup = group;
+  }
   $('caption').textContent = text;
   $('caption').hidden = !$('show-captions').checked;
   if (!settings.speech) throw Error('Set up local audio before starting a lesson.');
@@ -137,6 +144,7 @@ async function speak(text, signal) {
       await browserVoice.speak(
         text,
         signal ? AbortSignal.any([signal, speechController.signal]) : speechController.signal,
+        prepared,
       );
       return;
     }
@@ -164,6 +172,9 @@ async function speak(text, signal) {
     if (!recording) phase('idle');
   }
 }
+speak.prepare = (text, signal) =>
+  config.speechBackend === 'browser' ? browserVoice.prepare(text, signal) : undefined;
+browserVoice.onMetric = (event) => session?.log(event);
 function download(bytes, name) {
   const a = document.createElement('a'),
     url = URL.createObjectURL(bytes);
@@ -182,27 +193,39 @@ async function library() {
     h.textContent = pkg.manifest.title;
     const p = document.createElement('p');
     p.textContent = pkg.manifest.description;
-    const buttons = document.createElement('div');
-    buttons.className = 'buttons';
+    const copy = document.createElement('div');
+    copy.className = 'lesson-copy';
+    copy.append(h, p);
+    const mark = document.createElement('span');
+    mark.className = 'lesson-mark';
+    mark.setAttribute('aria-hidden', 'true');
+    // A shared book motif also works for imported lessons without artwork.
+    mark.innerHTML =
+      '<svg viewBox="0 0 48 48"><path d="M24 13c-5-4-11-5-17-3v26c6-2 12-1 17 3 5-4 11-5 17-3V10c-6-2-12-1-17 3Z"/><path d="M24 13v26M12 17c3 0 5 1 7 2m-7 5c3 0 5 1 7 2m10-7c2-1 4-2 7-2m-7 9c2-1 4-2 7-2"/></svg>';
     const open = document.createElement('button');
-    open.textContent = 'Explore ↗';
+    open.className = 'lesson-open';
+    open.setAttribute('aria-label', 'Open ' + pkg.manifest.title);
     open.onclick = () => launch(pkg).catch(error);
-    const share = document.createElement('button');
-    share.textContent = 'Export lesson';
-    share.onclick = async () => {
-      try {
-        const r = await request(`export?id=${pkg.manifest.id}&version=${pkg.manifest.version}`);
-        download(await r.blob(), pkg.manifest.id + '.lesson');
-      } catch (e) {
-        error(e);
-      }
-    };
-    buttons.append(open, share);
-    card.append(h, p, buttons);
+    const arrow = document.createElement('span');
+    arrow.className = 'lesson-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.innerHTML = '<svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>';
+    card.append(mark, copy, arrow, open);
     $('lessons').append(card);
   }
 }
 async function launch(pkg) {
+  $('export-lesson').onclick = async () => {
+    try {
+      const r = await request(
+        `export?id=${encodeURIComponent(pkg.manifest.id)}&version=${encodeURIComponent(pkg.manifest.version)}`,
+      );
+      download(await r.blob(), pkg.manifest.id + '.lesson');
+    } catch (e) {
+      error(e);
+    }
+  };
+
   session?.close();
   stopAudio();
   logs = [];
@@ -233,8 +256,11 @@ async function launch(pkg) {
   session = new TeachingSession({
     port,
     pkg,
-    infer: async (input, signal) =>
-      (await request('infer', { method: 'POST', body: input, signal })).json(),
+    infer: async (input, signal, onEvent) =>
+      readInferenceResponse(
+        await request('infer-stream', { method: 'POST', body: input, signal }),
+        onEvent,
+      ),
     speak,
     onState: (state, detail) => {
       if (state === 'thinking') stopAudio();
@@ -266,10 +292,7 @@ async function send(text) {
   await session.turn(text);
 }
 $('start').onclick = async () => {
-  if (
-    (['ollama', 'lmstudio'].includes(settings.provider) && !settings.model) ||
-    !['claude', 'codex', 'local', 'ollama', 'lmstudio'].includes(settings.provider)
-  ) {
+  if (!['claude', 'codex', 'local', 'device'].includes(settings.provider)) {
     openSettings();
     $('settings-status').textContent = 'Choose a tutor and set up local audio to begin.';
     return;
@@ -428,6 +451,7 @@ for (const dialog of [$('conversation'), $('settings'), $('compose')])
   });
 $('settings-open').onclick = openSettings;
 $('lesson-settings').onclick = openSettings;
+$('add-lesson').onclick = () => $('import').click();
 $('import').onchange = async (e) => {
   const f = e.target.files[0];
   if (!f) return;

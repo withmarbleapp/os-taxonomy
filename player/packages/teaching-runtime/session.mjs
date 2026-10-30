@@ -1,3 +1,4 @@
+import { createSpeechQueue } from './speech-stream.mjs';
 import { validate } from '../lesson-contract/contracts.mjs';
 const object = (properties) => ({
   type: 'object',
@@ -127,7 +128,9 @@ export class TeachingSession {
       controller = (this.controller = new AbortController());
     this.busy = true;
     this.onState('thinking');
-    let failed = false;
+    let failed = false,
+      speechQueue,
+      speechAbort;
     if (origin === 'learner') this.history.push({ role: 'user', text });
     this.log({ type: 'turn', origin, text });
     try {
@@ -146,6 +149,36 @@ export class TeachingSession {
           ...teachingTools,
           ...this.pkg.experience.actions.filter((a) => snapshot.availableActions.includes(a.name)),
         ];
+        let speechRevision = snapshot.revision,
+          streamedReply,
+          replyCommitted = false;
+        const commitReply = (text) => {
+          if (streamedReply) {
+            streamedReply.text = text;
+            delete streamedReply.interrupted;
+          } else this.history.push({ role: 'assistant', text });
+          replyCommitted = true;
+        };
+        speechAbort = new AbortController();
+        speechQueue = createSpeechQueue({
+          speak: Object.assign(
+            async (...args) => {
+              if (!replyCommitted) {
+                if (!streamedReply) {
+                  streamedReply = { role: 'assistant', text: '', interrupted: true };
+                  this.history.push(streamedReply);
+                }
+                streamedReply.text += (streamedReply.text ? ' ' : '') + args[0];
+              }
+              this.log({ type: 'speech_chunk', text: args[0] });
+              this.onState('speaking');
+              await this.speak(...args);
+            },
+            { prepare: this.speak.prepare?.bind(this.speak) },
+          ),
+          signal: AbortSignal.any([controller.signal, speechAbort.signal]),
+          isCurrent: () => epoch === this.epoch && speechRevision === this.port.snapshot().revision,
+        });
         const decision = await this.infer(
           {
             lessonId: this.pkg.manifest.id,
@@ -154,14 +187,27 @@ export class TeachingSession {
             messages: this.history.slice(-60),
           },
           controller.signal,
+          (event) => {
+            if (epoch !== this.epoch || controller.signal.aborted) return;
+            if (snapshot.revision !== this.port.snapshot().revision) {
+              speechAbort.abort();
+              return;
+            }
+            if (event.type === 'speech') speechQueue.push(event.text);
+            if (event.type === 'inference_metrics') this.log(event);
+          },
         );
         if (epoch !== this.epoch || controller.signal.aborted) return;
         if (snapshot.revision !== this.port.snapshot().revision) {
+          speechAbort.abort();
+          await speechQueue.settled();
           this.log({ type: 'stale_decision_discarded', revision: snapshot.revision });
           continue;
         }
         const tool = tools.find((t) => t.name === decision.tool);
         if (!tool) throw Error('Tutor requested an unavailable tool');
+        if (speechQueue.text && tool.name !== 'say')
+          throw Error('Unexpected streamed speech action');
         const args = JSON.parse(decision.arguments);
         validate(tool.inputSchema, args);
         this.log({
@@ -185,12 +231,13 @@ export class TeachingSession {
           });
           if (!result.accepted)
             throw Error(result.error?.message ?? 'Teaching resource was rejected');
+          speechRevision = result.snapshot.revision;
           this.history.push({ role: 'tool', name: 'explain_model', args, result });
           this.log({ type: 'command_result', name: 'explain_model', result });
-          this.history.push({ role: 'assistant', text: args.text });
+          commitReply(args.text);
           this.log({ type: 'reply', text: args.text });
           this.onState('speaking');
-          await this.speak(args.text, controller.signal);
+          await speechQueue.finish(args.text);
           return;
         }
         if (['say', 'self_assessment', 'finish'].includes(tool.name)) {
@@ -199,10 +246,10 @@ export class TeachingSession {
             !this.pkg.teaching.selfEvaluation?.skills.some((s) => s.id === args.skill)
           )
             throw Error('Unknown self assessment skill');
-          this.history.push({ role: 'assistant', text: args.text });
+          commitReply(args.text);
           this.log({ type: 'reply', text: args.text });
           this.onState('speaking');
-          await this.speak(args.text, controller.signal);
+          await speechQueue.finish(args.text);
           if (tool.name === 'finish') {
             this.started = false;
             this.log({ type: 'completed' });
@@ -236,6 +283,8 @@ export class TeachingSession {
       }
       throw Error('Tutor did not produce a reply within eight decisions');
     } catch (e) {
+      speechAbort?.abort();
+      await speechQueue?.settled();
       if (!controller.signal.aborted) {
         failed = true;
         this.log({ type: 'error', message: e.message });

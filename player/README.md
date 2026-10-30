@@ -27,10 +27,10 @@ native microphone/lesson qualification remain separate work.
 
 ## Tutor connections
 
-- **Ollama / LM Studio:** start the local server on its default port, choose the
-  provider in Settings and select an installed chat model. It must support JSON-schema structured output. No
-  cloud fallback is used. Model installation is separate; Marble does not yet
-  manage LLM weights or qualify a recommended model for these lessons.
+- **On this device:** Marble bundles a native llama.cpp engine. Download the
+  verified Qwen3.5 4B model once in Settings (2.74 GB), then learn offline.
+  No Ollama, LM Studio, terminal or account is needed. See
+  [managed inference](docs/device-inference.md) for implementation and limits.
 - **Claude Code:** install the official CLI, run `claude auth login`, and choose
   Claude in Settings. Marble invokes unmodified `claude -p` with structured
   output, no built-in tools, hooks, ambient MCP servers or persisted sessions.
@@ -38,16 +38,18 @@ native microphone/lesson qualification remain separate work.
   variables are not forwarded, so an inherited key does not silently select API
   billing. Subscription limits and provider eligibility still apply.
 - **Codex:** install the official CLI and run `codex login`. The experimental
-  adapter invokes `codex exec` with structured output, ephemeral sessions,
-  ignored ambient config, read-only sandbox, and disabled shell/browser/app
+  adapter invokes `codex app-server` over stdio with structured output and
+  incremental text events, ephemeral sessions, read-only sandbox, disabled
+  ambient MCP servers and hooks, and disabled shell/browser/app
   capabilities. This is a local developer integration, **not a commercially
   approved subscription authentication path**. Before distributing Marble as a
   commercial product, qualify the supported Sign in with ChatGPT / partner path.
 
 Both subscription modes send the final transcript, conversation, lesson guidance
 and current model state to the provider. They are not offline. Subprocess startup
-per decision currently adds latency; live account behavior has not been evaluated
-in this implementation. Do not infer classroom readiness from fixture tests.
+per decision currently adds latency. Codex sentence streaming has been checked
+with live inference; Claude streaming has protocol fixture coverage, with live
+verification pending a refreshed local Claude login.
 
 Official integration references:
 [Claude subscription use](https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan),
@@ -58,7 +60,7 @@ Official integration references:
 
 ## Local voice
 
-Choose **Claude**, **Codex**, **Ollama** or **LM Studio** in Settings. Marble checks installation and subscription
+Choose **Claude**, **Codex** or **On this device** in Settings. Marble checks installation and subscription
 sign-in, then makes a small inference check for the selected provider. If it cannot
 connect, Setup instructions links to the official installation and login guides.
 No account tokens are collected by Marble. Claude explicitly requests `claude-haiku-5-5`;
@@ -142,30 +144,9 @@ subscription inference was run. Linux unpacked build succeeds; native startup on
 this host passes after the AppArmor setup described above. Other operating
 systems and actual child learning have not been validated.
 
-## Ollama and LM Studio
+## Managed on-device inference
 
-Marble discovers Ollama at `127.0.0.1:11434` and LM Studio at `127.0.0.1:1234`.
-Open the local application, download a chat model, and enable its local server.
-Choose that provider in Settings, then select an installed model. Marble tests a
-structured tutor decision before showing Connected. These named integrations use
-the default ports and do not require an endpoint field; authenticated/custom-port
-servers are not exposed in this simple UI yet.
-
-Ollama uses `/api/tags`, `/api/show` and `/api/chat` with a JSON schema. Known cloud
-models are excluded and remote-model metadata is rejected before sending a
-conversation. LM Studio uses `/v1/models` and `/v1/chat/completions` with JSON-schema
-output. Both connections stay on loopback and reject HTTP redirects. No cloud
-fallback is used. Model quality, memory/context capacity and teaching performance
-still need evaluation with the chosen local model.
-
-Provider detection, request formats, model selection/persistence and failure paths
-are fixture-tested. Neither local server was running on the development host, so
-no live Ollama/LM Studio model run is claimed.
-
-Official setup/API documentation:
-- https://docs.ollama.com/quickstart
-- https://docs.ollama.com/api/chat
-- https://lmstudio.ai/docs/developer/core/server
-- https://lmstudio.ai/docs/developer/openai-compat/structured-output
-- https://learn.chatgpt.com/docs/models
-- https://platform.claude.com/docs/en/models/haiku-5-5/overview
+See [device-inference.md](docs/device-inference.md). Existing Ollama/LM Studio
+preferences migrate to On this device when the service starts. External server
+adapters remain internal compatibility code; the Settings UI uses the bundled
+engine and managed model instead.

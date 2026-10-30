@@ -123,7 +123,8 @@ model manifest/checksums and setup scripts; download large model files once on
 the target machine. Read portability limits before promising language or device
 support. English speech is the tested baseline. Local voice does not mean a
 local teaching model: cloud inference sends final words and model context to the
-configured provider. A local compatible inference service is a separate setup.
+configured provider. The player can also download and run its managed local teaching model in-app;
+see the player README for hardware and packaging limits.
 
 The player asks for a tutor connection and local voice before starting a lesson.
 `npm start` launches the desktop shell; `npm run dev` launches its browser player. No silent provider fallback. Before enabling a paid or

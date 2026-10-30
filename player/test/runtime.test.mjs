@@ -71,11 +71,20 @@ test('Claude disables tools, hooks, ambient MCP without disabling subscription l
     settings: { provider: 'claude' },
     system: 'test',
     messages: [],
-    tools: [],
+    tools: [
+      {
+        name: 'say',
+        inputSchema: {
+          type: 'object',
+          properties: { text: { type: 'string' } },
+          required: ['text'],
+        },
+      },
+    ],
     context: {},
     runner: async (...args) => (
       (invocation = args),
-      JSON.stringify({ structured_output: say('Hello') })
+      JSON.stringify({ type: 'result', structured_output: say('Hello') })
     ),
   });
   assert.ok(invocation[1].includes('--strict-mcp-config'));

@@ -10,16 +10,26 @@
   />
   <body>
     <main id="library">
-      <header><span class="brand">marble</span><button id="settings-open">Settings</button></header>
-      <div class="welcome">
-        <p class="eyebrow">A little curiosity goes a long way</p>
-        <h1>What shall we discover?</h1>
-        <p>Your lessons, on your computer.</p>
+      <header class="library-header">
+        <img
+          class="brand"
+          src="/player/assets/marble-wordmark.svg"
+          alt="Marble"
+          width="142"
+          height="33"
+        />
+        <button id="settings-open" class="icon-button" aria-label="Settings" title="Settings">
+          <img src="/player/assets/settings-gear.svg" alt="" width="24" height="24" />
+        </button>
+      </header>
+      <div class="library-heading">
+        <h1>My lessons</h1>
+        <button id="add-lesson" class="primary-button">
+          <span aria-hidden="true">＋</span> Add a lesson
+        </button>
+        <input id="import" type="file" accept=".lesson,.zip" hidden />
       </div>
-      <div id="lessons"></div>
-      <label class="import"
-        >＋ Add a lesson<input id="import" type="file" accept=".lesson,.zip" hidden
-      /></label>
+      <div id="lessons" aria-label="Lessons"></div>
       <p id="library-status" role="status"></p>
     </main>
     <section id="player" hidden>
@@ -119,12 +129,13 @@
         <button type="submit">Send</button>
       </form>
     </dialog>
-    <dialog id="settings">
+    <dialog id="settings" aria-labelledby="settings-heading">
       <form id="settings-form">
         <div class="dialog-title">
-          <h2>Your tutor</h2>
-          <button type="button" data-close="settings">×</button>
+          <h2 id="settings-heading">Settings</h2>
+          <button type="button" data-close="settings" aria-label="Close settings">×</button>
         </div>
+        <h3>Your tutor</h3>
         <p class="settings-intro">Choose who you’d like to learn with.</p>
         <fieldset class="provider-choices">
           <legend class="sr-only">Tutor provider</legend>
@@ -139,21 +150,19 @@
             ></label
           >
           <label class="provider-choice"
-            ><input type="radio" name="provider" value="ollama" /><span
-              ><strong>Ollama</strong><small id="ollama-status">Checking…</small></span
-            ></label
-          >
-          <label class="provider-choice"
-            ><input type="radio" name="provider" value="lmstudio" /><span
-              ><strong>LM Studio</strong><small id="lmstudio-status">Checking…</small></span
+            ><input type="radio" name="provider" value="device" /><span
+              ><strong>On this device</strong><small id="device-status">Checking…</small></span
             ></label
           >
         </fieldset>
-        <section id="local-model-choice" hidden>
-          <label for="local-model">Model on your device</label
-          ><select id="local-model">
-            <option value="">Choose a model</option>
-          </select>
+        <section id="device-setup" hidden>
+          <p>
+            Private, offline tutoring. Marble downloads Qwen3.5 4B once · 2.74 GB. Speed depends on
+            your computer.
+          </p>
+          <button type="button" id="prepare-device">Download tutor</button>
+          <p id="device-progress-label" role="status"></p>
+          <progress id="device-progress" max="1" hidden></progress>
         </section>
         <p class="settings-note" id="connection-note">
           Uses your subscription. Your conversation goes to the provider; your microphone audio
@@ -166,47 +175,11 @@
           </button>
         </div>
         <section id="provider-help" hidden>
-          <div id="ollama-help" hidden>
-            <h3>Connect Ollama</h3>
-            <ol>
-              <li>
-                <a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer"
-                  >Install Ollama ↗</a
-                >
-                and open it (or run <code>ollama serve</code>).
-              </li>
-              <li>Download a local chat model in Ollama.</li>
-              <li>Use the default port 11434, then press Check again and choose the model here.</li>
-            </ol>
+          <div id="device-help" hidden>
+            <h3>Learn on this device</h3>
             <p>
-              Cloud models are excluded.
-              <a href="https://docs.ollama.com/quickstart" target="_blank" rel="noopener noreferrer"
-                >Ollama getting started ↗</a
-              >
-            </p>
-          </div>
-          <div id="lmstudio-help" hidden>
-            <h3>Connect LM Studio</h3>
-            <ol>
-              <li>
-                <a href="https://lmstudio.ai/download" target="_blank" rel="noopener noreferrer"
-                  >Install LM Studio ↗</a
-                >
-                and download a chat model.
-              </li>
-              <li>
-                Load the model and start the local server in the Developer tab on port 1234. This
-                connection uses the local server without authentication.
-              </li>
-              <li>Press Check again, then choose the model here.</li>
-            </ol>
-            <p>
-              <a
-                href="https://lmstudio.ai/docs/developer/core/server"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Local server guide ↗</a
-              >
+              Download the tutor above, then check it. No account or other app is needed. If it
+              cannot run, close other demanding apps and retry, or choose Claude or Codex.
             </p>
           </div>
           <div id="claude-help" hidden>
@@ -272,7 +245,7 @@
     <dialog id="conversation">
       <div class="dialog-title">
         <h2 id="title">Lesson menu</h2>
-        <button data-close="conversation">×</button>
+        <button data-close="conversation" aria-label="Close lesson menu">×</button>
       </div>
 
       <div class="menu-actions">
@@ -284,6 +257,7 @@
         <summary>Conversation history</summary>
         <div id="messages"></div>
       </details>
+      <button id="export-lesson">Export lesson</button>
       <button id="download-log">Download session log</button>
     </dialog>
     <script type="module" src="/player/app.mjs"></script>

@@ -27,16 +27,26 @@ await writeFile(
   `window.addEventListener('message', e => { if (e.ports[0]) window.forgedPort = e.ports[0]; });\n` +
     (await readFile(importedAdapter, 'utf8')),
 );
-let transcriptions = 0;
+let transcriptions = 0,
+  deviceDownloaded = false;
 const seen = [],
   say = (text) => ({ tool: 'say', arguments: JSON.stringify({ text }) });
 const service = await createService({
     dataDir: dir,
-    localDiscovery: async (provider) => ({
-      provider,
-      state: 'available',
-      models: ['model-a', 'model-b'],
-    }),
+    inferenceStore: {
+      path: '/unused',
+      inspect: async () => ({
+        state: deviceDownloaded ? 'ready' : 'not_installed',
+        total: 2740937888,
+        loaded: 0,
+      }),
+      prepare: () => {
+        deviceDownloaded = true;
+        return { state: 'ready' };
+      },
+      close() {},
+    },
+    deviceEngine: { infer: async () => say('ready'), close() {} },
     availability: async (provider) => ({ provider, state: 'missing' }),
     speech: {
       ...fixtureSpeech,
@@ -45,7 +55,7 @@ const service = await createService({
         return 'A fixture voice answer.';
       },
     },
-    inference: async ({ context, messages }) => {
+    inference: async ({ context, messages, onEvent }) => {
       if (!context.snapshot) return say('ready');
       seen.push(structuredClone(context));
       const last = messages.at(-1),
@@ -55,6 +65,8 @@ const service = await createService({
           return { tool: 'prepare_fresh_box', arguments: '{"difficulty":"small"}' };
         if (context.origin === 'observation' && s.attempts.at(-1)?.correct === false && !s.assisted)
           return { tool: 'reopen_plan', arguments: '{}' };
+        if (s.attempts.at(-1)?.correct)
+          onEvent?.({ type: 'speech', text: 'Your corrected plan is right.' });
         return say(
           s.attempts.at(-1)?.correct
             ? 'Your corrected plan is right.'
@@ -278,21 +290,24 @@ try {
   );
   assert.deepEqual(b.errors, []);
   await b.evaluate("document.querySelector('#settings-open').click()");
-  await b.until("document.querySelector('#ollama-status').textContent==='Choose a model'");
-  await b.evaluate("document.querySelector('[value=ollama]').click()");
-  await b.until("document.querySelector('#local-model').options.length===3");
-  await b.evaluate(
-    "const select=document.querySelector('#local-model');select.value='model-b';select.dispatchEvent(new Event('change'))",
-  );
-  await b.until("document.querySelector('#ollama-status').textContent==='Connected'");
+  await b.until("document.querySelector('#device-status').textContent==='Download needed'");
+  await b.evaluate("document.querySelector('[value=device]').click()");
+  await b.until("!document.querySelector('#device-setup').hidden");
+  await b.evaluate("document.querySelector('#prepare-device').click()");
+  await b.until("document.querySelector('#device-status').textContent==='Connected'");
   const configAfter = await b.evaluate(
     "fetch('/api/config').then(r=>r.json()).then(c=>c.settings)",
   );
-  assert.equal(configAfter.provider, 'ollama');
-  assert.equal(configAfter.model, 'model-b');
+  assert.equal(configAfter.provider, 'device');
+  assert.equal(
+    await b.evaluate(
+      "document.querySelectorAll('[value=ollama],[value=lmstudio],#local-model').length",
+    ),
+    0,
+  );
   await b.evaluate("document.querySelector('[data-close=settings]').click()");
   await b.evaluate("document.querySelector('#settings-open').click()");
-  await b.until("document.querySelector('#local-model').value==='model-b'");
+  await b.until("document.querySelector('[value=device]').checked");
   assert.deepEqual(b.errors, []);
   await shot('local-settings');
   console.log(

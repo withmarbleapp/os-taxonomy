@@ -1,3 +1,4 @@
+import { SpeechOutput } from './speech-output.mjs';
 // Browser-only speech: this module is shared by Electron and a future web player.
 import { PhononTTS } from '/speech-vendor/phonon/index.js';
 export class BrowserSpeech {
@@ -75,6 +76,9 @@ export class BrowserSpeech {
       } finally {
         clearTimeout(timer);
       }
+      this.output = new SpeechOutput(this.tts, { onMetric: (event) => this.onMetric?.(event) });
+      onProgress('Warming up speaking…');
+      await this.output.warm();
       this.ready = true;
     } catch (error) {
       this.dispose(error);
@@ -110,56 +114,18 @@ export class BrowserSpeech {
       await ctx.close();
     }
   }
-  async speak(text, signal) {
+  prepare(text, signal) {
     if (!this.ready) throw Error('Set up voice in Settings first.');
-    signal?.throwIfAborted();
-    const ctx = new AudioContext({ sampleRate: this.tts.sampleRate });
-    const nodes = new Set();
-    let finishAbort;
-    const aborted = new Promise((resolve) => {
-      finishAbort = resolve;
-    });
-    const stop = () => {
-      finishAbort();
-      for (const node of nodes) {
-        try {
-          node.stop();
-        } catch {}
-      }
-      if (ctx.state !== 'closed') ctx.close().catch(() => {});
-    };
-    signal?.addEventListener('abort', stop, { once: true });
-    try {
-      await ctx.resume();
-      let at = ctx.currentTime,
-        ended = Promise.resolve();
-      for await (const pcm of this.tts.stream(text, { signal })) {
-        signal?.throwIfAborted();
-        const buffer = ctx.createBuffer(1, pcm.length, this.tts.sampleRate);
-        buffer.copyToChannel(pcm, 0);
-        const source = ctx.createBufferSource();
-        source.buffer = buffer;
-        source.connect(ctx.destination);
-        nodes.add(source);
-        ended = new Promise((resolve) => {
-          source.onended = () => {
-            nodes.delete(source);
-            resolve();
-          };
-        });
-        at = Math.max(ctx.currentTime, at);
-        source.start(at);
-        at += buffer.duration;
-      }
-      await Promise.race([ended, aborted]);
-    } finally {
-      signal?.removeEventListener('abort', stop);
-      stop();
-    }
+    return this.output.prepare(text, signal);
+  }
+  async speak(text, signal, prepared) {
+    if (!this.ready) throw Error('Set up voice in Settings first.');
+    return this.output.play(prepared ?? this.prepare(text, signal), signal);
   }
   dispose(error = Error('Voice stopped')) {
     this.ready = false;
     this.worker?.terminate();
+    this.output?.dispose();
     this.tts?.dispose();
     this.tts = null;
     for (const p of this.pending.values()) {

@@ -1,18 +1,16 @@
 export function createSettings({ request, getSettings, setSettings, voice, fixture, pause }) {
   const $ = (id) => document.getElementById(id);
-  const providers = ['claude', 'codex', 'ollama', 'lmstudio'];
-  const isLocal = (p) => p === 'ollama' || p === 'lmstudio';
-  let modelLists = {},
-    selectedModels = {};
+  const providers = ['claude', 'codex', 'device'];
+  let deviceTask,
+    deviceDownloaded = false;
   let statuses = {},
     checking,
     voiceTask,
     saving = Promise.resolve();
   const labels = {
-    available: 'Choose a model',
-    no_models: 'No models found',
-    choose_model: 'Choose a model',
-    auth_required: 'Server requires authentication',
+    installed: 'Downloaded',
+    not_installed: 'Download needed',
+    downloading: 'Downloading…',
     missing: 'Not installed',
     unavailable: 'Could not start',
     sign_in: 'Sign in needed',
@@ -23,27 +21,19 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   };
   const selected = () => $('settings-form').elements.provider.value;
   function render() {
-    for (const p of providers)
-      $(p + '-status').textContent =
-        isLocal(p) && statuses[p] === 'unavailable'
-          ? 'Not running'
-          : (labels[statuses[p]] ?? 'Checking…');
+    for (const p of providers) $(p + '-status').textContent = labels[statuses[p]] ?? 'Checking…';
     const p = selected();
-    $('local-model-choice').hidden = !isLocal(p);
-    $('provider-help-note').textContent = isLocal(p)
-      ? 'If the check fails, make sure the server is running and the selected chat model supports structured JSON replies. First loading a model can take a moment.'
-      : 'If you’re already signed in, check your subscription’s usage allowance and try again.';
-    $('connection-note').textContent = isLocal(p)
-      ? 'Marble sends the conversation only to the local app on this computer. Choose a downloaded chat model; there is no cloud fallback.'
-      : 'Uses your subscription: Claude Haiku 5.5 or GPT-6 Luna. Your conversation goes to the provider; microphone audio stays on this device.';
-    if (isLocal(p)) {
-      const select = $('local-model');
-      select.replaceChildren(
-        new Option('Choose a model', ''),
-        ...(modelLists[p] ?? []).map((id) => new Option(id, id)),
-      );
-      select.value = selectedModels[p] ?? '';
-    }
+    $('device-setup').hidden = p !== 'device';
+    $('prepare-device').hidden = deviceDownloaded;
+    $('prepare-device').disabled = !!deviceTask || statuses.device === 'downloading';
+    $('provider-help-note').textContent =
+      p === 'device'
+        ? 'First loading can take a moment. The model runs inside Marble.'
+        : 'If you’re already signed in, check your subscription’s usage allowance and try again.';
+    $('connection-note').textContent =
+      p === 'device'
+        ? 'Your conversation and voice stay on this computer. No cloud fallback.'
+        : 'Uses your subscription: Claude Haiku 5.5 or GPT-6 Luna. Your conversation goes to the provider; microphone audio stays on this device.';
     $('connection-retry').disabled = !p || !!checking;
     $('connection-help').hidden = !!p && statuses[p] === 'ready';
     for (const name of providers) $(name + '-help').hidden = p ? name !== p : false;
@@ -65,13 +55,8 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   async function discover() {
     try {
       for (const s of await (await request('connections')).json()) {
-        if (isLocal(s.provider)) {
-          modelLists[s.provider] = s.models ?? [];
-          if (!modelLists[s.provider].includes(selectedModels[s.provider]))
-            selectedModels[s.provider] =
-              modelLists[s.provider].length === 1 ? modelLists[s.provider][0] : '';
-        }
-        if (isLocal(s.provider) || statuses[s.provider] !== 'ready') statuses[s.provider] = s.state;
+        if (s.provider === 'device') deviceDownloaded = ['installed', 'ready'].includes(s.state);
+        if (statuses[s.provider] !== 'ready') statuses[s.provider] = s.state;
       }
       render();
     } catch {
@@ -82,18 +67,13 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
   async function check() {
     const p = selected();
     if (!p || checking) return;
-    const model = selectedModels[p] ?? '';
-    if (isLocal(p) && !model) {
-      if (statuses[p] === 'available' || statuses[p] === 'ready') statuses[p] = 'choose_model';
-      render();
-      return;
-    }
+    if (p === 'device' && !['installed', 'ready', 'failed'].includes(statuses.device)) return;
     checking = p;
     statuses[p] = 'checking';
     render();
     try {
       const result = await (
-        await request('provider-check', { method: 'POST', body: { provider: p, model } })
+        await request('provider-check', { method: 'POST', body: { provider: p } })
       ).json();
       statuses[p] = result.state;
     } catch {
@@ -102,11 +82,41 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       checking = null;
       render();
     }
-    if (selected() !== p || (isLocal(p) && selectedModels[p] !== model)) {
-      statuses[p] = 'available';
-      await check();
-    }
+    if (selected() !== p) await check();
   }
+  async function prepareDevice() {
+    if (deviceTask) return deviceTask;
+    deviceTask = (async () => {
+      try {
+        statuses.device = 'downloading';
+        render();
+        $('device-progress').hidden = false;
+        let state = await (await request('device-prepare', { method: 'POST', body: {} })).json();
+        while (state.state === 'downloading') {
+          $('device-progress').value = state.loaded / state.total;
+          $('device-progress-label').textContent =
+            `Downloading · ${(state.loaded / 1e9).toFixed(2)} of ${(state.total / 1e9).toFixed(2)} GB`;
+          await new Promise((r) => setTimeout(r, 750));
+          state = await (await request('device-model')).json();
+        }
+        if (state.state !== 'ready')
+          throw Error(state.error ?? 'Download did not finish. Please retry.');
+        deviceDownloaded = true;
+        statuses.device = 'installed';
+        $('device-progress-label').textContent = 'Downloaded and verified.';
+        if (selected() === 'device') await check();
+      } catch (e) {
+        statuses.device = 'failed';
+        $('device-progress-label').textContent = e.message;
+      } finally {
+        deviceTask = null;
+        $('device-progress').hidden = true;
+        render();
+      }
+    })();
+    return deviceTask;
+  }
+
   function voiceStatus(text, busy = false, ratio) {
     $('voice-status').textContent = text;
     $('voice-progress').hidden = !busy;
@@ -152,19 +162,11 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
     $('conversation').close();
     const saved = getSettings();
     $('settings-form').elements.provider.value = saved.provider;
-    if (isLocal(saved.provider)) selectedModels[saved.provider] = saved.model;
     $('settings').showModal();
     render();
     discover().then(() => {
-      if (selected() && statuses[selected()] !== 'ready') {
-        if (isLocal(selected()))
-          save({ provider: selected(), model: selectedModels[selected()] ?? '' })
-            .then(check)
-            .catch((e) => {
-              $('settings-status').textContent = e.message;
-            });
-        else check();
-      }
+      if (statuses.device === 'downloading' && !deviceTask) prepareDevice();
+      if (selected() && statuses[selected()] !== 'ready') check();
     });
     if (voice.ready || fixture) voiceStatus('Ready · listening and speaking stay on this device');
     else if (!voiceTask)
@@ -187,7 +189,7 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       try {
         await save({
           provider: selected(),
-          model: isLocal(selected()) ? (selectedModels[selected()] ?? '') : '',
+          model: '',
         });
         await check();
       } catch (error) {
@@ -196,21 +198,9 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       // Selecting a tutor is all the setup needed; models are managed by Marble.
       prepareVoice().catch(() => {});
     };
-  $('local-model').onchange = async () => {
-    const p = selected();
-    selectedModels[p] = $('local-model').value;
-    statuses[p] = 'available';
-    try {
-      await save({ provider: p, model: selectedModels[p] });
-      await check();
-    } catch (e) {
-      $('settings-status').textContent = e.message;
-    }
-  };
+  $('prepare-device').onclick = prepareDevice;
   $('connection-retry').onclick = async () => {
     await discover();
-    if (isLocal(selected()))
-      await save({ provider: selected(), model: selectedModels[selected()] ?? '' });
     await check();
   };
   $('connection-help').onclick = () => {
@@ -225,8 +215,8 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       $('settings-status').textContent = 'Choose a tutor connection to continue.';
       return;
     }
-    if (isLocal(selected()) && !selectedModels[selected()]) {
-      $('settings-status').textContent = 'Choose a local chat model first.';
+    if (selected() === 'device' && !deviceDownloaded) {
+      $('settings-status').textContent = 'Download the on-device tutor first.';
       return;
     }
     await saving.catch(() => {});

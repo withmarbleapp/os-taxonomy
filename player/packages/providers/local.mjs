@@ -48,6 +48,20 @@ export async function requireLocalModel(provider, model, fetcher = fetch) {
       throw Error('Choose a downloaded model, not an Ollama cloud model.');
     if (Array.isArray(details.capabilities) && !details.capabilities.includes('completion'))
       throw Error('Choose a chat model, not an embedding model.');
+    return { ...status, thinking: details.thinking };
   }
   return status;
+}
+
+export function ollamaTutorOptions(model, thinking) {
+  // Older Ollama releases omit thinking metadata. Qwen3/3.5 support the
+  // boolean switch; never impose it on models that require named levels.
+  const canDisable = Array.isArray(thinking?.values)
+    ? thinking.values.includes(false)
+    : /^qwen3(?:\.5)?(?:[:\-]|$)/i.test(model);
+  return {
+    ...(canDisable ? { think: false } : {}),
+    keep_alive: '30m',
+    options: { num_ctx: 16384, num_predict: 1200 },
+  };
 }

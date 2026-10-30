@@ -2,116 +2,284 @@
   font-family: Baloo;
   src: url('/player/assets/Baloo2-variable.ttf');
 }
+/* iOS Design: PColor.Marble, PFontStyle.parentBrand*, PAuthButton. */
+@font-face {
+  font-family: Merel;
+  src: url('/player/assets/Merel-Regular.otf');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Merel;
+  src: url('/player/assets/Merel-Black.otf');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/player/assets/EBGaramond-Regular.otf');
+  font-display: swap;
+}
+:root {
+  --canvas: #f4efe4;
+  --surface: #fdfcfa;
+  --secondary: #f5f3f0;
+  --ledge: #ebe6dc;
+  --ink: #141414;
+  --muted: #626262;
+  --brand: #f42324;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  background: #faf3df;
-  color: #283b34;
+  background: var(--canvas);
+  color: var(--ink);
   font:
-    18px/1.4 Baloo,
+    16px/1.5 Merel,
     system-ui;
+  letter-spacing: -0.02em;
 }
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
-button,
-.import {
+button {
   cursor: pointer;
-  border: 2px solid #283b34;
-  border-radius: 18px;
-  background: #fffbed;
-  color: #283b34;
-  padding: 10px 18px;
-  box-shadow: 0 3px #283b34;
+  border: 0;
+  border-radius: 60px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 12px 22px;
+  min-height: 48px;
+  font-weight: 800;
+  box-shadow: 0 3px var(--ledge);
+  transition:
+    background 0.15s,
+    transform 0.15s,
+    box-shadow 0.15s;
 }
-button:hover,
-.import:hover {
-  background: #ffdf85;
+button:hover {
+  background: var(--secondary);
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px var(--ledge);
 }
 button:disabled {
-  opacity: 0.5;
-  cursor: wait;
+  opacity: 0.45;
+  cursor: default;
 }
 button:focus-visible,
 input:focus-visible,
-select:focus-visible {
-  outline: 3px solid #675bc2;
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--brand);
   outline-offset: 4px;
 }
 [hidden] {
   display: none !important;
 }
-header {
+h1 {
+  font:
+    400 clamp(36px, 4vw, 48px)/1.1 'EB Garamond',
+    Georgia,
+    serif;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+#library {
+  max-width: 960px;
+  padding: 0 48px 48px;
+  margin: auto;
+}
+.library-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 24px 36px;
+  padding: 40px 0 64px;
 }
 .brand {
-  font-size: 42px;
-  font-weight: 650;
-  letter-spacing: -2px;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1.8px;
 }
-#library {
-  max-width: 1150px;
-  margin: auto;
+.icon-button {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  display: grid;
+  place-items: center;
 }
-.welcome {
-  padding: 40px 36px 20px;
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-.eyebrow {
-  color: #4d7771;
-  font-size: 16px;
+.library-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
 }
-h1 {
-  font-size: clamp(34px, 4vw, 52px);
-  font-weight: 550;
-  line-height: 1.1;
-  margin: 12px 0;
+.primary-button,
+#settings-done,
+#reply-form button[type='submit'] {
+  background: var(--ink);
+  color: var(--surface);
+  box-shadow: 0 3px #505050;
 }
-.welcome > p:last-child {
-  color: #65756a;
+.primary-button:hover,
+#settings-done:hover {
+  background: #303030;
+}
+.primary-button span {
+  color: #ff7168;
+  font-size: 22px;
+  vertical-align: -1px;
+  margin-right: 8px;
 }
 #lessons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  padding: 24px 36px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .lesson-card {
-  border: 2px solid #283b34;
-  border-radius: 28px;
-  padding: 28px;
-  background: #e0ece0;
-  box-shadow: 0 5px #283b34;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--surface);
+  padding: 28px 32px;
+  border-radius: 24px;
+  transition: background 0.15s;
 }
-.lesson-card:nth-child(2n) {
-  background: #f1d6b1;
+.lesson-card:hover {
+  background: #fff;
+}
+.lesson-copy {
+  flex: 1;
+  min-width: 0;
 }
 .lesson-card h2 {
-  font-weight: 550;
-  font-size: 30px;
-  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 8px;
 }
 .lesson-card p {
-  min-height: 85px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 560px;
 }
-.lesson-card .buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+.lesson-mark {
+  display: grid;
+  place-items: center;
+  background: var(--ledge);
+  border-radius: 16px;
+  width: 72px;
+  height: 80px;
+  flex: none;
 }
-.import {
-  display: inline-block;
-  margin-left: 36px;
+.lesson-mark svg {
+  width: 42px;
+  height: 42px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lesson-arrow {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+.lesson-arrow svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--brand);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lesson-open {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  box-shadow: none;
+  padding: 0;
+  background: transparent;
+}
+.lesson-open:hover,
+.lesson-open:active {
+  background: transparent;
+  box-shadow: none;
+  transform: none;
 }
 #library-status {
-  margin: 30px 36px;
+  color: var(--muted);
+  margin: 24px 0;
+}
+#library-status:empty {
+  display: none;
+}
+@media (max-width: 600px) {
+  #library {
+    padding: 0 24px 32px;
+  }
+  .library-header {
+    padding: 24px 0 40px;
+  }
+  .library-heading {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .library-heading h1 {
+    font-size: 36px;
+  }
+  #add-lesson {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .lesson-card {
+    padding: 24px 20px;
+    gap: 16px;
+  }
+  .lesson-mark {
+    width: 48px;
+    height: 60px;
+  }
+  .lesson-mark svg {
+    width: 32px;
+    height: 32px;
+  }
+  .lesson-card h2 {
+    font-size: 20px;
+  }
+  .lesson-card p {
+    font-size: 14px;
+  }
+  .lesson-arrow {
+    width: 20px;
+  }
 }
 #scene {
   position: fixed;
@@ -270,9 +438,7 @@ code {
   .welcome {
     padding: 30px 20px;
   }
-  #lessons {
-    padding: 20px;
-  }
+
   .lesson-card p {
     min-height: 0;
   }
@@ -461,4 +627,261 @@ code {
   height: 1px;
   overflow: hidden;
   clip-path: inset(50%);
+}
+
+/* Player-owned dialogs share the iOS surface and type system. */
+dialog {
+  border: 0;
+  border-radius: 32px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 32px;
+  box-shadow: 0 20px 80px #14141426;
+}
+dialog::backdrop {
+  background: #14141466;
+  backdrop-filter: blur(6px);
+}
+.dialog-title {
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.dialog-title h2 {
+  font:
+    400 36px/1.1 'EB Garamond',
+    Georgia,
+    serif;
+  letter-spacing: -0.03em;
+}
+.dialog-title button {
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  font-size: 24px;
+  background: var(--secondary);
+  box-shadow: none;
+}
+dialog h3 {
+  font-size: 19px;
+  font-weight: 800;
+}
+dialog p,
+.settings-intro {
+  color: var(--muted);
+  line-height: 1.5;
+}
+input,
+select,
+#reply-text {
+  border: 1px solid var(--ledge);
+  background: var(--secondary);
+  border-radius: 16px;
+  color: var(--ink);
+  padding: 14px;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--ink);
+}
+.provider-choices {
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+.provider-choice {
+  border: 1px solid var(--ledge);
+  border-radius: 24px;
+  background: var(--surface);
+  padding: 16px 20px;
+  gap: 16px;
+}
+.provider-choice:has(:checked) {
+  border-color: var(--ink);
+  background: var(--secondary);
+  box-shadow: none;
+}
+.provider-choice input {
+  accent-color: var(--ink);
+}
+.provider-choice strong {
+  font-size: 18px;
+  font-weight: 800;
+}
+.provider-choice small {
+  font-size: 14px;
+  color: var(--muted);
+}
+#settings .settings-note {
+  color: var(--muted);
+}
+.speech-settings {
+  border-color: var(--ledge);
+}
+#provider-help,
+#messages p {
+  background: var(--secondary);
+}
+#messages p.learner {
+  background: var(--canvas);
+}
+#settings a {
+  color: var(--ink);
+  text-underline-offset: 3px;
+}
+#voice-progress,
+#device-progress {
+  accent-color: var(--ink);
+  width: 100%;
+}
+#caption {
+  background: var(--surface);
+  border: 0;
+  box-shadow: 0 4px 24px #14141415;
+  color: var(--ink);
+}
+#lesson-menu {
+  background: var(--surface);
+  box-shadow: 0 3px var(--ledge);
+}
+#start-cover h1 {
+  font-family: Baloo, system-ui;
+}
+@media (prefers-reduced-motion: reduce) {
+  button,
+  .lesson-card {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .lesson-card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
+dialog {
+  scrollbar-width: thin;
+  scrollbar-color: #c8c8c7 transparent;
+}
+
+/* Full-screen settings retains dialog focus trapping and Escape-to-close. */
+.brand {
+  width: 142px;
+  height: 33px;
+  object-fit: contain;
+}
+#settings {
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0 24px;
+  background: var(--canvas);
+  box-shadow: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+#settings-form {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 0 40px;
+}
+#settings .dialog-title {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--canvas);
+  padding: 32px 0 24px;
+  margin: 0 0 24px;
+  border-bottom: 1px solid #d7d1c6;
+}
+#settings .dialog-title h2 {
+  font-size: 44px;
+}
+#settings button {
+  border: 1px solid #c8c2b7;
+  background: var(--surface);
+  box-shadow: 0 3px #d4cec3;
+}
+#settings button:hover {
+  background: var(--secondary);
+  border-color: var(--ink);
+}
+#settings button:active {
+  box-shadow: 0 1px #d4cec3;
+}
+#settings .dialog-title button {
+  border-color: #c8c2b7;
+}
+#settings #settings-done {
+  background: var(--ink);
+  color: var(--surface);
+  border: 1px solid var(--ink);
+  box-shadow: 0 3px #505050;
+  min-width: 120px;
+  margin-top: 32px;
+}
+#settings .provider-choices {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#settings .provider-choice {
+  background: var(--surface);
+  border-color: #c8c2b7;
+  align-items: flex-start;
+}
+#settings .provider-choice:has(:checked) {
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+#settings .speech-settings {
+  padding-top: 24px;
+  border-color: #d7d1c6;
+}
+#settings::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+#settings::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 12px 0;
+}
+#settings::-webkit-scrollbar-thumb {
+  background: #c6bfb3;
+  border: 3px solid var(--canvas);
+  border-radius: 20px;
+  min-height: 48px;
+}
+#settings::-webkit-scrollbar-thumb:hover {
+  background: #9c9487;
+}
+#settings::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+@supports not selector(::-webkit-scrollbar) {
+  #settings {
+    scrollbar-width: thin;
+    scrollbar-color: #c6bfb3 var(--canvas);
+  }
+}
+@media (max-width: 650px) {
+  #settings .provider-choices {
+    grid-template-columns: 1fr;
+  }
+  #settings .dialog-title {
+    padding: 24px 0 20px;
+  }
+  #settings .dialog-title h2 {
+    font-size: 36px;
+  }
 }
