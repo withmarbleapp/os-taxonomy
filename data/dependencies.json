@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3994,
+  "edgeCount": 3995,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -10242,14 +10242,14 @@
     {
       "topicId": "mt_hzkNpp2PdV",
       "prerequisiteId": "mt_gbTyzvnWzr",
-      "strength": "hard",
-      "reason": "Y6 terminology includes active/passive which must be taught first"
+      "strength": "soft",
+      "reason": "Supports: practising passive-voice writing deepens understanding of the terms active and passive voice; knowing and explaining the terms in given sentences does not require independently producing or choosing the passive in new formal writing"
     },
     {
       "topicId": "mt_hzkNpp2PdV",
       "prerequisiteId": "mt_-tcJeAhK5k",
-      "strength": "hard",
-      "reason": "Y6 terminology builds on Y5 terminology"
+      "strength": "soft",
+      "reason": "Supports: Year 5 terms (modal verb, relative clause, parenthesis, cohesion, ambiguity) are useful background, but accurate use of the eleven Year 6 terms does not require the whole Year 5 list"
     },
     {
       "topicId": "mt_HZvTriQWTh",
@@ -18900,14 +18900,20 @@
     {
       "topicId": "mt_T9IXrlxfx2",
       "prerequisiteId": "mt_IdFxLz-UW9",
+      "strength": "soft",
+      "reason": "Supports: phrase and clause analysis (main vs subordinate clauses) helps a learner explain why a sentence is simple, compound, complex or compound-complex; the whole Phrases & Clauses claim (incl. misplaced/dangling-modifier correction) is not required to vary sentence types for effect"
+    },
+    {
+      "topicId": "mt_T9IXrlxfx2",
+      "prerequisiteId": "mt_wq-1OJ_8s5",
       "strength": "hard",
-      "reason": "Choosing sentence types requires understanding how phrases and clauses function"
+      "reason": "Constructing compound, complex and compound-complex sentences requires joining clauses with subordinating (because, when, if) and coordinating (and, but, or) conjunctions"
     },
     {
       "topicId": "mt_T9IXrlxfx2",
       "prerequisiteId": "mt_YQ64pzcLDl",
-      "strength": "hard",
-      "reason": "Constructing complex sentences uses subordinate/relative clauses from KS2"
+      "strength": "soft",
+      "reason": "Supports: relative clauses are one way to build complex and compound-complex sentences; the full sentence-type operation can use adverbial subordination instead, so whole relative-clause mastery is not required"
     },
     {
       "topicId": "mt_tAJH5BrpOx",
