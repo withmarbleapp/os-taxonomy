@@ -3163,11 +3163,11 @@
       "ageRangeEnd": 12,
       "centrality": 0.06199186991869918,
       "evidence": [
-        "Punctuates the salutation of a business letter with a colon and the salutation of a friendly letter with a comma, and explains why the conventions differ",
-        "Sets out a memo opening with colons after the To, From, Date and Re labels, and after a salutation line when one is used",
+        "In a business-letter task that specifies a colon-based salutation style, punctuates the greeting with a colon; contrasts it with a friendly-letter task that specifies a comma-based style, and explains that greeting punctuation follows the stated convention rather than a universal business-versus-friendly rule",
+        "Sets out a memo opening with colons after the To, From, Date and Re labels; when a salutation line is included, follows the stated memo style for its punctuation",
         "Writes a short script in which every new speaker’s name is followed by a colon before their words"
       ],
-      "assessmentPrompt": "If {{name}} writes a business letter to a science centre or a short play script, do they put a colon after \"Dear Dr. Ruiz\" and after each character’s name before their lines?",
+      "assessmentPrompt": "When {{name}} is given a letter task specifying a colon-based salutation style, a memo with header labels and a short play script, can they place the colons required by each convention, follow the stated style for any memo salutation, and explain how a comma-based greeting differs?",
       "standards": [
         "the-ontario-curriculum-language-2023:ON-LANG-2023-G6-B3.3"
       ]

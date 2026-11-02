@@ -21,6 +21,8 @@ Each is one whole-topic claim and belief, with positive, near-miss and cross-con
 
 The existing suffix topic `mt_2X9Cd38eSJ` keeps its scope, description and assessment prompt. Evidence items 0 and 2 correct the overstated `-cious/-tious` explanation and qualify `-ant/-ent` word-family guidance; item 1 and every other claim field are retained. The full claim continues to cover its three suffix families, including exceptions. No learner estimate is reset or retrospectively reweighted.
 
+PR review identified that the colon evidence and assessment question did not consistently carry the description’s style condition. One supported builder update now makes letter and memo greeting checks depend on the stated convention and checks letter, memo and script contexts together. The description, topic identity, mappings and dependencies remain unchanged; the refreshed export comes from the verified staging correction.
+
 The gerund claim has one hard prerequisite on the complete basic noun/verb distinction. Seven soft supports connect the new claims to existing knowledge. All 3,995 old dependency records in the public projection remain identical. Soft support can affect future evidence propagation; it is not just display metadata. Earlier Mathematics, Kindergarten and Language Grades 1–5 links are preserved. The legacy US `L.2.2b` alignment on `mt_QEr24lqzvH` remains a separately identified source-fit issue and is not used to close the new colon claim.
 
 ## Remaining conditions
