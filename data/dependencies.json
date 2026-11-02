@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3995,
+  "edgeCount": 4003,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -1862,6 +1862,24 @@
       "prerequisiteId": "mt_WtIFJSCQIT",
       "strength": "soft",
       "reason": "Conditions are stated with triangle notation (AB, angle A), and explaining 'included' versus 'non-included' angles relies on it"
+    },
+    {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_2oswCNuapH",
+      "strength": "soft",
+      "reason": "Recognising stereotypes supports the claim’s requirement not to judge a person or group from a signal."
+    },
+    {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_dALEWRHXnZ",
+      "strength": "soft",
+      "reason": "Using and reading gestures and facial expressions alongside words is the base the variation knowledge builds on."
+    },
+    {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_nIl1kKZHsk",
+      "strength": "soft",
+      "reason": "Understanding that culture and experience shape emotional responses is a closely related conceptual neighbour."
     },
     {
       "topicId": "mt_4emC463IyW",
@@ -9316,6 +9334,18 @@
       "reason": "Noticing the gap between decoding and understanding requires first having the foundational idea that reading means making meaning"
     },
     {
+      "topicId": "mt_gvU3c_FLyu",
+      "prerequisiteId": "mt_9lN0SpKlEH",
+      "strength": "soft",
+      "reason": "Selecting conventions for formal letters and scripts provides the genres in which the colon conventions are used."
+    },
+    {
+      "topicId": "mt_gvU3c_FLyu",
+      "prerequisiteId": "mt_uycuqPaiJ1",
+      "strength": "soft",
+      "reason": "Knowing that a colon signals that what follows belongs to what precedes it (as in list colons) supports the label/speaker use."
+    },
+    {
       "topicId": "mt_gv_uoHkdjR",
       "prerequisiteId": "mt__kFxuAgs6d",
       "strength": "hard",
@@ -14330,6 +14360,24 @@
       "prerequisiteId": "mt_Of-WsrRQ8B",
       "strength": "hard",
       "reason": "Modal verbs modify main verbs to express possibility/necessity; learners need a secure grasp of simple verb tenses before adding modal modifiers"
+    },
+    {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_enj1sMcfOT",
+      "strength": "soft",
+      "reason": "The progressive form (is swimming) is the main contrast case; enj1 holds it, inside a broader tense-consistency claim."
+    },
+    {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_j351evNNnB",
+      "strength": "soft",
+      "reason": "Knowing that a word can describe a noun (adjective vs adverb) supports separating \"the swimming dog\" from a gerund."
+    },
+    {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_yBJyCfhtem",
+      "strength": "hard",
+      "reason": "Recognising an -ing word as doing a noun’s job rather than a verb’s requires the basic noun/verb distinction itself; yBJy’s whole (use common nouns and action verbs appropriately; identify nouns and verbs in simple sentences) is entailed by every evidence item of the gerund claim."
     },
     {
       "topicId": "mt_NaqEP8xDhZ",
