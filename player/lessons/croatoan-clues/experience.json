@@ -1,0 +1,369 @@
+{
+  "protocolVersion": 1,
+  "kind": "historical-inquiry",
+  "apiVersion": 1,
+  "releaseId": "croatoan-inquiry-v2",
+  "description": "A source-based Roanoke investigation. Artwork is a reconstruction. Sources and provenance are authoritative curated data. A reported observation is not proof its author was right. No theory has a deterministic score. Opening documents, navigating, highlighting or comparing are not learner answers. Several extracts share White’s single account; shared originId means they are not independent corroboration. Reasoning is interpreted by the tutor from actual learner words. Scaffolding and fresh sources can alternate without stage gates.",
+  "stateSchema": {
+    "type": "object",
+    "properties": {
+      "sceneId": {
+        "type": "string"
+      },
+      "introduction": {
+        "type": "object",
+        "properties": {
+          "active": {
+            "type": "boolean"
+          },
+          "beat": {
+            "enum": ["where", "arrival", "delay", "return"]
+          },
+          "viewed": {
+            "type": "array",
+            "items": {
+              "enum": ["where", "arrival", "delay", "return"]
+            }
+          }
+        },
+        "required": ["active", "beat", "viewed"],
+        "additionalProperties": false
+      },
+      "introductionCatalog": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "scene": {
+        "enum": ["map", "fort", "croatoan", "dig", "oldmap"]
+      },
+      "activeSource": {
+        "type": "string"
+      },
+      "comparedSource": {
+        "type": "string"
+      },
+      "openedSources": {
+        "type": "array",
+        "items": {
+          "enum": ["carving", "houses", "chests", "cross", "hope", "lawson", "finds", "map"]
+        }
+      },
+      "sourceCatalog": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "contextFacts": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "timelineVisible": {
+        "type": "boolean"
+      },
+      "wording": {
+        "enum": ["simple", "extract"]
+      },
+      "highlight": {
+        "enum": ["none", "observation", "inference", "both"]
+      },
+      "supportUsed": {
+        "type": "boolean"
+      },
+      "reasoningContext": {
+        "type": "object"
+      },
+      "guidedSources": {
+        "type": "array",
+        "items": {
+          "enum": ["carving", "houses", "chests", "cross", "hope", "lawson", "finds", "map"]
+        }
+      },
+      "currentAttempt": {
+        "type": "object"
+      },
+      "attempts": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "notebook": {
+        "type": "object"
+      },
+      "learnerActions": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "required": [
+      "sceneId",
+      "introduction",
+      "introductionCatalog",
+      "scene",
+      "activeSource",
+      "comparedSource",
+      "openedSources",
+      "sourceCatalog",
+      "contextFacts",
+      "timelineVisible",
+      "wording",
+      "highlight",
+      "supportUsed",
+      "reasoningContext",
+      "guidedSources",
+      "currentAttempt",
+      "attempts",
+      "notebook",
+      "learnerActions"
+    ],
+    "additionalProperties": false
+  },
+  "actions": [
+    {
+      "name": "show_introduction",
+      "description": "Show a visual story beat: where (world location), arrival (1587 settlement and White leaves), delay (1587–1590), return (1590 empty settlement). The matching narration and visible dates are in introductionCatalog. This is context, never a quiz or evidence of learning; displayed does not mean heard. Preserve ongoing work and answer questions naturally. If the child asks to move on, use the corresponding beat and introduce it.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "beat": {
+            "enum": ["where", "arrival", "delay", "return"]
+          }
+        },
+        "required": ["beat"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "leave_introduction",
+      "description": "Close the optional visual story and restore the investigation without erasing work or answering a pending question.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "visit_place",
+      "description": "Move to a place without consuming an unanswered question or resetting reasoning. Places are always open. Introduce the purpose of a change in your conversation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "place": {
+            "enum": ["map", "fort", "croatoan", "dig", "oldmap"]
+          }
+        },
+        "required": ["place"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "open_source",
+      "description": "Open a document and its provenance. This is navigation, not a learner answer. Source IDs: carving: The carved word; houses: The missing houses; chests: The broken chests; cross: The agreed sign; hope: White’s conclusion; lawson: A much later book; finds: Objects found on Hatteras; map: A mark beneath a patch",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "enum": ["carving", "houses", "chests", "cross", "hope", "lawson", "finds", "map"]
+          }
+        },
+        "required": ["sourceId"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "show_timeline",
+      "description": "Show or hide relevant dates. Distinguish the event, publication and later examination; dates are not all equally spaced on this labelled timeline.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "visible": {
+            "type": "boolean"
+          }
+        },
+        "required": ["visible"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "highlight_source",
+      "description": "Explain the active source by showing its reported observation and/or a possible inference. This reveals reasoning support and makes this source guided thereafter. Do not show this before a fresh question unless help is needed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "part": {
+            "enum": ["none", "observation", "inference", "both"]
+          }
+        },
+        "required": ["part"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "begin_investigation",
+      "description": "Optional focused question context: open a source for guided practice or a fresh independent try, then introduce one question yourself. Never resets notebook or history. A previously guided source cannot become independent by reopening it. Discuss replacing an unanswered question before using a different source.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "enum": ["carving", "houses", "chests", "cross", "hope", "lawson", "finds", "map"]
+          },
+          "mode": {
+            "enum": ["guided", "independent"]
+          }
+        },
+        "required": ["sourceId", "mode"],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "events": {
+    "introduction_changed": {
+      "type": "object",
+      "properties": {
+        "beat": {
+          "type": "string"
+        }
+      },
+      "required": ["beat"],
+      "additionalProperties": false
+    },
+    "introduction_closed": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    },
+    "place_visited": {
+      "type": "object",
+      "properties": {
+        "place": {
+          "enum": ["map", "fort", "croatoan", "dig", "oldmap"]
+        }
+      },
+      "required": ["place"],
+      "additionalProperties": false
+    },
+    "source_opened": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        }
+      },
+      "required": ["sourceId"],
+      "additionalProperties": false
+    },
+    "evidence_discovered": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        }
+      },
+      "required": ["sourceId"],
+      "additionalProperties": false
+    },
+    "source_read_requested": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        }
+      },
+      "required": ["sourceId"],
+      "additionalProperties": false
+    },
+    "wording_changed": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "wording": {
+          "type": "string"
+        }
+      },
+      "required": ["sourceId", "wording"],
+      "additionalProperties": false
+    },
+    "sources_compared": {
+      "type": "object",
+      "properties": {
+        "first": {
+          "type": "string"
+        },
+        "second": {
+          "type": "string"
+        }
+      },
+      "required": ["first", "second"],
+      "additionalProperties": false
+    },
+    "timeline_changed": {
+      "type": "object",
+      "properties": {
+        "visible": {
+          "type": "boolean"
+        }
+      },
+      "required": ["visible"],
+      "additionalProperties": false
+    },
+    "source_highlighted": {
+      "type": "object",
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "part": {
+          "type": "string"
+        }
+      },
+      "required": ["sourceId", "part"],
+      "additionalProperties": false
+    },
+    "activity_prepared": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "sceneId": {
+          "type": "string"
+        }
+      },
+      "required": ["kind", "sceneId"],
+      "additionalProperties": false
+    },
+    "notebook_saved": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "integer"
+        },
+        "claim": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "enum": ["carving", "houses", "chests", "cross", "hope", "lawson", "finds", "map"]
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        }
+      },
+      "required": ["version", "claim", "evidence", "uncertainty"],
+      "additionalProperties": false
+    }
+  }
+}

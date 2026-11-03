@@ -1,0 +1,48 @@
+body {
+  background: #faf3df;
+  color: #283b34;
+  font-family: 'Baloo 2', sans-serif;
+}
+main {
+  max-width: 750px;
+  margin: 120px auto 0;
+  padding: 20px;
+}
+h1 {
+  font-size: 38px;
+}
+#bar {
+  display: flex;
+  height: 140px;
+  border: 3px solid #283b34;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 30px 0;
+}
+#bar span {
+  flex: 1;
+  background: #7fc7bb;
+  border-right: 3px solid #283b34;
+}
+#bar span:last-child {
+  border: 0;
+}
+form {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+label {
+  display: grid;
+  gap: 10px;
+}
+input {
+  font: inherit;
+  width: 130px;
+  padding: 12px;
+  border: 2px solid #283b34;
+  border-radius: 12px;
+}
+#result {
+  font-size: 24px;
+}

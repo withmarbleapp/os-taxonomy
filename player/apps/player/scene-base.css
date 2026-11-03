@@ -1,0 +1,560 @@
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('/player/assets/Baloo2-variable.ttf') format('truetype');
+  font-weight: 400 800;
+  font-display: block;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font:
+    500 18px/1.3 'Baloo 2',
+    sans-serif;
+  color: #fff5df;
+  background: #0b1726;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button[hidden],
+[hidden] {
+  display: none !important;
+}
+#world {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+#world:focus-visible {
+  outline: 4px solid #9c7bdb;
+  outline-offset: -6px;
+}
+#cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7vw;
+  gap: 30px;
+  background: linear-gradient(90deg, #08132165, transparent 65%);
+}
+#cover h1 {
+  font-size: clamp(45px, 5.4vw, 78px);
+  font-weight: 550;
+  line-height: 1.09;
+  max-width: 47%;
+  letter-spacing: -1.3px;
+  margin: 0;
+}
+#cover .control {
+  font-size: 23px;
+  padding: 14px 25px;
+}
+header {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+}
+header h1 {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+header button {
+  pointer-events: auto;
+}
+.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 10px 18px;
+  border: 2px solid #242722;
+  border-radius: 22px;
+  color: #141414;
+  background: #fdfcfa;
+  box-shadow: 0 4px 0 #242722;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.15;
+  touch-action: manipulation;
+  transition:
+    translate 0.12s,
+    box-shadow 0.12s;
+  white-space: nowrap;
+}
+.control:hover {
+  background: #fff6d4;
+}
+.control:active {
+  translate: 0 3px;
+  box-shadow: 0 1px 0 #242722;
+}
+.control:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.primary {
+  background: #f42324;
+  color: white;
+  border-color: #8b0023;
+  box-shadow: 0 4px 0 #8b0023;
+}
+.primary:hover {
+  background: #d61922;
+}
+.primary:active {
+  box-shadow: 0 1px 0 #8b0023;
+}
+.compact {
+  min-width: 48px;
+  width: 48px;
+  padding: 8px;
+  font-size: 23px;
+}
+.control:focus-visible,
+.object:focus-visible,
+input:focus-visible {
+  outline: 4px solid #a080dc;
+  outline-offset: 5px;
+}
+#explanation {
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  right: 40px;
+  width: min(30vw, 425px);
+  padding: 18px 20px;
+  border-left: 4px solid #8bc8fa;
+  background: linear-gradient(270deg, #07101fe8, #07101f00);
+  pointer-events: none;
+}
+#instruction {
+  font-size: clamp(27px, 2.45vw, 36px);
+  font-weight: 550;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin: 0;
+  text-wrap: pretty;
+}
+body.day-sky {
+  color: #141414;
+}
+body.day-sky #explanation {
+  background: linear-gradient(90deg, #fdfcfaed, #fdfcfa00);
+}
+.object {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  touch-action: none;
+  color: #141414;
+  z-index: 1;
+}
+.object span {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 6px 11px;
+  border: 2px solid #242722;
+  border-radius: 18px;
+  background: #fdfcfa;
+  box-shadow: 0 3px 0 #242722;
+  font-size: 16px;
+}
+.object[data-selected='true'] span {
+  background: #ffda72;
+}
+.object:active {
+  cursor: grabbing;
+}
+#object-earth {
+  cursor: grab;
+}
+#object-earth span {
+  bottom: 5px;
+}
+#actions {
+  position: absolute;
+  bottom: 112px;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  pointer-events: none;
+  z-index: 3;
+}
+#actions > * {
+  pointer-events: auto;
+}
+#predictions {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#commit {
+  margin-left: auto;
+}
+#talk-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+#ptt {
+  min-width: 185px;
+  touch-action: none;
+  user-select: none;
+}
+#ptt[aria-pressed='true'] {
+  background: #8b0023;
+  box-shadow: 0 1px 0 #5d0018;
+  translate: 0 3px;
+}
+#ptt[data-busy='true'] {
+  background: #8d273b;
+}
+#toggle-record[aria-pressed='true'] {
+  background: #ffda72;
+}
+dialog {
+  position: fixed;
+  border: 2px solid #242722;
+  border-radius: 22px;
+  background: #fdfcfa;
+  color: #141414;
+  width: min(580px, calc(100vw - 24px));
+  max-height: 85vh;
+  padding: 24px;
+  overflow: auto;
+  font-size: 17px;
+}
+dialog::backdrop {
+  background: #051020a0;
+}
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 550;
+  margin: 0;
+}
+dialog p {
+  margin: 14px 0;
+}
+#provider,
+#notice {
+  font-size: 14px;
+  color: #626262;
+}
+#conversation {
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+#conversation p {
+  padding: 12px;
+  background: #e8edf0;
+  border-radius: 12px;
+}
+#conversation p.user {
+  background: #f4e8cf;
+}
+form {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+}
+input[type='text'],
+#text {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #666;
+  border-radius: 10px;
+}
+dialog a {
+  color: #285870;
+}
+dialog #restart,
+dialog #stop {
+  margin: 7px 5px 0 0;
+}
+pre {
+  font: 12px/1.4 monospace;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 220px;
+}
+details {
+  margin-top: 16px;
+}
+summary {
+  cursor: pointer;
+}
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+.word {
+  border-bottom: 2px dashed currentColor;
+  pointer-events: auto;
+  cursor: help;
+}
+#word-help {
+  position: absolute;
+  z-index: 10;
+  right: 35px;
+  top: 50%;
+  max-width: 320px;
+  padding: 18px 45px 18px 18px;
+  background: #fdfcfa;
+  color: #141414;
+  border: 2px solid #242722;
+  border-radius: 15px;
+  box-shadow: 0 4px 0 #242722;
+}
+#word-help p {
+  margin: 0;
+}
+#word-close {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  border: 0;
+  background: none;
+  font-size: 26px;
+  min-width: 32px;
+  min-height: 32px;
+}
+#ptt kbd {
+  font:
+    500 12px 'Baloo 2',
+    sans-serif;
+  border: 1px solid #ffffff80;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+dialog > label {
+  display: block;
+  margin: 10px 0;
+}
+@media (max-width: 800px) {
+  header {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  header h1 {
+    font-size: 17px;
+    max-width: 70%;
+  }
+  #cover {
+    justify-content: flex-start;
+    padding: 12vh 24px 0;
+    gap: 24px;
+    background: linear-gradient(#08132144, transparent 65%);
+  }
+  #cover h1 {
+    font-size: clamp(39px, 8.8vw, 58px);
+    max-width: 95%;
+    line-height: 1.1;
+  }
+  #cover .control {
+    font-size: 20px;
+  }
+  #explanation {
+    top: 90px;
+    left: 20px;
+    right: auto;
+    width: calc(100% - 40px);
+    padding: 0 0 0 14px;
+    border-left-width: 3px;
+    background: transparent !important;
+  }
+  #instruction {
+    font-size: clamp(22px, 5.7vw, 28px);
+    line-height: 1.17;
+    letter-spacing: -0.3px;
+  }
+  .control {
+    font-size: 16px;
+    padding: 10px 13px;
+    border-radius: 18px;
+    gap: 6px;
+  }
+  .compact {
+    font-size: 22px;
+  }
+  #actions {
+    left: 16px;
+    right: 16px;
+    bottom: 108px;
+    gap: 8px;
+  }
+  #talk-controls {
+    bottom: max(24px, env(safe-area-inset-bottom));
+  }
+  .object span {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  #predictions {
+    margin: 0 auto;
+  }
+  #commit {
+    margin-left: 0;
+  }
+  #word-help {
+    left: 20px;
+    right: 20px;
+    top: 38%;
+    max-width: none;
+  }
+}
+@media (max-height: 620px) and (min-width: 801px) {
+  header {
+    top: 12px;
+  }
+  #explanation {
+    top: 21%;
+    padding: 10px 14px;
+  }
+  #instruction {
+    font-size: 25px;
+  }
+  #actions {
+    bottom: 88px;
+  }
+  #talk-controls {
+    bottom: 15px;
+  }
+  #cover h1 {
+    font-size: 52px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+#finish-options {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+#ending {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  background: #081321b8;
+  color: #fff5df;
+  text-align: center;
+}
+#ending h1 {
+  font-size: 32px;
+  font-weight: 550;
+  max-width: 500px;
+}
+
+#horizon-preview {
+  position: absolute;
+  left: 32px;
+  bottom: 190px;
+  width: 330px;
+  height: 200px;
+  border: 3px solid #ffda72;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow:
+    0 0 0 3px #142026,
+    0 8px 25px #0005;
+}
+#explain-horizon[aria-pressed='true'] {
+  background: #ffda72;
+}
+@media (max-width: 800px) {
+  #horizon-preview {
+    left: 16px;
+    bottom: 230px;
+    width: 166px;
+    height: 128px;
+  }
+  #explain-horizon {
+    max-width: 180px;
+  }
+}
+
+body.continuous-light #object-earth span {
+  display: none;
+}
+#object-observer.movable {
+  cursor: grab;
+  min-width: 64px;
+  min-height: 64px;
+}
+#object-observer.movable span {
+  top: calc(50% + var(--label-y, 40px));
+  left: calc(50% + var(--label-x, 0px));
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
+#object-moon span {
+  left: calc(50% + var(--moon-label-x, 0px));
+}
+/* Player-owned overlay safe areas. Scenes fill the viewport. */
+:root{--marble-controls-right:210px;--marble-controls-bottom:260px;--marble-menu-right:88px}
+@media(max-width:800px){:root{--marble-controls-right:166px;--marble-controls-bottom:225px;--marble-menu-right:75px}}

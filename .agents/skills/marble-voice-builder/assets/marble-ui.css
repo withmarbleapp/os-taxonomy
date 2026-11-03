@@ -1,0 +1,247 @@
+/* Marble house styling illustrated by the Moon Visit and Sky Colour
+   Explorer, October 2026. Scoped primitives, not a complete experience layout.
+   Embed the development font URL as bytes in standalone HTML; retain OFL.txt. */
+@font-face {
+  font-family: "Baloo 2";
+  src: url("./fonts/Baloo2-variable.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: block;
+}
+.marble-learning {
+  --ml-red: #f42324;
+  --ml-red-depth: #8b0023;
+  --ml-ink: #141414;
+  --ml-outline: #242722;
+  --ml-surface: #fdfcfa;
+  --ml-paper: #f4efe4;
+  --ml-muted: #626262;
+  --ml-success: #1fa20d;
+  --ml-attention: #fdae1c;
+  --ml-explanation-accent: #8bc8fa;
+  --ml-copy-wash: #fdfcfaed;
+  --ml-copy-clear: #fdfcfa00;
+  --ml-copy-shadow: none;
+  --ml-focus: #774dc7;
+  font-family: "Baloo 2", sans-serif;
+  color: var(--ml-ink);
+  background: var(--ml-paper);
+}
+.marble-learning[data-ml-theme="dark"] {
+  --ml-copy-wash: #07101fe8;
+  --ml-copy-clear: #07101f00;
+  --ml-copy-shadow: 0 2px 10px #030812;
+  color: #fff5df;
+  background: #07101f;
+}
+.marble-learning *, .marble-learning *::before, .marble-learning *::after {
+  box-sizing: border-box;
+}
+.marble-learning [hidden] { display: none !important; }
+/* Optional placement helpers: keep the world/assessment state in application code. */
+.marble-learning .ml-stage { position: relative; isolation: isolate; min-height: 100svh; }
+.marble-learning .ml-header {
+  position: absolute;
+  z-index: 3;
+  top: 24px;
+  left: 32px;
+  max-width: calc(100% - 110px);
+  pointer-events: none;
+}
+.marble-learning .ml-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.2;
+  letter-spacing: -.3px;
+}
+.marble-learning .ml-explanation {
+  position: absolute;
+  z-index: 3;
+  top: 24%;
+  left: 40px;
+  width: min(28vw, 390px);
+  padding: 18px 20px;
+  border-left: 4px solid var(--ml-explanation-accent);
+  background: linear-gradient(90deg, var(--ml-copy-wash), var(--ml-copy-clear));
+  text-shadow: var(--ml-copy-shadow);
+  pointer-events: none;
+}
+.marble-learning .ml-explanation--right {
+  left: auto;
+  right: 40px;
+  background: linear-gradient(270deg, var(--ml-copy-wash), var(--ml-copy-clear));
+}
+.marble-learning .ml-instruction {
+  margin: 0;
+  font-size: clamp(27px, 2.45vw, 36px);
+  font-weight: 550;
+  letter-spacing: -.5px;
+  line-height: 1.2;
+  text-wrap: pretty;
+}
+.marble-learning .ml-control {
+  --ml-control-depth: var(--ml-outline);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 44px;
+  min-height: 50px;
+  padding: 10px 18px;
+  border: 2px solid var(--ml-outline);
+  border-radius: 22px;
+  background: var(--ml-surface);
+  color: var(--ml-ink);
+  box-shadow: 0 4px 0 var(--ml-control-depth);
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: translate 120ms, box-shadow 120ms, background-color 120ms;
+  font: 500 18px "Baloo 2", sans-serif;
+}
+.marble-learning .ml-control:hover:not(:disabled) {
+  background: #fff6d4;
+  translate: 0 -2px;
+}
+.marble-learning .ml-control--primary {
+  --ml-control-depth: var(--ml-red-depth);
+  background: var(--ml-red);
+  border-color: var(--ml-red-depth);
+  color: #fff;
+}
+.marble-learning .ml-control--primary:hover:not(:disabled) { background: #d61922; }
+.marble-learning .ml-control:active:not(:disabled) {
+  translate: 0 3px;
+  box-shadow: 0 1px 0 var(--ml-control-depth);
+}
+.marble-learning .ml-control[aria-pressed="true"],
+.marble-learning .ml-control[aria-pressed="true"]:hover:not(:disabled) {
+  --ml-control-depth: var(--ml-outline);
+  background: #ffda72;
+  color: var(--ml-ink);
+  border-color: var(--ml-outline);
+  box-shadow: 0 4px 0 var(--ml-control-depth), inset 0 0 0 3px #fff;
+}
+.marble-learning .ml-control[aria-pressed="true"]:active:not(:disabled) {
+  box-shadow: 0 1px 0 var(--ml-control-depth), inset 0 0 0 3px #fff;
+}
+.marble-learning .ml-control:disabled { opacity: .45; cursor: default; translate: none; }
+.marble-learning .ml-control--icon-only { width: 50px; padding: 10px; }
+.marble-learning .ml-control--quiet {
+  min-height: 44px;
+  border: 0;
+  background: #ffffff80;
+  box-shadow: none;
+}
+.marble-learning .ml-control--quiet.ml-control--icon-only { width: 44px; padding: 8px; }
+.marble-learning .ml-control--quiet:hover:not(:disabled) { background: #ffffffc0; }
+.marble-learning[data-ml-theme="dark"] .ml-control--quiet {
+  color: #fff5df;
+  background: #ffffff14;
+}
+.marble-learning[data-ml-theme="dark"] .ml-control--quiet:hover:not(:disabled) { background: #ffffff24; }
+.marble-learning .ml-control--quiet:active:not(:disabled) { box-shadow: none; }
+.marble-learning :focus-visible { outline: 4px solid var(--ml-focus); outline-offset: 5px; }
+.marble-learning .ml-control svg {
+  width: 23px;
+  height: 23px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.marble-learning .ml-button-label {
+  display: block;
+  margin: 0;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+  pointer-events: none;
+}
+/* Anchor scene chips with transform; translate is reserved for control lift. */
+.marble-learning .ml-chip {
+  position: absolute;
+  transform: translate(-50%, -100%);
+}
+.marble-learning .ml-object-control {
+  position: absolute;
+  translate: -50% -50%;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: grab;
+  touch-action: none;
+  font-family: "Baloo 2", sans-serif;
+}
+.marble-learning .ml-object-control:active { cursor: grabbing; }
+.marble-learning .ml-object-control .ml-button-label {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  translate: -50% 0;
+  padding: 6px 10px;
+  border: 2px solid var(--ml-outline);
+  border-radius: 18px;
+  background: var(--ml-surface);
+  color: var(--ml-ink);
+  font-size: 16px;
+  box-shadow: 0 3px 0 var(--ml-outline);
+}
+.marble-learning .ml-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 800px) {
+  .marble-learning .ml-header { top: 20px; left: 20px; max-width: calc(100% - 80px); }
+  .marble-learning .ml-title { font-size: 17px; }
+  .marble-learning .ml-explanation,
+  .marble-learning .ml-explanation--right {
+    top: 105px;
+    left: 20px;
+    right: auto;
+    width: calc(100% - 40px);
+    padding: 0 0 0 14px;
+    border-left-width: 3px;
+    background: transparent;
+  }
+  .marble-learning .ml-instruction {
+    font-size: clamp(22px, 5.9vw, 28px);
+    line-height: 1.17;
+    letter-spacing: -.3px;
+  }
+  .marble-learning .ml-control { font-size: 16px; padding: 10px 13px; border-radius: 18px; gap: 6px; }
+  .marble-learning .ml-control--icon-only { padding: 10px; }
+  .marble-learning .ml-button-label { font-size: 16px; }
+}
+@media (max-width: 600px) {
+  .marble-learning .ml-object-control .ml-button-label { font-size: 14px; padding: 5px 7px; }
+}
+@media (max-height: 570px) and (min-width: 801px) {
+  .marble-learning .ml-header { top: 12px; }
+  .marble-learning .ml-title { font-size: 17px; }
+  .marble-learning .ml-explanation { padding: 10px 14px; }
+  .marble-learning .ml-instruction { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marble-learning *, .marble-learning *::before, .marble-learning *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

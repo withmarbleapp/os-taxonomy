@@ -1,0 +1,22 @@
+{
+  "id": "equal-parts",
+  "introduction": { "objective": "Name how many equal parts make one whole." },
+  "learningGoals": [{ "id": "whole-and-parts", "objective": "Count the equal parts in a whole." }],
+  "dialogue": {
+    "mode": "adaptive-general",
+    "focuses": [{ "id": "parts", "goals": ["whole-and-parts"] }]
+  },
+  "teaching": [],
+  "observationEvents": ["answer_checked"],
+  "evidenceEvents": ["answer_checked"],
+  "selfEvaluation": {
+    "skills": [
+      {
+        "id": "count-parts",
+        "description": "Count the equal parts in a whole.",
+        "focuses": ["parts"]
+      }
+    ]
+  },
+  "tutorGuidance": "This is a small authoring starter, not a complete researched lesson. Explain that the whole bar is split into equal parts. Invite the child to count them. Ask a small question and respond to their meaning. Use a different number of parts for a fresh try; introduce that task. Assess only currentAttempt after Check, never the draft. Correct a counting error specifically, allow revision, and offer a fresh try when helpful. Ask how they counted only when needed. Finish by asking how capable they feel. Do not require a fixed sequence. Use familiar words and one short question at a time."
+}

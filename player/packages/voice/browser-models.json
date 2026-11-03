@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "phonon/config.json",
+      "bytes": 2851,
+      "sha256": "7062ea376e6b158543c8abec8e5af67df171c49ad70eb7e2a0fb25c16f265e06",
+      "url": "https://huggingface.co/gradium/phonon-31m-en/resolve/8acf8881a96315724c72ed3aad2a0900d1b230ba/config.json"
+    },
+    {
+      "path": "phonon/tokenizer.json",
+      "bytes": 277967,
+      "sha256": "691a00068fa7b989f2f3e5ae5daa2d1a5bb319f2d5360deafcfb19a8bb6e7936",
+      "url": "https://huggingface.co/gradium/phonon-31m-en/resolve/8acf8881a96315724c72ed3aad2a0900d1b230ba/tokenizer.json"
+    },
+    {
+      "path": "phonon/model.q8.gguf",
+      "bytes": 64512352,
+      "sha256": "a7d9aad2cd6dc66473f24a08bc6d2939030ef4d751ef82349361fbef3272dbae",
+      "url": "https://huggingface.co/gradium/phonon-31m-en/resolve/8acf8881a96315724c72ed3aad2a0900d1b230ba/model.q8.gguf"
+    },
+    {
+      "path": "phonon/voices/Freya.safetensors",
+      "bytes": 256080,
+      "sha256": "ee09c8b9489ad7531c0f4edb9f6e829200c1ccb2aeac630683f348bdb81fe00a",
+      "url": "/voice/assets/Freya.safetensors"
+    },
+    {
+      "path": "moonshine/adapter.ort",
+      "bytes": 2870368,
+      "sha256": "c665f742364febad597cc9ac1e0b341ffbee0e24a1466e2f3bde95e6e4771762",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/adapter.ort"
+    },
+    {
+      "path": "moonshine/cross_kv.ort",
+      "bytes": 5356536,
+      "sha256": "e2d3417144e9514055ebfefe8dcc4c0a55a55adcb8530435844c75c53e352bf6",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/cross_kv.ort"
+    },
+    {
+      "path": "moonshine/decoder_kv.ort",
+      "bytes": 81878600,
+      "sha256": "1a05465b1dd955858dfcbee039c0020fb5dd982b0f5094c34e61735d518d771b",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/decoder_kv.ort"
+    },
+    {
+      "path": "moonshine/encoder.ort",
+      "bytes": 44148576,
+      "sha256": "2d4d973e91e8aca08c51e7e7efa28a46ab265b63d809d5294d18b86bcd85b993",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/encoder.ort"
+    },
+    {
+      "path": "moonshine/frontend.ort",
+      "bytes": 30984520,
+      "sha256": "d1be8145bc9ef3e8625bb7bcb7a5b2930eeb828c91d6c1897bc215d7de6f2b93",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/frontend.ort"
+    },
+    {
+      "path": "moonshine/streaming_config.json",
+      "bytes": 512,
+      "sha256": "26f02b6afb22d60871a5efd85c3d38e569cc0ddb6c5eb6e93d3260152ae8a47a",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/streaming_config.json"
+    },
+    {
+      "path": "moonshine/tokenizer.bin",
+      "bytes": 249974,
+      "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d",
+      "url": "https://download.moonshine.ai/model/small-streaming-en/quantized_26_07_30/tokenizer.bin"
+    }
+  ]
+}
