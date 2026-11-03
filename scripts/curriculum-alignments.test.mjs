@@ -73,7 +73,7 @@ const corruptions = [
   ['age-only with links', d => { d.alignments[0].ageOnly = true; }, /ageOnly/],
   ['unknown field', d => { d.alignments[0].privateSourceText = 'must not pass through'; }, /unexpected property/],
   ['unknown envelope field', d => { d.privateSnapshot = {}; }, /unexpected property/],
-  ['unsupported schema', d => { d.schemaVersion = 2; }, /must equal 1/],
+  ['unsupported schema', d => { d.schemaVersion = 99; }, /must equal 1/],
   ['wrong version', d => { d.version = 'v2'; }, /version mismatch/],
   ['lowercase country', d => { d.alignments[0].country = 'gb'; }, /pattern/],
   ['region control character', d => { d.alignments[0].region = 'A\u0000B'; }, /control characters/],
@@ -138,11 +138,15 @@ test('CLI uses explicit inputs, returns golden previews and never modifies sourc
 });
 
 // Complete synthetic snapshot: no private data or copies of the published dataset.
-function snapshot(directory, includeAlignments) {
+function snapshot(directory, includeAlignments, scoped = false) {
   const data = join(directory, 'data');
   mkdirSync(data);
   for (const part of ['schema', 'scripts']) cpSync(new URL(`../${part}`, import.meta.url), join(directory, part), { recursive: true });
   const { document, context } = fresh();
+  if (scoped) {
+    document.schemaVersion = 2;
+    document.alignments = document.alignments.map(row => ({ ...row, scope: 'jurisdiction' }));
+  }
   const manifest = { taxonomyVersion: 'v1', counts: { teachingResearch: 0 }, files: {} };
   const put = (name, value) => {
     const bytes = JSON.stringify(value, null, 2) + '\n';
@@ -206,4 +210,20 @@ test('optional alignment file and manifest declarations must agree, including ze
       assert.match(result.stderr, present ? /manifest missing curriculum-alignments.json checksum|manifest curriculumAlignments count mismatch/ : /manifest declares missing/);
     } finally { rmSync(dir, { recursive: true, force: true }); }
   }
+});
+
+test('dataset validation accepts v2 and rejects scope corruption even with updated checksums/counts', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'taxonomy-alignments-v2-'));
+  try {
+    const fixture = snapshot(dir, true, true);
+    const baseline = fixture.validate();
+    assert.equal(baseline.status, 0, baseline.stderr);
+    assert.match(baseline.stdout, /Alignment contract: validated/);
+    fixture.document.alignments[0].scope = 'global';
+    fixture.put('curriculum-alignments.json', fixture.document);
+    const bad = fixture.validate();
+    assert.equal(bad.status, 1);
+    assert.match(bad.stderr, /allowed shape/);
+    assert.doesNotMatch(bad.stderr, /checksum mismatch|count mismatch/);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
 });

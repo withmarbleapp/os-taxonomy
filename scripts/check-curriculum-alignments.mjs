@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { checkSchema } from './check-schema.mjs';
 const schema = name => JSON.parse(readFileSync(new URL(`../schema/${name}.schema.json`, import.meta.url), 'utf8'));
 const alignmentSchema = schema('curriculum-alignments');
+const scopedAlignmentSchema = schema('curriculum-alignments-v2');
 const topicsSchema = schema('topics');
 const curriculaSchema = schema('curriculum-standards');
 const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0;
@@ -17,8 +18,9 @@ export class CurriculumAlignmentError extends Error {
 }
 
 function prepare(document, { topics, curriculumStandards } = {}) {
+  const scoped = document?.schemaVersion === 2;
   const errors = [
-    ...checkSchema(document, alignmentSchema, 'alignments'),
+    ...checkSchema(document, scoped ? scopedAlignmentSchema : alignmentSchema, 'alignments'),
     ...checkSchema(topics, topicsSchema, 'topics'),
     ...checkSchema(curriculumStandards, curriculaSchema, 'curricula'),
   ];
@@ -33,17 +35,19 @@ function prepare(document, { topics, curriculumStandards } = {}) {
     topicIds.add(topic.id);
   }
   const slugs = new Set();
+  const countryBySlug = new Map();
   const standards = new Map();
   for (const curriculum of curriculumStandards.curricula) {
     check(curriculum.slug.length > 0 && !/[\s:]/.test(curriculum.slug), `invalid curriculum slug ${curriculum.slug}`);
     check(!slugs.has(curriculum.slug), `duplicate curriculum slug ${curriculum.slug}`);
     slugs.add(curriculum.slug);
+    countryBySlug.set(curriculum.slug, curriculum.country);
     check(countryPattern.test(curriculum.country), `non-canonical curriculum country ${curriculum.slug}`);
     check(curriculum.topicCount === curriculum.topics.length, `standard count mismatch for ${curriculum.slug}`);
     for (const standard of curriculum.topics) {
       check(standard.key === `${curriculum.slug}:${standard.code}`, `standard key/code mismatch ${standard.key}`);
       check(!standards.has(standard.key), `duplicate catalogue standard ${standard.key}`);
-      standards.set(standard.key, curriculum.country);
+      standards.set(standard.key, { country: curriculum.country, slug: curriculum.slug });
     }
   }
   const contexts = new Set();
@@ -52,33 +56,45 @@ function prepare(document, { topics, curriculumStandards } = {}) {
     // Only region spelling is normalized. Country/standard identifiers must be explicit.
     const region = typeof row.region === 'string' ? row.region.normalize('NFC').trim() : '';
     check(!/[\u0000-\u001f\u007f]/.test(region), `${where}: region contains control characters`);
-    const contextKey = JSON.stringify([row.topicId, row.country, region]);
+    const contextKey = JSON.stringify(scoped
+      ? [row.topicId, row.scope, row.country ?? '', region, row.framework ?? '', row.ageRangeStart, row.ageRangeEnd]
+      : [row.topicId, row.country, region]);
     check(topicIds.has(row.topicId), `${where}: unknown topic`);
-    check(!contexts.has(contextKey), `${where}: duplicate or conflicting country/region context`);
+    check(!contexts.has(contextKey), `${where}: duplicate or conflicting ${scoped ? 'scope/age' : 'country/region'} context`);
     contexts.add(contextKey);
     check(row.ageRangeStart <= row.ageRangeEnd, `${where}: ageRangeStart exceeds ageRangeEnd`);
     check((row.standards.length === 0) === (row.ageOnly === true), `${where}: empty standards require ageOnly:true; linked contexts must omit ageOnly`);
+    if (scoped && row.scope === 'framework') {
+      check(slugs.has(row.framework), `${where}: unknown framework ${row.framework}`);
+      check(countryBySlug.get(row.framework) === 'International', `${where}: framework scope requires an International catalogue source`);
+    }
     const seen = new Set();
     for (const key of row.standards) {
       check(!seen.has(key), `${where}: duplicate standard ${key}`);
       seen.add(key);
       check(standards.has(key), `${where}: unresolved standard ${key}`);
       if (standards.has(key)) {
-        const country = standards.get(key);
-        check(country === row.country || country === 'International', `${where}: standard country mismatch ${key}`);
+        const { country, slug } = standards.get(key);
+        if (scoped && row.scope === 'framework') check(slug === row.framework, `${where}: standard framework mismatch ${key}`);
+        else check(country === row.country || country === 'International', `${where}: standard country mismatch ${key}`);
       }
     }
     return {
       topicId: row.topicId,
-      country: row.country,
+      ...(scoped ? { scope: row.scope } : {}),
+      ...(row.country !== undefined ? { country: row.country } : {}),
       ...(region ? { region } : {}),
+      ...(scoped && row.scope === 'framework' ? { framework: row.framework } : {}),
       ageRangeStart: row.ageRangeStart,
       ageRangeEnd: row.ageRangeEnd,
       standards: [...row.standards].sort(compare),
       ...(row.ageOnly === true ? { ageOnly: true } : {}),
     };
-  }).sort((a, b) => compare(a.topicId, b.topicId) || compare(a.country, b.country) || compare(a.region ?? '', b.region ?? ''));
-  return { errors, normalized: { schemaVersion: 1, version: document.version, alignments } };
+  }).sort((a, b) => compare(a.topicId, b.topicId)
+    || compare(a.scope ?? '', b.scope ?? '') || compare(a.country ?? '', b.country ?? '')
+    || compare(a.region ?? '', b.region ?? '') || compare(a.framework ?? '', b.framework ?? '')
+    || (scoped ? a.ageRangeStart - b.ageRangeStart || a.ageRangeEnd - b.ageRangeEnd : 0));
+  return { errors, normalized: { schemaVersion: document.schemaVersion, version: document.version, alignments } };
 }
 
 export function checkCurriculumAlignments(document, context) {

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "version": "v1",
+  "alignments": [
+    {
+      "topicId": "mt_shared",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": " Ontario ",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "standards": [
+        "ca-lang:S1"
+      ]
+    },
+    {
+      "topicId": "mt_shared",
+      "scope": "global",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 10,
+      "standards": [],
+      "ageOnly": true
+    },
+    {
+      "topicId": "mt_shared",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "region": null,
+      "ageRangeStart": 7,
+      "ageRangeEnd": 9,
+      "standards": [
+        "gb-lang:S1"
+      ]
+    },
+    {
+      "topicId": "mt_shared",
+      "scope": "framework",
+      "framework": "global-learning",
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "standards": [
+        "global-learning:S1"
+      ]
+    },
+    {
+      "topicId": "mt_shared",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 6,
+      "standards": [
+        "gb-lang:S2"
+      ]
+    },
+    {
+      "topicId": "mt_age_only",
+      "scope": "jurisdiction",
+      "country": "AU",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6,
+      "standards": [],
+      "ageOnly": true
+    }
+  ]
+}

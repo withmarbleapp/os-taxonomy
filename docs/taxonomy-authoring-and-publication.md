@@ -52,11 +52,12 @@ Missing public fields do not mean deletion of private fields. Consumers must def
 
 The existing [topic schema](../schema/topics.schema.json) exposes global age bounds and a flat `standards` list. Some authoring context is currently retained outside that projection. Before cutover, the public format must represent all shared country/region-specific ages and standard associations losslessly.
 
-The optional preparation [schema, contract and read-only tools](curriculum-alignment-contract.md) describe the proposed `data/curriculum-alignments.json`. The published dataset has not been backfilled; the authority switch and complete artifact generator remain future work. This separate file avoids immediately adding unsupported properties to the existing strict topic schema. An illustrative record is:
+The optional preparation [schemas, contract and read-only tools](curriculum-alignment-contract.md) describe the proposed `data/curriculum-alignments.json`. [Schema version 2](curriculum-alignment-contexts-v2.md) separates global guidance, international framework associations and jurisdiction-specific mappings while preserving per-association age intervals. The published dataset has not been backfilled; the authority switch and complete artifact generator remain future work. This separate file avoids immediately adding unsupported properties to the existing strict topic schema. An illustrative version 2 record is:
 
 ```json
 {
   "topicId": "mt_gvU3c_FLyu",
+  "scope": "jurisdiction",
   "country": "CA",
   "region": "Ontario",
   "ageRangeStart": 11,
