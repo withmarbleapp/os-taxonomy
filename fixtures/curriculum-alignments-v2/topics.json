@@ -1,0 +1,56 @@
+{
+  "version": "v1",
+  "topicCount": 3,
+  "topics": [
+    {
+      "id": "mt_shared",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Synthetic fixtures",
+      "name": "Synthetic claim",
+      "description": "Invented claim for contract tests; not curriculum or pupil data.",
+      "evidence": [
+        "Invented criterion."
+      ],
+      "assessmentPrompt": "Can {{name}} explain this invented example?",
+      "standards": [
+        "ca-lang:S1",
+        "gb-lang:S1",
+        "gb-lang:S2",
+        "global-learning:S1"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_age_only",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Synthetic fixtures",
+      "name": "Synthetic claim",
+      "description": "Invented claim for contract tests; not curriculum or pupil data.",
+      "evidence": [
+        "Invented criterion."
+      ],
+      "assessmentPrompt": "Can {{name}} explain this invented example?",
+      "standards": [],
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6
+    },
+    {
+      "id": "mt_unaligned",
+      "type": "CONCEPTUAL",
+      "subject": "English",
+      "domain": "Synthetic fixtures",
+      "name": "Synthetic claim",
+      "description": "Invented claim for contract tests; not curriculum or pupil data.",
+      "evidence": [
+        "Invented criterion."
+      ],
+      "assessmentPrompt": "Can {{name}} explain this invented example?",
+      "standards": [],
+      "ageRangeStart": null,
+      "ageRangeEnd": null
+    }
+  ]
+}

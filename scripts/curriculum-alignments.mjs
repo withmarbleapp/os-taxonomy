@@ -8,6 +8,7 @@ const usage = `Usage: node scripts/curriculum-alignments.mjs check|normalize|pro
 check: validate references/contexts and agreement with current flat topic fields
 normalize: emit canonical alignment JSON (does not certify flat-field agreement)
 project: emit only derived topic IDs/standards/ages for review, not a complete topics.json
+Schema versions 1 and 2 are accepted; normalize preserves the input version.
 All commands are read-only. No DB connection, inferred contexts, or file writes.`;
 try {
   const { values, positionals } = parseArgs({
@@ -29,7 +30,7 @@ try {
     else {
       const errors = checkTopicCompatibility(document, context);
       if (errors.length) throw new CurriculumAlignmentError(errors);
-      console.log(JSON.stringify({ valid: true, schemaVersion: 1, version: document.version, alignmentContexts: document.alignments.length, topicsChecked: context.topics.topics.length }));
+      console.log(JSON.stringify({ valid: true, schemaVersion: document.schemaVersion, version: document.version, alignmentContexts: document.alignments.length, topicsChecked: context.topics.topics.length }));
     }
   }
 } catch (error) {

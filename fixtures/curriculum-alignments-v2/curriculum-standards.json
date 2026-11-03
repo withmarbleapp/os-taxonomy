@@ -1,0 +1,72 @@
+{
+  "note": "SYNTHETIC fixtures only; not official curriculum records.",
+  "codesOnlySources": [
+    "ca-lang",
+    "gb-lang",
+    "us-math",
+    "global-learning"
+  ],
+  "curriculumCount": 4,
+  "curricula": [
+    {
+      "slug": "ca-lang",
+      "country": "CA",
+      "name": "Synthetic ca-lang",
+      "version": "synthetic-1",
+      "textIncluded": false,
+      "topicCount": 1,
+      "topics": [
+        {
+          "key": "ca-lang:S1",
+          "code": "S1"
+        }
+      ]
+    },
+    {
+      "slug": "gb-lang",
+      "country": "GB",
+      "name": "Synthetic gb-lang",
+      "version": "synthetic-1",
+      "textIncluded": false,
+      "topicCount": 2,
+      "topics": [
+        {
+          "key": "gb-lang:S1",
+          "code": "S1"
+        },
+        {
+          "key": "gb-lang:S2",
+          "code": "S2"
+        }
+      ]
+    },
+    {
+      "slug": "us-math",
+      "country": "US",
+      "name": "Synthetic us-math",
+      "version": "synthetic-1",
+      "textIncluded": false,
+      "topicCount": 1,
+      "topics": [
+        {
+          "key": "us-math:S1",
+          "code": "S1"
+        }
+      ]
+    },
+    {
+      "slug": "global-learning",
+      "country": "International",
+      "name": "Synthetic global-learning",
+      "version": "synthetic-1",
+      "textIncluded": false,
+      "topicCount": 1,
+      "topics": [
+        {
+          "key": "global-learning:S1",
+          "code": "S1"
+        }
+      ]
+    }
+  ]
+}

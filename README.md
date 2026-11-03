@@ -65,6 +65,9 @@ The optional [public alignment contract and read-only tools](docs/curriculum-ali
 prepare country/region-specific ages and mappings for future Git-based authorship.
 Synthetic examples can be validated without credentials. The published data has
 not been backfilled, and existing contribution requirements remain unchanged.
+The [version 2 scope model](docs/curriculum-alignment-contexts-v2.md) preserves global
+age guidance, international framework associations and jurisdiction age intervals
+on the same topic; version 1 remains supported.
 
 The [proposed authoring and publication design](docs/taxonomy-authoring-and-publication.md) describes a Git-authoritative workflow with normal community PRs and downstream application deployment. It is a design proposal; current formats and publication behavior remain unchanged until migration.
 

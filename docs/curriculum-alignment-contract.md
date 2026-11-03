@@ -2,7 +2,9 @@
 
 This is the first preparation step in the [authoring and publication design](taxonomy-authoring-and-publication.md). It provides a schema, semantic checks and read-only previews. The published dataset has **not** been backfilled, and downstream authority and deployment behavior have not changed. Existing contributors do not need to invent country contexts for the current flat export.
 
-## Representation
+The tools accept schema versions 1 and 2. [Version 2 scoped contexts](curriculum-alignment-contexts-v2.md) add separate global guidance, international frameworks and jurisdiction associations, preserving different age intervals within a context. Use version 2 for new scoped proposals; version 1 is retained without implicit conversion.
+
+## Version 1 representation
 
 The optional future file `data/curriculum-alignments.json` uses [schema version 1](../schema/curriculum-alignments.schema.json):
 
@@ -53,7 +55,7 @@ npm run alignments:check -- --alignments fixtures/curriculum-alignments/input.js
 
 `--alignments` is always required. `--topics` and `--curricula` default to this checkout's published data files, independent of the caller's working directory. Explicit paths are relative to the caller. Missing/malformed inputs or invalid contracts exit nonzero.
 
-`normalize` checks shape, references and context semantics and emits canonical alignment JSON to stdout. It does **not** certify completeness against existing flat fields. It orders records by topic ID, country and region, and standard keys within a context, using JavaScript UTF-16 code-unit ordering, independent of machine locale. Envelope and record fields have a fixed order. It preserves topic identity and does not modify any inputs. Normalization is idempotent.
+`normalize` checks shape, references and context semantics and emits canonical alignment JSON to stdout. It does **not** certify completeness against existing flat fields. Version 1 orders records by topic ID, country and region; version 2 additionally orders by scope, framework and age interval as [documented separately](curriculum-alignment-contexts-v2.md#age-intervals-are-part-of-identity). Standard keys within a record use JavaScript UTF-16 code-unit ordering, independent of machine locale. Envelope and record fields have a fixed order. It preserves topic identity and the input schema version and does not modify any inputs. Normalization is idempotent.
 
 `project` performs those same checks, then emits a preview containing every topic's `id`, `standards`, `ageRangeStart` and `ageRangeEnd`. Standard lists are sorted unions across contexts; global bounds are the minimum start and maximum end. Topics are sorted by ID. Cross-context reuse of a standard is deduplicated only in this compatibility projection. This output is **not a replacement `topics.json`**: all other topic fields are intentionally absent.
 
