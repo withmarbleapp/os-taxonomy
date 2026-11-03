@@ -1,0 +1,28 @@
+{
+  "version": "v1",
+  "topicCount": 3,
+  "topics": [
+    {
+      "id": "mt_age_only",
+      "standards": [],
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6
+    },
+    {
+      "id": "mt_shared",
+      "standards": [
+        "ca-lang:S1",
+        "gb-lang:S1",
+        "global-learning:S1"
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_unaligned",
+      "standards": [],
+      "ageRangeStart": null,
+      "ageRangeEnd": null
+    }
+  ]
+}

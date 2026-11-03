@@ -61,6 +61,11 @@ See [PROVENANCE.md](PROVENANCE.md) for sources and attribution.
 
 ### Adding curricula
 
+The optional [public alignment contract and read-only tools](docs/curriculum-alignment-contract.md)
+prepare country/region-specific ages and mappings for future Git-based authorship.
+Synthetic examples can be validated without credentials. The published data has
+not been backfilled, and existing contribution requirements remain unchanged.
+
 The [proposed authoring and publication design](docs/taxonomy-authoring-and-publication.md) describes a Git-authoritative workflow with normal community PRs and downstream application deployment. It is a design proposal; current formats and publication behavior remain unchanged until migration.
 
 Curricula map onto one shared taxonomy. Keep subjects and domains consistent
