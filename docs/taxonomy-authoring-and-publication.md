@@ -2,7 +2,7 @@
 
 **Date:** 3 November 2026
 
-**Status:** Proposed design for community review. This document defines the target workflow; it does not change the current schemas, contribution requirements or deployment behavior.
+**Status:** Proposed design for community review. The optional [alignment preparation contract](curriculum-alignment-contract.md) implements the first schema/tooling step. The target workflow, contribution requirements and downstream authority switch are not activated by that preparation work.
 
 ## Decision
 
@@ -52,7 +52,7 @@ Missing public fields do not mean deletion of private fields. Consumers must def
 
 The existing [topic schema](../schema/topics.schema.json) exposes global age bounds and a flat `standards` list. Some authoring context is currently retained outside that projection. Before cutover, the public format must represent all shared country/region-specific ages and standard associations losslessly.
 
-Proposed addition: `data/curriculum-alignments.json`, with a public schema. This avoids immediately adding unsupported properties to the existing strict topic schema. An illustrative record is:
+The optional preparation [schema, contract and read-only tools](curriculum-alignment-contract.md) describe the proposed `data/curriculum-alignments.json`. The published dataset has not been backfilled; the authority switch and complete artifact generator remain future work. This separate file avoids immediately adding unsupported properties to the existing strict topic schema. An illustrative record is:
 
 ```json
 {

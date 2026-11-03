@@ -10,11 +10,12 @@
  */
 
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { checkTeachingResearch } from './check-teaching-research.mjs';
 import { findDependencyCycle } from './check-dependency-cycles.mjs';
+import { checkTopicCompatibility } from './check-curriculum-alignments.mjs';
 
 const DATA = resolve(dirname(fileURLToPath(import.meta.url)), '..', 'data');
 const load = (name) => JSON.parse(readFileSync(resolve(DATA, name), 'utf8'));
@@ -102,8 +103,21 @@ const researchSchema = JSON.parse(readFileSync(resolve(DATA, '..', 'schema', 'te
 errors.push(...checkTeachingResearch(research, { topics, topicsBytes: bytesOf('topics.json'), manifest, schema: researchSchema }));
 check(Boolean(manifest.files?.['teaching-research.json']), 'manifest missing teaching-research.json checksum');
 
+// Optional during preparation; a declared/present file must be complete and bound.
+const ALIGNMENTS = 'curriculum-alignments.json';
+const hasAlignments = existsSync(resolve(DATA, ALIGNMENTS));
+const declaresAlignments = Object.hasOwn(manifest.files ?? {}, ALIGNMENTS) || Object.hasOwn(manifest.counts ?? {}, 'curriculumAlignments');
+check(hasAlignments || !declaresAlignments, 'manifest declares missing curriculum-alignments.json');
+if (hasAlignments) {
+  const alignments = load(ALIGNMENTS);
+  errors.push(...checkTopicCompatibility(alignments, { topics, curriculumStandards: standards }));
+  check(Boolean(manifest.files?.[ALIGNMENTS]), 'manifest missing curriculum-alignments.json checksum');
+  check(manifest.counts?.curriculumAlignments === alignments?.alignments?.length, 'manifest curriculumAlignments count mismatch');
+}
+
 // --- manifest checksums -----------------------------------------------------
 for (const [name, meta] of Object.entries(manifest.files ?? {})) {
+  if (name === ALIGNMENTS && !hasAlignments) continue; // Missing file already reported above.
   const actual = createHash('sha256').update(bytesOf(name)).digest('hex');
   check(actual === meta.sha256, `checksum mismatch for ${name}`);
   check(bytesOf(name).length === meta.bytes, `byte count mismatch for ${name}`);
@@ -118,5 +132,5 @@ if (errors.length) {
 console.log(
   `✓ valid — ${topics.topics.length} topics, ${deps.dependencies.length} dependencies, ` +
     `${standardKeys.size} standards, ${clusters.clusters.length} clusters, ${research.recordCount} research records. ` +
-    `Referential integrity + checksums OK.`,
+    `Referential integrity + checksums OK. Alignment contract: ${hasAlignments ? 'validated' : 'not supplied (preparation mode)'}.`,
 );
