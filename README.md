@@ -61,6 +61,8 @@ See [PROVENANCE.md](PROVENANCE.md) for sources and attribution.
 
 ### Adding curricula
 
+The [proposed authoring and publication design](docs/taxonomy-authoring-and-publication.md) describes a Git-authoritative workflow with normal community PRs and downstream application deployment. It is a design proposal; current formats and publication behavior remain unchanged until migration.
+
 Curricula map onto one shared taxonomy. Keep subjects and domains consistent
 across countries; a curriculum's learning-area labels do not create separate
 subject trees.
