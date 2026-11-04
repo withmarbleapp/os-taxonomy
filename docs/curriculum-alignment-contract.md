@@ -1,12 +1,12 @@
 # Public curriculum alignment contract
 
-This is the first preparation step in the [authoring and publication design](taxonomy-authoring-and-publication.md). It provides a schema, semantic checks and read-only previews. The published dataset has **not** been backfilled, and downstream authority and deployment behavior have not changed. Existing contributors do not need to invent country contexts for the current flat export.
+This contract supplies schemas, semantic checks and read-only previews for the [authoring and publication design](taxonomy-authoring-and-publication.md). The dataset now includes a [version 2 scoped baseline](../reports/scoped-alignment-baseline-2026-11-04.md). Contexts are authored in `data/curriculum-alignments.json`; flat topic standards and ages are derived compatibility fields. Downstream authority and deployment behavior have not changed.
 
 The tools accept schema versions 1 and 2. [Version 2 scoped contexts](curriculum-alignment-contexts-v2.md) add separate global guidance, international frameworks and jurisdiction associations, preserving different age intervals within a context. Use version 2 for new scoped proposals; version 1 is retained without implicit conversion.
 
 ## Version 1 representation
 
-The optional future file `data/curriculum-alignments.json` uses [schema version 1](../schema/curriculum-alignments.schema.json):
+The retained version 1 format for `data/curriculum-alignments.json` uses [this schema](../schema/curriculum-alignments.schema.json); the actual baseline uses version 2:
 
 ```json
 {

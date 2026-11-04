@@ -1,6 +1,6 @@
 # Scoped alignment contexts — schema version 2
 
-Schema version 2 separates **where a claim applies**, **which framework supplies an association**, and **the ages attached to that association**. It refines the optional [alignment preparation contract](curriculum-alignment-contract.md). The repository's published dataset has not been backfilled; this change does not activate downstream publication or convert any live authoring state.
+Schema version 2 separates **where a claim applies**, **which framework supplies an association**, and **the ages attached to that association**. It refines the [alignment contract](curriculum-alignment-contract.md) and is used by the [public baseline](../reports/scoped-alignment-baseline-2026-11-04.md). This does not activate downstream publication or convert live authoring state.
 
 ## Why the representation changes
 
