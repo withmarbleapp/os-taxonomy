@@ -1,6 +1,6 @@
 # Scoped alignment contexts — schema version 2
 
-Schema version 2 separates **where a claim applies**, **which framework supplies an association**, and **the ages attached to that association**. It refines the optional [alignment preparation contract](curriculum-alignment-contract.md). The repository's published dataset has not been backfilled; this change does not activate downstream publication or convert any live authoring state.
+Schema version 2 separates **where a claim applies**, **which framework supplies an association**, and **the ages attached to that association**. It refines the [alignment contract](curriculum-alignment-contract.md) and is used by the [public baseline](../reports/scoped-alignment-baseline-2026-11-04.md). This does not activate downstream publication or convert live authoring state.
 
 ## Why the representation changes
 
@@ -73,7 +73,7 @@ npm run alignments:project -- --alignments fixtures/curriculum-alignments-v2/inp
 
 Version 1 remains supported under its original schema and semantics: one record per topic/country/region, including the old `International` sentinel. It is not upgraded implicitly, and adding a version 2 field to a version 1 record fails. The new interval identity rule applies only to version 2. Unsupported versions fail closed. A consumer pinned to the old codec must explicitly upgrade before using version 2.
 
-Dataset validation accepts either supported version when the optional file is present, requires the same manifest checksum/bytes/context count, and checks the complete flat-field projection. Absent-file preparation mode remains explicit. All commands remain read-only.
+Dataset validation accepts either supported version when the alignment file is present, requires the same manifest checksum/bytes/context count, and checks the complete flat-field projection. Absent-file preparation mode remains explicit for older snapshots. The `normalize`, `project` and `check` preview commands remain read-only. The separate [artifact generator](curriculum-alignment-contract.md#local-artifact-generation) checks without writing by default; `alignments:generate` explicitly enables local writes with `--write`.
 
 ## Baseline conversion remains separate
 

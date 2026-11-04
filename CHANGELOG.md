@@ -6,6 +6,8 @@ Dataset releases are versioned independently of the taxonomy `version` field
 
 ## [Unreleased]
 
+- Publish 3,733 scoped alignment contexts: 571 global, 50 framework and 3,112 jurisdiction contexts, retaining exact age bands and all 7,048 existing known topic–standard pairs. Add 14 reviewed primary associations on six existing English topics (7,062 total), with no new topics, claim changes or prerequisite changes. Record explicit dispositions for 41 unresolved legacy occurrences and preserve 95 jurisdiction age-only contexts. Add public local artifact generation and CI; research content and original export timestamps remain unchanged. See the [baseline decisions and limits](reports/scoped-alignment-baseline-2026-11-04.md). No live DB or authority cutover is implied.
+
 - Map Ontario Grade 6 Language with 313 links across 168 topics: reuse 165 existing topics, add three focused whole claims, correct suffix evidence and add one hard plus seven soft prerequisites. Preserve old topic IDs, links and dependencies; retain 55 Full / 4 Partial specific expectations and explicit resource/performance conditions. Refresh the verified staging export (1,861 topics / 4,003 dependencies / 7,048 published links), preserve research records and publish the [code-by-code review](reports/ontario-grade6-language-2026-11-02.md).
 
 - Map Ontario Grade 5 Language with 306 links on 161 existing topics and no additions. Preserve complete mastery claims; soften four unnecessary prerequisites and add the genuine sentence-combining core. Record 55 Full / 4 Partial specific expectations, preserve resource/performance conditions, and publish the [code-by-code review](reports/ontario-grade5-language-2026-11-02.md).

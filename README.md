@@ -48,6 +48,7 @@ All data lives in [`data/`](data/) as UTF-8 JSON. See [`schema/`](schema/) for J
 | [`data/teaching-research.json`](data/teaching-research.json) | Teaching research joined by `topicId`, with explicit coverage and publication notes (~24 MB). |
 | [`data/archived-teaching-research.json`](data/archived-teaching-research.json) | Historical guidance for merged or refocused topics, with original records and current topic associations. |
 | [`data/manifest.json`](data/manifest.json) | Counts, per-subject breakdown, per-file checksums. |
+| [`data/curriculum-alignments.json`](data/curriculum-alignments.json) | Scoped framework, jurisdiction and global age contexts; source for flat compatibility fields. |
 
 The catalogue contains **17 sources / 7,743 expectations**. It includes 620 Australian Curriculum v9 content descriptions and 3,862 Ontario expectations from nine elementary documents. Ontario is exported as codes and official source links only; ingestion of source expectations is separate from authoring topic coverage. Ontario Grades 1–7 Mathematics have received focused taxonomy authoring passes. The [Grade 2 report](reports/ontario-grade2-mathematics-2026-10-23.md) distinguishes reused claims, extracted elementary claims and the concurrency gap; mappings do not certify learner mastery of every linked topic. The [Grade 3 report](reports/ontario-grade3-mathematics-2026-10-23.md) records reuse of 114 existing topics, the congruence extension and prerequisite repairs; no topics were added. The [Grade 4 report](reports/ontario-grade4-mathematics-2026-10-24.md) records reuse of 126 existing topics, two missing skills, two focused extractions and prerequisite repairs. The [Grade 5 report](reports/ontario-grade5-mathematics-2026-10-24.md) records reuse of 145 existing topics, one missing mathematical representation, one financial/civic concept and one focused extraction. The [Grade 6 report](reports/ontario-grade6-mathematics-2026-10-27.md) records reuse of 173 existing topics and five additions: two procedures, one focused extraction and two financial-content claims. The [Grade 7 report](reports/ontario-grade7-mathematics-2026-10-27.md) records reuse of 171 existing topics and two spatial additions; the square-root proposal was withdrawn.
 
@@ -61,15 +62,24 @@ See [PROVENANCE.md](PROVENANCE.md) for sources and attribution.
 
 ### Adding curricula
 
-The optional [public alignment contract and read-only tools](docs/curriculum-alignment-contract.md)
-prepare country/region-specific ages and mappings for future Git-based authorship.
-Synthetic examples can be validated without credentials. The published data has
-not been backfilled, and existing contribution requirements remain unchanged.
-The [version 2 scope model](docs/curriculum-alignment-contexts-v2.md) preserves global
-age guidance, international framework associations and jurisdiction age intervals
-on the same topic; version 1 remains supported.
+The [public alignment contract](docs/curriculum-alignment-contract.md) now has a
+[reviewed baseline](reports/scoped-alignment-baseline-2026-11-04.md) of 3,733 contexts.
+Edit `data/curriculum-alignments.json` for associations and their ages; keep topic
+claims in `data/topics.json`. The [version 2 scope model](docs/curriculum-alignment-contexts-v2.md)
+preserves global guidance, international frameworks and separate jurisdiction age
+intervals on one topic; version 1 remains supported by the codec.
 
-The [proposed authoring and publication design](docs/taxonomy-authoring-and-publication.md) describes a Git-authoritative workflow with normal community PRs and downstream application deployment. It is a design proposal; current formats and publication behavior remain unchanged until migration.
+Run `npm run alignments:generate`, `npm run validate`,
+`npm run alignments:generated-check` and `npm test`, then submit the actual data
+change in a normal PR. Generation refreshes flat topic standards/ages, the research
+file's topic checksum binding and manifest checksums/counts. It uses only public
+local files and preserves original timestamps; no private account is needed.
+Authored research and its coverage must already be valid; this bounded command
+does not author research or repair unrelated artifacts.
+
+The [authoring and publication design](docs/taxonomy-authoring-and-publication.md)
+describes downstream application deployment. This public baseline does not apply
+changes to a live DB, migrate agent tools or activate the future publisher.
 
 Curricula map onto one shared taxonomy. Keep subjects and domains consistent
 across countries; a curriculum's learning-area labels do not create separate
