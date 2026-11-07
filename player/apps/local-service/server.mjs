@@ -505,6 +505,7 @@ export async function createService({
         '.js': 'text/javascript',
         '.css': 'text/css',
         '.svg': 'image/svg+xml',
+        '.png': 'image/png',
         '.ttf': 'font/ttf',
         '.otf': 'font/otf',
         '.woff2': 'font/woff2',

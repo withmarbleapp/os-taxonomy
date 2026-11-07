@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { mkdtemp, rm, writeFile, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -79,6 +79,13 @@ test('connection probe validates inference, sanitizes failure, and preserves voi
     assert.equal(main.headers.get('cross-origin-embedder-policy'), 'require-corp');
     const worker = await fetch(s.origin + '/voice/browser-stt-worker.mjs');
     assert.match(worker.headers.get('content-security-policy'), /'unsafe-eval'/);
+    const texture = await fetch(s.origin + '/player/assets/composer-grille.png');
+    assert.equal(texture.status, 200);
+    assert.equal(texture.headers.get('content-type'), 'image/png');
+    assert.deepEqual(
+      Buffer.from(await texture.arrayBuffer()),
+      await readFile('apps/player/assets/composer-grille.png'),
+    );
   } finally {
     await s.close();
     await rm(dir, { recursive: true, force: true });

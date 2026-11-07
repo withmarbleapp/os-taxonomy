@@ -271,6 +271,7 @@ async function launch(pkg) {
   $('start-cover').hidden = false;
   $('start-cover').dataset.layout = '';
   $('start').textContent = 'Let’s explore ↗';
+  $('start').disabled = false;
   $('talk-controls').hidden = true;
   $('title').textContent = $('start-title').textContent = pkg.manifest.title;
   status('Loading lesson…');
@@ -326,6 +327,10 @@ async function send(text) {
   await session.turn(text);
 }
 $('start').onclick = async () => {
+  const startingSession = session,
+    startingPort = port,
+    isCurrent = () => session === startingSession && !startingSession?.closed;
+  if (!startingSession || $('start').disabled) return;
   if (!['claude', 'codex', 'local', 'device'].includes(settings.provider)) {
     openSettings();
     $('settings-status').textContent = 'Choose a tutor and set up local audio to begin.';
@@ -337,21 +342,27 @@ $('start').onclick = async () => {
     if (config.speechBackend === 'browser' && !browserVoice.ready)
       $('start').textContent = 'Preparing voice…';
     await settingsUI.prepareVoice();
+    if (!isCurrent()) return;
     const microphone = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
     microphone.getTracks().forEach((track) => track.stop());
+    if (!isCurrent()) return;
+    await startingPort.setShortcutsEnabled(true);
+    if (!isCurrent()) return;
     $('start-cover').hidden = true;
     $('talk-controls').hidden = false;
-    await port.setShortcutsEnabled(true);
-    await session.start();
+    await startingSession.start();
   } catch (e) {
+    if (!isCurrent()) return;
     openSettings();
     $('settings-status').textContent =
       e.name === 'NotAllowedError'
         ? 'Allow microphone access to start the voice lesson.'
         : e.message;
   } finally {
-    $('start').disabled = false;
-    $('start').textContent = startLabel;
+    if (isCurrent()) {
+      $('start').disabled = false;
+      $('start').textContent = startLabel;
+    }
   }
 };
 $('home').onclick = () => {

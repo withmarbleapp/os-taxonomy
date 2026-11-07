@@ -10,6 +10,19 @@ import { TeachingSession } from '../packages/teaching-runtime/session.mjs';
 import { loadDirectory } from '../packages/authoring-tools/archive.mjs';
 import { createCubes } from '../lessons/cube-volume/model/cubes.mjs';
 const say = (text) => ({ tool: 'say', arguments: JSON.stringify({ text }) });
+function preparePlan(model) {
+  const snapshot = model.snapshot();
+  const result = model.execute({
+    protocolVersion: 1,
+    sessionId: snapshot.sessionId,
+    releaseId: snapshot.releaseId,
+    commandId: crypto.randomUUID(),
+    expectedRevision: snapshot.revision,
+    name: 'prepare_fresh_box',
+    args: { difficulty: 'small' },
+  });
+  assert.equal(result.accepted, true);
+}
 test('partial JSON escapes decode safely, with no early speech for scene actions', () => {
   const text = 'Count the "blue" cubes. Then look here!';
   const json = JSON.stringify({ tool: 'say', arguments: { text } });
@@ -132,6 +145,57 @@ test('interruption drops the rest of a streamed reply', async () => {
   session.cancel();
   release();
   await turn;
+  assert.deepEqual(spoken, ['Count this layer.']);
+  session.close();
+});
+
+for (const change of ['rotate', 'edit']) {
+  test(`${change} between sentences preserves the rest of the tutor reply`, async () => {
+    const pkg = await loadDirectory('lessons/cube-volume');
+    const model = createCubes();
+    preparePlan(model);
+    const spoken = [];
+    let changed = false;
+    const session = new TeachingSession({
+      pkg,
+      port: { ...model, presentation: () => ({}), close() {} },
+      infer: async () => say('Count this layer. How many layers are there?'),
+      speak: async (text) => {
+        spoken.push(text);
+        if (spoken.length === 1) {
+          const revision = model.snapshot().revision;
+          if (change === 'rotate') model.learnerRotate(0.2);
+          else model.learnerEdit('total', '12');
+          changed = model.snapshot().revision > revision;
+        }
+      },
+    });
+    await session.turn('Explain');
+    assert.equal(changed, true);
+    assert.deepEqual(spoken, ['Count this layer.', 'How many layers are there?']);
+    session.close();
+  });
+}
+
+test('a committed learner answer cancels the remaining tutor sentences', async () => {
+  const pkg = await loadDirectory('lessons/cube-volume');
+  const model = createCubes();
+  preparePlan(model);
+  for (const field of ['perLayer', 'layers', 'total']) model.learnerEdit(field, '1');
+  const spoken = [];
+  let committed;
+  const session = new TeachingSession({
+    pkg,
+    port: { ...model, presentation: () => ({}), close() {} },
+    infer: async () => say('Count this layer. Do not continue this question.'),
+    speak: async (text) => {
+      spoken.push(text);
+      committed = model.learnerCommit();
+    },
+  });
+  session.started = true;
+  await session.turn('Explain');
+  assert.ok(committed);
   assert.deepEqual(spoken, ['Count this layer.']);
   session.close();
 });

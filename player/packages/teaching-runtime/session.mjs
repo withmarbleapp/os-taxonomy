@@ -149,8 +149,7 @@ export class TeachingSession {
           ...teachingTools,
           ...this.pkg.experience.actions.filter((a) => snapshot.availableActions.includes(a.name)),
         ];
-        let speechRevision = snapshot.revision,
-          streamedReply,
+        let streamedReply,
           replyCommitted = false;
         const commitReply = (text) => {
           if (streamedReply) {
@@ -177,7 +176,9 @@ export class TeachingSession {
             { prepare: this.speak.prepare?.bind(this.speak) },
           ),
           signal: AbortSignal.any([controller.signal, speechAbort.signal]),
-          isCurrent: () => epoch === this.epoch && speechRevision === this.port.snapshot().revision,
+          // Observation turns and explicit interruptions cancel speech through
+          // the epoch. Routine rotation/draft revisions must not cut a reply short.
+          isCurrent: () => epoch === this.epoch,
         });
         const decision = await this.infer(
           {
@@ -231,7 +232,6 @@ export class TeachingSession {
           });
           if (!result.accepted)
             throw Error(result.error?.message ?? 'Teaching resource was rejected');
-          speechRevision = result.snapshot.revision;
           this.history.push({ role: 'tool', name: 'explain_model', args, result });
           this.log({ type: 'command_result', name: 'explain_model', result });
           commitReply(args.text);
