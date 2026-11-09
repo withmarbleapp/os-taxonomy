@@ -41,9 +41,13 @@ gives ages 6–8, 8–11 and 11–14 respectively. Grade 6 therefore remains out
 this primary catalogue plan even though some children there are under 12.
 
 Completion requires a source/edition and grade/area disposition for every target
-cell, a verified inventory of actual outcome records, explicit exclusions and
-preserved source hierarchy. A framework's competency table or a textbook list
-alone cannot establish that all grade-level expectations have been captured.
+cell, a verified inventory of the source-defined standards and record kinds, explicit
+exclusions and preserved source hierarchy. Formal stage goals and competencies
+are valid catalogue records: where NCERT leaves grade-level outcomes to teachers,
+completion must not invent an exhaustive national grade-outcome list. Illustrative
+outcomes, activities and textbook contents remain separately classified. A stage
+competency inventory does not assert that all later grade-level publications have
+been captured.
 Counts not yet independently reconciled remain unknown rather than guessed.
 
 ## Verified source already in hand
@@ -100,23 +104,57 @@ selected source uses an integrated area.
 Here **Missing** means no accepted catalogue records for the target cell. It does
 not mean NCERT lacks the curriculum, that a taxonomy topic is missing, or that
 source discovery is complete. The two language roles do not imply that every
-school uses the same language pair. Exact target languages/scripts and source
-documents must be pinned before record counts can be supplied.
+school uses the same language pair. Formal framework standards use language roles,
+not an invented national language pair. One verified stage record can apply to
+Grades 3–5 together; the matrix does not require three cloned records.
 
 | Candidate source | Edition/role | Current evidence | Disposition before ingestion |
 | --- | --- | --- | --- |
 | [NCF for Foundational Stage](https://www.ncert.nic.in/pdf/NCF_for_Foundational_Stage_20_October_2022.pdf) | 2022 framework | Official source identified; 2025 outcome source already pinned separately | Retain goals/competencies as hierarchy; distinguish illustrative outcomes from the later outcome publication. |
-| [NCF for School Education](https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf) | August 2023 published framework | Official URL corroborated by the [Ministry's parliamentary response](https://rsdebate.nic.in/bitstream/123456789/750751/1/PQ_265_31072024_U985_p146_p147.pdf); bytes not captured in this pass | Obtain and hash the published edition; inventory all Preparatory areas and distinguish stage competencies from illustrative grade examples. Do not substitute a draft framework PDF. |
-| [Learning Outcomes at the Elementary Stage](https://ncert.nic.in/pdf/publication/otherpublications/tilops101.pdf) | 2017 legacy outcome publication, Grades 1–8 | Official URL identified; source bytes not captured in this pass | Catalogue only with its legacy edition explicit; reconcile against current framework/syllabi before deciding whether Grades 3–5 entries are the intended baseline. Exclude Grades 6–8 from this plan. |
+| [NCF for School Education](https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf) | Framework title 2023; printed First Edition October 2024, ISBN 978-93-5292-741-8 | Official bytes captured: 580 pages, 47,030,865 bytes; SHA-256 `0e2c5a1ddb48f758a5e9f867258da40d57f9f236b37fc7f8022261973425f099` | New document identity `ncert-ncfse-2023-ed2024`; inventory formal Preparatory goals/competencies separately from illustrative examples. The old URL filename does not identify the downloaded printed edition. |
+| [Learning Outcomes at the Elementary Stage](https://ncert.nic.in/pdf/publication/otherpublications/tilops101.pdf) | 2017 legacy outcome publication, Grades 1–8 | Official bytes captured: 128 pages, 16,481,419 bytes; printed First Edition April 2017, ISBN 978-93-5007-785-6; SHA-256 `18024190d8d8a7b0516bf6bcab14dc209f4751b91acb0b0c952e2c27b4ac3317` | Catalogue only with its legacy edition explicit; reconcile against current framework/syllabi before deciding whether Grades 3–5 entries are the intended baseline. Exclude Grades 6–8 from this plan. |
 | Current Grades 3–5 syllabi and textbook-linked outcome documents | Publication/edition must be pinned individually | The [Ministry's August 2026 response](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297094&lang=1&reg=48) confirms newer syllabi/textbooks and follow-up outcome documents; it is not itself the outcome catalogue | Locate the actual official standards-bearing documents for each area/grade, verify edition/status and capture bytes. A new textbook announcement is insufficient evidence of an exhaustive outcome list. |
 | [Grade 3 UPAAN transition guidance](https://ncert.nic.in/pdf/programmes/upaan/UPAAN_Grade_3.pdf) | Transition/implementation guidance | Official candidate URL located; bytes not captured | Use for source discovery and implementation context; do not count a bridge activity as a new mandatory expectation. |
 
-Official NCERT downloads in this pass encountered connection resets, timeouts or
-certificate-chain errors. No TLS verification was disabled and no school-hosted
-copy was promoted to authoritative input. The published framework and legacy
-outcome candidates above are **identified, not byte-verified or ingested**.
-The already-pinned 2025 foundational PDF remains available for the next batches.
-No user sign-in is required to read that source.
+Initial NCERT downloads encountered certificate-chain and connection errors. A
+complete chain validated against the trusted system roots enabled verified TLS
+retrieval of the official framework and legacy publication above; hostname and
+certificate checks remained enabled. Their source identities are now byte-pinned.
+The 2017 publication remains legacy and does not silently fill current-source gaps.
+
+The official CBSE [Preparatory HPC manual](https://cbseacademic.nic.in/web_material/Manuals/HPC_PreparatoryManual25.pdf)
+(76 pages; printed First Edition December 2024; ISBN 978-81-983130-9-6; SHA-256
+`f416ab6e9440e7c2fee3442c5f53a34fa486ee4212c564ae3308065986921d64`)
+and [report template](https://cbseacademic.nic.in/web_material/Manuals/HPC_PreparatoryReport25.pdf)
+(30 pages; SHA-256 `80b26cf1934a2f415b31bfcde563716fc916f618bcac61d5b43f75413e3362a9`)
+are captured implementation references. The manual's sample and blank outcome
+worksheets are not an exhaustive mandatory grade-level catalogue. A CBSE adaptation
+is not presented as the original NCERT framework.
+
+### Selected framework inventory in progress
+
+The selected formal Preparatory sections are language R1 (PDF 236–237), language
+R2 (239–240), Maths (267–268), Arts (354–357), The World Around Us (382–384)
+and Physical Education (416–417). Adjacent Middle Stage material is excluded even
+where a page is shared. Initial inventory suggests **172 formal source positions**,
+pending independent row-by-row reconciliation; no new framework records have yet
+been added in this inventory-only change.
+
+The proposed record model keeps one Grades 3–5 band per formal record, distinguishes
+`curricularGoal` from `stageCompetency`, and retains each literal printed CG/C code.
+Generated qualified identifiers include stage, area, kind, and the source's nested
+standard set and artform where codes reset. Arts and Physical Education LS1/LS2
+represent the framework's resource/applicability conditions, not taxonomy difficulty
+levels. Physical Education LS1 begins with printed CG-3: absent CG-1/2 are not invented.
+A factual public index records these distinctions and source pages without outcome
+wording; private records preserve descriptions. The strict code-only catalogue
+schema stays unchanged. The index is review evidence, not an alternate taxonomy graph.
+
+Prepare coherent batches within the downstream adapter's 128-new-record bound: first
+language R1/R2, Maths and The World Around Us; then Arts and Physical Education.
+Only verified rows enter a proposal. This selected framework inventory does not
+complete the outstanding foundational languages, mixed syllabus sections or
+edition reconciliation with later grade-specific publications.
 
 ## Record model and extraction hazards
 
