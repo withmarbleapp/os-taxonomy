@@ -113,11 +113,12 @@ The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
 now accounts for all 55 retained codes (44 specific and 11 overall), with direct
 roles, source conditions, deferred candidates and a readiness diagnostic in its
 [code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
-It proposes 70 further pairs over the one-pair accepted pilot, using 43 existing
+It proposes 73 further pairs over the one-pair accepted pilot, using 43 existing
 topics and no claim or dependency edits. Its 14 Full specific semantic judgments
 include one material-origins candidate whose local context remains deferred;
-28 specific judgments and all 11 overall judgments remain Partial, with two
-focused claim gaps for lead review. This does not finish Grade 1 Science.
+30 specific judgments and all 11 overall judgments remain Partial. Two residual
+conceptual generalisations need review; existing concrete components are retained.
+This does not finish Grade 1 Science.
 
 The initial two-code milestone was reviewed again: B2.4 now has wider evidence
 through existing bones/heartbeat claims as well as senses. No anatomy topic was

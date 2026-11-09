@@ -13,7 +13,7 @@ wider Ontario backlog at accepted base `45e2bc0`.
 
 | Reviewed scope | Full semantic support | Partial | Focused gap |
 | --- | ---: | ---: | ---: |
-| 44 specific expectations | 14 | 28 | 2 |
+| 44 specific expectations | 14 | 30 | 0 |
 | 11 overall expectations | 0 | 11 | 0 |
 
 **Thirteen** of the 14 Full specific judgments have proposed or existing direct
@@ -21,11 +21,11 @@ associations. The fourteenth, D2.8, has semantic support in an existing material
 origins claim but **no proposed Grade 1 context**, pending whole-claim age fit.
 None of these labels certify learner mastery, actual delivery of an integrated
 activity, a consumer's selection eligibility, or completion of all Grade 1 Science.
-The two focused gaps are review findings, not approval to add topics.
+The two residual conceptual generalisations are Partial conditions, not approval to add topics.
 
-The complete proposal records **71 distinct topic–code pairs across
-35 specific codes and 43 existing topics**. This is **70 additional pairs**
-over the accepted one-pair Science pilot, not 71 new skills. It adds 39 scoped
+The complete proposal records **74 distinct topic–code pairs across
+37 specific codes and 43 existing topics**. This is **73 additional pairs**
+over the accepted one-pair Science pilot, not 74 new skills. It adds 39 scoped
 records and extends four existing exact-interval records with relevant codes;
 no unaffected scoped records are replaced. New associations use Canada/Ontario
 ages **6–7**. Flat ages and standard lists are generated from those contexts.
@@ -96,7 +96,7 @@ explicit child references and their own Partial judgment, not new direct links.
 | C1.1 | Partial | — |
 | C1.2 | Partial | — |
 | C2 | Partial | Child reviews |
-| C2.1 | Gap | — |
+| C2.1 | Partial | `mt_cxJRc15osy` C; `mt_iGSfQg3g5c` C |
 | C2.2 | Partial | `mt_iGSfQg3g5c` (C); `mt_PiWZA8Z0ZJ` (C); `mt_3v0VNkwquK` (C) |
 | C2.3 | Partial | `mt_cxJRc15osy` (C); `mt_EygMHKs8Ed` (C) |
 | C2.4 | Partial | `mt_iGSfQg3g5c` (C); `mt_cxJRc15osy` (C) |
@@ -107,7 +107,7 @@ explicit child references and their own Partial judgment, not new direct links.
 | D1.2 | Partial | `mt_rTn43s8RNX` (C) |
 | D2 | Partial | Child reviews |
 | D2.1 | Full | `mt_5r47Pvstyn` (C); `mt_ZAJvTcroFO` (C) |
-| D2.2 | Gap | — |
+| D2.2 | Partial | `mt_SdIWVjzopp` C |
 | D2.3 | Full | `mt_ZAJvTcroFO` (W) |
 | D2.4 | Full | `mt_vJO5Bxk4z-` (C); `mt_auVZZEuXjs` (C) |
 | D2.5 | Full | `mt_Q2Zj3L8u9C` (W) |
@@ -144,12 +144,14 @@ direct links.
 
 ## Matters requiring a concrete follow-up
 
-- **C2.1:** determine whether the elementary energy foundation needs a focused
-  conceptual claim or a justified correction to an existing claim. Later technical
-  vocabulary, energy stores and conservation are not equivalent mastery evidence.
-- **D2.2:** review a support/load concept. Sketching or building a shade does not
-  explicitly assess this structural idea; do not manufacture Full coverage from
-  a construction artifact.
+- **C2.1:** retain the direct body-energy and sunlight-warming components, then
+  review assessment of the common energy idea across contexts. Later technical
+  vocabulary, energy stores and conservation are not equivalent mastery evidence;
+  another concrete example or a Grade 1 clone does not resolve the generalisation.
+- **D2.2:** retain the skeletal-support component and review recognition of
+  supporting frameworks across natural and built examples. Generic construction
+  practice does not establish that generalisation, and formal load-path analysis
+  is not an elementary requirement. A new topic is not pre-authorized.
 - **C2.5 and D2.8:** existing natural-resource/material claims contain relevant
   content. Review their whole-claim age fit before adding a 6–7 interval; do not
   create grade/country clones merely to avoid the decision. Material origins has
@@ -197,3 +199,5 @@ there is no downstream publication receipt. Remaining source/assessment issues
 are explicit work items rather than a declaration that Ontario is finished.
 
 Lead review deferred the proposed 6–7 spin/orbit context: relevance to a daily-cycle component does not establish whole-claim age fit. The existing age-7 start is preserved; no replacement topic is created.
+
+Independent reuse review records the concrete energy and natural skeletal-support contributions. Their remaining cross-context generalisations stay Partial; neither item is treated as an empty mapping or an automatic new-topic requirement.
