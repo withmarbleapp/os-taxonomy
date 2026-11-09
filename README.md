@@ -65,6 +65,9 @@ separates catalogue ingestion, recorded associations and historical coverage
 reviews by subject and grade. The [Grade 1 Science review](reports/ontario-grade1-science-2026-11-09.md)
 accounts for all 55 selected codes, proposing existing-topic associations while
 retaining coverage conditions and focused decisions for follow-up.
+The dependent [Grade 2 Science review](reports/ontario-grade2-science-2026-11-09.md)
+accounts for all 52 selected codes using existing claims, with its unmerged Grade 1
+dependency and unresolved source/assessment conditions made explicit.
 
 ### Adding curricula
 

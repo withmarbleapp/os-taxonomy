@@ -1,0 +1,1498 @@
+{
+  "reviewVersion": 1,
+  "date": "2026-11-09",
+  "dependency": {
+    "state": "unmerged-proposal",
+    "branch": "curriculum/ontario-resume-20261109",
+    "commit": "b860bb8635e1608a55865db6ed8f5de734dc05cc",
+    "note": "Grade 1 proposal including lead-reviewed age-context deferral; this is not an accepted main or deployment receipt."
+  },
+  "source": {
+    "slug": "the-ontario-curriculum-science-and-technology-20",
+    "grade": "2",
+    "version": "2022",
+    "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/e9fdecb3-6ea2-4953-b69b-20ea519313af/SciTech_G2_AODA.pdf",
+    "expectationsSha256": "232598857d638b5938c4053892ee359da58185a4e7e16d3ed5f5fa934b04f538",
+    "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+    "contextSha256": "1ade9235dcacf15c27dcc92328d1f883c3026c1687bf40368448b39ec6e4bd74",
+    "contextPrintedPages": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+    ]
+  },
+  "scope": {
+    "jurisdiction": "Canada/Ontario",
+    "ages": [
+      7,
+      8
+    ],
+    "selectedCodes": 52,
+    "specific": 41,
+    "overall": 11,
+    "noOfficialWordingIncluded": true
+  },
+  "interpretation": "Semantic judgments are not learner mastery, proof of delivery or consumer selection certification. Candidate/prerequisite references are not authored direct links. Partial conditions and quality notes do not authorize new topics or changes to existing claims.",
+  "counts": {
+    "specific": {
+      "Partial": 28,
+      "Full": 13
+    },
+    "overall": {
+      "Partial": 11
+    }
+  },
+  "expectations": [
+    {
+      "code": "ON-SCI-2022-G2-A1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Generic process operations exist; integrated performance, safety equipment and reporting conditions remain explicit.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.5"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-A1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_4A4RpX-Go9",
+          "topicName": "Shared Research Projects",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "topicName": "Observing with simple equipment",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        }
+      ],
+      "rationale": "Question selection, close observation, shared fact gathering and evidence-based reporting have existing claims.",
+      "remainingConditions": [
+        "Check an integrated research performance in the science strands; the collection of generic claims is not a completed investigation. Process guidance is flexible by readiness, not a requirement for advanced bibliography or bias analysis in Grade 2."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "topicName": "Did it happen as predicted?",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "topicName": "Simple tests and experiments",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_ZFwPZaDJ0_",
+          "topicName": "Recording Data",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        }
+      ],
+      "rationale": "Existing claims cover guided experiments, predictions, recording and conclusions without importing later formal hypothesis/variable terminology.",
+      "remainingConditions": [
+        "A safe, connected performance in relevant science content remains to be demonstrated."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A1.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "topicName": "Cutting, joining and shaping safely",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_nNYo5A-7Bl",
+          "topicName": "Comparing Design Solutions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Sketches, safe making, motion-design testing and comparisons supply existing engineering operations appropriate to the Grade 2 body content.",
+      "remainingConditions": [
+        "Assess a coherent design/build/test performance, its evidence and response to results; isolated operations are insufficient.",
+        "Use readiness-dependent process guidance without requiring every advanced engineering step."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A1.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_TTH2ouwyTW",
+          "topicName": "Safe steps in science tests",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "topicName": "Cutting, joining and shaping safely",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The safety and early making claims include hazard-aware plans, safe sensory exploration, careful equipment use and cleanup.",
+      "remainingConditions": [
+        "Explicitly check task-appropriate protective clothing/equipment in addition to general safe handling. Later drilling-specific safeguards do not supply a universal early investigation claim."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A1.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.5",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        },
+        {
+          "topicId": "mt_o8ciHks8t2",
+          "topicName": "Writing Process Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_NP101Zl-4g",
+          "topicName": "Using New Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Scientific reporting and existing vocabulary/audience decisions are reusable.",
+      "remainingConditions": [
+        "Check the actual scientific vocabulary and audience/format choices in a science report; generic vocabulary or writing-process success alone does not certify the integrated requirement."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Science application/decomposition and impact explanations remain to be demonstrated.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-A2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_QR3vxbN1o4",
+          "topicName": "Planning a Task",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt__p5n8z5soJ",
+          "topicName": "Step-by-Step Instructions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_XbGfVhfiUz"
+          ]
+        },
+        {
+          "topicId": "mt_sPV503BQnI",
+          "topicName": "My first visual program",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_XbGfVhfiUz"
+          ]
+        }
+      ],
+      "rationale": "Planning a Task explicitly breaks a larger task into smaller ordered steps. The algorithm and first-program claims support implementing and running the plan; no new decomposition topic is needed.",
+      "remainingConditions": [
+        "Require learner-authored decomposition and a science investigation/model, rather than only running a supplied sequence or unrelated maths animation."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_AzTrT5ySCx",
+          "topicName": "AI in Daily Life",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_WRRv1ABECC",
+            "mt_XbGfVhfiUz"
+          ]
+        }
+      ],
+      "rationale": "Everyday AI examples include benefits and limitations, providing a direct emerging-technology contribution.",
+      "remainingConditions": [
+        "Explain an effect of programmed behaviour as well as an emerging-technology example; device naming alone is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "reason": "Broader historical effects can support discussion, but do not themselves explain the role of a programmed instruction."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_XbGfVhfiUz"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-A3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Practical material/design applications have support; integrated tasks and community contribution resources remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.3"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-A3.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Q2Zj3L8u9C",
+          "topicName": "Things people design",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_rTn43s8RNX",
+          "topicName": "Choosing the Right Material",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_SwaNNdm_Ks",
+            "mt_ZAJvTcroFO"
+          ]
+        }
+      ],
+      "rationale": "Purposeful products and places, together with property-to-function explanations, support familiar scientific/design applications. Use a relevant example such as a spill-resistant container and its material choice, not an unrelated device list.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A3.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_4A4RpX-Go9",
+          "topicName": "Shared Research Projects",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Motion-design testing supplies science/data work and shared research supplies information gathering and writing.",
+      "remainingConditions": [
+        "Assess the integrated use of another subject in a real problem; co-listing generic skills is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-A3.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A3.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Existing biography, community-history and ecological-knowledge claims provide candidates; the resource task does not justify separate community clones.",
+      "remainingConditions": [
+        "Verify age-appropriate resources from multiple communities and examine what the contributions changed.",
+        "Do not treat a single biography or a generic ecological statement as complete evidence."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_excSPNHJWZ",
+          "topicName": "Mary Anning, Fossil Hunter",
+          "reason": "One scientific biography is a possible example, not a multi-community review."
+        },
+        {
+          "topicId": "mt_m43jiOAOCt",
+          "topicName": "Indigenous Ecological Knowledge",
+          "reason": "Requires factual/cultural and whole-claim review before contextual reuse."
+        },
+        {
+          "topicId": "mt_2qc_Kq63Le",
+          "topicName": "Important local people and places",
+          "reason": "Investigating the importance of a local person or group can support the process, but scientific contributions and multiple communities need verified content."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Human-impact practices have direct support; animal-driven negative effects/mitigation remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-B1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_qixeaiswFP",
+          "topicName": "How Organisms Shape Habitats",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_SZJ1mN7Vfk",
+          "topicName": "Bees and pollination",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_guaaD6Dn2M",
+            "mt_oNWXXAn3cn",
+            "mt_yR1moI5kX1"
+          ]
+        }
+      ],
+      "rationale": "Organism-driven habitat change and pollination provide actual animal effects, including practical consequences for food production.",
+      "remainingConditions": [
+        "Assess a negative animal-impact case and a justified mitigation. A beneficial pollination example or habitat-change description alone does not cover this."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing impact claim identifies multiple kinds of environmental harm, proposes responses and explains their benefits. Select cases affecting animals and their habitats rather than certifying all source requirements from one slogan.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Movement and selected adaptation cases have support; constant/changing traits and complete life-history comparison sets remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.5"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_fDoE-pL6Jv",
+          "topicName": "Animal Body Groups",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_zVLOm6U7bh"
+          ]
+        },
+        {
+          "topicId": "mt_oR6dwRj2Ll",
+          "topicName": "Animal Life Stages",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_zVLOm6U7bh"
+          ]
+        }
+      ],
+      "rationale": "Animal-group comparisons and observed growth provide distinct pieces of physical comparison.",
+      "remainingConditions": [
+        "Explicitly compare stable and changing features using appropriate cases; a list of group features or the statement that babies grow is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_cEzX5r7kp0"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt__7hXSTbu9s",
+          "topicName": "How minibeasts move",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_yR1moI5kX1"
+          ]
+        }
+      ],
+      "rationale": "The minibeast movement claim describes and matches several movement forms across different animals. The source does not mandate every locomotion form or a particular vertebrate group, so a new broad animal-movement clone is unnecessary.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_4IVWRAZoNC",
+          "topicName": "Life Cycles of Organisms",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_1J5fwxNDxL",
+            "mt_7EqhgErJyU",
+            "mt_zVLOm6U7bh"
+          ]
+        },
+        {
+          "topicId": "mt_oR6dwRj2Ll",
+          "topicName": "Animal Life Stages",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_zVLOm6U7bh"
+          ]
+        }
+      ],
+      "rationale": "Diverse life-cycle models and bird/mammal juvenile-to-adult examples are present in existing claims.",
+      "remainingConditions": [
+        "Check complete cases across all four required groups. A two-organism minimum and juvenile/adult matching alone do not prove the whole required case set; do not add group-specific clones to repair the assessment sample."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_4IVWRAZoNC",
+          "topicName": "Life Cycles of Organisms",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_1J5fwxNDxL",
+            "mt_7EqhgErJyU",
+            "mt_zVLOm6U7bh"
+          ]
+        },
+        {
+          "topicId": "mt_hsN-YvCNQY",
+          "topicName": "Insect life cycles: complete metamorphosis",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_Wr6DDgr_kH"
+          ]
+        }
+      ],
+      "rationale": "General cycle comparisons and insect transformation include body changes and stage-related feeding/growth roles.",
+      "remainingConditions": [
+        "Compare appearance and behaviour through complete cases for varied animals; naming stages or explaining only a larva is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-B2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.5",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_pwo81ls_J-",
+          "topicName": "Animal Camouflage",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_v3Vz_Pgjjv"
+          ]
+        }
+      ],
+      "rationale": "The camouflage claim explains multiple examples and their protective or feeding purpose. Physical adaptations are sufficient under the source wording; behavioural examples or later evolutionary theory are not extra mandatory clauses.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-C1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Household material practices and consequences require actual source-specific assessments.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_EWiY8-opdd",
+          "topicName": "Keeping food safe and clean",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_vbbxnY7ZDT"
+          ]
+        },
+        {
+          "topicId": "mt_TTH2ouwyTW",
+          "topicName": "Safe steps in science tests",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Food handling/storage and hazard-aware substance handling supply safety components without inventing another general safety claim.",
+      "remainingConditions": [
+        "Evaluate an actual set of household use/storage/disposal practices and their environmental consequences, then explain improvements. A food-hygiene or equipment-safety routine alone does not cover all of that."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_deexfCHU9m"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Existing state-change knowledge can support this application; it is not itself an evaluated consequence.",
+      "remainingConditions": [
+        "Use verified cases and explain effects on people and environments. Do not attach every phase-change topic to the impact requirement merely because it mentions melting."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_Pl-nsjYGZ3"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Several classification/transition claims have support; stable-state cases, mixtures and symbol meanings retain conditions.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.7"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_1JFUNQDwAJ",
+          "topicName": "States of Matter Vocabulary",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing three-state classification includes the required liquid/solid distinction using observable properties. Select examples from both settings; extra gas knowledge does not create another difficulty level.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "qualityReviewNotes": [
+        "The existing States of Matter Vocabulary prompt uses an ambiguous kettle-steam example. Lead review agrees a scope-preserving concrete gas-example clarification should be handled separately; no authored assessment edit is made in this association batch. Visible mist must not be described as gas."
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_1JFUNQDwAJ",
+          "topicName": "States of Matter Vocabulary",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The state-vocabulary description includes flowing/container behaviour and retained shape. Use appropriate examples, avoiding the misconception that all solids must be hard or that pourable grains become a liquid.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "qualityReviewNotes": [
+        "The existing States of Matter Vocabulary prompt uses an ambiguous kettle-steam example. Lead review agrees a scope-preserving concrete gas-example clarification should be handled separately; no authored assessment edit is made in this association batch. Visible mist must not be described as gas."
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.3",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_1JFUNQDwAJ",
+          "topicName": "States of Matter Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_Pl-nsjYGZ3",
+          "topicName": "Heating & Cooling Changes",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_htAYR-iCFF"
+          ]
+        }
+      ],
+      "rationale": "Classification by bulk properties plus explicit freezing/melting and temperature evidence support both parts. Interpret the numerical water examples in their usual classroom conditions rather than as universal values at every pressure.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "qualityReviewNotes": [
+        "The existing States of Matter Vocabulary prompt uses an ambiguous kettle-steam example. Lead review agrees a scope-preserving concrete gas-example clarification should be handled separately; no authored assessment edit is made in this association batch. Visible mist must not be described as gas."
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Pl-nsjYGZ3",
+          "topicName": "Heating & Cooling Changes",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_htAYR-iCFF"
+          ]
+        }
+      ],
+      "rationale": "The existing claim assesses temperature-linked transitions.",
+      "remainingConditions": [
+        "Check non-transition cases and material-specific conditions too; warming something does not automatically change its state."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.5",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_F62VTeHB4-",
+          "topicName": "Preparing simple healthy snacks",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_QhLAeAlHI0",
+            "mt_cxJRc15osy",
+            "mt_vbbxnY7ZDT"
+          ]
+        },
+        {
+          "topicId": "mt_ahSqW_kK1b",
+          "topicName": "Changes & Separation Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Preparing food includes combining ingredients, while existing process vocabulary includes mixing/separation concepts.",
+      "remainingConditions": [
+        "Use and explain actual liquid/solid combinations with a purpose. Following a solid-only snack recipe or merely saying mixture is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Mf-T-fYRLX",
+          "topicName": "Dissolving & Solutions",
+          "reason": "Contains solution/recovery content but starts later and has a mixture-versus-solution wording issue to review; it is not promoted to a 7–8 context for one easier clause."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.6",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.6",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_zHnOGwHIEz",
+          "topicName": "Classifying Materials",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_SwaNNdm_Ks",
+            "mt_ZAJvTcroFO"
+          ]
+        },
+        {
+          "topicId": "mt_auVZZEuXjs",
+          "topicName": "Describing Material Properties",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_ZAJvTcroFO"
+          ]
+        }
+      ],
+      "rationale": "Classifying Materials explicitly plans property tests, records results and groups them; its assessment includes float tests. Material Properties includes absorbency/waterproofness. Together they support the two classifications without adding a buoyant-force theory topic.",
+      "remainingConditions": [
+        "Use both property dimensions in the selected test set; full topic mastery is not inferred from one floating object."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-C2.7",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.7",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "topicName": "Health and safety signs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The Personal and Social Development health/safety-sign claim already includes poison/hazard symbols on household products. This is a direct reuse across subjects.",
+      "remainingConditions": [
+        "Check multiple applicable substance symbols and explain the represented hazards using an accurate resource; a generic tell-an-adult response alone is not the complete meaning requirement."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-D1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Mechanism-linked social/environmental cases remain unverified.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-D1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_9REmUc8r4D",
+            "mt_VXcua6-txq"
+          ]
+        }
+      ],
+      "rationale": "The historical technology claim includes cart/transport and household-work comparisons, which can supply concrete impact examples.",
+      "remainingConditions": [
+        "Connect the selected tool to its simple-machine function and compare relevant community cases; a general modern-versus-old story is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Q2k3fSwyzQ",
+          "topicName": "Levers, Pulleys & Gears",
+          "reason": "Direct lever/pulley knowledge exists, but the complete later-start claim also requires gear-force explanations; local age fit is not inferred from one matching case."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-D1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Generic environmental reasoning and tool-purpose knowledge provide background, not a demonstrated mechanism-linked assessment.",
+      "remainingConditions": [
+        "Identify the mechanism in a movement technology and evaluate its effects using a supported case. Do not manufacture a direct link from a generic pollution answer."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Q2k3fSwyzQ",
+          "topicName": "Levers, Pulleys & Gears",
+          "reason": "Relevant mechanism knowledge; the entire later-start claim is not assigned a new local interval here."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_deexfCHU9m",
+        "mt_Q2Zj3L8u9C"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Motion/repositioning have direct support; complete machine categories/functions and with/without force comparisons remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.5"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Dg5lQZFpav",
+          "topicName": "Shape and material change movement",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing movement claim explicitly distinguishes rolling, sliding, bouncing and spinning and gives contrasting cases. No new list of movements is needed.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Existing pushes/pulls evidence covers movement and changes arising from different directions and strengths; it supports more than one way to reposition an object without introducing formal mechanics.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Lever/pulley concepts and ramp examples exist, but the complete named set has not been found in assessed evidence across subjects.",
+      "remainingConditions": [
+        "Account explicitly for every required category. A ramp example is not proof that the full category set is named or distinguished. No new topics are approved by this finding."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Q2k3fSwyzQ",
+          "topicName": "Levers, Pulleys & Gears",
+          "reason": "Covers levers/pulleys and additional gear concepts, not the complete six-category set."
+        },
+        {
+          "topicId": "mt_F3ATPTCYm6",
+          "topicName": "Force & Motion Vocabulary",
+          "reason": "Later full claim also includes balanced/resultant forces and moments, so one terminology overlap does not establish whole-claim age fit."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_Dg5lQZFpav",
+        "mt_Q2Zj3L8u9C"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Some useful mechanism functions are present, but the complete source case set is not established.",
+      "remainingConditions": [
+        "Cover each required category with a justified use/benefit case; tool naming alone is insufficient. No country/grade clone is proposed."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Q2k3fSwyzQ",
+          "topicName": "Levers, Pulleys & Gears",
+          "reason": "Lever/pulley functions contribute semantically; the full later-start claim and missing category cases remain explicit."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_Q2Zj3L8u9C"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.5",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Comparing stronger/weaker pushes supplies relevant qualitative force reasoning.",
+      "remainingConditions": [
+        "Assess controlled with/without comparisons involving the required mechanism variety. A strong-versus-gentle push alone is insufficient, and formal numerical mechanical advantage is not required."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Q2k3fSwyzQ",
+          "topicName": "Levers, Pulleys & Gears",
+          "reason": "Supports selected force-changing mechanisms; whole-claim local age fit is deferred."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_qgb76wHN2X",
+        "mt_RlILL2sccX"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Resource/perspective verification and grounded household/local plans remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.3"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_2GDBmKCJxs",
+          "topicName": "Different perspectives and accounts",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_9REmUc8r4D",
+            "mt_VXcua6-txq",
+            "mt_wRlf0g2MbB",
+            "mt_wzUzVEBqJb"
+          ]
+        },
+        {
+          "topicId": "mt_QR3vxbN1o4",
+          "topicName": "Planning a Task",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Environmental responses, comparison of genuine viewpoints and ordered action planning are already separate reusable claims.",
+      "remainingConditions": [
+        "Use verified First Nations, Métis and Inuit resources for the required perspectives, alongside other relevant viewpoints; Australian Country-specific claims are not relabelled.",
+        "Assess a locally grounded plan tied to air/water quality rather than a generic action list."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-E1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_QR3vxbN1o4",
+          "topicName": "Planning a Task",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The impact claim includes water conservation; Planning a Task supplies an ordered plan and necessary information/materials. Another environmental-planning topic is unnecessary.",
+      "remainingConditions": [
+        "Evaluate relevant household/personal uses and link the plan to that evidence; generic water-saving suggestions or a plan for an unrelated activity do not complete the source application."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-E1.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Physical water distribution, environmental importance and fairness claims are relevant candidates; none is automatically a complete access-to-drinking-water account.",
+      "remainingConditions": [
+        "Use accurate world/community cases and distinguish fresh water from drinking-water access. A global volume chart alone does not assess community availability or consequences."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_LsY4-T2fU7",
+          "topicName": "Salt Water vs Fresh Water",
+          "reason": "Existing global distribution/graph claim starts later and does not itself assess safe drinking-water access."
+        },
+        {
+          "topicId": "mt_bFK6owxsmi",
+          "topicName": "Why environments matter",
+          "reason": "Contains a broader comparison with specifically Australian water-source evidence; do not substitute a Canadian example and silently change its whole mastery."
+        },
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "topicName": "Fairness, Equality and Equity",
+          "reason": "Fair resource decisions support discussion, but do not supply the actual water-access facts."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_nRF_VRntrW"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Cycle/state/dependence claims have support; air/water-property completeness and built-water cases remain.",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.5"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_1JFUNQDwAJ",
+          "topicName": "States of Matter Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_j7cj9eWN7w",
+          "topicName": "What Is Wind?",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Bulk state properties and observed moving-air effects provide real elementary components.",
+      "remainingConditions": [
+        "Specify and assess the appropriate property set using supported observations. Do not assume these examples exhaust it, or impose every later atmospheric/particle-model detail."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_fkcxpeYP85",
+          "topicName": "The Atmosphere",
+          "reason": "Air weight/pressure is present in a broader later claim with atmospheric structure; no local age lowering follows from that one component."
+        }
+      ],
+      "prerequisiteContributions": [],
+      "qualityReviewNotes": [
+        "The existing States of Matter Vocabulary prompt uses an ambiguous kettle-steam example. Lead review agrees a scope-preserving concrete gas-example clarification should be handled separately; no authored assessment edit is made in this association batch. Visible mist must not be described as gas."
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_nRF_VRntrW",
+          "topicName": "Where water is found on Earth",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_KsKLVW_ssY"
+          ]
+        }
+      ],
+      "rationale": "The existing Earth-water claim covers several natural stores and forms.",
+      "remainingConditions": [
+        "Identify actual built-environment water sources/storage cases too; general natural/built feature classification alone does not establish this water-specific application."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_cUpJvBD1YA"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.3",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fhqVdj4BYr",
+          "topicName": "The Water Cycle",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_IhWzO4sQPg",
+            "mt_TlLE4cZgOr"
+          ]
+        },
+        {
+          "topicId": "mt_zCGwH1OQZa",
+          "topicName": "Evaporation and condensation",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The cycle concept supplies the physical sequence, while the vocabulary claim explicitly includes collection and a complete ordered account. Check all required stages rather than accepting only the three named in one record.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.4",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_1JFUNQDwAJ",
+          "topicName": "States of Matter Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_Pl-nsjYGZ3",
+          "topicName": "Heating & Cooling Changes",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_htAYR-iCFF"
+          ]
+        },
+        {
+          "topicId": "mt_fhqVdj4BYr",
+          "topicName": "The Water Cycle",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_IhWzO4sQPg",
+            "mt_TlLE4cZgOr"
+          ]
+        }
+      ],
+      "rationale": "Three-state classification, temperature-linked transitions and the physical cycle together account for the selected requirement. Use water vapour as the gas case; visible droplets are liquid.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "qualityReviewNotes": [
+        "The existing States of Matter Vocabulary prompt uses an ambiguous kettle-steam example. Lead review agrees a scope-preserving concrete gas-example clarification should be handled separately; no authored assessment edit is made in this association batch. Visible mist must not be described as gas."
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G2-E2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.5",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_tiPyEkm4cU",
+          "topicName": "How Breathing Works",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Plant/animal need lists and missing-need consequences combine with the human breathing pathway and oxygen need. Cover plant and animal cases rather than treating a pet-only list as proof of the entire source requirement.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    }
+  ]
+}
