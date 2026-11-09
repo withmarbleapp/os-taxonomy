@@ -14,6 +14,13 @@ the remaining areas. The baseline/status column below distinguishes the original
 accepted 67 from these 100 proposed additions. Shared-grade records are counted
 once, not once for every grade membership.
 
+The next [CG-4–6 batch](ncert-cg4-6-catalogue-2026-11-09.md) is a **dependent,
+unmerged proposal** based on `09a949a` (167 source positions). It adds 34 positions
+to reach 201 in this branch. Downstream publication applies the accepted
+167-position dependency before this separate 34-row batch; repository acceptance
+does not require that private deployment first. These counts do not describe an
+already-applied database revision.
+
 ## Target and completion boundary
 
 Build an edition-aware **NCERT national baseline for Grades 1–5**, covering every
@@ -51,7 +58,7 @@ its areas need not be turned into separate taxonomy subject trees.
 | Source section | PDF pages | Grades/stage shown | Accepted catalogue status | Next ingestion work |
 | --- | --- | --- | --- | --- |
 | Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 proposed; not yet accepted/deployed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
-| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | Not ingested | Verify outcome boundaries and distinguish context from an additional outcome. |
+| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 proposed in dependent batch; not accepted/deployed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
 | Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | Not ingested | Preserve source outcomes; cross-reference the later activity syllabus without counting it twice. |
 | Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | Not ingested | Preserve shared cells and continuations across pages. |
 | Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | Not ingested | Separate the last continued CG-7 cell from the CG-8 table beginning on page 25. |
