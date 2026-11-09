@@ -1337,23 +1337,18 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.1",
       "kind": "specific",
       "semanticDisposition": "Partial",
-      "contributions": [
+      "contributions": [],
+      "rationale": "Spin/orbit evidence explains the day/year distinction. The annual daylight observation claim is background evidence, not a causal explanation.",
+      "remainingConditions": [
+        "The daylight topic title does not supply a causal seasons account. Review the existing polar explanation and a suitable general/local task before declaring the seasonal cause covered.",
+        "No Grade 1 spin/orbit context is proposed pending whole-claim age-fit review; component relevance alone does not lower the existing age boundary."
+      ],
+      "deferredCandidates": [
         {
           "topicId": "mt_w2xiMNkyyX",
           "topicName": "Earth's Spin & Orbit",
-          "role": "component",
-          "association": "proposed",
-          "hardPrerequisitesWithoutMatchingOntarioInterval": [
-            "mt_XlyF294bPR",
-            "mt_u3Y3Tb-G_n"
-          ]
-        }
-      ],
-      "rationale": "Spin/orbit evidence explains the day/year distinction. The annual daylight observation claim is background evidence, not a causal explanation.",
-      "remainingConditions": [
-        "The daylight topic title does not supply a causal seasons account. Review the existing polar explanation and a suitable general/local task before declaring the seasonal cause covered."
-      ],
-      "deferredCandidates": [
+          "reason": "The existing full claim includes 24-hour rotation and a 365-day orbit and starts at age 7. Its daily-cycle component does not independently justify a new 6–7 context; whole-claim age fit remains unverified."
+        },
         {
           "topicId": "mt_f9syMry-0S",
           "topicName": "Why Polar Seasons Are Extreme",
@@ -1363,7 +1358,7 @@
       "prerequisiteContributions": [
         "mt_K0mZxY2AM8"
       ],
-      "leadDecision": "Resolve assessment/context fit of the existing causal content, or justify a scope-preserving extraction; do not duplicate an observation topic under a causal title."
+      "leadDecision": "Review whole-claim age fit of spin/orbit and seasonal causation separately. Preserve the existing topic identities; neither a component nor a lower school grade alone justifies an earlier context or new topic."
     },
     {
       "code": "ON-SCI-2022-G1-E2.2",

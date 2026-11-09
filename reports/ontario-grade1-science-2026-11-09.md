@@ -23,9 +23,9 @@ None of these labels certify learner mastery, actual delivery of an integrated
 activity, a consumer's selection eligibility, or completion of all Grade 1 Science.
 The two focused gaps are review findings, not approval to add topics.
 
-The complete proposal records **72 distinct topic–code pairs across
-36 specific codes and 44 existing topics**. This is **71 additional pairs**
-over the accepted one-pair Science pilot, not 72 new skills. It adds 40 scoped
+The complete proposal records **71 distinct topic–code pairs across
+35 specific codes and 43 existing topics**. This is **70 additional pairs**
+over the accepted one-pair Science pilot, not 71 new skills. It adds 39 scoped
 records and extends four existing exact-interval records with relevant codes;
 no unaffected scoped records are replaced. New associations use Canada/Ontario
 ages **6–7**. Flat ages and standard lists are generated from those contexts.
@@ -118,7 +118,7 @@ explicit child references and their own Partial judgment, not new direct links.
 | E1.1 | Partial | `mt_Dj2xr8CoI0` (C); `mt_2agkUcdah9` (C) |
 | E1.2 | Partial | `mt_go5i87u2b9` (C); `mt_Dj2xr8CoI0` (C) |
 | E2 | Partial | Child reviews |
-| E2.1 | Partial | `mt_w2xiMNkyyX` (C) |
+| E2.1 | Partial | No direct association; spin/orbit and polar-season candidates deferred |
 | E2.2 | Full | `mt_fI-8iqf_Id` (C); `mt_fk33IEGP-T` (C) |
 | E2.3 | Partial | `mt_PiWZA8Z0ZJ` (C); `mt_iGSfQg3g5c` (C); `mt_K0mZxY2AM8` (C); `mt_go5i87u2b9` (C) |
 | E2.4 | Full | `mt_go5i87u2b9` (C); `mt_HZvTriQWTh` (C) |
@@ -195,3 +195,5 @@ and direct links, and confirms the preservation statements above.
 This is an ordinary repository proposal. No DB or learner writes occurred, and
 there is no downstream publication receipt. Remaining source/assessment issues
 are explicit work items rather than a declaration that Ontario is finished.
+
+Lead review deferred the proposed 6–7 spin/orbit context: relevance to a daily-cycle component does not establish whole-claim age fit. The existing age-7 start is preserved; no replacement topic is created.

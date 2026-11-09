@@ -113,7 +113,7 @@ The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
 now accounts for all 55 retained codes (44 specific and 11 overall), with direct
 roles, source conditions, deferred candidates and a readiness diagnostic in its
 [code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
-It proposes 71 further pairs over the one-pair accepted pilot, using 44 existing
+It proposes 70 further pairs over the one-pair accepted pilot, using 43 existing
 topics and no claim or dependency edits. Its 14 Full specific semantic judgments
 include one material-origins candidate whose local context remains deferred;
 28 specific judgments and all 11 overall judgments remain Partial, with two
@@ -142,7 +142,7 @@ The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
 now accounts for all 55 retained codes (44 specific and 11 overall), with direct
 roles, source conditions, deferred candidates and a readiness diagnostic in its
 [code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
-It proposes 71 further pairs over the one-pair accepted pilot, using 44 existing
+It proposes 70 further pairs over the one-pair accepted pilot, using 43 existing
 topics and no claim or dependency edits. Its 14 Full specific semantic judgments
 include one material-origins candidate whose local context remains deferred;
 28 specific judgments and all 11 overall judgments remain Partial, with two
