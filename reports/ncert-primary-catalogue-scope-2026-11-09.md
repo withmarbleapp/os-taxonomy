@@ -15,7 +15,7 @@ accepted 67 from these 100 proposed additions. Shared-grade records are counted
 once, not once for every grade membership.
 
 The next [CG-4–6 batch](ncert-cg4-6-catalogue-2026-11-09.md) is a **dependent,
-unmerged proposal** based on `09a949a` (167 source positions). It adds 34 positions
+unmerged proposal** based on `3d9d6b4` (167 source positions). It adds 34 positions
 to reach 201 in this branch. Downstream publication applies the accepted
 167-position dependency before this separate 34-row batch; repository acceptance
 does not require that private deployment first. These counts do not describe an
@@ -49,6 +49,17 @@ outcomes, activities and textbook contents remain separately classified. A stage
 competency inventory does not assert that all later grade-level publications have
 been captured.
 Counts not yet independently reconciled remain unknown rather than guessed.
+
+## Formal standards and contextualisable outcomes
+
+The 2025 foundational publication's introduction (PDF page 5, printed page 3)
+distinguishes stage competencies from contextualisable, suggestive outcomes.
+The catalogue retains the published outcome positions faithfully; it does not
+turn them into an exhaustive mandatory national grade checklist. A complete
+selected formal primary baseline must separately account for the actual
+Foundational and Preparatory stage goals/competencies, including their stated
+conditions. Grade-specific examples are classified without inventing additional
+requirements or treating every example as a new assessable skill.
 
 ## Verified source already in hand
 
