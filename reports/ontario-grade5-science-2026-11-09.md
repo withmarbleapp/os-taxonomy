@@ -1,7 +1,7 @@
 # Ontario Grade 5 Science and Technology — 9 November 2026
 
 This dependent proposal reviews **53 retained codes: 42 specific and 11 overall**.
-It builds on the unmerged Grade 4 proposal at `a758c69bafda60177ebe242331612ecd021de3ec`, preserving its prior
+It builds on the unmerged Grade 4 proposal at `9b8c0cf015bf5cb43e8089b8241edce3b14800e7`, preserving its prior
 Grade 1–3 components. Exact dependency and code dispositions are in the
 [code-by-code mapping](ontario-grade5-science-mapping-2026-11-09.json).
 The branch is not described as accepted main or deployed content.
