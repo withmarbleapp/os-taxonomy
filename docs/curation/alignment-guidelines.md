@@ -13,6 +13,13 @@ grades and exclusions. For a downloaded source, record retrieval date, byte hash
 and page/section locations. A later edition or differently hashed file needs
 explicit reconciliation; do not silently overwrite the pinned source.
 
+Establish the source's prescriptive status as well as its publisher: formal
+goals/competencies, suggestive outcomes, assessment examples and syllabus content
+are different kinds of evidence. An official host or an outcome label alone does
+not make each item a mandatory grade-level requirement. Preserve stage-end and
+resource/language applicability conditions rather than inventing per-grade
+deadlines or treating examples as extra obligations.
+
 Preserve official codes and hierarchy. When individual expectations have no
 official code, document a deterministic source-position identifier and label it
 as generated. Keep continuation text attached to the original item; distinguish

@@ -4,11 +4,17 @@ This dependent catalogue proposal adds **56 explicitly labelled source outcome
 positions** from the Arts syllabus appendix (PDF 63–69, printed 61–67) of the
 [pinned 2025 foundational document](https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf).
 It extends `ncert-fs-2025` from 260 to **316** positions against exact unmerged
-base `19edaae`. The source document identity and SHA-256 remain unchanged:
+data base `19edaae`, now reconciled with documentation dependency `3d4cee0`.
+Those parent snapshots have identical data bytes. The source document identity and SHA-256 remain unchanged:
 `484d5c18d9beeb1d79c4bee8589f6cb2b2ef42bdeb255b8f51e1eae8ac953eb2`.
 No topic, alignment, learner or downstream DB change is included.
 
 ## Scope and source-kind decision
+
+The document-wide introduction classifies its outcomes as contextualisable
+suggestions. These records preserve the appendix's printed positions, not an
+exhaustive mandatory grade-level checklist; formal stage competencies are
+accounted for separately in the framework source.
 
 The table separately labels its grade-column material **Content and Suggested
 Activities** and its shared rightmost column **Learning Outcomes**. Only the
