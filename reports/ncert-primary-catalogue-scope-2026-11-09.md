@@ -131,6 +131,23 @@ are captured implementation references. The manual's sample and blank outcome
 worksheets are not an exhaustive mandatory grade-level catalogue. A CBSE adaptation
 is not presented as the original NCERT framework.
 
+### Formal Foundational source status
+
+The pinned 2024 edition also publishes actual formal Foundational goals and
+competencies in section 1.4, Tables 1.1i–vi, PDF 212–216. The [82-row proposal](ncert-ncfse-foundational-catalogue-2026-11-09.md)
+adds 13 goals and 69 competencies to the same document identity, preserving full
+ages 3–8 / Balvatika plus Grades 1–2 scope once and the conditional L2 footnote.
+No sequential Physical/Motor label aliases are inferred. The full selected formal
+framework baseline is now 254 records across Foundational and Preparatory, in
+dependent unmerged proposals; this is not a deployed DB state.
+
+The 2025 outcomes publication explicitly presents outcomes as suggestive and
+contextualisable (PDF 5 / printed 3). Its printed positions remain useful catalogue
+records without implying an exhaustive mandatory grade-level national checklist.
+Source-defined formal standards, suggestive outcomes, syllabus content, activities
+and reference relationships are accounted for distinctly. Remaining language and
+mixed-syllabus work is not erased by formal-framework completion.
+
 ### Selected framework inventory in progress
 
 The selected formal Preparatory sections are language R1 (PDF 236–237), language
