@@ -24,4 +24,10 @@ also apply to manual contributions. Using an agent or skill is optional for cont
   regenerate unchanged data.
 - Submit the actual change in an ordinary PR. Repository review accepts the
   semantics; consumers handle deployment and private-state compatibility.
+- Prefer a PR targeting the repository's default branch. For a dependent stack,
+  retarget and reconcile the next PR against the default branch after its base
+  reaches that branch. An intentional feature-integration stack needs an explicit
+  final PR to the default branch. Verify accepted contents before reporting completion;
+  a PR merged into a feature branch has not reached the default branch, and
+  squash merges can change commit identities.
 

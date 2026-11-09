@@ -1,31 +1,21 @@
 # NCERT primary catalogue scope — 9 November 2026
 
 This is a **catalogue-first source inventory and ingestion plan**, not a topic
-alignment pass or a claim that the Indian curriculum is complete. The accepted
-baseline is commit `45e2bc0` (PR #91). The repository contains 67 identifiers from
-one selected part of the NCERT foundational outcomes document. No topic,
-prerequisite, alignment or learner-state change is proposed here.
+alignment pass or a claim that the Indian curriculum is complete. Current main
+contains **260 printed source positions** in `ncert-fs-2025` at `4c791a2` (PR #95),
+including the 167 positions accepted through PR #94 and its reviewed 93-position
+extension. The [English L2](ncert-english-l2-catalogue-2026-11-09.md),
+[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md),
+[CG-4–6](ncert-cg4-6-catalogue-2026-11-09.md) and
+[Arts/Learning Habits/Cognitive](ncert-cg12-13-7-catalogue-2026-11-09.md) reports
+retain their source verification and historical batch boundaries. Shared-grade
+cells count once, not once per membership. Acceptance does not imply deployment.
 
-The subsequent [English L2](ncert-english-l2-catalogue-2026-11-09.md) and
-[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md) proposals add 34 and
-66 verified source positions to the same document, bringing this branch to 167.
-These are proposed catalogue extensions, not accepted/deployed completion of
-the remaining areas. The baseline/status column below distinguishes the original
-accepted 67 from these 100 proposed additions. Shared-grade records are counted
-once, not once for every grade membership.
-
-The next [CG-4–6 batch](ncert-cg4-6-catalogue-2026-11-09.md) is a **dependent,
-unmerged proposal** based on `3d9d6b4` (167 source positions). It adds 34 positions
-to reach 201 in this branch. Downstream publication applies the accepted
-167-position dependency before this separate 34-row batch; repository acceptance
-does not require that private deployment first. These counts do not describe an
-already-applied database revision.
-
-The [Arts/Learning Habits/Cognitive extension](ncert-cg12-13-7-catalogue-2026-11-09.md)
-adds another 59 verified positions after that milestone. The current dependent
-branch therefore has **260 positions**, or **93 additions above the 167-position
-dependency**, within a 128-row publication batch. The source-position count still
-does not certify distinct skills, full source coverage, or a published revision.
+This main-targeted proposal preserves all 260 positions and adds a separate
+edition-pinned source with **91 formal Preparatory goals/competencies** across
+language R1/R2, Mathematics and The World Around Us. Formal stage records apply
+once across Grades 3–5; they do not create cloned grade outcomes. No topic,
+prerequisite, alignment or learner-state change is proposed.
 
 ## Target and completion boundary
 
@@ -78,22 +68,23 @@ its areas need not be turned into separate taxonomy subject trees.
 
 | Source section | PDF pages | Grades/stage shown | Accepted catalogue status | Next ingestion work |
 | --- | --- | --- | --- | --- |
-| Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 proposed; not yet accepted/deployed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
-| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 proposed in dependent batch; not accepted/deployed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
-| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | 30 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Source continuations are verified; later activity syllabus remains separate. |
-| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | 18 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Literal source wording and distinct printed grade cells preserved. |
-| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | 11 positions intersecting Grades 1–2 proposed; not accepted/deployed | One joint G1–2 position and six shared B3/G1/G2 positions counted once; CG-8 boundary excluded. |
+| Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 accepted in PR #94; deployment not claimed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
+| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 accepted in PR #95; deployment not claimed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
+| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | 30 Grade 1–2 positions accepted in PR #95; deployment not claimed | Source continuations are verified; later activity syllabus remains separate. |
+| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | 18 Grade 1–2 positions accepted in PR #95; deployment not claimed | Literal source wording and distinct printed grade cells preserved. |
+| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | 11 positions intersecting Grades 1–2 accepted in PR #95; deployment not claimed | One joint G1–2 position and six shared B3/G1/G2 positions counted once; CG-8 boundary excluded. |
 | Maths, CG-8 | 25–34 | Balvatika and Grades 1–2 | **67 Grade 1–2 outcomes present: 34 + 33** | Preserve accepted IDs; any Balvatika expansion is a separately labelled scope. |
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
-| Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions proposed; not yet accepted/deployed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
+| Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions accepted in PR #94; deployment not claimed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
 | Environmental-studies syllabus | 53–62 | Balvatika and Grades 1–2 | Not ingested | Type content/syllabus and competency references separately; do not emit each content phrase as a learning outcome. |
 | Arts syllabus and suggested activities | 63–69 | Balvatika and Grades 1–2 | Not ingested | Distinguish activity suggestions from outcome statements and references to earlier competencies. |
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
 
 These page ranges overlap where a section changes mid-page. They are not additive
-record counts. Apart from the accepted Maths slice, expectation totals are not
-certified by this inventory. Language sections must be compared before deciding
+record counts. The accepted 260-position slice is separately verified; this
+inventory does not certify totals for the remaining sections. Language sections
+must be compared before deciding
 which are distinct language targets, translated descriptions, or shared framework
 references; neither blindly duplicating nor automatically collapsing them is safe.
 
@@ -152,7 +143,7 @@ now independently verifies **91 formal source records**: 21 curricular goals and
 70 stage competencies across language R1/R2, Maths and The World Around Us.
 Arts and Physical Education remain pending independent reconciliation in this
 core-only slice; the initial all-area inventory of **172 positions** is still
-provisional here. These are dependent Git proposals, not an applied DB revision.
+provisional here. This formal core slice is a main-targeted Git proposal, not an applied DB revision.
 
 The proposed record model keeps one Grades 3–5 band per formal record, distinguishes
 `curricularGoal` from `stageCompetency`, and retains each literal printed CG/C code.
