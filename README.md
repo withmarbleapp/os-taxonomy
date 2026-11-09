@@ -62,8 +62,9 @@ See [PROVENANCE.md](PROVENANCE.md) for sources and attribution.
 
 The [Ontario primary status inventory](reports/ontario-primary-status-2026-11-09.md)
 separates catalogue ingestion, recorded associations and historical coverage
-reviews by subject and grade. It also documents two further Grade 1 Science
-associations using existing topics, including the remaining anatomy condition.
+reviews by subject and grade. The [Grade 1 Science review](reports/ontario-grade1-science-2026-11-09.md)
+accounts for all 55 selected codes, proposing existing-topic associations while
+retaining coverage conditions and focused decisions for follow-up.
 
 ### Adding curricula
 

@@ -107,49 +107,60 @@ are separate codes; source totals are not comparable counts of distinct skills.
   each slice. Historical Australian PE exclusions do not automatically decide
   Ontario scope.
 
-## First bounded continuation: Grade 1 Science
+## Grade 1 Science continuation
 
-Review two specific expectations from the 2022 Ministry
-[Grade 1 expectations PDF, page 2](https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/4b8f8ea5-e66a-4082-bfa0-795d8d7f8c08/SciTech_G1_AODA.pdf),
-linked from the [official curriculum](https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-1).
-Source retrieved 9 November 2026; SHA-256
-`7d6463a188d376251344be94ec61a42276aa042fd77fc9cfc055c829f974d936`.
-This report uses public identifiers and Marble claim descriptions; restricted
-expectation wording and the PDF remain outside the repository.
+The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
+now accounts for all 55 retained codes (44 specific and 11 overall), with direct
+roles, source conditions, deferred candidates and a readiness diagnostic in its
+[code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
+It proposes 71 further pairs over the one-pair accepted pilot, using 44 existing
+topics and no claim or dependency edits. Its 14 Full specific semantic judgments
+include one material-origins candidate whose local context remains deferred;
+28 specific judgments and all 11 overall judgments remain Partial, with two
+focused claim gaps for lead review. This does not finish Grade 1 Science.
 
-| Code | Existing topic | Contribution and disposition |
-| --- | --- | --- |
-| `ON-SCI-2022-G1-B1.2` | Reducing Human Impact (`mt_deexfCHU9m`) | Direct, whole-expectation contribution; **Full semantic coverage** for this narrow action-identification requirement. Existing evidence identifies environmental harm, proposes multiple local responses and explains their benefits. The whole topic is broader than the expectation: answering a single source task does not establish all its mastery evidence. No claim about carrying out an action, the overall B1 expectation or Strand B completion is made. |
-| `ON-SCI-2022-G1-B2.4` | Body Parts & Senses (`mt_83gRQ9OPkc`) | Direct **component** contribution; **Partial**. Existing evidence locates sensory organs and connects them with perception. Other body-part locations and functions need explicit review; do not silently widen the existing senses-focused assessment or treat it as a complete anatomy claim. |
+The initial two-code milestone was reviewed again: B2.4 now has wider evidence
+through existing bones/heartbeat claims as well as senses. No anatomy topic was
+created or broadened. Semantic fit and prerequisite readiness are now reported
+separately, so relevant habitat claims contribute even while their local
+prerequisite contexts need review.
 
-Add one Canada/Ontario context, ages 6–7, to each existing topic. The pilot uses
-this same local Grade 1 interval. Existing country contexts and all authored
-mastery, assessment, research and prerequisite content remain unchanged. The
-body/senses topic's generated global end extends from 6 to 7; that is an additional
-jurisdiction interval, not a new difficulty level or broader mastery claim.
-Neither topic has hard prerequisites. Existing soft support is retained.
+## Following work
 
-The proposed change adds **two pairs across two codes and two existing topics**.
-Science Grade 1 consequently has three associated codes and three pairs, including
-the original B2.2 pilot. It does not finish Grade 1 Science. The two newly reviewed
-specific expectations reconcile as **one Full / one Partial**; all other Grade 1
-codes retain their prior or unreviewed status. Overall expectations are not
-certified by these two contributions.
+Resolve the explicit Grade 1 source/assessment and context items before declaring
+completion; keep supported partial contributions while handling those decisions.
+Continue subsequent primary Science grades in coherent slices. Reconcile Language
+conditions and historical Grades 1–4 evidence as a separate review, then scope
+other Ontario subjects explicitly. The wider catalogue is available for that work
+but does not establish alignment completion.
 
-## Following slices
+This status report and its proposed associations do not write a database or
+change learner records. Consumer publication follows repository review separately.
+## Grade 1 Science continuation
 
-1. Review the remaining Grade 1 Life Systems requirements, accounting for the
-   existing B2.2 conditions without creating another basic-needs topic.
-2. Inspect the complete claims and hard-prerequisite readiness for potential
-   habitat/interdependence reuse. For example, `mt_cM8YS6NXqi` has relevant
-   interdependence evidence but hard prerequisite topics lack Ontario contexts.
-   Do not equate an association with selectable or complete coverage, or invent
-   prerequisite source links just to make it selectable. Resolve context evidence
-   and contribution roles before proposing that association.
-3. Continue Grade 1 Science by strand, then subsequent primary grades. Reconcile
-   Language conditions and historical Grades 1–4 evidence as a separate bounded
-   review; scope other Ontario subjects explicitly rather than assuming catalogue
-   ingestion completed them.
+The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
+now accounts for all 55 retained codes (44 specific and 11 overall), with direct
+roles, source conditions, deferred candidates and a readiness diagnostic in its
+[code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
+It proposes 71 further pairs over the one-pair accepted pilot, using 44 existing
+topics and no claim or dependency edits. Its 14 Full specific semantic judgments
+include one material-origins candidate whose local context remains deferred;
+28 specific judgments and all 11 overall judgments remain Partial, with two
+focused claim gaps for lead review. This does not finish Grade 1 Science.
+
+B2.4 has wider evidence through existing bones/heartbeat claims as well as senses;
+no anatomy topic is created or broadened. Semantic fit and prerequisite readiness
+are reported separately, so relevant habitat claims contribute even while their
+local prerequisite contexts need review.
+
+## Following work
+
+Resolve the explicit Grade 1 source/assessment and context items before declaring
+completion; keep supported partial contributions while handling those decisions.
+Continue subsequent primary Science grades in coherent slices. Reconcile Language
+conditions and historical Grades 1–4 evidence as a separate review, then scope
+other Ontario subjects explicitly. The wider catalogue is available for that work
+but does not establish alignment completion.
 
 This status report and its proposed associations do not write a database or
 change learner records. Consumer publication follows repository review separately.
