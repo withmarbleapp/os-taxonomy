@@ -175,9 +175,9 @@ or a certification of selectable coverage. Framework/global guidance, consumer
 rules and actual prerequisites need separate consideration. No prerequisite edge
 or age-only context is invented to make the diagnostic disappear.
 
-There are **12 distinct referenced prerequisites** in that diagnostic.
+There are **10 distinct referenced prerequisites** in that diagnostic.
 They include habitat/living-things vocabulary, organism naming, material grouping,
-data presentation, smart devices and the astronomy prerequisite chain. Review
+data presentation, smart devices and planet naming. Review
 those contexts and any over-strong historical dependencies without weakening
 claims or changing edges as an incidental alignment edit.
 

@@ -136,31 +136,3 @@ but does not establish alignment completion.
 
 This status report and its proposed associations do not write a database or
 change learner records. Consumer publication follows repository review separately.
-## Grade 1 Science continuation
-
-The [complete Grade 1 Science review](ontario-grade1-science-2026-11-09.md)
-now accounts for all 55 retained codes (44 specific and 11 overall), with direct
-roles, source conditions, deferred candidates and a readiness diagnostic in its
-[code-by-code mapping](ontario-grade1-science-mapping-2026-11-09.json).
-It proposes 70 further pairs over the one-pair accepted pilot, using 43 existing
-topics and no claim or dependency edits. Its 14 Full specific semantic judgments
-include one material-origins candidate whose local context remains deferred;
-28 specific judgments and all 11 overall judgments remain Partial, with two
-focused claim gaps for lead review. This does not finish Grade 1 Science.
-
-B2.4 has wider evidence through existing bones/heartbeat claims as well as senses;
-no anatomy topic is created or broadened. Semantic fit and prerequisite readiness
-are reported separately, so relevant habitat claims contribute even while their
-local prerequisite contexts need review.
-
-## Following work
-
-Resolve the explicit Grade 1 source/assessment and context items before declaring
-completion; keep supported partial contributions while handling those decisions.
-Continue subsequent primary Science grades in coherent slices. Reconcile Language
-conditions and historical Grades 1–4 evidence as a separate review, then scope
-other Ontario subjects explicitly. The wider catalogue is available for that work
-but does not establish alignment completion.
-
-This status report and its proposed associations do not write a database or
-change learner records. Consumer publication follows repository review separately.
