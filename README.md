@@ -81,6 +81,9 @@ covering all retained codes with existing-topic reuse and explicit remaining con
 Ontario Grade 6 Science has a [dependent code-by-code proposal](reports/ontario-grade6-science-2026-11-09.md)
 covering all retained codes; primary Science review has explicit dispositions through Grade 6.
 
+The [cross-grade Science residual review](reports/ontario-primary-science-residual-review-2026-11-09.md)
+groups remaining conditions across all primary grades without treating Partial judgments as new topics.
+
 ### Adding curricula
 
 For human-readable curation decisions, see the
