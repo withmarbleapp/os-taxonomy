@@ -72,6 +72,9 @@ The further dependent [Grade 3 Science review](reports/ontario-grade3-science-20
 records all 55 codes, existing-topic reuse and verified Ontario soil examples,
 with remaining conditions and its Grade 2 dependency explicit.
 
+Ontario Grade 4 Science has a [dependent code-by-code proposal](reports/ontario-grade4-science-2026-11-09.md)
+covering all retained codes with existing-topic reuse and explicit remaining conditions.
+
 ### Adding curricula
 
 For human-readable curation decisions, see the
