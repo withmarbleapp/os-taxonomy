@@ -76,7 +76,7 @@ its areas need not be turned into separate taxonomy subject trees.
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
 | Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions proposed; not yet accepted/deployed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
-| Environmental-studies syllabus | 53–62 | Balvatika and Grades 1–2 | Not ingested | Type content/syllabus and competency references separately; do not emit each content phrase as a learning outcome. |
+| Environmental-studies syllabus | 53–62 | Balvatika 1–3 and Grades 1–2 | Accounted for as typed syllabus/reference inventory; no new outcome rows | All ten pages have [source-kind dispositions](ncert-foundational-source-kinds-2026-11-09.md); content and repeated competency/goal relationships are not new outcome records. |
 | Arts syllabus and suggested activities | 63–69 | Shared Foundational outcome column; activities show Balvatika / Grades 1–2 | 56 explicit outcome positions proposed; source total 316 | Suggested activities excluded; shared stage scope retained without a required grade band. See the [appendix report](ncert-foundational-arts-syllabus-catalogue-2026-11-09.md). |
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
 
