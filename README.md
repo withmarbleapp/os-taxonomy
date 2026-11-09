@@ -65,6 +65,27 @@ separates catalogue ingestion, recorded associations and historical coverage
 reviews by subject and grade. The [Grade 1 Science review](reports/ontario-grade1-science-2026-11-09.md)
 accounts for all 55 selected codes, proposing existing-topic associations while
 retaining coverage conditions and focused decisions for follow-up.
+The [Grade 2 Science review](reports/ontario-grade2-science-2026-11-09.md)
+accounts for all 52 selected codes using existing claims, with unresolved
+source/assessment conditions made explicit.
+The [Grade 3 Science review](reports/ontario-grade3-science-2026-11-09.md)
+records all 55 codes, existing-topic reuse and verified Ontario soil examples,
+with remaining conditions explicit.
+
+Ontario Grade 4 Science has a [code-by-code review](reports/ontario-grade4-science-2026-11-09.md)
+covering all retained codes with existing-topic reuse and explicit remaining conditions.
+
+Ontario Grade 5 Science has a [code-by-code review](reports/ontario-grade5-science-2026-11-09.md)
+covering all retained codes with existing-topic reuse and explicit remaining conditions.
+
+Ontario Grade 6 Science has a [code-by-code review](reports/ontario-grade6-science-2026-11-09.md)
+covering all retained codes; primary Science review has explicit dispositions through Grade 6.
+
+These grade reports retain their historical authoring bases. The current
+integration delivers their reviewed changes together after Grade 1 reached main.
+
+The [cross-grade Science residual review](reports/ontario-primary-science-residual-review-2026-11-09.md)
+groups remaining conditions across all primary grades without treating Partial judgments as new topics.
 
 ### Adding curricula
 
