@@ -87,6 +87,16 @@ Include generated artifacts in the same PR. Private access and a second internal
 semantic approval are not contributor requirements. A PR or local commit is not
 a downstream publication receipt.
 
+Prefer the repository's default branch as the PR base. If a real dependency needs
+a stack, identify it explicitly and manage its lifecycle: after a base PR reaches
+the default branch, retarget the next PR there, reconcile accepted changes,
+regenerate artifacts and rerun applicable checks before handing it over. An
+intentional feature-integration stack needs an explicit final default-branch PR.
+Do not present feature-branch merges as completed default-branch delivery. Verify the
+intended contents on the default branch after acceptance; `MERGED` alone is not
+proof, and squash/rebase workflows can change SHAs. Use exact contents or payload
+comparison when ancestry is insufficient.
+
 Keep a concise task checkpoint: base/current head, scope completed, next slice,
 decisions, unresolved cases, validation and PR reference. Store private wording and
 operational notes outside tracked public files. Put reusable public decisions in
