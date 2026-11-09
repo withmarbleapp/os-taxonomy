@@ -75,6 +75,9 @@ with remaining conditions and its Grade 2 dependency explicit.
 Ontario Grade 4 Science has a [dependent code-by-code proposal](reports/ontario-grade4-science-2026-11-09.md)
 covering all retained codes with existing-topic reuse and explicit remaining conditions.
 
+Ontario Grade 5 Science has a [dependent code-by-code proposal](reports/ontario-grade5-science-2026-11-09.md)
+covering all retained codes with existing-topic reuse and explicit remaining conditions.
+
 ### Adding curricula
 
 For human-readable curation decisions, see the
