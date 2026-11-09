@@ -136,9 +136,12 @@ is not presented as the original NCERT framework.
 The selected formal Preparatory sections are language R1 (PDF 236–237), language
 R2 (239–240), Maths (267–268), Arts (354–357), The World Around Us (382–384)
 and Physical Education (416–417). Adjacent Middle Stage material is excluded even
-where a page is shared. Initial inventory suggests **172 formal source positions**,
-pending independent row-by-row reconciliation; no new framework records have yet
-been added in this inventory-only change.
+where a page is shared. The [core-area proposal](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md)
+and [Arts/PE extension](ncert-ncfse-preparatory-arts-pe-catalogue-2026-11-09.md)
+now independently verify **172 formal source positions**: 45 goals and 127 stage
+competencies. These are dependent Git proposals, not an applied DB revision.
+This completes the selected framework tables while keeping the wider catalogue
+completion conditions below explicit.
 
 The proposed record model keeps one Grades 3–5 band per formal record, distinguishes
 `curricularGoal` from `stageCompetency`, and retains each literal printed CG/C code.
