@@ -2,19 +2,20 @@
 
 This is a **catalogue-first source inventory and ingestion plan**, not a topic
 alignment pass or a claim that the Indian curriculum is complete. Current main
-contains **167 printed positions** at `593b685` (PR #94): 67 Mathematics, 34
-[English L2](ncert-english-l2-catalogue-2026-11-09.md) and 66
-[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md). These are accepted
-repository contents, without a claim of downstream deployment.
+contains **260 printed source positions** in `ncert-fs-2025` at `4c791a2` (PR #95),
+including the 167 positions accepted through PR #94 and its reviewed 93-position
+extension. The [English L2](ncert-english-l2-catalogue-2026-11-09.md),
+[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md),
+[CG-4–6](ncert-cg4-6-catalogue-2026-11-09.md) and
+[Arts/Learning Habits/Cognitive](ncert-cg12-13-7-catalogue-2026-11-09.md) reports
+retain their source verification and historical batch boundaries. Shared-grade
+cells count once, not once per membership. Acceptance does not imply deployment.
 
-This PR targets main and preserves those 167 positions while adding **93 reviewed
-positions**: 34 in the [CG-4–6 batch](ncert-cg4-6-catalogue-2026-11-09.md) and 59 in
-the [Arts/Learning Habits/Cognitive extension](ncert-cg12-13-7-catalogue-2026-11-09.md).
-The branch therefore contains **260 positions**. The historical 201-position
-milestone is an authoring checkpoint, not a prerequisite separate publication.
-The 93-row addition fits the 128-row catalogue publication bound, but this PR is
-not a publication receipt. Shared-grade cells count once, not once per membership.
-No topic, prerequisite, alignment or learner-state change is proposed.
+This main-targeted proposal preserves all 260 positions and adds a separate
+edition-pinned source with **91 formal Preparatory goals/competencies** across
+language R1/R2, Mathematics and The World Around Us. Formal stage records apply
+once across Grades 3–5; they do not create cloned grade outcomes. No topic,
+prerequisite, alignment or learner-state change is proposed.
 
 ## Target and completion boundary
 
@@ -30,9 +31,13 @@ gives ages 6–8, 8–11 and 11–14 respectively. Grade 6 therefore remains out
 this primary catalogue plan even though some children there are under 12.
 
 Completion requires a source/edition and grade/area disposition for every target
-cell, a verified inventory of actual outcome records, explicit exclusions and
-preserved source hierarchy. A framework's competency table or a textbook list
-alone cannot establish that all grade-level expectations have been captured.
+cell, a verified inventory of the source-defined standards and record kinds, explicit
+exclusions and preserved source hierarchy. Formal stage goals and competencies
+are valid catalogue records: where NCERT leaves grade-level outcomes to teachers,
+completion must not invent an exhaustive national grade-outcome list. Illustrative
+outcomes, activities and textbook contents remain separately classified. A stage
+competency inventory does not assert that all later grade-level publications have
+been captured.
 Counts not yet independently reconciled remain unknown rather than guessed.
 
 ## Formal standards and contextualisable outcomes
@@ -64,10 +69,10 @@ its areas need not be turned into separate taxonomy subject trees.
 | Source section | PDF pages | Grades/stage shown | Accepted catalogue status | Next ingestion work |
 | --- | --- | --- | --- | --- |
 | Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 accepted in PR #94; deployment not claimed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
-| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 proposed in dependent batch; not accepted/deployed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
-| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | 30 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Source continuations are verified; later activity syllabus remains separate. |
-| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | 18 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Literal source wording and distinct printed grade cells preserved. |
-| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | 11 positions intersecting Grades 1–2 proposed; not accepted/deployed | One joint G1–2 position and six shared B3/G1/G2 positions counted once; CG-8 boundary excluded. |
+| Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 accepted in PR #95; deployment not claimed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
+| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | 30 Grade 1–2 positions accepted in PR #95; deployment not claimed | Source continuations are verified; later activity syllabus remains separate. |
+| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | 18 Grade 1–2 positions accepted in PR #95; deployment not claimed | Literal source wording and distinct printed grade cells preserved. |
+| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | 11 positions intersecting Grades 1–2 accepted in PR #95; deployment not claimed | One joint G1–2 position and six shared B3/G1/G2 positions counted once; CG-8 boundary excluded. |
 | Maths, CG-8 | 25–34 | Balvatika and Grades 1–2 | **67 Grade 1–2 outcomes present: 34 + 33** | Preserve accepted IDs; any Balvatika expansion is a separately labelled scope. |
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
@@ -77,8 +82,9 @@ its areas need not be turned into separate taxonomy subject trees.
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
 
 These page ranges overlap where a section changes mid-page. They are not additive
-record counts. The accepted 167-position slice and proposed 93-position extension are separately
-verified; this inventory does not certify totals for the remaining sections. Language sections must be compared before deciding
+record counts. The accepted 260-position slice is separately verified; this
+inventory does not certify totals for the remaining sections. Language sections
+must be compared before deciding
 which are distinct language targets, translated descriptions, or shared framework
 references; neither blindly duplicating nor automatically collapsing them is safe.
 
@@ -100,23 +106,60 @@ selected source uses an integrated area.
 Here **Missing** means no accepted catalogue records for the target cell. It does
 not mean NCERT lacks the curriculum, that a taxonomy topic is missing, or that
 source discovery is complete. The two language roles do not imply that every
-school uses the same language pair. Exact target languages/scripts and source
-documents must be pinned before record counts can be supplied.
+school uses the same language pair. Formal framework standards use language roles,
+not an invented national language pair. One verified stage record can apply to
+Grades 3–5 together; the matrix does not require three cloned records.
 
 | Candidate source | Edition/role | Current evidence | Disposition before ingestion |
 | --- | --- | --- | --- |
 | [NCF for Foundational Stage](https://www.ncert.nic.in/pdf/NCF_for_Foundational_Stage_20_October_2022.pdf) | 2022 framework | Official source identified; 2025 outcome source already pinned separately | Retain goals/competencies as hierarchy; distinguish illustrative outcomes from the later outcome publication. |
-| [NCF for School Education](https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf) | August 2023 published framework | Official URL corroborated by the [Ministry's parliamentary response](https://rsdebate.nic.in/bitstream/123456789/750751/1/PQ_265_31072024_U985_p146_p147.pdf); bytes not captured in this pass | Obtain and hash the published edition; inventory all Preparatory areas and distinguish stage competencies from illustrative grade examples. Do not substitute a draft framework PDF. |
-| [Learning Outcomes at the Elementary Stage](https://ncert.nic.in/pdf/publication/otherpublications/tilops101.pdf) | 2017 legacy outcome publication, Grades 1–8 | Official URL identified; source bytes not captured in this pass | Catalogue only with its legacy edition explicit; reconcile against current framework/syllabi before deciding whether Grades 3–5 entries are the intended baseline. Exclude Grades 6–8 from this plan. |
+| [NCF for School Education](https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf) | Framework title 2023; printed First Edition October 2024, ISBN 978-93-5292-741-8 | Official bytes captured: 580 pages, 47,030,865 bytes; SHA-256 `0e2c5a1ddb48f758a5e9f867258da40d57f9f236b37fc7f8022261973425f099` | New document identity `ncert-ncfse-2023-ed2024`; inventory formal Preparatory goals/competencies separately from illustrative examples. The old URL filename does not identify the downloaded printed edition. |
+| [Learning Outcomes at the Elementary Stage](https://ncert.nic.in/pdf/publication/otherpublications/tilops101.pdf) | 2017 legacy outcome publication, Grades 1–8 | Official bytes captured: 128 pages, 16,481,419 bytes; printed First Edition April 2017, ISBN 978-93-5007-785-6; SHA-256 `18024190d8d8a7b0516bf6bcab14dc209f4751b91acb0b0c952e2c27b4ac3317` | Catalogue only with its legacy edition explicit; reconcile against current framework/syllabi before deciding whether Grades 3–5 entries are the intended baseline. Exclude Grades 6–8 from this plan. |
 | Current Grades 3–5 syllabi and textbook-linked outcome documents | Publication/edition must be pinned individually | The [Ministry's August 2026 response](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297094&lang=1&reg=48) confirms newer syllabi/textbooks and follow-up outcome documents; it is not itself the outcome catalogue | Locate the actual official standards-bearing documents for each area/grade, verify edition/status and capture bytes. A new textbook announcement is insufficient evidence of an exhaustive outcome list. |
 | [Grade 3 UPAAN transition guidance](https://ncert.nic.in/pdf/programmes/upaan/UPAAN_Grade_3.pdf) | Transition/implementation guidance | Official candidate URL located; bytes not captured | Use for source discovery and implementation context; do not count a bridge activity as a new mandatory expectation. |
 
-Official NCERT downloads in this pass encountered connection resets, timeouts or
-certificate-chain errors. No TLS verification was disabled and no school-hosted
-copy was promoted to authoritative input. The published framework and legacy
-outcome candidates above are **identified, not byte-verified or ingested**.
-The already-pinned 2025 foundational PDF remains available for the next batches.
-No user sign-in is required to read that source.
+Initial NCERT downloads encountered certificate-chain and connection errors. A
+complete chain validated against the trusted system roots enabled verified TLS
+retrieval of the official framework and legacy publication above; hostname and
+certificate checks remained enabled. Their source identities are now byte-pinned.
+The 2017 publication remains legacy and does not silently fill current-source gaps.
+
+The official CBSE [Preparatory HPC manual](https://cbseacademic.nic.in/web_material/Manuals/HPC_PreparatoryManual25.pdf)
+(76 pages; printed First Edition December 2024; ISBN 978-81-983130-9-6; SHA-256
+`f416ab6e9440e7c2fee3442c5f53a34fa486ee4212c564ae3308065986921d64`)
+and [report template](https://cbseacademic.nic.in/web_material/Manuals/HPC_PreparatoryReport25.pdf)
+(30 pages; SHA-256 `80b26cf1934a2f415b31bfcde563716fc916f618bcac61d5b43f75413e3362a9`)
+are captured implementation references. The manual's sample and blank outcome
+worksheets are not an exhaustive mandatory grade-level catalogue. A CBSE adaptation
+is not presented as the original NCERT framework.
+
+### Selected framework inventory in progress
+
+The selected formal Preparatory sections are language R1 (PDF 236–237), language
+R2 (239–240), Maths (267–268), Arts (354–357), The World Around Us (382–384)
+and Physical Education (416–417). Adjacent Middle Stage material is excluded even
+where a page is shared. The [core-area proposal](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md)
+now independently verifies **91 formal source records**: 21 curricular goals and
+70 stage competencies across language R1/R2, Maths and The World Around Us.
+Arts and Physical Education remain pending independent reconciliation in this
+core-only slice; the initial all-area inventory of **172 positions** is still
+provisional here. This formal core slice is a main-targeted Git proposal, not an applied DB revision.
+
+The proposed record model keeps one Grades 3–5 band per formal record, distinguishes
+`curricularGoal` from `stageCompetency`, and retains each literal printed CG/C code.
+Generated qualified identifiers include stage, area, kind, and the source's nested
+standard set and artform where codes reset. Arts and Physical Education LS1/LS2
+represent the framework's resource/applicability conditions, not taxonomy difficulty
+levels. Physical Education LS1 begins with printed CG-3: absent CG-1/2 are not invented.
+A factual public index records these distinctions and source pages without outcome
+wording; private records preserve descriptions. The strict code-only catalogue
+schema stays unchanged. The index is review evidence, not an alternate taxonomy graph.
+
+Prepare coherent batches within the downstream adapter's 128-new-record bound: first
+language R1/R2, Maths and The World Around Us; then Arts and Physical Education.
+Only verified rows enter a proposal. This selected framework inventory does not
+complete the outstanding foundational languages, mixed syllabus sections or
+edition reconciliation with later grade-specific publications.
 
 ## Record model and extraction hazards
 
