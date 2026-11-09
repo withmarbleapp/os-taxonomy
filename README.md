@@ -68,6 +68,9 @@ retaining coverage conditions and focused decisions for follow-up.
 The dependent [Grade 2 Science review](reports/ontario-grade2-science-2026-11-09.md)
 accounts for all 52 selected codes using existing claims, with its unmerged Grade 1
 dependency and unresolved source/assessment conditions made explicit.
+The further dependent [Grade 3 Science review](reports/ontario-grade3-science-2026-11-09.md)
+records all 55 codes, existing-topic reuse and verified Ontario soil examples,
+with remaining conditions and its Grade 2 dependency explicit.
 
 ### Adding curricula
 
