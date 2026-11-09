@@ -70,9 +70,13 @@ test('CLI detects stale artifacts without writing; explicit write reproduces the
   assert.equal(run([]).status, 0);
 });
 
-test('catalogue-only NCERT changes refresh source counts and hashes without changing topics or research',()=>{
+test('catalogue-only NCERT additions refresh source counts and hashes without changing topics or research',()=>{
   const files=fresh(),catalogue=load(files,'curriculum-standards.json'),source=catalogue.curricula.find(c=>c.slug==='ncert-fs-2025');
-  assert.equal(source.topicCount,67);source.topics.pop();source.topicCount--;files['curriculum-standards.json']=encode(catalogue);
+  assert.equal(source.topicCount,source.topics.length);
+  // Invented fixture identifier, independent of the growing official catalogue.
+  const code='SYNTHETIC-GENERATOR-ADDITION';
+  assert.ok(!source.topics.some(row=>row.code===code));
+  source.topics.push({key:`${source.slug}:${code}`,code});source.topicCount++;files['curriculum-standards.json']=encode(catalogue);
   const output=generateAlignmentArtifacts(files),manifest=load(output,'manifest.json');
   assert.equal(manifest.counts.curricula,catalogue.curricula.length);assert.equal(manifest.counts.curriculumStandards,catalogue.curricula.reduce((n,c)=>n+c.topics.length,0));
   assert.deepEqual(manifest.codesOnlySources,catalogue.codesOnlySources);assert.deepEqual(manifest.files['curriculum-standards.json'],{bytes:files['curriculum-standards.json'].length,sha256:createHash('sha256').update(files['curriculum-standards.json']).digest('hex')});

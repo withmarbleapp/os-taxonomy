@@ -6,6 +6,12 @@ baseline is commit `45e2bc0` (PR #91). The repository contains 67 identifiers fr
 one selected part of the NCERT foundational outcomes document. No topic,
 prerequisite, alignment or learner-state change is proposed here.
 
+The subsequent [English L2 catalogue proposal](ncert-english-l2-catalogue-2026-11-09.md)
+adds 34 verified source-position identifiers to the same document, bringing this
+branch to 101. This is a proposed catalogue extension, not accepted/deployed
+completion of the remaining areas. The baseline/status column below distinguishes
+the original accepted 67 from these proposed additions.
+
 ## Target and completion boundary
 
 Build an edition-aware **NCERT national baseline for Grades 1–5**, covering every
@@ -50,7 +56,7 @@ its areas need not be turned into separate taxonomy subject trees.
 | Maths, CG-8 | 25–34 | Balvatika and Grades 1–2 | **67 Grade 1–2 outcomes present: 34 + 33** | Preserve accepted IDs; any Balvatika expansion is a separately labelled scope. |
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
-| Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | Not ingested | Preserve N/A as a disposition, attach examples correctly, and review a repeated source bullet. |
+| Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions proposed; not yet accepted/deployed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
 | Environmental-studies syllabus | 53–62 | Balvatika and Grades 1–2 | Not ingested | Type content/syllabus and competency references separately; do not emit each content phrase as a learning outcome. |
 | Arts syllabus and suggested activities | 63–69 | Balvatika and Grades 1–2 | Not ingested | Distinguish activity suggestions from outcome statements and references to earlier competencies. |
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
