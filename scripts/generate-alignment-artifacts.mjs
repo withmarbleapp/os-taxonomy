@@ -25,6 +25,10 @@ export function generateAlignmentArtifacts(files) {
   const research = { ...load('teaching-research.json'), topicFileSha256: sha256(output['topics.json']) };
   const manifest = load('manifest.json');
   assert.equal(manifest.taxonomyVersion, topics.version, 'manifest taxonomy version mismatch');
+  manifest.counts.curricula = curriculumStandards.curricula.length;
+  manifest.counts.curriculumStandards = curriculumStandards.curricula.reduce((n,source)=>n+source.topics.length,0);
+  manifest.codesOnlySources = [...(curriculumStandards.codesOnlySources ?? [])];
+  manifest.files['curriculum-standards.json'] = {bytes:files['curriculum-standards.json'].length,sha256:sha256(files['curriculum-standards.json'])};
   manifest.counts.curriculumAlignments = alignments.alignments.length;
   manifest.counts.topicStandardLinks = nextTopics.topics.reduce((n, topic) => n + topic.standards.length, 0);
   // Only the binding changes: authored research, coverage and original timestamps
