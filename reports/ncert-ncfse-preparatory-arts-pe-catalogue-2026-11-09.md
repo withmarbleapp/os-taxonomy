@@ -2,7 +2,7 @@
 
 This dependent catalogue proposal adds **81 formal source records** to
 `ncert-ncfse-2023-ed2024`, bringing the selected Preparatory framework inventory
-from 91 to **172**. Its exact unmerged dependency is `0ef8422`, the
+from 91 to **172**. Its exact unmerged dependency is `de20bde`, the
 [core-area batch](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md). The source
 identity, printed October 2024 edition, ISBN and pinned PDF bytes are unchanged.
 No topics, alignments, prerequisites, learner state or DB records are changed.
