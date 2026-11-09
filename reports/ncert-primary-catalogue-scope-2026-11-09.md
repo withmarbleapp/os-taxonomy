@@ -21,6 +21,12 @@ to reach 201 in this branch. Downstream publication applies the accepted
 does not require that private deployment first. These counts do not describe an
 already-applied database revision.
 
+The [Arts/Learning Habits/Cognitive extension](ncert-cg12-13-7-catalogue-2026-11-09.md)
+adds another 59 verified positions after that milestone. The current dependent
+branch therefore has **260 positions**, or **93 additions above the 167-position
+dependency**, within a 128-row publication batch. The source-position count still
+does not certify distinct skills, full source coverage, or a published revision.
+
 ## Target and completion boundary
 
 Build an edition-aware **NCERT national baseline for Grades 1–5**, covering every
@@ -59,9 +65,9 @@ its areas need not be turned into separate taxonomy subject trees.
 | --- | --- | --- | --- | --- |
 | Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 proposed; not yet accepted/deployed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
 | Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | 34 source positions intersecting Grades 1–2 proposed in dependent batch; not accepted/deployed | Verified shared-band and unbulleted-cell dispositions are recorded in the CG-4–6 report; other Balvatika cells excluded. |
-| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | Not ingested | Preserve source outcomes; cross-reference the later activity syllabus without counting it twice. |
-| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | Not ingested | Preserve shared cells and continuations across pages. |
-| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | Not ingested | Separate the last continued CG-7 cell from the CG-8 table beginning on page 25. |
+| Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | 30 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Source continuations are verified; later activity syllabus remains separate. |
+| Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | 18 Grade 1–2 positions proposed in dependent extension; not accepted/deployed | Literal source wording and distinct printed grade cells preserved. |
+| Observation/reasoning, CG-7 | 24–25 | Balvatika and Grades 1–2 | 11 positions intersecting Grades 1–2 proposed; not accepted/deployed | One joint G1–2 position and six shared B3/G1/G2 positions counted once; CG-8 boundary excluded. |
 | Maths, CG-8 | 25–34 | Balvatika and Grades 1–2 | **67 Grade 1–2 outcomes present: 34 + 33** | Preserve accepted IDs; any Balvatika expansion is a separately labelled scope. |
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |

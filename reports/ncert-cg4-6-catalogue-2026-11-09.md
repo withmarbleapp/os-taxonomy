@@ -8,6 +8,11 @@ accepted dependency first; the 34-row artifact is not applicable to the original
 67-position Maths baseline. Ordinary repository review/acceptance does not wait
 for a private deployment. No push, PR or downstream write is performed here.
 
+The subsequent [Arts/Learning Habits/Cognitive extension](ncert-cg12-13-7-catalogue-2026-11-09.md)
+adds 59 positions after this 201-position milestone. The combined dependent branch
+contains 260, with a 93-row artifact against the same 167-position dependency.
+The 34-row artifact described below remains the intermediate CG-4–6 batch.
+
 The selected official [2025 foundational PDF](https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf)
 remains pinned to SHA-256
 `484d5c18d9beeb1d79c4bee8589f6cb2b2ef42bdeb255b8f51e1eae8ac953eb2`.
