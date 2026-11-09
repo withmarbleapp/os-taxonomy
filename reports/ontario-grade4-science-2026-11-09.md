@@ -74,6 +74,10 @@ judgments, without restricted expectation wording or source PDFs.
 - **Fossils:** formation and interpretation of fossil evidence are different
   contributions. A related strata/landscape inference record is not treated as
   equivalent merely because its title also mentions fossil formation.
+  Separately, the existing formation claims `mt_mwirOvigWD` and
+  `mt_iycQEai3dK` have possible overlap requiring a later identity review.
+  They are unchanged; no equivalence, retirement or learner-state transfer is
+  inferred by this alignment pass.
 - **Community knowledge:** general mineral properties and use examples are
   available, but do not establish geological knowledge held by First Nations, Métis and Inuit
   communities. Checked community sources and knowledge/purpose connections remain
