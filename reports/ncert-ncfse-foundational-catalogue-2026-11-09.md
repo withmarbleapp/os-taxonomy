@@ -4,8 +4,11 @@ This dependent catalogue proposal adds **82 formal source records** (13 curricul
 goals and 69 stage competencies) from the pinned National Curriculum Framework for
 School Education 2023, printed October 2024 edition. It extends the same document
 identity, `ncert-ncfse-2023-ed2024`, from 172 to **254** records. Exact unmerged
-base: `42f722c`. No source clone, topic, alignment, prerequisite, learner-state or
-DB change is included.
+data-preparation base: `42f722c`; reviewed documentation dependency: `8b75fb3`,
+whose tracked data are byte-identical to that preparation base. This branch merges
+that dependency to carry the reviewed 2025 source-status guidance. The original
+82-row private artifact and its recorded preparation base remain unchanged. No
+source clone, topic, alignment, prerequisite, learner-state or DB change is included.
 
 ## Source and complete selected tables
 
