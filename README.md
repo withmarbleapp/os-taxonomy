@@ -62,6 +62,16 @@ See [PROVENANCE.md](PROVENANCE.md) for sources and attribution.
 
 ### Adding curricula
 
+For human-readable curation decisions, see the
+[curation principles](docs/curation/principles.md),
+[ingestion and alignment guidelines](docs/curation/alignment-guidelines.md) and
+[reviewed examples](docs/curation/reviewed-examples.md). Agents can use the
+[taxonomy-curation skill](.agents/skills/taxonomy-curation/SKILL.md), for example:
+`Use $taxonomy-curation to audit the remaining primary-school Ontario alignments.`
+The skill is optional; contributors submit the actual change in an ordinary PR
+and need no private account. Hosted builders must explicitly load these versioned
+instructions; adding the skill here does not change their runtime configuration.
+
 The [public alignment contract](docs/curriculum-alignment-contract.md) now has a
 [reviewed baseline](reports/scoped-alignment-baseline-2026-11-04.md) of 3,733 contexts.
 Edit `data/curriculum-alignments.json` for associations and their ages; keep topic
