@@ -3,7 +3,8 @@
 This dependent proposal reviews all **52 retained Grade 2 codes: 41 specific and
 11 overall expectations**, using existing topics. It builds on the unmerged
 [Grade 1 proposal, PR #93](https://github.com/withmarbleapp/os-taxonomy/pull/93),
-including its lead-reviewed whole-claim age deferral and documentation fixes.
+including its lead-reviewed whole-claim age deferral, conservative component reuse
+and documentation fixes.
 The exact dependency commit is recorded in the
 [code-by-code mapping](ontario-grade2-science-mapping-2026-11-09.json).
 That proposal is not represented here as accepted main or a deployment receipt.

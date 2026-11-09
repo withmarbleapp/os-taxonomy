@@ -50,9 +50,8 @@
   "interpretation": "Semantic dispositions are authoring judgments, not learner mastery or proof of delivery. Candidate-only semantic support is distinguished from proposed contexts. Hard-prerequisite interval diagnostics are not a consumer eligibility certification. Overall codes receive child-review references, not automatic direct associations.",
   "counts": {
     "specific": {
-      "Partial": 28,
-      "Full": 14,
-      "Gap": 2
+      "Partial": 30,
+      "Full": 14
     },
     "overall": {
       "Partial": 11
@@ -809,11 +808,26 @@
       "code": "ON-SCI-2022-G1-C2.1",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
       "kind": "specific",
-      "semanticDisposition": "Gap",
-      "contributions": [],
-      "rationale": "A search found energy vocabulary, later stores/transfer claims and concrete pushes, warming and food examples, but no early conceptual claim explicitly assessing the common energy idea.",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "topicName": "Basic Body Needs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_iGSfQg3g5c",
+          "topicName": "Sunlight warms things up",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Existing body-needs evidence connects food energy with moving, thinking and growth; sunlight evidence connects energy with warming. These are direct concrete components, while the general energy idea across different contexts remains unverified.",
       "remainingConditions": [
-        "Resolve the conceptual foundation without requiring the entire later technical vocabulary or energy-store account."
+        "Assess the common energy idea across examples; success on one food or warming example does not establish that generalisation. Do not require the whole later technical energy vocabulary or create a Grade 1 clone."
       ],
       "deferredCandidates": [
         {
@@ -823,7 +837,7 @@
         }
       ],
       "prerequisiteContributions": [],
-      "leadDecision": "Review a focused conceptual foundation or a justified existing-claim correction; do not create a Grade 1 clone of the later vocabulary topic."
+      "leadDecision": "Use the existing direct components and review cross-context assessment before deciding whether an independently tracked conceptual claim is needed."
     },
     {
       "code": "ON-SCI-2022-G1-C2.2",
@@ -1100,18 +1114,26 @@
       "code": "ON-SCI-2022-G1-D2.2",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D2.2",
       "kind": "specific",
-      "semanticDisposition": "Gap",
-      "contributions": [],
-      "rationale": "Sketching and shade-building claims involve structures, but neither explicitly assesses recognition of a load path or supporting frame. Building a tower alone is not evidence of that concept.",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_SdIWVjzopp",
+          "topicName": "Bones & Muscles",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Bones & Muscles explicitly assesses that bones give the body support, providing a natural supporting-framework component. Sketching and making claims offer supporting practice; they do not establish the general recognition of supporting frameworks across other objects.",
       "remainingConditions": [
-        "Resolve the structural concept without inferring it from a generic design artifact."
+        "Review recognition of supporting frameworks across natural and built examples. Formal load-path analysis and calculations are not required by this elementary expectation."
       ],
       "deferredCandidates": [],
       "prerequisiteContributions": [
         "mt_hi8cVycbwn",
         "mt_Q2Zj3L8u9C"
       ],
-      "leadDecision": "A focused support/load concept may be justified after lead review; inspect overlap before adding it."
+      "leadDecision": "Reuse the existing support component; review cross-context assessment and overlap before considering any distinct generalisation claim."
     },
     {
       "code": "ON-SCI-2022-G1-D2.3",
