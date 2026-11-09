@@ -7,6 +7,11 @@ public catalogue. No topic, assessment claim, alignment, prerequisite or teachin
 research record changes. This is catalogue preparation, not a staging publication
 receipt or an alignment/coverage claim.
 
+The subsequent [Physical/Motor batch](ncert-physical-motor-catalogue-2026-11-09.md)
+adds another 66 positions, so the combined proposal contains 167. The 101-position
+artifact below is the English-only milestone; the combined 100-row addition
+artifact described in the Physical/Motor report binds the final public source.
+
 The [primary catalogue inventory](ncert-primary-catalogue-scope-2026-11-09.md)
 records the complete target and remaining areas. This batch excludes Balvatika,
 the other foundational areas and all Preparatory Grades 3–5. It does not claim

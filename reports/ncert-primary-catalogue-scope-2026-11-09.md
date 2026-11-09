@@ -6,11 +6,13 @@ baseline is commit `45e2bc0` (PR #91). The repository contains 67 identifiers fr
 one selected part of the NCERT foundational outcomes document. No topic,
 prerequisite, alignment or learner-state change is proposed here.
 
-The subsequent [English L2 catalogue proposal](ncert-english-l2-catalogue-2026-11-09.md)
-adds 34 verified source-position identifiers to the same document, bringing this
-branch to 101. This is a proposed catalogue extension, not accepted/deployed
-completion of the remaining areas. The baseline/status column below distinguishes
-the original accepted 67 from these proposed additions.
+The subsequent [English L2](ncert-english-l2-catalogue-2026-11-09.md) and
+[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md) proposals add 34 and
+66 verified source positions to the same document, bringing this branch to 167.
+These are proposed catalogue extensions, not accepted/deployed completion of
+the remaining areas. The baseline/status column below distinguishes the original
+accepted 67 from these 100 proposed additions. Shared-grade records are counted
+once, not once for every grade membership.
 
 ## Target and completion boundary
 
@@ -48,7 +50,7 @@ its areas need not be turned into separate taxonomy subject trees.
 
 | Source section | PDF pages | Grades/stage shown | Accepted catalogue status | Next ingestion work |
 | --- | --- | --- | --- | --- |
-| Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | Not ingested | Capture outcomes with the printed competency labels and shared grade bands intact. |
+| Physical/motor, CG-1–3 | 6–12 | Balvatika and Grades 1–2; some combined grade cells | 66 source positions intersecting Grades 1–2 proposed; not yet accepted/deployed | Verified shared-band IDs and literal parent labels are recorded in the Physical/Motor report; other Balvatika cells remain excluded. |
 | Socio-emotional/ethical, work/service and environmental regard, CG-4–6 | 13–16 | Balvatika and Grades 1–2 | Not ingested | Verify outcome boundaries and distinguish context from an additional outcome. |
 | Arts/cultural, CG-12 | 17–21 | Balvatika and Grades 1–2 | Not ingested | Preserve source outcomes; cross-reference the later activity syllabus without counting it twice. |
 | Learning habits, CG-13 | 21–23 | Balvatika and Grades 1–2 | Not ingested | Preserve shared cells and continuations across pages. |
