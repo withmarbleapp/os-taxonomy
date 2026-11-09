@@ -2,8 +2,9 @@
 
 This dependent catalogue proposal adds **91 formal source records** from the
 National Curriculum Framework for School Education 2023, **printed First Edition
-October 2024**, ISBN 978-93-5292-741-8. The exact base is `f09dae0`, following the
-unmerged foundational proposals at `09a949a` and `3884519`. No topic, alignment,
+October 2024**, ISBN 978-93-5292-741-8. Its current unmerged dependency is `238ed2b`, the 260-position foundational
+catalogue proposal with the source-status clarification inherited from `3d9d6b4`.
+The original source-discovery milestone remains `f09dae0`. No topic, alignment,
 prerequisite or learner-state change is included; repository acceptance is separate
 from downstream publication.
 

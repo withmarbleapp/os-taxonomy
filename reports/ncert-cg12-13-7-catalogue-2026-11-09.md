@@ -6,7 +6,7 @@ at `f54955e` (201 positions), bringing this dependent branch to **260**. No topi
 alignment, assessment claim, prerequisite or research change is made.
 
 Together, the CG-4–6 and current extensions add **93 rows above the unmerged
-167-position dependency `09a949a`**, fitting the existing 128-row publication limit.
+167-position dependency `3d9d6b4`**, fitting the existing 128-row publication limit.
 Downstream publication must first apply the accepted dependency; ordinary repository
 review/acceptance does not wait for private deployment. These are local catalogue
 proposals, not live database or whole-curriculum completion claims. The
