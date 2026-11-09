@@ -33,6 +33,17 @@ preserved source hierarchy. A framework's competency table or a textbook list
 alone cannot establish that all grade-level expectations have been captured.
 Counts not yet independently reconciled remain unknown rather than guessed.
 
+## Formal standards and contextualisable outcomes
+
+The 2025 foundational publication's introduction (PDF page 5, printed page 3)
+distinguishes stage competencies from contextualisable, suggestive outcomes.
+The catalogue retains the published outcome positions faithfully; it does not
+turn them into an exhaustive mandatory national grade checklist. A complete
+selected formal primary baseline must separately account for the actual
+Foundational and Preparatory stage goals/competencies, including their stated
+conditions. Grade-specific examples are classified without inventing additional
+requirements or treating every example as a new assessable skill.
+
 ## Verified source already in hand
 
 The official [2025 foundational outcomes document](https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf)
