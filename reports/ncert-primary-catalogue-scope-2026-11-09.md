@@ -1,21 +1,20 @@
 # NCERT primary catalogue scope — 9 November 2026
 
 This is a **catalogue-first source inventory and ingestion plan**, not a topic
-alignment pass or a claim that the Indian curriculum is complete. Current main
-contains **260 printed source positions** in `ncert-fs-2025` at `4c791a2` (PR #95),
-including the 167 positions accepted through PR #94 and its reviewed 93-position
-extension. The [English L2](ncert-english-l2-catalogue-2026-11-09.md),
-[Physical/Motor](ncert-physical-motor-catalogue-2026-11-09.md),
-[CG-4–6](ncert-cg4-6-catalogue-2026-11-09.md) and
-[Arts/Learning Habits/Cognitive](ncert-cg12-13-7-catalogue-2026-11-09.md) reports
-retain their source verification and historical batch boundaries. Shared-grade
-cells count once, not once per membership. Acceptance does not imply deployment.
+alignment pass or a claim that the Indian curriculum is complete. Accepted main
+`6e29182` (PR #97) contains **351 NCERT source records**: 260 positions in
+`ncert-fs-2025` accepted through PRs #94–95, and 91 formal Preparatory core records
+in `ncert-ncfse-2023-ed2024` accepted through PR #97.
 
-This main-targeted proposal preserves all 260 positions and adds a separate
-edition-pinned source with **91 formal Preparatory goals/competencies** across
-language R1/R2, Mathematics and The World Around Us. Formal stage records apply
-once across Grades 3–5; they do not create cloned grade outcomes. No topic,
-prerequisite, alignment or learner-state change is proposed.
+This main-targeted proposal preserves those records and carries **219 reviewed
+additions**: 81 Preparatory Arts/PE records, 56 foundational Arts appendix outcome
+positions, and 82 formal Foundational goals/competencies. The latter two slices
+were reviewed in PRs #100 and #101 and merged into this feature branch; they have
+not yet reached main. The proposed totals are **316 suggestive source positions**
+and **254 formal framework records**, or 570 across the two editions. Formal and
+suggestive records remain distinct; these counts are not distinct taxonomy skills.
+No topic, prerequisite, alignment or learner-state change is proposed. Repository
+acceptance does not imply downstream publication.
 
 ## Target and completion boundary
 
@@ -77,35 +76,34 @@ its areas need not be turned into separate taxonomy subject trees.
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
 | Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions accepted in PR #94; deployment not claimed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
-| Environmental-studies syllabus | 53–62 | Balvatika and Grades 1–2 | Not ingested | Type content/syllabus and competency references separately; do not emit each content phrase as a learning outcome. |
-| Arts syllabus and suggested activities | 63–69 | Balvatika and Grades 1–2 | Not ingested | Distinguish activity suggestions from outcome statements and references to earlier competencies. |
+| Environmental-studies syllabus | 53–62 | Balvatika 1–3 and Grades 1–2 | Accounted for as typed syllabus/reference inventory; no new outcome rows | All ten pages have [source-kind dispositions](ncert-foundational-source-kinds-2026-11-09.md); content and repeated competency/goal relationships are not new outcome records. |
+| Arts syllabus and suggested activities | 63–69 | Shared Foundational outcome column; activities show Balvatika / Grades 1–2 | 56 explicit outcome positions proposed; source total 316 | Suggested activities excluded; shared stage scope retained without a required grade band. See the [appendix report](ncert-foundational-arts-syllabus-catalogue-2026-11-09.md). |
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
 
 These page ranges overlap where a section changes mid-page. They are not additive
-record counts. The accepted 260-position slice is separately verified; this
-inventory does not certify totals for the remaining sections. Language sections
-must be compared before deciding
+record counts. The accepted 260-position slice and proposed 56-position appendix
+are separately verified; this inventory does not certify remaining section totals.
+Language sections must be compared before deciding
 which are distinct language targets, translated descriptions, or shared framework
 references; neither blindly duplicating nor automatically collapsing them is safe.
 
 ## Preparatory Stage and edition reconciliation
 
-Grades 3–5 remain entirely missing from the accepted NCERT catalogue, across
-languages, Maths, the integrated natural/social environment area, arts and
-physical education/well-being. These areas follow NCERT's description of the
+Accepted formal Preparatory core records cover language R1/R2, Maths and the
+integrated natural/social environment area. Arts and physical education/well-being
+are proposed additions in this PR. These areas follow NCERT's description of the
 Preparatory Stage; see the [current PARAKH explanation](https://parakh.ncert.gov.in/blog/curiosity-competency-parakh-preparatory-stage).
 Do not silently substitute separate science and history curricula where the
 selected source uses an integrated area.
 
 | Target grade | Language R1 | Language R2 | Maths | Integrated environment area | Arts | Physical education/well-being |
 | --- | --- | --- | --- | --- | --- | --- |
-| 3 | Missing | Missing | Missing | Missing | Missing | Missing |
-| 4 | Missing | Missing | Missing | Missing | Missing | Missing |
-| 5 | Missing | Missing | Missing | Missing | Missing | Missing |
+| 3 | Accepted stage records | Accepted stage records | Accepted stage records | Accepted stage records | Proposed stage records | Proposed stage records |
+| 4 | Accepted stage records | Accepted stage records | Accepted stage records | Accepted stage records | Proposed stage records | Proposed stage records |
+| 5 | Accepted stage records | Accepted stage records | Accepted stage records | Accepted stage records | Proposed stage records | Proposed stage records |
 
-Here **Missing** means no accepted catalogue records for the target cell. It does
-not mean NCERT lacks the curriculum, that a taxonomy topic is missing, or that
-source discovery is complete. The two language roles do not imply that every
+The matrix distinguishes accepted and proposed formal stage records. It does
+not certify per-grade outcomes or imply that a taxonomy topic is missing. The two language roles do not imply that every
 school uses the same language pair. Formal framework standards use language roles,
 not an invented national language pair. One verified stage record can apply to
 Grades 3–5 together; the matrix does not require three cloned records.
@@ -133,17 +131,36 @@ are captured implementation references. The manual's sample and blank outcome
 worksheets are not an exhaustive mandatory grade-level catalogue. A CBSE adaptation
 is not presented as the original NCERT framework.
 
+### Formal Foundational source status
+
+The pinned 2024 edition also publishes actual formal Foundational goals and
+competencies in section 1.4, Tables 1.1i–vi, PDF 212–216. The [82-row proposal](ncert-ncfse-foundational-catalogue-2026-11-09.md)
+adds 13 goals and 69 competencies to the same document identity, preserving full
+ages 3–8 / Balvatika plus Grades 1–2 scope once and the conditional L2 footnote.
+No sequential Physical/Motor label aliases are inferred. The full selected formal
+framework baseline is now 254 records across Foundational and Preparatory, in
+this proposal: 91 accepted core records plus 163 proposed additions. This is not
+a deployed DB state.
+
+The 2025 outcomes publication explicitly presents outcomes as suggestive and
+contextualisable (PDF 5 / printed 3). Its printed positions remain useful catalogue
+records without implying an exhaustive mandatory grade-level national checklist.
+Source-defined formal standards, suggestive outcomes, syllabus content, activities
+and reference relationships are accounted for distinctly. Remaining language and
+mixed-syllabus work is not erased by formal-framework completion.
+
 ### Selected framework inventory in progress
 
 The selected formal Preparatory sections are language R1 (PDF 236–237), language
 R2 (239–240), Maths (267–268), Arts (354–357), The World Around Us (382–384)
 and Physical Education (416–417). Adjacent Middle Stage material is excluded even
 where a page is shared. The [core-area proposal](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md)
-now independently verifies **91 formal source records**: 21 curricular goals and
-70 stage competencies across language R1/R2, Maths and The World Around Us.
-Arts and Physical Education remain pending independent reconciliation in this
-core-only slice; the initial all-area inventory of **172 positions** is still
-provisional here. This formal core slice is a main-targeted Git proposal, not an applied DB revision.
+and [Arts/PE extension](ncert-ncfse-preparatory-arts-pe-catalogue-2026-11-09.md)
+now independently verify **172 formal source positions**: 45 goals and 127 stage
+competencies: 91 accepted core records and 81 proposed Arts/PE additions.
+Repository acceptance and an applied DB revision remain separate.
+This completes the selected framework tables while keeping the wider catalogue
+completion conditions below explicit.
 
 The proposed record model keeps one Grades 3–5 band per formal record, distinguishes
 `curricularGoal` from `stageCompetency`, and retains each literal printed CG/C code.
@@ -155,9 +172,11 @@ A factual public index records these distinctions and source pages without outco
 wording; private records preserve descriptions. The strict code-only catalogue
 schema stays unchanged. The index is review evidence, not an alternate taxonomy graph.
 
-Prepare coherent batches within the downstream adapter's 128-new-record bound: first
-language R1/R2, Maths and The World Around Us; then Arts and Physical Education.
-Only verified rows enter a proposal. This selected framework inventory does not
+Only verified rows enter a proposal. Public acceptance is independent of private
+publisher limits. This combined 219-record change spans two sources and exceeds
+the current single-source, 128-record catalogue adapter; it remains unpublished
+until supported accepted intermediates or separately reviewed adapter maintenance
+are available. This selected framework inventory does not
 complete the outstanding foundational languages, mixed syllabus sections or
 edition reconciliation with later grade-specific publications.
 
