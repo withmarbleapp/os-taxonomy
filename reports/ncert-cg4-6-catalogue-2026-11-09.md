@@ -1,6 +1,6 @@
 # NCERT CG-4–6 catalogue — 9 November 2026
 
-**Dependency:** this local proposal starts at **unmerged `09a949a`**, the
+**Dependency:** this local proposal starts at **unmerged `3d9d6b4`**, the
 167-position English/Physical catalogue proposal. Its first 100 new rows stay
 unchanged on their original branch. This separate batch adds **34 positions**,
 bringing the dependent source to 201. Downstream publication must apply the
