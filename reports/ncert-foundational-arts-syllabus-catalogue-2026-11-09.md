@@ -1,11 +1,12 @@
 # NCERT foundational Arts syllabus outcome column
 
-This dependent catalogue proposal adds **56 explicitly labelled source outcome
+This catalogue slice adds **56 explicitly labelled source outcome
 positions** from the Arts syllabus appendix (PDF 63–69, printed 61–67) of the
 [pinned 2025 foundational document](https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf).
-It extends `ncert-fs-2025` from 260 to **316** positions against exact unmerged
-data base `19edaae`, now reconciled with documentation dependency `3d4cee0`.
-Those parent snapshots have identical data bytes. The source document identity and SHA-256 remain unchanged:
+It extends the accepted `ncert-fs-2025` source on main `6e29182` from 260 to
+**316** positions, as part of the combined proposal in PR #98. Historical
+preparation base `19edaae` and documentation checkpoint `3d4cee0` have identical
+data bytes; they are not current unmerged dependencies. The source document identity and SHA-256 remain unchanged:
 `484d5c18d9beeb1d79c4bee8589f6cb2b2ef42bdeb255b8f51e1eae8ac953eb2`.
 No topic, alignment, learner or downstream DB change is included.
 

@@ -1,9 +1,11 @@
 # NCERT NCF-SE Preparatory Arts and Physical Education
 
-This dependent catalogue proposal adds **81 formal source records** to
+This catalogue slice adds **81 formal source records** to
 `ncert-ncfse-2023-ed2024`, bringing the selected Preparatory framework inventory
-from 91 to **172**. Its exact unmerged dependency is `de20bde`, the
-[core-area batch](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md). The source
+from 91 to **172**. The 91-record
+[core-area batch](ncert-ncfse-preparatory-core-catalogue-2026-11-09.md) is accepted
+on main `6e29182` through PR #97; `de20bde` is its historical preparation dependency.
+This slice is part of the combined 219-record proposal in PR #98. The source
 identity, printed October 2024 edition, ISBN and pinned PDF bytes are unchanged.
 No topics, alignments, prerequisites, learner state or DB records are changed.
 

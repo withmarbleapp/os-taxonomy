@@ -1,8 +1,8 @@
 # NCERT foundational source-kind reconciliation
 
-This is an evidence/metadata audit prepared against `7fa1961`, now reconciled
-with reviewed dependent head `6d74865` (including source-status dependency
-`8b75fb3`). All tracked data remain byte-identical to the preparation base.
+This evidence/metadata audit was prepared against `7fa1961` and reviewed at
+`6d74865` (including source-status checkpoint `8b75fb3`). These are historical
+audit checkpoints; the catalogue records are preserved in the main-targeted PR #98.
 It adds no standards, topics, alignments, source wording or DB changes. Its purpose
 is to account for the selected publication's areas without converting every table
 cell into another outcome.
