@@ -87,8 +87,8 @@ its areas need not be turned into separate taxonomy subject trees.
 | Language/literacy section in Hindi | 35–43 | Balvatika and Grades 1–2; includes R1/R2 roles | Not ingested | Verify target language and role per cell; the language of the document is not itself the target language. |
 | Urdu outcomes section | 44–48 | Grades 1–2 | Not ingested | Verify right-to-left column order, script and relation to other language sections. |
 | Explicit English L2 section, CG-9/11 | 49–52 | Balvatika and Grades 1–2, including N/A entries | 34 Grade 1–2 positions proposed; not yet accepted/deployed | Verified N/A/example/repetition dispositions are recorded in the English report; Balvatika remains excluded. |
-| Environmental-studies syllabus | 53–62 | Balvatika and Grades 1–2 | Not ingested | Type content/syllabus and competency references separately; do not emit each content phrase as a learning outcome. |
-| Arts syllabus and suggested activities | 63–69 | Balvatika and Grades 1–2 | Not ingested | Distinguish activity suggestions from outcome statements and references to earlier competencies. |
+| Environmental-studies syllabus | 53–62 | Balvatika 1–3 and Grades 1–2 | Accounted for as typed syllabus/reference inventory; no new outcome rows | All ten pages have [source-kind dispositions](ncert-foundational-source-kinds-2026-11-09.md); content and repeated competency/goal relationships are not new outcome records. |
+| Arts syllabus and suggested activities | 63–69 | Shared Foundational outcome column; activities show Balvatika / Grades 1–2 | 56 explicit outcome positions proposed; source total 316 | Suggested activities excluded; shared stage scope retained without a required grade band. See the [appendix report](ncert-foundational-arts-syllabus-catalogue-2026-11-09.md). |
 | Teaching-material references | 70 | Foundational | Reference material | Source links, not an extra standards catalogue. |
 
 These page ranges overlap where a section changes mid-page. They are not additive
@@ -141,6 +141,23 @@ and [report template](https://cbseacademic.nic.in/web_material/Manuals/HPC_Prepa
 are captured implementation references. The manual's sample and blank outcome
 worksheets are not an exhaustive mandatory grade-level catalogue. A CBSE adaptation
 is not presented as the original NCERT framework.
+
+### Formal Foundational source status
+
+The pinned 2024 edition also publishes actual formal Foundational goals and
+competencies in section 1.4, Tables 1.1i–vi, PDF 212–216. The [82-row proposal](ncert-ncfse-foundational-catalogue-2026-11-09.md)
+adds 13 goals and 69 competencies to the same document identity, preserving full
+ages 3–8 / Balvatika plus Grades 1–2 scope once and the conditional L2 footnote.
+No sequential Physical/Motor label aliases are inferred. The full selected formal
+framework baseline is now 254 records across Foundational and Preparatory, in
+dependent unmerged proposals; this is not a deployed DB state.
+
+The 2025 outcomes publication explicitly presents outcomes as suggestive and
+contextualisable (PDF 5 / printed 3). Its printed positions remain useful catalogue
+records without implying an exhaustive mandatory grade-level national checklist.
+Source-defined formal standards, suggestive outcomes, syllabus content, activities
+and reference relationships are accounted for distinctly. Remaining language and
+mixed-syllabus work is not erased by formal-framework completion.
 
 ### Selected framework inventory in progress
 
