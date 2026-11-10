@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e",
-  "recordCount": 1046,
+  "topicFileSha256": "ec766033ef3b34ed5026c5330d1f25572701fe53f73df518e7715ef8e2ee3440",
+  "recordCount": 1049,
   "coverage": {
-    "topicCount": 1858,
-    "withResearch": 1046,
+    "topicCount": 1861,
+    "withResearch": 1049,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -53,6 +53,11 @@
         "topics": 576,
         "withResearch": 547,
         "withoutResearch": 29
+      },
+      "Français": {
+        "topics": 3,
+        "withResearch": 3,
+        "withoutResearch": 0
       }
     },
     "missingTopicIds": [
@@ -215092,6 +215097,281 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-22T15:31:39.949Z",
         "updatedAt": "2026-10-19T15:21:50.826Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_Winq7Tu99m",
+      "pedagogy": {
+        "summary": "Teacher-selected familiar French corpus with nouns, actions and feeling words, pictures/scenes, varied short French messages and a qualified fluent French model. The corpus and intended meanings are explicit; no claim of all-French vocabulary mastery.",
+        "bestPractices": [
+          "Check meaning by selecting/acting out the intended referent in varied spoken French sentences; an English explanation or pointing can isolate comprehension from production.",
+          "After a few days without an immediate spoken model, ask for independent appropriate French words in another familiar scene or exchange.",
+          "Check recombination and retained meaning, not only an immediate correct echo."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-lexical-meaning-retention",
+            "learnerActions": [
+              "Check meaning by selecting/acting out the intended referent in varied spoken French sentences; an English explanation or pointing can isolate comprehension from production.",
+              "After a few days without an immediate spoken model, ask for independent appropriate French words in another familiar scene or exchange.",
+              "Check recombination and retained meaning, not only an immediate correct echo."
+            ],
+            "intendedInsight": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "The official Ontario CoreFrench source requires actual familiar French comprehension/production; taught lexical meaning and retained use are components, not a whole-standard certificate."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "use_in_context",
+        "poeTask": null,
+        "diagnosticPrompt": "After {{name}} learns a small set of French words for objects, actions and feelings, can they identify their meanings in a new French message, then a few days later independently use the French words appropriately in another familiar scene or conversation rather than only echoing a model?",
+        "correctAnswer": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
+        "whatMakesItDiscriminate": "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval.",
+        "probeDeeper": [
+          "Another familiar context and speaker, with taught forms recombined.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The official Ontario CoreFrench source requires actual familiar French comprehension/production; taught lexical meaning and retained use are components, not a whole-standard certificate.",
+          "source": "Ontario Ministry of Education CoreFrench2013 source",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_wLroTdOoZh",
+      "pedagogy": {
+        "summary": "Qualified French model and familiar meaningful words covering the card’s specified contrasts and clusters. Teach unfamiliar word meanings first; hearing/clinical motor diagnosis is not inferred.",
+        "bestPractices": [
+          "Elicit the contrasted French words and clusters in short phrases, not only an isolated immediate imitation.",
+          "Use another familiar word carrying each taught contrast/cluster and ask an informed listener to identify the intended word.",
+          "Respect the intended variety’s legitimate pronunciation; evaluate meaningful intelligibility, not resemblance to one accent."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-consonant-contrasts",
+            "learnerActions": [
+              "Elicit the contrasted French words and clusters in short phrases, not only an isolated immediate imitation.",
+              "Use another familiar word carrying each taught contrast/cluster and ask an informed listener to identify the intended word.",
+              "Respect the intended variety’s legitimate pronunciation; evaluate meaningful intelligibility, not resemblance to one accent."
+            ],
+            "intendedInsight": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "OQLF identifies the relevant French consonant sounds and distinguishes phonetic sounds from written letters; this teaching/transfer protocol is authored and untested."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Using familiar French words and a qualified French model, can {{name}} say contrasting words such as poule/boule and chou/sou distinctly and keep the consonants in bras, crabe, bleu and pluie? Can a listener distinguish the intended words in a short phrase and in another familiar word carrying the same contrast, without relying only on immediate repetition?",
+        "correctAnswer": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
+        "whatMakesItDiscriminate": "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished.",
+        "probeDeeper": [
+          "Different familiar words/phrase and listener while preserving the same phonological operation.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer."
+        }
+      },
+      "sources": [
+        {
+          "claim": "OQLF identifies the relevant French consonant sounds and distinguishes phonetic sounds from written letters; this teaching/transfer protocol is authored and untested.",
+          "source": "OQLF factual linguistic reference",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/22204/la-prononciation/notions-de-base-en-phonetique/les-consonnes-phonetiques",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_mAschyjZAT",
+      "pedagogy": {
+        "summary": "Qualified model of the chosen French variety; meaning/picture cards and recordings or live utterances from more than one voice. OQLF describes four nasal vowels in its Quebec model and different Quebec/European transcriptions; do not impose a universal three-vowel inventory.",
+        "bestPractices": [
+          "Check listening identification of oral/nasal contrasts separately from speaking, allowing pointing or an English response.",
+          "Check production in meaningful familiar words and phrases, using bas/banc, beau/bon and paix/pain as varied lexical contrasts, not as a claim that each pair differs only in nasalization.",
+          "Include the in/un distinction where maintained by the chosen variety; accept a legitimate regional merger and document the model rather than infer a deficit.",
+          "Use another voice and familiar word to check transfer beyond echoing."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-nasal-vowel-contrasts",
+            "learnerActions": [
+              "Check listening identification of oral/nasal contrasts separately from speaking, allowing pointing or an English response.",
+              "Check production in meaningful familiar words and phrases, using bas/banc, beau/bon and paix/pain as varied lexical contrasts, not as a claim that each pair differs only in nasalization.",
+              "Include the in/un distinction where maintained by the chosen variety; accept a legitimate regional merger and document the model rather than infer a deficit.",
+              "Use another voice and familiar word to check transfer beyond echoing."
+            ],
+            "intendedInsight": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "OQLF describes four nasal vowels in its Quebec model and explains differing Quebec/European phonetic transcriptions; this teaching/transfer protocol is authored and untested."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "With familiar French words and a qualified model of the intended variety, can {{name}} hear which word is said in contrasts such as bas/banc, beau/bon and paix/pain, then produce the words distinctly in a short phrase? Include brun/brin when the target variety distinguishes un/in, and check transfer with another voice or familiar word rather than marking a legitimate regional merger wrong.",
+        "correctAnswer": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
+        "whatMakesItDiscriminate": "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety.",
+        "probeDeeper": [
+          "Another voice and familiar lexical context, with comprehension and production scored separately.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts."
+        }
+      },
+      "sources": [
+        {
+          "claim": "OQLF describes four nasal vowels in its Quebec model and explains differing Quebec/European phonetic transcriptions; this teaching/transfer protocol is authored and untested.",
+          "source": "OQLF factual linguistic reference",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/22205/la-prononciation/notions-de-base-en-phonetique/les-voyelles-phonetiques",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
