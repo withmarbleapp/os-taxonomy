@@ -25,14 +25,14 @@
     "excluded": "History/Geography Grades 7–8 and other grades remain outside this slice; one independently justified shared role/responsibility claim, no dependency changes."
   },
   "summary": {
-    "Partial": 29,
-    "Full": 9,
+    "Partial": 28,
+    "Full": 10,
     "Gap": 1,
     "reviewedCodes": 39,
     "associatedCodes": 38,
-    "topicStandardPairs": 93,
+    "topicStandardPairs": 95,
     "existingHolders": 28,
-    "newTopics": 1
+    "newTopics": 2
   },
   "coverageMeaning": "Code-by-code authoring review, not learner mastery or Full coverage inferred from associations. Overall expectations retain integrated-task conditions. Genuine knowledge decisions are separated from resource/task conditions.",
   "records": [
@@ -65,6 +65,12 @@
           "topicName": "Social roles and changing responsibilities",
           "role": "component",
           "contribution": "Relate a familiar social role to duties toward people and the environment, and explain changes caused by circumstances; identity, coping and civic-rights claims remain separate."
+        },
+        {
+          "topicId": "mt_gSBJxNBQh3",
+          "topicName": "Indigenous cultural renewal in Canada",
+          "role": "component",
+          "contribution": "Connect Canadian colonial disruption, community-led cultural renewal and identity using attributed First Nation, Métis and Inuit cases."
         }
       ],
       "remainingConditions": [
@@ -177,20 +183,25 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A1.5",
       "officialCode": "A1.5",
       "requirementSummary": "Canadian Indigenous identity recovery and belonging",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_Lcqm4_wR4D",
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish diverse contemporary First Nations, Métis and Inuit peoples; this does not establish colonial history or cultural revitalization."
+        },
+        {
+          "topicId": "mt_gSBJxNBQh3",
+          "topicName": "Indigenous cultural renewal in Canada",
+          "role": "direct",
+          "contribution": "Connect Canadian colonial disruption, community-led cultural renewal and identity using attributed First Nation, Métis and Inuit cases."
         }
       ],
-      "remainingConditions": [
-        "Canadian colonial/residential-school disruption, community-led cultural or language recovery, and its connection with identity are not established by recognition of contemporary peoples. Requires a bounded knowledge-claim decision and community-authoritative material."
-      ],
-      "residualKind": "independently-missing-knowledge",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "canadian-cultural-renewal-cases"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2",
@@ -1123,7 +1134,6 @@
     "FrenchAndNativeLanguages": "French competence remains a separate in-scope requirement. The optional Native Languages programme is excluded by explicit user decision 2026-11-10, with its catalogue and prior contexts preserved; FNMI culture/history/community requirements here and in Language/Science remain in scope. English communication does not establish competence in another language."
   },
   "nextKnowledgeDecisions": [
-    "A1.5 Canadian Indigenous identity revitalization and historical disruption",
     "B3.1 locally verified traditional/treaty territory, including existing-ID generalization option",
     "B3.3 local area functions; distinguish factual/contextual task need from absent mastery claim",
     "B3.8 service-provider/user relationship versus complete council institution claim"
@@ -1225,6 +1235,42 @@
         "transfer": "Explains the role/duty/circumstance relationship in the separate unfamiliar supplied school/garden story."
       },
       "coverageBoundary": "This is a source-fit assessment protocol, not a learner-performance study. Full authoring coverage means the required self-application is explicitly accounted for; it does not certify any learner."
+    },
+    {
+      "id": "canadian-cultural-renewal-cases",
+      "sourceCodes": [
+        "A1.5"
+      ],
+      "materials": "Use the three attributed factual case summaries in this dossier, with the brief historical context, read aloud or presented as text. Images, programme enrolment and target-language pronunciation are not required.",
+      "historicalContext": "Colonial policies in Canada, including residential schooling, separated many Indigenous children from family life and suppressed languages and cultural practices. Indigenous peoples continued their cultures and today lead many forms of renewal. The general history does not establish that every individual or every named project has an identical local history.",
+      "historicalAuthority": "https://nctr.ca/education/residential-school-history/",
+      "instructions": [
+        "Introduce the historical context in plain, non-graphic language. Do not ask for a learner’s or family’s residential-school testimony.",
+        "Attribute each case to its named people/community and source. Distinguish a First Nation, Métis and Inuit case rather than treating one as all Indigenous peoples.",
+        "Ask who leads the project, what is being renewed and how that can connect people with family/community knowledge and identity.",
+        "Use a second case as a transfer check. Ask which similarities describe the broad relationship and which specific people, language or practices remain different.",
+        "Check that the explanation includes the historical disruption and contemporary community agency, not only generic respect or naming peoples."
+      ],
+      "rubric": {
+        "full": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples.",
+        "nearMiss": "Only names Indigenous peoples, says everyone should be respected, treats cultures as gone or people as only historical, or describes a programme without the history/identity relationship.",
+        "transfer": "Explains the corresponding relationship for a second case while retaining its different people, source and practice."
+      },
+      "coverageBoundary": "Authoring source-fit protocol, not evidence that a learner passed. It teaches about cultural/language renewal, not French or Indigenous-language proficiency. Community programmes are examples of agency, not guaranteed therapeutic outcomes.",
+      "caseIds": [
+        "nipissing-anishinaabemwin",
+        "metis-language-initiatives",
+        "pirurvik-aurniarvik"
+      ]
+    }
+  ],
+  "followUpClaimCuration": [
+    {
+      "newTopicId": "mt_gSBJxNBQh3",
+      "report": "ontario-cultural-renewal-claim-2026-11-10.json",
+      "baseCommit": "e7952f1af49238864936ad41a81cd9fcc4327edd",
+      "date": "2026-11-10",
+      "requirementResolved": "A1.5 historical/community-led renewal/identity relationship, with source-fit case resources and protocol; no classroom-study requirement."
     }
   ]
 }

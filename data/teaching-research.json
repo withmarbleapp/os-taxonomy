@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "22c076c1d6e3c9252b49636ce65c331a06d017821a3e8cb68e636be51d3367d4",
-  "recordCount": 1047,
+  "topicFileSha256": "1a01b1d001c17b0cd5599feb1f573187752bc828c96853deefb406f3725131bb",
+  "recordCount": 1048,
   "coverage": {
-    "topicCount": 1859,
-    "withResearch": 1047,
+    "topicCount": 1860,
+    "withResearch": 1048,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -25,8 +25,8 @@
         "withoutResearch": 22
       },
       "History": {
-        "topics": 109,
-        "withResearch": 0,
+        "topics": 110,
+        "withResearch": 1,
         "withoutResearch": 109
       },
       "Learning to Learn": {
@@ -215206,6 +215206,131 @@
         "originalResearchGeneratedBy": "Taxonomy curation: source-verified claim and untested teaching proposal",
         "createdAt": "2026-11-10T12:00:43Z",
         "updatedAt": "2026-11-10T12:00:43Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_gSBJxNBQh3",
+      "pedagogy": {
+        "summary": "Explain the historical-disruption, community-action and identity relationship through attributed contemporary cases. Keep distinct peoples and initiatives visible; understanding this relationship is not language proficiency.",
+        "bestPractices": [
+          "Use the three source-fit case summaries and introductory historical context.",
+          "Ask who leads the action and why it can strengthen identity or belonging.",
+          "Check transfer to another community without assuming identical cultures or experiences."
+        ],
+        "keyRepresentations": [
+          "Attributed contemporary case cards",
+          "History–community action–identity relationship diagram"
+        ],
+        "commonMisconceptions": [
+          "Indigenous cultures disappeared or exist only in the past.",
+          "A language programme is merely generic respect with no historical context.",
+          "One community’s experience represents every Indigenous person."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Interpret community-led examples using the source-fit cultural-renewal protocol.",
+        "activities": [
+          {
+            "title": "Explain renewal and identity across attributed cases",
+            "learnerActions": [
+              "Introduce the historical context in plain, non-graphic language. Do not ask for a learner’s or family’s residential-school testimony.",
+              "Attribute each case to its named people/community and source. Distinguish a First Nation, Métis and Inuit case rather than treating one as all Indigenous peoples.",
+              "Ask who leads the project, what is being renewed and how that can connect people with family/community knowledge and identity.",
+              "Use a second case as a transfer check. Ask which similarities describe the broad relationship and which specific people, language or practices remain different.",
+              "Check that the explanation includes the historical disruption and contemporary community agency, not only generic respect or naming peoples."
+            ],
+            "intendedInsight": "Communities continue their cultures and lead renewal after historical disruption; a particular case has a particular people and source.",
+            "feedback": [
+              "Ask for the history, the community’s action and its identity connection separately.",
+              "Correct permanent-loss and one-culture assumptions using the attributed case."
+            ],
+            "rationale": "Authored source-fit proposal grounded in verified historical/community facts, not an experimentally validated intervention.",
+            "sourceClaims": [
+              "Residential-school policies in Canada disrupted many Indigenous family, language and cultural connections.",
+              "Nipissing First Nation describes community language classes and language/culture use in children’s programmes.",
+              "The Métis Nation of Ontario describes community-led language resources and support for new generations of speakers.",
+              "The Métis National Council explicitly connects Michif language with Métis identity and cultural continuity.",
+              "Pirurvik’s Aurniarvik programme connects Inuktut learning with Inuit cultural learning, identity and an on-the-land component."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use non-graphic introductory history and require no personal family testimony.",
+          "Primary learners learn about these programmes; do not imply that every programme is designed for their age.",
+          "Cultural understanding does not establish target-language listening, speaking, reading or writing."
+        ],
+        "reviewNotes": [
+          "2026-11-10: new low-confidence teaching proposal. Sources verified for factual scope; no learning-outcome study claimed."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After hearing an attributed, age-appropriate account of a community-led renewal project, can {{name}} explain who leads it, what is being strengthened, and how it connects people with culture and belonging after colonial disruption, including residential schooling? Can they explain a second example without treating all First Nations, Métis and Inuit peoples as one culture?",
+        "correctAnswer": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples.",
+        "whatMakesItDiscriminate": "Requires the specific historical disruption, community agency and identity relationship; recognition or generic kindness alone is a near miss.",
+        "probeDeeper": [
+          "Who is leading this action, and which people/community does the source describe?",
+          "Why might strengthening a language or cultural practice help people connect with family/community identity?",
+          "What can we explain in a second case, and what should we avoid assuming is identical?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "All Indigenous cultures disappeared, and one present-day example stands for everyone.",
+            "revealedBy": "Only names Indigenous peoples, says everyone should be respected, treats cultures as gone or people as only historical, or describes a programme without the history/identity relationship.",
+            "nextMove": "Use the contemporary attributed cases to distinguish continuing peoples and their different actions; reconnect the general historical context without inventing identical local histories.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Gives only labels or generic respect, with no relationship among history, action and identity.",
+          "partial": "Describes one initiative but needs support to connect its historical context or identity purpose.",
+          "full": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Residential-school policies in Canada disrupted many Indigenous family, language and cultural connections.",
+          "source": "National Centre for Truth and Reconciliation, Residential School History",
+          "url": "https://nctr.ca/education/residential-school-history/",
+          "verified": true
+        },
+        {
+          "claim": "Nipissing First Nation describes community language classes and language/culture use in children’s programmes.",
+          "source": "Nipissing First Nation, Anishinaabemwin",
+          "url": "https://nfn.ca/culture-heritage/anishinaabemwin/",
+          "verified": true
+        },
+        {
+          "claim": "The Métis Nation of Ontario describes community-led language resources and support for new generations of speakers.",
+          "source": "Métis Nation of Ontario, Métis Languages Initiatives",
+          "url": "https://www.metisnation.org/programs-and-services/education-training/metis-languages-initiatives/",
+          "verified": true
+        },
+        {
+          "claim": "The Métis National Council explicitly connects Michif language with Métis identity and cultural continuity.",
+          "source": "Métis National Council, Language",
+          "url": "https://www.metisnation.ca/what-we-do/culture-heritage-and-language/language/",
+          "verified": true
+        },
+        {
+          "claim": "Pirurvik’s Aurniarvik programme connects Inuktut learning with Inuit cultural learning, identity and an on-the-land component.",
+          "source": "Pirurvik Institute, Aurniarvik",
+          "url": "https://www.pirurvik.ca/aurniarvik",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified knowledge claim and untested teaching proposal",
+        "createdAt": "2026-11-10T12:34:49Z",
+        "updatedAt": "2026-11-10T12:34:49Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
