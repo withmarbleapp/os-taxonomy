@@ -29,12 +29,14 @@ Accepted audit base: `691911d03f5531cc798ee391c86b778a735d75ab`. Full descriptio
 
 ## Claim review boundary
 
-The companion unit-conversion claim audit records retirement, requirement preservation and assessment changes separately from these labels. The misleading time-conversion and decimal-conversion profiles are candidate retirements in that review, so they are excluded from the surviving-label table. The arithmetic worked-example correction and any duration/clock decomposition have explicit claim dispositions in their own audit sections.
+The [unit-conversion claim audit](time-conversion-claim-audit-2026-11-10.md) records retirement, requirement preservation and assessment changes separately from these labels. The overlapping time-conversion, conversion-table and decimal-conversion profiles are retired into `mt_d8al9JcajP`, so they are excluded from the surviving-label table. The arithmetic worked-example correction and [duration/clock decomposition](time-duration-clock-claim-review-2026-11-10.md) have explicit claim dispositions in their own audit sections.
 
 The title audit also flags overlap among rounding precision profiles, fraction-placement profiles and some mathematical-representation profiles. Those boundaries need their own complete-claim review. These label changes do not retire those IDs or establish learner-mastery equivalence. All existing scoped associations and age intervals survive the label step; related semantic changes are itemized in the companion claim report.
+
+The duration review also makes its resulting operation names explicit: `mt__N55B7u7HD` is **Measuring and recording durations**, `mt_6XCURuNwPw` is **Comparing and ordering durations**, and `mt_TcG90kS8nu` is **Time comparison words**. Their current names distinguish physical timing, quantitative comparison and comparative vocabulary. The duration ledger records their complete semantic dispositions; the India contribution label follows the resulting measurement claim.
 
 The work adds no topics or older-stage coverage. Historical contexts beyond the current primary authoring boundary remain preserved. Consumer publication and learner-evidence compatibility are separate maintenance responsibilities.
 
 ## Validation
 
-The label step changes only `name` on the 16 listed IDs, plus the original issue #92 label on `mt_2yas4Unc8o` while that profile awaits its separate claim disposition. Its complete non-name fields, all contexts, dependencies and research records are unchanged. The complete integrated PR records generation, validation, generated-artifact and test results after the semantic changes are reconciled.
+The independently checked label step changes only `name` on the 16 listed IDs, plus the original issue #92 label on `mt_2yas4Unc8o` before its retirement. All non-name fields, contexts, dependencies and research records were preserved by that step. The integrated PR applies the 16 surviving labels to the separately reviewed semantic result without restoring retired IDs. Generation, validation, generated-artifact and full-suite checks cover the final combined dataset.

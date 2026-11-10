@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "af2f158ce96edc2bcf87df9d343529d93e0b961f",
+  "acceptedSourceCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+  "mode": "Semantic proposal; no downstream application or learner-state writes",
+  "topicDispositions": [
+    {
+      "topicId": "mt_4emC463IyW",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Comparing Time Durations",
+        "description": "Compare durations of events and calculate the time taken by particular events or tasks",
+        "evidence": [
+          "Work out that a TV show from 5:17 p.m. to 5:43 p.m. lasted 26 minutes",
+          "Compare a 35-minute bus journey with a 40-minute walk and say which takes longer and by how much",
+          "Solve 'The lesson starts at 10:15 and ends at 11:00. How long is it?' (45 minutes)"
+        ],
+        "assessmentPrompt": "If {{name}} starts cooking at 4:15 p.m. and finishes at 5:00 p.m., can they work out how long the cooking took?"
+      },
+      "after": {
+        "name": "Calculating elapsed duration",
+        "description": "Calculate the duration between a known start time and a known finish time, including across an hour boundary; distinguish the interval length from either clock reading.",
+        "evidence": [
+          "Work out that a TV show from 5:17 p.m. to 5:43 p.m. lasted 26 minutes",
+          "Find that an activity from 2:50 p.m. to 4:10 p.m. lasts 1 hour 20 minutes, explaining the regrouping at 60 minutes",
+          "Solve a lesson from 10:15 to 11:00 as a duration of 45 minutes, using a number line or another valid method"
+        ],
+        "assessmentPrompt": "If {{name}} starts cooking at 4:15 p.m. and finishes at 5:00 p.m., can they work out how long it took and explain how they know?"
+      }
+    },
+    {
+      "topicId": "mt_IL86kadLSS",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Elapsed time problems",
+        "description": "Solve word problems involving elapsed time by adding and subtracting time intervals in minutes, including using a number line",
+        "evidence": [
+          "A film starts at 2:15 and lasts 47 minutes — when does it end?",
+          "Calculate how many minutes between 9:20 and 10:05",
+          "Use a number line to show the elapsed time between two events"
+        ],
+        "assessmentPrompt": "If {{name}} starts football practice at 3:20 p.m. and it lasts 75 minutes, can they work out what time it finishes — using a number line to help?"
+      },
+      "after": {
+        "name": "Finding start or finish times",
+        "description": "Find an unknown start or finish time from a given duration and the other clock time. Choose whether to move forwards or backwards, regrouping minutes at 60 when crossing an hour; a number line is one useful representation.",
+        "evidence": [
+          "A film starts at 2:15 p.m. and lasts 47 minutes: find its finish time of 3:02 p.m.",
+          "A show ends at 10:05 a.m. and lasts 45 minutes: find its start time of 9:20 a.m.",
+          "Explain why a known start and duration require moving forwards, while a known finish and duration require moving backwards; check the result against the story"
+        ],
+        "assessmentPrompt": "If {{name}} starts football practice at 3:20 p.m. and it lasts 75 minutes, can they find the finish time? If another practice finishes at 5:10 p.m. after 45 minutes, can they find when it started and explain the different directions?"
+      }
+    },
+    {
+      "topicId": "mt_UNzojLkNdm",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Time to the nearest minute",
+        "description": "Tell, write and estimate the time to the nearest minute on analogue and digital clocks, using vocabulary such as o'clock, a.m./p.m., morning, afternoon, noon and midnight; record and compare times and durations in seconds, minutes and hours",
+        "evidence": [
+          "Read 7:43 from an analogue clock face and write it on a digital display",
+          "Estimate whether brushing teeth takes about 2 seconds, 2 minutes or 2 hours, then time it to check",
+          "Compare 1 minute 20 seconds with 75 seconds and say which is longer"
+        ],
+        "assessmentPrompt": "If the kitchen clock shows 7:43, can {{name}} read the exact time and write it as it would look on a digital clock — and say which is longer, 1 minute 20 seconds or 75 seconds?"
+      },
+      "after": {
+        "name": "Time to the nearest minute",
+        "description": "Read and write time to the nearest minute on analogue and digital clocks. Coordinate the minute scale with the hour hand, and express equivalent minutes-past and minutes-to readings.",
+        "evidence": [
+          "Read 7:43 from an analogue clock face and write it on a digital display, keeping the hour as 7 although the hour hand is near 8",
+          "Read an analogue clock showing 11:06, explaining why the hour hand is just past 11 and the minute hand is six minutes past the hour",
+          "Express 9:57 as three minutes to ten and explain the hour-hand position"
+        ],
+        "assessmentPrompt": "If an analogue kitchen clock shows 7:43, can {{name}} read and write the time and explain why the hour is still 7? On another clock showing 9:57, can they write the digital time and say how many minutes remain until ten?"
+      }
+    },
+    {
+      "topicId": "mt__N55B7u7HD",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Hours, minutes and seconds",
+        "description": "Measure and begin to record time in hours, minutes, and seconds",
+        "evidence": [
+          "Use a sand timer or stopwatch to time an activity",
+          "Begin to understand that 1 minute = 60 seconds",
+          "Record a duration in simple terms (e.g. 'it took about 2 minutes')"
+        ],
+        "assessmentPrompt": "If {{name}} watches the second hand go all the way round a clock, can they count that as one minute — and estimate roughly how many minutes their favourite TV show lasts?"
+      },
+      "after": {
+        "name": "Measuring and recording durations",
+        "description": "Measure and begin to record time in hours, minutes, and seconds",
+        "evidence": [
+          "Use a sand timer or stopwatch to time an activity",
+          "Begin to understand that 1 minute = 60 seconds",
+          "Record a duration in simple terms (e.g. 'it took about 2 minutes')",
+          "Estimate whether brushing teeth takes about 2 seconds, 2 minutes or 2 hours, then use a supplied suitable timer to measure the event and record its duration"
+        ],
+        "assessmentPrompt": "Given a suitable timer, can {{name}} estimate the duration of a short everyday activity in an appropriate unit, start and stop the timer with the activity, and read and record the measured duration?"
+      }
+    },
+    {
+      "topicId": "mt_6XCURuNwPw",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Sequence intervals of time",
+        "description": "Compare and sequence intervals of time",
+        "evidence": [
+          "Order three events by how long they took",
+          "Compare the duration of two activities (e.g. 'the race took longer than the walk')",
+          "Sequence intervals on a timeline"
+        ],
+        "assessmentPrompt": "If {{name}} knows a film takes 2 hours and a car journey takes 45 minutes, can they tell you which takes longer — and put a few daily activities in order of how long they take?"
+      },
+      "after": {
+        "name": "Comparing and ordering durations",
+        "description": "Compare and sequence intervals of time",
+        "evidence": [
+          "Order three events by how long they took",
+          "Compare the duration of two activities (e.g. 'the race took longer than the walk')",
+          "Sequence intervals on a timeline",
+          "Compare a 35-minute bus journey with a 40-minute walk and say which takes longer and by how much",
+          "Compare 1 minute 20 seconds with 75 seconds by expressing them in a common unit"
+        ],
+        "assessmentPrompt": "If {{name}} is given durations of 35 minutes, 40 minutes and 25 minutes, can they order them and say how much longer 40 minutes is than 35? Can they compare 1 minute 20 seconds with 75 seconds and explain why finishing later alone does not show a longer duration?"
+      }
+    },
+    {
+      "topicId": "mt_5J2quSTspi",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Roman numeral and 24-hour clocks",
+        "description": "Tell and write the time from analogue clocks with Roman-numeral faces (I to XII, including IV, which some clocks show as IIII, and IX), knowing that the minute positions are the same as on a clock with ordinary numbers; and read and write times on 12-hour and 24-hour clocks, knowing that the 24-hour clock runs from 00:00 at midnight to 23:59. Times from 1:00 a.m. to 11:59 a.m. keep the same hour (7:05 a.m. = 07:05); times from 1:00 p.m. to 11:59 p.m. are 12 hours more (3:20 p.m. = 15:20). The 12 o'clock hour is the exception to both: 12:20 p.m., just after noon, stays 12:20, and 12:20 a.m., just after midnight, becomes 00:20. Fluent conversion between 12- and 24-hour times is developed in Year 4",
+        "evidence": [
+          "Read a Roman-numeral clock with the minute hand on IX and the hour hand between IV and V as quarter to five (4:45)",
+          "Match the Roman numerals I to XII to the hour positions on a blank clock face, including IV (or IIII), IX and XII",
+          "Write 3:20 p.m. as 15:20 and 7:05 a.m. as 07:05, then write 12:20 p.m. as 12:20 and 12:20 a.m. as 00:20, explaining why adding 12 works only for p.m. times from 1 p.m. onwards"
+        ],
+        "assessmentPrompt": "If {{name}} sees a clock with Roman numerals where the minute hand points to IX and the hour hand is between IV and V, can they read it as quarter to five — and say what time 15:20 on a 24-hour clock means?"
+      },
+      "after": {
+        "name": "Roman-numeral clock faces",
+        "description": "Tell and write the time from analogue clocks with Roman-numeral faces I to XII, including IV (also shown as IIII on some clocks) and IX. Interpret the numeral positions and hands as on an ordinary numbered clock face.",
+        "evidence": [
+          "Read a Roman-numeral clock with the minute hand on IX and the hour hand between IV and V as quarter to five (4:45)",
+          "Match I to XII to hour positions on a clock face, including IV or IIII, IX and XII",
+          "Read the same hand positions on Roman and ordinary numbered clock faces, explaining that changing numeral labels does not change the time"
+        ],
+        "assessmentPrompt": "If {{name}} sees a Roman-numeral clock with the minute hand on IX and the hour hand between IV and V, can they read it as quarter to five and explain whether a clock labelled IIII instead of IV would show a different time?"
+      }
+    },
+    {
+      "topicId": "mt_WfrE_4r-kY",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "12-hour and 24-hour time",
+        "description": "Read, write, and convert time between analogue and digital 12-hour and 24-hour clocks",
+        "evidence": [
+          "Convert 3:45 pm to 15:45 in 24-hour time",
+          "Read 19:30 and state the 12-hour equivalent as 7:30 pm",
+          "Match a set of 12-hour and 24-hour times"
+        ],
+        "assessmentPrompt": "If a train timetable shows a departure at 14:35, can {{name}} convert that to 12-hour clock time — and tell you whether that's morning or afternoon?"
+      },
+      "after": {
+        "name": "12-hour and 24-hour time",
+        "description": "Read, write and convert time between ordinary analogue and digital 12-hour and 24-hour clocks. Morning hours 1–11 keep their hour (7:05 a.m. = 07:05); afternoon/evening hours 1–11 add 12 (3:20 p.m. = 15:20). The 12 o’clock hour has separate noon and midnight cases: 12:20 p.m. = 12:20 and 12:20 a.m. = 00:20. Convert in both directions without requiring Roman-numeral clock faces.",
+        "evidence": [
+          "Convert 3:45 pm to 15:45 in 24-hour time",
+          "Read 19:30 and state the 12-hour equivalent as 7:30 pm",
+          "Match a set of 12-hour and 24-hour times",
+          "Convert 12:20 a.m. to 00:20 and 12:20 p.m. to 12:20, explaining the midnight and noon cases",
+          "Read an ordinary analogue clock with a stated afternoon context and write the equivalent 24-hour digital time; translate back to a 12-hour display"
+        ],
+        "assessmentPrompt": "If a train leaves at 14:35, can {{name}} give the 12-hour time and part of the day, then write 12:20 a.m. and 12:20 p.m. in 24-hour time? Can they also translate a stated afternoon time on an ordinary analogue clock?"
+      }
+    },
+    {
+      "topicId": "mt_EXlmTURK_o",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Time Units and Calendar Facts",
+        "description": "Know the number of seconds in a minute and the number of days in each month, year, and leap year",
+        "evidence": [
+          "State that there are 60 seconds in a minute",
+          "Name the months and state the number of days in each",
+          "Explain that a leap year has 366 days and occurs every 4 years"
+        ],
+        "assessmentPrompt": "If you ask {{name}} how many days are in September and whether this year is a leap year, can they answer both — and tell you how many seconds are in a minute?"
+      },
+      "after": {
+        "name": "Time Units and Calendar Facts",
+        "description": "Know the number of seconds in a minute and the number of days in each month, year, and leap year",
+        "evidence": [
+          "State that there are 60 seconds in a minute",
+          "Name the months and state the number of days in each",
+          "Explain that a leap year has 366 days; leap years usually follow a four-year pattern, with calendar exceptions, so check a calendar for a particular year"
+        ],
+        "assessmentPrompt": "If you give {{name}} a calendar, can they say how many days are in September and whether that year has 365 or 366 days, and tell you how many seconds are in a minute?"
+      }
+    },
+    {
+      "topicId": "mt_TcG90kS8nu",
+      "action": "retain stable ID; align claim/evidence/research",
+      "before": {
+        "name": "Comparing durations",
+        "description": "Use comparative language for time: quicker, slower, earlier, later",
+        "evidence": [
+          "Compare two events and say which was quicker/slower",
+          "Use 'earlier' and 'later' correctly to describe daily events",
+          "Solve practical problems like 'Who finished first?'"
+        ],
+        "assessmentPrompt": "If {{name}} finishes their dinner before a sibling, can they tell you who finished earlier — and which one was quicker?"
+      },
+      "after": {
+        "name": "Time comparison words",
+        "description": "Use comparative language for time: quicker, slower, earlier, later",
+        "evidence": [
+          "Compare two events and say which was quicker/slower",
+          "Use 'earlier' and 'later' correctly to describe daily events",
+          "Solve practical problems like 'Who finished first?'"
+        ],
+        "assessmentPrompt": "If {{name}} and a sibling start eating at the same time and {{name}} finishes first, can they say who finished earlier and who took less time? If the start times are unknown, can they explain why finishing first alone does not tell you who was quicker?"
+      }
+    }
+  ],
+  "contextChanges": {
+    "removed": [
+      {
+        "topicId": "mt_5J2quSTspi",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 10,
+        "ageRangeEnd": 11,
+        "standards": [
+          "acara-v9:AC9M5M03"
+        ]
+      },
+      {
+        "topicId": "mt_IL86kadLSS",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "uk-nc-2013:Ma/KS2/Y4/M/6"
+        ]
+      },
+      {
+        "topicId": "mt_UNzojLkNdm",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "acara-v9:AC9M3M03",
+          "acara-v9:AC9M3M04"
+        ]
+      },
+      {
+        "topicId": "mt_UNzojLkNdm",
+        "scope": "jurisdiction",
+        "country": "IN",
+        "ageRangeStart": 3,
+        "ageRangeEnd": 8,
+        "standards": [
+          "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.10"
+        ]
+      }
+    ],
+    "added": [
+      {
+        "topicId": "mt_UNzojLkNdm",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "acara-v9:AC9M3M04"
+        ]
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "acara-v9:AC9M3M03"
+        ]
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 8,
+        "standards": [
+          "uk-nc-2013:Ma/KS2/Y3/M/5"
+        ]
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "scope": "jurisdiction",
+        "country": "US",
+        "region": "Common Core",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "ccss-math:3.MD.1"
+        ]
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "scope": "jurisdiction",
+        "country": "IN",
+        "ageRangeStart": 3,
+        "ageRangeEnd": 8,
+        "standards": [
+          "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.10"
+        ]
+      },
+      {
+        "topicId": "mt_6XCURuNwPw",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "acara-v9:AC9M3M03"
+        ]
+      },
+      {
+        "topicId": "mt_6XCURuNwPw",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 8,
+        "standards": [
+          "uk-nc-2013:Ma/KS2/Y3/M/5",
+          "uk-nc-2013:Ma/KS2/Y3/M/7"
+        ]
+      }
+    ]
+  },
+  "invalidAssociationDispositions": [
+    {
+      "from": {
+        "topicId": "mt_5J2quSTspi",
+        "scope": "jurisdiction",
+        "country": "AU",
+        "region": "ACARA v9",
+        "ageRangeStart": 10,
+        "ageRangeEnd": 11,
+        "standards": [
+          "acara-v9:AC9M5M03"
+        ]
+      },
+      "disposition": "Remove from Roman-only claim; exact AU 10–11 M5M03 conversion association remains on Wfr."
+    },
+    {
+      "from": {
+        "topicId": "mt_IL86kadLSS",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 9,
+        "standards": [
+          "uk-nc-2013:Ma/KS2/Y4/M/6"
+        ]
+      },
+      "disposition": "Remove unsupported association: Y4/M/6 is unit conversion, already held by mt_d8al9JcajP; no age-only replacement."
+    }
+  ],
+  "edgeChanges": {
+    "removed": [
+      {
+        "topicId": "mt_0XxyaQLRhn",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "soft",
+        "reason": "GB route: Year 1 experience of hours, minutes and seconds as units of time supports reading o'clock and half-past times; soft because this node is GB-only"
+      },
+      {
+        "topicId": "mt_2XDGT5tei1",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "hard",
+        "reason": "Knowing 60 min = 1 hour and 24 hours = 1 day extends from measuring time in hours/minutes/seconds"
+      },
+      {
+        "topicId": "mt_4emC463IyW",
+        "prerequisiteId": "mt_UNzojLkNdm",
+        "strength": "hard",
+        "reason": "Calculating event durations requires reading time to the minute"
+      },
+      {
+        "topicId": "mt_4m8BimI4G5",
+        "prerequisiteId": "mt_HNOPGJYiRK",
+        "strength": "hard",
+        "reason": "Extends telling time to include a.m./p.m. and 24-hour notation"
+      },
+      {
+        "topicId": "mt_5J2quSTspi",
+        "prerequisiteId": "mt_4m8BimI4G5",
+        "strength": "hard",
+        "reason": "Writing 3:20 p.m. as 15:20 and 07:05 as 7:05 a.m. relies on knowing which times are before and after midday"
+      },
+      {
+        "topicId": "mt_6XCURuNwPw",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "hard",
+        "reason": "Sequencing intervals requires understanding time measurement"
+      },
+      {
+        "topicId": "mt_d-WZC2OyMB",
+        "prerequisiteId": "mt_IL86kadLSS",
+        "strength": "soft",
+        "reason": "Elapsed time problems require choosing between number line and mental methods"
+      },
+      {
+        "topicId": "mt_EXlmTURK_o",
+        "prerequisiteId": "mt_2XDGT5tei1",
+        "strength": "hard",
+        "reason": "Extends knowing minutes in an hour to seconds in a minute and days in months"
+      },
+      {
+        "topicId": "mt_IL86kadLSS",
+        "prerequisiteId": "mt_4emC463IyW",
+        "strength": "soft",
+        "reason": "GB route: Year 3 calculating the time taken by events feeds into elapsed-time problem solving; soft because this node is GB-only (both countries keep the hard nearest-minute prerequisite)"
+      },
+      {
+        "topicId": "mt_IL86kadLSS",
+        "prerequisiteId": "mt_UNzojLkNdm",
+        "strength": "hard",
+        "reason": "Must read time to nearest minute before solving elapsed time problems"
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "prerequisiteId": "mt_TcG90kS8nu",
+        "strength": "hard",
+        "reason": "Measuring time in units requires understanding time comparison language first"
+      },
+      {
+        "topicId": "mt_UNzojLkNdm",
+        "prerequisiteId": "mt_6XCURuNwPw",
+        "strength": "soft",
+        "reason": "GB route: Year 2 comparing and sequencing intervals of time is the groundwork for recording and comparing durations in seconds, minutes and hours; soft because this node is GB-only"
+      },
+      {
+        "topicId": "mt_WfrE_4r-kY",
+        "prerequisiteId": "mt_5J2quSTspi",
+        "strength": "hard",
+        "reason": "Year 4 conversion between analogue and digital 12- and 24-hour clocks builds on Year 3 reading of 12- and 24-hour times"
+      }
+    ],
+    "added": [
+      {
+        "topicId": "mt_0XxyaQLRhn",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "soft",
+        "reason": "Experience measuring time in hours and minutes supports discussion of clock readings; timing tool operation is not necessary for every clock-reading route."
+      },
+      {
+        "topicId": "mt_2XDGT5tei1",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "soft",
+        "reason": "Measuring time helps illustrate unit relations; operating a timer is not necessary to understand 60 minutes per hour and 24 hours per day."
+      },
+      {
+        "topicId": "mt_4emC463IyW",
+        "prerequisiteId": "mt_UNzojLkNdm",
+        "strength": "soft",
+        "reason": "Reading a clock face supports obtaining endpoints; supplied readable time values permit duration calculation without complete analogue clock-reading mastery."
+      },
+      {
+        "topicId": "mt_4m8BimI4G5",
+        "prerequisiteId": "mt_HNOPGJYiRK",
+        "strength": "hard",
+        "reason": "Five-minute analogue reading supports the clock-reading component; a.m./p.m. distinguishes the two daily occurrences of a 12-hour time."
+      },
+      {
+        "topicId": "mt_6XCURuNwPw",
+        "prerequisiteId": "mt__N55B7u7HD",
+        "strength": "soft",
+        "reason": "Timing events supplies measured durations; ordering durations already supplied does not require operating a timer."
+      },
+      {
+        "topicId": "mt_EXlmTURK_o",
+        "prerequisiteId": "mt_2XDGT5tei1",
+        "strength": "soft",
+        "reason": "Hour/day relations support discussion of time units but do not establish or gate calendar-length and seconds-per-minute knowledge."
+      },
+      {
+        "topicId": "mt_IL86kadLSS",
+        "prerequisiteId": "mt_UNzojLkNdm",
+        "strength": "soft",
+        "reason": "Clock reading supports tasks presented on a clock face; supplied digital times do not require complete analogue nearest-minute mastery."
+      },
+      {
+        "topicId": "mt__N55B7u7HD",
+        "prerequisiteId": "mt_TcG90kS8nu",
+        "strength": "soft",
+        "reason": "Comparative time language supports discussing measurements, but timing and recording one event do not require comparing events."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "beforeHolder": "mt_4emC463IyW",
+      "requirement": "Compare 35-minute and 40-minute supplied durations, including difference",
+      "afterHolder": "mt_6XCURuNwPw"
+    },
+    {
+      "beforeHolder": "mt_UNzojLkNdm",
+      "requirement": "Estimate activity duration, then measure and record",
+      "afterHolder": "mt__N55B7u7HD"
+    },
+    {
+      "beforeHolder": "mt_UNzojLkNdm",
+      "requirement": "Compare 1 minute 20 seconds with 75 seconds",
+      "afterHolder": "mt_6XCURuNwPw"
+    },
+    {
+      "beforeHolder": "mt_5J2quSTspi",
+      "requirement": "Ordinary 12/24 conversion, both directions and noon/midnight exceptions",
+      "afterHolder": "mt_WfrE_4r-kY"
+    },
+    {
+      "beforeHolder": "mt_IL86kadLSS",
+      "requirement": "Known endpoints to elapsed interval",
+      "afterHolder": "mt_4emC463IyW"
+    }
+  ],
+  "performanceConditions": [
+    "Unknown quantity distinguishes elapsed interval from missing clock instant; assess each independently, not as difficulty tiers.",
+    "Timer measurement requires actual start/stop/read/record, not just fact recall.",
+    "Comparison of differing units requires unit relations; no universal whole-clock or timer-operation gate.",
+    "Roman numeral interpretation is separate from ordinary12/24 conversion.",
+    "NCERT C8.10 remains Partial, including the existing month-interval condition; 3–8 is source-stage scope, not every-age mastery.",
+    "Timetable itinerary planning is not certified by an endpoint arithmetic component.",
+    "Use a supplied suitable timer; no new autonomous instrument-selection condition. Clock reading/writing does not introduce a required clock-setting procedure."
+  ],
+  "consumerReassessmentBoundary": "Stable IDs continue but meanings narrow and evidence is redistributed. Historical estimates/observations are not proof of either resulting operation. Consumers must review compatibility and reassessment before publishing; this PR changes no learner rows and authorizes no reset. No automatic mastery transfer or inferred difficulty-level progression.",
+  "unaffectedPreservation": "Apart from the separately documented name corrections, all other authored topic fields, research records, contexts and edges outside the listed semantic dispositions match the stated base. Generated flat ages/standards and checksum bindings are reviewed separately; existing centrality values are preserved.",
+  "conversionBoundaryExamples": [
+    {
+      "hour12": 7,
+      "minute": 5,
+      "phase": "am",
+      "expected24": "07:05"
+    },
+    {
+      "hour12": 3,
+      "minute": 20,
+      "phase": "pm",
+      "expected24": "15:20"
+    },
+    {
+      "hour12": 12,
+      "minute": 20,
+      "phase": "pm",
+      "expected24": "12:20"
+    },
+    {
+      "hour12": 12,
+      "minute": 20,
+      "phase": "am",
+      "expected24": "00:20"
+    }
+  ],
+  "researchReview": {
+    "changedActiveRecords": [
+      "mt_4emC463IyW",
+      "mt_IL86kadLSS",
+      "mt_UNzojLkNdm",
+      "mt__N55B7u7HD",
+      "mt_6XCURuNwPw",
+      "mt_WfrE_4r-kY",
+      "mt_EXlmTURK_o",
+      "mt_TcG90kS8nu"
+    ],
+    "missingResearchRecord": "mt_5J2quSTspi has no active research record at the base; topic evidence and assessment were reviewed without inventing research coverage.",
+    "citationStatus": "Existing source records and verification/confidence flags retained as historical metadata; revised activity proposals are not fresh experimental verification."
+  }
+}
