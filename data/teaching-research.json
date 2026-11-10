@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "1c6dcb7d0f19d2221199addbec8d0f184ca218b8c3494ec94b4e2609ab9a1f30",
-  "recordCount": 1053,
+  "topicFileSha256": "1234434b547bde627f7efcf344b11587ccb4e303839833ca03b414464207027b",
+  "recordCount": 1056,
   "coverage": {
-    "topicCount": 1869,
-    "withResearch": 1053,
+    "topicCount": 1872,
+    "withResearch": 1056,
     "withoutResearch": 816,
     "bySubject": {
       "Computing": {
@@ -30,8 +30,8 @@
         "withoutResearch": 110
       },
       "Learning to Learn": {
-        "topics": 18,
-        "withResearch": 0,
+        "topics": 20,
+        "withResearch": 2,
         "withoutResearch": 18
       },
       "Life Skills": {
@@ -57,6 +57,11 @@
       "Physical Education": {
         "topics": 7,
         "withResearch": 7,
+        "withoutResearch": 0
+      },
+      "Art & Design": {
+        "topics": 1,
+        "withResearch": 1,
         "withoutResearch": 0
       }
     },
@@ -215907,6 +215912,324 @@
         "originalResearchGeneratedBy": "Codex; official primary-source readback and original untested teaching/assessment design",
         "createdAt": "2026-11-10T16:52:31Z",
         "updatedAt": "2026-11-10T17:06:03Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_AzNSWFgtxC",
+      "pedagogy": {
+        "summary": "Recognise a previously seen visual symbol or simple representation after its sample has been hidden, distinguishing it from close alternatives using remembered visual features. This concerns remembering forms rather than reading a named script, remembering a fixed number of items or reproducing a timed memory score. This particular authored sequence is untested.",
+        "bestPractices": [
+          "Compare the chosen foil with the model after, not before, the target response.",
+          "Use a changed form family and close alternatives to separate remembered features from familiarity or guessing."
+        ],
+        "keyRepresentations": [
+          "Covered model and close visual alternatives",
+          "New symbol/picture family"
+        ],
+        "commonMisconceptions": [
+          "Visible matching, a remembered word name or one lucky option choice proves visual-form recognition after hiding."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Recognise a previously seen visual symbol or simple representation after its sample has been hidden, distinguishing it from close alternatives using remembered visual features. This concerns remembering forms rather than reading a named script, remembering a fixed number of items or reproducing a timed memory score.",
+        "activities": [
+          {
+            "title": "Hidden-form recognition",
+            "learnerActions": [
+              "Let the learner inspect and indicate one distinguishing feature.",
+              "Cover the model before introducing close alternatives. Keep form sizes/visibility accessible.",
+              "Ask the learner to select the seen form and indicate a remembered feature without reopening the model.",
+              "Reveal the model for feedback; compare the relevant feature. Repeat with a changed family after a suitable short unrelated activity."
+            ],
+            "intendedInsight": "Recognise a previously seen visual symbol or simple representation after its sample has been hidden, distinguishing it from close alternatives using remembered visual features. This concerns remembering forms rather than reading a named script, remembering a fixed number of items or reproducing a timed memory score.",
+            "feedback": [
+              "Compare the chosen foil with the sample after the response: identify the missing stroke, relative arrangement or other decisive feature. Model looking deliberately at that feature before covering; do not repeatedly announce the correct option."
+            ],
+            "rationale": "Accurate simultaneous matching but failure when the target is hidden distinguishes perceptual matching from retaining its form. Familiar-word reading or a lucky same-position choice does not establish this claim. This is an original task-design inference, not evidence of an efficacious intervention.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Changed representation family",
+            "learnerActions": [
+              "Use unfamiliar route icons or abstract picture tokens with different distinguishing features, not the same memorised answer positions."
+            ],
+            "intendedInsight": "The same operation is demonstrated with a changed case rather than the original answer, script or setting.",
+            "feedback": [
+              "Reduce foil similarity and begin with one clear distinguishing feature, then restore a close foil and a new representation. Retain the hidden-model step rather than training only visible matching."
+            ],
+            "rationale": "Transfer retains the precise hidden-model distinction.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use accessible clearly visible forms and a comfortable response mode; record presentation, alternative set and interval. Do not interpret one selection as a clinical or general memory-capacity score.",
+          "No fixed number of forms, seconds, reading inventory or language script defines mastery. Trial variation is for discriminating evidence, not a new difficulty level.",
+          "The sample must be hidden during the target response. A visible cue, same answer position or adult identification invalidates the hidden-model inference.",
+          "Original untested teaching/assessment design; no observed child performance or downstream learner-state action."
+        ],
+        "reviewNotes": [
+          "External resources support the activity category and access design, not a validated mastery cutoff or efficacy claim for this authored sequence."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "diagnosticPrompt": "Show {{name}} an unfamiliar sign or simple picture, then hide it. Later, can they find the same form among similar alternatives and show what they remembered, then do this with a different kind of picture?",
+        "correctAnswer": "Recognises the hidden previously seen form across changed symbol/picture cases and indicates a remembered distinguishing feature without reopening the model or relying on a named-word cue.",
+        "whatMakesItDiscriminate": "Accurate simultaneous matching but failure when the target is hidden distinguishes perceptual matching from retaining its form. Familiar-word reading or a lucky same-position choice does not establish this claim.",
+        "errorPatterns": [
+          {
+            "pattern": "Visible matching, a remembered word name or one lucky option choice proves visual-form recognition after hiding.",
+            "kind": "performance",
+            "revealedBy": "Success occurs only with the sample visible or when a familiar name reveals the answer.",
+            "nextMove": "Reduce foil similarity and begin with one clear distinguishing feature, then restore a close foil and a new representation. Retain the hidden-model step rather than training only visible matching.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Which part helped you remember this one? You can point or show it.",
+          "What changes if the similar form has an extra line or the parts are arranged differently?"
+        ],
+        "responseLevels": {
+          "gap": "The accessible declared attempts provide no evidence of recognising the previously hidden form. Inaccessible display or response conditions are recorded as assessment limitations, not a capacity label.",
+          "partial": "Matches while the model is visible or recognises one familiar form, but has not yet distinguished hidden-model recognition across close alternatives and a changed family.",
+          "full": "Recognises the hidden previously seen form across changed symbol/picture cases and indicates a remembered distinguishing feature without reopening the model or relying on a named-word cue."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Age-appropriate hidden-card memory play and changing challenges; not a validated visual-form mastery threshold or proof of this authored sequence. No import of named-game rules, fast-response demands, working-memory norms or general-transfer efficacy.",
+          "source": "Center on the Developing Child at Harvard University, age5–7 activities guide",
+          "url": "https://developingchild.harvard.edu/wp-content/uploads/2024/10/Executive-Function-Activities-for-5-to-7-year-olds.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; primary-resource readback and original untested task design",
+        "createdAt": "2026-11-10T18:09:58.424484Z",
+        "updatedAt": "2026-11-10T18:09:58.424484Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_utJE_Bt7MD",
+      "pedagogy": {
+        "summary": "Deliberately attend to an ordinary current sensory experience, notice when attention moves to a thought or another sensation, and bring attention back to a chosen focus without needing to judge, suppress or change the experience. This can occur when calm as well as when upset. This particular authored sequence is untested.",
+        "bestPractices": [
+          "Model a neutral specific observation rather than demanding calm or praise for compliance.",
+          "Use an accessible external focus when internal/breath attention is unsuitable, and retain honest process reports."
+        ],
+        "keyRepresentations": [
+          "Accessible ordinary sensory focus",
+          "Neutral cue for noticing attention change and return"
+        ],
+        "commonMisconceptions": [
+          "Sitting still, closing eyes, feeling happy or repeating a breathing explanation proves deliberate present-experience and thought awareness."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Deliberately attend to an ordinary current sensory experience, notice when attention moves to a thought or another sensation, and bring attention back to a chosen focus without needing to judge, suppress or change the experience. This can occur when calm as well as when upset.",
+        "activities": [
+          {
+            "title": "Ordinary noticing and attention return",
+            "learnerActions": [
+              "Adult briefly models a neutral specific observation about a safe sound or contact sensation.",
+              "Learner chooses a focus and explores it briefly; invite pointing/drawing/ordinary language for one noticed feature.",
+              "If attention naturally shifts, invite noticing that change and returning; do not plant a required thought or ask for private details.",
+              "Try a different ordinary setting/focus. For formal sensory integration, add a separate task relating two perceptions of the same event."
+            ],
+            "intendedInsight": "Deliberately attend to an ordinary current sensory experience, notice when attention moves to a thought or another sensation, and bring attention back to a chosen focus without needing to judge, suppress or change the experience. This can occur when calm as well as when upset.",
+            "feedback": [
+              "Reflect the actual observation neutrally, such as noticing a sound getting quieter. If the learner judges it good/bad, model describing its features without requiring removal of the judgment. If no attention change was noticed, offer another ordinary opportunity rather than inventing one."
+            ],
+            "rationale": "A still body or memorised calming slogan is compatible with attention being elsewhere. Specific noticing and an honestly described attention change/return distinguish the operation. A pleasant mood is not a criterion. This is an original task-design inference, not evidence of an efficacious intervention.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Changed ordinary sensory context",
+            "learnerActions": [
+              "Notice contact and sound during an ordinary walk or making activity, then return to a chosen focus. No upset is needed to demonstrate transfer."
+            ],
+            "intendedInsight": "The same operation is demonstrated with a changed case rather than the original answer, script or setting.",
+            "feedback": [
+              "Use a short external-sound focus when breath focus is uncomfortable or abstract; keep eyes open and use a drawn focus/attention-return cue. Do not train silent compliance or compulsory disclosure."
+            ],
+            "rationale": "Transfer separates ordinary awareness from upset-only coping and from requiring a preferred emotional state.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Permit a comfortable posture and eyes open. Natural sound/contact is an alternative when breath focus is uncomfortable; do not force a breathing pattern, retention or bodily sensation.",
+          "Do not manufacture distress, a thought or a distraction; an honestly reported attention process can be indicated without revealing private content.",
+          "The generic operation does not establish source-specific short stillness, longer exhalation, alternate-nostril performance or multisensory integration; those retain their own explicit source tasks.",
+          "No fixed attention-duration norm, therapeutic effect, improvement guarantee, forced positive feeling or learner field is introduced.",
+          "Original untested teaching/assessment design; no observed child performance or downstream learner-state action."
+        ],
+        "reviewNotes": [
+          "External resources support the activity category and access design, not a validated mastery cutoff or efficacy claim for this authored sequence."
+        ]
+      },
+      "assess": {
+        "method": "open_epistemic_probe",
+        "diagnosticPrompt": "During a quiet ordinary moment, can {{name}} choose a sound, touch or comfortable breath to notice, show something they noticed, recognise when attention moved elsewhere and bring it back? They can describe the process without telling you private thoughts.",
+        "correctAnswer": "Deliberately notices a specific feature of an accessible present experience, honestly identifies an attention change or thought when one occurs and returns to the chosen focus in a changed ordinary context, without suppressing or requiring private content.",
+        "whatMakesItDiscriminate": "A still body or memorised calming slogan is compatible with attention being elsewhere. Specific noticing and an honestly described attention change/return distinguish the operation. A pleasant mood is not a criterion.",
+        "errorPatterns": [
+          {
+            "pattern": "Sitting still, closing eyes, feeling happy or repeating a breathing explanation proves deliberate present-experience and thought awareness.",
+            "kind": "performance",
+            "revealedBy": "Only a still posture, memorised phrase or desirable mood is supplied as evidence.",
+            "nextMove": "Use a short external-sound focus when breath focus is uncomfortable or abstract; keep eyes open and use a drawn focus/attention-return cue. Do not train silent compliance or compulsory disclosure.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What did you notice about that experience? You can show or draw it.",
+          "If attention moved somewhere else, how did you notice and return? You need not tell me private thoughts."
+        ],
+        "responseLevels": {
+          "gap": "The declared accessible opportunities show only recitation or silent compliance rather than noticing. No private disclosure, visible calm or motionlessness is used to infer a deficit.",
+          "partial": "Can indicate an experience while prompted but has not yet shown deliberate focus selection, noticed attention change/return or changed-context use. A session with no naturally noticed shift gives insufficient evidence for that clause, not proof of failure.",
+          "full": "Deliberately notices a specific feature of an accessible present experience, honestly identifies an attention change or thought when one occurs and returns to the chosen focus in a changed ordinary context, without suppressing or requiring private content."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Accessible ordinary attention practice, including sound when breath focus is uncomfortable. Page benefit claims do not validate the authored mastery rubric or justify clinical efficacy claims.",
+          "source": "Children’s Wisconsin, K4–8 focus and attention resources",
+          "url": "https://childrenswi.org/en/elearningcenter/topics/mental-and-emotional-health/focusandattention-k8",
+          "verified": true
+        },
+        {
+          "claim": "Concrete noticing rather than anatomy recitation; choice of focus and comfortable observation. Do not transplant scripted pause durations, relaxation result or mandated posture; no support here for alternate-nostril technique.",
+          "source": "Children’s Wisconsin, K4–8 focus and attention resources",
+          "url": "https://edge.sitecorecloud.io/childrensho3e59-cw60b4-prod2126-77fc/media/elearning/focusandattention-k8/documents/Nourishing-Breaths.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; primary-resource readback and original untested task design",
+        "createdAt": "2026-11-10T18:09:58.424484Z",
+        "updatedAt": "2026-11-10T18:09:58.424484Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_6msyXavNJf",
+      "pedagogy": {
+        "summary": "Explore deliberate marks with suitable drawing/painting materials; connect changes in movement/pressure with the chosen effect. This particular sequence is untested.",
+        "bestPractices": [
+          "Permit original free mark production without requiring a named picture, alphabet or adult-perfect trace.",
+          "Support comfortable purposeful tool control and a chosen change; do not force a hand, painful grip or one body position."
+        ],
+        "keyRepresentations": [
+          "Learner-chosen lines and patches",
+          "Different suitable tools and surfaces with observable mark effects"
+        ],
+        "commonMisconceptions": [
+          "Accidentally leaving a trace, copying an adult trace without a changed choice, or recognising a letter demonstrates deliberate tool control."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use suitable drawing or painting tools to make marks deliberately, starting, moving and stopping the tool and adjusting movement or pressure for an intended line, area or effect. Explore a different tool or surface and adjust handling to produce a chosen effect. This does not require letter knowledge, recognisable pictures, a particular handedness or a fixed grip shape.",
+        "activities": [
+          {
+            "title": "Choose and change a mark",
+            "learnerActions": [
+              "Offer suitable accessible crayon/brush/chalk and free space for learner-chosen marks. Invite the learner to show a chosen start/stop or changed mark without requiring an object drawing.",
+              "Model one change of movement/pressure, then ask the learner to choose a different mark/change. Actual wrist/hand action is observed; do not physically force grip or dominance."
+            ],
+            "intendedInsight": "Starting, moving and stopping a tool and adjusting a movement produces an intended mark or changed effect without needing a recognisable object or letter.",
+            "feedback": [
+              "Point to where the mark started/stopped or changed width/coverage and connect that observable change to the actual movement. Offer a shorter/longer suitable tool or stable surface if handling obstructs the intended effect, without treating one grip as the score."
+            ],
+            "rationale": "A mark left by dropping/dragging a tool accidentally is not purposeful control. A traced adult shape may hide choices; a changed self-chosen stroke/tool transfer checks adjustment without importing geometry or letter mastery. The activity is an original design, not a tested intervention.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Adjust to another tool or surface",
+            "learnerActions": [
+              "Offer another tool/surface and compare its effect; let the learner adjust handling and show their intended result.",
+              "Retain free spontaneous production and the applicable source crayon-thumb/finger demonstration separately. No forced recognisable picture or alphabet inventory."
+            ],
+            "intendedInsight": "Tool/surface effects invite purposeful adjustment; a different medium does not create a different mastery claim.",
+            "feedback": [
+              "This tool leaves a different trace. Try your chosen adjustment and show what changed. Comfortable control matters; copying someone else’s grip or picture is not the target."
+            ],
+            "rationale": "A changed material tests adjustment beyond one practised adult trace without requiring script knowledge or a representational drawing.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use suitable accessible drawing/painting materials, stable support and appropriate oversight. Record relevant access/support conditions; an inaccessible tool does not prove lack of understanding.",
+          "No fixed handedness, tripod-grip score, letter inventory, recognisable picture, handwriting size, adult-shaped product or universal developmental age norm defines this shared operation.",
+          "Source-specific crayon thumb/finger handling and spontaneous production remain actual separately checked protocol duties. Preferred-hand use is a contextual observation rather than a new learner score.",
+          "These are original untested task designs, not observations that a child succeeded or evidence of efficacy; do not prescribe occupational therapy."
+        ],
+        "reviewNotes": [
+          "The checked NHS resource supports distinctions between mark making, grip, deliberate drawing and named-letter production. It does not validate the proposed response thresholds."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "diagnosticPrompt": "With drawing or painting materials, can {{name}} make marks they choose, change a mark in a deliberate way and adjust how they use another tool to get the effect they want? They do not need to draw a named object or write letters.",
+        "correctAnswer": "Makes chosen marks with purposeful start/movement/stop, changes a mark deliberately and adjusts handling with another suitable tool or surface, showing the intended change by action, pointing or ordinary language.",
+        "whatMakesItDiscriminate": "A mark left by dropping/dragging a tool accidentally is not purposeful control. A traced adult shape may hide choices; a changed self-chosen stroke/tool transfer checks adjustment without importing geometry or letter mastery.",
+        "errorPatterns": [
+          {
+            "pattern": "Only an accidental trace or one copied adult pattern is offered as evidence of mark control.",
+            "kind": "performance",
+            "revealedBy": "No deliberate start/stop or changed intended effect is shown when the example or material changes.",
+            "nextMove": "Begin with broad accessible surface and one chosen change, model movement then let the learner choose/start/stop; restore a new tool transfer rather than only repeat one adult trace.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Show what you would change to make the mark go another way or cover a different area.",
+          "What would you adjust with this other drawing or painting tool? You can show me."
+        ],
+        "responseLevels": {
+          "gap": "Accessible opportunities give no evidence of purposeful mark production; record access/material limits separately rather than infer a motor diagnosis.",
+          "partial": "Produces a chosen mark but has not yet shown a deliberate changed effect or adjustment to another suitable tool/surface.",
+          "full": "Makes marks deliberately, starts/moves/stops the tool for a chosen effect, changes the mark intentionally and adjusts handling in another suitable tool/surface case. No alphabet or representational drawing is required."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Primary child-development guidance distinguishes early mark making and varied materials from later deliberate drawing/letter formation, and describes grip variation and respecting left-handed preference. This supports task selection, not efficacy of this authored lesson.",
+          "source": "Bedfordshire and Luton Children’s Health, Getting ready to write; reviewed November 2024",
+          "url": "https://bedslutonchildrenshealth.nhs.uk/child-development-and-growing-up/hand-skills/getting-ready-to-write/",
+          "verified": true
+        },
+        {
+          "claim": "Pinned NCERT source positions C15LO02, LO03 and LO11 supply the selected original motor/material duties; wording is not reproduced.",
+          "source": "NCERT, Learning Outcomes at the Foundational Stage 2025",
+          "url": "https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; actual primary-source and guide readback with original untested teaching/assessment design",
+        "createdAt": "2026-11-10T18:16:32.860507Z",
+        "updatedAt": "2026-11-10T18:16:32.860507Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

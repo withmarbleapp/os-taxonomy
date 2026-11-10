@@ -20,36 +20,37 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1869,
+    "topics": 1872,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
       "Geography": 22,
       "History": 110,
-      "Learning to Learn": 18,
+      "Learning to Learn": 20,
       "Life Skills": 46,
       "Mathematics": 581,
       "Personal & Social Development": 118,
       "Science": 576,
-      "Physical Education": 7
+      "Physical Education": 7,
+      "Art & Design": 1
     },
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 8150,
+    "topicStandardLinks": 8200,
     "clusters": 176,
-    "teachingResearch": 1053,
+    "teachingResearch": 1056,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4333
+    "curriculumAlignments": 4346
   },
   "files": {
     "topics.json": {
-      "bytes": 2405035,
-      "sha256": "1c6dcb7d0f19d2221199addbec8d0f184ca218b8c3494ec94b4e2609ab9a1f30"
+      "bytes": 2413189,
+      "sha256": "1234434b547bde627f7efcf344b11587ccb4e303839833ca03b414464207027b"
     },
     "dependencies.json": {
-      "bytes": 876677,
-      "sha256": "6840fe567ad5f6df01ea1ad7e7a2f8d080d7cf24b31e1aa643621a0abc7f8316"
+      "bytes": 877095,
+      "sha256": "e0de887c5986f92e916d83dca725a6dd1ef849c85729cf981bee09cff3179aca"
     },
     "curriculum-standards.json": {
       "bytes": 2795125,
@@ -60,16 +61,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23469078,
-      "sha256": "5033ce42fae5ef176c98e383a3e7bd47515c2416d429c5dfe6d599d6fe80494b"
+      "bytes": 23494769,
+      "sha256": "735d8338c1300433fd09a0b0c32013df4d29e4afc41c0d2128852501d80abd2b"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1263124,
-      "sha256": "45adc47ecfcdede75b0d683dc0795c732727525f3d4c1f5764b37a049e6e73b6"
+      "bytes": 1269043,
+      "sha256": "d30b90f3133be780a3a26dd4135795f4f2a7041b4ac3c034d1d2c0b29cfb1ef6"
     }
   },
   "excluded": [
@@ -80,10 +81,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "1c6dcb7d0f19d2221199addbec8d0f184ca218b8c3494ec94b4e2609ab9a1f30",
+    "topicFileSha256": "1234434b547bde627f7efcf344b11587ccb4e303839833ca03b414464207027b",
     "coverage": {
-      "topicCount": 1869,
-      "withResearch": 1053,
+      "topicCount": 1872,
+      "withResearch": 1056,
       "withoutResearch": 816,
       "bySubject": {
         "Computing": {
@@ -107,8 +108,8 @@
           "withoutResearch": 110
         },
         "Learning to Learn": {
-          "topics": 18,
-          "withResearch": 0,
+          "topics": 20,
+          "withResearch": 2,
           "withoutResearch": 18
         },
         "Life Skills": {
@@ -134,6 +135,11 @@
         "Physical Education": {
           "topics": 7,
           "withResearch": 7,
+          "withoutResearch": 0
+        },
+        "Art & Design": {
+          "topics": 1,
+          "withResearch": 1,
           "withoutResearch": 0
         }
       },
