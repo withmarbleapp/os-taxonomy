@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "59e813f987cab5a2c9a4f901d487829631473bd94d01fc30bc38a3071ff03df7",
-  "recordCount": 1047,
+  "topicFileSha256": "563601155fc8caf9e2bb7d76ec3fdd0a6a460ae64bd8b71fd880676d6673bc7c",
+  "recordCount": 1048,
   "coverage": {
-    "topicCount": 1859,
-    "withResearch": 1047,
+    "topicCount": 1860,
+    "withResearch": 1048,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 23,
-        "withResearch": 1,
+        "topics": 24,
+        "withResearch": 2,
         "withoutResearch": 22
       },
       "History": {
@@ -215205,6 +215205,123 @@
         "originalResearchGeneratedBy": "Taxonomy curation: original source-checked land-purpose proposal; teaching efficacy untested",
         "createdAt": "2026-11-10T16:29:06Z",
         "updatedAt": "2026-11-10T16:29:06Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_B0IMsNXG5C",
+      "pedagogy": {
+        "summary": "Build a bounded regional knowledge pattern using the current physical-region convention and a separately identified provincial reference. Link names and broad locations to distinguishing characteristics rather than teaching a colour key or a uniform stereotype.",
+        "bestPractices": [
+          "Pair the current NRCan physical-region map with the verified Ontario outline. Their layers answer different questions; do not relabel a political boundary as a physical-region boundary.",
+          "Use Ontario examples where supplied: the Attawapiskat River low-relief wetland setting and the Niagara Escarpment within the southern lowlands. Do not relabel Manitoba or Quebec photographs as Ontario.",
+          "Ask for the three names and distinguishing characteristics after study, then transfer across map styling; do not certify regional knowledge solely by reading supplied labels."
+        ],
+        "keyRepresentations": [
+          "Current Atlas physical-region map and its stated legend",
+          "Separately attributed Ontario provincial outline, with major waters used as reference",
+          "Original short regional comparisons grounded in the checked descriptions"
+        ],
+        "commonMisconceptions": [
+          "All Ontario is Canadian Shield.",
+          "Every lowland is perfectly flat or the same as every other lowland.",
+          "The same boundary divides physical regions, provinces and First Nations communities.",
+          "A region is its colour on one particular map."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Connect each name, its broad location and a distinguishing landscape pattern, retaining both local variation and the difference between political and physical reference layers.",
+        "activities": [
+          {
+            "title": "One province, three broad physical patterns",
+            "learnerActions": [
+              "Find Ontario on the Statistics Canada reference and relate its major-water outline to the current NRCan national physical map. Identify the legend and keep political and physical boundaries distinct.",
+              "Locate and name the three Ontario-relevant broad regions using the stated current convention; compare their landscape descriptions rather than memorizing colours.",
+              "Use the Ontario Attawapiskat River example for the northern low-relief wetland and the Niagara Escarpment description to challenge the idea that southern lowlands have no relief. Describe the Shield’s rock-and-lake pattern without claiming every location is identical.",
+              "Remove the region-name labels from the assessment outline, explain locations and characteristics, then try a differently styled map with the same convention."
+            ],
+            "intendedInsight": "Named physical regions capture broad contrasting landscape patterns across Ontario; they do not simply reproduce political boundaries, and a broad region can contain local differences.",
+            "feedback": [
+              "If the whole province is named Shield, return to the distinct northern wetland and southern lowland areas in the current physical layer.",
+              "If a lowland is called featureless or every wet area is treated as the same region, compare the stated descriptions and broad positions.",
+              "If a map colour or a provincial border supplies the answer, change the styling and name the source layer that actually represents physical regions."
+            ],
+            "rationale": "Original untested teaching proposal based on checked factual maps/text. Contrasts and changed-style transfer are designed to reveal regional knowledge rather than copied labels; no classroom intervention study is claimed.",
+            "sourceClaims": [
+              "The current Atlas distinguishes Canadian Shield, Hudson Bay Lowland and Great Lakes–St. Lawrence Lowlands as physical regions with different landscape characteristics; the text gives an Ontario Hudson Bay Lowland example at the Attawapiskat River and southern lowland relief around the Niagara Escarpment.",
+              "Statistics Canada’s Ontario reference map identifies the provincial outline within Canada; it is a political reference, not a physical-region or Indigenous territory map."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use broad educational placement, not a precise parcel, navigation, legal or Indigenous-territory boundary determination. Do not project current boundaries back onto1780–1850 maps.",
+          "The current national map has no provincial outline overlay; keep the paired verified provincial reference explicit. Do not manufacture precision by casually stretching or aligning different map images.",
+          "State the current three-region Ontario convention. The archived sixth-edition map has different Hudson/Shield subdivision terminology and is not an interchangeable working map.",
+          "No required geology formation chronology, mineral classification, exhaustive subregion inventory, ecozone equivalence, job pattern or environmental causal model is added.",
+          "Names may be said aloud and supplied place labels read aloud; spelling or a particular digital app is not assessed. No travel is required.",
+          "Elicit names and distinguishing characteristics before offering the worked comparison. Hints or repeated source labels are scaffolding, not independent evidence for the full knowledge claim."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked factual proposal, reviewed for this bounded shared claim. Actual current region-layer image and the separate Statistics Canada provincial image were visually inspected. Earlier close-scale map export was blank outside the layer’s visibility range, not evidence of absent regions. Low confidence concerns untested teaching efficacy."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After exploring the current physical-region map together with an Ontario outline, show {{name}} an Ontario outline with major waters but without the three region names. Can they name the three broad physical regions from the convention you studied, show their broad locations and explain a characteristic that distinguishes each? Ask whether every location within one region must look identical, and have them explain using a checked Ontario example. Then use a differently styled reference map: can they recognize the same regions without relying on one colour scheme or confusing them with province or community boundaries?",
+        "correctAnswer": "Names and broadly locates the three regions, explains their contrasting landscape characteristics, retains local variation and identifies the physical-layer versus political-boundary distinction on a new map.",
+        "whatMakesItDiscriminate": "An outline without the three labels requires regional knowledge rather than copying. A northern wetland versus southern lowland comparison rules out a single undifferentiated lowland label, the escarpment challenges perfectly-flat reasoning, and changed styling rules out one colour key as the learned content.",
+        "probeDeeper": [
+          "Which region’s broad pattern is shown here, and what feature supports your answer?",
+          "How can a lowland include an escarpment or hills?",
+          "Does this line show a province or a physical region, and how do you know?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Names the entire province Shield or confuses political and physical layers.",
+            "revealedBy": "Uses Ontario’s provincial outline as the boundary of one physical region.",
+            "nextMove": "Compare the separately labelled source layers and locate their distinct northern and southern areas before naming them again.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats both lowlands as identical and completely flat, or answers only by map colour.",
+            "revealedBy": "Cannot explain a distinguishing characteristic or loses the region when styling changes.",
+            "nextMove": "Return to the source descriptions, contrast their setting and the southern escarpment example, then retry with different map colours.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not identify the three broad regional names/patterns or substitutes political labels.",
+          "partial": "Recalls names or one map but cannot distinguish their characteristics, local variation or changed styling.",
+          "full": "Connects names, broad locations and distinguishing characteristics across the stated convention and a new styled map without equating political and physical boundaries."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The current Atlas distinguishes Canadian Shield, Hudson Bay Lowland and Great Lakes–St. Lawrence Lowlands as physical regions with different landscape characteristics; the text gives an Ontario Hudson Bay Lowland example at the Attawapiskat River and southern lowland relief around the Niagara Escarpment.",
+          "source": "Natural Resources Canada — current Physiographic Regions of Canada text and Regions layer",
+          "url": "https://atlas.gc.ca/phys/en/index.html",
+          "verified": true
+        },
+        {
+          "claim": "Statistics Canada’s Ontario reference map identifies the provincial outline within Canada; it is a political reference, not a physical-region or Indigenous territory map.",
+          "source": "Statistics Canada — Ontario, Standard Geographical Classification reference map",
+          "url": "https://www.statcan.gc.ca/en/statistical-programs/document/SGC_CGT_17292_V1",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked Ontario regional-knowledge proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:03:56Z",
+        "updatedAt": "2026-11-10T17:03:56Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
