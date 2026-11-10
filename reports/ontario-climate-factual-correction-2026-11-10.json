@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "9d015d2",
+  "topicId": "mt_hjJkBWruO6",
+  "scope": "Correct universal climate examples and stale contradictory teaching; retain whole operation, all evidence/prompt/edges/contexts and original provenance. No new topic or climate physics mechanism.",
+  "beforeCard": {
+    "id": "mt_hjJkBWruO6",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Weather & Climate",
+    "name": "Geography & Local Weather",
+    "description": "Know that different places around the world have very different typical weather — tropical places are hot and wet all year, deserts are very dry, polar regions are freezing cold — and that geography (distance from the equator, altitude, nearness to the sea) affects local weather",
+    "ageRangeStart": 7,
+    "ageRangeEnd": 9,
+    "centrality": 0.07520325203252033,
+    "evidence": [
+      "Describe typical weather in at least three different climate types",
+      "Explain that places near the equator tend to be hotter",
+      "Name at least one factor that affects a place's weather besides latitude"
+    ],
+    "assessmentPrompt": "If {{name}} compared weather in a tropical rainforest, a desert, and the Arctic, could they describe how different each is and explain why — like distance from the equator?",
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.3",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.4",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.5",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.4",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.5",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.7",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.8"
+    ]
+  },
+  "afterCard": {
+    "id": "mt_hjJkBWruO6",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Weather & Climate",
+    "name": "Geography & Local Weather",
+    "description": "Know that places around the world have different typical weather: many lowland tropical places are warm year-round with rainfall that may vary by season; deserts are dry and can be hot or cold; polar regions have long cold winters and short cool summers. Explain how distance from the Equator, altitude and nearness to the sea influence local climate, using these as general patterns rather than rules for every day or place.",
+    "ageRangeStart": 7,
+    "ageRangeEnd": 9,
+    "centrality": 0.07520325203252033,
+    "evidence": [
+      "Describe typical weather in at least three different climate types",
+      "Explain that places near the equator tend to be hotter",
+      "Name at least one factor that affects a place's weather besides latitude"
+    ],
+    "assessmentPrompt": "If {{name}} compared weather in a tropical rainforest, a desert, and the Arctic, could they describe how different each is and explain why — like distance from the equator?",
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.2",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.3",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.4",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.5",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.4",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.5",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.7",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.8"
+    ]
+  },
+  "guidanceCorrections": [
+    "Seasonal tropical rainfall and cool polar summers qualify universal labels.",
+    "Remove unsupported thinner-air/heat-retention explanation; retain the ordinary altitude pattern, no new mechanism.",
+    "Separate controlled one-factor illustrations from actual climate-place comparisons and acknowledge other influences.",
+    "Keep dated local normals separate from daily weather and do not mix measures/periods.",
+    "Remove tier framing; existing evidence and assessmentPrompt remain exact."
+  ],
+  "references": [
+    {
+      "claim": "Tropical regions can have rainfall seasons; their general warmth is not a claim that every tropical place is wet at all times.",
+      "source": "NOAA JetStream — Tropical Weather Systems",
+      "url": "https://www.noaa.gov/jetstream/tropical",
+      "verified": true
+    },
+    {
+      "claim": "Iqaluit 1991–2020 composite normals show long cold winters and a cool summer, including July mean daily temperature above freezing. These are dated local normals, not every-day conditions.",
+      "source": "Environment and Climate Change Canada — Iqaluit 1991–2020 normals",
+      "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?climate_id=2402590&lstProvince=NU&searchType=stnProv",
+      "verified": true
+    },
+    {
+      "claim": "Singapore climate varies seasonally in rainfall despite year-round warmth; proximity to the sea affects its temperature pattern.",
+      "source": "Meteorological Service Singapore — Climate of Singapore",
+      "url": "https://www.weather.gov.sg/climate-climate-of-singapore",
+      "verified": true
+    },
+    {
+      "claim": "Altitude is among the factors affecting temperature; higher locations tend to be cooler. This does not verify the removed simple heat-retention causal gloss.",
+      "source": "Met Office — Understanding weather",
+      "url": "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/understanding-weather",
+      "verified": true
+    }
+  ],
+  "originalProvenanceRetained": true,
+  "pedagogicalEvidenceLimit": "New factual references support stated facts, not teaching efficacy. Confidence remains low for untested guidance; prior flags are historical.",
+  "consumerBoundary": "No learner state operation; old evidence based on always-wet or always-freezing labels should not be treated as certifying the corrected understanding without reviewing its content."
+}

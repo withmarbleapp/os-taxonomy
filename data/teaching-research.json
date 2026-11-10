@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "a5c82d9fa952b7bb591cca61ae60bf136d46d86491a3d6e6a7e7fc08a66cb80e",
+  "topicFileSha256": "27e1840750c41c510c25a8fd14ac9cedbf90d9aefb91cb613504f2b6edc572a9",
   "recordCount": 1048,
   "coverage": {
     "topicCount": 1860,
@@ -92823,7 +92823,7 @@
     {
       "topicId": "mt_hjJkBWruO6",
       "pedagogy": {
-        "summary": "• Age/Topic: 7–9, Geography & Local Weather — different places have very different typical weather (tropics hot/wet, deserts dry, poles freezing) and geography (distance from the Equator, altitude, nearness to the sea) drives those differences.\n• Standards — UK (DfE): KS1/KS2 geography — identify hot and cold areas of the world in relation to the Equator and the North/South Poles; describe and understand climate zones.\n• Standards — US (NGSS): 3-ESS2-2 '[curriculum wording omitted; reference 3-ESS2-2]' — the direct anchor. State/regional tier DEFERRED.\n• Operational details: teach latitude (distance from the Equator) as the dominant control, then layer secondary factors (altitude cools; the sea moderates); use a globe/map so children can locate places and read the Equator-to-pole temperature gradient; combine information from maps, photos and data (aligning to 3-ESS2-2's 'obtain and combine').\n• Checkpoint (Tier A|B|C): Tier A — describe typical weather in three climate types and state that places near the Equator are hotter; Tier B — name a non-latitude factor (altitude/sea) and explain its effect; Tier C — combine multiple factors to explain a specific place's climate.",
+        "summary": "For ages 7–9, compare typical weather across at least three climate types and relate it to geography: distance from the Equator, altitude and nearness to the sea. Tropical rainfall and polar temperatures vary seasonally; deserts are defined by dryness, not heat. Latitude is an important broad influence, not a complete explanation of a place’s climate. Distinguish long-term typical patterns from today’s weather. Existing evidence remains describing three types, explaining the broad near-Equator tendency and naming a non-latitude influence. These are parts of one claim, not difficulty tiers.",
         "bestPractices": [
           "Establish latitude first — the Equator-to-pole temperature gradient — using a globe so the Sun-angle cause is spatially anchored",
           "Add one factor at a time (altitude cools even at the Equator; nearness to the sea evens out temperatures) so children can isolate causes",
@@ -92846,13 +92846,13 @@
         ]
       },
       "learn": {
-        "summary": "For ages 7–9, help children see that a place's typical weather is not random but shaped by a few predictable geographic causes: distance from the Equator (latitude) is the main control on temperature, with altitude (higher is generally colder) and nearness to the sea (which usually evens out hot and cold extremes and can bring moisture) as major secondary factors. Children first establish the Equator-to-pole temperature gradient, then isolate one factor at a time, 'obtain and combine' information from at least two sources (map plus climate data or photos), and confront common confusions such as 'the South is always hot', 'higher means hotter', and 'all deserts are hot'.",
+        "summary": "Compare typical weather across at least three climate types using maps and dated climate summaries. Many lowland tropical places stay warm, but rainfall can have wetter and drier seasons. Polar regions have long cold winters and short cool summers; a summer day above freezing is not a contradiction. Deserts are dry and can be hot or cold. Relate broad temperature patterns to distance from the Equator, then use a supported altitude or coastal comparison to show that latitude is not the only influence. Do not infer the climate from one day or one photograph. No atmospheric formula, added climate type inventory or new difficulty level is required.",
         "activities": [
           {
             "title": "Climate map: vary one cause at a time",
             "feedback": [
-              "If a child says a mountain on the Equator must be hot, point to mountaintop-snow photos and prompt: the air high up is thinner and holds less heat, so higher is colder even near the Equator (an age-appropriate gloss of the fuller physics).",
-              "If a child expects two same-latitude places to have identical weather, have them change only ONE factor (altitude OR distance to sea) and watch the weather diverge.",
+              "If a child says a mountain on the Equator must be hot, compare dated climate summaries for high and low locations near the Equator: higher places are generally cooler. Do not require a new atmospheric-physics explanation or teach that thinner air simply holds less heat.",
+              "If a child expects two same-latitude places to have identical weather, use a clearly labelled illustrative model varying altitude OR distance to sea; a real pair may differ in several ways, so identify the supported influence without claiming all other causes are equal.",
               "When a child reads the sea as only cooling or only warming, show it both ways: cooler summers AND milder winters compared with inland places at the same latitude.",
               "Affirm correct reasoning by asking the child to name which single factor they changed and what effect it had."
             ],
@@ -92864,7 +92864,7 @@
             "learnerActions": [
               "Drop a place-marker somewhere on a world map and read its typical weather (e.g. typical temperature and whether it is wet or dry).",
               "Drag the marker from the poles toward the Equator and describe the overall trend in temperature along the way (watch for places, like high mountains, that break the pattern).",
-              "Park a place on the Equator at low altitude (hot all year), then raise its ALTITUDE and describe what happens to its weather; then move a place next to the sea and describe how its hot/cold extremes change.",
+              "Park a place on the Equator at low altitude (generally warm year-round), then raise its ALTITUDE and describe what happens to its weather; then move a place next to the sea and describe how its hot/cold extremes change.",
               "Combine a map view with a climate data or photo card into a short spoken or written summary: 'This place is ___ because ___.'"
             ],
             "intendedInsight": "A place's weather is the combined effect of a few geographic causes you can switch on and off: latitude sets the baseline, altitude cools, and the sea evens out extremes."
@@ -92872,7 +92872,7 @@
           {
             "title": "Spinning globe: why the Equator is hotter",
             "feedback": [
-              "If a child says the South is always hot and the North always cold, compare both poles (both freezing) and places at similar latitudes north and south of the Equator.",
+              "If a child says the South is always hot and the North always cold, compare both poles (both generally cold) and places at similar latitudes north and south of the Equator.",
               "Reinforce that 'near the Equator = more direct sun = warmer' by having the child point to where the beam is most concentrated."
             ],
             "rationale": "A rotatable globe makes the Equator-to-pole gradient genuinely spatial and can show the Sun-angle cause behind it, which a flat map represents less directly. A flat map can still teach the gradient; the globe is offered for the deeper 'why', not as the only way to learn this. The movable sunlight beam and latitude-band overlay are optional interaction examples. Note: the direct-vs-glancing-sunlight mechanism is correct science but is not directly stated in the listed sources.",
@@ -92897,29 +92897,28 @@
             "learnerActions": [
               "Study photo and climate-data cards for contrasting places: a tropical rainforest, a hot desert, a temperate coast, a polar region, and a high mountain.",
               "Describe the typical weather of at least three of these climate types in your own words.",
-              "Sort or sequence the places from coldest to hottest and say which geographic factor best explains each place's weather.",
+              "Compare the places using the same stated measure and period, then give a geographic reason for a supported difference. Do not combine a single summer day with another place’s annual average.",
               "Explain how a cold desert or a cold high desert can be a 'desert' — point out that 'desert' means dry, not hot."
             ],
             "intendedInsight": "Different places have very different typical weather, and for each case children can name a geographic factor (latitude, altitude, or nearness to the sea) that helps explain it, while knowing other things such as winds and mountains blocking rain also play a part."
           },
           {
-            "title": "Same latitude, different weather (diagnostic discussion)",
+            "title": "Same latitude, different typical weather (diagnostic discussion)",
             "feedback": [
-              "Gap response ('same latitude must mean same weather'): compare paired places that differ in only ONE factor at a time.",
-              "Partial response (lists altitude/sea/wind but can't isolate which explains a given difference): ask which single factor separates these two specific towns.",
-              "Full response: the child explains local weather as the combined effect of altitude, distance from the sea and wind, and isolates the operative factor for a new paired case such as equatorial mountain snow."
+              "If latitude alone is treated as decisive, compare one of the supported pairs again.",
+              "If a child lists factors without connecting one to the observed pattern, ask which geographic difference is relevant in that pair.",
+              "Do not require an unseen factor or a complete physical mechanism beyond the retained claim."
             ],
-            "rationale": "Holding latitude constant between two towns forces beyond-latitude reasoning and discriminates single-factor thinkers from children who can hold and isolate multiple factors. Spoken, responsive discussion lets a teacher probe and reteach in the moment.",
+            "rationale": "A supported pair isolates the factor being discussed; two different comparisons avoid changing altitude and nearness to the sea together while asking for a unique cause. A spoken explanation distinguishes identifying a factor from merely repeating a label.",
             "sourceClaims": [
               "Latitude is the dominant control on climate, with altitude and proximity to the sea as major secondary factors; children commonly over-attribute climate to latitude alone."
             ],
             "learnerActions": [
-              "Consider two towns at the same distance from the Equator on the same day and time of year: one high on a mountain, one by the sea. Explain why their weather might be quite different.",
-              "Answer: which single factor would you change to make the mountain town's weather more like the coastal town's?",
-              "Discuss: it snows on a mountain in a hot country near the Equator — how can that be?",
-              "Discuss: why do coastal places often have milder winters than inland places at the same latitude?"
+              "Use two prepared, source-supported comparisons. First compare higher and lower locations at similar latitude while keeping other stated conditions comparable; then compare coastal and inland seasonal summaries at similar latitude.",
+              "For each comparison, identify the relevant geographic difference and explain the supported typical-weather difference. Do not pretend that a mountain/coast pair varies only one factor.",
+              "Explain why a cold high place near the Equator does not disprove the general near-Equator warming pattern, and why the coast need not always be colder."
             ],
-            "intendedInsight": "When latitude is held equal, you must appeal to other factors — altitude, nearness to the sea, wind — to explain a difference, and you can isolate which factor is doing the work."
+            "intendedInsight": "Latitude alone does not fix local climate; altitude and proximity to the sea can each influence typical weather. Use evidence for the particular case."
           },
           {
             "title": "Voices from contrasting climates (enrichment)",
@@ -92942,15 +92941,18 @@
           "Recognition tasks (matching, sequencing, multiple choice) can assess and reinforce classification but do not by themselves require the child to construct an explanation; pair them with a spoken or written explanation of why a place has its weather.",
           "Teach latitude first, then add only one secondary factor at a time (altitude, then sea) so children can isolate each cause.",
           "A globe represents the spherical Earth more spatially than a flat map; a flat map is a flattened representation of the sphere but can still show the Equator-to-pole gradient. Distinguish the real spherical Earth from any flat picture or digital model of it; globes and maps on screen or card are models, not the Earth itself.",
-          "Explicitly confront hemisphere confusion ('South = always hot') by comparing places at similar latitudes north and south, and note that both poles are cold."
+          "Explicitly confront hemisphere confusion ('South = always hot') by comparing places at similar latitudes north and south, and note that both poles are cold.",
+          "Use dated climate normals as long-term local summaries, not a forecast or a universal rule. Compare like measures and periods. Rainfall seasons and cool polar summers must not be marked wrong for conflicting with simplified labels.",
+          "One-factor toggles are controlled illustrative models, not a claim about real paired places. Actual climate comparisons have other influences; identify a source-supported influence and stated limits rather than infer a controlled causal experiment."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of a saved teaching-research row; sources were NOT re-fetched or re-verified. All activities are research-informed proposals, not validated interventions.",
+          "Historical earlier review: This is an agent semantic rewrite of a saved teaching-research row; sources were NOT re-fetched or re-verified. All activities are research-informed proposals, not validated interventions.",
           "Two of the three sources (DfE curriculum claim; the latitude/altitude/sea dominance claim) are marked unverified in the source row; treat their specific framings as unconfirmed.",
           "The original row implied a flat map 'cannot' show the Equator-to-pole cause and that 2D toggles are 'ideal'; these comparative/necessity claims are catalog preferences, not established efficacy findings, and have been softened to scoped proposals with stated affordances.",
-          "The direct-vs-glancing-sunlight mechanism in the globe activity is correct, age-appropriate science but is not directly supported by any of the three listed sources (its sourceClaims is therefore empty); the DfE claim supports only the locate-Equator/poles portion.",
+          "Historical earlier review: The direct-vs-glancing-sunlight mechanism in the globe activity is correct, age-appropriate science but is not directly supported by any of the three listed sources (its sourceClaims is therefore empty); the DfE claim supports only the locate-Equator/poles portion.",
           "Comparative medium claims (map/globe better than narration; human accounts aiding memorability) are plausible but untested and have been softened to may/proposed wording.",
-          "Simplifications for ages 7–9: 'thinner air holds less heat' is a child-level gloss of why higher altitude is colder (the full explanation involves pressure and adiabatic effects); and 'latitude is the dominant control' is a general tendency, not a universal rule. Keep these as age-appropriate approximations and avoid overstating them."
+          "2026-11-10 factual/guidance correction by taxonomy curation: seasonal tropical rainfall and polar summers qualify the former universal labels; removed the unsupported thinner-air/heat-retention causal gloss. Original provenance is retained as history, not authorship of this update. Original source flags remain historical; new primary references support only the stated factual points. Activities are proposals, not classroom-validated interventions. No new learner criterion, dependency or interval is introduced.",
+          "The newly checked NOAA factual reference also supports the existing introductory sunlight-angle illustration. This is not a new mandatory calculation or assessment criterion. The original note about only three listed sources describes the prior review."
         ],
         "schemaVersion": 2
       },
@@ -92958,16 +92960,16 @@
         "method": "two_tier",
         "poeTask": null,
         "probeDeeper": [
-          "Which single factor would you change to make the mountain town's weather more like the coastal town's?",
+          "In the supplied higher/lower-place comparison, which geographic difference helps explain the temperature pattern?",
           "It snows on a mountain in a hot country near the equator. How can that be?",
           "Why do coastal places often have milder winters than inland places at the same latitude?"
         ],
-        "correctAnswer": "Factors besides latitude shape local weather: altitude (higher is colder), nearness to the sea (the ocean moderates temperature and adds moisture), and things like prevailing wind and mountains. So the same latitude can still mean very different local weather.",
+        "correctAnswer": "Latitude is an important influence, but higher places are generally cooler and nearby seas can moderate seasonal temperature differences. The evidence for each particular pair supports the explanation; the same latitude does not guarantee identical weather.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "'The only thing that changes weather is how far north you are' — single-factor thinking",
-            "nextMove": "Compare paired places that differ in only ONE factor at a time.",
+            "nextMove": "Use a clearly labelled one-factor illustrative model. With real places, point to a documented influence and acknowledge other differences rather than claiming the pair holds every other cause equal.",
             "distractor": "They should have the same weather because they're the same distance from the equator.",
             "revealedBy": "gives a one-factor answer and is stuck when latitude is held equal",
             "reteachPrerequisiteId": null
@@ -92975,7 +92977,7 @@
           {
             "kind": "misconception",
             "pattern": "'Higher up is warmer because it's closer to the Sun'",
-            "nextMove": "Mountaintop-snow photos; thinner air holds less heat, so higher is colder.",
+            "nextMove": "Compare actual high- and low-elevation climate evidence: higher places are generally cooler. A photo alone does not establish a year-round climate or its cause.",
             "distractor": "The mountain town is warmer because it's nearer the Sun.",
             "revealedBy": "predicts the mountain town is hotter",
             "reteachPrerequisiteId": null
@@ -92991,11 +92993,11 @@
         ],
         "responseLevels": {
           "gap": "Says the same latitude must mean the same weather; single-factor thinking.",
-          "full": "Explains local weather as the combined effect of altitude, distance from the sea and wind, and isolates the operative factor for a new paired case such as equatorial mountain snow.",
+          "full": "Connects altitude or nearness to the sea to the supported difference in a new paired case, while retaining the broad latitude pattern and describing typical rather than every-day weather.",
           "partial": "Lists factors (altitude, sea, wind) but cannot isolate which one explains a specific difference between the two towns."
         },
-        "diagnosticPrompt": "Two towns are at the same distance from the equator on the same day and time of year. One sits high on a mountain, the other by the sea. Why might their weather be quite different?",
-        "whatMakesItDiscriminate": "A child who thinks only 'how far north/south' or 'how sunny' sets weather cannot explain a difference between same-latitude towns; only a child holding multiple factors can isolate why the mountain and coastal towns differ."
+        "diagnosticPrompt": "Two places are at a similar distance from the Equator, but one is much higher. Their dated climate summaries show the higher place is cooler. How can that happen? Then compare a coastal and an inland place at similar latitude: why might their seasonal temperatures differ?",
+        "whatMakesItDiscriminate": "Similar latitude makes a latitude-only answer inadequate. Separate altitude and coastal comparisons make a documented additional influence discussable, while acknowledging real places may differ in other ways. A source-linked explanation and seasonal counterexample distinguish understanding from repeating factor names or absolute labels; no controlled-causation proof is required."
       },
       "sources": [
         {
@@ -93013,9 +93015,33 @@
           "claim": "Latitude is the dominant control on climate, with altitude and proximity to the sea as major secondary factors; children commonly over-attribute climate to latitude alone.",
           "source": "UK Met Office / NOAA climate education resources; geography-education literature",
           "verified": false
+        },
+        {
+          "claim": "Tropical regions can have rainfall seasons; their general warmth is not a claim that every tropical place is wet at all times.",
+          "source": "NOAA JetStream — Tropical Weather Systems",
+          "url": "https://www.noaa.gov/jetstream/tropical",
+          "verified": true
+        },
+        {
+          "claim": "Iqaluit 1991–2020 composite normals show long cold winters and a cool summer, including July mean daily temperature above freezing. These are dated local normals, not every-day conditions.",
+          "source": "Environment and Climate Change Canada — Iqaluit 1991–2020 normals",
+          "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?climate_id=2402590&lstProvince=NU&searchType=stnProv",
+          "verified": true
+        },
+        {
+          "claim": "Singapore climate varies seasonally in rainfall despite year-round warmth; proximity to the sea affects its temperature pattern.",
+          "source": "Meteorological Service Singapore — Climate of Singapore",
+          "url": "https://www.weather.gov.sg/climate-climate-of-singapore",
+          "verified": true
+        },
+        {
+          "claim": "Altitude is among the factors affecting temperature; higher locations tend to be cooler. This does not verify the removed simple heat-retention causal gloss.",
+          "source": "Met Office — Understanding weather",
+          "url": "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/understanding-weather",
+          "verified": true
         }
       ],
-      "confidence": "high",
+      "confidence": "low",
       "provenance": {
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-02T17:38:21.424Z",
@@ -93037,12 +93063,6 @@
           },
           {
             "path": "learn.activities[2].sourceClaims[0]",
-            "codes": [
-              "3-ESS2-2"
-            ]
-          },
-          {
-            "path": "pedagogy.summary",
             "codes": [
               "3-ESS2-2"
             ]
