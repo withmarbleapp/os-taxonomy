@@ -27134,7 +27134,7 @@
         "poeTask": null,
         "diagnosticPrompt": "Can {{name}} find the geographic North and South Poles where Earth’s spin axis meets its surface, and still identify them when a globe is turned? With a simple light-and-surface model, can they explain why slanting sunlight spreads over more area and helps make the polar regions cold, rather than say that the top of Earth or distance from a warm Equator causes the cold?",
         "correctAnswer": "Identifies both geographic axis endpoints regardless of page orientation and gives the introductory slant/spread explanation for cold polar regions.",
-        "whatMakesItDiscriminate": "Uses the current physical top/bottom as the pole definition or a distance-from-warm-middle pseudo-cause.",
+        "whatMakesItDiscriminate": "Turning the globe tests whether the learner retains the geographic rotation-axis endpoints instead of memorizing the current physical top. In the light model, keeping the beam and distance comparable while changing its angle makes the larger illuminated area the relevant difference, distinguishing the slant/spread explanation from a warm-Equator or distance-only story.",
         "probeDeeper": [
           "Can the learner retain the reference when the map/model view changes?",
           "Which reference/model supports the answer, and what does it not establish?"
