@@ -7,15 +7,15 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 31,
+    "Full": 33,
     "Partial": 0,
-    "Unverified": 9,
+    "Unverified": 7,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 59,
+    "pairs": 64,
     "topics": 15,
-    "codes": 31,
+    "codes": 33,
     "newClaims": 5,
     "reusedClaims": 10
   },
@@ -229,11 +229,14 @@
     },
     {
       "code": "B1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_G4Fz9lw20-",
+        "mt_asRwlPZXC3"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environment-integrated-review-2026-11-10.json",
+      "coverageBasis": "All selected specific clauses were separately reviewed; the additional protocols explicitly synthesize the overall relationships and regional/use account. Full is an authoring disposition requiring the stated protocol, not inference from link counts."
     },
     {
       "code": "B1.1",
@@ -353,11 +356,15 @@
     },
     {
       "code": "B3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_B0IMsNXG5C",
+        "mt_G4Fz9lw20-",
+        "mt_asRwlPZXC3"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environment-integrated-review-2026-11-10.json",
+      "coverageBasis": "All selected specific clauses were separately reviewed; the additional protocols explicitly synthesize the overall relationships and regional/use account. Full is an authoring disposition requiring the stated protocol, not inference from link counts."
     },
     {
       "code": "B3.1",
@@ -432,5 +439,5 @@
     }
   ],
   "semanticBoundary": "Five approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
-  "next": "Finish historical inquiry, then/now multiple-community roles/challenges, later policy and identity, historical community locations/relocation and settlement impacts; major goals remain separately pending."
+  "next": "Complete remaining seven historical source-fit duties and integrated A1/A3; the full B strand is authoring-accounted, not learner attainment."
 }

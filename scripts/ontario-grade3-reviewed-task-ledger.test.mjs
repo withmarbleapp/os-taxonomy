@@ -54,3 +54,12 @@ test('then-now comparison retains two actual community case sets across both rol
   assert.ok(report.resources.some(item => item.id === 'fort-william-current-roles'));
   assert.ok(report.resources.some(item => item.id === 'inuvialuit-current-roles-and-challenges'));
 });
+test('environment overall dispositions retain reviewed specifics and an integrated protocol', () => {
+  const report = read('reports/ontario-grade3-environment-integrated-review-2026-11-10.json');
+  for (const [overall, specifics] of Object.entries(report.prerequisiteSpecificDispositions)) {
+    assert.ok(Object.values(report.protocols).some(protocol => protocol.codes.includes(overall)));
+    for (const code of specifics) assert.equal(ledger.expectations.find(row => row.code === code)?.disposition, 'Full');
+    assert.equal(ledger.expectations.find(row => row.code === overall)?.dossier, 'ontario-grade3-environment-integrated-review-2026-11-10.json');
+    for (const [topicId, codes] of Object.entries(report.associations)) if (codes.includes(overall)) assert.ok(contexts.some(row => row.topicId === topicId && row.country === 'CA' && row.region === 'Ontario' && row.ageRangeStart === 8 && row.ageRangeEnd === 9 && row.standards.includes(prefix + overall)));
+  }
+});
