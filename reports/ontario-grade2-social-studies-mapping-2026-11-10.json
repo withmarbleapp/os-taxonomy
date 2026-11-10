@@ -7,11 +7,11 @@
   "scope": "Grade2SocialStudies; CA/Ontario7–8. No Native Languages programme integration; mandatory FNMI content retained.",
   "summary": {
     "reviewedCodes": 40,
-    "Full": 5,
-    "Partial": 35,
+    "Full": 7,
+    "Partial": 33,
     "newTopics": 2,
     "existingHolders": 19,
-    "topicStandardPairs": 108,
+    "topicStandardPairs": 114,
     "newContexts": 18,
     "extendedExactBandContexts": 3
   },
@@ -496,54 +496,88 @@
     {
       "officialCode": "A3.6",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3.6",
-      "requirementSummary": "Explain community heritage transmission",
-      "disposition": "Partial",
+      "requirementSummary": "Identify concrete community heritage-sharing channels",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_zbEcwd40uv",
           "topicName": "Celebrations we share",
           "role": "component",
-          "contribution": "Describe family/community celebrations and compare familiar practices; transmission or historical causes are not inferred from naming them."
+          "contribution": "Describes shared family/community celebrations and how they are marked. The resource task identifies which shared actions let people learn a practice."
         },
         {
           "topicId": "mt_OJVkWvIaM_",
           "topicName": "Similarities & Differences",
           "role": "component",
           "contribution": "Recognize inclusive differences among family structures, languages, foods and celebrations."
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component",
+          "contribution": "Explicitly explains how surviving objects, documents and stories allow later people to know past lives. Directly supports the oral/written channels in the family account and community cookbook."
+        },
+        {
+          "topicId": "mt_4A7FYmvVhA",
+          "topicName": "Describing Aloud",
+          "role": "component",
+          "contribution": "Clearly describe actual people, events and how the resource-supported practice is shared."
+        },
+        {
+          "topicId": "mt_NP101Zl-4g",
+          "topicName": "Using New Vocabulary",
+          "role": "component",
+          "contribution": "Use vocabulary precisely to communicate the particular resource-supported sharing channel; vocabulary alone is not heritage knowledge."
         }
       ],
-      "remainingConditions": [
-        "Explain how teaching, shared practice or community events pass heritage on, not just name a celebration; the independently assessable relationship needs further reuse/task review."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "community-heritage-channels"
     },
     {
       "officialCode": "A3.7",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3.7",
-      "requirementSummary": "Explain family heritage transmission including an Indigenous practice",
-      "disposition": "Partial",
+      "requirementSummary": "Identify concrete family heritage-sharing channels including a specific Indigenous family practice",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_zbEcwd40uv",
           "topicName": "Celebrations we share",
           "role": "component",
-          "contribution": "Describe family/community celebrations and compare familiar practices; transmission or historical causes are not inferred from naming them."
+          "contribution": "Describes shared family/community celebrations and how they are marked. The resource task identifies which shared actions let people learn a practice."
         },
         {
           "topicId": "mt_0O4mXv3asF",
           "topicName": "My family and where we're from",
           "role": "component",
-          "contribution": "Identify family members, relationships and origins; this alone does not explain changing traditions."
+          "contribution": "Its own-family relationship/origin claim contributes a relationship component when interpreting Kathy’s family account; the account does not demonstrate the pupil’s own-family whole claim."
         },
         {
           "topicId": "mt_Lcqm4_wR4D",
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component",
+          "contribution": "Explicitly explains how surviving objects, documents and stories allow later people to know past lives. Directly supports the oral/written channels in the family account and community cookbook."
+        },
+        {
+          "topicId": "mt_4A7FYmvVhA",
+          "topicName": "Describing Aloud",
+          "role": "component",
+          "contribution": "Clearly describe actual people, events and how the resource-supported practice is shared."
+        },
+        {
+          "topicId": "mt_NP101Zl-4g",
+          "topicName": "Using New Vocabulary",
+          "role": "component",
+          "contribution": "Use vocabulary precisely to communicate the particular resource-supported sharing channel; vocabulary alone is not heritage knowledge."
         }
       ],
-      "remainingConditions": [
-        "Account for an attributed First Nation, Métis or Inuit family practice and how it passes heritage; community programmes alone are not automatically family-practice evidence."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "family-heritage-practices"
     },
     {
       "officialCode": "B1",
@@ -1157,6 +1191,41 @@
       "nearMiss": "Names Canada as a continent, treats Equator as a country border, changes hemispheres when the globe is turned, or copies labels without retaining locations.",
       "transfer": "Differently centred map and turned globe, with a crossing region and a supplied alternative grouping convention.",
       "boundary": "This accounts for source identification, not every climate mechanism, country fact or map operation. The pole topic’s corrected coldness explanation remains in its own complete assessment; it is not invented as an additional mandatory B3.2 clause."
+    },
+    {
+      "id": "community-heritage-channels",
+      "sourceCodes": [
+        "A3.6"
+      ],
+      "existingTopics": [
+        "mt_9REmUc8r4D",
+        "mt_zbEcwd40uv",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "protocolDossier": "reports/ontario-grade2-heritage-resource-review-2026-11-10.json",
+      "task": "Use the attributed cases to identify what knowledge/practice is shared, who shares/learns it and how the community activity or surviving source lets later people learn. Compare oral conversations, written records and community teaching/gatherings; describe the actual channel rather than just name a holiday/food.",
+      "positive": "Identifies multiple concrete ways cultural/community knowledge is passed through the provided practices, with correct source/people attribution.",
+      "nearMiss": "Only names a food, language or event with no account of how people learn/share it, or generalizes one case to all peoples.",
+      "transfer": "Another ordinary source-supported community practice with a different channel, identifying what is preserved/shared rather than copying a phrase."
+    },
+    {
+      "id": "family-heritage-practices",
+      "sourceCodes": [
+        "A3.7"
+      ],
+      "existingTopics": [
+        "mt_0O4mXv3asF",
+        "mt_zbEcwd40uv",
+        "mt_9REmUc8r4D",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "protocolDossier": "reports/ontario-grade2-heritage-resource-review-2026-11-10.json",
+      "task": "Describe the relevant family practice and identify who shares what with another generation and how the shared celebration/practice carries it. Compare the family conversation/gathering channel with another family practice, retaining the actual FNMI case rather than replacing it with a generic family story.",
+      "positive": "Identifies several concrete family sharing/learning practices, including the specific Métis family account, without assuming cultural membership from ancestry or participation alone.",
+      "nearMiss": "Only names relatives or a celebration; omits the sharing/learning channel or the required attributed FNMI family practice.",
+      "transfer": "A different family practice/account while keeping its people, evidence and channel distinct."
     }
   ],
   "candidates": [
