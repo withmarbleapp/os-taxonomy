@@ -89,13 +89,20 @@ function checkSources(reviewBatches) {
         assert.equal(row.officialCode, sourceRow.officialCode, 'literal source code changed');
         assert.deepEqual(row.sourcePages, sourceRow.pdfPages, 'source page binding changed');
         assert.equal(row.sourceStatus, 'formal-stage-standard');
+        assert.equal(ledgerRow.languageRole, row.languageRole, 'readiness language-role drift');
+        assert.deepEqual(ledgerRow.sourcePdfPages, row.sourcePages, 'readiness source-page drift');
         if (['R1', 'R2'].includes(sourceRow.area)) assert.equal(row.languageRole, sourceRow.area);
+        else assert.deepEqual(row.languageRole === 'R1-and-R2' ? ['R1', 'R2'] : [row.languageRole],
+          sourceRow.applicability.languageRoles, 'Foundational source language roles drift');
       } else {
         const grade = row.key.match(/-EN-L2-G([12])-C/)[1];
         assert.equal(row.printedGrade, `Grade ${grade}`, 'printed English grade drift');
         assert.deepEqual(ledgerRow.sourceGradeBand, [`Grade ${grade}`], 'missing source grade metadata');
         assert.equal(row.targetLanguage, 'en');
         assert.equal(row.sourceLanguageRole, 'L2');
+        assert.equal(ledgerRow.targetLanguage, row.targetLanguage);
+        assert.equal(ledgerRow.sourceLanguageRole, row.sourceLanguageRole);
+        assert.deepEqual(ledgerRow.sourcePdfPages, row.sourcePdfPages);
         assert.equal(row.sourceStatus, 'suggestive-contextualisable-source-position');
       }
       if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, []);
@@ -226,6 +233,9 @@ test('cross-artifact guards reject source, protocol, withheld-link and prerequis
   const wrongSource = structuredClone(batches);
   wrongSource[2].report.records[0].key = 'ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.1-LO01';
   assert.throws(() => checkSources(wrongSource), /reviewed source keys/);
+  const wrongRole = structuredClone(batches);
+  wrongRole[0].report.records.find(row => row.officialCode === 'C-10.1').languageRole = 'R2';
+  assert.throws(() => checkSources(wrongRole), /language-role drift/);
   const missingProtocol = structuredClone(batches);
   missingProtocol[0].report.records[0].assessmentProtocols.push('missing-protocol');
   assert.throws(() => checkProtocols(missingProtocol), /unknown protocol/);
