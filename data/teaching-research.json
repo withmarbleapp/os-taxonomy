@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "23906f73bf912c30d609b6c4fb6c899b84c41672cafc1f5ad5033e4c12828fe5",
-  "recordCount": 1049,
+  "topicFileSha256": "5b1c8821b137fb30f963650af1cec907497d822b35313b0e276e7a22dc210d7d",
+  "recordCount": 1050,
   "coverage": {
-    "topicCount": 1861,
-    "withResearch": 1049,
+    "topicCount": 1862,
+    "withResearch": 1050,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -55,8 +55,8 @@
         "withoutResearch": 29
       },
       "Français": {
-        "topics": 3,
-        "withResearch": 3,
+        "topics": 4,
+        "withResearch": 4,
         "withoutResearch": 0
       }
     },
@@ -215372,6 +215372,102 @@
         "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
         "createdAt": "2026-11-10T14:00:00Z",
         "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_sPd4fWeY9x",
+      "pedagogy": {
+        "summary": "Connect an explicit taught French lexical corpus to its actual written forms, then check retained independent retrieval in another meaningful message. This is an original untested teaching proposal.",
+        "bestPractices": [
+          "Separate study with references from later retrieval without a written model.",
+          "Provide meaning context for homophones and assess the supplied intended word.",
+          "Check exact French letters and accents rather than infer from English spelling or fluent French speech."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked French word/phrase cards",
+          "Covered-model recall followed by an independent changed message"
+        ],
+        "commonMisconceptions": [
+          "Knowing the spoken word automatically establishes its spelling.",
+          "Copying a correct printed word establishes retained independent retrieval.",
+          "Any homophone can be assigned one spelling without meaning context."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Study, retrieve and reuse the taught written French word forms.",
+        "activities": [
+          {
+            "title": "Retrieve familiar French spellings in a new message",
+            "learnerActions": [
+              "Choose an explicit familiar French corpus and check each word’s intended meaning, spelling and accents with a fluent French-speaking teacher. Include regular and non-transparent spellings; no new word-count threshold or universal inventory is implied.",
+              "Study actual written forms in meaningful phrases, compare the letters/accents with the intended spoken word and practise recalling the spelling after covering the model. Attend to an actual unexpected part without implying that all French spelling is irregular.",
+              "After a few days without an immediate written model, write selected taught words from a meaning-linked spoken phrase or picture/context. An isolated homophone does not uniquely specify a spelling: supply the phrase/meaning when contrasting à/a or other ambiguous forms. Score what was actually specified.",
+              "Write a changed short French note or caption requiring taught words independently; compare with the intended message and check exact letters/accents. A reference dictionary may be used during learning/editing, but copying it during the independent retrieval check does not establish this claim.",
+              "Separate results from oral French vocabulary, sight-word recognition and generic planning/proofreading strategy. A learner can recognise or say monsieur yet write an incorrect remembered form; a copied correct word is a near miss. Do not require fast motor handwriting or prohibit legitimate thinking aloud."
+            ],
+            "intendedInsight": "A familiar French meaning has a particular written form; retained exact letters and accents support independent meaningful writing.",
+            "feedback": [
+              "Compare the intended word with the supplied correct form after the retrieval attempt.",
+              "Notice a specific letter or accent, practise meaning-linked retrieval, then recheck later in another message."
+            ],
+            "rationale": "Original low-confidence source-fit design; no intervention-effectiveness claim.",
+            "sourceClaims": [
+              "The official Ontario Core French programme includes improving written French work; retained familiar written forms contribute to this operation without establishing the whole writing expectation."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a verified explicit taught corpus and unambiguous meaning context.",
+          "No all-French spelling mastery, universal speed norm, whole-language proficiency, fixed handedness or motor-performance claim.",
+          "A live model, dictation echo with visible spelling or multiple-choice recognition alone does not establish independent written retrieval."
+        ],
+        "reviewNotes": [
+          "2026-11-10: proposed stable-ID adaptation from dahbiahmed PR23 head749ae; original community scope and adaptation recorded separately. Actual source clause reviewed; teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "use_in_context",
+        "poeTask": null,
+        "diagnosticPrompt": "After {{name}} has learned some familiar French words, can they write them correctly a few days later, including accents and spellings such as monsieur or beaucoup, then use them correctly in a new short French message without copying a model?",
+        "correctAnswer": "Retrieves the taught familiar French written forms accurately after a delay, including taught accents and non-transparent spellings, and independently uses them in another meaningful French message.",
+        "whatMakesItDiscriminate": "Delayed no-model exact spelling and meaningful changed-message use distinguish written French lexical knowledge from English spelling, oral knowledge, immediate copying and printed-word recognition. Meaning context prevents an ambiguous spoken homophone from creating a false failure.",
+        "probeDeeper": [
+          "Which intended word does this phrase or picture specify?",
+          "Can the learner retrieve the same taught French spelling in a different short meaningful message without a written model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Recognises or copies the printed French word but cannot retrieve its spelling independently.",
+            "revealedBy": "The correct form disappears when the visible model is removed or in another message.",
+            "nextMove": "Return to meaning-linked written-form study and covered-model retrieval, then recheck after a delay.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Supplies only an English form, unrelated letters or no reliable taught French written form.",
+          "partial": "Succeeds with a visible model or immediate study but not delayed independent retrieval and changed-message reuse.",
+          "full": "Retrieves the taught exact French forms after a delay and uses them correctly in another meaningful message without a written model."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The official Ontario Core French programme includes improving written French work; retained familiar written forms contribute to this operation without establishing the whole writing expectation.",
+          "source": "Ontario Ministry of Education, Core French2013 programme",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and original source-fit teaching proposal",
+        "createdAt": "2026-11-10T20:43:47.743306Z",
+        "updatedAt": "2026-11-10T20:43:47.743306Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

@@ -20,7 +20,7 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1861,
+    "topics": 1862,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
@@ -31,25 +31,25 @@
       "Mathematics": 578,
       "Personal & Social Development": 118,
       "Science": 576,
-      "Français": 3
+      "Français": 4
     },
     "dependencies": 3994,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7659,
+    "topicStandardLinks": 7677,
     "clusters": 176,
-    "teachingResearch": 1049,
+    "teachingResearch": 1050,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4112
+    "curriculumAlignments": 4118
   },
   "files": {
     "topics.json": {
-      "bytes": 2359040,
-      "sha256": "23906f73bf912c30d609b6c4fb6c899b84c41672cafc1f5ad5033e4c12828fe5"
+      "bytes": 2361934,
+      "sha256": "5b1c8821b137fb30f963650af1cec907497d822b35313b0e276e7a22dc210d7d"
     },
     "dependencies.json": {
-      "bytes": 873396,
-      "sha256": "b02c5a9f282eb4657a6af0aa754139eb2a457a3c80518a93fa62b3314eb1e798"
+      "bytes": 873714,
+      "sha256": "cd03c65c08ba73fbd298e2b84fe285ecd099ffe18e8e774299c733f46fe98d42"
     },
     "curriculum-standards.json": {
       "bytes": 2795125,
@@ -60,16 +60,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23428241,
-      "sha256": "39b1c64af874acb192071cf316b68989d451d84dfee6ba071858b1a039acd12a"
+      "bytes": 23435569,
+      "sha256": "b657bfb38a92ea0de6861afca7411b47133e040ccea9bc1ab99f16e10c459f46"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1188248,
-      "sha256": "84fda2e98e650950849dde95949298512483e4ff89a36cd8335df00ca551ee29"
+      "bytes": 1191006,
+      "sha256": "43306ffbb75bd69180add10a0ef2be5f7fef4a2ec01bb3e767a03fd8e982b1ec"
     }
   },
   "excluded": [
@@ -80,10 +80,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "23906f73bf912c30d609b6c4fb6c899b84c41672cafc1f5ad5033e4c12828fe5",
+    "topicFileSha256": "5b1c8821b137fb30f963650af1cec907497d822b35313b0e276e7a22dc210d7d",
     "coverage": {
-      "topicCount": 1861,
-      "withResearch": 1049,
+      "topicCount": 1862,
+      "withResearch": 1050,
       "withoutResearch": 812,
       "bySubject": {
         "Computing": {
@@ -132,8 +132,8 @@
           "withoutResearch": 29
         },
         "Français": {
-          "topics": 3,
-          "withResearch": 3,
+          "topics": 4,
+          "withResearch": 4,
           "withoutResearch": 0
         }
       },
