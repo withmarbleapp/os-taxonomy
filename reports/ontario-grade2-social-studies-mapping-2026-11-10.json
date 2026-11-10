@@ -7,12 +7,12 @@
   "scope": "Grade2SocialStudies; CA/Ontario7–8. No Native Languages programme integration; mandatory FNMI content retained.",
   "summary": {
     "reviewedCodes": 40,
-    "Full": 4,
-    "Partial": 36,
-    "newTopics": 0,
-    "existingHolders": 18,
-    "topicStandardPairs": 101,
-    "newContexts": 15,
+    "Full": 5,
+    "Partial": 35,
+    "newTopics": 2,
+    "existingHolders": 19,
+    "topicStandardPairs": 108,
+    "newContexts": 18,
     "extendedExactBandContexts": 3
   },
   "coverageMeaning": "Authoring source-fit judgments, not learner certification. Component links are not Full coverage or a completion percentage. Partial rows name real unresolved concepts/resources/tasks; no new topic count is inferred.",
@@ -869,6 +869,24 @@
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_6M7zCpUQex",
+          "topicName": "Continents on maps and globes",
+          "role": "component",
+          "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
+        },
+        {
+          "topicId": "mt_eoQNkZGzxK",
+          "topicName": "Equator and Northern and Southern Hemispheres",
+          "role": "component",
+          "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
+        },
+        {
+          "topicId": "mt_4uPnLieBPN",
+          "topicName": "Where Are the Poles?",
+          "role": "component",
+          "contribution": "Identify the geographic poles with the corrected exact-ID claim; preserve introductory sunlight explanation separately from the source identification requirement."
         }
       ],
       "remainingConditions": [
@@ -898,6 +916,12 @@
           "topicName": "Reading and drawing maps",
           "role": "component",
           "contribution": "Read and construct familiar-place maps with key, labels and relative landmarks; global reference knowledge is separate."
+        },
+        {
+          "topicId": "mt_6M7zCpUQex",
+          "topicName": "Continents on maps and globes",
+          "role": "component",
+          "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
         }
       ],
       "remainingConditions": [
@@ -908,18 +932,35 @@
       "officialCode": "B3.2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2",
       "requirementSummary": "Identify continents, waters and global references",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_8QOeG3CuKc",
           "topicName": "The Five Oceans",
           "role": "component",
           "contribution": "Name/locate the five connected oceans; continents and hemisphere references are separate knowledge."
+        },
+        {
+          "topicId": "mt_6M7zCpUQex",
+          "topicName": "Continents on maps and globes",
+          "role": "component",
+          "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
+        },
+        {
+          "topicId": "mt_eoQNkZGzxK",
+          "topicName": "Equator and Northern and Southern Hemispheres",
+          "role": "component",
+          "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
+        },
+        {
+          "topicId": "mt_4uPnLieBPN",
+          "topicName": "Where Are the Poles?",
+          "role": "component",
+          "contribution": "Identify the geographic poles with the corrected exact-ID claim; preserve introductory sunlight explanation separately from the source identification requirement."
         }
       ],
-      "remainingConditions": [
-        "Continent naming/location and Equator/hemisphere knowledge lack an accepted whole claim after cross-domain search. Existing pole card has an explicit scientific-quality follow-up; do not duplicate it or import its orientation error."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "world-reference-identification"
     },
     {
       "officialCode": "B3.3",
@@ -1093,6 +1134,29 @@
       "success": "Correctly sequences the multi-generation events and justifies an added event with the supplied record.",
       "nearMiss": "Groups events by liking or makes equal timeline spacing mean equal duration despite no scale.",
       "boundary": "A source-fit task specification; no actual learner records are requested to certify authoring coverage."
+    },
+    {
+      "id": "world-reference-identification",
+      "sourceCodes": [
+        "B3.2"
+      ],
+      "existingAndNewTopics": [
+        "mt_6M7zCpUQex",
+        "mt_eoQNkZGzxK",
+        "mt_4uPnLieBPN",
+        "mt_8QOeG3CuKc"
+      ],
+      "materials": "A globe and at least two differently centred/oriented world maps, stated seven-continent convention, familiar location markers and an adult-verified geographical reference key. The independent task does not merely copy complete printed labels.",
+      "task": [
+        "Name/locate the seven continents in the specified model and distinguish continent/country/ocean references. Explain that Oceania is a region rather than a continent under the stated NationalGeographic model, without declaring every other map convention false.",
+        "Name/locate significant waters through the existing FiveOceans claim and recognize their connected global water body.",
+        "Identify geographic poles and Equator, then Northern/Southern Hemispheres; classify provided points and a region crossing the Equator. No mandatory PrimeMeridian/Eastern/Western inventory is inferred from the Ontario clause.",
+        "Transfer to another map/globe view without using physical page-up as geographic north. A map projection can distort or omit a pole; use the globe/reference when the representation does not establish it."
+      ],
+      "positive": "Correctly identifies the required continent/water/reference features and transfers across views, keeping geographic conventions explicit.",
+      "nearMiss": "Names Canada as a continent, treats Equator as a country border, changes hemispheres when the globe is turned, or copies labels without retaining locations.",
+      "transfer": "Differently centred map and turned globe, with a crossing region and a supplied alternative grouping convention.",
+      "boundary": "This accounts for source identification, not every climate mechanism, country fact or map operation. The pole topic’s corrected coldness explanation remains in its own complete assessment; it is not invented as an additional mandatory B3.2 clause."
     }
   ],
   "candidates": [
@@ -1117,20 +1181,20 @@
         "B3.3"
       ],
       "condition": "Whole neighbouring-country location, direction AND scale-distance comparison currently starts8; no automatic G2start7 context."
-    },
-    {
-      "topicId": "mt_4uPnLieBPN",
-      "codes": [
-        "B3.2"
-      ],
-      "condition": "Existing pole-identification knowledge, but absolute top/bottom and latitude-only cold explanation need a separate quality correction; no new pole clone."
     }
   ],
   "genuineKnowledgeProposals": [
-    "Continent identification/location: no accepted whole claim found after all-subject semantic search; proposal required before authoring.",
-    "Equator/hemisphere reference distinctions: no accepted whole claim found; clarify exact source hemisphere scope before authoring.",
     "Heritage-transmission relationship: naming celebrations/family does not automatically explain intergenerational transmission; complete reuse/task review before any addition."
   ],
-  "preservation": "No authored topic/research/dependency/catalogue changes. All unaffected scoped intervals and standards retained; no start-age lowering. NewCA7–8 contexts are justified only for complete existing claims, while Full source judgments use specified source-fit protocols.",
-  "consumerBoundary": "No DB writes, learner changes, inferred mastery transfer or downstream publication."
+  "preservation": "Two justified concepts added; exact-ID pole scientific correction is explicit. All other authoredclaims/research, existing scoped intervals, dependencies/catalogue remain unchanged; no startage lowering. The pole’s globalend extends7→8 only from its new exactCA7–8 context.",
+  "consumerBoundary": "No DB writes, learner changes, inferred mastery transfer or downstream publication.",
+  "worldReferenceFollowUp": {
+    "report": "ontario-grade2-world-reference-claims-2026-11-10.json",
+    "baseCommit": "8a15b83",
+    "newConceptIDs": [
+      "mt_6M7zCpUQex",
+      "mt_eoQNkZGzxK"
+    ],
+    "correctedID": "mt_4uPnLieBPN"
+  }
 }

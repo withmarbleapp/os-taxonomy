@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1858,
+  "topicCount": 1860,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -37650,17 +37650,20 @@
       "subject": "Science",
       "domain": "Polar Regions",
       "name": "Where Are the Poles?",
-      "description": "Know that Earth has a North Pole and a South Pole — the two coldest places on the planet — and be able to find them on a globe, understanding that they are at the very top and very bottom of the Earth, as far from the Equator as possible",
+      "description": "Locate the geographic North Pole and South Pole as the opposite points where Earth’s rotation axis meets its surface. Recognize the surrounding polar regions as typically very cold because sunlight reaches them at a slant and spreads its energy over a larger area; map top/bottom is a drawing convention, not an absolute up/down for Earth.",
       "ageRangeStart": 5,
-      "ageRangeEnd": 7,
+      "ageRangeEnd": 8,
       "centrality": 0.125,
       "evidence": [
-        "Point to the North Pole and South Pole on a globe or world map",
-        "Explain that the poles are the coldest places on Earth because they are farthest from the Equator",
-        "State that the North Pole is at the top and the South Pole is at the bottom of the Earth"
+        "Locate both geographic poles on a globe or world map and identify them as the surface endpoints of Earth’s rotation axis, not two large regions or physical sticks.",
+        "Keep the same geographic poles when the globe or page is turned; explain that north-at-the-top is a map convention rather than Earth having an absolute top/bottom.",
+        "Explain in introductory terms that slanting sunlight spreads its energy over more area near the poles, contributing to cold polar conditions; distance from the Equator is a location clue, not a heat-producing cause."
       ],
-      "assessmentPrompt": "If you hand {{name}} a globe, can they point to the North Pole and the South Pole and tell you they're the coldest places on Earth?",
-      "standards": []
+      "assessmentPrompt": "Can {{name}} find the geographic North and South Poles where Earth’s spin axis meets its surface, and still identify them when a globe is turned? With a simple light-and-surface model, can they explain why slanting sunlight spreads over more area and helps make the polar regions cold, rather than say that the top of Earth or distance from a warm Equator causes the cold?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
     },
     {
       "id": "mt_kDKo4lxRKi",
@@ -42543,6 +42546,50 @@
       "evidence": [],
       "assessmentPrompt": "Has {{name}} heard of geoengineering? Can they describe one proposal for deliberately cooling the Earth and explain one potential risk of attempting it — and say whether they think individuals or governments bear more responsibility for tackling climate change?",
       "standards": []
+    },
+    {
+      "id": "mt_6M7zCpUQex",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Continents on maps and globes",
+      "description": "Name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America using the stated seven-continent map model. Distinguish continents from countries and oceans, and recognize that geographical models and labels can differ; state the model being used rather than assume every map groups land in exactly the same way.",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "centrality": 0,
+      "evidence": [
+        "Name and locate the seven continents in the stated model on a world map and globe without simply copying labels.",
+        "Distinguish a country, continent and ocean in familiar examples; recognize that Australia can name both a country and a continent in this model.",
+        "Locate the same continents on a differently centred map or turned globe and explain a different grouping/label convention when it is explicitly supplied."
+      ],
+      "assessmentPrompt": "Using the seven-continent model, can {{name}} name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America on a map and globe, distinguish a country and an ocean from a continent, and still find the same continents on another view? If another map groups or labels land differently, can they say which model they are using rather than call every difference an error?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.1",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
+    },
+    {
+      "id": "mt_eoQNkZGzxK",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Equator and Northern and Southern Hemispheres",
+      "description": "Identify the Equator as an imaginary circle around Earth halfway between the geographic poles, dividing Earth into Northern and Southern Hemispheres. Locate points or regions relative to it on maps and globes, using the geographic reference rather than the current top of a page or model.",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "centrality": 0,
+      "evidence": [
+        "Locate the Equator on a globe or world map and explain that it is an imaginary reference, not a physical wall or country border.",
+        "Identify the Northern Hemisphere on the North Pole side of the Equator and the Southern Hemisphere on the South Pole side.",
+        "Classify supplied points/regions as north, south or crossing the Equator, recognizing that a region may extend into both halves.",
+        "Transfer the reference to a turned globe or differently oriented/centred map without redefining north as whichever side is physically up."
+      ],
+      "assessmentPrompt": "On a globe and another world map, can {{name}} find the Equator, identify the Northern and Southern Hemispheres, and place some marked locations in the correct half? Can they explain a region that crosses the Equator and keep the same geographical references when the model or page is turned?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
     }
   ]
 }

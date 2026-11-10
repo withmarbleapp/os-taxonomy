@@ -20,11 +20,11 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1858,
+    "topics": 1860,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
-      "Geography": 22,
+      "Geography": 24,
       "History": 109,
       "Learning to Learn": 18,
       "Life Skills": 46,
@@ -35,16 +35,16 @@
     "dependencies": 3994,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7687,
+    "topicStandardLinks": 7694,
     "clusters": 176,
-    "teachingResearch": 1046,
+    "teachingResearch": 1048,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4107
+    "curriculumAlignments": 4110
   },
   "files": {
     "topics.json": {
-      "bytes": 2356924,
-      "sha256": "bd513ed7d02cbe55cf4a62164876c26391d09c001ba9f9a7513f511ab65fc819"
+      "bytes": 2361237,
+      "sha256": "129f81d4b8319769e1b3d57807d2a2a45045c199a597915b81c0bf64cac97b36"
     },
     "dependencies.json": {
       "bytes": 872875,
@@ -59,16 +59,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23409997,
-      "sha256": "df2703019b859b5ec06fc802e905756bd856c22683a8d203999cb583cb5d7359"
+      "bytes": 23412209,
+      "sha256": "2cb623125dda7763815d790642cf124c97ac5ea1b2d4704cc6d821c16ca405aa"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1189473,
-      "sha256": "f9ef8ba43b8e8c174130e77facfb302faa4e6ef7b5218453dccc8638ae5ea120"
+      "bytes": 1190673,
+      "sha256": "709e14dcd8172721eef3f26b3a85ee63fb997a2abcc054f585dddbcc0ffcc51b"
     }
   },
   "excluded": [
@@ -79,10 +79,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "bd513ed7d02cbe55cf4a62164876c26391d09c001ba9f9a7513f511ab65fc819",
+    "topicFileSha256": "129f81d4b8319769e1b3d57807d2a2a45045c199a597915b81c0bf64cac97b36",
     "coverage": {
-      "topicCount": 1858,
-      "withResearch": 1046,
+      "topicCount": 1860,
+      "withResearch": 1048,
       "withoutResearch": 812,
       "bySubject": {
         "Computing": {
@@ -96,8 +96,8 @@
           "withoutResearch": 339
         },
         "Geography": {
-          "topics": 22,
-          "withResearch": 0,
+          "topics": 24,
+          "withResearch": 2,
           "withoutResearch": 22
         },
         "History": {
