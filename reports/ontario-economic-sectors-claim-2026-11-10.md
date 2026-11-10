@@ -1,0 +1,9 @@
+# Shared economic-sector classification
+
+The [card and original teaching proposal](ontario-economic-sectors-claim-2026-11-10.json) add one shared knowledge claim, `mt_ugSofLX87k`, for the explicitly stated four-sector model in Ontario Grade 4 B3.3. Resource production/extraction, material processing, general services and information/knowledge work are distinguished with actual industry examples. This model is not presented as a universal legal or statistical company classification.
+
+Existing goods/services, supply-chain, production-input, work-role and land-purpose claims do not supply these exact distinctions: both extraction and manufacturing can produce goods, while transport and research can both be services. The new assessment requires the four labels, close contrasts, a new-context transfer, and careful treatment of mixed or insufficient activity descriptions. No new prerequisite or country/grade clone is introduced. India’s parallel track checked for overlap and will reuse this ID where its actual source calls for the same knowledge.
+
+The original low-confidence guide is an untested teaching design. Factual source verification concerns the official model, not instructional effectiveness. One exact Ontario ages 9–10 context accounts for this source clause; old cards, guides, contexts and edges remain unchanged. No regional industry, sustainability or learner mastery result is inferred from the classification.
+
+The [Grade 4 current ledger](ontario-grade4-social-current-ledger-2026-11-10.json) has one accounted source-fit clause and 41 still under qualification. The [source readback](ontario-grade4-social-source-review-2026-11-10.json) records the actual published course identity and its 2018 edition field beneath the accepted aggregate `ON-SSHG-2026` catalogue identity. This is a dependent local proposal, not accepted default-branch coverage or database publication.
