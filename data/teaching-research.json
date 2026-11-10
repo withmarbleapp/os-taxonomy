@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "675302ccdd6b4fdbc012a79498c0402f8e2d52130136394b1b6599c7edcdc2ab",
-  "recordCount": 1060,
+  "topicFileSha256": "894b7ebc51f8215a224b3387ab98a42aa4848eba44854df65f78015c59864b9a",
+  "recordCount": 1064,
   "coverage": {
-    "topicCount": 1875,
-    "withResearch": 1060,
+    "topicCount": 1879,
+    "withResearch": 1064,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -60,8 +60,13 @@
         "withoutResearch": 0
       },
       "Art & Design": {
-        "topics": 1,
-        "withResearch": 1,
+        "topics": 2,
+        "withResearch": 2,
+        "withoutResearch": 0
+      },
+      "Performing Arts": {
+        "topics": 3,
+        "withResearch": 3,
         "withoutResearch": 0
       }
     },
@@ -216698,6 +216703,584 @@
         "originalResearchGeneratedBy": "Taxonomy curation: factual source review and untested teaching proposal",
         "createdAt": "2026-11-10T14:00:00Z",
         "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_zwiJAMjtMU",
+      "pedagogy": {
+        "summary": "Build a listen–produce–compare–adjust loop with comfortable heard references. Keep pitch distinct from loudness, beat copying and naming an absolute note.",
+        "bestPractices": [
+          "Model a short comfortable reference, leave a turn for the learner to reproduce it and let both sounds be heard again before an adjustment.",
+          "Use at least one changed reference to distinguish relative matching from a fixed memorised sound; choose a range the learner or instrument can actually produce.",
+          "When an attempt differs, cue higher/lower by sound or gesture without asking for greater force or louder singing."
+        ],
+        "keyRepresentations": [
+          "Heard reference and learner echo in separate turns",
+          "Two audible attempts compared with the same reference",
+          "A suitable pitched instrument or comfortable humming voice"
+        ],
+        "commonMisconceptions": [
+          "Louder means higher pitch.",
+          "Knowing a note name or clapping a rhythm proves pitch reproduction.",
+          "Trying harder or forcing the voice will necessarily reach an unsuitable target."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Build a listen–produce–compare–adjust loop with comfortable heard references. Keep pitch distinct from loudness, beat copying and naming an absolute note.",
+        "activities": [
+          {
+            "title": "Hear an anchor, echo and compare",
+            "learnerActions": [
+              "An adult sounds a short comfortable reference on the voice or a suitable pitched instrument. The learner first listens, then reproduces the pitch without being told a note name.",
+              "Repeat the reference and compare the result. If the produced note differs, let the learner try a higher or lower adjustment and listen again.",
+              "Use a second reference within a comfortable available range, keeping the task about relative heard matching rather than an absolute-note memory test."
+            ],
+            "intendedInsight": "The heard target, not loudness or a label, guides the produced pitch.",
+            "feedback": [
+              "If the learner gets louder without changing pitch, compare a quieter reference with the attempt and invite a smaller higher/lower change.",
+              "If the reference is outside the usable range, change the task range rather than treating strain as a learning requirement."
+            ],
+            "rationale": "This original echo/comparison sequence instantiates the checked primary pitch-reference example; its effectiveness has not been tested.",
+            "sourceClaims": [
+              "NCERT Grade 3 Bansuri-I includes a heard-pitch reference and singing practice with a reference instrument."
+            ]
+          },
+          {
+            "title": "Compare two attempts and make an actual adjustment",
+            "learnerActions": [
+              "Hear a reference and two brief adult attempts, one a clear mismatch and one a match, without displaying the answer as a colour or number.",
+              "Choose which sounds nearer to the reference and demonstrate a production or adjustment of their own.",
+              "Change the reference and order of the comparison, so remembering the first position cannot supply the answer."
+            ],
+            "intendedInsight": "Perceptual comparison becomes a cue for intentional reproduction rather than a high/low label alone.",
+            "feedback": [
+              "If selection is correct but own production is not yet matched, distinguish listening evidence from production and scaffold the echo; do not claim the entire operation passed.",
+              "Avoid professional pitch-accuracy quotas or automated clinical judgements; record the actual audible evidence and support."
+            ],
+            "rationale": "An authored discrimination/transfer check, not an externally validated pitch-development test.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "No fixed concert pitch, universal tuning system, note-name inventory, musical notation or instrument is a prerequisite.",
+          "Use comfortable brief unforced sound production and appropriate hearing/access arrangements. No shouting, breath-holding or prolonged vocal strain.",
+          "The claim requires actual audible reproduction; a visual frequency label, hearing a difference or explaining vibration physics alone is insufficient.",
+          "Access adaptations and assessor support must be declared. An adult supplying the matched output is not the learner’s production."
+        ],
+        "reviewNotes": [
+          "Original source-informed teaching and assessment proposal; no empirical validation of this sequence or population norm is claimed.",
+          "The official source references establish curriculum/performance examples, not comparative efficacy of a medium or a child’s attainment.",
+          "Source-specific repertoire, art form, resource and stage conditions remain in the alignment protocols; this shared claim does not replace them."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "After you sound a comfortable note, can {{name}} copy its pitch by humming, singing or using a suitable pitched instrument, listen again and adjust if needed? Can they do it with a different note too?",
+        "correctAnswer": "Intentionally reproduces changed comfortable references and uses listening to guide an actual pitch adjustment, rather than only change loudness or label the sound.",
+        "whatMakesItDiscriminate": "A physics explanation, steady clap or lucky echo can succeed without heard-target reproduction. A changed reference plus an observable adjustment checks the distinct auditory-to-production operation.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "I make it louder so it is a higher note.",
+            "revealedBy": "Loudness changes while the produced pitch remains unrelated to the reference.",
+            "nextMove": "Use two comfortable tones at similar loudness and gesture a small higher/lower adjustment; do not ask for extra force.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "I can hear which one matches, but my own sound stays different.",
+            "revealedBy": "Correct comparison choice without an audible reproduced match.",
+            "nextMove": "Keep the listening success and scaffold a short echo in a suitable range. Do not reteach note names or infer refusal/low effort.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "I always start with my one remembered note.",
+            "revealedBy": "First reference may match, but a changed reference produces the same unchanged note.",
+            "nextMove": "Return to a fresh heard reference and compare one controlled adjustment; do not score fixed-note memory as relative matching.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Which way could you adjust your sound to move towards this reference? Show it.",
+          "Can you do the matching when the reference starts elsewhere?"
+        ],
+        "responseLevels": {
+          "gap": "Only labels or repeats an unrelated sound; changing volume or a remembered note does not produce a heard-reference match.",
+          "partial": "Matches or identifies one reference, but needs decisive support to reproduce a changed target or to adjust the attempt.",
+          "full": "Produces intentional audible matches to changed comfortable references and listens/adjusts the production rather than substitute louder sound or a label."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NCERT Grade 3 Bansuri-I includes a heard-pitch reference and singing practice with a reference instrument.",
+          "source": "NCERT Bansuri-I Grade 3, current chapter 7, printed page 55, Reprint 2026–27",
+          "url": "https://ncert.nic.in/textbook/pdf/cebu107.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: checked official primary Arts examples and original untested task design",
+        "createdAt": "2026-11-10T21:25:53Z",
+        "updatedAt": "2026-11-10T21:25:53Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_2mb17lUCPD",
+      "pedagogy": {
+        "summary": "Let the learner make a short sounded work, listen to its actual effect and refine a deliberate sound/silence choice. Musical shaping is distinct from explaining a formal pattern rule, and repetition can be used musically.",
+        "bestPractices": [
+          "Provide safe sound possibilities and an open musical idea rather than the complete pattern or its intended final solution.",
+          "Compare actual sounded versions, so a claimed change must be heard in timing, sound quality, contrast or ending.",
+          "Accept purposeful non-periodic pieces and repeating patterns; do not score by mathematical complexity, cultural taste or compulsory enjoyment."
+        ],
+        "keyRepresentations": [
+          "Short live or recorded musical attempts compared in sequence",
+          "Simple optional sound/silence cue marks chosen by the learner",
+          "Safe voice, body, found-sound or instrument choices"
+        ],
+        "commonMisconceptions": [
+          "Copying or naming an AB rule alone proves musical composition.",
+          "An announced change counts even when the sounded result is unchanged.",
+          "Only a complicated or pleasing piece is valid music."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Let the learner make a short sounded work, listen to its actual effect and refine a deliberate sound/silence choice. Musical shaping is distinct from explaining a formal pattern rule, and repetition can be used musically.",
+        "activities": [
+          {
+            "title": "Make a short sound idea without an adult-written pattern",
+            "learnerActions": [
+              "Offer a small set of safe comfortable sound sources and a broad idea such as a rain arrival or a musical greeting; allow another suitable idea.",
+              "The learner chooses how sounds and silences will begin, contrast or end and produces a short piece. A spoken plan or notation is optional; actual choices may be made through improvisation.",
+              "Listen back or hear it again and ask which deliberate choice can actually be heard."
+            ],
+            "intendedInsight": "The learner selects an audible musical organisation rather than only follows an abstract token sequence.",
+            "feedback": [
+              "If sounds are exploratory without an intended relation yet, invite one choice about contrast or ending; exploration is a valid starting point, not the complete evidence.",
+              "If the adult supplied the whole pattern, offer new materials or an open idea without giving the sequence."
+            ],
+            "rationale": "An original musical-making task consistent with the checked primary examples; no efficacy claim is made.",
+            "sourceClaims": [
+              "NCERT Grade 3 Bansuri-I offers body-sound invention and rhythmic experimentation alongside songs and reference activities.",
+              "The checked NCERT Arts framework treats making, reviewing and refining creative work as parts of the primary artistic process."
+            ]
+          },
+          {
+            "title": "Change the sounded result for a chosen effect",
+            "learnerActions": [
+              "Compare the first attempt with an intended contrast, such as a denser arrival and a quieter ending; the learner may choose a different appropriate contrast.",
+              "Change a sound, silence, timing, loudness or sound quality and perform the revised version.",
+              "Listen to both versions and demonstrate or indicate what changed and how it serves the chosen idea. A listener need not share the same personal emotion."
+            ],
+            "intendedInsight": "Deliberate listening and revision turns an intention into an audible choice.",
+            "feedback": [
+              "If the explanation changes but the performance does not, isolate a brief segment and try one audible contrast before repeating the whole piece.",
+              "If a repeating pattern already supports the intention, keep it; do not demand irregularity or additional complexity."
+            ],
+            "rationale": "The listen-and-refine comparison is an authored diagnostic witness for musical shaping rather than a proven intervention.",
+            "sourceClaims": [
+              "The checked NCERT Arts framework treats making, reviewing and refining creative work as parts of the primary artistic process."
+            ]
+          },
+          {
+            "title": "Adapt the musical idea to another situation",
+            "learnerActions": [
+              "Choose a different situation or available sound source and make a new or adapted short piece.",
+              "Keep the basic process of producing, listening and choosing a useful change; do not require a longer work or another instrument.",
+              "Where the source requires an actual song/scene/group arrangement, separately perform that specified panel; free sound invention alone does not establish its repertoire, pitch or ensemble conditions."
+            ],
+            "intendedInsight": "The compositional operation transfers without a topic for each instrument, song or group size.",
+            "feedback": [
+              "If only the old pattern is repeated without a meaningful adaptation, ask the learner to choose one changed audible effect rather than supply a complete solution."
+            ],
+            "rationale": "An original transfer protocol, not evidence that a learner or group has attained the source requirement.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use comfortable listening levels and safe adult-approved sound sources. No force, amplified noise, compulsory tool or fixed note inventory.",
+          "No formal repeating rule, written notation, professional compositional quality or universal emotion–sound code is required.",
+          "A task may provide evidence for formal mathematical pattern creation and musical shaping; repetition is not a reason to fail the musical operation.",
+          "Actual source-specific pitch, repertoire, partner coordination and material/resource duties remain separately checked. This claim does not certify all music expectations."
+        ],
+        "reviewNotes": [
+          "Original source-informed teaching and assessment proposal; no empirical validation of this sequence or population norm is claimed.",
+          "The official source references establish curriculum/performance examples, not comparative efficacy of a medium or a child’s attainment.",
+          "Source-specific repertoire, art form, resource and stage conditions remain in the alignment protocols; this shared claim does not replace them."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Can {{name}} invent a short musical sound piece, listen to it and change a sound, silence or timing choice to make the effect they intend? Can they let you hear that choice and adapt the piece for a new idea?",
+        "correctAnswer": "Creates a short own sounded piece, listens to the actual result, makes an audible purposeful change and adapts the process for a different idea or source.",
+        "whatMakesItDiscriminate": "A perfectly explained AB token rule or copied beat does not alone demonstrate the additional making–listening–musical revision operation. A non-periodic piece can show the latter without formal next-term prediction/generalisation.",
+        "errorPatterns": [
+          {
+            "kind": "performance",
+            "pattern": "I said I changed it, so it is different.",
+            "revealedBy": "The second sounded version has no audible chosen change.",
+            "nextMove": "Compare one short segment and change one sound/silence/timing choice that can be heard; do not judge motivation from the mismatch.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "It is only music if the pattern is difficult or everybody likes it.",
+            "revealedBy": "Adds arbitrary complexity or abandons an intentional simple piece after a taste disagreement.",
+            "nextMove": "Return to the learner’s declared audible intention and compare its two versions. Keep formal complexity and audience preference separate.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "I can repeat your pattern but need you to choose every new sound.",
+            "revealedBy": "Adult decisions supply the complete sequence and variation.",
+            "nextMove": "Reduce the available materials and leave one genuine choice about a contrast or ending. Do not call supported copying independent generation.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What choice can we hear in your changed version? Show both.",
+          "How could you shape the piece for this new idea without merely making it longer?"
+        ],
+        "responseLevels": {
+          "gap": "Only labels/copies a formal sequence or makes sounds without a deliberate musical relation/change yet.",
+          "partial": "Makes an own piece or one contrast, but the listening/revision or changed-situation adaptation still needs decisive adult choices.",
+          "full": "Makes, listens to and purposefully adjusts an actual musical sound result, then adapts it; repeating or non-periodic organisation can both satisfy the operation."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NCERT Grade 3 Bansuri-I offers body-sound invention and rhythmic experimentation alongside songs and reference activities.",
+          "source": "NCERT Bansuri-I Grade 3 chapter 7, printed 45–57, Reprint 2026–27",
+          "url": "https://ncert.nic.in/textbook/pdf/cebu107.pdf",
+          "verified": true
+        },
+        {
+          "claim": "The checked NCERT Arts framework treats making, reviewing and refining creative work as parts of the primary artistic process.",
+          "source": "NCERT NCFSE 2023, First Edition October 2024, Arts chapter printed 336–340",
+          "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: checked official primary Arts examples and original untested task design",
+        "createdAt": "2026-11-10T21:25:53Z",
+        "updatedAt": "2026-11-10T21:25:53Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_hu_OZPduxP",
+      "pedagogy": {
+        "summary": "Start from familiar actions and a learner-chosen movement intention, then compose, practise and vary an expressive sequence. Safe motor control or copying a beat supports the task but does not replace its intentional expressive choices.",
+        "bestPractices": [
+          "Model possible safe movement qualities, then leave the final sequence and expressive choices to the learner.",
+          "Let movement demonstrate the intention; technical dance vocabulary, spoken narration and athletic feats are not gates.",
+          "Check practice/repeatability and a meaningful variation, with access chosen before assessment rather than treated as a lower difficulty topic."
+        ],
+        "keyRepresentations": [
+          "A short sequence enacted in an available space",
+          "Two contrasting versions of a familiar action or idea",
+          "Optional simple movement/space cue cards"
+        ],
+        "commonMisconceptions": [
+          "Fast or energetic movement automatically communicates the intended idea.",
+          "Copying a set of claps or showing balance alone proves movement composition.",
+          "Dance requires standing, spinning, costly costumes or a particular emotional display."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Start from familiar actions and a learner-chosen movement intention, then compose, practise and vary an expressive sequence. Safe motor control or copying a beat supports the task but does not replace its intentional expressive choices.",
+        "activities": [
+          {
+            "title": "Choose an intention and compose a movement sequence",
+            "learnerActions": [
+              "Offer familiar safe ideas or allow an own non-sensitive one, such as a leaf moving in a light breeze versus a stronger wind.",
+              "Explore a few available movements, choose an order and practise it. Seated/standing forms and the available body movements are declared.",
+              "Perform the chosen sequence so an audience can notice the intended movement relation, without requiring the learner to narrate every action."
+            ],
+            "intendedInsight": "Movement choices are intentionally organised to show an idea, not only executed as exercise.",
+            "feedback": [
+              "If every move is copied from the adult, return a genuine choice about order, quality or space to the learner.",
+              "If force/speed obscures the intention, compare one controlled gentle/strong or close/open movement rather than ask for more exertion."
+            ],
+            "rationale": "An original primary movement-composition sequence supported by checked official examples, not validated dance instruction.",
+            "sourceClaims": [
+              "NCERT Grade 4 Bansuri includes own movement combinations and expressive movement-quality contrasts in a primary dance chapter."
+            ]
+          },
+          {
+            "title": "Practise, repeat and vary for a different intention",
+            "learnerActions": [
+              "Repeat the chosen sequence after practice, retaining its meaningful order while allowing normal variation.",
+              "Change a movement quality or spatial choice for a contrasting idea, then show both versions.",
+              "Discuss or demonstrate the effect without using one universal gesture–emotion code or requiring the learner to feel the fictional mood."
+            ],
+            "intendedInsight": "Practice stabilises an own sequence while purposeful variation changes its expressive effect.",
+            "feedback": [
+              "If the second version differs only by accidental lost order, isolate one planned contrast and rehearse it.",
+              "If the learner cannot comfortably perform an example, choose another accessible movement that retains the compositional operation; do not require pain or a fixed pose."
+            ],
+            "rationale": "The contrast/repeat check is an authored assessment design, not an age norm.",
+            "sourceClaims": [
+              "NCERT Grade 4 Bansuri includes own movement combinations and expressive movement-quality contrasts in a primary dance chapter."
+            ]
+          },
+          {
+            "title": "Adapt the composition to another space or shared context",
+            "learnerActions": [
+              "Use a new familiar intention or a changed safe available space and revise the sequence’s choices.",
+              "If the source requires collaboration, negotiate actual entries/positions with partners and practise together; a solo sequence does not prove the group duty.",
+              "Keep musical beat performance, if required, as an actual separate task rather than assume it from expressive movement."
+            ],
+            "intendedInsight": "The shared operation extends across settings while source-specific coordination remains explicit.",
+            "feedback": [
+              "If a group follows one adult sequence with no own contribution, invite a meaningful shared decision and test it."
+            ],
+            "rationale": "An original transfer/resource protocol without a new topic per style, formation or partner count.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Adult prepares a clear safe space and suitable ordinary warm-up/access supports. No required jumps, knee spins, extreme flexibility, contact or unstable poses.",
+          "No particular folk/classical style, gender role, costume, fitness/speed norm or professional aesthetic standard is imposed.",
+          "Actual source-specific music, rhythm, coordination and local art-form duties remain in their task panels.",
+          "Interpretation is evidenced by actual movement choices and adaptation, not a demanded smile, verbal fluency or private autobiography."
+        ],
+        "reviewNotes": [
+          "Original source-informed teaching and assessment proposal; no empirical validation of this sequence or population norm is claimed.",
+          "The official source references establish curriculum/performance examples, not comparative efficacy of a medium or a child’s attainment.",
+          "Source-specific repertoire, art form, resource and stage conditions remain in the alignment protocols; this shared claim does not replace them."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Can {{name}} make, practise and perform a short movement sequence to show an idea or everyday action, then change how they move to show a different intention? They may explain by demonstrating or pointing; a spoken script is not required.",
+        "correctAnswer": "Creates/practises an own ordered movement sequence, uses a deliberate quality/spatial contrast for an idea and adapts the composition for a changed intention or setting.",
+        "whatMakesItDiscriminate": "A safe run/hop, static balance or copied beat can succeed without expressive composition. The practised own sequence and a purposeful contrasting version identify the separate operation.",
+        "errorPatterns": [
+          {
+            "kind": "performance",
+            "pattern": "I move a lot, so the idea must be clear.",
+            "revealedBy": "Energetic actions have no chosen sequence or visible, purposeful movement contrast.",
+            "nextMove": "Reduce the sequence and choose one meaningful quality or spatial contrast. Do not demand greater effort or speed.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "I only know the teacher’s moves.",
+            "revealedBy": "Copies a complete model but has no own compositional decision or adaptation.",
+            "nextMove": "Offer two safe qualities/space possibilities and return the order/choice to the learner; do not score copying as independent creation.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "I must do a difficult pose to make it dance.",
+            "revealedBy": "Chooses an unsafe/uncomfortable movement or thinks an accessible seated sequence is invalid.",
+            "nextMove": "Demonstrate that intentional sequencing and expressive contrast can use available safe movements; no athletic test is added.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Which movement choice changes the effect? Show both versions.",
+          "How would you adapt your sequence for another idea or available space?"
+        ],
+        "responseLevels": {
+          "gap": "Shows isolated motor actions or copied movements without an own intentional sequence.",
+          "partial": "Creates a sequence or contrast, but meaningful repeatability/adaptation still needs decisive adult organisation.",
+          "full": "Composes, practises and performs a purposeful movement sequence and adapts its quality/spatial choices while preserving safe access."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NCERT Grade 4 Bansuri includes own movement combinations and expressive movement-quality contrasts in a primary dance chapter.",
+          "source": "NCERT Bansuri Grade 4 chapter 16 Creating My Dance, printed 157–169, Reprint 2026–27",
+          "url": "https://ncert.nic.in/textbook/pdf/debu116.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: checked official primary Arts examples and original untested task design",
+        "createdAt": "2026-11-10T21:25:53Z",
+        "updatedAt": "2026-11-10T21:25:53Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_2Kn5ianVWN",
+      "pedagogy": {
+        "summary": "Separate controlling a tool from composing a visual work. Offer real choices in arrangement and material effect, let the learner compare alternatives and retain evidence of an intended purposeful change.",
+        "bestPractices": [
+          "Begin with a learner-chosen observation/idea or an open familiar prompt, not an adult’s finished composition to reproduce.",
+          "Ask what changes visually when an arrangement changes, accepting demonstration/pointing as well as ordinary language.",
+          "Judge actual intention, choices and comparison rather than realism, neatness, a universal colour–feeling code or adult taste."
+        ],
+        "keyRepresentations": [
+          "Loose arrangements before fixing materials",
+          "Two versions with a changed visual relation",
+          "Actual flat/spatial artwork panels where the source requires them"
+        ],
+        "commonMisconceptions": [
+          "A neat copied product proves own artistic composition.",
+          "Deliberate marks or a correct geometry puzzle automatically establish visual expression.",
+          "An artwork must use a fixed colour code, look realistic or please the adult."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Separate controlling a tool from composing a visual work. Offer real choices in arrangement and material effect, let the learner compare alternatives and retain evidence of an intended purposeful change.",
+        "activities": [
+          {
+            "title": "Choose and arrange before fixing the work",
+            "learnerActions": [
+              "Offer suitable safe drawing/painting/collage or found materials and let the learner choose an observation, idea or feeling to explore without private disclosure.",
+              "Make an initial arrangement with visual elements such as line, form, colour, space or texture. Pre-cut elements may support access without supplying the final arrangement.",
+              "Try a second arrangement and indicate how a chosen relation changes the intended visual effect; retain the learner’s own decision about the work."
+            ],
+            "intendedInsight": "Composition concerns how visual elements work together, not only whether a tool leaves a controlled mark.",
+            "feedback": [
+              "If the learner only copies the adult’s arrangement, remove the finished model and offer genuine alternatives in placement, form or texture.",
+              "If an element is chosen randomly with no intended relation yet, compare two visible arrangements and invite one own reason or demonstration; exploration is a valid starting point."
+            ],
+            "rationale": "An original exploration/comparison protocol consistent with the checked primary art examples; it is not a proven creativity intervention.",
+            "sourceClaims": [
+              "NCERT Grade 3 Bansuri-I uses original ideas, material exploration and contrasting visual arrangements in its primary visual-art activities.",
+              "The checked NCERT Arts framework treats making, reviewing and refining creative work as parts of the primary artistic process."
+            ]
+          },
+          {
+            "title": "Make a purposeful visual change",
+            "learnerActions": [
+              "Produce the selected work and change one visual relation, such as spacing, overlap, line direction, form grouping or texture contrast.",
+              "Show the alternatives and indicate what the change does for the chosen intention; a fixed adult emotion label is not the criterion.",
+              "For an actual source-required collage, texture or 3D panel, carry out the specific material operation safely rather than substitute an image of the final product."
+            ],
+            "intendedInsight": "An intention is supported by an actual visual choice and change, not only by calling a product art.",
+            "feedback": [
+              "If a verbal explanation changes but the arrangement does not, compare the actual versions and isolate one visible/material change.",
+              "If the work is physically unstable or unsafe, scaffold the needed making technique separately; that does not erase an observed compositional choice."
+            ],
+            "rationale": "The contrast witness separates artistic organisation from tool control and functional construction without creating a new claim for each medium.",
+            "sourceClaims": [
+              "NCERT Grade 3 Bansuri-I uses original ideas, material exploration and contrasting visual arrangements in its primary visual-art activities."
+            ]
+          },
+          {
+            "title": "Adapt for another intention, material or space",
+            "learnerActions": [
+              "Choose a different intention or available working area/material and adapt the composition rather than only enlarge a memorised outline.",
+              "Where the source requires both 2D and 3D work, provide actual flat and spatial panels with appropriate separate construction/handling checks. This shared claim does not certify every technique.",
+              "Present or show the work’s intended effect through demonstration, pointing or ordinary language; no writing paragraph, selling or numerical scale ratio is required."
+            ],
+            "intendedInsight": "The compositional operation transfers while material/source duties remain concrete and distinct.",
+            "feedback": [
+              "If the original arrangement is copied despite a changed space, try two options and compare how the focal relation can remain or change."
+            ],
+            "rationale": "An original transfer protocol, not a universal standard for artistic quality or development.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use suitable safe art materials and adult preparation/support; no compulsory grip, handedness, expensive medium or hazardous tool.",
+          "No prescribed realistic picture, cultural colour meaning, personal disclosure, pleasant feeling or adult aesthetic-quality score.",
+          "Mark control, safe cutting/joining, geometry and text-image publication remain separate whole claims; a source-specific task may supply evidence for more than one.",
+          "Actual 2D/3D, collage, texture and space/size duties are preserved where required; a generic verbal explanation cannot replace making those panels."
+        ],
+        "reviewNotes": [
+          "Original source-informed teaching and assessment proposal; no empirical validation of this sequence or population norm is claimed.",
+          "The official source references establish curriculum/performance examples, not comparative efficacy of a medium or a child’s attainment.",
+          "Source-specific repertoire, art form, resource and stage conditions remain in the alignment protocols; this shared claim does not replace them."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "With suitable art materials, can {{name}} choose how to arrange the visual elements for their own idea, try a change and show what difference it makes? Can they adapt the composition when the idea, materials or space changes?",
+        "correctAnswer": "Makes own purposeful visual-arrangement choices, compares/changes an actual relation and adapts the composition for another intention/material/space.",
+        "whatMakesItDiscriminate": "A copied neat image, controlled scribble, joined functional model or text-image layout can supply other evidence without demonstrating this pure visual organisation/expressive decision. The own choice, comparison and actual change supply the diagnostic contrast.",
+        "errorPatterns": [
+          {
+            "kind": "performance",
+            "pattern": "Mine is good because I copied the picture neatly.",
+            "revealedBy": "An adult model supplies all placement/material decisions; no own comparison or change is evident.",
+            "nextMove": "Keep the achieved tool control, then remove the finished arrangement and return one meaningful visual decision to the learner. Do not treat copying as a character flaw.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "This colour must mean the same feeling for everyone.",
+            "revealedBy": "Declares a universal correct colour/emotion code or rejects another interpretation by rule alone.",
+            "nextMove": "Compare chosen effects and contexts; invite the learner’s intention and allow different responses rather than prescribe one cultural code.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "I said it changed, so it changed.",
+            "revealedBy": "Two arrangements are materially identical despite a new explanation.",
+            "nextMove": "Change and compare one visible relation such as spacing/overlap/texture before revisiting the entire work; do not demand more fluent explanation.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What visual choice did you change, and what difference can you show?",
+          "How could you adapt the work when the material or available space changes?"
+        ],
+        "responseLevels": {
+          "gap": "Only accidental traces or a copied adult arrangement; no own visual decision/change is demonstrated yet.",
+          "partial": "Makes an own visual choice or change but needs decisive support to compare its effect or adapt it.",
+          "full": "Chooses, organises and purposefully changes actual visual relations for an intention and adapts the compositional process without a fixed style or adult taste criterion."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NCERT Grade 3 Bansuri-I uses original ideas, material exploration and contrasting visual arrangements in its primary visual-art activities.",
+          "source": "NCERT Bansuri-I Grade 3 chapter 1 Objects in Art, printed 1–11, Reprint 2026–27",
+          "url": "https://ncert.nic.in/textbook/pdf/cebu101.pdf",
+          "verified": true
+        },
+        {
+          "claim": "The checked NCERT Arts framework treats making, reviewing and refining creative work as parts of the primary artistic process.",
+          "source": "NCERT NCFSE 2023, First Edition October 2024, Arts chapter printed 336–340",
+          "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: checked official primary Arts examples and original untested task design",
+        "createdAt": "2026-11-10T21:25:53Z",
+        "updatedAt": "2026-11-10T21:25:53Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
