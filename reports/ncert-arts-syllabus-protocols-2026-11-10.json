@@ -111,17 +111,58 @@
         "listening-observing",
         "classroom-observation-discussion"
       ],
-      "task": "Select the source panel and actual material: a peer’s contribution, a poem/story/nonfiction read aloud, relevant observations discussed in class or a short ordered making/movement instruction sequence. Listen and respond to what was said. For the instruction card, both follow/clarify and give/check clear ordered steps; for read-aloud, ask/answer about real details, discuss meaning and seek clarification as needed.",
-      "positiveEvidence": "The learner’s response uses actual heard content; instruction order and comprehension are demonstrated in the relevant panel. Listening and speaking material is bound to the actual use language without asserting transfer of English phonology or lexical mastery.",
-      "nearMiss": "Quiet compliance, repeating an adult answer, responding only about one’s own unrelated idea or completing a prepared adult product cannot establish listening/comprehension/instruction use.",
-      "transfer": "Change a contribution, short text or instruction detail and respond appropriately rather than repeat the earlier answer. Whole-card productive and receptive checks remain separate from the source’s narrower duty.",
+      "task": "Select the source panel and actual material: a peer’s contribution, a poem/story/nonfiction read aloud, relevant observations discussed in class or a short ordered making/movement instruction sequence. Listen and respond to what was said. For the instruction card, both follow/clarify and give/check clear ordered steps; for read-aloud, ask/answer about real details, discuss meaning and seek clarification as needed. For the listening-observing and classroom-observation-discussion panels, carry out the explicit equipment observation task below: actually inspect two safe known samples using suitable simple equipment, describe details and compare them from observations before the listening/discussion response. It is not enough to discuss observations supplied by an adult.",
+      "positiveEvidence": "The learner’s response uses actual heard content; instruction order and comprehension are demonstrated in the relevant panel. Listening and speaking material is bound to the actual use language without asserting transfer of English phonology or lexical mastery. The observation panels additionally show actual equipment use, an observed detailed description of both samples and an evidence-based similarity/difference comparison, followed by a relevant peer/classroom response.",
+      "nearMiss": "Quiet compliance, repeating an adult answer, responding only about one’s own unrelated idea or completing a prepared adult product cannot establish listening/comprehension/instruction use. Merely listening to another person describe a leaf, naming equipment without using it or comparing from a remembered label does not establish the observation panels.",
+      "transfer": "Change a contribution, short text or instruction detail and respond appropriately rather than repeat the earlier answer. Whole-card productive and receptive checks remain separate from the source’s narrower duty. For an observation panel, use a new pair of safe samples and actually inspect, describe and compare them with the equipment again.",
       "sourceConditions": {
         "actualHeardContent": true,
         "sourcePanelBinding": true,
         "actualLanguageMaterialBinding": true,
-        "noSilenceQuota": true
+        "noSilenceQuota": true,
+        "equipmentObservationRequiredForPanels": [
+          "listening-observing",
+          "classroom-observation-discussion"
+        ]
       },
-      "evidenceStatus": "Original untested source-fit task design, not actual learner observations or intervention efficacy."
+      "evidenceStatus": "Original untested source-fit task design, not actual learner observations or intervention efficacy.",
+      "equipmentObservationTask": {
+        "appliesToPanels": [
+          "listening-observing",
+          "classroom-observation-discussion"
+        ],
+        "equipment": [
+          "suitable hand lens",
+          "accessible simple magnification"
+        ],
+        "resources": "Two safe known leaves, paper pieces or fabric samples, checked for sharp or irritating features; do not collect unknown substances or require organism handling.",
+        "learnerActions": [
+          {
+            "operation": "equipment-use",
+            "instruction": "Actually inspect each sample with the selected suitable equipment, adjusting position, focus or light as appropriate to obtain a useful observation."
+          },
+          {
+            "operation": "detailed-observation",
+            "instruction": "Describe or record specific observed features such as colour, shape, size, texture or pattern for each sample, pointing to the evidence or using spoken/drawn notes."
+          },
+          {
+            "operation": "comparison-from-observation",
+            "instruction": "Compare the two actually observed samples: identify a relevant similarity and difference and show which observed details support the comparison."
+          },
+          {
+            "operation": "listening-discussion-response",
+            "instruction": "Listen to a partner’s actual observation and respond to its content; in the classroom panel contribute an own observation and reasoned comparison to the discussion."
+          }
+        ],
+        "requiredEvidence": [
+          "actual-equipment-use",
+          "specific-observed-details",
+          "similarity-and-difference-from-observation",
+          "relevant-listening-or-discussion-response"
+        ],
+        "transfer": "Use another safe sample pair; inspect with the equipment and produce a new observation-based description/comparison, rather than repeat the earlier labels.",
+        "limits": "This qualifies the source-specific observation panels and the complete existing observing claim; it is not a new NCERT requirement that every listening/read-aloud task use equipment, and no speed, acuity or diagnosis score is introduced."
+      }
     },
     {
       "id": "local-nature-recognition",

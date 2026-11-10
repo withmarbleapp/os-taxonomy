@@ -37,6 +37,8 @@ All 56 source positions retain their identities, printed shared-stage scope, sel
 
 The physical-source musical scale-progression phrase remains explicitly **Unverified** in the cumulative ledger. The new Music claims and this sound/noise interpretation do not resolve that separate source-meaning issue. No source wording, private evidence or learner state is included in this PR.
 
+The review correction for the listening/observation family supplies an actual simple-equipment task: inspect two safe known samples, describe specific details, compare a similarity and difference from those observations, and respond to a peer’s observation. Its explicit panel/evidence guard rejects deleting that task or its comparison operation; discussing an adult-supplied observation is insufficient. This applies to the observation panels, not every listening task.
+
 ## Validation
 
 Generator, validator, generated-check and all **137 tests pass**. The source-position regression rejects wrong-valid family/panel swaps, lost imprint/instrument/tableau duties, invented grade obligations, flattened alternatives and stale inventory metadata.

@@ -2501,7 +2501,8 @@ const protocolConditions={
     "actualHeardContent": true,
     "sourcePanelBinding": true,
     "actualLanguageMaterialBinding": true,
-    "noSilenceQuota": true
+    "noSilenceQuota": true,
+    "equipmentObservationRequiredForPanels": ["listening-observing", "classroom-observation-discussion"]
   },
   "local-nature-recognition": {
     "accurateLocalExamples": true,
@@ -2597,6 +2598,7 @@ const state=()=>({report:read('reports/ncert-arts-syllabus-alignment-2026-11-10.
 function verify(s){
  const rs=s.report.records,keys=new Set(rs.map(r=>r.key));assert.equal(rs.length,56);assert.equal(keys.size,56);assert.deepEqual(rs.map(project),expected,'reviewed source position/panel/conditions/components drift');
  const ps=new Map(s.protocols.protocols.map(p=>[p.id,p]));assert.equal(ps.size,21);const bs=new Map(s.protocols.sourceBindings.map(b=>[b.key,b]));assert.equal(bs.size,56);
+ const observation=ps.get('listening-and-ordered-instructions').equipmentObservationTask;assert(observation,'missing concrete equipment observation task');assert.deepEqual(observation.appliesToPanels,['listening-observing','classroom-observation-discussion']);assert(observation.equipment.length);assert.deepEqual(observation.learnerActions.map(x=>x.operation),['equipment-use','detailed-observation','comparison-from-observation','listening-discussion-response']);assert.deepEqual(observation.requiredEvidence,['actual-equipment-use','specific-observed-details','similarity-and-difference-from-observation','relevant-listening-or-discussion-response']);for(const x of observation.learnerActions)assert(x.instruction.length>0);
  const known=new Set(s.catalogue.curricula.flatMap(c=>c.topics.map(t=>t.key)));const expectedPairs=new Set();let pairs=0,conditional=0;
  for(const [id,p]of ps){assert.deepEqual(p.sourceConditions,protocolConditions[id]);for(const k of ['task','positiveEvidence','nearMiss','transfer'])assert.equal(typeof p[k],'string');}
  for(const r of rs){
@@ -2631,6 +2633,9 @@ test('Arts56 rejects wrong-valid panels, lost physical/material duties, invented
   s=>s.protocols.sourceBindings[0].tableScope=['Grade 1'],
   s=>{const r=s.report.records.find(r=>r.conditionalContributions.length),c=r.conditionalContributions[0];s.alignments.alignments.push({topicId:c.topicId,scope:'jurisdiction',country:'IN',ageRangeStart:3,ageRangeEnd:8,standards:[r.key]});},
   s=>s.report.records.find(r=>r.sourceInterpretation).sourceInterpretation='Publisher-defined technical noise; all music is wanted.',
-  s=>s.manifest.counts.topics--
+  s=>s.manifest.counts.topics--,
+  s=>delete s.protocols.protocols.find(p=>p.id==='listening-and-ordered-instructions').equipmentObservationTask,
+  s=>s.protocols.protocols.find(p=>p.id==='listening-and-ordered-instructions').equipmentObservationTask.learnerActions.splice(2,1),
+  s=>s.protocols.protocols.find(p=>p.id==='listening-and-ordered-instructions').equipmentObservationTask.requiredEvidence.pop()
  ];for(const mutate of ms){const s=state();mutate(s);assert.throws(()=>verify(s));}
 });
