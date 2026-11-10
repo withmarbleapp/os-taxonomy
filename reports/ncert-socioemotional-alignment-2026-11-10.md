@@ -1,0 +1,39 @@
+# NCERT socio-emotional review
+
+The [46-record proposal](ncert-socioemotional-alignment-2026-11-10.json) records 36 Full authoring dispositions and ten skill/contextual-engagement dispositions. Its 110 component pairs reuse 33 topics, adding 29 IN contexts and extending 22 existing exact-band code lists. No new Indian mastery claim, teaching guide or dependency change is proposed. The [protocols](ncert-socioemotional-protocols-2026-11-10.json) account for actual source duties, rather than treating a related topic title or a prerequisite as proof.
+
+Twelve records are formal Foundational goals/competencies with the official 3–8 stage window and stage-end attainment. Their full Balvatika/Grades 1–2 scope remains separate from the selected primary view. Thirty-four are suggestive Grades 1–2 positions with their printed separate/shared grade cells and a selected primary 6–8 window. These are not age-three deadlines, invented per-grade cutoffs or an all-Indian-board claim.
+
+## Actions, expression and contextual feelings
+
+Tasks include an own identity/belonging account, responsive peer and familiar-adult exchanges, child-initiated activities, practical mutual help, fair shared work, rules understood and reviewed with agency, respectful questions and responses to differences, and emotion expression through actual play and visual work. Actual own-feeling communication remains distinct from a fictional character’s feelings. The broad emotional/social goal explicitly composes its relevant belonging, emotion, interaction, care and norms protocols; child-code labels alone are insufficient.
+
+Love, joy, comfort, interest and affection are retained as contextual channels where applicable. They are not compulsory smiles, physical contact, friendship nominations, private family/ethnicity disclosures or binary liking scores. Disappointment, tears or reserve can coexist with appropriate action. No adult creates distress, injury or an unmet need to manufacture evidence. English or any other national language pair is not selected: target language and accessible communication are bound at use, and a named-language success does not establish another language’s mastery.
+
+Giving/following instructions retains the Grade 1 three-to-four case delivered together, with the whole existing ordered giving/receiving/clarifying/checking operation assessed separately. Grade 2 adds the declared complexity and actual rule creation. Attention/persistence uses comparable declared tasks and a genuine manageable difficulty; this source supplies no universal duration. The separate Learning Habits twenty/thirty-minute cases are not silently imported.
+
+## Practical work and living things
+
+The tree position requires actual germination of a locally suitable tree seed and care of its seedling. A bean jar, purchased sapling alone, animation or ordering cards cannot replace that duty. Bind the actual local species, checked sowing/aftercare profile and variable timing; lack of germination is not invented success or automatically a learner failure. Whole seed/bulb comparison and dated observation remain separate checks. A mature-tree reference does not imply maturation within a week.
+
+Plant and animal care require an actual recurring suitable responsibility, with species-specific care, hygiene, adult responsibility and access conditions. Knowledge of needs and a brief returned-minibeast observation are components, not proof of recurring animal tending. No animal acquisition, wildlife captivity, forced handling or deprivation is required. Nature work identifies actual local plants and animals in their habitats, including a microhabitat and its conditions; it does not guarantee a particular cast or count. Joy remains contextual.
+
+School/home work has a useful result. Teacher assistance actually helps create and use functional teaching material; kitchen assistance includes actual safe cleaning and cutting, with the whole preparation/hygiene cards checked separately. Naming a tool, admiring an animal, a picture-sort or an adult completing the decisive operation is insufficient. These source-specific practical tasks remain explicit protocols without creating a topic for every plant, pet, utensil or material.
+
+Eleven existing guides were read, including the inherited shared-role guide. Their records are retained unchanged with their limits. Germination and habitat advice is qualified by actual species, life stage and conditions; old overgeneralised timing, animal-relocation thought examples or deprivation narratives are not new instructions. Inherited source flags/confidence are not re-endorsed as fresh evidence. The checked [RHS tree advice](https://www.rhs.org.uk/plants/types/trees/trees-shrubs-from-seed) supports variation and aftercare, without importing a British calendar into India. [RSPCA’s programme overview](https://education.rspca.org.uk/learningprogrammes/intro-to-animal-welfare) supports general care categories, not an Indian legal mandate, veterinary prescription or validated lesson.
+
+## Two bounded assessment revisions
+
+Continuing topics `mt_kvrvpQris4` Expressing Feelings with Words and `mt_FwI7q7DSIx` Taking Turns and Sharing change **assessmentPrompt only**. The first checks appropriate verbal expression without treating tears as failure; the second checks independent fair turns/sharing and their purpose without treating disappointment as failure. A smiling child who does not communicate, grabs or needs constant reminders still fails the relevant operation. Descriptions, evidence, IDs, edges, old contexts and all existing guides remain exact.
+
+These are real assessment revisions, not wording-only or automatic learner equivalence. The report retains complete before/after revision snapshots and witnesses. Consumers must retain the old revision and review compatibility; no transfer, reset or downstream publication is authorised.
+
+## Shared identity and delivery boundary
+
+The [inheritance note](ncert-ontario-shared-role-inheritance-2026-11-10.md) records the exact keyed union of India #123 and reviewed Ontario G1 #115. Three Ontario-proposed topics/guides are inherited in full; none is a new Indian claim. `mt_PJE57bAvMG` is reused for the same-person social-role source position, with its complete role–duty–circumstance operation, environmental care and transfer tasks. No country clone or detached replacement card is created. Both parent inventories and evidence remain preserved.
+
+The cumulative [570-record ledger](ncert-alignment-readiness-2026-11-10.json) reaches 394 reviewed and 176 pending at this proposal checkpoint: Arts 144 and TWAU 32 remain. Reviewed includes mixed/contextual/conditional and Unverified dispositions, including the retained musical-scale meaning case; it does not mean 394 Full or accepted/published. The dependent PR must retain both parent dependencies, then reconcile/retarget against main after acceptance.
+
+## Validation
+
+Generation, validation, generated checks and all 133 tests pass. Exact preservation confirms all 1,873 unaffected authored cards, all 1,060 existing guides and every one of the 4,393 old contexts/intervals/codes retained. Only the two approved assessment prompts differ; all dependencies, catalogue, clusters and archive are unchanged. Compatibility ages change on 13 existing topics as a consequence of the complete scoped contexts. The guard binds all 46 source identities, 110 pairs, per-position protocols, practical conditions, aggregate closure, exact prompt revisions and inherited role identity; meaningful mutations fail while unrelated future associations remain permitted.
