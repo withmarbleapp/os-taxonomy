@@ -7,17 +7,17 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 8,
+    "Full": 17,
     "Partial": 0,
-    "Unverified": 32,
+    "Unverified": 23,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 8,
-    "topics": 6,
-    "codes": 8,
+    "pairs": 32,
+    "topics": 15,
+    "codes": 17,
     "newClaims": 5,
-    "reusedClaims": 1
+    "reusedClaims": 10
   },
   "expectations": [
     {
@@ -230,59 +230,88 @@
     },
     {
       "code": "B2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_XirhnAB6Ye",
+        "mt_FW9_8F52bw",
+        "mt_w4cUnN_SsQ",
+        "mt_7IFpDVNsmt",
+        "mt_ebQURBOsM5",
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN",
+        "mt_deexfCHU9m",
+        "mt_wWlZoLQBR6"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_XirhnAB6Ye"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_FW9_8F52bw",
+        "mt_ebQURBOsM5"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_7IFpDVNsmt",
+        "mt_ebQURBOsM5",
+        "mt_CVywzrjT_c"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.5",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN",
+        "mt_wWlZoLQBR6",
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B2.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_FW9_8F52bw",
+        "mt_7VrR1GzhrN"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environmental-inquiry-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B3",
@@ -304,11 +333,13 @@
     },
     {
       "code": "B3.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-map-task-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     },
     {
       "code": "B3.3",
@@ -350,13 +381,15 @@
     },
     {
       "code": "B3.7",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-map-task-review-2026-11-10.json",
+      "coverageBasis": "All mandatory clauses accounted for by the reviewed source-fit task, including the exact media, regions and time-horizon conditions where applicable. Components do not imply full-topic or learner mastery."
     }
   ],
   "semanticBoundary": "Five approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
-  "next": "Resolve B1.1 and remaining map/inquiry protocols; prepare bounded community-governance, period community-life and treaty knowledge drafts for separate semantic review."
+  "next": "Complete remaining historical comparison/inquiry/location and current population/land-use tasks; major-goal qualifications stay separate until all remaining clauses are accounted for."
 }
