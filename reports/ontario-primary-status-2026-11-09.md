@@ -90,10 +90,12 @@ are separate codes; source totals are not comparable counts of distinct skills.
 - **Language:** Grades 1–6 have substantial recorded associations. Public
   [Grade 5](ontario-grade5-language-2026-11-02.md) and
   [Grade 6](ontario-grade6-language-2026-11-02.md) reports each retain four
-  specific resource/performance conditions. Grades 1–4 associations are present,
-  but this snapshot has no corresponding public per-grade report to support a
-  fresh coverage conclusion. Reconcile their historical evidence before declaring
-  completion; do not repeat all authoring merely because a public report is absent.
+  specific resource/performance conditions. The later
+  [Grades 1–4 reconciliation](ontario-language-grades1-4-reconciliation-2026-11-10.md)
+  recovers the applied evidence against accepted `4a7ba5a`: 292 codes and 969 pairs,
+  including the Grade 1 review correction. Fresh source and association checks are
+  separated from the historical Full labels; resource conditions remain explicit.
+  Missing public reports did not require repeating the authoring work.
 - **Science:** the accepted base has one Grade 1 association from
   [PR #89](https://github.com/withmarbleapp/os-taxonomy/pull/89), B2.2. Its PR
   explicitly retains conditions and does not attest Full coverage. The rest of
@@ -128,11 +130,13 @@ prerequisite contexts need review.
 
 ## Following work
 
-Resolve the explicit Grade 1 source/assessment and context items before declaring
-completion; keep supported partial contributions while handling those decisions.
-Continue subsequent primary Science grades in coherent slices. Reconcile Language
-conditions and historical Grades 1–4 evidence as a separate review, then scope
-other Ontario subjects explicitly. The wider catalogue is available for that work
+The later [cross-grade Science residual review](ontario-primary-science-residual-review-2026-11-09.md)
+now records the primary grade audit and its remaining resource, task and readiness
+conditions. Consult that follow-up before repeating the historical Science work;
+it does not certify all expectations as Full. Language's
+historical Grades 1–4 evidence is now reconciled in the linked follow-up; its
+resource conditions and Grade 5–6 keyboarding conditions remain. Scope other
+Ontario subjects explicitly. The wider catalogue is available for that work
 but does not establish alignment completion.
 
 This status report and its proposed associations do not write a database or
