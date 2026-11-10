@@ -8,7 +8,7 @@ Dated primary climate summaries and the [Singapore weather agency](https://www.w
 
 The proposed tasks require actual own-community application, like-for-like comparisons and source attribution. Supplied evidence can make distant places familiar; it does not silently broaden a familiar-map claim into global geographical knowledge. The existing climate claim needs its separately proposed seasonal correction. Its full three-climate comparison is not certified solely by these two cities.
 
-Map/photo resources, a complete selected-needs packet and the coherent inquiry protocol are still being completed. The dossier keeps those conditions explicit rather than upgrades from link counts. These are authoring tasks, not a study requiring learner records or evidence anyone passed them.
+Map/photo previews, selected-needs examples, the own-community packet schema and coherent inquiry protocol are now supplied for final source-fit review. The dossier keeps those conditions explicit rather than upgrades from link counts. These are authoring tasks, not a study requiring learner records or evidence anyone passed them.
 
 The integrated B2 proposal now uses the actual 1991–2020 monthly temperature summaries: all twelve calendar-month means per city, with a relevant below-freezing-mean category key (Iqaluit eight, Singapore none). That chart answers a real climate-pattern question; it does not count source mentions, predict daily weather or infer cultural identity. The protocol includes question/method choice, map construction and analysis, evidence evaluation, a supported conclusion, bounded prediction, method improvement and communication. Newly proposed contributors remain subject to exact scoped association review.
 
