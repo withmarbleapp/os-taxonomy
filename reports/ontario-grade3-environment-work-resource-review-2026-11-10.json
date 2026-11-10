@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "status": "Reviewed source-fit authoring tasks for B1.2/B3.4 with two existing-topic associations; B1.1 remains Partial. This does not certify learner attainment or all Grade3 coverage.",
+  "status": "Reviewed source-fit authoring tasks for B1.1/B1.2/B3.4; three scoped associations using two shared claims. This does not certify learner attainment or all Grade3 coverage.",
   "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g3",
   "selectedCodes": [
     "B1.1",
@@ -131,9 +131,9 @@
     },
     {
       "code": "B1.1",
-      "proposal": "Feature\u2192activity/land-use reasoning contributes.",
-      "remaining": "Approved land-use-purpose claim now exists, but exact whole B1.1 task/contribution reconciliation remains pending; employment source fit alone does not certify that expectation.",
-      "disposition": "Partial"
+      "proposal": "Approved land-purpose claim plus the attributed two-region feature\u2192actual-use task account for the mandatory relationship.",
+      "remaining": "No unaccounted mandatory clause after the reviewed task design. Keep verified location, provider/account and non-determinism limits; do not infer actual land use from an ambiguous image or treat a proposed project as completed.",
+      "disposition": "Full"
     }
   ],
   "notChanged": [
@@ -143,20 +143,46 @@
   ],
   "reviewedCheckpoint": "ed7f9518dc7d244dbff65604c50dac2afeb695a9",
   "associationChanges": {
-    "topicId": "mt_asRwlPZXC3",
     "interval": [
       8,
       9
     ],
     "country": "CA",
     "region": "Ontario",
-    "codes": [
-      "B1.2",
-      "B3.4"
-    ],
-    "newPairs": 2,
+    "newPairs": 3,
     "newContexts": 1,
-    "oldContextChanges": 0,
-    "wholeClaimFit": "Existing5\u201310 whole claim remains unchanged: the selected work descriptions contribute, while earning money and personal-interest connections remain independent evidence requirements for full topic mastery. No age lowering or learner mastery inference."
+    "extendedContexts": 1,
+    "topicContributions": [
+      {
+        "topicId": "mt_asRwlPZXC3",
+        "codes": [
+          "B1.2",
+          "B3.4"
+        ]
+      },
+      {
+        "topicId": "mt_G4Fz9lw20-",
+        "codes": [
+          "B1.1"
+        ],
+        "retainedCode": "B3.5"
+      }
+    ],
+    "wholeClaimFit": "Both whole claims remain unchanged; only exact-band source associations are added. The regional tasks contribute rather than certify full topic mastery."
+  },
+  "landUseRelationshipTask": {
+    "adultPreparation": [
+      "Retain actual Nation-authored LakeNipissing/NFN location, fisheries/resources and business/infrastructure accounts, and actual NiagaraParks river/falls location and tourism accounts.",
+      "Supply accurately labelled map/photos and own-word factual cards: lake/fish habitat\u2192documented fishing/monitoring use; falls/river attraction\u2192documented visitor/recreation/parkland use. A provider account is not the whole region or a land-ownership/legal-use map.",
+      "Include actual Nation business/infrastructure example to show not every use or decision is fixed by the headline natural feature."
+    ],
+    "learnerTask": [
+      "Describe the actual physical feature in each case and the documented use of the place/water, then explain the feature\u2192activity/use connection and need/want served.",
+      "Compare the two different connections without claiming every resident has the same occupation, all forests have one use, or natural features uniquely determine the community.",
+      "Explain what additional information would be needed to establish an ambiguous new site\u2019s actual use; do not read purpose from colour/cover alone."
+    ],
+    "positive": "Explains supported lake/resource and falls/visitor-use relationships and distinct purposes; retains actual provider/regional limits.",
+    "nearMiss": "Only namesjobs/features; calls all wooded/unbuiltlandunused; treatsalllocalwork/landuseasdeterminedbytheheadlinefeature.",
+    "transfer": "Use a new accurate Ontario place account with an explicit documented natural feature/use relationship and a second plausible but unsupported use; distinguish what evidence supports."
   }
 }

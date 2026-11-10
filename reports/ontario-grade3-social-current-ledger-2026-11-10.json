@@ -7,15 +7,15 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 5,
-    "Partial": 1,
+    "Full": 6,
+    "Partial": 0,
     "Unverified": 34,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 5,
+    "pairs": 6,
     "topics": 4,
-    "codes": 5,
+    "codes": 6,
     "newClaims": 3,
     "reusedClaims": 1
   },
@@ -198,14 +198,13 @@
     },
     {
       "code": "B1.1",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
         "mt_G4Fz9lw20-"
       ],
-      "remainingConditions": [
-        "Land-use-purpose concept and regional sources contribute; finish the exact natural-feature\u2192land-use/community relationship task against the whole clause."
-      ],
-      "dossier": "ontario-grade3-environment-work-resource-review-2026-11-10.json"
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-environment-work-resource-review-2026-11-10.json",
+      "coverageBasis": "The approved shared land-purpose claim and reviewed actual two-region natural-feature\u2192use tasks account for the relationship, preserving all resource/provider limits."
     },
     {
       "code": "B1.2",
