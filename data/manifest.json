@@ -20,31 +20,31 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1861,
+    "topics": 1864,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
-      "Geography": 25,
-      "History": 109,
+      "Geography": 26,
+      "History": 110,
       "Learning to Learn": 18,
       "Life Skills": 46,
       "Mathematics": 578,
-      "Personal & Social Development": 118,
+      "Personal & Social Development": 119,
       "Science": 576
     },
     "dependencies": 3994,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7727,
+    "topicStandardLinks": 7855,
     "clusters": 176,
-    "teachingResearch": 1049,
+    "teachingResearch": 1052,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4114
+    "curriculumAlignments": 4142
   },
   "files": {
     "topics.json": {
-      "bytes": 2365652,
-      "sha256": "1eac0582c4b778556d7d8408cbb19af804f50a677fa5d44ebf16707d53bb2161"
+      "bytes": 2382193,
+      "sha256": "b17056b1566989e66fac122610c87df5e5ed70a0cc14229e8dea4caa46d78431"
     },
     "dependencies.json": {
       "bytes": 872875,
@@ -59,16 +59,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23423970,
-      "sha256": "432f094089d1345e34933e8ed1502c44755989f31e5b17649d2ce5b6f50102d4"
+      "bytes": 23448415,
+      "sha256": "3ca4fd0dbcbc2befc8f4fa66583c519e0bd8f3f6300c5cd230b94a3db44f63d9"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1194253,
-      "sha256": "4f3f6327fcbd0a23dca3871152fde832f62e521672f5440a2561365945e7d743"
+      "bytes": 1210697,
+      "sha256": "a3207a16afa096f375a162e25060169ff9afe7662b72f53dba9246bda0816eac"
     }
   },
   "excluded": [
@@ -79,10 +79,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "1eac0582c4b778556d7d8408cbb19af804f50a677fa5d44ebf16707d53bb2161",
+    "topicFileSha256": "b17056b1566989e66fac122610c87df5e5ed70a0cc14229e8dea4caa46d78431",
     "coverage": {
-      "topicCount": 1861,
-      "withResearch": 1049,
+      "topicCount": 1864,
+      "withResearch": 1052,
       "withoutResearch": 812,
       "bySubject": {
         "Computing": {
@@ -96,13 +96,13 @@
           "withoutResearch": 339
         },
         "Geography": {
-          "topics": 25,
-          "withResearch": 3,
+          "topics": 26,
+          "withResearch": 4,
           "withoutResearch": 22
         },
         "History": {
-          "topics": 109,
-          "withResearch": 0,
+          "topics": 110,
+          "withResearch": 1,
           "withoutResearch": 109
         },
         "Learning to Learn": {
@@ -121,8 +121,8 @@
           "withoutResearch": 79
         },
         "Personal & Social Development": {
-          "topics": 118,
-          "withResearch": 0,
+          "topics": 119,
+          "withResearch": 1,
           "withoutResearch": 118
         },
         "Science": {
