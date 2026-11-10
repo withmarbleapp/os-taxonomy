@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "27e1840750c41c510c25a8fd14ac9cedbf90d9aefb91cb613504f2b6edc572a9",
-  "recordCount": 1048,
+  "topicFileSha256": "cf1a4bcdb78d90049208ced63597e977852fd0b6094564b2cbb3c42e1635662e",
+  "recordCount": 1049,
   "coverage": {
-    "topicCount": 1860,
-    "withResearch": 1048,
+    "topicCount": 1861,
+    "withResearch": 1049,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 24,
-        "withResearch": 2,
+        "topics": 25,
+        "withResearch": 3,
         "withoutResearch": 22
       },
       "History": {
@@ -215242,6 +215242,119 @@
         "originalResearchGeneratedBy": "Taxonomy curation: primary factual-source review and untested teaching proposal",
         "createdAt": "2026-11-10T14:22:27Z",
         "updatedAt": "2026-11-10T14:22:27Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_HX8VtJRt0Y",
+      "pedagogy": {
+        "summary": "Teach one shared map-reference operation: use cardinal directions relationally and retain them when a map turns. Keep grid-cell indexing, metric scale, neighbouring-country recall and magnetic-compass mechanisms separate.",
+        "bestPractices": [
+          "Provide the stated north reference instead of assuming every map is north-up.",
+          "Ask both A relative to B and B relative to A, and a direction-to-place lookup.",
+          "Turn the entire representation, then use a second map so one picture or word order is insufficient."
+        ],
+        "keyRepresentations": [
+          "Simple labelled regional/local maps with a north arrow or four-point compass rose",
+          "The same map turned together with its reference, then a new map"
+        ],
+        "commonMisconceptions": [
+          "Physical page-up always means north.",
+          "East/west follow whichever way the child happens to face rather than the stated map reference.",
+          "The direction from A to B is unchanged when the starting and finishing places are reversed."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Directions describe a relative relationship using the map’s reference, not the reader’s current page-up or a memorized arrangement of labels.",
+        "activities": [
+          {
+            "title": "Keep the map reference when the page turns",
+            "learnerActions": [
+              "Start with a simple map showing labelled familiar public places in unambiguous cardinal alignments and a clear north arrow; locate all four directions.",
+              "Describe a pair’s direction and its reciprocal relation, then locate a place from a supplied direction statement.",
+              "Turn the entire map with its arrow and landmarks together; repeat with another pair, explaining which reference determines north.",
+              "Transfer to another simple map with its stated reference; selected place labels may be landmarks, communities, countries or continents, without adding a memorized place inventory."
+            ],
+            "intendedInsight": "Directions describe a relative relationship using the map’s reference, not the reader’s current page-up or a memorized arrangement of labels.",
+            "feedback": [
+              "If physical page-up is called north, point to the map’s north reference and ask which direction the arrow identifies after turning.",
+              "If east and west or the reverse relation are swapped, trace the same pair from each starting place while keeping the reference visible.",
+              "Keep selected pairs directly aligned for the four-point task; avoid diagonal labels or ambiguous global wraparound routes that would require extra direction/bearing knowledge."
+            ],
+            "rationale": "Original untested teaching proposal grounded in the checked cartographic conventions. Paired and turned-map tasks are designed to reveal reference use rather than recitation; no classroom efficacy study is claimed.",
+            "sourceClaims": [
+              "The four cardinal points and a map/image north reference establish its orientation; north need not be at the physical top.",
+              "A four-point compass rose identifies north, east, south and west; the source separately shows eight/sixteen points, which are not imported into this claim."
+            ]
+          }
+        ],
+        "constraints": [
+          "A paper or digital map may be used; no particular app, live account, travel or physical compass is required.",
+          "Do not rotate the north arrow independently of the map and then treat the result as an equivalent view.",
+          "Limit assessment to the four cardinal directions with clear reference/alignment. Do not import diagonal compass points, numerical bearings, grid references, distance or magnetic declination.",
+          "Labels/full direction words may be read aloud; spelling is not the assessed operation."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original taxonomy-curation card/teaching proposal after whole-claim reuse review and primary factual-source checks. Low confidence reflects untested teaching efficacy; factual reference verification is not an intervention study."
+        ]
+      },
+      "assess": {
+        "method": "interpret_translate",
+        "poeTask": null,
+        "diagnosticPrompt": "Give {{name}} a simple labelled map with a north arrow and places lying directly north, south, east or west of one another. Can they name the four directions, tell you where one place is from another and give the reverse direction? Ask them to find a place from your direction clue, then turn the whole map, including its arrow, and try a new pair: do they still use the map reference instead of calling page-up north?",
+        "correctAnswer": "Identifies all four directions from the supplied reference, gives correct pair/reverse relations and uses the same geographical reference after the whole map turns.",
+        "whatMakesItDiscriminate": "A north arrow not aligned with physical page-up rules out a memorized top/right/bottom/left response. Reversing the place pair tests relative reference rather than naming a fixed location, while a new map and direction-to-place lookup distinguish transferable use from a rehearsed example.",
+        "probeDeeper": [
+          "Which mark tells you north in this view?",
+          "If the library is east of the park, which direction is the park from the library?",
+          "What changes on the paper when we turn it, and what place relationship stays the same?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Calls physical page-up north even when the north arrow points elsewhere.",
+            "revealedBy": "Response follows the reader/page orientation after the map turns.",
+            "nextMove": "Locate the north arrow in the turned representation and reconstruct the four-point reference from it.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Repeats the same direction after swapping the reference places.",
+            "revealedBy": "Says both library-east-of-park and park-east-of-library.",
+            "nextMove": "Trace the pair in each direction, retaining the same north reference, and compare the opposite directions.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not reliably use the stated reference or distinguish the four directions.",
+          "partial": "Succeeds in a familiar north-up view but loses the reference on turning, reversal or a new place clue.",
+          "full": "Uses the supplied reference for all four directions, reciprocal place relationships and new/turned-map lookup."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The four cardinal points and a map/image north reference establish its orientation; north need not be at the physical top.",
+          "source": "Natural Resources Canada — Appendix B: Using a compass",
+          "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/appendix-b-compass",
+          "verified": true
+        },
+        {
+          "claim": "A four-point compass rose identifies north, east, south and west; the source separately shows eight/sixteen points, which are not imported into this claim.",
+          "source": "Ordnance Survey Mapzone — Compasses and directions, page1",
+          "url": "https://www.ordnancesurvey.co.uk/mapzone/assets/doc/map-skills/Compasses-and-Directions-en.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked map-reference proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T15:45:42Z",
+        "updatedAt": "2026-11-10T15:45:42Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
