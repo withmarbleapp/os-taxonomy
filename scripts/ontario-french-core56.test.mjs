@@ -23,6 +23,22 @@ function verify(r,alignments){
   const c=p.performanceConditions;assert.equal(c.language,'French');assert.deepEqual(c.channels,['listening','speaking','reading','writing']);
   for(const key of ['retainedPriorWholeProtocols','actualFreshPerformanceRequired','selfFamilyFriendsEnvironmentTopics','teacherAndPeerInteractions','teacherAndPeerChannelReflection','adaptedAndAuthenticFourTextCategories','fourWritingModesAndFullProcess','noGradeClone'])assert.equal(c[key],true,key);
   for(const key of ['listeningNewWordContext','listeningBarrierFactorsDiscussed','guidedUnscriptedPartnerReplies','recentlyLearnedReadingWordCheck','writtenConventionRange'])assert.equal(c[key],grade===6,`grade-specific ${key}`);
+  const portfolioId=`core${grade}-grade-portfolio`;assert.equal(p.requiredPortfolioBinding,portfolioId,'actual grade portfolio binding');
+  const portfolio=r.resources[portfolioId];assert.ok(portfolio,'required actual portfolio');
+  assert.deepEqual(portfolio.formCoverage,{fiction:'fiction',information:grade===5?'memo':'information',graphic:'graphic',media:'media'});
+  for(const id of Object.values(portfolio.formCoverage))assert.ok(portfolio.texts[id],'required input form');
+  assert.match(portfolio.texts.fiction.body,grade===5?/son carnet dans son sac/:/Hier, Inès et Malik/,'connected original grade input');
+  assert.match(portfolio.texts.fiction.task,/retell|dramatise/,'meaning performance beyond starter recognition');
+  assert.match(portfolio.texts.fiction.visualPreparation,/original/,'actual illustration preparation');
+  assert.deepEqual(portfolio.texts.graphic.headings,grade===5?['Moment','Activité','Matériel']:['Plan','Lieu','Condition','Action']);
+  assert.equal(portfolio.texts.graphic.rows.length,grade===5?3:2);assert.match(portfolio.texts.graphic.task,/actual/,'render actual graphic form');
+  assert.match(portfolio.texts.media.layout,/actual|real/,'actual poster preparation');
+  assert.match(portfolio.speaking.task,/peer/);assert.match(portfolio.speaking.task,/teacher/);assert.ok(portfolio.speaking.model.includes(grade===5?'Notre rencontre est jeudi':'Hier, nous avons préparé'),'actual original oral model');
+  assert.deepEqual(Object.keys(portfolio.writing.models).sort(),grade===5?['memo','postcard']:['brochure','email','manual']);
+  if(grade===5){assert.match(portfolio.writing.models.postcard,/Quel livre préfères-tu/);assert.match(portfolio.writing.models.memo,/Pour notre classe/);}
+  else {assert.deepEqual(Object.keys(portfolio.writing.models.manual).sort(),['diagramPreparation','materials','steps','title']);assert.equal(portfolio.writing.models.manual.steps.length,5);assert.equal(portfolio.writing.models.brochure.sections.length,3);assert.match(portfolio.writing.models.email,/Objet :/);}
+  assert.match(portfolio.writing.task,/modelled.*shared.*guided.*independent/,'all writing modes remain actual duties');assert.match(portfolio.writing.task,/revise|revision/);assert.match(portfolio.writing.task,/Copying|copying/);
+  assert.ok(p.actions.some(x=>x.includes(portfolioId)&&x.includes('starter story')),'concrete grade portfolio instruction');
  }
  const actual=new Set();for(const c of alignments)for(const k of c.standards){if(!new Set(r.records.map(x=>x.key)).has(k))continue;const row=r.records.find(x=>x.key===k);assert.deepEqual([c.scope,c.country,c.region,c.ageRangeStart,c.ageRangeEnd],['jurisdiction','CA','Ontario',...row.ageBand]);actual.add(JSON.stringify([c.topicId,k]));}assert.deepEqual(actual,pairs,'exact source associations');assert.equal(pairs.size,182);assert.deepEqual([r.scope.records,r.scope.perGrade,r.scope.componentPairs,r.scope.reusedTopics,r.scope.newTopics,r.scope.remainingCultureRecords],[64,32,182,26,0,24]);
  const g6=r.protocols['core6-source-adaptations'];for(const action of requiredGrade6Actions)assert.ok(g6.actions.includes(action),'required concrete Grade6 task instruction');
@@ -39,5 +55,9 @@ test('Core French rejects missing source/pair, wrong valid protocol, lost Grade6
  for(const mutate of mutations){const r=structuredClone(report);mutate(r);assert.throws(()=>verify(r,contexts));}
  for(const action of requiredGrade6Actions){const lostInstruction=structuredClone(report);lostInstruction.protocols['core6-source-adaptations'].actions=lostInstruction.protocols['core6-source-adaptations'].actions.filter(x=>x!==action);assert.equal(lostInstruction.protocols['core6-source-adaptations'].performanceConditions.recentlyLearnedReadingWordCheck,true);assert.equal(lostInstruction.protocols['core6-source-adaptations'].performanceConditions.writtenConventionRange,true);assert.throws(()=>verify(lostInstruction,contexts),/required concrete Grade6 task instruction/);}
  for(const id of ['recently-learned-reading','location-preposition-revision']){const missing=structuredClone(report);delete missing.resources[id];assert.throws(()=>verify(missing,contexts));}
+ for(const grade of [5,6]){
+  const id=`core${grade}-grade-portfolio`,proto=`core${grade}-source-adaptations`;
+  for(const mutate of [r=>delete r.resources[id],r=>r.protocols[proto].requiredPortfolioBinding=`core${grade===5?6:5}-grade-portfolio`,r=>r.resources[id].texts.fiction.body='Il voit un livre.',r=>delete r.resources[id].texts.graphic,r=>r.resources[id].writing.models={},r=>r.resources[id].writing.task='Copy the model.',r=>r.protocols[proto].actions=r.protocols[proto].actions.filter(x=>!x.includes(id))]){const changed=structuredClone(report);mutate(changed);assert.throws(()=>verify(changed,contexts));}
+ }
  const lost=structuredClone(contexts);for(const c of lost)c.standards=c.standards.filter(k=>k!==report.records[0].key);assert.throws(()=>verify(report,lost),/exact source associations/);
 });
