@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1861,
+  "topicCount": 1862,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -15866,6 +15866,7 @@
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO01",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO03",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.3",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-C1.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-C1.3",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-C1.4",
@@ -16845,7 +16846,7 @@
       "domain": "Counting & Cardinality",
       "name": "Counting big collections in groups",
       "description": "Quantify collections of up to 120 objects by partitioning them into equal groups (twos, fives or tens) and skip counting, explaining why grouping makes counting faster and more reliable",
-      "ageRangeStart": 6,
+      "ageRangeStart": 3,
       "ageRangeEnd": 8,
       "centrality": 0.01219512195121951,
       "evidence": [
@@ -16858,6 +16859,7 @@
         "acara-v9:AC9M1N03",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.3-LO02",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO03",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.3",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-B1.5",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-B1.3"
       ]
@@ -21936,6 +21938,7 @@
         "acara-v9:AC9M1N05",
         "ccss-math:MP.4",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.13",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.6",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-A1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-C4",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-A1",
@@ -22091,7 +22094,7 @@
       "domain": "Mathematical Thinking",
       "name": "Precise Maths Communication",
       "description": "Communicate with mathematical precision: use correct vocabulary, specify units, and use symbols accurately",
-      "ageRangeStart": 6,
+      "ageRangeStart": 3,
       "ageRangeEnd": 13,
       "centrality": 0.02540650406504065,
       "evidence": [
@@ -22103,6 +22106,7 @@
       "standards": [
         "ccss-math:MP.6",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.6-LO04",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.12",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-A1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-A1",
@@ -22168,7 +22172,7 @@
       "domain": "Mathematical Thinking",
       "name": "Choosing the right strategy",
       "description": "Select and use appropriate tools and representations strategically, including choosing between mental methods, jottings, formal algorithms, and calculators for arithmetic with multi-digit numbers, decimals, and fractions",
-      "ageRangeStart": 7,
+      "ageRangeStart": 3,
       "ageRangeEnd": 11,
       "centrality": 0.0426829268292683,
       "evidence": [
@@ -22179,6 +22183,7 @@
       "assessmentPrompt": "When {{name}} faces a maths problem, do they think about which method suits it best — like doing easy ones in their head, using a written method for bigger calculations, or sketching a diagram for geometry?",
       "standards": [
         "ccss-math:MP.5",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.9",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.3",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-4"
       ]
@@ -23525,16 +23530,18 @@
       "subject": "Mathematics",
       "domain": "Measurement",
       "name": "Using a calendar",
-      "description": "Read a calendar to identify today's date and the day of the week for a given date, determine the number of days between two events, and use a supplied local calendar to find the holidays and season changes it marks",
+      "description": "Read a calendar to identify today's date and the day of the week for a given date, determine the number of days between two events, and use a supplied local calendar to find the holidays and season changes it marks. On a supplied calendar, count intervals between explicitly marked whole-month boundaries, including across a year boundary.",
       "ageRangeStart": 3,
       "ageRangeEnd": 8,
       "centrality": 0.006097560975609756,
       "evidence": [
         "Find 15 March on a calendar page, say which day of the week it is, and write today's date from the classroom calendar in day-month form",
         "Count how many days from 3 June to a birthday on 17 June",
-        "Use a supplied local calendar (e.g. an Ontario school-year calendar in Canada) to name the holidays it marks and the month in which each marked season begins, and say how many weeks until one of them"
+        "Use a supplied local calendar (e.g. an Ontario school-year calendar in Canada) to name the holidays it marks and the month in which each marked season begins, and say how many weeks until one of them",
+        "On a supplied calendar with the first of March and the first of June marked, count three whole-month intervals rather than four month names, checking by the month-boundary changes",
+        "Use the marked first of December and first of February in the following year to count two whole-month intervals; explain that this does not mean every month has 30 days and that other end-of-month conventions must be supplied rather than invented"
       ],
-      "assessmentPrompt": "If {{name}} looks at the family calendar, can they find today's date and count how many days are left until their birthday or the school holidays?",
+      "assessmentPrompt": "If {{name}} looks at the family calendar, can they find today's date and count how many days are left until their birthday or the school holidays? With the first of March and first of June marked on a supplied calendar, can they count the whole-month intervals and explain why the answer is three rather than four? Can they also count across the marked year boundary without treating every month as 30 days?",
       "standards": [
         "acara-v9:AC9M2M03",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.10-LO01",
@@ -42688,6 +42695,27 @@
       "standards": [
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-5.1",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-5"
+      ]
+    },
+    {
+      "id": "mt_rCy4qtUwuT",
+      "type": "META",
+      "subject": "Mathematics",
+      "domain": "Mathematical Thinking",
+      "name": "Formulating mathematical problems",
+      "description": "Formulate a mathematically answerable question from an observed or given situation involving quantities, shapes, positions or measures. Choose what to find out, identify relevant available or needed information, and state a suitable mathematical criterion or method. Express the problem through speech, pointing, drawings or a model.",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 8,
+      "centrality": null,
+      "evidence": [
+        "From a neutral scene of objects, choose a quantity to find out and formulate a question without the adult supplying the unknown; identify which information is available and which would need to be counted or measured",
+        "Distinguish a preference question from one with a mathematical criterion, or refine it into an answerable one; explain when missing information or an unrestricted question prevents an answer from the available situation",
+        "Transfer the operation to a shape, fit / position or measurement situation, stating a suitable comparison, model or measure rather than merely repeating a familiar addition question"
+      ],
+      "assessmentPrompt": "Show {{name}} a neutral scene with boxes, objects or ribbons, without giving them a mathematical question. Can they choose what to find out, express an answerable problem in words, a drawing or a model, and identify the information and method needed? Offer a different shape or measurement scene to see whether they can formulate a new problem.",
+      "standards": [
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.13",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-8"
       ]
     }
   ]

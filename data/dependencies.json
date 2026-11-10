@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3999,
+  "edgeCount": 4001,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -23996,6 +23996,18 @@
       "prerequisiteId": "mt_jY7uf0Cb7o",
       "strength": "soft",
       "reason": "Place-value understanding supports interpreting a placeholder example in the historical account; a supplied model can also provide that meaning."
+    },
+    {
+      "topicId": "mt_rCy4qtUwuT",
+      "prerequisiteId": "mt_fLOkq-HfPB",
+      "strength": "soft",
+      "reason": "Objects and drawings can externalise the relationships needed to pose a mathematical question; full prior mastery of solving a supplied model is not a hard gate."
+    },
+    {
+      "topicId": "mt_rCy4qtUwuT",
+      "prerequisiteId": "mt_lMz9nAs7VO",
+      "strength": "soft",
+      "reason": "Mathematical vocabulary can help express the question and its criterion, but pointing, drawings or a model allow formulation without a hard English grammar / question-word gate."
     }
   ]
 }
