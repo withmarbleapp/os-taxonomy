@@ -134,7 +134,7 @@
       },
       "acceptedLinkedCodes": 0,
       "acceptedPairs": 0,
-      "reviewState": "Current Grade 1 proposal reviews39 records, with specific missing-knowledge and task conditions. Grades2–6 remain unreviewed alignment scope.",
+      "reviewState": "Unmerged Grade1/Grade2 source-fit proposals each account for their39/40 selected records; initial Grade3 source review is separate from alignment completion. Accepted counts remain the pinned baseline inventory; Grades3–6 alignment work continues.",
       "integrationDisposition": "InScope"
     },
     {
@@ -183,10 +183,10 @@
     "ontario-primary-status-2026-11-09.md"
   ],
   "nextSlices": [
-    "Resolve bounded Grade 1 Social Studies knowledge decisions while reviewing Grade2 independently.",
-    "Continue Social Studies Grades2–6, retaining localized history/civics knowledge and evidence conditions.",
-    "Audit Arts, Health/PE and integrated Kindergarten as separate coherent scopes.",
-    "Establish genuine French source and competence support for retained FSL programme variants. The optional Native Languages programme is explicitly excluded; preserve its catalogue without counting it as pending or a gap."
+    "Complete review/dependency lifecycle for the proposed Grade1 and Grade2 Social Studies work without treating unmerged stacks as accepted.",
+    "Continue Social Studies Grades3–6 with localized knowledge and exact source/resource/performance conditions.",
+    "Audit Arts, Health/PE and integrated Kindergarten as separate coherent scopes; resolve feasible Language/Science residual task/resource design without demanding a learner study.",
+    "Complete genuine French competence support for all retained FSL programme variants; preserve the explicitly excluded Native Languages catalogue."
   ],
   "completionStatement": "Ontario integration within the agreed 2640-record eligible primary scope is not complete. The 2768-record retained inventory includes128explicitly excluded Native Languages records. Audit completion and Full coverage remain distinct; associations alone do not certify a subject.",
   "eligiblePrimaryRecords": 2640,
@@ -201,5 +201,24 @@
       "preservation": "Keep existing catalogue records and all prior contexts; no deletion or source rewrite.",
       "notExcluded": "First Nations, Métis and Inuit culture/history/community expectations within Social Studies, Language and Science."
     }
-  ]
+  ],
+  "grade2Proposal": {
+    "report": "ontario-grade2-social-studies-mapping-2026-11-10.json",
+    "summary": {
+      "reviewedCodes": 40,
+      "Full": 40,
+      "Partial": 0,
+      "newTopics": 3,
+      "existingHolders": 27,
+      "topicStandardPairs": 143,
+      "newContexts": 23,
+      "extendedExactBandContexts": 7
+    },
+    "dependency": {
+      "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/115",
+      "headCommit": "b4102bc0f44cbdbdd6990ba4b2b569f8039b7244",
+      "status": "Reviewed unmerged Grade1 proposal inherited by a normal merge. This Grade2 stack must be reconciled/retargeted to main after its base is accepted; no accepted-main or DB publication claim."
+    },
+    "authoringMeaning": "40source-fit authoring designs, not accepted delivery, classroom attainment or a whole-Ontario completion percentage."
+  }
 }
