@@ -24,7 +24,7 @@
       "Distinguish resource production/extraction from processing/manufacturing, and general services from information/knowledge work under this four-sector convention; justify the distinction using the actual activity rather than its location, tools or prestige.",
       "Classify unfamiliar but clearly described activities and recognize different sector activities within one organization, without assuming that every economic classification system separates services in the same way."
     ],
-    "assessmentPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for cutting timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+    "assessmentPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
     "id": "mt_ugSofLX87k",
     "centrality": 0
   },
@@ -73,10 +73,10 @@
         {
           "title": "Test close contrasts, mixed activities and transfer",
           "learnerActions": [
-            "Compare cutting timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
+            "Compare harvesting trees for raw timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
             "Transfer to clearly described crop production, food manufacturing, shop services and agricultural research. Give needed factual descriptions rather than test unexplained technical industry knowledge.",
             "Separate the described crop-growing, food-processing and research functions in one mixed organization. Explain that this is an activity-classification task, not a company’s legal or statistical code.",
-            "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: cutting, making, delivering or studying? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
+            "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: harvesting trees, making products, delivering goods or studying forestry? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
           ],
           "intendedInsight": "The same model can classify a new clear activity, while mixed or insufficient descriptions need careful units and evidence.",
           "feedback": [
@@ -102,7 +102,7 @@
     "assess": {
       "method": "two_tier",
       "poeTask": null,
-      "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for cutting timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+      "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
       "correctAnswer": "Names/explains all four sectors under the stated model, distinguishes the two close contrasts using actual described activity/output, transfers to a new context and handles mixed/insufficient accounts without a fabricated company-wide label.",
       "whatMakesItDiscriminate": "Matched activities can involve the same material or location while belonging to different sectors; a new-context transfer checks the category criterion rather than memorization of the timber examples. An insufficient account tests whether the learner invents a label from tools alone.",
       "probeDeeper": [
@@ -198,7 +198,7 @@
     ],
     "transfer": "Supply a hospital service and a separately described medical research activity, or a retailer and a separately described data-analysis institute, with model boundaries supplied clearly; justify classifications from actual purpose/output rather than place or tool.",
     "nonImplication": "Passing generic goods/services, supply-chain or employment-interest checks cannot establish these classifications; passing the four-sector task does not infer all supply-chain/cost/needs mastery.",
-    "ambiguousWitness": "A company says it uses a computer and works with trees. This does not establish whether its main described activity is cutting timber, making furniture, delivering products or researching forestry. Ask what activity/output the account means rather than fail a learner for insufficient facts.",
+    "ambiguousWitness": "A company says it uses a computer and works with trees. This does not establish whether its main described activity is harvesting trees for raw timber, making furniture, delivering products or researching forestry. Ask what activity/output the account means rather than fail a learner for insufficient facts.",
     "mixedWitness": "One organization grows crops, processes food and runs a research unit. Classify those explicitly described activities separately under the supplied model; do not pretend this teaching task determines a legal/NAICS whole-company code."
   },
   "whyNotLocalizationOnly": "The missing classification model has contrasts that remain absent even when old examples are translated or localized. It is shared knowledge usable across countries, not a Canada- or grade-specific clone. The four-sector convention is explicit rather than claimed universal.",

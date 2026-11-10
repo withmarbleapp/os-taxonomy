@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "e0a6f9ccbc81b34577e7e4f25b17787ea934704c64858ad0e5fc0e4eca972134",
+  "topicFileSha256": "661809e656f13be7a14e1e9ea57d00a728131765c9f8233b41d22d4bd8c02246",
   "recordCount": 1055,
   "coverage": {
     "topicCount": 1867,
@@ -216177,10 +216177,10 @@
           {
             "title": "Test close contrasts, mixed activities and transfer",
             "learnerActions": [
-              "Compare cutting timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
+              "Compare harvesting trees for raw timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
               "Transfer to clearly described crop production, food manufacturing, shop services and agricultural research. Give needed factual descriptions rather than test unexplained technical industry knowledge.",
               "Separate the described crop-growing, food-processing and research functions in one mixed organization. Explain that this is an activity-classification task, not a company’s legal or statistical code.",
-              "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: cutting, making, delivering or studying? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
+              "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: harvesting trees, making products, delivering goods or studying forestry? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
             ],
             "intendedInsight": "The same model can classify a new clear activity, while mixed or insufficient descriptions need careful units and evidence.",
             "feedback": [
@@ -216206,7 +216206,7 @@
       "assess": {
         "method": "two_tier",
         "poeTask": null,
-        "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for cutting timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+        "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
         "correctAnswer": "Names/explains all four sectors under the stated model, distinguishes the two close contrasts using actual described activity/output, transfers to a new context and handles mixed/insufficient accounts without a fabricated company-wide label.",
         "whatMakesItDiscriminate": "Matched activities can involve the same material or location while belonging to different sectors; a new-context transfer checks the category criterion rather than memorization of the timber examples. An insufficient account tests whether the learner invents a label from tools alone.",
         "probeDeeper": [
