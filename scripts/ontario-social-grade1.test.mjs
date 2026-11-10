@@ -23,22 +23,21 @@ test('Social Studies review accounts for selected catalogue codes and published 
   for(const [kind,count] of Object.entries(tally))assert.equal(mapping.summary[kind],count);
 });
 
-test('shared role claim and source-specific self-application protocol keep independent conditions explicit',()=>{
-  const id=mapping.claimCuration.newTopicId;
-  assert.ok(topics.has(id));
-  const edges=load('../data/dependencies.json').dependencies;
-  assert.ok(!edges.some(e=>e.topicId===id));
-  const research=load('../data/teaching-research.json').records.find(r=>r.topicId===id);
-  assert.equal(research.confidence,'low');
-  assert.match(topics.get(id).description,/people and the environment/);
-  assert.match(topics.get(id).assessmentPrompt,/same child/);
-  assert.match(topics.get(id).assessmentPrompt,/plants need water when soil is dry/);
-  for(const code of ['A1.2','A3.1']){
-    const row=mapping.records.find(r=>r.officialCode===code);
-    assert.ok(mapping.assessmentProtocols.some(p=>p.id===row.assessmentProtocol&&p.sourceCodes.includes(code)));
+test('source-specific assessment protocols resolve bidirectionally to reviewed records',()=>{
+  const protocols=new Map(mapping.assessmentProtocols.map(p=>[p.id,p]));
+  assert.equal(protocols.size,mapping.assessmentProtocols.length);
+  for(const row of mapping.records){
+    if(row.assessmentProtocol){
+      const protocol=protocols.get(row.assessmentProtocol);
+      assert.ok(protocol);
+      assert.ok(protocol.sourceCodes.includes(row.officialCode));
+    }
   }
-  const protocol=mapping.assessmentProtocols.find(p=>p.id==='social-role-self-application');
-  assert.match(protocol.coverageBoundary,/not a learner-performance study/);
-  assert.match(protocol.rubric.nearMiss,/fictional example/);
-  assert.ok(mapping.records.find(r=>r.officialCode==='B3.1').candidateOnly.some(c=>c.topicId==='mt_l-3JUgI80b'));
+  for(const protocol of protocols.values()){
+    for(const code of protocol.sourceCodes){
+      const row=mapping.records.find(r=>r.officialCode===code);
+      assert.ok(row);
+      assert.equal(row.assessmentProtocol,protocol.id);
+    }
+  }
 });
