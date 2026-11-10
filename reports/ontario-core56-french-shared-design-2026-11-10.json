@@ -1827,7 +1827,11 @@
         "Using an English result, a different French corpus or copied model as automatic evidence.",
         "Skipping the newly specified unfamiliar-word, guided-interaction or listening-barrier duties."
       ],
-      "transfer": "Change a supported French input, actual partner reply, audience or familiar reading/writing context and repeat the appropriate whole operation without automatically transferring mastery."
+      "transfer": "Change a supported French input, actual partner reply, audience or familiar reading/writing context and repeat the appropriate whole operation without automatically transferring mastery.",
+      "requiredTaskBindings": {
+        "C1.4": "recently-learned-reading",
+        "D2.3": "location-preposition-revision"
+      }
     }
   },
   "resources": {
@@ -1846,6 +1850,22 @@
         "Context/visual supports and repetition where useful"
       ],
       "limits": "There is no fixed complete exchange for rote reproduction, forced eye contact, compulsory personal disclosure or correct preference. Responses must depend on what was actually said. All prior own/peer/familiar-adult and before/during/after reflection tasks remain required."
+    },
+    "recently-learned-reading": {
+      "kind": "Original French teaching and changed-context reading passages",
+      "initialPassage": "La cabane est un abri. Elle protège Lina de la pluie.",
+      "revisitPassage": "Près du jardin, Lina trouve un petit abri. Elle peut y attendre au sec.",
+      "task": "Introduce abri through the initial French passage and verify its meaning with context or a checked French word reference. In a later connected reading, use the revisit passage and ask what abri means here and which words or reference confirm it. Record that the word was actually recently learned; if already familiar, prepare another verified target and two suitable passages.",
+      "meaningCheck": "An abri is a shelter; explain the contextual protective place rather than only pronounce or recognise the letters. Use an actual meaning strategy before/during/after reading and retain the whole prior new-word protocol.",
+      "limits": "No universal delay, spelling-test proxy or automatic inference that every recently taught word is retained."
+    },
+    "location-preposition-revision": {
+      "kind": "Original fictional draft for revision; never represented as a real learner error",
+      "intendedMeaning": "Le jeton doit être à l’intérieur de la boîte.",
+      "draft": "Pose le jeton sur la boîte.",
+      "revision": "Pose le jeton dans la boîte.",
+      "task": "For instructions to a partner, compare the intended inside location with the fictional draft, revise the actual preposition and explain or demonstrate the intended relation. Then produce a new suitable instruction for a changed stated placement. Retain the full earlier spelling/accents, punctuation, intended-time and presentation checks in the writing portfolio.",
+      "limits": "Changing a word without understanding its intended place is insufficient. This is supported revision, separate from independent retained French written-form checks; no every-preposition inventory or fabricated learner mistake."
     }
   },
   "wholeClaimBoundaries": [
