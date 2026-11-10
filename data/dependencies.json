@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 4003,
+  "edgeCount": 3994,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -361,7 +361,7 @@
       "topicId": "mt_0XxyaQLRhn",
       "prerequisiteId": "mt__N55B7u7HD",
       "strength": "soft",
-      "reason": "GB route: Year 1 experience of hours, minutes and seconds as units of time supports reading o'clock and half-past times; soft because this node is GB-only"
+      "reason": "Experience measuring time in hours and minutes supports discussion of clock readings; timing tool operation is not necessary for every clock-reading route."
     },
     {
       "topicId": "mt_0ZDouU664X",
@@ -1216,16 +1216,10 @@
       "reason": "Drawing ray diagrams requires measuring angles accurately with a protractor — the core skill in mt_4MFUAsbx_6"
     },
     {
-      "topicId": "mt_2VpdPjvewx",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_wPgpMJ0-PA",
-      "strength": "hard",
-      "reason": "Converting to 3dp requires ×÷ by 10/100/1000 skills"
-    },
-    {
-      "topicId": "mt_2VpdPjvewx",
-      "prerequisiteId": "mt_Zks8xyInSG",
-      "strength": "hard",
-      "reason": "Y6 unit conversion with decimals extends Y5 metric conversion"
+      "strength": "soft",
+      "reason": "Decimal powers-of-ten arithmetic supports decimal metric examples, not every unit-conversion task; it is not a universal grade-based gate."
     },
     {
       "topicId": "mt_2VR963szuk",
@@ -1242,8 +1236,8 @@
     {
       "topicId": "mt_2XDGT5tei1",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Knowing 60 min = 1 hour and 24 hours = 1 day extends from measuring time in hours/minutes/seconds"
+      "strength": "soft",
+      "reason": "Measuring time helps illustrate unit relations; operating a timer is not necessary to understand 60 minutes per hour and 24 hours per day."
     },
     {
       "topicId": "mt_2x-EwdBsgl",
@@ -1262,18 +1256,6 @@
       "prerequisiteId": "mt_E1wR8IfCV6",
       "strength": "hard",
       "reason": "Must understand nutrition before evaluating impact of diet on health"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion feeds into time-specific conversions"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "hard",
-      "reason": "Elapsed time problems are prerequisite to time conversion problems"
     },
     {
       "topicId": "mt_2_YoprauaJ",
@@ -1890,8 +1872,8 @@
     {
       "topicId": "mt_4emC463IyW",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Calculating event durations requires reading time to the minute"
+      "strength": "soft",
+      "reason": "Reading a clock face supports obtaining endpoints; supplied readable time values permit duration calculation without complete analogue clock-reading mastery."
     },
     {
       "topicId": "mt_4fK8Bb8Tr_",
@@ -2041,7 +2023,7 @@
       "topicId": "mt_4m8BimI4G5",
       "prerequisiteId": "mt_HNOPGJYiRK",
       "strength": "hard",
-      "reason": "Extends telling time to include a.m./p.m. and 24-hour notation"
+      "reason": "Five-minute analogue reading supports the clock-reading component; a.m./p.m. distinguishes the two daily occurrences of a 12-hour time."
     },
     {
       "topicId": "mt_4MFUAsbx_6",
@@ -2195,15 +2177,9 @@
     },
     {
       "topicId": "mt_5HV4mbgSGH",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Unit conversion supports measurement word problems"
-    },
-    {
-      "topicId": "mt_5J2quSTspi",
-      "prerequisiteId": "mt_4m8BimI4G5",
-      "strength": "hard",
-      "reason": "Writing 3:20 p.m. as 15:20 and 07:05 as 7:05 a.m. relies on knowing which times are before and after midday"
+      "reason": "Converting to compatible units supports measurement word problems."
     },
     {
       "topicId": "mt_5J2quSTspi",
@@ -2682,8 +2658,8 @@
     {
       "topicId": "mt_6XCURuNwPw",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Sequencing intervals requires understanding time measurement"
+      "strength": "soft",
+      "reason": "Timing events supplies measured durations; ordering durations already supplied does not require operating a timer."
     },
     {
       "topicId": "mt_6XCURuNwPw",
@@ -6323,9 +6299,9 @@
     },
     {
       "topicId": "mt_Cqm8iy48UI",
-      "prerequisiteId": "mt_2yas4Unc8o",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "soft",
-      "reason": "Time conversion supports interpreting timetables"
+      "reason": "Unit conversion supports interpreting timetable durations; general table reading does not require every conversion family."
     },
     {
       "topicId": "mt_Cqm8iy48UI",
@@ -6654,14 +6630,14 @@
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_KaF0SQvaiu",
-      "strength": "hard",
-      "reason": "measuring in uniform units is the foundation of relating unit sizes"
+      "strength": "soft",
+      "reason": "Iterating length units can illustrate relative unit size, but practical length measurement is not required for time or other unit conversions."
     },
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_PZ909yPrEC",
       "strength": "hard",
-      "reason": "converting 3 km to 3000 m is a multiplicative scale (3 groups of 1000): multiplication as equal groups"
+      "reason": "A conversion factor expresses equal groups of smaller units within one larger unit; multiplicative unit reasoning is essential."
     },
     {
       "topicId": "mt_DA7-JYRvtP",
@@ -7142,12 +7118,6 @@
       "prerequisiteId": "mt_Ep7TDFuYUa",
       "strength": "soft",
       "reason": "Equivalent fractions require selecting appropriate fraction models"
-    },
-    {
-      "topicId": "mt_d-WZC2OyMB",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "soft",
-      "reason": "Elapsed time problems require choosing between number line and mental methods"
     },
     {
       "topicId": "mt_d-WZC2OyMB",
@@ -7824,8 +7794,8 @@
     {
       "topicId": "mt_EXlmTURK_o",
       "prerequisiteId": "mt_2XDGT5tei1",
-      "strength": "hard",
-      "reason": "Extends knowing minutes in an hour to seconds in a minute and days in months"
+      "strength": "soft",
+      "reason": "Hour/day relations support discussion of time units but do not establish or gate calendar-length and seconds-per-minute knowledge."
     },
     {
       "topicId": "mt_EXO1bJ3G_v",
@@ -10757,15 +10727,9 @@
     },
     {
       "topicId": "mt_IL86kadLSS",
-      "prerequisiteId": "mt_4emC463IyW",
-      "strength": "soft",
-      "reason": "GB route: Year 3 calculating the time taken by events feeds into elapsed-time problem solving; soft because this node is GB-only (both countries keep the hard nearest-minute prerequisite)"
-    },
-    {
-      "topicId": "mt_IL86kadLSS",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Must read time to nearest minute before solving elapsed time problems"
+      "strength": "soft",
+      "reason": "Clock reading supports tasks presented on a clock face; supplied digital times do not require complete analogue nearest-minute mastery."
     },
     {
       "topicId": "mt_IlDaxVr60U",
@@ -14286,8 +14250,8 @@
     {
       "topicId": "mt__N55B7u7HD",
       "prerequisiteId": "mt_TcG90kS8nu",
-      "strength": "hard",
-      "reason": "Measuring time in units requires understanding time comparison language first"
+      "strength": "soft",
+      "reason": "Comparative time language supports discussing measurements, but timing and recording one event do not require comparing events."
     },
     {
       "topicId": "mt_n5_Jt4ExUd",
@@ -15857,9 +15821,9 @@
     },
     {
       "topicId": "mt_p6MhZJYYPN",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Must know metric units before approximating imperial equivalences"
+      "reason": "Applying a known unit relationship supports approximate metric–imperial conversion."
     },
     {
       "topicId": "mt_p-8Hlf6_9k",
@@ -18599,15 +18563,15 @@
     },
     {
       "topicId": "mt_SqhXQhAEUf",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Multi-step conversion problems require conversion skills"
+      "reason": "Selecting and sequencing a conversion inside a problem draws on the unit-conversion procedure."
     },
     {
       "topicId": "mt_SqhXQhAEUf",
       "prerequisiteId": "mt_5HV4mbgSGH",
-      "strength": "hard",
-      "reason": "Measurement word problems extend Y5 measurement problem-solving"
+      "strength": "soft",
+      "reason": "Measurement word-problem experience can support choosing operations, but this broader four-operation/fraction claim is not necessary for every conversion-and-calculation problem."
     },
     {
       "topicId": "mt_sQpIV0-qY7",
@@ -19385,9 +19349,9 @@
     },
     {
       "topicId": "mt_tpT9brpI6D",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "KS3 unit conversion extends KS2 (Y6) metric conversion with decimals to area/volume units"
+      "reason": "Area and volume conversion extend unit-factor reasoning by deriving squared and cubed factors."
     },
     {
       "topicId": "mt_tpT9brpI6D",
@@ -19952,12 +19916,6 @@
       "prerequisiteId": "mt_4m8BimI4G5",
       "strength": "soft",
       "reason": "mistargeted gate: its reason named five-minute telling; a.m./p.m. is illustrative 'such as' vocabulary"
-    },
-    {
-      "topicId": "mt_UNzojLkNdm",
-      "prerequisiteId": "mt_6XCURuNwPw",
-      "strength": "soft",
-      "reason": "GB route: Year 2 comparing and sequencing intervals of time is the groundwork for recording and comparing durations in seconds, minutes and hours; soft because this node is GB-only"
     },
     {
       "topicId": "mt_UNzojLkNdm",
@@ -21224,12 +21182,6 @@
       "prerequisiteId": "mt_Z_Wu_77ybI",
       "strength": "hard",
       "reason": "The periodic table organises elements by their atomic structure — atoms and elements must be understood first"
-    },
-    {
-      "topicId": "mt_WfrE_4r-kY",
-      "prerequisiteId": "mt_5J2quSTspi",
-      "strength": "hard",
-      "reason": "Year 4 conversion between analogue and digital 12- and 24-hour clocks builds on Year 3 reading of 12- and 24-hour times"
     },
     {
       "topicId": "mt_wf-SJhZ1kC",
@@ -23662,16 +23614,10 @@
       "reason": "Comparing capacity requires understanding capacity as a measurable attribute"
     },
     {
-      "topicId": "mt_Zks8xyInSG",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion is prerequisite to systematic metric conversions with tables"
-    },
-    {
-      "topicId": "mt_Zks8xyInSG",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_LlMl2PbaZe",
       "strength": "soft",
-      "reason": "×÷ by 10/100/1000 supports metric unit conversions"
+      "reason": "Multiplication and division by powers of ten support metric conversions; non-base-ten time rates use their actual relationships."
     },
     {
       "topicId": "mt_ZL9qVVnpwN",

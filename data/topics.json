@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1861,
+  "topicCount": 1858,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -18637,7 +18637,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Fractions",
-      "name": "Decimal place value",
+      "name": "Rounding tenths to whole numbers",
       "description": "Round decimals with one decimal place to the nearest whole number",
       "ageRangeStart": 8,
       "ageRangeEnd": 10,
@@ -18658,7 +18658,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Fractions",
-      "name": "Decimal place value (age 8+)",
+      "name": "Comparing decimals with matching precision (up to two places)",
       "description": "Compare numbers with the same number of decimal places up to two decimal places",
       "ageRangeStart": 8,
       "ageRangeEnd": 11,
@@ -19069,7 +19069,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Fractions",
-      "name": "Decimal place value (age 9+)",
+      "name": "Rounding hundredths to whole numbers or tenths",
       "description": "Round decimals with two decimal places to the nearest whole number and to one decimal place",
       "ageRangeStart": 9,
       "ageRangeEnd": 13,
@@ -19284,7 +19284,7 @@
       "type": "CONCEPTUAL",
       "subject": "Mathematics",
       "domain": "Fractions",
-      "name": "Tenths (age 9+)",
+      "name": "Thousandths and their decimal equivalents",
       "description": "Recognise and use thousandths; relate them to tenths, hundredths, and their decimal equivalents (e.g. 1/1000 = 0.001, 35/1000 = 0.035)",
       "ageRangeStart": 9,
       "ageRangeEnd": 13,
@@ -22235,7 +22235,7 @@
       "type": "META",
       "subject": "Mathematics",
       "domain": "Mathematical Thinking",
-      "name": "Fractions on a number line",
+      "name": "Connecting multiplication, fraction and decimal representations",
       "description": "Move fluently between real-world situations, diagrams, number lines, and symbolic equations involving multiplication, fractions, and decimals, explaining what each representation shows",
       "ageRangeStart": 8,
       "ageRangeEnd": 9,
@@ -22459,7 +22459,7 @@
       "type": "META",
       "subject": "Mathematics",
       "domain": "Mathematical Thinking",
-      "name": "Fractions on a number line (age 9+)",
+      "name": "Connecting multiplication, fraction, decimal and percentage representations",
       "description": "Move fluently between real-world situations, diagrams, number lines, bar models, and symbolic equations involving multi-digit multiplication, fractions, decimals, and percentages, explaining connections between representations",
       "ageRangeStart": 9,
       "ageRangeEnd": 10,
@@ -22747,7 +22747,7 @@
       "type": "LANGUAGE",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Comparing durations",
+      "name": "Time comparison words",
       "description": "Use comparative language for time: quicker, slower, earlier, later",
       "ageRangeStart": 4,
       "ageRangeEnd": 8,
@@ -22757,7 +22757,7 @@
         "Use 'earlier' and 'later' correctly to describe daily events",
         "Solve practical problems like 'Who finished first?'"
       ],
-      "assessmentPrompt": "If {{name}} finishes their dinner before a sibling, can they tell you who finished earlier — and which one was quicker?",
+      "assessmentPrompt": "If {{name}} and a sibling start eating at the same time and {{name}} finishes first, can they say who finished earlier and who took less time? If the start times are unknown, can they explain why finishing first alone does not tell you who was quicker?",
       "standards": [
         "acara-v9:AC9MFM01",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-E2.4",
@@ -22936,21 +22936,26 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Hours, minutes and seconds",
+      "name": "Measuring and recording durations",
       "description": "Measure and begin to record time in hours, minutes, and seconds",
-      "ageRangeStart": 5,
+      "ageRangeStart": 3,
       "ageRangeEnd": 10,
       "centrality": 0.04979674796747968,
       "evidence": [
         "Use a sand timer or stopwatch to time an activity",
         "Begin to understand that 1 minute = 60 seconds",
-        "Record a duration in simple terms (e.g. 'it took about 2 minutes')"
+        "Record a duration in simple terms (e.g. 'it took about 2 minutes')",
+        "Estimate whether brushing teeth takes about 2 seconds, 2 minutes or 2 hours, then use a supplied suitable timer to measure the event and record its duration"
       ],
-      "assessmentPrompt": "If {{name}} watches the second hand go all the way round a clock, can they count that as one minute — and estimate roughly how many minutes their favourite TV show lasts?",
+      "assessmentPrompt": "Given a suitable timer, can {{name}} estimate the duration of a short everyday activity in an appropriate unit, start and stop the timer with the activity, and read and record the measured duration?",
       "standards": [
+        "acara-v9:AC9M3M03",
+        "ccss-math:3.MD.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.10",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-E2.4",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.6",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.3",
+        "uk-nc-2013:Ma/KS2/Y3/M/5",
         "uk-nc-2013:Maths/Y1/M/8"
       ]
     },
@@ -23308,20 +23313,25 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Sequence intervals of time",
+      "name": "Comparing and ordering durations",
       "description": "Compare and sequence intervals of time",
       "ageRangeStart": 6,
-      "ageRangeEnd": 7,
+      "ageRangeEnd": 9,
       "centrality": 0.01727642276422764,
       "evidence": [
         "Order three events by how long they took",
         "Compare the duration of two activities (e.g. 'the race took longer than the walk')",
-        "Sequence intervals on a timeline"
+        "Sequence intervals on a timeline",
+        "Compare a 35-minute bus journey with a 40-minute walk and say which takes longer and by how much",
+        "Compare 1 minute 20 seconds with 75 seconds by expressing them in a common unit"
       ],
-      "assessmentPrompt": "If {{name}} knows a film takes 2 hours and a car journey takes 45 minutes, can they tell you which takes longer — and put a few daily activities in order of how long they take?",
+      "assessmentPrompt": "If {{name}} is given durations of 35 minutes, 40 minutes and 25 minutes, can they order them and say how much longer 40 minutes is than 35? Can they compare 1 minute 20 seconds with 75 seconds and explain why finishing later alone does not show a longer duration?",
       "standards": [
         "acara-v9:AC9M1M01",
         "acara-v9:AC9M1M03",
+        "acara-v9:AC9M3M03",
+        "uk-nc-2013:Ma/KS2/Y3/M/5",
+        "uk-nc-2013:Ma/KS2/Y3/M/7",
         "uk-nc-2013:Maths/Y2/M/6"
       ]
     },
@@ -23485,17 +23495,17 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Comparing Time Durations",
-      "description": "Compare durations of events and calculate the time taken by particular events or tasks",
+      "name": "Calculating elapsed duration",
+      "description": "Calculate the duration between a known start time and a known finish time, including across an hour boundary; distinguish the interval length from either clock reading.",
       "ageRangeStart": 7,
       "ageRangeEnd": 9,
       "centrality": 0.04166666666666666,
       "evidence": [
         "Work out that a TV show from 5:17 p.m. to 5:43 p.m. lasted 26 minutes",
-        "Compare a 35-minute bus journey with a 40-minute walk and say which takes longer and by how much",
-        "Solve 'The lesson starts at 10:15 and ends at 11:00. How long is it?' (45 minutes)"
+        "Find that an activity from 2:50 p.m. to 4:10 p.m. lasts 1 hour 20 minutes, explaining the regrouping at 60 minutes",
+        "Solve a lesson from 10:15 to 11:00 as a duration of 45 minutes, using a number line or another valid method"
       ],
-      "assessmentPrompt": "If {{name}} starts cooking at 4:15 p.m. and finishes at 5:00 p.m., can they work out how long the cooking took?",
+      "assessmentPrompt": "If {{name}} starts cooking at 4:15 p.m. and finishes at 5:00 p.m., can they work out how long it took and explain how they know?",
       "standards": [
         "acara-v9:AC9M3M03",
         "uk-nc-2013:Ma/KS2/Y3/M/7"
@@ -23657,19 +23667,18 @@
       "type": "REPRESENTATIONAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Roman numeral and 24-hour clocks",
-      "description": "Tell and write the time from analogue clocks with Roman-numeral faces (I to XII, including IV, which some clocks show as IIII, and IX), knowing that the minute positions are the same as on a clock with ordinary numbers; and read and write times on 12-hour and 24-hour clocks, knowing that the 24-hour clock runs from 00:00 at midnight to 23:59. Times from 1:00 a.m. to 11:59 a.m. keep the same hour (7:05 a.m. = 07:05); times from 1:00 p.m. to 11:59 p.m. are 12 hours more (3:20 p.m. = 15:20). The 12 o'clock hour is the exception to both: 12:20 p.m., just after noon, stays 12:20, and 12:20 a.m., just after midnight, becomes 00:20. Fluent conversion between 12- and 24-hour times is developed in Year 4",
+      "name": "Roman-numeral clock faces",
+      "description": "Tell and write the time from analogue clocks with Roman-numeral faces I to XII, including IV (also shown as IIII on some clocks) and IX. Interpret the numeral positions and hands as on an ordinary numbered clock face.",
       "ageRangeStart": 7,
-      "ageRangeEnd": 11,
+      "ageRangeEnd": 8,
       "centrality": 0.01829268292682927,
       "evidence": [
         "Read a Roman-numeral clock with the minute hand on IX and the hour hand between IV and V as quarter to five (4:45)",
-        "Match the Roman numerals I to XII to the hour positions on a blank clock face, including IV (or IIII), IX and XII",
-        "Write 3:20 p.m. as 15:20 and 7:05 a.m. as 07:05, then write 12:20 p.m. as 12:20 and 12:20 a.m. as 00:20, explaining why adding 12 works only for p.m. times from 1 p.m. onwards"
+        "Match I to XII to hour positions on a clock face, including IV or IIII, IX and XII",
+        "Read the same hand positions on Roman and ordinary numbered clock faces, explaining that changing numeral labels does not change the time"
       ],
-      "assessmentPrompt": "If {{name}} sees a clock with Roman numerals where the minute hand points to IX and the hour hand is between IV and V, can they read it as quarter to five — and say what time 15:20 on a 24-hour clock means?",
+      "assessmentPrompt": "If {{name}} sees a Roman-numeral clock with the minute hand on IX and the hour hand between IV and V, can they read it as quarter to five and explain whether a clock labelled IIII instead of IV would show a different time?",
       "standards": [
-        "acara-v9:AC9M5M03",
         "uk-nc-2013:Ma/KS2/Y3/M/4"
       ]
     },
@@ -23702,21 +23711,19 @@
       "subject": "Mathematics",
       "domain": "Measurement",
       "name": "Time to the nearest minute",
-      "description": "Tell, write and estimate the time to the nearest minute on analogue and digital clocks, using vocabulary such as o'clock, a.m./p.m., morning, afternoon, noon and midnight; record and compare times and durations in seconds, minutes and hours",
-      "ageRangeStart": 3,
+      "description": "Read and write time to the nearest minute on analogue and digital clocks. Coordinate the minute scale with the hour hand, and express equivalent minutes-past and minutes-to readings.",
+      "ageRangeStart": 7,
       "ageRangeEnd": 9,
       "centrality": 0.03963414634146342,
       "evidence": [
-        "Read 7:43 from an analogue clock face and write it on a digital display",
-        "Estimate whether brushing teeth takes about 2 seconds, 2 minutes or 2 hours, then time it to check",
-        "Compare 1 minute 20 seconds with 75 seconds and say which is longer"
+        "Read 7:43 from an analogue clock face and write it on a digital display, keeping the hour as 7 although the hour hand is near 8",
+        "Read an analogue clock showing 11:06, explaining why the hour hand is just past 11 and the minute hand is six minutes past the hour",
+        "Express 9:57 as three minutes to ten and explain the hour-hand position"
       ],
-      "assessmentPrompt": "If the kitchen clock shows 7:43, can {{name}} read the exact time and write it as it would look on a digital clock — and say which is longer, 1 minute 20 seconds or 75 seconds?",
+      "assessmentPrompt": "If an analogue kitchen clock shows 7:43, can {{name}} read and write the time and explain why the hour is still 7? On another clock showing 9:57, can they write the digital time and say how many minutes remain until ten?",
       "standards": [
-        "acara-v9:AC9M3M03",
         "acara-v9:AC9M3M04",
         "ccss-math:3.MD.1",
-        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.10",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.6",
         "uk-nc-2013:Ma/KS2/Y3/M/5"
       ]
@@ -23734,9 +23741,9 @@
       "evidence": [
         "State that there are 60 seconds in a minute",
         "Name the months and state the number of days in each",
-        "Explain that a leap year has 366 days and occurs every 4 years"
+        "Explain that a leap year has 366 days; leap years usually follow a four-year pattern, with calendar exceptions, so check a calendar for a particular year"
       ],
-      "assessmentPrompt": "If you ask {{name}} how many days are in September and whether this year is a leap year, can they answer both — and tell you how many seconds are in a minute?",
+      "assessmentPrompt": "If you give {{name}} a calendar, can they say how many days are in September and whether that year has 365 or 366 days, and tell you how many seconds are in a minute?",
       "standards": [
         "acara-v9:AC9M2M03",
         "acara-v9:AC9M3M03",
@@ -23750,16 +23757,18 @@
       "subject": "Mathematics",
       "domain": "Measurement",
       "name": "12-hour and 24-hour time",
-      "description": "Read, write, and convert time between analogue and digital 12-hour and 24-hour clocks",
+      "description": "Read, write and convert time between ordinary analogue and digital 12-hour and 24-hour clocks. Morning hours 1–11 keep their hour (7:05 a.m. = 07:05); afternoon/evening hours 1–11 add 12 (3:20 p.m. = 15:20). The 12 o’clock hour has separate noon and midnight cases: 12:20 p.m. = 12:20 and 12:20 a.m. = 00:20. Convert in both directions without requiring Roman-numeral clock faces.",
       "ageRangeStart": 8,
       "ageRangeEnd": 11,
       "centrality": 0.01626016260162602,
       "evidence": [
         "Convert 3:45 pm to 15:45 in 24-hour time",
         "Read 19:30 and state the 12-hour equivalent as 7:30 pm",
-        "Match a set of 12-hour and 24-hour times"
+        "Match a set of 12-hour and 24-hour times",
+        "Convert 12:20 a.m. to 00:20 and 12:20 p.m. to 12:20, explaining the midnight and noon cases",
+        "Read an ordinary analogue clock with a stated afternoon context and write the equivalent 24-hour digital time; translate back to a 12-hour display"
       ],
-      "assessmentPrompt": "If a train timetable shows a departure at 14:35, can {{name}} convert that to 12-hour clock time — and tell you whether that's morning or afternoon?",
+      "assessmentPrompt": "If a train leaves at 14:35, can {{name}} give the 12-hour time and part of the day, then write 12:20 a.m. and 12:20 p.m. in 24-hour time? Can they also translate a stated afternoon time on an ordinary analogue clock?",
       "standards": [
         "acara-v9:AC9M5M03",
         "uk-nc-2013:Ma/KS2/Y4/M/5"
@@ -23861,24 +23870,37 @@
       "subject": "Mathematics",
       "domain": "Measurement",
       "name": "Converting measurement units",
-      "description": "Convert between different units of measure (e.g. kilometre to metre, hour to minute, minute to second, year to month, week to day)",
+      "description": "Convert between related measurement units using their unit relationship and the relative sizes of the units to choose multiplication or division. Handle whole-number and decimal measurements at the task’s specified precision, including three-decimal-place examples, compound measures and reverse conversions with remainders; explain equivalents and record them in conversion tables. Include metric length, mass and capacity, and time relationships (hours/minutes, minutes/seconds, years/months and weeks/days), distinguishing fixed rates from variable month lengths.",
       "ageRangeStart": 8,
       "ageRangeEnd": 13,
       "centrality": 0.06504065040650407,
       "evidence": [
-        "Convert 3 km to 3000 m",
-        "State 2 hours = 120 minutes",
-        "Convert 5 weeks to 35 days"
+        "Convert 3.25 kg to 3250 g and 45 cm to 0.45 m, explaining why the count grows or shrinks; convert 5 g to 0.005 kg without adding or deleting zeros mechanically",
+        "Convert 2 hours 35 minutes to 155 minutes and 150 seconds to 2 minutes 30 seconds, preserving the mixed part or remainder and explaining why the rate is 60 rather than 100",
+        "Convert 8 weeks 3 days to 59 days and 2 years 3 months to 27 months; explain why an unspecified month cannot be converted to one fixed number of days",
+        "Build and interpret a two-column equivalence table for cm and mm, explain the factor, and use the same relationship to convert in either direction",
+        "Convert 2.5 hours to 9000 seconds through minutes, tracking the unit at each step and checking by reversing the conversion"
       ],
-      "assessmentPrompt": "If {{name}} is told a journey is 3.5 km, can they convert that to metres — and also turn 2 hours 15 minutes into just minutes?",
+      "assessmentPrompt": "Can {{name}} explain and show how to turn 3.25 kg into grams and 45 cm into metres, change 2 hours 35 minutes into minutes and 150 seconds into minutes and seconds, and make a small cm-to-mm conversion table? Ask how they chose each operation, kept any remainder, and why a month does not always have the same number of days.",
       "standards": [
         "acara-v9:AC9M4M03",
+        "acara-v9:AC9M5M01",
+        "acara-v9:AC9M6M01",
+        "ccss-math:4.MD.1",
+        "ccss-math:5.MD.1",
+        "ccss-math:6.RP.3d",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
+        "uk-nc-2013:KS3.Maths.Ratio.1",
         "uk-nc-2013:Ma/KS2/Y4/M/1",
-        "uk-nc-2013:Ma/KS2/Y4/M/6"
+        "uk-nc-2013:Ma/KS2/Y4/M/6",
+        "uk-nc-2013:Ma5/3.1a",
+        "uk-nc-2013:Ma5/3.1f",
+        "uk-nc-2013:Ma6/3.1b"
       ]
     },
     {
@@ -23886,23 +23908,22 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Elapsed time problems",
-      "description": "Solve word problems involving elapsed time by adding and subtracting time intervals in minutes, including using a number line",
+      "name": "Finding start or finish times",
+      "description": "Find an unknown start or finish time from a given duration and the other clock time. Choose whether to move forwards or backwards, regrouping minutes at 60 when crossing an hour; a number line is one useful representation.",
       "ageRangeStart": 8,
       "ageRangeEnd": 12,
       "centrality": 0.04166666666666666,
       "evidence": [
-        "A film starts at 2:15 and lasts 47 minutes — when does it end?",
-        "Calculate how many minutes between 9:20 and 10:05",
-        "Use a number line to show the elapsed time between two events"
+        "A film starts at 2:15 p.m. and lasts 47 minutes: find its finish time of 3:02 p.m.",
+        "A show ends at 10:05 a.m. and lasts 45 minutes: find its start time of 9:20 a.m.",
+        "Explain why a known start and duration require moving forwards, while a known finish and duration require moving backwards; check the result against the story"
       ],
-      "assessmentPrompt": "If {{name}} starts football practice at 3:20 p.m. and it lasts 75 minutes, can they work out what time it finishes — using a number line to help?",
+      "assessmentPrompt": "If {{name}} starts football practice at 3:20 p.m. and it lasts 75 minutes, can they find the finish time? If another practice finishes at 5:10 p.m. after 45 minutes, can they find when it started and explain the different directions?",
       "standards": [
         "acara-v9:AC9M4M03",
         "acara-v9:AC9M6M03",
         "ccss-math:3.MD.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.3",
-        "uk-nc-2013:Ma/KS2/Y4/M/6"
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.3"
       ]
     },
     {
@@ -23910,7 +23931,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Estimating and comparing money",
+      "name": "Estimating, comparing and calculating measures and money",
       "description": "Estimate, compare, and calculate different measures including money in pounds and pence",
       "ageRangeStart": 8,
       "ageRangeEnd": 10,
@@ -23992,34 +24013,6 @@
         "ccss-math:3.MD.8",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.1",
         "uk-nc-2013:Ma/KS2/Y4/M/2"
-      ]
-    },
-    {
-      "id": "mt_Zks8xyInSG",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Unit relationships and conversion tables",
-      "description": "Know relative sizes of measurement units within one system (km/m/cm/mm, kg/g, l/ml, hr/min/sec); convert between different metric units and express measurements in terms of a smaller unit; record equivalents in conversion tables",
-      "ageRangeStart": 8,
-      "ageRangeEnd": 12,
-      "centrality": 0.06910569105691057,
-      "evidence": [
-        "Convert 3.5 km to 3,500 m",
-        "Complete a conversion table for cm and mm: (1,10), (2,20), (3,30)...",
-        "Express 2 kg 350 g as 2,350 g"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 3.5 kg to grams, can they do it confidently — and also fill in a simple two-column table showing the same measurements in kg and g?",
-      "standards": [
-        "acara-v9:AC9M5M01",
-        "acara-v9:AC9M6M01",
-        "ccss-math:4.MD.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
-        "uk-nc-2013:Ma5/3.1a"
       ]
     },
     {
@@ -24106,7 +24099,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Fractions on a number line",
+      "name": "Measurement word problems with fractions and decimals",
       "description": "Solve word problems involving distances, time intervals, liquid volumes, masses, and money using the four operations with fractions or decimals; represent with diagrams including number lines",
       "ageRangeStart": 9,
       "ageRangeEnd": 10,
@@ -24204,26 +24197,6 @@
       ]
     },
     {
-      "id": "mt_2yas4Unc8o",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Telling time to the minute (age 9+)",
-      "description": "Solve problems involving converting between units of time (hours↔minutes, minutes↔seconds, years↔months, weeks↔days)",
-      "ageRangeStart": 9,
-      "ageRangeEnd": 10,
-      "centrality": 0.06199186991869918,
-      "evidence": [
-        "Convert 3 hours 25 minutes to 205 minutes",
-        "A programme lasts 150 seconds — express in minutes and seconds",
-        "How many days are in 8 weeks and 3 days?"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 2 hours 35 minutes into just minutes, can they do it — and then convert 180 seconds into minutes and seconds?",
-      "standards": [
-        "uk-nc-2013:Ma5/3.1f"
-      ]
-    },
-    {
       "id": "mt_IuHa5UI5od",
       "type": "CONCEPTUAL",
       "subject": "Mathematics",
@@ -24274,36 +24247,12 @@
       ]
     },
     {
-      "id": "mt_2VpdPjvewx",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Decimal place value",
-      "description": "Convert among different-sized standard measurement units within a given system (e.g. 5 cm to 0.05 m) using decimal notation to up to three decimal places; convert between smaller and larger units of length, mass, volume, and time",
-      "ageRangeStart": 10,
-      "ageRangeEnd": 13,
-      "centrality": 0.08333333333333333,
-      "evidence": [
-        "Convert 3,250 g to 3.25 kg using decimal notation",
-        "Convert 0.45 km to 450 m",
-        "Explain the relationship between mm, cm, m, and km using powers of 10"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 5 cm to metres and write the answer as a decimal, can they do it — and also convert 2.45 kg into grams?",
-      "standards": [
-        "acara-v9:AC9M5M01",
-        "acara-v9:AC9M6M01",
-        "ccss-math:5.MD.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
-        "uk-nc-2013:Ma6/3.1b"
-      ]
-    },
-    {
       "id": "mt_SqhXQhAEUf",
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Measurement Conversions",
-      "description": "Solve problems involving the calculation and conversion of units of measure, using decimal notation and multi-step reasoning in real-world contexts",
+      "name": "Solving problems with measurement conversions",
+      "description": "Choose and sequence unit conversion and calculation in multi-step real-world measurement problems using decimals. Decide when quantities need a common unit, carry out the operations and interpret and check the result; the conversion procedure itself is covered in Converting measurement units.",
       "ageRangeStart": 10,
       "ageRangeEnd": 12,
       "centrality": 0.08333333333333333,
@@ -24312,7 +24261,7 @@
         "Compare 2.5 litres and 2,450 ml by converting to the same unit",
         "Solve a multi-step problem involving time, distance, and unit conversion"
       ],
-      "assessmentPrompt": "If {{name}} is filling a fish tank that holds 60 litres and the tap fills it at 3.5 litres per minute, can they work out how long it will take to fill the tank?",
+      "assessmentPrompt": "A recipe needs 0.75 kg of flour for one batch. Can {{name}} work out how many grams are needed for three batches, show when they converted and multiplied, and explain how they checked the final amount?",
       "standards": [
         "acara-v9:AC9M6M01",
         "uk-nc-2013:Ma6/3.1a"
@@ -25494,7 +25443,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Multiplication & Division",
-      "name": "Decimal place value",
+      "name": "Multiplying decimals by whole numbers",
       "description": "Multiply one-digit numbers with up to two decimal places by whole numbers (e.g. 3.47 × 6)",
       "ageRangeStart": 10,
       "ageRangeEnd": 13,
@@ -25675,17 +25624,17 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Multiplication & Division",
-      "name": "Multiplying and dividing (age 10+)",
+      "name": "Multiplying and dividing by 10, 100 and 1,000",
       "description": "Multiply and divide numbers by 10, 100, and 1000 giving answers up to three decimal places, understanding that digits shift position in the place-value chart",
       "ageRangeStart": 10,
       "ageRangeEnd": 13,
       "centrality": 0.09349593495934959,
       "evidence": [
         "Compute 3.456 × 100 = 345.6 correctly",
-        "Compute 45.2 ÷ 1000 = 0.0452 correctly",
+        "Compute 45 ÷ 1000 = 0.045 correctly",
         "Explain why multiplying by 10 shifts each digit one place to the left"
       ],
-      "assessmentPrompt": "Can {{name}} work out '4.6 ÷ 1,000 = 0.0046' — knowing that each division by 10 shifts digits one place to the right, even past the decimal point?",
+      "assessmentPrompt": "Can {{name}} work out 3.456 × 100 and 45 ÷ 1000, explaining how the value of each digit changes and why the second answer needs placeholder zeros?",
       "standards": [
         "acara-v9:AC9M6N06",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-B2.8",
@@ -26794,7 +26743,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Decimal place value",
+      "name": "Rounding whole numbers and decimals",
       "description": "Round decimals to any place using place-value understanding; round any whole number to a required degree of accuracy",
       "ageRangeStart": 10,
       "ageRangeEnd": 13,
@@ -26904,7 +26853,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Reading and writing numbers (age 10+)",
+      "name": "Reading, writing and comparing decimals to thousandths",
       "description": "Read, write, and compare decimals to thousandths using base-ten numerals, number names, and expanded form; compare using >, =, < based on place-value meaning",
       "ageRangeStart": 10,
       "ageRangeEnd": 13,
@@ -26951,7 +26900,7 @@
       "type": "CONCEPTUAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Reading Decimal Places",
+      "name": "Decimal place value to thousandths",
       "description": "Identify the value of each digit in numbers given to three decimal places (e.g. in 4.378, the 7 represents 7 hundredths)",
       "ageRangeStart": 10,
       "ageRangeEnd": 12,
@@ -26994,7 +26943,7 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Decimal place value (age 11+)",
+      "name": "Rounding to decimal places or significant figures",
       "description": "Round numbers and measures to an appropriate degree of accuracy including to a specified number of decimal places or significant figures",
       "ageRangeStart": 11,
       "ageRangeEnd": 13,
@@ -27014,7 +26963,7 @@
       "type": "CONCEPTUAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Fractions on a number line",
+      "name": "Place value and number-line representation",
       "description": "Understand and use place value for decimals, measures, and integers of any size; extend the number system to include all positive and negative integers, decimals, and fractions on a single number line",
       "ageRangeStart": 11,
       "ageRangeEnd": 13,
@@ -27039,7 +26988,7 @@
       "type": "REPRESENTATIONAL",
       "subject": "Mathematics",
       "domain": "Number Representation & Place Value",
-      "name": "Fractions on a number line (age 11+)",
+      "name": "Ordering and comparing signed integers, decimals and fractions",
       "description": "Order positive and negative integers, decimals, and fractions on a number line; use the symbols =, ≠, <, >, ≤, ≥ to compare values including negative numbers and mixed representations",
       "ageRangeStart": 11,
       "ageRangeEnd": 13,
@@ -27885,22 +27834,21 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Ratio & Proportion",
-      "name": "Unit Conversions",
-      "description": "Convert freely between related standard units of measurement (time, length, area, volume/capacity, mass) using decimal notation to up to three decimal places where appropriate",
+      "name": "Area and volume unit conversions",
+      "description": "Convert between related area and volume units by deriving and applying the square or cube of the linear conversion factor, including the relationship between cubic centimetres and litres. Use decimal notation up to three decimal places where appropriate; general linear-unit and time conversions are covered in Converting measurement units.",
       "ageRangeStart": 11,
       "ageRangeEnd": 13,
       "centrality": 0.08333333333333333,
       "evidence": [
-        "Convert between area units such as cm² and m² using the square of the linear scale factor",
-        "Perform multi-step conversions (e.g. convert 2.5 hours to seconds via minutes)",
-        "Convert volume units such as cm³ to litres and explain the relationship"
+        "Explain from a 100-by-100 cm square why 1 m² = 10,000 cm², and use that factor in both directions",
+        "Explain from a cube why 1 m³ = 1,000,000 cm³ rather than 100 cm³, and convert using the cubic factor",
+        "Use 1000 cm³ = 1 litre to express 2500 cm³ as 2.5 litres, tracking the kind of unit"
       ],
-      "assessmentPrompt": "Can {{name}} convert between units confidently — for example, changing kilometres to metres, kilograms to grams, or hours and minutes to just minutes — including multi-step problems?",
+      "assessmentPrompt": "If {{name}} converts 3 m² to cm², can they explain why the factor is 100 × 100 rather than 100? Then ask them to explain how many cm³ make 1 m³ and to change 2500 cm³ into litres.",
       "standards": [
         "ccss-math:6.RP.3d",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1",
         "uk-nc-2013:KS3.Maths.Ratio.1"
       ]
     },
