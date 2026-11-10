@@ -46,3 +46,11 @@ test('historical inquiry keeps overall community duty distinct from specific min
     }
   }
 });
+test('then-now comparison retains two actual community case sets across both roles and challenges', () => {
+  const report = read('reports/ontario-grade3-history-comparison-review-2026-11-10.json');
+  const conditions = report.protocols['roles-and-challenges-then-now'].performanceConditions;
+  assert.ok(new Set(conditions.actualIndigenousCaseSets).size >= 2);
+  for (const requirement of ['historical-role', 'contemporary-role', 'historical-challenge-or-demand', 'contemporary-challenge-and-response', 'supported-continuity-and-change']) assert.ok(conditions.forEach.includes(requirement));
+  assert.ok(report.resources.some(item => item.id === 'fort-william-current-roles'));
+  assert.ok(report.resources.some(item => item.id === 'inuvialuit-current-roles-and-challenges'));
+});

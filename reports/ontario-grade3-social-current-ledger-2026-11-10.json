@@ -7,15 +7,15 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 30,
+    "Full": 31,
     "Partial": 0,
-    "Unverified": 10,
+    "Unverified": 9,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 58,
+    "pairs": 59,
     "topics": 15,
-    "codes": 30,
+    "codes": 31,
     "newClaims": 5,
     "reusedClaims": 10
   },
@@ -48,11 +48,13 @@
     },
     {
       "code": "A1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Then/now role and challenge task needs at least two actual Indigenous community cases with supported contemporary facts; one case plus a fictional school scenario is insufficient."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_klz8bAeI8m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade3-history-comparison-review-2026-11-10.json",
+      "coverageBasis": "Reviewed protocol compares roles AND challenges then/now in two actual Indigenous community case sets using supported contemporary facts, with separate place/date limits and optional fictional supplement. Authoring source fit, not whole-topic or learner mastery."
     },
     {
       "code": "A1.4",

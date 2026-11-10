@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "parentCheckpoint": "9db0b4e65d36e362d56b93d4900de0b305ef04e4",
-  "status": "Four reviewed source-fit authoring resolutions; A1.3 remains a proposal with its multiple actual Indigenous-community then/now qualifier unresolved.",
+  "status": "Five reviewed source-fit authoring resolutions with actual source-supported historical/current Indigenous case comparisons; not learner attainment.",
   "officialSource": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g3",
   "scope": {
     "codes": [
@@ -98,6 +98,40 @@
       "limits": [
         "Retain each case’s actual dates, place, observer and continuity qualification. Later museum collections or1850saccounts are not automatically evidence of every1780practice."
       ]
+    },
+    {
+      "id": "fort-william-current-roles",
+      "publisher": "Fort William First Nation",
+      "urls": [
+        "https://fwfn.com/about-us/",
+        "https://fwfn.com/departments/education/"
+      ],
+      "facts": [
+        "The Nation’s own historical account describes the1850community’s hunting/fishing, trade and seasonal movement. Use that beside the already reviewed1805/1808Kaministiquia account with their dates separate.",
+        "Its current education page identifies bus drivers/monitors, a school nutrition worker and support for school supplies and learning travel. The page seeks additional/on-call drivers and describes support for actual school costs."
+      ],
+      "limits": [
+        "Present reserve boundaries and institutional names are not projected back onto every early1800Anishinaabe family.",
+        "Funding provisions indicate particular support roles and costs, not that all families are poor or have identical challenges.",
+        "Use selected institutional education text only; no applications, personal information or off-site footer links are part of the task."
+      ]
+    },
+    {
+      "id": "inuvialuit-current-roles-and-challenges",
+      "publisher": "Inuvialuit Living History",
+      "urls": [
+        "https://inuvialuitlivinghistory.ca/tuktuuyaqtuuq/",
+        "https://inuvialuitlivinghistory.ca/we-are-resilient/"
+      ],
+      "facts": [
+        "The community account identifies contemporary fishing/harvesting and trade alongside growing tourism work, and describes coastal erosion, house relocation and erosion monitoring. Attributed2024community voices explain that harvesters still provide for community needs while knowledge/leadership roles have diversified.",
+        "Pair those current facts with the already reviewed early1800Mackenzie Delta lifeways continuity and Kuukpak material; explain that the historical Delta case and current Tuktuuyaqtuuq are different dated community contexts, not proof of unchanged settlement sites."
+      ],
+      "limits": [
+        "Do not backdate current tourist work or roads into1800; the modern village, historical Kuukpak site and whole Inuvialuit homeland are not interchangeable.",
+        "The source dates highway opening2018; that detail is unnecessary here and is not adopted. Use the supported current tourism role without an exact opening-date claim.",
+        "Climate-related challenges are described from the community’s account; no new atmospheric calculation or personal trauma testimony is required."
+      ]
     }
   ],
   "protocols": {
@@ -122,16 +156,31 @@
         "A1.3"
       ],
       "actions": [
-        "Choose documented historical work/learning roles and challenges from the period packets, including an Indigenous case. Compare them with verified current Nipissing public-works/business roles and a clearly supplied contemporary school/home scenario. Distinguish actual public case facts from an invented present-day teaching scenario.",
-        "For example, compare obtaining and transporting food/materials in a studied period case with a described contemporary water/road service role; explain both a continuing need and a changed duty or challenge. Compare a documented child’s historical contribution with the supplied modern school/helper situation without assuming every child has the same home.",
-        "Describe what the sources support about changing tools/services and continuing cooperation or environmental demands. Do not infer that contemporary Indigenous people are frozen in the past, that older knowledge has vanished or that all change is improvement."
+        "Require TWO actual Indigenous community case sets, not one case plus an invented contemporary family: (1) Anishinaabe Kaministiquia/Fort William period evidence and the Nation’s current education-service account; (2) Inuvialuit Mackenzie Delta period evidence and current Tuktuuyaqtuuq community account. Distinguish each date and place; current reserve/village boundaries do not establish an unchanged1800settlement.",
+        "For EACH case set, compare a documented role AND a documented challenge/response then and now. Fort William: historical food/trade/seasonal transport and obtaining supplies versus current school food/transport service roles, the actual need for bus staff and support for school travel/supply costs. Inuvialuit: coordinated food provision/land travel and associated seasonal material demands versus continuing harvesters plus tourism/monitoring roles and the account’s coastal erosion/relocation response. Explain a supported continuity and change in duties/challenges without treating current roles as identical across households.",
+        "Use source-specific evidence rather than a progress ladder: contemporary Indigenous people combine old and new knowledge, and present-day challenges are not evidence that older practices disappeared. A fictional modern school/helper scenario may supplement transfer but does not replace either actual community case.",
+        "Include selected settler then/now comparisons where useful, but do not substitute them for the two actual Indigenous case sets. Explain how the source supports the comparison and which details remain unknown."
       ],
-      "positive": "Compares specific duties and challenges then and now, including a selected Indigenous community contribution, with continuity and change supported separately.",
+      "positive": "Compares actual duties AND challenges/response then and now in both named Indigenous community case sets with supported contemporary facts and explicit place/date limits; explains continuity and change without stereotype.",
       "nearMiss": [
         "Says all people long ago had one job and all people today another.",
         "Calls a supplied fictional present-day account an observed fact about every pupil."
       ],
-      "transfer": "Compare a different documented historical role with a new supplied present-day situation and justify a continuing need and a changed circumstance."
+      "transfer": "Compare a newly selected documented role/challenge within one studied case with an accurately supplied present-day account; explain what changed, what continued and what evidence is missing.",
+      "performanceConditions": {
+        "actualIndigenousCaseSets": [
+          "Fort William/Kaministiquia",
+          "Inuvialuit Mackenzie Delta/Tuktuuyaqtuuq"
+        ],
+        "forEach": [
+          "historical-role",
+          "contemporary-role",
+          "historical-challenge-or-demand",
+          "contemporary-challenge-and-response",
+          "supported-continuity-and-change"
+        ],
+        "fictionalScenarioRole": "Supplement only, never a substitute for either actual contemporary community case."
+      }
     },
     "settlement-setting-and-support": {
       "codes": [
@@ -198,23 +247,22 @@
     ]
   },
   "boundaries": [
-    "Seven reviewed component pairs extend exact existing CA8–9 contexts. The additional proposed A1.3 pair is not authored; no new band, claim, guide or edge.",
+    "Eight reviewed component pairs extend exact existing CA8–9 contexts. No new band, claim, guide or edge.",
     "The new historical knowledge cards retain their complete repertoire and assessment. These tasks establish source-fit authoring for the named clauses; a component success does not infer all historical mastery.",
     "A1/A2/A3major goals, later-policy A1.2, Canadian identity A1.4, historical maps/relocations A3.1, settler locations A3.2, different settlement impacts A3.5 and the historical inquiry remain separately unresolved in the current ledger.",
     "Original protocols are untested teaching designs. No learner record, performance certification or classroom efficacy claim is made."
   ],
   "reviewedCodes": [
     "A1.1",
+    "A1.3",
     "A3.3",
     "A3.4",
     "A3.8"
   ],
-  "pendingCodes": {
-    "A1.3": "Provide at least two actual Indigenous community cases across historical and contemporary roles AND challenges, using source-supported contemporary facts. A fictional modern scenario may supplement but cannot stand for an unsourced actual community."
-  },
   "reviewedAssociations": {
     "mt_klz8bAeI8m": [
       "A1.1",
+      "A1.3",
       "A3.3",
       "A3.4",
       "A3.8"
