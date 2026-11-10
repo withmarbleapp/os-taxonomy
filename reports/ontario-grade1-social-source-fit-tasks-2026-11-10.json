@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "24fecd3",
+  "dependency": "Local dependent follow-up to PR110, cultural-renewal and territory checkpoints; not yet accepted default-branch content.",
+  "scope": "Seven Grade1SocialStudies source-fit task resolutions using existing claims; no new claims, semantic changes or prerequisite edges.",
+  "protocols": [
+    {
+      "id": "interaction-self-concept",
+      "existingTopics": [
+        "mt_ij20XUbMHg",
+        "mt_UHQfb-n-w3",
+        "mt_9Y5-GjF2B0",
+        "mt_PJE57bAvMG"
+      ],
+      "materials": "Two introductory school scenarios about the same fictional person: a new pupil receives practical patient help, later successfully helps another pupil. Supply concrete events and actions, not a prewritten conclusion about identity.",
+      "task": "Identify effects of actions on both people, distinguish an immediate feeling from what the person now thinks they can do or what kind of person they are, and explain how the changed relationship/duty and interaction contributed. Compare an unkind response and a constructive alternative without suggesting one event permanently determines identity.",
+      "positive": "Connect interaction and consequences to a supported self-description/quality or sense of capability, and explain role/duty change across situations.",
+      "nearMiss": "Says only happy/sad, names a quality without event evidence, or assumes every person reacts identically.",
+      "transfer": "Different supplied classroom/helping situation.",
+      "sourceCodes": [
+        "A1.4",
+        "A1"
+      ],
+      "coverageBoundary": "Source-fit authoring design, not a learner pass record. Whole contributing claims remain unchanged; no private learner records, mastery transfer or classroom study is required."
+    },
+    {
+      "id": "significant-people-places-things",
+      "existingTopics": [
+        "mt_nHvYYrhoM7",
+        "mt_5zPXTvZTcX",
+        "mt_4A7FYmvVhA"
+      ],
+      "materials": "Learner chooses non-sensitive examples from ordinary school/community life: a helpful person, familiar place and object/living thing. A class-library book or classroom plant is suitable; no private family possession/photo/address needed.",
+      "task": "Name the examples and describe the role/purpose of each in the learner’s life, not only its appearance or a favourite label.",
+      "positive": "Identifies significance and purpose/role across people, places and things in familiar life.",
+      "nearMiss": "Lists names only or describes object colour with no role/purpose.",
+      "transfer": "Another ordinary community/classroom example.",
+      "sourceCodes": [
+        "A3.2"
+      ],
+      "coverageBoundary": "Source-fit authoring design, not a learner pass record. Whole contributing claims remain unchanged; no private learner records, mastery transfer or classroom study is required."
+    },
+    {
+      "id": "respect-people-and-environment",
+      "existingTopics": [
+        "mt_lAvS72LOUO",
+        "mt_FwI7q7DSIx",
+        "mt_5zPXTvZTcX",
+        "mt_PJE57bAvMG"
+      ],
+      "materials": "Shared classroom materials/turn-taking scenario and school garden/place-care scenario. Supply factual care needs (e.g. plants need water when soil is dry); do not make independent plant science an accidental gate.",
+      "task": "Choose and carry out or demonstrate an appropriate respectful response in each scenario and explain why it matters to people and shared environments. Identify the responsibilities of people in the setting and a constructive alternative to harm.",
+      "positive": "Understands importance and demonstrates respectful treatment across both people and place, rather than only reciting a rule.",
+      "nearMiss": "Is kind to people but treats places as irrelevant, or names a rule without explaining its significance.",
+      "transfer": "Another supplied non-sensitive shared place/context.",
+      "sourceCodes": [
+        "A3.5",
+        "A3"
+      ],
+      "coverageBoundary": "Source-fit authoring design, not a learner pass record. Whole contributing claims remain unchanged; no private learner records, mastery transfer or classroom study is required."
+    },
+    {
+      "id": "local-services-provider-user",
+      "existingTopics": [
+        "mt_PJE57bAvMG",
+        "mt_asRwlPZXC3",
+        "mt_RgQxPddV8v"
+      ],
+      "sourceCases": [
+        {
+          "service": "Toronto garbage/organics curbside collection",
+          "provider": "City of Toronto; exact service scope retained",
+          "userResponsibility": "Adult sets appropriate bins out on the scheduled collection day with accessible space and lids closed; child explains with a model rather than handles real waste or stands near collection trucks.",
+          "urls": [
+            "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/set-out-tips/"
+          ],
+          "currentLimit": "From1Jan2026residentialrecyclingisnotCityresponsibility; do not say allbincollectionisCityoperated. Housing/collectionservicevariantsdiffer."
+        },
+        {
+          "service": "Toronto Public Library borrowing",
+          "provider": "Toronto Public Library, a City service agency governed by its library board; no need primary learner to memorize appointment/funding law.",
+          "userResponsibility": "Return borrowed ordinary books using the stated loan period/location rules so others can use them; no actual account or library card action required.",
+          "urls": [
+            "https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/city-managers-office/agencies-corporations/agencies/toronto-public-library/",
+            "https://tpl.ca/help/borrowing-materials/"
+          ],
+          "currentLimit": "Do not infer universal fixed loan periods for allmaterials or pretend every item can go to anybranch; source has exceptions."
+        }
+      ],
+      "preparation": "For owncommunityapplication,adultpreparescurrentverifiedprovider/service/userresponsibilitycardfromtheactualprovider. TheTorontoexamplesareworkedcases,notclaimsthatallmunicipalitiesoperateidenticalservices. Nochildhomeaddress/realaccountneeded.",
+      "task": "Identify the service, government/community provider from the factual card and what it does, then describe a corresponding user role/responsibility and explain why it helps the service work for the community. Transfer to another verified service. Contrast paying/working at an unrelated private shop so merely naming a job is not accepted as the government/community provider relationship.",
+      "positive": "Correct provider/service relationship and matching user duty with explanation, on two current attributed cases.",
+      "nearMiss": "Says everyone helps without naming who supplies the service, swaps provider/user duties, or assumes every waste stream has the same operator.",
+      "transfer": "Another verified local service, retaining its own organizational form and duties.",
+      "sourceCodes": [
+        "B3.8"
+      ],
+      "coverageBoundary": "Source-fit authoring design, not a learner pass record. Whole contributing claims remain unchanged; no private learner records, mastery transfer or classroom study is required."
+    },
+    {
+      "id": "distinct-local-areas",
+      "sourceCodes": [
+        "B3.3"
+      ],
+      "existingTopics": [
+        "mt_cUpJvBD1YA",
+        "mt_w4cUnN_SsQ"
+      ],
+      "materials": "An adult-verified familiar local/school map with two or more distinguishable areas and a few accurate observations or photographs of their characteristics. School areas are an explicit source illustration; no child address or complete town zoning dataset is required.",
+      "task": "Identify the distinct areas on the map and describe characteristics that distinguish them, such as a wooded park with paths and plants versus a school classroom wing with rooms joined by a hallway. Locate the areas relative to each other and explain which observed features support the description.",
+      "positive": "Names or locates distinct familiar areas and describes supported distinguishing characteristics, rather than only point to an isolated object.",
+      "nearMiss": "Lists two objects without identifying areas or gives characteristics unsupported by the supplied local evidence.",
+      "transfer": "Identify and describe different areas on another familiar local/school plan with its own evidence and key.",
+      "coverageBoundary": "The source requires some distinct areas and characteristics. Residential/commercial/mixed-use examples are illustrative, not a mandatory universal functional classification, mixed-use analysis or zoning-law claim. Existing map/feature knowledge and this task suffice; no new land-use topic is introduced."
+    }
+  ],
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g1",
+  "sourceReview": "Actual A1/A1.4/A3/A3.2/A3.5/B3.3/B3.8 mandatory requirements reread against full existing cards. Illustrative source examples are not new universal obligations. The service facts were checked on current official provider/City pages2026-11-10.",
+  "taskDesignBoundary": "A parameterized actual-community resource protocol specifies what an educator prepares and the required performance. Worked examples do not certify every locality or any learner. Missing or conflicting local facts remain application resource verification, not invented universal knowledge.",
+  "consumerBoundary": "No authored mastery claims change. Source-specific Full labels do not infer learner mastery or change learner state; public acceptance remains separate from DB publication.",
+  "sourceInterpretationCorrection": "The initial B3.3 residual imported mandatory functional-category/mixed-use knowledge from illustrative examples. Rereading the actual clause corrects that over-demand: distinct areas and their characteristics are accounted for with existing whole claims and a source-fit task."
+}
