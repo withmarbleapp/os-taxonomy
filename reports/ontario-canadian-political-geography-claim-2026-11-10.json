@@ -1,0 +1,281 @@
+{
+  "status": "One new reviewed-grain Canadian political-geography claim with original untested guide; only a component of B3.5, pending separate peoples/resource task qualification.",
+  "source": {
+    "courseEdition": 2018,
+    "actualCourseId": "e6090af9-a67b-4e57-a838-8d1eb2fbc333",
+    "code": "B3.5",
+    "meaning": "The actual clause requires identifying Canada’s provinces and territories and their capitals, and describing location and some peoples living there. The proposed card accounts only for the location/name/capital knowledge; the attributed peoples/resource task remains separately required."
+  },
+  "verifiedKnowledge": {
+    "provinces": {
+      "British Columbia": "Victoria",
+      "Alberta": "Edmonton",
+      "Saskatchewan": "Regina",
+      "Manitoba": "Winnipeg",
+      "Ontario": "Toronto",
+      "Quebec": "Quebec City",
+      "New Brunswick": "Fredericton",
+      "Nova Scotia": "Halifax",
+      "Prince Edward Island": "Charlottetown",
+      "Newfoundland and Labrador": "St. John’s"
+    },
+    "territories": {
+      "Yukon": "Whitehorse",
+      "Northwest Territories": "Yellowknife",
+      "Nunavut": "Iqaluit"
+    },
+    "nationalCapital": "Ottawa"
+  },
+  "primarySources": [
+    {
+      "publisher": "Government of Canada, Intergovernmental Affairs",
+      "url": "https://www.canada.ca/en/intergovernmental-affairs/services/provinces-territories.html",
+      "date": "Page2026-04-24; actual full body/table read 2026-11-10",
+      "used": "Only10/3 structure and named capital pairs, corroborated against actual map.",
+      "excluded": "Population/premier/date-of-devolution details are not used. Some unrelated prose/table entries need their own verification and are not silently adopted."
+    },
+    {
+      "publisher": "Natural Resources Canada",
+      "metadata": "https://open.canada.ca/data/en/dataset/5a4bed82-1f5d-532f-adf0-980c212c9cd1",
+      "map": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/can_eng.pdf",
+      "actualVisualRead": "One-page PDF actually rendered/viewed; all 13named divisions and capital symbols/table match. Map copyright 2006, portal publication metadata 2022.",
+      "used": "Political names/locations/capital key with readable maps, not a claim that every dated map feature is current.",
+      "excluded": "North magnetic pole/ice/foreign labels and regional population are not teaching facts; magnetic pole marker is not a current geographic orientation reference. No exact area or distance calculations."
+    }
+  ],
+  "reuseComparison": [
+    {
+      "id": "mt_PJZf6WGfzl",
+      "name": "Australia’s states and territories",
+      "wholeCardRead": true,
+      "guide": "None",
+      "mismatch": "Requires Australia’s actual six states/ACT/NT/capitals and recognition of its other territories. These explicit different answers remain intact. Mastering them does not establish Canada’s13pairs; replacing Australia with Canada would overwrite a real factual claim, not merely localize an example."
+    },
+    {
+      "id": "mt_QVUW4olzHP",
+      "name": "Local, regional and state scales",
+      "wholeCardRead": true,
+      "guide": "None",
+      "mismatch": "Representing own place at several scales and a cross-scale interconnection does not establish the complete Canadian province/territory-capital knowledge set."
+    },
+    {
+      "id": "mt_w4cUnN_SsQ",
+      "name": "Reading and drawing maps",
+      "wholeCardRead": true,
+      "guide": "None",
+      "mismatch": "A labelled map can be read correctly without knowing the identities/locations/capital pairs when the answer labels change or are absent. Generic key/relative-location/construction operation is preserved as shared support."
+    },
+    {
+      "id": "mt_ejht12jhm2",
+      "name": "Grid references and directions",
+      "wholeCardRead": true,
+      "guide": "None",
+      "mismatch": "Locating a named cell/path does not establish which province or capital the location is."
+    },
+    {
+      "id": "mt_xswgDb7eIU",
+      "name": "Ontario communities and local governance",
+      "wholeCardRead": true,
+      "guide": "Whole original guide previously authored/read",
+      "mismatch": "Municipal/FN/Métis institutional roles and service/development authority differ from the national province/territory/capital map inventory. No Canadian constitutional powers are added to that old card."
+    },
+    {
+      "id": "mt_wGoYDxnk6_",
+      "name": "Traditional and treaty territories in Canada",
+      "wholeCardRead": true,
+      "guide": "Whole original guide previously authored/read",
+      "mismatch": "Locally verified territory/treaty/reserve distinctions are not this province/capital knowledge, and provincial boundaries do not establish Indigenous territories."
+    },
+    {
+      "id": "mt_B0IMsNXG5C",
+      "name": "Ontario’s major landform regions",
+      "wholeCardRead": true,
+      "guide": "Whole original guide previously authored/read",
+      "mismatch": "Physical regional knowledge is not a political subdivision or capital inventory."
+    }
+  ],
+  "independentAssessment": {
+    "positive": "Names/locates13 divisions and associates capitals after learning, distinguishes Ottawa/Toronto roles and transfers across a changed political map.",
+    "nearMiss": [
+      "Copies a fully labelled map but cannot identify the same places without labels.",
+      "Uses the largest familiar city as capital, e.g.Vancouver rather than Victoria.",
+      "Calls Ottawa the capital of Ontario or treats Ontario as a physical landform region."
+    ],
+    "transfer": "Use a differently coloured/styled, clearly legible Canada reference with equivalent broad locations and ask for region/capital associations and one relative location; do not test obscure map projections or tiny exact dots.",
+    "contrast": "A learner can know all Australian pairs or correctly use a new grid/key but know none of these Canadian pairs. Conversely Canadian name/location knowledge does not establish map construction or legal jurisdictional relationships."
+  },
+  "whyNotAnotherProcedureOrGradeClone": "The independently missing answers are a bounded national factual representation, not a different grade of generic map skill or one node per province. Old Australian and generic claims remain fully preserved. No country change is inferred to transfer learner mastery.",
+  "proposedContribution": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageBand": [
+      9,
+      10
+    ],
+    "code": "B3.5",
+    "role": "Name/location/capital knowledge component only.",
+    "remainingSourceCondition": "The actual some-peoples-in-the-regions requirement needs an attributed location/people resource/task design, not a stereotype or population fact inferred from this map. B3.4institutional powers and B3overall also remain separate."
+  },
+  "newDependencies": [],
+  "consumerImpact": "New claim only if independent boundary approved. Preserve all old IDs/cards/guides/contexts and no inferred learner-state transfer. Same Canada knowledge could be reused by later source slices instead of new grade-specific copies.",
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "newCard": {
+    "type": "REPRESENTATIONAL",
+    "subject": "Geography",
+    "domain": "Places & Environments",
+    "name": "Canada’s provinces, territories and capitals",
+    "description": "Know Canada’s ten provinces and three territories, locate them broadly on a political map and pair each with its provincial or territorial capital. Distinguish these capitals from Canada’s national capital, Ottawa, and recognize the same places in a changed map style rather than rely on one colour scheme.",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 10,
+    "evidence": [
+      "Name and broadly locate the ten provinces and three territories, distinguishing the two groups, without copying a complete visible answer list.",
+      "Associate each province/territory with its capital and broadly locate those capitals; distinguish a provincial/territorial capital from Ottawa’s national-capital role.",
+      "Recognize the same political geography in a differently styled map and explain supported broad relative locations; no current population, language proficiency, legal boundary or detailed government-powers claim."
+    ],
+    "assessmentPrompt": "After studying a Canada map, can {{name}} name and broadly locate its ten provinces and three territories and pair each with its capital, without the answer labels? Why are Ottawa and Toronto different kinds of capital? Try a differently styled map too. Correct oral English or French names and broad pointing count; this is not a spelling or surveying test.",
+    "id": "mt_vf32z1-7s9",
+    "centrality": 0
+  },
+  "originalResearch": {
+    "topicId": "mt_vf32z1-7s9",
+    "pedagogy": {
+      "summary": "Study the verified political map and capital pairs, retrieve the names/locations, then transfer to a differently styled map. Original untested design; no instructional-effectiveness claim.",
+      "bestPractices": [
+        "Keep province/territory names, capital names and capital roles distinct.",
+        "Use legible large views or insets for small Atlantic provinces and nearby capital labels, alongside the national overview.",
+        "Retrieve the complete 13 division/capital set after study; do not mistake copying labels for retained knowledge.",
+        "Accept accurate oral English or French place names; no accent, spelling or exact-border-tracing demand."
+      ],
+      "keyRepresentations": [
+        "Actual Canada political map with legible capital-symbol key",
+        "Ten-province/three-territory paired-name table",
+        "A differently styled map or unlabelled outline retaining reliable geographic reference"
+      ],
+      "commonMisconceptions": [
+        "The largest or most famous city must be the capital.",
+        "Ottawa is Ontario’s provincial capital.",
+        "A political map establishes Indigenous traditional or treaty territories.",
+        "A different map colour changes the place or its status."
+      ]
+    },
+    "learn": {
+      "schemaVersion": 2,
+      "summary": "Connect Canada’s complete 13 division/capital set with broad locations, retrieve it and transfer across legible maps.",
+      "activities": [
+        {
+          "title": "Study names, places and capital roles",
+          "learnerActions": [
+            "Use the verified table with the actual political map. Name all ten provinces and three territories, locating their broad positions and matching each with its capital. Keep both groups explicit; repeated short study sessions can build the complete set without changing the eventual claim.",
+            "Read the map’s capital key. Compare Toronto, Ontario’s provincial capital, with Ottawa, Canada’s national capital located in Ontario. Compare Victoria with Vancouver and Québec/Quebec City with Montréal as checks against assuming largest/famous city means capital.",
+            "Provide an enlarged Atlantic view or labelled inset where needed, maintaining its relation to the national view. Use broad pointing or a marker, not precise surveyed city coordinates.",
+            "Compare verified broad relative positions using the actual map reference. Treat small-island/nearby-label legibility as a resource issue, not a harder spelling or fine-motor test."
+          ],
+          "intendedInsight": "Political divisions, their capitals and the national-capital role are distinct named geographical knowledge.",
+          "feedback": [
+            "Return to the actual capital symbol and verified pair when a famous-city answer replaces the capital.",
+            "Show an enlarged source view when a small province or label cannot be read."
+          ],
+          "rationale": "Original source-fit design; not a tested memorization intervention.",
+          "sourceClaims": [
+            "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+            "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography."
+          ]
+        },
+        {
+          "title": "Retrieve and transfer the complete knowledge set",
+          "learnerActions": [
+            "After study, remove answer labels and the completed pair table. Ask the learner to name/broadly locate all 13 divisions, distinguish the ten provinces from the three territories, and name their capitals. Prompt in a changed order; a list copied from a visible key is not this check.",
+            "Have the learner mark or point to broad capital locations and explain the Ottawa/Toronto distinction. Accept correct English or French names, including Québec for Quebec City in clear city context and Terre-Neuve-et-Labrador for Newfoundland and Labrador. Do not introduce spelling marks.",
+            "Repeat selected locations/capital matches on a differently styled accurate map or outline. Ensure the national overview, insets and reference are legible rather than testing tiny-print recognition or memorized colours.",
+            "Ask what the political map does NOT show: these boundaries/capital symbols alone do not establish Indigenous traditional/treaty territories, all local peoples, population facts or the detailed powers of governments. Those are separate source/task questions."
+          ],
+          "intendedInsight": "Recall and cross-map recognition establish this factual representation rather than copying one coloured map.",
+          "feedback": [
+            "Re-study a mistaken pair, then check it in a changed order/view; retain a partial result if any required division/capital remains unsupported.",
+            "Separate a capital-role mistake from a map-reading or name-legibility problem."
+          ],
+          "rationale": "Original untested diagnostic and transfer design.",
+          "sourceClaims": [
+            "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+            "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography."
+          ]
+        }
+      ],
+      "constraints": [
+        "This is one bounded knowledge set, not 13 topics or age/difficulty tiers.",
+        "No mandatory exact spelling, precise city coordinate, surveying, population inventory, detailed government powers or exhaustive peoples inventory.",
+        "Political boundaries are not Indigenous traditional/treaty territory boundaries.",
+        "Use the current verified capital table with the dated 2006 map only for corroborated stable names/locations. Exclude outdated magnetic-pole/ice data and unrelated unverified population/devolution prose.",
+        "Source B3.5 peoples/location descriptions require a separate attributed case protocol; this new card alone does not certify that entire expectation.",
+        "No hard prerequisites inferred merely from source order; map-operation support can be supplied without changing existing claims."
+      ],
+      "reviewNotes": [
+        "2026-11-10: original teaching design following cross-domain whole-claim search and independent grain/source challenge. Factual sources verified; teaching efficacy untested."
+      ]
+    },
+    "assess": {
+      "method": "interpret_translate",
+      "poeTask": null,
+      "diagnosticPrompt": "After studying a Canada map, can {{name}} name and broadly locate its ten provinces and three territories and pair each with its capital, without the answer labels? Why are Ottawa and Toronto different kinds of capital? Try a differently styled map too. Correct oral English or French names and broad pointing count; this is not a spelling or surveying test.",
+      "correctAnswer": "Names and broadly locates the complete ten-province/three-territory set; pairs each with its correct capital and broadly locates it; distinguishes Ottawa’s national role from provincial/territorial capitals and transfers to a changed accurate map. Correct oral English/French names count.",
+      "whatMakesItDiscriminate": "Removing labels separates retrieved factual knowledge from copying; famous-city and Ottawa/Toronto contrasts distinguish capital roles; a changed map style and legible insets test geographic recognition rather than colour or tiny-print memorization.",
+      "probeDeeper": [
+        "Which place is the capital, and which map symbol or studied fact supports it?",
+        "Does a larger city necessarily have the capital role?",
+        "Can you find the same place on this different map? What does the political map not establish?"
+      ],
+      "errorPatterns": [
+        {
+          "kind": "misconception",
+          "pattern": "Substitutes a famous/larger city or confuses national and provincial capital roles.",
+          "revealedBy": "Vancouver for Victoria, Montréal for Québec/Quebec City, or Ottawa for Ontario’s capital.",
+          "nextMove": "Compare the verified pair table and actual key; retrieve the pair/role again without visible answers on a changed map.",
+          "distractor": null,
+          "reteachPrerequisiteId": null
+        }
+      ],
+      "responseLevels": {
+        "gap": "Cannot connect the division names, broad locations and capital pairs reliably.",
+        "partial": "Some pairs/locations or the familiar labelled map are known, but the complete set, capital roles or changed-map check remains unsupported.",
+        "full": "Complete13 division/capital set with broad locations, correct capital-role distinctions and changed-map recognition; no spelling or survey precision requirement."
+      }
+    },
+    "sources": [
+      {
+        "claim": "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+        "source": "Government of Canada, Intergovernmental Affairs, Provinces and territories, current table read 2026-11-10",
+        "url": "https://www.canada.ca/en/intergovernmental-affairs/services/provinces-territories.html",
+        "verified": true
+      },
+      {
+        "claim": "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography.",
+        "source": "Natural Resources Canada, Canada reference map, copyright 2006; portal metadata 2022; actual map visually checked 2026-11-10",
+        "url": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/can_eng.pdf",
+        "verified": true
+      }
+    ],
+    "confidence": "low",
+    "provenance": {
+      "originalResearchGeneratedBy": "Taxonomy curation: verified Canadian political geography and original untested teaching design",
+      "createdAt": "2026-11-10T21:18:03.888038Z",
+      "updatedAt": "2026-11-10T21:18:03.888038Z"
+    },
+    "publicationNotes": {
+      "omittedCurriculumText": []
+    }
+  },
+  "proposedAssociation": {
+    "scope": "jurisdiction",
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 10,
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B3.5"
+    ]
+  },
+  "consumerBoundary": "One new independent factual claim: no inferred mastery from Australian geography, generic maps or existing Ontario knowledge. No learner-state writes or hard edges.",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "73c2cc7"
+}

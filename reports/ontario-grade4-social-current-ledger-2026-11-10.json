@@ -3,20 +3,20 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "scope": "Ontario Grade4 Social Studies, ages9–10; actual course edition2018 under accepted aggregateON-SSHG-2026.",
-  "status": "In-progress source-fit authoring review; three selected clauses accounted for, not Grade4 completion.",
+  "status": "In-progress source-fit authoring review: three Full clauses and a political-geography component; Grade4 remains incomplete.",
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
     "Full": 3,
-    "Partial": 0,
-    "Unverified": 39,
+    "Partial": 1,
+    "Unverified": 38,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 4,
-    "topics": 4,
-    "codes": 3,
-    "newClaims": 1,
+    "pairs": 5,
+    "topics": 5,
+    "codes": 4,
+    "newClaims": 2,
     "reusedClaims": 3
   },
   "expectations": [
@@ -340,11 +340,15 @@
     },
     {
       "code": "B3.5",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_vf32z1-7s9"
+      ],
       "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+        "Attributed descriptions of some peoples living in the identified Canadian regions, with actual location/resource task, remain under qualification; map/capital inventory does not establish these."
+      ],
+      "dossier": "ontario-canadian-political-geography-claim-2026-11-10.json",
+      "rationale": "Complete thirteen-division/capital representation is accounted for by a bounded independent knowledge claim. The source’s peoples requirement remains separate."
     },
     {
       "code": "B3.6",
