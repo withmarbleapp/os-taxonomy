@@ -215096,7 +215096,7 @@
         "poeTask": null,
         "diagnosticPrompt": "Using the seven-continent model, can {{name}} name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America on a map and globe, distinguish a country and an ocean from a continent, and still find the same continents on another view? If another map groups or labels land differently, can they say which model they are using rather than call every difference an error?",
         "correctAnswer": "Names/locates the specified seven continents and transfers across representations while distinguishing country/ocean references.",
-        "whatMakesItDiscriminate": "Confuses a country/ocean with a continent or relies on one labelled picture.",
+        "whatMakesItDiscriminate": "Unlabelled naming/location rules out copying printed labels, while a differently centred map and globe check knowledge beyond one picture. Country/ocean contrasts reveal category confusion. Explaining an explicitly supplied alternative grouping distinguishes awareness of the stated model from categorically misnaming a feature.",
         "probeDeeper": [
           "Can the learner retain the reference when the map/model view changes?",
           "Which reference/model supports the answer, and what does it not establish?"
@@ -215188,7 +215188,7 @@
         "poeTask": null,
         "diagnosticPrompt": "On a globe and another world map, can {{name}} find the Equator, identify the Northern and Southern Hemispheres, and place some marked locations in the correct half? Can they explain a region that crosses the Equator and keep the same geographical references when the model or page is turned?",
         "correctAnswer": "Identifies Equator/Northern/Southern halves and classifies points or crossing regions across views.",
-        "whatMakesItDiscriminate": "Treats Equator as a physical wall or changes north with physical page-up.",
+        "whatMakesItDiscriminate": "Turning the view checks whether the learner retains the geographic Equator/pole reference instead of treating physical page-up as north. Classifying marked points and a region that crosses the Equator distinguishes reference-based location from a memorized picture or the assumption that every place lies wholly in one half.",
         "probeDeeper": [
           "Can the learner retain the reference when the map/model view changes?",
           "Which reference/model supports the answer, and what does it not establish?"
