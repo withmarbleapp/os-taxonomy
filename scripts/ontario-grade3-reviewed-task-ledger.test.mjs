@@ -88,3 +88,73 @@ test('final historical dossiers bind their reviewed records and actual community
   }
   assert.equal(requirements.learnerDisclosureRequired, false);
 });
+
+const catalogue = read('data/curriculum-standards.json').curricula.find(source => source.slug === 'the-ontario-curriculum-social-studies-history-an');
+const requiredGrade3Codes = catalogue.topics.filter(item => item.key.startsWith(prefix)).map(item => item.key.slice(prefix.length));
+const dossiers = Object.fromEntries([...new Set(ledger.expectations.map(row => row.dossier))].map(file => [file, read(`reports/${file}`)]));
+function verifyGrade3LedgerBindings(candidateLedger, candidateContexts, candidateDossiers = dossiers) {
+  const sorted = values => [...values].sort();
+  const rows = candidateLedger.expectations;
+  assert.equal(new Set(rows.map(row => row.code)).size, rows.length, 'Duplicate ledger code');
+  assert.deepEqual(sorted(rows.map(row => row.code)), sorted(requiredGrade3Codes), 'Catalogue/ledger code coverage differs');
+  const actual = new Map(requiredGrade3Codes.map(code => [code, new Set()]));
+  for (const context of candidateContexts) {
+    if (context.country !== 'CA' || context.region !== 'Ontario' || context.ageRangeStart > 8 || context.ageRangeEnd < 9) continue;
+    for (const standard of context.standards) {
+      if (!standard.startsWith(prefix)) continue;
+      const code = standard.slice(prefix.length);
+      assert.ok(actual.has(code), `Uncatalogued scoped Grade3 code ${code}`);
+      actual.get(code).add(context.topicId);
+    }
+  }
+  for (const row of rows) {
+    assert.ok(row.contributingTopicIds.length > 0, `Missing contributors for ${row.code}`);
+    assert.equal(new Set(row.contributingTopicIds).size, row.contributingTopicIds.length, `Duplicate contributor for ${row.code}`);
+    assert.deepEqual(sorted(row.contributingTopicIds), sorted(actual.get(row.code)), `Scoped contributors differ for ${row.code}`);
+    const dossier = candidateDossiers[row.dossier];
+    assert.ok(dossier, `Missing dossier for ${row.code}`);
+    const declared = new Set([dossier.code, ...(dossier.codes ?? []), ...(dossier.selectedCodes ?? []), ...(dossier.sourceCodes ?? []), ...(dossier.reviewedCodes ?? []), ...(dossier.context?.standards ?? []), ...(dossier.newContext?.standards ?? [])]);
+    assert.ok(declared.has(row.code) || declared.has(prefix + row.code), `Dossier does not declare ${row.code}`);
+    assert.equal(typeof row.protocolReference, 'string', `Missing protocol reference for ${row.code}`);
+    assert.ok(row.protocolReference.startsWith('/'), `Invalid protocol reference for ${row.code}`);
+    let protocol = dossier;
+    for (const segment of row.protocolReference.split('/').slice(1)) protocol = protocol?.[segment.replaceAll('~1', '/').replaceAll('~0', '~')];
+    assert.ok(protocol && typeof protocol === 'object' && Object.keys(protocol).length > 0, `Missing protocol for ${row.code}`);
+    if (!Array.isArray(protocol) && Array.isArray(protocol.codes)) assert.ok(protocol.codes.includes(row.code), `Wrong protocol code for ${row.code}`);
+  }
+}
+test('every catalogued Grade3 code binds its complete scoped contributors and dossier protocol', () => {
+  verifyGrade3LedgerBindings(ledger, contexts);
+});
+test('Grade3 ledger binding rejects missing B2.3 map links and extra scoped links', () => {
+  const missing = structuredClone(contexts);
+  for (const row of missing) if (row.topicId === 'mt_w4cUnN_SsQ' && row.country === 'CA' && row.region === 'Ontario' && row.ageRangeStart <= 8 && row.ageRangeEnd >= 9) row.standards = row.standards.filter(code => code !== prefix + 'B2.3');
+  assert.throws(() => verifyGrade3LedgerBindings(ledger, missing), /Scoped contributors differ for B2.3/);
+  const extra = structuredClone(contexts);
+  extra.push({topicId: 'unreviewed-test-contributor', scope: 'jurisdiction', country: 'CA', region: 'Ontario', ageRangeStart: 8, ageRangeEnd: 9, standards: [prefix + 'B2.3']});
+  assert.throws(() => verifyGrade3LedgerBindings(ledger, extra), /Scoped contributors differ for B2.3/);
+});
+test('Grade3 ledger binding rejects omitted codes, incomplete contributor lists and unresolved protocols', () => {
+  const omitted = structuredClone(ledger);
+  omitted.expectations = omitted.expectations.filter(row => row.code !== 'B2.3');
+  assert.throws(() => verifyGrade3LedgerBindings(omitted, contexts), /Catalogue\/ledger code coverage differs/);
+  const incomplete = structuredClone(ledger);
+  incomplete.expectations.find(row => row.code === 'B2.3').contributingTopicIds = [];
+  assert.throws(() => verifyGrade3LedgerBindings(incomplete, contexts), /Missing contributors for B2.3/);
+  const unresolved = structuredClone(ledger);
+  unresolved.expectations.find(row => row.code === 'B2.3').protocolReference = '/missing-protocol';
+  assert.throws(() => verifyGrade3LedgerBindings(unresolved, contexts), /Missing protocol for B2.3/);
+  const absent = structuredClone(ledger);
+  delete absent.expectations.find(row => row.code === 'B2.3').protocolReference;
+  assert.throws(() => verifyGrade3LedgerBindings(absent, contexts), /Missing protocol reference for B2.3/);
+});
+test('Grade3 binding permits a new scoped contributor when the reviewed ledger is updated', () => {
+  const updatedContexts = structuredClone(contexts);
+  const updatedLedger = structuredClone(ledger);
+  updatedContexts.push({topicId: 'future-reviewed-test-contributor', scope: 'jurisdiction', country: 'CA', region: 'Ontario', ageRangeStart: 8, ageRangeEnd: 9, standards: [prefix + 'B2.3']});
+  updatedLedger.expectations.find(row => row.code === 'B2.3').contributingTopicIds.push('future-reviewed-test-contributor');
+  verifyGrade3LedgerBindings(updatedLedger, updatedContexts);
+  const incomplete = structuredClone(ledger);
+  incomplete.expectations.find(row => row.code === 'B2').contributingTopicIds.pop();
+  assert.throws(() => verifyGrade3LedgerBindings(incomplete, contexts), /Scoped contributors differ for B2/);
+});
