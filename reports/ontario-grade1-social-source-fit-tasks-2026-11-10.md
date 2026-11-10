@@ -1,6 +1,8 @@
 # Grade1 Social Studies: source-fit task resolutions
 
-This dependent follow-up starts at reviewed territory checkpoint `ed97b20`, after the cultural-renewal checkpoint and [PR110](https://github.com/withmarbleapp/os-taxonomy/pull/110). It proposes seven additional source-fit authoring resolutions, with **no new mastery claims, changed card meanings or prerequisite edges**. The [machine dossier](ontario-grade1-social-source-fit-tasks-2026-11-10.json) supplies materials, task, success, near-miss and transfer evidence for each. The [code mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) keeps the complete39-code review and remaining 21 Partial judgments.
+This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **39 Full/0 Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
+
+This dependent follow-up starts at reviewed territory checkpoint `ed97b20`, after the cultural-renewal checkpoint and [PR110](https://github.com/withmarbleapp/os-taxonomy/pull/110). It proposes seven additional source-fit authoring resolutions, with **no new mastery claims, changed card meanings or prerequisite edges**. The [machine dossier](ontario-grade1-social-source-fit-tasks-2026-11-10.json) supplies materials, task, success, near-miss and transfer evidence for each. At this historical step, the complete 39-code review had 21 Partial judgments; the linked current mapping includes the subsequent inquiry resolutions.
 
 The actual [official Grade1 source](https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g1) and full contributing cards were reread. Source-fit protocols account for mandatory performances at the authoring level; they do not claim anyone passed or require a classroom study. Generic links alone did not account for these tasks, but no independent new operation was found in the seven source requirements below.
 
@@ -23,7 +25,7 @@ For another community, an adult prepares current attributed cards from the actua
 
 ## Boundaries and preservation
 
-Three exact CA/Ontario6–7 pair extensions add the descriptive-objects contribution to A3.2 and the existing role/duty contribution to A3.5/B3.8. All prior contexts, intervals and standards remain intact; no authored claims, research records, dependencies or catalogue records change. The cumulative proposal has **18 Full/21 Partial**, with 100 pairs across 28 existing and 3 previously justified new claims. This task follow-up itself adds **zero** claims.
+Three exact CA/Ontario6–7 pair extensions add the descriptive-objects contribution to A3.2 and the existing role/duty contribution to A3.5/B3.8. All prior contexts, intervals and standards remain intact; no authored claims, research records, dependencies or catalogue records change. At this historical checkpoint, the cumulative proposal had **18 Full/21 Partial**, with 100 pairs across 28 existing and 3 previously justified new claims. This task follow-up itself adds **zero** claims.
 
 Coherent personal/environmental inquiry and the combined spatial map/unit conditions remain separate. Maps, charts or a source-fit task title alone do not prove evidence evaluation or a supported conclusion. French competence remains in scope separately; generic English communication cannot certify it. The optional Native Languages programme exclusion does not remove the FNMI requirements in this subject.
 
