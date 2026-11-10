@@ -217,8 +217,10 @@
       "id": "world-reference-map",
       "source": "https://open.canada.ca/data/en/dataset/8f1749a5-ac67-467a-9c01-752b375127c3",
       "publisher": "Natural Resources Canada, The World 2021",
-      "status": "Official metadata/edition/available image resource verified; large original image download ongoing before final visual preview.",
-      "limits": "Retain date and projection limits; a world map cannot serve as a detailed local street plan."
+      "status": "Complete official6900×4500 image retrieved and visually inspected, including full map and enlarged Canada/Iqaluit, Singapore and legend regions.",
+      "limits": "2021 reference, not a current legal-border adjudication or local street plan. Preserve publisher attribution and use the original. Compare with globe/regional map, not pixel distances on a cropped/resized image.",
+      "sourceImage": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Geographical-maps_Carte-geographique/The-world_Le-monde/TheWorld_150dpi.jpg",
+      "visualReadback": "Iqaluit is labelled on southeast Baffin Island within Canada; Singapore is labelled near the Malay Peninsula, above the Equator reference. Oceans, country boundaries and populated-place symbols are differentiated. The map uses WinkelII projection and a world scale; its Oceania label is a regional convention, not a demand to mark the stated seven-continent model wrong."
     }
   ],
   "inquiryWorkedData": {
@@ -273,5 +275,17 @@
     },
     "representation": "One symbol represents one calendar month whose long-term mean falls in the defined category. Table includes all12 months per location, headings/measure/period/source; chart title states the category and unit. Keep the original source figures available for adult readback.",
     "interpretationLimit": "Eight below-freezing monthly means does not mean every day in those months freezes, eight months of ice everywhere, or eight observed months from one recent year. Two city summaries do not prove climate is the sole cause of people’s lives or all places at similar latitude are identical."
+  },
+  "ownCommunityPacket": {
+    "scope": "Adult preparation for actual own community; no child/home address collection or classroom study required.",
+    "requiredFields": [
+      "Community/place name at appropriate public scale and source attribution",
+      "One familiar local map or plan with actual landmarks/key and relative-position opportunities",
+      "Dated local climate summary with measure/period, or checked qualitative summary",
+      "Actual examples of people meeting basic needs, with public provider/account sources where needed",
+      "Selected visible natural/managed/built features, a locally supported wildlife example and particular cultural practice(s)",
+      "Source labels and limits; distinguish what is known from what would need further information"
+    ],
+    "task": "Learner creates/explains a familiar map with key/labels/relative landmarks, describes actual own-community needs/provision and selected features, and compares supported similarities/differences with Iqaluit/Singapore using common dimensions. The preparation template specifies the required local evidence and task; it does not replace own community with Toronto or require sharing private family facts."
   }
 }
