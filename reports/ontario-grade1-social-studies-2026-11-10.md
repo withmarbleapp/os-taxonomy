@@ -1,8 +1,8 @@
 # Ontario Grade 1 Social Studies: first alignment review
 
-Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **100 topic–expectation pairs** across **28 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
+Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **106 topic–expectation pairs** across **29 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
 
-The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **18 Full, 21 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. Overall inquiry expectations remain Partial because a collection of component skills does not establish an integrated inquiry; the role/identity and respectful-relationship overalls now have separate coherent source-fit tasks. Link counts are not a completion percentage.
+The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **25 Full, 14 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. Overall inquiry expectations remain Partial because a collection of component skills does not establish an integrated inquiry; the role/identity and respectful-relationship overalls now have separate coherent source-fit tasks. Link counts are not a completion percentage.
 
 ## Official source and identity
 
@@ -26,15 +26,17 @@ A second bounded follow-up adds `mt_wGoYDxnk6_`, **Traditional and treaty territ
 
 The [source-fit task follow-up](ontario-grade1-social-source-fit-tasks-2026-11-10.md) accounts for A1/A1.4/A3/A3.2/A3.5/B3.3/B3.8 with unchanged claims, explicit meaningful performance, and current attributed local-service facts. It adds no mastery claims and does not infer a learner pass from the protocol.
 
+The [community-needs and spatial task follow-up](ontario-grade1-community-spatial-tasks-2026-11-10.md) accounts for B1/B1.1–3 and B3/B3.4/B3.7 with accurate local resources, explicit needs/absence reasoning, actual plan creation and a common-reference map/unit performance. Coherent inquiry requirements remain separate.
+
 ## Age and scoped-context handling
 
 All proposed Grade 1 contexts use the exact Ontario **6–7** band. Existing countries, regions and intervals remain intact. The map holder `mt_w4cUnN_SsQ` receives that band because the official source explicitly requires the **whole operation** of reading and constructing familiar-place maps with representation conventions and relative positions. This is not age lowering from a single clause of a broader later claim. Its flat global start becomes 6 through the generated complete projection.
 
-Later-start identity strategies, institutional council/election/funding knowledge and general civic-rights claims remain candidates only. A local-services example does not justify lowering their complete claims. Map drawing and informal measurement remain components of the combined map-and-unit task; the latter is not certified by separate successes.
+Later-start identity strategies, institutional council/election/funding knowledge and general civic-rights claims remain candidates only. A local-services example does not justify lowering their complete claims. Map drawing and informal measurement are now combined in an explicit source-fit symbol/non-standard-unit task; separate successes alone remain insufficient.
 
 ## Full dispositions and remaining conditions
 
-Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, the source-fit cultural-renewal dossier for A1.5, the territory/own-school resource dossier for B3.1, and the seven combined source-fit task resolutions linked above. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
+Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, the source-fit cultural-renewal dossier for A1.5, the territory/own-school resource dossier for B3.1, the seven combined source-fit task resolutions, and the community-needs/spatial task dossier linked above. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
 
 | Code | Disposition | Reviewed requirement | Remaining condition |
 | --- | --- | --- | --- |
@@ -57,10 +59,10 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | A3.3 | Full | Order personally experienced events | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | A3.4 | Full | Recognize positive inclusive actions | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | A3.5 | Full | Explain respect for people and the environment | Source-fit combined task with explicit materials, success/near-miss and transfer checks; see the task dossier. |
-| B1 | Partial | People and local places support one another | Explain interactions between people, local physical features and services, including effects or alternatives where the specific expectations require them. |
-| B1.1 | Partial | Local features and services meet needs | Explain how particular local features/services meet needs and reason about their absence, using accurate community examples. |
-| B1.2 | Partial | Service occupations and the needs they meet | Connect locally accurate services and worker roles to whose needs are met, including the learner’s; naming jobs or goods/services alone does not establish that relationship. |
-| B1.3 | Partial | Plan responsible actions for a local place | Produce a specific feasible environmental-care plan and explain expected improvement to that place. Planning a generic task is not a complete environmental plan. |
+| B1 | Full | People and local places support one another | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
+| B1.1 | Full | Local features and services meet needs | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
+| B1.2 | Full | Service occupations and the needs they meet | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
+| B1.3 | Full | Plan responsible actions for a local place | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B2 | Partial | Investigate effects of people–place interactions | Carry through an inquiry that distinguishes nearer and longer-term consequences of a local interaction; separate component skills are not a completed causal investigation. |
 | B2.1 | Partial | Ask questions about local environmental effects | Frame questions about both nearer and longer-term consequences of a people–place interaction. |
 | B2.2 | Partial | Collect evidence of people–place interactions | Collect relevant observations/accounts and organize evidence of effects in the local community; provision of sources is allowed, but actual source use must be demonstrated. |
@@ -68,14 +70,14 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | B2.4 | Partial | Interpret evidence of local change | Use relevant qualitative/quantitative evidence to explain local changes or interactions; a chart or photograph description alone is insufficient. |
 | B2.5 | Partial | Evaluate evidence and conclude about local effects | Judge relevant evidence and justify conclusions about people–place effects; differing perspectives do not replace evidence evaluation. |
 | B2.6 | Partial | Communicate a community inquiry | Present actual inquiry findings with precise location/map vocabulary and an appropriate form; separate presentation or map tasks are component performances. |
-| B3 | Partial | Community features, services and spatial description | The local territory, area-function, collective service and combined spatial tasks remain explicit below; generic map/measurement links do not certify the overall expectation. |
+| B3 | Full | Community features, services and spatial description | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B3.1 | Full | Identify the school’s Indigenous/treaty territory | Source-fit own-school packet protocol and two attributed regional cases; no universal parcel or exclusivity claim. |
 | B3.2 | Full | Recognize local physical features | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | B3.3 | Full | Identify distinct local areas and describe their characteristics | Existing feature/map claims plus a verified local-area task; functional-category/mixed-use examples are not extra universal obligations. |
-| B3.4 | Partial | Describe relative location, distance and direction | Demonstrate the relative-distance component with local places as well as position/direction; existing positional examples alone do not prove the complete vocabulary use. |
+| B3.4 | Full | Describe relative location, distance and direction | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B3.5 | Full | Read and create a familiar-place map | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | B3.6 | Full | Understand non-standard spatial units | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
-| B3.7 | Partial | Draw maps using symbols and informal units | Combine symbol use and non-standard distance units within the map itself; separate drawing and length measurements are not the integrated performance. |
+| B3.7 | Full | Draw maps using symbols and informal units | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B3.8 | Full | Collective services and users’ responsibilities | Source-fit combined task with explicit materials, success/near-miss and transfer checks; see the task dossier. |
 
 ## Genuine knowledge decisions, not permanent hidden gaps

@@ -25,13 +25,13 @@
     "excluded": "History/Geography Grades 7–8 and other grades remain outside this slice; one independently justified shared role/responsibility claim, no dependency changes."
   },
   "summary": {
-    "Partial": 21,
-    "Full": 18,
+    "Partial": 14,
+    "Full": 25,
     "Gap": 0,
     "reviewedCodes": 39,
     "associatedCodes": 39,
-    "topicStandardPairs": 100,
-    "existingHolders": 28,
+    "topicStandardPairs": 106,
+    "existingHolders": 29,
     "newTopics": 3
   },
   "coverageMeaning": "Code-by-code authoring review, not learner mastery or Full coverage inferred from associations. Overall expectations retain integrated-task conditions. Genuine knowledge decisions are separated from resource/task conditions.",
@@ -570,7 +570,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B1",
       "officialCode": "B1",
       "requirementSummary": "People and local places support one another",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -595,19 +595,24 @@
           "topicName": "Special places I belong to",
           "role": "component",
           "contribution": "Explain a familiar place’s significance and suggest ways to look after it."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Explain plausible consequences of a community feature/service absence and responsible actions using the source-fit task."
         }
       ],
-      "remainingConditions": [
-        "Explain interactions between people, local physical features and services, including effects or alternatives where the specific expectations require them."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "local-needs-features-services"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B1.1",
       "officialCode": "B1.1",
       "requirementSummary": "Local features and services meet needs",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -626,19 +631,24 @@
           "topicName": "Goods & Services",
           "role": "component",
           "contribution": "Distinguish practical services from material goods and give everyday examples."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Explain consequences for people if a needed community feature/service were unavailable."
         }
       ],
-      "remainingConditions": [
-        "Explain how particular local features/services meet needs and reason about their absence, using accurate community examples."
-      ],
-      "residualKind": "local-knowledge-and-counterfactual-task",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "local-needs-features-services"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B1.2",
       "officialCode": "B1.2",
       "requirementSummary": "Service occupations and the needs they meet",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_asRwlPZXC3",
@@ -659,17 +669,16 @@
           "contribution": "Identify basic needs and distinguish them from wants."
         }
       ],
-      "remainingConditions": [
-        "Connect locally accurate services and worker roles to whose needs are met, including the learner’s; naming jobs or goods/services alone does not establish that relationship."
-      ],
-      "residualKind": "local-knowledge-and-task",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "local-needs-features-services"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B1.3",
       "officialCode": "B1.3",
       "requirementSummary": "Plan responsible actions for a local place",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_QR3vxbN1o4",
@@ -682,13 +691,18 @@
           "topicName": "Special places I belong to",
           "role": "component",
           "contribution": "Explain a familiar place’s significance and suggest ways to look after it."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Connect specific planned care actions to plausible effects on the local place."
         }
       ],
-      "remainingConditions": [
-        "Produce a specific feasible environmental-care plan and explain expected improvement to that place. Planning a generic task is not a complete environmental plan."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "responsible-local-environment-plan"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2",
@@ -899,7 +913,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3",
       "officialCode": "B3",
       "requirementSummary": "Community features, services and spatial description",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -936,13 +950,24 @@
           "topicName": "Traditional and treaty territories in Canada",
           "role": "component",
           "contribution": "Distinguish traditional territory, applicable treaty reference and current reserve using attributed locally verified school resources."
+        },
+        {
+          "topicId": "mt_uhuxX8sg9f",
+          "topicName": "Comparing Lengths & Heights",
+          "role": "component",
+          "contribution": "Use direct length comparison within the coherent community location/distance description."
+        },
+        {
+          "topicId": "mt_RgQxPddV8v",
+          "topicName": "Goods & Services",
+          "role": "component",
+          "contribution": "Describe actual local services in the coherent community resource task."
         }
       ],
-      "remainingConditions": [
-        "Combined relative-location/distance/direction and symbol/non-standard-unit map tasks remain explicit below; local territory, distinct-area characteristics and provider/user duties now have source-fit protocols."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "integrated-community-description"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.1",
@@ -1007,7 +1032,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.4",
       "officialCode": "B3.4",
       "requirementSummary": "Describe relative location, distance and direction",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_qeZYF6HZ4o",
@@ -1020,13 +1045,18 @@
           "topicName": "Finding places on a plan",
           "role": "component",
           "contribution": "Locate places and follow routes on a supplied simple plan."
+        },
+        {
+          "topicId": "mt_uhuxX8sg9f",
+          "topicName": "Comparing Lengths & Heights",
+          "role": "component",
+          "contribution": "Directly compare modelled local-route lengths from a common reference to ground relative-distance language."
         }
       ],
-      "remainingConditions": [
-        "Demonstrate the relative-distance component with local places as well as position/direction; existing positional examples alone do not prove the complete vocabulary use."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "relative-distance-symbol-unit-map"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.5",
@@ -1066,7 +1096,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.7",
       "officialCode": "B3.7",
       "requirementSummary": "Draw maps using symbols and informal units",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_w4cUnN_SsQ",
@@ -1081,11 +1111,10 @@
           "contribution": "Use repeated non-standard length units and record measurements; a map-scale application needs joint performance."
         }
       ],
-      "remainingConditions": [
-        "Combine symbol use and non-standard distance units within the map itself; separate drawing and length measurements are not the integrated performance."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "relative-distance-symbol-unit-map"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.8",
@@ -1411,6 +1440,120 @@
       "nearMiss": "Lists two objects without identifying areas or gives characteristics unsupported by the supplied local evidence.",
       "transfer": "Identify and describe different areas on another familiar local/school plan with its own evidence and key.",
       "coverageBoundary": "The source requires some distinct areas and characteristics. Residential/commercial/mixed-use examples are illustrative, not a mandatory universal functional classification, mixed-use analysis or zoning-law claim. Existing map/feature knowledge and this task suffice; no new land-use topic is introduced."
+    },
+    {
+      "id": "local-needs-features-services",
+      "sourceCodes": [
+        "B1",
+        "B1.1",
+        "B1.2"
+      ],
+      "existingTopics": [
+        "mt_cUpJvBD1YA",
+        "mt__ab4knIaSL",
+        "mt_RgQxPddV8v",
+        "mt_asRwlPZXC3",
+        "mt_UHQfb-n-w3"
+      ],
+      "materials": "Adult-prepared accurate own-community cards for a natural feature, built feature and services/jobs, including a service used by the learner. The source facts explain what each provides. Worked resources: City of Toronto drinking-water treatment/supply and the previously verified garbage/organics and public-library cards; adapt the provider to the actual community rather than assume Toronto services everywhere.",
+      "task": [
+        "Identify a natural/built feature and services/occupations in the actual community and explain how people, including the learner, use them to meet needs.",
+        "Distinguish a needed benefit from merely a preferred object. Explain the link between the feature/service, what people do and the need it helps meet.",
+        "For one feature and one service, explain a reasonable consequence if it were unavailable; supply necessary factual limits, rather than demand engineering or institutional knowledge.",
+        "Use another actual feature/service to check transfer; do not assume every person uses the community in the same way."
+      ],
+      "positive": "Explains supported people–feature/service–need relationships, including own use and a plausible absence consequence.",
+      "nearMiss": "Lists places or job names without their relationship to needs, or claims all communities have the same provider/way of meeting a need.",
+      "transfer": "Another verified natural/built feature or service, retaining its actual people/benefit relationship.",
+      "sources": [
+        {
+          "url": "https://www.toronto.ca/services-payments/water-environment/tap-water-in-toronto/",
+          "role": "City describes obtaining LakeOntario water, treating/testing and supplying it to residents/businesses/visitors. Use only introductory service/need facts; chemical treatment calculations and drinking demonstrations are not task requirements."
+        },
+        {
+          "url": "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/set-out-tips/",
+          "role": "Current waste-service facts, with residential recycling operator distinction retained."
+        },
+        {
+          "url": "https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/city-managers-office/agencies-corporations/agencies/toronto-public-library/",
+          "role": "Actual public-library provider/service; use its matching borrowing-resource card."
+        }
+      ],
+      "wholeClaimBoundary": "The existing needs/wants, job/service, local-feature and consequences claims remain unchanged. Source-specific integration does not require a new younger council, public-service or environmental-needs topic."
+    },
+    {
+      "id": "responsible-local-environment-plan",
+      "sourceCodes": [
+        "B1.3"
+      ],
+      "existingTopics": [
+        "mt_QR3vxbN1o4",
+        "mt_5zPXTvZTcX",
+        "mt_UHQfb-n-w3"
+      ],
+      "materials": "Verified familiar school/community place and relevant local care/service information, plus a simple map and ordinary drawing/planning materials. Use the actual site’s accessible disposal or care arrangements; no invented bin/provider location.",
+      "task": [
+        "Choose a specific responsible action for the familiar built/natural place and state what is to be improved.",
+        "Create an ordered plan naming materials/information, where actions occur and who should do them; distinguish the learner’s part from an adult/provider responsibility.",
+        "Explain how the planned actions could enhance the actual place, using supplied facts and a plausible consequence rather than promise a measured environmental outcome.",
+        "Revise the plan when a resource/location changes and explain the revision."
+      ],
+      "positive": "A specific workable local plan with steps, relevant resources and an explained place-care benefit.",
+      "nearMiss": "Only says be good or clean up without a plan, location or explanation of the effect.",
+      "transfer": "Another familiar place or changed resource constraint.",
+      "wholeClaimBoundary": "Source requires creating/explaining a plan, not carrying out a cleanup or a classroom outcome study. Actual performance of the planning operation remains required in the task."
+    },
+    {
+      "id": "relative-distance-symbol-unit-map",
+      "sourceCodes": [
+        "B3.4",
+        "B3.7"
+      ],
+      "existingTopics": [
+        "mt_qeZYF6HZ4o",
+        "mt_61Pa4Eksva",
+        "mt_uhuxX8sg9f",
+        "mt_KaF0SQvaiu",
+        "mt_w4cUnN_SsQ"
+      ],
+      "materials": "A familiar visited school/local place, adult-verified landmarks and suitable equal non-standard length units (such as floor-tile intervals or a repeatable classroom unit). Use the same origin when comparing distances. Provide any access/path facts needed.",
+      "task": [
+        "Describe significant local places using relative position and direction, and compare which is closer/farther from the same reference point using actual route lengths or a direct model of them.",
+        "Measure a short familiar route using equal units and record the number with its unit. If comparing modelled routes directly, align them to the same origin instead of comparing only their paper positions.",
+        "Construct a simple map of the visited place with symbols and a key, and put the route’s non-standard-unit distance on that same map. Use a consistent stated unit so the symbols and distance describe the actual route together.",
+        "Use the map to describe another location/direction or distance relationship and explain a changed comparison when the reference point changes."
+      ],
+      "positive": "Uses relative location/distance/direction meaningfully and integrates symbols plus an accurately recorded non-standard route unit on one familiar-place map.",
+      "nearMiss": "Says farther without a common reference, uses unequal units/gaps, or produces an unrelated drawing and separate length result without connecting them.",
+      "transfer": "Another visited familiar place or a changed reference point while preserving consistent units and map-key meanings.",
+      "wholeClaimBoundary": "No formal numerical scale, cardinal-direction system or advanced cartographic calculation is added. Source examples do not make every representation mandatory; this task accounts for its actual symbol/non-standard-unit and relative-language requirements."
+    },
+    {
+      "id": "integrated-community-description",
+      "sourceCodes": [
+        "B3"
+      ],
+      "existingTopics": [
+        "mt_cUpJvBD1YA",
+        "mt_RgQxPddV8v",
+        "mt_asRwlPZXC3",
+        "mt_w4cUnN_SsQ",
+        "mt_KaF0SQvaiu",
+        "mt_qeZYF6HZ4o",
+        "mt_uhuxX8sg9f",
+        "mt_wGoYDxnk6_"
+      ],
+      "materials": "Combine the already reviewed own-school territory packet, distinct-local-area map and actual service cards with the relative-distance/symbol-unit task above. These refer to the same learner’s familiar community, not disconnected textbook exercises.",
+      "task": [
+        "Describe significant local areas, natural/built features and services with accurate examples from the prepared community packet.",
+        "Identify the school’s supported traditional/treaty references using the separately reviewed attributed protocol, retaining its source/map limitations.",
+        "Use the familiar map to describe locations/directions and compare or measure distance using the same reference and unit.",
+        "Explain how the different representations and examples describe one community, retaining uncertainty where the local resources do not establish a fact."
+      ],
+      "positive": "Coherently describes actual community features/areas/services and uses basic location/distance representations; prior component protocols are part of the task, not replaced by a summary label.",
+      "nearMiss": "Names unrelated places without local evidence or succeeds in isolated components but cannot connect the map/distance to the described community.",
+      "transfer": "A second familiar community area or changed reference point with its appropriate source facts.",
+      "wholeClaimBoundary": "Full authoring judgment requires the prior reviewed territory/area/service protocols together with this integration, not this task title alone."
     }
   ],
   "followUpClaimCuration": [
@@ -1443,5 +1586,10 @@
       "B3.3"
     ],
     "interpretationCorrection": "The initial B3.3 residual imported mandatory functional-category/mixed-use knowledge from illustrative examples. Rereading the actual clause corrects that over-demand: distinct areas and their characteristics are accounted for with existing whole claims and a source-fit task."
+  },
+  "communitySpatialFollowUp": {
+    "report": "ontario-grade1-community-spatial-tasks-2026-11-10.json",
+    "baseCommit": "48f9507",
+    "newClaims": 0
   }
 }
