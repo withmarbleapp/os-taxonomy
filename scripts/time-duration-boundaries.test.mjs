@@ -6,7 +6,7 @@ const topics = new Map(load('../data/topics.json').topics.map(t => [t.id,t]));
 const contexts = load('../data/curriculum-alignments.json').alignments;
 const edges = load('../data/dependencies.json').dependencies;
 const ledger = load('../reports/time-duration-clock-claim-review-2026-11-10.json');
-const has = (id,country,start,end,code) => contexts.some(c => c.topicId===id && c.country===country && c.ageRangeStart===start && c.ageRangeEnd===end && c.standards.includes(code));
+const has = (id,country,start,end,code,region=null) => contexts.some(c => c.topicId===id && c.scope==='jurisdiction' && c.country===country && (c.region??null)===region && (c.framework??null)===null && c.ageRangeStart===start && c.ageRangeEnd===end && c.standards.includes(code));
 
 test('duration and endpoint claims identify different unknown quantities and both endpoint directions', () => {
   const duration=topics.get('mt_4emC463IyW'), endpoint=topics.get('mt_IL86kadLSS');
@@ -33,9 +33,9 @@ test('measurement source contributions survive at their exact bands, including I
   const code='ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.10';
   assert.ok(has('mt__N55B7u7HD','IN',3,8,code));
   assert.ok(has('mt_tVvZVWO5d6','IN',3,8,code));
-  assert.ok(has('mt__N55B7u7HD','US',8,9,'ccss-math:3.MD.1'));
-  assert.ok(has('mt__N55B7u7HD','AU',8,9,'acara-v9:AC9M3M03'));
-  assert.ok(has('mt_UNzojLkNdm','AU',8,9,'acara-v9:AC9M3M04'));
+  assert.ok(has('mt__N55B7u7HD','US',8,9,'ccss-math:3.MD.1','Common Core'));
+  assert.ok(has('mt__N55B7u7HD','AU',8,9,'acara-v9:AC9M3M03','ACARA v9'));
+  assert.ok(has('mt_UNzojLkNdm','AU',8,9,'acara-v9:AC9M3M04','ACARA v9'));
   assert.ok(!contexts.some(c=>c.topicId==='mt_IL86kadLSS'&&c.standards.includes('uk-nc-2013:Ma/KS2/Y4/M/6')));
   const india=load('../reports/ncert-foundational-mathematics-alignment-2026-11-10.json');
   const row=india.records.find(r=>r.officialCode==='C-8.10');
