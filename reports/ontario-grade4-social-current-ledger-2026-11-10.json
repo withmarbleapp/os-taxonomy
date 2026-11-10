@@ -7,17 +7,17 @@
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
-    "Full": 1,
+    "Full": 2,
     "Partial": 0,
-    "Unverified": 41,
+    "Unverified": 40,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 1,
-    "topics": 1,
-    "codes": 1,
+    "pairs": 2,
+    "topics": 2,
+    "codes": 2,
     "newClaims": 1,
-    "reusedClaims": 0
+    "reusedClaims": 1
   },
   "expectations": [
     {
@@ -302,11 +302,14 @@
     },
     {
       "code": "B3.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_B0IMsNXG5C"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-physical-region-reuse-2026-11-10.json",
+      "protocolReference": "/protocol",
+      "coverageBasis": "The stated current-region convention, actual national reference and preserved whole Ontario knowledge task account for selected region locations, major similarities/differences and local variation. No exhaustive example inventory or learner mastery inferred."
     },
     {
       "code": "B3.2",

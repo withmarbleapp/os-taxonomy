@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "a3a1573a76eca7d680bc7e1a17bf0caabb880fa1",
+  "status": "Source-fit authoring coverage of selected B3.1 through an unchanged existing claim and actual regional reference/comparison task; not all national geography.",
+  "officialSource": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+  "sourceEdition": 2018,
+  "code": "B3.1",
+  "contributor": {
+    "topicId": "mt_B0IMsNXG5C",
+    "role": "Existing three-region knowledge and whole Ontario-location/characteristic assessment; no claim expansion.",
+    "proposedContext": {
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B3.1"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "publisher": "Natural Resources Canada",
+      "url": "https://atlas.gc.ca/phys/en/index.html",
+      "reference": "Actual current national Regions layer/text/legend already read and visually inspected in the Grade3physical-region dossier.",
+      "role": "Current model and actual broad Canadian locations of selected regions, not a new invented regional classification.",
+      "limits": [
+        "The archived sixth-edition map uses a different Hudson/Shield subdivision convention and is not silently substituted.",
+        "A physical-region boundary is not a provincial, municipal, Indigenous jurisdiction or legal boundary."
+      ]
+    },
+    {
+      "publisher": "Statistics Canada",
+      "url": "https://www.statcan.gc.ca/en/statistical-programs/document/SGC_CGT_17292_V1",
+      "reference": "Actual2017Ontario outline already visually inspected.",
+      "role": "Separate political reference situating the earlier Ontario knowledge in Canada.",
+      "limits": [
+        "Keep the two projections/references separate instead of stretching them into a falsely precise overlay."
+      ]
+    }
+  ],
+  "protocol": {
+    "actions": [
+      "Use the stated current Canadian physical-region reference to identify the Canadian Shield, Hudson Bay Lowland and Great Lakes–StLawrence Lowlands as three actual landform regions in Canada. Locate them broadly on the national reference, then use the separate Ontario outline/reference to revisit their Ontario portions. Reading a reference is not a claim to an exhaustive seven-region national inventory.",
+      "Describe a major characteristic of each and compare at least one supported similarity and difference. Both lowland regions have generally low-relief landscapes, while the Hudson Bay Lowland’s wetland plain contrasts with the southern plain-like lowlands and local escarpment/hills. Contrast the Shield’s widespread rock, rounded terrain and many lakes with these lowland settings; no broad region is perfectly uniform.",
+      "Retain the COMPLETE unchanged topic assessment: after study, name and broadly locate the three regions on an Ontario outline without their labels, explain their distinguishing characteristics, account for checked local variation and recognize the pattern in a differently styled reference. Do not infer this knowledge merely from a labelled-map lookup.",
+      "Transfer to a changed Canadian reference/legend: locate the same selected regions and explain a supported similarity/difference without relying on one colour scheme or confusing a province with a physical region."
+    ],
+    "positive": "Identifies various actual Canadian physical regions, describes their broad locations and supported major similarities/differences, while the unchanged three-region knowledge claim is independently assessed.",
+    "nearMiss": [
+      "Treats a province name as a physical region.",
+      "Says every lowland location is perfectly flat or every Shield location identical.",
+      "Uses a labelled-map lookup as proof of the complete retained knowledge claim."
+    ],
+    "scopeLimits": [
+      "The source’s example list is illustrative, not an instruction to invent a new mandatory inventory of every physical-region type.",
+      "One selected landform-region task does not complete political-region, industrial activity, population or sustainability expectations.",
+      "No new region/country/grade claim, old-card edit or dependency is proposed."
+    ],
+    "performanceConditions": {
+      "selectedPhysicalRegions": [
+        "Canadian Shield",
+        "Hudson Bay Lowland",
+        "Great Lakes–StLawrence Lowlands"
+      ],
+      "locationReference": "Canada with separate Ontario whole-claim check",
+      "comparisons": [
+        "supported-similarity",
+        "supported-difference"
+      ],
+      "wholeClaimCheck": "unlabelled-Ontario-location/characteristics/local-variation/changed-map"
+    }
+  }
+}
