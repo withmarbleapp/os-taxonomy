@@ -20,7 +20,7 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1862,
+    "topics": 1869,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
@@ -30,21 +30,22 @@
       "Life Skills": 46,
       "Mathematics": 581,
       "Personal & Social Development": 118,
-      "Science": 576
+      "Science": 576,
+      "Physical Education": 7
     },
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7962,
+    "topicStandardLinks": 8033,
     "clusters": 176,
-    "teachingResearch": 1046,
+    "teachingResearch": 1053,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4279
+    "curriculumAlignments": 4299
   },
   "files": {
     "topics.json": {
-      "bytes": 2382683,
-      "sha256": "2c48a5e52859b3c50066f3cb74e7dab6f6ef1ef0ab29438a381cf87ee1cd0ee0"
+      "bytes": 2395882,
+      "sha256": "7a6babd340084e5c4b66a27da0d634a76d7dcb89c959fd2605fb005b87c163ea"
     },
     "dependencies.json": {
       "bytes": 876038,
@@ -59,16 +60,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23410089,
-      "sha256": "da3b7bc373af5f1e60f192e6620f262412ebad6d5e4525f24f18ad6c329c79ee"
+      "bytes": 23468890,
+      "sha256": "b21720e065015aa7e1a82f017c963b5257feff6af33a2c3ac6044c499267dc52"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1238630,
-      "sha256": "c1ab4d1ac29536023b8081fd68a5f58f214d369a065913f5d92330e9df0574d5"
+      "bytes": 1247880,
+      "sha256": "5a01aa15589f20289215cc8c086033c5b6b55b355478299a810d766717ebfa28"
     }
   },
   "excluded": [
@@ -79,10 +80,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "2c48a5e52859b3c50066f3cb74e7dab6f6ef1ef0ab29438a381cf87ee1cd0ee0",
+    "topicFileSha256": "7a6babd340084e5c4b66a27da0d634a76d7dcb89c959fd2605fb005b87c163ea",
     "coverage": {
-      "topicCount": 1862,
-      "withResearch": 1046,
+      "topicCount": 1869,
+      "withResearch": 1053,
       "withoutResearch": 816,
       "bySubject": {
         "Computing": {
@@ -129,6 +130,11 @@
           "topics": 576,
           "withResearch": 547,
           "withoutResearch": 29
+        },
+        "Physical Education": {
+          "topics": 7,
+          "withResearch": 7,
+          "withoutResearch": 0
         }
       },
       "missingTopicIds": [
