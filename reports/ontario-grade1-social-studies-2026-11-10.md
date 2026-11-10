@@ -1,8 +1,8 @@
 # Ontario Grade 1 Social Studies: first alignment review
 
-Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **95 topic–expectation pairs** across **28 existing claims and two justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
+Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **97 topic–expectation pairs** across **28 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
 
-The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **10 Full, 28 Partial and 1 Gap** judgments describe authoring coverage, not learner mastery. Overall expectations remain Partial because a collection of component skills does not establish an integrated inquiry. Link counts are not a completion percentage.
+The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **11 Full, 28 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. Overall expectations remain Partial because a collection of component skills does not establish an integrated inquiry. Link counts are not a completion percentage.
 
 ## Official source and identity
 
@@ -22,6 +22,8 @@ A1.1 includes both interpersonal and environmental responsibilities. A1.2 and A3
 
 A bounded follow-up adds `mt_gSBJxNBQh3`, **Indigenous cultural renewal in Canada**, with a [source-fit case and assessment dossier](ontario-cultural-renewal-claim-2026-11-10.md). It supplies the previously absent Canadian historical-disruption, community-led renewal and identity relationship for A1.5. Attributed First Nation, Métis and Inuit examples and a transfer protocol account for the resource/performance condition without a learner study. It is not a new language-proficiency claim.
 
+A second bounded follow-up adds `mt_wGoYDxnk6_`, **Traditional and treaty territories in Canada**, with a [two-case and own-school resource dossier](ontario-territory-knowledge-claim-2026-11-10.md). It distinguishes traditional territory, applicable treaty reference and current reserve, and provides an adult-prepared locally verified protocol for B3.1. The Australian school-Country claim remains unchanged.
+
 ## Age and scoped-context handling
 
 All proposed Grade 1 contexts use the exact Ontario **6–7** band. Existing countries, regions and intervals remain intact. The map holder `mt_w4cUnN_SsQ` receives that band because the official source explicitly requires the **whole operation** of reading and constructing familiar-place maps with representation conventions and relative positions. This is not age lowering from a single clause of a broader later claim. Its flat global start becomes 6 through the generated complete projection.
@@ -30,7 +32,7 @@ Later-start identity strategies, institutional council/election/funding knowledg
 
 ## Full dispositions and remaining conditions
 
-Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, and the source-fit cultural-renewal dossier for A1.5. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
+Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, the source-fit cultural-renewal dossier for A1.5, and the territory/own-school resource dossier for B3.1. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
 
 | Code | Disposition | Reviewed requirement | Remaining condition |
 | --- | --- | --- | --- |
@@ -65,7 +67,7 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | B2.5 | Partial | Evaluate evidence and conclude about local effects | Judge relevant evidence and justify conclusions about people–place effects; differing perspectives do not replace evidence evaluation. |
 | B2.6 | Partial | Communicate a community inquiry | Present actual inquiry findings with precise location/map vocabulary and an appropriate form; separate presentation or map tasks are component performances. |
 | B3 | Partial | Community features, services and spatial description | The local territory, area-function, collective service and combined spatial tasks remain explicit below; generic map/measurement links do not certify the overall expectation. |
-| B3.1 | Gap | Identify the school’s Indigenous/treaty territory | No current whole claim establishes Canadian traditional/treaty territory identification for a supplied school. Compare a careful generalization of the Australian school-Country claim with a specific local-knowledge proposal; obtain community-authoritative territorial information. |
+| B3.1 | Full | Identify the school’s Indigenous/treaty territory | Source-fit own-school packet protocol and two attributed regional cases; no universal parcel or exclusivity claim. |
 | B3.2 | Full | Recognize local physical features | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | B3.3 | Partial | Recognize local areas by function | Distinguish local area functions and mixed-use patterns, not just individual natural/managed/built objects. Requires contextual evidence or a narrowly justified knowledge resolution. |
 | B3.4 | Partial | Describe relative location, distance and direction | Demonstrate the relative-distance component with local places as well as position/direction; existing positional examples alone do not prove the complete vocabulary use. |
@@ -76,9 +78,7 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 
 ## Genuine knowledge decisions, not permanent hidden gaps
 
-B3.1 has no published association: Australian school-Country knowledge cannot simply be labelled Canadian treaty territory. Its Gap requires a focused comparison of a carefully generalized existing place claim with a genuinely distinct local-knowledge claim, and community-authoritative territorial information for the supplied school. Recognition of three contemporary Canadian Indigenous peoples is a prerequisite distinction, not territory identification.
-
-A1.5’s previously missing Canadian historical and identity-renewal relationship is now resolved in the bounded follow-up dossier above. Generic respect or Australian history was not substituted for the actual knowledge. B3.1 remains a separate unresolved territorial-knowledge decision; no Australian requirements are erased to close it.
+The two follow-up dossiers resolve the previously absent cultural-renewal relationship and Canadian territorial/treaty knowledge without relabelling Australian claims or treating generic respect/maps as sufficient. The own-school territory task retains local source-verification and attribution requirements; its worked cases do not certify every school.
 
 B3.3's local area functions and B3.8's collective service/provider/user relationship also remain explicit. These need a careful factual/operation review; older whole council or rights claims cannot be promoted merely to fill a count. Other Partials are source/task, evidence-evaluation, vocabulary-in-use, authentic-self or integrated-performance conditions, not a count of missing topics.
 
@@ -86,4 +86,4 @@ B3.3's local area functions and B3.8's collective service/provider/user relation
 
 The [primary completion ledger](ontario-primary-completion-2026-11-10.md) records 2,768 retained primary records and 2,640 eligible records after the user’s explicit exclusion of the optional Native Languages programme on 2026-11-10. Its 128 records and all prior contexts remain preserved; this does not exclude FNMI culture/history/community requirements here or in Language/Science. Existing Language resource/keyboarding conditions and the accepted cross-grade Science residual review are preserved. English communication used in English-stream Social Studies does not establish French or Indigenous-language competence.
 
-This is public curation, not publication. Existing claims are reused without authored semantic changes, except for the explicitly new independent claim. Consumers must not infer its mastery from another topic or move/reset learner evidence as a side effect. No such private-state change is authorized here.
+This is public curation, not publication. Existing claims are reused without authored semantic changes, with the three explicitly new independent claims documented separately. Consumers must not infer its mastery from another topic or move/reset learner evidence as a side effect. No such private-state change is authorized here.

@@ -26,13 +26,13 @@
   },
   "summary": {
     "Partial": 28,
-    "Full": 10,
-    "Gap": 1,
+    "Full": 11,
+    "Gap": 0,
     "reviewedCodes": 39,
-    "associatedCodes": 38,
-    "topicStandardPairs": 95,
+    "associatedCodes": 39,
+    "topicStandardPairs": 97,
     "existingHolders": 28,
-    "newTopics": 2
+    "newTopics": 3
   },
   "coverageMeaning": "Code-by-code authoring review, not learner mastery or Full coverage inferred from associations. Overall expectations retain integrated-task conditions. Genuine knowledge decisions are separated from resource/task conditions.",
   "records": [
@@ -923,10 +923,16 @@
           "topicName": "Jobs People Do",
           "role": "component",
           "contribution": "Name local jobs and describe what people do; public responsibility for a service is separate knowledge."
+        },
+        {
+          "topicId": "mt_wGoYDxnk6_",
+          "topicName": "Traditional and treaty territories in Canada",
+          "role": "component",
+          "contribution": "Distinguish traditional territory, applicable treaty reference and current reserve using attributed locally verified school resources."
         }
       ],
       "remainingConditions": [
-        "The local territory, area-function, collective service and combined spatial tasks remain explicit below; generic map/measurement links do not certify the overall expectation."
+        "Area-function, collective-service and combined spatial tasks remain explicit below; the local-territory requirement now has a separate source-fit own-school protocol."
       ],
       "residualKind": "integrated-performance",
       "candidateOnly": []
@@ -935,22 +941,19 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.1",
       "officialCode": "B3.1",
       "requirementSummary": "Identify the school’s Indigenous/treaty territory",
-      "disposition": "Gap",
-      "contributions": [],
-      "remainingConditions": [
-        "No current whole claim establishes Canadian traditional/treaty territory identification for a supplied school. Compare a careful generalization of the Australian school-Country claim with a specific local-knowledge proposal; obtain community-authoritative territorial information."
-      ],
-      "residualKind": "source-bound-claim-decision",
-      "candidateOnly": [
+      "disposition": "Full",
+      "contributions": [
         {
-          "topicId": "mt_l-3JUgI80b",
-          "reason": "Explicitly about First Nations Australian Country/Place; cannot be relabelled Canadian treaty territory without a reviewed semantic change."
-        },
-        {
-          "topicId": "mt_Lcqm4_wR4D",
-          "reason": "Distinguishes Canadian Indigenous peoples but does not locate a school within particular territories."
+          "topicId": "mt_wGoYDxnk6_",
+          "topicName": "Traditional and treaty territories in Canada",
+          "role": "direct",
+          "contribution": "Distinguish traditional territory, applicable treaty reference and current reserve using attributed locally verified school resources."
         }
-      ]
+      ],
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "canadian-school-territory-resources"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.2",
@@ -1134,7 +1137,6 @@
     "FrenchAndNativeLanguages": "French competence remains a separate in-scope requirement. The optional Native Languages programme is excluded by explicit user decision 2026-11-10, with its catalogue and prior contexts preserved; FNMI culture/history/community requirements here and in Language/Science remain in scope. English communication does not establish competence in another language."
   },
   "nextKnowledgeDecisions": [
-    "B3.1 locally verified traditional/treaty territory, including existing-ID generalization option",
     "B3.3 local area functions; distinguish factual/contextual task need from absent mastery claim",
     "B3.8 service-provider/user relationship versus complete council institution claim"
   ],
@@ -1262,6 +1264,36 @@
         "metis-language-initiatives",
         "pirurvik-aurniarvik"
       ]
+    },
+    {
+      "id": "canadian-school-territory-resources",
+      "sourceCodes": [
+        "B3.1"
+      ],
+      "caseIds": [
+        "second-street-etobicoke",
+        "valleyview-kenora"
+      ],
+      "materials": "Adult prepares a dated, attributed packet for the learner’s actual public school using its official public location and appropriate Nation/community territorial and treaty resources, with school/board or municipal statements separately attributed. Supply readable extracts/paraphrases and a legend/key; no private child or home address is needed.",
+      "preparationChecks": [
+        "Verify the public school location and the relevant region, not simply a school name shared with another place.",
+        "Consult relevant Indigenous Nation/community resources, applicable treaty accounts and appropriate school/board references. Preserve multiple supported peoples/accounts and identify disagreement or uncertainty instead of deciding exclusive ownership.",
+        "Identify whether the packet establishes a treaty, the full name/number and regional/date context. Never invent a numbered treaty or equate every treaty with a sale or extinguishment.",
+        "Distinguish any marked current reserve from traditional territory and treaty references. Maps are regional educational resources, not legal parcel determinations.",
+        "If suitable local information is missing or conflicting, the local application remains unverified until the adult resolves the resource question; another school’s worked example does not certify this school."
+      ],
+      "instructions": [
+        "Introduce traditional territory, treaty reference and reserve as different kinds of information, using the attributed packet and supplied map legend.",
+        "Ask the learner to identify the supported traditional territory or territories and applicable treaty for their own school, explaining which source supports each statement.",
+        "Ask whether the nearest reserve or the municipal boundary alone would justify the answer and why not.",
+        "Use the second worked public-school packet for transfer. Ask what differs, what each source establishes and what cannot be concluded."
+      ],
+      "rubric": {
+        "full": "Identifies the supported traditional territory or territories and applicable treaty reference for the actual school from the verified packet, keeps accounts attributed, distinguishes a reserve from the broader references, and transfers the distinction to another region without unsupported exclusivity.",
+        "nearMiss": "Only names generic Indigenous peoples, copies the first school’s treaty into the second, selects the nearest reserve, collapses every map boundary into territory, or claims the resources establish exclusive parcel title.",
+        "transfer": "Uses another region’s packet to identify its supported peoples and treaty reference, retaining its different name/number/date context and resource limits."
+      },
+      "coverageBoundary": "A source-fit authoring protocol, not a learner pass record. Worked cases demonstrate the design; own-school application requires the adult-prepared locally verified packet. No ceremony participation, private address collection or legal adjudication is required."
     }
   ],
   "followUpClaimCuration": [
@@ -1271,6 +1303,13 @@
       "baseCommit": "e7952f1af49238864936ad41a81cd9fcc4327edd",
       "date": "2026-11-10",
       "requirementResolved": "A1.5 historical/community-led renewal/identity relationship, with source-fit case resources and protocol; no classroom-study requirement."
+    },
+    {
+      "newTopicId": "mt_wGoYDxnk6_",
+      "report": "ontario-territory-knowledge-claim-2026-11-10.json",
+      "baseCommit": "b7250f17550aa83623f90019b12c41b359914449",
+      "date": "2026-11-10",
+      "requirementResolved": "B3.1 territory/treaty knowledge and own-school verified-resource protocol; no universal parcel determination or learner-study requirement."
     }
   ]
 }
