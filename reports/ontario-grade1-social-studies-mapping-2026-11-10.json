@@ -25,13 +25,13 @@
     "excluded": "History/Geography Grades 7–8 and other grades remain outside this slice; one independently justified shared role/responsibility claim, no dependency changes."
   },
   "summary": {
-    "Partial": 14,
-    "Full": 25,
+    "Partial": 0,
+    "Full": 39,
     "Gap": 0,
     "reviewedCodes": 39,
     "associatedCodes": 39,
-    "topicStandardPairs": 106,
-    "existingHolders": 29,
+    "topicStandardPairs": 128,
+    "existingHolders": 31,
     "newTopics": 3
   },
   "coverageMeaning": "Code-by-code authoring review, not learner mastery or Full coverage inferred from associations. Overall expectations retain integrated-task conditions. Genuine knowledge decisions are separated from resource/task conditions.",
@@ -205,7 +205,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2",
       "officialCode": "A2",
       "requirementSummary": "Investigate personal identity and social roles",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -230,19 +230,42 @@
           "topicName": "Describing Aloud",
           "role": "component",
           "contribution": "Give an organized, audible explanation of familiar people, places or events."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Draw a question-linked supported conclusion, communicate findings, predict tentatively and improve the method within the coherent inquiry."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component",
+          "contribution": "Interpret and explain the role–duty–circumstance relationship in the actual personal inquiry."
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "topicName": "My qualities and identity",
+          "role": "component",
+          "contribution": "Connect actual event/role evidence with the learner’s own qualities/self-description, rather than infer identity from counts."
         }
       ],
-      "remainingConditions": [
-        "Demonstrate the full question–source–interpretation–evidence–conclusion–communication cycle about the identity/role relationship; generic research and speaking are components."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.1",
       "officialCode": "A2.1",
       "requirementSummary": "Ask investigation questions about personal roles",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_x08z0N0HX8",
@@ -257,17 +280,16 @@
           "contribution": "Seek relevant information and clarification through questions."
         }
       ],
-      "remainingConditions": [
-        "Show that the questions investigate relationships among experiences and social identity, rather than only ask for a name or date."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.2",
       "officialCode": "A2.2",
       "requirementSummary": "Collect and organize evidence about personal development",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -280,19 +302,24 @@
           "topicName": "Timelines of past events",
           "role": "component",
           "contribution": "Organize personal or family events in chronological order using an unscaled timeline and available sources."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
         }
       ],
-      "remainingConditions": [
-        "Use suitable first-hand/other accounts or objects and organize them for the role/identity question; a timeline alone does not establish source choice or the causal connection."
-      ],
-      "residualKind": "source-and-task-condition",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.3",
       "officialCode": "A2.3",
       "requirementSummary": "Use maps during a personal-place inquiry",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_w4cUnN_SsQ",
@@ -307,17 +334,16 @@
           "contribution": "Locate places and follow routes on a supplied simple plan."
         }
       ],
-      "remainingConditions": [
-        "Read and construct a meaningful map within the actual investigation, not only solve an unrelated route exercise."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.4",
       "officialCode": "A2.4",
       "requirementSummary": "Interpret personal-history evidence with a tool",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_69w5GVudJl",
@@ -336,19 +362,36 @@
           "topicName": "Shared Research Projects",
           "role": "component",
           "contribution": "Recall experience and collect information from sources within a shared investigation."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component",
+          "contribution": "Interpret and explain the role–duty–circumstance relationship in the actual personal inquiry."
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "topicName": "My qualities and identity",
+          "role": "component",
+          "contribution": "Connect actual event/role evidence with the learner’s own qualities/self-description, rather than infer identity from counts."
         }
       ],
-      "remainingConditions": [
-        "Use the representation to explain a relationship involving roles, duties or identity; making a chart/timeline is not that interpretation."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.5",
       "officialCode": "A2.5",
       "requirementSummary": "Evaluate personal-history evidence and conclude",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_9REmUc8r4D",
@@ -361,19 +404,36 @@
           "topicName": "Shared Research Projects",
           "role": "component",
           "contribution": "Recall experience and collect information from sources within a shared investigation."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Draw a question-linked supported conclusion, communicate findings, predict tentatively and improve the method within the coherent inquiry."
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component",
+          "contribution": "Interpret and explain the role–duty–circumstance relationship in the actual personal inquiry."
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "topicName": "My qualities and identity",
+          "role": "component",
+          "contribution": "Connect actual event/role evidence with the learner’s own qualities/self-description, rather than infer identity from counts."
         }
       ],
-      "remainingConditions": [
-        "Evaluate the relevance of evidence and justify a conclusion about the role/identity relationship; simple clue use is only a component."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A2.6",
       "officialCode": "A2.6",
       "requirementSummary": "Present a personal inquiry with suitable language",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A7FYmvVhA",
@@ -388,11 +448,10 @@
           "contribution": "Use newly learned topic words appropriately in speech or writing."
         }
       ],
-      "remainingConditions": [
-        "Communicate actual inquiry findings, selecting accurate social-studies vocabulary and a suitable form. Familiar descriptive speech is not itself a completed inquiry."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "personal-role-identity-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A3",
@@ -708,7 +767,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2",
       "officialCode": "B2",
       "requirementSummary": "Investigate effects of people–place interactions",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -733,19 +792,42 @@
           "topicName": "Describing Aloud",
           "role": "component",
           "contribution": "Give an organized, audible explanation of familiar people, places or events."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Draw a question-linked supported conclusion, communicate findings, predict tentatively and improve the method within the coherent inquiry."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Reason about supported action/consequence relationships affecting people in the actual community change inquiry."
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component",
+          "contribution": "Identify and interpret the significant natural/managed/built feature changes using actual local evidence."
         }
       ],
-      "remainingConditions": [
-        "Carry through an inquiry that distinguishes nearer and longer-term consequences of a local interaction; separate component skills are not a completed causal investigation."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.1",
       "officialCode": "B2.1",
       "requirementSummary": "Ask questions about local environmental effects",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_x08z0N0HX8",
@@ -760,17 +842,16 @@
           "contribution": "Seek relevant information and clarification through questions."
         }
       ],
-      "remainingConditions": [
-        "Frame questions about both nearer and longer-term consequences of a people–place interaction."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.2",
       "officialCode": "B2.2",
       "requirementSummary": "Collect evidence of people–place interactions",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -783,19 +864,24 @@
           "topicName": "Pictograms and tally charts",
           "role": "component",
           "contribution": "Record and interpret simple categorical displays, tallies and tables."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
         }
       ],
-      "remainingConditions": [
-        "Collect relevant observations/accounts and organize evidence of effects in the local community; provision of sources is allowed, but actual source use must be demonstrated."
-      ],
-      "residualKind": "source-and-task-condition",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.3",
       "officialCode": "B2.3",
       "requirementSummary": "Use maps in a local environmental inquiry",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_w4cUnN_SsQ",
@@ -810,17 +896,16 @@
           "contribution": "Recognize natural, managed and built local features and describe where they are."
         }
       ],
-      "remainingConditions": [
-        "Read and construct a map that supports the inquiry about significant features and people–place relationships, rather than only label a generic map."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.4",
       "officialCode": "B2.4",
       "requirementSummary": "Interpret evidence of local change",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_c29FaCTNsx",
@@ -839,19 +924,36 @@
           "topicName": "Timelines of past events",
           "role": "component",
           "contribution": "Organize personal or family events in chronological order using an unscaled timeline and available sources."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather, record, classify and present actual inquiry information/data with meaningful table/display/diagram/key outputs."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Reason about supported action/consequence relationships affecting people in the actual community change inquiry."
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component",
+          "contribution": "Identify and interpret the significant natural/managed/built feature changes using actual local evidence."
         }
       ],
-      "remainingConditions": [
-        "Use relevant qualitative/quantitative evidence to explain local changes or interactions; a chart or photograph description alone is insufficient."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.5",
       "officialCode": "B2.5",
       "requirementSummary": "Evaluate evidence and conclude about local effects",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_9REmUc8r4D",
@@ -870,19 +972,36 @@
           "topicName": "Different perspectives and accounts",
           "role": "component",
           "contribution": "Consider how different people experience the same event or local change."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Draw a question-linked supported conclusion, communicate findings, predict tentatively and improve the method within the coherent inquiry."
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "topicName": "Actions and Their Consequences",
+          "role": "component",
+          "contribution": "Reason about supported action/consequence relationships affecting people in the actual community change inquiry."
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component",
+          "contribution": "Identify and interpret the significant natural/managed/built feature changes using actual local evidence."
         }
       ],
-      "remainingConditions": [
-        "Judge relevant evidence and justify conclusions about people–place effects; differing perspectives do not replace evidence evaluation."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B2.6",
       "officialCode": "B2.6",
       "requirementSummary": "Communicate a community inquiry",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A7FYmvVhA",
@@ -903,11 +1022,10 @@
           "contribution": "Read and draw a familiar-place map with a key, labels and relative landmark positions."
         }
       ],
-      "remainingConditions": [
-        "Present actual inquiry findings with precise location/map vocabulary and an appropriate form; separate presentation or map tasks are component performances."
-      ],
-      "residualKind": "integrated-performance",
-      "candidateOnly": []
+      "remainingConditions": [],
+      "residualKind": null,
+      "candidateOnly": [],
+      "assessmentProtocol": "community-environment-inquiry"
     },
     {
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3",
@@ -1554,6 +1672,105 @@
       "nearMiss": "Names unrelated places without local evidence or succeeds in isolated components but cannot connect the map/distance to the described community.",
       "transfer": "A second familiar community area or changed reference point with its appropriate source facts.",
       "wholeClaimBoundary": "Full authoring judgment requires the prior reviewed territory/area/service protocols together with this integration, not this task title alone."
+    },
+    {
+      "id": "personal-role-identity-inquiry",
+      "sourceCodes": [
+        "A2",
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "A2.4",
+        "A2.5",
+        "A2.6"
+      ],
+      "existingTopics": [
+        "mt_x08z0N0HX8",
+        "mt_f8n4txtLej",
+        "mt_4A4RpX-Go9",
+        "mt_9REmUc8r4D",
+        "mt_69w5GVudJl",
+        "mt_w4cUnN_SsQ",
+        "mt_61Pa4Eksva",
+        "mt_c29FaCTNsx",
+        "mt_7IFpDVNsmt",
+        "mt_7VrR1GzhrN",
+        "mt_PJE57bAvMG",
+        "mt_ij20XUbMHg",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "materials": "Adult prepares dated actual school/classroom routine accounts, relevant object/place information, an accurate familiar-place plan and actual comparable duty/action records. For a question about changing responsibilities, specify a common observation unit (for example, one expected duty in complete first-week/current-week schedules covering the same number of school days), distinguish expected assignments from observed actions, and verify record coverage. The learner chooses a non-sensitive real starting-school/new-class event and an actual learner/pupil/helper relationship. Their own voluntary account of what they thought/felt is a firsthand source; do not assign a feeling or force a positive self-description.",
+      "clauseTasks": {
+        "A2.1": "Formulate a question about how the real event/place/people relate to the learner’s role, relationship, duties or sense of capability/self. Refine an unrelated name/date question into one that could investigate the relationship.",
+        "A2.2": "Gather relevant information from the supplied dated accounts/objects and voluntary own recollection; organize it in an event/source table or timeline. Distinguish what the source says from what is inferred, and identify who/what it concerns.",
+        "A2.3": "Analyse the actual familiar school/classroom plan and construct a simple map with key/labels showing places significant to the event/role relationship. Use the map within the question, not as an unrelated route worksheet.",
+        "A2.4": "Interpret the timeline and relevant role/duty table to explain continuity/change and its relation to self-description. Use a graph/display only when the chosen question needs a count or comparison supported by actual comparable records, with the observation unit, period and coverage explicit. For changing responsibilities, compare the recorded duties under the same rule; use a meaningful labelled diagram and simple classification key for their people/place-care roles. Do not count source mentions just to make a chart, equate expected duties with completed actions, or infer confidence/identity from duty totals. A map legend alone is not a classification key.",
+        "A2.5": "Evaluate which dated source/clue supports the question and which is unrelated or insufficient. Draw a conclusion connecting actual role/duty/situation evidence with the learner’s own self-description, including supported continuity or uncertainty. Do not infer identity directly from an activity count. Make a tentative prediction for another transition and suggest how a clearer date, another appropriate account or better question could improve the inquiry.",
+        "A2.6": "Communicate the actual findings in a chosen oral/visual/written form, using role, relationship, responsibility and identity/sense-of-self vocabulary accurately. Identify a source and a limit, and explain what the representations show rather than merely display them."
+      },
+      "integratedTask": "Complete these stages around the same actual question and self-application. The earlier fictional Ari role case rehearses concepts but does not replace the learner’s own-role investigation. Connect the event/situation, roles/relationships/duties and sense of self; change is not assumed where evidence supports continuity.",
+      "positive": "A coherent source-supported explanation answering the actual question, integrating meaningful map/data/history tools and authentic self-application with a justified conclusion, tentative prediction and improvement.",
+      "nearMiss": "A polished timeline or map disconnected from the question; a feeling label with no role/self relationship; a made-up personal event; or a claim stronger than the available evidence.",
+      "transfer": "A different non-sensitive real classroom/community transition or relationship, retaining the inquiry process while checking which facts changed.",
+      "resourceCondition": "If the adult cannot verify a local event/source or the learner does not wish to discuss an example, select another ordinary real learner role/event. Do not substitute a fictional success as certification of mandatory own-role application."
+    },
+    {
+      "id": "community-environment-inquiry",
+      "sourceCodes": [
+        "B2",
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "B2.4",
+        "B2.5",
+        "B2.6"
+      ],
+      "existingTopics": [
+        "mt_x08z0N0HX8",
+        "mt_f8n4txtLej",
+        "mt_4A4RpX-Go9",
+        "mt_9REmUc8r4D",
+        "mt_69w5GVudJl",
+        "mt_c29FaCTNsx",
+        "mt_7IFpDVNsmt",
+        "mt_7VrR1GzhrN",
+        "mt_w4cUnN_SsQ",
+        "mt_cUpJvBD1YA",
+        "mt_UHQfb-n-w3",
+        "mt_2GDBmKCJxs",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "materials": "Adult prepares an actual local natural/built-feature change packet with dated earlier/current accounts or observations, an accurate local map and relevant comparable data. For a quantitative question, use actual dated observations/tallies with a common unit, defined site boundaries and consistent coverage (for example, one visible litter item within the same mapped path/planted-bed survey zones at comparable times before/after a local change). Supply an appropriate longer-term record/account as well as immediate effects; distinguish documented facts, project intentions and uncertain outcomes. LovePark remains a qualitative documentary worked example, not a source of invented numerical outcomes.",
+      "clauseTasks": {
+        "B2.1": "Formulate a question about people’s interaction with actual natural/built features and short- versus long-term effects. Ask what could be found from the supplied records and what another observation would need to check.",
+        "B2.2": "Gather/organize dated information about the actual feature change and its effects. Record source/date and separate direct observation, documentary statement and inference. Use a table and clearly defined categories rather than fabricate counts or treat a promotional intention as a measured outcome.",
+        "B2.3": "Analyse and construct a simple map of significant natural/built features in the inquiry with title, labels, meaningful symbols/key and suitable relative locations. Relate a mapped change to the question; do not infer a north arrow or survey scale from an unannotated photograph.",
+        "B2.4": "Interpret representations that materially address the question. Keep the LovePark worked case qualitative: its chronology, map/diagram and documented changes do not establish quantitative outcome trends. For the actual own-community quantitative packet, use a relevant table/bar/pictorial display only from comparable observations, with defined units, dates, site boundaries and coverage. A simple supplied location/feature classification key can separate observed items in mapped path versus planted-bed zones where this helps answer the question; explain exclusions consistently. Do not count source mentions, invent physical counts, use an irrelevant chart or confuse a map legend with a classification key.",
+        "B2.5": "Compare the relevance/support of records to the question and draw an appropriately limited conclusion about actual short/long-term effects. Explain whose account is represented, distinguish recorded construction/physical changes from unmeasured benefits, make a tentative prediction and suggest a comparable observation/source that would improve the inquiry. Do not infer causation from two dates alone.",
+        "B2.6": "Communicate supported findings in an appropriate chosen form using place/map/symbol/distance/direction/community vocabulary accurately; retain the time contrast, attribution and uncertainty."
+      },
+      "integratedTask": "Investigate the same own-community question through the complete cycle. The LovePark packet shows an authentic documentary pathway; its facts do not automatically describe every learner’s community. Natural and built features and short/long-term effects remain visible throughout.",
+      "positive": "A coherent inquiry using actual local evidence and maps/data tools, with justified time-sensitive conclusions, an appropriate prediction/improvement and clear communication of both support and limits.",
+      "nearMiss": "A generic cleanup slogan, isolated graph/map, invented local data, treating every advertised benefit as a measured effect, or concluding that all people have one view of a change.",
+      "transfer": "Another actual local feature change with its own evidence and time scale; adapt the question and representation instead of copying a conclusion.",
+      "workedCase": {
+        "caseId": "love-park-documentary-change",
+        "authority": "Waterfront Toronto, project delivery account; photographs attributed on the page to CCxA",
+        "url": "https://www.waterfrontoronto.ca/our-projects/love-park",
+        "verifiedFacts": [
+          "Former expressway off-ramp removed in2016–17.",
+          "Park construction ran July2021–June2023; park opened June2023.",
+          "The account identifies retained mature trees, new planting, paths and public-space uses.",
+          "A construction liaison committee addressed issues including noise, traffic and debris."
+        ],
+        "sourceUse": "Use a paraphrased dated event table/chronology and attributed current feature description qualitatively. The privately inspected aerial supports identifying visible pond/tree/path/grass areas; no numerical visitor/ecological outcome is derived from it. Consult the source image where permitted; no image is redistributed.",
+        "shortLongContrast": "Construction-period issues and physical change differ from the later public park and its continued planned uses. The source documents the project, not an independent long-term biodiversity/health evaluation.",
+        "mapBoundary": "The aerial is a viewpoint, not a surveyed north-up map; use its relative feature positions and the official location, and identify what orientation/scale is unverified.",
+        "evidenceLimit": "Do not invent complaint counts, visitor numbers, tree-survival rates, wildlife increases or measured wellbeing effects. For an outcome question, explicitly state what new comparable evidence would be needed."
+      },
+      "resourceCondition": "Own-community performance uses a verified actual local packet. If dates/effects are not established, narrow the question or identify what remains unknown; do not present a synthetic rehearsal dataset as actual community evidence."
     }
   ],
   "followUpClaimCuration": [
@@ -1591,5 +1808,12 @@
     "report": "ontario-grade1-community-spatial-tasks-2026-11-10.json",
     "baseCommit": "48f9507",
     "newClaims": 0
+  },
+  "inquiryFollowUp": {
+    "report": "ontario-grade1-social-inquiry-tasks-2026-11-10.json",
+    "baseCommit": "460749e",
+    "newClaims": 0,
+    "newPairs": 22,
+    "newContexts": 1
   }
 }

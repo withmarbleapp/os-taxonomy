@@ -1,8 +1,8 @@
 # Ontario Grade 1 Social Studies: first alignment review
 
-Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **106 topic–expectation pairs** across **29 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
+Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **128 topic–expectation pairs** across **31 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
 
-The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **25 Full, 14 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. Overall inquiry expectations remain Partial because a collection of component skills does not establish an integrated inquiry; the role/identity and respectful-relationship overalls now have separate coherent source-fit tasks. Link counts are not a completion percentage.
+The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **39 proposed Full, 0 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. The two overall inquiries now have coherent source-fit designs with actual own-role/community resources and meaningful performance; a collection of component links alone would not establish them. All Full judgments remain authoring proposals, not learner certifications. Link counts are not a completion percentage.
 
 ## Official source and identity
 
@@ -26,7 +26,9 @@ A second bounded follow-up adds `mt_wGoYDxnk6_`, **Traditional and treaty territ
 
 The [source-fit task follow-up](ontario-grade1-social-source-fit-tasks-2026-11-10.md) accounts for A1/A1.4/A3/A3.2/A3.5/B3.3/B3.8 with unchanged claims, explicit meaningful performance, and current attributed local-service facts. It adds no mastery claims and does not infer a learner pass from the protocol.
 
-The [community-needs and spatial task follow-up](ontario-grade1-community-spatial-tasks-2026-11-10.md) accounts for B1/B1.1–3 and B3/B3.4/B3.7 with accurate local resources, explicit needs/absence reasoning, actual plan creation and a common-reference map/unit performance. Coherent inquiry requirements remain separate.
+The [community-needs and spatial task follow-up](ontario-grade1-community-spatial-tasks-2026-11-10.md) accounts for B1/B1.1–3 and B3/B3.4/B3.7 with accurate local resources, explicit needs/absence reasoning, actual plan creation and a common-reference map/unit performance. The [personal/community inquiry dossier](ontario-grade1-social-inquiry-tasks-2026-11-10.md) now supplies clause-by-clause coherent protocols, with authentic application, relevance/limits, supported conclusions and the complete reused data/conclusion operations.
+
+The remaining A2/B2 inquiries are addressed in that explicit dossier rather than inferred from isolated maps/charts. The worked environmental case uses attributed project history; own-community application requires a locally verified packet. No classroom study or learner pass is claimed.
 
 ## Age and scoped-context handling
 
@@ -34,9 +36,9 @@ All proposed Grade 1 contexts use the exact Ontario **6–7** band. Existing cou
 
 Later-start identity strategies, institutional council/election/funding knowledge and general civic-rights claims remain candidates only. A local-services example does not justify lowering their complete claims. Map drawing and informal measurement are now combined in an explicit source-fit symbol/non-standard-unit task; separate successes alone remain insufficient.
 
-## Full dispositions and remaining conditions
+## Proposed source-fit dispositions and task requirements
 
-Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, the source-fit cultural-renewal dossier for A1.5, the territory/own-school resource dossier for B3.1, the seven combined source-fit task resolutions, and the community-needs/spatial task dossier linked above. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
+Full judgments are limited to the direct matches recorded below: role/duty/context reasoning in A1.1 plus the source-fit self-application protocol for A1.2/A3.1, some family-event comparison in A1.3, personal chronology, identifying inclusive actions, local physical features, the basic familiar-map operation, non-standard spatial units, the source-fit cultural-renewal dossier for A1.5, the territory/own-school resource dossier for B3.1, the seven combined source-fit task resolutions, the community-needs/spatial task dossier, and the coherent inquiry protocols linked above. A source's illustrative examples are not treated as an exhaustive checklist. Full source coverage here does not certify every activity associated with a contributing topic or a learner's performance.
 
 | Code | Disposition | Reviewed requirement | Remaining condition |
 | --- | --- | --- | --- |
@@ -46,13 +48,13 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | A1.3 | Full | Compare personally significant events with a peer | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | A1.4 | Full | Interactions affect other people and self-concept | Source-fit combined task with explicit materials, success/near-miss and transfer checks; see the task dossier. |
 | A1.5 | Full | Canadian Indigenous identity recovery and belonging | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
-| A2 | Partial | Investigate personal identity and social roles | Demonstrate the full question–source–interpretation–evidence–conclusion–communication cycle about the identity/role relationship; generic research and speaking are components. |
-| A2.1 | Partial | Ask investigation questions about personal roles | Show that the questions investigate relationships among experiences and social identity, rather than only ask for a name or date. |
-| A2.2 | Partial | Collect and organize evidence about personal development | Use suitable first-hand/other accounts or objects and organize them for the role/identity question; a timeline alone does not establish source choice or the causal connection. |
-| A2.3 | Partial | Use maps during a personal-place inquiry | Read and construct a meaningful map within the actual investigation, not only solve an unrelated route exercise. |
-| A2.4 | Partial | Interpret personal-history evidence with a tool | Use the representation to explain a relationship involving roles, duties or identity; making a chart/timeline is not that interpretation. |
-| A2.5 | Partial | Evaluate personal-history evidence and conclude | Evaluate the relevance of evidence and justify a conclusion about the role/identity relationship; simple clue use is only a component. |
-| A2.6 | Partial | Present a personal inquiry with suitable language | Communicate actual inquiry findings, selecting accurate social-studies vocabulary and a suitable form. Familiar descriptive speech is not itself a completed inquiry. |
+| A2 | Full (proposed) | Investigate personal identity and social roles | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.1 | Full (proposed) | Ask investigation questions about personal roles | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.2 | Full (proposed) | Collect and organize evidence about personal development | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.3 | Full (proposed) | Use maps during a personal-place inquiry | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.4 | Full (proposed) | Interpret personal-history evidence with a tool | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.5 | Full (proposed) | Evaluate personal-history evidence and conclude | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| A2.6 | Full (proposed) | Present a personal inquiry with suitable language | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
 | A3 | Full | Social roles and respectful relationships | Source-fit combined task with explicit materials, success/near-miss and transfer checks; see the task dossier. |
 | A3.1 | Full | Describe one’s roles, relationships and duties | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | A3.2 | Full | Explain significant people, places and belongings | Source-fit combined task with explicit materials, success/near-miss and transfer checks; see the task dossier. |
@@ -63,13 +65,13 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | B1.1 | Full | Local features and services meet needs | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B1.2 | Full | Service occupations and the needs they meet | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B1.3 | Full | Plan responsible actions for a local place | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
-| B2 | Partial | Investigate effects of people–place interactions | Carry through an inquiry that distinguishes nearer and longer-term consequences of a local interaction; separate component skills are not a completed causal investigation. |
-| B2.1 | Partial | Ask questions about local environmental effects | Frame questions about both nearer and longer-term consequences of a people–place interaction. |
-| B2.2 | Partial | Collect evidence of people–place interactions | Collect relevant observations/accounts and organize evidence of effects in the local community; provision of sources is allowed, but actual source use must be demonstrated. |
-| B2.3 | Partial | Use maps in a local environmental inquiry | Read and construct a map that supports the inquiry about significant features and people–place relationships, rather than only label a generic map. |
-| B2.4 | Partial | Interpret evidence of local change | Use relevant qualitative/quantitative evidence to explain local changes or interactions; a chart or photograph description alone is insufficient. |
-| B2.5 | Partial | Evaluate evidence and conclude about local effects | Judge relevant evidence and justify conclusions about people–place effects; differing perspectives do not replace evidence evaluation. |
-| B2.6 | Partial | Communicate a community inquiry | Present actual inquiry findings with precise location/map vocabulary and an appropriate form; separate presentation or map tasks are component performances. |
+| B2 | Full (proposed) | Investigate effects of people–place interactions | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.1 | Full (proposed) | Ask questions about local environmental effects | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.2 | Full (proposed) | Collect evidence of people–place interactions | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.3 | Full (proposed) | Use maps in a local environmental inquiry | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.4 | Full (proposed) | Interpret evidence of local change | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.5 | Full (proposed) | Evaluate evidence and conclude about local effects | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
+| B2.6 | Full (proposed) | Communicate a community inquiry | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
 | B3 | Full | Community features, services and spatial description | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
 | B3.1 | Full | Identify the school’s Indigenous/treaty territory | Source-fit own-school packet protocol and two attributed regional cases; no universal parcel or exclusivity claim. |
 | B3.2 | Full | Recognize local physical features | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
@@ -84,7 +86,7 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 
 The two follow-up dossiers resolve the previously absent cultural-renewal relationship and Canadian territorial/treaty knowledge without relabelling Australian claims or treating generic respect/maps as sufficient. The own-school territory task retains local source-verification and attribution requirements; its worked cases do not certify every school.
 
-B3.3's earlier residual over-interpreted illustrative functional/mixed-use examples as universal requirements. The corrected distinct-area/characteristics task uses existing feature/map claims. B3.8 now has current provider/user facts and an existing-claim source-fit task; no land-use or younger council clone was added. Other Partials are source/task, evidence-evaluation, vocabulary-in-use, authentic-self or integrated-performance conditions, not a count of missing topics.
+B3.3's earlier residual over-interpreted illustrative functional/mixed-use examples as universal requirements. The corrected distinct-area/characteristics task uses existing feature/map claims. B3.8 now has current provider/user facts and an existing-claim source-fit task; no land-use or younger council clone was added. The earlier source/task, evidence-evaluation, authentic-self and integrated-performance residuals are now addressed by explicit protocols. Their Full authoring proposals retain applicable resource/performance requirements; they are not learner pass records or a missing-topic count.
 
 ## Wider primary scope and consumer boundary
 
