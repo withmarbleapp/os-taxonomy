@@ -20,8 +20,7 @@
   },
   "coverageMeaning": "Authoring coverage of source requirements and assessment design, not learner attainment. Full does not certify that any child has passed.",
   "summary": {
-    "Full": 22,
-    "Partial": 2
+    "Full": 24
   },
   "records": [
     {
@@ -205,7 +204,7 @@
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.3",
       "officialCode": "C-2.3",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_hR2Y7NhMSY",
@@ -221,15 +220,18 @@
           "topicId": "mt_vJUa62bxeR",
           "topicName": "2-D shapes (age 7+)",
           "role": "component"
+        },
+        {
+          "topicId": "mt_qMu1oc7ZHd",
+          "topicName": "Symmetry of 3-D solids",
+          "role": "component"
         }
       ],
-      "rationale": "Two-dimensional symmetry and making models are explicit. They do not alone establish three-dimensional reflection and rotation reasoning.",
-      "remainingConditions": [
-        "An explicit primary-scope 3-D symmetry claim requires review: the existing dedicated solid-symmetry topic bundles more advanced cylinder, plane and axis requirements and is not silently assigned to younger ages."
-      ],
-      "residualKind": "existing-claim-scope-review",
+      "rationale": "The complete solid-symmetry operation is tested with concrete models, including every explicit ideal-cylinder and irregular-solid clause, and intentional construction is checked through the existing model-making claim. The primary stage-end window does not simplify the claim or delete historical contexts. The full rotational-symmetry prerequisite, including its supplied-software motif task, is accounted for as an assessment method; a physical-only check is not presented as covering that tool clause.",
+      "remainingConditions": [],
+      "residualKind": "none",
       "assessmentProtocols": [
-        "symmetry-models"
+        "solid-symmetry-full-claim"
       ]
     },
     {
@@ -579,7 +581,7 @@
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-2",
       "officialCode": "CG-2",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_yGv8doDAmp",
@@ -595,14 +597,35 @@
           "topicId": "mt_WXW0hjNhph",
           "topicName": "Patterns & Sequences",
           "role": "component"
+        },
+        {
+          "topicId": "mt_hR2Y7NhMSY",
+          "topicName": "Lines of symmetry",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NM5I3yN-Q6",
+          "topicName": "Rotational symmetry",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_vJUa62bxeR",
+          "topicName": "2-D shapes (age 7+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_qMu1oc7ZHd",
+          "topicName": "Symmetry of 3-D solids",
+          "role": "component"
         }
       ],
-      "rationale": "Shape analysis, spatial relations and pattern construction are direct components.",
-      "remainingConditions": [
-        "The explicit 3-D symmetry boundary in C-2.3 prevents full goal coverage."
-      ],
-      "residualKind": "existing-claim-scope-review",
-      "assessmentProtocols": []
+      "rationale": "The complete solid-symmetry operation is tested with concrete models, including every explicit ideal-cylinder and irregular-solid clause, and intentional construction is checked through the existing model-making claim. The primary stage-end window does not simplify the claim or delete historical contexts. The full rotational-symmetry prerequisite, including its supplied-software motif task, is accounted for as an assessment method; a physical-only check is not presented as covering that tool clause. A separate combined spatial task checks shape-pattern creation, attribute analysis, plan / movement descriptions and intentional symmetry.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "solid-symmetry-full-claim",
+        "goal-spatial-integration"
+      ]
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-3",

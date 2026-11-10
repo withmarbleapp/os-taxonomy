@@ -71,17 +71,6 @@
       "transfer": "Move one landmark and update both the verbal route and plan consistently."
     },
     {
-      "id": "symmetry-models",
-      "sourceCodes": [
-        "C-2.3"
-      ],
-      "status": "existing-claim-scope-review",
-      "setup": "Supply foldable paper and construction materials for a familiar solid, with a mirror or turning platform.",
-      "positiveEvidence": "Existing claims account for making and checking two-dimensional reflections and turns and for constructing solid models. An explicit solid-symmetry reasoning task is specified but not yet covered by a primary-scope whole claim.",
-      "nearMiss": "Do not infer symmetry from the solid name alone, or treat making any cube as evidence of understanding every plane or axis.",
-      "transfer": "Ask for a symmetric solid model and a deliberately asymmetric modification; explaining their difference is the unresolved demand."
-    },
-    {
       "id": "shape-patterns",
       "sourceCodes": [
         "C-2.4"
@@ -246,6 +235,105 @@
       "positiveEvidence": "Name the attribute at each station, justify the chosen unit/reference and tool, estimate where appropriate, measure and record, convert a relevant equivalent and explain the conservation predictions. Include length/distance, boundary, area, volume, mass and time.",
       "nearMiss": "An area formula is not a justification of a volume-invariance prediction; an unexplained unit label is not common-reference reasoning.",
       "transfer": "Transfer the plan to a new object or activity and identify which measurements and invariances are relevant."
+    },
+    {
+      "id": "solid-symmetry-full-claim",
+      "sourceCodes": [
+        "C-2.3",
+        "CG-2"
+      ],
+      "status": "accounted-for-by-complete-existing-claims",
+      "setup": "Physical ideal prism, regular and irregular pyramids, ideal cylinder, mirror / flat-card / matching-half models, construction materials and the supplied digital motif resource described below.",
+      "positiveEvidence": "Complete every listed whole-claim check and intentionally construct and verify a symmetric solid, then modify it to break an intended symmetry.",
+      "clauseChecks": [
+        {
+          "existingClause": "Identify/describe symmetry of actual prisms, pyramids and cylinders; classify using faces, edges and vertices.",
+          "task": "Provide an ideal triangular prism, a right regular square pyramid, a right circular cylinder and an irregular pyramid model. Describe their surfaces / edges / vertices and use those properties to explain comparisons, handling and turning the models.",
+          "primaryAppropriateness": "Uses concrete familiar solids and existing primary shape vocabulary; no coordinate equations, group theory or cross-section algebra."
+        },
+        {
+          "existingClause": "Planes of reflection: mirror-image halves, including longitudinal and middle planes of a prism.",
+          "task": "Use a mirror, transparent overlay or two matching half-models to test four proposed planes of a right equilateral-triangular prism: three through its length and one across its midpoint. Reject an off-centre horizontal plane; explain why two nonmatching halves do not reflect.",
+          "primaryAppropriateness": "Extends already-required 2-D mirror-line reasoning to a physical partition and comparison. The plane is a flat card or visible cut model, not an abstract equation."
+        },
+        {
+          "existingClause": "Axes of rotation, order, and distinction between an axis and a plane.",
+          "task": "Turn a right regular square pyramid about a rod through apex and base centre, counting four matches per full turn. Contrast the line used for turning with a flat mirror-plane card. Try a different line and explain why it fails.",
+          "primaryAppropriateness": "Quarter-turn reasoning and counting repeated matches already appear in primary 2-D symmetry. A rod and card externalise the different spatial referents."
+        },
+        {
+          "existingClause": "A solid name does not determine its symmetry; regular and irregular same-name pyramids may differ.",
+          "task": "Compare a right regular square pyramid with a deliberately asymmetric pyramid using the actual models. Test the proposed planes / turns instead of recalling a name-based rule.",
+          "primaryAppropriateness": "This is property-based sorting and evidence checking, not a higher-level definition or proof classification. The counterexample prevents overgeneralising from the easy regular model."
+        },
+        {
+          "existingClause": "An ideal right circular cylinder has infinitely many axial mirror planes, one middle plane and every-angle rotation about its axis.",
+          "task": "Model the cylinder as identical circular discs stacked with aligned centres. Show that any diameter of each disc supplies matching halves, so any vertical card through the common centre line gives a mirror plane. After any chosen such plane, turn the card a little to identify another: there is no final finite list. Compare a mid-height horizontal cut with an off-centre one. Turn the cylinder through arbitrary small and large angles about the central axis and explain why the circular outline and full height still coincide.",
+          "primaryAppropriateness": "Endless choice of angles is represented by a continuously turnable diameter / card, using the familiar circle rather than symbolic infinity or formal group theory. Several trials are not presented as a mathematical proof of every case: the explanation relies on the round cross-sections and equal height. The ideal model is stated explicitly; a handled mug is not assumed to have cylinder symmetry."
+        },
+        {
+          "sourceCreationClause": "Recognise AND create symmetry in familiar 2-D and 3-D shapes.",
+          "task": "Create a line- and turn-symmetric flat design; then build a right prism or regular pyramid using modelling materials with an intended plane and axis. Demonstrate its mirror-plane / turn matches. Move a connector or vertex to make a deliberately asymmetric version and explain which intended symmetry was lost.",
+          "primaryAppropriateness": "mt_vJUa62bxeR already requires making solids and recognising their orientations; qMu supplies symmetry analysis, while the two 2-D claims supply intentional reflection / rotation. The combined task deliberately checks design intent and construction, not just recognising a supplied cube."
+        }
+      ],
+      "nearMiss": [
+        "A matching drawing from one view alone does not establish whole-solid symmetry.",
+        "A mirror plane and a rotation axis are different geometric objects.",
+        "Naming a pyramid does not guarantee regularity or a specific symmetry order.",
+        "An off-centre horizontal cylinder cut does not give mirror halves.",
+        "Repeated trials alone are not proof that every angle works; use the circular construction to justify arbitrary-angle matching.",
+        "Constructing any solid without an intended and checked symmetry does not meet the source creation demand."
+      ],
+      "transfer": "Build and explain a different familiar symmetric model, distinguishing a plane from an axis and checking actual properties rather than relying on its name.",
+      "prerequisiteReadback": {
+        "hard": [
+          "mt_hRZyKvz1KN",
+          "mt_Mnodea7mG_",
+          "mt_NM5I3yN-Q6"
+        ],
+        "soft": [
+          "mt_nRksLqt-iR",
+          "mt_REwgr0d_ss"
+        ],
+        "conclusion": "All hard prerequisite operations are accounted for, including the explicit dynamic-geometry motif condition in mt_NM5I3yN-Q6. Physical models alone are not claimed to establish that software clause. The supplied digital task is one assessment method; NCERT does not impose a universal software requirement."
+      },
+      "suppliedSoftwareTask": {
+        "topicId": "mt_NM5I3yN-Q6",
+        "setup": "Supply a device with a dynamic-geometry tool, a simple asymmetric triangular motif, a marked centre and mirror line. Provide the rotate / reflect controls and allow an adult to read the interface labels.",
+        "task": "Create four images by quarter-turns around the marked centre, state and verify the resulting rotational order, then reflect a motif across the supplied line to create a line-symmetric arrangement. Change the angle or centre and explain why the old symmetry can fail. The learner makes the transformation choices rather than watching a prebuilt animation.",
+        "boundary": "This accounts for the whole existing prerequisite claim as one chosen assessment route. It is not evidence that NCERT requires every learner to use a branded application or digital device.",
+        "resources": [
+          "https://geogebra.github.io/docs/manual/en/tools/Rotate_around_Point/",
+          "https://geogebra.github.io/docs/manual/en/tools/Reflect_about_Line/"
+        ]
+      },
+      "ageFit": "Concrete comparison, primary line / rotational reasoning and an arbitrary turnable diameter account for the full operation. The stage-end reference is not an age-eight deadline. No formal group theory, coordinate planes or advanced cross-section formulae are needed. Repeated trials alone do not prove an every-angle claim; justify it from equal circular cross-sections and height.",
+      "suppliedPrerequisiteChecks": [
+        {
+          "topicId": "mt_hRZyKvz1KN",
+          "task": "Present rotated rectangles, squares, equilateral triangles and regular hexagons; find and draw all their mirror lines. Include one-line and no-line counterexamples in different orientations."
+        },
+        {
+          "topicId": "mt_Mnodea7mG_",
+          "task": "Count and correctly name faces, edges and vertices on familiar prisms and pyramids, using the actual model rather than its label alone."
+        },
+        {
+          "topicId": "mt_NM5I3yN-Q6",
+          "task": "Recognise rotational order by matching through a full turn, intentionally create line- and turn-symmetric patterns, and perform the supplied dynamic-geometry motif task."
+        }
+      ]
+    },
+    {
+      "id": "goal-spatial-integration",
+      "sourceCodes": [
+        "CG-2"
+      ],
+      "status": "accounted-for-by-combined-existing-claims",
+      "setup": "Flat pieces, solid models, a labelled familiar-space plan and construction materials.",
+      "positiveEvidence": "Create and describe a combined flat / solid shape pattern with a stated rule; analyse attributes, locate elements on a labelled plan, describe a route between them, and intentionally include and check reflection / rotation symmetries. Change a pattern element or a vertex and explain the consequences for the rule and symmetry.",
+      "nearMiss": "Naming solids or drawing a repeating pattern alone does not establish all attribute, location, pattern and symmetry requirements.",
+      "transfer": "Rearrange the plan or alter the shape-pattern rule, then explain and rebuild the preserved and changed relationships."
     }
   ]
 }
