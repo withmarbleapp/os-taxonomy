@@ -277,10 +277,10 @@
       "disposition": "Partial",
       "contributions": [
         {
-          "topicId": "mt_UNzojLkNdm",
-          "topicName": "Time to the nearest minute",
+          "topicId": "mt__N55B7u7HD",
+          "topicName": "Hours, minutes and seconds",
           "role": "component",
-          "contribution": "Clock readings and short durations recorded, estimated and compared with minute/hour units."
+          "contribution": "Estimate, measure and record short event durations using a supplied suitable timer and an appropriate time unit; actual measurement is assessed separately from reading clock faces."
         },
         {
           "topicId": "mt_tVvZVWO5d6",
@@ -289,7 +289,7 @@
           "contribution": "Dates and event intervals handled using a supplied local calendar."
         }
       ],
-      "rationale": "The first claim provides measurement rather than merely naming time units; the second gives daily and weekly calendar use. Calendar-fact recall was treated as a prerequisite, not added as coverage.",
+      "rationale": "The time-measurement component is retained on the existing measuring-and-recording claim after separating it from nearest-minute clock reading. The calendar contribution remains unchanged. The same official 3–8 stage window is retained, not a deadline for identical performance at every age. Calendar-fact recall is support, not replacement evidence for measuring an interval.",
       "remainingConditions": [
         "An explicit measured interval expressed in months is not established by the selected topic evidence. The larger year/leap-year facts topic is not a substitute for performing that task."
       ],
@@ -379,5 +379,13 @@
       "residualKind": "candidate-claim-gap-pending-pedagogical-decision"
     }
   ],
-  "partialInterpretation": "The nine Partial dispositions are remaining evidence/performance/goal conditions, not nine missing topics. Only C-8.14 is a candidate claim gap, pending a pedagogical decision; no additions or claim changes are authorized by this report."
+  "partialInterpretation": "The nine Partial dispositions are remaining evidence/performance/goal conditions, not nine missing topics. Only C-8.14 is a candidate claim gap, pending a pedagogical decision; no additions or claim changes are authorized by this report.",
+  "originalAlignmentBaseCommit": "4a7ba5a0476c7009694e2b11bfacdfc7343d1062",
+  "followUpClaimReconciliation": {
+    "date": "2026-11-10",
+    "acceptedBaseCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+    "semanticBaseCommit": "af2f158ce96edc2bcf87df9d343529d93e0b961f",
+    "report": "time-duration-clock-claim-review-2026-11-10.json",
+    "change": "Replace C-8.10 measurement holder UNzo with N55 at the same IN 3–8 stage window; calendar holder unchanged; original 31 links/28 holders and coverage judgments retained."
+  }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "d864b3dbeb265fa943a754719d236f9f40b6e112c67ffcb06cb4c3a705cd06e8",
+  "topicFileSha256": "6003db1a62aec047e6a97e0029bd301db2c618ba95b4bde29b3b6d5fd40c8303",
   "recordCount": 1046,
   "coverage": {
     "topicCount": 1858,
@@ -2903,7 +2903,7 @@
     {
       "topicId": "mt__N55B7u7HD",
       "pedagogy": {
-        "summary": "Children begin to MEASURE elapsed time with tools — sand timers, stopwatches, counting seconds — to time real activities, and to record the result in simple units ('about 2 minutes'). The step is procedural and embodied: start the tool as the activity starts, stop it as it ends, read off the duration. The conceptual underpinning (from the prerequisite) is that duration is how long something lasts, independent of speed; children also begin to meet 1 minute = 60 seconds.",
+        "summary": "Children begin to MEASURE elapsed time with tools — sand timers, stopwatches, counting seconds — to time real activities, and to record the result in simple units ('about 2 minutes'). The step is procedural and embodied: start the tool as the activity starts, stop it as it ends, read off the duration. Supporting comparative language expresses that duration is how long something lasts, independent of speed; children also begin to meet 1 minute = 60 seconds.",
         "bestPractices": [
           "Time real, meaningful activities (how long to write your name, to tidy up) with a visible tool",
           "Model starting and stopping the tool exactly AT the start and end of the event",
@@ -2925,7 +2925,7 @@
         ]
       },
       "learn": {
-        "summary": "Young children (around ages 5-6) learn to MEASURE elapsed time using tools — sand timers, stopwatches, counting seconds — to time real activities and record results in simple units ('about 2 minutes'). The core skill is procedural and embodied: start the tool exactly as the event begins, stop it exactly as it ends, then read off the duration. The conceptual underpinnings are that duration is how long something lasts from start to finish, measured with a tool rather than judged by how fast, effortful or busy the activity felt, and that 1 minute = 60 seconds, which is a genuine conceptual step because 60 is not a base-ten grouping.",
+        "summary": "Learners MEASURE elapsed time using tools — sand timers, stopwatches, counting seconds — to time real activities and record results in simple units ('about 2 minutes'). The core skill is procedural and embodied: start the tool exactly as the event begins, stop it exactly as it ends, then read off the duration. The conceptual underpinnings are that duration is how long something lasts from start to finish, measured with a tool rather than judged by how fast, effortful or busy the activity felt, and that 1 minute = 60 seconds, which is a genuine conceptual step because 60 is not a base-ten grouping.",
         "activities": [
           {
             "title": "Time a real activity with start and stop aligned to the event",
@@ -2941,7 +2941,7 @@
             ],
             "learnerActions": [
               "Pick a short, real activity to time (e.g. writing your name five times, tidying a small tray, building a block tower).",
-              "Choose the right tool: for an open-ended duration use a stopwatch or a seconds count/large seconds display; a fixed one-minute sand timer is best for checking whether something takes about a minute or comparing against its known span.",
+              "Use the suitable tool supplied by the adult: an open-ended event can use a stopwatch or seconds display; a fixed one-minute sand timer can check an activity against its known span. Independent instrument selection is not assessed here.",
               "Hold the visible timing tool ready.",
               "Count '3-2-1 start' and start the tool at the exact moment the activity begins.",
               "Stop the tool the instant the activity finishes (on the last action).",
@@ -2984,6 +2984,20 @@
               "If using a stopwatch, note or zero the start first, so the duration is the span covered, not whichever number happens to show at the end."
             ],
             "intendedInsight": "Duration is the amount of time that elapsed between start and stop — represented as a length that grows from the start — not simply the number currently displayed."
+          },
+          {
+            "title": "Estimate, measure and record a short activity",
+            "learnerActions": [
+              "Choose whether brushing teeth is closer to 2 seconds,2 minutes or 2 hours.",
+              "Given a suitable timer, use an appropriate unit, start and stop with the event, then record its duration.",
+              "Compare estimate with measurement without claiming the estimate must be exact."
+            ],
+            "intendedInsight": "Estimating and actually measuring a duration are different performances.",
+            "feedback": [
+              "Check alignment of timer start/stop with the event and require a recorded unit."
+            ],
+            "rationale": "Preserves the estimation-and-measurement performance removed from the clock-reading bundle; this is an authored activity proposal.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
@@ -2992,7 +3006,8 @@
           "Record informally ('about 2 minutes', 'a bit more than a minute') rather than demanding precision at this age.",
           "A recognition/ordering quiz (reading a stopwatch value, ordering activities by length) can check whether a child reads a duration, but does not elicit the act of measuring — starting and stopping in step with an event — which is the main objective.",
           "A static labelled timer image can name the parts of a tool but does not let the child time an event or watch a duration accrue; use it as a scaffold, not as the performance itself.",
-          "Sand timers and stopwatches are concrete tools; a screen bar/ring display is one optional representation of the same idea, not a replacement for timing a real activity."
+          "Sand timers and stopwatches are concrete tools; a screen bar/ring display is one optional representation of the same idea, not a replacement for timing a real activity.",
+          "The adult supplies a suitable timing instrument. Choosing an instrument independently is outside this assessment boundary."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions.",
@@ -3001,7 +3016,8 @@
           "Tool roles were clarified: a fixed one-minute sand timer is suited to checking/comparing a known span, while an open-ended activity duration is better captured with a stopwatch or seconds count — the original allowed both tools.",
           "The elapsed-bar and 60-second ring were retained as OPTIONAL illustrative feedback, not as a mandatory mechanism.",
           "Error-pattern reteach links in the source assessment metadata are left unchanged and are not reproduced as learner-facing content.",
-          "Research percentages come from Years 3-4 studies; the age-matched direction (elapsed-duration measuring is the hard strand) is retained but the figures are not specific to ages 5-6."
+          "Research percentages come from Years 3-4 studies; the age-matched direction (elapsed-duration measuring is the hard strand) is retained but the figures are not specific to ages 5-6.",
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
         ],
         "schemaVersion": 2
       },
@@ -3045,7 +3061,7 @@
           "full": "Independently starts and stops the tool with the event, reports the duration in sensible units, and shows a beginning grasp that 1 minute = 60 seconds, transferring to a new activity.",
           "partial": "Times an activity with help and reports a rough duration, but the start/stop drifts, or cannot yet link a minute to 60 seconds."
         },
-        "diagnosticPrompt": "Set a real timing task and WATCH (don't ask the child to explain the procedure): 'Here is a one-minute sand timer and a stopwatch. Time how long it takes you to write your name five times — start the timer as you begin and stop it as you finish, then tell me about how long it took. Then turn the one-minute sand timer over and count how many seconds go by until the sand runs out.'",
+        "diagnosticPrompt": "Given a suitable timer, can {{name}} estimate the duration of a short everyday activity in an appropriate unit, start and stop the timer with the activity, and read and record the measured duration?",
         "whatMakesItDiscriminate": "Watching the child START and STOP reveals whether they align the tool with the event rather than reporting whatever number shows; the sand-timer count reveals whether 'a minute' is connected to 60 seconds. Neither can be faked by reciting a fact."
       },
       "sources": [
@@ -24697,132 +24713,75 @@
     {
       "topicId": "mt_4emC463IyW",
       "pedagogy": {
-        "summary": "Children calculate how long an event lasts from its start and end times. The reliable method is counting ON from the start to the end on a number line — jumping to the next o'clock (a number bond to 60), then whole hours, then the remaining minutes — NOT column subtraction, which fails when the hour is crossed because time is base-60, not base-10. Comparing two durations then follows from calculating each.",
+        "summary": "A duration is the interval between two known clock instants. Count on or regroup correctly at 60 minutes; the answer is a length of time, not another clock reading.",
         "bestPractices": [
-          "Count on from start to end via a number line: bridge to the next o'clock, add whole hours, add the remaining minutes",
-          "Make explicit WHY column subtraction fails when hours are crossed (60, not 100)",
-          "Use number bonds to 60 for the 'to the next hour' jump",
-          "Anchor in real start/end times (lessons, TV programmes)",
-          "Calculate both durations before comparing which is longer"
+          "Identify the given information and the quantity being asked for.",
+          "Use a representation that exposes the relevant relationship; accept mathematically valid alternatives.",
+          "Check with a contrasting case and transfer to a new everyday context."
         ],
         "keyRepresentations": [
-          "Blank number line with jumps (to next o'clock, whole hours, remaining minutes)",
-          "Analogue / digital clocks showing start and end",
-          "Number bond to 60 for the bridging jump"
+          "Labelled time line",
+          "Ordinary clock display"
         ],
         "commonMisconceptions": [
-          "Uses column subtraction of end minus start, which breaks across the hour boundary",
-          "Thinks a later end time automatically means a longer duration",
-          "Works in 100s not 60s (treats the minutes as base-10)",
-          "Counts in the wrong direction or forgets the bridging jump to the o'clock"
+          "Treats clock instants as decimal numbers. Accept correct base 60 regrouping, including valid subtraction; do not reject all column methods.",
+          "Returns a clock reading instead of a duration, or borrows as though an hour contains 100 minutes."
         ]
       },
       "learn": {
-        "summary": "Children calculate how long an event lasts from its start and end times by counting ON from start to end on a number line: first bridge to the next o'clock (a number bond to 60), then add whole hours, then add the remaining minutes. Make explicit WHY column subtraction breaks when the end minutes are smaller than the start minutes, so you have to borrow across the hour (e.g. 4:10 − 2:50). Time is base-60 (60 minutes in an hour), not base-10. Comparing two durations follows from calculating each; a later end time does not by itself mean a longer duration.",
+        "schemaVersion": 2,
+        "summary": "A duration is the interval between two known clock instants. Count on or regroup correctly at 60 minutes; the answer is a length of time, not another clock reading.",
         "activities": [
           {
-            "title": "Build the jumps on a number line",
-            "feedback": [
-              "General bridging slip (applies to any start time): if the learner makes the jump to the next o'clock too large — e.g. treating 10:15 → 11:00 as +85, or jumping 2:50 → 3:00 by more than +10 — remind them the minutes only run to 60. For 2:50 the jump to 3:00 is +10 (50 + 10 = 60); for 10:15 the jump to 11:00 is +45 (15 + 45 = 60).",
-              "If they skip the o'clock jump and land on the wrong minute, rebuild the three-part jump for the activity's own example: next o'clock first (2:50 → 3:00), then whole hours (3:00 → 4:00), then leftover minutes (4:00 → 4:10).",
-              "Column slip (a misconception, not a valid method): if, on the activity's 4:10 − 2:50 line-up or any hour-crossing subtraction, they 'borrow' as in base-10 (producing results like 0:85 for 11:00 − 10:15), show that base-10 borrowing assumes 100 minutes in an hour. An hour is 60 minutes, so counting on across the o'clock is the safe method."
-            ],
-            "rationale": "Seeing the jumps assemble the total, and seeing how column subtraction misleads at the minutes column, makes the base-60 structure visible as the child acts. Where a build-your-own number line is available, dragging each jump from the start time with an auto-shown bond to 60 and a running total, plus a 'try column subtraction' option that lines up end minus start, may make the mechanism concrete; a static annotated number line can show one worked example but cannot let the child build the jumps.",
-            "sourceClaims": [
-              "White Rose Y3 Time (Steps 8-9) documents that children may think an event ending at a later time must have a longer duration, and may attempt to calculate duration using column subtraction (end minus start), which leads to problems when hours are crossed; the recommended model is a number line with jumps and number bonds to the next hour.",
-              "Children apply discrete whole-number, base-10 reasoning to time and cannot easily coordinate its base-60 groupings, which explains column-subtraction errors and base-10 slips when crossing the hour boundary."
-            ],
+            "title": "Identify, represent and check the required quantity",
             "learnerActions": [
-              "Start at the first time (e.g. 2:50) on a blank number line.",
-              "Make the first jump to the next o'clock (2:50 → 3:00, a +10 jump) and say the number bond to 60 that produced it (50 + 10 = 60).",
-              "Make whole-hour hops next (3:00 → 4:00, +1 hour).",
-              "Add the remaining minutes (4:00 → 4:10, +10).",
-              "Keep a running total of the jumps to assemble the duration (1 hour 20 minutes).",
-              "Compare this count-on method with column subtraction: line up 4:10 − 2:50 and notice the minutes column needs borrowing, and that borrowing as if there were 100 minutes in an hour goes wrong, because the minutes are base-60, not base-10."
+              "Mark known start 2:50 and finish 4:10 on a time line.",
+              "Find the intervening interval:10 min + 60 min + 10 min = 80 min.",
+              "Check the interval against both endpoints.",
+              "Find the duration for a new pair of known times crossing an hour."
             ],
-            "intendedInsight": "Counting on from start to end — bridging the o'clock, adding whole hours, then the remaining minutes — gives the duration reliably, and column subtraction misleads across the hour unless you remember an hour holds 60 minutes, not 100."
-          },
-          {
-            "title": "Calculate then compare two durations",
+            "intendedInsight": "A duration is the interval between two known clock instants. Count on or regroup correctly at 60 minutes; the answer is a length of time, not another clock reading.",
             "feedback": [
-              "If the learner picks the activity that ends later without calculating, have them count on for BOTH events first, then compare the two lengths.",
-              "Use a short activity that ends late against a long one that ends early (e.g. the 8:55–9:00 versus 8:00–8:50 pair) to decouple end-time from duration.",
-              "On the crossing-the-hour item (2:50 → 4:10), a base-10 or nonsense answer signals column subtraction — return to counting on and the o'clock bridge."
+              "Returns a clock reading instead of a duration, or borrows as though an hour contains 100 minutes.",
+              "Ask for an explanation and a check, rather than treating one correct answer as mastery."
             ],
-            "rationale": "Anchoring problems in real start/end times (lessons, films, TV programmes) and requiring both durations to be calculated before comparing targets the 'later end = longer' misconception directly. Crossing-the-hour and decoupled end-time items are natural discriminators. These can be posed as questions, fill-in-the-blank sums, or spoken word problems; a character can pose start/end problems but cannot observe the counting-on method, so pair posed problems with the learner showing their jumps.",
-            "sourceClaims": [
-              "Year 3 pupils should 'compare durations of events [for example, to calculate the time taken by particular events or tasks]'.",
-              "White Rose Y3 Time (Steps 8-9) documents that children may think an event ending at a later time must have a longer duration, and may attempt to calculate duration using column subtraction (end minus start), which leads to problems when hours are crossed; the recommended model is a number line with jumps and number bonds to the next hour."
-            ],
-            "learnerActions": [
-              "Read a problem such as 'A lesson starts at 10:15 and ends at 11:00 — how long is it?' and count on to find 45 minutes.",
-              "Work a crossing-the-hour problem: 'A film starts at 2:50 and ends at 4:10 — how long is it?' bridging to 3:00, adding 1 hour, then +10 to reach 1 hour 20 minutes.",
-              "Compare two events, e.g. an activity from 2:20 to 3:00 versus one from 6:15 to 6:50, by calculating each duration (40 minutes vs 35 minutes) and only then deciding which is longer.",
-              "Test a tricky comparison: a 5-minute activity ending at 9:00 (so 8:55–9:00) versus one running 8:00 to 8:50 (50 minutes) — which is longer, and which ends later?"
-            ],
-            "intendedInsight": "To compare durations you must calculate each one and compare the lengths; the event that ends later is not automatically the longer one."
+            "rationale": "Claim-aligned proposed activity: contrasting the target quantity with a near miss makes the operation visible. Retained citations provide historical context; this activity has not been experimentally validated.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
-          "Use number bonds to 60 (not 100) for the jump to the next o'clock; the minutes column does not carry in base-10.",
-          "Analogue/digital clocks showing start and end, and a blank number line with labelled jumps, support the method; a static worked number line can only annotate one example and cannot let the child build the jumps.",
-          "Recognition or multiple-choice items can assess duration and comparison but do not by themselves elicit the independent construction of the three-part jump — have the learner show or build the jumps at least once.",
-          "Scaffold the bond-to-60 jump and rehearse the three-part method rather than reteaching clock reading from scratch when the slip is in bridging, not in reading the clock.",
-          "Comparing durations depends on first calculating each duration; do not judge 'longer' by the later end time.",
-          "Keep every feedback example consistent with its activity's stated setup, or state explicitly that a slip is general to any start/end time."
+          "Do not infer mastery of another time operation from success here.",
+          "A school-year sequence or larger number is not a separate mastery level."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research without fresh source verification; sources were not re-fetched and the activities are research-informed proposals, not validated interventions.",
-          "Independent re-audit confirmed all worked examples are internally consistent and all feedback is anchored to its activity's figures or explicitly flagged as a general slip.",
-          "The legacy row claimed '3D adds nothing' for this task; that comparative media judgement is not established by the cited sources and has been dropped — duration work is not spatial, but no universal necessity/efficacy claim about any medium is asserted here.",
-          "Worked examples checked: 10:15→11:00 = 45 min (15+45=60); 2:50→4:10 = 10 min to 3:00, +1 hour to 4:00, +10 to 4:10 = 1 hour 20 min; 2:20→3:00 = 40 min and 6:15→6:50 = 35 min; 8:55→9:00 = 5 min versus 8:00→8:50 = 50 min. All consistent as stated.",
-          "The 0:85-style column result (from 11:00 − 10:15) is retained only as a learner misconception to be corrected, never as a valid method or answer option. Note that for 4:10 − 2:50 correct base-60 borrowing can reach 1:20, so feedback stresses the base-10 vs base-60 borrowing distinction rather than claiming column subtraction always yields a nonsense answer."
-        ],
-        "schemaVersion": 2
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
+        ]
       },
       "assess": {
         "method": "performance_task",
         "poeTask": null,
-        "probeDeeper": [
-          "'Show me the jumps you made — where did you land first?' (o'clock bridge)",
-          "'Why doesn't 11:00 take away 10:15 give the answer if you do it in columns?' (base-60)",
-          "'This activity ends later — but is it really longer? How long is each one?'",
-          "'A 5-minute activity ends at 9:00; another runs 8:00 to 8:50 — which is longer? Which ends later?' (decouples end-time from duration)"
-        ],
-        "correctAnswer": "Counts on 10:15 to 11:00 = 45 minutes; for 2:50 to 4:10 bridges to 3:00 (+10), +1 hour to 4:00, +10 = 1 hour 20 minutes; compares the two by their calculated lengths (40 minutes vs 35 minutes), not by which ended later.",
+        "diagnosticPrompt": "If {{name}} starts cooking at 4:15 p.m. and finishes at 5:00 p.m., can they work out how long it took and explain how they know?",
+        "correctAnswer": "4:15→5:00 lasts 45 minutes; 2:50→4:10 lasts 80 minutes.",
+        "whatMakesItDiscriminate": "Requires identifying the target quantity and explaining a contrasting case, rather than copying a label or repeating a memorised answer.",
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Uses column subtraction (end minus start), which breaks when hours are crossed",
-            "nextMove": "Model counting on via a number line, bridging to the next o'clock; show explicitly that the minutes are base-60, so borrowing 10 doesn't work.",
+            "pattern": "Treats clock instants as decimal numbers. Accept correct base 60 regrouping, including valid subtraction; do not reject all column methods.",
+            "revealedBy": "Returns a clock reading instead of a duration, or borrows as though an hour contains 100 minutes.",
+            "nextMove": "Restate the given values and the unknown quantity, model the relevant relationship, then retry a new case without supplying the answer.",
             "distractor": null,
-            "revealedBy": "Writes 4:10 minus 2:50 in columns and borrows base-10, or 11:00 minus 10:15 = 0:85",
-            "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "Thinks a later end time automatically means a longer duration",
-            "nextMove": "Calculate BOTH durations first (count on for each), then compare the lengths; show a short activity that ends late versus a long one that ends early.",
-            "distractor": null,
-            "revealedBy": "On the comparison item picks the activity that ends later without calculating each duration",
-            "reteachPrerequisiteId": "mt_UNzojLkNdm"
-          },
-          {
-            "kind": "performance",
-            "pattern": "Works in 100s not 60s, or forgets the bridging jump — miscounts the step to the next o'clock",
-            "nextMove": "Scaffold the bond to 60 for the jump to the next o'clock (15 + 45 = 60); rehearse the three-part jump, don't reteach clock reading from scratch.",
-            "distractor": null,
-            "revealedBy": "Bridges 10:15 to the next hour as +85 (base-10), or skips the o'clock jump and lands wrong",
             "reteachPrerequisiteId": null
           }
         ],
+        "probeDeeper": [
+          "What information is given, and what are you trying to find?",
+          "Find the duration for a new pair of known times crossing an hour."
+        ],
         "responseLevels": {
-          "gap": "Attempts column subtraction; judges 'longer' by the later end; can't cross the hour.",
-          "full": "Calculates durations by counting on (bridging the o'clock, base-60), crosses the hour reliably, and compares two events by their calculated durations, not their end times.",
-          "partial": "Counts on correctly within an hour, but slips when the hour is crossed or reverts to column subtraction, or compares by end time."
-        },
-        "diagnosticPrompt": "Set duration problems and WATCH the method: (1) 'A lesson starts at 10:15 and ends at 11:00 — how long is it? Show me how you work it out.' (2) A problem that crosses the hour: 'A film starts at 2:50 and ends at 4:10 — how long is it?' (3) 'Which lasted longer — an activity from 2:20 to 3:00, or one from 6:15 to 6:50?' Watch whether they count on (bridging the o'clock) or attempt column subtraction, and whether the comparison rests on calculated durations or on the later end time.",
-        "whatMakesItDiscriminate": "The hour-crossing item (2:50 to 4:10) is the discriminator: a child using column subtraction produces a nonsense or base-10 answer, a child counting on bridges the o'clock correctly. The comparison item catches 'later end = longer'."
+          "gap": "Returns a clock reading instead of a duration, or borrows as though an hour contains 100 minutes.",
+          "partial": "Succeeds on a familiar case but needs support to explain or transfer.",
+          "full": "4:15→5:00 lasts 45 minutes; 2:50→4:10 lasts 80 minutes. Explains and checks the relationship in an unfamiliar case."
+        }
       },
       "sources": [
         {
@@ -32529,7 +32488,7 @@
     {
       "topicId": "mt_6XCURuNwPw",
       "pedagogy": {
-        "summary": "Children compare how long events last and put several in order by duration, and sequence intervals on a timeline. Because at this age they can't yet calculate elapsed time, comparison rests on measured or timed evidence (stopwatch, sand-timers) and on a common start. The deep hurdle carried from earlier is judging duration by non-time cues — a faster or further event, or the one that FINISHED later, is wrongly thought to have taken longer.",
+        "summary": "Compare and order event durations using supplied values or measured evidence. Comparison does not require deriving durations from clock endpoints or operating a timer when values are provided. Separate duration from finish order, speed, distance or how exciting an event felt.",
         "bestPractices": [
           "Compare timed events with a stopwatch / sand-timers so duration is measured, not guessed",
           "Use a common start so 'who finished first' fairly shows quicker (a shorter duration)",
@@ -32611,6 +32570,20 @@
               "Place everyday intervals in order on a timeline of the day to sequence intervals of time."
             ],
             "intendedInsight": "Comparing and ordering durations can be read directly from measured values, and intervals of a day can be sequenced in order."
+          },
+          {
+            "title": "Order supplied durations after expressing units consistently",
+            "learnerActions": [
+              "Order 35 minutes,40 minutes and 25 minutes; find the 5 minute difference between 40 and 35.",
+              "Compare 1 minute 20 seconds with 75 seconds by expressing both in seconds.",
+              "Explain why finishing later alone is insufficient when starts differ."
+            ],
+            "intendedInsight": "Compare duration lengths rather than clock labels; supplied durations need not be independently measured first.",
+            "feedback": [
+              "Use common units and separate finish order from interval length."
+            ],
+            "rationale": "Preserves quantitative comparison evidence from the former bundles without requiring clock-reading or timer-operation mastery.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
@@ -32626,7 +32599,8 @@
           "The original implied the 2D interactive is uniquely able to break the judge-by-speed/finish-position confusion. Measured timing and duration bars support this well, but comparative necessity over other measured-evidence approaches (e.g. real sand-timers) is not established by the cited sources; phrasing has been softened.",
           "The Piaget time-speed-distance claim is marked verified:false in the source row; it is retained in sourceClaims as a well-known developmental observation but should not be treated as freshly verified.",
           "The original's fourth misconception (a bigger end clock-number read as a longer duration) was not explicitly handled in the earlier candidate's learner text; it has been added to the different-start activity's actions and feedback, since the last-to-finish event also shows the larger stop reading.",
-          "The summary previously framed a common start as a general requirement for duration comparison; this was corrected to scope it to finishing-order reasoning, matching the different-start activity where events are compared by measured running length without a shared start."
+          "The summary previously framed a common start as a general requirement for duration comparison; this was corrected to scope it to finishing-order reasoning, matching the different-start activity where events are compared by measured running length without a shared start.",
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
         ],
         "schemaVersion": 2
       },
@@ -32637,9 +32611,9 @@
           "'You said the race took longest — was that because it FELT long, or because the timer showed the most? Let's check the timers.'",
           "'We both started at the same time. If I stopped first, did I take more time or less?'",
           "'This timer started late but stopped last — did it actually RUN for the most time? How can we tell?'",
-          "'The red car went further but the green one was still going after red stopped — which ran for more time?' (speed/distance counterexample)"
+          "How can you compare1minute20seconds with75seconds, and how much longer is40minutes than35minutes?"
         ],
-        "correctAnswer": "Orders the three by their measured durations; on the common-start pair names the one that ran longer regardless of speed or distance; on the different-start case reasons that stopping last doesn't mean running longest, considering how long each actually ran.",
+        "correctAnswer": "Orders the three by their measured durations; on the common-start pair names the one that ran longer regardless of speed or distance; on the different-start case reasons that stopping last doesn't mean running longest, considering how long each actually ran. For supplied values,40minutes is5minutes longer than35;1minute20seconds=80seconds is5seconds longer than75seconds.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -32671,7 +32645,7 @@
           "full": "Orders three durations and compares two by measured elapsed time, separating duration from speed, distance and finishing position, and transferring to a new comparison.",
           "partial": "Orders and compares correctly for same-start, measured cases, but is caught when starts differ ('stopped last = longest') or by a speed/distance confound."
         },
-        "diagnosticPrompt": "Set comparison and ordering tasks and WATCH how the child decides: (1) Time three classroom activities (or run three sand-timers) from a shared start: 'Put these in order from the one that took the shortest time to the longest, and tell me how you decided.' (2) Two events with a COMMON start where the slower one covers less ground: 'Which took longer?' (3) A different-start case: one timer started late but stopped last — 'Which one ran for more time?' Watch whether they order by measured length or by speed, distance or finishing position.",
+        "diagnosticPrompt": "If {{name}} is given durations of 35 minutes, 40 minutes and 25 minutes, can they order them and say how much longer 40 minutes is than 35? Can they compare 1 minute 20 seconds with 75 seconds and explain why finishing later alone does not show a longer duration?",
         "whatMakesItDiscriminate": "The different-start case is the discriminator: a child who equates 'stopped last = took longest' gets it wrong, a child who tracks actual elapsed time gets it right. The common-start pair with a slower/shorter event catches judging duration by speed or distance."
       },
       "sources": [
@@ -73561,155 +73535,74 @@
     {
       "topicId": "mt_EXlmTURK_o",
       "pedagogy": {
-        "summary": "Children learn that there are 60 seconds in a minute, the names and lengths of the twelve months, and that a leap year has 366 days occurring every four years. The second/month facts are usually recalled well; the conceptual depth is the irregular month-length pattern, the non-decimal 60-grouping for seconds and minutes, and — hardest — WHY a leap year exists: the Earth takes about 365¼ days to orbit the Sun, so a day is added every four years. Most children do not connect time units to the Earth's motion at all.",
+        "summary": "Connect seconds/minute and calendar-length facts with timers and calendars. A leap year has 366 days and usually follows a four-year pattern, with calendar exceptions; use a calendar for a particular year.",
         "bestPractices": [
-          "Anchor the months and their lengths on a real calendar with a mnemonic (knuckles, or '30 days hath September'), revisiting the irregular 31/30/28 pattern",
-          "Count seconds into minute-groups on a timer so the 60-grouping (not 100) is felt",
-          "Explain the leap year through the Earth's orbit — the extra ~quarter-day each year accumulating into one whole day every four years — rather than as an arbitrary rule",
-          "Use the four-year cycle concretely (which recent years were leap years? when is the next?)"
+          "Use calendar months to check differing month lengths.",
+          "Group 60 seconds as one minute.",
+          "Distinguish a regular four-year pattern from an exception-free rule; a supplied calendar is sufficient here."
         ],
         "keyRepresentations": [
-          "A wall calendar / year-strip divided into 12 months",
-          "The knuckle mnemonic for month lengths",
-          "A stopwatch or number line marked in seconds",
-          "A four-year calendar cycle showing February gain a 29th day",
-          "An Earth-orbit model linking the year to one revolution"
+          "Calendar",
+          "Second-hand clock or timer"
         ],
         "commonMisconceptions": [
-          "Assumes all months are the same length (e.g. 30 days each)",
-          "Treats the leap-year rule as arbitrary, unconnected to the Earth's orbit",
-          "Over-applies base-10 to seconds and minutes (90 seconds = 0.9 of a minute; 1 minute 30 seconds = 130 seconds)",
-          "Thinks February always has 28 days"
+          "Assumes all months have the same number of days.",
+          "Treats one minute as 100 seconds.",
+          "Treats the four-year pattern as having no exceptions."
         ]
       },
       "learn": {
-        "summary": "For 7-8 year olds learning time-unit and calendar facts: 60 seconds in a minute, the names and irregular lengths of the twelve months, and that a leap year has 366 days and usually comes every four years. Factual recall of seconds/minutes and month names is usually a strength; the conceptual depth lies in (1) the uneven 31/30/28 month-length pattern (February has 29 days in a leap year), (2) the non-decimal grouping of 60 for seconds and minutes, and (3) WHY leap years exist - the Earth takes about 365 and a quarter days to orbit the Sun, so the leftover quarter-days add up to about one extra day every four years. (Because the true leftover is slightly less than a quarter, a few century years such as 1900 and 2100 are not leap years; this detail is beyond the core objective.) Research reports most children do not connect time units to the Earth's motion at all.",
+        "schemaVersion": 2,
+        "summary": "Connect seconds/minute and calendar-length facts with timers and calendars. A leap year has 366 days and usually follows a four-year pattern, with calendar exceptions; use a calendar for a particular year.",
         "activities": [
           {
-            "title": "Advance a four-year calendar cycle and watch February change",
-            "feedback": [
-              "If a learner expects every February to have 29 days, replay the cycle slowly and have them count: three turns at 28, only the fourth at 29.",
-              "If a learner says all months are the same length, have them read off the popped lengths and group them into 31-day, 30-day, and 'other' (February) piles.",
-              "If a learner can state '366 every four years' but not why, pair this with the orbit activity so the extra day has a cause, not just a count."
-            ],
-            "rationale": "Showing the extra day appear only on the fourth cycle makes the four-year period concrete rather than a recited rule; revealing each month's length makes the irregular pattern visible. A live dial lets the learner advance year-by-year and watch February change - an optional interaction that makes the cycle observable. This is a proposed design, not a measured intervention.",
-            "sourceClaims": [],
+            "title": "Check time-unit and calendar facts",
             "learnerActions": [
-              "Step through four years one at a time on a calendar dial or a strip showing four Februaries in a row.",
-              "On years one, two and three, note that February has 28 days; on the fourth year watch a 29th day appear and the year-counter go from 365 to 366.",
-              "Say aloud what changes and what stays the same across the four years, then predict which upcoming calendar year will be the next leap year.",
-              "Tap or reveal each month in turn to pop up its length, and sort or describe the uneven 31/30/28 pattern as a shape, not just a list."
+              "State how many seconds make one minute and connect this to a timer.",
+              "Use a calendar to check September and February lengths.",
+              "Compare a 365-day year with a 366-day year; identify February 29."
             ],
-            "intendedInsight": "'Every four years' is not an arbitrary rule to memorise - the extra day actually appears only on the fourth turn, and February is the month that gains it, while month lengths follow a lumpy repeating pattern."
-          },
-          {
-            "title": "Build the leap day from the Earth's orbit",
+            "intendedInsight": "Time units and calendar periods have known relationships and irregularities; a calendar establishes a particular year’s length.",
             "feedback": [
-              "If a learner says the extra day is added 'to make the number even' or 'just because', show the four quarter-days accumulating so the day has a physical source.",
-              "If a learner thinks the quarter-day disappears each year, point to the set-aside tokens: the leftover is saved, not lost, until four of them make a whole day."
+              "Ask which fact or calendar entry supports the answer, rather than demanding a century-divisibility calculation."
             ],
-            "rationale": "Research reports that about 78% of Years 3-4 students did not connect time with the Earth's revolution around the Sun, even though a calendar year is based on one revolution of the Earth around the Sun (while a day comes from one spin of the Earth); building the quarter-day accumulation is intended to address this documented gap. The stated topic is the fact and cycle rather than full orbital mechanics, so keep the model simple and focused on the leftover-day accumulation. Proposed design, not a validated intervention.",
-            "sourceClaims": [
-              "In a Years 3-4 interview study, 78% of students did not connect the notion of time with the Earth rotating on its axis or revolving around the Sun — even though calendars measure days from one revolution — while basic facts such as the number of seconds in a minute and the months of the year were largely a strength (>90% correct)."
-            ],
-            "learnerActions": [
-              "Using an orbit model, card tokens, or a tally, give each year its length as 'about 365 and a quarter days' and set aside the leftover quarter each year.",
-              "After four years, snap the four leftover quarter-days together into one whole extra day.",
-              "Explain in your own words where the extra day came from and why we only add it roughly every four years, then name the day we add it to (29 February)."
-            ],
-            "intendedInsight": "The leap day exists because the Earth's orbit takes about 365 and a quarter days; the leftover quarter-day each year builds up to one whole day about every four years, which we add to February."
-          },
-          {
-            "title": "Group seconds into minutes at exactly 60",
-            "feedback": [
-              "If a learner writes '1 minute 30 seconds = 130 seconds', have them count the first minute as 60 seconds on the timer, then add 30 to get 90.",
-              "If a learner says 90 seconds is 0.9 of a minute, show that a full minute closes only at 60, so 90 seconds is one minute (60) plus 30 more - i.e. one and a half minutes, not 0.9.",
-              "Reinforce that the minute 'closes' at 60 before any leftover seconds are counted into the next minute."
-            ],
-            "rationale": "Research reports children apply discrete whole-number and base-10 reasoning to time and struggle to coordinate the non-standard grouping of 60, so the difficulty lies in converting rather than recalling the fact. Counting seconds into minute-groups on a stopwatch or number line is intended to make the 60-grouping felt before it is applied to conversions. Proposed design, not a validated intervention.",
-            "sourceClaims": [
-              "Children apply discrete whole-number reasoning to time and struggle to coordinate the non-standard grouping of 60, so converting between seconds and minutes (rather than recalling the fact) is where difficulty lies."
-            ],
-            "learnerActions": [
-              "Count seconds on a stopwatch or a number line marked in seconds, and mark where a full group of 60 closes into one minute.",
-              "Work out how many seconds are in one and a half minutes, saying why it is 90 (60 + 30) and not 150 - rather than applying base-10 place value (treating 1.5 minutes as 1.5 x 100 = 150 seconds).",
-              "Convert a two-way example such as '1 minute 30 seconds = [ ] seconds' and '90 seconds = [ ] minute [ ] seconds', regrouping at 60 each time."
-            ],
-            "intendedInsight": "Seconds and minutes group in 60s, not 100s, so conversions require regrouping at 60 rather than applying base-10 place value."
-          },
-          {
-            "title": "Recall and sort the facts",
-            "feedback": [
-              "If month lengths are muddled, anchor them on a real wall calendar and revisit the irregular 31/30/28 pattern with the mnemonic.",
-              "If a learner thinks February always has 28 days, connect back to the four-year cycle where it gains a 29th.",
-              "Fact recall alone does not show the learner understands why a leap year happens; follow correct recall with a 'why' question."
-            ],
-            "rationale": "Naming, sorting and stating facts consolidate the statutory recall content, which research reports children generally find to be a strength (>90% correct). A sort or fact item can check classification and recall but does not by itself elicit the explanation of cause or the regrouping skill, so it is a foundation, not the whole objective. Proposed design, not a validated intervention.",
-            "sourceClaims": [
-              "Year 3 pupils should 'know the number of seconds in a minute and the number of days in each month, year and leap year' (statutory Measurement content).",
-              "In a Years 3-4 interview study, 78% of students did not connect the notion of time with the Earth rotating on its axis or revolving around the Sun — even though calendars measure days from one revolution — while basic facts such as the number of seconds in a minute and the months of the year were largely a strength (>90% correct)."
-            ],
-            "learnerActions": [
-              "Name the months in order and state how many days each has.",
-              "Sort the months into 31-day, 30-day, and 'other' (February) groups.",
-              "Answer fact questions: '1 minute = [ ] seconds', 'how often is a leap year?', 'how many days in a leap year?'",
-              "Use a mnemonic such as knuckles or '30 days hath September' to recall which months are shorter."
-            ],
-            "intendedInsight": "The core recall facts - 60 seconds, month names and lengths, and that a leap year has 366 days and usually comes every four years - need to be fluent so attention can go to the harder conceptual links."
+            "rationale": "Keeps the existing fact collection coherent without making orbital explanation or century arithmetic an additional assessed claim. Proposed activity; inherited citations are not newly verified.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
-          "Fact-recall items (naming months, stating '60 seconds', multiple-choice on leap-year frequency) check recall and classification but do not by themselves elicit the causal explanation of leap years or the regrouping skill for seconds/minutes; always pair recall with a 'why' or a conversion task.",
-          "A static calendar or year-strip with tap-to-reveal month lengths can name the facts and show the irregular pattern, but cannot run the four-year cycle or demonstrate the 60-grouping dynamically; use it as a naming scaffold, not as the full objective.",
-          "A character explaining months and leap years can introduce the facts; the four-year cycle and the 60-grouping may be easier to follow through a worked or observed sequence, though the cited sources do not establish this comparison. Treat the character as an introduction scaffold.",
-          "Keep the orbit model focused on the quarter-day accumulation; the objective is the leap-year fact and cycle, not full orbital mechanics.",
-          "Mnemonics (knuckles, '30 days hath September') aid recall of month lengths but do not teach why leap years occur; treat them as memory aids only."
+          "Orbital explanation may provide optional background, but is not required mastery evidence for this fact collection.",
+          "Do not teach an exception-free every-four-years rule. Century-rule calculation is outside this claim."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research without fresh source verification; sources were not re-fetched. All activities are research-informed proposals, not validated interventions, and no empirical effectiveness is claimed.",
-          "The leap-year rule is an approximation: a year is about 365.2422 days and the full civil rule skips some century leap years (e.g. 1900 is not a leap year, 2000 is). The '365 and a quarter days, one extra day every four years' framing matches the source material and is age-appropriate for 7-8 year olds, but is a simplification; flagged for awareness, not corrected in the learner-facing activities.",
-          "Self-audit of conversions: 1 minute 30 seconds = 90 seconds (60 + 30); 2 and a half minutes = 150 seconds (60 + 60 + 30). The source assessment's probe answer '250' and distractors '130'/'0.9 of a minute' are intentional wrong-answer examples addressed as misconceptions, never taught as correct. In the seconds activity the '0.9' misconception is confined to the reverse-direction feedback (90 seconds read as 0.9 of a minute), and '150' is used only as a base-10 distractor for 'one and a half minutes', which is genuinely wrong for that quantity.",
-          "The original source labelled a 3D calendar as adding 'nothing' and a static image as unable to 'run' the cycle, and called telling inferior to showing; these are reframed as scaffold affordances/limits with hedged wording rather than universal claims about what any medium can or cannot teach.",
-          "reteachPrerequisiteId mt_2XDGT5tei1 in the source is tied to the seconds-regrouping misconception and is a catalog reference retained in assessment data, not surfaced in learner-facing guidance; it could not be independently verified here.",
-          "The statutory curriculum claim was removed from the four-year-dial activity's sourceClaims because it did not directly support that activity's design rationale; it is retained on the recall activity, whose rationale explicitly consolidates statutory recall content."
-        ],
-        "schemaVersion": 2
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
+        ]
       },
       "assess": {
         "method": "two_tier",
         "poeTask": null,
+        "diagnosticPrompt": "If you give {{name}} a calendar, can they say how many days are in September and whether that year has 365 or 366 days, and tell you how many seconds are in a minute?",
+        "correctAnswer": "One minute has 60 seconds;September has 30 days;a common year has 365 days and a leap year 366, with February 29 shown on the supplied leap-year calendar.",
+        "whatMakesItDiscriminate": "Checks distinct facts against time/calendar evidence and distinguishes the usual four-year pattern from an exception-free claim; does not require a new astronomy or century-arithmetic skill.",
         "probeDeeper": [
-          "'If a year were exactly 365 days with nothing left over, would we ever need a leap year? Why or why not?'",
-          "'Where does the leftover time each year go until we use it?'",
-          "'How many seconds is two and a half minutes — and why isn't it 250?'",
-          "'Which months have fewer than 31 days, and how do you remember which ones?'"
+          "Which calendar entry shows the extra day?",
+          "Does knowing that leap years usually follow a four-year pattern prove every fourth year must be a leap year?"
         ],
-        "correctAnswer": "(A) The Earth takes about 365 and a quarter days to go once round the Sun; the leftover quarter-days build up to one whole day roughly every four years, which we add to February. (B) 90 seconds, because 60 seconds make one minute, so one and a half minutes = 60 + 30. Names the shorter months (Feb; the 30-day months).",
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Knows a leap year is 366 days but treats the extra day and 'every four years' as an arbitrary rule, with no link to the Earth taking about 365¼ days to orbit the Sun",
-            "nextMove": "Don't just restate the rule: build the ~quarter-day-per-year leftover with an orbit model or four-year tally so the accumulation into one extra day is seen, then name that day (29 Feb).",
-            "distractor": "The extra day is added to make the total number of days even, for no special reason",
-            "revealedBy": "On the 'why' tier says 'just because' or 'to make the number even', and cannot connect it to the length of a year / the Earth's orbit",
+            "pattern": "All months have 30 days, and every fourth year must be a leap year.",
+            "revealedBy": "Ignores calendar evidence for February or states a universal four-year rule.",
+            "nextMove": "Check month lengths and the supplied year calendar; qualify the regular pattern without adding century calculation.",
+            "distractor": null,
             "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "Doesn't coordinate the group of 60 for seconds and minutes — applies base-10/discrete reasoning, so 1 minute 30 seconds is read as 130 seconds, or 90 seconds as 0.9 of a minute",
-            "nextMove": "Count seconds into minute-groups on a stopwatch/number line so a full 60 closes into one minute before applying it to conversions.",
-            "distractor": "130 seconds",
-            "revealedBy": "On the seconds item fails to regroup at 60 (gives 130 seconds, 0.9, or similar)",
-            "reteachPrerequisiteId": "mt_2XDGT5tei1"
           }
         ],
         "responseLevels": {
-          "gap": "Cannot reliably state 60 seconds in a minute or the months and their lengths, and has no idea why a leap year happens.",
-          "full": "States the facts AND explains the leap year as ~quarter-day-per-orbit accumulating into one day every four years, handles the irregular month lengths, and converts seconds ↔ minutes using the 60-grouping, transferring to a new case.",
-          "partial": "States 60 seconds, names the months and the leap-year facts (366, every four years), but recites them as isolated facts — cannot explain the leap year via the Earth's orbit or regroup seconds and minutes at 60."
-        },
-        "diagnosticPrompt": "Ask the fact, then the reason. (A) 'A leap year has 366 days instead of 365 — one extra day. Where does that extra day come from, and why do we only add it every four years?' (B) 'How many seconds is one and a half minutes, and how do you know?' Also, in passing: 'Which months have fewer than 31 days?'",
-        "whatMakesItDiscriminate": "The leap-year 'why' tier separates a child who has memorised '366 / every four years' from one who links it to the Earth's ~365¼-day orbit — a connection ~78% of children in the research did not make; the seconds item catches base-10 over-application even in a child who can state '60 seconds in a minute'."
+          "gap": "Confuses unit or calendar facts and cannot use supplied evidence to check.",
+          "partial": "Recalls some facts but confuses month/year lengths or treats the pattern as universal.",
+          "full": "States the seconds and calendar facts accurately, checks a particular year with a calendar and acknowledges exceptions to the usual pattern."
+        }
       },
       "sources": [
         {
@@ -100695,151 +100588,75 @@
     {
       "topicId": "mt_IL86kadLSS",
       "pedagogy": {
-        "summary": "Children solve elapsed-time word problems in both directions — find the END time given a start and a duration, and find the DURATION between two times — using a blank number line. They count on in convenient jumps (to the next o'clock, whole hours, then minutes). The persistent errors are treating time as base-10 (adding minutes past 60 without rolling the hour), column subtraction that fails across the hour boundary, and counting in the wrong direction.",
+        "summary": "A known duration and one clock instant determine the missing start or finish. Find finish by moving forwards and start by moving backwards, regrouping at 60 minutes.",
         "bestPractices": [
-          "Use a blank number line for both problem types; count on in jumps (next o'clock, whole hours, minutes)",
-          "Decide the direction first: adding a duration forwards vs finding the gap between two times",
-          "Bridge the o'clock rather than subtracting in columns",
-          "Represent the story on the line before calculating (start, jumps, end)",
-          "Check the answer against a clock face"
+          "Identify the given information and the quantity being asked for.",
+          "Use a representation that exposes the relevant relationship; accept mathematically valid alternatives.",
+          "Check with a contrasting case and transfer to a new everyday context."
         ],
         "keyRepresentations": [
-          "Blank number line with labelled jumps",
-          "Clocks marking start and end",
-          "The 'bridge to the next o'clock' jump"
+          "Labelled time line",
+          "Ordinary clock display"
         ],
         "commonMisconceptions": [
-          "Adds the duration to the minutes only, ignoring the hour roll-over past 60 (2:15 + 47 -> '2:62')",
-          "Column subtraction of the two times, failing across the hour boundary",
-          "Counts in the wrong direction (subtracts a duration instead of adding, or vice versa)",
-          "Overshoots or undershoots the o'clock bridge (base-10 slip)"
+          "Chooses direction without identifying whether start or finish is missing.",
+          "Finds a gap between two displayed numbers instead of the requested instant, or always moves forwards."
         ]
       },
       "learn": {
-        "summary": "Children solve elapsed-time word problems in both directions — finding the END time from a start and a duration, and finding the DURATION between two times — using a blank number line and counting on in convenient jumps (to the next o'clock, then whole hours, then minutes). The core teaching move is showing that the SAME number line solves both 'when does it end?' and 'how long is it?', so elapsed time becomes one count-on method rather than two mysterious sums. Persistent errors to target: treating time as base-10 by writing minutes past 60 without rolling the hour over (2:15 + 47 -> '2:62'), column subtraction that fails across the hour boundary, and counting in the wrong direction.",
+        "schemaVersion": 2,
+        "summary": "A known duration and one clock instant determine the missing start or finish. Find finish by moving forwards and start by moving backwards, regrouping at 60 minutes.",
         "activities": [
           {
-            "title": "Count on along a number line to find the end time",
-            "feedback": [
-              "If a learner writes an end time with 60 or more minutes (e.g. '2:62' or '3:75'), ask: 'Can a time have 62 minutes? What happens at 60?' Then bridge to the next o'clock first (2:15 -> 3:00) and add the rest.",
-              "If the first jump overshoots or undershoots the o'clock, ask 'How many minutes from 2:15 to the next whole hour?' before adding the remaining minutes.",
-              "Confirm success by checking: 3:40 + 35 = jump +20 to 4:00 then +15 = 4:15, with the hour correctly rolled over."
-            ],
-            "rationale": "A blank number line lets children bridge to the next o'clock rather than add minutes past 60, directly addressing the base-10 slip. Research documents that children apply base-10 whole-number reasoning to time and struggle to coordinate its base-60 groupings, which produces minutes-past-60 errors; a published scheme of learning uses the blank number line with jumps to whole hours and minutes for exactly this purpose.",
-            "sourceClaims": [
-              "White Rose Y4 Time (Step 3) documents using a blank number line to find durations and start/end times (e.g. jumps of +1 hour and +10 minutes), and warns that children may attempt to calculate durations using column subtraction, leading to inaccuracies when hours are crossed.",
-              "Children apply base-10 whole-number reasoning to time and cannot easily coordinate its base-60 groupings, explaining minutes-past-60 errors (2:15 + 47 -> '2:62') and column-subtraction failures across the hour boundary."
-            ],
+            "title": "Identify, represent and check the required quantity",
             "learnerActions": [
-              "Read a word problem such as: 'A film starts at 2:15 and lasts 47 minutes — when does it end?'",
-              "Draw a blank number line and mark the start time (2:15).",
-              "Make a first jump that bridges to the next o'clock: +45 minutes to reach 3:00.",
-              "Make a second jump with the remaining minutes: +2 to reach 3:02; label each jump and read off the end time.",
-              "Repeat with a harder bridge: 'Swimming starts at 3:40 and lasts 35 minutes — when does it finish?' Jump +20 to 4:00, then +15 to reach 4:15.",
-              "Check the end time on a clock face."
+              "For start 2:15 plus 47 min, move 45 min to 3:00 then 2 min to 3:02.",
+              "For finish 10:05 and duration 45 min, move back 5 min to 10:00 then 40 min to 9:20.",
+              "Check by applying the given duration to the resulting start.",
+              "A different event ends 11:10 after 35 minutes: find its start and check."
             ],
-            "intendedInsight": "Adding a duration means counting FORWARD from the start; bridging to the next o'clock first makes the hour roll over correctly, so you never write an impossible time like 2:62 or 3:75."
-          },
-          {
-            "title": "Fill the gap to find a duration",
+            "intendedInsight": "A known duration and one clock instant determine the missing start or finish. Find finish by moving forwards and start by moving backwards, regrouping at 60 minutes.",
             "feedback": [
-              "If a learner sets out 10:05 minus 9:20 in columns and borrows in base-10, show that this fails across the hour boundary; model counting on in jumps to the o'clock then the minutes instead.",
-              "If a learner adds 9:20 and 10:05 together, ask 'Are you finding how LONG it is or adding two moments? Which jumps fill the gap?'",
-              "Reinforce that the two jumps (+40 then +5) sum to the answer the same way the end-time jumps did."
+              "Finds a gap between two displayed numbers instead of the requested instant, or always moves forwards.",
+              "Ask for an explanation and a check, rather than treating one correct answer as mastery."
             ],
-            "rationale": "Modelling a duration as a filled gap counteracts the column-subtraction error that fails across the hour boundary, which a published scheme of learning explicitly warns about, and which research links to base-10 reasoning applied to base-60 time.",
-            "sourceClaims": [
-              "White Rose Y4 Time (Step 3) documents using a blank number line to find durations and start/end times (e.g. jumps of +1 hour and +10 minutes), and warns that children may attempt to calculate durations using column subtraction, leading to inaccuracies when hours are crossed.",
-              "Children apply base-10 whole-number reasoning to time and cannot easily coordinate its base-60 groupings, explaining minutes-past-60 errors (2:15 + 47 -> '2:62') and column-subtraction failures across the hour boundary."
-            ],
-            "learnerActions": [
-              "Read a problem such as: 'How many minutes are there between 9:20 and 10:05?'",
-              "On a blank number line, mark both times (9:20 and 10:05).",
-              "Jump from the earlier time to the next o'clock: +40 minutes to reach 10:00.",
-              "Jump the remaining minutes: +5 to reach 10:05.",
-              "Add the jumps together (40 + 5) to get the total duration of 45 minutes.",
-              "Check against a clock face, and explain why adding 9:20 and 10:05 together would be nonsense."
-            ],
-            "intendedInsight": "Finding a duration means filling the GAP between two times with jumps and summing them — not subtracting in columns and not adding the two clock times together. Bridging the o'clock keeps the base-60 boundary correct."
-          },
-          {
-            "title": "Decide the direction before you jump",
-            "feedback": [
-              "If a learner counts backward on a 'find the end' problem, or forward on a 'find the start', pause and re-ask: 'Is the unknown an end time, a start time, or how long it lasted? Which way do the jumps go?'",
-              "If a learner adds 9:20 and 10:05 when asked for a gap, restate that a gap is filled with jumps between the two times, never a sum of the clock readings.",
-              "Praise correct identification of the unknown and direction before any arithmetic begins."
-            ],
-            "rationale": "Explicitly rehearsing whether the unknown is an end time, start time, or duration addresses the directional/performance error where children subtract a duration that should be added, or add two clock times. Using the one number line for all three cases shows elapsed time as a single jump-counting method, counting forward or backward and bridging the o'clock.",
-            "sourceClaims": [],
-            "learnerActions": [
-              "Before calculating any problem, state out loud whether the unknown is an END time (jump forward from the start by the duration), a START time (jump backward from the end by the duration) or a GAP (fill the space between two given times).",
-              "Solve a mixed set, e.g. 'A show ends at 10:05 and lasted 45 minutes — when did it START?' by counting BACKWARD: -5 to 10:00, then -40 to 9:20.",
-              "Compare a forward problem and a backward problem side by side, labelling which way the jumps go.",
-              "Say which number is unknown and which direction the jumps travel before marking the line."
-            ],
-            "intendedInsight": "Choosing the direction first — forward to find an end, backward to find a start, or filling the gap to find a duration — prevents counting the wrong way or adding two clock times together."
+            "rationale": "Claim-aligned proposed activity: contrasting the target quantity with a near miss makes the operation visible. Retained citations provide historical context; this activity has not been experimentally validated.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
-          "Pupils should already read and record time in seconds, minutes and hours and compare durations before tackling these word problems; if they write times with 60+ minutes, revisit how 60 minutes rolls the hour over before continuing.",
-          "Multiple-choice or fill-in-the-blank items about elapsed time can check whether answers are correct, but they do not show whether the child built the jumps or bridged the o'clock; pair them with a 'show your jumps' task so the method is visible.",
-          "A fixed worked-example diagram can illustrate the jumps but does not let the child build them in either direction; use it as a reference, not as the main practice.",
-          "A spoken or dialogue format can pose word problems and prompt reasoning, but still needs the child to actually draw and label jumps so the method is practised, not just discussed.",
-          "An interactive number line where jumps are dragged and a clock rolls over as each jump lands can make the hour roll-over visible in real time; this is one helpful presentation, not a requirement — the same learning can happen with pencil-and-paper number lines and a physical clock face.",
-          "Always state the known times explicitly (the start time for end-time problems, both times for duration problems, and the end time for start-time problems) so the direction of counting is unambiguous."
+          "Do not infer mastery of another time operation from success here.",
+          "A school-year sequence or larger number is not a separate mastery level."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research without fresh source verification; sources were not re-fetched. The activities are research-informed proposals, not validated interventions.",
-          "The original source row rated a 3D interactive as adding nothing and a static image/conversation as unable to let the child build jumps. These catalog-style comparative claims have been softened into scoped notes about affordances and limits rather than universal pedagogical laws.",
-          "Arithmetic self-check: 2:15 + 47 min = +45 to 3:00 then +2 = 3:02 (correct); 3:40 + 35 = +20 to 4:00 then +15 = 4:15 (correct); 9:20 to 10:05 = +40 then +5 = 45 min (correct); backward 10:05 − 45 = −5 to 10:00 then −40 = 9:20 (correct). The erroneous learner outputs '2:62' and '3:75' are retained only as misconceptions to diagnose and correct, never as valid answers.",
-          "The original row listed a prerequisite reteach id for base-60/hour-crossing; that internal identifier has been dropped in favour of the plain-language prerequisite stated in constraints.",
-          "The 'decide the direction' activity targets a performance error (wrong-direction counting) that had no directly supporting source claim in the original row, so its sourceClaims is left empty; the number-line method itself is sourced on the first two activities."
-        ],
-        "schemaVersion": 2
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
+        ]
       },
       "assess": {
         "method": "performance_task",
         "poeTask": null,
-        "probeDeeper": [
-          "'Show me your first jump — where did you land?' (o'clock bridge)",
-          "'Your answer says 2:62 — can a time have 62 minutes? What happens at 60?'",
-          "'Are you finding when it ENDS, or how LONG it is? Which way do the jumps go?'",
-          "'A show ends at 10:05 and lasted 45 minutes — when did it START?' (backward count-on)"
-        ],
-        "correctAnswer": "For the film, counts on 2:15 to 3:00 (+45) then +2 = 3:02 (or +47 bridging correctly); for 9:20 to 10:05 counts +40 to 10:00, +5 = 45 minutes; for 3:40 + 35 bridges to 4:00 (+20), +15 = 4:15 — rolling the hour over rather than writing 3:75.",
+        "diagnosticPrompt": "If {{name}} starts football practice at 3:20 p.m. and it lasts 75 minutes, can they find the finish time? If another practice finishes at 5:10 p.m. after 45 minutes, can they find when it started and explain the different directions?",
+        "correctAnswer": "3:20+75 minutes finishes 4:35; finishing 5:10 after 45 minutes means starting 4:25.",
+        "whatMakesItDiscriminate": "Requires identifying the target quantity and explaining a contrasting case, rather than copying a label or repeating a memorised answer.",
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Adds the duration to the minutes only, ignoring the hour roll-over past 60 (2:15 + 47 -> '2:62')",
-            "nextMove": "Use the number line to bridge to the next o'clock first (2:15 -> 3:00), then add the rest; show that 60 minutes rolls the hour over.",
+            "pattern": "Chooses direction without identifying whether start or finish is missing.",
+            "revealedBy": "Finds a gap between two displayed numbers instead of the requested instant, or always moves forwards.",
+            "nextMove": "Restate the given values and the unknown quantity, model the relevant relationship, then retry a new case without supplying the answer.",
             "distractor": null,
-            "revealedBy": "Writes an end time with minutes of 60 or more; doesn't bridge to the next hour",
-            "reteachPrerequisiteId": "mt_4emC463IyW"
-          },
-          {
-            "kind": "misconception",
-            "pattern": "Uses column subtraction of the two times, failing across the hour boundary",
-            "nextMove": "Model counting on to fill the gap (jumps to the o'clock, then minutes); make the base-60 boundary explicit.",
-            "distractor": null,
-            "revealedBy": "Writes 10:05 minus 9:20 in columns and borrows base-10, getting a wrong gap",
-            "reteachPrerequisiteId": "mt_4emC463IyW"
-          },
-          {
-            "kind": "performance",
-            "pattern": "Counts in the wrong direction — subtracts a duration when it should be added on, or adds the two clock times together when finding a gap",
-            "nextMove": "Scaffold: decide first whether the unknown is an end time (jump forward by the duration) or a gap (fill between the two times); rehearse choosing the direction before jumping.",
-            "distractor": null,
-            "revealedBy": "On 'find the end' counts backwards; on 'find the gap' adds 9:20 and 10:05",
             "reteachPrerequisiteId": null
           }
         ],
+        "probeDeeper": [
+          "What information is given, and what are you trying to find?",
+          "A different event ends 11:10 after 35 minutes: find its start and check."
+        ],
         "responseLevels": {
-          "gap": "Adds minutes past 60 or subtracts in columns; counts the wrong direction; can't cross the hour.",
-          "full": "Solves both elapsed-time directions on a number line, bridging the o'clock, rolling the hour over correctly, and choosing the right direction for the unknown.",
-          "partial": "Solves within-hour problems and one direction reliably, but slips crossing the hour or on the reverse (find-start / find-duration) case."
-        },
-        "diagnosticPrompt": "Set both problem types and WATCH: (1) 'A film starts at 2:15 and lasts 47 minutes — when does it end? Show me your jumps.' (2) 'How many minutes between 9:20 and 10:05?' (3) A crossing-the-hour end-time: 'Swimming starts at 3:40 and lasts 35 minutes — when does it finish?' Watch whether they count on with a number line (bridging the o'clock) or add minutes past 60, subtract in columns, or go the wrong direction.",
-        "whatMakesItDiscriminate": "The hour-crossing items catch the child who adds minutes past 60 (2:15 + 47 -> '2:62'; 3:40 + 35 -> '3:75') or subtracts in columns; a child bridging the o'clock on a number line rolls the hour correctly. Doing both directions catches counting the wrong way."
+          "gap": "Finds a gap between two displayed numbers instead of the requested instant, or always moves forwards.",
+          "partial": "Succeeds on a familiar case but needs support to explain or transfer.",
+          "full": "3:20+75 minutes finishes 4:35; finishing 5:10 after 45 minutes means starting 4:25. Explains and checks the relationship in an unfamiliar case."
+        }
       },
       "sources": [
         {
@@ -167964,7 +167781,8 @@
           "The row asserts '3D adds nothing' and that a static image 'can't' dislodge the confusion; these have been softened to scoped affordance/limit statements, since catalog ratings do not establish such universal claims.",
           "Coverage for the 'a long time = how much happened' misconception (present in the original set) is included in the summary and Activity 1.",
           "The original two-cars probe (red further, green still moving after red stopped) has been restored to the conversation activity as a distinct concrete discriminator.",
-          "The growing duration-bar, slow-motion toggle, and different-start mode are preserved as optional illustrative mechanisms, not the only valid teaching method."
+          "The growing duration-bar, slow-motion toggle, and different-start mode are preserved as optional illustrative mechanisms, not the only valid teaching method.",
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
         ],
         "schemaVersion": 2
       },
@@ -167976,7 +167794,7 @@
           "'Two cars race. The red one goes further, but the green one was still moving after red stopped. Which took more time? How could we be sure?' (separates distance from duration)",
           "'What is the difference between finishing EARLIER and being QUICKER?'"
         ],
-        "correctAnswer": "Identifies the shorter timer as quicker; reasons that walking more slowly over the same route takes MORE time, and that 8 minutes < 10 minutes so Wednesday was quickest; says the child who finished first (same start) was quicker. Uses quicker/slower for duration and earlier/later for position, correctly.",
+        "correctAnswer": "With a shared start, the first finisher took less time and finished earlier. Without start times or duration evidence, finish order alone does not determine who was quicker.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -168008,7 +167826,7 @@
           "full": "Uses quicker/slower for duration and earlier/later for position correctly, reasons that slower over the same distance takes more time, and separates duration from speed/distance and from finishing position, transferring to a new comparison.",
           "partial": "Uses quicker/slower correctly for clear same-start comparisons, but is caught by the speed-vs-duration confound (slower = less time) or confuses earlier/later with quicker/slower."
         },
-        "diagnosticPrompt": "Set up real comparisons and listen for correct USE: (1) Two sand-timers (30 seconds and 1 minute) started together: 'Which one is quicker? How do you know?' (2) 'On Monday my walk to school takes 10 minutes. On Tuesday I walk more slowly — does Tuesday's walk take more or less time? On Wednesday it takes 8 minutes — which day was I quickest?' (3) 'We both started colouring at the same time and I finished first — who was quicker?'",
+        "diagnosticPrompt": "If {{name}} and a sibling start eating at the same time and {{name}} finishes first, can they say who finished earlier and who took less time? If the start times are unknown, can they explain why finishing first alone does not tell you who was quicker?",
         "whatMakesItDiscriminate": "The 'walk more slowly — more or less time?' item is the classic duration-vs-speed probe: a child with the time–speed–distance confusion says slower means less time, or judges by distance; the same-start colouring item checks 'finished first = quicker' with no start-time confound."
       },
       "sources": [
@@ -175473,154 +175291,74 @@
     {
       "topicId": "mt_UNzojLkNdm",
       "pedagogy": {
-        "summary": "Children read and write time to the EXACT minute. The efficient procedure is NOT counting single minutes from the 12 but finding the last 5-minute interval the minute hand has passed and counting on the extra minutes (e.g. 23 past = 4x5 = 20, then +3). 'To' times add a further step: converting minutes-past into minutes-to the next hour (44 past 3 = 16 to 4, a number bond to 60). Reading the hour hand precisely also matters — near the top of the hour it sits almost on the next numeral, but the hour is the number it has LAST PASSED.",
+        "summary": "Coordinate the minute scale and hour-hand position to read and write ordinary analogue and digital time to the nearest minute.",
         "bestPractices": [
-          "Teach 'find the 5-minute interval before the hand, then count on' rather than counting every minute from 12",
-          "Use a number line / number bond to 60 to convert minutes past to minutes to",
-          "Check the hour hand carefully: at 7:43 the hour hand is nearly on 8 but the hour is still 7",
-          "Match analogue and digital to the exact minute, both directions",
-          "Rehearse the multi-step 'minutes to' reading, where errors cluster"
+          "Identify the given information and the quantity being asked for.",
+          "Use a representation that exposes the relevant relationship; accept mathematically valid alternatives.",
+          "Check with a contrasting case and transfer to a new everyday context."
         ],
         "keyRepresentations": [
-          "Analogue clock with a minute scale (tick marks)",
-          "Counting on from the last multiple of five",
-          "Number line for past-to-to conversion; part-whole bond to 60",
-          "Paired analogue and digital displays"
+          "Moveable analogue clock and digital display"
         ],
         "commonMisconceptions": [
-          "Counts individual minutes from 12 to the hand instead of counting on from the nearest 5 below (slow and error-prone)",
-          "Multi-step 'minutes to' reading breaks down (miscounts the bond to 60)",
-          "Reads the hour as the numeral the hour hand is nearest, so 7:43 becomes '8:43' (hour hand almost on 8)",
-          "Reads a digital time literally rather than converting it (says 'seven forty-three' but can't render it on analogue or as a 'to' time)"
+          "Uses the nearest hour numeral rather than the hour last passed.",
+          "Reads 7:43 as 8:43 because the hour hand is near 8."
         ]
       },
       "learn": {
-        "summary": "Children read and write time to the exact minute on analogue and digital clocks. The efficient method is not counting single minutes from the 12 but finding the last 5-minute interval the minute hand has passed and counting on (e.g. 23 past = 4×5 = 20, then +3). 'To' times add a conversion step: turning minutes-past into minutes-to the next hour using a number bond to 60 (44 past 3 = 16 to 4). The hour hand also needs care: late in the hour it moves close to the next numeral, but the hour is the number it has LAST passed (at 7:43 the hour hand is about three-quarters of the way to 8, but the hour is still 7; at 9:57 it is almost on 10, but the hour is still 9).",
+        "schemaVersion": 2,
+        "summary": "Coordinate the minute scale and hour-hand position to read and write ordinary analogue and digital time to the nearest minute.",
         "activities": [
           {
-            "title": "Count on from the last five on a moveable clock",
-            "feedback": [
-              "If the child counts every minute from the 12, prompt: 'Which five has the hand just passed?' then count on only the extra minutes from there.",
-              "If the child reads 7:43 as 8:43, say: 'The hour is the number the hour hand has LAST passed — it is still before the 8, so the hour is 7.' Slowly sweep the hour hand across the whole hour so they see it travel from just-past-7 to the 8.",
-              "For 9:57, if the child says 10, point out the hand has not yet reached the 10, so the hour is still 9 — read last-passed, not nearest.",
-              "Confirm a correct reading by restating the method: 'You found 40, then counted on 3 — that's 43, and the hour hand is still past 7, so 7:43.'"
-            ],
-            "rationale": "Guidance documenting this error reports children count individual minutes to the hand instead of finding the 5-minute interval before and counting on, and recommends the 4×5=20 then +3 method. A moveable clock lets the child rehearse the count-on procedure and watch the hour hand travel; a static annotated clock can still show one worked example but does not let the child try the count themselves.",
-            "sourceClaims": [
-              "White Rose Y3 Time (Step 3, Tell the time to the minute) documents that children may count individual minutes until they reach the minute hand instead of finding the 5-minute interval before and counting on, and that 'minutes to the hour' has several steps where errors cluster; the recommended method is 4x5=20 then +3, with a number line and part-whole bond to 60 for past-to conversion.",
-              "The hour hand is significantly harder for children to read than the minute hand, and children tend to read hour and minute separately; near the top of the hour the hour hand's position (just before the next numeral) is a documented source of error."
-            ],
+            "title": "Identify, represent and check the required quantity",
             "learnerActions": [
-              "On a clock with moveable hands and a minute scale (tick marks), set the minute hand to a target such as 43 minutes.",
-              "Find the last 5-minute mark the hand has passed (40) by counting the fives: 5, 10, 15, 20, 25, 30, 35, 40.",
-              "Count on the extra single minutes from there: 41, 42, 43 — do not count all 43 ticks one at a time from the 12.",
-              "Check the hour hand: notice it has moved about three-quarters of the way toward the next numeral, and say the hour as the number it has LAST passed.",
-              "Try another near-the-hour example: set 9:57 — the hour hand is almost on 10, but the hour is still 9 because that is the number it has last passed.",
-              "Read the whole time aloud (e.g. 'forty-three minutes past seven' / 'seven forty-three')."
+              "Find the last five-minute mark before 43, then count on 3.",
+              "At 7:43 identify 7 as the last hour passed, not 8 as the nearest numeral.",
+              "Read another clock showing 9:57 and express it as three minutes to ten.",
+              "Read a different clock showing 11:06 and translate it to a digital display, explaining the hour-hand position."
             ],
-            "intendedInsight": "The quick, reliable way to read exact minutes is to land on the nearest 5-minute mark below the hand and count on the remaining minutes, and to read the hour as the numeral the hour hand has last passed."
-          },
-          {
-            "title": "Convert 'past' to 'minutes to' with a bond to 60",
+            "intendedInsight": "Coordinate the minute scale and hour-hand position to read and write ordinary analogue and digital time to the nearest minute.",
             "feedback": [
-              "If the child gives a wrong 'to' time such as '23 to 8' for 7:43, bring back the number line: 'How many more from 43 to reach 60?' (17), so it is 17 to 8.",
-              "If the child cannot convert at all, rehearse just the bond to 60 first (e.g. 43 + ? = 60) before returning to the clock; do not re-teach whole-clock reading.",
-              "Watch that the stated hour is the NEXT hour (8, not 7) when giving a 'to' time."
+              "Reads 7:43 as 8:43 because the hour hand is near 8.",
+              "Ask for an explanation and a check, rather than treating one correct answer as mastery."
             ],
-            "rationale": "The multi-step 'minutes to' reading is where errors cluster, and a number line / part-whole bond to 60 is the recommended scaffold for the past-to-to conversion. Isolating the conversion step from the reading step targets the specific breakdown.",
-            "sourceClaims": [
-              "White Rose Y3 Time (Step 3, Tell the time to the minute) documents that children may count individual minutes until they reach the minute hand instead of finding the 5-minute interval before and counting on, and that 'minutes to the hour' has several steps where errors cluster; the recommended method is 4x5=20 then +3, with a number line and part-whole bond to 60 for past-to conversion."
-            ],
-            "learnerActions": [
-              "Start from an exact 'past' reading such as 43 minutes past 7.",
-              "On a number line from 0 to 60 (or a part-whole bond), find how far it is from 43 up to 60: 43 + 17 = 60.",
-              "State the 'to' time: 43 past 7 is 17 minutes to 8.",
-              "Repeat with other examples, e.g. 44 past 3 = 16 to 4; 57 past 9 = 3 to 10.",
-              "Say both forms of the same time aloud to connect them."
-            ],
-            "intendedInsight": "Reading a 'to' time is one extra step on top of reading the 'past' time: use a number bond to 60 to find the gap to the next hour, and remember the hour named is the NEXT hour."
-          },
-          {
-            "title": "Match and write analogue and digital to the exact minute, both directions",
-            "feedback": [
-              "If a digital reading is copied literally but cannot be set on analogue (reads 'seven forty-three' but cannot place the hands or give the 'to' form), practise placing the minute hand at the counted-on position and sweeping the hour hand to just-past the hour.",
-              "For the hour-hand check: the answer is 7 because the hand has not yet reached 8 — read last-passed, not nearest.",
-              "For the fill-in: 44 + 16 = 60, so 44 past 3 = 16 to 4."
-            ],
-            "rationale": "Matching analogue to digital to the exact minute, the hour-hand question, and past-to conversion are the curriculum reading/writing/converting targets. Writing and hand-setting require the child to produce a time, not just recognise one; a recognition-only check would not show whether the child can construct the reading independently.",
-            "sourceClaims": [
-              "Year 3 pupils should 'estimate and read time with increasing accuracy to the nearest minute'; Year 4 pupils 'read, write and convert time between analogue and digital 12- and 24-hour clocks', so reading to the nearest minute is the age-8+ consolidation of this strand."
-            ],
-            "learnerActions": [
-              "Read an analogue clock set to 7:43 and write it as a digital time.",
-              "Given a digital time such as 11:06, set the hands: minute hand just past the 1 (at the 6-minute tick), hour hand just past the 11.",
-              "Match several analogue faces to their digital equivalents to the exact minute.",
-              "For each, say the hour it has last passed and the minutes found by counting on.",
-              "Answer targeted checks, e.g. 'The hour hand is almost on 8 — what is the hour?' and 'Fill in: 44 minutes past 3 = ___ minutes to 4.'"
-            ],
-            "intendedInsight": "Exact-minute times can be translated faithfully between analogue and digital in both directions, keeping the count-on method and the last-passed hour."
+            "rationale": "Claim-aligned proposed activity: contrasting the target quantity with a near miss makes the operation visible. Retained citations provide historical context; this activity has not been experimentally validated.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
-          "A static labelled clock can display one worked time but does not let the child rehearse the count-on procedure or watch the hour hand travel; use it as a worked example, not as the main practice.",
-          "Prompted oral readings (a character asking 'what time is it?') can elicit answers but do not reveal HOW the child finds the minutes; pair them with tasks where the method is visible.",
-          "Recognition/matching tasks assess and reinforce but do not by themselves require the child to construct a reading or set the hands; include writing and hand-setting for production.",
-          "Optional interaction examples that make the mechanism concrete: lighting the 5-minute marks in groups up to the last interval in one colour, then single count-on minutes in another colour; a toggle that rolls the reading round a 0–60 number line to show the 'to' form; an hour hand that creeps toward the next numeral so the child must read last-passed. These are illustrative, not required.",
-          "When scaffolding a child who counts single minutes, do not reteach clock reading from scratch — prompt them to the nearest five and count on."
+          "Do not infer mastery of another time operation from success here.",
+          "A school-year sequence or larger number is not a separate mastery level."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions.",
-          "Self-audit of the arithmetic and logic: 4×5=20 then +3 = 23 (correct); 43+17=60 so 7:43 is 17 to 8 (correct); 44+16=60 so 44 past 3 = 16 to 4 (correct); 57+3=60 so 57 past 9 = 3 to 10 (correct); for 11:06 the minute hand sits at the 6-minute tick just past the 1 (correct); for 9:57 the hour hand is nearly on 10 but the hour is still 9 (correct).",
-          "The '23 to 8' value is a documented learner ERROR, not a correct answer, and is used only as a feedback example to correct — never offered as a valid option.",
-          "The hour-hand rule ('the hour is the number the hour hand has last passed') is the key conceptual correction and is taught directly in activity 1 so the 'nearest numeral' error is fixed, not merely flagged. Independent re-check confirms the 9:57 example is present in activity 1 actions and feedback.",
-          "The source's catalog claim that '3D adds nothing' has been omitted as a comparison not established as a pedagogical fact; nothing here depends on it.",
-          "Independent review found no critical learner-facing errors; the arithmetic, hour-hand logic, and both-direction conversions are coherent from first action through final feedback. Remaining uncertainty is confined to unre-verified source evidence."
-        ],
-        "schemaVersion": 2
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification."
+        ]
       },
       "assess": {
         "method": "performance_task",
         "poeTask": null,
-        "probeDeeper": [
-          "'Show me how you found 43 minutes — did you count every minute, or start from a five?'",
-          "'The hour hand is almost touching the 8 — so is the hour 7 or 8? How do you know?'",
-          "'You read 7:43 — can you say that as minutes TO the next hour?'",
-          "'Set the clock to 9:57 — where does the hour hand go, and what is the hour?' (hour hand almost on 10, still 9)"
-        ],
-        "correctAnswer": "Finds the last 5-minute mark (40) and counts on 3 to reach 43; reads the hour as 7 (the number the hour hand has last passed); writes 7:43; sets 11:06 with the minute hand just past the 1 and the hour hand just past the 11.",
+        "diagnosticPrompt": "If an analogue kitchen clock shows 7:43, can {{name}} read and write the time and explain why the hour is still 7? On another clock showing 9:57, can they write the digital time and say how many minutes remain until ten?",
+        "correctAnswer": "Reads 7:43 with hour 7; reads 9:57 as three minutes to ten; explains the hour-hand position near the next numeral.",
+        "whatMakesItDiscriminate": "Requires identifying the target quantity and explaining a contrasting case, rather than copying a label or repeating a memorised answer.",
         "errorPatterns": [
           {
-            "kind": "performance",
-            "pattern": "Counts individual minutes from the 12 up to the hand instead of counting on from the last multiple of five",
-            "nextMove": "Scaffold, do not reteach reading from scratch: prompt 'which five has the hand just passed?' then count on the extra minutes; rehearse with a clock whose fives are marked.",
-            "distractor": null,
-            "revealedBy": "Taps round the dial one minute at a time; slow, and miscounts on larger minute values",
-            "reteachPrerequisiteId": "mt_4m8BimI4G5"
-          },
-          {
             "kind": "misconception",
-            "pattern": "Reads the hour as the numeral the hour hand is nearest, so 7:43 becomes 8:43",
-            "nextMove": "Emphasise 'the hour is the number the hour hand has LAST PASSED'; use a moveable clock to watch the hour hand travel between two numbers across the hour.",
+            "pattern": "Uses the nearest hour numeral rather than the hour last passed.",
+            "revealedBy": "Reads 7:43 as 8:43 because the hour hand is near 8.",
+            "nextMove": "Restate the given values and the unknown quantity, model the relevant relationship, then retry a new case without supplying the answer.",
             "distractor": null,
-            "revealedBy": "Gives the hour as 8 when the hour hand sits just before the 8",
             "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "performance",
-            "pattern": "The multi-step 'minutes to' reading breaks down — miscounts the number bond to 60",
-            "nextMove": "Scaffold with a number line / part-whole bond to 60 (43 + 17 = 60); rehearse the extra conversion step, don't re-teach whole-clock reading.",
-            "distractor": null,
-            "revealedBy": "Reads 7:43 as the wrong 'to' time (e.g. '23 to 8'), or can't convert past to to at all",
-            "reteachPrerequisiteId": "mt_4m8BimI4G5"
           }
         ],
+        "probeDeeper": [
+          "What information is given, and what are you trying to find?",
+          "Read a different face showing 11:06 and write its digital equivalent."
+        ],
         "responseLevels": {
-          "gap": "Counts single minutes from the 12 and/or reads the hour by nearest numeral; can't convert to 'to' times.",
-          "full": "Reads and writes any exact-minute time both directions (analogue to digital), counting on from the nearest five, reads the hour as last-passed even near the top of the hour, and converts past to to fluently.",
-          "partial": "Reads exact minutes for 'past' times by counting on, but slips on the hour when the hour hand is near the next numeral, or on the multi-step 'minutes to' conversion."
-        },
-        "diagnosticPrompt": "Set exact-minute reading and writing tasks and WATCH the method: (1) Analogue clock set to 7:43 with the hour hand nearly on 8: 'Read this time to me — tell me the hour and the minutes — and show me how you work out the minutes.' (2) 'Now write it as a digital time.' (3) Give a digital 11:06: 'Set these hands on the clock.' Watch whether they count on from the last five (40, then 41-42-43) or count single minutes from the 12, and whether they keep the hour at 7 (not 8).",
-        "whatMakesItDiscriminate": "Watching HOW the minutes are found (count-on from the nearest five vs one-by-one from the 12) separates the efficient procedure from a fragile one; the hour-hand-nearly-on-8 setup catches the child who reads the hour by nearest numeral rather than last-passed."
+          "gap": "Reads 7:43 as 8:43 because the hour hand is near 8.",
+          "partial": "Succeeds on a familiar case but needs support to explain or transfer.",
+          "full": "Reads 7:43 with hour 7; reads 9:57 as three minutes to ten; explains the hour-hand position near the next numeral. Explains and checks an unfamiliar clock reading."
+        }
       },
       "sources": [
         {
@@ -187537,197 +187275,116 @@
     {
       "topicId": "mt_WfrE_4r-kY",
       "pedagogy": {
-        "summary": "Children read, write and convert times between 12-hour (a.m./p.m.) and 24-hour notation, and represent them on analogue clocks. The core rules: for p.m. times 1:00-11:59, ADD 12 hours (3:45 p.m. -> 15:45); for 24-hour times from 13:00 on, SUBTRACT 12 to get the p.m. time (19:30 -> 7:30 p.m.); 24-hour times always have four digits, so a single-digit hour takes a leading zero (09:45); a new day starts at midnight 00:00 (not 24:00) and noon is 12:00. The rule must be applied ONLY to the right times — a.m. times and the 12:xx noon hour are the traps.",
+        "summary": "Interpret ordinary analogue/digital 12-hour and 24-hour times using the part of the day and the two 12 o’clock cases. For 1:00–11:59 a.m., keep the hour and use a leading zero for a single digit. For 1:00–11:59 p.m., add 12. For 12:00–12:59 a.m., use 00:00–00:59; for 12:00–12:59 p.m., keep 12. Reverse these branches when converting from 24-hour notation; minutes do not change.",
         "bestPractices": [
-          "Ground the +12/-12 rule in the day: a day is 24 hours starting at midnight 00:00, and the afternoon/evening hours continue counting on past 12",
-          "Pair the same time in 12-hour and 24-hour form and ask 'what is the same, what is different?'",
-          "Stress the four-digit format with a leading zero for single-digit hours (09:45)",
-          "Handle the boundary cases explicitly: midnight = 00:00, noon = 12:00, and 12:01-12:59 p.m. stay as 12:xx",
-          "Decide first whether the time is before or after noon — only p.m. times get +12"
+          "Identify a.m./p.m. and whether the hour is 12 before applying any arithmetic.",
+          "Use a paired day-line or clock displays; include ordinary analogue readings with a stated part of the day.",
+          "Practise both conversion directions and explain boundary cases, rather than adding 12 indiscriminately."
         ],
         "keyRepresentations": [
-          "Paired 12-hour and 24-hour digital displays",
-          "Analogue clock for representing a converted time",
-          "A 12-hour to 24-hour conversion table",
-          "The 24-hour day-line (00:00 midnight -> 12:00 noon -> back to 00:00)"
+          "Paired 12/24-hour displays",
+          "Ordinary analogue clock with stated a.m./p.m. context",
+          "24-hour day-line"
         ],
         "commonMisconceptions": [
-          "Adds 10 instead of 12 to p.m. times (6 p.m. -> '16:00')",
-          "Adds 12 to a.m. times too (10:17 a.m. -> '22:17')",
-          "Omits the leading zero for single-digit hours (6:38 a.m. -> '6:38')",
-          "Writes midnight as 24:00 rather than 00:00",
-          "When converting FROM 24-hour, subtracts 12 from 12:xx times (12:43 -> '0:43 p.m.') or subtracts 10 instead of 12, or omits a.m./p.m. on the answer"
+          "Adds 12 to every time, including morning or the noon hour.",
+          "Treats 12:20 a.m. as 12:20 rather than 00:20.",
+          "Subtracts 12 from 12:20 in 24-hour notation although that is the noon hour.",
+          "Adds or subtracts 10; omits the leading zero or a.m./p.m. label."
         ]
       },
       "learn": {
-        "summary": "Learners read, write and convert times between 12-hour (a.m./p.m.) and 24-hour notation and show them on analogue clocks. Core rules: for p.m. times from 1:00 to 11:59, add 12 hours (3:45 p.m. -> 15:45); for 24-hour times from 13:00 onward, subtract 12 to get the p.m. time (19:30 -> 7:30 p.m.); 24-hour times always have four digits, so a single-digit hour takes a leading zero (09:45); a new day starts at midnight 00:00 (never 24:00) and noon is 12:00. The decisive step is deciding FIRST whether a time is before or after noon — a.m. times and the 12:xx noon hour are the traps where learners wrongly apply the rule.",
+        "schemaVersion": 2,
+        "summary": "Interpret ordinary analogue/digital 12-hour and 24-hour times using the part of the day and the two 12 o’clock cases. For 1:00–11:59 a.m., keep the hour and use a leading zero for a single digit. For 1:00–11:59 p.m., add 12. For 12:00–12:59 a.m., use 00:00–00:59; for 12:00–12:59 p.m., keep 12. Reverse these branches when converting from 24-hour notation; minutes do not change.",
         "activities": [
           {
-            "title": "Walk the 24-hour day-line and watch the two clocks agree",
-            "feedback": [
-              "If a learner reads a morning time and adds 12, point to the day-line: the marker is before noon, so for the morning hours 1 a.m. to 11 a.m. the 24-hour and 12-hour hour numbers match (apart from the leading zero) — only after the noon hour do they differ by 12. (The 12:xx a.m. midnight hour is the separate boundary case, written 00:xx.)",
-              "If a learner says midnight is 24:00, ask what the clock shows one minute before and one minute after midnight; show that a standard digital clock rolls from 23:59 to 00:00, so midnight at the start of a new day is written 00:00.",
-              "When they correctly state 'from 1 p.m. the 24-hour hour is 12 more than the p.m. hour' (with the noon hour as the exception, both reading 12), reinforce by asking them to predict the next afternoon time before moving the marker."
-            ],
-            "rationale": "Grounding the rule in the structure of the day — a 24-hour span starting at midnight with hours counting on past noon — turns a memorised +12/-12 into a visible relationship and directly targets the +10 error and the 24:00/0:43 boundary traps. A moving marker with paired displays makes the noon crossing observable; a hand-drawn day-line with paired written times is a concrete alternative when no interactive display is available.",
-            "sourceClaims": [
-              "Year 4 pupils should 'read, write and convert time between analogue and digital 12- and 24-hour clocks'.",
-              "White Rose Y4 Time (Steps 4-5) documents the exact conversion errors: adding 10 instead of 12 to p.m. times (6 p.m. -> 16:00); adding 12 to a.m. times (10:17 a.m. -> 22:17); omitting the leading zero (06:38); writing midnight as 24:00 rather than 00:00; subtracting 12 from 12:xx times (12:43 -> 0:43 p.m.); subtracting 10 instead of 12; and omitting a.m./p.m. It teaches +12 for p.m. and grounds -12 in 'a new day starts at midnight, 00:00', using paired 12/24-hour displays, analogue clocks and conversion tables."
-            ],
+            "title": "Convert in both directions using the correct hour branch",
             "learnerActions": [
-              "Move a marker along a day-line running from midnight 00:00 through noon 12:00 and back to midnight, watching a 12-hour (a.m./p.m.) readout and a 24-hour readout change together as the marker moves.",
-              "Stop the marker just before noon and just after: just before, both displays read 11:59 (11:59 a.m. and 11:59); at noon both read 12:00 and only the 12-hour LABEL flips from a.m. to p.m. (so it shows 12:00 p.m., not 1:00). Then move on past 1 p.m. and watch the 24-hour clock tick to 13:00 while the 12-hour resets to 1:00 p.m. — this is where the 12-of-difference first appears.",
-              "Stop at midnight and read both displays; confirm the 24-hour clock shows 00:00 (a new day starting), not 24:00, by looking at what it shows one minute before and one minute after.",
-              "For a chosen afternoon time from 1 p.m. onward, read the 12-hour value, then the 24-hour value, and state the relationship: 'from 1 p.m. the 24-hour hour is 12 more than the p.m. hour' — noting that the 12:xx noon hour is the exception, where both forms still read 12.",
-              "If a day-line is available, use its paired displays and boundary labels at 00:00 (midnight, new day) and 12:00 (noon); if not, draw the day-line on paper, mark 00:00, 12:00 and 24:00->00:00, and write both forms side by side for several times."
+              "Pair 7:05 a.m. with 07:05 and 3:20 p.m. with 15:20.",
+              "Convert 19:30 to 7:30 p.m. and explain why the minutes stay the same.",
+              "Reject 16:00 as the conversion of 6 p.m.; the correct value is 18:00."
             ],
-            "intendedInsight": "The +12 / -12 relationship is not an arbitrary rule but the afternoon and evening hours continuing to count on past 12; noon and midnight are fixed boundaries, the 12:xx noon hour still reads 12 in both forms, and the 24-hour day rolls from 23:59 straight to 00:00."
+            "intendedInsight": "For 1:00–11:59 a.m., keep the hour and use a leading zero for a single digit. For 1:00–11:59 p.m., add 12. For 12:00–12:59 a.m., use 00:00–00:59; for 12:00–12:59 p.m., keep 12. Reverse these branches when converting from 24-hour notation; minutes do not change.",
+            "feedback": [
+              "Identify the part of the day and the 12 o’clock branch first; compare the answer with the paired representation."
+            ],
+            "rationale": "Claim-aligned authored proposal preserving the complete ordinary clock-system conversion requirements. Retained citations provide historical context, not experimental validation of this activity.",
+            "sourceClaims": []
           },
           {
-            "title": "Decide before-or-after-noon first, then convert",
-            "feedback": [
-              "If a learner writes 9:45 a.m. as 21:45, stop at the first step: is this before or after noon? Morning times from 1 a.m. to 11:59 a.m. keep their hour, and a single-digit hour gains a leading zero, so 9:45 a.m. is 09:45.",
-              "If a learner writes 6 p.m. as 16:00, they added 10: count on from noon 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18, so 6 p.m. is 18:00.",
-              "If a learner gives 12:43 as 0:43 p.m., note that 12:xx is already afternoon and stays 12:43 p.m.; only subtract 12 from 13:00 or later.",
-              "If a learner gives 19:30 as 9:30, they subtracted 10 instead of 12: 19 - 12 = 7, so it is 7:30 p.m.; if they wrote 7:30 with no label, remind them to mark a.m./p.m.",
-              "If a learner writes 6:38 instead of 06:38, remind them a 24-hour time always has four digits, so a single-digit hour takes a leading zero."
-            ],
-            "rationale": "A worked set covering exactly the discriminating cases (an a.m. time, the 12:xx noon hour, a midnight/noon item, and a single-digit hour) separates learners who reason 'decide before/after noon, then +/-12' from those who just +/-12 the hour. Practising the before/after-noon decision first prevents indiscriminate rule application; formatting the leading zero is rehearsed as a convention distinct from the conversion arithmetic.",
-            "sourceClaims": [
-              "Children tend to treat the hour and minute of a time separately and apply whole-number reasoning to each, which is consistent with mis-applying the +12 rule to the hours alone (including to a.m. times) without reasoning about whether the time is before or after noon.",
-              "White Rose Y4 Time (Steps 4-5) documents the exact conversion errors: adding 10 instead of 12 to p.m. times (6 p.m. -> 16:00); adding 12 to a.m. times (10:17 a.m. -> 22:17); omitting the leading zero (06:38); writing midnight as 24:00 rather than 00:00; subtracting 12 from 12:xx times (12:43 -> 0:43 p.m.); subtracting 10 instead of 12; and omitting a.m./p.m. It teaches +12 for p.m. and grounds -12 in 'a new day starts at midnight, 00:00', using paired 12/24-hour displays, analogue clocks and conversion tables."
-            ],
+            "title": "Contrast the noon and midnight hours",
             "learnerActions": [
-              "For each time given, first state whether it is before noon (a.m.), after noon (p.m.), or a boundary (midnight/noon), BEFORE doing any arithmetic.",
-              "Convert 3:45 p.m. to 24-hour time (expected 15:45, add 12) and 9:45 a.m. to 24-hour time (expected 09:45 — add a leading zero, do NOT add 12).",
-              "Convert 19:30 to 12-hour time (expected 7:30 p.m., subtract 12) and 12:20 to 12-hour time (expected 12:20 p.m. — stays the same, do NOT subtract).",
-              "Write midnight and noon in 24-hour time (midnight = 00:00, noon = 12:00).",
-              "Write a single-digit-hour time such as 6:38 a.m. in 24-hour form and check it has exactly four digits (06:38).",
-              "Always label a.m. or p.m. when writing a 12-hour answer."
+              "Convert 12:20 a.m. to 00:20 and 12:20 p.m. to 12:20.",
+              "Convert 00:35 to 12:35 a.m. and 12:35 to 12:35 p.m.",
+              "Read 23:59 and the next minute 00:00 on an ordinary digital display."
             ],
-            "intendedInsight": "Whether to add or subtract 12 depends on deciding first if the time is before or after noon; a.m. times from 1:00 to 11:59 keep their hour (single-digit hours gain a leading zero), p.m. times from 1:00 get +12, 24-hour times from 13:00 get -12, and the 12:xx noon hour, the 12:xx a.m. midnight hour (written 00:xx) and the midnight/noon boundaries are exceptions handled by inspection, not arithmetic."
+            "intendedInsight": "The 12 a.m. hour becomes 00, while the 12 p.m. hour stays 12; noon and midnight need separate branches.",
+            "feedback": [
+              "Identify the part of the day and the 12 o’clock branch first; compare the answer with the paired representation."
+            ],
+            "rationale": "Claim-aligned authored proposal preserving the complete ordinary clock-system conversion requirements. Retained citations provide historical context, not experimental validation of this activity.",
+            "sourceClaims": []
           },
           {
-            "title": "Match and build a conversion table",
-            "feedback": [
-              "If a learner matches 6 p.m. to 16:00, have them count on from 12 to find the afternoon hour; 16:00 is only 4 hours past noon, i.e. 4 p.m.",
-              "If a learner matches midnight to 24:00, remind them the new day starts at 00:00 and a standard digital clock shows 00:00 at midnight, not 24:00.",
-              "When a learner explains 'the minutes are identical and only the hour changes, by 12, from 1 p.m. onward (with the 12:xx a.m. midnight hour written 00:xx)', confirm this is the key idea linking the two forms.",
-              "If a learner cannot place a converted time on the analogue clock, link the hour and minute values back to the clock hands before continuing."
-            ],
-            "rationale": "Pairing times across formats and asking 'what is the same, what is different?' builds the relationship rather than isolated answers, and a forced choice against a well-chosen wrong option makes the +10 and 24:00 errors into discriminating decisions. Matching and choosing confirm whether a learner can recognise correct conversions; they do not by themselves require the learner to construct conversions unaided, so pair them with the independent-conversion activity above.",
-            "sourceClaims": [
-              "White Rose Y4 Time (Steps 4-5) documents the exact conversion errors: adding 10 instead of 12 to p.m. times (6 p.m. -> 16:00); adding 12 to a.m. times (10:17 a.m. -> 22:17); omitting the leading zero (06:38); writing midnight as 24:00 rather than 00:00; subtracting 12 from 12:xx times (12:43 -> 0:43 p.m.); subtracting 10 instead of 12; and omitting a.m./p.m. It teaches +12 for p.m. and grounds -12 in 'a new day starts at midnight, 00:00', using paired 12/24-hour displays, analogue clocks and conversion tables.",
-              "Year 4 pupils should 'read, write and convert time between analogue and digital 12- and 24-hour clocks'."
-            ],
+            "title": "Translate an ordinary analogue time in context",
             "learnerActions": [
-              "Match a mixed set of 12-hour times (with a.m./p.m.) to their 24-hour equivalents, including at least one morning time, one 12:xx p.m. time, and a midnight item.",
-              "Build or complete a two-column table pairing each 12-hour time with its 24-hour form, filling the missing cell in whichever direction is blank.",
-              "For a pair you matched, state in words what is the same and what is different between the two forms (same minutes; hour differs by 12 from 1 p.m. onward and in the 12:xx a.m. midnight hour, which is written 00:xx; 24-hour has four digits).",
-              "Choose correctly between a tempting wrong answer and the right one, e.g. for '6 p.m. in 24-hour time' decide between 16:00 (a +10 slip) and 18:00, and for midnight decide between 24:00 and 00:00, explaining why the wrong one is wrong.",
-              "Represent one converted time on an analogue clock to connect the notation to the clock face."
+              "Read an ordinary analogue face showing 3:20, with an afternoon context, and write 15:20.",
+              "Read 07:05, identify the morning context and match its ordinary analogue representation.",
+              "Use a short timetable question requiring notation conversion only; distinguish this from calculating a journey duration."
             ],
-            "intendedInsight": "Seeing the two notations paired across many times — and articulating what stays the same (minutes) and what changes (the hour, from 1 p.m. onward, plus the 12:xx a.m. midnight hour becoming 00:xx) — consolidates the rule and exposes the specific slips (+10, adding 12 to a.m., 24:00, dropping a.m./p.m.)."
-          },
-          {
-            "title": "Timetable word problems that force the right decision",
+            "intendedInsight": "The same clock instant has different representations; Roman numerals and elapsed-duration arithmetic are independent operations.",
             "feedback": [
-              "If a learner converts a morning timetable time by adding 12, return to the before/after-noon check before the arithmetic.",
-              "If a learner gives a 24-hour timetable time back in 12-hour form without a.m./p.m., ask which part of the day it is so the label is included.",
-              "Praise answers that state the before/after-noon decision and the reason for adding, subtracting or leaving the hour unchanged, not just the final number."
+              "Identify the part of the day and the 12 o’clock branch first; compare the answer with the paired representation."
             ],
-            "rationale": "Embedding conversions in timetable contexts rehearses the skill where it is actually used and keeps the decision explicit. Word problems can practise and check application but do not let a learner watch the conversion method unfold step by step, so they complement rather than replace the day-line and independent-conversion work.",
-            "sourceClaims": [
-              "Year 4 pupils should 'read, write and convert time between analogue and digital 12- and 24-hour clocks'."
-            ],
-            "learnerActions": [
-              "Read short timetable or schedule problems (e.g. a train leaves at 15:45 — what time is that in the afternoon? A film starts at 9:45 a.m. — write its 24-hour time) and convert as needed to answer.",
-              "For each problem, say whether the time is before or after noon before converting, then give the answer in the format the question asks for, labelling a.m./p.m. when giving 12-hour times.",
-              "Include at least one morning time, one noon-hour (12:xx) time, and one midnight/noon reference so the morning and noon traps appear in context.",
-              "Explain your answer to a partner or in writing, justifying why you added, subtracted, or left the hour unchanged."
-            ],
-            "intendedInsight": "The conversion rule is applied to solve real timetable questions, and the before/after-noon check and the boundary exceptions still govern whether to add, subtract, or leave the hour alone."
+            "rationale": "Claim-aligned authored proposal preserving the complete ordinary clock-system conversion requirements. Retained citations provide historical context, not experimental validation of this activity.",
+            "sourceClaims": []
           }
         ],
         "constraints": [
-          "Target age roughly 8-9 (Year 4); procedural measurement objective: read, write and convert between analogue and digital 12- and 24-hour clocks.",
-          "Always decide before/after noon FIRST; add 12 only to p.m. times 1:00-11:59, subtract 12 only from 24-hour times 13:00 onward. a.m. times from 1:00 to 11:59 are NOT given +12 — they keep their hour, with a leading zero only for single-digit hours (9:45 a.m. -> 09:45, but 10:15 a.m. -> 10:15); the 12:xx a.m. midnight hour is written 00:xx.",
-          "The 12:xx noon hour stays 12:xx p.m. — do not subtract 12 from it; noon is 12:00 and midnight is 00:00, never 24:00. At noon both forms read 12:00; the 24-hour ticks to 13:00 and the 12-hour resets to 1:00 p.m. only when passing 1 p.m., so the 12-of-difference begins after the noon hour, not at noon.",
-          "24-hour times always show four digits; single-digit hours take a leading zero (09:45, 06:38).",
-          "Always label a.m./p.m. on a 12-hour answer.",
-          "Matching and multiple-choice recognition confirm a learner can identify correct conversions but do not by themselves show the learner can construct conversions unaided; pair them with activities requiring the learner to produce conversions in both directions.",
-          "A static paired-clock poster can label the two formats but cannot show the marker crossing noon or the boundary behaviour; treat a drawn or printed day-line as a static scaffold and have the learner reason through the noon/midnight transitions aloud.",
-          "An interactive day-line is one helpful representation, not the only way to teach this; a hand-drawn day-line, a conversion table, and analogue-clock work are valid concrete alternatives."
+          "For 1:00–11:59 a.m., keep the hour and use a leading zero for a single digit. For 1:00–11:59 p.m., add 12. For 12:00–12:59 a.m., use 00:00–00:59; for 12:00–12:59 p.m., keep 12. Reverse these branches when converting from 24-hour notation; minutes do not change.",
+          "Always state a.m./p.m. in a 12-hour answer and format a single-digit 24-hour hour with a leading zero.",
+          "At the start of a new day an ordinary digital display rolls to 00:00.",
+          "No Roman-numeral mastery or elapsed-duration calculation is required for ordinary notation conversion."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions, and cited claims support general teaching principles, not the specific tasks.",
-          "Self-audit of arithmetic: 6 p.m. = 18:00 (count on from 12: 13,14,15,16,17,18); the +10 slip gives 16:00 which is 4 p.m. — kept 16:00 only as a labelled wrong-answer distractor, never as a correct option. 3:45 p.m. = 15:45; 9:45 a.m. = 09:45; 19:30 = 7:30 p.m.; 12:20 stays 12:20 p.m.; 12:43 stays 12:43 p.m.; midnight = 00:00; noon = 12:00. All verified consistent.",
-          "Corrected the noon-crossing description inherited from the original design note/recommendation ('crossing noon ... the 24-hour ticks on to 13:00 and the 12-hour resets to 1:00'): at noon both displays read 12:00 and only the label flips to p.m.; the 24-hour reaches 13:00 and the 12-hour resets to 1:00 p.m. one hour later. The original wording conflated the noon crossing with the 1 p.m. crossing and contradicted the lesson's own 12:xx-stays-12:xx rule.",
-          "Scoped activity[0].feedback[0] to the morning hours 1 a.m.-11 a.m. and named the 12:xx a.m. midnight hour (e.g. 12:30 a.m. = 00:30) as a separate boundary case, since the unscoped 'morning hours match' claim fails at the midnight hour. No task in these activities presents a 12:xx a.m. time; only midnight = 00:00 is exercised.",
-          "The source labels converting-notation as 'not a spatial task; 3D adds nothing'. This is a catalog-fit opinion, not an established pedagogical law; it has been omitted rather than asserted. No claim is made that any single medium is uniquely necessary.",
-          "The source framed the day-line marker as the moment the rule 'becomes something seen, not a rule to memorise' and rated it uniquely 'ideal'. This has been softened to one helpful representation among several, with a non-interactive drawn alternative provided, since the sources do not establish comparative efficacy."
-        ],
-        "schemaVersion": 2
+          "2026-11-10 claim-boundary review: activities and assessments below are authored proposals aligned to the current claim. Existing citations, confidence and verification metadata are inherited, not a fresh research certification. Roman numeral interpretation is independent and not a prerequisite.",
+          "All active tasks now include the 12:xx a.m. branch explicitly; the former note that none did so is superseded."
+        ]
       },
       "assess": {
         "method": "performance_task",
         "poeTask": null,
+        "diagnosticPrompt": "If a train leaves at 14:35, can {{name}} give the 12-hour time and part of the day, then write 12:20 a.m. and 12:20 p.m. in 24-hour time? Can they also translate a stated afternoon time on an ordinary analogue clock?",
+        "correctAnswer": "14:35 = 2:35 p.m.; 12:20 a.m. = 00:20; 12:20 p.m. = 12:20. An ordinary analogue 3:20 with an afternoon context means 15:20. Reverse examples: 00:35 = 12:35 a.m.; 19:30 = 7:30 p.m.",
+        "whatMakesItDiscriminate": "Separates ordinary morning, afternoon, noon-hour and midnight-hour branches, samples reverse conversion and connects a clock face to notation without Roman numerals.",
         "probeDeeper": [
-          "'Is that time in the morning or the afternoon? So do we add 12, or not?'",
-          "'You wrote 6:38 as a 24-hour time — how many digits should a 24-hour time have?'",
-          "'12:43 in 24-hour time — is that just before or just after noon? So what is the 12-hour time?'",
-          "'If midnight is 00:00, what does the clock show one minute before? Is there ever a 24:00?' (boundary counterexample)"
+          "Why does 12:20 a.m. become 00:20 while 12:20 p.m. stays 12:20?",
+          "What does 00:35 mean in 12-hour time, and why is it a.m.?",
+          "How do you know whether to add 12 for an analogue reading of 3:20?"
         ],
-        "correctAnswer": "3:45 p.m. -> 15:45; 9:45 a.m. -> 09:45 (leading zero, no +12); 19:30 -> 7:30 p.m.; 12:20 stays 12:20 p.m. (no subtraction); midnight = 00:00, noon = 12:00.",
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Adds 10 instead of 12 to p.m. times (6 p.m. -> '16:00')",
-            "nextMove": "Ground the rule in the day-line — the afternoon continues 12, 13, 14... counting on from noon; count on from 12:00 rather than tacking on a half-remembered number.",
+            "pattern": "All a.m. hours keep their number, and all p.m. hours add 12.",
+            "revealedBy": "Writes 12:20 a.m. as 12:20 or 12:20 p.m. as 24:20.",
+            "nextMove": "For 1:00–11:59 a.m., keep the hour and use a leading zero for a single digit. For 1:00–11:59 p.m., add 12. For 12:00–12:59 a.m., use 00:00–00:59; for 12:00–12:59 p.m., keep 12. Reverse these branches when converting from 24-hour notation; minutes do not change.",
             "distractor": null,
-            "revealedBy": "Converts a p.m. time with a +10 error (6 p.m. -> 16:00; 3 p.m. -> 13:00)",
             "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "Adds 12 to a.m. times as well as p.m. (10:17 a.m. -> '22:17')",
-            "nextMove": "Check FIRST whether the time is before or after noon; a.m. times just gain a leading zero, only p.m. times get +12.",
-            "distractor": null,
-            "revealedBy": "Applies +12 to a morning time (6 a.m. -> 18:00)",
-            "reteachPrerequisiteId": "mt_4m8BimI4G5"
           },
           {
             "kind": "performance",
-            "pattern": "Omits the leading zero for single-digit hours (6:38 a.m. -> '6:38' not '06:38')",
-            "nextMove": "Scaffold the 'always four digits' convention — a single-digit hour takes a zero in front (06:38); rehearse the formatting, not the conversion itself.",
+            "pattern": "Adds or subtracts 10, omits a leading zero, or leaves a.m./p.m. unspecified.",
+            "revealedBy": "Converts 6 p.m. to 16:00 or 19:30 to 9:30, or writes an ambiguous 12-hour answer.",
+            "nextMove": "Use the day-line to check the 12-hour offset; rehearse display conventions without reteaching an unrelated time operation.",
             "distractor": null,
-            "revealedBy": "Writes a three-digit 24-hour time with no leading zero",
-            "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "When converting FROM 24-hour, subtracts 12 from 12:xx times (12:43 -> '0:43 p.m.') or subtracts 10 instead of 12, or omits a.m./p.m.",
-            "nextMove": "Only subtract 12 from times of 13:00 or later; 12:00-12:59 are already afternoon and stay as 12:xx p.m.; always label a.m./p.m. on the 12-hour answer.",
-            "distractor": null,
-            "revealedBy": "Gives 12:43 as '0:43 p.m.'; or 19:30 as '9:30' (-10); or 19:30 as '7:30' with no p.m.",
-            "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "Writes midnight as 24:00 rather than 00:00",
-            "nextMove": "Anchor on 'a new day starts at midnight, 00:00'; the 24-hour day rolls from 23:59 to 00:00 and never shows 24:00.",
-            "distractor": null,
-            "revealedBy": "Gives midnight as 24:00",
             "reteachPrerequisiteId": null
           }
         ],
         "responseLevels": {
-          "gap": "Applies +/-12 indiscriminately (to a.m. times too, or +10); no leading zero; midnight as 24:00; drops a.m./p.m.",
-          "full": "Converts both directions reliably — adds 12 only to p.m., subtracts 12 only from 13:00 onwards, uses four-digit leading zeros, labels a.m./p.m., and handles midnight (00:00) and noon (12:00).",
-          "partial": "Converts clear p.m. and 24-hour cases correctly, but is caught by a.m. times, the 12:xx noon hour, the leading zero, or midnight/noon."
-        },
-        "diagnosticPrompt": "Set conversions in BOTH directions and WATCH the method: (1) 'Write 3:45 p.m. as a 24-hour time', then 'Write 9:45 a.m. as a 24-hour time.' (2) 'Read 19:30 — what is that in 12-hour time?', then 'What about 12:20?' (3) 'How do you write midnight, and noon, in 24-hour time?' Watch whether they add exactly 12 to p.m. (but not a.m.), use a leading zero, subtract 12 only from 13:00 onwards, keep a.m./p.m. on the answer, and handle midnight and noon.",
-        "whatMakesItDiscriminate": "The a.m. item (9:45 a.m.) catches a child who adds 12 to everything; the 12:20 item catches subtracting 12 from noon-hour times; the midnight/noon item catches 24:00. A child whose rule is 'decide before or after noon, then +/-12' handles all three; a child whose rule is 'just +/-12 the hours' fails exactly these."
+          "gap": "Applies one arithmetic rule indiscriminately or cannot identify which part of the day the notation represents.",
+          "partial": "Handles ordinary morning/afternoon cases but needs support with the 12 o’clock branches or reverse conversion.",
+          "full": "Converts both directions, including ordinary analogue/digital readings, the 12 a.m./p.m. branches and display conventions, and explains an unfamiliar case."
+        }
       },
       "sources": [
         {

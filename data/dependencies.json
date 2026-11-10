@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3999,
+  "edgeCount": 3994,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -361,7 +361,7 @@
       "topicId": "mt_0XxyaQLRhn",
       "prerequisiteId": "mt__N55B7u7HD",
       "strength": "soft",
-      "reason": "GB route: Year 1 experience of hours, minutes and seconds as units of time supports reading o'clock and half-past times; soft because this node is GB-only"
+      "reason": "Experience measuring time in hours and minutes supports discussion of clock readings; timing tool operation is not necessary for every clock-reading route."
     },
     {
       "topicId": "mt_0ZDouU664X",
@@ -1236,8 +1236,8 @@
     {
       "topicId": "mt_2XDGT5tei1",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Knowing 60 min = 1 hour and 24 hours = 1 day extends from measuring time in hours/minutes/seconds"
+      "strength": "soft",
+      "reason": "Measuring time helps illustrate unit relations; operating a timer is not necessary to understand 60 minutes per hour and 24 hours per day."
     },
     {
       "topicId": "mt_2x-EwdBsgl",
@@ -1872,8 +1872,8 @@
     {
       "topicId": "mt_4emC463IyW",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Calculating event durations requires reading time to the minute"
+      "strength": "soft",
+      "reason": "Reading a clock face supports obtaining endpoints; supplied readable time values permit duration calculation without complete analogue clock-reading mastery."
     },
     {
       "topicId": "mt_4fK8Bb8Tr_",
@@ -2023,7 +2023,7 @@
       "topicId": "mt_4m8BimI4G5",
       "prerequisiteId": "mt_HNOPGJYiRK",
       "strength": "hard",
-      "reason": "Extends telling time to include a.m./p.m. and 24-hour notation"
+      "reason": "Five-minute analogue reading supports the clock-reading component; a.m./p.m. distinguishes the two daily occurrences of a 12-hour time."
     },
     {
       "topicId": "mt_4MFUAsbx_6",
@@ -2180,12 +2180,6 @@
       "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
       "reason": "Converting to compatible units supports measurement word problems."
-    },
-    {
-      "topicId": "mt_5J2quSTspi",
-      "prerequisiteId": "mt_4m8BimI4G5",
-      "strength": "hard",
-      "reason": "Writing 3:20 p.m. as 15:20 and 07:05 as 7:05 a.m. relies on knowing which times are before and after midday"
     },
     {
       "topicId": "mt_5J2quSTspi",
@@ -2664,8 +2658,8 @@
     {
       "topicId": "mt_6XCURuNwPw",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Sequencing intervals requires understanding time measurement"
+      "strength": "soft",
+      "reason": "Timing events supplies measured durations; ordering durations already supplied does not require operating a timer."
     },
     {
       "topicId": "mt_6XCURuNwPw",
@@ -7127,12 +7121,6 @@
     },
     {
       "topicId": "mt_d-WZC2OyMB",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "soft",
-      "reason": "Elapsed time problems require choosing between number line and mental methods"
-    },
-    {
-      "topicId": "mt_d-WZC2OyMB",
       "prerequisiteId": "mt_mQcWGh02no",
       "strength": "hard",
       "reason": "Age 7-8 strategic tool use is prerequisite to age 8-9 level"
@@ -7806,8 +7794,8 @@
     {
       "topicId": "mt_EXlmTURK_o",
       "prerequisiteId": "mt_2XDGT5tei1",
-      "strength": "hard",
-      "reason": "Extends knowing minutes in an hour to seconds in a minute and days in months"
+      "strength": "soft",
+      "reason": "Hour/day relations support discussion of time units but do not establish or gate calendar-length and seconds-per-minute knowledge."
     },
     {
       "topicId": "mt_EXO1bJ3G_v",
@@ -10739,15 +10727,9 @@
     },
     {
       "topicId": "mt_IL86kadLSS",
-      "prerequisiteId": "mt_4emC463IyW",
-      "strength": "soft",
-      "reason": "GB route: Year 3 calculating the time taken by events feeds into elapsed-time problem solving; soft because this node is GB-only (both countries keep the hard nearest-minute prerequisite)"
-    },
-    {
-      "topicId": "mt_IL86kadLSS",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Must read time to nearest minute before solving elapsed time problems"
+      "strength": "soft",
+      "reason": "Clock reading supports tasks presented on a clock face; supplied digital times do not require complete analogue nearest-minute mastery."
     },
     {
       "topicId": "mt_IlDaxVr60U",
@@ -14268,8 +14250,8 @@
     {
       "topicId": "mt__N55B7u7HD",
       "prerequisiteId": "mt_TcG90kS8nu",
-      "strength": "hard",
-      "reason": "Measuring time in units requires understanding time comparison language first"
+      "strength": "soft",
+      "reason": "Comparative time language supports discussing measurements, but timing and recording one event do not require comparing events."
     },
     {
       "topicId": "mt_n5_Jt4ExUd",
@@ -19937,12 +19919,6 @@
     },
     {
       "topicId": "mt_UNzojLkNdm",
-      "prerequisiteId": "mt_6XCURuNwPw",
-      "strength": "soft",
-      "reason": "GB route: Year 2 comparing and sequencing intervals of time is the groundwork for recording and comparing durations in seconds, minutes and hours; soft because this node is GB-only"
-    },
-    {
-      "topicId": "mt_UNzojLkNdm",
       "prerequisiteId": "mt_HNOPGJYiRK",
       "strength": "soft",
       "reason": "five-minute reading (the original gate reason) is supportive but not required for every route"
@@ -21206,12 +21182,6 @@
       "prerequisiteId": "mt_Z_Wu_77ybI",
       "strength": "hard",
       "reason": "The periodic table organises elements by their atomic structure — atoms and elements must be understood first"
-    },
-    {
-      "topicId": "mt_WfrE_4r-kY",
-      "prerequisiteId": "mt_5J2quSTspi",
-      "strength": "hard",
-      "reason": "Year 4 conversion between analogue and digital 12- and 24-hour clocks builds on Year 3 reading of 12- and 24-hour times"
     },
     {
       "topicId": "mt_wf-SJhZ1kC",

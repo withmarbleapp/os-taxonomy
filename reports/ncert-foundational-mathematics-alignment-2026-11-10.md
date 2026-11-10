@@ -1,6 +1,6 @@
 # NCERT alignment readiness and first Foundational Maths slice
 
-Accepted base: `4a7ba5a0476c7009694e2b11bfacdfc7343d1062`. This proposal adds **31 associations across 28 existing topics**, in **28 new Indian jurisdiction contexts**, without adding or changing a mastery claim, prerequisite or catalogue record. It reviews one formal goal and its 14 competencies. Associations cover 14 of those 15 records; the remaining record has a documented Gap.
+Original alignment base: `4a7ba5a0476c7009694e2b11bfacdfc7343d1062`. That accepted slice added **31 associations across 28 existing topics**, in **28 new Indian jurisdiction contexts**, without adding or changing a mastery claim, prerequisite or catalogue record. It reviewed one formal goal and its 14 competencies. Associations cover 14 of those 15 records; the remaining record has a documented Gap.
 
 ## Source and stage meaning
 
@@ -44,7 +44,7 @@ The [code-by-code mapping](ncert-foundational-mathematics-alignment-2026-11-10.j
 | C-8.7 | Full | `mt_PZ909yPrEC`, `mt_LpSuPgL31x` | No uncovered source condition identified in this review. |
 | C-8.8 | Full | `mt_KJeEeTutJI`, `mt_Qcp2d_kuta`, `mt_2VR963szuk`, `mt_fEuoBYw6bU`, `mt_qeZYF6HZ4o` | No uncovered source condition identified in this review. |
 | C-8.9 | Partial | `mt_DOe893F6gN`, `mt_e4x3l2JeLI` | Autonomous choice among weighing and volume instruments in the immediate environment remains an observation condition. Using a supplied instrument does not alone establish that choice. |
-| C-8.10 | Partial | `mt_UNzojLkNdm`, `mt_tVvZVWO5d6` | An explicit measured interval expressed in months is not established by the selected topic evidence. The larger year/leap-year facts topic is not a substitute for performing that task. |
+| C-8.10 | Partial | `mt__N55B7u7HD`, `mt_tVvZVWO5d6` | An explicit measured interval expressed in months is not established by the selected topic evidence. The larger year/leap-year facts topic is not a substitute for performing that task. |
 | C-8.11 | Partial | `mt_FIkqA0qhnj`, `mt_pbuhUQJjtt`, `mt_6J1wmCWf41` | The full transaction must still be observed with actual or faithful INR materials within the source limit of INR 100. Numerical money problems and generic coin recognition are component evidence, not proof of that complete local performance. |
 | C-8.12 | Partial | `mt_lMz9nAs7VO` | The measurement-language strand and the breadth of receptive/procedural vocabulary remain unverified by the selected evidence. |
 | C-8.13 | Partial | `mt_fLOkq-HfPB`, `mt_f67qGDhyfi` | Learner-generated problem formulation and transfer across the full shape/space/measurement range remain open. Representing a supplied situation is not automatically inventing the problem. |
@@ -67,3 +67,5 @@ Validation passed: `npm run alignments:generate`, `npm run validate`, `npm run a
 An independent base/current comparison retained all **4,060** prior contexts exactly and found only the **28** new IN contexts. The **28** affected topic records differ only in generated standard lists and derived global age bounds. Every derived age row now includes the official stage start of three; this is a consequence of the stage-window projection, **not a recommendation to assess each full claim at age three**. Dependencies, catalogue, clusters, archived research and authored research records remain unchanged; only the topic checksum binding changes in the research envelope. A long-phrase scan found no eight-word reproduction of the restricted source descriptions in these new reports.
 
 Repository review accepts semantics; downstream publication remains a separate maintenance operation.
+
+A follow-up claim reconciliation against accepted `691911d` on 2026-11-10 preserves the original **31 associations across 28 topics**. The time component of C-8.10 now uses `mt__N55B7u7HD` for actual estimation, measurement and recording, following the [duration/clock claim review](time-duration-clock-claim-review-2026-11-10.md). The calendar contribution, official 3–8 stage window and unresolved month-interval performance condition are retained. This decomposition does not upgrade the Partial judgment.
