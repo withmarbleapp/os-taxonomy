@@ -18,4 +18,4 @@ Six existing shared topics supply strategy, comprehension, instruction, descript
 
 The existing asking-questions → question-words dependency changes from hard to soft, identically to the reviewed correction in [PR116](https://github.com/withmarbleapp/os-taxonomy/pull/116). A relevant clarification can succeed without the complete English question-word inventory. Retain that inventory as useful learning, and reconcile the identical shared edit when either PR is accepted. All other dependencies and old context intervals remain intact.
 
-Validation: alignment generation, dataset validation, generated check and 108 tests pass. Historical pilot dispositions remain labelled as historical; no English-to-French learner mastery transfer is inferred.
+Validation: alignment generation, dataset validation, generated check and 110 tests pass. Historical pilot dispositions remain labelled as historical; no English-to-French learner mastery transfer is inferred.
