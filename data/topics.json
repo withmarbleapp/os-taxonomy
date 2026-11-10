@@ -805,8 +805,8 @@
       "domain": "Digital Systems",
       "name": "Hardware and software",
       "description": "Recognise that digital systems are made of hardware (the parts you can touch, such as the screen, buttons and camera) and software (the apps and programs that tell the hardware what to do), and explore a device or app to achieve a simple purpose",
-      "ageRangeStart": 5,
-      "ageRangeEnd": 6,
+      "ageRangeStart": 3,
+      "ageRangeEnd": 8,
       "centrality": 0.02439024390243903,
       "evidence": [
         "Point to two hardware parts of a tablet or computer (e.g. the screen and the camera) and name an app on it as software",
@@ -815,7 +815,11 @@
       ],
       "assessmentPrompt": "When {{name}} uses a tablet, can they tell you which parts are hardware they can touch (like the screen or camera) and which are apps — and use one app to do something, like take a photo?",
       "standards": [
-        "acara-v9:AC9TDIFK01"
+        "acara-v9:AC9TDIFK01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G1-C7.3-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G2-C7.3-LO02",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-7"
       ]
     },
     {
@@ -7290,6 +7294,7 @@
         "ccss-ela:SL.3.6",
         "ccss-ela:SL.K.4",
         "ccss-ela:SL.K.6",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G1-G2-C7.1-LO01",
         "ncert-fs-2025:IN-NCERT-FS-2025-EN-L2-G1-C9.3-LO02",
         "ncert-fs-2025:IN-NCERT-FS-2025-EN-L2-G1-C9.6-LO01",
         "ncert-fs-2025:IN-NCERT-FS-2025-EN-L2-G2-C9.3-LO01",
@@ -13674,7 +13679,7 @@
       "domain": "Learning to Learn",
       "name": "Understanding Why",
       "description": "Go beyond knowing *that* something is true — ask *why* it is true and *how* it works",
-      "ageRangeStart": 8,
+      "ageRangeStart": 6,
       "ageRangeEnd": 9,
       "centrality": 0.07926829268292683,
       "evidence": [
@@ -13683,7 +13688,9 @@
         "Show deeper understanding by connecting a new idea to something they already know — e.g. 'Oh, that's like when we...'"
       ],
       "assessmentPrompt": "Does {{name}} often ask 'but why?' when they learn a fact — wanting to understand the reason behind it rather than just accepting it?",
-      "standards": []
+      "standards": [
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO03"
+      ]
     },
     {
       "id": "mt_q7zxOloj_L",
@@ -17164,7 +17171,7 @@
       "domain": "Data & Statistics",
       "name": "Sorting into categories",
       "description": "Classify objects into given categories, count the number in each category, and sort the categories by count",
-      "ageRangeStart": 5,
+      "ageRangeStart": 3,
       "ageRangeEnd": 8,
       "centrality": 0.2682926829268293,
       "evidence": [
@@ -17181,6 +17188,7 @@
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.1-LO01",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.4-LO01",
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.1-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-D1.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-D1.4"
       ]
@@ -17466,7 +17474,9 @@
       "assessmentPrompt": "If {{name}} sorted the family's shoes into a diagram by 'has laces' and 'is black', could they put the shoes that are both in the middle and answer questions like 'how many black shoes have no laces?'",
       "standards": [
         "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.1-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.1",
         "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-7",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-D1.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-D1.2",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-D1.5",
@@ -31342,7 +31352,7 @@
       "domain": "Design & Technology",
       "name": "Cutting, joining and shaping safely",
       "description": "Use materials, components, tools, equipment and techniques to safely make designed solutions: measuring and cutting, joining with tape, glue, split pins or staples, and folding, rolling and shaping card, fabric or recycled materials",
-      "ageRangeStart": 5,
+      "ageRangeStart": 3,
       "ageRangeEnd": 12,
       "centrality": 0.02134146341463415,
       "evidence": [
@@ -31354,6 +31364,10 @@
       "standards": [
         "acara-v9:AC9TDE2P02",
         "acara-v9:AC9TDEFP01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G1-C7.3-LO01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G2-C7.3-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-7",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.3",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.4",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D2.7",
@@ -36685,6 +36699,8 @@
       "assessmentPrompt": "Can {{name}} explain why a plant on the windowsill grows better than one left in a dark cupboard?",
       "standards": [
         "acara-v9:AC9S1I01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO03",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
         "ngss-k5:2-LS2-1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
@@ -38731,7 +38747,7 @@
       "domain": "Scientific Inquiry",
       "name": "Did it happen as predicted?",
       "description": "With guidance, compare what was observed in a simple investigation with the prediction made beforehand, and say whether the prediction matched",
-      "ageRangeStart": 4,
+      "ageRangeStart": 3,
       "ageRangeEnd": 12,
       "centrality": 0.04674796747967479,
       "evidence": [
@@ -38744,6 +38760,8 @@
         "acara-v9:AC9S1I05",
         "acara-v9:AC9S2I05",
         "acara-v9:AC9SFI04",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.2",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A1.2",
@@ -38760,7 +38778,7 @@
       "domain": "Scientific Inquiry",
       "name": "Observing with simple equipment",
       "description": "Observe closely using simple equipment such as hand lenses, and use observations to describe, compare, and identify things",
-      "ageRangeStart": 4,
+      "ageRangeStart": 3,
       "ageRangeEnd": 12,
       "centrality": 0.1138211382113821,
       "evidence": [
@@ -38780,6 +38798,9 @@
         "acara-v9:AC9SFH01",
         "acara-v9:AC9SFI02",
         "acara-v9:AC9SFI05",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G1-G2-C7.1-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.3",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.2",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.3",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.1",
@@ -38800,7 +38821,7 @@
       "domain": "Scientific Inquiry",
       "name": "Simple tests and experiments",
       "description": "Perform simple tests and use observations and ideas to suggest answers to questions",
-      "ageRangeStart": 4,
+      "ageRangeStart": 3,
       "ageRangeEnd": 12,
       "centrality": 0.06910569105691057,
       "evidence": [
@@ -38813,6 +38834,11 @@
         "acara-v9:AC9S1I02",
         "acara-v9:AC9S1I05",
         "acara-v9:AC9SFI02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO05",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-7",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.2",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.4",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.2",
@@ -38881,6 +38907,7 @@
         "acara-v9:AC9TDE4P02",
         "acara-v9:AC9TDEFP01",
         "acara-v9:AC9TDI4P03",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-G2-C7.3-LO01",
         "ngss-k5:K-2-ETS1-2",
         "the-ontario-curriculum-language-2023:ON-LANG-2023-G1-A2.6",
         "the-ontario-curriculum-language-2023:ON-LANG-2023-G2-A2.6",
@@ -39011,7 +39038,7 @@
       "domain": "Scientific Inquiry",
       "name": "Drawing conclusions from evidence",
       "description": "Report on findings from enquiries using oral and written explanations, draw simple conclusions, make predictions, and suggest improvements",
-      "ageRangeStart": 6,
+      "ageRangeStart": 3,
       "ageRangeEnd": 12,
       "centrality": 0.08130081300813008,
       "evidence": [
@@ -39030,6 +39057,10 @@
         "acara-v9:AC9S3I05",
         "acara-v9:AC9S3I06",
         "acara-v9:AC9S4I05",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO04",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO05",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A1.5",
@@ -39351,7 +39382,7 @@
       "domain": "Scientific Inquiry",
       "name": "How data builds explanations",
       "description": "Examine how people use relevant data and observations to develop and check scientific explanations, recognising that data showing a change (e.g. a count) does not by itself explain the cause, and that an explanation is supported when the relevant observations fit it",
-      "ageRangeStart": 8,
+      "ageRangeStart": 3,
       "ageRangeEnd": 9,
       "centrality": 0.08231707317073171,
       "evidence": [
@@ -39361,7 +39392,10 @@
       ],
       "assessmentPrompt": "If {{name}} measures their shadow at different times of day and watches how high the sun is, can they use both to explain why the shadow gets shorter and longer?",
       "standards": [
-        "acara-v9:AC9S3H01"
+        "acara-v9:AC9S3H01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO05",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-7.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-GOAL-CG-7"
       ]
     },
     {
@@ -40630,6 +40664,7 @@
       "standards": [
         "acara-v9:AC9HP2P06",
         "acara-v9:AC9TDE2K04",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4"
@@ -42222,6 +42257,7 @@
       "standards": [
         "acara-v9:AC9HP2P06",
         "acara-v9:AC9HPFP06",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E1.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E1.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.6"
