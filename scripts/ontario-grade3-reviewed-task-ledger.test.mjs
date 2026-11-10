@@ -23,3 +23,26 @@ for (const name of ['population-land-use', 'history-comparison']) {
     }
   });
 }
+test('historical inquiry keeps overall community duty distinct from specific minima and both map media', () => {
+  const report = read('reports/ontario-grade3-historical-inquiry-review-2026-11-10.json');
+  const conditions = report.protocol.performanceConditions;
+  const required = conditions.communityRequirements;
+  for (const category of ['First Nations', 'Métis', 'Inuit']) {
+    assert.ok(required.overallAllRequired.includes(category));
+    assert.ok(required.actualCaseUse.some(item => item.category === category && item.caseId));
+  }
+  assert.equal(required.specificMinimumDoesNotReplaceOverall, true);
+  for (const operation of ['mapAnalysis', 'mapConstruction']) {
+    assert.ok(conditions[operation].includes('print'));
+    assert.ok(conditions[operation].includes('digital'));
+  }
+  for (const code of report.reviewedCodes) {
+    const row = ledger.expectations.find(item => item.code === code);
+    assert.equal(row?.disposition, 'Full');
+    assert.equal(row.dossier, 'ontario-grade3-historical-inquiry-review-2026-11-10.json');
+    assert.ok(report.protocol.performanceConditions.communityRequirements.actualCaseUse.length >= 3);
+    for (const [topicId, codes] of Object.entries(report.proposedAssociations)) {
+      if (codes.includes(code)) assert.ok(contexts.some(context => context.topicId === topicId && context.country === 'CA' && context.region === 'Ontario' && context.ageRangeStart === 8 && context.ageRangeEnd === 9 && context.standards.includes(prefix + code)));
+    }
+  }
+});
