@@ -3,21 +3,21 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "scope": "Ontario Grade4 Social Studies, ages9–10; actual course edition2018 under accepted aggregateON-SSHG-2026.",
-  "status": "In-progress source-fit authoring review: three Full clauses and a political-geography component; Grade4 remains incomplete.",
+  "status": "In-progress source-fit authoring review: four Full clauses;38remain under qualification. Not Grade4 completion or learner attainment.",
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
-    "Full": 3,
-    "Partial": 1,
+    "Full": 4,
+    "Partial": 0,
     "Unverified": 38,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 5,
-    "topics": 5,
+    "pairs": 6,
+    "topics": 6,
     "codes": 4,
     "newClaims": 2,
-    "reusedClaims": 3
+    "reusedClaims": 4
   },
   "expectations": [
     {
@@ -340,15 +340,15 @@
     },
     {
       "code": "B3.5",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
-        "mt_vf32z1-7s9"
+        "mt_vf32z1-7s9",
+        "mt_Lcqm4_wR4D"
       ],
-      "remainingConditions": [
-        "Attributed descriptions of some peoples living in the identified Canadian regions, with actual location/resource task, remain under qualification; map/capital inventory does not establish these."
-      ],
-      "dossier": "ontario-canadian-political-geography-claim-2026-11-10.json",
-      "rationale": "Complete thirteen-division/capital representation is accounted for by a bounded independent knowledge claim. The source’s peoples requirement remains separate."
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-peoples-location-review-2026-11-10.json",
+      "rationale": "Complete13division/capital/location knowledge plus attributed peoples/location descriptions for each region, retaining distinct-peoples/diversity and actual creator/perspective checks; no regional exclusivity or ethnic inventory inferred.",
+      "protocolReference": "/protocol"
     },
     {
       "code": "B3.6",
@@ -366,8 +366,9 @@
         "mt_w4cUnN_SsQ"
       ],
       "remainingConditions": [],
-      "protocolReference": "ontario-grade4-direction-grid-reuse-2026-11-10.json#/protocol",
-      "rationale": "Unchanged grid/map operations plus explicit eight-direction, print/digital and political/physical-region task requirements; full prerequisite performance checked separately without certifying runtime selection readiness."
+      "protocolReference": "/protocol",
+      "rationale": "Unchanged grid/map operations plus explicit eight-direction, print/digital and political/physical-region task requirements; full prerequisite performance checked separately without certifying runtime selection readiness.",
+      "dossier": "ontario-grade4-direction-grid-reuse-2026-11-10.json"
     }
   ],
   "dependency": {

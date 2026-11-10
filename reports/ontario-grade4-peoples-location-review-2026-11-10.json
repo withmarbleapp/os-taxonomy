@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "22004c1c6fcff40b604c34243d19144a5b73672b",
+  "status": "Reviewed source-fit resource/task design for B3.5; entire requirement combines the earlier independent map/capital claim with this peoples/location protocol, not attainment from a statistical table.",
+  "code": "B3.5",
+  "sourceEdition": 2018,
+  "officialSource": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+  "contributors": [
+    {
+      "topicId": "mt_vf32z1-7s9",
+      "role": "Complete independent13division/capital knowledge with broad locations and map transfer, retained exactly."
+    },
+    {
+      "topicId": "mt_Lcqm4_wR4D",
+      "role": "Distinct contemporary First Nations, Métis and Inuit peoples, community diversity and attributed creator/perspective limits. Regional table supplies actual located examples, not ethnic stereotyping or automatic whole-topic mastery."
+    }
+  ],
+  "resources": [
+    {
+      "id": "statcan-2021-regional-identities",
+      "publisher": "Statistics Canada",
+      "url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810026401",
+      "download": "https://www150.statcan.gc.ca/n1/tbl/csv/98100264-eng.zip",
+      "edition": "2021 Census of Population; Table98-10-0264-01",
+      "actualReadback": "Actual full official CSV and metadata read; selected all13province/territory rows with total age,gender,status and residence-on/off-reserve, count statistic. All three single-identity categories have positive reported counts in every selected row.",
+      "limits": [
+        "Population in private households;25%sample. Census estimates and incomplete enumeration of some reserves/settlements are explicit limitations.",
+        "Only qualitative reported residence/presence is used. No exact population recall, proportions, majority, ranks, legal status or community-membership conclusion is required.",
+        "Single-response categories are examples, not an exhaustive account: multiple identities, other residents and within-group diversity remain. Location does not determine a person’s identity.",
+        "The source is dated2021, not a claim every person remains at the same address in2026."
+      ]
+    },
+    {
+      "id": "political-map-and-capitals",
+      "publisher": "Natural Resources Canada and Government of Canada",
+      "url": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/can_eng.pdf",
+      "currentTable": "https://www.canada.ca/en/intergovernmental-affairs/services/provinces-territories.html",
+      "limits": [
+        "Retain dated-map/current-table verification and legible inset conditions from the reviewed political-geography dossier.",
+        "Political regions do not establish Indigenous traditional/treaty territories."
+      ]
+    },
+    {
+      "id": "attributed-metis-voice",
+      "publisher": "Crown-Indigenous Relations and Northern Affairs Canada; Maxime Morin’s attributed interview",
+      "url": "https://www.rcaanc-cirnac.gc.ca/eng/1757518046607/1757518077925",
+      "actualReadback": "Complete2025body/transcript previously read. Use an adult-selected, age-appropriate contemporary language/community-education account, keeping the speaker’s Métis identity and Île-à-la-Crosse/Saskatchewan case location explicit.",
+      "limits": [
+        "This individual narrative is one perspective, not every Métis person or every Saskatchewan resident.",
+        "No traumatic detail, forgiveness norm, target-language competence or backdating of twentieth-century experience is required."
+      ]
+    }
+  ],
+  "regionalResourceRows": [
+    {
+      "region": "Newfoundland and Labrador",
+      "location": "Atlantic Canada, including Newfoundland island and mainland Labrador",
+      "capital": "St. John’s",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Prince Edward Island",
+      "location": "Atlantic Canada, an island in the Gulf of St. Lawrence",
+      "capital": "Charlottetown",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Nova Scotia",
+      "location": "Atlantic Canada, east/southeast of New Brunswick",
+      "capital": "Halifax",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "New Brunswick",
+      "location": "Atlantic Canada, beside Quebec and Nova Scotia",
+      "capital": "Fredericton",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Quebec",
+      "location": "eastern Canada, east of Ontario",
+      "capital": "Quebec City",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Ontario",
+      "location": "central/eastern Canada, between Manitoba and Quebec",
+      "capital": "Toronto",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Manitoba",
+      "location": "Prairie Canada, east of Saskatchewan and west of Ontario",
+      "capital": "Winnipeg",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Saskatchewan",
+      "location": "Prairie Canada, between Alberta and Manitoba",
+      "capital": "Regina",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Alberta",
+      "location": "western Canada, east of British Columbia",
+      "capital": "Edmonton",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "British Columbia",
+      "location": "Pacific Canada, west of Alberta",
+      "capital": "Victoria",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Yukon",
+      "location": "northwestern Canada, west of the Northwest Territories",
+      "capital": "Whitehorse",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Northwest Territories",
+      "location": "northern Canada, between Yukon and Nunavut",
+      "capital": "Yellowknife",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    },
+    {
+      "region": "Nunavut",
+      "location": "northern Canada, including mainland and Arctic islands east of the Northwest Territories",
+      "capital": "Iqaluit",
+      "peoplesExamples": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "qualifiedDescription": "The 2021 census table reports people identifying with each of these distinct Indigenous peoples living in this region. These are examples among its residents, not an exclusive or exhaustive identity list.",
+      "sourceId": "statcan-2021-regional-identities"
+    }
+  ],
+  "protocol": {
+    "preparation": [
+      "Provide a legible actual Canada political map/current capital table and the13attributed regional resource rows. Point out the2021date and the simplified qualitative use of the statistical source. Do not turn percentages or ethnic lists into a new memorization curriculum.",
+      "Prepare an age-appropriate selected narrative from Maxime Morin’s attributed contemporary community account and its actual speaker/location information. It complements the regional examples; it does not speak for every member of a people."
+    ],
+    "actions": [
+      "After study, complete the independent political-geography claim: name/locate all13divisions and capitals, distinguish province/territory/national capital roles, and recognize them in a changed map style. Retain the prior no-answer-label check; a resource lookup is not a replacement for that whole claim.",
+      "For EACH province and territory, use the attributed row alongside the actual map to describe its broad location and identify some peoples whose residents were reported there in2021. Say explicitly that the examples are neither all residents nor people exclusive to that region; First Nations, Métis and Inuit are distinct peoples with diverse communities. Resource-supported description is acceptable; no universal rote ethnic inventory is imposed.",
+      "Explain why an Inuit person may live outside Nunavut and why a province or capital name cannot tell you a particular resident’s identity. The table provides examples of residence, not traditional territory boundaries, citizenship adjudication or cultural behaviour.",
+      "Listen/read the selected Métis narrator’s actual account, identify the speaker and Saskatchewan case, and explain that this particular experience does not establish what every Métis person experiences. Independently name the three distinct Indigenous peoples and their continuing present-day communities, preserving the complete existing Lcqm claim.",
+      "Transfer by describing the location and source-attributed peoples examples for a differently ordered region on another accurate map; distinguish an unsupported identity/generalization from the source-supported limited description."
+    ],
+    "positive": "Complete map/capital knowledge plus actual resource-supported peoples/location descriptions for all13regions, with distinct peoples, contemporary diversity and attributed perspective limits.",
+    "nearMiss": [
+      "Names all capitals but gives no peoples/location description for several regions.",
+      "Says every resident of Nunavut is Inuit or only Nunavut has Inuit residents.",
+      "Infers a person’s identity or traditional territory from a provincial label.",
+      "Uses an individual interview as the voice of all Métis people."
+    ],
+    "performanceConditions": {
+      "regionCoverage": "all13provinces/territories",
+      "peoplesDescriptions": "attributed regional examples, not exhaustive/exclusive identity inventories",
+      "wholeClaims": [
+        "complete13division-capital-location map transfer",
+        "three distinct Indigenous peoples and contemporary diversity",
+        "actual attributed creator/perspective check"
+      ],
+      "sourceDate": 2021,
+      "statisticalInference": "presence only; no counts/proportions/majority or membership inference"
+    },
+    "limits": [
+      "Full is source-fit authoring design, not evidence a learner completed it.",
+      "The optional Native Languages programme remains excluded; learning ABOUT peoples and their located communities is not target-language proficiency.",
+      "No new claim or ethnic/country clone is needed; source-specific residence facts are kept in the resource protocol."
+    ]
+  },
+  "proposedAssociations": {
+    "mt_Lcqm4_wR4D": [
+      "B3.5"
+    ]
+  },
+  "readiness": "Existing Lcqm whole claim already spans primary ages6–12. A separate exact CA9–10association preserves every earlier interval and claim; no hard prerequisites or learner-mastery inference."
+}
