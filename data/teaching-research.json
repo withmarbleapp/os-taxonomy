@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "a901c53c75e3b08de0c9d62197be14e3e3e731f621d0d31bfe58ebff6494b906",
-  "recordCount": 1051,
+  "topicFileSha256": "4cce58be51f8dd0a9ff3beaeff6e40f71a5028f4e664ada0d48fcba303d5f524",
+  "recordCount": 1053,
   "coverage": {
-    "topicCount": 1863,
-    "withResearch": 1051,
+    "topicCount": 1865,
+    "withResearch": 1053,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 23,
-        "withResearch": 1,
+        "topics": 25,
+        "withResearch": 3,
         "withoutResearch": 22
       },
       "History": {
@@ -215581,6 +215581,273 @@
         "originalResearchGeneratedBy": "Taxonomy curation: source-verified community knowledge and original untested teaching design",
         "createdAt": "2026-11-10T21:53:33.909328Z",
         "updatedAt": "2026-11-10T21:53:33.909328Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_QDM6Rc6pph",
+      "pedagogy": {
+        "summary": "Teach a bounded attributed community repertoire, check particular knowledge independently, then compare without universalising. Original low-confidence design.",
+        "bestPractices": [
+          "Keep each place, institution/activity and contribution together.",
+          "Require the actual learned case facts rather than a generic cultural-respect response.",
+          "Keep the factual account and French listening/speaking/reading/writing performances distinct."
+        ],
+        "keyRepresentations": [
+          "Three attributed community case cards",
+          "An accurate broad place reference",
+          "A place–activity–contribution comparison with source limits"
+        ],
+        "commonMisconceptions": [
+          "Every resident shares one language, ancestry or practice.",
+          "A city name or positive feeling supplies cultural knowledge.",
+          "An institutional mission proves every claimed worldwide impact."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Know a bounded contemporary repertoire of French-speaking community life in Quebec through Montréal and Québec City, with the Baie-Saint-Paul origins of one studied creative organisation. Connect the book salon, museum and circus-creation examples to their actual places, cultural activities and supported contributions, while distinguishing a city or language from everybody’s identity and practices.",
+        "activities": [
+          {
+            "title": "Place, cultural work and contribution",
+            "learnerActions": [
+              "Prepare the three attributed case cards and an accurate broad location reference. Read the actual institutional texts and clarify institution, city/community and region before teaching the original French paraphrases. A name on a map does not establish everyone’s identity.",
+              "Study this attributed case: À Montréal, le Salon du livre réunit des lecteurs et des personnes qui créent des livres. Il fait découvrir des livres du Québec et d’autres pays et propose des échanges autour de la lecture. Source limit: Actual institutional activity/mission, not every resident’s hobby, a particular book plot, event schedule or demonstrated impact.",
+              "Study this attributed case: Dans la ville de Québec, le Musée de la civilisation conserve des objets et présente des expositions. Il aide à découvrir des histoires et des cultures. Sa mission comprend une présence du Québec dans un réseau international de musées. Source limit: Do not claim a particular unseen exhibit, institutional mission as measured efficacy, one exclusive people’s history or current ticket/transport details.",
+              "Study this attributed case: Le Cirque du Soleil vient d’une troupe de Baie-Saint-Paul, au Québec. Son lieu de création international se trouve à Montréal. Des artistes de plusieurs origines y créent des spectacles présentés dans le monde. Source limit: Origins and current creation base differ. No show language, adult performance contents, employee/audience counts, superlative, colonial discovery narrative or acrobatic imitation is required.",
+              "After supported study, remove the complete fact captions and ask for the learned locations, activities and contributions. Permit ordinary language, pointing plus explanation or another accessible expression for the knowledge check; the curriculum’s actual French channel tasks are separate.",
+              "Compare a fresh attributed community account, including the prior France music and UK reading cases. Identify a supported similarity/difference and what the account does not establish. Connect an actual non-sensitive own/class/community cultural experience such as a shared book discussion; never invent a learner biography.",
+              "Repeat with a changed view or question about an actual contribution. Neither repeating names, expressing pride nor saying every culture is nice supplies the particular learned community knowledge."
+            ],
+            "intendedInsight": "Particular communities create and share varied cultural work; accurate location, activity and contribution facts support comparison without defining everyone’s identity.",
+            "feedback": [
+              "Ask which named place and actual cultural activity supports the explanation.",
+              "Separate the institution’s stated mission from measured impact; revisit the source when an invented fact or stereotype appears.",
+              "Use changed representations after study to check meaningful retrieval rather than caption copying."
+            ],
+            "rationale": "Original, untested knowledge-learning design; institutional factual verification is distinct from teaching efficacy.",
+            "sourceClaims": [
+              "The Montreal book organisation brings readers and book creators together and promotes regional, national and international editorial production and exchange.",
+              "The institution conserves collections, presents cultural/educational exhibitions and has a stated international museum-network role.",
+              "The museum identifies its location in Québec City, distinct from the province name.",
+              "The Quebec artistic company arose from a Baie-Saint-Paul street troupe, has its international creation headquarters in Montreal and presents artistic work internationally."
+            ]
+          }
+        ],
+        "constraints": [
+          "No current ticket/date/audience/population facts or full artwork/book/film contents are inferred.",
+          "No compulsory pride, enjoyment, personal disclosure, attendance, religious practice or physical imitation.",
+          "The source-specific French channel performance is checked separately using the actual introduced corpus and protocols; a stronger-language factual answer alone cannot certify that performance.",
+          "Original graded French paraphrases are teaching texts, not authentic community testimony. Prepare a qualified fluent model and suitable accurate visuals before use.",
+          "Actual institutional activity/mission, not every resident’s hobby, a particular book plot, event schedule or demonstrated impact.",
+          "Do not claim a particular unseen exhibit, institutional mission as measured efficacy, one exclusive people’s history or current ticket/transport details.",
+          "Origins and current creation base differ. No show language, adult performance contents, employee/audience counts, superlative, colonial discovery narrative or acrobatic imitation is required."
+        ],
+        "reviewNotes": [
+          "2026-11-10: full closest geographic, local-history, diversity, identity and Ontario-community claims compared. The particular new regional knowledge is absent; their actual claims and guides remain unchanged. These activities have not been evaluated as an intervention."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying French-speaking community life in Quebec, can {{name}} connect Montréal’s book salon, Québec City’s museum and the circus’s Baie-Saint-Paul origins and Montréal creation base with what they contribute? Compare another supplied community account without assuming everyone shares one practice.",
+        "correctAnswer": "Identifies the studied community places and explains all three actual attributed activity/contribution cases, then makes a supported comparison using the supplied new account without universalising.",
+        "whatMakesItDiscriminate": "Independent particular knowledge and place/activity/contribution explanation distinguish this from generic respect, a French greeting, copying a caption or a country-capital inventory. A new attributed case tests supported comparison and limits.",
+        "probeDeeper": [
+          "Which place and institution or creative work does that fact concern?",
+          "What does the work share or contribute beyond its name?",
+          "What does the new account support, and what should we not assume about everyone?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "A generic language/city label replaces the particular facts or defines every resident.",
+            "revealedBy": "Cannot connect the learned activities to their actual locations/contributions, or invents a universal identity/custom.",
+            "nextMove": "Rebuild the separate attributed case cards and recheck one supported contribution with a changed view.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable particular community/place/contribution account, or only stereotypes.",
+          "partial": "Names some cases but cannot explain all three or apply source limits in the supplied comparison.",
+          "full": "Explains all three located cultural-activity cases and supported contributions, then compares a supplied new account without treating everybody’s identity or practices as the same."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.salondulivredemontreal.com/a-propos/missions-et-valeurs",
+          "source": "Salon du livre de Montréal — mission",
+          "claim": "The Montreal book organisation brings readers and book creators together and promotes regional, national and international editorial production and exchange.",
+          "verified": true
+        },
+        {
+          "url": "https://mcq.org/a-propos/profil-institutionnel/",
+          "source": "Musée de la civilisation — institutional profile",
+          "claim": "The institution conserves collections, presents cultural/educational exhibitions and has a stated international museum-network role.",
+          "verified": true
+        },
+        {
+          "url": "https://mcq.org/visiter/emplacement-et-acces/",
+          "source": "Musée de la civilisation — location",
+          "claim": "The museum identifies its location in Québec City, distinct from the province name.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cirquedusoleil.com/fr/press/kits/corporate/%C3%A0-propos-du-cirque",
+          "source": "Cirque du Soleil — corporate history and creation headquarters",
+          "claim": "The Quebec artistic company arose from a Baie-Saint-Paul street troupe, has its international creation headquarters in Montreal and presents artistic work internationally.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: factual-source review and original untested teaching design",
+        "createdAt": "2026-11-10T22:44:34.279803Z",
+        "updatedAt": "2026-11-10T22:44:34.279803Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_j6g97xxB-c",
+      "pedagogy": {
+        "summary": "Teach a bounded attributed community repertoire, check particular knowledge independently, then compare without universalising. Original low-confidence design.",
+        "bestPractices": [
+          "Keep each place, institution/activity and contribution together.",
+          "Require the actual learned case facts rather than a generic cultural-respect response.",
+          "Keep the factual account and French listening/speaking/reading/writing performances distinct."
+        ],
+        "keyRepresentations": [
+          "Three attributed community case cards",
+          "An accurate broad place reference",
+          "A place–activity–contribution comparison with source limits"
+        ],
+        "commonMisconceptions": [
+          "Every resident shares one language, ancestry or practice.",
+          "A city name or positive feeling supplies cultural knowledge.",
+          "An institutional mission proves every claimed worldwide impact."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Know a bounded contemporary repertoire of French-speaking communities in eastern, western and northern Canada. Locate the studied Moncton, Saint-Boniface and Whitehorse cases broadly, connect their film, festival and community-exhibition activities with supported contributions, and compare the cases without assigning one uniform identity or culture to a city, region or language.",
+        "activities": [
+          {
+            "title": "Place, cultural work and contribution",
+            "learnerActions": [
+              "Prepare the three attributed case cards and an accurate broad location reference. Read the actual institutional texts and clarify institution, city/community and region before teaching the original French paraphrases. A name on a map does not establish everyone’s identity.",
+              "Study this attributed case: À Moncton, au Nouveau-Brunswick, le FICFA présente des films en français et fait connaître le cinéma acadien. Son palmarès de 2025 nomme des films du Canada et de la Belgique. Le festival relie ainsi la culture acadienne à une francophonie canadienne et internationale. Source limit: No inference that all Acadians attend, that every resident is Acadian, a particular film plot, statistics, current screenings or a largest/only ranking.",
+              "Study this attributed case: À Saint-Boniface, au Manitoba, le Festival du Voyageur partage de la musique, de la danse et d’autres arts. Il propose aussi des activités sur des histoires francophones, métisses et des Premières Nations. Le fort utilisé pour l’interprétation historique est une reconstruction moderne. Source limit: A contemporary cultural/interpretive activity, not a surviving 1815 fort or every person’s identity. No programme, attendance, costume or obligatory enjoyment inventory.",
+              "Study this attributed case: À Whitehorse, au Yukon, l’Association franco-yukonnaise organise des activités et soutient la vie en français. Le Centre de la francophonie présente des expositions. Une fresque créée en 2026 avec des artistes et des élèves montre une contribution à la culture de cette communauté du Nord. Source limit: The mural caption was read; the image is not used as visually inspected documentary evidence. No demographic projection, universal symbol interpretation, an assumption that all Yukon residents are French-speaking or erasure of continuing First Nation territories.",
+              "After supported study, remove the complete fact captions and ask for the learned locations, activities and contributions. Permit ordinary language, pointing plus explanation or another accessible expression for the knowledge check; the curriculum’s actual French channel tasks are separate.",
+              "Compare a fresh attributed community account, including the prior France music and UK reading cases. Identify a supported similarity/difference and what the account does not establish. Connect an actual non-sensitive own/class/community cultural experience such as a shared book discussion; never invent a learner biography.",
+              "Repeat with a changed view or question about an actual contribution. Neither repeating names, expressing pride nor saying every culture is nice supplies the particular learned community knowledge."
+            ],
+            "intendedInsight": "Particular communities create and share varied cultural work; accurate location, activity and contribution facts support comparison without defining everyone’s identity.",
+            "feedback": [
+              "Ask which named place and actual cultural activity supports the explanation.",
+              "Separate the institution’s stated mission from measured impact; revisit the source when an invented fact or stereotype appears.",
+              "Use changed representations after study to check meaningful retrieval rather than caption copying."
+            ],
+            "rationale": "Original, untested knowledge-learning design; institutional factual verification is distinct from teaching efficacy.",
+            "sourceClaims": [
+              "The Moncton-based festival promotes francophone cinema in Atlantic Canada and shares Acadian cinema within Canadian and international francophonie.",
+              "The francophone organisation presents several artistic disciplines and educational interpretation involving Francophone, Métis and First Nation histories; its Fort Gibraltar is a modern reconstruction.",
+              "The actually viewed page locates the festival in Saint-Boniface and its francophone mission in Manitoba.",
+              "The Whitehorse association supports French-language community services and cultural activities in Yukon.",
+              "Its Whitehorse centre presents exhibitions; the attributed 2026 mural involved artists Maya Chartier and Aurore Favier and local pupils.",
+              "The actual published 2025 results include Canadian and Belgian works, documenting international programming/recognition beyond an aspirational mission statement."
+            ]
+          }
+        ],
+        "constraints": [
+          "No current ticket/date/audience/population facts or full artwork/book/film contents are inferred.",
+          "No compulsory pride, enjoyment, personal disclosure, attendance, religious practice or physical imitation.",
+          "The source-specific French channel performance is checked separately using the actual introduced corpus and protocols; a stronger-language factual answer alone cannot certify that performance.",
+          "Original graded French paraphrases are teaching texts, not authentic community testimony. Prepare a qualified fluent model and suitable accurate visuals before use.",
+          "No inference that all Acadians attend, that every resident is Acadian, a particular film plot, statistics, current screenings or a largest/only ranking.",
+          "A contemporary cultural/interpretive activity, not a surviving 1815 fort or every person’s identity. No programme, attendance, costume or obligatory enjoyment inventory.",
+          "The mural caption was read; the image is not used as visually inspected documentary evidence. No demographic projection, universal symbol interpretation, an assumption that all Yukon residents are French-speaking or erasure of continuing First Nation territories.",
+          "The international-role explanation uses the actual published 2025 results alongside the stated mandate. It does not measure worldwide influence or infer every film’s language from its country of production."
+        ],
+        "reviewNotes": [
+          "2026-11-10: full closest geographic, local-history, diversity, identity and Ontario-community claims compared. The particular new regional knowledge is absent; their actual claims and guides remain unchanged. These activities have not been evaluated as an intervention."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying French-speaking community life in eastern, western and northern Canada, can {{name}} identify the Moncton, Saint-Boniface and Whitehorse cases and explain what their cinema, festival and community exhibitions contribute? Use a new supplied account for a supported comparison without assuming everyone lives alike.",
+        "correctAnswer": "Identifies the studied community places and explains all three actual attributed activity/contribution cases, then makes a supported comparison using the supplied new account without universalising.",
+        "whatMakesItDiscriminate": "Independent particular knowledge and place/activity/contribution explanation distinguish this from generic respect, a French greeting, copying a caption or a country-capital inventory. A new attributed case tests supported comparison and limits.",
+        "probeDeeper": [
+          "Which place and institution or creative work does that fact concern?",
+          "What does the work share or contribute beyond its name?",
+          "What does the new account support, and what should we not assume about everyone?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "A generic language/city label replaces the particular facts or defines every resident.",
+            "revealedBy": "Cannot connect the learned activities to their actual locations/contributions, or invents a universal identity/custom.",
+            "nextMove": "Rebuild the separate attributed case cards and recheck one supported contribution with a changed view.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable particular community/place/contribution account, or only stereotypes.",
+          "partial": "Names some cases but cannot explain all three or apply source limits in the supplied comparison.",
+          "full": "Explains all three located cultural-activity cases and supported contributions, then compares a supplied new account without treating everybody’s identity or practices as the same."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.ficfa.com/historique-et-mandat",
+          "source": "FICFA — history and mandate",
+          "claim": "The Moncton-based festival promotes francophone cinema in Atlantic Canada and shares Acadian cinema within Canadian and international francophonie.",
+          "verified": true
+        },
+        {
+          "url": "https://heho.ca/a-propos/",
+          "source": "Festival du Voyageur — French institutional profile",
+          "claim": "The francophone organisation presents several artistic disciplines and educational interpretation involving Francophone, Métis and First Nation histories; its Fort Gibraltar is a modern reconstruction.",
+          "verified": true
+        },
+        {
+          "url": "https://heho.ca/wp-content/uploads/2024/10/FDV2024_RapportOfficiel_web.pdf",
+          "source": "Festival du Voyageur — 2023–24 annual report, page 4",
+          "claim": "The actually viewed page locates the festival in Saint-Boniface and its francophone mission in Manitoba.",
+          "verified": true
+        },
+        {
+          "url": "https://afy.ca/afy/notre-fonctionnement",
+          "source": "Association franco-yukonnaise — mission and location",
+          "claim": "The Whitehorse association supports French-language community services and cultural activities in Yukon.",
+          "verified": true
+        },
+        {
+          "url": "https://www.afy.ca/communaute",
+          "source": "Association franco-yukonnaise — community and centre",
+          "claim": "Its Whitehorse centre presents exhibitions; the attributed 2026 mural involved artists Maya Chartier and Aurore Favier and local pupils.",
+          "verified": true
+        },
+        {
+          "url": "https://www.ficfa.com/festival/2025",
+          "source": "FICFA — completed 2025 edition award results",
+          "claim": "The actual published 2025 results include Canadian and Belgian works, documenting international programming/recognition beyond an aspirational mission statement.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: factual-source review and original untested teaching design",
+        "createdAt": "2026-11-10T22:44:34.279803Z",
+        "updatedAt": "2026-11-10T22:44:34.279803Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
