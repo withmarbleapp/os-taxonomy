@@ -1,6 +1,6 @@
 # Cardinal directions: independent shared map reference
 
-The [complete card/research dossier](ontario-cardinal-direction-claim-2026-11-10.json) proposes **mt_HX8VtJRt0Y**, Cardinal directions on maps, at exact CA/Ontario7–8 for Grade2 B3.3. This is a proposal pending final semantic/source-fit review; the existing mapping is not upgraded merely because a link exists.
+The [complete card/research dossier](ontario-cardinal-direction-claim-2026-11-10.json) proposes **mt_HX8VtJRt0Y**, Cardinal directions on maps, at exact CA/Ontario7–8 for Grade2 B3.3. The complete card, original research and exact source-fit task have now been reviewed; B3.3 is Full authoring coverage for this proposal. No learner attainment or accepted-main claim follows.
 
 The claim uses a stated north reference, relative/reverse place statements and new/turned-map lookup. Grid-cell indexing and creation, neighbouring-country inventory/scale, geographic-pole facts and physical magnetism remain separate existing claims. No old topic is lowered, narrowed, retired or implicitly mastered. No dependencies are assumed.
 

@@ -20,3 +20,20 @@ test('every reviewed Grade2 contribution exists in its exact scoped interval',()
   assert.ok(contexts.some(a=>a.topicId===c.topicId&&a.country==='CA'&&a.region==='Ontario'&&a.ageRangeStart===7&&a.ageRangeEnd===8&&a.standards.includes(row.key)),`${row.officialCode}:${c.topicId}`);
  }
 });
+
+test('Grade2 composite protocols and source/task dossiers remain resolvable',()=>{
+ const ids=new Set(mapping.assessmentProtocols.map(p=>p.id));
+ const codes=new Set(mapping.records.map(r=>r.officialCode));
+ const topics=new Set(load('../data/topics.json').topics.map(t=>t.id));
+ for(const p of mapping.assessmentProtocols){
+  for(const ref of p.componentProtocols??[])assert.ok(ids.has(ref),`${p.id}:${ref}`);
+  for(const code of p.sourceCodes)assert.ok(codes.has(code));
+  if(p.protocolDossier){
+   const d=load(`../${p.protocolDossier}`);
+   for(const task of d.protocols??[]){
+    for(const id of task.existingTopics??[])assert.ok(topics.has(id));
+    for(const code of task.sourceCodes??[])assert.ok(codes.has(code));
+   }
+  }
+ }
+});

@@ -7,13 +7,13 @@
   "scope": "Grade2SocialStudies; CA/Ontario7–8. No Native Languages programme integration; mandatory FNMI content retained.",
   "summary": {
     "reviewedCodes": 40,
-    "Full": 7,
-    "Partial": 33,
+    "Full": 38,
+    "Partial": 2,
     "newTopics": 3,
-    "existingHolders": 19,
-    "topicStandardPairs": 115,
-    "newContexts": 19,
-    "extendedExactBandContexts": 3
+    "existingHolders": 26,
+    "topicStandardPairs": 141,
+    "newContexts": 22,
+    "extendedExactBandContexts": 7
   },
   "coverageMeaning": "Authoring source-fit judgments, not learner certification. Component links are not Full coverage or a completion percentage. Partial rows name real unresolved concepts/resources/tasks; no new topic count is inferred.",
   "records": [
@@ -49,14 +49,14 @@
         }
       ],
       "remainingConditions": [
-        "Compare multiple generations and diverse local/community cases, explaining supported reasons for changes; recognition/comparison components alone do not establish the historical relationship."
+        "The full FNMI colonial-disruption/reclaiming comparison remains tied to the separately reviewed unmerged CanadianRenewal claim/resource dossier. Reconcile that existing proposed ID and complete source-fit integration; other family/local comparison protocols are now accounted for."
       ]
     },
     {
       "officialCode": "A1.1",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A1.1",
       "requirementSummary": "Compare family traditions across generations and explain change",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_zbEcwd40uv",
@@ -75,11 +75,28 @@
           "topicName": "Timelines of past events",
           "role": "component",
           "contribution": "Order multiple-generation family/community events on an unscaled timeline using provided source information."
+        },
+        {
+          "topicId": "mt__F_i67waLN",
+          "topicName": "Childhood then and now",
+          "role": "component",
+          "contribution": "Compare continuity/change across actual family generations using the supplied authentic own-family protocol; no fabricated family history."
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component",
+          "contribution": "Surviving accounts/documents/objects support historical knowledge and bounded inference; contemporary teaching alone is not inferred from this claim."
+        },
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "role": "component",
+          "contribution": "Communication technology contributes only where actual source-supported format/contact changes are used. Pandemic circumstances and enabling tools are distinguished; technology is not a universal cause of tradition change."
         }
       ],
-      "remainingConditions": [
-        "Use a voluntary non-sensitive family tradition record across generations and evidence of why it changed; no family-history disclosure is compelled."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "own-family-tradition-continuity-change"
     },
     {
       "officialCode": "A1.2",
@@ -113,7 +130,7 @@
       "officialCode": "A1.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A1.3",
       "requirementSummary": "Compare past/present local ethnocultural traditions and causes",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_zbEcwd40uv",
@@ -132,11 +149,16 @@
           "topicName": "Evidence from the Past",
           "role": "component",
           "contribution": "Use surviving objects, pictures or accounts as clues to past life, while recognizing limits of what survives."
+        },
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "role": "component",
+          "contribution": "Communication technology contributes only where actual source-supported format/contact changes are used. Pandemic circumstances and enabling tools are distinguished; technology is not a universal cause of tradition change."
         }
       ],
-      "remainingConditions": [
-        "Provide attributed local ethnocultural past/present resources and explain reasons for change, not simply list holidays."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "local-groups-tradition-change"
     },
     {
       "officialCode": "A1.4",
@@ -152,14 +174,14 @@
         }
       ],
       "remainingConditions": [
-        "The separately reviewed cultural-renewal claim is a dependent reuse candidate, not present on this accepted base; verify its full traditions/teachings scope and add source-fit resources before certification."
+        "Reuse separately reviewed mt_gSBJxNBQh3 with its actual disruption→community-led renewal→identity case protocol after G1 dependency reconciliation; generic peoples recognition alone is insufficient. No G2 duplicate is proposed."
       ]
     },
     {
       "officialCode": "A2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2",
       "requirementSummary": "Investigate own family/community traditions over time",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_x08z0N0HX8",
@@ -202,11 +224,22 @@
           "topicName": "Using New Vocabulary",
           "role": "component",
           "contribution": "Use newly learned vocabulary appropriately in context."
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component",
+          "contribution": "Surviving accounts/documents/objects support historical knowledge and bounded inference; contemporary teaching alone is not inferred from this claim."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
         }
       ],
-      "remainingConditions": [
-        "Complete the coherent question–sources–analysis–evidence–conclusion–communication cycle in the learner’s family/community context."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.1",
@@ -222,13 +255,13 @@
         }
       ],
       "remainingConditions": [],
-      "assessmentProtocol": "own-community-tradition-question"
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2.2",
       "requirementSummary": "Gather/organize evidence about own family/community traditions",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -243,15 +276,14 @@
           "contribution": "Order multiple-generation family/community events on an unscaled timeline using provided source information."
         }
       ],
-      "remainingConditions": [
-        "Use suitable primary/secondary sources, supplied if needed, and organize them for the actual tradition question."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2.3",
       "requirementSummary": "Use simple maps in a local traditions inquiry",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_w4cUnN_SsQ",
@@ -260,15 +292,14 @@
           "contribution": "Read and construct familiar-place maps with key, labels and relative landmarks; global reference knowledge is separate."
         }
       ],
-      "remainingConditions": [
-        "Construct and analyse a meaningful local map within the tradition inquiry; generic map success alone is not a complete investigation."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.4",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2.4",
       "requirementSummary": "Interpret tradition evidence with different representations",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_c29FaCTNsx",
@@ -283,15 +314,14 @@
           "contribution": "Order multiple-generation family/community events on an unscaled timeline using provided source information."
         }
       ],
-      "remainingConditions": [
-        "Use the actual displays to explain continuity/change in traditions, not merely produce a graph or timeline."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.5",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2.5",
       "requirementSummary": "Evaluate tradition evidence and draw conclusions",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_9REmUc8r4D",
@@ -304,17 +334,22 @@
           "topicName": "Shared Research Projects",
           "role": "component",
           "contribution": "Gather information from provided sources or recalled experience in shared research; not independent evaluation by itself."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
         }
       ],
-      "remainingConditions": [
-        "Evaluate which evidence supports the conclusion and its limits; surviving-clue inference and gathering information are only components."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A2.6",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A2.6",
       "requirementSummary": "Communicate tradition inquiry findings and vocabulary",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A7FYmvVhA",
@@ -327,17 +362,22 @@
           "topicName": "Using New Vocabulary",
           "role": "component",
           "contribution": "Use newly learned vocabulary appropriately in context."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
         }
       ],
-      "remainingConditions": [
-        "Communicate supported actual inquiry findings in an appropriate format with accurate domain vocabulary; obtain permission for any shared personal story."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-own-tradition-inquiry"
     },
     {
       "officialCode": "A3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3",
       "requirementSummary": "Community groups and intergenerational heritage",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_0O4mXv3asF",
@@ -362,11 +402,16 @@
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component",
+          "contribution": "Surviving accounts/documents/objects support historical knowledge and bounded inference; contemporary teaching alone is not inferred from this claim."
         }
       ],
-      "remainingConditions": [
-        "Account for major local groups and the mechanisms of family/community heritage transmission, including the specified Indigenous contribution."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "integrated-a3-source-fit"
     },
     {
       "officialCode": "A3.1",
@@ -394,7 +439,7 @@
       "officialCode": "A3.2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3.2",
       "requirementSummary": "Local diversity and its visible community expressions",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_OJVkWvIaM_",
@@ -409,21 +454,20 @@
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
         }
       ],
-      "remainingConditions": [
-        "Supply verified local group/community examples and link them to actual expressions of diversity without stereotyping."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "actual-local-diversity"
     },
     {
       "officialCode": "A3.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3.3",
-      "requirementSummary": "Locate personally/familially significant places worldwide",
-      "disposition": "Partial",
+      "requirementSummary": "Locate personally/familially significant places and/or countries on an appropriate map/globe",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_0O4mXv3asF",
           "topicName": "My family and where we're from",
           "role": "component",
-          "contribution": "Identify family members, relationships and origins; this alone does not explain changing traditions."
+          "contribution": "Optional family/origin relationship component only where relevant to the actual chosen significant place; no universal foreign-country or private-family disclosure requirement."
         },
         {
           "topicId": "mt_5zPXTvZTcX",
@@ -438,15 +482,14 @@
           "contribution": "Read and construct familiar-place maps with key, labels and relative landmarks; global reference knowledge is separate."
         }
       ],
-      "remainingConditions": [
-        "Familiar-place map skill and family origins contribute; actual global location of the chosen significant countries/places remains a separate application."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "significant-places-actual-map"
     },
     {
       "officialCode": "A3.4",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-A3.4",
       "requirementSummary": "Describe family, peer, local and other Canadian celebrations",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_zbEcwd40uv",
@@ -467,9 +510,8 @@
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
         }
       ],
-      "remainingConditions": [
-        "Use attributed resources spanning the required communities, including a specific First Nation, Métis or Inuit community; generic recognition is insufficient."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "family-peer-local-other-celebrations"
     },
     {
       "officialCode": "A3.5",
@@ -583,7 +625,7 @@
       "officialCode": "B1",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1",
       "requirementSummary": "Compare needs/adaptation across world communities",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt__ab4knIaSL",
@@ -602,17 +644,22 @@
           "topicName": "Geography & Local Weather",
           "role": "component",
           "contribution": "Compare typical climates and explain geographical influences, including latitude and another factor; a specific community case is still needed."
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component",
+          "contribution": "Identify natural, managed and built features and their locations, with an actual familiar/local operation and particular source-supported world examples."
         }
       ],
-      "remainingConditions": [
-        "Use own plus other verified communities and explain links among needs, location, climate and physical features, without environmental determinism."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     },
     {
       "officialCode": "B1.1",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.1",
       "requirementSummary": "Compare own and other community ways of meeting needs",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt__ab4knIaSL",
@@ -627,15 +674,14 @@
           "contribution": "Distinguish goods/services in meeting needs, as a component of community comparison."
         }
       ],
-      "remainingConditions": [
-        "Supply accurate contemporary community evidence and compare actual lifestyles/provision; examples are not universal claims about regions."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     },
     {
       "officialCode": "B1.2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.2",
       "requirementSummary": "Explain adaptation in at least two communities",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_hjJkBWruO6",
@@ -650,15 +696,14 @@
           "contribution": "Distinguish natural, managed and built features and locate them; not all world regions or community practices are established."
         }
       ],
-      "remainingConditions": [
-        "Explain supported location/climate/feature relationships to particular community adaptations; climate description alone is not adaptation."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     },
     {
       "officialCode": "B1.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.3",
       "requirementSummary": "Explain sustainability and consequences",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_5zPXTvZTcX",
@@ -671,17 +716,22 @@
           "topicName": "Needs & Wants",
           "role": "component",
           "contribution": "Identify basic needs versus wants and how choices respond to needs; actual community provision requires resources."
+        },
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "contribution": "Identify three local human impacts, propose matching solutions and explain effects on land/water/living things; the task includes ongoing usable resources and recovery consequences."
         }
       ],
-      "remainingConditions": [
-        "Care/needs are components; sustained resource use and consequences require a specific source-fit reasoning task or verified whole-claim reuse."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "resources-actions-consequences"
     },
     {
       "officialCode": "B2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2",
       "requirementSummary": "Investigate environments and contemporary community life",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -724,34 +774,62 @@
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "contribution": "Form natural-environment questions and choose observation/research methods; community practices still require attributed community evidence."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather/record/classify/present actual paired climate data through a complete table, meaningful below-freezing-mean key, relevant chart and labelled map/diagram; no source-mention counts."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
+        },
+        {
+          "topicId": "mt_CVywzrjT_c",
+          "topicName": "Using evidence to answer questions",
+          "role": "component",
+          "contribution": "Interpret actual scientific climate-data patterns and cite specific evidence. This is a climate component, not proof climate determines culture."
         }
       ],
-      "remainingConditions": [
-        "Complete the environmental/community inquiry with at least one named contemporary First Nation, Métis or Inuit community and accurate current resources."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.1",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.1",
       "requirementSummary": "Ask questions linking environment and community life",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
           "topicName": "Shared Research Projects",
           "role": "component",
           "contribution": "Gather information from provided sources or recalled experience in shared research; not independent evaluation by itself."
+        },
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "contribution": "Form natural-environment questions and choose observation/research methods; community practices still require attributed community evidence."
         }
       ],
-      "remainingConditions": [
-        "Generic shared research contributes but question formulation must address the environmental/community relationship and the specified contemporary Indigenous case."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.2",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.2",
       "requirementSummary": "Gather/organize community location, climate and life evidence",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -776,17 +854,22 @@
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather/record/classify/present actual paired climate data through a complete table, meaningful below-freezing-mean key, relevant chart and labelled map/diagram; no source-mention counts."
         }
       ],
-      "remainingConditions": [
-        "Provide accurate contemporary community information and organize it by the inquiry; no historical Arctic stereotype substitutes for a current community."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.3",
       "requirementSummary": "Use maps for community/environment/activity patterns",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_w4cUnN_SsQ",
@@ -799,17 +882,28 @@
           "topicName": "Geography & Local Weather",
           "role": "component",
           "contribution": "Compare typical climates and explain geographical influences, including latitude and another factor; a specific community case is still needed."
+        },
+        {
+          "topicId": "mt_6M7zCpUQex",
+          "topicName": "Continents on maps and globes",
+          "role": "component",
+          "contribution": "Use stated-model continent/country location knowledge for the actual selected world-community maps."
+        },
+        {
+          "topicId": "mt_eoQNkZGzxK",
+          "topicName": "Equator and Northern and Southern Hemispheres",
+          "role": "component",
+          "contribution": "Use Equator/Northern/Southern reference knowledge when locating the actual communities and explaining supported broad climate relationships."
         }
       ],
-      "remainingConditions": [
-        "Construct/interpret suitable world/regional maps and explain patterns linking actual locations and activities; familiar-plan construction is a component."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.4",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.4",
       "requirementSummary": "Interpret evidence with tools about climate/community life",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_c29FaCTNsx",
@@ -822,17 +916,28 @@
           "topicName": "Geography & Local Weather",
           "role": "component",
           "contribution": "Compare typical climates and explain geographical influences, including latitude and another factor; a specific community case is still needed."
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component",
+          "contribution": "Gather/record/classify/present actual paired climate data through a complete table, meaningful below-freezing-mean key, relevant chart and labelled map/diagram; no source-mention counts."
+        },
+        {
+          "topicId": "mt_CVywzrjT_c",
+          "topicName": "Using evidence to answer questions",
+          "role": "component",
+          "contribution": "Interpret actual scientific climate-data patterns and cite specific evidence. This is a climate component, not proof climate determines culture."
         }
       ],
-      "remainingConditions": [
-        "Interpret actual community evidence and representations; clothing/photos alone should not be treated as conclusive climate or culture evidence."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.5",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.5",
       "requirementSummary": "Evaluate evidence and conclude about environment/community links",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A4RpX-Go9",
@@ -845,17 +950,28 @@
           "topicName": "Geography & Local Weather",
           "role": "component",
           "contribution": "Compare typical climates and explain geographical influences, including latitude and another factor; a specific community case is still needed."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
+        },
+        {
+          "topicId": "mt_CVywzrjT_c",
+          "topicName": "Using evidence to answer questions",
+          "role": "component",
+          "contribution": "Interpret actual scientific climate-data patterns and cite specific evidence. This is a climate component, not proof climate determines culture."
         }
       ],
-      "remainingConditions": [
-        "Require supported conclusions, evidence evaluation and uncertainty for the specified contemporary Indigenous community; component climate/research knowledge is insufficient."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B2.6",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B2.6",
       "requirementSummary": "Communicate environmental/community inquiry findings",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_4A7FYmvVhA",
@@ -868,17 +984,22 @@
           "topicName": "Using New Vocabulary",
           "role": "component",
           "contribution": "Use newly learned vocabulary appropriately in context."
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "contribution": "Report enquiry findings, draw a question-linked evidence-supported conclusion, make a bounded prediction and suggest a method improvement; general enquiry scope is retained."
         }
       ],
-      "remainingConditions": [
-        "Communicate actual supported inquiry results and geographical vocabulary, retaining source attribution and contemporary community scope."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "coherent-environment-community-inquiry"
     },
     {
       "officialCode": "B3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
       "requirementSummary": "Locate world features and contemporary communities",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_8QOeG3CuKc",
@@ -923,15 +1044,14 @@
           "contribution": "Identify the geographic poles with the corrected exact-ID claim; preserve introductory sunlight explanation separately from the source identification requirement."
         }
       ],
-      "remainingConditions": [
-        "World reference knowledge, named contemporary community resources and ways-of-life comparison remain explicit below."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "integrated-b3-source-fit"
     },
     {
       "officialCode": "B3.1",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.1",
       "requirementSummary": "Different kinds of world locations and representations",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_8QOeG3CuKc",
@@ -958,9 +1078,8 @@
           "contribution": "Identify continent/reference features through the stated-model map/globe protocol."
         }
       ],
-      "remainingConditions": [
-        "Distinguish countries/continents and world physical/water features across representations; familiar maps/ocean knowledge are components."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "location-climate-representations"
     },
     {
       "officialCode": "B3.2",
@@ -1000,24 +1119,23 @@
       "officialCode": "B3.3",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.3",
       "requirementSummary": "Use cardinal directions on maps",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_HX8VtJRt0Y",
           "topicName": "Cardinal directions on maps",
-          "role": "whole-claim proposal",
+          "role": "whole source requirement",
           "contribution": "Independent four-direction map-reference convention and relative-place operation, including turned-view transfer; no grid/distance/inventory/magnetism."
         }
       ],
-      "remainingConditions": [
-        "The complete proposed card/research and source-fit protocol remain pending final semantic review; this checkpoint does not recertify Full merely from the new association."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "cardinal-reference-place-location"
     },
     {
       "officialCode": "B3.4",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.4",
       "requirementSummary": "Locate communities and explain climate relationship",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_hjJkBWruO6",
@@ -1030,17 +1148,28 @@
           "topicName": "First Nations, Métis and Inuit peoples",
           "role": "component",
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
+        },
+        {
+          "topicId": "mt_6M7zCpUQex",
+          "topicName": "Continents on maps and globes",
+          "role": "component",
+          "contribution": "Use stated-model continent/country location knowledge for the actual selected world-community maps."
+        },
+        {
+          "topicId": "mt_eoQNkZGzxK",
+          "topicName": "Equator and Northern and Southern Hemispheres",
+          "role": "component",
+          "contribution": "Use Equator/Northern/Southern reference knowledge when locating the actual communities and explaining supported broad climate relationships."
         }
       ],
-      "remainingConditions": [
-        "Locate actual selected communities including a contemporary First Nation, Métis or Inuit community and explain the supported location/climate relationship, not only name generic peoples."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     },
     {
       "officialCode": "B3.5",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.5",
       "requirementSummary": "Extract location/climate information from representations",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_hjJkBWruO6",
@@ -1055,15 +1184,14 @@
           "contribution": "Read and construct familiar-place maps with key, labels and relative landmarks; global reference knowledge is separate."
         }
       ],
-      "remainingConditions": [
-        "Use appropriate regional/world photos and maps and distinguish direct location evidence from uncertain climate inferences."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "location-climate-representations"
     },
     {
       "officialCode": "B3.6",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.6",
       "requirementSummary": "Human needs and their provision worldwide",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt__ab4knIaSL",
@@ -1078,15 +1206,14 @@
           "contribution": "Distinguish goods/services in meeting needs, as a component of community comparison."
         }
       ],
-      "remainingConditions": [
-        "Provide accurate examples of how different communities meet food, water, clothing, transportation and shelter needs; needs/wants alone does not certify the range."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "needs-and-specific-provision"
     },
     {
       "officialCode": "B3.7",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.7",
       "requirementSummary": "Physical features, wildlife and culture of selected communities",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -1107,15 +1234,14 @@
           "contribution": "Distinguish contemporary First Nations, Métis and Inuit peoples in Canada; this is not specific community history or a way-of-life dossier."
         }
       ],
-      "remainingConditions": [
-        "Prepare attributed contemporary cases including a specific First Nation, Métis or Inuit community; generic Arctic historical-life knowledge is insufficient."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     },
     {
       "officialCode": "B3.8",
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.8",
       "requirementSummary": "Compare own community with another world region",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -1136,9 +1262,8 @@
           "contribution": "Recognize inclusive differences among family structures, languages, foods and celebrations."
         }
       ],
-      "remainingConditions": [
-        "Use actual own/other regional community resources to compare selected similarities/differences; do not infer homogeneous culture from climate."
-      ]
+      "remainingConditions": [],
+      "assessmentProtocol": "contemporary-community-comparison"
     }
   ],
   "assessmentProtocols": [
@@ -1233,36 +1358,163 @@
       "positive": "Identifies several concrete family sharing/learning practices, including the specific Métis family account, without assuming cultural membership from ancestry or participation alone.",
       "nearMiss": "Only names relatives or a celebration; omits the sharing/learning channel or the required attributed FNMI family practice.",
       "transfer": "A different family practice/account while keeping its people, evidence and channel distinct."
+    },
+    {
+      "id": "contemporary-community-comparison",
+      "sourceCodes": [
+        "B1",
+        "B1.1",
+        "B1.2",
+        "B3.4",
+        "B3.7",
+        "B3.8"
+      ],
+      "protocolDossier": "reports/ontario-grade2-community-resource-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "location-climate-representations",
+      "sourceCodes": [
+        "B3.1",
+        "B3.5"
+      ],
+      "protocolDossier": "reports/ontario-grade2-community-resource-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "coherent-environment-community-inquiry",
+      "sourceCodes": [
+        "B2",
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "B2.4",
+        "B2.5",
+        "B2.6"
+      ],
+      "protocolDossier": "reports/ontario-grade2-community-resource-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "resources-actions-consequences",
+      "sourceCodes": [
+        "B1.3"
+      ],
+      "protocolDossier": "reports/ontario-grade2-community-resource-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "needs-and-specific-provision",
+      "sourceCodes": [
+        "B3.6"
+      ],
+      "protocolDossier": "reports/ontario-grade2-community-resource-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "own-family-tradition-continuity-change",
+      "sourceCodes": [
+        "A1.1"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "local-groups-tradition-change",
+      "sourceCodes": [
+        "A1.3"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "actual-local-diversity",
+      "sourceCodes": [
+        "A3.2"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "family-peer-local-other-celebrations",
+      "sourceCodes": [
+        "A3.4"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "significant-places-actual-map",
+      "sourceCodes": [
+        "A3.3"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "coherent-own-tradition-inquiry",
+      "sourceCodes": [
+        "A2",
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "A2.4",
+        "A2.5",
+        "A2.6"
+      ],
+      "protocolDossier": "reports/ontario-grade2-tradition-task-review-2026-11-10.json",
+      "sourceFit": "Complete exact source/task design in the referenced dossier; Full is authoring coverage, not actual pupil attainment or automatic whole-topic mastery."
+    },
+    {
+      "id": "cardinal-reference-place-location",
+      "sourceCodes": [
+        "B3.3"
+      ],
+      "protocolDossier": "reports/ontario-cardinal-direction-claim-2026-11-10.json",
+      "sourceFit": "Complete proposed shared card and original reference-aware diagnostic, including all four directions and selected-place location."
+    },
+    {
+      "id": "integrated-a3-source-fit",
+      "sourceCodes": [
+        "A3"
+      ],
+      "componentProtocols": [
+        "inclusive-family-peer-comparison",
+        "actual-local-diversity",
+        "family-peer-local-other-celebrations",
+        "community-heritage-channels",
+        "family-heritage-practices"
+      ],
+      "sourceFit": "Actual major local groups/family forms and the attributed family/community heritage-sharing channels are accounted for jointly, including the particular FNMI cases and source-required local application."
+    },
+    {
+      "id": "integrated-b3-source-fit",
+      "sourceCodes": [
+        "B3"
+      ],
+      "componentProtocols": [
+        "world-reference-identification",
+        "cardinal-reference-place-location",
+        "contemporary-community-comparison",
+        "location-climate-representations",
+        "needs-and-specific-provision"
+      ],
+      "sourceFit": "Actual world features/communities, current Iqaluit Inuit case, location/representation knowledge and supported ways-of-life descriptions are accounted for jointly; broad identity labels alone are insufficient."
     }
   ],
   "candidates": [
     {
       "topicId": "mt_gSBJxNBQh3",
-      "status": "Separately reviewed unaccepted cultural-renewal follow-up; reuse the sameID after dependency reconciliation, not a G2clone.",
+      "status": "Reviewed unmerged G1 shared cultural-renewal claim; pending dependency reconciliation, not a new G2 claim.",
       "codes": [
+        "A1",
         "A1.4"
       ],
-      "condition": "Retain traditions/customs/teachings/celebration scope and attributed contemporary resources."
-    },
-    {
-      "topicId": "mt_ejht12jhm2",
-      "codes": [
-        "B3.3"
-      ],
-      "condition": "Whole grid-reference creation/interpretation currently starts9; do not lower merely because NSEW is one component."
-    },
-    {
-      "topicId": "mt_Juxx4n-8mu",
-      "codes": [
-        "B3.3"
-      ],
-      "condition": "Whole neighbouring-country location, direction AND scale-distance comparison currently starts8; no automatic G2start7 context."
+      "condition": "Preserve specific colonial disruption→community-led recovery→identity relationship and attributed cases."
     }
   ],
-  "genuineKnowledgeProposals": [
-    "Heritage-transmission relationship: naming celebrations/family does not automatically explain intergenerational transmission; complete reuse/task review before any addition."
-  ],
-  "preservation": "Two justified concepts added; exact-ID pole scientific correction is explicit. All other authoredclaims/research, existing scoped intervals, dependencies/catalogue remain unchanged; no startage lowering. The pole’s globalend extends7→8 only from its new exactCA7–8 context.",
+  "genuineKnowledgeProposals": [],
+  "preservation": "All old claims/research preserved except the separately reviewed exact-ID pole and climate factual/guidance corrections; three approved independent shared reference claims proposed. All old contexts/intervals/standards and all dependencies/catalogue/archive retained. Full source-fit tasks do not infer learner mastery; no old start-age lowering.",
   "consumerBoundary": "No DB writes, learner changes, inferred mastery transfer or downstream publication.",
   "worldReferenceFollowUp": {
     "report": "ontario-grade2-world-reference-claims-2026-11-10.json",
@@ -1272,5 +1524,6 @@
       "mt_eoQNkZGzxK"
     ],
     "correctedID": "mt_4uPnLieBPN"
-  }
+  },
+  "protocolQualification": "Full judgments are source-fit authoring designs with the stated local/resource/performance preparation requirements. They do not infer full existing-topic mastery from a component task or certify any pupil. The two A1 residuals are explicit shared-claim/dependency integration, not missing resources or a classroom-study requirement."
 }
