@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 4003,
+  "edgeCount": 3999,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -1216,16 +1216,10 @@
       "reason": "Drawing ray diagrams requires measuring angles accurately with a protractor — the core skill in mt_4MFUAsbx_6"
     },
     {
-      "topicId": "mt_2VpdPjvewx",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_wPgpMJ0-PA",
-      "strength": "hard",
-      "reason": "Converting to 3dp requires ×÷ by 10/100/1000 skills"
-    },
-    {
-      "topicId": "mt_2VpdPjvewx",
-      "prerequisiteId": "mt_Zks8xyInSG",
-      "strength": "hard",
-      "reason": "Y6 unit conversion with decimals extends Y5 metric conversion"
+      "strength": "soft",
+      "reason": "Decimal powers-of-ten arithmetic supports decimal metric examples, not every unit-conversion task; it is not a universal grade-based gate."
     },
     {
       "topicId": "mt_2VR963szuk",
@@ -1262,18 +1256,6 @@
       "prerequisiteId": "mt_E1wR8IfCV6",
       "strength": "hard",
       "reason": "Must understand nutrition before evaluating impact of diet on health"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion feeds into time-specific conversions"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "hard",
-      "reason": "Elapsed time problems are prerequisite to time conversion problems"
     },
     {
       "topicId": "mt_2_YoprauaJ",
@@ -2195,9 +2177,9 @@
     },
     {
       "topicId": "mt_5HV4mbgSGH",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Unit conversion supports measurement word problems"
+      "reason": "Converting to compatible units supports measurement word problems."
     },
     {
       "topicId": "mt_5J2quSTspi",
@@ -6323,9 +6305,9 @@
     },
     {
       "topicId": "mt_Cqm8iy48UI",
-      "prerequisiteId": "mt_2yas4Unc8o",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "soft",
-      "reason": "Time conversion supports interpreting timetables"
+      "reason": "Unit conversion supports interpreting timetable durations; general table reading does not require every conversion family."
     },
     {
       "topicId": "mt_Cqm8iy48UI",
@@ -6654,14 +6636,14 @@
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_KaF0SQvaiu",
-      "strength": "hard",
-      "reason": "measuring in uniform units is the foundation of relating unit sizes"
+      "strength": "soft",
+      "reason": "Iterating length units can illustrate relative unit size, but practical length measurement is not required for time or other unit conversions."
     },
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_PZ909yPrEC",
       "strength": "hard",
-      "reason": "converting 3 km to 3000 m is a multiplicative scale (3 groups of 1000): multiplication as equal groups"
+      "reason": "A conversion factor expresses equal groups of smaller units within one larger unit; multiplicative unit reasoning is essential."
     },
     {
       "topicId": "mt_DA7-JYRvtP",
@@ -15857,9 +15839,9 @@
     },
     {
       "topicId": "mt_p6MhZJYYPN",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Must know metric units before approximating imperial equivalences"
+      "reason": "Applying a known unit relationship supports approximate metric–imperial conversion."
     },
     {
       "topicId": "mt_p-8Hlf6_9k",
@@ -18599,15 +18581,15 @@
     },
     {
       "topicId": "mt_SqhXQhAEUf",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Multi-step conversion problems require conversion skills"
+      "reason": "Selecting and sequencing a conversion inside a problem draws on the unit-conversion procedure."
     },
     {
       "topicId": "mt_SqhXQhAEUf",
       "prerequisiteId": "mt_5HV4mbgSGH",
-      "strength": "hard",
-      "reason": "Measurement word problems extend Y5 measurement problem-solving"
+      "strength": "soft",
+      "reason": "Measurement word-problem experience can support choosing operations, but this broader four-operation/fraction claim is not necessary for every conversion-and-calculation problem."
     },
     {
       "topicId": "mt_sQpIV0-qY7",
@@ -19385,9 +19367,9 @@
     },
     {
       "topicId": "mt_tpT9brpI6D",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "KS3 unit conversion extends KS2 (Y6) metric conversion with decimals to area/volume units"
+      "reason": "Area and volume conversion extend unit-factor reasoning by deriving squared and cubed factors."
     },
     {
       "topicId": "mt_tpT9brpI6D",
@@ -23662,16 +23644,10 @@
       "reason": "Comparing capacity requires understanding capacity as a measurable attribute"
     },
     {
-      "topicId": "mt_Zks8xyInSG",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion is prerequisite to systematic metric conversions with tables"
-    },
-    {
-      "topicId": "mt_Zks8xyInSG",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_LlMl2PbaZe",
       "strength": "soft",
-      "reason": "×÷ by 10/100/1000 supports metric unit conversions"
+      "reason": "Multiplication and division by powers of ten support metric conversions; non-base-ten time rates use their actual relationships."
     },
     {
       "topicId": "mt_ZL9qVVnpwN",

@@ -10,7 +10,8 @@
   "notes": [
     "Historical teaching guidance for merged or refocused topics. Original topic content, research and authoring provenance are preserved unchanged.",
     "relatedTopicIds identify the current learning associated with each archive entry. These historical records are excluded from active teaching-research coverage.",
-    "The refocused capacity topic now teaches capacity estimation; its previous assessment tested counting unit cubes. Current guidance for that revised topic awaits a fresh authoring pass."
+    "The refocused capacity topic now teaches capacity estimation; its previous assessment tested counting unit cubes. Current guidance for that revised topic awaits a fresh authoring pass.",
+    "The 2026-11-10 conversion consolidation preserves three original records unchanged from accepted commit 691911d03f5531cc798ee391c86b778a735d75ab. Their relatedTopicIds are dispositions, not learner-mastery equivalences."
   ],
   "activeReferenceRepairs": [
     {
@@ -18,6 +19,48 @@
       "path": "assess.errorPatterns[1].reteachPrerequisiteId",
       "from": "mt_3XJkeIn6J6",
       "to": "mt_UNzojLkNdm"
+    },
+    {
+      "researchTopicId": "mt_5HV4mbgSGH",
+      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+      "from": "mt_Zks8xyInSG",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_Cqm8iy48UI",
+      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+      "from": "mt_2yas4Unc8o",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_p6MhZJYYPN",
+      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+      "from": "mt_Zks8xyInSG",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_SqhXQhAEUf",
+      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+      "from": "mt_2VpdPjvewx",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_SqhXQhAEUf",
+      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+      "from": "mt_2VpdPjvewx",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_tpT9brpI6D",
+      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+      "from": "mt_2VpdPjvewx",
+      "to": "mt_d8al9JcajP"
+    },
+    {
+      "researchTopicId": "mt_tpT9brpI6D",
+      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+      "from": "mt_2VpdPjvewx",
+      "to": "mt_d8al9JcajP"
     }
   ],
   "records": [
@@ -521,6 +564,701 @@
           "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
           "createdAt": "2026-07-27T20:42:47.996Z",
           "updatedAt": "2026-10-19T15:21:07.442Z"
+        },
+        "publicationNotes": {
+          "omittedCurriculumText": []
+        }
+      }
+    },
+    {
+      "originalTopicId": "mt_2yas4Unc8o",
+      "reason": "topic_merged",
+      "relatedTopicIds": [
+        "mt_d8al9JcajP"
+      ],
+      "sourceCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+      "topic": {
+        "id": "mt_2yas4Unc8o",
+        "type": "PROCEDURAL",
+        "subject": "Mathematics",
+        "domain": "Measurement",
+        "name": "Telling time to the minute (age 9+)",
+        "description": "Solve problems involving converting between units of time (hours↔minutes, minutes↔seconds, years↔months, weeks↔days)",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 10,
+        "centrality": 0.06199186991869918,
+        "evidence": [
+          "Convert 3 hours 25 minutes to 205 minutes",
+          "A programme lasts 150 seconds — express in minutes and seconds",
+          "How many days are in 8 weeks and 3 days?"
+        ],
+        "assessmentPrompt": "If {{name}} needs to convert 2 hours 35 minutes into just minutes, can they do it — and then convert 180 seconds into minutes and seconds?",
+        "standards": [
+          "uk-nc-2013:Ma5/3.1f"
+        ]
+      },
+      "research": {
+        "topicId": "mt_2yas4Unc8o",
+        "pedagogy": {
+          "summary": "Children convert between units of time — hours to/from minutes, minutes to/from seconds, years to/from months, weeks to/from days — including mixed quantities (3 hours 25 minutes = 3x60 + 25 = 205 minutes). The method is MULTIPLICATIVE (x60, x7, x12), using known number facts, and must resist the base-10 pull that assumes 100 seconds in a minute. The documented errors are additive rather than multiplicative reasoning, base-10 assumptions, and irregular groupings (months vary in length; a month is not exactly 4 weeks).",
+          "bestPractices": [
+            "Use multiplicative reasoning with known facts (x60, x7, x12), not repeated addition",
+            "Convert mixed quantities in two parts: whole units x rate, then add the remainder (3x60 + 25)",
+            "Confront the base-10 pull explicitly: 60 seconds in a minute, not 100",
+            "Handle the reverse (150 s -> 2 min 30 s) by dividing and expressing the remainder",
+            "Flag irregular units — months vary; about 4 weeks in a month is approximate, not exact"
+          ],
+          "keyRepresentations": [
+            "Conversion tables (Days-Weeks, Years-Months, Minutes-Seconds)",
+            "The x60 / x7 / x12 rate as a known-fact chain (36 ÷ 6 = 6, so 360 s = 6 min)",
+            "A number track for counting leap years / weeks",
+            "A bar model splitting a mixed quantity into whole units + remainder"
+          ],
+          "commonMisconceptions": [
+            "Uses additive reasoning instead of multiplicative for conversions",
+            "Assumes base-10 (100 seconds in a minute, 100 minutes in an hour)",
+            "Thinks every month is exactly 4 weeks / all months are the same length",
+            "Converts a mixed quantity by ignoring the remainder or the second unit"
+          ]
+        },
+        "learn": {
+          "summary": "Children convert between units of time — hours↔minutes, minutes↔seconds, years↔months, weeks↔days — including mixed quantities (e.g. 3 hours 25 minutes = 3×60 + 25 = 205 minutes). The core idea is MULTIPLICATIVE conversion (×60, ×7, ×12) using known number facts, and resisting the base-10 pull that wrongly assumes 100 seconds in a minute or 100 minutes in an hour. Reverse conversions require dividing and expressing the remainder (150 s → 2 min 30 s). Documented errors are additive rather than multiplicative reasoning, base-10 assumptions, mishandling the remainder/second unit in mixed quantities, and treating every month as exactly 4 weeks.",
+          "activities": [
+            {
+              "title": "Multiply-then-combine with a conversion machine",
+              "feedback": [
+                "If a learner gives 180 minutes for 3 h 25 min, ask where the 25 minutes went; have them add the remainder back: 180 + 25 = 205. A bar model separating the whole units (3 × 60 = 180) from the remainder (25) can make the two-part split visible when the leftover is dropped.",
+                "If a learner reads 150 seconds as '1.5 minutes', group the seconds into sixties: two complete sixties and 30 left, so 2 minutes 30 seconds — 150 ÷ 60 = 2 remainder 30.",
+                "If a learner answers '2 minutes' for 150 seconds, point to the 30 seconds still unaccounted for and ask what happens to them.",
+                "If a learner uses ×100 for hours→minutes, contrast their answer with grouping into sixties so the 60-grouping is visibly correct."
+              ],
+              "rationale": "A visible multiply-then-add computation with a reverse divide-with-remainder makes the multiplicative structure and base-60 grouping concrete, directly confronting the additive and base-10 errors documented for this topic; the bar model scaffolds the whole-units-plus-remainder split.",
+              "sourceClaims": [
+                "White Rose Y4 Time (Steps 1-2) documents that when converting units of time children may rely on additive rather than multiplicative reasoning, may assume base-10 (100 seconds in a minute / 100 minutes in an hour), and may think there are always exactly 4 weeks in a month; the method uses multiplicative reasoning and known number facts (e.g. 360 s = 6 min via the 6 times-table).",
+                "Children apply discrete whole-number, base-10 reasoning to time and cannot easily coordinate its non-standard groupings of 60, 12, 7, which underlies base-10 conversion errors and difficulty coordinating mixed units."
+              ],
+              "learnerActions": [
+                "Take a mixed quantity such as 3 hours 25 minutes and convert it: multiply the whole units by the rate (3 × 60 = 180 minutes), then add the remaining 25 to get 205 minutes.",
+                "State out loud whether you counted up or multiplied, and why multiplying is faster.",
+                "Work a reverse conversion: take 150 seconds, group it into sixties — two full groups of 60 make 2 minutes, with 30 seconds left over, giving '2 minutes 30 seconds'.",
+                "Test the tempting '100 to a minute' idea against grouping real seconds into sixties, and describe what goes wrong."
+              ],
+              "intendedInsight": "Converting units of time is multiply (by the fixed rate) then combine the remainder — not counting up — and for seconds, minutes and hours the grouping is 60, not 100."
+            },
+            {
+              "title": "Known-facts conversion with a base-10 trap item",
+              "feedback": [
+                "For '1.5 minutes', re-ground on 60: 1.5 of 60 would be 90 seconds, not 150; 150 seconds is 2 minutes 30 seconds.",
+                "For '2 minutes', ask about the leftover 30 seconds.",
+                "For 8 weeks 3 days, confirm 8 × 7 = 56 then add the 3 loose days for 59."
+              ],
+              "rationale": "Targeted items with carefully chosen wrong-answer options can help surface which error a learner is making (base-10 vs dropping the remainder vs additive). Such items check and may provoke reasoning; use them alongside worked construction, since choosing an answer does not by itself show the learner can carry out the method independently.",
+              "sourceClaims": [
+                "Year 5 pupils should 'solve problems involving converting between units of time'; the guidance adds pupils use all four operations in such problems, expressing answers appropriately (for example, days to weeks as weeks and days). Year 4 pupils 'solve problems involving converting from hours to minutes; minutes to seconds; years to months; weeks to days'.",
+                "Children apply discrete whole-number, base-10 reasoning to time and cannot easily coordinate its non-standard groupings of 60, 12, 7, which underlies base-10 conversion errors and difficulty coordinating mixed units."
+              ],
+              "learnerActions": [
+                "Fill in conversions such as '3 h 25 min = ___ min' and show the multiply-then-add working.",
+                "Match a seconds amount (e.g. 150 s) to its minutes-and-seconds form.",
+                "Choose the correct reading of 150 seconds and explain why '1.5 minutes' (base-10 thinking) and '2 minutes' (dropped remainder) are both wrong.",
+                "Convert 8 weeks 3 days to days using 8 × 7 = 56, then + 3 = 59 days."
+              ],
+              "intendedInsight": "Secure conversions rest on known multiplication facts and on keeping the remainder; the common wrong answers to the 150-seconds item — '1.5 minutes' and '2 minutes' — correspond to base-10 thinking and to dropping the remainder."
+            },
+            {
+              "title": "Irregular units: months, weeks and the calendar",
+              "feedback": [
+                "If a learner converts months to days as ×28 or calls a month exactly 4 weeks, use the calendar to show months of 28, 30 and 31 days and distinguish the approximate month fact from the exact week-to-day fact."
+              ],
+              "rationale": "Addressing month-length variability with a concrete calendar directly targets the documented 'every month is exactly 4 weeks' misconception while keeping exact rates distinct from approximate ones.",
+              "sourceClaims": [
+                "White Rose Y4 Time (Steps 1-2) documents that when converting units of time children may rely on additive rather than multiplicative reasoning, may assume base-10 (100 seconds in a minute / 100 minutes in an hour), and may think there are always exactly 4 weeks in a month; the method uses multiplicative reasoning and known number facts (e.g. 360 s = 6 min via the 6 times-table).",
+                "Year 5 pupils should 'solve problems involving converting between units of time'; the guidance adds pupils use all four operations in such problems, expressing answers appropriately (for example, days to weeks as weeks and days). Year 4 pupils 'solve problems involving converting from hours to minutes; minutes to seconds; years to months; weeks to days'."
+              ],
+              "learnerActions": [
+                "Use a real calendar to count the days in several different months, including February, and record what you find: months have 28, 29 (February in a leap year), 30 or 31 days.",
+                "State why 'about 4 weeks in a month' is an approximation, not an exact conversion.",
+                "Contrast the exact fact (1 week = 7 days) with the approximate month fact, and explain how you would convert months to days versus weeks to days."
+              ],
+              "intendedInsight": "Some time units convert by exact fixed rates (7 days per week, 60 seconds per minute, 12 months per year) while month LENGTHS are irregular, so 'a month ≈ 4 weeks' cannot be used as an exact conversion to days."
+            },
+            {
+              "title": "Pose-and-solve conversion word problems",
+              "feedback": [
+                "Ask the learner to justify their chosen rate; if they add rather than multiply, prompt them to build the ×rate from a known fact.",
+                "Probe the remainder: 'Did you keep the leftover part, and where did it go in your answer?'"
+              ],
+              "rationale": "Spoken or written word problems let a learner verbalise the method, which may expose additive-vs-multiplicative reasoning. On its own a spoken dialogue does not record whether the learner multiplied or added, so pair it with written working.",
+              "sourceClaims": [
+                "Year 5 pupils should 'solve problems involving converting between units of time'; the guidance adds pupils use all four operations in such problems, expressing answers appropriately (for example, days to weeks as weeks and days). Year 4 pupils 'solve problems involving converting from hours to minutes; minutes to seconds; years to months; weeks to days'."
+              ],
+              "learnerActions": [
+                "Read or hear a word problem (e.g. 'A film lasts 150 seconds — how long is that in minutes and seconds?') and solve it, saying each step aloud.",
+                "Explain for each problem which rate you used (×60, ×7, ×12) and how you handled any remainder or second unit."
+              ],
+              "intendedInsight": "Conversions apply in context; choosing the right rate and correctly expressing mixed/remainder answers is part of solving the problem."
+            }
+          ],
+          "constraints": [
+            "Use multiplicative reasoning with known facts (×60, ×7, ×12), not repeated addition; for mixed quantities convert whole units × rate, then add or keep the remainder.",
+            "Confront the base-10 pull explicitly: 60 seconds in a minute and 60 minutes in an hour, not 100; the 100-to-a-minute idea should be shown wrong against real grouping, not merely stated wrong.",
+            "Handle reverse conversions by dividing and expressing the remainder (150 s → 2 min 30 s), not rounding or dropping the leftover.",
+            "Keep exact rates (1 week = 7 days, 1 year = 12 months) distinct from the approximate month-to-weeks relationship; month lengths vary from 28 to 31 days.",
+            "Choosing a correct option in a matching or selection item checks reasoning but does not by itself demonstrate independent construction of the method; include tasks where the learner carries out and shows the conversion.",
+            "A fixed conversion poster or table can display the rates but does not let the learner compute and see the remainder form; treat it as a reference scaffold rather than the main activity.",
+            "A bar model (whole units + remainder) and a number track for counting weeks/leap years are optional representations that can scaffold the split and the counting, not required mechanisms.",
+            "Illustrative interactions (feeding units into a ×rate step, grouping seconds into sixties, a toggle offering the base-10 reading) are ways to make the mechanism visible, not required mechanisms."
+          ],
+          "reviewNotes": [
+            "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions.",
+            "Arithmetic in the source was checked and is correct: 3 × 60 + 25 = 205 minutes; 150 ÷ 60 = 2 remainder 30 → 2 minutes 30 seconds; 8 × 7 + 3 = 59 days; 1.5 minutes = 90 seconds (so reading 150 s as '1.5 minutes' is genuinely wrong, as intended).",
+            "The source probe 'Is 90 minutes the same as 1.9 hours?' is a base-10 trap counterexample; the correct answer is that 90 minutes = 1.5 hours (since 60 minutes = 1 hour), not 1.9 hours. Retained only as a discussion prompt note, never as a learner answer option; any feedback must state 1.5 hours.",
+            "The original keyRepresentation 'number track for counting leap years / weeks' is retained as an optional scaffold in constraints and may be built into a dedicated activity where counting weeks or leap years is practised.",
+            "The source's assertions that '3D adds nothing' and that a static image or dialogue 'can't' teach the computation are catalog fit judgements, not established facts; they have been softened to scoped affordances/limits. Comparative efficacy or necessity of any single format is not established by the sources provided.",
+            "The sourceClaims on Activities 2 and 4 support the conversion content, the 'express answers appropriately' convention, and the documented errors, but do not validate the efficacy of selection/distractor items or spoken word problems; efficacy wording is kept conditional."
+          ],
+          "schemaVersion": 2
+        },
+        "assess": {
+          "method": "performance_task",
+          "poeTask": null,
+          "probeDeeper": [
+            "'You changed 150 seconds — is that 1.5 minutes or 2 minutes 30 seconds? Why?' (base-60)",
+            "'How did you turn 3 hours into minutes — did you count or multiply?'",
+            "'Is every month exactly 4 weeks? How many days are in this month?' (irregular units)",
+            "'Is 90 minutes the same as 1.9 hours? What is it really?' (base-10 trap counterexample)"
+          ],
+          "correctAnswer": "3 x 60 = 180, + 25 = 205 minutes; 150 ÷ 60 = 2 remainder 30 -> 2 minutes 30 seconds; 8 x 7 = 56, + 3 = 59 days — using multiplicative reasoning and correctly combining the mixed parts.",
+          "errorPatterns": [
+            {
+              "kind": "interference",
+              "pattern": "Assumes base-10 grouping — 100 seconds in a minute or 100 minutes in an hour",
+              "nextMove": "Re-ground on 60 by grouping actual seconds/minutes into sixties; contrast the base-10 answer with the real grouping so 60 sticks.",
+              "distractor": null,
+              "revealedBy": "Converts 150 s as '1.5 minutes' or '1 min 50 s'; converts hours using x100",
+              "reteachPrerequisiteId": "mt_d8al9JcajP"
+            },
+            {
+              "kind": "misconception",
+              "pattern": "Uses additive reasoning instead of multiplicative for conversions",
+              "nextMove": "Model x rate with known facts (3 x 60) built from a conversion table; show that multiplication is repeated addition made efficient.",
+              "distractor": null,
+              "revealedBy": "Converts 3 hours by slowly counting up in 60s, or adds where they should multiply, and struggles with larger conversions",
+              "reteachPrerequisiteId": "mt_d8al9JcajP"
+            },
+            {
+              "kind": "performance",
+              "pattern": "Mishandles the mixed quantity — ignores the remainder or the second unit (3 h 25 min -> just 180; 150 s -> '2 minutes' dropping the 30)",
+              "nextMove": "Scaffold the two-part split — convert the whole units, then add or keep the remainder; use a bar model separating whole units from the remainder.",
+              "distractor": null,
+              "revealedBy": "Gives 180 minutes for 3 h 25 min, or '2 minutes' for 150 seconds",
+              "reteachPrerequisiteId": null
+            },
+            {
+              "kind": "misconception",
+              "pattern": "Thinks every month is exactly 4 weeks / all months are the same length",
+              "nextMove": "Use a calendar to show months vary (28-31 days) and that about 4 weeks is approximate; keep the exact week-to-day fact distinct from the month facts.",
+              "distractor": null,
+              "revealedBy": "Converts months to days as x28, or states a month is exactly 4 weeks",
+              "reteachPrerequisiteId": null
+            }
+          ],
+          "responseLevels": {
+            "gap": "Converts by adding or by base-10 (100 to a minute); drops remainders; treats all months as 4 weeks.",
+            "full": "Converts all four unit pairs multiplicatively, handles mixed quantities (whole units + remainder) and reverse conversions (division with remainder) correctly, resists base-10, and treats irregular units (months) correctly.",
+            "partial": "Converts simple whole-unit cases multiplicatively, but slips on the base-60 grouping in reverse conversions or drops the remainder in mixed quantities."
+          },
+          "diagnosticPrompt": "Set conversion problems and WATCH the method: (1) 'Change 3 hours 25 minutes into minutes — show me how.' (2) 'A programme lasts 150 seconds — write that in minutes and seconds.' (3) 'How many days are in 8 weeks and 3 days?' Watch whether they multiply by the right rate (x60, x7) and handle the remainder, or add up, assume base-10 (100 to a minute), or drop the mixed part.",
+          "whatMakesItDiscriminate": "The 150-seconds item is the discriminator: a base-10 child answers '1.5 minutes', a drop-the-remainder child answers '2 minutes', a child using the 60-grouping answers 2 minutes 30 seconds. The mixed 3 h 25 min item catches additive reasoning and dropping the remainder."
+        },
+        "sources": [
+          {
+            "claim": "Year 5 pupils should 'solve problems involving converting between units of time'; the guidance adds pupils use all four operations in such problems, expressing answers appropriately (for example, days to weeks as weeks and days). Year 4 pupils 'solve problems involving converting from hours to minutes; minutes to seconds; years to months; weeks to days'.",
+            "source": "National Curriculum in England: Mathematics, Year 4 and Year 5 Measurement (statutory), gov.uk",
+            "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+            "verified": true
+          },
+          {
+            "claim": "White Rose Y4 Time (Steps 1-2) documents that when converting units of time children may rely on additive rather than multiplicative reasoning, may assume base-10 (100 seconds in a minute / 100 minutes in an hour), and may think there are always exactly 4 weeks in a month; the method uses multiplicative reasoning and known number facts (e.g. 360 s = 6 min via the 6 times-table).",
+            "source": "White Rose Education, Year 4 Summer Block 3: Time (scheme of learning), Steps 1-2",
+            "url": "https://assets.whiteroseeducation.com/new-schemes/Y4%20Summer%20Block%203%20SOL%20Time.pdf",
+            "verified": true
+          },
+          {
+            "claim": "Children apply discrete whole-number, base-10 reasoning to time and cannot easily coordinate its non-standard groupings of 60, 12, 7, which underlies base-10 conversion errors and difficulty coordinating mixed units.",
+            "source": "Earnest, Gonzales & Plant (2018), 'Time as a measure', Journal of Numerical Cognition 4(1)",
+            "url": "https://jnc.psychopen.eu/index.php/jnc/article/view/5793",
+            "verified": true
+          }
+        ],
+        "confidence": "high",
+        "provenance": {
+          "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
+          "createdAt": "2026-07-27T22:11:23.113Z",
+          "updatedAt": "2026-10-19T15:20:17.648Z"
+        },
+        "publicationNotes": {
+          "omittedCurriculumText": []
+        }
+      }
+    },
+    {
+      "originalTopicId": "mt_Zks8xyInSG",
+      "reason": "topic_merged",
+      "relatedTopicIds": [
+        "mt_d8al9JcajP"
+      ],
+      "sourceCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+      "topic": {
+        "id": "mt_Zks8xyInSG",
+        "type": "PROCEDURAL",
+        "subject": "Mathematics",
+        "domain": "Measurement",
+        "name": "Unit relationships and conversion tables",
+        "description": "Know relative sizes of measurement units within one system (km/m/cm/mm, kg/g, l/ml, hr/min/sec); convert between different metric units and express measurements in terms of a smaller unit; record equivalents in conversion tables",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12,
+        "centrality": 0.06910569105691057,
+        "evidence": [
+          "Convert 3.5 km to 3,500 m",
+          "Complete a conversion table for cm and mm: (1,10), (2,20), (3,30)...",
+          "Express 2 kg 350 g as 2,350 g"
+        ],
+        "assessmentPrompt": "If {{name}} needs to convert 3.5 kg to grams, can they do it confidently — and also fill in a simple two-column table showing the same measurements in kg and g?",
+        "standards": [
+          "acara-v9:AC9M5M01",
+          "acara-v9:AC9M6M01",
+          "ccss-math:4.MD.1",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
+          "uk-nc-2013:Ma5/3.1a"
+        ]
+      },
+      "research": {
+        "topicId": "mt_Zks8xyInSG",
+        "pedagogy": {
+          "summary": "Year 5 (age 9–10) pupils learn the relative sizes of metric units (km/m/cm/mm, kg/g, l/ml) and convert between them, expressing a measurement in terms of a smaller unit and recording equivalents in conversion tables. Conversion is APPLIED place value: to a smaller unit you multiply (there are more of them); to a larger unit you divide (fewer of them). The two persistent hazards are choosing the wrong operation and manipulating zeros/decimals mechanically ('add a zero') instead of moving the digits across a fixed decimal point.",
+          "bestPractices": [
+            "Anchor the multiply/divide decision in REASONING about unit size, not a rule: 'which unit is bigger? there are fewer of the bigger unit, so to reach it I divide' — the rule is exactly what pupils reverse (Oak National Academy).",
+            "Teach conversion as multiplying/dividing by 10, 100, 1000, and talk about the DIGITS moving (one/two/three places) while the decimal point stays fixed — never 'move the decimal point' or 'add a zero' (NCETM Spine 2.29).",
+            "Secure fluency with ×/÷ by 10/100/1000 BEFORE layering on conversion, to avoid overload.",
+            "Use a place-value chart / Gattegno chart so pupils SEE the digits shift and the value change (the 1 in 1.75 km becomes the 1 thousand in 1750 m).",
+            "Build conversion tables and read them as a set of equivalent multiplications; include mixed-unit forms (2 kg 350 g = 2350 g) and always add a reasonableness check (bigger or smaller number than we started with?)."
+          ],
+          "keyRepresentations": [
+            "Place-value / Gattegno chart showing digits sliding across a fixed decimal point",
+            "Conversion tables (e.g. cm→mm: 1→10, 2→20, …)",
+            "Double number line linking two units",
+            "Bar showing a mixed unit (2 kg + 350 g) recomposed as one unit"
+          ],
+          "commonMisconceptions": [
+            "Confuses when to multiply and when to divide (converts to a smaller unit by dividing, or vice versa).",
+            "'Adds a zero' or manipulates zeros mechanically, which breaks with decimals (3.5 km → '350 m' or '3.50 m' instead of 3500 m).",
+            "Treats a mixed unit as concatenation (2 kg 35 g → '235 g'), a two-separate-numbers error.",
+            "Fills a conversion table by copying a pattern without understanding the ×10 relationship."
+          ]
+        },
+        "learn": {
+          "summary": "Year 5 pupils (age 9–10) learn the relative sizes of units within one system (metric km/m/cm/mm, kg/g, l/ml; and time units hr/min/sec, which are not metric) and convert between metric units, expressing a measurement in a smaller unit and recording equivalents in conversion tables. Metric conversion is applied place value: converting to a SMALLER unit means multiplying (there are more of them); converting to a LARGER unit means dividing (there are fewer of them). The two persistent hazards are choosing the wrong operation and manipulating zeros/decimals mechanically ('add a zero') instead of moving the digits across a fixed decimal point. The core activity is a live place-value transformation where digits slide across a fixed point, supported by table-building, mixed-unit recomposition, and targeted practice that probes direction and zero errors. (Note: the digit-sliding by 10/100/1000 applies to the metric units; hr/min/sec relate by ×60 and are included only in the 'relative sizes' knowledge.)",
+          "activities": [
+            {
+              "title": "Slide the digits across a fixed decimal point",
+              "feedback": [
+                "If the pupil appends a zero (3.5 km → '3.50 m') or uses the wrong factor (3.5 km → '350 m', i.e. ×100), show the digits' positions on the chart: ×1000 moves each digit three places left past a fixed point, so 3.5 lands as 3500.",
+                "If direction is reversed (3.5 km → 0.0035 m), re-ask 'metres are smaller, so are there more or fewer than 3.5?' — more, so multiply, so the answer is bigger than 3.5.",
+                "Add a reasonableness check every time: 'Is your answer bigger or smaller than you started with, and does that fit the unit size?'"
+              ],
+              "rationale": "Anchoring the multiply/divide choice in reasoning about unit size targets the exact rule pupils reverse, and showing digit movement across a fixed point addresses why 'add a zero' breaks with decimals. A live, interactive chart (type a value, choose a unit, see digits slide and point stay fixed) is proposed to make the transformation felt rather than told; a static reference table can show one worked conversion but does not let the pupil perform the operation or see the digits move.",
+              "sourceClaims": [
+                "To multiply by 10/100/1000 the DIGITS move one/two/three places left (right to divide) while the decimal point stays fixed; measures are converted using multiplication and division by 10/100/1000; 'add/remove a zero' reasoning is false for decimals (e.g. 25.34×10 ≠ 25.340).",
+                "Pupils confuse when to multiply and when to divide when converting; the recommended fix is to reason about unit size — there are fewer of the larger unit, so converting to it means dividing."
+              ],
+              "learnerActions": [
+                "Enter a measurement such as 3.5 km and choose the target unit (metres).",
+                "Before computing, answer the prompt: 'Is a metre bigger or smaller than a kilometre — so will there be MORE metres or FEWER?' State whether this means multiply or divide.",
+                "Watch (or physically move, using a place-value chart or Gattegno chart) every digit slide three places left while the decimal point stays nailed in place, so 3.5 becomes 3500, with place-holder zeros dropping in where needed.",
+                "Repeat for a case that keeps the decimal visible, e.g. 1.75 km to m, naming where each digit lands (the 1 becomes 1 thousand, giving 1750 m).",
+                "Do at least one divide case too, e.g. 4500 m to km, moving digits three places right to give 4.5 km."
+              ],
+              "intendedInsight": "The number grows (or shrinks) because the DIGITS move a fixed number of places, not because zeros are 'added' — so 3.5 km can never become 3.50 m."
+            },
+            {
+              "title": "Build and check conversion tables",
+              "feedback": [
+                "If a pupil pattern-copies without the ×10 idea, ask what single multiplication turns the left column into the right (auto-checking each row against ×10 makes a broken row visible immediately).",
+                "Correct answers for the cm→mm table: 1→10, 2→20, 5→50, 10→100."
+              ],
+              "rationale": "Reading tables as equivalent multiplications ties table completion back to the underlying factor, countering mechanical copying. Direction and factor practice map cleanly onto fill-in and matching tasks and can systematically probe the add-a-zero and direction errors, though such practice gives no live digit-movement.",
+              "sourceClaims": [
+                "To multiply by 10/100/1000 the DIGITS move one/two/three places left (right to divide) while the decimal point stays fixed; measures are converted using multiplication and division by 10/100/1000; 'add/remove a zero' reasoning is false for decimals (e.g. 25.34×10 ≠ 25.340)."
+              ],
+              "learnerActions": [
+                "Complete a cm→mm table: 1→__, 2→__, 5→__, 10→__ and say what you multiply by for each row.",
+                "Read the completed table aloud as a set of equivalent multiplications ('each centimetre is ten millimetres — I'm multiplying by 10').",
+                "Check each row against the ×10 relationship and flag any row that breaks the pattern, explaining why it is wrong.",
+                "Build a second table for a different pair of units (e.g. kg→g, ×1000) to see the same structure with a different multiplier."
+              ],
+              "intendedInsight": "A conversion table is a repeated multiplication by the same factor, not a copied number pattern — understanding the factor lets you extend or correct any row."
+            },
+            {
+              "title": "Recompose a mixed unit into one smaller unit",
+              "feedback": [
+                "If the pupil concatenates (2 kg 35 g → '235 g'), show 2 kg = 2000 g on a place-value chart or bar and add 35, exposing the empty hundreds place: 2035 g.",
+                "Confirm 2 kg 350 g = 2350 g because 2000 + 350 = 2350 (the digits of 350 happen to fill all three lower places, which is why this case hides the error that 2 kg 35 g reveals)."
+              ],
+              "rationale": "Mixed-unit concatenation is a whole-number 'two separate numbers' error; recomposing via place value and testing a case where the loose amount has fewer digits forces attention to the empty place-value columns.",
+              "sourceClaims": [
+                "Children commonly treat a mixed measurement (or a decimal) as two separate whole numbers — e.g. '2 m and 30 cm' rather than 230 cm — driven by whole-number language."
+              ],
+              "learnerActions": [
+                "Express 2 kg 350 g as a number of grams, showing the step 2 kg = 2000 g, then 2000 + 350 = 2350 g.",
+                "Test the tricky case 2 kg 35 g: decide whether it equals 235 g or 2035 g and justify using place value.",
+                "Use a bar (2 kg + loose grams recomposed as one quantity) to make the missing hundreds place visible when the loose amount is small.",
+                "State a check: the combined gram total must include the thousands from the kilograms."
+              ],
+              "intendedInsight": "A mixed unit is recomposed by converting the larger part and ADDING, not by writing the two numbers side by side — so 2 kg 35 g = 2035 g, not 235 g."
+            },
+            {
+              "title": "Choose and justify the operation before calculating",
+              "feedback": [
+                "If justification is only 'that's the rule', redirect to unit size: which unit is bigger, so are there more or fewer of the target unit?",
+                "For the true/false item: 25.34 × 10 = 253.4, NOT 25.340 — appending a zero does not multiply a decimal by 10; the digits move one place left."
+              ],
+              "rationale": "Requiring a stated justification before computing surfaces rule-guessing and builds the unit-size reasoning that fixes direction; true/false items on the zero error make the decimal failure explicit.",
+              "sourceClaims": [
+                "Pupils confuse when to multiply and when to divide when converting; the recommended fix is to reason about unit size — there are fewer of the larger unit, so converting to it means dividing.",
+                "To multiply by 10/100/1000 the DIGITS move one/two/three places left (right to divide) while the decimal point stays fixed; measures are converted using multiplication and division by 10/100/1000; 'add/remove a zero' reasoning is false for decimals (e.g. 25.34×10 ≠ 25.340)."
+              ],
+              "learnerActions": [
+                "For a mix of conversions (some to smaller units, some to larger), first state 'multiply' or 'divide' and why, using unit size, BEFORE working the answer.",
+                "Answer true/false checks that target the zero error, e.g. 'Is 25.34 × 10 = 25.340?' and explain.",
+                "For each worked conversion, say aloud 'did I multiply or divide, and how did I know?'"
+              ],
+              "intendedInsight": "The operation follows from which unit is bigger and how many of the smaller unit fit in it — the heuristic 'fewer of the bigger unit → divide' decides direction every time."
+            }
+          ],
+          "constraints": [
+            "Secure fluency with ×/÷ by 10, 100 and 1000 BEFORE layering on conversion, to avoid overload.",
+            "Talk about the DIGITS moving one/two/three places while the decimal point stays fixed; never say 'move the decimal point' or 'add a zero'.",
+            "Practice tasks (fill-in conversions, matching equivalents, choose-the-operation items) are a strong companion for probing direction and zero errors but provide no live digit-movement feedback; pair them with the place-value chart work, which shows the transformation.",
+            "A static reference table or single worked example can show a result but does not let the pupil perform the conversion or watch digits move; treat it as reference only, not the main teaching vehicle.",
+            "A place-value slider/chart where digits visibly slide across a fixed point is proposed as a strong vehicle for THIS numeric transformation; it is not claimed superior for every topic. The content here is numeric, so 3D or spatial representations add little for this particular conversion skill.",
+            "Recognition-only responses (picking a correct conversion from options) do not by themselves show the pupil can independently reason about direction or move the digits; include tasks requiring them to produce and justify the conversion."
+          ],
+          "reviewNotes": [
+            "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions.",
+            "Self-audit checks performed: 3.5 km = 3500 m (×1000) is correct; 1.75 km = 1750 m; 4500 m = 4.5 km; cm→mm table 1→10, 2→20, 5→50, 10→100 is correct; 2 kg 350 g = 2350 g and 2 kg 35 g = 2035 g are correct; 25.34 × 10 = 253.4 (not 25.340) is correct. No arithmetic errors found in the migrated examples.",
+            "The original source listed one evidence-table row set as 1→10, 2→20, 3→30 while the assessment used 1,2,5,10 (→10,20,50,100); activities use 1,2,5,10 consistently. No conflict in the ×10 relationship, only in which rows are shown.",
+            "Some underlying sources were marked unverified (Oak National Academy guidance; DfE programmes of study) in the original row; their claims are retained as cited but their verification status is unchanged.",
+            "Per-activity sourceClaims were trimmed to those directly supporting each teaching principle: the general DfE 'pupils convert between metric units' claim and the Common Core 'convert / multi-step problems' claim were removed from activities where they supported only the topic, not the specific method taught.",
+            "All four original misconceptions are covered: direction confusion, 'add a zero', mixed-unit concatenation, and pattern-copying a table without the ×10 factor (the last via the table-builder's auto-check and the 'read the table as equivalent multiplications' action).",
+            "The double-number-line representation from the original keyRepresentations is not reflected in any activity; the bar model and place-value/Gattegno chart are used instead."
+          ],
+          "schemaVersion": 2
+        },
+        "assess": {
+          "method": "performance_task",
+          "poeTask": null,
+          "probeDeeper": [
+            "'Metres are smaller than kilometres — so should the number of metres be bigger or smaller than 3.5? Does your answer fit?'",
+            "'You wrote 3.5 km = ___ m. If I said 3.50 m, would that be right? Why not?'",
+            "'In your table, why does each centimetre become ten millimetres — what are you multiplying by?'",
+            "'Is 2 kg 35 g the same as 235 g? Show me on a place-value chart.'"
+          ],
+          "correctAnswer": "3.5 km = 3500 m (×1000, reasoning 'metres are smaller so there are more'); table 10, 20, 50, 100; 2 kg 350 g = 2350 g (2000 + 350). Chooses the operation from unit size and moves the digits correctly rather than appending zeros.",
+          "errorPatterns": [
+            {
+              "kind": "misconception",
+              "pattern": "Multiply/divide direction confusion — converts to a smaller unit by dividing (or to a larger unit by multiplying) because the operation is a memorised rule, not reasoning about unit size (e.g. 3.5 km → 0.0035 m).",
+              "nextMove": "Reason from unit size every time: 'metres are smaller than kilometres, so there are MORE of them — multiply.' Rehearse the 'fewer of the bigger unit → divide' heuristic before any calculation.",
+              "distractor": null,
+              "revealedBy": "The answer is smaller when it should be bigger (or vice versa); the child cannot say why they multiplied or divided beyond 'that's the rule'.",
+              "reteachPrerequisiteId": "mt_d8al9JcajP"
+            },
+            {
+              "kind": "misconception",
+              "pattern": "'Add a zero' / mechanical zeros — multiplies by 1000 by appending zeros, which breaks with the decimal: 3.5 km → '350 m' (one zero) or '3.50 m'.",
+              "nextMove": "Switch to digit-movement on a place-value chart: to ×1000 the digits move three places LEFT past a fixed point; use true/false items (25.34×10 = 25.340?) to expose why 'add a zero' fails for decimals.",
+              "distractor": null,
+              "revealedBy": "A converted value with the wrong number of digits after (or before) the point; zeros tacked on rather than digits moved three places.",
+              "reteachPrerequisiteId": "mt_LlMl2PbaZe"
+            },
+            {
+              "kind": "misconception",
+              "pattern": "Mixed-unit concatenation — treats 2 kg 350 g as digits to string together, so a case like 2 kg 35 g becomes '235 g' instead of 2035 g (a two-separate-numbers error).",
+              "nextMove": "Recompose via place value: 2 kg = 2000 g, then add the loose grams; show 2 kg 35 g ≠ 235 g on a bar so the missing hundreds place is visible.",
+              "distractor": null,
+              "revealedBy": "Recomposing a mixed unit by writing the two numbers side by side rather than adding 2000 g + 35 g.",
+              "reteachPrerequisiteId": "mt_d8al9JcajP"
+            }
+          ],
+          "responseLevels": {
+            "gap": "Guesses the operation, appends/removes zeros mechanically, and concatenates mixed units; a converted value with the wrong size.",
+            "full": "Reasons from unit size to choose ×/÷, moves the digits correctly (including decimals) across a fixed point, recomposes mixed units into one smaller unit, and completes/reads conversion tables — transferring across length, mass and capacity.",
+            "partial": "Converts a whole-number case in one direction but reverses direction the other way, mishandles the decimal in 3.5 km, or fills the table by pattern-copying without the ×10 idea."
+          },
+          "diagnosticPrompt": "Give the child three tasks and ask them to think aloud: (1) 'Convert 3.5 km to metres.' (2) 'Complete this cm→mm table: 1→__, 2→__, 5→__, 10→__.' (3) 'Write 2 kg 350 g as a number of grams.' Each time ask 'did you multiply or divide, and how did you know?' Watch the direction reasoning and how they handle the digits/zeros — not just the answers.",
+          "whatMakesItDiscriminate": "A pupil who understands converts 3.5 km to 3500 m and justifies by unit size; a pupil who doesn't either divides (0.0035 m) or 'adds a zero' (350 m / 3.50 m), and may concatenate 2 kg 350 g wrongly for a case like 2 kg 35 g. Reasoning-from-unit-size versus rule-guessing diverge exactly on the direction and on the decimal case."
+        },
+        "sources": [
+          {
+            "claim": "Grade 5 pupils convert among different-sized standard measurement units within a given system (e.g. convert 5 cm to 0.05 m), and use these conversions in solving multi-step real-world problems.",
+            "source": "Common Core State Standards for Mathematics, 5.MD.A.1 (verbatim via thecorestandards.org)",
+            "url": "https://www.thecorestandards.org/Math/Content/5/MD/",
+            "verified": true
+          },
+          {
+            "claim": "To multiply by 10/100/1000 the DIGITS move one/two/three places left (right to divide) while the decimal point stays fixed; measures are converted using multiplication and division by 10/100/1000; 'add/remove a zero' reasoning is false for decimals (e.g. 25.34×10 ≠ 25.340).",
+            "source": "NCETM Mastery PD, Spine 2 Topic 2.29 'Decimal place-value knowledge, multiplication and division' (Year 6)",
+            "url": "https://www.ncetm.org.uk/classroom-resources/primm-229-decimal-place-value-knowledge-multiplication-and-division/",
+            "verified": true
+          },
+          {
+            "claim": "Children commonly treat a mixed measurement (or a decimal) as two separate whole numbers — e.g. '2 m and 30 cm' rather than 230 cm — driven by whole-number language.",
+            "source": "Cambridge Mathematics, 'Use of Money as a Decimal Representation: A Review' (Jameson), citing Babcock LDP / Steinle 2004",
+            "url": "https://www.cambridgemaths.org/Images/research-3-money-and-decimals-full.pdf",
+            "verified": true
+          },
+          {
+            "claim": "Pupils confuse when to multiply and when to divide when converting; the recommended fix is to reason about unit size — there are fewer of the larger unit, so converting to it means dividing.",
+            "source": "Oak National Academy, KS2 'Converting units of length / mass and capacity' teacher guidance",
+            "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/calculating-with-decimal-fractions/lessons/converting-units-of-length",
+            "verified": false
+          },
+          {
+            "claim": "UK DfE Year 5 pupils convert between different metric units (km/m, cm/m, cm/mm, g/kg, l/ml).",
+            "source": "DfE, National Curriculum in England: Mathematics programmes of study (Year 5 Measurement)",
+            "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+            "verified": false
+          }
+        ],
+        "confidence": "high",
+        "provenance": {
+          "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
+          "createdAt": "2026-07-28T00:03:01.350Z",
+          "updatedAt": "2026-10-19T15:21:55.182Z"
+        },
+        "publicationNotes": {
+          "omittedCurriculumText": []
+        }
+      }
+    },
+    {
+      "originalTopicId": "mt_2VpdPjvewx",
+      "reason": "topic_merged",
+      "relatedTopicIds": [
+        "mt_d8al9JcajP"
+      ],
+      "sourceCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+      "topic": {
+        "id": "mt_2VpdPjvewx",
+        "type": "PROCEDURAL",
+        "subject": "Mathematics",
+        "domain": "Measurement",
+        "name": "Decimal place value",
+        "description": "Convert among different-sized standard measurement units within a given system (e.g. 5 cm to 0.05 m) using decimal notation to up to three decimal places; convert between smaller and larger units of length, mass, volume, and time",
+        "ageRangeStart": 10,
+        "ageRangeEnd": 13,
+        "centrality": 0.08333333333333333,
+        "evidence": [
+          "Convert 3,250 g to 3.25 kg using decimal notation",
+          "Convert 0.45 km to 450 m",
+          "Explain the relationship between mm, cm, m, and km using powers of 10"
+        ],
+        "assessmentPrompt": "If {{name}} needs to convert 5 cm to metres and write the answer as a decimal, can they do it — and also convert 2.45 kg into grams?",
+        "standards": [
+          "acara-v9:AC9M5M01",
+          "acara-v9:AC9M6M01",
+          "ccss-math:5.MD.1",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
+          "uk-nc-2013:Ma6/3.1b"
+        ]
+      },
+      "research": {
+        "topicId": "mt_2VpdPjvewx",
+        "pedagogy": {
+          "summary": "Year 6 (age 10–11) pupils convert between standard units using DECIMAL notation to up to three decimal places, moving in both directions (smaller↔larger), and can explain the mm–cm–m–km (and g–kg, ml–l) relationships as powers of 10. This is the decimal extension of Year 5 conversion: the same 'reason from unit size, move the digits' method, now with the decimal point in play. The load-bearing hazard is decimal place value — the 'add/remove a zero' shortcut fails (3250 g ÷ 1000 is 3.25 kg, not 325), and children who think 'the point is the decimal' misplace digits.",
+          "bestPractices": [
+            "Convert by moving the DIGITS across a fixed decimal point (×/÷ by 10/100/1000), explicitly rejecting 'add a zero' and 'move the point' — use true/false error-spotting (0.45÷10 = .45?) to confront the shortcut (NCETM Spine 2.29).",
+            "Keep the unit-size reasoning from Year 5 ('larger unit → fewer → divide') so direction is reasoned, not guessed.",
+            "Make the powers-of-10 STRUCTURE explicit: 10 mm = 1 cm, 100 cm = 1 m, 1000 m = 1 km — so a conversion is one multiplication/division by a power of ten, and mixed chains compose.",
+            "Use a place-value chart extended to thousandths so pupils can state the value of each digit before and after, and place holder zeros correctly.",
+            "Include a reasonableness check (should the number get bigger or smaller?) to catch direction and decimal-placement errors."
+          ],
+          "keyRepresentations": [
+            "Place-value chart extended to thousandths (digits slide, point fixed)",
+            "Powers-of-10 ladder mm×10→cm×100→m×1000→km",
+            "Double number line for the two units",
+            "Gattegno chart for ×/÷ by powers of 10"
+          ],
+          "commonMisconceptions": [
+            "'Add/remove a zero' with decimals: 3250 g → '325 kg', or 0.45 km → '45 m' / '4.5 m'.",
+            "Reverses the multiply/divide direction, giving an answer orders of magnitude out (0.45 km → 0.00045 m).",
+            "'The point is the decimal' — mis-values digits after the point or treats 0.45 as the whole number 45.",
+            "Cannot articulate the powers-of-10 relationship, so treats each conversion as an isolated fact."
+          ]
+        },
+        "learn": {
+          "summary": "Year 6 pupils (age 10–11) convert between standard measurement units using decimal notation to up to three decimal places, moving in both directions (smaller↔larger), and explain the mm–cm–m–km (and g–kg, ml–l) relationships as powers of ten. This extends Year 5 conversion with the decimal point now in play: the method stays 'reason from unit size, then move the DIGITS across a fixed decimal point', using ×/÷ by 10/100/1000. The load-bearing hazard is decimal place value — the 'add/remove a zero' shortcut fails (3250 g ÷ 1000 = 3.25 kg, not 325), and children who think 'the point is the decimal fraction' misplace digit values.",
+          "activities": [
+            {
+              "title": "Move the digits, keep the point still (place-value conversion)",
+              "feedback": [
+                "If a learner answers 325 kg for 3250 g, they removed zeros instead of moving digits three places. Rebuild it on the chart: 3250 ÷ 1000 moves each digit three places right, giving 3.25 — count the places, do not delete symbols.",
+                "If a learner answers 4.5 m or 45 m for 0.45 km, name the error precisely: 4.5 m is a one-place shift (as if ×10), and 45 m is a two-place shift (as if ×100). Both are wrong; 0.45 × 1000 moves digits three places left to 450 m. Have them name the value of the 4 (four tenths) and the 5 (five hundredths) first, then shift three places.",
+                "If an answer is wildly out (e.g. 0.00045 m or 3 250 000 kg), the multiply/divide direction was reversed. Re-reason from unit size before trusting the result.",
+                "If a learner treats 0.45 as the whole number 45, rebuild decimal place value: each column to the right is ten times smaller, so 0.45 is four tenths and five hundredths."
+              ],
+              "rationale": "Converting by moving digits across a fixed point directly confronts the 'add/remove a zero' shortcut, which fails for decimals; pairing it with explicit unit-size reasoning keeps direction reasoned rather than guessed, and the equal-value check (3.250 = 3.25) addresses holder-zero confusion. The 5 cm→0.05 m case instances the same method on a shorter chain.",
+              "sourceClaims": [
+                "Convert measures by moving the DIGITS across a fixed decimal point via ×/÷ by 10/100/1000; the guide embeds 'add/remove a zero' as FALSE statements for decimals (0.45÷10 = .45; 25.34×10 = 25.340) to expose the misconception.",
+                "Grade 5 pupils convert among different-sized standard measurement units within a given system, with the parenthetical example 'convert 5 cm to 0.05 m', using decimal notation.",
+                "UK DfE Year 6 pupils solve problems involving conversion of units using decimal notation up to three decimal places, converting length/mass/volume/time from a smaller unit to a larger and vice versa."
+              ],
+              "learnerActions": [
+                "Set up a place-value chart extended to thousandths. Write 3250 g in it, then convert to kilograms by sliding every digit three places to the RIGHT (dividing by 1000) while the decimal point stays fixed, landing on 3.25 kg; note that a holder zero is inserted only where place value demands it.",
+                "Before moving, state the unit-size reason aloud: 'Kilograms are the bigger unit, so there will be FEWER of them — I divide.' Then check the direction of the digit shift matches.",
+                "Convert the reverse case 0.45 km to metres (×1000), sliding digits three places LEFT to get 450 m; state that metres are smaller, so there are MORE.",
+                "Convert 5 cm to 0.05 m (÷100), sliding each digit two places to the right — a shorter example of the same digit-movement method with decimal notation; say why metres are the larger unit so there are fewer.",
+                "Confirm that 3.250 kg and 3.25 kg name the same quantity — the trailing zero after the last significant digit does not change the value.",
+                "Do a reasonableness check each time: 'Should this number get bigger or smaller?' and reject any answer that is orders of magnitude out."
+              ],
+              "intendedInsight": "A conversion moves the SAME digits across a FIXED decimal point; the point does not move. Converting to a larger unit gives fewer of them (divide, digits move right); converting to a smaller unit gives more (multiply, digits move left). 3250 g and 3.25 kg are one quantity; 3.250 equals 3.25."
+            },
+            {
+              "title": "Spot the false shortcut (error-spotting with decimals)",
+              "feedback": [
+                "If a learner accepts 0.45 ÷ 10 = .45, show on the chart that dividing by ten moves each digit one place right: 0.45 → 0.045. Nothing was divided in '.45'.",
+                "If a learner accepts 25.34 × 10 = 25.340, point out that 25.340 equals 25.34 (same value). Multiplying by ten gives 253.4 — digits move one place left."
+              ],
+              "rationale": "True/false error-spotting on carefully chosen decimal cases makes the failure of the zero shortcut explicit and forces articulation of digit movement and place value.",
+              "sourceClaims": [
+                "Convert measures by moving the DIGITS across a fixed decimal point via ×/÷ by 10/100/1000; the guide embeds 'add/remove a zero' as FALSE statements for decimals (0.45÷10 = .45; 25.34×10 = 25.340) to expose the misconception.",
+                "A common decimal misconception is thinking 'the point is the decimal fraction'; place value must extend so each column to the right is ten times smaller, and holder zeros are understood."
+              ],
+              "learnerActions": [
+                "Judge true or false and explain: 'Is 0.45 ÷ 10 = .45?' Correct it to 0.045 by moving each digit one place right.",
+                "Judge true or false: 'Is 25.34 × 10 = 25.340?' Explain that appending a zero after the last decimal does NOT multiply by ten; the correct answer is 253.4, with digits moving one place left.",
+                "For each false statement, state the correct conversion and justify it with the value of each digit and the direction of movement."
+              ],
+              "intendedInsight": "Adding or removing a zero is not the same as multiplying or dividing by a power of ten once decimals are involved. ×/÷ by 10, 100, 1000 moves the digits by one, two, or three places; the zero trick coincidentally works for some whole numbers but misvalues decimals."
+            },
+            {
+              "title": "Climb the powers-of-ten ladder (composing conversions)",
+              "feedback": [
+                "If a learner cannot say why 1 km = 1000 m, walk the ladder rung by rung (m → ×10 → tens of metres → ×10 → hundreds → ×10 → 1000 m) so the ×1000 is seen as 10×10×10.",
+                "If a learner treats g–kg differently from m–km, point out both are ÷1000 (or ×1000) — the same power-of-ten structure applies."
+              ],
+              "rationale": "Making the powers-of-ten structure explicit lets conversions be reasoned and composed rather than memorised, which supports transfer across length, mass and volume.",
+              "sourceClaims": [
+                "UK DfE Year 6 pupils solve problems involving conversion of units using decimal notation up to three decimal places, converting length/mass/volume/time from a smaller unit to a larger and vice versa.",
+                "A common decimal misconception is thinking 'the point is the decimal fraction'; place value must extend so each column to the right is ten times smaller, and holder zeros are understood."
+              ],
+              "learnerActions": [
+                "Build a ladder stating each relationship: 10 mm = 1 cm, 100 cm = 1 m, 1000 m = 1 km. For each rung, say whether you multiply or divide and by what power of ten.",
+                "Hop along the ladder to compose a chain, e.g. mm → cm (÷10) → m (÷100) → km (÷1000), and recognise that any single conversion is one multiplication or division by a power of ten.",
+                "Optionally use a Gattegno chart (rows for powers of ten) to see each conversion as a single ×/÷ by a power of ten — moving along a row, or jumping rows for the larger steps.",
+                "Explain in words why 1 km is a thousand metres and not a hundred, using the powers-of-ten structure rather than reciting it as an isolated fact.",
+                "Transfer the same structure to mass (g–kg) and volume (ml–l) to show the method is general across metric units, not tied to length. Then contrast with time (e.g. 2.5 h = 150 min, not 250 min) to see that time units use factors of 60 and 24, not powers of ten."
+              ],
+              "intendedInsight": "The metric system is built on powers of ten, so every metric conversion is a single ×/÷ by a power of ten and mixed chains compose; knowing the structure removes the need to memorise each conversion separately. Time units are not decimal (60 s = 1 min, 60 min = 1 h, 24 h = 1 day), so time conversions use those factors instead of powers of ten."
+            }
+          ],
+          "constraints": [
+            "Reject 'add/remove a zero' and 'move the decimal point' as methods; teach movement of the DIGITS across a point that stays fixed.",
+            "Keep unit-size reasoning ('larger unit → fewer → divide; smaller unit → more → multiply') so direction is reasoned, not guessed, and pair it with a reasonableness check.",
+            "A fixed reference ladder of powers of ten can show the relationships but does not let a learner move digits or check direction themselves; use it alongside an activity where the learner performs the transformation (chart, writing, or spoken step-by-step), not as the only medium.",
+            "Matching, fill-in-the-blank and multiple-choice items (including true/false decimal cases) can probe direction and the add-a-zero error precisely, but recognition responses do not by themselves elicit independent construction of the conversion; include tasks where the learner produces the converted value and justifies it.",
+            "Ensure a holder zero is inserted only where place value requires it (e.g. 0.045), and that trailing zeros after the last significant decimal (3.250 vs 3.25) are recognised as equal value.",
+            "An extended place-value chart to thousandths, a double number line between the two units, and a Gattegno chart for ×/÷ by powers of ten are useful supports but are scaffolds; learners should also reason and state values without them to show secure understanding."
+          ],
+          "reviewNotes": [
+            "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions.",
+            "Self-audit of arithmetic: 3250 g ÷ 1000 = 3.25 kg (digits move three places right); 0.45 km × 1000 = 450 m (three places left); 5 cm ÷ 100 = 0.05 m (two places right); 0.45 ÷ 10 = 0.045 (one place right); 25.34 × 10 = 253.4 (one place left, NOT 25.340). All checked and consistent with the source's intended corrections. The misconception answers (325 kg, 45 m, 4.5 m, 25.340, 0.00045 m, 3 250 000 kg) appear only as errors to correct, never as valid answers.",
+            "The original source frames an interactive place-value slider as 'ideal' and a static image/3D/dialogue as 'poor' for this topic. These are catalog fit rankings, not established comparative efficacy; this rewrite retains the digit-movement mechanism as a concrete support while softening claims that other media 'cannot teach' the concept. A static ladder, Gattegno chart, and spoken/written reasoning can also support the objective.",
+            "The Gattegno chart from the original keyRepresentations is retained as an optional scaffold in the powers-of-ten activity and the scaffold constraint.",
+            "One listed source (DfE National Curriculum) carries verified:false in the row; treat its claim with appropriate caution pending verification."
+          ],
+          "schemaVersion": 2
+        },
+        "assess": {
+          "method": "performance_task",
+          "poeTask": null,
+          "probeDeeper": [
+            "'Kilograms are bigger than grams — so should the number of kg be bigger or smaller than 3250? Does 3.25 fit?'",
+            "'Is 3.250 kg the same as 3.25 kg? How do you know?'",
+            "'You wrote 0.45 km = ___ m. What is the 4 worth, and the 5? Now move them.'",
+            "'Explain to me why 1 km is a thousand metres and not a hundred — using powers of ten.'"
+          ],
+          "correctAnswer": "3250 g = 3.25 kg (÷1000, 'kg bigger → fewer'); 0.45 km = 450 m (×1000); explains 10 mm = 1 cm, 100 cm = 1 m, 1000 m = 1 km, each step a ×/÷ by a power of ten, digits moving across a fixed point.",
+          "errorPatterns": [
+            {
+              "kind": "misconception",
+              "pattern": "'Add/remove a zero' with decimals — divides 3250 by 1000 by deleting zeros ('325 kg'), or multiplies 0.45 by 1000 by appending/one-step zeros ('45 m' or '4.5 m').",
+              "nextMove": "Move digits three places on a place-value chart with the point fixed; use true/false items (0.45÷10 = .45? 25.34×10 = 25.340?) to show the zero shortcut fails for decimals.",
+              "distractor": null,
+              "revealedBy": "The answer has the wrong number of decimal places; zeros were added/removed rather than digits moved three places.",
+              "reteachPrerequisiteId": "mt_wPgpMJ0-PA"
+            },
+            {
+              "kind": "misconception",
+              "pattern": "Reverses the multiply/divide direction — gives an answer orders of magnitude out (0.45 km → 0.00045 m, or 3250 g → 3 250 000 kg).",
+              "nextMove": "Reason from unit size first ('metres smaller → more → multiply') and add a reasonableness check before trusting the answer.",
+              "distractor": null,
+              "revealedBy": "The result is far bigger/smaller than sensible; no unit-size reasoning offered.",
+              "reteachPrerequisiteId": "mt_Zks8xyInSG"
+            },
+            {
+              "kind": "misconception",
+              "pattern": "'The point is the decimal' — mis-values digits after the point, treating 0.45 as the whole number 45 or misreading thousandths.",
+              "nextMove": "Rebuild decimal place value: each column right is ten times smaller; state the value of each digit in 0.45 (four tenths, five hundredths) before converting.",
+              "distractor": null,
+              "revealedBy": "Digit values after the point are wrong; 0.45 handled as 45; three-decimal-place answers misplaced.",
+              "reteachPrerequisiteId": "mt_Zks8xyInSG"
+            }
+          ],
+          "responseLevels": {
+            "gap": "Adds/removes zeros, reverses direction, or mis-values decimal digits; answers orders of magnitude out.",
+            "full": "Converts both directions with correct decimal placement (digits move, point fixed), handles up to 3 dp, and explains the ×/÷ powers-of-10 structure linking mm–cm–m–km — transferring across length, mass, volume and time.",
+            "partial": "Converts a friendly case correctly but slips on three decimal places or on the reverse direction, or converts but cannot explain the powers-of-10 relationship."
+          },
+          "diagnosticPrompt": "Ask the child to think aloud through three tasks: (1) 'Convert 3250 g to kilograms.' (2) 'Convert 0.45 km to metres.' (3) 'Explain how mm, cm, m and km are related using powers of 10.' Watch the direction choice, where the decimal point ends up, and whether the powers-of-10 structure is understood — not just the final numbers.",
+          "whatMakesItDiscriminate": "A pupil with secure decimal place value moves the digits the right number of places in the right direction (3.25 kg; 450 m) and explains the ×10 chain; a pupil relying on 'add/remove a zero' produces 325 kg or 45 m, and one who thinks 'the point is the decimal' mis-values 0.45. Digit-movement understanding versus zero-shortcut diverge precisely on these decimal cases."
+        },
+        "sources": [
+          {
+            "claim": "Grade 5 pupils convert among different-sized standard measurement units within a given system, with the parenthetical example 'convert 5 cm to 0.05 m', using decimal notation.",
+            "source": "Common Core State Standards for Mathematics, 5.MD.A.1 (verbatim via thecorestandards.org)",
+            "url": "https://www.thecorestandards.org/Math/Content/5/MD/",
+            "verified": true
+          },
+          {
+            "claim": "Convert measures by moving the DIGITS across a fixed decimal point via ×/÷ by 10/100/1000; the guide embeds 'add/remove a zero' as FALSE statements for decimals (0.45÷10 = .45; 25.34×10 = 25.340) to expose the misconception.",
+            "source": "NCETM Mastery PD, Spine 2 Topic 2.29 (Year 6), Teacher Guide",
+            "url": "https://www.ncetm.org.uk/media/grmpyc0z/ncetm_spine2_segment29_y6.pdf",
+            "verified": true
+          },
+          {
+            "claim": "A common decimal misconception is thinking 'the point is the decimal fraction'; place value must extend so each column to the right is ten times smaller, and holder zeros are understood.",
+            "source": "Cambridge Mathematics, 'Use of Money as a Decimal Representation: A Review' (Jameson), citing Steinle 2004; and NCETM working-group materials",
+            "url": "https://www.cambridgemaths.org/Images/research-3-money-and-decimals-full.pdf",
+            "verified": true
+          },
+          {
+            "claim": "UK DfE Year 6 pupils solve problems involving conversion of units using decimal notation up to three decimal places, converting length/mass/volume/time from a smaller unit to a larger and vice versa.",
+            "source": "DfE, National Curriculum in England: Mathematics programmes of study (Year 6 Measurement)",
+            "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+            "verified": false
+          }
+        ],
+        "confidence": "high",
+        "provenance": {
+          "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
+          "createdAt": "2026-07-28T00:03:51.985Z",
+          "updatedAt": "2026-10-19T15:20:19.104Z"
         },
         "publicationNotes": {
           "omittedCurriculumText": []

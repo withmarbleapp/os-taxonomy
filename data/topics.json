@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1861,
+  "topicCount": 1858,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -23861,24 +23861,37 @@
       "subject": "Mathematics",
       "domain": "Measurement",
       "name": "Converting measurement units",
-      "description": "Convert between different units of measure (e.g. kilometre to metre, hour to minute, minute to second, year to month, week to day)",
+      "description": "Convert between related measurement units using their unit relationship and the relative sizes of the units to choose multiplication or division. Handle whole-number and decimal measurements at the task’s specified precision, including three-decimal-place examples, compound measures and reverse conversions with remainders; explain equivalents and record them in conversion tables. Include metric length, mass and capacity, and time relationships (hours/minutes, minutes/seconds, years/months and weeks/days), distinguishing fixed rates from variable month lengths.",
       "ageRangeStart": 8,
       "ageRangeEnd": 13,
       "centrality": 0.06504065040650407,
       "evidence": [
-        "Convert 3 km to 3000 m",
-        "State 2 hours = 120 minutes",
-        "Convert 5 weeks to 35 days"
+        "Convert 3.25 kg to 3250 g and 45 cm to 0.45 m, explaining why the count grows or shrinks; convert 5 g to 0.005 kg without adding or deleting zeros mechanically",
+        "Convert 2 hours 35 minutes to 155 minutes and 150 seconds to 2 minutes 30 seconds, preserving the mixed part or remainder and explaining why the rate is 60 rather than 100",
+        "Convert 8 weeks 3 days to 59 days and 2 years 3 months to 27 months; explain why an unspecified month cannot be converted to one fixed number of days",
+        "Build and interpret a two-column equivalence table for cm and mm, explain the factor, and use the same relationship to convert in either direction",
+        "Convert 2.5 hours to 9000 seconds through minutes, tracking the unit at each step and checking by reversing the conversion"
       ],
-      "assessmentPrompt": "If {{name}} is told a journey is 3.5 km, can they convert that to metres — and also turn 2 hours 15 minutes into just minutes?",
+      "assessmentPrompt": "Can {{name}} explain and show how to turn 3.25 kg into grams and 45 cm into metres, change 2 hours 35 minutes into minutes and 150 seconds into minutes and seconds, and make a small cm-to-mm conversion table? Ask how they chose each operation, kept any remainder, and why a month does not always have the same number of days.",
       "standards": [
         "acara-v9:AC9M4M03",
+        "acara-v9:AC9M5M01",
+        "acara-v9:AC9M6M01",
+        "ccss-math:4.MD.1",
+        "ccss-math:5.MD.1",
+        "ccss-math:6.RP.3d",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
+        "uk-nc-2013:KS3.Maths.Ratio.1",
         "uk-nc-2013:Ma/KS2/Y4/M/1",
-        "uk-nc-2013:Ma/KS2/Y4/M/6"
+        "uk-nc-2013:Ma/KS2/Y4/M/6",
+        "uk-nc-2013:Ma5/3.1a",
+        "uk-nc-2013:Ma5/3.1f",
+        "uk-nc-2013:Ma6/3.1b"
       ]
     },
     {
@@ -23992,34 +24005,6 @@
         "ccss-math:3.MD.8",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.1",
         "uk-nc-2013:Ma/KS2/Y4/M/2"
-      ]
-    },
-    {
-      "id": "mt_Zks8xyInSG",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Unit relationships and conversion tables",
-      "description": "Know relative sizes of measurement units within one system (km/m/cm/mm, kg/g, l/ml, hr/min/sec); convert between different metric units and express measurements in terms of a smaller unit; record equivalents in conversion tables",
-      "ageRangeStart": 8,
-      "ageRangeEnd": 12,
-      "centrality": 0.06910569105691057,
-      "evidence": [
-        "Convert 3.5 km to 3,500 m",
-        "Complete a conversion table for cm and mm: (1,10), (2,20), (3,30)...",
-        "Express 2 kg 350 g as 2,350 g"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 3.5 kg to grams, can they do it confidently — and also fill in a simple two-column table showing the same measurements in kg and g?",
-      "standards": [
-        "acara-v9:AC9M5M01",
-        "acara-v9:AC9M6M01",
-        "ccss-math:4.MD.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
-        "uk-nc-2013:Ma5/3.1a"
       ]
     },
     {
@@ -24204,26 +24189,6 @@
       ]
     },
     {
-      "id": "mt_2yas4Unc8o",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Telling time to the minute (age 9+)",
-      "description": "Solve problems involving converting between units of time (hours↔minutes, minutes↔seconds, years↔months, weeks↔days)",
-      "ageRangeStart": 9,
-      "ageRangeEnd": 10,
-      "centrality": 0.06199186991869918,
-      "evidence": [
-        "Convert 3 hours 25 minutes to 205 minutes",
-        "A programme lasts 150 seconds — express in minutes and seconds",
-        "How many days are in 8 weeks and 3 days?"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 2 hours 35 minutes into just minutes, can they do it — and then convert 180 seconds into minutes and seconds?",
-      "standards": [
-        "uk-nc-2013:Ma5/3.1f"
-      ]
-    },
-    {
       "id": "mt_IuHa5UI5od",
       "type": "CONCEPTUAL",
       "subject": "Mathematics",
@@ -24274,36 +24239,12 @@
       ]
     },
     {
-      "id": "mt_2VpdPjvewx",
-      "type": "PROCEDURAL",
-      "subject": "Mathematics",
-      "domain": "Measurement",
-      "name": "Decimal place value",
-      "description": "Convert among different-sized standard measurement units within a given system (e.g. 5 cm to 0.05 m) using decimal notation to up to three decimal places; convert between smaller and larger units of length, mass, volume, and time",
-      "ageRangeStart": 10,
-      "ageRangeEnd": 13,
-      "centrality": 0.08333333333333333,
-      "evidence": [
-        "Convert 3,250 g to 3.25 kg using decimal notation",
-        "Convert 0.45 km to 450 m",
-        "Explain the relationship between mm, cm, m, and km using powers of 10"
-      ],
-      "assessmentPrompt": "If {{name}} needs to convert 5 cm to metres and write the answer as a decimal, can they do it — and also convert 2.45 kg into grams?",
-      "standards": [
-        "acara-v9:AC9M5M01",
-        "acara-v9:AC9M6M01",
-        "ccss-math:5.MD.1",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
-        "uk-nc-2013:Ma6/3.1b"
-      ]
-    },
-    {
       "id": "mt_SqhXQhAEUf",
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Measurement",
-      "name": "Measurement Conversions",
-      "description": "Solve problems involving the calculation and conversion of units of measure, using decimal notation and multi-step reasoning in real-world contexts",
+      "name": "Solving problems with measurement conversions",
+      "description": "Choose and sequence unit conversion and calculation in multi-step real-world measurement problems using decimals. Decide when quantities need a common unit, carry out the operations and interpret and check the result; the conversion procedure itself is covered in Converting measurement units.",
       "ageRangeStart": 10,
       "ageRangeEnd": 12,
       "centrality": 0.08333333333333333,
@@ -24312,7 +24253,7 @@
         "Compare 2.5 litres and 2,450 ml by converting to the same unit",
         "Solve a multi-step problem involving time, distance, and unit conversion"
       ],
-      "assessmentPrompt": "If {{name}} is filling a fish tank that holds 60 litres and the tap fills it at 3.5 litres per minute, can they work out how long it will take to fill the tank?",
+      "assessmentPrompt": "A recipe needs 0.75 kg of flour for one batch. Can {{name}} work out how many grams are needed for three batches, show when they converted and multiplied, and explain how they checked the final amount?",
       "standards": [
         "acara-v9:AC9M6M01",
         "uk-nc-2013:Ma6/3.1a"
@@ -25682,10 +25623,10 @@
       "centrality": 0.09349593495934959,
       "evidence": [
         "Compute 3.456 × 100 = 345.6 correctly",
-        "Compute 45.2 ÷ 1000 = 0.0452 correctly",
+        "Compute 45 ÷ 1000 = 0.045 correctly",
         "Explain why multiplying by 10 shifts each digit one place to the left"
       ],
-      "assessmentPrompt": "Can {{name}} work out '4.6 ÷ 1,000 = 0.0046' — knowing that each division by 10 shifts digits one place to the right, even past the decimal point?",
+      "assessmentPrompt": "Can {{name}} work out 3.456 × 100 and 45 ÷ 1000, explaining how the value of each digit changes and why the second answer needs placeholder zeros?",
       "standards": [
         "acara-v9:AC9M6N06",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-B2.8",
@@ -27885,22 +27826,21 @@
       "type": "PROCEDURAL",
       "subject": "Mathematics",
       "domain": "Ratio & Proportion",
-      "name": "Unit Conversions",
-      "description": "Convert freely between related standard units of measurement (time, length, area, volume/capacity, mass) using decimal notation to up to three decimal places where appropriate",
+      "name": "Area and volume unit conversions",
+      "description": "Convert between related area and volume units by deriving and applying the square or cube of the linear conversion factor, including the relationship between cubic centimetres and litres. Use decimal notation up to three decimal places where appropriate; general linear-unit and time conversions are covered in Converting measurement units.",
       "ageRangeStart": 11,
       "ageRangeEnd": 13,
       "centrality": 0.08333333333333333,
       "evidence": [
-        "Convert between area units such as cm² and m² using the square of the linear scale factor",
-        "Perform multi-step conversions (e.g. convert 2.5 hours to seconds via minutes)",
-        "Convert volume units such as cm³ to litres and explain the relationship"
+        "Explain from a 100-by-100 cm square why 1 m² = 10,000 cm², and use that factor in both directions",
+        "Explain from a cube why 1 m³ = 1,000,000 cm³ rather than 100 cm³, and convert using the cubic factor",
+        "Use 1000 cm³ = 1 litre to express 2500 cm³ as 2.5 litres, tracking the kind of unit"
       ],
-      "assessmentPrompt": "Can {{name}} convert between units confidently — for example, changing kilometres to metres, kilograms to grams, or hours and minutes to just minutes — including multi-step problems?",
+      "assessmentPrompt": "If {{name}} converts 3 m² to cm², can they explain why the factor is 100 × 100 rather than 100? Then ask them to explain how many cm³ make 1 m³ and to change 2500 cm³ into litres.",
       "standards": [
         "ccss-math:6.RP.3d",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.1",
         "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
-        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1",
         "uk-nc-2013:KS3.Maths.Ratio.1"
       ]
     },
