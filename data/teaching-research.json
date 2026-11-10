@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "593080bfaddce36e577f998536afc91f764259c319cb8126544869c35ab2451c",
-  "recordCount": 1056,
+  "topicFileSha256": "801c411e3bc0ec9e394a25e1c8f2318fddd5e35e32d82cb6d05c3e8949f78bb4",
+  "recordCount": 1057,
   "coverage": {
-    "topicCount": 1868,
-    "withResearch": 1056,
+    "topicCount": 1869,
+    "withResearch": 1057,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -25,8 +25,8 @@
         "withoutResearch": 22
       },
       "History": {
-        "topics": 112,
-        "withResearch": 3,
+        "topics": 113,
+        "withResearch": 4,
         "withoutResearch": 109
       },
       "Learning to Learn": {
@@ -216371,6 +216371,144 @@
         "originalResearchGeneratedBy": "Taxonomy curation: verified Canadian political geography and original untested teaching design",
         "createdAt": "2026-11-10T21:18:03.888038Z",
         "updatedAt": "2026-11-10T21:18:03.888038Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_tOtBMuQ2Yn",
+      "pedagogy": {
+        "summary": "Teach actual named pre-1500 community knowledge with source and period attribution; existing history methods support but do not replace this knowledge.",
+        "bestPractices": [
+          "Keep community, place and approximate period attached to every fact.",
+          "Use original paraphrases and lawfully accessed linked evidence; label modern reconstruction separately.",
+          "Compare documented needs/material solutions without ranking cultures or inventing universal social rules."
+        ],
+        "keyRepresentations": [
+          "A broad locator and dated case strip.",
+          "Two separate food/home/material-technology profiles with source roles.",
+          "The actual 1992 Qariaraqyuk survey plan with its key and modern creation date."
+        ],
+        "commonMisconceptions": [
+          "Calls every early Inuit home an igloo despite the studied winter-house evidence.",
+          "Describes Droulers as Egypt or modern Canada because a crop/garden picture looks familiar.",
+          "Repeats a supplied caption but cannot retrieve the taught case with a changed view.",
+          "Claims a modern staged photograph was taken in 1450 or treats a research model as an eyewitness constitution."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Learn two bounded historical cases, explain supported setting relationships, and check factual retrieval across changed representations.",
+        "activities": [
+          {
+            "title": "Two named early community profiles",
+            "learnerActions": [
+              "Locate each community broadly with two dated case cards; align c. 1300–1400 and c. 1450 without demanding exact year arithmetic or making archaeological labels modern citizenship categories.",
+              "Build separate food/home/material-technology profiles using actual supplied teaching facts. Connect one local resource/season to a supported need in each; compare farming/fishing/longhouse evidence with marine-harvest/storage/winter-house evidence. Avoid cultural ranking or climate determinism.",
+              "Contrast an excavated feature/artefact and a labelled modern reconstruction. Discuss what the source directly shows and where interpretation begins; this supports shared historical-evidence skills without pretending it supplies all archaeology methods.",
+              "After supported study and a delay, remove the fact captions and ask for meaningful case retrieval. Change the presentation/map view or give a fresh attributed feature and ask which learned case it fits and why. Keep a new case’s information supplied for transfer, not a demand to know untaught history."
+            ],
+            "intendedInsight": "Distinct communities met shared needs through particular learned practices and local material settings; archaeological source limits matter.",
+            "feedback": [
+              "Which named place and period supports this fact?",
+              "Compare the actual case records instead of adding a universal people or gender rule.",
+              "Label the reconstruction and model limits before drawing another conclusion."
+            ],
+            "rationale": "Original low-confidence teaching design; no intervention/learner trial claimed.",
+            "sourceClaims": [
+              "Parks Canada documents a mid-15th-century St Lawrence Iroquoian village with cultivated and gathered food evidence, longhouses/storage and ceramic, stone and bone objects.",
+              "The archaeological registry supports the named site setting, material features and bounded interpretations; source labels are retained rather than making a modern citizenship judgment.",
+              "The interpretation centre presents a modern reconstruction of the approximately 1450 village, not a surviving or photographed original 15th-century longhouse.",
+              "The MCA 2015 portrait describes its attributed interpretation and community advisory role; modern reconstruction photographs must remain labelled as such.",
+              "Whitridge’s excavated Qariaraqyuk case has substantial 14th-century occupation and material evidence of winter housing, marine harvesting/storage and access to nonlocal materials. Leadership/status reconstructions use explicitly limited archaeological and ethnographic modelling."
+            ]
+          }
+        ],
+        "constraints": [
+          "Prepare an original two-case fact/map/timeline packet from the cited sources. Provide clear dated labels, broad current place locators, an excavated-feature drawing/photo only through an authorized source/link, and an explicitly modern reconstruction view. Read source permissions before reproducing protected photos/text; original paraphrases and links suffice. Teach both case facts rather than hand over answers during the independent probe. A comparable verified pre-1500 case can replace a case only after its factual/identity/period boundaries are reviewed.",
+          "The initial repertoire includes both a dated First Nation village and a dated early Inuit community. An equivalent replacement must preserve actual community, period and region specificity and supported food, home and technology knowledge, not simply swap broad people labels.",
+          "Whitridge’s Qariaraqyuk social-leadership interpretation is an archaeological model using explicitly stated analogies; it is not an eyewitness constitution or universal Inuit political system. No unsupported child/gender/governance inventory is required by this card.",
+          "Other-society breadth, own-life comparison, government, conflict and sustained inquiry/map duties require separate source-fit task designs. The new claim does not make every source code Full.",
+          "No hunting/cooking/ceremonial reenactment, ancestry disclosure or exact-year arithmetic required.",
+          "Only factual-source checks are verified; teaching efficacy remains untested."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked early-community knowledge draft. The actual MCA portrait, PDF pp. 47–48, was viewed; Qariaraqyuk published chapter site/dating evidence read. The actual figure 11.1, PDF p. 3 / printed p. 167, was viewed: a 1992 survey plan, not a pre-1500 map. Figure 11.3 is a research probable-exchange-route model, not a definitive historical itinerary. No modern Nation institution or later ethnographic role automatically backdated."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After learning about a mid-15th-century St Lawrence village and a 14th-century Inuit winter village, can {{name}} identify each place and period, describe its food, homes and tools, and explain one supported link to its setting? Compare the cases, then show a new labelled view or detail: can they connect it to the right case without assuming all communities lived alike?",
+        "correctAnswer": "Recalls two distinct pre-1500 cases with actual food, home and technology facts, explains a supported setting relation, and separates period evidence from reconstruction.",
+        "whatMakesItDiscriminate": "Independent retrieval separates historical knowledge from caption copying; matched food/home needs across contrasting environments test factual distinctions rather than prestige or appearance. Changed views and source labels expose projection of one community or era onto another.",
+        "probeDeeper": [
+          "Which learned community, place and approximate period does that fact belong to?",
+          "What particular resource or seasonal condition supports the connection?",
+          "Does this image show excavated remains, a later interpretation or a modern reconstruction?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "One generic past or Arctic lifestyle replaces the learned communities.",
+            "revealedBy": "Calls every Inuit house an igloo or moves the First Nation crop/longhouse profile to the Arctic case.",
+            "nextMove": "Rebuild the two dated case profiles and compare the supported material/food evidence.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats a reconstruction or research inference as direct period observation.",
+            "revealedBy": "Dates a modern staged photograph to 1450 or makes an analogy-based leadership model an observed rule for every person.",
+            "nextMove": "Separate the original remains, source interpretation and modern reconstruction using their labels; retain uncertainty.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only generic past-life claims or broad people names without the studied cases.",
+          "partial": "Recalls some case facts but confuses periods/places/materials or cannot explain a supported setting relationship.",
+          "full": "Recalls both distinct cases with actual food, home and technology facts, explains supported setting relationships, and handles changed views/new attributed details without conflation."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Parks Canada documents a mid-15th-century St Lawrence Iroquoian village with cultivated and gathered food evidence, longhouses/storage and ceramic, stone and bone objects.",
+          "source": "Parks Canada — Droulers/Tsiionhiakwatha backgrounder and site registry, 2016",
+          "url": "https://www.canada.ca/en/parks-canada/news/2016/06/droulers-tsiionhiakwatha-national-historic-site-of-canada.html",
+          "verified": true
+        },
+        {
+          "claim": "The archaeological registry supports the named site setting, material features and bounded interpretations; source labels are retained rather than making a modern citizenship judgment.",
+          "source": "Parks Canada — Droulers/Tsiionhiakwatha National Historic Site registry",
+          "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?i=76882&id=11811",
+          "verified": true
+        },
+        {
+          "claim": "The interpretation centre presents a modern reconstruction of the approximately 1450 village, not a surviving or photographed original 15th-century longhouse.",
+          "source": "Droulers/Tsiionhiakwatha interpretation centre — Plan your visit",
+          "url": "https://www.sitedroulers.ca/site/en/plan-your-visit/",
+          "verified": true
+        },
+        {
+          "claim": "The MCA 2015 portrait describes its attributed interpretation and community advisory role; modern reconstruction photographs must remain labelled as such.",
+          "source": "Mohawk Council of Akwesasne — A Cultural Portrait, 2015, pp. 47–48",
+          "url": "https://www.akwesasne.ca/media/wxgnpu2e/akwesasne-a-cultural-portrait-2015.pdf",
+          "verified": true
+        },
+        {
+          "claim": "Whitridge’s excavated Qariaraqyuk case has substantial 14th-century occupation and material evidence of winter housing, marine harvesting/storage and access to nonlocal materials. Leadership/status reconstructions use explicitly limited archaeological and ethnographic modelling.",
+          "source": "Peter Whitridge — Gender, Households, and the Material Construction of Social Difference, 2002, pp. 165–175",
+          "url": "https://www.mun.ca/archaeology/media/production/memorial/academic/faculty-of-humanities-and-social-sciences/archaeology/media-library/people/faculty/whitridge/Whitridge_2002_gender,_households.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original early-community knowledge source review;teaching efficacy untested",
+        "createdAt": "2026-11-10T22:30:00Z",
+        "updatedAt": "2026-11-10T22:30:00Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

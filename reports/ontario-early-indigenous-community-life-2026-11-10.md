@@ -1,0 +1,7 @@
+# Early First Nation and Inuit community knowledge
+
+The [card and original teaching design](ontario-early-indigenous-community-life-2026-11-10.json) add one bounded historical knowledge claim, `mt_tOtBMuQ2Yn`, in History / Early Societies. The studied Droulers/Tsiionhiakwatha mid-15th-century village and Qariaraqyuk 14th-century winter community supply particular food, housing and material-technology knowledge, with supported local-setting relationships. These facts are not contained in existing Egyptian, modern Canadian-period, contemporary identity or broad Inuit-and-Sami claims.
+
+The original low-confidence guide checks learned knowledge independently and in changed representations. It preserves source attribution and distinguishes excavated evidence, research interpretation and modern reconstruction. No hard prerequisite, country/grade clone, old claim change or learner-state operation is introduced.
+
+Four Ontario Grade 4 A3.3–A3.6 associations record component contributions at ages 9–10. Each remains Partial while other-society breadth and the complete source-specific tasks are qualified. Governance, social roles, children’s lives, conflict and inquiry/map performances are not inferred from archaeological daily-life facts. The [current ledger](ontario-grade4-social-current-ledger-2026-11-10.json) separates these contributions from the 19 already accounted geography expectations. This is source-fit authoring, not evidence that any learner has attained the knowledge.
