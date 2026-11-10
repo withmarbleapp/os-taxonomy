@@ -1,6 +1,8 @@
 # Grade 1 community needs and spatial tasks
 
-This dependent follow-up starts at the reviewed task checkpoint `48f9507`. It resolves seven further source-fit authoring conditions with unchanged existing claims: B1 and its three specifics, plus B3, B3.4 and B3.7. The [machine dossier](ontario-grade1-community-spatial-tasks-2026-11-10.json) gives complete materials, tasks, positive/near-miss evidence and transfer. The [39-code mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) retains the fourteen personal/community inquiry requirements as Partial. This proposal is not accepted main or DB publication.
+This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **39 Full/0 Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
+
+This dependent follow-up starts at the reviewed task checkpoint `48f9507`. It resolves seven further source-fit authoring conditions with unchanged existing claims: B1 and its three specifics, plus B3, B3.4 and B3.7. The [machine dossier](ontario-grade1-community-spatial-tasks-2026-11-10.json) gives complete materials, tasks, positive/near-miss evidence and transfer. At this historical step, fourteen personal/community inquiry records remained Partial; the linked current mapping includes their later source-fit resolutions. This proposal is not accepted main or DB publication.
 
 The actual [Grade 1 source](https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g1) and complete contributing cards were reread. No younger council, local-needs or map-scale clone is added. Source illustrations do not create requirements for every service, advanced numerical scales or universal community arrangements.
 
@@ -22,6 +24,6 @@ B3's overall description combines these performances with the already reviewed t
 
 ## Preservation and authoring boundary
 
-Six exact CA/Ontario 6–7 pair extensions use existing contexts. ComparingLengths becomes a further existing holder; the cumulative Grade 1 proposal has **106 pairs, 29 existing plus three previously justified new claims, 25 Full and 14 Partial**. This follow-up itself adds zero claims, contexts or edges and lowers no start age. All authored cards, research records, source catalogue, dependency graph and unaffected context content remain intact.
+Six exact CA/Ontario 6–7 pair extensions use existing contexts. ComparingLengths becomes a further existing holder; the cumulative Grade 1 proposal at this historical checkpoint had **106 pairs, 29 existing plus three previously justified new claims, 25 Full and 14 Partial**. This follow-up itself adds zero claims, contexts or edges and lowers no start age. All authored cards, research records, source catalogue, dependency graph and unaffected context content remain intact.
 
 Authoring source-fit coverage is separate from learner attainment. Resources and meaningful performances are specified; no private pupil identity/address, learner record collection, mandatory field trip or classroom study is required. The two coherent inquiry strands remain under separate review. No DB/learner-state action or automatic mastery transfer occurs.
