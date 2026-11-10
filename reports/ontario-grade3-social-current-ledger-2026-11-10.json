@@ -7,16 +7,16 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 4,
+    "Full": 5,
     "Partial": 1,
-    "Unverified": 35,
+    "Unverified": 34,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 4,
-    "topics": 3,
-    "codes": 4,
-    "newClaims": 2,
+    "pairs": 5,
+    "topics": 4,
+    "codes": 5,
+    "newClaims": 3,
     "reusedClaims": 1
   },
   "expectations": [
@@ -291,11 +291,13 @@
     },
     {
       "code": "B3.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_xswgDb7eIU"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-community-governance-claim-2026-11-10.json",
+      "coverageBasis": "The reviewed institutional knowledge and verified municipal/First Nation/M\u00e9tis packet account for the selected code\u2019s entity, services and development relationships. Cases remain replaceable with verified equivalents; source-fit design does not assert a child has performed it."
     },
     {
       "code": "B3.2",
@@ -352,6 +354,6 @@
       ]
     }
   ],
-  "semanticBoundary": "Two approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
+  "semanticBoundary": "Three approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
   "next": "Resolve B1.1 and remaining map/inquiry protocols; prepare bounded community-governance, period community-life and treaty knowledge drafts for separate semantic review."
 }
