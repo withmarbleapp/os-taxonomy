@@ -20,6 +20,7 @@ function checkBindings(rows, associations) {
     assert.ok(protocol && row.protocolReference?.startsWith('/'), `Missing dossier/reference for ${row.code}`);
     for (const segment of row.protocolReference.split('/').slice(1)) protocol = protocol?.[segment.replaceAll('~1', '/').replaceAll('~0', '~')];
     assert.ok(protocol && typeof protocol === 'object' && Object.keys(protocol).length, `Missing protocol for ${row.code}`);
+    if (Array.isArray(protocol.codes)) assert.ok(protocol.codes.includes(row.code), `Wrong protocol code for ${row.code}`);
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], `Unresolved Full condition for ${row.code}`);
   }
 }
