@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "5b1c8821b137fb30f963650af1cec907497d822b35313b0e276e7a22dc210d7d",
-  "recordCount": 1050,
+  "topicFileSha256": "e2cb9a64ae61ef4052e78ba1d1f9c1943e8fbd481673259dc837e37688559162",
+  "recordCount": 1051,
   "coverage": {
-    "topicCount": 1862,
-    "withResearch": 1050,
+    "topicCount": 1863,
+    "withResearch": 1051,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 22,
-        "withResearch": 0,
+        "topics": 23,
+        "withResearch": 1,
         "withoutResearch": 22
       },
       "History": {
@@ -215468,6 +215468,119 @@
         "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and original source-fit teaching proposal",
         "createdAt": "2026-11-10T20:43:47.743306Z",
         "updatedAt": "2026-11-10T20:43:47.743306Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_RIOhVDZZkG",
+      "pedagogy": {
+        "summary": "Use a bounded attributed Ottawa/Sudbury repertoire to distinguish actual places, cultural work and contributions. Original low-confidence design; no teaching-effectiveness claim.",
+        "bestPractices": [
+          "Teach the case facts with their actual named creators/institutions.",
+          "Require explanation of the contributions rather than naming a city or expressing approval.",
+          "Separate factual understanding from actual French reception/production and from personal cultural identity."
+        ],
+        "keyRepresentations": [
+          "Attributed Ottawa/Sudbury case cards",
+          "Place–activity/creator–contribution comparison",
+          "A further community’s short verified account"
+        ],
+        "commonMisconceptions": [
+          "Every resident of a city speaks the same language or shares one culture.",
+          "Naming French or saying be respectful establishes the particular community facts.",
+          "One cultural event defines everyone or proves a measured worldwide effect."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Connect actual Ontario French-speaking community cases with their cultural work, then compare carefully.",
+        "activities": [
+          {
+            "title": "Explain contributions across attributed communities",
+            "learnerActions": [
+              "Study the attributed Ottawa and Sudbury case cards with an accurate Ontario place reference. Distinguish a city from its French-speaking communities; neither language nor city establishes everybody’s ancestry, preferences or identity.",
+              "Connect the actual Ottawa festival, Ottawa-connected children’s author and Sudbury theatre with their different cultural activities and contributions. Explain how a festival can share music and connect artists, how a writer adds books, and how theatre creates/presents French-language work. These are concrete contributions, not a measured claim of global impact or a single timeless culture. For the festival, explicitly include its attributed support for international artists and cultural exchange; outside-world comparison alone does not establish that Ontario contribution.",
+              "After study, identify the two places and explain all three studied examples without copying a full ready-made answer. Brief ordinary-language explanations or pointing supported by explanation can establish the factual account; French language proficiency is checked separately in the curriculum’s channel-specific tasks.",
+              "Compare a new attributed community account, such as the France music celebration. Identify a supported similarity/difference and a question still unanswered; the new case is supplied evidence, not proof that all people share a national custom.",
+              "Make a non-sensitive personal or own-class/community connection, such as a real shared reading or performance activity, and another-community comparison. No family history, attendance at a festival, national pride or particular positive feeling is required. If the source-specific personal connection is not available, retain that condition rather than invent it."
+            ],
+            "intendedInsight": "Distinct communities create and share varied cultural work; actual examples and source limits matter more than a broad cultural label.",
+            "feedback": [
+              "Ask which place, institution/creator and actual activity the explanation concerns.",
+              "Return to the attributed facts when a stereotype or invented audience/impact appears."
+            ],
+            "rationale": "Original untested source-fit task design grounded in institutional/creator accounts.",
+            "sourceClaims": [
+              "Théâtre du Nouvel-Ontario identifies its Grand Sudbury community setting and principally French theatrical production and presentation.",
+              "Festival franco-ontarien describes its Ottawa cultural activity and support for Franco-Ontarian and international artists.",
+              "Mireille Messier’s own biography connects her with Ottawa and identifies French- and English-language children’s writing."
+            ]
+          }
+        ],
+        "constraints": [
+          "No exclusive current residence is asserted for the author; her own pages differ about her current base.",
+          "No song lyrics, novel contents or current show/ticket schedules are reproduced or inferred.",
+          "No compulsory affection, pride, personal disclosure or cultural participation.",
+          "This factual contribution does not itself certify listening, speaking, reading or writing in French."
+        ],
+        "reviewNotes": [
+          "2026-11-10: closest local-history/diversity/identity and French-language claims read; particular community facts remain independently missing. Original guide, untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After learning about French-language cultural life in Ottawa and Sudbury, can {{name}} name the places and explain how the studied festival, children’s author and theatre contribute? With another community’s short account, can they make a supported comparison without assuming everybody in either place has the same culture?",
+        "correctAnswer": "Names Ottawa and Sudbury in Ontario and explains the actual festival, author and theatre contributions with attribution; uses a further supplied account for a supported comparison without universalising cultures.",
+        "whatMakesItDiscriminate": "Requires the particular located communities and all three cultural-work examples, not generic respect, a French label, copying or an assumed shared identity. A supplied further community tests supported comparison and source limits.",
+        "probeDeeper": [
+          "Which city and institution or creator does this fact concern?",
+          "What does the work add or share, beyond the institution’s name?",
+          "What does the new account support, and what should we not assume about every resident?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Treats a language/city/event as everyone’s fixed culture, or only supplies a positive label.",
+            "revealedBy": "Cannot connect the studied activities and creators to their actual places/contributions, or invents a universal tradition.",
+            "nextMove": "Revisit the attributed case cards, separate place/activity/contribution, then compare another supplied case carefully.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable identification of the particular places/contributions, or only cultural stereotypes.",
+          "partial": "Names some cases but does not explain all three contributions or handle the further comparison/source limits.",
+          "full": "Explains the two located communities and three attributed contributions, then makes a supported further-community comparison without universalising."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Théâtre du Nouvel-Ontario identifies its Grand Sudbury community setting and principally French theatrical production and presentation.",
+          "source": "Théâtre du Nouvel-Ontario",
+          "url": "https://letno.ca/",
+          "verified": true
+        },
+        {
+          "claim": "Festival franco-ontarien describes its Ottawa cultural activity and support for Franco-Ontarian and international artists.",
+          "source": "Festival franco-ontarien, history and mission",
+          "url": "https://ffo.ca/historique-conseil-dadministration/",
+          "verified": true
+        },
+        {
+          "claim": "Mireille Messier’s own biography connects her with Ottawa and identifies French- and English-language children’s writing.",
+          "source": "Mireille Messier, biography",
+          "url": "https://www.mireille.ca/bio/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified community knowledge and original untested teaching design",
+        "createdAt": "2026-11-10T21:53:33.909328Z",
+        "updatedAt": "2026-11-10T21:53:33.909328Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
