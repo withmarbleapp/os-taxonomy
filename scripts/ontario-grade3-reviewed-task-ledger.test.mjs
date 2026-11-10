@@ -63,3 +63,28 @@ test('environment overall dispositions retain reviewed specifics and an integrat
     for (const [topicId, codes] of Object.entries(report.associations)) if (codes.includes(overall)) assert.ok(contexts.some(row => row.topicId === topicId && row.country === 'CA' && row.region === 'Ontario' && row.ageRangeStart === 8 && row.ageRangeEnd === 9 && row.standards.includes(prefix + overall)));
   }
 });
+test('final historical dossiers bind their reviewed records and actual community policy cases', () => {
+  for (const name of ['historical-location-impact', 'policy-identity', 'history-integrated']) {
+    const file = `ontario-grade3-${name}-review-2026-11-10.json`;
+    const report = read(`reports/${file}`);
+    for (const code of report.codes) {
+      const record = ledger.expectations.find(row => row.code === code);
+      assert.equal(record?.disposition, 'Full');
+      assert.equal(record.dossier, file);
+      assert.ok(Object.values(report.protocols).some(protocol => protocol.codes.includes(code)));
+      for (const [topicId, codes] of Object.entries(report.associations ?? report.proposedAssociations)) if (codes.includes(code)) {
+        assert.ok(record.contributingTopicIds.includes(topicId));
+        assert.ok(contexts.some(row => row.topicId === topicId && row.country === 'CA' && row.region === 'Ontario' && row.ageRangeStart === 8 && row.ageRangeEnd === 9 && row.standards.includes(prefix + code)));
+      }
+    }
+    for (const specifics of Object.values(report.prerequisiteSpecificDispositions ?? {})) for (const code of specifics) assert.equal(ledger.expectations.find(row => row.code === code)?.disposition, 'Full');
+  }
+  const policy = read('reports/ontario-grade3-policy-identity-review-2026-11-10.json');
+  const requirements = policy.protocols['period-and-later-policy'].performanceConditions;
+  for (const category of ['First Nations', 'Métis', 'Inuit']) {
+    const selected = requirements.actualCases.find(item => item.category === category);
+    assert.ok(selected);
+    assert.ok(policy.resources.some(resource => resource.id === selected.caseId));
+  }
+  assert.equal(requirements.learnerDisclosureRequired, false);
+});
