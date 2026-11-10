@@ -7,6 +7,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { normalizeCurriculumAlignments, projectTopicCompatibility } from './check-curriculum-alignments.mjs';
+import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
 import { checkTeachingResearch } from './check-teaching-research.mjs';
 
 const json = value => Buffer.from(JSON.stringify(value, null, 2) + '\n');
@@ -24,6 +25,8 @@ export function generateAlignmentArtifacts(files) {
   const output = { 'curriculum-alignments.json': json(alignments), 'topics.json': json(nextTopics) };
   const research = { ...load('teaching-research.json'), topicFileSha256: sha256(output['topics.json']) };
   const manifest = load('manifest.json');
+  const inventoryErrors = checkManifestTopicInventory(topics, manifest);
+  assert.equal(inventoryErrors.length, 0, inventoryErrors.join('\n'));
   assert.equal(manifest.taxonomyVersion, topics.version, 'manifest taxonomy version mismatch');
   manifest.counts.curricula = curriculumStandards.curricula.length;
   manifest.counts.curriculumStandards = curriculumStandards.curricula.reduce((n,source)=>n+source.topics.length,0);

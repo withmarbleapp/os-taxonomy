@@ -147,7 +147,7 @@ function snapshot(directory, includeAlignments, scoped = false) {
     document.schemaVersion = 2;
     document.alignments = document.alignments.map(row => ({ ...row, scope: 'jurisdiction' }));
   }
-  const manifest = { taxonomyVersion: 'v1', counts: { teachingResearch: 0 }, files: {} };
+  const manifest = { taxonomyVersion: 'v1', counts: { teachingResearch: 0, topics: context.topics.topics.length, topicsBySubject: Object.fromEntries([...new Set(context.topics.topics.map(t => t.subject))].map(subject => [subject, context.topics.topics.filter(t => t.subject === subject).length])) }, files: {} };
   const put = (name, value) => {
     const bytes = JSON.stringify(value, null, 2) + '\n';
     writeFileSync(join(data, name), bytes);
@@ -225,5 +225,23 @@ test('dataset validation accepts v2 and rejects scope corruption even with updat
     assert.equal(bad.status, 1);
     assert.match(bad.stderr, /allowed shape/);
     assert.doesNotMatch(bad.stderr, /checksum mismatch|count mismatch/);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+
+test('dataset validator rejects stale topic totals and subject inventories without checksum changes', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'taxonomy-inventory-'));
+  try {
+    const fixture = snapshot(dir, true);
+    assert.equal(fixture.validate().status, 0);
+    const original = structuredClone(fixture.manifest.counts);
+    for (const mutate of [counts => { counts.topics--; }, counts => { delete counts.topicsBySubject.English; }, counts => { counts.topicsBySubject.Unknown = 1; }]) {
+      fixture.manifest.counts = structuredClone(original);
+      mutate(fixture.manifest.counts);
+      const bad = fixture.validate();
+      assert.equal(bad.status, 1);
+      assert.match(bad.stderr, /manifest: .*topic/);
+      assert.doesNotMatch(bad.stderr, /checksum mismatch/);
+    }
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });

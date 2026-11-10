@@ -13,6 +13,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
 import { checkTeachingResearch } from './check-teaching-research.mjs';
 import { findDependencyCycle } from './check-dependency-cycles.mjs';
 import { checkTopicCompatibility } from './check-curriculum-alignments.mjs';
@@ -33,7 +34,7 @@ const clusters = load('clusters.json');
 const manifest = load('manifest.json');
 
 // --- declared counts match reality -----------------------------------------
-check(topics.topicCount === topics.topics.length, `topics: topicCount ${topics.topicCount} != ${topics.topics.length}`);
+errors.push(...checkManifestTopicInventory(topics, manifest));
 check(deps.edgeCount === deps.dependencies.length, `dependencies: edgeCount ${deps.edgeCount} != ${deps.dependencies.length}`);
 check(standards.curriculumCount === standards.curricula.length, `curricula: curriculumCount != length`);
 check(clusters.clusterCount === clusters.clusters.length, `clusters: clusterCount != length`);
