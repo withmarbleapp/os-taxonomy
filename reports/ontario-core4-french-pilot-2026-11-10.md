@@ -1,3 +1,5 @@
+> Historical initial pilot. Current seven-record task design and dispositions: [oral follow-up](ontario-core4-french-oral-design-2026-11-10.json). The Partial counts below describe the earlier checkpoint.
+
 # Ontario Core French Grade 4: attributed linguistic-component pilot
 
 At accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this pilot reviews **seven oral codes**, adopts **three existing community IDs** as French-specific claims, and adds **three CA/Ontario 9–10 contexts with ten component pairs**. All seven selected expectations remain **Partial**. This is a bounded first linguistic foundation, not completion of Core French, immersion/extended programmes, Grade 4 or all 594 eligible FSL records. The [machine dossier](ontario-core4-french-pilot-2026-11-10.json) records full cards, protocols, code dispositions and remaining conditions.
