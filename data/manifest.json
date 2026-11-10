@@ -20,7 +20,7 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1858,
+    "topics": 1859,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
@@ -29,22 +29,22 @@
       "Learning to Learn": 18,
       "Life Skills": 46,
       "Mathematics": 578,
-      "Personal & Social Development": 118,
+      "Personal & Social Development": 119,
       "Science": 576
     },
     "dependencies": 3994,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7586,
+    "topicStandardLinks": 7679,
     "clusters": 176,
-    "teachingResearch": 1046,
+    "teachingResearch": 1047,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4092
+    "curriculumAlignments": 4117
   },
   "files": {
     "topics.json": {
-      "bytes": 2348486,
-      "sha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e"
+      "bytes": 2358151,
+      "sha256": "22c076c1d6e3c9252b49636ce65c331a06d017821a3e8cb68e636be51d3367d4"
     },
     "dependencies.json": {
       "bytes": 872875,
@@ -59,16 +59,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23409997,
-      "sha256": "1540a41911a32ab25c9590e5d5b314f30b1be08b67b3b15de7764307a35f720d"
+      "bytes": 23418103,
+      "sha256": "db75d8419cb0612e484efa835a27e1e31002dd63b082799122c4b61f9739fa9f"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1177957,
-      "sha256": "3f55b686903f0a55614b4624e9db9178e8918b5eb8c086f8c57e463a8193f5c7"
+      "bytes": 1190869,
+      "sha256": "3ce941ded5d2d33f794676059055fa4ab9d45349bb69ea36b49a3c19315adabf"
     }
   },
   "excluded": [
@@ -79,10 +79,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e",
+    "topicFileSha256": "22c076c1d6e3c9252b49636ce65c331a06d017821a3e8cb68e636be51d3367d4",
     "coverage": {
-      "topicCount": 1858,
-      "withResearch": 1046,
+      "topicCount": 1859,
+      "withResearch": 1047,
       "withoutResearch": 812,
       "bySubject": {
         "Computing": {
@@ -121,8 +121,8 @@
           "withoutResearch": 79
         },
         "Personal & Social Development": {
-          "topics": 118,
-          "withResearch": 0,
+          "topics": 119,
+          "withResearch": 1,
           "withoutResearch": 118
         },
         "Science": {

@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e",
-  "recordCount": 1046,
+  "topicFileSha256": "22c076c1d6e3c9252b49636ce65c331a06d017821a3e8cb68e636be51d3367d4",
+  "recordCount": 1047,
   "coverage": {
-    "topicCount": 1858,
-    "withResearch": 1046,
+    "topicCount": 1859,
+    "withResearch": 1047,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -45,8 +45,8 @@
         "withoutResearch": 79
       },
       "Personal & Social Development": {
-        "topics": 118,
-        "withResearch": 0,
+        "topics": 119,
+        "withResearch": 1,
         "withoutResearch": 118
       },
       "Science": {
@@ -215092,6 +215092,120 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-22T15:31:39.949Z",
         "updatedAt": "2026-10-19T15:21:50.826Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_PJE57bAvMG",
+      "pedagogy": {
+        "summary": "Use contrasting familiar or supplied fictional situations to connect a social role with its duties and explain why circumstances change that relationship. Distinguish this from merely naming people, describing feelings or choosing a group-project function.",
+        "bestPractices": [
+          "Use inclusive family and community examples; never require private disclosure.",
+          "Ask what duty follows from the role and why a different circumstance changes it.",
+          "Include a responsibility toward a plant, shared place or environment, not only interpersonal examples."
+        ],
+        "keyRepresentations": [
+          "Paired role–relationship–duty scenario cards",
+          "Before/after circumstance diagram"
+        ],
+        "commonMisconceptions": [
+          "A role name alone explains a duty.",
+          "Everyone has the same responsibilities in every setting.",
+          "Responsibilities are fixed by gender or one family arrangement."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Compare two supplied roles and trace an event to a changed responsibility.",
+        "activities": [
+          {
+            "title": "Explain duties across two settings and a change",
+            "learnerActions": [
+              "Hear a supplied story about the same child in school and garden-care settings. Provide the needed facts: the child knows the school while a new pupil does not; a plant needs water when the soil is dry, and the soil has become dry.",
+              "State the person’s role and relationships, then explain a responsibility in each setting.",
+              "Explain why a new pupil or changed weather creates a different duty; compare with an everyday role of their own only if they choose."
+            ],
+            "intendedInsight": "Responsibilities depend on roles, relationships and circumstances rather than a fixed label.",
+            "feedback": [
+              "If only a role is named, ask what the person needs to do and why.",
+              "Ask how the changed circumstance alters the duty, including environmental care."
+            ],
+            "rationale": "An authored contrast/transfer proposal aligned to the verified curriculum requirement. It has not been experimentally validated.",
+            "sourceClaims": [
+              "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them."
+            ]
+          },
+          {
+            "title": "Apply role and duty reasoning to a non-sensitive everyday role",
+            "learnerActions": [
+              "Ask the learner to choose two real everyday roles they have, such as pupil and classmate or classroom helper, and identify the people or place involved.",
+              "For each role, ask what responsibility comes with it and why that duty follows from the relationship or setting.",
+              "Ask them to choose a non-sensitive real event, such as starting school or joining a new class/activity, and describe a role, relationship or duty before and after it.",
+              "Ask why the event changed the responsibility or relationship. A supplied familiar school fact may support recall, but do not supply the causal answer.",
+              "Use the separate fictional transfer scenario to check that the reasoning extends beyond a rehearsed autobiography."
+            ],
+            "intendedInsight": "The same relationship applies to a real everyday role and a genuine change without requiring private family disclosure.",
+            "feedback": [
+              "Ask why a duty follows from the chosen role and why the actual event changed it. A role label, event name or feeling alone is insufficient."
+            ],
+            "rationale": "This authored source-fit protocol accounts for the expectation’s self-application condition. It is not evidence that a learner passed or a newly validated teaching intervention.",
+            "sourceClaims": [
+              "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them."
+            ]
+          }
+        ],
+        "constraints": [
+          "Do not infer identity, emotional coping, civic-rights or institutional-government mastery.",
+          "No fixed family structure or private disclosure is required.",
+          "Use the same fictional person across settings and provide the environmental facts; independent gardening knowledge is not a gate. Ask why a duty follows from the changed circumstance rather than supplying the duty as the answer.",
+          "The source-specific self-application protocol separately samples real everyday roles and a non-sensitive personally experienced event; hypothetical success alone is not learner evidence for that application."
+        ],
+        "reviewNotes": [
+          "2026-11-10: official Grade1 source meaning and closest existing claims reviewed. Low-confidence teaching proposal; no new research-study verification claimed."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "In a supplied story, the same child, Ari, is a pupil at school and helps care for a garden. Ari knows the school well; a new pupil does not. The story explains that plants need water when soil is dry, and the soil has become dry. Can {{name}} explain how Ari’s roles, relationships and responsibilities differ between the settings, and why each changed circumstance might change a responsibility? They may also use a non-sensitive everyday role of their own.",
+        "correctAnswer": "Links each stated role/relationship to a relevant duty, explains why the settings differ, and explains how the supplied event changes a relationship or responsibility, including care toward the environment.",
+        "whatMakesItDiscriminate": "Separates a role label from an explanation of its duty and tests a changed circumstance plus a different context.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "My role label means I always have the same duty.",
+            "revealedBy": "Lists labels or duties but cannot explain a difference between settings or after the change.",
+            "nextMove": "Contrast two supplied roles and ask who or what needs care, what changed, and why that changes the responsibility.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Why does this duty follow from this role or relationship?",
+          "What changed, and why should that change the duty?",
+          "How would a changed need of a plant or shared place affect the responsibility?"
+        ],
+        "responseLevels": {
+          "gap": "Lists labels, people or feelings without relating roles to duties.",
+          "partial": "Connects one familiar role and duty but needs support to explain a changed circumstance.",
+          "full": "Explains role–duty relationships across settings and transfers the reasoning to a change involving people and environmental care."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them.",
+          "source": "Ontario Ministry of Education, current Grade1 Social Studies course, declared2023; accepted catalogue namespace2026",
+          "url": "https://ws.api.dcp.edu.gov.on.ca/content/api/items/sshg___grade_1?language=en-CA&depth=6",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified claim and untested teaching proposal",
+        "createdAt": "2026-11-10T12:00:43Z",
+        "updatedAt": "2026-11-10T12:00:43Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
