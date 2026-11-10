@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "43cc1ef44422db949bc92752490b7bcad573507e8895e1ef568d524e33a95424",
+  "topicFileSha256": "7da4137ef9f3a7a6ae8849633bf37521c93b43559359d2be655c3af33837f54c",
   "recordCount": 1049,
   "coverage": {
     "topicCount": 1861,
@@ -215394,7 +215394,7 @@
       "assess": {
         "method": "two_tier",
         "poeTask": null,
-        "diagnosticPrompt": "With an adult-prepared, attributed resource packet for a public school, can {{name}} name the traditional territory or territories and the applicable treaty reference that the sources support? Can they explain why the traditional territory, treaty reference and present reserve are different, then use a second place’s packet without carrying over the first place’s names or treating the nearest reserve as the answer?",
+        "diagnosticPrompt": "With an adult-prepared, attributed publicly available, locally verified resource packet for a school, can {{name}} name the traditional territory or territories and the applicable treaty reference that the sources support? Can they explain why the traditional territory, treaty reference and present reserve are different, then use a second place’s packet without carrying over the first place’s names or treating the nearest reserve as the answer?",
         "correctAnswer": "Identifies the supported traditional territory or territories and applicable treaty reference for the actual school from the verified packet, keeps accounts attributed, distinguishes a reserve from the broader references, and transfers the distinction to another region without unsupported exclusivity.",
         "whatMakesItDiscriminate": "Requires supported local territorial/treaty knowledge and distinctions; generic recognition, nearest-reserve selection or map copying do not suffice.",
         "probeDeeper": [
