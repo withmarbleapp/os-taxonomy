@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "1234434b547bde627f7efcf344b11587ccb4e303839833ca03b414464207027b",
-  "recordCount": 1056,
+  "topicFileSha256": "69d3e00031f5e1ac420d1c3a21d57ef89d2cea6a885efcf1411ae06714ed2ee9",
+  "recordCount": 1057,
   "coverage": {
     "topicCount": 1872,
-    "withResearch": 1056,
-    "withoutResearch": 816,
+    "withResearch": 1057,
+    "withoutResearch": 815,
     "bySubject": {
       "Computing": {
         "topics": 52,
@@ -46,8 +46,8 @@
       },
       "Personal & Social Development": {
         "topics": 118,
-        "withResearch": 0,
-        "withoutResearch": 118
+        "withResearch": 1,
+        "withoutResearch": 117
       },
       "Science": {
         "topics": 576,
@@ -109,7 +109,6 @@
       "mt_2qc_Kq63Le",
       "mt_2uHYdoxD0H",
       "mt_32B7xjUPwF",
-      "mt_33zncDHC3N",
       "mt_35-DhMh_Yr",
       "mt_37QCuGOxFe",
       "mt_39Yyr1KG7F",
@@ -216230,6 +216229,124 @@
         "originalResearchGeneratedBy": "Codex; actual primary-source and guide readback with original untested teaching/assessment design",
         "createdAt": "2026-11-10T18:16:32.860507Z",
         "updatedAt": "2026-11-10T18:16:32.860507Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_33zncDHC3N",
+      "pedagogy": {
+        "summary": "Use a genuine two-way exchange about work with a clear purpose: specific useful feedback given respectfully, then feedback considered and used. Distinguish constructive action from compulsory pleasant feelings. This sequence is original and untested.",
+        "bestPractices": [
+          "Agree the work’s purpose so a suggestion can be judged for usefulness, rather than reward vague praise or compliance.",
+          "Allow ordinary disappointment/frustration without scoring it as failure; assess the actual response to the suggestion.",
+          "Keep both giving and receiving/using feedback observable. Smiling, silence or saying thank you alone does not establish either operation."
+        ],
+        "keyRepresentations": [
+          "Actual learner/partner work and its declared purpose",
+          "A specific observed strength, a relevant suggestion and a chosen next step"
+        ],
+        "commonMisconceptions": [
+          "Being pleasant or never feeling upset is the same as constructively using feedback.",
+          "Any criticism must be obeyed, or an inaccurate/unhelpful suggestion cannot be questioned.",
+          "Saying good job without identifying anything specific is useful constructive feedback."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Give a specific strength and useful suggestion about real work, then consider feedback received and take or explain a constructive next step.",
+        "activities": [
+          {
+            "title": "Two-way feedback on actual work",
+            "learnerActions": [
+              "Use a small actual piece of work with a clear purpose, such as a model or classroom poster. Each partner points out one specific successful feature and suggests one relevant improvement respectfully.",
+              "Receive a relevant specific suggestion on one’s own work; clarify its meaning if necessary and consider it against the purpose.",
+              "Use a suitable suggestion in the work or show/explain a reasoned alternative. Describe how the feedback helped identify a useful next step."
+            ],
+            "intendedInsight": "Feedback is useful information for work and action, not a verdict on a person or a demand to feel happy.",
+            "feedback": [
+              "Which actual feature worked well? Point to it rather than only saying good job.",
+              "What would this change help the work do? A suggestion should connect to its purpose.",
+              "You can feel disappointed and still consider the suggestion. Show what next step you chose and why."
+            ],
+            "rationale": "A watched two-way exchange separates giving helpful specific information and using received information from vague praise, polite refusal or a pleasant expression. This is an original design, not a trial of teaching effectiveness.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Transfer and a reasoned alternative",
+            "learnerActions": [
+              "Repeat the exchange with a different kind of work or partner.",
+              "Consider a suggestion that does not clearly serve the agreed purpose; ask for clarification or propose a reasoned alternative rather than attack the person or agree blindly.",
+              "Identify a suitable improvement when one is available and show its use; no requirement to accept every suggestion or display enthusiasm."
+            ],
+            "intendedInsight": "Constructive feedback use involves judgment and a helpful next step across contexts, rather than memorising one sentence or accepting all criticism.",
+            "feedback": [
+              "Which part of this suggestion helps the agreed purpose? If it does not, explain a different useful next step respectfully."
+            ],
+            "rationale": "A changed task tests transfer, while an unhelpful suggestion distinguishes reasoned uptake from obedience. Neither an emotional reaction nor automatic agreement is the criterion.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use genuine ordinary work and a clear task purpose in an understood language; no English grammar, essay-writing or fixed national language pair is a prerequisite.",
+          "Do not manufacture humiliation, conflict, an emotional reaction or forced disclosure to stage assessment. A pause or ordinary emotional support is compatible with a constructive later response.",
+          "One specific positive observation and one useful suggestion remain required, but no fixed praise-first sandwich formula is imposed.",
+          "No learner-state reset, equivalence or mastery transfer follows from this proposed public semantic correction.",
+          "This is an original untested primary task design with low confidence in its teaching efficacy; the EEF resource supports planning for feedback use, not this exact activity or a no-emotion norm."
+        ],
+        "reviewNotes": [
+          "The primary EEF June 2021 press release was read fully; it recommends attention to how pupils receive/use feedback and notes evidence limitations. The report landing page was not accessible, so no unread full-report detail is claimed."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "diagnosticPrompt": "When {{name}} and a partner review each other’s work, can {{name}} name one specific thing done well and a useful improvement respectfully, then consider feedback on their own work and show a constructive next step? They need not pretend to feel happy about it.",
+        "correctAnswer": "Gives a specific supported positive point and a useful respectful suggestion, considers received feedback and shows a suitable improvement or reasoned alternative, and explains why feedback can help. Disappointment alone does not invalidate the response.",
+        "whatMakesItDiscriminate": "A learner may feel upset yet consider and use feedback constructively; a learner may smile while ignoring it. Watching both the specific feedback given and the chosen subsequent action distinguishes the claim from mood, empty praise and compliance.",
+        "errorPatterns": [
+          {
+            "pattern": "Vague praise or criticism without a specific useful connection to the work.",
+            "kind": "performance",
+            "revealedBy": "Only good job, bad or wrong is offered without an observed feature or helpful next step.",
+            "nextMove": "Return to the declared purpose and identify one actual successful feature and one change that would help. Do not supply a script for the learner merely to repeat.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "pattern": "Polite appearance is treated as uptake, or all suggestions are accepted blindly.",
+            "kind": "misconception",
+            "revealedBy": "The learner smiles or says thanks but does not consider the suggestion or show a relevant next step; alternatively agrees to an irrelevant change without judgment.",
+            "nextMove": "Ask what the suggestion means for the work’s purpose. Invite a suitable action or a respectful reasoned alternative; allow disappointment without treating it as failure.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What specific part worked well, and what would your suggestion improve?",
+          "Which next step did you choose from the feedback, and why?",
+          "Could you disagree respectfully if a suggestion did not help the purpose?"
+        ],
+        "responseLevels": {
+          "gap": "Accessible opportunities show only vague praise/attack or refusal to consider feedback, with no constructive information given or next step identified. Mood alone cannot establish this level.",
+          "partial": "Provides some useful specific feedback or considers a suggestion, but has not yet demonstrated both directions and a relevant chosen action/alternative. Feeling disappointed is not a partial criterion.",
+          "full": "Gives both a specific positive point and useful respectful suggestion; considers received feedback and uses a suitable suggestion or explains a reasoned alternative; explains why feedback helps improvement. Feelings need not be positive."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Primary EEF guidance communication recommends planning how pupils receive and act on feedback, with methods/timing responsive to context and limits in the research evidence. This supports designing a use opportunity, not the exact authored peer exchange or a requirement to feel happy.",
+          "source": "Education Endowment Foundation, Teacher Feedback to Improve Pupil Learning launch,11June 2021",
+          "url": "https://educationendowmentfoundation.org.uk/news/eef-publishes-new-guidance-report-teacher-feedback-to-improve-pupil-learning",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; actual primary-resource readback and original untested assessment/teaching design",
+        "createdAt": "2026-11-10T20:06:25.247366Z",
+        "updatedAt": "2026-11-10T20:06:25.247366Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
