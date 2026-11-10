@@ -215154,7 +215154,7 @@
         "poeTask": null,
         "diagnosticPrompt": "After {{name}} learns a small set of French words for objects, actions and feelings, can they identify their meanings in a new French message, then a few days later independently use the French words appropriately in another familiar scene or conversation rather than only echoing a model?",
         "correctAnswer": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
-        "whatMakesItDiscriminate": "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval.",
+        "whatMakesItDiscriminate": "Meaning selection in a new French message checks the actual lexical form–meaning connection separately from expressive fluency. Delayed retrieval without an immediate spoken model distinguishes retained independent French use from echoing; another familiar context checks that the word can be recombined appropriately rather than recited from one list.",
         "probeDeeper": [
           "Another familiar context and speaker, with taught forms recombined.",
           "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
@@ -215245,7 +215245,7 @@
         "poeTask": null,
         "diagnosticPrompt": "Using familiar French words and a qualified French model, can {{name}} say contrasting words such as poule/boule and chou/sou distinctly and keep the consonants in bras, crabe, bleu and pluie? Can a listener distinguish the intended words in a short phrase and in another familiar word carrying the same contrast, without relying only on immediate repetition?",
         "correctAnswer": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
-        "whatMakesItDiscriminate": "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished.",
+        "whatMakesItDiscriminate": "Known word meanings prevent a vocabulary gap from masquerading as a consonant error. Having a listener distinguish the intended contrasted words tests intelligibility, while another familiar word/phrase without an immediate model rules out copying one memorized list. The specified clusters expose consonant omission while target-variety handling avoids treating an accent difference as failure.",
         "probeDeeper": [
           "Different familiar words/phrase and listener while preserving the same phonological operation.",
           "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
@@ -215338,7 +215338,7 @@
         "poeTask": null,
         "diagnosticPrompt": "With familiar French words and a qualified model of the intended variety, can {{name}} hear which word is said in contrasts such as bas/banc, beau/bon and paix/pain, then produce the words distinctly in a short phrase? Include brun/brin when the target variety distinguishes un/in, and check transfer with another voice or familiar word rather than marking a legitimate regional merger wrong.",
         "correctAnswer": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
-        "whatMakesItDiscriminate": "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety.",
+        "whatMakesItDiscriminate": "A meaning/picture choice that needs no French spoken answer isolates receptive hearing from production. Producing the same meaningful distinctions tests the expressive operation separately. Another voice and familiar word rule out immediate imitation; the stated target-variety convention prevents a legitimate regional merger from being misdiagnosed as a missing contrast.",
         "probeDeeper": [
           "Another voice and familiar lexical context, with comprehension and production scored separately.",
           "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
