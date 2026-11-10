@@ -8,8 +8,8 @@
     "formalStageRecords": 254,
     "formalCurricularGoals": 58,
     "formalStageCompetencies": 196,
-    "alignmentReviewedHere": 127,
-    "notAlignmentReviewedHere": 443,
+    "alignmentReviewedHere": 162,
+    "notAlignmentReviewedHere": 408,
     "previousINAssociations": 31
   },
   "interpretation": "Cumulative reviewed coverage is separate from catalogue verification and learner attainment. Unreviewed records remain pending, not missing mastery claims; applicability/resource/language conditions remain source-specific.",
@@ -254,8 +254,8 @@
       "area": "R1",
       "recordKind": "curricularGoal",
       "records": 5,
-      "reviewedHere": 0,
-      "pendingHere": 5
+      "reviewedHere": 5,
+      "pendingHere": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -263,8 +263,8 @@
       "area": "R1",
       "recordKind": "stageCompetency",
       "records": 13,
-      "reviewedHere": 0,
-      "pendingHere": 13
+      "reviewedHere": 13,
+      "pendingHere": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -272,8 +272,8 @@
       "area": "R2",
       "recordKind": "curricularGoal",
       "records": 4,
-      "reviewedHere": 0,
-      "pendingHere": 4
+      "reviewedHere": 4,
+      "pendingHere": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -281,8 +281,8 @@
       "area": "R2",
       "recordKind": "stageCompetency",
       "records": 13,
-      "reviewedHere": 0,
-      "pendingHere": 13
+      "reviewedHere": 13,
+      "pendingHere": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -15323,14 +15323,20 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.1"
+      "officialCode": "C-1.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.2",
@@ -15344,14 +15350,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.2"
+      "officialCode": "C-1.2",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.3",
@@ -15365,14 +15379,20 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.3"
+      "officialCode": "C-1.3",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-2.1",
@@ -15386,14 +15406,20 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.1"
+      "officialCode": "C-2.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-2.2",
@@ -15407,14 +15433,20 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.2"
+      "officialCode": "C-2.2",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-3.1",
@@ -15428,14 +15460,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.1"
+      "officialCode": "C-3.1",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-3.2",
@@ -15449,14 +15489,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.2"
+      "officialCode": "C-3.2",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-3.3",
@@ -15470,14 +15518,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.3"
+      "officialCode": "C-3.3",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-3.4",
@@ -15491,14 +15547,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.4"
+      "officialCode": "C-3.4",
+      "disposition": "ConditionalLanguageBinding",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Actual language/script conventions remain a parameterised framework use condition; no fixed national language pair is selected."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-4.1",
@@ -15512,14 +15576,20 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.1"
+      "officialCode": "C-4.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-4.2",
@@ -15533,14 +15603,20 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.2"
+      "officialCode": "C-4.2",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-5.1",
@@ -15554,14 +15630,22 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.1"
+      "officialCode": "C-5.1",
+      "disposition": "ContextualReadingEngagement",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Access, choice and engagement remain contextual; no binary learner-mastery or required positive feeling is inferred."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-5.2",
@@ -15575,14 +15659,22 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.2"
+      "officialCode": "C-5.2",
+      "disposition": "ContextualReadingEngagement",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Access, choice and engagement remain contextual; no binary learner-mastery or required positive feeling is inferred."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-GOAL-CG-1",
@@ -15596,14 +15688,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-1"
+      "officialCode": "CG-1",
+      "disposition": "ConditionalLanguageBinding",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Actual language/script conventions remain a parameterised framework use condition; no fixed national language pair is selected."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-GOAL-CG-2",
@@ -15617,14 +15717,20 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-2"
+      "officialCode": "CG-2",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-GOAL-CG-3",
@@ -15638,14 +15744,22 @@
         236
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-3"
+      "officialCode": "CG-3",
+      "disposition": "ConditionalLanguageBinding",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Actual language/script conventions remain a parameterised framework use condition; no fixed national language pair is selected."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-GOAL-CG-4",
@@ -15659,14 +15773,20 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-4"
+      "officialCode": "CG-4",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-GOAL-CG-5",
@@ -15680,14 +15800,22 @@
         237
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-5"
+      "officialCode": "CG-5",
+      "disposition": "ContextualReadingEngagement",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Access, choice and engagement remain contextual; no binary learner-mastery or required positive feeling is inferred."
+      ],
+      "languageRole": "R1"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-1.1",
@@ -15701,14 +15829,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.1"
+      "officialCode": "C-1.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-1.2",
@@ -15722,14 +15856,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.2"
+      "officialCode": "C-1.2",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-1.3",
@@ -15743,14 +15883,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.3"
+      "officialCode": "C-1.3",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-1.4",
@@ -15764,14 +15910,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.4"
+      "officialCode": "C-1.4",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.1",
@@ -15785,14 +15937,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.1"
+      "officialCode": "C-2.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.2",
@@ -15806,14 +15964,22 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.2"
+      "officialCode": "C-2.2",
+      "disposition": "ConditionalLanguageBinding",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Actual language/script conventions remain a parameterised framework use condition; no fixed national language pair is selected."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3",
@@ -15827,14 +15993,22 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.3"
+      "officialCode": "C-2.3",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.4",
@@ -15848,14 +16022,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.4"
+      "officialCode": "C-2.4",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.5",
@@ -15869,14 +16049,22 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.5"
+      "officialCode": "C-2.5",
+      "disposition": "ContextualReadingEngagement",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "retained-requirement-without-unqualified-topic-link",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Access, choice and engagement remain contextual; no binary learner-mastery or required positive feeling is inferred."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.1",
@@ -15890,14 +16078,22 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.1"
+      "officialCode": "C-3.1",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.2",
@@ -15911,14 +16107,22 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.2"
+      "officialCode": "C-3.2",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.3",
@@ -15932,14 +16136,22 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.3"
+      "officialCode": "C-3.3",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-4.1",
@@ -15953,14 +16165,20 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.1"
+      "officialCode": "C-4.1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-1",
@@ -15974,14 +16192,20 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-1"
+      "officialCode": "CG-1",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-2",
@@ -15995,14 +16219,22 @@
         239
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-2"
+      "officialCode": "CG-2",
+      "disposition": "ConditionalLanguageBinding",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "Actual language/script conventions remain a parameterised framework use condition; no fixed national language pair is selected."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-3",
@@ -16016,14 +16248,22 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-3"
+      "officialCode": "CG-3",
+      "disposition": "ConditionalGraphRepresentation",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "conditional-inherited-gate",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [
+        "A separate reviewed inherited-gate/consumer decision is needed before the conditional generic graph candidate can be published."
+      ],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-4",
@@ -16037,14 +16277,20 @@
         240
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-role-based-framework",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-4"
+      "officialCode": "CG-4",
+      "disposition": "Full",
+      "reviewReport": "ncert-preparatory-language-framework-2026-11-10.json",
+      "graphRepresentation": "shared-operation-components",
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "remainingConditions": [],
+      "languageRole": "R2"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.1",
@@ -16743,7 +16989,7 @@
   "nextSlices": [
     {
       "slice": "Role-based language framework",
-      "pendingRecords": 35,
+      "pendingRecords": 0,
       "groups": [
         {
           "source": "ncert-ncfse-2023-ed2024",
@@ -16755,13 +17001,13 @@
           "source": "ncert-ncfse-2023-ed2024",
           "stage": "Preparatory",
           "area": "R1",
-          "pendingRecords": 18
+          "pendingRecords": 0
         },
         {
           "source": "ncert-ncfse-2023-ed2024",
           "stage": "Preparatory",
           "area": "R2",
-          "pendingRecords": 17
+          "pendingRecords": 0
         }
       ],
       "reviewRequirement": "Retain official R1/R2 roles; identify genuinely shared operations and parameterise target language, phonology, script, text and unfamiliar-R2 applicability. No fixed language pair is needed; named-language candidates stay conditional where the context schema cannot express their condition."
@@ -16916,6 +17162,15 @@
       "conditionalInheritedGraphGate": 4,
       "contextualReadingEngagement": 1,
       "meaning": "All 21 source records have original role-bound framework task designs. Conditional graph/script cases remain explicit, are not Full graph coverage, and require no fixed national language pair or learner-state change."
+    },
+    {
+      "source": "ncert-ncfse-2023-ed2024",
+      "area": "Preparatory language R1/R2",
+      "report": "ncert-preparatory-language-framework-2026-11-10.json",
+      "conditionalLanguageBinding": 5,
+      "conditionalInheritedGraphGate": 9,
+      "contextualReadingEngagement": 4,
+      "meaning": "All 35 source positions have role-bound framework task designs; conditional graph/script and contextual cases are retained separately from Full. No national language pair or English mastery transfer is inferred."
     }
   ],
   "outsideAcceptedCatalogueSourceDiscovery": {
@@ -16928,5 +17183,6 @@
     ],
     "interpretation": "Formal role-based language requirements remain in scope and can be authored without choosing a fixed language pair."
   },
-  "formalFoundationalLanguageBaseCommit": "47dd248ae2ef40659c1978e784ee6c5137e423f1"
+  "formalFoundationalLanguageBaseCommit": "47dd248ae2ef40659c1978e784ee6c5137e423f1",
+  "formalPreparatoryLanguageBaseCommit": "320ad631a59b488b4ffcd965efbcde5ef90cd4fd"
 }

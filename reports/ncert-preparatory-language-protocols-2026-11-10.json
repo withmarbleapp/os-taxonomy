@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "source": "ncert-ncfse-2023-ed2024",
+  "sourcePdfPages": [
+    233,
+    234,
+    236,
+    237,
+    239,
+    240
+  ],
+  "designStatus": "Original parameterised framework task designs, not learner observations, validated measures or a nationally selected language pair.",
+  "bindingContract": {
+    "roles": [
+      "R1",
+      "R2"
+    ],
+    "officialStageAgeBand": [
+      8,
+      11
+    ],
+    "attainmentReference": "stage-end",
+    "requiredBeforeUse": [
+      "Actual role language and script, separately labelled evidence for each role.",
+      "Qualified speaker/script user, expert-checked materials, appropriate response criteria.",
+      "Access, familiarity and assistance distinguished from independent performance.",
+      "Retain actual source progression and the precise very-unfamiliar-R2 emergence/early-Preparatory consolidation exception where it applies."
+    ],
+    "notInferred": [
+      "English evidence establishes arbitrary R1/R2.",
+      "A fixed pair is required before framework curation.",
+      "Conditional graph candidates are safe unconditional links.",
+      "A Full authoring label is a learner mastery result."
+    ]
+  },
+  "protocols": [
+    {
+      "id": "connected-conversation",
+      "task": "In the relevant role language, hold an unscripted familiar planning exchange, then describe a real experience to a listener who was not there. Change the setting or audience for a second exchange.",
+      "evidenceDesign": [
+        "Listen and respond to the partner across several connected turns, maintain relevant detail and repair misunderstanding.",
+        "Distinguish persistently blocked meaning or entirely rehearsed turns from connected responsive communication; do not impose native speed or accent.",
+        "Declare familiarity/support separately in R1 and R2; retain early-Preparatory consolidation where the source unfamiliar-R2 exception applies."
+      ],
+      "nearMisses": [
+        "A memorised speech offered as conversational fluency.",
+        "R1 success treated as evidence of R2 word knowledge."
+      ],
+      "transfer": "Change topic and partner without supplying the responses.",
+      "wholeClaimChecks": "The whole discussion and description claims include turn-taking, topic continuity, audible intelligible detail and logical organisation; these are independently checked."
+    },
+    {
+      "id": "heard-summary",
+      "task": "Read a short actual-role text aloud without showing it, then ask for a concise account of its main ideas. Contrast an accurate short summary with an accurate but unselective retelling. Add a short audio/video and a simple chart case for the complete existing summary candidate.",
+      "evidenceDesign": [
+        "Select central ideas, preserve meaning and omit nonessential detail without merely repeating lines.",
+        "Distinguish summarising from paraphrasing every detail; ask for a reason one detail can be omitted.",
+        "Check different media and a supplied simple quantitative display when assessing the full existing candidate."
+      ],
+      "nearMisses": [
+        "Adult supplies the important ideas before the response.",
+        "Reading/writing or English print conventions silently required for a purely heard-text source task."
+      ],
+      "transfer": "Use a new passage with a different structure and mix of important/minor details.",
+      "wholeClaimChecks": "A4→-Du→sMA→ZhUu→XeM→1KC reaches left-to-right print through a written note-taking path. The intrinsic operation fits but remains a conditional graph candidate; no link or dependency change is authored."
+    },
+    {
+      "id": "oral-presentations",
+      "task": "Prepare a short topic report, a welcome or small-event introduction, and a brief reasoned class contribution. Include collaborative discussion so prepared presentation does not replace responding to others.",
+      "evidenceDesign": [
+        "Organise relevant facts or ideas with a clear sequence, understandable pace and sufficient detail.",
+        "State a view with a reason, listen to a different view and respond to its actual content.",
+        "Record/rehearse one talk and make a meaningful clarity or organisation improvement."
+      ],
+      "nearMisses": [
+        "Reciting a memorised text without adapting its purpose or responding to a listener.",
+        "Requiring Standard English, adult debate procedure or an advanced persuasive-writing bundle."
+      ],
+      "transfer": "Change purpose from informing peers to introducing an event, then change audience or topic.",
+      "wholeClaimChecks": "Reporting/recounting includes factual organisation and a personal-event account; Expressing & Justifying Opinions includes reasoned answers and participation in presentations, performance, role play and debate. Each direct shared operation has a complete primary stage-end task, without the older Formal Debates claim."
+    },
+    {
+      "id": "varied-comprehension",
+      "task": "Use unfamiliar-to-task prose, a short poem and an informational description in the actual role language. Pause for a prediction, ask for an inference from evidence, and invite a mental picture that changes after new information.",
+      "evidenceDesign": [
+        "Explain a prediction from textual clues and revise it when evidence changes.",
+        "Distinguish stated information from inferred meaning and justify the inference.",
+        "Sketch/describe an imagined scene or process, then compare it with an illustration or other version and revise its meaning."
+      ],
+      "nearMisses": [
+        "Any plausible guess accepted without evidence.",
+        "A picture copied without constructing or revising meaning from words."
+      ],
+      "transfer": "Change text form and subject while retaining accessible language.",
+      "wholeClaimChecks": "Prediction includes titles/events; inference includes story characters and factual details; visualisation includes listening, viewing and reading, with revision and inferred meaning. Suitable additional cases cover the whole existing claims rather than a single story illustration."
+    },
+    {
+      "id": "main-meaning-conclusions",
+      "task": "Independently read a short informational text and a narrative. Identify central information, connected details and an evidenced conclusion or message.",
+      "evidenceDesign": [
+        "Explain why a supporting detail matters to the main meaning.",
+        "Use actions/events or linked facts to draw a conclusion, allowing different defensible interpretations.",
+        "Keep heard-text comprehension separate from independent reading."
+      ],
+      "nearMisses": [
+        "Listing every fact with no selection or connection.",
+        "Inventing a message contradicted by the text."
+      ],
+      "transfer": "Read a second text with different relevant/irrelevant details and a different conclusion.",
+      "wholeClaimChecks": "Main-topic, inference and sequence/message claims supply the source operation without requiring the wider written-note-taking bundle. Their complete narrative and informational checks are included."
+    },
+    {
+      "id": "writing-organisation",
+      "task": "Plan and write a short actual-role piece with a clear beginning and ending, sequenced ideas, paragraph groups and purposeful headings. Present an alternative grouping and ask why one serves the reader better.",
+      "evidenceDesign": [
+        "Choose an order and boundaries based on meaning rather than page length.",
+        "Keep a visible plan, compose the piece and revise at least one grouping/heading choice.",
+        "Use actual target-language labels or plain explanation rather than require English terminology."
+      ],
+      "nearMisses": [
+        "Only copying supplied headings or paragraph breaks.",
+        "Declaring all writing-process vocabulary mastered from one organised piece."
+      ],
+      "transfer": "Organise a second piece with a different purpose and a different point where the topic changes.",
+      "wholeClaimChecks": "AvJ and 9P are direct intrinsic candidates but their hard writing-process vocabulary paths remain conditional; the task does not silently remove those gates."
+    },
+    {
+      "id": "coherent-paragraphs",
+      "task": "Write a focused actual-role paragraph about an experience or a topic understood from a text, then organise a second short informational piece under suitable topic groups.",
+      "evidenceDesign": [
+        "Related sentences develop a focus rather than merely repeat one fact.",
+        "Explain/revise a paragraph boundary and use a heading where it helps.",
+        "Distinguish the child’s understanding from verbatim copying or adult dictation."
+      ],
+      "nearMisses": [
+        "Three unrelated sentences accepted merely because they are written in one block.",
+        "Adult-created boundaries counted as independent organisation."
+      ],
+      "transfer": "Explain another unfamiliar but accessible topic in a fresh paragraph.",
+      "wholeClaimChecks": "The full paragraph claim includes narrative/non-narrative organisation and purposeful headings; the inherited complete writing-vocabulary/narrative/stamina gates remain report-only conditions."
+    },
+    {
+      "id": "purposeful-creative-writing",
+      "task": "Across a small integrated portfolio, make a poster or invitation, an original short poem, and a story containing a plausible exchange between characters. Use the actual role language and reader-appropriate script conventions.",
+      "evidenceDesign": [
+        "Give a poster/invitation the information its reader needs and explain one layout/wording choice.",
+        "Compose a new poetic line/pattern; written composition and expressive recitation remain separate checks.",
+        "Develop people, place and an ordered event/problem with meaningful dialogue rather than only label speakers."
+      ],
+      "nearMisses": [
+        "Copying an adult-completed text or changing only a supplied name.",
+        "One poem offered as evidence of all poster/narrative/dialogue requirements."
+      ],
+      "transfer": "Change audience/purpose and create a second text with appropriately different choices.",
+      "wholeClaimChecks": "YNe is a direct shared composition component, with its whole written, sound-pattern and memorised-recitation checks retained. AHX/vau have direct intrinsic fits but unchanged conditional inherited writing gates. Source task design covers the other forms without pretending those unsafe links are published."
+    },
+    {
+      "id": "language-structures",
+      "task": "Before use, a competent speaker/script user specifies suitable actual-language sentence/grammar/text-structure criteria and checks the task/model. Ask the learner to express relationships and revise a meaning-changing construction in a familiar text.",
+      "evidenceDesign": [
+        "Judge intelligibility, grammatical relationships and intended meaning using actual language conventions.",
+        "For complex-structure oral goals, include a connected relation between ideas rather than only disconnected short labels.",
+        "Do not assume English SVO, articles, adjective order, tense morphology, capitals or punctuation are universal."
+      ],
+      "nearMisses": [
+        "Testing English grammar knowledge as universal R1/R2 structure.",
+        "Approving a translation without checking whether its constructions have the same function."
+      ],
+      "transfer": "Express the same relationship in another locally appropriate form or change audience/purpose.",
+      "wholeClaimChecks": "No unqualified English grammar claim is substituted. The source remains a formal role-bound requirement; material/assessor binding is needed at use, not a nationwide fixed language pair."
+    },
+    {
+      "id": "cross-context-vocabulary",
+      "task": "Use actual-role home/school and subject-area texts or talk containing familiar and unfamiliar words. Discuss a reasoned meaning from context, connect it to known vocabulary, and apply the word in a new exchange or written sentence.",
+      "evidenceDesign": [
+        "Infer tentatively from context and verify/refine when additional information appears.",
+        "Choose accurate words for subject meaning, explain a technical term and use it appropriately.",
+        "Include functional need/choice/help/response exchanges as well as new-word examples; no universal vocabulary count."
+      ],
+      "nearMisses": [
+        "A copied definition without appropriate contextual use.",
+        "An English equivalent automatically counted as R1 or R2 knowledge."
+      ],
+      "transfer": "Use a different subject text and a new home/school situation.",
+      "wholeClaimChecks": "The complete generic vocabulary claims include discussing meanings, contextual inference and oral/written application. Wz includes academic and domain terms across several subjects. R1 C-4.1 and C-4.2 remain distinct printed positions, not duplicate mastery topics."
+    },
+    {
+      "id": "library-access-choice",
+      "task": "Provide genuinely accessible actual-role books, a real borrowing or equivalent accessible library-loan route, time to read at home, and repeated opportunities to choose or revisit a text. Record access constraints and child choices without prescribing enthusiasm.",
+      "evidenceDesign": [
+        "For the R1 borrowing position, design an actual repeated loan/home-reading opportunity rather than only show a library picture.",
+        "Separate access, unfamiliar language or inaccessible text from engagement; retain availability constraints explicitly.",
+        "Allow changed preference or declining a book without a negative mastery label."
+      ],
+      "nearMisses": [
+        "An arbitrary book quota or compulsory positive feeling.",
+        "Accurate oral reading or a recommendation substituted for access and voluntary engagement."
+      ],
+      "transfer": "Offer another varied collection and repeat the opportunity in a changed context.",
+      "wholeClaimChecks": "These are formal contextual participation/engagement requirements. No new mastery claim, compulsory reading score or learner field is introduced; lack of a local library resource is not silently relabelled learner failure."
+    },
+    {
+      "id": "oral-goal-integration",
+      "task": "Build a role-labelled oral portfolio combining connected conversation, heard meaning, a concise summary where required, an organised presentation and collaborative discussion.",
+      "evidenceDesign": [
+        "Assess each actual source requirement rather than count linked topics.",
+        "Retain R1 language-structure conditions and the conditional R1 heard-summary candidate; do not transfer R1 attainment to R2.",
+        "Use integrated tasks but keep the evidence attributable to each operation and declared support."
+      ],
+      "nearMisses": [
+        "Prepared presentation used to certify all spontaneous interaction.",
+        "Source goals declared complete graph mastery despite conditional components."
+      ],
+      "transfer": "Change familiar purpose, text form and audience.",
+      "wholeClaimChecks": "The relevant component protocols apply. R1 and R2 share some operations but retain their distinct source expectations and progression."
+    },
+    {
+      "id": "reading-goal-integration",
+      "task": "Use independently read actual-role narrative, poetry and informational/functional materials, combining the appropriate meaning, strategy, fluency and print-convention tasks.",
+      "evidenceDesign": [
+        "For R1, include unfamiliar-to-task texts and varied comprehension strategies.",
+        "For R2, retain script/print binding, the conditional fluency graph case and a separate contextual reading-choice opportunity.",
+        "Distinguish source-fit task authoring from actual learner reading attainment.",
+        "For the R1 text-form component, distinguish a story, poem and non-fiction text, and identify the author/illustrator and their roles in a suitable illustrated book. These account for the complete existing text-types claim without pretending every source reading task must itself have an illustrator."
+      ],
+      "nearMisses": [
+        "Counting comprehension links as a complete script/fluency profile.",
+        "An adult read-aloud substituted for every independent-reading task."
+      ],
+      "transfer": "Use a new collection with different layout and purpose, within declared language accessibility.",
+      "wholeClaimChecks": "The complete contributing shared claims retain their extra informational, sensory and inference cases. Conditional print/fluency requirements are not silently dropped."
+    },
+    {
+      "id": "writing-goal-integration",
+      "task": "Create a small actual-role portfolio spanning clear information/experience writing, purposeful poster/invitation, original poem and narrative/dialogue. Use planning, revision and target-language structure checks.",
+      "evidenceDesign": [
+        "Account for information, ideas, experiences and appropriate emotional expression without forcing personal disclosure.",
+        "Keep purpose, audience, sequence and coherence visible in the actual written work.",
+        "Retain conditional grammar and inherited-gate cases instead of claiming all graph requirements are directly representable."
+      ],
+      "nearMisses": [
+        "A single memorised poem offered as full writing-goal coverage.",
+        "R1 writing credited to R2 or English writing vocabulary presumed universal."
+      ],
+      "transfer": "Change purpose and topic, then explain/revise a meaningful decision in a fresh piece.",
+      "wholeClaimChecks": "Each named writing protocol retains the full intrinsic candidate operations; conditional candidates are not published as unconditional associations."
+    },
+    {
+      "id": "heard-important-ideas",
+      "task": "Hear a short poem, story and familiar conversation in R2. Explain a central idea, distinguish it from a minor detail, and respond relevantly to the actual exchange.",
+      "evidenceDesign": [
+        "Use evidence from words/events rather than a supplied answer picture.",
+        "Include a conversational response or paraphrase, not only narrative character naming.",
+        "Declare prompts and unfamiliar vocabulary without treating supported emergence as independent fluency."
+      ],
+      "nearMisses": [
+        "Guessing from pictures while not understanding the spoken text.",
+        "Requiring written notes or English print knowledge for the heard-text task."
+      ],
+      "transfer": "Change text genre and conversation purpose.",
+      "wholeClaimChecks": "The complete literary/informational listening, sequence/message and responsive-listening claims are included through suitable additional cases; no fixed English inventory is a hard prerequisite."
+    },
+    {
+      "id": "heard-narrative-meaning",
+      "task": "Hear an unfamiliar R2 narrative, then identify people, connected events and an evidenced central meaning. Add a short informational passage for the full sequence/message claim.",
+      "evidenceDesign": [
+        "Retell important events in a meaningful order.",
+        "Explain a message from an event rather than repeat an adult-provided moral.",
+        "Distinguish heard narrative from independent decoding."
+      ],
+      "nearMisses": [
+        "Only naming pictures or reproducing one memorised sentence."
+      ],
+      "transfer": "Use another story with a different resolution and a different informational connection.",
+      "wholeClaimChecks": "Complete story-element, narrative-message and informational-connection checks remain intact; R1 success is not transferred."
+    },
+    {
+      "id": "role-syllables",
+      "task": "Use familiar actual-R2 words for expert-checked spoken syllable counting, joining and separation, then mark pronunciation divisions beside a familiar written word as a reading aid.",
+      "evidenceDesign": [
+        "Keep the oral unit distinct from letters, written akshar boundaries and arbitrary English conventions.",
+        "Vary word length and supplied unit sequences, avoiding an answer picture.",
+        "Do not test an untaught foreign vocabulary word while labelling the failure phonological."
+      ],
+      "nearMisses": [
+        "Counting letters or reproducing a memorised clap pattern instead of analysing speech."
+      ],
+      "transfer": "Use another familiar word with a different syllable pattern.",
+      "wholeClaimChecks": "The full Syllables claim includes counting and written-word pronunciation support as well as the source joining/separation operation; no English phoneme inventory is imposed."
+    },
+    {
+      "id": "role-print-conventions",
+      "task": "Use actual-R2 books and short texts with expert-checked layout, word/sentence segmentation and punctuation conventions. Ask the learner to show the reading path and interpret a meaningful boundary or punctuation cue.",
+      "evidenceDesign": [
+        "Specify actual script, forms and accepted response before use.",
+        "Include structure, words/sentences and a contextual punctuation example rather than only recognise the title.",
+        "Retain differences between speech units, written symbols and layout."
+      ],
+      "nearMisses": [
+        "Imposing Latin capitals or a universal left-to-right path."
+      ],
+      "transfer": "Use a different layout within the same actual script.",
+      "wholeClaimChecks": "No universal English print-convention link is published; source status remains formal and the script-binding condition remains explicit."
+    },
+    {
+      "id": "role-fluent-reading",
+      "task": "Use independently read R2 passages with locally specified scoring units, accurate accepted readings, appropriate pacing and meaningful pauses. Include rereading/self-correction and a separate meaning check.",
+      "evidenceDesign": [
+        "Distinguish accuracy, expression and understanding in the actual language.",
+        "Record support and use a new matched passage rather than only a fully rehearsed performance.",
+        "Keep the existing basic-reading whole-claim check separate from any English inventory assumption."
+      ],
+      "nearMisses": [
+        "English GPC/LTR knowledge used as a universal entry gate.",
+        "A memorised passage alone accepted as independent reading."
+      ],
+      "transfer": "Read a different familiar-topic passage with different phrasing/mood.",
+      "wholeClaimChecks": "V-L→Zhvw reaches English-specific hard requirements. The intrinsic task design is accounted, but the association remains report-only until a separate reviewed graph decision."
+    },
+    {
+      "id": "varied-reading-meaning",
+      "task": "Independently read R2 story, poem and picture/text story-poster material, explaining meaningful events, wording and intended purpose. Include a short factual connection for the whole sequence/message claim.",
+      "evidenceDesign": [
+        "Support an interpretation with a specific verbal or visual detail.",
+        "Explain how picture and words contribute rather than infer all meaning from an unrelated image.",
+        "Distinguish a poem’s wording effect from a forced positive feeling."
+      ],
+      "nearMisses": [
+        "Recognising a genre name while not comprehending the text."
+      ],
+      "transfer": "Read a new combined picture/text example with a different message.",
+      "wholeClaimChecks": "Sequence/message, expressive language and text-purpose claims retain their full narrative/nonfiction, recurring/sensory and contrasting-purpose cases, including genre/author/illustrator prerequisite tasks."
+    },
+    {
+      "id": "purposeful-functional-writing",
+      "task": "Write an actual-R2 poster, invitation and simple safe instruction text for a declared reader. Choose information, words and layout to serve that purpose, then revise after a reader response.",
+      "evidenceDesign": [
+        "Include the information a reader needs to act without adult filling-in.",
+        "Explain one meaningful wording/layout change.",
+        "When assessing the complete multimodal candidate, include the paragraph/diagram/caption and a supplied digital or print-tool case appropriate to its actual whole requirements."
+      ],
+      "nearMisses": [
+        "Copying an adult-written invitation without selecting relevant information.",
+        "A decorative picture accepted without meaningful actual-R2 writing."
+      ],
+      "transfer": "Change audience or action and design another functional text.",
+      "wholeClaimChecks": "The intrinsic AHX operation fits, but its inherited paragraph/writing chains remain conditional; no unsafe unqualified association is published."
+    }
+  ]
+}
