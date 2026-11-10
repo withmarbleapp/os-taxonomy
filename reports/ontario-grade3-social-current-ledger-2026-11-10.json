@@ -7,16 +7,16 @@
   "sourceReview": "ontario-grade3-social-source-review-2026-11-10.json",
   "expectationCount": 40,
   "dispositionCounts": {
-    "Full": 7,
+    "Full": 8,
     "Partial": 0,
-    "Unverified": 33,
+    "Unverified": 32,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 7,
-    "topics": 5,
-    "codes": 7,
-    "newClaims": 4,
+    "pairs": 8,
+    "topics": 6,
+    "codes": 8,
+    "newClaims": 5,
     "reusedClaims": 1
   },
   "expectations": [
@@ -166,11 +166,13 @@
     },
     {
       "code": "A3.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Source meaning read; exact whole-claim, resource and integrated-task reconciliation is still in progress. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_klz8bAeI8m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-period-life-claim-2026-11-10.json",
+      "coverageBasis": "The five core cases and bounded Assiniboine role supplement account for selected ordinary-life aspects and documented men/women/children contributions in First Nation, M\u00e9tis and settler contexts. Cases and evidence dates retain their stated limits. This one code does not imply Upper/LowerCanada location, then/now, environmental-impact, treaty or full-inquiry requirements are complete."
     },
     {
       "code": "A3.7",
@@ -355,6 +357,6 @@
       ]
     }
   ],
-  "semanticBoundary": "Four approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
+  "semanticBoundary": "Five approved new knowledge claims; no existing authored claim, dependency, old interval, or research changed. Counted links are inventory, not a completion percentage.",
   "next": "Resolve B1.1 and remaining map/inquiry protocols; prepare bounded community-governance, period community-life and treaty knowledge drafts for separate semantic review."
 }

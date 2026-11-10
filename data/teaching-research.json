@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "8a81590f52fe1b211b473cc2ede4a6054af898286bafedd9b8433f77c61124c8",
-  "recordCount": 1050,
+  "topicFileSha256": "87c7bbcad2b8fe966bc90737bc7d93cd482ae7e63eb561dfb39103afa9c26704",
+  "recordCount": 1051,
   "coverage": {
-    "topicCount": 1862,
-    "withResearch": 1050,
+    "topicCount": 1863,
+    "withResearch": 1051,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -25,8 +25,8 @@
         "withoutResearch": 22
       },
       "History": {
-        "topics": 110,
-        "withResearch": 1,
+        "topics": 111,
+        "withResearch": 2,
         "withoutResearch": 109
       },
       "Learning to Learn": {
@@ -215619,6 +215619,163 @@
         "originalResearchGeneratedBy": "Taxonomy curation: original source-checked treaty knowledge draft; teaching efficacy untested",
         "createdAt": "2026-11-10T17:44:00Z",
         "updatedAt": "2026-11-10T17:44:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_klz8bAeI8m",
+      "pedagogy": {
+        "summary": "Teach a small, named historical repertoire as actual knowledge, supported by existing source-inference and comparison operations. Do not substitute generic past-versus-present reasoning for the particular Canadian period facts.",
+        "bestPractices": [
+          "Keep a case’s people, broad place and date together before comparing aspects of life.",
+          "Use attributed own-word summaries and a small selected artefact/image/source example, clearly distinguishing original evidence, historical synthesis and modern reconstruction.",
+          "Teach documented roles as historical descriptions, not universal gender rules or an expectation to enact them."
+        ],
+        "keyRepresentations": [
+          "A map/time strip with named case labels and clearly dated evidence.",
+          "A simple comparison table linking community, shelter/food/work/learning and a supported local connection."
+        ],
+        "commonMisconceptions": [
+          "All Indigenous peoples or settlers lived the same way and had identical relationships to land.",
+          "A current reserve, reconstructed fort or later school is an unchanged original1780–1850setting.",
+          "A documented household role is a rule for every person then or for children today."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Build ordinary-life knowledge across a bounded, distinct case collection, then compare with attributed evidence and retain limits.",
+        "activities": [
+          {
+            "title": "Named communities and ordinary lives",
+            "learnerActions": [
+              "Study the five ordinary-life cases and the bounded Assiniboine communal-work supplement, each with actual people/place/date attribution. Place them broadly on paired current reference maps and a dated time strip without projecting current political boundaries backwards.",
+              "Describe source-supported food, shelter, work and family contributions. Include the actual women/children/men evidence where documented, marking any missing case-specific attribution instead of filling a stereotype.",
+              "Explain how a named waterway, material or documented relationship supported a particular activity in two cases. Supply unfamiliar historical facts; do not turn it into an ecological-mechanism test.",
+              "Compare two studied cases with a supported similarity/difference, recognizing diversity within categories and more than one settler case.",
+              "After study, explain selected facts without a completed table. Check a new attributed detail for place/time fit and distinguish an original object/account from a modern reconstruction or later outcome."
+            ],
+            "intendedInsight": "Historical community knowledge is particular, dated and diverse; a shared human need can be met in different documented ways, without making one case stand for every community.",
+            "feedback": [
+              "Ask which community, place and date the statement belongs to.",
+              "If a universal stereotype replaces evidence, compare the actual named cases and identify where they differ.",
+              "If an apparently precise detail lacks support, label that limit instead of guessing."
+            ],
+            "rationale": "Original untested teaching proposal for historical knowledge, not an intervention study.",
+            "sourceClaims": [
+              "Fort William’s early1800s account supports Anishinaabe habitation, food, technologies and trade connections, with specific1805/1808references.",
+              "The MNO-commissioned report documents particular Lake Superior post/family work in1825–1841and explicitly limits ethnic labels and outsider documentary accounts.",
+              "The territorial heritage account distinguishes dated Kuukpak material and later descriptions with early1800s continuity.",
+              "The community-led timeline dates a Sallirmiut/Franklin encounter to1826, distinct from earlier Inuvialuit presence.",
+              "Buxton’s founding period is1849; the later physical/industrial/educational history must not be projected to that date.",
+              "The archival mission narrative dates building/school activity to1849–1850and reflects a minister’s perspective.",
+              "Traill’s1836published letters describe1832–1835settler household work and children’s contributions, from her particular perspective.",
+              "Henry’s1808–09FortVermilion-framed account, in the Assiniboine section, describes young men gathering buffalo and men,women and children guiding them along prepared approaches."
+            ]
+          }
+        ],
+        "constraints": [
+          "The five core cases plus bounded role supplement form an initial repertoire, not an exhaustive national community inventory or one new topic per community/fact. Verified equivalent cases may be used while preserving actual diversity, ordinary-life knowledge and documented men/women/children contributions.",
+          "Do not conflate Métis identity with mixed ancestry or turn an outsider historic label into a modern citizenship judgment.",
+          "Keep specific place/date/evidence limits; later sources may support continuity only when explicitly justified, not arbitrary retrojection.",
+          "Full source coverage of every historical expectation is separate. Settlement causes, environmental effects, treaties, conflict/cooperation and print/digital inquiry must retain their own source-fit tasks.",
+          "No protected ceremony, reenacted hunting/cooking, personal ancestry, trauma disclosure or gendered classroom duty required."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked period-life curation following whole-claim and actual-clause comparison. First Nation-role evidence uses the original Henry/Coues Assiniboine section with explicit1808–09dating, Canadian regional context and outsider-observer limits; no extrapolation from MNO document labels or Blackfoot/Head-Smashed-In misattribution. Teaching efficacy is untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying several named communities in Canada around1780–1850, can {{name}} place them broadly on a map and timeline and describe how people obtained food, lived, worked and learned? Include distinct First Nation, Métis and Inuit examples and more than one settler community, with documented men’s, women’s and children’s contributions. Ask for a supported similarity and difference between two cases, then offer a new attributed detail: does it fit that community and period, or are they assuming everyone lived the same way?",
+        "correctAnswer": "Knows the selected distinct communities’ broad places/periods and supported ordinary-life details, including documented roles; explains local connections and compares without universalizing or projecting later evidence backwards.",
+        "whatMakesItDiscriminate": "Unprompted identification and details after study test actual period knowledge rather than reading a supplied fact aloud. Contrasting communities with shared needs rule out one generic historical lifestyle, and a fresh dated detail/reconstruction distractor tests whether facts remain attached to the correct case and evidence.",
+        "probeDeeper": [
+          "Which named community and date does this detail belong to?",
+          "What source supports this particular role or practice, and what does it leave unknown?",
+          "Is this an original period source, a later historical account or a reconstruction?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Replaces actual community differences with one generic old-fashioned lifestyle.",
+            "revealedBy": "Assigns the same food, housing and roles to everyFNMI/settler case despite source differences.",
+            "nextMove": "Rebuild two named case records and explain a supported contrast.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Projects a later place/outcome or present-day identity boundary into the studied period.",
+            "revealedBy": "Treats a reconstructed building,1859school or current settlement map as a precisely dated1849or1805fact.",
+            "nextMove": "Separate dates and evidence types on the time strip, retaining only supported claims.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only gives generic past-life statements or conflates all communities.",
+          "partial": "Knows some cases/details but confuses identity/place/date, omits documented ordinary-life roles, or relies on unsupported universal claims.",
+          "full": "Describes the selected distinct case repertoire accurately, retains documented role and setting relationships, and compares/transfers without losing attribution or chronology."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Fort William’s early1800s account supports Anishinaabe habitation, food, technologies and trade connections, with specific1805/1808references.",
+          "source": "Fort William Historical Park — Our History",
+          "url": "https://fwhp.ca/about-us/our-history/",
+          "verified": true
+        },
+        {
+          "claim": "The MNO-commissioned report documents particular Lake Superior post/family work in1825–1841and explicitly limits ethnic labels and outsider documentary accounts.",
+          "source": "Gwynneth Jones — Historical Roots of Métis Communities North of Lake Superior,2015,pp4–7,85–86",
+          "url": "https://www.metisnation.org/wp-content/uploads/2011/07/mno_report_on_historic_metis_north_of_lake_superior_march2015.pdf",
+          "verified": true
+        },
+        {
+          "claim": "The territorial heritage account distinguishes dated Kuukpak material and later descriptions with early1800s continuity.",
+          "source": "Government of Northwest Territories heritage — Inuvialuit lifeways",
+          "url": "https://www.nwttimeline.ca/stories/inuvialuit-lifeways/",
+          "verified": true
+        },
+        {
+          "claim": "The community-led timeline dates a Sallirmiut/Franklin encounter to1826, distinct from earlier Inuvialuit presence.",
+          "source": "Inuvialuit Living History — Our Timeline",
+          "url": "https://inuvialuitlivinghistory.ca/our-timeline/",
+          "verified": true
+        },
+        {
+          "claim": "Buxton’s founding period is1849; the later physical/industrial/educational history must not be projected to that date.",
+          "source": "Parks Canada — Buxton",
+          "url": "https://parks.canada.ca/culture/designation/lieu-site/buxton",
+          "verified": true
+        },
+        {
+          "claim": "The archival mission narrative dates building/school activity to1849–1850and reflects a minister’s perspective.",
+          "source": "Presbyterian Church Archives — Buxton Mission",
+          "url": "https://presbyterianarchives.ca/2017/02/02/part-5-the-buxton-mission/",
+          "verified": true
+        },
+        {
+          "claim": "Traill’s1836published letters describe1832–1835settler household work and children’s contributions, from her particular perspective.",
+          "source": "Catharine Parr Traill — The Backwoods of Canada,1836",
+          "url": "https://www.gutenberg.org/cache/epub/13559/pg13559-images.html",
+          "verified": true
+        },
+        {
+          "claim": "Henry’s1808–09FortVermilion-framed account, in the Assiniboine section, describes young men gathering buffalo and men,women and children guiding them along prepared approaches.",
+          "source": "Alexander Henry the Younger, journal inElliottCoues1897vol2,chapterXIV,pp516–519",
+          "url": "https://electriccanadian.com/history/newlightonearly02.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked period-life draft; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:47:17Z",
+        "updatedAt": "2026-11-10T17:47:17Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
