@@ -24,7 +24,12 @@ function verifyCulture(r){
   if(['speaking','writing'].includes(channel))assert.equal(p.ontarioOutwardContributionRequired,true,'Ontario outward contribution');
  }
  assert.match(resources.get('ottawa-festival').body,/internationaux/,'actual outward contribution input');assert.match(resources.get('ottawa-festival').body,/échange culturel/);assert.match(resources.get('ottawa-author').body,/Originaire d’Ottawa/);
- for(const channel of ['reading','writing'])for(const b of r.protocols[`${channel}-culture-and-conventions`].wholeClaimResourceBindings){const prior=load(`../reports/${b.report}`);assert.ok(prior.protocols[b.protocolId],'whole claim protocol resolves');if(b.resourceId)assert.ok(prior.resources[b.resourceId],'whole claim resource resolves');}
+ const expectedBindings={reading:[{report:'ontario-core4-french-reading-design-2026-11-10.json',protocolId:'meaning-and-strategies',resourceId:'originalStory',topicId:picture}],writing:[{report:'ontario-core4-french-writing-design-2026-11-10.json',protocolId:'purpose-forms-and-production',topicId:audience},{report:'ontario-core4-french-writing-design-2026-11-10.json',protocolId:'planning-through-publication',topicId:audience}]};
+ for(const channel of ['reading','writing']){
+  const bindings=r.protocols[`${channel}-culture-and-conventions`].wholeClaimResourceBindings;
+  assert.ok(Array.isArray(bindings),'whole claim bindings required');assert.deepEqual(bindings.map(({report,protocolId,resourceId,topicId})=>({report,protocolId,...(resourceId?{resourceId}:{}),topicId})),expectedBindings[channel],'required whole claim bindings');
+  for(const b of bindings){const prior=load(`../reports/${b.report}`);assert.ok(prior.protocols[b.protocolId],'whole claim protocol resolves');if(b.resourceId)assert.ok(prior.resources[b.resourceId],'whole claim resource resolves');}
+ }
  assert.equal(r.newClaimReview.topicId,community);assert.deepEqual(r.newClaimReview.newDependencies,[]);assert.equal(r.newClaimReview.guideConfidence,'low');assert.equal(r.newClaimReview.guideEffectivenessVerified,false);
  const topic=load('../data/topics.json').topics.find(x=>x.id===community);assert.ok(topic);assert.equal(topic.type,'CONCEPTUAL');assert.equal(topic.subject,'Geography');assert.equal(load('../data/teaching-research.json').records.filter(x=>x.topicId===community).length,1);
 }
@@ -42,5 +47,10 @@ test('French cultural coverage rejects missing source/pair, absent world case, c
  const world=structuredClone(culture);world.protocols['listening-culture-and-conventions'].performanceConditions.additionalWorldCases=['france-music'];assert.throws(()=>verifyCulture(world),/both world communities/);
  const channel=structuredClone(culture);channel.protocols['reading-culture-and-conventions'].performanceConditions.channel='listening';assert.throws(()=>verifyCulture(channel),/distinct actual channel/);
  const outward=structuredClone(culture);outward.protocols['writing-culture-and-conventions'].performanceConditions.ontarioOutwardContributionRequired=false;assert.throws(()=>verifyCulture(outward),/Ontario outward contribution/);
- const ref=structuredClone(culture);ref.protocols['reading-culture-and-conventions'].wholeClaimResourceBindings[0].resourceId='missing';assert.throws(()=>verifyCulture(ref),/whole claim resource resolves/);
+ for(const channel of ['reading','writing']){
+  const empty=structuredClone(culture);empty.protocols[`${channel}-culture-and-conventions`].wholeClaimResourceBindings=[];assert.throws(()=>verifyCulture(empty),/required whole claim bindings/);
+  const removed=structuredClone(culture);removed.protocols[`${channel}-culture-and-conventions`].wholeClaimResourceBindings.pop();assert.throws(()=>verifyCulture(removed),/required whole claim bindings/);
+ }
+ const wrong=structuredClone(culture);wrong.protocols['writing-culture-and-conventions'].wholeClaimResourceBindings[0].protocolId='writing-strategy-review';assert.throws(()=>verifyCulture(wrong),/required whole claim bindings/);
+ const ref=structuredClone(culture);ref.protocols['reading-culture-and-conventions'].wholeClaimResourceBindings[0].resourceId='missing';assert.throws(()=>verifyCulture(ref),/required whole claim bindings/);
 });
