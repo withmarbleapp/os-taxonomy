@@ -595,7 +595,20 @@ const expectedCorrectionIdentities = new Set([
  'mt_UHQfb-n-w3:mt_uTKgmWqSoI', 'mt_FwI7q7DSIx:mt_NS5t-Jzlh8',
  'mt_YbX3LD0Eca:mt_NS5t-Jzlh8',
 ]);
+function checkLedger(l) {
+ assert.equal(l.counts.alignmentReviewedHere,l.groups.reduce((n,g)=>n+g.reviewedHere,0),'reviewed group total mismatch');
+ assert.equal(l.counts.notAlignmentReviewedHere,l.groups.reduce((n,g)=>n+g.pendingHere,0),'pending group total mismatch');
+ for(const slice of l.nextSlices) {
+  for(const g of slice.groups) {
+   const relevant=l.groups.filter(x=>['source','stage','area','recordKind'].every(k=>g[k]==null||g[k]===x[k]));
+   assert.equal(g.pendingRecords,relevant.reduce((n,x)=>n+x.pendingHere,0),'pending navigation group mismatch');
+  }
+  assert.equal(slice.pendingRecords,slice.groups.reduce((n,g)=>n+g.pendingRecords,0),'pending navigation slice mismatch');
+ }
+ assert.equal(l.nextSlices.reduce((n,s)=>n+s.pendingRecords,0),l.counts.notAlignmentReviewedHere,'pending navigation total mismatch');
+}
 function check(r,p,a,d) {
+ checkLedger(ledger);
  assert.equal(r.records.length,34);
  assert.deepEqual(new Set(r.records.map(x=>x.key)),new Set(Object.keys(bindings)));
  assert.equal(r.records.filter(x=>x.disposition==='Full').length,33);
@@ -640,5 +653,6 @@ test('health guard rejects wrong-valid protocol, lost practical conditions and a
  const bad=structuredClone(alignments);const c=bad.alignments.find(x=>x.standards.includes(report.records[0].key));c.standards=c.standards.filter(x=>x!==report.records[0].key);assert.throws(()=>check(report,protocols,bad,dependencies),/health scoped contribution mismatch/);
  const duplicate=structuredClone(report);duplicate.dependencyCorrections[1]=structuredClone(duplicate.dependencyCorrections[0]);assert.throws(()=>check(duplicate,protocols,alignments,dependencies),/duplicate correction identity/);
  const mismatched=structuredClone(report);mismatched.dependencyCorrections[0].after.prerequisiteId='mt_example';assert.throws(()=>check(mismatched,protocols,alignments,dependencies),/correction edge identity changed/);
+ const stale=structuredClone(ledger);stale.nextSlices[0].pendingRecords++;assert.throws(()=>checkLedger(stale),/pending navigation slice mismatch/);
  const future=structuredClone(alignments);future.alignments.push({topicId:'mt_future',scope:'jurisdiction',country:'IN',ageRangeStart:8,ageRangeEnd:11,standards:['synthetic:future']});check(report,protocols,future,dependencies);
 });
