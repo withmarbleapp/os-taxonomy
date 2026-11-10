@@ -22,6 +22,7 @@ function checkBindings(rows, associations) {
     assert.ok(protocol && typeof protocol === 'object' && Object.keys(protocol).length, `Missing protocol for ${row.code}`);
     if (Array.isArray(protocol.codes)) assert.ok(protocol.codes.includes(row.code), `Wrong protocol code for ${row.code}`);
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], `Unresolved Full condition for ${row.code}`);
+    if (row.disposition === 'Full') for (const required of protocol.requiresSpecificDispositions ?? []) assert.equal(rows.find(candidate => candidate.code === required)?.disposition, 'Full', `Unresolved integrated specific ${required}`);
   }
 }
 test('Grade4 current dispositions bind complete scoped contributors and actual protocols', () => checkBindings(ledger.expectations, contexts));
@@ -47,4 +48,11 @@ test('Grade4 peoples packet covers each named political division with attributed
     assert.ok(row.location && row.qualifiedDescription && row.peoplesExamples.length);
     assert.ok(report.resources.some(source => source.id === row.sourceId));
   }
+});
+
+test('Grade4 action assessment retains both industry and citizen evidence roles', () => {
+  const report = read('reports/ontario-grade4-industry-environment-review-2026-11-10.json');
+  const conditions = report.protocols['actions-and-effectiveness'].performanceConditions;
+  for (const actor of ['industry', 'citizens']) assert.ok(conditions.actorsBothRequired.includes(actor));
+  for (const level of ['intendedpurpose', 'actualimplementation/output', 'reportedoutcome', 'unknownlongterm/causalextent']) assert.ok(conditions.evidenceLevels.includes(level));
 });

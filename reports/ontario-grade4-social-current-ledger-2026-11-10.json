@@ -3,19 +3,19 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "scope": "Ontario Grade4 Social Studies, ages9–10; actual course edition2018 under accepted aggregateON-SSHG-2026.",
-  "status": "In-progress source-fit authoring review:13Full clauses;29remain under qualification. Not Grade4 completion or learner attainment.",
+  "status": "In-progress source-fit authoring review:17Full clauses;25remain under qualification. Not Grade4 completion or learner attainment.",
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
-    "Full": 13,
+    "Full": 17,
     "Partial": 0,
-    "Unverified": 29,
+    "Unverified": 25,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 32,
+    "pairs": 43,
     "topics": 16,
-    "codes": 13,
+    "codes": 17,
     "newClaims": 2,
     "reusedClaims": 14
   },
@@ -206,35 +206,54 @@
     },
     {
       "code": "B1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_G4Fz9lw20-",
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN",
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-industry-environment-review-2026-11-10.json",
+      "protocolReference": "/protocols/integrated-interrelationships",
+      "coverageBasis": "Actual two-physical-region source tasks account for industry/environment relationships and industry-plus-citizen actions with limited evidence-based effectiveness judgments; unchanged claim contributions do not certify pupil mastery or isolated causal effects."
     },
     {
       "code": "B1.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_G4Fz9lw20-",
+        "mt_CVywzrjT_c"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-industry-environment-review-2026-11-10.json",
+      "protocolReference": "/protocols/environment-to-industry",
+      "coverageBasis": "Actual two-physical-region source tasks account for industry/environment relationships and industry-plus-citizen actions with limited evidence-based effectiveness judgments; unchanged claim contributions do not certify pupil mastery or isolated causal effects."
     },
     {
       "code": "B1.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-industry-environment-review-2026-11-10.json",
+      "protocolReference": "/protocols/industry-to-environment",
+      "coverageBasis": "Actual two-physical-region source tasks account for industry/environment relationships and industry-plus-citizen actions with limited evidence-based effectiveness judgments; unchanged claim contributions do not certify pupil mastery or isolated causal effects."
     },
     {
       "code": "B1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN",
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-industry-environment-review-2026-11-10.json",
+      "protocolReference": "/protocols/actions-and-effectiveness",
+      "coverageBasis": "Actual two-physical-region source tasks account for industry/environment relationships and industry-plus-citizen actions with limited evidence-based effectiveness judgments; unchanged claim contributions do not certify pupil mastery or isolated causal effects."
     },
     {
       "code": "B2",
