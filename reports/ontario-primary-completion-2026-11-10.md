@@ -1,6 +1,6 @@
 # Ontario primary integration: completion ledger
 
-Accepted snapshot: `b5aa9b928d217944f82b35e964c98502972855d7`. Scope is **Kindergarten and Grades 1–6, through age 12**. The independently reconciled inventory has **2,768 retained catalogue records**, including overall/specific expectations and programme variants. These are not 2,768 distinct skills. Higher grades and older historical bands remain preserved outside current authoring scope.
+Accepted snapshot: `b5aa9b928d217944f82b35e964c98502972855d7`. Scope is **Kindergarten and Grades 1–6, through age 12**, excluding the optional Native Languages programme by explicit user decision on **2026-11-10**. The independently reconciled inventory has **2,768 retained catalogue records**, including overall/specific expectations and programme variants. Of these, **128 Native Languages records are explicitly out of scope for this integration**, leaving **2,640 eligible records**. The retained records are not distinct skills. No catalogue records or prior contexts are deleted. Higher grades and older historical bands remain preserved outside current authoring scope.
 
 **Ontario primary integration is not complete.** Audit completion, source verification, association inventory and Full coverage are separate outcomes. The accepted-link columns below are an inventory at this snapshot, never a completion percentage. The current [Grade 1 Social Studies proposal](ontario-grade1-social-studies-2026-11-10.md) is separate from accepted inventory.
 
@@ -11,7 +11,7 @@ Accepted snapshot: `b5aa9b928d217944f82b35e964c98502972855d7`. Scope is **Kinder
 | Kindergarten, 2026 | 127 | 18 | 24 | Integrated Kindergarten audit pending; inherited foundation links do not establish its cross-area requirements. |
 | Language, 2023 | 434 | 378 | 1588 | Accepted Grades1–6 work and Grades1–4 reconciliation exist; inherited judgments remain distinguished from fresh clause/source checks. Resource and keyboarding conditions remain. |
 | Mathematics, 2020 | 345 | 286 | 1052 | Accepted primary associations and historical focused reviews exist. This inventory does not freshly recertify every mandatory clause; Grade1 evidence recovery remains separately traceable. |
-| Native Languages, 2001 | 128 | 0 | 0 | Unreviewed alignment scope. Identify the actual target Indigenous language, orthography, speaker/community resources and performance; generic English or cultural recognition is insufficient. |
+| Native Languages, 2001 | 128 | 0 | 0 | **Out of scope by explicit user decision (2026-11-10): optional Native Languages programme.** Preserve all 128 primary records and prior contexts. This is neither pending work nor a taxonomy gap. |
 | Science and Technology, 2022 | 325 | 232 | 495 | Accepted Grades1–6 audit and cross-grade residual review exist. Practical/integrated tasks, resources, whole-claim fit and readiness conditions remain; links do not imply Full. |
 | Social Studies, History, and Geography, 2026 | 248 | 0 | 0 | Current Grade1 proposal reviews39 records, with specific missing-knowledge and task conditions. Grades2–6 remain unreviewed alignment scope. |
 | The Arts, 2009 | 300 | 0 | 0 | Unreviewed alignment scope. Separate discipline knowledge from actual creation, performance, response and cultural-resource conditions. |
@@ -26,7 +26,7 @@ The accepted [Science residual review](ontario-primary-science-residual-review-2
 
 ## Next work and stopping conditions
 
-Continue bounded Social Studies grades while resolving genuine Grade 1 knowledge decisions. Then audit Arts, Health/PE and integrated Kindergarten with actual creation, movement or inquiry performances where required. French programme variants and Native Languages require real target-language competence and appropriate community/source resources; generic English topics cannot certify them.
+Continue bounded Social Studies grades while resolving genuine Grade 1 knowledge decisions. Then audit Arts, Health/PE and integrated Kindergarten with actual creation, movement or inquiry performances where required. French programme variants remain in scope and require real French competence and appropriate source resources; generic English topics cannot certify them. The optional Native Languages programme is explicitly excluded, while First Nations, Métis and Inuit culture, history and community expectations in Social Studies, Language and Science remain fully in scope.
 
 For each slice, review the whole existing claim across domains, preserve unaffected intervals, and separate missing knowledge from localization, resource access, source ambiguity, readiness and integrated-task evidence. New shared claims need positive, near-miss and transfer evidence. No grade, country or difficulty clone is added just to clear a count. A blocked language resource or community-specific source must be reported honestly rather than declared covered.
 

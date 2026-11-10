@@ -82,6 +82,6 @@ B3.3's local area functions and B3.8's collective service/provider/user relation
 
 ## Wider primary scope and consumer boundary
 
-The [primary completion ledger](ontario-primary-completion-2026-11-10.md) covers Kindergarten and Grades 1–6 across the retained subjects. Existing Language resource/keyboarding conditions and the accepted cross-grade Science residual review are preserved. English communication used in English-stream Social Studies does not establish French or Indigenous-language competence.
+The [primary completion ledger](ontario-primary-completion-2026-11-10.md) records 2,768 retained primary records and 2,640 eligible records after the user’s explicit exclusion of the optional Native Languages programme on 2026-11-10. Its 128 records and all prior contexts remain preserved; this does not exclude FNMI culture/history/community requirements here or in Language/Science. Existing Language resource/keyboarding conditions and the accepted cross-grade Science residual review are preserved. English communication used in English-stream Social Studies does not establish French or Indigenous-language competence.
 
 This is public curation, not publication. Existing claims are reused without authored semantic changes, except for the explicitly new independent claim. Consumers must not infer its mastery from another topic or move/reset learner evidence as a side effect. No such private-state change is authorized here.
