@@ -6,6 +6,13 @@ const methodByType = { CONCEPTUAL: 'two_tier', PROCEDURAL: 'performance_task', R
  * Historical array indexes cannot survive an unrelated assessment rewrite. */
 export function checkResearchArchiveReferences(archive, { topics, research }) {
   const errors = [];
+  if (!topics || !Array.isArray(topics.topics) || !topics.topics.every(row => row && typeof row.id === 'string')) {
+    return ['invalid topic inventory for research archive references'];
+  }
+  if (!research || !Array.isArray(research.records) ||
+      !research.records.every(row => row && !Array.isArray(row) && typeof row.topicId === 'string' && row.topicId.length > 0)) {
+    return ['invalid research records for archive references'];
+  }
   if (!archive || archive.schemaVersion !== 1 || archive.version !== topics.version ||
       !Array.isArray(archive.records) || !Array.isArray(archive.activeReferenceRepairs)) {
     return ['invalid research archive reference inventory'];

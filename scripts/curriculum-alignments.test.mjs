@@ -186,6 +186,23 @@ test('dataset validation rejects stale archive repairs even with an updated mani
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
 
+test('dataset validation prints malformed research diagnostics without throwing from archive checks', () => {
+  for (const records of [undefined, null, [null]]) {
+    const dir = mkdtempSync(join(tmpdir(), 'taxonomy-research-shape-'));
+    try {
+      const fixture = snapshot(dir, true);
+      const research = JSON.parse(readFileSync(join(dir, 'data', 'teaching-research.json')));
+      if (records === undefined) delete research.records;
+      else research.records = records;
+      fixture.put('teaching-research.json', research);
+      const result = fixture.validate();
+      assert.equal(result.status, 1);
+      assert.match(result.stderr, /records/);
+      assert.doesNotMatch(result.stderr, /TypeError|Cannot read properties/);
+    } finally { rmSync(dir, { recursive: true, force: true }); }
+  }
+});
+
 test('dataset validation distinguishes preparation mode from complete manifest-bound alignments', () => {
   for (const present of [false, true]) {
     const dir = mkdtempSync(join(tmpdir(), 'taxonomy-alignments-'));

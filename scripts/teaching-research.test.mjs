@@ -22,6 +22,14 @@ test('archive repair validation fails closed on malformed, duplicate, missing or
  row.path = row.path.startsWith('.') ? row.path.slice(1) : `.${row.path}`;
  duplicate.activeReferenceRepairs.push(row); assert.ok(check(duplicate).some(error => /duplicate/.test(error)));
 });
+test('archive checks report malformed research inventories without hiding schema errors', () => {
+ for (const malformed of [null, {}, { records: null }, { records: [null] }, { records: [42] }, { records: [[]] }, { records: [{}] }]) {
+  assert.deepEqual(checkResearchArchiveReferences(archive, { topics: context.topics, research: malformed }), ['invalid research records for archive references']);
+ }
+ for (const topics of [null, {}, { topics: [null] }]) {
+  assert.deepEqual(checkResearchArchiveReferences(archive, { topics, research }), ['invalid topic inventory for research archive references']);
+ }
+});
 test('published research passes schema and cross-file checks', () => assert.deepEqual(checkTeachingResearch(research, context), []));
 test('rejects stale version, unknown topic, duplicate record, broken citation and wrong coverage', () => {
  for (const mutate of [r => {r.version='v2'}, r => {r.records[0].topicId='mt_missing'}, r => r.records.push(structuredClone(r.records[0])), r => {r.records[0].learn.activities[0].sourceClaims=['not a source']}, r => {r.coverage.withResearch++}, r => {r.topicFileSha256='0'.repeat(64)}, r => {r.records[0].learn.schemaVersion=1}, r => {r.records[0].privateDbId='secret'}, r => {r.records[0].assess.errorPatterns[0].reteachPrerequisiteId='mt_missing'}]) {
