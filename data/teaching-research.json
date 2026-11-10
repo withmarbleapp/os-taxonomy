@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e",
-  "recordCount": 1046,
+  "topicFileSha256": "59e813f987cab5a2c9a4f901d487829631473bd94d01fc30bc38a3071ff03df7",
+  "recordCount": 1047,
   "coverage": {
-    "topicCount": 1858,
-    "withResearch": 1046,
+    "topicCount": 1859,
+    "withResearch": 1047,
     "withoutResearch": 812,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 22,
-        "withResearch": 0,
+        "topics": 23,
+        "withResearch": 1,
         "withoutResearch": 22
       },
       "History": {
@@ -215092,6 +215092,119 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-22T15:31:39.949Z",
         "updatedAt": "2026-10-19T15:21:50.826Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_G4Fz9lw20-",
+      "pedagogy": {
+        "summary": "Teach purpose and the need or want it serves, using accurate accounts rather than inferring land use solely from appearance. Contrast this operation with natural/managed/built feature classification without changing that existing claim.",
+        "bestPractices": [
+          "Provide a short stated use or verified description for each example, not just an ambiguous photograph.",
+          "Contrast two built places with different purposes and two wooded places with different supplied uses.",
+          "Include water, conservation and a mixed-use place; do not treat the absence of buildings as absence of use."
+        ],
+        "keyRepresentations": [
+          "Place description or image plus verified purpose information",
+          "A table linking place, stated use and need/want; more than one row is allowed for mixed use"
+        ],
+        "commonMisconceptions": [
+          "All built places have the same use.",
+          "All green or unbuilt places are unused, farms or conservation areas.",
+          "A single label must exhaust every use of a place."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Ask what people use the place for and which needs or wants that helps meet. A physical-feature label and a purpose answer different questions.",
+        "activities": [
+          {
+            "title": "Same appearance, different purposes",
+            "learnerActions": [
+              "Use supplied descriptions of a home, factory, shop, growing area, road, recreation space and conservation area; describe each purpose and its needs/wants relationship.",
+              "Compare a home and factory, both built, and two wooded places explicitly described as managed for timber and protected habitat. Do not guess the use from trees alone.",
+              "Explain a supplied lake used for food gathering and a conservation wetland case with its stated clean-water/habitat role. Include the named community’s own attributed account when using an actual traditional practice.",
+              "Explain the two uses of a shop with homes above it, then transfer to a different accurate mixed-use description."
+            ],
+            "intendedInsight": "Purpose depends on how a place is used, not just what it looks like. Multiple uses and unbuilt uses can be meaningful.",
+            "feedback": [
+              "Ask what fact in the account establishes the use, then how that use meets a need or want.",
+              "If every built place is called industrial, contrast living in a home with making goods in a factory.",
+              "If unbuilt means unused, return to the supplied fishing or habitat account; do not imply people must build on land for it to matter."
+            ],
+            "rationale": "Original untested teaching proposal. Contrasting matched appearances and different purposes is designed to distinguish purpose reasoning from visual categorization; no intervention efficacy study is claimed.",
+            "sourceClaims": [
+              "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+              "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors."
+            ]
+          }
+        ],
+        "constraints": [
+          "Supply any unfamiliar production, traditional-use or conservation facts. This is not a test of unsupplied ecological, legal or community knowledge.",
+          "Use stated or verified examples. A satellite image alone does not certify an actual land use, ownership, permission or legal zoning.",
+          "Land-use examples are not an exhaustive universal classification or a ranking of which needs, wants or cultures matter. Do not assume a place has one exclusive use.",
+          "No required travel, personal address, property disclosure, land management procedure, legal decision or advanced environmental mechanism."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked curation draft after whole-claim comparison across Geography, Life Skills and environmental claims. Source verification supports the factual distinctions only; confidence in this untested teaching design remains low."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Give {{name}} short, accurate descriptions of places used for homes, growing food, making goods, shops or services, transport, recreation and conservation, including a lake used for fishing. Can they explain what each place is used for and the need or want it helps meet? Then compare homes and a factory, which are both built, and two wooded areas with different stated uses. Try a shop with homes above it: can they explain its two uses, without deciding that a place with no buildings has no use?",
+        "correctAnswer": "Explains the different supplied purposes and their needs/wants relationship, retains a meaningful unbuilt/water use, and recognizes multiple uses without equating visual appearance with purpose.",
+        "whatMakesItDiscriminate": "A home and factory share a built appearance but different purposes; two wooded areas can share vegetation while their supplied uses differ. The water/conservation cases rule out buildings as a necessary condition, and the new mixed-use case distinguishes transferable purpose reasoning from memorizing one label per picture.",
+        "probeDeeper": [
+          "Which fact tells you what this place is used for?",
+          "How can two built places serve different needs?",
+          "Can this place have more than one use, and how do you know?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Uses natural/managed/built as if it completely identifies the purpose.",
+            "revealedBy": "Gives the same purpose to a home and a factory, or guesses a wooded place’s use from its cover.",
+            "nextMove": "Keep the appearance similar and compare the stated activities or purposes. Ask which need or want each serves.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats an unbuilt place as unused or forces one exclusive purpose.",
+            "revealedBy": "Rejects the supplied fishing/conservation purpose or omits either homes or shop in the mixed-use example.",
+            "nextMove": "Return to the actual supplied use and its consequence; allow multiple well-supported purposes without inventing others.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Classifies by appearance alone or cannot relate supplied uses to needs/wants.",
+          "partial": "Explains familiar single uses but loses the distinction for matched appearances, unbuilt/water or mixed use.",
+          "full": "Explains purposes and needs/wants across supplied varied cases, including unbuilt/water and mixed use, and transfers without unsupported visual guesses."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+          "source": "Natural Resources Canada — Land cover / land use",
+          "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/land-cover-land-use",
+          "verified": true
+        },
+        {
+          "claim": "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors.",
+          "source": "Ontario Ministry of Municipal Affairs and Housing — Citizen’s guide to land use planning, Overview",
+          "url": "https://www.ontario.ca/document/citizens-guide-land-use-planning",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked land-purpose proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T16:29:06Z",
+        "updatedAt": "2026-11-10T16:29:06Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
