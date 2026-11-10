@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3994,
+  "edgeCount": 3999,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -23966,6 +23966,36 @@
       "prerequisiteId": "mt_M_xcaRcvSo",
       "strength": "soft",
       "reason": "Knight knowledge provides military context for the Crusades"
+    },
+    {
+      "topicId": "mt_ZtACVRIqmM",
+      "prerequisiteId": "mt_KaF0SQvaiu",
+      "strength": "soft",
+      "reason": "Measuring length supports checking an invariance prediction; the conceptual prediction can also be discussed with a supplied comparison, so this is not a hard gate."
+    },
+    {
+      "topicId": "mt_dLJu-KoJAM",
+      "prerequisiteId": "mt_4lp_b5Pzik",
+      "strength": "soft",
+      "reason": "Liquid measurement supports a fair check of the prediction; the conceptual reasoning need not be gated on independent instrument reading."
+    },
+    {
+      "topicId": "mt_dLJu-KoJAM",
+      "prerequisiteId": "mt_zkFbMLpu3U",
+      "strength": "soft",
+      "reason": "Capacity and volume comparison language supports explaining the apparent-height trap but can be supplied orally in the task."
+    },
+    {
+      "topicId": "mt_iFQ6cOJr6e",
+      "prerequisiteId": "mt_69w5GVudJl",
+      "strength": "soft",
+      "reason": "Ordering events supports the transmission story; dated timeline construction is not a hard prerequisite for explaining a supplied sequence."
+    },
+    {
+      "topicId": "mt_iFQ6cOJr6e",
+      "prerequisiteId": "mt_jY7uf0Cb7o",
+      "strength": "soft",
+      "reason": "Place-value understanding supports interpreting a placeholder example in the historical account; a supplied model can also provide that meaning."
     }
   ]
 }

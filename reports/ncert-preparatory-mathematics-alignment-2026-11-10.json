@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "source": "ncert-ncfse-2023-ed2024",
+  "baseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "scope": {
+    "stage": "Preparatory",
+    "selectedGrades": [
+      3,
+      4,
+      5
+    ],
+    "officialAgeBand": [
+      8,
+      11
+    ],
+    "ageInterpretation": "Official stage window with stage-end attainment, not identical performance deadlines at each age.",
+    "records": 24,
+    "curricularGoals": 5,
+    "stageCompetencies": 19
+  },
+  "coverageMeaning": "Authoring coverage of source requirements and assessment design, not learner attainment. Full does not certify that any child has passed.",
+  "summary": {
+    "Full": 22,
+    "Partial": 2
+  },
+  "records": [
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.1",
+      "officialCode": "C-1.1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Gag_h98jWP",
+          "topicName": "Reading and writing numbers to 10,000,000",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The existing whole-number place-value claim covers reading, writing, comparison and digit values. Indian names and grouping are a representation convention for the same decimal operation, supplied explicitly by a source-fit task rather than a new country-specific claim.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "indian-notation"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.2",
+      "officialCode": "C-1.2",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ndGqFPWyen",
+          "topicName": "Fractions of a whole",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NoB20kVa4w",
+          "topicName": "Fractions on a number line (age 8+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_4Km38F4L-6",
+          "topicName": "Fractions of a whole (age 10+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_SXbZ3bC9z7",
+          "topicName": "Comparing fractions (age 9+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "The existing claims jointly account for equal whole parts, line positions, division of whole quantities and comparison; division is an explicit claim, not inferred from multiplication.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "fractions-three-views"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.3",
+      "officialCode": "C-1.3",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_PgsHGYJMH-",
+          "topicName": "Representing Addition and Subtraction",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_ehGS_uVSJv",
+          "topicName": "Inverse: addition undoes subtraction",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_GDG9_SZmsO",
+          "topicName": "Division as Unknown Factor",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_WX30dzi4dt",
+          "topicName": "Fluent multiplication and division facts",
+          "role": "component"
+        },
+        {
+          "topicId": "mt__t4afSyZRm",
+          "topicName": "Fluent adding and subtracting within 20",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_RXnyhCRYXA",
+          "topicName": "Multi-step problems: choosing operations",
+          "role": "component"
+        }
+      ],
+      "rationale": "Representations, inverse relations, fact fluency and contextual operation choice are all explicit existing claims. A single calculation topic alone would not cover these conceptual and application requirements.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "operations"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.4",
+      "officialCode": "C-1.4",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fZTn0W_iZR",
+          "topicName": "Generalising Patterns",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_A-FyLLLLzy",
+          "topicName": "Shape patterns",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_gxCIASSezX",
+          "topicName": "Square and cube numbers",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_HLUqHJ9Y7n",
+          "topicName": "Patterns with Powers of Ten",
+          "role": "component"
+        }
+      ],
+      "rationale": "Generalising and generating sequences account for new simple rules; square, cube and place-value claims contribute their named structures. The supplied recurrence task exercises the same rule-description operation rather than inventing a sequence-name mastery layer.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "number-patterns"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.1",
+      "officialCode": "C-2.1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fEuoBYw6bU",
+          "topicName": "Sorting 2-D and 3-D shapes",
+          "role": "component"
+        }
+      ],
+      "rationale": "Existing analysis and sorting claims require describing actual attributes and justifying shape distinctions, not just naming a picture.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "shape-analysis"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.2",
+      "officialCode": "C-2.2",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_TdV9YGJEoY",
+          "topicName": "Position, direction, and movement",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_61Pa4Eksva",
+          "topicName": "Finding places on a plan",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_w4cUnN_SsQ",
+          "topicName": "Reading and drawing maps",
+          "role": "component"
+        }
+      ],
+      "rationale": "Movement vocabulary and familiar plans are directly assessable in existing Mathematics and Geography claims. A local sketch-map label does not create a separate national mapping operation.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "local-map"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.3",
+      "officialCode": "C-2.3",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_hR2Y7NhMSY",
+          "topicName": "Lines of symmetry",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NM5I3yN-Q6",
+          "topicName": "Rotational symmetry",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_vJUa62bxeR",
+          "topicName": "2-D shapes (age 7+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Two-dimensional symmetry and making models are explicit. They do not alone establish three-dimensional reflection and rotation reasoning.",
+      "remainingConditions": [
+        "An explicit primary-scope 3-D symmetry claim requires review: the existing dedicated solid-symmetry topic bundles more advanced cylinder, plane and axis requirements and is not silently assigned to younger ages."
+      ],
+      "residualKind": "existing-claim-scope-review",
+      "assessmentProtocols": [
+        "symmetry-models"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.4",
+      "officialCode": "C-2.4",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_WXW0hjNhph",
+          "topicName": "Patterns & Sequences",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_A-FyLLLLzy",
+          "topicName": "Shape patterns",
+          "role": "component"
+        }
+      ],
+      "rationale": "Pattern construction and rule-based continuation apply to physical mathematical objects as well as drawings. Changing from flat pieces to solid models is a material condition accounted for in the task.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "shape-patterns"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.1",
+      "officialCode": "C-3.1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_KaF0SQvaiu",
+          "topicName": "Measuring length and height (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_4lp_b5Pzik",
+          "topicName": "Capacity and volume",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_zd0YkB3xNj",
+          "topicName": "Measuring mass and weight",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_jHv4BgRK8B",
+          "topicName": "Measuring with different units",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_TMoHjMhRS2",
+          "topicName": "Precise Maths Communication",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_DOe893F6gN",
+          "topicName": "Choosing measurement units",
+          "role": "component"
+        }
+      ],
+      "rationale": "Measurement in both unit types, reasoning about changed counts for an unchanged object, precise unit communication and unit choice jointly account for the common-reference task. The task tests the combination explicitly rather than introducing another conceptual label.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "common-units"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.2",
+      "officialCode": "C-3.2",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_DOe893F6gN",
+          "topicName": "Choosing measurement units",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_e4x3l2JeLI",
+          "topicName": "Measuring length (age 7+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt__N55B7u7HD",
+          "topicName": "Measuring and recording durations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_WtcFrxGOgw",
+          "topicName": "Perimeters of polygons",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_4lp_b5Pzik",
+          "topicName": "Capacity and volume",
+          "role": "component"
+        }
+      ],
+      "rationale": "Suitable standard-unit measurement, length tools, event timing, perimeter and liquid measurement are explicit. The source requires suitable tool use; it does not add an unstated universal independent-selection requirement.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "tools-and-units"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.3",
+      "officialCode": "C-3.3",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_d8al9JcajP",
+          "topicName": "Converting measurement units",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The accepted surviving conversion claim explicitly uses unit relationships, preserves remainders and checks direction. Simple metric examples are a direct subset; retired conversion profiles are not restored.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "unit-conversion"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.4",
+      "officialCode": "C-3.4",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_6xNmQLzuqm",
+          "topicName": "Understanding Area",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_Jvvh5P06NV",
+          "topicName": "Area by Tiling",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_GzcJEVkNRn",
+          "topicName": "Area of rectangles by multiplication",
+          "role": "component"
+        }
+      ],
+      "rationale": "Unit-square meaning, tiling justification and multiplication of side lengths jointly account for definition and formula, including the square as a rectangle.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "rectangle-area"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.5",
+      "officialCode": "C-3.5",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_OzRZ89GrQW",
+          "topicName": "Estimating Lengths",
+          "role": "component"
+        },
+        {
+          "topicId": "mt__N55B7u7HD",
+          "topicName": "Measuring and recording durations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NSC3LT_-ch",
+          "topicName": "Estimating capacity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_mFJ-2ZF6Tk",
+          "topicName": "Estimating, comparing and calculating measures and money",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_eiB3-6pu6a",
+          "topicName": "Area and perimeter of rectangles",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_nTL-owFJTF",
+          "topicName": "Volume of cuboids",
+          "role": "component"
+        }
+      ],
+      "rationale": "Existing estimation and checking claims cover linear and liquid measures, time, general measures and irregular area. The task explicitly accounts for both regular and irregular boundaries and verifies with standard units; merely calculating an exact formula is insufficient.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "estimate-and-check"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.6",
+      "officialCode": "C-3.6",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_MJZA90uc6H",
+          "topicName": "Perimeter (age 10+)",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The whole existing conceptual claim explicitly requires both directions of the area/perimeter counterexample and systematic exploration.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "area-perimeter"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.7",
+      "officialCode": "C-3.7",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ZtACVRIqmM",
+          "topicName": "Length stays the same when an object is moved or bent",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_dLJu-KoJAM",
+          "topicName": "Liquid volume stays the same during ordinary pouring",
+          "role": "component"
+        }
+      ],
+      "rationale": "Two separately assessed attribute-invariance concepts account for the length and liquid-volume examples and everyday applications. Ordinary pouring is bounded to unchanged liquid and conditions without loss; this is not a universal physical volume law.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "conservation-boundaries"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.1",
+      "officialCode": "C-4.1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_RXnyhCRYXA",
+          "topicName": "Multi-step problems: choosing operations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        }
+      ],
+      "rationale": "Contextual multi-operation planning and modelling account for practical problems; a bounded arithmetic puzzle protocol exercises the same operations and verification, without treating a recreational format as an independent claim.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "arithmetic-puzzles"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.2",
+      "officialCode": "C-4.2",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_gu0NPDvlhY",
+          "topicName": "Systematic Listing",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Systematic listing already requires completeness and no repeats. A two-position selection table with stated constraints accounts for shared-pool pairs: filtering self-pairs and reverse duplicates is explicit in the source-fit protocol, not assumed from the meal example alone.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "constrained-listing"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.3",
+      "officialCode": "C-4.3",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_mQcWGh02no",
+          "topicName": "Choosing the right strategy",
+          "role": "component"
+        }
+      ],
+      "rationale": "The existing whole strategic-choice claim explicitly compares mental, written and representational methods and justifies tool choice. A stronger calculation algorithm is not used as a proxy for the decision; a second age-labelled strategy claim is not needed.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "method-choice"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-5.1",
+      "officialCode": "C-5.1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_iFQ6cOJr6e",
+          "topicName": "Development and spread of zero and positional notation",
+          "role": "whole"
+        }
+      ],
+      "rationale": "One source-supported historical-development claim accounts for Indian development, transmission and present significance. The curricular goal and its competency reuse the same claim. Place-value calculation alone is not substituted for this knowledge.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "history-boundaries"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-1",
+      "officialCode": "CG-1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Gag_h98jWP",
+          "topicName": "Reading and writing numbers to 10,000,000",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_ndGqFPWyen",
+          "topicName": "Fractions of a whole",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_RXnyhCRYXA",
+          "topicName": "Multi-step problems: choosing operations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fZTn0W_iZR",
+          "topicName": "Generalising Patterns",
+          "role": "component"
+        }
+      ],
+      "rationale": "These direct components support number representation, fraction meaning, operations and sequence reasoning. Goal-level synthesis is assessed separately from child-code count. The explicit combined protocol checks these operations together and their justification; coverage does not follow from association count alone.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "goal-number-integration"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-2",
+      "officialCode": "CG-2",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_TdV9YGJEoY",
+          "topicName": "Position, direction, and movement",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_WXW0hjNhph",
+          "topicName": "Patterns & Sequences",
+          "role": "component"
+        }
+      ],
+      "rationale": "Shape analysis, spatial relations and pattern construction are direct components.",
+      "remainingConditions": [
+        "The explicit 3-D symmetry boundary in C-2.3 prevents full goal coverage."
+      ],
+      "residualKind": "existing-claim-scope-review",
+      "assessmentProtocols": []
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-3",
+      "officialCode": "CG-3",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_DOe893F6gN",
+          "topicName": "Choosing measurement units",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_d8al9JcajP",
+          "topicName": "Converting measurement units",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_6xNmQLzuqm",
+          "topicName": "Understanding Area",
+          "role": "component"
+        },
+        {
+          "topicId": "mt__N55B7u7HD",
+          "topicName": "Measuring and recording durations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_ZtACVRIqmM",
+          "topicName": "Length stays the same when an object is moved or bent",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_dLJu-KoJAM",
+          "topicName": "Liquid volume stays the same during ordinary pouring",
+          "role": "component"
+        }
+      ],
+      "rationale": "The measurement station protocol accounts for attribute identification, unit meaning, processes and checks across linear, area, volume, mass and time measures. Separate invariance checks prevent measurement procedure from being treated as proof of conservation.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "goal-measurement-integration"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-4",
+      "officialCode": "CG-4",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_RXnyhCRYXA",
+          "topicName": "Multi-step problems: choosing operations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_gu0NPDvlhY",
+          "topicName": "Systematic Listing",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_mQcWGh02no",
+          "topicName": "Choosing the right strategy",
+          "role": "component"
+        }
+      ],
+      "rationale": "Planning, systematic enumeration and strategy selection directly support the broad problem-solving goal. The explicit combined protocol checks these operations together and their justification; coverage does not follow from association count alone.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": [
+        "goal-problem-integration"
+      ]
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-5",
+      "officialCode": "CG-5",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_iFQ6cOJr6e",
+          "topicName": "Development and spread of zero and positional notation",
+          "role": "whole"
+        }
+      ],
+      "rationale": "One source-supported historical-development claim accounts for Indian development, transmission and present significance. The curricular goal and its competency reuse the same claim. Place-value calculation alone is not substituted for this knowledge.",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "assessmentProtocols": []
+    }
+  ],
+  "newTopicStatus": "Three independently justified claims authored: length invariance, ordinary-pouring liquid-volume invariance and a historical account of zero / positional notation. Common-unit purpose is covered by joint reuse.",
+  "newTopicIds": [
+    "mt_ZtACVRIqmM",
+    "mt_dLJu-KoJAM",
+    "mt_iFQ6cOJr6e"
+  ]
+}

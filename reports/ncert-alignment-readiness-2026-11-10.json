@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseCommit": "4a7ba5a0476c7009694e2b11bfacdfc7343d1062",
+  "baseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "sourceMeaning": "NCERT national baseline only; other boards and later grade-specific publications are not inferred.",
   "counts": {
     "catalogueRecords": 570,
@@ -8,11 +8,11 @@
     "formalStageRecords": 254,
     "formalCurricularGoals": 58,
     "formalStageCompetencies": 196,
-    "alignmentReviewedHere": 15,
-    "notAlignmentReviewedHere": 555,
-    "previousINAssociations": 0
+    "alignmentReviewedHere": 39,
+    "notAlignmentReviewedHere": 531,
+    "previousINAssociations": 31
   },
-  "interpretation": "Catalogue verification does not certify taxonomy coverage. Unreviewed records are deferred, not missing mastery claims; applicability/resource/language conditions remain source-specific.",
+  "interpretation": "Cumulative reviewed coverage is separate from catalogue verification and learner attainment. Unreviewed records remain pending, not missing mastery claims; applicability/resource/language conditions remain source-specific.",
   "groups": [
     {
       "source": "ncert-fs-2025",
@@ -196,7 +196,7 @@
       "area": "MATH",
       "recordKind": "curricularGoal",
       "records": 5,
-      "reviewedHere": 0
+      "reviewedHere": 5
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -204,7 +204,7 @@
       "area": "MATH",
       "recordKind": "stageCompetency",
       "records": 19,
-      "reviewedHere": 0
+      "reviewedHere": 19
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -7379,7 +7379,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 1,
       "sourceAgeBand": [
         3,
         8
@@ -7416,7 +7416,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7453,7 +7453,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 3,
       "sourceAgeBand": [
         3,
         8
@@ -7490,7 +7490,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 1,
       "sourceAgeBand": [
         3,
         8
@@ -7527,7 +7527,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7601,7 +7601,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7638,7 +7638,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7675,7 +7675,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 1,
       "sourceAgeBand": [
         3,
         8
@@ -7712,7 +7712,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7749,7 +7749,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 3,
       "sourceAgeBand": [
         3,
         8
@@ -7786,7 +7786,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7823,7 +7823,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 5,
       "sourceAgeBand": [
         3,
         8
@@ -7860,7 +7860,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 2,
       "sourceAgeBand": [
         3,
         8
@@ -7931,7 +7931,7 @@
       ],
       "catalogueStatus": "accepted-source-position-verified",
       "alignmentReviewStatus": "reviewed-in-this-slice",
-      "existingINAssociationsAtBase": 0,
+      "existingINAssociationsAtBase": 3,
       "sourceAgeBand": [
         3,
         8
@@ -11460,14 +11460,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.1"
+      "officialCode": "C-1.1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.2",
@@ -11481,14 +11503,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.2"
+      "officialCode": "C-1.2",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 4,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.3",
@@ -11502,14 +11546,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.3"
+      "officialCode": "C-1.3",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 6,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-1.4",
@@ -11523,14 +11589,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.4"
+      "officialCode": "C-1.4",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 4,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.1",
@@ -11544,14 +11632,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.1"
+      "officialCode": "C-2.1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 2,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.2",
@@ -11565,14 +11675,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.2"
+      "officialCode": "C-2.2",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 3,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.3",
@@ -11586,14 +11718,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.3"
+      "officialCode": "C-2.3",
+      "reviewedDisposition": "Partial",
+      "proposedAssociationCount": 3,
+      "reviewedResidualKind": "existing-claim-scope-review",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-2.4",
@@ -11607,14 +11761,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.4"
+      "officialCode": "C-2.4",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 2,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.1",
@@ -11628,14 +11804,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.1"
+      "officialCode": "C-3.1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 6,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.2",
@@ -11649,14 +11847,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.2"
+      "officialCode": "C-3.2",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 5,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.3",
@@ -11670,14 +11890,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.3"
+      "officialCode": "C-3.3",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.4",
@@ -11691,14 +11933,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.4"
+      "officialCode": "C-3.4",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 3,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.5",
@@ -11712,14 +11976,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.5"
+      "officialCode": "C-3.5",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 6,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.6",
@@ -11733,14 +12019,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.6"
+      "officialCode": "C-3.6",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-3.7",
@@ -11754,14 +12062,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.7"
+      "officialCode": "C-3.7",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 2,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.1",
@@ -11775,14 +12105,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.1"
+      "officialCode": "C-4.1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 2,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.2",
@@ -11796,14 +12148,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.2"
+      "officialCode": "C-4.2",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-4.3",
@@ -11817,14 +12191,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.3"
+      "officialCode": "C-4.3",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-COMP-C-5.1",
@@ -11838,14 +12234,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.1"
+      "officialCode": "C-5.1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-1",
@@ -11859,14 +12277,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-1"
+      "officialCode": "CG-1",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 4,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-2",
@@ -11880,14 +12320,36 @@
         267
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-2"
+      "officialCode": "CG-2",
+      "reviewedDisposition": "Partial",
+      "proposedAssociationCount": 3,
+      "reviewedResidualKind": "existing-claim-scope-review",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-3",
@@ -11901,14 +12363,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-3"
+      "officialCode": "CG-3",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 6,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-4",
@@ -11922,14 +12406,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-4"
+      "officialCode": "CG-4",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 3,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-MATH-GOAL-CG-5",
@@ -11943,14 +12449,36 @@
         268
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-in-this-slice",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-5"
+      "officialCode": "CG-5",
+      "reviewedDisposition": "Full",
+      "proposedAssociationCount": 1,
+      "reviewedResidualKind": "none",
+      "alignmentReport": "ncert-preparatory-mathematics-alignment-2026-11-10.json",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "requiredGradeBand": [
+        3,
+        4,
+        5
+      ],
+      "selectedGradeView": [
+        3,
+        4,
+        5
+      ],
+      "applicability": {
+        "attainmentReference": "stage-end",
+        "sourceFootnotes": []
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-PE-LS1-COMP-C-3.1",
