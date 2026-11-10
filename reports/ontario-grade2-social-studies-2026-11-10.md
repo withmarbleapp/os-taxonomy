@@ -1,6 +1,6 @@
 # Ontario Grade 2 Social Studies: complete source-fit proposal
 
-This complete Grade2 proposal explicitly depends on unmerged [PR115](https://github.com/withmarbleapp/os-taxonomy/pull/115), with data frozen at `b4102bc` and documentation corrected at `22d3f9a`. The initial accepted base below is historical review provenance; it does not claim the dependency has reached main. Reconcile/retarget after base acceptance before ready delivery.
+This complete Grade2 proposal explicitly depends on unmerged [PR115](https://github.com/withmarbleapp/os-taxonomy/pull/115), with data frozen at `b4102bc` and documentation corrected at `22d3f9a`. The initial accepted base below is historical review provenance; it does not claim the dependency has reached main. Reconcile/retarget after base acceptance before final default-branch delivery.
 
 
 At accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, the initial slice read all **40** retained Grade 2 records and proposed 101 pairs across 18 existing topics. The [world-reference follow-up](ontario-grade2-world-reference-claims-2026-11-10.md) adds two justified concepts and an exact-ID pole scientific correction. Cumulatively there are **143 pairs across 27 existing plus three proposed new claims**, at exact **CA/Ontario 7–8**. The separately reviewed climate correction is also inherited. No other authored claim/research, dependency or catalogue changes. The [machine mapping](ontario-grade2-social-studies-mapping-2026-11-10.json) records every code and its remaining requirements.

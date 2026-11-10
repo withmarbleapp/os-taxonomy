@@ -6,4 +6,4 @@ The [inherited authoritative cases](ontario-cultural-renewal-claim-2026-11-10.md
 
 A1’s broader comparison additionally uses the reviewed actual family/local traditions and evidenced change protocols. The shared renewal card alone is not that entire comparison. The proposal now accounts for all40 Grade2 records as **Full source-fit authoring coverage**, without certifying any learner or a classroom intervention.
 
-This remains an explicit unmerged dependency stack. After PR115 reaches main, this proposal must reconcile/retarget there before ready delivery. Repository acceptance and downstream publication are separate; the wider Ontario primary integration is not complete.
+This remains an explicit unmerged dependency stack. After PR115 reaches main, this proposal must reconcile/retarget there before final default-branch delivery. Repository acceptance and downstream publication are separate; the wider Ontario primary integration is not complete.
