@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "69d3e00031f5e1ac420d1c3a21d57ef89d2cea6a885efcf1411ae06714ed2ee9",
-  "recordCount": 1057,
+  "topicFileSha256": "6a1bf0204aacc0301d642b23ef7898b10fcfa20614ad028043785e83eeb439ab",
+  "recordCount": 1060,
   "coverage": {
-    "topicCount": 1872,
-    "withResearch": 1057,
+    "topicCount": 1875,
+    "withResearch": 1060,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,13 +20,13 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 22,
-        "withResearch": 0,
+        "topics": 23,
+        "withResearch": 1,
         "withoutResearch": 22
       },
       "History": {
-        "topics": 110,
-        "withResearch": 0,
+        "topics": 111,
+        "withResearch": 1,
         "withoutResearch": 110
       },
       "Learning to Learn": {
@@ -45,8 +45,8 @@
         "withoutResearch": 82
       },
       "Personal & Social Development": {
-        "topics": 118,
-        "withResearch": 1,
+        "topics": 119,
+        "withResearch": 2,
         "withoutResearch": 117
       },
       "Science": {
@@ -216347,6 +216347,357 @@
         "originalResearchGeneratedBy": "Codex; actual primary-resource readback and original untested assessment/teaching design",
         "createdAt": "2026-11-10T20:06:25.247366Z",
         "updatedAt": "2026-11-10T20:06:25.247366Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_PJE57bAvMG",
+      "pedagogy": {
+        "summary": "Use contrasting familiar or supplied fictional situations to connect a social role with its duties and explain why circumstances change that relationship. Distinguish this from merely naming people, describing feelings or choosing a group-project function.",
+        "bestPractices": [
+          "Use inclusive family and community examples; never require private disclosure.",
+          "Ask what duty follows from the role and why a different circumstance changes it.",
+          "Include a responsibility toward a plant, shared place or environment, not only interpersonal examples."
+        ],
+        "keyRepresentations": [
+          "Paired role–relationship–duty scenario cards",
+          "Before/after circumstance diagram"
+        ],
+        "commonMisconceptions": [
+          "A role name alone explains a duty.",
+          "Everyone has the same responsibilities in every setting.",
+          "Responsibilities are fixed by gender or one family arrangement."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Compare two supplied roles and trace an event to a changed responsibility.",
+        "activities": [
+          {
+            "title": "Explain duties across two settings and a change",
+            "learnerActions": [
+              "Hear a supplied story about the same child in school and garden-care settings. Provide the needed facts: the child knows the school while a new pupil does not; a plant needs water when the soil is dry, and the soil has become dry.",
+              "State the person’s role and relationships, then explain a responsibility in each setting.",
+              "Explain why a new pupil or changed weather creates a different duty; compare with an everyday role of their own only if they choose."
+            ],
+            "intendedInsight": "Responsibilities depend on roles, relationships and circumstances rather than a fixed label.",
+            "feedback": [
+              "If only a role is named, ask what the person needs to do and why.",
+              "Ask how the changed circumstance alters the duty, including environmental care."
+            ],
+            "rationale": "An authored contrast/transfer proposal aligned to the verified curriculum requirement. It has not been experimentally validated.",
+            "sourceClaims": [
+              "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them."
+            ]
+          },
+          {
+            "title": "Apply role and duty reasoning to a non-sensitive everyday role",
+            "learnerActions": [
+              "Ask the learner to choose two real everyday roles they have, such as pupil and classmate or classroom helper, and identify the people or place involved.",
+              "For each role, ask what responsibility comes with it and why that duty follows from the relationship or setting.",
+              "Ask them to choose a non-sensitive real event, such as starting school or joining a new class/activity, and describe a role, relationship or duty before and after it.",
+              "Ask why the event changed the responsibility or relationship. A supplied familiar school fact may support recall, but do not supply the causal answer.",
+              "Use the separate fictional transfer scenario to check that the reasoning extends beyond a rehearsed autobiography."
+            ],
+            "intendedInsight": "The same relationship applies to a real everyday role and a genuine change without requiring private family disclosure.",
+            "feedback": [
+              "Ask why a duty follows from the chosen role and why the actual event changed it. A role label, event name or feeling alone is insufficient."
+            ],
+            "rationale": "This authored source-fit protocol accounts for the expectation’s self-application condition. It is not evidence that a learner passed or a newly validated teaching intervention.",
+            "sourceClaims": [
+              "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them."
+            ]
+          }
+        ],
+        "constraints": [
+          "Do not infer identity, emotional coping, civic-rights or institutional-government mastery.",
+          "No fixed family structure or private disclosure is required.",
+          "Use the same fictional person across settings and provide the environmental facts; independent gardening knowledge is not a gate. Ask why a duty follows from the changed circumstance rather than supplying the duty as the answer.",
+          "The source-specific self-application protocol separately samples real everyday roles and a non-sensitive personally experienced event; hypothetical success alone is not learner evidence for that application."
+        ],
+        "reviewNotes": [
+          "2026-11-10: official Grade1 source meaning and closest existing claims reviewed. Low-confidence teaching proposal; no new research-study verification claimed."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "In a supplied story, the same child, Ari, is a pupil at school and helps care for a garden. Ari knows the school well; a new pupil does not. The story explains that plants need water when soil is dry, and the soil has become dry. Can {{name}} explain how Ari’s roles, relationships and responsibilities differ between the settings, and why each changed circumstance might change a responsibility? They may also use a non-sensitive everyday role of their own.",
+        "correctAnswer": "Links each stated role/relationship to a relevant duty, explains why the settings differ, and explains how the supplied event changes a relationship or responsibility, including care toward the environment.",
+        "whatMakesItDiscriminate": "Separates a role label from an explanation of its duty and tests a changed circumstance plus a different context.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "My role label means I always have the same duty.",
+            "revealedBy": "Lists labels or duties but cannot explain a difference between settings or after the change.",
+            "nextMove": "Contrast two supplied roles and ask who or what needs care, what changed, and why that changes the responsibility.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Why does this duty follow from this role or relationship?",
+          "What changed, and why should that change the duty?",
+          "How would a changed need of a plant or shared place affect the responsibility?"
+        ],
+        "responseLevels": {
+          "gap": "Lists labels, people or feelings without relating roles to duties.",
+          "partial": "Connects one familiar role and duty but needs support to explain a changed circumstance.",
+          "full": "Explains role–duty relationships across settings and transfers the reasoning to a change involving people and environmental care."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Ontario Grade 1 expectations require linking familiar roles to responsibilities and explaining how circumstances change them.",
+          "source": "Ontario Ministry of Education, current Grade1 Social Studies course, declared2023; accepted catalogue namespace2026",
+          "url": "https://ws.api.dcp.edu.gov.on.ca/content/api/items/sshg___grade_1?language=en-CA&depth=6",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified claim and untested teaching proposal",
+        "createdAt": "2026-11-10T12:00:43Z",
+        "updatedAt": "2026-11-10T12:00:43Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_gSBJxNBQh3",
+      "pedagogy": {
+        "summary": "Explain the historical-disruption, community-action and identity relationship through attributed contemporary cases. Keep distinct peoples and initiatives visible; understanding this relationship is not language proficiency.",
+        "bestPractices": [
+          "Use the three source-fit case summaries and introductory historical context.",
+          "Ask who leads the action and why it can strengthen identity or belonging.",
+          "Check transfer to another community without assuming identical cultures or experiences."
+        ],
+        "keyRepresentations": [
+          "Attributed contemporary case cards",
+          "History–community action–identity relationship diagram"
+        ],
+        "commonMisconceptions": [
+          "Indigenous cultures disappeared or exist only in the past.",
+          "A language programme is merely generic respect with no historical context.",
+          "One community’s experience represents every Indigenous person."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Interpret community-led examples using the source-fit cultural-renewal protocol.",
+        "activities": [
+          {
+            "title": "Explain renewal and identity across attributed cases",
+            "learnerActions": [
+              "Introduce the historical context in plain, non-graphic language. Do not ask for a learner’s or family’s residential-school testimony.",
+              "Attribute each case to its named people/community and source. Distinguish a First Nation, Métis and Inuit case rather than treating one as all Indigenous peoples.",
+              "Ask who leads the project, what is being renewed and how that can connect people with family/community knowledge and identity.",
+              "Use a second case as a transfer check. Ask which similarities describe the broad relationship and which specific people, language or practices remain different.",
+              "Check that the explanation includes the historical disruption and contemporary community agency, not only generic respect or naming peoples."
+            ],
+            "intendedInsight": "Communities continue their cultures and lead renewal after historical disruption; a particular case has a particular people and source.",
+            "feedback": [
+              "Ask for the history, the community’s action and its identity connection separately.",
+              "Correct permanent-loss and one-culture assumptions using the attributed case."
+            ],
+            "rationale": "Authored source-fit proposal grounded in verified historical/community facts, not an experimentally validated intervention.",
+            "sourceClaims": [
+              "Residential-school policies in Canada disrupted many Indigenous family, language and cultural connections.",
+              "Nipissing First Nation describes community language classes and language/culture use in children’s programmes.",
+              "The Métis Nation of Ontario describes community-led language resources and support for new generations of speakers.",
+              "The Métis National Council explicitly connects Michif language with Métis identity and cultural continuity.",
+              "Pirurvik’s Aurniarvik programme connects Inuktut learning with Inuit cultural learning, identity and an on-the-land component."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use non-graphic introductory history and require no personal family testimony.",
+          "Primary learners learn about these programmes; do not imply that every programme is designed for their age.",
+          "Cultural understanding does not establish target-language listening, speaking, reading or writing."
+        ],
+        "reviewNotes": [
+          "2026-11-10: new low-confidence teaching proposal. Sources verified for factual scope; no learning-outcome study claimed."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After hearing an attributed, age-appropriate account of a community-led renewal project, can {{name}} explain who leads it, what is being strengthened, and how it connects people with culture and belonging after colonial disruption, including residential schooling? Can they explain a second example without treating all First Nations, Métis and Inuit peoples as one culture?",
+        "correctAnswer": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples.",
+        "whatMakesItDiscriminate": "Requires the specific historical disruption, community agency and identity relationship; recognition or generic kindness alone is a near miss.",
+        "probeDeeper": [
+          "Who is leading this action, and which people/community does the source describe?",
+          "Why might strengthening a language or cultural practice help people connect with family/community identity?",
+          "What can we explain in a second case, and what should we avoid assuming is identical?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "All Indigenous cultures disappeared, and one present-day example stands for everyone.",
+            "revealedBy": "Only names Indigenous peoples, says everyone should be respected, treats cultures as gone or people as only historical, or describes a programme without the history/identity relationship.",
+            "nextMove": "Use the contemporary attributed cases to distinguish continuing peoples and their different actions; reconnect the general historical context without inventing identical local histories.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Gives only labels or generic respect, with no relationship among history, action and identity.",
+          "partial": "Describes one initiative but needs support to connect its historical context or identity purpose.",
+          "full": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Residential-school policies in Canada disrupted many Indigenous family, language and cultural connections.",
+          "source": "National Centre for Truth and Reconciliation, Residential School History",
+          "url": "https://nctr.ca/education/residential-school-history/",
+          "verified": true
+        },
+        {
+          "claim": "Nipissing First Nation describes community language classes and language/culture use in children’s programmes.",
+          "source": "Nipissing First Nation, Anishinaabemwin",
+          "url": "https://nfn.ca/culture-heritage/anishinaabemwin/",
+          "verified": true
+        },
+        {
+          "claim": "The Métis Nation of Ontario describes community-led language resources and support for new generations of speakers.",
+          "source": "Métis Nation of Ontario, Métis Languages Initiatives",
+          "url": "https://www.metisnation.org/programs-and-services/education-training/metis-languages-initiatives/",
+          "verified": true
+        },
+        {
+          "claim": "The Métis National Council explicitly connects Michif language with Métis identity and cultural continuity.",
+          "source": "Métis National Council, Language",
+          "url": "https://www.metisnation.ca/what-we-do/culture-heritage-and-language/language/",
+          "verified": true
+        },
+        {
+          "claim": "Pirurvik’s Aurniarvik programme connects Inuktut learning with Inuit cultural learning, identity and an on-the-land component.",
+          "source": "Pirurvik Institute, Aurniarvik",
+          "url": "https://www.pirurvik.ca/aurniarvik",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified knowledge claim and untested teaching proposal",
+        "createdAt": "2026-11-10T12:34:49Z",
+        "updatedAt": "2026-11-10T12:34:49Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_wGoYDxnk6_",
+      "pedagogy": {
+        "summary": "Distinguish the three territorial references with attributed public-school cases; retain Indigenous accounts and resource limits.",
+        "bestPractices": [
+          "Use the locally verified packet and the two distinct regional cases.",
+          "Provide map legends and read factual source summaries aloud.",
+          "Ask which source supports a statement and which conclusions it cannot establish."
+        ],
+        "keyRepresentations": [
+          "Attributed school-resource packet",
+          "Separate territory, treaty and reserve labels"
+        ],
+        "commonMisconceptions": [
+          "Nearest reserve equals the whole traditional territory.",
+          "All Indigenous peoples or treaties have the same territorial history.",
+          "A municipal or treaty map establishes exclusive school-parcel title."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the school-territory resource protocol.",
+        "activities": [
+          {
+            "title": "Compare two verified school-region packets",
+            "learnerActions": [
+              "Introduce traditional territory, treaty reference and reserve as different kinds of information, using the attributed packet and supplied map legend.",
+              "Ask the learner to identify the supported traditional territory or territories and applicable treaty for their own school, explaining which source supports each statement.",
+              "Ask whether the nearest reserve or the municipal boundary alone would justify the answer and why not.",
+              "Use the second worked public-school packet for transfer. Ask what differs, what each source establishes and what cannot be concluded."
+            ],
+            "intendedInsight": "Territory, treaty and reserve references have distinct meanings; place-specific claims require attributed evidence.",
+            "feedback": [
+              "Ask what each source establishes and distinguish the different map layers.",
+              "Keep multiple supported peoples visible and identify uncertainty rather than inventing an exclusive answer."
+            ],
+            "rationale": "Source-fit authored proposal; not a learning-outcome study.",
+            "sourceClaims": [
+              "MCFN identifies Etobicoke within Toronto Purchase Treaty13 lands; its regional map distinguishes territorial and reserve references.",
+              "GCT3 presents its own territorial map and the continuing Treaty3 relationship.",
+              "The City attributes Kenora’s traditional territory to the Anishinaabe of Treaty3 and Métis people."
+            ]
+          }
+        ],
+        "constraints": [
+          "Verify the public school location and the relevant region, not simply a school name shared with another place.",
+          "Consult relevant Indigenous Nation/community resources, applicable treaty accounts and appropriate school/board references. Preserve multiple supported peoples/accounts and identify disagreement or uncertainty instead of deciding exclusive ownership.",
+          "Identify whether the packet establishes a treaty, the full name/number and regional/date context. Never invent a numbered treaty or equate every treaty with a sale or extinguishment.",
+          "Distinguish any marked current reserve from traditional territory and treaty references. Maps are regional educational resources, not legal parcel determinations.",
+          "If suitable local information is missing or conflicting, the local application remains unverified until the adult resolves the resource question; another school’s worked example does not certify this school."
+        ],
+        "reviewNotes": [
+          "2026-11-10: factual primary resources reviewed; teaching sequence is new and untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "With an adult-prepared, attributed publicly available, locally verified resource packet for a school, can {{name}} name the traditional territory or territories and the applicable treaty reference that the sources support? Can they explain why the traditional territory, treaty reference and present reserve are different, then use a second place’s packet without carrying over the first place’s names or treating the nearest reserve as the answer?",
+        "correctAnswer": "Identifies the supported traditional territory or territories and applicable treaty reference for the actual school from the verified packet, keeps accounts attributed, distinguishes a reserve from the broader references, and transfers the distinction to another region without unsupported exclusivity.",
+        "whatMakesItDiscriminate": "Requires supported local territorial/treaty knowledge and distinctions; generic recognition, nearest-reserve selection or map copying do not suffice.",
+        "probeDeeper": [
+          "Which source supports this people or treaty reference?",
+          "Why is a reserve not the same as the whole traditional territory?",
+          "What changes in the other regional case, and what does the packet leave uncertain?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Selects the nearest reserve as the entire territory.",
+            "revealedBy": "Only names generic Indigenous peoples, copies the first school’s treaty into the second, selects the nearest reserve, collapses every map boundary into territory, or claims the resources establish exclusive parcel title.",
+            "nextMove": "Compare the separately labelled territorial, treaty and reserve references in the supplied resources.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Gives only generic peoples or unsupported local guesses.",
+          "partial": "Finds a relevant name but collapses territorial references or needs help with source attribution.",
+          "full": "Identifies the supported traditional territory or territories and applicable treaty reference for the actual school from the verified packet, keeps accounts attributed, distinguishes a reserve from the broader references, and transfers the distinction to another region without unsupported exclusivity."
+        }
+      },
+      "sources": [
+        {
+          "claim": "MCFN identifies Etobicoke within Toronto Purchase Treaty13 lands; its regional map distinguishes territorial and reserve references.",
+          "source": "Mississaugas of the Credit First Nation",
+          "url": "https://mncfn.ca/the-toronto-purchase-treaty-no-13-1805/",
+          "verified": true
+        },
+        {
+          "claim": "GCT3 presents its own territorial map and the continuing Treaty3 relationship.",
+          "source": "Grand Council Treaty3",
+          "url": "https://gct3.ca/treaty-3-interactive-territory-map/",
+          "verified": true
+        },
+        {
+          "claim": "The City attributes Kenora’s traditional territory to the Anishinaabe of Treaty3 and Métis people.",
+          "source": "City of Kenora",
+          "url": "https://www.kenora.ca/your-government/indigenous-relations/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: factual source review and untested teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
