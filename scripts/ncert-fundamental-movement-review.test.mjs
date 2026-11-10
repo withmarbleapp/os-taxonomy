@@ -9,9 +9,42 @@ const catalogue = read('data/curriculum-standards.json');
 const topics = read('data/topics.json');
 const research = read('data/teaching-research.json');
 const ledger = read('reports/ncert-alignment-readiness-2026-11-10.json');
+// These bind the reviewed pinned source positions to their actual task families,
+// rather than merely checking that an arbitrary protocol happens to exist.
+const expectedBindings = new Map();
+const bind = (source, suffix, protocol) => expectedBindings.set(`${source}:${suffix}`, protocol);
+for (const [code, protocol] of Object.entries({
+  'CG-3':'integrated-body-task', 'C-3.1':'movement-and-object-control',
+  'C-3.2':'balance-and-flexibility', 'C-3.3':'precision-in-functional-making',
+  'C-3.4':'sustained-functional-effort',
+})) bind('ncert-ncfse-2023-ed2024', `IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-PHYSICAL-${code.startsWith('CG')?'GOAL':'COMP'}-${code}`, protocol);
+for (let n=1;n<=6;n++) bind('ncert-fs-2025', `IN-NCERT-FS-2025-PM-G1-G2-C13-LO${String(n).padStart(2,'0')}`, 'movement-and-object-control');
+for (const [suffix, protocol] of Object.entries({
+  'G1-C14-LO01':'sustained-functional-effort', 'G1-C14-LO02':'sustained-functional-effort',
+  'G1-C14-LO03':'balance-and-flexibility', 'G2-C14-LO01':'rope-coordination',
+  'G2-C14-LO02':'balance-and-flexibility', 'G2-C14-LO03':'timed-single-leg-source-case',
+})) bind('ncert-fs-2025', `IN-NCERT-FS-2025-PM-${suffix}`, protocol);
+for (const [suffix, protocol] of Object.entries({
+  'LS1-GOAL-CG-3':'combined-game-application', 'LS1-COMP-C-3.1':'combined-game-application',
+  'LS1-COMP-C-3.2':'rhythm-reuse', 'LS1-COMP-C-3.3':'partner-coordination',
+  'LS1-COMP-C-3.4':'preparation-for-activity', 'LS2-GOAL-CG-1':'combined-game-application',
+  'LS2-COMP-C-1.1':'combined-game-application', 'LS2-COMP-C-1.2':'partner-coordination',
+  'LS2-COMP-C-1.3':'preparation-for-activity',
+})) bind('ncert-ncfse-2023-ed2024', `IN-NCERT-NCFSE-2023-ED2024-PREP-PE-${suffix}`, protocol);
+const expectedConditions = {
+  'IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-PHYSICAL-COMP-C-3.4':{performance:['carrying','walking','running'],qualities:['strength','endurance']},
+  'IN-NCERT-FS-2025-PM-G1-G2-C13-LO06':{hopping:'sustained-period'},
+  'IN-NCERT-FS-2025-PM-G1-C14-LO01':{participation:'whole-hopping-game'},
+  'IN-NCERT-FS-2025-PM-G1-C14-LO02':{carriedObject:'suitably-demanding-safe-load',handling:'controlled-balance-and-technique'},
+  'IN-NCERT-FS-2025-PM-G1-C14-LO03':{balanceDuring:'faster-movement'},
+  'IN-NCERT-FS-2025-PM-G2-C14-LO01':{equipment:'rope',actions:['skipping','hopping']},
+  'IN-NCERT-FS-2025-PM-G2-C14-LO02':{qualities:['agility','balance']},
+  'IN-NCERT-FS-2025-PM-G2-C14-LO03':{position:'single-leg-other-leg-folded',durationSeconds:60},
+};
 function check(r, p, a) {
   assert.equal(r.records.length, 26);
   assert.equal(new Set(r.records.map(x => x.key)).size, 26);
+  assert.deepEqual(new Set(r.records.map(x => x.key)),new Set(expectedBindings.keys()));
   const available = new Set(catalogue.curricula.flatMap(c => c.topics.map(s => `${c.slug}:${s.code}`)));
   const protocolIds = new Set(p.protocols.map(x => x.id));
   const topicMap = new Map(topics.topics.map(x => [x.id,x]));
@@ -20,7 +53,9 @@ function check(r, p, a) {
   const recordKinds = new Map();
   for (const row of r.records) {
     assert.ok(available.has(row.key), `unknown source position: ${row.key}`);
-    assert.ok(row.assessmentProtocols.length);
+    assert.deepEqual(row.assessmentProtocols,[expectedBindings.get(row.key)],`source protocol mismatch: ${row.key}`);
+    const condition = expectedConditions[row.key.split(':')[1]];
+    if (condition) assert.deepEqual(row.sourcePerformanceConditions,condition,`source conditions lost: ${row.key}`);
     for (const id of row.assessmentProtocols) assert.ok(protocolIds.has(id), `unknown protocol: ${id}`);
     const age = row.source === 'ncert-fs-2025' ? [6,8] : row.key.includes('-FOUNDATION-') ? [3,8] : [8,11];
     assert.deepEqual(row.ageBand, age);
@@ -36,6 +71,8 @@ function check(r, p, a) {
       expected.add(JSON.stringify([c.topicId,...age,row.key]));
     }
   }
+  assert.deepEqual(p.protocols.find(x => x.id === 'timed-single-leg-source-case').sourcePerformanceConditions,
+    expectedConditions['IN-NCERT-FS-2025-PM-G2-C14-LO03'],'timed protocol conditions lost');
   assert.equal(recordKinds.get('ncert-fs-2025:FS'),12);
   assert.equal(recordKinds.get('ncert-ncfse-2023-ed2024:FS'),5);
   assert.equal(recordKinds.get('ncert-ncfse-2023-ed2024:Prep'),9);
@@ -66,6 +103,15 @@ test('NCERT movement review binds source positions, tasks, guidance and scoped c
 test('movement review rejects cross-artifact drift while allowing unrelated future additions', () => {
   const missing = structuredClone(protocols); missing.protocols.shift();
   assert.throws(() => check(report,missing,alignments),/unknown protocol/);
+  const wrong = structuredClone(report);
+  wrong.records.find(x => x.key.endsWith('PM-G2-C14-LO03')).assessmentProtocols=['balance-and-flexibility'];
+  assert.throws(() => check(wrong,protocols,alignments),/source protocol mismatch/);
+  const lost = structuredClone(report);
+  delete lost.records.find(x => x.key.endsWith('PM-G2-C14-LO03')).sourcePerformanceConditions.durationSeconds;
+  assert.throws(() => check(lost,protocols,alignments),/source conditions lost/);
+  const shortened = structuredClone(protocols);
+  shortened.protocols.find(x => x.id==='timed-single-leg-source-case').sourcePerformanceConditions.durationSeconds=5;
+  assert.throws(() => check(report,shortened,alignments),/timed protocol conditions lost/);
   const changed = structuredClone(alignments);
   const context = changed.alignments.find(x => x.standards.includes(report.records[0].key));
   context.standards = context.standards.filter(x => x !== report.records[0].key);

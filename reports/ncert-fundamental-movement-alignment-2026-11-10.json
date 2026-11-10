@@ -52,7 +52,10 @@
       "sourceSpecificConditions": [
         "Retain participation through a complete suitable hopping game, not only a momentary demonstration."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "participation": "whole-hopping-game"
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G1-C14-LO02",
@@ -88,7 +91,11 @@
       "sourceSpecificConditions": [
         "Retain an actual suitably demanding carried-object task with safe balance and technique, not maximum lifting or an adult-load norm."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "carriedObject": "suitably-demanding-safe-load",
+        "handling": "controlled-balance-and-technique"
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G1-C14-LO03",
@@ -129,7 +136,10 @@
       "sourceSpecificConditions": [
         "Retain controlled balance during faster movement; a cycling illustration is not a new universal cycling-technique requirement."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "balanceDuring": "faster-movement"
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G1-G2-C13-LO01",
@@ -356,7 +366,10 @@
       "sourceSpecificConditions": [
         "Retain a sustained hopping task, not a single isolated hop; record the actual chosen task/period without inventing an official numeric cutoff."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "hopping": "sustained-period"
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C14-LO01",
@@ -395,7 +408,14 @@
         "rope-coordination"
       ],
       "sourceSpecificConditions": [],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "equipment": "rope",
+        "actions": [
+          "skipping",
+          "hopping"
+        ]
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C14-LO02",
@@ -434,7 +454,13 @@
         "balance-and-flexibility"
       ],
       "sourceSpecificConditions": [],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "qualities": [
+          "agility",
+          "balance"
+        ]
+      }
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C14-LO03",
@@ -470,7 +496,11 @@
       "sourceSpecificConditions": [
         "Retain the printed single-leg position with the other leg folded and the 60-second condition in this selected source task; neither becomes a global topic norm or early-age deadline."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "sourcePerformanceConditions": {
+        "position": "single-leg-other-leg-folded",
+        "durationSeconds": 60
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-PHYSICAL-COMP-C-3.1",
@@ -697,7 +727,18 @@
         8
       ],
       "requiredGradeBand": null,
-      "stageViewInterpretation": "The printed formal scope is the full Foundational stage including Balvatika and Grades 1–2. The selected primary view [1,2] is not a required per-grade band or a replacement for the official 3–8 stage window."
+      "stageViewInterpretation": "The printed formal scope is the full Foundational stage including Balvatika and Grades 1–2. The selected primary view [1,2] is not a required per-grade band or a replacement for the official 3–8 stage window.",
+      "sourcePerformanceConditions": {
+        "performance": [
+          "carrying",
+          "walking",
+          "running"
+        ],
+        "qualities": [
+          "strength",
+          "endurance"
+        ]
+      }
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-PHYSICAL-GOAL-CG-3",
