@@ -137,6 +137,11 @@
       "scope": "Five Grade5Sciencehealth residual task portfolios;13parentpairs/no newclaims",
       "head": "096dbb6adfe99d181e803b6799a7987c4859ad2c",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/096dbb6adfe99d181e803b6799a7987c4859ad2c"
+    },
+    {
+      "scope": "Bounded phase-change energy correction: one evidence field, twelve guide strings, one hard-to-soft prerequisite; no new claims or scopes",
+      "head": "75cf3baa78c7abf556d69d5147fd7a415c20c480",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/75cf3baa78c7abf556d69d5147fd7a415c20c480"
     }
   ],
   "reviewedSourceScopes": {
@@ -309,7 +314,7 @@
       "baseRows": 1858,
       "mergedRows": 1906,
       "newRows": 48,
-      "changedOldRows": 12,
+      "changedOldRows": 13,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
@@ -317,7 +322,7 @@
       "baseRows": 1046,
       "mergedRows": 1091,
       "newRows": 45,
-      "changedOldRows": 9,
+      "changedOldRows": 11,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": false,
       "explicitCanonicalOrder": "topicId.localeCompare(other.topicId, 'en')"
@@ -326,7 +331,7 @@
       "baseRows": 3994,
       "mergedRows": 4001,
       "newRows": 7,
-      "changedOldRows": 23,
+      "changedOldRows": 24,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
@@ -412,5 +417,15 @@
     "removedContexts": 24,
     "acceptedMainIdentityRetirements": 0,
     "learnerWrites": false
+  },
+  "phaseEnergyCorrection": {
+    "report": "phase-energy-and-prerequisite-correction-2026-11-11.json",
+    "changedClaimFields": 1,
+    "changedGuideStrings": 12,
+    "hardToSoftEdges": 1,
+    "newClaims": 0,
+    "ageOrContextChanges": 0,
+    "privateResearchRequalificationRequired": true,
+    "automaticLearnerTransfer": false
   }
 }
