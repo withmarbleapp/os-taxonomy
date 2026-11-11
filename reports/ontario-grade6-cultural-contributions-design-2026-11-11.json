@@ -32,6 +32,26 @@
       "url": "https://www.pirurvik.ca/aurniarvik",
       "locator": "Complete programme main body/course descriptions, read 11 November 2026",
       "scope": "Nunavut Inuit-led programme for adult participants; learners study its contributions rather than enrol or certify Inuktut proficiency."
+    },
+    "muriel": {
+      "url": "https://anishinabek.ca/anishinabek-nation-mourns-loss-of-strong-anishinaabekwe-leader-muriel-sawyer/",
+      "locator": "Actual Nation historical main body dated 8 February 2021, posting 25 March 2021; unrelated comments excluded",
+      "scope": "Muriel Sawyer’s language/education contribution and the Nation’s attributed identity/legacy assessment, not a measured universal student outcome."
+    },
+    "norman": {
+      "url": "https://gdins.org/metis-culture/publishing/michif-resources/",
+      "locator": "Complete actual main body, dictionary/recording credits",
+      "scope": "Norman Fleury’s and Vince Ahenakew’s specific translation/narration roles; no claim all Michif varieties are interchangeable."
+    },
+    "norman-profile": {
+      "url": "https://news.usask.ca/articles/people/2016/living-language.php",
+      "locator": "Complete 2016 employer profile with Fleury’s attributed account",
+      "scope": "Historical role/community background and teaching contribution, not proof a then-proposed certificate has since been created."
+    },
+    "leena": {
+      "url": "https://pauktuutit.ca/news-post/inuit-women-in-business-spotlight-leena-evic/",
+      "locator": "Complete 19 July 2024 Inuit-organization profile",
+      "scope": "Leena Evic’s described language/cultural content and education role, not an empirical wellness guarantee or a requirement children adopt the profile’s business advice."
     }
   },
   "preparedFacts": {
@@ -46,6 +66,35 @@
     "inuit": [
       "Pirurvik in Nunavut describes an Inuit-led intensive Inuktut programme for Inuit who grew up speaking English. Language work is interwoven with Inuit values, identity and an on-the-land course.",
       "This is a contribution to continuing Inuit cultural life, not evidence that all Inuit lost their language or that every participant had the same historical experience."
+    ],
+    "named-individuals": [
+      {
+        "person": "Muriel Sawyer",
+        "people/community": "Nipissing First Nation / Anishinaabe",
+        "sourceRefs": [
+          "muriel",
+          "nipissing"
+        ],
+        "facts": "The Nation’s historical account describes Sawyer as a language keeper and education leader who taught Ojibwa language and supported the Anishinabek Education System. It attributes to her an aim of graduates knowing their language, culture and ancestry; the current Nation page also credits her song recordings. Her contribution is historical, not a claim she teaches today."
+      },
+      {
+        "person": "Norman Fleury",
+        "people/community": "Métis, St. Lazare background; GDI/Saskatchewan resource contribution",
+        "sourceRefs": [
+          "norman",
+          "norman-profile"
+        ],
+        "facts": "GDI credits Fleury with translation and narration for its Southern Michif dictionary and phrase resources. His employer’s 2016 profile describes teaching and community work connecting language and culture. Keep this role distinct from the MNO Ontario initiative, rather than imply they are one organization or language variety."
+      },
+      {
+        "person": "Leena Evic",
+        "people/community": "Inuit; Iqaluit-based Pirurvik",
+        "sourceRefs": [
+          "leena",
+          "inuit"
+        ],
+        "facts": "Pauktuutit’s 2024 profile describes Evic’s teaching background and responsibility for language/cultural content at Pirurvik, drawing on Elders’ knowledge. This makes an actual individual’s contribution explicit alongside the institutional programme; it does not replace community agency or prove all participants had one outcome."
+      }
     ]
   },
   "protocols": {
@@ -61,27 +110,35 @@
         "prior-whole-protocol",
         "nipissing",
         "metis",
-        "inuit"
+        "inuit",
+        "muriel",
+        "norman",
+        "norman-profile",
+        "leena"
       ],
       "learnerActions": [
         "Adult setup: provide the three concise attributed fact cards and the prior protocol’s introductory colonial/residential-school context. Supply original source labels, locations and the distinction between a programme’s aims and measured outcomes.",
         "Retain the whole cultural-renewal operation: explain the historical disruption, identify a community-led initiative and explain the identity/belonging relationship without treating cultures as gone or assigning identical personal histories.",
         "Analyse all three cases: who contributes knowledge/work, what language/cultural connection is being sustained or shared, and why this is a particular contribution to Canadian life. Compare the mechanisms—fluent-speaker intergenerational learning, Métis community/youth resources and sharing, and Inuit language/cultural immersion—rather than rank peoples or count achievements.",
+        "Analyse the actual named individual contribution in each source account—Muriel Sawyer, Norman Fleury and Leena Evic—alongside the community/institutional initiatives. Explain the particular knowledge, resource or education work and its supported cultural/identity connection; keep the people, organizations, locations and dates distinct.",
         "Connect each explanation to a concrete source fact. Distinguish source-described actions and purposes from an unsupported claim that every person’s wellbeing improved or all discrimination ended.",
         "After withdrawing the answer chart, explain a second case as transfer and correct this original claim: “These are one programme for one Indigenous culture, and learning about it proves we can speak all the languages.”"
       ],
       "successConditions": [
         "The response actually analyses a First Nation, Métis and Inuit contribution, not one case labelled as all peoples.",
         "Specific source facts support the described contribution and identity/continuity relationship.",
-        "The complete historical-disruption/renewal/transfer operation remains accounted for; no language proficiency or universal outcome is inferred."
+        "The complete historical-disruption/renewal/transfer operation remains accounted for; no language proficiency or universal outcome is inferred.",
+        "The response includes actual individual as well as community contributions from the named source accounts, not only anonymous institutional labels."
       ],
       "nearMisses": [
         "Names three peoples without explaining any particular contribution.",
         "Equates MNO with every Métis community or a Nunavut adult programme with a primary-school language test.",
-        "Describes only historical victimhood, or claims cultural continuity proves everyone had identical experiences."
+        "Describes only historical victimhood, or claims cultural continuity proves everyone had identical experiences.",
+        "Names an individual but substitutes an invented role, treats Fleury’s GDI resources as the MNO programme, or claims every beneficiary had one documented outcome."
       ],
       "remainingConditions": []
     }
   },
-  "coverageBoundary": "A1.2 is source-fit authoring coverage, not learner attainment. A3.5 specific historical developments and whole A1 inclusiveness/identity analysis remain separately qualified; this association does not auto-promote them. Optional Native Languages programme exclusion does not exclude these mandatory Social Studies contributions."
+  "coverageBoundary": "A1.2 is source-fit authoring coverage, not learner attainment. A3.5 specific historical developments and whole A1 inclusiveness/identity analysis remain separately qualified; this association does not auto-promote them. Optional Native Languages programme exclusion does not exclude these mandatory Social Studies contributions.",
+  "resourceRefinement": "The initial contribution task already distinguished all three peoples and community actions. This follow-up makes the mandatory individual-contribution channel explicit with actual named source accounts; no new canonical claim or association is added."
 }
