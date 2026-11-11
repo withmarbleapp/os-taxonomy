@@ -5,19 +5,19 @@
   "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
   "sourceReview": "ontario-grade6-social-source-review-2026-11-11.json",
   "scope": "Ontario Social Studies Grade 6 primary ages 11–12: 46 actual expectations; optional Native Languages exclusion unchanged.",
-  "status": "One Full source-fit reuse, one Partial coordinate component and forty-four individually unverified expectations. No whole-grade completion or learner attainment inferred.",
+  "status": "Two Full source-fit reuse designs, one Partial coordinate component and forty-three individually unverified expectations. No whole-grade completion or learner attainment inferred.",
   "expectationCount": 46,
   "dispositionCounts": {
-    "Unverified": 44,
-    "Full": 1,
+    "Unverified": 43,
+    "Full": 2,
     "Partial": 1
   },
   "associationInventory": {
-    "pairs": 2,
-    "topics": 2,
-    "codes": 2,
+    "pairs": 3,
+    "topics": 3,
+    "codes": 3,
     "newClaims": 1,
-    "reusedClaims": 1
+    "reusedClaims": 2
   },
   "expectations": [
     {
@@ -382,11 +382,14 @@
     },
     {
       "code": "B3.9",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_0Rx1ISxXFE"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-trade-effects-design-2026-11-11.json",
+      "protocolReference": "/protocols/canadian-economic-effects",
+      "coverageBasis": "Actual dated Canadian trade effects with complete unchanged goods/import/export/currency operation and explicit data limits."
     },
     {
       "code": "B3.10",
