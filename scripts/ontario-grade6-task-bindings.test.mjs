@@ -24,6 +24,14 @@ function checkBindings(rows, associations, readReport = name => load(`reports/${
     const protocol = pointer(report, row.protocolReference);
     assert.ok(protocol.codes.includes(row.code), 'Protocol does not cover this code');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
+    if (['A3.1', 'A3.10'].includes(row.code)) {
+      const local = protocol.requiredLocalBinding;
+      assert.equal(local?.kind, 'actual-own-community-source-packet', 'Missing actual local binding requirement');
+      if (!local.targetCommunity || !local.sourcePacketRefs?.length) assert.equal(row.disposition, 'Partial', 'Unbound local resource cannot certify Full');
+      else for (const ref of local.sourcePacketRefs) assert.ok(report.resources?.[ref], 'Missing bound local source packet');
+    }
+
+    if (/^[AB]\d+$/.test(row.code)) assert.deepEqual([...(protocol.requiredSourceCodes ?? [])].sort(), codes.filter(code => code.startsWith(row.code + '.')).sort(), 'Missing integrated specific-duty closure');
     if (row.disposition === 'Full') for (const code of protocol.requiredSourceCodes ?? []) assert.equal(rows.find(candidate => candidate.code === code)?.disposition, 'Full', 'Incomplete integrated source duty');
     for (const caseId of protocol.caseRefs ?? []) assert.ok(report.preparedCases?.[caseId], 'Missing prepared case');
     for (const asset of protocol.assetRefs ?? []) {
@@ -133,4 +141,21 @@ test('Grade6 historical comparisons bind actual selected community packets', () 
   const missing = structuredClone(load(`reports/${original}`));
   delete missing.preparedCases['metis-longer-term'];
   assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === original ? missing : load(`reports/${name}`)), /Missing protocol target/);
+});
+
+
+test('Grade6 overall binding cannot omit a mandatory specific-duty condition', () => {
+  const dossier = 'ontario-grade6-community-identity-completion-design-2026-11-11.json';
+  const missing = structuredClone(load(`reports/${dossier}`));
+  missing.protocols['integrated-community-experiences'].requiredSourceCodes.pop();
+  assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === dossier ? missing : load(`reports/${name}`)), /Missing integrated specific-duty closure/);
+});
+
+
+test('Grade6 local preparation protocol cannot masquerade as a bound own-community packet', () => {
+  const damaged = structuredClone(ledger.expectations);
+  const row = damaged.find(candidate => candidate.code === 'A3.10');
+  row.disposition = 'Full';
+  row.remainingConditions = [];
+  assert.throws(() => checkBindings(damaged, contexts), /Unbound local resource cannot certify Full|Incomplete integrated source duty/);
 });

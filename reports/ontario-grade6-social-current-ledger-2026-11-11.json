@@ -5,27 +5,32 @@
   "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
   "sourceReview": "ontario-grade6-social-source-review-2026-11-11.json",
   "scope": "Ontario Social Studies Grade 6 primary ages 11–12: 46 actual expectations; optional Native Languages exclusion unchanged.",
-  "status": "Thirty-eight Full source-fit designs and eight individually unverified A expectations. No whole-grade completion, nationwide attitude survey or learner attainment inferred.",
+  "status": "All forty-six Grade 6 duties reviewed:43Full authoring designs and3explicit local-resource Partials (A3.1,A3.10,A3). Prepared local protocols are concrete but are not filled target-community resource packets or learner attainment.",
   "expectationCount": 46,
   "dispositionCounts": {
-    "Unverified": 8,
-    "Full": 38
+    "Full": 43,
+    "Partial": 3
   },
   "associationInventory": {
-    "pairs": 69,
-    "topics": 16,
-    "codes": 38,
+    "pairs": 92,
+    "topics": 18,
+    "codes": 46,
     "newClaims": 2,
-    "reusedClaims": 14
+    "reusedClaims": 16
   },
   "expectations": [
     {
       "code": "A1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_gSBJxNBQh3",
+        "mt_pmd6Cp2r5p",
+        "mt_klz8bAeI8m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-contributions",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "A1.1",
@@ -53,19 +58,28 @@
     },
     {
       "code": "A1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_klz8bAeI8m",
+        "mt_pmd6Cp2r5p"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/settler-contributions",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "A1.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_exDuOAslx1",
+        "mt_gSBJxNBQh3",
+        "mt_pmd6Cp2r5p"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/inclusiveness",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "A2",
@@ -151,30 +165,48 @@
     },
     {
       "code": "A3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_klz8bAeI8m",
+        "mt_gSBJxNBQh3",
+        "mt_pmd6Cp2r5p",
+        "mt_n3ojDXoaqC",
+        "mt_exDuOAslx1",
+        "mt_wGoYDxnk6_",
+        "mt_9REmUc8r4D"
+      ],
       "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+        "A3.1 and A3.10 retain unbound own-community resource requirements; the overall closure cannot be Full until those actual local bindings are satisfied."
+      ],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-community-experiences",
+      "coverageBasis": "Existing claims and concrete source/task designs contribute; actual own-community resource binding is not yet supplied, so general delivery and the affected overall closure remain Partial.",
+      "conditionType": "unbound-local-resource"
     },
     {
       "code": "A3.1",
-      "disposition": "Full",
+      "disposition": "Partial",
       "contributingTopicIds": [
         "mt_wGoYDxnk6_"
       ],
-      "remainingConditions": [],
+      "remainingConditions": [
+        "Actual own-community source packet is unbound for general delivery. Existing worked public-school cases and the concrete preparation protocol remain useful but do not identify every pupil’s own community."
+      ],
       "dossier": "ontario-grade6-territory-source-fit-2026-11-11.json",
       "protocolReference": "/protocols/own-community",
-      "coverageBasis": "The complete unchanged claim and actual local-packet preparation protocol account for the authoring duty; no generic worked case certifies every learner’s community."
+      "coverageBasis": "Existing claims and concrete source/task designs contribute; actual own-community resource binding is not yet supplied, so general delivery and the affected overall closure remain Partial.",
+      "conditionType": "unbound-local-resource"
     },
     {
       "code": "A3.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_n3ojDXoaqC"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/migration-reasons",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "A3.3",
@@ -191,11 +223,16 @@
     },
     {
       "code": "A3.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_klz8bAeI8m",
+        "mt_gSBJxNBQh3",
+        "mt_pmd6Cp2r5p"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/community-types",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "A3.5",
@@ -258,19 +295,30 @@
     },
     {
       "code": "A3.10",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_9REmUc8r4D"
+      ],
       "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+        "Actual target community and its dated before/after source packet have not been selected/bound for general Ontario delivery. The concrete Love Park case and preparation schema do not certify another learner’s own community."
+      ],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/own-community-change",
+      "coverageBasis": "Existing claims and concrete source/task designs contribute; actual own-community resource binding is not yet supplied, so general delivery and the affected overall closure remain Partial.",
+      "conditionType": "unbound-local-resource"
     },
     {
       "code": "A3.11",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_exDuOAslx1",
+        "mt_gSBJxNBQh3",
+        "mt_wGoYDxnk6_"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-community-identity-completion-design-2026-11-11.json",
+      "protocolReference": "/protocols/canadian-identities",
+      "coverageBasis": "Actual attributed cases and explicit source-specific performance/own-community protocol account for the mandatory duty; component contributions preserve whole claim checks and do not certify learner mastery."
     },
     {
       "code": "B1",
@@ -533,5 +581,5 @@
       "coverageBasis": "Actual international ballast/spread/harm/cooperation pathway with complete retained invasive and country-interconnection tasks; authoring/consumer readiness distinct."
     }
   ],
-  "next": "Continue bounded Grade 6 source/task reuse; independently challenge genuinely absent Canadian factual repertoires, not grade/example clones."
+  "next": "Root combined source/task/preservation review and integration; retain explicit local Partials, source/modality/performance requirements and separate whole-Ontario reconciliation."
 }
