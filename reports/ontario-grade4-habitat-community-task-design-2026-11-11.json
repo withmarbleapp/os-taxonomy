@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "632d3fd9ccb6c1eecbf745015a1a4ad2d32b5684",
+  "status": "B1.1 and B2.7 qualified source-fit authoring tasks. B2.2 resource/task design prepared, retaining local-applicability review rather than a universal pupil-local claim. No canonical data changed.",
+  "sourceCodes": [
+    "ON-SCI-2022-G4-B1.1",
+    "ON-SCI-2022-G4-B2.2",
+    "ON-SCI-2022-G4-B2.7"
+  ],
+  "resources": {
+    "toronto-savannah": {
+      "url": "https://www.toronto.ca/services-payments/water-environment/trees/forest-management/urban-forest-management/prescribed-burn/",
+      "publisher": "City of Toronto",
+      "sourceDate": "2026-04-24",
+      "readScope": "Complete actual main text, including preparation, habitat, wildlife safety and monitoring, read. No map/image or linked technical report inspection claimed.",
+      "role": "Verified Toronto habitat/stewardship example, not every Ontario locality or all Indigenous knowledge."
+    }
+  },
+  "preparedCases": {
+    "high-park": {
+      "resourceRefs": [
+        "toronto-savannah"
+      ],
+      "sourceSummary": "Toronto reports a managed April 2026 burn with the Indigenous Land Stewardship Circle. Burning and other management aim to improve native savannah conditions while reducing competing vegetation. The account describes light, space and nutrients for regeneration, acorns as wildlife food and herbivory affecting seedlings. It also identifies smoke, access restrictions and wildlife precautions. Small burn patches leave refuges; monitoring informs future work. These are site-management statements, not a guarantee of zero harm, a numerical population limit or proof of every stated outcome.",
+      "attributionLimits": "Current City account, including its account of partnership. Do not present a generic statement as the voice of every Indigenous community or treat every fire as beneficial. Pupils never make or attend a fire."
+    }
+  },
+  "protocols": {
+    "human-effects": {
+      "codes": [
+        "ON-SCI-2022-G4-B1.1"
+      ],
+      "contributorIds": [
+        "mt_deexfCHU9m",
+        "mt_7e-lG7YOWa"
+      ],
+      "caseRefs": [
+        "high-park"
+      ],
+      "actions": [
+        "Identify a supported positive habitat consequence and a supported negative/temporary consequence or risk of the selected human management. Explain the mechanism rather than label every human action harmful.",
+        "Compare original hypothetical perspectives of a restoration worker, a visitor affected by access and a nearby smoke-sensitive resident using the actual supplied information. These roles are teaching constructions, not authentic testimony or a survey.",
+        "Assess mitigation such as timing, refuges, notification and monitoring against the relevant concern, identify a remaining limitation and state what evidence would be needed to judge success.",
+        "For changed-case transfer, consider an unplanned fire with no trained crew/refuges or monitoring; explain why the selected controlled case cannot justify it. Retain source-specific limits, not an invitation to investigate with fire."
+      ],
+      "remainingConditions": []
+    },
+    "community-needs": {
+      "codes": [
+        "ON-SCI-2022-G4-B2.2"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS"
+      ],
+      "caseRefs": [
+        "high-park"
+      ],
+      "actions": [
+        "Describe the studied community as interacting plant and animal species sharing the Toronto savannah habitat; connect oak/ground vegetation, acorn-feeding wildlife and seedling herbivory, rather than list unrelated species.",
+        "Connect light/space/nutrients and food/shelter to needs of the selected plants and animals. Explain a supported consequence of changing one condition, distinguishing a City observation from a pupil prediction.",
+        "Use a labelled original relationship drawing to explain a living-to-living and a living-to-nonliving connection. Do not infer that soil is an organism or that every interaction is mutually helpful.",
+        "Transfer to a supplied small wetland case with water, vegetation and grazing wildlife. Identify the same needs/interactions operation without claiming the Toronto case itself contains those wetland species."
+      ],
+      "remainingConditions": [
+        "The selected authentic High Park case is bound to Toronto. Preserve location/applicability explicitly; it must not be falsely presented as every pupil’s own local habitat."
+      ]
+    },
+    "finite-support": {
+      "codes": [
+        "ON-SCI-2022-G4-B2.7"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS"
+      ],
+      "caseRefs": [
+        "high-park"
+      ],
+      "actions": [
+        "Explain why more plants can compete for finite light, growing space, water and nutrients, and why additional animals need food and suitable space supplied by the habitat. Tie both plant and animal limits to requirements, not only to a single deprived plant.",
+        "Use an explicitly original hypothetical patch with unchanged food and shelter supply: ask whether doubling the animals guarantees that all their needs remain met, and which observations would be needed. No invented animal count is presented as a High Park measurement.",
+        "Explain that limits can vary with season, weather and other organisms: there is no fixed universal maximum inferred from this account. Too many individuals relative to available requirements can prevent all needs being met; no live deprivation test is permitted.",
+        "Transfer the same reasoning to a supplied wetland and dry grassland with different resources. Reject the near miss that a habitat can support unlimited organisms merely because it already contains some living things."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_cM8YS6NXqi",
+      "mt_lutxvMlkwS",
+      "mt_NDZYiLvApW",
+      "mt_w4OYcWJs6H",
+      "mt_LRzjbo1Fn6",
+      "mt_deexfCHU9m",
+      "mt_7e-lG7YOWa"
+    ],
+    "completeSavedGuidesRead": [
+      "mt_cM8YS6NXqi",
+      "mt_lutxvMlkwS",
+      "mt_deexfCHU9m",
+      "mt_7e-lG7YOWa"
+    ],
+    "reuseReason": "Existing needs/habitat interdependence and explicit crowded-plant limited-requirement reasoning support components. The actual integrated community/population explanation is tested in the prepared task, not inferred from individual whole-topic scores. No new carrying-capacity node, formal population equation or live deprivation task is needed for this qualitative source duty.",
+    "limits": "Whole existing cards and hard readiness stay unchanged. Community-protection whole claim retains its varied real-case inventory; one local example does not certify it. Older ocean/keystone inventories are not lowered or substituted for the selected local community.",
+    "hardClosureReadScope": "All 15 direct and transitive hard-closure cards and 14 hard edges read. Four direct saved guides read in full. Broader resource/energy/circuit and vocabulary hard readiness remains separate; no edge, claim, guide or age change is proposed."
+  }
+}
