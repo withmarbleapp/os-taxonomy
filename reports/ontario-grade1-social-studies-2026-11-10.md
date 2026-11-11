@@ -2,7 +2,7 @@
 
 Against accepted `b5aa9b928d217944f82b35e964c98502972855d7`, this proposal reviews **39 retained records** (6 overall and 33 specific), adds **128 topic–expectation pairs** across **31 existing claims and three justified new claims**, and preserves every unrelated scoped association. The selected source has no previous associations at this base. No database or learner state is changed.
 
-The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **39 proposed Full, 0 Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. The two overall inquiries now have coherent source-fit designs with actual own-role/community resources and meaningful performance; a collection of component links alone would not establish them. All Full judgments remain authoring proposals, not learner certifications. Link counts are not a completion percentage.
+The [machine mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) gives every selected code a disposition, named contributions, whole-claim exclusions and remaining conditions. The **37 proposed Full, 2 local-resource Partial and 0 Gap** judgments describe authoring coverage, not learner mastery. The two overall inquiries now have coherent source-fit designs with actual own-role/community resources and meaningful performance; a collection of component links alone would not establish them. All Full judgments remain authoring proposals, not learner certifications. Link counts are not a completion percentage.
 
 ## Official source and identity
 
@@ -72,8 +72,8 @@ Full judgments are limited to the direct matches recorded below: role/duty/conte
 | B2.4 | Full (proposed) | Interpret evidence of local change | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
 | B2.5 | Full (proposed) | Evaluate evidence and conclude about local effects | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
 | B2.6 | Full (proposed) | Communicate a community inquiry | Coherent source-fit inquiry protocol with actual applicable resources, relevance/limits and meaningful performance; see the inquiry dossier. |
-| B3 | Full | Community features, services and spatial description | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
-| B3.1 | Full | Identify the school’s Indigenous/treaty territory | Source-fit own-school packet protocol and two attributed regional cases; no universal parcel or exclusivity claim. |
+| B3 | Partial | Community features, services and spatial description | Actual same-community packet remains unbound; integrated location/distance/services protocol and component links retained. |
+| B3.1 | Partial | Identify the school’s Indigenous/treaty territory | Actual school and attributed local packet remain unbound; two worked regional cases do not supply its facts. |
 | B3.2 | Full | Recognize local physical features | Direct matching performance with the named source-fit protocol where applicable; see the mapping. |
 | B3.3 | Full | Identify distinct local areas and describe their characteristics | Existing feature/map claims plus a verified local-area task; functional-category/mixed-use examples are not extra universal obligations. |
 | B3.4 | Full | Describe relative location, distance and direction | Source-fit local needs/service/plan or combined location/distance/map task; prior reviewed protocols retained for B3. |
@@ -93,3 +93,5 @@ B3.3's earlier residual over-interpreted illustrative functional/mixed-use examp
 The [primary completion ledger](ontario-primary-completion-2026-11-10.md) records 2,768 retained primary records and 2,640 eligible records after the user’s explicit exclusion of the optional Native Languages programme on 2026-11-10. Its 128 records and all prior contexts remain preserved; this does not exclude FNMI culture/history/community requirements here or in Language/Science. Existing Language resource/keyboarding conditions and the accepted cross-grade Science residual review are preserved. English communication used in English-stream Social Studies does not establish French or Indigenous-language competence.
 
 This is public curation, not publication. Existing claims are reused without authored semantic changes, with the three explicitly new independent claims documented separately. Consumers must not infer its mastery from another topic or move/reset learner evidence as a side effect. No such private-state change is authorized here.
+
+The [2026-11-11 locality consistency correction](ontario-grade1-locality-correction-2026-11-11.md) retains the worked cases and task protocols but records B3.1 and B3 as Partial until the actual school/community source packet is bound. Historical checkpoint outcomes above are not evidence that this local binding exists.

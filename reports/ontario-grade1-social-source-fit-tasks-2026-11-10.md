@@ -1,6 +1,6 @@
 # Grade1 Social Studies: source-fit task resolutions
 
-This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **39 Full/0 Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
+This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **37 Full/2 local-resource Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
 
 This dependent follow-up starts at reviewed territory checkpoint `ed97b20`, after the cultural-renewal checkpoint and [PR110](https://github.com/withmarbleapp/os-taxonomy/pull/110). It proposes seven additional source-fit authoring resolutions, with **no new mastery claims, changed card meanings or prerequisite edges**. The [machine dossier](ontario-grade1-social-source-fit-tasks-2026-11-10.json) supplies materials, task, success, near-miss and transfer evidence for each. At this historical step, the complete 39-code review had 21 Partial judgments; the linked current mapping includes the subsequent inquiry resolutions.
 
@@ -30,3 +30,5 @@ Three exact CA/Ontario6–7 pair extensions add the descriptive-objects contribu
 Coherent personal/environmental inquiry and the combined spatial map/unit conditions remain separate. Maps, charts or a source-fit task title alone do not prove evidence evaluation or a supported conclusion. French competence remains in scope separately; generic English communication cannot certify it. The optional Native Languages programme exclusion does not remove the FNMI requirements in this subject.
 
 These are reviewed source-fit designs, not learner-performance records. No learner evidence, estimate or mastery state changes, and no DB publication is performed. Default-branch acceptance and consumer publication remain separate lifecycle steps.
+
+The [2026-11-11 locality consistency correction](ontario-grade1-locality-correction-2026-11-11.md) retains the worked cases and task protocols but records B3.1 and B3 as Partial until the actual school/community source packet is bound. Historical checkpoint outcomes above are not evidence that this local binding exists.

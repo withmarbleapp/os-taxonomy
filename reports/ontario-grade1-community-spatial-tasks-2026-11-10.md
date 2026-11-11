@@ -1,6 +1,6 @@
 # Grade 1 community needs and spatial tasks
 
-This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **39 Full/0 Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
+This is a **historical checkpoint report**. Its counts describe the result at this step, before the later [inquiry completion](ontario-grade1-social-inquiry-tasks-2026-11-10.md). The [current mapping](ontario-grade1-social-studies-mapping-2026-11-10.json) proposes **37 Full/2 local-resource Partial** source-fit authoring judgments; it does not certify learner attainment or accepted-main delivery.
 
 This dependent follow-up starts at the reviewed task checkpoint `48f9507`. It resolves seven further source-fit authoring conditions with unchanged existing claims: B1 and its three specifics, plus B3, B3.4 and B3.7. The [machine dossier](ontario-grade1-community-spatial-tasks-2026-11-10.json) gives complete materials, tasks, positive/near-miss evidence and transfer. At this historical step, fourteen personal/community inquiry records remained Partial; the linked current mapping includes their later source-fit resolutions. This proposal is not accepted main or DB publication.
 
@@ -27,3 +27,5 @@ B3's overall description combines these performances with the already reviewed t
 Six exact CA/Ontario 6–7 pair extensions use existing contexts. ComparingLengths becomes a further existing holder; the cumulative Grade 1 proposal at this historical checkpoint had **106 pairs, 29 existing plus three previously justified new claims, 25 Full and 14 Partial**. This follow-up itself adds zero claims, contexts or edges and lowers no start age. All authored cards, research records, source catalogue, dependency graph and unaffected context content remain intact.
 
 Authoring source-fit coverage is separate from learner attainment. Resources and meaningful performances are specified; no private pupil identity/address, learner record collection, mandatory field trip or classroom study is required. The two coherent inquiry strands remain under separate review. No DB/learner-state action or automatic mastery transfer occurs.
+
+The [2026-11-11 locality consistency correction](ontario-grade1-locality-correction-2026-11-11.md) retains the worked cases and task protocols but records B3.1 and B3 as Partial until the actual school/community source packet is bound. Historical checkpoint outcomes above are not evidence that this local binding exists.

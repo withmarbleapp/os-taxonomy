@@ -25,8 +25,8 @@
     "excluded": "History/Geography Grades 7–8 and other grades remain outside this slice; one independently justified shared role/responsibility claim, no dependency changes."
   },
   "summary": {
-    "Partial": 0,
-    "Full": 39,
+    "Partial": 2,
+    "Full": 37,
     "Gap": 0,
     "reviewedCodes": 39,
     "associatedCodes": 39,
@@ -1031,7 +1031,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3",
       "officialCode": "B3",
       "requirementSummary": "Community features, services and spatial description",
-      "disposition": "Full",
+      "disposition": "Partial",
       "contributions": [
         {
           "topicId": "mt_cUpJvBD1YA",
@@ -1082,8 +1082,10 @@
           "contribution": "Describe actual local services in the coherent community resource task."
         }
       ],
-      "remainingConditions": [],
-      "residualKind": null,
+      "remainingConditions": [
+        "The learner’s actual school has not been selected and no dated, attributed local territory/treaty source packet is bound. The two verified worked-school cases do not establish another school’s facts."
+      ],
+      "residualKind": "local-resource-binding",
       "candidateOnly": [],
       "assessmentProtocol": "integrated-community-description"
     },
@@ -1091,7 +1093,7 @@
       "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.1",
       "officialCode": "B3.1",
       "requirementSummary": "Identify the school’s Indigenous/treaty territory",
-      "disposition": "Full",
+      "disposition": "Partial",
       "contributions": [
         {
           "topicId": "mt_wGoYDxnk6_",
@@ -1100,8 +1102,10 @@
           "contribution": "Distinguish traditional territory, applicable treaty reference and current reserve using attributed locally verified school resources."
         }
       ],
-      "remainingConditions": [],
-      "residualKind": null,
+      "remainingConditions": [
+        "The learner’s actual school has not been selected and no dated, attributed local territory/treaty source packet is bound. The two verified worked-school cases do not establish another school’s facts."
+      ],
+      "residualKind": "local-resource-binding",
       "candidateOnly": [],
       "assessmentProtocol": "canadian-school-territory-resources"
     },
@@ -1815,5 +1819,25 @@
     "newClaims": 0,
     "newPairs": 22,
     "newContexts": 1
+  },
+  "localSchoolBinding": {
+    "targetSchool": null,
+    "sourcePacketRefs": [],
+    "verifiedAt": null,
+    "workedCaseIds": [
+      "second-street-etobicoke",
+      "valleyview-kenora"
+    ],
+    "affectedCodes": [
+      "B3.1",
+      "B3"
+    ],
+    "rule": "Full requires the actual target school and dated attributed verified sources; worked regional cases or an unfilled preparation protocol do not establish its territory/treaty facts. B3 independently requires a coherent description of this same actual community."
+  },
+  "localityCorrection": {
+    "review": "ontario-grade1-locality-correction-2026-11-11.md",
+    "dataChanges": 0,
+    "contributionLinksPreserved": true,
+    "meaning": "Corrects the authoring coverage label only; absence of an authoritative local packet is an applicability/resource condition, never a child deficit. Existing whole claims, tasks and worked-case knowledge remain valid."
   }
 }
