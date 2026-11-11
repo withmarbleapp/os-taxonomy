@@ -37,7 +37,9 @@ function qualify(l=ledger,p=programme,a=alignments){
   if(r.protocolIds.length===1&&r.protocolIds[0]==='functional-categories'){assert(q.commonFunctionalFeatures);assert(q.effectiveStrategiesFromActualParticipation);assert(q.declaredCategoryModelNotUniversal);}
  }
  const graphPairs=new Set();for(const x of a)for(const key of x.standards.filter(k=>scope.has(k))){const r=scope.get(key);assert.equal(x.country,'CA');assert.equal(x.region,'Ontario');assert.equal(x.scope,'jurisdiction');assert.equal(x.ageRangeStart,r.ageRangeStart);assert.equal(x.ageRangeEnd,r.ageRangeEnd);graphPairs.add(x.topicId+'|'+key);}assert.deepEqual([...graphPairs].sort(),[...pairs].sort());
- assert(p.integratedSelPanel.scope.includes('still-pending'));assert(p.wholeClaimChecks.movement.includes('not automatic evidence'));assert.equal(l.counts.sourceFitReviewed,l.records.filter(r=>r.disposition).length);assert.equal(l.counts.pendingQualification,l.records.filter(r=>!r.disposition).length);
+ const sel=l.records.filter(r=>/^A1(\.|$)/.test(r.officialCode));
+ if(sel.length===42&&sel.every(r=>r.disposition==='Full')){assert.equal(p.integratedSelPanel.status,'complete-source-task-design');assert.deepEqual(p.integratedSelPanel.requiredStrands,['ActiveLiving','Movement','HealthyLiving']);assert.equal(p.integratedSelPanel.familyProtocolIds.length,6);}else assert(p.integratedSelPanel.scope.includes('still-pending'));
+ assert(p.wholeClaimChecks.movement.includes('not automatic evidence'));assert.equal(l.counts.sourceFitReviewed,l.records.filter(r=>r.disposition).length);assert.equal(l.counts.pendingQualification,l.records.filter(r=>!r.disposition).length);
 }
 test('all 267 source identities and the 56 complete movement task bindings reconcile',()=>qualify());
 test('another valid movement protocol cannot replace the exact source operation',()=>{const l=clone(ledger);l.records.find(r=>r.grade===4&&r.officialCode==='C1.2').protocolIds=['balance-transfer'];assert.throws(()=>qualify(l));});

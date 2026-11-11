@@ -1,13 +1,14 @@
 # Ontario primary HPE: source-fit review
 
-All **267** primary source records have been read. The current proposed portfolio
-accounts for **225 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** **13 Substance Use records** and **12 Mental Health Literacy records** and **18 overall Healthy Living records** in Grades 1–6. It contains **225 Full**
-authoring dispositions, **592 component pairs** and **65 topics**. The remaining
-**42 records** (integrated SEL) are pending
-whole-claim/task qualification, not excluded or automatically missing topics.
-The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
-selected identity and that distinction.
+All **267** primary source records have been read and now have proposed source-fit
+task portfolios: **56 Movement Competence**, **71 Active Living**,
+**80 specific Healthy Living**, **18 overall Healthy Living** and **42 integrated
+SEL** records. There are **267 Full authoring dispositions**, **760 component
+pairs** and **68 topics**, with **0 pending source-task qualifications**. Full means
+the actual source duties and delivery conditions are accounted for by the authored
+portfolio. It does not certify a learner, every whole topic, default-branch
+acceptance or database publication. The [record ledger](ontario-hpe-primary-review-2026-11-11.json)
+retains every selected identity and the original task/resource conditions.
 
 The source is [Ontario HPE 2019](https://www.edu.gov.on.ca/eng/curriculum/elementary/2019-health-physical-education-grades-1to8.pdf).
 Its overall and specific expectations are formal grade-end duties. Examples and
@@ -133,3 +134,13 @@ Each of the 18 overall D1/D2/D3 records now binds the exact same-grade specific 
 The [record compositions](ontario-hpe-primary-review-2026-11-11.json) and [original grade panels](ontario-hpe-primary-task-programme-2026-11-11.json) retain school/local applicability, access and privacy. Unsafe/clinical situations use factual fictional knowledge/help cases. These are authored portfolios, not fabricated child observations or independent whole-topic certifications. The 42 cross-strand SEL positions remain pending their own explicit application review.
 
 Overall Healthy Living generation, validation, generated checks and all 308 tests pass. All 1,906 authored cards, 1,091 guide payloads/order, 5,018 prior contexts and all edges/catalogue/archive/clusters remain preserved; only 141 reviewed parent component pairs are appended to existing exact bands. Existing component-preservation tests now allow further reviewed codes in those bands while still rejecting removal of each original required code.
+
+## Cross-strand social-emotional application
+
+All 42 A1 positions now bind six original applied skill families and an explicit overall portfolio across Active Living, Movement and Healthy Living. Six grade panels reuse actual qualified activities/resources. Required observables include meaningful feeling expression and a checked response to others, differentiated coping/help, useful motivation/practice, actual fair communication, evidence-based self-awareness and generating/evaluating/refining alternatives. Every family is elicited in all three strands; a list of motor results cannot replace that evidence.
+
+Hope, confidence, belonging and enjoyment remain supported curriculum purposes. They are not compulsory feelings, smiles, personality traits or a binary global SEL state. No distress, failure, unsafe situation or protected disclosure is manufactured. Existing whole claims, their hard paths and historical intervals remain unchanged; source applications remain components and never automatically certify all those operations. The [complete task programme](ontario-hpe-primary-task-programme-2026-11-11.json) preserves the earlier movement-only panel as a dated historical checkpoint and gives the current complete design explicitly.
+
+Final SEL qualification passes generation, validation, generated checks and all 315 tests. It adds 33 contexts, extends 39 exact bands and adds 168 component pairs, preserving every prior authored card, guide, edge and interval. The source’s final range is accounted for through actual task design, not a global social-emotional score.
+
+Across the complete HPE leaf from the reviewed Arts base, all 1,902 old authored cards remain except the two explicitly reviewed bullying fields; all 1,087 old guide payloads/order remain except the 12 explicitly reviewed reproduction strings. Four independently reviewed fixed claims/guides are added, with no dependency changes. All 4,845 original contexts and every old source code remain; 206 new contexts and 34 exact-band extensions provide exactly 760 primary HPE component pairs. The 88 higher-grade catalogue entries remain untouched. Default-branch acceptance, downstream compatibility and publication remain separate operations.
