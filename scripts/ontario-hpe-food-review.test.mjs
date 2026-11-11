@@ -31,7 +31,9 @@ function qualify(l=ledger,p=programme,a=alignments){
  assert.equal(ps.get('food-origins-processing-and-environment').conditions.consumptionAndDisposal,true);
  assert.equal(ps.get('food-marketing-and-health-message-critique').conditions.realAdvertForInheritedWholeCheck,true);
  assert.equal(ps.get('food-marketing-and-health-message-critique').conditions.noCommercialAction,true);
- for(const ref of ps.get('canadian-label-and-separate-whole-transfer').assetRefs)assert.ok(readFileSync(new URL(`../reports/${ref}`,import.meta.url)).length>0);
+ const refs=ps.get('canadian-label-and-separate-whole-transfer').assetRefs;
+ assert.deepEqual(refs,['assets/ontario-hpe-programme/label-comparison.json','assets/ontario-hpe-programme/label-comparison.svg','assets/ontario-hpe-programme/label-comparison.png'],'Missing exact label asset bindings');
+ for(const ref of refs)assert.ok(readFileSync(new URL(`../reports/${ref}`,import.meta.url)).length>0);
  return rows;
 }
 function checkPractice(d=asset){
@@ -50,4 +52,12 @@ test('reviewed age10 source context preserves the unchanged age11 Australian who
  const rows=alignments.filter(r=>r.topicId==='mt_CCJpSSS3l8');
  assert.ok(rows.some(r=>r.country==='CA'&&r.region==='Ontario'&&r.ageRangeStart===10&&r.ageRangeEnd===11&&r.standards.includes(`${ledger.source}:ON-HPE-2019-G5-D2.1`)));
  assert.ok(rows.some(r=>r.country==='AU'&&r.region==='ACARA v9'&&r.ageRangeStart===11&&r.ageRangeEnd===12&&r.standards.includes('acara-v9:AC9HP6P09')));
+});
+
+test('required label assets cannot disappear or be replaced by another existing file',()=>{
+ for(const refs of [[],undefined,['assets/ontario-hpe-programme/label-comparison.json'],Array(3).fill('assets/ontario-hpe-programme/label-comparison.svg')]){
+  const p=structuredClone(programme);const protocol=p.protocols.find(r=>r.id==='canadian-label-and-separate-whole-transfer');
+  if(refs===undefined)delete protocol.assetRefs;else protocol.assetRefs=refs;
+  assert.throws(()=>qualify(ledger,p),/Missing exact label asset bindings/);
+ }
 });
