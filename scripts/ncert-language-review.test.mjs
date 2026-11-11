@@ -623,6 +623,13 @@ function checkFunctionalComponent(report, reviewRows = records, alignments = con
     assert.ok(report.completePrerequisiteAssessment[id]?.actualRoleTask?.length > 0,
       'complete unchanged prerequisite tasks required');
   const withheld = row.conditionalContributions.find(c => c.topicId === 'mt_AHXePdicRf');
+  assert.ok(withheld, 'reviewed multimodal candidate cannot disappear');
+  assert.equal(report.withheldCandidate?.topicId, 'mt_AHXePdicRf');
+  assert.deepEqual(withheld.historicalHardGatePaths, [
+    ['mt_AHXePdicRf', 'mt_hp2qJ-QRBn', 'mt__MDiDU9Vck', 'mt_o8ciHks8t2'],
+    ['mt_AHXePdicRf', 'mt_hp2qJ-QRBn', 'mt__MDiDU9Vck', 'mt_PJyCGJz5Hv', 'mt_o8ciHks8t2'],
+  ], 'exact multimodal historical paths retained');
+  assert.equal(withheld.dependencyCorrectionReport, reusableCorrectionFile);
   assert.deepEqual(withheld, report.withheldCandidate, 'complete multimodal history stays withheld');
   const goal = reviewRows.find(r => r.key === report.broaderGoal);
   assert.ok(goal.conditionalContributions.some(c => c.topicId === 'mt_AHXePdicRf'), 'parent goal stays withheld');
@@ -650,6 +657,12 @@ test('functional writing rejects missing formats, adult copying, spoken substitu
   assert.throws(() => checkFunctionalComponent(full), /not Full/);
   const rowFull = structuredClone(records); rowFull.find(r => r.key === functionalKey).disposition = 'Full';
   assert.throws(() => checkFunctionalComponent(functionalReview, rowFull), /not Full/);
+  const noHistory = structuredClone(records); noHistory.find(r => r.key === functionalKey).conditionalContributions = [];
+  const reportNoHistory = structuredClone(functionalReview); delete reportNoHistory.withheldCandidate;
+  assert.throws(() => checkFunctionalComponent(reportNoHistory, noHistory), /cannot disappear/);
+  const missingOldPath = structuredClone(records);
+  missingOldPath.find(r => r.key === functionalKey).conditionalContributions[0].historicalHardGatePaths.pop();
+  assert.throws(() => checkFunctionalComponent(functionalReview, missingOldPath), /exact multimodal historical/);
   const noPath = structuredClone(functionalReview); noPath.completeCurrentHardPath = [];
   assert.throws(() => checkFunctionalComponent(noPath));
   for (const id of ['sentenceBuilding', 'oralRehearsal']) {
