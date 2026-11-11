@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "scope": "All 570 accepted NCERT national primary baseline source records, including stage/application choices; no all-board or all-source-language claim.",
+  "scope": "570 retained NCERT catalogue records;521 eligible primary records,49 actual Physical Education duties excluded by user. Health/fine-motor/sensory/art retained. No all-board claim.",
   "acceptedSourceCatalogue": {
     "ncert-fs-2025": 316,
     "ncert-ncfse-2023-ed2024": 254
@@ -10,11 +10,13 @@
     "acceptedSourceRecords": 570,
     "reviewedSourceRecords": 570,
     "notReviewedSourceRecords": 0,
-    "FullAuthoring": 492,
-    "mixedSkillAndContextualOrientation": 37,
+    "FullAuthoring": 444,
+    "mixedSkillAndContextualOrientation": 36,
     "conditionalBindings": 28,
     "contextualRequirements": 12,
-    "Unverified": 1
+    "Unverified": 1,
+    "eligibleSourceRecords": 521,
+    "excludedPhysicalEducation": 49
   },
   "dispositions": {
     "ConditionalArtFormBinding": 11,
@@ -23,8 +25,9 @@
     "ContextualAffectiveRequirement": 6,
     "ContextualMotorDevelopmentRequirement": 1,
     "ContextualReadingEngagement": 5,
-    "Full": 492,
-    "SkillWithContextualEngagement": 37,
+    "Full": 444,
+    "OutOfScope": 49,
+    "SkillWithContextualEngagement": 36,
     "Unverified": 1
   },
   "groups": [
@@ -38,7 +41,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 30
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 30
     },
     {
       "source": "ncert-fs-2025",
@@ -49,11 +54,14 @@
       "reviewedHere": 56,
       "pendingHere": 0,
       "dispositions": {
+        "Full": 41,
+        "OutOfScope": 3,
         "ConditionalArtFormBinding": 7,
         "ContextualAffectiveRequirement": 1,
-        "Full": 44,
         "SkillWithContextualEngagement": 4
-      }
+      },
+      "excludedByUserScope": 3,
+      "eligibleRecords": 53
     },
     {
       "source": "ncert-fs-2025",
@@ -66,7 +74,9 @@
       "dispositions": {
         "Full": 10,
         "SkillWithContextualEngagement": 1
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 11
     },
     {
       "source": "ncert-fs-2025",
@@ -79,7 +89,9 @@
       "dispositions": {
         "Full": 31,
         "SkillWithContextualEngagement": 3
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 34
     },
     {
       "source": "ncert-fs-2025",
@@ -92,7 +104,9 @@
       "dispositions": {
         "Full": 16,
         "SkillWithContextualEngagement": 2
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 18
     },
     {
       "source": "ncert-fs-2025",
@@ -104,7 +118,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 67
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 67
     },
     {
       "source": "ncert-fs-2025",
@@ -115,10 +131,13 @@
       "reviewedHere": 66,
       "pendingHere": 0,
       "dispositions": {
+        "Full": 52,
+        "OutOfScope": 12,
         "ContextualMotorDevelopmentRequirement": 1,
-        "Full": 64,
         "Unverified": 1
-      }
+      },
+      "excludedByUserScope": 12,
+      "eligibleRecords": 54
     },
     {
       "source": "ncert-fs-2025",
@@ -129,9 +148,12 @@
       "reviewedHere": 34,
       "pendingHere": 0,
       "dispositions": {
+        "OutOfScope": 1,
         "Full": 28,
-        "SkillWithContextualEngagement": 6
-      }
+        "SkillWithContextualEngagement": 5
+      },
+      "excludedByUserScope": 1,
+      "eligibleRecords": 33
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -143,7 +165,9 @@
       "pendingHere": 0,
       "dispositions": {
         "SkillWithContextualEngagement": 1
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 1
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -155,7 +179,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 5
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 5
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -167,7 +193,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 2
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 2
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -178,9 +206,11 @@
       "reviewedHere": 17,
       "pendingHere": 0,
       "dispositions": {
-        "ContextualAffectiveRequirement": 1,
-        "Full": 16
-      }
+        "Full": 16,
+        "ContextualAffectiveRequirement": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 17
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -193,7 +223,9 @@
       "dispositions": {
         "ConditionalLanguageBinding": 2,
         "Full": 1
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 3
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -204,11 +236,13 @@
       "reviewedHere": 18,
       "pendingHere": 0,
       "dispositions": {
-        "ConditionalGraphRepresentation": 1,
+        "Full": 13,
         "ConditionalLanguageBinding": 3,
-        "ContextualReadingEngagement": 1,
-        "Full": 13
-      }
+        "ConditionalGraphRepresentation": 1,
+        "ContextualReadingEngagement": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 18
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -220,7 +254,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 1
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 1
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -232,7 +268,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 4
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 4
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -243,8 +281,11 @@
       "reviewedHere": 3,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 3
-      }
+        "Full": 2,
+        "OutOfScope": 1
+      },
+      "excludedByUserScope": 1,
+      "eligibleRecords": 2
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -255,9 +296,12 @@
       "reviewedHere": 16,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 15,
-        "SkillWithContextualEngagement": 1
-      }
+        "SkillWithContextualEngagement": 1,
+        "Full": 12,
+        "OutOfScope": 3
+      },
+      "excludedByUserScope": 3,
+      "eligibleRecords": 13
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -270,7 +314,9 @@
       "dispositions": {
         "Full": 1,
         "SkillWithContextualEngagement": 2
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 3
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -283,7 +329,9 @@
       "dispositions": {
         "Full": 7,
         "SkillWithContextualEngagement": 2
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 9
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -294,10 +342,12 @@
       "reviewedHere": 17,
       "pendingHere": 0,
       "dispositions": {
-        "ConditionalArtFormBinding": 1,
+        "SkillWithContextualEngagement": 8,
         "Full": 8,
-        "SkillWithContextualEngagement": 8
-      }
+        "ConditionalArtFormBinding": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 17
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -308,11 +358,13 @@
       "reviewedHere": 35,
       "pendingHere": 0,
       "dispositions": {
-        "ConditionalArtFormBinding": 3,
-        "ContextualAffectiveRequirement": 4,
+        "SkillWithContextualEngagement": 4,
         "Full": 24,
-        "SkillWithContextualEngagement": 4
-      }
+        "ContextualAffectiveRequirement": 4,
+        "ConditionalArtFormBinding": 3
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 35
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -324,7 +376,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 5
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 5
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -336,7 +390,9 @@
       "pendingHere": 0,
       "dispositions": {
         "Full": 19
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 19
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -347,8 +403,10 @@
       "reviewedHere": 7,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 7
-      }
+        "OutOfScope": 7
+      },
+      "excludedByUserScope": 7,
+      "eligibleRecords": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -359,8 +417,10 @@
       "reviewedHere": 22,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 22
-      }
+        "OutOfScope": 22
+      },
+      "excludedByUserScope": 22,
+      "eligibleRecords": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -372,9 +432,11 @@
       "pendingHere": 0,
       "dispositions": {
         "ConditionalLanguageBinding": 2,
-        "ContextualReadingEngagement": 1,
-        "Full": 2
-      }
+        "Full": 2,
+        "ContextualReadingEngagement": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 5
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -385,11 +447,13 @@
       "reviewedHere": 13,
       "pendingHere": 0,
       "dispositions": {
+        "Full": 8,
         "ConditionalGraphRepresentation": 2,
         "ConditionalLanguageBinding": 1,
-        "ContextualReadingEngagement": 2,
-        "Full": 8
-      }
+        "ContextualReadingEngagement": 2
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 13
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -400,10 +464,12 @@
       "reviewedHere": 4,
       "pendingHere": 0,
       "dispositions": {
-        "ConditionalGraphRepresentation": 1,
+        "Full": 2,
         "ConditionalLanguageBinding": 1,
-        "Full": 2
-      }
+        "ConditionalGraphRepresentation": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 4
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -414,11 +480,13 @@
       "reviewedHere": 13,
       "pendingHere": 0,
       "dispositions": {
-        "ConditionalGraphRepresentation": 3,
+        "Full": 8,
         "ConditionalLanguageBinding": 1,
-        "ContextualReadingEngagement": 1,
-        "Full": 8
-      }
+        "ConditionalGraphRepresentation": 3,
+        "ContextualReadingEngagement": 1
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 13
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -431,7 +499,9 @@
       "dispositions": {
         "Full": 5,
         "SkillWithContextualEngagement": 2
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 7
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -444,7 +514,9 @@
       "dispositions": {
         "Full": 24,
         "SkillWithContextualEngagement": 1
-      }
+      },
+      "excludedByUserScope": 0,
+      "eligibleRecords": 25
     }
   ],
   "exceptions": [

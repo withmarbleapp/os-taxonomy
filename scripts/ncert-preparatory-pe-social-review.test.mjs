@@ -113,12 +113,12 @@ function check(r,p,a){
  assert.equal(r.records.length,20);assert.deepEqual(new Set(r.records.map(x=>x.key)),new Set(Object.keys(bindings)));
  const expected=new Set();const selected=new Set(Object.keys(bindings));
  for(const row of r.records){
-  assert.equal(row.disposition,'Full');assert.deepEqual(row.ageBand,[8,11]);assert.deepEqual(row.assessmentProtocols,bindings[row.key],'source protocol mismatch');
+  assert.equal(row.disposition,'OutOfScope');assert.deepEqual(row.contributions,[]);assert.deepEqual(row.ageBand,[8,11]);assert.deepEqual(row.assessmentProtocols,[],'source protocol mismatch');
   assert.deepEqual(row.sourceGradeBand,['Grade 3','Grade 4','Grade 5']);assert.equal(row.applicability.resourceCondition,row.standardSet==='LS1'?'full-set-on-provision-of-required-resources':'baseline-from-start-of-implementation');
-  assert.equal(ledger.records.find(x=>x.key===row.key)?.reviewReport,'ncert-preparatory-pe-social-alignment-2026-11-10.json');
+  assert.equal(ledger.records.find(x=>x.key===row.key)?.reviewReport,'ncert-physical-education-exclusion-2026-11-11.json');
   for(const c of row.contributions){assert.equal(c.role,'component');assert.equal(topics.get(c.topicId)?.name,c.topicName);expected.add(JSON.stringify([c.topicId,...row.ageBand,row.key]));}
  }
- assert.equal(expected.size,50);
+ assert.equal(expected.size,0);
  const actual=new Set();
  for(const c of a.alignments)for(const key of c.standards)if(selected.has(key)){assert.equal(c.country,'IN');assert.equal(c.scope,'jurisdiction');assert.ok(!c.region&&!c.framework&&!c.ageOnly);actual.add(JSON.stringify([c.topicId,c.ageRangeStart,c.ageRangeEnd,key]));}
  assert.deepEqual(actual,expected,'scoped contribution mismatch');

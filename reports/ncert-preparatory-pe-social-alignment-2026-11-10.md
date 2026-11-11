@@ -1,5 +1,6 @@
 # NCERT Preparatory PE social and game review
 
+**Current scope correction (11 November):** Physical Education is excluded. The [current 49-key decision and 521-eligible summary](ncert-physical-education-exclusion-2026-11-11.json) and updated JSON ledger override the dated checkpoint counts and motor-card references below. The remainder of this narrative records historical review reasoning, not current active PE coverage or an instruction to publish withdrawn proposals.
 This [20-record proposal](ncert-preparatory-pe-social-alignment-2026-11-10.json) accounts for the remaining formal Preparatory PE social, game-understanding and goal-setting records. It proposes 20 Full source-fit authoring dispositions through 50 component pairs, reusing 12 topics and adding 12 IN 8–11 contexts. No claim, guide or edge is added or changed. Full describes the assessment design, not a child's performance or mastery of every contributing card.
 
 The official Grades 3–5 stage window is 8–11 with stage-end attainment. LS1 remains conditional on the required resources; LS2 is the initial implementation baseline. These source sets are not taxonomy difficulty levels or separate learner states. Appropriate locally selected game content is supplied and taught, without an invented universal inventory of sports or national language pair.

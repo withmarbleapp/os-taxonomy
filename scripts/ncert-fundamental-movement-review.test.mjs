@@ -53,7 +53,9 @@ function check(r, p, a) {
   const recordKinds = new Map();
   for (const row of r.records) {
     assert.ok(available.has(row.key), `unknown source position: ${row.key}`);
-    assert.deepEqual(row.assessmentProtocols,[expectedBindings.get(row.key)],`source protocol mismatch: ${row.key}`);
+    assert.deepEqual(row.assessmentProtocols,row.key.endsWith('FOUNDATION-PHYSICAL-COMP-C-3.3')?[expectedBindings.get(row.key)]:[],`source protocol mismatch: ${row.key}`);
+    assert.equal(row.disposition,row.key.endsWith('FOUNDATION-PHYSICAL-COMP-C-3.3')?'Full':'OutOfScope');
+    if(row.disposition==='OutOfScope')assert.deepEqual(row.contributions,[]);
     const condition = expectedConditions[row.key.split(':')[1]];
     if (condition) assert.deepEqual(row.sourcePerformanceConditions,condition,`source conditions lost: ${row.key}`);
     for (const id of row.assessmentProtocols) assert.ok(protocolIds.has(id), `unknown protocol: ${id}`);
@@ -64,7 +66,7 @@ function check(r, p, a) {
     const entry = ledger.records.filter(x => x.key === row.key);
     assert.equal(entry.length, 1);
     assert.equal(entry[0].disposition, row.disposition);
-    assert.equal(entry[0].reviewReport, 'ncert-fundamental-movement-alignment-2026-11-10.json');
+    assert.equal(entry[0].reviewReport, row.disposition==='OutOfScope'?'ncert-physical-education-exclusion-2026-11-11.json':'ncert-fundamental-movement-alignment-2026-11-10.json');
     for (const c of row.contributions) {
       assert.equal(c.role, 'component');
       assert.equal(topicMap.get(c.topicId)?.name, c.topicName);
@@ -76,7 +78,7 @@ function check(r, p, a) {
   assert.equal(recordKinds.get('ncert-fs-2025:FS'),12);
   assert.equal(recordKinds.get('ncert-ncfse-2023-ed2024:FS'),5);
   assert.equal(recordKinds.get('ncert-ncfse-2023-ed2024:Prep'),9);
-  assert.equal(expected.size,71);
+  assert.equal(expected.size,2);
   const actual = new Set();
   for (const context of a.alignments) for (const key of context.standards) {
     if (!selected.has(key)) continue;
@@ -86,7 +88,7 @@ function check(r, p, a) {
     actual.add(JSON.stringify([context.topicId,context.ageRangeStart,context.ageRangeEnd,key]));
   }
   assert.deepEqual(actual,expected,'movement report and scoped associations differ');
-  assert.equal(new Set(r.newClaimIds).size,7);
+  assert.equal(new Set(r.newClaimIds).size,0);
   const researched = new Set(research.records.map(x => x.topicId));
   for(const id of r.newClaimIds) {
     assert.equal(topicMap.get(id)?.subject,'Physical Education');
@@ -94,14 +96,14 @@ function check(r, p, a) {
     assert.ok(researched.has(id),`missing new-claim guidance: ${id}`);
   }
   const rhythm = r.records.find(x => x.key.endsWith('PREP-PE-LS1-COMP-C-3.2'));
-  assert.deepEqual(rhythm.contributions.map(x => x.topicId),['mt_OTFABm2xdf']);
+  assert.equal(rhythm.disposition,'OutOfScope');assert.deepEqual(rhythm.contributions,[]);
   assert.ok(!r.newClaimIds.includes('mt_OTFABm2xdf'));
 }
 test('NCERT movement review binds source positions, tasks, guidance and scoped contributions', () => {
   check(report,protocols,alignments);
 });
 test('movement review rejects cross-artifact drift while allowing unrelated future additions', () => {
-  const missing = structuredClone(protocols); missing.protocols.shift();
+  const missing = structuredClone(protocols); missing.protocols=missing.protocols.filter(x=>x.id!=='precision-in-functional-making');
   assert.throws(() => check(report,missing,alignments),/unknown protocol/);
   const wrong = structuredClone(report);
   wrong.records.find(x => x.key.endsWith('PM-G2-C14-LO03')).assessmentProtocols=['balance-and-flexibility'];
@@ -113,8 +115,8 @@ test('movement review rejects cross-artifact drift while allowing unrelated futu
   shortened.protocols.find(x => x.id==='timed-single-leg-source-case').sourcePerformanceConditions.durationSeconds=5;
   assert.throws(() => check(report,shortened,alignments),/timed protocol conditions lost/);
   const changed = structuredClone(alignments);
-  const context = changed.alignments.find(x => x.standards.includes(report.records[0].key));
-  context.standards = context.standards.filter(x => x !== report.records[0].key);
+  const context = changed.alignments.find(x => x.standards.includes(report.records.find(r=>r.disposition==='Full').key));
+  context.standards = context.standards.filter(x => x !== report.records.find(r=>r.disposition==='Full').key);
   assert.throws(() => check(report,protocols,changed),/scoped associations differ/);
   const future = structuredClone(alignments);
   future.alignments.push({topicId:'mt_example',scope:'jurisdiction',country:'IN',ageRangeStart:8,ageRangeEnd:11,standards:['synthetic:unrelated']});

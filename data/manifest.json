@@ -20,7 +20,7 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1911,
+    "topics": 1904,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
@@ -31,7 +31,6 @@
       "Mathematics": 582,
       "Personal & Social Development": 123,
       "Science": 578,
-      "Physical Education": 7,
       "Art & Design": 4,
       "Performing Arts": 4,
       "Français": 4
@@ -39,16 +38,16 @@
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 11859,
+    "topicStandardLinks": 11728,
     "clusters": 177,
-    "teachingResearch": 1096,
+    "teachingResearch": 1089,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4978
+    "curriculumAlignments": 4954
   },
   "files": {
     "topics.json": {
-      "bytes": 2784978,
-      "sha256": "e72ea479787cd67d934f46bdb8d66e75f911e4e0dbb60d34d8fc7ca7d240a184"
+      "bytes": 2766984,
+      "sha256": "7575bb816a2647be17a539396b2d16e3406cfe5195dd079b8e1cff50230f41fb"
     },
     "dependencies.json": {
       "bytes": 878650,
@@ -63,16 +62,16 @@
       "sha256": "4e112dd2fc3373666d9f33e7a0314798f282b67b650063ec5afeb69b7af5dbc3"
     },
     "teaching-research.json": {
-      "bytes": 23975796,
-      "sha256": "e6256b79148e1535e030550f4c0724d9e8c904598f42d7742441cbe1f7d211fe"
+      "bytes": 23916751,
+      "sha256": "80401ddae14cecb5f7b0f717330916e48a6946ba5f5601d72796b2be078b7322"
     },
     "archived-teaching-research.json": {
       "bytes": 121411,
       "sha256": "28cc37220a78bdbfb37bd5693e8b729571e87c5d0ba471692707a07a7ef6c73f"
     },
     "curriculum-alignments.json": {
-      "bytes": 1691872,
-      "sha256": "0ff91533150adaa360c81f8e2247959bee0971cf8576f3e1533202d730235e52"
+      "bytes": 1677107,
+      "sha256": "106934a54477f455d2c3e594ad6dfeb8c183151803cc77a537f0a943e4d49980"
     }
   },
   "excluded": [
@@ -83,10 +82,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "e72ea479787cd67d934f46bdb8d66e75f911e4e0dbb60d34d8fc7ca7d240a184",
+    "topicFileSha256": "7575bb816a2647be17a539396b2d16e3406cfe5195dd079b8e1cff50230f41fb",
     "coverage": {
-      "topicCount": 1911,
-      "withResearch": 1096,
+      "topicCount": 1904,
+      "withResearch": 1089,
       "withoutResearch": 815,
       "bySubject": {
         "Computing": {
@@ -133,11 +132,6 @@
           "topics": 578,
           "withResearch": 549,
           "withoutResearch": 29
-        },
-        "Physical Education": {
-          "topics": 7,
-          "withResearch": 7,
-          "withoutResearch": 0
         },
         "Art & Design": {
           "topics": 4,
