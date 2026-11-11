@@ -3,54 +3,60 @@
   "date": "2026-11-11",
   "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
   "scope": "Grade 5 Science C/D/E only; all 31 source records read, 9 historical Full judgments retained and 22 prior Partials reviewed incrementally. A/common and B/health are outside this child.",
-  "status": "Four matter/state residuals resolved through unchanged claims and concrete tasks; C1/D/E work continues.",
+  "status": "Seven matter/manufacturing residuals resolved through concrete existing-claim source tasks; D/E work continues.",
   "counts": {
     "selected": 31,
     "historicalFullRetained": 9,
-    "freshResolvedFull": 4,
-    "remainingPartial": 18
+    "freshResolvedFull": 7,
+    "remainingPartial": 15
   },
   "expectations": [
     {
       "code": "ON-SCI-2022-G5-C1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Child associations do not automatically certify the integrated overall account."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Fresh two-product process/material impact and mitigation programme with actual source facts, all applicable people/environment/action duties and explicit limits.",
+      "contributingTopicIds": [
+        "mt_tqgZH11cP5",
+        "mt_VI5kdtf28e",
+        "mt_cOJhDeLkPo",
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-manufacturing-impacts-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1"
     },
     {
       "code": "ON-SCI-2022-G5-C1.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh two-product process/material impact and mitigation programme with actual source facts, all applicable people/environment/action duties and explicit limits.",
       "contributingTopicIds": [
         "mt_VIUF5Vspbg",
         "mt_NbkUKcOlEX",
-        "mt_VI5kdtf28e"
+        "mt_VI5kdtf28e",
+        "mt_tqgZH11cP5"
       ],
-      "remainingConditions": [
-        "Assess checked manufacturing cases with social and environmental consequences, rather than assuming that knowing a production sequence proves every impact."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-manufacturing-impacts-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1.1"
     },
     {
       "code": "ON-SCI-2022-G5-C1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh two-product process/material impact and mitigation programme with actual source facts, all applicable people/environment/action duties and explicit limits.",
       "contributingTopicIds": [
         "mt_VI5kdtf28e",
         "mt_deexfCHU9m",
         "mt_cOJhDeLkPo"
       ],
-      "remainingConditions": [
-        "Connect chosen material, actual product/manufacturing stages, effects and justified mitigations in a checked case. Generic recycling alone is insufficient."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-manufacturing-impacts-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1.2"
     },
     {
       "code": "ON-SCI-2022-G5-C2",

@@ -26,6 +26,8 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       const target = report.preparedCases?.[ref];
       assert.ok(target && Object.keys(target).length, 'Missing actual case packet');
       for (const binding of target.dossierRefs ?? []) pointer(readReport(binding.report), binding.pointer);
+      for (const field of protocol.requiredCaseFields ?? []) assert.ok(typeof target[field] === 'string' && target[field].trim(), 'Missing manufacturing duty');
+      for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     if (row.code === 'ON-SCI-2022-G5-C2') {
       const areas = protocol.caseRefs.map(ref => report.preparedCases[ref].area);
@@ -77,4 +79,16 @@ test('Grade 5 overall matter cannot lose a required area or a cross-dossier targ
   const damaged = structuredClone(original);
   damaged.preparedCases.properties.dossierRefs[0].pointer = '/missing';
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing protocol target/);
+});
+
+test('Grade 5 manufacturing task preserves people, environment and both mitigation actors', () => {
+  const name = 'ontario-grade5-manufacturing-impacts-design-2026-11-11.json';
+  for (const field of ['society', 'environment', 'societyAction', 'individualAction']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases.paper[field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing manufacturing duty/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`));
+  delete damaged.resources['paper-process'];
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing case source/);
 });

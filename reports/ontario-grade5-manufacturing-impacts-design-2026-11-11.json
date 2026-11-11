@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "c66e8836f12870338aa2bbd4d65ce00da9fad428",
+  "codes": [
+    "ON-SCI-2022-G5-C1",
+    "ON-SCI-2022-G5-C1.1",
+    "ON-SCI-2022-G5-C1.2"
+  ],
+  "status": "Original two-product manufacturing assessment programme using unchanged claims; historical components retained without treating them as complete impact analysis.",
+  "resources": {
+    "paper-process": {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/management-toxic-substances/sources/forest-products-industry/pulp-paper-sector.html",
+      "publisher": "Environment and Climate Change Canada, 2017 sector account",
+      "readScope": "Actual complete main sector/process/risk-instrument body read; no linked regulation text or images claimed.",
+      "fact": "Fibre inputs include residual wood/chips and recovered paper. Water, heat and chemicals are used in paper manufacture; fuel/byproduct energy and wastewater treatment are part of the account. Printing, packaging and tissue are identified products.",
+      "limits": "The general sector account does not establish every individual mill process, current fuel mix or zero pollution; do not copy its broad cellulose wording into a molecular reaction claim."
+    },
+    "paper-water": {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/managing-pollution/sources-industry/pulp-paper-effluent.html",
+      "publisher": "Environment and Climate Change Canada, 2026 overview",
+      "readScope": "Actual main overview, scope and requirements read. Legal page links not treated as fully read regulations.",
+      "fact": "Mill effluent can threaten fish, habitat and people who consume fish. Limits and monitoring address oxygen-demanding matter, suspended solids and lethal effluent.",
+      "limits": "Regulation is a mitigation instrument, not proof every mill complies or every receiving water is harmless. No legal advice, current numeric limit or claim that all contamination has ended."
+    },
+    "aluminium-process": {
+      "url": "https://www.eia.gov/Todayinenergy/detail.php?id=16211",
+      "publisher": "US Energy Information Administration, dated 9 May 2014",
+      "readScope": "Actual entire article main body read; graphs not visually checked.",
+      "fact": "The primary route goes from bauxite through alumina to smelted aluminium. A secondary route prepares, melts and refines scrap, including used beverage cans, and requires substantially less production energy in the selected comparison.",
+      "limits": "Historical US account; no production share, exact energy percentage, capital-cost percentage or current Canadian numerical claim is required. Recyclability does not prove that every discarded can is actually collected or reprocessed."
+    },
+    "aluminium-emissions": {
+      "url": "https://www.epa.gov/eps-partnership/aluminum-industry",
+      "publisher": "US Environmental Protection Agency, February 2026 page with historical partnership context",
+      "readScope": "Complete actual main body including process, mitigation and FAQ read; linked technical publications/media not reviewed.",
+      "fact": "Certain primary smelting disruptions produce potent greenhouse gases. Monitoring, employee training and adjusted alumina feeding can reduce those disruptions; avoiding them also reduces wasted inputs.",
+      "limits": "No chemical-formula/GWP/technical electrolysis inventory, claim all emissions disappear, or universal emission factor. The page contains differing historical GWP numbers, which are deliberately excluded."
+    }
+  },
+  "preparedCases": {
+    "paper": {
+      "sourceRefs": [
+        "paper-process",
+        "paper-water"
+      ],
+      "product": "Ordinary printing paper, tissue or a paper box",
+      "material": "Wood/recovered-paper fibre",
+      "process": "Prepare fibre and make paper using water/heat/selected chemicals, then convert/transport the usable product; collect/treat manufacturing wastewater as described in the sector account.",
+      "environment": "Wastewater can consume dissolved oxygen or carry suspended material, affecting fish/habitat. Manufacturing heat also requires a chosen energy source; no generic renewable=harmless inference.",
+      "society": "Useful printing, packaging and tissue products meet everyday needs. The documented threat through fish consumption connects water protection to people as well as aquatic organisms. It is a threat/mitigation relationship, not a diagnosis that a named community is harmed.",
+      "societyAction": "Mills manage treatment and monitor effects; public rules and reporting can require limits/remedial action. Explain how these act on the actual discharge pathway rather than treating regulation as instant recovery.",
+      "individualAction": "Avoid unnecessary sheets/packaging, reuse suitable paper and follow the actual local collection guidance. Reducing demand and supplying recoverable fibre differ from treating mill effluent; an individual does not operate the industrial plant.",
+      "tradeoff": "A recycled-fibre label alone does not prove no water/energy demand or pollution. A manufacturing decision must also meet the product purpose and actual treatment/energy constraints."
+    },
+    "aluminium": {
+      "sourceRefs": [
+        "aluminium-process",
+        "aluminium-emissions"
+      ],
+      "product": "A beverage can or other clearly specified aluminium product",
+      "material": "Bauxite-derived metal versus appropriately collected aluminium scrap",
+      "process": "Compare the ore→alumina→metal route with sorted/prepared scrap→melt/refine→usable metal. Keep collection, material processing and product making distinct.",
+      "environment": "The selected secondary route needs substantially less production energy. Primary smelting can emit potent greenhouse gases during process disruptions; changing energy demand and reducing those disruptions address distinct pathways.",
+      "society": "Manufacture provides useful containers/materials. More efficient operation avoids wasted energy/material inputs and can reduce production costs; this is not proof of a particular shop price, job total or universal community benefit.",
+      "societyAction": "Producers can monitor and adjust operations, train staff and provide suitable collection/reprocessing systems; relevant institutions can support collection/standards. Explain the mechanism and an actual limit instead of simply saying recycle.",
+      "individualAction": "Use only packaging needed for the task, reuse an appropriate alternative where suitable and place accepted cans into the verified collection stream. Collection is one step; sorting and actual reprocessing are still required.",
+      "tradeoff": "Scrap must be collected and suitable for the process; no zero-energy/zero-emission claim follows. Compare the same intended product/service and identify missing suitability, transport or safety facts."
+    }
+  },
+  "protocols": {
+    "C1": {
+      "codes": [
+        "ON-SCI-2022-G5-C1"
+      ],
+      "contributorIds": [
+        "mt_tqgZH11cP5",
+        "mt_VI5kdtf28e",
+        "mt_cOJhDeLkPo",
+        "mt_deexfCHU9m"
+      ],
+      "caseRefs": [
+        "paper",
+        "aluminium"
+      ],
+      "requiredCaseFields": [
+        "process",
+        "material",
+        "society",
+        "environment",
+        "societyAction",
+        "individualAction"
+      ],
+      "preparation": [
+        "Prepare the two original attributed case cards, source summaries and unfilled process→effect→affected people/environment→action→limit table. Distinguish actual source facts from reasoning and missing facts.",
+        "For whole Supply Chains, retain a raw-material/making/transporting/selling route with at least three stages and explain why additional transport/handling can add cost, without assuming every longer route has a higher retail price.",
+        "Retain whole Natural Resources renewable/non-renewable/time-scale examples, whole design prioritisation/trade-offs and whole Reducing Human Impact three local harms/solutions/mechanisms separately; none is automatically mastered by a two-product source task."
+      ],
+      "learnerActions": [
+        "Use BOTH the paper and aluminium cases. Trace the named manufacturing operations and material inputs before assessing consequences; a product label alone is not process evidence.",
+        "For this source position, complete every required case field with an explicit causal explanation and a source reference. Weigh a genuine useful outcome alongside environmental and relevant social costs; distinguish a potential threat from a measured harm.",
+        "Compare concrete societal/producer action with an appropriate individual action where required. Explain which stage/pathway each changes and one limitation; do not substitute generic recycling for discharge control or smelter operation.",
+        "Transfer to an original supplier brief: a box uses recovered fibre and another product uses collected scrap metal, but no water/energy/treatment or transport data are supplied. Identify what the labels support, what they do not prove and what further facts an assessment needs."
+      ],
+      "successEvidence": [
+        "Evidence-based process/material→effect reasoning across the two actual products, with societal and environmental considerations kept distinct.",
+        "Where required, concrete society AND individual mitigations matched to the harm pathway, with limits and no unsupported zero-impact conclusion."
+      ],
+      "nearMisses": [
+        "States raw materials or a production order but never assesses an effect on people/environment.",
+        "Claims recycled, renewable or regulated means harmless, automatically cheaper at the shop or guaranteed effective everywhere.",
+        "Uses a fictional table as measured emissions or treats an individual recycling action as a substitute for an industrial treatment system."
+      ],
+      "transfer": "Compare the two changed supplier claims using supplied facts and unknowns; explain a defensible conditional choice rather than inventing an emissions ranking."
+    },
+    "C1.1": {
+      "codes": [
+        "ON-SCI-2022-G5-C1.1"
+      ],
+      "contributorIds": [
+        "mt_VIUF5Vspbg",
+        "mt_NbkUKcOlEX",
+        "mt_VI5kdtf28e",
+        "mt_tqgZH11cP5"
+      ],
+      "caseRefs": [
+        "paper",
+        "aluminium"
+      ],
+      "requiredCaseFields": [
+        "process",
+        "society",
+        "environment"
+      ],
+      "preparation": [
+        "Prepare the two original attributed case cards, source summaries and unfilled process→effect→affected people/environment→action→limit table. Distinguish actual source facts from reasoning and missing facts.",
+        "For whole Supply Chains, retain a raw-material/making/transporting/selling route with at least three stages and explain why additional transport/handling can add cost, without assuming every longer route has a higher retail price.",
+        "Retain whole Natural Resources renewable/non-renewable/time-scale examples, whole design prioritisation/trade-offs and whole Reducing Human Impact three local harms/solutions/mechanisms separately; none is automatically mastered by a two-product source task."
+      ],
+      "learnerActions": [
+        "Use BOTH the paper and aluminium cases. Trace the named manufacturing operations and material inputs before assessing consequences; a product label alone is not process evidence.",
+        "For this source position, complete every required case field with an explicit causal explanation and a source reference. Weigh a genuine useful outcome alongside environmental and relevant social costs; distinguish a potential threat from a measured harm.",
+        "Compare concrete societal/producer action with an appropriate individual action where required. Explain which stage/pathway each changes and one limitation; do not substitute generic recycling for discharge control or smelter operation.",
+        "Transfer to an original supplier brief: a box uses recovered fibre and another product uses collected scrap metal, but no water/energy/treatment or transport data are supplied. Identify what the labels support, what they do not prove and what further facts an assessment needs."
+      ],
+      "successEvidence": [
+        "Evidence-based process/material→effect reasoning across the two actual products, with societal and environmental considerations kept distinct.",
+        "Where required, concrete society AND individual mitigations matched to the harm pathway, with limits and no unsupported zero-impact conclusion."
+      ],
+      "nearMisses": [
+        "States raw materials or a production order but never assesses an effect on people/environment.",
+        "Claims recycled, renewable or regulated means harmless, automatically cheaper at the shop or guaranteed effective everywhere.",
+        "Uses a fictional table as measured emissions or treats an individual recycling action as a substitute for an industrial treatment system."
+      ],
+      "transfer": "Compare the two changed supplier claims using supplied facts and unknowns; explain a defensible conditional choice rather than inventing an emissions ranking."
+    },
+    "C1.2": {
+      "codes": [
+        "ON-SCI-2022-G5-C1.2"
+      ],
+      "contributorIds": [
+        "mt_VI5kdtf28e",
+        "mt_deexfCHU9m",
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "paper",
+        "aluminium"
+      ],
+      "requiredCaseFields": [
+        "material",
+        "environment",
+        "societyAction",
+        "individualAction"
+      ],
+      "preparation": [
+        "Prepare the two original attributed case cards, source summaries and unfilled process→effect→affected people/environment→action→limit table. Distinguish actual source facts from reasoning and missing facts.",
+        "For whole Supply Chains, retain a raw-material/making/transporting/selling route with at least three stages and explain why additional transport/handling can add cost, without assuming every longer route has a higher retail price.",
+        "Retain whole Natural Resources renewable/non-renewable/time-scale examples, whole design prioritisation/trade-offs and whole Reducing Human Impact three local harms/solutions/mechanisms separately; none is automatically mastered by a two-product source task."
+      ],
+      "learnerActions": [
+        "Use BOTH the paper and aluminium cases. Trace the named manufacturing operations and material inputs before assessing consequences; a product label alone is not process evidence.",
+        "For this source position, complete every required case field with an explicit causal explanation and a source reference. Weigh a genuine useful outcome alongside environmental and relevant social costs; distinguish a potential threat from a measured harm.",
+        "Compare concrete societal/producer action with an appropriate individual action where required. Explain which stage/pathway each changes and one limitation; do not substitute generic recycling for discharge control or smelter operation.",
+        "Transfer to an original supplier brief: a box uses recovered fibre and another product uses collected scrap metal, but no water/energy/treatment or transport data are supplied. Identify what the labels support, what they do not prove and what further facts an assessment needs."
+      ],
+      "successEvidence": [
+        "Evidence-based process/material→effect reasoning across the two actual products, with societal and environmental considerations kept distinct.",
+        "Where required, concrete society AND individual mitigations matched to the harm pathway, with limits and no unsupported zero-impact conclusion."
+      ],
+      "nearMisses": [
+        "States raw materials or a production order but never assesses an effect on people/environment.",
+        "Claims recycled, renewable or regulated means harmless, automatically cheaper at the shop or guaranteed effective everywhere.",
+        "Uses a fictional table as measured emissions or treats an individual recycling action as a substitute for an industrial treatment system."
+      ],
+      "transfer": "Compare the two changed supplier claims using supplied facts and unknowns; explain a defensible conditional choice rather than inventing an emissions ranking."
+    }
+  },
+  "wholeClaimReview": {
+    "mt_tqgZH11cP5": "Whole supply-route/three-stage/cost-reasoning card and direct edges read; no saved guide exists. Exact10–11 association introduces no new age floor or manufacturing-reaction claim.",
+    "mt_VI5kdtf28e": "Complete card/guide and hard readiness cards read; replenishment criterion, multiple information sources and impact trade-offs remain whole requirements.",
+    "mt_deexfCHU9m": "Complete card/guide read; three local harm/solution/mechanism/communication duties remain separate whole evidence. These cases contribute general mitigation reasoning, not a claim every learner local place is a mill.",
+    "mt_cOJhDeLkPo": "Whole prioritisation/sustainability/cost/safety/function card and actual design-purpose hard card read; no saved guide.",
+    "retainedHistoricalFoodComponents": "Existing Food and Fibre Production and Food Characteristics/Preparation C1.1 links are preserved as limited historical food/processing components; they are not relied on to establish complete factory-impact analysis or assessed whole mastery by the paper/metal cases. Their original Australian/FN/food-performance duties are not erased."
+  },
+  "dispositions": {
+    "ON-SCI-2022-G5-C1": "Full",
+    "ON-SCI-2022-G5-C1.1": "Full",
+    "ON-SCI-2022-G5-C1.2": "Full"
+  },
+  "remainingConditions": [],
+  "canonicalChanges": "Five new component pairs: four overall pairs and one Supply Chains C1.1 pair; exact Ontario10–11 contexts only. Preserve every old pair/interval and all authored claims/guides/dependencies.",
+  "scopeBoundary": "Source-fit authoring programme, not a completed pupil investigation, current environmental compliance finding, a product endorsement or downstream publication. No claim or recipe is copied from a third-party work."
+}
