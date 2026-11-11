@@ -20,6 +20,12 @@ function qualify(l = ledger, p = programme, a = alignments) {
   const actual = new Set(a.flatMap(r => r.standards.filter(s => s.startsWith(slug) && /-G[1-6]-/.test(s)).map(s => `${r.topicId}|${s}`)));
   assert.deepEqual(actual, expected);
   const protocols = new Map(p.protocols.map(r => [r.id, r]));
+  const combination = protocols.get('eating-and-active-living-combination');
+  assert.equal(combination.conditions.selfContainedFictionalKnowledgeCase, true);
+  assert.equal(combination.conditions.actualHealthPromotionCommunication, true);
+  assert.equal(combination.conditions.requiresPEParticipationOrQualification, false);
+  assert.doesNotMatch(combination.task, /with the qualified Active Living routine/);
+  assert.match(combination.task, /Actually create and share/);
   assert.equal(protocols.size, 61);
   assert.deepEqual(new Set(l.records.flatMap(r => r.protocolIds)), new Set(protocols.keys()));
   for (const r of l.records) for (const id of r.protocolIds) assert.ok(protocols.has(id));
@@ -50,4 +56,10 @@ test('PE-only new concepts are not imported into the health-only child', () => {
   const guides = new Set(read('data/teaching-research.json').records.map(r => r.topicId));
   for (const id of ['mt_m9FzTqPmmg', 'mt_2IFtJJBX_n']) { assert.equal(ids.has(id), false); assert.equal(guides.has(id), false); }
   for (const id of ['mt_rVjbdwUJHG', 'mt_epG52zWuiW']) { assert.equal(ids.has(id), true); assert.equal(guides.has(id), true); }
+});
+
+test('health explanation and promotion cannot acquire a dependency on excluded PE qualification', () => {
+  for (const change of [p => p.protocols.find(r => r.id === 'eating-and-active-living-combination').conditions.requiresPEParticipationOrQualification = true, p => p.protocols.find(r => r.id === 'eating-and-active-living-combination').conditions.actualHealthPromotionCommunication = false, p => p.protocols.find(r => r.id === 'eating-and-active-living-combination').task = 'Combine eating with the qualified Active Living routine']) {
+    const p = structuredClone(programme); change(p); assert.throws(() => qualify(ledger, p));
+  }
 });
