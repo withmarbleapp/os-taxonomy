@@ -4,7 +4,7 @@ This proposed checkpoint adds one shared conceptual claim, `mt_m9FzTqPmmg`, and 
 
 The whole closest anatomy, lifestyle, warm-up and goal-setting claims can succeed while a learner still confuses brief muscular force, repeated effort, sustained whole-body work and joint range. Their authored fields, guides, contexts and dependencies remain unchanged. The new claim is one fixed shared model, with no sport, grade or difficulty copies.
 
-Two exact Ontario contexts contain three component associations: Grade 5 B2.2 at ages 10–11 and Grade 6 B2.3/B2.4 at ages 11–12. These are component contributions. Grade 6 still requires actual self-assessment and longitudinal records, and an implemented interest-based plan; answering the concept diagnostic does not supply those duties. The broader HPE programme remains 56 reviewed records and 211 pending.
+Two exact Ontario contexts contain three component associations: Grade 5 B2.2 at ages 10–11 and Grade 6 B2.3/B2.4 at ages 11–12. These are component contributions. Grade 6 still requires actual self-assessment and longitudinal records, and an implemented interest-based plan; answering the concept diagnostic does not supply those duties. At this bounded concept checkpoint, the broader HPE programme had 56 reviewed records and 211 pending; the linked current programme records later qualified slices separately.
 
 The guide supplies three original activity families: contrasting everyday capacity cases; changing purposes with overlapping capacities; and rejecting unsupported appearance or single-result inferences. Supplied cases and accessible communication permit assessment of knowledge without measuring a child's personal fitness. No child performance, transfer of learner estimates or teaching efficacy is asserted.
 

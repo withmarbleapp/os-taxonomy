@@ -22,11 +22,11 @@
   },
   "counts": {
     "sourceClausesRead": 267,
-    "sourceFitReviewed": 56,
-    "pendingQualification": 211,
-    "Full": 56,
-    "componentPairs": 129,
-    "topics": 11
+    "sourceFitReviewed": 109,
+    "pendingQualification": 158,
+    "Full": 109,
+    "componentPairs": 258,
+    "topics": 18
   },
   "records": [
     {
@@ -99,7 +99,56 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.1",
@@ -108,7 +157,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.2",
@@ -117,7 +199,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B1.3",
@@ -126,7 +231,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Daily opportunities at both school and home."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Daily opportunities at both school and home.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2",
@@ -135,7 +268,54 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "physical-and-mental-benefits",
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.3"
+      ],
+      "childOnlyComponentTopicIds": []
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.1",
@@ -144,7 +324,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.2",
@@ -153,7 +361,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "physical-and-mental-benefits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Physical and mental health benefits both required."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Physical and mental health benefits both required.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B2.3",
@@ -162,7 +393,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify physical exertion signs across actual varied activities."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify physical exertion signs across actual varied activities.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B3",
@@ -777,7 +1031,56 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.1",
@@ -786,7 +1089,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.2",
@@ -795,7 +1131,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B1.3",
@@ -804,7 +1163,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Reasons for everyday participation, not only listing activities."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Reasons for everyday participation, not only listing activities.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2",
@@ -813,7 +1200,63 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "physical-and-mental-benefits",
+        "notice-and-assess-exertion",
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.4"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_QxsoqVUt6u"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.1",
@@ -822,7 +1265,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.2",
@@ -831,7 +1302,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "physical-and-mental-benefits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Types of sustained whole-body/large-muscle activities and heart/lung benefits."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Types of sustained whole-body/large-muscle activities and heart/lung benefits.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.3",
@@ -840,7 +1334,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Use a simple method for degree of exertion and identify factors affecting performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Use a simple method for degree of exertion and identify factors affecting performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B2.4",
@@ -849,7 +1366,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual implemented, monitored interest-based goal, with grade-specific assessment basis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual implemented, monitored interest-based goal, with grade-specific assessment basis.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B3",
@@ -1469,7 +2019,57 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers",
+        "physical-and-mental-benefits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.1",
@@ -1478,7 +2078,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.2",
@@ -1487,7 +2120,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B1.3",
@@ -1496,7 +2152,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers",
+        "physical-and-mental-benefits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Physical and mental/social benefits with a relevant explanation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Physical and mental/social benefits with a relevant explanation.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2",
@@ -1505,7 +2190,61 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "physical-and-mental-benefits",
+        "notice-and-assess-exertion",
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.4"
+      ],
+      "childOnlyComponentTopicIds": []
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.1",
@@ -1514,7 +2253,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.2",
@@ -1523,7 +2290,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "physical-and-mental-benefits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "New capabilities and benefits of improved cardiorespiratory fitness; no one-pulse inference."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "New capabilities and benefits of improved cardiorespiratory fitness; no one-pulse inference.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.3",
@@ -1532,7 +2322,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Assess degree of exertion during cardiorespiratory activity with a simple accessible method."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Assess degree of exertion during cardiorespiratory activity with a simple accessible method.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B2.4",
@@ -1541,7 +2354,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual implemented, monitored interest-based goal, with grade-specific assessment basis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual implemented, monitored interest-based goal, with grade-specific assessment basis.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B3",
@@ -2181,7 +3022,56 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.1",
@@ -2190,7 +3080,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.2",
@@ -2199,7 +3122,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B1.3",
@@ -2208,7 +3154,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Motivators at school, home and community; access and choice acknowledged."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Motivators at school, home and community; access and choice acknowledged.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2",
@@ -2217,7 +3191,62 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "physical-and-mental-benefits",
+        "capacity-model-and-purpose",
+        "notice-and-assess-exertion",
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.4"
+      ],
+      "childOnlyComponentTopicIds": []
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.1",
@@ -2226,7 +3255,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.2",
@@ -2235,7 +3292,31 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "physical-and-mental-benefits",
+        "capacity-model-and-purpose"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Different activity effects, fitness and physical plus mental health; examples are not compulsory yoga/crunch prescriptions."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Different activity effects, fitness and physical plus mental health; examples are not compulsory yoga/crunch prescriptions.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.3",
@@ -2244,7 +3325,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Assess exertion and explain intrinsic and extrinsic influences; no unsafe environmental trial."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Assess exertion and explain intrinsic and extrinsic influences; no unsafe environmental trial.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B2.4",
@@ -2253,7 +3357,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "implement-personal-and-group-goals",
+        "notice-and-assess-exertion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual implemented, monitored interest-based goal, with grade-specific assessment basis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual implemented, monitored interest-based goal, with grade-specific assessment basis.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B3",
@@ -2942,7 +4075,57 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_RhntJz7p_6",
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.1",
@@ -2951,7 +4134,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.2",
@@ -2960,7 +4176,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B1.3",
@@ -2969,7 +4208,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Both motivators and obstacles, plus feasible ways to address an actual supplied barrier."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Both motivators and obstacles, plus feasible ways to address an actual supplied barrier.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2",
@@ -2978,7 +4250,64 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "capacity-model-and-purpose",
+        "notice-and-assess-exertion",
+        "longitudinal-capacity-review",
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.4"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_m9FzTqPmmg"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.1",
@@ -2987,7 +4316,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.2",
@@ -2996,7 +4353,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "capacity-model-and-purpose"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_m9FzTqPmmg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Four components and benefits, through the full new conceptual diagnostic."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Four components and benefits, through the full new conceptual diagnostic.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.3",
@@ -3005,7 +4385,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion",
+        "longitudinal-capacity-review"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Assess one chosen component and monitor changes over time."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Assess one chosen component and monitor changes over time.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.4",
@@ -3014,7 +4423,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "implement-personal-and-group-goals",
+        "longitudinal-capacity-review"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual implemented, monitored interest-based goal, with grade-specific assessment basis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual implemented, monitored interest-based goal, with grade-specific assessment basis.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B3",
@@ -3713,7 +5151,56 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety",
+        "personal-enjoyment-and-access",
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose every grade-specific B1 child task, not only a one-day activity sample."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose every grade-specific B1 child task, not only a one-day activity sample.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.3"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.1",
@@ -3722,7 +5209,40 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "active-readiness-and-variety"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_QxsoqVUt6u",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual varied participation and readiness, adapted to capabilities; affect is not judged from facial expression.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.2",
@@ -3731,7 +5251,30 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-enjoyment-and-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify personal experience factors during varied activities; no compulsory enjoyment, cultural disclosure or fixed preferred activity.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B1.3",
@@ -3740,7 +5283,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-options-motivation-and-barriers"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Personal motivating factors and their influence on activity choices in school and leisure."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Personal motivating factors and their influence on activity choices in school and leisure.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2",
@@ -3749,7 +5320,65 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery",
+        "physical-and-mental-benefits",
+        "capacity-model-and-purpose",
+        "notice-and-assess-exertion",
+        "longitudinal-capacity-review",
+        "implement-personal-and-group-goals"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose all actual grade-specific B2 children; conceptual knowledge does not replace performance.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.4"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_m9FzTqPmmg"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.1",
@@ -3758,7 +5387,35 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-activity-preparation-and-recovery"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Lzpzxs7z4C",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Source minimum 20 minutes each day with appropriate preparation/recovery, to the best of ability.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.2",
@@ -3767,7 +5424,31 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "physical-and-mental-benefits",
+        "capacity-model-and-purpose"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Explain participation effects on personal health-related fitness, without guaranteed immunity/injury prevention."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Explain participation effects on personal health-related fitness, without guaranteed immunity/injury prevention.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.3",
@@ -3776,7 +5457,42 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "notice-and-assess-exertion",
+        "longitudinal-capacity-review",
+        "capacity-model-and-purpose"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_lp1eTsQen7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_m9FzTqPmmg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Assess all four components and monitor changes over time."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Assess all four components and monitor changes over time.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.4",
@@ -3785,7 +5501,42 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "implement-personal-and-group-goals",
+        "capacity-model-and-purpose",
+        "longitudinal-capacity-review"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_m9FzTqPmmg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual implemented, monitored interest-based goal, with grade-specific assessment basis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual implemented, monitored interest-based goal, with grade-specific assessment basis.",
+        "noForcedMood": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3",

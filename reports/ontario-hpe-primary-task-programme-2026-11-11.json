@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "Initial Movement C1/C2 source-fit slice:56records, no new mastery claims. Other primary HPE records remain pending qualification.",
+  "scope": "Movement C1/C2 and Active Living B1/B2 source-fit proposals: 109 records. Safety B3, Healthy Living and integrated A1 remain pending qualification.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -59,6 +59,136 @@
       "nearMiss": "An accurate pass to a covered option, a memorised tactic name, a discussion without action or a lucky point alone is insufficient.",
       "transfer": "Change the target, defender position or activity family, identify the new options/consequences and actually apply a suitable choice.",
       "sourceConditions": "Whole Stop, Think, Then Choose is domain-general and its consequence prerequisite remains. No sport-specific decision clone, automatic design/study-strategy transfer or new hard dependency is inferred."
+    },
+    {
+      "id": "active-readiness-and-variety",
+      "task": "Implement a varied rotation of individual and small-group physical activities across days: a comfortable travel/route activity, an object game, a movement-to-music activity and a cooperative task. Record actual participation according to capabilities and the activity-specific access arrangements. Observe knowing the task, readiness, respectful communication, fair contribution and response to others; a passive worksheet is not participation. Use the actual games and movement tasks already specified in the movement programme.",
+      "wholeClaimChecks": "For group-work contribution retain own idea, response to another idea and completion of a fair part. For rules retain reasons for two relevant agreements, consistent following and a reasoned no-rule contrast. Keep these checks separate from a general impression of compliance or enthusiasm.",
+      "conditions": {
+        "variety": true,
+        "individualAndGroup": true,
+        "actualParticipation": true,
+        "accordingToCapabilities": true,
+        "noForcedMood": true
+      }
+    },
+    {
+      "id": "personal-enjoyment-and-access",
+      "task": "After actual participation in several individual and group activities, identify and compare factors affecting the learner’s own experience. Use an activity-choice card and before/after access adjustment: for example a more accessible play area, a manageable group size or a meaningful choice of role. Explain what helped, what did not and a possible change. No requirement to like every activity or to disclose culture, disability, family circumstances or private feelings.",
+      "wholeClaimChecks": "The self-knowledge contribution is about preferences and strengths, not a claim that liking PE establishes all identity knowledge. Retain the broader existing All about me checks with safely chosen important people/helpers and similarities/differences, without forced private disclosure.",
+      "conditions": {
+        "actualVarietyBeforeReflection": true,
+        "ownFactors": true,
+        "noPositiveFeelingQuota": true,
+        "accessAdjustment": true
+      }
+    },
+    {
+      "id": "daily-options-motivation-and-barriers",
+      "task": "Use an actual school-day map and supplied local home/community opportunity cards: a safe walk/wheel route, free movement space, an indoor alternative and a paid/distant option. Identify realistic daily opportunities and reasons. Older panels compare cost, travel, time, access, peer/cultural relevance and preferences, then propose a feasible response to an obstacle rather than blame the child or family. Test a changed case such as a closed outdoor space or unavailable transport.",
+      "wholeClaimChecks": "For the routine contribution retain a real chosen routine, when/how plan, week record, reflection and one way to support someone else. For a decision contribution compare at least two feasible options and likely consequences before choosing; naming a barrier alone is not a solution.",
+      "conditions": {
+        "schoolAndHome": true,
+        "communityForJuniorPanels": true,
+        "changedConstraint": true,
+        "noFamilyDisclosure": true
+      }
+    },
+    {
+      "id": "daily-activity-preparation-and-recovery",
+      "task": "Provide the source-required daily minimum 20-minute physical-activity opportunity with appropriate gradual warm-up and cool-down, moderate-to-vigorous participation to the best of each learner’s ability and actual access/support. Prepare a safe adult-supervised circuit from movement tasks, movement-to-music, travel and modified games. Record date, actual activity, duration, preparation, recovery and access/support; do not count an invented example log as a learner’s participation. A gentle cool-down is explicitly taught and performed, not inferred from doing the warm-up.",
+      "wholeClaimChecks": "Preserve the complete preparation claim: follow or choose a suitable gradual sequence, controlled comfortable mobility, a relevant preparation reason communicated by demonstration/picture/explanation, and adjustment for discomfort. Leadership, maximal exertion and pain tolerance are not criteria.",
+      "conditions": {
+        "sourceMinimumMinutes": 20,
+        "frequency": "daily",
+        "warmUp": true,
+        "coolDown": true,
+        "actualParticipation": true,
+        "bestOfAbility": true,
+        "noNormativeFitnessScore": true
+      }
+    },
+    {
+      "id": "physical-and-mental-benefits",
+      "task": "Compare safe activity cases and explain practical physical and mental/brain-health benefits using the grade panel: physical examples include sustained activity, muscular work or easier comfortable movement; mental examples include attention and memory support or reduced risk of depression. Use population-level possibilities, not a promise that a session makes every child happy or cures distress. Younger panels use concrete attention, energy and enjoyable social participation cases; do not require diagnosis or detailed organ physiology.",
+      "wholeClaimChecks": "The Basic Body Needs link contributes exercise/heart/muscle and body-needs reasoning. Retain its full food-energy, water-hydration, sleep-rest/growth and exercise checks separately. It does not alone certify the mental-health part; the explicit cases and explanations supply that source duty. Do not add advanced physiology or harmful-substance knowledge as a new prerequisite for explaining an everyday benefit.",
+      "conditions": {
+        "physicalAndMental": true,
+        "noGuaranteedMoodOrCure": true,
+        "componentNotWholeSource": true,
+        "noAppearanceJudgment": true
+      },
+      "concreteCases": [
+        {
+          "case": "Sustained comfortable travel or dance",
+          "reason": "Repeated appropriate participation can develop cardiorespiratory capacity and the ability to sustain activity; an immediate faster heartbeat is a response, not itself proof of improvement."
+        },
+        {
+          "case": "Manageable brief and repeated resistance tasks",
+          "reason": "Relate suitable muscular work to force or continued effort; no maximal load or body-shape inference."
+        },
+        {
+          "case": "Comfortable controlled joint movement",
+          "reason": "Relate range to easier movement in an activity; do not claim every stretch prevents injury or require a universal range."
+        },
+        {
+          "case": "An accessible familiar activity followed by a learning task",
+          "reason": "Discuss attention/memory support as a possible benefit supported by child-specific public guidance; do not require that this particular child immediately feels happy or concentrates better."
+        }
+      ]
+    },
+    {
+      "id": "capacity-model-and-purpose",
+      "task": "Use the complete original four-component concept guide and its contrasting everyday cases, overlap/changed-purpose task and unsupported-inference diagnostic. Explain functional capacity and a relevant everyday benefit. This supplies G5 B2.2’s knowledge duty; its G6 links are conceptual components only.",
+      "wholeClaimChecks": "Keep all four components and functional contrasts, strength versus repeated effort, justified overlap, changed-goal transfer and rejection of appearance/single-result inference. No personal performance norm is assessed by the knowledge task.",
+      "conditions": {
+        "declaredComponents": [
+          "cardiorespiratory endurance",
+          "muscular strength",
+          "muscular endurance",
+          "flexibility"
+        ],
+        "activityOverlapAllowed": true,
+        "notPhysicalPerformanceScore": true
+      }
+    },
+    {
+      "id": "notice-and-assess-exertion",
+      "task": "Use safe prepared actual activity with adult supervision and suitable individual access. Record ordinary responses before, during and after activity: perceived effort, breathing, warmth and, where appropriate and accessible, a gently found wrist pulse. Younger panels identify signs; later panels compare degree using an accessible simple method such as speaking comfort, breath sounds or perceived exertion. Explain relevant personal/context factors with a hypothetical comparison rather than private medical disclosure. Stop or adapt for discomfort; no deliberate heat, poor-air, cold or exhausted trial.",
+      "wholeClaimChecks": "The Heart & Blood component retains the pump, continuous circulation, vessels reaching the body and appropriate heartbeat/pulse explanation. Feeling a pulse alone is not that full claim, and the full anatomy check does not by itself supply judging degree of exertion. Never enact injury/cut prompts. One elevated pulse is not lasting improvement or a diagnosis.",
+      "conditions": {
+        "beforeDuringAfter": true,
+        "noMaximalTest": true,
+        "noHarmfulEnvironmentExperiment": true,
+        "methodAccessible": true,
+        "acuteNotAdaptation": true
+      }
+    },
+    {
+      "id": "longitudinal-capacity-review",
+      "task": "Create an actual repeated-observation portfolio under suitable adult supervision. Grade 5 chooses one component; Grade 6 considers all four. Use manageable comparable activity observations: a comfortable sustained route, brief suitable resistance action, repetition of a manageable action and comfortable joint motion as appropriate. Record the declared task/purpose, date, response and relevant support/context across occasions; compare with the person’s own earlier comparable evidence and state limitations. No maximum load, timed exhaustion, universal range, percentile or comparison of bodies is used.",
+      "wholeClaimChecks": "The routine contribution retains actual tracking and reflection. The fitness concept supplies distinctions, not the observations. A blank template makes the source-fit assessment design available but does not claim a child has supplied the evidence. Changes in task or support must be acknowledged, not misread as measured adaptation.",
+      "conditions": {
+        "G5Components": "one selected component",
+        "G6Components": "all four declared components",
+        "actualRepeatedObservations": true,
+        "comparison": "own comparable evidence over time",
+        "noInventedLearnerRecord": true
+      }
+    },
+    {
+      "id": "implement-personal-and-group-goals",
+      "task": "Choose a realistic interest-based activity goal with a timeframe, identify steps, act on the plan on actual occasions, record progress and revise a step when necessary. Grade 2 also participates in a group goal with fair contributions; later panels use actual self-assessment and preferences to choose relevant fitness focus. Grade 5 chooses one component; Grade 6 uses assessment across the four-component model in planning. A plan written but never acted on does not fulfil implementation.",
+      "wholeClaimChecks": "Retain the full goal-setting operation, including timeframe, steps, monitoring and adjustment. The routine panel includes the week record and a way to support another person; no forced disclosure or invented difficulty/frustration is needed. Hard-path mindset/mistake checks stay distinct rather than inferring a belief from goal completion.",
+      "conditions": {
+        "actualImplementation": true,
+        "timeframe": true,
+        "monitorAndAdjust": true,
+        "interestAndAssessmentBased": true,
+        "G2GroupGoal": true,
+        "G5Component": "one selected component",
+        "G6Basis": "assessment across all four"
+      }
     }
   ],
   "originalGameSet": [
@@ -114,7 +244,9 @@
     "movement": "Keep the whole existing locomotor pattern inventory, still/moving balance and actual sending/receiving adjustment checks; an adapted source route is not automatic evidence for every canonical movement pattern.",
     "decision": "Retain the full options→consequences→reasoned choice operation and its consequence prerequisite. Actual changed-game action is separately required; no new sport-only decision state.",
     "classification": "Use ten original activity cards in counts3/2/2/1/2, identify functional features, count/order category totals. Separately retain complete count-out/arranged/scattered/cardinality/one-to-one checks up to20 where the hard chain is assessed; those are not additional HPE curriculum mandates.",
-    "rulesAndGroup": "Explain actual rules and their safe/fair purpose, follow them without repeated prompting, contribute/respond/complete an agreed role, listen and take turns. No individual competence is inferred from the team result, a smile or covert surveillance."
+    "rulesAndGroup": "Explain actual rules and their safe/fair purpose, follow them without repeated prompting, contribute/respond/complete an agreed role, listen and take turns. No individual competence is inferred from the team result, a smile or covert surveillance.",
+    "activeLiving": "All about me retains the complete identity/helper/similarity checks without forced disclosure; body-needs retains food, water, sleep and exercise explanations. Heart retains continuous pumping and vessels, not just a pulse reading. Goal-setting retains actual timeframe/steps/monitoring/adjustment; routine retains a week record/reflection/helping another person. These whole checks are distinct from source-specific participation, exertion and longitudinal duties.",
+    "inheritedGoalPath": "Existing hard paths through task steps, mindset and learning from mistakes remain unchanged. Keep their full checks separate: completing a goal does not automatically establish a mindset belief, and lack of visible cheerfulness or distress is not a gap criterion. No dependency is weakened to force an HPE link."
   },
   "conditions": {
     "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
@@ -123,7 +255,9 @@
     "access": "Prepare appropriate clear space, soft/light equipment and adult-supported access. Adapt source participation to the learner’s capabilities; do not equate an accessible alternative with every fixed whole-card motor requirement.",
     "sourceHierarchy": "The six SEL source skills are integrated in content strands. Their complete A1 dispositions are not inferred from this C1/C2 checkpoint.",
     "retention": "Keep actual possession through the route changes. Continuous dribbling is an illustrative option, not an invented universal requirement; if chosen, assess it directly rather than infer it from a catch.",
-    "state": "No new claims, dependencies, clinical/fitness scores, learner observations or database changes."
+    "state": "No new claims, dependencies, clinical/fitness scores, learner observations or database changes.",
+    "activeLiving": "Daily actual opportunity, personal factors, access, mental/physical benefit explanations, before/during/after exertion and implemented goals remain grade-specific tasks. No positive mood, appearance, fitness norm or numerical superiority is required.",
+    "longitudinalAssessment": "Grade 5 assesses a selected component; Grade 6 assesses all four, with actual repeated observations and implemented interest-based plans. Conceptual answers or a prepared blank record do not constitute a child record or successful implementation."
   },
   "sources": [
     {
@@ -133,6 +267,14 @@
     {
       "title": "Ontario HPE2019 movement concepts and declared game-category model,printed31–38",
       "url": "https://www.edu.gov.on.ca/eng/curriculum/elementary/2019-health-physical-education-grades-1to8.pdf"
+    },
+    {
+      "url": "https://www.cdc.gov/physical-activity-basics/measuring/index.html",
+      "actualCheck": "Actual Dec4 2025 body read; relative intensity and talk-test context only. Adult speed/MET/intensity cutoffs are not imported as primary norms."
+    },
+    {
+      "url": "https://www.cdc.gov/physical-activity-basics/health-benefits/children.html",
+      "actualCheck": "Actual March10 2026 child-benefits body read. Narrow physical/attention-memory and mental-health risk support, not guaranteed mood or efficacy of this programme."
     }
   ]
 }

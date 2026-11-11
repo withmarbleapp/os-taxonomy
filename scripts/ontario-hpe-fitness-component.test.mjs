@@ -56,6 +56,11 @@ test('component coverage does not erase actual longitudinal and implemented-plan
   for (const code of ['ON-HPE-2019-G6-B2.3','ON-HPE-2019-G6-B2.4']) {
     const row = records.find(r => r.sourceKey.endsWith(`:${code}`));
     assert.ok(row);
-    assert.notEqual(row.disposition,'Full');
+    if (row.disposition === 'Full') {
+      const tasks = read('reports/ontario-hpe-primary-task-programme-2026-11-11.json');
+      const required = code.endsWith('B2.3') ? 'longitudinal-capacity-review' : 'implement-personal-and-group-goals';
+      assert.ok(row.protocolIds.includes(required), 'later Full needs the actual separate source task');
+      assert.ok(tasks.protocols.some(p => p.id === required));
+    }
   }
 });
