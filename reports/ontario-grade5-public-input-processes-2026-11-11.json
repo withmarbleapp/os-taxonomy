@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "e3adc620ab197a05e5a9c9837cc6469f744de3c9",
+  "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
+  "status": "Source-fit public-input task design using unchanged shared civic-action and perspective operations. No actual submission or learner attainment is asserted.",
+  "selectedCodes": [
+    "B3.5"
+  ],
+  "resources": {
+    "toronto-process": {
+      "url": "https://www.toronto.ca/city-government/council/council-committee-meetings/participate/",
+      "reviewed": "Complete main body read.",
+      "use": "Written agenda-item comments and registered committee/board presentations are distinct participation routes.",
+      "limits": "Ordinary public presentations are at committee/board, not automatically City Council; exceptions and actual rules apply. No child registers or submits anything."
+    },
+    "provincial-process": {
+      "url": "https://www.ontario.ca/page/consultations-directory",
+      "reviewed": "Actual overview and selected closed2026 budget entry read from public HTML.",
+      "use": "Provincial consultation can identify priorities, review proposals or develop solutions; the closed2026 budget consultation illustrates survey feedback.",
+      "limits": "The historical invitation is not an open participation opportunity or proof that feedback changed a budget. No exhaustive directory audit claimed."
+    },
+    "federal-process": {
+      "url": "https://www.canada.ca/en/government/system/consultations/consultingcanadians.html",
+      "reviewed": "Actual directory introduction and selected Oceans Protection Plan entry read.",
+      "use": "A federal discussion portal offers another process for gathering views on specified issues.",
+      "limits": "Directory entry supports the invitation/process only, not independent proof of all programme outcomes or a universal right to decide the result."
+    },
+    "engagement-principles": {
+      "url": "https://open.canada.ca/en/content/principles-and-guidelines",
+      "reviewed": "Complete five-principle main body read from public HTML.",
+      "use": "Clear scope, accessible channels, varied perspectives and explaining use of input support informed, transparent decisions.",
+      "limits": "Principles are a federal engagement framework, not a uniform legal rule for every government."
+    },
+    "civic-whole-operation": {
+      "report": "ontario-grade5-civic-action-review-2026-11-11.json",
+      "use": "Retain actual achieved collective-action case, shared goal/values and an original campaign plan; new process descriptions do not replace the whole claim."
+    },
+    "authority-whole-operation": {
+      "report": "ontario-grade5-government-response-review-2026-11-11.json",
+      "use": "Retain distinct named Nation/provincial roles and existing complete Ontario governance repertoire; local bodies are not interchangeable."
+    }
+  },
+  "contributionPairs": {
+    "mt_g8gJIsDxmj": [
+      "B3.5"
+    ],
+    "mt_2GDBmKCJxs": [
+      "B3.5"
+    ]
+  },
+  "protocols": {
+    "public-input": {
+      "codes": [
+        "B3.5"
+      ],
+      "processes": [
+        {
+          "id": "written-agenda-comment",
+          "resourceRef": "toronto-process",
+          "governmentContext": "municipal",
+          "method": "A person prepares a relevant written comment on a specified agenda item for the council/committee process.",
+          "decisionLink": "The submitted information becomes available to the decision-makers and public record; receiving it does not guarantee adoption."
+        },
+        {
+          "id": "committee-presentation",
+          "resourceRef": "toronto-process",
+          "governmentContext": "municipal",
+          "method": "A person uses the stated registration process to present relevant views at a committee or board meeting.",
+          "decisionLink": "Members can hear concerns and ask questions before considering the item; this is not an ordinary speaking slot at City Council."
+        },
+        {
+          "id": "provincial-survey",
+          "resourceRef": "provincial-process",
+          "governmentContext": "provincial",
+          "method": "A dated consultation invites answers about a policy or budget proposal.",
+          "decisionLink": "Government gathers priorities and experience before deciding; a closed survey cannot now accept a classroom reply."
+        },
+        {
+          "id": "federal-discussion",
+          "resourceRef": "federal-process",
+          "governmentContext": "federal",
+          "method": "A specified online engagement portal gathers views and discussions about its stated programme.",
+          "decisionLink": "Participants contribute information and perspectives within the stated scope; it is not a binding popular vote."
+        }
+      ],
+      "learnerSteps": [
+        {
+          "operation": "describe-and-contrast",
+          "instruction": "Using adult-prepared original summaries of these actual processes, describe how at least three different methods seek input, who receives it, what issue/stage it concerns and how it can inform a decision. Contrast written comments, speaking at a committee and survey/discussion routes rather than merely list website names.",
+          "processIds": [
+            "written-agenda-comment",
+            "committee-presentation",
+            "provincial-survey",
+            "federal-discussion"
+          ]
+        },
+        {
+          "operation": "explain-all-levels",
+          "instruction": "Explain why any level or relevant governing body should provide suitable opportunities to hear affected people: different honest perspectives and local experience can reveal needs or consequences, improve decisions and allow explanation of how views were considered. Apply this reasoning to supplied federal, provincial/territorial, municipal and Indigenous-government scenarios; do not claim the same legal process or powers applies to every body. Distinguish a public-input invitation from the specific constitutional duty in B3.6.",
+          "resourceRefs": [
+            "engagement-principles",
+            "authority-whole-operation"
+          ]
+        },
+        {
+          "operation": "perspective-and-plan",
+          "instruction": "For a clearly fictional park-use proposal, explain the genuine contrasting views of a child, driver and shop owner without assuming disagreement means lying. Plan a class civic campaign with shared goal/values, choose a suitable simulated input method and justify its fit and limits. Retain the earlier whole civic-action achieved-case and original-plan checks. No actual external communication or personal data is collected.",
+          "resourceRefs": [
+            "civic-whole-operation",
+            "toronto-process",
+            "engagement-principles"
+          ]
+        },
+        {
+          "operation": "transfer",
+          "instruction": "Change the issue and supplied governing body. Decide what process/scope information must be checked before choosing an input method. Explain how a written or spoken contribution could help even if the final decision differs, and identify a barrier plus a suitable alternative channel. A territorial or Nation scenario is an original reasoning transfer, not an attributed real consultation or a claim that nearby municipal rules govern it.",
+          "resourceRefs": [
+            "engagement-principles",
+            "authority-whole-operation"
+          ]
+        }
+      ],
+      "positive": "Accurately describes contrasting actual processes and decision links, explains the importance of meaningful input at all levels with different perspectives, and justifies a suitable changed-scenario method.",
+      "nearMiss": [
+        "Lists petitions or website names without how government receives/uses input.",
+        "Assumes everyone may normally address Toronto City Council directly or that a closed survey is currently open.",
+        "Calls consultation a binding vote or assumes the largest response count automatically determines a decision.",
+        "Explains consultation only for one level, or treats ordinary feedback as sufficient for the distinct Crown duty."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimBoundary": "Perspective tasks preserve actual differing honest accounts; civic tasks retain completed-group example, shared values and original campaign method/plan. Source-specific process knowledge is supplied in the verified task packet, not inferred from an existing learner estimate. No new institutional inventory, edge, age band or claim is authored."
+}

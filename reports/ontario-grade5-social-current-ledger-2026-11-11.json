@@ -2,21 +2,19 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "6569684fbc3b3016619a1d746227a716b352ffe6",
+  "localDependencyCommit": "e3adc620ab197a05e5a9c9837cc6469f744de3c9",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "Fifteen source-fit designs reviewed, including the two original social/environmental action plans. The remaining 26 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
+  "status": "16 source-fit Full authoring designs; remaining25 records separately under review. Full describes source/task design, not learner attainment or default-main acceptance.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Full": 15,
-    "Partial": 0,
-    "Unverified": 26,
-    "Gap": 0
+    "Unverified": 25,
+    "Full": 16
   },
   "associationInventory": {
-    "pairs": 31,
+    "pairs": 33,
     "topics": 11,
-    "codes": 15,
+    "codes": 16,
     "newClaims": 2,
     "reusedClaims": 9
   },
@@ -359,11 +357,15 @@
     },
     {
       "code": "B3.5",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_g8gJIsDxmj",
+        "mt_2GDBmKCJxs"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-public-input-processes-2026-11-11.json",
+      "protocolReference": "/protocols/public-input",
+      "coverageBasis": "Actual distinct input processes, decision links, all-level rationale and whole shared civic/perspective operations are accounted for in a prepared task protocol; no learner attainment or generic constitutional-duty equivalence."
     },
     {
       "code": "B3.6",

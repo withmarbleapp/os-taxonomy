@@ -121,3 +121,31 @@ test('Grade5 action plans bind actual government and citizen steps to source rol
     assert.throws(() => checkActionPlanActors(brokenSource, protocol), /Missing actor source/);
   }
 });
+
+function checkPublicInputProcesses(report) {
+  const protocol = report.protocols['public-input'];
+  assert.ok(new Set(protocol.processes.map(process => process.method)).size >= 3, 'Missing distinct input methods');
+  for (const process of protocol.processes) {
+    assert.ok(report.resources[process.resourceRef]?.url && process.decisionLink, 'Missing process source/decision link');
+  }
+  const described = protocol.learnerSteps.find(step => step.operation === 'describe-and-contrast');
+  assert.ok(described?.instruction && described.processIds.length >= 3, 'Missing actual process-description task');
+  for (const id of described.processIds) assert.ok(protocol.processes.some(process => process.id === id), 'Missing described process');
+  const rationale = protocol.learnerSteps.find(step => step.operation === 'explain-all-levels');
+  assert.ok(rationale?.instruction && rationale.resourceRefs.every(ref => report.resources[ref]), 'Missing all-level importance task/source');
+  assert.ok(protocol.learnerSteps.some(step => step.operation === 'perspective-and-plan' && step.instruction), 'Missing whole shared-operation task');
+  assert.ok(protocol.learnerSteps.some(step => step.operation === 'transfer' && step.instruction), 'Missing changed-scenario task');
+}
+test('Grade5 public-input processes require sourced methods, decision links and actual all-level explanation', () => {
+  const report = read('reports/ontario-grade5-public-input-processes-2026-11-11.json');
+  checkPublicInputProcesses(report);
+  const missingRationale = structuredClone(report);
+  missingRationale.protocols['public-input'].learnerSteps = missingRationale.protocols['public-input'].learnerSteps.filter(step => step.operation !== 'explain-all-levels');
+  assert.throws(() => checkPublicInputProcesses(missingRationale), /Missing all-level/);
+  const wrongSource = structuredClone(report);
+  wrongSource.protocols['public-input'].processes[0].resourceRef = 'absent';
+  assert.throws(() => checkPublicInputProcesses(wrongSource), /Missing process source/);
+  const noDecisionLink = structuredClone(report);
+  delete noDecisionLink.protocols['public-input'].processes[0].decisionLink;
+  assert.throws(() => checkPublicInputProcesses(noDecisionLink), /Missing process source\/decision link/);
+});
