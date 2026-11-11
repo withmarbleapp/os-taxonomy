@@ -8,8 +8,8 @@
     "formalStageRecords": 254,
     "formalCurricularGoals": 58,
     "formalStageCompetencies": 196,
-    "alignmentReviewedHere": 538,
-    "notAlignmentReviewedHere": 32,
+    "alignmentReviewedHere": 570,
+    "notAlignmentReviewedHere": 0,
     "previousINAssociations": 31
   },
   "interpretation": "Cumulative reviewed coverage is separate from catalogue verification and learner attainment. Unreviewed records remain pending, not missing mastery claims; applicability/resource/language conditions remain source-specific.",
@@ -290,8 +290,8 @@
       "area": "TWAU",
       "recordKind": "curricularGoal",
       "records": 7,
-      "reviewedHere": 0,
-      "pendingHere": 7
+      "reviewedHere": 7,
+      "pendingHere": 0
     },
     {
       "source": "ncert-ncfse-2023-ed2024",
@@ -299,8 +299,8 @@
       "area": "TWAU",
       "recordKind": "stageCompetency",
       "records": 25,
-      "reviewedHere": 0,
-      "pendingHere": 25
+      "reviewedHere": 25,
+      "pendingHere": 0
     }
   ],
   "records": [
@@ -18294,14 +18294,54 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.1"
+      "officialCode": "C-1.1",
+      "assessmentProtocols": [
+        "local-observation"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Identify actual local living/nonliving features and social relationships; distinguish observation, a named sky object and a supplied representation. Safe daytime observations and dated images replace unsafe Sun viewing/night access.",
+      "contributions": [
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_ppENoD8vf1",
+          "topicName": "Local Plants & Animals",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PiWZA8Z0ZJ",
+          "topicName": "Sun, Moon & Stars",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_XlyF294bPR",
+          "topicName": "Our Solar System",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.2",
@@ -18315,14 +18355,49 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.2"
+      "officialCode": "C-1.2",
+      "assessmentProtocols": [
+        "community-relationships"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Explain particular person–person and person–nature relations alongside attributed local traditions. A festival label alone does not explain a relationship; provided cases avoid compulsory private/religious disclosure.",
+      "contributions": [
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_zbEcwd40uv",
+          "topicName": "Celebrations we share",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_1kdEZRLyaZ",
+          "topicName": "Religious and cultural festivals",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.3",
@@ -18336,14 +18411,54 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.3"
+      "officialCode": "C-1.3",
+      "assessmentProtocols": [
+        "patterns-questions-predictions"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Generate questions and prior predictions from actual local/datetime records across living, seasonal, sky and community patterns. Check predictions against new evidence, allowing an unexpected result and distinguishing a convention from a natural regularity.",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "topicName": "Did it happen as predicted?",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fk33IEGP-T",
+          "topicName": "Sun, Moon, and stars",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_GtL2PVfRYP",
+          "topicName": "Planets moving among stars",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_EygMHKs8Ed",
+          "topicName": "Simple Food Chains",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.4",
@@ -18357,14 +18472,54 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.4"
+      "officialCode": "C-1.4",
+      "assessmentProtocols": [
+        "institutions-roles"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Explain who does what and why each named local institution matters, including delivery/communication and locally verified Panchayat functions. Use more than one representation; no bank transaction, account opening or universal local-government model is required.",
+      "contributions": [
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_uSUqTjOl8m",
+          "topicName": "Banks & Saving",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_SbEaQnMQoD",
+          "topicName": "Buyers & Sellers",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_RgQxPddV8v",
+          "topicName": "Goods & Services",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_blzW9Z8J7-",
+          "topicName": "What local councils do",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.5",
@@ -18378,14 +18533,39 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-1.5"
+      "officialCode": "C-1.5",
+      "assessmentProtocols": [
+        "local-material-construction"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Independently make an actual display/use object from safe local material with a purpose, choices and a practical check. A model supplied already made or a picture of a product is insufficient. Cutting/joining whole-card checks remain separate from a fold-only source task.",
+      "contributions": [
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "topicName": "Cutting, joining and shaping safely",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-2.1",
@@ -18399,14 +18579,59 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.1"
+      "officialCode": "C-2.1",
+      "assessmentProtocols": [
+        "supporting-systems"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Trace parts, connections and support to daily life through natural and made systems, including water, living cycles, food/material journeys, transport, communication and household electricity. A list of objects alone is not a system explanation.",
+      "contributions": [
+        {
+          "topicId": "mt_fhqVdj4BYr",
+          "topicName": "The Water Cycle",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_A1Xfu5p5KT",
+          "topicName": "Animal Life Cycles",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_tqgZH11cP5",
+          "topicName": "Supply Chains",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_ZL9qVVnpwN",
+          "topicName": "Communication with Light & Sound",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_9nxyFoYD_b",
+          "topicName": "What uses electricity at home",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-2.2",
@@ -18420,14 +18645,44 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.2"
+      "officialCode": "C-2.2",
+      "assessmentProtocols": [
+        "nature-cultural-practice"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Explain a concrete locally attributed environment–work–food–tradition relationship using reliable dated cases and a contrasting locality. Resource and festival claims contribute components; the actual relationship task remains explicit and is not inferred from either label alone.",
+      "contributions": [
+        {
+          "topicId": "mt_yDQmYTrrzP",
+          "topicName": "Natural, human and capital resources",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_1kdEZRLyaZ",
+          "topicName": "Religious and cultural festivals",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-2.3",
@@ -18441,14 +18696,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-2.3"
+      "officialCode": "C-2.3",
+      "assessmentProtocols": [
+        "local-change-evidence"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compare past/present local life using an elder account or attributed local story plus material evidence. Relate changed resources, work, food/practices and communication, distinguish inference from evidence, and allow differing genuine accounts.",
+      "contributions": [
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_9REmUc8r4D",
+          "topicName": "Evidence from the Past",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_2GDBmKCJxs",
+          "topicName": "Different perspectives and accounts",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-3.1",
@@ -18462,14 +18752,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.1"
+      "officialCode": "C-3.1",
+      "assessmentProtocols": [
+        "needs-and-protection"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Account for ordinary human health/shelter/protection and living things’ needs, with safe reporting/support routes for abuse or unsafe situations. No forced disclosure, induced alarm or universal safe-person stereotype.",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "topicName": "Everyday Safety Awareness",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_R2_rZ4F6r4",
+          "topicName": "No, go, tell",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_hHcaPPtPzS",
+          "topicName": "Early warning signs",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-3.2",
@@ -18483,14 +18808,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.2"
+      "officialCode": "C-3.2",
+      "assessmentProtocols": [
+        "everyday-emergency-preparation"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Discuss adult-approved preparation for the complete source hazard set using family/community discussion or a supplied accurate case. Identify warning, safe route/support/contact, roles and necessary preparations; no emergency is staged and no child clinical/firefighting/electrical repair duty is imported.",
+      "contributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "topicName": "Everyday Safety Awareness",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_URezjbU-6f",
+          "topicName": "Weather Forecasting & Safety",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_QR3vxbN1o4",
+          "topicName": "Planning a Task",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-3.3",
@@ -18504,14 +18864,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-3.3"
+      "officialCode": "C-3.3",
+      "assessmentProtocols": [
+        "safety-messages-roleplay"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Create actual short readable labels/slogans for an appropriate local/school display and enact a safe response roleplay. Retain both message production and enactment; reading an existing sign alone does not meet the source duty. Language/resources are declared without a fixed English inventory.",
+      "contributions": [
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "topicName": "Health and safety signs",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NP101Zl-4g",
+          "topicName": "Using New Vocabulary",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "topicName": "Everyday Safety Awareness",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.1",
@@ -18525,14 +18920,44 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.1"
+      "officialCode": "C-4.1",
+      "assessmentProtocols": [
+        "local-living-diversity"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Observe and describe locally relevant plants, birds and other animals across the required attributes, using actual accessible encounters and ethical records. No compulsory unknown-animal handling or invented animal call/growth observation.",
+      "contributions": [
+        {
+          "topicId": "mt_ppENoD8vf1",
+          "topicName": "Local Plants & Animals",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_A1Xfu5p5KT",
+          "topicName": "Animal Life Cycles",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.2",
@@ -18546,14 +18971,44 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.2"
+      "officialCode": "C-4.2",
+      "assessmentProtocols": [
+        "local-cultural-diversity"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Describe actual local variation in everyday practices, play and seasonal cultivation/celebrations with attributed participant/source accounts. Avoid treating one religion, menu, climate calendar or family as universal.",
+      "contributions": [
+        {
+          "topicId": "mt_OJVkWvIaM_",
+          "topicName": "Similarities & Differences",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_zbEcwd40uv",
+          "topicName": "Celebrations we share",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_1kdEZRLyaZ",
+          "topicName": "Religious and cultural festivals",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.3",
@@ -18567,14 +19022,39 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.3"
+      "officialCode": "C-4.3",
+      "assessmentProtocols": [
+        "resource-use"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Trace local natural materials/resources into actual uses, identify who/what depends on them and distinguish natural resources from labour and tools. The complete resource classification remains a separate whole-claim check, not assumed from naming one material.",
+      "contributions": [
+        {
+          "topicId": "mt_yDQmYTrrzP",
+          "topicName": "Natural, human and capital resources",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.4",
@@ -18588,14 +19068,39 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.4"
+      "officialCode": "C-4.4",
+      "assessmentProtocols": [
+        "resource-care-sharing"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Demonstrate fair access and practical maintenance/conservation with actual safe tree/water tasks and an evidence-based millet case. Combine information on contrasting real community efforts and explain mechanisms/limits; slogans or a universal zero-input crop claim are insufficient.",
+      "contributions": [
+        {
+          "topicId": "mt_7e-lG7YOWa",
+          "topicName": "Communities Protecting Resources",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "topicName": "Fairness, Equality and Equity",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.5",
@@ -18609,14 +19114,39 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.5"
+      "officialCode": "C-4.5",
+      "assessmentProtocols": [
+        "support-living-needs"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Identify a particular plant, bird and animal’s needs and make/check appropriate recurring support, with adult supervision and species-appropriate advice. No compulsory wildlife capture, unsuitable feeding or tree-growth claim inferred from a bean.",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_0B64gfJf7j",
+          "topicName": "Seeds & Plant Growth",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.6",
@@ -18630,14 +19160,44 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.6"
+      "officialCode": "C-4.6",
+      "assessmentProtocols": [
+        "access-fair-work"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compare differing access, opportunities, duties and shelter cases and propose a relevant practical adjustment. Equal shares alone may not be fair; avoid diagnosing, assigning fixed family/gender duties or demanding private hardship disclosure.",
+      "contributions": [
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "topicName": "Fairness, Equality and Equity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_S7UTAhptLi",
+          "topicName": "Different Lives and Experiences",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.7",
@@ -18651,14 +19211,44 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-4.7"
+      "officialCode": "C-4.7",
+      "assessmentProtocols": [
+        "norms-and-actual-care"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Explain reasons and carry out relevant common-space, water, transport, queue and inclusive-help practices. Ethical concern is a contextual disposition, not a pleasant-feeling score or an inference from one compliant performance.",
+      "contributions": [
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "topicName": "Rules and agreements exist",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "topicName": "Fairness, Equality and Equity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_lAvS72LOUO",
+          "topicName": "Everyday Kindness and Care",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "SkillWithContextualEngagement",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-5.1",
@@ -18672,14 +19262,39 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.1"
+      "officialCode": "C-5.1",
+      "assessmentProtocols": [
+        "plans-and-maps"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Interpret line plans at school and settlement/ward scales using landmarks, symbols and relative directions. Locate and explain a route; a memorised school walk alone is insufficient.",
+      "contributions": [
+        {
+          "topicId": "mt_61Pa4Eksva",
+          "topicName": "Finding places on a plan",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_w4cUnN_SsQ",
+          "topicName": "Reading and drawing maps",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-5.2",
@@ -18693,14 +19308,34 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.2"
+      "officialCode": "C-5.2",
+      "assessmentProtocols": [
+        "plans-and-maps"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Make actual sketches at the required familiar scales with intelligible symbols/key and consistent directions. Test another person’s interpretation and revise an ambiguity; no surveying accuracy or compulsory grid notation is added.",
+      "contributions": [
+        {
+          "topicId": "mt_w4cUnN_SsQ",
+          "topicName": "Reading and drawing maps",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-5.3",
@@ -18714,14 +19349,39 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-5.3"
+      "officialCode": "C-5.3",
+      "assessmentProtocols": [
+        "map-scale-transfer"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Read actual simple city/state/country maps using keys/directions to locate natural and built features, with inset/scale differences explicitly handled. No Australian capital or specialised map convention is silently substituted for the Indian case.",
+      "contributions": [
+        {
+          "topicId": "mt_w4cUnN_SsQ",
+          "topicName": "Reading and drawing maps",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_QVUW4olzHP",
+          "topicName": "Local, regional and state scales",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-6.1",
@@ -18735,14 +19395,49 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-6.1"
+      "officialCode": "C-6.1",
+      "assessmentProtocols": [
+        "safe-inquiry"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Actually carry out a safe question-led inquiry, with an independent OR group option, appropriate method, observation/data and a defensible answer. No mandatory group mode, manufactured confusion or guaranteed confirmation of the prediction.",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "topicName": "Simple tests and experiments",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "topicName": "Did it happen as predicted?",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_TTH2ouwyTW",
+          "topicName": "Safe steps in science tests",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-6.2",
@@ -18756,14 +19451,44 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-6.2"
+      "officialCode": "C-6.2",
+      "assessmentProtocols": [
+        "findings-representations"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Present actual observations and findings in varied accessible modes, distinguishing evidence from interpretation and explaining a conclusion/prediction/improvement. Source creative alternatives are not converted into compulsory mastery of every art form or English-only writing.",
+      "contributions": [
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_Hw70LI5xza",
+          "topicName": "Observation vs Interpretation",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-7.1",
@@ -18777,14 +19502,49 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-7.1"
+      "officialCode": "C-7.1",
+      "assessmentProtocols": [
+        "crosscutting-science"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Use concrete safe investigations to recognise energy transfer, observable matter behaviours and connected systems across cases. Retain a complete method/evidence account and changed-case transfer; no advanced nuclear store, wattage or algebraic law is imported.",
+      "contributions": [
+        {
+          "topicId": "mt_X_aDUBh-HF",
+          "topicName": "How energy travels around",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_YQkUdIHO8L",
+          "topicName": "Solids, Liquids & Gases",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "topicName": "Simple tests and experiments",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-7.2",
@@ -18798,14 +19558,54 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "C-7.2"
+      "officialCode": "C-7.2",
+      "assessmentProtocols": [
+        "science-engineering-portfolio"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Build a representative life/physical/earth-space/engineering portfolio with real observations, a functional model/test/improvement and an explanation of application. This is foundational familiarity preparing later subjects, not certification of every future disciplinary fact.",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_XlyF294bPR",
+          "topicName": "Our Solar System",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-1",
@@ -18819,14 +19619,49 @@
         382
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-1"
+      "officialCode": "CG-1",
+      "assessmentProtocols": [
+        "goal-local-world"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compose actual local observing, relationship, questioning, institution and making panels; independently explain how the evidence relates to the same surroundings.",
+      "contributions": [
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "topicName": "Natural, managed and built features",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-2",
@@ -18840,14 +19675,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-2"
+      "officialCode": "CG-2",
+      "assessmentProtocols": [
+        "goal-interdependence"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compose natural/made systems, environment–practice relations and change evidence. Discuss mutual dependence and the source’s broad human-community orientation without compelled religious agreement, enthusiasm or a global mastery score.",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "topicName": "Social roles and changing responsibilities",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_yDQmYTrrzP",
+          "topicName": "Natural, human and capital resources",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "SkillWithContextualEngagement",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-3",
@@ -18861,14 +19731,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-3"
+      "officialCode": "CG-3",
+      "assessmentProtocols": [
+        "goal-safety"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Integrate ordinary needs/protection, discussion-based emergency preparation and actual safe messages/roleplay; check a new appropriate normal/emergency case.",
+      "contributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "topicName": "Everyday Safety Awareness",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_R2_rZ4F6r4",
+          "topicName": "No, go, tell",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_URezjbU-6f",
+          "topicName": "Weather Forecasting & Safety",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "topicName": "Health and safety signs",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-4",
@@ -18882,14 +19787,49 @@
         383
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-4"
+      "officialCode": "CG-4",
+      "assessmentProtocols": [
+        "goal-sensitive-care"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compose living/cultural diversity, resources, fair access and actual care/norm tasks. Retain considerate orientation as contextual and potentially variable, separately from demonstrated explanation/action.",
+      "contributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "topicName": "Fairness, Equality and Equity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_7e-lG7YOWa",
+          "topicName": "Communities Protecting Resources",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "topicName": "Rules and agreements exist",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "SkillWithContextualEngagement",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-5",
@@ -18903,14 +19843,44 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-5"
+      "officialCode": "CG-5",
+      "assessmentProtocols": [
+        "goal-maps"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compose reading local plans, drawing interpretable sketches and interpreting broader maps, then transfer to a new key/route rather than count component tags as success.",
+      "contributions": [
+        {
+          "topicId": "mt_61Pa4Eksva",
+          "topicName": "Finding places on a plan",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_w4cUnN_SsQ",
+          "topicName": "Reading and drawing maps",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_QVUW4olzHP",
+          "topicName": "Local, regional and state scales",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-6",
@@ -18924,14 +19894,49 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-6"
+      "officialCode": "CG-6",
+      "assessmentProtocols": [
+        "goal-inquiry"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Combine information from actual people/records/observations and a safe inquiry; present a supported answer with provenance/uncertainty in more than one mode.",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_7IFpDVNsmt",
+          "topicName": "Gathering, recording, classifying and presenting data",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_Hw70LI5xza",
+          "topicName": "Observation vs Interpretation",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-7",
@@ -18945,14 +19950,59 @@
         384
       ],
       "catalogueStatus": "accepted-source-position-verified",
-      "alignmentReviewStatus": "not-reviewed-in-this-slice",
+      "alignmentReviewStatus": "reviewed-twau",
       "existingINAssociationsAtBase": 0,
       "sourceGradeBand": [
         3,
         4,
         5
       ],
-      "officialCode": "CG-7"
+      "officialCode": "CG-7",
+      "assessmentProtocols": [
+        "goal-science-engineering"
+      ],
+      "assessmentProtocolReport": "ncert-twau-protocols-2026-11-10.json",
+      "sourceFitSummary": "Compose the concrete crosscutting and disciplinary/engineering portfolios and explain a connection across cases, while preserving this source goal’s foundational scope.",
+      "contributions": [
+        {
+          "topicId": "mt_X_aDUBh-HF",
+          "topicName": "How energy travels around",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_YQkUdIHO8L",
+          "topicName": "Solids, Liquids & Gases",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "topicName": "What Living Things Need",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_XlyF294bPR",
+          "topicName": "Our Solar System",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component"
+        }
+      ],
+      "remainingConditions": [],
+      "ageBand": [
+        8,
+        11
+      ],
+      "ageMeaning": "Official Preparatory stage window, Grades 3–5; stage-end attainment, not an age-eight deadline.",
+      "disposition": "Full",
+      "reviewReport": "ncert-twau-alignment-2026-11-10.json"
     }
   ],
   "sources": [
@@ -19124,13 +20174,13 @@
     },
     {
       "slice": "The World Around Us",
-      "pendingRecords": 32,
+      "pendingRecords": 0,
       "groups": [
         {
           "source": "ncert-ncfse-2023-ed2024",
           "stage": "Preparatory",
           "area": "TWAU",
-          "pendingRecords": 32
+          "pendingRecords": 0
         }
       ],
       "reviewRequirement": "Review the integrated primary requirements across existing Science, Geography, History and other domains, with justified specific knowledge additions only where whole-claim reuse fails."
@@ -19298,5 +20348,11 @@
     ]
   },
   "namedEnglishL2BaseCommit": "0962c5b3364142e911e333a40ec6dfbbe7281b83",
-  "observationReasoningBaseCommit": "f052d0750e692c021d92d5f7ad5e1b6b49eeb4b9"
+  "observationReasoningBaseCommit": "f052d0750e692c021d92d5f7ad5e1b6b49eeb4b9",
+  "twauBaseCommit": "635faab0ac77578955f246517f3d2fe2ff849942",
+  "completionNextActions": [
+    "Every accepted source position has a proposed review disposition. Complete ordinary PR review/default-branch reconciliation; then separate consumer compatibility/publication.",
+    "Retain conditional language/art-form binding and contextual channels; one physical musical-scale source phrase remains explicitly Unverified.",
+    "Do not infer coverage for unverified out-of-catalogue advisory source cells or every Indian board."
+  ]
 }

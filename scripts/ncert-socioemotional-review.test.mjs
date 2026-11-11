@@ -884,7 +884,7 @@ test('SE guard rejects wrong-valid protocols, lost practical duties, mood criter
     x=>{const rev=x.report.claimRevisions[0];x.topics.topics.find(q=>q.id===rev.topicId).assessmentPrompt=rev.before.assessmentPrompt;},
     x=>{x.alignments.alignments=x.alignments.alignments.filter(q=>!(q.topicId===inheritedRole.id&&q.scope==='jurisdiction'&&q.country==='CA'));},
     x=>{const row=x.report.records[0],id=row.contributions[0].topicId;const a=x.alignments.alignments.find(q=>q.topicId===id&&q.country==='IN'&&q.standards.includes(row.key));a.standards=a.standards.filter(k=>k!==row.key);},
-    x=>x.ledger.nextSlices.find(q=>q.pendingRecords>0).pendingRecords++,
+    x=>(x.ledger.nextSlices.find(q=>q.pendingRecords>0) ?? x.ledger.nextSlices[0]).pendingRecords++,
   ];
   for(const mutate of mutations){const x=clone(input);mutate(x);assert.throws(()=>check(x));}
   const future=clone(input);future.alignments.alignments.push({topicId:input.topics.topics[0].id,scope:'jurisdiction',country:'NZ',ageRangeStart:8,ageRangeEnd:9,standards:[],ageOnly:true});check(future);
