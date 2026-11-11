@@ -31,6 +31,17 @@ test('archive checks report malformed research inventories without hiding schema
  }
 });
 test('published research passes schema and cross-file checks', () => assert.deepEqual(checkTeachingResearch(research, context), []));
+test('citation locators cannot silently become prose-redaction placeholders', () => {
+ const marker = '[curriculum wording omitted; reference K-LS1-1]';
+ for (const suffix of [marker, encodeURIComponent(marker)]) {
+  const copy = structuredClone(research);
+  copy.records[0].sources[0].url = `https://example.org/reference/${suffix}`;
+  assert.ok(checkTeachingResearch(copy, context).some(error => /citation URL/.test(error)));
+ }
+ const copy = structuredClone(research);
+ copy.records[0].publicationNotes.omittedCurriculumText.push({ path: 'sources[0].url', codes: ['K-LS1-1'] });
+ assert.ok(checkTeachingResearch(copy, context).some(error => /citation URL/.test(error)));
+});
 test('rejects stale version, unknown topic, duplicate record, broken citation and wrong coverage', () => {
  for (const mutate of [r => {r.version='v2'}, r => {r.records[0].topicId='mt_missing'}, r => r.records.push(structuredClone(r.records[0])), r => {r.records[0].learn.activities[0].sourceClaims=['not a source']}, r => {r.coverage.withResearch++}, r => {r.topicFileSha256='0'.repeat(64)}, r => {r.records[0].learn.schemaVersion=1}, r => {r.records[0].privateDbId='secret'}, r => {r.records[0].assess.errorPatterns[0].reteachPrerequisiteId='mt_missing'}]) {
   const copy = structuredClone(research); mutate(copy); assert.ok(checkTeachingResearch(copy, context).length > 0);

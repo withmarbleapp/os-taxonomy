@@ -58,6 +58,14 @@ export function checkTeachingResearch(research, { topics, topicsBytes, manifest,
     check(Boolean(topic), `research unknown topic ${row.topicId}`);
     check(!seen.has(row.topicId), `duplicate research ${row.topicId}`); seen.add(row.topicId);
     check(!internal.test(JSON.stringify(row.learn)), `research ${row.topicId}: internal artifact vocabulary`);
+    for (const source of row.sources) if (source.url) {
+      let locator = source.url;
+      try { locator = decodeURIComponent(locator); } catch { /* URI shape is checked by the schema. */ }
+      check(!/\[curriculum wording omitted;/i.test(locator), `research ${row.topicId}: citation URL contains a prose-redaction marker`);
+    }
+    for (const omission of row.publicationNotes.omittedCurriculumText) {
+      check(!/^\.?sources\[(0|[1-9][0-9]*)\]\.url$/.test(omission.path), `research ${row.topicId}: citation URL must remain a locator, not omitted prose`);
+    }
     const claims = new Set(row.sources.map(s => s.claim));
     for (const activity of row.learn.activities) for (const claim of activity.sourceClaims) check(claims.has(claim), `research ${row.topicId}: unknown source claim`);
     if (row.assess) {
