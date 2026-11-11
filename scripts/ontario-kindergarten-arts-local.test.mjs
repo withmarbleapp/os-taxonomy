@@ -26,5 +26,5 @@ test('the complete Kindergarten review accounts for all retained 127 source reco
  const rows=files.flatMap(f=>load(`../reports/ontario-kindergarten-${f}-design-2026-11-11.json`).records);
  const source=load('../data/curriculum-standards.json').curricula.find(c=>c.slug===report.source.catalogue);
  assert.equal(rows.length,127);assert.equal(new Set(rows.map(r=>r.key)).size,127);assert.deepEqual(new Set(rows.map(r=>r.key)),new Set(source.topics.map(t=>t.key)));
- assert.equal(rows.filter(r=>r.disposition==='Full').length,120);assert.equal(rows.filter(r=>r.disposition==='Partial').length,7);
+ assert.equal(rows.filter(r=>r.disposition==='Full').length,113);assert.equal(rows.filter(r=>r.disposition==='Partial').length,9);assert.equal(rows.filter(r=>r.disposition==='Out of scope').length,5);
 });

@@ -12,14 +12,16 @@
   },
   "scope": {
     "records": 27,
-    "Full": 27,
+    "Full": 20,
     "newTopics": 0,
     "authoredClaimChanges": 0,
     "dependencyChanges": 0,
-    "reusedTopics": 32,
-    "componentPairs": 67,
-    "newContexts": 26,
-    "newPairs": 67
+    "reusedTopics": 25,
+    "componentPairs": 50,
+    "newContexts": "Historical checkpoint superseded by the explicit PE exclusion delta; see scope report.",
+    "newPairs": "Historical checkpoint superseded by the explicit PE exclusion delta; see scope report.",
+    "Partial": 2,
+    "OutOfScopePhysicalEducation": 5
   },
   "protocols": {
     "friendship-and-social-problems": {
@@ -61,7 +63,7 @@
         "C16.3",
         "C16.5"
       ],
-      "task": "Use a suitable ordinary movement/play experience and rest period to discuss/show noticed mind/body effects without a fitness norm or treatment claim. Use accurate varied-food picture cards and the actual HealthCanada food-guide snapshot to plan an illustrative varied meal/snack including vegetables/fruit,wholegrains,protein and water, explaining simple benefits and a feasible access/preparation strategy; no real eating or household income disclosure is required. Actually practise supported soap-and-water handwashing (wet,soap,rub including fingers/thumbs,rinse,dry) with the public-health20second adult timing support, and discuss relevant times such as before food/after toilet or coughing. Through play or a fictional character, discuss happy/unhappy experiences and reasons; private autobiography and happiness are not scored as correctness. Use a real drinking-water/rest opportunity and a suitable accessible active game, noticing effects without withholding any basic need. Include a fictional tired character to explain the role of rest and sleep. For hygiene, also discuss adult-supported tooth care and practise an elbow/tissue cough action without spraying or spreading materials; tooth brushing is not independently certified by the handwashing station. Use the supplied seven-day routine record honestly: record actual opportunity/support, an optional chosen action and reflection; never fill invented successes. Provide a fresh fictional feeling story so passing on private details does not prevent discussing reasons for happiness or unhappiness.",
+      "task": "Use the attributed health-source account and original fictional active/rest scenarios to explain possible mind/body effects without an exercise test, fitness norm or treatment claim. Use accurate varied-food picture cards and the actual HealthCanada food-guide snapshot to plan an illustrative varied meal/snack including vegetables/fruit,wholegrains,protein and water, explaining simple benefits and a feasible access/preparation strategy; no real eating or household income disclosure is required. Actually practise supported soap-and-water handwashing (wet,soap,rub including fingers/thumbs,rinse,dry) with the public-health20second adult timing support, and discuss relevant times such as before food/after toilet or coughing. Through play or a fictional character, discuss happy/unhappy experiences and reasons; private autobiography and happiness are not scored as correctness. Use a real drinking-water/rest opportunity without withholding any basic need; exercise participation is not required. Include a fictional tired character to explain the role of rest and sleep. For hygiene, also discuss adult-supported tooth care and practise an elbow/tissue cough action without spraying or spreading materials; tooth brushing is not independently certified by the handwashing station. Use the supplied seven-day routine record honestly: record actual opportunity/support, an optional chosen action and reflection; never fill invented successes. Provide a fresh fictional feeling story so passing on private details does not prevent discussing reasons for happiness or unhappiness.",
       "positive": "Effects/benefits are discussed, a feasible varied-food choice is explained, hygiene is actually practised, and feelings are described with contextual reasons.",
       "nearMiss": "Makes a body-size/moral-worth judgment, recites foods while shaming unavailable food, demonstrates only pretend handwashing without the actual practice duty, or demands that every child feel happy after movement.",
       "transfer": "New suitable food/routine/fictional feeling context requires an adapted explanation.",
@@ -83,80 +85,23 @@
       "limits": "Fictional scenarios only; no actual injury demonstration, clinical assessment, recovery timetable, compulsory trauma disclosure or real stranger contact.",
       "resourceIds": []
     },
-    "regular-cooperative-movement": {
+    "fine-motor-and-cooperative-play": {
       "codes": [
-        "C17",
-        "C17.1",
         "C17.2",
         "C17.3",
         "C18",
-        "C18.1",
-        "C18.2",
-        "C18.3",
         "C18.4",
         "C18.5"
       ],
-      "task": "Plan actual recurring varied accessible movement occasions rather than one isolated station: creative own-movement sequences, large-muscle movement with and without appropriate equipment, balance/wholebody/hand-eye coordination and comfortable flexibility, and small-muscle work with construction,art and practical tools. Include spatial awareness in both scales (safe routes/separation and fitting/placing/threading pieces). Partners agree safe roles/turns and adapt a cooperative game. After a manageable failed attempt the child chooses help/change/retry rather than being required to persist through pain or overload. Record actual repeated participation/support while preserving accessible movement choices. Use the five-day schedule, beginning with suitable gradual preparation and ending with a comfortable slower transition. Actual stations include a safe travelling/stop-cue route, changed-base balance, a soft-object partner throw/secure catch, and a seated/tabletop construction using fitting, folding and appropriate supervised tools. The learner creates an ordered movement message, then adapts it to a changed intention. A manageable retry may involve large-muscle movement or small-piece placement; stopping for discomfort and asking for help are valid. Do not infer all-activity fitness from one station.",
-      "positive": "Daily/regular participation, coordination/body control, bothlarge/smallmuscles, bothspatial scales and cooperative strategies are each actually represented.",
-      "nearMiss": "One successful hop certifies all movement duties; copying one gesture certifies own creative sequence; standing athletic performance or a fixed grip is treated as the only valid form.",
-      "transfer": "Changed available space,tool,partner or movement intention requires adjustment.",
-      "resourceCondition": "Actual suitable recurring activity schedule,adult supervision and access choices are required; an authored plan is not evidence of actual child participation.",
-      "resourceIds": [
-        "weekly-movement-plan"
-      ]
+      "task": "Use actual tabletop construction, drawing and art with adult-approved card, blunt scissors, joining tools and accessible materials. Make a small model by fitting, placing, cutting, folding and joining pieces, checking position and fit against the intended design. Offer an ordinary manageable construction challenge; the pupil may change method, ask for help, pause or retry without manufacturing distress. In an actual non-physical cooperative building or board game, agree roles and turns, explain a strategy, try it and adapt to a changed shared resource. Keep the actual small-movement and spatial decisions identifiable; adult completion or a diagram alone is insufficient. No travelling route, ball skill, balance station, warm-up, fitness test or daily exercise participation is required.",
+      "positive": "Actual fine-motor control, spatial fit, supported persistence and cooperative strategies are checked separately; no gross-motor result is inferred.",
+      "nearMiss": "A group product certifies each member, an adult does the fine movements, or a fine-motor success is used to certify the excluded whole-body duty.",
+      "transfer": "Change piece size, joining tool, shared resource or partner; adapt the actual fine-motor or cooperative strategy.",
+      "resourceCondition": "Actual accessible supervised materials and benign cooperative activity are required. No Physical Education schedule or performance condition.",
+      "resourceIds": []
     }
   },
   "resources": {
-    "weekly-movement-plan": {
-      "status": "Original prepared schedule; actual participation and access/support must be recorded at delivery, not fabricated.",
-      "sessions": [
-        {
-          "day": 1,
-          "activities": [
-            "Safe walk/wheel route with direction and stop cues",
-            "Supported balance and own movement phrase",
-            "Fit and place blocks in an own small structure"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Adapt route to changed space",
-            "Soft-object target throw and secure partner catch",
-            "Fold and join a card structure"
-          ]
-        },
-        {
-          "day": 3,
-          "activities": [
-            "Cooperative movement game with agreed turns",
-            "Comfortable controlled mobility with appropriate support",
-            "Cut/fold or accessible piece-placement task"
-          ]
-        },
-        {
-          "day": 4,
-          "activities": [
-            "Own changed expressive sequence",
-            "Changed-base balance and soft-object receive/retain",
-            "Construct a model with changed piece size"
-          ]
-        },
-        {
-          "day": 5,
-          "activities": [
-            "Return to two selected movement tasks and review a supported adjustment",
-            "Share the own movement phrase with a partner",
-            "Review the real participation record without normative comparison"
-          ]
-        }
-      ],
-      "limits": [
-        "Adult prepares a suitable clear supervised space and accessible equipment before delivery.",
-        "No imposed running/jumping where inaccessible, physical-performance norm, forced range or persistence through pain.",
-        "Whole inherited locomotor, balance, catching and tool-use evidence remains separately assessed where the task samples only a component."
-      ]
-    },
     "seven-day-routine-record": {
       "days": [
         {
@@ -615,7 +560,7 @@
         "health-food-hygiene-and-feelings",
         "safety-and-get-help"
       ],
-      "requiredTaskDuty": "Investigate body and mind well-being through actual activity, feasible food choices, hygiene practice, safety help-seeking and discussion of feelings.",
+      "requiredTaskDuty": "Investigate body and mind well-being through source-backed activity/rest explanations, feasible food choices, hygiene practice, safety help-seeking and discussion of feelings; no exercise performance required.",
       "topicContributions": [
         {
           "topicId": "mt_cxJRc15osy",
@@ -673,7 +618,7 @@
       "protocolIds": [
         "health-food-hygiene-and-feelings"
       ],
-      "requiredTaskDuty": "Notice and discuss suitable activity and rest effects on body and mind without imposing a performance or emotional norm.",
+      "requiredTaskDuty": "Explain suitable activity/rest effects on body and mind using an attributed account and fictional cases, without exercise assessment or a performance/emotional norm.",
       "topicContributions": [
         {
           "topicId": "mt_cxJRc15osy",
@@ -833,82 +778,33 @@
     {
       "code": "C17",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C17",
-      "disposition": "Full",
-      "protocolIds": [
-        "regular-cooperative-movement"
-      ],
+      "disposition": "Out of scope",
+      "protocolIds": [],
       "requiredTaskDuty": "Take part in recurring varied accessible movement occasions; a single successful station does not represent sustained participation.",
-      "topicContributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_hu_OZPduxP",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_QxsoqVUt6u",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        }
-      ],
+      "topicContributions": [],
       "remainingConditions": [],
-      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
+      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification.",
+      "exclusionReason": "Physical Education is outside the user-authorised integration scope."
     },
     {
       "code": "C17.1",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C17.1",
-      "disposition": "Full",
-      "protocolIds": [
-        "regular-cooperative-movement"
-      ],
+      "disposition": "Out of scope",
+      "protocolIds": [],
       "requiredTaskDuty": "Include an own creative movement sequence and varied accessible active opportunities in the recurring programme.",
-      "topicContributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_hu_OZPduxP",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        }
-      ],
+      "topicContributions": [],
       "remainingConditions": [],
-      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
+      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification.",
+      "exclusionReason": "Physical Education is outside the user-authorised integration scope."
     },
     {
       "code": "C17.2",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C17.2",
-      "disposition": "Full",
+      "disposition": "Partial",
       "protocolIds": [
-        "regular-cooperative-movement"
+        "fine-motor-and-cooperative-play"
       ],
-      "requiredTaskDuty": "Choose a manageable adjustment, help or retry across both whole-body and small-movement tasks, respecting discomfort and access needs.",
+      "requiredTaskDuty": "Retain persistence, strategy change and appropriate help during fine-motor construction only; the gross-motor requirement is excluded.",
       "topicContributions": [
         {
           "topicId": "mt_UGf6jICEhs",
@@ -927,18 +823,11 @@
             6
           ],
           "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
         }
       ],
-      "remainingConditions": [],
+      "remainingConditions": [
+        "Only the fine-motor contribution is retained; the mandatory gross-motor portion is excluded Physical Education, so this is not whole-expectation coverage."
+      ],
       "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
     },
     {
@@ -946,7 +835,7 @@
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C17.3",
       "disposition": "Full",
       "protocolIds": [
-        "regular-cooperative-movement"
+        "fine-motor-and-cooperative-play"
       ],
       "requiredTaskDuty": "Agree roles, turns and an adaptive strategy for an actual cooperative game or shared activity.",
       "topicContributions": [
@@ -975,39 +864,12 @@
     {
       "code": "C18",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18",
-      "disposition": "Full",
+      "disposition": "Partial",
       "protocolIds": [
-        "regular-cooperative-movement"
+        "fine-motor-and-cooperative-play"
       ],
-      "requiredTaskDuty": "Develop control and spatial understanding through varied whole-body, object-control and precise small-movement activities.",
+      "requiredTaskDuty": "Retain controlled small movements and spatial placement in construction and art only; whole-body movement is excluded.",
       "topicContributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_Zm-lQmiter",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
         {
           "topicId": "mt_FtCLISvSGw",
           "role": "component",
@@ -1018,126 +880,50 @@
           "wholeClaimAssessmentRetained": true
         }
       ],
-      "remainingConditions": [],
+      "remainingConditions": [
+        "Only the fine-motor contribution is retained; the mandatory gross-motor portion is excluded Physical Education, so this is not whole-expectation coverage."
+      ],
       "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
     },
     {
       "code": "C18.1",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18.1",
-      "disposition": "Full",
-      "protocolIds": [
-        "regular-cooperative-movement"
-      ],
+      "disposition": "Out of scope",
+      "protocolIds": [],
       "requiredTaskDuty": "Use safe spacing, direction and position while travelling or carrying out other whole-body movement.",
-      "topicContributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_Y9XKzLrUAZ",
-          "role": "component",
-          "ageBand": [
-            5,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        }
-      ],
+      "topicContributions": [],
       "remainingConditions": [],
-      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
+      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification.",
+      "exclusionReason": "Physical Education is outside the user-authorised integration scope."
     },
     {
       "code": "C18.2",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18.2",
-      "disposition": "Full",
-      "protocolIds": [
-        "regular-cooperative-movement"
-      ],
+      "disposition": "Out of scope",
+      "protocolIds": [],
       "requiredTaskDuty": "Demonstrate purposeful whole-body control in suitable activities using equipment and in activities without equipment.",
-      "topicContributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_19-_RVOCbo",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_Zm-lQmiter",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        }
-      ],
+      "topicContributions": [],
       "remainingConditions": [],
-      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
+      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification.",
+      "exclusionReason": "Physical Education is outside the user-authorised integration scope."
     },
     {
       "code": "C18.3",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18.3",
-      "disposition": "Full",
-      "protocolIds": [
-        "regular-cooperative-movement"
-      ],
+      "disposition": "Out of scope",
+      "protocolIds": [],
       "requiredTaskDuty": "Explore stable and changing balance, coordinated whole-body action, eye-hand receiving and comfortable mobility.",
-      "topicContributions": [
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_Zm-lQmiter",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        },
-        {
-          "topicId": "mt_Lzpzxs7z4C",
-          "role": "component",
-          "ageBand": [
-            4,
-            6
-          ],
-          "wholeClaimAssessmentRetained": true
-        }
-      ],
+      "topicContributions": [],
       "remainingConditions": [],
-      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification."
+      "authoringMeaning": "Complete prepared programme design, not completed child observations or binary confidence/character/fitness certification.",
+      "exclusionReason": "Physical Education is outside the user-authorised integration scope."
     },
     {
       "code": "C18.4",
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18.4",
       "disposition": "Full",
       "protocolIds": [
-        "regular-cooperative-movement"
+        "fine-motor-and-cooperative-play"
       ],
       "requiredTaskDuty": "Use controlled smaller movements with different suitable materials and tools across play, construction and art.",
       "topicContributions": [
@@ -1168,7 +954,7 @@
       "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C18.5",
       "disposition": "Full",
       "protocolIds": [
-        "regular-cooperative-movement"
+        "fine-motor-and-cooperative-play"
       ],
       "requiredTaskDuty": "Apply position and fit judgments while placing, joining, folding or assembling smaller components.",
       "topicContributions": [
@@ -1198,7 +984,7 @@
   "conditions": {
     "wholeClaims": "Source tasks contribute components; broader inherited mastery inventories and hard prerequisite readiness remain separate. No definitions or learner state changed.",
     "contextualAims": "Willingness, initiative, self-confidence, persistence and emotional regulation are contextual developmental aims. Record opportunities/choices/support; never infer enduring character or demand happy/calm appearance.",
-    "participation": "Actual recurring opportunities and honest records are required at delivery. A prepared schedule or blank record is not completed participation.",
+    "participation": "Actual benign cooperative play, fine-motor practice and health routines are retained. Physical Education participation and gross-motor assessment are excluded.",
     "safety": "Provide accessible supervised choices and appropriate actual materials. No forced disclosure, real unsafe contact or clinical diagnosis.",
     "coverageMeaning": "Full is prepared source-task authoring with named components, not observed attainment or universal developmental milestones."
   }
