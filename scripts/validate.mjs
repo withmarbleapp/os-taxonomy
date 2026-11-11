@@ -14,7 +14,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
-import { checkTeachingResearch } from './check-teaching-research.mjs';
+import { checkTeachingResearch, checkResearchArchiveReferences } from './check-teaching-research.mjs';
 import { findDependencyCycle } from './check-dependency-cycles.mjs';
 import { checkTopicCompatibility } from './check-curriculum-alignments.mjs';
 
@@ -102,6 +102,7 @@ for (const c of clusters.clusters) {
 const research = load('teaching-research.json');
 const researchSchema = JSON.parse(readFileSync(resolve(DATA, '..', 'schema', 'teaching-research.schema.json'), 'utf8'));
 errors.push(...checkTeachingResearch(research, { topics, topicsBytes: bytesOf('topics.json'), manifest, schema: researchSchema }));
+errors.push(...checkResearchArchiveReferences(load('archived-teaching-research.json'), { topics, research }));
 check(Boolean(manifest.files?.['teaching-research.json']), 'manifest missing teaching-research.json checksum');
 
 // Optional during preparation; a declared/present file must be complete and bound.

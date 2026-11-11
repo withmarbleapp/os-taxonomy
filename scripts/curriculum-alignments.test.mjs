@@ -163,6 +163,7 @@ function snapshot(directory, includeAlignments, scoped = false) {
   };
   manifest.teachingResearch = { schemaVersion: research.schemaVersion, exportedAt: research.exportedAt, topicFileSha256: research.topicFileSha256, coverage: research.coverage };
   put('teaching-research.json', research);
+  put('archived-teaching-research.json', { schemaVersion: 1, version: 'v1', records: [], activeReferenceRepairs: [] });
   if (includeAlignments) {
     put('curriculum-alignments.json', document);
     manifest.counts.curriculumAlignments = document.alignments.length;
@@ -172,6 +173,35 @@ function snapshot(directory, includeAlignments, scoped = false) {
     return run(join(directory, 'scripts', 'validate.mjs'));
   } };
 }
+
+test('dataset validation rejects stale archive repairs even with an updated manifest checksum', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'taxonomy-archive-repairs-'));
+  try {
+    const fixture = snapshot(dir, true);
+    fixture.put('archived-teaching-research.json', { schemaVersion: 1, version: 'v1', records: [],
+      activeReferenceRepairs: [{ researchTopicId: 'mt_missing', path: 'assess.errorPatterns[0].reteachPrerequisiteId', from: 'mt_old', to: 'mt_missing' }] });
+    const result = fixture.validate();
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /stale active archive repair/);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('dataset validation prints malformed research diagnostics without throwing from archive checks', () => {
+  for (const records of [undefined, null, [null]]) {
+    const dir = mkdtempSync(join(tmpdir(), 'taxonomy-research-shape-'));
+    try {
+      const fixture = snapshot(dir, true);
+      const research = JSON.parse(readFileSync(join(dir, 'data', 'teaching-research.json')));
+      if (records === undefined) delete research.records;
+      else research.records = records;
+      fixture.put('teaching-research.json', research);
+      const result = fixture.validate();
+      assert.equal(result.status, 1);
+      assert.match(result.stderr, /records/);
+      assert.doesNotMatch(result.stderr, /TypeError|Cannot read properties/);
+    } finally { rmSync(dir, { recursive: true, force: true }); }
+  }
+});
 
 test('dataset validation distinguishes preparation mode from complete manifest-bound alignments', () => {
   for (const present of [false, true]) {
