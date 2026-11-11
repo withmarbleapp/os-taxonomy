@@ -15,9 +15,9 @@
     "excluded": "A common processes/coding/applications are reviewed separately; no new completion from link counts."
   },
   "counts": {
-    "freshFull": 17,
+    "freshFull": 19,
     "retainedHistoricalFull": 16,
-    "remainingPartial": 9
+    "remainingPartial": 7
   },
   "expectations": [
     {
@@ -569,15 +569,15 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E2.3",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
+      "disposition": "Full",
+      "reviewBasis": "Actual composition/physical-property classification and three attributed peoples' knowledge-to-purpose cases explicitly assessed; no whole generic or cultural mastery inferred.",
       "contributingTopicIds": [
         "mt_R6YoRXkRxS",
         "mt_wH4t4TH0Yw"
       ],
-      "remainingConditions": [
-        "Verify the composition-based classifications as well as physical tests. Observable colour or a rock-type label alone does not establish mineral composition."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-mineral-classification-knowledge-design-2026-11-11.json",
+      "protocolReference": "/protocols/E2.3"
     },
     {
       "code": "ON-SCI-2022-G4-E2.4",
@@ -609,12 +609,15 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E2.6",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Use appropriate authoritative community sources and assess the knowledge/property/purpose connection. A generic scratch test or a community-identity lesson alone cannot satisfy the expectation."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Actual composition/physical-property classification and three attributed peoples' knowledge-to-purpose cases explicitly assessed; no whole generic or cultural mastery inferred.",
+      "contributingTopicIds": [
+        "mt_R6YoRXkRxS",
+        "mt_wH4t4TH0Yw"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-mineral-classification-knowledge-design-2026-11-11.json",
+      "protocolReference": "/protocols/E2.6"
     }
   ],
   "inventoryCorrection": "The initial draft scope/count metadata said40 content records/14 historicalFull; the actual complete catalogue-derived ledger already contained42/16. Counts now match those retained rows. The26 prior residuals and all source associations are unchanged.",
@@ -624,6 +627,6 @@
     "version": "2022",
     "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/885f1ebf-50ff-4a6c-8866-96dba4afbf09/SciTech_G4_AODA.pdf",
     "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
-    "freshReadScope": "All26 selected historicalPartial mandatory cores read in fresh official API captures; actual printed127–132 complete B/C/D source sections additionally read. Other historicalFull labels remain historical except explicit task-bound revisits."
+    "freshReadScope": "All26 selected historicalPartial mandatory cores read in fresh official API captures; actual printed127–134 complete Grade4 B/C/D/E source sections additionally read. Other historicalFull labels remain historical except explicit task-bound revisits."
   }
 }

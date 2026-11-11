@@ -34,6 +34,8 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       'ON-SCI-2022-G4-C2.6': ['material-interactions', 'sound-interactions'],
       'ON-SCI-2022-G4-C2.7': ['light-heat'],
       'ON-SCI-2022-G4-C2.8': ['sensory-devices'],
+      'ON-SCI-2022-G4-E2.3': ['composition-properties'],
+      'ON-SCI-2022-G4-E2.6': ['first-nations-selection', 'metis-selection', 'inuit-selection'],
       'ON-SCI-2022-G4-D1': ['community-machine', 'same-purpose-environment'],
       'ON-SCI-2022-G4-D1.1': ['community-machine'],
       'ON-SCI-2022-G4-D1.2': ['same-purpose-environment'],
@@ -156,5 +158,17 @@ test('Grade4 machine impact duties retain varied communities and the same-purpos
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing varied-community comparison|Missing required scientific task role/);
   }
   const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['mower-comparison'].expectedEvidence;
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
+});
+
+
+test('Grade4 mineral tasks retain composition and all three attributed knowledge-selection cases', () => {
+  const name = 'ontario-grade4-mineral-classification-knowledge-design-2026-11-11.json';
+  for (const ref of ['haida-selection', 'metis-selection', 'inuit-selection']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocols['E2.6'].caseRefs = damaged.protocols['E2.6'].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases.classification.expectedEvidence;
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
 });
