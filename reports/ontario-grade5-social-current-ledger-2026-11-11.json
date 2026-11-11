@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "53982cca80c252dd736efc14528e96fcf6d9023e",
+  "localDependencyCommit": "ccc57097924ad0458c6f0abfcbf8d1a352960b2a",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "All 21 government/citizen strand records have source-fit Full authoring designs;20 historical records remain unverified. Source-fit design is not learner attainment or default-main acceptance.",
+  "status": "Twenty-one government/citizens records and one historical institutions record have source-fit authoring designs; nineteen historical records remain separately unverified. No learner attainment or default-branch acceptance is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Unverified": 20,
-    "Full": 21
+    "Unverified": 19,
+    "Full": 22
   },
   "associationInventory": {
-    "pairs": 46,
-    "topics": 12,
-    "codes": 21,
-    "newClaims": 3,
+    "pairs": 47,
+    "topics": 13,
+    "codes": 22,
+    "newClaims": 4,
     "reusedClaims": 9
   },
   "expectations": [
@@ -141,11 +141,14 @@
     },
     {
       "code": "A3.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_1xOenPgYlR"
+      ],
+      "remainingConditions": [],
+      "coverageBasis": "The studied repertoire and retained/changed-account assessment account for significant institutions and their importance. Illustrative examples are not an exhaustive office inventory.",
+      "dossier": "new-france-institutions-review-2026-11-11.json",
+      "protocolReference": "/preparedCases"
     },
     {
       "code": "A3.5",
