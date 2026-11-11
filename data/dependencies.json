@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 4001,
+  "edgeCount": 4003,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -24008,6 +24008,18 @@
       "prerequisiteId": "mt_lMz9nAs7VO",
       "strength": "soft",
       "reason": "Mathematical vocabulary can help express the question and its criterion, but pointing, drawings or a model allow formulation without a hard English grammar / question-word gate."
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_B3W5EfimJw",
+      "strength": "hard",
+      "reason": "The complete prior pushes/pulls claim supplies force strength and direction causing motion changes, which the qualitative flight account presupposes."
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_Y9k86G8BBT",
+      "strength": "soft",
+      "reason": "A familiar resistance account supports drag, but its full water/surface repertoire is not intrinsic to explaining the wing/air model."
     }
   ]
 }

@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "3a58d50663f4aa93ba2e00bcbed7e34ba41f26c47f5418c9e94f7dd7211aef6f",
-  "recordCount": 1091,
+  "topicFileSha256": "76eac090a32abb3cf793b261fdeaf31db942be32c2761dda7876298ae984dec8",
+  "recordCount": 1092,
   "coverage": {
-    "topicCount": 1906,
-    "withResearch": 1091,
+    "topicCount": 1907,
+    "withResearch": 1092,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -50,8 +50,8 @@
         "withoutResearch": 117
       },
       "Science": {
-        "topics": 578,
-        "withResearch": 549,
+        "topics": 579,
+        "withResearch": 550,
         "withoutResearch": 29
       },
       "Art & Design": {
@@ -221423,6 +221423,231 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-22T15:31:39.949Z",
         "updatedAt": "2026-10-19T15:21:50.826Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "pedagogy": {
+        "summary": "Build one qualitative causal model of aerodynamic flight from force origins and relative airflow, then test it against explicitly stated steady and changing cases. Keep this distinct from buoyancy, formal fluid mechanics, procedural force investigations and piloting.",
+        "bestPractices": [
+          "Use a stated flight orientation and conditions; straight-level cruise is a special case, not every flight.",
+          "Require explanations of force origin and direction before using labels or arrows as evidence of understanding.",
+          "Use pressure/flow turning consistently and explicitly reject the equal-transit-time story.",
+          "Treat all supplied force values and changed-condition cards as original reasoning models, not measurements or a running simulator.",
+          "Retain independent examples that break superficial rules: balanced motion need not stop, gliders need no engine to have lift, and feathers alone do not prove flight.",
+          "State directions without an airflow reversal: drag opposes the flyer's motion relative to surrounding air; lift is perpendicular to that motion. Incoming airflow past a fixed wind-tunnel wing is oppositely directed to the wing's relative motion."
+        ],
+        "keyRepresentations": [
+          "Original straight-level four-force card with supplied directions/magnitudes.",
+          "Original changed-resultant and constant-speed-turn cards.",
+          "Supplied surface/airflow, vacuum, buoyancy and glider contrasts with stated assumptions."
+        ],
+        "commonMisconceptions": [
+          "Lift is just buoyancy or ordinary upthrust renamed.",
+          "Thrust continually exceeds drag in constant-velocity cruise.",
+          "A curved wing forces upper and lower air parcels to rejoin at the same time.",
+          "Balanced forces mean no motion, or constant speed means no resultant even during a turn.",
+          "Every flyer has the same four nonzero forces in the same directions; an engine itself supplies the upward wing force.",
+          "A bigger wing angle always increases lift without any limit."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the complete self-contained original aircraft, surface/flow and changed-flight cases embedded below to construct and apply the model. These are factual-source-supported activity proposals; comparative teaching efficacy and learner performance have not been tested.",
+        "activities": [
+          {
+            "title": "Explain the supplied four-force model",
+            "rationale": "A complete force-origin and motion explanation exposes label-only recognition and the misconception that motion needs a continuing forward resultant. This is an original assessment/teaching proposal, not a tested intervention.",
+            "sourceClaims": [
+              "Air interacting with the moving surface creates aerodynamic lift/drag; gravity and propulsion are different force sources, and their vector combination explains qualitative steady/changing flight."
+            ],
+            "learnerActions": [
+              "Use this original straight-level model: lift10units upward, weight10downward, thrust4forward and drag4backward, in still air with the aircraft moving forward. Explain each force's origin and direction: drag opposes the flyer's motion relative to surrounding air, lift is perpendicular to that relative motion, weight points towards Earth and propulsion supplies thrust. Supplied quantities are invented model units, not measured performance.",
+              "Explain why the model can move at constant velocity while the forces balance; being balanced does not mean being stationary.",
+              "In the second original instantaneous card only thrust becomes6units. Explain the initial forward resultant and change of motion; do not claim every other force stays fixed for the rest of the flight.",
+              "Use this original turn model: vertical force components balance and a nonzero horizontal force component points inward towards the turn's centre. Speed is constant while direction changes. Explain why an inward resultant is compatible with constant speed and why the straight-level cruise arrangement cannot simply be copied. No numerical banking angle or control procedure is required."
+            ],
+            "intendedInsight": "Force origins, directions and the resultant explain the motion; labels alone and movement alone do not establish the whole model.",
+            "feedback": [
+              "If balanced means stopped, compare a stationary object with the stated constant-velocity aircraft: zero resultant permits either.",
+              "If thrust must continually exceed drag, ask what happens to velocity under a continuing forward resultant and contrast this with the steady card.",
+              "If all lift arrows must be vertically up, revisit that lift is perpendicular to relative airflow and that the model specifies its flight orientation."
+            ]
+          },
+          {
+            "title": "Compare air interaction with a look-alike explanation",
+            "rationale": "Contrasts between the same surface in different stated flow conditions and between aerodynamic lift and buoyancy isolate the actual causal requirement. Original text cases require no wind-tunnel apparatus or learner flight.",
+            "sourceClaims": [
+              "Pressure distribution and flow turning are compatible descriptions of aerodynamic force; the equal-transit-time wing explanation is incorrect."
+            ],
+            "learnerActions": [
+              "Compare three original wing conditions: motion relative to surrounding air, no relative air motion, and motion through a hypothetical vacuum. Explain where aerodynamic force can occur, identify the role of air pressure/flow interaction, and explain why gravity remains in the vacuum case. Actual shape/orientation/flow evidence is needed; a curved wing drawing alone is insufficient.",
+              "Explain qualitatively that a wing changes surrounding airflow and experiences a pressure-related force; do not treat a fixed atmospheric pressure or the word upthrust as a complete aerodynamic explanation.",
+              "A further original card is a flat plate inclined to its motion relative to air. Explain why lack of a curved upper surface does not alone rule out aerodynamic lift and why this does not prove every flat card flies. State what pressure/flow/force evidence would be needed.",
+              "Compare original card A, a balloon floating by buoyancy in still air; B, a wing fixed to a wind tunnel with moving air; and C, the same wing with no relative airflow. Explain A's different force mechanism, why B may have aerodynamic force at zero ground speed, and why C does not establish aerodynamic lift. In B, drag is along the incoming airflow but opposes the wing's relative motion through that air. Weight remains distinct in all cards; no buoyancy equation or balloon launch is assigned."
+            ],
+            "intendedInsight": "The model concerns aerodynamic interaction with relative airflow, rather than a magic wing shape or a relabelled buoyancy effect.",
+            "feedback": [
+              "If two air parcels must meet at the rear, remove that invented constraint; pressure and flow explanations do not need equal travel time.",
+              "If the vacuum card removes weight, separate the absent air from Earth’s gravitational interaction.",
+              "If every upward force is called aerodynamic lift, compare the supplied buoyancy account with the wing/air interaction account."
+            ]
+          },
+          {
+            "title": "Change one flight condition and state the limits",
+            "rationale": "Explicit changed cases test model use beyond rehearsed level flight. This does not train a child to operate an aircraft or establish real-device performance.",
+            "sourceClaims": [
+              "Aircraft control surfaces and propulsion have different functions; surface configuration can change aerodynamic forces.",
+              "Relative flow, surface geometry and orientation affect aerodynamic force; a curved upper surface is not a universal prerequisite."
+            ],
+            "learnerActions": [
+              "Use these original comparisons: change a propulsion setting; change wing shape/orientation or its speed relative to air; deploy a spoiler/change exposed shape; add cargo. Explain how thrust, lift, drag and weight can be affected, connect each change with its origin, and trace only the initial effect of a changed resultant. No operating an aircraft or independent-force-slider assumption is intended.",
+              "A supplied original changed-angle card reports that flow separates after a large increase of angle. Explain why a small-change prediction cannot be extended indefinitely and why a surface change can affect lift and drag together. No numerical stall angle is supplied; ask what further evidence would be needed.",
+              "Use this original glider case: an unpowered glider has constant forward and downward velocity through still air. Identify weight vertically down, drag opposite its motion relative to air and lift perpendicular to that motion. Explain qualitatively how the three force components can balance without engine thrust; weight has a component along the descent, not a fourth propulsion force. In a changed instantaneous card only drag initially increases: explain the initial velocity change without assuming every other force stays fixed later. No angle calculation, rising-air account or flight trial is assigned.",
+              "Use an original bird case averaged over a complete wingbeat: its straight-level velocity is constant and the average force components balance. Compare a second case where its speed stays constant but direction changes after an altered wing/tail orientation. Explain the needed resultant and distinguish time-averaged balance from instantaneous constant forces; no measurement or live-organism performance is asserted."
+            ],
+            "intendedInsight": "The same qualitative model transfers, but direction, force components and assumptions must be checked for the actual situation.",
+            "feedback": [
+              "If no engine means no lift, identify the relative airflow over the glider’s wings and separate propulsion from aerodynamic lift.",
+              "If every larger wing angle helps, return to the supplied loss-of-attached-flow limit and ask what evidence would be needed.",
+              "If a turning flyer has balanced forces merely because its speed is constant, ask whether its direction—and therefore velocity—is changing."
+            ]
+          }
+        ],
+        "constraints": [
+          "Qualitative model only: no lift/drag equations, Bernoulli calculations, full Newton-law algebra or piloting procedure.",
+          "Pressure and flow-turning explanations are compatible; do not introduce equal-transit time, vacuum-removes-gravity or every-lift-is-buoyancy errors.",
+          "Keep body/environment interactions distinct: weight and aerodynamic forces act on the flyer; an action/reaction pair acts on different objects and is not a pair of balanced forces on the same flyer.",
+          "Force diagrams may be supplied; independently drawing/adding resultants remains a separate representational claim.",
+          "No live-animal handling, flight controls, high-speed/pressurised equipment or dropping from height. Reasoning cases do not certify actual safe construction or organism performance."
+        ],
+        "reviewNotes": [
+          "This complete guide is an original taxonomy-curation proposal. Technical factual source bodies were checked as scoped below; no child intervention or medium-efficacy study was conducted. Confidence is low for teaching-effectiveness claims.",
+          "The official Ontario source supplies alignment/age scope, not evidence that this particular activity teaches effectively.",
+          "Existing card IDs, descriptions, evidence, prompts, guides, provenance/confidence flags and age intervals are retained. This claim records an independent knowledge gap rather than widening a buoyancy label or a fair-test procedure.",
+          "Self-contained original case air-and-wing: Facts/conditions: Aerodynamic force depends on interaction with air; pressure distribution and changed airflow describe the same interaction. Geometry and relative motion matter. Task: Original cards show the same wing moving relative to air, a wing with no relative airflow, and a wing moving in a hypothetical vacuum. Identify where aerodynamic lift can occur and why air that has mass and exerts pressure can exert a force when its flow is changed. Connect pressure differences around the wing with flow deflection without inventing a requirement that two air parcels rejoin together. Expected evidence: Relates properties of air to a real wing application, distinguishes force from the air from weight due to gravity, and explains why a wing does not generate aerodynamic lift in a vacuum. Names shape, relative speed and orientation as relevant factors, not a universal curved-top rule. Near miss: Air has no mass so cannot exert force; gravity switches off in a vacuum; or air parcels must reach the wing rear simultaneously. Changed condition: An original inclined flat card moves through air. Explain why the absence of a curved upper surface does not alone rule out lift; identify what flow/force evidence would be needed instead of claiming every flat card flies. Limits: Original comparison below, not a measured wind-tunnel dataset. Atmospheric pressure alone does not prove a complete lift explanation; aerodynamic lift is not merely buoyancy.",
+          "Self-contained original case four-force-model: Facts/conditions: Weight acts towards Earth; drag opposes the flyer's motion relative to the surrounding air, and lift is perpendicular to that relative motion. Propulsion supplies thrust. Zero resultant gives constant velocity. Task: Draw an original straight-level aircraft model with lift10units up, weight10down, thrust4forward and drag4back. Explain both balances and constant velocity. In a second instantaneous card only thrust becomes6units: show the resulting forward imbalance and describe the initial change of motion. Do not infer that an airplane needs a continuing forward resultant merely to keep moving. Expected evidence: Labels all four forces with directions and relative magnitudes, separates weight from mass, and distinguishes zero resultant/constant motion from zero speed. Explains the initial acceleration in the changed card without making a sustained-flight prediction after all conditions change. Near miss: Balanced forces mean the aircraft must stop; thrust must exceed drag at all times to keep moving; or lift is always vertically upwards whatever the flight orientation. Changed condition: An original banked-turn card supplies a force pointing inward as well as a vertical balance. Explain why speed can remain steady while direction changes and why the straight-level four-arrow arrangement cannot simply be copied. Limits: Original force values are supplied reasoning-model quantities, not measured aircraft performance. The vertical/horizontal pairing below applies to the stated straight, level example only.",
+          "Self-contained original case machine-and-bird-control: Facts/conditions: Aircraft controls change aerodynamic forces; bird flight feathers and tails also support controlled flight. A change in velocity requires a nonzero resultant. Task: Compare an aircraft in straight-level constant-velocity flight with one beginning to speed up after increased thrust. Then use an original bird case with a declared time-averaged straight-level balance and a second case changing direction using altered wing/tail orientation. Identify the balanced and unbalanced motion in each, point to the actual aircraft propulsion/control and bird feather/tail structures, and explain the changed force direction rather than just naming parts. Expected evidence: Applies balanced/unbalanced reasoning to both a flying machine and an organism. Explains constant velocity versus changes of speed or direction, connects a control change to altered aerodynamic forces and preserves the time-averaging limit for the bird. Near miss: Uses a resting-book example as the whole flight explanation; claims a bird cannot glide because it has no engine; or treats constant speed in a turn as zero resultant. Changed condition: An original bird and aircraft keep the same speed while turning. Explain why the change in direction still needs a resultant; say why this does not show the force magnitudes are constant throughout a wingbeat. Limits: Original, qualitative comparisons. Bird forces are averaged over a declared wingbeat interval, not asserted constant at every instant. Changing roll/pitch is not equated with an unexplained translational resultant.",
+          "Self-contained original case changing-the-forces: Facts/conditions: Throttle, surface configuration, airflow and carried mass can change flight forces; changing one condition can affect several forces. Task: For original comparison cards, explain how changing propulsion setting affects thrust; changing wing orientation/shape or relative speed can affect lift; deploying a spoiler or changing the exposed shape can affect drag; and adding cargo changes weight. Trace an initial effect on motion using a labelled force account. State that a wing change may alter both lift and drag and that increasing its angle cannot improve lift indefinitely. Expected evidence: Names a real method associated with each of the four forces and connects the change to the actual aircraft application. Separates mass/weight changes from fuel providing thrust and recognises interacting effects and stall limits. Near miss: A bigger engine eliminates gravity; more wing angle always gives more lift; or a flap changes only one force under all conditions. Changed condition: The supplied card reports separated flow after a large angle change. Explain why the earlier small-change prediction is not safe to extend indefinitely; propose checking evidence rather than inventing a numeric threshold. Limits: Descriptions only; no aircraft operation, flight controls, heights or live-animal manipulation. The model does not promise one independent slider for each force or a universal stall angle.",
+          "Self-contained original case glider-transfer: Facts/conditions: An unpowered glider has aerodynamic lift and drag plus weight. A steady descending path can have zero net force even though no propulsion thrust is supplied. Task: Original card: an unpowered glider moves at constant forward and downward velocity through still air. Identify its three forces and explain why relative airflow still creates lift. Trace weight straight down, lift perpendicular to its descending flight path and drag opposite that path; explain why the forces can balance without a fourth forward thrust. No angle or component calculation is required. Expected evidence: Separates wing lift from engine thrust and distinguishes steady descent from accelerating fall. Explains that the whole force directions differ from straight-level cruise, and qualitatively that weight has a component along the descent rather than adding a fictional engine force. Near miss: No engine means no lift, or a steady descending glider must have lift vertically equal to weight and zero drag. Changed condition: A supplied changed glider initially has more drag with its other forces unchanged. Explain the initial change of velocity rather than assume every subsequent force remains fixed. Limits: Original qualitative force account, not an actual flight measurement. Descent is relative to the surrounding air; rising air and flight training are outside the task.",
+          "Self-contained original case buoyancy-contrast: Facts/conditions: NASA explicitly distinguishes a buoyant balloon from aerodynamic lift dependent on relative airflow. Air may flow past a stationary wing, so zero ground speed alone does not remove aerodynamic force. Task: Original card A is a balloon floating in still air by buoyancy; card B is a supported wing in moving air; card C is the same wing with no relative air motion. Explain why A can have an upward buoyant force without wing airflow, why B can experience aerodynamic lift even at zero ground speed, and why C is not evidence of aerodynamic lift. Weight remains distinct in all three. Expected evidence: Identifies the different force mechanisms and checks relative airflow rather than only motion over the ground. Does not equate generic upthrust vocabulary with an aerodynamic explanation. Near miss: All upward forces are the same aerodynamic lift, or an object fixed relative to the ground cannot experience aerodynamic force. Changed condition: The original wing is in a wind tunnel: ground position stays fixed while airflow changes. Explain what relevant condition changed and why a zero-ground-speed rule fails. Limits: Original comparison with supplied physical conditions, not a balloon-launch task, buoyancy equation or claim that every upward force is aerodynamic lift.",
+          "Separate self-contained original organism-structure extension (not a mastery gate for this force-model topic): Facts: Interlocking bird flight feathers form controllable wing surfaces; tail feathers help steering. The named bat study links membrane-muscle activity to changes of wing stiffness and shape. Task: Create a labelled two-column comparison of a flying bird and the studied Jamaican fruit bat. Link interlocking wing feathers and adjustable tail to bird flight/steering, and the bat wing membrane and coordinated small muscles to control of wing shape. Explain why a membrane wing need not have feathers and why a feather can serve display/insulation rather than flight. Expected evidence: Gives structure-to-function explanations for two different kinds of flying organism, rather than naming wings alone. Distinguishes wing surface/control from body grouping and avoids turning this into the whole plant/animal-structure claim or dinosaur-to-bird evidence claim. Near miss: All flying organisms have feathers; every feather implies flight; or naming an animal group alone explains how it flies. Changed condition: Cornell describes nonflight feathers and a flightless ostrich. Explain why possessing feathers is not sufficient evidence of powered flight, and identify the functional structures that the original question actually asked about. Limits: Factual summaries of selected sources; no claim every bird flies, all bats share identical control, or the pupil has inspected a live specimen. No fossil-origin account is needed for these present-day functions.",
+          "Mandatory assessment portfolio: all four canonical evidence criteria must pass. The two-tier response must explain force origins/relative-air and buoyancy contrasts, straight/changed motion including a constant-speed turn, bounded changes to propulsion/surfaces/relative airflow/carried mass with the separated-flow angle limit, and the unpowered-glider or declared time-averaged-bird transfer. No optional follow-up may substitute for an unassessed criterion. Organism-structure extension is optional and does not add a gate."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Original model: a straight-level aircraft moves forward through still air with lift10units up, weight10down, thrust4forward and drag4back. Explain the four force origins/directions and why constant velocity is possible. Next only thrust initially becomes6: explain the initial change. Finally an unpowered glider moves with constant forward/downward velocity in still air; identify weight down, drag opposite that relative motion and lift perpendicular to it, and explain the qualitative balance without engine thrust. Contrast a wing fixed in moving wind-tunnel air with a buoyant balloon floating in still air. Supplied values/conditions are original reasoning models, not measurements. Required continuation: a second flyer keeps its speed while turning under a supplied inward resultant; explain why velocity changes. Compare propulsion-setting, wing-shape/orientation, relative-air-speed and added-cargo cards, identify the affected forces and interacting effects, and explain why a reported separated-flow case prevents an unlimited more-angle rule. State which assumptions change when transferring to the glider. Assess every part; a level/thrust/glider answer alone is incomplete.",
+        "whatMakesItDiscriminate": "Identifying the force sources and flow dependence, then revising the account for a changed resultant and unpowered descent, separates an explanatory model from four memorised words or applying a generic supplied-arrow procedure. All four canonical criteria are mandatory: the turn and bounded-condition portfolio cannot be deferred to optional probes or skipped when assigning Full.",
+        "correctAnswer": "Meets all four canonical criteria: (1) explains aerodynamic lift/drag from relative air interaction, drag opposing the flyer's motion relative to air, lift perpendicular to it, weight from gravity and possible thrust from propulsion; distinguishes buoyancy and rejects equal transit time; (2) explains constant velocity under zero resultant, the initial changed-thrust effect and a nonzero resultant in a constant-speed turn; (3) connects propulsion, surface geometry/orientation, relative air speed and carried mass with the relevant forces, allows coupled lift/drag changes and rejects unlimited lift improvement from increasing angle in a supplied separated-flow case; (4) transfers to the unpowered steady descending glider, explains changed directions/component balance without fictional engine thrust and revises the initial changed-drag case. A declared time-averaged bird transfer may substitute if it tests the same changed-assumption criterion. No numerical aerodynamics, new diagram-drawing procedure or piloting is required.",
+        "probeDeeper": [
+          "Could a glider have lift without an engine? Which force/component supplies its steady descending-motion account?",
+          "Does a constant-speed turn have zero resultant? Explain what changes.",
+          "Why is a wing drawing, a pressure label or the word upthrust alone not the complete aerodynamic explanation?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Names four labels but treats lift as buoyancy or as force supplied directly upwards by the engine.",
+            "revealedBy": "Cannot identify the relative-air interaction or distinguish propulsion from wing lift.",
+            "nextMove": "Contrast the supplied wing, buoyant balloon and unpowered glider; reconstruct force origins.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Says balanced forces mean the aircraft stops or that forward thrust must exceed drag to maintain constant velocity.",
+            "revealedBy": "Confuses motion with a change of motion in the stated steady/changed cards.",
+            "nextMove": "Compare the supplied balanced card with the immediate changed-thrust card and track velocity changes.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Applies the correct straight-level diagram unchanged to a turn, glider or every point of a wingbeat.",
+            "revealedBy": "Ignores changed directions, a missing thrust source or the stated averaging interval.",
+            "nextMove": "Name the new case assumptions first, then rebuild the qualitative account.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Relies on labels, buoyancy, an engine-lifts rule or motion-needs-resultant reasoning without a coherent force-origin model.",
+          "partial": "Explains some criteria correctly but misses any required force origin/relative-air contrast, steady/changed motion or constant-speed turn, bounded surface/airflow/mass/propulsion change and angle limit, or contrasting flyer transfer. Passing only level flight, changed thrust and glider is insufficient.",
+          "full": "Accurately completes all four mandatory canonical criteria: force origins/directions and relative-air/buoyancy distinction; steady/initial changed motion and constant-speed turn; surface/airflow/propulsion/carried-mass changes with interacting effects and angle limit; and a contrasting glider or declared time-averaged-bird transfer naming changed assumptions. Evidence for every criterion is required; optional organism-structure facts are not an additional gate."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Air interacting with the moving surface creates aerodynamic lift/drag; gravity and propulsion are different force sources, and their vector combination explains qualitative steady/changing flight.",
+          "source": "NASA Glenn Research Center — Four Forces on an Airplane",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+          "verified": true
+        },
+        {
+          "claim": "Pressure distribution and flow turning are compatible descriptions of aerodynamic force; the equal-transit-time wing explanation is incorrect.",
+          "source": "NASA Glenn Research Center — Bernoulli and Newton",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/",
+          "verified": true
+        },
+        {
+          "claim": "Relative flow, surface geometry and orientation affect aerodynamic force; a curved upper surface is not a universal prerequisite.",
+          "source": "NASA Glenn Research Center — Factors That Affect Lift",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/factors-that-affect-lift/",
+          "verified": true
+        },
+        {
+          "claim": "Aircraft control surfaces and propulsion have different functions; surface configuration can change aerodynamic forces.",
+          "source": "NASA Glenn Research Center — Airplane Parts and Function",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/airplane-parts-function/",
+          "verified": true
+        },
+        {
+          "claim": "Large inclination can cause flow separation; small-change force reasoning must not be extrapolated without limit.",
+          "source": "NASA Glenn Research Center — Inclination Effects on Drag",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/inclination-effects-on-drag/",
+          "verified": true
+        },
+        {
+          "claim": "Aerodynamic lift depends on relative airflow, distinct from buoyancy; a wing fixed to the ground can experience aerodynamic force in moving air.",
+          "source": "NASA Glenn Research Center — nasa-relative-air",
+          "url": "https://www.grc.nasa.gov/WWW/k-12/VirtualAero/BottleRocket/airplane/move.html",
+          "verified": true
+        },
+        {
+          "claim": "An unpowered glider can have lift, drag and weight without propulsion thrust.",
+          "source": "NASA Glenn Research Center — nasa-glider",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/three-forces-on-a-glider/",
+          "verified": true
+        },
+        {
+          "claim": "A glider with constant forward and downward velocity can have balanced force components; the straight-level four-force arrangement is not universal.",
+          "source": "NASA Glenn Research Center — nasa-equilibrium",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/equilibrium/",
+          "verified": true
+        },
+        {
+          "claim": "Bird flight feathers provide a coherent wing surface and tail feathers support flight control; feathers can also serve nonflight functions.",
+          "source": "Cornell Lab of Ornithology — Everything You Need To Know About Feathers",
+          "url": "https://academy.allaboutbirds.org/feathers-article/",
+          "verified": true
+        },
+        {
+          "claim": "The named Jamaican fruit bat study linked small wing-membrane muscles with coordinated activity and changes in wing stiffness/shape; this does not establish an identical mechanism in all bats.",
+          "source": "Brown University Engineering — Tiny muscles help bats fine-tune flight",
+          "url": "https://engineering.brown.edu/news/2014-05-24/tiny-muscles-help-bats-fine-tune-flight",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original authoring proposal",
+        "createdAt": "2026-11-11T15:33:17.981Z",
+        "updatedAt": "2026-11-11T15:46:30.000Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

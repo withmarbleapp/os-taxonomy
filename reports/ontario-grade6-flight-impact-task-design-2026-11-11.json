@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "365cbe2ef80c7f72f104f625b61d40ec2aa85534",
+  "status": "Two former flight-impact residuals have concrete case-based authoring designs, independently retaining the environmental overall and local/global societal specific duty. No child-link closure or learner performance is inferred.",
+  "resources": {
+    "tc-north": {
+      "url": "https://tc.canada.ca/en/corporate-services/transparency/corporate-management-reporting/transportation-canada-annual-reports/2020-2021/northern-canada",
+      "publisher": "Transport Canada",
+      "readScope": "Complete actual Northern Canada body read on2026-11-11; dated2020 overview context retained. No map/image inspection claimed.",
+      "role": "Named northern access/resupply and seasonal-alternative context, not current route/timetable certification."
+    },
+    "tc-noise": {
+      "url": "https://tc.canada.ca/en/aviation/operating-airports-aerodromes/managing-noise-aircraft",
+      "publisher": "Transport Canada",
+      "readScope": "Complete actual noise-management body read on2026-11-11. No current regulatory advice, threshold calculation or linked report inspection adopted.",
+      "role": "Aircraft noise affects nearby communities; routing/procedures/consultation illustrate mitigation and trade-offs."
+    },
+    "tc-climate": {
+      "url": "https://tc.canada.ca/sites/default/files/2022-11/canada-aviation-climate-action-plan-2022-2030.pdf",
+      "publisher": "Transport Canada",
+      "readScope": "Actual opening statement, executive summary and introduction (PDF pages3–8, printed1–4) read on2026-11-11. Later technical sections and charts not used or visually certified.",
+      "role": "Aviation benefits coexist with greenhouse emissions; efficiency improvements are not proof of zero total impact. A2022 plan is not a certificate of current implementation."
+    },
+    "wfp-unhas": {
+      "url": "https://www.wfp.org/unhas?type=news",
+      "publisher": "World Food Programme",
+      "readScope": "Complete actual UNHAS service explanatory body read on2026-11-11; linked news/report bodies not inferred read. No numeric fleet/traffic claim adopted.",
+      "role": "International humanitarian access where safe surface/commercial alternatives are unavailable; not a universal case for all air travel."
+    }
+  },
+  "preparedCases": {
+    "northern-access": {
+      "role": "canadian-societal-access",
+      "resourceRefs": [
+        "tc-north"
+      ],
+      "sourceSummary": "Transport Canada describes air travel supporting northern essential services and year-round movement where road/seasonal shipping alternatives are limited.",
+      "attributionLimits": "Dated government account; original role perspectives below are constructed, not testimony on behalf of any named Indigenous community. No claim that every northern journey lacks alternatives.",
+      "question": "Use the account to explain a benefit of aviation for a remote community and a geographical/seasonal reason. Original roles are a resident needing time-sensitive access, an air-service operator facing cost constraints and an environmental planner. Compare what each prioritises; identify one cost or limitation and an alternative that would need checking.",
+      "expectedEvidence": "Connects the technology to an actual societal purpose, distinguishes urgent access from replaceable travel, and uses evidence rather than treating the three original roles as authentic quotations.",
+      "nearMiss": "All northern communities have identical needs and no other transport, or one efficiency proposal makes the cost and access problem disappear.",
+      "changedCase": "An original community now has a reliable all-season road and a nonurgent delivery. Explain what information would change the comparison rather than copy the original air-only conclusion."
+    },
+    "humanitarian-access": {
+      "role": "international-societal-access",
+      "resourceRefs": [
+        "wfp-unhas"
+      ],
+      "sourceSummary": "WFP describes UNHAS carrying humanitarian personnel and light cargo where crisis conditions restrict other suitable transport.",
+      "attributionLimits": "Service-provider description, not proof every planned flight succeeds or an assessment of every humanitarian response. No disaster imagery or distressing role-play required.",
+      "question": "Compare the stated UNHAS access problem with northern Canadian access. Describe what aviation can enable for responders and people receiving assistance, identify a remaining capacity/safety/cost constraint, and compare the perspective of a response coordinator with an original resident whose access is otherwise restricted.",
+      "expectedEvidence": "Explains a concrete global societal contribution and a limit, compares common access needs with different causes, and avoids claiming flight alone resolves a crisis.",
+      "nearMiss": "Air transport cures the underlying crisis, or every commercial flight has the same access necessity as a humanitarian service.",
+      "changedCase": "An original safe surface route becomes available for bulky nonurgent freight. Explain why the best mode may now differ from urgent passenger/light-cargo access."
+    },
+    "noise-and-climate": {
+      "role": "environmental-impact-and-mitigation",
+      "resourceRefs": [
+        "tc-noise",
+        "tc-climate"
+      ],
+      "sourceSummary": "The Canadian sources describe local aircraft noise and aviation greenhouse emissions alongside the benefits of transport. Operational/design choices can reduce some impacts without eliminating all harms.",
+      "attributionLimits": "Qualitative evidence only. No decibel thresholds, emissions multipliers, legal restrictions or current progress claims are adopted; a target is not a measured achievement.",
+      "question": "Prepare an evidence table separating local noise near an airport from wider climate consequences of emissions. Compare original perspectives of a nearby resident, a remote-service user and an operator. Assess quieter operations or fuel-saving/efficiency design against the relevant harm, then name what each fails to solve and what further evidence would judge the result.",
+      "expectedEvidence": "Assesses environmental causes, affected groups, mitigation and remaining trade-offs instead of listing a plane or saying all flight is good/bad. Distinguishes less fuel per service from a guarantee of falling total emissions when flight numbers change.",
+      "nearMiss": "Quieter means zero climate effect; a future target proves impacts have already vanished; or an efficiency improvement guarantees a decline in total emissions under any traffic level.",
+      "changedCase": "An original fleet uses less fuel per flight but makes more flights. Explain why actual fuel/traffic evidence is needed for the total effect, while a quieter engine by itself does not establish a climate result."
+    }
+  },
+  "protocols": {
+    "D1": {
+      "codes": [
+        "ON-SCI-2022-G6-D1"
+      ],
+      "contributorIds": [
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "noise-and-climate"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read all bound factual summaries and distinguish dated evidence from original role perspectives and hypothetical changes.",
+        "Complete the actual case questions, explaining consequences and affected people, rather than naming technologies or repeating a sustainability slogan.",
+        "Compare function/access, cost, safety and environmental priorities; justify a trade-off and explain one limit to the proposed mitigation.",
+        "Give an independent integrated account for the selected overall environmental duty or specific local/global societal duty; respond to every changed case and identify evidence needed for an uncertain comparison."
+      ],
+      "remainingConditions": []
+    },
+    "D1.1": {
+      "codes": [
+        "ON-SCI-2022-G6-D1.1"
+      ],
+      "contributorIds": [
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "northern-access",
+        "humanitarian-access",
+        "noise-and-climate"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read all bound factual summaries and distinguish dated evidence from original role perspectives and hypothetical changes.",
+        "Complete the actual case questions, explaining consequences and affected people, rather than naming technologies or repeating a sustainability slogan.",
+        "Compare function/access, cost, safety and environmental priorities; justify a trade-off and explain one limit to the proposed mitigation.",
+        "Give an independent integrated account for the selected overall environmental duty or specific local/global societal duty; respond to every changed case and identify evidence needed for an uncertain comparison."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_cOJhDeLkPo",
+      "mt_Q2Zj3L8u9C"
+    ],
+    "limits": [
+      "The existing factors-that-shape-designs claim supplies explicit sustainability, community function, safety, cost and priority/trade-off reasoning; the verified aviation cases supply domain facts. One aviation portfolio does not certify every familiar product/service/design case.",
+      "The new Ontario11–12 context is within the unchanged existing8–12 whole-claim range. No blanket age lowering or new aviation country/topic clone.",
+      "Environmental overall D1 is assessed directly through noise/climate consequences; it is not declared complete merely because the differently scoped societal D1.1 task exists.",
+      "All existing guides and verification/confidence/provenance flags remain unchanged; these source-supported original task designs are not evaluated interventions."
+    ]
+  }
+}
