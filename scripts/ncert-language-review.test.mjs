@@ -218,19 +218,20 @@ function checkGraph(reviewRecords, alignments) {
     assert.equal(context.framework ?? null, null);
     for (const key of context.standards.filter(key => byKey.has(key))) {
       const row = byKey.get(key);
-      assert.deepEqual([context.ageRangeStart, context.ageRangeEnd], row.stageAgeBand ?? row.ageBand);
+      const expectedAges = row.key.endsWith('PREP-R1-COMP-C-1.2') ? [10, 11] : row.stageAgeBand ?? row.ageBand;
+      assert.deepEqual([context.ageRangeStart, context.ageRangeEnd], expectedAges);
       actualPairs.push(pairKey(context.topicId, key));
     }
   }
   assert.deepEqual(sorted(new Set(actualPairs)), sorted(expectedPairs), 'declared/published pair drift');
   assert.equal(actualPairs.length, new Set(actualPairs).size, 'duplicate published language pair');
-  assert.equal(selectedContexts.length, 57, 'reviewed context total');
-  assert.equal(new Set(selectedContexts.map(contextKey)).size, 57, 'duplicate language context identity');
-  assert.equal(actualPairs.length, 142, 'reviewed association total');
-  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 36);
+  assert.equal(selectedContexts.length, 58, 'reviewed context total');
+  assert.equal(new Set(selectedContexts.map(contextKey)).size, 58, 'duplicate language context identity');
+  assert.equal(actualPairs.length, 143, 'reviewed association total');
+  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 37);
   assert.equal(summary.graph.newContexts, selectedContexts.length);
   assert.equal(summary.graph.newAssociations, actualPairs.length);
-  assert.equal(summary.graph.sharedTopics, 36);
+  assert.equal(summary.graph.sharedTopics, 37);
 }
 
 const correctedPairs = [
@@ -271,7 +272,7 @@ test('NCERT language review binds all 90 source positions, roles, grades and led
 
 test('every language disposition resolves its source-specific task protocols', () => checkProtocols(batches));
 
-test('language reports and mappings agree on 57 contexts / 142 pairs with no withheld candidate leaks', () =>
+test('language reports and mappings agree on 58 contexts / 143 pairs with no withheld candidate leaks', () =>
   checkGraph(records, contexts));
 
 test('the exact five intrinsic corrections match the graph while English print direction stays hard', () =>
@@ -358,4 +359,54 @@ test('complete hard-path reports reject empty inventories and omitted branches',
     [['invented-root', 'invented-left']], branchingEdges), /complete current hard paths drift/);
   checkCompleteHardPaths('invented-root',
     [['invented-root', 'invented-left'], ['invented-root', 'invented-right']], branchingEdges);
+});
+
+const heardKey = 'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.2';
+const heardReview = load('../reports/ncert-r1-heard-summary-component-2026-11-11.json');
+function checkHeardComponent(review, rows = records, alignments = contexts) {
+  const row = rows.find(row => row.key === heardKey);
+  assert.equal(row.disposition, 'Partial', 'actual R1 conditions cannot become Full');
+  assert.deepEqual(row.stageAgeBand, [8, 11], 'source stage stays unchanged');
+  assert.deepEqual(row.contributions.map(c => c.topicId), ['mt_A4YUbzUFan'], 'exact one direct component');
+  assert.equal(row.contributions[0].role, 'component');
+  assert.deepEqual(row.contributions[0].associationAgeBand, [10, 11]);
+  assert.ok(row.remainingConditions.length >= 3, 'actual role / readiness / whole-claim conditions required');
+  assert.equal(review.topicId, 'mt_A4YUbzUFan');
+  assert.deepEqual(review.associationAgeBand, [10, 11]);
+  assert.deepEqual(review.sourceAgeBand, [8, 11]);
+  checkCompleteHardPaths(review.topicId, review.completeCurrentHardPaths);
+  assert.deepEqual(review.canonicalChanges, { claims: 0, guides: 0, dependencies: 0 });
+  assert.deepEqual(review.originalCasebank.map(c => c.id),
+    ['heard-explanation', 'changed-narrative', 'audio-message', 'quantitative-display']);
+  for (const c of review.originalCasebank) {
+    assert.ok(c.delivery.length && c.essentialPropositions.length >= 2, 'actual material and success propositions');
+  }
+  assert.ok(review.bindingContract.beforeUse.length >= 4, 'actual R1 / competent assessor contract');
+  assert.match(review.decisionRules.wholeCandidate, /quantitative/);
+  assert.match(review.decisionRules.wholeCandidate, /paraphrase/);
+  assert.match(review.decisionRules.wholeCandidate, /source-only success separately/);
+  assert.match(review.bindingContract.failureCondition, /no actual learner success/);
+  const linked = alignments.filter(c => c.standards.includes(heardKey));
+  assert.equal(linked.length, 1);
+  assert.equal(linked[0].topicId, 'mt_A4YUbzUFan');
+  assert.deepEqual([linked[0].ageRangeStart, linked[0].ageRangeEnd], [10, 11]);
+}
+test('R1 heard-summary component preserves source stage, exact readiness interval and whole-claim duties', () =>
+  checkHeardComponent(heardReview));
+test('heard-summary review rejects source-only mastery, missing media cases and earlier readiness', () => {
+  const sourceOnly = structuredClone(heardReview);
+  sourceOnly.decisionRules.wholeCandidate = sourceOnly.decisionRules.sourceTask;
+  assert.throws(() => checkHeardComponent(sourceOnly));
+  const noQuantitative = structuredClone(heardReview);
+  noQuantitative.originalCasebank.pop();
+  assert.throws(() => checkHeardComponent(noQuantitative));
+  const noBinding = structuredClone(heardReview);
+  noBinding.bindingContract.beforeUse = [];
+  assert.throws(() => checkHeardComponent(noBinding));
+  const earlier = structuredClone(contexts);
+  earlier.find(c => c.standards.includes(heardKey)).ageRangeStart = 8;
+  assert.throws(() => checkHeardComponent(heardReview, records, earlier));
+  const falseFull = structuredClone(records);
+  falseFull.find(r => r.key === heardKey).disposition = 'Full';
+  assert.throws(() => checkHeardComponent(heardReview, falseFull));
 });

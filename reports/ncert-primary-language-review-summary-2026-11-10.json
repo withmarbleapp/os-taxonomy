@@ -20,7 +20,8 @@
       "records": 35,
       "summary": {
         "Full": 20,
-        "ConditionalGraphRepresentation": 6,
+        "Partial": 1,
+        "ConditionalGraphRepresentation": 5,
         "ConditionalLanguageBinding": 5,
         "ContextualReadingEngagement": 4
       }
@@ -38,14 +39,15 @@
   "combinedSummary": {
     "Full": 65,
     "ConditionalLanguageBinding": 10,
-    "ConditionalGraphRepresentation": 7,
+    "ConditionalGraphRepresentation": 6,
     "ContextualReadingEngagement": 5,
-    "SkillWithContextualEngagement": 3
+    "SkillWithContextualEngagement": 3,
+    "Partial": 1
   },
   "graph": {
-    "newContexts": 57,
-    "newAssociations": 142,
-    "sharedTopics": 36,
+    "newContexts": 58,
+    "newAssociations": 143,
+    "sharedTopics": 37,
     "newClaims": 0,
     "registeredHardToSoftCorrections": 5
   },
@@ -63,5 +65,6 @@
       "theWorldAroundUs": 32
     }
   },
-  "unverifiedSourceDiscovery": "Advisory Hindi/Urdu extraction recovery outside the accepted catalogue remains unverified; no invented exclusions or wording."
+  "unverifiedSourceDiscovery": "Advisory Hindi/Urdu extraction recovery outside the accepted catalogue remains unverified; no invented exclusions or wording.",
+  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json"
 }

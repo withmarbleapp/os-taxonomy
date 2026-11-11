@@ -29,7 +29,8 @@
   "coverageMeaning": "Reviewed source-fit framework authoring is separate from directly representable graph coverage and from any learner attainment. Conditional/script/engagement cases remain distinct from Full. Actual language material binding happens at use; no national fixed language pair is needed.",
   "summary": {
     "Full": 20,
-    "ConditionalGraphRepresentation": 6,
+    "Partial": 1,
+    "ConditionalGraphRepresentation": 5,
     "ConditionalLanguageBinding": 5,
     "ContextualReadingEngagement": 4
   },
@@ -74,7 +75,7 @@
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.2",
       "officialCode": "C-1.2",
       "languageRole": "R1",
-      "disposition": "ConditionalGraphRepresentation",
+      "disposition": "Partial",
       "sourceStatus": "formal-stage-standard",
       "sourcePages": [
         236
@@ -85,8 +86,28 @@
       ],
       "attainmentReference": "stage-end",
       "frameworkTaskDesign": "accounted-by-role-bound-protocol",
-      "contributions": [],
-      "conditionalContributions": [
+      "contributions": [
+        {
+          "topicId": "mt_A4YUbzUFan",
+          "topicName": "Summarising Spoken and Media Presentations",
+          "role": "component",
+          "contribution": "Shared heard-summary operation with explicit role-bound material conditions; the broader whole candidate additionally requires actual media/quantitative evidence.",
+          "associationAgeBand": [
+            10,
+            11
+          ]
+        }
+      ],
+      "rationale": "The complete current summary\u2192oral-paraphrase hard path has no script, reading or writing gate. The shared operation supports a component association while actual R1 materials, complete source-task realization and whole-candidate evidence remain explicit conditions. No source-only result or association establishes full-topic mastery.",
+      "assessmentProtocols": [
+        "heard-summary"
+      ],
+      "remainingConditions": [
+        "Bind actual R1 material and a competent language/variety assessor before use; no fixed national language pair or cross-language transfer is inferred.",
+        "Only the reviewed component interval10\u201311 is associated. The source stage remains8\u201311; no earlier readiness is asserted.",
+        "Source-only read-aloud success does not establish the complete media/quantitative summary claim or its oral-paraphrase prerequisite."
+      ],
+      "historicalConditionalContributions": [
         {
           "topicId": "mt_A4YUbzUFan",
           "topicName": "Summarising Spoken and Media Presentations",
@@ -112,13 +133,8 @@
           "currentHardPathInterpretation": "Complete remaining hard paths after the registered correction; these paths are not alone a claim that all remaining prerequisites are incompatible."
         }
       ],
-      "rationale": "The intrinsic heard-summary operation fits. The reviewed correction removes the unnecessary independent written-note-taking gate from its oral-paraphrase prerequisite. Actual role-bound materials and the complete source task still need the separate compatibility review before this candidate becomes an active association.",
-      "assessmentProtocols": [
-        "heard-summary"
-      ],
-      "remainingConditions": [
-        "Separate review of actual role-bound materials and the complete remaining claim/dependency requirements is needed before the conditional generic candidate can be published."
-      ]
+      "conditionalContributions": [],
+      "componentReviewReport": "ncert-r1-heard-summary-component-2026-11-11.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.3",

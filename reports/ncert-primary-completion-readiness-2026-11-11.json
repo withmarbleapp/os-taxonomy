@@ -50,25 +50,27 @@
       "sourceKind": "formal-stage-goals-and-competencies",
       "dispositions": {
         "ConditionalArtFormBinding": 4,
-        "ConditionalGraphRepresentation": 6,
+        "ConditionalGraphRepresentation": 5,
         "ConditionalLanguageBinding": 5,
         "ContextualAffectiveRequirement": 4,
         "ContextualReadingEngagement": 4,
         "Full": 105,
         "OutOfScope": 29,
+        "Partial": 1,
         "SkillWithContextualEngagement": 15
       }
     }
   ],
   "dispositions": {
     "ConditionalArtFormBinding": 11,
-    "ConditionalGraphRepresentation": 7,
+    "ConditionalGraphRepresentation": 6,
     "ConditionalLanguageBinding": 10,
     "ContextualAffectiveRequirement": 6,
     "ContextualMotorDevelopmentRequirement": 1,
     "ContextualReadingEngagement": 5,
     "Full": 444,
     "OutOfScope": 49,
+    "Partial": 1,
     "SkillWithContextualEngagement": 36,
     "Unverified": 1
   },
@@ -92,8 +94,8 @@
     },
     {
       "kind": "conditional-graph-representation",
-      "records": 7,
-      "action": "Keep all candidates withheld. Five records have historical whole-glossary/note-taking paths corrected in the related four-edge review but retain actual-role/material and remaining whole-claim review. Two expressive-reading cases retain LTR/sight-word constraints; no universal link is authorised."
+      "records": 6,
+      "action": "Six candidates remain withheld, including two expressive-reading cases with print/sight-word constraints. The heard-summary component is separately Partial after whole-path review; material and whole-candidate conditions remain."
     },
     {
       "kind": "contextual-requirements",
@@ -106,6 +108,11 @@
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C9-LO01",
       "action": "Keep the exact musical-scale distinction Unverified without a graph link pending a source-appropriate authoritative explanation/example.",
       "reviewReport": "ncert-scale-source-meaning-exception-2026-11-11.json"
+    },
+    {
+      "kind": "partial-role-bound-component",
+      "records": 1,
+      "action": "Use the reviewed heard-summary component at10–11 with actual R1 materials/assessor and separate source-only versus full-candidate checks."
     }
   ],
   "sourceBoundary": {
@@ -141,5 +148,17 @@
     "ncert-primary-alignment-review-summary-2026-11-10.json",
     "ncert-physical-education-exclusion-2026-11-11.json",
     "language-reusable-prerequisite-corrections-2026-11-11.json"
-  ]
+  ],
+  "currentComponentReview": {
+    "report": "ncert-r1-heard-summary-component-2026-11-11.json",
+    "base": "c966f7cc14d4382be2249cfd3760898f0057303e",
+    "sourceDispositionsChanged": 1,
+    "newAssociations": 1,
+    "newClaims": 0,
+    "linkedEligibleKeys": 492,
+    "unlinkedEligibleKeys": 29,
+    "distinctPairs": 1161,
+    "linkedTopics": 244,
+    "meaning": "One former graph-conditional record now has a shared component association and remains Partial. No Full upgrade or universal R1 material certification."
+  }
 }
