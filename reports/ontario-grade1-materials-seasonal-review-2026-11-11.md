@@ -30,6 +30,8 @@ Two independent hypothetical witnesses make the distinction reviewable:
 
 The relationship is removed rather than automatically softened: a thematic connection alone does not justify a dependency. The other 4002 edges, both other soft consumers of Testing Materials, the two existing soft supports for Natural and made materials, and all AU/IN fair-test associations remain unchanged. No graph cycle or topic identity change is introduced. The local 6–7 context is separately supported by the complete unchanged three-criterion task using spoken labels and concrete source examples; independent reading, percentages and chemical formulas are not extra learner gates.
 
+The NCERT Arts material-origin protocol and its matching source-binding guard are updated in the same change because they explicitly repeated this inherited hard gate. Complete origin/fibre requirements remain; independently applicable fair-test tasks and source associations are preserved. No NCERT disposition, contribution role, association or age changes.
+
 Removing an unnecessary prerequisite can affect future planner eligibility for the unchanged classification claim. It does not establish learner mastery, transfer estimates or authorize learner-state changes. This PR performs no DB, staging or publication operation.
 
 ## Validation and accounting
