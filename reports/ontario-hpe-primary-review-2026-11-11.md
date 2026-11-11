@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **163 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** and **20 Personal Safety records** in Grades 1–6. It contains **163 Full**
-authoring dispositions, **365 component pairs** and **43 topics**. The remaining
-**104 records** (other Healthy Living and integrated SEL) are pending
+accounts for **182 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** and **19 Human Development records** in Grades 1–6. It contains **182 Full**
+authoring dispositions, **401 component pairs** and **55 topics**. The remaining
+**85 records** (other Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -61,8 +61,8 @@ concept answers or an unimplemented plan do not constitute a child's evidence.
 Personal understanding does not require enjoying every activity, reporting a
 positive mood or disclosing private health/family circumstances.
 
-The [new fitness-component concept](ontario-hpe-fitness-component-claim-2026-11-11.md)
-the [bounded minor-care concept](ontario-hpe-minor-care-claim-2026-11-11.md) and the [food-allergy knowledge concept](ontario-hpe-allergy-claim-2026-11-11.md) are the three new shared claims/guides in the cumulative HPE work so far. The association slices change no authored card, guide or dependency. Earlier
+The [new fitness-component concept](ontario-hpe-fitness-component-claim-2026-11-11.md),
+the [bounded minor-care concept](ontario-hpe-minor-care-claim-2026-11-11.md), the [food-allergy knowledge concept](ontario-hpe-allergy-claim-2026-11-11.md) and the [medicine authorisation concept](ontario-hpe-medicines-claim-2026-11-11.md) are the four new shared claims/guides in the cumulative HPE work so far. Old authored cards and dependencies remain unchanged; Human Development makes the 12 explicitly registered factual guide corrections below. Earlier
 scoped requirements remain exact; standards and compatibility age envelopes are
 generated. A Full label is an authoring judgment about available tasks and
 conditions, not a claim that a child performed them or an intervention is validated.
@@ -95,3 +95,13 @@ Twenty further source duties are accounted for by explicit original tasks, inclu
 Current [Ontario bullying guidance](https://www.ontario.ca/page/bullying-we-can-all-help-stop-it) informs the local source task: power/context matter, not every one-off disagreement is bullying, and a harmful incident does not need to repeat before help. The inherited repeated-intent definition remains unchanged and is not presented as the complete Ontario definition. Actual [safe-adult information](https://kidshelpphone.ca/get-info/how-identify-safe-adult) supports choosing help; no real service contact, unsafe-image handling or personal disclosure is an assessment action. Full older card and hard-chain evidence stays separate from a source-specific component.
 
 The Personal Safety checkpoint passes all **272 tests** and required generation/validation checks. It preserves all **1,905 existing authored cards**, **1,090 guide payloads and sequence**, every **4,942 old context** and all dependency/catalogue/archive/cluster bytes. It adds **29 contexts**, extends **8 exact bands** and adds **40 pairs** (the allergy pair already existed). **3** generated age ends expand with no start lowered; no old authored claim, guide or edge changes in this association slice.
+
+## Human development and relationships
+
+Nineteen further specific duties have source-fit portfolios, including actual anatomy and reproductive-process knowledge, private-care routines, consent, identity, puberty support and non-graphic discussion of sexual-media representation. There is no body inspection, private identity or medical-history requirement, forced positive feeling or exposure to explicit media. Grade 5 process knowledge is assessed directly and cannot be inferred from a puberty component.
+
+The complete unchanged reproduction claim is qualified at one exact Ontario ages 10–11 context, retaining its older 12–13 context and all four evidence clauses. Its separate whole task includes both systems and their functions, fertilisation, gestation/birth, the placenta/cord and maternal-substance effects. These whole-claim checks extend beyond the minimum Ontario source task and are not new universal Ontario duties. The [original programme](ontario-hpe-primary-task-programme-2026-11-11.json) contains the actual cards, arrow-model answers, near misses and transfer.
+
+Twelve repeated guide strings receive a narrow [factual clarification](ontario-hpe-reproduction-whole-fit-2026-11-11.json): substance exchange occurs across normally separate circulations; oxygen can diffuse while nutrients use different mechanisms. This retains the functional-exchange claim, requires no advanced transport vocabulary and avoids treating the placenta as a perfect barrier. No old source-verification flag is upgraded. The original glucose/alanine study abstracts support this correction, not a claim of child-intervention efficacy. Old guide revisions must remain available downstream; no learner equivalence, reset or transfer is authorised.
+
+Human Development validation passes generation, validation, generated checks and all 285 tests. The exact boundary retains all 1,906 old authored cards, all 4,972 old contexts and all 4,001 edges; only the 12 registered factual guide strings change. There are 21 new contexts, 10 exact-band extensions and 36 new component pairs, with no new claim, guide or edge in this source slice. Derived envelopes change for three reused topics while every prior scoped interval remains intact.
