@@ -57,10 +57,24 @@ test('Grade4 action assessment retains both industry and citizen evidence roles'
   for (const level of ['intendedpurpose', 'actualimplementation/output', 'reportedoutcome', 'unknownlongterm/causalextent']) assert.ok(conditions.evidenceLevels.includes(level));
 });
 
+function resolveYoungPersonSource(ref) {
+  const [document, pointer, extra] = ref.split('#');
+  assert.equal(extra, undefined, 'Malformed evidence source reference');
+  assert.ok(pointer?.startsWith('/'), 'Missing evidence resource pointer');
+  const file = document || 'ontario-grade4-early-own-comparisons-review-2026-11-11.json';
+  assert.ok(!file.includes('/') && file.endsWith('.json'), 'Invalid evidence report path');
+  let target;
+  try { target = read(`reports/${file}`); }
+  catch { assert.fail('Missing evidence source document'); }
+  for (const segment of pointer.split('/').slice(1)) target = target?.[segment.replaceAll('~1', '/').replaceAll('~0', '~')];
+  assert.ok(target && typeof target === 'object' && Object.keys(target).length, 'Missing evidence source resource');
+  return target;
+}
 function checkYoungPersonEvidenceBoundaries(protocol) {
   const cases = new Map(protocol.caseEvidence.map(row => [row.id, row]));
   for (const row of cases.values()) {
     assert.ok(row.sourceRef && row.period && row.supportedScope.length);
+    resolveYoungPersonSource(row.sourceRef);
     const criterion = protocol.assessment.successCriteria.find(item => item.caseId === row.id);
     assert.ok(criterion?.requiresEvidenceBasisQualification && criterion.requiredOperation, `Missing evidence qualification for ${row.id}`);
     const probes = protocol.assessment.nearMissProbes.filter(item => item.caseId === row.id);
@@ -84,6 +98,15 @@ test('Grade4 young-person comparisons retain source-basis qualification and reje
   const unbound = structuredClone(protocol);
   unbound.assessment.nearMissProbes[0].inferenceType = 'unreviewed-inference';
   assert.throws(() => checkYoungPersonEvidenceBoundaries(unbound), /Unbound near-miss inference/);
+  const absentResource = structuredClone(protocol);
+  absentResource.caseEvidence[0].sourceRef = 'ontario-grade4-early-inquiry-map-review-2026-11-10.json#/resources/not-a-resource';
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(absentResource), /Missing evidence source resource/);
+  const absentReport = structuredClone(protocol);
+  absentReport.caseEvidence[0].sourceRef = 'missing-evidence-report.json#/resources/droulers-registry';
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(absentReport), /Missing evidence source document/);
+  const absentLocalResource = structuredClone(protocol);
+  absentLocalResource.caseEvidence[1].sourceRef = '#/newSources/absent';
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(absentLocalResource), /Missing evidence source resource/);
 });
 
 function checkConflictPeriodReadiness(row, protocol) {
