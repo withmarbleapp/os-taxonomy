@@ -31,11 +31,17 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       'ON-SCI-2022-G4-C2.6': ['material-interactions', 'sound-interactions'],
       'ON-SCI-2022-G4-C2.7': ['light-heat'],
       'ON-SCI-2022-G4-C2.8': ['sensory-devices'],
+      'ON-SCI-2022-G4-D2': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
+      'ON-SCI-2022-G4-D2.1': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
+      'ON-SCI-2022-G4-D2.2': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
+      'ON-SCI-2022-G4-D2.3': ['lever', 'fixed-pulley', 'spur-gears'],
+      'ON-SCI-2022-G4-D2.4': ['spur-gears', 'plane-change'],
+      'ON-SCI-2022-G4-D2.5': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears'],
     }[row.code];
     if (propertyRoles) {
       assert.deepEqual(protocol.requiredCaseFields, ['question', 'expectedEvidence', 'nearMiss', 'changedCase'], 'Missing property-evidence contract');
       const roles = protocol.caseRefs.map(ref => report.preparedCases?.[ref]?.role);
-      for (const role of propertyRoles) assert.ok(roles.includes(role), 'Missing required light/sound property');
+      for (const role of propertyRoles) assert.ok(roles.includes(role), 'Missing required scientific task role');
     }
 
     for (const ref of protocol.caseRefs) {
@@ -43,6 +49,7 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       assert.ok(value?.sourceSummary?.trim() && value.attributionLimits?.trim() && value.resourceRefs?.length, 'Missing source-bound case');
       for (const sourceRef of value.resourceRefs) assert.ok(report.resources?.[sourceRef]?.url?.startsWith('https://') && report.resources[sourceRef].readScope?.trim(), 'Missing actual case resource');
       for (const field of protocol.requiredCaseFields ?? []) assert.ok(typeof value[field] === 'string' && value[field].trim(), 'Missing required property case evidence');
+      if (value.role === 'plane-change') for (const field of ['geometryBefore', 'geometryAfter']) assert.ok(typeof value[field] === 'string' && value[field].trim(), 'Missing actual plane-change geometry');
     }
     if (row.disposition === 'Full') {
       assert.deepEqual(protocol.remainingConditions, [], 'Unresolved Full protocol condition');
@@ -63,7 +70,7 @@ test('Grade4 fresh closures cannot lose their evidence dossier or actual prepare
   const missing = structuredClone(ledger.expectations); delete missing.find(value => value.code === row.code).dossier;
   assert.throws(() => check(missing), /Missing fresh task binding/);
   const report = load(`reports/${row.dossier}`); delete report.preparedCases['high-park'];
-  assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? report : load(`reports/${name}`)), /Missing source-bound case|Missing required light\/sound property/);
+  assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? report : load(`reports/${name}`)), /Missing source-bound case|Missing required scientific task role/);
 });
 test('Grade4 Full tasks cannot ignore source resource loss or retained protocol conditions', () => {
   const row = ledger.expectations.find(value => value.dossier);
@@ -85,7 +92,7 @@ test('Grade4 light/sound duties retain their concrete explanatory cases and tran
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
   }
   const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['wave-handoff'];
-  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing source-bound case|Missing required light\/sound property/);
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing source-bound case|Missing required scientific task role/);
 });
 
 
@@ -93,7 +100,7 @@ test('Grade4 sound task cannot keep Full after dropping its wave binding or evid
   const name = 'ontario-grade4-light-sound-properties-design-2026-11-11.json';
   const missing = structuredClone(load(`reports/${name}`));
   missing.protocols['C2.4'].caseRefs = missing.protocols['C2.4'].caseRefs.filter(ref => ref !== 'wave-handoff');
-  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missing : load(`reports/${report}`)), /Missing required light\/sound property/);
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missing : load(`reports/${report}`)), /Missing required scientific task role/);
   const noContract = structuredClone(load(`reports/${name}`)); delete noContract.protocols['C2.4'].requiredCaseFields;
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? noContract : load(`reports/${report}`)), /Missing property-evidence contract/);
 });
@@ -104,6 +111,19 @@ test('Grade4 integrated light/sound cannot substitute child links for a missing 
   for (const role of ['light-emission', 'material-interactions', 'sensory-devices']) {
     const damaged = structuredClone(load(`reports/${name}`));
     damaged.protocols.C2.caseRefs = damaged.protocols.C2.caseRefs.filter(ref => damaged.preparedCases[ref].role !== role);
-    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required light\/sound property/);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
+  }
+});
+
+
+test('Grade4 mechanism transformations retain actual plane geometry and varied motion cases', () => {
+  const name = 'ontario-grade4-mechanism-functions-design-2026-11-11.json';
+  for (const field of ['geometryBefore', 'geometryAfter']) {
+    const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['plane-change'][field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing actual plane-change geometry/);
+  }
+  for (const [code, ref] of [['D2.3', 'fixed-pulley'], ['D2.4', 'plane-change'], ['D2', 'movable-pulley']]) {
+    const damaged = structuredClone(load(`reports/${name}`)); damaged.protocols[code].caseRefs = damaged.protocols[code].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
   }
 });
