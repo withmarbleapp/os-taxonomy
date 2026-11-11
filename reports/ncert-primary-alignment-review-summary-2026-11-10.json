@@ -12,23 +12,23 @@
     "notReviewedSourceRecords": 0,
     "FullAuthoring": 444,
     "mixedSkillAndContextualOrientation": 36,
-    "conditionalBindings": 27,
+    "conditionalBindings": 25,
     "contextualRequirements": 12,
     "Unverified": 1,
     "eligibleSourceRecords": 521,
     "excludedPhysicalEducation": 49,
-    "PartialAuthoring": 1
+    "PartialAuthoring": 3
   },
   "dispositions": {
     "ConditionalArtFormBinding": 11,
-    "ConditionalGraphRepresentation": 6,
+    "ConditionalGraphRepresentation": 4,
     "ConditionalLanguageBinding": 10,
     "ContextualAffectiveRequirement": 6,
     "ContextualMotorDevelopmentRequirement": 1,
     "ContextualReadingEngagement": 5,
     "Full": 444,
     "OutOfScope": 49,
-    "Partial": 1,
+    "Partial": 3,
     "SkillWithContextualEngagement": 36,
     "Unverified": 1
   },
@@ -238,10 +238,10 @@
       "reviewedHere": 18,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 13,
         "ConditionalLanguageBinding": 3,
-        "ConditionalGraphRepresentation": 1,
-        "ContextualReadingEngagement": 1
+        "ContextualReadingEngagement": 1,
+        "Full": 13,
+        "Partial": 1
       },
       "excludedByUserScope": 0,
       "eligibleRecords": 18
@@ -483,10 +483,11 @@
       "reviewedHere": 13,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 8,
+        "ConditionalGraphRepresentation": 2,
         "ConditionalLanguageBinding": 1,
-        "ConditionalGraphRepresentation": 3,
-        "ContextualReadingEngagement": 1
+        "ContextualReadingEngagement": 1,
+        "Full": 8,
+        "Partial": 1
       },
       "excludedByUserScope": 0,
       "eligibleRecords": 13
@@ -549,5 +550,6 @@
     ],
     "interpretation": "Formal role-based language requirements remain in scope and can be authored without choosing a fixed language pair."
   },
-  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json"
+  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json",
+  "expressiveReadingComponentReview": "expressive-reading-prerequisite-review-2026-11-11.json"
 }

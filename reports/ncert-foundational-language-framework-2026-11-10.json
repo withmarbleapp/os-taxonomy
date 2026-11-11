@@ -24,7 +24,7 @@
   "summary": {
     "Full": 14,
     "ConditionalLanguageBinding": 5,
-    "ConditionalGraphRepresentation": 1,
+    "Partial": 1,
     "ContextualReadingEngagement": 1
   },
   "records": [
@@ -117,7 +117,7 @@
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.4",
       "officialCode": "C-10.4",
-      "disposition": "ConditionalGraphRepresentation",
+      "disposition": "Partial",
       "sourceStatus": "formal-stage-standard",
       "sourcePages": [
         215
@@ -129,16 +129,32 @@
       ],
       "attainmentReference": "stage-end",
       "applicability": {},
-      "contributions": [],
-      "rationale": "Accurate oral reading, phrasing, expression, rereading and correction are all retained in the whole existing operation. A qualified assessor selects a suitable R1 text and evaluates its actual linguistic units rather than imposing English phoneme/grapheme conventions.",
+      "contributions": [
+        {
+          "topicId": "mt_V-ldQp56bF",
+          "topicName": "Reading with Expression and Accuracy",
+          "role": "component",
+          "contribution": "Shared actual-script expressive-reading component; actual-role material and qualified assessment remain conditions. Source-only success does not establish every whole-target performance clause.",
+          "associationAgeBand": [
+            6,
+            8
+          ]
+        }
+      ],
+      "rationale": "The reviewed whole-prerequisite correction preserves intrinsic accurate word recognition and all target performance requirements. One component association is now active at the separately reviewed interval; source stage/applicability and actual-role/full-task conditions remain. No Full or cross-language learner mastery is inferred.",
       "assessmentProtocols": [
         "r1-reading-fluency"
       ],
       "remainingConditions": [
-        "Separate reviewed dependency/consumer decision required before the conditional generic graph candidate can be published."
+        "Supply genuine appropriate-stage actual-role written material and a competent language/variety assessor; record exact accepted readings and independent performance.",
+        "Accurate written-word recognition and appropriate pacing/pauses remain necessary; apply the full target prosody/rereading/self-correction checks when assessing whole topic. A source-only successful passage does not automatically demonstrate every target clause.",
+        "Do not credit rehearsed oral recitation, adult-supplied words, guessed text or an unobserved self-correction opportunity as complete target mastery.",
+        "No fixed national language pair and no R1\u2192R2, script\u2192script or text-level mastery transfer is inferred from sharing a topic ID."
       ],
-      "graphRepresentation": "conditional-inherited-gate",
-      "conditionalContributions": [
+      "graphRepresentation": "active-shared-component-with-actual-role-conditions",
+      "conditionalContributions": [],
+      "frameworkTaskDesign": "accounted-by-role-bound-protocol",
+      "historicalConditionalContributions": [
         {
           "topicId": "mt_V-ldQp56bF",
           "topicName": "Reading with Expression and Accuracy",
@@ -146,15 +162,21 @@
           "contribution": "Direct shared operation; language-specific success and whole-topic mastery are not inferred from the association.",
           "inheritedHardGatePaths": [
             [
+              "mt_V-ldQp56bF"
+            ]
+          ],
+          "condition": "The registered whole-prerequisite correction removes the universal English-repertoire hard gate. Actual-role material, competent assessment and complete accuracy/rate/prosody/self-correction/rereading compatibility still require separate review before this withheld candidate is associated.",
+          "historicalHardGatePaths": [
+            [
               "mt_V-ldQp56bF",
               "mt_ZhvwM6LMBL",
               "mt_1KCwbGvm1F"
             ]
           ],
-          "condition": "Whole intrinsic operation is shared, but the existing hard-gate chain is not universally valid for arbitrary R1/R2. No unqualified scoped association is published."
+          "dependencyCorrectionReport": "expressive-reading-prerequisite-review-2026-11-11.json",
+          "currentHardPathInterpretation": "Complete remaining hard paths after the registered whole-prerequisite correction; the target is itself the current hard-path leaf. Accurate actual-text word recognition remains intrinsic, not an optional reading demand."
         }
-      ],
-      "frameworkTaskDesign": "accounted-by-role-bound-protocol"
+      ]
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.5",
@@ -748,7 +770,7 @@
       ],
       "remainingConditions": [
         "Bind the actual language/script and qualified assessment materials before use; no universal English substitution.",
-        "Separate reviewed dependency/consumer decision required before the conditional generic graph candidate can be published."
+        "Separate actual-role/full-task review remains necessary before the expressive-reading candidate can be published after the registered whole-prerequisite correction."
       ],
       "graphRepresentation": "conditional-inherited-gate",
       "conditionalContributions": [
@@ -759,12 +781,19 @@
           "contribution": "Direct shared operation; language-specific success and whole-topic mastery are not inferred from the association.",
           "inheritedHardGatePaths": [
             [
+              "mt_V-ldQp56bF"
+            ]
+          ],
+          "condition": "The whole English-repertoire hard gate is corrected; this goal-level candidate remains withheld pending actual-role/full-task review, alongside the goal\u2019s other language/script conditions.",
+          "historicalHardGatePaths": [
+            [
               "mt_V-ldQp56bF",
               "mt_ZhvwM6LMBL",
               "mt_1KCwbGvm1F"
             ]
           ],
-          "condition": "Whole intrinsic operation is shared, but the existing hard-gate chain is not universally valid for arbitrary R1/R2. No unqualified scoped association is published."
+          "dependencyCorrectionReport": "expressive-reading-prerequisite-review-2026-11-11.json",
+          "currentHardPathInterpretation": "Complete current hard paths after the registered correction; word recognition and all expressive-reading evidence remain intrinsic."
         }
       ],
       "frameworkTaskDesign": "accounted-by-role-bound-protocol",
@@ -948,9 +977,10 @@
   ],
   "consumerBoundary": "Associations record shared authoring contributions only. Current scoped contexts do not encode the actual learner language or script. Consumers must not interpret one topic estimate as evidence of R1 and R2 attainment; language/material binding is an independent application responsibility. No learner state, schema or scoring changes are authorised.",
   "graphCounts": {
-    "unconditionalAssociations": 28,
-    "sharedTopics": 15,
-    "conditionalCandidatesNotPublished": 2
+    "activeAssociations": 29,
+    "sharedTopics": 16,
+    "conditionalCandidatesNotPublished": 1,
+    "meaning": "Active whole/component associations retain each source disposition and actual-role conditions; this is not unconditional source or learner mastery."
   },
   "initialReview": {
     "commit": "320ad631a59b488b4ffcd965efbcde5ef90cd4fd",
