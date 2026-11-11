@@ -37,6 +37,11 @@
       "scope": "Two shared Arts operations and teaching assets; whole Arts programme still under review",
       "head": "6211a409df2e27bf31de81318e05b36e0cf732f6",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/6211a409df2e27bf31de81318e05b36e0cf732f6"
+    },
+    {
+      "scope": "Two citation-only repairs and a validation guard against redacted locators",
+      "head": "1822c241bc5167d03198a096668e11bb518ff7ef",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/1822c241bc5167d03198a096668e11bb518ff7ef"
     }
   ],
   "reviewedSourceScopes": {
@@ -87,7 +92,7 @@
       "baseRows": 1046,
       "mergedRows": 1089,
       "newRows": 43,
-      "changedOldRows": 2,
+      "changedOldRows": 4,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
@@ -140,11 +145,11 @@
     "validation": "pass",
     "generatedCheck": "pass",
     "tests": {
-      "pass": 224,
+      "pass": 225,
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "All approved authored payloads, stable base/append order and scoped context/code union checked against seven immutable leaves. Catalogue unchanged; archive exactly matches reviewed PR114."
+    "exactSourceUnion": "All approved authored payloads, stable base/append order and scoped context/code union checked against eight immutable leaves. Catalogue unchanged; archive exactly matches reviewed PR114."
   },
   "remainingWork": [
     "Ontario Social Studies Grade5 historical strand (20 records) and Grade6 continue separately; the Grade5 government strand (21 records) is included here.",
@@ -153,5 +158,13 @@
     "Conditional language/script/art-form/local-community material and chronology/source-meaning limits remain explicit; reviewed is not synonymous with Full.",
     "Default-branch review/acceptance and downstream consumer/writer/fleet qualification and protected-state-preserving staging publication remain separate."
   ],
-  "learnerState": "No DB write, learner reset, historical observation reinterpretation, score transfer, backfill or staging activation is performed by this source integration."
+  "learnerState": "No DB write, learner reset, historical observation reinterpretation, score transfer, backfill or staging activation is performed by this source integration.",
+  "citationRepairs": {
+    "topics": [
+      "mt_lp1eTsQen7",
+      "mt_tiPyEkm4cU"
+    ],
+    "changes": "Onlysources[1].urlandcorrespondingURLomissionentries;teachingcontent/verification/confidence/provenanceunchanged",
+    "review": "research-citation-locators-2026-11-11.md"
+  }
 }
