@@ -175,3 +175,39 @@ test('Canadian shared responsibility tasks bind actual prepared cases and primar
   delete lostSource.resources['nfn-fishery-actions'];
   assert.throws(() => checkCanadianSharedCases(lostSource), /Missing shared-case source/);
 });
+
+function checkIntegratedGovernmentResponses(report) {
+  const protocol = report.protocols['integrated-responses-and-plans'];
+  const assessment = protocol.learnerSteps.find(step => step.operation === 'assess-each-response');
+  assert.ok(assessment?.instruction && assessment.caseIds.length, 'Missing actual response-assessment task');
+  const assessedPeople = new Set();
+  for (const id of assessment.caseIds) {
+    const response = report.responseCases[id];
+    assert.ok(response?.government && response.issue && response.facts.length && response.assessmentFocus, 'Missing actual response case');
+    const resource = report.resources[response.resourceRef];
+    assert.ok(resource?.url || resource?.report, 'Missing response source');
+    if (resource.report) assert.ok(Object.keys(read(`reports/${resource.report}`)).length, 'Missing inherited response dossier');
+    assessedPeople.add(response.people);
+  }
+  for (const people of ['First Nations', 'Métis', 'Inuit']) assert.ok(assessedPeople.has(people), `Missing required government-response performance: ${people}`);
+  const plans = protocol.learnerSteps.find(step => step.operation === 'develop-both-plans');
+  assert.ok(plans?.instruction && plans.dossier, 'Missing actual integrated plan task');
+  const dossier = read(`reports/${plans.dossier}`);
+  for (const id of ['social-plan', 'environment-plan']) {
+    assert.ok(plans.protocolIds.includes(id) && dossier.protocols[id], 'Missing integrated social/environment plan');
+    checkActionPlanActors(dossier, dossier.protocols[id]);
+  }
+}
+test('Grade5 overall response task requires actual FN, Métis and Inuit cases and both plans', () => {
+  const report = read('reports/ontario-grade5-integrated-government-responses-2026-11-11.json');
+  checkIntegratedGovernmentResponses(report);
+  const lostPerformance = structuredClone(report);
+  lostPerformance.protocols['integrated-responses-and-plans'].learnerSteps.find(step => step.operation === 'assess-each-response').caseIds = ['first-nation', 'metis'];
+  assert.throws(() => checkIntegratedGovernmentResponses(lostPerformance), /Missing required government-response performance: Inuit/);
+  const lostPlan = structuredClone(report);
+  lostPlan.protocols['integrated-responses-and-plans'].learnerSteps.find(step => step.operation === 'develop-both-plans').protocolIds = ['social-plan'];
+  assert.throws(() => checkIntegratedGovernmentResponses(lostPlan), /Missing integrated social\/environment plan/);
+  const brokenSource = structuredClone(report);
+  brokenSource.responseCases.metis.resourceRef = 'absent';
+  assert.throws(() => checkIntegratedGovernmentResponses(brokenSource), /Missing response source/);
+});

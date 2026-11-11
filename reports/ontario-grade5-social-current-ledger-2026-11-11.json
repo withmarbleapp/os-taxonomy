@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "a87dac6741d6e72a960e23a0a4a1c2c7000eeb9d",
+  "localDependencyCommit": "27120872b53c751d3d59df443aaf132dc8b56a1c",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "18 source-fit Full authoring designs and23 separately unverified records; no learner attainment or accepted-main publication is inferred.",
+  "status": "19 source-fit Full authoring designs and22 separately unverified records; current B3.3/B3 and20historical records remain distinct.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Unverified": 23,
-    "Full": 18
+    "Unverified": 22,
+    "Full": 19
   },
   "associationInventory": {
-    "pairs": 35,
+    "pairs": 39,
     "topics": 12,
-    "codes": 18,
+    "codes": 19,
     "newClaims": 3,
     "reusedClaims": 9
   },
@@ -181,11 +181,17 @@
     },
     {
       "code": "B1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_xswgDb7eIU",
+        "mt_CVywzrjT_c",
+        "mt_7VrR1GzhrN",
+        "mt_g8gJIsDxmj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-integrated-government-responses-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-responses-and-plans",
+      "coverageBasis": "All-three Indigenous-government response accounts, actual bounded assessment and both qualified social/environmental government-and-citizen plans are explicitly required. No learner attainment, current all-institution mastery or implemented classroom campaign is inferred."
     },
     {
       "code": "B1.1",
