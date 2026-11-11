@@ -32,3 +32,26 @@ test('Historical inquiry rejects missing sources, duplicate origins and removed 
   removed.protocols.maps.products = removed.protocols.maps.products.filter(product => product.id !== 'historical-inquiry-map');
   assert.throws(() => checkPreparation(removed), /Missing actual product task/);
 });
+
+const repertoire = load('reports/early-colonial-relationships-review-2026-11-11.json');
+function checkCasePackets(report) {
+  const sources = new Set(report.sources.map(source => source.url));
+  for (const protocol of Object.values(report.protocols)) {
+    assert.ok(protocol.caseRefs.length, 'Missing case references');
+    for (const ref of protocol.caseRefs) {
+      let packet = report;
+      for (const key of ref.split('/').slice(1)) packet = packet?.[key];
+      assert.ok(packet?.period && packet.facts?.length && packet.limits, 'Missing prepared case');
+      assert.ok(packet.sourceRefs?.length && packet.sourceRefs.every(url => sources.has(url)), 'Unbound case source');
+    }
+  }
+}
+test('Early relationship repertoire binds actual public case facts to reviewed sources', () => checkCasePackets(repertoire));
+test('Early relationship repertoire rejects missing case packets and unbound sources', () => {
+  const absent = structuredClone(repertoire);
+  delete absent.preparedCases['qikiqtani-contact'];
+  assert.throws(() => checkCasePackets(absent), /Missing prepared case/);
+  const wrong = structuredClone(repertoire);
+  wrong.preparedCases['metis-longer-term'].sourceRefs = ['https://example.invalid/unreviewed'];
+  assert.throws(() => checkCasePackets(wrong), /Unbound case source/);
+});
