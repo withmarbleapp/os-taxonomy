@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "topicId": "mt_CBxOcjh69x",
+  "decision": "Correct the harm condition and receiving historical-range reference, retaining the existing introduced-species mastery claim.",
+  "beforeCard": {
+    "id": "mt_CBxOcjh69x",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Animals of the World",
+    "name": "Invasive Species",
+    "description": "Understand that invasive species are animals (or plants) that have been introduced to a place where they don't naturally belong — like grey squirrels outcompeting red squirrels in the UK, cane toads poisoning native predators in Australia, or rabbits devastating ecosystems in Australia — and that they can cause serious harm to native wildlife by competing for food, spreading disease, or having no natural predators",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 12,
+    "centrality": 0.1321138211382114,
+    "evidence": [
+      "Defines invasive species as non-native animals introduced to a new environment",
+      "Names at least 2 examples of invasive species and their impacts",
+      "Explains at least 2 reasons invasive species are harmful (no predators, outcompete natives, spread disease)",
+      "Understands the difference between a species naturally expanding its range and being introduced by humans"
+    ],
+    "assessmentPrompt": "If {{name}} learns that grey squirrels were brought to the UK from America, can they explain why introduced animals can be a problem for the animals that were already living there?",
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.6"
+    ]
+  },
+  "afterCard": {
+    "id": "mt_CBxOcjh69x",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Animals of the World",
+    "name": "Invasive Species",
+    "description": "Understand that invasive species are animals (or plants) introduced by humans outside their natural or historical range that cause harm in the receiving environment — such as grey squirrels in the UK, cane toads in Australia and rabbits in Australia. Explain specific harmful effects on native wildlife and ecosystems, and distinguish harmful introduction from merely being non-native or naturally expanding a range.",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 12,
+    "centrality": 0.1321138211382114,
+    "evidence": [
+      "Define invasive species as organisms introduced by humans outside their natural or historical range that cause harm in the receiving environment; being non-native alone is insufficient.",
+      "Names at least 2 examples of invasive species and their impacts",
+      "Explains at least 2 reasons invasive species are harmful (no predators, outcompete natives, spread disease)",
+      "Understands the difference between a species naturally expanding its range and being introduced by humans"
+    ],
+    "assessmentPrompt": "If {{name}} learns that grey squirrels were brought to the UK from America, can they explain why introduced animals can be a problem for the animals that were already living there?",
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.6"
+    ]
+  },
+  "source": {
+    "source": "Fisheries and Oceans Canada, About aquatic invasive species",
+    "url": "https://www.dfo-mpo.gc.ca/species-especes/ais-eae/about-sur/index-eng.html",
+    "claim": "The actual definition requires introduction outside the natural or past distribution and significant negative impacts, and explicitly includes species native to one part of Canada introduced outside their historical range elsewhere. Non-native alone is insufficient; national borders are not the receiving ecological range.",
+    "verified": true
+  },
+  "positive": "A human-introduced zebra mussel outside its historical range with documented ecological/infrastructure harm meets the definition.",
+  "nearMiss": "A non-native organism with no demonstrated harm is not established invasive merely by its foreign origin; a dangerous animal native to this local environment is not an introduced invasive.",
+  "transfer": "An organism native elsewhere in Canada but human-introduced outside its historic range and causing harm can be invasive locally; Canada-wide nativeness is insufficient.",
+  "changedGuideFields": [
+    "learn.activities[2].feedback[1] local receiving-range qualifier",
+    "learn.constraints[3] local receiving-range qualifier",
+    "assess.errorPatterns[1].nextMove local receiving-range qualifier",
+    "learn.reviewNotes appended bounded factual review",
+    "sources appended one verified DFO definition source"
+  ],
+  "preserved": "All old examples, other evidence, assessment prompt, simulation design, source uncertainty flags, confidence and original provenance remain unchanged. No new species-recall inventory, age/context/edge edit, learner reset or automatic mastery transfer.",
+  "remainingReviewLimits": "This narrow definition check does not verify all inherited example-specific biological mechanisms or teaching-efficacy assertions.",
+  "sourceScope": "Full actual DFO main body read; source verification is limited to definition/receiving-range clarification, not an empirical validation of the inherited teaching design."
+}

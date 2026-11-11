@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "4010015ff4265a0503369bde827f4e56e760e14c0aef9917e598b7594fafbeb9",
+  "topicFileSha256": "54685b4fabee0d873e604a5b433fb38ebfaaaf4531d233feeb0645c6dc51d298",
   "recordCount": 1064,
   "coverage": {
     "topicCount": 1876,
@@ -56843,7 +56843,7 @@
             "title": "Sort and match: native, non-native, invasive",
             "feedback": [
               "If a learner labels any non-native animal 'invasive', remind them harm and spread are required, not just being from elsewhere.",
-              "If a learner calls a native wasp or fierce native predator 'invasive', point out a native species cannot be invasive however dangerous it is.",
+              "If a learner calls a native wasp or fierce native predator 'invasive', point out a species native to this receiving environment is not an introduced invasive merely because it is dangerous; being native elsewhere in the same country is a different question.",
               "If a learner labels the climate-driven bird 'invasive', contrast natural range shift with human introduction. Under the definition used here, the human role and the harm are what define the term."
             ],
             "rationale": "Categorisation and matching can assess the distinctions and surface misconceptions such as 'any non-native = invasive' and 'they invaded on purpose'. Sorting consolidates and checks the category distinctions but does not itself display the population dynamics, so it works best alongside the simulation.",
@@ -56879,7 +56879,7 @@
           "Distinguish 'non-native' from 'invasive': an introduced species becomes invasive only when it spreads AND causes harm.",
           "Distinguish human introduction (trade, pets, stowaways/ballast water) from a species naturally expanding its range; both the human role and the harm are part of the definition.",
           "Locate the cause of harm in the new environment (no predators/parasites/competitors to keep the species in check, plus specific advantages like disease), not in the invader being inherently 'stronger', 'better', or 'evil'.",
-          "Native species cannot be invasive, however much of a pest or however dangerous they are.",
+          "A species native to the receiving environment is not an introduced invasive merely because it is a pest or dangerous; a species native to another part of the country may be introduced outside its historical range and cause harm.",
           "Biological control is not a guaranteed safe fix — a released control species can itself become a worse invasive (cane toad example).",
           "Sort/match tasks assess the category distinctions but do not by themselves make the population dynamics visible; pair them with the simulation.",
           "Before/after diagrams and comparison cards are fixed representations: they can illustrate the harm but cannot be manipulated to test 'what if the predators were present', which is the observable affordance the simulation adds; this is not a claim that other media cannot teach the concept.",
@@ -56892,7 +56892,8 @@
           "Whether 'release from natural control' is the single dominant cause or one contributor alongside competition and disease is not independently established; the lead activity's insight now frames enemy-release as the primary mechanism the simulation demonstrates while naming competition and disease as case-specific additions.",
           "Squirrelpox being deadly to red squirrels but not grey squirrels, and cane toads being introduced to control beetles, are drawn from the source examples; biological/epidemiological specifics were not re-verified here.",
           "The diagnostic 'correctAnswer' notes squirrelpox is deadly to reds but not greys and that greys also outcompete reds for food; these align with the source claims but remain unverified.",
-          "Efficacy comparisons between the simulation and other media are presented as proposed/intended wording because no empirical effectiveness evidence was supplied."
+          "Efficacy comparisons between the simulation and other media are presented as proposed/intended wording because no empirical effectiveness evidence was supplied.",
+          "2026-11-11 factual clarification: the receiving natural/historical range and harm condition were checked against the actual Fisheries and Oceans Canada definition. Earlier example-specific mechanisms and teaching efficacy remain inherited/unverified; no other sources are newly certified. Original provenance is retained."
         ],
         "schemaVersion": 2
       },
@@ -56918,7 +56919,7 @@
           {
             "kind": "misconception",
             "pattern": "Any animal that's a pest or dangerous is an invasive species",
-            "nextMove": "Define invasive precisely — non-native AND introduced by humans AND causing harm; a native pest is not invasive.",
+            "nextMove": "Define invasive precisely — non-native AND introduced by humans AND causing harm; a pest native to the receiving environment is not an introduced invasive; being native elsewhere in the country does not settle its status here.",
             "distractor": null,
             "revealedBy": "Calls a native wasp or a fierce native predator 'invasive'.",
             "reteachPrerequisiteId": null
@@ -56968,6 +56969,12 @@
           "claim": "Grey squirrels outcompete UK red squirrels and carry squirrelpox; cane toads introduced to Australia poison native predators; these are canonical invasive-species cases.",
           "source": "UK/Australia conservation references on grey squirrels and cane toads",
           "verified": false
+        },
+        {
+          "source": "Fisheries and Oceans Canada, About aquatic invasive species",
+          "url": "https://www.dfo-mpo.gc.ca/species-especes/ais-eae/about-sur/index-eng.html",
+          "claim": "The actual definition requires introduction outside the natural or past distribution and significant negative impacts, and explicitly includes species native to one part of Canada introduced outside their historical range elsewhere. Non-native alone is insufficient; national borders are not the receiving ecological range.",
+          "verified": true
         }
       ],
       "confidence": "high",
