@@ -30,6 +30,11 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (['ON-SCI-2022-G5-E2.2', 'ON-SCI-2022-G5-E2.4'].includes(row.code)) {
+      for (const ref of ['bounded-total', 'actual-safe-observation', 'device-and-brakes', 'perpetual-useful-machine']) {
+        assert.ok(protocol.caseRefs.includes(ref), 'Missing whole conservation/dissipation case');
+      }
+    }
     if (row.code === 'ON-SCI-2022-G5-D2.4') {
       for (const group of ['plant', 'animal']) {
         assert.ok(protocol.caseRefs.filter(ref => report.preparedCases[ref].organismGroup === group).length >= 2, 'Missing varied plant/animal protection');
@@ -157,5 +162,14 @@ test('Grade 5 biological protection preserves varied plants and animals with act
     const damaged = structuredClone(load(`reports/${name}`));
     delete damaged.preparedCases.turtle[field];
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
+  }
+});
+
+test('Grade 5 energy cannot lose the perpetual-useful-machine or external-boundary case', () => {
+  const name = 'ontario-grade5-energy-conservation-design-2026-11-11.json';
+  for (const ref of ['perpetual-useful-machine', 'bounded-total']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    for (const protocol of Object.values(damaged.protocols)) protocol.caseRefs = protocol.caseRefs.filter(id => id !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing whole conservation\/dissipation case/);
   }
 });

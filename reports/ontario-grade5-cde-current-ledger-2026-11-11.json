@@ -3,12 +3,12 @@
   "date": "2026-11-11",
   "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
   "scope": "Grade 5 Science C/D/E only; all 31 source records read, 9 historical Full judgments retained and 22 prior Partials reviewed incrementally. A/common and B/health are outside this child.",
-  "status": "Twelve prior residuals resolved through source-fit authoring designs; remaining hazard and energy closure continues.",
+  "status": "Fourteen prior residuals resolved through source-fit authoring designs; remaining hazard and integrated energy closure continues.",
   "counts": {
     "selected": 31,
     "historicalFullRetained": 9,
-    "freshResolvedFull": 12,
-    "remainingPartial": 10
+    "freshResolvedFull": 14,
+    "remainingPartial": 8
   },
   "expectations": [
     {
@@ -363,15 +363,16 @@
       "code": "ON-SCI-2022-G5-E2.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh whole qualitative conservation/dissipation portfolio including real-machine/perpetual-useful-output and explicit system-boundary distinctions.",
       "contributingTopicIds": [
         "mt_akBotspaf2",
-        "mt_X_aDUBh-HF"
+        "mt_X_aDUBh-HF",
+        "mt_68pIoiiG4g"
       ],
-      "remainingConditions": [
-        "Assess conservation and the non-creation/non-destruction claim explicitly. A diagram with energy labels alone does not establish the law."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-energy-conservation-design-2026-11-11.json",
+      "protocolReference": "/protocols/ON-SCI-2022-G5-E2.2"
     },
     {
       "code": "ON-SCI-2022-G5-E2.3",
@@ -389,14 +390,15 @@
       "code": "ON-SCI-2022-G5-E2.4",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh whole qualitative conservation/dissipation portfolio including real-machine/perpetual-useful-output and explicit system-boundary distinctions.",
       "contributingTopicIds": [
-        "mt_X_aDUBh-HF"
+        "mt_X_aDUBh-HF",
+        "mt_68pIoiiG4g"
       ],
-      "remainingConditions": [
-        "Explain dissipation during a selected conversion and account for energy reaching the surroundings. A named transfer is not necessarily an unintended or dispersed output."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-energy-conservation-design-2026-11-11.json",
+      "protocolReference": "/protocols/ON-SCI-2022-G5-E2.4"
     },
     {
       "code": "ON-SCI-2022-G5-E2.5",
