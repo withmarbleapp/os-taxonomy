@@ -30,6 +30,10 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (row.code === 'ON-SCI-2022-G5-D2') {
+      const roles = protocol.caseRefs.map(ref => report.preparedCases[ref].role);
+      for (const role of ['member', 'outside', 'built-resistance', 'natural-resistance', 'protective-design']) assert.ok(roles.includes(role), 'Missing integrated structural duty');
+    }
     if (['ON-SCI-2022-G5-D1', 'ON-SCI-2022-G5-D1.1', 'ON-SCI-2022-G5-D1.2'].includes(row.code)) {
       const cases = protocol.caseRefs.map(ref => report.preparedCases[ref]);
       if (row.code !== 'ON-SCI-2022-G5-D1.2') {
@@ -202,4 +206,11 @@ test('Grade 5 hazard analysis cannot lose natural effects or remote method justi
   const missingRemote = structuredClone(load(`reports/${name}`));
   for (const protocol of Object.values(missingRemote.protocols)) protocol.caseRefs = protocol.caseRefs.filter(ref => missingRemote.preparedCases[ref].communitySetting !== 'remote');
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missingRemote : load(`reports/${report}`)), /Missing community setting/);
+});
+
+test('Grade 5 integrated structures cannot substitute child links for the natural resistance task', () => {
+  const name = 'ontario-grade5-integrated-structures-design-2026-11-11.json';
+  const damaged = structuredClone(load(`reports/${name}`));
+  damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].role !== 'natural-resistance');
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing integrated structural duty/);
 });
