@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "Draft integration proposal; not accepted main, published staging, complete Ontario coverage or learner attainment.",
+  "status": "Reviewed source integration proposal; not accepted main, published staging, complete Ontario coverage or learner attainment.",
   "acceptedBase": "b5aa9b928d217944f82b35e964c98502972855d7",
   "sourceLeaves": [
     {
@@ -67,6 +67,11 @@
       "scope": "Explicitformatting-onlytimestampsforthe newNewFranceguide",
       "head": "5bd808cf60edd85bebcbe304dda8bab95809f924",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/5bd808cf60edd85bebcbe304dda8bab95809f924"
+    },
+    {
+      "scope": "Complete127-record Ontario Kindergarten source review;120Full7local-resourcePartial",
+      "head": "860974ee90240fe77f5d66572c454a2224397353",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/860974ee90240fe77f5d66572c454a2224397353"
     }
   ],
   "reviewedSourceScopes": {
@@ -108,21 +113,32 @@
       "review": "ontario-arts-primary-review-2026-11-11.md",
       "programme": "ontario-arts-primary-task-programme-2026-11-11.json",
       "learnerAttainmentInferred": false
+    },
+    "ontarioKindergarten": {
+      "sourceRecords": 127,
+      "FullAuthoring": 120,
+      "PartialLocalResourceBinding": 7,
+      "newSharedClaims": 1,
+      "componentPairs": 312,
+      "newScopedPairs": 300,
+      "newContexts": 104,
+      "review": "ontario-kindergarten-complete-review-2026-11-11.md",
+      "learnerAttainmentInferred": false
     }
   },
   "integrationCounts": {
     "topics": {
       "baseRows": 1858,
-      "mergedRows": 1907,
-      "newRows": 49,
+      "mergedRows": 1908,
+      "newRows": 50,
       "changedOldRows": 7,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
     "teaching-research": {
       "baseRows": 1046,
-      "mergedRows": 1092,
-      "newRows": 46,
+      "mergedRows": 1093,
+      "newRows": 47,
       "changedOldRows": 4,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": false,
@@ -146,7 +162,7 @@
     },
     "contexts": {
       "exactReviewedContextAndCodeUnion": true,
-      "rows": 4859
+      "rows": 4963
     }
   },
   "sharedDependencyReconciliation": {
@@ -177,15 +193,15 @@
     "validation": "pass",
     "generatedCheck": "pass",
     "tests": {
-      "pass": 243,
+      "pass": 258,
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "Previously verified integration plus completeG5/Arts leaf deltas: all authored payloads by ID, stable topic/edge/cluster order and complete context/code union exact. Research retains declared canonical ordering; newNewFrance timestamps receive only explicit millisecond rendering. Catalogue/archive unchanged.",
+    "exactSourceUnion": "Previously verified integration plus completeG5/Arts leaf deltas: all authored payloads by ID, stable topic/edge/cluster order and complete context/code union exact. Research retains declared canonical ordering; newNewFrance timestamps receive only explicit millisecond rendering. Catalogue/archive unchanged. Complete Kindergarten leaf adds one shared estimation operation/guide and its exact scoped components; old authored payloads, dependencies and source catalogue remain unchanged. Three deliberately reviewed age-six scoped associations affect generated compatibility starts only.",
     "reviewCorrection": "Nested French binding reports, protocols and individual resource targets are resolved, supporting object and array collections. Missing report/protocol/resource, empty resource lists and inherited-object keys fail; all curriculum/research data unchanged."
   },
   "remainingWork": [
-    "Ontario Grade6 SocialStudies46, Health/PE267 and Kindergarten127 remain under whole programme qualification (440 records).",
+    "Ontario Grade6 SocialStudies46 and Health/PE267 remain under whole programme qualification (313 records); Kindergarten127 is reviewed with seven explicit local-resource Partials.",
     "Actual task/resource duties from prior Language40 andScience233 Partial reviews still require completion; a historicalreview orlink count is insufficient.",
     "Explicit language/script/artform/localcommunity/chronology/source-meaning conditions remain; sourceFullauthoring is not learnerattainment or comparative teachingefficacy.",
     "Defaultbranch review/acceptance and downstream consumer/writer/fleet qualification plus freshprotectedstate-preserving publication remain separate."
