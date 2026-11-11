@@ -13,17 +13,18 @@ function pointer(value, ref) {
   assert.ok(value && typeof value === 'object' && Object.keys(value).length, 'Missing protocol target');
   return value;
 }
-function checkBindings(rows, associations) {
+function checkBindings(rows, associations, readReport = name => load(`reports/${name}`)) {
   assert.deepEqual(rows.map(row => row.code).sort(), codes, 'Source/ledger universe differs');
   for (const row of rows) {
     const actual = associations.filter(context => context.country === 'CA' && context.region === 'Ontario' && context.ageRangeStart <= 11 && context.ageRangeEnd >= 12 && context.standards.includes(prefix + row.code)).map(context => context.topicId);
     assert.deepEqual([...row.contributingTopicIds].sort(), [...new Set(actual)].sort(), `Contributor mismatch ${row.code}`);
     if (!['Full', 'Partial'].includes(row.disposition)) continue;
     assert.ok(row.contributingTopicIds.length && row.dossier, 'Missing reviewed contributor/dossier');
-    const report = load(`reports/${row.dossier}`);
+    const report = readReport(row.dossier);
     const protocol = pointer(report, row.protocolReference);
     assert.ok(protocol.codes.includes(row.code), 'Protocol does not cover this code');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
+    for (const caseId of protocol.caseRefs ?? []) assert.ok(report.preparedCases?.[caseId], 'Missing prepared case');
     for (const ref of protocol.resourceRefs ?? []) {
       const resource = report.resources[ref];
       assert.ok(resource, 'Missing resource');
@@ -63,4 +64,12 @@ test('Geographic coordinate task key retains labelled paired references and vali
   }
   const topic = load('data/topics.json').topics.find(row => row.id === report.claimCuration.topicId);
   assert.equal(topic.type, 'REPRESENTATIONAL');
+});
+
+
+test('Grade6 historical case links detect missing actual packets', () => {
+  const dossier = 'jewish-canadian-history-claim-review-2026-11-11.json';
+  const damaged = structuredClone(load(`reports/${dossier}`));
+  delete damaged.preparedCases['postwar-rights'];
+  assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === dossier ? damaged : load(`reports/${name}`)), /Missing prepared case/);
 });
