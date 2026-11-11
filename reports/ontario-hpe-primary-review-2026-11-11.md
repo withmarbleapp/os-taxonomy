@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **195 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** and **13 Substance Use records** in Grades 1–6. It contains **195 Full**
-authoring dispositions, **428 component pairs** and **59 topics**. The remaining
-**72 records** (other Healthy Living and integrated SEL) are pending
+accounts for **207 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** **13 Substance Use records** and **12 Mental Health Literacy records** in Grades 1–6. It contains **207 Full**
+authoring dispositions, **451 component pairs** and **65 topics**. The remaining
+**60 records** (other Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -115,3 +115,13 @@ Illustrative examples do not make all vapes sources of combustion tar/carbon mon
 All 28 hard-closure cards and 16 available guides were accounted for, including five complete physiology guides read for this slice. Their full inventories and historical flags remain unchanged. A correct source response does not certify a broader circulation, vocabulary or nutrition claim, and the older recreational-drug classification/dependence claim is not age-lowered or silently duplicated. The [programme](ontario-hpe-primary-task-programme-2026-11-11.json) preserves actual source tasks and the inherited-rubric limits explicitly.
 
 Substance-use generation, validation, generated checks and all 297 tests pass. This slice preserves all 1,906 authored cards, 1,091 complete guide payloads/order, 4,993 prior contexts and all dependencies/catalogue/archive/clusters. It adds 10 contexts, extends 13 exact bands and adds 26 new pairs; the 27-pair source portfolio includes the already committed medicine component. No derived age envelope or authored claim changes in this slice.
+
+## Mental health literacy
+
+Twelve further source duties have explicit original tasks covering body/mind care, thoughts-feelings-actions, perceived-threat fight/flight/freeze, feeling descriptions and help, environmental causes and controllability, everyday support, stigma, peer limits and actual school/community access. The child-facing Nemours stress body, SickKids factual explanation and current Ontario service directory were read; age eligibility and the real school route are rechecked/bound at delivery. No actual message, call, account or private history is an assessment action.
+
+The [programme](ontario-hpe-primary-task-programme-2026-11-11.json) separates automatic protective responses from a deliberate brain-message example and from a choice after a feeling. Freezing is neither consent nor misconduct. Thoughts can influence health without controlling every circumstance; self-talk is not a cure and a person does not need a diagnosis, perfect English feeling word or happy mood to deserve support. Peers can listen and connect someone with adults; they are not therapists and do not promise secrecy about danger.
+
+All 20 whole hard-closure cards and both available guides were accounted for, without claim, guide or dependency edits. Full inventories and actual benign performance/reflective evidence remain separate from a narrow fictional diagnostic. The remaining 60 records are the 18 Healthy Living overall expectations and 42 integrated SEL positions, requiring explicit task-portfolio composition rather than automatic promotion from specific links.
+
+Mental-health generation, validation, generated checks and all 303 tests pass. This slice preserves all 1,906 old authored cards, all 1,091 complete guides/order, 5,003 prior contexts and every dependency/catalogue/archive/cluster payload. It adds 15 contexts, extends 6 exact bands and adds 23 component pairs. Two derived age ends expand for the same unchanged feeling-naming/trigger operations; every historical interval is retained.

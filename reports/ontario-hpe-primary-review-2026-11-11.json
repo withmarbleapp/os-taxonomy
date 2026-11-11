@@ -22,11 +22,11 @@
   },
   "counts": {
     "sourceClausesRead": 267,
-    "sourceFitReviewed": 195,
-    "pendingQualification": 72,
-    "Full": 195,
-    "componentPairs": 428,
-    "topics": 59
+    "sourceFitReviewed": 207,
+    "pendingQualification": 60,
+    "Full": 207,
+    "componentPairs": 451,
+    "topics": 65
   },
   "records": [
     {
@@ -1094,7 +1094,48 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "body-mind-overall-health"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No symptom screening, diagnosis, forced positive feeling, body disclosure or required personal mental-health history."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "body-mind-overall-health": "No symptom screening, diagnosis, forced positive feeling, body disclosure or required personal mental-health history."
+        },
+        "sourceModels": {
+          "body-mind-overall-health": {
+            "mentalHealthPartOfOverallHealth": true,
+            "positiveFeelingRequired": false,
+            "mentalHealthMeansOnlyIllness": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2",
@@ -1393,7 +1434,49 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "linked-thoughts-feelings-actions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_TU3BcLOgiV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_35-DhMh_Yr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "linked-thoughts-feelings-actions": "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced."
+        },
+        "sourceModels": {
+          "linked-thoughts-feelings-actions": {
+            "interconnectionsCanBeBidirectional": true,
+            "positiveThinkingCuresIllness": false,
+            "deniesExternalHarm": false,
+            "actualBenignSelfTalkUse": true
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-A1",
@@ -2557,7 +2640,53 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "body-brain-and-comfortable-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No loud-noise test, fear induction, breath retention/forced slow breathing, symptom score, touch demand or compelled emotional disclosure."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "body-brain-and-comfortable-support": "No loud-noise test, fear induction, breath retention/forced slow breathing, symptom score, touch demand or compelled emotional disclosure."
+        },
+        "sourceModels": {
+          "body-brain-and-comfortable-support": {
+            "oneSensationDiagnosesOneEmotion": false,
+            "noManufacturedBodyOrEmotionalResponse": true,
+            "contextAppropriateSupport": true
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2",
@@ -2733,7 +2862,53 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "feeling-names-and-help"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_69hFD2NgGe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No requirement to disclose trauma, label a peer, manufacture upset or show a smile."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "feeling-names-and-help": "No requirement to disclose trauma, label a peer, manufacture upset or show a smile."
+        },
+        "sourceModels": {
+          "feeling-names-and-help": {
+            "meaningfulFeelingDescriptionAndHelp": true,
+            "perfectEnglishWordRequiredBeforeHelp": false,
+            "privateDisclosureRequired": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3",
@@ -4009,7 +4184,51 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "perceived-threat-brain-body-response"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No threat simulation, startle, restraint, traumatic disclosure, clinical diagnosis, HPA/amygdala/hormone-name gate or guarantee that breathing stops danger."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "perceived-threat-brain-body-response": "No threat simulation, startle, restraint, traumatic disclosure, clinical diagnosis, HPA/amygdala/hormone-name gate or guarantee that breathing stops danger."
+        },
+        "sourceModels": {
+          "perceived-threat-brain-body-response": {
+            "perceivedThreatNotAlwaysActualDanger": true,
+            "automaticProtectiveResponse": true,
+            "thoughtEmotionActionRelationRequired": true,
+            "freezingMeansConsentOrDefiance": false,
+            "allResponsesVoluntary": false,
+            "actualThreatInduction": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D2",
@@ -4280,7 +4499,49 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "external-causes-and-control"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_9Y5-GjF2B0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "external-causes-and-control": "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule."
+        },
+        "sourceModels": {
+          "external-causes-and-control": {
+            "externalEnvironmentalFactorsRequired": true,
+            "differentControlAndAdaptationCases": true,
+            "acceptanceRequiresToleratingAbuse": false,
+            "forcedLossDisclosure": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-A1",
@@ -5685,7 +5946,48 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "daily-choices-and-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No treatment changes, exercise/food/sleep deprivation, forced mindfulness, mood quota or diagnosis."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "daily-choices-and-support": "No treatment changes, exercise/food/sleep deprivation, forced mindfulness, mood quota or diagnosis."
+        },
+        "sourceModels": {
+          "daily-choices-and-support": {
+            "actualBenignRoutineAndReview": true,
+            "routineCuresEveryMentalIllness": false,
+            "forcedMindfulnessOrMoodQuota": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3",
@@ -5786,7 +6088,49 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "external-causes-and-control"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_-beOa1AO6W",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "external-causes-and-control": "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule."
+        },
+        "sourceModels": {
+          "external-causes-and-control": {
+            "externalEnvironmentalFactorsRequired": true,
+            "differentControlAndAdaptationCases": true,
+            "acceptanceRequiresToleratingAbuse": false,
+            "forcedLossDisclosure": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-A1",
@@ -7249,7 +7593,44 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "peer-help-and-limits"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No real crisis enactment, disclosure collection, counselling burden, medication advice or demand that the learner rescue someone."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "peer-help-and-limits": "No real crisis enactment, disclosure collection, counselling burden, medication advice or demand that the learner rescue someone."
+        },
+        "sourceModels": {
+          "peer-help-and-limits": {
+            "peerIsTherapist": false,
+            "dangerAlwaysKeptSecret": false,
+            "actualBenignHelpRehearsal": true,
+            "adultFallbackRequired": true
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3",
@@ -7392,7 +7773,43 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "attitudes-stigma-and-inclusion"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No stigmatising reenactment/slurs, private condition disclosure, diagnosing peers or forced approval of every behaviour."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "attitudes-stigma-and-inclusion": "No stigmatising reenactment/slurs, private condition disclosure, diagnosing peers or forced approval of every behaviour."
+        },
+        "sourceModels": {
+          "attitudes-stigma-and-inclusion": {
+            "stigmaCanDiscourageHelp": true,
+            "diagnosisRequiredForRespect": false,
+            "actualBenignInclusiveAction": true
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-A1",
@@ -8522,7 +8939,45 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "actual-school-community-access"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "School/local route must be bound before delivery; no real account, message, call, report, diagnosis, private-history entry or public contact-number memorisation. Current directory is a resource, not a clinical service recommendation for a particular child."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": true,
+        "protocolConditions": {
+          "actual-school-community-access": "School/local route must be bound before delivery; no real account, message, call, report, diagnosis, private-history entry or public contact-number memorisation. Current directory is a resource, not a clinical service recommendation for a particular child."
+        },
+        "sourceModels": {
+          "actual-school-community-access": {
+            "ageEligibleActualServiceRequired": true,
+            "schoolRouteAndFallbackBoundAtUse": true,
+            "dummyNonSendingAccessRehearsal": true,
+            "realContactRequired": false,
+            "promiseAbsoluteSecrecyInDanger": false
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.5",
@@ -8531,7 +8986,49 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "linked-thoughts-feelings-actions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_35-DhMh_Yr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_KA5j5OeGvw",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noManufacturedDistress": true,
+        "noDiagnosisOrForcedDisclosure": true,
+        "noPositiveThinkingCure": true,
+        "actualSchoolServiceRouteAtUse": false,
+        "protocolConditions": {
+          "linked-thoughts-feelings-actions": "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced."
+        },
+        "sourceModels": {
+          "linked-thoughts-feelings-actions": {
+            "interconnectionsCanBeBidirectional": true,
+            "positiveThinkingCuresIllness": false,
+            "deniesExternalHarm": false,
+            "actualBenignSelfTalkUse": true
+          }
+        },
+        "noOlderStressPhysiologyMasteryInferred": true
+      },
+      "authoringMeaning": "Actual source-specific causal, practical, reflective and access duties are accounted for; neither mood nor a topic link certifies child attainment or clinical state."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2",

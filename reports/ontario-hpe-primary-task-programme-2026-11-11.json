@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "Movement, Active Living, Healthy Eating, Personal Safety, Human Development and Substance Use:195 reviewed/proposed records;72 MentalHealth/overallD/integratedSEL records remain pending.",
+  "scope": "207 source records reviewed/proposed: 177 specific and 30 overall records. The remaining 60 are 18 Healthy Living overall expectations and 42 integrated SEL positions (36 specific plus 6 overall), pending explicit composition.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -835,6 +835,144 @@
         "unknownMixtureCanBeIdentifiedByAppearance": false,
         "noProductOrFumeExposure": true
       }
+    },
+    {
+      "id": "body-mind-overall-health",
+      "task": "Use an original fictional day with sleep, food/water, movement, companionship, enjoyable activity and adult support. Explain that health includes how body and mind are doing; a person can look physically well and still need emotional support. Privately reflect or use a fictional equivalent to choose a feasible body-and-mind care action and explain why. Carry out and review one benign routine if the whole routine claim is assessed.",
+      "positive": "Connects physical and mental well-being with practical care/support, without treating feelings as a moral score.",
+      "nearMiss": "Says mental health only means illness or that someone smiling cannot need help.",
+      "transfer": "Change a person’s access/ability or daily circumstance and adapt care/support without promising a cure.",
+      "sourceConditions": "No symptom screening, diagnosis, forced positive feeling, body disclosure or required personal mental-health history.",
+      "sourceModel": {
+        "mentalHealthPartOfOverallHealth": true,
+        "positiveFeelingRequired": false,
+        "mentalHealthMeansOnlyIllness": false
+      }
+    },
+    {
+      "id": "linked-thoughts-feelings-actions",
+      "task": "Use original fictional thought/feeling/action maps: Sam thinks a difficult puzzle means I can never learn, feels discouraged and stops; a different reasonable thought is I can ask for one hint and try another way, which may change feelings and action. Explain that arrows can go in more than one direction and people can feel differently. Distinguish a feeling from an action, rephrase an unhelpful thought accurately and actually try a benign self-talk strategy on ordinary work, reflecting without a promised mood outcome.",
+      "positive": "Explains interconnections and a plausible changed thought/action rather than insisting thoughts control all health.",
+      "nearMiss": "Says just think positively cures illness, a negative thought makes a person bad or feelings automatically cause harmful action.",
+      "transfer": "Change the fictional interpretation or action and discuss another possible effect, acknowledging uncertainty and real environmental causes.",
+      "sourceConditions": "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced.",
+      "sourceModel": {
+        "interconnectionsCanBeBidirectional": true,
+        "positiveThinkingCuresIllness": false,
+        "deniesExternalHarm": false,
+        "actualBenignSelfTalkUse": true
+      }
+    },
+    {
+      "id": "body-brain-and-comfortable-support",
+      "task": "Use familiar fictional cases of an upcoming class activity, unexpected routine change and a too-noisy room. Identify possible body/thought/feeling responses without a one-to-one emotion diagnosis. Explain that brain/body responses can prepare us or become overwhelming; choose a suitable comfort/support such as a quieter space, trusted adult or comfortable unforced breathing. For the whole body-emotion claim, safely notice an ordinary voluntarily described sensation and explain possible emotion context, plus three varied sensation/emotion examples.",
+      "positive": "Connects body and brain with possible responses and chooses context-appropriate support while respecting variation.",
+      "nearMiss": "Infers one emotion from every fast heartbeat or says someone must calm down unaided before they deserve help.",
+      "transfer": "Change the environment or first strategy’s effect and choose another support with a reason.",
+      "sourceConditions": "No loud-noise test, fear induction, breath retention/forced slow breathing, symptom score, touch demand or compelled emotional disclosure.",
+      "sourceModel": {
+        "oneSensationDiagnosesOneEmotion": false,
+        "noManufacturedBodyOrEmotionalResponse": true,
+        "contextAppropriateSupport": true
+      }
+    },
+    {
+      "id": "feeling-names-and-help",
+      "task": "Use an original range of ordinary feeling cards and fictional situations. Explain how identifying/name-or-describing a feeling can help communicate a need and recognise when adult help may be useful. Actually rehearse asking an appropriate helper clearly with a fallback if the first is unavailable. A learner may describe a feeling with their own words/drawing rather than reproduce a universal English label list. For the existing whole help claim, distinguish academic, practical and emotional helpers and explain why help is sensible.",
+      "positive": "Uses a meaningful feeling description to communicate a need and access appropriate help.",
+      "nearMiss": "Thinks help is allowed only after finding the perfect word or that being upset means failure.",
+      "transfer": "Change the feeling/context or helper’s availability and adapt the request.",
+      "sourceConditions": "No requirement to disclose trauma, label a peer, manufacture upset or show a smile.",
+      "sourceModel": {
+        "meaningfulFeelingDescriptionAndHelp": true,
+        "perfectEnglishWordRequiredBeforeHelp": false,
+        "privateDisclosureRequired": false
+      }
+    },
+    {
+      "id": "perceived-threat-brain-body-response",
+      "task": "Use original fictional picture-free cases: a character believes a sudden sound signals danger, or a new classroom feels threatening though no current danger is shown. Explain that the brain can trigger an automatic protective alarm based on a perceived threat; thoughts focus on danger, feelings may be fear/anger, body may speed up or become still, and actions can include confronting, leaving or freezing. These are examples, not a mandatory fixed sequence or always-voluntary choice. Contrast a real unsafe case requiring adult protection with an ordinary false alarm; identify support and a safe comfortable regulation option without enactment.",
+      "positive": "Explains perceived threat→protective brain/body response→possible thoughts/emotions/actions, including freezing, and distinguishes support from blame.",
+      "nearMiss": "Treats freezing as consent or defiance, claims every worry proves real danger or requires the learner to provoke a response.",
+      "transfer": "Change whether the threat is actual/uncertain and explain checking safety/adult support before trying to regulate.",
+      "sourceConditions": "No threat simulation, startle, restraint, traumatic disclosure, clinical diagnosis, HPA/amygdala/hormone-name gate or guarantee that breathing stops danger.",
+      "sourceModel": {
+        "perceivedThreatNotAlwaysActualDanger": true,
+        "automaticProtectiveResponse": true,
+        "thoughtEmotionActionRelationRequired": true,
+        "freezingMeansConsentOrDefiance": false,
+        "allResponsesVoluntary": false,
+        "actualThreatInduction": false
+      }
+    },
+    {
+      "id": "external-causes-and-control",
+      "task": "Compare original fictional cases: a changed class routine, loss of a familiar place, uncomfortable heat/noise, and a disagreement with a peer. Identify possible external/environmental causes of strong feelings; distinguish what the character can influence now from what needs adult/system support or adaptation. Choose at least two different coping strategies and explain fit; make/rehearse a transition plan and later reflect on a benign actual change where the complete planning claim is assessed.",
+      "positive": "Explains context and controllability, chooses differentiated support and avoids blaming someone for circumstances.",
+      "nearMiss": "Says every stressor is a bad attitude or that accepting a situation means tolerating abuse.",
+      "transfer": "Change access/control or a strategy that did not help and revise the response.",
+      "sourceConditions": "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule.",
+      "sourceModel": {
+        "externalEnvironmentalFactorsRequired": true,
+        "differentControlAndAdaptationCases": true,
+        "acceptanceRequiresToleratingAbuse": false,
+        "forcedLossDisclosure": false
+      }
+    },
+    {
+      "id": "daily-choices-and-support",
+      "task": "Make a feasible ordinary-day care plan including sleep, enjoyable comfortable movement, social connection and an available caring adult. Explain a possible mental-health contribution, actually try a benign chosen action and review barriers/support over a week where the whole routine claim is assessed. A mindful noticing option is voluntary and does not require eyes closed or a calm/positive feeling.",
+      "positive": "Explains and applies a practical choice while recognising material access and professional support matter too.",
+      "nearMiss": "Claims a routine cures all mental illness or scores a person’s worth by compliance.",
+      "transfer": "Change the schedule/access need and adapt a sustainable action with support.",
+      "sourceConditions": "No treatment changes, exercise/food/sleep deprivation, forced mindfulness, mood quota or diagnosis.",
+      "sourceModel": {
+        "actualBenignRoutineAndReview": true,
+        "routineCuresEveryMentalIllness": false,
+        "forcedMindfulnessOrMoodQuota": false
+      }
+    },
+    {
+      "id": "peer-help-and-limits",
+      "task": "Use original fictional cases: a peer worried about school, repeated distress interfering with ordinary life, and a message suggesting immediate danger. Demonstrate listening without ridicule, saying you care, and helping connect with an appropriate adult; explain that peers are not therapists, cannot promise secrecy about danger and need not manage the problem alone. Rehearse a benign supported help request, not a real crisis call.",
+      "positive": "Offers practical respectful support and recognises limits/fallback escalation without taking clinical responsibility.",
+      "nearMiss": "Promises secrecy regardless of danger, diagnoses a friend, or says peer positivity alone fixes serious distress.",
+      "transfer": "Change the first adult’s availability or the urgency and select a suitable next route under the local plan.",
+      "sourceConditions": "No real crisis enactment, disclosure collection, counselling burden, medication advice or demand that the learner rescue someone.",
+      "sourceModel": {
+        "peerIsTherapist": false,
+        "dangerAlwaysKeptSecret": false,
+        "actualBenignHelpRehearsal": true,
+        "adultFallbackRequired": true
+      }
+    },
+    {
+      "id": "attitudes-stigma-and-inclusion",
+      "task": "Compare original fictional messages: a person needing mental-health support is called weak, versus a respectful explanation that help is appropriate. Explain how stigma can discourage help and damage belonging; propose two concrete inclusive/help-seeking actions and demonstrate a benign one in ordinary group work. Keep mental-health condition distinct from ordinary sadness and do not require a diagnosis to deserve respect.",
+      "positive": "Links an attitude to possible effects on another person and chooses respectful practical change.",
+      "nearMiss": "Uses a diagnosis as an insult or claims illness means dangerousness/weak character.",
+      "transfer": "Change the stereotype or social setting and explain a respectful response without assigning a diagnosis.",
+      "sourceConditions": "No stigmatising reenactment/slurs, private condition disclosure, diagnosing peers or forced approval of every behaviour.",
+      "sourceModel": {
+        "stigmaCanDiscourageHelp": true,
+        "diagnosisRequiredForRespect": false,
+        "actualBenignInclusiveAction": true
+      }
+    },
+    {
+      "id": "actual-school-community-access",
+      "task": "Use a current adult-verified school support card naming the actual route to a teacher/designated professional and a fallback. Add the current Ontario official support directory and one age-eligible child/youth service; distinguish under18 One Stop Talk and youth support from adult15+ or post-secondary-only programmes. Locate how an adult-supported learner could begin a request through the actual school route and supplied official service page, and rehearse the wording using a dummy non-sending form. Explain everyday help versus immediate danger under the local emergency/safeguarding plan.",
+      "positive": "Identifies actual suitable people/resources/services and explains concrete access/fallback steps for mental-health or substance-use support.",
+      "nearMiss": "Only says ask someone, selects an age-ineligible adult programme or assumes all conversations can remain secret in danger.",
+      "transfer": "Change eligibility, language/access need or first route availability and find an appropriate verified alternative with adult help.",
+      "sourceConditions": "School/local route must be bound before delivery; no real account, message, call, report, diagnosis, private-history entry or public contact-number memorisation. Current directory is a resource, not a clinical service recommendation for a particular child.",
+      "sourceModel": {
+        "ageEligibleActualServiceRequired": true,
+        "schoolRouteAndFallbackBoundAtUse": true,
+        "dummyNonSendingAccessRehearsal": true,
+        "realContactRequired": false,
+        "promiseAbsoluteSecrecyInDanger": false
+      }
     }
   ],
   "originalGameSet": [
@@ -897,7 +1035,8 @@
     "eating": "Preserve the full food-group/nutrient/day-pattern, food-hygiene, production and animal-care, ordinary attention, habit/goal and marketing/money hard-closure checks. No single food sort, hunger answer, chickpea journey or Canadian label reading certifies a whole broader card. No new edge or claim is needed; source-specific resource/performance duties stay explicit in the portfolio.",
     "personalSafety": "Retain full permission request/wait/refusal, private-body/necessary-care distinction, trusted help, protective response, digital block/report, friendship qualities, actual listening/compromise, inclusive action, prejudice and intent-versus-impact evidence. Their complete hard chains remain unchanged. Naming feelings, patterns or reflection terms is not inferred from one correct harm report; do not manufacture fear, distress, coercion or a victim history to elicit them. No single scenario certifies the broader operation. The body-parts guide’s nose-pinching/tasting and hot-tray examples are not part of this programme; use safe labelled pictures and benign sense examples for the separate canonical check.",
     "humanDevelopment": "Retain actual whole body/senses, brain-message/control, hygiene, life-course/hormone-trigger, relationship/consent, identity and coping evidence rather than infer it from a single diagram or a polite response. Full older AnimalLifeStages and NamingCommonAnimals hard-chain inventories remain separate and unchanged. Reproduction whole-fit explicitly includes both systems/structure functions, gamete fusion and location, gestation/birth, two-way placenta/cord exchange and maternal-substance effects. A puberty-only answer cannot close the actual Grade5 process duty. No observed private body, forced positive feeling, clinical timing, advanced hormone feedback or explicit-media exposure is required. Current source tasks do not retrospectively certify learner evidence.",
-    "substanceUse": "Retain complete ordinary healthy-routine/week-review/support, body-needs, lifestyle/organ-effects, decision/options/consequences, assertive actual benign boundary, peer-influence/two-strategy and appropriate-help evidence. All28 hard-closure cards and16 available complete guides are accounted for, including full separate circulation/respiratory/nutrition/vocabulary inventories; one correct harm/refusal answer does not certify them. Whole physiological checks use correct loops, vessel-by-direction terms, gas mixtures and model limits without real blood, neck pressure, breath-holding, forced exertion or chemical exposure. Mirror moisture is not direct gas-composition evidence; toy pulse/flow gauges are not calibrated oxygen delivery. Vocabulary and broader inherited hard-path assessments remain separate from actual source-specific tasks and are not new Ontario duties. The13–14 recreational-drug card is neither lowered nor certified by narrower primary examples. All historical guide bytes, confidence and verification flags remain unchanged."
+    "substanceUse": "Retain complete ordinary healthy-routine/week-review/support, body-needs, lifestyle/organ-effects, decision/options/consequences, assertive actual benign boundary, peer-influence/two-strategy and appropriate-help evidence. All28 hard-closure cards and16 available complete guides are accounted for, including full separate circulation/respiratory/nutrition/vocabulary inventories; one correct harm/refusal answer does not certify them. Whole physiological checks use correct loops, vessel-by-direction terms, gas mixtures and model limits without real blood, neck pressure, breath-holding, forced exertion or chemical exposure. Mirror moisture is not direct gas-composition evidence; toy pulse/flow gauges are not calibrated oxygen delivery. Vocabulary and broader inherited hard-path assessments remain separate from actual source-specific tasks and are not new Ontario duties. The13–14 recreational-drug card is neither lowered nor certified by narrower primary examples. All historical guide bytes, confidence and verification flags remain unchanged.",
+    "mentalHealth": "Retain complete existing body-emotion varied examples and voluntary ordinary noticing, emotional-trigger reflection, feelings/actions distinction, meaningful feeling naming, actual benign self-talk use and why, differentiated coping/failed-strategy reflection, plan/rehearse/reflect after ordinary change, routine tracking/support, prejudice/stereotype effects/two strategies and appropriate-help evidence. All20hard-closure cards/14edges and both available complete guides are accounted for; their payloads/flags remain unchanged. Do not manufacture upset or trauma to satisfy an inherited real-upset gate: actual learner evidence, if ever elicited, follows voluntary safe ordinary opportunities. A fictional source answer alone does not certify all these whole cards. The brain-control guide’s deliberate sensory-message task is retained separately from the source’s automatic perceived-threat response; neither all reflexes nor all protective reactions require a conscious decision. Older HPA/advanced-emotional-brain cards are not lowered. No happy-mood, English-inventory or personal-diagnosis score is introduced."
   },
   "conditions": {
     "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
@@ -974,6 +1113,16 @@
       "noOlderRecreationalDrugMasteryFromTheseTasks": true,
       "actualSourceSpecificEffectsAndChoicesRequired": true,
       "illustrativeSourceExamplesNotExhaustiveOrInfallible": true
+    },
+    "mentalHealth": {
+      "noManufacturedThreatDistressOrBodyResponse": true,
+      "noDiagnosisOrClinicalScore": true,
+      "noPrivateMentalHealthOrTraumaDisclosure": true,
+      "noForcedPositiveFeelingOrPositiveThinkingCure": true,
+      "noPeerTherapyOrDangerSecrecyPromise": true,
+      "actualLocalSchoolAndAgeEligibleCommunityAccessAtUse": true,
+      "noActualServiceContactAsAssessment": true,
+      "noOlderHPAOrAdvancedBrainGate": true
     }
   },
   "sources": [
@@ -1198,6 +1347,21 @@
     {
       "url": "https://www.nhs.uk/symptoms/headaches/",
       "read": "Actual full main body,reviewed2024-04-17. Hydration,comfortable relaxation and screen breaks support an adult-declared ordinary-care case; no child triage, cause diagnosis, UK service number or medication advice imported."
+    },
+    {
+      "url": "https://www.akronchildrens.org/kidshealth/en/kids/stress.html",
+      "read": "Complete actual Nemours child-facing main body in official hospital publication, reviewed2022-08-14. Brain possible-danger alert, fight-flight-freeze, performance stress and adult support. No claim of viewing video or new efficacy evidence.",
+      "limits": "Not every safe child settles immediately. No challenge performance, breath or stress-tolerance norm; no exposure or induced fear."
+    },
+    {
+      "url": "https://teens.aboutkidshealth.ca/stressandhealth",
+      "read": "Actual complete main body, SickKids staff,2019-03-22. Perceived versus actual threat and possible body/thought effects; not primary-age authority or all embedded media viewed.",
+      "limits": "No compulsory meditation/audio or hormone-name gate; choose comfortable support and actual adult protection where needed."
+    },
+    {
+      "url": "https://www.ontario.ca/page/find-mental-health-support",
+      "read": "Actual complete main body via verifiedTLS, updated2026-08-07,published2019-01-29. School support link and age eligibility distinguish children/under18 from15+/postsecondary/adult services.",
+      "limits": "Current at authoring; actual local school route/access and service eligibility must be rechecked at use. No live contact in an assessment."
     }
   ]
 }
