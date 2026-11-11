@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "Movement, Active Living, Healthy Eating, Personal Safety and Human Development:182 source-fit records;85 other Healthy Living/overall/integrated SEL records remain pending.",
+  "scope": "Movement, Active Living, Healthy Eating, Personal Safety, Human Development and Substance Use:195 reviewed/proposed records;72 MentalHealth/overallD/integratedSEL records remain pending.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -688,6 +688,153 @@
         "The normal separate-circulation model permits substance exchange; it is not an absolute claim that no cell/material could ever cross under any condition.",
         "No patient-specific pregnancy timing, prenatal diagnosis, maternal history, body inspection, sexual enactment or family judgement. Actual professional advice is for adults and clinicians."
       ]
+    },
+    {
+      "id": "habits-harms-alternatives",
+      "task": "Use original fictional day cards: repeated late-night screen use leaves little sleep; a person is near cigarette smoke; another is offered a vape. Explain a possible effect on body/mind, select a feasible healthier alternative and say how to get adult help. Actually plan and track one benign routine such as a screen break or bedtime preparation for a week, reflect on barriers and describe support for another person. No substance is present. Actually practise a respectful encouragement message offering a feasible alternative and support without shame, pressure or claiming control over another person.",
+      "positive": "Connects each habit to a relevant risk and a practical alternative rather than calling a person bad.",
+      "nearMiss": "Says every screen use is addiction or claims smoke is harmless outdoors in all circumstances.",
+      "transfer": "Change the place/access barrier and adapt the alternative; no judgement of a family’s circumstances.",
+      "sourceConditions": "Actual benign routine evidence is separate from fictional harmful-substance knowledge. No exposure, device handling, private family-use history or forced disclosure.",
+      "sourceModel": {
+        "actualRespectfulEncouragement": true,
+        "screenAmountAloneDiagnosesAddiction": false
+      }
+    },
+    {
+      "id": "medicines-authorisation-and-safe-use",
+      "task": "Use all three original case sets in ontario-hpe-medicines-claim-2026-11-11.json and the complete guide: a named person’s prescribed antibiotic and a supplied locally classified OTC medicine. Explain authorisation/recipient differences and shared adult/instruction/storage precautions. Reject sharing, unknown instructions and natural-means-safe; ask an appropriate adult/pharmacist rather than select a dose or treatment.",
+      "positive": "Distinguishes the categories using authorisation and named recipient, while recognising both can cause harm and need instructions.",
+      "nearMiss": "Calls OTC risk-free or gives a friend another person’s prescription.",
+      "transfer": "Change recipient or uncertainty and retain the safe response.",
+      "sourceConditions": "The reviewed shared medicine concept and actual source task remain knowledge only; no real medicine, administration, dose, diagnosis, missed-dose or treatment advice.",
+      "sourceModel": {
+        "localStatusAndRecipientSupplied": true,
+        "bothKindsNeedInstructions": true,
+        "childDoseOrTreatment": false
+      }
+    },
+    {
+      "id": "nonmedicine-health-support",
+      "task": "Use an original fictional ordinary-day case showing food/water, rest, comfortable movement, social connection and an adult-supported calming activity. Explain which non-medicine support may help maintain physical and mental well-being and why. Make and review a feasible benign routine. If a fictional person has prescribed care, supports can accompany it; only their clinician changes treatment. Add two fictional adult-assessed ordinary-care cases: a child with a cold follows the supplied adult plan for rest, water and comfort; another with an adult-assessed mild headache takes a screen break, water and comfortable relaxation under the supplied plan. Explain support for comfort/recovery without promising a cure or deciding the cause. Contrast prevention of transmission by actually demonstrating safe handwashing. New, worsening or worrying symptoms go to the responsible adult/professional; no child triage or delay of care.",
+      "positive": "Chooses a relevant support with a reason and distinguishes general well-being from a promised cure.",
+      "nearMiss": "Says water or exercise replaces every prescribed medicine, or directs someone to stop treatment.",
+      "transfer": "Change the day/access needs and adapt one support while preserving professional care.",
+      "sourceConditions": "No withholding medicine, self-treatment trial, illness diagnosis, enforced exertion or food/water deprivation.",
+      "sourceModel": {
+        "replacePrescribedCareWithoutClinician": false,
+        "supportsMayAccompanyCare": true,
+        "actualOrdinaryCareCasesRequired": true,
+        "noChildDiagnosisOrTreatmentChanges": true
+      },
+      "originalCareCases": [
+        {
+          "id": "adult-assessed-cold",
+          "adultCarePlanSupplied": true,
+          "supports": [
+            "rest",
+            "water",
+            "comfort"
+          ],
+          "guaranteedCure": false
+        },
+        {
+          "id": "adult-assessed-mild-headache",
+          "adultCarePlanSupplied": true,
+          "supports": [
+            "screen-break",
+            "water",
+            "comfortable-relaxation"
+          ],
+          "learnerDeterminesMinorStatus": false
+        },
+        {
+          "id": "reduce-transmission",
+          "actualBenignHandwashing": true,
+          "noDeliberateGermExposure": true
+        }
+      ]
+    },
+    {
+      "id": "substance-effects-and-dependence",
+      "task": "Use adult-prepared factual cards for alcohol, tobacco/nicotine and an illegal-source unknown pill, with legal status explicitly supplied for this Ontario example. Explain possible physical, thinking/feeling and relationship effects, and why legality alone does not establish safety. Compare a fictional repeated-use difficulty with an ordinary preference; describe how dependence can make stopping hard and why supportive adult/professional help is appropriate. Do not diagnose the character. For complete unchanged lifestyle claims, separately explain food/energy, movement/heart-muscles and sleep as well as substance harms.",
+      "positive": "Connects effects and problematic patterns to physical, mental and social well-being, without labelling all use, preference or a person as addiction.",
+      "nearMiss": "Calls sugar/salt an illicit drug category, thinks legal means safe, or says dependence is simply weak character.",
+      "transfer": "Change the supplied substance/use context and explain what remains known versus what needs adult information.",
+      "sourceConditions": "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance.",
+      "sourceModel": {
+        "legalMeansSafe": false,
+        "dependenceDiagnosedFromPreference": false,
+        "physicalMentalSocialEffects": true
+      }
+    },
+    {
+      "id": "smoke-vape-constituents-and-effects",
+      "task": "Use a clearly labelled information comparison: burning tobacco smoke can contain carbon monoxide and tar; carbon monoxide reduces oxygen transport and smoke particles damage airways. A vape heats liquid to make aerosol, which is not just harmless water vapour; many products contain nicotine and other potentially harmful substances, and contents vary. Nicotine can cause dependence and affect the body. Explain a direct and bystander exposure risk, separating well-established smoke harms from remaining long-term vaping uncertainty. Complete the broader lifestyle claim separately where linked.",
+      "positive": "Accurately distinguishes combustion smoke from aerosol, substances from effects, and dependence from cancer causation.",
+      "nearMiss": "Says all vapes contain tar/carbon monoxide, nicotine is the sole cause of smoking cancers, or aerosol is harmless steam.",
+      "transfer": "Change nicotine-present to supplied nicotine-absent aerosol; explain why that removes one risk but does not establish harmlessness.",
+      "sourceConditions": "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task.",
+      "sourceModel": {
+        "allVapesContainTarOrCO": false,
+        "nicotineIsOnlySmokingCarcinogen": false,
+        "aerosolHarmlessWater": false,
+        "longTermVapingUncertaintyRetained": true
+      }
+    },
+    {
+      "id": "pressure-choice-refusal-and-support",
+      "task": "In a fictional offer of a smoke/vape/alcohol or other risk, identify personal, peer, family, media and environment influences without assuming one community behaves alike. Stop, generate at least two options, compare consequences and choose a safe option including abstention. Actually rehearse a clear respectful refusal, leaving/alternative activity and seeking a trusted adult; then transfer to a benign real boundary with consent. Explain two resistance strategies and why fitting in is not enough reason for harm. Include a separate ordinary behaviour choice: a short planned screen session can serve learning or leisure, while a late unbounded session displaces sleep or relationships. Choose between feasible alternatives with a reason and practise arranging a benign break with adult support; no screen-time amount alone diagnoses addiction.",
+      "positive": "Makes and explains a reasoned choice, performs a refusal/support strategy and adapts to changed pressure.",
+      "nearMiss": "Only recites no, blames a person unable to leave, or treats confidence/eye contact as the criterion.",
+      "transfer": "Change from an in-person dare to an original non-product mock advertisement or online pressure; adapt privacy/support.",
+      "sourceConditions": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+      "sourceModel": {
+        "actualRefusalAndDecisionPerformance": true,
+        "nonSubstanceBehaviourChoiceIncluded": true,
+        "abstentionAvailable": true,
+        "privateHistoryRequired": false
+      }
+    },
+    {
+      "id": "alcohol-effects-and-variable-risk",
+      "task": "Compare original fictional information cards: alcohol can impair judgement, attention, coordination and reaction; heavy/prolonged use can damage organs including liver and brain and affect relationships. Two supplied people consume alcohol under different stated conditions; explain qualitatively that amount/concentration, time, food, body characteristics and other medicines can influence effects, without calculating or prescribing a safe amount. Recognise severe unresponsiveness or breathing concern as adult/emergency help under the local plan, not a clinical diagnosis.",
+      "positive": "Distinguishes immediate from longer-term effects and gives reasons effects vary; does not infer someone is safe from outward appearance alone.",
+      "nearMiss": "Promises one drink is safe for a child, calculates a permitted dose, or equates intoxication with being loud.",
+      "transfer": "Change one supplied factor or add another medicine; explain uncertainty and safe help rather than a numeric prediction.",
+      "sourceConditions": "No alcohol, drinking simulation, breath test, BAC/dose calculation, legal-limit memorisation or family diagnosis. Adult drinking recommendations are not child targets.",
+      "sourceModel": {
+        "qualitativeVariationRequired": true,
+        "doseOrBACCalculation": false,
+        "outwardAppearanceProvesSafety": false
+      }
+    },
+    {
+      "id": "personal-social-factors-and-support",
+      "task": "Use original fictional cases across life stages showing curiosity, peer belonging, stress, advertising, access, culture/community expectations and protective relationships. Explain how factors can influence alcohol/cannabis use and problematic patterns without a deterministic stereotype; identify protective support and safe alternatives. Where relevant distinguish an explicitly attributed taught cultural or ceremonial context from recreational use, using a locally approved resource rather than inventing one universal Indigenous practice.",
+      "positive": "Explains interacting personal/social influences and a supportive response without moral or cultural stereotyping.",
+      "nearMiss": "Claims one family, culture or feeling inevitably causes addiction, or treats all cultural use as recreational misuse.",
+      "transfer": "Change one support/access factor and explain a plausible different choice without predicting one inevitable outcome.",
+      "sourceConditions": "No required personal/family history, ceremony enactment, invented community teaching, diagnosis or forced disclosure. Actual local cultural material is an explicit delivery condition if selected.",
+      "sourceModel": {
+        "culturalPracticeUniversalised": false,
+        "supportOrRiskFactorDeterminesOutcome": false,
+        "factorsAcrossLifeStages": true
+      }
+    },
+    {
+      "id": "cannabis-other-drugs-and-range-of-effects",
+      "task": "Use a supplied accurate category-and-effect panel: cannabis can affect memory, concentration, reaction and anxiety, with longer-term dependence risk; opioids can relieve pain when medically prescribed but can slow breathing, cause dependence and overdose; stimulant examples such as cocaine or methamphetamine are NOT opioids. Include a separate factual card for deliberately breathing solvent fumes: possible dizziness/loss of control and harm to brain and other organs, with potentially life-threatening effects even on a first occasion. Explain differing possible physical, cognitive, emotional and social effects, that unknown supply/mixtures increase uncertainty and that prescribed medicines require their own recipient/instructions. Give a reasoned safe personal choice and appropriate adult support. The older full recreational-drug classification/physical-versus-psychological-dependence claim is not certified by this primary source task.",
+      "positive": "Uses accurate examples to explain a range of effects and uncertainty, distinguishes therapeutic prescription context from unknown/recreational use and rejects the source example’s erroneous stimulant-as-opioid grouping.",
+      "nearMiss": "Calls cocaine/methamphetamine opioids, claims cannabis has the same effect for everyone, or treats medicine as inherently risk-free.",
+      "transfer": "Change the supplied example/category or introduce an unknown mixture; identify what cannot be inferred and choose safe adult help.",
+      "sourceConditions": "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed.",
+      "sourceModel": {
+        "cocaineOrMethamphetamineAreOpioids": false,
+        "intoxicatingSolventEffectsRequired": true,
+        "unknownMixtureCanBeIdentifiedByAppearance": false,
+        "noProductOrFumeExposure": true
+      }
     }
   ],
   "originalGameSet": [
@@ -749,7 +896,8 @@
     "safety": "Whole generic safety retains several familiar safety rules, trusted-adult reporting and actual safe action. Whole signs retains actual hazard/help/health-message interpretation; use the checked Health Canada poison-symbol image only as a safe visual reference, never a chemical-handling task. Body-needs retains its separate food/water/sleep/exercise inventory. The minor-care concept is knowledge only, assessed by its complete original case set.",
     "eating": "Preserve the full food-group/nutrient/day-pattern, food-hygiene, production and animal-care, ordinary attention, habit/goal and marketing/money hard-closure checks. No single food sort, hunger answer, chickpea journey or Canadian label reading certifies a whole broader card. No new edge or claim is needed; source-specific resource/performance duties stay explicit in the portfolio.",
     "personalSafety": "Retain full permission request/wait/refusal, private-body/necessary-care distinction, trusted help, protective response, digital block/report, friendship qualities, actual listening/compromise, inclusive action, prejudice and intent-versus-impact evidence. Their complete hard chains remain unchanged. Naming feelings, patterns or reflection terms is not inferred from one correct harm report; do not manufacture fear, distress, coercion or a victim history to elicit them. No single scenario certifies the broader operation. The body-parts guide’s nose-pinching/tasting and hot-tray examples are not part of this programme; use safe labelled pictures and benign sense examples for the separate canonical check.",
-    "humanDevelopment": "Retain actual whole body/senses, brain-message/control, hygiene, life-course/hormone-trigger, relationship/consent, identity and coping evidence rather than infer it from a single diagram or a polite response. Full older AnimalLifeStages and NamingCommonAnimals hard-chain inventories remain separate and unchanged. Reproduction whole-fit explicitly includes both systems/structure functions, gamete fusion and location, gestation/birth, two-way placenta/cord exchange and maternal-substance effects. A puberty-only answer cannot close the actual Grade5 process duty. No observed private body, forced positive feeling, clinical timing, advanced hormone feedback or explicit-media exposure is required. Current source tasks do not retrospectively certify learner evidence."
+    "humanDevelopment": "Retain actual whole body/senses, brain-message/control, hygiene, life-course/hormone-trigger, relationship/consent, identity and coping evidence rather than infer it from a single diagram or a polite response. Full older AnimalLifeStages and NamingCommonAnimals hard-chain inventories remain separate and unchanged. Reproduction whole-fit explicitly includes both systems/structure functions, gamete fusion and location, gestation/birth, two-way placenta/cord exchange and maternal-substance effects. A puberty-only answer cannot close the actual Grade5 process duty. No observed private body, forced positive feeling, clinical timing, advanced hormone feedback or explicit-media exposure is required. Current source tasks do not retrospectively certify learner evidence.",
+    "substanceUse": "Retain complete ordinary healthy-routine/week-review/support, body-needs, lifestyle/organ-effects, decision/options/consequences, assertive actual benign boundary, peer-influence/two-strategy and appropriate-help evidence. All28 hard-closure cards and16 available complete guides are accounted for, including full separate circulation/respiratory/nutrition/vocabulary inventories; one correct harm/refusal answer does not certify them. Whole physiological checks use correct loops, vessel-by-direction terms, gas mixtures and model limits without real blood, neck pressure, breath-holding, forced exertion or chemical exposure. Mirror moisture is not direct gas-composition evidence; toy pulse/flow gauges are not calibrated oxygen delivery. Vocabulary and broader inherited hard-path assessments remain separate from actual source-specific tasks and are not new Ontario duties. The13–14 recreational-drug card is neither lowered nor certified by narrower primary examples. All historical guide bytes, confidence and verification flags remain unchanged."
   },
   "conditions": {
     "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
@@ -814,6 +962,18 @@
         "ageRangeEnd": 11
       },
       "placentalExchange": "Normally separate maternal/foetal circulations with substance exchange; oxygen can diffuse, nutrients cross by different mechanisms. No advanced transport names or perfect-barrier assumption."
+    },
+    "substanceUse": {
+      "fictionalKnowledgeAndBenignSkillPracticeOnly": true,
+      "noSubstanceHandlingTastingOrInhalation": true,
+      "noDoseDiagnosisOrTreatmentInstructions": true,
+      "noPrivateFamilyUseHistory": true,
+      "localStatusAndAdultHelpBoundAtUse": true,
+      "noDependenceFromOnePreferenceOrScreenAmount": true,
+      "noCulturalOrMoralStereotypes": true,
+      "noOlderRecreationalDrugMasteryFromTheseTasks": true,
+      "actualSourceSpecificEffectsAndChoicesRequired": true,
+      "illustrativeSourceExamplesNotExhaustiveOrInfallible": true
     }
   },
   "sources": [
@@ -1002,6 +1162,42 @@
       "url": "https://docs.google.com/document/d/116NX9ivDbKsketv1AUJdcBkwtOk8itfNwKKHCD9uhjg/edit",
       "publisher": "Ottawa Public Health",
       "readScope": "Current publisher-linked FAQ selected anatomy/puberty/reproduction/identity paragraphs; not all130 paragraphs or an explicit-media teaching resource."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/smoking-tobacco/vaping/risks.html",
+      "read": "Actual full relevant main body; nicotine, aerosol constituents, short-term effects and long-term uncertainty, not all footnotes."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/health-concerns/tobacco/legislation/tobacco-product-labelling/tobacco-smoke-toxins.html",
+      "read": "Actual main body; carbon monoxide, tar and second-hand smoke, not all footnotes."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/substance-use/alcohol/health-risks.html",
+      "read": "Actual main body; short/long effects and risks,2025-10-07."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/health-effects/effects.html",
+      "read": "Actual complete main body;2024-03-25. No adult therapeutic-dose advice or precise onset numbers used."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/opioids/about-opioids.html",
+      "read": "Actual complete main body;2024-06-03. No dose, withdrawal-management, treatment or injection instructions used."
+    },
+    {
+      "url": "https://medlineplus.gov/inhalants.html",
+      "read": "Actual full main body;2023-12-27. NIH/NIDA-linked factual effects support only. Do not reproduce misuse methods, product preparation, clinical diagnosis or treatments; no fume/sample demonstration."
+    },
+    {
+      "url": "https://www.quebec.ca/en/health/advice-and-prevention/alcohol-drugs-gambling/recognizing-drugs-and-their-effects/alcohol",
+      "read": "Actual complete main body through help/resources; updated2026-02-10. Qualitative individual/context/substance factors and combined-substance risks corroborate the task. No standard-drink amounts, safe-dose calculation, adult limits, withdrawal management or diagnosis imported."
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/common-cold/",
+      "read": "Actual full main body,reviewed2024-03-22. Rest,water and transmission prevention support adult-declared ordinary-care examples; no hot water/steam, gargling, medicine/dose or clinical timetable imported."
+    },
+    {
+      "url": "https://www.nhs.uk/symptoms/headaches/",
+      "read": "Actual full main body,reviewed2024-04-17. Hydration,comfortable relaxation and screen breaks support an adult-declared ordinary-care case; no child triage, cause diagnosis, UK service number or medication advice imported."
     }
   ]
 }

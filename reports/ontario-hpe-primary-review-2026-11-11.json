@@ -22,11 +22,11 @@
   },
   "counts": {
     "sourceClausesRead": 267,
-    "sourceFitReviewed": 182,
-    "pendingQualification": 85,
-    "Full": 182,
-    "componentPairs": 401,
-    "topics": 55
+    "sourceFitReviewed": 195,
+    "pendingQualification": 72,
+    "Full": 195,
+    "componentPairs": 428,
+    "topics": 59
   },
   "records": [
     {
@@ -1344,7 +1344,47 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "habits-harms-alternatives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual benign routine evidence is separate from fictional harmful-substance knowledge. No exposure, device handling, private family-use history or forced disclosure."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "habits-harms-alternatives": "Actual benign routine evidence is separate from fictional harmful-substance knowledge. No exposure, device handling, private family-use history or forced disclosure."
+        },
+        "sourceModels": {
+          "habits-harms-alternatives": {
+            "actualRespectfulEncouragement": true,
+            "screenAmountAloneDiagnosesAddiction": false
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.3",
@@ -2384,7 +2424,43 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "medicines-authorisation-and-safe-use"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_epG52zWuiW",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "The reviewed shared medicine concept and actual source task remain knowledge only; no real medicine, administration, dose, diagnosis, missed-dose or treatment advice."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "medicines-authorisation-and-safe-use": "The reviewed shared medicine concept and actual source task remain knowledge only; no real medicine, administration, dose, diagnosis, missed-dose or treatment advice."
+        },
+        "sourceModels": {
+          "medicines-authorisation-and-safe-use": {
+            "localStatusAndRecipientSupplied": true,
+            "bothKindsNeedInstructions": true,
+            "childDoseOrTreatment": false
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.4",
@@ -2713,7 +2789,54 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "nonmedicine-health-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No withholding medicine, self-treatment trial, illness diagnosis, enforced exertion or food/water deprivation."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "nonmedicine-health-support": "No withholding medicine, self-treatment trial, illness diagnosis, enforced exertion or food/water deprivation."
+        },
+        "sourceModels": {
+          "nonmedicine-health-support": {
+            "replacePrescribedCareWithoutClinician": false,
+            "supportsMayAccompanyCare": true,
+            "actualOrdinaryCareCasesRequired": true,
+            "noChildDiagnosisOrTreatmentChanges": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-A1",
@@ -3750,7 +3873,43 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "substance-effects-and-dependence"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "substance-effects-and-dependence": "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance."
+        },
+        "sourceModels": {
+          "substance-effects-and-dependence": {
+            "legalMeansSafe": false,
+            "dependenceDiagnosedFromPreference": false,
+            "physicalMentalSocialEffects": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.4",
@@ -3943,7 +4102,62 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "pressure-choice-refusal-and-support",
+        "substance-effects-and-dependence"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+        "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "pressure-choice-refusal-and-support": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+          "substance-effects-and-dependence": "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance."
+        },
+        "sourceModels": {
+          "pressure-choice-refusal-and-support": {
+            "actualRefusalAndDecisionPerformance": true,
+            "nonSubstanceBehaviourChoiceIncluded": true,
+            "abstentionAvailable": true,
+            "privateHistoryRequired": false
+          },
+          "substance-effects-and-dependence": {
+            "legalMeansSafe": false,
+            "dependenceDiagnosedFromPreference": false,
+            "physicalMentalSocialEffects": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3",
@@ -5201,7 +5415,44 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "smoke-vape-constituents-and-effects"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "smoke-vape-constituents-and-effects": "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task."
+        },
+        "sourceModels": {
+          "smoke-vape-constituents-and-effects": {
+            "allVapesContainTarOrCO": false,
+            "nicotineIsOnlySmokingCarcinogen": false,
+            "aerosolHarmlessWater": false,
+            "longTermVapingUncertaintyRetained": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.5",
@@ -5334,7 +5585,54 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "pressure-choice-refusal-and-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "pressure-choice-refusal-and-support": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone."
+        },
+        "sourceModels": {
+          "pressure-choice-refusal-and-support": {
+            "actualRefusalAndDecisionPerformance": true,
+            "nonSubstanceBehaviourChoiceIncluded": true,
+            "abstentionAvailable": true,
+            "privateHistoryRequired": false
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.4",
@@ -5442,7 +5740,44 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "smoke-vape-constituents-and-effects"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "smoke-vape-constituents-and-effects": "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task."
+        },
+        "sourceModels": {
+          "smoke-vape-constituents-and-effects": {
+            "allVapesContainTarOrCO": false,
+            "nicotineIsOnlySmokingCarcinogen": false,
+            "aerosolHarmlessWater": false,
+            "longTermVapingUncertaintyRetained": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3.3",
@@ -6534,7 +6869,48 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "alcohol-effects-and-variable-risk"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2x-EwdBsgl",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No alcohol, drinking simulation, breath test, BAC/dose calculation, legal-limit memorisation or family diagnosis. Adult drinking recommendations are not child targets."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "alcohol-effects-and-variable-risk": "No alcohol, drinking simulation, breath test, BAC/dose calculation, legal-limit memorisation or family diagnosis. Adult drinking recommendations are not child targets."
+        },
+        "sourceModels": {
+          "alcohol-effects-and-variable-risk": {
+            "qualitativeVariationRequired": true,
+            "doseOrBACCalculation": false,
+            "outwardAppearanceProvesSafety": false
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.3",
@@ -6724,7 +7100,54 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "pressure-choice-refusal-and-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "pressure-choice-refusal-and-support": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone."
+        },
+        "sourceModels": {
+          "pressure-choice-refusal-and-support": {
+            "actualRefusalAndDecisionPerformance": true,
+            "nonSubstanceBehaviourChoiceIncluded": true,
+            "abstentionAvailable": true,
+            "privateHistoryRequired": false
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.4",
@@ -6919,7 +7342,48 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "personal-social-factors-and-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No required personal/family history, ceremony enactment, invented community teaching, diagnosis or forced disclosure. Actual local cultural material is an explicit delivery condition if selected."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "personal-social-factors-and-support": "No required personal/family history, ceremony enactment, invented community teaching, diagnosis or forced disclosure. Actual local cultural material is an explicit delivery condition if selected."
+        },
+        "sourceModels": {
+          "personal-social-factors-and-support": {
+            "culturalPracticeUniversalised": false,
+            "supportOrRiskFactorDeterminesOutcome": false,
+            "factorsAcrossLifeStages": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.4",
@@ -7968,7 +8432,44 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "cannabis-other-drugs-and-range-of-effects"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "cannabis-other-drugs-and-range-of-effects": "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed."
+        },
+        "sourceModels": {
+          "cannabis-other-drugs-and-range-of-effects": {
+            "cocaineOrMethamphetamineAreOpioids": false,
+            "intoxicatingSolventEffectsRequired": true,
+            "unknownMixtureCanBeIdentifiedByAppearance": false,
+            "noProductOrFumeExposure": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.3",
@@ -8178,7 +8679,68 @@
       "area": "Healthy Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "pressure-choice-refusal-and-support",
+        "cannabis-other-drugs-and-range-of-effects"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+        "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "noRealSubstanceExposure": true,
+        "localStatusAndHelpAtUse": true,
+        "noClinicalDiagnosisOrDose": true,
+        "accurateSmokeVapeAndDrugClassDistinctions": true,
+        "protocolConditions": {
+          "pressure-choice-refusal-and-support": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+          "cannabis-other-drugs-and-range-of-effects": "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed."
+        },
+        "sourceModels": {
+          "pressure-choice-refusal-and-support": {
+            "actualRefusalAndDecisionPerformance": true,
+            "nonSubstanceBehaviourChoiceIncluded": true,
+            "abstentionAvailable": true,
+            "privateHistoryRequired": false
+          },
+          "cannabis-other-drugs-and-range-of-effects": {
+            "cocaineOrMethamphetamineAreOpioids": false,
+            "intoxicatingSolventEffectsRequired": true,
+            "unknownMixtureCanBeIdentifiedByAppearance": false,
+            "noProductOrFumeExposure": true
+          }
+        },
+        "wholeOlderDrugClaimNotInferred": true
+      },
+      "authoringMeaning": "Actual accurate source duties and performance/resource conditions are accounted for by the explicit task portfolio; no topic or learner mastery inferred from a link."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.5",

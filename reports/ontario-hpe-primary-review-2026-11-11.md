@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **182 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** and **19 Human Development records** in Grades 1–6. It contains **182 Full**
-authoring dispositions, **401 component pairs** and **55 topics**. The remaining
-**85 records** (other Healthy Living and integrated SEL) are pending
+accounts for **195 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** and **13 Substance Use records** in Grades 1–6. It contains **195 Full**
+authoring dispositions, **428 component pairs** and **59 topics**. The remaining
+**72 records** (other Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -105,3 +105,13 @@ The complete unchanged reproduction claim is qualified at one exact Ontario ages
 Twelve repeated guide strings receive a narrow [factual clarification](ontario-hpe-reproduction-whole-fit-2026-11-11.json): substance exchange occurs across normally separate circulations; oxygen can diffuse while nutrients use different mechanisms. This retains the functional-exchange claim, requires no advanced transport vocabulary and avoids treating the placenta as a perfect barrier. No old source-verification flag is upgraded. The original glucose/alanine study abstracts support this correction, not a claim of child-intervention efficacy. Old guide revisions must remain available downstream; no learner equivalence, reset or transfer is authorised.
 
 Human Development validation passes generation, validation, generated checks and all 285 tests. The exact boundary retains all 1,906 old authored cards, all 4,972 old contexts and all 4,001 edges; only the 12 registered factual guide strings change. There are 21 new contexts, 10 exact-band extensions and 36 new component pairs, with no new claim, guide or edge in this source slice. Derived envelopes change for three reused topics while every prior scoped interval remains intact.
+
+## Substance use and related behaviours
+
+Thirteen further specific source duties have explicit factual and performance tasks. The [medicine concept](ontario-hpe-medicines-claim-2026-11-11.md) contributes its actual authorisation/recipient knowledge; generic danger recognition does not replace it. Other tasks compare accurate short- and long-term effects, qualitative alcohol-risk factors, smoking versus vaping, influences across life stages and actual safe decision/refusal/encouragement performance. A benign behaviour choice is included alongside substance scenarios. No real product, exposure, intoxication, private family history, diagnosis, treatment or dose calculation occurs.
+
+Illustrative examples do not make all vapes sources of combustion tar/carbon monoxide, nicotine the sole cause of smoking cancers, or cocaine/methamphetamine opioids. The source’s real range-of-effects duties remain, with accurate factual examples and explicit intoxicating-solvent knowledge. Actual Health Canada and NIH bodies support these distinctions; Quebec’s current alcohol information supports qualitative variability without importing adult drinking amounts.
+
+All 28 hard-closure cards and 16 available guides were accounted for, including five complete physiology guides read for this slice. Their full inventories and historical flags remain unchanged. A correct source response does not certify a broader circulation, vocabulary or nutrition claim, and the older recreational-drug classification/dependence claim is not age-lowered or silently duplicated. The [programme](ontario-hpe-primary-task-programme-2026-11-11.json) preserves actual source tasks and the inherited-rubric limits explicitly.
+
+Substance-use generation, validation, generated checks and all 297 tests pass. This slice preserves all 1,906 authored cards, 1,091 complete guide payloads/order, 4,993 prior contexts and all dependencies/catalogue/archive/clusters. It adds 10 contexts, extends 13 exact bands and adds 26 new pairs; the 27-pair source portfolio includes the already committed medicine component. No derived age envelope or authored claim changes in this slice.
