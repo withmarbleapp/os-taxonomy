@@ -68,10 +68,24 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
     for (const ref of protocol.caseRefs) {
       const value = report.preparedCases?.[ref];
       assert.ok(value?.sourceSummary?.trim() && value.attributionLimits?.trim() && value.resourceRefs?.length, 'Missing source-bound case');
-      for (const sourceRef of value.resourceRefs) assert.ok(report.resources?.[sourceRef]?.url?.startsWith('https://') && report.resources[sourceRef].readScope?.trim(), 'Missing actual case resource');
+      for (const sourceRef of value.resourceRefs) {
+        const resource = report.resources?.[sourceRef];
+        if (resource?.type === 'original-hypothetical-case-bank') {
+          assert.equal(resource.file, row.dossier, 'Wrong original case-bank file');
+          assert.ok(resource.caseIds?.includes(ref) && resource.readScope?.trim(), 'Missing original case-bank binding');
+          assert.equal(value.origin, 'original-hypothetical', 'Original case presented as observation');
+          assert.ok(value.givenFacts?.length >= 3 && value.givenFacts.every(fact => typeof fact === 'string' && fact.trim()), 'Missing supplied transfer facts');
+          for (const field of ['question', 'expectedEvidence', 'nearMiss', 'changedCase']) assert.ok(typeof value[field] === 'string' && value[field].trim(), 'Missing supplied transfer evidence');
+        } else assert.ok(resource?.url?.startsWith('https://') && resource.readScope?.trim(), 'Missing actual case resource');
+      }
       for (const field of protocol.requiredCaseFields ?? []) assert.ok(typeof value[field] === 'string' && value[field].trim(), 'Missing required property case evidence');
       if (value.role === 'plane-change') for (const field of ['geometryBefore', 'geometryAfter']) assert.ok(typeof value[field] === 'string' && value[field].trim(), 'Missing actual plane-change geometry');
     }
+    const transferRefs = {
+      'ON-SCI-2022-G4-B2.2': ['wetland-model'],
+      'ON-SCI-2022-G4-B2.7': ['wetland-model', 'dry-grassland-model'],
+    }[row.code] ?? [];
+    for (const ref of transferRefs) assert.ok(protocol.caseRefs.includes(ref), 'Missing supplied contrasting transfer case');
     if (row.disposition === 'Full') {
       assert.deepEqual(protocol.remainingConditions, [], 'Unresolved Full protocol condition');
       if (Object.hasOwn(report, 'remainingConditions')) assert.deepEqual(report.remainingConditions, [], 'Unresolved Full report condition');
@@ -225,4 +239,19 @@ test('Grade4 local applicability cannot hide behind a retained historical Full l
   assert.throws(() => check(promoted), /Unresolved Full protocol condition/);
   const missing = structuredClone(report); delete missing.protocols[row.protocolReference.slice('/protocols/'.length)];
   assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? missing : load(`reports/${name}`)), /Missing source-bound task protocol/);
+});
+
+test('Grade4 habitat transfer cannot ask for missing wetland or dry-grassland examples', () => {
+  const name = 'ontario-grade4-habitat-community-task-design-2026-11-11.json';
+  for (const [protocol, ref] of [['community-needs', 'wetland-model'], ['finite-support', 'wetland-model'], ['finite-support', 'dry-grassland-model']]) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocols[protocol].caseRefs = damaged.protocols[protocol].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing supplied contrasting transfer case/);
+  }
+  for (const field of ['givenFacts', 'changedCase']) {
+    const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['dry-grassland-model'][field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing supplied transfer (?:facts|evidence)/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`)); damaged.resources['original-transfer-models'].file = 'ontario-grade4-light-sound-properties-design-2026-11-11.json';
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Wrong original case-bank file/);
 });

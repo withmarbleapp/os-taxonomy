@@ -31,6 +31,15 @@
       "publisher": "Fisheries and Oceans Canada / Species at Risk Public Registry",
       "readScope": "Complete actual recovery chapter body read; dated publication context retained, not a current implementation audit.",
       "role": "Historical threat-reduction/protection/monitoring approaches, including oil-spill readiness and habitat protection; no claim all proposed work is complete or current law is certified."
+    },
+    "original-transfer-models": {
+      "type": "original-hypothetical-case-bank",
+      "file": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "caseIds": [
+        "wetland-model",
+        "dry-grassland-model"
+      ],
+      "readScope": "The complete two original defined-condition cases are supplied below. They are reasoning models, not field observations, real species inventories or official local-resource packets. Their explicitly given relationships are assumptions of the constructed comparison."
     }
   },
   "preparedCases": {
@@ -77,6 +86,42 @@
         ],
         "limits": "Partial illustrative web from the attributed diet account; clam food, other predators and detrital pathways are omitted, so do not identify missing food as evidence the clam is a producer."
       }
+    },
+    "wetland-model": {
+      "origin": "original-hypothetical",
+      "role": "wetland-transfer",
+      "resourceRefs": [
+        "original-transfer-models"
+      ],
+      "sourceSummary": "Original defined-condition wetland model: plant W needs the supplied water and light; animal A eats plant W and uses the supplied cover. These stipulated organisms are teaching labels, not claims about named real species.",
+      "attributionLimits": "A fictional model only. It cannot establish actual local organisms, diets, adaptations, measurements or a numerical population limit.",
+      "givenFacts": [
+        "The wetland patch supplies a fixed amount of water, light and cover during this comparison.",
+        "Plant W requires water and light. Animal A feeds on W and requires cover.",
+        "No new food, water or cover is added when more A are introduced."
+      ],
+      "question": "Draw the supplied animal-to-plant feeding connection and the living-to-nonliving water/light connections. If more A are introduced while food and cover remain unchanged, explain why the model does not guarantee every animal will meet its needs. Identify a relevant observation that would distinguish adequate from inadequate supply.",
+      "expectedEvidence": "Uses the stipulated relationships rather than inventing species; explains that plants and animals need finite supplied requirements, distinguishes an organism from its nonliving support, and gives a conditional answer rather than a claimed fixed carrying capacity.",
+      "nearMiss": "Says more animals automatically cause more food or that water itself is a living member of the community.",
+      "changedCase": "The defined changed wetland has less water for W but unchanged initial animal numbers. Trace a possible plant-to-food-to-animal consequence and identify what remains unknown; do not claim every organism necessarily dies."
+    },
+    "dry-grassland-model": {
+      "origin": "original-hypothetical",
+      "role": "dry-grassland-transfer",
+      "resourceRefs": [
+        "original-transfer-models"
+      ],
+      "sourceSummary": "Original defined-condition dry-grassland model: plant G requires the supplied light, water and growing space; animal B feeds on G and requires cover. The named types are fictional teaching labels.",
+      "attributionLimits": "A fictional comparison, not a report of any actual grassland, named species, drought measurement or fixed maximum number.",
+      "givenFacts": [
+        "Plant G requires water, light and growing space; B feeds on G and requires cover.",
+        "The dry patch begins with less supplied water than the wetland comparison; no numeric species-to-species tolerance is assumed.",
+        "Adding more G or B does not itself add water, space, food or cover."
+      ],
+      "question": "Explain why adding plants or animals to this defined dry patch cannot guarantee all their needs are met when the supplies stay fixed. Compare the kinds of limiting requirements with the wetland model; say why the given facts do not determine which patch supports more animals.",
+      "expectedEvidence": "Connects both plant and animal numbers to available requirements, compares shared needs with different supplied conditions, and declines to invent a numeric maximum or rank the habitats without species/resource evidence.",
+      "nearMiss": "Says a grassland supports unlimited animals because some animals already live there, or infers an exact maximum from the word dry.",
+      "changedCase": "The defined changed patch gains more water but no extra cover. Explain why increasing one resource does not guarantee that every requirement is now sufficient."
     }
   },
   "protocols": {
@@ -108,13 +153,14 @@
         "mt_lutxvMlkwS"
       ],
       "caseRefs": [
-        "high-park"
+        "high-park",
+        "wetland-model"
       ],
       "actions": [
         "Describe the studied community as interacting plant and animal species sharing the Toronto savannah habitat; connect oak/ground vegetation, acorn-feeding wildlife and seedling herbivory, rather than list unrelated species.",
         "Connect light/space/nutrients and food/shelter to needs of the selected plants and animals. Explain a supported consequence of changing one condition, distinguishing a City observation from a pupil prediction.",
         "Use a labelled original relationship drawing to explain a living-to-living and a living-to-nonliving connection. Do not infer that soil is an organism or that every interaction is mutually helpful.",
-        "Transfer to a supplied small wetland case with water, vegetation and grazing wildlife. Identify the same needs/interactions operation without claiming the Toronto case itself contains those wetland species."
+        "Use the complete wetland-model case bound below: draw its explicitly supplied feeding and living/nonliving connections, explain a changed-condition consequence, and distinguish this constructed transfer from the authentic Toronto account. The model does not supply a verified local habitat packet."
       ],
       "remainingConditions": [
         "The selected authentic High Park case is bound to Toronto. Preserve location/applicability explicitly; it must not be falsely presented as every pupil’s own local habitat."
@@ -129,13 +175,15 @@
         "mt_lutxvMlkwS"
       ],
       "caseRefs": [
-        "high-park"
+        "high-park",
+        "wetland-model",
+        "dry-grassland-model"
       ],
       "actions": [
         "Explain why more plants can compete for finite light, growing space, water and nutrients, and why additional animals need food and suitable space supplied by the habitat. Tie both plant and animal limits to requirements, not only to a single deprived plant.",
         "Use an explicitly original hypothetical patch with unchanged food and shelter supply: ask whether doubling the animals guarantees that all their needs remain met, and which observations would be needed. No invented animal count is presented as a High Park measurement.",
         "Explain that limits can vary with season, weather and other organisms: there is no fixed universal maximum inferred from this account. Too many individuals relative to available requirements can prevent all needs being met; no live deprivation test is permitted.",
-        "Transfer the same reasoning to a supplied wetland and dry grassland with different resources. Reject the near miss that a habitat can support unlimited organisms merely because it already contains some living things."
+        "Complete the bound wetland-model and dry-grassland-model questions, including their near misses and changed cases. Compare the finite requirements without inventing actual species or habitat measurements; reject the claim that the presence of some organisms proves support for unlimited numbers."
       ],
       "remainingConditions": []
     },
