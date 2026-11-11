@@ -5,6 +5,8 @@ const load=p=>JSON.parse(readFileSync(new URL(p,import.meta.url)));
 const report=load('../reports/ontario-core4-french-reading-design-2026-11-10.json');
 const contexts=load('../data/curriculum-alignments.json').alignments;
 const edges=load('../data/dependencies.json').dependencies;
+const expressionFile='expressive-reading-prerequisite-review-2026-11-11.json';
+const expression=load(`../reports/${expressionFile}`);
 const expected={C1:['mt_RNYNrRMqKL','mt_OlhMP7ShFT','mt_6-MYToNZ39','mt_V-ldQp56bF','mt_YKkCM63fSC'],'C1.1':['mt_RNYNrRMqKL','mt_OlhMP7ShFT','mt_6-MYToNZ39'],'C1.2':['mt_OlhMP7ShFT'],'C1.3':['mt_V-ldQp56bF','mt_YKkCM63fSC'],'C1.4':['mt_6-MYToNZ39']};
 function verify(r,alignments,dependencies){
  const catalogue=load('../data/curriculum-standards.json').curricula.find(c=>c.slug===r.source.catalogue),keys=new Set(catalogue.topics.map(t=>t.key));
@@ -31,7 +33,9 @@ function verify(r,alignments,dependencies){
  assert.deepEqual(p['new-word-meaning'].performanceConditions.unknownWords,['minuscule','récipient']);assert.equal(p['new-word-meaning'].performanceConditions.confirmationRequired,true);
  assert.deepEqual(r.dependencyReview.changes.map(c=>[c.before.topicId,c.before.prerequisiteId]),[['mt_ZhvwM6LMBL','mt__KHQttMde3'],['mt_YKkCM63fSC','mt_frDIaXzWbx']],'exact intrinsic gates');
  for(const c of r.dependencyReview.changes){assert.equal(c.before.strength,'hard');assert.equal(c.after.strength,'soft');assert.deepEqual(dependencies.find(e=>e.topicId===c.after.topicId&&e.prerequisiteId===c.after.prerequisiteId),c.after,'reviewed gate');}
- for(const [id,prerequisiteId]of [['mt_V-ldQp56bF','mt_ZhvwM6LMBL'],['mt_ZhvwM6LMBL','mt_YKkCM63fSC'],['mt_ZhvwM6LMBL','mt_1KCwbGvm1F']])assert.equal(dependencies.find(e=>e.topicId===id&&e.prerequisiteId===prerequisiteId)?.strength,'hard','retained whole-target prerequisite');
+ assert.equal(r.dependencyReview.currentWholePrerequisiteReview?.report,expressionFile,'registered expressive prerequisite report');
+ assert.deepEqual(dependencies.find(e=>e.topicId==='mt_V-ldQp56bF'&&e.prerequisiteId==='mt_ZhvwM6LMBL'),expression.changes[0].after,'registered expressive prerequisite');
+ for(const [id,prerequisiteId]of [['mt_ZhvwM6LMBL','mt_YKkCM63fSC'],['mt_ZhvwM6LMBL','mt_1KCwbGvm1F']])assert.equal(dependencies.find(e=>e.topicId===id&&e.prerequisiteId===prerequisiteId)?.strength,'hard','retained whole-target prerequisite');
 }
 test('French reading binds five sources, whole French performances, connected word corpus and exact gate corrections',()=>verify(report,contexts,edges));
 test('French reading rejects lost source, meaning, corpus and prerequisite checks',()=>{
@@ -39,5 +43,6 @@ test('French reading rejects lost source, meaning, corpus and prerequisite check
  const meaning=structuredClone(report);meaning.protocols['fluent-familiar-reading'].performanceConditions.understandingRequired=false;assert.throws(()=>verify(meaning,contexts,edges),/meaning required/);
  const corpus=structuredClone(report);corpus.resources.sightWordBank[0]='absentword';assert.throws(()=>verify(corpus,contexts,edges),/word bank in connected text/);
  const gate=structuredClone(edges);gate.find(e=>e.topicId==='mt_YKkCM63fSC'&&e.prerequisiteId==='mt_frDIaXzWbx').strength='hard';assert.throws(()=>verify(report,contexts,gate),/reviewed gate/);
+ const expressionGate=structuredClone(edges);expressionGate.find(e=>e.topicId==='mt_V-ldQp56bF'&&e.prerequisiteId==='mt_ZhvwM6LMBL').strength='hard';assert.throws(()=>verify(report,contexts,expressionGate),/registered expressive prerequisite/);
  const retained=structuredClone(edges);retained.find(e=>e.topicId==='mt_ZhvwM6LMBL'&&e.prerequisiteId==='mt_YKkCM63fSC').strength='soft';assert.throws(()=>verify(report,contexts,retained),/retained whole-target/);
 });

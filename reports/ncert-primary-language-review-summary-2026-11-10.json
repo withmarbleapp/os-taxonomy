@@ -10,7 +10,7 @@
       "summary": {
         "Full": 14,
         "ConditionalLanguageBinding": 5,
-        "ConditionalGraphRepresentation": 1,
+        "Partial": 1,
         "ContextualReadingEngagement": 1
       }
     },
@@ -20,8 +20,8 @@
       "records": 35,
       "summary": {
         "Full": 20,
-        "Partial": 1,
-        "ConditionalGraphRepresentation": 5,
+        "Partial": 2,
+        "ConditionalGraphRepresentation": 4,
         "ConditionalLanguageBinding": 5,
         "ContextualReadingEngagement": 4
       }
@@ -39,15 +39,15 @@
   "combinedSummary": {
     "Full": 65,
     "ConditionalLanguageBinding": 10,
-    "ConditionalGraphRepresentation": 6,
+    "ConditionalGraphRepresentation": 4,
     "ContextualReadingEngagement": 5,
     "SkillWithContextualEngagement": 3,
-    "Partial": 1
+    "Partial": 3
   },
   "graph": {
-    "newContexts": 58,
-    "newAssociations": 143,
-    "sharedTopics": 37,
+    "newContexts": 60,
+    "newAssociations": 145,
+    "sharedTopics": 38,
     "newClaims": 0,
     "registeredHardToSoftCorrections": 5
   },
@@ -66,5 +66,6 @@
     }
   },
   "unverifiedSourceDiscovery": "Advisory Hindi/Urdu extraction recovery outside the accepted catalogue remains unverified; no invented exclusions or wording.",
-  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json"
+  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json",
+  "expressiveReadingComponentReview": "expressive-reading-prerequisite-review-2026-11-11.json"
 }
