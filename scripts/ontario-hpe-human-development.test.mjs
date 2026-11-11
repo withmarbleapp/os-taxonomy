@@ -66,7 +66,9 @@ test('whole reproductive claim keeps all evidence, older scope and the exact app
   assert.equal(card.evidence.length, 4); assert.ok(card.description.includes('gestation, and birth including the role of the placenta'));
   const a = read('data/curriculum-alignments.json').alignments.filter(a => a.topicId === card.id);
   assert.ok(a.some(a => a.ageRangeStart === 12 && a.ageRangeEnd === 13));
-  assert.deepEqual(a.find(a => a.country === 'CA' && a.region === 'Ontario'), { topicId: card.id, scope: 'jurisdiction', country: 'CA', region: 'Ontario', ageRangeStart: 10, ageRangeEnd: 11, standards: ['the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.3', 'the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.4'] });
+  const required = ['the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.3', 'the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.4'];
+  const preserved = rows => assert.ok(rows.some(a => a.scope === 'jurisdiction' && a.country === 'CA' && a.region === 'Ontario' && a.ageRangeStart === 10 && a.ageRangeEnd === 11 && required.every(s => a.standards.includes(s))));
+  preserved(a); for (const key of required) { const missing = structuredClone(a); for (const row of missing) row.standards = row.standards.filter(s => s !== key); assert.throws(() => preserved(missing)); }
   const correction = read('reports/ontario-hpe-reproduction-whole-fit-2026-11-11.json');
   assert.equal(correction.changes.length, 12); assert.equal(new Set(correction.changes.map(c => c.path)).size, 12);
   const guide = read('data/teaching-research.json').records.find(g => g.topicId === card.id);

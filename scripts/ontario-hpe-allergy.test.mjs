@@ -24,7 +24,9 @@ test('one Grade2 component adds one fixed concept and no cell, digestion or trea
  const t=read('data/topics.json').topics.find(t=>t.id===report.topicId);
  assert.equal(t.type,'CONCEPTUAL');assert.equal(t.domain,'Health & Safety');
  const a=read('data/curriculum-alignments.json').alignments.filter(a=>a.topicId===report.topicId);
- assert.deepEqual(a,[{topicId:report.topicId,scope:'jurisdiction',country:'CA',region:'Ontario',ageRangeStart:7,ageRangeEnd:8,standards:['the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.2']}]);
+ const required='the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.2';
+ const preserved=rows=>assert.ok(rows.some(a=>a.scope==='jurisdiction'&&a.country==='CA'&&a.region==='Ontario'&&a.ageRangeStart===7&&a.ageRangeEnd===8&&a.standards.includes(required)));
+ preserved(a);const missing=structuredClone(a);for(const row of missing)row.standards=row.standards.filter(s=>s!==required);assert.throws(()=>preserved(missing));
  assert.equal(read('data/dependencies.json').dependencies.filter(e=>e.topicId===report.topicId).length,0);
  const g=read('data/teaching-research.json').records.find(g=>g.topicId===report.topicId);
  assert.equal(g.confidence,'low');assert.equal(g.learn.activities.length,3);

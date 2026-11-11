@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "207 source records reviewed/proposed: 177 specific and 30 overall records. The remaining 60 are 18 Healthy Living overall expectations and 42 integrated SEL positions (36 specific plus 6 overall), pending explicit composition.",
+  "scope": "225 source records reviewed/proposed; only 42 integrated SEL positions remain pending cross-strand application qualification.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -973,6 +973,30 @@
         "realContactRequired": false,
         "promiseAbsoluteSecrecyInDanger": false
       }
+    },
+    {
+      "id": "healthy-living-overall-knowledge-portfolio",
+      "task": "Complete every same-grade D1 child task in the record’s exact composition list, using its actual attributed resources, whole-claim checks and original source conditions. Then explain a connected healthy-development case spanning food/body needs, protection, development and mental well-being rather than recite isolated slogans. Use the grade panel’s changed context to explain two interacting factors; a picture/name alone does not establish their functions or relationships.",
+      "positive": "Explains each actual same-grade knowledge duty and connects relevant factors without diagnosis, a universal body timeline or a moral health ranking.",
+      "nearMiss": "Completes one favourite topic and infers all healthy-development knowledge, or lists factors without explaining a relation.",
+      "transfer": "Change the supplied fictional person’s access, routine or development context and explain what can and cannot be inferred; keep every child duty represented.",
+      "sourceConditions": "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated."
+    },
+    {
+      "id": "healthy-living-overall-action-portfolio",
+      "task": "Complete every same-grade D2 child task in the exact composition list, including its actual benign actions, choices and reflection. In an integrated ordinary health decision, identify a relevant feeling/need and available information, generate alternatives, explain consequences, choose and actually rehearse or perform the safe action, then review it. Unsafe, medical or coercive cases remain fictional knowledge/help tasks; no hazardous action is enacted. A spoken plan alone cannot replace the source’s actual benign routine, communication or skill performance.",
+      "positive": "Uses actual health knowledge and SEL reasoning in a justified safe action with reflection, while retaining all child-specific performance duties.",
+      "nearMiss": "Gives the right health slogan but cannot apply it or perform the benign action; acts confidently without considering consequences.",
+      "transfer": "Change the person’s access or pressure and adapt the choice/action/help route with a reason.",
+      "sourceConditions": "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained."
+    },
+    {
+      "id": "healthy-living-overall-connections-portfolio",
+      "task": "Complete every same-grade D3 child task in the exact composition list, including actual comparison, investigation of messages or contextual reflection where required. Compare two original fictional cases with the same choice but different environmental/social/access conditions. Explain effects on self and others and at least one influence from surroundings; give reasons, note uncertainty and propose a respectful practical response. Do not claim one behaviour determines everyone’s health.",
+      "positive": "Connects personal choice, effects on others and wider conditions across the full same-grade portfolio, retaining actual child task duties.",
+      "nearMiss": "Attributes all health to individual willpower, ignores bystanders/access or generalises one person’s experience to a whole community.",
+      "transfer": "Change the setting, resources or another person’s perspective and explain which connection changes and why.",
+      "sourceConditions": "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference."
     }
   ],
   "originalGameSet": [
@@ -1123,6 +1147,14 @@
       "actualLocalSchoolAndAgeEligibleCommunityAccessAtUse": true,
       "noActualServiceContactAsAssessment": true,
       "noOlderHPAOrAdvancedBrainGate": true
+    },
+    "overallHealthyLiving": {
+      "allActualSameGradeChildTasksRequired": true,
+      "integrativeExplanationActionConnectionRequired": true,
+      "noAutomaticFullFromChildCountOrLinks": true,
+      "wholeChildConditionsAndResourceBindingsRetained": true,
+      "noUnsafeOrClinicalEnactment": true,
+      "noLearnerAttainmentInferred": true
     }
   },
   "sources": [
@@ -1363,5 +1395,37 @@
       "read": "Actual complete main body via verifiedTLS, updated2026-08-07,published2019-01-29. School support link and age eligibility distinguish children/under18 from15+/postsecondary/adult services.",
       "limits": "Current at authoring; actual local school route/access and service eligibility must be rechecked at use. No live contact in an assessment."
     }
-  ]
+  ],
+  "overallHealthyLivingGradePanels": {
+    "1": {
+      "knowledge": "Explain why a declared snack/water choice and ordinary hand/body care can support body and mind, then use an original everyday hazard/help case.",
+      "action": "Choose/rehearse a safe ordinary school-day food/hygiene/help action and explain a feeling and consequence; keep the child’s source-specific interpersonal duties.",
+      "connections": "Compare the same ordinary child routine with and without caring support or a safe place to play; explain an effect on self/others without blaming a family."
+    },
+    "2": {
+      "knowledge": "Compare the exact supplied known-allergy/intolerance cases and prescription/OTC cases, then explain how growth, food and body/brain feelings fit overall health.",
+      "action": "Demonstrate benign oral/hand care or an appropriate clear help/refusal communication and explain the health/feeling/choice relation.",
+      "connections": "Use the explicit adult-assessed ordinary-care cases and a respectful visible/unseen-difference case to explain support and effects on other people."
+    },
+    "3": {
+      "knowledge": "Connect an accurate legal-status/effects information card, a healthy-relationship case and the perceived-threat brain/body model; no invented dependence diagnosis.",
+      "action": "Apply an actual safe decision/refusal and a healthy routine or support choice, with options/consequences and a benign performed action.",
+      "connections": "Compare food-origin/disposal and environmental/relationship-influence cases; explain effects on others while retaining the actual same-grade source duties."
+    },
+    "4": {
+      "knowledge": "Explain actual guide/health knowledge, accurate smoke-versus-aerosol information and puberty-change/support cases; one puberty timetable is not universal.",
+      "action": "Rehearse an informed refusal or privacy-safe coping/care action, explaining influence and consequences without products or body inspection.",
+      "connections": "Compare first-/second-hand smoke and vaping information and a controllable/less-controllable stress case; explain individual and surrounding influences."
+    },
+    "5": {
+      "knowledge": "Use the actual food-label/source-support case, alcohol-effects/variable-risk facts and complete reproductive source/whole-fit tasks; all remain separately assessed.",
+      "action": "Apply informed personal/social health reasoning in a benign practical food/goal, refusal or peer-support task; recognise peer/help limits and do not diagnose.",
+      "connections": "Compare two fictional people’s supports, media/cultural influences or mental-health attitudes; explain potential effects and an inclusive response without determinism."
+    },
+    "6": {
+      "knowledge": "Explain accurate substance/intoxicant effects, non-graphic media-representation limits, current eligible help access and thoughts-feelings-actions relations; no exposure or diagnosis.",
+      "action": "Perform a benign consent/refusal, food/goal or protective-help action with an explanation, respecting uncertainty and the other person’s choice.",
+      "connections": "Use actual food/environment and stereotype/inclusion comparisons plus a changed support/access case; explain effects on self/others and wider conditions."
+    }
+  }
 }

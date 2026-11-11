@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **207 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** **13 Substance Use records** and **12 Mental Health Literacy records** in Grades 1–6. It contains **207 Full**
-authoring dispositions, **451 component pairs** and **65 topics**. The remaining
-**60 records** (other Healthy Living and integrated SEL) are pending
+accounts for **225 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** **20 Personal Safety records** **19 Human Development records** **13 Substance Use records** and **12 Mental Health Literacy records** and **18 overall Healthy Living records** in Grades 1–6. It contains **225 Full**
+authoring dispositions, **592 component pairs** and **65 topics**. The remaining
+**42 records** (integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -125,3 +125,11 @@ The [programme](ontario-hpe-primary-task-programme-2026-11-11.json) separates au
 All 20 whole hard-closure cards and both available guides were accounted for, without claim, guide or dependency edits. Full inventories and actual benign performance/reflective evidence remain separate from a narrow fictional diagnostic. The remaining 60 records are the 18 Healthy Living overall expectations and 42 integrated SEL positions, requiring explicit task-portfolio composition rather than automatic promotion from specific links.
 
 Mental-health generation, validation, generated checks and all 303 tests pass. This slice preserves all 1,906 old authored cards, all 1,091 complete guides/order, 5,003 prior contexts and every dependency/catalogue/archive/cluster payload. It adds 15 contexts, extends 6 exact bands and adds 23 component pairs. Two derived age ends expand for the same unchanged feeling-naming/trigger operations; every historical interval is retained.
+
+## Overall Healthy Living portfolios
+
+Each of the 18 overall D1/D2/D3 records now binds the exact same-grade specific children, their actual protocol IDs and every source condition. Three explicit integrative tasks distinguish knowledge, reasoned safe action and connections across personal/social/environmental influences. Six grade panels name concrete cases from the already qualified resources. This is more than a union of links: all child tasks remain, and one favourite activity or a written plan cannot substitute for another required duty or actual benign performance.
+
+The [record compositions](ontario-hpe-primary-review-2026-11-11.json) and [original grade panels](ontario-hpe-primary-task-programme-2026-11-11.json) retain school/local applicability, access and privacy. Unsafe/clinical situations use factual fictional knowledge/help cases. These are authored portfolios, not fabricated child observations or independent whole-topic certifications. The 42 cross-strand SEL positions remain pending their own explicit application review.
+
+Overall Healthy Living generation, validation, generated checks and all 308 tests pass. All 1,906 authored cards, 1,091 guide payloads/order, 5,018 prior contexts and all edges/catalogue/archive/clusters remain preserved; only 141 reviewed parent component pairs are appended to existing exact bands. Existing component-preservation tests now allow further reviewed codes in those bands while still rejecting removal of each original required code.

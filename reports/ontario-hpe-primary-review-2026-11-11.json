@@ -22,10 +22,10 @@
   },
   "counts": {
     "sourceClausesRead": 267,
-    "sourceFitReviewed": 207,
-    "pendingQualification": 60,
-    "Full": 207,
-    "componentPairs": 451,
+    "sourceFitReviewed": 225,
+    "pendingQualification": 42,
+    "Full": 225,
+    "componentPairs": 592,
     "topics": 65
   },
   "records": [
@@ -922,7 +922,86 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_83gRQ9OPkc",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_I9cDkW4Qz-",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.5"
+          ],
+          "childProtocolIds": [
+            "body-mind-overall-health",
+            "body-names-and-respect",
+            "canadian-guide-and-nutrient-reasons",
+            "contacts-and-help",
+            "senses-and-brain-function"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Explain why a declared snack/water choice and ordinary hand/body care can support body and mind, then use an original everyday hazard/help case.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.1",
@@ -1144,7 +1223,87 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_HBcvu0UxYe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_I9cDkW4Qz-",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hkIbGmuH7D",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_utJE_Bt7MD",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.5"
+          ],
+          "childProtocolIds": [
+            "canadian-guide-and-nutrient-reasons",
+            "care-boundaries-and-consent",
+            "hunger-thirst-fullness-as-information",
+            "hygiene-and-oral-performance",
+            "positive-relationships-and-harm",
+            "school-and-everyday-safety"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Choose/rehearse a safe ordinary school-day food/hygiene/help action and explain a feeling and consequence; keep the child’s source-specific interpersonal duties.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.1",
@@ -1338,7 +1497,72 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_35-DhMh_Yr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_TU3BcLOgiV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.3"
+          ],
+          "childProtocolIds": [
+            "habits-harms-alternatives",
+            "linked-thoughts-feelings-actions",
+            "school-and-everyday-safety"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Compare the same ordinary child routine with and without caring support or a safe place to play; explain an effect on self/others without blaming a family.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.1",
@@ -2427,7 +2651,98 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_epG52zWuiW",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_oR6dwRj2Ll",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rVjbdwUJHG",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.5",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.6"
+          ],
+          "childProtocolIds": [
+            "body-brain-and-comfortable-support",
+            "body-capability-care-and-image",
+            "food-allergy-known-and-unknown-cases",
+            "life-course-and-health-factors",
+            "medicines-authorisation-and-safe-use",
+            "school-and-everyday-safety"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Compare the exact supplied known-allergy/intolerance cases and prescription/OTC cases, then explain how growth, food and body/brain feelings fit overall health.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.1",
@@ -2695,7 +3010,97 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_69hFD2NgGe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_EWiY8-opdd",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_R2_rZ4F6r4",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hkIbGmuH7D",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.5"
+          ],
+          "childProtocolIds": [
+            "canadian-guide-and-nutrient-reasons",
+            "care-boundaries-and-consent",
+            "feasible-meals-safe-ingredients-and-guidelines",
+            "feeling-names-and-help",
+            "hygiene-and-oral-performance",
+            "respond-to-threat-and-support"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Demonstrate benign oral/hand care or an appropriate clear help/refusal communication and explain the health/feeling/choice relation.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D2.1",
@@ -2917,7 +3322,65 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HBcvu0UxYe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_YbX3LD0Eca",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3.2"
+          ],
+          "childProtocolIds": [
+            "nonmedicine-health-support",
+            "positive-relationships-and-harm"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Use the explicit adult-assessed ordinary-care cases and a respectful visible/unseen-difference case to explain support and effects on other people.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3.1",
@@ -3969,7 +4432,99 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HBcvu0UxYe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_VIUF5Vspbg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Ytd8XC3eQr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hkIbGmuH7D",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.5",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.6"
+          ],
+          "childProtocolIds": [
+            "body-capability-care-and-image",
+            "concussion-knowledge-and-school-plan",
+            "food-origins-processing-and-environment",
+            "healthy-relationships-and-consent",
+            "life-course-and-health-factors",
+            "perceived-threat-brain-body-response",
+            "substance-effects-and-dependence"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Connect an accurate legal-status/effects information card, a healthy-relationship case and the perceived-threat brain/body model; no invented dependence diagnosis.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.1",
@@ -4237,7 +4792,78 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D2.3"
+          ],
+          "childProtocolIds": [
+            "create-safety-guidelines",
+            "oral-health-and-food-choices",
+            "pressure-choice-refusal-and-support",
+            "substance-effects-and-dependence"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Apply an actual safe decision/refusal and a healthy routine or support choice, with options/consequences and a benign performed action.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D2.1",
@@ -4385,7 +5011,70 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_9Y5-GjF2B0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_OJVkWvIaM_",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_UHQfb-n-w3",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3.4"
+          ],
+          "childProtocolIds": [
+            "canadian-guide-and-nutrient-reasons",
+            "cultural-food-range-without-forced-tasting",
+            "external-causes-and-control",
+            "fictional-violence-and-real-consequences",
+            "visible-and-unseen-differences"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Compare food-origin/disposal and environmental/relationship-influence cases; explain effects on others while retaining the actual same-grade source duties.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D3.1",
@@ -5558,7 +6247,82 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_R2_rZ4F6r4",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Udv6pH1nRh",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hkIbGmuH7D",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pu2mmK27UA",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.5"
+          ],
+          "childProtocolIds": [
+            "bullying-abuse-and-help",
+            "canadian-guide-and-nutrient-reasons",
+            "care-boundaries-and-consent",
+            "communication-tech-risks-and-protection",
+            "puberty-whole-overview-and-social-change",
+            "smoke-vape-constituents-and-effects"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Explain actual guide/health knowledge, accurate smoke-versus-aerosol information and puberty-change/support cases; one puberty timetable is not universal.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D1.1",
@@ -5761,7 +6525,87 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cJjnPjuvCU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vbbxnY7ZDT",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.5"
+          ],
+          "childProtocolIds": [
+            "apply-risk-decision-cycle",
+            "canadian-guide-and-nutrient-reasons",
+            "daily-choices-and-support",
+            "eating-habit-goal-and-helping-others",
+            "pressure-choice-refusal-and-support",
+            "puberty-personal-care"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Rehearse an informed refusal or privacy-safe coping/care action, explaining influence and consequences without products or body inspection.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D2.1",
@@ -5996,7 +6840,67 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_-beOa1AO6W",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3.3"
+          ],
+          "childProtocolIds": [
+            "eating-habit-goal-and-helping-others",
+            "external-causes-and-control",
+            "smoke-vape-constituents-and-effects"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Compare first-/second-hand smoke and vaping information and a controllable/less-controllable stress case; explain individual and surrounding influences.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-D3.1",
@@ -7166,7 +8070,75 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2x-EwdBsgl",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pu2mmK27UA",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_tQkCzRcWG7",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.4"
+          ],
+          "childProtocolIds": [
+            "alcohol-effects-and-variable-risk",
+            "contacts-and-help",
+            "g5-reproductive-knowledge-separate-binding",
+            "puberty-whole-overview-and-social-change",
+            "reproduction-complete-whole-fit"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Use the actual food-label/source-support case, alcohol-effects/variable-risk facts and complete reproductive source/whole-fit tasks; all remain separately assessed.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D1.1",
@@ -7360,7 +8332,98 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_-beOa1AO6W",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_CCJpSSS3l8",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_R2_rZ4F6r4",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_dXP_wBLIwU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_j8Pv3s7TZR",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.5",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.6"
+          ],
+          "childProtocolIds": [
+            "canadian-label-and-separate-whole-transfer",
+            "identity-intersections-and-support",
+            "peer-help-and-limits",
+            "pressure-choice-refusal-and-support",
+            "puberty-stress-help-and-coping",
+            "respond-to-threat-and-support"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Apply informed personal/social health reasoning in a benign practical food/goal, refusal or peer-support task; recognise peer/help limits and do not diagnose.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D2.1",
@@ -7639,7 +8702,74 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_OTrQJVRRJ6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rpug2tkYhb",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.4"
+          ],
+          "childProtocolIds": [
+            "attitudes-stigma-and-inclusion",
+            "food-marketing-and-health-message-critique",
+            "impact-inclusion-and-conflict",
+            "personal-social-factors-and-support"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Compare two fictional people’s supports, media/cultural influences or mental-health attitudes; explain potential effects and an inclusive response without determinism.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-D3.1",
@@ -8802,7 +9932,86 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-knowledge-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_35-DhMh_Yr",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_KA5j5OeGvw",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hkIbGmuH7D",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_lAvS72LOUO",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_urxvHF8Vds",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.5"
+          ],
+          "childProtocolIds": [
+            "actual-school-community-access",
+            "cannabis-other-drugs-and-range-of-effects",
+            "impact-inclusion-and-conflict",
+            "linked-thoughts-feelings-actions",
+            "nonexplicit-media-representation-limits"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-knowledge-portfolio",
+          "gradePanel": "Explain accurate substance/intoxicant effects, non-graphic media-representation limits, current eligible help access and thoughts-feelings-actions relations; no exposure or diagnosis.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D1.1",
@@ -9037,7 +10246,122 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-action-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_-beOa1AO6W",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_1ZwxvIqIxf",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HBcvu0UxYe",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_JivEBTD_KV",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_YbX3LD0Eca",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_iWGnyUyN2j",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_pu2mmK27UA",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_utJE_Bt7MD",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.3",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.4",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.5",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.6"
+          ],
+          "childProtocolIds": [
+            "cannabis-other-drugs-and-range-of-effects",
+            "eating-habit-goal-and-helping-others",
+            "feasible-meals-safe-ingredients-and-guidelines",
+            "healthy-relationships-and-consent",
+            "hunger-thirst-fullness-as-information",
+            "impact-inclusion-and-conflict",
+            "positive-relationships-and-harm",
+            "pressure-choice-refusal-and-support",
+            "puberty-stress-help-and-coping",
+            "puberty-whole-overview-and-social-change"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-action-portfolio",
+          "gradePanel": "Perform a benign consent/refusal, food/goal or protective-help action with an explanation, respecting uncertainty and the other person’s choice.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.1",
@@ -9342,7 +10666,82 @@
       "area": "Healthy Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "healthy-living-overall-connections-portfolio"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2eVg4Tt5r0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_urxvHF8Vds",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference.",
+        "Complete every exact listed same-grade child protocol with its source/performance/resource conditions; the integrated task is additional composition, not substitution."
+      ],
+      "sourceRequirements": {
+        "actualSourceTaskRequired": true,
+        "composition": {
+          "childSourceKeys": [
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.1",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.2",
+            "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.3"
+          ],
+          "childProtocolIds": [
+            "care-responsibility-and-emergency-plan",
+            "eating-and-active-living-combination",
+            "stereotypes-impact-and-change"
+          ],
+          "allChildConditionsRetained": true,
+          "integratedProtocolId": "healthy-living-overall-connections-portfolio",
+          "gradePanel": "Use actual food/environment and stereotype/inclusion comparisons plus a changed support/access case; explain effects on self/others and wider conditions.",
+          "independentWholeClaimCertification": false
+        },
+        "noLinkCountAsCoverage": true,
+        "noUnsafeEnactmentOrPrivateHistory": true
+      },
+      "authoringMeaning": "Full source authoring requires the complete same-grade child portfolio and explicit integrated reasoning/action/connection; neither a graph union nor a fictional answer certifies a learner or every whole topic."
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.1",

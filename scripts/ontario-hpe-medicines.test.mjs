@@ -44,7 +44,10 @@ test('real medicines and private treatment cannot replace fictional safe-use kno
 test('one fixed medicine concept has its exact Grade2 component and no clinical hard gate', () => {
   const card = read('data/topics.json').topics.find(t => t.id === report.topicId);
   assert.equal(card.type, 'CONCEPTUAL'); assert.equal(card.domain, 'Health & Safety');
-  assert.deepEqual(read('data/curriculum-alignments.json').alignments.filter(a => a.topicId === card.id), [{ topicId: card.id, scope: 'jurisdiction', country: 'CA', region: 'Ontario', ageRangeStart: 7, ageRangeEnd: 8, standards: ['the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.3'] }]);
+  const required = 'the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.3';
+  const contexts = read('data/curriculum-alignments.json').alignments.filter(a => a.topicId === card.id);
+  const preserved = rows => assert.ok(rows.some(a => a.scope === 'jurisdiction' && a.country === 'CA' && a.region === 'Ontario' && a.ageRangeStart === 7 && a.ageRangeEnd === 8 && a.standards.includes(required)));
+  preserved(contexts); const missing = structuredClone(contexts); for (const a of missing) a.standards = a.standards.filter(s => s !== required); assert.throws(() => preserved(missing));
   assert.equal(read('data/dependencies.json').dependencies.filter(e => e.topicId === card.id).length, 0);
   const guide = read('data/teaching-research.json').records.find(g => g.topicId === card.id);
   assert.equal(guide.confidence, 'low'); assert.equal(guide.learn.activities.length, 3);
