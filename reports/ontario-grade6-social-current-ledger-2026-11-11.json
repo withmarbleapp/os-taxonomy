@@ -5,19 +5,19 @@
   "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
   "sourceReview": "ontario-grade6-social-source-review-2026-11-11.json",
   "scope": "Ontario Social Studies Grade 6 primary ages 11–12: 46 actual expectations; optional Native Languages exclusion unchanged.",
-  "status": "Two Full source-fit reuse designs, one Partial coordinate component and forty-three individually unverified expectations. No whole-grade completion or learner attainment inferred.",
+  "status": "Three Full source-fit designs, one Partial coordinate component and forty-two individually unverified expectations. No whole-grade completion or learner attainment inferred.",
   "expectationCount": 46,
   "dispositionCounts": {
-    "Unverified": 43,
-    "Full": 2,
+    "Unverified": 42,
+    "Full": 3,
     "Partial": 1
   },
   "associationInventory": {
-    "pairs": 3,
-    "topics": 3,
-    "codes": 3,
+    "pairs": 4,
+    "topics": 4,
+    "codes": 4,
     "newClaims": 1,
-    "reusedClaims": 2
+    "reusedClaims": 3
   },
   "expectations": [
     {
@@ -38,11 +38,14 @@
     },
     {
       "code": "A1.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_gSBJxNBQh3"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-cultural-contributions-design-2026-11-11.json",
+      "protocolReference": "/protocols/contribution-analysis",
+      "coverageBasis": "Actual three-peoples source-bound contributions analysis, with full retained historical-renewal operation and no target-language or universal outcome inference."
     },
     {
       "code": "A1.3",

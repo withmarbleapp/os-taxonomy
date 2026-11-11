@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "status": "Source-fit analytical contribution task using the complete unchanged cultural-renewal claim and three distinct current attributed cases; no new cultural topic or target-language competence.",
+  "localDependencyCommit": "69e1f31",
+  "claimReview": {
+    "topicId": "mt_gSBJxNBQh3",
+    "wholeClaim": "Historical colonial disruption, including residential schooling, plus attributed contemporary community-led renewal and identity/belonging relationship, with transfer between distinct cases.",
+    "ageBoundary": "Add only an exact 11–12 Ontario context; old 6–7 and 8–9 contexts and any disjoint bands remain untouched. Higher-grade analysis does not widen the canonical factual repertoire.",
+    "componentBoundary": "Analyses actual contributions to Canadian cultural/language life. A broad claim that every programme achieved measurable outcomes, or mere respectful recognition, is insufficient."
+  },
+  "resources": {
+    "prior-cases": {
+      "report": "ontario-cultural-renewal-claim-2026-11-10.json",
+      "pointer": "/cases"
+    },
+    "prior-whole-protocol": {
+      "report": "ontario-cultural-renewal-claim-2026-11-10.json",
+      "pointer": "/assessmentProtocol"
+    },
+    "nipissing": {
+      "url": "https://nfn.ca/culture-heritage/anishinaabemwin/",
+      "locator": "Complete language programme body, read 11 November 2026",
+      "scope": "Current Nation account; not proof that the 2018 draft plan remains pending or of measured universal outcomes."
+    },
+    "metis": {
+      "url": "https://www.metisnation.org/programs-and-services/education-training/metis-languages-initiatives/",
+      "locator": "Complete English main body, read 11 November 2026",
+      "scope": "MNO’s particular account and initiatives, not all Métis organizations or a single interchangeable Michif variety."
+    },
+    "inuit": {
+      "url": "https://www.pirurvik.ca/aurniarvik",
+      "locator": "Complete programme main body/course descriptions, read 11 November 2026",
+      "scope": "Nunavut Inuit-led programme for adult participants; learners study its contributions rather than enrol or certify Inuktut proficiency."
+    }
+  },
+  "preparedFacts": {
+    "nipissing": [
+      "Nipissing First Nation describes Anishinaabemwin as its official language, weekly community classes with fluent speakers, language/culture in childcare and children’s programmes, and shared written language resources.",
+      "The case shows community members sustaining and sharing knowledge across generations. The page does not prove identical participation or outcomes for every Nation member."
+    ],
+    "metis": [
+      "The Métis Nation of Ontario describes colonial pressure on Métis languages and initiatives to strengthen language use, support communities and introduce younger speakers. It explicitly includes sharing language with other Canadians.",
+      "Keep MNO and the separately attributed Métis National Council distinct; neither one language variety nor one initiative represents every Métis person."
+    ],
+    "inuit": [
+      "Pirurvik in Nunavut describes an Inuit-led intensive Inuktut programme for Inuit who grew up speaking English. Language work is interwoven with Inuit values, identity and an on-the-land course.",
+      "This is a contribution to continuing Inuit cultural life, not evidence that all Inuit lost their language or that every participant had the same historical experience."
+    ]
+  },
+  "protocols": {
+    "contribution-analysis": {
+      "codes": [
+        "A1.2"
+      ],
+      "contributorIds": [
+        "mt_gSBJxNBQh3"
+      ],
+      "resourceRefs": [
+        "prior-cases",
+        "prior-whole-protocol",
+        "nipissing",
+        "metis",
+        "inuit"
+      ],
+      "learnerActions": [
+        "Adult setup: provide the three concise attributed fact cards and the prior protocol’s introductory colonial/residential-school context. Supply original source labels, locations and the distinction between a programme’s aims and measured outcomes.",
+        "Retain the whole cultural-renewal operation: explain the historical disruption, identify a community-led initiative and explain the identity/belonging relationship without treating cultures as gone or assigning identical personal histories.",
+        "Analyse all three cases: who contributes knowledge/work, what language/cultural connection is being sustained or shared, and why this is a particular contribution to Canadian life. Compare the mechanisms—fluent-speaker intergenerational learning, Métis community/youth resources and sharing, and Inuit language/cultural immersion—rather than rank peoples or count achievements.",
+        "Connect each explanation to a concrete source fact. Distinguish source-described actions and purposes from an unsupported claim that every person’s wellbeing improved or all discrimination ended.",
+        "After withdrawing the answer chart, explain a second case as transfer and correct this original claim: “These are one programme for one Indigenous culture, and learning about it proves we can speak all the languages.”"
+      ],
+      "successConditions": [
+        "The response actually analyses a First Nation, Métis and Inuit contribution, not one case labelled as all peoples.",
+        "Specific source facts support the described contribution and identity/continuity relationship.",
+        "The complete historical-disruption/renewal/transfer operation remains accounted for; no language proficiency or universal outcome is inferred."
+      ],
+      "nearMisses": [
+        "Names three peoples without explaining any particular contribution.",
+        "Equates MNO with every Métis community or a Nunavut adult programme with a primary-school language test.",
+        "Describes only historical victimhood, or claims cultural continuity proves everyone had identical experiences."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "coverageBoundary": "A1.2 is source-fit authoring coverage, not learner attainment. A3.5 specific historical developments and whole A1 inclusiveness/identity analysis remain separately qualified; this association does not auto-promote them. Optional Native Languages programme exclusion does not exclude these mandatory Social Studies contributions."
+}
