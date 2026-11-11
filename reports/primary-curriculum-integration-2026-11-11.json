@@ -77,6 +77,11 @@
       "scope": "Actual resource/performance task bindings for40 retained OntarioLanguage residual positions; datasetunchanged",
       "head": "b7a46ad88ecd9c34d26636ddf6e3b17c5bee9b17",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/b7a46ad88ecd9c34d26636ddf6e3b17c5bee9b17"
+    },
+    {
+      "scope": "Complete46-record Ontario Grade6 SocialStudies source review;43Full3local-resourcePartial",
+      "head": "e96e31347d6966a9963a8c2eee68156bfd835712",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/e96e31347d6966a9963a8c2eee68156bfd835712"
     }
   ],
   "reviewedSourceScopes": {
@@ -140,22 +145,31 @@
       "dataChanges": 0,
       "otherHistoricalFullJudgmentsFreshlyRecertified": false,
       "learnerAttainmentInferred": false
+    },
+    "ontarioSocialGrade6": {
+      "sourceRecords": 46,
+      "FullAuthoring": 43,
+      "PartialLocalResourceBinding": 3,
+      "newKnowledgeClaims": 2,
+      "componentPairs": 92,
+      "review": "ontario-grade6-social-completion-review-2026-11-11.md",
+      "learnerAttainmentInferred": false
     }
   },
   "integrationCounts": {
     "topics": {
       "baseRows": 1858,
-      "mergedRows": 1908,
-      "newRows": 50,
-      "changedOldRows": 7,
+      "mergedRows": 1910,
+      "newRows": 52,
+      "changedOldRows": 8,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
     "teaching-research": {
       "baseRows": 1046,
-      "mergedRows": 1093,
-      "newRows": 47,
-      "changedOldRows": 4,
+      "mergedRows": 1095,
+      "newRows": 49,
+      "changedOldRows": 5,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": false,
       "explicitCanonicalOrder": "topicId.localeCompare(other.topicId, 'en')"
@@ -164,7 +178,7 @@
       "baseRows": 3994,
       "mergedRows": 4001,
       "newRows": 7,
-      "changedOldRows": 21,
+      "changedOldRows": 22,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
@@ -178,7 +192,7 @@
     },
     "contexts": {
       "exactReviewedContextAndCodeUnion": true,
-      "rows": 4963
+      "rows": 4980
     }
   },
   "sharedDependencyReconciliation": {
@@ -209,15 +223,15 @@
     "validation": "pass",
     "generatedCheck": "pass",
     "tests": {
-      "pass": 260,
+      "pass": 269,
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "Previously verified integration plus completeG5/Arts leaf deltas: all authored payloads by ID, stable topic/edge/cluster order and complete context/code union exact. Research retains declared canonical ordering; newNewFrance timestamps receive only explicit millisecond rendering. Catalogue/archive unchanged. Complete Kindergarten leaf adds one shared estimation operation/guide and its exact scoped components; old authored payloads, dependencies and source catalogue remain unchanged. Three deliberately reviewed age-six scoped associations affect generated compatibility starts only. The Language40 leaf changes only task/review evidence and adds source-duty regressions; all eight dataset artifacts remain byte-identical to the qualified Kindergarten target.",
+    "exactSourceUnion": "Previously verified integration plus completeG5/Arts leaf deltas: all authored payloads by ID, stable topic/edge/cluster order and complete context/code union exact. Research retains declared canonical ordering; newNewFrance timestamps receive only explicit millisecond rendering. Catalogue/archive unchanged. Complete Kindergarten leaf adds one shared estimation operation/guide and its exact scoped components; old authored payloads, dependencies and source catalogue remain unchanged. Three deliberately reviewed age-six scoped associations affect generated compatibility starts only. The Language40 leaf changes only task/review evidence and adds source-duty regressions; all eight dataset artifacts remain byte-identical to the qualified Kindergarten target. Grade6 adds the two reviewed fixed claims and guides, exact scoped union, one reviewed invasive-definition/guide correction and one independently reviewed hard-to-soft prerequisite correction; previous integration payloads otherwise remain exact.",
     "reviewCorrection": "Nested French binding reports, protocols and individual resource targets are resolved, supporting object and array collections. Missing report/protocol/resource, empty resource lists and inherited-object keys fail; all curriculum/research data unchanged."
   },
   "remainingWork": [
-    "Ontario Grade6 SocialStudies46 and Health/PE267 remain under whole programme qualification (313 records); Kindergarten127 is reviewed with seven explicit local-resource Partials.",
+    "Ontario Health/PE267 remains under whole programme qualification; Grade6Social46 is reviewed with three explicit local-resource Partials and Kindergarten127 with seven. Earlier own-local conditions are receiving a consistency audit.",
     "Actual task/resource duties from prior Science233 Partial reviews still require completion; Language40 now has actual cultural/resource and keyboard task bindings, retaining delivery/performance conditions and historical-review limits.",
     "Explicit language/script/artform/localcommunity/chronology/source-meaning conditions remain; sourceFullauthoring is not learnerattainment or comparative teachingefficacy.",
     "Defaultbranch review/acceptance and downstream consumer/writer/fleet qualification plus freshprotectedstate-preserving publication remain separate."

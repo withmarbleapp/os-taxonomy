@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "c1530e6950ed431ac25244440ac264691af0da04e7ba859280df1287cd7198cd",
-  "recordCount": 1093,
+  "topicFileSha256": "b485e47127fcbd3f079d75e5f03f4360fac1d3525c930c4943c0010acd4530f2",
+  "recordCount": 1095,
   "coverage": {
-    "topicCount": 1908,
-    "withResearch": 1093,
+    "topicCount": 1910,
+    "withResearch": 1095,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,13 +20,13 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 32,
-        "withResearch": 10,
+        "topics": 33,
+        "withResearch": 11,
         "withoutResearch": 22
       },
       "History": {
-        "topics": 117,
-        "withResearch": 7,
+        "topics": 118,
+        "withResearch": 8,
         "withoutResearch": 110
       },
       "Learning to Learn": {
@@ -58580,7 +58580,7 @@
             "title": "Sort and match: native, non-native, invasive",
             "feedback": [
               "If a learner labels any non-native animal 'invasive', remind them harm and spread are required, not just being from elsewhere.",
-              "If a learner calls a native wasp or fierce native predator 'invasive', point out a native species cannot be invasive however dangerous it is.",
+              "If a learner calls a native wasp or fierce native predator 'invasive', point out a species native to this receiving environment is not an introduced invasive merely because it is dangerous; being native elsewhere in the same country is a different question.",
               "If a learner labels the climate-driven bird 'invasive', contrast natural range shift with human introduction. Under the definition used here, the human role and the harm are what define the term."
             ],
             "rationale": "Categorisation and matching can assess the distinctions and surface misconceptions such as 'any non-native = invasive' and 'they invaded on purpose'. Sorting consolidates and checks the category distinctions but does not itself display the population dynamics, so it works best alongside the simulation.",
@@ -58616,7 +58616,7 @@
           "Distinguish 'non-native' from 'invasive': an introduced species becomes invasive only when it spreads AND causes harm.",
           "Distinguish human introduction (trade, pets, stowaways/ballast water) from a species naturally expanding its range; both the human role and the harm are part of the definition.",
           "Locate the cause of harm in the new environment (no predators/parasites/competitors to keep the species in check, plus specific advantages like disease), not in the invader being inherently 'stronger', 'better', or 'evil'.",
-          "Native species cannot be invasive, however much of a pest or however dangerous they are.",
+          "A species native to the receiving environment is not an introduced invasive merely because it is a pest or dangerous; a species native to another part of the country may be introduced outside its historical range and cause harm.",
           "Biological control is not a guaranteed safe fix — a released control species can itself become a worse invasive (cane toad example).",
           "Sort/match tasks assess the category distinctions but do not by themselves make the population dynamics visible; pair them with the simulation.",
           "Before/after diagrams and comparison cards are fixed representations: they can illustrate the harm but cannot be manipulated to test 'what if the predators were present', which is the observable affordance the simulation adds; this is not a claim that other media cannot teach the concept.",
@@ -58629,7 +58629,8 @@
           "Whether 'release from natural control' is the single dominant cause or one contributor alongside competition and disease is not independently established; the lead activity's insight now frames enemy-release as the primary mechanism the simulation demonstrates while naming competition and disease as case-specific additions.",
           "Squirrelpox being deadly to red squirrels but not grey squirrels, and cane toads being introduced to control beetles, are drawn from the source examples; biological/epidemiological specifics were not re-verified here.",
           "The diagnostic 'correctAnswer' notes squirrelpox is deadly to reds but not greys and that greys also outcompete reds for food; these align with the source claims but remain unverified.",
-          "Efficacy comparisons between the simulation and other media are presented as proposed/intended wording because no empirical effectiveness evidence was supplied."
+          "Efficacy comparisons between the simulation and other media are presented as proposed/intended wording because no empirical effectiveness evidence was supplied.",
+          "2026-11-11 factual clarification: the receiving natural/historical range and harm condition were checked against the actual Fisheries and Oceans Canada definition. Earlier example-specific mechanisms and teaching efficacy remain inherited/unverified; no other sources are newly certified. Original provenance is retained."
         ],
         "schemaVersion": 2
       },
@@ -58655,7 +58656,7 @@
           {
             "kind": "misconception",
             "pattern": "Any animal that's a pest or dangerous is an invasive species",
-            "nextMove": "Define invasive precisely — non-native AND introduced by humans AND causing harm; a native pest is not invasive.",
+            "nextMove": "Define invasive precisely — non-native AND introduced by humans AND causing harm; a pest native to the receiving environment is not an introduced invasive; being native elsewhere in the country does not settle its status here.",
             "distractor": null,
             "revealedBy": "Calls a native wasp or a fierce native predator 'invasive'.",
             "reteachPrerequisiteId": null
@@ -58705,6 +58706,12 @@
           "claim": "Grey squirrels outcompete UK red squirrels and carry squirrelpox; cane toads introduced to Australia poison native predators; these are canonical invasive-species cases.",
           "source": "UK/Australia conservation references on grey squirrels and cane toads",
           "verified": false
+        },
+        {
+          "source": "Fisheries and Oceans Canada, About aquatic invasive species",
+          "url": "https://www.dfo-mpo.gc.ca/species-especes/ais-eae/about-sur/index-eng.html",
+          "claim": "The actual definition requires introduction outside the natural or past distribution and significant negative impacts, and explicitly includes species native to one part of Canada introduced outside their historical range elsewhere. Non-native alone is insufficient; national borders are not the receiving ecological range.",
+          "verified": true
         }
       ],
       "confidence": "high",
@@ -71417,6 +71424,180 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "topicId": "mt_eDaSAl6DwW",
+      "pedagogy": {
+        "summary": "Teach the geographic reference/degree/direction convention as one shared representational claim, with active location and read-back across maps/globes. Cartesian coordinates, grid cells and hemisphere naming support comparison but do not supply this convention.",
+        "bestPractices": [
+          "Name latitude/longitude and the zero references before using values.",
+          "Use contrasts holding one field fixed and then change the representation.",
+          "State the supplied coordinate convention and precision; avoid an unlabelled universal tuple order."
+        ],
+        "keyRepresentations": [
+          "Original read/blank labelled geographic graticules and coordinate key",
+          "A labelled globe or alternate reference-aware map",
+          "One source-backed named-place approximation on a suitably detailed inset"
+        ],
+        "commonMisconceptions": [
+          "Latitude is east/west because its lines run that way.",
+          "Every coordinate pair is x-first and can be swapped into the same place.",
+          "The same numbers with different N/S/E/W labels identify the same location.",
+          "Equal-looking flat-grid spaces mean equal ground distances."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use both geographic references to read and locate positions, then transfer at the stated precision across representations.",
+        "activities": [
+          {
+            "title": "Read the two geographical references",
+            "intendedInsight": "Latitude and longitude identify a geographic position using different reference circles and named values; they are not interchangeable map-cell labels or a universal x-first tuple.",
+            "learnerActions": [
+              "Adult setup: provide the original reading grid and labelled globe/reference representation. State each field and the map’s resolution. Explain the Equator/zero-latitude and stated zero-longitude reference; no branded app/account is required. Original grids and answer key are in reports/geographic-coordinate-claim-review-2026-11-11.json#/concreteTasks.",
+              "Read A, B and C from the original grid. Explain why A and B share longitude but differ north/south, while A and C share latitude but differ east/west. Identify D on both zero references without inventing a N/S or E/W side at zero.",
+              "On a globe, trace a parallel and a meridian. Explain that parallels run around Earth east–west while their values measure north/south; meridians run toward the poles while values measure east/west. A physical page-up is not the reference."
+            ],
+            "feedback": [
+              "If the learner follows a Cartesian x-first mnemonic, point to the actual named latitude/longitude fields and reference lines; neither subject’s convention is inherently wrong.",
+              "If the zero point is assigned an arbitrary hemisphere, locate it on the actual reference lines."
+            ],
+            "rationale": "Paired contrasts isolate each coordinate’s meaning rather than reward memorisation of one pixel or hemisphere word. Teaching efficacy remains untested.",
+            "sourceClaims": [
+              "The actual body defines latitude from the Equator, north/south degree values up to the poles and the distinction between the direction a parallel runs and the direction it measures. Advanced precision/geodesy is outside this task.",
+              "The actual body defines east/west longitude from a stated zero meridian, meridians meeting at the poles and Greenwich/reference-meridian distinctions. The task does not equate a flat-grid spacing with ground distance or the historic Greenwich marker with exact modern GPS zero."
+            ]
+          },
+          {
+            "title": "Place, read back and check an actual named-place approximation",
+            "intendedInsight": "Both references and their supplied precision are needed to locate a position; place recall alone cannot substitute for coordinate use.",
+            "learnerActions": [
+              "Use the blank grid for targets P(latitude 60°N,longitude 60°E),Q(latitude 30°S,longitude 120°W) andR(latitude 0°,longitude 90°E). Mark each intersection, label the fields and read it back; explain why a wrong hemisphere changes the position.",
+              "Use the NASA source’s Pasadena, United States example. Adult supplies its explicitly rounded approximate pair(latitude 34°N,longitude 118°W) on a suitable labelled local inset/atlas; locate the approximate city-region intersection, not a claimed street/building survey point. The exact NASA source values are 34°08′44″N,118°08′41″W; pupils need not convert minutes/seconds.",
+              "Give a new marked point and read both named coordinates at the representation’s stated resolution. Check an answer with the two fields exchanged or one directional label changed; explain which reference would be violated."
+            ],
+            "feedback": [
+              "If one reference only is used, show that an entire parallel or meridian contains many possible positions.",
+              "If a rounded location is treated as an exact city boundary, restate the supplied resolution and geographic extent."
+            ],
+            "rationale": "Active placement and read-back test both translation directions. A real named-place approximation tests application beyond invented grid labels without requiring a country inventory.",
+            "sourceClaims": [
+              "The actual body defines latitude from the Equator, north/south degree values up to the poles and the distinction between the direction a parallel runs and the direction it measures. Advanced precision/geodesy is outside this task.",
+              "The actual body defines east/west longitude from a stated zero meridian, meridians meeting at the poles and Greenwich/reference-meridian distinctions. The task does not equate a flat-grid spacing with ground distance or the historic Greenwich marker with exact modern GPS zero.",
+              "The actual Terrestrial Coordinates section explains the latitude/longitude references and gives the Pasadena example 34°08′44″N,118°08′41″W. The task uses an explicitly approximate whole-degree location; timekeeping, orbital and survey calculations are excluded."
+            ]
+          },
+          {
+            "title": "Keep the location across representations",
+            "intendedInsight": "Geographic references remain meaningful when the physical page/model or display changes; one flat projection is not an equal-distance model of Earth.",
+            "learnerActions": [
+              "Use the same coordinates on a labelled globe and a second/turned map, retaining the labels/reference with the representation. Explain why moving the paper does not move the place to another hemisphere.",
+              "Compare the flat teaching graticule with a globe: meridians meet at the poles even though the flat-grid drawing keeps them apart. Do not read equal centimetres on that drawing as equal ground distances.",
+              "Use a fresh coordinate pair with an explicitly stated field order. Some data formats state longitude first, so use the labels/convention actually supplied rather than teach a universal first-number rule."
+            ],
+            "feedback": [
+              "If north follows physical page-up, find the Equator/poles and the map’s actual orientation reference.",
+              "If a format’s fields are swapped, re-read their names instead of treating every ordered pair as the same coordinate system."
+            ],
+            "rationale": "Changed representations and field conventions distinguish reference-based geographical interpretation from memorised diagram layout or automatic transfer of another representation.",
+            "sourceClaims": [
+              "The actual body defines latitude from the Equator, north/south degree values up to the poles and the distinction between the direction a parallel runs and the direction it measures. Advanced precision/geodesy is outside this task.",
+              "The actual body defines east/west longitude from a stated zero meridian, meridians meeting at the poles and Greenwich/reference-meridian distinctions. The task does not equate a flat-grid spacing with ground distance or the historic Greenwich marker with exact modern GPS zero.",
+              "The actual activity overview treats latitude/longitude plotting and reading as a map-coordinate activity with Equator and Prime Meridian references. This is supporting task-design context, not evidence of this new sequence’s teaching efficacy."
+            ]
+          }
+        ],
+        "constraints": [
+          "One shared geographic representation, not a Canadian-only, grade-specific or degree-range clone. Values and supplied resolution vary within the same operation.",
+          "No full country/capital inventory, time-zone conversion, distance calculation, DMS conversion, surveying or geodetic-datum mathematics is required.",
+          "The diagram is an original flat teaching graticule without country/city data; it is not a physical equal-distance Earth model. Actual city coordinates require an attributed source and suitable resolution.",
+          "Do not require a child’s home coordinates or private location. Use supplied public places or hypothetical teaching points.",
+          "No prerequisite edges or prior learner mastery are assumed; complete Cartesian plotting or compass-bearing inventories are not silently imported."
+        ],
+        "reviewNotes": [
+          "Original source-checked factual/reference design and untested teaching proposal; low confidence concerns teaching efficacy. No learner attainment or cross-topic mastery transfer is claimed.",
+          "NOAA latitude/longitude main bodies and NASA Terrestrial Coordinates section were read. Advanced geodesy/timekeeping facts are not imported. The original reading grid was rendered and visually inspected against its exact coordinate key."
+        ]
+      },
+      "assess": {
+        "method": "interpret_translate",
+        "diagnosticPrompt": "On a labelled map or globe, can {{name}} locate a place from its latitude and longitude and read the two coordinates of another point? Contrast north with south and east with west, then try a changed view: do they retain the geographic references and the supplied precision rather than swap the fields or use page-up?",
+        "correctAnswer": "Uses the Equator and stated zero meridian with correct degree/direction labels, places and reads both coordinates, explains the named-place approximation, and retains references across the new view/convention.",
+        "whatMakesItDiscriminate": "A/B and A/C hold one coordinate fixed while reversing the other hemisphere, ruling out one-number or hemisphere-guess strategies. Active placement plus read-back distinguish two-way interpretation from copying. A changed view/labelled convention separates geographic reference understanding from page-up, pixel recall or unexamined Cartesian field order.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Latitude/longitude or their N/S/E/W references are interchanged",
+            "revealedBy": "Reads A using the longitude value as latitude or follows the visible line direction instead of the quantity measured",
+            "nextMove": "Name each field and trace its zero reference; compare A/B then A/C while holding one value fixed.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "One correct field but wrong hemisphere or supplied resolution",
+            "revealedBy": "Puts A at B/C or claims a rounded city-region point is a precise address",
+            "nextMove": "Read both directional labels and state the available resolution before marking; use the contrasting point to check.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Page-up or equal-looking grid intervals define geography",
+            "revealedBy": "Changes a point’s hemisphere when the map turns or infers equal ground distances from the flat grid",
+            "nextMove": "Retain the map/globe references and compare converging meridians on the globe with the flat representation.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What does each named coordinate measure, and from which zero reference?",
+          "How do A/B and A/C differ even though one value stays the same?",
+          "Where does this source-backed approximate place belong, and how precise is the supplied pair?",
+          "What stays the same when we use a new view or a differently ordered labelled format?"
+        ],
+        "responseLevels": {
+          "gap": "Cannot coordinate the two geographic references or substitutes a grid-cell/Cartesian/page-up rule.",
+          "partial": "Uses one familiar view or one field correctly but swaps references, loses hemisphere labels or overstates precision.",
+          "full": "Locates and reads positions from both named geographic references, handles contrasts/zero and supplied approximation, and transfers across representations with justified limits."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "source": "NOAA National Ocean Service, What is latitude?",
+          "url": "https://oceanservice.noaa.gov/facts/latitude.html",
+          "claim": "The actual body defines latitude from the Equator, north/south degree values up to the poles and the distinction between the direction a parallel runs and the direction it measures. Advanced precision/geodesy is outside this task.",
+          "verified": true
+        },
+        {
+          "source": "NOAA National Ocean Service, What is longitude?",
+          "url": "https://oceanservice.noaa.gov/facts/longitude.html",
+          "claim": "The actual body defines east/west longitude from a stated zero meridian, meridians meeting at the poles and Greenwich/reference-meridian distinctions. The task does not equate a flat-grid spacing with ground distance or the historic Greenwich marker with exact modern GPS zero.",
+          "verified": true
+        },
+        {
+          "source": "NASA, Basics of Space Flight, Chapter 2: Terrestrial Coordinates",
+          "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+          "claim": "The actual Terrestrial Coordinates section explains the latitude/longitude references and gives the Pasadena example 34°08′44″N,118°08′41″W. The task uses an explicitly approximate whole-degree location; timekeeping, orbital and survey calculations are excluded.",
+          "verified": true
+        },
+        {
+          "source": "JOIDES Resolution/US Science Support Program, Where in the World?",
+          "url": "https://joidesresolution.org/activities/where-in-the-world/",
+          "claim": "The actual activity overview treats latitude/longitude plotting and reading as a map-coordinate activity with Equator and Prime Meridian references. This is supporting task-design context, not evidence of this new sequence’s teaching efficacy.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original geographic-coordinate reference/task design; teaching efficacy untested",
+        "createdAt": "2026-11-11T03:31:05.000Z",
+        "updatedAt": "2026-11-11T03:31:05.000Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
       }
     },
     {
@@ -150429,6 +150610,203 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-23T14:03:28.392Z",
         "updatedAt": "2026-10-19T15:21:08.886Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_pmd6Cp2r5p",
+      "pedagogy": {
+        "summary": "Learn one bounded Jewish Canadian repertoire through specific exclusion, community action, contributions and post-war rights relationships.",
+        "bestPractices": [
+          "Keep named people, communities, institutions, places and dates distinct.",
+          "Teach Jewish agency and contributions alongside persecution; no identity disclosure or perpetrator role-play.",
+          "Use original non-graphic attributed summaries and accurate chronology rather than stereotypes or one universal experience."
+        ],
+        "keyRepresentations": [
+          "Dated place/case sequence",
+          "Barrier→action→contribution/change",
+          "International principle→distinct Canadian protection, with limits"
+        ],
+        "commonMisconceptions": [
+          "Every Jewish Canadian had the same experience.",
+          "Rights are rewards for community achievement.",
+          "All St. Louis passengers died or the ship docked in Canada.",
+          "The 1948 declaration instantly ended discrimination or is identical to the Charter."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Retain and explain the learned factual relationships, then challenge changed historical claims with source-bound facts.",
+        "activities": [
+          {
+            "title": "Learn the political and community-care cases",
+            "intendedInsight": "Particular people and institutions acted against exclusion and contributed to Canadian life; a general respect rule is not the historical knowledge.",
+            "learnerActions": [
+              "Adult setup: supply the four original source-attributed prepared cases and a simple dated place/timeline reference, with non-graphic background explaining antisemitism and the Holocaust. The actual original cases and fictional comparison are in reports/jewish-canadian-history-claim-review-2026-11-11.json#/preparedCases.",
+              "Read the Lower Canada and Toronto cases. Identify the exclusion, the named community response and the resulting contribution or change; explain why the hospital’s wider service did not make rights conditional on usefulness.",
+              "After putting away the answer chart, explain both cases and distinguish their places and periods."
+            ],
+            "feedback": [
+              "If the learner calls Lower Canada Ontario, return to the dated locator.",
+              "If the response only says be kind, ask who acted, what barrier existed and what changed."
+            ],
+            "rationale": "Specific recall plus causal explanation distinguishes historical repertoire from copying a moral slogan; teaching efficacy is untested.",
+            "sourceClaims": [
+              "The actual designation body documents Hart’s 1807 election and exclusion from the Lower Canada assembly, his sons’ petitions, and the 1832 civil/political-rights legislation. No claim that Lower Canada was Ontario or a universal first is imported.",
+              "The actual main body and archival attribution document Toronto Jewish women’s organising, the 1922 predecessor and 1923 Mount Sinai, exclusion of Jewish physicians and cultural/language care needs, and service open to all religions. Modern hospital counts and superlatives are excluded."
+            ]
+          },
+          {
+            "title": "Distinguish refusal, consequences and post-war response",
+            "intendedInsight": "Canadian policy, Nazi crimes, survivor lives and later rights developments are connected but distinct historical facts.",
+            "learnerActions": [
+              "Use the refugee-refusal and postwar-rights cases. Explain Canada’s own decision and consequences without claiming the ship reached Canada or every passenger died.",
+              "Build a short labelled sequence from 1939 refusal through 1948 international declaration to selected Canadian protections. Explain an influence rather than claim a single event caused every later law.",
+              "Explain one difference between the international declaration and a Canadian protection, and why later protection does not prove prejudice vanished.",
+              "Use the actual original fictional federal-service comparison in the postwar-rights case. Distinguish a general international principle from a possible applicable Canadian protection and complaint route; identify Commission complaint handling versus an independent tribunal’s possible remedy. Ask what changes if the service were a private local shop, without deciding a real case or guaranteeing an outcome."
+            ],
+            "feedback": [
+              "If Canada is described as the perpetrator of the European genocide, separate that crime from the Canadian refusal of refuge.",
+              "If every rights document is treated as identical, compare its date and stated scope using the prepared facts.",
+              "If the learner says the international declaration itself automatically awards compensation, compare the principle, applicable Canadian jurisdiction and separate complaint/tribunal roles."
+            ],
+            "rationale": "The selected contrasting accounts test bounded historical relationships and limits without requiring graphic content, ideological debate or current legal adjudication.",
+            "sourceClaims": [
+              "The actual curator-authored body documents antisemitism and restrictive refugee policy, the 1939 St. Louis refusal and consequences, and survivors’ post-war Canadian lives. The linked film was not viewed; no invented survivor testimony or graphic image is required.",
+              "The complete short main body identifies Canada’s refusal of St. Louis refugees, fatal consequences for some passengers after return to Europe and the subsequent settlement and contributions of Holocaust survivors in Canada. It does not say every passenger died or that the ship docked in Canada.",
+              "The actual historical UDHR section connects the 1948 declaration with the world wars and Holocaust and says its principles influenced Canadian law. This is an attributed retrospective ministerial account, not a claim that a declaration instantly became enforceable Canadian law or ended discrimination.",
+              "The complete main body explains international influence and the distinct 1960 Bill,1977 Human Rights Act and1982 Charter/1985 equality provisions; it describes federal complaint handling and the independent tribunal’s remedy role, distinct from provincial/territorial everyday settings. These mechanisms do not prove discrimination ended or every allegation is automatically a legal violation.",
+              "The actual current section3 main body names religion among prohibited discrimination grounds. It is used only to check the fictional religious-denial example, not to certify an actual complaint or add a complete legal inventory."
+            ]
+          },
+          {
+            "title": "Check a changed historical claim",
+            "intendedInsight": "Knowledge transfers to a fresh claim when the learner retains actors, chronology and the limits of a supported connection.",
+            "learnerActions": [
+              "Use this original claim: “Toronto’s hospital opened because the 1948 declaration had already removed every barrier, and only Jews could receive care there.” Identify the chronology and access errors using the learned case facts.",
+              "Use this claim: “Because some refused refugees survived, Canada’s refusal had no serious consequences.” Explain why the conclusion does not follow from the studied evidence.",
+              "Use this claim: “The 1948 declaration influenced later protections, so all private disagreements are automatically Charter violations.” Distinguish the historical influence from the overbroad legal conclusion."
+            ],
+            "feedback": [
+              "Ask for the actual supporting fact rather than reward agreement with the adult.",
+              "If a claim goes beyond the packet, identify the missing evidence rather than invent an individual’s feelings or a legal ruling."
+            ],
+            "rationale": "Changed statements isolate historical understanding from memorising the four case headings.",
+            "sourceClaims": [
+              "The actual main body and archival attribution document Toronto Jewish women’s organising, the 1922 predecessor and 1923 Mount Sinai, exclusion of Jewish physicians and cultural/language care needs, and service open to all religions. Modern hospital counts and superlatives are excluded.",
+              "The complete short main body identifies Canada’s refusal of St. Louis refugees, fatal consequences for some passengers after return to Europe and the subsequent settlement and contributions of Holocaust survivors in Canada. It does not say every passenger died or that the ship docked in Canada.",
+              "The actual historical UDHR section connects the 1948 declaration with the world wars and Holocaust and says its principles influenced Canadian law. This is an attributed retrospective ministerial account, not a claim that a declaration instantly became enforceable Canadian law or ended discrimination.",
+              "The complete main body explains international influence and the distinct 1960 Bill,1977 Human Rights Act and1982 Charter/1985 equality provisions; it describes federal complaint handling and the independent tribunal’s remedy role, distinct from provincial/territorial everyday settings. These mechanisms do not prove discrimination ended or every allegation is automatically a legal violation."
+            ]
+          }
+        ],
+        "constraints": [
+          "Retain the Hart/Lower Canada, Toronto hospital, St. Louis and post-war-rights repertoire; additional supplied cases may support transfer but do not silently replace the learned knowledge.",
+          "No exhaustive Jewish religious practice, biography, legal statute or Holocaust chronology inventory is required.",
+          "No child must disclose religion, ancestry, family migration or trauma. Use the prepared public historical cases.",
+          "No graphic images, persecution simulation, identity ranking or requirement to forgive historical harm.",
+          "Actual learner attainment and teaching efficacy are not established by this authoring proposal."
+        ],
+        "reviewNotes": [
+          "Original source-fit historical task design, not a classroom intervention result. Primary institutional/community accounts and a curator-authored historical synthesis were read; linked films and archival photographs are not claimed as viewed.",
+          "UN historical pages returned access errors; the actual Global Affairs historical section and Canadian Heritage protection body support the selected international influence, with their institutional/retrospective perspective explicit."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Can {{name}} explain what changed in the Hart and Toronto hospital cases, how Canada responded to the St. Louis refugees, and how post-war human-rights efforts influenced later Canadian protection? Try a new claim: do they keep the dates, places and limits clear without saying rights were earned or discrimination disappeared?",
+        "whatMakesItDiscriminate": "Uncued recall of particular actors/places plus explanations across the political, care, refuge and rights cases distinguish learned historical knowledge from generic anti-prejudice vocabulary; changed inaccurate claims reveal chronology, scope and causal overgeneralisation without testing a new legal inventory.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Generic kindness replaces historical knowledge",
+            "revealedBy": "Cannot identify the studied barrier, actor or change in either early case",
+            "nextMove": "Rebuild a named case sequence, then remove the chart and explain the specific relationship.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "One undifferentiated persecution or progress story",
+            "revealedBy": "Says all passengers died, Canada committed the Nazi genocide, or later law removed all prejudice",
+            "nextMove": "Separate actors and dates and compare the actual bounded outcomes in the prepared cases.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Rights are earned or every rights document has identical legal reach",
+            "revealedBy": "Makes hospital contribution a prerequisite for rights or treats every private dispute as a Charter violation",
+            "nextMove": "Contrast universal dignity with the historical case contribution; reread the stated purpose/scope of the selected protections.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What exclusion, action and change do the Hart and hospital cases actually document?",
+          "What did Canada decide in 1939, and what happened to different passengers afterward?",
+          "How do international post-war efforts relate to later Canadian protections, and how could an applicable complaint route respond to the fictional federal-service denial without guaranteeing a legal outcome?",
+          "Which facts support or refute this changed historical claim, and what remains unknown?"
+        ],
+        "responseLevels": {
+          "gap": "Cannot identify the studied historical relationships or substitutes a generic moral slogan.",
+          "partial": "Recalls some facts but confuses place/period/actors, omits community contribution or overstates legal/progress consequences.",
+          "full": "Retains and explains the bounded repertoire, particular exclusions/actions/contributions and post-war influence, and challenges a fresh claim with correct limits."
+        },
+        "poeTask": null,
+        "correctAnswer": "Hart’s Lower Canada case shows religious exclusion from office and family petitions linked to later legal change; Toronto Mount Sinai shows Jewish community organizing for care and professional opportunity while serving people of all religions. Canada refused the St. Louis refugees in 1939; some later died in the Holocaust and others survived. Post-war international efforts, including the 1948 declaration, influenced later Canadian protections, but the documents have different scopes and discrimination did not disappear. In the fictional federal-service case, an applicable Canadian protection/Commission complaint route may be relevant; a separate tribunal can order remedies in cases referred to it. An allegation does not guarantee a remedy, and a private-shop example requires checking the appropriate jurisdiction. Rights are not earned by contributions."
+      },
+      "sources": [
+        {
+          "source": "Parks Canada, Ezekiel Hart National Historic Person",
+          "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=1359",
+          "claim": "The actual designation body documents Hart’s 1807 election and exclusion from the Lower Canada assembly, his sons’ petitions, and the 1832 civil/political-rights legislation. No claim that Lower Canada was Ontario or a universal first is imported.",
+          "verified": true
+        },
+        {
+          "source": "Ontario Jewish Archives educational project, Mount Sinai Hospital",
+          "url": "https://www.beingjewishinontario.org/mount-sinai-hospital/",
+          "claim": "The actual main body and archival attribution document Toronto Jewish women’s organising, the 1922 predecessor and 1923 Mount Sinai, exclusion of Jewish physicians and cultural/language care needs, and service open to all religions. Modern hospital counts and superlatives are excluded.",
+          "verified": true
+        },
+        {
+          "source": "Canadian Museum for Human Rights, Canada, antisemitism and the Holocaust",
+          "url": "https://humanrights.ca/story/canada-antisemitism-and-holocaust",
+          "claim": "The actual curator-authored body documents antisemitism and restrictive refugee policy, the 1939 St. Louis refusal and consequences, and survivors’ post-war Canadian lives. The linked film was not viewed; no invented survivor testimony or graphic image is required.",
+          "verified": true
+        },
+        {
+          "source": "Canadian Heritage, History of Canada and the Holocaust",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/canada-holocaust/history.html",
+          "claim": "The complete short main body identifies Canada’s refusal of St. Louis refugees, fatal consequences for some passengers after return to Europe and the subsequent settlement and contributions of Holocaust survivors in Canada. It does not say every passenger died or that the ship docked in Canada.",
+          "verified": true
+        },
+        {
+          "source": "Global Affairs Canada, Foreign Affairs Minister’s address, 10 December 2018",
+          "url": "https://www.canada.ca/en/global-affairs/news/2018/12/address-by-foreign-affairs-minister-at-the-top-25-women-of-influence-luncheon.html",
+          "claim": "The actual historical UDHR section connects the 1948 declaration with the world wars and Holocaust and says its principles influenced Canadian law. This is an attributed retrospective ministerial account, not a claim that a declaration instantly became enforceable Canadian law or ended discrimination.",
+          "verified": true
+        },
+        {
+          "source": "Canadian Heritage, How your rights are protected",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/how-rights-protected.html",
+          "claim": "The complete main body explains international influence and the distinct 1960 Bill,1977 Human Rights Act and1982 Charter/1985 equality provisions; it describes federal complaint handling and the independent tribunal’s remedy role, distinct from provincial/territorial everyday settings. These mechanisms do not prove discrimination ended or every allegation is automatically a legal violation.",
+          "verified": true
+        },
+        {
+          "source": "Justice Laws, Canadian Human Rights Act section3",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/h-6/section-3.html",
+          "claim": "The actual current section3 main body names religion among prohibited discrimination grounds. It is used only to check the fictional religious-denial example, not to certify an actual complaint or add a complete legal inventory.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original bounded historical source/task design; teaching efficacy untested",
+        "createdAt": "2026-11-11T04:11:57.000Z",
+        "updatedAt": "2026-11-11T04:11:57.000Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
