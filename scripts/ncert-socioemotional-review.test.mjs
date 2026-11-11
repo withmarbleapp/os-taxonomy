@@ -794,6 +794,8 @@ const input = {
 };
 const sorted = a => [...a].sort();
 const authored = t => Object.fromEntries(Object.entries(t).filter(([k]) => !['ageRangeStart','ageRangeEnd','standards'].includes(k)));
+const excludedExercisePlay = 'ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C4.4-LO01';
+expected[excludedExercisePlay]={...expected[excludedExercisePlay],topics:[],protocols:[],disposition:'OutOfScope'};
 function check(x) {
   const { report:r, protocols:p, topics:t, alignments:a, ledger:l }=x;
   const rows=r.records, byTopic=new Map(t.topics.map(q=>[q.id,q]));
@@ -823,7 +825,7 @@ function check(x) {
     for(const id of row.assessmentProtocols)assert(protocols.has(id),'protocol must resolve');
     if(row.disposition==='SkillWithContextualEngagement')assert(row.contextualRequirement,'retained contextual channel');
     const lr=ledger.get(row.key);assert(lr,'source key present in570 ledger');
-    assert.equal(lr.alignmentReviewStatus,'reviewed-in-this-slice');assert.equal(lr.disposition,row.disposition);
+    assert.equal(lr.alignmentReviewStatus,row.disposition==='OutOfScope'?'reviewed-out-of-scope':'reviewed-in-this-slice');assert.equal(lr.disposition,row.disposition);
     assert.deepEqual(sorted(lr.proposedTopicIds),sorted(e.topics));
     assert.deepEqual(sorted(lr.assessmentProtocols),sorted(e.protocols));
     for(const c of row.contributions){
@@ -832,9 +834,9 @@ function check(x) {
     }
     for(const q of a.alignments.filter(q=>q.standards.includes(row.key)))assert(q.scope==='jurisdiction'&&q.country==='IN'&&q.ageRangeStart===row.ageBand[0]&&q.ageRangeEnd===row.ageBand[1],'no invented alternative age/scope');
   }
-  assert.equal(pairs,110);assert.equal(contributing.size,33);
+  assert.equal(pairs,108);assert.equal(contributing.size,32);
   assert.equal(r.counts.records,46);assert.equal(r.counts.componentPairs,pairs);assert.equal(r.counts.reusedTopics,contributing.size);
-  assert.equal(r.counts.Full,36);assert.equal(r.counts.SkillWithContextualEngagement,10);
+  assert.equal(r.counts.Full,36);assert.equal(r.counts.SkillWithContextualEngagement,9);
   assert.equal(r.counts.newIndiaClaims,0);assert.equal(r.counts.newGuides,0);assert.equal(r.counts.dependencyChanges,0);
   for(const q of p.protocols)for(const id of q.includesProtocols??[])assert(protocols.has(id),'aggregate protocol resolution');
   assert.deepEqual(sorted(protocols.get('integrated-social-emotional').includesProtocols),sorted(['self-belonging','emotion-expression','regulation','peer-initiative','mutual-help','joint-play-work','rules-with-agency','kindness-care','living-care','respectful-differences']),'broad goal composes actual duties');

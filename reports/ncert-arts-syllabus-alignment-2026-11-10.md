@@ -1,5 +1,6 @@
 # NCERT Arts syllabus: all 56 shared-stage positions
 
+**Current scope correction (11 November):** Physical Education is excluded. The [current 49-key decision and 521-eligible summary](ncert-physical-education-exclusion-2026-11-11.json) and updated JSON ledger override the dated checkpoint counts and motor-card references below. The remainder of this narrative records historical review reasoning, not current active PE coverage or an instruction to publish withdrawn proposals.
 This proposal reviews the remaining 56 accepted Arts syllabus positions from the 2025 Foundational publication. They are nongraded outcomes shared across Balvatika and Grades 1–2, recorded once. The neighbouring grade-column suggested activities provide context and examples; they are not new mandatory per-grade expectations. Repeated or overlapping source positions remain identifiable without becoming duplicated mastery claims.
 
 Together with the first Arts88 proposal in #129, this accounts for all 144 accepted Arts positions. The cumulative proposed primary ledger becomes **538 reviewed out of 570**, leaving **32 The World Around Us records**. This is the selected NCERT baseline, not every Indian board or every possible source-language publication. These changes are proposals until accepted and are separate from downstream publication or learner attainment.

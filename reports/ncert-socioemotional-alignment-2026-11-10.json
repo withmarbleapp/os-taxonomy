@@ -6,16 +6,22 @@
   "counts": {
     "records": 46,
     "Full": 36,
-    "SkillWithContextualEngagement": 10,
-    "componentPairs": 110,
-    "reusedTopics": 33,
+    "SkillWithContextualEngagement": 9,
+    "componentPairs": 108,
+    "reusedTopics": 32,
     "newIndiaClaims": 0,
     "inheritedReviewedOntarioClaims": 3,
     "newGuides": 0,
-    "newContexts": 29,
-    "extendedContexts": 22,
     "changedContinuingPrompts": 2,
-    "dependencyChanges": 0
+    "dependencyChanges": 0,
+    "currentDispositions": {
+      "Full": 36,
+      "SkillWithContextualEngagement": 9,
+      "OutOfScope": 1
+    },
+    "excludedByUserScope": 1,
+    "eligibleRecords": 45,
+    "OutOfScope": 1
   },
   "records": [
     {
@@ -749,7 +755,7 @@
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C4.4-LO01",
-      "disposition": "SkillWithContextualEngagement",
+      "disposition": "OutOfScope",
       "sourceStatus": "suggestive-contextualisable-source-position",
       "ageBand": [
         6,
@@ -760,21 +766,8 @@
         "Grade 1"
       ],
       "selectedGradeView": "Grade 1",
-      "contributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "topicName": "Controlled locomotor movement",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_FwI7q7DSIx",
-          "topicName": "Taking Turns and Sharing",
-          "role": "component"
-        }
-      ],
-      "assessmentProtocols": [
-        "movement-play"
-      ],
+      "contributions": [],
+      "assessmentProtocols": [],
       "rationale": "Actual active play and complete controlled-movement assessment; fun is a contextual channel, not a demand to look happy.",
       "remainingConditions": [],
       "recordKind": "outcomePosition",
@@ -788,7 +781,9 @@
         "positiveFeelingRequiredForSkillPass": false,
         "componentLinksCertifyWholeMastery": false
       },
-      "contextualRequirement": "Retained source affect/engagement channel; not a new binary mastery claim or a demand for positive feelings. Actual skill/action checks remain required."
+      "contextualRequirement": "Retained source affect/engagement channel; not a new binary mastery claim or a demand for positive feelings. Actual skill/action checks remain required.",
+      "previousDisposition": "SkillWithContextualEngagement",
+      "exclusionReason": "Physical Education duty excluded by explicit user scope; not a missing claim or learner deficit."
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C4.4-LO02",
@@ -2388,5 +2383,10 @@
       "use": "Corroborates general care categories only. Linked lessons not evaluated; no Indian legal mandate, veterinary prescription or exact lesson efficacy claimed."
     }
   ],
-  "revisionSnapshotCompatibility": "Before/after revision cards retain inheritance-base compatibility fields; current derived ages and standards are generated from all scoped contexts. The authored revision is assessmentPrompt only."
+  "revisionSnapshotCompatibility": "Before/after revision cards retain inheritance-base compatibility fields; current derived ages and standards are generated from all scoped contexts. The authored revision is assessmentPrompt only.",
+  "scopeDecision": "User excludes Physical Education. Current record dispositions override dated full-scope review; all source identities remain catalogued. Fine-motor, sensory, health and genuine artistic operations remain in scope.",
+  "historicalProposalDelta": {
+    "newContexts": 29,
+    "extendedContexts": 22
+  }
 }

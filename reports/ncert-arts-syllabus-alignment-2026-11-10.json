@@ -6,21 +6,28 @@
   "sourceIdentity": "ncert-fs-2025, generated section/source-position identifiers; printed parent CG references and overlap metadata do not establish equivalence with formal framework competencies or distinct mastery skills.",
   "counts": {
     "records": 56,
-    "directComponentPairs": 108,
+    "directComponentPairs": 98,
     "conditionalPairs": 26,
-    "directTopics": 42,
+    "directTopics": 40,
     "newClaims": 1,
     "newEdges": 0,
-    "Full": 44,
+    "Full": 41,
     "ConditionalArtFormBinding": 7,
     "ContextualAffectiveRequirement": 1,
     "SkillWithContextualEngagement": 4,
     "newGuides": 1,
-    "reusedDirectTopics": 41,
+    "reusedDirectTopics": 39,
     "changedContinuingClaims": 0,
-    "newContexts": 15,
-    "extendedContexts": 27,
-    "derivedExistingAgeChanges": 14
+    "currentDispositions": {
+      "Full": 41,
+      "OutOfScope": 3,
+      "ConditionalArtFormBinding": 7,
+      "ContextualAffectiveRequirement": 1,
+      "SkillWithContextualEngagement": 4
+    },
+    "excludedByUserScope": 3,
+    "eligibleRecords": 53,
+    "OutOfScope": 3
   },
   "records": [
     {
@@ -58,16 +65,6 @@
       "ageMeaning": "Shared Foundational stage window; nongraded outcome once, selected primary view is not a per-grade deadline or a formal compulsory outcome list.",
       "contributions": [
         {
-          "topicId": "mt_k-UuT5CUZ4",
-          "topicName": "Controlled locomotor movement",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "topicName": "Balancing while still and moving",
-          "role": "component"
-        },
-        {
           "topicId": "mt_OTFABm2xdf",
           "topicName": "Rhythm in rhymes and songs",
           "role": "component"
@@ -77,7 +74,7 @@
       "assessmentProtocols": [
         "movement-and-sound-cues"
       ],
-      "sourceRequirementSummary": "Actually observe, recognise and reproduce a short body-movement sequence associated with contrasting heard sounds. Separate locomotor/balance/rhythm whole-card tasks remain present; merely following a new adult instruction is not the recall check.",
+      "sourceRequirementSummary": "Observe and recognise a short body sequence associated with heard cues, then recall and reproduce it. Retain actual sound-cued recall; broad locomotor/balance mastery is neither required nor inferred. Rhythm contributes a component in the supplied patterned-cue case, not every whole canonical criterion.",
       "taskPanel": "sound-cued-body-recall",
       "disposition": "Full",
       "taskConditions": {
@@ -245,32 +242,21 @@
         8
       ],
       "ageMeaning": "Shared Foundational stage window; nongraded outcome once, selected primary view is not a per-grade deadline or a formal compulsory outcome list.",
-      "contributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "topicName": "Controlled locomotor movement",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "topicName": "Balancing while still and moving",
-          "role": "component"
-        }
-      ],
+      "contributions": [],
       "conditionalContributions": [],
-      "assessmentProtocols": [
-        "movement-and-sound-cues"
-      ],
+      "assessmentProtocols": [],
       "sourceRequirementSummary": "Actual controlled travelling, transition and static/dynamic balance portfolio; source enhancement is not a fixed developmental ranking.",
       "taskPanel": "gross-motor-arts",
-      "disposition": "Full",
+      "disposition": "OutOfScope",
       "taskConditions": {
         "actualControlledLocomotorPatterns": true,
         "actualStaticAndDynamicBalance": true,
         "noImportedTimedNorm": true
       },
       "remainingConditions": [],
-      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification"
+      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification",
+      "previousDisposition": "Full",
+      "exclusionReason": "Physical Education duty excluded by explicit user scope; not a missing claim or learner deficit."
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG12-LO03",
@@ -645,42 +631,21 @@
         8
       ],
       "ageMeaning": "Shared Foundational stage window; nongraded outcome once, selected primary view is not a per-grade deadline or a formal compulsory outcome list.",
-      "contributions": [
-        {
-          "topicId": "mt_r-BgS-lqTe",
-          "topicName": "Giving and following instructions",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "topicName": "Controlled locomotor movement",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "topicName": "Balancing while still and moving",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_OTFABm2xdf",
-          "topicName": "Rhythm in rhymes and songs",
-          "role": "component"
-        }
-      ],
+      "contributions": [],
       "conditionalContributions": [],
-      "assessmentProtocols": [
-        "movement-and-sound-cues"
-      ],
+      "assessmentProtocols": [],
       "sourceRequirementSummary": "Actually coordinate body parts with given instructions and sound/movement cues. Complete travelling/balance/rhythm tasks retain their own checks; a verbal recital does not prove body coordination.",
       "taskPanel": "instruction-coordinated-movement",
-      "disposition": "Full",
+      "disposition": "OutOfScope",
       "taskConditions": {
         "actualBodyPartsCoordinatedWithInstructions": true,
         "actualSoundMovementCues": true,
         "wholeMovementBalanceRhythmSeparate": true
       },
       "remainingConditions": [],
-      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification"
+      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification",
+      "previousDisposition": "Full",
+      "exclusionReason": "Physical Education duty excluded by explicit user scope; not a missing claim or learner deficit."
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG13-LO03",
@@ -3473,32 +3438,21 @@
         8
       ],
       "ageMeaning": "Shared Foundational stage window; nongraded outcome once, selected primary view is not a per-grade deadline or a formal compulsory outcome list.",
-      "contributions": [
-        {
-          "topicId": "mt_k-UuT5CUZ4",
-          "topicName": "Controlled locomotor movement",
-          "role": "component"
-        },
-        {
-          "topicId": "mt_K8pUme6BWW",
-          "topicName": "Balancing while still and moving",
-          "role": "component"
-        }
-      ],
+      "contributions": [],
       "conditionalContributions": [],
-      "assessmentProtocols": [
-        "movement-and-sound-cues"
-      ],
+      "assessmentProtocols": [],
       "sourceRequirementSummary": "Actual controlled locomotor patterns and static/dynamic balance in a source-fit Arts task. No new sport-specific, age/difficulty clone or imported sixty-second quota.",
       "taskPanel": "gross-motor-arts",
-      "disposition": "Full",
+      "disposition": "OutOfScope",
       "taskConditions": {
         "actualControlledLocomotorPatterns": true,
         "actualStaticAndDynamicBalance": true,
         "noImportedTimedNorm": true
       },
       "remainingConditions": [],
-      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification"
+      "coverageStatus": "Proposed source-fit authoring coverage, not accepted main, learner observation or whole-topic mastery certification",
+      "previousDisposition": "Full",
+      "exclusionReason": "Physical Education duty excluded by explicit user scope; not a missing claim or learner deficit."
     },
     {
       "key": "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG9-CG10-LO08",
@@ -3683,5 +3637,11 @@
       "url": "https://www.nps.gov/teachers/classrooms/sound-intensity-and-loudness.htm",
       "role": "Actually read technical definition corroboration only; its high-school physics/health tasks and age bands are not imported."
     }
-  ]
+  ],
+  "scopeDecision": "User excludes Physical Education. Current record dispositions override dated full-scope review; all source identities remain catalogued. Fine-motor, sensory, health and genuine artistic operations remain in scope.",
+  "historicalProposalDelta": {
+    "newContexts": 15,
+    "extendedContexts": 27,
+    "derivedExistingAgeChanges": 14
+  }
 }

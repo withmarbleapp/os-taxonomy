@@ -2592,6 +2592,13 @@ const protocolConditions={
     "sourceStatusUnchanged": true
   }
 };
+// Explicit user scope removes PE duties without changing retained source panels.
+const excludedArts = new Set(['CG12-LO02','CG13-LO02','CG9-CG10-LO07'].map(code=>'ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-'+code));
+const withdrawnMotorIds = new Set(['mt_k-UuT5CUZ4','mt_K8pUme6BWW']);
+for(const e of expected){
+ if(excludedArts.has(e.key)){e.disposition='OutOfScope';e.assessmentProtocols=[];e.topicIds=[];e.conditionalTopicIds=[];}
+ else e.topicIds=e.topicIds.filter(id=>!withdrawnMotorIds.has(id));
+}
 const fields=["key", "disposition", "recordKind", "tableScope", "selectedGradeView", "requiredGradeBand", "parentOfficialCodes", "overlapRelation", "ageBand", "assessmentProtocols", "taskPanel", "taskConditions", "sourceInterpretation"];
 const project=x=>({...Object.fromEntries(fields.filter(k=>k in x).map(k=>[k,x[k]])),topicIds:x.contributions.map(c=>c.topicId),conditionalTopicIds:x.conditionalContributions.map(c=>c.topicId)});
 const state=()=>({report:read('reports/ncert-arts-syllabus-alignment-2026-11-10.json'),protocols:read('reports/ncert-arts-syllabus-protocols-2026-11-10.json'),ledger:read('reports/ncert-alignment-readiness-2026-11-10.json'),alignments:read('data/curriculum-alignments.json'),topics:read('data/topics.json'),research:read('data/teaching-research.json'),catalogue:read('data/curriculum-standards.json'),manifest:read('data/manifest.json')});
@@ -2605,14 +2612,14 @@ function verify(s){
   assert(known.has(r.key));assert.equal(r.recordKind,'syllabusLearningOutcome');assert.equal(r.requiredGradeBand,null);assert.deepEqual(r.tableScope,['Balvatika','Grade 1','Grade 2']);
   const b=bs.get(r.key);assert(b);for(const k of ['assessmentProtocols','taskPanel','taskConditions','tableScope','requiredGradeBand','selectedGradeView','ageBand'])assert.deepEqual(b[k],r[k],k+' source binding');assert.equal(b.sourceInterpretation,r.sourceInterpretation??null);
   for(const id of r.assessmentProtocols){assert(ps.has(id));assert(ps.get(id).sourcePanels.includes(r.taskPanel),'valid family with wrong source panel');}
-  const lr=s.ledger.records.find(x=>x.key===r.key);assert.equal(lr?.alignmentReviewStatus,'reviewed-arts-syllabus');assert.equal(lr.disposition,r.disposition);assert.deepEqual(lr.remainingConditions,r.remainingConditions);
+  const lr=s.ledger.records.find(x=>x.key===r.key);assert.equal(lr?.alignmentReviewStatus,r.disposition==='OutOfScope'?'reviewed-out-of-scope':'reviewed-arts-syllabus');assert.equal(lr.disposition,r.disposition);assert.deepEqual(lr.remainingConditions,r.remainingConditions);
   for(const c of r.contributions){assert.equal(c.role,'component');assert.equal(c.topicName,s.topics.topics.find(t=>t.id===c.topicId)?.name);const as=s.alignments.alignments.filter(a=>a.topicId===c.topicId&&a.scope==='jurisdiction'&&a.country==='IN'&&!a.region&&a.ageRangeStart===3&&a.ageRangeEnd===8);assert.equal(as.length,1);assert(as[0].standards.includes(r.key));const k=c.topicId+'|'+r.key;assert(!expectedPairs.has(k));expectedPairs.add(k);pairs++;}
   for(const c of r.conditionalContributions){conditional++;assert(!s.alignments.alignments.some(a=>a.country==='IN'&&a.topicId===c.topicId&&a.standards?.includes(r.key)),'form choice flattened into unconditional link');}
   if(r.disposition==='ConditionalArtFormBinding')assert(r.remainingConditions.length);
   if(r.disposition==='ContextualAffectiveRequirement')assert.equal(r.contributions.length,0);
  }
- const actual=new Set(s.alignments.alignments.flatMap(a=>a.country==='IN'?(a.standards??[]).filter(k=>keys.has(k)).map(k=>a.topicId+'|'+k):[]));assert.deepEqual(actual,expectedPairs);assert.equal(pairs,108);assert.equal(conditional,26);
- const counts={Full:44,SkillWithContextualEngagement:4,ConditionalArtFormBinding:7,ContextualAffectiveRequirement:1};for(const[k,n]of Object.entries(counts)){assert.equal(rs.filter(r=>r.disposition===k).length,n);assert.equal(s.report.counts[k],n);}
+ const actual=new Set(s.alignments.alignments.flatMap(a=>a.country==='IN'?(a.standards??[]).filter(k=>keys.has(k)).map(k=>a.topicId+'|'+k):[]));assert.deepEqual(actual,expectedPairs);assert.equal(pairs,98);assert.equal(conditional,26);
+ const counts={Full:41,OutOfScope:3,SkillWithContextualEngagement:4,ConditionalArtFormBinding:7,ContextualAffectiveRequirement:1};for(const[k,n]of Object.entries(counts)){assert.equal(rs.filter(r=>r.disposition===k).length,n);assert.equal(s.report.counts[k],n);}
  const g=s.research.records.find(g=>g.topicId==='mt_u-Cp7JuK9R');assert(g);assert.equal(g.assess.method,'two_tier');assert.equal(g.confidence,'low');assert(!g.learn.reviewNotes.some(x=>/TLS|truncation|retrieval/.test(x)));
  const reviewed=x=>x.alignmentReviewStatus.startsWith('reviewed');assert.equal(s.ledger.counts.alignmentReviewedHere,s.ledger.records.filter(reviewed).length);assert.equal(s.ledger.counts.notAlignmentReviewedHere,s.ledger.records.filter(r=>!reviewed(r)).length);
  for(const gr of s.ledger.groups){const rows=s.ledger.records.filter(r=>['source','stage','area','recordKind'].every(k=>r[k]===gr[k]));assert.equal(gr.reviewedHere,rows.filter(reviewed).length);assert.equal(gr.pendingHere,rows.filter(r=>!reviewed(r)).length);}
