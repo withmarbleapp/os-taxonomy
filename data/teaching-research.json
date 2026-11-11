@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "e9a520a8478bd39a833cf3699506729f77ba5ab228335a7488ece1a29bfb7bc3",
-  "recordCount": 1085,
+  "topicFileSha256": "d137ca76a78c588329a4e5b17ad4443caea07e909eb5c80bc91a6a376188f40b",
+  "recordCount": 1086,
   "coverage": {
-    "topicCount": 1900,
-    "withResearch": 1085,
+    "topicCount": 1901,
+    "withResearch": 1086,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -60,8 +60,8 @@
         "withoutResearch": 0
       },
       "Art & Design": {
-        "topics": 2,
-        "withResearch": 2,
+        "topics": 3,
+        "withResearch": 3,
         "withoutResearch": 0
       },
       "Performing Arts": {
@@ -219842,6 +219842,197 @@
         "originalResearchGeneratedBy": "Codex taxonomy curation",
         "createdAt": "2026-11-11T01:48:03.789Z",
         "updatedAt": "2026-11-11T01:48:03.789Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_-STxLMqeqF",
+      "pedagogy": {
+        "summary": "Make the intended colour change explicit, keep small physical samples and compare before/after adjustments. Teach through tested material relationships and changed targets rather than a universal recipe or a colour-name quiz.",
+        "bestPractices": [
+          "Prepare suitable safe paints and test their actual behaviour before the task.",
+          "Use small additions and retain before/after swatches so the effect of an adjustment is inspectable.",
+          "Distinguish a deliberate comparison from random exploration without treating exploration itself as failure.",
+          "Use the child’s available perceptual and motor access; exact matching, fixed grip, verbal fluency and naming are not gates."
+        ],
+        "keyRepresentations": [
+          "Actual paint mixtures and physical target swatches",
+          "Before/after sample pair",
+          "Small palette/material record",
+          "Declared artist-colour wheel where a source duty requires that representation"
+        ],
+        "commonMisconceptions": [
+          "Choosing a premixed pot is the same as mixing.",
+          "Every random mixture must count as the intended result.",
+          "One fixed ratio guarantees the same result for every pigment.",
+          "Light-filter behaviour and physical paint mixing are interchangeable.",
+          "A correct colour name proves the material operation."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Choose and test an actual mixture, compare it with the intention, adjust deliberately and transfer to another target/material. Source-specific colour relationships remain explicit additional tasks.",
+        "activities": [
+          {
+            "title": "Choose, test and compare a mixture",
+            "intendedInsight": "A chosen mixture can be compared with its intended outcome, rather than every accidental result becoming success.",
+            "learnerActions": [
+              "Use safe washable paint and a prepared physical target swatch made with the available palette. Choose two suitable colours, predict or indicate a change, mix a small sample and place its swatch beside the target.",
+              "Keep the first sample so the comparison can refer to an actual visible result. Describe or point to a relevant difference without requiring a colour-name vocabulary test."
+            ],
+            "feedback": [
+              "If the learner simply takes a premixed matching pot, acknowledge successful selection but return to a target requiring an actual mixture.",
+              "If every random sample is declared the target, ask the learner to indicate the intended difference before changing the mixture."
+            ],
+            "rationale": "Intent, actual sampling and comparison distinguish purposeful physical colour mixing from a lucky match or expressive composition with premixed colours.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Make one purposeful adjustment",
+            "intendedInsight": "Changing what is added can change the mixture in a chosen direction; the actual sample checks the prediction.",
+            "learnerActions": [
+              "From the first sample, choose a small addition likely to move the mixture towards the target with these tested materials. Mix, make a second swatch and compare the two attempts.",
+              "For a concrete hue case, use a green-forming blue/yellow paint pair tested during adult preparation. Compare a more yellow-green and a more blue-green sample. The learner chooses the relevant adjustment; no universal ratio is prescribed.",
+              "For a concrete value case, retain a colour sample, add a small amount of white to a new portion and compare the lighter result. A separately prepared darker variant can use a small black addition when suitable for the materials."
+            ],
+            "feedback": [
+              "If a large addition overwhelms the mixture, compare it with the retained first sample and try a small amount in a new portion; do not demand an exact return recipe.",
+              "If the mixture goes away from the target, use that as information: identify which addition changed it and choose a different small test rather than label all exploration wrong.",
+              "If the target is not distinguishable through the learner’s available visual access, adapt the task and record that limit; do not infer a mixing misconception from a vision barrier."
+            ],
+            "rationale": "The direction of the intervention and the actual before/after comparison expose reasoning that a one-off recipe or accidental result does not.",
+            "sourceClaims": [
+              "The museum activity uses a limited physical paint palette, compares changes when amounts vary and explores mixtures with white or black; it supplies an actual material practice reference, not tested efficacy of this new diagnostic."
+            ]
+          },
+          {
+            "title": "Transfer to a different target and material",
+            "intendedInsight": "Observed relationships can guide a new mixture, while a changed paint material may require fresh testing.",
+            "learnerActions": [
+              "Choose a second target that cannot be met by repeating the first mixture unchanged, such as a lighter related colour or a changed hue. Make a prediction, test and deliberately adjust again.",
+              "With a different suitable safe paint set or a different prepared paint consistency, try a small sample before relying on the old mixture. Record or show what stays similar and what changes.",
+              "Use a small sample record with the paints/materials and arrows or actual swatches; writing numerical ratios is optional, not a hard prerequisite."
+            ],
+            "feedback": [
+              "If the child repeats a memorised amount despite a visibly different target, return to the sample comparison and ask what now needs to change.",
+              "If different pigments make a muddier result, investigate the actual samples rather than tell the child the idealised colour wheel guarantees an exact mixture."
+            ],
+            "rationale": "Changed targets and materials separate a transferable mixing/adjustment operation from one learnt recipe.",
+            "sourceClaims": [
+              "The elementary lesson includes observed colour relationships and prediction from experiments, with a warning that pigments can differ from idealised colour examples. Its tissue/filter activities are not treated as equivalent to actual paint mixing."
+            ]
+          },
+          {
+            "title": "Keep source-specific colour knowledge separate",
+            "intendedInsight": "A successful mixing procedure does not automatically establish every named colour-wheel or design relationship.",
+            "learnerActions": [
+              "For the applicable Ontario grade panel, actually explore the required primary/secondary mixture, tint/shade/value, complementary neutralisation or tertiary/colour-wheel relationships with the safe prepared palette. Use the declared artist-colour model and compare actual samples.",
+              "Keep hue/value/mutedness and colour relationships distinct from a universal colour-to-emotion rule. A source task involving a complementary pair must demonstrate that relationship, not only repeat the basic green-mixing diagnostic.",
+              "Apply a chosen mixture in an own visual composition when the source requires art making; this is checked alongside, not substituted for, deliberate mixing."
+            ],
+            "feedback": [
+              "If correct basic mixing is offered as proof of all advanced terminology or wheel knowledge, retain the real basic success and check the missing source task separately.",
+              "If the child recites names but cannot make or use the relevant mixtures, return to the material samples and intended comparison."
+            ],
+            "rationale": "The formal curriculum includes actual grade-specific relationships beyond the shared operation. These duties need their own tasks without proliferating grade or recipe clones.",
+            "sourceClaims": [
+              "The selected primary source explicitly includes physical paint mixtures and further colour relationships; source-specific grade knowledge is retained in separate protocols rather than inferred from one basic mixture."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use suitable non-toxic washable paints and prepared adult support; no industrial pigment, solvent or tasting. Keep materials away from eyes/mouth and follow their actual safe-use directions.",
+          "Physical paint handling is required for this claim; a digital colour slider, overlapping light or a written explanation alone is not the material operation.",
+          "The actual palette determines outcomes. Do not prescribe exact universal red/blue/yellow ratios or claim that every material can reproduce every target.",
+          "No perfect match, colour-name inventory or colour-vision norm is imposed. If perceptual access prevents a valid comparison, provide adapted access and retain the limitation rather than invent attainment.",
+          "Complementary, tertiary and colour-wheel duties in a source are not certified by one early mixture. They stay separately bound to actual grade tasks.",
+          "This is an original untested teaching/assessment design. No classroom study, actual child results or comparative efficacy is asserted."
+        ],
+        "reviewNotes": [
+          "Official museum bodies were read for narrow material/task support. Their age suggestions are not substituted for Ontario ages or evidence of tested effectiveness.",
+          "Getty’s example uses coloured tissue/acetate as well as paint-related curriculum goals. Only its observed-material variability/prediction context supports this guide; filter layering is not claimed to demonstrate physical paint mixing.",
+          "This shared operation does not replace the whole composition or mark-control claims; source requirements to make artwork and control materials remain separately assessed."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "With safe actual paints and an attainable physical target swatch, ask the learner to choose a mixture, make a small sample and compare it. Ask for one deliberate adjustment and a second sample showing what changed. Then provide a different target or suitable paint material and ask the learner to test and adjust again.",
+        "correctAnswer": "The learner chooses and actually mixes materials, identifies a relevant difference from the intention, makes and checks a purposeful adjustment, and uses the observed relationship on a changed target/material. Exact matching and technical names are not required.",
+        "whatMakesItDiscriminate": "A premixed selection or lucky first result cannot establish the intentional adjustment. Before/after samples expose whether the chosen addition moved in a reasoned direction. A different target/material tests whether the learner can use comparison and observation beyond one memorised recipe.",
+        "probeDeeper": [
+          "What difference are you trying to change?",
+          "What do the two actual samples show about that addition?",
+          "Will repeating the first mixture meet this new target? Why or why not?",
+          "What needs retesting with this different paint material?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "I picked the right ready-made pot, so I mixed the colour",
+            "revealedBy": "No actual material mixture occurs",
+            "nextMove": "Choose a target requiring an actual mixture from the available safe paints, then compare a small sample.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Whatever comes out is the target",
+            "revealedBy": "The stated intention changes after every random mixture and no difference is compared",
+            "nextMove": "Keep a visible target or chosen change and a first sample; ask what specifically should change before the next addition.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "interference",
+            "pattern": "The same recipe must work for every paint",
+            "revealedBy": "A new pigment/material gives a different result but the learner repeats the old amounts without testing",
+            "nextMove": "Compare small actual samples and revisit material differences; do not demand that the idealised recipe overrule observations.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "A perceptual or handling barrier is mistaken for a mixing misconception",
+            "revealedBy": "The child cannot access the sample difference or safely manipulate the supplied materials",
+            "nextMove": "Adapt accessible tools/contrast/material support and record assistance or remaining access limits; do not score a colour-vision or fine-motor norm as conceptual failure.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Chooses ready-made paint or mixes randomly without a stable intended change, comparison or purposeful adjustment.",
+          "partial": "Can make a familiar mixture or compare samples but needs support to choose/check an adjustment or transfer beyond the first recipe.",
+          "full": "Actually mixes, compares, chooses and checks an adjustment, and transfers the observation-based procedure to a changed target or suitable material without relying only on a fixed recipe. Source-specific advanced relationship knowledge is checked separately."
+        }
+      },
+      "sources": [
+        {
+          "source": "Smithsonian Hirshhorn Museum, Red, Yellow, Blue, Mini Art Lesson",
+          "url": "https://hirshhorn.si.edu/explore/mini-art-lesson-red-yellow-blue/",
+          "claim": "The museum activity uses a limited physical paint palette, compares changes when amounts vary and explores mixtures with white or black; it supplies an actual material practice reference, not tested efficacy of this new diagnostic.",
+          "verified": true
+        },
+        {
+          "source": "J. Paul Getty Museum, The Art and Science of Impressionist Color",
+          "url": "https://www.getty.edu/education/for_teachers/curricula/impressionism/lesson01.html",
+          "claim": "The elementary lesson includes observed colour relationships and prediction from experiments, with a warning that pigments can differ from idealised colour examples. Its tissue/filter activities are not treated as equivalent to actual paint mixing.",
+          "verified": true
+        },
+        {
+          "source": "Ontario Ministry of Education, The Arts, 2009, Visual Arts grade-area concept tables",
+          "url": "https://www.edu.gov.on.ca/eng/curriculum/elementary/arts18b09curr.pdf",
+          "claim": "The selected primary source explicitly includes physical paint mixtures and further colour relationships; source-specific grade knowledge is retained in separate protocols rather than inferred from one basic mixture.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex taxonomy curation",
+        "createdAt": "2026-11-11T01:59:38.819Z",
+        "updatedAt": "2026-11-11T01:59:38.819Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
