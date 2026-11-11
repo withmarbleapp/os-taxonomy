@@ -15,9 +15,9 @@
     "excluded": "A common processes/coding/applications are reviewed separately; no new completion from link counts."
   },
   "counts": {
-    "freshFull": 22,
+    "freshFull": 24,
     "retainedHistoricalFull": 16,
-    "remainingPartial": 4
+    "remainingPartial": 2
   },
   "expectations": [
     {
@@ -25,12 +25,16 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Child associations do not automatically certify the overall integrated account."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Explicit integrated task design; retained local-resource condition is separate from learner attainment and child-link counts.",
+      "contributingTopicIds": [
+        "mt_deexfCHU9m",
+        "mt_7e-lG7YOWa",
+        "mt_uVaS12lN1i"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B1"
     },
     {
       "code": "ON-SCI-2022-G4-B1.1",
@@ -67,11 +71,17 @@
       "kind": "overall",
       "historicalDisposition": "Partial",
       "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
-      "contributingTopicIds": [],
+      "reviewBasis": "Explicit integrated task design; retained local-resource condition is separate from learner attainment and child-link counts.",
+      "contributingTopicIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS",
+        "mt_uVaS12lN1i"
+      ],
       "remainingConditions": [
-        "Child associations do not automatically certify the overall integrated account."
-      ]
+        "A verified applicable local community packet (species/interactions, diets, adaptations and limiting conditions) must be bound before full local applicability; High Park is a studied Toronto case, not every Ontario pupil's local habitat."
+      ],
+      "dossier": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2"
     },
     {
       "code": "ON-SCI-2022-G4-B2.1",
@@ -91,14 +101,16 @@
       "kind": "specific",
       "historicalDisposition": "Partial",
       "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
+      "reviewBasis": "Actual prepared community explanation reviewed; applicable local-resource condition retained explicitly.",
       "contributingTopicIds": [
         "mt_cM8YS6NXqi",
         "mt_lutxvMlkwS"
       ],
       "remainingConditions": [
-        "Make the ecological community account explicit and connect relevant limiting conditions to a local plant-and-animal community. Naming a habitat or one plant need does not establish the whole account."
-      ]
+        "The selected authentic High Park case is bound to Toronto. Preserve location/applicability explicitly; it must not be falsely presented as every pupil’s own local habitat."
+      ],
+      "dossier": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/community-needs"
     },
     {
       "code": "ON-SCI-2022-G4-B2.3",
@@ -539,12 +551,19 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E2",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Actual fresh source body read; concrete resource/task qualification in progress.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Child associations do not automatically certify the overall integrated account."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Explicit complete formation/properties/composition/use/fossil and attributed knowledge-selection portfolio, not a rollup from child links.",
+      "contributingTopicIds": [
+        "mt_z7AJZapsJj",
+        "mt_R6YoRXkRxS",
+        "mt_NYA50DFcOO",
+        "mt_wH4t4TH0Yw",
+        "mt_mwirOvigWD",
+        "mt_6Z42wJaKYG"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-mineral-classification-knowledge-design-2026-11-11.json",
+      "protocolReference": "/protocols/E2"
     },
     {
       "code": "ON-SCI-2022-G4-E2.1",
@@ -635,5 +654,15 @@
     "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/885f1ebf-50ff-4a6c-8866-96dba4afbf09/SciTech_G4_AODA.pdf",
     "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
     "freshReadScope": "All26 selected historicalPartial mandatory cores read in fresh official API captures; actual printed127–134 complete Grade4 B/C/D/E source sections additionally read. Other historicalFull labels remain historical except explicit task-bound revisits."
-  }
+  },
+  "reviewStatus": "All42 non-A records accounted for:24 prior residuals now have explicit source-fit authoring designs,16 historical Full judgments retained without blanket recertification,2 local-resource Partials. This is proposed authoring coverage, not learner attainment, accepted-main delivery or downstream publication.",
+  "remainingScope": {
+    "codes": [
+      "ON-SCI-2022-G4-B2",
+      "ON-SCI-2022-G4-B2.2"
+    ],
+    "type": "local-resource-applicability",
+    "resolution": "Bind an accurately verified applicable local plant/animal community packet with interactions and limiting conditions. The Toronto worked case is real but is not every pupil's locality; absence of pupil observation records is not the blocker."
+  },
+  "compatibility": "No new or changed topic claim, teaching guide, age interval or dependency. All previous contexts/standards remain;35 new overall/component associations reuse existing exact CA/Ontario9–10 contexts. No existing mastery or learner-state transfer is inferred."
 }

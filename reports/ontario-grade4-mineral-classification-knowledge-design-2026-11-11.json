@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "localDependencyCommit": "8db50c0005adea4be1e1aa019bce46d9817033be",
-  "status": "Two-record source-fit authoring design, no new geological/cultural repertoire topic. Sources remain available; tasks assess classification and attributed knowledge/property/purpose relationships.",
+  "status": "Three-record current residual programme including integrated E2: formation, properties/composition, uses, fossil history and all three attributed knowledge-selection cases. Historical specific labels remain labelled historical; this is a new explicit overall source-fit design, not blanket learner mastery.",
   "resources": {
     "bgs": {
       "url": "https://www.bgs.ac.uk/discovering-geology/rocks-and-minerals/",
@@ -45,6 +45,12 @@
       "publisher": "Inuit Art Foundation / Inuit Art Quarterly; Elaine Anselmi",
       "readScope": "Complete actual feature body read, online June 16, 2021, originally Winter 2019, including Lydia Qayaq interview and attributed quarry report. No artwork/photo inspected.",
       "role": "Named Inuit carver's knowledge of harder/softer stone and material selection; specific locality, artist and report attribution retained. No blanket soapstone assumption, legal entitlement lesson or child quarry/carving task."
+    },
+    "bgs-fossils": {
+      "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/fossils/",
+      "publisher": "British Geological Survey",
+      "readScope": "Complete actual definition, evidence and four preservation sections read; image captions as text only, no images/linked specimen pages viewed.",
+      "role": "Preserved remains/traces, typical sedimentary preservation and evidence about past life/environments. No universal timescale, every fossil replaced by minerals or all metamorphism destroys fossils claim."
     }
   },
   "preparedCases": {
@@ -98,6 +104,43 @@
       "expectedEvidence": "Explain at least two material-quality/purpose connections, including the trade-off that easiest to mark is not automatically most suitable for a durable detailed carving. Retain the artist/locality and report attributions.",
       "nearMiss": "Labels all carving stone soapstone or treats colour alone as a universal identification test.",
       "changedCase": "The original brief changes from a polished detailed carving to a rough low-detail model, or the available block has cracks: explain how the purpose/quality comparison changes and what expert information remains needed."
+    },
+    "formation": {
+      "role": "formation-properties",
+      "resourceRefs": [
+        "bgs"
+      ],
+      "sourceSummary": "Cooling molten rock, compaction/cementation of sediment and heat/pressure without melting form different rocks; texture and mineral constituents provide distinct evidence.",
+      "attributionLimits": "Original process/reference task, not actual melting/pressure equipment or a universally diagnostic colour key.",
+      "question": "Original process cards: cooled magma forms interlocking granite; transported grains become compacted/cemented sandstone; limestone changes to crystalline marble under heat/pressure without melting. Identify each type and describe/test supplied safe labelled specimens. Build a complete labelled cycle path through the three types, then a different shortcut using weathering/erosion or melting/cooling.",
+      "expectedEvidence": "Link formation process to type and observable properties, distinguishing crystal texture from chemical composition. Explain multiple possible paths and long geological timescales without asserting every individual stage is slow. Heat/pressure without melting differs from melting and crystallisation.",
+      "nearMiss": "Recites a fixed one-way cycle, treats every crystal as igneous or says marble must melt to form.",
+      "changedCase": "Start with metamorphic rock and weather it directly to sediment; explain why a valid path need not return through igneous first. A finer-grained igneous sample does not become sedimentary merely because its crystals are hard to see."
+    },
+    "everyday-uses": {
+      "role": "resource-uses",
+      "resourceRefs": [
+        "bgs",
+        "usgs"
+      ],
+      "sourceSummary": "Geological materials are used in construction/manufacturing and mineral properties/constituents differ.",
+      "attributionLimits": "Original matched material/use cards, not a requirement to visit a quarry or identify an unknown building stone by sight. Familiar clay/brick, sand/glass and ore/metal examples are retained from the unchanged resource card; source links support the geological-resource/manufactured distinction, not a complete industrial recipe.",
+      "question": "Original supplied cards: clay-containing material shaped/fired for a brick; quartz-rich sand as a glassmaking ingredient; iron-bearing ore processed to steel; salt as an everyday resource. Match resource to use and distinguish raw rock/mineral from a manufactured product. Explain one reason properties or processing make the use possible; compare a changed purpose rather than say every hard material is a natural rock.",
+      "expectedEvidence": "Describe everyday uses and the need to process selected resources; a brick/window is manufactured even though its ingredients came from Earth. No claim raw sand turns into glass without heat/processing or every mineral is a metal.",
+      "nearMiss": "Matches by colour only or calls a manufactured glass window a naturally formed rock.",
+      "changedCase": "An original new brief asks for a flexible cable rather than a stone block: say which reference information about a suitable processed material is missing, rather than assume the same raw rock suits every purpose."
+    },
+    "fossils": {
+      "role": "fossil-history",
+      "resourceRefs": [
+        "bgs-fossils"
+      ],
+      "sourceSummary": "Fossils preserve remains or traces and provide evidence about past life and environments; burial/mineralisation/moulds differ from an organism simply sitting unchanged in rock.",
+      "attributionLimits": "Original illustrative fossil packet, not a photographed or newly dated real find. Not all fossils retain only hard parts, replace every original material or require one universal duration.",
+      "question": "Original packet: a drawn shell impression lies within a supplied sedimentary-layer cross-section alongside other marine-shell impressions; a second panel shows a footprint trace. A modern bivalve shell outline is supplied for comparison. Explain a plausible burial/layering/preservation/exposure sequence, distinguishing the quick burial opportunity from long rock-history processes. Separate observations from inferences about organisms and ancient water conditions, using the surrounding context and the modern comparison.",
+      "expectedEvidence": "Give an ordered formation account and distinguish body/remain evidence from a trace. Explain why most remains are not preserved and why the packet supports an earlier aquatic environment without proving exact colour, behaviour or present-day sea level. Compare the ancient and modern shell features and explain similarities can inform but cannot establish that extinct and living forms are identical. More independent fossil/context evidence can strengthen the account.",
+      "nearMiss": "Treats any decorative shell shape as proof without provenance, a trace as the animal's body, or a quick clay imprint as a geological fossil formed in minutes.",
+      "changedCase": "Change the supplied context to a loose shell on a modern path: the inference about that path's ancient environment no longer follows without evidence the shell originated in the local rock. Keep the preservation explanation separate from merely guessing a place history."
     }
   },
   "protocols": {
@@ -152,10 +195,45 @@
         "Preserve whole contributor requirements/readiness separately: safe actual rock testing/re-sorting, mineral property comparisons and resource uses remain intact. Source-specific knowledge is assessed with its available attributed resource, not inferred from a prior generic score."
       ],
       "remainingConditions": []
+    },
+    "E2": {
+      "codes": [
+        "ON-SCI-2022-G4-E2"
+      ],
+      "contributorIds": [
+        "mt_z7AJZapsJj",
+        "mt_R6YoRXkRxS",
+        "mt_NYA50DFcOO",
+        "mt_wH4t4TH0Yw",
+        "mt_mwirOvigWD",
+        "mt_6Z42wJaKYG"
+      ],
+      "caseRefs": [
+        "formation",
+        "classification",
+        "everyday-uses",
+        "fossils",
+        "haida-selection",
+        "metis-selection",
+        "inuit-selection"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use ALL prepared cases: formation/cycle, physical properties and composition, everyday resources, fossil formation/history and each of the three attributed peoples' material-selection accounts.",
+        "Construct an integrated explanation connecting process, material properties, uses and historical evidence, retaining the distinction between supplied reference knowledge, actual safe observations and inference.",
+        "Explain a complete and an alternative rock-cycle route; record actual safe physical comparisons/re-sorting, then classify separately with composition references. Explain the fossil sequence and what its context can and cannot establish.",
+        "Apply the property-to-purpose operation separately to the Haida, Métis and Inuit cases with source attribution. Answer every near-miss and changed-case question; neither named child links nor a generic property score establishes the complete source account."
+      ],
+      "remainingConditions": []
     }
   },
   "wholeClaimReview": {
-    "readScope": "Complete R6/wH cards and 3-card/2-edge hard closure read. Complete R6 saved guide read; wH has no guide. Existing rock-type and rock-cycle cards/guides also read during overall preparation; no changed claim/guide/age/edge.",
+    "readScope": "Complete R6/wH cards and 3-card/2-edge hard closure read. Complete R6 saved guide read; wH has no guide. Existing rock-type and rock-cycle cards/guides also read during overall preparation; no changed claim/guide/age/edge. Complete NYA rock-type, z7 cycle, mwir fossil-formation and6Z fossil-evidence saved guides read during overall qualification. Their broader checks/readiness remain separate.",
     "limits": [
       "R6 supplies actual rock-property comparison and sorting, not exact chemical identification by colour/scratch alone.",
       "wH supplies mineral-property/resource-use components. Its explicit Australian resource example remains a whole-claim requirement; a Canadian case is not silently substituted.",

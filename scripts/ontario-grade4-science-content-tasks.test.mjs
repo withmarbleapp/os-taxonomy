@@ -22,6 +22,8 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
     for (const id of row.contributingTopicIds) assert.ok(associations.some(context => context.topicId === id && context.country === 'CA' && context.region === 'Ontario' && context.ageRangeStart === 9 && context.ageRangeEnd === 10 && context.standards.includes(row.key)), 'Missing actual source association');
     assert.ok(protocol.caseRefs?.length && protocol.actions?.length >= 4 && protocol.actions.every(value => typeof value === 'string' && value.trim()), 'Missing concrete task actions');
     const propertyRoles = {
+      'ON-SCI-2022-G4-B1': ['human-restoration', 'species-depletion-prevention'],
+      'ON-SCI-2022-G4-E2': ['formation-properties', 'composition-properties', 'resource-uses', 'fossil-history', 'first-nations-selection', 'metis-selection', 'inuit-selection'],
       'ON-SCI-2022-G4-C1': ['societal-light-sound', 'societal-sound', 'environment-light', 'environment-sound'],
       'ON-SCI-2022-G4-C1.1': ['societal-light-sound', 'societal-sound'],
       'ON-SCI-2022-G4-C1.2': ['environment-light', 'environment-sound'],
@@ -50,7 +52,7 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       'ON-SCI-2022-G4-D2.5': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears'],
     }[row.code];
     if (propertyRoles) {
-      assert.deepEqual(protocol.requiredCaseFields, ['question', 'expectedEvidence', 'nearMiss', 'changedCase'], 'Missing property-evidence contract');
+      if (row.code !== 'ON-SCI-2022-G4-B1') assert.deepEqual(protocol.requiredCaseFields, ['question', 'expectedEvidence', 'nearMiss', 'changedCase'], 'Missing property-evidence contract');
       const roles = protocol.caseRefs.map(ref => report.preparedCases?.[ref]?.role);
       for (const role of propertyRoles) assert.ok(roles.includes(role), 'Missing required scientific task role');
       if (['ON-SCI-2022-G4-D1', 'ON-SCI-2022-G4-D1.1'].includes(row.code)) assert.ok(new Set(protocol.caseRefs.filter(ref => report.preparedCases?.[ref]?.role === 'community-machine')).size >= 2, 'Missing varied-community comparison');
@@ -62,6 +64,7 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       const materialCase = protocol.caseRefs.map(ref => report.preparedCases?.[ref]).find(value => value?.role === 'full-material-lifecycle');
       assert.deepEqual(materialCase?.lifecycleStages, stages, 'Missing actual material lifecycle stage');
     }
+    for (const required of protocol.requiredProtocols ?? []) assert.ok(report.protocols?.[required]?.actions?.length >= 4 && report.protocols[required].caseRefs?.length, 'Missing required integrated child task');
     for (const ref of protocol.caseRefs) {
       const value = report.preparedCases?.[ref];
       assert.ok(value?.sourceSummary?.trim() && value.attributionLimits?.trim() && value.resourceRefs?.length, 'Missing source-bound case');
@@ -192,4 +195,20 @@ test('Grade4 geological impacts cannot omit environmental or intermediate materi
   }
   const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['geological-processes'].expectedEvidence;
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
+});
+
+
+test('Grade4 integrated habitat and geology tasks retain real duty bindings rather than just child links', () => {
+  const earth = 'ontario-grade4-mineral-classification-knowledge-design-2026-11-11.json';
+  for (const ref of ['formation', 'everyday-uses', 'fossils', 'metis-selection']) {
+    const damaged = structuredClone(load(`reports/${earth}`));
+    damaged.protocols.E2.caseRefs = damaged.protocols.E2.caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, name => name === earth ? damaged : load(`reports/${name}`)), /Missing required scientific task role/);
+  }
+  const habitat = 'ontario-grade4-habitat-community-task-design-2026-11-11.json';
+  const damaged = structuredClone(load(`reports/${habitat}`)); delete damaged.protocols['human-effects'];
+  assert.throws(() => check(ledger.expectations, contexts, name => name === habitat ? damaged : load(`reports/${name}`)), /Missing source-bound task protocol|Missing required integrated child task/);
+  const promoted = structuredClone(ledger.expectations);
+  const row = promoted.find(value => value.code === 'ON-SCI-2022-G4-B2'); row.disposition = 'Full'; row.remainingConditions = [];
+  assert.throws(() => check(promoted), /Unresolved Full protocol condition/);
 });
