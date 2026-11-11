@@ -2,11 +2,12 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "a87dac6741d6e72a960e23a0a4a1c2c7000eeb9d",
+  "localDependencyCommit": "92d11a2e3ccfe1c80c25014c4ab413f635f9e6c3",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
-  "status": "One bounded Canadian institutional knowledge claim with original untested guidance. Source-fit authoring coverage is not learner attainment, accepted-main content or downstream publication.",
+  "status": "One coherent Canadian institutional knowledge repertoire, deliberately refined before default-branch acceptance to include studied current First Nation, Métis and Inuit governing or representative structures. No extra Inuit topic or earlier learner mastery is inferred.",
   "selectedCodes": [
     "B3.2",
+    "B3.3",
     "B3.4"
   ],
   "claimCuration": {
@@ -26,10 +27,10 @@
       "mt_vTYqDVwV4e"
     ],
     "mismatch": "Australian federal/state/local and constitutional claims retain their actual Australian facts. Ontario local municipal/FN/Métis governance retains its full entity/authority operation. Neither supplies Canadian federal/provincial/territorial, school-board and shared-service responsibility knowledge. Tax funding, identity, traditional Arctic life and a constitutional consultation duty test other knowledge.",
-    "independentOperation": "Identify supported Canadian institutional responsibilities and distinguish authority, implementation and advice; explain actual shared service/issue contributions and transfer with missing-fact limits.",
+    "independentOperation": "Identify supported Canadian institutional responsibilities, structures and representation; distinguish authority, implementation and advice; explain actual shared service/issue contributions and transfer with missing-fact limits.",
     "positive": [
       "Identify supported Canadian examples of federal national responsibilities, provincial and territorial responsibilities, and municipal services. Explain that municipalities exercise powers assigned within provincial or territorial arrangements, while territories are not simply provinces with a different name. A complete constitutional inventory is not required.",
-      "Describe the role of a studied First Nation chief and council in a supported community service and distinguish it from a nearby municipal council. Describe how a studied publicly funded school board operates schools within provincial education responsibility; distinguish provincial curriculum/funding, board operation and a school council’s advisory role. Do not assign identical powers to every Indigenous institution or school arrangement.",
+      "Describe studied current First Nation, Métis and Inuit governing or representative arrangements: identify their relevant local, regional or national structure, whom they represent and a supported function. Distinguish governing decisions from representation or advice, and do not assign identical powers to every Indigenous institution. Describe how a studied publicly funded school board operates schools within provincial education responsibility, distinguishing provincial curriculum/funding, board operation and school-council advice.",
       "Explain distinct contributions of named bodies in a studied shared-service or social issue and a studied environmental issue, rather than only list government names. Use actual source-backed examples and retain their dates and limits.",
       "Apply this knowledge to changed Canadian service/issue cases: identify a supported responsible body or shared role, explain the reason, and state what authority information is missing when the supplied facts do not establish it."
     ],
@@ -39,7 +40,19 @@
     ],
     "transfer": "Changed Canadian service/issue cases and an explicitly underdetermined new-community water case distinguish justified institutional knowledge from rote case labels or unsupported certainty.",
     "newEdges": [],
-    "existingClaimChanges": []
+    "existingClaimChanges": [],
+    "revisionHistory": [
+      {
+        "previousDraftCommit": "27120872b53c751d3d59df443aaf132dc8b56a1c",
+        "changedFields": [
+          "description",
+          "evidence[1]",
+          "assessmentPrompt",
+          "new claim teaching/assessment guide"
+        ],
+        "reason": "The still-unaccepted new Canadian institution repertoire coherently includes actual First Nation/Métis/Inuit current structures instead of creating a separate Inuit organisation topic. All previous responsibility/shared-service operations remain. Earlier narrower content and existing learner estimates are not said to have established added knowledge."
+      }
+    ]
   },
   "resources": {
     "parliament": {
@@ -95,6 +108,47 @@
       "url": "https://nfn.ca/wp-content/uploads/2022/09/LakeNipissing-MOU-2022-EN-09-14-2022-FINAL-accessible.pdf",
       "claim": "Printed3 documents joint staff patrol/assessment work and the2022–25 renewal; printed 4 provides bounded recovery evidence.",
       "verified": true
+    },
+    "institution-source-0": {
+      "source": "Métis Nation of Ontario, Chartered Community Councils",
+      "url": "https://www.metisnation.org/community-councils/",
+      "claim": "Local Chartered Community Councils represent Métis citizens and have charter/election/governance documents; their interests connect to the PCMNO through regional councillors. This is not municipal zoning authority.",
+      "verified": true,
+      "reviewed": "Actual relevant main body/section read; exact scope is retained in the prepared institution card."
+    },
+    "institution-source-1": {
+      "source": "Métis Nation of Ontario, Lands, Resources and Consultations",
+      "url": "https://www.metisnation.org/programs-and-services/lands-resources-consultations/",
+      "claim": "MNO technical and scientific staff support Regional Consultation Committees and local consultation capacity; the programme is distinct from a nearby municipal development decision.",
+      "verified": true,
+      "reviewed": "Actual relevant main body/section read; exact scope is retained in the prepared institution card."
+    },
+    "institution-source-2": {
+      "source": "Inuit Tapiriit Kanatami, Who We Are and Board of Directors",
+      "url": "https://itk.ca/national-voice-for-communities-in-the-canadian-arctic/",
+      "claim": "ITK is a national Inuit rights/interests representative voice with directors from four regional Inuit organisations and distinct non-voting permanent participants. Representation is not a uniform all-Inuit local legislature.",
+      "verified": true,
+      "reviewed": "Actual relevant main body/section read; exact scope is retained in the prepared institution card."
+    },
+    "institution-source-3": {
+      "source": "Nunatsiavut Government, Government",
+      "url": "https://nunatsiavut.com/government/",
+      "claim": "Nunatsiavut is a Labrador Inuit self-governing region with an Assembly, legislation and departments, distinct from ITK national representation.",
+      "verified": true,
+      "reviewed": "Actual relevant main body/section read; exact scope is retained in the prepared institution card."
+    },
+    "institution-source-4": {
+      "source": "Nunatsiavut Government, Community Programs",
+      "url": "https://nunatsiavut.com/department/health-and-social-development/familyservices-2/",
+      "claim": "The Health and Social Development programme describes community offices and actual regionally/community-tailored services including food-security actions; this supports a concrete departmental function, not an all-Inuit powers inventory.",
+      "verified": true,
+      "reviewed": "Actual relevant main body/section read; exact scope is retained in the prepared institution card."
+    },
+    "itk-board-detail": {
+      "url": "https://itk.ca/projects/bylaws-and-resolutions/",
+      "source": "ITK Board of Directors and Permanent Participant Representatives",
+      "reviewed": "Complete relevant board/participant main sections read.",
+      "use": "Actual regional-organisation voting directors and distinct non-voting permanent participants; not a uniform local Inuit government."
     }
   },
   "preparedTaskCases": {
@@ -144,6 +198,7 @@
   "contributionPairs": {
     "mt__r2dOQMc-B": [
       "B3.2",
+      "B3.3",
       "B3.4"
     ]
   },
@@ -187,12 +242,101 @@
         "fishery-issue"
       ],
       "remainingConditions": []
+    },
+    "current-indigenous-structures": {
+      "codes": [
+        "B3.3"
+      ],
+      "requiredPeople": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "learnerSteps": [
+        {
+          "operation": "study-and-explain-structures",
+          "caseIds": [
+            "first-nation",
+            "metis",
+            "inuit-national",
+            "inuit-regional"
+          ],
+          "instruction": "Study and recall the core relationship for the First Nation, Métis and Inuit arrangements: identify the body, the structure/people it connects and a supported function. Contrast ITK’s national voice with Nunatsiavut’s regional self-government; do not make the task only a picture/label match."
+        },
+        {
+          "operation": "contrast-and-transfer",
+          "caseIds": [
+            "first-nation",
+            "metis",
+            "inuit-national",
+            "inuit-regional"
+          ],
+          "instruction": "Compare one governing decision, one departmental action and one representative/advisory role from the prepared cases. Say which actual information supports the distinction rather than infer power from an organisation name or place. Transfer to a fresh supplied institution account: identify the level/role or missing authority fact. Do not decide a real rights claim, current officeholder eligibility or the complete constitutional status of every body."
+        }
+      ],
+      "actions": [
+        "Adult setup: prepare the four original factual institution cards below, retaining source attribution and scope limits. They are educational summaries, not authentic testimony or a legal opinion.",
+        "Nipissing First Nation Chief and Council: This Nation describes a Chief, Deputy Chief and six councillors under its custom election cycle. Its documented Council fisheries-law decisions and departmental monitoring roles are already prepared in the dated fishery case. This is a particular Nation, not a universal election model or a municipal branch.",
+        "MNO Chartered Community Councils and regional/PCMNO representation: MNO describes local councils representing Métis citizens under charter/election/governance documents, with council interests represented through regional councillors at the PCMNO. MNO staff support Regional Consultation Committees with technical/scientific capacity for lands/resources consultation. These are actual representational/governance arrangements; a local geographic area is not a municipal tier and does not automatically give a council city zoning power. No national all-Métis institutional uniformity is inferred.",
+        "Inuit Tapiriit Kanatami: Its board links the Inuvialuit Regional Corporation, Makivvik, Nunavut Tunngavik Incorporated and Nunatsiavut Government; it also has separately described non-voting permanent participants. The actual structure matters more than current officeholder names. It acts as a national voice protecting and advancing Inuit rights and interests. It is not the municipal government for every Inuit settlement or a legislature for all northern residents; representation does not give every associated organisation identical powers.",
+        "Nunatsiavut Government in Labrador: The self-governing region has an Assembly and government departments; its geographic and institutional roles differ from ITK’s national representative role. The Health and Social Development department describes actual community offices and tailored programming, including community food-security support. Do not confuse Nunatsiavut with all Inuit Nunangat or Nunavut, or infer detailed legal powers from a department name. The path-to-self-government chronology is not a required inventory; no inaccurate signing-date shorthand is taught.",
+        "Study and recall the core relationship for the First Nation, Métis and Inuit arrangements: identify the body, the structure/people it connects and a supported function. Contrast ITK’s national voice with Nunatsiavut’s regional self-government; do not make the task only a picture/label match.",
+        "Compare one governing decision, one departmental action and one representative/advisory role from the prepared cases. Say which actual information supports the distinction rather than infer power from an organisation name or place.",
+        "Transfer to a fresh supplied institution account: identify the level/role or missing authority fact. Do not decide a real rights claim, current officeholder eligibility or the complete constitutional status of every body."
+      ],
+      "remainingConditions": []
     }
   },
   "scopeLimits": [
-    "B3.3 current First Nation/Métis/Inuit governance structures remains separate; this addition does not complete it.",
+    "Actual bounded First Nation/Métis/Inuit structure/function tasks are required. No every-organisation/power inventory, all-Inuit government model or automatic transfer from prior narrower knowledge is implied.",
     "The learned introductory responsibilities and studied institutions are retained. Neither one universal count of levels nor exhaustive constitutional law is a mastery requirement.",
     "No old card, guide, context interval, dependency or learner row is changed; no learner mastery is inferred from earlier Australian or Ontario-local estimates."
   ],
-  "consumerBoundary": "Additive claim only, no automatic mastery transfer, age lowering or learner reset. Teaching confidence remains low; primary references verify factual content rather than intervention efficacy."
+  "consumerBoundary": "Additive claim only, no automatic mastery transfer, age lowering or learner reset. Teaching confidence remains low; primary references verify factual content rather than intervention efficacy.",
+  "preparedInstitutionCards": {
+    "first-nation": {
+      "body": "Nipissing First Nation Chief and Council",
+      "structure": "This Nation describes a Chief, Deputy Chief and six councillors under its custom election cycle.",
+      "function": "Its documented Council fisheries-law decisions and departmental monitoring roles are already prepared in the dated fishery case.",
+      "limits": "This is a particular Nation, not a universal election model or a municipal branch.",
+      "sourceRefs": [
+        "https://nfn.ca/chief-council/",
+        "https://nfn.ca/natural-resources/fisheries/"
+      ],
+      "people": "First Nations"
+    },
+    "metis": {
+      "body": "MNO Chartered Community Councils and regional/PCMNO representation",
+      "structure": "MNO describes local councils representing Métis citizens under charter/election/governance documents, with council interests represented through regional councillors at the PCMNO.",
+      "function": "MNO staff support Regional Consultation Committees with technical/scientific capacity for lands/resources consultation.",
+      "limits": "These are actual representational/governance arrangements; a local geographic area is not a municipal tier and does not automatically give a council city zoning power. No national all-Métis institutional uniformity is inferred.",
+      "sourceRefs": [
+        "https://www.metisnation.org/community-councils/",
+        "https://www.metisnation.org/programs-and-services/lands-resources-consultations/"
+      ],
+      "people": "Métis"
+    },
+    "inuit-national": {
+      "body": "Inuit Tapiriit Kanatami",
+      "structure": "Its board links the Inuvialuit Regional Corporation, Makivvik, Nunavut Tunngavik Incorporated and Nunatsiavut Government; it also has separately described non-voting permanent participants. The actual structure matters more than current officeholder names.",
+      "function": "It acts as a national voice protecting and advancing Inuit rights and interests.",
+      "limits": "It is not the municipal government for every Inuit settlement or a legislature for all northern residents; representation does not give every associated organisation identical powers.",
+      "sourceRefs": [
+        "https://itk.ca/national-voice-for-communities-in-the-canadian-arctic/",
+        "https://itk.ca/projects/bylaws-and-resolutions/"
+      ],
+      "people": "Inuit"
+    },
+    "inuit-regional": {
+      "body": "Nunatsiavut Government in Labrador",
+      "structure": "The self-governing region has an Assembly and government departments; its geographic and institutional roles differ from ITK’s national representative role.",
+      "function": "The Health and Social Development department describes actual community offices and tailored programming, including community food-security support.",
+      "limits": "Do not confuse Nunatsiavut with all Inuit Nunangat or Nunavut, or infer detailed legal powers from a department name. The path-to-self-government chronology is not a required inventory; no inaccurate signing-date shorthand is taught.",
+      "sourceRefs": [
+        "https://nunatsiavut.com/government/",
+        "https://nunatsiavut.com/department/health-and-social-development/familyservices-2/"
+      ],
+      "people": "Inuit"
+    }
+  }
 }

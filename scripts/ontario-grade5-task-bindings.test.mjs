@@ -151,7 +151,7 @@ test('Grade5 public-input processes require sourced methods, decision links and 
 });
 
 function checkCanadianSharedCases(report) {
-  for (const protocol of Object.values(report.protocols)) {
+  for (const protocol of Object.values(report.protocols).filter(protocol => protocol.caseRefs)) {
     assert.ok(protocol.actions.length && protocol.caseRefs.length, 'Missing jurisdiction task/case');
     for (const ref of protocol.caseRefs) {
       const task = report.preparedTaskCases[ref];
@@ -210,4 +210,33 @@ test('Grade5 overall response task requires actual FN, Métis and Inuit cases an
   const brokenSource = structuredClone(report);
   brokenSource.responseCases.metis.resourceRef = 'absent';
   assert.throws(() => checkIntegratedGovernmentResponses(brokenSource), /Missing response source/);
+});
+
+function checkCurrentIndigenousStructures(report) {
+  const protocol = report.protocols['current-indigenous-structures'];
+  const explain = protocol.learnerSteps.find(step => step.operation === 'study-and-explain-structures');
+  assert.ok(explain?.instruction && explain.caseIds.length, 'Missing actual institutional-structure task');
+  const people = new Set();
+  const knownUrls = new Set(Object.values(report.resources).map(source => source.url).filter(Boolean));
+  for (const id of explain.caseIds) {
+    const institution = report.preparedInstitutionCards[id];
+    assert.ok(institution?.body && institution.structure && institution.function && institution.limits, 'Missing prepared institution structure/function');
+    assert.ok(institution.sourceRefs.length && institution.sourceRefs.every(url => knownUrls.has(url)), 'Missing actual institution source');
+    people.add(institution.people);
+  }
+  for (const group of ['First Nations', 'Métis', 'Inuit']) assert.ok(people.has(group), `Missing studied current structure: ${group}`);
+  assert.ok(protocol.learnerSteps.some(step => step.operation === 'contrast-and-transfer' && step.instruction), 'Missing institution contrast/transfer task');
+}
+test('Canadian institution repertoire requires actual FN, Métis and Inuit structure/function tasks', () => {
+  const report = read('reports/canadian-government-responsibilities-review-2026-11-11.json');
+  checkCurrentIndigenousStructures(report);
+  const lostTask = structuredClone(report);
+  lostTask.protocols['current-indigenous-structures'].learnerSteps.find(step => step.operation === 'study-and-explain-structures').caseIds = ['first-nation', 'metis'];
+  assert.throws(() => checkCurrentIndigenousStructures(lostTask), /Missing studied current structure: Inuit/);
+  const lostFunction = structuredClone(report);
+  delete lostFunction.preparedInstitutionCards['inuit-national'].function;
+  assert.throws(() => checkCurrentIndigenousStructures(lostFunction), /Missing prepared institution structure\/function/);
+  const lostSource = structuredClone(report);
+  lostSource.preparedInstitutionCards.metis.sourceRefs = ['https://example.invalid/unreviewed'];
+  assert.throws(() => checkCurrentIndigenousStructures(lostSource), /Missing actual institution source/);
 });
