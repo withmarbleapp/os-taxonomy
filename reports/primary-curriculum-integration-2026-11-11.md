@@ -44,7 +44,7 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 419 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 427 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
 Physical Education is excluded by the user. The [Health-only package](ontario-hpe-primary-review-2026-11-11.md) now accounts for 98 Healthy Living records, with 299 pairs on 50 topics. The 169 PE/dependent cross-strand records are excluded; the full HPE leaf is not imported. Two health concepts are new: food-allergy knowledge and medicine authorisation. Two existing bullying fields and 12 reproduction-guide strings have separately reviewed corrections. Actual health promotion is self-contained and does not require the excluded Active Living programme. Kindergarten excludes five PE-only codes and retains two mixed codes as fine-motor-only Partial. India’s 49 PE-only exclusions and seven unaccepted motor-topic/guide withdrawals are integrated. The exact subtraction removes 131 proposed code pairs and 24 emptied contexts; every remaining authored card/guide and unaffected scoped record is preserved. All 570 source identities remain, with 521 eligible. Genuine Health, Arts and fine-motor duties remain. Earlier own-local requirements are receiving a consistency audit. Prepared source-fit designs now close 130 of the original 233 Science residual positions, leaving 103 original residuals. One newly identified Grade 4 B2.1 local-resource condition was previously historical Full, so there are 104 current Science Partials; the original-residual and current-Partial counts use different denominators. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
@@ -101,3 +101,12 @@ now 28 corrected old edges relative to the accepted base. These are feature-bran
 merges into the proposal targeting main, not default-branch acceptance or staging
 publication. Original source commits and earlier qualification checkpoints remain
 available.
+
+
+The subsequent Grade 4 binding guard requires the exact reviewed dossier and
+protocol for seven explicitly revisited historical positions, including the
+local-resource Partial. Removing either or both fields cannot bypass task checks.
+The nine untouched historical Full rows remain valid without newly certified
+bindings. The guard-only update passes all 427 tests and preserves every dataset
+artifact; the pinned 6483acda qualification above remains its historical 419-test
+snapshot.
