@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1875,
+  "topicCount": 1876,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -43165,6 +43165,27 @@
         "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G5-SS-A3.5",
         "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G5-SS-A3.6",
         "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G5-SS-A3.8"
+      ]
+    },
+    {
+      "id": "mt_eDaSAl6DwW",
+      "type": "REPRESENTATIONAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Locating places with latitude and longitude",
+      "description": "Use a labelled latitude/longitude graticule on a map or globe to locate and describe positions from the Equator and a stated zero-longitude reference. Interpret north/south and east/west degree values together and keep the same geographic position across changed views or representations. Read the stated coordinate labels, order and resolution rather than impose a Cartesian x-first rule or treat grid spacing as ground distance.",
+      "evidence": [
+        "Identify latitude as north/south of the Equator and longitude as east/west of the stated zero meridian, with the correct degree values and directional labels. Distinguish a line’s direction on the model from the direction its value measures.",
+        "Locate a supplied latitude/longitude position at the appropriate intersection and read both named coordinates of marked positions, including opposite-hemisphere contrasts and a zero-reference point, using the provided resolution.",
+        "Use supplied coordinates for a named place on a suitable map/globe and explain the approximation/precision given. A place label, guessed continent or one coordinate alone is not a complete geographic location.",
+        "Transfer to a new, turned or differently centred labelled representation, retaining the geographic references and stated field convention; do not infer equal physical distances from equal-looking flat-grid intervals."
+      ],
+      "assessmentPrompt": "On a labelled map or globe, can {{name}} locate a place from its latitude and longitude and read the two coordinates of another point? Contrast north with south and east with west, then try a changed view: do they retain the geographic references and the supplied precision rather than swap the fields or use page-up?",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "centrality": 0,
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G6-SS-B3.7"
       ]
     }
   ]

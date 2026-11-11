@@ -4,18 +4,19 @@
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
   "sourceReview": "ontario-grade6-social-source-review-2026-11-11.json",
-  "scope": "Ontario SocialStudiesGrade 6 primary ages 11–12,46actualexpectations; preserved optional NativeLanguages exclusion unchanged.",
-  "status": "One source-fit reuse qualified; forty-five expectations remain individually unverified. No whole-grade completion, learner attainment or default-branch acceptance inferred.",
+  "scope": "Ontario Social Studies Grade 6 primary ages 11–12: 46 actual expectations; optional Native Languages exclusion unchanged.",
+  "status": "One Full source-fit reuse, one Partial coordinate component and forty-four individually unverified expectations. No whole-grade completion or learner attainment inferred.",
   "expectationCount": 46,
   "dispositionCounts": {
-    "Unverified": 45,
-    "Full": 1
+    "Unverified": 44,
+    "Full": 1,
+    "Partial": 1
   },
   "associationInventory": {
-    "pairs": 1,
-    "topics": 1,
-    "codes": 1,
-    "newClaims": 0,
+    "pairs": 2,
+    "topics": 2,
+    "codes": 2,
+    "newClaims": 1,
     "reusedClaims": 1
   },
   "expectations": [
@@ -360,11 +361,16 @@
     },
     {
       "code": "B3.7",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_eDaSAl6DwW"
+      ],
       "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+        "Prepare actual countries/regions with significant Canadian interrelationships and source-backed city coordinates on suitable maps. This component alone does not establish those factual relationships."
+      ],
+      "dossier": "geographic-coordinate-claim-review-2026-11-11.json",
+      "protocolReference": "/protocols/coordinate-component",
+      "coverageBasis": "Whole coordinate claim is authored; actual Canadian country/city interrelationship application remains separately reviewed."
     },
     {
       "code": "B3.8",

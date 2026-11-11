@@ -42,3 +42,25 @@ test('Grade6 binding detects missing links and broken task pointers', () => {
   broken.find(row => row.code === reviewed.code).protocolReference = '/protocols/absent';
   assert.throws(() => checkBindings(broken, contexts), /Missing protocol target/);
 });
+
+test('Geographic coordinate task key retains labelled paired references and valid assets', () => {
+  const report = load('reports/geographic-coordinate-claim-review-2026-11-11.json');
+  const task = report.concreteTasks;
+  const points = new Map(task.readingPoints.map(point => [point.id, point]));
+  for (const point of [...task.readingPoints, ...task.plottingTargets]) {
+    assert.ok(Number.isFinite(point.latitude) && Math.abs(point.latitude) <= 90);
+    assert.ok(Number.isFinite(point.longitude) && Math.abs(point.longitude) <= 180);
+  }
+  assert.equal(points.get('A').longitude, points.get('B').longitude);
+  assert.equal(points.get('A').latitude, -points.get('B').latitude);
+  assert.equal(points.get('A').latitude, points.get('C').latitude);
+  assert.equal(points.get('A').longitude, -points.get('C').longitude);
+  assert.equal(points.get('D').latitude, 0);
+  assert.equal(points.get('D').longitude, 0);
+  for (const asset of [task.readingGrid, task.blankGrid]) {
+    const svg = readFileSync(new URL(`../reports/${asset}`, import.meta.url), 'utf8');
+    assert.ok(svg.includes('<svg') && svg.includes('Latitude') && svg.includes('Longitude'));
+  }
+  const topic = load('data/topics.json').topics.find(row => row.id === report.claimCuration.topicId);
+  assert.equal(topic.type, 'REPRESENTATIONAL');
+});
