@@ -42,6 +42,11 @@
       "scope": "Two citation-only repairs and a validation guard against redacted locators",
       "head": "1822c241bc5167d03198a096668e11bb518ff7ef",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/1822c241bc5167d03198a096668e11bb518ff7ef"
+    },
+    {
+      "scope": "Explicit new-guide provenance precision and original summary correction",
+      "head": "d585fcfc90ced8cf433aee95e1675d492808eafb",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/d585fcfc90ced8cf433aee95e1675d492808eafb"
     }
   ],
   "reviewedSourceScopes": {
@@ -149,7 +154,7 @@
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "All approved authored payloads, stable base/append order and scoped context/code union checked against eight immutable leaves. Catalogue unchanged; archive exactly matches reviewed PR114."
+    "exactSourceUnion": "Eight immutable source leaves with one explicitly reviewed source correction: only new-guide timestamp rendering and one summary opening sentence. All other authored payloads, stable order and context/code union remain exact. Catalogue unchanged; archive matches PR114."
   },
   "remainingWork": [
     "Ontario Social Studies Grade5 historical strand (20 records) and Grade6 continue separately; the Grade5 government strand (21 records) is included here.",
@@ -166,5 +171,14 @@
     ],
     "changes": "Onlysources[1].urlandcorrespondingURLomissionentries;teachingcontent/verification/confidence/provenanceunchanged",
     "review": "research-citation-locators-2026-11-11.md"
+  },
+  "publicationMetadataCorrection": {
+    "review": "research-projection-metadata-2026-11-11.md",
+    "newGuides": 41,
+    "timestampFields": 82,
+    "formattingOnlyFields": 60,
+    "subMillisecondPrecisionTruncations": 22,
+    "summaryOpeningSentencesRewritten": 1,
+    "acceptedGuideTimestampsChanged": 0
   }
 }
