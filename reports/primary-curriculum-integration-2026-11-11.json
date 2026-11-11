@@ -52,6 +52,21 @@
       "scope": "Canonical research record order; every payload preserved by ID",
       "head": "b54392ae922b270e4ab11034abe9dbf7558325c3",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/b54392ae922b270e4ab11034abe9dbf7558325c3"
+    },
+    {
+      "scope": "Complete Ontario Grade5 source programme;37Full4explicitPartial",
+      "head": "46732d345a68868f5bcc3688119b304f0f34bde2",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/46732d345a68868f5bcc3688119b304f0f34bde2"
+    },
+    {
+      "scope": "Complete300-record Ontario primary Arts task programme",
+      "head": "a080bac74017d7e4d4129a32771b52b73e86dda6",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/a080bac74017d7e4d4129a32771b52b73e86dda6"
+    },
+    {
+      "scope": "Explicitformatting-onlytimestampsforthe newNewFranceguide",
+      "head": "5bd808cf60edd85bebcbe304dda8bab95809f924",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/5bd808cf60edd85bebcbe304dda8bab95809f924"
     }
   ],
   "reviewedSourceScopes": {
@@ -73,35 +88,41 @@
       "FullAuthoring": 159,
       "PartialChronology": 2
     },
-    "ontarioSocialGrade5Government": {
-      "sourceRecords": 21,
-      "FullAuthoring": 21,
-      "historicalStrandStillUnderReview": 20,
-      "newKnowledgeClaims": 3,
-      "componentPairs": 46
+    "ontarioSocialGrade5": {
+      "sourceRecords": 41,
+      "FullAuthoring": 37,
+      "PartialChronologyOrSource": 4,
+      "newKnowledgeClaims": 5,
+      "componentPairs": 70,
+      "review": "ontario-grade5-social-completion-review-2026-11-11.md"
     },
-    "ontarioArtsFoundations": {
-      "newSharedClaims": 2,
-      "newGuides": 2,
-      "componentPairs": 12,
-      "newScopedContexts": 9,
-      "wholeProgrammeRecordsStillUnderReview": 300,
-      "wholeProgrammeFullInferred": false
+    "ontarioArts": {
+      "sourceRecords": 300,
+      "FullAuthoring": 300,
+      "sharedTopicsUsed": 16,
+      "newSharedClaims": 3,
+      "componentPairs": 483,
+      "protocolFamilies": 17,
+      "gradePanels": 24,
+      "overallChildClosures": 72,
+      "review": "ontario-arts-primary-review-2026-11-11.md",
+      "programme": "ontario-arts-primary-task-programme-2026-11-11.json",
+      "learnerAttainmentInferred": false
     }
   },
   "integrationCounts": {
     "topics": {
       "baseRows": 1858,
-      "mergedRows": 1904,
-      "newRows": 46,
+      "mergedRows": 1907,
+      "newRows": 49,
       "changedOldRows": 7,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": true
     },
     "teaching-research": {
       "baseRows": 1046,
-      "mergedRows": 1089,
-      "newRows": 43,
+      "mergedRows": 1092,
+      "newRows": 46,
       "changedOldRows": 4,
       "exactReviewedUnion": true,
       "stableBaseAndAppendSequence": false,
@@ -125,7 +146,7 @@
     },
     "contexts": {
       "exactReviewedContextAndCodeUnion": true,
-      "rows": 4796
+      "rows": 4859
     }
   },
   "sharedDependencyReconciliation": {
@@ -156,18 +177,17 @@
     "validation": "pass",
     "generatedCheck": "pass",
     "tests": {
-      "pass": 225,
+      "pass": 242,
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "Eight immutable source leaves plus explicit metadata/original-summary and record-order corrections. Complete reviewed payload union by ID, other artifact orders and context/code union checked; research order follows existing exporter convention. Catalogue unchanged; archive matches PR114."
+    "exactSourceUnion": "Previously verified integration plus completeG5/Arts leaf deltas: all authored payloads by ID, stable topic/edge/cluster order and complete context/code union exact. Research retains declared canonical ordering; newNewFrance timestamps receive only explicit millisecond rendering. Catalogue/archive unchanged."
   },
   "remainingWork": [
-    "Ontario Social Studies Grade5 historical strand (20 records) and Grade6 continue separately; the Grade5 government strand (21 records) is included here.",
-    "The complete2640 eligible Ontario record reconciliation remains in progress. Whole programme qualification remains for Arts300,Health/PE267,Kindergarten127 and the66 remaining SocialStudies records. Actual task/resource duties from prior Language/Science Partial reviews also require completion; link counts are not evidence of these duties.",
-    "The two Arts operations and their12component associations do not establish whole Arts expectations or programme completion.",
-    "Conditional language/script/art-form/local-community material and chronology/source-meaning limits remain explicit; reviewed is not synonymous with Full.",
-    "Default-branch review/acceptance and downstream consumer/writer/fleet qualification and protected-state-preserving staging publication remain separate."
+    "Ontario Grade6 SocialStudies46, Health/PE267 and Kindergarten127 remain under whole programme qualification (440 records).",
+    "Actual task/resource duties from prior Language40 andScience233 Partial reviews still require completion; a historicalreview orlink count is insufficient.",
+    "Explicit language/script/artform/localcommunity/chronology/source-meaning conditions remain; sourceFullauthoring is not learnerattainment or comparative teachingefficacy.",
+    "Defaultbranch review/acceptance and downstream consumer/writer/fleet qualification plus freshprotectedstate-preserving publication remain separate."
   ],
   "learnerState": "No DB write, learner reset, historical observation reinterpretation, score transfer, backfill or staging activation is performed by this source integration.",
   "citationRepairs": {
@@ -186,6 +206,7 @@
     "subMillisecondPrecisionTruncations": 22,
     "summaryOpeningSentencesRewritten": 1,
     "acceptedGuideTimestampsChanged": 0,
-    "canonicalRecordOrder": "All1089 records preserved exactly by ID; array sorted under existing exporter convention. Historical source sequences remain in original commits."
+    "canonicalRecordOrder": "All1089 records preserved exactly by ID; array sorted under existing exporter convention. Historical source sequences remain in original commits.",
+    "additionalWholeSecondFormattingFields": 2
   }
 }
