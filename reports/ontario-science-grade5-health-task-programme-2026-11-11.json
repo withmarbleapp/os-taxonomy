@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "scope": "Five remaining Grade5 Human Health/Body Systems source-duty residuals; ages10–11, source end-of-grade attainment. No PE or fitness curriculum is imported.",
+  "meaning": "Original untested source-fit tasks; all actual duty types and conditions designed, no observed learner result or medical authority.",
+  "protocols": [
+    {
+      "id": "health-factors-and-access",
+      "sourceCodes": [
+        "B1.1"
+      ],
+      "task": "Compare the original three supplied cases below. Identify each social or environmental factor, explain a plausible body/well-being pathway, distinguish a support from a guarantee, and propose a feasible child-safe individual/adult/community response. Change access while holding personal health intentions constant; explain why identical advice is not equally usable.",
+      "cases": [
+        {
+          "id": "housing-and-breathing",
+          "given": "Two fictional families want a healthy home. One has a persistent leak and damp room; the other has dry repaired housing. A clinician has already identified asthma in one case. No pupil or family is described.",
+          "expected": "Housing conditions can affect breathing; a prepared adult can arrange repair/landlord/professional support. Not laziness, child mould removal or diagnosis from a cough."
+        },
+        {
+          "id": "food-access-and-time",
+          "given": "A fictional household has a nearby affordable food store and time to prepare meals; another has a long journey, limited budget and fewer suitable choices. Both want nutritious meals.",
+          "expected": "Availability, affordability, time and transport shape decisions; a suitable local food/school support and practical planning can help, but no child is responsible for fixing income or eliminating structural barriers."
+        },
+        {
+          "id": "social-support-and-care",
+          "given": "One new student has a safe trusted adult, welcoming peer contact and an accessible health-service appointment; another cannot yet access those supports.",
+          "expected": "Support/access can aid belonging and appropriate care; identify a safe adult/local resource and a welcoming action without claiming friendship cures disease or forcing disclosure."
+        }
+      ],
+      "positive": "Connects varied access/environment/social factors to actual effects and feasible supports, including a benefit and a harm; goes beyond lifestyle slogans.",
+      "nearMiss": "Says all health differences follow personal effort, labels a low-income family unhealthy, or gives adult repair/clinical responsibility to a child.",
+      "transfer": "Change the barrier to language/accessibility or unsafe air while preserving the health goal; revise the action and explain who can act.",
+      "conditions": {
+        "variedSocialEnvironmentalFactors": true,
+        "benefitsAndHarms": true,
+        "feasibleActionsAndLimits": true,
+        "noPrivateResourcesHistory": true,
+        "noHazardExposureOrRepair": true,
+        "noIndividualBlameOrGuaranteedOutcome": true
+      },
+      "resources": [
+        "phac-determinants",
+        "hc-mould"
+      ]
+    },
+    {
+      "id": "health-technologies-and-perspectives",
+      "sourceCodes": [
+        "B1.2"
+      ],
+      "task": "Use both original technology cases, identify the relevant organ/system and mechanism/purpose, weigh a benefit and limitation/risk for each, compare at least two actual stakeholder perspectives, and propose a feasible harm-reducing improvement. Judge the supplied case facts; do not diagnose, select treatment or handle a device.",
+      "cases": [
+        {
+          "id": "digital-radiograph",
+          "given": "A fictional clinic uses a professionally justified digital bone image after an injury. The image helps a clinician see internal bone damage; radiation exposure has risk, and stored digital records need access/privacy protection. A family far from the clinic faces a travel barrier.",
+          "perspectives": [
+            "patient/family needing understandable information and accessible care",
+            "clinician needing useful information with proportionate exposure",
+            "clinic responsible for privacy and suitable access"
+          ],
+          "expected": "Skeletal information is a benefit; radiation/privacy/access are distinct limitations. Qualified clinicians decide clinical need. A child can suggest clearer explanation, protected access or help reaching an appointment, not self-authorise a scan."
+        },
+        {
+          "id": "supported-hearing",
+          "given": "A professionally fitted hearing aid helps a fictional wearer hear speech. Busy-room noise can also be amplified, adjustment takes support and cost can affect access. The wearer says which situations work for them. A supplied adult-verified case report also describes irritation of the ear-canal skin from a device; this is a possible harm, not an inevitable result or a pupil diagnosis.",
+          "perspectives": [
+            "wearer whose own communication preferences matter",
+            "teacher/peer who can reduce noise and check understanding",
+            "family/service supporting appropriate fitting and access"
+          ],
+          "expected": "Auditory support is useful without restoring every hearing function. Respect the wearer’s preference; reduce background noise/access barriers. Do not assume every deaf person wants the same device or make a child fit one. Identify the supplied skin-irritation harm separately from cost/noise limitations and seek prepared-adult/professional support; do not adjust, trial or repair a medical device."
+        }
+      ],
+      "positive": "Evaluates two technologies with correct health/body links, evidence and differing relevant perspectives; improvement addresses a stated limitation.",
+      "nearMiss": "Lists device names only, says technology is always good/bad, treats digital storage as the entire health effect, or guesses a diagnosis/medicine.",
+      "transfer": "Change the setting/access need and revise whose benefit/risk matters while retaining both medical-information and communication cases.",
+      "conditions": {
+        "multipleTechnologies": true,
+        "bodySystemBenefitsAndHarms": true,
+        "differentPerspectives": true,
+        "actualReasonsNotPerspectiveLabels": true,
+        "noActualDeviceUseExposureOrClinicalDecision": true,
+        "digitalComponentDoesNotReplaceOtherTechnologyKnowledge": true,
+        "healthHarmsNotOnlyCostOrInconvenience": true
+      },
+      "resources": [
+        "hc-xray",
+        "fda-hearing"
+      ]
+    },
+    {
+      "id": "food-literacy-body-and-connection",
+      "sourceCodes": [
+        "B1.3"
+      ],
+      "task": "Use a concrete fictional day-menu and safe shared-meal planning case. Interpret guide/ingredient/marketing information, choose an affordable culturally suitable meal modification and explain a physical nutrient/function reason plus a different connection/enjoyment/routine reason. Explain how planning, knowing food and preparation options, and checking a message improve the decision. Identify uncertainty and who helps with medical/allergy needs. No food must be eaten and no private intake is scored.",
+      "case": {
+        "menu": "Breakfast oats with milk or suitable alternative and fruit; lunch rice with beans and vegetables; dinner a vegetable/legume dish with a grain option and water. This is an original planning case, not a prescribed individual diet or a universal menu.",
+        "choice": "Compare a supplied colourful drink advert promising instant happiness with a factual water/variety recommendation. Change the budget, ingredient availability or social access; plan a feasible alternative and an optional safe way to share a meal/conversation.",
+        "expected": "Foods support energy, growth/repair and body function; preparing/planning/checking claims can support informed choices and a positive relationship/connection. Neither one food nor a compulsory shared meal guarantees happiness or treats a mental-health condition."
+      },
+      "positive": "Explains food-literacy skills→reasoned decision→both physical and mental/social well-being pathways, with practical context and limits.",
+      "nearMiss": "Names nutrients only, treats a paid happy-drink slogan as evidence, demands tasting/cheerfulness, or claims food replaces mental-health care.",
+      "transfer": "Change cost, a suitable ingredient or eating arrangement; retain nutrition and voluntary connection reasons without one universal cultural/medical choice.",
+      "conditions": {
+        "foodKnowledgeAndDecisionProcess": true,
+        "physicalAndMentalWellbeing": true,
+        "noMoodCureOrForcedEnjoyment": true,
+        "noIntakeAppearanceOrWeightScore": true,
+        "localAccessAndMedicalConditions": true,
+        "wholeFoodPreparationAssessmentSeparate": true
+      },
+      "resources": [
+        "hc-guide",
+        "hc-meals"
+      ]
+    },
+    {
+      "id": "integrated-health-factor-portfolio",
+      "sourceCodes": [
+        "B1"
+      ],
+      "includesProtocols": [
+        "health-factors-and-access",
+        "health-technologies-and-perspectives",
+        "food-literacy-body-and-connection"
+      ],
+      "task": "Complete all three underlying tasks, then explain one coherent fictional health scenario in which housing/food/service/social access, a technology and a food decision interact. Weigh both helpful and harmful effects and identify a feasible action plus its limits. The integration must use actual case details and a body/well-being explanation; a list of the three topic names or linked child counts is insufficient.",
+      "positive": "Combines the different influences into a reasoned health account without blaming the individual or claiming a universal cure.",
+      "nearMiss": "Repeats lifestyle advice while omitting the access condition, technology effect or mental/physical food-literacy connection.",
+      "transfer": "Change one environmental or access condition; revise the plan and explain why the same personal intention may need different support.",
+      "conditions": {
+        "allThreeSameGradeDuties": true,
+        "ownIntegratedAccount": true,
+        "humanActivityAndTechnologyEffects": true,
+        "noLinkCountOnlyRollup": true,
+        "noPEOrClinicalTaskDependency": true
+      }
+    },
+    {
+      "id": "integrated-body-systems-own-model",
+      "sourceCodes": [
+        "B2"
+      ],
+      "task": "Construct an original labelled body-system map and explain it orally, in writing or with labels/arrows. Cover the concrete organ/function set below, trace connected oxygen/nutrient/waste pathways, explain a deliberate senses→brain/nerves→muscle action without treating all automatic functions as conscious, and use all three supplied disorder cases to connect affected structures with function. Repair changed arrows/labels and transfer to a different everyday action. The learner produces the connected explanation; a supplied finished poster or one breathing answer is not the whole task. For every selected organ-structure pair, label or describe the actual basic physical feature and explain how it supports that organ’s job. Complete the changed-feature repair cases below; names, functions and route arrows alone do not pass the structure requirement.",
+      "organFunctionSet": [
+        {
+          "system": "digestive",
+          "organs": [
+            "mouth",
+            "oesophagus",
+            "stomach",
+            "small intestine",
+            "large intestine"
+          ],
+          "functions": [
+            "chew/move/break down food",
+            "absorb usable nutrients",
+            "recover water and pass undigested waste"
+          ]
+        },
+        {
+          "system": "circulatory",
+          "organs": [
+            "heart",
+            "arteries",
+            "veins",
+            "capillaries"
+          ],
+          "functions": [
+            "pump blood",
+            "transport oxygen/nutrients",
+            "return carbon dioxide/waste",
+            "exchange at small vessels"
+          ]
+        },
+        {
+          "system": "respiratory",
+          "organs": [
+            "nose/mouth",
+            "windpipe",
+            "lungs"
+          ],
+          "functions": [
+            "move air",
+            "exchange oxygen and carbon dioxide with blood"
+          ]
+        },
+        {
+          "system": "nervous",
+          "organs": [
+            "brain",
+            "nerves"
+          ],
+          "functions": [
+            "receive sensory messages",
+            "coordinate a deliberate response",
+            "send messages to muscles"
+          ]
+        },
+        {
+          "system": "skeletal-and-muscular",
+          "organs": [
+            "bones",
+            "muscles"
+          ],
+          "functions": [
+            "support/protect",
+            "work together to move an ordinary object"
+          ]
+        }
+      ],
+      "pathways": [
+        "air→lungs; oxygen enters blood; heart/vessels deliver it to cells; carbon dioxide returns in blood to lungs and leaves in exhaled air",
+        "food→mouth/oesophagus/stomach/intestines; absorbed nutrients enter transport routes and reach body parts; undigested material follows a different waste route",
+        "a seen cup→sensory messages→brain/nerves→arm/hand muscles moving it with skeletal support; no exercise curriculum or fitness norm"
+      ],
+      "disorderCases": [
+        {
+          "name": "asthma",
+          "given": "An already diagnosed fictional case has lung airways that can narrow/inflame.",
+          "expected": "Respiratory system: changed airway function can make moving air harder; it is not a problem in the stomach."
+        },
+        {
+          "name": "tooth decay",
+          "given": "Bacterial acids have damaged a fictional tooth’s enamel.",
+          "expected": "Teeth/mouth support chewing in the digestive pathway; a tooth problem can impair that function. Do not examine anyone’s mouth or infer a diagnosis."
+        },
+        {
+          "name": "coronary heart disease",
+          "given": "A supplied factual case describes reduced flow through vessels supplying the heart muscle.",
+          "expected": "Circulatory system: the heart muscle needs its own oxygen/nutrient supply to pump well. Not every heart problem is the same and no child diagnoses symptoms."
+        }
+      ],
+      "positive": "Shows structure/function within several systems, explains multiple inter-system connections, and places different named disorders in the correct organ/system model. Explicitly relates muscular/valved compartments, branching exchange structures and digestive wall/lining features to their functions, and repairs a changed feature with a reason.",
+      "nearMiss": "Labels a heart without its function, sends whole food into blood, says arteries always mean oxygen-rich, confuses stool with carbon dioxide or merely says illness is bad. A poster of organ-name boxes connected by arrows, with no described physical structure-function relation, does not pass.",
+      "transfer": "Reverse an oxygen/nutrient arrow or substitute an affected airway/heart-supply/tooth structure; repair it and explain the functional consequence. Repair at least one changed structural feature in a second organ/system rather than merely repeat a memorised route.",
+      "conditions": {
+        "ownIntegratedModelRequired": true,
+        "allFourB2ChildDutyTypes": true,
+        "multipleSystemsAndVitalOrgans": true,
+        "withinAndBetweenSystems": true,
+        "namedDisorderToAffectedOrgans": true,
+        "noDiagnosisOrRealBodyInspection": true,
+        "noPEFitnessOrExertionRequirementForSourceTask": true,
+        "wholeCanonicalPulseOrPreparationChecksSeparate": true,
+        "notAllControlConscious": true,
+        "noBlueBloodOrWholeFoodInBlood": true,
+        "actualBasicStructureFunctionReasoning": true,
+        "changedStructureRepairNotNameBoxes": true
+      },
+      "resources": [
+        "nhlbi-heart",
+        "nhlbi-flow",
+        "niddk-digestion",
+        "nhlbi-asthma",
+        "nidcr-decay",
+        "nhlbi-respiratory"
+      ],
+      "organStructureFunctionPairs": [
+        {
+          "organ": "heart",
+          "structure": "muscular walls, chambers and one-way valves",
+          "function": "Contraction moves blood through compartments; valves help prevent backward flow.",
+          "changedFeature": "A model valve is drawn open both ways. Repair the arrows/valve and explain why directed pumping would be affected.",
+          "resources": [
+            "nhlbi-heart",
+            "nhlbi-flow"
+          ]
+        },
+        {
+          "organ": "lungs",
+          "structure": "branching airways ending in many small air sacs next to tiny blood vessels",
+          "function": "Air reaches many exchange sites; oxygen moves to blood while carbon dioxide moves from blood to air.",
+          "changedFeature": "The model ends its airway in a sealed large bag with no neighbouring blood-vessel exchange sites. Explain what essential structure-function relation is missing and repair it.",
+          "resources": [
+            "nhlbi-respiratory"
+          ]
+        },
+        {
+          "organ": "stomach",
+          "structure": "muscular walls and a cavity receiving digestive juices",
+          "function": "The walls mix food with juices, helping break it down before it moves onward.",
+          "changedFeature": "A model stomach is only a rigid storage box. Add the missing mixing-wall action and explain why storage alone is insufficient.",
+          "resources": [
+            "niddk-digestion"
+          ]
+        },
+        {
+          "organ": "small intestine",
+          "structure": "a tube with an absorbing lining",
+          "function": "Digested nutrients cross the lining into transport routes instead of whole food entering blood.",
+          "changedFeature": "The model lining is drawn as an impermeable barrier. Repair the nutrient-crossing relation and explain the consequence; do not require transport-protein or histology terminology.",
+          "resources": [
+            "niddk-digestion"
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "phac-determinants",
+      "url": "https://www.canada.ca/en/public-health/services/health-promotion/population-health/what-determines-health.html",
+      "pageDate": "2026-08-07",
+      "actualRead": "Full main body About health equity/social/structural determinants/importance",
+      "use": "Access to housing, income, services, community support and freedom from discrimination shapes opportunity for health. Not individual blame or a requirement to disclose family resources."
+    },
+    {
+      "id": "hc-mould",
+      "url": "https://www.canada.ca/en/health-canada/services/air-quality/indoor-air-contaminants/reduce-humidity-moisture-mould.html",
+      "pageDate": "2023-02-13",
+      "actualRead": "Complete main body through About mould",
+      "use": "Damp housing and mould can worsen breathing/allergic problems. Prepared fictional facts only; children do not inspect, touch, smell, clean, grow or experimentally expose anyone to mould."
+    },
+    {
+      "id": "hc-xray",
+      "url": "https://www.canada.ca/en/health-canada/services/health-risks-safety/radiation/types-sources/x-rays/medical-dental-x-rays.html",
+      "pageDate": "2025-01-17",
+      "actualRead": "Complete medical/dental main body",
+      "use": "Internal pictures can help clinicians identify bone and other system problems. Radiation risks mean appropriate professional use, not child imaging/treatment decisions or a universal safe number of scans."
+    },
+    {
+      "id": "fda-hearing",
+      "url": "https://www.fda.gov/medical-devices/hearing-aids/hearing-aid-benefits-and-limitations",
+      "actualRead": "Complete benefits, limitations, doctor and reporting body",
+      "use": "Hearing aids can support communication; background noise, adjustment, cost and access remain limitations. No universal restoration, child fitting or transfer of US adult OTC policy."
+    },
+    {
+      "id": "hc-meals",
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/eat-meals-others.html",
+      "pageDate": "2026-04-29",
+      "actualRead": "Complete main body including family and older-adult sections",
+      "use": "Food decisions can support connection, enjoyment and eating routines. These are opportunities, not guaranteed feelings or mental-health treatment."
+    },
+    {
+      "id": "hc-guide",
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations.html",
+      "pageDate": "2019-01-22",
+      "actualRead": "Full recommendations; also previously qualified in Health98 programme",
+      "use": "Variety, planning, food skills, guide/label interpretation and marketing awareness, with local access and personal medical/cultural conditions."
+    },
+    {
+      "id": "nhlbi-heart",
+      "url": "https://www.nhlbi.nih.gov/health/heart",
+      "pageDate": "2022-03-24",
+      "actualRead": "Complete heart overview main body",
+      "use": "Heart pump, vessels, nutrient/oxygen transport, carbon-dioxide return and organ interdependence; no adult pulse/BMI/clinical score."
+    },
+    {
+      "id": "nhlbi-flow",
+      "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "pageDate": "2025-06-25",
+      "actualRead": "Complete main body including valves/double circulation/coronary supply",
+      "use": "Direction-defined vessels and correct body→right heart→lungs→left heart→body route. Advanced coronary branches/valve names are not extra Grade5 duties."
+    },
+    {
+      "id": "niddk-digestion",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works",
+      "pageDate": "2017-12",
+      "actualRead": "Complete main article, including digestion, absorption and neural/hormonal control. Linked videos were not viewed.",
+      "use": "Organ functions, nutrient absorption into transport systems, food waste and nervous/hormonal control. Nutrients have different routes; no all-absorption-by-diffusion or whole food entering blood."
+    },
+    {
+      "id": "nhlbi-asthma",
+      "url": "https://www.nhlbi.nih.gov/health/asthma",
+      "pageDate": "2024-04-17",
+      "actualRead": "Complete What Is Asthma main body",
+      "use": "A supplied diagnosed case affects lung airways, which may narrow/inflame; no symptom-based diagnosis or medicine instruction."
+    },
+    {
+      "id": "nidcr-decay",
+      "url": "https://www.nidcr.nih.gov/health-info/tooth-decay",
+      "pageDate": "2025-09",
+      "actualRead": "Complete overview/causes/symptoms/diagnosis/treatment/tips/resources main body",
+      "use": "Bacterial acids can damage tooth enamel; teeth support the mouth’s mechanical digestive function. No dental examination, treatment or blame."
+    },
+    {
+      "id": "nhlbi-respiratory",
+      "url": "https://www.nhlbi.nih.gov/health/lungs/respiratory-system",
+      "pageDate": "2022-03-24",
+      "actualRead": "Complete respiratory-system main body, including airways, air sacs and exchange; separate lungs overview also read. No videos viewed.",
+      "use": "Branching tubes, small air sacs and adjacent vessels support opposite oxygen/carbon-dioxide movement. No numerical alveoli norm, advanced histology or universal gas formula. Nutrients originate from digestive absorption, not the lung airways."
+    }
+  ],
+  "sourceBindings": [
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1",
+      "code": "B1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "integrated-health-factor-portfolio"
+      ],
+      "requiredConditions": {
+        "allThreeSameGradeDuties": true,
+        "ownIntegratedAccount": true,
+        "humanActivityAndTechnologyEffects": true,
+        "noLinkCountOnlyRollup": true,
+        "noPEOrClinicalTaskDependency": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.1",
+      "code": "B1.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "health-factors-and-access"
+      ],
+      "requiredConditions": {
+        "variedSocialEnvironmentalFactors": true,
+        "benefitsAndHarms": true,
+        "feasibleActionsAndLimits": true,
+        "noPrivateResourcesHistory": true,
+        "noHazardExposureOrRepair": true,
+        "noIndividualBlameOrGuaranteedOutcome": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.2",
+      "code": "B1.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "health-technologies-and-perspectives"
+      ],
+      "requiredConditions": {
+        "multipleTechnologies": true,
+        "bodySystemBenefitsAndHarms": true,
+        "differentPerspectives": true,
+        "actualReasonsNotPerspectiveLabels": true,
+        "noActualDeviceUseExposureOrClinicalDecision": true,
+        "digitalComponentDoesNotReplaceOtherTechnologyKnowledge": true,
+        "healthHarmsNotOnlyCostOrInconvenience": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.3",
+      "code": "B1.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "food-literacy-body-and-connection"
+      ],
+      "requiredConditions": {
+        "foodKnowledgeAndDecisionProcess": true,
+        "physicalAndMentalWellbeing": true,
+        "noMoodCureOrForcedEnjoyment": true,
+        "noIntakeAppearanceOrWeightScore": true,
+        "localAccessAndMedicalConditions": true,
+        "wholeFoodPreparationAssessmentSeparate": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2",
+      "code": "B2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "integrated-body-systems-own-model"
+      ],
+      "requiredConditions": {
+        "ownIntegratedModelRequired": true,
+        "allFourB2ChildDutyTypes": true,
+        "multipleSystemsAndVitalOrgans": true,
+        "withinAndBetweenSystems": true,
+        "namedDisorderToAffectedOrgans": true,
+        "noDiagnosisOrRealBodyInspection": true,
+        "noPEFitnessOrExertionRequirementForSourceTask": true,
+        "wholeCanonicalPulseOrPreparationChecksSeparate": true,
+        "notAllControlConscious": true,
+        "noBlueBloodOrWholeFoodInBlood": true,
+        "actualBasicStructureFunctionReasoning": true,
+        "changedStructureRepairNotNameBoxes": true
+      }
+    }
+  ],
+  "conditions": {
+    "actualKnowledgeNotOnlyTopicNames": true,
+    "componentNotWholeClaimCertification": true,
+    "noPEProgrammeDependency": true,
+    "noPrivateHealthResourceOrFamilyHistory": true,
+    "noExposureDiagnosisTreatmentOrMedicalDeviceOperation": true,
+    "noForcedFeelingFoodTastingOrMoralBodyJudgment": true,
+    "sourceExamplesNotExhaustiveInventory": true,
+    "primaryFactualResourcesNotActivityEfficacyProof": true,
+    "allInheritedWholeClaimRequirementsSeparate": true
+  },
+  "b2ChildDuties": {
+    "sourceKeys": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2.1",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2.2",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2.3",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2.4"
+    ],
+    "requiredKinds": [
+      "system-and-basic-function",
+      "vital-organ-structure-and-function",
+      "within-and-between-system-relations",
+      "varied-disorders-and-affected-organs"
+    ],
+    "allMustBeAccountedInOwnModel": true
+  },
+  "b1Integration": {
+    "sourceKeys": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.1",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.2",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.3"
+    ],
+    "requiredProtocols": [
+      "health-factors-and-access",
+      "health-technologies-and-perspectives",
+      "food-literacy-body-and-connection"
+    ],
+    "ownIntegratedAccountRequired": true
+  }
+}
