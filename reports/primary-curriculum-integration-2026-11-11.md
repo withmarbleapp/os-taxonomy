@@ -24,6 +24,8 @@ The [Grade 5 science C/D/E ledger](ontario-grade5-cde-current-ledger-2026-11-11.
 
 A [one-path shade-feedback correction](shade-feedback-safety-correction-2026-11-11.json) removes an overlooked instruction to look through a cover towards the Sun. It uses ground-shadow observation and a real warming comparison, consistent with the rest of the guide; all other guide payloads and flags are preserved.
 
+The [science applications/contributions review](ontario-science-applications-contributions-review-2026-11-11.md) supplies eighteen more residual task designs and revisits six application clauses. Concrete shared design projects combine science, mathematics and communication; multiple attributed community cases and NASA mathematical work support contribution analysis. Later occupational tasks include an actual skilled trade. Six component pairs reuse existing shared research intervals; no new claim, guide, age, context or edge is added.
+
 Full means the mandatory source duties have an authored task portfolio with its stated resource and access conditions. It does not mean a child has performed the tasks, mastered every linked topic, or received an intervention with proven effectiveness. Component links alone do not certify a whole expectation.
 
 ## Reconciliation and preservation
@@ -36,9 +38,9 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 291 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 293 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
-The remaining whole programme review is Health/PE (267 records). Earlier own-local requirements are also receiving a consistency audit. Actual task/resource duties for 193 of the prior Science (233) Partial positions remain in this snapshot; eighteen coding, impact and integrated overall designs are now prepared. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
+The remaining whole programme review is Health/PE (267 records). Earlier own-local requirements are also receiving a consistency audit. Actual task/resource duties for 175 of the prior Science (233) Partial positions remain in this snapshot; eighteen coding, impact and integrated overall designs are now prepared. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
 Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
 
