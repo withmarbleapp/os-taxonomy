@@ -83,3 +83,25 @@ test('Historical integrated duties reject absent reports and broken programme po
   target.resources['early-organisation'].pointer = '/originalResearch/absent';
   assert.throws(() => checkIntegratedResources(target), /Missing resource target/);
 });
+
+function checkInteractionCategoryCarriage(report) {
+  const categories = ['among-indigenous', 'among-europeans', 'indigenous-european'];
+  const questions = new Map(report.protocols.questions.questionModels.map(model => [model.id, model]));
+  for (const category of categories) {
+    const id = report.protocols.questions.requiredQuestionIds.find(id => questions.get(id)?.interactionCategory === category);
+    assert.ok(id, `Missing actual inquiry category ${category}`);
+    assert.ok(questions.get(id).question?.trim() && questions.get(id).sourceIds.length >= 2, 'Missing source-bound category question');
+    for (const phase of ['sources', 'maps', 'evidence', 'conclusions', 'communication']) {
+      assert.ok(report.protocols[phase].questionIds?.includes(id), `Missing ${category} carriage into ${phase}`);
+    }
+  }
+}
+test('Actual category inquiries continue through notes, maps, evidence and communication', () => checkInteractionCategoryCarriage(dossier));
+test('Category coverage rejects a removed among-Indigenous question despite retained flags', () => {
+  const absent = structuredClone(dossier);
+  absent.protocols.questions.questionModels = absent.protocols.questions.questionModels.filter(model => model.interactionCategory !== 'among-indigenous');
+  assert.throws(() => checkInteractionCategoryCarriage(absent), /Missing actual inquiry category among-indigenous/);
+  const dropped = structuredClone(dossier);
+  dropped.protocols.maps.questionIds = dropped.protocols.maps.questionIds.filter(id => id !== 'indigenous-alliance-peace');
+  assert.throws(() => checkInteractionCategoryCarriage(dropped), /carriage into maps/);
+});
