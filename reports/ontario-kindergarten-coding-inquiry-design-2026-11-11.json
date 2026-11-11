@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "eabeda7d2be391f017f67a35149a6d376c48dc72",
+  "status": "Reviewed first15 source-duty designs; whole127-record Kindergarten integration remains in progress. No main acceptance, publication or learner attainment.",
+  "source": {
+    "catalogue": "the-ontario-curriculum-kindergarten-2026",
+    "edition": 2026,
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/kindergarten/grades/jk-sk",
+    "api": "https://ws.api.dcp.edu.gov.on.ca/content/api/items/kindergarten?language=en-CA&depth=7",
+    "freshCoreReconciliation": "All127 retained formal bodies reconciled with the pinned edition on2026-11-11; linked elaborations read privately.",
+    "sourceAgeWindow": [
+      4,
+      6
+    ]
+  },
+  "scope": {
+    "records": 15,
+    "newTopics": 0,
+    "newGuides": 0,
+    "authoredClaimChanges": 0,
+    "dependencyChanges": 0,
+    "remainingProgrammeRecords": 112,
+    "componentPairs": 35,
+    "reusedTopics": 15,
+    "newContexts": 11,
+    "newPairs": 32
+  },
+  "protocols": {
+    "route-instructions": {
+      "task": "On an actual safe floor/table grid, place a start square, a toy destination and a removable obstacle. Learner gives then follows an own step-by-step route using forward/turn and beside/behind/near language. A partner follows it literally. Test an original mistaken route (forward2 when3 are needed), locate the mismatching step and revise; record the working sequence with actual arrows, words or pictures. Change the obstacle and start to require a new route, not a memorised recital.",
+      "positive": "Creation AND following, actual test/repair and a recoverable record all occur.",
+      "nearMiss": "Copies a route picture without giving directions, repairs by moving the destination, or calls an untested sequence correct.",
+      "transfer": "Changed start/obstacle forces a newly tested recorded sequence.",
+      "wholeClaimBoundary": "Retain the existing instruction claim’s everyday-task, missing-step prediction and exact computer-following checks. Introduce one actual computer example; the existing diverse-device recognition prerequisite remains separate. The route includes left/right and position descriptions; quarter/half/whole turns are additional whole-card checks, not newly invented mandatory K vocabulary."
+    },
+    "inquiry-build-test": {
+      "task": "Offer actual safe foil/card/plastic materials and a shallow supervised water tray. Learner poses a question about a small boat/model carrying large counters, predicts before testing, selects appropriate materials/tools, builds it and records observations as counters are added in a consistent stated way. Keep design purpose/criterion explicit. Compare a revised design with the first, state an evidence-supported conclusion and communicate the result through an own drawing/oral account/data record. An observation investigation need not be falsely called a controlled experiment; a deliberate controlled comparison keeps the stated changed factor and relevant conditions consistent. Repeat with a changed material/criterion. Actually build and test both prepared model cases. Across these investigations and the environment task, generate at least three genuine how/why questions and choose among observation, a test and an adult-supported reference enquiry. Record the first prediction before any trial. Compare an own result to that prediction, communicate the evidence, propose a changed-case prediction and one concrete method improvement.",
+      "positive": "Own question/prediction, justified selection, actual construction/testing/observation, evidence-supported conclusion and communicated result are present.",
+      "nearMiss": "Shows a finished adult model, invents observations, changes several factors while attributing an effect to one, or treats the initial prediction as a law.",
+      "transfer": "Changed model/material/criterion requires a fresh prediction, test and explanation.",
+      "limits": "A child prediction that heavier things sink faster is something to investigate, not a physics law. No testing of children, animals, food, fire or hazardous substances.",
+      "resourceIds": [
+        "foil-boat",
+        "paper-bridge"
+      ],
+      "wholeClaimBoundary": "Retain the whole existing modelling, equipment observation, recording and conclusion claims, including a changed case. Existing hard prerequisites remain; association never certifies that readiness. Table/bar-chart/key readiness for the broader inherited data-presentation path remains separately assessed, rather than falsely becoming an Ontario K obligation."
+    },
+    "safety-and-get-help": {
+      "task": "Before the actual build/movement activities identify a safe work area and applicable classroom rules, demonstrate safe handling, and explain what injury a chosen rule helps prevent. Use an original fictional card: a pupil has a collision and says their head hurts or they do not feel right. Choose to stop the activity and tell a trusted adult for help; no child diagnoses a concussion or decides return-to-play. Separately use offline fictional in-person/online discomfort cards (a person asks for an address or a game feels unsafe): pause/stop, avoid sharing private information and seek a suitable trusted adult. Change the setting and identify another help route if the first adult is unavailable.",
+      "positive": "Actual safe practice, a reason for the rule and age-appropriate help-seeking in both in-person/online cases are demonstrated.",
+      "nearMiss": "Recites a rule while handling equipment unsafely, keeps playing through a suspected injury, or shares personal information to make an unfamiliar online person happy.",
+      "transfer": "Different activity/contact context requires a suitable safe action and help route.",
+      "limits": "Fictional scenarios only; no actual injury demonstration, clinical assessment, recovery timetable, compulsory trauma disclosure or real stranger contact."
+    },
+    "natural-built-investigation": {
+      "task": "Compare an actual supervised local planted patch and a built paved/covered area using questions, observations or appropriately dated attributed records. Ask about and describe a natural occurrence, such as a plant change or puddle after rain, without inventing an observed cause. Sort a small actual/photo set containing a living plant/animal and a rock/toy by living/non-living, explaining evidence and a near miss (a battery toy moves but is not alive; a dormant seed need not visibly grow now). Compare actual repeating/similar forms in the two environments while distinguishing approximate natural patterns from perfect repeated tiles; do not claim all nature follows an ABB rule. Use a hand lens or other suitable simple equipment to describe and compare actual observable features. Include a plant, a fallen dead leaf, a stone and a battery toy so the separate whole living/dead/never-alive claim can be checked without mistaking movement for life. For the whole local-feature claim at age six, separately distinguish an actual natural feature, a managed planted area and a built feature, locating their relative positions on a simple prepared/own plan. The source task itself does not require the full older classification vocabulary or claim that all environments are untouched nature.",
+      "positive": "Own question/description, supported classification and a comparison of patterns in natural ANDbuilt settings occur.",
+      "nearMiss": "Uses movement alone as a definition of life, calls a dormant seed dead merely because it is still, or describes only the human-made location.",
+      "transfer": "New item or observation tests the classification/comparison; use new actual environmental evidence.",
+      "resourceCondition": "Actual local environments or dated records must be selected; an invented universal local landscape is not substituted.",
+      "wholeClaimBoundary": "An equipment observation supports a specific pattern comparison; it does not establish that every natural shape has a formal repeating unit. Preserve dormant-seed and moving-toy counterexamples. The broader three-way life-history and natural/managed/built claims use a conservative single-age-six context, without lowering their whole-claim scope to four."
+    }
+  },
+  "resources": {
+    "foil-boat": {
+      "kind": "Original actual model investigation",
+      "materials": [
+        "two equal pieces of safe foil",
+        "shallow supervised water tray",
+        "large uniform counters",
+        "drawing/table recording sheet"
+      ],
+      "build": [
+        "Choose and shape a model intended to carry counters on water. Explain an intended shape/function relation.",
+        "Select a change to the hull shape while keeping foil amount and counter type the same."
+      ],
+      "test": [
+        "Before each trial predict what will happen. Add counters by the same stated method until the chosen stopping criterion is reached; do not invent results.",
+        "Compare actual first/revised designs, identifying what changed and what the results can support."
+      ],
+      "record": [
+        "Draw the model and record actual counts/observations in a small table or supported tally.",
+        "Explain the result against the original question, compare the prediction and suggest one targeted improvement."
+      ],
+      "limits": "Adult prepares safe materials, catches spills and supervises; no testing of a real boat carrying people or floating children."
+    },
+    "paper-bridge": {
+      "kind": "Original actual structure investigation",
+      "materials": [
+        "two stable low supports",
+        "safe card/paper pieces",
+        "large uniform counters",
+        "drawing/table recording sheet"
+      ],
+      "build": [
+        "Set a small gap and an intended load criterion. Choose, fold and join a simple spanning structure.",
+        "Compare an initial flat span with an own altered fold, retaining the same gap and stated load method."
+      ],
+      "test": [
+        "Predict before loading, then test the actual constructed span by the same safe placement method.",
+        "Observe whether the stated criterion is met and compare the two versions with the actual evidence."
+      ],
+      "record": [
+        "Draw the actual structure and its changed feature. Record the real outcome and explain why a supported shape choice mattered.",
+        "Give a changed-gap or changed-material prediction as a proposal, not an already measured result."
+      ],
+      "limits": "Small tabletop models only; no standing on a structure, sharp tools or high loads."
+    }
+  },
+  "records": [
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B11",
+      "code": "B11",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "An own route programme includes creating, literal following, testing, repair and a recoverable sequence.",
+      "protocolIds": [
+        "route-instructions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt__p5n8z5soJ",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Y9XKzLrUAZ",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_qeZYF6HZ4o",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B11.1",
+      "code": "B11.1",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Give and follow a changed route using actual direction and position language.",
+      "protocolIds": [
+        "route-instructions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Y9XKzLrUAZ",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_qeZYF6HZ4o",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B11.2",
+      "code": "B11.2",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Run a proposed sequence, identify a mismatch and revise the actual instruction.",
+      "protocolIds": [
+        "route-instructions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt__p5n8z5soJ",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B11.3",
+      "code": "B11.3",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Record the ordered route in arrows, words or pictures that a partner can recover.",
+      "protocolIds": [
+        "route-instructions"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt__p5n8z5soJ",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12",
+      "code": "B12",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "An own question, prediction, construction, trial, evidence record and conclusion form a complete investigation portfolio.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ZFwPZaDJ0_",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.1",
+      "code": "B12.1",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Pose meaningful questions and identify a practical design problem before selecting a way to investigate.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.2",
+      "code": "B12.2",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Make an initial prediction and compare it with carefully observed actual events.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.3",
+      "code": "B12.3",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Choose workable building materials and handle suitable tools intentionally.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.4",
+      "code": "B12.4",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Explain what the evidence supports and communicate the actual result with an original record.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_ZFwPZaDJ0_",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.5",
+      "code": "B12.5",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Produce and test both an own boat model and a small spanning structure, rather than only inspect an adult product.",
+      "protocolIds": [
+        "inquiry-build-test"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B12.6",
+      "code": "B12.6",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Practise the applicable precautions, explain their purpose and use the supplied injury/help scenario appropriately.",
+      "protocolIds": [
+        "safety-and-get-help"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_TTH2ouwyTW",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B13",
+      "code": "B13",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Use actual environmental evidence, a supported classification and a natural/built comparison.",
+      "protocolIds": [
+        "natural-built-investigation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_Sa48W7KXB5",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B13.1",
+      "code": "B13.1",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Ask about a real phenomenon and describe what was actually observed without inventing its cause.",
+      "protocolIds": [
+        "natural-built-investigation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B13.2",
+      "code": "B13.2",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Explain a supported grouping using the actual living, formerly living and never-living counterexamples.",
+      "protocolIds": [
+        "natural-built-investigation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_Sa48W7KXB5",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-B13.3",
+      "code": "B13.3",
+      "disposition": "Full",
+      "meaning": "Prepared source-duty authoring programme, not observed performance or whole-topic certification.",
+      "requiredTaskDuty": "Compare observed patterns in a natural feature and a built setting without imposing a universal mathematical repeat law.",
+      "protocolIds": [
+        "natural-built-investigation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "implementationConditions": [
+        "Actual safe materials and supervised learner activity; original results are recorded rather than invented.",
+        "Source programme window is4–6; graph contribution bands are conservative implementation choices, not official per-age milestones or guarantees that every four-year-old masters every linked claim.",
+        "Retain the whole linked claim and its existing prerequisites; use-time readiness and actual resource preparation remain separate."
+      ]
+    }
+  ],
+  "sourceCoverageBoundary": "Formal coding, scientific investigation and environment requirements are implemented in actual tasks. Selected graph links are only components; older whole-claim, readiness and resource duties are retained separately. No broader scientific or mathematical milestone is inferred from one miniature.",
+  "healthSource": {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/concussion-sign-symptoms.html",
+    "use": "Adult preparation for the fictional stop-activity/tell-an-adult case; no child diagnosis or return-to-play decision."
+  }
+}
