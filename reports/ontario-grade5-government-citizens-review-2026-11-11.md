@@ -1,5 +1,7 @@
 # Ontario Grade 5: government and citizens
 
+This is the historical 21-record government/citizens checkpoint. The later [whole-grade source-fit review](ontario-grade5-social-completion-review-2026-11-11.md) and [current ledger](ontario-grade5-social-current-ledger-2026-11-11.json) account for all 41 records; the original historical-pending counts below describe this earlier slice.
+
 The 21 records in strand B have complete source-fit authoring designs. The 20 historical strand A records remain under review. This is a proposed curriculum integration, not evidence that learners passed the tasks, default-branch acceptance or downstream publication.
 
 The [current ledger](ontario-grade5-social-current-ledger-2026-11-11.json) binds every selected record to its contributors and actual task protocol. The [source review](ontario-grade5-social-source-review-2026-11-11.json) identifies the actual Grade 5 course: its misleading copy codename is not used as a grade selector. The official course edition field is 2018; the existing public aggregate identity is preserved.

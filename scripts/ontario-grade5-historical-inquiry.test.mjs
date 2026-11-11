@@ -55,3 +55,31 @@ test('Early relationship repertoire rejects missing case packets and unbound sou
   wrong.preparedCases['metis-longer-term'].sourceRefs = ['https://example.invalid/unreviewed'];
   assert.throws(() => checkCasePackets(wrong), /Unbound case source/);
 });
+
+const integrated = load('reports/ontario-grade5-historical-relationships-integration-2026-11-11.json');
+function checkIntegratedResources(report) {
+  for (const protocol of Object.values(report.protocols)) {
+    assert.ok(protocol.actions.length && protocol.contributorIds.length, 'Missing actual task/contributor');
+    for (const ref of protocol.resourceRefs) {
+      const resource = report.resources[ref];
+      assert.ok(resource, 'Missing integrated resource');
+      if (resource.url) {
+        assert.ok(['http:', 'https:'].includes(new URL(resource.url).protocol), 'Invalid source URL');
+      } else {
+        let target;
+        try { target = load(`reports/${resource.report}`); } catch { assert.fail('Missing resource report'); }
+        for (const part of resource.pointer.split('/').slice(1)) target = target?.[part];
+        assert.ok(target && typeof target === 'object' && Object.keys(target).length, 'Missing resource target');
+      }
+    }
+  }
+}
+test('Historical integrated duties resolve their actual whole-claim resource programmes', () => checkIntegratedResources(integrated));
+test('Historical integrated duties reject absent reports and broken programme pointers', () => {
+  const path = structuredClone(integrated);
+  path.resources['early-organisation'].report = 'absent-source-programme.json';
+  assert.throws(() => checkIntegratedResources(path), /Missing resource report/);
+  const target = structuredClone(integrated);
+  target.resources['early-organisation'].pointer = '/originalResearch/absent';
+  assert.throws(() => checkIntegratedResources(target), /Missing resource target/);
+});
