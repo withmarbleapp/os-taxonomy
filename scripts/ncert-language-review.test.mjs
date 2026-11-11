@@ -12,6 +12,19 @@ const summary = load('../reports/ncert-primary-language-review-summary-2026-11-1
 const corrections = load('../reports/language-intrinsic-prerequisite-corrections-2026-11-10.json');
 const reusableCorrectionFile = 'language-reusable-prerequisite-corrections-2026-11-11.json';
 const reusableCorrections = load(`../reports/${reusableCorrectionFile}`);
+const expressionCorrectionFile = 'expressive-reading-prerequisite-review-2026-11-11.json';
+const expressionCorrection = load(`../reports/${expressionCorrectionFile}`);
+const correctionRegistry = new Map([[reusableCorrectionFile, reusableCorrections],
+  [expressionCorrectionFile, expressionCorrection]]);
+const expressionKeys = [
+  'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.4',
+  'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3',
+];
+const expressionHistoryKeys = [...expressionKeys,
+  'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-GOAL-CG-10',
+  'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-2',
+];
+const expressionOldReportedPaths = [['mt_V-ldQp56bF', 'mt_ZhvwM6LMBL', 'mt_1KCwbGvm1F']];
 const sorted = values => [...values].sort();
 const histogram = rows => rows.reduce((counts, row) => {
   counts[row.disposition] = (counts[row.disposition] ?? 0) + 1;
@@ -157,10 +170,27 @@ function checkCompleteHardPaths(root, reportedPaths, currentEdges = edges) {
     sorted(actualPaths.map(path => JSON.stringify(path))), 'complete current hard paths drift');
 }
 
+function checkExpressionHistoryTable(report) {
+  assert.deepEqual(report.historicalReportedPaths, Object.fromEntries(
+    expressionHistoryKeys.map(key => [key, expressionOldReportedPaths])),
+  'exact expressive history table required');
+}
+
 function checkGraph(reviewRecords, alignments) {
+  checkExpressionHistoryTable(expressionCorrection);
   const expectedPairs = new Set();
   const byKey = new Map(reviewRecords.map(row => [row.key, row]));
   for (const row of reviewRecords) {
+    if (expressionHistoryKeys.includes(row.key)) {
+      if (expressionKeys.includes(row.key)) assert.equal(row.disposition, 'ConditionalGraphRepresentation');
+      const selected = [...(row.conditionalContributions ?? []), ...(row.historicalConditionalContributions ?? [])]
+        .filter(candidate => candidate.topicId === 'mt_V-ldQp56bF');
+      assert.equal(selected.length, 1, 'reviewed expressive candidate cannot disappear');
+      assert.deepEqual(selected[0].historicalHardGatePaths, expressionOldReportedPaths,
+        'exact expressive prerequisite history required');
+      assert.equal(selected[0].dependencyCorrectionReport, expressionCorrectionFile,
+        'retired hard paths need a registered correction report');
+    }
     for (const contribution of row.contributions) {
       assert.ok(topics.has(contribution.topicId), 'missing active contributed topic');
       assert.equal(contribution.topicName, topics.get(contribution.topicId).name, 'active topic label drift');
@@ -177,8 +207,9 @@ function checkGraph(reviewRecords, alignments) {
           context.standards.includes(row.key)), `withheld candidate leaked: ${row.key}`);
       }
       if (candidate.historicalHardGatePaths) {
-        assert.equal(candidate.dependencyCorrectionReport, reusableCorrectionFile,
+        assert.ok(correctionRegistry.has(candidate.dependencyCorrectionReport),
           'retired hard paths need a registered correction report');
+        const registeredCorrection = correctionRegistry.get(candidate.dependencyCorrectionReport);
         assert.ok(candidate.currentHardPathInterpretation?.length > 0);
         checkCompleteHardPaths(candidate.topicId, candidate.inheritedHardGatePaths);
         for (const path of candidate.historicalHardGatePaths) {
@@ -186,7 +217,7 @@ function checkGraph(reviewRecords, alignments) {
           let registeredSoftening = false;
           for (let index = 1; index < path.length; index++) {
             const topicId = path[index - 1], prerequisiteId = path[index];
-            const change = reusableCorrections.changes.find(change =>
+            const change = registeredCorrection.changes.find(change =>
               change.before.topicId === topicId && change.before.prerequisiteId === prerequisiteId);
             if (change) {
               assert.equal(change.before.strength, 'hard');
@@ -433,4 +464,60 @@ test('promoted heard-summary history rejects a changed correction, retired path 
   const missing = structuredClone(records);
   delete missing.find(row => row.key === heardKey).historicalConditionalContributions;
   assert.throws(() => checkHeardComponent(heardReview, missing), /promoted candidate history required/);
+});
+
+test('expressive reading corrects only its complete English prerequisite while retaining intrinsic reading demands', () => {
+  assert.equal(expressionCorrection.changes.length, 1);
+  const { before, after } = expressionCorrection.changes[0];
+  assert.deepEqual([before.topicId, before.prerequisiteId, before.strength],
+    ['mt_V-ldQp56bF', 'mt_ZhvwM6LMBL', 'hard']);
+  assert.equal(after.strength, 'soft');
+  assert.equal(after.topicId, before.topicId); assert.equal(after.prerequisiteId, before.prerequisiteId);
+  assert.deepEqual(edges.filter(e => e.topicId === after.topicId && e.prerequisiteId === after.prerequisiteId), [after]);
+  assert.deepEqual(expressionCorrection.completeHardPathsBefore, [
+    ['mt_V-ldQp56bF', 'mt_ZhvwM6LMBL', 'mt_1KCwbGvm1F'],
+    ['mt_V-ldQp56bF', 'mt_ZhvwM6LMBL', 'mt_YKkCM63fSC'],
+  ]);
+  checkCompleteHardPaths(after.topicId, expressionCorrection.completeHardPathsAfter);
+  assert.deepEqual(expressionCorrection.semanticChanges,
+    { dependencies: 1, newTopics: 0, claims: 0, guides: 0, ages: 0, associations: 0, sourceDispositions: 0 });
+  assert.deepEqual(expressionCorrection.originalUntestedTask.tasks.map(t => t.id),
+    ['new-grade-appropriate-passage', 'self-monitor-and-correct', 'familiar-reread', 'changed-structure-transfer']);
+  assert.match(expressionCorrection.originalUntestedTask.successRule, /accurate recognition/);
+  assert.match(expressionCorrection.originalUntestedTask.successRule, /self-correction/);
+  for (const key of expressionKeys) {
+    const row = records.find(row => row.key === key);
+    assert.equal(row.contributions.length, 0, 'no premature source association');
+    assert.ok(row.remainingConditions.length, 'actual role/material conditions remain');
+  }
+  checkGraph(records, contexts);
+});
+test('expressive source and goal bindings reject deleted candidate/history, unregistered correction and missing current paths', () => {
+  for (const key of expressionHistoryKeys) {
+    for (const mutation of ['candidate', 'history', 'correction', 'current']) {
+      const rows = structuredClone(records), row = rows.find(row => row.key === key);
+      const candidate = row.conditionalContributions[0];
+      if (mutation === 'candidate') row.conditionalContributions = [];
+      if (mutation === 'history') delete candidate.historicalHardGatePaths;
+      if (mutation === 'correction') candidate.dependencyCorrectionReport = 'unregistered.json';
+      if (mutation === 'current') candidate.inheritedHardGatePaths = [];
+      assert.throws(() => checkGraph(rows, contexts));
+    }
+    const historical = structuredClone(records), row = historical.find(row => row.key === key);
+    row.historicalConditionalContributions = row.conditionalContributions;
+    row.conditionalContributions = [];
+    checkGraph(historical, contexts);
+    delete row.historicalConditionalContributions[0].historicalHardGatePaths;
+    assert.throws(() => checkGraph(historical, contexts), /exact expressive prerequisite history required/);
+  }
+});
+
+test('expressive review rejects a missing history table, entry or path', () => {
+  for (const mutation of ['table', 'entry', 'path']) {
+    const report = structuredClone(expressionCorrection);
+    if (mutation === 'table') delete report.historicalReportedPaths;
+    if (mutation === 'entry') delete report.historicalReportedPaths[expressionHistoryKeys[0]];
+    if (mutation === 'path') report.historicalReportedPaths[expressionHistoryKeys[0]] = [];
+    assert.throws(() => checkExpressionHistoryTable(report), /exact expressive history table required/);
+  }
 });

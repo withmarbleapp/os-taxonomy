@@ -130,14 +130,14 @@
       "attainmentReference": "stage-end",
       "applicability": {},
       "contributions": [],
-      "rationale": "Accurate oral reading, phrasing, expression, rereading and correction are all retained in the whole existing operation. A qualified assessor selects a suitable R1 text and evaluates its actual linguistic units rather than imposing English phoneme/grapheme conventions.",
+      "rationale": "The complete expressive-reading operation still requires actual grade/stage-appropriate word recognition, accuracy, pacing, expression, self-correction and rereading. Its overstrong whole English prerequisite is now useful soft support; actual-role/full-task evidence remains a separate qualification and no scoped association or Full promotion is added.",
       "assessmentProtocols": [
         "r1-reading-fluency"
       ],
       "remainingConditions": [
-        "Separate reviewed dependency/consumer decision required before the conditional generic graph candidate can be published."
+        "The registered whole-prerequisite correction removes the universal English-repertoire hard gate. Actual-role material, competent assessment and complete accuracy/rate/prosody/self-correction/rereading compatibility still require separate review before this withheld candidate is associated."
       ],
-      "graphRepresentation": "conditional-inherited-gate",
+      "graphRepresentation": "corrected-whole-prerequisite-awaiting-role-task-review",
       "conditionalContributions": [
         {
           "topicId": "mt_V-ldQp56bF",
@@ -146,12 +146,19 @@
           "contribution": "Direct shared operation; language-specific success and whole-topic mastery are not inferred from the association.",
           "inheritedHardGatePaths": [
             [
+              "mt_V-ldQp56bF"
+            ]
+          ],
+          "condition": "The registered whole-prerequisite correction removes the universal English-repertoire hard gate. Actual-role material, competent assessment and complete accuracy/rate/prosody/self-correction/rereading compatibility still require separate review before this withheld candidate is associated.",
+          "historicalHardGatePaths": [
+            [
               "mt_V-ldQp56bF",
               "mt_ZhvwM6LMBL",
               "mt_1KCwbGvm1F"
             ]
           ],
-          "condition": "Whole intrinsic operation is shared, but the existing hard-gate chain is not universally valid for arbitrary R1/R2. No unqualified scoped association is published."
+          "dependencyCorrectionReport": "expressive-reading-prerequisite-review-2026-11-11.json",
+          "currentHardPathInterpretation": "Complete remaining hard paths after the registered whole-prerequisite correction; the target is itself the current hard-path leaf. Accurate actual-text word recognition remains intrinsic, not an optional reading demand."
         }
       ],
       "frameworkTaskDesign": "accounted-by-role-bound-protocol"
@@ -748,7 +755,7 @@
       ],
       "remainingConditions": [
         "Bind the actual language/script and qualified assessment materials before use; no universal English substitution.",
-        "Separate reviewed dependency/consumer decision required before the conditional generic graph candidate can be published."
+        "Separate actual-role/full-task review remains necessary before the expressive-reading candidate can be published after the registered whole-prerequisite correction."
       ],
       "graphRepresentation": "conditional-inherited-gate",
       "conditionalContributions": [
@@ -759,12 +766,19 @@
           "contribution": "Direct shared operation; language-specific success and whole-topic mastery are not inferred from the association.",
           "inheritedHardGatePaths": [
             [
+              "mt_V-ldQp56bF"
+            ]
+          ],
+          "condition": "The whole English-repertoire hard gate is corrected; this goal-level candidate remains withheld pending actual-role/full-task review, alongside the goal\u2019s other language/script conditions.",
+          "historicalHardGatePaths": [
+            [
               "mt_V-ldQp56bF",
               "mt_ZhvwM6LMBL",
               "mt_1KCwbGvm1F"
             ]
           ],
-          "condition": "Whole intrinsic operation is shared, but the existing hard-gate chain is not universally valid for arbitrary R1/R2. No unqualified scoped association is published."
+          "dependencyCorrectionReport": "expressive-reading-prerequisite-review-2026-11-11.json",
+          "currentHardPathInterpretation": "Complete current hard paths after the registered correction; word recognition and all expressive-reading evidence remain intrinsic."
         }
       ],
       "frameworkTaskDesign": "accounted-by-role-bound-protocol",

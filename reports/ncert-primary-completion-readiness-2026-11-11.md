@@ -32,7 +32,7 @@ retains genuine Health, Arts, fine-motor, sensory and self-care duties. None of 
 | Skill with contextual engagement | 36 | Check the actual skill and retain a separate contextual observation without forcing enjoyment or compliance. |
 | Conditional art-form binding | 11 | Bind accessible school-selected forms/resources; alternatives are not simultaneous universal requirements. |
 | Conditional language binding | 10 | Bind actual role language, script, qualified assessor and checked materials, with separate R1/R2 evidence. |
-| Conditional graph representation | 6 | Keep candidates withheld pending remaining complete-claim/material review; two expressive-reading cases retain LTR/sight-word constraints. |
+| Conditional graph representation | 6 | Keep candidates withheld pending remaining complete-claim/material review; actual-role material and complete-claim review remain necessary; corrected and historical paths are recorded separately. |
 | Partial shared component | 1 | Bind actual R1 materials/assessor and separate source-only success from whole media/quantitative summary evidence; reviewed association interval10–11. |
 | Contextual requirements | 12 | Retain 6 affective, 5 reading-engagement and 1 comfortable hand-preference observation without invented binary mastery claims. |
 | Unverified source meaning | 1 | Retain the exact musical-scale exception without a graph link. |
@@ -73,3 +73,7 @@ reinterpretation or database write is part of this authoring review.
 The [reviewed component](ncert-r1-heard-summary-component-2026-11-11.json) adds one existing-topic association for Preparatory R1 C-1.2. It changes that row from graph-conditional to **Partial**, with actual-role conditions retained. The source stage remains8–11; the narrower10–11 association preserves accepted candidate readiness and does not assert earlier attainment. This follows the historical four-edge correction above and does not change any canonical claim, guide or dependency.
 
 The current catalogue census is492 linked eligible keys and29 unlinked, with1161 topic/standard pairs across244 topics. Full remains444. The remaining unlinked cases are8 art-form bindings,5 language bindings,3 graph-conditional cases,12 contextual requirements and1 Unverified source meaning. These are not29 demonstrated missing topics.
+
+## Expressive-reading prerequisite follow-up
+
+The [whole-prerequisite review](expressive-reading-prerequisite-review-2026-11-11.md) corrects one overstrong hard edge. Actual text word recognition, accuracy, pacing, prosody, self-correction and rereading remain necessary; the complete earlier English-specific repertoire remains useful soft support. The two NCERT expressive-reading candidates remain withheld with their actual-role/full-task conditions. This changes no source disposition, association, canonical claim, guide or age. The current census and Full total above remain unchanged.
