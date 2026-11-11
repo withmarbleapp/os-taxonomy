@@ -32,8 +32,8 @@ retains genuine Health, Arts, fine-motor, sensory and self-care duties. None of 
 | Skill with contextual engagement | 36 | Check the actual skill and retain a separate contextual observation without forcing enjoyment or compliance. |
 | Conditional art-form binding | 11 | Bind accessible school-selected forms/resources; alternatives are not simultaneous universal requirements. |
 | Conditional language binding | 10 | Bind actual role language, script, qualified assessor and checked materials, with separate R1/R2 evidence. |
-| Conditional graph representation | 4 | Keep candidates withheld pending remaining complete-claim/material review; actual-role material and complete-claim review remain necessary; corrected and historical paths are recorded separately. |
-| Partial shared component | 3 | Bind actual role materials/assessor; separate source-only and complete target evidence. Heard-summary10–11; expressive-readingR16–8 andR28–11. |
+| Conditional graph representation | 3 | Keep candidates withheld pending remaining complete-claim/material review; actual-role material and complete-claim review remain necessary; corrected and historical paths are recorded separately. |
+| Partial shared component | 4 | Bind actual role materials/assessor; separate source-only and complete target evidence. Heard-summary10–11; expressive-readingR16–8 andR28–11; functional-writingR28–11. |
 | Contextual requirements | 12 | Retain 6 affective, 5 reading-engagement and 1 comfortable hand-preference observation without invented binary mastery claims. |
 | Unverified source meaning | 1 | Retain the exact musical-scale exception without a graph link. |
 
@@ -46,8 +46,8 @@ one unresolved distinction; an invented interpretation is not a completion step.
 The [four reusable prerequisite corrections](language-reusable-prerequisite-corrections-2026-11-11.md)
 remove unnecessary complete written-note-taking and glossary gates while retaining
 all procedural knowledge. Five graph-conditional positions and two already
-language-conditional goals have affected candidates, but **no disposition or
-association is upgraded**. All topic cards, guides and age intervals remain.
+language-conditional goals had affected candidates in that historical correction, which
+**did not upgrade any disposition or association**. All topic cards, guides and age intervals remain.
 Current and historical paths are distinguished. Actual role-bound task and whole
 claim compatibility remain necessary before publishing those candidates.
 
@@ -72,7 +72,7 @@ reinterpretation or database write is part of this authoring review.
 
 The [reviewed component](ncert-r1-heard-summary-component-2026-11-11.json) adds one existing-topic association for Preparatory R1 C-1.2. It changes that row from graph-conditional to **Partial**, with actual-role conditions retained. The source stage remains8–11; the narrower10–11 association preserves accepted candidate readiness and does not assert earlier attainment. This follows the historical four-edge correction above and does not change any canonical claim, guide or dependency.
 
-The heard-summary follow-up checkpoint was492 linked eligible keys and29 unlinked. The historical accepted PR147 checkpoint after the expressive-reading follow-up was494 linked eligible keys and27 unlinked, with1163 topic/standard pairs across245 topics. Full remains444; Partial is3. Remaining unlinked cases are8 art-form bindings,5 language bindings,1 functional-writing compatibility case,12 contextual requirements and1 Unverified source meaning. These were not27 demonstrated missing topics.
+The heard-summary follow-up checkpoint was492 linked eligible keys and29 unlinked. The historical accepted PR147 checkpoint after the expressive-reading follow-up was494 linked eligible keys and27 unlinked, with1163 topic/standard pairs across245 topics. At that checkpoint Full was444 and Partial was3. Remaining unlinked cases were8 art-form bindings,5 language bindings,1 functional-writing compatibility case,12 contextual requirements and1 Unverified source meaning. These were not27 demonstrated missing topics.
 
 ## Expressive-reading prerequisite follow-up
 
