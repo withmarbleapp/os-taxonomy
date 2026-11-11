@@ -15,9 +15,21 @@ function pointer(value, path) {
 }
 function check(rows, associations, readReport = name => load(`reports/${name}`)) {
   assert.deepEqual(rows.map(row => row.code).sort(), selected, 'CDE source universe differs');
-  for (const row of rows.filter(row => row.dossier)) {
+  for (const row of rows) {
+    assert.ok(['Full', 'Partial'].includes(row.historicalDisposition), 'Missing historical disposition');
+    if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
+    if (row.historicalDisposition === 'Partial') {
+      assert.ok(typeof row.dossier === 'string' && row.dossier.trim(), 'Fresh closure requires a dossier');
+      assert.ok(typeof row.protocolReference === 'string' && row.protocolReference.startsWith('/'), 'Fresh closure requires a protocol binding');
+    }
+    if (!row.dossier) continue; // Explicitly retained historical Full rows have no fresh task certification.
     const report = readReport(row.dossier);
     const protocol = pointer(report, row.protocolReference);
+    if (row.disposition === 'Full') {
+      const owners = [report, protocol].filter(value => Object.hasOwn(value, 'remainingConditions'));
+      assert.ok(owners.length > 0, 'Missing explicit task condition status');
+      for (const owner of owners) assert.deepEqual(owner.remainingConditions, [], 'Unresolved Full task condition');
+    }
     assert.ok(protocol.codes.includes(row.code), 'Source protocol mismatch');
     assert.deepEqual([...protocol.contributorIds].sort(), [...row.contributingTopicIds].sort(), 'Task contributor mismatch');
     const actual = new Set(associations.filter(context => context.country === 'CA' && context.region === 'Ontario' && context.ageRangeStart === 10 && context.ageRangeEnd === 11 && context.standards.includes(`${slug}:${row.code}`)).map(context => context.topicId));
@@ -98,7 +110,6 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       const actualPhases = new Set(protocol.caseRefs.map(ref => report.preparedCases[ref].phase));
       assert.deepEqual([...actualPhases].sort(), ['gas', 'liquid', 'solid'], 'Missing required state application');
     }
-    if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
   }
 }
 test('Grade 5 CDE fresh task evidence binds source universe, actual contributors and prepared cases', () => check(ledger.expectations, contexts));
@@ -247,4 +258,33 @@ test('Grade 5 final energy programme retains actual actions, social effects and 
   assert.throws(() => check(ledger.expectations, contexts, report => report === overall ? damaged : load(`reports/${report}`)), /Missing integrated energy\/resource duty/);
   const unbound = structuredClone(load(`reports/${overall}`)); delete unbound.preparedCases.law.dossierRefs;
   assert.throws(() => check(ledger.expectations, contexts, report => report === overall ? unbound : load(`reports/${report}`)), /Missing qualified energy resource binding/);
+});
+
+
+test('Grade 5 fresh closures cannot silently lose their dossier or protocol binding', () => {
+  for (const row of ledger.expectations.filter(value => value.historicalDisposition === 'Partial')) {
+    for (const [field, error] of [['dossier', /Fresh closure requires a dossier/], ['protocolReference', /Fresh closure requires a protocol binding/]]) {
+      const damaged = structuredClone(ledger.expectations);
+      delete damaged.find(value => value.code === row.code)[field];
+      assert.throws(() => check(damaged, contexts), error);
+    }
+  }
+});
+
+test('Grade 5 Full closure checks actual report and selected protocol conditions', () => {
+  for (const row of ledger.expectations.filter(value => value.historicalDisposition === 'Partial')) {
+    const original = load(`reports/${row.dossier}`);
+    for (const owner of ['report', 'protocol']) {
+      const damaged = structuredClone(original);
+      const target = owner === 'report' ? damaged : pointer(damaged, row.protocolReference);
+      // Introducing a condition at either supported location must contradict Full,
+      // even when the ledger and the other owner still say there is none.
+      target.remainingConditions = ['An actual source/resource condition remains unresolved.'];
+      assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? damaged : load(`reports/${name}`)), /Unresolved Full task condition/);
+    }
+    const missing = structuredClone(original);
+    delete missing.remainingConditions;
+    delete pointer(missing, row.protocolReference).remainingConditions;
+    assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? missing : load(`reports/${name}`)), /Missing explicit task condition status/);
+  }
 });
