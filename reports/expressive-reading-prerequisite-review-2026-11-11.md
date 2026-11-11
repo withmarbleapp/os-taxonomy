@@ -41,10 +41,12 @@ never manufactured to finish the checklist.
 All twelve direct scoped contexts, sixty source codes and the three hard ancestor
 poetry claims retain their original meanings and ages. Two exact NCERT source components now become **Partial**: FoundationR1 C-10.4 at6–8 within source3–8, and PreparatoryR2 C-2.3 at8–11. Each retains actual-role material and qualified-assessor conditions. Their source-only tasks do not certify every whole-target clause or cross-language mastery. The two broader goals remain withheld. All four bindings preserve exact history and complete current paths.
 
-The two intervals remain separate; neither an earlier readiness claim nor a6–11 union is introduced. No canonical card, guide, age or Full promotion occurs. The cumulative census is494 linked eligible keys and27 unlinked,1163 pairs across245 topics,444 Full and3 Partial. The strict context schema has no material/assessor field: the exact role/source-key bindings and public report retain those conditions.
+The two intervals remain separate; neither an earlier readiness claim nor a6–11 union is introduced. No canonical card, guide, age or Full promotion occurs. The accepted PR147 checkpoint census was494 linked eligible keys and27 unlinked,1163 pairs across245 topics,444 Full and3 Partial. The strict context schema has no material/assessor field: the exact role/source-key bindings and public report retain those conditions.
 
 Hard versus soft affects future readiness and inference. This authoring change
 performs no downstream publication, learner reset, score transfer or historical
 evidence reinterpretation. Consumers must qualify publication separately.
 
 The review was explicitly stacked as PR145 on PR146 for shared generated artifacts. PR146 reached main; PR145 was then accepted into the old feature branch before retargeting completed. A final ordinary main-target PR delivers the already reviewed India-only one-edge/two-context change against accepted main86e4e17. All13 Ontario pairs, two new Ontario contexts and four authored files are preserved. Feature-branch acceptance is not default-branch delivery or downstream publication.
+
+The later [functional-writing component](ncert-r2-functional-writing-component-2026-11-11.md) updates the cumulative census to495 linked/26 unlinked,1164 pairs across246 topics,444 Full and4 Partial. The expressive-reading claims, exact two intervals and four history bindings remain unchanged.

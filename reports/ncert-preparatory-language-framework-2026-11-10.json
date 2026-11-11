@@ -29,8 +29,8 @@
   "coverageMeaning": "Reviewed source-fit framework authoring is separate from directly representable graph coverage and from any learner attainment. Conditional/script/engagement cases remain distinct from Full. Actual language material binding happens at use; no national fixed language pair is needed.",
   "summary": {
     "Full": 20,
-    "Partial": 2,
-    "ConditionalGraphRepresentation": 4,
+    "Partial": 3,
+    "ConditionalGraphRepresentation": 3,
     "ConditionalLanguageBinding": 5,
     "ContextualReadingEngagement": 4
   },
@@ -98,13 +98,13 @@
           ]
         }
       ],
-      "rationale": "The complete current summary\u2192oral-paraphrase hard path has no script, reading or writing gate. The shared operation supports a component association while actual R1 materials, complete source-task realization and whole-candidate evidence remain explicit conditions. No source-only result or association establishes full-topic mastery.",
+      "rationale": "The complete current summary→oral-paraphrase hard path has no script, reading or writing gate. The shared operation supports a component association while actual R1 materials, complete source-task realization and whole-candidate evidence remain explicit conditions. No source-only result or association establishes full-topic mastery.",
       "assessmentProtocols": [
         "heard-summary"
       ],
       "remainingConditions": [
         "Bind actual R1 material and a competent language/variety assessor before use; no fixed national language pair or cross-language transfer is inferred.",
-        "Only the reviewed component interval10\u201311 is associated. The source stage remains8\u201311; no earlier readiness is asserted.",
+        "Only the reviewed component interval10–11 is associated. The source stage remains8–11; no earlier readiness is asserted.",
         "Source-only read-aloud success does not establish the complete media/quantitative summary claim or its oral-paraphrase prerequisite."
       ],
       "historicalConditionalContributions": [
@@ -1373,7 +1373,7 @@
         "Supply genuine appropriate-stage actual-role written material and a competent language/variety assessor; record exact accepted readings and independent performance.",
         "Accurate written-word recognition and appropriate pacing/pauses remain necessary; apply the full target prosody/rereading/self-correction checks when assessing whole topic. A source-only successful passage does not automatically demonstrate every target clause.",
         "Do not credit rehearsed oral recitation, adult-supplied words, guessed text or an unobserved self-correction opportunity as complete target mastery.",
-        "No fixed national language pair and no R1\u2192R2, script\u2192script or text-level mastery transfer is inferred from sharing a topic ID."
+        "No fixed national language pair and no R1→R2, script→script or text-level mastery transfer is inferred from sharing a topic ID."
       ],
       "graphRepresentation": "active-shared-component-with-actual-role-conditions",
       "historicalConditionalContributions": [
@@ -1551,7 +1551,7 @@
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.2",
       "officialCode": "C-3.2",
       "languageRole": "R2",
-      "disposition": "ConditionalGraphRepresentation",
+      "disposition": "Partial",
       "sourceStatus": "formal-stage-standard",
       "sourcePages": [
         240
@@ -1562,7 +1562,18 @@
       ],
       "attainmentReference": "stage-end",
       "frameworkTaskDesign": "accounted-by-role-bound-protocol",
-      "contributions": [],
+      "contributions": [
+        {
+          "topicId": "mt__MDiDU9Vck",
+          "topicName": "Writing to inform",
+          "role": "component",
+          "associationAgeBand": [
+            8,
+            11
+          ],
+          "rationale": "Names a topic and selects relevant informative details in purposeful composition. All actual-R2 written formats and complete target/prerequisite checks remain separate conditions; no universal language mastery or Full result."
+        }
+      ],
       "conditionalContributions": [
         {
           "topicId": "mt_AHXePdicRf",
@@ -1597,13 +1608,20 @@
           "currentHardPathInterpretation": "Complete remaining hard paths after the registered correction; these paths are not alone a claim that all remaining prerequisites are incompatible."
         }
       ],
-      "rationale": "The intrinsic multimodal-composition candidate accounts for reader-purpose choices. The reviewed corrections remove broad writing-process-glossary gates from its underlying procedures. Actual R2 meaningful text and complete remaining claim/dependency requirements still need separate review before an active association.",
+      "rationale": "The narrower existing informative-composition claim contributes relevant information production. Actual R2 written products and its complete unchanged oral-rehearsal/sentence-building chain are assessed explicitly. The full multimodal candidate remains withheld; a source-only handwritten product does not establish its digital/picture-book operations.",
       "assessmentProtocols": [
         "purposeful-functional-writing"
       ],
       "remainingConditions": [
-        "Separate review of actual role-bound materials and the complete remaining claim/dependency requirements is needed before the conditional generic candidate can be published."
-      ]
+        "Bind actual R2 language/variety/script, checked native materials and a competent assessor; no fixed national pair or cross-role inference.",
+        "Require independently pupil-authored actual-R2 poster, invitation and safe written instructions with appropriate information, audience/purpose decisions and revision; drawing, dictation, adult copying or spoken-only instructions do not replace source writing.",
+        "Assess the complete informative claim separately: named topic, relevant 2–3 facts and informative drawing/diagram labels; a short source-format product alone does not establish the whole topic.",
+        "Retain and separately assess the complete unchanged actual-language oral-rehearsal and sentence-building hard chain. No English word order is imposed, and no native grammar incompatibility is silently resolved.",
+        "The complete multimodal candidate and broader R2 writing goal remain withheld; digital/picture-book evidence is not a mandatory source format."
+      ],
+      "initialDisposition": "ConditionalGraphRepresentation",
+      "initialRationale": "The intrinsic multimodal-composition candidate accounts for reader-purpose choices. The reviewed corrections remove broad writing-process-glossary gates from its underlying procedures. Actual R2 meaningful text and complete remaining claim/dependency requirements still need separate review before an active association.",
+      "functionalWritingReview": "ncert-r2-functional-writing-component-2026-11-11.json"
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.3",
@@ -1796,7 +1814,7 @@
               "mt_V-ldQp56bF"
             ]
           ],
-          "condition": "The whole English-repertoire hard gate is corrected; this goal-level candidate remains withheld pending actual-role/full-task review, alongside the goal\u2019s other language/script conditions.",
+          "condition": "The whole English-repertoire hard gate is corrected; this goal-level candidate remains withheld pending actual-role/full-task review, alongside the goal’s other language/script conditions.",
           "historicalHardGatePaths": [
             [
               "mt_V-ldQp56bF",
@@ -2093,8 +2111,8 @@
   "identifierDisclosure": "R1/R2 and stage/area qualifiers are generated source identities that preserve independently printed source positions; the literal CG/C codes are retained. Repeated R1 C-4.1/C-4.2 are not deduplicated or interpreted as new mastery claims.",
   "consumerBoundary": "No unqualified association is published through a known fixed-English hard chain. Safe component links do not certify universal language mastery or authorise transfer/reset of any learner estimate.",
   "graphCounts": {
-    "activeAssociations": 63,
-    "sharedTopics": 23,
+    "activeAssociations": 64,
+    "sharedTopics": 24,
     "conditionalCandidatesNotPublished": 10,
     "meaning": "Active whole/component associations retain each source disposition and actual-role conditions; this is not unconditional source or learner mastery."
   },
