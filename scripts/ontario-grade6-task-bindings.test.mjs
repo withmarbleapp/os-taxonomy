@@ -25,6 +25,10 @@ function checkBindings(rows, associations, readReport = name => load(`reports/${
     assert.ok(protocol.codes.includes(row.code), 'Protocol does not cover this code');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
     for (const caseId of protocol.caseRefs ?? []) assert.ok(report.preparedCases?.[caseId], 'Missing prepared case');
+    for (const asset of protocol.assetRefs ?? []) {
+      assert.ok(asset.startsWith('assets/') && !asset.includes('..'), 'Invalid task asset path');
+      assert.ok(readFileSync(new URL(`../reports/${asset}`, import.meta.url), 'utf8').includes('<svg'), 'Missing task asset');
+    }
     for (const ref of protocol.resourceRefs ?? []) {
       const resource = report.resources[ref];
       assert.ok(resource, 'Missing resource');
@@ -72,4 +76,30 @@ test('Grade6 historical case links detect missing actual packets', () => {
   const damaged = structuredClone(load(`reports/${dossier}`));
   delete damaged.preparedCases['postwar-rights'];
   assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === dossier ? damaged : load(`reports/${name}`)), /Missing prepared case/);
+});
+
+
+test('Named-city approximation and plotted answer agree with source and graticule', () => {
+  const report = load('reports/ontario-grade6-country-city-location-design-2026-11-11.json');
+  const fixtures = report.originalMapFixtures;
+  const task = readFileSync(new URL(`../reports/${fixtures.originalAssets[0]}`, import.meta.url), 'utf8');
+  const answer = readFileSync(new URL(`../reports/${fixtures.originalAssets[1]}`, import.meta.url), 'utf8');
+  assert.ok(!task.includes('data-city='), 'Task should not contain answer markers');
+  const markers = [...answer.matchAll(/<circle\b[^>]*>/g)].map(match => Object.fromEntries([...match[0].matchAll(/([a-z-]+)="([^"]*)"/g)].map(a => [a[1], a[2]]))).filter(attrs => attrs['data-city']);
+  for (const point of fixtures.cityCoordinates) {
+    const {latitude, longitude} = point.teachingApproximation;
+    const unit = point.resolutionDegrees;
+    assert.ok(Math.abs(latitude - Math.round(point.sourceDecimal.latitude / unit) * unit) < 1e-9);
+    assert.ok(Math.abs(longitude - Math.round(point.sourceDecimal.longitude / unit) * unit) < 1e-9);
+    const marker = markers.find(row => row['data-city'] === point.city);
+    assert.ok(marker, 'Missing actual city answer');
+    assert.equal(Number(marker['data-latitude']), latitude);
+    assert.equal(Number(marker['data-longitude']), longitude);
+    const panel = point.panel;
+    const [west, east] = panel.longitudeBounds;
+    const [south, north] = panel.latitudeBounds;
+    assert.ok(latitude >= south && latitude <= north && longitude >= west && longitude <= east);
+    assert.ok(Math.abs(Number(marker.cx) - (longitude - west) / (east - west) * panel.width) < 0.02);
+    assert.ok(Math.abs(Number(marker.cy) - (north - latitude) / (north - south) * panel.height) < 0.02);
+  }
 });
