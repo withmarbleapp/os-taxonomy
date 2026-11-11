@@ -22,6 +22,7 @@ function checkBindings(rows, associations) {
     if (Array.isArray(protocol.codes)) assert.ok(protocol.codes.includes(row.code), `Wrong protocol code for ${row.code}`);
     if (row.disposition === 'Full') {
       assert.deepEqual(row.remainingConditions, [], `Unresolved Full condition for ${row.code}`);
+      checkIntegratedSpecifics(row, protocol, rows);
       for (const code of protocol.requiresSpecificDispositions ?? []) assert.equal(rows.find(item => item.code === code)?.disposition, 'Full', `Unresolved integrated specific ${code}`);
     }
   }
@@ -239,4 +240,22 @@ test('Canadian institution repertoire requires actual FN, Métis and Inuit struc
   const lostSource = structuredClone(report);
   lostSource.preparedInstitutionCards.metis.sourceRefs = ['https://example.invalid/unreviewed'];
   assert.throws(() => checkCurrentIndigenousStructures(lostSource), /Missing actual institution source/);
+});
+
+function checkIntegratedSpecifics(row, protocol, rows) {
+  const specifics = codes.filter(code => code.startsWith(row.code + '.'));
+  if (row.code.includes('.') || !specifics.length) return;
+  assert.deepEqual(sorted(protocol.requiresSpecificDispositions ?? []), sorted(specifics), `Incomplete whole-source rollup ${row.code}`);
+  for (const code of specifics) assert.equal(rows.find(item => item.code === code)?.disposition, 'Full', `Unresolved whole-source specific ${code}`);
+}
+test('Grade5 whole-government rollup includes every actual source specific rather than optional flags', () => {
+  const row = ledger.expectations.find(item => item.code === 'B3');
+  const protocol = read('reports/ontario-grade5-citizens-government-integration-2026-11-11.json').protocols['citizens-and-government'];
+  checkIntegratedSpecifics(row, protocol, ledger.expectations);
+  const lostSpecific = structuredClone(protocol);
+  lostSpecific.requiresSpecificDispositions.pop();
+  assert.throws(() => checkIntegratedSpecifics(row, lostSpecific, ledger.expectations), /Incomplete whole-source rollup/);
+  const pending = structuredClone(ledger.expectations);
+  pending.find(item => item.code === 'B3.3').disposition = 'Unverified';
+  assert.throws(() => checkIntegratedSpecifics(row, protocol, pending), /Unresolved whole-source specific/);
 });

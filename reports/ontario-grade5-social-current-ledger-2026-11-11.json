@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "92d11a2e3ccfe1c80c25014c4ab413f635f9e6c3",
+  "localDependencyCommit": "53982cca80c252dd736efc14528e96fcf6d9023e",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "20 source-fit Full authoring designs and21 separately unverified records; integratedB3 and20historical records remain distinct.",
+  "status": "All 21 government/citizen strand records have source-fit Full authoring designs;20 historical records remain unverified. Source-fit design is not learner attainment or default-main acceptance.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Unverified": 21,
-    "Full": 20
+    "Unverified": 20,
+    "Full": 21
   },
   "associationInventory": {
-    "pairs": 40,
+    "pairs": 46,
     "topics": 12,
-    "codes": 20,
+    "codes": 21,
     "newClaims": 3,
     "reusedClaims": 9
   },
@@ -321,11 +321,19 @@
     },
     {
       "code": "B3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_exDuOAslx1",
+        "mt__r2dOQMc-B",
+        "mt_vTYqDVwV4e",
+        "mt_xswgDb7eIU",
+        "mt_2GDBmKCJxs",
+        "mt_g8gJIsDxmj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-citizens-government-integration-2026-11-11.json",
+      "protocolReference": "/protocols/citizens-and-government",
+      "coverageBasis": "All 9 specific duties and complete integrated roles/responsibility/transfer programme are accounted for; actual current FN/Métis/Inuit structures, rights, public input and separate consultation duty remain distinct. No learner attainment is inferred."
     },
     {
       "code": "B3.1",
@@ -425,5 +433,5 @@
       "protocolReference": "/protocols/citizens-take-action"
     }
   ],
-  "next": "Continue actual government responsibilities, public-input/consultation and pre-1713 history duties with reuse before bounded knowledge proposals."
+  "next": "Complete20 pre-1713 historical source records through shared methods and bounded factual knowledge review; retain actual later Métis emergence chronology."
 }
