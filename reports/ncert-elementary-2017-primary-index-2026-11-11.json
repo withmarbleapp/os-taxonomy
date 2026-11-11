@@ -11,73 +11,24 @@
     "bytes": 16481419,
     "pdfPages": 128
   },
-  "scope": {
-    "area": "Mathematics",
-    "grades": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
-    "records": 49,
-    "recordsByGrade": {
-      "1": 9,
-      "2": 7,
-      "3": 12,
-      "4": 13,
-      "5": 8
-    },
-    "pdfPages": [
-      73,
-      74,
-      75,
-      76,
-      77,
-      78,
-      79,
-      80,
-      81,
-      82,
-      83
-    ],
-    "printedPages": [
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62,
-      63,
-      64,
-      65
-    ],
-    "sourceColumn": "learning-outcomes",
-    "excluded": [
-      "suggested-pedagogical-processes",
-      "stage-introduction-and-curricular-expectations",
-      "Grades 6–8",
-      "other subject sections",
-      "Physical Education"
-    ]
-  },
-  "identifierTreatment": "Generated document/edition, subject, printed grade and top-level outcome-bullet ordinal. No official per-outcome code is supplied; nested operations and examples stay attached to their original parent position. These are 49 printed positions, not 49 new skills.",
+  "identifierTreatment": "Generated document/edition, subject, printed grade and top-level outcome-bullet ordinal. No official per-outcome code is supplied; nested operations and examples stay attached to their original parent position. These are 92 printed positions, not 49 new skills.",
   "sourceKind": "2017-classwise-learning-outcome-reference",
   "current2026IndividualApplicability": "Unverified",
   "currentApplicabilityMeaning": "The original 2017 grade-specific reference is verified. Current official indexing and the later NCF-SE/textbook rollout do not establish that every individual 2017 outcome is unchanged, superseded or equivalent in 2026. No comprehensive current-primary coverage claim follows.",
   "publicationTreatment": "Factual generated identifiers and source metadata only; restricted wording and original PDF bytes remain private.",
   "verification": {
-    "all11PrimaryTablePagesVisuallyRead": true,
-    "independentReconstructions": "Bounding-box top-level bullet inventory and separately cropped Poppler right-column extraction match all49 private texts ignoring whitespace.",
+    "independentReconstructions": "Bounding-box top-level bullet inventories and separately cropped Poppler right-column reconstructions match all49 Mathematics and all43 EVS private texts ignoring whitespace.",
     "tableBoundaryCases": [
       "The first Grade 1 printed bullet combines two clauses; it remains one position.",
       "The Grade 1 pattern diagram is attached to its parent outcome, not an extra source record.",
       "PDF76 and81 contain no additional outcome-column positions.",
-      "Nested dash operations, examples and page continuations remain attached; no left-column classroom activity is ingested."
+      "Nested dash operations, examples and page continuations remain attached; no left-column classroom activity is ingested.",
+      "EVS PDF97,100,103 contain no additional outcome-column positions; the inclusive-guidance cross-reference on103 is not an outcome.",
+      "Inline italic local terms stay in their true reading order; vertical font-box variation is not a new line or separate outcome.",
+      "All printed contextual play/social positions remain. PE exclusion means no separate physical-skill authoring/coverage claim; no printed source row is deleted merely for mentioning play."
     ],
-    "noTopicCoverageInferred": true
+    "noTopicCoverageInferred": true,
+    "all20PrimaryTablePagesVisuallyRead": true
   },
   "baselineSeparation": {
     "selectedExistingSourceFamilies": [
@@ -88,9 +39,9 @@
     "eligibleExistingPositions": 521,
     "existingLinkedPositions": 495,
     "existingUnlinkedPositions": 26,
-    "new2017ReferencePositions": 49,
+    "new2017ReferencePositions": 92,
     "newAssociations": 0,
-    "meaning": "The 49 unmapped 2017 reference positions are not 49 proven taxonomy gaps and are not added to the 521 current selected-baseline coverage denominator. Edition/requirement reconciliation is separate."
+    "meaning": "The 92 unmapped 2017 reference positions are not 92 proven taxonomy gaps and are not added to the 521 current selected-baseline coverage denominator. Edition/requirement reconciliation is separate."
   },
   "records": [
     {
@@ -925,6 +876,849 @@
       "printedPages": [
         65
       ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO01",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO02",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO03",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO04",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO05",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO06",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO07",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        95
+      ],
+      "printedPages": [
+        77
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO08",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO09",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO10",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO11",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO12",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO13",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO14",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G3-LO15",
+      "code": "IN-NCERT-LO-2017-EVS-G3-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 3,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        96
+      ],
+      "printedPages": [
+        78
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO01",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO02",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO03",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO04",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO05",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO06",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO07",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO08",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO09",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        98
+      ],
+      "printedPages": [
+        80
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO10",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO11",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO12",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO13",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO14",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G4-LO15",
+      "code": "IN-NCERT-LO-2017-EVS-G4-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 4,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        99
+      ],
+      "printedPages": [
+        81
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO01",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO02",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO03",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO04",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO05",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO06",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO07",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO08",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        101
+      ],
+      "printedPages": [
+        83
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO09",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        84
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO10",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        84
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO11",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        84
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO12",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        84
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-EVS-G5-LO13",
+      "code": "IN-NCERT-LO-2017-EVS-G5-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Environmental Studies",
+      "grade": 5,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        102
+      ],
+      "printedPages": [
+        84
+      ]
     }
-  ]
+  ],
+  "scope": {
+    "areas": [
+      "Mathematics",
+      "Environmental Studies"
+    ],
+    "records": 92,
+    "sourceColumn": "learning-outcomes",
+    "subsets": [
+      {
+        "area": "Mathematics",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "records": 49,
+        "recordsByGrade": {
+          "1": 9,
+          "2": 7,
+          "3": 12,
+          "4": 13,
+          "5": 8
+        },
+        "pdfPages": [
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ],
+        "printedPages": [
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "sourceColumn": "learning-outcomes",
+        "excluded": [
+          "suggested-pedagogical-processes",
+          "stage-introduction-and-curricular-expectations",
+          "Grades 6–8",
+          "other subject sections",
+          "Physical Education"
+        ]
+      },
+      {
+        "area": "Environmental Studies",
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "records": 43,
+        "recordsByGrade": {
+          "3": 15,
+          "4": 15,
+          "5": 13
+        },
+        "pdfPages": [
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "printedPages": [
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "sourceColumn": "learning-outcomes",
+        "excluded": [
+          "suggested-pedagogical-processes",
+          "stage-introduction-and-curricular-expectations",
+          "Grades 6–8",
+          "other subject sections"
+        ]
+      }
+    ],
+    "excluded": [
+      "suggested-pedagogical-processes",
+      "stage introductions and curricular expectations",
+      "Classes VI–VIII",
+      "unreviewed language sections"
+    ],
+    "noStandaloneEVSIOrII": "The original introduction integrates those concerns with language and Mathematics in Classes I–II; no separate EVS outcome tables are invented."
+  }
 }
