@@ -34,12 +34,12 @@
       "records": 82,
       "sourceKind": "formal-stage-goals-and-competencies",
       "dispositions": {
-        "ConditionalGraphRepresentation": 1,
         "ConditionalLanguageBinding": 5,
         "ContextualAffectiveRequirement": 1,
         "ContextualReadingEngagement": 1,
         "Full": 64,
         "OutOfScope": 4,
+        "Partial": 1,
         "SkillWithContextualEngagement": 6
       }
     },
@@ -50,31 +50,31 @@
       "sourceKind": "formal-stage-goals-and-competencies",
       "dispositions": {
         "ConditionalArtFormBinding": 4,
-        "ConditionalGraphRepresentation": 5,
+        "ConditionalGraphRepresentation": 4,
         "ConditionalLanguageBinding": 5,
         "ContextualAffectiveRequirement": 4,
         "ContextualReadingEngagement": 4,
         "Full": 105,
         "OutOfScope": 29,
-        "Partial": 1,
+        "Partial": 2,
         "SkillWithContextualEngagement": 15
       }
     }
   ],
   "dispositions": {
     "ConditionalArtFormBinding": 11,
-    "ConditionalGraphRepresentation": 6,
+    "ConditionalGraphRepresentation": 4,
     "ConditionalLanguageBinding": 10,
     "ContextualAffectiveRequirement": 6,
     "ContextualMotorDevelopmentRequirement": 1,
     "ContextualReadingEngagement": 5,
     "Full": 444,
     "OutOfScope": 49,
-    "Partial": 1,
+    "Partial": 3,
     "SkillWithContextualEngagement": 36,
     "Unverified": 1
   },
-  "sourceDispositionsChangedHere": 1,
+  "sourceDispositionsChangedHere": 3,
   "readinessMeaning": "All 570 catalogue keys have a reviewed disposition. Full is an authoring judgment; component associations do not certify whole-topic, learner, cross-language or intervention mastery. Remaining conditions are not automatically missing topics.",
   "remainingConditions": [
     {
@@ -94,8 +94,8 @@
     },
     {
       "kind": "conditional-graph-representation",
-      "records": 6,
-      "action": "Six candidates remain withheld pending actual-role/full-task review. Two expressive-reading paths have the registered overstrong whole English prerequisite corrected; word recognition and all existing accuracy/prosody/rereading evidence remain intrinsic. Current paths and exact retired paths are separately recorded."
+      "records": 4,
+      "action": "Four other candidates remain withheld pending actual-role/full-task review. Two expressive-reading source rows now have Partial component links; their two broader goals remain withheld with other script and integrated requirements."
     },
     {
       "kind": "contextual-requirements",
@@ -111,8 +111,8 @@
     },
     {
       "kind": "partial-role-bound-component",
-      "records": 1,
-      "action": "Use the reviewed heard-summary component at10–11 with actual R1 materials/assessor and separate source-only versus full-candidate checks."
+      "records": 3,
+      "action": "The heard-summary10–11 and expressive-readingR16–8/R28–11 components retain actual-role material/assessor and complete-candidate evidence conditions; no Full or cross-language mastery transfer."
     }
   ],
   "sourceBoundary": {
@@ -160,14 +160,25 @@
     "unlinkedEligibleKeys": 29,
     "distinctPairs": 1161,
     "linkedTopics": 244,
-    "meaning": "One former graph-conditional record now has a shared component association and remains Partial. No Full upgrade or universal R1 material certification."
+    "meaning": "One former graph-conditional record now has a shared component association and remains Partial. No Full upgrade or universal R1 material certification.",
+    "checkpointScope": "Historical heard-summary follow-up; current cumulative census is currentComponentCensus."
   },
   "historicalInitialReviewSourceDispositionsChanged": 0,
   "expressiveReadingPrerequisiteReview": {
     "report": "expressive-reading-prerequisite-review-2026-11-11.json",
-    "sourceDispositionsChanged": 0,
-    "newAssociations": 0,
+    "sourceDispositionsChanged": 2,
+    "newAssociations": 2,
     "newClaims": 0,
-    "noUniversalEnglishGate": "Actual-script word recognition stays necessary; complete earlier English repertoire becomes useful support. No Full promotion."
+    "noUniversalEnglishGate": "Actual-script word recognition stays necessary; complete earlier English repertoire becomes useful support. No Full promotion.",
+    "meaning": "Two source components become Partial with exact separate readiness intervals; broader goals remain withheld."
+  },
+  "currentComponentCensus": {
+    "linkedEligibleKeys": 494,
+    "unlinkedEligibleKeys": 27,
+    "distinctPairs": 1163,
+    "linkedTopics": 245,
+    "Full": 444,
+    "Partial": 3,
+    "meaning": "Current cumulative census; earlier currentComponentReview492/29 checkpoint is historical to the heard-summary follow-up."
   }
 }

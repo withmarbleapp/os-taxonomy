@@ -39,11 +39,9 @@ self-correction opportunity stays unobserved; an error or successful result is
 never manufactured to finish the checklist.
 
 All twelve direct scoped contexts, sixty source codes and the three hard ancestor
-poetry claims retain their original meanings and ages. Two NCERT source rows and
-two broader goals retain their historical paths and withheld candidates while
-actual-role/full-task review remains pending. No source disposition, association,
-canonical card, guide or age changes. NCERT remains492 linked eligible keys and29
-unlinked, with444 Full; this graph correction is not a coverage promotion.
+poetry claims retain their original meanings and ages. Two exact NCERT source components now become **Partial**: FoundationR1 C-10.4 at6–8 within source3–8, and PreparatoryR2 C-2.3 at8–11. Each retains actual-role material and qualified-assessor conditions. Their source-only tasks do not certify every whole-target clause or cross-language mastery. The two broader goals remain withheld. All four bindings preserve exact history and complete current paths.
+
+The two intervals remain separate; neither an earlier readiness claim nor a6–11 union is introduced. No canonical card, guide, age or Full promotion occurs. The cumulative census is494 linked eligible keys and27 unlinked,1163 pairs across245 topics,444 Full and3 Partial. The strict context schema has no material/assessor field: the exact role/source-key bindings and public report retain those conditions.
 
 Hard versus soft affects future readiness and inference. This authoring change
 performs no downstream publication, learner reset, score transfer or historical

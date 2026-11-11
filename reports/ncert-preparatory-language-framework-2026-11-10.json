@@ -29,8 +29,8 @@
   "coverageMeaning": "Reviewed source-fit framework authoring is separate from directly representable graph coverage and from any learner attainment. Conditional/script/engagement cases remain distinct from Full. Actual language material binding happens at use; no national fixed language pair is needed.",
   "summary": {
     "Full": 20,
-    "Partial": 1,
-    "ConditionalGraphRepresentation": 5,
+    "Partial": 2,
+    "ConditionalGraphRepresentation": 4,
     "ConditionalLanguageBinding": 5,
     "ContextualReadingEngagement": 4
   },
@@ -1341,7 +1341,7 @@
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3",
       "officialCode": "C-2.3",
       "languageRole": "R2",
-      "disposition": "ConditionalGraphRepresentation",
+      "disposition": "Partial",
       "sourceStatus": "formal-stage-standard",
       "sourcePages": [
         239
@@ -1352,8 +1352,31 @@
       ],
       "attainmentReference": "stage-end",
       "frameworkTaskDesign": "accounted-by-role-bound-protocol",
-      "contributions": [],
-      "conditionalContributions": [
+      "contributions": [
+        {
+          "topicId": "mt_V-ldQp56bF",
+          "topicName": "Reading with Expression and Accuracy",
+          "role": "component",
+          "contribution": "Shared actual-script expressive-reading component; actual-role material and qualified assessment remain conditions. Source-only success does not establish every whole-target performance clause.",
+          "associationAgeBand": [
+            8,
+            11
+          ]
+        }
+      ],
+      "conditionalContributions": [],
+      "rationale": "The reviewed whole-prerequisite correction preserves intrinsic accurate word recognition and all target performance requirements. One component association is now active at the separately reviewed interval; source stage/applicability and actual-role/full-task conditions remain. No Full or cross-language learner mastery is inferred.",
+      "assessmentProtocols": [
+        "role-fluent-reading"
+      ],
+      "remainingConditions": [
+        "Supply genuine appropriate-stage actual-role written material and a competent language/variety assessor; record exact accepted readings and independent performance.",
+        "Accurate written-word recognition and appropriate pacing/pauses remain necessary; apply the full target prosody/rereading/self-correction checks when assessing whole topic. A source-only successful passage does not automatically demonstrate every target clause.",
+        "Do not credit rehearsed oral recitation, adult-supplied words, guessed text or an unobserved self-correction opportunity as complete target mastery.",
+        "No fixed national language pair and no R1\u2192R2, script\u2192script or text-level mastery transfer is inferred from sharing a topic ID."
+      ],
+      "graphRepresentation": "active-shared-component-with-actual-role-conditions",
+      "historicalConditionalContributions": [
         {
           "topicId": "mt_V-ldQp56bF",
           "topicName": "Reading with Expression and Accuracy",
@@ -1374,15 +1397,7 @@
           "dependencyCorrectionReport": "expressive-reading-prerequisite-review-2026-11-11.json",
           "currentHardPathInterpretation": "Complete remaining hard paths after the registered whole-prerequisite correction; the target is itself the current hard-path leaf. Accurate actual-text word recognition remains intrinsic, not an optional reading demand."
         }
-      ],
-      "rationale": "The complete expressive-reading operation still requires actual grade/stage-appropriate word recognition, accuracy, pacing, expression, self-correction and rereading. Its overstrong whole English prerequisite is now useful soft support; actual-role/full-task evidence remains a separate qualification and no scoped association or Full promotion is added.",
-      "assessmentProtocols": [
-        "role-fluent-reading"
-      ],
-      "remainingConditions": [
-        "The registered whole-prerequisite correction removes the universal English-repertoire hard gate. Actual-role material, competent assessment and complete accuracy/rate/prosody/self-correction/rereading compatibility still require separate review before this withheld candidate is associated."
-      ],
-      "graphRepresentation": "corrected-whole-prerequisite-awaiting-role-task-review"
+      ]
     },
     {
       "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.4",
@@ -2078,9 +2093,10 @@
   "identifierDisclosure": "R1/R2 and stage/area qualifiers are generated source identities that preserve independently printed source positions; the literal CG/C codes are retained. Repeated R1 C-4.1/C-4.2 are not deduplicated or interpreted as new mastery claims.",
   "consumerBoundary": "No unqualified association is published through a known fixed-English hard chain. Safe component links do not certify universal language mastery or authorise transfer/reset of any learner estimate.",
   "graphCounts": {
-    "unconditionalAssociations": 61,
-    "sharedTopics": 21,
-    "conditionalCandidatesNotPublished": 12
+    "activeAssociations": 63,
+    "sharedTopics": 23,
+    "conditionalCandidatesNotPublished": 10,
+    "meaning": "Active whole/component associations retain each source disposition and actual-role conditions; this is not unconditional source or learner mastery."
   },
   "initialReview": {
     "commit": "5e589227622aadea50bc578d3d723e275d0776bb",

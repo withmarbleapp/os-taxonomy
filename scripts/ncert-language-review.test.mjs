@@ -182,7 +182,7 @@ function checkGraph(reviewRecords, alignments) {
   const byKey = new Map(reviewRecords.map(row => [row.key, row]));
   for (const row of reviewRecords) {
     if (expressionHistoryKeys.includes(row.key)) {
-      if (expressionKeys.includes(row.key)) assert.equal(row.disposition, 'ConditionalGraphRepresentation');
+      if (expressionKeys.includes(row.key)) assert.equal(row.disposition, 'Partial');
       const selected = [...(row.conditionalContributions ?? []), ...(row.historicalConditionalContributions ?? [])]
         .filter(candidate => candidate.topicId === 'mt_V-ldQp56bF');
       assert.equal(selected.length, 1, 'reviewed expressive candidate cannot disappear');
@@ -251,20 +251,22 @@ function checkGraph(reviewRecords, alignments) {
     assert.equal(context.framework ?? null, null);
     for (const key of context.standards.filter(key => byKey.has(key))) {
       const row = byKey.get(key);
-      const expectedAges = row.key.endsWith('PREP-R1-COMP-C-1.2') ? [10, 11] : row.stageAgeBand ?? row.ageBand;
+      const expectedAges = row.key.endsWith('PREP-R1-COMP-C-1.2') ? [10, 11]
+        : row.key === expressionKeys[0] ? [6, 8] : row.key === expressionKeys[1] ? [8, 11]
+          : row.stageAgeBand ?? row.ageBand;
       assert.deepEqual([context.ageRangeStart, context.ageRangeEnd], expectedAges);
       actualPairs.push(pairKey(context.topicId, key));
     }
   }
   assert.deepEqual(sorted(new Set(actualPairs)), sorted(expectedPairs), 'declared/published pair drift');
   assert.equal(actualPairs.length, new Set(actualPairs).size, 'duplicate published language pair');
-  assert.equal(selectedContexts.length, 58, 'reviewed context total');
-  assert.equal(new Set(selectedContexts.map(contextKey)).size, 58, 'duplicate language context identity');
-  assert.equal(actualPairs.length, 143, 'reviewed association total');
-  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 37);
+  assert.equal(selectedContexts.length, 60, 'reviewed context total');
+  assert.equal(new Set(selectedContexts.map(contextKey)).size, 60, 'duplicate language context identity');
+  assert.equal(actualPairs.length, 145, 'reviewed association total');
+  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 38);
   assert.equal(summary.graph.newContexts, selectedContexts.length);
   assert.equal(summary.graph.newAssociations, actualPairs.length);
-  assert.equal(summary.graph.sharedTopics, 37);
+  assert.equal(summary.graph.sharedTopics, 38);
 }
 
 const correctedPairs = [
@@ -305,7 +307,7 @@ test('NCERT language review binds all 90 source positions, roles, grades and led
 
 test('every language disposition resolves its source-specific task protocols', () => checkProtocols(batches));
 
-test('language reports and mappings agree on 58 contexts / 143 pairs with no withheld candidate leaks', () =>
+test('language reports and mappings agree on 60 contexts / 145 pairs with no withheld candidate leaks', () =>
   checkGraph(records, contexts));
 
 test('the exact five intrinsic corrections match the graph while English print direction stays hard', () =>
@@ -480,14 +482,14 @@ test('expressive reading corrects only its complete English prerequisite while r
   ]);
   checkCompleteHardPaths(after.topicId, expressionCorrection.completeHardPathsAfter);
   assert.deepEqual(expressionCorrection.semanticChanges,
-    { dependencies: 1, newTopics: 0, claims: 0, guides: 0, ages: 0, associations: 0, sourceDispositions: 0 });
+    { dependencies: 1, newTopics: 0, claims: 0, guides: 0, ages: 0, associations: 2, sourceDispositions: 2 });
   assert.deepEqual(expressionCorrection.originalUntestedTask.tasks.map(t => t.id),
     ['new-grade-appropriate-passage', 'self-monitor-and-correct', 'familiar-reread', 'changed-structure-transfer']);
   assert.match(expressionCorrection.originalUntestedTask.successRule, /accurate recognition/);
   assert.match(expressionCorrection.originalUntestedTask.successRule, /self-correction/);
   for (const key of expressionKeys) {
     const row = records.find(row => row.key === key);
-    assert.equal(row.contributions.length, 0, 'no premature source association');
+    assert.deepEqual(row.contributions.map(c => c.topicId), ['mt_V-ldQp56bF'], 'one exact shared component');
     assert.ok(row.remainingConditions.length, 'actual role/material conditions remain');
   }
   checkGraph(records, contexts);
@@ -496,16 +498,20 @@ test('expressive source and goal bindings reject deleted candidate/history, unre
   for (const key of expressionHistoryKeys) {
     for (const mutation of ['candidate', 'history', 'correction', 'current']) {
       const rows = structuredClone(records), row = rows.find(row => row.key === key);
-      const candidate = row.conditionalContributions[0];
-      if (mutation === 'candidate') row.conditionalContributions = [];
+      const field = row.conditionalContributions.some(c => c.topicId === 'mt_V-ldQp56bF')
+        ? 'conditionalContributions' : 'historicalConditionalContributions';
+      const candidate = row[field].find(c => c.topicId === 'mt_V-ldQp56bF');
+      if (mutation === 'candidate') row[field] = row[field].filter(c => c !== candidate);
       if (mutation === 'history') delete candidate.historicalHardGatePaths;
       if (mutation === 'correction') candidate.dependencyCorrectionReport = 'unregistered.json';
       if (mutation === 'current') candidate.inheritedHardGatePaths = [];
       assert.throws(() => checkGraph(rows, contexts));
     }
     const historical = structuredClone(records), row = historical.find(row => row.key === key);
-    row.historicalConditionalContributions = row.conditionalContributions;
-    row.conditionalContributions = [];
+    const c = [...row.conditionalContributions, ...(row.historicalConditionalContributions ?? [])]
+      .find(c => c.topicId === 'mt_V-ldQp56bF');
+    row.historicalConditionalContributions = [c];
+    row.conditionalContributions = row.conditionalContributions.filter(x => x !== c);
     checkGraph(historical, contexts);
     delete row.historicalConditionalContributions[0].historicalHardGatePaths;
     assert.throws(() => checkGraph(historical, contexts), /exact expressive prerequisite history required/);
@@ -519,5 +525,65 @@ test('expressive review rejects a missing history table, entry or path', () => {
     if (mutation === 'entry') delete report.historicalReportedPaths[expressionHistoryKeys[0]];
     if (mutation === 'path') report.historicalReportedPaths[expressionHistoryKeys[0]] = [];
     assert.throws(() => checkExpressionHistoryTable(report), /exact expressive history table required/);
+  }
+});
+
+function checkExpressionAssociations(report, reviewRows = records, alignments = contexts) {
+  assert.deepEqual(report.componentAssociations.map(r => r.key), expressionKeys, 'exact two source bindings');
+  for (const [index, binding] of report.componentAssociations.entries()) {
+    const ages = index === 0 ? [6, 8] : [8, 11];
+    assert.equal(binding.languageRole, index === 0 ? 'R1' : 'R2', 'separate actual role evidence');
+    assert.deepEqual(binding.sourceAgeBand, index === 0 ? [3, 8] : [8, 11]);
+    assert.deepEqual(binding.associationAgeBand, ages, 'exact reviewed readiness interval');
+    assert.equal(binding.remainingConditions.length, 4, 'actual material/assessor and whole-target conditions');
+    const row = reviewRows.find(row => row.key === binding.key);
+    assert.equal(row.disposition, 'Partial', 'no Full promotion');
+    assert.deepEqual(row.remainingConditions, binding.remainingConditions);
+    assert.deepEqual(row.contributions[0].associationAgeBand, ages);
+    const linked = alignments.filter(c => c.standards.includes(binding.key));
+    assert.equal(linked.length, 1);
+    assert.deepEqual([linked[0].topicId, linked[0].country, linked[0].ageRangeStart, linked[0].ageRangeEnd],
+      ['mt_V-ldQp56bF', 'IN', ...ages]);
+  }
+  for (const key of expressionHistoryKeys.filter(key => !expressionKeys.includes(key))) {
+    const row = reviewRows.find(row => row.key === key);
+    assert.ok(row.conditionalContributions.some(c => c.topicId === 'mt_V-ldQp56bF'), 'broader goals remain withheld');
+    assert.ok(!alignments.some(c => c.topicId === 'mt_V-ldQp56bF' && c.standards.includes(key)));
+  }
+}
+test('two expressive components retain exact source stages, separate readiness intervals and actual roles', () =>
+  checkExpressionAssociations(expressionCorrection));
+test('expressive components reject Full, collapsed intervals, cross-role evidence and missing binding', () => {
+  const full = structuredClone(records);full.find(r => r.key === expressionKeys[0]).disposition = 'Full';
+  assert.throws(() => checkExpressionAssociations(expressionCorrection, full), /no Full promotion/);
+  const collapsed = structuredClone(contexts);
+  collapsed.find(c => c.standards.includes(expressionKeys[0])).ageRangeEnd = 11;
+  assert.throws(() => checkGraph(records, collapsed));
+  const crossRole = structuredClone(expressionCorrection);crossRole.componentAssociations[1].languageRole = 'R1';
+  assert.throws(() => checkExpressionAssociations(crossRole), /separate actual role evidence/);
+  const noBinding = structuredClone(expressionCorrection);noBinding.componentAssociations[0].remainingConditions = [];
+  assert.throws(() => checkExpressionAssociations(noBinding), /actual material\/assessor/);
+});
+
+test('current framework graph summaries count active and withheld contributions without implying unconditional mastery', () => {
+  const ledger = load('../reports/ncert-alignment-readiness-2026-11-10.json').records;
+  const keys = new Set(ledger.map(row => row.key));
+  const pairs = new Set(contexts.flatMap(c => c.standards.filter(k => keys.has(k)).map(k => pairKey(c.topicId, k))));
+  const unpacked = [...pairs].map(pair => JSON.parse(pair));
+  assert.equal(expressionCorrection.currentCensus.retainedNCERT, keys.size);
+  assert.equal(expressionCorrection.currentCensus.linkedEligibleKeys, new Set(unpacked.map(([, key]) => key)).size);
+  assert.equal(expressionCorrection.currentCensus.distinctNCERTPairs, pairs.size);
+  assert.equal(expressionCorrection.currentCensus.NCERTLinkedTopics, new Set(unpacked.map(([id]) => id)).size);
+  const excluded = ledger.filter(r => (r.disposition ?? r.reviewedDisposition) === 'OutOfScope').length;
+  assert.equal(expressionCorrection.currentCensus.unlinkedEligibleKeys, keys.size - excluded - expressionCorrection.currentCensus.linkedEligibleKeys);
+  for (const disposition of ['Full', 'Partial']) assert.equal(expressionCorrection.currentCensus[disposition],
+    ledger.filter(row => (row.disposition ?? row.reviewedDisposition) === disposition).length);
+  for (const batch of batches.slice(0, 2)) {
+    assert.equal(batch.report.graphCounts.activeAssociations,
+      batch.report.records.reduce((n, row) => n + row.contributions.length, 0));
+    assert.equal(batch.report.graphCounts.sharedTopics,
+      new Set(batch.report.records.flatMap(row => row.contributions.map(c => c.topicId))).size);
+    assert.equal(batch.report.graphCounts.conditionalCandidatesNotPublished,
+      batch.report.records.reduce((n, row) => n + (row.conditionalContributions ?? []).length, 0));
   }
 });

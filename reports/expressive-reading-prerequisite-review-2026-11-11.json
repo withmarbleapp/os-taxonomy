@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "baseCommit": "f70b5a56cbc2ca31bc077ee97861d5a49958a2ea",
-  "status": "One reviewed whole-prerequisite correction; source candidates remain withheld, not Full or deployed",
+  "status": "One reviewed whole-prerequisite correction and two Partial source-component associations; actual-role/full-task conditions remain, not Full or deployed",
   "changes": [
     {
       "before": {
@@ -176,27 +176,119 @@
     "meaning": "All source-specific phonic, word-bank, print and performance duties remain on their current claims/associations. Readiness and future graph inference can change; no existing evidence is reinterpreted as mastery of another language.",
     "downstreamBoundary": "Dependency-strength changes affect future propagation/readiness, not merely display. Consumer publication/compatibility is separate; this PR performs no DB, learner-state reset, historical evidence rewrite or deployment."
   },
-  "unchangedCounts": {
-    "retainedNCERT": 570,
-    "PEexcluded": 49,
-    "eligible": 521,
-    "linkedEligibleKeys": 492,
-    "unlinkedEligibleKeys": 29,
-    "distinctNCERTPairs": 1161,
-    "NCERTLinkedTopics": 244,
-    "Full": 444
-  },
   "semanticChanges": {
     "dependencies": 1,
     "newTopics": 0,
     "claims": 0,
     "guides": 0,
     "ages": 0,
-    "associations": 0,
-    "sourceDispositions": 0
+    "associations": 2,
+    "sourceDispositions": 2
   },
   "alsoMaintainedGoalKeys": [
     "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-GOAL-CG-10",
     "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-GOAL-CG-2"
-  ]
+  ],
+  "componentAssociations": [
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.4",
+      "languageRole": "R1",
+      "sourceAgeBand": [
+        3,
+        8
+      ],
+      "associationAgeBand": [
+        6,
+        8
+      ],
+      "sourcePdfPage": 215,
+      "sourceStatus": "formal-stage-standard",
+      "attainment": "stage-end, not identical demands at every age",
+      "beforeDisposition": "ConditionalGraphRepresentation",
+      "topicId": "mt_V-ldQp56bF",
+      "contributionRole": "component",
+      "association": {
+        "topicId": "mt_V-ldQp56bF",
+        "scope": "jurisdiction",
+        "country": "IN",
+        "ageRangeStart": 6,
+        "ageRangeEnd": 8,
+        "standards": [
+          "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.4"
+        ]
+      },
+      "ageJustification": "Preserve accepted topic6\u201312 guidance and source reference band. The narrower6\u20138 Foundation component does not assert readiness3\u20135; the8\u201311 Preparatory component remains inside accepted guidance. No per-grade deadline or new easier reading target.",
+      "completeCurrentHardPaths": [
+        [
+          "mt_V-ldQp56bF"
+        ]
+      ],
+      "remainingConditions": [
+        "Supply genuine appropriate-stage actual-role written material and a competent language/variety assessor; record exact accepted readings and independent performance.",
+        "Accurate written-word recognition and appropriate pacing/pauses remain necessary; apply the full target prosody/rereading/self-correction checks when assessing whole topic. A source-only successful passage does not automatically demonstrate every target clause.",
+        "Do not credit rehearsed oral recitation, adult-supplied words, guessed text or an unobserved self-correction opportunity as complete target mastery.",
+        "No fixed national language pair and no R1\u2192R2, script\u2192script or text-level mastery transfer is inferred from sharing a topic ID."
+      ],
+      "historyHandling": "Activated source candidate is retained in historicalConditionalContributions with exact retired paths, current leaf path and registered correction. The two broader goal candidates remain withheld.",
+      "afterDisposition": "Partial"
+    },
+    {
+      "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3",
+      "languageRole": "R2",
+      "sourceAgeBand": [
+        8,
+        11
+      ],
+      "associationAgeBand": [
+        8,
+        11
+      ],
+      "sourcePdfPage": 239,
+      "sourceStatus": "formal-stage-standard",
+      "attainment": "stage-end, not identical demands at every age",
+      "beforeDisposition": "ConditionalGraphRepresentation",
+      "topicId": "mt_V-ldQp56bF",
+      "contributionRole": "component",
+      "association": {
+        "topicId": "mt_V-ldQp56bF",
+        "scope": "jurisdiction",
+        "country": "IN",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 11,
+        "standards": [
+          "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3"
+        ]
+      },
+      "ageJustification": "Preserve accepted topic6\u201312 guidance and source reference band. The narrower6\u20138 Foundation component does not assert readiness3\u20135; the8\u201311 Preparatory component remains inside accepted guidance. No per-grade deadline or new easier reading target.",
+      "completeCurrentHardPaths": [
+        [
+          "mt_V-ldQp56bF"
+        ]
+      ],
+      "remainingConditions": [
+        "Supply genuine appropriate-stage actual-role written material and a competent language/variety assessor; record exact accepted readings and independent performance.",
+        "Accurate written-word recognition and appropriate pacing/pauses remain necessary; apply the full target prosody/rereading/self-correction checks when assessing whole topic. A source-only successful passage does not automatically demonstrate every target clause.",
+        "Do not credit rehearsed oral recitation, adult-supplied words, guessed text or an unobserved self-correction opportunity as complete target mastery.",
+        "No fixed national language pair and no R1\u2192R2, script\u2192script or text-level mastery transfer is inferred from sharing a topic ID."
+      ],
+      "historyHandling": "Activated source candidate is retained in historicalConditionalContributions with exact retired paths, current leaf path and registered correction. The two broader goal candidates remain withheld.",
+      "afterDisposition": "Partial"
+    }
+  ],
+  "sourceTaskVersusWholeCandidate": {
+    "R1": "Source requires accurate fluent stories/passages with pauses and voice modulation. Candidate additionally explicitly checks self-correction and rereading; those remain separate whole-target evidence duties.",
+    "R2": "Source requires accurate fluent stories/passages with pauses. Full candidate additionally retains expressive prosody, self-correction and rereading; these do not become invented extra NCERT mandates."
+  },
+  "representationLimit": "Strict scoped schema has no language/material/assessor field. The R1/R2 source identities and public review retain those conditions; association is a shared procedural component, not a language-independent learner mastery certification.",
+  "currentCensus": {
+    "retainedNCERT": 570,
+    "PEexcluded": 49,
+    "eligible": 521,
+    "linkedEligibleKeys": 494,
+    "unlinkedEligibleKeys": 27,
+    "distinctNCERTPairs": 1163,
+    "NCERTLinkedTopics": 245,
+    "Full": 444,
+    "Partial": 3
+  }
 }
