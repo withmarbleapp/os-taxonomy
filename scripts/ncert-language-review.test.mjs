@@ -169,11 +169,13 @@ function checkGraph(reviewRecords, alignments) {
       assert.ok(!expectedPairs.has(key), 'duplicate declared contribution');
       expectedPairs.add(key);
     }
-    for (const candidate of row.conditionalContributions ?? []) {
+    for (const candidate of [...(row.conditionalContributions ?? []), ...(row.historicalConditionalContributions ?? [])]) {
       assert.ok(topics.has(candidate.topicId), 'missing active conditional candidate');
       assert.equal(candidate.topicName, topics.get(candidate.topicId).name);
-      assert.ok(!alignments.some(context => context.topicId === candidate.topicId &&
-        context.standards.includes(row.key)), `withheld candidate leaked: ${row.key}`);
+      if ((row.conditionalContributions ?? []).includes(candidate)) {
+        assert.ok(!alignments.some(context => context.topicId === candidate.topicId &&
+          context.standards.includes(row.key)), `withheld candidate leaked: ${row.key}`);
+      }
       if (candidate.historicalHardGatePaths) {
         assert.equal(candidate.dependencyCorrectionReport, reusableCorrectionFile,
           'retired hard paths need a registered correction report');
@@ -369,6 +371,14 @@ function checkHeardComponent(review, rows = records, alignments = contexts) {
   assert.deepEqual(row.stageAgeBand, [8, 11], 'source stage stays unchanged');
   assert.deepEqual(row.contributions.map(c => c.topicId), ['mt_A4YUbzUFan'], 'exact one direct component');
   assert.equal(row.contributions[0].role, 'component');
+  assert.equal(row.historicalConditionalContributions?.length, 1, 'promoted candidate history required');
+  assert.deepEqual(row.historicalConditionalContributions[0].historicalHardGatePaths, [[
+    'mt_A4YUbzUFan', 'mt_-DuXzMVVXQ', 'mt_sMAcZW6vWM',
+    'mt_ZhUuT__i2H', 'mt_XeMZdf2Y9W', 'mt_1KCwbGvm1F',
+  ]], 'exact retired path history preserved');
+  assert.deepEqual(review.historicalConditionalContributions, row.historicalConditionalContributions,
+    'component review history must match source row');
+  checkGraph(rows, alignments);
   assert.deepEqual(row.contributions[0].associationAgeBand, [10, 11]);
   assert.ok(row.remainingConditions.length >= 3, 'actual role / readiness / whole-claim conditions required');
   assert.equal(review.topicId, 'mt_A4YUbzUFan');
@@ -409,4 +419,18 @@ test('heard-summary review rejects source-only mastery, missing media cases and 
   const falseFull = structuredClone(records);
   falseFull.find(r => r.key === heardKey).disposition = 'Full';
   assert.throws(() => checkHeardComponent(heardReview, falseFull));
+});
+
+test('promoted heard-summary history rejects a changed correction, retired path or missing entry', () => {
+  const wrongCorrection = structuredClone(records);
+  wrongCorrection.find(row => row.key === heardKey).historicalConditionalContributions[0]
+    .dependencyCorrectionReport = 'unregistered-correction.json';
+  assert.throws(() => checkGraph(wrongCorrection, contexts), /registered correction report/);
+  const wrongPath = structuredClone(records);
+  wrongPath.find(row => row.key === heardKey).historicalConditionalContributions[0]
+    .historicalHardGatePaths[0][2] = 'invented-prerequisite';
+  assert.throws(() => checkGraph(wrongPath, contexts), /unregistered change to a retired hard path/);
+  const missing = structuredClone(records);
+  delete missing.find(row => row.key === heardKey).historicalConditionalContributions;
+  assert.throws(() => checkHeardComponent(heardReview, missing), /promoted candidate history required/);
 });
