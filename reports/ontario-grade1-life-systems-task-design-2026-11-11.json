@@ -1,0 +1,471 @@
+{
+  "status": "Reviewed source-bound authoring portfolio for six Grade1 Life Systems expectations. Source coverage is separate from learner attainment and four retained historical labels.",
+  "ageRange": [
+    6,
+    7
+  ],
+  "resources": {
+    "plants": {
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-herbs",
+      "readScope": "Complete actual main body read, including space/crowding, light, drainage and differing temperature needs. Images/linked species guides not inspected. Use only descriptive need/space/temperature facts; no fertiliser, drying, medicinal, dosing or exact horticultural instructions.",
+      "possibleRole": "Explicit plant need conditions and space/warmth qualifiers, with suitable rather than universally hot conditions."
+    },
+    "fish": {
+      "url": "https://www.floridamuseum.ufl.edu/discover-fish/fish/faq/",
+      "readScope": "Complete actual FAQ main body read. Adopt only gill oxygen-from-water function and qualified animal variation; no fish totals, old classification/electric-eel-voltage figures or swimmer advice. Images not inspected.",
+      "possibleRole": "Functional non-human animal feature contribution, distinct from body-group naming."
+    },
+    "pollution": {
+      "url": "https://www.canada.ca/en/services/environment/weather/climatechange/get-involved/resources-educators/pollution/4-7-years.html",
+      "readScope": "Complete actual main body and text alternatives read; no images/video inspected. Use pollution/need-quality/waste-reduction mechanisms, no numeric waste estimates or universal local recycling rule.",
+      "possibleRole": "Environmental quality and human responsibility, with safe school-model actions."
+    },
+    "umn-lighting": {
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/lighting-for-indoor-plants",
+      "publisher": "University of Minnesota Extension",
+      "readScope": "Actual opening main body lines241–290 read, including photosynthesis/light, too little/much light, and differing plant requirements. Later grow-light, species-list and photoperiod sections partly returned but not fully read; not claimed complete. No photos/links inspected.",
+      "factualContribution": "Ordinary green plants use light to make carbohydrates from water and carbon dioxide; differing plant requirements and sufficient light matter. Green-plant model, not universal claim that all plants photosynthesise.",
+      "notAdopted": "Numeric light/photoperiod/equipment ranges; technical energy=carbohydrate wording; universal every-plant claim; treatment or grow-light buying advice."
+    },
+    "health-canada-family": {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/life-stages/parents-children.html",
+      "publisher": "Health Canada",
+      "readScope": "Complete actual main explanatory body read through Picky eating and ending resource link, page date2026-03-21. No linked vitamin/D/recipes pages inspected.",
+      "factualContribution": "Varied nutritious foods provide nutrients/energy supporting growth and development; water offered as drink. This is bounded support for food-quality reasoning, not diet planning.",
+      "notAdopted": "Supplements/dosages, feeding schedules, food-handling tasks, individual medical advice, pupil-specific dietary judgments or universal nutritional adequacy from a single food."
+    },
+    "amnh-camouflage": {
+      "url": "https://www.amnh.org/explore/ology/ology-cards/187-camouflage",
+      "publisher": "American Museum of Natural History",
+      "readScope": "Fresh complete actual OLogy card main body read, including definition/purpose, stories and fact panels. No source imagery inspected. Adopt only bounded background-matching definition/function and green-grasshopper example; do not adopt polar-fur prism or nudibranch-diet generalisations, or universal seasonal-change claims.",
+      "possibleRole": "Factual support for colour/pattern→reduced detection→survival, not empirical efficacy of an activity."
+    },
+    "australian-museum-phasmids": {
+      "url": "https://australian.museum/learn/species-identification/ask-an-expert/what-do-stick-insects-look-like/",
+      "publisher": "Australian Museum",
+      "readScope": "Fresh complete actual explanatory main body read through What looks similar. No images/linked guides inspected. Adopt only stick/leaf-like body shapes and blending to avoid predator detection; no precise sizes, handling or universal behavioural claims.",
+      "possibleRole": "Distinct shape-based camouflage example; factual explanation only."
+    },
+    "niams-bone": {
+      "url": "https://www.niams.nih.gov/health-topics/what-bone",
+      "publisher": "NIH National Institute of Arthritis and Musculoskeletal and Skin Diseases",
+      "readScope": "Fresh complete actual main explanatory body read through bone jobs/materials/remodelling and linked-condition list. Adopt only skeleton support/protection and cooperation with muscles for movement. No linked materials, PDF, images, clinical recommendations, exercise programme, doses or disease claims adopted.",
+      "possibleRole": "Independent factual support for the supplied ordinary human structure/function model, not teaching efficacy or medical advice."
+    },
+    "nci-muscle": {
+      "url": "https://training.seer.cancer.gov/anatomy/muscular/structure.html",
+      "publisher": "NIH National Cancer Institute, SEER Training",
+      "readScope": "Fresh complete actual Structure of Skeletal Muscle explanatory body read. Adopt only skeletal muscle attachments across joints and movement through contraction; no images/glossary pages, cancer/clinical care, histology or technical naming used as learner gates.",
+      "possibleRole": "Factual support for muscles acting through their attachments to move bones; not age-specific empirical efficacy."
+    }
+  },
+  "preparedCases": {
+    "living-nonliving-loss": {
+      "role": "living-nonliving-loss-perspectives",
+      "resourceRefs": [
+        "pollution",
+        "plants"
+      ],
+      "givenFacts": [
+        "Original shared-garden model: tree T is living and provides shade and a nesting place for a model bird.",
+        "A nonliving water supply meets the needs of a supplied plant and people; the water itself does not grow or need food.",
+        "Human role A prioritises a suitable drinking-water supply for people; role B is a caretaker who prioritises the model bird’s nesting place and water for the supplied plant. These distinct priorities are declared original analytic roles, not real stakeholder quotations or assumptions about any learner’s household."
+      ],
+      "question": "Explain a problem that could follow loss of T and another that could follow loss of the water supply. Compare the two stated human perspectives and explain why a healthy physical environment and living organisms matter together.",
+      "expectedEvidence": "Distinguish living and nonliving components, trace need/resource consequences of each loss, and explain the two stated priorities rather than judge from appearance alone. Treat water quality as a condition, not a nonliving organism’s biological need.",
+      "nearMiss": "Only says the place is less pretty, addresses only tree loss or calls the water a living thing because it supports life.",
+      "changedCase": "A nonliving canopy replaces shade but supplies neither the bird nesting place nor water. Explain what has been replaced and what remains missing; one benefit is not the whole relationship.",
+      "attributionLimits": "Complete explicitly original hypothetical model, not a local observation or authentic stakeholder statement. The model bird’s nesting relation is a declared condition, not evidence that every bird needs the same tree."
+    },
+    "needs-temperature-space": {
+      "role": "explicit-needs-temperature-shelter-space",
+      "resourceRefs": [
+        "plants",
+        "fish",
+        "pollution",
+        "umn-lighting"
+      ],
+      "givenFacts": [
+        "Original P is an ordinary green herb: it needs air, water, suitable temperature and room for roots/leaves. In light it makes food using water and carbon dioxide from air, rather than eating soil. The supplied frost-sensitive case needs protection from freezing. Air is not a synonym for oxygen, and the food-making example is not a complete account of plant gas use; gas names/equations are not a learner assessment gate.",
+        "Original fish F is stipulated to live in water with suitable dissolved oxygen, food, temperature, space to move and a protected resting place. Its gills take oxygen from water.",
+        "The supplied child character needs suitable air, water and food, a suitable temperature, shelter and room to carry out ordinary life safely; no personal household disclosure is requested."
+      ],
+      "question": "For each supplied organism, identify what the stated habitat supplies and explain the consequences if warmth/appropriate temperature, space or protection is absent despite food and water being present. Compare the plant’s light/food-making needs with the animal cases.",
+      "expectedEvidence": "Check all explicit need categories across the selected cases; explain suitable conditions rather than universally hotter-is-better. Explain why food/water alone do not establish a suitable place and why plants are not fed by eating soil.",
+      "nearMiss": "Treats every living thing as having identical temperature/shelter needs, forgets space entirely or calls soil the plant’s food.",
+      "changedCase": "P still has water/light but its roots are severely crowded; F has food/water but the supplied temperature is unsuitable. Revise each needs account without inventing a numerical safe threshold.",
+      "attributionLimits": "Original hypothetical conditions, not animal-care instructions, a real aquarium, child household assessment or a deprivation experiment. The temperature/space facts are provided, and no organism is put in unsuitable conditions."
+    },
+    "structure-function": {
+      "role": "varied-plant-animal-human-function",
+      "resourceRefs": [
+        "plants",
+        "umn-lighting",
+        "amnh-camouflage",
+        "australian-museum-phasmids",
+        "niams-bone",
+        "nci-muscle"
+      ],
+      "givenFacts": [
+        "Original plant cards show roots taking up water, leaves receiving light needed for food-making, and a tree trunk supporting branches/leaves. These are supplied explanatory model facts, not specimen observations.",
+        "Original model animal cards: a leaf insect has a leaf-like body outline among leaves; a green grasshopper has a colour matching green vegetation. Museum sources support these different camouflage features. In the declared model a visually hunting bird has more difficulty detecting the matching animal; camouflage does not make it invisible or guarantee survival.",
+        "The human model has bones supporting the body/protecting organs and muscles pulling on bones to move. No exercise, body inspection or physical test is required."
+      ],
+      "question": "Identify the supplied plant structures, the two animals’ different physical camouflage features and the human support/movement features. For each explain feature→function→need: taking up water, receiving light, supporting leaves, reducing predator detection, or supporting/protecting/moving the human body. Compare functions rather than merely naming animal groups. The animal/background conditions are declared original model facts; no source photo is presumed visible.",
+      "expectedEvidence": "Explain physical characteristics and how they help varied plants and animals, including humans, meet needs. Distinguish the leaf insect’s body outline and the grasshopper’s colour from what those features help accomplish. Link camouflage to reduced detection/protection and the other features to their supplied needs. A two-example contribution does not certify the complete Camouflage topic’s three-example repertoire or its predator-use case.",
+      "nearMiss": "Only names plants/animal groups or body parts, says green always means hidden regardless of background, or claims matching guarantees an animal can never be detected.",
+      "changedCase": "Keep the same green grasshopper but move its model from green vegetation to a contrasting brown background. Explain why its colour has not changed yet its visibility/function can change; do not claim the animal chooses to repaint itself. Contrast with the plant root’s water-uptake role, which is a different feature/function relationship.",
+      "attributionLimits": "Original source-informed text/model cards; no real animal manipulation, natural-selection mechanism, preserved specimen, source-image inspection, collecting wild plants or handling wildlife. This reuses an existing early-primary camouflage claim; no later internal/external-structure argument claim is lowered."
+    },
+    "environment-quality": {
+      "role": "environment-quality-needs",
+      "resourceRefs": [
+        "pollution",
+        "plants",
+        "health-canada-family",
+        "umn-lighting"
+      ],
+      "givenFacts": [
+        "Original environment A supplies suitable clean air/water and enough suitable light/space/temperature for green plant P, which makes its food; the child character also has appropriate nutritious food supplying energy/materials for growth. This is a hypothetical adequate case, not an actual diet or drinking-water assessment.",
+        "Original environment B contains air/water/food too, but supplied original model conditions explicitly stipulate that its water and air are unsuitable for the model organisms and its food does not provide the child model’s needed variety. These are declared hypothetical conditions, not an actual test result or an attributed agency finding. Appearance alone cannot establish suitability.",
+        "Source explanations connect pollution with harm to organisms; no visual/smell/taste test or real contaminant level is supplied."
+      ],
+      "question": "Compare A and B. Explain how environmental quality affects meeting needs, and name a human action that protects air, water or food resources with a reason. Distinguish being present from being suitable; do not infer actual drinking-water safety from a drawing.",
+      "expectedEvidence": "Describe healthy-environment conditions and link quality to organisms’ needs/consequences. Explain a protective action such as reducing litter or reusing suitable school materials without prescribing universal recycling rules or treating a picture as a safety test.",
+      "nearMiss": "Says any water/food is enough, clear water must be safe or the child should taste the model water to decide.",
+      "changedCase": "A new model supply looks clear but is explicitly declared unsuitable by the original given conditions. Explain why presence and appearance alone did not establish suitability for the organism. A changed classroom rule requires a different waste stream: revise the action rather than assume every place accepts the same material.",
+      "attributionLimits": "Complete original hypothetical model; no clinical/diet plan, actual water-quality result or claim that a learner tested hazardous material. Adults provide checked facts, and children reason from them."
+    }
+  },
+  "protocols": {
+    "B1.1": {
+      "codes": [
+        "ON-SCI-2022-G1-B1.1"
+      ],
+      "caseRefs": [
+        "living-nonliving-loss"
+      ],
+      "contributorIds": [
+        "mt_e6PP4ip39V",
+        "mt_PJE57bAvMG",
+        "mt_wzUzVEBqJb"
+      ],
+      "actions": [
+        "Supply the full original model and both stated priorities.",
+        "Explain both living-component and nonliving-component losses using needs relationships.",
+        "Compare perspectives without inventing authentic testimony or only naming feelings.",
+        "Use the canopy transfer to distinguish a partly replaced service from the complete relationship."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.2": {
+      "codes": [
+        "ON-SCI-2022-G1-B2.2"
+      ],
+      "caseRefs": [
+        "needs-temperature-space"
+      ],
+      "contributorIds": [
+        "mt_L1469gt34A",
+        "mt_e6PP4ip39V"
+      ],
+      "actions": [
+        "Supply every organism need/condition card explicitly.",
+        "Identify food/air/water and the relevant temperature/shelter/space needs across cases.",
+        "Explain absence consequences and contrast different organism requirements.",
+        "Use crowded/unsuitable-temperature transfer without a real deprivation experiment."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.3": {
+      "codes": [
+        "ON-SCI-2022-G1-B2.3"
+      ],
+      "caseRefs": [
+        "structure-function"
+      ],
+      "contributorIds": [
+        "mt_xT6jPzyj92",
+        "mt_SdIWVjzopp",
+        "mt_pwo81ls_J-"
+      ],
+      "actions": [
+        "Supply every plant, two-animal camouflage and human function fact/model explicitly.",
+        "Identify the physical characteristics and require feature→function→need explanations, including humans.",
+        "Contrast plant water/light/support, animal detection/protection and human support/movement functions; do not substitute animal-group labels.",
+        "Use the same-animal/new-background changed case; protect all unchanged whole-claim boundaries and avoid later formal argument gates."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.5": {
+      "codes": [
+        "ON-SCI-2022-G1-B2.5"
+      ],
+      "caseRefs": [
+        "environment-quality",
+        "needs-temperature-space"
+      ],
+      "contributorIds": [
+        "mt_L1469gt34A",
+        "mt_e6PP4ip39V",
+        "mt_cxJRc15osy"
+      ],
+      "actions": [
+        "Supply the quality declarations rather than ask children to guess water/air safety.",
+        "Describe clean/suitable air/water and nutritious-food conditions.",
+        "Connect quality with need satisfaction and consequences for organisms.",
+        "Use the clear-but-declared-unsuitable and local-rule transfer cases."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B1": {
+      "codes": [
+        "ON-SCI-2022-G1-B1"
+      ],
+      "caseRefs": [
+        "living-nonliving-loss",
+        "environment-quality"
+      ],
+      "contributorIds": [
+        "mt_e6PP4ip39V",
+        "mt_deexfCHU9m",
+        "mt_PJE57bAvMG"
+      ],
+      "actions": [
+        "Explain directly why a healthy environment matters for living organisms and physical environmental conditions.",
+        "Assess losses/consequences, keeping nonliving resources distinct from organisms.",
+        "Explain human care responsibilities and protective actions through concrete mechanisms.",
+        "Apply changed conditions; do not inherit the overall label merely from child results."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2": {
+      "codes": [
+        "ON-SCI-2022-G1-B2"
+      ],
+      "caseRefs": [
+        "needs-temperature-space",
+        "structure-function",
+        "environment-quality"
+      ],
+      "contributorIds": [
+        "mt_L1469gt34A",
+        "mt_xT6jPzyj92",
+        "mt_e6PP4ip39V",
+        "mt_SdIWVjzopp",
+        "mt_pwo81ls_J-"
+      ],
+      "actions": [
+        "Use the complete original organism model set, including humans.",
+        "Explain basic needs and how visible structures/characteristics contribute to them.",
+        "Connect suitable environmental conditions with the account rather than give unrelated lists.",
+        "Transfer to changed structure/temperature/space conditions; do not recertify every historical child code."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeCards": [
+    {
+      "id": "mt_wzUzVEBqJb",
+      "type": "CONCEPTUAL",
+      "subject": "Personal & Social Development",
+      "domain": "Empathy & Social Awareness",
+      "name": "Other People's Feelings and Thoughts",
+      "description": "Understand that other people have their own feelings and thoughts, and that these might be different from your own — a foundational awareness that not everyone sees or feels things the same way",
+      "evidence": [
+        "State that other people can feel differently about the same thing",
+        "Give an example of a time someone felt differently from them about the same situation",
+        "Accept another child's feeling as valid even when it differs from their own"
+      ],
+      "assessmentPrompt": "If {{name}} loves dogs but their friend is scared of dogs, can {{name}} understand that their friend's fear is real even though they don't feel it themselves?",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_e6PP4ip39V",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Ecosystems & Habitats",
+      "name": "Plants and animals in their habitats",
+      "description": "Use a model to represent the relationship between the needs of different plants and animals and the places they live, connecting organism needs to habitat features",
+      "evidence": [
+        "Use a simple model (drawing, diagram) to show how a habitat provides what an organism needs",
+        "Match at least three organisms to their habitats and explain why each needs that specific place",
+        "Describe what would happen if an organism were placed in a habitat that doesn't meet its needs"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why a fish needs to live in water but a cactus can live in a desert, by matching what each living thing needs to where it lives?",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_deexfCHU9m",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Ecosystems & Habitats",
+      "name": "Reducing Human Impact",
+      "description": "Communicate solutions that will reduce the impact of humans on the land, water, air, and other living things in the local environment",
+      "evidence": [
+        "Identify at least three ways humans negatively impact the local environment (litter, pollution, habitat destruction)",
+        "Propose at least three solutions to reduce human impact (recycling, reducing waste, conserving water, planting trees)",
+        "Explain how each solution helps protect land, water, air, or living things"
+      ],
+      "assessmentPrompt": "Can {{name}} suggest ways people can help the environment — like recycling, not littering, saving water, or planting trees?",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_xT6jPzyj92",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Organisms & Life Processes",
+      "name": "Parts of a Plant",
+      "description": "Identify and describe the basic structure of common flowering plants (roots, stem, leaves, flowers) and trees (roots, trunk, branches, leaves)",
+      "evidence": [
+        "Label roots, stem, leaves, and flowers on a diagram of a flowering plant",
+        "Name the main parts of a tree: roots, trunk, branches, leaves",
+        "Explain that roots take in water and leaves catch sunlight"
+      ],
+      "assessmentPrompt": "If you pick a flower from the garden, can {{name}} point to the roots, stem, leaves, and petals and say what each part does?",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 7
+    },
+    {
+      "id": "mt_L1469gt34A",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Organisms & Life Processes",
+      "name": "What Living Things Need",
+      "description": "Understand what plants and animals (including humans) need to survive: water, food, air, and suitable conditions",
+      "evidence": [
+        "List the basic needs of animals: water, food, air, shelter",
+        "List the basic needs of plants: water, light, air, suitable temperature",
+        "Explain what happens if one basic need is missing (e.g. 'the plant wilts without water')"
+      ],
+      "assessmentPrompt": "If you ask {{name}} what a pet dog or a garden plant needs to stay alive, can they list the basic things like water, food, and air?",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_cxJRc15osy",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "The Human Body",
+      "name": "Basic Body Needs",
+      "description": "Know that the body needs food for energy, water to stay hydrated, sleep to rest and grow, and exercise to keep muscles and the heart strong — and that these are basic needs every human body has",
+      "evidence": [
+        "List the four basic needs: food (energy), water (hydration), sleep (rest and growth), exercise (strength)",
+        "Explain that food gives the body energy to move, think, and grow",
+        "Describe what happens if one need isn't met (e.g. feeling tired without sleep, thirsty without water)"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why their body needs food, water, sleep, and exercise — and what happens if they miss any of them?",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_SdIWVjzopp",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "The Human Body",
+      "name": "Bones & Muscles",
+      "description": "Know that the body has a skeleton made of bones inside it that gives the body its shape and protects important organs like the brain (skull) and heart (ribcage), and that muscles attached to bones allow the body to move",
+      "evidence": [
+        "State that bones give the body shape, support, and protection",
+        "Name at least three bones or bone groups (e.g. skull, ribcage, spine, leg bones)",
+        "Explain that muscles pull on bones to make the body move"
+      ],
+      "assessmentPrompt": "Can {{name}} feel their own ribs or skull and explain what those bones are protecting inside?",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 9
+    },
+    {
+      "id": "mt_PJE57bAvMG",
+      "type": "CONCEPTUAL",
+      "subject": "Personal & Social Development",
+      "domain": "Self-Awareness",
+      "name": "Social roles and changing responsibilities",
+      "description": "Describe familiar social roles and relationships, connect them with responsibilities toward other people and the environment, and explain how a setting, event or changing circumstances can alter a role, relationship or duty. Use everyday examples without assuming a particular family structure or requiring private personal disclosure.",
+      "evidence": [
+        "Describe a familiar role, such as pupil, friend, family member or someone helping care for a plant or shared place, and explain a responsibility that comes with it.",
+        "Compare one person’s roles, relationships and responsibilities in two settings, explaining why a duty or way of relating to others differs.",
+        "Explain how a provided event or change in circumstances alters a responsibility or relationship, including a care duty toward the environment; naming an event or expressing a feeling alone is insufficient.",
+        "Apply the role–duty–circumstance relationship to a new supplied scenario, without treating duties as fixed by gender or a single family arrangement."
+      ],
+      "assessmentPrompt": "In a supplied story, the same child, Ari, is a pupil at school and helps care for a garden. Ari knows the school well; a new pupil does not. The story explains that plants need water when soil is dry, and the soil has become dry. Can {{name}} explain how Ari’s roles, relationships and responsibilities differ between the settings, and why each changed circumstance might change a responsibility? They may also use a non-sensitive everyday role of their own.",
+      "ageRangeStart": 3,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_pwo81ls_J-",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Animals of the World",
+      "name": "Animal Camouflage",
+      "description": "Know that many animals use camouflage — colours and patterns that help them blend into their surroundings — to hide from predators or to sneak up on prey, like a leaf insect that looks like a leaf or an Arctic hare that turns white in winter",
+      "evidence": [
+        "Explains that camouflage means blending in with surroundings",
+        "Gives at least 3 examples of camouflaged animals",
+        "Explains that camouflage helps animals hide from predators or sneak up on food"
+      ],
+      "assessmentPrompt": "If {{name}} tries to spot a grasshopper in the garden, can they explain that it's hard to see because its green colour helps it hide in the grass — and give other examples of animals that use camouflage?",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 8
+    }
+  ],
+  "reviewLimits": [
+    "All current contributor cards and all eight available saved guide bodies were freshly read, including assessment and age boundaries. Historical source flags, confidence and original research/provenance remain unchanged; no blanket source or efficacy revalidation is claimed.",
+    "Plant food-making, human quality and varied feature/function contributions are bounded by the stated source facts and complete original models. Model declarations are not observations or permission to invent incompatible real-species claims.",
+    "Existing early perspective/role-duty components contribute to the source comparison requirement without changing those mastery claims or proving full procedural perspective-taking.",
+    "The later Structures for Survival9–12 claim is not assigned at6–7. Actual existing Animal Camouflage5–8 components supply the selected feature/function case and transfer; no whole-topic mastery is inferred. Original Animal Body Groups source associations remain preserved, while grouping/naming is not counted as causal-function evidence.",
+    "Complete Animal Camouflage guide freshly read, including actual required assessment/transfer; its three saved source flags remain verified:false and historical confidence remains unchanged. New museum facts are separately verified bounded contributions, not wholesale guide/source recertification.",
+    "All eight available direct-contributor saved guides are now freshly read in full, including actual assessment thresholds and instructional limits. Other People’s Feelings and Thoughts has no saved research record; its complete card/evidence/assessment was read, and no guide is invented. This does not reverify historical source flags/confidence or certify intervention efficacy.",
+    "Preserve concrete air/temperature language and suitable amounts. The optional educator carbon-dioxide clarification prevents treating air as synonymous with oxygen; gas-name recall, photosynthesis/respiration mechanisms and equations are outside the learner gate.",
+    "Source B2.3 requires varied physical characteristics and need/functions, not mandated internal-structure, gill or wing examples. Full current canonical age range5–8 and complete guide of Animal Camouflage support the selected existing component at6–7; no age widening or new subset claim."
+  ],
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "f70b5a56cbc2ca31bc077ee97861d5a49958a2ea",
+  "source": {
+    "slug": "the-ontario-curriculum-science-and-technology-20",
+    "version": "2022",
+    "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/4b8f8ea5-e66a-4082-bfa0-795d8d7f8c08/SciTech_G1_AODA.pdf",
+    "expectationsSha256": "7d6463a188d376251344be94ec61a42276aa042fd77fc9cfc055c829f974d936",
+    "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+    "contextSha256": "1ade9235dcacf15c27dcc92328d1f883c3026c1687bf40368448b39ec6e4bd74"
+  }
+}
