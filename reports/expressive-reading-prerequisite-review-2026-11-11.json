@@ -291,12 +291,21 @@
     "Full": 444,
     "Partial": 3
   },
-  "stackLifecycle": {
+  "historicalReviewStack": {
     "basePR": 146,
     "baseHead": "322ae789004c00752533cd3272d9b242a1c1bb2b",
     "mergeOrder": "146 to main, then retarget/reconcile145 to main",
     "preservation": "All13 Ontario pairs,2 Ontario contexts and4 authored files remain exact; India-only delta against this feature base is one approved edge and2INcomponent contexts.",
     "authoringBaseRemains": "f70b5a56cbc2ca31bc077ee97861d5a49958a2ea",
-    "meaning": "Explicit review stack for shared generated artifacts; no feature-branch merge is presented as default-branch acceptance or downstream publication."
+    "meaning": "Explicit review stack for shared generated artifacts; no feature-branch merge is presented as default-branch acceptance or downstream publication.",
+    "outcome": "146 reached main86e4e172340aef1a41a54098df07dee2d053696d;145 was accepted into the old146feature branch at048eab034797b6cf0013031729cba8df8eb48174 before retargeting completed. Feature acceptance is not default-branch delivery."
+  },
+  "mainDelivery": {
+    "acceptedMainBase": "86e4e172340aef1a41a54098df07dee2d053696d",
+    "reviewedPR": 145,
+    "reviewedHead": "f14fa8f3a45ecb8317d36dd1f5563f819f933cdb",
+    "acceptedFeatureMerge": "048eab034797b6cf0013031729cba8df8eb48174",
+    "purpose": "Final ordinary main-target delivery of the already reviewed one-edge/two-component change; preserve accepted Ontario payload and qualify generated artifacts against actual main.",
+    "downstreamPublication": false
   }
 }

@@ -47,4 +47,4 @@ Hard versus soft affects future readiness and inference. This authoring change
 performs no downstream publication, learner reset, score transfer or historical
 evidence reinterpretation. Consumers must qualify publication separately.
 
-PR145 is explicitly stacked on PR146 to reconcile shared generated artifacts. Merge146 into main first; then retarget/reconcile145 to main and rerun checks. The India-only delta against146 remains the one registered edge plus two IN component contexts; all13 Ontario pairs and two new Ontario contexts are preserved. This review stack is not default-branch acceptance or downstream publication.
+The review was explicitly stacked as PR145 on PR146 for shared generated artifacts. PR146 reached main; PR145 was then accepted into the old feature branch before retargeting completed. A final ordinary main-target PR delivers the already reviewed India-only one-edge/two-context change against accepted main86e4e17. All13 Ontario pairs, two new Ontario contexts and four authored files are preserved. Feature-branch acceptance is not default-branch delivery or downstream publication.
