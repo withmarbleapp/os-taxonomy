@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **143 records**: **56 Movement Competence records (C1/C2)**,
-**71 Active Living records (B1/B2/B3)** and **16 Healthy Eating records** in Grades 1–6. It contains **143 Full**
-authoring dispositions, **324 component pairs** and **28 topics**. The remaining
-**124 records** (other Healthy Living and integrated SEL) are pending
+accounts for **163 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)**, **16 Healthy Eating records** and **20 Personal Safety records** in Grades 1–6. It contains **163 Full**
+authoring dispositions, **365 component pairs** and **43 topics**. The remaining
+**104 records** (other Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -62,7 +62,7 @@ Personal understanding does not require enjoying every activity, reporting a
 positive mood or disclosing private health/family circumstances.
 
 The [new fitness-component concept](ontario-hpe-fitness-component-claim-2026-11-11.md)
-and the [bounded minor-care concept](ontario-hpe-minor-care-claim-2026-11-11.md) are the two new shared claims/guides in the cumulative HPE work so far. The association slices change no authored card, guide or dependency. Earlier
+the [bounded minor-care concept](ontario-hpe-minor-care-claim-2026-11-11.md) and the [food-allergy knowledge concept](ontario-hpe-allergy-claim-2026-11-11.md) are the three new shared claims/guides in the cumulative HPE work so far. The association slices change no authored card, guide or dependency. Earlier
 scoped requirements remain exact; standards and compatibility age envelopes are
 generated. A Full label is an authoring judgment about available tasks and
 conditions, not a claim that a child performed them or an intervention is validated.
@@ -87,3 +87,11 @@ The eating portfolio uses the actual current Canadian guide, nutrient/food-group
 The unchanged nutrition-label claim now has a reviewed exact Grade 5 context at ages 10–11; its old Australian 11–12 context and full authored requirements remain. The Canadian source task uses actual per-serving/ingredient/nutrient-warning information. Its separate whole-claim transfer uses [original two-column practice panels](assets/ontario-hpe-programme/label-comparison.svg) and the [numeric cases/answer key](assets/ontario-hpe-programme/label-comparison.json): per-100-g comparisons and given ratings in an explicitly Australian-context exercise. The hypothetical ratings are not calculated commercial HSR scores, Canadian features or assurances about an entire diet, portion or allergy safety. All panel arithmetic and the full rendered page were checked; no extra Ontario curriculum obligation or automatic topic mastery is inferred.
 
 The eating checkpoint passed generation, validation, generated-artifact checking and all **259 tests**. All **1,904 existing authored cards**, **1,089 guide payloads and their sequence**, **4,932 contexts** and every old dependency/catalogue/archive/cluster byte remain unchanged. It adds **9 contexts**, extends **10 exact existing bands** and adds **31 pairs**. Three compatibility envelopes change: two later-age ends expand, and the reviewed label start becomes 10 while its old 11–12 context remains exact. No new claim, guide or edge is part of this slice.
+
+## Personal safety and help
+
+Twenty further source duties are accounted for by explicit original tasks, including actual guideline creation, risk-choice/action/reflection, concussion knowledge and school procedure, consent, safe support and inclusion. The [programme](ontario-hpe-primary-task-programme-2026-11-11.json) retains varied settings, fictional unsafe cases and actual benign communication practice. It does not certify a child’s diagnosis, emergency care, babysitting readiness or ability to prevent abuse. The one independently reviewed food-allergy knowledge component is documented separately in the [claim report](ontario-hpe-allergy-claim-2026-11-11.md).
+
+Current [Ontario bullying guidance](https://www.ontario.ca/page/bullying-we-can-all-help-stop-it) informs the local source task: power/context matter, not every one-off disagreement is bullying, and a harmful incident does not need to repeat before help. The inherited repeated-intent definition remains unchanged and is not presented as the complete Ontario definition. Actual [safe-adult information](https://kidshelpphone.ca/get-info/how-identify-safe-adult) supports choosing help; no real service contact, unsafe-image handling or personal disclosure is an assessment action. Full older card and hard-chain evidence stays separate from a source-specific component.
+
+The Personal Safety checkpoint passes all **272 tests** and required generation/validation checks. It preserves all **1,905 existing authored cards**, **1,090 guide payloads and sequence**, every **4,942 old context** and all dependency/catalogue/archive/cluster bytes. It adds **29 contexts**, extends **8 exact bands** and adds **40 pairs** (the allergy pair already existed). **3** generated age ends expand with no start lowered; no old authored claim, guide or edge changes in this association slice.
