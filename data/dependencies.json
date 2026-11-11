@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 4003,
+  "edgeCount": 4002,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -10418,12 +10418,6 @@
       "prerequisiteId": "mt_bABr-c2DfV",
       "strength": "hard",
       "reason": "Diffusion in and between cells requires knowing about the cell membrane as a selectively permeable boundary"
-    },
-    {
-      "topicId": "mt_i8AGTuk4fJ",
-      "prerequisiteId": "mt_e3-_toGuWf",
-      "strength": "hard",
-      "reason": "'Natural and made materials' builds on 'Testing Materials for Uses'"
     },
     {
       "topicId": "mt_i8AGTuk4fJ",
