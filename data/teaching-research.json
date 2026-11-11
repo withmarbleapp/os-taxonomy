@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "fef3299d1e2d599ac82bf9757580316beee525475c5e0b9c7249e92bdf3d47cf",
-  "recordCount": 1081,
+  "topicFileSha256": "2ddeb3dbd85aabb2f94f034d114a33c32f673bf453a90cc6debe0052b5815fca",
+  "recordCount": 1084,
   "coverage": {
-    "topicCount": 1896,
-    "withResearch": 1081,
+    "topicCount": 1899,
+    "withResearch": 1084,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 29,
-        "withResearch": 7,
+        "topics": 32,
+        "withResearch": 10,
         "withoutResearch": 22
       },
       "History": {
@@ -27101,158 +27101,104 @@
     {
       "topicId": "mt_4uPnLieBPN",
       "pedagogy": {
-        "summary": "• Age/Topic: 5–7; Earth has a North Pole and a South Pole — the two coldest places on the planet — found at the very top and very bottom of a globe, as far from the middle (the Equator) as you can get. (Highest-centrality node in the domain — the spatial anchor everything else hangs on.)\n• Standards—UK: DfE KS1 Geography 'name and locate the world's continents and oceans' and locational knowledge (poles, Equator); links KS1 science of cold environments.\n• Standards—US: NGSS K-ESS2/K-ESS3 (weather/environment) plus early geography standards; foundational spatial vocabulary for later Earth science.\n• Operational details: this is a globe/locational topic — the poles are the top and bottom points, the Equator is the warm belt around the middle, and 'far from the Equator = cold'. Use a real globe or ball the child can turn to find both poles. Build the simple rule: middle = hot, top and bottom = cold. This spatial frame underpins later work on climate, seasons, and Arctic-vs-Antarctic.\n• Checkpoint: Tier A (5) point to the top of a globe and say 'North Pole' (and bottom = South Pole); Tier B (6) show the Equator around the middle and say it is warm there; Tier C (7) explain that the poles are cold because they are as far as possible from the warm Equator.",
+        "summary": "Locate the geographic North Pole and South Pole as the opposite points where Earth’s rotation axis meets its surface. Recognize the surrounding polar regions as typically very cold because sunlight reaches them at a slant and spreads its energy over a larger area; map top/bottom is a drawing convention, not an absolute up/down for Earth.",
         "bestPractices": [
-          "Use a real, turnable globe or ball so 'top' and 'bottom' are physical and spatial, not just words on a flat map",
-          "Pair every 'pole' with the Equator so children build the middle-hot / ends-cold contrast, not just two dots",
-          "Beware the flat-map distortion — on many wall maps the poles are smeared along the top and bottom edges; a globe shows them as single points",
-          "Give the coldness a cause children can hold: the poles are the furthest places from the warm middle of the Earth",
-          "Connect to the animals topics — the North Pole end is where polar bears live, the South Pole end is penguins — so location links to life"
+          "Demonstrate Earth’s spin axis on a globe/model and identify its two surface endpoints as geographic poles; turn the model and retain them.",
+          "Use a same-beam light model at a similar distance, contrasting direct and slanting illumination so the wider patch shows energy spread over more area. Keep this introductory; no area formula or full seasonal mechanism is required.",
+          "Explain that surrounding polar regions are typically cold, but a pole is a geographic point and neither page-up nor distance from a warmEquator produces cold.",
+          "Use another model/view and recheck both location and explanation; optional animal/region connections do not replace the geographic claim."
         ],
         "keyRepresentations": [
-          "Turnable globe with North Pole (top), South Pole (bottom), and Equator (middle) clearly marked",
-          "Hot-middle / cold-ends colour band from red Equator to blue poles",
-          "Flat-map-vs-globe comparison to correct the smeared-poles distortion",
-          "Simple 'how far from the middle?' arrow from Equator up to a pole"
+          "Turnable globe with explicit reference/model",
+          "Differently centred/oriented world maps",
+          "Simple same-beam direct/slant light model"
         ],
         "commonMisconceptions": [
-          "The poles are two objects/sticks you could touch — they are just the top and bottom points of the spinning Earth",
-          "The North Pole is a country or a piece of land — it sits on a frozen ocean, not solid ground",
-          "On a flat map the poles are long strips along the top and bottom — on a globe each pole is a single point",
-          "It's cold everywhere far from home — the SPECIFIC reason the poles are coldest is that they are furthest from the warm Equator",
-          "North Pole and South Pole are the same place — they are opposite ends of the Earth"
+          "Uses the current physical top/bottom as the pole definition or a distance-from-warm-middle pseudo-cause."
         ]
       },
       "learn": {
-        "summary": "For ages 5–7: Earth has a North Pole (top) and a South Pole (bottom), among the coldest places on the planet, sitting as far as possible from the warm Equator that belts the middle. The core spatial pattern is 'middle = hot, top and bottom = cold' (in general), and the simple cause children should hold is that the Sun's warmth is strongest around the middle and weakest at the top and bottom, where the poles are furthest from the warm middle. Use a turnable globe or ball so top and bottom are physical and spatial, always pairing each pole with the Equator so the hot-middle/cold-ends contrast is built rather than two isolated dots.",
+        "schemaVersion": 2,
+        "summary": "Use the complete stated geographical claim with reference-aware transfer.",
         "activities": [
           {
-            "title": "Find the poles on a turnable globe",
-            "feedback": [
-              "If the child points to the side of the globe for a pole, cue 'North = top, South = bottom' with an up/down gesture and have them point again.",
-              "If a child confuses the two poles, anchor North to the top and South to the bottom and practise pointing to each in turn.",
-              "Praise using the globe to turn and locate, not just naming from memory."
+            "title": "Identify, explain and transfer the geographical reference",
+            "learnerActions": [
+              "Demonstrate Earth’s spin axis on a globe/model and identify its two surface endpoints as geographic poles; turn the model and retain them.",
+              "Use a same-beam light model at a similar distance, contrasting direct and slanting illumination so the wider patch shows energy spread over more area. Keep this introductory; no area formula or full seasonal mechanism is required.",
+              "Explain that surrounding polar regions are typically cold, but a pole is a geographic point and neither page-up nor distance from a warmEquator produces cold.",
+              "Use another model/view and recheck both location and explanation; optional animal/region connections do not replace the geographic claim."
             ],
-            "rationale": "A turnable globe makes 'top' and 'bottom' physical and spatial rather than words on a flat page, and pairing each pole with the Equator builds the middle-hot/cold-ends contrast at the right grain for this age.",
+            "intendedInsight": "Identifies both geographic axis endpoints regardless of page orientation and gives the introductory slant/spread explanation for cold polar regions.",
+            "feedback": [
+              "Ask for the geographic reference and evidence, not just a memorized page position.",
+              "Preserve the stated convention and correct the specific near miss without adding numerical calculations."
+            ],
+            "rationale": "Factually source-checked authored teaching proposal; no learning-outcome study is claimed.",
             "sourceClaims": [
-              "KS1 pupils name and locate the world's continents and oceans and use basic locational knowledge including poles and Equator"
-            ],
-            "learnerActions": [
-              "Hold and turn a real globe or ball; point to the very top and say 'North Pole', then the very bottom and say 'South Pole'.",
-              "Run a finger around the middle band (the Equator) and say 'warm here'.",
-              "Say the simple rule out loud: 'middle is hot, top and bottom are cold.'"
-            ],
-            "intendedInsight": "The poles are the top and bottom points of the Earth, and the Equator is the warm belt around the middle — a single spatial frame, not three unrelated facts."
-          },
-          {
-            "title": "Why are the poles so cold?",
-            "feedback": [
-              "If a child says the poles are warm, use a globe coloured from a red-hot Equator to icy-blue caps so the hot stripe and cold ends are visible.",
-              "If a child says the poles are cold because the top of the Earth is closest to the Sun or to cold space, note that the whole Earth is roughly the same distance from the Sun; the poles are cold because the Sun's warmth is weakest at the top and bottom, furthest from the warm middle where it is strongest.",
-              "If a child locates the poles and knows they are cold but can't say why, re-trace the 'how far from the middle?' arrow and ask again."
-            ],
-            "rationale": "Giving coldness a cause a young child can hold ('the Sun warms the middle most, and the poles, furthest from the warm middle, get the least warmth') turns label-recall into a usable spatial idea and targets the common 'closer to the Sun' muddle. The deeper low-angle-sunlight reason comes later; here distance from the warm middle is a clue to weaker sunshine, not a cause on its own.",
-            "sourceClaims": [
-              "The North and South Poles are the Earth's axial endpoints, the regions furthest from the Equator, and among the coldest places on Earth"
-            ],
-            "learnerActions": [
-              "With a finger on the warm Equator, trace an arrow outward to a pole and say the pole is the furthest place from the warm middle.",
-              "Answer: 'Are the poles the hottest or the coldest places on Earth?' and explain why in your own words.",
-              "Move a finger from the North Pole down towards the Equator and say whether it gets warmer or colder along the way."
-            ],
-            "intendedInsight": "The poles are so cold because the Sun's warmth is weakest at the top and bottom of the Earth, as far as possible from the Equator, where it is strongest. They are not random cold spots, and they are not cold because of being nearer to or further from the Sun."
-          },
-          {
-            "title": "Drag-to-spin exploration (optional interactive scaffold)",
-            "feedback": [
-              "On tapping the top, confirm 'North Pole — top of the world, freezing cold; polar bears live in the icy Arctic around it'; on the bottom, 'South Pole — bottom of the world, freezing cold; penguins live on the icy coasts of Antarctica, far from the Pole itself'; on the middle, 'the Equator — the warm middle, as far from the poles as you can get'.",
-              "If the child only taps labels without noticing the colour band, prompt them to look at how colour changes from middle to ends."
-            ],
-            "rationale": "A drag-to-spin globe with live recolouring makes the location and the hot-middle/cold-ends pattern concrete through the child's own action, and the animal labels link the polar regions to life. Tapping-to-reveal labels is an interaction example, not a required product.",
-            "sourceClaims": [],
-            "learnerActions": [
-              "Drag to spin a globe, stopping to tap the top, the bottom, and the middle band.",
-              "Watch a hot-to-cold colour band shift from red at the Equator to blue at the caps as you look from middle to ends.",
-              "Lift a flap or reveal panel asking 'Why are the poles so cold?' and read the arrow tracing from warm middle out to a pole."
-            ],
-            "intendedInsight": "Actively rotating to find and tap each pole, with live colour feedback from hot middle to cold ends, reinforces where the poles are and why they are cold."
+              "The geographic poles are the surface intersections of Earth’s rotation axis.",
+              "Slanting sunlight spreads energy over more area at higher latitudes, contributing to polar cold; this is not heat caused by distance from a warmEquator.",
+              "NASA’s annual energy account distinguishes latitude/season-dependent illumination and polar net energy deficit; this does not make either pole an absolute global temperature minimum."
+            ]
           }
         ],
         "constraints": [
-          "Use a real, turnable globe or ball so top and bottom are physical and spatial, not words along the top and bottom of a flat map.",
-          "Always pair each pole with the Equator so children build the hot-middle/cold-ends contrast rather than memorising two isolated dots.",
-          "Beware flat-map distortion: on many wall maps the poles are smeared along the top and bottom edges, whereas on a globe each pole is a single point. A globe or a flat-map-vs-globe comparison helps correct this.",
-          "Point-and-say or hot-or-cold recognition tasks check the vocabulary but presume the globe picture is already understood; they do not by themselves show the child can explain the 'furthest from the warm middle' cause.",
-          "Keep the causal story age-appropriate: 'the Sun warms the middle most and the top and bottom least, so the poles, furthest from the warm middle, are coldest' is the target. Distance from the Equator does not cause the cold by itself, and the low-angle-sunlight explanation is for later and should not be introduced here.",
-          "The North Pole sits on frozen ocean, not solid land, and is not a country — worth clarifying if a child treats it as a place you stand on land."
+          "A globe/model and suitable maps are teaching materials; no particular branded interface or livewebaccount is required.",
+          "Do not turn a map convention into a universal physical up/down.",
+          "Keep model boundaries and the source’s actual required feature-identification scope explicit."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of saved teaching research without fresh source verification; both listed sources remain marked verified:false. Activities are research-informed proposals, not validated interventions.",
-          "Scientific note preserved from the source: the real reason the poles are colder involves sunlight striking at a low, slanting angle and the whole Earth being roughly equidistant from the Sun. 'Farthest from the warm Equator' is a simplified, age-appropriate framing, not the full physical cause; it should not be presented to older learners as the complete explanation.",
-          "The objective describes the poles as 'the two coldest places on the planet'. This is an acceptable simplification for ages 5–7 but is not strictly accurate: the North Pole region is milder than interior Antarctica and some high-latitude land areas. It is kept only as the stated age-appropriate objective, never offered as a comparison choice in a learner question.",
-          "The source frames a 2D labelled globe as 'ideal' and 3D/drag-to-spin as alternatives; this is a catalog preference, not evidence of comparative efficacy. All formats are retained here as options without asserting one teaches better.",
-          "The 'closer to the Sun at the top' idea appears both as a misconception to correct and is implicitly guarded against; ensure feedback corrects it rather than reinforcing any 'top of the Earth' spatial-height intuition.",
-          "The polar bear / penguin life link is present in the interactive activity's reveal labels, matching the source recommendation and the best-practice animal-topic connection."
-        ],
-        "schemaVersion": 2
+          "2026-11-10: primary factual references checked; new/revised low-confidence teaching proposal, not an inherited research verification or intervention study.",
+          "2026-11-10: active pole explanation/assessment and teaching sequence rewritten by current taxonomy curation after primary factual review. Original provenance fields remain historical origin metadata; they do not attribute this new material to the original author or certify its effectiveness."
+        ]
       },
       "assess": {
         "method": "two_tier",
         "poeTask": null,
+        "diagnosticPrompt": "Can {{name}} find the geographic North and South Poles where Earth’s spin axis meets its surface, and still identify them when a globe is turned? With a simple light-and-surface model, can they explain why slanting sunlight spreads over more area and helps make the polar regions cold, rather than say that the top of Earth or distance from a warm Equator causes the cold?",
+        "correctAnswer": "Identifies both geographic axis endpoints regardless of page orientation and gives the introductory slant/spread explanation for cold polar regions.",
+        "whatMakesItDiscriminate": "Turning the globe tests whether the learner retains the geographic rotation-axis endpoints instead of memorizing the current physical top. In the light model, keeping the beam and distance comparable while changing its angle makes the larger illuminated area the relevant difference, distinguishing the slant/spread explanation from a warm-Equator or distance-only story.",
         "probeDeeper": [
-          "The middle of the globe (the Equator) is warm. As you move your finger up towards the North Pole, does it get warmer or colder — and why?",
-          "Is the North Pole closer to the Equator or to the South Pole? Which is warmer?",
-          "If you lived exactly on the Equator, would you need a big winter coat? What about at the North Pole?",
-          "Are the two poles the two hottest or the two coldest places on Earth?"
+          "Can the learner retain the reference when the map/model view changes?",
+          "Which reference/model supports the answer, and what does it not establish?"
         ],
-        "correctAnswer": "The child points to the top (North Pole) and bottom (South Pole) of the globe and says the poles are much COLDER than the Equator. The reason a young child should give: the poles are as far as you can get from the Equator (the warm middle of the Earth), so they get the least warmth from the Sun and are the coldest places on the planet. (The deeper reason — sunlight hitting at a low, slanting angle — comes later; here, 'farthest from the warm middle' is the target.)",
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "'The North Pole is cold because the top of the Earth is closest to the Sun / space' — muddles 'top' of the globe with nearness to the Sun.",
-            "nextMove": "Show that the whole Earth is roughly the same distance from the Sun; the poles are cold because they are farthest from the warm middle (Equator) where the Sun's warmth is strongest.",
-            "distractor": "The poles are cold because the top and bottom of the Earth stick out closest to cold space.",
-            "revealedBy": "Says the poles are cold (or hot!) because of being nearest/farthest from the Sun by being at the top/bottom.",
-            "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "misconception",
-            "pattern": "'The poles are the warmest places' or no sense that poles=coldest — hasn't linked poles to extreme cold.",
-            "nextMove": "Use a globe with a warm-middle/cold-ends colour band; the Equator is the hot stripe, the poles the icy caps.",
-            "distractor": "The poles are the hottest places because they are at the very top and bottom.",
-            "revealedBy": "Guesses the poles are warm, or can't say how they compare to the Equator.",
-            "reteachPrerequisiteId": null
-          },
-          {
-            "kind": "performance",
-            "pattern": "Confuses which pole is which / top vs bottom — a placement slip.",
-            "nextMove": "Anchor 'North = top, South = bottom' with a simple up/down cue on the globe; practise pointing.",
+            "pattern": "Uses the current physical top/bottom as the pole definition or a distance-from-warm-middle pseudo-cause.",
+            "revealedBy": "Answer changes with page orientation or confuses the named geographical feature/reference.",
+            "nextMove": "Demonstrate Earth’s spin axis on a globe/model and identify its two surface endpoints as geographic poles; turn the model and retain them.",
             "distractor": null,
-            "revealedBy": "Points to North for South or vice versa, or puts a pole on the side.",
             "reteachPrerequisiteId": null
           }
         ],
         "responseLevels": {
-          "gap": "Cannot reliably locate the poles, or thinks they are warm / gives an unrelated reason.",
-          "full": "Locates North (top) and South (bottom) poles, states they are the coldest places, and explains it as being farthest from the warm Equator — and can reason that moving toward the middle gets warmer.",
-          "partial": "Locates both poles and knows they are cold, but can't say why — or gives the 'closer to the Sun at the top' reason."
-        },
-        "diagnosticPrompt": "Point to the North Pole and the South Pole on this globe. Now tell me: is it hotter or colder at the poles than where the Equator is drawn round the middle — and WHY do you think the poles are the way they are?",
-        "whatMakesItDiscriminate": "A child who has only memorised the labels can point to the poles but gives a wrong or no reason (e.g. 'colder because they're closer to the Sun at the top'); a child with the idea both locates them AND links cold to being farthest from the warm Equator. Asking 'why' separates label-recall from understanding."
+          "gap": "Does not reliably identify the specified feature/reference.",
+          "partial": "Identifies it in one familiar view but cannot explain/transfer the relation.",
+          "full": "Identifies both geographic axis endpoints regardless of page orientation and gives the introductory slant/spread explanation for cold polar regions."
+        }
       },
       "sources": [
         {
-          "claim": "KS1 pupils name and locate the world's continents and oceans and use basic locational knowledge including poles and Equator",
-          "source": "DfE National Curriculum, Geography KS1 (locational knowledge)",
-          "verified": false
+          "claim": "The geographic poles are the surface intersections of Earth’s rotation axis.",
+          "source": "Australian Antarctic Program",
+          "url": "https://www.antarctica.gov.au/about-antarctica/geography-and-geology/geography/poles-and-directions/",
+          "verified": true
         },
         {
-          "claim": "The North and South Poles are the Earth's axial endpoints, the regions furthest from the Equator, and among the coldest places on Earth",
-          "source": "National Geographic Education — geographic poles and the Equator",
-          "verified": false
+          "claim": "Slanting sunlight spreads energy over more area at higher latitudes, contributing to polar cold; this is not heat caused by distance from a warmEquator.",
+          "source": "Hong Kong Observatory educational explanation",
+          "url": "https://www.weather.gov.hk/en/education/edu06nature/ele_srad.htm",
+          "verified": true
+        },
+        {
+          "claim": "NASA’s annual energy account distinguishes latitude/season-dependent illumination and polar net energy deficit; this does not make either pole an absolute global temperature minimum.",
+          "source": "NASA EarthObservatory energy budget",
+          "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+          "verified": true
         }
       ],
-      "confidence": "high",
+      "confidence": "low",
       "provenance": {
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-03T16:50:27.601Z",
@@ -92900,7 +92846,7 @@
     {
       "topicId": "mt_hjJkBWruO6",
       "pedagogy": {
-        "summary": "• Age/Topic: 7–9, Geography & Local Weather — different places have very different typical weather (tropics hot/wet, deserts dry, poles freezing) and geography (distance from the Equator, altitude, nearness to the sea) drives those differences.\n• Standards — UK (DfE): KS1/KS2 geography — identify hot and cold areas of the world in relation to the Equator and the North/South Poles; describe and understand climate zones.\n• Standards — US (NGSS): 3-ESS2-2 '[curriculum wording omitted; reference 3-ESS2-2]' — the direct anchor. State/regional tier DEFERRED.\n• Operational details: teach latitude (distance from the Equator) as the dominant control, then layer secondary factors (altitude cools; the sea moderates); use a globe/map so children can locate places and read the Equator-to-pole temperature gradient; combine information from maps, photos and data (aligning to 3-ESS2-2's 'obtain and combine').\n• Checkpoint (Tier A|B|C): Tier A — describe typical weather in three climate types and state that places near the Equator are hotter; Tier B — name a non-latitude factor (altitude/sea) and explain its effect; Tier C — combine multiple factors to explain a specific place's climate.",
+        "summary": "For ages 7–9, compare typical weather across at least three climate types and relate it to geography: distance from the Equator, altitude and nearness to the sea. Tropical rainfall and polar temperatures vary seasonally; deserts are defined by dryness, not heat. Latitude is an important broad influence, not a complete explanation of a place’s climate. Distinguish long-term typical patterns from today’s weather. Existing evidence remains describing three types, explaining the broad near-Equator tendency and naming a non-latitude influence. These are parts of one claim, not difficulty tiers.",
         "bestPractices": [
           "Establish latitude first — the Equator-to-pole temperature gradient — using a globe so the Sun-angle cause is spatially anchored",
           "Add one factor at a time (altitude cools even at the Equator; nearness to the sea evens out temperatures) so children can isolate causes",
@@ -92923,13 +92869,13 @@
         ]
       },
       "learn": {
-        "summary": "For ages 7–9, help children see that a place's typical weather is not random but shaped by a few predictable geographic causes: distance from the Equator (latitude) is the main control on temperature, with altitude (higher is generally colder) and nearness to the sea (which usually evens out hot and cold extremes and can bring moisture) as major secondary factors. Children first establish the Equator-to-pole temperature gradient, then isolate one factor at a time, 'obtain and combine' information from at least two sources (map plus climate data or photos), and confront common confusions such as 'the South is always hot', 'higher means hotter', and 'all deserts are hot'.",
+        "summary": "Compare typical weather across at least three climate types using maps and dated climate summaries. Many lowland tropical places stay warm, but rainfall can have wetter and drier seasons. Polar regions have long cold winters and short cool summers; a summer day above freezing is not a contradiction. Deserts are dry and can be hot or cold. Relate broad temperature patterns to distance from the Equator, then use a supported altitude or coastal comparison to show that latitude is not the only influence. Do not infer the climate from one day or one photograph. No atmospheric formula, added climate type inventory or new difficulty level is required.",
         "activities": [
           {
             "title": "Climate map: vary one cause at a time",
             "feedback": [
-              "If a child says a mountain on the Equator must be hot, point to mountaintop-snow photos and prompt: the air high up is thinner and holds less heat, so higher is colder even near the Equator (an age-appropriate gloss of the fuller physics).",
-              "If a child expects two same-latitude places to have identical weather, have them change only ONE factor (altitude OR distance to sea) and watch the weather diverge.",
+              "If a child says a mountain on the Equator must be hot, compare dated climate summaries for high and low locations near the Equator: higher places are generally cooler. Do not require a new atmospheric-physics explanation or teach that thinner air simply holds less heat.",
+              "If a child expects two same-latitude places to have identical weather, use a clearly labelled illustrative model varying altitude OR distance to sea; a real pair may differ in several ways, so identify the supported influence without claiming all other causes are equal.",
               "When a child reads the sea as only cooling or only warming, show it both ways: cooler summers AND milder winters compared with inland places at the same latitude.",
               "Affirm correct reasoning by asking the child to name which single factor they changed and what effect it had."
             ],
@@ -92941,7 +92887,7 @@
             "learnerActions": [
               "Drop a place-marker somewhere on a world map and read its typical weather (e.g. typical temperature and whether it is wet or dry).",
               "Drag the marker from the poles toward the Equator and describe the overall trend in temperature along the way (watch for places, like high mountains, that break the pattern).",
-              "Park a place on the Equator at low altitude (hot all year), then raise its ALTITUDE and describe what happens to its weather; then move a place next to the sea and describe how its hot/cold extremes change.",
+              "Park a place on the Equator at low altitude (generally warm year-round), then raise its ALTITUDE and describe what happens to its weather; then move a place next to the sea and describe how its hot/cold extremes change.",
               "Combine a map view with a climate data or photo card into a short spoken or written summary: 'This place is ___ because ___.'"
             ],
             "intendedInsight": "A place's weather is the combined effect of a few geographic causes you can switch on and off: latitude sets the baseline, altitude cools, and the sea evens out extremes."
@@ -92949,7 +92895,7 @@
           {
             "title": "Spinning globe: why the Equator is hotter",
             "feedback": [
-              "If a child says the South is always hot and the North always cold, compare both poles (both freezing) and places at similar latitudes north and south of the Equator.",
+              "If a child says the South is always hot and the North always cold, compare both poles (both generally cold) and places at similar latitudes north and south of the Equator.",
               "Reinforce that 'near the Equator = more direct sun = warmer' by having the child point to where the beam is most concentrated."
             ],
             "rationale": "A rotatable globe makes the Equator-to-pole gradient genuinely spatial and can show the Sun-angle cause behind it, which a flat map represents less directly. A flat map can still teach the gradient; the globe is offered for the deeper 'why', not as the only way to learn this. The movable sunlight beam and latitude-band overlay are optional interaction examples. Note: the direct-vs-glancing-sunlight mechanism is correct science but is not directly stated in the listed sources.",
@@ -92974,29 +92920,28 @@
             "learnerActions": [
               "Study photo and climate-data cards for contrasting places: a tropical rainforest, a hot desert, a temperate coast, a polar region, and a high mountain.",
               "Describe the typical weather of at least three of these climate types in your own words.",
-              "Sort or sequence the places from coldest to hottest and say which geographic factor best explains each place's weather.",
+              "Compare the places using the same stated measure and period, then give a geographic reason for a supported difference. Do not combine a single summer day with another place’s annual average.",
               "Explain how a cold desert or a cold high desert can be a 'desert' — point out that 'desert' means dry, not hot."
             ],
             "intendedInsight": "Different places have very different typical weather, and for each case children can name a geographic factor (latitude, altitude, or nearness to the sea) that helps explain it, while knowing other things such as winds and mountains blocking rain also play a part."
           },
           {
-            "title": "Same latitude, different weather (diagnostic discussion)",
+            "title": "Same latitude, different typical weather (diagnostic discussion)",
             "feedback": [
-              "Gap response ('same latitude must mean same weather'): compare paired places that differ in only ONE factor at a time.",
-              "Partial response (lists altitude/sea/wind but can't isolate which explains a given difference): ask which single factor separates these two specific towns.",
-              "Full response: the child explains local weather as the combined effect of altitude, distance from the sea and wind, and isolates the operative factor for a new paired case such as equatorial mountain snow."
+              "If latitude alone is treated as decisive, compare one of the supported pairs again.",
+              "If a child lists factors without connecting one to the observed pattern, ask which geographic difference is relevant in that pair.",
+              "Do not require an unseen factor or a complete physical mechanism beyond the retained claim."
             ],
-            "rationale": "Holding latitude constant between two towns forces beyond-latitude reasoning and discriminates single-factor thinkers from children who can hold and isolate multiple factors. Spoken, responsive discussion lets a teacher probe and reteach in the moment.",
+            "rationale": "A supported pair isolates the factor being discussed; two different comparisons avoid changing altitude and nearness to the sea together while asking for a unique cause. A spoken explanation distinguishes identifying a factor from merely repeating a label.",
             "sourceClaims": [
               "Latitude is the dominant control on climate, with altitude and proximity to the sea as major secondary factors; children commonly over-attribute climate to latitude alone."
             ],
             "learnerActions": [
-              "Consider two towns at the same distance from the Equator on the same day and time of year: one high on a mountain, one by the sea. Explain why their weather might be quite different.",
-              "Answer: which single factor would you change to make the mountain town's weather more like the coastal town's?",
-              "Discuss: it snows on a mountain in a hot country near the Equator — how can that be?",
-              "Discuss: why do coastal places often have milder winters than inland places at the same latitude?"
+              "Use two prepared, source-supported comparisons. First compare higher and lower locations at similar latitude while keeping other stated conditions comparable; then compare coastal and inland seasonal summaries at similar latitude.",
+              "For each comparison, identify the relevant geographic difference and explain the supported typical-weather difference. Do not pretend that a mountain/coast pair varies only one factor.",
+              "Explain why a cold high place near the Equator does not disprove the general near-Equator warming pattern, and why the coast need not always be colder."
             ],
-            "intendedInsight": "When latitude is held equal, you must appeal to other factors — altitude, nearness to the sea, wind — to explain a difference, and you can isolate which factor is doing the work."
+            "intendedInsight": "Latitude alone does not fix local climate; altitude and proximity to the sea can each influence typical weather. Use evidence for the particular case."
           },
           {
             "title": "Voices from contrasting climates (enrichment)",
@@ -93019,15 +92964,18 @@
           "Recognition tasks (matching, sequencing, multiple choice) can assess and reinforce classification but do not by themselves require the child to construct an explanation; pair them with a spoken or written explanation of why a place has its weather.",
           "Teach latitude first, then add only one secondary factor at a time (altitude, then sea) so children can isolate each cause.",
           "A globe represents the spherical Earth more spatially than a flat map; a flat map is a flattened representation of the sphere but can still show the Equator-to-pole gradient. Distinguish the real spherical Earth from any flat picture or digital model of it; globes and maps on screen or card are models, not the Earth itself.",
-          "Explicitly confront hemisphere confusion ('South = always hot') by comparing places at similar latitudes north and south, and note that both poles are cold."
+          "Explicitly confront hemisphere confusion ('South = always hot') by comparing places at similar latitudes north and south, and note that both poles are cold.",
+          "Use dated climate normals as long-term local summaries, not a forecast or a universal rule. Compare like measures and periods. Rainfall seasons and cool polar summers must not be marked wrong for conflicting with simplified labels.",
+          "One-factor toggles are controlled illustrative models, not a claim about real paired places. Actual climate comparisons have other influences; identify a source-supported influence and stated limits rather than infer a controlled causal experiment."
         ],
         "reviewNotes": [
-          "This is an agent semantic rewrite of a saved teaching-research row; sources were NOT re-fetched or re-verified. All activities are research-informed proposals, not validated interventions.",
+          "Historical earlier review: This is an agent semantic rewrite of a saved teaching-research row; sources were NOT re-fetched or re-verified. All activities are research-informed proposals, not validated interventions.",
           "Two of the three sources (DfE curriculum claim; the latitude/altitude/sea dominance claim) are marked unverified in the source row; treat their specific framings as unconfirmed.",
           "The original row implied a flat map 'cannot' show the Equator-to-pole cause and that 2D toggles are 'ideal'; these comparative/necessity claims are catalog preferences, not established efficacy findings, and have been softened to scoped proposals with stated affordances.",
-          "The direct-vs-glancing-sunlight mechanism in the globe activity is correct, age-appropriate science but is not directly supported by any of the three listed sources (its sourceClaims is therefore empty); the DfE claim supports only the locate-Equator/poles portion.",
+          "Historical earlier review: The direct-vs-glancing-sunlight mechanism in the globe activity is correct, age-appropriate science but is not directly supported by any of the three listed sources (its sourceClaims is therefore empty); the DfE claim supports only the locate-Equator/poles portion.",
           "Comparative medium claims (map/globe better than narration; human accounts aiding memorability) are plausible but untested and have been softened to may/proposed wording.",
-          "Simplifications for ages 7–9: 'thinner air holds less heat' is a child-level gloss of why higher altitude is colder (the full explanation involves pressure and adiabatic effects); and 'latitude is the dominant control' is a general tendency, not a universal rule. Keep these as age-appropriate approximations and avoid overstating them."
+          "2026-11-10 factual/guidance correction by taxonomy curation: seasonal tropical rainfall and polar summers qualify the former universal labels; removed the unsupported thinner-air/heat-retention causal gloss. Original provenance is retained as history, not authorship of this update. Original source flags remain historical; new primary references support only the stated factual points. Activities are proposals, not classroom-validated interventions. No new learner criterion, dependency or interval is introduced.",
+          "The newly checked NOAA factual reference also supports the existing introductory sunlight-angle illustration. This is not a new mandatory calculation or assessment criterion. The original note about only three listed sources describes the prior review."
         ],
         "schemaVersion": 2
       },
@@ -93035,16 +92983,16 @@
         "method": "two_tier",
         "poeTask": null,
         "probeDeeper": [
-          "Which single factor would you change to make the mountain town's weather more like the coastal town's?",
+          "In the supplied higher/lower-place comparison, which geographic difference helps explain the temperature pattern?",
           "It snows on a mountain in a hot country near the equator. How can that be?",
           "Why do coastal places often have milder winters than inland places at the same latitude?"
         ],
-        "correctAnswer": "Factors besides latitude shape local weather: altitude (higher is colder), nearness to the sea (the ocean moderates temperature and adds moisture), and things like prevailing wind and mountains. So the same latitude can still mean very different local weather.",
+        "correctAnswer": "Latitude is an important influence, but higher places are generally cooler and nearby seas can moderate seasonal temperature differences. The evidence for each particular pair supports the explanation; the same latitude does not guarantee identical weather.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "'The only thing that changes weather is how far north you are' — single-factor thinking",
-            "nextMove": "Compare paired places that differ in only ONE factor at a time.",
+            "nextMove": "Use a clearly labelled one-factor illustrative model. With real places, point to a documented influence and acknowledge other differences rather than claiming the pair holds every other cause equal.",
             "distractor": "They should have the same weather because they're the same distance from the equator.",
             "revealedBy": "gives a one-factor answer and is stuck when latitude is held equal",
             "reteachPrerequisiteId": null
@@ -93052,7 +93000,7 @@
           {
             "kind": "misconception",
             "pattern": "'Higher up is warmer because it's closer to the Sun'",
-            "nextMove": "Mountaintop-snow photos; thinner air holds less heat, so higher is colder.",
+            "nextMove": "Compare actual high- and low-elevation climate evidence: higher places are generally cooler. A photo alone does not establish a year-round climate or its cause.",
             "distractor": "The mountain town is warmer because it's nearer the Sun.",
             "revealedBy": "predicts the mountain town is hotter",
             "reteachPrerequisiteId": null
@@ -93068,11 +93016,11 @@
         ],
         "responseLevels": {
           "gap": "Says the same latitude must mean the same weather; single-factor thinking.",
-          "full": "Explains local weather as the combined effect of altitude, distance from the sea and wind, and isolates the operative factor for a new paired case such as equatorial mountain snow.",
+          "full": "Connects altitude or nearness to the sea to the supported difference in a new paired case, while retaining the broad latitude pattern and describing typical rather than every-day weather.",
           "partial": "Lists factors (altitude, sea, wind) but cannot isolate which one explains a specific difference between the two towns."
         },
-        "diagnosticPrompt": "Two towns are at the same distance from the equator on the same day and time of year. One sits high on a mountain, the other by the sea. Why might their weather be quite different?",
-        "whatMakesItDiscriminate": "A child who thinks only 'how far north/south' or 'how sunny' sets weather cannot explain a difference between same-latitude towns; only a child holding multiple factors can isolate why the mountain and coastal towns differ."
+        "diagnosticPrompt": "Two places are at a similar distance from the Equator, but one is much higher. Their dated climate summaries show the higher place is cooler. How can that happen? Then compare a coastal and an inland place at similar latitude: why might their seasonal temperatures differ?",
+        "whatMakesItDiscriminate": "Similar latitude makes a latitude-only answer inadequate. Separate altitude and coastal comparisons make a documented additional influence discussable, while acknowledging real places may differ in other ways. A source-linked explanation and seasonal counterexample distinguish understanding from repeating factor names or absolute labels; no controlled-causation proof is required."
       },
       "sources": [
         {
@@ -93090,9 +93038,33 @@
           "claim": "Latitude is the dominant control on climate, with altitude and proximity to the sea as major secondary factors; children commonly over-attribute climate to latitude alone.",
           "source": "UK Met Office / NOAA climate education resources; geography-education literature",
           "verified": false
+        },
+        {
+          "claim": "Tropical regions can have rainfall seasons; their general warmth is not a claim that every tropical place is wet at all times.",
+          "source": "NOAA JetStream — Tropical Weather Systems",
+          "url": "https://www.noaa.gov/jetstream/tropical",
+          "verified": true
+        },
+        {
+          "claim": "Iqaluit 1991–2020 composite normals show long cold winters and a cool summer, including July mean daily temperature above freezing. These are dated local normals, not every-day conditions.",
+          "source": "Environment and Climate Change Canada — Iqaluit 1991–2020 normals",
+          "url": "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?climate_id=2402590&lstProvince=NU&searchType=stnProv",
+          "verified": true
+        },
+        {
+          "claim": "Singapore climate varies seasonally in rainfall despite year-round warmth; proximity to the sea affects its temperature pattern.",
+          "source": "Meteorological Service Singapore — Climate of Singapore",
+          "url": "https://www.weather.gov.sg/climate-climate-of-singapore",
+          "verified": true
+        },
+        {
+          "claim": "Altitude is among the factors affecting temperature; higher locations tend to be cooler. This does not verify the removed simple heat-retention causal gloss.",
+          "source": "Met Office — Understanding weather",
+          "url": "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/understanding-weather",
+          "verified": true
         }
       ],
-      "confidence": "high",
+      "confidence": "low",
       "provenance": {
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-02T17:38:21.424Z",
@@ -93114,12 +93086,6 @@
           },
           {
             "path": "learn.activities[2].sourceClaims[0]",
-            "codes": [
-              "3-ESS2-2"
-            ]
-          },
-          {
-            "path": "pedagogy.summary",
             "codes": [
               "3-ESS2-2"
             ]
@@ -219394,6 +219360,303 @@
         "originalResearchGeneratedBy": "Taxonomy curation: original source-checked historical organisation design;teaching efficacy untested",
         "createdAt": "2026-11-11T00:00:16Z",
         "updatedAt": "2026-11-11T00:00:16Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_6M7zCpUQex",
+      "pedagogy": {
+        "summary": "Name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America using the stated seven-continent map model. Distinguish continents from countries and oceans, and recognize that geographical models and labels can differ; state the model being used rather than assume every map groups land in exactly the same way.",
+        "bestPractices": [
+          "State the seven-continent model before naming/locating; compare a country and an ocean without assuming one word can have only one geographical use.",
+          "Use unlabelled or partly labelled views to avoid copying, then transfer to a differently centred map and globe.",
+          "Attribute alternative grouping/labels to their stated map model rather than declare all different conventions factual errors."
+        ],
+        "keyRepresentations": [
+          "Turnable globe with explicit reference/model",
+          "Differently centred/oriented world maps"
+        ],
+        "commonMisconceptions": [
+          "Confuses a country/ocean with a continent or relies on one labelled picture."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the complete stated geographical claim with reference-aware transfer.",
+        "activities": [
+          {
+            "title": "Identify, explain and transfer the geographical reference",
+            "learnerActions": [
+              "State the seven-continent model before naming/locating; compare a country and an ocean without assuming one word can have only one geographical use.",
+              "Use unlabelled or partly labelled views to avoid copying, then transfer to a differently centred map and globe.",
+              "Attribute alternative grouping/labels to their stated map model rather than declare all different conventions factual errors."
+            ],
+            "intendedInsight": "Names/locates the specified seven continents and transfers across representations while distinguishing country/ocean references.",
+            "feedback": [
+              "Ask for the geographic reference and evidence, not just a memorized page position.",
+              "Preserve the stated convention and correct the specific near miss without adding numerical calculations."
+            ],
+            "rationale": "Factually source-checked authored teaching proposal; no learning-outcome study is claimed.",
+            "sourceClaims": [
+              "NationalGeographic’s own map policy states its seven-continent model and treats Oceania as a region associated with Australia."
+            ]
+          }
+        ],
+        "constraints": [
+          "A globe/model and suitable maps are teaching materials; no particular branded interface or livewebaccount is required.",
+          "Do not turn a map convention into a universal physical up/down.",
+          "Keep model boundaries and the source’s actual required feature-identification scope explicit."
+        ],
+        "reviewNotes": [
+          "2026-11-10: primary factual references checked; new/revised low-confidence teaching proposal, not an inherited research verification or intervention study."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Using the seven-continent model, can {{name}} name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America on a map and globe, distinguish a country and an ocean from a continent, and still find the same continents on another view? If another map groups or labels land differently, can they say which model they are using rather than call every difference an error?",
+        "correctAnswer": "Names/locates the specified seven continents and transfers across representations while distinguishing country/ocean references.",
+        "whatMakesItDiscriminate": "Unlabelled naming/location rules out copying printed labels, while a differently centred map and globe check knowledge beyond one picture. Country/ocean contrasts reveal category confusion. Explaining an explicitly supplied alternative grouping distinguishes awareness of the stated model from categorically misnaming a feature.",
+        "probeDeeper": [
+          "Can the learner retain the reference when the map/model view changes?",
+          "Which reference/model supports the answer, and what does it not establish?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Confuses a country/ocean with a continent or relies on one labelled picture.",
+            "revealedBy": "Answer changes with page orientation or confuses the named geographical feature/reference.",
+            "nextMove": "State the seven-continent model before naming/locating; compare a country and an ocean without assuming one word can have only one geographical use.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not reliably identify the specified feature/reference.",
+          "partial": "Identifies it in one familiar view but cannot explain/transfer the relation.",
+          "full": "Names/locates the specified seven continents and transfers across representations while distinguishing country/ocean references."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NationalGeographic’s own map policy states its seven-continent model and treats Oceania as a region associated with Australia.",
+          "source": "National Geographic Society map policy",
+          "url": "https://www.nationalgeographic.org/national-geographic-map-policy",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: primary factual-source review and untested teaching proposal",
+        "createdAt": "2026-11-10T14:22:27Z",
+        "updatedAt": "2026-11-10T14:22:27Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_eoQNkZGzxK",
+      "pedagogy": {
+        "summary": "Identify the Equator as an imaginary circle around Earth halfway between the geographic poles, dividing Earth into Northern and Southern Hemispheres. Locate points or regions relative to it on maps and globes, using the geographic reference rather than the current top of a page or model.",
+        "bestPractices": [
+          "Mark the imaginary Equator midway between labelled geographic poles on a globe, then identify its N/S halves.",
+          "Classify supplied points and a crossing region; a country/region need not lie wholly in one hemisphere.",
+          "Turn the model/page and retain the geographic references; no PrimeMeridian or E/W inventory is required here."
+        ],
+        "keyRepresentations": [
+          "Turnable globe with explicit reference/model",
+          "Differently centred/oriented world maps"
+        ],
+        "commonMisconceptions": [
+          "Treats Equator as a physical wall or changes north with physical page-up."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the complete stated geographical claim with reference-aware transfer.",
+        "activities": [
+          {
+            "title": "Identify, explain and transfer the geographical reference",
+            "learnerActions": [
+              "Mark the imaginary Equator midway between labelled geographic poles on a globe, then identify its N/S halves.",
+              "Classify supplied points and a crossing region; a country/region need not lie wholly in one hemisphere.",
+              "Turn the model/page and retain the geographic references; no PrimeMeridian or E/W inventory is required here."
+            ],
+            "intendedInsight": "Identifies Equator/Northern/Southern halves and classifies points or crossing regions across views.",
+            "feedback": [
+              "Ask for the geographic reference and evidence, not just a memorized page position.",
+              "Preserve the stated convention and correct the specific near miss without adding numerical calculations."
+            ],
+            "rationale": "Factually source-checked authored teaching proposal; no learning-outcome study is claimed.",
+            "sourceClaims": [
+              "NASA defines Equator as the reference circle equidistant from the poles; Northern/Southern hemisphere references use that division."
+            ]
+          }
+        ],
+        "constraints": [
+          "A globe/model and suitable maps are teaching materials; no particular branded interface or livewebaccount is required.",
+          "Do not turn a map convention into a universal physical up/down.",
+          "Keep model boundaries and the source’s actual required feature-identification scope explicit."
+        ],
+        "reviewNotes": [
+          "2026-11-10: primary factual references checked; new/revised low-confidence teaching proposal, not an inherited research verification or intervention study."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "On a globe and another world map, can {{name}} find the Equator, identify the Northern and Southern Hemispheres, and place some marked locations in the correct half? Can they explain a region that crosses the Equator and keep the same geographical references when the model or page is turned?",
+        "correctAnswer": "Identifies Equator/Northern/Southern halves and classifies points or crossing regions across views.",
+        "whatMakesItDiscriminate": "Turning the view checks whether the learner retains the geographic Equator/pole reference instead of treating physical page-up as north. Classifying marked points and a region that crosses the Equator distinguishes reference-based location from a memorized picture or the assumption that every place lies wholly in one half.",
+        "probeDeeper": [
+          "Can the learner retain the reference when the map/model view changes?",
+          "Which reference/model supports the answer, and what does it not establish?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Treats Equator as a physical wall or changes north with physical page-up.",
+            "revealedBy": "Answer changes with page orientation or confuses the named geographical feature/reference.",
+            "nextMove": "Mark the imaginary Equator midway between labelled geographic poles on a globe, then identify its N/S halves.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not reliably identify the specified feature/reference.",
+          "partial": "Identifies it in one familiar view but cannot explain/transfer the relation.",
+          "full": "Identifies Equator/Northern/Southern halves and classifies points or crossing regions across views."
+        }
+      },
+      "sources": [
+        {
+          "claim": "NASA defines Equator as the reference circle equidistant from the poles; Northern/Southern hemisphere references use that division.",
+          "source": "NASA terrestrial reference systems",
+          "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: primary factual-source review and untested teaching proposal",
+        "createdAt": "2026-11-10T14:22:27Z",
+        "updatedAt": "2026-11-10T14:22:27Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_HX8VtJRt0Y",
+      "pedagogy": {
+        "summary": "Teach one shared map-reference operation: use cardinal directions relationally and retain them when a map turns. Keep grid-cell indexing, metric scale, neighbouring-country recall and magnetic-compass mechanisms separate.",
+        "bestPractices": [
+          "Provide the stated north reference instead of assuming every map is north-up.",
+          "Ask both A relative to B and B relative to A, and a direction-to-place lookup.",
+          "Turn the entire representation, then use a second map so one picture or word order is insufficient."
+        ],
+        "keyRepresentations": [
+          "Simple labelled regional/local maps with a north arrow or four-point compass rose",
+          "The same map turned together with its reference, then a new map"
+        ],
+        "commonMisconceptions": [
+          "Physical page-up always means north.",
+          "East/west follow whichever way the child happens to face rather than the stated map reference.",
+          "The direction from A to B is unchanged when the starting and finishing places are reversed."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Directions describe a relative relationship using the map’s reference, not the reader’s current page-up or a memorized arrangement of labels.",
+        "activities": [
+          {
+            "title": "Keep the map reference when the page turns",
+            "learnerActions": [
+              "Start with a simple map showing labelled familiar public places in unambiguous cardinal alignments and a clear north arrow; locate all four directions.",
+              "Describe a pair’s direction and its reciprocal relation, then locate a place from a supplied direction statement.",
+              "Turn the entire map with its arrow and landmarks together; repeat with another pair, explaining which reference determines north.",
+              "Transfer to another simple map with its stated reference; selected place labels may be landmarks, communities, countries or continents, without adding a memorized place inventory."
+            ],
+            "intendedInsight": "Directions describe a relative relationship using the map’s reference, not the reader’s current page-up or a memorized arrangement of labels.",
+            "feedback": [
+              "If physical page-up is called north, point to the map’s north reference and ask which direction the arrow identifies after turning.",
+              "If east and west or the reverse relation are swapped, trace the same pair from each starting place while keeping the reference visible.",
+              "Keep selected pairs directly aligned for the four-point task; avoid diagonal labels or ambiguous global wraparound routes that would require extra direction/bearing knowledge."
+            ],
+            "rationale": "Original untested teaching proposal grounded in the checked cartographic conventions. Paired and turned-map tasks are designed to reveal reference use rather than recitation; no classroom efficacy study is claimed.",
+            "sourceClaims": [
+              "The four cardinal points and a map/image north reference establish its orientation; north need not be at the physical top.",
+              "A four-point compass rose identifies north, east, south and west; the source separately shows eight/sixteen points, which are not imported into this claim."
+            ]
+          }
+        ],
+        "constraints": [
+          "A paper or digital map may be used; no particular app, live account, travel or physical compass is required.",
+          "Do not rotate the north arrow independently of the map and then treat the result as an equivalent view.",
+          "Limit assessment to the four cardinal directions with clear reference/alignment. Do not import diagonal compass points, numerical bearings, grid references, distance or magnetic declination.",
+          "Labels/full direction words may be read aloud; spelling is not the assessed operation."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original taxonomy-curation card/teaching proposal after whole-claim reuse review and primary factual-source checks. Low confidence reflects untested teaching efficacy; factual reference verification is not an intervention study."
+        ]
+      },
+      "assess": {
+        "method": "interpret_translate",
+        "poeTask": null,
+        "diagnosticPrompt": "Give {{name}} a simple labelled map with a north arrow and places lying directly north, south, east or west of one another. Can they name the four directions, tell you where one place is from another and give the reverse direction? Ask them to find a place from your direction clue, then turn the whole map, including its arrow, and try a new pair: do they still use the map reference instead of calling page-up north?",
+        "correctAnswer": "Identifies all four directions from the supplied reference, gives correct pair/reverse relations and uses the same geographical reference after the whole map turns.",
+        "whatMakesItDiscriminate": "A north arrow not aligned with physical page-up rules out a memorized top/right/bottom/left response. Reversing the place pair tests relative reference rather than naming a fixed location, while a new map and direction-to-place lookup distinguish transferable use from a rehearsed example.",
+        "probeDeeper": [
+          "Which mark tells you north in this view?",
+          "If the library is east of the park, which direction is the park from the library?",
+          "What changes on the paper when we turn it, and what place relationship stays the same?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Calls physical page-up north even when the north arrow points elsewhere.",
+            "revealedBy": "Response follows the reader/page orientation after the map turns.",
+            "nextMove": "Locate the north arrow in the turned representation and reconstruct the four-point reference from it.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Repeats the same direction after swapping the reference places.",
+            "revealedBy": "Says both library-east-of-park and park-east-of-library.",
+            "nextMove": "Trace the pair in each direction, retaining the same north reference, and compare the opposite directions.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not reliably use the stated reference or distinguish the four directions.",
+          "partial": "Succeeds in a familiar north-up view but loses the reference on turning, reversal or a new place clue.",
+          "full": "Uses the supplied reference for all four directions, reciprocal place relationships and new/turned-map lookup."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The four cardinal points and a map/image north reference establish its orientation; north need not be at the physical top.",
+          "source": "Natural Resources Canada — Appendix B: Using a compass",
+          "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/appendix-b-compass",
+          "verified": true
+        },
+        {
+          "claim": "A four-point compass rose identifies north, east, south and west; the source separately shows eight/sixteen points, which are not imported into this claim.",
+          "source": "Ordnance Survey Mapzone — Compasses and directions, page1",
+          "url": "https://www.ordnancesurvey.co.uk/mapzone/assets/doc/map-skills/Compasses-and-Directions-en.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked map-reference proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T15:45:42Z",
+        "updatedAt": "2026-11-10T15:45:42Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

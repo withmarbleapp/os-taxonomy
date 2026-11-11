@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "8a15b83",
+  "dependency": "Local dependent follow-up to existing-topic G2proposal; not accepted default-branch content.",
+  "scope": "Two independently missing world-reference concepts and an exact-ID scientific correction; CA/Ontario7–8 contribution, primary scope.",
+  "sourceCodes": [
+    "ON-SSHG-2026-G2-SS-B3",
+    "ON-SSHG-2026-G2-SS-B3.1",
+    "ON-SSHG-2026-G2-SS-B3.2"
+  ],
+  "newCards": [
+    {
+      "id": "mt_6M7zCpUQex",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Continents on maps and globes",
+      "description": "Name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America using the stated seven-continent map model. Distinguish continents from countries and oceans, and recognize that geographical models and labels can differ; state the model being used rather than assume every map groups land in exactly the same way.",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "centrality": 0,
+      "evidence": [
+        "Name and locate the seven continents in the stated model on a world map and globe without simply copying labels.",
+        "Distinguish a country, continent and ocean in familiar examples; recognize that Australia can name both a country and a continent in this model.",
+        "Locate the same continents on a differently centred map or turned globe and explain a different grouping/label convention when it is explicitly supplied."
+      ],
+      "assessmentPrompt": "Using the seven-continent model, can {{name}} name and locate Africa, Antarctica, Asia, Australia, Europe, North America and South America on a map and globe, distinguish a country and an ocean from a continent, and still find the same continents on another view? If another map groups or labels land differently, can they say which model they are using rather than call every difference an error?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.1",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
+    },
+    {
+      "id": "mt_eoQNkZGzxK",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Equator and Northern and Southern Hemispheres",
+      "description": "Identify the Equator as an imaginary circle around Earth halfway between the geographic poles, dividing Earth into Northern and Southern Hemispheres. Locate points or regions relative to it on maps and globes, using the geographic reference rather than the current top of a page or model.",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "centrality": 0,
+      "evidence": [
+        "Locate the Equator on a globe or world map and explain that it is an imaginary reference, not a physical wall or country border.",
+        "Identify the Northern Hemisphere on the North Pole side of the Equator and the Southern Hemisphere on the South Pole side.",
+        "Classify supplied points/regions as north, south or crossing the Equator, recognizing that a region may extend into both halves.",
+        "Transfer the reference to a turned globe or differently oriented/centred map without redefining north as whichever side is physically up."
+      ],
+      "assessmentPrompt": "On a globe and another world map, can {{name}} find the Equator, identify the Northern and Southern Hemispheres, and place some marked locations in the correct half? Can they explain a region that crosses the Equator and keep the same geographical references when the model or page is turned?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
+    }
+  ],
+  "reuseSearch": [
+    {
+      "topicId": "mt_8QOeG3CuKc",
+      "decision": "Reuse oceans; ocean naming/location does not establish continent facts or hemisphere reference."
+    },
+    {
+      "topicId": "mt_w4cUnN_SsQ",
+      "decision": "Keep familiar map construction/key/relative landmarks unchanged; it supplies no global continent or hemisphere facts."
+    },
+    {
+      "topicId": "mt_Juxx4n-8mu",
+      "decision": "Selected neighbouring-country directions/distances do not establish continents/hemispheres; no age lowering from one clause."
+    },
+    {
+      "topicId": "mt_hjJkBWruO6",
+      "decision": "Climate/geographical influences are not the complete global-reference identification claim."
+    },
+    {
+      "topicId": "mt_4uPnLieBPN",
+      "decision": "Correct/reuse the same poleID; do not create another pole topic. Existing Equator mention does not locate it or identify hemisphere halves."
+    }
+  ],
+  "poleCorrection": {
+    "before": {
+      "id": "mt_4uPnLieBPN",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Polar Regions",
+      "name": "Where Are the Poles?",
+      "description": "Know that Earth has a North Pole and a South Pole — the two coldest places on the planet — and be able to find them on a globe, understanding that they are at the very top and very bottom of the Earth, as far from the Equator as possible",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 7,
+      "centrality": 0.125,
+      "evidence": [
+        "Point to the North Pole and South Pole on a globe or world map",
+        "Explain that the poles are the coldest places on Earth because they are farthest from the Equator",
+        "State that the North Pole is at the top and the South Pole is at the bottom of the Earth"
+      ],
+      "assessmentPrompt": "If you hand {{name}} a globe, can they point to the North Pole and the South Pole and tell you they're the coldest places on Earth?",
+      "standards": []
+    },
+    "after": {
+      "id": "mt_4uPnLieBPN",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Polar Regions",
+      "name": "Where Are the Poles?",
+      "description": "Locate the geographic North Pole and South Pole as the opposite points where Earth’s rotation axis meets its surface. Recognize the surrounding polar regions as typically very cold because sunlight reaches them at a slant and spreads its energy over a larger area; map top/bottom is a drawing convention, not an absolute up/down for Earth.",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 8,
+      "centrality": 0.125,
+      "evidence": [
+        "Locate both geographic poles on a globe or world map and identify them as the surface endpoints of Earth’s rotation axis, not two large regions or physical sticks.",
+        "Keep the same geographic poles when the globe or page is turned; explain that north-at-the-top is a map convention rather than Earth having an absolute top/bottom.",
+        "Explain in introductory terms that slanting sunlight spreads its energy over more area near the poles, contributing to cold polar conditions; distance from the Equator is a location clue, not a heat-producing cause."
+      ],
+      "assessmentPrompt": "Can {{name}} find the geographic North and South Poles where Earth’s spin axis meets its surface, and still identify them when a globe is turned? With a simple light-and-surface model, can they explain why slanting sunlight spreads over more area and helps make the polar regions cold, rather than say that the top of Earth or distance from a warm Equator causes the cold?",
+      "standards": [
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B3.2"
+      ]
+    },
+    "preserved": "Both-pole location and introductory polar coldness explanation, with original stableID and all old intervals/edges retained.",
+    "corrected": [
+      "Absolute map-top/bottom is replaced by geographic rotation-axis endpoints.",
+      "Latitude-only pseudo-cause is replaced with slanting sunlight spreading energy over area.",
+      "Two-coldest-places superlative is replaced with typically cold surrounding polar regions."
+    ],
+    "notAdded": [
+      "Numerical latitude/longitude, axis-tilt calculation or advanced seasonal mechanism",
+      "A new pole topic or country/grade-specific duplicate",
+      "Automatic learner mastery transfer or private-state reset"
+    ],
+    "positive": "Finds both geographic axis endpoints across views and explains introductory slant/area warming.",
+    "nearMiss": "Chooses the physical top of a rotated model, gives an entire polar region as the pole point, or treats warmEquator distance as the cause of cold.",
+    "transfer": "Changed globe/page orientation and a new same-beam slant model, without numerical calculations.",
+    "consumerBoundary": "Old evidence elicited by top/bottom or distance-only prompts may not establish corrected understanding. Consumers should inspect/reassess that evidence where needed; this public curation does not reset or transfer learner state.",
+    "oldResearchStatus": "Historical record included repeated absolute-up/distance simplifications and inherited verified:false source flags; not retained as active guidance.",
+    "retainedEdges": [
+      {
+        "topicId": "mt_22XbXTRq50",
+        "prerequisiteId": "mt_4uPnLieBPN",
+        "strength": "hard",
+        "reason": "Must know where the poles are before learning about explorers who went there"
+      },
+      {
+        "topicId": "mt_3duNkf6Qmr",
+        "prerequisiteId": "mt_4uPnLieBPN",
+        "strength": "hard",
+        "reason": "Must know about the poles before understanding extreme day/night cycles there"
+      },
+      {
+        "topicId": "mt_aO018DkCun",
+        "prerequisiteId": "mt_4uPnLieBPN",
+        "strength": "hard",
+        "reason": "Must know where the poles are before comparing Arctic vs Antarctic"
+      },
+      {
+        "topicId": "mt_cM8YS6NXqi",
+        "prerequisiteId": "mt_4uPnLieBPN",
+        "strength": "soft",
+        "reason": "Polar regions enrich the curriculum habitats topic (exploratory age 5 -> curriculum age 6)"
+      },
+      {
+        "topicId": "mt_SrmHaJXKrX",
+        "prerequisiteId": "mt_4uPnLieBPN",
+        "strength": "hard",
+        "reason": "Must know about polar regions before learning about ice and snow there"
+      }
+    ],
+    "provenanceTreatment": "Original originalResearchGeneratedBy, createdAt and other provenance fields retained exactly as historical origin metadata. Current2026-11-10 factual review and rewritten teaching/assessment authorship are explicit in learn.reviewNotes and this report; old provenance does not attribute the new material to the old author. New factual-source flags do not validate teaching efficacy."
+  },
+  "assessmentProtocol": {
+    "id": "world-reference-identification",
+    "sourceCodes": [
+      "B3.2"
+    ],
+    "existingAndNewTopics": [
+      "mt_6M7zCpUQex",
+      "mt_eoQNkZGzxK",
+      "mt_4uPnLieBPN",
+      "mt_8QOeG3CuKc"
+    ],
+    "materials": "A globe and at least two differently centred/oriented world maps, stated seven-continent convention, familiar location markers and an adult-verified geographical reference key. The independent task does not merely copy complete printed labels.",
+    "task": [
+      "Name/locate the seven continents in the specified model and distinguish continent/country/ocean references. Explain that Oceania is a region rather than a continent under the stated NationalGeographic model, without declaring every other map convention false.",
+      "Name/locate significant waters through the existing FiveOceans claim and recognize their connected global water body.",
+      "Identify geographic poles and Equator, then Northern/Southern Hemispheres; classify provided points and a region crossing the Equator. No mandatory PrimeMeridian/Eastern/Western inventory is inferred from the Ontario clause.",
+      "Transfer to another map/globe view without using physical page-up as geographic north. A map projection can distort or omit a pole; use the globe/reference when the representation does not establish it."
+    ],
+    "positive": "Correctly identifies the required continent/water/reference features and transfers across views, keeping geographic conventions explicit.",
+    "nearMiss": "Names Canada as a continent, treats Equator as a country border, changes hemispheres when the globe is turned, or copies labels without retaining locations.",
+    "transfer": "Differently centred map and turned globe, with a crossing region and a supplied alternative grouping convention.",
+    "boundary": "This accounts for source identification, not every climate mechanism, country fact or map operation. The pole topic’s corrected coldness explanation remains in its own complete assessment; it is not invented as an additional mandatory B3.2 clause."
+  },
+  "references": {
+    "model": "https://www.nationalgeographic.org/national-geographic-map-policy",
+    "equator": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+    "hemisphere": "https://education.nationalgeographic.org/resource/hemisphere/",
+    "poles": "https://www.antarctica.gov.au/about-antarctica/geography-and-geology/geography/poles-and-directions/",
+    "sunlight": "https://www.weather.gov.hk/en/education/edu06nature/ele_srad.htm",
+    "energy": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/"
+  },
+  "sourceInterpretation": "Actual official B3.2and available teacher supports read. Hemisphere inventory is not clarified by its examples; this bounded contribution covers Equator and N/S identification and does not manufacture an E/W/PrimeMeridian obligation. The stated seven-continent convention avoids treating one map model as every culture’s only grouping.",
+  "researchBoundary": "Primary factual geography/physics references checked; new/revised teaching sequences are low-confidence authored proposals, not experimentally validated interventions. Historical researchflags are not carried as fresh proof.",
+  "consumerBoundary": "New conceptIDs have independent evidence, no hard edges inferred from sequence. Existing poleIDhistory/edges preserved with an explicit correction/reassessment boundary. No DB/learner writes."
+}

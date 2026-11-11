@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "9d015d2",
+  "status": "Reviewed source-fit authoring task design; scoped associations/dispositions are now proposed in the Grade2 mapping. No learner attainment or accepted-main/publication claim.",
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g2",
+  "scope": "Grade 2 contemporary world-community comparison and environment inquiry; includes a specific contemporary Inuit community and actual own-community application.",
+  "cases": [
+    {
+      "id": "iqaluit-contemporary",
+      "authority": "Qikiqtani Inuit Association, City of Iqaluit and Nunavut Parks; different organizations retain their own attribution.",
+      "sources": [
+        "https://www.qia.ca/who-we-are/communities/",
+        "https://iqaluit.ca/visitors/explore-iqaluit",
+        "https://iqaluit.ca/departments/corporate-services/municipal-services",
+        "https://nunavutparks.com/nunavut_parks/iqaluit-kuunga-sylvia-grinnell-territorial-park/"
+      ],
+      "facts": "QIA locates Iqaluit on Koojesse Inlet/Frobisher Bay and describes contemporary government, hospital, college and air-travel connections. The City describes stores, local art, museums and seasonal recreation. Its water service has both piped/utilidor connections and trucked accounts. Nunavut Parks identifies local rocky hills, river/tundra plants, Arctic hares/foxes and char, plus winter and summer recreation.",
+      "limits": "Iqaluit includes an Inuit community and non-Inuit residents; no claim every resident is Inuit or has one way of life. Wildlife occurrence is not a guarantee of a sighting. Current park guidance supersedes reliance on the older 2008 brochure; only learn about particular practices, not perform protected cultural knowledge."
+    },
+    {
+      "id": "climate-evidence",
+      "sources": [
+        "https://climate.weather.gc.ca/climate_normals/results_1991_2020_e.html?climate_id=2402590&lstProvince=NU&searchType=stnProv",
+        "https://www.weather.gov.sg/climate-climate-of-singapore"
+      ],
+      "facts": "ECCC Iqaluit 1991–2020 composite mean daily temperatures are −26.0°C in January and +8.1°C in July. MSS Changi 1991–2020 summaries show warm temperatures year-round with monthly rainfall variation; Singapore is near the Equator and the sea moderates temperature.",
+      "taskRepresentation": "Adult-prepared dated cards may express below-freezing winter, cool summer and warm year-round qualitatively; decoding negative decimals is not a hidden prerequisite. If quantitative displays are used, retain measure, unit, period and source. Do not infer climate from one day or turn rainfall variation into an invented rainless season.",
+      "limits": "These are station normals for a stated period, not forecasts, every neighbourhood or all tropical/polar locations. The direct official ECCC HTML table was retrieved and the full temperature row checked; do not substitute a different third-party series."
+    },
+    {
+      "id": "supported-adaptation",
+      "sources": [
+        "https://www.canada.ca/en/crown-indigenous-relations-northern-affairs/news/2020/03/building-resilient-communities-in-the-north-and-mitigating-impacts-of-climate-change.html",
+        "https://www1.bca.gov.sg/resources/newsroom/incorporate-passive-design-in-buildings-to-reduce-air-conditioning-the-straits-times-forum/"
+      ],
+      "facts": "A dated 2020 federal Iqaluit account documents drainage/permafrost and housing-ground investigations to support reliable infrastructure; it is evidence of the described actions, not proof all later projects succeeded. Singapore BCA explains passive design and natural ventilation as ways to improve comfort and reduce air-conditioning need in its tropical climate.",
+      "limits": "Compare specific supported responses, not a claim that every northern house or Singapore building has one design. No construction engineering, climate-change mechanism or uniform cultural explanation is added."
+    },
+    {
+      "id": "singapore-water-wildlife",
+      "sources": [
+        "https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory",
+        "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/otters/"
+      ],
+      "facts": "PUB identifies catchment, imported, reclaimed and desalinated water sources. NParks describes smooth-coated otters along waterways, nature reserves and adjacent urban areas.",
+      "limits": "Rainfall alone does not guarantee unlimited usable water. No industrial treatment procedure, precise supply-share memorization or wildlife encounter is required. These resources supply water and a local wildlife example; they do not alone account for every source-required human need or cultural practice."
+    },
+    {
+      "id": "singapore-culture",
+      "source": "https://www.nea.gov.sg/our-services/hawker-management/programmes-and-grants/hawker-culture",
+      "facts": "Singapore NEA describes hawker centres as places where people gather for prepared food and social interaction, with dishes reflecting varied cultural histories.",
+      "limits": "A particular shared cultural practice, not every resident’s diet or daily routine. Description does not require cooking, tasting, travel or cultural membership."
+    }
+  ],
+  "wholeClaimContributions": [
+    {
+      "topicId": "mt_hjJkBWruO6",
+      "role": "Geography and typical-weather comparison, latitude and another influence. The full existing claim requires three climate types; the two-city case contributes without pretending to demonstrate all of it.",
+      "remaining": "Bounded factual/guidance correction058d1b0 was source-reviewed and inherited on this proposal branch; it is not reported as accepted main or a tested intervention."
+    },
+    {
+      "topicId": "mt_cUpJvBD1YA",
+      "role": "Identify natural, managed and built local features and their positions; the own-place map fulfills its local operation. World-case facts add source-specific knowledge without silently changing the claim."
+    },
+    {
+      "topicId": "mt_Lcqm4_wR4D",
+      "role": "Contemporary distinct peoples and diversity, with QIA authorship/community attribution; recognition alone does not supply all Iqaluit knowledge or the whole creator/story assessment."
+    },
+    {
+      "topicId": "mt_w4cUnN_SsQ",
+      "role": "Whole familiar-map construction/key/labels/relative landmarks in the own-community task. Supplied world/regional maps provide locations; familiar-map skill alone is not worldwide knowledge."
+    },
+    {
+      "topicId": "mt_6M7zCpUQex",
+      "role": "Stated-model continent/country distinction and locating the selected regions across representations."
+    },
+    {
+      "topicId": "mt_eoQNkZGzxK",
+      "role": "Equator and north/south reference for the selected locations; no Prime Meridian or extra east/west hemisphere inventory."
+    },
+    {
+      "topicId": "mt__ab4knIaSL",
+      "role": "Identify needs versus wants. Actual water/community examples provide factual provision; the label alone does not meet all need categories."
+    },
+    {
+      "topicId": "mt_RgQxPddV8v",
+      "role": "Distinguish goods/services in the actual local examples; not a substitute for source-specific lifestyles."
+    },
+    {
+      "topicId": "mt_4A7FYmvVhA",
+      "role": "Clear logical description of resource-supported comparison and actual own-place application."
+    },
+    {
+      "topicId": "mt_c29FaCTNsx",
+      "role": "Read/construct meaningful labelled tables/displays with sources. Do not count source mentions or invent observations to manufacture a chart."
+    },
+    {
+      "topicId": "mt_7IFpDVNsmt",
+      "role": "Full general gather/record/classify/present operation through real source data, table, relevant category key, chart and labelled map/diagram; no classroom experiment is required by its description."
+    },
+    {
+      "topicId": "mt_7VrR1GzhrN",
+      "role": "Full general enquiry conclusion/report, prediction and method improvement; its experiment example is not the only type of enquiry in the description."
+    },
+    {
+      "topicId": "mt_f8n4txtLej",
+      "role": "Relevant question and clarification operation, applied to the selected environmental-community question."
+    },
+    {
+      "topicId": "mt_XirhnAB6Ye",
+      "role": "Method choice for natural-environment questions; building/cultural facts require the separate attributed community sources, not inference from natural science alone."
+    },
+    {
+      "topicId": "mt_CVywzrjT_c",
+      "role": "Scientific pattern/data component of climate comparison; it does not by itself explain an entire way of life."
+    },
+    {
+      "topicId": "mt_deexfCHU9m",
+      "role": "Direct whole three-impact/three-solution/explanation operation for the local environment, including water conservation; supplies a stronger existing match than needs/care labels alone."
+    }
+  ],
+  "protocols": [
+    {
+      "id": "contemporary-community-comparison",
+      "sourceCodes": [
+        "B1",
+        "B1.1",
+        "B1.2",
+        "B3.4",
+        "B3.7",
+        "B3.8"
+      ],
+      "materials": "Attributed Iqaluit and Singapore cards, dated climate summaries, labelled globe/world/regional maps and actual own-community features/services records. Where own community differs from the worked example, adult preparation substitutes verified local evidence rather than claiming Toronto is the pupil’s home.",
+      "task": "Locate Iqaluit and Singapore in their countries/regions and relative to the Equator; distinguish city/country/continent. Identify supported features, wildlife and particular culture/recreation examples. Compare selected real ways of meeting needs, then explain one supported climate/location adaptation in each of two distinct communities. Compare with actual own community using the same dimensions; climate influences options without determining a uniform culture.",
+      "positive": "Uses attributed contemporary facts, compares like dimensions and gives a supported adaptation relationship while retaining the required own-community application.",
+      "nearMiss": "Lists cold/hot labels, assumes all Inuit have one historical lifestyle, treats all water as trucked, or invents a building practice from climate alone.",
+      "transfer": "Another adult-verified local case or a different representation; explain which conclusions remain supported and which require more evidence.",
+      "qualification": "Full authoring judgment after exact source/whole-claim/resource/task review; actual whole-topic mastery is not inferred from a component contribution."
+    },
+    {
+      "id": "location-climate-representations",
+      "sourceCodes": [
+        "B3.1",
+        "B3.5"
+      ],
+      "task": "Use a globe and regional/world maps to identify country, continent, water and physical-feature labels. On a dated attributed photo identify only visible clues, then combine map and climate normals to establish supported location/typical-weather facts. State what the photograph alone cannot establish. Create a familiar local-place map with key, labels and relative landmarks as the existing map claim requires; supplied world-map reading is an additional source-specific task.",
+      "positive": "Distinguishes representation types and combines evidence without guessing culture or year-round climate from clothes.",
+      "nearMiss": "Takes a snow photograph as proof of all-year freezing or mistakes a city for a continent.",
+      "transfer": "A turned/differently centred world representation plus another attributed photo.",
+      "qualification": "Full authoring judgment after exact source/whole-claim/resource/task review; actual whole-topic mastery is not inferred from a component contribution."
+    },
+    {
+      "id": "coherent-environment-community-inquiry",
+      "sourceCodes": [
+        "B2",
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "B2.4",
+        "B2.5",
+        "B2.6"
+      ],
+      "existingTopics": [
+        "mt_f8n4txtLej",
+        "mt_XirhnAB6Ye",
+        "mt_4A4RpX-Go9",
+        "mt_w4cUnN_SsQ",
+        "mt_c29FaCTNsx",
+        "mt_7IFpDVNsmt",
+        "mt_7VrR1GzhrN",
+        "mt_CVywzrjT_c",
+        "mt_hjJkBWruO6",
+        "mt_Lcqm4_wR4D",
+        "mt_6M7zCpUQex",
+        "mt_eoQNkZGzxK",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "task": [
+        "Formulate relevant questions about climate/environment and particular community ways of life, including contemporary Iqaluit; choose maps, climate records and attributed community accounts as appropriate research methods.",
+        "Gather and organize the actual paired climate summaries and attributed adaptation/community facts. Identify who supplies each type of evidence and what it can establish. Retain the Inuit organization’s contemporary community account, not generic Indigenous recognition alone.",
+        "Analyse supplied world/regional maps and construct an annotated outline map: locate the two communities/countries, Equator reference and relevant water/physical features, with a key for the sourced climate/activity relationships. Also make a familiar local map with key, labels and relative landmarks for the existing full familiar-map operation. Do not demand a memorized world coastline or an advanced numerical scale.",
+        "Use the actual12-month table, materially relevant classification key and pictogram/bar display to compare the defined temperature patterns. Annotate the map/diagram with sourced adaptation examples and source labels; do not count words in source pages as community observations.",
+        "Evaluate the evidence: dated climate normals establish typical patterns, a landscape photo provides bounded visible clues, and community/agency sources establish particular practices. Explain that photo or temperature counts alone cannot prove a building cause, cultural identity or a universal lifestyle. Answer the original question with both actual climate data and sourced adaptation examples.",
+        "Make a cautious prediction for another season or an analogous source-supported case, stating limits; suggest a method improvement such as adding a more local station/resource or checking current weather before a specific-day visit. Do not present a climate normal as a forecast or a two-city comparison as a controlled causal experiment.",
+        "Communicate the supported result using an oral/written explanation, map and display, with appropriate geographical vocabulary and source attribution. Connect a conclusion to actual evidence, distinguish unknowns and answer a relevant follow-up question."
+      ],
+      "positive": "A coherent question→source/data→map/display→evaluation→supported conclusion/communication chain retains the specified contemporary Inuit community and uses the chart for a meaningful question.",
+      "nearMiss": "A decorative chart counts source mentions, a copied map has no interpreted relationship, all Inuit are assigned one historical lifestyle, or a conclusion claims climate determines culture.",
+      "transfer": "Another attributed community/season or differently centred representation; explain which reasoning transfers and what fresh local evidence is required.",
+      "qualification": "Full authoring judgment after exact source/whole-claim/resource/task review; actual whole-topic mastery is not inferred from a component contribution."
+    },
+    {
+      "id": "resources-actions-consequences",
+      "sourceCodes": [
+        "B1.3"
+      ],
+      "existingTopics": [
+        "mt_deexfCHU9m",
+        "mt__ab4knIaSL",
+        "mt_5zPXTvZTcX",
+        "mt_4A7FYmvVhA"
+      ],
+      "sourceCases": [
+        {
+          "source": "https://www.mse.gov.sg/policies/water/",
+          "fact": "Limited catchment and growing need make long-term usable water supply a planning issue; pollution can enter catchments and increases clean-water treatment costs."
+        },
+        {
+          "source": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/otters/",
+          "fact": "The agency connects polluted waterways and degraded shores with past otter loss, and improving water quality/fish availability with return; this is a particular reported relationship, not a guaranteed immediate outcome."
+        },
+        {
+          "source": "https://nunavutparks.com/nunavut_parks/iqaluit-kuunga-sylvia-grinnell-territorial-park/",
+          "fact": "The park describes fragile ground that recovers slowly and directs vehicles to designated routes, waste removal and respect for wildlife."
+        }
+      ],
+      "materials": "Three adult-prepared local scenarios with a familiar water/land/living-things context and accurate stated facts, informed by the attributed world cases. Verify the local water/provider/place context rather than assert every local ecosystem has Singapore’s or Iqaluit’s species/conditions. No harmful field test or actual damage observation is required.",
+      "task": "Identify three plausible human impacts on local water, land or living things; propose three matching solutions and explain how each helps protect the affected resource or habitat. For water waste/pollution and damaged vegetation, explain a consequence for people and nature now and later, and why protecting an ongoing usable supply/healthy place matters. Distinguish conserving usable resources from claiming water itself disappears from Earth.",
+      "positive": "Explains action→environment/resource effect→human/living-things consequence and a matching protective response, including future availability/recovery rather than only a care slogan.",
+      "nearMiss": "Says save water because it is good, proposes unrelated actions, or claims plentiful rain means unlimited clean tap water.",
+      "transfer": "A new local resource-use scenario with supplied facts; identify which protective principle applies and what local evidence would be needed.",
+      "wholeClaimLimit": "ReducingHumanImpact’s full three-impact/three-solution/explanation operation is explicitly designed. Needs/care topics remain components; the task does not require older broad energy, economic-trade-off or ocean-policy claims.",
+      "qualification": "Full authoring judgment after exact source/whole-claim/resource/task review; actual whole-topic mastery is not inferred from a component contribution."
+    },
+    {
+      "id": "needs-and-specific-provision",
+      "sourceCodes": [
+        "B3.6"
+      ],
+      "existingTopics": [
+        "mt__ab4knIaSL",
+        "mt_RgQxPddV8v",
+        "mt_4A7FYmvVhA"
+      ],
+      "task": "Identify basic human needs, distinguish them from optional wants, and describe particular supported ways people in the selected communities meet them. Use Iqaluit’s documented shops/restaurants, housing and piped/trucked water; Singapore’s hawker food, water supply and building-comfort examples; actual own-community provision completes the local comparison elsewhere in the packet. Explain how the particular goods/services address needs rather than only memorize names.",
+      "positive": "Connects multiple basic needs to accurate community provision examples and recognizes more than one way of meeting a need.",
+      "nearMiss": "Says every person hunts or every northern house gets trucked water, confuses food wants with the need for nourishment, or supplies only names without provision.",
+      "transfer": "A new adult-verified community service/source case, explaining which need it serves and which details require local evidence.",
+      "scopeBoundary": "The source’s examples are illustrative, not a universal five-item provider checklist. No travel, cooking, building mechanism, exhaustive institutional inventory or proof all residents use the same service is required.",
+      "qualification": "Full authoring judgment after exact source/whole-claim/resource/task review; actual whole-topic mastery is not inferred from a component contribution."
+    }
+  ],
+  "remainingSliceBoundaries": [
+    "Source-fit authoring designs are qualified in the current mapping; local preparation protocol requirements remain part of the task, not a demand to collect learner records.",
+    "The separately reviewed cardinal-direction proposal resolves B3.3 without older-claim age lowering or invented prerequisite associations.",
+    "Contemporary cases do not certify every resident’s practice, actual pupil performance or every local adaptation.",
+    "No target-language/cultural proficiency or optional Native Languages integration is inferred."
+  ],
+  "consumerBoundary": "No learner pass, private-state change, DB publication or source-record rewrite. This proposal introduces no claim or scoped association.",
+  "sourceInterpretation": "B3.6 asks basic needs and some ways communities provide them; its parenthetical examples are not an exhaustive mandatory five-item service checklist. The packet must demonstrate meaningful needs/provision breadth rather than only recite one water fact.",
+  "representationResources": [
+    {
+      "id": "qia-regional-location-map",
+      "source": "https://www.qia.ca/wp-content/uploads/2019/12/iqaluit-01.png",
+      "publisherPage": "https://www.qia.ca/who-we-are/communities/",
+      "visualReadback": "Inspected the actual regional diagram: Iqaluit callout and dot on southeast Baffin Island within the depicted Qikiqtani area; surrounding islands/coastline visible. This is a map, not a photograph.",
+      "limits": "Regional diagram lacks a detailed street key or numerical scale; pair with labelled broader reference rather than infer parcel boundaries, walking routes or distances. Link to the original; no image redistribution."
+    },
+    {
+      "id": "nunavut-parks-landscape-photo",
+      "source": "https://nunavutparks.com/wp-content/uploads/elementor/thumbs/SylviaGrinnell-qmumu7mo4s5jk7rndi9ft1j93u729eqt0is16ery3a.jpg",
+      "publisherPage": "https://nunavutparks.com/nunavut_parks/iqaluit-kuunga-sylvia-grinnell-territorial-park/",
+      "visualReadback": "Actual inspected photograph shows a water channel, rocky ground, low vegetation and cloudy sky. The provider page supplies place attribution; the pixels alone do not name the country, date, temperature or whole climate.",
+      "task": "Describe visible clues, identify the source-supplied location and distinguish a tentative inference from a fact. Combine with map and dated climate summaries; explain why one cloudy bare-ground view cannot establish year-round freezing or every-day weather.",
+      "limits": "No capture date or thermometer is supplied. Do not invent season/date or read cultural identity from this landscape. View via original page; no image reproduction in the public repository."
+    },
+    {
+      "id": "world-reference-map",
+      "source": "https://open.canada.ca/data/en/dataset/8f1749a5-ac67-467a-9c01-752b375127c3",
+      "publisher": "Natural Resources Canada, The World 2021",
+      "status": "Complete official6900×4500 image retrieved and visually inspected, including full map and enlarged Canada/Iqaluit, Singapore and legend regions.",
+      "limits": "2021 reference, not a current legal-border adjudication or local street plan. Preserve publisher attribution and use the original. Compare with globe/regional map, not pixel distances on a cropped/resized image.",
+      "sourceImage": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Geographical-maps_Carte-geographique/The-world_Le-monde/TheWorld_150dpi.jpg",
+      "visualReadback": "Iqaluit is labelled on southeast Baffin Island within Canada; Singapore is labelled near the Malay Peninsula, above the Equator reference. Oceans, country boundaries and populated-place symbols are differentiated. The map uses WinkelII projection and a world scale; its Oceania label is a regional convention, not a demand to mark the stated seven-continent model wrong."
+    }
+  ],
+  "inquiryWorkedData": {
+    "question": "How do the typical annual temperature patterns differ between Iqaluit and Singapore, and what particular community adaptations do the sources document?",
+    "measure": "Monthly mean daily temperature, degrees Celsius,1991–2020 normals;12 calendar-month summaries per location, not daily observations.",
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "iqaluit": [
+      -26.0,
+      -27.0,
+      -22.4,
+      -13.5,
+      -3.2,
+      3.9,
+      8.1,
+      7.5,
+      2.9,
+      -3.2,
+      -11.1,
+      -18.9
+    ],
+    "singaporeChangi": [
+      26.8,
+      27.3,
+      27.8,
+      28.2,
+      28.6,
+      28.5,
+      28.2,
+      28.1,
+      28.0,
+      27.9,
+      27.2,
+      26.8
+    ],
+    "classificationKey": "For each monthly normal: is its mean below0°C? yes→below-freezing mean; no→at-or-above-freezing mean. Adult preparation may provide the checked category beside the number so negative-decimal decoding is not an accidental gate.",
+    "counts": {
+      "iqaluitBelowFreezingMeanMonths": 8,
+      "singaporeBelowFreezingMeanMonths": 0
+    },
+    "representation": "One symbol represents one calendar month whose long-term mean falls in the defined category. Table includes all12 months per location, headings/measure/period/source; chart title states the category and unit. Keep the original source figures available for adult readback.",
+    "interpretationLimit": "Eight below-freezing monthly means does not mean every day in those months freezes, eight months of ice everywhere, or eight observed months from one recent year. Two city summaries do not prove climate is the sole cause of people’s lives or all places at similar latitude are identical."
+  },
+  "ownCommunityPacket": {
+    "scope": "Adult preparation for actual own community; no child/home address collection or classroom study required.",
+    "requiredFields": [
+      "Community/place name at appropriate public scale and source attribution",
+      "One familiar local map or plan with actual landmarks/key and relative-position opportunities",
+      "Dated local climate summary with measure/period, or checked qualitative summary",
+      "Actual examples of people meeting basic needs, with public provider/account sources where needed",
+      "Selected visible natural/managed/built features, a locally supported wildlife example and particular cultural practice(s)",
+      "Source labels and limits; distinguish what is known from what would need further information"
+    ],
+    "task": "Learner creates/explains a familiar map with key/labels/relative landmarks, describes actual own-community needs/provision and selected features, and compares supported similarities/differences with Iqaluit/Singapore using common dimensions. The preparation template specifies the required local evidence and task; it does not replace own community with Toronto or require sharing private family facts."
+  }
+}
