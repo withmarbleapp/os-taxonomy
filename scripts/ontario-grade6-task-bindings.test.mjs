@@ -31,6 +31,8 @@ function checkBindings(rows, associations, readReport = name => load(`reports/${
       else for (const ref of local.sourcePacketRefs) assert.ok(report.resources?.[ref], 'Missing bound local source packet');
     }
 
+    if (row.disposition === 'Full') assert.deepEqual(protocol.remainingConditions, [], 'Unresolved referenced protocol condition');
+
     if (/^[AB]\d+$/.test(row.code)) assert.deepEqual([...(protocol.requiredSourceCodes ?? [])].sort(), codes.filter(code => code.startsWith(row.code + '.')).sort(), 'Missing integrated specific-duty closure');
     if (row.disposition === 'Full') for (const code of protocol.requiredSourceCodes ?? []) assert.equal(rows.find(candidate => candidate.code === code)?.disposition, 'Full', 'Incomplete integrated source duty');
     for (const caseId of protocol.caseRefs ?? []) assert.ok(report.preparedCases?.[caseId], 'Missing prepared case');
@@ -158,4 +160,13 @@ test('Grade6 local preparation protocol cannot masquerade as a bound own-communi
   row.disposition = 'Full';
   row.remainingConditions = [];
   assert.throws(() => checkBindings(damaged, contexts), /Unbound local resource cannot certify Full|Incomplete integrated source duty/);
+});
+
+test('Grade6 Full cannot hide an unresolved condition in the referenced protocol', () => {
+  const reviewed = ledger.expectations.find(row => row.code === 'A1.1');
+  assert.equal(reviewed.disposition, 'Full');
+  assert.deepEqual(reviewed.remainingConditions, []);
+  const damaged = structuredClone(load(`reports/${reviewed.dossier}`));
+  pointer(damaged, reviewed.protocolReference).remainingConditions = ['Actual source packet remains unresolved'];
+  assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === reviewed.dossier ? damaged : load(`reports/${name}`)), /Unresolved referenced protocol condition/);
 });

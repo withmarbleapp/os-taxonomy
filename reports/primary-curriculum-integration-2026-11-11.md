@@ -32,10 +32,12 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 271 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 273 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
 The remaining whole programme review is Health/PE (267 records). Earlier own-local requirements are also receiving a consistency audit. Actual task/resource duties for 227 of the prior Science (233) Partial positions remain in this snapshot; six specific coding designs are now prepared, with their overall and impact duties separate. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
 Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
 
 The review-driven French guard also resolves each nested report/protocol/resource binding, including each item of a resource list. Negative cases reject missing targets and empty bindings. This correction changes validation only; all curriculum and research payloads remain unchanged.
+
+The later review guards require exact keyboard record keys and actual task targets, reject unresolved conditions inside a Grade 6 referenced protocol, and tie each coding source code to its exact grade recipe. Negative cases include duplicate or unrelated keyboard records, inherited/missing/wrong-object targets and a wrong but existing recipe heading. These changes preserve every dataset payload.
