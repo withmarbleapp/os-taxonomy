@@ -1,5 +1,7 @@
 # NCERT Preparatory language framework review
 
+This document preserves the original language-slice checkpoint and its dated counts. The [current record report](ncert-preparatory-language-framework-2026-11-10.json) and [570-record cumulative summary](ncert-primary-alignment-review-summary-2026-11-10.json) supersede its historical progress figures. The [later four-edge review](language-reusable-prerequisite-corrections-2026-11-11.md) updates the identified oral/writing hard paths while retaining all conditional dispositions and withheld candidate associations.
+
 This slice reviews all 35 formal Preparatory language records in the accepted NCERT baseline: 18 R1 positions and 17 R2 positions. The source is the 2023 framework's October 2024 printed edition, PDF pages 233–234, 236–237 and 239–240. The official stage window is 8–11, covering Grades 3–5; no per-grade age deadline is invented and no Middle-stage R3 scope is added.
 
 The result is 20 Full source-fit authoring dispositions, six ConditionalGraphRepresentation dispositions, five ConditionalLanguageBinding dispositions and four ContextualReadingEngagement requirements. These categories remain separate from learner attainment. The [record report](ncert-preparatory-language-framework-2026-11-10.json) preserves each code, role, direct contribution, withheld candidate and unresolved condition. The [21 original protocols](ncert-preparatory-language-protocols-2026-11-10.json) account for the source requirements through parameterised tasks; they are not observations, a validated battery, or evidence of mastery in an unspecified language.
@@ -24,15 +26,15 @@ R1 essential conclusions use existing main-information, inference and sequence/m
 
 The source-permitted syllable route uses actual R2 speech units. Whole-claim pronunciation work beside a written word is retained, without equating syllables with letters or akshar boundaries. Vocabulary tasks include discussion, contextual inference, cross-subject meaning and functional application; no universal word count or English lexicon is invented.
 
-## What stays conditional
+## Initial conditional findings and later correction
 
-Twelve candidate contributions are retained in the report without scoped associations because their current hard chains reach fixed-English requirements. The earlier [Foundational review](ncert-foundational-language-framework-2026-11-10.md) records the instruction, expressive-reading and paragraph paths. This slice also traces the heard-summary candidate through:
+At the initial checkpoint, twelve candidate contributions were retained without scoped associations because identified hard chains reached fixed-English requirements. The earlier [Foundational review](ncert-foundational-language-framework-2026-11-10.md) records the instruction, expressive-reading and paragraph paths. This slice also traces the heard-summary candidate through:
 
 `mt_A4YUbzUFan` → `mt_-DuXzMVVXQ` → `mt_sMAcZW6vWM` → `mt_ZhUuT__i2H` → `mt_XeMZdf2Y9W` → `mt_1KCwbGvm1F`.
 
-That chain makes an intrinsically oral-summary operation depend on left-to-right print through written note-taking. Its full actual-role task design is available, but the unsafe universal graph link is withheld. No dependency is weakened merely to obtain a passing integration count.
+That historical chain made an intrinsically oral-summary operation depend on left-to-right print through written note-taking. The later four-edge review removes the unnecessary written-note-taking gate while preserving oral paraphrase. The complete current path is `mt_A4YUbzUFan` → `mt_-DuXzMVVXQ`. Actual role-bound materials and complete source-task compatibility still need separate review; the candidate association remains withheld.
 
-The registered corrections and complete source-task recheck now permit the unchanged paragraph operation for the source paragraph and organising-strategy requirements. R1 C-3.1 requires sequencing, headings, beginning/ending and paragraph grouping, not an independent pre-writing-planning claim; the broader 9P candidate is explicitly discarded rather than silently weakened. Multimodal functional writing and developed narrative/dialogue still reach writing-process vocabulary through other unchanged hard chains and remain conditional. Existing written-poetry components are published only where their complete hard chain has no fixed-English inventory requirement. One safe poetic component is not portrayed as full poster, invitation or narrative coverage.
+The registered corrections and complete source-task recheck now permit the unchanged paragraph operation for the source paragraph and organising-strategy requirements. R1 C-3.1 requires sequencing, headings, beginning/ending and paragraph grouping, not an independent pre-writing-planning claim; the broader 9P candidate is explicitly discarded rather than silently weakened. The later four-edge review removes the whole-glossary gates from the underlying multimodal/narrative procedures. Their remaining complete paths still reach sentence building; actual-role materials and all remaining whole-claim requirements need separate compatibility review, so candidate associations remain withheld. Existing written-poetry components are published only where their complete hard chain has no fixed-English inventory requirement. One safe poetic component is not portrayed as full poster, invitation or narrative coverage.
 
 Actual sentence/grammar conventions and R2 print conventions remain language-bound formal requirements. English articles, adjective order, tense, capitals and left-to-right direction are not universal substitutes. Parameterised source-fit tasks require expert-checked actual-language models and response criteria. This is a material/consumer binding condition at use, not a request to choose a national pair now, and not a licence to create language-country clones.
 
@@ -42,7 +44,7 @@ The R1 reading-interest goal and its two competencies, plus the R2 reading-inter
 
 Voluntary choice and developing preferences do not become a binary mastery topic or a compulsory positive-feelings score. No book quota, learner state or forced enthusiasm is introduced. Reading performance and engagement are different evidence channels.
 
-## Preservation and completion state
+## Original checkpoint preservation and completion state (historical)
 
 All 1,862 old authored claims, all 4,215 existing contexts, all 1,046 research records are preserved; five registered dependency objects change only in strength/reason, and every other dependency remains exact. Catalogue, clusters and archived-research bytes are unchanged. The generator appends compatibility standards and updates derived ages for three topics; its research topic-file hash changes without rewriting any research record.
 

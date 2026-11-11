@@ -10,6 +10,8 @@ const edges = load('../data/dependencies.json').dependencies;
 const readiness = load('../reports/ncert-alignment-readiness-2026-11-10.json');
 const summary = load('../reports/ncert-primary-language-review-summary-2026-11-10.json');
 const corrections = load('../reports/language-intrinsic-prerequisite-corrections-2026-11-10.json');
+const reusableCorrectionFile = 'language-reusable-prerequisite-corrections-2026-11-11.json';
+const reusableCorrections = load(`../reports/${reusableCorrectionFile}`);
 const sorted = values => [...values].sort();
 const histogram = rows => rows.reduce((counts, row) => {
   counts[row.disposition] = (counts[row.disposition] ?? 0) + 1;
@@ -134,6 +136,27 @@ function checkProtocols(reviewBatches) {
   }
 }
 
+function checkCompleteHardPaths(root, reportedPaths, currentEdges = edges) {
+  const adjacency = new Map();
+  for (const edge of currentEdges.filter(edge => edge.strength === 'hard')) {
+    const children = adjacency.get(edge.topicId) ?? [];
+    children.push(edge.prerequisiteId);
+    adjacency.set(edge.topicId, children);
+  }
+  const actualPaths = [], pending = [[root]];
+  while (pending.length) {
+    assert.ok(actualPaths.length + pending.length <= 10000, 'hard-path inventory exceeded review bound');
+    const path = pending.pop(), children = adjacency.get(path.at(-1)) ?? [];
+    if (!children.length) actualPaths.push(path);
+    for (const child of children) {
+      assert.ok(!path.includes(child), 'cycle in current hard paths');
+      pending.push([...path, child]);
+    }
+  }
+  assert.deepEqual(sorted(reportedPaths.map(path => JSON.stringify(path))),
+    sorted(actualPaths.map(path => JSON.stringify(path))), 'complete current hard paths drift');
+}
+
 function checkGraph(reviewRecords, alignments) {
   const expectedPairs = new Set();
   const byKey = new Map(reviewRecords.map(row => [row.key, row]));
@@ -151,6 +174,31 @@ function checkGraph(reviewRecords, alignments) {
       assert.equal(candidate.topicName, topics.get(candidate.topicId).name);
       assert.ok(!alignments.some(context => context.topicId === candidate.topicId &&
         context.standards.includes(row.key)), `withheld candidate leaked: ${row.key}`);
+      if (candidate.historicalHardGatePaths) {
+        assert.equal(candidate.dependencyCorrectionReport, reusableCorrectionFile,
+          'retired hard paths need a registered correction report');
+        assert.ok(candidate.currentHardPathInterpretation?.length > 0);
+        checkCompleteHardPaths(candidate.topicId, candidate.inheritedHardGatePaths);
+        for (const path of candidate.historicalHardGatePaths) {
+          assert.equal(path[0], candidate.topicId);
+          let registeredSoftening = false;
+          for (let index = 1; index < path.length; index++) {
+            const topicId = path[index - 1], prerequisiteId = path[index];
+            const change = reusableCorrections.changes.find(change =>
+              change.before.topicId === topicId && change.before.prerequisiteId === prerequisiteId);
+            if (change) {
+              assert.equal(change.before.strength, 'hard');
+              assert.equal(change.after.strength, 'soft');
+              assert.deepEqual(edges.filter(edge => edge.topicId === topicId &&
+                edge.prerequisiteId === prerequisiteId), [change.after], 'retired path correction drift');
+              registeredSoftening = true;
+            } else assert.ok(edges.some(edge => edge.topicId === topicId &&
+              edge.prerequisiteId === prerequisiteId && edge.strength === 'hard'),
+            'unregistered change to a retired hard path');
+          }
+          assert.ok(registeredSoftening, 'historical path has no registered softening');
+        }
+      }
       for (const path of candidate.inheritedHardGatePaths) {
         assert.equal(path[0], candidate.topicId);
         for (let index = 1; index < path.length; index++) {
@@ -263,4 +311,51 @@ test('the language guard permits other curriculum codes and contexts to grow ind
   // Only the reviewed language-key projection is fixed here. Global schema and
   // generated-projection tests remain responsible for the rest of the graph.
   checkGraph(records, extended);
+});
+
+
+test('four reusable prerequisite corrections retain exact identities and all conditional source dispositions', () => {
+  assert.equal(reusableCorrections.changes.length, 4);
+  assert.equal(new Set(reusableCorrections.changes.map(({ after }) => pairKey(after.topicId, after.prerequisiteId))).size, 4);
+  for (const { before, after, discriminatingCounterexample } of reusableCorrections.changes) {
+    assert.equal(before.strength, 'hard');
+    assert.equal(after.strength, 'soft');
+    const { strength: oldStrength, reason: oldReason, ...oldIdentity } = before;
+    const { strength: newStrength, reason: newReason, ...newIdentity } = after;
+    assert.deepEqual(newIdentity, oldIdentity);
+    assert.ok(oldReason.length && newReason.length && discriminatingCounterexample.length);
+    assert.deepEqual(edges.filter(edge => edge.topicId === after.topicId &&
+      edge.prerequisiteId === after.prerequisiteId), [after]);
+  }
+  assert.deepEqual(histogram(records), summary.combinedSummary);
+  checkGraph(records, contexts);
+});
+
+test('language reports reject retired paths presented as current and missing correction bindings', () => {
+  const stale = structuredClone(records);
+  const candidate = stale.flatMap(row => row.conditionalContributions ?? [])
+    .find(candidate => candidate.historicalHardGatePaths);
+  assert.ok(candidate);
+  candidate.inheritedHardGatePaths = candidate.historicalHardGatePaths;
+  assert.throws(() => checkGraph(stale, contexts), /complete current hard paths drift/);
+  const unregistered = structuredClone(records);
+  delete unregistered.flatMap(row => row.conditionalContributions ?? [])
+    .find(candidate => candidate.historicalHardGatePaths).dependencyCorrectionReport;
+  assert.throws(() => checkGraph(unregistered, contexts), /retired hard paths need a registered correction report/);
+});
+
+
+test('complete hard-path reports reject empty inventories and omitted branches', () => {
+  const empty = structuredClone(records);
+  empty.flatMap(row => row.conditionalContributions ?? [])
+    .find(candidate => candidate.historicalHardGatePaths).inheritedHardGatePaths = [];
+  assert.throws(() => checkGraph(empty, contexts), /complete current hard paths drift/);
+  const branchingEdges = [
+    { topicId: 'invented-root', prerequisiteId: 'invented-left', strength: 'hard' },
+    { topicId: 'invented-root', prerequisiteId: 'invented-right', strength: 'hard' },
+  ];
+  assert.throws(() => checkCompleteHardPaths('invented-root',
+    [['invented-root', 'invented-left']], branchingEdges), /complete current hard paths drift/);
+  checkCompleteHardPaths('invented-root',
+    [['invented-root', 'invented-left'], ['invented-root', 'invented-right']], branchingEdges);
 });
