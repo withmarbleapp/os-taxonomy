@@ -48,6 +48,7 @@ See the [complete content ledger](ontario-grade6-science-content-current-ledger-
 and [whole-claim reuse review](ontario-grade6-flight-model-claim-review-2026-11-11.json).
 
 Validation: artifact generation, repository validation, generated-artifact check
-and the full 436-test suite passed. This is intentionally dependent on integration
-PR139; after that base reaches the default branch, retarget and reconcile against
-accepted content and rerun the applicable checks.
+and the full 436-test suite passed. This slice was originally stacked on integration
+PR139. After that parent reached the default branch, it was reconciled against
+accepted main `365cbe2` and retargeted to main with the same reviewed payload;
+all applicable checks were rerun.
