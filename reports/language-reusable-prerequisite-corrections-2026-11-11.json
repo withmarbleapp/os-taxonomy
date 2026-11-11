@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "cdd9ac698fbb5a07c97f49d777602d5d31ffac77",
+  "scope": "Four reusable prerequisite corrections; topic claims, teaching guides, existing associations and all age intervals are unchanged.",
+  "changes": [
+    {
+      "before": {
+        "topicId": "mt_-DuXzMVVXQ",
+        "prerequisiteId": "mt_sMAcZW6vWM",
+        "strength": "hard",
+        "reason": "Paraphrasing requires the ability to identify main ideas and summarise; learners must extract key ideas before restating them in own words"
+      },
+      "after": {
+        "topicId": "mt_-DuXzMVVXQ",
+        "prerequisiteId": "mt_sMAcZW6vWM",
+        "strength": "soft",
+        "reason": "Identifying and recording main ideas in multi-paragraph written texts supports paraphrasing, but accurate restatement of heard or viewed material can be demonstrated orally without independent print reading or written notes. Retain the complete oral key-idea/detail and own-words requirements; written note-taking remains useful support."
+      },
+      "discriminatingCounterexample": "A child hears an unfamiliar passage and accurately restates its central meaning and supporting details in fresh spoken words; independently reading several paragraphs and recording written notes has not been demonstrated. The complete oral claim succeeds while the complete written-notes prerequisite remains unassessed."
+    },
+    {
+      "before": {
+        "topicId": "mt__MDiDU9Vck",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "hard",
+        "reason": "Informative writing requires knowing 'genre', 'audience', 'purpose', and 'detail' as concepts"
+      },
+      "after": {
+        "topicId": "mt__MDiDU9Vck",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "soft",
+        "reason": "Writing-process vocabulary helps explain composing choices, but naming a topic and conveying relevant facts through drawing, dictation or writing does not require mastery of the entire compose/plan/draft/revise/edit/proofread/genre glossary. Retain all informative content requirements; the vocabulary remains useful support."
+      },
+      "discriminatingCounterexample": "A child dictates a named topic plus three accurate facts and labels an informative drawing, but cannot correctly explain draft/revise/proofread/genre or distinguish all writing-process terms. This satisfies the entire drawing/dictation/writing informative claim without mastery of the broad glossary."
+    },
+    {
+      "before": {
+        "topicId": "mt_nDAcXoPa0c",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "hard",
+        "reason": "Writing simple narratives requires 'narrative', 'sequence', 'beginning', 'middle', 'ending' as shared vocabulary"
+      },
+      "after": {
+        "topicId": "mt_nDAcXoPa0c",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "soft",
+        "reason": "Writing-process vocabulary supports reflection on narratives, but a child can independently write sequenced sentences with time words and a beginning, middle and ending/reaction without correctly naming every writing-process or genre term. Retain all simple-narrative requirements; the glossary remains useful support."
+      },
+      "discriminatingCounterexample": "A child independently writes a three-sentence event sequence with temporal words and a clear reaction/ending but cannot explain genre/audience/proofread. The full simple-narrative criteria succeed; the distinct glossary does not."
+    },
+    {
+      "before": {
+        "topicId": "mt_PJyCGJz5Hv",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "hard",
+        "reason": "Oral composition requires vocabulary like 'compose', 'sentence', and 'sequence' to participate meaningfully in the exercise"
+      },
+      "after": {
+        "topicId": "mt_PJyCGJz5Hv",
+        "prerequisiteId": "mt_o8ciHks8t2",
+        "strength": "soft",
+        "reason": "Writing-process vocabulary supports discussion of oral rehearsal, but saying and repeating an intended complete sentence and practising it with a partner before writing does not require mastery of the broad writing-process glossary. Retain the full rehearsal procedure; the vocabulary remains useful support."
+      },
+      "discriminatingCounterexample": "A child says and repeats a complete intended sentence, retains it and rehearses with a partner before writing, but cannot define compose/revise/genre. All rehearsal evidence succeeds while the broad process glossary is not mastered."
+    }
+  ],
+  "sourceRoleReview": "NCERT role-specific assessment/material and remaining complete-claim compatibility review is separate. Conditional candidate associations remain withheld and all source dispositions are unchanged.",
+  "notInferred": [
+    "No new topic, difficulty level or language-specific duplicate.",
+    "No automatic R1/R2 or English-to-other-language mastery transfer.",
+    "No change to expressive-reading print-direction and sight-word hard paths.",
+    "No learner estimate reset, score transfer or downstream publication."
+  ]
+}
