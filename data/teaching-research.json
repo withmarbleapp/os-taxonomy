@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "a200c09150fb461cd89a31ec0fdb4289af65fb715d2bbc83ab07a6ec85ea1427",
-  "recordCount": 1092,
+  "topicFileSha256": "68173702bdc3a238bf8b87dc63b5607a0ee0e863e90c65454522809dccb59e81",
+  "recordCount": 1093,
   "coverage": {
-    "topicCount": 1907,
-    "withResearch": 1092,
+    "topicCount": 1908,
+    "withResearch": 1093,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -40,8 +40,8 @@
         "withoutResearch": 46
       },
       "Mathematics": {
-        "topics": 581,
-        "withResearch": 499,
+        "topics": 582,
+        "withResearch": 500,
         "withoutResearch": 82
       },
       "Personal & Social Development": {
@@ -133210,6 +133210,147 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-02T18:56:36.491Z",
         "updatedAt": "2026-10-19T15:20:54.864Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_mRJkC3ae3O",
+      "pedagogy": {
+        "summary": "Separate the initial supported approximation from the later exact count, retain both records and change the collection to check transfer.",
+        "bestPractices": [
+          "Offer a meaningful known quantity or allow an own visual grouping.",
+          "Record the estimate before exact enumeration.",
+          "Use changed layouts and distinguish exact cardinality from visual impression."
+        ],
+        "keyRepresentations": [
+          "Actual visible collections with a known comparison group",
+          "An estimate-before-count record",
+          "A changed-layout count check"
+        ],
+        "commonMisconceptions": [
+          "Estimation means choosing any number.",
+          "Counting first and then saying about is an estimate.",
+          "An estimate is only acceptable if it is exact."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Make a supported pre-count quantity approximation, check it with actual counting and adapt the comparison to a changed collection.",
+        "activities": [
+          {
+            "title": "Choose a reference and commit to an estimate",
+            "learnerActions": [
+              "Adult setup: prepare actual collections of9,13and18 counters with distinct arrangements and a separately counted reference group of5 or10. Keep the target counts hidden; disclose reference quantity. Choose a target beyond effortless instant recognition but within the learner’s supported exact-count range.",
+              "Before enumerating target items, the learner gives an own approximate quantity and shows/points to a relevant comparison or visual grouping. A supplied five-frame is one option, not the sole permitted strategy. Record the estimate before the count.",
+              "Use an obvious near miss, such as1000 for a visible target near a few familiar groups, to ask what comparison would support or contradict it. Do not require an arbitrary percentage-accuracy score or a rapid response."
+            ],
+            "intendedInsight": "A useful estimate relates an unseen exact total to available quantity information; it is more than a random guess and need not be exactly correct.",
+            "feedback": [
+              "Ask which known quantity or grouping supports the estimate.",
+              "If the child has already counted every object, use a fresh set for the pre-count judgement rather than relabel exact counting as estimation.",
+              "Exact groupwise enumeration is valid mathematics but may not elicit approximation. Treat an already-known exact total as non-diagnostic for estimation and use a fresh suitable unknown-total target, rather than mark the exact strategy wrong."
+            ],
+            "rationale": "Original untested task design informed by the actual source’s reference/grouping examples; no intervention efficacy claimed.",
+            "sourceClaims": [
+              "The reviewed Ontario Kindergarten source includes approximate collection judgements followed by exact count checks; its supporting elaboration offers familiar quantity references and visual grouping as possible approaches. These are source applicability and task examples, not evidence that this original teaching sequence is effective."
+            ]
+          },
+          {
+            "title": "Check and reconcile the approximation",
+            "learnerActions": [
+              "Count the actual target one object per number name and establish the total. Compare it with the recorded estimate, using objects or ordinary language to show more/less/about the same.",
+              "Explain whether the reference helped and one possible reason for a discrepancy, such as spreading the same number of objects farther apart. Do not invent a measured cause from one trial.",
+              "Use a known counted set to explore how a different arrangement can change visual impression while the exact count remains unchanged. Keep this exact-cardinality check distinct from the initial approximation."
+            ],
+            "intendedInsight": "Counting checks an earlier approximation; disagreement can inform a strategy without making estimation identical to exact counting.",
+            "feedback": [
+              "Keep the original estimate visible; do not replace it after seeing the answer.",
+              "Accept an estimate that happens to equal the count when it was genuinely made before exact enumeration."
+            ],
+            "rationale": "The ordered estimate/check comparison discriminates the operation from post-hoc guessing or exact-count rehearsal; original assessment is unvalidated.",
+            "sourceClaims": [
+              "The reviewed Ontario Kindergarten source includes approximate collection judgements followed by exact count checks; its supporting elaboration offers familiar quantity references and visual grouping as possible approaches. These are source applicability and task examples, not evidence that this original teaching sequence is effective."
+            ]
+          },
+          {
+            "title": "Transfer to a new collection and layout",
+            "learnerActions": [
+              "Prepare a fresh, not-yet-counted target with a changed layout or kind of object. The learner chooses a useful reference/comparison, commits to an estimate, counts and explains the new comparison.",
+              "A later task can use a larger collection within available exact-count support, such as30–50, without introducing a separate level or making numbers-to120 representation a prerequisite. Kindergarten tasks retain their own small-collection scope.",
+              "Changing the arrangement of an already counted set preserves its known total. Use that only for the separate cardinality/reflection contrast; use a fresh unknown-total set to elicit a new approximation."
+            ],
+            "intendedInsight": "The same approximate-quantity operation transfers within the supplied task scale; arbitrary magnitude competence is not inferred.",
+            "feedback": [
+              "If the previous number is repeated, ask what in the new collection supports it.",
+              "If the target scale exceeds available counting access, select an appropriate countable task; do not infer a gap solely from an inaccessible inventory."
+            ],
+            "rationale": "Original changed-case diagnostic, not a research-based universal accuracy threshold or numerical progression.",
+            "sourceClaims": [
+              "The reviewed Ontario Kindergarten source includes approximate collection judgements followed by exact count checks; its supporting elaboration offers familiar quantity references and visual grouping as possible approaches. These are source applicability and task examples, not evidence that this original teaching sequence is effective."
+            ]
+          }
+        ],
+        "constraints": [
+          "Select visible collections beyond effortless instant recognition but within available exact-count support. No fixed numerical ceiling or separate tracked difficulty levels are created.",
+          "Reference5/10 is an authored option, not a universal permitted strategy. Conceptual grouping and other meaningful comparisons remain available.",
+          "No compulsory timer, percentage error cut-off, mental rounding of a written calculation, all120-number repertoire or exact-estimate demand.",
+          "Original proposal remains low-confidence and untested; source verification concerns the formal duty and elaboration only.",
+          "A correct repeated total for the same counted objects after rearrangement is cardinality, not an estimation error. Exact groupwise counting is valid but non-diagnostic if it supplies the total before an approximation is elicited."
+        ],
+        "reviewNotes": [
+          "The existing numbers-to120 claim explicitly retains an estimation component alongside place-value/representation duties. This overlap is documented; its claim, guide, source contexts and learner evidence remain unchanged pending a deliberate separate compound-claim review. No equivalence or mastery transfer is inferred."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Before counting a visible collection, can {{name}} give a sensible approximate quantity using a familiar group or another comparison, then count to check and explain the difference? Try a fresh, not-yet-counted collection with a different layout or material: can they adapt the comparison?",
+        "correctAnswer": "Produces a supported approximation before exact counting, checks and reconciles it, and repeats the operation with an appropriate changed comparison on a fresh collection.",
+        "whatMakesItDiscriminate": "Exact counting/subitising can succeed while the pre-count approximation remains arbitrary. A recorded estimate and fresh target expose count-first or memorised-number answers; reference reasoning and subsequent reconciliation separate an approximate judgement from a lucky numeral. A known counted total, same-set rearrangement or exact groupwise enumeration alone is non-diagnostic for approximation and must not be scored as an estimation gap.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Any number is a useful estimate.",
+            "revealedBy": "Gives a quantity unrelated to the visible collection/reference and cannot support it.",
+            "nextMove": "Compare the target with a known group, then make a fresh pre-count judgement.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Counts first and retrospectively labels the answer an estimate.",
+            "revealedBy": "No approximation is recorded before exact enumeration.",
+            "nextMove": "Use a fresh unknown-total collection and preserve the approximation before exact enumeration. Correct item/groupwise counting is not wrong mathematics; this trial may simply be non-diagnostic for the separate estimation operation.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What known group or comparison supports your approximate quantity?",
+          "How does the actual count compare with your estimate?",
+          "What would you change for this new collection or layout?"
+        ],
+        "responseLevels": {
+          "gap": "On a genuine accessible estimation trial with an unknown total, gives unsupported arbitrary quantities with no meaningful comparison. A known exact total or count-first trial alone is unassessed for estimation, not evidence of this gap.",
+          "partial": "On a genuine estimation trial, supports an approximation but does not yet check/reconcile it or adapt the comparison to a fresh unknown-total case.",
+          "full": "Uses a meaningful comparison for a genuine pre-count approximation, checks it with the actual quantity and adapts the operation to a fresh collection."
+        }
+      },
+      "sources": [
+        {
+          "source": "Ontario Ministry of Education, Kindergarten2026, A6.7 and linked elaboration",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/kindergarten/grades/jk-sk",
+          "claim": "The reviewed Ontario Kindergarten source includes approximate collection judgements followed by exact count checks; its supporting elaboration offers familiar quantity references and visual grouping as possible approaches. These are source applicability and task examples, not evidence that this original teaching sequence is effective.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-duty review and original untested quantity-estimation design",
+        "createdAt": "2026-11-11T03:54:35.133Z",
+        "updatedAt": "2026-11-11T03:54:35.133Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
