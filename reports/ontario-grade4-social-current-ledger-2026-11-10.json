@@ -3,30 +3,37 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "scope": "Ontario Grade 4 Social Studies, ages9–10; actual course edition2018 under accepted aggregateON-SSHG-2026.",
-  "status": "Source-fit authoring designs account for 39 records. Integrated A1/A3 and the early Inuit conflict-resolution chronology condition remain under final qualification. Source-fit design is not pupil attainment or selection readiness.",
+  "status": "All 42 Grade 4 records have explicit reviewed authoring dispositions: 40 Full and 2 Partial. Strand A has 21 Full/2 Partial; strand B has 19 Full. Remaining early-period Inuit conflict-resolution source fit is explicit in A3.10 and integrated A3. No learner attainment, tested teaching efficacy, accepted-main status or downstream publication is inferred.",
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
-    "Unverified": 3,
-    "Full": 39,
-    "Partial": 0,
+    "Full": 40,
+    "Partial": 2,
+    "Unverified": 0,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 96,
+    "pairs": 108,
     "topics": 25,
-    "codes": 39,
+    "codes": 42,
     "newClaims": 4,
     "reusedClaims": 21
   },
   "expectations": [
     {
       "code": "A1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_BPJ8x-w7_i",
+        "mt_E7avIa-tcE",
+        "mt_P0HBNfp46z",
+        "mt_bEvMBUv4eG",
+        "mt_tOtBMuQ2Yn"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-early-integrated-review-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-then-now",
+      "coverageBasis": "Integrated source-fit design retains the actual prior knowledge and task conditions. Early-period Inuit conflict-resolution support remains an explicit source condition where applicable, not a new-topic or learner-observation requirement."
     },
     {
       "code": "A1.1",
@@ -167,11 +174,20 @@
     },
     {
       "code": "A3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_BPJ8x-w7_i",
+        "mt_E7avIa-tcE",
+        "mt_P0HBNfp46z",
+        "mt_bEvMBUv4eG",
+        "mt_tOtBMuQ2Yn"
+      ],
       "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+        "The early Inuit conflict-resolution function needs source-supported fit to the selected pre-1500 scope. The specific A3.10 record remains Partial."
+      ],
+      "dossier": "ontario-grade4-early-integrated-review-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-early-understanding",
+      "coverageBasis": "Integrated source-fit design retains the actual prior knowledge and task conditions. Early-period Inuit conflict-resolution support remains an explicit source condition where applicable, not a new-topic or learner-observation requirement."
     },
     {
       "code": "A3.1",
@@ -280,11 +296,17 @@
     },
     {
       "code": "A3.10",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_BPJ8x-w7_i",
+        "mt_E7avIa-tcE"
+      ],
       "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+        "Early-period fit for the Inuit conflict-resolution function is not established by the current sources. Historical camp tradition and early cooperative harvesting are supported but cannot silently discharge this conjunctive requirement."
+      ],
+      "dossier": "ontario-grade4-early-integrated-review-2026-11-11.json",
+      "protocolReference": "/protocols/conflict-and-cooperation-attempts",
+      "coverageBasis": "Integrated source-fit design retains the actual prior knowledge and task conditions. Early-period Inuit conflict-resolution support remains an explicit source condition where applicable, not a new-topic or learner-observation requirement."
     },
     {
       "code": "B1",
@@ -536,5 +558,5 @@
     "head": "4af84858ab480909f5daa140c6224d3928190377",
     "status": "Unmerged local dependency; retarget/reconcile after accepted contents verified."
   },
-  "next": "Complete integrated A1/A3 source-fit reconciliation and retain an honest chronology-limited disposition for A3.10 unless its early-period requirement is supported."
+  "next": "Prepare the coherent 23-record early-societies PR with its explicit source condition, then continue Grades 5–6 source-fit review. Resolve the early-period Inuit conflict-resolution chronology using supported attribution/interpretation, without inventing a dated event, a new topic or automatic learner mastery."
 }

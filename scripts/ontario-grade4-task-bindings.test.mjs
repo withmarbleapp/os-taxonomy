@@ -85,3 +85,20 @@ test('Grade4 young-person comparisons retain source-basis qualification and reje
   unbound.assessment.nearMissProbes[0].inferenceType = 'unreviewed-inference';
   assert.throws(() => checkYoungPersonEvidenceBoundaries(unbound), /Unbound near-miss inference/);
 });
+
+function checkConflictPeriodReadiness(row, protocol) {
+  if (row.disposition !== 'Full') return;
+  if (protocol.requiresEarlyPeriodInuitConflictResolutionSupport) {
+    assert.ok(protocol.sourceCases.some(source => source.culturalCase === 'Inuit' && source.supportsEarlyPeriodConflictResolution && source.source && source.basis), 'Unresolved early-period Inuit conflict-resolution support');
+  }
+}
+test('Grade4 conflict-resolution source condition cannot be relabelled Full without period-fit support', () => {
+  const row = ledger.expectations.find(item => item.code === 'A3.10');
+  const protocol = read('reports/ontario-grade4-early-integrated-review-2026-11-11.json').protocols['conflict-and-cooperation-attempts'];
+  checkConflictPeriodReadiness(row, protocol);
+  if (!protocol.sourceCases.some(source => source.culturalCase === 'Inuit' && source.supportsEarlyPeriodConflictResolution)) {
+    assert.notEqual(row.disposition, 'Full');
+    assert.ok(row.remainingConditions.length);
+    assert.throws(() => checkConflictPeriodReadiness({...row, disposition: 'Full', remainingConditions: []}, protocol), /Unresolved early-period/);
+  }
+});
