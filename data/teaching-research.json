@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "2ddeb3dbd85aabb2f94f034d114a33c32f673bf453a90cc6debe0052b5815fca",
-  "recordCount": 1084,
+  "topicFileSha256": "e9a520a8478bd39a833cf3699506729f77ba5ab228335a7488ece1a29bfb7bc3",
+  "recordCount": 1085,
   "coverage": {
-    "topicCount": 1899,
-    "withResearch": 1084,
+    "topicCount": 1900,
+    "withResearch": 1085,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -65,8 +65,8 @@
         "withoutResearch": 0
       },
       "Performing Arts": {
-        "topics": 3,
-        "withResearch": 3,
+        "topics": 4,
+        "withResearch": 4,
         "withoutResearch": 0
       },
       "Français": {
@@ -219657,6 +219657,191 @@
         "originalResearchGeneratedBy": "Taxonomy curation: original source-checked map-reference proposal; teaching efficacy untested",
         "createdAt": "2026-11-10T15:45:42Z",
         "updatedAt": "2026-11-10T15:45:42Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_Gy9nCgUjlD",
+      "pedagogy": {
+        "summary": "Connect standard musical marks to recoverable sounded relationships through reading, recording, comparison and repair. Use short original scores so a remembered tune or a teacher performance cannot conceal a notation gap.",
+        "bestPractices": [
+          "Keep an unheard reading probe separate from rehearsed performance.",
+          "Compare a partner’s recovery with the intended melody; a recoverable score is more informative than decorative correctness.",
+          "Keep pitch, duration, silence and expression distinct when diagnosing errors.",
+          "Use suitable comfortable voice/instrument access; no fixed instrument, perfect pitch, vocal range norm or public solo performance is a gate."
+        ],
+        "keyRepresentations": [
+          "Treble staff with its clef and nearby ledger notes",
+          "Standard note/rest values, bars and time signatures",
+          "Key signatures, naturals/sharps/flats and common musical markings",
+          "Devised score with an explicit mapping, used for comparison rather than substitute mastery"
+        ],
+        "commonMisconceptions": [
+          "A musical symbol is only a name and need not change a performance.",
+          "A rest has no counted duration.",
+          "The key signature can be ignored when there is no accidental beside the note.",
+          "Louder means higher or faster.",
+          "Any nine pulses establish the grouping of 9/8."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Read a short score, write one someone else can recover, diagnose changed signs and transfer the conventions to a new melody. The accompanying five original score panels and exact event keys supply concrete tasks.",
+        "activities": [
+          {
+            "title": "Recover an unheard staff score",
+            "intendedInsight": "Clef, staff position, duration and musical markings constrain what is sounded; hearing a model first can conceal a decoding gap.",
+            "learnerActions": [
+              "Use original score B without first hearing it; locate pitches and bars, then sound its melody using a suitable labelled pitched instrument or comfortable voice.",
+              "Keep the quarter rest silent and retain three beats in each bar. Recheck against the score after performing."
+            ],
+            "feedback": [
+              "If note letters are correct but sound/rest durations are not, mark the pulse across a bar and rebuild the timing; do not reward note naming as the complete performance.",
+              "If the child copies a familiar remembered tune, switch to the changed B bar before judging score reading."
+            ],
+            "rationale": "The official Ontario junior overview and C1.1/C1.5 require actual notation-based performance. This task is an original diagnostic design, not a tested intervention.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Write a score that a partner can recover",
+            "intendedInsight": "A musical record must preserve enough conventional information for someone else to recover the intended melody.",
+            "learnerActions": [
+              "Record the two-bar melody A on a blank treble staff with G-major key and 4/4 metre, including the rest and natural sign. Use the concrete answer key only after the first attempt.",
+              "Exchange the score with a partner who has not heard that attempt. Compare the recovered sound and repair a missing/incorrect symbol.",
+              "Create and record a different three-beat final bar for B."
+            ],
+            "feedback": [
+              "If decorative marks do not specify pitch or duration, ask the partner to show the ambiguity and add the missing conventional information.",
+              "If the partner succeeds only after hearing a demonstration, retain that as support and repeat with another unheard score to assess independent recovery."
+            ],
+            "rationale": "Encoding and decoding are checked together; copying a staff image or naming a sign does not establish recoverable musical representation.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Make one changed sign audible",
+            "intendedInsight": "A key signature applies through the score and an accidental can change a particular note; a rest changes sound into silence without changing the allotted time.",
+            "learnerActions": [
+              "Compare score A with a version omitting its bar 2 natural. Sound the F difference under the G-major signature and explain/show why the versions differ.",
+              "Compare A with its final bar 1 rest replaced by a quarter note. Keep the bar duration while showing the sound/silence change.",
+              "Play the same short phrase quietly then strongly as indicated; the dynamic change does not demand a faster tempo."
+            ],
+            "feedback": [
+              "If all Fs are treated alike, place the natural version beside the unaltered signature version and compare the affected note on the instrument.",
+              "If loudness is confused with pitch or speed, hold pitches and pulse fixed while changing only the indicated dynamic."
+            ],
+            "rationale": "These near misses separate interpretation of standard conventions from success by auditory imitation or general pattern guessing.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Read grouping and duration on a new score",
+            "intendedInsight": "The metre organises musical time; correct total duration alone does not establish the intended grouping, and a triplet fits a declared duration.",
+            "learnerActions": [
+              "Sound score C in 9/8 with three dotted-quarter groups, then the declared 3+2 score D in 5/4. Do not claim 3+2 is the only 5/4 grouping.",
+              "Use score E: fit the three eighth-note triplet pitches within one quarter beat and preserve the following note/rest timing.",
+              "Read the common tempo/articulation or repeat instruction provided with a score and show its audible effect. Use nearby ledger notes when present."
+            ],
+            "feedback": [
+              "If C is nine equally accented events, regroup the eighth pulses into three beats and compare the resulting emphasis.",
+              "If E grows into five beats, maintain four pulse marks and fit the triplet into the first rather than add a new beat."
+            ],
+            "rationale": "Ontario primary tables include actual rhythm, metre and expressive conventions. These concrete tasks sample selected conventions; the programme must retain every applicable source requirement and not infer all repertoire from one 4/4 success.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Translate while keeping the music",
+            "intendedInsight": "A devised picture can be useful, but it must retain the represented musical relationships and cannot substitute for conventional staff knowledge.",
+            "learnerActions": [
+              "Translate B into a devised contour/duration map with an explicit key and then recover a staff score. Check whether exact pitches and silence survived.",
+              "For the early-source component only, use triangle=woodblock tap, circle=shake, empty square=one silent pulse. Read an unheard repeating sequence, encode a different one and let a partner recover it.",
+              "Keep this early devised-symbol task separate from the fixed staff claim; for Grade 3 source fit include real standard duration/rest signs as well as a devised representation."
+            ],
+            "feedback": [
+              "If a contour only says up/down and loses exact pitches, identify what a reader would still have to guess before calling the translation recoverable.",
+              "If an early pupil succeeds with the icon key, record that component success without assigning whole staff-literacy mastery."
+            ],
+            "rationale": "The source permits early invented representations while later grades require standard notation. One globally tracked claim must not silently treat those as equivalent mastery.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "The supplied task scores are original diagnostic examples; they are not copied NCERT/Ontario repertoire. Link to restricted third-party scores without republishing their notes or lyrics.",
+          "A narrow successful probe does not establish every grade-level repertoire requirement. Source-fit protocols explicitly retain applicable standard and nontraditional notation, parts, musicianship and actual performance conditions.",
+          "Do not use devised-only success as global staff-literacy mastery or arbitrarily widen the whole claim to age 6.",
+          "Provide prepared adult support and suitable accessible instrument/voice options; assistance is recorded, not mistaken for independent performance.",
+          "No claim about efficacy, typical acquisition age or actual children is made from these authored examples."
+        ],
+        "reviewNotes": [
+          "Original untested activity and assessment design; confidence low. Official curriculum and NAC resources establish source duties and available score/repertoire support, not effectiveness of this intervention.",
+          "The 2009 source’s examples/prompts are illustrative; grade/area fundamental concepts and actual expectation conjunctions remain relevant.",
+          "The retained NAC Music Alive score is an attributed third-party reference, not copied into the original task panels.",
+          "Original score panels and exact event keys: reports/assets/ontario-arts-staff/scores.svg and scores.json. The score-reading, recording and correction tasks are authored assessment designs, not child observations."
+        ]
+      },
+      "assess": {
+        "method": "interpret_translate",
+        "diagnosticPrompt": "Use the actual original score panels A and B: first recover unheard B, then record a short melody for another performer. Compare A with its natural/rest variants, show the audible difference, and transfer to an unfamiliar score with the stated common conventions. Use C/D/E when qualifying their metre/triplet duties.",
+        "whatMakesItDiscriminate": "Unheard decoding defeats memorised auditory copying; partner recovery tests whether encoding carries musical information; sign changes isolate key/rest/expression interpretation; changed scores and grouping tasks distinguish a fixed learnt example from conventional representation.",
+        "correctAnswer": "The performance and recording preserve the declared standard pitch, duration, silence, metre and musical markings; the learner detects a meaningful mismatch, repairs it and uses the conventions on a changed score.",
+        "probeDeeper": [
+          "What would sound different if this natural were removed under the key signature?",
+          "Where does the silent pulse belong, and does the bar become shorter?",
+          "Can the partner recover your melody without hearing it first?",
+          "What information does this contour map lose compared with the staff score?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Can copy by ear but does not recover an unheard staff score",
+            "revealedBy": "The same sounding model is repeated regardless of a changed written pitch/rest",
+            "nextMove": "Use a short unheard two-bar score, point to each represented event and compare with a changed sign; keep the teacher model until after the attempt.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Ignores rest duration or key/accidental information",
+            "revealedBy": "Bar timing shifts or F-natural/F-sharp versions sound alike despite correct instrument access",
+            "nextMove": "Keep pulse marks for the rest and compare the two affected pitches under the same signature; isolate the source of the mismatch.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Devised icon success is taken as standard-score literacy",
+            "revealedBy": "The pupil succeeds only with a new invented key and cannot interpret ordinary staff conventions",
+            "nextMove": "Retain the real component success, then teach/test the missing standard conventions rather than infer equivalence.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only imitates a heard model or uses decorative/invented marks without interpreting standard staff information.",
+          "partial": "Recovers some pitches or durations but loses silence, altered notes, grouping or musical markings; encoding or changed-score transfer remains unsupported.",
+          "full": "Reads, realises and records the short standard staff tasks with the represented pitch/duration/rest/metre and musical markings, repairs a meaningful mismatch and transfers the conventions. Required repertoire conditions are checked separately, not inferred from a narrow diagnostic."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "source": "Ontario Ministry of Education, The Arts 2009, printed 12,18–28,97 and Grades 4–6 Music tables/C1.1/C1.5",
+          "url": "https://www.edu.gov.on.ca/eng/curriculum/elementary/arts 18 b 09 curr.pdf",
+          "claim": "Official primary source requires integrated creative/critical work and actual notation-based musical performance/composition; its examples illustrate rather than independently prescribe each item.",
+          "verified": true
+        },
+        {
+          "source": "National Arts Centre, Music Alive resources and English/Cree score by Sherryl Sewepagaham",
+          "url": "https://nac-cna.ca/en/musicalive/resources/1000",
+          "claim": "Provides an attributed vocal/percussion staff score and audio as an actual classroom reference; supports access to repertoire, not efficacy of these new diagnostic tasks.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex taxonomy curation",
+        "createdAt": "2026-11-11T01:48:03.789Z",
+        "updatedAt": "2026-11-11T01:48:03.789Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
