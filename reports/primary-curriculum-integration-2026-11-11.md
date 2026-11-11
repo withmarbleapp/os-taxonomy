@@ -4,7 +4,7 @@ This proposal combines reviewed Ontario and India source work into a branch targ
 
 ## Combined contents
 
-The snapshot contains 1,910 topics, 4,001 dependencies, 8,313 retained standards, 177 clusters, 1,095 teaching guides and 4,980 scoped contexts. Relative to accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, it adds 52 topics, 49 guides, seven dependencies and one cluster. Nine old claims, five old guides and 22 old dependencies have explicitly reviewed corrections. The five old-guide corrections comprise three teaching corrections and two citation-only repairs. The catalogue is unchanged. These inventory counts describe a source proposal, not learner attainment.
+The snapshot contains 1,910 topics, 4,001 dependencies, 8,313 retained standards, 177 clusters, 1,095 teaching guides and 4,980 scoped contexts. Relative to accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, it adds 52 topics, 49 guides, seven dependencies and one cluster. Nine old claims, six old guides and 22 old dependencies have explicitly reviewed corrections. The six old-guide corrections comprise four teaching corrections and two citation-only repairs. The catalogue is unchanged. These inventory counts describe a source proposal, not learner attainment.
 
 India accounts for all 570 selected NCERT records: 492 Full authoring, 37 mixed skill/contextual, 28 conditional bindings, 12 contextual and one Unverified musical-scale phrase. This is the agreed NCERT baseline, with actual R1/R2 language and script bound at use. It is not a claim to cover all Indian boards.
 
@@ -20,6 +20,8 @@ The [Language residual dossier](ontario-language-residual-completion-2026-11-11.
 
 The [science coding task review](ontario-science-coding-task-review-2026-11-11.md) supplies concrete designs for six specific Grade 1–6 coding duties. The original packet combines a safe observation, clearly fictional practice data, visual-programming recipes, changed-case checks and distinct input/output purposes. Actual learner code and execution are required at delivery and are not asserted here. The [coding-impact supplement](ontario-science-coding-impact-review-2026-11-11.md) supplies another twelve prepared designs: six everyday-impact duties and six independently assessed overalls. Actual grade-specific code execution is combined with an explained consequence, an attributed AI-caption case and, for Grades 4–6, an actual skilled-trade/STEM application. No additional data changes. A [two-field AI example correction](ai-example-specificity-review-2026-11-11.json) qualifies AI-enabled instances rather than treating every automatic response as AI; its whole five-example, pattern/data and benefit/limit evidence remains exact.
 
+A [one-path shade-feedback correction](shade-feedback-safety-correction-2026-11-11.json) removes an overlooked instruction to look through a cover towards the Sun. It uses ground-shadow observation and a real warming comparison, consistent with the rest of the guide; all other guide payloads and flags are preserved.
+
 Full means the mandatory source duties have an authored task portfolio with its stated resource and access conditions. It does not mean a child has performed the tasks, mastered every linked topic, or received an intervention with proven effectiveness. Component links alone do not certify a whole expectation.
 
 ## Reconciliation and preservation
@@ -32,7 +34,7 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 275 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 277 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
 The remaining whole programme review is Health/PE (267 records). Earlier own-local requirements are also receiving a consistency audit. Actual task/resource duties for 215 of the prior Science (233) Partial positions remain in this snapshot; eighteen coding, impact and integrated overall designs are now prepared. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
