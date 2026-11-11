@@ -25,6 +25,11 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
     for (const ref of protocol.caseRefs ?? []) {
       const target = report.preparedCases?.[ref];
       assert.ok(target && Object.keys(target).length, 'Missing actual case packet');
+      for (const binding of target.dossierRefs ?? []) pointer(readReport(binding.report), binding.pointer);
+    }
+    if (row.code === 'ON-SCI-2022-G5-C2') {
+      const areas = protocol.caseRefs.map(ref => report.preparedCases[ref].area);
+      assert.deepEqual([...new Set(areas)].sort(), ['chemical', 'physical', 'properties', 'state'], 'Missing integrated matter area');
     }
     if (row.code === 'ON-SCI-2022-G5-C2.7') {
       const actualPhases = new Set(protocol.caseRefs.map(ref => report.preparedCases[ref].phase));
@@ -59,4 +64,17 @@ test('Grade 5 C2.7 cannot omit all liquid or gas applications while retaining Fu
     damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].phase !== phase);
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required state application/);
   }
+});
+
+test('Grade 5 overall matter cannot lose a required area or a cross-dossier target', () => {
+  const name = 'ontario-grade5-integrated-matter-design-2026-11-11.json';
+  const original = load(`reports/${name}`);
+  for (const area of ['chemical', 'physical', 'properties', 'state']) {
+    const damaged = structuredClone(original);
+    damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].area !== area);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing integrated matter area/);
+  }
+  const damaged = structuredClone(original);
+  damaged.preparedCases.properties.dossierRefs[0].pointer = '/missing';
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing protocol target/);
 });
