@@ -20,14 +20,14 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1902,
+    "topics": 1904,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
       "Geography": 32,
       "History": 115,
       "Learning to Learn": 20,
-      "Life Skills": 47,
+      "Life Skills": 49,
       "Mathematics": 581,
       "Personal & Social Development": 120,
       "Science": 577,
@@ -39,16 +39,16 @@
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 11331,
+    "topicStandardLinks": 11630,
     "clusters": 177,
-    "teachingResearch": 1087,
+    "teachingResearch": 1089,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4845
+    "curriculumAlignments": 4949
   },
   "files": {
     "topics.json": {
-      "bytes": 2723343,
-      "sha256": "941fd231d3b535070b840b0433926f1f0d27e01947a63508c23ee8059a962604"
+      "bytes": 2751444,
+      "sha256": "a75c279f5e64ac291a58f504b9f5c0ff7ccdbb2041b058cb46c63a03594c9408"
     },
     "dependencies.json": {
       "bytes": 878372,
@@ -63,16 +63,16 @@
       "sha256": "4e112dd2fc3373666d9f33e7a0314798f282b67b650063ec5afeb69b7af5dbc3"
     },
     "teaching-research.json": {
-      "bytes": 23804720,
-      "sha256": "81806e75e3277e7aa2e306174b0b7cc5e41e0c5692e0111f1e38d2f79b96dcd8"
+      "bytes": 23838227,
+      "sha256": "63160769d9ca78123f2838683d11341d3bf4ecf300a2dee3b3b2c64b5891fa4c"
     },
     "archived-teaching-research.json": {
       "bytes": 121411,
       "sha256": "28cc37220a78bdbfb37bd5693e8b729571e87c5d0ba471692707a07a7ef6c73f"
     },
     "curriculum-alignments.json": {
-      "bytes": 1624824,
-      "sha256": "aa55c9df6d01c5f5801bf107a6f5028786cf1bd60bf4f9eaaa3cd5d04e0c93e0"
+      "bytes": 1669978,
+      "sha256": "e000513596bd90476004b69526180005c5d501ad4103aeec3619ad383744e950"
     }
   },
   "excluded": [
@@ -83,10 +83,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "941fd231d3b535070b840b0433926f1f0d27e01947a63508c23ee8059a962604",
+    "topicFileSha256": "a75c279f5e64ac291a58f504b9f5c0ff7ccdbb2041b058cb46c63a03594c9408",
     "coverage": {
-      "topicCount": 1902,
-      "withResearch": 1087,
+      "topicCount": 1904,
+      "withResearch": 1089,
       "withoutResearch": 815,
       "bySubject": {
         "Computing": {
@@ -115,8 +115,8 @@
           "withoutResearch": 18
         },
         "Life Skills": {
-          "topics": 47,
-          "withResearch": 1,
+          "topics": 49,
+          "withResearch": 3,
           "withoutResearch": 46
         },
         "Mathematics": {

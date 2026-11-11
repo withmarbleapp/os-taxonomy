@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "941fd231d3b535070b840b0433926f1f0d27e01947a63508c23ee8059a962604",
-  "recordCount": 1087,
+  "topicFileSha256": "a75c279f5e64ac291a58f504b9f5c0ff7ccdbb2041b058cb46c63a03594c9408",
+  "recordCount": 1089,
   "coverage": {
-    "topicCount": 1902,
-    "withResearch": 1087,
+    "topicCount": 1904,
+    "withResearch": 1089,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -35,8 +35,8 @@
         "withoutResearch": 18
       },
       "Life Skills": {
-        "topics": 47,
-        "withResearch": 1,
+        "topics": 49,
+        "withResearch": 3,
         "withoutResearch": 46
       },
       "Mathematics": {
@@ -171710,7 +171710,7 @@
           {
             "title": "The placenta — exchange, not mixing",
             "feedback": [
-              "If a learner says the two bloods mix, clarify that the supplies stay separate and substances diffuse across the barrier between them.",
+              "If a learner says the two bloods mix, clarify that the supplies normally stay separate while substances cross the placenta between them. Oxygen crosses by diffusion; nutrients cross by different transport mechanisms, whose names are not required here.",
               "If a learner thinks the placenta filters out everything harmful, correct this: many substances (alcohol, nicotine, some drugs, some pathogens) do cross to the foetus.",
               "If the placenta is described as only a food store, reframe it as a two-way exchange surface for oxygen, nutrients and waste.",
               "If a learner locates the baby in the stomach/digestive tract, correct the location to the uterus; food reaches the baby only after digestion and transfer across the placenta."
@@ -171722,11 +171722,11 @@
             "learnerActions": [
               "Study a placenta cross-section: the mother's blood and the baby's blood run very close together but do not normally mix — they are separate circulations.",
               "Draw or trace arrows showing oxygen and nutrients passing from the mother's blood across a thin barrier in the placenta into the baby's blood, which the umbilical cord then carries to the baby, and carbon dioxide and other waste passing back the other way.",
-              "Explain how the baby gets food even though the blood does not mix: substances cross the placenta between the two separate supplies, mainly by DIFFUSION.",
+              "Explain how the baby gets nutrients even though the blood does not mix: substances cross the placenta between the two normally separate supplies; oxygen crosses by diffusion and nutrients cross by different mechanisms.",
               "Address the 'what else can cross?' question: this same barrier lets alcohol, nicotine and some drugs through to the baby — so the placenta feeds but does not fully protect, which is why maternal lifestyle matters.",
               "Optionally drag oxygen/nutrient and 'harmful substance' tokens at the placenta and observe which cross to the foetal side, making the maternal-lifestyle point concrete."
             ],
-            "intendedInsight": "The placenta is a two-way exchange surface between two separate blood supplies; substances cross mainly by diffusion — not by the blood mixing — and harmful substances can cross too."
+            "intendedInsight": "The placenta is a two-way exchange surface between two normally separate blood supplies; oxygen and nutrients pass to the foetus and waste passes back without the blood mixing. Harmful substances can cross too; the placenta is not a perfect barrier."
           },
           {
             "title": "The menstrual cycle without hormones",
@@ -171759,12 +171759,12 @@
           {
             "title": "Check your understanding",
             "feedback": [
-              "Full response: explains the placenta as a two-way exchange surface where oxygen, nutrients and waste pass (mainly by diffusion) between the mother's and baby's SEPARATE supplies, with the umbilical cord carrying the baby's blood to and from the placenta, locates development in the uterus and fertilisation (gamete fusion) in the oviduct, and links maternal lifestyle to foetal development.",
-              "Partial: knows the placenta feeds the baby and can name the gametes as separate facts but cannot explain diffusion across two separate blood supplies, or misplaces fertilisation — prompt with 'how do oxygen and food actually get across if the bloods don't mix?'.",
-              "Gap: says the baby is in the stomach or that the bloods mix — reteach the uterus location and the separate-supplies/diffusion model.",
+              "Full response: explains the placenta as a two-way exchange surface where oxygen, nutrients and waste pass between the mother's and baby's normally SEPARATE supplies, with the umbilical cord carrying the baby's blood to and from the placenta, locates development in the uterus and fertilisation (gamete fusion) in the oviduct, and links maternal lifestyle to foetal development. Oxygen crosses by diffusion; no advanced nutrient-transport names are required.",
+              "Partial: knows the placenta feeds the baby and can name the gametes as separate facts but cannot explain exchange across two normally separate blood supplies, or misplaces fertilisation — prompt with 'how do oxygen and nutrients actually get across if the bloods do not mix?'.",
+              "Gap: says the baby is in the stomach or that the bloods mix — reteach the uterus location and the normally separate-supplies/exchange model.",
               "Probe further: 'Why can alcohol or nicotine still affect the baby if the blood doesn't mix?' and 'What is the umbilical cord's job?'"
             ],
-            "rationale": "Matching, sequencing and multiple-choice questions give reliable coverage of recall-level evidence, while the open two-tier diagnostic elicits the independent reasoning (diffusion between separate supplies) that recognition formats alone cannot confirm. The reason tier is what discriminates secure understanding.",
+            "rationale": "Matching, sequencing and multiple-choice questions give reliable coverage of recall-level evidence, while the open two-tier diagnostic elicits the independent reasoning (substance exchange between normally separate supplies) that recognition formats alone cannot confirm. The reason tier is what discriminates secure understanding.",
             "sourceClaims": [],
             "learnerActions": [
               "Match each organ to its function (organ to function).",
@@ -171802,7 +171802,7 @@
           "Where does fertilisation actually happen, and which two cells join?",
           "What is the umbilical cord's job in all this?"
         ],
-        "correctAnswer": "The placenta is the exchange organ: the mother's blood and the baby's blood flow very close together there but do NOT mix. Oxygen and nutrients diffuse from the mother's blood across into the baby's blood (through the umbilical cord), and the baby's waste, such as carbon dioxide, diffuses back the other way. The baby develops in the uterus, not the stomach.",
+        "correctAnswer": "The placenta is the exchange organ: the mother's blood and the baby's blood flow very close together there but normally do NOT mix. Oxygen and nutrients cross from the mother's side into the baby's blood; the umbilical cord carries the baby's blood between placenta and baby. Waste, such as carbon dioxide, crosses back the other way. Oxygen crosses by diffusion; nutrients cross by different transport mechanisms, whose names are not required here. The baby develops in the uterus, not the stomach.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -171815,7 +171815,7 @@
           {
             "kind": "misconception",
             "pattern": "the mother's and baby's blood mix directly",
-            "nextMove": "clarify the two blood supplies stay separate; substances DIFFUSE across the placenta between them",
+            "nextMove": "clarify that the two blood supplies normally stay separate; substances cross the placenta between them, with oxygen crossing by diffusion and nutrients crossing by different transport mechanisms",
             "distractor": "Yes — the mother's blood flows directly into the baby to feed it",
             "revealedBy": "the reason has the two bloodstreams joining together",
             "reteachPrerequisiteId": null
@@ -171839,11 +171839,11 @@
         ],
         "responseLevels": {
           "gap": "Says the baby is in the stomach or that the two bloods mix; cannot state the placenta's role.",
-          "full": "Explains the placenta as a two-way exchange surface where oxygen, nutrients and waste diffuse between the mother's and baby's separate blood supplies via the umbilical cord, locates development in the uterus and fertilisation (gamete fusion) in the oviduct, and links maternal lifestyle to foetal development.",
-          "partial": "Knows the placenta feeds the baby and can name the gametes, but as separate facts — cannot explain that substances diffuse across the placenta between two SEPARATE blood supplies, or say where fertilisation occurs."
+          "full": "Explains the placenta as a two-way exchange surface where oxygen, nutrients and waste cross between the mother's and baby's normally separate blood supplies, with the umbilical cord carrying the baby's blood to and from the placenta; locates development in the uterus and fertilisation (gamete fusion) in the oviduct, and links maternal lifestyle to foetal development. Oxygen crosses by diffusion; advanced nutrient-transport names are not required.",
+          "partial": "Knows the placenta feeds the baby and can name the gametes, but as separate facts — cannot explain that substances cross the placenta between two normally SEPARATE blood supplies, or say where fertilisation occurs."
         },
         "diagnosticPrompt": "During pregnancy, how does a growing baby get its oxygen and food, and get rid of its waste, while it's inside the mother? Explain the placenta's job — and does the mother's blood flow straight into the baby?",
-        "whatMakesItDiscriminate": "A child who thinks the two bloodstreams mix, or that the baby is in the stomach, or that the placenta simply stores food, answers differently from one who describes substances diffusing across the placenta between two separate blood supplies. The reason tier is decisive."
+        "whatMakesItDiscriminate": "A child who thinks the two bloodstreams mix, or that the baby is in the stomach, or that the placenta simply stores food, answers differently from one who describes substances crossing the placenta between two normally separate blood supplies. The reason tier is decisive."
       },
       "sources": [
         {
@@ -220207,6 +220207,371 @@
         "originalResearchGeneratedBy": "Taxonomy curation: checked primary sources and original untested task design",
         "createdAt": "2026-11-11T00:00:00.000Z",
         "updatedAt": "2026-11-11T00:00:00.000Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_rVjbdwUJHG",
+      "pedagogy": {
+        "summary": "Teach a bounded common-trigger/reaction model through fictional known cases, then contrast allergy with one familiar non-allergic intolerance and test uncertainty in a changed case. The target is knowledge, not diagnosis, treatment or a child food challenge.",
+        "bestPractices": [
+          "Start with varied familiar food pictures and the same food across different fictional people.",
+          "Supply known clinical case identities rather than asking children to infer diagnoses from symptoms.",
+          "Use pictures, pointing, oral explanation or supported language; no English-only vocabulary inventory is a hard gate.",
+          "Keep prompt adult help and individual plans explicit without making the learner a clinical triage decision-maker."
+        ],
+        "keyRepresentations": [
+          "Original named-person/food/case cards.",
+          "Skin, breathing and digestive possible-reaction pictures.",
+          "Paired known milk-allergy and lactose-intolerance explanations beside an unexplained symptom case."
+        ],
+        "commonMisconceptions": [
+          "Only peanuts can cause food allergy.",
+          "A nutritious food is safe for everyone.",
+          "Every stomach ache after food proves allergy.",
+          "A small taste is a safe way for a child to test an allergen.",
+          "A front-of-pack rating establishes individual allergen safety."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Three original untested activities distinguish food-trigger knowledge from generic food hygiene, nutrition or immune-system lessons. No actual food handling, treatment, exposure or diagnosis is part of this design.",
+        "activities": [
+          {
+            "title": "Same food, different people",
+            "intendedInsight": "A food can be nutritious and safe for many people yet cause an adverse reaction in a particular person; an allergy is not a dislike or a dirty-food judgement.",
+            "learnerActions": [
+              "Use original picture cards showing milk, egg, fish, peanuts and tree nuts, plus an ordinary non-food hazard. No real food is opened or eaten.",
+              "Read three clearly fictional, already medically identified cases: Sam has a milk allergy; Ari has an egg allergy; Mo has a fish allergy. For each, select the relevant possible food trigger.",
+              "Explain why another person being able to eat the food does not prove it is safe for the named person. Change from a familiar peanut example to egg or fish.",
+              "Separate a stated dislike from a known allergy without dismissing either person or demanding disclosure of the learner's own medical history."
+            ],
+            "feedback": [
+              "If only nuts are selected, revisit the known egg or fish case: allergy is not limited to one food family. Ask for the trigger in the changed case rather than reciting a list.",
+              "If the learner says healthy foods cannot be allergens, contrast the same pictured milk carton for two fictional people; nutritious food and individual safety are different questions.",
+              "If a dislike is called an allergy, name the distinction while respecting choice: not wanting a food does not by itself establish a medical reaction."
+            ],
+            "rationale": "Varying the food and person separates a trigger model from memorising one peanut warning. The known-case label supplies clinical identity; the learner identifies the food relation rather than diagnosing anyone.",
+            "sourceClaims": [
+              "Varied common trigger families; list includes allergy-like sensitivities, so do not call every listed substance an IgE food allergen or impose the whole list as mastery."
+            ]
+          },
+          {
+            "title": "Two milk cases, two explanations",
+            "intendedInsight": "The same food can be connected with different conditions, and digestive symptoms alone do not establish which condition a person has.",
+            "learnerActions": [
+              "Use two original fictional cards. The first states a clinician has identified milk allergy: the immune system reacts to a food protein and the person may have skin, breathing or digestive reactions. The second states a clinician has identified lactose intolerance: difficulty digesting milk sugar can cause digestive discomfort.",
+              "Explain in simple language how both cases concern milk but are not the same condition. No enzyme names, antibody vocabulary or cell hierarchy is required.",
+              "Sort supplied possible-reaction pictures into skin, breathing and digestive categories; allow a symptom category to occur in more than one case rather than making an exclusive diagnosis table.",
+              "Read a third card saying only that a person feels stomach pain after eating. Explain that this does not prove allergy or intolerance and that an adult or clinician must determine the cause."
+            ],
+            "feedback": [
+              "If every stomach ache becomes an allergy, put the two known cases beside the unexplained card: shared symptoms do not identify a cause.",
+              "If intolerance is dismissed as imaginary or a dislike, retain that it can make someone unwell and that their supplied care requirements still matter.",
+              "If the learner says every sensitivity is non-immune, explain that sensitivity is a broad term; allergies are one kind. Do not introduce a false coeliac-equals-lactose model."
+            ],
+            "rationale": "The paired same-food cases hold the food constant while changing the explained process. The unexplained case then tests uncertainty rather than a rehearsed symptom-to-diagnosis lookup.",
+            "sourceClaims": [
+              "Immune versus non-immune distinction and overlap of possible symptoms. No prevalence, detailed IgE sequence or therapeutic diet prescription imported."
+            ]
+          },
+          {
+            "title": "Changed case and safe help",
+            "intendedInsight": "Possible reactions warrant prompt adult help and the supplied care or emergency procedure, not a trial bite or independent diagnosis.",
+            "learnerActions": [
+              "Present an original illustrated case: a child with a known egg allergy has developed an itchy rash after a snack. Ask what might be relevant and who should help; do not ask the learner to diagnose or treat.",
+              "Change the case to a child having difficulty breathing or collapsing after food. State that a prepared adult must immediately use the local emergency procedure; do not wait for two symptoms or let the learner decide whether it is serious enough for help.",
+              "Compare three proposed responses: tell a prepared adult promptly; offer a small taste to test the food; or assume safety because a package has a healthy-food rating. Explain the safe choice and the problems with the others.",
+              "Transfer to a different named trigger and then an uncertain trigger. Retain adult help and supplied individual instructions without inventing medicine, doses, blanket bans or a diagnosis."
+            ],
+            "feedback": [
+              "If the learner proposes a tiny taste, stop the hypothetical plan: a trial exposure is not a child safety test. Return to the adult-prepared care plan.",
+              "If the learner waits for a second symptom, remove that invented threshold; breathing difficulty or collapse calls for the emergency procedure immediately.",
+              "If the learner chooses help but cannot relate any possible trigger or reaction, record the response component as present and revisit the missing knowledge; generic safety words alone do not establish the full claim."
+            ],
+            "rationale": "The changed case checks whether trigger/reaction knowledge guides an appropriately bounded response. Fictional illustrations permit reasoning without exposure, simulated distress, treatment practice or private medical disclosure.",
+            "sourceClaims": [
+              "Possible reaction categories, inclusion and individual plans. Adult drug treatment details, symptom-count triage, food substitutions and BC phone numbers not child tasks."
+            ]
+          }
+        ],
+        "constraints": [
+          "No actual food exposure, tasting challenge, private medical disclosure, symptom enactment, medicine or dose, independent diagnosis or treatment certification.",
+          "No universal symptom-to-diagnosis lookup or claim that every reaction looks alike.",
+          "No requirement to memorise every Canadian priority allergen; source names are illustrative and the shared model spans several food types.",
+          "Food sensitivity is an umbrella term; do not classify all sensitivities as non-immune or equate coeliac disease with lactose intolerance.",
+          "Do not teach an adult anaphylaxis checklist as a child triage threshold: possible reaction gets prompt adult help; severe breathing/collapse concerns follow local emergency procedure without waiting for multiple symptoms.",
+          "No assumption that a rating, healthy-food group, label reading alone or allergy-aware environment guarantees a food is safe for a particular person.",
+          "Use a prepared adult and the current local school/individual care procedure at delivery; do not publish a fictional plan as an actual medical instruction.",
+          "Use the medically identified milk-allergy/lactose-intolerance contrast as one example; do not claim that symptoms alone separate conditions or that all food sensitivities are digestive.",
+          "Common examples are not an exhaustive inventory. Clinical detail, perfect technical vocabulary, exhaustive memorisation and personal medical disclosure are not mastery criteria.",
+          "No forced tasting, sharing food, induced symptom, touch enactment, breathing restriction, medicine practice or child-led exclusion diet.",
+          "A learner may communicate uncertainty and seek help. Do not infer an actual child diagnosis, fear level or medical preparedness from the task."
+        ],
+        "reviewNotes": [
+          "Original task and assessment design has not been tried with learners; low confidence describes pedagogy, not a claim that official health information is false.",
+          "Current official bodies support the bounded content. No source establishes efficacy of these picture-case activities or a particular number of practice cases.",
+          "The full older nutrition, digestion and immune-system claims remain unchanged and are not intrinsic prerequisites for this introductory knowledge model."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Sam has a known milk allergy; Ari has known lactose intolerance. Explain how the same food can cause different problems. Name other foods that can trigger allergies and possible kinds of reaction. Now an illustrated child may be reacting to food: what can you responsibly say, and what should happen next?",
+        "correctAnswer": "Several foods, not only nuts, can trigger allergies in particular people. Allergy involves the immune system and may cause skin, breathing or digestive reactions; lactose intolerance concerns difficulty digesting milk sugar and is not the same as milk allergy. An unexplained symptom does not establish the cause. A prepared adult must help promptly and follow the individual or emergency procedure, with no food challenge or child diagnosis.",
+        "whatMakesItDiscriminate": "A safe-handling script alone can say ask an adult yet miss the food-trigger/reaction model. Conversely, a memorised allergen list can miss symptom uncertainty or propose unsafe testing. The same-food contrast and changed unknown case require both bounded explanation and its limits.",
+        "poeTask": null,
+        "probeDeeper": [
+          "Can a food be nutritious for most people yet unsafe for one named person? Why?",
+          "Does stomach pain by itself tell us whether a person has an allergy?",
+          "Would a high health rating or a friend eating the food establish that it is safe for someone with a known allergy?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Only nuts cause allergy or nutritious foods cannot cause it.",
+            "revealedBy": "Rejects a supplied known egg, fish or milk case because of the food category.",
+            "nextMove": "Contrast the same food across two named fictional people, then select the changed known trigger.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats symptom categories as diagnostic labels.",
+            "revealedBy": "Calls an unexplained stomach ache definitely an allergy or intolerance.",
+            "nextMove": "Return to the paired known cases and the deliberately unknown card; the clinical identity was supplied in the first two, not inferred.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Proposes tasting, waiting for multiple symptoms, medicine dosing or independent diagnosis.",
+            "revealedBy": "The changed-case answer goes beyond prompt adult help and supplied care/emergency procedure.",
+            "nextMove": "Stop the hypothetical unsafe plan, identify the prepared adult and rehearse asking for help without exposure or treatment enactment.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "full": "Identifies varied common triggers and possible reaction categories, explains the supplied allergy/intolerance distinction, retains uncertainty for an unexplained case and uses prompt adult help without unsafe testing or treatment claims.",
+          "partial": "Some trigger/reaction knowledge is present but the same-food contrast or changed-case limit needs further support; do not infer a medical diagnosis.",
+          "gap": "After accessible teaching and a genuinely elicited task, cannot identify the bounded trigger/reaction relation or persists with an unsafe causal/testing inference. Distress, lack of English labels or private medical non-disclosure is not itself evidence of a gap."
+        }
+      },
+      "sources": [
+        {
+          "source": "Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances.html",
+          "claim": "Immune versus non-immune distinction and overlap of possible symptoms. No prevalence, detailed IgE sequence or therapeutic diet prescription imported.",
+          "verified": true
+        },
+        {
+          "source": "Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances/food-allergies.html",
+          "claim": "Varied common trigger families; list includes allergy-like sensitivities, so do not call every listed substance an IgE food allergen or impose the whole list as mastery.",
+          "verified": true
+        },
+        {
+          "source": "HealthLink BC",
+          "url": "https://www.healthlinkbc.ca/living-well/healthy-schools/bc-school-food-toolkit/safety-inclusion/food-allergies-intolerances",
+          "claim": "Possible reaction categories, inclusion and individual plans. Adult drug treatment details, symptom-count triage, food substitutions and BC phone numbers not child tasks.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; current primary health bodies checked; original untested teaching and assessment design",
+        "createdAt": "2026-11-11T05:44:21.745Z",
+        "updatedAt": "2026-11-11T05:44:21.745Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_epG52zWuiW",
+      "pedagogy": {
+        "summary": "Teach prescription/non-prescription as an authorisation-and-safe-use model through fictional known-status cases, then change recipient or instruction certainty. The learner explains the distinction and its limits; no medicine is chosen or administered.",
+        "bestPractices": [
+          "Supply the actual local status of familiar examples; do not turn one country’s schedules or packaging into a universal test.",
+          "Separate medicine purpose/benefit from blanket harmlessness or moral judgement.",
+          "Use a changed recipient and an unknown instruction to test reasoning beyond a label word.",
+          "Keep responsible adult and pharmacist/clinician roles explicit without requesting personal treatment histories."
+        ],
+        "keyRepresentations": [
+          "Two original known-status medicine case cards with no dosing information.",
+          "Recipient/purpose/instructions/adult-help check panel.",
+          "Changed-recipient, unreadable-instruction and natural-means-safe comparison cases."
+        ],
+        "commonMisconceptions": [
+          "Non-prescription means risk-free or no directions.",
+          "A prescription medicine can be shared whenever symptoms look alike.",
+          "A sweet taste, attractive packet or natural claim establishes safety.",
+          "More medicine necessarily works better."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Three original untested knowledge activities; no actual medicine, dosing, diagnosis or independent administration.",
+        "activities": [
+          {
+            "title": "Who authorised this medicine?",
+            "intendedInsight": "Prescription and non-prescription describe how a medicine is authorised and supplied, not good-versus-bad chemicals.",
+            "learnerActions": [
+              "Read two original fictional case cards aloud with the learner: a clinician prescribed an antibiotic for Sam; a second medicine is declared a locally available non-prescription acetaminophen product. No real medicine or packet is handled.",
+              "Explain which needs a prescription and which does not, and point to the fact that establishes it; use the supplied local status rather than infer it from packaging.",
+              "Change the examples while preserving or changing the authorisation/recipient facts, and explain the classification again.",
+              "Explain that treating an infection or relieving a symptom is different from sweets, a food preference or a guarantee that every person should take the medicine."
+            ],
+            "feedback": [
+              "If both are called harmless because they come from a pharmacy, separate authorisation from individual suitability and return to the actual named recipient/instructions.",
+              "If the learner relies on colour, a brand or an Rx symbol, change the artwork but keep the facts: the reason is prescription status and intended use, not appearance."
+            ],
+            "rationale": "Holding the artwork constant and changing the authorisation facts tests the model rather than memorisation of two package designs. Familiar examples have their local status supplied so no unsourced international drug-schedule rule is taught.",
+            "sourceClaims": [
+              "Non-prescription medicines do not require a prescription but can harm when used incorrectly; familiar examples include acetaminophen, and adult/pharmacist guidance and secure storage remain necessary.",
+              "Antibiotics are examples of medicines used when prescribed; the prescribed person follows professional instructions and does not share them.",
+              "Prescription status concerns required professional authorisation and intended recipient, whereas OTC products do not require a prescription."
+            ]
+          },
+          {
+            "title": "Both kinds still need careful use",
+            "intendedInsight": "An available non-prescription medicine still has directions and risks; a prescription is for the intended person, not an invitation to share.",
+            "learnerActions": [
+              "Use original no-dose practice instructions: supplied recipient, purpose, adult/professional direction and a clear stop-and-ask uncertainty card. Identify what the responsible adult must check before giving anything.",
+              "Compare proposed rules: follow the supplied instructions with the responsible adult; share Sam’s antibiotic because the symptoms look similar; or take extra non-prescription medicine because it is not prescribed. Explain why the latter two are unsafe.",
+              "Choose secure adult-controlled storage rather than a low open shelf or a sweet jar, without opening a real medicine cupboard.",
+              "Explain that any unexpected problem or uncertainty goes to a responsible adult/health professional; do not identify a disease or prescribe an alternative."
+            ],
+            "feedback": [
+              "If a medicine is declared safe for everyone, contrast two fictional people with different supplied care instructions: the product category alone cannot decide individual suitability.",
+              "If non-prescription becomes no instructions, show that the second practice card still has adult/label requirements and possible risk.",
+              "If asking an adult is recited without explaining why sharing differs from an intended prescription, revisit Sam’s named prescription and the changed recipient."
+            ],
+            "rationale": "The recipient/instruction changes distinguish medicine-specific safety reasoning from a generic danger slogan. Storage is assessed with pictures rather than exposure, and no calculation or medical judgment is elicited.",
+            "sourceClaims": [
+              "Adult medication checks include purpose, the correct medicine and person, directions and possible interactions; health professionals advise on concerns.",
+              "Both prescription and non-prescription medicines can help and also carry risks; instructions, professional advice and safe storage matter.",
+              "Antibiotics are examples of medicines used when prescribed; the prescribed person follows professional instructions and does not share them."
+            ]
+          },
+          {
+            "title": "Changed case, keep the limit",
+            "intendedInsight": "Uncertainty is a reason for help, not guessing a treatment or using a trial dose.",
+            "learnerActions": [
+              "Present three changed original cases: a friend offers another person’s prescribed medicine; a label/instruction is unreadable; a product is described as natural and therefore supposedly risk-free.",
+              "For each, explain the missing information or inappropriate authorisation and identify responsible adult/pharmacist help.",
+              "Transfer from a tablet drawing to a liquid or cream drawing with the same unknown facts; the form does not remove the uncertainty.",
+              "State what the task cannot establish: a diagnosis, an appropriate drug, a quantity or a missed-dose action. Actual personal treatment follows the responsible health-care plan, never this practice exercise."
+            ],
+            "feedback": [
+              "If the learner suggests a tiny test taste, stop the hypothetical plan and return to the supplied safety rule: no trial exposure.",
+              "If they offer a dose, choose a drug or double a missed dose, identify that as beyond the task and refer the actual issue to the responsible adult/health professional.",
+              "If they assume natural means safe, connect back to the need for advice about all products and interactions without declaring every traditional practice harmful."
+            ],
+            "rationale": "Changing recipient, information quality and presentation checks whether the authorisation/risk model transfers. The explicit limit prevents a correct classroom answer being mistaken for independent medication-management competence.",
+            "sourceClaims": [
+              "Adult medication checks include purpose, the correct medicine and person, directions and possible interactions; health professionals advise on concerns.",
+              "Both prescription and non-prescription medicines can help and also carry risks; instructions, professional advice and safe storage matter."
+            ]
+          }
+        ],
+        "constraints": [
+          "No real medicines, opening packages/cupboards, tasting, injecting, swallowing, mixing or applying a medicine as an assessment.",
+          "No specific dose, concentration calculation, medication selection, product alteration, missed-dose instruction, stopping/changing an actual prescription or independent disposal task.",
+          "Use only fictional named recipients and supplied local status; no private medicine list, diagnosis, allergy history, body weight or home storage inspection.",
+          "A correct answer is not authorisation to administer, prescribe, diagnose or manage a medical emergency.",
+          "Adult/pharmacist/clinician instructions and current individual/local care arrangements govern actual use; clinical uncertainty is referred, not resolved by this lesson.",
+          "Do not imply prescribed treatment is a dependency/addiction, that all medicines are harmful in every use, or that all natural/cultural practices are safe or unsafe.",
+          "Source examples are illustrative; no exhaustive medicine-name or regulatory-category inventory."
+        ],
+        "reviewNotes": [
+          "Original low-confidence teaching and assessment design is untested; primary bodies support factual content and safety boundaries, not efficacy of this card sequence.",
+          "Sources with older publication dates remain explicitly dated; today’s availability is not a new clinical update. Only bounded authorisation, directions, risks and adult-help content is used.",
+          "No adult dosing, product manipulation, missed-dose, treatment-duration or health-history instructions are transferred into child tasks."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Sam has an antibiotic prescribed for them. A second practice card is marked as a locally available non-prescription medicine. Explain the difference and why both still need appropriate adult guidance. Now a friend offers Sam’s medicine and another card has unclear instructions: explain what should happen and why.",
+        "correctAnswer": "A prescription medicine requires an authorised prescription for the intended person; the supplied non-prescription example does not require that prescription but still has instructions and risks. The responsible adult follows appropriate professional/label guidance, does not share another person’s prescription and obtains adult/pharmacist help when the medicine, intended person or instructions are uncertain. No dose, diagnosis or treatment choice is inferred.",
+        "whatMakesItDiscriminate": "A child can follow general safety rules without understanding prescription status, or recite the two category names while treating OTC medicine as harmless. Changing recipient and instruction certainty requires the classification to inform a reasoned safe-use boundary.",
+        "poeTask": null,
+        "probeDeeper": [
+          "Does being sold without a prescription mean anyone can take any amount?",
+          "Why can Sam’s prescribed medicine be inappropriate for a friend even if the friend reports a similar symptom?",
+          "Does changing a practice drawing from a tablet to a liquid remove the need for adult help?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Non-prescription means harmless or no directions.",
+            "revealedBy": "Allows arbitrary amount/use in the non-prescription case.",
+            "nextMove": "Keep the category the same but reveal an adult/instruction constraint; distinguish availability from individual suitability.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Similar symptoms authorise sharing a prescription.",
+            "revealedBy": "Gives Sam’s prescribed medicine to another fictional person.",
+            "nextMove": "Return to the intended recipient and professional decision; no child diagnosis or medicine selection follows from a symptom.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Appearance, taste or a natural claim proves safety.",
+            "revealedBy": "Ignores unknown recipient/instructions because the product looks familiar.",
+            "nextMove": "Change only the artwork and retain the unknown facts; ask what information and adult help are still needed.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "full": "Explains the prescription/non-prescription distinction using the provided examples, explains both kinds’ benefits/risks and adult-supported rules, and transfers them to changed recipient/instruction cases without unsafe medical inference.",
+          "partial": "Some category or rule knowledge is present but does not yet carry through to the changed recipient or uncertainty case.",
+          "gap": "After an accessible elicited task, cannot distinguish the authorisation model or persists with unsafe sharing/unrestricted-use reasoning. Difficulty reading the practice text or non-disclosure of private treatment is not itself a gap."
+        }
+      },
+      "sources": [
+        {
+          "source": "Health Canada — Safe use of medication for children",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/safe-use-medication-for-children.html",
+          "claim": "Adult medication checks include purpose, the correct medicine and person, directions and possible interactions; health professionals advise on concerns.",
+          "verified": true
+        },
+        {
+          "source": "Health Canada — Using medications safely",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html",
+          "claim": "Both prescription and non-prescription medicines can help and also carry risks; instructions, professional advice and safe storage matter.",
+          "verified": true
+        },
+        {
+          "source": "Ontario Poison Centre / SickKids — Over-the-counter medicine safety",
+          "url": "https://www.ontariopoisoncentre.ca/siteassets/pdfs/english/68294-opc_otceng.pdf",
+          "claim": "Non-prescription medicines do not require a prescription but can harm when used incorrectly; familiar examples include acetaminophen, and adult/pharmacist guidance and secure storage remain necessary.",
+          "verified": true
+        },
+        {
+          "source": "Health Canada — Antimicrobial information poster",
+          "url": "https://www.canada.ca/en/health-canada/services/publications/drugs-health-products/antimicrobial-yes-no-poster.html",
+          "claim": "Antibiotics are examples of medicines used when prescribed; the prescribed person follows professional instructions and does not share them.",
+          "verified": true
+        },
+        {
+          "source": "FDA — Prescription and OTC questions and answers",
+          "url": "https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/prescription-drugs-and-over-counter-otc-drugs-questions-and-answers",
+          "claim": "Prescription status concerns required professional authorisation and intended recipient, whereas OTC products do not require a prescription.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; checked primary medication-safety bodies and original untested knowledge-task design",
+        "createdAt": "2026-11-11T06:24:24.051Z",
+        "updatedAt": "2026-11-11T06:24:24.051Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
