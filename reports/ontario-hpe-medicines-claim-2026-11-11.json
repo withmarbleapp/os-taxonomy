@@ -1,0 +1,128 @@
+{
+  "base": "102ab80c0a77a240d299cba42c5ad6297ed304fb",
+  "status": "Proposed fixed authorisation/recipient concept; no default-branch acceptance or clinical competence",
+  "topicId": "mt_epG52zWuiW",
+  "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.3",
+  "context": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 7,
+    "ageRangeEnd": 8
+  },
+  "newClaims": 1,
+  "newGuides": 1,
+  "newContexts": 1,
+  "newPairs": 1,
+  "newEdges": 0,
+  "closestClaimIds": [
+    "mt_EWiY8-opdd",
+    "mt_q3vRl4dddK",
+    "mt_DRNXFr0ds6",
+    "mt_2R3xRpYhMa",
+    "mt_4k3HGahK2k",
+    "mt_2IFtJJBX_n",
+    "mt_rVjbdwUJHG"
+  ],
+  "reuseDecision": "Generic safe help, hazard signs, minor-cut care, food-allergy triggers, lifestyle harm and recreational-drug categories do not establish the different authorisation/recipient model of prescription versus non-prescription medicines. Safe chemical avoidance alone does not entail medicine purpose, availability or appropriate recipient/instruction reasoning.",
+  "independentWitness": {
+    "oldSuccessNewMissing": "A learner knows everyday hazards/help, explains food-allergy reactions and correct minor-care, and classifies alcohol/nicotine effects but thinks all pharmacy medicines are interchangeable or that OTC medicines have no rules. Those whole closest cards can pass while the new model fails.",
+    "newSuccessWithoutOld": "A learner correctly explains the known prescription/OTC cards and the changed sharing/uncertainty cases but cannot explain liver/lung drug harms, hallucinogen categories, allergy/intolerance or minor-wound care. Those independent families are not hard prerequisites.",
+    "minimalGrain": "One authorisation/appropriate-use conceptual model, not a medicine-administration skill or separate node per drug/product/grade. Risk and adult-help application discriminate understanding of that model."
+  },
+  "originalCases": [
+    {
+      "id": "known-prescription-and-otc",
+      "prescription": {
+        "example": "antibiotic",
+        "authorisedRecipient": "Sam",
+        "requiresPrescription": true
+      },
+      "nonPrescription": {
+        "example": "acetaminophen",
+        "localStatusSupplied": true,
+        "requiresPrescription": false
+      },
+      "bothNeedInstructionsAndAdultGuidance": true,
+      "appearanceDeterminesStatus": false
+    },
+    {
+      "id": "changed-recipient",
+      "prescriptionRecipient": "Sam",
+      "offeredTo": "friend",
+      "similarSymptomsAuthoriseSharing": false,
+      "response": "responsible-adult-or-pharmacist-help"
+    },
+    {
+      "id": "unclear-or-natural",
+      "cases": [
+        "unreadable-instructions",
+        "natural-means-safe"
+      ],
+      "response": "responsible-adult-or-pharmacist-help",
+      "trialDose": false,
+      "doseCalculation": false,
+      "childDiagnosis": false
+    }
+  ],
+  "assessmentBoundaries": {
+    "fictionalKnownStatusCases": true,
+    "localStatusSupplied": true,
+    "noActualMedicine": true,
+    "noDosingAdministrationOrDiagnosis": true,
+    "noPrivateTreatmentHistory": true,
+    "noMissedDoseAdvice": true,
+    "noEfficacyClaim": true
+  },
+  "guideStatus": "Complete original untested low-confidence design. Checked sources support specific content, not activity efficacy.",
+  "sourceResources": [
+    {
+      "source": "Health Canada — Safe use of medication for children",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/safe-use-medication-for-children.html",
+      "claim": "Adult medication checks include purpose, the correct medicine and person, directions and possible interactions; health professionals advise on concerns.",
+      "verified": true,
+      "readScope": "Actual full main body today; page dated2022-10-26. Dose calculations, product alteration, side-effect triage and reporting systems are not child tasks."
+    },
+    {
+      "source": "Health Canada — Using medications safely",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html",
+      "claim": "Both prescription and non-prescription medicines can help and also carry risks; instructions, professional advice and safe storage matter.",
+      "verified": true,
+      "readScope": "Actual full main body today; page dated2017-05-09. No adult disposal/dosing routine becomes independent child medicine management."
+    },
+    {
+      "source": "Ontario Poison Centre / SickKids — Over-the-counter medicine safety",
+      "url": "https://www.ontariopoisoncentre.ca/siteassets/pdfs/english/68294-opc_otceng.pdf",
+      "claim": "Non-prescription medicines do not require a prescription but can harm when used incorrectly; familiar examples include acetaminophen, and adult/pharmacist guidance and secure storage remain necessary.",
+      "verified": true,
+      "readScope": "All52 extracted lines of actual one-page PDF read. Dated locator; no product/infant concentration claim, dose or treatment recommendation imported."
+    },
+    {
+      "source": "Health Canada — Antimicrobial information poster",
+      "url": "https://www.canada.ca/en/health-canada/services/publications/drugs-health-products/antimicrobial-yes-no-poster.html",
+      "claim": "Antibiotics are examples of medicines used when prescribed; the prescribed person follows professional instructions and does not share them.",
+      "verified": true,
+      "readScope": "Actual full main body today;2024-12-23 publication240675. AMR mechanism and medication choice are not additional child gates."
+    },
+    {
+      "source": "FDA — Prescription and OTC questions and answers",
+      "url": "https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/prescription-drugs-and-over-counter-otc-drugs-questions-and-answers",
+      "claim": "Prescription status concerns required professional authorisation and intended recipient, whereas OTC products do not require a prescription.",
+      "verified": true,
+      "readScope": "Actual full main body today; US corroboration only, not Canadian regulation or a universal product classification."
+    }
+  ],
+  "comparisonLimits": "All seven complete direct closest cards and their four available complete guides read, with22whole-card hard closure captured. Fourteen transitive guides are not claimed as newly fully read for this comparison; many retain exact earlier HPE/TWAU read receipts. No such transitive operation becomes a prerequisite for the new no-edge knowledge claim.",
+  "programmeCheckpoint": {
+    "reviewed": 163,
+    "pending": 104,
+    "total": 267,
+    "meaning": "A new component does not by itself close all13 substance-use expectations."
+  },
+  "validation": {
+    "alignmentsGenerate": "PASS",
+    "validate": "PASS",
+    "generatedCheck": "PASS",
+    "tests": 279,
+    "preservation": "All1905 existing cards,1090 guide payloads/order,4971 contexts and all old edges/catalogue/archive/clusters preserved; exactly one approved claim/guide/context/pair."
+  }
+}
