@@ -20,7 +20,10 @@ function checkBindings(rows, associations) {
     for (const part of row.protocolReference.split('/').slice(1)) protocol = protocol?.[part.replaceAll('~1', '/').replaceAll('~0', '~')];
     assert.ok(protocol && typeof protocol === 'object' && Object.keys(protocol).length, `Missing protocol for ${row.code}`);
     if (Array.isArray(protocol.codes)) assert.ok(protocol.codes.includes(row.code), `Wrong protocol code for ${row.code}`);
-    if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], `Unresolved Full condition for ${row.code}`);
+    if (row.disposition === 'Full') {
+      assert.deepEqual(row.remainingConditions, [], `Unresolved Full condition for ${row.code}`);
+      for (const code of protocol.requiresSpecificDispositions ?? []) assert.equal(rows.find(item => item.code === code)?.disposition, 'Full', `Unresolved integrated specific ${code}`);
+    }
   }
 }
 test('Grade5 reviewed dispositions bind actual scoped contributors and protocols', () => checkBindings(ledger.expectations, contexts));
@@ -35,4 +38,48 @@ test('Grade5 binding rejects lost links/protocols while permitting coordinated f
   const future = structuredClone(ledger.expectations);
   future.find(row => row.code === code).contributingTopicIds.push('future-reviewed-topic');
   checkBindings(future, [...contexts, {topicId: 'future-reviewed-topic', country: 'CA', region: 'Ontario', ageRangeStart: 10, ageRangeEnd: 11, standards: [prefix + code]}]);
+});
+
+function checkMapProduction(protocol) {
+  const maps = protocol.products.filter(item => item.kind === 'thematic-map');
+  assert.ok(new Set(maps.map(item => item.medium)).size >= 2, 'Missing map format variety');
+  assert.ok(maps.some(item => item.medium === 'digital'), 'Missing digital map product');
+  for (const product of maps) {
+    assert.ok(protocol.learnerSteps.some(step => step.operation === 'construct' && step.instruction && step.outputs.includes(product.id)), `Missing learner construction for ${product.id}`);
+  }
+}
+function checkResearchSources(report) {
+  const questions = report.protocols.questions.researchQuestions;
+  assert.ok(questions.length >= 3, 'Missing whole short-research questions');
+  for (const question of questions) {
+    const sources = question.sourceIds.map(id => report.resources[id]);
+    assert.ok(sources.every(source => source?.url && source.originGroup), 'Missing research source');
+    assert.ok(new Set(sources.map(source => source.originGroup)).size >= 2, 'Duplicate underlying source origins');
+  }
+  for (const perspective of report.perspectiveRecords) {
+    assert.ok(perspective.basis && perspective.sourceIds.length, 'Missing perspective basis');
+    assert.ok(perspective.sourceIds.every(id => report.resources[id]?.url), 'Missing perspective source');
+  }
+}
+test('Grade5 maps require actual learner digital construction and another map format', () => {
+  const protocol = read('reports/ontario-grade5-environmental-inquiry-review-2026-11-11.json').protocols.maps;
+  checkMapProduction(protocol);
+  const lostStep = structuredClone(protocol);
+  const digitalIds = new Set(protocol.products.filter(item => item.kind === 'thematic-map' && item.medium === 'digital').map(item => item.id));
+  lostStep.learnerSteps = lostStep.learnerSteps.filter(step => !step.outputs.some(id => digitalIds.has(id)));
+  assert.throws(() => checkMapProduction(lostStep), /Missing learner construction/);
+  const paperOnly = structuredClone(protocol);
+  for (const product of paperOnly.products) product.medium = 'paper';
+  assert.throws(() => checkMapProduction(paperOnly), /Missing map format variety|Missing digital map/);
+});
+test('Grade5 question sources and perspectives retain actual bound documentary origins', () => {
+  const report = read('reports/ontario-grade5-environmental-inquiry-review-2026-11-11.json');
+  checkResearchSources(report);
+  const missing = structuredClone(report);
+  delete missing.resources[missing.protocols.questions.researchQuestions[0].sourceIds[0]];
+  assert.throws(() => checkResearchSources(missing), /Missing research source/);
+  const repeated = structuredClone(report);
+  const question = repeated.protocols.questions.researchQuestions[0];
+  question.sourceIds = [question.sourceIds[0], question.sourceIds[0]];
+  assert.throws(() => checkResearchSources(repeated), /Duplicate underlying source origins/);
 });
