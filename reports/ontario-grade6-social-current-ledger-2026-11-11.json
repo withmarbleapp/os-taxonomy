@@ -5,19 +5,19 @@
   "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
   "sourceReview": "ontario-grade6-social-source-review-2026-11-11.json",
   "scope": "Ontario Social Studies Grade 6 primary ages 11–12: 46 actual expectations; optional Native Languages exclusion unchanged.",
-  "status": "Three Full source-fit designs, one Partial coordinate component and forty-two individually unverified expectations. No whole-grade completion or learner attainment inferred.",
+  "status": "Five Full source-fit designs, one Partial coordinate component and forty individually unverified expectations. No whole-grade completion or learner attainment inferred.",
   "expectationCount": 46,
   "dispositionCounts": {
-    "Unverified": 42,
-    "Full": 3,
+    "Unverified": 40,
+    "Full": 5,
     "Partial": 1
   },
   "associationInventory": {
-    "pairs": 4,
-    "topics": 4,
-    "codes": 4,
+    "pairs": 7,
+    "topics": 5,
+    "codes": 6,
     "newClaims": 1,
-    "reusedClaims": 3
+    "reusedClaims": 4
   },
   "expectations": [
     {
@@ -236,11 +236,14 @@
     },
     {
       "code": "B1.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_n3ojDXoaqC"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-international-connections-design-2026-11-11.json",
+      "protocolReference": "/protocols/humanitarian-response",
+      "coverageBasis": "Actual dated Canadian international cases with whole-claim migration/other-connection/trade checks and explicit actor/action/effect/source limits."
     },
     {
       "code": "B1.3",
@@ -356,11 +359,15 @@
     },
     {
       "code": "B3.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual mandatory body read and catalogue identity verified; whole-claim/task/source review continues. No missing topic or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_n3ojDXoaqC",
+        "mt_0Rx1ISxXFE"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade6-international-connections-design-2026-11-11.json",
+      "protocolReference": "/protocols/political-social-economic",
+      "coverageBasis": "Actual dated Canadian international cases with whole-claim migration/other-connection/trade checks and explicit actor/action/effect/source limits."
     },
     {
       "code": "B3.7",
