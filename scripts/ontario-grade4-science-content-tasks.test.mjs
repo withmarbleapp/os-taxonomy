@@ -34,6 +34,9 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       'ON-SCI-2022-G4-C2.6': ['material-interactions', 'sound-interactions'],
       'ON-SCI-2022-G4-C2.7': ['light-heat'],
       'ON-SCI-2022-G4-C2.8': ['sensory-devices'],
+      'ON-SCI-2022-G4-D1': ['community-machine', 'same-purpose-environment'],
+      'ON-SCI-2022-G4-D1.1': ['community-machine'],
+      'ON-SCI-2022-G4-D1.2': ['same-purpose-environment'],
       'ON-SCI-2022-G4-D2': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
       'ON-SCI-2022-G4-D2.1': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
       'ON-SCI-2022-G4-D2.2': ['lever', 'fixed-pulley', 'movable-pulley', 'spur-gears', 'plane-change'],
@@ -45,6 +48,7 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       assert.deepEqual(protocol.requiredCaseFields, ['question', 'expectedEvidence', 'nearMiss', 'changedCase'], 'Missing property-evidence contract');
       const roles = protocol.caseRefs.map(ref => report.preparedCases?.[ref]?.role);
       for (const role of propertyRoles) assert.ok(roles.includes(role), 'Missing required scientific task role');
+      if (['ON-SCI-2022-G4-D1', 'ON-SCI-2022-G4-D1.1'].includes(row.code)) assert.ok(new Set(protocol.caseRefs.filter(ref => report.preparedCases?.[ref]?.role === 'community-machine')).size >= 2, 'Missing varied-community comparison');
     }
 
     for (const ref of protocol.caseRefs) {
@@ -140,5 +144,17 @@ test('Grade4 impact tasks cannot retain closure with only light or only societal
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
   }
   const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['ship-sound'].changedCase;
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
+});
+
+
+test('Grade4 machine impact duties retain varied communities and the same-purpose environmental comparison', () => {
+  const name = 'ontario-grade4-machines-community-environment-design-2026-11-11.json';
+  for (const [code, ref] of [['D1.1', 'pump'], ['D1', 'mower-comparison']]) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocols[code].caseRefs = damaged.protocols[code].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing varied-community comparison|Missing required scientific task role/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['mower-comparison'].expectedEvidence;
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
 });
