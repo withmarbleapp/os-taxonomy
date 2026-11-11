@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "reviewedContentBase": "cdd9ac698fbb5a07c97f49d777602d5d31ffac77",
+  "status": "Authoring review ready with documented conditions; proposed feature-branch content, not default-branch acceptance or downstream publication.",
+  "scope": "Selected NCERT national primary baseline, Grades 1–5; formal Foundational and Preparatory stage tables plus selected 2025 suggestive positions. No all-board or every-publication completeness claim.",
+  "catalogue": {
+    "retained": 570,
+    "formalStageRecords": 254,
+    "formalGoals": 58,
+    "formalCompetencies": 196,
+    "selectedSuggestivePositions": 316,
+    "eligible": 521,
+    "excludedPhysicalEducation": 49
+  },
+  "sourceInventory": [
+    {
+      "source": "ncert-fs-2025",
+      "stage": "Foundational",
+      "records": 316,
+      "sourceKind": "selected-contextualisable-outcome-and-appendix-positions",
+      "dispositions": {
+        "ConditionalArtFormBinding": 7,
+        "ContextualAffectiveRequirement": 1,
+        "ContextualMotorDevelopmentRequirement": 1,
+        "Full": 275,
+        "OutOfScope": 16,
+        "SkillWithContextualEngagement": 15,
+        "Unverified": 1
+      }
+    },
+    {
+      "source": "ncert-ncfse-2023-ed2024",
+      "stage": "Foundational",
+      "records": 82,
+      "sourceKind": "formal-stage-goals-and-competencies",
+      "dispositions": {
+        "ConditionalGraphRepresentation": 1,
+        "ConditionalLanguageBinding": 5,
+        "ContextualAffectiveRequirement": 1,
+        "ContextualReadingEngagement": 1,
+        "Full": 64,
+        "OutOfScope": 4,
+        "SkillWithContextualEngagement": 6
+      }
+    },
+    {
+      "source": "ncert-ncfse-2023-ed2024",
+      "stage": "Preparatory",
+      "records": 172,
+      "sourceKind": "formal-stage-goals-and-competencies",
+      "dispositions": {
+        "ConditionalArtFormBinding": 4,
+        "ConditionalGraphRepresentation": 6,
+        "ConditionalLanguageBinding": 5,
+        "ContextualAffectiveRequirement": 4,
+        "ContextualReadingEngagement": 4,
+        "Full": 105,
+        "OutOfScope": 29,
+        "SkillWithContextualEngagement": 15
+      }
+    }
+  ],
+  "dispositions": {
+    "ConditionalArtFormBinding": 11,
+    "ConditionalGraphRepresentation": 7,
+    "ConditionalLanguageBinding": 10,
+    "ContextualAffectiveRequirement": 6,
+    "ContextualMotorDevelopmentRequirement": 1,
+    "ContextualReadingEngagement": 5,
+    "Full": 444,
+    "OutOfScope": 49,
+    "SkillWithContextualEngagement": 36,
+    "Unverified": 1
+  },
+  "sourceDispositionsChangedHere": 0,
+  "readinessMeaning": "All 570 catalogue keys have a reviewed disposition. Full is an authoring judgment; component associations do not certify whole-topic, learner, cross-language or intervention mastery. Remaining conditions are not automatically missing topics.",
+  "remainingConditions": [
+    {
+      "kind": "mixed-skill-and-context",
+      "records": 36,
+      "action": "Retain actual skill evidence and separate contextual observations; no forced enjoyment, compliance or binary attitude claim."
+    },
+    {
+      "kind": "selected-art-form",
+      "records": 11,
+      "action": "Bind accessible school-selected forms and resources at use; do not require every alternative simultaneously."
+    },
+    {
+      "kind": "language-script-material",
+      "records": 10,
+      "action": "Bind actual R1/R2 language, script, qualified assessor and checked materials. Keep separate role evidence without selecting a fixed national pair."
+    },
+    {
+      "kind": "conditional-graph-representation",
+      "records": 7,
+      "action": "Keep all candidates withheld. Five records have historical whole-glossary/note-taking paths corrected in the related four-edge review but retain actual-role/material and remaining whole-claim review. Two expressive-reading cases retain LTR/sight-word constraints; no universal link is authorised."
+    },
+    {
+      "kind": "contextual-requirements",
+      "records": 12,
+      "action": "Retain 6 affective, 5 reading-engagement and 1 comfortable hand-preference observation; do not fabricate binary mastery topics."
+    },
+    {
+      "kind": "source-meaning-unverified",
+      "records": 1,
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C9-LO01",
+      "action": "Keep the exact musical-scale distinction Unverified without a graph link pending a source-appropriate authoritative explanation/example.",
+      "reviewReport": "ncert-scale-source-meaning-exception-2026-11-11.json"
+    }
+  ],
+  "sourceBoundary": {
+    "formalBaseline": "Selected 254 formal records retain their actual stage/applicability conditions. Grades 3–5 are one Preparatory reference band, not copied per-grade mandates.",
+    "suggestiveLibrary": "316 selected 2025 positions are not a complete exhaustive national grade-level checklist.",
+    "outsideCatalogue": "2025 Hindi/Urdu advisory section text recovery remains unverified outside the 570 identities. This is distinct from the formal R1/R2 baseline and does not justify guessed keys or a fixed language pair.",
+    "excluded": "Physical Education excluded by actual duty; Health, Arts, fine-motor, sensory and self-care retained."
+  },
+  "deliveryChecklist": [
+    {
+      "step": "Source review and selected catalogue reconciliation",
+      "state": "570 unique catalogue keys reconcile to 570 review keys; all 77 eligible non-Full positions retain explicit dispositions."
+    },
+    {
+      "step": "Bounded reusable prerequisite and protocol corrections",
+      "state": "Four reviewed hard-to-soft changes and separate full-candidate task limits; no new topics/guides, associations, ages or source dispositions."
+    },
+    {
+      "step": "Ordinary repository acceptance",
+      "state": "Current integration and its focused follow-ups still require default-branch delivery; historical feature PRs are not the current merge queue."
+    },
+    {
+      "step": "Actual teaching/assessment material binding",
+      "state": "Choose role-labelled expert-checked materials and applicable art forms/resources at use; retain inaccessible/unavailable cases explicitly."
+    },
+    {
+      "step": "Downstream publication",
+      "state": "Separate consumer compatibility and protected-state qualification required; no DB, learner estimate, history or staging write in this review."
+    }
+  ],
+  "evidenceReports": [
+    "ncert-alignment-readiness-2026-11-10.json",
+    "ncert-primary-alignment-review-summary-2026-11-10.json",
+    "ncert-physical-education-exclusion-2026-11-11.json",
+    "language-reusable-prerequisite-corrections-2026-11-11.json"
+  ]
+}
