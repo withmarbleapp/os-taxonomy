@@ -2,182 +2,254 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "53982cca80c252dd736efc14528e96fcf6d9023e",
+  "localDependencyCommit": "ccc57097924ad0458c6f0abfcbf8d1a352960b2a",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "All 21 government/citizen strand records have source-fit Full authoring designs;20 historical records remain unverified. Source-fit design is not learner attainment or default-main acceptance.",
+  "status": "All41 Grade5 expectations have reviewed dispositions:37 source-fit authoring Full and4 explicit chronology/resource Partials. This is not observed learner attainment, default-branch acceptance or staging publication.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Unverified": 20,
-    "Full": 21
+    "Full": 37,
+    "Partial": 4
   },
   "associationInventory": {
-    "pairs": 46,
-    "topics": 12,
-    "codes": 21,
-    "newClaims": 3,
-    "reusedClaims": 9
+    "pairs": 70,
+    "topics": 16,
+    "codes": 41,
+    "newClaims": 5,
+    "reusedClaims": 11
   },
   "expectations": [
     {
       "code": "A1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-consequences",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A1.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/consequences",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A1.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/benefits",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj",
+        "mt__r2dOQMc-B"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/present-connections",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_7VrR1GzhrN"
+      ],
       "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+        "A2 overall/A2.5 explicitly retain the period/Métis chronology question until resolved; the five specific inquiry duties are independently reviewable and not blocked by that factual ambiguity."
+      ],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/conclusions",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_FW9_8F52bw"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/questions",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_FW9_8F52bw"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/sources",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/maps",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_wWlZoLQBR6"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/evidence",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.5",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_7VrR1GzhrN"
+      ],
       "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+        "A2 overall/A2.5 explicitly retain the period/Métis chronology question until resolved; the five specific inquiry duties are independently reviewable and not blocked by that factual ambiguity."
+      ],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/conclusions",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A2.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_FW9_8F52bw"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-inquiry-design-2026-11-11.json",
+      "protocolReference": "/protocols/communication",
+      "coverageBasis": "Actual prepared source/task protocol accounts for the stated inquiry operation. Complete contributor claims and separate prerequisite readiness remain intact; no actual learner success is asserted."
     },
     {
       "code": "A3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj",
+        "mt_1xOenPgYlR",
+        "mt_BPJ8x-w7_i"
+      ],
       "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+        "A3.2’s pre-European First Nations–Inuit resource/chronology condition remains; no overall Full claim is made."
+      ],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/integrated-knowledge",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A3.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/nations-characteristics",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A3.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
+      "disposition": "Partial",
+      "contributingTopicIds": [
+        "mt_BPJ8x-w7_i"
+      ],
       "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+        "A source-supported pre-European First Nations–Inuit interaction is not yet verified. This is a bounded resource/chronology condition, not evidence no interactions occurred or a reason to invent a new topic."
+      ],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/pre-european-interactions",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A3.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "early-colonial-relationships-review-2026-11-11.json",
+      "protocolReference": "/protocols/motives",
+      "coverageBasis": "The complete studied repertoire, actual prepared source cases and retained/changed-account assessment account for this duty. This is source-fit authoring evidence, not learner attainment; later ethnogenesis is explicitly separate from earlier causal conditions."
     },
     {
       "code": "A3.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_1xOenPgYlR"
+      ],
+      "remainingConditions": [],
+      "coverageBasis": "The studied repertoire and retained/changed-account assessment account for significant institutions and their importance. Illustrative examples are not an exhaustive office inventory.",
+      "dossier": "new-france-institutions-review-2026-11-11.json",
+      "protocolReference": "/preparedCases"
     },
     {
       "code": "A3.5",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "early-colonial-relationships-review-2026-11-11.json",
+      "protocolReference": "/protocols/interactions",
+      "coverageBasis": "The complete studied repertoire, actual prepared source cases and retained/changed-account assessment account for this duty. This is source-fit authoring evidence, not learner attainment; later ethnogenesis is explicitly separate from earlier causal conditions."
     },
     {
       "code": "A3.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "early-colonial-relationships-review-2026-11-11.json",
+      "protocolReference": "/protocols/metis-outcome",
+      "coverageBasis": "The complete studied repertoire, actual prepared source cases and retained/changed-account assessment account for this duty. This is source-fit authoring evidence, not learner attainment; later ethnogenesis is explicitly separate from earlier causal conditions."
     },
     {
       "code": "A3.7",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_BPJ8x-w7_i",
+        "mt_1xOenPgYlR"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/community-differences",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "A3.8",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tZH71wLrpj"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-historical-relationships-integration-2026-11-11.json",
+      "protocolReference": "/protocols/european-conflict-effects",
+      "coverageBasis": "Actual whole-claim/source/task design reviewed, including the exact selected case boundaries and integrated duties. Full describes authoring source fit only; component associations do not infer pupil mastery."
     },
     {
       "code": "B1",
@@ -433,5 +505,5 @@
       "protocolReference": "/protocols/citizens-take-action"
     }
   ],
-  "next": "Complete20 pre-1713 historical source records through shared methods and bounded factual knowledge review; retain actual later Métis emergence chronology."
+  "next": "Proceed to the46 verified Grade6 expectations. Retain A2/A2.5 period–Métis chronology and A3/A3.2 pre-European First Nations–Inuit source conditions; no backdating or automatic promotion."
 }
