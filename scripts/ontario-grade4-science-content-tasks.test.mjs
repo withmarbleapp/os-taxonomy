@@ -82,7 +82,7 @@ test('Grade4 reviewed content tasks retain exact source, contributor and actual 
   check(ledger.expectations);
   assert.deepEqual(ledger.counts, {
     freshFull: ledger.expectations.filter(row => row.historicalDisposition === 'Partial' && row.disposition === 'Full').length,
-    retainedHistoricalFull: ledger.expectations.filter(row => row.historicalDisposition === 'Full').length,
+    retainedHistoricalFull: ledger.expectations.filter(row => row.historicalDisposition === 'Full' && row.disposition === 'Full').length,
     remainingPartial: ledger.expectations.filter(row => row.disposition === 'Partial').length,
   }, 'Current content counts differ from dispositions');
 });
@@ -211,4 +211,18 @@ test('Grade4 integrated habitat and geology tasks retain real duty bindings rath
   const promoted = structuredClone(ledger.expectations);
   const row = promoted.find(value => value.code === 'ON-SCI-2022-G4-B2'); row.disposition = 'Full'; row.remainingConditions = [];
   assert.throws(() => check(promoted), /Unresolved Full protocol condition/);
+});
+
+
+test('Grade4 local applicability cannot hide behind a retained historical Full label', () => {
+  const row = ledger.expectations.find(value => value.code === 'ON-SCI-2022-G4-B2.1');
+  assert.equal(row.historicalDisposition, 'Full');
+  assert.ok(row.dossier && row.protocolReference, 'Missing reviewed local habitat duty');
+  const report = load(`reports/${row.dossier}`);
+  assert.ok(report.protocols[row.protocolReference.slice('/protocols/'.length)].remainingConditions.length, 'Missing unbound local applicability condition');
+  const promoted = structuredClone(ledger.expectations);
+  const altered = promoted.find(value => value.code === row.code); altered.disposition = 'Full'; altered.remainingConditions = [];
+  assert.throws(() => check(promoted), /Unresolved Full protocol condition/);
+  const missing = structuredClone(report); delete missing.protocols[row.protocolReference.slice('/protocols/'.length)];
+  assert.throws(() => check(ledger.expectations, contexts, name => name === row.dossier ? missing : load(`reports/${name}`)), /Missing source-bound task protocol/);
 });

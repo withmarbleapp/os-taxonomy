@@ -11,13 +11,14 @@
     ],
     "selectedContentRecords": 42,
     "priorResiduals": 26,
-    "retainedHistoricalFull": 16,
-    "excluded": "A common processes/coding/applications are reviewed separately; no new completion from link counts."
+    "retainedHistoricalFull": 15,
+    "excluded": "A common processes/coding/applications are reviewed separately; no new completion from link counts.",
+    "originalHistoricalFull": 16
   },
   "counts": {
     "freshFull": 24,
-    "retainedHistoricalFull": 16,
-    "remainingPartial": 2
+    "retainedHistoricalFull": 15,
+    "remainingPartial": 3
   },
   "expectations": [
     {
@@ -88,12 +89,16 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B2.1",
       "kind": "specific",
       "historicalDisposition": "Full",
-      "disposition": "Full",
-      "reviewBasis": "Retained historical Full; not newly certified by association counts.",
+      "disposition": "Partial",
+      "reviewBasis": "Fresh review retains the historical Full judgment as history but identifies the same unbound local-resource applicability duty as B2/B2.2; a studied Toronto case is not universal own-local evidence.",
       "contributingTopicIds": [
         "mt_cM8YS6NXqi"
       ],
-      "remainingConditions": []
+      "remainingConditions": [
+        "A verified applicable local habitat packet must identify actual plant and animal necessities and how that habitat supplies them. High Park is a studied Toronto case, not every Ontario pupil’s local habitat."
+      ],
+      "dossier": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/local-habitat-necessities"
     },
     {
       "code": "ON-SCI-2022-G4-B2.2",
