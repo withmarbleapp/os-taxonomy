@@ -20,11 +20,11 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1880,
+    "topics": 1887,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
-      "Geography": 23,
+      "Geography": 26,
       "History": 111,
       "Learning to Learn": 20,
       "Life Skills": 46,
@@ -33,25 +33,26 @@
       "Science": 577,
       "Physical Education": 7,
       "Art & Design": 2,
-      "Performing Arts": 3
+      "Performing Arts": 3,
+      "Français": 4
     },
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 8974,
+    "topicStandardLinks": 10512,
     "clusters": 176,
-    "teachingResearch": 1065,
+    "teachingResearch": 1072,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4505
+    "curriculumAlignments": 4720
   },
   "files": {
     "topics.json": {
-      "bytes": 2486916,
-      "sha256": "9e53d32cd7a0672e7805cbe1279e53d7a9e92fe3cc41f12bfa9d5f4c1b872fe8"
+      "bytes": 2633196,
+      "sha256": "d1553d9759c2ee1d34e47a1c6b33f047782baaa67207c966f55b1586882f43a2"
     },
     "dependencies.json": {
-      "bytes": 877275,
-      "sha256": "7441874710914446ac861920479b2ba8a3451b0c2a06f2fe710ec86161ae1a44"
+      "bytes": 878372,
+      "sha256": "414fc3435526637f1fbffa2f2b4af8a590897f8db1a6bf0b28be1a17f09f09a9"
     },
     "curriculum-standards.json": {
       "bytes": 2795125,
@@ -62,16 +63,16 @@
       "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
     },
     "teaching-research.json": {
-      "bytes": 23585517,
-      "sha256": "9cb181ce00f42e084fda3ede811fb4e0557e1e9a5e9269669b80bc999ef022de"
+      "bytes": 23643670,
+      "sha256": "29318dfc281608f7674853e2edf8729580914de9f5a4f3dae2c829e0184b45be"
     },
     "archived-teaching-research.json": {
       "bytes": 121352,
       "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
     },
     "curriculum-alignments.json": {
-      "bytes": 1358362,
-      "sha256": "386fd54037bbdf1f346ba3cabbbdc9fbe85d395eef2604a0d2d87047aaa3b7a5"
+      "bytes": 1537983,
+      "sha256": "36d46ac133f5ac1e16379f89a33ffd50fc8d193c6215bb4ea3b12aa763bee61a"
     }
   },
   "excluded": [
@@ -82,10 +83,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "9e53d32cd7a0672e7805cbe1279e53d7a9e92fe3cc41f12bfa9d5f4c1b872fe8",
+    "topicFileSha256": "d1553d9759c2ee1d34e47a1c6b33f047782baaa67207c966f55b1586882f43a2",
     "coverage": {
-      "topicCount": 1880,
-      "withResearch": 1065,
+      "topicCount": 1887,
+      "withResearch": 1072,
       "withoutResearch": 815,
       "bySubject": {
         "Computing": {
@@ -99,8 +100,8 @@
           "withoutResearch": 339
         },
         "Geography": {
-          "topics": 23,
-          "withResearch": 1,
+          "topics": 26,
+          "withResearch": 4,
           "withoutResearch": 22
         },
         "History": {
@@ -146,6 +147,11 @@
         "Performing Arts": {
           "topics": 3,
           "withResearch": 3,
+          "withoutResearch": 0
+        },
+        "Français": {
+          "topics": 4,
+          "withResearch": 4,
           "withoutResearch": 0
         }
       },

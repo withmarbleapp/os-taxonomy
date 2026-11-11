@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "9e53d32cd7a0672e7805cbe1279e53d7a9e92fe3cc41f12bfa9d5f4c1b872fe8",
-  "recordCount": 1065,
+  "topicFileSha256": "d1553d9759c2ee1d34e47a1c6b33f047782baaa67207c966f55b1586882f43a2",
+  "recordCount": 1072,
   "coverage": {
-    "topicCount": 1880,
-    "withResearch": 1065,
+    "topicCount": 1887,
+    "withResearch": 1072,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 23,
-        "withResearch": 1,
+        "topics": 26,
+        "withResearch": 4,
         "withoutResearch": 22
       },
       "History": {
@@ -67,6 +67,11 @@
       "Performing Arts": {
         "topics": 3,
         "withResearch": 3,
+        "withoutResearch": 0
+      },
+      "Français": {
+        "topics": 4,
+        "withResearch": 4,
         "withoutResearch": 0
       }
     },
@@ -217446,6 +217451,757 @@
         "originalResearchGeneratedBy": "Codex; original untested teaching/assessment design with actual pinned-source and government-definition readback",
         "createdAt": "2026-11-10T22:23:27.627305Z",
         "updatedAt": "2026-11-10T22:23:27.627319Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_Winq7Tu99m",
+      "pedagogy": {
+        "summary": "Teacher-selected familiar French corpus with nouns, actions and feeling words, pictures/scenes, varied short French messages and a qualified fluent French model. The corpus and intended meanings are explicit; no claim of all-French vocabulary mastery.",
+        "bestPractices": [
+          "Check meaning by selecting/acting out the intended referent in varied spoken French sentences; an English explanation or pointing can isolate comprehension from production.",
+          "After a few days without an immediate spoken model, ask for independent appropriate French words in another familiar scene or exchange.",
+          "Check recombination and retained meaning, not only an immediate correct echo."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-lexical-meaning-retention",
+            "learnerActions": [
+              "Check meaning by selecting/acting out the intended referent in varied spoken French sentences; an English explanation or pointing can isolate comprehension from production.",
+              "After a few days without an immediate spoken model, ask for independent appropriate French words in another familiar scene or exchange.",
+              "Check recombination and retained meaning, not only an immediate correct echo."
+            ],
+            "intendedInsight": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "The official Ontario CoreFrench source requires actual familiar French comprehension/production; taught lexical meaning and retained use are components, not a whole-standard certificate."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "use_in_context",
+        "poeTask": null,
+        "diagnosticPrompt": "After {{name}} learns a small set of French words for objects, actions and feelings, can they identify their meanings in a new French message, then a few days later independently use the French words appropriately in another familiar scene or conversation rather than only echoing a model?",
+        "correctAnswer": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
+        "whatMakesItDiscriminate": "Meaning selection in a new French message checks the actual lexical form–meaning connection separately from expressive fluency. Delayed retrieval without an immediate spoken model distinguishes retained independent French use from echoing; another familiar context checks that the word can be recombined appropriately rather than recited from one list.",
+        "probeDeeper": [
+          "Another familiar context and speaker, with taught forms recombined.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The official Ontario CoreFrench source requires actual familiar French comprehension/production; taught lexical meaning and retained use are components, not a whole-standard certificate.",
+          "source": "Ontario Ministry of Education CoreFrench2013 source",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_wLroTdOoZh",
+      "pedagogy": {
+        "summary": "Qualified French model and familiar meaningful words covering the card’s specified contrasts and clusters. Teach unfamiliar word meanings first; hearing/clinical motor diagnosis is not inferred.",
+        "bestPractices": [
+          "Elicit the contrasted French words and clusters in short phrases, not only an isolated immediate imitation.",
+          "Use another familiar word carrying each taught contrast/cluster and ask an informed listener to identify the intended word.",
+          "Respect the intended variety’s legitimate pronunciation; evaluate meaningful intelligibility, not resemblance to one accent."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-consonant-contrasts",
+            "learnerActions": [
+              "Elicit the contrasted French words and clusters in short phrases, not only an isolated immediate imitation.",
+              "Use another familiar word carrying each taught contrast/cluster and ask an informed listener to identify the intended word.",
+              "Respect the intended variety’s legitimate pronunciation; evaluate meaningful intelligibility, not resemblance to one accent."
+            ],
+            "intendedInsight": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "OQLF identifies the relevant French consonant sounds and distinguishes phonetic sounds from written letters; this teaching/transfer protocol is authored and untested."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Using familiar French words and a qualified French model, can {{name}} say contrasting words such as poule/boule and chou/sou distinctly and keep the consonants in bras, crabe, bleu and pluie? Can a listener distinguish the intended words in a short phrase and in another familiar word carrying the same contrast, without relying only on immediate repetition?",
+        "correctAnswer": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
+        "whatMakesItDiscriminate": "Known word meanings prevent a vocabulary gap from masquerading as a consonant error. Having a listener distinguish the intended contrasted words tests intelligibility, while another familiar word/phrase without an immediate model rules out copying one memorized list. The specified clusters expose consonant omission while target-variety handling avoids treating an accent difference as failure.",
+        "probeDeeper": [
+          "Different familiar words/phrase and listener while preserving the same phonological operation.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer."
+        }
+      },
+      "sources": [
+        {
+          "claim": "OQLF identifies the relevant French consonant sounds and distinguishes phonetic sounds from written letters; this teaching/transfer protocol is authored and untested.",
+          "source": "OQLF factual linguistic reference",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/22204/la-prononciation/notions-de-base-en-phonetique/les-consonnes-phonetiques",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_mAschyjZAT",
+      "pedagogy": {
+        "summary": "Qualified model of the chosen French variety; meaning/picture cards and recordings or live utterances from more than one voice. OQLF describes four nasal vowels in its Quebec model and different Quebec/European transcriptions; do not impose a universal three-vowel inventory.",
+        "bestPractices": [
+          "Check listening identification of oral/nasal contrasts separately from speaking, allowing pointing or an English response.",
+          "Check production in meaningful familiar words and phrases, using bas/banc, beau/bon and paix/pain as varied lexical contrasts, not as a claim that each pair differs only in nasalization.",
+          "Include the in/un distinction where maintained by the chosen variety; accept a legitimate regional merger and document the model rather than infer a deficit.",
+          "Use another voice and familiar word to check transfer beyond echoing."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked familiar French utterances",
+          "Separate comprehension/production evidence where relevant"
+        ],
+        "commonMisconceptions": [
+          "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Use the attributed community claim with the reviewed Ontario source-fit component protocol.",
+        "activities": [
+          {
+            "title": "french-nasal-vowel-contrasts",
+            "learnerActions": [
+              "Check listening identification of oral/nasal contrasts separately from speaking, allowing pointing or an English response.",
+              "Check production in meaningful familiar words and phrases, using bas/banc, beau/bon and paix/pain as varied lexical contrasts, not as a claim that each pair differs only in nasalization.",
+              "Include the in/un distinction where maintained by the chosen variety; accept a legitimate regional merger and document the model rather than infer a deficit.",
+              "Use another voice and familiar word to check transfer beyond echoing."
+            ],
+            "intendedInsight": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
+            "feedback": [
+              "Check actual French form and meaning; do not infer from English or an immediate echo."
+            ],
+            "rationale": "Authored low-confidence teaching proposal, not a validated intervention.",
+            "sourceClaims": [
+              "OQLF describes four nasal vowels in its Quebec model and explains differing Quebec/European phonetic transcriptions; this teaching/transfer protocol is authored and untested."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a qualified French model and supplied word meanings.",
+          "Respect legitimate regional pronunciation and assess the specified target variety.",
+          "Do not infer whole oral-standard coverage from these components."
+        ],
+        "reviewNotes": [
+          "2026-11-10: adopted/adapted with attribution from dahbiahmed PR23 at749ae; factual references checked, teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "With familiar French words and a qualified model of the intended variety, can {{name}} hear which word is said in contrasts such as bas/banc, beau/bon and paix/pain, then produce the words distinctly in a short phrase? Include brun/brin when the target variety distinguishes un/in, and check transfer with another voice or familiar word rather than marking a legitimate regional merger wrong.",
+        "correctAnswer": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
+        "whatMakesItDiscriminate": "A meaning/picture choice that needs no French spoken answer isolates receptive hearing from production. Producing the same meaningful distinctions tests the expressive operation separately. Another voice and familiar word rule out immediate imitation; the stated target-variety convention prevents a legitimate regional merger from being misdiagnosed as a missing contrast.",
+        "probeDeeper": [
+          "Another voice and familiar lexical context, with comprehension and production scored separately.",
+          "Can the learner show the same French distinction or meaning without immediately copying a spoken model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety.",
+            "revealedBy": "Transfer or delayed independent response fails despite immediate repetition.",
+            "nextMove": "Return to supplied French meaning/model, then recheck independent transfer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable evidence of the specified French forms/meanings or contrasts.",
+          "partial": "Succeeds with immediate model but not independent transfer or retained use.",
+          "full": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts."
+        }
+      },
+      "sources": [
+        {
+          "claim": "OQLF describes four nasal vowels in its Quebec model and explains differing Quebec/European phonetic transcriptions; this teaching/transfer protocol is authored and untested.",
+          "source": "OQLF factual linguistic reference",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/22205/la-prononciation/notions-de-base-en-phonetique/les-voyelles-phonetiques",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and source-fit teaching proposal",
+        "createdAt": "2026-11-10T14:00:00Z",
+        "updatedAt": "2026-11-10T14:00:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_sPd4fWeY9x",
+      "pedagogy": {
+        "summary": "Connect an explicit taught French lexical corpus to its actual written forms, then check retained independent retrieval in another meaningful message. This is an original untested teaching proposal.",
+        "bestPractices": [
+          "Separate study with references from later retrieval without a written model.",
+          "Provide meaning context for homophones and assess the supplied intended word.",
+          "Check exact French letters and accents rather than infer from English spelling or fluent French speech."
+        ],
+        "keyRepresentations": [
+          "Meaning-linked French word/phrase cards",
+          "Covered-model recall followed by an independent changed message"
+        ],
+        "commonMisconceptions": [
+          "Knowing the spoken word automatically establishes its spelling.",
+          "Copying a correct printed word establishes retained independent retrieval.",
+          "Any homophone can be assigned one spelling without meaning context."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Study, retrieve and reuse the taught written French word forms.",
+        "activities": [
+          {
+            "title": "Retrieve familiar French spellings in a new message",
+            "learnerActions": [
+              "Choose an explicit familiar French corpus and check each word’s intended meaning, spelling and accents with a fluent French-speaking teacher. Include regular and non-transparent spellings; no new word-count threshold or universal inventory is implied.",
+              "Study actual written forms in meaningful phrases, compare the letters/accents with the intended spoken word and practise recalling the spelling after covering the model. Attend to an actual unexpected part without implying that all French spelling is irregular.",
+              "After a few days without an immediate written model, write selected taught words from a meaning-linked spoken phrase or picture/context. An isolated homophone does not uniquely specify a spelling: supply the phrase/meaning when contrasting à/a or other ambiguous forms. Score what was actually specified.",
+              "Write a changed short French note or caption requiring taught words independently; compare with the intended message and check exact letters/accents. A reference dictionary may be used during learning/editing, but copying it during the independent retrieval check does not establish this claim.",
+              "Separate results from oral French vocabulary, sight-word recognition and generic planning/proofreading strategy. A learner can recognise or say monsieur yet write an incorrect remembered form; a copied correct word is a near miss. Do not require fast motor handwriting or prohibit legitimate thinking aloud."
+            ],
+            "intendedInsight": "A familiar French meaning has a particular written form; retained exact letters and accents support independent meaningful writing.",
+            "feedback": [
+              "Compare the intended word with the supplied correct form after the retrieval attempt.",
+              "Notice a specific letter or accent, practise meaning-linked retrieval, then recheck later in another message."
+            ],
+            "rationale": "Original low-confidence source-fit design; no intervention-effectiveness claim.",
+            "sourceClaims": [
+              "The official Ontario Core French programme includes improving written French work; retained familiar written forms contribute to this operation without establishing the whole writing expectation."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use a verified explicit taught corpus and unambiguous meaning context.",
+          "No all-French spelling mastery, universal speed norm, whole-language proficiency, fixed handedness or motor-performance claim.",
+          "A live model, dictation echo with visible spelling or multiple-choice recognition alone does not establish independent written retrieval."
+        ],
+        "reviewNotes": [
+          "2026-11-10: proposed stable-ID adaptation from dahbiahmed PR23 head749ae; original community scope and adaptation recorded separately. Actual source clause reviewed; teaching sequence untested."
+        ]
+      },
+      "assess": {
+        "method": "use_in_context",
+        "poeTask": null,
+        "diagnosticPrompt": "After {{name}} has learned some familiar French words, can they write them correctly a few days later, including accents and spellings such as monsieur or beaucoup, then use them correctly in a new short French message without copying a model?",
+        "correctAnswer": "Retrieves the taught familiar French written forms accurately after a delay, including taught accents and non-transparent spellings, and independently uses them in another meaningful French message.",
+        "whatMakesItDiscriminate": "Delayed no-model exact spelling and meaningful changed-message use distinguish written French lexical knowledge from English spelling, oral knowledge, immediate copying and printed-word recognition. Meaning context prevents an ambiguous spoken homophone from creating a false failure.",
+        "probeDeeper": [
+          "Which intended word does this phrase or picture specify?",
+          "Can the learner retrieve the same taught French spelling in a different short meaningful message without a written model?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Recognises or copies the printed French word but cannot retrieve its spelling independently.",
+            "revealedBy": "The correct form disappears when the visible model is removed or in another message.",
+            "nextMove": "Return to meaning-linked written-form study and covered-model retrieval, then recheck after a delay.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Supplies only an English form, unrelated letters or no reliable taught French written form.",
+          "partial": "Succeeds with a visible model or immediate study but not delayed independent retrieval and changed-message reuse.",
+          "full": "Retrieves the taught exact French forms after a delay and uses them correctly in another meaningful message without a written model."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The official Ontario Core French programme includes improving written French work; retained familiar written forms contribute to this operation without establishing the whole writing expectation.",
+          "source": "Ontario Ministry of Education, Core French2013 programme",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: attributed community card adaptation and original source-fit teaching proposal",
+        "createdAt": "2026-11-10T20:43:47.743306Z",
+        "updatedAt": "2026-11-10T20:43:47.743306Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_RIOhVDZZkG",
+      "pedagogy": {
+        "summary": "Use a bounded attributed Ottawa/Sudbury repertoire to distinguish actual places, cultural work and contributions. Original low-confidence design; no teaching-effectiveness claim.",
+        "bestPractices": [
+          "Teach the case facts with their actual named creators/institutions.",
+          "Require explanation of the contributions rather than naming a city or expressing approval.",
+          "Separate factual understanding from actual French reception/production and from personal cultural identity."
+        ],
+        "keyRepresentations": [
+          "Attributed Ottawa/Sudbury case cards",
+          "Place–activity/creator–contribution comparison",
+          "A further community’s short verified account"
+        ],
+        "commonMisconceptions": [
+          "Every resident of a city speaks the same language or shares one culture.",
+          "Naming French or saying be respectful establishes the particular community facts.",
+          "One cultural event defines everyone or proves a measured worldwide effect."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Connect actual Ontario French-speaking community cases with their cultural work, then compare carefully.",
+        "activities": [
+          {
+            "title": "Explain contributions across attributed communities",
+            "learnerActions": [
+              "Study the attributed Ottawa and Sudbury case cards with an accurate Ontario place reference. Distinguish a city from its French-speaking communities; neither language nor city establishes everybody’s ancestry, preferences or identity.",
+              "Connect the actual Ottawa festival, Ottawa-connected children’s author and Sudbury theatre with their different cultural activities and contributions. Explain how a festival can share music and connect artists, how a writer adds books, and how theatre creates/presents French-language work. These are concrete contributions, not a measured claim of global impact or a single timeless culture. For the festival, explicitly include its attributed support for international artists and cultural exchange; outside-world comparison alone does not establish that Ontario contribution.",
+              "After study, identify the two places and explain all three studied examples without copying a full ready-made answer. Brief ordinary-language explanations or pointing supported by explanation can establish the factual account; French language proficiency is checked separately in the curriculum’s channel-specific tasks.",
+              "Compare a new attributed community account, such as the France music celebration. Identify a supported similarity/difference and a question still unanswered; the new case is supplied evidence, not proof that all people share a national custom.",
+              "Make a non-sensitive personal or own-class/community connection, such as a real shared reading or performance activity, and another-community comparison. No family history, attendance at a festival, national pride or particular positive feeling is required. If the source-specific personal connection is not available, retain that condition rather than invent it."
+            ],
+            "intendedInsight": "Distinct communities create and share varied cultural work; actual examples and source limits matter more than a broad cultural label.",
+            "feedback": [
+              "Ask which place, institution/creator and actual activity the explanation concerns.",
+              "Return to the attributed facts when a stereotype or invented audience/impact appears."
+            ],
+            "rationale": "Original untested source-fit task design grounded in institutional/creator accounts.",
+            "sourceClaims": [
+              "Théâtre du Nouvel-Ontario identifies its Grand Sudbury community setting and principally French theatrical production and presentation.",
+              "Festival franco-ontarien describes its Ottawa cultural activity and support for Franco-Ontarian and international artists.",
+              "Mireille Messier’s own biography connects her with Ottawa and identifies French- and English-language children’s writing."
+            ]
+          }
+        ],
+        "constraints": [
+          "No exclusive current residence is asserted for the author; her own pages differ about her current base.",
+          "No song lyrics, novel contents or current show/ticket schedules are reproduced or inferred.",
+          "No compulsory affection, pride, personal disclosure or cultural participation.",
+          "This factual contribution does not itself certify listening, speaking, reading or writing in French."
+        ],
+        "reviewNotes": [
+          "2026-11-10: closest local-history/diversity/identity and French-language claims read; particular community facts remain independently missing. Original guide, untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After learning about French-language cultural life in Ottawa and Sudbury, can {{name}} name the places and explain how the studied festival, children’s author and theatre contribute? With another community’s short account, can they make a supported comparison without assuming everybody in either place has the same culture?",
+        "correctAnswer": "Names Ottawa and Sudbury in Ontario and explains the actual festival, author and theatre contributions with attribution; uses a further supplied account for a supported comparison without universalising cultures.",
+        "whatMakesItDiscriminate": "Requires the particular located communities and all three cultural-work examples, not generic respect, a French label, copying or an assumed shared identity. A supplied further community tests supported comparison and source limits.",
+        "probeDeeper": [
+          "Which city and institution or creator does this fact concern?",
+          "What does the work add or share, beyond the institution’s name?",
+          "What does the new account support, and what should we not assume about every resident?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Treats a language/city/event as everyone’s fixed culture, or only supplies a positive label.",
+            "revealedBy": "Cannot connect the studied activities and creators to their actual places/contributions, or invents a universal tradition.",
+            "nextMove": "Revisit the attributed case cards, separate place/activity/contribution, then compare another supplied case carefully.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable identification of the particular places/contributions, or only cultural stereotypes.",
+          "partial": "Names some cases but does not explain all three contributions or handle the further comparison/source limits.",
+          "full": "Explains the two located communities and three attributed contributions, then makes a supported further-community comparison without universalising."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Théâtre du Nouvel-Ontario identifies its Grand Sudbury community setting and principally French theatrical production and presentation.",
+          "source": "Théâtre du Nouvel-Ontario",
+          "url": "https://letno.ca/",
+          "verified": true
+        },
+        {
+          "claim": "Festival franco-ontarien describes its Ottawa cultural activity and support for Franco-Ontarian and international artists.",
+          "source": "Festival franco-ontarien, history and mission",
+          "url": "https://ffo.ca/historique-conseil-dadministration/",
+          "verified": true
+        },
+        {
+          "claim": "Mireille Messier’s own biography connects her with Ottawa and identifies French- and English-language children’s writing.",
+          "source": "Mireille Messier, biography",
+          "url": "https://www.mireille.ca/bio/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified community knowledge and original untested teaching design",
+        "createdAt": "2026-11-10T21:53:33.909328Z",
+        "updatedAt": "2026-11-10T21:53:33.909328Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_QDM6Rc6pph",
+      "pedagogy": {
+        "summary": "Teach a bounded attributed community repertoire, check particular knowledge independently, then compare without universalising. Original low-confidence design.",
+        "bestPractices": [
+          "Keep each place, institution/activity and contribution together.",
+          "Require the actual learned case facts rather than a generic cultural-respect response.",
+          "Keep the factual account and French listening/speaking/reading/writing performances distinct."
+        ],
+        "keyRepresentations": [
+          "Three attributed community case cards",
+          "An accurate broad place reference",
+          "A place–activity–contribution comparison with source limits"
+        ],
+        "commonMisconceptions": [
+          "Every resident shares one language, ancestry or practice.",
+          "A city name or positive feeling supplies cultural knowledge.",
+          "An institutional mission proves every claimed worldwide impact."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Know a bounded contemporary repertoire of French-speaking community life in Quebec through Montréal and Québec City, with the Baie-Saint-Paul origins of one studied creative organisation. Connect the book salon, museum and circus-creation examples to their actual places, cultural activities and supported contributions, while distinguishing a city or language from everybody’s identity and practices.",
+        "activities": [
+          {
+            "title": "Place, cultural work and contribution",
+            "learnerActions": [
+              "Prepare the three attributed case cards and an accurate broad location reference. Read the actual institutional texts and clarify institution, city/community and region before teaching the original French paraphrases. A name on a map does not establish everyone’s identity.",
+              "Study this attributed case: À Montréal, le Salon du livre réunit des lecteurs et des personnes qui créent des livres. Il fait découvrir des livres du Québec et d’autres pays et propose des échanges autour de la lecture. Source limit: Actual institutional activity/mission, not every resident’s hobby, a particular book plot, event schedule or demonstrated impact.",
+              "Study this attributed case: Dans la ville de Québec, le Musée de la civilisation conserve des objets et présente des expositions. Il aide à découvrir des histoires et des cultures. Sa mission comprend une présence du Québec dans un réseau international de musées. Source limit: Do not claim a particular unseen exhibit, institutional mission as measured efficacy, one exclusive people’s history or current ticket/transport details.",
+              "Study this attributed case: Le Cirque du Soleil vient d’une troupe de Baie-Saint-Paul, au Québec. Son lieu de création international se trouve à Montréal. Des artistes de plusieurs origines y créent des spectacles présentés dans le monde. Source limit: Origins and current creation base differ. No show language, adult performance contents, employee/audience counts, superlative, colonial discovery narrative or acrobatic imitation is required.",
+              "After supported study, remove the complete fact captions and ask for the learned locations, activities and contributions. Permit ordinary language, pointing plus explanation or another accessible expression for the knowledge check; the curriculum’s actual French channel tasks are separate.",
+              "Compare a fresh attributed community account, including the prior France music and UK reading cases. Identify a supported similarity/difference and what the account does not establish. Connect an actual non-sensitive own/class/community cultural experience such as a shared book discussion; never invent a learner biography.",
+              "Repeat with a changed view or question about an actual contribution. Neither repeating names, expressing pride nor saying every culture is nice supplies the particular learned community knowledge."
+            ],
+            "intendedInsight": "Particular communities create and share varied cultural work; accurate location, activity and contribution facts support comparison without defining everyone’s identity.",
+            "feedback": [
+              "Ask which named place and actual cultural activity supports the explanation.",
+              "Separate the institution’s stated mission from measured impact; revisit the source when an invented fact or stereotype appears.",
+              "Use changed representations after study to check meaningful retrieval rather than caption copying."
+            ],
+            "rationale": "Original, untested knowledge-learning design; institutional factual verification is distinct from teaching efficacy.",
+            "sourceClaims": [
+              "The Montreal book organisation brings readers and book creators together and promotes regional, national and international editorial production and exchange.",
+              "The institution conserves collections, presents cultural/educational exhibitions and has a stated international museum-network role.",
+              "The museum identifies its location in Québec City, distinct from the province name.",
+              "The Quebec artistic company arose from a Baie-Saint-Paul street troupe, has its international creation headquarters in Montreal and presents artistic work internationally."
+            ]
+          }
+        ],
+        "constraints": [
+          "No current ticket/date/audience/population facts or full artwork/book/film contents are inferred.",
+          "No compulsory pride, enjoyment, personal disclosure, attendance, religious practice or physical imitation.",
+          "The source-specific French channel performance is checked separately using the actual introduced corpus and protocols; a stronger-language factual answer alone cannot certify that performance.",
+          "Original graded French paraphrases are teaching texts, not authentic community testimony. Prepare a qualified fluent model and suitable accurate visuals before use.",
+          "Actual institutional activity/mission, not every resident’s hobby, a particular book plot, event schedule or demonstrated impact.",
+          "Do not claim a particular unseen exhibit, institutional mission as measured efficacy, one exclusive people’s history or current ticket/transport details.",
+          "Origins and current creation base differ. No show language, adult performance contents, employee/audience counts, superlative, colonial discovery narrative or acrobatic imitation is required."
+        ],
+        "reviewNotes": [
+          "2026-11-10: full closest geographic, local-history, diversity, identity and Ontario-community claims compared. The particular new regional knowledge is absent; their actual claims and guides remain unchanged. These activities have not been evaluated as an intervention."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying French-speaking community life in Quebec, can {{name}} connect Montréal’s book salon, Québec City’s museum and the circus’s Baie-Saint-Paul origins and Montréal creation base with what they contribute? Compare another supplied community account without assuming everyone shares one practice.",
+        "correctAnswer": "Identifies the studied community places and explains all three actual attributed activity/contribution cases, then makes a supported comparison using the supplied new account without universalising.",
+        "whatMakesItDiscriminate": "Independent particular knowledge and place/activity/contribution explanation distinguish this from generic respect, a French greeting, copying a caption or a country-capital inventory. A new attributed case tests supported comparison and limits.",
+        "probeDeeper": [
+          "Which place and institution or creative work does that fact concern?",
+          "What does the work share or contribute beyond its name?",
+          "What does the new account support, and what should we not assume about everyone?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "A generic language/city label replaces the particular facts or defines every resident.",
+            "revealedBy": "Cannot connect the learned activities to their actual locations/contributions, or invents a universal identity/custom.",
+            "nextMove": "Rebuild the separate attributed case cards and recheck one supported contribution with a changed view.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable particular community/place/contribution account, or only stereotypes.",
+          "partial": "Names some cases but cannot explain all three or apply source limits in the supplied comparison.",
+          "full": "Explains all three located cultural-activity cases and supported contributions, then compares a supplied new account without treating everybody’s identity or practices as the same."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.salondulivredemontreal.com/a-propos/missions-et-valeurs",
+          "source": "Salon du livre de Montréal — mission",
+          "claim": "The Montreal book organisation brings readers and book creators together and promotes regional, national and international editorial production and exchange.",
+          "verified": true
+        },
+        {
+          "url": "https://mcq.org/a-propos/profil-institutionnel/",
+          "source": "Musée de la civilisation — institutional profile",
+          "claim": "The institution conserves collections, presents cultural/educational exhibitions and has a stated international museum-network role.",
+          "verified": true
+        },
+        {
+          "url": "https://mcq.org/visiter/emplacement-et-acces/",
+          "source": "Musée de la civilisation — location",
+          "claim": "The museum identifies its location in Québec City, distinct from the province name.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cirquedusoleil.com/fr/press/kits/corporate/%C3%A0-propos-du-cirque",
+          "source": "Cirque du Soleil — corporate history and creation headquarters",
+          "claim": "The Quebec artistic company arose from a Baie-Saint-Paul street troupe, has its international creation headquarters in Montreal and presents artistic work internationally.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: factual-source review and original untested teaching design",
+        "createdAt": "2026-11-10T22:44:34.279803Z",
+        "updatedAt": "2026-11-10T22:44:34.279803Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_j6g97xxB-c",
+      "pedagogy": {
+        "summary": "Teach a bounded attributed community repertoire, check particular knowledge independently, then compare without universalising. Original low-confidence design.",
+        "bestPractices": [
+          "Keep each place, institution/activity and contribution together.",
+          "Require the actual learned case facts rather than a generic cultural-respect response.",
+          "Keep the factual account and French listening/speaking/reading/writing performances distinct."
+        ],
+        "keyRepresentations": [
+          "Three attributed community case cards",
+          "An accurate broad place reference",
+          "A place–activity–contribution comparison with source limits"
+        ],
+        "commonMisconceptions": [
+          "Every resident shares one language, ancestry or practice.",
+          "A city name or positive feeling supplies cultural knowledge.",
+          "An institutional mission proves every claimed worldwide impact."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Know a bounded contemporary repertoire of French-speaking communities in eastern, western and northern Canada. Locate the studied Moncton, Saint-Boniface and Whitehorse cases broadly, connect their film, festival and community-exhibition activities with supported contributions, and compare the cases without assigning one uniform identity or culture to a city, region or language.",
+        "activities": [
+          {
+            "title": "Place, cultural work and contribution",
+            "learnerActions": [
+              "Prepare the three attributed case cards and an accurate broad location reference. Read the actual institutional texts and clarify institution, city/community and region before teaching the original French paraphrases. A name on a map does not establish everyone’s identity.",
+              "Study this attributed case: À Moncton, au Nouveau-Brunswick, le FICFA présente des films en français et fait connaître le cinéma acadien. Son palmarès de 2025 nomme des films du Canada et de la Belgique. Le festival relie ainsi la culture acadienne à une francophonie canadienne et internationale. Source limit: No inference that all Acadians attend, that every resident is Acadian, a particular film plot, statistics, current screenings or a largest/only ranking.",
+              "Study this attributed case: À Saint-Boniface, au Manitoba, le Festival du Voyageur partage de la musique, de la danse et d’autres arts. Il propose aussi des activités sur des histoires francophones, métisses et des Premières Nations. Le fort utilisé pour l’interprétation historique est une reconstruction moderne. Source limit: A contemporary cultural/interpretive activity, not a surviving 1815 fort or every person’s identity. No programme, attendance, costume or obligatory enjoyment inventory.",
+              "Study this attributed case: À Whitehorse, au Yukon, l’Association franco-yukonnaise organise des activités et soutient la vie en français. Le Centre de la francophonie présente des expositions. Une fresque créée en 2026 avec des artistes et des élèves montre une contribution à la culture de cette communauté du Nord. Source limit: The mural caption was read; the image is not used as visually inspected documentary evidence. No demographic projection, universal symbol interpretation, an assumption that all Yukon residents are French-speaking or erasure of continuing First Nation territories.",
+              "After supported study, remove the complete fact captions and ask for the learned locations, activities and contributions. Permit ordinary language, pointing plus explanation or another accessible expression for the knowledge check; the curriculum’s actual French channel tasks are separate.",
+              "Compare a fresh attributed community account, including the prior France music and UK reading cases. Identify a supported similarity/difference and what the account does not establish. Connect an actual non-sensitive own/class/community cultural experience such as a shared book discussion; never invent a learner biography.",
+              "Repeat with a changed view or question about an actual contribution. Neither repeating names, expressing pride nor saying every culture is nice supplies the particular learned community knowledge."
+            ],
+            "intendedInsight": "Particular communities create and share varied cultural work; accurate location, activity and contribution facts support comparison without defining everyone’s identity.",
+            "feedback": [
+              "Ask which named place and actual cultural activity supports the explanation.",
+              "Separate the institution’s stated mission from measured impact; revisit the source when an invented fact or stereotype appears.",
+              "Use changed representations after study to check meaningful retrieval rather than caption copying."
+            ],
+            "rationale": "Original, untested knowledge-learning design; institutional factual verification is distinct from teaching efficacy.",
+            "sourceClaims": [
+              "The Moncton-based festival promotes francophone cinema in Atlantic Canada and shares Acadian cinema within Canadian and international francophonie.",
+              "The francophone organisation presents several artistic disciplines and educational interpretation involving Francophone, Métis and First Nation histories; its Fort Gibraltar is a modern reconstruction.",
+              "The actually viewed page locates the festival in Saint-Boniface and its francophone mission in Manitoba.",
+              "The Whitehorse association supports French-language community services and cultural activities in Yukon.",
+              "Its Whitehorse centre presents exhibitions; the attributed 2026 mural involved artists Maya Chartier and Aurore Favier and local pupils.",
+              "The actual published 2025 results include Canadian and Belgian works, documenting international programming/recognition beyond an aspirational mission statement."
+            ]
+          }
+        ],
+        "constraints": [
+          "No current ticket/date/audience/population facts or full artwork/book/film contents are inferred.",
+          "No compulsory pride, enjoyment, personal disclosure, attendance, religious practice or physical imitation.",
+          "The source-specific French channel performance is checked separately using the actual introduced corpus and protocols; a stronger-language factual answer alone cannot certify that performance.",
+          "Original graded French paraphrases are teaching texts, not authentic community testimony. Prepare a qualified fluent model and suitable accurate visuals before use.",
+          "No inference that all Acadians attend, that every resident is Acadian, a particular film plot, statistics, current screenings or a largest/only ranking.",
+          "A contemporary cultural/interpretive activity, not a surviving 1815 fort or every person’s identity. No programme, attendance, costume or obligatory enjoyment inventory.",
+          "The mural caption was read; the image is not used as visually inspected documentary evidence. No demographic projection, universal symbol interpretation, an assumption that all Yukon residents are French-speaking or erasure of continuing First Nation territories.",
+          "The international-role explanation uses the actual published 2025 results alongside the stated mandate. It does not measure worldwide influence or infer every film’s language from its country of production."
+        ],
+        "reviewNotes": [
+          "2026-11-10: full closest geographic, local-history, diversity, identity and Ontario-community claims compared. The particular new regional knowledge is absent; their actual claims and guides remain unchanged. These activities have not been evaluated as an intervention."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying French-speaking community life in eastern, western and northern Canada, can {{name}} identify the Moncton, Saint-Boniface and Whitehorse cases and explain what their cinema, festival and community exhibitions contribute? Use a new supplied account for a supported comparison without assuming everyone lives alike.",
+        "correctAnswer": "Identifies the studied community places and explains all three actual attributed activity/contribution cases, then makes a supported comparison using the supplied new account without universalising.",
+        "whatMakesItDiscriminate": "Independent particular knowledge and place/activity/contribution explanation distinguish this from generic respect, a French greeting, copying a caption or a country-capital inventory. A new attributed case tests supported comparison and limits.",
+        "probeDeeper": [
+          "Which place and institution or creative work does that fact concern?",
+          "What does the work share or contribute beyond its name?",
+          "What does the new account support, and what should we not assume about everyone?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "A generic language/city label replaces the particular facts or defines every resident.",
+            "revealedBy": "Cannot connect the learned activities to their actual locations/contributions, or invents a universal identity/custom.",
+            "nextMove": "Rebuild the separate attributed case cards and recheck one supported contribution with a changed view.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "No reliable particular community/place/contribution account, or only stereotypes.",
+          "partial": "Names some cases but cannot explain all three or apply source limits in the supplied comparison.",
+          "full": "Explains all three located cultural-activity cases and supported contributions, then compares a supplied new account without treating everybody’s identity or practices as the same."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.ficfa.com/historique-et-mandat",
+          "source": "FICFA — history and mandate",
+          "claim": "The Moncton-based festival promotes francophone cinema in Atlantic Canada and shares Acadian cinema within Canadian and international francophonie.",
+          "verified": true
+        },
+        {
+          "url": "https://heho.ca/a-propos/",
+          "source": "Festival du Voyageur — French institutional profile",
+          "claim": "The francophone organisation presents several artistic disciplines and educational interpretation involving Francophone, Métis and First Nation histories; its Fort Gibraltar is a modern reconstruction.",
+          "verified": true
+        },
+        {
+          "url": "https://heho.ca/wp-content/uploads/2024/10/FDV2024_RapportOfficiel_web.pdf",
+          "source": "Festival du Voyageur — 2023–24 annual report, page 4",
+          "claim": "The actually viewed page locates the festival in Saint-Boniface and its francophone mission in Manitoba.",
+          "verified": true
+        },
+        {
+          "url": "https://afy.ca/afy/notre-fonctionnement",
+          "source": "Association franco-yukonnaise — mission and location",
+          "claim": "The Whitehorse association supports French-language community services and cultural activities in Yukon.",
+          "verified": true
+        },
+        {
+          "url": "https://www.afy.ca/communaute",
+          "source": "Association franco-yukonnaise — community and centre",
+          "claim": "Its Whitehorse centre presents exhibitions; the attributed 2026 mural involved artists Maya Chartier and Aurore Favier and local pupils.",
+          "verified": true
+        },
+        {
+          "url": "https://www.ficfa.com/festival/2025",
+          "source": "FICFA — completed 2025 edition award results",
+          "claim": "The actual published 2025 results include Canadian and Belgian works, documenting international programming/recognition beyond an aspirational mission statement.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: factual-source review and original untested teaching design",
+        "createdAt": "2026-11-10T22:44:34.279803Z",
+        "updatedAt": "2026-11-10T22:44:34.279803Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

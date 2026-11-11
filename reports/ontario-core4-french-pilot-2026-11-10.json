@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "scope": "Ontario CoreFrench Grade4 oral pilot, CA9–10; seven selected overall/specific codes, not all CoreFrench or all programme variants.",
+  "relatedWork": {
+    "pullRequest": "https://github.com/withmarbleapp/os-taxonomy/pull/23",
+    "head": "749ae042d5186d8e3ab96c01d0a63096f0229925",
+    "author": "dahbiahmed",
+    "contentLicense": "CC BY-SA4.0 per forkREADME/LICENSE-CONTENT; database ODbL1.0",
+    "adoption": "Three stable community IDs with attribution, adapted evidence/diagnostics and current-graph centrality. No France catalogue, source associations, transfer crosswalks, community dependency edges or approximate centralities imported."
+  },
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+  "sourceIdentity": "Accepted2013FSL source; English digital CoreGrade4 hierarchy independently read. Linked PDF is a French translation and is not silently treated as a newer English edition.",
+  "summary": {
+    "selectedCodes": 7,
+    "Partial": 7,
+    "Full": 0,
+    "adoptedCommunityClaims": 3,
+    "newInventedIDs": 0,
+    "contexts": 3,
+    "pairs": 10
+  },
+  "cards": [
+    {
+      "id": "mt_Winq7Tu99m",
+      "type": "LANGUAGE",
+      "subject": "Français",
+      "domain": "Langage oral",
+      "name": "Mémoriser et réemployer le vocabulaire",
+      "description": "Understand the French word forms and meanings in taught familiar-topic vocabulary sets, retain them beyond immediate repetition, and independently use them appropriately in French conversation or play.",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "centrality": 0,
+      "evidence": [
+        "Identify the meaning of taught French nouns, actions and feeling words in a familiar spoken message or scene, rather than infer success from English vocabulary.",
+        "Retrieve the French word forms after a delay and use them appropriately without an immediate spoken model.",
+        "Use taught French vocabulary independently in a different familiar scene or exchange, showing meaning as well as a memorized sound sequence."
+      ],
+      "assessmentPrompt": "After {{name}} learns a small set of French words for objects, actions and feelings, can they identify their meanings in a new French message, then a few days later independently use the French words appropriately in another familiar scene or conversation rather than only echoing a model?",
+      "standards": [
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.2"
+      ]
+    },
+    {
+      "id": "mt_wLroTdOoZh",
+      "type": "PROCEDURAL",
+      "subject": "Français",
+      "domain": "Langage oral",
+      "name": "Articuler les consonnes",
+      "description": "Produce intelligible French consonant contrasts, including t/k, f/v, s/z, p/b, t/d, k/g and ch compared with s/j/z, and retain consonants in clusters such as br, cr, bl and pl in words and short phrases. Judge meaningful contrasts using a qualified model of the intended French variety, without treating a legitimate accent difference as an error.",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "centrality": 0,
+      "evidence": [
+        "Produce French words that preserve the intended t/k, f/v, s/z, p/b, t/d and k/g contrasts, using familiar meaningful examples.",
+        "Keep French ch distinct from s, j and z where those are distinct in the target variety; make the intended word intelligible in a phrase.",
+        "Produce br, cr, bl and pl clusters without dropping a consonant, and transfer the operation to another familiar word rather than only echo a practiced list."
+      ],
+      "assessmentPrompt": "Using familiar French words and a qualified French model, can {{name}} say contrasting words such as poule/boule and chou/sou distinctly and keep the consonants in bras, crabe, bleu and pluie? Can a listener distinguish the intended words in a short phrase and in another familiar word carrying the same contrast, without relying only on immediate repetition?",
+      "standards": [
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.3"
+      ]
+    },
+    {
+      "id": "mt_mAschyjZAT",
+      "type": "PROCEDURAL",
+      "subject": "Français",
+      "domain": "Langage oral",
+      "name": "Distinguer les voyelles nasales",
+      "description": "Hear and produce the French oral/nasal vowel distinctions and contrasts among nasal vowels used in the intended French variety. Use meaningful familiar words and respect regional phonetic variation, including whether the in/un contrast is maintained; do not assume that every French variety has only three nasal vowels.",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "centrality": 0,
+      "evidence": [
+        "Identify which familiar word a speaker says in oral/nasal contrast examples, using meaning or pictures so a spoken French answer is not required to demonstrate listening.",
+        "Produce familiar words with oral versus nasal vowels intelligibly and preserve the nasal-vowel contrasts of the target variety, including in/un where distinct.",
+        "Recognize and produce the same contrasts in another voice or familiar word/phrase without merely copying the immediately preceding model."
+      ],
+      "assessmentPrompt": "With familiar French words and a qualified model of the intended variety, can {{name}} hear which word is said in contrasts such as bas/banc, beau/bon and paix/pain, then produce the words distinctly in a short phrase? Include brun/brin when the target variety distinguishes un/in, and check transfer with another voice or familiar word rather than marking a legitimate regional merger wrong.",
+      "standards": [
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.3"
+      ]
+    }
+  ],
+  "phoneticReferences": [
+    "https://vitrinelinguistique.oqlf.gouv.qc.ca/22205/la-prononciation/notions-de-base-en-phonetique/les-voyelles-phonetiques",
+    "https://vitrinelinguistique.oqlf.gouv.qc.ca/22204/la-prononciation/notions-de-base-en-phonetique/les-consonnes-phonetiques",
+    "https://vitrinelinguistique.oqlf.gouv.qc.ca/24050/lorthographe/problemes-lies-aux-consonnes/emploi-du-m-devant-les-consonnes-m-b-et-p"
+  ],
+  "assessmentProtocols": [
+    {
+      "id": "french-lexical-meaning-retention",
+      "topicId": "mt_Winq7Tu99m",
+      "materials": "Teacher-selected familiar French corpus with nouns, actions and feeling words, pictures/scenes, varied short French messages and a qualified fluent French model. The corpus and intended meanings are explicit; no claim of all-French vocabulary mastery.",
+      "task": [
+        "Check meaning by selecting/acting out the intended referent in varied spoken French sentences; an English explanation or pointing can isolate comprehension from production.",
+        "After a few days without an immediate spoken model, ask for independent appropriate French words in another familiar scene or exchange.",
+        "Check recombination and retained meaning, not only an immediate correct echo."
+      ],
+      "positive": "Recognizes taught French meanings in a new utterance and later independently retrieves appropriate French forms.",
+      "nearMiss": "Repeats a sound once or supplies only the English word; fails meaning selection or later independent French retrieval.",
+      "transfer": "Another familiar context and speaker, with taught forms recombined."
+    },
+    {
+      "id": "french-consonant-contrasts",
+      "topicId": "mt_wLroTdOoZh",
+      "materials": "Qualified French model and familiar meaningful words covering the card’s specified contrasts and clusters. Teach unfamiliar word meanings first; hearing/clinical motor diagnosis is not inferred.",
+      "task": [
+        "Elicit the contrasted French words and clusters in short phrases, not only an isolated immediate imitation.",
+        "Use another familiar word carrying each taught contrast/cluster and ask an informed listener to identify the intended word.",
+        "Respect the intended variety’s legitimate pronunciation; evaluate meaningful intelligibility, not resemblance to one accent."
+      ],
+      "positive": "Intelligible intended contrasts and clusters in words and short connected phrases, retained in transfer.",
+      "nearMiss": "Neutralizes a required contrast or drops a cluster consonant so the intended word cannot be distinguished.",
+      "transfer": "Different familiar words/phrase and listener while preserving the same phonological operation."
+    },
+    {
+      "id": "french-nasal-vowel-contrasts",
+      "topicId": "mt_mAschyjZAT",
+      "materials": "Qualified model of the chosen French variety; meaning/picture cards and recordings or live utterances from more than one voice. OQLF describes four nasal vowels in its Quebec model and different Quebec/European transcriptions; do not impose a universal three-vowel inventory.",
+      "task": [
+        "Check listening identification of oral/nasal contrasts separately from speaking, allowing pointing or an English response.",
+        "Check production in meaningful familiar words and phrases, using bas/banc, beau/bon and paix/pain as varied lexical contrasts, not as a claim that each pair differs only in nasalization.",
+        "Include the in/un distinction where maintained by the chosen variety; accept a legitimate regional merger and document the model rather than infer a deficit.",
+        "Use another voice and familiar word to check transfer beyond echoing."
+      ],
+      "positive": "Recognizes and produces the intended variety’s meaningful oral/nasal and nasal-vowel contrasts.",
+      "nearMiss": "Relies on a memorized immediate echo without hearing the meaning distinction, or neutralizes a contrast that is required in the chosen variety.",
+      "transfer": "Another voice and familiar lexical context, with comprehension and production scored separately."
+    }
+  ],
+  "records": [
+    {
+      "officialCode": "A1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1",
+      "requirementSummary": "Understand varied familiar oral French texts",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Winq7Tu99m",
+          "role": "component",
+          "assessmentProtocol": "french-lexical-meaning-retention"
+        },
+        {
+          "topicId": "mt_mAschyjZAT",
+          "role": "component",
+          "assessmentProtocol": "french-nasal-vowel-contrasts"
+        }
+      ],
+      "remainingConditions": [
+        "Variety of oral genres/purposes and meaning beyond a taught vocabulary set, plus appropriate listening strategies, remain explicit."
+      ]
+    },
+    {
+      "officialCode": "A1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1.1",
+      "requirementSummary": "Use French listening strategies before/during/after",
+      "disposition": "Partial",
+      "contributions": [],
+      "remainingConditions": [
+        "General listening strategies require a complete cross-language reuse review and actual French application; no strategy clone is adopted here."
+      ]
+    },
+    {
+      "officialCode": "A1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-A1.2",
+      "requirementSummary": "Understand familiar everyday French messages with support",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Winq7Tu99m",
+          "role": "component",
+          "assessmentProtocol": "french-lexical-meaning-retention"
+        },
+        {
+          "topicId": "mt_mAschyjZAT",
+          "role": "component",
+          "assessmentProtocol": "french-nasal-vowel-contrasts"
+        }
+      ],
+      "remainingConditions": [
+        "Lexical meaning and phonological listening contribute; message purpose, connected meaning and varied texts need a source-fit listening dossier."
+      ]
+    },
+    {
+      "officialCode": "B1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1",
+      "requirementSummary": "Produce oral French for purpose and audience",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Winq7Tu99m",
+          "role": "component",
+          "assessmentProtocol": "french-lexical-meaning-retention"
+        },
+        {
+          "topicId": "mt_wLroTdOoZh",
+          "role": "component",
+          "assessmentProtocol": "french-consonant-contrasts"
+        },
+        {
+          "topicId": "mt_mAschyjZAT",
+          "role": "component",
+          "assessmentProtocol": "french-nasal-vowel-contrasts"
+        }
+      ],
+      "remainingConditions": [
+        "A coherent French message with suitable strategy, purpose/audience and connected form is broader than vocabulary and sound components."
+      ]
+    },
+    {
+      "officialCode": "B1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.1",
+      "requirementSummary": "Use strategies for coherent purposeful French speech",
+      "disposition": "Partial",
+      "contributions": [],
+      "remainingConditions": [
+        "Audience/coherence strategies require reuse review plus actual French formulation; generic English success is insufficient."
+      ]
+    },
+    {
+      "officialCode": "B1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.2",
+      "requirementSummary": "Produce brief rehearsed familiar French messages",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Winq7Tu99m",
+          "role": "component",
+          "assessmentProtocol": "french-lexical-meaning-retention"
+        }
+      ],
+      "remainingConditions": [
+        "Vocabulary retrieval contributes, while meaningful connected messages about familiar topics and appropriate supports remain an integrated task."
+      ]
+    },
+    {
+      "officialCode": "B1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-B1.3",
+      "requirementSummary": "Fluent intelligible rehearsed French communication",
+      "disposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_wLroTdOoZh",
+          "role": "component",
+          "assessmentProtocol": "french-consonant-contrasts"
+        },
+        {
+          "topicId": "mt_mAschyjZAT",
+          "role": "component",
+          "assessmentProtocol": "french-nasal-vowel-contrasts"
+        }
+      ],
+      "remainingConditions": [
+        "Consonants and nasal vowels contribute; pace, intonation and connected-message intelligibility beyond selected contrasts remain required."
+      ]
+    }
+  ],
+  "consumerBoundary": "No mastery transfer from English or FrenchL1, no crosswalk-driven learner-state update. New stable IDs are independently assessed. Adoption does not accept the rest of PR23 or publish to a DB.",
+  "retainedCandidates": [
+    {
+      "topicId": "mt_r3Gw5YG9Ji",
+      "boundary": "Few-minute spoken message, ordering/global meaning/monitoring; greetings alone do not satisfy whole claim."
+    },
+    {
+      "topicId": "mt_yMXio98VMx",
+      "boundary": "Independent prepared connected talk with organizers; not adult-led isolated frames."
+    },
+    {
+      "topicId": "mt_hT3zLBJbcb",
+      "boundary": "All-person present être/avoir in speech and writing; je suis/j’ai alone is insufficient."
+    }
+  ],
+  "historicalCheckpoint": true,
+  "currentReport": "ontario-core4-french-oral-design-2026-11-10.json",
+  "checkpointMeaning": "The seven Partial dispositions below describe the initial pilot only. Current seven-record authoring dispositions are in currentReport; this remains the original three-card attribution/semantic checkpoint."
+}
