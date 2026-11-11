@@ -3,19 +3,19 @@
   "date": "2026-11-10",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
   "scope": "Ontario Grade 4 Social Studies, ages9–10; actual course edition2018 under accepted aggregateON-SSHG-2026.",
-  "status": "Source-fit authoring designs account for 32 records. Three early organisation records have reviewed knowledge components and remain Partial; seven other early social/children/comparison/integrated records remain under qualification. No pupil attainment, teaching efficacy or selection readiness is inferred.",
+  "status": "Source-fit authoring designs account for 34 records. Three early organisation records retain reviewed knowledge components and remain Partial; five social/organisation/integrated source records remain under qualification. No pupil attainment, teaching efficacy or selection-readiness result is inferred.",
   "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
   "expectationCount": 42,
   "dispositionCounts": {
-    "Full": 32,
+    "Full": 34,
     "Partial": 3,
-    "Unverified": 7,
+    "Unverified": 5,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 85,
+    "pairs": 89,
     "topics": 23,
-    "codes": 35,
+    "codes": 37,
     "newClaims": 4,
     "reusedClaims": 19
   },
@@ -46,19 +46,27 @@
     },
     {
       "code": "A1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tOtBMuQ2Yn",
+        "mt_P0HBNfp46z"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-early-own-comparisons-review-2026-11-11.json",
+      "protocolReference": "/protocols/young-person-then-own",
+      "coverageBasis": "The actual own-life/environment comparison retains required early cultures and current Canadian context, with source-specific evidence/reconstruction and period limits built into success and near-miss assessment. No learner attainment is inferred."
     },
     {
       "code": "A1.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Actual source meaning read; full claim, resource and task qualification continues. No missing topic or learner deficit inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_tOtBMuQ2Yn",
+        "mt_P0HBNfp46z"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade4-early-own-comparisons-review-2026-11-11.json",
+      "protocolReference": "/protocols/environment-then-contemporary-canada",
+      "coverageBasis": "The actual own-life/environment comparison retains required early cultures and current Canadian context, with source-specific evidence/reconstruction and period limits built into success and near-miss assessment. No learner attainment is inferred."
     },
     {
       "code": "A2",
@@ -188,7 +196,7 @@
       "remainingConditions": [],
       "dossier": "ontario-grade4-early-material-environment-review-2026-11-10.json",
       "protocolReference": "/protocols/material-life-and-environment",
-      "coverageBasis": "Actual three-culture/period knowledge and explicit material,physical-setting,natural-process,food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
+      "coverageBasis": "Actual three-culture/period knowledge and explicit material, physical-setting, natural-process, food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
     },
     {
       "code": "A3.4",
@@ -200,7 +208,7 @@
       "remainingConditions": [],
       "dossier": "ontario-grade4-early-material-environment-review-2026-11-10.json",
       "protocolReference": "/protocols/material-life-and-environment",
-      "coverageBasis": "Actual three-culture/period knowledge and explicit material,physical-setting,natural-process,food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
+      "coverageBasis": "Actual three-culture/period knowledge and explicit material, physical-setting, natural-process, food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
     },
     {
       "code": "A3.5",
@@ -212,7 +220,7 @@
       "remainingConditions": [],
       "dossier": "ontario-grade4-early-material-environment-review-2026-11-10.json",
       "protocolReference": "/protocols/material-life-and-environment",
-      "coverageBasis": "Actual three-culture/period knowledge and explicit material,physical-setting,natural-process,food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
+      "coverageBasis": "Actual three-culture/period knowledge and explicit material, physical-setting, natural-process, food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
     },
     {
       "code": "A3.6",
@@ -224,7 +232,7 @@
       "remainingConditions": [],
       "dossier": "ontario-grade4-early-material-environment-review-2026-11-10.json",
       "protocolReference": "/protocols/material-life-and-environment",
-      "coverageBasis": "Actual three-culture/period knowledge and explicit material,physical-setting,natural-process,food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
+      "coverageBasis": "Actual three-culture/period knowledge and explicit material, physical-setting, natural-process, food/sustainability and technology-function tasks account for the source duty. Each canonical topic is a component; resource facts and task performance complement it without automatic whole-source mastery."
     },
     {
       "code": "A3.7",
@@ -526,5 +534,5 @@
     "head": "4af84858ab480909f5daa140c6224d3928190377",
     "status": "Unmerged local dependency; retarget/reconcile after accepted contents verified."
   },
-  "next": "Finish the remaining ten early political/social,children/comparison,cooperation/conflict and integrated source duties; preserve all original case/period/source limits."
+  "next": "Finish the remaining eight political/social, cooperation/conflict and integrated source duties; preserve all original case, period and source limits."
 }

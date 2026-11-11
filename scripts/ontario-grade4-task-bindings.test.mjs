@@ -56,3 +56,32 @@ test('Grade4 action assessment retains both industry and citizen evidence roles'
   for (const actor of ['industry', 'citizens']) assert.ok(conditions.actorsBothRequired.includes(actor));
   for (const level of ['intendedpurpose', 'actualimplementation/output', 'reportedoutcome', 'unknownlongterm/causalextent']) assert.ok(conditions.evidenceLevels.includes(level));
 });
+
+function checkYoungPersonEvidenceBoundaries(protocol) {
+  const cases = new Map(protocol.caseEvidence.map(row => [row.id, row]));
+  for (const row of cases.values()) {
+    assert.ok(row.sourceRef && row.period && row.supportedScope.length);
+    const criterion = protocol.assessment.successCriteria.find(item => item.caseId === row.id);
+    assert.ok(criterion?.requiresEvidenceBasisQualification && criterion.requiredOperation, `Missing evidence qualification for ${row.id}`);
+    const probes = protocol.assessment.nearMissProbes.filter(item => item.caseId === row.id);
+    assert.ok(probes.length, `Missing evidence near miss for ${row.id}`);
+    for (const probe of probes) {
+      assert.ok(row.unsupportedInferenceTypes.includes(probe.inferenceType), `Unbound near-miss inference for ${row.id}`);
+      assert.equal(probe.expectedVerdict, 'unsupported', `Unsupported inference accepted for ${row.id}`);
+    }
+  }
+  for (const probe of protocol.assessment.nearMissProbes) assert.ok(cases.has(probe.caseId), 'Near miss references absent evidence');
+}
+test('Grade4 young-person comparisons retain source-basis qualification and reject unsupported routine claims', () => {
+  const protocol = read('reports/ontario-grade4-early-own-comparisons-review-2026-11-11.json').protocols['young-person-then-own'];
+  checkYoungPersonEvidenceBoundaries(protocol);
+  const missing = structuredClone(protocol);
+  missing.assessment.successCriteria = [];
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(missing), /Missing evidence qualification/);
+  const falsePositive = structuredClone(protocol);
+  falsePositive.assessment.nearMissProbes[0].expectedVerdict = 'supported';
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(falsePositive), /Unsupported inference accepted/);
+  const unbound = structuredClone(protocol);
+  unbound.assessment.nearMissProbes[0].inferenceType = 'unreviewed-inference';
+  assert.throws(() => checkYoungPersonEvidenceBoundaries(unbound), /Unbound near-miss inference/);
+});
