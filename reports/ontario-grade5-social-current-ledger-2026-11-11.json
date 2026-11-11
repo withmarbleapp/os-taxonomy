@@ -5,19 +5,19 @@
   "localDependencyCommit": "6569684fbc3b3016619a1d746227a716b352ffe6",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "One routine civic-action design reviewed; remaining 40 records under whole-claim/task qualification. No overall completion or learner attainment claim.",
+  "status": "Two source-fit designs reviewed: unchanged civic-action reuse and one bounded Canadian-rights knowledge claim. The other 39 records remain under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Full": 1,
+    "Full": 2,
     "Partial": 0,
-    "Unverified": 40,
+    "Unverified": 39,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 1,
-    "topics": 1,
-    "codes": 1,
-    "newClaims": 0,
+    "pairs": 2,
+    "topics": 2,
+    "codes": 2,
+    "newClaims": 1,
     "reusedClaims": 1
   },
   "expectations": [
@@ -279,11 +279,13 @@
     },
     {
       "code": "B3.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_exDuOAslx1"
+      ],
+      "remainingConditions": [],
+      "dossier": "canadian-rights-knowledge-review-2026-11-11.json",
+      "protocolReference": "/protocols/canadian-rights-source-fit"
     },
     {
       "code": "B3.2",
