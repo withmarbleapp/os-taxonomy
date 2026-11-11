@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "b54a9be9397cf97e96614e3a5b77d3b2f0545f24be838bc5ab7fbe3a4071cedb",
-  "recordCount": 1089,
+  "topicFileSha256": "566fc729e48142b22cff17fd36aff3f2a4c90c1bda14d461c93ae0d41e6e6d1c",
+  "recordCount": 1090,
   "coverage": {
-    "topicCount": 1904,
-    "withResearch": 1089,
+    "topicCount": 1905,
+    "withResearch": 1090,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -35,8 +35,8 @@
         "withoutResearch": 18
       },
       "Life Skills": {
-        "topics": 48,
-        "withResearch": 2,
+        "topics": 49,
+        "withResearch": 3,
         "withoutResearch": 46
       },
       "Mathematics": {
@@ -220539,6 +220539,183 @@
         "originalResearchGeneratedBy": "Codex; checked current primary care guidance and original untested teaching/assessment design",
         "createdAt": "2026-11-11T04:43:31.000Z",
         "updatedAt": "2026-11-11T04:43:31.000Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_rVjbdwUJHG",
+      "pedagogy": {
+        "summary": "Teach a bounded common-trigger/reaction model through fictional known cases, then contrast allergy with one familiar non-allergic intolerance and test uncertainty in a changed case. The target is knowledge, not diagnosis, treatment or a child food challenge.",
+        "bestPractices": [
+          "Start with varied familiar food pictures and the same food across different fictional people.",
+          "Supply known clinical case identities rather than asking children to infer diagnoses from symptoms.",
+          "Use pictures, pointing, oral explanation or supported language; no English-only vocabulary inventory is a hard gate.",
+          "Keep prompt adult help and individual plans explicit without making the learner a clinical triage decision-maker."
+        ],
+        "keyRepresentations": [
+          "Original named-person/food/case cards.",
+          "Skin, breathing and digestive possible-reaction pictures.",
+          "Paired known milk-allergy and lactose-intolerance explanations beside an unexplained symptom case."
+        ],
+        "commonMisconceptions": [
+          "Only peanuts can cause food allergy.",
+          "A nutritious food is safe for everyone.",
+          "Every stomach ache after food proves allergy.",
+          "A small taste is a safe way for a child to test an allergen.",
+          "A front-of-pack rating establishes individual allergen safety."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Three original untested activities distinguish food-trigger knowledge from generic food hygiene, nutrition or immune-system lessons. No actual food handling, treatment, exposure or diagnosis is part of this design.",
+        "activities": [
+          {
+            "title": "Same food, different people",
+            "intendedInsight": "A food can be nutritious and safe for many people yet cause an adverse reaction in a particular person; an allergy is not a dislike or a dirty-food judgement.",
+            "learnerActions": [
+              "Use original picture cards showing milk, egg, fish, peanuts and tree nuts, plus an ordinary non-food hazard. No real food is opened or eaten.",
+              "Read three clearly fictional, already medically identified cases: Sam has a milk allergy; Ari has an egg allergy; Mo has a fish allergy. For each, select the relevant possible food trigger.",
+              "Explain why another person being able to eat the food does not prove it is safe for the named person. Change from a familiar peanut example to egg or fish.",
+              "Separate a stated dislike from a known allergy without dismissing either person or demanding disclosure of the learner's own medical history."
+            ],
+            "feedback": [
+              "If only nuts are selected, revisit the known egg or fish case: allergy is not limited to one food family. Ask for the trigger in the changed case rather than reciting a list.",
+              "If the learner says healthy foods cannot be allergens, contrast the same pictured milk carton for two fictional people; nutritious food and individual safety are different questions.",
+              "If a dislike is called an allergy, name the distinction while respecting choice: not wanting a food does not by itself establish a medical reaction."
+            ],
+            "rationale": "Varying the food and person separates a trigger model from memorising one peanut warning. The known-case label supplies clinical identity; the learner identifies the food relation rather than diagnosing anyone.",
+            "sourceClaims": [
+              "Varied common trigger families; list includes allergy-like sensitivities, so do not call every listed substance an IgE food allergen or impose the whole list as mastery."
+            ]
+          },
+          {
+            "title": "Two milk cases, two explanations",
+            "intendedInsight": "The same food can be connected with different conditions, and digestive symptoms alone do not establish which condition a person has.",
+            "learnerActions": [
+              "Use two original fictional cards. The first states a clinician has identified milk allergy: the immune system reacts to a food protein and the person may have skin, breathing or digestive reactions. The second states a clinician has identified lactose intolerance: difficulty digesting milk sugar can cause digestive discomfort.",
+              "Explain in simple language how both cases concern milk but are not the same condition. No enzyme names, antibody vocabulary or cell hierarchy is required.",
+              "Sort supplied possible-reaction pictures into skin, breathing and digestive categories; allow a symptom category to occur in more than one case rather than making an exclusive diagnosis table.",
+              "Read a third card saying only that a person feels stomach pain after eating. Explain that this does not prove allergy or intolerance and that an adult or clinician must determine the cause."
+            ],
+            "feedback": [
+              "If every stomach ache becomes an allergy, put the two known cases beside the unexplained card: shared symptoms do not identify a cause.",
+              "If intolerance is dismissed as imaginary or a dislike, retain that it can make someone unwell and that their supplied care requirements still matter.",
+              "If the learner says every sensitivity is non-immune, explain that sensitivity is a broad term; allergies are one kind. Do not introduce a false coeliac-equals-lactose model."
+            ],
+            "rationale": "The paired same-food cases hold the food constant while changing the explained process. The unexplained case then tests uncertainty rather than a rehearsed symptom-to-diagnosis lookup.",
+            "sourceClaims": [
+              "Immune versus non-immune distinction and overlap of possible symptoms. No prevalence, detailed IgE sequence or therapeutic diet prescription imported."
+            ]
+          },
+          {
+            "title": "Changed case and safe help",
+            "intendedInsight": "Possible reactions warrant prompt adult help and the supplied care or emergency procedure, not a trial bite or independent diagnosis.",
+            "learnerActions": [
+              "Present an original illustrated case: a child with a known egg allergy has developed an itchy rash after a snack. Ask what might be relevant and who should help; do not ask the learner to diagnose or treat.",
+              "Change the case to a child having difficulty breathing or collapsing after food. State that a prepared adult must immediately use the local emergency procedure; do not wait for two symptoms or let the learner decide whether it is serious enough for help.",
+              "Compare three proposed responses: tell a prepared adult promptly; offer a small taste to test the food; or assume safety because a package has a healthy-food rating. Explain the safe choice and the problems with the others.",
+              "Transfer to a different named trigger and then an uncertain trigger. Retain adult help and supplied individual instructions without inventing medicine, doses, blanket bans or a diagnosis."
+            ],
+            "feedback": [
+              "If the learner proposes a tiny taste, stop the hypothetical plan: a trial exposure is not a child safety test. Return to the adult-prepared care plan.",
+              "If the learner waits for a second symptom, remove that invented threshold; breathing difficulty or collapse calls for the emergency procedure immediately.",
+              "If the learner chooses help but cannot relate any possible trigger or reaction, record the response component as present and revisit the missing knowledge; generic safety words alone do not establish the full claim."
+            ],
+            "rationale": "The changed case checks whether trigger/reaction knowledge guides an appropriately bounded response. Fictional illustrations permit reasoning without exposure, simulated distress, treatment practice or private medical disclosure.",
+            "sourceClaims": [
+              "Possible reaction categories, inclusion and individual plans. Adult drug treatment details, symptom-count triage, food substitutions and BC phone numbers not child tasks."
+            ]
+          }
+        ],
+        "constraints": [
+          "No actual food exposure, tasting challenge, private medical disclosure, symptom enactment, medicine or dose, independent diagnosis or treatment certification.",
+          "No universal symptom-to-diagnosis lookup or claim that every reaction looks alike.",
+          "No requirement to memorise every Canadian priority allergen; source names are illustrative and the shared model spans several food types.",
+          "Food sensitivity is an umbrella term; do not classify all sensitivities as non-immune or equate coeliac disease with lactose intolerance.",
+          "Do not teach an adult anaphylaxis checklist as a child triage threshold: possible reaction gets prompt adult help; severe breathing/collapse concerns follow local emergency procedure without waiting for multiple symptoms.",
+          "No assumption that a rating, healthy-food group, label reading alone or allergy-aware environment guarantees a food is safe for a particular person.",
+          "Use a prepared adult and the current local school/individual care procedure at delivery; do not publish a fictional plan as an actual medical instruction.",
+          "Use the medically identified milk-allergy/lactose-intolerance contrast as one example; do not claim that symptoms alone separate conditions or that all food sensitivities are digestive.",
+          "Common examples are not an exhaustive inventory. Clinical detail, perfect technical vocabulary, exhaustive memorisation and personal medical disclosure are not mastery criteria.",
+          "No forced tasting, sharing food, induced symptom, touch enactment, breathing restriction, medicine practice or child-led exclusion diet.",
+          "A learner may communicate uncertainty and seek help. Do not infer an actual child diagnosis, fear level or medical preparedness from the task."
+        ],
+        "reviewNotes": [
+          "Original task and assessment design has not been tried with learners; low confidence describes pedagogy, not a claim that official health information is false.",
+          "Current official bodies support the bounded content. No source establishes efficacy of these picture-case activities or a particular number of practice cases.",
+          "The full older nutrition, digestion and immune-system claims remain unchanged and are not intrinsic prerequisites for this introductory knowledge model."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Sam has a known milk allergy; Ari has known lactose intolerance. Explain how the same food can cause different problems. Name other foods that can trigger allergies and possible kinds of reaction. Now an illustrated child may be reacting to food: what can you responsibly say, and what should happen next?",
+        "correctAnswer": "Several foods, not only nuts, can trigger allergies in particular people. Allergy involves the immune system and may cause skin, breathing or digestive reactions; lactose intolerance concerns difficulty digesting milk sugar and is not the same as milk allergy. An unexplained symptom does not establish the cause. A prepared adult must help promptly and follow the individual or emergency procedure, with no food challenge or child diagnosis.",
+        "whatMakesItDiscriminate": "A safe-handling script alone can say ask an adult yet miss the food-trigger/reaction model. Conversely, a memorised allergen list can miss symptom uncertainty or propose unsafe testing. The same-food contrast and changed unknown case require both bounded explanation and its limits.",
+        "poeTask": null,
+        "probeDeeper": [
+          "Can a food be nutritious for most people yet unsafe for one named person? Why?",
+          "Does stomach pain by itself tell us whether a person has an allergy?",
+          "Would a high health rating or a friend eating the food establish that it is safe for someone with a known allergy?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Only nuts cause allergy or nutritious foods cannot cause it.",
+            "revealedBy": "Rejects a supplied known egg, fish or milk case because of the food category.",
+            "nextMove": "Contrast the same food across two named fictional people, then select the changed known trigger.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats symptom categories as diagnostic labels.",
+            "revealedBy": "Calls an unexplained stomach ache definitely an allergy or intolerance.",
+            "nextMove": "Return to the paired known cases and the deliberately unknown card; the clinical identity was supplied in the first two, not inferred.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Proposes tasting, waiting for multiple symptoms, medicine dosing or independent diagnosis.",
+            "revealedBy": "The changed-case answer goes beyond prompt adult help and supplied care/emergency procedure.",
+            "nextMove": "Stop the hypothetical unsafe plan, identify the prepared adult and rehearse asking for help without exposure or treatment enactment.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "full": "Identifies varied common triggers and possible reaction categories, explains the supplied allergy/intolerance distinction, retains uncertainty for an unexplained case and uses prompt adult help without unsafe testing or treatment claims.",
+          "partial": "Some trigger/reaction knowledge is present but the same-food contrast or changed-case limit needs further support; do not infer a medical diagnosis.",
+          "gap": "After accessible teaching and a genuinely elicited task, cannot identify the bounded trigger/reaction relation or persists with an unsafe causal/testing inference. Distress, lack of English labels or private medical non-disclosure is not itself evidence of a gap."
+        }
+      },
+      "sources": [
+        {
+          "source": "Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances.html",
+          "claim": "Immune versus non-immune distinction and overlap of possible symptoms. No prevalence, detailed IgE sequence or therapeutic diet prescription imported.",
+          "verified": true
+        },
+        {
+          "source": "Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances/food-allergies.html",
+          "claim": "Varied common trigger families; list includes allergy-like sensitivities, so do not call every listed substance an IgE food allergen or impose the whole list as mastery.",
+          "verified": true
+        },
+        {
+          "source": "HealthLink BC",
+          "url": "https://www.healthlinkbc.ca/living-well/healthy-schools/bc-school-food-toolkit/safety-inclusion/food-allergies-intolerances",
+          "claim": "Possible reaction categories, inclusion and individual plans. Adult drug treatment details, symptom-count triage, food substitutions and BC phone numbers not child tasks.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Codex; current primary health bodies checked; original untested teaching and assessment design",
+        "createdAt": "2026-11-11T05:44:21.745Z",
+        "updatedAt": "2026-11-11T05:44:21.745Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
