@@ -12,21 +12,23 @@
     "notReviewedSourceRecords": 0,
     "FullAuthoring": 444,
     "mixedSkillAndContextualOrientation": 36,
-    "conditionalBindings": 28,
+    "conditionalBindings": 27,
     "contextualRequirements": 12,
     "Unverified": 1,
     "eligibleSourceRecords": 521,
-    "excludedPhysicalEducation": 49
+    "excludedPhysicalEducation": 49,
+    "PartialAuthoring": 1
   },
   "dispositions": {
     "ConditionalArtFormBinding": 11,
-    "ConditionalGraphRepresentation": 7,
+    "ConditionalGraphRepresentation": 6,
     "ConditionalLanguageBinding": 10,
     "ContextualAffectiveRequirement": 6,
     "ContextualMotorDevelopmentRequirement": 1,
     "ContextualReadingEngagement": 5,
     "Full": 444,
     "OutOfScope": 49,
+    "Partial": 1,
     "SkillWithContextualEngagement": 36,
     "Unverified": 1
   },
@@ -447,10 +449,11 @@
       "reviewedHere": 13,
       "pendingHere": 0,
       "dispositions": {
-        "Full": 8,
-        "ConditionalGraphRepresentation": 2,
+        "ConditionalGraphRepresentation": 1,
         "ConditionalLanguageBinding": 1,
-        "ContextualReadingEngagement": 2
+        "ContextualReadingEngagement": 2,
+        "Full": 8,
+        "Partial": 1
       },
       "excludedByUserScope": 0,
       "eligibleRecords": 13
@@ -545,5 +548,6 @@
       }
     ],
     "interpretation": "Formal role-based language requirements remain in scope and can be authored without choosing a fixed language pair."
-  }
+  },
+  "currentComponentReview": "ncert-r1-heard-summary-component-2026-11-11.json"
 }
