@@ -26,8 +26,13 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       const target = report.preparedCases?.[ref];
       assert.ok(target && Object.keys(target).length, 'Missing actual case packet');
       for (const binding of target.dossierRefs ?? []) pointer(readReport(binding.report), binding.pointer);
-      for (const field of protocol.requiredCaseFields ?? []) assert.ok(typeof target[field] === 'string' && target[field].trim(), 'Missing manufacturing duty');
+      for (const field of protocol.requiredCaseFields ?? []) assert.ok(typeof target[field] === 'string' && target[field].trim(), 'Missing prepared task duty');
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
+    }
+    assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (row.code === 'ON-SCI-2022-G5-D2.5') {
+      const mechanisms = protocol.caseRefs.map(ref => report.preparedCases[ref].protectionMechanism);
+      assert.deepEqual([...new Set(mechanisms)].sort(), ['deformation', 'restraint'], 'Missing protective mechanism case');
     }
     if (row.code === 'ON-SCI-2022-G5-C2') {
       const areas = protocol.caseRefs.map(ref => report.preparedCases[ref].area);
@@ -86,9 +91,22 @@ test('Grade 5 manufacturing task preserves people, environment and both mitigati
   for (const field of ['society', 'environment', 'societyAction', 'individualAction']) {
     const damaged = structuredClone(load(`reports/${name}`));
     delete damaged.preparedCases.paper[field];
-    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing manufacturing duty/);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
   }
   const damaged = structuredClone(load(`reports/${name}`));
   delete damaged.resources['paper-process'];
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing case source/);
+});
+
+test('Grade 5 protective equipment needs both actual mechanisms and limits', () => {
+  const name = 'ontario-grade5-protective-equipment-design-2026-11-11.json';
+  for (const field of ['mechanism', 'limit']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases.helmet[field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
+  }
+  const missing = structuredClone(load(`reports/${name}`));
+  missing.protocol.caseRefs = ['helmet'];
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missing : load(`reports/${report}`)), /Missing protective mechanism case/);
+
 });
