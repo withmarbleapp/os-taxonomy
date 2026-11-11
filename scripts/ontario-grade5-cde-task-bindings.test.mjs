@@ -30,6 +30,10 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (row.code === 'ON-SCI-2022-G5-E1.3') {
+      const groups = protocol.caseRefs.map(ref => report.preparedCases[ref].caseGroup);
+      assert.deepEqual([...new Set(groups)].sort(), ['first-nation', 'inuit', 'metis'], 'Missing required community case');
+    }
     if (row.code === 'ON-SCI-2022-G5-D2.1') {
       const roles = protocol.caseRefs.map(ref => report.preparedCases[ref].modelRole);
       assert.deepEqual([...new Set(roles)].sort(), ['combined-bending', 'compression', 'tension'], 'Missing internal-force witness');
@@ -120,4 +124,18 @@ test('Grade 5 internal-force design retains the combined bending witness', () =>
   const damaged = structuredClone(load(`reports/${name}`));
   damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].modelRole !== 'combined-bending');
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing internal-force witness/);
+});
+
+test('Grade 5 conservation preserves every community case and the knowledge-to-action mechanism', () => {
+  const name = 'ontario-grade5-community-conservation-design-2026-11-11.json';
+  for (const group of ['first-nation', 'metis', 'inuit']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].caseGroup !== group);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required community case/);
+  }
+  for (const field of ['knowledge', 'action', 'conservationReasoning', 'evidenceLimit']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases.metis[field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
+  }
 });

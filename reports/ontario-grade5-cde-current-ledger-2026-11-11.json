@@ -3,12 +3,12 @@
   "date": "2026-11-11",
   "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
   "scope": "Grade 5 Science C/D/E only; all 31 source records read, 9 historical Full judgments retained and 22 prior Partials reviewed incrementally. A/common and B/health are outside this child.",
-  "status": "Nine prior residuals resolved through source-fit authoring designs; remaining D/E tasks continue.",
+  "status": "Ten prior residuals resolved through source-fit authoring designs; remaining D/E tasks continue.",
   "counts": {
     "selected": 31,
     "historicalFullRetained": 9,
-    "freshResolvedFull": 9,
-    "remainingPartial": 13
+    "freshResolvedFull": 10,
+    "remainingPartial": 12
   },
   "expectations": [
     {
@@ -327,12 +327,15 @@
       "code": "ON-SCI-2022-G5-E1.3",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Use appropriate community-authoritative sources and explain the knowledge-to-conservation relationship. Australian Country evidence and generic identity lessons cannot be relabelled."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Fresh attributed three-peoples case portfolio and knowledge-to-conservation analysis with explicit source/outcome limits; unchanged generic contributors are components.",
+      "contributingTopicIds": [
+        "mt_VI5kdtf28e",
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-community-conservation-design-2026-11-11.json",
+      "protocolReference": "/protocol"
     },
     {
       "code": "ON-SCI-2022-G5-E2",
