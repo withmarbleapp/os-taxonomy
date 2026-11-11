@@ -24,6 +24,7 @@ function checkBindings(rows, associations, readReport = name => load(`reports/${
     const protocol = pointer(report, row.protocolReference);
     assert.ok(protocol.codes.includes(row.code), 'Protocol does not cover this code');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
+    if (row.disposition === 'Full') for (const code of protocol.requiredSourceCodes ?? []) assert.equal(rows.find(candidate => candidate.code === code)?.disposition, 'Full', 'Incomplete integrated source duty');
     for (const caseId of protocol.caseRefs ?? []) assert.ok(report.preparedCases?.[caseId], 'Missing prepared case');
     for (const asset of protocol.assetRefs ?? []) {
       assert.ok(asset.startsWith('assets/') && !asset.includes('..'), 'Invalid task asset path');
@@ -102,4 +103,13 @@ test('Named-city approximation and plotted answer agree with source and graticul
     assert.ok(Math.abs(Number(marker.cx) - (longitude - west) / (east - west) * panel.width) < 0.02);
     assert.ok(Math.abs(Number(marker.cy) - (north - latitude) / (north - south) * panel.height) < 0.02);
   }
+});
+
+
+test('Grade6 integrated Full cannot bypass an unresolved required specific duty', () => {
+  const damaged = structuredClone(ledger.expectations);
+  const child = damaged.find(row => row.code === 'B1.2');
+  child.disposition = 'Partial';
+  child.remainingConditions = ['A source duty remains unresolved'];
+  assert.throws(() => checkBindings(damaged, contexts), /Incomplete integrated source duty/);
 });
