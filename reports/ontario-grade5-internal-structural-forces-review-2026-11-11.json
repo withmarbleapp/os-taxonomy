@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "280c26179fb320b586c436d77f647ad4baaa0d28",
+  "status": "One new qualitative shared claim; source-fit authoring design, not learner attainment or accepted downstream content.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-D2.1"
+  ],
+  "claimCuration": {
+    "topicId": "mt_p7LBWFX60E",
+    "decision": "Add an independent external-load to internal-member-force relationship, not a grade or country clone.",
+    "closestCandidates": [
+      "mt_wf-SJhZ1kC",
+      "mt_k7GOtslF-x",
+      "mt_lcf8lx-LkZ",
+      "mt_xkn2sf93WJ",
+      "mt_vuNjYx3qOy",
+      "mt_iiUdDUEEGY",
+      "mt_yDZbQODIwp"
+    ],
+    "mismatch": "Whole-body resultant diagrams, contact/non-contact classification and material reshaping can be demonstrated without identifying internal tension/compression and relating the specified beam bending to both. Older quantitative moments/pressure/Hooke claims are not lowered to supply this qualitative operation.",
+    "positive": [
+      "Name the chosen structure/member and distinguish a supplied external load or support interaction from internal tension/compression within it.",
+      "Explain tension in a hanging tie/cable and compression in a supporting column, relating each to a tendency to stretch or shorten and possible deformation rather than assuming immediate failure.",
+      "For a simply supported horizontal beam sagging under a downward central load, identify upper compression and lower tension; explain that balanced external forces do not mean an absence of internal forces.",
+      "Transfer the load-to-internal-effect reasoning to a changed orientation or support case, using supplied facts and stating when more information is needed rather than assuming top always means compression."
+    ],
+    "nearMiss": [
+      "No movement means no forces; gravity itself is the internal tension.",
+      "Calls compression tension because both members support a platform, or assumes a stronger column contains no force.",
+      "Draws correct external arrows but says every internal part is only pushed down, or says the bottom must be compressed because it is lower."
+    ],
+    "transfer": [
+      "Replace the small platform with another safe light load, or rotate an original drawing of a two-ended taut tie. The tension distinction follows how the member is pulled, not vertical page position.",
+      "Provide an original horizontal strut whose ends are pushed towards each other. Compression remains squeezing even when the member is not vertical.",
+      "Give a changed fixture in which a supported member curves the opposite way; supplied lengthwise marks show which side shortens and which lengthens. Identify squeezing/stretching from those facts, not memorised top/bottom labels. If supports/load are not supplied, say the signs cannot be inferred from the silhouette alone."
+    ],
+    "dependenciesAdded": [],
+    "existingClaimsChanged": []
+  },
+  "preparedCases": {
+    "hanging-tie": {
+      "given": "A small card platform is suspended by a vertical cord from a fixed stand. The platform and load are at rest. Choose the cord as the member. The load pulls its lower end down and the support pulls its upper end up. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+      "reasoning": "The cord transmits internal tension: neighbouring parts pull on one another, tending to lengthen it. Opposite end interactions can balance its whole-body motion without removing the tension.",
+      "nearMiss": "No movement means no forces; gravity itself is the internal tension.",
+      "changedCase": "Replace the small platform with another safe light load, or rotate an original drawing of a two-ended taut tie. The tension distinction follows how the member is pulled, not vertical page position.",
+      "modelRole": "tension"
+    },
+    "supporting-column": {
+      "given": "A short vertical piece of firm foam supports a small flat platform. Choose the foam column as the member. The platform pushes its top down and the base pushes its bottom up. Use only small loads on a tabletop. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+      "reasoning": "Internal compression squeezes neighbouring parts together, tending to shorten the column. It may deform slightly or resist visibly; absence of obvious change does not establish absence of force.",
+      "nearMiss": "Calls compression tension because both members support a platform, or assumes a stronger column contains no force.",
+      "changedCase": "Provide an original horizontal strut whose ends are pushed towards each other. Compression remains squeezing even when the member is not vertical.",
+      "modelRole": "compression"
+    },
+    "sagging-beam": {
+      "given": "A horizontal flexible foam strip rests on two low supports, one at each end. A small safe load presses its centre downward and the strip sags without slipping off. Treat this as the stated simple beam case; the adult supplies the fact that upper lengthwise fibres are compressed and lower fibres stretched. No microscopic observation is claimed. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+      "reasoning": "The downward external load and upward support interactions can keep the whole beam at rest. Inside the sagging beam, the upper side is in compression and the lower side in tension; bending combines those effects, with a different internal distribution from the uniform tie or column.",
+      "nearMiss": "Draws correct external arrows but says every internal part is only pushed down, or says the bottom must be compressed because it is lower.",
+      "changedCase": "Give a changed fixture in which a supported member curves the opposite way; supplied lengthwise marks show which side shortens and which lengthens. Identify squeezing/stretching from those facts, not memorised top/bottom labels. If supports/load are not supplied, say the signs cannot be inferred from the silhouette alone.",
+      "modelRole": "combined-bending"
+    }
+  },
+  "resources": {
+    "0": {
+      "url": "https://www.teachengineering.org/lessons/wpi_lesson_1",
+      "claim": "External loading produces internal resistance in a structure or member; tension tends to lengthen and compression tends to shorten it. Bending can combine stretching on one side with squeezing on the other."
+    },
+    "1": {
+      "url": "https://www.pbs.org/wgbh/buildingbig/lab/forces_text.html",
+      "claim": "Common structural examples include columns in compression and suspended cables in tension; bending combines stretching on one side with squeezing on the other."
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-D2.1"
+    ],
+    "contributorIds": [
+      "mt_wf-SJhZ1kC",
+      "mt_p7LBWFX60E"
+    ],
+    "caseRefs": [
+      "hanging-tie",
+      "supporting-column",
+      "sagging-beam"
+    ],
+    "requiredCaseFields": [
+      "given",
+      "reasoning",
+      "nearMiss",
+      "changedCase"
+    ],
+    "actions": [
+      [
+        "Adult setup and supplied case: A small card platform is suspended by a vertical cord from a fixed stand. The platform and load are at rest. Choose the cord as the member. The load pulls its lower end down and the support pulls its upper end up. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+        "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+        "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+        "Predict and explain this changed case: Replace the small platform with another safe light load, or rotate an original drawing of a two-ended taut tie. The tension distinction follows how the member is pulled, not vertical page position."
+      ],
+      [
+        "Adult setup and supplied case: A short vertical piece of firm foam supports a small flat platform. Choose the foam column as the member. The platform pushes its top down and the base pushes its bottom up. Use only small loads on a tabletop. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+        "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+        "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+        "Predict and explain this changed case: Provide an original horizontal strut whose ends are pushed towards each other. Compression remains squeezing even when the member is not vertical."
+      ],
+      [
+        "Adult setup and supplied case: A horizontal flexible foam strip rests on two low supports, one at each end. A small safe load presses its centre downward and the strip sags without slipping off. Treat this as the stated simple beam case; the adult supplies the fact that upper lengthwise fibres are compressed and lower fibres stretched. No microscopic observation is claimed. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+        "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+        "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+        "Predict and explain this changed case: Give a changed fixture in which a supported member curves the opposite way; supplied lengthwise marks show which side shortens and which lengthens. Identify squeezing/stretching from those facts, not memorised top/bottom labels. If supports/load are not supplied, say the signs cannot be inferred from the silhouette alone."
+      ]
+    ],
+    "remainingConditions": []
+  },
+  "sourceBoundary": "One actual internal-force duty, not a mandatory five-term checklist, older quantitative topic lowering, or complete overall D2 from this card alone. Whole hard closure inventories remain independent.",
+  "sourceAttributionLimits": "The sagging simply supported beam is an original bounded model with its loading/support facts supplied. PBS and TeachEngineering support general internal tension/compression and bending facts; their distinct fixtures do not establish this support case or a universal top/bottom rule. No figure, Flash animation or universal failure-in-tension rule is adopted.",
+  "consumerBoundary": "One additive independent claim; no mastery transfer from existing external-force or reshaping estimates, no learner reset. Low confidence describes untested teaching, not a claim of intervention efficacy."
+}

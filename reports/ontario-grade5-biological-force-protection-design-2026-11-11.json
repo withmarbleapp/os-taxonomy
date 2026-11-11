@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "314565e37daf0ae79f97aa55f5c5751e6d8dee5d",
+  "status": "Four prepared source-based biological structure/force cases resolve this authoring duty through unchanged claims, not observed learner success or complete adaptation mastery.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-D2.4"
+  ],
+  "resources": {
+    "swamp-roots": {
+      "url": "https://biodiversitysg.nparks.gov.sg/our-ecosystems/terrestrial-and-freshwater-habitats/freshwater-swamps-in-singapore/",
+      "locator": "15 June 2026 main habitat and adaptation paragraphs",
+      "readScope": "Complete short main body read; photographs not visually assessed.",
+      "facts": "Waterlogged unstable soil is the context; buttresses and stilt roots provide support. Breathing roots have a distinct function."
+    },
+    "mangrove-roots": {
+      "url": "https://biodiversitysg.nparks.gov.sg/our-ecosystems/coastal-and-marine-habitats/mangrove-forests-in-singapore/",
+      "locator": "1 July 2026, All about mangrove roots, buttress and stilt sections",
+      "readScope": "Main habitat, four root-type and conservation sections read; no linked storymap or image inspection claim.",
+      "facts": "Flared bases support tall trees; stilt roots stabilise plants in soft wet ground. Pencil/knee roots support gas exchange, not automatically the same mechanical role."
+    },
+    "root-anchorage": {
+      "url": "https://www.rhs.org.uk/plants/types/trees/how-to-stake-a-tree",
+      "locator": "Introduction, Quick facts, windrock explanation and Aftercare",
+      "readScope": "Complete main advice text read, no image or linked article inspection.",
+      "facts": "Developing roots anchor a tree; wind movement can loosen/damage roots. Staking temporarily supplements support while the root system establishes. No pupil staking activity is proposed."
+    },
+    "shell-mechanics": {
+      "url": "https://hu.gatech.edu/Publications/Hu11-shells.pdf",
+      "locator": "Hu, Sielert and Gordon (2011), printed 1197–1204, especially section 4.1",
+      "readScope": "Abstract/introduction/methods and turtle model/limits text read. No figure inspection or full-paper visual claim; numerical scaling is not taught.",
+      "facts": "Museum shell geometry and a simplified model are consistent with resistance to predator bites; sufficiently strong predators can break shells. This is bounded model evidence, not a direct live bite test or universal protection."
+    },
+    "porcupine": {
+      "url": "https://animals.sandiegozoo.org/animals/porcupine",
+      "locator": "ABOUT, rigid quills/defensive response/no shooting/unprotected underside paragraphs",
+      "readScope": "Complete main text read; no image/video inspected.",
+      "facts": "Rigid defensive quills can puncture a contacting threat, discouraging attack. Quills are not fired, and some predators can reach the unprotected underside."
+    }
+  },
+  "preparedCases": {
+    "buttress": {
+      "organismGroup": "plant",
+      "given": "A rainforest/swamp tree has broad plank-like buttresses at its base, in the unstable wet-soil setting described by NParks. A supplied original wind-load diagram shows an external sideways push; it is a model, not a measured storm outcome.",
+      "feature": "The spreading basal extensions support and brace the tree.",
+      "harmfulForce": "Sideways loading that can cause leaning or overturning.",
+      "mechanism": "Support at the base helps keep the tall tree steady against this loading; connect the given force to support rather than only naming water/nutrient uptake.",
+      "limit": "NParks supports the support function; this is not proof of a failure threshold or that every rainforest soil/root system has identical depth or conditions.",
+      "sourceRefs": [
+        "swamp-roots",
+        "mangrove-roots",
+        "root-anchorage"
+      ]
+    },
+    "stilt-root": {
+      "organismGroup": "plant",
+      "given": "A mangrove grows with stilt-like roots spreading from above the ground into soft wet soil, as in the NParks account. Compare it with the separately described pencil roots.",
+      "feature": "Stilt roots spread into the ground to stabilise the plant.",
+      "harmfulForce": "Loads tending to tip or shift a tall plant in soft ground.",
+      "mechanism": "The supporting root arrangement helps the plant remain stable. Distinguish this from an upright pencil root whose stated function is gas exchange, not assume every above-ground root protects mechanically.",
+      "limit": "No storm speed, identical soil strength, force measurement or claim that any root shape prevents every storm loss is supplied.",
+      "sourceRefs": [
+        "mangrove-roots"
+      ]
+    },
+    "turtle": {
+      "organismGroup": "animal",
+      "given": "A turtle has a rigid shell covering vulnerable body regions. The study reports measured shell geometry and a model relating shell strength to predator bites; its discussion also records that some strong predators break shells.",
+      "feature": "A relatively rigid surrounding shell forms a physical barrier.",
+      "harmfulForce": "A predator’s biting/squeezing contact force.",
+      "mechanism": "The shell can resist biting loads and protect tissue when the load does not exceed its capacity; the bite force does not magically disappear.",
+      "limit": "Do not infer that every shell is unbreakable, that every turtle retracts its head, or that the authors performed live predator tests. No quantitative shell equation is required.",
+      "sourceRefs": [
+        "shell-mechanics"
+      ]
+    },
+    "porcupine": {
+      "organismGroup": "animal",
+      "given": "A porcupine has rigid quills on its back and rump. The zoo describes quills contacting potential threats and an underside that is not similarly covered.",
+      "feature": "Sharp rigid quills stand out towards a contacting predator.",
+      "harmfulForce": "An attacking predator’s bite or bodily contact that could injure the animal.",
+      "mechanism": "Contact with the sharp quills can hurt/deter the attacker, reducing its access to the protected body. This is a defensive-contact mechanism, not a claim that quills absorb all the bite force like a cushion.",
+      "limit": "Quills are not shot. The animal remains vulnerable, including at the underside; neither having quills nor having a shell guarantees survival.",
+      "sourceRefs": [
+        "porcupine"
+      ]
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-D2.4"
+    ],
+    "contributorIds": [
+      "mt_Wx5m6mwkpj",
+      "mt_8VA40Tumth"
+    ],
+    "caseRefs": [
+      "buttress",
+      "stilt-root",
+      "turtle",
+      "porcupine"
+    ],
+    "requiredCaseFields": [
+      "given",
+      "feature",
+      "harmfulForce",
+      "mechanism",
+      "limit"
+    ],
+    "actions": [
+      "Actually use both plant cases and both animal cases. Identify the physical trait, the specified harmful loading/contact, how the trait reduces harm and one supported limit. Source cards remain available; no new species-fact recall inventory is imposed.",
+      "Construct and defend a structure→mechanism→protection argument for each kind of organism. Contrast a supporting root with a breathing root and shell resistance with quill deterrence, rather than merely labelling all traits adaptations.",
+      "Changed case: an original unfamiliar-organism brief supplies a broad stabilising base, a thin gas-exchange tube and no loading/strength data. Explain which feature could address tipping, which does a different job, and what cannot be concluded. Do not infer a guaranteed wind threshold.",
+      "Reject a tempting explanation that a turtle’s shell removes the bite force or a porcupine shoots quills. Repair it using the actual source evidence and keep the limits."
+    ],
+    "positive": "Both plant/animal plurality and named-force→feature→mechanism reasoning, with source-grounded uncertainty.",
+    "nearMiss": "Only explains water loss/light access, calls every root support, names a shell without the bite relation, or assumes a trait guarantees survival.",
+    "transfer": "A changed supplied feature/load account is interpreted by function and evidence, with insufficient facts identified.",
+    "remainingConditions": []
+  },
+  "wholeClaimBoundary": [
+    "Rainforest Plant Adaptations retains its whole existing drip-tip, buttress, epiphyte, liana and adaptation requirements. Only its support/anchorage component contributes here; neither stilt roots nor this task silently widens that card.",
+    "Structures for Survival retains actual argument construction, internal/external structures and non-defence functions. These protection cases contribute a selected component; they do not certify its entire internal/reproduction/growth inventory. Its full existing plant-parts and skeleton/muscle readiness is retained.",
+    "No organism handling, harmful live loading or deliberate damage is required. Verbal source evidence and original safe representations account for this descriptive source duty; any complete-topic observation tasks remain separate."
+  ],
+  "consumerBoundary": "All current IDs, claims, guides, contexts, ages and dependencies unchanged; no learner/mastery transfer. Historical confidence flags are not freshly certified."
+}

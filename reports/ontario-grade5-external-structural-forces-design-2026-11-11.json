@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "cc04174e4ee1a45d20ffd75150d3faa842da8709",
+  "status": "Fresh source-fit structural application of unchanged diagram/contact/reshaping contributors; no new canonical content or observed learner performance.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-D2.2"
+  ],
+  "preparedCases": {
+    "hanging-tie": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-internal-structural-forces-review-2026-11-11.json",
+          "pointer": "/preparedCases/hanging-tie"
+        }
+      ],
+      "chosenBody": "Cord only, with its own weight negligible in the explicitly stated introductory model.",
+      "externalForces": "Load/platform interaction pulls downward on the cord; support pulls upward at its other end.",
+      "effects": "At rest, the whole cord has balanced external forces; those loads can stretch the cord and are related to the internal tension, not identical to it.",
+      "changedCase": "Draw the same chosen member in a changed orientation or with a changed supplied load/support interaction. Identify the outside interactions acting ON it; if the member’s own weight is no longer negligible include its weight as another external force. Use given magnitudes/relative arrows only, not invented measured newtons.",
+      "limit": "This is a bounded original model; chosen-body force balance, shape response and internal loading are distinct accounts. No construction safety limit or load capacity is inferred."
+    },
+    "supporting-column": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-internal-structural-forces-review-2026-11-11.json",
+          "pointer": "/preparedCases/supporting-column"
+        }
+      ],
+      "chosenBody": "Foam column only, with its own weight negligible in the explicitly stated introductory model.",
+      "externalForces": "Platform pushes down on the column; base pushes up on the column.",
+      "effects": "Whole-body rest can coexist with squeezing/deformation. A column can resist its supplied small load; visible non-motion does not show no forces.",
+      "changedCase": "Draw the same chosen member in a changed orientation or with a changed supplied load/support interaction. Identify the outside interactions acting ON it; if the member’s own weight is no longer negligible include its weight as another external force. Use given magnitudes/relative arrows only, not invented measured newtons.",
+      "limit": "This is a bounded original model; chosen-body force balance, shape response and internal loading are distinct accounts. No construction safety limit or load capacity is inferred."
+    },
+    "sagging-beam": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-internal-structural-forces-review-2026-11-11.json",
+          "pointer": "/preparedCases/sagging-beam"
+        }
+      ],
+      "chosenBody": "Foam beam only, with its own weight negligible in the explicitly stated introductory model.",
+      "externalForces": "Central applied load pushes down on the beam; the two supports push up on it.",
+      "effects": "The beam bends downward under the stated loading even though its overall support/load balance holds. Do not infer no external force or no deformation from rest.",
+      "changedCase": "Draw the same chosen member in a changed orientation or with a changed supplied load/support interaction. Identify the outside interactions acting ON it; if the member’s own weight is no longer negligible include its weight as another external force. Use given magnitudes/relative arrows only, not invented measured newtons.",
+      "limit": "This is a bounded original model; chosen-body force balance, shape response and internal loading are distinct accounts. No construction safety limit or load capacity is inferred."
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-D2.2"
+    ],
+    "contributorIds": [
+      "mt_k7GOtslF-x",
+      "mt_lcf8lx-LkZ",
+      "mt_wf-SJhZ1kC"
+    ],
+    "caseRefs": [
+      "hanging-tie",
+      "supporting-column",
+      "sagging-beam"
+    ],
+    "requiredCaseFields": [
+      "chosenBody",
+      "externalForces",
+      "effects",
+      "changedCase",
+      "limit"
+    ],
+    "actions": [
+      "Actually identify the chosen member and the external load/support interactions in all three prepared cases. Distinguish a force on this member from a force it exerts on another object and from its internal tension/compression.",
+      "Produce and interpret member force diagrams: arrows start on the chosen body, direction is the direction of force and length means supplied relative magnitude. A supported resting member must not be drawn with no forces. Use equal total upwards/downwards loading in the stated balanced models; the two beam supports together balance the central load, neither alone is assumed to equal it.",
+      "Explain the actual structural effects: stretching a cord, squeezing a column, bending the beam. A stationary whole structure can deform; relate supplied contact load/support to shape response and treat a real member’s gravitational weight as external when not negligible.",
+      "Transfer to the changed orientation/added-load case, distinguishing contact from gravitational interaction without requiring an irrelevant magnetic demonstration. Report uncertainty when load/support details are missing."
+    ],
+    "remainingConditions": []
+  },
+  "contributionRoles": {
+    "mt_k7GOtslF-x": "Translate and interpret external forces on a specified body using arrow direction and relative magnitude. Whole diagram conventions are preserved; no moment calculations introduced.",
+    "mt_lcf8lx-LkZ": "Distinguish contact support/loading from non-contact gravitational interaction. The whole magnet/vacuum operation remains unchanged and is not inferred from this selected structural application.",
+    "mt_wf-SJhZ1kC": "Relate supplied loading to observable shape effects without implying a new substance. Full four-action material-response mastery remains separately assessed."
+  },
+  "sourceBoundary": "Actual D2.2 requires external force identification and structural effects. These supported structural cases test that application directly rather than relying solely on a resting-book diagram; no exhaustive force-word list is invented.",
+  "consumerBoundary": "All old claims, guides, source associations, exact intervals and hard paths are preserved. No learner state, mastery transfer or publishing action."
+}

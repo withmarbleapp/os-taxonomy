@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "97a7c3d2e443fe5a766f8fa905eb29b0c92a9ddc",
+  "status": "Three residual source duties accounted for through supplied source-bound original scenarios and unchanged contributors. This is authoring/task design, not real-building assessment, observed pupil success or disaster-outcome certification.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-D1.1",
+    "ON-SCI-2022-G5-D1.2",
+    "ON-SCI-2022-G5-D1"
+  ],
+  "resources": {
+    "wind": {
+      "url": "https://www.weather.gov/mlb/seasonal_wind_rules",
+      "locator": "High Winds Safety Rules and HIGH WINDS main sections",
+      "readScope": "Complete selected main safety/effects/preparation text read, no image inspection.",
+      "facts": "Strong winds break branches, topple trees, loosen objects and damage buildings, with disruption to transport/power. This supports structural and social effects, not a measured local loss prediction."
+    },
+    "urban": {
+      "url": "https://home4.nyc.gov/site/em/ready/high-winds.page",
+      "locator": "High Winds main causes/effects and What to Do Before sections",
+      "readScope": "Main body read; no warning-speed inventory, current channel reliability or image inspection claimed.",
+      "facts": "City guidance includes securing construction/building equipment and loose objects before an event; trees and debris can damage structures and disrupt services."
+    },
+    "roof": {
+      "url": "https://basc.pnnl.gov/resource-guides/retrofit-existing-roofs-hurricane-high-wind-and-seismic-resistance",
+      "locator": "Scope and Description opening strengthening roof/deck/wall connections",
+      "readScope": "Scope/Description main mechanism paragraphs read; not all long technical tabs, compliance rules, figures or linked guides.",
+      "facts": "Strengthened roof-wall/deck connections resist uplift and bracing can resist earthquake shear. Opening protection addresses debris damage; these do not guarantee every structure survives."
+    },
+    "alaska": {
+      "url": "https://repository.library.noaa.gov/view/noaa/38588/noaa_38588_DS1.pdf",
+      "locator": "Alaska Sea Grant/UAF, June 2020; printed 12–14/PDF 11–13 windstorms; printed 26–28/PDF 25–27 foundation/connections",
+      "readScope": "Actual selected main text and introductory attribution/disclaimer read; diagrams not visually read and no whole 34-page review asserted.",
+      "facts": "The handbook discusses wind exposure, roof/window protection and ties connecting roof to foundation; post/pad buildings need supported stable foundations and suitable connections. It advises professional assessment because conditions and building types differ. No universal DIY specification is adopted."
+    },
+    "quake": {
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/what-are-effects-earthquakes?qt-science_center_objects=0",
+      "locator": "Ground Shaking and Surface Faulting sections, source attributed to Hays 1981",
+      "readScope": "Complete selected ground-shaking/surface-faulting body read; no seismic-wave speed/height/frequency claims taught or figure inspection.",
+      "facts": "Ground shaking can vibrate/damage buildings; site and construction affect consequences. Underground fault movement and structural surface effects are distinguished."
+    },
+    "slope": {
+      "url": "https://www.usgs.gov/faqs/what-a-landslide-and-what-causes-one?items_per_page=6&page=1",
+      "locator": "Complete opening FAQ answer before Related resources",
+      "readScope": "Actual full FAQ answer read, not linked studies or videos.",
+      "facts": "Gravity drives downslope soil/rock movement; earthquake shaking can trigger failure where loading exceeds material resistance. Local strength, water and other factors matter."
+    }
+  },
+  "preparedCases": {
+    "wind-tree": {
+      "caseKind": "natural-effects",
+      "setting": "Original illustrative wooded community edge, not a measured disaster record.",
+      "structure": "Natural tree/trunk/branches/root anchorage.",
+      "forceAndEffect": "Wind pushes/bends branches and trunk; severe loading can break limbs or topple a tree. Relate that loading and anchorage to the structural effect, not merely identify windy weather.",
+      "society": "A falling branch/tree can obstruct access or damage power infrastructure, disrupting travel/services as reported in the weather guidance.",
+      "environment": "Damage removes or alters living tree structure and associated habitat. A fictional before/after habitat sketch may illustrate the consequence; no counted ecological loss/recovery is claimed.",
+      "method": "Compare assessed tree management and securing nearby objects with structural roof improvements; one method does not address every force or habitat effect.",
+      "limit": "Tree condition, soil/root support and wind vary; do not infer a failure speed or prescribe pupil tree work.",
+      "sourceRefs": [
+        "wind",
+        "urban"
+      ]
+    },
+    "wind-roof": {
+      "caseKind": "built-effects",
+      "setting": "Original illustrative occupied timber-frame house, with stated loose roof-wall connection.",
+      "structure": "Built roof/wall/opening assembly.",
+      "forceAndEffect": "Supplied wind-uplift/loading account can pull weak roof connections apart; flying debris can strike openings. Stronger suitable connections and impact protection act on different failure routes.",
+      "society": "Damage can displace occupants and interrupt services; repairs and suitable professional access have costs. No invented price or guaranteed savings is supplied.",
+      "environment": "Damaged structures/materials can become debris; compare keeping sound material in service with replacement material/waste, as an explicitly reasoned consequence rather than measured lifecycle totals.",
+      "method": "Professional roof-wall connection strengthening and suitable opening protection, distinguishing resistance to uplift from resistance to debris impact.",
+      "limit": "Source examples concern particular existing homes, not all roofs or a Canadian building-code certificate.",
+      "sourceRefs": [
+        "roof",
+        "wind"
+      ]
+    },
+    "quake-slope": {
+      "caseKind": "natural-effects",
+      "setting": "Original illustrative steep rock/soil slope with a nearby route; no real slope safety assessment.",
+      "structure": "Natural slope/rock arrangement.",
+      "forceAndEffect": "Earthquake shaking can disturb a marginally stable slope, after which gravity moves material downhill when resistance is exceeded. Distinguish trigger, gravitational loading and the resulting fall/slide.",
+      "society": "A supplied fictional route below the slope can be obstructed; explain why siting and professional hazard assessment matter without inventing a real road closure.",
+      "environment": "Rock/soil movement changes landform and can cover vegetation; extent and recovery require evidence not provided here.",
+      "method": "Use a qualified hazard/siting assessment rather than assume a roof strap stabilises a whole cliff.",
+      "limit": "Not all earthquakes trigger all slopes and not all landslides are earthquakes; water, material and geometry influence risk.",
+      "sourceRefs": [
+        "slope",
+        "quake"
+      ]
+    },
+    "quake-building": {
+      "caseKind": "built-effects",
+      "setting": "Original illustrative house whose foundation/frame connections are described as weak.",
+      "structure": "Built house frame/foundation.",
+      "forceAndEffect": "Ground motion makes supports move and the frame deform; inadequate connections can separate. A supported tied load path/bracing helps resist the stated movement, without making the shaking disappear.",
+      "society": "Occupant access to shelter/services can be affected; assess repair/reinforcement and disruption rather than assuming stronger always means affordable.",
+      "environment": "Damage creates material debris and rebuilding demands; no life-cycle comparison is inferred without actual data.",
+      "method": "Suitable professionally designed frame/foundation connections/bracing, supplied by the technical sources. Compare to wind-opening protection to show hazard-method fit.",
+      "limit": "No promise that any tie pattern makes any building safe, no calculated seismic capacity or instruction to carry out retrofit work.",
+      "sourceRefs": [
+        "alaska",
+        "quake",
+        "roof"
+      ]
+    },
+    "urban-method": {
+      "caseKind": "method-setting",
+      "communitySetting": "urban",
+      "setting": "Original fictional dense town block: roofs/building equipment above pedestrians, adjacent properties, limited work space; an inspection service and trained contractor can be scheduled. These are supplied case facts, not universal traits of cities.",
+      "structure": "Built roof/equipment/openings on a specified building.",
+      "forceAndEffect": "Wind can lift loose components and throw debris towards nearby structures/people.",
+      "method": "Secure loose construction/equipment before the event and have qualified adults assess roof connections/opening protection, using the supplied sources.",
+      "suitability": "Nearby exposure makes preventing falling/flying components relevant; plan work access and affected neighbours as well as the physical connection.",
+      "constraint": "A building owner/qualified contractor must choose suitable work; a pupil cannot certify another property or transfer one low-rise detail to every tall building.",
+      "sourceRefs": [
+        "urban",
+        "roof"
+      ]
+    },
+    "rural-method": {
+      "caseKind": "method-setting",
+      "communitySetting": "rural",
+      "setting": "Original fictional rural timber-frame home: an exposed plot, accessible roof space, road access for a qualified contractor, limited repair budget and a nearby mature tree. Facts are supplied for the task, not inferred from a rural label.",
+      "structure": "Roof/wall and nearby tree as separate structures.",
+      "forceAndEffect": "Wind uplift can separate a weak roof connection; branch fall is a distinct loading/impact route.",
+      "method": "Compare professionally assessed roof-wall ties with appropriate tree inspection/management and opening protection. Explain what each would and would not address.",
+      "suitability": "The specified accessible structure permits assessment of a roof retrofit; compare budget/need rather than prescribe replacement of sound materials. Tree work and roof work solve different routes to harm.",
+      "constraint": "Accessibility and affordability are given rather than assumed for all rural places; pupils recommend a reasoned priority and identify further information, not a construction specification.",
+      "sourceRefs": [
+        "roof",
+        "wind",
+        "alaska"
+      ]
+    },
+    "remote-method": {
+      "caseKind": "method-setting",
+      "communitySetting": "remote",
+      "setting": "Original fictional remote community building: pad/post foundation, exposed coastal winds, seasonal delivery of replacement parts and a limited visiting-contractor window. Local knowledge and qualified inspection inform the case; no real community is labelled unsafe.",
+      "structure": "Specified roof/frame/post/foundation assembly.",
+      "forceAndEffect": "Wind loading and possible ground/support movement can affect different connections; a tied roof alone cannot repair an unstable foundation.",
+      "method": "Assess foundation stability and suitable continuous connections with qualified advice, plan inspection/parts in the stated delivery window, and compare with securing loose items/opening protection before storms.",
+      "suitability": "The whole support path and the explicit access/maintenance schedule matter. A method needing unavailable materials or unverified ground anchorage is conditional rather than automatically suitable.",
+      "constraint": "Alaska 2020 supplies introductory mechanism/examples, not a universal law for remote/Indigenous communities, permafrost or Ontario codes. No rapid on-demand specialist service is assumed.",
+      "sourceRefs": [
+        "alaska",
+        "roof"
+      ]
+    }
+  },
+  "protocols": {
+    "D1.1": {
+      "codes": [
+        "ON-SCI-2022-G5-D1.1"
+      ],
+      "contributorIds": [
+        "mt_NVr4AhsvIq",
+        "mt_iiUdDUEEGY",
+        "mt_wf-SJhZ1kC"
+      ],
+      "caseRefs": [
+        "wind-tree",
+        "wind-roof",
+        "quake-slope",
+        "quake-building"
+      ],
+      "requiredCaseFields": [
+        "setting",
+        "structure",
+        "forceAndEffect",
+        "method",
+        "society",
+        "environment",
+        "limit"
+      ],
+      "actions": [
+        "Use the actual source explanations to connect external loading/shaking to effects on natural AND built structures, keeping earthquake cause separate from its surface effects. Actually analyse both wind and earthquake cases, not just name hazards.",
+        "For each selected case, explain a method’s physical reason, social consequence/constraint and environmental trade-off or limit. Distinguish resistance, mitigation and guaranteed prevention; do not invent a damage probability, threshold or measured outcome.",
+        "Change one decisive fact: the ground is unstable, the work/materials cannot arrive before the storm, or the hazard is debris impact rather than uplift. Revise the proposed method or state the need for qualified further evidence. No pupil installation or live hazard test."
+      ],
+      "remainingConditions": []
+    },
+    "D1.2": {
+      "codes": [
+        "ON-SCI-2022-G5-D1.2"
+      ],
+      "contributorIds": [
+        "mt_iiUdDUEEGY",
+        "mt_yDZbQODIwp"
+      ],
+      "caseRefs": [
+        "urban-method",
+        "rural-method",
+        "remote-method"
+      ],
+      "requiredCaseFields": [
+        "setting",
+        "structure",
+        "forceAndEffect",
+        "method",
+        "suitability",
+        "constraint"
+      ],
+      "actions": [
+        "Actually evaluate all urban, rural and remote prepared cases, using their supplied structure/load, access, maintenance and professional-resource facts rather than setting labels alone.",
+        "For each selected case, explain a method’s physical reason, social consequence/constraint and environmental trade-off or limit. Distinguish resistance, mitigation and guaranteed prevention; do not invent a damage probability, threshold or measured outcome.",
+        "Change one decisive fact: the ground is unstable, the work/materials cannot arrive before the storm, or the hazard is debris impact rather than uplift. Revise the proposed method or state the need for qualified further evidence. No pupil installation or live hazard test."
+      ],
+      "remainingConditions": []
+    },
+    "D1": {
+      "codes": [
+        "ON-SCI-2022-G5-D1"
+      ],
+      "contributorIds": [
+        "mt_NVr4AhsvIq",
+        "mt_iiUdDUEEGY",
+        "mt_wf-SJhZ1kC",
+        "mt_yDZbQODIwp"
+      ],
+      "caseRefs": [
+        "wind-tree",
+        "wind-roof",
+        "quake-slope",
+        "quake-building",
+        "urban-method",
+        "rural-method",
+        "remote-method"
+      ],
+      "requiredCaseFields": [
+        "setting",
+        "structure",
+        "forceAndEffect",
+        "method"
+      ],
+      "actions": [
+        "Use the actual source explanations to connect external loading/shaking to effects on natural AND built structures, keeping earthquake cause separate from its surface effects. Actually analyse both wind and earthquake cases, not just name hazards.",
+        "For each selected case, explain a method’s physical reason, social consequence/constraint and environmental trade-off or limit. Distinguish resistance, mitigation and guaranteed prevention; do not invent a damage probability, threshold or measured outcome.",
+        "Change one decisive fact: the ground is unstable, the work/materials cannot arrive before the storm, or the hazard is debris impact rather than uplift. Revise the proposed method or state the need for qualified further evidence. No pupil installation or live hazard test."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "contributionRoles": {
+    "mt_NVr4AhsvIq": "Earthquake underground cause versus ground-shaking effect; no whole structural-engineering claim inferred.",
+    "mt_iiUdDUEEGY": "Weather-load/design-response comparisons and actual suitability reasoning; one strap is not the complete weather-engineering repertoire.",
+    "mt_wf-SJhZ1kC": "Loading-to-shape/change reasoning for the selected natural and built structures; full existing reshaping operation remains intact.",
+    "mt_yDZbQODIwp": "Earthquake structure/material response and comparison; existing isolation/bracing/damping knowledge remains whole and is not certified from a single connection task."
+  },
+  "sourceAndScopeLimits": [
+    "Scenario constraints are original explicitly supplied fictional facts; verified sources support mechanisms, not a claim that these places were surveyed or that real retrofits succeeded.",
+    "Actual source duties require analysis/methods across community settings; no particular real locality or child-owned building is mandatory. These fully prepared scenarios avoid an unfilled own-place resource dependency.",
+    "All existing full cards/guides/hard paths remain intact; no older quantitative bundle, pressure equation, base-isolation requirement for every source case or country-specific building code is imported.",
+    "Natural structural effects and human-built damage, society/environment consequences and all three setting-specific method justifications must actually be assessed, not inferred from association counts."
+  ],
+  "consumerBoundary": "Four overall component associations only, no claim/guide/age/dependency changes or learner-state action."
+}
