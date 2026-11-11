@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "status": "Draft integration proposal; not accepted main, published staging, complete Ontario coverage or learner attainment.",
+  "acceptedBase": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "sourceLeaves": [
+    {
+      "pullRequest": 138,
+      "url": "https://github.com/withmarbleapp/os-taxonomy/pull/138",
+      "head": "02d258100284ee8b90a090d218726b684113f671"
+    },
+    {
+      "pullRequest": 136,
+      "url": "https://github.com/withmarbleapp/os-taxonomy/pull/136",
+      "head": "0d9aa319b0bf90cc483510c5fb53e112bbfb3835"
+    },
+    {
+      "pullRequest": 137,
+      "url": "https://github.com/withmarbleapp/os-taxonomy/pull/137",
+      "head": "6569684fbc3b3016619a1d746227a716b352ffe6"
+    },
+    {
+      "pullRequest": 117,
+      "url": "https://github.com/withmarbleapp/os-taxonomy/pull/117",
+      "head": "dab46d37413bb6e3be7c76b1f71c2bbdd4a69648"
+    },
+    {
+      "pullRequest": 114,
+      "url": "https://github.com/withmarbleapp/os-taxonomy/pull/114",
+      "head": "a795b132d962bbd711af7a67f370044f4579276f"
+    }
+  ],
+  "reviewedSourceScopes": {
+    "india": {
+      "selectedCatalogue": 570,
+      "FullAuthoring": 492,
+      "mixedSkillAndContextual": 37,
+      "conditionalBindings": 28,
+      "contextualRequirements": 12,
+      "Unverified": 1
+    },
+    "ontarioFrench": {
+      "primarySourceRecords": 594,
+      "FullAuthoring": 570,
+      "PartialLocalResourceBinding": 24
+    },
+    "ontarioSocialGrades1to4": {
+      "sourceRecords": 161,
+      "FullAuthoring": 159,
+      "PartialChronology": 2
+    }
+  },
+  "integrationCounts": {
+    "topics": {
+      "baseRows": 1858,
+      "mergedRows": 1899,
+      "newRows": 41,
+      "changedOldRows": 7,
+      "exactReviewedUnion": true,
+      "stableBaseAndAppendSequence": true
+    },
+    "teaching-research": {
+      "baseRows": 1046,
+      "mergedRows": 1084,
+      "newRows": 38,
+      "changedOldRows": 2,
+      "exactReviewedUnion": true,
+      "stableBaseAndAppendSequence": true
+    },
+    "dependencies": {
+      "baseRows": 3994,
+      "mergedRows": 4001,
+      "newRows": 7,
+      "changedOldRows": 21,
+      "exactReviewedUnion": true,
+      "stableBaseAndAppendSequence": true
+    },
+    "clusters": {
+      "baseRows": 176,
+      "mergedRows": 177,
+      "newRows": 1,
+      "changedOldRows": 0,
+      "exactReviewedUnion": true,
+      "stableBaseAndAppendSequence": true
+    },
+    "contexts": {
+      "exactReviewedContextAndCodeUnion": true,
+      "rows": 4777
+    }
+  },
+  "sharedDependencyReconciliation": {
+    "topicId": "mt_ZhvwM6LMBL",
+    "prerequisiteId": "mt__KHQttMde3",
+    "originalIndiaAfter": {
+      "topicId": "mt_ZhvwM6LMBL",
+      "prerequisiteId": "mt__KHQttMde3",
+      "strength": "soft",
+      "reason": "A wider range of grapheme-phoneme correspondences supports reading more texts; accurate, meaningful emergent reading of a text matched to already taught correspondences does not require responding to the entire 40+ phoneme inventory first."
+    },
+    "originalFrenchAfter": {
+      "topicId": "mt_ZhvwM6LMBL",
+      "prerequisiteId": "mt__KHQttMde3",
+      "strength": "soft",
+      "reason": "Taught grapheme/sound decoding supports fluent reading; accurately understanding and rereading a phonically matched book with improved pace and expression does not require responding to every one of the40+ English phonemes."
+    },
+    "selectedAfter": {
+      "topicId": "mt_ZhvwM6LMBL",
+      "prerequisiteId": "mt__KHQttMde3",
+      "strength": "soft",
+      "reason": "A wider range of grapheme-phoneme correspondences supports reading more texts; accurate, meaningful emergent reading of a text matched to already taught correspondences does not require responding to the entire 40+ phoneme inventory first."
+    },
+    "meaning": "Both proposals remove the same whole-English-phoneme-inventory prerequisite for meaningful matched-text fluency. Keep one soft edge with the reviewed India reason. The French report retains its original reason and documents this reconciliation; its source tasks and all other prerequisites remain intact."
+  },
+  "validation": {
+    "generation": "pass",
+    "validation": "pass",
+    "generatedCheck": "pass",
+    "tests": {
+      "pass": 211,
+      "fail": 0,
+      "skipped": 0
+    },
+    "exactSourceUnion": "All approved authored payloads, source guide order and scoped context/code union checked against the five immutable leaves. Catalogue unchanged; archive exactly matches reviewed PR114."
+  },
+  "remainingWork": [
+    "Ontario Social Studies Grades5–6 source-fit work continues separately.",
+    "The complete2640 eligible Ontario record reconciliation is in progress;694 Arts/HPE/Kindergarten records require explicit evidence reconciliation rather than link-count assumptions.",
+    "Conditional language/script/art-form/local-community material and chronology/source-meaning limits remain explicit; reviewed is not synonymous with Full.",
+    "Default-branch review/acceptance and downstream consumer/writer/fleet qualification and protected-state-preserving staging publication remain separate."
+  ],
+  "learnerState": "No DB write, learner reset, historical observation reinterpretation, score transfer, backfill or staging activation is performed by this source integration."
+}
