@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "dc19759180fb457045987aed32427a507cda3480",
+  "status": "Complete nine-record C2 source-fit task programme: four prior residual specifics and the overall qualified; four historical Full specifics explicitly revisited with actual source/task designs. No learner performance or blanket historical recertification claimed.",
+  "resources": {
+    "openstax-ray": {
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light",
+      "publisher": "OpenStax",
+      "readScope": "Selected actual ray-model text near the end of section1.1 read; no source figures or experiment execution inspected. Quantitative speed/index and historical material not adopted.",
+      "role": "Straight-path ray approximation for ordinary uniform media; interactions can change direction."
+    },
+    "openstax-refraction": {
+      "url": "https://openstax.org/books/physics/pages/16-2-refraction",
+      "publisher": "OpenStax",
+      "readScope": "Actual definition/boundary explanation and bent-pencil task text read; source figures/simulation not viewed. No Snell-law calculation or index inventory adopted.",
+      "role": "Qualitative direction change across an appropriate boundary, distinct from reflection."
+    },
+    "iop-propagation": {
+      "url": "https://spark.iop.org/collections/radiating-source-absorber-teaching-and-learning-issues",
+      "publisher": "Institute of Physics",
+      "readScope": "Actual selected Students views about how sound travels discussion and its vibration-handoff explanation read; no whole610-line collection or images claimed.",
+      "role": "The disturbance travels; a parcel of air does not travel from the source to the listener as a wind. Older teacher resource supports this physical fact, not tested efficacy at Grade4."
+    },
+    "iop-unwanted": {
+      "url": "https://spark.iop.org/sound-unwanted",
+      "publisher": "Institute of Physics",
+      "readScope": "Complete actual activity text read, including explicit competing paths/background-noise validity limits. Interactive/figures not viewed.",
+      "role": "Reflection, absorption and spreading can each reduce detected sound; quietness alone does not isolate absorption."
+    },
+    "iop-energy": {
+      "url": "https://spark.iop.org/why-these-stores",
+      "publisher": "Institute of Physics",
+      "readScope": "Complete actual narrative text read; selected light/sound energy-transfer discussion used, no quantitative store inventory or figures adopted.",
+      "role": "Absorbed radiation can transfer energy to the surroundings; energy does not vanish."
+    },
+    "nps-firefly": {
+      "url": "https://www.nps.gov/grsm/learn/nature/fireflies.htm",
+      "publisher": "US National Park Service",
+      "sourceDate": "2026-10-14",
+      "readScope": "Actual firefly/light-production and visitor-impact text read. No images or linked media inspected; viewing lottery details not part of the task.",
+      "role": "An actual light-emitting organism and low-heat light-production contrast; not a claim about every organism or an instruction to catch one."
+    },
+    "energy-star-led": {
+      "url": "https://www.energystar.gov/products/learn-about-led-lighting",
+      "publisher": "ENERGY STAR",
+      "readScope": "Complete actual main lighting/heat text read. No image inspection, universal product performance or exact percentage requirement adopted.",
+      "role": "Incandescent hot-filament light contrasted with LED heat management; LEDs are not heat-free."
+    },
+    "nasa-sun": {
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA",
+      "readScope": "Actual selected introductory/structure statements identifying the Sun as a light/heat source read. No source image/video, current mission inventory or Sun-viewing activity adopted.",
+      "role": "A natural source of light and heat."
+    },
+    "openstax-pitch": {
+      "url": "https://openstax.org/books/physics/pages/14-1-speed-of-sound-frequency-and-wavelength",
+      "publisher": "OpenStax",
+      "readScope": "Actual selected wave/source explanation and teacher-support string-length/pitch and ruler paragraphs read. No source figure/simulation, pressure formula, speed inventory or hazardous activity adopted.",
+      "role": "Faster repeated source vibration corresponds to higher pitch; a qualitative source-wave relation."
+    },
+    "openstax-loudness": {
+      "url": "https://openstax.org/books/physics/pages/14-2-sound-intensity-and-sound-level",
+      "publisher": "OpenStax",
+      "readScope": "Actual selected amplitude/loudness explanation read. Numerical intensity/decibel calculations and increasing-volume practical are not adopted; no figures/media viewed. Selected actual hearing/voice paragraph identifying ear detection and microphone analogy also read; no hearing-range norm adopted.",
+      "role": "Vibration-size/loudness contrast, separate from pitch; not a hearing norm or loud exposure."
+    },
+    "noaa-bioluminescence": {
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/bioluminescence/",
+      "publisher": "NOAA Ocean Exploration",
+      "sourceDate": "2020-09-29",
+      "readScope": "Complete actual main bioluminescence text read; no source image/video inspection claimed. No depth percentage, chemical inventory or claim that every deep-sea organism glows adopted.",
+      "role": "Actual organisms can emit their own light; this differs from reflecting an external source."
+    },
+    "nei-eye": {
+      "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/how-eyes-work",
+      "publisher": "National Eye Institute",
+      "sourceDate": "2022-04-20",
+      "readScope": "Complete actual short eye-pathway text read; linked eye image and media not inspected. No diagnosis, vision testing or medical advice adopted.",
+      "role": "Light entering and being focused/detected by the eye, followed by signals to the brain."
+    }
+  },
+  "preparedCases": {
+    "light-paths": {
+      "role": "light-paths",
+      "resourceRefs": [
+        "openstax-ray",
+        "openstax-refraction"
+      ],
+      "sourceSummary": "The ordinary ray model represents straight paths in a uniform medium, with direction changes at suitable interactions. Refraction is distinct from returning reflected light.",
+      "attributionLimits": "A bounded geometric model, not a claim that every optical situation has no wave effects or that every crossing bends light. No source diagram was viewed or copied.",
+      "question": "Use an adult-approved cool torch directed only at a paper target, opaque cards with large pre-cut holes, a safe mirror and an unbreakable clear water container with a blunt straight stick. What changes when holes are aligned then offset; when the mirror redirects the light; and when the stick is viewed obliquely across air/water? Never shine into eyes or view the Sun.",
+      "expectedEvidence": "Draw the source-to-target path as straight segments for the aligned-hole case; explain why offsetting a hole blocks that route. Show a reflected route returning from a surface and a transmitted/refracted route changing direction at the boundary, not a curved stick or light bending around an opaque obstacle. Explain that the stick itself remains straight and distinguish this appearance from reflection. Use actual safe observations, including an inconclusive view rather than invent a beam.",
+      "nearMiss": "Names every case reflection, says the stick physically bent, or treats a drawn ray as proof of a measured microscopic process.",
+      "changedCase": "With a new mirror direction or a straight-on boundary view, predict a different route/appearance and explain why a boundary need not produce a visible directional bend at normal incidence."
+    },
+    "absorption": {
+      "role": "light-absorption",
+      "resourceRefs": [
+        "iop-energy"
+      ],
+      "sourceSummary": "Energy carried by light can be absorbed by a material instead of returning or passing through; it is not destroyed.",
+      "attributionLimits": "No fixed temperature rise or claim that all dark objects absorb every wavelength. Absorption, reflection/scattering and transmission may occur together.",
+      "question": "Original supplied model cards: A returns much of the incident visible light; B returns little and transmits little, with most absorbed; C transmits much. Match each route to reflection/scattering, absorption or transmission, then compare safe torch observations of actual adult-approved light/dark/clear samples.",
+      "expectedEvidence": "Identify B as the mostly absorbing model, not merely the darkest named colour. Explain that energy is taken into the material rather than vanishing; actual appearance alone does not supply an exact energy fraction or temperature change. Distinguish a rough pale surface reflecting diffusely from a mirror making a clear image.",
+      "nearMiss": "Says all light must either reflect or refract, black material reflects absolutely nothing, or an opaque object must absorb all the light.",
+      "changedCase": "A shiny dark sample reflects a clear small highlight; explain why dark appearance does not mean zero reflection, and choose what additional observation the actual question needs."
+    },
+    "wave-handoff": {
+      "role": "sound-wave",
+      "resourceRefs": [
+        "iop-propagation"
+      ],
+      "sourceSummary": "A sound source vibrates and passes a disturbance through material. Local motion is distinct from carrying the same parcel of material all the way to the ear.",
+      "attributionLimits": "Original direction-only schematic, not measured air positions, pressure calculations or a universal model of all waves. No formal longitudinal-pressure/sonar inventory is required here.",
+      "question": "Original prepared schematic: Frame0 regions A/B/C are at rest; Frame1 source-near A moves slightly right; Frame2 A returns left while neighbouring B moves right; Frame3 A is back near rest, B returns and C moves right. Identify what is handed onward and what stays local. Relate the sequence to a vibrating source, a medium and an ear; draw your explanation.",
+      "expectedEvidence": "Explain that a travelling disturbance is passed onward while the marked material moves back and forth locally, so the wave is not a wind carrying A to the ear. Connect the source vibration to the wave and compare solid/liquid/gas routes with a vacuum boundary. A safe quiet ruler/string or enclosed classroom speaker observation can show a source vibrating; the diagram explains propagation and is never labelled a direct observation of invisible air motion.",
+      "nearMiss": "Only names the vibrating source without explaining transmission, says sound is a special substance emitted by it, or says the same air parcel flies from source to ear.",
+      "changedCase": "Replace the continuous medium with an empty vacuum gap in the supplied model; explain why no mechanical sound crosses that gap, while light need not require the same medium. No child vacuum apparatus, head-underwater listening, loud speaker or shouting is used."
+    },
+    "sound-interactions": {
+      "role": "sound-interactions",
+      "resourceRefs": [
+        "iop-unwanted"
+      ],
+      "sourceSummary": "Sound can be reflected or absorbed; distance, background noise and alternate transmission paths complicate a loudness comparison.",
+      "attributionLimits": "Original comparison cases, not actual room measurements or a guarantee a classroom echo is audible. No loudness exposure is needed.",
+      "question": "Original room cards: a large bare room has hard surfaces; the same model room is then fitted with substantial soft panels. Trace an outgoing sound and a returning reflected route, and describe a possible absorbed route. A third card places a barrier between source and listener without stating what happened to the sound.",
+      "expectedEvidence": "Explain reflection as sound returning from a surface and absorption as energy taken into material, with some sound also possibly transmitted/reflected. Soft treatment can reduce returning sound, but a quieter detector alone cannot prove absorption because reflection, distance and other paths also matter. Distinguish reflection/absorption from changing the source vibration.",
+      "nearMiss": "Calls every quieter sound absorption, claims sound cannot pass through any solid or calls an echo a new voice made by a wall.",
+      "changedCase": "A barrier makes the listener hear less but another listener behind the source hears a stronger return: explain that reflection is a possible part of the account; do not invent an absorption percentage."
+    },
+    "sound-modification": {
+      "role": "sound-modification",
+      "resourceRefs": [
+        "openstax-pitch",
+        "openstax-loudness"
+      ],
+      "sourceSummary": "The prepared task uses the existing distinction between changes in pitch and loudness; source and transmission changes are not interchangeable explanations.",
+      "attributionLimits": "Original safe classroom comparison, no frequency measurements or guaranteed outcomes claimed. Sensory access can use an adult-described/visual model rather than a hearing test.",
+      "question": "With a safe rounded classroom ruler secured at a table edge by the adult, compare two overhang lengths using gentle small deflections. Then compare two gentle deflection amounts at one fixed length. Keep sound comfortable and stop rather than increase volume to force a result. Describe actual outcomes, or use the explicitly supplied model if an audible difference is unclear.",
+      "expectedEvidence": "Distinguish higher/lower pitch associated with faster/slower vibration from louder/quieter associated with vibration size. Explain which variable was changed and do not conclude that louder always means higher. Relate the modification to a vibrating source and the medium/wave account.",
+      "nearMiss": "Uses high to mean loud and cannot distinguish the two comparisons, or treats a barrier change as proof the source frequency changed.",
+      "changedCase": "A source gives a higher but quieter sound; explain why those observations are compatible. No exact frequency/amplitude formula is a source duty."
+    },
+    "light-and-heat": {
+      "role": "light-heat",
+      "resourceRefs": [
+        "nps-firefly",
+        "energy-star-led",
+        "nasa-sun"
+      ],
+      "sourceSummary": "NASA identifies the Sun as a light/heat source. NPS describes firefly light production with minimal heat and contrasts hot-filament incandescent light. ENERGY STAR explains LED heat sinks: an LED is not heat-free.",
+      "attributionLimits": "No exact efficiency percentage or claim that a lamp is safe to touch. A firefly example is studied from the account, without capture or disturbing wildlife.",
+      "question": "Original fact cards: the Sun emits light and heat; an incandescent filament is heated until it glows; a firefly chemical reaction emits light with minimal heat; an LED emits visible light and produces heat managed by its fixture. Classify which are hot light sources and which produce light with little associated heat, explaining the comparison and its limits.",
+      "expectedEvidence": "Distinguish the Sun/incandescent cases from the cold-light firefly case; explain that light emission need not require a very hot object. Treat LED heat as real and compare suitable light output/heat qualitatively rather than declare every device cold. Distinguish light sources from the Moon/a mirror reflecting another source.",
+      "nearMiss": "Says every glowing thing must be hot, the Moon makes its own light, or LEDs create no heat and can always be touched.",
+      "changedCase": "An LED housing becomes warm: explain why this does not make the firefly cold-light account false, nor prove every light source is a heated glowing filament. Never test by touching a powered lamp or looking toward the Sun."
+    },
+    "light-emission": {
+      "role": "light-emission",
+      "resourceRefs": [
+        "noaa-bioluminescence",
+        "nps-firefly",
+        "nasa-sun",
+        "energy-star-led"
+      ],
+      "sourceSummary": "The Sun and light-producing organisms are natural emitters; lamps are artificial emitters. A surface can return another source’s light without generating its own.",
+      "attributionLimits": "Use selected source examples, not a claim every organism emits visible light. No animal capture or Sun viewing.",
+      "question": "Original fact cards: Sun/star, a flashing firefly, a bioluminescent deep-sea shrimp, a switched-on LED, an incandescent lamp, the Moon, a mirror and an ordinary paper card. Which emit light and which return light from elsewhere? Which emitters are natural or made by people? Use a safe cool torch illuminating a non-luminous card in an adult-prepared viewing box to compare light off/on, never direct a beam into eyes or lock a child in a dark room.",
+      "expectedEvidence": "Identify multiple natural and artificial emitters and the living light-producing examples; distinguish the Moon/mirror/card from emitters. Explain source→object→eye for the non-luminous object. A light-producing animal is not merely reflecting a torch, and a luminous source means the setting is not completely light-free.",
+      "nearMiss": "Calls every bright-looking object a source, says only non-living objects make light, or says an ordinary card can be seen without any light reaching the eye.",
+      "changedCase": "Switch an unlit reflective lamp housing into the example: distinguish that surface from the lit source inside it rather than classify solely by the familiar object name."
+    },
+    "material-interactions": {
+      "role": "material-interactions",
+      "resourceRefs": [
+        "openstax-ray",
+        "iop-energy",
+        "iop-unwanted"
+      ],
+      "sourceSummary": "Different materials can transmit, reflect/scatter or absorb light and sound in different proportions; a simple observation cannot determine every energy pathway exactly.",
+      "attributionLimits": "Original safe comparison, not a measured reflectance/absorption coefficient or a guarantee of a result for every sample thickness.",
+      "question": "Adult-provided samples are clear plastic, tracing paper, card, thin fabric, crumpled foil and a safe mirror. Direct the same cool torch toward a paper target with each sample in the path. Record actual transmitted pattern/visibility and reflected/scattered light where observable. Classify transparent/translucent/opaque from that sample and method, including thickness. Then compare the supplied sound-room/barrier cases and a quiet safe cup/string example with intact large cups prepared by the adult, no sharp holes or string around a body.",
+      "expectedEvidence": "Describe how each selected material changes the light route, distinguishing clarity from amount and opacity from total absorption. Use the sound cases to explain transmission/reflection/absorption, without claiming a quieter listener proves a single mechanism. Explain the cup→taut string→cup→air path and contrast a slack string as poorer transmission, not disappearance of the whole material. No underwater listening or loud/close shouting is used.",
+      "nearMiss": "Says opaque means every incoming bit of light was absorbed, a rough surface cannot reflect, or a solid can never carry sound.",
+      "changedCase": "Double the thickness of one fabric or change the room’s background noise: decide what should be retested and why the original classification/causal conclusion need not transfer unchanged."
+    },
+    "sensory-devices": {
+      "role": "sensory-devices",
+      "resourceRefs": [
+        "nei-eye",
+        "openstax-loudness"
+      ],
+      "sourceSummary": "Eyes detect incoming light and ears detect sound. The eye focuses light on sensitive tissue and sends signals to the brain; a microphone is a device responding to sound rather than a human sensory organ.",
+      "attributionLimits": "No child vision/hearing examination, blindfolding, taste test, personal recording or neurological/clinical inference. The task identifies suitable organs/devices; it does not infer the whole five-senses or digital-peripheral inventory.",
+      "question": "Original descriptions: light from an illuminated object enters an eye and is focused on the retina, with signals sent toward the brain; a sound wave reaches an ear; a camera records a light-based scene; a microphone records sound; a screen and speaker present light and sound outputs. Identify the organs, the devices and the relevant light/sound property each uses.",
+      "expectedEvidence": "Match eye/light and ear/sound, distinguish organs from camera/microphone and input from display/speaker output. Trace the supplied eye pathway without saying eyes shine out light to see. Identify a sensible device for recording a picture versus a spoken message; no actual personal recording is needed.",
+      "nearMiss": "Calls a microphone a sensory organ, confuses screen/speaker output with the recording component or claims the eye must emit a beam.",
+      "changedCase": "A combined tablet has camera, microphone, screen and speaker: select the component for each purpose rather than call the whole tablet only an input or only an output device."
+    }
+  },
+  "protocols": {
+    "C2.3": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.3"
+      ],
+      "contributorIds": [
+        "mt_gLy3ZgZWiN",
+        "mt_SFOSbVnrJ8"
+      ],
+      "caseRefs": [
+        "light-paths",
+        "absorption"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual supplied original cases and selected resource facts, with actual safe observations only where specified.",
+        "Explain each required property and the reason, keeping source observation, explanatory model and pupil inference distinct.",
+        "Reject the stated near miss and explain the changed case, not only choose a term.",
+        "Communicate a complete explanation while retaining the whole-claim/readiness and safety limits."
+      ],
+      "remainingConditions": []
+    },
+    "C2.4": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.4"
+      ],
+      "contributorIds": [
+        "mt_ydtcIBwHB9",
+        "mt_SFOSbVnrJ8",
+        "mt_KTSoXcO7OL",
+        "mt__00ZSLnB7p"
+      ],
+      "caseRefs": [
+        "wave-handoff",
+        "sound-interactions",
+        "sound-modification"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual supplied original cases and selected resource facts, with actual safe observations only where specified.",
+        "Explain each required property and the reason, keeping source observation, explanatory model and pupil inference distinct.",
+        "Reject the stated near miss and explain the changed case, not only choose a term.",
+        "Communicate a complete explanation while retaining the whole-claim/readiness and safety limits."
+      ],
+      "remainingConditions": []
+    },
+    "C2.5": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.5"
+      ],
+      "contributorIds": [
+        "mt_VBl1T1sFCM",
+        "mt_ydtcIBwHB9"
+      ],
+      "caseRefs": [
+        "wave-handoff"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual supplied original cases and selected resource facts, with actual safe observations only where specified.",
+        "Explain each required property and the reason, keeping source observation, explanatory model and pupil inference distinct.",
+        "Reject the stated near miss and explain the changed case, not only choose a term.",
+        "Communicate a complete explanation while retaining the whole-claim/readiness and safety limits."
+      ],
+      "remainingConditions": []
+    },
+    "C2.7": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.7"
+      ],
+      "contributorIds": [
+        "mt_PiWZA8Z0ZJ",
+        "mt_akBotspaf2"
+      ],
+      "caseRefs": [
+        "light-and-heat"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual supplied original cases and selected resource facts, with actual safe observations only where specified.",
+        "Explain each required property and the reason, keeping source observation, explanatory model and pupil inference distinct.",
+        "Reject the stated near miss and explain the changed case, not only choose a term.",
+        "Communicate a complete explanation while retaining the whole-claim/readiness and safety limits."
+      ],
+      "remainingConditions": []
+    },
+    "C2.1": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.1"
+      ],
+      "contributorIds": [
+        "mt_4i-FKXDDXh"
+      ],
+      "caseRefs": [
+        "light-emission"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual original cases and selected source facts, with safe observation where specified.",
+        "Explain the required source property rather than identify a familiar object only.",
+        "Explain the near miss and changed case; distinguish observation from supplied explanatory model.",
+        "Retain the whole contributor/readiness and safety limits; no automatic whole-topic result."
+      ],
+      "remainingConditions": []
+    },
+    "C2.2": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.2"
+      ],
+      "contributorIds": [
+        "mt_4i-FKXDDXh",
+        "mt_dRCnJEIwk4"
+      ],
+      "caseRefs": [
+        "light-emission"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual original cases and selected source facts, with safe observation where specified.",
+        "Explain the required source property rather than identify a familiar object only.",
+        "Explain the near miss and changed case; distinguish observation from supplied explanatory model.",
+        "Retain the whole contributor/readiness and safety limits; no automatic whole-topic result."
+      ],
+      "remainingConditions": []
+    },
+    "C2.6": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.6"
+      ],
+      "contributorIds": [
+        "mt_p6frRFuxS6",
+        "mt_gLy3ZgZWiN",
+        "mt_ydtcIBwHB9"
+      ],
+      "caseRefs": [
+        "material-interactions",
+        "sound-interactions"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual original cases and selected source facts, with safe observation where specified.",
+        "Explain the required source property rather than identify a familiar object only.",
+        "Explain the near miss and changed case; distinguish observation from supplied explanatory model.",
+        "Retain the whole contributor/readiness and safety limits; no automatic whole-topic result."
+      ],
+      "remainingConditions": []
+    },
+    "C2.8": {
+      "codes": [
+        "ON-SCI-2022-G4-C2.8"
+      ],
+      "contributorIds": [
+        "mt_nwSWPTENmv",
+        "mt_-gkJdxJUQT",
+        "mt_o0vTMl8vj5"
+      ],
+      "caseRefs": [
+        "sensory-devices"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual original cases and selected source facts, with safe observation where specified.",
+        "Explain the required source property rather than identify a familiar object only.",
+        "Explain the near miss and changed case; distinguish observation from supplied explanatory model.",
+        "Retain the whole contributor/readiness and safety limits; no automatic whole-topic result."
+      ],
+      "remainingConditions": []
+    },
+    "C2": {
+      "codes": [
+        "ON-SCI-2022-G4-C2"
+      ],
+      "contributorIds": [
+        "mt_akBotspaf2",
+        "mt_gLy3ZgZWiN",
+        "mt_ydtcIBwHB9",
+        "mt_VBl1T1sFCM",
+        "mt_SFOSbVnrJ8"
+      ],
+      "caseRefs": [
+        "light-paths",
+        "absorption",
+        "wave-handoff",
+        "sound-interactions",
+        "sound-modification",
+        "light-and-heat",
+        "light-emission",
+        "material-interactions",
+        "sensory-devices"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Complete the prepared source/emission, path/absorption, sound source/wave/interactions/modification, heat/light, material and sensory/device cases; the overall judgment is not calculated from linked children.",
+        "Explain light and sound as ways energy is transferred: light can reach and be absorbed by a material, and travelling sound can transfer energy to a detector. Neither light nor sound is a material fuel that simply vanishes. No full quantitative energy-store inventory is introduced.",
+        "Give a coherent source→path/material interaction→detector account for light and sound, distinguish the two media requirements and use actual selected examples with their limits.",
+        "Answer a changed mixed case (a lit noisy device behind a screen): identify what the available observations do and do not establish, explaining properties rather than only naming the device. Retain all eight specific source duties and the whole-claim/readiness boundaries."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimBoundary": "Whole existing cards and their hard prerequisites remain unchanged. The formal11–12 longitudinal-pressure/sonar and ray-law bundles are not lowered on the strength of these qualitative source components. Four saved guides (SFOS, ydt, VBl, gLy) read in full; their inherited flags/efficacy are not freshly certified. Actual loud/close/shouting and underwater-listening examples in old guidance are not adopted in these safe tasks. Broader whole vibration reverse-direction and wavelength/spectrum/angle inventories are not inferred from this component portfolio. Existing full eye/five-senses/digital-component, six-material, source-recognition and energy-vocabulary claims were read; a source-specific organ or device component is not their whole inventory. Historical C2.1/.2/.6/.8 Full labels have explicit tasks here solely to account for the C2 overall demand."
+}
