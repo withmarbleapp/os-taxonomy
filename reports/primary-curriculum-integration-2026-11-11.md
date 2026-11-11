@@ -14,6 +14,8 @@ The [Arts review](ontario-arts-primary-review-2026-11-11.md) accounts for all 30
 
 The [complete Kindergarten review](ontario-kindergarten-complete-review-2026-11-11.md) accounts for all 127 records in the 2026 programme: 120 Full authoring designs and seven local-resource Partials. It adds one shared collection-estimation operation and guide, preserving the documented overlap with the older numbers-to-120 compound claim without mastery transfer. All other work reuses unchanged claims. Actual creator portions, a declared phonics packet, all four arts forms and recurring movement tasks are bound explicitly; seven local people/place/environment requirements retain unfinished applicability facts. Three targeted age-six scopes have source and whole-claim justification; no blanket four-year-old lowering or younger duplicate is introduced.
 
+The [Language residual dossier](ontario-language-residual-completion-2026-11-11.md) supplies actual task/resource bindings for the previously retained 40 positions: 18 specific cultural requirements and 18 affected overall contributions, plus two keyboarding requirements and their two overall contributions. It retains actual creator portions, six grade panels, the applicable enacted Storywork framework, specific present-connection evidence and actual keyboard performances. Dataset files and historical reports remain unchanged; other historical Full judgments are not freshly recertified.
+
 Full means the mandatory source duties have an authored task portfolio with its stated resource and access conditions. It does not mean a child has performed the tasks, mastered every linked topic, or received an intervention with proven effectiveness. Component links alone do not certify a whole expectation.
 
 ## Reconciliation and preservation
@@ -26,9 +28,9 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 258 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 260 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
-The remaining whole programme reviews are Grade 6 Social Studies (46 records) and Health/PE (267), totalling 313 eligible Ontario records. Actual task/resource duties from prior Language (40) and Science (233) Partial reviews also remain. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
+The remaining whole programme reviews are Grade 6 Social Studies (46 records) and Health/PE (267), totalling 313 eligible Ontario records. Actual task/resource duties from the prior Science (233) Partial reviews also remain. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
 Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
 
