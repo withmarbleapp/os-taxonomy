@@ -4,6 +4,13 @@ import { readFileSync } from 'node:fs';
 const read = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url), 'utf8'));
 const slug = 'the-ontario-curriculum-science-and-technology-20';
 const key = code => `${slug}:ON-SCI-2022-G5-${code}`;
+const programmeFile = 'ontario-science-grade5-health-task-programme-2026-11-11.json';
+const requiredResources = {
+ 'health-factors-and-access':['phac-determinants','hc-mould'],
+ 'health-technologies-and-perspectives':['hc-xray','fda-hearing'],
+ 'food-literacy-body-and-connection':['hc-guide','hc-meals'],
+ 'integrated-body-systems-own-model':['nhlbi-heart','nhlbi-flow','niddk-digestion','nhlbi-asthma','nidcr-decay','nhlbi-respiratory'],
+};
 const bindings = { B1:['integrated-health-factor-portfolio'], 'B1.1':['health-factors-and-access'], 'B1.2':['health-technologies-and-perspectives'], 'B1.3':['food-literacy-body-and-connection'], B2:['integrated-body-systems-own-model'] };
 const expected = {
  B1:['mt_4k3HGahK2k','mt_Jd2aWEUJ9G','mt_MXxVMCr7_4','mt_NbkUKcOlEX','mt_OTrQJVRRJ6','mt_QhLAeAlHI0'],
@@ -22,7 +29,7 @@ function qualify(s) {
  const bs=new Map(p.sourceBindings.map(r=>[r.sourceKey,r])); assert.equal(bs.size,5);
  const expectedPairs=new Set();
  for(const r of rs){
-  assert.equal(r.sourceKey,key(r.code));assert.ok(available.has(r.sourceKey));assert.equal(r.disposition,'Full');assert.deepEqual(r.ageBand,[10,11]);
+  assert.equal(r.sourceKey,key(r.code));assert.ok(available.has(r.sourceKey));assert.equal(r.protocolRef,programmeFile,'Missing actual programme report binding');assert.equal(r.disposition,'Full');assert.deepEqual(r.ageBand,[10,11]);
   assert.deepEqual(r.protocolIds,bindings[r.code]);assert.deepEqual(r.contributions.map(c=>c.topicId),expected[r.code]);
   const b=bs.get(r.sourceKey);assert.deepEqual(b.protocolIds,r.protocolIds);assert.deepEqual(b.ageBand,[10,11]);assert.equal(b.grade,5);
   const proto=ps.get(r.protocolIds[0]);assert.deepEqual(proto.sourceCodes,[r.code]);assert.deepEqual(b.requiredConditions,proto.conditions);
@@ -55,6 +62,7 @@ function qualify(s) {
  assert.deepEqual(body.disorderCases.map(x=>x.name),['asthma','tooth decay','coronary heart disease']);
  assert.match(body.pathways[0],/oxygen enters blood.*carbon dioxide returns.*lungs/);assert.match(body.pathways[1],/absorbed nutrients.*undigested material.*different waste route/);
  const resources=new Map(p.resources.map(r=>[r.id,r]));assert.equal(resources.size,p.resources.length);
+ for(const [id,refs]of Object.entries(requiredResources))assert.deepEqual(ps.get(id).resources,refs,'Missing required source resource bindings');
  for(const proto of ps.values())for(const id of proto.resources??[]) {const r=resources.get(id);assert.ok(r);assert.match(r.url,/^https:\/\/(www\.)?(canada\.ca|fda\.gov|nhlbi\.nih\.gov|niddk\.nih\.gov|nidcr\.nih\.gov)\//);assert.ok(r.actualRead.length>15);assert.ok(r.use.length>30);}
  assert.equal(resources.get('nhlbi-respiratory').url,'https://www.nhlbi.nih.gov/health/lungs/respiratory-system');
  for(const v of Object.values(p.conditions))assert.equal(v,true);
@@ -67,3 +75,18 @@ test('a parent cannot close from child labels while losing an actual required du
 test('organ-name boxes cannot replace structure-function reasoning or changed-feature repair',()=>{for(const change of [s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').organStructureFunctionPairs=[],s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').organStructureFunctionPairs[1].structure='lungs',s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').conditions.changedStructureRepairNotNameBoxes=false,s=>{delete s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').organStructureFunctionPairs[0].changedFeature;},s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').organStructureFunctionPairs[1].changedFeature='Name and spell the organ correctly using several different labels.',s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').task='Create an organ-name poster and draw arrows between the names.']){const s=state();change(s);assert.throws(()=>qualify(s));}});
 test('incorrect oxygen/waste routes and omitted disorder cases cannot pass an otherwise labelled body map',()=>{for(const change of [s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').pathways[0]='oxygen leaves cells directly into air',s=>s.programme.protocols.find(r=>r.id==='integrated-body-systems-own-model').disorderCases.pop()]){const s=state();change(s);assert.throws(()=>qualify(s));}});
 test('missing actual resource or clinical/PE dependency cannot retain source qualification',()=>{for(const change of [s=>s.programme.resources=s.programme.resources.filter(r=>r.id!=='nhlbi-respiratory'),s=>s.programme.conditions.noPEProgrammeDependency=false,s=>s.programme.conditions.noExposureDiagnosisTreatmentOrMedicalDeviceOperation=false]){const s=state();change(s);assert.throws(()=>qualify(s));}});
+
+test('every Full G5 health row retains its actual programme file binding',()=>{
+ for(const code of Object.keys(bindings))for(const ref of [undefined,'missing-programme.json','ontario-grade5-cde-current-ledger-2026-11-11.json']){
+  const s=state(),row=s.report.records.find(r=>r.code===code);
+  if(ref===undefined)delete row.protocolRef;else row.protocolRef=ref;
+  assert.throws(()=>qualify(s),/Missing actual programme report binding/);
+ }
+});
+test('required factual resource bindings cannot disappear while their catalogue entries remain',()=>{
+ for(const id of Object.keys(requiredResources))for(const refs of [undefined,[]]){
+  const s=state(),protocol=s.programme.protocols.find(r=>r.id===id);
+  if(refs===undefined)delete protocol.resources;else protocol.resources=refs;
+  assert.throws(()=>qualify(s),/Missing required source resource bindings/);
+ }
+});
