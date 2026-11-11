@@ -11,13 +11,13 @@
     "bytes": 16481419,
     "pdfPages": 128
   },
-  "identifierTreatment": "Generated document/edition, subject, printed grade and top-level outcome-bullet ordinal. No official per-outcome code is supplied; nested operations and examples stay attached to their original parent position. These are 171 printed positions, not 49 new skills.",
+  "identifierTreatment": "Generated document/edition, subject, printed grade and top-level outcome-bullet ordinal. No official per-outcome code is supplied; nested operations and examples stay attached to their original parent position. These are 304 printed positions, not 49 new skills.",
   "sourceKind": "2017-classwise-learning-outcome-reference",
   "current2026IndividualApplicability": "Unverified",
   "currentApplicabilityMeaning": "The original 2017 grade-specific reference is verified. Current official indexing and the later NCF-SE/textbook rollout do not establish that every individual 2017 outcome is unchanged, superseded or equivalent in 2026. No comprehensive current-primary coverage claim follows.",
   "publicationTreatment": "Factual generated identifiers and source metadata only; restricted wording and original PDF bytes remain private.",
   "verification": {
-    "independentReconstructions": "Bounding-box top-level bullet inventories and separately cropped Poppler right-column reconstructions match all49 Mathematics, all43 EVS and all79 English private texts ignoring whitespace.",
+    "independentReconstructions": "171 Mathematics/EVS/English private strings match independent bounding-box/cropped-column extracts ignoring whitespace. Hindi80 visual positions and marker counts are independently confirmed, but canonical decoded wording remains Unverified. Urdu53 LEFT-column positions are verified visually and by independent image-marker counting; body text is rasterized and canonical transcription remains Unverified. These are distinct verification claims.",
     "tableBoundaryCases": [
       "The first Grade 1 printed bullet combines two clauses; it remains one position.",
       "The Grade 1 pattern diagram is attached to its parent outcome, not an extra source record.",
@@ -26,10 +26,15 @@
       "EVS PDF97,100,103 contain no additional outcome-column positions; the inclusive-guidance cross-reference on103 is not an outcome.",
       "Inline italic local terms stay in their true reading order; vertical font-box variation is not a new line or separate outcome.",
       "All printed contextual play/social positions remain. PE exclusion means no separate physical-skill authoring/coverage claim; no printed source row is deleted merely for mentioning play.",
-      "English PDF43–49/printed25–31 contains exactly79 source positions; the separately inspected upper-primary introduction atPDF50 is excluded."
+      "English PDF43–49/printed25–31 contains exactly79 source positions; the separately inspected upper-primary introduction atPDF50 is excluded.",
+      "Hindi PDF23–32/printed5–14 contains80 positions. A single visual bullet is encoded as two y glyphs; it is counted once. Printed repetitions stay separate source positions.",
+      "Hindi raw extracts have7 string-order differences and combining/shaping quirks. Both raw extracts and exact image evidence stay private; no garbled or guessed Hindi wording is published or aligned.",
+      "Urdu learning outcomes are LEFT, suggested processes RIGHT; the coordinate rule for the other four areas is not reused.",
+      "Urdu tables individually identify ClassesI,II,III,IV,V onPDF59,60,61,63,64. Intros58/62 groupI–III andIV–V; no shared-band outcome is copied to invented grades. PDF65 beginsVI–VIII and is excluded.",
+      "Urdu body text is rasterized; exact image hashes/position rectangles remain private. No canonical transcription, OCR result, guessed wording or semantic mapping is published."
     ],
     "noTopicCoverageInferred": true,
-    "all27PrimaryTablePagesVisuallyRead": true
+    "all42PrimaryTablePagesVisuallyRead": true
   },
   "baselineSeparation": {
     "selectedExistingSourceFamilies": [
@@ -40,9 +45,9 @@
     "eligibleExistingPositions": 521,
     "existingLinkedPositions": 495,
     "existingUnlinkedPositions": 26,
-    "new2017ReferencePositions": 171,
+    "new2017ReferencePositions": 304,
     "newAssociations": 0,
-    "meaning": "The 171 unmapped 2017 reference positions are not 171 proven taxonomy gaps and are not added to the 521 current selected-baseline coverage denominator. Edition/requirement reconciliation is separate."
+    "meaning": "The 304 unmapped 2017 reference positions are not 304 proven taxonomy gaps and are not added to the 521 current selected-baseline coverage denominator. Edition/requirement reconciliation is separate."
   },
   "records": [
     {
@@ -2951,15 +2956,2278 @@
       "printedPages": [
         31
       ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO01",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO02",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO03",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO04",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO05",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO06",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO07",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO08",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO09",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO10",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        5
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO11",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        24
+      ],
+      "printedPages": [
+        6
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO12",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        24
+      ],
+      "printedPages": [
+        6
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO13",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        24
+      ],
+      "printedPages": [
+        6
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G1-LO14",
+      "code": "IN-NCERT-LO-2017-HI-G1-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 1,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        24
+      ],
+      "printedPages": [
+        6
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO01",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO02",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO03",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO04",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO05",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO06",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO07",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO08",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO09",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO10",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO11",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        25
+      ],
+      "printedPages": [
+        7
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO12",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO13",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO14",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO15",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO16",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO16",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 16,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G2-LO17",
+      "code": "IN-NCERT-LO-2017-HI-G2-LO17",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 2,
+      "ordinal": 17,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        26
+      ],
+      "printedPages": [
+        8
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO01",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO02",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO03",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO04",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO05",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO06",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO07",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO08",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO09",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO10",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        27
+      ],
+      "printedPages": [
+        9
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO11",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        28
+      ],
+      "printedPages": [
+        10
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO12",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        28
+      ],
+      "printedPages": [
+        10
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO13",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        28
+      ],
+      "printedPages": [
+        10
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G3-LO14",
+      "code": "IN-NCERT-LO-2017-HI-G3-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 3,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        28
+      ],
+      "printedPages": [
+        10
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO01",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO02",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO03",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO04",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO05",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO06",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO07",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO08",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO09",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO10",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO11",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO12",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO13",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        29
+      ],
+      "printedPages": [
+        11
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO14",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        30
+      ],
+      "printedPages": [
+        12
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO15",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        30
+      ],
+      "printedPages": [
+        12
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO16",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO16",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 16,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        30
+      ],
+      "printedPages": [
+        12
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO17",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO17",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 17,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        30
+      ],
+      "printedPages": [
+        12
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G4-LO18",
+      "code": "IN-NCERT-LO-2017-HI-G4-LO18",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 4,
+      "ordinal": 18,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        30
+      ],
+      "printedPages": [
+        12
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO01",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO02",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO03",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO04",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO05",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO06",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO07",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO08",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO09",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO10",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        31
+      ],
+      "printedPages": [
+        13
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO11",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO12",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO13",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO14",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO15",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO16",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO16",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 16,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-HI-G5-LO17",
+      "code": "IN-NCERT-LO-2017-HI-G5-LO17",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Hindi",
+      "grade": 5,
+      "ordinal": 17,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        32
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO01",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO02",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO03",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO04",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO05",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO06",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G1-LO07",
+      "code": "IN-NCERT-LO-2017-UR-G1-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 1,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        59
+      ],
+      "printedPages": [
+        41
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO01",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO02",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO03",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO04",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO05",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO06",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G2-LO07",
+      "code": "IN-NCERT-LO-2017-UR-G2-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 2,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        60
+      ],
+      "printedPages": [
+        42
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO01",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO02",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO03",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO04",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO05",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO06",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO07",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO08",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO09",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G3-LO10",
+      "code": "IN-NCERT-LO-2017-UR-G3-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 3,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        61
+      ],
+      "printedPages": [
+        43
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO01",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO02",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO03",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO04",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO05",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO06",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO07",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO08",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO09",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO10",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO11",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO12",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO13",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO14",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO14",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 14,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO15",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO15",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 15,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G4-LO16",
+      "code": "IN-NCERT-LO-2017-UR-G4-LO16",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 4,
+      "ordinal": 16,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        63
+      ],
+      "printedPages": [
+        45
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO01",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO01",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 1,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO02",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO02",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 2,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO03",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO03",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 3,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO04",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO04",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 4,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO05",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO05",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 5,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO06",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO06",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 6,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO07",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO07",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 7,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO08",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO08",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 8,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO09",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO09",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 9,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO10",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO10",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 10,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO11",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO11",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 11,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO12",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO12",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 12,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
+    },
+    {
+      "key": "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-UR-G5-LO13",
+      "code": "IN-NCERT-LO-2017-UR-G5-LO13",
+      "generatedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "classwiseLearningOutcomePosition",
+      "area": "Urdu",
+      "grade": 5,
+      "ordinal": 13,
+      "sourceColumn": "learning-outcomes",
+      "pdfPages": [
+        64
+      ],
+      "printedPages": [
+        46
+      ]
     }
   ],
   "scope": {
     "areas": [
       "Mathematics",
       "Environmental Studies",
-      "English"
+      "English",
+      "Hindi",
+      "Urdu"
     ],
-    "records": 171,
+    "records": 304,
     "sourceColumn": "learning-outcomes",
     "subsets": [
       {
@@ -3012,7 +5280,8 @@
           "Grades 6–8",
           "other subject sections",
           "Physical Education"
-        ]
+        ],
+        "outcomeColumnPlacement": "right"
       },
       {
         "area": "Environmental Studies",
@@ -3055,7 +5324,8 @@
           "stage-introduction-and-curricular-expectations",
           "Grades 6–8",
           "other subject sections"
-        ]
+        ],
+        "outcomeColumnPlacement": "right"
       },
       {
         "area": "English",
@@ -3098,14 +5368,123 @@
           "stage-introduction-and-curricular-expectations",
           "Classes VI–VIII",
           "upper-primary introduction beginning PDF50"
+        ],
+        "outcomeColumnPlacement": "right"
+      },
+      {
+        "area": "Hindi",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "records": 80,
+        "recordsByGrade": {
+          "1": 14,
+          "2": 17,
+          "3": 14,
+          "4": 18,
+          "5": 17
+        },
+        "pdfPages": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "printedPages": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "sourceColumn": "learning-outcomes",
+        "canonicalMachineWording": "Unverified",
+        "verificationMeaning": "Document identity, visual positions and counts are verified. Canonical decoded Hindi text is not certified; retain image references and both raw extracts privately before native/source-accurate readback.",
+        "excluded": [
+          "suggested-pedagogical-processes",
+          "stage-introduction-and-curricular-expectations",
+          "Classes VI–VIII"
+        ],
+        "outcomeColumnPlacement": "right"
+      },
+      {
+        "area": "Urdu",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "records": 53,
+        "recordsByGrade": {
+          "1": 7,
+          "2": 7,
+          "3": 10,
+          "4": 16,
+          "5": 13
+        },
+        "pdfPages": [
+          59,
+          60,
+          61,
+          63,
+          64
+        ],
+        "printedPages": [
+          41,
+          42,
+          43,
+          45,
+          46
+        ],
+        "sourceColumn": "learning-outcomes",
+        "outcomeColumnPlacement": "left",
+        "actualPublisherProgrammeGroups": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "programmeIntroductionPdfPages": [
+          58,
+          62
+        ],
+        "VItoVIIIBoundaryPdfPage": 65,
+        "canonicalMachineWording": "Unverified",
+        "verificationMeaning": "Source identity, individually labelled primary tables and53 visual positions/marker counts verified. Body content is rasterized, with no canonical decoded transcript. Exact image evidence remains private; no OCR or guessed transcription/semantic alignment is claimed.",
+        "excluded": [
+          "RIGHT suggested-pedagogical-processes column",
+          "introductions/curricular expectations on58/62",
+          "VI–VIII beginning PDF65",
+          "invented copies of shared programme bands"
         ]
       }
     ],
     "excluded": [
       "suggested-pedagogical-processes",
       "stage introductions and curricular expectations",
-      "Classes VI–VIII",
-      "unreviewed Hindi/Urdu language sections"
+      "Classes VI–VIII"
     ],
     "noStandaloneEVSIOrII": "The original introduction integrates those concerns with language and Mathematics in Classes I–II; no separate EVS outcome tables are invented."
   },
@@ -3114,5 +5493,30 @@
     "fixedNationalR2": false,
     "individualSourceConditionsRetained": true,
     "meaning": "This published named-language programme is not a national language-pair choice or universal R1/R2 equivalence. Preserve every original input/response-language and accessibility clause, including home/sign-language responses and Braille where actually provided; do not infer universal English-only response rules from the subject heading."
+  },
+  "namedHindiProgramme": {
+    "language": "Hindi",
+    "fixedNationalR1orR2": false,
+    "individualSourceConditionsRetained": true,
+    "canonicalMachineWording": "Unverified",
+    "meaning": "Named source programme, not national language-role equivalence. Original own/school-language, Braille, drawing and early-spelling response conditions and every printed repetition remain in the authoritative private image evidence. No text normalization, alignment or material generation is inferred from this factual position catalogue."
+  },
+  "namedUrduProgramme": {
+    "language": "Urdu",
+    "fixedNationalR1orR2": false,
+    "actualPublisherProgrammeGroups": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "individualSourceConditionsRetainedInImages": true,
+    "canonicalMachineWording": "Unverified",
+    "meaning": "The individually printed primary tables establish factual positions. Original wording and response conditions remain authoritative in image evidence and need source-accurate bilingual transcription before alignment/material generation. No national language-role equivalence or universal response rule is inferred."
   }
 }
