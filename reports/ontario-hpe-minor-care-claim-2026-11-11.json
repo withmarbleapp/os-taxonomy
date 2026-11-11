@@ -1,0 +1,90 @@
+{
+  "base": "ff393746fb1fbc720fc68a87b0c590f75336099f",
+  "status": "Proposed bounded knowledge component, not default-branch acceptance or treatment certification",
+  "topicId": "mt_2IFtJJBX_n",
+  "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3.2",
+  "context": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 11,
+    "ageRangeEnd": 12
+  },
+  "newClaims": 1,
+  "newGuides": 1,
+  "newContexts": 1,
+  "newPairs": 1,
+  "newEdges": 0,
+  "closestClaimIds": [
+    "mt_EWiY8-opdd",
+    "mt_q3vRl4dddK",
+    "mt_DRNXFr0ds6",
+    "mt_RhntJz7p_6",
+    "mt_vbbxnY7ZDT",
+    "mt_4JpMXUIxeD"
+  ],
+  "reuseDecision": {
+    "everydaySafety": "Full roads/water/stranger/internet rules, trusted-adult reporting and safe familiar action do not supply the different minor-wound versus bruise care methods.",
+    "signs": "Knowing the first-aid sign locates help; it does not supply care methods.",
+    "hygieneAndFood": "Full handwashing, cough/teeth care or clean kitchen/allergy checks do not explain controlling minor bleeding, wound protection versus wrapped cold application or injury-specific limits.",
+    "decisionModel": "Options/consequences/reasoned choice can succeed while all available treatment facts are wrong; it does not supply these health facts.",
+    "immuneSystem": "Skin/barrier/WBC/vaccine explanation does not supply practical injury-care selection. No detailed immune-system gate is needed."
+  },
+  "independentWitness": {
+    "oldClaimsCanSucceed": "Follow the complete generic safety, signs, hygiene and decision cards, correctly seek an adult and explain skin barriers, but say every scrape should have bare ice rubbed on it or that an embedded object should be pulled out. Reporting help alone does not account for the source request to describe appropriate minor-injury methods.",
+    "newClaimCanSucceed": "Explain different suitable adult-supported care for the two uncomplicated cases, reject inappropriate universal treatment and escalate the changed warning case without explaining vaccines, all food-preparation hygiene, road/internet rules or advanced anatomy."
+  },
+  "cases": [
+    {
+      "id": "adult-declared-small-scrape",
+      "adultHasDeterminedMinor": true,
+      "careOrder": [
+        "obtain-adult-help",
+        "clean-hands",
+        "control-minor-bleeding-as-appropriate",
+        "rinse-after-bleeding-controlled",
+        "suitable-protective-dressing"
+      ],
+      "knowledgeOnly": true
+    },
+    {
+      "id": "adult-declared-small-bruise",
+      "adultHasDeterminedMinor": true,
+      "careOrder": [
+        "obtain-adult-help",
+        "comfortable-support",
+        "wrapped-cold-compress",
+        "adult-controls-duration-and-comfort"
+      ],
+      "knowledgeOnly": true
+    },
+    {
+      "id": "changed-warning-case",
+      "features": [
+        "embedded-object",
+        "uncontrolled-bleeding",
+        "deep-wound",
+        "possible-head-injury"
+      ],
+      "response": "prompt-adult-professional-help-and-local-procedure",
+      "removeObject": false,
+      "pressOnObject": false,
+      "independentDiagnosis": false,
+      "knowledgeOnly": true
+    }
+  ],
+  "assessmentBoundaries": {
+    "fictionalOrIllustratedOnly": true,
+    "noActualWoundsOrBloodContact": true,
+    "noMedicines": true,
+    "noDiagnosis": true,
+    "noIndependentTreatmentCertification": true,
+    "noIndefiniteCooling": true
+  },
+  "guideStatus": "Original untested low-confidence teaching design; checked current primary guidance supports factual content, not efficacy.",
+  "programmeCheckpoint": {
+    "reviewed": 109,
+    "pending": 158,
+    "total": 267,
+    "meaning": "The new component does not by itself promote the complete B3 safety programme."
+  }
+}
