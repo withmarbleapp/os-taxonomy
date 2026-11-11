@@ -5,20 +5,20 @@
   "localDependencyCommit": "6569684fbc3b3016619a1d746227a716b352ffe6",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "Ten source-fit designs reviewed: civic action, Canadian rights and the eight-code environmental inquiry/perspective batch. The remaining 31 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
+  "status": "Twelve source-fit designs reviewed, including the selected government-response/effectiveness tasks. The remaining 29 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Full": 10,
+    "Full": 12,
     "Partial": 0,
-    "Unverified": 31,
+    "Unverified": 29,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 22,
-    "topics": 9,
-    "codes": 10,
+    "pairs": 26,
+    "topics": 10,
+    "codes": 12,
     "newClaims": 1,
-    "reusedClaims": 8
+    "reusedClaims": 9
   },
   "expectations": [
     {
@@ -191,11 +191,16 @@
     },
     {
       "code": "B1.1",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_7VrR1GzhrN",
+        "mt_CVywzrjT_c",
+        "mt_xswgDb7eIU"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-government-response-review-2026-11-11.json",
+      "protocolReference": "/protocols/effectiveness",
+      "coverageBasis": "Actual named governments, dated actions and supported effectiveness criteria account for the selected source duty. Whole claims, source limits and remaining governance records stay separate; no learner attainment is inferred."
     },
     {
       "code": "B1.2",
@@ -362,11 +367,14 @@
     },
     {
       "code": "B3.7",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_xswgDb7eIU"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-government-response-review-2026-11-11.json",
+      "protocolReference": "/protocols/actions-and-responsibilities",
+      "coverageBasis": "Actual named governments, dated actions and supported effectiveness criteria account for the selected source duty. Whole claims, source limits and remaining governance records stay separate; no learner attainment is inferred."
     },
     {
       "code": "B3.8",
