@@ -7,12 +7,29 @@ const contexts = load('data/curriculum-alignments.json').alignments;
 const slug = 'the-ontario-curriculum-science-and-technology-20';
 const source = load('data/curriculum-standards.json').curricula.find(row => row.slug === slug);
 const selected = source.topics.filter(row => /^ON-SCI-2022-G4-[BCDE]\d/.test(row.code)).map(row => row.code).sort();
+// These historical positions were explicitly revisited in the reviewed task
+// packages. Their binding duty must survive deletion of a ledger field; other
+// historical Full rows remain historical evidence without new task certification.
+const reviewedHistoricalBindings = {
+  'ON-SCI-2022-G4-B2.1': ['ontario-grade4-habitat-community-task-design-2026-11-11.json', '/protocols/local-habitat-necessities'],
+  'ON-SCI-2022-G4-C2.1': ['ontario-grade4-light-sound-properties-design-2026-11-11.json', '/protocols/C2.1'],
+  'ON-SCI-2022-G4-C2.2': ['ontario-grade4-light-sound-properties-design-2026-11-11.json', '/protocols/C2.2'],
+  'ON-SCI-2022-G4-C2.6': ['ontario-grade4-light-sound-properties-design-2026-11-11.json', '/protocols/C2.6'],
+  'ON-SCI-2022-G4-C2.8': ['ontario-grade4-light-sound-properties-design-2026-11-11.json', '/protocols/C2.8'],
+  'ON-SCI-2022-G4-D2.1': ['ontario-grade4-mechanism-functions-design-2026-11-11.json', '/protocols/D2.1'],
+  'ON-SCI-2022-G4-D2.5': ['ontario-grade4-mechanism-functions-design-2026-11-11.json', '/protocols/D2.5'],
+};
 function check(rows, associations = contexts, read = name => load(`reports/${name}`)) {
   assert.deepEqual(rows.map(row => row.code).sort(), selected, 'Missing Grade4 content record');
   for (const row of rows) {
     assert.equal(row.key, `${slug}:${row.code}`, 'Grade4 source identity mismatch');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full ledger condition');
     if (row.disposition === 'Full' && row.historicalDisposition === 'Partial') assert.ok(row.dossier && row.protocolReference?.startsWith('/protocols/'), 'Missing fresh task binding');
+    if (Object.hasOwn(reviewedHistoricalBindings, row.code)) {
+      const [dossier, protocolReference] = reviewedHistoricalBindings[row.code];
+      assert.equal(row.dossier, dossier, 'Missing reviewed historical task binding: dossier');
+      assert.equal(row.protocolReference, protocolReference, 'Missing reviewed historical task binding: protocol');
+    }
     if (!row.dossier) continue;
     const report = read(row.dossier);
     assert.ok(row.protocolReference?.startsWith('/protocols/'), 'Missing task protocol reference');
@@ -254,4 +271,29 @@ test('Grade4 habitat transfer cannot ask for missing wetland or dry-grassland ex
   }
   const damaged = structuredClone(load(`reports/${name}`)); damaged.resources['original-transfer-models'].file = 'ontario-grade4-light-sound-properties-design-2026-11-11.json';
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Wrong original case-bank file/);
+});
+
+
+for (const code of Object.keys(reviewedHistoricalBindings)) {
+  test(`Grade4 revisited historical ${code} cannot lose its dossier or protocol binding`, () => {
+    for (const fields of [['dossier'], ['protocolReference'], ['dossier', 'protocolReference']]) {
+      const damaged = structuredClone(ledger.expectations);
+      const row = damaged.find(row => row.code === code);
+      assert.equal(row.historicalDisposition, 'Full');
+      for (const field of fields) delete row[field];
+      assert.throws(() => check(damaged), /Missing reviewed historical task binding/);
+    }
+  });
+}
+
+test('Grade4 untouched historical Full rows remain valid without newly certified task bindings', () => {
+  const untouched = ['B1.2', 'B2.3', 'B2.4', 'B2.5', 'B2.6', 'E2.1', 'E2.2', 'E2.4', 'E2.5'];
+  for (const suffix of untouched) {
+    const row = ledger.expectations.find(row => row.code === `ON-SCI-2022-G4-${suffix}`);
+    assert.equal(row.historicalDisposition, 'Full');
+    assert.equal(row.disposition, 'Full');
+    assert.equal(row.dossier, undefined);
+    assert.equal(row.protocolReference, undefined);
+  }
+  assert.doesNotThrow(() => check(ledger.expectations));
 });
