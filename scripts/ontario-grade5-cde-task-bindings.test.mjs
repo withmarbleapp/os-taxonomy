@@ -30,6 +30,25 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (['ON-SCI-2022-G5-E1', 'ON-SCI-2022-G5-E1.1', 'ON-SCI-2022-G5-E1.2'].includes(row.code)) {
+      const cases = protocol.caseRefs.map(ref => report.preparedCases[ref]);
+      if (row.code !== 'ON-SCI-2022-G5-E1.2') {
+        assert.ok(cases.some(value => value.area === 'long-term') && cases.some(value => value.area === 'community-options'), 'Missing long-term/action portfolio');
+        for (const value of cases.filter(value => value.area === 'long-term')) for (const field of ['benefitAndSociety', 'environment', 'mitigation', 'limit']) assert.ok(value[field]?.trim(), 'Missing long-term society/environment/action duty');
+      }
+      if (row.code !== 'ON-SCI-2022-G5-E1.1') {
+        assert.ok(cases.filter(value => value.area === 'technology').length >= 3, 'Missing varied technology effects');
+        for (const value of cases.filter(value => value.area === 'technology')) for (const field of ['energyEffect', 'individualAction', 'limit']) assert.ok(value[field]?.trim(), 'Missing technology/action duty');
+      }
+    }
+    if (row.code === 'ON-SCI-2022-G5-E2') {
+      for (const role of ['law', 'dissipation', 'energy-resources', 'material-resources', 'forms-and-uses', 'source-classification']) {
+        const value = protocol.caseRefs.map(ref => report.preparedCases[ref]).find(value => value.role === role);
+        assert.ok(value, 'Missing integrated energy/resource duty');
+        if (['forms-and-uses', 'source-classification'].includes(role)) assert.ok(value.given?.trim() && value.task?.trim(), 'Missing actual energy reference/task');
+        else assert.ok(value.dossierRefs?.length, 'Missing qualified energy resource binding');
+      }
+    }
     if (row.code === 'ON-SCI-2022-G5-D2') {
       const roles = protocol.caseRefs.map(ref => report.preparedCases[ref].role);
       for (const role of ['member', 'outside', 'built-resistance', 'natural-resistance', 'protective-design']) assert.ok(roles.includes(role), 'Missing integrated structural duty');
@@ -213,4 +232,19 @@ test('Grade 5 integrated structures cannot substitute child links for the natura
   const damaged = structuredClone(load(`reports/${name}`));
   damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].role !== 'natural-resistance');
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing integrated structural duty/);
+});
+
+test('Grade 5 final energy programme retains actual actions, social effects and integrated resources', () => {
+  const name = 'ontario-grade5-energy-resource-decisions-design-2026-11-11.json';
+  for (const [id, field] of [['transport-fuels', 'benefitAndSociety'], ['material-cycle', 'mitigation'], ['computer-power', 'individualAction']]) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases[id][field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty|Missing long-term society\/environment\/action duty|Missing technology\/action duty/);
+  }
+  const overall = 'ontario-grade5-integrated-energy-resources-design-2026-11-11.json';
+  const damaged = structuredClone(load(`reports/${overall}`));
+  damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].role !== 'material-resources');
+  assert.throws(() => check(ledger.expectations, contexts, report => report === overall ? damaged : load(`reports/${report}`)), /Missing integrated energy\/resource duty/);
+  const unbound = structuredClone(load(`reports/${overall}`)); delete unbound.preparedCases.law.dossierRefs;
+  assert.throws(() => check(ledger.expectations, contexts, report => report === overall ? unbound : load(`reports/${report}`)), /Missing qualified energy resource binding/);
 });
