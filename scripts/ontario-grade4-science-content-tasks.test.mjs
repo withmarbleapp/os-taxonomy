@@ -34,6 +34,9 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       'ON-SCI-2022-G4-C2.6': ['material-interactions', 'sound-interactions'],
       'ON-SCI-2022-G4-C2.7': ['light-heat'],
       'ON-SCI-2022-G4-C2.8': ['sensory-devices'],
+      'ON-SCI-2022-G4-E1': ['geological-society-environment', 'full-material-lifecycle'],
+      'ON-SCI-2022-G4-E1.1': ['geological-society-environment'],
+      'ON-SCI-2022-G4-E1.2': ['full-material-lifecycle'],
       'ON-SCI-2022-G4-E2.3': ['composition-properties'],
       'ON-SCI-2022-G4-E2.6': ['first-nations-selection', 'metis-selection', 'inuit-selection'],
       'ON-SCI-2022-G4-D1': ['community-machine', 'same-purpose-environment'],
@@ -53,6 +56,12 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
       if (['ON-SCI-2022-G4-D1', 'ON-SCI-2022-G4-D1.1'].includes(row.code)) assert.ok(new Set(protocol.caseRefs.filter(ref => report.preparedCases?.[ref]?.role === 'community-machine')).size >= 2, 'Missing varied-community comparison');
     }
 
+    if (['ON-SCI-2022-G4-E1', 'ON-SCI-2022-G4-E1.2'].includes(row.code)) {
+      const stages = ['extraction', 'refining', 'manufacturing', 'recycling', 'disposal'];
+      assert.deepEqual(protocol.requiredLifecycleStages, stages, 'Missing required source lifecycle stages');
+      const materialCase = protocol.caseRefs.map(ref => report.preparedCases?.[ref]).find(value => value?.role === 'full-material-lifecycle');
+      assert.deepEqual(materialCase?.lifecycleStages, stages, 'Missing actual material lifecycle stage');
+    }
     for (const ref of protocol.caseRefs) {
       const value = report.preparedCases?.[ref];
       assert.ok(value?.sourceSummary?.trim() && value.attributionLimits?.trim() && value.resourceRefs?.length, 'Missing source-bound case');
@@ -170,5 +179,17 @@ test('Grade4 mineral tasks retain composition and all three attributed knowledge
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
   }
   const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases.classification.expectedEvidence;
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
+});
+
+
+test('Grade4 geological impacts cannot omit environmental or intermediate material stages', () => {
+  const name = 'ontario-grade4-geological-material-impact-design-2026-11-11.json';
+  for (const stage of ['extraction', 'refining', 'manufacturing', 'recycling', 'disposal']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.preparedCases['aluminium-life'].lifecycleStages = damaged.preparedCases['aluminium-life'].lifecycleStages.filter(value => value !== stage);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing actual material lifecycle stage/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['geological-processes'].expectedEvidence;
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
 });
