@@ -5,19 +5,19 @@
   "localDependencyCommit": "6569684fbc3b3016619a1d746227a716b352ffe6",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "Twelve source-fit designs reviewed, including the selected government-response/effectiveness tasks. The remaining 29 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
+  "status": "Thirteen source-fit designs reviewed, including the bounded duty-to-consult knowledge and actual prepared scenarios. The remaining 28 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Full": 12,
+    "Full": 13,
     "Partial": 0,
-    "Unverified": 29,
+    "Unverified": 28,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 26,
-    "topics": 10,
-    "codes": 12,
-    "newClaims": 1,
+    "pairs": 27,
+    "topics": 11,
+    "codes": 13,
+    "newClaims": 2,
     "reusedClaims": 9
   },
   "expectations": [
@@ -359,11 +359,13 @@
     },
     {
       "code": "B3.6",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_vTYqDVwV4e"
+      ],
+      "remainingConditions": [],
+      "dossier": "canadian-consultation-knowledge-review-2026-11-11.json",
+      "protocolReference": "/protocols/duty-and-circumstances"
     },
     {
       "code": "B3.7",
