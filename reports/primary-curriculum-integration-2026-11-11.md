@@ -24,8 +24,10 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 242 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 243 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
 The remaining whole programme reviews are Grade 6 Social Studies (46 records), Health/PE (267) and Kindergarten (127), totalling 440 eligible Ontario records. Actual task/resource duties from prior Language (40) and Science (233) Partial reviews also remain. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
 Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
+
+The review-driven French guard also resolves each nested report/protocol/resource binding, including each item of a resource list. Negative cases reject missing targets and empty bindings. This correction changes validation only; all curriculum and research payloads remain unchanged.

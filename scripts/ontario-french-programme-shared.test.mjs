@@ -9,6 +9,21 @@ const core=['oral','interaction','textforms','reading','writing','culture'].map(
 const coreCulture=load('../reports/ontario-core56-french-culture-design-2026-11-10.json'),media=load('../reports/ontario-french-programme-media-design-2026-11-10.json');
 const names=['extended4','extended5','extended6','immersion1','immersion2','immersion3','immersion4','immersion5','immersion6'];
 function priorProtocolExists(d,id){return Array.isArray(d.protocols)?d.protocols.some(x=>x.id===id):!!d.protocols[id];}
+function verifyBinding(binding){
+ assert.ok(binding&&typeof binding==='object','nested binding required');
+ assert.match(binding.report,/^[a-z0-9-]+\.json$/,'nested report filename');
+ const target=load(`../reports/${binding.report}`);
+ const has=(collection,id)=>typeof id==='string'&&id.length>0&&(Array.isArray(collection)?collection.some(x=>x.id===id):!!collection&&Object.hasOwn(collection,id));
+ let targets=0;
+ for(const [single,plural,collection] of [['protocolId','protocolIds','protocols'],['resourceId','resourceIds','resources']]){
+  if(Object.hasOwn(binding,single)){assert.ok(has(target[collection],binding[single]),`nested ${single} resolves: ${binding.report}`);targets++;}
+  if(Object.hasOwn(binding,plural)){
+   assert.ok(Array.isArray(binding[plural])&&binding[plural].length>0,`nested ${plural} required`);
+   for(const id of binding[plural]){assert.ok(has(target[collection],id),`nested ${plural} resolves: ${binding.report}`);targets++;}
+  }
+ }
+ assert.ok(targets>0,'nested binding target required');
+}
 function verify(r,alignments=contexts){
  assert.deepEqual([r.scope.records,r.scope.perCourse,r.scope.courses,r.scope.componentPairs,r.scope.reusedTopics,r.scope.newTopics,r.scope.newGuides,r.scope.newDependencies,r.scope.completePrimaryFrenchDesignsAfterThisProposal,r.scope.remainingCultureRecords],[288,32,9,819,26,0,0,0,486,108]);assert.deepEqual(Object.keys(r.courseProfiles).sort(),names);const pairs=new Set();
  for(const name of names){
@@ -27,6 +42,11 @@ function verify(r,alignments=contexts){
  const actual=new Set(),keys=new Set(r.records.map(x=>x.key));for(const c of alignments)for(const k of c.standards){if(!keys.has(k))continue;const row=r.records.find(x=>x.key===k);assert.deepEqual([c.scope,c.country,c.region,c.ageRangeStart,c.ageRangeEnd],['jurisdiction','CA','Ontario',...row.ageBand]);actual.add(JSON.stringify([c.topicId,k]));}assert.equal(pairs.size,819);assert.deepEqual(actual,pairs,'exact819 scoped contributions');
  const packet=r.resources['grade4-programme-packet'];assert.match(packet.fiction.body,/Nora et Sami/);assert.match(packet.fiction.visualPreparation,/actual original panels/);assert.ok(packet.writingModels.information&&packet.writingModels.request&&packet.writingModels.instructions);
  const early=r.resources['early-immersion-packet'];assert.match(early.newReadingMessage,/Bonjour Zoé/);assert.ok(early.writingModels.invitation&&early.writingModels.information&&early.writingModels.narrative);assert.equal(early.oralAndReadingBindings.length,3);
+ for(const binding of early.oralAndReadingBindings)verifyBinding(binding);
+ verifyBinding(packet.oralAcademicResource);
+ assert.equal(r.resources['word-strategies'].bindings.length,2);
+ for(const binding of r.resources['word-strategies'].bindings)verifyBinding(binding);
+ verifyBinding(r.resources['process-and-reflection'].editingExamplesBinding);
  const listening=r.resources['beyond-independent-readaloud'];assert.match(listening.text,/deux groupes/);assert.match(listening.selection,/verify which text is beyond this learner/);assert.match(listening.selection,/if already independently readable/);assert.match(listening.task,/ask\/answer questions/);
  assert.match(r.resources['spontaneous-exchange'].task,/actual unrehearsed/);assert.match(r.resources['spontaneous-exchange'].task,/teacher separately/);assert.equal(r.resources['spontaneous-exchange'].stems.length,4);
  assert.match(r.resources['word-strategies'].task,/several different strategies/);assert.match(r.resources['process-and-reflection'].writing,/actual modelled, shared, guided and independent/);assert.match(r.resources['process-and-reflection'].writing,/establish task success criteria before drafting/);assert.match(r.resources['process-and-reflection'].reflection,/both teacher and peers/);
@@ -39,6 +59,23 @@ function verifyComplete(designs,alignments){
  const keys=new Set(expected),actual=new Set();for(const c of alignments)for(const k of c.standards){if(!keys.has(k))continue;const grade=Number(k.match(/-G([1-6])-/)[1]);assert.deepEqual([c.scope,c.country,c.region,c.ageRangeStart,c.ageRangeEnd],['jurisdiction','CA','Ontario',grade+5,grade+6]);actual.add(JSON.stringify([c.topicId,k]));}assert.deepEqual(actual,pairs,'all486 reviewed scoped pairs');
 }
 test('288 programme records retain exact whole claims and actual course-specific French performance',()=>verify(report));
+test('nested French task bindings reject missing reports, protocols and individual resources',()=>{
+ const mutations=[
+  r=>r.resources['early-immersion-packet'].oralAndReadingBindings[0].report='missing-report.json',
+  r=>r.resources['early-immersion-packet'].oralAndReadingBindings[0].protocolId='missing-protocol',
+  r=>r.resources['early-immersion-packet'].oralAndReadingBindings[1].resourceId='missing-resource',
+  r=>r.resources['early-immersion-packet'].oralAndReadingBindings[2].resourceIds[1]='missing-resource',
+  r=>r.resources['early-immersion-packet'].oralAndReadingBindings[2].resourceIds=[],
+  r=>r.resources['word-strategies'].bindings[0].resourceId='missing-resource',
+  r=>r.resources['word-strategies'].bindings[1].protocolId='missing-protocol',
+  r=>r.resources['word-strategies'].bindings=[],
+  r=>r.resources['process-and-reflection'].editingExamplesBinding.report='missing-report.json',
+  r=>r.resources['process-and-reflection'].editingExamplesBinding.resourceId='missing-resource',
+  r=>r.resources['process-and-reflection'].editingExamplesBinding.resourceId='constructor',
+  r=>r.resources['grade4-programme-packet'].oralAcademicResource.resourceId='missing-resource',
+ ];
+ for(const mutate of mutations){const r=structuredClone(report);mutate(r);assert.throws(()=>verify(r));}
+});
 test('complete486 Core and nonculture programme positions reconcile with every scoped contribution',()=>verifyComplete([...core,prior,coreCulture,media,report],contexts));
 test('programme shared guard rejects source omissions, wrong valid references, lost concrete adaptations and context drift',()=>{
  const mutations=[r=>r.records.pop(),r=>r.records[0].priorProtocolIds=['fr-original-resource-packet'],r=>r.records[0].wholePriorTaskRequired=false,r=>r.records.find(x=>x.code==='A1.3').code='A1.2',r=>r.courseProfiles.immersion1.academicContextRequired=true,r=>r.courseProfiles.immersion4.unfamiliarListeningWordsRequired=false,r=>r.protocols['extended5-source-performance'].primaryPortfolioBinding.resourceId='core6-grade-portfolio',r=>r.resources['beyond-independent-readaloud'].selection='Any read-aloud qualifies.',r=>r.resources['spontaneous-exchange'].task='Recite a complete teacher dialogue.',r=>r.resources['process-and-reflection'].writing='Copy the final model.',r=>r.source.deliveryDiscrepancies=[]];
