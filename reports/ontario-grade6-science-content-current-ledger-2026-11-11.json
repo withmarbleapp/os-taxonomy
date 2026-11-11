@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-11",
-  "localDependencyCommit": "365cbe2ef80c7f72f104f625b61d40ec2aa85534",
-  "acceptedMainBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "76451b276fb94a754ede6d4b00f6b77db8af37da",
+  "acceptedMainBaseCommit": "76451b276fb94a754ede6d4b00f6b77db8af37da",
   "scope": {
     "grade": 6,
     "ageRange": [
@@ -15,16 +15,16 @@
     "excluded": "Common A reviewed separately. No other grade/source or learner-state changes."
   },
   "counts": {
-    "freshFull": 10,
+    "freshFull": 24,
     "retainedHistoricalFull": 16,
-    "remainingPartial": 16
+    "remainingPartial": 2
   },
   "source": {
     "slug": "the-ontario-curriculum-science-and-technology-20",
     "version": "2022",
     "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/bd6e27e0-79ca-4e85-8311-2b62c51aee7f/SciTech_G6_AODA.pdf",
     "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
-    "freshReadScope": "Complete actual Grade6 B/C/D/E source PDF sections (42 content records) read on2026-11-11, exact official captures for selected duties, and fresh technical/source/task reviews in bound electrical and flight portfolios. Sixteen historical Full labels are retained separately, without blanket recertification."
+    "freshReadScope": "Complete actual Grade6 B/C/D/E source PDF sections (42 content records) read on2026-11-11, exact official captures for selected duties, and fresh factual/source/task reviews in the bound electrical, flight, biodiversity, electricity-impact and space portfolios. Sixteen historical Full labels are retained separately, without blanket recertification."
   },
   "expectations": [
     {
@@ -32,12 +32,17 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_NDZYiLvApW",
+        "mt_7e-lG7YOWa",
+        "mt_e6PP4ip39V",
+        "mt_wWpa5fFDZP"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B1"
     },
     {
       "code": "ON-SCI-2022-G6-B1.1",
@@ -72,12 +77,19 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_NDZYiLvApW",
+        "mt_1wxwg782yX",
+        "mt_e6PP4ip39V",
+        "mt_URTJbS3hhs",
+        "mt_wWpa5fFDZP",
+        "mt_VIUF5Vspbg"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2"
     },
     {
       "code": "ON-SCI-2022-G6-B2.1",
@@ -98,16 +110,16 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
         "mt_NDZYiLvApW",
         "mt_1wxwg782yX",
         "mt_e6PP4ip39V"
       ],
-      "remainingConditions": [
-        "Make the complete within-species, community and habitat-level diversity account explicit. A species-count definition alone does not establish every level."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2.2"
     },
     {
       "code": "ON-SCI-2022-G6-B2.3",
@@ -126,31 +138,33 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.4",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
-        "mt_NDZYiLvApW"
+        "mt_NDZYiLvApW",
+        "mt_e6PP4ip39V",
+        "mt_URTJbS3hhs"
       ],
-      "remainingConditions": [
-        "Explain the complete within-and-among-community resilience relationship using appropriate cases. A single keystone-removal story alone does not establish all scales."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2.4"
     },
     {
       "code": "ON-SCI-2022-G6-B2.5",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.5",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
         "mt_guaaD6Dn2M",
         "mt_H8OgKZbgGe",
         "mt_URTJbS3hhs",
         "mt_qixeaiswFP"
       ],
-      "remainingConditions": [
-        "Integrate those relationships with an explained biodiversity-sustaining outcome. Naming social roles or food-web arrows alone does not prove the complete account."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2.5"
     },
     {
       "code": "ON-SCI-2022-G6-B2.6",
@@ -187,71 +201,83 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.8",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
+        "mt_NDZYiLvApW",
         "mt_wWpa5fFDZP",
-        "mt_VIUF5Vspbg"
+        "mt_VIUF5Vspbg",
+        "mt_1wxwg782yX"
       ],
-      "remainingConditions": [
-        "Use checked Indigenous agricultural cases and explain how diversity supports them. Generic farming or an unsourced cultural label does not establish the required worldwide account."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-biodiversity-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/B2.8"
     },
     {
       "code": "ON-SCI-2022-G6-C1",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-C1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_VI5kdtf28e",
+        "mt_DbI1kNg_0R",
+        "mt_7e-lG7YOWa"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-electricity-impacts-principles-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1"
     },
     {
       "code": "ON-SCI-2022-G6-C1.1",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-C1.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
         "mt_VI5kdtf28e",
         "mt_DbI1kNg_0R",
         "mt_7e-lG7YOWa"
       ],
-      "remainingConditions": [
-        "Assess verified Canadian generation cases over relevant timescales, including the named communities and climate/social effects. Generic energy-source labels do not establish local or community-specific impacts."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-electricity-impacts-principles-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1.1"
     },
     {
       "code": "ON-SCI-2022-G6-C1.2",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-C1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
-        "mt_MXxVMCr7_4",
         "mt_VI5kdtf28e",
-        "mt_7e-lG7YOWa"
+        "mt_7e-lG7YOWa",
+        "mt_Qxyikkkzam"
       ],
-      "remainingConditions": [
-        "Justify actual electricity-reducing choices across sources and carry out school-community advocacy. A private intention or a conservation slogan alone is not that performance."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-electricity-impacts-principles-design-2026-11-11.json",
+      "protocolReference": "/protocols/C1.2"
     },
     {
       "code": "ON-SCI-2022-G6-C2",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-C2",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_2_YoprauaJ",
+        "mt_d-EKO-pKkP",
+        "mt_akBotspaf2",
+        "mt_X_aDUBh-HF",
+        "mt_NzCNuABT3E"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-electricity-impacts-principles-design-2026-11-11.json",
+      "protocolReference": "/protocols/C2"
     },
     {
       "code": "ON-SCI-2022-G6-C2.1",
@@ -480,12 +506,16 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_cOJhDeLkPo",
+        "mt_cxJRc15osy",
+        "mt_RNeEF1JU4J"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-space-source-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/E1"
     },
     {
       "code": "ON-SCI-2022-G6-E1.1",
@@ -504,39 +534,48 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
+      "disposition": "Full",
       "contributingTopicIds": [
         "mt_AghN5YcCHX",
         "mt_I_c57p0aGN"
       ],
-      "remainingConditions": [
-        "Assess the observational role using checked environmental-change/climate evidence. A weather forecast or a satellite name alone is not a long-term change assessment."
-      ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-space-source-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/E1.2"
     },
     {
       "code": "ON-SCI-2022-G6-E1.3",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E1.3",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Evaluate actual effects with appropriate evidence and perspectives; programme dates and names alone are insufficient."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_cOJhDeLkPo",
+        "mt_RNeEF1JU4J"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-space-source-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/E1.3"
     },
     {
       "code": "ON-SCI-2022-G6-E2",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "No overall judgment is certified by child-link totals or a differently scoped child requirement."
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_33RrpbceZE",
+        "mt_w2xiMNkyyX",
+        "mt_4V-vYhFUcm",
+        "mt_-SZU6cVB_-",
+        "mt_7GwWplh-48"
       ],
-      "reviewBasis": "Actual fresh mandatory API core and full printed149–156 content source read; concrete whole-claim/task review in progress."
+      "remainingConditions": [],
+      "reviewBasis": "Fresh official source-duty, whole-claim component, factual-source and complete original task-portfolio review. Full is source-bound authoring coverage, not learner attainment or blanket historical recertification.",
+      "dossier": "ontario-grade6-space-source-task-design-2026-11-11.json",
+      "protocolReference": "/protocols/E2"
     },
     {
       "code": "ON-SCI-2022-G6-E2.1",
@@ -620,5 +659,5 @@
       "reviewBasis": "Retained historical Full, not blanket recertification."
     }
   ],
-  "inventoryNotes": "The inherited B2.6 defining-boundary reminder is retained verbatim under historicalReviewNotes, rather than mislabeled as an unresolved condition beneath a historical Full label. No fresh B2.6 closure or learner attainment is inferred. One independently reviewed qualitative flight-model claim is added after documented failure of whole-card reuse. It closes five source duties through explicit components; no grade, force-label, organism or difficulty clones. The new guide carries all model cases and all four required assessment criteria itself."
+  "inventoryNotes": "The inherited B2.6 defining-boundary reminder is retained verbatim under historicalReviewNotes, rather than mislabeled as an unresolved condition beneath a historical Full label. No fresh B2.6 closure or learner attainment is inferred. One independently reviewed qualitative flight-model claim is added after documented failure of whole-card reuse. It closes five source duties through explicit components; no grade, force-label, organism or difficulty clones. The new guide carries all model cases and all four required assessment criteria itself. The continuation adds fourteen resource-bound fresh reviews through existing components, retaining B1.2 own-local packet and E1.1 compound-curation conditions as Partial. Source-task responses do not establish complete contributor mastery."
 }
