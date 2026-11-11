@@ -8,3 +8,5 @@ The read-only publication roundtrip identified two source issues in the proposed
 All topic cards, scoped alignments, dependencies, catalogue records, archives and other authored guide fields are preserved. These source corrections make no database or learner-state changes and do not qualify staging publication.
 
 The final full-array check also requires the existing exporter ordering: research records are now ordered by `topicId.localeCompare(other.topicId, 'en')`. Every complete record remains identical by ID; only its array position changes. The original slice append sequences remain in their immutable source commits. Exact accepted-base comparison still runs before target preparation; ordering is not silently ignored during verification.
+
+After adding the completed Grade 5 programme, the new New France guide’s two whole-second timestamps also receive explicit `.000Z` formatting. Both denote exactly the original instants; no additional precision is discarded. Its other fields are unchanged.
