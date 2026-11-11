@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "codes": [
+    "A1.1",
+    "A1.2",
+    "A3.7",
+    "A3.8",
+    "A3.9"
+  ],
+  "protocols": {
+    "organisation-and-social-relationships": {
+      "codes": [
+        "A1.1",
+        "A3.7",
+        "A3.8"
+      ],
+      "actualCasesAllRequired": [
+        "attributed Haudenosaunee founding-peace and council/Clan Mother relationships",
+        "Classic Thule Qariaraqyuk leadership, crews and resource-sharing reconstruction",
+        "dated ancient Egyptian pharaoh, status/work and administrative case"
+      ],
+      "actions": [
+        "Teach/retrieve both fixed BPJ arrangements with their complete source labels and constraints. Keep the Confederacy founding account distinct from later/current institution descriptions, and the Thule archaeological model distinct from an observed universal constitution. Do not invent a Droulers council from material remains.",
+        "Use the corrected Egyptian hierarchy and complete pharaoh/Tutankhamun knowledge; retrieve the four-group model and supported work/status differences without exclusive literacy or fixed-worth inference. Tutankhamun being a child ruler/tomb discovery is independently checked, not deduced from Nebamun’s estate painting or used to date that painting to his reign.",
+        "Describe how each arrangement coordinated authority/decisions. For Haudenosaunee distinguish Nations, chiefs, Clan Mothers and shared peace aims; for the Thule case distinguish organiser, cooperating crew and modelled household/resource relationships; for Egypt distinguish powerful pharaoh, administration and different social/work groups. No mandatory universal political label or complete constitutional inventory.",
+        "Build separate diagrams and then compare actual roles, authority and resources. A council relationship is not a pharaoh; collective harvesting does not establish an elected municipal council. Explain at least a supported similarity and difference without ranking human worth or transferring one system to all Indigenous societies.",
+        "Use a changed representation and a new supplied account to check the comparison does not depend on copying layout. State what the source supports and what it cannot determine about individual status, exact chronology or current law."
+      ],
+      "nearMiss": [
+        "Transplants the Egyptian pyramid or modern municipal system to both early Indigenous cases.",
+        "Uses the Haudenosaunee founding account to claim every current rule existed at a precisely dated Droulers village.",
+        "Uses later analogy as directly observed early Inuit law or universal gender/status rules.",
+        "Treats higher rank as greater human worth or every non-scribe as unable to read."
+      ]
+    },
+    "daily-groups-and-cooperation-reasons": {
+      "codes": [
+        "A1.2",
+        "A3.9"
+      ],
+      "actions": [
+        "Use actual contrasts between groups within each of the three studied societies: Haudenosaunee council/Clan Mother role relationships; modelled Thule harvesting organiser/crew and household resource access; Egyptian scribal/administrative work versus crop-producing farmer work and differing resources. Give the source, period and evidence status with each contrast. The task does not claim a particular child’s full daily timetable or precise gender rule.",
+        "Relate the supported work/resource differences to each society’s social organisation, rather than merely naming clothes or objects. Haudenosaunee role responsibilities support a bounded social/work contrast, not an invented complete occupation schedule. Thule material differences and later analogy support a qualified interpretation, not a list of every household’s wealth.",
+        "Compare actual groups within each case, then compare the relationship across cases. Explain why joint activity was useful: attributed formerly warring Nations seeking peace/shared decisions; coordinated Thule harvesting and resource relations; Egyptian crop production and administrative recording/collection as distinct contributions. Cooperation is not proof that everyone agreed or benefited equally.",
+        "For a new source-attributed group/work example, explain a supported relationship or say that evidence is insufficient. Do not invent a war, dispute-resolution event, literacy percentage or social mobility frequency. A3.9 allows the documented reasons for cooperation; the separate A3.10 conjunction is not certified by cooperation alone."
+      ],
+      "nearMiss": [
+        "Lists everyday objects without relating work/resources to social roles.",
+        "Claims all individuals had the same life, or turns a modelled household pattern into a universal law.",
+        "Invents a particular conflict-resolution practice from cooperative harvesting."
+      ]
+    }
+  },
+  "proposedPairs": {
+    "mt_BPJ8x-w7_i": [
+      "A1.1",
+      "A1.2"
+    ],
+    "mt_bEvMBUv4eG": [
+      "A1.1",
+      "A1.2",
+      "A3.8"
+    ],
+    "mt_E7avIa-tcE": [
+      "A3.7"
+    ],
+    "mt_P0HBNfp46z": [
+      "A1.2"
+    ]
+  },
+  "contextPolicy": "All new/extended CA/Ontario9–10 only, whole claim fit retained, all exact old intervals unchanged. No new IDs/edges; global envelope end increases only for E7 and bEv as generated compatibility. Later age association is not a start-age lowering.",
+  "remaining": "A1/A3 integrated and A3.10 actual early Inuit conflict-resolution chronology condition remain separate.",
+  "scopeLimits": [
+    "Source-fit design is not learner attainment or tested teaching efficacy.",
+    "No ceremony, whaling activity, private disclosure or historical role reenactment is required."
+  ],
+  "status": "Five source-fit organisation and social/work comparison designs using unchanged claims; factual hierarchy clarification is an explicit local dependency. No learner performance or publication is inferred.",
+  "localDependencyCommit": "50bddc4601af2feab2b7b7af48807a7dd24d37eb",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "sourceReview": "ontario-grade4-social-source-review-2026-11-10.json",
+  "resourceDossiers": [
+    "ontario-early-community-organisation-2026-11-10.json",
+    "ontario-grade4-early-inquiry-map-review-2026-11-10.json",
+    "ontario-grade4-early-material-environment-review-2026-11-10.json",
+    "egyptian-social-hierarchy-factual-review-2026-11-11.json"
+  ],
+  "sources": [
+    {
+      "provider": "University of Michigan Kelsey Museum",
+      "url": "https://lsa.umich.edu/content/dam/kelsey-assets/kelsey-documents/education/teacher-resource-guides/EDU_curriculum_AEgypt_webready.pdf",
+      "reviewed": "Government/social structure pp.22–27; Tutankhamun p.19; daily life pp.28–32.",
+      "use": "Egyptian ruler, administrative/farming work, status/resources and child ruler knowledge, with separately dated examples.",
+      "limits": "No whole 85-page review claim, raw-map adoption, precise literacy percentage or unrelated chronology claim."
+    },
+    {
+      "provider": "British Museum",
+      "url": "https://www.britishmuseum.org/sites/default/files/2025-08/Nebamun_tomb_paintings_teacher_notes.pdf",
+      "reviewed": "Complete nine-page teacher notes; actual surviving fragment viewed via the British Museum partner.",
+      "use": "Attributed New Kingdom grain official and represented estate work, around 1350 BCE.",
+      "limits": "Idealised elite/afterlife representation, not every Egyptian’s ordinary life or a record from Tutankhamun’s reign."
+    }
+  ],
+  "performanceConditions": {
+    "allThreeActualArrangementsRequired": true,
+    "withinSocietyGroupContrastsRequired": true,
+    "workResourcesLinkedToOrganisation": true,
+    "sourceBasisAndChronologyQualified": true,
+    "wholeCanonicalClaimsRetained": true,
+    "cooperationDoesNotProveConflictResolution": true
+  },
+  "associationChange": {
+    "newPairs": 7,
+    "newContexts": 2,
+    "extendedContexts": 2,
+    "newClaims": 0,
+    "newEdges": 0
+  },
+  "newSourcesAlreadyReviewed": true
+}

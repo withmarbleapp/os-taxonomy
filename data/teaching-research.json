@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "d1553d9759c2ee1d34e47a1c6b33f047782baaa67207c966f55b1586882f43a2",
-  "recordCount": 1072,
+  "topicFileSha256": "fef3299d1e2d599ac82bf9757580316beee525475c5e0b9c7249e92bdf3d47cf",
+  "recordCount": 1081,
   "coverage": {
-    "topicCount": 1887,
-    "withResearch": 1072,
+    "topicCount": 1896,
+    "withResearch": 1081,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,13 +20,13 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 26,
-        "withResearch": 4,
+        "topics": 29,
+        "withResearch": 7,
         "withoutResearch": 22
       },
       "History": {
-        "topics": 111,
-        "withResearch": 1,
+        "topics": 115,
+        "withResearch": 5,
         "withoutResearch": 110
       },
       "Learning to Learn": {
@@ -35,8 +35,8 @@
         "withoutResearch": 18
       },
       "Life Skills": {
-        "topics": 46,
-        "withResearch": 0,
+        "topics": 47,
+        "withResearch": 1,
         "withoutResearch": 46
       },
       "Mathematics": {
@@ -45,8 +45,8 @@
         "withoutResearch": 82
       },
       "Personal & Social Development": {
-        "topics": 119,
-        "withResearch": 2,
+        "topics": 120,
+        "withResearch": 3,
         "withoutResearch": 117
       },
       "Science": {
@@ -218202,6 +218202,1198 @@
         "originalResearchGeneratedBy": "Taxonomy curation: factual-source review and original untested teaching design",
         "createdAt": "2026-11-10T22:44:34.279803Z",
         "updatedAt": "2026-11-10T22:44:34.279803Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_G4Fz9lw20-",
+      "pedagogy": {
+        "summary": "Teach purpose and the need or want it serves, using accurate accounts rather than inferring land use solely from appearance. Contrast this operation with natural/managed/built feature classification without changing that existing claim.",
+        "bestPractices": [
+          "Provide a short stated use or verified description for each example, not just an ambiguous photograph.",
+          "Contrast two built places with different purposes and two wooded places with different supplied uses.",
+          "Include water, conservation and a mixed-use place; do not treat the absence of buildings as absence of use."
+        ],
+        "keyRepresentations": [
+          "Place description or image plus verified purpose information",
+          "A table linking place, stated use and need/want; more than one row is allowed for mixed use"
+        ],
+        "commonMisconceptions": [
+          "All built places have the same use.",
+          "All green or unbuilt places are unused, farms or conservation areas.",
+          "A single label must exhaust every use of a place."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Ask what people use the place for and which needs or wants that helps meet. A physical-feature label and a purpose answer different questions.",
+        "activities": [
+          {
+            "title": "Same appearance, different purposes",
+            "learnerActions": [
+              "Use supplied descriptions of a home, factory, shop, growing area, road, recreation space and conservation area; describe each purpose and its needs/wants relationship.",
+              "Compare a home and factory, both built, and two wooded places explicitly described as managed for timber and protected habitat. Do not guess the use from trees alone.",
+              "Explain a supplied lake used for food gathering and a conservation wetland case with its stated clean-water/habitat role. Include the named community’s own attributed account when using an actual traditional practice.",
+              "Explain the two uses of a shop with homes above it, then transfer to a different accurate mixed-use description."
+            ],
+            "intendedInsight": "Purpose depends on how a place is used, not just what it looks like. Multiple uses and unbuilt uses can be meaningful.",
+            "feedback": [
+              "Ask what fact in the account establishes the use, then how that use meets a need or want.",
+              "If every built place is called industrial, contrast living in a home with making goods in a factory.",
+              "If unbuilt means unused, return to the supplied fishing or habitat account; do not imply people must build on land for it to matter."
+            ],
+            "rationale": "Original untested teaching proposal. Contrasting matched appearances and different purposes is designed to distinguish purpose reasoning from visual categorization; no intervention efficacy study is claimed.",
+            "sourceClaims": [
+              "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+              "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors."
+            ]
+          }
+        ],
+        "constraints": [
+          "Supply any unfamiliar production, traditional-use or conservation facts. This is not a test of unsupplied ecological, legal or community knowledge.",
+          "Use stated or verified examples. A satellite image alone does not certify an actual land use, ownership, permission or legal zoning.",
+          "Land-use examples are not an exhaustive universal classification or a ranking of which needs, wants or cultures matter. Do not assume a place has one exclusive use.",
+          "No required travel, personal address, property disclosure, land management procedure, legal decision or advanced environmental mechanism."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked curation draft after whole-claim comparison across Geography, Life Skills and environmental claims. Source verification supports the factual distinctions only; confidence in this untested teaching design remains low."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Give {{name}} short, accurate descriptions of places used for homes, growing food, making goods, shops or services, transport, recreation and conservation, including a lake used for fishing. Can they explain what each place is used for and the need or want it helps meet? Then compare homes and a factory, which are both built, and two wooded areas with different stated uses. Try a shop with homes above it: can they explain its two uses, without deciding that a place with no buildings has no use?",
+        "correctAnswer": "Explains the different supplied purposes and their needs/wants relationship, retains a meaningful unbuilt/water use, and recognizes multiple uses without equating visual appearance with purpose.",
+        "whatMakesItDiscriminate": "A home and factory share a built appearance but different purposes; two wooded areas can share vegetation while their supplied uses differ. The water/conservation cases rule out buildings as a necessary condition, and the new mixed-use case distinguishes transferable purpose reasoning from memorizing one label per picture.",
+        "probeDeeper": [
+          "Which fact tells you what this place is used for?",
+          "How can two built places serve different needs?",
+          "Can this place have more than one use, and how do you know?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Uses natural/managed/built as if it completely identifies the purpose.",
+            "revealedBy": "Gives the same purpose to a home and a factory, or guesses a wooded place’s use from its cover.",
+            "nextMove": "Keep the appearance similar and compare the stated activities or purposes. Ask which need or want each serves.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats an unbuilt place as unused or forces one exclusive purpose.",
+            "revealedBy": "Rejects the supplied fishing/conservation purpose or omits either homes or shop in the mixed-use example.",
+            "nextMove": "Return to the actual supplied use and its consequence; allow multiple well-supported purposes without inventing others.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Classifies by appearance alone or cannot relate supplied uses to needs/wants.",
+          "partial": "Explains familiar single uses but loses the distinction for matched appearances, unbuilt/water or mixed use.",
+          "full": "Explains purposes and needs/wants across supplied varied cases, including unbuilt/water and mixed use, and transfers without unsupported visual guesses."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+          "source": "Natural Resources Canada — Land cover / land use",
+          "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/land-cover-land-use",
+          "verified": true
+        },
+        {
+          "claim": "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors.",
+          "source": "Ontario Ministry of Municipal Affairs and Housing — Citizen’s guide to land use planning, Overview",
+          "url": "https://www.ontario.ca/document/citizens-guide-land-use-planning",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked land-purpose proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T16:29:06Z",
+        "updatedAt": "2026-11-10T16:29:06Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_B0IMsNXG5C",
+      "pedagogy": {
+        "summary": "Build a bounded regional knowledge pattern using the current physical-region convention and a separately identified provincial reference. Link names and broad locations to distinguishing characteristics rather than teaching a colour key or a uniform stereotype.",
+        "bestPractices": [
+          "Pair the current NRCan physical-region map with the verified Ontario outline. Their layers answer different questions; do not relabel a political boundary as a physical-region boundary.",
+          "Use Ontario examples where supplied: the Attawapiskat River low-relief wetland setting and the Niagara Escarpment within the southern lowlands. Do not relabel Manitoba or Quebec photographs as Ontario.",
+          "Ask for the three names and distinguishing characteristics after study, then transfer across map styling; do not certify regional knowledge solely by reading supplied labels."
+        ],
+        "keyRepresentations": [
+          "Current Atlas physical-region map and its stated legend",
+          "Separately attributed Ontario provincial outline, with major waters used as reference",
+          "Original short regional comparisons grounded in the checked descriptions"
+        ],
+        "commonMisconceptions": [
+          "All Ontario is Canadian Shield.",
+          "Every lowland is perfectly flat or the same as every other lowland.",
+          "The same boundary divides physical regions, provinces and First Nations communities.",
+          "A region is its colour on one particular map."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Connect each name, its broad location and a distinguishing landscape pattern, retaining both local variation and the difference between political and physical reference layers.",
+        "activities": [
+          {
+            "title": "One province, three broad physical patterns",
+            "learnerActions": [
+              "Find Ontario on the Statistics Canada reference and relate its major-water outline to the current NRCan national physical map. Identify the legend and keep political and physical boundaries distinct.",
+              "Locate and name the three Ontario-relevant broad regions using the stated current convention; compare their landscape descriptions rather than memorizing colours.",
+              "Use the Ontario Attawapiskat River example for the northern low-relief wetland and the Niagara Escarpment description to challenge the idea that southern lowlands have no relief. Describe the Shield’s rock-and-lake pattern without claiming every location is identical.",
+              "Remove the region-name labels from the assessment outline, explain locations and characteristics, then try a differently styled map with the same convention."
+            ],
+            "intendedInsight": "Named physical regions capture broad contrasting landscape patterns across Ontario; they do not simply reproduce political boundaries, and a broad region can contain local differences.",
+            "feedback": [
+              "If the whole province is named Shield, return to the distinct northern wetland and southern lowland areas in the current physical layer.",
+              "If a lowland is called featureless or every wet area is treated as the same region, compare the stated descriptions and broad positions.",
+              "If a map colour or a provincial border supplies the answer, change the styling and name the source layer that actually represents physical regions."
+            ],
+            "rationale": "Original untested teaching proposal based on checked factual maps/text. Contrasts and changed-style transfer are designed to reveal regional knowledge rather than copied labels; no classroom intervention study is claimed.",
+            "sourceClaims": [
+              "The current Atlas distinguishes Canadian Shield, Hudson Bay Lowland and Great Lakes–St. Lawrence Lowlands as physical regions with different landscape characteristics; the text gives an Ontario Hudson Bay Lowland example at the Attawapiskat River and southern lowland relief around the Niagara Escarpment.",
+              "Statistics Canada’s Ontario reference map identifies the provincial outline within Canada; it is a political reference, not a physical-region or Indigenous territory map."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use broad educational placement, not a precise parcel, navigation, legal or Indigenous-territory boundary determination. Do not project current boundaries back onto1780–1850 maps.",
+          "The current national map has no provincial outline overlay; keep the paired verified provincial reference explicit. Do not manufacture precision by casually stretching or aligning different map images.",
+          "State the current three-region Ontario convention. The archived sixth-edition map has different Hudson/Shield subdivision terminology and is not an interchangeable working map.",
+          "No required geology formation chronology, mineral classification, exhaustive subregion inventory, ecozone equivalence, job pattern or environmental causal model is added.",
+          "Names may be said aloud and supplied place labels read aloud; spelling or a particular digital app is not assessed. No travel is required.",
+          "Elicit names and distinguishing characteristics before offering the worked comparison. Hints or repeated source labels are scaffolding, not independent evidence for the full knowledge claim."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked factual proposal, reviewed for this bounded shared claim. Actual current region-layer image and the separate Statistics Canada provincial image were visually inspected. Earlier close-scale map export was blank outside the layer’s visibility range, not evidence of absent regions. Low confidence concerns untested teaching efficacy."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After exploring the current physical-region map together with an Ontario outline, show {{name}} an Ontario outline with major waters but without the three region names. Can they name the three broad physical regions from the convention you studied, show their broad locations and explain a characteristic that distinguishes each? Ask whether every location within one region must look identical, and have them explain using a checked Ontario example. Then use a differently styled reference map: can they recognize the same regions without relying on one colour scheme or confusing them with province or community boundaries?",
+        "correctAnswer": "Names and broadly locates the three regions, explains their contrasting landscape characteristics, retains local variation and identifies the physical-layer versus political-boundary distinction on a new map.",
+        "whatMakesItDiscriminate": "An outline without the three labels requires regional knowledge rather than copying. A northern wetland versus southern lowland comparison rules out a single undifferentiated lowland label, the escarpment challenges perfectly-flat reasoning, and changed styling rules out one colour key as the learned content.",
+        "probeDeeper": [
+          "Which region’s broad pattern is shown here, and what feature supports your answer?",
+          "How can a lowland include an escarpment or hills?",
+          "Does this line show a province or a physical region, and how do you know?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Names the entire province Shield or confuses political and physical layers.",
+            "revealedBy": "Uses Ontario’s provincial outline as the boundary of one physical region.",
+            "nextMove": "Compare the separately labelled source layers and locate their distinct northern and southern areas before naming them again.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats both lowlands as identical and completely flat, or answers only by map colour.",
+            "revealedBy": "Cannot explain a distinguishing characteristic or loses the region when styling changes.",
+            "nextMove": "Return to the source descriptions, contrast their setting and the southern escarpment example, then retry with different map colours.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not identify the three broad regional names/patterns or substitutes political labels.",
+          "partial": "Recalls names or one map but cannot distinguish their characteristics, local variation or changed styling.",
+          "full": "Connects names, broad locations and distinguishing characteristics across the stated convention and a new styled map without equating political and physical boundaries."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The current Atlas distinguishes Canadian Shield, Hudson Bay Lowland and Great Lakes–St. Lawrence Lowlands as physical regions with different landscape characteristics; the text gives an Ontario Hudson Bay Lowland example at the Attawapiskat River and southern lowland relief around the Niagara Escarpment.",
+          "source": "Natural Resources Canada — current Physiographic Regions of Canada text and Regions layer",
+          "url": "https://atlas.gc.ca/phys/en/index.html",
+          "verified": true
+        },
+        {
+          "claim": "Statistics Canada’s Ontario reference map identifies the provincial outline within Canada; it is a political reference, not a physical-region or Indigenous territory map.",
+          "source": "Statistics Canada — Ontario, Standard Geographical Classification reference map",
+          "url": "https://www.statcan.gc.ca/en/statistical-programs/document/SGC_CGT_17292_V1",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked Ontario regional-knowledge proposal; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:03:56Z",
+        "updatedAt": "2026-11-10T17:03:56Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_xswgDb7eIU",
+      "pedagogy": {
+        "summary": "Teach actual institutions through a small verified Ontario case set, distinguishing community geography, representation, decision authority and service implementation. Shared service reasoning alone does not supply these local institutional facts.",
+        "bestPractices": [
+          "Use official municipal type/status information and the First Nation’s or Métis organization’s own account. Do not infer powers from the shared word council.",
+          "Pair a service and a development example with the body actually responsible. Include what the evidence does not establish.",
+          "Use a contrasting same-name or nearby-place example to separate a geographic label from governance."
+        ],
+        "keyRepresentations": [
+          "A simple case table: named entity, community type, governing/representative body, service/development matter, supporting authority.",
+          "Separate place map and institutional relationship diagram, labelled as different kinds of representation."
+        ],
+        "commonMisconceptions": [
+          "Every council has identical municipal powers.",
+          "A city or county name fixes municipal tier; the nearest city governs a First Nation.",
+          "A Métis region is just another municipality governing every resident and parcel inside a map boundary."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Learn the particular Ontario community/body relationships, then use attributed service and development examples to explain whose needs are represented and who actually decides or implements the matter.",
+        "activities": [
+          {
+            "title": "Places, representatives and actual decisions",
+            "learnerActions": [
+              "Study the verified packet of City of North Bay, Town of Goderich, Township of Douro-Dummer, Village of Westport and County of Brant, plus Nipissing First Nation and the North Bay Métis Council/MNO regional representation. Identify municipal versus distinct First Nation/Métis institutions, without memorizing every municipal tier or office.",
+              "Follow the supplied North Bay zoning-amendment account: staff evaluation and public process lead to a City Council decision about permitted land uses. Explain how a hypothetical proposed housing use concerns local needs; do not assert that a fictional proposal actually happened.",
+              "Follow Nipissing First Nation’s own Public Works account from Chief and Council direction through administration to roads/infrastructure services. Explain how the service meets community needs, without making a nearby municipality its governing body.",
+              "Compare MNO local citizen representation and regional consultation on a hypothetical resource-development matter with the City zoning example. Explain that representation and consultation do not automatically grant municipal permit powers.",
+              "After studying the named cases, explain them without a completed answer table. Then use a fresh verified case record to decide what further authority information is needed rather than guessing from its name or location."
+            ],
+            "intendedInsight": "Ontario community types, geography and institutional authority are related but not equivalent; the selected bodies serve or represent particular people through different supported roles.",
+            "feedback": [
+              "Ask which actual source establishes the body’s role, then how the selected service or decision meets the represented community’s needs.",
+              "If all councils are treated alike, contrast the actual North Bay zoning decision, Nation infrastructure direction and MNO representation/consultation accounts.",
+              "If a map boundary is treated as authority, separate the place map from the institutional relationship diagram."
+            ],
+            "rationale": "Original untested teaching design. Contrasting actual institutional relationships is intended to prevent generic council vocabulary from substituting for Ontario-specific knowledge. No efficacy or learner attainment study is claimed.",
+            "sourceClaims": [
+              "Municipal names do not determine single-, upper- or lower-tier legal status.",
+              "The City of North Bay describes staff evaluation and a public process followed by a City Council decision on a proposed zoning amendment.",
+              "Nipissing First Nation Public Works follows Chief and Council direction through the CEO and maintains roads and other community infrastructure and services.",
+              "MNO local Chartered Community Councils represent Métis citizens; their interests connect to the PCMNO through regional councillors.",
+              "MNO lists a North Bay Métis Council with its governing documents; this establishes a named case without requiring current officeholders or personal contacts.",
+              "MNO supports regional consultation and technical expertise for lands/resources and development matters; consultation is not municipal zoning authority."
+            ]
+          }
+        ],
+        "constraints": [
+          "Adult preparation must verify current named examples and scope. No requirement to learn all offices, current officeholders, municipal totals, tax rates, constitutional doctrines or legal procedures.",
+          "Do not equate First Nations or Métis institutions with municipal tiers, assume identical governance across Nations, or infer an MNO council’s authority over all people or parcels from a geographic label.",
+          "Keep actual service provision, decision-making and consultation separate. Shared needs do not imply identical powers; a provider or contractor is not necessarily the governing body.",
+          "Use original explanatory tables and factual summaries, not redistributed restricted GIS data or source text. No private pupil address, legal/title adjudication or civic participation requirement.",
+          "Consultation-versus-zoning is a bounded distinction drawn from these supplied accounts; it is not a legal judgment about all rights or every situation. Other verified examples can replace these named teaching cases without changing the claim."
+        ],
+        "reviewNotes": [
+          "2026-11-10: private original proposal following whole-claim comparison across civic, finance and geography domains. Factual sources checked; teaching design untested. No canonical ID assigned pending semantic review."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying accurate examples, can {{name}} explain how Ontario cities, towns, townships, villages and counties differ from a First Nation and a Métis community or region? Using studied municipal, First Nation and Métis examples, ask who represents the community and how a particular service or development decision meets local needs. Would a nearby city automatically make decisions for the First Nation, or would a Métis council automatically decide city zoning? Try a fresh example: what information would they check before assigning a governing body?",
+        "correctAnswer": "Identifies the studied community/entity types and different governing/representative relationships, explains a supported service/development role responsive to local needs, and rejects geographic-name or proximity-based assignments of authority in a fresh case.",
+        "whatMakesItDiscriminate": "The City, Nation and Métis examples share needs and the word council while their supported institutional roles differ. Removing the completed case table tests knowledge rather than copying; the fresh named case and boundary distractors distinguish institutional understanding from a geographic nesting rule.",
+        "probeDeeper": [
+          "Who does this body represent, and which source establishes its role?",
+          "Does the source describe deciding, implementing a service, or being consulted?",
+          "What would you need to verify before saying a nearby city governs this community?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Treats every council or mapped region as the same municipal authority.",
+            "revealedBy": "Assigns North Bay zoning powers to the MNO council or assumes North Bay governs Nipissing First Nation.",
+            "nextMove": "Reconstruct the actual case relationships and compare who is represented and what authority is stated.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Infers legal status from city/county wording or map size.",
+            "revealedBy": "Uses the label alone despite a supplied contrary official status or distinct governance account.",
+            "nextMove": "Compare verified name/status examples and separate geographic containment from institutional relationships.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only names places or services, or makes unsupported identical-authority assumptions.",
+          "partial": "Knows some named institutions but confuses service implementation, representation or development authority, or cannot handle a contrasting fresh case.",
+          "full": "Explains the studied Ontario community/institution distinctions and supported service/development relationships, retains authority limits and transfers by checking a fresh case rather than relying on its label."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Municipal names do not determine single-, upper- or lower-tier legal status.",
+          "source": "Ontario Ministry of Municipal Affairs and Housing — List of Ontario municipalities",
+          "url": "https://www.ontario.ca/page/list-ontario-municipalities",
+          "verified": true
+        },
+        {
+          "claim": "The City of North Bay describes staff evaluation and a public process followed by a City Council decision on a proposed zoning amendment.",
+          "source": "City of North Bay — Zoning by-laws",
+          "url": "https://northbay.ca/zoning",
+          "verified": true
+        },
+        {
+          "claim": "Nipissing First Nation Public Works follows Chief and Council direction through the CEO and maintains roads and other community infrastructure and services.",
+          "source": "Nipissing First Nation — Public Works",
+          "url": "https://nfn.ca/public-works/",
+          "verified": true
+        },
+        {
+          "claim": "MNO local Chartered Community Councils represent Métis citizens; their interests connect to the PCMNO through regional councillors.",
+          "source": "Métis Nation of Ontario — Chartered Community Councils",
+          "url": "https://www.metisnation.org/community-councils/",
+          "verified": true
+        },
+        {
+          "claim": "MNO lists a North Bay Métis Council with its governing documents; this establishes a named case without requiring current officeholders or personal contacts.",
+          "source": "Métis Nation of Ontario — Community Council Contacts",
+          "url": "https://www.metisnation.org/community-councils/council-contacts/",
+          "verified": true
+        },
+        {
+          "claim": "MNO supports regional consultation and technical expertise for lands/resources and development matters; consultation is not municipal zoning authority.",
+          "source": "Métis Nation of Ontario — Lands, Resources and Consultations",
+          "url": "https://www.metisnation.org/programs-and-services/lands-resources-consultations/",
+          "verified": true
+        },
+        {
+          "claim": "Town of Goderich is the municipal name used by its own official website; this confirms the packet example without implying a tier from the label.",
+          "source": "Town of Goderich — Official website",
+          "url": "https://www.goderich.ca/",
+          "verified": true
+        },
+        {
+          "claim": "Township of Douro-Dummer is the municipal name used by its own official website; this confirms the packet example without implying a tier from the label.",
+          "source": "Township of Douro-Dummer — Official website",
+          "url": "https://www.dourodummer.ca/",
+          "verified": true
+        },
+        {
+          "claim": "Village of Westport is the municipal name used by its own official website; this confirms the packet example without implying a tier from the label.",
+          "source": "Village of Westport — Official website",
+          "url": "https://villageofwestport.ca/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked Ontario institutional-knowledge draft; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:37:35Z",
+        "updatedAt": "2026-11-10T17:37:35Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_MX-ij5JAaO",
+      "pedagogy": {
+        "summary": "Build actual regional historical knowledge with distinct named agreements, attributed perspectives and a simple promise/event comparison. Use existing historical-source reasoning for the method; it does not supply these facts.",
+        "bestPractices": [
+          "Teach a few named, region-relevant agreements and their parties before probing recall and explanation; do not make legal-text decoding the gate.",
+          "Compare particular promises with supported subsequent historical events, keeping attribution and uncertainty explicit.",
+          "Keep earlier continuing wampum context separate from a later agreement’s date. Do not manufacture a physical exchange for each selected treaty."
+        ],
+        "keyRepresentations": [
+          "A source-attributed agreement table: date/place, parties, particular promise and documented historical effect.",
+          "A timeline separating earlier relationship origins, selected period agreements and later events."
+        ],
+        "commonMisconceptions": [
+          "Every treaty meant the same thing or ended every Indigenous right.",
+          "Knowing a treaty number or contemporary reserve name establishes actual terms and effects.",
+          "A belt’s earlier origin makes it a newly exchanged object at every later treaty."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Teach a bounded local case repertoire, then compare actual agreement knowledge and a relevant attributed wampum relationship without reducing all treaties to land sales.",
+        "activities": [
+          {
+            "title": "Particular agreements, promises and consequences",
+            "learnerActions": [
+              "Study adult-prepared, own-word summaries of TorontoPurchase1805, Ajetance1818 and Haldimand1784 in a southern Ontario packet. Locate the relevant broad region using verified references; these examples do not apply uniformly to every Ontario community.",
+              "Identify the parties and a particular commitment in each case. Compare the Nation’s accounts of Toronto/Etobicoke fishing and Ajetance annual goods with the Grand River settlement account; avoid assuming one term belongs to every agreement.",
+              "Distinguish the commitments from supported historical consequences and later claims or commemorations; explain a real effect for the communities without deciding current legal title.",
+              "Study Wiikwemkoong’s own account of1764Niagara promises embedded in wampum and the continuing alliance invoked during1812. Connect those attributed events on the timeline, then distinguish the later1830s displacement/1836context. The earlier wampum is not a newly exchanged1805or1818belt.",
+              "Use the separately attributed OnondagaTwoRow account as another earlier continuing relationship when comparing purposes; retain its earlier origin and parallel-path/noninterference meaning. It is not a claim that the same belt was exchanged for each selected land agreement.",
+              "After study, reconstruct a simple agreement table and explain a contrast without a completed answer key. Then read a short new verified case and identify which facts need its own evidence rather than assuming the studied terms."
+            ],
+            "intendedInsight": "Actual agreements have particular parties, commitments, purposes and effects; chronology and attributed wampum relationships matter, and agreement terms cannot be inferred from a name or projected from another case.",
+            "feedback": [
+              "Ask who promised what, then which source supports the stated historical effect.",
+              "If all agreements are called a complete surrender of every right, return to the particular retained commitment or relationship in the source.",
+              "If chronology is collapsed, place the earlier belt relationship and later period agreements on separate timeline entries."
+            ],
+            "rationale": "Original untested historical-knowledge teaching design, not a legal opinion or efficacy claim.",
+            "sourceClaims": [
+              "The Nation describes an uncertain1787agreement, the1805TorontoPurchase, retained Etobicoke Creek fishing and later consequences/claim history.",
+              "The Nation describes the1818Ajetanceagreement in its settler-pressure/economic context and a commitment of annual goods; its account does not make all agreements identical.",
+              "Six Nations of the Grand River identifies the1784Haldimandagreement with settlement along the Grand River; its contemporary holiday account is not a current parcel-title determination.",
+              "Bradley Powless’s attributed Onondaga account dates the Two Row relationship earlier and explains distinct parallel paths, equal relations and noninterference as continuing commitments.",
+              "Wiikwemkoong’s own history links1764Niagara promises embedded in wampum with the continuing British alliance invoked during1812, then describes1830s displacement and1836BondHead context. The earlier wampum date remains explicit."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use genuinely verified agreements relevant to the selected region; the worked southern Ontario repertoire is not an all-Ontario treaty inventory.",
+          "Use accurate adult-prepared summaries and attributed community accounts. Source copies, protected ceremonies, belt replication or pupil disclosure are not required.",
+          "No legal-title adjudication, treaty-right eligibility ruling, every treaty article, every wampum design or assumption all treaties were sales/extinguished rights.",
+          "Earlier Two Row origin is context, not an invented period exchange. Do not claim a specific belt accompanied Treaty13/19 without evidence."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked curation following whole-claim comparison and actual A3.7 review. The Canadian wampum case uses the Nation’s explicit1764→1812continuity rather than inventing a later belt exchange. Teaching efficacy remains untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying a few regional agreements, can {{name}} identify who made them, what a particular agreement promised and how it affected the communities? Compare two with different purposes or terms. Using an attributed account of a wampum belt or relationship, can they explain what it records and when it began, without assuming every agreement had the same terms or every belt was exchanged at the date of a later land agreement?",
+        "correctAnswer": "Knows the selected agreements’ actual parties/period, explains supported commitments and historical effects, distinguishes promises from events, and retains the wampum account’s attributed purpose and chronology without importing terms or making current legal judgments.",
+        "whatMakesItDiscriminate": "Different studied terms rule out a memorized universal treaty story; promise-versus-event separation tests historical relationship knowledge. The explicit earlier wampum→period alliance link exposes chronology conflation, while an unseen case requires its own evidence rather than guessing from a number or map.",
+        "probeDeeper": [
+          "Which part is a commitment, and which is a later event?",
+          "Does the source support this claim for this agreement, or only for another one?",
+          "What does the attributed belt account record, and is its origin the same date as this selected treaty?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Uses a universal land-sale or rights-ended story for every agreement.",
+            "revealedBy": "Overrides a stated retained commitment or distinct settlement/peace purpose.",
+            "nextMove": "Compare the particular parties and commitments and explain one supported difference.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Conflates earlier wampum origin, later agreement and current legal status.",
+            "revealedBy": "Invents an1805belt exchange or treats a current reserve map as the treaty’s full meaning.",
+            "nextMove": "Rebuild the source-attributed timeline and distinguish historical facts from unestablished present legal conclusions.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only names a number/place or repeats unsupported universal treaty terms.",
+          "partial": "Knows some terms/effects but confuses parties, promises/events, agreement differences or chronology.",
+          "full": "Explains the studied regional agreements and their particular historical relationships, retains attributed wampum chronology, and distinguishes a further case without unsupported transfer of terms."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The Nation describes an uncertain1787agreement, the1805TorontoPurchase, retained Etobicoke Creek fishing and later consequences/claim history.",
+          "source": "Mississaugas of the Credit First Nation — Toronto Purchase",
+          "url": "https://mncfn.ca/the-toronto-purchase-treaty-no-13-1805/",
+          "verified": true
+        },
+        {
+          "claim": "The Nation describes the1818Ajetanceagreement in its settler-pressure/economic context and a commitment of annual goods; its account does not make all agreements identical.",
+          "source": "Mississaugas of the Credit First Nation — Ajetance Treaty",
+          "url": "https://mncfn.ca/ajetance-treaty-no-19-1818/",
+          "verified": true
+        },
+        {
+          "claim": "Six Nations of the Grand River identifies the1784Haldimandagreement with settlement along the Grand River; its contemporary holiday account is not a current parcel-title determination.",
+          "source": "Six Nations of the Grand River — Haldimand Treaty Day2025notice",
+          "url": "https://www.sixnations.ca/news-feed/posts/community-notice-october-25th-declared-as-haldimand-treaty-day-on-six-nations/",
+          "verified": true
+        },
+        {
+          "claim": "Bradley Powless’s attributed Onondaga account dates the Two Row relationship earlier and explains distinct parallel paths, equal relations and noninterference as continuing commitments.",
+          "source": "Onondaga Nation — Two Row Wampum Belt",
+          "url": "https://www.onondaganation.org/culture/wampum/two-row-wampum-belt-guswenta/",
+          "verified": true
+        },
+        {
+          "claim": "Wiikwemkoong’s own history links1764Niagara promises embedded in wampum with the continuing British alliance invoked during1812, then describes1830s displacement and1836BondHead context. The earlier wampum date remains explicit.",
+          "source": "Wiikwemkoong Unceded Territory — Our History",
+          "url": "https://www.wiikwemkoong.ca/history/",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked treaty knowledge draft; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:44:00Z",
+        "updatedAt": "2026-11-10T17:44:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_klz8bAeI8m",
+      "pedagogy": {
+        "summary": "Teach a small, named historical repertoire as actual knowledge, supported by existing source-inference and comparison operations. Do not substitute generic past-versus-present reasoning for the particular Canadian period facts.",
+        "bestPractices": [
+          "Keep a case’s people, broad place and date together before comparing aspects of life.",
+          "Use attributed own-word summaries and a small selected artefact/image/source example, clearly distinguishing original evidence, historical synthesis and modern reconstruction.",
+          "Teach documented roles as historical descriptions, not universal gender rules or an expectation to enact them."
+        ],
+        "keyRepresentations": [
+          "A map/time strip with named case labels and clearly dated evidence.",
+          "A simple comparison table linking community, shelter/food/work/learning and a supported local connection."
+        ],
+        "commonMisconceptions": [
+          "All Indigenous peoples or settlers lived the same way and had identical relationships to land.",
+          "A current reserve, reconstructed fort or later school is an unchanged original1780–1850setting.",
+          "A documented household role is a rule for every person then or for children today."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Build ordinary-life knowledge across a bounded, distinct case collection, then compare with attributed evidence and retain limits.",
+        "activities": [
+          {
+            "title": "Named communities and ordinary lives",
+            "learnerActions": [
+              "Study the five ordinary-life cases and the bounded Assiniboine communal-work supplement, each with actual people/place/date attribution. Place them broadly on paired current reference maps and a dated time strip without projecting current political boundaries backwards.",
+              "Describe source-supported food, shelter, work and family contributions. Include the actual women/children/men evidence where documented, marking any missing case-specific attribution instead of filling a stereotype.",
+              "Explain how a named waterway, material or documented relationship supported a particular activity in two cases. Supply unfamiliar historical facts; do not turn it into an ecological-mechanism test.",
+              "Compare two studied cases with a supported similarity/difference, recognizing diversity within categories and more than one settler case.",
+              "After study, explain selected facts without a completed table. Check a new attributed detail for place/time fit and distinguish an original object/account from a modern reconstruction or later outcome."
+            ],
+            "intendedInsight": "Historical community knowledge is particular, dated and diverse; a shared human need can be met in different documented ways, without making one case stand for every community.",
+            "feedback": [
+              "Ask which community, place and date the statement belongs to.",
+              "If a universal stereotype replaces evidence, compare the actual named cases and identify where they differ.",
+              "If an apparently precise detail lacks support, label that limit instead of guessing."
+            ],
+            "rationale": "Original untested teaching proposal for historical knowledge, not an intervention study.",
+            "sourceClaims": [
+              "Fort William’s early1800s account supports Anishinaabe habitation, food, technologies and trade connections, with specific1805/1808references.",
+              "The MNO-commissioned report documents particular Lake Superior post/family work in1825–1841and explicitly limits ethnic labels and outsider documentary accounts.",
+              "The territorial heritage account distinguishes dated Kuukpak material and later descriptions with early1800s continuity.",
+              "The community-led timeline dates a Sallirmiut/Franklin encounter to1826, distinct from earlier Inuvialuit presence.",
+              "Buxton’s founding period is1849; the later physical/industrial/educational history must not be projected to that date.",
+              "The archival mission narrative dates building/school activity to1849–1850and reflects a minister’s perspective.",
+              "Traill’s1836published letters describe1832–1835settler household work and children’s contributions, from her particular perspective.",
+              "Henry’s1808–09FortVermilion-framed account, in the Assiniboine section, describes young men gathering buffalo and men,women and children guiding them along prepared approaches."
+            ]
+          }
+        ],
+        "constraints": [
+          "The five core cases plus bounded role supplement form an initial repertoire, not an exhaustive national community inventory or one new topic per community/fact. Verified equivalent cases may be used while preserving actual diversity, ordinary-life knowledge and documented men/women/children contributions.",
+          "Do not conflate Métis identity with mixed ancestry or turn an outsider historic label into a modern citizenship judgment.",
+          "Keep specific place/date/evidence limits; later sources may support continuity only when explicitly justified, not arbitrary retrojection.",
+          "Full source coverage of every historical expectation is separate. Settlement causes, environmental effects, treaties, conflict/cooperation and print/digital inquiry must retain their own source-fit tasks.",
+          "No protected ceremony, reenacted hunting/cooking, personal ancestry, trauma disclosure or gendered classroom duty required."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked period-life curation following whole-claim and actual-clause comparison. First Nation-role evidence uses the original Henry/Coues Assiniboine section with explicit1808–09dating, Canadian regional context and outsider-observer limits; no extrapolation from MNO document labels or Blackfoot/Head-Smashed-In misattribution. Teaching efficacy is untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying several named communities in Canada around1780–1850, can {{name}} place them broadly on a map and timeline and describe how people obtained food, lived, worked and learned? Include distinct First Nation, Métis and Inuit examples and more than one settler community, with documented men’s, women’s and children’s contributions. Ask for a supported similarity and difference between two cases, then offer a new attributed detail: does it fit that community and period, or are they assuming everyone lived the same way?",
+        "correctAnswer": "Knows the selected distinct communities’ broad places/periods and supported ordinary-life details, including documented roles; explains local connections and compares without universalizing or projecting later evidence backwards.",
+        "whatMakesItDiscriminate": "Unprompted identification and details after study test actual period knowledge rather than reading a supplied fact aloud. Contrasting communities with shared needs rule out one generic historical lifestyle, and a fresh dated detail/reconstruction distractor tests whether facts remain attached to the correct case and evidence.",
+        "probeDeeper": [
+          "Which named community and date does this detail belong to?",
+          "What source supports this particular role or practice, and what does it leave unknown?",
+          "Is this an original period source, a later historical account or a reconstruction?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Replaces actual community differences with one generic old-fashioned lifestyle.",
+            "revealedBy": "Assigns the same food, housing and roles to everyFNMI/settler case despite source differences.",
+            "nextMove": "Rebuild two named case records and explain a supported contrast.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Projects a later place/outcome or present-day identity boundary into the studied period.",
+            "revealedBy": "Treats a reconstructed building,1859school or current settlement map as a precisely dated1849or1805fact.",
+            "nextMove": "Separate dates and evidence types on the time strip, retaining only supported claims.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only gives generic past-life statements or conflates all communities.",
+          "partial": "Knows some cases/details but confuses identity/place/date, omits documented ordinary-life roles, or relies on unsupported universal claims.",
+          "full": "Describes the selected distinct case repertoire accurately, retains documented role and setting relationships, and compares/transfers without losing attribution or chronology."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Fort William’s early1800s account supports Anishinaabe habitation, food, technologies and trade connections, with specific1805/1808references.",
+          "source": "Fort William Historical Park — Our History",
+          "url": "https://fwhp.ca/about-us/our-history/",
+          "verified": true
+        },
+        {
+          "claim": "The MNO-commissioned report documents particular Lake Superior post/family work in1825–1841and explicitly limits ethnic labels and outsider documentary accounts.",
+          "source": "Gwynneth Jones — Historical Roots of Métis Communities North of Lake Superior,2015,pp4–7,85–86",
+          "url": "https://www.metisnation.org/wp-content/uploads/2011/07/mno_report_on_historic_metis_north_of_lake_superior_march2015.pdf",
+          "verified": true
+        },
+        {
+          "claim": "The territorial heritage account distinguishes dated Kuukpak material and later descriptions with early1800s continuity.",
+          "source": "Government of Northwest Territories heritage — Inuvialuit lifeways",
+          "url": "https://www.nwttimeline.ca/stories/inuvialuit-lifeways/",
+          "verified": true
+        },
+        {
+          "claim": "The community-led timeline dates a Sallirmiut/Franklin encounter to1826, distinct from earlier Inuvialuit presence.",
+          "source": "Inuvialuit Living History — Our Timeline",
+          "url": "https://inuvialuitlivinghistory.ca/our-timeline/",
+          "verified": true
+        },
+        {
+          "claim": "Buxton’s founding period is1849; the later physical/industrial/educational history must not be projected to that date.",
+          "source": "Parks Canada — Buxton",
+          "url": "https://parks.canada.ca/culture/designation/lieu-site/buxton",
+          "verified": true
+        },
+        {
+          "claim": "The archival mission narrative dates building/school activity to1849–1850and reflects a minister’s perspective.",
+          "source": "Presbyterian Church Archives — Buxton Mission",
+          "url": "https://presbyterianarchives.ca/2017/02/02/part-5-the-buxton-mission/",
+          "verified": true
+        },
+        {
+          "claim": "Traill’s1836published letters describe1832–1835settler household work and children’s contributions, from her particular perspective.",
+          "source": "Catharine Parr Traill — The Backwoods of Canada,1836",
+          "url": "https://www.gutenberg.org/cache/epub/13559/pg13559-images.html",
+          "verified": true
+        },
+        {
+          "claim": "Henry’s1808–09FortVermilion-framed account, in the Assiniboine section, describes young men gathering buffalo and men,women and children guiding them along prepared approaches.",
+          "source": "Alexander Henry the Younger, journal inElliottCoues1897vol2,chapterXIV,pp516–519",
+          "url": "https://electriccanadian.com/history/newlightonearly02.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked period-life draft; teaching efficacy untested",
+        "createdAt": "2026-11-10T17:47:17Z",
+        "updatedAt": "2026-11-10T17:47:17Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_ugSofLX87k",
+      "pedagogy": {
+        "summary": "Teach the stated model, compare close activity descriptions and transfer to a new context. Original untested teaching design; source verification concerns the model, not instructional effectiveness.",
+        "bestPractices": [
+          "Name the four categories while keeping the model convention explicit.",
+          "Compare extraction with processing and general services with information/knowledge work using accurate activity descriptions.",
+          "Keep activity purpose distinct from place, tools, job prestige or a whole-company statistical/legal classification."
+        ],
+        "keyRepresentations": [
+          "Four labelled activity-category columns under the stated model",
+          "Short source-checked industry descriptions with main activity/output",
+          "A mixed-activity example separated into its actual described functions"
+        ],
+        "commonMisconceptions": [
+          "Everything connected with a natural resource is primary.",
+          "All services must be tertiary under every possible model.",
+          "A computer or an industrial-looking building determines a sector.",
+          "One business name proves one category regardless of the described activities."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Describe, contrast and apply the four-sector model with clear activity units.",
+        "activities": [
+          {
+            "title": "Name and explain the four sectors",
+            "learnerActions": [
+              "Introduce the selected four-sector convention with an accurate simple account: primary obtains or produces natural resources; secondary transforms materials into products; tertiary provides general services; quaternary develops or shares information and knowledge. Explain that some other systems group information work among services.",
+              "Study logging, paper manufacturing, transport/retail and research/education examples with clear descriptions. Ask what each activity principally does, which sector label fits under this model and why. Do not classify a person’s worth or assume all work is paid in the same way.",
+              "After study, ask the learner to name and explain all four categories and identify an associated industry example for each without merely matching a colour or copying a visible sorted answer."
+            ],
+            "intendedInsight": "Sector labels describe different main economic activities within a specified model.",
+            "feedback": [
+              "Return to the actual activity/output when a place, tool or familiar company name distracts from the criterion.",
+              "Compare a resource producer with a processor using the same raw material."
+            ],
+            "rationale": "Source-fit original design, not an intervention-effectiveness study.",
+            "sourceClaims": [
+              "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries."
+            ]
+          },
+          {
+            "title": "Test close contrasts, mixed activities and transfer",
+            "learnerActions": [
+              "Compare harvesting trees for raw timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
+              "Transfer to clearly described crop production, food manufacturing, shop services and agricultural research. Give needed factual descriptions rather than test unexplained technical industry knowledge.",
+              "Separate the described crop-growing, food-processing and research functions in one mixed organization. Explain that this is an activity-classification task, not a company’s legal or statistical code.",
+              "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: harvesting trees, making products, delivering goods or studying forestry? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
+            ],
+            "intendedInsight": "The same model can classify a new clear activity, while mixed or insufficient descriptions need careful units and evidence.",
+            "feedback": [
+              "Ask which described action or output supports the category.",
+              "Use a matched new context to distinguish genuine transfer from memorizing one timber chain."
+            ],
+            "rationale": "Original untested diagnostic/task design.",
+            "sourceClaims": [
+              "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries."
+            ]
+          }
+        ],
+        "constraints": [
+          "Use the exact stated four-sector convention; do not claim every economics framework separates information services identically.",
+          "Supply clear activity descriptions and factual industry examples; no company-level NAICS/legal determination.",
+          "No exhaustive occupation inventory, production-cost calculation, sustainability assessment or country-specific industrial ranking.",
+          "No new hard prerequisites inferred from age or source order."
+        ],
+        "reviewNotes": [
+          "2026-11-10: new shared knowledge claim proposed after whole-claim cross-domain search and independent root challenge. Teaching efficacy untested; factual verification limited to the official four-sector convention."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+        "correctAnswer": "Names/explains all four sectors under the stated model, distinguishes the two close contrasts using actual described activity/output, transfers to a new context and handles mixed/insufficient accounts without a fabricated company-wide label.",
+        "whatMakesItDiscriminate": "Matched activities can involve the same material or location while belonging to different sectors; a new-context transfer checks the category criterion rather than memorization of the timber examples. An insufficient account tests whether the learner invents a label from tools alone.",
+        "probeDeeper": [
+          "What does this activity mainly do, and which fact supports your label?",
+          "Would using the same computer, building or natural material make these activities the same sector?",
+          "Which missing activity/output detail would let you classify this unclear account?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Classifies all resource-related work as primary or all services as tertiary, ignoring the studied model.",
+            "revealedBy": "Cannot distinguish the matched extraction/processing or service/information cases.",
+            "nextMove": "Compare what is obtained, changed, provided or developed in each description, then retry in a different context.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Does not distinguish the model’s activities or relies only on location/tools.",
+          "partial": "Names some categories or memorizes a familiar chain but cannot explain both close contrasts or transfer.",
+          "full": "Names and explains all four categories, classifies clear new activities with reasons, and handles mixed/unclear descriptions within the stated model."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries.",
+          "source": "Ontario Ministry of Education, Social Studies Grade4, published course edition2018, B3.3",
+          "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: source-verified shared economic-model knowledge and original untested teaching design",
+        "createdAt": "2026-11-10T20:50:38.523012Z",
+        "updatedAt": "2026-11-10T20:50:38.523012Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_vf32z1-7s9",
+      "pedagogy": {
+        "summary": "Study the verified political map and capital pairs, retrieve the names/locations, then transfer to a differently styled map. Original untested design; no instructional-effectiveness claim.",
+        "bestPractices": [
+          "Keep province/territory names, capital names and capital roles distinct.",
+          "Use legible large views or insets for small Atlantic provinces and nearby capital labels, alongside the national overview.",
+          "Retrieve the complete 13 division/capital set after study; do not mistake copying labels for retained knowledge.",
+          "Accept accurate oral English or French place names; no accent, spelling or exact-border-tracing demand."
+        ],
+        "keyRepresentations": [
+          "Actual Canada political map with legible capital-symbol key",
+          "Ten-province/three-territory paired-name table",
+          "A differently styled map or unlabelled outline retaining reliable geographic reference"
+        ],
+        "commonMisconceptions": [
+          "The largest or most famous city must be the capital.",
+          "Ottawa is Ontario’s provincial capital.",
+          "A political map establishes Indigenous traditional or treaty territories.",
+          "A different map colour changes the place or its status."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Connect Canada’s complete 13 division/capital set with broad locations, retrieve it and transfer across legible maps.",
+        "activities": [
+          {
+            "title": "Study names, places and capital roles",
+            "learnerActions": [
+              "Use the verified table with the actual political map. Name all ten provinces and three territories, locating their broad positions and matching each with its capital. Keep both groups explicit; repeated short study sessions can build the complete set without changing the eventual claim.",
+              "Read the map’s capital key. Compare Toronto, Ontario’s provincial capital, with Ottawa, Canada’s national capital located in Ontario. Compare Victoria with Vancouver and Québec/Quebec City with Montréal as checks against assuming largest/famous city means capital.",
+              "Provide an enlarged Atlantic view or labelled inset where needed, maintaining its relation to the national view. Use broad pointing or a marker, not precise surveyed city coordinates.",
+              "Compare verified broad relative positions using the actual map reference. Treat small-island/nearby-label legibility as a resource issue, not a harder spelling or fine-motor test."
+            ],
+            "intendedInsight": "Political divisions, their capitals and the national-capital role are distinct named geographical knowledge.",
+            "feedback": [
+              "Return to the actual capital symbol and verified pair when a famous-city answer replaces the capital.",
+              "Show an enlarged source view when a small province or label cannot be read."
+            ],
+            "rationale": "Original source-fit design; not a tested memorization intervention.",
+            "sourceClaims": [
+              "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+              "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography."
+            ]
+          },
+          {
+            "title": "Retrieve and transfer the complete knowledge set",
+            "learnerActions": [
+              "After study, remove answer labels and the completed pair table. Ask the learner to name/broadly locate all 13 divisions, distinguish the ten provinces from the three territories, and name their capitals. Prompt in a changed order; a list copied from a visible key is not this check.",
+              "Have the learner mark or point to broad capital locations and explain the Ottawa/Toronto distinction. Accept correct English or French names, including Québec for Quebec City in clear city context and Terre-Neuve-et-Labrador for Newfoundland and Labrador. Do not introduce spelling marks.",
+              "Repeat selected locations/capital matches on a differently styled accurate map or outline. Ensure the national overview, insets and reference are legible rather than testing tiny-print recognition or memorized colours.",
+              "Ask what the political map does NOT show: these boundaries/capital symbols alone do not establish Indigenous traditional/treaty territories, all local peoples, population facts or the detailed powers of governments. Those are separate source/task questions."
+            ],
+            "intendedInsight": "Recall and cross-map recognition establish this factual representation rather than copying one coloured map.",
+            "feedback": [
+              "Re-study a mistaken pair, then check it in a changed order/view; retain a partial result if any required division/capital remains unsupported.",
+              "Separate a capital-role mistake from a map-reading or name-legibility problem."
+            ],
+            "rationale": "Original untested diagnostic and transfer design.",
+            "sourceClaims": [
+              "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+              "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography."
+            ]
+          }
+        ],
+        "constraints": [
+          "This is one bounded knowledge set, not 13 topics or age/difficulty tiers.",
+          "No mandatory exact spelling, precise city coordinate, surveying, population inventory, detailed government powers or exhaustive peoples inventory.",
+          "Political boundaries are not Indigenous traditional/treaty territory boundaries.",
+          "Use the current verified capital table with the dated 2006 map only for corroborated stable names/locations. Exclude outdated magnetic-pole/ice data and unrelated unverified population/devolution prose.",
+          "Source B3.5 peoples/location descriptions require a separate attributed case protocol; this new card alone does not certify that entire expectation.",
+          "No hard prerequisites inferred merely from source order; map-operation support can be supplied without changing existing claims."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original teaching design following cross-domain whole-claim search and independent grain/source challenge. Factual sources verified; teaching efficacy untested."
+        ]
+      },
+      "assess": {
+        "method": "interpret_translate",
+        "poeTask": null,
+        "diagnosticPrompt": "After studying a Canada map, can {{name}} name and broadly locate its ten provinces and three territories and pair each with its capital, without the answer labels? Why are Ottawa and Toronto different kinds of capital? Try a differently styled map too. Correct oral English or French names and broad pointing count; this is not a spelling or surveying test.",
+        "correctAnswer": "Names and broadly locates the complete ten-province/three-territory set; pairs each with its correct capital and broadly locates it; distinguishes Ottawa’s national role from provincial/territorial capitals and transfers to a changed accurate map. Correct oral English/French names count.",
+        "whatMakesItDiscriminate": "Removing labels separates retrieved factual knowledge from copying; famous-city and Ottawa/Toronto contrasts distinguish capital roles; a changed map style and legible insets test geographic recognition rather than colour or tiny-print memorization.",
+        "probeDeeper": [
+          "Which place is the capital, and which map symbol or studied fact supports it?",
+          "Does a larger city necessarily have the capital role?",
+          "Can you find the same place on this different map? What does the political map not establish?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Substitutes a famous/larger city or confuses national and provincial capital roles.",
+            "revealedBy": "Vancouver for Victoria, Montréal for Québec/Quebec City, or Ottawa for Ontario’s capital.",
+            "nextMove": "Compare the verified pair table and actual key; retrieve the pair/role again without visible answers on a changed map.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Cannot connect the division names, broad locations and capital pairs reliably.",
+          "partial": "Some pairs/locations or the familiar labelled map are known, but the complete set, capital roles or changed-map check remains unsupported.",
+          "full": "Complete13 division/capital set with broad locations, correct capital-role distinctions and changed-map recognition; no spelling or survey precision requirement."
+        }
+      },
+      "sources": [
+        {
+          "claim": "The current federal provinces-and-territories table identifies ten provinces and three territories and lists the13 provincial/territorial capital pairs.",
+          "source": "Government of Canada, Intergovernmental Affairs, Provinces and territories, current table read 2026-11-10",
+          "url": "https://www.canada.ca/en/intergovernmental-affairs/services/provinces-territories.html",
+          "verified": true
+        },
+        {
+          "claim": "The actual NRCan Canada reference map labels those political divisions and capitals, distinguishing the national capital in its key; this dated map is used only for the verified stable political geography.",
+          "source": "Natural Resources Canada, Canada reference map, copyright 2006; portal metadata 2022; actual map visually checked 2026-11-10",
+          "url": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/can_eng.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: verified Canadian political geography and original untested teaching design",
+        "createdAt": "2026-11-10T21:18:03.888038Z",
+        "updatedAt": "2026-11-10T21:18:03.888038Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_tOtBMuQ2Yn",
+      "pedagogy": {
+        "summary": "Teach actual named pre-1500 community knowledge with source and period attribution; existing history methods support but do not replace this knowledge.",
+        "bestPractices": [
+          "Keep community, place and approximate period attached to every fact.",
+          "Use original paraphrases and lawfully accessed linked evidence; label modern reconstruction separately.",
+          "Compare documented needs/material solutions without ranking cultures or inventing universal social rules."
+        ],
+        "keyRepresentations": [
+          "A broad locator and dated case strip.",
+          "Two separate food/home/material-technology profiles with source roles.",
+          "The actual 1992 Qariaraqyuk survey plan with its key and modern creation date."
+        ],
+        "commonMisconceptions": [
+          "Calls every early Inuit home an igloo despite the studied winter-house evidence.",
+          "Describes Droulers as Egypt or modern Canada because a crop/garden picture looks familiar.",
+          "Repeats a supplied caption but cannot retrieve the taught case with a changed view.",
+          "Claims a modern staged photograph was taken in 1450 or treats a research model as an eyewitness constitution."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Learn two bounded historical cases, explain supported setting relationships, and check factual retrieval across changed representations.",
+        "activities": [
+          {
+            "title": "Two named early community profiles",
+            "learnerActions": [
+              "Locate each community broadly with two dated case cards; align c. 1300–1400 and c. 1450 without demanding exact year arithmetic or making archaeological labels modern citizenship categories.",
+              "Build separate food/home/material-technology profiles using actual supplied teaching facts. Connect one local resource/season to a supported need in each; compare farming/fishing/longhouse evidence with marine-harvest/storage/winter-house evidence. Avoid cultural ranking or climate determinism.",
+              "Contrast an excavated feature/artefact and a labelled modern reconstruction. Discuss what the source directly shows and where interpretation begins; this supports shared historical-evidence skills without pretending it supplies all archaeology methods.",
+              "After supported study and a delay, remove the fact captions and ask for meaningful case retrieval. Change the presentation/map view or give a fresh attributed feature and ask which learned case it fits and why. Keep a new case’s information supplied for transfer, not a demand to know untaught history."
+            ],
+            "intendedInsight": "Distinct communities met shared needs through particular learned practices and local material settings; archaeological source limits matter.",
+            "feedback": [
+              "Which named place and period supports this fact?",
+              "Compare the actual case records instead of adding a universal people or gender rule.",
+              "Label the reconstruction and model limits before drawing another conclusion."
+            ],
+            "rationale": "Original low-confidence teaching design; no intervention/learner trial claimed.",
+            "sourceClaims": [
+              "Parks Canada documents a mid-15th-century St Lawrence Iroquoian village with cultivated and gathered food evidence, longhouses/storage and ceramic, stone and bone objects.",
+              "The archaeological registry supports the named site setting, material features and bounded interpretations; source labels are retained rather than making a modern citizenship judgment.",
+              "The interpretation centre presents a modern reconstruction of the approximately 1450 village, not a surviving or photographed original 15th-century longhouse.",
+              "The MCA 2015 portrait describes its attributed interpretation and community advisory role; modern reconstruction photographs must remain labelled as such.",
+              "Whitridge’s excavated Qariaraqyuk case has substantial 14th-century occupation and material evidence of winter housing, marine harvesting/storage and access to nonlocal materials. Leadership/status reconstructions use explicitly limited archaeological and ethnographic modelling."
+            ]
+          }
+        ],
+        "constraints": [
+          "Prepare an original two-case fact/map/timeline packet from the cited sources. Provide clear dated labels, broad current place locators, an excavated-feature drawing/photo only through an authorized source/link, and an explicitly modern reconstruction view. Read source permissions before reproducing protected photos/text; original paraphrases and links suffice. Teach both case facts rather than hand over answers during the independent probe. A comparable verified pre-1500 case can replace a case only after its factual/identity/period boundaries are reviewed.",
+          "The initial repertoire includes both a dated First Nation village and a dated early Inuit community. An equivalent replacement must preserve actual community, period and region specificity and supported food, home and technology knowledge, not simply swap broad people labels.",
+          "Whitridge’s Qariaraqyuk social-leadership interpretation is an archaeological model using explicitly stated analogies; it is not an eyewitness constitution or universal Inuit political system. No unsupported child/gender/governance inventory is required by this card.",
+          "Other-society breadth, own-life comparison, government, conflict and sustained inquiry/map duties require separate source-fit task designs. The new claim does not make every source code Full.",
+          "No hunting/cooking/ceremonial reenactment, ancestry disclosure or exact-year arithmetic required.",
+          "Only factual-source checks are verified; teaching efficacy remains untested."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original source-checked early-community knowledge draft. The actual MCA portrait, PDF pp. 47–48, was viewed; Qariaraqyuk published chapter site/dating evidence read. The actual figure 11.1, PDF p. 3 / printed p. 167, was viewed: a 1992 survey plan, not a pre-1500 map. Figure 11.3 is a research probable-exchange-route model, not a definitive historical itinerary. No modern Nation institution or later ethnographic role automatically backdated."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After learning about a mid-15th-century St Lawrence village and a 14th-century Inuit winter village, can {{name}} identify each place and period, describe its food, homes and tools, and explain one supported link to its setting? Compare the cases, then show a new labelled view or detail: can they connect it to the right case without assuming all communities lived alike?",
+        "correctAnswer": "Recalls two distinct pre-1500 cases with actual food, home and technology facts, explains a supported setting relation, and separates period evidence from reconstruction.",
+        "whatMakesItDiscriminate": "Independent retrieval separates historical knowledge from caption copying; matched food/home needs across contrasting environments test factual distinctions rather than prestige or appearance. Changed views and source labels expose projection of one community or era onto another.",
+        "probeDeeper": [
+          "Which learned community, place and approximate period does that fact belong to?",
+          "What particular resource or seasonal condition supports the connection?",
+          "Does this image show excavated remains, a later interpretation or a modern reconstruction?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "One generic past or Arctic lifestyle replaces the learned communities.",
+            "revealedBy": "Calls every Inuit house an igloo or moves the First Nation crop/longhouse profile to the Arctic case.",
+            "nextMove": "Rebuild the two dated case profiles and compare the supported material/food evidence.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Treats a reconstruction or research inference as direct period observation.",
+            "revealedBy": "Dates a modern staged photograph to 1450 or makes an analogy-based leadership model an observed rule for every person.",
+            "nextMove": "Separate the original remains, source interpretation and modern reconstruction using their labels; retain uncertainty.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only generic past-life claims or broad people names without the studied cases.",
+          "partial": "Recalls some case facts but confuses periods/places/materials or cannot explain a supported setting relationship.",
+          "full": "Recalls both distinct cases with actual food, home and technology facts, explains supported setting relationships, and handles changed views/new attributed details without conflation."
+        }
+      },
+      "sources": [
+        {
+          "claim": "Parks Canada documents a mid-15th-century St Lawrence Iroquoian village with cultivated and gathered food evidence, longhouses/storage and ceramic, stone and bone objects.",
+          "source": "Parks Canada — Droulers/Tsiionhiakwatha backgrounder and site registry, 2016",
+          "url": "https://www.canada.ca/en/parks-canada/news/2016/06/droulers-tsiionhiakwatha-national-historic-site-of-canada.html",
+          "verified": true
+        },
+        {
+          "claim": "The archaeological registry supports the named site setting, material features and bounded interpretations; source labels are retained rather than making a modern citizenship judgment.",
+          "source": "Parks Canada — Droulers/Tsiionhiakwatha National Historic Site registry",
+          "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?i=76882&id=11811",
+          "verified": true
+        },
+        {
+          "claim": "The interpretation centre presents a modern reconstruction of the approximately 1450 village, not a surviving or photographed original 15th-century longhouse.",
+          "source": "Droulers/Tsiionhiakwatha interpretation centre — Plan your visit",
+          "url": "https://www.sitedroulers.ca/site/en/plan-your-visit/",
+          "verified": true
+        },
+        {
+          "claim": "The MCA 2015 portrait describes its attributed interpretation and community advisory role; modern reconstruction photographs must remain labelled as such.",
+          "source": "Mohawk Council of Akwesasne — A Cultural Portrait, 2015, pp. 47–48",
+          "url": "https://www.akwesasne.ca/media/wxgnpu2e/akwesasne-a-cultural-portrait-2015.pdf",
+          "verified": true
+        },
+        {
+          "claim": "Whitridge’s excavated Qariaraqyuk case has substantial 14th-century occupation and material evidence of winter housing, marine harvesting/storage and access to nonlocal materials. Leadership/status reconstructions use explicitly limited archaeological and ethnographic modelling.",
+          "source": "Peter Whitridge — Gender, Households, and the Material Construction of Social Difference, 2002, pp. 165–175",
+          "url": "https://www.mun.ca/archaeology/media/production/memorial/academic/faculty-of-humanities-and-social-sciences/archaeology/media-library/people/faculty/whitridge/Whitridge_2002_gender,_households.pdf",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original early-community knowledge source review;teaching efficacy untested",
+        "createdAt": "2026-11-10T22:30:00Z",
+        "updatedAt": "2026-11-10T22:30:00Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_BPJ8x-w7_i",
+      "pedagogy": {
+        "summary": "Teach two particular historical organisation arrangements with source roles and uncertainty attached; do not replace knowledge with generic good-leadership advice.",
+        "bestPractices": [
+          "Separate named community relationships before comparing them.",
+          "Make the basis of a traditional account and a research reconstruction visible.",
+          "Require explanation of who cooperates/decides and why, not a list of political labels."
+        ],
+        "keyRepresentations": [
+          "Two attributed role–relationship diagrams",
+          "A broad place/time strip with an uncertain founding date clearly marked",
+          "A new supplied community account for bounded comparison"
+        ],
+        "commonMisconceptions": [
+          "Every Indigenous community was governed in the same way.",
+          "A council must be an elected municipality or a chief must be an absolute pharaoh.",
+          "An archaeological model is an eyewitness law code and proves everybody’s gender/status.",
+          "Cooperation means no disagreement occurred or every peace attempt succeeded."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Learn the two case-specific organisation relationships, then retrieve and compare them with explicit source limits.",
+        "activities": [
+          {
+            "title": "Explain two early community organisation arrangements",
+            "learnerActions": [
+              "Prepare two separate attributed case records. For the Haudenosaunee case, distinguish the Nations’ founding-peace account from continuing traditional institutions and present policies. For Qariaraqyuk, separate dated archaeological occupation/evidence from the researcher’s model using later analogies. Use original age-appropriate summaries and lawful source links, not copied source stories or invented historical dialogue.",
+              "Teach the Haudenosaunee account as an alliance of distinct Nations seeking peaceful shared decision-making. Use Onondaga and another named founding Nation as concrete examples without requiring a complete membership or chief-name inventory. Connect chiefs and Clan Mothers with community well-being, and distinguish nation affairs from shared council concerns in the continuing traditional description. No precise founding year is required or independently established.",
+              "Teach the bounded Classic Thule interpretation: a leader/boat organiser and cooperating crew coordinated harvesting and shares/resources, with differing household access/status. Show why a large communal task needs coordination and distinguish that explanatory relationship from a claim about every person’s wealth, gender or authority. The published research uses North Alaskan analogy and material differences; it is not an eyewitness Qariaraqyuk law code.",
+              "Build two simple relationship diagrams using named roles, arrows for the supported decision/cooperation/resource relationship and a clear source label. A diagram of one case must not simply be copied onto the other. Existing generic role and comparison skills support this knowledge but do not supply the particular historical facts.",
+              "After supported study, remove the completed diagrams/captions and ask the learner to explain each arrangement in ordinary language, with drawing/pointing support where useful. Check actual role relationships and purposes, not pronunciation of every unfamiliar title or memorisation of an exact date.",
+              "Compare what cooperation aimed to achieve in the two cases: attributed founding peace/shared decisions and modelled coordinated harvesting/resource relations. Do not turn cooperation into proof that conflict never occurred or that a documented response always succeeded. An actual Inuit conflict-resolution attempt remains a separate source condition for A3.10.",
+              "Provide a new attributed account with its own roles and decisions. Ask for a supported comparison and a question still unanswered. Repeat with a changed representation of a learned case to distinguish particular knowledge from copying or an assumption that all Indigenous communities share one system."
+            ],
+            "intendedInsight": "Historical communities organised authority, cooperation and resources through particular relationships; shared needs do not make their institutions identical.",
+            "feedback": [
+              "Ask which named case and source supports the role relationship.",
+              "Return to the separate diagrams if the learner moves a council, title or authority rule from one case to the other.",
+              "Retain uncertainty where an inference or chronology is not directly documented."
+            ],
+            "rationale": "Original untested teaching design; factual-source verification is distinct from intervention efficacy.",
+            "sourceClaims": [
+              "The Nation’s attributed founding account links formerly warring Nations, a Grand Council of chiefs and Clan Mothers with working together for peace and community well-being. Its proposed founding date is an estimate.",
+              "The Confederacy presents its own founding account and traditional nation-council/Grand-Council relationship, identifies Clan Mothers’ role, and states that the exact founding date is unknown.",
+              "Research at Qariaraqyuk supports a bounded early Inuit community case with substantial 14th-century occupation. Leadership, crew, resource-sharing and household-status relations are interpreted through archaeology and explicit later North Alaskan analogies, not directly recorded as an early constitution."
+            ]
+          }
+        ],
+        "constraints": [
+          "The required learned repertoire remains the attributed Haudenosaunee founding/council relationship and the bounded Classic Thule community reconstruction. Additional supplied source-reviewed cases may support comparison and transfer; they do not replace either required arrangement or change this stable claim’s knowledge.",
+          "The exact Haudenosaunee foundation date is unknown in the Confederacy account; Onondaga’s approximate estimate is attributed, not asserted as an independently established year. Do not backdate every current department, legal policy or chief-selection detail to a precise pre-1500 village.",
+          "No Droulers-government inference, universal Inuit constitution, fixed gender rule, compulsory cultural participation or ceremony/whaling reenactment. No complete legal text, five-Nation roster or present constitutional-rights adjudication is required.",
+          "The material-life claim stays unchanged. Governance/social/cooperation contributions do not by themselves complete all early-societies comparisons, young-person duties or the A3.10 conflict-resolution conjunction.",
+          "Source-specific historical interpretation is not a new general research-method claim or automatic learner mastery. Teaching efficacy is untested."
+        ],
+        "reviewNotes": [
+          "2026-11-10: original bounded organisation curation after whole-card comparison across historical and contemporary governance, Australian kinship, rules/roles, leadership and treaty knowledge. Actual source roles, uncertain chronology and archaeological modelling remain explicit. Teaching efficacy is untested."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "After learning the Haudenosaunee founding account and the studied early Inuit community reconstruction, can {{name}} explain who worked together, how roles differed and what cooperation helped achieve? Compare the cases, then offer a new attributed account: what can they conclude, and what remains uncertain?",
+        "correctAnswer": "Identifies both learned arrangements and explains the different supported role/cooperation relationships, source basis and limits; compares a supplied new account without making one system universal.",
+        "whatMakesItDiscriminate": "Removing the completed diagram checks particular historical knowledge rather than copying or generic cooperation advice. Contrasting shared goals with different role arrangements exposes an assumed universal council/hierarchy, while a new attributed account and model label test bounded transfer rather than certainty from ethnicity.",
+        "probeDeeper": [
+          "Which community and account does that role belong to?",
+          "What did that cooperation aim to achieve, and what does the source actually support?",
+          "Is this a traditional historical account, a modern institution description or an archaeological reconstruction?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "One generic government type replaces both actual arrangements.",
+            "revealedBy": "Calls the Grand Council a modern municipal service council or assigns a pharaoh to the whaling community.",
+            "nextMove": "Rebuild the two named diagrams and explain one supported difference.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Turns an analogy or uncertain chronology into a precisely observed universal fact.",
+            "revealedBy": "Claims all Inuit households followed a documented constitution or assigns every current policy to an exact founding year.",
+            "nextMove": "Separate observed evidence, the source’s account and modelled interpretation; keep only the supported relationship.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only generic leadership/council labels or universal stereotypes.",
+          "partial": "Recalls some roles but confuses case relationships, purposes or source certainty.",
+          "full": "Explains both particular arrangements and their supported cooperation relationships, retains attribution/uncertainty, and compares a supplied account without importing institutions."
+        }
+      },
+      "sources": [
+        {
+          "source": "Onondaga Nation — Facts",
+          "url": "https://www.onondaganation.org/aboutus/facts/",
+          "claim": "The Nation’s attributed founding account links formerly warring Nations, a Grand Council of chiefs and Clan Mothers with working together for peace and community well-being. Its proposed founding date is an estimate.",
+          "verified": true
+        },
+        {
+          "source": "Haudenosaunee Confederacy — Who We Are",
+          "url": "https://www.haudenosauneeconfederacy.com/who-we-are/",
+          "claim": "The Confederacy presents its own founding account and traditional nation-council/Grand-Council relationship, identifies Clan Mothers’ role, and states that the exact founding date is unknown.",
+          "verified": true
+        },
+        {
+          "source": "Peter Whitridge — Gender, Households, and the Material Construction of Social Difference, 2002, pp. 165–175",
+          "url": "https://www.mun.ca/archaeology/media/production/memorial/academic/faculty-of-humanities-and-social-sciences/archaeology/media-library/people/faculty/whitridge/Whitridge_2002_gender,_households.pdf",
+          "claim": "Research at Qariaraqyuk supports a bounded early Inuit community case with substantial 14th-century occupation. Leadership, crew, resource-sharing and household-status relations are interpreted through archaeology and explicit later North Alaskan analogies, not directly recorded as an early constitution.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "Taxonomy curation: original source-checked historical organisation design;teaching efficacy untested",
+        "createdAt": "2026-11-11T00:00:16Z",
+        "updatedAt": "2026-11-11T00:00:16Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []
