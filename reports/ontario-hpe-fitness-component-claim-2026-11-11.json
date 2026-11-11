@@ -1,0 +1,71 @@
+{
+  "acceptedDefaultBase": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "proposalBase": "9d6099b367d1c47ddae24d64f26758c58ae3bac0",
+  "status": "Proposed component claim, not default-branch acceptance or learner attainment",
+  "topicId": "mt_m9FzTqPmmg",
+  "sourceEdition": "Ontario HPE 2019",
+  "componentNames": [
+    "cardiorespiratory endurance",
+    "muscular strength",
+    "muscular endurance",
+    "flexibility"
+  ],
+  "claimKind": "conceptual knowledge of the declared four-component model",
+  "associations": [
+    {
+      "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B2.2",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.3",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B2.4",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12
+    }
+  ],
+  "newContexts": 2,
+  "componentPairs": 3,
+  "newEdges": 0,
+  "priorClaimIds": [
+    "mt_2x-EwdBsgl",
+    "mt_4k3HGahK2k",
+    "mt_SdIWVjzopp",
+    "mt_lp1eTsQen7",
+    "mt_QK-ZZb7UUN",
+    "mt_Lzpzxs7z4C",
+    "mt_cJjnPjuvCU"
+  ],
+  "reuseDecision": {
+    "lifestyleClaims": "Complete lifestyle/benefit explanations can say exercise helps heart, muscles and mental health while still treating one strong effort and repeated muscular effort as the same capacity or confusing flexibility with speed.",
+    "bonesAndHeart": "Anatomical structure/pumping and oxygen-delivery knowledge does not distinguish the four fitness capacities or select an activity for a specified capacity.",
+    "preparation": "The complete actual warm-up/mobility operation can be performed without classifying strength versus endurance or whole-body stamina.",
+    "goalSetting": "The full plan/monitor/adjust operation does not supply these specific physiological capacity distinctions."
+  },
+  "independentWitness": {
+    "oldClaimsCanSucceed": "Explain circulation and muscle/bone movement, perform a suitable warm-up and mobility sequence, describe exercise/diet/drug benefits and risks, and complete a realistic personal goal. Still call every long/repeated activity strength and treat a flexible-looking body as globally fitter.",
+    "newClaimCanSucceed": "Accurately distinguish the four capacities using supplied activity conditions and new goal cases, acknowledge overlap and reject appearance-based inference without having to perform a maximal strength/endurance test or explain four heart chambers."
+  },
+  "remainingCurriculumTasks": {
+    "ON-HPE-2019-G6-B2.3": "Actual safe self-assessment across the relevant capacities and comparable observations over time. A conceptual answer is not the performance record.",
+    "ON-HPE-2019-G6-B2.4": "Implement and review an interest-based plan using the relevant assessment information. Naming capacities is not implementation."
+  },
+  "assessmentBoundaries": {
+    "noPerformanceNorm": true,
+    "noBodyAppearanceInference": true,
+    "overlapAllowed": true,
+    "modelExplicitlyDeclared": true,
+    "noMaximalTestRequired": true,
+    "noClinicalInference": true
+  },
+  "guideStatus": "Original untested low-confidence design; public primary resources support the definitions, not efficacy of these lessons.",
+  "hpeProgrammeCoverageUnchanged": {
+    "reviewed": 56,
+    "pending": 211,
+    "total": 267
+  }
+}
