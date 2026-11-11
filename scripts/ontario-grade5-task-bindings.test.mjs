@@ -149,3 +149,29 @@ test('Grade5 public-input processes require sourced methods, decision links and 
   delete noDecisionLink.protocols['public-input'].processes[0].decisionLink;
   assert.throws(() => checkPublicInputProcesses(noDecisionLink), /Missing process source\/decision link/);
 });
+
+function checkCanadianSharedCases(report) {
+  for (const protocol of Object.values(report.protocols)) {
+    assert.ok(protocol.actions.length && protocol.caseRefs.length, 'Missing jurisdiction task/case');
+    for (const ref of protocol.caseRefs) {
+      const task = report.preparedTaskCases[ref];
+      assert.ok(task?.facts.length && task.task && task.answerBoundary, 'Missing prepared shared case');
+      assert.ok(task.sourceRefs.length, 'Missing shared-case source');
+      for (const sourceRef of task.sourceRefs) {
+        const source = report.resources[sourceRef];
+        assert.ok(source?.url || source?.report, 'Missing shared-case source');
+        if (source.report) assert.ok(Object.keys(read(`reports/${source.report}`)).length, 'Missing inherited shared-case dossier');
+      }
+    }
+  }
+}
+test('Canadian shared responsibility tasks bind actual prepared cases and primary source locators', () => {
+  const report = read('reports/canadian-government-responsibilities-review-2026-11-11.json');
+  checkCanadianSharedCases(report);
+  const lostCase = structuredClone(report);
+  delete lostCase.preparedTaskCases['fishery-issue'];
+  assert.throws(() => checkCanadianSharedCases(lostCase), /Missing prepared shared case/);
+  const lostSource = structuredClone(report);
+  delete lostSource.resources['nfn-fishery-actions'];
+  assert.throws(() => checkCanadianSharedCases(lostSource), /Missing shared-case source/);
+});

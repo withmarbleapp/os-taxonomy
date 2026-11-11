@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "date": "2026-11-11",
   "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
-  "localDependencyCommit": "e3adc620ab197a05e5a9c9837cc6469f744de3c9",
+  "localDependencyCommit": "a87dac6741d6e72a960e23a0a4a1c2c7000eeb9d",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "16 source-fit Full authoring designs; remaining25 records separately under review. Full describes source/task design, not learner attainment or default-main acceptance.",
+  "status": "18 source-fit Full authoring designs and23 separately unverified records; no learner attainment or accepted-main publication is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Unverified": 25,
-    "Full": 16
+    "Unverified": 23,
+    "Full": 18
   },
   "associationInventory": {
-    "pairs": 33,
-    "topics": 11,
-    "codes": 16,
-    "newClaims": 2,
+    "pairs": 35,
+    "topics": 12,
+    "codes": 18,
+    "newClaims": 3,
     "reusedClaims": 9
   },
   "expectations": [
@@ -333,11 +333,14 @@
     },
     {
       "code": "B3.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt__r2dOQMc-B"
+      ],
+      "remainingConditions": [],
+      "dossier": "canadian-government-responsibilities-review-2026-11-11.json",
+      "protocolReference": "/protocols/jurisdiction-and-service",
+      "coverageBasis": "Whole bounded Canadian institutional knowledge and prepared source-backed service/issue cases account for this source duty. No current Inuit-governance or learner attainment inference."
     },
     {
       "code": "B3.3",
@@ -349,11 +352,14 @@
     },
     {
       "code": "B3.4",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt__r2dOQMc-B"
+      ],
+      "remainingConditions": [],
+      "dossier": "canadian-government-responsibilities-review-2026-11-11.json",
+      "protocolReference": "/protocols/shared-responsibilities",
+      "coverageBasis": "Whole bounded Canadian institutional knowledge and prepared source-backed service/issue cases account for this source duty. No current Inuit-governance or learner attainment inference."
     },
     {
       "code": "B3.5",
