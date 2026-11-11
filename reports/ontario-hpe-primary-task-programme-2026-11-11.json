@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "Movement C1/C2 and Active Living B1/B2 source-fit proposals: 109 records. Safety B3, Healthy Living and integrated A1 remain pending qualification.",
+  "scope": "Movement C1/C2 and Active Living B1/B2/B3 source-fit proposals: 127 records. Healthy Living D1/D2/D3 and integrated A1 remain pending qualification.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -189,6 +189,57 @@
         "G5Component": "one selected component",
         "G6Basis": "assessment across all four"
       }
+    },
+    {
+      "id": "safe-space-gear-and-shared-control",
+      "task": "In a prepared clear activity area, inspect a safe practice setup for a loose/defective equipment card, a blocked route and crowded movement space. Explain the risk and act appropriately: stop and report a fault, use an unobstructed route, keep safe personal space and follow actual directions/rules. Use only safe props and simulated hazards; do not scatter sharp objects or create a real trip. In an adult-supported demonstration, choose suitable protective equipment for the declared activity and check fit/condition without testing an impact. Equipment is not a guarantee against concussion.",
+      "wholeClaimChecks": "Retain complete generic safety examples, trusted-adult knowledge and independent safe action. Rules require two reasons and a no-rule contrast, not only obedience; source-specific bodily/equipment control is actual behaviour, not inferred from reciting a rule.",
+      "conditions": {
+        "actualSafeBehaviour": true,
+        "equipmentAndSpace": true,
+        "simulatedHazardsOnly": true,
+        "noConcussionProofHelmet": true
+      }
+    },
+    {
+      "id": "outdoor-environment-and-medical-support",
+      "task": "Use declared original practice cases, not a current local forecast: a wet/slippery route; a hot sunny activity with accessible shade/water; a cold/windy case; and an AQHI practice value of 8 or above 10 with the actual Environment Canada health-message table. Identify the risk, interpret relevant warning information and choose preparation/adaptation, an indoor alternative or rescheduling with an adult. For the AQHI cases apply the child-specific category guidance; do not infer individual medical fitness. Grade 5 compares UV, heat/humidity, wind chill and air-quality information and explains proactive arrangements rather than waiting to become unwell. Actual sessions require the adult to check current local information and applicable school procedures. In a fictional medical-support case, check that a responsible adult has the learner-specific plan and prescribed support available; do not share/administer medicine, require private disclosure or test an allergy/asthma response.",
+      "wholeClaimChecks": "Body-needs reasoning retains food, water, sleep and exercise as its separate whole check; hydration is a component, not the whole environmental duty. Signs use real Health Canada hazard-symbol pictures for a separate safe recognition check, plus actual school/local warning signs chosen by the adult. No chemical container is handled by a child.",
+      "conditions": {
+        "declaredPracticeNotForecast": true,
+        "currentLocalCheckAtUse": true,
+        "AQHIChildGuidance": true,
+        "UVHeatColdAirQuality": true,
+        "medicalSupportAdultBound": true,
+        "noMedicationAdministration": true,
+        "noHazardExposureTrial": true
+      }
+    },
+    {
+      "id": "stop-report-and-follow-concussion-procedure",
+      "task": "Use the actual Ontario age-appropriate 2025 booklet: under-10 resource for the younger primary panel and ages 11–14 for the older panel. In fictional cases after an impact or not feeling right, stop the activity, promptly tell a responsible adult and ensure adult support instead of leaving a possibly injured child alone. Explain why an apparently normal appearance, no visible cut or no loss of consciousness does not clear return. Do not enact an impact, diagnose, move an injured person or practise symptom provocation. The adult uses the applicable school/local emergency procedure and obtains professional assessment as required. For Grade 6, bind a dated school/board concussion procedure before actual use, identify the responsible adults, and practise the learner’s reporting/removal/cooperation role. Ontario PPM158 supplies the verified provincial policy frame, not a claim that one invented school policy applies everywhere. Return clearance and graduated plans are adult/clinical responsibilities; no memorised recovery timetable or self-clearance.",
+      "wholeClaimChecks": "Generic safety and rule claims contribute safe action, reasons and reporting; reading the booklet does not certify full brain/anatomy knowledge or clinical skill. Annual awareness/code confirmation is handled only where applicable to interschool sport, not invented as a new universal mastery score.",
+      "conditions": {
+        "actualAgeAppropriateBooklet": true,
+        "stopAndTellAdult": true,
+        "noChildDiagnosis": true,
+        "noSelfClearance": true,
+        "noImpactEnactment": true,
+        "notLeftAlone": true,
+        "schoolPolicyBindingAtUse": true,
+        "adultClinicalReturnAuthority": true
+      }
+    },
+    {
+      "id": "minor-care-knowledge-cases",
+      "task": "Use the complete approved minor-care guide and its three actual fictional case sets: adult-declared uncomplicated small scrape, adult-declared small bruise, then changed embedded-object/uncontrolled-bleeding/deep-wound/head-impact cases. Explain the different care methods and limits; no actual wounds, medication or physical treatment certification.",
+      "wholeClaimChecks": "Retain the complete fixed concept: adult determines minor status; bleeding-control precedes cleaning/protection; wrapped cooling is comfortable and adult-timed; warning cases require prompt help without extraction or pressure on an embedded object.",
+      "conditions": {
+        "knowledgeOnly": true,
+        "allThreeCaseSets": true,
+        "adultDeterminesMinor": true,
+        "noUnsafeInference": true
+      }
     }
   ],
   "originalGameSet": [
@@ -246,7 +297,8 @@
     "classification": "Use ten original activity cards in counts3/2/2/1/2, identify functional features, count/order category totals. Separately retain complete count-out/arranged/scattered/cardinality/one-to-one checks up to20 where the hard chain is assessed; those are not additional HPE curriculum mandates.",
     "rulesAndGroup": "Explain actual rules and their safe/fair purpose, follow them without repeated prompting, contribute/respond/complete an agreed role, listen and take turns. No individual competence is inferred from the team result, a smile or covert surveillance.",
     "activeLiving": "All about me retains the complete identity/helper/similarity checks without forced disclosure; body-needs retains food, water, sleep and exercise explanations. Heart retains continuous pumping and vessels, not just a pulse reading. Goal-setting retains actual timeframe/steps/monitoring/adjustment; routine retains a week record/reflection/helping another person. These whole checks are distinct from source-specific participation, exertion and longitudinal duties.",
-    "inheritedGoalPath": "Existing hard paths through task steps, mindset and learning from mistakes remain unchanged. Keep their full checks separate: completing a goal does not automatically establish a mindset belief, and lack of visible cheerfulness or distress is not a gap criterion. No dependency is weakened to force an HPE link."
+    "inheritedGoalPath": "Existing hard paths through task steps, mindset and learning from mistakes remain unchanged. Keep their full checks separate: completing a goal does not automatically establish a mindset belief, and lack of visible cheerfulness or distress is not a gap criterion. No dependency is weakened to force an HPE link.",
+    "safety": "Whole generic safety retains several familiar safety rules, trusted-adult reporting and actual safe action. Whole signs retains actual hazard/help/health-message interpretation; use the checked Health Canada poison-symbol image only as a safe visual reference, never a chemical-handling task. Body-needs retains its separate food/water/sleep/exercise inventory. The minor-care concept is knowledge only, assessed by its complete original case set."
   },
   "conditions": {
     "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
@@ -257,7 +309,20 @@
     "retention": "Keep actual possession through the route changes. Continuous dribbling is an illustrative option, not an invented universal requirement; if chosen, assess it directly rather than infer it from a catch.",
     "state": "No new claims, dependencies, clinical/fitness scores, learner observations or database changes.",
     "activeLiving": "Daily actual opportunity, personal factors, access, mental/physical benefit explanations, before/during/after exertion and implemented goals remain grade-specific tasks. No positive mood, appearance, fitness norm or numerical superiority is required.",
-    "longitudinalAssessment": "Grade 5 assesses a selected component; Grade 6 assesses all four, with actual repeated observations and implemented interest-based plans. Conceptual answers or a prepared blank record do not constitute a child record or successful implementation."
+    "longitudinalAssessment": "Grade 5 assesses a selected component; Grade 6 assesses all four, with actual repeated observations and implemented interest-based plans. Conceptual answers or a prepared blank record do not constitute a child record or successful implementation.",
+    "safety": "Use safe simulated cases and actual controlled behaviour. Current equipment/environment information, individual medical support and school/board procedures are adult-bound at use. A prepared case is not an injury diagnosis, child medication authority or clinical clearance.",
+    "schoolPolicyBinding": {
+      "applicability": "Use the actual current school/board policy in the real setting; provincial policy/resources are the common frame, not one invented universal local policy.",
+      "fieldsRequiredAtUse": [
+        "schoolOrBoard",
+        "procedureUrlOrDocument",
+        "versionOrReviewDate",
+        "responsibleAdults",
+        "learnerReportAndRemovalSteps",
+        "localEmergencyAndReturnAuthority"
+      ],
+      "notAnEditableTaxonomyDifficultyLevel": true
+    }
   },
   "sources": [
     {
@@ -275,6 +340,38 @@
     {
       "url": "https://www.cdc.gov/physical-activity-basics/health-benefits/children.html",
       "actualCheck": "Actual March10 2026 child-benefits body read. Narrow physical/attention-memory and mental-health risk support, not guaranteed mood or efficacy of this programme."
+    },
+    {
+      "url": "https://www.ontario.ca/files/2025-09/sport-rowans-law-booklet-ages-10-and-under-en-2025-09-05.pdf",
+      "actualCheck": "Complete 12-page 2025-06 revised body read; younger primary safety/reporting role, not medical advice."
+    },
+    {
+      "url": "https://www.ontario.ca/files/2025-09/sport-rowans-law-booklet-ages-11-to-14-en-2025-09-05.pdf",
+      "actualCheck": "Complete 14-page 2025-06 revised body read; older primary reporting and adult/clinical-return boundaries, not a child recovery timetable."
+    },
+    {
+      "url": "https://www.ontario.ca/document/education-ontario-policy-and-program-direction/policyprogram-memorandum-158",
+      "actualCheck": "Full current policy body and scope read. Provincial frame requires school/board processes; learner diagnosis and return clearance are not inferred."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/injury-prevention/helmet-safety.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/sun-safety/sun-safety-basics.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.weather.gc.ca/airquality/healthmessage_e.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/services/environment/weather/severeweather/wind-chill-index.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/home-safety/household-chemical-safety.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
     }
   ]
 }

@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **109 records**: **56 Movement Competence records (C1/C2)** and
-**53 Active Living records (B1/B2)** in Grades 1–6. It contains **109 Full**
-authoring dispositions, **258 component pairs** and **18 topics**. The remaining
-**158 records** (safety B3, Healthy Living and integrated SEL) are pending
+accounts for **127 records**: **56 Movement Competence records (C1/C2)** and
+**71 Active Living records (B1/B2/B3)** in Grades 1–6. It contains **127 Full**
+authoring dispositions, **293 component pairs** and **21 topics**. The remaining
+**140 records** (Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -62,13 +62,14 @@ Personal understanding does not require enjoying every activity, reporting a
 positive mood or disclosing private health/family circumstances.
 
 The [new fitness-component concept](ontario-hpe-fitness-component-claim-2026-11-11.md)
-is the only new claim/guide in the cumulative HPE work so far. The Active Living
-association slice changes no authored card, guide or dependency. Earlier
+and the [bounded minor-care concept](ontario-hpe-minor-care-claim-2026-11-11.md) are the two new shared claims/guides in the cumulative HPE work so far. The association slices change no authored card, guide or dependency. Earlier
 scoped requirements remain exact; standards and compatibility age envelopes are
 generated. A Full label is an authoring judgment about available tasks and
 conditions, not a claim that a child performed them or an intervention is validated.
 
-Safety B3, integrated SEL and Healthy Living remain next. Human
+Safety tasks now retain actual controlled behaviour, equipment/space checks, current environmental and medical-support arrangements, stop/report responses and the minor-care knowledge cases. Both actual 2025 Rowan booklets and current provincial policy were read. The actual school/board procedure, local environmental information and individual support must be bound by the responsible adult at use. Neither a provincial booklet nor a prepared case certifies local compliance, diagnosis or clearance.
+
+Integrated SEL and Healthy Living remain next. Human
 Development/Sexual Health records stay in scope; a school's exemption procedure
 is a runtime policy condition, not an invented user exclusion.
 
@@ -78,3 +79,5 @@ condition bindings, child-portfolio closure and scoped-pair guards reject wrong
 valid protocols, omitted preparation/recovery, reduced daily opportunity,
 concept-only longitudinal substitution, unimplemented plans, forced enjoyment,
 deleted pairs and wrong-age duplicates. All **240 tests passed**, alongside generation, validation and generated-artifact checking. The Active Living delta preserves all **1,903 authored cards**, **1,088 guide payloads and sequence**, all **4,896 prior contexts**, and every old dependency/catalogue/archive/cluster byte. It adds **27 contexts**, extends **21 exact existing bands**, and adds **126 pairs** (three fitness-component pairs already existed in the preceding checkpoint). Four generated age ends expand; no starts are lowered.
+
+The safety association checkpoint also passed all **252 tests** and required generation/validation checks. It preserves all **1,904 prior authored cards**, **1,089 guide payloads and sequence**, and **4,924 contexts**, with no edge/catalogue/archive/cluster changes. Exactly **8 contexts** are new, **9 exact bands** are extended and **34 pairs** are added; the minor-care pair already existed. One generated age end expands, with no start lowered.

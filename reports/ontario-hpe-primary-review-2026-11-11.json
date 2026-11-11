@@ -22,11 +22,11 @@
   },
   "counts": {
     "sourceClausesRead": 267,
-    "sourceFitReviewed": 109,
-    "pendingQualification": 158,
-    "Full": 109,
-    "componentPairs": 258,
-    "topics": 18
+    "sourceFitReviewed": 127,
+    "pendingQualification": 140,
+    "Full": 127,
+    "componentPairs": 293,
+    "topics": 21
   },
   "records": [
     {
@@ -425,7 +425,46 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure",
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B3.2"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_DRNXFr0ds6"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B3.1",
@@ -434,7 +473,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-B3.2",
@@ -443,7 +512,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Identify environmental risks and ways to prepare for safe outdoor activity, including impact/slip risk."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Identify environmental risks and ways to prepare for safe outdoor activity, including impact/slip risk.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-C1",
@@ -1408,7 +1506,46 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure",
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B3.2"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_DRNXFr0ds6"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B3.1",
@@ -1417,7 +1554,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-B3.2",
@@ -1426,7 +1593,36 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Protection of self and others including a fictional medical-condition support case; no diagnosis or child medication handling."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Protection of self and others including a fictional medical-condition support case; no diagnosis or child medication handling.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-C1",
@@ -2391,7 +2587,43 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B3.2"
+      ],
+      "childOnlyComponentTopicIds": []
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B3.1",
@@ -2400,7 +2632,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-B3.2",
@@ -2409,7 +2671,31 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Describe accident/injury response including possible concussion: stop, obtain adult help and avoid crowding; no clinical diagnosis."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Describe accident/injury response including possible concussion: stop, obtain adult help and avoid crowding; no clinical diagnosis.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-C1",
@@ -3395,7 +3681,46 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure",
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B3.2"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_DRNXFr0ds6"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B3.1",
@@ -3404,7 +3729,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-B3.2",
@@ -3413,7 +3768,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "outdoor-environment-and-medical-support",
+        "safe-space-gear-and-shared-control"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Describe precautions across different physical activities, including actual suitable gear/fit and impact/fall risk."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Describe precautions across different physical activities, including actual suitable gear/fit and impact/fall risk.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G4-C1",
@@ -4461,7 +4846,47 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure",
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B3.2"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_DRNXFr0ds6",
+        "mt_cxJRc15osy"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B3.1",
@@ -4470,7 +4895,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-B3.2",
@@ -4479,7 +4934,41 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "outdoor-environment-and-medical-support"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DRNXFr0ds6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Proactive environmental health measures: UV, heat/humidity, cold/wind and air-quality information plus support needs."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Proactive environmental health measures: UV, heat/humidity, cold/wind and air-quality information plus support needs.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G5-C1",
@@ -5545,7 +6034,46 @@
       "area": "Active Living",
       "recordKind": "overall",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure",
+        "minor-care-knowledge-cases"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Compose both exact grade B3 child tasks, including actual safe behaviour and source-specific response/preparation.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true,
+        "completeChildPortfolio": true
+      },
+      "includesSourceKeys": [
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3.2"
+      ],
+      "childOnlyComponentTopicIds": [
+        "mt_2IFtJJBX_n"
+      ]
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3.1",
@@ -5554,7 +6082,37 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "safe-space-gear-and-shared-control",
+        "stop-report-and-follow-concussion-procedure"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_q3vRl4dddK",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rkrG2w7WXI",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Actual safe behaviour, risk reduction and concussion procedures; equipment/space/others adapted to the source grade.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-B3.2",
@@ -5563,7 +6121,31 @@
       "area": "Active Living",
       "recordKind": "specific",
       "sourceStatus": "formal grade-end source expectation",
-      "reviewStatus": "Source read; whole-claim/task qualification pending"
+      "reviewStatus": "Source-fit authoring reviewed/proposed",
+      "disposition": "Full",
+      "protocolIds": [
+        "minor-care-knowledge-cases"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2IFtJJBX_n",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "conditionsRef": "ontario-hpe-primary-task-programme-2026-11-11.json#conditions",
+      "requiredConditions": [
+        "Describe appropriate methods for the declared minor cases and escalation limits; the complete fixed concept and changed-case diagnostic apply."
+      ],
+      "authoringMeaning": "The actual source task and conditions are accounted for; a link does not certify the whole topic or a learner performance.",
+      "sourceRequirements": {
+        "panel": "Describe appropriate methods for the declared minor cases and escalation limits; the complete fixed concept and changed-case diagnostic apply.",
+        "adultClinicalAuthorityRetained": true,
+        "noActualInjuryAssessment": true,
+        "wholeSourceTaskRequired": true
+      }
     },
     {
       "sourceKey": "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-C1",
