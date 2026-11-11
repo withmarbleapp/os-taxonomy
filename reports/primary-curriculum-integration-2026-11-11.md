@@ -38,7 +38,7 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 293 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 297 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
 The remaining whole programme review is Health/PE (267 records). Earlier own-local requirements are also receiving a consistency audit. Actual task/resource duties for 175 of the prior Science (233) Partial positions remain in this snapshot; eighteen coding, impact and integrated overall designs are now prepared. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
@@ -47,3 +47,5 @@ Default-branch acceptance, compatible runtime deployment, old-writer/fleet contr
 The review-driven French guard also resolves each nested report/protocol/resource binding, including each item of a resource list. Negative cases reject missing targets and empty bindings. This correction changes validation only; all curriculum and research payloads remain unchanged.
 
 The later review guards require exact keyboard record keys and actual task targets, reject unresolved conditions inside a Grade 6 referenced protocol, and tie each coding source code to its exact grade recipe. Negative cases include duplicate or unrelated keyboard records, inherited/missing/wrong-object targets and a wrong but existing recipe heading. These changes preserve every dataset payload.
+
+Four further science guards resolve the actual impact-case targets, preserve every declared application contributor and its exact source interval, require all 22 fresh CDE closures to keep their dossier/protocol bindings, and check conditions in both referenced task owners. Negative cases reject missing and wrong-existing targets, deleted associations and unfinished tasks. These review fixes change no dataset artifact.
