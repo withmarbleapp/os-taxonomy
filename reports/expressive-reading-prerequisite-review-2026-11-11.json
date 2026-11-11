@@ -290,5 +290,13 @@
     "NCERTLinkedTopics": 245,
     "Full": 444,
     "Partial": 3
+  },
+  "stackLifecycle": {
+    "basePR": 146,
+    "baseHead": "322ae789004c00752533cd3272d9b242a1c1bb2b",
+    "mergeOrder": "146 to main, then retarget/reconcile145 to main",
+    "preservation": "All13 Ontario pairs,2 Ontario contexts and4 authored files remain exact; India-only delta against this feature base is one approved edge and2INcomponent contexts.",
+    "authoringBaseRemains": "f70b5a56cbc2ca31bc077ee97861d5a49958a2ea",
+    "meaning": "Explicit review stack for shared generated artifacts; no feature-branch merge is presented as default-branch acceptance or downstream publication."
   }
 }

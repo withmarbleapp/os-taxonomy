@@ -46,3 +46,5 @@ The two intervals remain separate; neither an earlier readiness claim nor a6–1
 Hard versus soft affects future readiness and inference. This authoring change
 performs no downstream publication, learner reset, score transfer or historical
 evidence reinterpretation. Consumers must qualify publication separately.
+
+PR145 is explicitly stacked on PR146 to reconcile shared generated artifacts. Merge146 into main first; then retarget/reconcile145 to main and rerun checks. The India-only delta against146 remains the one registered edge plus two IN component contexts; all13 Ontario pairs and two new Ontario contexts are preserved. This review stack is not default-branch acceptance or downstream publication.
