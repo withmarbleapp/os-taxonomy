@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "efb71bda1f2bab67c6fa9ecb3cef4daa570dd847c9d55e4dc3da0a62d69c2175",
-  "recordCount": 1093,
+  "topicFileSha256": "2fe81dc6103cd42d1587d54dc525063b564dd6e8aed090f4769161d16d72c5ee",
+  "recordCount": 1094,
   "coverage": {
-    "topicCount": 1908,
-    "withResearch": 1093,
+    "topicCount": 1909,
+    "withResearch": 1094,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -50,8 +50,8 @@
         "withoutResearch": 117
       },
       "Science": {
-        "topics": 577,
-        "withResearch": 548,
+        "topics": 578,
+        "withResearch": 549,
         "withoutResearch": 29
       },
       "Physical Education": {
@@ -221327,6 +221327,170 @@
         "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
         "createdAt": "2026-07-22T15:31:39.949Z",
         "updatedAt": "2026-10-19T15:21:50.826Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_p7LBWFX60E",
+      "pedagogy": {
+        "summary": "Compare a tie, column and specified sagging beam while keeping the selected member explicit. Link outside loading to internal squeezing/stretching, and contrast stationary whole-body balance with internal force transmission.",
+        "bestPractices": [
+          "Name the chosen body/member before calling an interaction external or internal.",
+          "Use a small physical model and a supplied internal account; do not pretend that seeing a bent outline directly measures internal stress.",
+          "Change orientation or supplied support conditions to test reasoning beyond a memorised picture."
+        ],
+        "keyRepresentations": [
+          "Original verbal case cards and safe small physical tie/foam-column/foam-beam models.",
+          "Optional learner-drawn annotations separating external end/load arrows from internal squeezing/stretching.",
+          "Before/load/response/reason table with a supplied-fact versus observation column."
+        ],
+        "commonMisconceptions": [
+          "A stationary structure has no forces inside.",
+          "Tension/compression are properties of a material or page direction rather than its loading.",
+          "The weight pressing on a structure is itself its internal tension/compression.",
+          "Any top side is in compression regardless of support/loading."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "An original qualitative three-case programme for external loads and internal structural response, using tension/compression without quantitative stress, moments or Hooke calculations.",
+        "activities": [
+          {
+            "title": "A stationary tie still carries tension",
+            "learnerActions": [
+              "Adult setup and supplied case: A small card platform is suspended by a vertical cord from a fixed stand. The platform and load are at rest. Choose the cord as the member. The load pulls its lower end down and the support pulls its upper end up. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+              "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+              "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+              "Predict and explain this changed case: Replace the small platform with another safe light load, or rotate an original drawing of a two-ended taut tie. The tension distinction follows how the member is pulled, not vertical page position."
+            ],
+            "intendedInsight": "The cord transmits internal tension: neighbouring parts pull on one another, tending to lengthen it. Opposite end interactions can balance its whole-body motion without removing the tension.",
+            "feedback": [
+              "If the learner gives this near miss, contrast the named outside interaction with the relationship between parts inside the selected member: No movement means no forces; gravity itself is the internal tension.",
+              "Ask what the member tends to do and why it can resist that change; a visible deformation is evidence of response, not a requirement that every loaded structure visibly changes."
+            ],
+            "rationale": "Primary engineering sources support the selected physical relationship; the original cases, access supports and sequence are untested teaching proposals.",
+            "sourceClaims": [
+              "Common structural examples include columns in compression and suspended cables in tension; bending combines stretching on one side with squeezing on the other."
+            ]
+          },
+          {
+            "title": "A column transmits compression",
+            "learnerActions": [
+              "Adult setup and supplied case: A short vertical piece of firm foam supports a small flat platform. Choose the foam column as the member. The platform pushes its top down and the base pushes its bottom up. Use only small loads on a tabletop. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+              "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+              "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+              "Predict and explain this changed case: Provide an original horizontal strut whose ends are pushed towards each other. Compression remains squeezing even when the member is not vertical."
+            ],
+            "intendedInsight": "Internal compression squeezes neighbouring parts together, tending to shorten the column. It may deform slightly or resist visibly; absence of obvious change does not establish absence of force.",
+            "feedback": [
+              "If the learner gives this near miss, contrast the named outside interaction with the relationship between parts inside the selected member: Calls compression tension because both members support a platform, or assumes a stronger column contains no force.",
+              "Ask what the member tends to do and why it can resist that change; a visible deformation is evidence of response, not a requirement that every loaded structure visibly changes."
+            ],
+            "rationale": "Primary engineering sources support the selected physical relationship; the original cases, access supports and sequence are untested teaching proposals.",
+            "sourceClaims": [
+              "Common structural examples include columns in compression and suspended cables in tension; bending combines stretching on one side with squeezing on the other."
+            ]
+          },
+          {
+            "title": "Bending combines internal effects",
+            "learnerActions": [
+              "Adult setup and supplied case: A horizontal flexible foam strip rests on two low supports, one at each end. A small safe load presses its centre downward and the strip sags without slipping off. Treat this as the stated simple beam case; the adult supplies the fact that upper lengthwise fibres are compressed and lower fibres stretched. No microscopic observation is claimed. In this introductory model, the member’s own weight is treated as negligible compared with the supplied load and end/support interactions; a real member’s weight would also be an external load.",
+              "Name the selected member and identify what outside objects do to it before discussing internal forces.",
+              "Explain the internal effect with a spoken account or original annotated sketch; compare it with the other cases.",
+              "Predict and explain this changed case: Give a changed fixture in which a supported member curves the opposite way; supplied lengthwise marks show which side shortens and which lengthens. Identify squeezing/stretching from those facts, not memorised top/bottom labels. If supports/load are not supplied, say the signs cannot be inferred from the silhouette alone."
+            ],
+            "intendedInsight": "The downward external load and upward support interactions can keep the whole beam at rest. Inside the sagging beam, the upper side is in compression and the lower side in tension; bending combines those effects, with a different internal distribution from the uniform tie or column.",
+            "feedback": [
+              "If the learner gives this near miss, contrast the named outside interaction with the relationship between parts inside the selected member: Draws correct external arrows but says every internal part is only pushed down, or says the bottom must be compressed because it is lower.",
+              "Ask what the member tends to do and why it can resist that change; a visible deformation is evidence of response, not a requirement that every loaded structure visibly changes."
+            ],
+            "rationale": "Primary engineering sources support the selected physical relationship; the original cases, access supports and sequence are untested teaching proposals.",
+            "sourceClaims": [
+              "External loading produces internal resistance in a structure or member; tension tends to lengthen and compression tends to shorten it. Bending can combine stretching on one side with squeezing on the other."
+            ]
+          }
+        ],
+        "constraints": [
+          "Retain all three learned relationships: tie tension, column compression and the specified sagging beam combination. Additional examples support transfer, not replacement of the claim.",
+          "Use safe small loads and flexible tabletop materials; no child stands on structures, no snapped brittle specimens or prestressed elastic projectiles.",
+          "No formal force magnitude, resultant calculation, stress/strain equation, pressure law, elastic modulus or five-word force checklist is required. Bending is an action with internal tension/compression in the stated case, not a third identical kind of axial force.",
+          "Internal versus external is relative to the named body/member; do not infer an absolute classification from a force word.",
+          "The supplied beam internal account is a simplified engineering model. Neither a physical demonstration nor a drawn arrow directly measures molecular stress.",
+          "Do not treat every visible bend as failure or imply every material responds identically; no real structure is certified safe from this introductory account.",
+          "Treat each small model member’s own weight as negligible in the stated two-end/support balance. If that simplification is not made, include the member’s own weight as an additional external load; do not claim that all real stationary members have only two forces."
+        ],
+        "reviewNotes": [
+          "Original 2026-11-11 source-informed task design; no learner trial, runtime simulation or comparative efficacy study has been performed. Teaching confidence remains low.",
+          "Actual primary textual bodies read. No PBS Flash lab, photograph, linked figure or source diagram is claimed as visually inspected or copied. This proposal uses verbal case inputs and safe physical models, not an unreviewed supplied graphic.",
+          "Full closest reshaping, force-diagram, contact/noncontact, quantitative force-investigation, moment/pressure/Hooke and weather/seismic engineering cards and guides reviewed; hard transitive card/edge closure inspected. Quantitative bundles are preserved and not lowered.",
+          "Source attribution: the original simply supported downward-loaded sagging case is a bounded introductory model. PBS’s different textual bending fixture places tension on top and compression below; TeachEngineering describes a fixed-both-ends smiling example. Sources support the general bending/internal-resistance relation, not an assertion that they explicitly supplied our boundary conditions. Their universal-sounding failure claims are not adopted."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Could {{name}} explain how a hanging cord and a supporting column carry a load differently, then show where a beam supported at both ends squeezes and stretches as a weight bends its middle down—even while the whole structure stays still?",
+        "correctAnswer": "The chosen cord is pulled at both ends and transmits tension, tending to stretch. The column is squeezed between platform and base and transmits compression, tending to shorten. In the stated simply supported sagging beam, the upper side is compressed and the lower side stretched. Outside load/support interactions may balance while internal forces remain; signs in another fixture depend on the supplied support/load/shape information, not page top/bottom alone.",
+        "whatMakesItDiscriminate": "The same at-rest condition occurs across the cases, so stationary/no-force reasoning fails. Tie versus column contrasts the internal effect under different loading, and changed orientation/support facts prevent a memorised material or picture label from sufficing.",
+        "probeDeeper": [
+          "What is the chosen member, which objects load it from outside, and what happens between its own parts?",
+          "Why can the structure be stationary while its material is under tension or compression?",
+          "For this particular sagging beam, which side shortens and which lengthens? Why might a different support/load case differ?",
+          "What extra facts would you need if you were only shown an unlabeled curved member?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "It stays still, so there cannot be any force inside.",
+            "revealedBy": "Uses whole-body balance or lack of visible motion to deny internal tension/compression.",
+            "nextMove": "Compare the same stationary tie and column; supply the end interactions and ask what each member transmits.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "The cord and column are the same because both hold a load.",
+            "revealedBy": "Cannot distinguish pulling apart from squeezing together in the named member.",
+            "nextMove": "Trace opposite end interactions and distinguish tendency to lengthen from tendency to shorten; do not add numerical calculations.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "The top is always compressed, whichever way the member is loaded.",
+            "revealedBy": "Ignores supplied reverse-curvature/support information in transfer.",
+            "nextMove": "Use supplied lengthwise marks to identify shortening/stretching in that fixture and ask which assumptions changed.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Names a push or movement but denies internal forces or equates all loaded members.",
+          "partial": "Labels tension/compression in familiar cases but cannot distinguish outside loading from the internal relation or explain the beam/changed case.",
+          "full": "Explains the named tie/column and specified sagging-beam internal effects, distinguishes them from external loading, rejects stationary=no-internal-force, and reasons from supplied changed-case facts without universal top/bottom rules."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "External loading produces internal resistance in a structure or member; tension tends to lengthen and compression tends to shorten it. Bending can combine stretching on one side with squeezing on the other.",
+          "source": "TeachEngineering, Worcester Polytechnic Institute/University of Colorado — Fairly Fundamental Facts about Forces and Structures",
+          "url": "https://www.teachengineering.org/lessons/wpi_lesson_1",
+          "verified": true
+        },
+        {
+          "claim": "Common structural examples include columns in compression and suspended cables in tension; bending combines stretching on one side with squeezing on the other.",
+          "source": "WGBH/PBS Building Big, textual Forces Lab",
+          "url": "https://www.pbs.org/wgbh/buildingbig/lab/forces_text.html",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "OpenAI taxonomy curation — original source-informed design",
+        "createdAt": "2026-11-11T06:05:18.000Z",
+        "updatedAt": "2026-11-11T06:05:18.000Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

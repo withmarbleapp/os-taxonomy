@@ -3,12 +3,12 @@
   "date": "2026-11-11",
   "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
   "scope": "Grade 5 Science C/D/E only; all 31 source records read, 9 historical Full judgments retained and 22 prior Partials reviewed incrementally. A/common and B/health are outside this child.",
-  "status": "Eight matter/manufacturing/protection residuals resolved; D/E source-task work continues.",
+  "status": "Nine prior residuals resolved through source-fit authoring designs; remaining D/E tasks continue.",
   "counts": {
     "selected": 31,
     "historicalFullRetained": 9,
-    "freshResolvedFull": 8,
-    "remainingPartial": 14
+    "freshResolvedFull": 9,
+    "remainingPartial": 13
   },
   "expectations": [
     {
@@ -219,14 +219,15 @@
       "code": "ON-SCI-2022-G5-D2.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh complete internal-member reasoning task and one independent qualitative claim; source-specific authoring coverage only.",
       "contributingTopicIds": [
-        "mt_wf-SJhZ1kC"
+        "mt_wf-SJhZ1kC",
+        "mt_p7LBWFX60E"
       ],
-      "remainingConditions": [
-        "Identify the internal structural forces and link them to those effects. Applying an external twist is not by itself an assessed internal-force explanation."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-internal-structural-forces-review-2026-11-11.json",
+      "protocolReference": "/protocol"
     },
     {
       "code": "ON-SCI-2022-G5-D2.2",

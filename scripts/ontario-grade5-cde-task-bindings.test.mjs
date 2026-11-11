@@ -30,6 +30,10 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (row.code === 'ON-SCI-2022-G5-D2.1') {
+      const roles = protocol.caseRefs.map(ref => report.preparedCases[ref].modelRole);
+      assert.deepEqual([...new Set(roles)].sort(), ['combined-bending', 'compression', 'tension'], 'Missing internal-force witness');
+    }
     if (row.code === 'ON-SCI-2022-G5-D2.5') {
       const mechanisms = protocol.caseRefs.map(ref => report.preparedCases[ref].protectionMechanism);
       assert.deepEqual([...new Set(mechanisms)].sort(), ['deformation', 'restraint'], 'Missing protective mechanism case');
@@ -109,4 +113,11 @@ test('Grade 5 protective equipment needs both actual mechanisms and limits', () 
   missing.protocol.caseRefs = ['helmet'];
   assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missing : load(`reports/${report}`)), /Missing protective mechanism case/);
 
+});
+
+test('Grade 5 internal-force design retains the combined bending witness', () => {
+  const name = 'ontario-grade5-internal-structural-forces-review-2026-11-11.json';
+  const damaged = structuredClone(load(`reports/${name}`));
+  damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].modelRole !== 'combined-bending');
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing internal-force witness/);
 });

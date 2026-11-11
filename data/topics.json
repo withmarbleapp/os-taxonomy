@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1908,
+  "topicCount": 1909,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -47543,6 +47543,27 @@
       ],
       "ageRangeStart": 4,
       "ageRangeEnd": 6
+    },
+    {
+      "id": "mt_p7LBWFX60E",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Forces & Motion",
+      "name": "Loads and internal forces in structures",
+      "description": "Distinguish external loading from forces transmitted within a simple structure or member. Identify internal tension and compression, explain their stretching or squeezing effects, and use a specified supported-beam case to explain why bending can combine both even when the structure remains still.",
+      "centrality": 0,
+      "evidence": [
+        "Name the chosen structure/member and distinguish a supplied external load or support interaction from internal tension/compression within it.",
+        "Explain tension in a hanging tie/cable and compression in a supporting column, relating each to a tendency to stretch or shorten and possible deformation rather than assuming immediate failure.",
+        "For a simply supported horizontal beam sagging under a downward central load, identify upper compression and lower tension; explain that balanced external forces do not mean an absence of internal forces.",
+        "Transfer the load-to-internal-effect reasoning to a changed orientation or support case, using supplied facts and stating when more information is needed rather than assuming top always means compression."
+      ],
+      "assessmentPrompt": "Could {{name}} explain how a hanging cord and a supporting column carry a load differently, then show where a beam supported at both ends squeezes and stretches as a weight bends its middle down—even while the whole structure stays still?",
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2.1"
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11
     }
   ]
 }
