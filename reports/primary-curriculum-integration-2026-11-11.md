@@ -2,9 +2,11 @@
 
 This proposal combines reviewed Ontario and India source work into a branch targeting `main`. The [structured report](primary-curriculum-integration-2026-11-11.json) pins the source heads and explicit integration corrections. Slice PRs and original commit history remain available. This does not declare Ontario complete or publish the proposal downstream.
 
+The review queue for this integration is [PR #139](https://github.com/withmarbleapp/os-taxonomy/pull/139). Historical PRs #110–138 are closed as superseded: retained changes are incorporated here and Physical Education withdrawals are explicit. Their branches and review history remain preserved.
+
 ## Combined contents
 
-The snapshot contains 1,906 topics, 4,001 dependencies, 8,313 retained standards, 177 clusters, 1,091 teaching guides and 5,058 scoped contexts. Relative to accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, it adds 48 topics, 45 guides, seven dependencies and one cluster. Thirteen old claims, eleven old guides and 24 old dependencies have explicitly reviewed corrections. The eleven old-guide corrections comprise nine teaching corrections and two citation-only repairs. The catalogue is unchanged. These inventory counts describe a source proposal, not learner attainment.
+The snapshot contains 1,906 topics, 4,001 dependencies, 8,313 retained standards, 177 clusters, 1,091 teaching guides and 5,058 scoped contexts. Relative to accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, it adds 48 topics, 45 guides, seven dependencies and one cluster. Thirteen old claims, eleven old guides and 28 old dependencies have explicitly reviewed corrections. The eleven old-guide corrections comprise nine teaching corrections and two citation-only repairs. The catalogue is unchanged. These inventory counts describe a source proposal, not learner attainment.
 
 India accounts for all 570 selected NCERT records: 444 Full authoring, 36 mixed skill/contextual, 28 conditional bindings, 12 contextual, one Unverified musical-scale phrase and 49 out-of-scope PE duties. This is the agreed NCERT baseline, with actual R1/R2 language and script bound at use. It is not a claim to cover all Indian boards.
 
@@ -42,9 +44,9 @@ The read-only publication check also identified [citation-only repairs](research
 
 ## Validation and remaining scope
 
-Generation, dataset validation and generated-artifact checks pass. All 402 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+Generation, dataset validation and generated-artifact checks pass. All 419 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
 
-Physical Education is excluded by the user. The [Health-only package](ontario-hpe-primary-review-2026-11-11.md) now accounts for 98 Healthy Living records, with 299 pairs on 50 topics. The 169 PE/dependent cross-strand records are excluded; the full HPE leaf is not imported. Two health concepts are new: food-allergy knowledge and medicine authorisation. Two existing bullying fields and 12 reproduction-guide strings have separately reviewed corrections. Actual health promotion is self-contained and does not require the excluded Active Living programme. Kindergarten excludes five PE-only codes and retains two mixed codes as fine-motor-only Partial. India’s 49 PE-only exclusions and seven unaccepted motor-topic/guide withdrawals are integrated. The exact subtraction removes 131 proposed code pairs and 24 emptied contexts; every remaining authored card/guide and unaffected scoped record is preserved. All 570 source identities remain, with 521 eligible. Genuine Health, Arts and fine-motor duties remain. Earlier own-local requirements are receiving a consistency audit. Actual task/resource duties for 127 of the prior 233 Science Partial positions remain in this snapshot; 106 now have prepared source-fit designs across the reviewed packages. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
+Physical Education is excluded by the user. The [Health-only package](ontario-hpe-primary-review-2026-11-11.md) now accounts for 98 Healthy Living records, with 299 pairs on 50 topics. The 169 PE/dependent cross-strand records are excluded; the full HPE leaf is not imported. Two health concepts are new: food-allergy knowledge and medicine authorisation. Two existing bullying fields and 12 reproduction-guide strings have separately reviewed corrections. Actual health promotion is self-contained and does not require the excluded Active Living programme. Kindergarten excludes five PE-only codes and retains two mixed codes as fine-motor-only Partial. India’s 49 PE-only exclusions and seven unaccepted motor-topic/guide withdrawals are integrated. The exact subtraction removes 131 proposed code pairs and 24 emptied contexts; every remaining authored card/guide and unaffected scoped record is preserved. All 570 source identities remain, with 521 eligible. Genuine Health, Arts and fine-motor duties remain. Earlier own-local requirements are receiving a consistency audit. Prepared source-fit designs now close 130 of the original 233 Science residual positions, leaving 103 original residuals. One newly identified Grade 4 B2.1 local-resource condition was previously historical Full, so there are 104 current Science Partials; the original-residual and current-Partial counts use different denominators. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
 
 Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
 
@@ -60,6 +62,42 @@ The Grade 5 health-task guard also requires each Full record to name the actual 
 
 The [phase-change correction](phase-energy-and-prerequisite-correction-2026-11-11.md) distinguishes warming within a state from constant-temperature melting. One evidence statement and twelve guide passages retain the qualitative energy requirement while correcting the required-speed-increase error. One particle-diagram prerequisite becomes soft, with an explicit complete-claim witness. All other claims, guide fields, ages and contexts are preserved. Private research must be requalified against the final target; this correction authorizes no learner transfer or publication.
 
-The [Grade 2 matter portfolio](ontario-science-grade2-matter-residual-completion-2026-11-11.md) covers seven further residual positions through actual use/storage/disposal decisions, human and environmental phase-change consequences, stable/non-transition conditions, useful mixtures, specific hazard meanings and a separate integrated properties investigation. Fourteen component pairs extend ten unchanged exact 7–8 intervals; no new claim, guide, age, context or edge. This brings prepared source-fit Science closures to 106 of 233, leaving 127.
+The [Grade 2 matter portfolio](ontario-science-grade2-matter-residual-completion-2026-11-11.md) covers seven further residual positions through actual use/storage/disposal decisions, human and environmental phase-change consequences, stable/non-transition conditions, useful mixtures, specific hazard meanings and a separate integrated properties investigation. Fourteen component pairs extend ten unchanged exact 7–8 intervals; no new claim, guide, age, context or edge. At that checkpoint, prepared source-fit Science closures reached 106 of 233, leaving 127; the later Grade 4 follow-up below updates the current totals.
 
 The [NCERT scale exception](ncert-scale-source-meaning-exception-2026-11-11.md) records the exact remaining source-meaning ambiguity, pinned source pages and an original sequence that receives different classifications under two plausible readings. Checked official music examples do not define the intended criterion. The one record remains Unverified with no graph link; no new topic or complete Full India coverage is claimed. All eight dataset artifacts are unchanged by this evidence-only addition.
+
+
+## Reviewed feature follow-ups
+
+[PR #140](https://github.com/withmarbleapp/os-taxonomy/pull/140), source head
+`b570cf885ee968b7fb5ec6dc9069e093b3dac448`, reached this feature branch as
+`b0463daa0a24127f0e4917fa137a1cbdf6e24da8`. Its
+[Grade 4 ledger](ontario-grade4-science-content-current-ledger-2026-11-11.json)
+accounts for all 42 content records: 24 newly closed original residuals, 15 retained
+historical Full judgments and three local-resource Partials. Thirty-five component
+pairs extend existing exact 9–10 contexts; no topic, guide, age or edge changes.
+The B2.1 local-applicability correction explains why 103 remaining original Science
+residuals and one additional local Partial make 104 current Partials. Other historical
+Full labels are not freshly recertified.
+
+[PR #141](https://github.com/withmarbleapp/os-taxonomy/pull/141), source head
+`e6ec93f07550e0b0083e2ad6e219b533c515fb57`, reached this feature branch as
+`6483acda3ad93355be73a6497c7fdc2adca2bf20`. Its
+[four prerequisite corrections](language-reusable-prerequisite-corrections-2026-11-11.md)
+retain useful oral/writing support without requiring the entire written-note-taking
+or process-glossary claims first. They affect four additional old edges, with no
+overlap with the prior 24 corrections. Topic cards, guides, ages, associations and
+source dispositions remain unchanged. Complete current paths, exact historical
+paths and whole-candidate task limits remain explicit. The
+[India readiness ledger](ncert-primary-completion-readiness-2026-11-11.md) retains
+all 570 selected identities, 49 PE exclusions and all conditional/contextual/source
+uncertainty duties; it does not claim every Indian board or universal language mastery.
+
+The clean combined feature head `6483acda3ad93355be73a6497c7fdc2adca2bf20`
+passes generation without changes, validation, generated-artifact checks and all
+419 tests, with zero failures or skips. Its inventory remains 1,906 topics, 1,091
+guides, 4,001 edges, 8,313 standards, 177 clusters and 5,058 contexts. There are
+now 28 corrected old edges relative to the accepted base. These are feature-branch
+merges into the proposal targeting main, not default-branch acceptance or staging
+publication. Original source commits and earlier qualification checkpoints remain
+available.
