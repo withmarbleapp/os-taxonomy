@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "1895d761002febbe7c7f31f476c8b19753544ef7",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "topicId": "mt_bEvMBUv4eG",
+  "status": "A bounded factual and assessment clarification of the existing social-hierarchy claim, separate from any new curriculum association or learner-state decision.",
+  "before": {
+    "description": "Describe the social structure of ancient Egypt as a pyramid-shaped hierarchy: the pharaoh at the top, then priests and nobles, followed by scribes and soldiers, then craftworkers and merchants, and farmers and labourers at the base — understanding that a person's position was usually inherited and determined their whole way of life",
+    "evidence": [
+      "Draw or describe the social pyramid with at least four levels correctly ordered",
+      "Explain that most people were farmers and had very different lives from the pharaoh",
+      "Give an example of how social position affected someone's daily life (e.g., only scribes could read)"
+    ],
+    "assessmentPrompt": "If {{name}} is asked who was more important in ancient Egypt — a scribe or a farmer — can they explain the social pyramid and where each person fitted?"
+  },
+  "after": {
+    "description": "Describe a simplified model of ancient Egyptian social hierarchy: the pharaoh at the top, then priests and nobles, followed by scribes and soldiers, then craftworkers and merchants, with farmers and labourers at the base. Family background and status often shaped people’s work, resources and opportunities, while some people could move to a different position.",
+    "evidence": [
+      "Draw or describe the social pyramid with at least four levels correctly ordered",
+      "Explain that most people were farmers and had very different lives from the pharaoh",
+      "Give a supported example of how social position affected daily work or access to resources, such as scribes keeping administrative records while farmers grew crops; do not assume that only professional scribes could read."
+    ],
+    "assessmentPrompt": "Can {{name}} describe the studied Egyptian social hierarchy, placing at least four groups in the model, and explain how rank, power and work differed—for example, between a scribe and a farmer? Higher rank does not mean greater human worth, and social position was not an unchangeable rule for every person."
+  },
+  "rationale": [
+    "Professional scribes were not the only people able to read. Literacy varied, and surviving evidence includes literate priests, officials and some other workers. The corrected example tests supported work/status differences without an exclusive literacy rule.",
+    "Family background and social position could shape opportunities without determining every detail of every life or making movement impossible. The simplified hierarchy remains a model.",
+    "Social rank and power are not a judgment of human worth. The prompt now elicits the same ordered-group and daily-work understanding directly."
+  ],
+  "sources": [
+    {
+      "url": "https://repository.uwtsd.ac.uk/id/eprint/569/1/Literacy,%20Pharaonic%20Egypt.pdf",
+      "author": "Katharina Zinn",
+      "title": "Literacy, Pharaonic Egypt",
+      "publication": "The Encyclopedia of Ancient History, 2013, pp. 4100–4104",
+      "reviewed": "Full five-page article and bibliography.",
+      "use": "Varied literacy beyond professional scribes and qualified social mobility; no numerical literacy estimate imported."
+    },
+    {
+      "url": "https://www.ucl.ac.uk/3dpetriemuseum/stories/ancient-life/egyptian-life/language-and-literacy.html",
+      "provider": "UCL Petrie Museum",
+      "title": "Language and Literacy",
+      "reviewed": "Complete main body.",
+      "use": "Scribal training and possible movement into an elite position; no universal temple-only reading restriction imported."
+    },
+    {
+      "url": "https://lsa.umich.edu/content/dam/kelsey-assets/kelsey-documents/education/teacher-resource-guides/EDU_curriculum_AEgypt_webready.pdf",
+      "provider": "University of Michigan Kelsey Museum",
+      "title": "Ancient Egypt teacher resource",
+      "reviewed": "Selected government/social-structure pp. 22–27 and daily-life pp. 28–32.",
+      "use": "Administrative work, farming and status/resources. Its raw map and unrelated chronology claims are not adopted."
+    }
+  ],
+  "assessment": {
+    "positive": "Order at least four groups in the studied model and explain a supported relationship between status and daily work or resources.",
+    "nearMiss": [
+      "Names groups but cannot explain their ordering or any supported work/status relationship.",
+      "Claims all people other than professional scribes were unable to read.",
+      "Treats rank as human worth, or the simplified model as proof that no person could change position."
+    ],
+    "transfer": "Use a new attributed Egyptian work example to explain what the model supports and where it cannot establish an individual biography."
+  },
+  "preservation": {
+    "stableId": true,
+    "fourOrderedGroupsRetained": true,
+    "pharaohAndFarmersContrastRetained": true,
+    "allOldAgeContextsPreserved": true,
+    "allSixExistingEdgesPreserved": true,
+    "newClaims": 0,
+    "newContexts": 0,
+    "newEdges": 0,
+    "activeTeachingGuideCount": 0
+  },
+  "consumerBoundary": "The stable claim continues, with factual and assessment wording corrected. Consumers must review changed authored content before publication; this report neither certifies old learner evidence against the corrected wording nor authorizes estimate transfer, resets or learner-row changes.",
+  "coverageBoundary": "No Grade 4 source code is newly certified by this correction. Actual 9–10 source-fit associations and integrated comparisons are a separate alignment step."
+}
