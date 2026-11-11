@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "the-ontario-curriculum-health-and-physical-educa",
-  "scope": "Movement C1/C2 and Active Living B1/B2/B3 source-fit proposals: 127 records. Healthy Living D1/D2/D3 and integrated A1 remain pending qualification.",
+  "scope": "Movement C1/C2, Active Living B1/B2/B3 and Healthy Eating source-fit proposals:143 records. Other Healthy Living and integrated A1 remain pending qualification.",
   "meaning": "Original untested task design, not a child-performance study, clinical prescription, fitness ranking or learner-state update.",
   "protocols": [
     {
@@ -240,6 +240,126 @@
         "adultDeterminesMinor": true,
         "noUnsafeInference": true
       }
+    },
+    {
+      "id": "canadian-guide-and-nutrient-reasons",
+      "task": "Use the actual current Health Canada plate and recommendation bodies. Sort declared ingredients into vegetables/fruits, whole-grain and protein foods; use the plate proportions as a pattern reference, not a universal child portion or calorie prescription. Explain that food groups are not nutrients; use concrete food cases to distinguish energy, growth/repair and other body functions, including water. Construct a varied day pattern and adapt it to a supplied taste/cost/allergy/access constraint without declaring a culture or body good/bad. Keep the full existing nutrient inventory and day-menu check separate from any single source contribution.",
+      "conditions": {
+        "actualCanadianGuide": true,
+        "foodGroupsNotNutrients": true,
+        "notAdultPortionOrCalorieTarget": true,
+        "localGuideProportions": true
+      }
+    },
+    {
+      "id": "hunger-thirst-fullness-as-information",
+      "task": "Use neutral illustrated cases and the actual Food Guide hunger/mindful-eating bodies: an ordinary body cue, food being offered despite no noticed hunger, a changed activity/growth situation and comfort/fullness information. Recognise and explain how cues can inform choices alongside routine opportunities, access and adult medical advice. Voluntary ordinary noticing may use an accessible present sensation; never withhold food/water, manufacture hunger/fullness, require eating, ask about private intake/weight or score a child by appetite. Cues are one input, not an instruction to ignore a care plan or wait until thirsty before hydration.",
+      "wholeClaimChecks": "Present-attention contribution retains deliberately selecting a focus, noticing an honest attention shift and returning in a changed context; no cue naming alone certifies it. Body Needs retains its entire food/water/sleep/exercise inventory; it alone does not teach every cue-guideline condition.",
+      "conditions": {
+        "allThreeCueTypes": true,
+        "oneInputNotUniversalRule": true,
+        "noDeprivationOrForcedEating": true,
+        "noWeightOrPrivateIntakeScore": true,
+        "noManufacturedAttentionShift": true
+      }
+    },
+    {
+      "id": "feasible-meals-safe-ingredients-and-guidelines",
+      "task": "Use original supplied meal cases with declared ingredient and access information: a no-salt-added chickpea/vegetable curry with brown rice, a vegetable/whole-grain/protein lunch and an alternative when an adult-specified ingredient is unsuitable. Identify what the learner can choose and what an adult/environment controls. Check actual ingredient information and applicable adult medical support; no food challenge, medication or tasting is required. Compare at least two feasible options and consequences before choosing. Grade6 develops guidelines reflecting medical, emotional, practical and social factors rather than judging another household.",
+      "wholeClaimChecks": "Food-hygiene contribution retains actual safe preparation/cleaning/storage/allergy checks separately, with adult oversight. Mere reading of a menu is not the full cooking-safety operation. Decision-making retains two options/consequences/reasoned choice, not only stating the right food.",
+      "conditions": {
+        "controllableAndUncontrollable": true,
+        "adultDefinedMedicalConstraint": true,
+        "noAllergyChallenge": true,
+        "twoFeasibleOptions": true,
+        "noHouseholdBlame": true
+      }
+    },
+    {
+      "id": "food-origins-processing-and-environment",
+      "task": "Trace two declared cases, such as a grown chickpea made into a canned ingredient and a vegetable used fresh/frozen or in a prepared dish. Explain that ingredients and additions can alter nutrient content, while freezing/canning/drying can preserve food; not all processing is harmful. Use the actual Health Canada processing body rather than invented nutrient-retention percentages. Follow production, preparation, consumption and disposal; explain resource use and the difference between preventing edible-food waste and sending organic waste to landfill, using the actual ECCC body. No uncontrolled compost experiment, unsafe spoiled food or universal local/organic-is-better rule.",
+      "wholeClaimChecks": "Food/fibre production contributes origin and process knowledge. Its complete cropping, grazing, horticulture, aquaculture, forestry/wool/cotton and attributed First Nations management checks remain broader separate assessments; one chickpea journey does not certify them or turn an Australian First Nations example into Canadian content. The explicit source task adds the nutrition/disposal connection; no full cooking-property or managed-environment claim is inferred.",
+      "conditions": {
+        "originAndPreparation": true,
+        "nutritionAndEnvironment": true,
+        "notAllProcessingBad": true,
+        "consumptionAndDisposal": true,
+        "noInventedRetentionPercent": true
+      }
+    },
+    {
+      "id": "oral-health-and-food-choices",
+      "task": "Compare a declared water choice with frequent sugary-drink exposure and explain an oral-health implication using current Health Canada processing guidance, which explicitly links frequent sugary drinks with cavities in children. Explain why oral health matters and assess the choices, not just recite brushing. Retain the actual appropriate hand/tooth/cough hygiene whole-card tasks separately; no inspecting classmates mouths, inducing decay, body judgment or dental diagnosis.",
+      "conditions": {
+        "oralHealthImportance": true,
+        "assessFoodChoiceEffect": true,
+        "noInjuryOrDiagnosis": true,
+        "hygieneAloneNotWholeSource": true
+      }
+    },
+    {
+      "id": "cultural-food-range-without-forced-tasting",
+      "task": "Use the actual Health Canada food-guide version of Chickpea and vegetable curry and its brown-rice suggestion, together with the actual plate mixed-dish examples and a locally appropriate food card. Identify vegetable/protein/whole-grain contributions and explain how a different preparation can widen available healthy choices. Attribute this particular published version; curry is not one universal national or cultural recipe. No tasting, spice tolerance, ritual performance, private family identity or blanket claim about another community is required.",
+      "conditions": {
+        "actualAttributedRecipe": true,
+        "expandChoiceRange": true,
+        "noUniversalCultureClaim": true,
+        "noTastingCriterion": true
+      }
+    },
+    {
+      "id": "eating-habit-goal-and-helping-others",
+      "task": "Plan a safe manageable eating-related routine using the actual Canadian guide, record it across a week, reflect on barriers and adjust a realistic interest-based goal. Later panels compare settings such as school/home/community and offer one feasible health-support action for another person without policing their body or diet. Record real evidence only at actual use; a provided template is not an invented learner history. Personal health details can remain private, with an adult-defined supplied case used for explanation.",
+      "wholeClaimChecks": "Retain full routine week tracking/reflection/support and goal timeframe/steps/monitor/adjust. Do not infer a growth-mindset belief or manufacture frustration from completed diet-task steps. This is authored assessment design, not observed uptake.",
+      "conditions": {
+        "actualWeekRecordAtUse": true,
+        "goalTimeframeAndAdjustment": true,
+        "supportOthersWithoutDietPolicing": true,
+        "noInventedLearnerHistory": true
+      }
+    },
+    {
+      "id": "food-marketing-and-health-message-critique",
+      "task": "Compare the actual government healthy-eating message with an explicitly original pretend food promotion: StarPower Crunch promises popularity with a celebrity-style character and a free token but provides no nutrient evidence. Identify commercial purpose and two influence techniques; check information rather than treat popularity as health proof. Reflect on an actual current response or safely chosen prior message without forcing a private purchase disclosure or claiming the child was influenced. For the inherited real-advertising prerequisite, inspect the actual LEGO10698 Canadian manufacturer advert: emotive creative-play language, product-variety/storage features and a shipping promotion. Use it as a real persuasion example, not an endorsement; no buying/signup/cart action. Separately use two original stated-price comparable-toy cases for value-for-money reasoning and retain the full needs/wants/money checks without asserting a universal history of barter.",
+      "wholeClaimChecks": "Whole health-message interpretation retains inform/persuade/sell distinction, techniques and honest reflection. Whole Advertising & Spending has its own real-advert/two-technique/value/recalled-influence checks; a government warning alone does not supply that entire claim. No edge is weakened and a lack of recalled personal influence is insufficient evidence, not an invented deficit.",
+      "conditions": {
+        "governmentAndCommercialContrast": true,
+        "foodChoiceInfluenceEvaluated": true,
+        "twoTechniques": true,
+        "realAdvertForInheritedWholeCheck": true,
+        "noCommercialAction": true,
+        "noForcedPrivateDisclosure": true
+      }
+    },
+    {
+      "id": "eating-and-active-living-combination",
+      "task": "Combine a declared Canadian eating-pattern case with the qualified Active Living routine. Explain how both can support physical and mental/brain health, using the actually checked government bodies; one does not cancel unsafe choices in the other. Plan a feasible way to communicate or support both for others without weight/appearance targets, guarantees of mood or illness prevention, or requiring private diet/performance records.",
+      "conditions": {
+        "bothDomains": true,
+        "physicalAndMental": true,
+        "promoteBoth": true,
+        "noAppearanceTargetOrCureGuarantee": true
+      }
+    },
+    {
+      "id": "canadian-label-and-separate-whole-transfer",
+      "task": "Use the actual Canadian Nutrition Facts figure1 and ingredient/Contains image plus the actual current High-in explanation. Keep serving basis, ingredient/allergy information and nutrient-warning meaning distinct; no per 100 g Canadian column or overall Canadian star rating is invented. Separately use the original four two-column practice panels and given-rating case set. Locate per 100 g values for both cereals and both snacks, compare the specified nutrients on equal quantity, and justify a same-category choice using panel and rating together. The ratings are hypothetical givens in an explicitly Australian-context transfer, not algorithm-calculated commercial HSR scores. Whole-card success is not inferred from the Canadian task alone.",
+      "conditions": {
+        "actualCanadianServingAndIngredients": true,
+        "highInIsWarningNotOverallRating": true,
+        "noFakeCanadianPer100gColumn": true,
+        "wholeClaimTransferSeparatelyBound": true,
+        "ratingsAreHypotheticalGivens": true,
+        "notCommerciallyCalculatedScores": true,
+        "compareLikeCategories": true,
+        "noDietPortionOrAllergyAssurance": true
+      },
+      "assetRefs": [
+        "assets/ontario-hpe-programme/label-comparison.json",
+        "assets/ontario-hpe-programme/label-comparison.svg",
+        "assets/ontario-hpe-programme/label-comparison.png"
+      ],
+      "wholeClaimChecks": "Keep all three unchanged whole evidence clauses, including both cereal sugar/fibre and snack sodium/saturated-fat per 100 g comparisons, and panel-plus-rating choice in a declared applicable context. Use given numerical quantities; no HSR calculation, caloric prescription or unit conversion is a mastery gate. Existing 11–12 contexts remain unchanged; the reviewed Grade 5 task supports the exact 10–11 component association."
     }
   ],
   "originalGameSet": [
@@ -298,7 +418,8 @@
     "rulesAndGroup": "Explain actual rules and their safe/fair purpose, follow them without repeated prompting, contribute/respond/complete an agreed role, listen and take turns. No individual competence is inferred from the team result, a smile or covert surveillance.",
     "activeLiving": "All about me retains the complete identity/helper/similarity checks without forced disclosure; body-needs retains food, water, sleep and exercise explanations. Heart retains continuous pumping and vessels, not just a pulse reading. Goal-setting retains actual timeframe/steps/monitoring/adjustment; routine retains a week record/reflection/helping another person. These whole checks are distinct from source-specific participation, exertion and longitudinal duties.",
     "inheritedGoalPath": "Existing hard paths through task steps, mindset and learning from mistakes remain unchanged. Keep their full checks separate: completing a goal does not automatically establish a mindset belief, and lack of visible cheerfulness or distress is not a gap criterion. No dependency is weakened to force an HPE link.",
-    "safety": "Whole generic safety retains several familiar safety rules, trusted-adult reporting and actual safe action. Whole signs retains actual hazard/help/health-message interpretation; use the checked Health Canada poison-symbol image only as a safe visual reference, never a chemical-handling task. Body-needs retains its separate food/water/sleep/exercise inventory. The minor-care concept is knowledge only, assessed by its complete original case set."
+    "safety": "Whole generic safety retains several familiar safety rules, trusted-adult reporting and actual safe action. Whole signs retains actual hazard/help/health-message interpretation; use the checked Health Canada poison-symbol image only as a safe visual reference, never a chemical-handling task. Body-needs retains its separate food/water/sleep/exercise inventory. The minor-care concept is knowledge only, assessed by its complete original case set.",
+    "eating": "Preserve the full food-group/nutrient/day-pattern, food-hygiene, production and animal-care, ordinary attention, habit/goal and marketing/money hard-closure checks. No single food sort, hunger answer, chickpea journey or Canadian label reading certifies a whole broader card. No new edge or claim is needed; source-specific resource/performance duties stay explicit in the portfolio."
   },
   "conditions": {
     "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
@@ -322,6 +443,17 @@
         "localEmergencyAndReturnAuthority"
       ],
       "notAnEditableTaxonomyDifficultyLevel": true
+    },
+    "healthyEating": "Use the current actual Canadian guide and safe attributed resources. Food availability, medical/allergy advice, budget and choice conditions are not moral/body judgments. No deprivation, forced tasting/intake/disclosure or child calorie/weight targets. A source-specific task and a complete existing topic assessment remain distinct.",
+    "labelFormatSeparation": {
+      "CanadianSource": "Actual per-serving Nutrition Facts, ingredients and nutrient-warning resource; no Canadian per-100-g column or overall rating invented.",
+      "wholeClaimTransfer": "Original hypothetical per100g/two-column/rating cases are an explicitly separate Australian-context check. Ratings are supplied givens, not algorithm-calculated commercial scores.",
+      "ageContext": "Reviewed exact Grade 5 ages 10–11; old authored claim and existing 11–12 contexts retained.",
+      "assets": [
+        "assets/ontario-hpe-programme/label-comparison.json",
+        "assets/ontario-hpe-programme/label-comparison.svg",
+        "assets/ontario-hpe-programme/label-comparison.png"
+      ]
     }
   },
   "sources": [
@@ -372,6 +504,66 @@
     {
       "url": "https://www.canada.ca/en/health-canada/services/home-safety/household-chemical-safety.html",
       "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/be-mindful-eating-habits.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/be-mindful-eating-habits/hunger-cues.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/cooking/make-healthy-meals-plate.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/marketing-can-influence-your-choices.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/limit-highly-processed.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/kitchen/recipes/chickpea-vegetable-curry.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/municipal-solid/waste-greenhouse-gases-canada-actions.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.lego.com/en-ca/product/lego-large-creative-brick-box-10698",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/nutrition-facts-tables.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/ingredient-list.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/front-package.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.healthstarrating.gov.au/about/how-ratings-are-calculated",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.healthstarrating.gov.au/shoppers",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.goodforkids.nsw.gov.au/media/3553/choosing-food-products.pdf",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
     }
   ]
 }

@@ -1,10 +1,10 @@
 # Ontario primary HPE: source-fit review
 
 All **267** primary source records have been read. The current proposed portfolio
-accounts for **127 records**: **56 Movement Competence records (C1/C2)** and
-**71 Active Living records (B1/B2/B3)** in Grades 1–6. It contains **127 Full**
-authoring dispositions, **293 component pairs** and **21 topics**. The remaining
-**140 records** (Healthy Living and integrated SEL) are pending
+accounts for **143 records**: **56 Movement Competence records (C1/C2)**,
+**71 Active Living records (B1/B2/B3)** and **16 Healthy Eating records** in Grades 1–6. It contains **143 Full**
+authoring dispositions, **324 component pairs** and **28 topics**. The remaining
+**124 records** (other Healthy Living and integrated SEL) are pending
 whole-claim/task qualification, not excluded or automatically missing topics.
 The [record ledger](ontario-hpe-primary-review-2026-11-11.json) preserves every
 selected identity and that distinction.
@@ -81,3 +81,9 @@ concept-only longitudinal substitution, unimplemented plans, forced enjoyment,
 deleted pairs and wrong-age duplicates. All **240 tests passed**, alongside generation, validation and generated-artifact checking. The Active Living delta preserves all **1,903 authored cards**, **1,088 guide payloads and sequence**, all **4,896 prior contexts**, and every old dependency/catalogue/archive/cluster byte. It adds **27 contexts**, extends **21 exact existing bands**, and adds **126 pairs** (three fitness-component pairs already existed in the preceding checkpoint). Four generated age ends expand; no starts are lowered.
 
 The safety association checkpoint also passed all **252 tests** and required generation/validation checks. It preserves all **1,904 prior authored cards**, **1,089 guide payloads and sequence**, and **4,924 contexts**, with no edge/catalogue/archive/cluster changes. Exactly **8 contexts** are new, **9 exact bands** are extended and **34 pairs** are added; the minor-care pair already existed. One generated age end expands, with no start lowered.
+
+The eating portfolio uses the actual current Canadian guide, nutrient/food-group distinctions, safe hunger/thirst/fullness information, actual food-origin/processing/environment facts, oral-health choices, an attributed recipe and actual habit/goal and message-critique tasks. No deprivation, forced tasting, appetite/weight judgment or private family-budget disclosure is required. Source-specific cases do not certify every clause of a broader reused topic.
+
+The unchanged nutrition-label claim now has a reviewed exact Grade 5 context at ages 10–11; its old Australian 11–12 context and full authored requirements remain. The Canadian source task uses actual per-serving/ingredient/nutrient-warning information. Its separate whole-claim transfer uses [original two-column practice panels](assets/ontario-hpe-programme/label-comparison.svg) and the [numeric cases/answer key](assets/ontario-hpe-programme/label-comparison.json): per-100-g comparisons and given ratings in an explicitly Australian-context exercise. The hypothetical ratings are not calculated commercial HSR scores, Canadian features or assurances about an entire diet, portion or allergy safety. All panel arithmetic and the full rendered page were checked; no extra Ontario curriculum obligation or automatic topic mastery is inferred.
+
+The eating checkpoint passed generation, validation, generated-artifact checking and all **259 tests**. All **1,904 existing authored cards**, **1,089 guide payloads and their sequence**, **4,932 contexts** and every old dependency/catalogue/archive/cluster byte remain unchanged. It adds **9 contexts**, extends **10 exact existing bands** and adds **31 pairs**. Three compatibility envelopes change: two later-age ends expand, and the reviewed label start becomes 10 while its old 11–12 context remains exact. No new claim, guide or edge is part of this slice.
