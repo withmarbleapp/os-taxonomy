@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "source": "ncert-ncfse-2023-ed2024",
+  "key": "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-COG-COMP-C-8.14",
+  "officialCode": "C-8.14",
+  "officialRecordKind": "stageCompetency",
+  "officialStatus": "formal-stage-standard",
+  "sourcePdfPages": [214],
+  "sourceStageAgeBand": [3, 8],
+  "attainmentReference": "stage-end; not an identical deadline at every age",
+  "previousDisposition": "Gap",
+  "disposition": "ContextualAffectiveRequirement",
+  "authoringDecision": "Retain the formal in-scope requirement and account for it through a contextual mathematics-specific reflection / task protocol. No binary mastery topic is created and no generic attitude topic is treated as a proxy.",
+  "sourceRequirementHandling": "contextual-protocol-defined",
+  "graphMasteryRepresentation": "No binary node or unqualified mastery association",
+  "learnerEvidence": "Not collected by this curation work",
+  "protocol": {
+    "context": "Identify the mathematical activity, familiarity, meaningful purpose, available supports and time context. Use accessible quantities / shapes / measures rather than a deliberately overwhelming challenge.",
+    "before": "Invite the learner to choose something they might find out and say, point or draw what could help them start. Acknowledge uncertainty without requiring a prescribed positive response.",
+    "activity": "Offer a low-stakes mathematical purpose, such as sharing resources fairly, checking whether objects fit, or exploring a pattern. Provide appropriate materials and choices of strategy. The purpose can be practical or intrinsically interesting.",
+    "after": "Invite an honest account of what became more manageable, what remains difficult, which support helped and whether the mathematics served a purpose the learner recognises.",
+    "transfer": "Use a different mathematical activity on another occasion and retain its context. Do not assume a previous positive reflection transfers unchanged across tasks or time."
+  },
+  "evidenceChannels": [
+    {
+      "channel": "task-specific self-efficacy",
+      "possibleSignal": "The learner identifies an achievable starting action or useful support and describes a realistic possibility of making progress.",
+      "limitation": "A correct answer alone does not establish confidence; uncertainty about an unfamiliar task is not itself a mathematical failure."
+    },
+    {
+      "channel": "perceived mathematical value",
+      "possibleSignal": "The learner connects the mathematics to a purpose they recognise, such as a fair share, a workable fit, a useful decision or a pattern they want to explore.",
+      "limitation": "Repeating an adult's statement that maths is useful does not establish the learner's own view; the source does not require liking every activity."
+    },
+    {
+      "channel": "context and change",
+      "possibleSignal": "Reflections describe which task, representation or support changed the learner's experience, with differences across occasions retained.",
+      "limitation": "Frustration, pauses or asking for help can coexist with confidence and a sense of purpose; compliance is not the criterion."
+    }
+  ],
+  "rejectedProxies": [
+    "General growth-mindset vocabulary without a mathematics-specific account",
+    "Persistence or game participation alone",
+    "A correct computation treated as proof of confidence or perceived value",
+    "Cheerful behaviour, forced liking or a prescribed positive sentence"
+  ],
+  "remainingLimitations": [
+    "The original protocol is a formative authoring design, not a validated affective scale or a completed learner study.",
+    "Actual material and observation binding must preserve task, support, language / accessibility and time context.",
+    "The graph does not represent this requirement as a stable binary mastery claim; coverage reporting must show the contextual disposition separately.",
+    "No new learner scores, fields, resets, transfers or database writes are introduced."
+  ],
+  "sourceContext": [
+    {"source": "ncert-ncfse-2023-ed2024", "pdfPage": 266, "use": "Curriculum context treats confidence among dispositions developed through mathematical activity."},
+    {"source": "ncert-ncfse-2023-ed2024", "pdfPage": 281, "use": "Pedagogical context supports activity / play and meaningful mathematical exploration."}
+  ],
+  "measurementContextSources": [
+    "https://timss2019.org/reports/students-confident-in-mathematics-and-science/",
+    "https://timss2019.org/reports/students-value-math-science/index.html"
+  ],
+  "measurementSourceLimit": "These illustrate distinct attitude-report channels. Their questionnaire content, thresholds and older-age measurement properties are not adopted as a validated Foundational assessment."
+}

@@ -1,0 +1,112 @@
+# Primary curriculum source integration
+
+This proposal combines reviewed Ontario and India source work into a branch targeting `main`. The [structured report](primary-curriculum-integration-2026-11-11.json) pins the source heads and explicit integration corrections. Slice PRs and original commit history remain available. This does not declare Ontario complete or publish the proposal downstream.
+
+The review queue for this integration is [PR #139](https://github.com/withmarbleapp/os-taxonomy/pull/139). Historical PRs #110–138 are closed as superseded: retained changes are incorporated here and Physical Education withdrawals are explicit. Their branches and review history remain preserved.
+
+## Combined contents
+
+The snapshot contains 1,906 topics, 4,001 dependencies, 8,313 retained standards, 177 clusters, 1,091 teaching guides and 5,058 scoped contexts. Relative to accepted base `b5aa9b928d217944f82b35e964c98502972855d7`, it adds 48 topics, 45 guides, seven dependencies and one cluster. Thirteen old claims, eleven old guides and 28 old dependencies have explicitly reviewed corrections. The eleven old-guide corrections comprise nine teaching corrections and two citation-only repairs. The catalogue is unchanged. These inventory counts describe a source proposal, not learner attainment.
+
+India accounts for all 570 selected NCERT records: 444 Full authoring, 36 mixed skill/contextual, 28 conditional bindings, 12 contextual, one Unverified musical-scale phrase and 49 out-of-scope PE duties. This is the agreed NCERT baseline, with actual R1/R2 language and script bound at use. It is not a claim to cover all Indian boards.
+
+Ontario French accounts for all 594 primary records: 570 Full authoring and 24 Partial requiring actual local-community material. Social Studies Grades 1–4 accounts for 161 records: 157 Full, two chronology-limited Partial and two own-school local-resource Partials. The [locality correction](ontario-grade1-locality-correction-2026-11-11.md) retains valid tasks and associations while requiring an actual school packet for Grade 1 B3.1 and its coherent community description. The [complete Grade 5 review](ontario-grade5-social-completion-review-2026-11-11.md) accounts for another 41: 37 Full and four explicit chronology or source conditions. Its five bounded Canadian knowledge additions cover civic institutions and early historical repertoires, using the same fixed topic for earlier encounter relationships and separately dated later Métis community formation. It does not invent a pre-1713 Mattawa community, collapse peoples or assert current legal rights.
+
+The [complete Grade 6 review](ontario-grade6-social-completion-review-2026-11-11.md) accounts for all 46 records: 43 Full and three Partial requiring actual own-community source packets. It reuses 16 topics and adds two bounded claims for geographic coordinates and a fixed Jewish Canadian historical repertoire. Its 92 component pairs retain concrete inquiry, trade, response, cultural and public-image tasks. One invasive-species definition/guide correction distinguishes harmful introduction from non-native status alone; one regional-fact prerequisite becomes soft without changing either claim.
+
+The [Arts review](ontario-arts-primary-review-2026-11-11.md) accounts for all 300 Grade 1–6 expectations through 483 component pairs across 16 topics. Its [task programme](ontario-arts-primary-task-programme-2026-11-11.json) retains 17 actual protocol families, 24 grade panels and 72 overall-child closures. It adds three distinct shared operations: fixed staff-notation representation, physical paint mixing/adjustment and one-point perspective. Earlier parallel projection remains unchanged. Original score and perspective resources, actual cultural cases and whole-claim boundaries accompany the tasks; no instrument, grade or recipe clones were created.
+
+The [complete Kindergarten review](ontario-kindergarten-complete-review-2026-11-11.md) accounts for all 127 records in the 2026 programme: 113 Full authoring designs, seven local-resource Partials, two fine-motor-only Partials and five PE exclusions. It adds one shared collection-estimation operation and guide, preserving the documented overlap with the older numbers-to-120 compound claim without mastery transfer. All other work reuses unchanged claims. Actual creator portions, a declared phonics packet, all four arts forms and fine-motor and non-physical cooperative tasks are bound explicitly; seven local people/place/environment requirements retain unfinished applicability facts. Three targeted age-six scopes have source and whole-claim justification; no blanket four-year-old lowering or younger duplicate is introduced.
+
+The [Language residual dossier](ontario-language-residual-completion-2026-11-11.md) supplies actual task/resource bindings for the previously retained 40 positions: 18 specific cultural requirements and 18 affected overall contributions, plus two keyboarding requirements and their two overall contributions. It retains actual creator portions, six grade panels, the applicable enacted Storywork framework, specific present-connection evidence and actual keyboard performances. Dataset files and historical reports remain unchanged; other historical Full judgments are not freshly recertified.
+
+The [science coding task review](ontario-science-coding-task-review-2026-11-11.md) supplies concrete designs for six specific Grade 1–6 coding duties. The original packet combines a safe observation, clearly fictional practice data, visual-programming recipes, changed-case checks and distinct input/output purposes. Actual learner code and execution are required at delivery and are not asserted here. The [coding-impact supplement](ontario-science-coding-impact-review-2026-11-11.md) supplies another twelve prepared designs: six everyday-impact duties and six independently assessed overalls. Actual grade-specific code execution is combined with an explained consequence, an attributed AI-caption case and, for Grades 4–6, an actual skilled-trade/STEM application. No additional data changes. A [two-field AI example correction](ai-example-specificity-review-2026-11-11.json) qualifies AI-enabled instances rather than treating every automatic response as AI; its whole five-example, pattern/data and benefit/limit evidence remains exact.
+
+The [Grade 5 science C/D/E ledger](ontario-grade5-cde-current-ledger-2026-11-11.json) accounts for all 31 selected records: 22 newly completed residual task designs and nine historical Full judgments retained. It reuses existing claims except for one independently reviewed qualitative internal-force operation. Two chemistry card/guide corrections separate substance identity from practical reversibility. One intrinsic prerequisite becomes soft because the complete qualitative energy-conservation claim does not require the entire later stores/pathways inventory. All old contexts and unrelated claims/guides remain intact; 36 component pairs and three contexts are added.
+
+A [one-path shade-feedback correction](shade-feedback-safety-correction-2026-11-11.json) removes an overlooked instruction to look through a cover towards the Sun. It uses ground-shadow observation and a real warming comparison, consistent with the rest of the guide; all other guide payloads and flags are preserved.
+
+The [science applications/contributions review](ontario-science-applications-contributions-review-2026-11-11.md) supplies eighteen more residual task designs and revisits six application clauses. Concrete shared design projects combine science, mathematics and communication; multiple attributed community cases and NASA mathematical work support contribution analysis. Later occupational tasks include an actual skilled trade. Six component pairs reuse existing shared research intervals; no new claim, guide, age, context or edge is added.
+
+The [Science process programme](ontario-science-a1-process-source-review-2026-11-11.json) accounts for another 36 residual positions across six grades and all four content strands. Seven original resource sheets bind actual research, experimentation, design, safe procedures and communication. It adds 42 overall component pairs in existing intervals, with no new or changed claim, guide, age, context or edge. The Grade 5 respiratory model requires no exercise or personal body data.
+
+The [Grade 5 Science health portfolio](ontario-science-grade5-health-residual-completion-2026-11-11.md) accounts for five further residual positions. It combines varied social/environmental factors, two technology cases with health benefits/harms and perspectives, physical and mental food-literacy connections, and two independent integrated accounts. The body-system model requires basic physical structures linked to function and actual changed-feature repairs. Thirteen parent pairs extend existing exact intervals; no claim, guide, age or edge changes.
+
+Full means the mandatory source duties have an authored task portfolio with its stated resource and access conditions. It does not mean a child has performed the tasks, mastered every linked topic, or received an intervention with proven effectiveness. Component links alone do not certify a whole expectation.
+
+## Reconciliation and preservation
+
+The India and French leaves independently corrected the same English blending-to-fluency gate. Integration retains one soft edge with the reviewed India explanation; the French report retains its original and the reconciliation. Both the archive-reference and manifest inventory safeguards remain in validation.
+
+Complete authored payloads were compared by ID against the qualified source heads; context/code unions and stable topic, dependency and cluster ordering were checked independently. The research array uses the existing exporter's declared topic-ID ordering. Original source sequences remain in the source commits. The archive matches reviewed PR #114.
+
+The read-only publication check also identified [citation-only repairs](research-citation-locators-2026-11-11.md) and explicit [new-guide metadata, summary and ordering corrections](research-projection-metadata-2026-11-11.md). These corrections change the source proposal; verification does not silently ignore differences. Rich private research remains separately captured and subject to exact preimage/postimage checks. No private research payload is included here.
+
+## Validation and remaining scope
+
+Generation, dataset validation and generated-artifact checks pass. All 427 tests pass, with zero failures or skips. These checks establish mechanical integration alongside source/task review; they do not freshly verify every historical teaching citation.
+
+Physical Education is excluded by the user. The [Health-only package](ontario-hpe-primary-review-2026-11-11.md) now accounts for 98 Healthy Living records, with 299 pairs on 50 topics. The 169 PE/dependent cross-strand records are excluded; the full HPE leaf is not imported. Two health concepts are new: food-allergy knowledge and medicine authorisation. Two existing bullying fields and 12 reproduction-guide strings have separately reviewed corrections. Actual health promotion is self-contained and does not require the excluded Active Living programme. Kindergarten excludes five PE-only codes and retains two mixed codes as fine-motor-only Partial. India’s 49 PE-only exclusions and seven unaccepted motor-topic/guide withdrawals are integrated. The exact subtraction removes 131 proposed code pairs and 24 emptied contexts; every remaining authored card/guide and unaffected scoped record is preserved. All 570 source identities remain, with 521 eligible. Genuine Health, Arts and fine-motor duties remain. Earlier own-local requirements are receiving a consistency audit. Prepared source-fit designs now close 130 of the original 233 Science residual positions, leaving 103 original residuals. One newly identified Grade 4 B2.1 local-resource condition was previously historical Full, so there are 104 current Science Partials; the original-residual and current-Partial counts use different denominators. Language now has a concrete task dossier for its 40 retained conditions, with actual delivery/performance evidence still required at use. Existing links and historical review labels do not complete that work. The optional 128-record Indigenous-language programme remains excluded by agreement; Indigenous content elsewhere remains included.
+
+Default-branch acceptance, compatible runtime deployment, old-writer/fleet controls and fresh protected-state-preserving staging publication are separate steps. This source proposal makes no DB or learner-state change and authorises no reset, transfer, backfill or historical observation reinterpretation.
+
+The review-driven French guard also resolves each nested report/protocol/resource binding, including each item of a resource list. Negative cases reject missing targets and empty bindings. This correction changes validation only; all curriculum and research payloads remain unchanged.
+
+The later review guards require exact keyboard record keys and actual task targets, reject unresolved conditions inside a Grade 6 referenced protocol, and tie each coding source code to its exact grade recipe. Negative cases include duplicate or unrelated keyboard records, inherited/missing/wrong-object targets and a wrong but existing recipe heading. These changes preserve every dataset payload.
+
+Four further science guards resolve the actual impact-case targets, preserve every declared application contributor and its exact source interval, require all 22 fresh CDE closures to keep their dossier/protocol bindings, and check conditions in both referenced task owners. Negative cases reject missing and wrong-existing targets, deleted associations and unfinished tasks. These review fixes change no dataset artifact.
+
+Two follow-up review guards require the exact reviewed grade/strand headings and grade file, and all three label asset bindings. Missing bindings and wrong but existing targets fail. These guard fixes preserve all eight dataset artifacts byte-for-byte.
+
+The Grade 5 health-task guard also requires each Full record to name the actual programme file and each direct protocol to retain its required factual resource bindings. Missing or wrong-existing report targets and empty resource lists fail, with all dataset files unchanged.
+
+The [phase-change correction](phase-energy-and-prerequisite-correction-2026-11-11.md) distinguishes warming within a state from constant-temperature melting. One evidence statement and twelve guide passages retain the qualitative energy requirement while correcting the required-speed-increase error. One particle-diagram prerequisite becomes soft, with an explicit complete-claim witness. All other claims, guide fields, ages and contexts are preserved. Private research must be requalified against the final target; this correction authorizes no learner transfer or publication.
+
+The [Grade 2 matter portfolio](ontario-science-grade2-matter-residual-completion-2026-11-11.md) covers seven further residual positions through actual use/storage/disposal decisions, human and environmental phase-change consequences, stable/non-transition conditions, useful mixtures, specific hazard meanings and a separate integrated properties investigation. Fourteen component pairs extend ten unchanged exact 7–8 intervals; no new claim, guide, age, context or edge. At that checkpoint, prepared source-fit Science closures reached 106 of 233, leaving 127; the later Grade 4 follow-up below updates the current totals.
+
+The [NCERT scale exception](ncert-scale-source-meaning-exception-2026-11-11.md) records the exact remaining source-meaning ambiguity, pinned source pages and an original sequence that receives different classifications under two plausible readings. Checked official music examples do not define the intended criterion. The one record remains Unverified with no graph link; no new topic or complete Full India coverage is claimed. All eight dataset artifacts are unchanged by this evidence-only addition.
+
+
+## Reviewed feature follow-ups
+
+[PR #140](https://github.com/withmarbleapp/os-taxonomy/pull/140), source head
+`b570cf885ee968b7fb5ec6dc9069e093b3dac448`, reached this feature branch as
+`b0463daa0a24127f0e4917fa137a1cbdf6e24da8`. Its
+[Grade 4 ledger](ontario-grade4-science-content-current-ledger-2026-11-11.json)
+accounts for all 42 content records: 24 newly closed original residuals, 15 retained
+historical Full judgments and three local-resource Partials. Thirty-five component
+pairs extend existing exact 9–10 contexts; no topic, guide, age or edge changes.
+The B2.1 local-applicability correction explains why 103 remaining original Science
+residuals and one additional local Partial make 104 current Partials. Other historical
+Full labels are not freshly recertified.
+
+[PR #141](https://github.com/withmarbleapp/os-taxonomy/pull/141), source head
+`e6ec93f07550e0b0083e2ad6e219b533c515fb57`, reached this feature branch as
+`6483acda3ad93355be73a6497c7fdc2adca2bf20`. Its
+[four prerequisite corrections](language-reusable-prerequisite-corrections-2026-11-11.md)
+retain useful oral/writing support without requiring the entire written-note-taking
+or process-glossary claims first. They affect four additional old edges, with no
+overlap with the prior 24 corrections. Topic cards, guides, ages, associations and
+source dispositions remain unchanged. Complete current paths, exact historical
+paths and whole-candidate task limits remain explicit. The
+[India readiness ledger](ncert-primary-completion-readiness-2026-11-11.md) retains
+all 570 selected identities, 49 PE exclusions and all conditional/contextual/source
+uncertainty duties; it does not claim every Indian board or universal language mastery.
+
+The clean combined feature head `6483acda3ad93355be73a6497c7fdc2adca2bf20`
+passes generation without changes, validation, generated-artifact checks and all
+419 tests, with zero failures or skips. Its inventory remains 1,906 topics, 1,091
+guides, 4,001 edges, 8,313 standards, 177 clusters and 5,058 contexts. There are
+now 28 corrected old edges relative to the accepted base. These are feature-branch
+merges into the proposal targeting main, not default-branch acceptance or staging
+publication. Original source commits and earlier qualification checkpoints remain
+available.
+
+
+The subsequent Grade 4 binding guard requires the exact reviewed dossier and
+protocol for seven explicitly revisited historical positions, including the
+local-resource Partial. Removing either or both fields cannot bypass task checks.
+The nine untouched historical Full rows remain valid without newly certified
+bindings. The guard-only update passes all 427 tests and preserves every dataset
+artifact; the pinned 6483acda qualification above remains its historical 419-test
+snapshot.

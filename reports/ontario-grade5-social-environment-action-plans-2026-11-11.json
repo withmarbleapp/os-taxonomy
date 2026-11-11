@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "68642f0d17ec1d538bc4139fe360ac18f0894929",
+  "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
+  "status": "Two source-fit original action-plan designs reuse unchanged civic-goal and local-governance claims. They specify appropriate government and citizen actions, including a Nation government, without claiming plans were implemented or learners passed them.",
+  "selectedCodes": [
+    "B1.2",
+    "B1.3"
+  ],
+  "resources": {
+    "food-access": {
+      "url": "https://nfn.ca/food-bank/",
+      "provider": "Nipissing First Nation, Food Bank/Social Services",
+      "reviewed": "Complete current main body.",
+      "use": "Actual programme provides groceries to community members in need, with staff coordination and documented donation/fundraising/volunteer roles.",
+      "limits": "The page mixes older and changed delivery details; those details, eligibility, hours, individual client information and current volunteering enrolment are not teaching instructions. The existence of a service does not mean every Nation member is in need or that it has eliminated food insecurity."
+    },
+    "government-role": {
+      "report": "ontario-community-governance-claim-2026-11-10.json",
+      "use": "Previously verified complete municipal/FN/Métis entity and authority/service repertoire; department implementation is distinguished from governing-body authority."
+    },
+    "fishery-response": {
+      "report": "ontario-grade5-government-response-review-2026-11-11.json",
+      "use": "Actual dated Nation/provincial responsibilities, measures and effect/uncertainty limits."
+    },
+    "fishery-inquiry": {
+      "report": "ontario-grade5-environmental-inquiry-review-2026-11-11.json",
+      "use": "Actual Nation and provincial sources, correct effort/result distinction and partial-recovery evidence."
+    },
+    "whole-civic-claim": {
+      "report": "ontario-grade5-civic-action-review-2026-11-11.json",
+      "use": "Retain the completed collective-action case, shared goal/values and original campaign-plan operation; no mastery inferred from the new links."
+    }
+  },
+  "contributionPairs": {
+    "mt_g8gJIsDxmj": [
+      "B1.2",
+      "B1.3"
+    ],
+    "mt_xswgDb7eIU": [
+      "B1.2",
+      "B1.3"
+    ]
+  },
+  "protocols": {
+    "social-plan": {
+      "codes": [
+        "B1.2"
+      ],
+      "issue": "Food access for community members whom the actual programme supports; no inference about every person or family.",
+      "goal": "A bounded source-informed proposal to support clear service information and appropriately coordinated community contributions.",
+      "actors": [
+        {
+          "id": "nation-social-services",
+          "kind": "government",
+          "indigenousGovernment": true,
+          "body": "Nipissing First Nation programme/Social Services staff",
+          "sourceRefs": [
+            "food-access",
+            "government-role"
+          ]
+        },
+        {
+          "id": "community-support-group",
+          "kind": "citizen",
+          "body": "Clearly hypothetical class/community support group",
+          "sourceRefs": [
+            "food-access",
+            "whole-civic-claim"
+          ]
+        }
+      ],
+      "actionSteps": [
+        {
+          "actorId": "nation-social-services",
+          "action": "Propose that programme staff review clear, accessible public information and coordinate any currently suitable support needs with authorised community partners, using existing programme roles rather than inventing a new entitlement or budget decision.",
+          "purpose": "Help appropriate participants find accurate information and keep support aligned with the programme’s stated needs."
+        },
+        {
+          "actorId": "community-support-group",
+          "action": "Plan a clearly simulated awareness or support campaign based on a supplied, explicitly fictional approved-needs brief, choosing a suitable poster/letter/collection-plan method and explaining the shared goal, roles and next checks. No actual collection or claim that the Nation requested a school campaign is made.",
+          "purpose": "Explain how citizens could contribute appropriately rather than replace government/service responsibilities or presume what a community wants."
+        }
+      ],
+      "actions": [
+        "State the selected issue, a bounded intended improvement and whom the plan is for, using the verified source facts. Separate actual programme/role facts from the learner’s proposed future actions. Do not invent a failure or an entire community’s poverty, opinion or needs.",
+        "Generate at least two suitable citizen-action methods, consider likely consequences/limits, choose one and explain its fit to the shared goal. Specify a feasible sequence, who does what and what information/resources must be checked. The campaign plan is original work, not only a list of charitable or environmental words.",
+        "Include the explicit government and citizen action steps below, explain why each actor is appropriate and how the actions work together. Retain the independent whole local-governance checks from the original guide and complete civic-goal/campaign operation from the earlier dossier; a new case does not silently replace either claim.",
+        "Identify a modest way to check implementation/progress and what cannot be inferred from it. A completed poster, donation total or published update is not proof that food insecurity or a fish population problem has been solved.",
+        "Use a changed supplied social/environmental issue to justify actor/method choices rather than send the same petition or assign every issue to one generic government. Plans are assessed as designs; no real donation, enrolment, external message, political agreement or private household data is required."
+      ],
+      "positive": "Creates a specific plan with appropriate Nation/government and citizen steps, justified methods and a realistic bounded goal based on actual service facts.",
+      "nearMiss": [
+        "Lists only citizen donations and no government/service action.",
+        "Assigns the programme to a nearby city without authority evidence or assumes every Nation member needs it.",
+        "Invents eligibility/delivery advice or claims a campaign would end all food insecurity."
+      ],
+      "remainingConditions": []
+    },
+    "environment-plan": {
+      "codes": [
+        "B1.3"
+      ],
+      "issue": "The documented stressed fishery and continuing recovery/management concern; source periods and uncertainty remain explicit.",
+      "goal": "A bounded proposal supporting coordinated monitoring and accurate public understanding of the relevant stewardship information.",
+      "actors": [
+        {
+          "id": "nation-fishery-government",
+          "kind": "government",
+          "indigenousGovernment": true,
+          "body": "Nipissing First Nation governing/programme authorities in the dated sources",
+          "sourceRefs": [
+            "fishery-response",
+            "government-role"
+          ]
+        },
+        {
+          "id": "provincial-fishery-government",
+          "kind": "government",
+          "indigenousGovernment": false,
+          "body": "Ontario ministry partner as named in the dated sources",
+          "sourceRefs": [
+            "fishery-response",
+            "fishery-inquiry"
+          ]
+        },
+        {
+          "id": "citizen-awareness-group",
+          "kind": "citizen",
+          "body": "Clearly hypothetical class/community awareness group",
+          "sourceRefs": [
+            "fishery-inquiry",
+            "whole-civic-claim"
+          ]
+        }
+      ],
+      "actionSteps": [
+        {
+          "actorId": "nation-fishery-government",
+          "action": "Propose continuing appropriately coordinated assessment/communication within the documented Nation role, with experts setting actual fishery measures rather than the learner inventing new quotas or legal directions.",
+          "purpose": "Support evidence-informed stewardship while retaining distinct Nation authority and the actual period/role limits."
+        },
+        {
+          "actorId": "provincial-fishery-government",
+          "action": "Specify the corresponding provincial monitoring/management and public-information role from the source packet, including accurate dates and coordination with the Nation rather than substituting one government for the other.",
+          "purpose": "Identify what the responsible government could contribute to the selected issue, without asserting an unverified agreement renewal or present entitlement."
+        },
+        {
+          "actorId": "citizen-awareness-group",
+          "action": "Plan an original source-attributed awareness activity that explains the recovery concern and how to find current official information, rejecting the old inconsistent closure notice and the false net-count→fish-population inference. Choose and justify a suitable campaign method and division of roles.",
+          "purpose": "Help public understanding without pretending a poster is itself a measured ecological recovery or asking a child to fish/sample/enforce rules."
+        }
+      ],
+      "actions": [
+        "State the selected issue, a bounded intended improvement and whom the plan is for, using the verified source facts. Separate actual programme/role facts from the learner’s proposed future actions. Do not invent a failure or an entire community’s poverty, opinion or needs.",
+        "Generate at least two suitable citizen-action methods, consider likely consequences/limits, choose one and explain its fit to the shared goal. Specify a feasible sequence, who does what and what information/resources must be checked. The campaign plan is original work, not only a list of charitable or environmental words.",
+        "Include the explicit government and citizen action steps below, explain why each actor is appropriate and how the actions work together. Retain the independent whole local-governance checks from the original guide and complete civic-goal/campaign operation from the earlier dossier; a new case does not silently replace either claim.",
+        "Identify a modest way to check implementation/progress and what cannot be inferred from it. A completed poster, donation total or published update is not proof that food insecurity or a fish population problem has been solved.",
+        "Use a changed supplied social/environmental issue to justify actor/method choices rather than send the same petition or assign every issue to one generic government. Plans are assessed as designs; no real donation, enrolment, external message, political agreement or private household data is required."
+      ],
+      "positive": "Creates an original environmental plan with distinct government/Nation and citizen actions, appropriate roles and evidence-limited progress expectations.",
+      "nearMiss": [
+        "Calls only for children to collect fish or set legal quotas.",
+        "Provides only government steps or only a citizen slogan, omitting a required actor.",
+        "Equates an awareness output, survey-effort count or announced target with completed recovery."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "limits": [
+    "Government/citizen roles are explicit in both plans; the optional Native Languages programme exclusion does not remove these mandatory Indigenous-government source duties.",
+    "Whole claims and all existing contexts/edges/guides are preserved. Source-specific proposed actions do not certify actual implementation, whole-country governance knowledge, prerequisite readiness or learner mastery.",
+    "The remaining integrated and institutional records remain separately under review; these two plans do not automatically complete B1 or B3."
+  ]
+}

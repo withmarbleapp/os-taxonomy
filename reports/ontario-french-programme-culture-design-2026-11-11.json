@@ -1,0 +1,3563 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "parentProposalCommit": "96ac2c438c4ca9a89636e6b228de0e74fc91fc9b",
+  "status": "All108 remaining primary French culture positions reviewed.84 have complete source-fit designs;24 early local-community overall/specific designs remain Partial until actual local resources are bound. No learner attainment or staging publication is certified.",
+  "source": {
+    "catalogue": "the-ontario-curriculum-french-as-a-second-langua",
+    "edition": 2013,
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+    "originalEnglishPDF": "https://www.edu.gov.on.ca/eng/curriculum/elementary/fsl18-2013curr.pdf",
+    "allPrimaryBodiesRead": 594,
+    "nestedInstructionalTipsRead": 216,
+    "regionalScope": "Immersion1/2 local;Immersion3 local AND acrossOntario;Extended/Immersion4 Ontario,5 Quebec,6 eastern/western/northernCanada.",
+    "deliveryReconciliation": "Extended6A3.2 delivery omits the opening listening/identification duty; originalEnglishPDF printed156 visually checked. Complete clause used, source identity and pinned delivery snapshot unchanged."
+  },
+  "scope": {
+    "records": 108,
+    "Full": 84,
+    "Partial": 24,
+    "componentPairs": 251,
+    "reusedTopics": 9,
+    "newTopics": 0,
+    "newGuides": 0,
+    "newDependencies": 0,
+    "allPrimaryFrenchReviewedAfterThisProposal": 594,
+    "allPrimaryFrenchFull": 570,
+    "allPrimaryFrenchPartialLocalBinding": 24,
+    "remainingUnreviewedPrimaryFrench": 0,
+    "newContexts": 7,
+    "extendedContexts": 30
+  },
+  "sourceApplicabilityContracts": {
+    "actual-local-french-community": {
+      "kind": "LocalFrenchCommunityBinding",
+      "state": "unbound",
+      "appliesToProgrammes": [
+        "Immersion1",
+        "Immersion2",
+        "Immersion3"
+      ],
+      "appliesToCodes": [
+        "A3",
+        "A3.1",
+        "B3",
+        "B3.1",
+        "C3",
+        "C3.1",
+        "D3",
+        "D3.1"
+      ],
+      "minimumAccountsForThisDesign": 2,
+      "requiredFields": [
+        "coarseLocalityBasis",
+        "actualFrenchSpeakingCommunityOrGroup",
+        "sourcePublisherAndURL",
+        "sourceBodyActuallyChecked",
+        "sourceDateAndLimits",
+        "actualPlaceAndGroupFacts",
+        "culturalActivityAndSignificance",
+        "documentedOutwardContribution",
+        "preparedFrenchListeningSpeakingReadingWritingResources"
+      ],
+      "completionRule": "Do not certify the local culture or integrated overall source as Full until actual local communities/groups and their factual/cultural/contribution evidence are checked and the four real French channels are prepared. The minimum two accounts is this design’s resource set, not a universal publisher count or a requirement for two towns.",
+      "knowledgeRule": "Retain the complete local-person/group/place operation: use an actual photo, plaque or verified encounter/source, record at least two supported facts about a local place/building, explain social/cultural/spiritual significance, and describe an actual local individual/group contribution and why it is remembered or recognised. A dot, language label or fictional biography is insufficient.",
+      "outwardRule": "B3.1/D3.1 and integrated spoken/written overall tasks need an actual sourced contribution to francophonie/the wider world. A comparison with France alone, a generic mission, global audience assumption or unverified measured impact does not establish that contribution.",
+      "localityRule": "Ottawa/Sudbury or another fixed regional repertoire is not automatically local to every learner. Establish locality at use with a coarse school/community context, without collecting a home address or private family history.",
+      "languageRule": "Prepare actual checked French input/output, with clear attribution of original paraphrases versus authentic community texts. English translation or a different French corpus cannot replace source-channel performance.",
+      "completionEffect": "An actual binding completes source applicability for a teaching instance; it does not mint a location-specific topic, change old mastery claims, automatically certify a learner or silently rewrite this public Partial disposition."
+    }
+  },
+  "resources": {
+    "social-models": {
+      "id": "social-models",
+      "kind": "Original fictional teaching role-plays/messages, not authentic community testimony",
+      "cases": [
+        {
+          "setting": "Fictional French-speaking classroom: Mme Roy states a vous preference",
+          "lines": [
+            "Bonjour, madame Roy. Pouvez-vous m’aider, s’il vous plaît ?",
+            "Bonjour, Noa. Oui, voici le livre.",
+            "Merci. Au revoir !"
+          ]
+        },
+        {
+          "setting": "Fictional French-speaking peer scene, stated familiar relationship",
+          "lines": [
+            "Salut, Noa ! Tu peux m’aider, s’il te plaît ?",
+            "Oui, voici le livre.",
+            "Merci ! À demain !"
+          ]
+        },
+        {
+          "setting": "Changed visitor preference, valid in a stated French-speaking context without making a regional universal",
+          "lines": [
+            "Vous pouvez me tutoyer.",
+            "D’accord. Tu peux m’aider, s’il te plaît ?"
+          ]
+        }
+      ],
+      "writtenExamples": {
+        "peer": "Salut Noa,\nTu peux me parler de ton livre, s’il te plaît ?\nMerci ! À demain,\nLina",
+        "teacher": "Bonjour,\nPouvez-vous m’aider à préparer notre petit texte sur cette communauté, s’il vous plaît ?\nMerci,\nLina"
+      },
+      "usageSources": [
+        "https://vitrinelinguistique.oqlf.gouv.qc.ca/25140/la-redaction-et-la-communication/protocole-et-activites-publiques/contextes-demploi-du-vouvoiement-et-du-tutoiement",
+        "https://vitrinelinguistique.oqlf.gouv.qc.ca/24944/la-redaction-et-la-communication/redaction-administrative-et-commerciale/correspondance/courriel/formules-dappel-dans-le-courriel"
+      ],
+      "limits": "Local practice and stated preference matter; tu/vous is not a compulsory all-adults/children rule. Neutral Bonjour is legitimate. No required gesture/touch, gendered title, adult fourth-meeting protocol, real correspondence or universal English colon convention.",
+      "wholeRoleModels": [
+        {
+          "role": "group leader",
+          "line": "Choisissons un livre pour le groupe."
+        },
+        {
+          "role": "helper in the same task",
+          "line": "Qu’est-ce que je peux faire pour aider ?"
+        },
+        {
+          "role": "host",
+          "line": "Bienvenue ! Entre, s’il te plaît."
+        },
+        {
+          "role": "guest",
+          "line": "Merci de m’inviter."
+        },
+        {
+          "role": "shopkeeper",
+          "line": "Bonjour, comment puis-je vous aider ?"
+        },
+        {
+          "role": "customer",
+          "line": "Bonjour, est-ce que je peux avoir ce livre, s’il vous plaît ?"
+        }
+      ]
+    },
+    "world-comparisons": {
+      "kind": "Existing verified non-local comparison cases, not a substitute for local knowledge or outward contribution",
+      "bindings": [
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "resourceId": "france-music"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "resourceId": "uk-reading"
+        }
+      ]
+    },
+    "whole-french-corpus": {
+      "kind": "Actual introduced familiar French corpus, not an English-to-French transfer claim",
+      "oralBinding": {
+        "report": "ontario-french-programme-media-design-2026-11-10.json",
+        "resourceId": "french-oral-corpus"
+      },
+      "writtenTask": "Teach actual introduced written French forms in meaningful messages, including accents and nontransparent spellings from the bound earlier writing tasks. After study and a delay check exact meaningful retrieval without a visible model and changed-message reuse; context disambiguates homophones. Supported reference-assisted editing alone is not retained written-form knowledge.",
+      "writingBinding": {
+        "report": "ontario-core4-french-writing-design-2026-11-10.json",
+        "protocolIds": [
+          "purpose-forms-and-production",
+          "planning-through-publication"
+        ]
+      }
+    }
+  },
+  "protocols": {
+    "early-listening-culture": {
+      "channel": "listening",
+      "language": "French",
+      "localKnowledgeCodes": [
+        "overall",
+        ".1"
+      ],
+      "conventionsOnlyCodes": [
+        ".2"
+      ],
+      "localBindingContract": "actual-local-french-community",
+      "resourceBindings": [
+        "social-models",
+        "world-comparisons",
+        "whole-french-corpus"
+      ],
+      "actions": [
+        "For conventions-only .2 tasks, use the actual social-models dialogues/messages and wholeRoleModels. Identify the actual greeting/request/offer, stated relationship and address preference in this French channel; no local factual binding is needed for those finite convention tasks.",
+        "Retain the whole shared role-language operation: change from leader to helper in the same task, use host/guest or familiar/teacher greeting contexts and explain a customer request versus a helper/shopkeeper offer. Explain and use meaningful French words for the actual role change. A single Bonjour or English role result is insufficient; no universal all-adult-vous rule or forced gesture/contact.",
+        "For overall and .1 culture tasks, complete actual-local-french-community before certifying source coverage. Use actual local facts/cultural activities and significance; the Grade3 profile also retains the complete learned Ontario repertoire. Make an actual non-sensitive own/class connection and a supported comparison with another community, plus the bound France/UK cases for overall world-community scope.",
+        "Keep source duties distinct from generic respect or cultural approval. No fabricated learner biography, compulsory pride/enjoyment, all-residents identity assumption, unverified local affiliation or automatic prior English/different-corpus result.",
+        "A qualified model speaks the actual French dialogues and, once bound, the local fact texts naturally with contextual/visual support. Identify meaning/functions from heard French rather than a translated or printed transcript. Keep the whole introduced oral noun/action/feeling recognition, delayed independent recall and changed-scene use."
+      ],
+      "nearMiss": [
+        "Calls a remote fixed community local without evidence.",
+        "Treats generic polite behaviour, an English response or source links as actual French-channel performance.",
+        "Uses an aspirational mission or a France comparison as documented outward contribution."
+      ]
+    },
+    "early-speaking-culture": {
+      "channel": "speaking",
+      "language": "French",
+      "localKnowledgeCodes": [
+        "overall",
+        ".1"
+      ],
+      "conventionsOnlyCodes": [
+        ".2"
+      ],
+      "localBindingContract": "actual-local-french-community",
+      "resourceBindings": [
+        "social-models",
+        "world-comparisons",
+        "whole-french-corpus"
+      ],
+      "actions": [
+        "For conventions-only .2 tasks, use the actual social-models dialogues/messages and wholeRoleModels. Identify the actual greeting/request/offer, stated relationship and address preference in this French channel; no local factual binding is needed for those finite convention tasks.",
+        "Retain the whole shared role-language operation: change from leader to helper in the same task, use host/guest or familiar/teacher greeting contexts and explain a customer request versus a helper/shopkeeper offer. Explain and use meaningful French words for the actual role change. A single Bonjour or English role result is insufficient; no universal all-adult-vous rule or forced gesture/contact.",
+        "For overall and .1 culture tasks, complete actual-local-french-community before certifying source coverage. Use actual local facts/cultural activities and significance; the Grade3 profile also retains the complete learned Ontario repertoire. Make an actual non-sensitive own/class connection and a supported comparison with another community, plus the bound France/UK cases for overall world-community scope.",
+        "Keep source duties distinct from generic respect or cultural approval. No fabricated learner biography, compulsory pride/enjoyment, all-residents identity assumption, unverified local affiliation or automatic prior English/different-corpus result.",
+        "Actually enact the role changes in French and produce meaningful fresh French community accounts/comparisons after local binding. For B3/B3.1 explain the actual documented outward contribution in French; merely comparing with an outside community is insufficient. Rehearsal/cue support is permitted, but copying a complete sound sequence alone is not production or retained lexical knowledge."
+      ],
+      "nearMiss": [
+        "Calls a remote fixed community local without evidence.",
+        "Treats generic polite behaviour, an English response or source links as actual French-channel performance.",
+        "Uses an aspirational mission or a France comparison as documented outward contribution."
+      ]
+    },
+    "early-reading-culture": {
+      "channel": "reading",
+      "language": "French",
+      "localKnowledgeCodes": [
+        "overall",
+        ".1"
+      ],
+      "conventionsOnlyCodes": [
+        ".2"
+      ],
+      "localBindingContract": "actual-local-french-community",
+      "resourceBindings": [
+        "social-models",
+        "world-comparisons",
+        "whole-french-corpus"
+      ],
+      "actions": [
+        "For conventions-only .2 tasks, use the actual social-models dialogues/messages and wholeRoleModels. Identify the actual greeting/request/offer, stated relationship and address preference in this French channel; no local factual binding is needed for those finite convention tasks.",
+        "Retain the whole shared role-language operation: change from leader to helper in the same task, use host/guest or familiar/teacher greeting contexts and explain a customer request versus a helper/shopkeeper offer. Explain and use meaningful French words for the actual role change. A single Bonjour or English role result is insufficient; no universal all-adult-vous rule or forced gesture/contact.",
+        "For overall and .1 culture tasks, complete actual-local-french-community before certifying source coverage. Use actual local facts/cultural activities and significance; the Grade3 profile also retains the complete learned Ontario repertoire. Make an actual non-sensitive own/class connection and a supported comparison with another community, plus the bound France/UK cases for overall world-community scope.",
+        "Keep source duties distinct from generic respect or cultural approval. No fabricated learner biography, compulsory pride/enjoyment, all-residents identity assumption, unverified local affiliation or automatic prior English/different-corpus result.",
+        "Read the actual French messages and, after local binding, varied French community texts; identify relationship/form conventions and meaning from print. Retain the whole original French picture/text task with compatible prepared illustrations when the picture/text topic contributes to the overall/.1 code. A logo, map dot, adult read-aloud or translation cannot substitute for that operation or learner reading."
+      ],
+      "nearMiss": [
+        "Calls a remote fixed community local without evidence.",
+        "Treats generic polite behaviour, an English response or source links as actual French-channel performance.",
+        "Uses an aspirational mission or a France comparison as documented outward contribution."
+      ],
+      "wholeClaimResourceBindings": [
+        {
+          "report": "ontario-core4-french-reading-design-2026-11-10.json",
+          "protocolId": "meaning-and-strategies",
+          "resourceId": "originalStory",
+          "topicId": "mt_OlhMP7ShFT"
+        }
+      ]
+    },
+    "early-writing-culture": {
+      "channel": "writing",
+      "language": "French",
+      "localKnowledgeCodes": [
+        "overall",
+        ".1"
+      ],
+      "conventionsOnlyCodes": [
+        ".2"
+      ],
+      "localBindingContract": "actual-local-french-community",
+      "resourceBindings": [
+        "social-models",
+        "world-comparisons",
+        "whole-french-corpus"
+      ],
+      "actions": [
+        "For conventions-only .2 tasks, use the actual social-models dialogues/messages and wholeRoleModels. Identify the actual greeting/request/offer, stated relationship and address preference in this French channel; no local factual binding is needed for those finite convention tasks.",
+        "Retain the whole shared role-language operation: change from leader to helper in the same task, use host/guest or familiar/teacher greeting contexts and explain a customer request versus a helper/shopkeeper offer. Explain and use meaningful French words for the actual role change. A single Bonjour or English role result is insufficient; no universal all-adult-vous rule or forced gesture/contact.",
+        "For overall and .1 culture tasks, complete actual-local-french-community before certifying source coverage. Use actual local facts/cultural activities and significance; the Grade3 profile also retains the complete learned Ontario repertoire. Make an actual non-sensitive own/class connection and a supported comparison with another community, plus the bound France/UK cases for overall world-community scope.",
+        "Keep source duties distinct from generic respect or cultural approval. No fabricated learner biography, compulsory pride/enjoyment, all-residents identity assumption, unverified local affiliation or automatic prior English/different-corpus result.",
+        "Actually write a changed French message for a stated reader/purpose, making deliberate vocabulary/form/tone choices with coherent opening/development/closing and review; re-express content for a different reader. For D3/D3.1 explain actual bound community facts and outward contribution in French. Retain full prior planning/process/readiness and independent retained French spelling/accents checks; copying a full model or only changing its salutation is insufficient."
+      ],
+      "nearMiss": [
+        "Calls a remote fixed community local without evidence.",
+        "Treats generic polite behaviour, an English response or source links as actual French-channel performance.",
+        "Uses an aspirational mission or a France comparison as documented outward contribution."
+      ],
+      "wholeClaimResourceBindings": [
+        {
+          "report": "ontario-core4-french-writing-design-2026-11-10.json",
+          "protocolId": "purpose-forms-and-production",
+          "topicId": "mt_v5DyOEpbbr"
+        },
+        {
+          "report": "ontario-core4-french-writing-design-2026-11-10.json",
+          "protocolId": "planning-through-publication",
+          "topicId": "mt_v5DyOEpbbr"
+        }
+      ]
+    },
+    "extended4-regional-culture": {
+      "courseProfile": "extended4",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    },
+    "extended5-regional-culture": {
+      "courseProfile": "extended5",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    },
+    "extended6-regional-culture": {
+      "courseProfile": "extended6",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    },
+    "immersion4-regional-culture": {
+      "courseProfile": "immersion4",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core4-french-culture-design-2026-11-10.json",
+          "protocolId": "writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    },
+    "immersion5-regional-culture": {
+      "courseProfile": "immersion5",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core5-writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    },
+    "immersion6-regional-culture": {
+      "courseProfile": "immersion6",
+      "wholePriorProtocolBindings": [
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-listening-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-speaking-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-reading-culture-and-conventions"
+        },
+        {
+          "report": "ontario-core56-french-culture-design-2026-11-10.json",
+          "protocolId": "core6-writing-culture-and-conventions"
+        }
+      ],
+      "actions": [
+        "Use every exact bound prior regional protocol and all three actual learned case resources, their authenticated selected passages, French corpus and whole picture/text/writing-audience/planning bindings. New source codes or programme labels do not certify performance.",
+        "Perform each actual French listening, speaking, reading and writing channel, with actual own/class and other-community comparison. Overall tasks integrate culture AND conventions and retain the two world cases; a stronger-language factual answer alone is not French performance.",
+        "For the spoken/written regional .1 and overall codes, explain the actual regional outward contribution in French using the verified input and fresh meaningful output. Institutional mission, documented activity and measured impact remain distinct.",
+        "Keep the new source’s permitted supports and source-comparable complexity; full taught-word/spelling retention, varied role preferences and the complete unchanged target claims remain required. No English result, different French corpus or a copied whole model substitutes."
+      ],
+      "nearMiss": [
+        "Only supplies a regional place label, a greeting or positive cultural feeling.",
+        "Broadens the earlier Ontario facts into Quebec/northern facts or assumes all residents share a practice.",
+        "Uses a world comparison without the regional outward contribution."
+      ]
+    }
+  },
+  "courseProfiles": {
+    "extended4": {
+      "programme": "Extended",
+      "grade": 4,
+      "officialCourseId": "6a8ddb0f-5ab4-490a-8788-192515daf26f",
+      "officialCourseName": "FSL - Extended - Grade 4",
+      "ageBand": [
+        9,
+        10
+      ],
+      "communityScope": "Ontario",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_RIOhVDZZkG"
+      ],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "extended5": {
+      "programme": "Extended",
+      "grade": 5,
+      "officialCourseId": "4608c96c-687c-4566-b985-75e06107e40a",
+      "officialCourseName": "FSL - Extended - Grade 5",
+      "ageBand": [
+        10,
+        11
+      ],
+      "communityScope": "Quebec",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_QDM6Rc6pph"
+      ],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "extended6": {
+      "programme": "Extended",
+      "grade": 6,
+      "officialCourseId": "d40e2754-35ed-4d3f-9f02-a489f1e67dd7",
+      "officialCourseName": "FSL - Extended - Grade 6",
+      "ageBand": [
+        11,
+        12
+      ],
+      "communityScope": "eastern, western and northern Canada",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_j6g97xxB-c"
+      ],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion1": {
+      "programme": "Immersion",
+      "grade": 1,
+      "officialCourseId": "a842b47e-5a0c-431c-abb6-2b9e46309608",
+      "officialCourseName": "FSL - Immersion - Grade 1",
+      "ageBand": [
+        6,
+        7
+      ],
+      "communityScope": "local",
+      "localBindingRequired": true,
+      "localBindingContract": "actual-local-french-community",
+      "knowledgeTopicIds": [
+        "mt_2qc_Kq63Le"
+      ],
+      "ontarioBinding": null,
+      "localityNotInferredFromRegion": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion2": {
+      "programme": "Immersion",
+      "grade": 2,
+      "officialCourseId": "6702e501-fbff-4e4d-8172-408acc3ed2a5",
+      "officialCourseName": "FSL - Immersion - Grade 2",
+      "ageBand": [
+        7,
+        8
+      ],
+      "communityScope": "local",
+      "localBindingRequired": true,
+      "localBindingContract": "actual-local-french-community",
+      "knowledgeTopicIds": [
+        "mt_2qc_Kq63Le"
+      ],
+      "ontarioBinding": null,
+      "localityNotInferredFromRegion": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion3": {
+      "programme": "Immersion",
+      "grade": 3,
+      "officialCourseId": "1f1f5a2d-3e35-4c0f-9ad6-d78607eaf25f",
+      "officialCourseName": "FSL - Immersion - Grade 3",
+      "ageBand": [
+        8,
+        9
+      ],
+      "communityScope": "local AND across Ontario",
+      "localBindingRequired": true,
+      "localBindingContract": "actual-local-french-community",
+      "knowledgeTopicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG"
+      ],
+      "ontarioBinding": {
+        "report": "ontario-core4-french-culture-design-2026-11-10.json",
+        "topicId": "mt_RIOhVDZZkG",
+        "resourceIds": [
+          "ottawa-festival",
+          "sudbury-theatre",
+          "ottawa-author"
+        ]
+      },
+      "localityNotInferredFromRegion": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion4": {
+      "programme": "Immersion",
+      "grade": 4,
+      "officialCourseId": "bb04c0f1-f73b-47b2-88f5-32372e1d9632",
+      "officialCourseName": "FSL - Immersion - Grade 4",
+      "ageBand": [
+        9,
+        10
+      ],
+      "communityScope": "Ontario",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_RIOhVDZZkG"
+      ],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion5": {
+      "programme": "Immersion",
+      "grade": 5,
+      "officialCourseId": "05866987-d619-41e5-bd3a-f1205b1b67e7",
+      "officialCourseName": "FSL - Immersion - Grade 5",
+      "ageBand": [
+        10,
+        11
+      ],
+      "communityScope": "Quebec",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_QDM6Rc6pph"
+      ],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    },
+    "immersion6": {
+      "programme": "Immersion",
+      "grade": 6,
+      "officialCourseId": "eeab0475-6924-429c-9dfe-03ae99d20db7",
+      "officialCourseName": "FSL - Immersion - Grade 6",
+      "ageBand": [
+        11,
+        12
+      ],
+      "communityScope": "eastern, western and northern Canada",
+      "localBindingRequired": false,
+      "knowledgeTopicIds": [
+        "mt_j6g97xxB-c"
+      ],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "wholePriorProtocolsRequired": true,
+      "actualFreshFrenchChannelsRequired": true,
+      "worldComparisonRequired": true,
+      "actualOwnOtherConnectionRequired": true
+    }
+  },
+  "records": [
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-A3",
+      "code": "A3",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-A3.1",
+      "code": "A3.1",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-A3.2",
+      "code": "A3.2",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-B3",
+      "code": "B3",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-B3.1",
+      "code": "B3.1",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-B3.2",
+      "code": "B3.2",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-C3",
+      "code": "C3",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-C3.1",
+      "code": "C3.1",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-C3.2",
+      "code": "C3.2",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-D3",
+      "code": "D3",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-D3.1",
+      "code": "D3.1",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-D3.2",
+      "code": "D3.2",
+      "programme": "Extended",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended4",
+      "protocolIds": [
+        "extended4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-A3",
+      "code": "A3",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-A3.1",
+      "code": "A3.1",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-A3.2",
+      "code": "A3.2",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-B3",
+      "code": "B3",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-B3.1",
+      "code": "B3.1",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-B3.2",
+      "code": "B3.2",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-C3",
+      "code": "C3",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-C3.1",
+      "code": "C3.1",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-C3.2",
+      "code": "C3.2",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-D3",
+      "code": "D3",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-D3.1",
+      "code": "D3.1",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-D3.2",
+      "code": "D3.2",
+      "programme": "Extended",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended5",
+      "protocolIds": [
+        "extended5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-A3",
+      "code": "A3",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-A3.1",
+      "code": "A3.1",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-A3.2",
+      "code": "A3.2",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-B3",
+      "code": "B3",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-B3.1",
+      "code": "B3.1",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-B3.2",
+      "code": "B3.2",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-C3",
+      "code": "C3",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-C3.1",
+      "code": "C3.1",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-C3.2",
+      "code": "C3.2",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-D3",
+      "code": "D3",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-D3.1",
+      "code": "D3.1",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-D3.2",
+      "code": "D3.2",
+      "programme": "Extended",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "extended6",
+      "protocolIds": [
+        "extended6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 1,
+      "ageBand": [
+        6,
+        7
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion1",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion2",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-listening-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-speaking-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-reading-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2qc_Kq63Le",
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Partial",
+      "bindingConditionIds": [
+        "actual-local-french-community"
+      ],
+      "remainingConditions": [
+        "Bind actual local French communities/groups, verified facts/cultural and outward-contribution evidence, and prepared actual French input/output in all four channels."
+      ]
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 3,
+      "ageBand": [
+        8,
+        9
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion3",
+      "protocolIds": [
+        "early-writing-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": []
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_RIOhVDZZkG",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 4,
+      "ageBand": [
+        9,
+        10
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion4",
+      "protocolIds": [
+        "immersion4-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core4-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_QDM6Rc6pph",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion5",
+      "protocolIds": [
+        "immersion5-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core5-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-A3",
+      "code": "A3",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-A3.1",
+      "code": "A3.1",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-A3.2",
+      "code": "A3.2",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-listening-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-B3",
+      "code": "B3",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-B3.1",
+      "code": "B3.1",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-B3.2",
+      "code": "B3.2",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc",
+        "mt_Winq7Tu99m"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-speaking-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-C3",
+      "code": "C3",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_OlhMP7ShFT",
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-C3.1",
+      "code": "C3.1",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_OlhMP7ShFT"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-C3.2",
+      "code": "C3.2",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_2_fB4LuVwc"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-reading-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-D3",
+      "code": "D3",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_sPd4fWeY9x",
+        "mt_v5DyOEpbbr"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-D3.1",
+      "code": "D3.1",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_j6g97xxB-c",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    },
+    {
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-D3.2",
+      "code": "D3.2",
+      "programme": "Immersion",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "courseProfile": "immersion6",
+      "protocolIds": [
+        "immersion6-regional-culture"
+      ],
+      "disposition": "Full",
+      "bindingConditionIds": [],
+      "remainingConditions": [],
+      "priorDesign": "ontario-core56-french-culture-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "core6-writing-culture-and-conventions"
+      ],
+      "wholePriorTaskRequired": true
+    }
+  ],
+  "wholeClaimBoundaries": [
+    "All nine contributing topics already exist. Reuse exact three regional factual repertoires and the portable local person/group/place investigation, plus five whole role/French/picture/audience operations. No new town, grade, medium or easier-culture clone.",
+    "The local contract is an applicability/resource condition, not missing generic reasoning or an invented permanent local-facts catalogue. Every required source remains retained and associated; do not call an unbound local culture source Full.",
+    "Full here is a source-fit authoring judgment, not observed attainment. Partial local applicability is explicit and cannot be erased by a count of links, a true flag or completing an unrelated regional case.",
+    "All old authored claims, guides, dependency edges and exact scoped intervals remain unchanged. No learner reset, automatic mastery transfer, DB publication or source-wording overwrite.",
+    "Together with earlier486 this closes the primary594 review ledger:570Full designs and24local-bindingPartial designs, with no unreviewed primaryFSL code or diagnosed new-topic gap. Actual local teaching instances still need the declared resources."
+  ]
+}

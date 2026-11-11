@@ -1,0 +1,827 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "c9f9215",
+  "source": {
+    "catalogue": "the-ontario-curriculum-kindergarten-2026",
+    "edition": 2026,
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/kindergarten/grades/jk-sk",
+    "sourceAgeWindow": [
+      4,
+      6
+    ]
+  },
+  "scope": {
+    "records": 16,
+    "Full": 9,
+    "Partial": 7,
+    "newTopics": 0,
+    "authoredClaimChanges": 0,
+    "dependencyChanges": 0,
+    "reusedTopics": 14,
+    "componentPairs": 49,
+    "newContexts": 7,
+    "newPairs": 49
+  },
+  "protocols": {
+    "local-people-places-and-environment-care": {
+      "codes": [
+        "D22",
+        "D22.1",
+        "D22.2",
+        "D23",
+        "D23.1",
+        "D23.2",
+        "D23.3"
+      ],
+      "task": "Bind an actual suitable local community: identify people and what they do, and natural ANDhuman-made places/buildings with their supported functions. Compare two actual local environments for a supported similarity/difference. Predict a plausible consequence of a supplied environmental change with an evidence/reason boundary, then distinguish a prediction from an observed result. Choose and actually practise a feasible care action such as using the right disposal point or caring appropriately for a classroom plant, explaining why it helps the selected place. Adapt to another actual local case. Use the explicit local-binding template: obtain two supported facts and a relevant function for a suitable local place and a person/group, retain natural/managed/built distinctions and identify the comparison evidence. An invented classroom neighbourhood or fixed city is not asserted to be every learner’s locality. The blank template is deliberately unfilled, so these seven local-source records remain Partial until actual suitable facts and access are supplied.",
+      "positive": "People/functions, natural/built places, actual environmental comparison, justified change prediction and actual care are independently represented.",
+      "nearMiss": "Calls a fixed Toronto example local for every pupil, assumes every building has a function from its shape, or treats an untested consequence as a measured causal effect.",
+      "transfer": "A changed actual local place/action requires a fresh supported explanation.",
+      "resourceCondition": "Actual local people/place/environment facts and suitable authorised access must be bound; no external contact,private householddata or unverifiedlocation is required.",
+      "resourceIds": [
+        "local-binding-template"
+      ]
+    },
+    "arts-response-and-creation": {
+      "codes": [
+        "D24",
+        "D24.1",
+        "D24.2",
+        "D24.3",
+        "D25",
+        "D25.1",
+        "D25.2",
+        "D25.3",
+        "D25.4"
+      ],
+      "task": "Use actual attributed suitable dance,drama,music ANDvisual-art works from various cultures/communities. Respond with own language/movement or accessible choices and supported personal/supplied-experience connections; compare observable artistic features and a genuine mathematical relationship such as timing,repetition,shape or spatial arrangement. In separate actualcreation tasks, explore elements/materials and techniques across allfourforms, choose an idea, solve a creative problem, practise/revise and share: an own movement sequence adapted for a changed idea; an imagined dramatic role/action sequence; an own short sound/rhythm composition; and an own arranged visual composition using suitable materials. Acknowledge creators and distinguish an own practice composition from an authentic cultural work. Use the exact four-form portfolio: adult performs an accessible short attributed Amalkay movement sequence and the identified Music Alive phrase; read the linked fable and enact an original short response; view the actual museum owl image. These are linked source works and an original response, not generic culturally authentic inventions. The child responds to actual seen/heard choices, uses an appropriate word/gesture and explains a connection to the poem, a different work or a neutral supplied experience. Compare a repeated movement/sound unit, count an actual repeated phrase and discuss shape/space in an actual visual arrangement. For creation, use the concrete original creative task in all four forms, trying and changing materials/techniques and explaining the effect. No response, teacher performance or child success is recorded as having happened in advance.",
+      "positive": "Actual responses,variedcommunityworks,language/math connections,exploration/experimentation,problem-solving and communicatedownideas are checked across the fullfourform portfolio.",
+      "nearMiss": "A clapping task certifies allArts, a publisher synopsis substitutes for a work, copied moves certify owncomposition, or a cultural mask/ceremony is imposed without appropriate context.",
+      "transfer": "Use a new work,material,partner or creative intention and adapt the response/composition.",
+      "resourceIds": [
+        "four-form-portfolio",
+        "original-creative-task"
+      ]
+    }
+  },
+  "resources": {
+    "four-form-portfolio": {
+      "dance": {
+        "title": "Amalkay — particular Mi’kmaq teaching context",
+        "url": "https://naccna-assets.s3.amazonaws.com/nac-amalkay-lesson-plans-final-en.pdf",
+        "portion": "PDF page7 Day2 steps3–5 context/song; page8 movement sequence; page9 reflection.",
+        "credits": "Richard and Julie Pellissier-Lush, as credited in the actual resource.",
+        "delivery": "Adult prepares the actual attributed lesson context, then demonstrates small forearm circles and side-step-and-together with a suitable steady beat; optional shoulder coordination and seated/access adjustments. Learner watches the actual phrase before responding.",
+        "limits": "No compulsory handholding, hugging, shouting, expelling sadness, sacred-role imitation or universal Indigenous directional rule. It is this teaching context, not every Mi’kmaq or Indigenous practice."
+      },
+      "music": {
+        "title": "Music Alive — English/Cree version",
+        "creator": "Sherryl Sewepagaham",
+        "translationCredits": "Woodland Cree Y-dialect: Bill and Emily Sewepagaham",
+        "url": "https://naccna-assets.s3.amazonaws.com/revised_music_alive_song_eng_cree.pdf",
+        "portion": "Opening sung phrase, bars3–4 after two introduction/percussion bars, prepared from the actual single-page score.",
+        "delivery": "Adult prepares and performs the actual bounded phrase from the score, with the linked authorised recording as an option if available. Learner listens before describing heard repetition, pace or an own response. Adult performs the phrase again with a clearly changed feature to compare.",
+        "limits": "Actual score reading is the adult preparation; the Kindergarten listening task does not certify pupil staff notation, pitch matching, complete-song performance or a universal cultural meaning."
+      },
+      "drama": {
+        "title": "The Crow and the Pitcher — attributed traditional fable and original response",
+        "url": "https://read.gov/aesop/012.html",
+        "portion": "Actual short linked Library of Congress text read by adult; the complete body was checked.",
+        "delivery": "After hearing the attributed fable, use safe imaginary props for a short own role sequence: attempt, pause, revised idea and outcome. Discuss an observable movement/voice choice and connect it to the story or a supplied changed problem. No real thirst or drinking experiment.",
+        "limits": "This is a fable and an original dramatic response, not a claim that all Greek people use this performance or an invented original historical quotation."
+      },
+      "visual": {
+        "report": "ontario-kindergarten-literacy-design-2026-11-11.json",
+        "resourceId": "creator-portfolio",
+        "workId": "ashevak-owl",
+        "delivery": "View the actual linked complete museum image, then compare a visible arrangement with an own work. Preserve artist, printmaker and printer credits; no inferred universal symbolism. Image is linked, not copied."
+      }
+    },
+    "original-creative-task": {
+      "stimulus": "assets/ontario-arts-programme/original-performance-stimuli.md",
+      "dance": [
+        "Observe a safe action such as reaching and placing an object, then make an own short ordered movement phrase.",
+        "Try a slower or smaller version, adapt the phrase to a changed idea and share the intended effect."
+      ],
+      "drama": [
+        "Use the actual original A box of seeds script for a brief rehearsed scene with a deliberate pause, gesture or voice choice.",
+        "Change one circumstance and improvise a different response. Rehearse the actual original A small beginning poem with a chosen pace or emphasis."
+      ],
+      "music": [
+        "Choose suitable available body sounds or instruments to create a short own pattern or sound piece for a stated idea.",
+        "Change a duration, loudness, timbre or order, listen and explain or demonstrate the effect; no fixed emotion-to-sound rule."
+      ],
+      "visual": [
+        "Choose paper, large safe pieces, crayons or other suitable materials and compose an own arrangement for a chosen observation or idea.",
+        "Try a changed colour, form, texture or spatial arrangement, revise and show how it changes the intended effect."
+      ],
+      "crossFormElements": [
+        "Movement body/space/time/energy",
+        "Drama role/action/voice/pause",
+        "Sound duration/loudness/timbre/pitch where actually used",
+        "Visual line/form/colour/space/texture"
+      ],
+      "problem": "A partner cannot recognise the intended contrast or the available space/material changes. Choose a revision in each form, try it and communicate the changed intention.",
+      "limits": "Original untested tasks; no copied model, compulsory emotion, material prescription or source-based efficacy claim."
+    },
+    "local-binding-template": {
+      "place": {
+        "locality": null,
+        "actualSource": null,
+        "twoSupportedFacts": [],
+        "naturalManagedOrBuilt": null,
+        "functionAndImportance": null
+      },
+      "personOrGroup": {
+        "actualSource": null,
+        "supportedContribution": null,
+        "communityImportance": null
+      },
+      "environmentComparison": {
+        "firstActualPlace": null,
+        "secondActualPlace": null,
+        "evidenceDate": null,
+        "supportedSimilarity": null,
+        "supportedDifference": null
+      },
+      "changeAndCare": {
+        "hypotheticalChange": null,
+        "reasonedPrediction": null,
+        "actualSafeCareAction": null,
+        "actualObservationIfAny": null
+      },
+      "limits": "Unfilled resource contract, not a verified local packet or fabricated observation. Adult binds suitable actual sources/access; no household geolocation, stranger contact or private learner upload required."
+    }
+  },
+  "records": [
+    {
+      "code": "D22",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D22",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Investigate actual local people and places with supported functions and community significance.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2qc_Kq63Le",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D22.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D22.1",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Identify a real local person or group and explain what they do using suitable evidence.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2qc_Kq63Le",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D22.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D22.2",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Identify actual nearby natural and built places and explain supported functions rather than guess from a silhouette.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2qc_Kq63Le",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D23",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Investigate the local natural environment and practise a reasoned suitable care action.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_5zPXTvZTcX",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_L1469gt34A",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D23.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23.1",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Compare two actual local environments using supported likenesses and differences.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_cUpJvBD1YA",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ppENoD8vf1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D23.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23.2",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Make a reasoned prediction about a supplied environmental change and distinguish it from an observed outcome.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D23.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23.3",
+      "disposition": "Partial",
+      "requiredTaskDuty": "Explain and practise a feasible care action appropriate to the selected actual environment.",
+      "protocolIds": [
+        "local-people-places-and-environment-care"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_5zPXTvZTcX",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [
+        "Bind actual suitable local people/place/environment evidence and access in the explicit template; generic task operations alone cannot certify these local resource duties."
+      ],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D24",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D24",
+      "disposition": "Full",
+      "requiredTaskDuty": "Respond to actual dance, drama, music and visual works across attributed cultural/community sources, using meaningful language and mathematical connections.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_thsY1ZesaU",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ZjIFGc6zPW",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D24.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D24.1",
+      "disposition": "Full",
+      "requiredTaskDuty": "Express an own response to actual observed movement and dramatic performance choices.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_thsY1ZesaU",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D24.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D24.2",
+      "disposition": "Full",
+      "requiredTaskDuty": "Use actual attributed varied works in a dramatic response and explain an accessible personal or supplied-experience connection.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_5n-O41lUgn",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D24.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D24.3",
+      "disposition": "Full",
+      "requiredTaskDuty": "Respond to actual heard music through an own movement, supported connection or discussion of an audible feature.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ZjIFGc6zPW",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_thsY1ZesaU",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D25",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D25",
+      "disposition": "Full",
+      "requiredTaskDuty": "Explore and create in all four forms through actual experimentation, revision and communication.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D25.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D25.1",
+      "disposition": "Full",
+      "requiredTaskDuty": "Investigate useful movement, drama, sound and visual elements through actual making and comparison.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D25.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D25.2",
+      "disposition": "Full",
+      "requiredTaskDuty": "Try different suitable materials or techniques across the four forms and compare the results.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D25.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D25.3",
+      "disposition": "Full",
+      "requiredTaskDuty": "Use an idea and a creative problem to make and revise work in all four forms.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    },
+    {
+      "code": "D25.4",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D25.4",
+      "disposition": "Full",
+      "requiredTaskDuty": "Communicate an intended idea through actual own movement, dramatic action, musical sound and visual arrangement.",
+      "protocolIds": [
+        "arts-response-and-creation"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ylFTYS80d1",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2mb17lUCPD",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_2Kn5ianVWN",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared source task and component design; actual learner execution, full inherited claim inventories and prerequisite readiness remain separate."
+    }
+  ],
+  "conditions": {
+    "actualPerformance": "Prepared delivery requires actual seen/heard work and own creation/revision across all four forms; metadata, clapping or one copied gesture alone is insufficient.",
+    "attribution": "Keep named people, languages and teaching contexts distinct; no community-wide belief or interpretation is inferred from a work.",
+    "localScope": "Seven explicit local-resource Partials retain unfinished applicability facts; no unverified local scene is called complete.",
+    "wholeClaims": "Short source panels do not certify the complete older script/poetry, music, artwork, mathematical-core or prerequisite inventory. No staff decoding or technical art vocabulary gate is added to the source itself."
+  }
+}

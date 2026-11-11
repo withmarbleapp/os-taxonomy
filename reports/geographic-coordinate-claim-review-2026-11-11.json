@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "d691740fcf05b4a36e1e0ff8f6670f474343d594",
+  "status": "Historical coordinate-only checkpoint: B3.7 was Partial at this stage. The later country/city source-fit design completes its application; consult ontario-grade6-social-current-ledger-2026-11-11.json and ontario-grade6-country-city-location-design-2026-11-11.json for the current disposition. This original component is not itself whole country/interrelationship coverage or learner attainment.",
+  "claimCuration": {
+    "topicId": "mt_eDaSAl6DwW",
+    "decision": "Add one shared latitude/longitude representation, without a country, grade, numeric-range or difficulty clone.",
+    "closestCandidates": [
+      "mt_w4cUnN_SsQ",
+      "mt_ejht12jhm2",
+      "mt_hVpGOEz2kG",
+      "mt_i5_HnoFOYw",
+      "mt_jBQS-CicNn",
+      "mt_eoQNkZGzxK",
+      "mt_HX8VtJRt0Y"
+    ],
+    "mismatch": "Cartesian ordered pairs use an x/y convention on a plane; grid references locate cells; cardinal directions locate relative places; the Equator claim identifies N/S halves and explicitly excludes Prime Meridian/EW inventory. None supplies the paired geographic angular references/degree-direction values and map/globe interpretation. Same-operator arithmetic practice does not by itself certify a new representational convention.",
+    "positive": [
+      "Locate and read both labelled coordinates, including opposite hemispheres and zero.",
+      "Use a supplied real-place approximation at its stated resolution.",
+      "Transfer across labelled representations/conventions with no Cartesian-order or ground-distance overclaim."
+    ],
+    "nearMiss": [
+      "Correct Cartesian plotting but reads latitude as horizontal longitude or ignores hemisphere labels.",
+      "Recognises NorthernHemisphere but cannot locate the longitude/latitude intersection.",
+      "Memorises one location/pixel or treats the whole map as north-up regardless of labels."
+    ],
+    "consumerImpact": "New ID with no prior learner mastery or prerequisite edges assumed; all old claims, contexts and guides are preserved."
+  },
+  "concreteTasks": {
+    "schemaVersion": 1,
+    "status": "Original hypothetical teaching points, not actual city coordinates.",
+    "readingGrid": "assets/g6-geographic-coordinates-reading.svg",
+    "blankGrid": "assets/g6-geographic-coordinates-blank.svg",
+    "coordinateConvention": "Named latitude/longitude fields, degrees with N/S/E/W. No unlabelled universal tuple order is assumed.",
+    "projection": "Flat equirectangular teaching graticule; no equal-distance, real-city or country data claim.",
+    "readingPoints": [
+      {
+        "id": "A",
+        "latitude": 30,
+        "longitude": -60
+      },
+      {
+        "id": "B",
+        "latitude": -30,
+        "longitude": -60
+      },
+      {
+        "id": "C",
+        "latitude": 30,
+        "longitude": 60
+      },
+      {
+        "id": "D",
+        "latitude": 0,
+        "longitude": 0
+      },
+      {
+        "id": "E",
+        "latitude": -60,
+        "longitude": 120
+      },
+      {
+        "id": "F",
+        "latitude": 60,
+        "longitude": -120
+      }
+    ],
+    "plottingTargets": [
+      {
+        "id": "P",
+        "latitude": 60,
+        "longitude": 60
+      },
+      {
+        "id": "Q",
+        "latitude": -30,
+        "longitude": -120
+      },
+      {
+        "id": "R",
+        "latitude": 0,
+        "longitude": 90
+      }
+    ],
+    "nearMisses": [
+      {
+        "positiveId": "A",
+        "contrastId": "B",
+        "distinction": "Same longitude, opposite latitude hemisphere."
+      },
+      {
+        "positiveId": "A",
+        "contrastId": "C",
+        "distinction": "Same latitude, opposite longitude hemisphere."
+      },
+      {
+        "positiveId": "D",
+        "distinction": "At both zero references; do not invent N/S or E/W sign at zero."
+      }
+    ],
+    "transfer": "Use a differently centred or turned labelled reference representation and an appropriately labelled globe; identify the same intersection using references, not physical page-up or a remembered pixel."
+  },
+  "sources": [
+    {
+      "source": "NOAA National Ocean Service, What is latitude?",
+      "url": "https://oceanservice.noaa.gov/facts/latitude.html",
+      "claim": "The actual body defines latitude from the Equator, north/south degree values up to the poles and the distinction between the direction a parallel runs and the direction it measures. Advanced precision/geodesy is outside this task.",
+      "verified": true
+    },
+    {
+      "source": "NOAA National Ocean Service, What is longitude?",
+      "url": "https://oceanservice.noaa.gov/facts/longitude.html",
+      "claim": "The actual body defines east/west longitude from a stated zero meridian, meridians meeting at the poles and Greenwich/reference-meridian distinctions. The task does not equate a flat-grid spacing with ground distance or the historic Greenwich marker with exact modern GPS zero.",
+      "verified": true
+    },
+    {
+      "source": "NASA, Basics of Space Flight, Chapter 2: Terrestrial Coordinates",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+      "claim": "The actual Terrestrial Coordinates section explains the latitude/longitude references and gives the Pasadena example 34°08′44″N,118°08′41″W. The task uses an explicitly approximate whole-degree location; timekeeping, orbital and survey calculations are excluded.",
+      "verified": true
+    },
+    {
+      "source": "JOIDES Resolution/US Science Support Program, Where in the World?",
+      "url": "https://joidesresolution.org/activities/where-in-the-world/",
+      "claim": "The actual activity overview treats latitude/longitude plotting and reading as a map-coordinate activity with Equator and Prime Meridian references. This is supporting task-design context, not evidence of this new sequence’s teaching efficacy.",
+      "verified": true
+    }
+  ],
+  "protocols": {
+    "coordinate-component": {
+      "codes": [
+        "B3.7"
+      ],
+      "operation": "Use both labelled geographic references to locate and read positions, including actual public-place approximation and changed representations.",
+      "remainingConditions": [
+        "Prepare actual countries/regions with significant Canadian interrelationships and source-backed city coordinates on suitable maps. This component alone does not establish those factual relationships."
+      ]
+    }
+  },
+  "sourceBoundary": "Original teaching points do not certify country knowledge, a precise surveyed location, time zones or distance calculations. Teaching efficacy is untested."
+}

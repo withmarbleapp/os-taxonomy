@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "7dc74b54228a0a8e9d5f6dbdfbe8b23155c5b080",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "edition": "Ontario Science and Technology2022",
+  "sourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/g5-science",
+  "sourceProvenance": {
+    "officialGradePdfUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/9dc43e17-b269-4a9a-a6a8-eec790df1585/SciTech_G5_AODA.pdf",
+    "pinnedPdfSha256": "c50d8733125607c8d6864a258d87829d09a00916e0f96a80a2957eaef2375459",
+    "freshOfficialCoreCheck": "All five official API cores and the four B2 child cores independently read; identifiers and core content agree with the historical pinned2022 source. No source edition, code or catalogue wording changed."
+  },
+  "scope": "Five remaining Grade5 Human Health/Body Systems source-duty residuals; ages10–11, source end-of-grade attainment. No PE or fitness curriculum is imported.",
+  "status": "Five complete source-fit authoring proposals, not learner attainment, whole-card certification, default-branch acceptance or downstream publication.",
+  "counts": {
+    "records": 5,
+    "specific": 3,
+    "overall": 2,
+    "Full": 5,
+    "componentPairs": 20,
+    "existingTopics": 12,
+    "newClaims": 0,
+    "changedClaims": 0,
+    "newGuides": 0,
+    "changedGuides": 0,
+    "changedEdges": 0,
+    "addedPairs": 13,
+    "extendedExactBandContexts": 12,
+    "newContexts": 0
+  },
+  "historicalCheckpoint": "ontario-grade5-science-mapping-2026-11-09.json",
+  "historicalMeaning": "The older five Partial judgments remain dated evidence. This new programme supplies the missing concrete resource/task portfolio; a link count or old child Full label alone does not close a parent.",
+  "records": [
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1",
+      "code": "B1",
+      "grade": 5,
+      "kind": "overall",
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "integrated-health-factor-portfolio"
+      ],
+      "contributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Healthy Lifestyle Choices"
+        },
+        {
+          "topicId": "mt_Jd2aWEUJ9G",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Personal Coping Toolkit"
+        },
+        {
+          "topicId": "mt_MXxVMCr7_4",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Community impact of digital solutions"
+        },
+        {
+          "topicId": "mt_NbkUKcOlEX",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Food characteristics and preparation"
+        },
+        {
+          "topicId": "mt_OTrQJVRRJ6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Reading health messages"
+        },
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Balanced Diet & Food Groups"
+        }
+      ],
+      "boundaries": "Original concrete source tasks account for knowledge/application conditions. A component link does not certify the whole broader card, its full hard chain or any learner attainment.",
+      "disposition": "Full",
+      "protocolRef": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.1",
+      "code": "B1.1",
+      "grade": 5,
+      "kind": "specific",
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "health-factors-and-access"
+      ],
+      "contributions": [
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Healthy Lifestyle Choices"
+        },
+        {
+          "topicId": "mt_OTrQJVRRJ6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Reading health messages"
+        },
+        {
+          "topicId": "mt_Jd2aWEUJ9G",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Personal Coping Toolkit"
+        }
+      ],
+      "boundaries": "Original concrete source tasks account for knowledge/application conditions. A component link does not certify the whole broader card, its full hard chain or any learner attainment.",
+      "disposition": "Full",
+      "protocolRef": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.2",
+      "code": "B1.2",
+      "grade": 5,
+      "kind": "specific",
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "health-technologies-and-perspectives"
+      ],
+      "contributions": [
+        {
+          "topicId": "mt_MXxVMCr7_4",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Community impact of digital solutions"
+        }
+      ],
+      "boundaries": "Original concrete source tasks account for knowledge/application conditions. A component link does not certify the whole broader card, its full hard chain or any learner attainment.",
+      "disposition": "Full",
+      "protocolRef": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B1.3",
+      "code": "B1.3",
+      "grade": 5,
+      "kind": "specific",
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "food-literacy-body-and-connection"
+      ],
+      "contributions": [
+        {
+          "topicId": "mt_QhLAeAlHI0",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Balanced Diet & Food Groups"
+        },
+        {
+          "topicId": "mt_NbkUKcOlEX",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Food characteristics and preparation"
+        },
+        {
+          "topicId": "mt_OTrQJVRRJ6",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Reading health messages"
+        }
+      ],
+      "boundaries": "Original concrete source tasks account for knowledge/application conditions. A component link does not certify the whole broader card, its full hard chain or any learner attainment.",
+      "disposition": "Full",
+      "protocolRef": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-B2",
+      "code": "B2",
+      "grade": 5,
+      "kind": "overall",
+      "ageBand": [
+        10,
+        11
+      ],
+      "protocolIds": [
+        "integrated-body-systems-own-model"
+      ],
+      "contributions": [
+        {
+          "topicId": "mt_K8DJzqbksM",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Organ Systems Vocabulary"
+        },
+        {
+          "topicId": "mt_Ruk2-lyGPZ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "The Digestive System"
+        },
+        {
+          "topicId": "mt_BX4D8cCFtQ",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "The Circulatory System"
+        },
+        {
+          "topicId": "mt_tiPyEkm4cU",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "How Breathing Works"
+        },
+        {
+          "topicId": "mt_pJ5zsocdNx",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "The Brain Controls the Body"
+        },
+        {
+          "topicId": "mt_QK-ZZb7UUN",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Circulation & Breathing Together"
+        },
+        {
+          "topicId": "mt_4k3HGahK2k",
+          "role": "component",
+          "wholeClaimAssessmentRetained": true,
+          "topicName": "Healthy Lifestyle Choices"
+        }
+      ],
+      "boundaries": "Original concrete source tasks account for knowledge/application conditions. A component link does not certify the whole broader card, its full hard chain or any learner attainment.",
+      "disposition": "Full",
+      "protocolRef": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+    }
+  ],
+  "wholeClaimLimits": [
+    "Food-properties whole operation includes actual comparison/preparation/sensory adjustment, not a menu explanation; any safe source-specific non-tasting case does not certify that whole card.",
+    "Coping whole operations retain actual voluntary personal strategy use and real-upset gates; no distress, private history or genuine setback is manufactured for a fictional source knowledge task.",
+    "Health-message full real advert/influence reflection and money hard chain are separate from source factor explanation; no manufactured influence or commercial action.",
+    "Circulation/breathing whole card retains its personal pulse observation; the ScienceB2 source task is a knowledge model and does not infer that evidence or require PE/fitness participation.",
+    "Technical system vocabulary and detailed heart/lung inventories stay intact; one arrow repair or supplied word match is not whole mastery."
+  ],
+  "guideReview": {
+    "wholeCards": 31,
+    "hardEdges": 25,
+    "availableGuides": 15,
+    "meaning": "All complete candidate cards, inherited hard chains and available guides read; source locators reconciled. Existing payloads, confidence, source-verification flags and complete assessment requirements remain unchanged. No citation recertification or teaching efficacy is inferred."
+  },
+  "programme": "ontario-science-grade5-health-task-programme-2026-11-11.json"
+}

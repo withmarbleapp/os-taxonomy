@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "aa564ebbb882db962364f7066bbb8b02ec866bde",
+  "status": "Three-record source-fit authoring design using unchanged whole claims and actual attributed community cases; no learner performance or universal technology recommendation.",
+  "resources": {
+    "nps-mill": {
+      "url": "https://www.nps.gov/places/mission-san-jose-gristmill.htm",
+      "publisher": "US National Park Service",
+      "readScope": "Complete actual historical main body, water route and mechanism text read; updated March 15, 2024. Caption/description text read, but no image or embedded video viewed.",
+      "role": "Specific 1794 Mission San José grain-milling/food-production case; not a current community survey or proof all effects of colonial missions were beneficial."
+    },
+    "unicef-pump": {
+      "url": "https://www.unicef.org/nigeria/stories/getting-clean-water-wheelchair",
+      "publisher": "UNICEF Nigeria",
+      "readScope": "Complete actual July 6, 2018 main article read, including attributed participant account, August 2017 installation and maintenance committee; no source photo viewed.",
+      "role": "Specific Binginde Share access/time and maintenance account; no inference all villages, all wheelchair users or current water quality are identical."
+    },
+    "epa-current": {
+      "url": "https://www.epa.gov/transportation-air-pollution-and-climate-change/what-you-can-do-reduce-pollution-vehicles-and",
+      "publisher": "US Environmental Protection Agency",
+      "readScope": "Actual lawn/garden equipment section read, including manual small-lawn option, quieter/lower-polluting electric alternatives and maintenance. Updated June 23, 2026.",
+      "role": "Qualitative same-purpose machine comparison, not numeric lifecycle totals, Ontario regulations or a shopping recommendation."
+    },
+    "epa-historical": {
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009Z0Z.TXT",
+      "publisher": "US Environmental Protection Agency",
+      "readScope": "Complete two-page extracted May 1996 fact-sheet text read; no original page images viewed.",
+      "role": "Historical explicit point-of-use exhaust versus electricity-generation boundary. Do not adopt old predictions about future emission regulations, numerical comparisons or fuel-handling instructions."
+    }
+  },
+  "preparedCases": {
+    "mill": {
+      "role": "community-machine",
+      "resourceRefs": [
+        "nps-mill"
+      ],
+      "sourceSummary": "The provider describes a 1794 water-powered mill: controlled water flow turns a wheel linked to grinding stones for food production.",
+      "attributionLimits": "This selected historical machine changes work in its named community; a mechanical benefit does not establish the justice or overall impact of a colonial institution.",
+      "question": "Trace the provider-described water-to-wheel-to-stones route. Explain how grinding grain into flour serves a daily food need and how it changes the work compared with an original supplied hand-grinding alternative. Identify a benefit and dependence on water supply/maintenance; do not invent hours saved.",
+      "expectedEvidence": "Connect moving water, rotating parts and grinding purpose to preparation of food for people in this particular historical setting. Explain a plausible work change as an inference, separating that from the actual account.",
+      "nearMiss": "Says water turns directly into flour, every water mill has the same arrangement or a useful machine proves every community member benefited equally.",
+      "changedCase": "In the original changed case the water supply is low: explain which mechanism/service may be limited and what further evidence is needed before comparing alternatives."
+    },
+    "pump": {
+      "role": "community-machine",
+      "resourceRefs": [
+        "unicef-pump"
+      ],
+      "sourceSummary": "UNICEF describes a 2017 handpump installation near homes in Binginde Share and a 2018 account of easier daily water access, with a community maintenance arrangement.",
+      "attributionLimits": "Provider and named participant account, not a pupil health diagnosis, guarantee of present water safety or universal disability experience.",
+      "question": "Explain how an adult-operated handpump changes access to water used for washing/cooking in the specific community account. Compare its daily-work impact with the historical mill, naming both communities/dates and different purposes. Include why maintenance matters.",
+      "expectedEvidence": "Relate a human-operated mechanism to drawing water and a reported access benefit; separate less travel from an unproven claim that every illness disappeared. Compare food-processing and water-access needs across the two communities.",
+      "nearMiss": "Says a handpump makes contaminated water safe merely by moving it, or treats the 2018 report as proof of current universal conditions.",
+      "changedCase": "The original changed case has a broken handle or unavailable spare part: explain the access consequence and why a maintenance arrangement matters without claiming the studied pump actually failed."
+    },
+    "mower-comparison": {
+      "role": "same-purpose-environment",
+      "resourceRefs": [
+        "epa-current",
+        "epa-historical"
+      ],
+      "sourceSummary": "EPA distinguishes petrol equipment emissions from manual and electric alternatives, including a manual reel mower for small lawns and generally quieter/lower-polluting electric equipment.",
+      "attributionLimits": "Original equal-task comparison, not a measured lifecycle study. A powered mower may meet a different capacity/access need; no pupil operates blades, batteries or fuel.",
+      "question": "Original fictional brief: the same small grass area must be maintained. Compare a manual reel mower, a battery-electric mower and a petrol mower that can each complete the specified job. Explain energy input, direct exhaust/noise and resource/material/maintenance questions; rank sustainability, function/accessibility, safety, cost and appearance with reasons. State what additional evidence a full manufacture-to-disposal comparison would need.",
+      "expectedEvidence": "Compare like purposes and stated capacity; petrol combustion produces local exhaust, electric operation avoids local fuel exhaust but electricity/battery production and disposal still matter, and a manual machine still uses materials and human effort. Justify a context-bound choice rather than call any option impact-free. Distinguish resource source from electricity as carrier.",
+      "nearMiss": "Chooses by colour alone, compares machines doing different jobs as though identical or says electric/manual means no environmental effect anywhere.",
+      "changedCase": "The original brief changes to a much larger steep site or a user who cannot safely push the manual machine: reconsider function/accessibility and evidence, rather than declare one universal winner or require an unsafe trial."
+    }
+  },
+  "protocols": {
+    "D1.1": {
+      "codes": [
+        "ON-SCI-2022-G4-D1.1"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ",
+        "mt_Q2Zj3L8u9C"
+      ],
+      "caseRefs": [
+        "mill",
+        "pump"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual attributed case accounts and retain their distinct places, dates, purposes and limits. Original changed scenarios are clearly separated from provider claims.",
+        "Explain how mechanism and purpose relate to a daily human need, comparing the selected different communities where bound; assess benefit, dependence and a limitation rather than name machines only.",
+        "For the environmental comparison use the same supplied job, compare direct and upstream effects, rank competing factors with reasons and state missing evidence. No full lifecycle numerical result is invented.",
+        "For the overall integrate community/daily-life impacts with the similar-purpose environmental comparison. Answer the prepared near-miss and changed-case questions; linked specifics alone do not establish the account."
+      ],
+      "remainingConditions": []
+    },
+    "D1.2": {
+      "codes": [
+        "ON-SCI-2022-G4-D1.2"
+      ],
+      "contributorIds": [
+        "mt_cOJhDeLkPo",
+        "mt_VI5kdtf28e"
+      ],
+      "caseRefs": [
+        "mower-comparison"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual attributed case accounts and retain their distinct places, dates, purposes and limits. Original changed scenarios are clearly separated from provider claims.",
+        "Explain how mechanism and purpose relate to a daily human need, comparing the selected different communities where bound; assess benefit, dependence and a limitation rather than name machines only.",
+        "For the environmental comparison use the same supplied job, compare direct and upstream effects, rank competing factors with reasons and state missing evidence. No full lifecycle numerical result is invented.",
+        "For the overall integrate community/daily-life impacts with the similar-purpose environmental comparison. Answer the prepared near-miss and changed-case questions; linked specifics alone do not establish the account."
+      ],
+      "remainingConditions": []
+    },
+    "D1": {
+      "codes": [
+        "ON-SCI-2022-G4-D1"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ",
+        "mt_Q2Zj3L8u9C",
+        "mt_cOJhDeLkPo",
+        "mt_VI5kdtf28e"
+      ],
+      "caseRefs": [
+        "mill",
+        "pump",
+        "mower-comparison"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use the actual attributed case accounts and retain their distinct places, dates, purposes and limits. Original changed scenarios are clearly separated from provider claims.",
+        "Explain how mechanism and purpose relate to a daily human need, comparing the selected different communities where bound; assess benefit, dependence and a limitation rather than name machines only.",
+        "For the environmental comparison use the same supplied job, compare direct and upstream effects, rank competing factors with reasons and state missing evidence. No full lifecycle numerical result is invented.",
+        "For the overall integrate community/daily-life impacts with the similar-purpose environmental comparison. Answer the prepared near-miss and changed-case questions; linked specifics alone do not establish the account."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "readScope": "All four complete direct cards read. Q2 mechanism and VI5 natural-resource saved guides read in full. Q2Zj and cOJ have no saved guides. Q2 hard closure remains as recorded in the mechanism dossier; cOJ to Q2Zj read.",
+    "limits": [
+      "Existing mechanism claim retains actual force-effect/part/motion knowledge and safe real observation requirements; an impact explanation does not certify whole mechanism mastery.",
+      "Whole Things people design retains product, service and designed-environment examples; these two machines are contribution examples, not a replacement for that inventory.",
+      "Whole natural resources retains replenishment classification, fossil/fissile versus renewable distinctions and obtaining/combining resource information. The mower task contributes resource/environment reasoning, not all whole-topic evidence.",
+      "Design factors are actually compared/ranked for a supplied brief, with changed needs and trade-offs. No old claim, guide, age or edge is narrowed or lowered."
+    ]
+  },
+  "safety": "Information and original fictional brief only. No real pump water consumption/quality testing, mill mechanism access, mower operation, blades, fuel handling or battery modification. No personal health or disability disclosure."
+}

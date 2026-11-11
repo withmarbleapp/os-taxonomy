@@ -11,15 +11,10 @@
     "Historical teaching guidance for merged or refocused topics. Original topic content, research and authoring provenance are preserved unchanged.",
     "relatedTopicIds identify the current learning associated with each archive entry. These historical records are excluded from active teaching-research coverage.",
     "The refocused capacity topic now teaches capacity estimation; its previous assessment tested counting unit cubes. Current guidance for that revised topic awaits a fresh authoring pass.",
-    "The 2026-11-10 conversion consolidation preserves three original records unchanged from accepted commit 691911d03f5531cc798ee391c86b778a735d75ab. Their relatedTopicIds are dispositions, not learner-mastery equivalences."
+    "The 2026-11-10 conversion consolidation preserves three original records unchanged from accepted commit 691911d03f5531cc798ee391c86b778a735d75ab. Their relatedTopicIds are dispositions, not learner-mastery equivalences.",
+    "The elapsed-duration assessment rewrite in b5aa9b9 replaced its error-pattern array. Its former index-1 active reference repair is no longer applicable and was removed; original archived research and Git history remain retained."
   ],
   "activeReferenceRepairs": [
-    {
-      "researchTopicId": "mt_4emC463IyW",
-      "path": "assess.errorPatterns[1].reteachPrerequisiteId",
-      "from": "mt_3XJkeIn6J6",
-      "to": "mt_UNzojLkNdm"
-    },
     {
       "researchTopicId": "mt_5HV4mbgSGH",
       "path": ".assess.errorPatterns[1].reteachPrerequisiteId",

@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "0ae1956ff098a155b0857ef03de11e9e49491f6d",
+  "dependency": "Unmerged PR111; reconcile against accepted main before handoff.",
+  "source": "ncert-fs-2025",
+  "sourceDocumentSha256": "484d5c18d9beeb1d79c4bee8589f6cb2b2ef42bdeb255b8f51e1eae8ac953eb2",
+  "scope": {
+    "selectedGrades": [
+      1,
+      2
+    ],
+    "officialStageWindow": [
+      3,
+      8
+    ],
+    "selectedEarlyPrimaryAgeBand": [
+      6,
+      8
+    ],
+    "ageBasis": {
+      "source": "ncert-ncfse-2023-ed2024",
+      "pdfPage": 211,
+      "meaning": "Explicit official early-primary Grades1–2 window within the wider Foundational stage."
+    },
+    "ageInterpretation": "One sourced early-primary interval, without invented separate per-grade age cutoffs. Each suggestive position retains its printed source grade; this is not a deadline at every age or a preschool assignment."
+  },
+  "coverageMeaning": "Full means the existing claims and explicit task / resource design account for this suggestive position. It does not turn it into a universal mandate, prove a learner’s performance or equate assisted success with independent mastery.",
+  "summary": {
+    "records": 67,
+    "Grade1": 34,
+    "Grade2": 33,
+    "Full": 67,
+    "newTopics": 0,
+    "distinctTopics": 56,
+    "associations": 116
+  },
+  "records": [
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.1-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.1-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.1",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        25
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_xppl18avyY",
+          "topicName": "Sorting into categories",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_lMz9nAs7VO",
+          "topicName": "Early Maths Vocabulary",
+          "role": "component"
+        }
+      ],
+      "rationale": "Classify by a chosen observable attribute and state the rule; do not infer group-count questions are themselves the source requirement.",
+      "assessmentProtocols": [
+        "section-1"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.10-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_TcG90kS8nu",
+          "topicName": "Time comparison words",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Use earlier/later in a stated event sequence; preserve the unknown-start / duration distinction.",
+      "assessmentProtocols": [
+        "section-10"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.10-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_TcG90kS8nu",
+          "topicName": "Time comparison words",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Qualitative duration contrast in everyday activity; do not require numeric stopwatch measurement.",
+      "assessmentProtocols": [
+        "section-10"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.10-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_-vvVxpOHG2",
+          "topicName": "Ordering Events in Time",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Narrate a day in temporal order with explicit sequence words.",
+      "assessmentProtocols": [
+        "section-10"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.10-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_NYsz6QgaaE",
+          "topicName": "Seasonal changes (age 8+)",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The complete local-weather data and calendar protocol accounts for seasonal differences / sequence without imposing four temperate seasons or adding a monsoon-mechanics claim.",
+      "assessmentProtocols": [
+        "local-seasons"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.10-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fk33IEGP-T",
+          "topicName": "Sun, Moon, and stars",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PiWZA8Z0ZJ",
+          "topicName": "Sun, Moon & Stars",
+          "role": "component"
+        }
+      ],
+      "rationale": "Observational sky-pattern task includes local rising/setting horizon locations for Sun and Moon, with Moon visible by day or night; no advanced rotation explanation is substituted.",
+      "assessmentProtocols": [
+        "sky-patterns"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.11-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.11-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.11",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_FIkqA0qhnj",
+          "topicName": "Coins & Notes",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Make an amount from supplied rupee play notes/coins; assess count/value, not a British denomination inventory.",
+      "assessmentProtocols": [
+        "section-11"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.12-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.12-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.12",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_WkKkb7W9Qd",
+          "topicName": "Making Sense of Problems",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        }
+      ],
+      "rationale": "Recognise a quantitative everyday situation and represent its question.",
+      "assessmentProtocols": [
+        "section-12"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.12-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.12-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.12",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_m1W6nTQJ2b",
+          "topicName": "Addition and subtraction within 20",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_20WfHhnL39",
+          "topicName": "Hands-On Problem Solving",
+          "role": "component"
+        }
+      ],
+      "rationale": "Solve a small numerical problem through distinct concrete/mental strategies and explain the choices.",
+      "assessmentProtocols": [
+        "section-12"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.2-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.2-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.2",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ZjIFGc6zPW",
+          "topicName": "Finding the repeating unit",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Assisted missing-term pattern task. Preserve the source help condition rather than converting this source position into an independent-performance mandate.",
+      "assessmentProtocols": [
+        "section-2"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script.",
+        "help": "The source permits help. Assisted success does not by itself establish independent mastery of the linked topic."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.3-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.3-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_t9BICauBSI",
+          "topicName": "Subitising to 5",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Recognise two-object group quantities without treating the pair as one object.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.3-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.3-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_0ZDouU664X",
+          "topicName": "Counting big collections in groups",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_THl9GLxwoL",
+          "topicName": "The two digits of a two-digit number",
+          "role": "component"
+        }
+      ],
+      "rationale": "Actually group and count a collection below one hundred in tens and remaining ones, not just recite.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.3-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.3-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        27
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_M5PPDJStGm",
+          "topicName": "Rote counting to 100",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Both directions from varied starting points within the source range.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.4-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.4-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.4",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        28
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_skYly2Qm01",
+          "topicName": "Measuring length",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_bnwHo5wfCD",
+          "topicName": "Comparing mass and capacity indirectly",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_xppl18avyY",
+          "topicName": "Sorting into categories",
+          "role": "component"
+        }
+      ],
+      "rationale": "Reorder one set by different stated physical attributes. Colour grouping/order requires an explicit rule; colour has no intrinsic numerical order.",
+      "assessmentProtocols": [
+        "section-4"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.5-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.5-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.5",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        28
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fR0UtsSREU",
+          "topicName": "Reading and writing numbers to 20",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Match an empty collection to written zero and explain absence; numeral formation alone is insufficient.",
+      "assessmentProtocols": [
+        "section-5"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.5-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.5-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.5",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        28
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fR0UtsSREU",
+          "topicName": "Reading and writing numbers to 20",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_9IzhGUZ30z",
+          "topicName": "Number Words to Twenty",
+          "role": "component"
+        }
+      ],
+      "rationale": "Read/write the source numeral and word ranges with an explicit task-language resource; do not infer mastery of another language or script.",
+      "assessmentProtocols": [
+        "section-5"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.5-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.5-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.5",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt__h7hvT4tEb",
+          "topicName": "Comparing groups: more or fewer",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Compare actual collections with count/matching and correct comparative terms, including equal cases.",
+      "assessmentProtocols": [
+        "section-5"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.6-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.6-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_PgsHGYJMH-",
+          "topicName": "Representing Addition and Subtraction",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_m1W6nTQJ2b",
+          "topicName": "Addition and subtraction within 20",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use concrete everyday addition/subtraction at the stated source range, connect to a number sentence and explain the fact/strategy.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.6-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.6-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_PgsHGYJMH-",
+          "topicName": "Representing Addition and Subtraction",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_m1W6nTQJ2b",
+          "topicName": "Addition and subtraction within 20",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use concrete everyday addition/subtraction at the stated source range, connect to a number sentence and explain the fact/strategy.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.6-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.6-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ehGS_uVSJv",
+          "topicName": "Inverse: addition undoes subtraction",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Use the inverse relation with a represented fact family, not two unrelated correct answers.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.6-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.6-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_TMoHjMhRS2",
+          "topicName": "Precise Maths Communication",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_PgsHGYJMH-",
+          "topicName": "Representing Addition and Subtraction",
+          "role": "component"
+        }
+      ],
+      "rationale": "Recognise plus/minus and choose the symbol matching the represented operation.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.7-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.7-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.7",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_LpSuPgL31x",
+          "topicName": "Division as equal sharing",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Make equal-size groups from a supplied collection and count the groups; cover leftover handling without inventing a division algorithm deadline.",
+      "assessmentProtocols": [
+        "section-7"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.7-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.7-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.7",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_gtTl3R5buH",
+          "topicName": "What Multiplication Means",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_LpSuPgL31x",
+          "topicName": "Division as equal sharing",
+          "role": "component"
+        }
+      ],
+      "rationale": "Represent the equal groups pictorially and distinguish group count from objects per group and total.",
+      "assessmentProtocols": [
+        "section-7"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.7-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.7-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.7",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_gtTl3R5buH",
+          "topicName": "What Multiplication Means",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_lMz9nAs7VO",
+          "topicName": "Early Maths Vocabulary",
+          "role": "component"
+        }
+      ],
+      "rationale": "State the group-count and group-size relationship precisely using a small picture.",
+      "assessmentProtocols": [
+        "section-7"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.8-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.8-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_qeZYF6HZ4o",
+          "topicName": "Positional Language",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Use and interpret relative-position terms with actual objects and a changed viewpoint where appropriate.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.8-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.8-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Qcp2d_kuta",
+          "topicName": "3-D shapes",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Collect/select varied familiar safe objects and describe their shapes and sizes; collection is a resource/task condition, not an independent mastery topic.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.8-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.8-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fEuoBYw6bU",
+          "topicName": "Sorting 2-D and 3-D shapes",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Sort and justify classes using actual observable attributes, not labels only.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.8-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.8-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Describe physical features in the learner’s own terms; demonstrate rolling/sliding as properties without importing a force-mechanics explanation.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.8-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.8-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_uhuxX8sg9f",
+          "topicName": "Comparing Lengths & Heights",
+          "role": "component"
+        }
+      ],
+      "rationale": "The physical-attribute task distinguishes linear extent, covered area and occupied solid space, including counterexamples where different attributes order objects differently. Informal comparison is not replaced by advanced volume formulae.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.9-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.9-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_qeZYF6HZ4o",
+          "topicName": "Positional Language",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_uhuxX8sg9f",
+          "topicName": "Comparing Lengths & Heights",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use distance and dimension words with physical near/far and thin/thick contrasts; do not turn every adjective into a claim.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.9-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.9-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_KaF0SQvaiu",
+          "topicName": "Measuring length and height (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_jHv4BgRK8B",
+          "topicName": "Measuring with different units",
+          "role": "component"
+        }
+      ],
+      "rationale": "Preserve approximate non-uniform game-unit use and its limits. Do not weaken the separate uniform-unit measurement claim.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script.",
+        "unitInterpretation": "Preserve the source informal / non-uniform game or body-unit setting. Record whose unit is used and its approximate nature; do not weaken the separate equal-unit accuracy claim."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.9-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.9-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_OzRZ89GrQW",
+          "topicName": "Estimating Lengths",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_KaF0SQvaiu",
+          "topicName": "Measuring length and height (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_jHv4BgRK8B",
+          "topicName": "Measuring with different units",
+          "role": "component"
+        }
+      ],
+      "rationale": "Estimate then check with the source informal body/game units, stating why different-sized units need care; not an accurate equal-unit claim by fiat.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script.",
+        "unitInterpretation": "Preserve the source informal / non-uniform game or body-unit setting. Record whose unit is used and its approximate nature; do not weaken the separate equal-unit accuracy claim."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.9-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.9-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_-P1kdZhHbL",
+          "topicName": "Measuring mass and weight (age 4+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_bnwHo5wfCD",
+          "topicName": "Comparing mass and capacity indirectly",
+          "role": "component"
+        }
+      ],
+      "rationale": "Compare and order physical mass using direct comparison or balance/third-object reasoning.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.9-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G1-C8.9-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 1,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_NSC3LT_-ch",
+          "topicName": "Estimating capacity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_4lp_b5Pzik",
+          "topicName": "Capacity and volume",
+          "role": "component"
+        }
+      ],
+      "rationale": "Estimate and verify container volume/capacity with identical informal cups/spoons; distinguish container capacity from its current contents.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 1 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.1-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.1-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.1",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        25,
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_JEtvvsAQjQ",
+          "topicName": "Sorting data by two attributes",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_xppl18avyY",
+          "topicName": "Sorting into categories",
+          "role": "component"
+        }
+      ],
+      "rationale": "Create nested subgroups with a stated successive criterion. The source gives multi-stage examples; test repeated refinement rather than infer every hierarchy is one two-way table.",
+      "assessmentProtocols": [
+        "section-1"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.10-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.10-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_NYsz6QgaaE",
+          "topicName": "Seasonal changes (age 8+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_tVvZVWO5d6",
+          "topicName": "Using a calendar",
+          "role": "component"
+        }
+      ],
+      "rationale": "The complete local-weather data and calendar protocol accounts for seasonal differences / sequence without imposing four temperate seasons or adding a monsoon-mechanics claim.",
+      "assessmentProtocols": [
+        "local-seasons"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.10-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.10-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt__N55B7u7HD",
+          "topicName": "Measuring and recording durations",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_2XDGT5tei1",
+          "topicName": "Number of minutes in an hour",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_bj1YCgNWUx",
+          "topicName": "Days, Weeks, Months & Years",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_tVvZVWO5d6",
+          "topicName": "Using a calendar",
+          "role": "component"
+        }
+      ],
+      "rationale": "Actual duration measurement / calendar-day intervals and the explicitly named hour/day and week cycle are covered. The differently scoped year / leap-year fact claim is not substituted.",
+      "assessmentProtocols": [
+        "section-10"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.10-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.10-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.10",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_lMz9nAs7VO",
+          "topicName": "Early Maths Vocabulary",
+          "role": "whole"
+        }
+      ],
+      "rationale": "A simple north-reference diagram tests naming / using the four direction words as positional vocabulary. Grid coordinates and independent compass navigation are not imported from the larger grid-reference claim.",
+      "assessmentProtocols": [
+        "section-10"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.11-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.11-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.11",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_FIkqA0qhnj",
+          "topicName": "Coins & Notes",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Make a larger supplied rupee amount from local play notes/coins, without a new currency-specific calculation claim.",
+      "assessmentProtocols": [
+        "section-11"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.12-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.12-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.12",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_nyK25mNOeR",
+          "topicName": "Showing Your Working",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The learner explains two concrete / drawn methods and compares a peer explanation, using the existing showing-and-telling operation. The later strategy / algorithm bundle is not required.",
+      "assessmentProtocols": [
+        "section-12"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.12-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.12-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.12",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_8dstvf-KKb",
+          "topicName": "Checking Your Own Work",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Recheck a numerical solution, identify/correct a seeded error and explain the check; do not substitute a growth-mindset label.",
+      "assessmentProtocols": [
+        "section-12"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.12-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.12-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.12",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        34
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_WkKkb7W9Qd",
+          "topicName": "Making Sense of Problems",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_20WfHhnL39",
+          "topicName": "Hands-On Problem Solving",
+          "role": "component"
+        }
+      ],
+      "rationale": "Participate in a game whose actual decisions require quantification; the game is an assessment context rather than a new generic engagement claim.",
+      "assessmentProtocols": [
+        "section-12"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.2-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.2-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.2",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ZjIFGc6zPW",
+          "topicName": "Finding the repeating unit",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_W3VOAuFwVw",
+          "topicName": "Describing growing number patterns",
+          "role": "component"
+        }
+      ],
+      "rationale": "State and transfer a structure across number/symbol/dot or colour representations, including a missing term and a newly generated case.",
+      "assessmentProtocols": [
+        "section-2"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.3-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_nvdpxAJTBG",
+          "topicName": "Counting in 2s",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_W3VOAuFwVw",
+          "topicName": "Describing growing number patterns",
+          "role": "component"
+        }
+      ],
+      "rationale": "Skip counts with line/block representations, including a three-step rule; do not add a separate numerical-step topic.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.3-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        26
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_x8TshvbbQT",
+          "topicName": "Reading and writing numbers to 100",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_THl9GLxwoL",
+          "topicName": "The two digits of a two-digit number",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use the source’s printed decimal numerals and tens/ones. The table supplies no target regional script, so do not invent one or equate this two-digit requirement with lakh/crore grouping.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script.",
+        "numeralRepresentation": "The dossier uses the document’s printed decimal digit forms. The position specifies no regional script inventory; no additional script mastery or lakh/crore requirement is inferred."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.3-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.3-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.3",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        27
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_0ZDouU664X",
+          "topicName": "Counting big collections in groups",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_W3VOAuFwVw",
+          "topicName": "Describing growing number patterns",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use physical equal groups and additive sequence rules for larger group sizes within the same bounded collection; no count-by-twenty/thirty clone.",
+      "assessmentProtocols": [
+        "section-3"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.4-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.4-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.4",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        28
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_U0waNfD8PB",
+          "topicName": "Comparing and ordering numbers",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Order both ascending and descending, explaining the highest relevant digit place; an example absent from the old evidence list can be accounted for in the task.",
+      "assessmentProtocols": [
+        "section-4"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.5-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.5-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.5",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        28
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_x8TshvbbQT",
+          "topicName": "Reading and writing numbers to 100",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_THl9GLxwoL",
+          "topicName": "The two digits of a two-digit number",
+          "role": "component"
+        }
+      ],
+      "rationale": "Read numerals by tens/ones meaning rather than digit-by-digit recitation.",
+      "assessmentProtocols": [
+        "section-5"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.5-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.5-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.5",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_U0waNfD8PB",
+          "topicName": "Comparing and ordering numbers",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_THl9GLxwoL",
+          "topicName": "The two digits of a two-digit number",
+          "role": "component"
+        }
+      ],
+      "rationale": "Construct and compare greatest/smallest two-digit cases with and without digit reuse, explaining the tens choice rather than brute force alone.",
+      "assessmentProtocols": [
+        "section-5"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_cChv2j_-Da",
+          "topicName": "Fluent adding and subtracting within 100",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Explain partitioning/compensation choices using place value, with an equivalent transformed addition/subtraction.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        29
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_cChv2j_-Da",
+          "topicName": "Fluent adding and subtracting within 100",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        }
+      ],
+      "rationale": "Connect a within-range place-value computation to an everyday model, then interpret its result.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_cChv2j_-Da",
+          "topicName": "Fluent adding and subtracting within 100",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        }
+      ],
+      "rationale": "Connect a within-range place-value computation to an everyday model, then interpret its result.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_ehGS_uVSJv",
+          "topicName": "Inverse: addition undoes subtraction",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Use inverse facts to solve/check, not just recite the word inverse.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_WkKkb7W9Qd",
+          "topicName": "Making Sense of Problems",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        }
+      ],
+      "rationale": "Select addition or subtraction from the actual problem structure and justify it.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.6-LO06",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.6-LO06",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.6",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "topicName": "Using objects to model real problems",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_cChv2j_-Da",
+          "topicName": "Fluent adding and subtracting within 100",
+          "role": "component"
+        }
+      ],
+      "rationale": "Comprehend a simple contextual add/sub problem, represent it, calculate and interpret the answer.",
+      "assessmentProtocols": [
+        "section-6"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.7-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.7-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.7",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        30
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_PZ909yPrEC",
+          "topicName": "Multiplication as repeated addition",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_gtTl3R5buH",
+          "topicName": "What Multiplication Means",
+          "role": "component"
+        }
+      ],
+      "rationale": "Connect repeated addition, equal groups and skip-count representations concretely, pictorially and symbolically through the source range.",
+      "assessmentProtocols": [
+        "section-7"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.7-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.7-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.7",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_LpSuPgL31x",
+          "topicName": "Division as equal sharing",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Contrast equal sharing with finding the number of equal groups using the same collection.",
+      "assessmentProtocols": [
+        "section-7"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.8-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.8-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Qcp2d_kuta",
+          "topicName": "3-D shapes",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Name actual familiar solids and describe their observable attributes in varied orientations.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.8-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.8-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        31
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_KJeEeTutJI",
+          "topicName": "2-D shapes",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_yGv8doDAmp",
+          "topicName": "3-D shapes (age 5+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Name flat shapes and justify using sides/corners or curved boundaries, not one canonical picture.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.8-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.8-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_fEuoBYw6bU",
+          "topicName": "Sorting 2-D and 3-D shapes",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_vJUa62bxeR",
+          "topicName": "2-D shapes (age 7+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "The existing sorting assessment explicitly contrasts straight and curved sides; shape drawing supplies straight segments in different orientations and curved boundaries. No advanced ray / angle bundle is imported.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.8-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.8-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_B1lPmwJz0h",
+          "topicName": "Congruent shapes and objects by matching",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_vJUa62bxeR",
+          "topicName": "2-D shapes (age 7+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Trace a familiar solid’s face to create a flat outline and compare it with that actual face; do not require advanced cross-section reasoning.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.8-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.8-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.8",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Oru08pKlxd",
+          "topicName": "How Shadows Form",
+          "role": "whole"
+        }
+      ],
+      "rationale": "Identify a hidden familiar opaque object from its shadow and check by changing its orientation; shadow shape/size variation is explicit in the whole claim.",
+      "assessmentProtocols": [
+        "section-8"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.9-LO01",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.9-LO01",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        32
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_cqSf213hSa",
+          "topicName": "Measuring length (age 6+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_KaF0SQvaiu",
+          "topicName": "Measuring length and height (age 5+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Measure along paths with identical informal units, not the straight-line endpoint gap; repeat/mark units consistently.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.9-LO02",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.9-LO02",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        32,
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_OzRZ89GrQW",
+          "topicName": "Estimating Lengths",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_NSC3LT_-ch",
+          "topicName": "Estimating capacity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_KaF0SQvaiu",
+          "topicName": "Measuring length and height (age 5+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_4lp_b5Pzik",
+          "topicName": "Capacity and volume",
+          "role": "component"
+        }
+      ],
+      "rationale": "Estimate before verifying length and container measures with the same-size informal reference units.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.9-LO03",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.9-LO03",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_bnwHo5wfCD",
+          "topicName": "Comparing mass and capacity indirectly",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_-P1kdZhHbL",
+          "topicName": "Measuring mass and weight (age 4+)",
+          "role": "component"
+        }
+      ],
+      "rationale": "Use a balance to resolve a misleading size/heft impression and explain the need for a fair mass comparison.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.9-LO04",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.9-LO04",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_-P1kdZhHbL",
+          "topicName": "Measuring mass and weight (age 4+)",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_bnwHo5wfCD",
+          "topicName": "Comparing mass and capacity indirectly",
+          "role": "component"
+        }
+      ],
+      "rationale": "Actually compare given masses on a simple balance; vocabulary alone is insufficient.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    },
+    {
+      "key": "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.9-LO05",
+      "generatedSourceCode": "IN-NCERT-FS-2025-MATH-G2-C8.9-LO05",
+      "officialOutcomeCode": null,
+      "officialParentCode": "C-8.9",
+      "sourceGrade": 2,
+      "sourcePdfPages": [
+        33
+      ],
+      "sourceStatus": "suggestive-contextualisable-source-position",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_NSC3LT_-ch",
+          "topicName": "Estimating capacity",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_bnwHo5wfCD",
+          "topicName": "Comparing mass and capacity indirectly",
+          "role": "component"
+        }
+      ],
+      "rationale": "Predict a container-capacity order and check by filling/pouring through the same reference. This is capacity comparison, not automatically the new liquid-conservation claim.",
+      "assessmentProtocols": [
+        "section-9"
+      ],
+      "conditions": {
+        "attainmentInterpretation": "Suggested Grade 2 position; the context uses the sourced early-primary Grades1–2 window, not an identical performance deadline at each age.",
+        "assessmentLanguage": "Use an explicitly documented task language / representation. This association does not infer mastery in another language or numeral script."
+      },
+      "remainingConditions": [],
+      "residualKind": "none"
+    }
+  ],
+  "reviewedAlternatives": [
+    {
+      "topicIds": [
+        "mt_go5i87u2b9",
+        "mt_fI-8iqf_Id"
+      ],
+      "decision": "Not linked for the local seasonal positions: their existing temperate four-season requirements are preserved. Generic weather-data and local-calendar claims support the actual source task. Their overlap remains a separate claim review."
+    },
+    {
+      "topicIds": [
+        "mt_ejht12jhm2"
+      ],
+      "decision": "Not linked just to obtain four direction words: grid-cell creation / interpretation is not the source demand."
+    },
+    {
+      "topicIds": [
+        "mt_EXlmTURK_o"
+      ],
+      "decision": "Not substituted for hour/day/week facts or measuring a duration; its canonical scope is seconds/minute and month/year facts."
+    },
+    {
+      "topicIds": [
+        "mt_mQcWGh02no"
+      ],
+      "decision": "Later strategic algorithm / fraction / decimal content is not needed just to explain two simple methods."
+    }
+  ],
+  "dependencyCorrections": [
+    {
+      "topicId": "mt_fk33IEGP-T",
+      "prerequisiteId": "mt_EHuU1ZeUFA",
+      "from": "hard",
+      "to": "soft"
+    },
+    {
+      "topicId": "mt_fk33IEGP-T",
+      "prerequisiteId": "mt_K0mZxY2AM8",
+      "from": "hard",
+      "to": "soft"
+    },
+    {
+      "topicId": "mt_jHv4BgRK8B",
+      "prerequisiteId": "mt_e4x3l2JeLI",
+      "from": "hard",
+      "to": "soft"
+    }
+  ]
+}

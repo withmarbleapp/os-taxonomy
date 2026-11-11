@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "parentProposalCommit": "f651155a97859ecd97bb7c35d15141c23dc5d1b9",
+  "status": "Reviewed source-fit authoring design; no learner attainment or staging publication.",
+  "source": {
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+    "catalogue": "the-ontario-curriculum-french-as-a-second-langua",
+    "edition": 2013,
+    "programme": "Core French",
+    "grade": 4,
+    "ageBand": [
+      9,
+      10
+    ],
+    "treatment": "Codes-only; original expectation wording remains private."
+  },
+  "scope": {
+    "records": 5,
+    "componentPairs": 12,
+    "reusedTopics": 5,
+    "newTopics": 0,
+    "newContexts": 4,
+    "extendedContexts": 1
+  },
+  "records": [
+    {
+      "code": "C1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C1",
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39",
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "protocolIds": [
+        "meaning-and-strategies"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C1.1",
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39"
+      ],
+      "protocolIds": [
+        "meaning-and-strategies"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C1.2",
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_OlhMP7ShFT"
+      ],
+      "protocolIds": [
+        "meaning-and-strategies"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C1.3",
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "protocolIds": [
+        "fluent-familiar-reading"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.4",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C1.4",
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_6-MYToNZ39"
+      ],
+      "protocolIds": [
+        "new-word-meaning"
+      ],
+      "remainingConditions": []
+    }
+  ],
+  "protocols": {
+    "meaning-and-strategies": {
+      "codes": [
+        "C1",
+        "C1.1",
+        "C1.2"
+      ],
+      "performanceConditions": {
+        "phases": [
+          "before",
+          "during",
+          "after"
+        ],
+        "channel": "actual-French-print",
+        "teacherSupport": "as-needed-without-replacing-reading",
+        "variety": [
+          "narrative",
+          "information",
+          "graphic-instructions"
+        ]
+      },
+      "actions": [
+        "Before reading, inspect the title/cover or visible heading, identify familiar French words and make a justified prediction. Name the chosen strategy and its purpose. During reading, use a word/context/visual clue and check an actual interpretation. After reading, compare the prediction with the selected words and explain what changed. Use more than one strategy across the packet; naming strategies alone is insufficient.",
+        "Read the original graded story, the adapted library information and the illustrated two-step card from the preceding text-form packet. Read actual familiar French names, words and phrases with visuals. Retell the story or reconstruct its events and explain the information item’s main message from its French words. Teacher vocabulary/prompt support is permitted; adult translation or reading every item aloud cannot substitute for the learner’s reading.",
+        "For the whole picture/text claim, predict or confirm an event from a picture, explain its connection to actual words and identify one additional detail only the illustration supplies. Prepare a simple original illustration showing a red ball inside the opened box: the story says that the ball is in the box, without naming its colour or saying whether the lid is open. Distinguish the extra visual details from the words; neither channel automatically changes the other.",
+        "For the whole visualising claim, first read the additional unillustrated scene, sketch/label the mental picture using its actual French details and explain a plausible mood inference. Then compare it with a separately prepared original illustration showing Lina smiling while searching. Explain how this new evidence changes or qualifies the earlier inference; a different picture does not change the printed words. Do not require a particular emotion or a claim of direct access to thoughts.",
+        "Transfer to a changed short French story/information card with different familiar words and images. Show how the chosen strategies support its actual meaning, rather than repeat a memorised translation or guess from the picture alone."
+      ],
+      "positive": "Determines supported meaning in several French forms using a few identified before/during/after strategies and actual French print; the full visualising and picture/text operations remain observable.",
+      "nearMiss": [
+        "Accurately describes an illustration but cannot connect its message with any French print.",
+        "Repeats an adult translation or a memorised strategy list."
+      ]
+    },
+    "fluent-familiar-reading": {
+      "codes": [
+        "C1.3"
+      ],
+      "performanceConditions": {
+        "language": "French",
+        "sightBankSize": 26,
+        "wholeConnectedTextAccuracyMinimum": 0.9,
+        "reread": true,
+        "understandingRequired": true,
+        "allEnglishPhonemesRequired": false,
+        "alphabetNamesNotInferred": true
+      },
+      "actions": [
+        "Preteach needed French word forms, meanings and the particular grapheme/sound correspondences in the chosen book. Match the original short book to the learner’s taught French correspondences and genuinely familiar words; simplify or choose another appropriate text if this condition fails. The 26-word bank is a whole existing-topic check, not a new Ontario minimum or a new difficulty level.",
+        "Check the 26 common/exception words automatically in connected French sentences, varying typeface and order. Include the separately taught words monsieur and femme, recognising their ordinary spoken forms and pointing to the unusual taught spelling/sound correspondence. Letters, accents and actual French word forms must be distinguished; neither English sight-word scores nor English letter names demonstrate this result.",
+        "Read the whole matched book aloud with at least 90% word accuracy and an appropriate rate/ease for understanding. Ask for the overall sense and a text-supported event explanation. Reread to demonstrate more fluent pace/expression; use punctuation/meaning for pauses and self-correct an actual miscue if one occurs, without planting errors or prescribing a universal question-rise rule.",
+        "For the complete expressive-reading claim, also read a fresh appropriate French passage with meaning-led phrasing. A Grade4 Core beginner’s appropriately selected French text is not a demand for native-language Grade4 complexity. A fast recited word list, adult echo, perfect accent alone or fluent sound without meaning fails.",
+        "Retain the whole print-direction/page-sequence and sight-bank requirements as separate checks. The two corrected soft gates retain useful taught decoding and letter knowledge without requiring all 40+ English phonemes or every alphabet-name operation. No learner state is transferred between languages."
+      ],
+      "positive": "Reads actual familiar French connected print accurately, with meaningful phrasing, sufficient ease and understanding; rereading improves fluency and the complete sight-word bank is independently demonstrated.",
+      "nearMiss": [
+        "Fast French-like syllables with no understanding.",
+        "Twenty-six isolated flashcard responses without connected-text recognition.",
+        "Claims all English phonemes were assessed by a limited French book."
+      ]
+    },
+    "new-word-meaning": {
+      "codes": [
+        "C1.4"
+      ],
+      "performanceConditions": {
+        "phases": [
+          "before",
+          "during",
+          "after"
+        ],
+        "unknownWords": [
+          "minuscule",
+          "récipient"
+        ],
+        "confirmationRequired": true
+      },
+      "actions": [
+        "Before reading a changed illustrated information card, preview familiar words and use a teacher-checked visual dictionary for a chosen unfamiliar word. During reading, ask and answer a real word-meaning question and form a hypothesis from actual surrounding French words/pictures. After reading, confirm or revise it against the dictionary/teacher explanation and explain a meaningful link to a known word.",
+        "Use the original sentence «La balle est minuscule : elle est très petite.» alongside an actual small-ball drawing, linking minuscule to the already known petit/petite. A second original card says «La boîte est un récipient : on met la balle dedans.»; use the box/container relation and confirm the general meaning rather than conclude that récipient only means box. Prepare/check the drawings and dictionary entries before use.",
+        "Create a short personally useful word note with meaning and revisit the words in a changed French sentence after reading. These are a few actual acquisition strategies across the phases; the source’s example verb-tense suffix inventory and every possible cognate are not added as compulsory requirements.",
+        "Transfer to another appropriately supported unfamiliar French word. Showing how a clue or word relationship helps and confirming meaning matters more than listing dictionary/memory as labels."
+      ],
+      "positive": "Uses a few real before/during/after strategies to determine or confirm unfamiliar French word meaning, asking/answering and linking known vocabulary as the unchanged topic requires.",
+      "nearMiss": [
+        "Assumes any similar-looking English word is a correct cognate.",
+        "Guesses from an unrelated picture and never confirms the meaning."
+      ]
+    }
+  },
+  "resources": {
+    "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+    "originalStory": {
+      "title": "La balle de Lina",
+      "pages": [
+        "Lina est dans le jardin avec son chat.",
+        "Elle a une balle. Le chat est sur le mur.",
+        "Lina dit : «Tu veux la balle ?»",
+        "La balle est dans une boîte. Mais où est la boîte ?",
+        "Nous regardons sous la table. Il y a un petit sac.",
+        "Vous voyez les fleurs ? Les sacs sont près des fleurs.",
+        "Sur la table, il y a du papier et de la colle.",
+        "Lina va au mur avec le chat. Elle voit la boîte.",
+        "Dans la boîte, il y a la balle et deux cartes.",
+        "Une carte dit : «Pour vous !» Lina donne la balle au chat."
+      ]
+    },
+    "additionalConnectedSentences": [
+      "Le monsieur a une carte. La femme est avec le chat.",
+      "Une femme est sous un arbre. Il y a des fleurs dans le jardin."
+    ],
+    "unillustratedScene": "Lina cherche la balle. Elle baisse la tête. Elle ne parle pas.",
+    "sightWordBank": [
+      "le",
+      "la",
+      "les",
+      "un",
+      "une",
+      "des",
+      "tu",
+      "il",
+      "elle",
+      "nous",
+      "vous",
+      "est",
+      "sont",
+      "a",
+      "et",
+      "avec",
+      "dans",
+      "sur",
+      "sous",
+      "pour",
+      "au",
+      "du",
+      "de",
+      "mais",
+      "monsieur",
+      "femme"
+    ],
+    "preparation": "All text here is original teaching material. Prepare the described original illustrations and teacher-checked French picture-dictionary entries, and familiarise necessary vocabulary/correspondences before assessment. No drawing or dictionary file is claimed already delivered. The complete protocol is a source-fit design, not a classroom trial."
+  },
+  "wholeClaimBoundaries": [
+    "Five shared claims and all existing guides retain their exact authored meaning. Every actual selected operation is assessed in French; generic mastery and English attainment alone do not certify French reading.",
+    "Complete selected claims and the seven-card resulting hard closure were read; no teaching guide exists on those seven cards. The full four cards implicated in the gate corrections were also read. No guide or efficacy research is invented.",
+    "Two intrinsic hard gates are softened with whole-target positive witnesses; neither decoding nor letter-shape discrimination is removed from actual preparation. All other dependencies and old contexts remain exact.",
+    "The source does not mandate our26-word or90% whole-topic checks as universal Ontario norms; they preserve the selected existing mastery claims.",
+    "This adds five of44CoreGrade4 records after the prior19; the remaining20 and other primary FSL programmes/grades remain in scope."
+  ],
+  "dependencyReview": {
+    "changes": [
+      {
+        "before": {
+          "topicId": "mt_ZhvwM6LMBL",
+          "prerequisiteId": "mt__KHQttMde3",
+          "strength": "hard",
+          "reason": "Must be able to decode before fluency"
+        },
+        "after": {
+          "topicId": "mt_ZhvwM6LMBL",
+          "prerequisiteId": "mt__KHQttMde3",
+          "strength": "soft",
+          "reason": "A wider range of grapheme-phoneme correspondences supports reading more texts; accurate, meaningful emergent reading of a text matched to already taught correspondences does not require responding to the entire 40+ phoneme inventory first."
+        }
+      },
+      {
+        "before": {
+          "topicId": "mt_YKkCM63fSC",
+          "prerequisiteId": "mt_frDIaXzWbx",
+          "strength": "hard",
+          "reason": "Need to recognise letters to read sight words"
+        },
+        "after": {
+          "topicId": "mt_YKkCM63fSC",
+          "prerequisiteId": "mt_frDIaXzWbx",
+          "strength": "soft",
+          "reason": "Recognising particular letter forms supports sight-word reading; an automatic 20–30-word connected-text bank with unusual spelling/sound correspondences can be demonstrated without naming both cases of all 26 letters, reciting A–Z and naming alternative spellings."
+        }
+      }
+    ],
+    "positiveWitnesses": [
+      "A learner accurately reads and understands a book matched to a limited set of taught English grapheme/sound correspondences, independently demonstrates the existing sight bank and print direction, and rereads with improved pace/expression; this does not establish every one of 40+ phonemes.",
+      "A learner instantly recognises26 taught words in connected text, distinguishes their letter forms and explains unusual taught correspondences, while not yet naming both cases of every letter or reciting A–Z. Word recognition does not imply that complete alphabet-name claim."
+    ],
+    "limits": "These are intrinsic logical corrections, independently challenged against the complete cards; no new whole-claim equivalence, posterior transfer or learner reset.",
+    "integrationReconciliation": {
+      "sharedCorrectionReport": "language-intrinsic-prerequisite-corrections-2026-11-10.json",
+      "originalFrenchAfter": {
+        "topicId": "mt_ZhvwM6LMBL",
+        "prerequisiteId": "mt__KHQttMde3",
+        "strength": "soft",
+        "reason": "Taught grapheme/sound decoding supports fluent reading; accurately understanding and rereading a phonically matched book with improved pace and expression does not require responding to every one of the40+ English phonemes."
+      },
+      "selectedAfter": {
+        "topicId": "mt_ZhvwM6LMBL",
+        "prerequisiteId": "mt__KHQttMde3",
+        "strength": "soft",
+        "reason": "A wider range of grapheme-phoneme correspondences supports reading more texts; accurate, meaningful emergent reading of a text matched to already taught correspondences does not require responding to the entire 40+ phoneme inventory first."
+      },
+      "meaning": "Ontario French and India independently removed the same false requirement to master the entire English phoneme inventory before reading a text matched to taught correspondences. Integration retains one soft edge with the already reviewed India reason; original French whole-task counterexamples and all other prerequisites remain unchanged."
+    }
+  },
+  "reviewNotes": [
+    "Independent source/whole-card review confirmed the five-clause design and two intrinsic gate corrections. The initial illustration comparisons were refined to add compatible evidence: silence/head position permit a mood inference without stating no smile; red ball inside the opened box adds colour/lid detail without contradicting the text."
+  ]
+}

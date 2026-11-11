@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "dfba888db699c8220df8f8aa71ddc9dea7eafe4f",
+  "status": "One unchanged shared trade claim reused for B3.9 through actual dated Canadian economic effects and its complete existing evidence. No country-specific trade topic or claim widening.",
+  "claimReview": {
+    "topicId": "mt_0Rx1ISxXFE",
+    "wholeClaim": "Why countries trade; own-country imports/exports; goods moving internationally; different currencies and exchange when travelling.",
+    "readiness": "The retained hard How the Economy Works prerequisite supports producers/consumers and price reasoning. No dependency change, full advanced economic inventory or new arithmetic requirement is added.",
+    "intervalBoundary": "Add only an exact 11–12 Social Studies context. Preserve the historical 11–13 Maths context and all other intervals; the old Grade 7 code is not new primary authoring."
+  },
+  "resources": {
+    "trade": {
+      "url": "https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/annual/2025",
+      "locator": "Actual 1.1 sector narrative and 2.2 United States body/Figure 12 text;2025 data, retrievedbyGAC 5 May 2026",
+      "scope": "Merchandise goods, values and stated drivers; not all services, individual household incomes or a permanent future forecast."
+    },
+    "bilateral": {
+      "url": "https://www.international.gc.ca/country-pays/us-eu/relations.aspx?lang=eng",
+      "locator": "Actual bilateral/trade/energy sections, modified 13 August 2026",
+      "scope": "An attributed Canadian governmental account of the relationship; employment figures are not a measure of each family’s gain."
+    },
+    "currency": {
+      "url": "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/",
+      "locator": "Actual rate definition and dated 10 November 2026 US dollar row",
+      "scope": "Indicative daily average, not a guaranteed retail transaction rate or financial advice."
+    }
+  },
+  "preparedFacts": {
+    "trade": {
+      "sourceRef": "trade",
+      "facts": [
+        "In 2025 Canadian goods exports to the United States fell 5.3%; goods imports from it fell 4.2%.",
+        "Energy export receipts fell as oil prices and volumes declined. Motor vehicles/parts exports and imports also fell; the account relates these changes to trade-policy changes and integrated production.",
+        "Canada both exported goods such as energy products and vehicles/parts and imported vehicles/parts and other products. A change in dollar value can reflect prices as well as physical quantities."
+      ],
+      "limits": [
+        "These are2025 observations, not a claim all trade always falls or every household lost the same amount.",
+        "The report’s appendix total-import figure conflicts with its overview; no disputed total is used."
+      ]
+    },
+    "bilateral": {
+      "sourceRef": "bilateral",
+      "facts": [
+        "Canada and the United States share cross-border supply chains and energy infrastructure. The governmental account describes trade/investment as supporting work on both sides.",
+        "Selling abroad connects Canadian producers to customers; buying abroad supplies goods and components. Neither an import nor an export is automatically a net harm or benefit for every person."
+      ],
+      "limits": [
+        "Do not infer a specific worker’s job loss, wage or household effect from aggregate export values."
+      ]
+    },
+    "currency": {
+      "sourceRef": "currency",
+      "facts": [
+        "Canadian and US dollars are different currencies. The Bank’s10 November 2026 indicative average expressed 1 US dollar as 1.4181 Canadian dollars.",
+        "A Canadian traveller may need to exchange Canadian dollars for another currency. Fees and the actual offered rate can differ; arithmetic conversion is optional here."
+      ],
+      "limits": [
+        "This is an explicitly dated illustration, not a current travel quote or an assumption every country has a unique currency."
+      ]
+    }
+  },
+  "protocols": {
+    "canadian-economic-effects": {
+      "codes": [
+        "B3.9"
+      ],
+      "contributorIds": [
+        "mt_0Rx1ISxXFE"
+      ],
+      "resourceRefs": [
+        "trade",
+        "bilateral",
+        "currency"
+      ],
+      "learnerActions": [
+        "Adult setup: provide original concise fact cards, an imports-to-Canada/exports-from-Canada goods route diagram and the dated currency example; retain the stated goods/value/period limits.",
+        "Explain why a country trades rather than obtains every good locally. Give one actual Canadian import and export from the packet and follow their directions across the border; identify producer/customer or component use.",
+        "Describe a significant observed 2025 economic effect on Canada: lower receipts from the selected exports and changed cross-border vehicle/parts trade. Use the source’s price/quantity and policy/production explanation, rather than claim the number alone proves one cause or each family’s experience.",
+        "Explain that a purchase abroad may involve a different currency and exchange; distinguish the US dollar from the Canadian dollar using the supplied date/definition, without requiring decimal-rate computation.",
+        "Transfer to this original hypothetical case: a Canadian factory buys a component abroad and sells some finished products overseas. Explain both import/export links and one plausible consequence if a route is interrupted; label it a modelled consequence, not another observed 2025 event."
+      ],
+      "successConditions": [
+        "Actual Canadian import/export directions and reasons are correct.",
+        "At least one significant actual Canadian economic effect is explained from the dated source and does not confuse dollar values with quantities or infer individual welfare.",
+        "The unchanged claim’s currency/exchange and goods-route requirements are accounted for, rather than only the new source’s effect."
+      ],
+      "nearMisses": [
+        "Calls imported vehicles Canadian exports or says every dollar of imports is a national loss.",
+        "Treats a lower dollar value as proof of exactly the same proportional fall in physical goods or jobs.",
+        "Gives a generic economic definition but cannot describe an actual sourced Canadian effect."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "coverageBoundary": "B3.9 has source-fit authoring coverage. Wider B3.6 political/social interactions, B3.8 partner-selection reasons and country/city mapping remain separately reviewed; no whole-B completion or learner attainment is inferred."
+}

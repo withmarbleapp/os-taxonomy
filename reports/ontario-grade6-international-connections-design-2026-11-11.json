@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "29ec643",
+  "status": "Country-generic whole interconnection and trade claims reused with actual Canadian cases. No Canadian migration, aid, earthquake or foreign-relations clone.",
+  "claimReview": {
+    "topicIds": [
+      "mt_n3ojDXoaqC",
+      "mt_0Rx1ISxXFE"
+    ],
+    "interconnections": "Retain migration plus another aid/tourism/cultural connection and actual effects on people/places; examples involving Australia do not force an Asia inventory. The separately reviewed Asia hard-to-soft correction leaves both claims intact.",
+    "trade": "Retain reasons for trade, Canadian imports/exports, goods routes and different-currency/exchange understanding through the linked complete prior protocol.",
+    "sourceVsClaim": "Prepared factual roles in the actual humanitarian case support the source duties; they do not imply mastery of every international institution or a new complete UN/NGO inventory."
+  },
+  "resources": {
+    "haiti-government": {
+      "url": "https://www.canada.ca/en/news/archive/2010/02/ministerial-statement-haiti-monday-february-22-11-45-.html",
+      "locator": "Complete archived 22 February 2010 statement; selected assistance/field-hospital/individual-donation sections",
+      "scope": "A contemporary government report, not independent proof every pledge succeeded or a description of 2021 earthquake assistance."
+    },
+    "haiti-ngo": {
+      "url": "https://www.redcross.ca/how-we-help/international-cooperation/where-we-work/americas/haiti",
+      "locator": "Complete current main account, especially long-standing partnership section",
+      "scope": "Canadian Red Cross account of work with the Haitian Red Cross; later projects are not all backdated to 2010. No photograph or video is claimed as viewed."
+    },
+    "haiti-matching": {
+      "url": "https://www.canada.ca/en/news/archive/2010/01/government-canada-expands-matching-fund-earthquake-relief.html",
+      "locator": "Complete archived release and eligibility backgrounder",
+      "scope": "A historical time-limited matching policy, not a current donation invitation or proof the same amount reached each person."
+    },
+    "migration": {
+      "url": "https://humanrights.ca/story/canada-antisemitism-and-holocaust",
+      "locator": "Actual curator-authored body, 2021; persecution/refuge restrictions and post-war settlement paragraphs",
+      "scope": "Historical migration and its restrictions, not every survivor’s individual account; film not viewed."
+    },
+    "trade": {
+      "report": "ontario-grade6-trade-effects-design-2026-11-11.json",
+      "pointer": "/preparedFacts"
+    },
+    "bilateral": {
+      "url": "https://www.international.gc.ca/country-pays/us-eu/relations.aspx?lang=eng",
+      "locator": "Actual bilateral/trade sections, modified 13 August 2026",
+      "scope": "Named agreement and cross-border production/work relationships; no assumption every business or person gains equally."
+    }
+  },
+  "preparedCases": {
+    "haiti": {
+      "date": "12 January 2010 earthquake; 22 February 2010 government report, with later NGO retrospective explicitly separated",
+      "facts": [
+        "Canada’s government reported funding relief supplies and supporting the field hospital jointly managed by the Canadian and Norwegian Red Cross societies, as well as medical, food, shelter, water and sanitation needs.",
+        "The same ministerial account reported fundraising by individual Canadian students in Chelsea, Quebec. The historical matching scheme concerned eligible individual donations to registered charities during a specified 2010 period.",
+        "The Canadian Red Cross describes its partnership with the Haitian Red Cross after the earthquake, focused on safe shelter, health and protection; its account also describes later community health, training and preparedness work."
+      ],
+      "sourceRefs": [
+        "haiti-government",
+        "haiti-ngo",
+        "haiti-matching"
+      ],
+      "limits": [
+        "Do not conflate individual giving, government funding and organizations delivering assistance.",
+        "Retain Haitian organizations’ and communities’ agency; neither funding totals nor a donor’s account prove complete recovery.",
+        "No actual donation, money collection, private student identity or emergency travel is required."
+      ]
+    },
+    "migration": {
+      "date": "1930s–1945 refuge restrictions and post-war migration",
+      "facts": [
+        "Jews sought escape from Nazi persecution, but Canada severely restricted Jewish refugee entry. Many survivors made Canada their home after the war.",
+        "The movement and barriers connected Europe and Canada: people seeking safety could face closed routes, while later arrival meant establishing homes in Canadian communities. Do not invent a particular family’s emotions or equate every survivor with a St. Louis passenger."
+      ],
+      "sourceRefs": [
+        "migration"
+      ],
+      "limits": [
+        "The migration case is distinct from the 2010 Haiti aid case and is not a claim every country/time had the same policy."
+      ]
+    },
+    "canada-us": {
+      "facts": [
+        "The governmental account describes Canada–United States cross-border production, trade and energy infrastructure and work supported on both sides.",
+        "CUSMA is an agreement among Canada, the United States and Mexico; its effects and the 2025 trade changes must be described with the actual dates and limits of the linked trade protocol."
+      ],
+      "sourceRefs": [
+        "bilateral",
+        "trade"
+      ],
+      "limits": [
+        "An agreement is not a world government or a guarantee all trade is friction-free; do not infer individual welfare from an aggregate value."
+      ]
+    }
+  },
+  "protocols": {
+    "humanitarian-response": {
+      "codes": [
+        "B1.2"
+      ],
+      "contributorIds": [
+        "mt_n3ojDXoaqC"
+      ],
+      "resourceRefs": [
+        "haiti-government",
+        "haiti-ngo",
+        "haiti-matching",
+        "migration"
+      ],
+      "learnerActions": [
+        "Adult setup: supply the original dated Haiti and migration fact cards with source/actor labels. Make the humanitarian issue and affected places clear without graphic imagery.",
+        "Analyse the three actual response categories to the 2010 Haiti earthquake: Canadian government resources/coordination, Canadian and Haitian Red Cross partnership delivering support, and individual Canadians’ fundraising/donations. Explain how the roles connect rather than list three unrelated names.",
+        "For each response, identify the need addressed and the documented action; distinguish a promise, a reported activity and an unsupported claim about long-term success. Explain one strength and one limit of what this packet can establish.",
+        "Retain the full shared interconnection claim with the separate migration case: describe the Europe–Canada movement/barrier, its reason and an effect on people/places, then compare it with the Canada–Haiti aid relationship. Neither connection alone replaces the other whole-claim component.",
+        "Transfer to a changed fictional response: a government grants resources, an organization coordinates local delivery and individuals donate. Explain the possible links and what extra evidence is needed before judging the outcome; it is not another alleged historical event."
+      ],
+      "successConditions": [
+        "Actual government, NGO and individual responses are all analysed against the same international issue.",
+        "The explanation connects action/need/roles and gives justified source limits, not a donation-total ranking.",
+        "The entire migration-plus-other-connection and people/place-effects claim is accounted for."
+      ],
+      "nearMisses": [
+        "Calls the Haitian Red Cross the Canadian government or erases local partners.",
+        "Lists donations without explaining any response, need or effect.",
+        "Treats the 2010 matching fund as currently open or all later NGO work as completed immediately after the earthquake."
+      ],
+      "remainingConditions": []
+    },
+    "political-social-economic": {
+      "codes": [
+        "B3.6"
+      ],
+      "contributorIds": [
+        "mt_n3ojDXoaqC",
+        "mt_0Rx1ISxXFE"
+      ],
+      "resourceRefs": [
+        "haiti-government",
+        "haiti-ngo",
+        "migration",
+        "trade",
+        "bilateral"
+      ],
+      "learnerActions": [
+        "Identify political interaction through the actual Canadian-government international coordination/funding and the named Canadian-US-Mexican agreement, social interaction through migration and humanitarian partnership, and economic interaction through cross-border trade/production. Explain that these categories can overlap.",
+        "Describe effects on the other regions as well as Canadian links: assistance addressing Haitian needs in partnership with Haitian actors; people affected by refuge restrictions and later settlement; cross-border production/work in the United States as well as Canada. Keep the government/organization perspective attributed and do not invent a quantified net benefit.",
+        "Carry out the linked complete trade protocol, including imports/exports, currency and dated Canadian economic effects; this prevents one trade label from replacing whole trade knowledge.",
+        "Compare two cases: explain which actor/action/effect is supported and which statement needs more evidence. The existence of an agreement does not prove all people benefit equally, and an aid aim does not prove all needs were met."
+      ],
+      "successConditions": [
+        "Actual significant political, social and economic interactions are all identified, with supported effects on the studied world regions.",
+        "People, geography and periods remain distinct; actual dated facts and source limits support the explanation.",
+        "Both existing whole claims’ requirements are retained; no complete international-organizations inventory or political opinion agreement is required."
+      ],
+      "nearMisses": [
+        "Describes only Canadian trade receipts and no effects on any other region.",
+        "Mentions three categories without actual interactions or replaces the Haitian role with a one-way rescue story."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "coverageBoundary": "B1.2/B3.6 are source-fit authoring designs, not attained learner states or a whole-B completion claim. Programme-specific participation, international accord/organization knowledge, map/city tasks and other disaster comparisons remain independently reviewed."
+}

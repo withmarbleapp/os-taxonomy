@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "07439e1fa9bb9ef4363801e8874254797cdbab9a",
+  "status": "Source-fit authoring design using three actually prepared attributed cases and unchanged shared claims. No learner attainment or measured conservation outcome is claimed.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-E1.3"
+  ],
+  "reuseDecision": "Use resource and impact reasoning with supplied actual case knowledge. The source asks analysis of knowledge informing conservation, not a new fixed project-recall inventory. Australian Country and rainforest claims remain whole and are not relabelled Canadian.",
+  "resources": {
+    "tsouke-own": {
+      "url": "https://tsoukenation.com/comprehensive-community-plan/",
+      "readScope": "Complete actual short main body read, not unread linked PDF or unviewed video.",
+      "facts": "Nation’s 2025–2050 plan states teachings, collective voice, values/responsibilities and a seven-generation horizon guiding resources and decisions.",
+      "limits": "Do not attribute the current plan’s wording to every older project or every First Nation."
+    },
+    "tsouke-attributed-case": {
+      "url": "https://www.isc.gc.ca/eng/1377629855838/1613741744194",
+      "locator": "Expanding the Scope of a CCP, T’sou-ke Nation; Developing a Collective Vision through Engaging Champions",
+      "readScope": "Actual complete selected community-story section and introductory attribution/acknowledgements read. Not the whole 126-page handbook or figures.",
+      "sourceRole": "Federal handbook expressly presents individual Nations sharing stories; acknowledges T’Sou-ke planner Andrew Moore’s authorship contribution. Partner-published attributed case, not solely a Nation-hosted webpage.",
+      "facts": "Community Elders/youth/families developed a sustainability vision grounded in traditional responsibilities and future generations. It informed solar/hot-water work and a youth-run group encouraging energy conservation; the account also describes teaching traditional food/gathering practices.",
+      "limits": "Distinguish generating renewable energy from reducing consumption. No exact lifetime/output/job/savings percentage, current superlative or proof that all household demand fell is adopted."
+    },
+    "tsouke-chief": {
+      "url": "https://docs2.cer-rec.gc.ca/ll-eng/llisapi.dll/2785018/C359-4-2_-_T_Sou-ke_Nation_-_Sworn_Affidavit_of_Chief_Gordon_Planes_-_A4L5T0.pdf?func=doc.Fetch&nodeid=2785018",
+      "locator": "2015 hearing context, paragraphs 34–38, printed 7–9/PDF 7–9",
+      "readScope": "Actual textual stewardship/initiative paragraphs read, no signature/map/exhibit visual claim.",
+      "facts": "Then-Chief Gordon Planes explains ancestor-guided ecosystem care for future generations and places solar initiatives within that stewardship account.",
+      "limits": "Historical first-person evidence, not present officeholder, legal/title adjudication, direct technical measurement or wholesale adoption of all affidavit claims."
+    },
+    "mno-values": {
+      "url": "https://www.metisnation.org/news/a-harvest-message-from-mno-president-margaret-froh/",
+      "locator": "October 22, 2022; contemporary harvesting/conservation/Captains paragraphs",
+      "readScope": "Complete actual main message read.",
+      "facts": "MNO links intergenerational knowledge and Métis ways of life with its Assembly’s harvest policy, conservation/respect for species and Captains supporting harvesters.",
+      "limits": "MNO’s own stated approach, not all Métis law/practice, proof of every population outcome or permission for a pupil to harvest."
+    },
+    "mno-practice": {
+      "url": "https://www.metisnation.org/registry/harvesting/captains-of-the-hunt/",
+      "locator": "Main role/duties/annual-survey text, page updated 2020 with 2024 photo caption",
+      "readScope": "Complete main body read; photograph not visually assessed and regulations not followed/read.",
+      "facts": "Captains help implement policy, provide traditional-knowledge information, exchange on-the-ground observations and support surveys of number/species/location of harvest.",
+      "limits": "Attributable knowledge→monitoring/management role, not a new quota/current legal interpretation or a claim observed counts alone prove conservation success."
+    },
+    "inuit-knowledge": {
+      "url": "https://www.itk.ca/wp-content/uploads/2019/07/ITK_Climate-Change-Strategy_English.pdf",
+      "locator": "2019 strategy, printed 6/PDF 8 Imappivut example and printed 20–21/PDF 22–23 knowledge priorities",
+      "readScope": "Actual selected main text read, Imappivut printed 6/PDF 8 rendered and visually read. No all 48 pages or unviewed diagram claim.",
+      "facts": "ITK describes Nunatsiavut’s2017 marine-planning initiative and2018 community knowledge gathering on local uses/protection priorities. This informs a plan to protect marine life while supporting Inuit use; protected areas were possibilities at that report date.",
+      "limits": "ITK is Inuit-authored national strategy attributing a Nunatsiavut case; not all Inuit communities or proof that a proposed protected area was established or caused measured ecological recovery."
+    }
+  },
+  "preparedCases": {
+    "first-nation": {
+      "people": "T’Sou-ke First Nation, southern Vancouver Island",
+      "knowledge": "Shared Elders/family/community teachings about responsibility to land and future generations, expressed through community planning.",
+      "action": "Solar/hot-water programme and a youth conservation group; distinguish producing renewable energy from encouraging less demand.",
+      "conservationReasoning": "Long-term stewardship values help set priorities and participation for reducing dependence on finite fuels and avoiding unnecessary consumption; no solar panel alone proves Indigenous knowledge was used.",
+      "evidenceLimit": "The attributed account establishes the community process/project and conservation initiative, not an audited reduction for every home.",
+      "sourceRefs": [
+        "tsouke-own",
+        "tsouke-attributed-case",
+        "tsouke-chief"
+      ],
+      "caseGroup": "first-nation"
+    },
+    "metis": {
+      "people": "Métis Nation of Ontario’s participating communities/harvesters",
+      "knowledge": "Intergenerational harvest knowledge, respect/conservation principles and situated observations.",
+      "action": "Harvest policy, Captains’ advice/implementation, on-the-ground information and annual survey support.",
+      "conservationReasoning": "Community knowledge and information about species/place/harvest inform management rather than treating resource use as unlimited; explain policy/knowledge/monitoring roles without inventing a quota.",
+      "evidenceLimit": "A declared principle or reported harvest total is not by itself a measured increase in wildlife populations.",
+      "sourceRefs": [
+        "mno-values",
+        "mno-practice"
+      ],
+      "caseGroup": "metis"
+    },
+    "inuit": {
+      "people": "Labrador Inuit communities involved in Nunatsiavut’s Imappivut initiative, as described by ITK in 2019",
+      "knowledge": "Community knowledge of marine area uses and protection priorities, with Inuit relationships and needs central to planning.",
+      "action": "Gathering local knowledge to develop marine-management choices, including possible protected-area/co-management options.",
+      "conservationReasoning": "Knowledge about actual uses and priorities can inform where/how marine resources are protected while sustaining community use; not merely an externally designed map with an Inuit label.",
+      "evidenceLimit": "Keep the 2017 launch, 2018 knowledge gathering and 2019 account distinct; no assertion all proposed measures had been enacted or achieved recovery.",
+      "sourceRefs": [
+        "inuit-knowledge"
+      ],
+      "caseGroup": "inuit"
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-E1.3"
+    ],
+    "contributorIds": [
+      "mt_VI5kdtf28e",
+      "mt_deexfCHU9m"
+    ],
+    "caseRefs": [
+      "first-nation",
+      "metis",
+      "inuit"
+    ],
+    "requiredCaseFields": [
+      "people",
+      "knowledge",
+      "action",
+      "conservationReasoning",
+      "evidenceLimit"
+    ],
+    "preparation": "Provide the original three attributed case cards and exact selected public source sections, with dates, knowledge/action/reason/unknowns columns. No personal disclosure, community contact, sacred teaching, pupil harvesting or invented community testimony.",
+    "actions": [
+      "Actually use ALL THREE cases; identify the named people/place and their knowledge/ways-of-knowing contribution, the concrete action and how it can support energy/resources conservation.",
+      "Compare intergenerational responsibilities, harvest observations/management and marine-place knowledge without assuming a single shared practice or that all contemporary methods must be ancient to count.",
+      "Distinguish a project owned by an Indigenous organisation from a source-backed contribution of knowledge/values/observations to decisions. Likewise separate announced plans, actual actions and demonstrated outcomes.",
+      "Changed fictional brief: a new project uses renewable technology but gives no information about community decision-making or knowledge use. Explain why ownership/technology alone cannot establish the selected source duty; identify needed public attributable evidence."
+    ],
+    "positive": "Correct named-case knowledge→decision/action→conservation relationship with explicit source/date and limits.",
+    "nearMiss": "Names FN/Métis/Inuit or a solar project without explaining knowledge’s role, relabels Australian Country/rainforest knowledge as Canadian, or reports a proposed area as a proven recovery outcome.",
+    "transfer": "Explain what source evidence would distinguish a knowledge-informed new conservation decision from a merely labelled/owned project, without inventing or collecting restricted knowledge.",
+    "remainingConditions": []
+  },
+  "contributionRoles": {
+    "mt_VI5kdtf28e": "Energy-resource origin, renewable/finite distinction and environmental trade-offs contribute particularly to the T’Sou-ke case. No claim that a solar installation alone demonstrates Indigenous knowledge or reduced consumption.",
+    "mt_deexfCHU9m": "Action-to-protected-environment mechanisms contribute across all three cases. The source-specific knowledge-to-decision relationship is directly assessed through the actual portfolio, not inferred from generic respect or a link."
+  },
+  "wholeClaimBoundary": [
+    "Natural resources retains its actual multi-source energy origin, renewable/non-renewable and environmental-effect operation; this portfolio alone does not certify that complete topic. Its energy-transfer and resource-vocabulary hard paths remain intact.",
+    "Reducing Human Impact retains three local problems, matching solutions, mechanism explanations and communication. Named community case analysis is a component contribution, not a claim that all local whole-topic performance has occurred.",
+    "The actual source duty is assessed through use of every First Nation, Métis and Inuit case, knowledge→action→conservation explanations and the changed unsupported brief. Supplied sources may remain available; no invented from-memory project-retention condition is added."
+  ],
+  "sourceAndPerformanceLimits": [
+    "Named organisations and dated accounts are attributed separately; no single case represents all peoples.",
+    "Plans, reported actions and measured outcomes are different. No protected-area enactment, population recovery, household savings or current officeholder is inferred from these historical accounts.",
+    "Resources are prepared public sources, not a requirement to collect private or sacred knowledge. Actual pupil success is unobserved and not asserted."
+  ],
+  "consumerBoundary": "No new ID, authored claim, guide, age interval, dependency or learner state change. These are two existing-topic component associations, with mandatory source-specific performance designed separately."
+}

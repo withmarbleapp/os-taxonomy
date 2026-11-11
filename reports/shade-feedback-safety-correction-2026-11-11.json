@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-11",
+  "baseCommit": "fd92270",
+  "topicId": "mt_2agkUcdah9",
+  "changedPaths": [
+    "assess.errorPatterns[2].nextMove"
+  ],
+  "reason": "One saved assessment feedback path contradicted the guide’s safe ground-shadow instructions by asking the pupil to look through candidate materials towards the Sun. Replace that instruction with observing the cast shadow on the ground and an actual shaded/unshaded temperature comparison.",
+  "before": "Hold candidate materials up to the sun and pick the one you can't see through; test which casts the darkest shadow.",
+  "after": "Place each cover above the target and compare its cast shadow on the ground; never look towards the Sun or through a candidate material at it. Then compare actual shaded and unshaded temperature readings over the same time rather than assuming a darker shadow alone proves reduced warming.",
+  "preservation": "Complete claim, evidence, contexts, ages, edges, guide activities, flags, sources, confidence and provenance remain unchanged. This correction adds no new criterion and makes no automatic learner equivalence/reset/transfer.",
+  "source": {
+    "url": "https://science.nasa.gov/eclipses/safety/",
+    "actuallyRead": "Actual Eclipse Eye Safety text section, including direct bright-Sun viewing and optical-equipment limits; no image/wholepage/linkedmanual claim.",
+    "scope": "Supports rejecting improvised direct viewing. This shade task involves no direct solar viewing or eclipse observation."
+  },
+  "privatePublication": "Original rich research requires separately qualified exact preimage/postimage preservation; public guide replacement is not authority to overwrite private fields."
+}

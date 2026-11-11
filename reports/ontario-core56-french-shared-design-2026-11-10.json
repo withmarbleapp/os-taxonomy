@@ -1,0 +1,2072 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "parentProposalCommit": "7daad8b413c3d7c522015f9e4d7bf6298522c4de",
+  "status": "Reviewed source-fit authoring design proposed for repository review; actual performance, acceptance and staging publication are separate.",
+  "source": {
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+    "officialAPI": "https://ws.api.dcp.edu.gov.on.ca/content/api/items/ele___fsl?language=en-CA&depth=5",
+    "catalogue": "the-ontario-curriculum-french-as-a-second-langua",
+    "edition": 2013,
+    "programme": "Core French",
+    "grades": [
+      5,
+      6
+    ],
+    "courses": [
+      {
+        "id": "9c46e8ba-e943-43e8-8ed8-5e9ea317acc3",
+        "name": "FSL - Core - Grade 5",
+        "codename": "fsl___core___grade_4__copy_",
+        "language": "en-CA",
+        "type": "l2___course",
+        "collection": "default",
+        "sitemap_locations": [],
+        "last_modified": "2025-03-05T18:16:11.2659521Z",
+        "workflow": "default",
+        "workflow_step": "published"
+      },
+      {
+        "id": "3f698ea8-07f3-4af0-b773-14f2fc3b268a",
+        "name": "FSL - Core - Grade 6",
+        "codename": "fsl___core___grade_5__copy_",
+        "language": "en-CA",
+        "type": "l2___course",
+        "collection": "default",
+        "sitemap_locations": [],
+        "last_modified": "2025-03-05T18:17:16.4710672Z",
+        "workflow": "default",
+        "workflow_step": "published"
+      }
+    ],
+    "wordingTreatment": "Codes and original teaching designs only; official clauses read privately.",
+    "complexityGuidance": {
+      "url": "https://www.edu.gov.on.ca/eng/curriculum/elementary/fsl18-2013curr.pdf",
+      "printedPage": 17,
+      "interpretation": "Examples and prompts are illustrative rather than mandatory inventories, but alternative approaches must reflect similar complexity. The following original grade-specific portfolios complement the complete earlier claim checks; the starter story or a short greeting alone cannot certify the selected grade expectations."
+    }
+  },
+  "scope": {
+    "records": 64,
+    "perGrade": 32,
+    "componentPairs": 182,
+    "reusedTopics": 26,
+    "newTopics": 0,
+    "remainingCultureRecords": 24,
+    "newContexts": 52,
+    "extendedContexts": 0
+  },
+  "records": [
+    {
+      "code": "A1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_mAschyjZAT",
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A1.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A1.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_mAschyjZAT",
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_wLroTdOoZh",
+        "mt_mAschyjZAT",
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B1.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B1.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B1.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wLroTdOoZh",
+        "mt_mAschyjZAT",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej",
+        "mt_wwdRhPyz6s",
+        "mt_Winq7Tu99m",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A2.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A2.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_Winq7Tu99m",
+        "mt_mB7DVai-Uf"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-A2.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_f8n4txtLej",
+        "mt_Winq7Tu99m",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B2.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_sXRHr7tfS5",
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B2.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_f8n4txtLej",
+        "mt_Winq7Tu99m"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-B2.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu",
+        "mt_aVZJhPbc_1"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C2.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C2.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_aVZJhPbc_1"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C2.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39",
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C1.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C1.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_OlhMP7ShFT"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C1.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fluent-familiar-reading"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.4",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-C1.4",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_6-MYToNZ39"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "new-word-meaning"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_cB7hV8sw7X",
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D1.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D1.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_cB7hV8sw7X",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3",
+        "mt_I65kFjWwnF",
+        "mt_nYU6x2E2T8",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D2.1",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D2.2",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3",
+        "mt_I65kFjWwnF"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D2.3",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_I65kFjWwnF",
+        "mt_nYU6x2E2T8",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.4",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-CORE-D2.4",
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core5-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_mAschyjZAT",
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A1.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A1.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_mAschyjZAT",
+        "mt_mLPEMpYb_R",
+        "mt_RNYNrRMqKL",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-listening-cycle",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_wLroTdOoZh",
+        "mt_mAschyjZAT",
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B1.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B1.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_Winq7Tu99m",
+        "mt_4A7FYmvVhA",
+        "mt_ds2TOtP8I1",
+        "mt_r-BgS-lqTe"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-directions"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B1.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wLroTdOoZh",
+        "mt_mAschyjZAT",
+        "mt_ds2TOtP8I1",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-oral-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fr-corpus",
+        "fr-connected-message",
+        "fr-purpose-and-listener"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej",
+        "mt_wwdRhPyz6s",
+        "mt_Winq7Tu99m",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A2.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A2.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_Winq7Tu99m",
+        "mt_mB7DVai-Uf"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "A2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-A2.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "listening-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_f8n4txtLej",
+        "mt_Winq7Tu99m",
+        "mt_sXRHr7tfS5"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B2.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_sXRHr7tfS5",
+        "mt_mB7DVai-Uf",
+        "mt_f8n4txtLej"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B2.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_wwdRhPyz6s",
+        "mt_f8n4txtLej",
+        "mt_Winq7Tu99m"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "structured-interaction"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "B2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-B2.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-interaction-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "speaking-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu",
+        "mt_aVZJhPbc_1"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C2.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C2.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_aVZJhPbc_1"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purposes-and-features"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C2.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-textforms-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "reading-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39",
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C1.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_RNYNrRMqKL",
+        "mt_OlhMP7ShFT",
+        "mt_6-MYToNZ39"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C1.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_OlhMP7ShFT"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "meaning-and-strategies"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C1.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_V-ldQp56bF",
+        "mt_YKkCM63fSC"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "fluent-familiar-reading"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "C1.4",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-C1.4",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_6-MYToNZ39"
+      ],
+      "priorDesign": "ontario-core4-french-reading-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "new-word-meaning"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_cB7hV8sw7X",
+        "mt_v5DyOEpbbr",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D1.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5DyOEpbbr"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D1.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D1.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_cB7hV8sw7X",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "purpose-forms-and-production"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3",
+        "mt_I65kFjWwnF",
+        "mt_nYU6x2E2T8",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D2.1",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D2.2",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_9P9o6d0Qm3",
+        "mt_I65kFjWwnF"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D2.3",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_I65kFjWwnF",
+        "mt_nYU6x2E2T8",
+        "mt_sPd4fWeY9x"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "planning-through-publication"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    },
+    {
+      "code": "D2.4",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-CORE-D2.4",
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "disposition": "Full",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "priorDesign": "ontario-core4-french-writing-design-2026-11-10.json",
+      "priorProtocolIds": [
+        "writing-strategy-review"
+      ],
+      "wholePriorTaskRequired": true,
+      "performanceProtocolIds": [
+        "core6-source-adaptations"
+      ],
+      "remainingConditions": []
+    }
+  ],
+  "protocols": {
+    "core5-source-adaptations": {
+      "grade": 5,
+      "ageBand": [
+        10,
+        11
+      ],
+      "sourceCodes": [
+        "A1",
+        "A1.1",
+        "A1.2",
+        "B1",
+        "B1.1",
+        "B1.2",
+        "B1.3",
+        "A2",
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "B2",
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "C2",
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C1",
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "D1",
+        "D1.1",
+        "D1.2",
+        "D2",
+        "D2.1",
+        "D2.2",
+        "D2.3",
+        "D2.4"
+      ],
+      "performanceConditions": {
+        "language": "French",
+        "channels": [
+          "listening",
+          "speaking",
+          "reading",
+          "writing"
+        ],
+        "retainedPriorWholeProtocols": true,
+        "actualFreshPerformanceRequired": true,
+        "selfFamilyFriendsEnvironmentTopics": true,
+        "teacherAndPeerInteractions": true,
+        "teacherAndPeerChannelReflection": true,
+        "adaptedAndAuthenticFourTextCategories": true,
+        "fourWritingModesAndFullProcess": true,
+        "noGradeClone": true,
+        "listeningNewWordContext": false,
+        "listeningBarrierFactorsDiscussed": false,
+        "guidedUnscriptedPartnerReplies": false,
+        "recentlyLearnedReadingWordCheck": false,
+        "writtenConventionRange": false
+      },
+      "actions": [
+        "Use the complete referenced oral, interaction, text-form, reading and writing tasks in the selected grade context. Familiar school, own-interest, fictional self/family/friends and immediate-environment topics are available without forcing private family history. Concrete examples in the source are illustrative, not a required inventory of every text or event.",
+        "Retain actual French purpose/meaning checks, varied speaking/listening purposes and audiences, smooth meaningful familiar rehearsed speech, teacher/peer listening and speaking reflection in their distinct channels, and goals monitored against actual performance.",
+        "Reading retains matched familiar connected text, whole picture/text meaning and illustration checks, actual word-meaning strategy use and fluency/understanding, plus adapted AND authentic fiction/information/graphic/media forms. Existing authentic school-calendar and French library information resources remain actual resources, not an unverified reference label.",
+        "Writing retains actual purpose/audience/form choices, all modelled/shared/guided/independent modes, prewriting through publication, teacher-supported content revision, a few appropriate French conventions and presentation elements, written-form retention and teacher/peer writing reflection. No English fixed-word-list result transfers into French.",
+        "A1.2 explicitly includes self, family, friends and immediate-environment input; B2.2 actually interacts with both peers and teacher. The prior designs already instantiate those conditions, so preserve them explicitly rather than infer them from a general everyday-topic label.",
+        "Use the prior French invitation, information and instruction models and genuine different-reader rewrites. The source examples of cards, family trees and memos are not all mandatory products. Use grade-appropriate familiar content and the learner’s actual introduced repertoire rather than merely attaching an older age.",
+        "Use the actual core5-grade-portfolio connected French inputs and original writing/speaking tasks alongside every bound prior whole-claim protocol. Prepare and check its actual visuals, graphic layout, familiar repertoire and supported models before use. The earlier starter story, single greeting or copied template alone is insufficient for Grade5; alternatives require a documented source-complexity and channel/form comparison, not an age relabel."
+      ],
+      "positive": "Every selected source requirement has an actual channel/task witness and every contributing existing topic retains its whole claim. Actual learner evidence is collected separately.",
+      "nearMiss": [
+        "Only retagging earlier source codes or age labels.",
+        "Using an English result, a different French corpus or copied model as automatic evidence.",
+        "Omitting the Grade5 self/family/friends/environment scope or actual teacher-and-peer interactions.",
+        "Using only the earlier starter resources while omitting the actual Grade5 connected input and fresh, varied-form production portfolio."
+      ],
+      "transfer": "Change a supported French input, actual partner reply, audience or familiar reading/writing context and repeat the appropriate whole operation without automatically transferring mastery.",
+      "requiredPortfolioBinding": "core5-grade-portfolio"
+    },
+    "core6-source-adaptations": {
+      "grade": 6,
+      "ageBand": [
+        11,
+        12
+      ],
+      "sourceCodes": [
+        "A1",
+        "A1.1",
+        "A1.2",
+        "B1",
+        "B1.1",
+        "B1.2",
+        "B1.3",
+        "A2",
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "B2",
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "C2",
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C1",
+        "C1.1",
+        "C1.2",
+        "C1.3",
+        "C1.4",
+        "D1",
+        "D1.1",
+        "D1.2",
+        "D2",
+        "D2.1",
+        "D2.2",
+        "D2.3",
+        "D2.4"
+      ],
+      "performanceConditions": {
+        "language": "French",
+        "channels": [
+          "listening",
+          "speaking",
+          "reading",
+          "writing"
+        ],
+        "retainedPriorWholeProtocols": true,
+        "actualFreshPerformanceRequired": true,
+        "selfFamilyFriendsEnvironmentTopics": true,
+        "teacherAndPeerInteractions": true,
+        "teacherAndPeerChannelReflection": true,
+        "adaptedAndAuthenticFourTextCategories": true,
+        "fourWritingModesAndFullProcess": true,
+        "noGradeClone": true,
+        "listeningNewWordContext": true,
+        "listeningBarrierFactorsDiscussed": true,
+        "guidedUnscriptedPartnerReplies": true,
+        "recentlyLearnedReadingWordCheck": true,
+        "writtenConventionRange": true
+      },
+      "actions": [
+        "Use the complete referenced oral, interaction, text-form, reading and writing tasks in the selected grade context. Familiar school, own-interest, fictional self/family/friends and immediate-environment topics are available without forcing private family history. Concrete examples in the source are illustrative, not a required inventory of every text or event.",
+        "Retain actual French purpose/meaning checks, varied speaking/listening purposes and audiences, smooth meaningful familiar rehearsed speech, teacher/peer listening and speaking reflection in their distinct channels, and goals monitored against actual performance.",
+        "Reading retains matched familiar connected text, whole picture/text meaning and illustration checks, actual word-meaning strategy use and fluency/understanding, plus adapted AND authentic fiction/information/graphic/media forms. Existing authentic school-calendar and French library information resources remain actual resources, not an unverified reference label.",
+        "Writing retains actual purpose/audience/form choices, all modelled/shared/guided/independent modes, prewriting through publication, teacher-supported content revision, a few appropriate French conventions and presentation elements, written-form retention and teacher/peer writing reflection. No English fixed-word-list result transfers into French.",
+        "For A1.2, actually use both familiar and context-supported new French words. Use the new-word-listening resource or an equally verified replacement with a genuinely unfamiliar word, identify purpose/main idea and relevant details, and keep the heard-French channel. Do not preteach every target or substitute English translation. Whole French taught-word recall is checked separately; inference from a new heard word does not create automatic lexical mastery.",
+        "For A2.2 and B2.2 use guided exchanges with actual open partner replies, including the teacher and peers. Use the reading-corner/game-plan resource; modelling, word references and support remain, but a fully prescribed rehearsed dialogue cannot stand for responsive guided interaction.",
+        "For A2.3 discuss actual or realistically possible factors that obstruct listening, such as unfamiliar vocabulary/topic, competing sound or pace, alongside before/during/after strategies. Connect a supported strategy and a monitored next step. No fabricated learner failure, deficit diagnosis or compulsory uncomfortable incident is required.",
+        "For C1.4 revisit a recently learned French word in a changed connected reading context, determine/confirm its meaning and use a relevant strategy. Preserve the full prior new-word strategy and familiar-word-bank checks; a single old word recognition is insufficient.",
+        "For D2.3 use the prior exact-spelling/accents, punctuation and intended-time checks plus a meaningful location-preposition check in an original instruction, such as the intended contrast between dans la boîte and sur la boîte. Make actual revisions appropriate to the intended message, retaining several conventions and real presentation decisions. Examples of every gender ending, verb/preposition or graphic device are not a mandatory universal inventory.",
+        "Retain the before/during/after writing discussion, strengths/less-secure operations and planned monitored next steps; the difference between a few and some does not create a numerical mastery tier.",
+        "Use the actual core6-grade-portfolio connected French inputs and original writing/speaking tasks alongside every bound prior whole-claim protocol. Prepare and check its actual visuals, graphic layout, familiar repertoire and supported models before use. The earlier starter story, single greeting or copied template alone is insufficient for Grade6; alternatives require a documented source-complexity and channel/form comparison, not an age relabel."
+      ],
+      "positive": "Every selected source requirement has an actual channel/task witness and every contributing existing topic retains its whole claim. Actual learner evidence is collected separately.",
+      "nearMiss": [
+        "Only retagging earlier source codes or age labels.",
+        "Using an English result, a different French corpus or copied model as automatic evidence.",
+        "Skipping the newly specified unfamiliar-word, guided-interaction or listening-barrier duties.",
+        "Using only the earlier starter resources while omitting the actual Grade6 connected input and fresh, varied-form production portfolio."
+      ],
+      "transfer": "Change a supported French input, actual partner reply, audience or familiar reading/writing context and repeat the appropriate whole operation without automatically transferring mastery.",
+      "requiredTaskBindings": {
+        "C1.4": "recently-learned-reading",
+        "D2.3": "location-preposition-revision"
+      },
+      "requiredPortfolioBinding": "core6-grade-portfolio"
+    }
+  },
+  "resources": {
+    "new-word-listening": {
+      "kind": "Original French listening text with context-supported new words; not an official quotation",
+      "body": "Pour notre atelier de maquettes, pose une boîte vide sur le plateau. Le plateau est une petite surface plate qui sert à porter les objets. Place un jeton bleu dans la boîte : ce petit disque marque le départ. Ferme ensuite la boîte et dis à ton partenaire où se trouve le jeton.",
+      "preparation": "A qualified French model speaks the piece. Provide the actual box, flat tray and coloured counters or accurate original pictures; verify which target words are genuinely new to the learner before selecting it. If both words are already familiar, prepare and verify another context-supported unfamiliar word rather than assert novelty.",
+      "check": "Without supplying an English transcript/translation, the learner identifies the workshop/procedural purpose, main idea and related object/order details and uses context to identify the unfamiliar object word. A mechanical sequence copied from another learner is insufficient. Meaning checks may use pointing or the stronger language; listening remains actual French."
+    },
+    "guided-peer-teacher-interaction": {
+      "kind": "Original task design; supportive stems leave actual replies open",
+      "task": "Plan an accessible class reading corner with a peer and discuss the proposal with a teacher. Choose between quiet individual reading and a small shared-story area using actual supplied space/resource limits. Model useful requests and clarification, then let the partner give an unrehearsed relevant preference/reason or change the available resource. Each learner asks, answers, clarifies, builds on a real reply and explains a proposal; the teacher asks an unscripted relevant question. Repeat for a different purpose such as agreeing a class game plan.",
+      "supports": [
+        "French word/picture references",
+        "Teacher modelling and helpful sentence stems",
+        "Context/visual supports and repetition where useful"
+      ],
+      "limits": "There is no fixed complete exchange for rote reproduction, forced eye contact, compulsory personal disclosure or correct preference. Responses must depend on what was actually said. All prior own/peer/familiar-adult and before/during/after reflection tasks remain required."
+    },
+    "recently-learned-reading": {
+      "kind": "Original French teaching and changed-context reading passages",
+      "initialPassage": "La cabane est un abri. Elle protège Lina de la pluie.",
+      "revisitPassage": "Près du jardin, Lina trouve un petit abri. Elle peut y attendre au sec.",
+      "task": "Introduce abri through the initial French passage and verify its meaning with context or a checked French word reference. In a later connected reading, use the revisit passage and ask what abri means here and which words or reference confirm it. Record that the word was actually recently learned; if already familiar, prepare another verified target and two suitable passages.",
+      "meaningCheck": "An abri is a shelter; explain the contextual protective place rather than only pronounce or recognise the letters. Use an actual meaning strategy before/during/after reading and retain the whole prior new-word protocol.",
+      "limits": "No universal delay, spelling-test proxy or automatic inference that every recently taught word is retained."
+    },
+    "location-preposition-revision": {
+      "kind": "Original fictional draft for revision; never represented as a real learner error",
+      "intendedMeaning": "Le jeton doit être à l’intérieur de la boîte.",
+      "draft": "Pose le jeton sur la boîte.",
+      "revision": "Pose le jeton dans la boîte.",
+      "task": "For instructions to a partner, compare the intended inside location with the fictional draft, revise the actual preposition and explain or demonstrate the intended relation. Then produce a new suitable instruction for a changed stated placement. Retain the full earlier spelling/accents, punctuation, intended-time and presentation checks in the writing portfolio.",
+      "limits": "Changing a word without understanding its intended place is insufficient. This is supported revision, separate from independent retained French written-form checks; no every-preposition inventory or fabricated learner mistake."
+    },
+    "core5-grade-portfolio": {
+      "kind": "Original Grade5 French input and production portfolio; fictional class events, not official quotations or community testimony",
+      "preparation": "A qualified French teacher checks the actual language, introduces the familiar oral/written repertoire and provides the stated visual, auditory and word-reference supports. Keep genuinely new listening words unpretaught for the Grade6 new-word task. Each learner produces fresh responses and work; models are teaching resources, not scripts to copy as attainment. Match the source examples in connected meaning, relevant details, purpose, audience and form rather than impose a universal length, speed or grammar inventory. All complete earlier whole-claim checks remain required.",
+      "texts": {
+        "fiction": {
+          "title": "Le carnet retrouvé",
+          "body": "Mercredi, Nora prépare une affiche pour le club de lecture. Elle cherche son carnet dans son sac, mais il n’est pas là. Son ami Sami regarde sous la table. Il trouve un carnet bleu près de la fenêtre. « Est-ce ton carnet ? » demande-t-il. Nora l’ouvre : son dessin du jardin est sur la première page. « Oui, merci ! Nous pouvons finir notre affiche ensemble. »",
+          "visualPreparation": "Prepare an original three-panel sequence: Nora searching an open bag; Sami finding a blue notebook near the window; the open notebook with the identifying garden drawing. Label these as commissioned teaching illustrations, not historical photos. The learner relates text details to the actual prepared images; no picture/text judgment before they exist.",
+          "task": "Preview title and prepared pictures; predict, read in French with teacher support, identify the problem, ordered events and the evidence identifying the notebook, then retell. Revisit a familiar connected section for meaningful fluent reading, not a timed race. Read another scene without an illustration and describe the image generated from its actual details."
+        },
+        "memo": {
+          "title": "Club de lecture : message à la classe",
+          "body": "Pour les élèves de notre classe\nJeudi, après la récréation, nous nous retrouvons dans le coin lecture. Apporte ton dessin ou choisis un livre de la classe. Nous présentons nos idées en petits groupes. Tu peux lire, raconter ou écouter. Demande de l’aide si tu ne trouves pas le coin lecture.",
+          "task": "Identify intended audience, event, time, place, options and the informative purpose. Hear a qualified speaker present the memo without reading the transcript first; show understanding of purpose/main idea and relevant details from heard French. Then compare the written memo and a differently structured invitation."
+        },
+        "graphic": {
+          "title": "Notre rencontre",
+          "headings": [
+            "Moment",
+            "Activité",
+            "Matériel"
+          ],
+          "rows": [
+            [
+              "Après la récréation",
+              "Choisir une histoire",
+              "Livres de la classe"
+            ],
+            [
+              "Ensuite",
+              "Présenter une idée",
+              "Dessin ou carnet"
+            ],
+            [
+              "À la fin",
+              "Ranger ensemble",
+              "Boîte à livres"
+            ]
+          ],
+          "task": "Render the actual three-column chart with headings and aligned rows. Explain how headings/rows locate information and relate the sequence to the memo. A linear transcript alone is not the graphic-form check."
+        },
+        "media": {
+          "title": "Affiche de classe : Viens partager une histoire !",
+          "body": "Jeudi, après la récréation\nDans le coin lecture\nUn livre de la classe suffit.",
+          "layout": "Prepare an actual poster with a prominent invitation title, readable time/place block and an original book image. Compare its invitation purpose and salient layout with the informative memo and fictional story; this classroom poster is not a real announcement."
+        }
+      },
+      "speaking": {
+        "task": "After supported rehearsal, describe the found-notebook story to a peer and explain the fictional class event to the teacher using actual familiar French words, coherent details, meaningful pace and pronunciation. In a structured interview ask a partner about a fictional character’s or their own optional reading interest, listen to the actual answer, ask a relevant follow-up and introduce that preference to a small group. Change the audience and information rather than recite one complete fixed dialogue. Retain the prior explicit teacher-and-peer reflection and full taught French word/phonology checks.",
+        "model": "Notre rencontre est jeudi, après la récréation. Nous partageons des histoires dans le coin lecture. Tu peux choisir un livre de la classe. Quelle histoire aimerais-tu présenter ?"
+      },
+      "writing": {
+        "models": {
+          "postcard": "Bonjour Sami,\nJe te présente notre coin lecture. Il est près de la fenêtre. Nous y trouvons des histoires et des dessins. J’aime raconter une aventure avec mes amis. Quel livre préfères-tu ?\nÀ bientôt,\nNora",
+          "memo": "Pour notre classe\nRencontre jeudi, après la récréation, dans le coin lecture. Choisis un livre ou prépare un dessin. Nous présentons nos idées en petits groupes. À la fin, nous rangeons les livres."
+        },
+        "task": "Plan and create both a postcard describing an actual or imaginary familiar place for a peer and an information memo for classmates about a fictional event. Identify audience/purpose before drafting and use each form’s structure, meaningful details and appropriate style. Across the portfolio use actual modelled, shared, guided and independent writing episodes, several planning resources, drafts and teacher/peer content feedback. Make a reasoned content/order revision, then check familiar spelling/accents, question-versus-statement punctuation and intended time, and choose headings/images for the audience. Produce a finished classroom copy and a changed-reader rewrite; neither completing blanks nor copying these models establishes production. Preserve all earlier whole writing-process, retained written-form and reflection checks."
+      },
+      "formCoverage": {
+        "fiction": "fiction",
+        "information": "memo",
+        "graphic": "graphic",
+        "media": "media"
+      },
+      "limits": "No real event, public posting, purchase, family disclosure or universal word count is required. Original materials and prepared visuals remain distinguishable from the actual authentic calendar/library sources retained in the earlier protocols. Full is an authoring design, not observed performance."
+    },
+    "core6-grade-portfolio": {
+      "kind": "Original Grade6 French input and production portfolio; fictional class project, not official quotations or community testimony",
+      "preparation": "A qualified French teacher checks the actual language, introduces the familiar oral/written repertoire and provides the stated visual, auditory and word-reference supports. Keep genuinely new listening words unpretaught for the Grade6 new-word task. Each learner produces fresh responses and work; models are teaching resources, not scripts to copy as attainment. Match the source examples in connected meaning, relevant details, purpose, audience and form rather than impose a universal length, speed or grammar inventory. All complete earlier whole-claim checks remain required.",
+      "texts": {
+        "fiction": {
+          "title": "Un projet sous la pluie",
+          "body": "Hier, Inès et Malik ont préparé une rencontre de lecture dans le jardin. Ce matin, la pluie tombe et les bancs sont mouillés. « Nous ne pouvons pas poser les livres ici », dit Malik. Inès regarde la petite salle près du jardin. « Nous pouvons lire à l’intérieur. Il faut déplacer les boîtes et prévenir la classe. » Malik prépare un message pendant qu’Inès range les livres dans leur abri. Demain, ils demanderont à leurs camarades quelle histoire ils souhaitent découvrir. Leur projet change, mais la rencontre peut continuer.",
+          "visualPreparation": "Prepare original panels showing the rainy garden and wet benches, the adjacent indoor room, and the changed arrangement with dry books. Require actual text/image comparison and an unillustrated changed scene; do not pretend these described panels already exist.",
+          "task": "Before reading predict from the title and prepared images; read the connected French text, confirm or revise a prediction using actual evidence, identify the problem, proposed solution and yesterday/today/tomorrow sequence, and retell or dramatise the main idea with supporting details. Discuss an unresolved question from the text. Revisit familiar connected passages for fluent understanding and preserve the full prior picture/text task. The abri task remains separately bound to initial teaching and later changed-context reading."
+        },
+        "information": {
+          "title": "Notre coin lecture : un espace à partager",
+          "sections": [
+            {
+              "heading": "Pourquoi cet espace ?",
+              "body": "Le coin lecture est un petit espace pour découvrir des livres et partager des histoires. On peut y lire seul ou écouter un camarade."
+            },
+            {
+              "heading": "Comment participer ?",
+              "body": "Choisis un livre de la classe. Installe-toi sans bloquer le passage. Si tu souhaites raconter une histoire, propose ton idée au groupe."
+            },
+            {
+              "heading": "Après la rencontre",
+              "body": "Remets les livres dans les boîtes. Demande aux autres ce qui les a aidés à écouter. Utilise leurs idées pour préparer la prochaine rencontre."
+            }
+          ],
+          "task": "Read the actual sectioned French information piece, explain its purpose, main idea and relevant participation/routine details and how headings organise them; compare with the story and poster. This is a fictional class plan, not real school safety policy."
+        },
+        "graphic": {
+          "title": "Deux plans pour notre rencontre",
+          "headings": [
+            "Plan",
+            "Lieu",
+            "Condition",
+            "Action"
+          ],
+          "rows": [
+            [
+              "A",
+              "Jardin",
+              "Bancs secs",
+              "Installer les boîtes près du banc"
+            ],
+            [
+              "B",
+              "Petite salle",
+              "Pluie",
+              "Déplacer les boîtes dans la salle"
+            ]
+          ],
+          "task": "Prepare the actual labelled comparison table. Find the rainy-day plan and explain the relationship between condition, place and action using headings/rows; change the stated weather and select/explain the other plan. No mathematical conditional-logic mastery is inferred."
+        },
+        "media": {
+          "title": "Invitation : Une histoire à partager",
+          "body": "Demain, après la récréation\nDans la petite salle près du jardin\nChoisis un livre de la classe et viens découvrir les idées du groupe.",
+          "layout": "Prepare a real classroom mock poster with invitation heading, contrasting readable time/place details and an original image of a book group. Identify intended reader, invitation purpose and specific visual/structural choices; compare with the information piece and table. It is not a real public event."
+        }
+      },
+      "speaking": {
+        "task": "Give a brief rehearsed French account of the fictional project to a peer and a clear explanation of the revised plan to the teacher, including relevant supporting details, smooth meaningful delivery and pronunciation. Then conduct the already bound guided reading-corner exchange with actual unrehearsed teacher/peer replies, available-resource changes and clarification. Use the separately bound heard-French unfamiliar-word instruction; explain main idea/details and a context-supported new word without an English transcript. Discuss before/during/after strategies and listening barriers with a monitored next step. Retain full earlier vocabulary/phonology and distinct listening/speaking reflection checks.",
+        "model": "Hier, nous avons préparé une rencontre dans le jardin. Aujourd’hui, il pleut. Nous proposons la petite salle pour garder les livres au sec. Demain, nous demanderons les idées du groupe. Quel endroit préfères-tu, et pourquoi ?"
+      },
+      "writing": {
+        "models": {
+          "manual": {
+            "title": "Préparer le coin lecture",
+            "materials": [
+              "Une boîte",
+              "Des livres de la classe",
+              "Une étiquette"
+            ],
+            "steps": [
+              "Choisis une place avec le groupe.",
+              "Pose les livres dans la boîte.",
+              "Écris « Livres à partager » sur l’étiquette.",
+              "Place la boîte à l’endroit choisi.",
+              "À la fin, vérifie que les livres sont rangés."
+            ],
+            "diagramPreparation": "Prepare an original labelled diagram showing the books inside the box and label on its side; captions must agree with the actual commands. A diagram reference without the prepared diagram is insufficient."
+          },
+          "brochure": {
+            "title": "Bienvenue au coin lecture",
+            "sections": [
+              {
+                "heading": "Un espace pour tous",
+                "body": "Tu peux lire seul ou partager une histoire avec le groupe."
+              },
+              {
+                "heading": "Choisis ta lecture",
+                "body": "Prends un livre de la classe ou propose un dessin pour raconter une aventure."
+              },
+              {
+                "heading": "Préparons la suite",
+                "body": "Après la rencontre, partage une idée pour améliorer notre espace."
+              }
+            ],
+            "layout": "Prepare an actual folded-sheet or accessible digital brochure with distinct headings, explanatory text, original images and captions."
+          },
+          "email": "Objet : Notre rencontre de lecture\nBonjour Madame Ali,\nNous préparons le coin lecture dans la petite salle. Nous avons besoin de deux boîtes pour les livres. Pouvez-vous nous aider à les trouver ? Nous pouvons les ranger après la rencontre.\nMerci,\nInès et Malik"
+        },
+        "task": "Create a French how-to manual for a peer and a brochure for classmates, with a short teacher-request email as a changed reader/purpose. Plan the required information and form, draw on several actual resources, and use all modelled/shared/guided/independent writing modes across the portfolio. Draft using these checked models, obtain relevant teacher/peer feedback and revise missing information/order or clarity with a reason; edit familiar French spellings/accents, punctuation, intended time and the separately bound location-preposition contrast. Produce actual headings, explanatory text, instructions, suitable diagrams/captions and presentation choices for a finished classroom publication. Follow up on a writing goal. Copying a supplied brochure/manual or silently changing only decoration is insufficient. Preserve full earlier coherent-writing, purpose/audience, process-language, reflection and retained written-form checks."
+      },
+      "formCoverage": {
+        "fiction": "fiction",
+        "information": "information",
+        "graphic": "graphic",
+        "media": "media"
+      },
+      "limits": "Support remains available as the source permits. No universal word count, all-grammar checklist, real publication, personal disclosure or mandatory artistic style. Authentic forms from earlier protocols are retained in addition to these original adaptations. No inference of observed attainment or automatic cross-corpus mastery."
+    }
+  },
+  "wholeClaimBoundaries": [
+    "Read actual64source clauses and optional examples before proposing reuse; a matching code or grade is not a source comparison.",
+    "Every referenced prior protocol and its full actual French corpus, phonological, connected-text, reflection, planning, feedback, process-language and goal-setting duties remains required. Reference resources must be prepared and checked before use; a word bank, short greeting or whole-language age label is insufficient.",
+    "Actual French performance must be collected anew for the selected tasks; neither prior English results nor a different French corpus automatically certifies this work. Source-fit authoring is distinct from observed attainment.",
+    "Primary grade contexts are10–11 and11–12 only; retained historical intervals and all authored claims/guides/edges stay exact. No new level, grade or country clone.",
+    "Culture is deliberately unlinked here: Quebec and eastern/western/northern Canadian knowledge require their own actual-source, community and channel review. The earlier Ontario factual topic is not automatically broadened."
+  ],
+  "independentReview": {
+    "sourceClausesRead": 64,
+    "priorWholeClaimsCompared": 26,
+    "materialNewClaims": 0,
+    "reviewCorrection": "Grade5 near-miss now names its own actual source conditions rather than impose Grade6-specific duties.",
+    "complexityRefinement": "Publisher page17 guidance prompted concrete Grade5 and Grade6 portfolios, preserving the 26 shared topics, exact earlier whole-claim bindings and all182 pairs. Similar complexity is a resource/performance condition, not a new difficulty level or a numerical length threshold."
+  }
+}

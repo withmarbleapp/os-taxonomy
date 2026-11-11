@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "9cc871b1020f3a8cab7e9d2384f1b61ddbcde187",
+  "status": "Reviewed source-fit authoring design using unchanged existing claims; not observed learner performance.",
+  "officialSource": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+  "sourceEdition": 2018,
+  "code": "B3.7",
+  "ageBand": [
+    9,
+    10
+  ],
+  "contributors": [
+    {
+      "topicId": "mt_ejht12jhm2",
+      "role": "Whole grid-reference construction/interpretation and directional location/path operation."
+    },
+    {
+      "topicId": "mt_w4cUnN_SsQ",
+      "role": "Actual two-dimensional map/key/label interpretation and creation; retained complete prerequisite checked separately, not inferred from a source link."
+    }
+  ],
+  "resources": [
+    {
+      "id": "political-canada-reference",
+      "publisher": "Natural Resources Canada",
+      "url": "https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/can_eng.pdf",
+      "metadata": "https://open.canada.ca/data/en/dataset/5a4bed82-1f5d-532f-adf0-980c212c9cd1",
+      "actualReadback": "Actual one-page PDF visually inspected, including province/territory boundaries, capital/other-place key and selected Ontario/Quebec/Manitoba labels.",
+      "dates": "Map copyright2006; portal publication metadata2022.",
+      "limits": [
+        "Use the actual political labels and key, not outdated magnetic-pole or ice annotations as current scientific data.",
+        "The named political map does not establish Indigenous territories or precise legal boundaries.",
+        "No exact distance, density or full13capital recall is inferred by this grid task."
+      ]
+    },
+    {
+      "id": "physical-canada-reference",
+      "publisher": "Natural Resources Canada",
+      "url": "https://atlas.gc.ca/phys/en/index.html",
+      "actualReadback": "Actual current national Regions layer/text/legend previously read/visually inspected for the selected Canadian Shield, Hudson Bay Lowland and Great Lakes–StLawrence Lowlands.",
+      "limits": [
+        "Keep the stated current regional convention. Physical regions and political regions are different kinds of areas.",
+        "Do not stretch different projections into one falsely precise overlay."
+      ]
+    }
+  ],
+  "protocol": {
+    "preparation": [
+      "Provide the actual political map in print and the actual physical-region reference in a digital view, with their legible keys and chosen labels. Also prepare an ORIGINAL clearly labelled schematic of selected political and physical-region locators using verified broad positions. It is a teaching diagram, not a surveyed boundary map. Give it a declared local north direction and an eight-point rose; do not assume page-up is geographic north across every projected Canada map.",
+      "Prepare a numbered-row/lettered-column grid on both a printed and a digital selected map/diagram. Keep the grid and the actual map reference together. A cell name refers to a cell or marked locator, not a point-coordinate system or a claim an entire large province fits one square.",
+      "Select Ontario/Quebec/Manitoba political labels and the three reviewed physical regions. For large/multi-cell regions, ask for a stated marked locator or an actual set of intersecting cells; make the target unit explicit and accept all supported cells. Do not infer national inventory mastery from locating supplied labels."
+    ],
+    "actions": [
+      "Teach/review north, south, east, west and the four intermediate directions northeast, southeast, southwest and northwest using the stated north reference. After study, have the learner identify/name all eight and explain between which cardinal directions each intermediate lies; do not reduce the source requirement to only four points.",
+      "Use different printed and digital views to locate selected political AND physical regions with the actual labels/key. Name a specified grid cell or cells/locator for each and give a supported directional relationship under the declared diagram reference. Distinguish a region’s label/locator from the extent of the entire region.",
+      "Rotate the original schematic while preserving its geographic north indication. Locate the same features and explain a changed page-relative position using the unchanged geographic directions; pointing to the top of the page regardless of the north reference is insufficient. This diagram exercise does not pretend the source maps share a projection or a single globally vertical north.",
+      "For the complete unchanged grid claim, create a small letter/number cell grid over a familiar park/classroom plan, list grid addresses for at least three features and describe a route using grid references and directions. Preserve the full earlier map/key/label requirement by drawing a familiar-place map from above, adding a key/landmark labels and explaining relative locations. These whole-claim checks remain separate from identifying supplied Canadian names.",
+      "Transfer to a differently styled print/digital map with a changed grid origin/labels and a declared north reference. Explain why the same place can receive a different grid address without moving, and locate selected region labels/locators accurately rather than memorize one colour or address."
+    ],
+    "positive": "Demonstrates all eight directions and uses them with number/letter cell references to locate selected political and physical regions across actual print/digital maps, with complete map/grid creation and changed-view checks.",
+    "nearMiss": [
+      "Calls the page top north after the schematic rotates away from its north arrow.",
+      "Gives a point coordinate when asked for a named cell, or assumes a whole region occupies only its label’s square.",
+      "Uses only a printed map and merely names a digital app.",
+      "Claims the capital/province knowledge inventory is mastered because a supplied name was found in a cell."
+    ],
+    "performanceConditions": {
+      "directionNames": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "regionKinds": [
+        "political",
+        "physical"
+      ],
+      "mapViews": [
+        "print",
+        "digital"
+      ],
+      "gridUnit": "letter-number cells; marked-locator or intersecting-region cells explicitly specified",
+      "northReference": "declared local reference; preserved under original-diagram rotation",
+      "wholeClaimChecks": [
+        "map-construction-key-label-relative-location",
+        "grid-construction-addresses-route",
+        "changed-view/changed-grid transfer"
+      ]
+    },
+    "limits": [
+      "No magnetic mechanism, compass-instrument calibration, latitude/longitude numerical calculation, formal scale-drawing or new8-point topic is imported.",
+      "Actual region names can be supplied for this spatial-operation task. Canadian name/capital knowledge remains independently qualified elsewhere.",
+      "The design is untested authoring coverage, not a delivered software lesson or observed learner performance."
+    ]
+  },
+  "proposedAssociations": {
+    "mt_ejht12jhm2": [
+      "B3.7"
+    ],
+    "mt_w4cUnN_SsQ": [
+      "B3.7"
+    ]
+  },
+  "readiness": "Grid → map creation → familiar plan → positional language are unchanged hard paths. The complete grid/map tasks check actual prerequisite performance. Finding places on a plan has global end age9 and no new CA9–10 context here: runtime selection readiness is a separate consumer concern, not repaired by fabricated prerequisite associations or changed ages. The authoring protocol can assess those skills without asserting learner mastery.",
+  "boundary": "Two exact CA/Ontario9–10contexts are proposed, preserving all old contexts and complete claims. Existing generic directions/grid operations genuinely contribute; the four extra direction names required by the source are taught/checked in the protocol, not a new grade/difficulty clone."
+}

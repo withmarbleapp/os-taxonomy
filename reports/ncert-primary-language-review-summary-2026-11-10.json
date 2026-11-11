@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "47dd248ae2ef40659c1978e784ee6c5137e423f1",
+  "reviewedRecords": 90,
+  "sourceSets": [
+    {
+      "report": "ncert-foundational-language-framework-2026-11-10.json",
+      "source": "ncert-ncfse-2023-ed2024",
+      "records": 21,
+      "summary": {
+        "Full": 14,
+        "ConditionalLanguageBinding": 5,
+        "ConditionalGraphRepresentation": 1,
+        "ContextualReadingEngagement": 1
+      }
+    },
+    {
+      "report": "ncert-preparatory-language-framework-2026-11-10.json",
+      "source": "ncert-ncfse-2023-ed2024",
+      "records": 35,
+      "summary": {
+        "Full": 20,
+        "ConditionalGraphRepresentation": 6,
+        "ConditionalLanguageBinding": 5,
+        "ContextualReadingEngagement": 4
+      }
+    },
+    {
+      "report": "ncert-english-l2-suggestive-alignment-2026-11-10.json",
+      "source": "ncert-fs-2025",
+      "records": 34,
+      "summary": {
+        "Full": 31,
+        "SkillWithContextualEngagement": 3
+      }
+    }
+  ],
+  "combinedSummary": {
+    "Full": 65,
+    "ConditionalLanguageBinding": 10,
+    "ConditionalGraphRepresentation": 7,
+    "ContextualReadingEngagement": 5,
+    "SkillWithContextualEngagement": 3
+  },
+  "graph": {
+    "newContexts": 57,
+    "newAssociations": 142,
+    "sharedTopics": 36,
+    "newClaims": 0,
+    "registeredHardToSoftCorrections": 5
+  },
+  "interpretation": "Roles are not fixed named languages; English-L2 is an explicitly named separate source. Source-fit authoring, conditional graph/script representation, contextual engagement and learner attainment remain separate. No automatic universal mastery or learner-state transfer.",
+  "remaining": {
+    "catalogueRecords": 570,
+    "reviewed": 196,
+    "pending": 374,
+    "subjects": {
+      "observationAndReasoning": 15,
+      "physicalDevelopmentAndPE": 114,
+      "socioemotionalAndEthical": 46,
+      "learningHabits": 23,
+      "arts": 144,
+      "theWorldAroundUs": 32
+    }
+  },
+  "unverifiedSourceDiscovery": "Advisory Hindi/Urdu extraction recovery outside the accepted catalogue remains unverified; no invented exclusions or wording."
+}

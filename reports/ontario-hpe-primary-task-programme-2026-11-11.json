@@ -1,0 +1,1128 @@
+{
+  "schemaVersion": 1,
+  "source": "the-ontario-curriculum-health-and-physical-educa",
+  "scope": "Ontario Healthy Living strand D, Grades 1–6 only:98 source positions. Active Living, Movement and cross-strand SEL are excluded by user instruction; all source catalogue records remain retained.",
+  "meaning": "Complete source-fit authoring tasks and applicable resources for D98, not learner attainment or whole-topic certification.",
+  "protocols": [
+    {
+      "id": "canadian-guide-and-nutrient-reasons",
+      "task": "Use the actual current Health Canada plate and recommendation bodies. Sort declared ingredients into vegetables/fruits, whole-grain and protein foods; use the plate proportions as a pattern reference, not a universal child portion or calorie prescription. Explain that food groups are not nutrients; use concrete food cases to distinguish energy, growth/repair and other body functions, including water. Construct a varied day pattern and adapt it to a supplied taste/cost/allergy/access constraint without declaring a culture or body good/bad. Keep the full existing nutrient inventory and day-menu check separate from any single source contribution.",
+      "conditions": {
+        "actualCanadianGuide": true,
+        "foodGroupsNotNutrients": true,
+        "notAdultPortionOrCalorieTarget": true,
+        "localGuideProportions": true
+      }
+    },
+    {
+      "id": "hunger-thirst-fullness-as-information",
+      "task": "Use neutral illustrated cases and the actual Food Guide hunger/mindful-eating bodies: an ordinary body cue, food being offered despite no noticed hunger, a changed activity/growth situation and comfort/fullness information. Recognise and explain how cues can inform choices alongside routine opportunities, access and adult medical advice. Voluntary ordinary noticing may use an accessible present sensation; never withhold food/water, manufacture hunger/fullness, require eating, ask about private intake/weight or score a child by appetite. Cues are one input, not an instruction to ignore a care plan or wait until thirsty before hydration.",
+      "wholeClaimChecks": "Present-attention contribution retains deliberately selecting a focus, noticing an honest attention shift and returning in a changed context; no cue naming alone certifies it. Body Needs retains its entire food/water/sleep/exercise inventory; it alone does not teach every cue-guideline condition.",
+      "conditions": {
+        "allThreeCueTypes": true,
+        "oneInputNotUniversalRule": true,
+        "noDeprivationOrForcedEating": true,
+        "noWeightOrPrivateIntakeScore": true,
+        "noManufacturedAttentionShift": true
+      }
+    },
+    {
+      "id": "feasible-meals-safe-ingredients-and-guidelines",
+      "task": "Use original supplied meal cases with declared ingredient and access information: a no-salt-added chickpea/vegetable curry with brown rice, a vegetable/whole-grain/protein lunch and an alternative when an adult-specified ingredient is unsuitable. Identify what the learner can choose and what an adult/environment controls. Check actual ingredient information and applicable adult medical support; no food challenge, medication or tasting is required. Compare at least two feasible options and consequences before choosing. Grade6 develops guidelines reflecting medical, emotional, practical and social factors rather than judging another household.",
+      "wholeClaimChecks": "Food-hygiene contribution retains actual safe preparation/cleaning/storage/allergy checks separately, with adult oversight. Mere reading of a menu is not the full cooking-safety operation. Decision-making retains two options/consequences/reasoned choice, not only stating the right food.",
+      "conditions": {
+        "controllableAndUncontrollable": true,
+        "adultDefinedMedicalConstraint": true,
+        "noAllergyChallenge": true,
+        "twoFeasibleOptions": true,
+        "noHouseholdBlame": true
+      }
+    },
+    {
+      "id": "food-origins-processing-and-environment",
+      "task": "Trace two declared cases, such as a grown chickpea made into a canned ingredient and a vegetable used fresh/frozen or in a prepared dish. Explain that ingredients and additions can alter nutrient content, while freezing/canning/drying can preserve food; not all processing is harmful. Use the actual Health Canada processing body rather than invented nutrient-retention percentages. Follow production, preparation, consumption and disposal; explain resource use and the difference between preventing edible-food waste and sending organic waste to landfill, using the actual ECCC body. No uncontrolled compost experiment, unsafe spoiled food or universal local/organic-is-better rule.",
+      "wholeClaimChecks": "Food/fibre production contributes origin and process knowledge. Its complete cropping, grazing, horticulture, aquaculture, forestry/wool/cotton and attributed First Nations management checks remain broader separate assessments; one chickpea journey does not certify them or turn an Australian First Nations example into Canadian content. The explicit source task adds the nutrition/disposal connection; no full cooking-property or managed-environment claim is inferred.",
+      "conditions": {
+        "originAndPreparation": true,
+        "nutritionAndEnvironment": true,
+        "notAllProcessingBad": true,
+        "consumptionAndDisposal": true,
+        "noInventedRetentionPercent": true
+      }
+    },
+    {
+      "id": "oral-health-and-food-choices",
+      "task": "Compare a declared water choice with frequent sugary-drink exposure and explain an oral-health implication using current Health Canada processing guidance, which explicitly links frequent sugary drinks with cavities in children. Explain why oral health matters and assess the choices, not just recite brushing. Retain the actual appropriate hand/tooth/cough hygiene whole-card tasks separately; no inspecting classmates mouths, inducing decay, body judgment or dental diagnosis.",
+      "conditions": {
+        "oralHealthImportance": true,
+        "assessFoodChoiceEffect": true,
+        "noInjuryOrDiagnosis": true,
+        "hygieneAloneNotWholeSource": true
+      }
+    },
+    {
+      "id": "cultural-food-range-without-forced-tasting",
+      "task": "Use the actual Health Canada food-guide version of Chickpea and vegetable curry and its brown-rice suggestion, together with the actual plate mixed-dish examples and a locally appropriate food card. Identify vegetable/protein/whole-grain contributions and explain how a different preparation can widen available healthy choices. Attribute this particular published version; curry is not one universal national or cultural recipe. No tasting, spice tolerance, ritual performance, private family identity or blanket claim about another community is required.",
+      "conditions": {
+        "actualAttributedRecipe": true,
+        "expandChoiceRange": true,
+        "noUniversalCultureClaim": true,
+        "noTastingCriterion": true
+      }
+    },
+    {
+      "id": "eating-habit-goal-and-helping-others",
+      "task": "Plan a safe manageable eating-related routine using the actual Canadian guide, record it across a week, reflect on barriers and adjust a realistic interest-based goal. Later panels compare settings such as school/home/community and offer one feasible health-support action for another person without policing their body or diet. Record real evidence only at actual use; a provided template is not an invented learner history. Personal health details can remain private, with an adult-defined supplied case used for explanation.",
+      "wholeClaimChecks": "Retain full routine week tracking/reflection/support and goal timeframe/steps/monitor/adjust. Do not infer a growth-mindset belief or manufacture frustration from completed diet-task steps. This is authored assessment design, not observed uptake.",
+      "conditions": {
+        "actualWeekRecordAtUse": true,
+        "goalTimeframeAndAdjustment": true,
+        "supportOthersWithoutDietPolicing": true,
+        "noInventedLearnerHistory": true
+      }
+    },
+    {
+      "id": "food-marketing-and-health-message-critique",
+      "task": "Compare the actual government healthy-eating message with an explicitly original pretend food promotion: StarPower Crunch promises popularity with a celebrity-style character and a free token but provides no nutrient evidence. Identify commercial purpose and two influence techniques; check information rather than treat popularity as health proof. Reflect on an actual current response or safely chosen prior message without forcing a private purchase disclosure or claiming the child was influenced. For the inherited real-advertising prerequisite, inspect the actual LEGO10698 Canadian manufacturer advert: emotive creative-play language, product-variety/storage features and a shipping promotion. Use it as a real persuasion example, not an endorsement; no buying/signup/cart action. Separately use two original stated-price comparable-toy cases for value-for-money reasoning and retain the full needs/wants/money checks without asserting a universal history of barter.",
+      "wholeClaimChecks": "Whole health-message interpretation retains inform/persuade/sell distinction, techniques and honest reflection. Whole Advertising & Spending has its own real-advert/two-technique/value/recalled-influence checks; a government warning alone does not supply that entire claim. No edge is weakened and a lack of recalled personal influence is insufficient evidence, not an invented deficit.",
+      "conditions": {
+        "governmentAndCommercialContrast": true,
+        "foodChoiceInfluenceEvaluated": true,
+        "twoTechniques": true,
+        "realAdvertForInheritedWholeCheck": true,
+        "noCommercialAction": true,
+        "noForcedPrivateDisclosure": true
+      }
+    },
+    {
+      "id": "eating-and-active-living-combination",
+      "task": "Use a self-contained fictional daily-life case with a feasible Canadian eating pattern and ordinary accessible activity/rest options. Explain how the two can jointly support physical health and mental well-being, with the checked government evidence and without claiming that either guarantees mood, appearance or freedom from illness. Actually create and share a benign health-promotion message that gives others a practical eating idea and an accessible ordinary activity/rest idea, explains their complementary value and avoids body or weight targets. No exercise, sport, fitness test, personal diet record or excluded Active Living programme qualification is required.",
+      "conditions": {
+        "bothDomains": true,
+        "physicalAndMental": true,
+        "promoteBoth": true,
+        "noAppearanceTargetOrCureGuarantee": true,
+        "selfContainedFictionalKnowledgeCase": true,
+        "actualHealthPromotionCommunication": true,
+        "requiresPEParticipationOrQualification": false
+      }
+    },
+    {
+      "id": "canadian-label-and-separate-whole-transfer",
+      "task": "Use the actual Canadian Nutrition Facts figure1 and ingredient/Contains image plus the actual current High-in explanation. Keep serving basis, ingredient/allergy information and nutrient-warning meaning distinct; no per 100 g Canadian column or overall Canadian star rating is invented. Separately use the original four two-column practice panels and given-rating case set. Locate per 100 g values for both cereals and both snacks, compare the specified nutrients on equal quantity, and justify a same-category choice using panel and rating together. The ratings are hypothetical givens in an explicitly Australian-context transfer, not algorithm-calculated commercial HSR scores. Whole-card success is not inferred from the Canadian task alone.",
+      "conditions": {
+        "actualCanadianServingAndIngredients": true,
+        "highInIsWarningNotOverallRating": true,
+        "noFakeCanadianPer100gColumn": true,
+        "wholeClaimTransferSeparatelyBound": true,
+        "ratingsAreHypotheticalGivens": true,
+        "notCommerciallyCalculatedScores": true,
+        "compareLikeCategories": true,
+        "noDietPortionOrAllergyAssurance": true
+      },
+      "assetRefs": [
+        "assets/ontario-hpe-programme/label-comparison.json",
+        "assets/ontario-hpe-programme/label-comparison.svg",
+        "assets/ontario-hpe-programme/label-comparison.png"
+      ],
+      "wholeClaimChecks": "Keep all three unchanged whole evidence clauses, including both cereal sugar/fibre and snack sodium/saturated-fat per 100 g comparisons, and panel-plus-rating choice in a declared applicable context. Use given numerical quantities; no HSR calculation, caloric prescription or unit conversion is a mastery gate. Existing 11–12 contexts remain unchanged; the reviewed Grade 5 task supports the exact 10–11 component association."
+    },
+    {
+      "id": "contacts-and-help",
+      "task": "Use an original school-pickup picture plan and fictional contact card: identify the agreed authorised adult and supervised waiting place, explain what to do if pickup changes, and demonstrate asking an appropriate adult for help. Rehearse an emergency call with an unconnected toy/screen using fictional details; distinguish an immediate emergency from a routine question. The adult binds the actual local pickup/contact procedure at delivery, privately. Older rows compare suitable trusted people and actual support-service functions for injury, distress, bullying, unsafe images and abuse; use the identified Kids Help Phone safe-adult information and an adult-prepared current school/community support card. Do not place a real call or submit a report as an assessment.",
+      "positive": "Selects an appropriate person/service for the situation and communicates the needed help, with a changed pickup or unavailable-first-adult case.",
+      "nearMiss": "Recites one number but cannot choose help, publishes private address/contact data, or assumes a familiar adult is always safe.",
+      "transfer": "Change from school pickup to a fictional online threat or distressed friend; identify suitable safe adult/service and another option if the first does not help.",
+      "sourceConditions": "Actual local contacts and school routines are bound privately at use; no required personal disclosure, real emergency call or claim that a child is responsible for preventing adult abuse."
+    },
+    {
+      "id": "care-boundaries-and-consent",
+      "task": "Use original non-graphic illustrated cases: a peer asks before borrowing a pencil; a child declines a hug; a carer explains necessary care; someone requests an unsafe secret or inappropriate touch. Identify caring versus harmful conduct, possible different feelings and an appropriate response. Explain who can give permission and that silence, freezing or pressure is not agreement; practise asking, waiting, respecting a refusal and choosing another option. Rehearse a clear boundary and a trusted-adult report using dolls or words, with no touch enactment. Include actual appropriate classroom permission alongside fictional unsafe cases.",
+      "positive": "Connects respectful care to permission and boundaries, respects another person’s no and identifies help for harmful conduct.",
+      "nearMiss": "Treats smiling, silence, friendship or prior permission as permission now, or blames a person who could not say no or leave.",
+      "transfer": "Change from a possession to personal space and then a photo request; preserve the relevant person’s choice and adult safeguarding response.",
+      "sourceConditions": "No actual sexual images, body inspection, simulated assault, unwanted touch, coercive role-play or private abuse history. Correct body-part/private-part knowledge remains a separate whole-card check using an ordinary labelled outline; no sensory tasting/nose-pinching from the inherited body-parts guide."
+    },
+    {
+      "id": "school-and-everyday-safety",
+      "task": "Use an adult-prepared actual school route/play area walkthrough and original home/community/online/outdoor picture cards. Identify a relevant hazard, explain a practical precaution and show the safe action where benign: stop at a marked pretend crossing, wait in the supervised area, ask before sharing food and leave a closed pictured chemical to an adult. Include a cold-storage/handwashing case and privately supplied care-plan responsibility where appropriate; no medication handling. Compare a safe online request with one asking for personal information or sending the learner away from an agreed site.",
+      "positive": "Explains the risk and applies the relevant routine, not only names a hazard sign.",
+      "nearMiss": "Gives one generic be careful answer across unlike hazards or demonstrates a dangerous exposure to prove understanding.",
+      "transfer": "Change one location, weather condition or online request; adapt the precaution and identify when adult checking is necessary.",
+      "sourceConditions": "Varied home/community/online/outdoor settings retained, examples not an exhaustive hazard inventory. Never use real chemicals, fire, traffic, railway tracks, unsafe water, animal approach, medical disclosure or unsupervised travel as a test."
+    },
+    {
+      "id": "positive-relationships-and-harm",
+      "task": "Compare original family/caregiver/peer cards involving listening, cooperation and respectful disagreement with insult, deliberate exclusion and physical aggression. Describe possible feelings without requiring the target to show distress. Actually practise listening, an appropriate need/boundary statement and a benign shared-work compromise; use a fictional adult-harm case only to identify reporting and support, not to negotiate with the abusive person. Explain that anger can occur without making hurting someone acceptable.",
+      "positive": "Distinguishes a feeling from a harmful action and demonstrates a constructive interaction while retaining adult safeguarding for abuse.",
+      "nearMiss": "Treats crying or disagreement as wrongdoing, excuses violence as anger, or requires compromise with abuse.",
+      "transfer": "Change a face-to-face disagreement into a fictional group-chat conflict and retain respectful communication and safe help.",
+      "sourceConditions": "No forced smiling/calm feeling, apology or private family disclosure. Whole friendship and conflict-card evidence is checked separately from one kindness statement; actual safe listening/compromise is required where linked."
+    },
+    {
+      "id": "concussion-knowledge-and-school-plan",
+      "task": "Read the actual Ontario Rowan’s Law ages10-and-under booklet (including age10); use the ages11–14 booklet for older primary learners with a prepared adult: a concussion is a brain injury and can follow a hit to the head or a jolt to the body that moves the brain. Use original no-contact illustrated cases involving a fall or collision, including a case without obvious loss of consciousness. Explain why an adult must remove the participant safely and use the actual school-board process rather than letting the child diagnose or return because they feel better. Locate the relevant school reporting adult and supplied current return-to-learning/activity plan; no impact is enacted.",
+      "positive": "Explains the injury/jolt relation and the reporting/removal/adult medical-authority boundary, not only wears a helmet.",
+      "nearMiss": "Says all concussions require fainting, a helmet guarantees prevention, or a quick symptom check lets the child self-clear.",
+      "transfer": "Change from a direct head impact to a body jolt; retain adult reporting and the school process without inventing a recovery timetable.",
+      "sourceConditions": "Actual G3 knowledge and how-it-occurs duty retained beyond a generic safety link. School protocol bound at use; no child diagnosis, medical clearance, deliberate impact, forced symptom recall or athletic return test."
+    },
+    {
+      "id": "create-safety-guidelines",
+      "task": "In a supported group or individually, create and explain an original usable set of safety guidelines for at least three contrasting out-of-class settings, including online. Work from adult-checked local route, water/play and app mock-up information; identify the hazard, preventive action, reporting/contact and what would make the plan change. Walk through a benign mock scenario to check the guidelines and revise a missing step.",
+      "positive": "Produces useful setting-specific guidelines with a reason and a changed-case revision.",
+      "nearMiss": "Copies a generic poster with no application or treats the absence of a hazard in one photo as a universal guarantee.",
+      "transfer": "Change a route closure, weather notice or unfamiliar online request and update the relevant step.",
+      "sourceConditions": "The source requires developing guidelines, not only choosing a prepared rule. No real hazard trial; local adult approval is a delivery condition, not new child clinical authority."
+    },
+    {
+      "id": "fictional-violence-and-real-consequences",
+      "task": "Use an original two-panel cartoon in which a character is pushed, bounces up and continues unchanged; clearly label it invented fiction, not footage. Compare a non-graphic factual case card stating that a real push/fall can cause pain, injury and effects on the person and family that do not disappear at the end of a scene. Explain how another game/animation may omit or reverse those consequences and why the fictional reset is not evidence that real violence is harmless. Identify safe help rather than enact the push.",
+      "positive": "Explains the mismatch between a particular fictional portrayal and possible real consequences, including effects on others.",
+      "nearMiss": "Only says violence is bad, assumes every depiction is factual or claims every injury has the same outcome.",
+      "transfer": "Change from a cartoon instant recovery to a game reset and explain the same representation limit.",
+      "sourceConditions": "Actual explanation across on/offline media retained; no violent clips, graphic injury images, enactment or deterministic medical claim. Actions-and-consequences contributes reasoning, not automatic topic-wide mastery from a single comparison."
+    },
+    {
+      "id": "communication-tech-risks-and-protection",
+      "task": "Use an original mock game-chat and a fictional weekly screen/sleep/family timetable. Identify a privacy/contact risk and a time/relationship/sleep or comparison pressure; explain a practical precaution for each. Actually practise stopping a mock unsafe interaction, locating a report/block control with an adult and choosing an offline/help option. Discuss that risk is possible, not a diagnosis or a claim that all technology harms health. Review a changed request and a competing activity plan.",
+      "positive": "Connects varied communication-technology risks to usable precautions and demonstrates the relevant mock action.",
+      "nearMiss": "Only recites a password rule, diagnoses depression from time online or forwards/saves an unsafe image to prove the problem.",
+      "transfer": "Change from a game contact to a photo request or bedtime message; retain privacy, support and a reasoned activity choice.",
+      "sourceConditions": "No real accounts, stranger contact, image upload, naked/sexual images or private screen-history collection. Adult-bound local reporting route, no Australian service relabelled Canadian. Whole protective-action report/block checks remain explicit; advanced algorithm/AI ethics or financial scams are not assumed prerequisites."
+    },
+    {
+      "id": "bullying-abuse-and-help",
+      "task": "Compare original non-graphic physical, verbal, exclusion and mean-message scenarios. Include repeated aggression with unequal power, a one-off serious harmful act and a mutual disagreement; explain possible impacts and safe responses without requiring the target to prove intention or wait for repetition. Use current Ontario guidance to distinguish conflict from bullying and recognise that all harm still warrants appropriate help. Rehearse an adult report and a safe bystander option; do not confront an aggressor or force mediation of abuse. For older rows include non-consensual image sharing by words/icons only, with no real image or screenshot.",
+      "positive": "Identifies the conduct, power/permission concerns and suitable support/action, without minimising a single incident.",
+      "nearMiss": "Says no help is needed until it happens twice, assumes calm appearance proves consent or requires the target to settle abuse by compromise.",
+      "transfer": "Change the medium or relationship and retain the same safeguarding and non-blame principles.",
+      "sourceConditions": "The reviewed context-aware bullying description and first evidence criterion are applied. Ontario and Australian definition frames remain explicitly attributed; neither is a universal replacement. All old contexts and edges remain unchanged. Help does not wait for repetition, intent proof or a legal label."
+    },
+    {
+      "id": "apply-risk-decision-cycle",
+      "task": "Actually work through original practical scenarios for preparing food, an accessible route and an online request: identify danger, generate at least two viable options, weigh likely consequences and adult-check needs, choose and act in a benign mock-up, then reflect and improve. Include one changed condition that makes the first plan unsuitable.",
+      "positive": "Uses the process through action and reflection across different settings rather than lists its names.",
+      "nearMiss": "Chooses an answer without alternatives/reasons, only discusses action or blames a person harmed despite precautions.",
+      "transfer": "Change a resource or support and revise the plan with an explained consequence.",
+      "sourceConditions": "No dangerous enactment or child guarantee of preventing harm. Whole decision/consequence checks retained; advanced quantified risk or cognitive-bias models are not imported."
+    },
+    {
+      "id": "respond-to-threat-and-support",
+      "task": "Use clearly fictional non-graphic cards for an unsafe request, a threatening message and a person needing help. Prepare a short safe-response plan: notice relevant cues, choose a boundary/refusal or move-to-adult option, practise communicating the need and identify a fallback adult/service if the first is unavailable. Distinguish safe peer disagreement from coercion/abuse, which calls for adult protection rather than negotiated consent. Demonstrate on a neutral mock-up, not an ambush or fear test.",
+      "positive": "Applies an appropriate safety/communication strategy and explains the next source of support in a changed situation.",
+      "nearMiss": "Only looks confident, implies freezing makes harm the child’s fault or demands a distressed child perform a polished refusal.",
+      "transfer": "Move from a fictional in-person request to online contact and adapt the response and support route.",
+      "sourceConditions": "No manufactured fear, unsafe touch, personal disclosure or appearance/eye-contact/calm-mood criterion. A real inability to escape/refuse never removes the right to help."
+    },
+    {
+      "id": "impact-inclusion-and-conflict",
+      "task": "Use original cases of a hurtful sexist/racist/homophobic comment, exclusion or unconsented image request, expressed only in age-appropriate description rather than slur reproduction or images. Explain how conduct may affect feelings, identity, well-being and reputation even if the speaker meant a joke. Propose and actually carry out a safe inclusive group-work action and listen to the other person’s preference; describe benefits to them and to oneself. In a benign real work-choice disagreement, express a need, listen, consider a compromise and check its effect; repeat in a mock online exchange.",
+      "positive": "Connects intent versus impact, inclusion and actual constructive interaction, with a concrete changed action.",
+      "nearMiss": "Only declares be kind, assumes smiling proves no harm or makes a targeted person responsible for forgiving or educating the group.",
+      "transfer": "Change identity/context and medium; retain respect and an appropriate action without stereotyping everyone’s feelings.",
+      "sourceConditions": "No private identity disclosure, compelled affiliation, slur rehearsal, public humiliation or forced positive feelings. Full prejudice/friendship/conflict/impact evidence remains separate where linked; no learner attainment inferred from a group product."
+    },
+    {
+      "id": "care-responsibility-and-emergency-plan",
+      "task": "Use two original supported-care plans: an adult-supervised errand for a neighbour and preparing an agreed safe snack with a supplied fictional allergy plan. Identify what the learner can responsibly do, what needs an adult, relevant hazards and prevention, who to contact and the local emergency procedure. Compare a changed dangerous situation such as a fire alarm or possible reaction and explain stopping/obtaining adult help. Demonstrate benign steps only; the task does not certify independent babysitting, emergency treatment or unsupervised travel.",
+      "positive": "Relates responsibility and risk to an appropriate preventive/responding plan, recognising limits of one’s role.",
+      "nearMiss": "Lists risks without a usable procedure or attempts medicine, fire response or actual food exposure to demonstrate competence.",
+      "transfer": "Change the cared-for person’s access need or the location/support and adapt the plan without assuming one rule fits all.",
+      "sourceConditions": "Varied self/other-care duties retained; examples illustrative, not every medical emergency an extra topic. Individual/local procedures are adult-bound; actual help and fictional practice separated."
+    },
+    {
+      "id": "food-allergy-known-and-unknown-cases",
+      "task": "Use all three original case sets in ontario-hpe-allergy-claim-2026-11-11.json and the complete associated guide: varied known triggers, the same milk food linked to two supplied different conditions, and an unexplained possible reaction. Identify possible skin/breathing/digestive reactions without diagnosing from a symptom. Explain prompt prepared-adult help and supplied individual/emergency procedure, with no trial exposure or multiple-symptom threshold.",
+      "positive": "Explains the bounded trigger/reaction model and its uncertainty in a changed fictional case.",
+      "nearMiss": "Only checks whether food is clean, recites ask an adult without the knowledge, or diagnoses/tests a food from the case.",
+      "transfer": "Change the named food and then remove the known clinical identity; retain appropriate uncertainty and adult help.",
+      "sourceConditions": "Examples span several food families but are not an exhaustive allergy list. Fictional illustrations only; no exposure, private history, medicine, independent diagnosis or clinical triage."
+    },
+    {
+      "id": "body-names-and-respect",
+      "task": "Use an adult-prepared ordinary educational body outline and the actual external anatomy view from the attributed health resource, without any learner undressing or body comparison. Identify the main taught body parts and distinguish penis/testicles, vulva and vagina using correct respectful terms. Explain that bodies vary and that anatomical words name parts rather than insults or a person’s gender identity. Keep necessary-care/permission and trusted-adult-help checks separate under the existing whole body-autonomy claim.",
+      "positive": "Correctly locates/names the taught parts with neutral language and distinguishes an external region from an internal canal.",
+      "nearMiss": "Uses one vague word for every part, treats anatomical naming as permission to touch, or judges a person by appearance.",
+      "transfer": "Change diagram orientation/skin tone and ask for the same structure without comparing actual bodies.",
+      "sourceConditions": "Factual educational anatomy only; no body inspection, touch enactment, private sexual/medical history or demanded identity disclosure."
+    },
+    {
+      "id": "senses-and-brain-function",
+      "task": "Use safe picture and real benign examples for all five senses: see a coloured shape, hear a comfortable quiet sound, feel a room-temperature texture with consent, describe familiar taste and smell examples without tasting/sniffing unknown material. Explain what each organ detects and that nerves carry information for the brain to interpret. Actually build/narrate a deliberate eye-to-brain-to-hand catch/point model and a changed hearing example for the complete existing brain-control check. Do not describe nasal hairs as the smell-message pathway or make every rapid withdrawal a conscious brain decision.",
+      "positive": "Explains each sense’s functional contribution and the information/brain/response relation using an accurate changed example.",
+      "nearMiss": "Only lists organs, assigns smell messages to hairs, or claims all sensory responses must wait for a conscious decision.",
+      "transfer": "Change the starting sense and describe what information is detected and how an appropriate deliberate response follows.",
+      "sourceConditions": "No blindfold/nose-pinching/food challenge, hot tray, loud sound or deprivation. Descriptive taste/smell cases are acceptable; old guide bytes/flags remain unchanged."
+    },
+    {
+      "id": "hygiene-and-oral-performance",
+      "task": "Actually demonstrate a full safe handwashing routine and a cough/sneeze-covering routine; explain when these reduce transmission and how personal items are safely handled. Use an ordinary toothbrush/floss demonstration model to show an appropriate brushing/flossing method and explain why regular dental advice matters. Privately choose an adult-supported personal-care routine without disclosing medical history or exposing the body; any real brushing/bathing occurs only in the ordinary private care setting, not as classroom inspection.",
+      "positive": "Demonstrates the benign skills and connects them to health/transmission and oral care rather than naming products alone.",
+      "nearMiss": "Recites wash hands while omitting important action, shares a toothbrush for a test or treats access to a dentist as a moral achievement.",
+      "transfer": "Change from before-food to after-toilet/cough context and explain the relevant action; adapt the supported routine to a changed ordinary school day.",
+      "sourceConditions": "No observed private washing, product insertion, genital handling, medical diagnosis or required purchase. Adult care advice/access remains a real delivery condition."
+    },
+    {
+      "id": "life-course-and-health-factors",
+      "task": "Order an original varied human life-course set from infancy through later adulthood and describe physical, thinking/feeling and social changes without presenting one family or ability pattern as universal. Explain how food/water/sleep/movement, safe surroundings and caring support can contribute to growth and living at different stages. Compare an infant needing care, a school child learning and a later adult with different possible supports; age does not determine worth or one fixed capability. Retain the existing animal-offspring/changed-young-to-adult example separately if that broader card is assessed.",
+      "positive": "Orders the broad stages, describes relevant changes and gives reasons for varied physical/mental/social/environmental supports.",
+      "nearMiss": "Only says people get taller, ends development at adulthood or assumes every older adult is helpless.",
+      "transfer": "Change the fictional person’s access need or life stage and choose/explain a relevant support.",
+      "sourceConditions": "No personal puberty deadline, family-history disclosure, ageing simulation or health deprivation. Animal-group inventory is a separate unchanged hard-chain assessment, not an extra HPE mandate."
+    },
+    {
+      "id": "body-capability-care-and-image",
+      "task": "Invite a low-stakes private or fictional reflection on what a body does, how it can be cared for and how respect can continue through change. Use original cases showing different abilities, skin/body features and access supports; compare a helpful care/support message with a stereotype or appearance-only judgement. Explain several factors affecting physical development, feelings/belonging and thoughts about the body. A learner can name frustration or dislike of a change while still identifying respect, care and support.",
+      "positive": "Connects actual body functions/care with respectful responses and varied influences, without ranking appearance or forcing a positive feeling.",
+      "nearMiss": "Says only one shape or ability deserves respect, equates body image with weight, or treats a smile as proof of acceptance.",
+      "transfer": "Change the fictional stage, ability or social message and retain care/respect while acknowledging feelings can differ.",
+      "sourceConditions": "Appreciation/comfort is contextual, not a binary forced-liking score. No body measurement, comparison, weight target or personal health disclosure."
+    },
+    {
+      "id": "healthy-relationships-and-consent",
+      "task": "Compare original caring/respectful friendship cases with exclusion, pressure or abusive conduct, identify the difference and explain an appropriate response. Actually practise asking/waiting/respecting a no in a benign possession or personal-space scenario. For older consent rows, explain freely given and changeable agreement, practise clear giving/refusing and stop/check for uncertainty; apply a reasoned decision in a changed photo/device/game scenario. Use fictional harm only to identify adult support, never to negotiate abuse.",
+      "positive": "Explains healthy relationship features and actually demonstrates a respectful permission/consent and safe-response strategy.",
+      "nearMiss": "Assumes friendship/silence means agreement or says the target is at fault for freezing or being unable to leave.",
+      "transfer": "Change from a peer interaction to a mock online photo request and retain choice, privacy, support and changed-consent boundaries.",
+      "sourceConditions": "No touch enactment, unsafe request ambush, sexual image, coercion, private relationship history or forced confidence/eye contact."
+    },
+    {
+      "id": "visible-and-unseen-differences",
+      "task": "Use original fictional people with visible features and supplied less-visible preferences, beliefs, talents, learning/access needs or family experiences. Explain how neither appearance nor one label tells a whole identity, and choose/actually perform a safe respectful inclusion in ordinary group work. A person need not disclose an unseen characteristic for it to be respected.",
+      "positive": "Distinguishes visible from not-readily-visible differences and connects respect to a concrete action.",
+      "nearMiss": "Infers ability, beliefs, orientation or medical status from clothing/body features, or forces disclosure to justify inclusion.",
+      "transfer": "Change which information is supplied and explain what remains unknown and how to act respectfully.",
+      "sourceConditions": "No diagnosis or compelled cultural/medical/sexual identity disclosure. Differences are not a deficit ranking."
+    },
+    {
+      "id": "puberty-whole-overview-and-social-change",
+      "task": "Use an original life-stage sequence and the current attributed health puberty resources to describe varied physical changes and possible emotional/social effects. For the complete existing puberty claim, order six or more stages, explain the broad uneven growth pattern and trace a simple gland-to-blood-to-change hormone-message model; do not introduce named feedback loops. Compare two same-age fictional people whose changes differ in timing. Discuss possible effects on friendships, privacy, independence, confidence and support without assuming everyone has a crush or feels the same way.",
+      "positive": "Explains bodily changes, the broad hormone-trigger mechanism and varied possible social/emotional effects with a changed case.",
+      "nearMiss": "Names hair/height alone, treats a fixed birthday as a deadline or attributes every feeling directly to one hormone.",
+      "transfer": "Change stage/timing or a social situation and explain a reasonable care/support response without diagnosing.",
+      "sourceConditions": "No actual development inspection, growth measurement, puberty-status disclosure or universal body timetable. Older whole reproduction knowledge is not inferred."
+    },
+    {
+      "id": "puberty-personal-care",
+      "task": "Explain how changing sweat/skin and ordinary daily activity can affect personal care, then make a feasible adult-supported private routine for washing, clean clothes, oral care and relevant individual equipment/access support. Actually demonstrate only benign public skills such as handwashing and model tooth cleaning; use clean unused product pictures/models for selecting suitable support, not personal application or inspection. Review an ordinary week privately and adjust a practical barrier with adult help.",
+      "positive": "Links the changed needs to a usable routine and demonstrates appropriate benign hygiene rather than only buying a product.",
+      "nearMiss": "Treats acne/body odour as proof of dirtiness or requires actual private washing to be observed.",
+      "transfer": "Change the activity/access conditions and adapt the routine with a reason.",
+      "sourceConditions": "No forced foreskin movement, internal cleaning, product insertion, medicine, body comparison or private-care surveillance; actual personalised advice stays with caregivers/clinicians."
+    },
+    {
+      "id": "g5-reproductive-knowledge-separate-binding",
+      "task": "Use the actual current OPH egg printed13/14 and sperm printed12 anatomy/process resources plus reproduction printed7–8. Hide labels, identify main structures and explain each function, including vulva/vagina and reproductive versus adjacent urinary/digestive organs. Trace egg release and variable uterine-lining shedding, and separately sperm production/maturation/transport with sperm distinguished from semen. Explain how the processes relate to possible fertilisation/implantation and development, while physical reproductive capability does not establish readiness for sex or parenting. Use changed view and scrambled process cards, not a personal body or cycle history.",
+      "positive": "Actually explains both required source processes, structures/functions and their reproduction/development relation.",
+      "nearMiss": "Only names external puberty changes, calls menstrual blood urine, places sperm production in the bladder or treats the example cycle as everyone’s fixed schedule.",
+      "transfer": "Change diagram orientation and distinguish the no-pregnancy shedding route from gamete joining/implantation without a precise-day prediction.",
+      "sourceConditions": "Actual Grade5 reproductive structures/processes are independently assessed. The separate complete reproduction-whole-fit task accounts for the full existing tQk claim at the exact reviewed10–11 context, including gestation/birth/placental exchange and maternal effects; no inference from a puberty-only answer."
+    },
+    {
+      "id": "identity-intersections-and-support",
+      "task": "Use a fictional identity map showing qualities, people, places, culture, abilities, body-image messages, support and orientation as intersecting aspects of a person’s self-concept. Define orientation factually without assigning it from anatomy, appearance or stereotypes, and distinguish it from gender identity/expression where useful using the actual public-health FAQ. Explain how inclusion, supportive relationships and challenging stereotypes can support well-being; they do not cause or choose someone’s orientation. For the existing identity whole-card check, a learner may privately use ordinary likes/strengths/groups/place examples without disclosing protected identity or distress.",
+      "positive": "Explains interacting influences on self-concept and a practical support/response without deterministic claims or disclosure demands.",
+      "nearMiss": "Treats family/media as a simple cause of orientation, assumes anatomy identifies gender/orientation or requires a learner to label themselves.",
+      "transfer": "Change a fictional person’s support or stereotype context and explain a constructive response while preserving what is unknown.",
+      "sourceConditions": "No identity test, coming-out task, belief compliance, private orientation disclosure or fixed national cultural model."
+    },
+    {
+      "id": "puberty-stress-help-and-coping",
+      "task": "Use three original fictional cases: an ordinary question about a body change, a disagreement about new independence and persistent distress interfering with daily life. Describe possible emotional/interpersonal stresses and distinguish a need for professional adult support from diagnosing by one mood. Choose an appropriate coping strategy, rehearse asking a trusted adult and plan/rehearse a benign upcoming transition; after an ordinary real change reflect privately on what helped. Include access to accurate information and a fallback helper, without promising one strategy cures a mental-health condition.",
+      "positive": "Recognises a concerning pattern as a reason to seek help, chooses a contextual strategy and actually rehearses communication/transition support.",
+      "nearMiss": "Diagnoses a condition from one sad moment, claims everyone must be happy about puberty or treats coping as a substitute for necessary professional care.",
+      "transfer": "Change the stressor or first support’s availability and adapt the response with a reason.",
+      "sourceConditions": "No induced distress, private symptom score, medical diagnosis, forced sharing or treatment prescription. Whole coping/check-after-change evidence remains separate from a fictional safe-help answer."
+    },
+    {
+      "id": "nonexplicit-media-representation-limits",
+      "task": "Use three original non-graphic statement cards about fictional staged sexual media: a portrayal omits asking or checking consent; bodies are edited/presented in one narrow way; a scripted interaction is offered as a guide to caring relationships. No image, sexual-act description, video or website is shown or sought. Explain how such portrayals can give a limited/unrealistic account of bodies, gender expectations and relationships, and compare them with respectful communication/consent and varied real people. State that effects can vary and that accidental exposure is not the child’s fault; a trusted adult can help.",
+      "positive": "Explains a concrete possible representation/expectation mismatch and an appropriate respectful alternative, not merely labels media bad.",
+      "nearMiss": "Treats a staged depiction as proof of real consent/body norms or shames a child who encountered material.",
+      "transfer": "Change the misleading claim and explain its limit without viewing actual material or assuming everyone is affected identically.",
+      "sourceConditions": "The source’s explicit-media knowledge duty is retained with a non-explicit discussion design; general stereotype knowledge alone does not establish it. No pornography access/search, real image, disclosure, diagnosis or universal causal claim."
+    },
+    {
+      "id": "stereotypes-impact-and-change",
+      "task": "Use original non-slur fictional examples about gender expectations, orientation, race/culture, mental health and abilities. Explain possible effects on self-concept, inclusion and relationships, distinguish an individual from a group assumption and propose a specific response. Actually practise a safe inclusion or correcting-question response in ordinary group work, without making a targeted learner educate the group.",
+      "positive": "Connects a particular assumption to possible harms and a reasoned constructive change across varied contexts.",
+      "nearMiss": "Only says be nice, repeats a slur, treats a stereotype as fact or asks a peer to disclose identity to disprove it.",
+      "transfer": "Change the group/context and explain what carries over and what needs checking rather than replacing one stereotype with another.",
+      "sourceConditions": "No compulsory positive feeling, private identity disclosure, public humiliation or universal response claimed for a community."
+    },
+    {
+      "id": "reproduction-complete-whole-fit",
+      "task": "First use the OPH Grade5 diagrams and process tasks, then hide labels. Identify both systems’ structures and explain functions in own words. Explain sperm and egg roles and where/what fertilisation is. Arrange and explain the complete development/birth sequence. Build and explain the placental exchange model, rejecting blood-mixing and stomach-growth alternatives. Apply the supplied maternal-effect fact to the same model. Separately explain menstruation when no pregnancy occurs and sperm production beginning at puberty, their relation to reproduction and normal variation. Spoken, pointed, drawn or written explanations are allowed; naming alone does not replace causal explanation.",
+      "positive": "Coordinates structures/functions, gamete joining in the oviduct, implantation and growth in uterus, birth and two-way exchange across separate blood supplies; uses the maternal-effect case coherently and retains the actual Grade5 menstrual/sperm-production duties.",
+      "nearMiss": [
+        "Correct external puberty-change list but no reproductive process explanation.",
+        "Places fertilisation in the bladder or growth in the stomach.",
+        "Calls sperm and egg merely touching rather than joining.",
+        "Shows maternal blood flowing directly into the foetus or treats placenta as a food store only.",
+        "Says a separate blood supply blocks every harmful substance.",
+        "Repeats arrows but cannot explain a reversed waste arrow or a changed diagram."
+      ],
+      "transfer": "Use a differently oriented unlabelled diagram and an unsequenced set with one deliberate error: fertilisation in uterus, baby in stomach, or waste travelling towards baby. Correct and explain it. Then explain why a harmful substance can cross although whole blood supplies normally do not mix. Contrast lining shedding without implantation against the pregnancy sequence; no fixed monthly timetable for every person.",
+      "sourceConditions": "The supplemental placental/birth/maternal-effect task is a whole-claim fit check, not an extra universal Ontario requirement. Passing only the Grade5 source task never certifies the whole tQk claim, and passing a hypothetical authoring rubric is not any learner observation.",
+      "originalAssessmentMaterials": {
+        "structureFunctionCards": [
+          {
+            "structure": "testes",
+            "function": "produce sperm after puberty begins"
+          },
+          {
+            "structure": "scrotum",
+            "function": "holds the testes outside the main body cavity"
+          },
+          {
+            "structure": "sperm duct",
+            "function": "carries sperm from the testes towards the urethra"
+          },
+          {
+            "structure": "penis/urethra",
+            "function": "semen can leave through this route; semen contains sperm and fluid"
+          },
+          {
+            "structure": "ovaries",
+            "function": "produce and release eggs"
+          },
+          {
+            "structure": "oviduct/fallopian tube",
+            "function": "carries the egg; sperm and egg usually join here"
+          },
+          {
+            "structure": "uterus",
+            "function": "its lining changes during the cycle; an implanted embryo can develop here"
+          },
+          {
+            "structure": "cervix",
+            "function": "opening between uterus and vagina"
+          },
+          {
+            "structure": "vagina",
+            "function": "passage from the uterus/cervix to outside, including menstrual flow and vaginal birth"
+          },
+          {
+            "structure": "vulva",
+            "function": "external genital parts, distinct from the internal vagina"
+          }
+        ],
+        "sequenceCards": [
+          "An egg is released from an ovary into an oviduct.",
+          "A sperm cell joins with an egg cell in an oviduct; their nuclei join.",
+          "The fertilised cell divides and the developing embryo implants in the uterine lining.",
+          "The foetus grows in the uterus over pregnancy; the placenta and umbilical cord support exchange.",
+          "At birth the uterus contracts and the baby leaves the uterus; in a vaginal birth the cervix opens and the baby passes through the vagina."
+        ],
+        "sequenceAnswer": "Use this order for the supplied fertilisation-to-vaginal-birth model; explain growth over months, not an exact due-date calculation. Birth can also occur by an operation performed by medical staff; that is not a failed or abnormal family history and is not a clinical-procedure gate.",
+        "exchangeModel": {
+          "locations": [
+            "maternal blood beside the placenta exchange surface",
+            "separate foetal blood beside the exchange surface",
+            "umbilical cord joining foetus and placenta",
+            "foetus inside uterus, separate from stomach"
+          ],
+          "movableArrows": [
+            {
+              "label": "oxygen",
+              "from": "maternal side",
+              "to": "foetal side"
+            },
+            {
+              "label": "nutrients",
+              "from": "maternal side",
+              "to": "foetal side"
+            },
+            {
+              "label": "carbon dioxide/waste",
+              "from": "foetal side",
+              "to": "maternal side"
+            }
+          ],
+          "answer": "The two blood supplies normally remain separate. Substances cross the exchange surface; the cord carries the foetus’s blood to/from the placenta. Oxygen crosses by diffusion; nutrients also cross, without requiring names of all transport mechanisms. The foetus does not swallow the adult’s food or breathe outside air in the uterus."
+        },
+        "maternalEffectCase": {
+          "given": "Alcohol taken into a pregnant adult’s body can reach the developing baby and interfere with developing organs, including the brain. Outcomes vary and cannot be diagnosed from an illustration.",
+          "question": "The blood supplies are separate. Does that mean every substance is blocked? Explain how this case fits your exchange model and why a developing baby can be affected before birth.",
+          "answer": "Separate blood supplies do not mean an impermeable barrier. Some substances can cross at the placenta and reach the foetus; alcohol exposure can affect developing organs. No child or parent should be diagnosed or blamed from this fictional case."
+        }
+      },
+      "ageFitRationale": "The official Ontario Grade5 source and current OPH Grade5 materials explicitly require the reproductive anatomy/process foundation at10–11. The additional whole-card operation uses the same familiar organ diagrams and ordered growth model plus a concrete two-way exchange model; the Nemours child-facing resource supplies an accessible cord/nourishment/waste account. It requires no advanced calculations, hormone feedback, clinical timing, contraception/STI knowledge or personal disclosures. The supplemental generalisation is explainable with arrows and plain causal statements while retaining all existing whole-card criteria. The existing12–13 guidance remains valid in its own source context; it does not alone prove this exact source-fit task is unsuitable at10–11.",
+      "inheritedGuideCautions": [
+        "The old guide’s phrase that nutrients diffuse is an oversimplification. Require correct functional movement across the placental exchange surface, not a false assertion that every nutrient uses simple diffusion. Do not reject a correct explanation distinguishing transport mechanisms; advanced mechanism names are unnecessary.",
+        "The normal separate-circulation model permits substance exchange; it is not an absolute claim that no cell/material could ever cross under any condition.",
+        "No patient-specific pregnancy timing, prenatal diagnosis, maternal history, body inspection, sexual enactment or family judgement. Actual professional advice is for adults and clinicians."
+      ]
+    },
+    {
+      "id": "habits-harms-alternatives",
+      "task": "Use original fictional day cards: repeated late-night screen use leaves little sleep; a person is near cigarette smoke; another is offered a vape. Explain a possible effect on body/mind, select a feasible healthier alternative and say how to get adult help. Actually plan and track one benign routine such as a screen break or bedtime preparation for a week, reflect on barriers and describe support for another person. No substance is present. Actually practise a respectful encouragement message offering a feasible alternative and support without shame, pressure or claiming control over another person.",
+      "positive": "Connects each habit to a relevant risk and a practical alternative rather than calling a person bad.",
+      "nearMiss": "Says every screen use is addiction or claims smoke is harmless outdoors in all circumstances.",
+      "transfer": "Change the place/access barrier and adapt the alternative; no judgement of a family’s circumstances.",
+      "sourceConditions": "Actual benign routine evidence is separate from fictional harmful-substance knowledge. No exposure, device handling, private family-use history or forced disclosure.",
+      "sourceModel": {
+        "actualRespectfulEncouragement": true,
+        "screenAmountAloneDiagnosesAddiction": false
+      }
+    },
+    {
+      "id": "medicines-authorisation-and-safe-use",
+      "task": "Use all three original case sets in ontario-hpe-medicines-claim-2026-11-11.json and the complete guide: a named person’s prescribed antibiotic and a supplied locally classified OTC medicine. Explain authorisation/recipient differences and shared adult/instruction/storage precautions. Reject sharing, unknown instructions and natural-means-safe; ask an appropriate adult/pharmacist rather than select a dose or treatment.",
+      "positive": "Distinguishes the categories using authorisation and named recipient, while recognising both can cause harm and need instructions.",
+      "nearMiss": "Calls OTC risk-free or gives a friend another person’s prescription.",
+      "transfer": "Change recipient or uncertainty and retain the safe response.",
+      "sourceConditions": "The reviewed shared medicine concept and actual source task remain knowledge only; no real medicine, administration, dose, diagnosis, missed-dose or treatment advice.",
+      "sourceModel": {
+        "localStatusAndRecipientSupplied": true,
+        "bothKindsNeedInstructions": true,
+        "childDoseOrTreatment": false
+      }
+    },
+    {
+      "id": "nonmedicine-health-support",
+      "task": "Use an original fictional ordinary-day case showing food/water, rest, comfortable movement, social connection and an adult-supported calming activity. Explain which non-medicine support may help maintain physical and mental well-being and why. Make and review a feasible benign routine. If a fictional person has prescribed care, supports can accompany it; only their clinician changes treatment. Add two fictional adult-assessed ordinary-care cases: a child with a cold follows the supplied adult plan for rest, water and comfort; another with an adult-assessed mild headache takes a screen break, water and comfortable relaxation under the supplied plan. Explain support for comfort/recovery without promising a cure or deciding the cause. Contrast prevention of transmission by actually demonstrating safe handwashing. New, worsening or worrying symptoms go to the responsible adult/professional; no child triage or delay of care.",
+      "positive": "Chooses a relevant support with a reason and distinguishes general well-being from a promised cure.",
+      "nearMiss": "Says water or exercise replaces every prescribed medicine, or directs someone to stop treatment.",
+      "transfer": "Change the day/access needs and adapt one support while preserving professional care.",
+      "sourceConditions": "No withholding medicine, self-treatment trial, illness diagnosis, enforced exertion or food/water deprivation.",
+      "sourceModel": {
+        "replacePrescribedCareWithoutClinician": false,
+        "supportsMayAccompanyCare": true,
+        "actualOrdinaryCareCasesRequired": true,
+        "noChildDiagnosisOrTreatmentChanges": true
+      },
+      "originalCareCases": [
+        {
+          "id": "adult-assessed-cold",
+          "adultCarePlanSupplied": true,
+          "supports": [
+            "rest",
+            "water",
+            "comfort"
+          ],
+          "guaranteedCure": false
+        },
+        {
+          "id": "adult-assessed-mild-headache",
+          "adultCarePlanSupplied": true,
+          "supports": [
+            "screen-break",
+            "water",
+            "comfortable-relaxation"
+          ],
+          "learnerDeterminesMinorStatus": false
+        },
+        {
+          "id": "reduce-transmission",
+          "actualBenignHandwashing": true,
+          "noDeliberateGermExposure": true
+        }
+      ]
+    },
+    {
+      "id": "substance-effects-and-dependence",
+      "task": "Use adult-prepared factual cards for alcohol, tobacco/nicotine and an illegal-source unknown pill, with legal status explicitly supplied for this Ontario example. Explain possible physical, thinking/feeling and relationship effects, and why legality alone does not establish safety. Compare a fictional repeated-use difficulty with an ordinary preference; describe how dependence can make stopping hard and why supportive adult/professional help is appropriate. Do not diagnose the character. For complete unchanged lifestyle claims, separately explain food/energy, movement/heart-muscles and sleep as well as substance harms.",
+      "positive": "Connects effects and problematic patterns to physical, mental and social well-being, without labelling all use, preference or a person as addiction.",
+      "nearMiss": "Calls sugar/salt an illicit drug category, thinks legal means safe, or says dependence is simply weak character.",
+      "transfer": "Change the supplied substance/use context and explain what remains known versus what needs adult information.",
+      "sourceConditions": "No real substances, bodily tests, withdrawal trial, diagnosis, adult dose guidance or identification of unknown pills by appearance.",
+      "sourceModel": {
+        "legalMeansSafe": false,
+        "dependenceDiagnosedFromPreference": false,
+        "physicalMentalSocialEffects": true
+      }
+    },
+    {
+      "id": "smoke-vape-constituents-and-effects",
+      "task": "Use a clearly labelled information comparison: burning tobacco smoke can contain carbon monoxide and tar; carbon monoxide reduces oxygen transport and smoke particles damage airways. A vape heats liquid to make aerosol, which is not just harmless water vapour; many products contain nicotine and other potentially harmful substances, and contents vary. Nicotine can cause dependence and affect the body. Explain a direct and bystander exposure risk, separating well-established smoke harms from remaining long-term vaping uncertainty. Complete the broader lifestyle claim separately where linked.",
+      "positive": "Accurately distinguishes combustion smoke from aerosol, substances from effects, and dependence from cancer causation.",
+      "nearMiss": "Says all vapes contain tar/carbon monoxide, nicotine is the sole cause of smoking cancers, or aerosol is harmless steam.",
+      "transfer": "Change nicotine-present to supplied nicotine-absent aerosol; explain why that removes one risk but does not establish harmlessness.",
+      "sourceConditions": "Pictures/text only, no smoking/vaping demonstration, smelling, breathing trial, product handling or graphic disease image; no adult quit-switch advice as a child task.",
+      "sourceModel": {
+        "allVapesContainTarOrCO": false,
+        "nicotineIsOnlySmokingCarcinogen": false,
+        "aerosolHarmlessWater": false,
+        "longTermVapingUncertaintyRetained": true
+      }
+    },
+    {
+      "id": "pressure-choice-refusal-and-support",
+      "task": "In a fictional offer of a smoke/vape/alcohol or other risk, identify personal, peer, family, media and environment influences without assuming one community behaves alike. Stop, generate at least two options, compare consequences and choose a safe option including abstention. Actually rehearse a clear respectful refusal, leaving/alternative activity and seeking a trusted adult; then transfer to a benign real boundary with consent. Explain two resistance strategies and why fitting in is not enough reason for harm. Include a separate ordinary behaviour choice: a short planned screen session can serve learning or leisure, while a late unbounded session displaces sleep or relationships. Choose between feasible alternatives with a reason and practise arranging a benign break with adult support; no screen-time amount alone diagnoses addiction.",
+      "positive": "Makes and explains a reasoned choice, performs a refusal/support strategy and adapts to changed pressure.",
+      "nearMiss": "Only recites no, blames a person unable to leave, or treats confidence/eye contact as the criterion.",
+      "transfer": "Change from an in-person dare to an original non-product mock advertisement or online pressure; adapt privacy/support.",
+      "sourceConditions": "No actual offer, deception, products, peer ambush, real posting or required personal substance history. Safety does not depend on successful assertiveness alone.",
+      "sourceModel": {
+        "actualRefusalAndDecisionPerformance": true,
+        "nonSubstanceBehaviourChoiceIncluded": true,
+        "abstentionAvailable": true,
+        "privateHistoryRequired": false
+      }
+    },
+    {
+      "id": "alcohol-effects-and-variable-risk",
+      "task": "Compare original fictional information cards: alcohol can impair judgement, attention, coordination and reaction; heavy/prolonged use can damage organs including liver and brain and affect relationships. Two supplied people consume alcohol under different stated conditions; explain qualitatively that amount/concentration, time, food, body characteristics and other medicines can influence effects, without calculating or prescribing a safe amount. Recognise severe unresponsiveness or breathing concern as adult/emergency help under the local plan, not a clinical diagnosis.",
+      "positive": "Distinguishes immediate from longer-term effects and gives reasons effects vary; does not infer someone is safe from outward appearance alone.",
+      "nearMiss": "Promises one drink is safe for a child, calculates a permitted dose, or equates intoxication with being loud.",
+      "transfer": "Change one supplied factor or add another medicine; explain uncertainty and safe help rather than a numeric prediction.",
+      "sourceConditions": "No alcohol, drinking simulation, breath test, BAC/dose calculation, legal-limit memorisation or family diagnosis. Adult drinking recommendations are not child targets.",
+      "sourceModel": {
+        "qualitativeVariationRequired": true,
+        "doseOrBACCalculation": false,
+        "outwardAppearanceProvesSafety": false
+      }
+    },
+    {
+      "id": "personal-social-factors-and-support",
+      "task": "Use original fictional cases across life stages showing curiosity, peer belonging, stress, advertising, access, culture/community expectations and protective relationships. Explain how factors can influence alcohol/cannabis use and problematic patterns without a deterministic stereotype; identify protective support and safe alternatives. Where relevant distinguish an explicitly attributed taught cultural or ceremonial context from recreational use, using a locally approved resource rather than inventing one universal Indigenous practice.",
+      "positive": "Explains interacting personal/social influences and a supportive response without moral or cultural stereotyping.",
+      "nearMiss": "Claims one family, culture or feeling inevitably causes addiction, or treats all cultural use as recreational misuse.",
+      "transfer": "Change one support/access factor and explain a plausible different choice without predicting one inevitable outcome.",
+      "sourceConditions": "No required personal/family history, ceremony enactment, invented community teaching, diagnosis or forced disclosure. Actual local cultural material is an explicit delivery condition if selected.",
+      "sourceModel": {
+        "culturalPracticeUniversalised": false,
+        "supportOrRiskFactorDeterminesOutcome": false,
+        "factorsAcrossLifeStages": true
+      }
+    },
+    {
+      "id": "cannabis-other-drugs-and-range-of-effects",
+      "task": "Use a supplied accurate category-and-effect panel: cannabis can affect memory, concentration, reaction and anxiety, with longer-term dependence risk; opioids can relieve pain when medically prescribed but can slow breathing, cause dependence and overdose; stimulant examples such as cocaine or methamphetamine are NOT opioids. Include a separate factual card for deliberately breathing solvent fumes: possible dizziness/loss of control and harm to brain and other organs, with potentially life-threatening effects even on a first occasion. Explain differing possible physical, cognitive, emotional and social effects, that unknown supply/mixtures increase uncertainty and that prescribed medicines require their own recipient/instructions. Give a reasoned safe personal choice and appropriate adult support. The older full recreational-drug classification/physical-versus-psychological-dependence claim is not certified by this primary source task.",
+      "positive": "Uses accurate examples to explain a range of effects and uncertainty, distinguishes therapeutic prescription context from unknown/recreational use and rejects the source example’s erroneous stimulant-as-opioid grouping.",
+      "nearMiss": "Calls cocaine/methamphetamine opioids, claims cannabis has the same effect for everyone, or treats medicine as inherently risk-free.",
+      "transfer": "Change the supplied example/category or introduce an unknown mixture; identify what cannot be inferred and choose safe adult help.",
+      "sourceConditions": "No product images requiring identification, handling, sniffing, inhalants/fumes, drug preparation, use demonstration, treatment advice or diagnosis; no exhaustive illegal-drug inventory needed.",
+      "sourceModel": {
+        "cocaineOrMethamphetamineAreOpioids": false,
+        "intoxicatingSolventEffectsRequired": true,
+        "unknownMixtureCanBeIdentifiedByAppearance": false,
+        "noProductOrFumeExposure": true
+      }
+    },
+    {
+      "id": "body-mind-overall-health",
+      "task": "Use an original fictional day with sleep, food/water, movement, companionship, enjoyable activity and adult support. Explain that health includes how body and mind are doing; a person can look physically well and still need emotional support. Privately reflect or use a fictional equivalent to choose a feasible body-and-mind care action and explain why. Carry out and review one benign routine if the whole routine claim is assessed.",
+      "positive": "Connects physical and mental well-being with practical care/support, without treating feelings as a moral score.",
+      "nearMiss": "Says mental health only means illness or that someone smiling cannot need help.",
+      "transfer": "Change a person’s access/ability or daily circumstance and adapt care/support without promising a cure.",
+      "sourceConditions": "No symptom screening, diagnosis, forced positive feeling, body disclosure or required personal mental-health history.",
+      "sourceModel": {
+        "mentalHealthPartOfOverallHealth": true,
+        "positiveFeelingRequired": false,
+        "mentalHealthMeansOnlyIllness": false
+      }
+    },
+    {
+      "id": "linked-thoughts-feelings-actions",
+      "task": "Use original fictional thought/feeling/action maps: Sam thinks a difficult puzzle means I can never learn, feels discouraged and stops; a different reasonable thought is I can ask for one hint and try another way, which may change feelings and action. Explain that arrows can go in more than one direction and people can feel differently. Distinguish a feeling from an action, rephrase an unhelpful thought accurately and actually try a benign self-talk strategy on ordinary work, reflecting without a promised mood outcome.",
+      "positive": "Explains interconnections and a plausible changed thought/action rather than insisting thoughts control all health.",
+      "nearMiss": "Says just think positively cures illness, a negative thought makes a person bad or feelings automatically cause harmful action.",
+      "transfer": "Change the fictional interpretation or action and discuss another possible effect, acknowledging uncertainty and real environmental causes.",
+      "sourceConditions": "No compulsory optimism, denial of discrimination/unsafe conditions, therapy substitution or diagnosis. Actual distress is never induced.",
+      "sourceModel": {
+        "interconnectionsCanBeBidirectional": true,
+        "positiveThinkingCuresIllness": false,
+        "deniesExternalHarm": false,
+        "actualBenignSelfTalkUse": true
+      }
+    },
+    {
+      "id": "body-brain-and-comfortable-support",
+      "task": "Use familiar fictional cases of an upcoming class activity, unexpected routine change and a too-noisy room. Identify possible body/thought/feeling responses without a one-to-one emotion diagnosis. Explain that brain/body responses can prepare us or become overwhelming; choose a suitable comfort/support such as a quieter space, trusted adult or comfortable unforced breathing. For the whole body-emotion claim, safely notice an ordinary voluntarily described sensation and explain possible emotion context, plus three varied sensation/emotion examples.",
+      "positive": "Connects body and brain with possible responses and chooses context-appropriate support while respecting variation.",
+      "nearMiss": "Infers one emotion from every fast heartbeat or says someone must calm down unaided before they deserve help.",
+      "transfer": "Change the environment or first strategy’s effect and choose another support with a reason.",
+      "sourceConditions": "No loud-noise test, fear induction, breath retention/forced slow breathing, symptom score, touch demand or compelled emotional disclosure.",
+      "sourceModel": {
+        "oneSensationDiagnosesOneEmotion": false,
+        "noManufacturedBodyOrEmotionalResponse": true,
+        "contextAppropriateSupport": true
+      }
+    },
+    {
+      "id": "feeling-names-and-help",
+      "task": "Use an original range of ordinary feeling cards and fictional situations. Explain how identifying/name-or-describing a feeling can help communicate a need and recognise when adult help may be useful. Actually rehearse asking an appropriate helper clearly with a fallback if the first is unavailable. A learner may describe a feeling with their own words/drawing rather than reproduce a universal English label list. For the existing whole help claim, distinguish academic, practical and emotional helpers and explain why help is sensible.",
+      "positive": "Uses a meaningful feeling description to communicate a need and access appropriate help.",
+      "nearMiss": "Thinks help is allowed only after finding the perfect word or that being upset means failure.",
+      "transfer": "Change the feeling/context or helper’s availability and adapt the request.",
+      "sourceConditions": "No requirement to disclose trauma, label a peer, manufacture upset or show a smile.",
+      "sourceModel": {
+        "meaningfulFeelingDescriptionAndHelp": true,
+        "perfectEnglishWordRequiredBeforeHelp": false,
+        "privateDisclosureRequired": false
+      }
+    },
+    {
+      "id": "perceived-threat-brain-body-response",
+      "task": "Use original fictional picture-free cases: a character believes a sudden sound signals danger, or a new classroom feels threatening though no current danger is shown. Explain that the brain can trigger an automatic protective alarm based on a perceived threat; thoughts focus on danger, feelings may be fear/anger, body may speed up or become still, and actions can include confronting, leaving or freezing. These are examples, not a mandatory fixed sequence or always-voluntary choice. Contrast a real unsafe case requiring adult protection with an ordinary false alarm; identify support and a safe comfortable regulation option without enactment.",
+      "positive": "Explains perceived threat→protective brain/body response→possible thoughts/emotions/actions, including freezing, and distinguishes support from blame.",
+      "nearMiss": "Treats freezing as consent or defiance, claims every worry proves real danger or requires the learner to provoke a response.",
+      "transfer": "Change whether the threat is actual/uncertain and explain checking safety/adult support before trying to regulate.",
+      "sourceConditions": "No threat simulation, startle, restraint, traumatic disclosure, clinical diagnosis, HPA/amygdala/hormone-name gate or guarantee that breathing stops danger.",
+      "sourceModel": {
+        "perceivedThreatNotAlwaysActualDanger": true,
+        "automaticProtectiveResponse": true,
+        "thoughtEmotionActionRelationRequired": true,
+        "freezingMeansConsentOrDefiance": false,
+        "allResponsesVoluntary": false,
+        "actualThreatInduction": false
+      }
+    },
+    {
+      "id": "external-causes-and-control",
+      "task": "Compare original fictional cases: a changed class routine, loss of a familiar place, uncomfortable heat/noise, and a disagreement with a peer. Identify possible external/environmental causes of strong feelings; distinguish what the character can influence now from what needs adult/system support or adaptation. Choose at least two different coping strategies and explain fit; make/rehearse a transition plan and later reflect on a benign actual change where the complete planning claim is assessed.",
+      "positive": "Explains context and controllability, chooses differentiated support and avoids blaming someone for circumstances.",
+      "nearMiss": "Says every stressor is a bad attitude or that accepting a situation means tolerating abuse.",
+      "transfer": "Change access/control or a strategy that did not help and revise the response.",
+      "sourceConditions": "No exposure to unsafe heat/cold/noise, induced grief, forced personal loss disclosure, unsafe endurance or invented universal cultural coping rule.",
+      "sourceModel": {
+        "externalEnvironmentalFactorsRequired": true,
+        "differentControlAndAdaptationCases": true,
+        "acceptanceRequiresToleratingAbuse": false,
+        "forcedLossDisclosure": false
+      }
+    },
+    {
+      "id": "daily-choices-and-support",
+      "task": "Make a feasible ordinary-day care plan including sleep, enjoyable comfortable movement, social connection and an available caring adult. Explain a possible mental-health contribution, actually try a benign chosen action and review barriers/support over a week where the whole routine claim is assessed. A mindful noticing option is voluntary and does not require eyes closed or a calm/positive feeling.",
+      "positive": "Explains and applies a practical choice while recognising material access and professional support matter too.",
+      "nearMiss": "Claims a routine cures all mental illness or scores a person’s worth by compliance.",
+      "transfer": "Change the schedule/access need and adapt a sustainable action with support.",
+      "sourceConditions": "No treatment changes, exercise/food/sleep deprivation, forced mindfulness, mood quota or diagnosis.",
+      "sourceModel": {
+        "actualBenignRoutineAndReview": true,
+        "routineCuresEveryMentalIllness": false,
+        "forcedMindfulnessOrMoodQuota": false
+      }
+    },
+    {
+      "id": "peer-help-and-limits",
+      "task": "Use original fictional cases: a peer worried about school, repeated distress interfering with ordinary life, and a message suggesting immediate danger. Demonstrate listening without ridicule, saying you care, and helping connect with an appropriate adult; explain that peers are not therapists, cannot promise secrecy about danger and need not manage the problem alone. Rehearse a benign supported help request, not a real crisis call.",
+      "positive": "Offers practical respectful support and recognises limits/fallback escalation without taking clinical responsibility.",
+      "nearMiss": "Promises secrecy regardless of danger, diagnoses a friend, or says peer positivity alone fixes serious distress.",
+      "transfer": "Change the first adult’s availability or the urgency and select a suitable next route under the local plan.",
+      "sourceConditions": "No real crisis enactment, disclosure collection, counselling burden, medication advice or demand that the learner rescue someone.",
+      "sourceModel": {
+        "peerIsTherapist": false,
+        "dangerAlwaysKeptSecret": false,
+        "actualBenignHelpRehearsal": true,
+        "adultFallbackRequired": true
+      }
+    },
+    {
+      "id": "attitudes-stigma-and-inclusion",
+      "task": "Compare original fictional messages: a person needing mental-health support is called weak, versus a respectful explanation that help is appropriate. Explain how stigma can discourage help and damage belonging; propose two concrete inclusive/help-seeking actions and demonstrate a benign one in ordinary group work. Keep mental-health condition distinct from ordinary sadness and do not require a diagnosis to deserve respect.",
+      "positive": "Links an attitude to possible effects on another person and chooses respectful practical change.",
+      "nearMiss": "Uses a diagnosis as an insult or claims illness means dangerousness/weak character.",
+      "transfer": "Change the stereotype or social setting and explain a respectful response without assigning a diagnosis.",
+      "sourceConditions": "No stigmatising reenactment/slurs, private condition disclosure, diagnosing peers or forced approval of every behaviour.",
+      "sourceModel": {
+        "stigmaCanDiscourageHelp": true,
+        "diagnosisRequiredForRespect": false,
+        "actualBenignInclusiveAction": true
+      }
+    },
+    {
+      "id": "actual-school-community-access",
+      "task": "Use a current adult-verified school support card naming the actual route to a teacher/designated professional and a fallback. Add the current Ontario official support directory and one age-eligible child/youth service; distinguish under18 One Stop Talk and youth support from adult15+ or post-secondary-only programmes. Locate how an adult-supported learner could begin a request through the actual school route and supplied official service page, and rehearse the wording using a dummy non-sending form. Explain everyday help versus immediate danger under the local emergency/safeguarding plan.",
+      "positive": "Identifies actual suitable people/resources/services and explains concrete access/fallback steps for mental-health or substance-use support.",
+      "nearMiss": "Only says ask someone, selects an age-ineligible adult programme or assumes all conversations can remain secret in danger.",
+      "transfer": "Change eligibility, language/access need or first route availability and find an appropriate verified alternative with adult help.",
+      "sourceConditions": "School/local route must be bound before delivery; no real account, message, call, report, diagnosis, private-history entry or public contact-number memorisation. Current directory is a resource, not a clinical service recommendation for a particular child.",
+      "sourceModel": {
+        "ageEligibleActualServiceRequired": true,
+        "schoolRouteAndFallbackBoundAtUse": true,
+        "dummyNonSendingAccessRehearsal": true,
+        "realContactRequired": false,
+        "promiseAbsoluteSecrecyInDanger": false
+      }
+    },
+    {
+      "id": "healthy-living-overall-knowledge-portfolio",
+      "task": "Complete every same-grade D1 child task in the record’s exact composition list, using its actual attributed resources, whole-claim checks and original source conditions. Then explain a connected healthy-development case spanning food/body needs, protection, development and mental well-being rather than recite isolated slogans. Use the grade panel’s changed context to explain two interacting factors; a picture/name alone does not establish their functions or relationships.",
+      "positive": "Explains each actual same-grade knowledge duty and connects relevant factors without diagnosis, a universal body timeline or a moral health ranking.",
+      "nearMiss": "Completes one favourite topic and infers all healthy-development knowledge, or lists factors without explaining a relation.",
+      "transfer": "Change the supplied fictional person’s access, routine or development context and explain what can and cannot be inferred; keep every child duty represented.",
+      "sourceConditions": "All exact same-grade D1 specific tasks/resources/conditions remain required. No body inspection, private medical history, explicit-media exposure or new clinical gate. Accessible explanation is allowed; child performance is not fabricated."
+    },
+    {
+      "id": "healthy-living-overall-action-portfolio",
+      "task": "Complete every same-grade D2 child task in the exact composition list, including its actual benign actions, choices and reflection. In an integrated ordinary health decision, identify a relevant feeling/need and available information, generate alternatives, explain consequences, choose and actually rehearse or perform the safe action, then review it. Unsafe, medical or coercive cases remain fictional knowledge/help tasks; no hazardous action is enacted. A spoken plan alone cannot replace the source’s actual benign routine, communication or skill performance.",
+      "positive": "Uses actual health knowledge and SEL reasoning in a justified safe action with reflection, while retaining all child-specific performance duties.",
+      "nearMiss": "Gives the right health slogan but cannot apply it or perform the benign action; acts confidently without considering consequences.",
+      "transfer": "Change the person’s access or pressure and adapt the choice/action/help route with a reason.",
+      "sourceConditions": "All exact same-grade D2 tasks and actual safe performance remain. No actual medicine, substance, emergency contact, unwanted touch, private body inspection or forced disclosure. Supported access and prepared-adult roles are retained."
+    },
+    {
+      "id": "healthy-living-overall-connections-portfolio",
+      "task": "Complete every same-grade D3 child task in the exact composition list, including actual comparison, investigation of messages or contextual reflection where required. Compare two original fictional cases with the same choice but different environmental/social/access conditions. Explain effects on self and others and at least one influence from surroundings; give reasons, note uncertainty and propose a respectful practical response. Do not claim one behaviour determines everyone’s health.",
+      "positive": "Connects personal choice, effects on others and wider conditions across the full same-grade portfolio, retaining actual child task duties.",
+      "nearMiss": "Attributes all health to individual willpower, ignores bystanders/access or generalises one person’s experience to a whole community.",
+      "transfer": "Change the setting, resources or another person’s perspective and explain which connection changes and why.",
+      "sourceConditions": "All exact same-grade D3 resources and tasks remain, including local guide/definition/cultural applicability where selected. No personal family-budget/substance history, cultural stereotype, forced optimism or clinical inference."
+    }
+  ],
+  "wholeClaimChecks": {
+    "decision": "Retain the full options→consequences→reasoned choice operation and its consequence prerequisite. Actual benign health/safety decision action is separately required; no PE task is imported.",
+    "rulesAndGroup": "Retain actual safe/fair everyday rules, meaningful listening, turn-taking and agreed responsibilities where needed for Healthy Living tasks. No team motor result or positive mood establishes these whole operations.",
+    "eating": "Preserve the full food-group/nutrient/day-pattern, food-hygiene, production and animal-care, ordinary attention, habit/goal and marketing/money hard-closure checks. No single food sort, hunger answer, chickpea journey or Canadian label reading certifies a whole broader card. No new edge or claim is needed; source-specific resource/performance duties stay explicit in the portfolio.",
+    "personalSafety": "Retain full permission request/wait/refusal, private-body/necessary-care distinction, trusted help, protective response, digital block/report, friendship qualities, actual listening/compromise, inclusive action, prejudice and intent-versus-impact evidence. Their complete hard chains remain unchanged. Naming feelings, patterns or reflection terms is not inferred from one correct harm report; do not manufacture fear, distress, coercion or a victim history to elicit them. No single scenario certifies the broader operation. The body-parts guide’s nose-pinching/tasting and hot-tray examples are not part of this programme; use safe labelled pictures and benign sense examples for the separate canonical check.",
+    "humanDevelopment": "Retain actual whole body/senses, brain-message/control, hygiene, life-course/hormone-trigger, relationship/consent, identity and coping evidence rather than infer it from a single diagram or a polite response. Full older AnimalLifeStages and NamingCommonAnimals hard-chain inventories remain separate and unchanged. Reproduction whole-fit explicitly includes both systems/structure functions, gamete fusion and location, gestation/birth, two-way placenta/cord exchange and maternal-substance effects. A puberty-only answer cannot close the actual Grade5 process duty. No observed private body, forced positive feeling, clinical timing, advanced hormone feedback or explicit-media exposure is required. Current source tasks do not retrospectively certify learner evidence.",
+    "substanceUse": "Retain complete ordinary healthy-routine/week-review/support, body-needs, lifestyle/organ-effects, decision/options/consequences, assertive actual benign boundary, peer-influence/two-strategy and appropriate-help evidence. All28 hard-closure cards and16 available complete guides are accounted for, including full separate circulation/respiratory/nutrition/vocabulary inventories; one correct harm/refusal answer does not certify them. Whole physiological checks use correct loops, vessel-by-direction terms, gas mixtures and model limits without real blood, neck pressure, breath-holding, forced exertion or chemical exposure. Mirror moisture is not direct gas-composition evidence; toy pulse/flow gauges are not calibrated oxygen delivery. Vocabulary and broader inherited hard-path assessments remain separate from actual source-specific tasks and are not new Ontario duties. The13–14 recreational-drug card is neither lowered nor certified by narrower primary examples. All historical guide bytes, confidence and verification flags remain unchanged.",
+    "mentalHealth": "Retain complete existing body-emotion varied examples and voluntary ordinary noticing, emotional-trigger reflection, feelings/actions distinction, meaningful feeling naming, actual benign self-talk use and why, differentiated coping/failed-strategy reflection, plan/rehearse/reflect after ordinary change, routine tracking/support, prejudice/stereotype effects/two strategies and appropriate-help evidence. All20hard-closure cards/14edges and both available complete guides are accounted for; their payloads/flags remain unchanged. Do not manufacture upset or trauma to satisfy an inherited real-upset gate: actual learner evidence, if ever elicited, follows voluntary safe ordinary opportunities. A fictional source answer alone does not certify all these whole cards. The brain-control guide’s deliberate sensory-message task is retained separately from the source’s automatic perceived-threat response; neither all reflexes nor all protective reactions require a conscious decision. Older HPA/advanced-emotional-brain cards are not lowered. No happy-mood, English-inventory or personal-diagnosis score is introduced."
+  },
+  "conditions": {
+    "sourceExamples": "Official examples and prompts are optional implementations of comparable complexity; the programme does not turn each sport, body part or example into a new topic.",
+    "sourceAge": "Source says development is age-related, not age-dependent. Exact grade associations use the existing Ontario primary age windows; they are not a birthday deadline or universal ability/fitness norm.",
+    "actualPerformance": "Healthy Living actions require their actual benign source-fit practice. Harmful or clinical cases remain fictional knowledge tasks; no physical education performance or cross-strand SEL is imported.",
+    "access": "Use accessible educational materials and prepared-adult support. No fitness norm, compulsory sport or unsafe exposure.",
+    "sourceHierarchy": "All98 Healthy Living D source positions are qualified with actual same-grade child duties and integrated knowledge/action/connection portfolios. A/B/C source positions remain excluded.",
+    "state": "Two approved shared health concepts and guides, reviewed bullying criterion revision and12 reproduction-guide factual clarifications. No dependency, clinical score, learner-state or database change.",
+    "safety": "Use safe simulated cases and actual controlled behaviour. Current equipment/environment information, individual medical support and school/board procedures are adult-bound at use. A prepared case is not an injury diagnosis, child medication authority or clinical clearance.",
+    "schoolPolicyBinding": {
+      "applicability": "Use the actual current school/board policy in the real setting; provincial policy/resources are the common frame, not one invented universal local policy.",
+      "fieldsRequiredAtUse": [
+        "schoolOrBoard",
+        "procedureUrlOrDocument",
+        "versionOrReviewDate",
+        "responsibleAdults",
+        "learnerReportAndRemovalSteps",
+        "localEmergencyAndReturnAuthority"
+      ],
+      "notAnEditableTaxonomyDifficultyLevel": true
+    },
+    "healthyEating": "Use the current actual Canadian guide and safe attributed resources. Food availability, medical/allergy advice, budget and choice conditions are not moral/body judgments. No deprivation, forced tasting/intake/disclosure or child calorie/weight targets. A source-specific task and a complete existing topic assessment remain distinct.",
+    "labelFormatSeparation": {
+      "CanadianSource": "Actual per-serving Nutrition Facts, ingredients and nutrient-warning resource; no Canadian per-100-g column or overall rating invented.",
+      "wholeClaimTransfer": "Original hypothetical per100g/two-column/rating cases are an explicitly separate Australian-context check. Ratings are supplied givens, not algorithm-calculated commercial scores.",
+      "ageContext": "Reviewed exact Grade 5 ages 10–11; old authored claim and existing 11–12 contexts retained.",
+      "assets": [
+        "assets/ontario-hpe-programme/label-comparison.json",
+        "assets/ontario-hpe-programme/label-comparison.svg",
+        "assets/ontario-hpe-programme/label-comparison.png"
+      ]
+    },
+    "personalSafety": {
+      "noVictimBlame": true,
+      "fictionalUnsafeCasesOnly": true,
+      "noPrivateHarmOrMedicalHistoryRequired": true,
+      "noRealEmergencyCallOrReport": true,
+      "noUnsafeTouchOrGraphicImages": true,
+      "permissionNotInferredFromSilence": true,
+      "harmHelpDoesNotWaitForRepetition": true,
+      "localSafeguardingAndEmergencyProceduresBoundAtUse": true,
+      "bullyingDefinitionLimit": "Use the reviewed context-aware bullying claim and the declared applicable definition. Ontario guidance and Australian national framing differ; preserve both attributed frames. Harmful one-off conduct still warrants help regardless of label, repetition or proven intent."
+    },
+    "humanDevelopment": {
+      "noBodyInspectionOrSexualEnactment": true,
+      "noPrivateBodyMedicalOrIdentityHistory": true,
+      "noForcedPositiveBodyFeeling": true,
+      "actualSourceReproductiveKnowledgeRequired": true,
+      "separateCompleteReproductionTaskRequiredForWholeClaim": true,
+      "noClinicalTimingOrHormoneFeedbackGate": true,
+      "noExplicitSexualMediaAccessOrImages": true,
+      "noUniversalDevelopmentTimeline": true,
+      "sourceExemptionIsNotAuthoringExclusion": true,
+      "qualifiedWholeClaimContext": {
+        "topicId": "mt_tQkCzRcWG7",
+        "country": "CA",
+        "region": "Ontario",
+        "ageRangeStart": 10,
+        "ageRangeEnd": 11
+      },
+      "placentalExchange": "Normally separate maternal/foetal circulations with substance exchange; oxygen can diffuse, nutrients cross by different mechanisms. No advanced transport names or perfect-barrier assumption."
+    },
+    "substanceUse": {
+      "fictionalKnowledgeAndBenignSkillPracticeOnly": true,
+      "noSubstanceHandlingTastingOrInhalation": true,
+      "noDoseDiagnosisOrTreatmentInstructions": true,
+      "noPrivateFamilyUseHistory": true,
+      "localStatusAndAdultHelpBoundAtUse": true,
+      "noDependenceFromOnePreferenceOrScreenAmount": true,
+      "noCulturalOrMoralStereotypes": true,
+      "noOlderRecreationalDrugMasteryFromTheseTasks": true,
+      "actualSourceSpecificEffectsAndChoicesRequired": true,
+      "illustrativeSourceExamplesNotExhaustiveOrInfallible": true
+    },
+    "mentalHealth": {
+      "noManufacturedThreatDistressOrBodyResponse": true,
+      "noDiagnosisOrClinicalScore": true,
+      "noPrivateMentalHealthOrTraumaDisclosure": true,
+      "noForcedPositiveFeelingOrPositiveThinkingCure": true,
+      "noPeerTherapyOrDangerSecrecyPromise": true,
+      "actualLocalSchoolAndAgeEligibleCommunityAccessAtUse": true,
+      "noActualServiceContactAsAssessment": true,
+      "noOlderHPAOrAdvancedBrainGate": true
+    },
+    "overallHealthyLiving": {
+      "allActualSameGradeChildTasksRequired": true,
+      "integrativeExplanationActionConnectionRequired": true,
+      "noAutomaticFullFromChildCountOrLinks": true,
+      "wholeChildConditionsAndResourceBindingsRetained": true,
+      "noUnsafeOrClinicalEnactment": true,
+      "noLearnerAttainmentInferred": true
+    }
+  },
+  "sources": [
+    {
+      "title": "Ontario Healthy Living2019 curriculum and grade-end source duties",
+      "url": "https://www.edu.gov.on.ca/eng/curriculum/elementary/2019-health-physical-education-grades-1to8.pdf"
+    },
+    {
+      "url": "https://www.cdc.gov/physical-activity-basics/health-benefits/children.html",
+      "actualCheck": "Actual March10 2026 child-benefits body read. Narrow physical/attention-memory and mental-health risk support, not guaranteed mood or efficacy of this programme."
+    },
+    {
+      "url": "https://www.ontario.ca/files/2025-09/sport-rowans-law-booklet-ages-10-and-under-en-2025-09-05.pdf",
+      "actualCheck": "Complete 12-page 2025-06 revised body read; younger primary safety/reporting role, not medical advice."
+    },
+    {
+      "url": "https://www.ontario.ca/files/2025-09/sport-rowans-law-booklet-ages-11-to-14-en-2025-09-05.pdf",
+      "actualCheck": "Complete 14-page 2025-06 revised body read; older primary reporting and adult/clinical-return boundaries, not a child recovery timetable."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/injury-prevention/helmet-safety.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/sun-safety/sun-safety-basics.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.weather.gc.ca/airquality/healthmessage_e.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/services/environment/weather/severeweather/wind-chill-index.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/home-safety/household-chemical-safety.html",
+      "actualCheck": "Actual relevant current government body read for bounded equipment, environmental or symbol facts; no efficacy claim or child clinical prescription."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/be-mindful-eating-habits.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/be-mindful-eating-habits/hunger-cues.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/cooking/make-healthy-meals-plate.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/marketing-can-influence-your-choices.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/explore/healthy-eating-recommendations/limit-highly-processed.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/kitchen/recipes/chickpea-vegetable-curry.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/municipal-solid/waste-greenhouse-gases-canada-actions.html",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.lego.com/en-ca/product/lego-large-creative-brick-box-10698",
+      "actualCheck": "Actual relevant primary body read for the bound task; facts do not validate this authored teaching sequence."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/nutrition-facts-tables.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/ingredient-list.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/nutrition-labelling/front-package.html",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.healthstarrating.gov.au/about/how-ratings-are-calculated",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.healthstarrating.gov.au/shoppers",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.goodforkids.nsw.gov.au/media/3553/choosing-food-products.pdf",
+      "actualCheck": "Actual Canadian label or separately declared Australian rating/format body read; no retail score or visual reading is invented."
+    },
+    {
+      "url": "https://www.ontario.ca/page/bullying-we-can-all-help-stop-it",
+      "date": "2026-08-12",
+      "read": "Full actual body downloaded with verified TLS and parsed/read, including power, single-event and reporting sections."
+    },
+    {
+      "url": "https://kidshelpphone.ca/get-info/how-identify-safe-adult",
+      "date": "2026-03-11",
+      "read": "Actual safe-adult article body read; no real contact, account or personal disclosure."
+    },
+    {
+      "url": "https://www.ottawapublichealth.ca/for-professionals-and-partners/school-professionals/curriculum-support-and-resources/grade-5/",
+      "publisher": "Ottawa Public Health",
+      "readScope": "Actual current Grade5 index and linked2025 egg/sperm/reproduction bodies/diagrams; print edition2025 distinct from2026 file metadata."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1W-8dXvoiHc2S7-lb2dIiYF42W3ZVpGFe/view",
+      "publisher": "Ottawa Public Health",
+      "edition": "2025 Ottawa Public Health, adapted with permission from Alberta Health Services",
+      "sha256": "e204a74d241ce32d7a6d48987bdf38572f3f1448104571dc6710135b7946fac2",
+      "bytes": 780437,
+      "readScope": "Selected complete educational anatomy/process/tasks and visually checked relevant diagrams; no restricted pages copied here."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1S7tYqJ-ds8wV1tulEr3m-7dMxTbsh9ou/view",
+      "publisher": "Ottawa Public Health",
+      "edition": "2025 Ottawa Public Health, adapted with permission from Alberta Health Services",
+      "sha256": "428b85448278f0b818e52943a9a5f1f45a98a2d92a8a8be3b03a3d22aa2d026e",
+      "bytes": 570276,
+      "readScope": "Selected complete educational anatomy/process/tasks and visually checked relevant diagrams; no restricted pages copied here."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1KhykN6zu4LPwZ4ukyuIWs4BR453VPkCr/view",
+      "publisher": "Ottawa Public Health",
+      "edition": "2025 Ottawa Public Health, adapted with permission from Alberta Health Services",
+      "sha256": "f982cc46f9e467b2c9c3a6ac85fdc085f2824096441950ef8e2a3f55e65e83dc",
+      "bytes": 557888,
+      "readScope": "Selected complete educational anatomy/process/tasks and visually checked relevant diagrams; no restricted pages copied here."
+    },
+    {
+      "url": "https://kidshealth.org/en/kids/navel.html",
+      "title": "Why Do I Have a Belly Button?",
+      "read": "Complete actual child-facing main body, medically reviewed by KidsHealth Medical Experts; no review date shown.",
+      "contribution": "Child-facing explanation of nourishment, waste removal and the cord before birth; supports concrete primary accessibility, not empirical teaching efficacy.",
+      "limits": "No personal belly-button inspection or disclosure; do not require every newborn to cry or imply cord cutting itself causes first breathing."
+    },
+    {
+      "url": "https://kidshealth.org/en/parents/female-reproductive-system.html",
+      "title": "Female Reproductive System",
+      "read": "Actual complete main body through afterbirth, reviewed June2026.",
+      "contribution": "Adult-preparation factual source for gametes, fertilisation, implantation, uterine growth, placenta/cord and birth.",
+      "limits": "Parent-targeted factual source, not itself proof of learner age. Use selected plain factual statements only; no hymen/virginity claims, exact cycle/clinical timing, sexual enactment or advanced embryonic-stage inventory."
+    },
+    {
+      "url": "https://www.nichd.nih.gov/newsroom/digital-media/infographics/placenta-textalt",
+      "title": "The Placenta text alternative",
+      "read": "Actual complete infographic text; last reviewed2017-12-30.",
+      "contribution": "Oxygen/nutrient supply and waste removal; temporary organ linking mother and foetus.",
+      "limits": "No placental pathology, advanced hormone/immune detail or research-method requirement."
+    },
+    {
+      "url": "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/alcohol-and-your-pregnancy",
+      "title": "Alcohol and Your Pregnancy",
+      "read": "Actual complete main body and questions; current access2026-11-11, no publication date asserted.",
+      "contribution": "Alcohol exposure before birth can affect development; variable outcomes, not deterministic child diagnosis.",
+      "limits": "Adult-facing factual support for one supplied statement, not child clinical advice, beverage quantities, maternal history collection, diagnosis or stigma."
+    },
+    {
+      "url": "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-fetal-alcohol-spectrum-disorders",
+      "title": "Understanding Fetal Alcohol Spectrum Disorders",
+      "read": "Actual full main body through treatments and references; supports developmental effects.",
+      "limits": "Only general effect on developing brain/organs used. No symptom checklist, facial identification, prevalence, dose calculation, family diagnosis or treatment knowledge."
+    },
+    {
+      "url": "https://docs.google.com/document/d/116NX9ivDbKsketv1AUJdcBkwtOk8itfNwKKHCD9uhjg/edit",
+      "publisher": "Ottawa Public Health",
+      "readScope": "Current publisher-linked FAQ selected anatomy/puberty/reproduction/identity paragraphs; not all130 paragraphs or an explicit-media teaching resource."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/smoking-tobacco/vaping/risks.html",
+      "read": "Actual full relevant main body; nicotine, aerosol constituents, short-term effects and long-term uncertainty, not all footnotes."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/health-concerns/tobacco/legislation/tobacco-product-labelling/tobacco-smoke-toxins.html",
+      "read": "Actual main body; carbon monoxide, tar and second-hand smoke, not all footnotes."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/substance-use/alcohol/health-risks.html",
+      "read": "Actual main body; short/long effects and risks,2025-10-07."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/health-effects/effects.html",
+      "read": "Actual complete main body;2024-03-25. No adult therapeutic-dose advice or precise onset numbers used."
+    },
+    {
+      "url": "https://www.canada.ca/en/health-canada/services/opioids/about-opioids.html",
+      "read": "Actual complete main body;2024-06-03. No dose, withdrawal-management, treatment or injection instructions used."
+    },
+    {
+      "url": "https://medlineplus.gov/inhalants.html",
+      "read": "Actual full main body;2023-12-27. NIH/NIDA-linked factual effects support only. Do not reproduce misuse methods, product preparation, clinical diagnosis or treatments; no fume/sample demonstration."
+    },
+    {
+      "url": "https://www.quebec.ca/en/health/advice-and-prevention/alcohol-drugs-gambling/recognizing-drugs-and-their-effects/alcohol",
+      "read": "Actual complete main body through help/resources; updated2026-02-10. Qualitative individual/context/substance factors and combined-substance risks corroborate the task. No standard-drink amounts, safe-dose calculation, adult limits, withdrawal management or diagnosis imported."
+    },
+    {
+      "url": "https://www.nhs.uk/conditions/common-cold/",
+      "read": "Actual full main body,reviewed2024-03-22. Rest,water and transmission prevention support adult-declared ordinary-care examples; no hot water/steam, gargling, medicine/dose or clinical timetable imported."
+    },
+    {
+      "url": "https://www.nhs.uk/symptoms/headaches/",
+      "read": "Actual full main body,reviewed2024-04-17. Hydration,comfortable relaxation and screen breaks support an adult-declared ordinary-care case; no child triage, cause diagnosis, UK service number or medication advice imported."
+    },
+    {
+      "url": "https://www.akronchildrens.org/kidshealth/en/kids/stress.html",
+      "read": "Complete actual Nemours child-facing main body in official hospital publication, reviewed2022-08-14. Brain possible-danger alert, fight-flight-freeze, performance stress and adult support. No claim of viewing video or new efficacy evidence.",
+      "limits": "Not every safe child settles immediately. No challenge performance, breath or stress-tolerance norm; no exposure or induced fear."
+    },
+    {
+      "url": "https://teens.aboutkidshealth.ca/stressandhealth",
+      "read": "Actual complete main body, SickKids staff,2019-03-22. Perceived versus actual threat and possible body/thought effects; not primary-age authority or all embedded media viewed.",
+      "limits": "No compulsory meditation/audio or hormone-name gate; choose comfortable support and actual adult protection where needed."
+    },
+    {
+      "url": "https://www.ontario.ca/page/find-mental-health-support",
+      "read": "Actual complete main body via verifiedTLS, updated2026-08-07,published2019-01-29. School support link and age eligibility distinguish children/under18 from15+/postsecondary/adult services.",
+      "limits": "Current at authoring; actual local school route/access and service eligibility must be rechecked at use. No live contact in an assessment."
+    }
+  ],
+  "overallHealthyLivingGradePanels": {
+    "1": {
+      "knowledge": "Explain why a declared snack/water choice and ordinary hand/body care can support body and mind, then use an original everyday hazard/help case.",
+      "action": "Choose/rehearse a safe ordinary school-day food/hygiene/help action and explain a feeling and consequence; keep the child’s source-specific interpersonal duties.",
+      "connections": "Compare the same ordinary child routine with and without caring support or a safe place to play; explain an effect on self/others without blaming a family."
+    },
+    "2": {
+      "knowledge": "Compare the exact supplied known-allergy/intolerance cases and prescription/OTC cases, then explain how growth, food and body/brain feelings fit overall health.",
+      "action": "Demonstrate benign oral/hand care or an appropriate clear help/refusal communication and explain the health/feeling/choice relation.",
+      "connections": "Use the explicit adult-assessed ordinary-care cases and a respectful visible/unseen-difference case to explain support and effects on other people."
+    },
+    "3": {
+      "knowledge": "Connect an accurate legal-status/effects information card, a healthy-relationship case and the perceived-threat brain/body model; no invented dependence diagnosis.",
+      "action": "Apply an actual safe decision/refusal and a healthy routine or support choice, with options/consequences and a benign performed action.",
+      "connections": "Compare food-origin/disposal and environmental/relationship-influence cases; explain effects on others while retaining the actual same-grade source duties."
+    },
+    "4": {
+      "knowledge": "Explain actual guide/health knowledge, accurate smoke-versus-aerosol information and puberty-change/support cases; one puberty timetable is not universal.",
+      "action": "Rehearse an informed refusal or privacy-safe coping/care action, explaining influence and consequences without products or body inspection.",
+      "connections": "Compare first-/second-hand smoke and vaping information and a controllable/less-controllable stress case; explain individual and surrounding influences."
+    },
+    "5": {
+      "knowledge": "Use the actual food-label/source-support case, alcohol-effects/variable-risk facts and complete reproductive source/whole-fit tasks; all remain separately assessed.",
+      "action": "Apply informed personal/social health reasoning in a benign practical food/goal, refusal or peer-support task; recognise peer/help limits and do not diagnose.",
+      "connections": "Compare two fictional people’s supports, media/cultural influences or mental-health attitudes; explain potential effects and an inclusive response without determinism."
+    },
+    "6": {
+      "knowledge": "Explain accurate substance/intoxicant effects, non-graphic media-representation limits, current eligible help access and thoughts-feelings-actions relations; no exposure or diagnosis.",
+      "action": "Perform a benign consent/refusal, food/goal or protective-help action with an explanation, respecting uncertainty and the other person’s choice.",
+      "connections": "Use actual food/environment and stereotype/inclusion comparisons plus a changed support/access case; explain effects on self/others and wider conditions."
+    }
+  }
+}

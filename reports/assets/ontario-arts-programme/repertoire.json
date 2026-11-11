@@ -1,0 +1,485 @@
+{
+  "schemaVersion": 1,
+  "authorship": "Original curriculum-curation task designs, not copied repertoire or tested interventions",
+  "sourceBoundary": "Grade concept panels supply source duties; examples do not impose a checklist of every named style/key/instrument. Existing A–E and these additional miniatures are only part of the actual singing, ensemble, creating, listening and contextual portfolio.",
+  "miniatures": [
+    {
+      "id": "F",
+      "title": "Two compound beats, changing subdivisions",
+      "metre": [
+        6,
+        8
+      ],
+      "key": "C major",
+      "tempo": "andante",
+      "dynamics": "mp",
+      "bars": [
+        [
+          {
+            "pitch": "C4",
+            "quarterDuration": 1.5,
+            "kind": "note"
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 0.75,
+            "kind": "note"
+          },
+          {
+            "pitch": "F4",
+            "quarterDuration": 0.25,
+            "kind": "note"
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 0.5,
+            "kind": "note"
+          }
+        ],
+        [
+          {
+            "pitch": "A4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 0.5,
+            "kind": "note"
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 0.5,
+            "kind": "note"
+          },
+          {
+            "pitch": "D4",
+            "quarterDuration": 0.75,
+            "kind": "note"
+          },
+          {
+            "pitch": null,
+            "quarterDuration": 0.25,
+            "kind": "rest"
+          }
+        ]
+      ],
+      "task": "Hear and move two large beats per bar; each divides into three eighths. Recover the actual dotted-eighth/sixteenth pair and final sixteenth rest, then record a different complete second bar with the same compound grouping. Contrast four sixteenths occupying one quarter with two eighths; they are not four equal large beats. Sing a comfortable selected phrase or play the fixed pitch version; no fixed vocal range criterion.",
+      "keyChecks": [
+        "3 quarter units in each complete bar",
+        "6/8 has two compound beats here, not six equal main accents",
+        "The .75+.25 pair occupies one quarter, not the same rhythm as .5+.5",
+        "Final silence is .25 quarter unit; do not sustain the preceding D through it"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "An incomplete opening and corresponding ending",
+      "metre": [
+        4,
+        4
+      ],
+      "key": "C major",
+      "tempo": "allegro",
+      "dynamics": "p",
+      "pickup": [
+        {
+          "pitch": "E4",
+          "quarterDuration": 0.5,
+          "kind": "note"
+        }
+      ],
+      "bars": [
+        [
+          {
+            "pitch": "F4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "A4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "B4",
+            "quarterDuration": 1,
+            "kind": "note"
+          }
+        ],
+        [
+          {
+            "pitch": "C5",
+            "quarterDuration": 3,
+            "kind": "note"
+          },
+          {
+            "pitch": null,
+            "quarterDuration": 0.5,
+            "kind": "rest"
+          }
+        ]
+      ],
+      "finalBarIncomplete": true,
+      "task": "Recover the opening upbeat, keep its place before the first full downbeat, and perform the declared final partial bar. Mark the first full bar, then explain why neither partial measure is a mistake. Compose another half-quarter-unit pickup and corresponding ending without changing the complete middle measure.",
+      "keyChecks": [
+        "opening .5 plus ending 3.5 makes one 4-quarter measure",
+        "middle full measure is 4 quarter units",
+        "an upbeat is not an extra complete beat/bar",
+        "silence at the end remains audible time"
+      ]
+    },
+    {
+      "id": "H",
+      "title": "Off-beat duration and a performer-held pause",
+      "metre": [
+        4,
+        4
+      ],
+      "key": "C major",
+      "tempo": "moderato",
+      "dynamics": "mf",
+      "bars": [
+        [
+          {
+            "pitch": "C4",
+            "quarterDuration": 0.5,
+            "kind": "note"
+          },
+          {
+            "pitch": "D4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 0.5,
+            "kind": "note"
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 1,
+            "kind": "note"
+          },
+          {
+            "pitch": "C5",
+            "quarterDuration": 1,
+            "kind": "note"
+          }
+        ],
+        [
+          {
+            "pitch": "C5",
+            "quarterDuration": 2,
+            "kind": "note"
+          },
+          {
+            "pitch": null,
+            "quarterDuration": 2,
+            "kind": "rest"
+          }
+        ]
+      ],
+      "fermata": {
+        "bar": 2,
+        "event": 1,
+        "interpretation": "Hold the half note beyond its written ordinary duration by an agreed conductor cue; it does not acquire a fixed extra numerical value."
+      },
+      "task": "Clap the underlying four beats while another performer sings/plays the eighth-quarter-eighth syncopation. Swap roles and preserve where the off-beat note continues across the beat. Use the fermata cue and resume/finish together; separately contrast smooth and detached articulation on the same pitches.",
+      "keyChecks": [
+        "both written measures sum to four before the unmeasured fermata hold",
+        "the first D starts halfway after beat one and sustains across beat two",
+        "fermata is not a prescribed extra beat count",
+        "articulation changes connection, not arbitrary pitch or metre"
+      ]
+    },
+    {
+      "id": "J",
+      "title": "An own phrase with alternative endings",
+      "metre": [
+        4,
+        4
+      ],
+      "key": "C major",
+      "tempo": "moderato",
+      "dynamics": "mp",
+      "sharedBar": [
+        {
+          "pitch": "C4",
+          "quarterDuration": 1,
+          "kind": "note"
+        },
+        {
+          "pitch": "E4",
+          "quarterDuration": 1,
+          "kind": "note"
+        },
+        {
+          "pitch": "G4",
+          "quarterDuration": 1,
+          "kind": "note"
+        },
+        {
+          "pitch": "E4",
+          "quarterDuration": 1,
+          "kind": "note"
+        }
+      ],
+      "firstEnding": [
+        {
+          "pitch": "D4",
+          "quarterDuration": 2,
+          "kind": "note"
+        },
+        {
+          "pitch": "G4",
+          "quarterDuration": 2,
+          "kind": "note"
+        }
+      ],
+      "secondEnding": [
+        {
+          "pitch": "D4",
+          "quarterDuration": 2,
+          "kind": "note"
+        },
+        {
+          "pitch": "C4",
+          "quarterDuration": 2,
+          "kind": "note"
+        }
+      ],
+      "playOrder": [
+        "sharedBar",
+        "firstEnding",
+        "sharedBar",
+        "secondEnding"
+      ],
+      "task": "Play the shared phrase and first ending, return to its beginning, then bypass the first ending for the second. Record and recover a changed pair of endings with the same declared structure. Compare the actually heard ending effect without claiming a universal emotional response.",
+      "keyChecks": [
+        "all three written bars sum to four",
+        "first and second endings are alternatives on successive passes, not both played each time"
+      ]
+    }
+  ],
+  "canonTask": {
+    "resource": "Existing original score B",
+    "actualPerformance": "Two performers sing its complete two-bar phrase. Second performer enters one bar later; first completes the phrase while the second continues, then both finish on the agreed phrase boundary. Swap parts; a solo replay or recording layered only by the adult cannot establish learner coordination.",
+    "attention": "Retain actual pitch/duration and own entry while listening to the other; use an accessible pitch range and prepared start cue.",
+    "limits": "A round does not by itself account for every source part-singing/chord/form duty."
+  },
+  "harmonyTask": {
+    "key": "C major",
+    "actualMaterials": {
+      "I": [
+        "C4",
+        "E4",
+        "G4"
+      ],
+      "IV": [
+        "F3",
+        "A3",
+        "C4"
+      ],
+      "V": [
+        "G3",
+        "B3",
+        "D4"
+      ]
+    },
+    "actualPerformance": "With the supplied triad cards and prepared pitches, build/play I–V–I, then I–IV–V–I beneath an own short melody; listen and revise a deliberate melodic or ending choice. Take independent melodic and accompaniment parts in a small group.",
+    "nearMiss": "Saying chord numerals, pressing one arbitrary note, or playing a melody alone is not the required heard progression/part relation.",
+    "limits": "No universal all-key recall, sophisticated voice leading or fixed instrument gate."
+  },
+  "intervalTask": {
+    "pairs": [
+      [
+        "C4",
+        "E4",
+        "major third"
+      ],
+      [
+        "C4",
+        "Eb4",
+        "minor third"
+      ],
+      [
+        "C4",
+        "G4",
+        "perfect fifth"
+      ]
+    ],
+    "actualPerformance": "Use the actual staff pairs and heard pitches, compare their relations, reproduce/record one contrast, then transpose a supplied new pair with matching support.",
+    "limits": "No absolute-pitch test, universal happy/sad emotion rule or assumption a pitch label alone is an audible comparison."
+  },
+  "formTasks": {
+    "fourOrMoreSections": "Compose and perform four short distinct labelled sections in ABAC order; document what stays recognisable and what changes. Repeating A is an actual recoverable heard phrase, not just an A card.",
+    "themeVariations": "Perform an own short theme, then two recognisably related versions changing rhythm and timbre/texture in turn; explain/show the maintained relation. Do not call any unrelated second tune a variation.",
+    "limits": "These concrete chosen forms account for the required structures without treating all illustrative rondo examples as mandatory or equating finite sectional form with an endlessly repeating mathematical rule."
+  },
+  "earlyPerformancePhrases": [
+    {
+      "id": "P1",
+      "metre": [
+        2,
+        4
+      ],
+      "pitchKey": {
+        "mi": "E4",
+        "so": "G4",
+        "la": "A4"
+      },
+      "bars": [
+        [
+          {
+            "pitch": "G4",
+            "quarterDuration": 1
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 1
+          }
+        ],
+        [
+          {
+            "pitch": "A4",
+            "quarterDuration": 0.5
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 0.5
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 1
+          }
+        ]
+      ],
+      "task": "Hear and sing the two-bar phrase in unison, then perform it as an echoed call/response. Tap two steady main beats while another participant claps the different rhythm. Move it into two full 4/4 measures by repeating the actual phrase; retain one silence in an own changed response. Use sound/shape icons or taught vocal prompts, not assumed fixed staff mastery."
+    },
+    {
+      "id": "P2",
+      "metre": [
+        4,
+        4
+      ],
+      "bars": [
+        [
+          {
+            "pitch": "C4",
+            "quarterDuration": 1
+          },
+          {
+            "pitch": "D4",
+            "quarterDuration": 1
+          },
+          {
+            "pitch": "E4",
+            "quarterDuration": 1
+          },
+          {
+            "pitch": "G4",
+            "quarterDuration": 1
+          }
+        ],
+        [
+          {
+            "pitch": "A4",
+            "quarterDuration": 2
+          },
+          {
+            "pitch": "C5",
+            "quarterDuration": 2
+          }
+        ]
+      ],
+      "task": "Hear and sing a pentatonic phrase with high do, then sustain an actual whole-note C4 bordun layer and a whole-measure silence on another repetition. Compare half/whole sounds and rests, a gradual loudness change and smooth/detached performance. Use a clear contour/icon representation and exchange an own encoded phrase; access-friendly transposition for singing does not establish absolute staff reading."
+    }
+  ],
+  "grade3RhythmStudy": {
+    "metre": [
+      3,
+      4
+    ],
+    "bars": [
+      [
+        {
+          "kind": "note",
+          "quarterDuration": 1
+        },
+        {
+          "kind": "note",
+          "quarterDuration": 1
+        },
+        {
+          "kind": "note",
+          "quarterDuration": 0.25
+        },
+        {
+          "kind": "note",
+          "quarterDuration": 0.25
+        },
+        {
+          "kind": "rest",
+          "quarterDuration": 0.25
+        },
+        {
+          "kind": "note",
+          "quarterDuration": 0.25
+        }
+      ],
+      [
+        {
+          "kind": "note",
+          "quarterDuration": 3
+        }
+      ]
+    ],
+    "task": "Show actual standard quarter/sixteenth/sixteenth-rest/dotted-half notation on a rhythm strip; hear, perform and recover both measures, then devise another unambiguous representation of the same events. A 3/4 rhythmic strip is not evidence of the complete staff-literacy claim."
+  },
+  "partnerSongTask": {
+    "metre": [
+      3,
+      4
+    ],
+    "firstPart": "Existing original B melody, two bars",
+    "secondPart": [
+      [
+        {
+          "pitch": "C4",
+          "quarterDuration": 1
+        },
+        {
+          "pitch": "E4",
+          "quarterDuration": 1
+        },
+        {
+          "pitch": "G4",
+          "quarterDuration": 1
+        }
+      ],
+      [
+        {
+          "pitch": "D4",
+          "quarterDuration": 1
+        },
+        {
+          "pitch": "F4",
+          "quarterDuration": 1
+        },
+        {
+          "pitch": "C4",
+          "quarterDuration": 1
+        }
+      ]
+    ],
+    "actualTask": "Teach the two short vocal melodies separately on a comfortable neutral syllable. Sing each as a complete own part with the other melody at the same time, agree the start and common pulse, then swap parts. Distinguish this two-different-song texture from the same-phrase delayed-entry canon; a recording made wholly by an adult is not the learner performance.",
+    "limits": "No compulsory lyrics, fixed range, trained solo voice or aesthetically pleasing harmony criterion."
+  },
+  "meaning": "Original event/answer-key resources for the source-specific task programme. Not copied repertoire or tested interventions."
+}

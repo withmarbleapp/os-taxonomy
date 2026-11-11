@@ -20,55 +20,58 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1858,
+    "topics": 1906,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
-      "Geography": 22,
-      "History": 109,
-      "Learning to Learn": 18,
-      "Life Skills": 46,
-      "Mathematics": 578,
-      "Personal & Social Development": 118,
-      "Science": 576
+      "Geography": 33,
+      "History": 118,
+      "Learning to Learn": 20,
+      "Life Skills": 49,
+      "Mathematics": 582,
+      "Personal & Social Development": 123,
+      "Science": 578,
+      "Art & Design": 4,
+      "Performing Arts": 4,
+      "Français": 4
     },
-    "dependencies": 3994,
+    "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 7586,
-    "clusters": 176,
-    "teachingResearch": 1046,
+    "topicStandardLinks": 12089,
+    "clusters": 177,
+    "teachingResearch": 1091,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4092
+    "curriculumAlignments": 5058
   },
   "files": {
     "topics.json": {
-      "bytes": 2348486,
-      "sha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e"
+      "bytes": 2800052,
+      "sha256": "3a58d50663f4aa93ba2e00bcbed7e34ba41f26c47f5418c9e94f7dd7211aef6f"
     },
     "dependencies.json": {
-      "bytes": 872875,
-      "sha256": "b8e19ad88cb86b9ed232fe3d8d5525cf43e2283dd3e7f72b9afa9a5d92ec07d6"
+      "bytes": 879581,
+      "sha256": "03043117ffa13857eb62c983b4f5fa99c566cbf89ecfb346d9c3148bebc05c83"
     },
     "curriculum-standards.json": {
       "bytes": 2795125,
       "sha256": "d8365e19b4233234dbf03151950dae693b8e7e10f60f82f12f985deb5c7bfcdd"
     },
     "clusters.json": {
-      "bytes": 58736,
-      "sha256": "7bae0dbd339c33cb39859adff99f93e14799cae89dd4abe0eef67a46c3cc18e2"
+      "bytes": 59129,
+      "sha256": "4e112dd2fc3373666d9f33e7a0314798f282b67b650063ec5afeb69b7af5dbc3"
     },
     "teaching-research.json": {
-      "bytes": 23409997,
-      "sha256": "1540a41911a32ab25c9590e5d5b314f30b1be08b67b3b15de7764307a35f720d"
+      "bytes": 23951980,
+      "sha256": "11533e4173c537363bc689e178d924eb42d6fb4a5a443dc2d9efd784647e71c9"
     },
     "archived-teaching-research.json": {
-      "bytes": 121352,
-      "sha256": "ffae26b98f39f13a4866d90034e294a9cc5db11ebe502538ddeb78666d3a1014"
+      "bytes": 121411,
+      "sha256": "28cc37220a78bdbfb37bd5693e8b729571e87c5d0ba471692707a07a7ef6c73f"
     },
     "curriculum-alignments.json": {
-      "bytes": 1177957,
-      "sha256": "3f55b686903f0a55614b4624e9db9178e8918b5eb8c086f8c57e463a8193f5c7"
+      "bytes": 1727111,
+      "sha256": "3ed4bf298d86ff4da66e75f5e167e366c08147915323ea0d2afd798056076da6"
     }
   },
   "excluded": [
@@ -79,11 +82,11 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "28149a58453d8af06a5cfd0bf6eb8b30094a9cb836f5fe6a1be047788778a98e",
+    "topicFileSha256": "3a58d50663f4aa93ba2e00bcbed7e34ba41f26c47f5418c9e94f7dd7211aef6f",
     "coverage": {
-      "topicCount": 1858,
-      "withResearch": 1046,
-      "withoutResearch": 812,
+      "topicCount": 1906,
+      "withResearch": 1091,
+      "withoutResearch": 815,
       "bySubject": {
         "Computing": {
           "topics": 52,
@@ -96,39 +99,54 @@
           "withoutResearch": 339
         },
         "Geography": {
-          "topics": 22,
-          "withResearch": 0,
+          "topics": 33,
+          "withResearch": 11,
           "withoutResearch": 22
         },
         "History": {
-          "topics": 109,
-          "withResearch": 0,
-          "withoutResearch": 109
+          "topics": 118,
+          "withResearch": 8,
+          "withoutResearch": 110
         },
         "Learning to Learn": {
-          "topics": 18,
-          "withResearch": 0,
+          "topics": 20,
+          "withResearch": 2,
           "withoutResearch": 18
         },
         "Life Skills": {
-          "topics": 46,
-          "withResearch": 0,
+          "topics": 49,
+          "withResearch": 3,
           "withoutResearch": 46
         },
         "Mathematics": {
-          "topics": 578,
-          "withResearch": 499,
-          "withoutResearch": 79
+          "topics": 582,
+          "withResearch": 500,
+          "withoutResearch": 82
         },
         "Personal & Social Development": {
-          "topics": 118,
-          "withResearch": 0,
-          "withoutResearch": 118
+          "topics": 123,
+          "withResearch": 6,
+          "withoutResearch": 117
         },
         "Science": {
-          "topics": 576,
-          "withResearch": 547,
+          "topics": 578,
+          "withResearch": 549,
           "withoutResearch": 29
+        },
+        "Art & Design": {
+          "topics": 4,
+          "withResearch": 4,
+          "withoutResearch": 0
+        },
+        "Performing Arts": {
+          "topics": 4,
+          "withResearch": 4,
+          "withoutResearch": 0
+        },
+        "Français": {
+          "topics": 4,
+          "withResearch": 4,
+          "withoutResearch": 0
         }
       },
       "missingTopicIds": [
@@ -175,7 +193,6 @@
         "mt_2qc_Kq63Le",
         "mt_2uHYdoxD0H",
         "mt_32B7xjUPwF",
-        "mt_33zncDHC3N",
         "mt_35-DhMh_Yr",
         "mt_37QCuGOxFe",
         "mt_39Yyr1KG7F",
@@ -583,6 +600,7 @@
         "mt_ZhvwM6LMBL",
         "mt_ZjIFGc6zPW",
         "mt_ZpCcTU8j_o",
+        "mt_ZtACVRIqmM",
         "mt_ZxdfRbwkKM",
         "mt_Zy-CKUkq34",
         "mt__25ZZdiEZd",
@@ -650,6 +668,7 @@
         "mt_d4reBzaIRl",
         "mt_dALEWRHXnZ",
         "mt_dJOKkYMsCv",
+        "mt_dLJu-KoJAM",
         "mt_dRLP8g0SAg",
         "mt_dXP_wBLIwU",
         "mt_dknMcCqvoY",
@@ -708,6 +727,7 @@
         "mt_i1kk9HDctI",
         "mt_i2-QaXbyzB",
         "mt_i8AGTuk4fJ",
+        "mt_iFQ6cOJr6e",
         "mt_iFkd0CTwlA",
         "mt_iWGnyUyN2j",
         "mt_ic4dmtTZlw",
@@ -826,6 +846,7 @@
         "mt_r1hw-KenpK",
         "mt_r5rwyP8zRU",
         "mt_r8bOJtofM7",
+        "mt_rCy4qtUwuT",
         "mt_rKwE6w2V6G",
         "mt_rQ2YJJi4uh",
         "mt_rSjwQLqLXH",

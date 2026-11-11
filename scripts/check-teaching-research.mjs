@@ -1,6 +1,45 @@
 import { createHash } from 'node:crypto';
 import { checkSchema } from './check-schema.mjs';
 const methodByType = { CONCEPTUAL: 'two_tier', PROCEDURAL: 'performance_task', REPRESENTATIONAL: 'interpret_translate', LANGUAGE: 'use_in_context', META: 'open_epistemic_probe' };
+
+/** Active export repairs must describe the current published assessment.
+ * Historical array indexes cannot survive an unrelated assessment rewrite. */
+export function checkResearchArchiveReferences(archive, { topics, research }) {
+  const errors = [];
+  if (!topics || !Array.isArray(topics.topics) || !topics.topics.every(row => row && typeof row.id === 'string')) {
+    return ['invalid topic inventory for research archive references'];
+  }
+  if (!research || !Array.isArray(research.records) ||
+      !research.records.every(row => row && !Array.isArray(row) && typeof row.topicId === 'string' && row.topicId.length > 0)) {
+    return ['invalid research records for archive references'];
+  }
+  if (!archive || archive.schemaVersion !== 1 || archive.version !== topics.version ||
+      !Array.isArray(archive.records) || !Array.isArray(archive.activeReferenceRepairs)) {
+    return ['invalid research archive reference inventory'];
+  }
+  const activeTopics = new Set(topics.topics.map(row => row.id));
+  const activeResearch = new Map(research.records.map(row => [row.topicId, row]));
+  const seen = new Set();
+  for (const repair of archive.activeReferenceRepairs) {
+    if (!repair || typeof repair !== 'object' || Array.isArray(repair) ||
+        Object.keys(repair).sort().join(',') !== 'from,path,researchTopicId,to' ||
+        !['from', 'path', 'researchTopicId', 'to'].every(key => typeof repair[key] === 'string' && repair[key].length > 0)) {
+      errors.push('invalid active research reference repair'); continue;
+    }
+    const match = /^\.?assess\.errorPatterns\[(0|[1-9][0-9]*)\]\.reteachPrerequisiteId$/.exec(repair.path);
+    if (!match) { errors.push(`research ${repair.researchTopicId}: unsupported archive repair path`); continue; }
+    const key = JSON.stringify([repair.researchTopicId, match[1]]);
+    if (seen.has(key)) errors.push(`research ${repair.researchTopicId}: duplicate active archive repair`);
+    seen.add(key);
+    if (!activeTopics.has(repair.to) || repair.from === repair.to) errors.push(`research ${repair.researchTopicId}: invalid active archive destination`);
+    const patterns = activeResearch.get(repair.researchTopicId)?.assess?.errorPatterns;
+    const pattern = Array.isArray(patterns) && patterns[Number(match[1])];
+    if (!pattern || pattern.reteachPrerequisiteId !== repair.to) {
+      errors.push(`research ${repair.researchTopicId}: stale active archive repair at ${repair.path}`);
+    }
+  }
+  return errors;
+}
 export function checkTeachingResearch(research, { topics, topicsBytes, manifest, schema }) {
   const errors = checkSchema(research, schema);
   if (errors.length) return errors; // Shape checks precede all nested traversal.
@@ -19,6 +58,14 @@ export function checkTeachingResearch(research, { topics, topicsBytes, manifest,
     check(Boolean(topic), `research unknown topic ${row.topicId}`);
     check(!seen.has(row.topicId), `duplicate research ${row.topicId}`); seen.add(row.topicId);
     check(!internal.test(JSON.stringify(row.learn)), `research ${row.topicId}: internal artifact vocabulary`);
+    for (const source of row.sources) if (source.url) {
+      let locator = source.url;
+      try { locator = decodeURIComponent(locator); } catch { /* URI shape is checked by the schema. */ }
+      check(!/\[curriculum wording omitted;/i.test(locator), `research ${row.topicId}: citation URL contains a prose-redaction marker`);
+    }
+    for (const omission of row.publicationNotes.omittedCurriculumText) {
+      check(!/^\.?sources\[(0|[1-9][0-9]*)\]\.url$/.test(omission.path), `research ${row.topicId}: citation URL must remain a locator, not omitted prose`);
+    }
     const claims = new Set(row.sources.map(s => s.claim));
     for (const activity of row.learn.activities) for (const claim of activity.sourceClaims) check(claims.has(claim), `research ${row.topicId}: unknown source claim`);
     if (row.assess) {

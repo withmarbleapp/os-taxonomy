@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "b472837",
+  "source": {
+    "catalogue": "the-ontario-curriculum-kindergarten-2026",
+    "edition": 2026,
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/kindergarten/grades/jk-sk",
+    "sourceAgeWindow": [
+      4,
+      6
+    ]
+  },
+  "scope": {
+    "records": 12,
+    "Full": 12,
+    "newTopics": 0,
+    "authoredClaimChanges": 0,
+    "dependencyChanges": 0,
+    "reusedTopics": 15,
+    "componentPairs": 29,
+    "newContexts": 8,
+    "newPairs": 29
+  },
+  "protocols": {
+    "identity-belonging-and-perspectives": {
+      "codes": [
+        "D19",
+        "D19.1",
+        "D19.2",
+        "D19.3",
+        "D20",
+        "D20.1",
+        "D20.2",
+        "D20.3"
+      ],
+      "task": "Offer non-sensitive choices for interests, strengths, accomplishments and experiences; child can describe,draw,point or pass on private details. Compare supplied diverse Canadian characters who belong to more than one group/community, with accurate attributed community material rather than stereotypes. Show verbally ANDnonverbally a way a character or the child contributes to a group. Hear different perspectives, identify a meaningful connection and explain how multiple memberships can shape a Canadian identity without requiring citizenship, one family structure or cultural uniformity. Use the actual three creator portions and identity sources in the literacy portfolio, preserving distinct Tłı̨chǫ, Cree-Métis and Inuit identities and Canadian places. An author/artist is one person, not a spokesperson for everyone. The learner makes a non-sensitive map of actual memberships such as their class and a shared play/reading group, compares it with an actual willing peer’s chosen non-private memberships and explains one effect of belonging (shared activity, language use or friendships). A fictional character alone cannot certify the own/peer requirement. Explain explicitly that these different communities and the classroom are part of Canadian life; Canadian identity does not require one language, faith, family form or citizenship status. Ask a respectful question rather than pretend to know a community practice. Describe an own strength or accomplishment and three personal qualities with actual supported examples when assessing the complete qualities claim, without ranking moral worth.",
+      "positive": "Interests/agency, multiple memberships, contribution in bothcommunicationchannels and a respectful connection across different views are evidenced with appropriate support.",
+      "nearMiss": "Demands a positive feeling, ranks identities, treats one creator as every community’s spokesperson, or requires disclosure of immigration/family/faith history.",
+      "transfer": "A fresh supplied community/character perspective requires a new supported connection.",
+      "dispositionBoundary": "Self-image/belonging are not a moral-worth or stable-confidence score.",
+      "resourceIds": [
+        "creator-source-portfolio",
+        "memberships-and-contributions"
+      ]
+    },
+    "fairness-bias-and-appropriate-response": {
+      "codes": [
+        "D21",
+        "D21.1",
+        "D21.2",
+        "D21.3"
+      ],
+      "task": "Use original concrete fictional play/group cases: a child is excluded from building because of a gender stereotype, an activity prevents access without accommodation, and a neutral turn-taking rule is mistaken for unfairness. Identify what is fair/unfair or biased from the actual facts, explain the effect, and choose an appropriate compassionate response such as stating a boundary,including an alternative or asking a trusted adult. Practise a safe assertive response for self and others without putting the child in a real confrontation. Change the case so fair allocation and discriminatory exclusion must be distinguished. Use the concrete case packet. For prejudice/discrimination explain in ordinary words an unfair group-based assumption and action, how the exclusion affects the child AND the group, and TWO distinct helpful strategies with reasons (include an accessible role, and seek a trusted adult/safely challenge the exclusion). Do not accept kind alone as both strategies. For equity actually distribute appropriate materials in the supported shared task: one participant needs a larger grip or extra accessible space; explain why identical provision may not give fair access, then adapt an actual allocation. The need is supplied, not inferred from appearance. Compare with the neutral turns case and transfer to a fresh changed access case.",
+      "positive": "Recognises the relevant biased/inequitable action, gives a reason and chooses a safe suitable response supporting self/others.",
+      "nearMiss": "Labels every disappointment discrimination or demands risky confrontation/forgiveness/approval of mistreatment.",
+      "transfer": "New supplied exclusion/access case requires a reasoned response.",
+      "limits": "No actual discrimination enactment against children,private incident disclosure or political-belief test.",
+      "resourceIds": [
+        "fairness-case-packet",
+        "memberships-and-contributions"
+      ]
+    }
+  },
+  "resources": {
+    "creator-source-portfolio": {
+      "report": "ontario-kindergarten-literacy-design-2026-11-11.json",
+      "resourceId": "creator-portfolio",
+      "binding": "Actual portions, identity attribution and access limits remain those of the reviewed literacy portfolio; do not substitute a biography for a work or invent a cultural practice."
+    },
+    "memberships-and-contributions": {
+      "ownMembershipMap": {
+        "chosenNonPrivateGroups": [],
+        "actualPeerChosenGroups": [],
+        "connectionOrDifference": null,
+        "oneBelongingInfluence": null,
+        "canadianCommunityConnection": null
+      },
+      "contributionTask": "In an actual class/shared group project, contribute a chosen practical step, describe its benefit in words AND communicate a related own ordered gesture/movement sequence to the group. Then change one role/circumstance and explain how the responsibility changes.",
+      "access": "Real willing peer comparison and actual learner-selected memberships; no forced family/faith/immigration disclosure. If unavailable, retain this performance condition rather than fill invented observations."
+    },
+    "fairness-case-packet": {
+      "cases": [
+        {
+          "id": "excluded-builder",
+          "facts": "A character wants to build and is capable of the safe task, but another character says the activity is only for boys. No actual child is excluded during delivery.",
+          "questions": [
+            "What assumption and unfair action are present?",
+            "How might exclusion affect the person and the shared group?",
+            "Explain two different safe inclusive/challenging strategies and why each may help."
+          ]
+        },
+        {
+          "id": "accessible-materials",
+          "facts": "In the actual shared construction, supplied participant requirements include a larger handle or more clear space. Offer suitable alternatives before distributing materials. Nobody must simulate disability.",
+          "questions": [
+            "Would identical materials necessarily give fair access?",
+            "Actually distribute available suitable materials according to the supplied needs, explain the choice and review access."
+          ]
+        },
+        {
+          "id": "neutral-turns",
+          "facts": "Everyone has an accessible turn. A character is disappointed that another person goes first. No identity-based exclusion or unmet access need is stated.",
+          "questions": [
+            "Does disappointment alone establish discriminatory treatment?",
+            "What further facts matter and what could a fair response be?"
+          ]
+        }
+      ],
+      "transfer": "Change a participation requirement or a proposed group rule; require a fresh reason and appropriate response, not the previous answer by rote."
+    }
+  },
+  "records": [
+    {
+      "code": "D19",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D19",
+      "disposition": "Full",
+      "requiredTaskDuty": "Explore actual strengths, interests and experiences while supporting a developing sense of self without a compulsory positive-emotion score.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D19.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D19.1",
+      "disposition": "Full",
+      "requiredTaskDuty": "Identify chosen interests, a supported strength and an actual accomplishment through accessible examples.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_ij20XUbMHg",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D19.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D19.2",
+      "disposition": "Full",
+      "requiredTaskDuty": "Describe actual preferences and interests through the learner’s chosen non-sensitive examples.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_nHvYYrhoM7",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D19.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D19.3",
+      "disposition": "Full",
+      "requiredTaskDuty": "Communicate an own thought and accessible experience, with permission to withhold private details.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_kvrvpQris4",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_N8CpN1EJrP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D20",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D20",
+      "disposition": "Full",
+      "requiredTaskDuty": "Explore differing perspectives and actual Canadian community diversity, explaining connections without erasing differences.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_x3DJWIEHBq",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DkzsZdyaL2",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_wzUzVEBqJb",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D20.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D20.1",
+      "disposition": "Full",
+      "requiredTaskDuty": "Explain real multiple memberships and connect the diversity of communities to Canadian life and identity.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_x3DJWIEHBq",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D20.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D20.2",
+      "disposition": "Full",
+      "requiredTaskDuty": "Actually contribute to a chosen group and communicate the contribution verbally and through an own non-verbal sequence.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_PJE57bAvMG",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_hu_OZPduxP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_N8CpN1EJrP",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D20.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D20.3",
+      "disposition": "Full",
+      "requiredTaskDuty": "Engage with a different perspective, ask respectfully and explain a supported connection.",
+      "protocolIds": [
+        "identity-belonging-and-perspectives"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_wzUzVEBqJb",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_OJVkWvIaM_",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_DkzsZdyaL2",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D21",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D21",
+      "disposition": "Full",
+      "requiredTaskDuty": "Recognise biased or discriminatory treatment and choose safe actions supporting self and others without forced confrontation.",
+      "protocolIds": [
+        "fairness-bias-and-appropriate-response"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D21.1",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D21.1",
+      "disposition": "Full",
+      "requiredTaskDuty": "Express an appropriate boundary or need and choose a response that supports personal and others’ well-being.",
+      "protocolIds": [
+        "fairness-bias-and-appropriate-response"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D21.2",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D21.2",
+      "disposition": "Full",
+      "requiredTaskDuty": "Explain fairness and biased treatment from actual case facts, distinguish need-based access from identical provision and respond compassionately.",
+      "protocolIds": [
+        "fairness-bias-and-appropriate-response"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_mDp-1vlL3R",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_wzUzVEBqJb",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_RhntJz7p_6",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    },
+    {
+      "code": "D21.3",
+      "key": "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D21.3",
+      "disposition": "Full",
+      "requiredTaskDuty": "Recognise unjust exclusion and choose an appropriate supported response rather than label every disappointment discrimination.",
+      "protocolIds": [
+        "fairness-bias-and-appropriate-response"
+      ],
+      "topicContributions": [
+        {
+          "topicId": "mt_HFN1pGASpZ",
+          "role": "component",
+          "ageBand": [
+            6,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_rqLMfiw61L",
+          "role": "component",
+          "ageBand": [
+            5,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        },
+        {
+          "topicId": "mt_PdYlsA33jB",
+          "role": "component",
+          "ageBand": [
+            4,
+            6
+          ],
+          "wholeClaimAssessmentRetained": true
+        }
+      ],
+      "remainingConditions": [],
+      "authoringMeaning": "Prepared complete source-task design; no actual child, personality, emotional or whole-topic prerequisite certification."
+    }
+  ],
+  "ageScopeDecision": {
+    "topicIds": [
+      "mt_HFN1pGASpZ",
+      "mt_mDp-1vlL3R",
+      "mt_x3DJWIEHBq"
+    ],
+    "newImplementationBand": [
+      6,
+      6
+    ],
+    "sourceEvidence": "The actual D20.1 specifies multiple community belonging and Canadian identity; D21 expressly includes bias, prejudice/discrimination, fairness and appropriate response. Complete existing evidence was compared with the concrete upper-programme tasks, independently challenged against source and hard paths, and retained.",
+    "limits": "No blanket four-year-old scope, new younger clone, changed definition or age-specific official deadline. Existing older contexts remain intact; generated flat starts may reflect this newly justified scoped endpoint."
+  },
+  "readinessBoundary": "HFN retains hard gates for stereotypes and its full social-awareness vocabulary. Fairness retains perspective-taking including actual disagreement and the vocabulary gate; groups retains respectful cultural curiosity. Short source tasks do not certify those complete prerequisite inventories. Actual own memberships/peer comparison, actual allocation and the explicit Canadian-community connection cannot be replaced with fictional or merely verbal proxies.",
+  "conditions": {
+    "privateDetails": "Participation may use school/play/reading memberships and neutral own experiences; never require family, faith, trauma or immigration disclosure.",
+    "developmentalAims": "Belonging, confidence and positive self-image are contextual aims, not stable character or moral-worth assessments.",
+    "delivery": "Use actual chosen memberships and a willing peer; supplied fictional cases support discrimination reasoning but do not replace own/peer evidence. No invented observation."
+  }
+}

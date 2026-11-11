@@ -13,7 +13,8 @@ import { createHash } from 'node:crypto';
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { checkTeachingResearch } from './check-teaching-research.mjs';
+import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
+import { checkTeachingResearch, checkResearchArchiveReferences } from './check-teaching-research.mjs';
 import { findDependencyCycle } from './check-dependency-cycles.mjs';
 import { checkTopicCompatibility } from './check-curriculum-alignments.mjs';
 
@@ -33,7 +34,7 @@ const clusters = load('clusters.json');
 const manifest = load('manifest.json');
 
 // --- declared counts match reality -----------------------------------------
-check(topics.topicCount === topics.topics.length, `topics: topicCount ${topics.topicCount} != ${topics.topics.length}`);
+errors.push(...checkManifestTopicInventory(topics, manifest));
 check(deps.edgeCount === deps.dependencies.length, `dependencies: edgeCount ${deps.edgeCount} != ${deps.dependencies.length}`);
 check(standards.curriculumCount === standards.curricula.length, `curricula: curriculumCount != length`);
 check(clusters.clusterCount === clusters.clusters.length, `clusters: clusterCount != length`);
@@ -101,6 +102,7 @@ for (const c of clusters.clusters) {
 const research = load('teaching-research.json');
 const researchSchema = JSON.parse(readFileSync(resolve(DATA, '..', 'schema', 'teaching-research.schema.json'), 'utf8'));
 errors.push(...checkTeachingResearch(research, { topics, topicsBytes: bytesOf('topics.json'), manifest, schema: researchSchema }));
+errors.push(...checkResearchArchiveReferences(load('archived-teaching-research.json'), { topics, research }));
 check(Boolean(manifest.files?.['teaching-research.json']), 'manifest missing teaching-research.json checksum');
 
 // Optional during preparation; a declared/present file must be complete and bound.

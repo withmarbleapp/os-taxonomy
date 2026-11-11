@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "38f846a",
+  "status": "B3.7 source-fit country/region/interrelationship and actual city-coordinate application completes the previously separate coordinate component; no new topic/edge/claim is added.",
+  "claimReview": {
+    "contributorIds": [
+      "mt_eDaSAl6DwW",
+      "mt_n3ojDXoaqC"
+    ],
+    "wholeCoordinateClaim": "Retain paired references/hemispheres/zero, read and plot, actual public-place approximation and changed-view transfer through the prior complete original graticule tasks; both selected cities being northwest does not replace the opposite-hemisphere tests.",
+    "wholeInterconnectionClaim": "Retain the complete prior migration-plus-other-connection and people/place-effects operation. These actual country cases are instances of the shared claim, not a new Canadian world-geography inventory.",
+    "sourceAge": "Exact 11–12 existing contexts only, no lower ages or new grades."
+  },
+  "resources": {
+    "coordinate-claim": {
+      "report": "geographic-coordinate-claim-review-2026-11-11.json",
+      "pointer": "/concreteTasks"
+    },
+    "whole-connections": {
+      "report": "ontario-grade6-international-connections-design-2026-11-11.json",
+      "pointer": "/protocols/humanitarian-response"
+    },
+    "country-connections": {
+      "report": "ontario-grade6-international-connections-design-2026-11-11.json",
+      "pointer": "/preparedCases"
+    },
+    "country-outlines": {
+      "url": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+      "locator": "Actual publisher page and linked publisher Git repository, exact pinned public-domain GeoJSON recorded in originalMapFixtures",
+      "scope": "Generalised/de-facto geographical reference, not legal boundaries or a complete inventory of every small territory; population/theme values are not imported."
+    },
+    "outline-terms": {
+      "url": "https://www.naturalearthdata.com/about/",
+      "locator": "Actual publisher public-domain terms and scope",
+      "scope": "Original derived country/graticule fixtures include attribution; no copied restricted curriculum map."
+    },
+    "pasadena": {
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+      "locator": "Actual Terrestrial Coordinates section, source’s Pasadena reference pair",
+      "scope": "Rounded city-region position at stated 0.1-degree resolution; no pupil DMS calculation or claim a city has one uniquely exact centre."
+    },
+    "portauprince": {
+      "url": "https://ungegn.un.org/dashboard/cities/details?crM49=332&id=218",
+      "locator": "Actual city-details body: country/coordinate source/latitude/longitude, United Nations Cartographic Section attribution",
+      "scope": "A representative city reference, explicitly rounded; not a parcel/survey position or population statistic."
+    }
+  },
+  "originalMapFixtures": {
+    "originalAssets": [
+      "assets/g6-country-city-coordinates-task.svg",
+      "assets/g6-country-city-coordinates-answer.svg"
+    ],
+    "countryOutlineSource": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_110m_admin_0_countries.geojson",
+    "sourceCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+    "countryOutlineSha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+    "cityCoordinates": [
+      {
+        "city": "Pasadena",
+        "country": "United States",
+        "source": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/",
+        "original": "34°08′44″N,118°08′41″W",
+        "teachingApproximation": {
+          "latitude": 34.1,
+          "longitude": -118.1
+        },
+        "resolutionDegrees": 0.1,
+        "sourceDecimal": {
+          "latitude": 34.14555555555555,
+          "longitude": -118.14472222222223
+        },
+        "panel": {
+          "width": 480,
+          "height": 320,
+          "longitudeBounds": [
+            -121,
+            -115
+          ],
+          "latitudeBounds": [
+            32,
+            36
+          ]
+        }
+      },
+      {
+        "city": "Port-au-Prince",
+        "country": "Haiti",
+        "source": "https://ungegn.un.org/dashboard/cities/details?crM49=332&id=218",
+        "original": {
+          "latitude": 18.5204505713,
+          "longitude": -72.2834397186
+        },
+        "teachingApproximation": {
+          "latitude": 18.5,
+          "longitude": -72.3
+        },
+        "resolutionDegrees": 0.1,
+        "sourceDecimal": {
+          "latitude": 18.5204505713,
+          "longitude": -72.2834397186
+        },
+        "panel": {
+          "width": 480,
+          "height": 360,
+          "longitudeBounds": [
+            -74,
+            -70
+          ],
+          "latitudeBounds": [
+            17,
+            20
+          ]
+        }
+      }
+    ],
+    "sourceLimits": [
+      "Generalised outlines do not certify parcel boundaries or every small country’s inclusion. No population/theme values are imported from Natural Earth.",
+      "Point values are representative source references rounded by the adult, not a universal precise centre or street address. No pupil DMS conversion is required.",
+      "The global panel locates selected countries/regions; local panels teach coordinate placement. Graticule spacing is angular, not a ground-distance scale."
+    ]
+  },
+  "protocols": {
+    "country-city-application": {
+      "codes": [
+        "B3.7"
+      ],
+      "contributorIds": [
+        "mt_eDaSAl6DwW",
+        "mt_n3ojDXoaqC"
+      ],
+      "resourceRefs": [
+        "coordinate-claim",
+        "whole-connections",
+        "country-connections",
+        "country-outlines",
+        "outline-terms",
+        "pasadena",
+        "portauprince"
+      ],
+      "assetRefs": [
+        "assets/g6-country-city-coordinates-task.svg",
+        "assets/g6-country-city-coordinates-answer.svg"
+      ],
+      "learnerActions": [
+        "Adult setup: provide the original country reference/task SVG in print and/or digital form, separate answer key and attributed coordinate cards. Preserve its named fields, graticule resolution, key and outline/approximation limits.",
+        "Identify and locate the United States and Haiti on the country map and relate them to the North American and Caribbean reference regions. Explain the actual significant Canada–US trade/production and Canada–Haiti humanitarian relationships from the sourced case packet, retaining the actual historical dates rather than inventing a current foreign-policy ranking.",
+        "Use both named coordinates to plot Pasadena in the United States and Port-au-Prince in Haiti on the blank local panels. Read the fields back; compare with the separate answer key and explain the 0.1-degree rounding. The learner does not convert the NASA minutes/seconds.",
+        "Use the prior A–F/zero-reference tasks and a labelled globe or second/turned map to retain the complete shared representation claim. Correct a city pair with the fields or hemisphere signs exchanged; do not infer ground distance from equal flat-grid spacing.",
+        "Retain the prior full country-interconnection task. On withdrawal of the case/answer chart, explain which actual country/region a city belongs to and why the studied country has a significant Canadian relationship, then locate it again using the source coordinates."
+      ],
+      "successConditions": [
+        "Actual country and region location, significant Canadian relationship and named-city coordinate use are all present, not a coordinate drill alone.",
+        "Both fields, hemispheres and stated precision determine the point; named-country recall or a single field is insufficient.",
+        "The complete existing coordinate/interconnection operations and source limits are accounted for; no universal first-number convention or legal-boundary accuracy is inferred."
+      ],
+      "nearMisses": [
+        "Places Haiti at the neighbouring Dominican Republic or treats the Caribbean as a sovereign country.",
+        "Uses the correct country name but never plots the two coordinates, or gives page-up as the latitude reference.",
+        "Treats a rounded source reference as a building address or claims one flat-grid centimetre means equal kilometres everywhere."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "coverageBoundary": "Full denotes source-fit authoring/task coverage for B3.7, not learner attainment, all countries/cities, precise navigation or a whole-grade completion claim. The source’s illustrative city list is not imposed as an exhaustive inventory."
+}

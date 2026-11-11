@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "75cf3baa78c7abf556d69d5147fd7a415c20c480",
+  "scope": {
+    "edition": "Ontario Science and Technology 2022",
+    "grade": 2,
+    "ageBand": [
+      7,
+      8
+    ],
+    "sourceRecordCount": 7,
+    "reviewKind": "Source-fit authoring design, not learner attainment or intervention efficacy."
+  },
+  "protocols": [
+    {
+      "id": "home-material-decisions",
+      "sourceCodes": [
+        "C1.1"
+      ],
+      "task": "Use three fictional illustrated household situations: a cold food mixture left warm, an unlabelled cleaning liquid reachable by a younger child, and unused paint/liquid being poured into a drain. No actual chemicals are brought out. For each, assess the current use/storage/disposal choice, explain a plausible personal-health or safety effect AND environmental consequence where relevant, and propose a better adult-managed practice. Compare an improvement with an alternative that merely hides the problem. Include ordinary known-food hygiene separately from chemical handling.",
+      "successfulEvidence": [
+        "Identify the unsafe practice, connect it to a credible consequence, and justify an improvement across use, storage and disposal.",
+        "For environmental communication, explain at least three supported actions across waste, water and living things; do not infer a learner already masters the entire environmental claim from a single disposal example."
+      ],
+      "nearMiss": "Only repeats tell an adult without explaining any consequence, declares all liquids dangerous, or moves a hazardous substance into an attractive unlabelled bottle.",
+      "changedCase": "A labelled adult-stored material is moved to a different location; decide whether that actually improves access control and disposal, and explain what remains unknown.",
+      "conditions": {
+        "useStorageDisposalAllRequired": true,
+        "personalAndEnvironmentalEffects": true,
+        "reasonedImprovement": true,
+        "fictionalAdultManagedCasesOnly": true,
+        "noProductHandlingMixingOrDisposalByChild": true,
+        "wholeFoodHygieneAndScienceSafetyChecksSeparate": true
+      },
+      "resources": [
+        "hc-household"
+      ]
+    },
+    {
+      "id": "phase-change-consequences",
+      "sourceCodes": [
+        "C1.2"
+      ],
+      "task": "Compare two documented state-change cases: a sealed pure-water ice pack melting in a normal-pressure case as it helps keep a packed food container cool, and loss of sea ice used by Pacific walruses as resting platforms near feeding areas. Build a before-state→changed-state→effect chain for people and for a living environment. Assess a benefit and a drawback, including limits: the melted pure-water pack cannot keep removing heat indefinitely, and walruses can also haul out on land, so loss of sea ice does not mean all resting becomes impossible. No pupil must travel, cool their body or handle wildlife. This is a documented adult-managed case; no child handles a pack. Do not substitute an unspecified commercial gel formulation and assume the same phase behaviour.",
+      "successfulEvidence": [
+        "Name the actual solid/liquid change and explain how it changes a useful function or habitat access.",
+        "Judge the impact with a supported reason, distinguishing a human benefit from an environmental harm rather than treating melting itself as always good or bad."
+      ],
+      "nearMiss": "Says hot weather is bad with no state-change mechanism, or claims all walruses die as soon as ice melts.",
+      "changedCase": "Use a fictional frozen-water pipe or melting ice sculpture case; identify the changed material state and affected function before judging consequences. Do not assume every warmed material melts.",
+      "conditions": {
+        "peopleAndEnvironment": true,
+        "actualStateToConsequenceMechanism": true,
+        "benefitAndHarmCompared": true,
+        "noUniversalMeltingJudgement": true,
+        "walrusLandHauloutLimit": true,
+        "noWildlifeOrHazardExposure": true,
+        "specifiedPureWaterPackNotGenericGel": true
+      },
+      "resources": [
+        "mmc-walrus",
+        "acs-heating"
+      ]
+    },
+    {
+      "id": "society-environment-material-portfolio",
+      "sourceCodes": [
+        "C1"
+      ],
+      "task": "Complete both material-decision and phase-consequence protocols, then make an original two-part advice display: choose a useful household solid/liquid practice, evaluate its personal/social and environmental trade-offs, and justify an improvement; compare that with a documented state-change benefit/harm. Explain why a material can be useful while its storage or disposal still needs care. This own synthesis is required in addition to the specific tasks.",
+      "successfulEvidence": [
+        "The display connects actual use, consequence and reasoned choice; it includes both personal/social and environmental perspectives and at least one actual state-change chain."
+      ],
+      "nearMiss": "Lists material names or copies the two prior answers without an integrated judgement about use and impact.",
+      "changedCase": "A different fictional home use is introduced; identify what evidence is needed and qualify the advice rather than assuming a hazard symbol alone determines environmental impact.",
+      "conditions": {
+        "ownIntegratedJudgement": true,
+        "notChildLinkCountRollup": true,
+        "societyAndEnvironment": true,
+        "bothSpecificProtocolsRequired": true,
+        "noChildChemicalAction": true
+      },
+      "resources": [
+        "hc-household",
+        "mmc-walrus"
+      ],
+      "includesProtocols": [
+        "home-material-decisions",
+        "phase-change-consequences"
+      ]
+    },
+    {
+      "id": "stable-and-changing-states",
+      "sourceCodes": [
+        "C2.4"
+      ],
+      "task": "Use a safe adult-prepared ice/water observation, suitable Celsius thermometer and supplied reliable heating/cooling record. Contrast ice remaining solid below its melting conditions, liquid water remaining liquid within its ordinary range, melting at the transition while ice and liquid coexist, and cooling/freezing. Read and record an actual safe temperature. Explain why not every increase in temperature causes a state change. Add a material-specific butter comparison: a mixture can soften over a range rather than share pure water’s sharp point. Boiling values are supplied researched evidence only.",
+      "successfulEvidence": [
+        "Identify both conditions that preserve the current solid/liquid state and conditions that change it.",
+        "Distinguish rising temperature within a state from a constant-temperature melting interval, retaining correct qualitative energy reasoning in the separate whole heating-claim assessment."
+      ],
+      "nearMiss": "Predicts every warmed solid melts, every liquid freezes at 0°C, or a melting plateau must mean no energy enters.",
+      "changedCase": "Given two samples with different material labels and supplied temperature ranges, explain why identical temperatures need not imply identical states. A non-transition warming example is mandatory.",
+      "conditions": {
+        "stableAndTransitionCases": true,
+        "actualSafeCelsiusReading": true,
+        "pureWaterNormalPressureReference": true,
+        "bothPhasesRemainForPlateau": true,
+        "materialSpecificRange": true,
+        "nonTransitionExample": true,
+        "noChildBoilingExtremeHeatOrDryIce": true,
+        "qualitativeEnergyNotDropped": true
+      },
+      "resources": [
+        "acs-heating",
+        "phase-correction"
+      ]
+    },
+    {
+      "id": "useful-solid-liquid-combinations",
+      "sourceCodes": [
+        "C2.5"
+      ],
+      "task": "Describe two useful solid-plus-liquid cases with actual ingredient/state and purpose evidence: oats combined with a known safe liquid/yogurt to make a chilled food preparation, and flour/water used in an adult-prepared cooled paper adhesive example. Use the actual current food recipe as a teacher factual reference, not a tasting requirement. A safe approved prepared sample or documented process can support the second case; pupils need not handle raw powder or warm paste. Identify what each starting solid/liquid contributes and how the resulting mixture serves its purpose. Name mixing accurately and distinguish it from simply melting one material.",
+      "successfulEvidence": [
+        "Describe both starting components and resulting use; explain a property/function improvement rather than only naming a recipe.",
+        "Retain the full snack-preparation operation as a separate assessment if whole-topic mastery is claimed: washing, suitable child-safe handling, combining and serving are not inferred from watching one mixture."
+      ],
+      "nearMiss": "Gives only a solid-solid snack, calls any liquid mixture safe to drink, or says the solid has melted merely because it is no longer separately visible.",
+      "changedCase": "Choose between a watery mixture that will not hold a supplied paper joint and an adult-prepared suitable paste; describe why the property matters without inventing molecular or chemical-reaction explanations.",
+      "conditions": {
+        "twoUsefulSolidLiquidCases": true,
+        "actualComponentsAndPurpose": true,
+        "descriptionNotUniversalProductionMandate": true,
+        "noTastingRawFlourOrHotPasteHandling": true,
+        "adultFoodSafetyAllergyAndRefrigeration": true,
+        "noChemicalMechanismInference": true,
+        "wholeSnackAndVocabularyChecksSeparate": true
+      },
+      "resources": [
+        "hc-oats",
+        "discovery-adhesive"
+      ]
+    },
+    {
+      "id": "substance-symbol-meanings",
+      "sourceCodes": [
+        "C2.7"
+      ],
+      "task": "Use the actual CCOHS chart as an attributed teacher reference. Present clearly labelled GHS red-diamond flame, corrosion and skull-and-crossbones symbols on fictional cards, with their meanings supplied during teaching. The learner explains each substance hazard in their own words and links it to a safe adult-help response. Contrast flame with flame-over-circle and skull with exclamation so shape recognition alone cannot pass. A separately labelled Canadian household-container example may transfer the operation; explain that its frame conventions differ from GHS. There are no actual products or exposures.",
+      "successfulEvidence": [
+        "Explain flammability, corrosive damage and acute toxicity meanings; do not pass from saying only dangerous or tell an adult.",
+        "Identify that a familiar community sign and a substance hazard symbol communicate different instructions; retain broader whole-sign assessment separately."
+      ],
+      "nearMiss": "Identifies only red colour, treats every pictogram as poison, confuses oxidizer with flammable, or assumes no pictogram means safe.",
+      "changedCase": "Apply a learned hazard meaning to a new fictional labelled substance and distinguish the separately attributed household frame, without assuming every country uses Canadian consumer conventions.",
+      "conditions": {
+        "multipleInternationalHazardMeanings": true,
+        "exactSymbols": [
+          "ghs-flame",
+          "ghs-corrosion",
+          "ghs-skull-crossbones"
+        ],
+        "meaningNotAdultResponseAlone": true,
+        "internationalAndCanadianFramesDistinguished": true,
+        "absenceNotSafetyProof": true,
+        "noChemicalHandlingOrWorkplaceCertification": true,
+        "publisherChartNotRedistributed": true
+      },
+      "resources": [
+        "ccohs-pictograms",
+        "hc-household"
+      ]
+    },
+    {
+      "id": "liquid-solid-own-investigation-portfolio",
+      "sourceCodes": [
+        "C2"
+      ],
+      "task": "Construct an original materials exhibit that covers every C2 child duty. Use actual safe solid/liquid examples from natural and built settings; describe properties rather than rely on container labels. Compare equal known quantities of two safe liquids for flow and container-shape behaviour without requiring chemical identification. Compare liquid water and ice and complete the stable/change protocol. Plan one consistent water test on several safe material samples; record before grouping, classify BOTH buoyancy and absorbing/repelling water with separate observations, and re-test a surprising specimen rather than overwrite it. Complete the useful-mixture and substance-symbol tasks. Explain connections in an own model/table rather than count linked topics. Use an original safe tray with cork, sponge, a plastic spoon and a metal spoon; compare the actual specimens rather than assume a universal result. In a shallow adult-supervised water container, record float/sink and the separate water-absorption/repelling observation. Repeat a specimen after wetting if its behaviour changes. Use pond water/ice in attributed observation images and built-setting safe water/solid-container examples to span natural and built settings; no pupil collects unknown water.",
+      "successfulEvidence": [
+        "The exhibit contains actual classification, properties, water state/conditions, stable/change cases, useful mixtures and explained hazard symbols.",
+        "For the tested property, use the same method on each sample, record results before grouping and justify a changed grouping when the criterion changes. Floating is not assumed to mean water-repellent."
+      ],
+      "nearMiss": "Only displays one ice picture or a pre-sorted material set; skips one of buoyancy or water absorption, or treats the generic safety response as symbol meaning.",
+      "changedCase": "A material floats but absorbs water while another sinks and repels it: revise the two independent classifications from observations and explain why one property cannot stand for the other.",
+      "conditions": {
+        "ownIntegratedExhibitRequired": true,
+        "allSevenC2ChildDuties": true,
+        "naturalAndBuiltSolidLiquidExamples": true,
+        "actualLiquidAndSolidPropertyComparison": true,
+        "waterLiquidAndIceProperties": true,
+        "actualConsistentTestAndRecordBeforeClassify": true,
+        "bothBuoyancyAndAbsorbRepel": true,
+        "separatePropertyEvidence": true,
+        "noChildChemicalExposure": true,
+        "wholeCanonicalInventoriesNotInferredFromSubset": true
+      },
+      "resources": [
+        "acs-liquids",
+        "acs-heating",
+        "ccohs-pictograms"
+      ],
+      "includesProtocols": [
+        "stable-and-changing-states",
+        "useful-solid-liquid-combinations",
+        "substance-symbol-meanings"
+      ],
+      "childDutyCodes": [
+        "C2.1",
+        "C2.2",
+        "C2.3",
+        "C2.4",
+        "C2.5",
+        "C2.6",
+        "C2.7"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "hc-household",
+      "url": "https://www.canada.ca/en/health-canada/services/home-safety/household-chemical-safety.html",
+      "actualRead": "Complete current household chemical safety main body; page 2026-10-02.",
+      "use": "Factual adult-managed use, storage, disposal and separately attributed Canadian consumer-symbol conventions; no child handling or clinical instructions."
+    },
+    {
+      "id": "mmc-walrus",
+      "url": "https://www.mmc.gov/priority-topics/species-of-concern/pacific-walrus/",
+      "actualRead": "Actual overview, distribution, ecosystem and conservation body.",
+      "use": "Sea-ice resting/feeding access and alternative land haulouts; no universal mortality or population forecast."
+    },
+    {
+      "id": "acs-heating",
+      "url": "https://www.acs.org/education/resources/k-8/inquiryinaction/second-grade/chapter-5/lesson-5-1-changes-caused-by-heating-and-cooling.html",
+      "actualRead": "Complete lesson main body; heating/cooling observations.",
+      "use": "Observable water/butter change examples only. Original tasks; no copied lesson or worksheet. Its simplified speed-up phrasing is not adopted for a constant-temperature melting plateau."
+    },
+    {
+      "id": "acs-liquids",
+      "url": "https://www.acs.org/education/resources/k-8/inquiryinaction/second-grade/chapter-2-liquids-have-properties/lesson-2-1-liquids-have-properties.html",
+      "actualRead": "Complete current lesson main body, including properties investigation, explanation and extension. No video or linked animation viewed.",
+      "use": "Different liquids can have different observable properties. No copied sequence, mineral-oil task, dropper sheet or product handling."
+    },
+    {
+      "id": "hc-oats",
+      "url": "https://www.canada.ca/en/health-canada/services/food-guide/eating-support/kitchen/recipes/classic-overnight-oats.html",
+      "actualRead": "Complete current HTML recipe body, page 2026-04-10; not combined with differently proportioned older PDF.",
+      "use": "Solid-plus-liquid food purpose and adult refrigeration/allergy constraints; no tasting or diet score."
+    },
+    {
+      "id": "discovery-adhesive",
+      "url": "https://youngscientistlab.com/pdfs/3_science-starters/lesson-plans-and-activities/k-2/3M-YSC-ClassroomActivity-FunWithAdhesives.pdf",
+      "actualRead": "Complete ten-page activity; factual flour/water adhesive use.",
+      "use": "Factual useful-mixture example only. No reproduced worksheet/activity sequence or unsupported starch/chemical mechanism; adult-prepared safe case."
+    },
+    {
+      "id": "ccohs-pictograms",
+      "url": "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/pictograms.html",
+      "actualRead": "Complete current main body and full separately rendered official pictogram poster visually checked.",
+      "use": "Actual GHS flame/corrosion/skull meanings and contrast; bounded reference, not occupational certification or redistributed poster.",
+      "teacherChartUrl": "https://www.ccohs.ca/pdfs/products/posters/WHMIS_pictograms.pdf"
+    },
+    {
+      "id": "phase-correction",
+      "reportRef": "phase-energy-and-prerequisite-correction-2026-11-11.json",
+      "actualRead": "Exact reviewed heating evidence and both complete corrected guides.",
+      "use": "Warming versus isothermal melting, actual safe thermometer task and no mandatory independent three-state diagram prerequisite."
+    }
+  ],
+  "conditions": {
+    "noNewClaimOrAgeExpansion": true,
+    "sourceComponentsNotWholeTopicCertification": true,
+    "noInheritedSourceFlagUpgrade": true,
+    "noPEOrClinicalTasks": true,
+    "noActualChildPerformanceClaim": true
+  },
+  "inheritedGuideLimits": [
+    "A solution is not necessarily colourless: uniformity is not the same as lack of colour; visible particles are not a universal solution test. No tasting is used to establish dissolved material. The existing vocabulary guide is preserved, not recertified.",
+    "A warm mist is liquid droplets; water vapour itself is invisible. No child kettle or hot-steam task.",
+    "Classifying Materials must use actual recorded evidence. Some coins are plated steel, so no universal copper-coin answer is imposed; accept the tested specimen result.",
+    "Matching or viewing one diagnostic does not demonstrate complete vocabulary, food hygiene, snack, three-state or sign inventories; separate whole-card checks remain when assessing those claims."
+  ],
+  "sourceBindings": [
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "society-environment-material-portfolio"
+      ],
+      "requiredConditions": {
+        "ownIntegratedJudgement": true,
+        "notChildLinkCountRollup": true,
+        "societyAndEnvironment": true,
+        "bothSpecificProtocolsRequired": true,
+        "noChildChemicalAction": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.1",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "home-material-decisions"
+      ],
+      "requiredConditions": {
+        "useStorageDisposalAllRequired": true,
+        "personalAndEnvironmentalEffects": true,
+        "reasonedImprovement": true,
+        "fictionalAdultManagedCasesOnly": true,
+        "noProductHandlingMixingOrDisposalByChild": true,
+        "wholeFoodHygieneAndScienceSafetyChecksSeparate": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.2",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "phase-change-consequences"
+      ],
+      "requiredConditions": {
+        "peopleAndEnvironment": true,
+        "actualStateToConsequenceMechanism": true,
+        "benefitAndHarmCompared": true,
+        "noUniversalMeltingJudgement": true,
+        "walrusLandHauloutLimit": true,
+        "noWildlifeOrHazardExposure": true,
+        "specifiedPureWaterPackNotGenericGel": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "liquid-solid-own-investigation-portfolio"
+      ],
+      "requiredConditions": {
+        "ownIntegratedExhibitRequired": true,
+        "allSevenC2ChildDuties": true,
+        "naturalAndBuiltSolidLiquidExamples": true,
+        "actualLiquidAndSolidPropertyComparison": true,
+        "waterLiquidAndIceProperties": true,
+        "actualConsistentTestAndRecordBeforeClassify": true,
+        "bothBuoyancyAndAbsorbRepel": true,
+        "separatePropertyEvidence": true,
+        "noChildChemicalExposure": true,
+        "wholeCanonicalInventoriesNotInferredFromSubset": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.4",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "stable-and-changing-states"
+      ],
+      "requiredConditions": {
+        "stableAndTransitionCases": true,
+        "actualSafeCelsiusReading": true,
+        "pureWaterNormalPressureReference": true,
+        "bothPhasesRemainForPlateau": true,
+        "materialSpecificRange": true,
+        "nonTransitionExample": true,
+        "noChildBoilingExtremeHeatOrDryIce": true,
+        "qualitativeEnergyNotDropped": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.5",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "useful-solid-liquid-combinations"
+      ],
+      "requiredConditions": {
+        "twoUsefulSolidLiquidCases": true,
+        "actualComponentsAndPurpose": true,
+        "descriptionNotUniversalProductionMandate": true,
+        "noTastingRawFlourOrHotPasteHandling": true,
+        "adultFoodSafetyAllergyAndRefrigeration": true,
+        "noChemicalMechanismInference": true,
+        "wholeSnackAndVocabularyChecksSeparate": true
+      }
+    },
+    {
+      "sourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C2.7",
+      "grade": 2,
+      "ageBand": [
+        7,
+        8
+      ],
+      "protocolIds": [
+        "substance-symbol-meanings"
+      ],
+      "requiredConditions": {
+        "multipleInternationalHazardMeanings": true,
+        "exactSymbols": [
+          "ghs-flame",
+          "ghs-corrosion",
+          "ghs-skull-crossbones"
+        ],
+        "meaningNotAdultResponseAlone": true,
+        "internationalAndCanadianFramesDistinguished": true,
+        "absenceNotSafetyProof": true,
+        "noChemicalHandlingOrWorkplaceCertification": true,
+        "publisherChartNotRedistributed": true
+      }
+    }
+  ]
+}

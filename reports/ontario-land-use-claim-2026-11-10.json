@@ -1,0 +1,368 @@
+{
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "status": "Reviewed shared claim and source-checked original teaching proposal; one canonical CA/Ontario8–9 association. Final Grade3 expectation/integrated coverage remains under review.",
+  "scope": "G3B3.5 land-use purposes and relationship to needs/wants, not a new grade/country-specific duplicate.",
+  "officialSource": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g3",
+  "wholeExistingCandidates": [
+    {
+      "id": "mt_cUpJvBD1YA",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Places & Environments",
+      "name": "Natural, managed and built features",
+      "description": "Identify the natural, managed and constructed features of local places and describe their location",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "centrality": 0.04674796747967479,
+      "evidence": [
+        "Sort photos of local features into natural (creek, hill), managed (park, farm, garden) and constructed (road, school, shops)",
+        "Locate local places on a simple map of the neighbourhood and describe where they are with position words (e.g. 'the park is next to the library')",
+        "Explain why a park is a managed feature (people plant and look after it) even though it contains natural plants"
+      ],
+      "assessmentPrompt": "On a walk around your neighbourhood, can {{name}} point out natural things like a creek, looked-after places like a park, and built things like roads and shops?",
+      "standards": [
+        "acara-v9:AC9HS1K03"
+      ]
+    },
+    {
+      "id": "mt_VIUF5Vspbg",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Places & Environments",
+      "name": "Food and fibre production",
+      "description": "Describe the main ways of producing food and fibre — cropping, livestock grazing, horticulture (fruit and vegetables), aquaculture, forestry, and wool and cotton production — including First Nations peoples' food production and land and sea management",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 12,
+      "centrality": 0.02947154471544716,
+      "evidence": [
+        "Match plants and animals to the products they give and the production system they come from (e.g. wheat → bread → cropping, cotton → T-shirt, pine trees → timber, wool → livestock, farmed salmon → aquaculture)",
+        "Describe the main steps in producing one food or fibre and who does each step (e.g. bread: the farmer grows wheat, the miller makes flour, the baker bakes; cotton: planting, irrigating, picking, ginning, spinning)",
+        "Describe one First Nations food production practice (e.g. stone fish traps or managing plants with fire) using a school-approved source"
+      ],
+      "assessmentPrompt": "At the supermarket, can {{name}} tell you how different foods were produced — grown as crops, in orchards, on grazing farms or in fish farms?",
+      "standards": [
+        "acara-v9:AC9TDE2K03",
+        "acara-v9:AC9TDE4K03",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.7",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B2.8"
+      ]
+    },
+    {
+      "id": "mt_QVUW4olzHP",
+      "type": "REPRESENTATIONAL",
+      "subject": "Geography",
+      "domain": "Maps & Spatial Skills",
+      "name": "Local, regional and state scales",
+      "description": "Represent places at different geographical scales (local, regional and state, territory or national) on maps, and describe how people and places are interconnected across those scales (e.g. through food, jobs, services and transport)",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8,
+      "centrality": 0.03455284552845529,
+      "evidence": [
+        "Locate their suburb or town, its region and their state or territory on a set of maps at different scales",
+        "Label the state or territory capital and one regional centre on a map of their state or territory",
+        "Trace an interconnection across scales (e.g. milk from a regional dairy farm to a local shop, or travelling to a city hospital) and draw it as a flow map"
+      ],
+      "assessmentPrompt": "Looking at a map with {{name}}, can they find your suburb or town, your region and your state — and explain how things like food travel from farms to your local shop?",
+      "standards": [
+        "acara-v9:AC9HS2K03"
+      ]
+    },
+    {
+      "id": "mt_RgQxPddV8v",
+      "type": "CONCEPTUAL",
+      "subject": "Life Skills",
+      "domain": "Entrepreneurship",
+      "name": "Goods & Services",
+      "description": "Some people make things (goods) and some people do things for others (services); recognising both in everyday life and understanding that both have value",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 8,
+      "centrality": 0.02540650406504065,
+      "evidence": [
+        "Sort a set of pictures into goods (things you can touch) and services (things people do for you)",
+        "Give three examples of goods and three examples of services from their everyday life",
+        "Explain that both making things and helping people are valuable kinds of work"
+      ],
+      "assessmentPrompt": "Could {{name}} tell you the difference between a product you buy in a shop and a service like getting a haircut, and give examples of each?",
+      "standards": [
+        "acara-v9:AC9TDE2K01",
+        "acara-v9:AC9TDEFK01"
+      ]
+    },
+    {
+      "id": "mt__ab4knIaSL",
+      "type": "CONCEPTUAL",
+      "subject": "Life Skills",
+      "domain": "Money & Finance",
+      "name": "Needs & Wants",
+      "description": "The difference between things we need (food, shelter, clothing) and things we want (toys, treats); that we sometimes have to choose because money is limited",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 13,
+      "centrality": 0.04878048780487805,
+      "evidence": [
+        "Sort a set of pictures into 'need' and 'want' categories and explain their choices",
+        "Give an example of something everyone needs and something that is a want",
+        "Explain why a family might choose to buy a need before a want"
+      ],
+      "assessmentPrompt": "If you showed {{name}} pictures of a winter coat, a toy robot, and a loaf of bread, could they tell you which ones are needs and which is a want?",
+      "standards": [
+        "acara-v9:AC9HS5K08",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-F1.3",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-F1.4",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-F1.5",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-F1.3",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.4"
+      ]
+    },
+    {
+      "id": "mt_yDQmYTrrzP",
+      "type": "CONCEPTUAL",
+      "subject": "Life Skills",
+      "domain": "Entrepreneurship",
+      "name": "Natural, human and capital resources",
+      "description": "Classify the resources used to make a product as natural, human or capital, and explain why resources are limited and the choices this forces",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "centrality": 0.0315040650406504,
+      "evidence": [
+        "Sort the resources used to make a product (e.g. bread) into natural (wheat, water), human (bakers' skills) and capital (ovens, delivery trucks)",
+        "Identify which type of resource a business would need more of to make more of its product and explain why",
+        "Explain why resources are limited and what choices a business or family makes as a result"
+      ],
+      "assessmentPrompt": "Thinking about the bread from your local bakery, can {{name}} sort what's needed to make it into natural resources (wheat), people's skills (the baker) and equipment (ovens)?",
+      "standards": [
+        "acara-v9:AC9HS5K08"
+      ]
+    },
+    {
+      "id": "mt_ZY38c705Ce",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Places & Environments",
+      "name": "People shaping places",
+      "description": "Describe the influence of people, including First Nations Australians and people in other countries, on the characteristics of a place",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "centrality": 0.08028455284552846,
+      "evidence": [
+        "Explain how First Nations Australians shaped places through practices such as cultural burning and building fish or eel traps (e.g. Budj Bim in Victoria or the Brewarrina fish traps in New South Wales)",
+        "Describe how people in another country influence an Australian place (e.g. overseas demand for minerals creating mining towns, or migrant communities shaping a suburb's shops and food)",
+        "Compare how a place's characteristics changed through human influence, using two maps or photos"
+      ],
+      "assessmentPrompt": "Does {{name}} know that First Nations people shaped the land with practices like eel traps and burning — and that people overseas influence Australian places too, like mining towns?",
+      "standards": [
+        "acara-v9:AC9HS5K04"
+      ]
+    },
+    {
+      "id": "mt_bFK6owxsmi",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Places & Environments",
+      "name": "Why environments matter",
+      "description": "Explain the importance of environments, including natural vegetation and water sources, to people and animals, comparing an environment in their own country (e.g. Australia) with one on another continent",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "centrality": 0.03455284552845529,
+      "evidence": [
+        "Explain how a native vegetation type (e.g. eucalypt forest, mangroves or grasslands) provides food, shelter and other needs for animals and people",
+        "Describe the importance of an Australian water source (e.g. the Murray–Darling Basin, a billabong or the Great Artesian Basin) to farming, towns and wildlife",
+        "Compare the importance of an Australian environment with one on another continent (e.g. the Amazon rainforest) for people and animals"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why places like the Murray River or eucalypt forests are so important for animals, farms and towns in Australia?",
+      "standards": [
+        "acara-v9:AC9HS4K05"
+      ]
+    }
+  ],
+  "mismatches": {
+    "mt_cUpJvBD1YA": "Distinguishes natural/managed/constructed features and their location. A shop/home/factory can all be constructed, so that classification does not establish the land’s different purposes. A managed forest may have different uses depending on actual management.",
+    "mt_VIUF5Vspbg": "Food/fibre production systems and an actual First Nations production practice supply genuine agriculture/forestry components, not housing/transport/commerce/recreation/conservation purpose classification as a whole.",
+    "mt_QVUW4olzHP": "Geographical scale, named locations and flow interconnection are representational, not a complete land-purpose concept.",
+    "mt_RgQxPddV8v": "Distinguishes things made from services/work done, not the purpose of places and land; no silent expansion.",
+    "mt__ab4knIaSL": "Needs/wants and limited-money choice supply a prerequisite/component, not the land-use purpose distinction.",
+    "mt_yDQmYTrrzP": "Classifies natural/human/capital inputs to production and limited resources; different classification and broader10–11whole claim, not lowered for one source word.",
+    "mt_ZY38c705Ce": "Explains actual First Nations Australian and overseas influences on Australian places and change through time, not the shared classification of land-use purpose and its needs relationship. Preserve its named knowledge and comparison.",
+    "mt_bFK6owxsmi": "Environmental vegetation/water importance and Australian/intercontinental comparison do not establish functional land-use categories. Preserve the whole existing geographical knowledge rather than lower or broaden its claim."
+  },
+  "candidateClaim": {
+    "subject": "Geography",
+    "domain": "Places & Environments",
+    "type": "CONCEPTUAL",
+    "workingName": "Land use and human needs",
+    "description": "Identify common purposes for which people use land and water in supplied local/regional examples—homes, growing food, work and services, transport, recreation and conservation—and explain the needs/wants those uses meet. Recognize that a place may have more than one use and that physical appearance or a natural/managed/built label alone does not establish its purpose.",
+    "positive": "Given accurate short accounts of a farm, homes, shops/workplaces, a road, recreation space and a conservation area, identify what each place is used for and the need/want it helps address. Explain a supplied mixed-use example without forcing one exclusive label.",
+    "nearMiss": "Calls every constructed place industrial or every green area agricultural/conservation; treats no visible building as no use, or names a category without linking purpose to need/want.",
+    "transfer": "A shop with homes above, or two wooded areas with explicitly different stated uses; retain the purpose distinction without guessing actual land use from colour/cover alone.",
+    "scopeBoundary": "No legal zoning decision, exhaustive universal classification code, property ownership, advanced ecological mechanism, population model or why-every-settlement-location theory. Respect existing cultural/land uses; unbuilt does not mean unused.",
+    "ageProposal": "CA/Ontario8–9 from full G3 source/task fit; no old-topic age change.",
+    "dependencies": "None assumed. Existing needs/features/production claims can contribute without inventing hard prerequisites or inferring mastery transfer."
+  },
+  "independentAssessmentBoundary": "A learner may correctly classify both a home and a factory as built but fail to distinguish their purposes; another may explain their uses while misclassifying managed park vegetation as wholly natural. The concept is independently assessable from the closest existing classification, rather than a harder numerical/older-country version.",
+  "whyTaskFactsAloneInsufficient": "Supplied local facts are still needed, but the requirement asks the shared purposeful categories and their needs relationship across cases. Merely identifying visible features or naming goods does not assess that distinction. If an existing whole claim with this operation is found, reuse it instead.",
+  "primaryReferences": [
+    {
+      "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/land-cover-land-use",
+      "support": "Defines land use by purpose and distinguishes it from cover; this does not equate the existing natural/managed/built scheme with formal remote-sensing cover categories."
+    },
+    {
+      "url": "https://www.ontario.ca/document/citizens-guide-land-use-planning",
+      "support": "Overview identifies homes/factories, parks/schools and roads/services in community planning. No legal procedure or current zoning rule would be taught from this source."
+    }
+  ],
+  "consumerImpact": "One new independent shared knowledge state after repository acceptance; no inference of mastery of older features/needs claims or transfer from them, no resets or DB publication authorized.",
+  "newCard": {
+    "id": "mt_G4Fz9lw20-",
+    "type": "CONCEPTUAL",
+    "subject": "Geography",
+    "domain": "Places & Environments",
+    "name": "Land use and human needs",
+    "description": "Distinguish common purposes for which people use land and water, including housing, food production, making and exchanging goods or services, transport, recreation and conservation, and explain how those uses address human needs and wants. Recognize mixed uses and that buildings, vegetation or a natural/managed/built label alone do not establish a place’s purpose; unbuilt places can have important uses.",
+    "ageRangeStart": 8,
+    "ageRangeEnd": 9,
+    "centrality": 0,
+    "evidence": [
+      "Use supplied accurate local or regional accounts to distinguish the purpose of places used for homes, food production, making goods, shops/services, transport, recreation and conservation; explain the needs or wants addressed.",
+      "Explain a supplied land or water use, including a use without buildings, without treating an unbuilt place as unused or assuming its purpose from appearance alone.",
+      "Compare similar-looking places with different stated uses and explain more than one use in a supplied mixed-use example; distinguish the purpose from whether a feature is natural, managed or built."
+    ],
+    "assessmentPrompt": "Give {{name}} short, accurate descriptions of places used for homes, growing food, making goods, shops or services, transport, recreation and conservation, including a lake used for fishing. Can they explain what each place is used for and the need or want it helps meet? Then compare homes and a factory, which are both built, and two wooded areas with different stated uses. Try a shop with homes above it: can they explain its two uses, without deciding that a place with no buildings has no use?",
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B3.5"
+    ]
+  },
+  "originalResearch": {
+    "topicId": "mt_G4Fz9lw20-",
+    "pedagogy": {
+      "summary": "Teach purpose and the need or want it serves, using accurate accounts rather than inferring land use solely from appearance. Contrast this operation with natural/managed/built feature classification without changing that existing claim.",
+      "bestPractices": [
+        "Provide a short stated use or verified description for each example, not just an ambiguous photograph.",
+        "Contrast two built places with different purposes and two wooded places with different supplied uses.",
+        "Include water, conservation and a mixed-use place; do not treat the absence of buildings as absence of use."
+      ],
+      "keyRepresentations": [
+        "Place description or image plus verified purpose information",
+        "A table linking place, stated use and need/want; more than one row is allowed for mixed use"
+      ],
+      "commonMisconceptions": [
+        "All built places have the same use.",
+        "All green or unbuilt places are unused, farms or conservation areas.",
+        "A single label must exhaust every use of a place."
+      ]
+    },
+    "learn": {
+      "schemaVersion": 2,
+      "summary": "Ask what people use the place for and which needs or wants that helps meet. A physical-feature label and a purpose answer different questions.",
+      "activities": [
+        {
+          "title": "Same appearance, different purposes",
+          "learnerActions": [
+            "Use supplied descriptions of a home, factory, shop, growing area, road, recreation space and conservation area; describe each purpose and its needs/wants relationship.",
+            "Compare a home and factory, both built, and two wooded places explicitly described as managed for timber and protected habitat. Do not guess the use from trees alone.",
+            "Explain a supplied lake used for food gathering and a conservation wetland case with its stated clean-water/habitat role. Include the named community’s own attributed account when using an actual traditional practice.",
+            "Explain the two uses of a shop with homes above it, then transfer to a different accurate mixed-use description."
+          ],
+          "intendedInsight": "Purpose depends on how a place is used, not just what it looks like. Multiple uses and unbuilt uses can be meaningful.",
+          "feedback": [
+            "Ask what fact in the account establishes the use, then how that use meets a need or want.",
+            "If every built place is called industrial, contrast living in a home with making goods in a factory.",
+            "If unbuilt means unused, return to the supplied fishing or habitat account; do not imply people must build on land for it to matter."
+          ],
+          "rationale": "Original untested teaching proposal. Contrasting matched appearances and different purposes is designed to distinguish purpose reasoning from visual categorization; no intervention efficacy study is claimed.",
+          "sourceClaims": [
+            "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+            "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors."
+          ]
+        }
+      ],
+      "constraints": [
+        "Supply any unfamiliar production, traditional-use or conservation facts. This is not a test of unsupplied ecological, legal or community knowledge.",
+        "Use stated or verified examples. A satellite image alone does not certify an actual land use, ownership, permission or legal zoning.",
+        "Land-use examples are not an exhaustive universal classification or a ranking of which needs, wants or cultures matter. Do not assume a place has one exclusive use.",
+        "No required travel, personal address, property disclosure, land management procedure, legal decision or advanced environmental mechanism."
+      ],
+      "reviewNotes": [
+        "2026-11-10: original source-checked curation draft after whole-claim comparison across Geography, Life Skills and environmental claims. Source verification supports the factual distinctions only; confidence in this untested teaching design remains low."
+      ]
+    },
+    "assess": {
+      "method": "two_tier",
+      "poeTask": null,
+      "diagnosticPrompt": "Give {{name}} short, accurate descriptions of places used for homes, growing food, making goods, shops or services, transport, recreation and conservation, including a lake used for fishing. Can they explain what each place is used for and the need or want it helps meet? Then compare homes and a factory, which are both built, and two wooded areas with different stated uses. Try a shop with homes above it: can they explain its two uses, without deciding that a place with no buildings has no use?",
+      "correctAnswer": "Explains the different supplied purposes and their needs/wants relationship, retains a meaningful unbuilt/water use, and recognizes multiple uses without equating visual appearance with purpose.",
+      "whatMakesItDiscriminate": "A home and factory share a built appearance but different purposes; two wooded areas can share vegetation while their supplied uses differ. The water/conservation cases rule out buildings as a necessary condition, and the new mixed-use case distinguishes transferable purpose reasoning from memorizing one label per picture.",
+      "probeDeeper": [
+        "Which fact tells you what this place is used for?",
+        "How can two built places serve different needs?",
+        "Can this place have more than one use, and how do you know?"
+      ],
+      "errorPatterns": [
+        {
+          "kind": "misconception",
+          "pattern": "Uses natural/managed/built as if it completely identifies the purpose.",
+          "revealedBy": "Gives the same purpose to a home and a factory, or guesses a wooded place’s use from its cover.",
+          "nextMove": "Keep the appearance similar and compare the stated activities or purposes. Ask which need or want each serves.",
+          "distractor": null,
+          "reteachPrerequisiteId": null
+        },
+        {
+          "kind": "misconception",
+          "pattern": "Treats an unbuilt place as unused or forces one exclusive purpose.",
+          "revealedBy": "Rejects the supplied fishing/conservation purpose or omits either homes or shop in the mixed-use example.",
+          "nextMove": "Return to the actual supplied use and its consequence; allow multiple well-supported purposes without inventing others.",
+          "distractor": null,
+          "reteachPrerequisiteId": null
+        }
+      ],
+      "responseLevels": {
+        "gap": "Classifies by appearance alone or cannot relate supplied uses to needs/wants.",
+        "partial": "Explains familiar single uses but loses the distinction for matched appearances, unbuilt/water or mixed use.",
+        "full": "Explains purposes and needs/wants across supplied varied cases, including unbuilt/water and mixed use, and transfers without unsupported visual guesses."
+      }
+    },
+    "sources": [
+      {
+        "claim": "Land use describes purpose and differs from the cover visible at the surface; additional information may be needed to establish actual use.",
+        "source": "Natural Resources Canada — Land cover / land use",
+        "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/land-cover-land-use",
+        "verified": true
+      },
+      {
+        "claim": "Community land-use planning addresses places for homes and factories, parks and schools, roads and essential services, considering social, economic and environmental factors.",
+        "source": "Ontario Ministry of Municipal Affairs and Housing — Citizen’s guide to land use planning, Overview",
+        "url": "https://www.ontario.ca/document/citizens-guide-land-use-planning",
+        "verified": true
+      }
+    ],
+    "confidence": "low",
+    "provenance": {
+      "originalResearchGeneratedBy": "Taxonomy curation: original source-checked land-purpose proposal; teaching efficacy untested",
+      "createdAt": "2026-11-10T16:29:06Z",
+      "updatedAt": "2026-11-10T16:29:06Z"
+    },
+    "publicationNotes": {
+      "omittedCurriculumText": []
+    }
+  },
+  "dependencyProposal": [],
+  "scopeFit": "B3.5 shared purpose/needs concept only. Other regional, mapping, historical, own-community and inquiry conditions remain independently reviewed; no G3 overall Full judgment.",
+  "context": {
+    "topicId": "mt_G4Fz9lw20-",
+    "scope": "jurisdiction",
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 8,
+    "ageRangeEnd": 9,
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B3.5"
+    ]
+  },
+  "newClaimCount": 1,
+  "newContextCount": 1,
+  "newPairCount": 1,
+  "oldClaimChanges": [],
+  "dependencies": []
+}

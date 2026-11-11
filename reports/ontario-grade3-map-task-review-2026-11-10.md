@@ -1,0 +1,7 @@
+# Ontario Grade 3: map convention and metric-reference tasks
+
+The [reviewed two-code dossier](ontario-grade3-map-task-review-2026-11-10.json) accounts for B3.2 and B3.7 using actual official maps and the unchanged Reading and drawing maps claim. Two component associations share the exact Ontario8–9 context with the separately reviewed environmental-inquiry map work. See the [current Grade3 ledger](ontario-grade3-social-current-ledger-2026-11-10.json) for remaining work. Full describes source-fit authoring, not learner attainment or whole-topic mastery.
+
+The typography task uses print and digital representations and the map’s actual key, including its bold national-capital example. It does not turn one font style into a universal political rule. The construction task keeps a verified base and its graphic scale together, includes the attributed First Nation community reference and distinguishes it from a reserve index or traditional territory. The actual2026 Ontario reference has separate main and inset scales; mixing them is an explicit near miss.
+
+Existing map interpretation/construction and supplied metric-unit operations contribute. The older broad scale-drawings claim is preserved without lowering its age or inferring ratio/redrawing mastery. No separate easier-scale, grade or medium clone is added. The integrated B2.3 dossier explicitly requires both paper and digital thematic-map construction; B3.7’s alternatives do not erase that separate duty.
