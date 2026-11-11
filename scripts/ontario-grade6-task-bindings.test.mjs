@@ -30,6 +30,11 @@ function checkBindings(rows, associations, readReport = name => load(`reports/${
       assert.ok(asset.startsWith('assets/') && !asset.includes('..'), 'Invalid task asset path');
       assert.ok(readFileSync(new URL(`../reports/${asset}`, import.meta.url), 'utf8').includes('<svg'), 'Missing task asset');
     }
+    for (const required of protocol.requiredEvidence ?? []) {
+      const resource = report.resources[required.resourceRef];
+      assert.ok(resource?.report && resource.pointer, 'Missing prepared evidence resource');
+      pointer(pointer(readReport(resource.report), resource.pointer), required.pointer);
+    }
     for (const ref of protocol.resourceRefs ?? []) {
       const resource = report.resources[ref];
       assert.ok(resource, 'Missing resource');
@@ -112,4 +117,20 @@ test('Grade6 integrated Full cannot bypass an unresolved required specific duty'
   child.disposition = 'Partial';
   child.remainingConditions = ['A source duty remains unresolved'];
   assert.throws(() => checkBindings(damaged, contexts), /Incomplete integrated source duty/);
+});
+
+
+test('Grade6 historical comparisons bind actual selected community packets', () => {
+  const dossier = 'ontario-grade6-historical-communities-design-2026-11-11.json';
+  const report = load(`reports/${dossier}`);
+  for (const target of ['indigenous-developments', 'settler-developments', 'community-differences']) {
+    assert.ok(report.protocols[target].requiredEvidence.length >= 2, 'Missing community comparison evidence');
+  }
+  const damaged = structuredClone(report);
+  damaged.protocols['indigenous-developments'].requiredEvidence[0].pointer = '/absent-community';
+  assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === dossier ? damaged : load(`reports/${name}`)), /Missing protocol target/);
+  const original = 'early-colonial-relationships-review-2026-11-11.json';
+  const missing = structuredClone(load(`reports/${original}`));
+  delete missing.preparedCases['metis-longer-term'];
+  assert.throws(() => checkBindings(ledger.expectations, contexts, name => name === original ? missing : load(`reports/${name}`)), /Missing protocol target/);
 });
