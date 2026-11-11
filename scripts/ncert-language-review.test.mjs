@@ -260,13 +260,13 @@ function checkGraph(reviewRecords, alignments) {
   }
   assert.deepEqual(sorted(new Set(actualPairs)), sorted(expectedPairs), 'declared/published pair drift');
   assert.equal(actualPairs.length, new Set(actualPairs).size, 'duplicate published language pair');
-  assert.equal(selectedContexts.length, 60, 'reviewed context total');
-  assert.equal(new Set(selectedContexts.map(contextKey)).size, 60, 'duplicate language context identity');
-  assert.equal(actualPairs.length, 145, 'reviewed association total');
-  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 38);
+  assert.equal(selectedContexts.length, 61, 'reviewed context total');
+  assert.equal(new Set(selectedContexts.map(contextKey)).size, 61, 'duplicate language context identity');
+  assert.equal(actualPairs.length, 146, 'reviewed association total');
+  assert.equal(new Set(reviewRecords.flatMap(row => row.contributions.map(c => c.topicId))).size, 39);
   assert.equal(summary.graph.newContexts, selectedContexts.length);
   assert.equal(summary.graph.newAssociations, actualPairs.length);
-  assert.equal(summary.graph.sharedTopics, 38);
+  assert.equal(summary.graph.sharedTopics, 39);
 }
 
 const correctedPairs = [
@@ -307,7 +307,7 @@ test('NCERT language review binds all 90 source positions, roles, grades and led
 
 test('every language disposition resolves its source-specific task protocols', () => checkProtocols(batches));
 
-test('language reports and mappings agree on 60 contexts / 145 pairs with no withheld candidate leaks', () =>
+test('language reports and mappings agree on 61 contexts / 146 pairs with no withheld candidate leaks', () =>
   checkGraph(records, contexts));
 
 test('the exact five intrinsic corrections match the graph while English print direction stays hard', () =>
@@ -585,5 +585,75 @@ test('current framework graph summaries count active and withheld contributions 
       new Set(batch.report.records.flatMap(row => row.contributions.map(c => c.topicId))).size);
     assert.equal(batch.report.graphCounts.conditionalCandidatesNotPublished,
       batch.report.records.reduce((n, row) => n + (row.conditionalContributions ?? []).length, 0));
+  }
+});
+
+const functionalFile = 'ncert-r2-functional-writing-component-2026-11-11.json';
+const functionalReview = load(`../reports/${functionalFile}`);
+const functionalKey = 'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.2';
+function checkFunctionalComponent(report, reviewRows = records, alignments = contexts) {
+  assert.equal(report.sourceKey, functionalKey);
+  assert.equal(report.disposition, 'Partial', 'functional component is not Full');
+  const row = reviewRows.find(r => r.key === functionalKey);
+  assert.equal(row.disposition, 'Partial', 'functional source is not Full');
+  assert.equal(row.languageRole, 'R2', 'actual R2 source role');
+  assert.deepEqual(row.stageAgeBand, [8, 11]);
+  assert.equal(row.remainingConditions.length, 5, 'actual-role/full-task conditions required');
+  assert.deepEqual(report.remainingConditions, row.remainingConditions);
+  assert.equal(report.bindingContract.required.length, 5, 'actual-role material/assessor binding required');
+  assert.deepEqual(row.contributions.map(c => [c.topicId, c.role, c.associationAgeBand]),
+    [['mt__MDiDU9Vck', 'component', [8, 11]]]);
+  assert.deepEqual(alignments.filter(c => c.standards.includes(functionalKey)), [{
+    topicId: 'mt__MDiDU9Vck', scope: 'jurisdiction', country: 'IN',
+    ageRangeStart: 8, ageRangeEnd: 11, standards: [functionalKey],
+  }], 'exact narrower component association');
+  assert.deepEqual(report.originalPortfolio.map(c => c.id),
+    ['poster-information', 'invitation-information', 'instruction-information'], 'all three written formats');
+  for (const item of report.originalPortfolio) {
+    assert.deepEqual(item.requiredProduction,
+      { languageRole: 'R2', mode: 'pupil-authored-written', adultFinishedWordingAccepted: false },
+      'independent actual-R2 written production');
+    for (const field of ['pupilAction', 'nearMiss', 'transfer', 'wholeInformativeExtension'])
+      assert.ok(item[field]?.length > 0, `missing ${field}`);
+  }
+  assert.deepEqual(report.completeCurrentHardPath,
+    ['mt__MDiDU9Vck', 'mt_PJyCGJz5Hv', 'mt_N8CpN1EJrP']);
+  checkCompleteHardPaths('mt__MDiDU9Vck', [report.completeCurrentHardPath]);
+  for (const id of ['sentenceBuilding', 'oralRehearsal'])
+    assert.ok(report.completePrerequisiteAssessment[id]?.actualRoleTask?.length > 0,
+      'complete unchanged prerequisite tasks required');
+  const withheld = row.conditionalContributions.find(c => c.topicId === 'mt_AHXePdicRf');
+  assert.deepEqual(withheld, report.withheldCandidate, 'complete multimodal history stays withheld');
+  const goal = reviewRows.find(r => r.key === report.broaderGoal);
+  assert.ok(goal.conditionalContributions.some(c => c.topicId === 'mt_AHXePdicRf'), 'parent goal stays withheld');
+  assert.ok(!alignments.some(c => c.topicId === 'mt_AHXePdicRf' &&
+    [functionalKey, report.broaderGoal].some(k => c.standards.includes(k))));
+  for (const field of ['source', 'wholeInformative', 'wholePrerequisites', 'wholeMultimodal'])
+    assert.ok(report.scoringSeparation[field]?.length > 0, 'source and whole scoring stay separate');
+}
+test('functional R2 writing uses one narrower component while retaining all written formats and the full hard chain', () =>
+  checkFunctionalComponent(functionalReview));
+test('functional writing rejects missing formats, adult copying, spoken substitution, missing role and false Full', () => {
+  for (let index = 0; index < 3; index++) {
+    const missing = structuredClone(functionalReview); missing.originalPortfolio.splice(index, 1);
+    assert.throws(() => checkFunctionalComponent(missing), /all three written formats/);
+    const copied = structuredClone(functionalReview); copied.originalPortfolio[index].requiredProduction.adultFinishedWordingAccepted = true;
+    assert.throws(() => checkFunctionalComponent(copied), /independent actual-R2/);
+    const spoken = structuredClone(functionalReview); spoken.originalPortfolio[index].requiredProduction.mode = 'spoken-only';
+    assert.throws(() => checkFunctionalComponent(spoken), /independent actual-R2/);
+  }
+  const noRole = structuredClone(functionalReview); noRole.bindingContract.required = [];
+  assert.throws(() => checkFunctionalComponent(noRole), /material\/assessor/);
+  const wrongRole = structuredClone(functionalReview); wrongRole.originalPortfolio[0].requiredProduction.languageRole = 'R1';
+  assert.throws(() => checkFunctionalComponent(wrongRole), /independent actual-R2/);
+  const full = structuredClone(functionalReview); full.disposition = 'Full';
+  assert.throws(() => checkFunctionalComponent(full), /not Full/);
+  const rowFull = structuredClone(records); rowFull.find(r => r.key === functionalKey).disposition = 'Full';
+  assert.throws(() => checkFunctionalComponent(functionalReview, rowFull), /not Full/);
+  const noPath = structuredClone(functionalReview); noPath.completeCurrentHardPath = [];
+  assert.throws(() => checkFunctionalComponent(noPath));
+  for (const id of ['sentenceBuilding', 'oralRehearsal']) {
+    const missing = structuredClone(functionalReview); delete missing.completePrerequisiteAssessment[id];
+    assert.throws(() => checkFunctionalComponent(missing), /prerequisite tasks/);
   }
 });
