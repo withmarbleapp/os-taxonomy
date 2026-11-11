@@ -30,6 +30,11 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (row.code === 'ON-SCI-2022-G5-D2.4') {
+      for (const group of ['plant', 'animal']) {
+        assert.ok(protocol.caseRefs.filter(ref => report.preparedCases[ref].organismGroup === group).length >= 2, 'Missing varied plant/animal protection');
+      }
+    }
     if (row.code === 'ON-SCI-2022-G5-E1.3') {
       const groups = protocol.caseRefs.map(ref => report.preparedCases[ref].caseGroup);
       assert.deepEqual([...new Set(groups)].sort(), ['first-nation', 'inuit', 'metis'], 'Missing required community case');
@@ -136,6 +141,21 @@ test('Grade 5 conservation preserves every community case and the knowledge-to-a
   for (const field of ['knowledge', 'action', 'conservationReasoning', 'evidenceLimit']) {
     const damaged = structuredClone(load(`reports/${name}`));
     delete damaged.preparedCases.metis[field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
+  }
+});
+
+test('Grade 5 biological protection preserves varied plants and animals with actual force mechanisms', () => {
+  const name = 'ontario-grade5-biological-force-protection-design-2026-11-11.json';
+  for (const group of ['plant', 'animal']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    const removed = damaged.protocol.caseRefs.find(ref => damaged.preparedCases[ref].organismGroup === group);
+    damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => ref !== removed);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing varied plant\/animal protection/);
+  }
+  for (const field of ['harmfulForce', 'mechanism', 'limit']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases.turtle[field];
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty/);
   }
 });
