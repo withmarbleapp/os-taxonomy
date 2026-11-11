@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "af75f7f8debc71b38ce4f3a33b324ba07761cf15",
+  "status": "Six-record D2 source-fit authoring programme qualified: four prior residuals closed with explicit original cases; two historical Full specifics revisited for overall integration. No new or changed mastery claim, guide, age or dependency.",
+  "resources": {
+    "lego-gears": {
+      "url": "https://education.lego.com/en-us/lessons/sm/gears/",
+      "publisher": "LEGO Education",
+      "readScope": "Complete actual main lesson text read, including driver/follower, direct/idler arrangements, gearing up/down and A5 right-angle orientation change. No source model photo, build instruction, worksheet or simulation viewed.",
+      "role": "Creator-authored source for gear/motion relationships, not a purchase requirement or proof our original cases were classroom-tested."
+    },
+    "teachengineering-gears": {
+      "url": "https://www.teachengineering.org/lessons/umo_challenges_lesson02",
+      "publisher": "TeachEngineering",
+      "readScope": "Actual summary, background/slide outline, gear/torque descriptions and legacy notice read; no presentation, source photo or linked video/animation viewed.",
+      "role": "Legacy reference for qualitative gear speed/turning-effect relation; no formal torque/power equations or robot programme imported."
+    },
+    "ontario-2022": {
+      "url": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+      "publisher": "Ontario Ministry of Education",
+      "readScope": "Actual complete printed131–132 D source section read, alongside fresh selected API cores.",
+      "role": "Exact formal duty/context; not validation of these original methods."
+    },
+    "oak-levers": {
+      "url": "https://www.thenational.academy/teachers/programmes/science-primary-ks2/units/forces-including-simple-machines/lessons/how-levers-can-help-us",
+      "publisher": "Oak National Academy",
+      "readScope": "Actual lesson details/learning points, load/effort/pivot definitions, misconception/equipment/supervision text read. Source quiz images, slides and video not inspected.",
+      "role": "Part/function and pivot-dependent effort facts, not a blanket claim every lever reduces effort."
+    },
+    "teachengineering-pulleys": {
+      "url": "https://www.teachengineering.org/lessons/cub_simple_lesson05",
+      "publisher": "TeachEngineering",
+      "readScope": "Actual fixed/movable/system background and force–distance discussion read. Source images/video not viewed; human-lifting, broom-pulling, historical-pyramid and numerical extensions not adopted.",
+      "role": "Fixed direction change versus movable support/effort trade, with original small-model and idealisation limits."
+    }
+  },
+  "preparedCases": {
+    "lever": {
+      "role": "lever",
+      "resourceRefs": [
+        "oak-levers"
+      ],
+      "sourceSummary": "The existing full mechanism claim/guide includes pivot position, effort/load and a force–distance trade.",
+      "attributionLimits": "Original low-load classroom model, not a safe method for lifting a real heavy rock or applying formal moment calculations.",
+      "question": "Original case: a stiff bar rests on a stable low pivot, a small model load sits on one side and the adult provides a suitable force meter at the other side. Identify each part, explain a seesaw/bottle-opener purpose, predict then compare two pivot positions with the same load. Keep movement small and hands clear; adult checks range and stability.",
+      "expectedEvidence": "Name effort, load and pivot/fulcrum and explain each purpose. Trace the bar rocking about its pivot, rather than call every point a straight-line slider. Explain why a long effort arm can reduce the force needed but makes the effort end travel farther; use actual safe readings if measured, not an invented ideal result.",
+      "nearMiss": "Says the bar creates energy or extra lifting for free, every lever reduces effort or moving the pivot cannot matter.",
+      "changedCase": "Switch to a short-effort-arm lever such as a supplied tweezers example: explain that some arrangements trade a larger effort for a larger/faster or more controlled load movement, without claiming the old force benefit holds for every lever."
+    },
+    "fixed-pulley": {
+      "role": "fixed-pulley",
+      "resourceRefs": [
+        "teachengineering-pulleys"
+      ],
+      "sourceSummary": "The existing full claim/guide distinguishes a fixed wheel changing pull direction from movable-pulley effort reduction.",
+      "attributionLimits": "Original small model; friction means actual readings need not equal ideal values. No suspended load over a person, body loop or real lifting use.",
+      "question": "Original case: a fixed low classroom wheel turns on an axle; a cord runs over it, with a small flag model at one end and an accessible hand-pull at the other. Identify wheel, axle/support, cord, effort end and load, and explain how pulling one end down can raise the flag model.",
+      "expectedEvidence": "Trace the hand/cord’s translational movement, the wheel’s rotation and the load’s upward movement as connected parts of one mechanism. Explain that this fixed wheel redirects the pull; it does not by itself halve the required force or create energy. Compare the actual directions from the specified positions.",
+      "nearMiss": "Names only the whole device, cannot say what the wheel/cord/axle do, or attributes automatic force multiplication to every pulley.",
+      "changedCase": "Move the fixed wheel to another safe support position: describe how the rope route changes while distinguishing that from adding a movable wheel."
+    },
+    "movable-pulley": {
+      "role": "movable-pulley",
+      "resourceRefs": [
+        "teachengineering-pulleys"
+      ],
+      "sourceSummary": "The saved complete mechanism guide includes supporting cord sections reducing effort with a longer pull distance.",
+      "attributionLimits": "Original idealised explanation plus safe actual comparison where provided; no guarantee an unmeasured frictional model has an exact force ratio. The ideal comparison neglects the cord/wheel own weight as well as friction; actual records may differ.",
+      "question": "Original case: the load is attached to a low movable pulley supported by two cord sections. Compare its route with the fixed-wheel case using the same small load and adult-prepared safe apparatus; identify what moves with the load and where the hand supplies effort.",
+      "expectedEvidence": "Explain how supporting sections share the load and why reduced effort is accompanied by a longer hand/cord movement. Distinguish wheel position and function from the fixed-pulley case; keep force and movement descriptions linked.",
+      "nearMiss": "Says adding any wheel always reduces effort, or that a smaller effort lets the same energy appear from nothing.",
+      "changedCase": "The supplied model has higher friction than before: explain why actual force readings can differ from an ideal prediction while the basic support arrangement remains identifiable."
+    },
+    "spur-gears": {
+      "role": "spur-gears",
+      "resourceRefs": [
+        "lego-gears",
+        "teachengineering-gears"
+      ],
+      "sourceSummary": "Directly meshed external gears transmit rotary movement, turn oppositely from the same viewing side, and different sizes can trade speed for turning effect.",
+      "attributionLimits": "Original external-gear case with compatible teeth and no slipping, not a universal rule for every internal gear, belt or chain. No ratio/torque equation demanded.",
+      "question": "Original case: a small external driver gear turns a larger directly meshed external follower on parallel axles. Both are viewed from the same side and have visible position marks. Identify crank/driver, teeth, axles/support and follower, explain their jobs, and compare actual turns using an adult-approved slow hand-operated model or the supplied description.",
+      "expectedEvidence": "Trace rotation through meshing teeth to the other axle; describe opposite rotation, with the larger follower turning more slowly and offering a larger turning effect for the same input, subject to losses. Distinguish turning effect from a claim that tooth-contact force magically grows. Link to a familiar geared hand mixer or clock purpose without operating a powered device.",
+      "nearMiss": "Names gears but cannot identify input/output, says adjacent directly meshed external gears turn the same way from the same viewpoint, or says faster output and larger turning effect are both gained free.",
+      "changedCase": "Insert a compatible idler between otherwise unchanged gears: explain how the final direction can change without changing the overall speed relation. Reverse which sized gear is driven and reconsider the speed/turning-effect relation."
+    },
+    "plane-change": {
+      "role": "plane-change",
+      "resourceRefs": [
+        "lego-gears"
+      ],
+      "sourceSummary": "The creator’s A5 text explicitly describes a spur/crown arrangement changing rotary orientation through a right angle.",
+      "attributionLimits": "Original orientation description of a valid right-angle arrangement, not an inspected copy of the source photo. No claim that all gears or all bevel/crown arrangements have the same angle/speed.",
+      "geometryBefore": "In this original supplied case, the input gear rotates in a vertical plane around a horizontal axle.",
+      "geometryAfter": "A correctly meshing crown/follower rotates in a horizontal plane around a vertical axle; the axes are perpendicular, so the plane of rotation changes.",
+      "question": "Original case: identify the driver, follower, meshing teeth, axles and support in a supplied slow right-angle spur/crown model or the explicit geometry description above. Trace the input turning movement to the output and describe the changed plane. Contrast with the parallel-axle spur case.",
+      "expectedEvidence": "Explain that both motions remain rotary but their orientation changes; the output turns in a different plane rather than simply turning faster in the same plane. Name which parts carry the movement and their purpose. Distinguish a plane/orientation change from reversal seen on two coplanar gears. A correctly prepared larger follower may also turn more slowly; do not infer an exact numerical ratio without its actual tooth counts.",
+      "nearMiss": "Calls every reversal a plane change or says any two gears must have parallel axles.",
+      "changedCase": "Rotate the whole model on the table: explain that page-up/page-right labels can change while the perpendicular relation between input and output axes remains. State viewpoints before describing clockwise/anticlockwise."
+    }
+  },
+  "protocols": {
+    "D2.1": {
+      "codes": [
+        "ON-SCI-2022-G4-D2.1"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "lever",
+        "fixed-pulley",
+        "movable-pulley",
+        "spur-gears",
+        "plane-change"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    },
+    "D2.2": {
+      "codes": [
+        "ON-SCI-2022-G4-D2.2"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "lever",
+        "fixed-pulley",
+        "movable-pulley",
+        "spur-gears",
+        "plane-change"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    },
+    "D2.3": {
+      "codes": [
+        "ON-SCI-2022-G4-D2.3"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "lever",
+        "fixed-pulley",
+        "spur-gears"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    },
+    "D2.4": {
+      "codes": [
+        "ON-SCI-2022-G4-D2.4"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "spur-gears",
+        "plane-change"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    },
+    "D2.5": {
+      "codes": [
+        "ON-SCI-2022-G4-D2.5"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "lever",
+        "fixed-pulley",
+        "movable-pulley",
+        "spur-gears"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    },
+    "D2": {
+      "codes": [
+        "ON-SCI-2022-G4-D2"
+      ],
+      "contributorIds": [
+        "mt_Q2k3fSwyzQ"
+      ],
+      "caseRefs": [
+        "lever",
+        "fixed-pulley",
+        "movable-pulley",
+        "spur-gears",
+        "plane-change"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use all bound varied mechanism cases, identifying actual part/purpose and input/output relationships; names alone are insufficient.",
+        "Explain the specific source duty using the prepared geometry/relationships and actual safe observations only where supplied.",
+        "Answer the near-miss and changed-case questions, retaining viewpoint/idealisation and force–distance limits.",
+        "For the overall, integrate daily purpose, part functions, varied motion transfer, speed/direction/plane transformations and changed force rather than count linked child codes."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "topicId": "mt_Q2k3fSwyzQ",
+    "cardAndGuide": "Complete authored card, pedagogy, all4 learn activities, constraints, reviewNotes, assessment, sources and provenance read.",
+    "reuseReason": "Full existing guide already includes the part/purpose, movement transfer, speed/direction and force–distance relations. The supplied right-angle case applies that mechanism-transfer knowledge in another orientation; it does not establish a new generic motion-plane mastery node. Actual source-specific performance is assessed directly, not inferred from a previous mechanism score.",
+    "limits": "Whole force-effect reasoning and actual measurement requirements remain intact and separately checked. The later moments/pressure/Hooke bundle is not lowered; no new edges, inventory or quantitative prerequisite is introduced. No source figure/video was viewed or copied.",
+    "hardClosureReadScope": "All6 direct/transitive-hard cards and7 hard edges read; complete Q2 guide read. Existing balanced-force investigation/diagram, friction and vocabulary requirements remain readiness, not inferred mastery from these motion cases."
+  },
+  "safety": "All real models are adult-prepared, intact, slow hand-operated, low-load and used under school procedures. Keep fingers clear of mesh/pinch points, use large suitable parts, no body loops or suspended loads above people and stop before damage. Textual/model explanation does not become a claim the learner built or tested a mechanism."
+}
