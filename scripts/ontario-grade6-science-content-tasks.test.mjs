@@ -9,6 +9,11 @@ const programme = load(`reports/${programmeName}`);
 const flightName = 'ontario-grade6-flight-mechanics-task-design-2026-11-11.json';
 const impactName = 'ontario-grade6-flight-impact-task-design-2026-11-11.json';
 const programmes = { [programmeName]: programme, [flightName]: load(`reports/${flightName}`), [impactName]: load(`reports/${impactName}`) };
+Object.assign(programmes, {
+  'ontario-grade6-biodiversity-task-design-2026-11-11.json': load('reports/ontario-grade6-biodiversity-task-design-2026-11-11.json'),
+  'ontario-grade6-electricity-impacts-principles-design-2026-11-11.json': load('reports/ontario-grade6-electricity-impacts-principles-design-2026-11-11.json'),
+  'ontario-grade6-space-source-task-design-2026-11-11.json': load('reports/ontario-grade6-space-source-task-design-2026-11-11.json'),
+});
 const flightClaim = load('reports/ontario-grade6-flight-model-claim-review-2026-11-11.json');
 const flightTopic = load('data/topics.json').topics.find(row => row.id === flightClaim.topicId);
 const flightGuide = load('data/teaching-research.json').records.find(row => row.topicId === flightClaim.topicId);
@@ -17,6 +22,21 @@ const slug = 'the-ontario-curriculum-science-and-technology-20';
 const source = load('data/curriculum-standards.json').curricula.find(row => row.slug === slug);
 const selected = source.topics.filter(row => /^ON-SCI-2022-G6-[BCDE]\d/.test(row.code)).map(row => row.code).sort();
 const roles = {
+  'ON-SCI-2022-G6-B2.2': ["within-among-habitat-diversity"],
+  'ON-SCI-2022-G6-B2.4': ["within-community-resilience", "among-community-resilience"],
+  'ON-SCI-2022-G6-B2.5': ["within-between-environment-relationships"],
+  'ON-SCI-2022-G6-B2.8': ["agriculture-indigenous-world"],
+  'ON-SCI-2022-G6-B1': ["importance-protection-judgment"],
+  'ON-SCI-2022-G6-B2': ["within-among-habitat-diversity", "within-community-resilience", "among-community-resilience", "agriculture-indigenous-world"],
+  'ON-SCI-2022-G6-C1.1': ["canadian-short-long-generation-impacts", "first-nations-generation-impact", "metis-generation-impact", "inuit-generation-impact"],
+  'ON-SCI-2022-G6-C1.2': ["personal-optional-electricity-choice", "school-use-and-communicated-advocacy"],
+  'ON-SCI-2022-G6-C1': ["canadian-short-long-generation-impacts", "first-nations-generation-impact", "metis-generation-impact", "inuit-generation-impact", "school-use-and-communicated-advocacy"],
+  'ON-SCI-2022-G6-C2': ["integrated-principles-transformations"],
+  'ON-SCI-2022-G6-E1.2': ["environmental-change-climate-role"],
+  'ON-SCI-2022-G6-E1.3': ["social-environmental-perspectives"],
+  'ON-SCI-2022-G6-E1': ["human-society-environment-evaluation", "physiological-conditions-accommodations", "social-emotional-space-needs", "social-environmental-perspectives"],
+  'ON-SCI-2022-G6-E2': ["solar-system-motion-phenomena", "exploration-technology-role"],
+
   'ON-SCI-2022-G6-C2.4': ['mechanical-to-electrical', 'light-to-electrical', 'thermal-route-electrical'],
   'ON-SCI-2022-G6-C2.7': ['series-parallel-uses'],
   'ON-SCI-2022-G6-D1': ['environmental-impact-and-mitigation'],
@@ -32,14 +52,14 @@ const roles = {
 // current ledger still has a dossier field: deleting that field must fail closed.
 const reviewedFreshCodes = Object.keys(roles).sort();
 const reviewedHistoricalCodes = []; // B2.6's definition reminder is not a fresh closure.
-function check(rows = ledger.expectations, electricalReport = programme, associations = contexts) {
+function check(rows = ledger.expectations, electricalReport = programme, associations = contexts, reports = programmes) {
   assert.deepEqual(rows.map(row => row.code).sort(), selected, 'Missing Grade6 content record');
   assert.deepEqual(rows.filter(row => row.disposition === 'Full' && row.historicalDisposition === 'Partial').map(row => row.code).sort(), reviewedFreshCodes, 'Reviewed Grade6 closure registry mismatch');
   for (const row of rows) {
     assert.equal(row.key, `${slug}:${row.code}`, 'Grade6 source identity mismatch');
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full ledger condition');
     if (!reviewedFreshCodes.includes(row.code) && !reviewedHistoricalCodes.includes(row.code)) continue;
-    const report = row.dossier === programmeName ? electricalReport : programmes[row.dossier];
+    const report = row.dossier === programmeName ? electricalReport : reports[row.dossier];
     assert.ok(report, 'Missing actual Grade6 programme binding');
     assert.ok(row.protocolReference?.startsWith('/protocols/'), 'Missing actual Grade6 protocol binding');
     const protocol = report.protocols?.[row.protocolReference.slice('/protocols/'.length)];
@@ -142,5 +162,49 @@ test('Grade6 Full tasks cannot ignore unresolved source conditions in either own
     const report = structuredClone(programme);
     (owner === 'report' ? report : report.protocols['C2.4']).remainingConditions = ['An actual resource remains unbound.'];
     assert.throws(() => check(ledger.expectations, report), /Unresolved Full (?:report|protocol) condition/);
+  }
+});
+
+// Explicitly protect the newly reviewed source conjunctions, rather than infer
+// review membership from surviving dossier fields or child-code totals.
+test('remaining Grade6 portfolios cannot lose a reviewed source conjunction', () => {
+  for (const [name, protocol, ref] of [
+    ['ontario-grade6-biodiversity-task-design-2026-11-11.json', 'B2.4', 'among-community-resilience'],
+    ['ontario-grade6-electricity-impacts-principles-design-2026-11-11.json', 'C1.2', 'personal-optional-use'],
+    ['ontario-grade6-electricity-impacts-principles-design-2026-11-11.json', 'C1.1', 'metis-case'],
+    ['ontario-grade6-electricity-impacts-principles-design-2026-11-11.json', 'C1.1', 'inuit-case'],
+    ['ontario-grade6-space-source-task-design-2026-11-11.json', 'E2', 'solar-structure-and-motion'],
+  ]) {
+    const reports = structuredClone(programmes);
+    reports[name].protocols[protocol].caseRefs = reports[name].protocols[protocol].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, programme, contexts, reports), /Missing actual Grade6 task role/);
+  }
+});
+test('remaining Grade6 closures cannot discard binding, transfer or historical identity', () => {
+  for (const code of ['B2.2', 'C1.2', 'E1.2']) {
+    const rows = structuredClone(ledger.expectations);
+    const row = rows.find(value => value.code === `ON-SCI-2022-G6-${code}`);
+    delete row.dossier;
+    assert.throws(() => check(rows), /Missing actual Grade6 programme binding/);
+    row.historicalDisposition = 'Full';
+    assert.throws(() => check(rows), /Reviewed Grade6 closure registry mismatch/);
+  }
+  for (const [name, ref] of [
+    ['ontario-grade6-biodiversity-task-design-2026-11-11.json', 'diversity-levels'],
+    ['ontario-grade6-electricity-impacts-principles-design-2026-11-11.json', 'responsible-use-school'],
+    ['ontario-grade6-space-source-task-design-2026-11-11.json', 'environmental-observation'],
+  ]) {
+    const reports = structuredClone(programmes); delete reports[name].preparedCases[ref].changedCase;
+    assert.throws(() => check(ledger.expectations, programme, contexts, reports), /Missing actual Grade6 case evidence/);
+  }
+});
+test('local action and unresolved compound curation remain explicit Grade6 Partials', () => {
+  for (const code of ['ON-SCI-2022-G6-B1.2', 'ON-SCI-2022-G6-E1.1']) {
+    const row = ledger.expectations.find(value => value.code === code);
+    assert.equal(row.disposition, 'Partial');
+    assert.ok(row.remainingConditions.length, 'Missing actual residual source condition');
+    const rows = structuredClone(ledger.expectations);
+    rows.find(value => value.code === code).disposition = 'Full';
+    assert.throws(() => check(rows), /Reviewed Grade6 closure registry mismatch/);
   }
 });

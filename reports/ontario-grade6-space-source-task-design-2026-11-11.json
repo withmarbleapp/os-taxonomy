@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "76451b276fb94a754ede6d4b00f6b77db8af37da",
+  "status": "Reviewed source-bound authoring portfolio: four fresh closures, with E1.1 deliberately retained Partial pending separate lossless compound curation. No learner attainment inferred.",
+  "resources": {
+    "csa-body": {
+      "url": "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/effects-of-space-on-the-body.asp",
+      "publisher": "Canadian Space Agency",
+      "readScope": "Fresh complete actual main explanation read; no images or linked clinical pages inspected.",
+      "role": "Space conditions differ from Earth; duration and mission environment affect bodily responses. No clinical prediction, medicine instruction or statement that orbital free fall means gravity is absent."
+    },
+    "csa-loading": {
+      "url": "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/physical-activity-in-space.asp",
+      "publisher": "Canadian Space Agency",
+      "readScope": "Fresh entire explanatory main body read, including ISS equipment and capsule discussion. No video/image inspected. Numeric loads, exercise duration, medical recovery assurances and future mission promises not adopted.",
+      "role": "Reduced mechanical loading in microgravity can affect bones/muscles; resistance/harness equipment helps mitigate this. A science accommodation example, not PE instruction or a child exercise prescription."
+    },
+    "csa-relax": {
+      "url": "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/relaxing-in-space.asp",
+      "publisher": "Canadian Space Agency, historical2019 account",
+      "readScope": "Fresh complete actual main body read, including family communications, personal materials, shared leisure and music. No video/image/recording inspected. Historical bandwidth and exact work schedules not adopted as current specifications.",
+      "role": "Social/emotional needs are supported by relationships, private communication, familiar materials and shared activities; not guaranteed elimination of isolation or a universal coping preference."
+    },
+    "csa-benefits": {
+      "url": "https://www.asc-csa.gc.ca/eng/about/everyday-benefits-of-space-exploration/",
+      "publisher": "Canadian Space Agency",
+      "readScope": "Fresh complete actual introductory benefits/service summaries read. Linked detailed claims are not implied verified.",
+      "role": "Specific benefit categories: environmental observations, communications, research, jobs and international cooperation. Institutional benefit overview, not cost-benefit proof or an evaluated clinical outcome."
+    },
+    "csa-radarsat": {
+      "url": "https://www.asc-csa.gc.ca/eng/satellites/radarsat/faq.asp",
+      "publisher": "Canadian Space Agency",
+      "readScope": "Fresh actual About mission, image acquisition and benefit explanations through infrastructure monitoring read. No imagery, raw data, videos or technical linked tables inspected; later security/launch detail not claimed reviewed.",
+      "role": "Repeated observations and composite comparisons reveal environmental changes; active radar can image without sunlight. Acquisition is requested/limited, not continuous coverage of every point or proof of cause from an image alone."
+    },
+    "nasa-seaice": {
+      "url": "https://science.nasa.gov/earth/explore/earth-indicators/arctic-sea-ice-minimum-extent/",
+      "publisher": "NASA Science",
+      "readScope": "Fresh complete actual indicator explanatory body, September-series definition, seasonal cycle and related-mission summaries read. No graph/map/video visually inspected or raw data downloaded. Exact current decline rate and latest-year ranking not adopted.",
+      "role": "Satellite observations since1979 permit repeated comparable September sea-ice extent assessment. The displayed monthly value is a September daily-observation average; do not confuse extent with volume or one seasonal change with the multi-year trend."
+    },
+    "esa-debris": {
+      "url": "https://www.esa.int/articles/mitigating-space-debris-generation",
+      "publisher": "European Space Agency",
+      "readScope": "Fresh complete actual main explanation read: debris hazard, mitigation, dark/quiet skies, reentry risk, examples and international cooperation. No imagery/videos or linked guidelines/reports inspected. Numeric rates, deadlines and policy compliance not taught as universal law.",
+      "role": "Orbital debris can threaten missions; disposal and collision avoidance reduce risk, while sky-observation effects and ground reentry risk need consideration. One agency’s programme is not proof that the global problem is solved."
+    },
+    "nasa-solar": {
+      "url": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "publisher": "NASA Science",
+      "readScope": "Fresh complete actual introduction, namesake, life, scale, moon, formation and structure main sections read. No diagrams/images or linked planet pages inspected. Unstable moon counts and unobserved Oort Cloud details are not needed.",
+      "role": "Sun, eight planets and other bodies; inner rocky versus outer giant planets and moons orbiting bodies. Use only qualitative relative arrangement, not an invented scale drawing."
+    },
+    "nasa-phases": {
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "publisher": "NASA Science",
+      "readScope": "Fresh actual Quick facts, phases overview and all eight named-phase sections read through waning crescent, with libration opening visible. Later Earthshine/daytime/overview sections and all images/video not inspected.",
+      "role": "Moonlight is reflected sunlight; the visible sunlit fraction changes through orbital geometry. A normal phase is not Earth’s shadow. Use a qualitative model, no current phase/observing schedule claim."
+    },
+    "nasa-hubble": {
+      "url": "https://science.nasa.gov/mission/hubble/overview/why-have-a-telescope-in-space/",
+      "publisher": "NASA Science",
+      "readScope": "Fresh complete actual explanatory body through six Hubble-advantage sections read. No images/diagrams/video inspected. Absolute superiority over every ground telescope, exact angular resolution and wavelength inventories are not adopted.",
+      "role": "An orbiting telescope avoids much atmospheric distortion/absorption and collects light/data; it does not visit the observed planet or star. Distinct observational purpose from a rover."
+    },
+    "nasa-rover": {
+      "url": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+      "publisher": "NASA Science",
+      "readScope": "Fresh actual mission overview, objectives and main discovery/landing-site explanations through objective/science summaries read. No raw images/video/linked research articles inspected. Current travel records, sample totals and tentative biosignature details not taught as settled discoveries.",
+      "role": "Perseverance studies rocks/past habitability and collects samples for potential later study; robot exploration is not a human landing or proof that life was found."
+    }
+  },
+  "preparedCases": {
+    "conditions-and-accommodations": {
+      "role": "physiological-conditions-accommodations",
+      "resourceRefs": [
+        "csa-body",
+        "csa-loading"
+      ],
+      "sourceSummary": "Space exposes people to unfamiliar pressure/temperature/radiation conditions and microgravity. A spacecraft supplies a controlled environment; reduced body loading changes bones/muscles, with specialised resistance equipment as one mitigation.",
+      "attributionLimits": "Prepared task only: existing later compound Mars/SETI claim contains overlapping hazard/mitigation teaching. This case does not resolve the primary claim/age-grain issue and E1.1 stays Partial.",
+      "question": "Original paired cards: outside a protected spacecraft there is no normal breathable Earth atmosphere; inside a designed habitat, suitable air/pressure/temperature and water/food are provided. In orbit the craft and crew are in free fall, so ordinary weight-bearing loading is reduced even though gravity remains. Explain why meeting food/water needs alone is insufficient, and why resistance/harness equipment addresses a different need from air supply. Do not diagnose a person or prescribe exercise.",
+      "expectedEvidence": "Connect actual environmental conditions with physiological effects and engineered responses; distinguish supplying air/pressure from replacing reduced mechanical loading. Recognise that accommodations mitigate constraints without making space identical to Earth.",
+      "nearMiss": "Says there is no gravity in orbit, that more food alone solves every effect, or that an air tank alone supplies pressure/temperature and all social/emotional needs.",
+      "changedCase": "An original mission card has adequate air/food but no suitable loading equipment or rest routine. Identify the remaining needs rather than declaring complete accommodation. No claim that a named astronaut developed a condition."
+    },
+    "social-emotional-support": {
+      "role": "social-emotional-space-needs",
+      "resourceRefs": [
+        "csa-relax",
+        "csa-body"
+      ],
+      "sourceSummary": "ISS accounts describe family communication, familiar messages/materials, shared meals/leisure and music as ways to maintain connections and ordinary human life during isolation/confinement.",
+      "attributionLimits": "Explicit original hypothetical crew, not authentic astronaut testimony or clinical advice; no Mars-specific delay is imported into an ISS communication case. E1.1 remains Partial pending compound-claim curation.",
+      "question": "Original crew case: a person has air, water and food but misses family and has little private/rest time. Compare a familiar-message collection, scheduled private family communication, shared leisure and protected rest with simply supplying more food. Explain how the supports address social/emotional as well as physiological needs, and why different people may prefer different supports.",
+      "expectedEvidence": "Analyse isolation/confinement and distinguish relationships, emotional comfort, privacy/rest and physiological supplies. Explain the connection rather than assume an entertainment list guarantees wellbeing.",
+      "nearMiss": "Says social needs disappear in space, or that a game automatically cures every emotional difficulty.",
+      "changedCase": "A changed card makes the shared activity compulsory and removes private communication time. Reassess whether the same support serves every crew member; keep the account conditional rather than diagnose anyone."
+    },
+    "environmental-observation": {
+      "role": "environmental-change-climate-role",
+      "resourceRefs": [
+        "csa-radarsat",
+        "nasa-seaice"
+      ],
+      "sourceSummary": "NASA describes seasonal sea-ice growth/melt and a decreasing long-term comparable September extent series observed from satellites since1979. CSA describes repeated radar observations/composite comparisons for climate, land and ecosystem monitoring, with limited acquisition rather than continuous imaging.",
+      "attributionLimits": "Original comparison text using published source explanations, not extracted graph values, a live satellite feed or invented field dataset. No claim that source imagery was inspected.",
+      "question": "Original three text cards: A compares winter and summer sea ice in one year; B reports NASA’s decreasing multi-year September extent series using comparable satellite observations; C offers a single cloud/ice image with no earlier comparison. Explain which supports a seasonal account, which supports assessing long-term environmental change, and why C alone cannot establish a trend or its cause. Assess what repeated space observations add over a single ground viewpoint and what complementary context/measurements remain needed.",
+      "expectedEvidence": "Assess the role of broad, repeated and comparable observations in detecting/understanding change, including climate-related sea ice. Distinguish observation from explanation/forecast, extent from volume and a long-term pattern from a single seasonal pair. No numeric trend is invented.",
+      "nearMiss": "Only names a satellite or forecasts tomorrow; calls summer melt alone proof of a long-term trend, or claims the picture directly proves the cause or sea-ice volume.",
+      "changedCase": "An original changed record compares winter in an early year with summer in a later year, or changes coverage/measurement method without explanation. Identify why comparability must be checked before interpreting change; radar’s ability to work without sunlight does not guarantee continuous complete coverage."
+    },
+    "space-impact-perspectives": {
+      "role": "social-environmental-perspectives",
+      "resourceRefs": [
+        "csa-benefits",
+        "csa-radarsat",
+        "esa-debris"
+      ],
+      "sourceSummary": "Space services can support observations, communications, research and jobs; missions can add orbital-debris/collision risks and affect dark/quiet skies. Reentry and disposal require attention, with international participation needed.",
+      "attributionLimits": "Explicit original analytic roles, not fabricated community/astronomer quotations or a real funding proposal. No monetary, casualty or emissions estimates invented; no reentry prediction or debris-handling activity.",
+      "question": "Original decision scenario: a proposed observation mission promises repeated environmental data and work for a technical team, while adding spacecraft that require end-of-life disposal. Compare three declared analytic roles: an environmental scientist prioritising useful comparable data; an operator weighing cost/reliability/disposal; and an astronomer prioritising dark/quiet skies and safe shared access. Add the ground public’s concern about reentry risk. Evaluate a benefit, a potential harm, evidence quality and a mitigation, and make a qualified recommendation.",
+      "expectedEvidence": "Evaluate social and environmental impacts with several distinct perspectives and source-supported mechanisms, distinguishing promised benefits from observed outcomes. Recognise that who benefits and who bears risk may differ, and that a technical mitigation is not proof zero residual risk remains.",
+      "nearMiss": "Treats all space activity as automatically good/bad, merely lists mission dates, or invents a cost/benefit score and reports it as measured.",
+      "changedCase": "A revised proposal supplies a disposal plan but no reliability evidence, or useful data can be obtained through sharing an existing mission. Revise the recommendation and identify the next evidence needed; an agency policy is not universal law or proof of implementation."
+    },
+    "integrated-human-impact": {
+      "role": "human-society-environment-evaluation",
+      "resourceRefs": [
+        "csa-body",
+        "csa-relax",
+        "csa-benefits",
+        "esa-debris"
+      ],
+      "sourceSummary": "Human spaceflight raises physical and social/emotional accommodation challenges, while exploration can provide knowledge/services and creates responsibilities for the shared orbital environment.",
+      "attributionLimits": "Original evaluation task with explicitly bounded case facts; no outcome or hypothetical priority is presented as an authentic astronaut/public viewpoint.",
+      "question": "Use the full human-condition/support and impact cards above. Assess exploration for humans travelling, wider society using services and the environment affected by missions. Give a supported benefit, cost or constraint for each category, state the source/perspective and uncertainty, and explain how a mitigation changes but need not eliminate the tradeoff.",
+      "expectedEvidence": "Produce an integrated evaluation of human, societal and environmental effects directly, rather than inheriting an overall judgment from specific-code totals. A broad impact assessment does not certify the entire physiological accommodation model or the compound Mars/SETI mastery claim.",
+      "nearMiss": "Discusses only astronaut excitement or only one technology; assumes an overall positive judgment proves every underlying technology/health claim.",
+      "changedCase": "The decision changes from a human-crewed mission to a robot collecting similar observations. Reassess which human accommodation costs remain on Earth and which disappear from the craft, while environmental/data-value questions remain."
+    },
+    "solar-structure-and-motion": {
+      "role": "solar-system-motion-phenomena",
+      "resourceRefs": [
+        "nasa-solar",
+        "nasa-phases"
+      ],
+      "sourceSummary": "The Sun is the solar system’s star; eight planets orbit it, while moons orbit planets/other bodies. Inner rocky and outer giant planets differ. Reflected sunlight and changing Sun–Earth–Moon geometry explain phases.",
+      "attributionLimits": "Original qualitative model with explicitly supplied positions, not a source diagram or a same-scale physical model. Numerical orbit calculations, eclipse viewing and direct Sun observation are not assigned.",
+      "question": "Build an original qualitative model naming Sun, Earth, Moon and the eight planets; distinguish planets, moons, asteroids/comets and a dwarf planet without a memorised size scale. Model Earth rotating for day/night and orbiting through a year; model the Moon orbiting Earth while Earth orbits the Sun. Explain changing visible sunlit fraction with three supplied positions: Moon near Sun’s direction as seen from Earth, about a quarter-turn round its orbit, and opposite the Sun as seen from Earth. Distinguish an ordinary phase from an eclipse.",
+      "expectedEvidence": "Explain solar-system arrangement and at least two motion-related phenomena with an actual model and causal account. Sunlight/observing viewpoint changes explain phases; Earth’s rotation explains day/night. No claim that all distances/sizes can be represented by the same small classroom spacing.",
+      "nearMiss": "Calls the Moon a light-producing star, explains all phases as Earth’s shadow or confuses daily rotation with yearly orbit.",
+      "changedCase": "A changed diagram moves Earth’s viewpoint while leaving the Moon a sphere with a sunlit half. Explain why the apparent shape can change without the Moon physically changing shape; a model view is not a current-phase calendar."
+    },
+    "exploration-technologies": {
+      "role": "exploration-technology-role",
+      "resourceRefs": [
+        "nasa-hubble",
+        "nasa-rover",
+        "csa-radarsat"
+      ],
+      "sourceSummary": "Hubble collects light/data from orbit above much atmospheric distortion; Perseverance studies Martian rocks/past habitability and collects samples for possible later study; Earth-observation satellites repeatedly study Earth.",
+      "attributionLimits": "Original comparative fact cards; no imagery, instrumentation operation, returned-sample promise, current mission count or empirical assessment outcome asserted.",
+      "question": "Original three tool cards name Hubble, Perseverance and RADARSAT. Match each with its target, what it measures/collects and a question it can address. Explain why a rover gives local surface information while an orbiting telescope observes light remotely and an Earth satellite provides broad repeat coverage. State a limitation for each; searching for signs of life is not proof life was found.",
+      "expectedEvidence": "Explain technology functions rather than only recall names; connect exploration/observation method with the question and limit. Distinguish an uncrewed Mars rover from a human landing and do not treat a telescope as travelling close to a distant star.",
+      "nearMiss": "Calls every satellite a Mars rover, or says Hubble sees better only because it is much closer to another galaxy.",
+      "changedCase": "A changed question needs detailed rock evidence at one surface site rather than broad repeat Earth measurements. Choose the appropriate kind of tool and explain what the other tool cannot establish; no mission construction or new discovery claimed."
+    }
+  },
+  "protocols": {
+    "E1.1": {
+      "codes": [
+        "ON-SCI-2022-G6-E1.1"
+      ],
+      "caseRefs": [
+        "conditions-and-accommodations",
+        "social-emotional-support"
+      ],
+      "contributorIds": [
+        "mt_cxJRc15osy",
+        "mt_fkcxpeYP85"
+      ],
+      "actions": [
+        "Supply every stated space condition and response; distinguish source fact from original scenario.",
+        "Require condition→effect→accommodation reasoning for physiological needs, not a food/water list.",
+        "Analyse social/emotional conditions and supports with the changed privacy/shared-activity case.",
+        "Keep the source disposition Partial: these two existing primary components do not supply the entire space-accommodation claim, while the overlapping later Mars/SETI card is not silently lowered."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": [
+        "Existing Journey to Mars card/complete guide already teaches overlapping hazards/mitigations, but its whole age13–14 claim and mandatory SETI/Fermi assessment cannot be offered at Ontario11–12 unchanged. No new subset clone or age widening. A separate lossless compound-claim curation decision is required."
+      ]
+    },
+    "E1.2": {
+      "codes": [
+        "ON-SCI-2022-G6-E1.2"
+      ],
+      "caseRefs": [
+        "environmental-observation"
+      ],
+      "contributorIds": [
+        "mt_AghN5YcCHX",
+        "mt_I_c57p0aGN"
+      ],
+      "actions": [
+        "Supply the three complete observation/comparison text cards and actual published source explanation.",
+        "Assess the role of satellite measurements across time/space in detecting environmental and climate-related change, not a satellite name alone.",
+        "Contrast seasonal changes, long-term comparable records and an isolated image; distinguish observation from causal inference.",
+        "Change season/method/coverage assumptions and require a revised judgment, with source uncertainty explicit."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "E1.3": {
+      "codes": [
+        "ON-SCI-2022-G6-E1.3"
+      ],
+      "caseRefs": [
+        "space-impact-perspectives"
+      ],
+      "contributorIds": [
+        "mt_cOJhDeLkPo",
+        "mt_RNeEF1JU4J"
+      ],
+      "actions": [
+        "Supply all declared analytic roles and the source-supported benefit/risk facts.",
+        "Evaluate both social and environmental impacts, with who benefits/bears risk explicit.",
+        "Compare several perspectives, evaluate evidence quality and propose a justified qualified judgment.",
+        "Revise under the changed disposal/data-sharing conditions; no invented outcomes or authentic quotations."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "E1": {
+      "codes": [
+        "ON-SCI-2022-G6-E1"
+      ],
+      "caseRefs": [
+        "integrated-human-impact",
+        "conditions-and-accommodations",
+        "social-emotional-support",
+        "space-impact-perspectives"
+      ],
+      "contributorIds": [
+        "mt_cOJhDeLkPo",
+        "mt_cxJRc15osy",
+        "mt_RNeEF1JU4J"
+      ],
+      "actions": [
+        "Supply the complete linked human/social/environment cases.",
+        "Assess benefits, costs and constraints across all three target categories with mechanisms and uncertainty.",
+        "Distinguish a source-supported fact, a declared analytic priority and an outcome not yet shown.",
+        "Revise the integrated evaluation for robot versus human exploration; do not mechanically promote the independent E1.1 accommodation duty."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "E2": {
+      "codes": [
+        "ON-SCI-2022-G6-E2"
+      ],
+      "caseRefs": [
+        "solar-structure-and-motion",
+        "exploration-technologies"
+      ],
+      "contributorIds": [
+        "mt_33RrpbceZE",
+        "mt_w2xiMNkyyX",
+        "mt_4V-vYhFUcm",
+        "mt_-SZU6cVB_-",
+        "mt_7GwWplh-48"
+      ],
+      "actions": [
+        "Supply the explicit original structure/position cards and technology fact cards.",
+        "Explain arrangement and motion-related phenomena using a labelled model, not a list alone.",
+        "Connect named technologies to targets, measurements and questions with contrasting limitations.",
+        "Apply changed geometry/tool-purpose cases and assess the overall account directly; historical child Full labels remain separately disclosed."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": [
+    {
+      "topicId": "mt_RNeEF1JU4J",
+      "wholeCard": {
+        "id": "mt_RNeEF1JU4J",
+        "type": "META",
+        "subject": "Personal & Social Development",
+        "domain": "Responsible Decision-Making",
+        "name": "Ethics in Real-World Issues",
+        "description": "Evaluate the ethical dimensions of real-world issues they encounter — such as environmental responsibility, fairness in sport, digital ethics, or social justice — considering multiple perspectives and forming a reasoned personal position",
+        "evidence": [
+          "Identify an ethical issue and describe at least two different perspectives on it",
+          "Explain which perspective they agree with most and give reasons for their position",
+          "Acknowledge that the other perspective has some validity even if they disagree"
+        ],
+        "assessmentPrompt": "Can {{name}} discuss a real issue — like whether it's fair that some children have more than others, or whether animals should be kept in zoos — considering different viewpoints and explaining their own position thoughtfully?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_cOJhDeLkPo",
+      "wholeCard": {
+        "id": "mt_cOJhDeLkPo",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Design & Technology",
+        "name": "Factors that shape designs",
+        "description": "Examine factors that influence the design of products, services and environments to meet community needs — sustainability (materials, energy, waste), cost, safety, function and appearance — and explain how designers prioritise competing factors",
+        "evidence": [
+          "Identify the factors a designer considered in a familiar product or place (e.g. a playground: safety, cost, shade, accessibility)",
+          "Explain how sustainability affected a real design (e.g. recycled-plastic benches, solar lights in a park, a reusable coffee cup)",
+          "Rank competing factors (e.g. function, safety, cost, users' needs) for a design brief, explain the priority order and the trade-off it creates (e.g. a more sustainable choice might cost more)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why a park bench might be made from recycled plastic — and what else designers had to think about, like cost and safety?",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_I_c57p0aGN",
+      "wholeCard": {
+        "id": "mt_I_c57p0aGN",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Polar Regions",
+        "name": "Polar Exploration Then & Now",
+        "description": "Compare historical polar exploration with modern polar science — the Heroic Age (1897–1922) relied on ships, dogs, and human endurance with many fatalities, while today's polar scientists use GPS, satellites, icebreaker ships, heated research stations, and aircraft; understand that modern challenges include studying climate change data, and that polar science now includes diverse international teams including women scientists like glaciologist Liz Thomas and marine biologist Sylvia Earle",
+        "evidence": [
+          "Compare Heroic Age exploration (dog sleds, man-hauling, many deaths) with modern science (GPS, satellites, icebreakers, heated stations)",
+          "Name at least two technologies that make modern polar science possible",
+          "Name a modern polar scientist and explain that today's polar teams are diverse and international"
+        ],
+        "assessmentPrompt": "Can {{name}} compare old polar exploration — dog sleds, freezing camps, real danger of death — with modern polar science using satellites, heated research stations, and diverse international teams?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Complete existing guide freshly read: modern satellite/ice measurement opens climate questions; changed-tool task tests lost measurement capability. E1.2 reuses this component with actual comparable climate observations, not certification of the entire historical/scientist-name repertoire. Historical source flags/confidence remain unchanged."
+    },
+    {
+      "topicId": "mt_oiqsIP97V3",
+      "wholeCard": {
+        "id": "mt_oiqsIP97V3",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "What Astronauts Do",
+        "description": "Know that astronauts are people who travel to space in rockets, that humans have walked on the Moon (Apollo missions), and that astronauts today live and work on the International Space Station",
+        "evidence": [
+          "Define an astronaut as a person who travels to space",
+          "State that humans landed on the Moon during the Apollo missions",
+          "Describe the International Space Station as a place where astronauts live and work in orbit around Earth"
+        ],
+        "assessmentPrompt": "Can {{name}} tell you what an astronaut is, and that people have actually walked on the Moon and live on a space station?",
+        "ageRangeStart": 5,
+        "ageRangeEnd": 7
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_w2xiMNkyyX",
+      "wholeCard": {
+        "id": "mt_w2xiMNkyyX",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "Earth's Spin & Orbit",
+        "description": "Understand that Earth moves in two ways: it rotates (spins) on its axis once every 24 hours causing day and night, and it orbits (travels around) the Sun once every 365 days, which is one year",
+        "evidence": [
+          "Demonstrate with a globe or ball that Earth's rotation causes day on the Sun-facing side and night on the opposite side",
+          "State that one full rotation takes about 24 hours (one day)",
+          "State that one full orbit around the Sun takes about 365 days (one year)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain that we have day and night because the Earth spins, and that a year is the time it takes Earth to go all the way around the Sun?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_-SZU6cVB_-",
+      "wholeCard": {
+        "id": "mt_-SZU6cVB_-",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "How Telescopes Work",
+        "description": "Know that telescopes are instruments that help us see distant objects in space, and that space telescopes like Hubble and James Webb orbit above Earth’s atmosphere to get clearer views of the universe",
+        "evidence": [
+          "Explain that a telescope magnifies distant objects so we can see them in more detail",
+          "State that Earth's atmosphere blurs the view, so space telescopes get clearer pictures",
+          "Name at least one space telescope (Hubble or James Webb) and describe what it does"
+        ],
+        "assessmentPrompt": "Does {{name}} know what a telescope does and why some telescopes are sent into space — like the Hubble or James Webb telescopes?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_7GwWplh-48",
+      "wholeCard": {
+        "id": "mt_7GwWplh-48",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "Space Robots & Rovers",
+        "description": "Describe how robots and rovers have explored places humans cannot easily go — Mars rovers like Curiosity and Perseverance drive across Mars taking photos, collecting rock samples, and searching for signs of past water",
+        "evidence": [
+          "Name at least one Mars rover (Curiosity or Perseverance) and state it drives on Mars's surface",
+          "Explain that rovers take photos, analyse rocks, and look for evidence of water",
+          "State why we send robots instead of people: Mars is very far away and has no breathable air"
+        ],
+        "assessmentPrompt": "Does {{name}} know about the Mars rovers? Can they tell you what Curiosity or Perseverance does on Mars?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_H9RAGGiHBL",
+      "wholeCard": {
+        "id": "mt_H9RAGGiHBL",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "Space Exploration Milestones",
+        "description": "Describe key milestones in human space exploration: the Space Race (Sputnik, Yuri Gagarin, Apollo 11 Moon landing), the Space Shuttle era, the International Space Station, and current missions (Artemis programme, Mars exploration plans, commercial spaceflight)",
+        "evidence": [
+          "Name Sputnik as the first satellite (1957) and Yuri Gagarin as the first person in space (1961)",
+          "Describe the Apollo 11 Moon landing (1969) with Neil Armstrong and Buzz Aldrin",
+          "Name at least one current space programme (Artemis, SpaceX, ISS) and describe its goal"
+        ],
+        "assessmentPrompt": "Can {{name}} tell you about the history of space exploration — from the first satellite to the Moon landing to what’s happening now?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 11
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_rbY77m8_s1",
+      "wholeCard": {
+        "id": "mt_rbY77m8_s1",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "Observing with Light Waves",
+        "description": "Explain how the electromagnetic spectrum is the primary tool of modern astronomy — different wavelengths (radio, infrared, visible, ultraviolet, X-ray, gamma-ray) reveal different phenomena, why some telescopes must be in space, and what specific discoveries each wavelength range has enabled (e.g. CMB in microwave, black hole jets in X-ray, cold gas clouds in radio)",
+        "evidence": [
+          "Lists at least four regions of the EM spectrum and gives a specific astronomical object or phenomenon observed in each",
+          "Explains why some telescopes must be placed in space (Earth's atmosphere blocks X-ray, gamma-ray, and much infrared radiation)",
+          "Describes the James Webb Space Telescope or Hubble and explains which part of the spectrum each primarily observes and why that was chosen"
+        ],
+        "assessmentPrompt": "If {{name}} was told that we can't see most of the universe with our eyes, could they explain why — and describe two types of telescope that detect something other than visible light, naming what they've helped us discover?",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 13
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_EIbltgXRWR",
+      "wholeCard": {
+        "id": "mt_EIbltgXRWR",
+        "type": "META",
+        "subject": "Science",
+        "domain": "Space Exploration",
+        "name": "Journey to Mars",
+        "description": "Evaluate the engineering and human challenges of long-duration spaceflight to Mars — radiation exposure, muscle and bone loss, psychological isolation, communication delays — and assess the current state of the SETI programme: what methods are used, what has been detected so far, and what the Fermi Paradox is",
+        "evidence": [
+          "Identifies and explains at least three major challenges of a Mars mission: radiation (no magnetosphere), bone/muscle loss from low gravity, psychological isolation, and delayed communications",
+          "Describes how SETI searches for intelligent life (radio signals, laser pulses, technosignatures) and explains why the lack of detection so far is not proof of absence",
+          "States the Fermi Paradox ('Where is everybody?') and discusses two contrasting proposed resolutions"
+        ],
+        "assessmentPrompt": "If {{name}} was asked whether they'd volunteer for a 3-year mission to Mars, could they describe at least three serious scientific or engineering challenges that would need to be solved first — and explain why the 20-minute communication delay alone changes almost everything about how the mission would operate?",
+        "ageRangeStart": 13,
+        "ageRangeEnd": 14
+      },
+      "contributionBoundary": "Complete existing guide freshly read: RIDGE activity explicitly requires causes, effects and mitigations and includes engineered air/water/temperature support. A new subset topic would overlap this component. Whole card/assessment also requires SETI/Fermi and ages13–14; not used as a primary-age contributor or widened."
+    },
+    {
+      "topicId": "mt_4V-vYhFUcm",
+      "wholeCard": {
+        "id": "mt_4V-vYhFUcm",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Systems & Earth's History",
+        "name": "Phases of the Moon",
+        "description": "Explain the phases of the Moon as the changing angle of sunlight on the lunar surface as seen from Earth, and describe how solar and lunar eclipses occur",
+        "evidence": [
+          "Explains that the phases of the Moon arise from the changing geometry of Sun, Earth, and Moon, not Earth's shadow",
+          "Describes the sequence of Moon phases over approximately 28 days",
+          "Distinguishes between a solar eclipse (Moon between Sun and Earth) and a lunar eclipse (Earth between Sun and Moon)"
+        ],
+        "assessmentPrompt": "If {{name}} noticed the Moon looking like a thin crescent one night and a full circle two weeks later, could they explain what has changed and why — and describe what happens during a lunar eclipse?",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_33RrpbceZE",
+      "wholeCard": {
+        "id": "mt_33RrpbceZE",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Space Systems & Earth's History",
+        "name": "The solar system (age 11+)",
+        "description": "Describe the detailed structure of the solar system, including moons, asteroids, and comets, compare orbital periods and distances of the planets, and distinguish between planets, dwarf planets, and other bodies",
+        "evidence": [
+          "Names the eight planets in order and gives one distinguishing fact about each",
+          "Describes the difference between a planet, a dwarf planet, an asteroid, and a comet",
+          "Explains the relationship between distance from the Sun and orbital period (planets further out take longer)"
+        ],
+        "assessmentPrompt": "If {{name}} was making a model of the solar system, could they describe the difference between a planet, a moon, an asteroid, and a comet — and explain why planets closest to the Sun take less time to complete an orbit?",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_cxJRc15osy",
+      "wholeCard": {
+        "id": "mt_cxJRc15osy",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "The Human Body",
+        "name": "Basic Body Needs",
+        "description": "Know that the body needs food for energy, water to stay hydrated, sleep to rest and grow, and exercise to keep muscles and the heart strong — and that these are basic needs every human body has",
+        "evidence": [
+          "List the four basic needs: food (energy), water (hydration), sleep (rest and growth), exercise (strength)",
+          "Explain that food gives the body energy to move, think, and grow",
+          "Describe what happens if one need isn't met (e.g. feeling tired without sleep, thirsty without water)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why their body needs food, water, sleep, and exercise — and what happens if they miss any of them?",
+        "ageRangeStart": 3,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    },
+    {
+      "topicId": "mt_AghN5YcCHX",
+      "wholeCard": {
+        "id": "mt_AghN5YcCHX",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Weather & Climate",
+        "name": "Weather Forecasting",
+        "description": "Know that meteorologists are scientists who study and forecast the weather using satellites, radar, weather balloons, and computer models, and that weather forecasts help people plan their activities and prepare for dangerous weather",
+        "evidence": [
+          "Define a meteorologist as a scientist who studies and predicts weather",
+          "Name at least three tools meteorologists use",
+          "Explain why weather forecasting is useful for safety and daily planning"
+        ],
+        "assessmentPrompt": "Can {{name}} explain what a meteorologist does, name some tools they use like satellites and radar, and describe why weather forecasts are important for keeping people safe?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Complete existing guide freshly read: satellite/instrument data→pattern→prediction and uncertainty component. Weather forecasting alone does not prove climate-trend understanding; the separately bound long-term observation case is mandatory."
+    },
+    {
+      "topicId": "mt_fkcxpeYP85",
+      "wholeCard": {
+        "id": "mt_fkcxpeYP85",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Weather & Climate",
+        "name": "The Atmosphere",
+        "description": "Know that Earth is surrounded by a layer of air called the atmosphere, that air has weight and exerts pressure, that the atmosphere protects us from harmful radiation and keeps the planet warm enough for life, and that weather happens in the lowest layer (troposphere)",
+        "evidence": [
+          "Define the atmosphere as the layer of air surrounding Earth",
+          "State that air has weight and exerts pressure",
+          "Explain that weather occurs in the troposphere, the lowest layer of the atmosphere"
+        ],
+        "assessmentPrompt": "Can {{name}} explain that we're surrounded by a blanket of air called the atmosphere, that this air actually has weight and pushes on everything, and that all our weather happens in the lowest layer?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contributionBoundary": "Existing complete card contributes only its identified component; no whole-card attainment inferred from one source task."
+    }
+  ],
+  "compoundCurationNeed": {
+    "topicId": "mt_EIbltgXRWR",
+    "independentClaims": [
+      "Human-spaceflight environmental constraints and accommodations",
+      "SETI/Fermi reasoning about extraterrestrial-life evidence"
+    ],
+    "currentWholeAssessment": "Fermi/SETI open epistemic probe, not independent primary life-support mastery.",
+    "options": [
+      "Retain current claim unchanged and disclose the primary E1.1 curation gap while source tasks are prepared.",
+      "Separately review a lossless split/refinement of the two independent strands, preserving historical IDs, rich guide content, dependencies and scoped source contributions. Do not silently add a primary difficulty level or duplicate the life-support subset."
+    ],
+    "chosenForThisDraft": "Preserve every existing card/guide/age and keep E1.1 Partial; no compound curation performed.",
+    "independentWitnesses": {
+      "lifeSupportWithoutSETI": "A learner can explain why an isolated crew needs controlled air/pressure, loading, rest and communication without understanding technosignatures or the Fermi non-detection problem.",
+      "SETIWithoutLifeSupport": "A learner can distinguish absence of detection from evidence of absence and compare Fermi hypotheses while being unable to explain reduced loading or a controlled spacecraft habitat.",
+      "existingGuideEvidence": "RIDGE cause/effect/mitigation activity already teaches the life-support component. Existing whole assessment chiefly probes SETI/Fermi uncertainty, so a parallel subset card would leave overlapping claims rather than repair the combined grain."
+    },
+    "losslessReviewRequirements": [
+      "Choose the stable-ID allocation explicitly from existing assessment meaning, source associations, dependency roles and historical evidence; do not assume one old ID can transparently mean two new claims.",
+      "Archive the exact combined original research if later refactoring it, retain provenance/source flags and migrate complete relevant activity/assessment content rather than replacing it with a short summary.",
+      "Review every old scoped source and edge against the separated claim meanings. Any downstream belief/assessment compatibility or learner-state decision is separate and requires its own evidence; none is performed here.",
+      "A possible reviewed direction is retaining the old ID/age for its assessed SETI/Fermi strand and separating the already-present space-constraint strand into an independent primary claim. This is a curation option, not approved implementation or permission to mint a subset clone beside the unchanged compound."
+    ]
+  },
+  "researchLimits": [
+    "Original task proposals are source-informed, not validated interventions or learner evidence. No private research or original source imagery is republished.",
+    "Only Mars, Polar Exploration and Weather Forecasting saved guide bodies are freshly read for this space review; other whole cards are fresh-read but their complete saved guides are not blanket recertified.",
+    "NASA/CSA source summaries are scoped to the actual read bodies. Search results/timeouts and unopened linked reports are not evidence of a completed read."
+  ],
+  "safety": [
+    "Text/model reasoning only: no exercise prescription, space-environment simulation, radiation/pressure exposure, debris handling or direct Sun viewing.",
+    "No diagnosis or clinical mitigation advice; support examples explain scientific/engineering functions without claiming guaranteed protection."
+  ]
+}
