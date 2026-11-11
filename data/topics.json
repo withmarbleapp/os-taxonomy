@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1906,
+  "topicCount": 1907,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -34212,7 +34212,9 @@
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1",
-        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1.2"
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D1.1"
       ],
       "ageRangeStart": 8,
       "ageRangeEnd": 12
@@ -37025,6 +37027,7 @@
       "standards": [
         "acara-v9:AC9S4U03",
         "acara-v9:AC9TDE4K02",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4",
@@ -37051,6 +37054,7 @@
         "ngss-k5:3-PS2-1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.4",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3"
       ],
       "ageRangeStart": 8,
@@ -37073,8 +37077,10 @@
       "standards": [
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
-        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3"
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4"
       ],
       "ageRangeStart": 8,
       "ageRangeEnd": 12
@@ -37226,6 +37232,7 @@
       "assessmentPrompt": "If {{name}} weighed themselves on bathroom scales and was then asked what they would weigh on the Moon, could they explain the difference between mass and weight and work out a rough answer?",
       "standards": [
         "ngss-ms:MS-PS2-4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.2",
@@ -39330,6 +39337,7 @@
         "ngss-k5:1-LS1-1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.3",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.5",
         "uk-nc-2013:Y1.Sci.A.3"
       ],
@@ -40039,6 +40047,7 @@
         "ngss-k5:4-LS1-1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.5"
       ],
       "ageRangeStart": 9,
@@ -45969,6 +45978,7 @@
       ],
       "assessmentPrompt": "Can {{name}} explain that we're surrounded by a blanket of air called the atmosphere, that this air actually has weight and pushes on everything, and that all our weather happens in the lowest layer?",
       "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.1"
       ],
       "ageRangeStart": 9,
@@ -47887,6 +47897,31 @@
       ],
       "ageRangeStart": 7,
       "ageRangeEnd": 8
+    },
+    {
+      "id": "mt_jJjjV2WtS6",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Forces & Motion",
+      "name": "How flight forces work",
+      "description": "Explain a qualitative model of aerodynamic flight: interaction with air can create drag opposing the flyer's motion relative to surrounding air and lift perpendicular to that relative motion; gravity supplies weight and a propulsion system can supply thrust. Identify the origins and directions of these forces, use their resultant to explain steady or changing flight, and explain how changing airflow, a surface, propulsion or carried mass can alter the force account. Distinguish aerodynamic lift from buoyancy; do not require aerodynamic equations, piloting procedures or a full fluid-mechanics theory.",
+      "centrality": 0,
+      "evidence": [
+        "Identify lift, drag, weight and thrust in a supplied aircraft case, explaining where each comes from and its direction: drag opposes the flyer's motion relative to surrounding air, lift is perpendicular to that motion, and weight points towards Earth. Explain that lift comes from interaction with moving air, is not merely buoyancy and cannot be inferred from a curved wing drawing or an equal-transit-time story alone.",
+        "Explain a straight, level constant-velocity case with balanced forces and an initial changed-force case that speeds up, slows or changes direction. Distinguish constant velocity from being stationary, and recognise that a constant-speed turn still changes velocity; use supplied arrows or an ordinary-language account without requiring a new drawing procedure.",
+        "Explain bounded ways to change the force account through propulsion setting, surface shape/orientation, relative airflow or carried mass. Name which forces are affected, allow interacting effects and reject the rule that increasing a wing angle always improves lift.",
+        "Transfer the model to a contrasting supplied flyer such as an unpowered descending glider or a time-averaged bird case. Explain why no engine does not mean no aerodynamic lift, why all four forces need not be nonzero, and why a straight-level diagram cannot simply be copied into every situation."
+      ],
+      "assessmentPrompt": "If {{name}} sees a model plane flying straight at a steady speed and then changing speed or direction, can they explain what lift, weight, thrust and drag are doing, where the air forces come from, and why an engine is not the same thing as the force holding the wings up?",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4"
+      ]
     }
   ]
 }

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "a1943e067a276793927cb4722e528060862b807a",
+  "status": "Two former residual source duties have concrete source-fit authoring designs. No new topic, age interval, dependency or authored-claim change. Historical C2 judgments are not mechanically promoted.",
+  "resources": {
+    "eia-generation": {
+      "url": "https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php",
+      "publisher": "US Energy Information Administration",
+      "readScope": "Fresh complete generator, turbine and other-generator explanatory body read on2026-11-11. Historical US generation percentages are not Canadian data and are not adopted; no diagrams/video viewed.",
+      "role": "Mechanical generator input, steam/wind/water routes and nonmechanical photovoltaic conversion; no engineering equations or plant operation."
+    },
+    "eia-pv": {
+      "url": "https://www.eia.gov/energyexplained/solar/photovoltaics-and-electricity.php",
+      "publisher": "US Energy Information Administration",
+      "readScope": "Fresh complete photovoltaic cell, circuit flow, panels/arrays, applications and history sections read on2026-11-11. Efficiency and US generation figures are not adopted; no diagrams/images/video inspected.",
+      "role": "Solar cell converts light to electricity, distinct from a passive solar heater; no semiconductor inventory required."
+    },
+    "rmit-parallel": {
+      "url": "https://learninglab.rmit.edu.au/Toolbox/electrotech/toolbox1204/resources/01principles/05circuits/02parallel.htm",
+      "publisher": "RMIT Learning Lab, Commonwealth of Australia2009 resource",
+      "readScope": "Fresh complete parallel-path, same-supply-voltage and household-use explanation read on2026-11-11. Equations/examples were visible but are not adopted; no diagrams or legacy Flash inspected.",
+      "role": "Independent path/application contrast in an ideal stable-voltage model, not a promise removing a load can never affect any real power supply. Household systems are discussed only, never handled."
+    }
+  },
+  "preparedCases": {
+    "mechanical-generator": {
+      "role": "mechanical-to-electrical",
+      "resourceRefs": [
+        "eia-generation"
+      ],
+      "sourceSummary": "A generator can convert mechanical input into electrical output through relative motion involving magnetic field and a coil. Wind/water turbines provide mechanical input.",
+      "attributionLimits": "Original educational text case or adult-approved low-voltage enclosed kit only; no image/model execution or successful build claimed.",
+      "question": "Original card: a hand crank turns an enclosed generator connected to a suitable small lamp. Another card replaces the hand with a turbine turned by moving wind or water. Trace source→moving rotor→electrical transfer→lamp, identify where electrical output occurs and explain why a turbine spinning without a connected generator is not by itself evidence of electricity generation.",
+      "expectedEvidence": "Name mechanical input and electrical output, distinguish the driving source/turbine from generator and receiving device. Explain that electrical energy is transferred from an input, not made from nothing; tracing a chain alone is not evidence the pupil built a working converter.",
+      "nearMiss": "Calls moving blades automatically an electric generator or says energy appears without continued input.",
+      "changedCase": "An original windmill turns a grinding stone directly: distinguish useful motion-to-motion work from electricity generation. A stopped crank with no stored supply cannot keep producing useful output indefinitely."
+    },
+    "light-cell": {
+      "role": "light-to-electrical",
+      "resourceRefs": [
+        "eia-pv"
+      ],
+      "sourceSummary": "A photovoltaic cell converts incident light directly to electricity; a passive solar heater primarily warms material instead.",
+      "attributionLimits": "Original contrast; no source photo or pupil experiment asserted. Do not imply every lamp/solar-cell pairing meets a motor's required input.",
+      "question": "Original two cards: sunlight warms a dark water cup; sunlight reaches a correctly connected PV module supplying a rated small electrical load. Describe each input/output and identify which actually produces electrical output. Explain the converter missing from a proposed sunbeam→motor diagram.",
+      "expectedEvidence": "Distinguish solar heating from photovoltaic conversion, with electrical transfer through a complete circuit to a suitable load. A source label such as renewable does not itself explain conversion.",
+      "nearMiss": "Calls a warm cup electrical generation or connects sunlight to an ordinary motor without a photovoltaic converter.",
+      "changedCase": "Original changed case covers the PV module while the passive cup remains warm: distinguish continuing stored thermal energy from the light input now unavailable to the cell."
+    },
+    "heat-route": {
+      "role": "thermal-route-electrical",
+      "resourceRefs": [
+        "eia-generation"
+      ],
+      "sourceSummary": "Steam can drive a turbine and generator; heat can originate from different resources, including nuclear fuel or geothermal heat.",
+      "attributionLimits": "Source-based qualitative case, no steam, hot surface or power-plant apparatus; no assertion electricity is merely steam flowing in wires.",
+      "question": "Original prepared card: a heat source makes steam; steam turns a turbine; a generator supplies electrical energy to a load. Explain each step and compare the route with moving-water generation and direct PV generation.",
+      "expectedEvidence": "Name heat-related input, intermediate movement and electrical output. Explain varied routes, including one that does not need a turbine, without adding energy equations, reactor physics or a detailed steam cycle.",
+      "nearMiss": "Says every electricity source burns fossil fuel or that a steam turbine and PV cell work by exactly the same mechanism.",
+      "changedCase": "An original device uses hot water directly to heat a room with no generator: explain why its useful heat is not evidence of electrical generation."
+    },
+    "circuit-applications": {
+      "role": "series-parallel-uses",
+      "resourceRefs": [
+        "rmit-parallel"
+      ],
+      "sourceSummary": "Series gives a single path, while parallel branches provide separate paths between the same supply points; household loads commonly use branches.",
+      "attributionLimits": "Original safe educational circuit descriptions and a discussion of household topology only. Stable ideal supply assumed; actual batteries have limits/internal resistance and must not be shorted or overloaded.",
+      "question": "Original caseA is a torch cell→switch→lamp→return, all in one loop. Explain why opening the switch stops its lamp. CaseB is a two-room lighting MODEL: two rated lamps on separate branches across the same low-voltage supply, each with its own series switch. Trace both complete paths and explain why one room can be switched off while the other remains lit in this supplied model. Identify the common household purpose without touching wiring. Draw and describe each configuration using the vocabulary, then design a suitable switched low-voltage circuit to a changed brief.",
+      "expectedEvidence": "Distinguish topology by tracing paths, not counting bulbs. Explain a common series use and a common parallel use with the reason for each. Each branch still needs a complete loop; a circuit may contain both series elements and parallel branches. Differentiate current/voltage/resistance in the description without requiring new numerical laws.",
+      "nearMiss": "Calls any two-lamp circuit parallel, predicts every opened branch necessarily breaks every other branch or says a parallel branch does not need a return path.",
+      "changedCase": "Original changed brief places one master switch before the split: explain why opening it now interrupts both lamps. Compare with a switch in just one branch; do not apply the earlier independence statement without checking topology."
+    }
+  },
+  "protocols": {
+    "C2.4": {
+      "codes": [
+        "ON-SCI-2022-G6-C2.4"
+      ],
+      "contributorIds": [
+        "mt_7e-lG7YOWa",
+        "mt_K1-HopEJAB"
+      ],
+      "caseRefs": [
+        "mechanical-generator",
+        "light-cell",
+        "heat-route"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read each actual source summary and original prepared case; separate supplied physics from any actual kit observation.",
+        "For every bound case explain input, transformation/path or circuit topology and actual purpose, rather than repeat a source name or identify a picture only.",
+        "Draw/describe the relationships in the learner's own words, justify which case meets the stated brief and identify the invalid near miss.",
+        "Apply the explanation to each changed case and state modelling/input limits. Whole procedural build/test/refine, complete community conservation case inventory and whole vocabulary production remain separate and unchanged."
+      ],
+      "remainingConditions": []
+    },
+    "C2.7": {
+      "codes": [
+        "ON-SCI-2022-G6-C2.7"
+      ],
+      "contributorIds": [
+        "mt_NzCNuABT3E"
+      ],
+      "caseRefs": [
+        "circuit-applications"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read each actual source summary and original prepared case; separate supplied physics from any actual kit observation.",
+        "For every bound case explain input, transformation/path or circuit topology and actual purpose, rather than repeat a source name or identify a picture only.",
+        "Draw/describe the relationships in the learner's own words, justify which case meets the stated brief and identify the invalid near miss.",
+        "Apply the explanation to each changed case and state modelling/input limits. Whole procedural build/test/refine, complete community conservation case inventory and whole vocabulary production remain separate and unchanged."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_7e-lG7YOWa",
+      "mt_K1-HopEJAB",
+      "mt_NzCNuABT3E",
+      "mt_9nxyFoYD_b",
+      "mt_DA7-JYRvtP",
+      "mt_VI5kdtf28e",
+      "mt_X_aDUBh-HF",
+      "mt_YB0qF5KX9C",
+      "mt_akBotspaf2",
+      "mt_deexfCHU9m",
+      "mt_d-EKO-pKkP",
+      "mt_2_YoprauaJ",
+      "mt_2bnXrfS4Iq"
+    ],
+    "completeSavedGuidesRead": [
+      "mt_7e-lG7YOWa",
+      "mt_K1-HopEJAB",
+      "mt_NzCNuABT3E",
+      "mt_DA7-JYRvtP"
+    ],
+    "limits": [
+      "K1 full guide explicitly includes motion↔electrical examples and a missing-solar-cell counterexample; the source generation portfolio tests those applications without replacing its real design/build/test/refine requirement.",
+      "7e retains multiple actual sourced conservation cases and cost/trade-off reasoning. It is a resource/energy component, not automatic proof of every generator operation.",
+      "Nz vocabulary whole card explicitly requires correct series/parallel comparison and working description/drawing/design. The Ontario application tasks extend that use with supplied circuit cases, without rewriting the guide's English programme-placement note.",
+      "Other C2 cards/guides/readiness are being reviewed for integrated overall closure; these two protocols do not certify the whole C2 programme or the formal current/voltage measurement inventory."
+    ],
+    "freshReadScope": "Complete three direct current cards, ten-card transitive hard closure and nine hard edges, plus three nearest electrical cards read; all four declared complete saved guides read. Original guide verification/confidence flags remain historical and unchanged."
+  },
+  "safety": "Use only adult-approved rated low-voltage educational kits and school procedures where real work is undertaken; never mains, opened household equipment, improvised high-current sources, heating elements or exposed rotating machinery. Disconnect before rewiring and avoid short circuits. Source/model reasoning does not certify practical execution."
+}

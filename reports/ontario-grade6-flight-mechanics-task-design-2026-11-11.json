@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "a1943e067a276793927cb4722e528060862b807a",
+  "status": "Complete original task portfolio bound to the separately reviewed new qualitative flight-model claim and preserved existing component claims. No old buoyancy, force-investigation, diagram or organism claim is broadened.",
+  "resources": {
+    "nasa-forces": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual four-force explanatory body read on2026-11-11; no source diagram inspected.",
+      "role": "Directions, origins and balanced cruise; not pilot training."
+    },
+    "nasa-lift": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual explanatory body read on2026-11-11; historical portraits and diagrams not inspected.",
+      "role": "Pressure/flow-turning descriptions are compatible; equal-transit-time explanation is rejected. No calculus adopted."
+    },
+    "nasa-factors": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/factors-that-affect-lift/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual lift-factor body read on2026-11-11; no diagram inspected.",
+      "role": "Air properties, relative motion and geometry affect aerodynamic lift; no lift equation required."
+    },
+    "nasa-parts": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/airplane-parts-function/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual wings/stabilizers/control surfaces/flaps/fuselage explanatory text read on2026-11-11. Source slide/PDF not visually inspected.",
+      "role": "Actual representative aircraft features and their functions; configurations vary."
+    },
+    "nasa-stall": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/inclination-effects-on-drag/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual angle/flow/separation/plot/drag-coefficient explanatory text read on2026-11-11. Plot/diagram not inspected and numeric angles are not adopted.",
+      "role": "Increasing inclination cannot be assumed to improve lift without limit; separation changes the flow."
+    },
+    "cornell-feathers": {
+      "url": "https://academy.allaboutbirds.org/feathers-article/",
+      "publisher": "Cornell Lab of Ornithology, Bird Academy",
+      "readScope": "Actual anatomy, wing/tail/contour categories and flight-function sections read on2026-11-11. Images, animations and accompanying slide set not inspected.",
+      "role": "Flight feather surfaces/attachment, tail steering and nonflight feather functions, not every feather or every bird."
+    },
+    "brown-bat": {
+      "url": "https://engineering.brown.edu/news/2014-05-24/tiny-muscles-help-bats-fine-tune-flight",
+      "publisher": "Brown University",
+      "readScope": "Complete actual2014 research-news body, including method, findings and remaining sensory-function uncertainty, read on2026-11-11. No images/video/paper inspection claimed.",
+      "role": "Named Jamaican fruit bat study supports membrane shape/stiffness adjustment; not a universal quantified claim for all bats or pupil intervention evidence."
+    },
+    "nasa-relative-air": {
+      "url": "https://www.grc.nasa.gov/WWW/k-12/VirtualAero/BottleRocket/airplane/move.html",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual relative-air/ground/wind explanatory body and examples read on2026-11-11; source image/interactive not inspected and numeric examples/piloting guidance not adopted.",
+      "role": "Explicit aerodynamic-relative-air versus buoyancy distinction; only qualitative reference-frame reasoning is used."
+    },
+    "nasa-glider": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/three-forces-on-a-glider/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual glider/lift/weight/drag explanatory body read on2026-11-11; source image not inspected.",
+      "role": "Unpowered aerodynamic lift/drag/weight and descent-relative-to-air account; not flight instruction."
+    },
+    "nasa-equilibrium": {
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/equilibrium/",
+      "publisher": "NASA Glenn Research Center",
+      "readScope": "Complete actual vector/force/glider-equilibrium explanatory body read on2026-11-11. Equations visible but not adopted; source graphic not inspected and torque example not used.",
+      "role": "Qualitative force balance in a descending glider; no trigonometry or angular-equilibrium assessment."
+    }
+  },
+  "preparedCases": {
+    "air-and-wing": {
+      "role": "air-properties-application",
+      "resourceRefs": [
+        "nasa-lift",
+        "nasa-factors",
+        "nasa-relative-air"
+      ],
+      "sourceSummary": "Aerodynamic force depends on interaction with air; pressure distribution and changed airflow describe the same interaction. Geometry and relative motion matter.",
+      "attributionLimits": "Original comparison below, not a measured wind-tunnel dataset. Atmospheric pressure alone does not prove a complete lift explanation; aerodynamic lift is not merely buoyancy.",
+      "question": "Original cards show the same wing moving relative to air, a wing with no relative airflow, and a wing moving in a hypothetical vacuum. Identify where aerodynamic lift can occur and why air that has mass and exerts pressure can exert a force when its flow is changed. Connect pressure differences around the wing with flow deflection without inventing a requirement that two air parcels rejoin together.",
+      "expectedEvidence": "Relates properties of air to a real wing application, distinguishes force from the air from weight due to gravity, and explains why a wing does not generate aerodynamic lift in a vacuum. Names shape, relative speed and orientation as relevant factors, not a universal curved-top rule.",
+      "nearMiss": "Air has no mass so cannot exert force; gravity switches off in a vacuum; or air parcels must reach the wing rear simultaneously.",
+      "changedCase": "An original inclined flat card moves through air. Explain why the absence of a curved upper surface does not alone rule out lift; identify what flow/force evidence would be needed instead of claiming every flat card flies."
+    },
+    "four-force-model": {
+      "role": "four-force-relationships",
+      "resourceRefs": [
+        "nasa-forces"
+      ],
+      "sourceSummary": "Weight acts towards Earth; drag opposes the flyer's motion relative to the surrounding air, and lift is perpendicular to that relative motion. Propulsion supplies thrust. Zero resultant gives constant velocity.",
+      "attributionLimits": "Original force values are supplied reasoning-model quantities, not measured aircraft performance. The vertical/horizontal pairing below applies to the stated straight, level example only.",
+      "question": "Draw an original straight-level aircraft model with lift10units up, weight10down, thrust4forward and drag4back. Explain both balances and constant velocity. In a second instantaneous card only thrust becomes6units: show the resulting forward imbalance and describe the initial change of motion. Do not infer that an airplane needs a continuing forward resultant merely to keep moving.",
+      "expectedEvidence": "Labels all four forces with directions and relative magnitudes, separates weight from mass, and distinguishes zero resultant/constant motion from zero speed. Explains the initial acceleration in the changed card without making a sustained-flight prediction after all conditions change.",
+      "nearMiss": "Balanced forces mean the aircraft must stop; thrust must exceed drag at all times to keep moving; or lift is always vertically upwards whatever the flight orientation.",
+      "changedCase": "An original banked-turn card supplies a force pointing inward as well as a vertical balance. Explain why speed can remain steady while direction changes and why the straight-level four-arrow arrangement cannot simply be copied."
+    },
+    "machine-and-bird-control": {
+      "role": "machine-organism-control",
+      "resourceRefs": [
+        "nasa-forces",
+        "nasa-parts",
+        "cornell-feathers"
+      ],
+      "sourceSummary": "Aircraft controls change aerodynamic forces; bird flight feathers and tails also support controlled flight. A change in velocity requires a nonzero resultant.",
+      "attributionLimits": "Original, qualitative comparisons. Bird forces are averaged over a declared wingbeat interval, not asserted constant at every instant. Changing roll/pitch is not equated with an unexplained translational resultant.",
+      "question": "Compare an aircraft in straight-level constant-velocity flight with one beginning to speed up after increased thrust. Then use an original bird case with a declared time-averaged straight-level balance and a second case changing direction using altered wing/tail orientation. Identify the balanced and unbalanced motion in each, point to the actual aircraft propulsion/control and bird feather/tail structures, and explain the changed force direction rather than just naming parts.",
+      "expectedEvidence": "Applies balanced/unbalanced reasoning to both a flying machine and an organism. Explains constant velocity versus changes of speed or direction, connects a control change to altered aerodynamic forces and preserves the time-averaging limit for the bird.",
+      "nearMiss": "Uses a resting-book example as the whole flight explanation; claims a bird cannot glide because it has no engine; or treats constant speed in a turn as zero resultant.",
+      "changedCase": "An original bird and aircraft keep the same speed while turning. Explain why the change in direction still needs a resultant; say why this does not show the force magnitudes are constant throughout a wingbeat."
+    },
+    "changing-the-forces": {
+      "role": "four-force-changes",
+      "resourceRefs": [
+        "nasa-forces",
+        "nasa-parts",
+        "nasa-factors",
+        "nasa-stall"
+      ],
+      "sourceSummary": "Throttle, surface configuration, airflow and carried mass can change flight forces; changing one condition can affect several forces.",
+      "attributionLimits": "Descriptions only; no aircraft operation, flight controls, heights or live-animal manipulation. The model does not promise one independent slider for each force or a universal stall angle.",
+      "question": "For original comparison cards, explain how changing propulsion setting affects thrust; changing wing orientation/shape or relative speed can affect lift; deploying a spoiler or changing the exposed shape can affect drag; and adding cargo changes weight. Trace an initial effect on motion using a labelled force account. State that a wing change may alter both lift and drag and that increasing its angle cannot improve lift indefinitely.",
+      "expectedEvidence": "Names a real method associated with each of the four forces and connects the change to the actual aircraft application. Separates mass/weight changes from fuel providing thrust and recognises interacting effects and stall limits.",
+      "nearMiss": "A bigger engine eliminates gravity; more wing angle always gives more lift; or a flap changes only one force under all conditions.",
+      "changedCase": "The supplied card reports separated flow after a large angle change. Explain why the earlier small-change prediction is not safe to extend indefinitely; propose checking evidence rather than inventing a numeric threshold."
+    },
+    "bird-and-bat-structures": {
+      "role": "varied-organism-flight-functions",
+      "resourceRefs": [
+        "cornell-feathers",
+        "brown-bat"
+      ],
+      "sourceSummary": "Interlocking bird flight feathers form controllable wing surfaces; tail feathers help steering. The named bat study links membrane-muscle activity to changes of wing stiffness and shape.",
+      "attributionLimits": "Factual summaries of selected sources; no claim every bird flies, all bats share identical control, or the pupil has inspected a live specimen. No fossil-origin account is needed for these present-day functions.",
+      "question": "Create a labelled two-column comparison of a flying bird and the studied Jamaican fruit bat. Link interlocking wing feathers and adjustable tail to bird flight/steering, and the bat wing membrane and coordinated small muscles to control of wing shape. Explain why a membrane wing need not have feathers and why a feather can serve display/insulation rather than flight.",
+      "expectedEvidence": "Gives structure-to-function explanations for two different kinds of flying organism, rather than naming wings alone. Distinguishes wing surface/control from body grouping and avoids turning this into the whole plant/animal-structure claim or dinosaur-to-bird evidence claim.",
+      "nearMiss": "All flying organisms have feathers; every feather implies flight; or naming an animal group alone explains how it flies.",
+      "changedCase": "Cornell describes nonflight feathers and a flightless ostrich. Explain why possessing feathers is not sufficient evidence of powered flight, and identify the functional structures that the original question actually asked about."
+    },
+    "glider-transfer": {
+      "role": "unpowered-glider-transfer",
+      "resourceRefs": [
+        "nasa-glider",
+        "nasa-equilibrium"
+      ],
+      "sourceSummary": "An unpowered glider has aerodynamic lift and drag plus weight. A steady descending path can have zero net force even though no propulsion thrust is supplied.",
+      "attributionLimits": "Original qualitative force account, not an actual flight measurement. Descent is relative to the surrounding air; rising air and flight training are outside the task.",
+      "question": "Original card: an unpowered glider moves at constant forward and downward velocity through still air. Identify its three forces and explain why relative airflow still creates lift. Trace weight straight down, lift perpendicular to its descending flight path and drag opposite that path; explain why the forces can balance without a fourth forward thrust. No angle or component calculation is required.",
+      "expectedEvidence": "Separates wing lift from engine thrust and distinguishes steady descent from accelerating fall. Explains that the whole force directions differ from straight-level cruise, and qualitatively that weight has a component along the descent rather than adding a fictional engine force.",
+      "nearMiss": "No engine means no lift, or a steady descending glider must have lift vertically equal to weight and zero drag.",
+      "changedCase": "A supplied changed glider initially has more drag with its other forces unchanged. Explain the initial change of velocity rather than assume every subsequent force remains fixed."
+    },
+    "buoyancy-contrast": {
+      "role": "aerodynamic-buoyancy-contrast",
+      "resourceRefs": [
+        "nasa-relative-air",
+        "nasa-lift"
+      ],
+      "sourceSummary": "NASA explicitly distinguishes a buoyant balloon from aerodynamic lift dependent on relative airflow. Air may flow past a stationary wing, so zero ground speed alone does not remove aerodynamic force.",
+      "attributionLimits": "Original comparison with supplied physical conditions, not a balloon-launch task, buoyancy equation or claim that every upward force is aerodynamic lift.",
+      "question": "Original card A is a balloon floating in still air by buoyancy; card B is a supported wing in moving air; card C is the same wing with no relative air motion. Explain why A can have an upward buoyant force without wing airflow, why B can experience aerodynamic lift even at zero ground speed, and why C is not evidence of aerodynamic lift. Weight remains distinct in all three.",
+      "expectedEvidence": "Identifies the different force mechanisms and checks relative airflow rather than only motion over the ground. Does not equate generic upthrust vocabulary with an aerodynamic explanation.",
+      "nearMiss": "All upward forces are the same aerodynamic lift, or an object fixed relative to the ground cannot experience aerodynamic force.",
+      "changedCase": "The original wing is in a wind tunnel: ground position stays fixed while airflow changes. Explain what relevant condition changed and why a zero-ground-speed rule fails."
+    }
+  },
+  "protocols": {
+    "D2.1": {
+      "codes": [
+        "ON-SCI-2022-G6-D2.1"
+      ],
+      "contributorIds": [
+        "mt_Y9k86G8BBT",
+        "mt_fkcxpeYP85",
+        "mt_jJjjV2WtS6"
+      ],
+      "caseRefs": [
+        "air-and-wing"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    },
+    "D2.2": {
+      "codes": [
+        "ON-SCI-2022-G6-D2.2"
+      ],
+      "contributorIds": [
+        "mt_Y9k86G8BBT",
+        "mt_jJjjV2WtS6",
+        "mt_k7GOtslF-x",
+        "mt_sUVeVXzRuq"
+      ],
+      "caseRefs": [
+        "four-force-model"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    },
+    "D2.3": {
+      "codes": [
+        "ON-SCI-2022-G6-D2.3"
+      ],
+      "contributorIds": [
+        "mt_3WMADSy0mA",
+        "mt_jJjjV2WtS6",
+        "mt_k7GOtslF-x"
+      ],
+      "caseRefs": [
+        "machine-and-bird-control"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    },
+    "D2.4": {
+      "codes": [
+        "ON-SCI-2022-G6-D2.4"
+      ],
+      "contributorIds": [
+        "mt_Y9k86G8BBT",
+        "mt_jJjjV2WtS6",
+        "mt_k7GOtslF-x",
+        "mt_sUVeVXzRuq"
+      ],
+      "caseRefs": [
+        "changing-the-forces"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    },
+    "D2.5": {
+      "codes": [
+        "ON-SCI-2022-G6-D2.5"
+      ],
+      "contributorIds": [
+        "mt_8VA40Tumth",
+        "mt_fDoE-pL6Jv"
+      ],
+      "caseRefs": [
+        "bird-and-bat-structures"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    },
+    "D2": {
+      "codes": [
+        "ON-SCI-2022-G6-D2"
+      ],
+      "contributorIds": [
+        "mt_3WMADSy0mA",
+        "mt_8VA40Tumth",
+        "mt_Y9k86G8BBT",
+        "mt_fDoE-pL6Jv",
+        "mt_fkcxpeYP85",
+        "mt_jJjjV2WtS6",
+        "mt_k7GOtslF-x",
+        "mt_sUVeVXzRuq"
+      ],
+      "caseRefs": [
+        "air-and-wing",
+        "four-force-model",
+        "machine-and-bird-control",
+        "changing-the-forces",
+        "bird-and-bat-structures",
+        "glider-transfer",
+        "buoyancy-contrast"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original cases, keeping source facts separate from supplied model quantities.",
+        "Complete every bound question with labelled explanations, including the named aircraft/organism application and the relevant air property, force or structure.",
+        "Answer each near miss and changed case, preserving the stated modelling limits rather than assuming every flight situation has the straight-level arrangement.",
+        "For the integrated D2 account, combine every actual caseRef: air-and-wing, four-force-model, machine-and-bird-control, changing-the-forces, bird-and-bat-structures, glider-transfer and buoyancy-contrast. Explain air interaction, force origins/relationships, control changes and varied organism adaptations. For a specific duty, give its complete account rather than certify a whole contributing topic from one application."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_Y9k86G8BBT",
+      "mt_fkcxpeYP85",
+      "mt_sUVeVXzRuq",
+      "mt_k7GOtslF-x",
+      "mt_3WMADSy0mA",
+      "mt_8VA40Tumth",
+      "mt_fDoE-pL6Jv",
+      "mt_cOJhDeLkPo"
+    ],
+    "hardClosureCardsRead": 21,
+    "hardEdgesRead": 24,
+    "limits": [
+      "Balanced-force investigation and force-diagram whole claims retain actual fair-test, resultant and representation evidence; a flight description does not prove the entire procedure.",
+      "The full mass/weight claim retains W=mg and different-field reasoning. Only the correct weight-as-force component contributes to this qualitative flight duty.",
+      "The structure-function whole claim retains plant and internal-organ functions. Specific bird/bat examples contribute to this duty without certifying that complete repertoire.",
+      "No existing guide or its historical source flags/confidence are changed. Relevant source/task design is freshly checked; this is not a fresh validation of every inherited guide citation.",
+      "The later complete Dinosaur-to-Bird and Mars/SETI topics are not lowered, cloned or used as substitutes for present-day flight functions."
+    ],
+    "newReviewedClaim": {
+      "topicId": "mt_jJjjV2WtS6",
+      "role": "whole qualitative flight-model claim; component of complete source duties",
+      "independence": "Aerodynamic lift/thrust, relative-air mechanism and causal steady/changed/control transfer are absent from the complete generic comparison cards. Existing representational/procedural/organism claims remain unchanged.",
+      "guideBinding": "data/teaching-research.json records by topicId; all seven complete original cases embedded in learn.reviewNotes, with organism-structure extension explicitly non-gating."
+    }
+  },
+  "safety": "All original numerical/model cards are reasoning resources. No live-animal handling, fall/drop-from-height, aircraft-control operation or high-speed/pressurised apparatus is assigned."
+}
