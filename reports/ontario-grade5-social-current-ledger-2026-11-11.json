@@ -5,18 +5,18 @@
   "localDependencyCommit": "6569684fbc3b3016619a1d746227a716b352ffe6",
   "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
   "scope": "Ontario Grade 5 primary ages 10–11, actual 2018 course and 41retained records.",
-  "status": "Thirteen source-fit designs reviewed, including the bounded duty-to-consult knowledge and actual prepared scenarios. The remaining 28 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
+  "status": "Fifteen source-fit designs reviewed, including the two original social/environmental action plans. The remaining 26 records continue under whole-claim/task qualification; no overall completion or pupil attainment is inferred.",
   "expectationCount": 41,
   "dispositionCounts": {
-    "Full": 13,
+    "Full": 15,
     "Partial": 0,
-    "Unverified": 28,
+    "Unverified": 26,
     "Gap": 0
   },
   "associationInventory": {
-    "pairs": 27,
+    "pairs": 31,
     "topics": 11,
-    "codes": 13,
+    "codes": 15,
     "newClaims": 2,
     "reusedClaims": 9
   },
@@ -204,19 +204,27 @@
     },
     {
       "code": "B1.2",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_g8gJIsDxmj",
+        "mt_xswgDb7eIU"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-social-environment-action-plans-2026-11-11.json",
+      "protocolReference": "/protocols/social-plan",
+      "coverageBasis": "Original source-fit plan specifies both appropriate government (including Nation) and citizen actions, while whole civic/governance claims and resource-role limits remain explicit. No actual implementation or pupil attainment is inferred."
     },
     {
       "code": "B1.3",
-      "disposition": "Unverified",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Official mandatory body read; whole-claim and resource/task qualification continues. No independently absent claim or learner deficit is inferred."
-      ]
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_g8gJIsDxmj",
+        "mt_xswgDb7eIU"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-social-environment-action-plans-2026-11-11.json",
+      "protocolReference": "/protocols/environment-plan",
+      "coverageBasis": "Original source-fit plan specifies both appropriate government (including Nation) and citizen actions, while whole civic/governance claims and resource-role limits remain explicit. No actual implementation or pupil attainment is inferred."
     },
     {
       "code": "B2",

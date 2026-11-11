@@ -83,3 +83,41 @@ test('Grade5 question sources and perspectives retain actual bound documentary o
   question.sourceIds = [question.sourceIds[0], question.sourceIds[0]];
   assert.throws(() => checkResearchSources(repeated), /Duplicate underlying source origins/);
 });
+
+function checkActionPlanActors(report, protocol) {
+  const actors = new Map(protocol.actors.map(actor => [actor.id, actor]));
+  for (const step of protocol.actionSteps) {
+    const actor = actors.get(step.actorId);
+    assert.ok(actor && actor.body && step.action && step.purpose, 'Missing actor/action binding');
+    assert.ok(actor.sourceRefs.length, 'Missing actor source');
+    for (const ref of actor.sourceRefs) {
+      const source = report.resources[ref];
+      assert.ok(source?.url || source?.report, 'Missing actor source');
+      if (source.report) {
+        assert.ok(!source.report.includes('/') && source.report.endsWith('.json'), 'Invalid source report path');
+        assert.ok(Object.keys(read(`reports/${source.report}`)).length, 'Empty source report');
+      }
+    }
+  }
+  const activeActors = protocol.actionSteps.map(step => actors.get(step.actorId));
+  assert.ok(activeActors.some(actor => actor.kind === 'government'), 'Missing government action');
+  assert.ok(activeActors.some(actor => actor.kind === 'government' && actor.indigenousGovernment), 'Missing Indigenous government action');
+  assert.ok(activeActors.some(actor => actor.kind === 'citizen'), 'Missing citizen action');
+}
+test('Grade5 action plans bind actual government and citizen steps to source roles', () => {
+  const report = read('reports/ontario-grade5-social-environment-action-plans-2026-11-11.json');
+  for (const protocol of Object.values(report.protocols)) {
+    checkActionPlanActors(report, protocol);
+    const noGovernment = structuredClone(protocol);
+    const governments = new Set(protocol.actors.filter(actor => actor.kind === 'government').map(actor => actor.id));
+    noGovernment.actionSteps = noGovernment.actionSteps.filter(step => !governments.has(step.actorId));
+    assert.throws(() => checkActionPlanActors(report, noGovernment), /Missing government action/);
+    const noCitizens = structuredClone(protocol);
+    const citizens = new Set(protocol.actors.filter(actor => actor.kind === 'citizen').map(actor => actor.id));
+    noCitizens.actionSteps = noCitizens.actionSteps.filter(step => !citizens.has(step.actorId));
+    assert.throws(() => checkActionPlanActors(report, noCitizens), /Missing citizen action/);
+    const brokenSource = structuredClone(report);
+    delete brokenSource.resources[protocol.actors[0].sourceRefs[0]];
+    assert.throws(() => checkActionPlanActors(brokenSource, protocol), /Missing actor source/);
+  }
+});
