@@ -1194,7 +1194,13 @@
           "independentOrGroup": true,
           "simpleEquipmentActual": true,
           "safetyAndCleanup": true,
-          "unexpectedResultAllowed": true
+          "unexpectedResultAllowed": true,
+          "methodSpecificEvaluation": {
+            "controlledComparisonTest": "relevant control",
+            "observation": "consistent recording and limitation",
+            "research": "identified reliable sources and limitation",
+            "universalControlledExperimentRequired": false
+          }
         }
       }
     },

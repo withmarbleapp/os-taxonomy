@@ -113,7 +113,7 @@ const expectedProtocols = {
   ]
 };
 const reviewedPairDigest = 'd8eb07692d2d0f18c4bbadae7332e9e019b3e05faef890cae5049b0f208020ee';
-const reviewedConditionDigest = '9d2da96a3aa533c124e8452f996b246e9d23343052c5a2c3e75d1fcc7a199ba4';
+const reviewedConditionDigest = '70573e1a3000db1b2f2a01fe2bc0c3042e0ee01ba14b2dbb06159efc527cfa1c';
 const sourcePrefix = 'ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-';
 
 function check(r, p, l = ledger, a = alignments) {
@@ -214,7 +214,7 @@ test('a different existing valid protocol cannot silently replace a source task'
   assert.throws(() => check(r, p), /wrong valid protocol/);
 });
 test('source-specific real performance and all hazard cases cannot be deleted', () => {
-  for (const id of ['institutions-roles','everyday-emergency-preparation','safety-messages-roleplay','plans-and-maps','crosscutting-science']) {
+  for (const id of ['institutions-roles','everyday-emergency-preparation','safety-messages-roleplay','plans-and-maps','crosscutting-science','safe-inquiry']) {
     const p = clone(protocols); const f = p.protocols.find(f => f.id === id);
     delete f.sourceConditions[Object.keys(f.sourceConditions)[0]];
     assert.throws(() => check(report, p), /performance conditions changed/);

@@ -340,16 +340,22 @@
     {
       "id": "safe-inquiry",
       "title": "Actually investigate a question",
-      "task": "Let the learner formulate/choose a specific question and choose observation, a one-change safe comparison/test or reliable research. Use appropriate simple equipment, describe/compare actual samples, make a prior prediction, gather data and answer using evidence. Do an independent OR a group option without treating either as universally required. Check practical risks, handle/clean equipment safely and explain a control. A surprising result is legitimate; no manufactured confusion/distress.",
+      "task": "Let the learner formulate/choose a specific question and choose observation, a one-change safe comparison/test or reliable research. For a direct observation/test, use appropriate simple equipment and describe/compare actual samples; research instead uses actual identified sources. Make an appropriate prior prediction where the question supports one, gather data/information and answer using evidence. Do an independent OR a group option without treating either as universally required. Check practical risks and handle/clean any equipment safely. For a controlled comparison/test, explain the relevant control; for observational inquiry explain consistent recording, and for research explain source choice/reliability. In each case state a relevant limitation and improvement. Complete whole-card equipment/testing checks separately rather than infer them from research alone. A surprising result is legitimate; no manufactured confusion/distress.",
       "positiveEvidence": "The method fits the question; actual data, observation and interpretation are distinguishable and support a bounded answer.",
       "nearMiss": "A memorised fact presented as an investigation, changing everything at once, adult-only equipment use or a post-hoc “prediction”.",
-      "transfer": "Use a changed sample/question and justify a method/control/improvement.",
+      "transfer": "Use a changed sample/question and justify the chosen method. Explain a control for a controlled comparison/test, consistent recording for observation, or source choice/reliability for research, with an appropriate limitation/improvement.",
       "sourceConditions": {
         "actualQuestionMethodDataAnswer": true,
         "independentOrGroup": true,
         "simpleEquipmentActual": true,
         "safetyAndCleanup": true,
-        "unexpectedResultAllowed": true
+        "unexpectedResultAllowed": true,
+        "methodSpecificEvaluation": {
+          "controlledComparisonTest": "relevant control",
+          "observation": "consistent recording and limitation",
+          "research": "identified reliable sources and limitation",
+          "universalControlledExperimentRequired": false
+        }
       },
       "evidenceStatus": "Original untested source-fit authoring design; no learner observations, intervention efficacy or whole-topic certification."
     },
@@ -917,7 +923,13 @@
           "independentOrGroup": true,
           "simpleEquipmentActual": true,
           "safetyAndCleanup": true,
-          "unexpectedResultAllowed": true
+          "unexpectedResultAllowed": true,
+          "methodSpecificEvaluation": {
+            "controlledComparisonTest": "relevant control",
+            "observation": "consistent recording and limitation",
+            "research": "identified reliable sources and limitation",
+            "universalControlledExperimentRequired": false
+          }
         }
       }
     },
