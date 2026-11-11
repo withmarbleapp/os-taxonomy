@@ -20,7 +20,7 @@
     "ncert-ncfse-2023-ed2024"
   ],
   "counts": {
-    "topics": 1902,
+    "topics": 1904,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
@@ -32,23 +32,23 @@
       "Personal & Social Development": 123,
       "Science": 577,
       "Physical Education": 7,
-      "Art & Design": 2,
-      "Performing Arts": 3,
+      "Art & Design": 3,
+      "Performing Arts": 4,
       "Français": 4
     },
     "dependencies": 4001,
     "curricula": 19,
     "curriculumStandards": 8313,
-    "topicStandardLinks": 10894,
+    "topicStandardLinks": 10906,
     "clusters": 177,
-    "teachingResearch": 1087,
+    "teachingResearch": 1089,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 4787
+    "curriculumAlignments": 4796
   },
   "files": {
     "topics.json": {
-      "bytes": 2696173,
-      "sha256": "6fc56674ef7ee2568d69f90368039eaf485def7921c83226932b00c25b2cde13"
+      "bytes": 2700637,
+      "sha256": "52e62f6db225b433af9297212960cbded4b4f7fb961af70cc07c6a7db76cfd91"
     },
     "dependencies.json": {
       "bytes": 878372,
@@ -63,16 +63,16 @@
       "sha256": "4e112dd2fc3373666d9f33e7a0314798f282b67b650063ec5afeb69b7af5dbc3"
     },
     "teaching-research.json": {
-      "bytes": 23819058,
-      "sha256": "479e8d39a0b83d12c889babb3e524e85e91680c4e5ee37fe97c60a7210c62981"
+      "bytes": 23850016,
+      "sha256": "ecd7f04a4154b121a8da9bed9ff186ec409439abf17029db6d7ef7103a4594f0"
     },
     "archived-teaching-research.json": {
       "bytes": 121411,
       "sha256": "28cc37220a78bdbfb37bd5693e8b729571e87c5d0ba471692707a07a7ef6c73f"
     },
     "curriculum-alignments.json": {
-      "bytes": 1583666,
-      "sha256": "2106b0f92c1c9b38d7e2726c9cb2a45deef3fa31f0943bc0711868f76f58f9e3"
+      "bytes": 1586358,
+      "sha256": "f058e882a07e1e4c03fae31005300012c5d0533590176b2b5e9f985644b18dc5"
     }
   },
   "excluded": [
@@ -83,10 +83,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "6fc56674ef7ee2568d69f90368039eaf485def7921c83226932b00c25b2cde13",
+    "topicFileSha256": "52e62f6db225b433af9297212960cbded4b4f7fb961af70cc07c6a7db76cfd91",
     "coverage": {
-      "topicCount": 1902,
-      "withResearch": 1087,
+      "topicCount": 1904,
+      "withResearch": 1089,
       "withoutResearch": 815,
       "bySubject": {
         "Computing": {
@@ -140,13 +140,13 @@
           "withoutResearch": 0
         },
         "Art & Design": {
-          "topics": 2,
-          "withResearch": 2,
+          "topics": 3,
+          "withResearch": 3,
           "withoutResearch": 0
         },
         "Performing Arts": {
-          "topics": 3,
-          "withResearch": 3,
+          "topics": 4,
+          "withResearch": 4,
           "withoutResearch": 0
         },
         "Français": {
