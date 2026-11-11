@@ -26,6 +26,10 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       const target = report.preparedCases?.[ref];
       assert.ok(target && Object.keys(target).length, 'Missing actual case packet');
     }
+    if (row.code === 'ON-SCI-2022-G5-C2.7') {
+      const actualPhases = new Set(protocol.caseRefs.map(ref => report.preparedCases[ref].phase));
+      assert.deepEqual([...actualPhases].sort(), ['gas', 'liquid', 'solid'], 'Missing required state application');
+    }
     if (row.disposition === 'Full') assert.deepEqual(row.remainingConditions, [], 'Unresolved Full condition');
   }
 }
@@ -44,5 +48,15 @@ test('Grade 5 CDE rejects a missing concrete gas or freezing case', () => {
     const damaged = structuredClone(load(`reports/${name}`));
     delete damaged.preparedCases[caseId];
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing actual case packet/);
+  }
+});
+
+
+test('Grade 5 C2.7 cannot omit all liquid or gas applications while retaining Full', () => {
+  const name = 'ontario-grade5-material-property-applications-design-2026-11-11.json';
+  for (const phase of ['liquid', 'gas']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocol.caseRefs = damaged.protocol.caseRefs.filter(ref => damaged.preparedCases[ref].phase !== phase);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required state application/);
   }
 });
