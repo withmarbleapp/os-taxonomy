@@ -73,6 +73,12 @@ function check(pkgs = packages, associations = contexts, dependencies = edges) {
     });
   }
   const d = pkgs['materials-structures'].report;
+  const model = d.protocols['D2.2'].modelCreationTask;
+  assert.ok(model?.problem?.trim() && model.changedCase?.trim(), 'Missing own support model performance');
+  assert.equal(d.preparedCases['load-support-and-fasteners'].ownModelTaskReference, '/protocols/D2.2/modelCreationTask', 'Missing own model performance binding');
+  assert.deepEqual(model.learnerActions?.map(action => action.operation), ['create-own-support-model', 'explain-shape-support-function', 'relate-model-to-problem', 'revise-own-model-for-changed-support'], 'Own model creation, explanation and revision required');
+  assert.ok(model.learnerActions.every(action => action.instruction?.trim()), 'Missing actual own model instruction');
+  assert.deepEqual(model.requiredEvidence, ['learner-created-support-model', 'shape-or-framework-function-explanation', 'connection-to-toy-support-problem', 'own-model-changed-case-revision'], 'Own model evidence weakened');
   assert.deepEqual(d.protocols['D1.1'].requiredTaskComponents, ['identify-waste-kinds', 'plan', 'carry-out', 'explain-each'], 'Waste task must include actual action');
   assert.deepEqual(d.preparedCases['safe-paper-action'].requiredTaskComponents, d.protocols['D1.1'].requiredTaskComponents, 'Actual action case must be bound');
   assert.equal(d.preparedCases['safe-paper-action'].requiresActualEnactment, true, 'Plan alone cannot replace actual action');
@@ -128,4 +134,26 @@ test('a daily/seasonal overall cannot omit a domain portfolio or promote the cau
   assert.throws(() => check(pkgs), /Missing required task role/);
   const cause = structuredClone(packages); cause['daily-seasonal'].ledger.expectations.find(row => row.code.endsWith('-E2.1')).disposition = 'Full';
   assert.throws(() => check(cause), /Assertion|seasonal cause/);
+});
+
+test('D2.2 cannot become recognition-only or lose its independently bound own-model performance', () => {
+  for (const mutation of ['recognition-only', 'performance', 'binding', 'creation', 'revision']) {
+    const pkgs = structuredClone(packages); const report = pkgs['materials-structures'].report;
+    const originalQuestions = report.preparedCases['load-support-and-fasteners'].question;
+    if (mutation === 'recognition-only') {
+      // Remove only the own-model instruction; keep all recognition/fastener questions intact.
+      const start = originalQuestions.indexOf('Create your OWN simple sketch');
+      const end = originalQuestions.indexOf('Identify each fastener', start);
+      assert.ok(start > 0 && end > start);
+      report.preparedCases['load-support-and-fasteners'].question = originalQuestions.slice(0, start) + originalQuestions.slice(end);
+      assert.ok(report.preparedCases['load-support-and-fasteners'].question.startsWith(originalQuestions.slice(0, start)));
+      assert.ok(report.preparedCases['load-support-and-fasteners'].question.endsWith(originalQuestions.slice(end)));
+      delete report.protocols['D2.2'].modelCreationTask;
+    }
+    if (mutation === 'performance') delete report.protocols['D2.2'].modelCreationTask;
+    if (mutation === 'binding') delete report.preparedCases['load-support-and-fasteners'].ownModelTaskReference;
+    if (mutation === 'creation') report.protocols['D2.2'].modelCreationTask.learnerActions.shift();
+    if (mutation === 'revision') report.protocols['D2.2'].modelCreationTask.requiredEvidence.pop();
+    assert.throws(() => check(pkgs), /own support model|own model|Own model/);
+  }
 });

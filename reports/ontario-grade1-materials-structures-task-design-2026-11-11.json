@@ -82,7 +82,8 @@
       "resourceRefs": [
         "iop-pin",
         "school-glue"
-      ]
+      ],
+      "ownModelTaskReference": "/protocols/D2.2/modelCreationTask"
     },
     "material-fibre-origin": {
       "role": "raw-source-and-whole-fibre-distinction",
@@ -241,7 +242,36 @@
         "Elicit an independent explanation/comparison and actually witness any required action or own model. Record what occurred at delivery; these authoring cases do not claim a child has performed them.",
         "Apply the near-miss and changed-condition task. Keep complete whole contributor mastery, inherited readiness and real observation/performance distinct from source-task component evidence."
       ],
-      "remainingConditions": []
+      "remainingConditions": [],
+      "modelCreationTask": {
+        "problem": "Create your own simple sketch, drawing or card model of a small stand that supports a light toy above the table. Show the toy load, supporting top and framework/base.",
+        "learnerActions": [
+          {
+            "operation": "create-own-support-model",
+            "instruction": "Independently create the support sketch or model. Pointing to, tracing or copying an authored chair/shelter picture is not this performance."
+          },
+          {
+            "operation": "explain-shape-support-function",
+            "instruction": "Point to a chosen shape or structural feature and explain how it helps support the toy; identify the load and supporting framework rather than merely name a part."
+          },
+          {
+            "operation": "relate-model-to-problem",
+            "instruction": "Explain how the created model addresses the actual toy-above-table problem, connecting its represented supports to the real purpose."
+          },
+          {
+            "operation": "revise-own-model-for-changed-support",
+            "instruction": "Apply the supplied missing-connection change to your own model. Revise its support arrangement as needed and explain how the changed shape or structure restores the intended support; do not replace this with a description of an authored model."
+          }
+        ],
+        "changedCase": "A supporting connection between the top and the base in the proposed model is no longer present. Show how this affects your model’s support idea, then revise it and explain the change. No prediction that every real structure must collapse is required.",
+        "requiredEvidence": [
+          "learner-created-support-model",
+          "shape-or-framework-function-explanation",
+          "connection-to-toy-support-problem",
+          "own-model-changed-case-revision"
+        ],
+        "limits": "This is the existing Modelling with Sketches performance applied to the source task. No quantitative force calculation, independent building/testing cycle or mastery of unrelated design repertoires is added."
+      }
     },
     "D2.7": {
       "codes": [
