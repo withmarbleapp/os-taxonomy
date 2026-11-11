@@ -30,6 +30,21 @@ function check(rows, associations, readReport = name => load(`reports/${name}`))
       for (const sourceRef of target.sourceRefs ?? []) assert.ok(report.resources?.[sourceRef]?.url, 'Missing case source');
     }
     assert.ok(protocol.caseRefs?.length > 0, 'Missing prepared cases');
+    if (['ON-SCI-2022-G5-D1', 'ON-SCI-2022-G5-D1.1', 'ON-SCI-2022-G5-D1.2'].includes(row.code)) {
+      const cases = protocol.caseRefs.map(ref => report.preparedCases[ref]);
+      if (row.code !== 'ON-SCI-2022-G5-D1.2') {
+        for (const kind of ['natural-effects', 'built-effects']) assert.ok(cases.some(value => value.caseKind === kind), 'Missing natural/built structural effects');
+        for (const value of cases.filter(value => value.caseKind.endsWith('-effects'))) {
+          for (const field of ['forceAndEffect', 'society', 'environment', 'method', 'limit']) assert.ok(value[field]?.trim(), 'Missing structural consequence or mitigation');
+        }
+      }
+      if (row.code !== 'ON-SCI-2022-G5-D1.1') {
+        for (const setting of ['urban', 'rural', 'remote']) assert.ok(cases.some(value => value.communitySetting === setting), 'Missing community setting');
+        for (const value of cases.filter(value => value.caseKind === 'method-setting')) {
+          for (const field of ['forceAndEffect', 'method', 'suitability', 'constraint']) assert.ok(value[field]?.trim(), 'Missing method-setting justification');
+        }
+      }
+    }
     if (['ON-SCI-2022-G5-E2.2', 'ON-SCI-2022-G5-E2.4'].includes(row.code)) {
       for (const ref of ['bounded-total', 'actual-safe-observation', 'device-and-brakes', 'perpetual-useful-machine']) {
         assert.ok(protocol.caseRefs.includes(ref), 'Missing whole conservation/dissipation case');
@@ -172,4 +187,19 @@ test('Grade 5 energy cannot lose the perpetual-useful-machine or external-bounda
     for (const protocol of Object.values(damaged.protocols)) protocol.caseRefs = protocol.caseRefs.filter(id => id !== ref);
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing whole conservation\/dissipation case/);
   }
+});
+
+test('Grade 5 hazard analysis cannot lose natural effects or remote method justification', () => {
+  const name = 'ontario-grade5-structural-hazard-methods-design-2026-11-11.json';
+  const missingNatural = structuredClone(load(`reports/${name}`));
+  for (const protocol of Object.values(missingNatural.protocols)) protocol.caseRefs = protocol.caseRefs.filter(ref => missingNatural.preparedCases[ref].caseKind !== 'natural-effects');
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missingNatural : load(`reports/${report}`)), /Missing natural\/built structural effects/);
+  for (const field of ['suitability', 'constraint']) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    delete damaged.preparedCases['remote-method'][field];
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing prepared task duty|Missing method-setting justification/);
+  }
+  const missingRemote = structuredClone(load(`reports/${name}`));
+  for (const protocol of Object.values(missingRemote.protocols)) protocol.caseRefs = protocol.caseRefs.filter(ref => missingRemote.preparedCases[ref].communitySetting !== 'remote');
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? missingRemote : load(`reports/${report}`)), /Missing community setting/);
 });

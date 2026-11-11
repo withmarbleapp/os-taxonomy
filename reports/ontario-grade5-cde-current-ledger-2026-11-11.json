@@ -3,12 +3,12 @@
   "date": "2026-11-11",
   "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
   "scope": "Grade 5 Science C/D/E only; all 31 source records read, 9 historical Full judgments retained and 22 prior Partials reviewed incrementally. A/common and B/health are outside this child.",
-  "status": "Fourteen prior residuals resolved through source-fit authoring designs; remaining hazard and integrated energy closure continues.",
+  "status": "Seventeen prior residuals resolved through source-fit authoring designs; integratedD2 and remainingenergy closure continue.",
   "counts": {
     "selected": 31,
     "historicalFullRetained": 9,
-    "freshResolvedFull": 14,
-    "remainingPartial": 8
+    "freshResolvedFull": 17,
+    "remainingPartial": 5
   },
   "expectations": [
     {
@@ -168,41 +168,46 @@
       "code": "ON-SCI-2022-G5-D1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Child associations do not automatically certify the integrated overall account."
-      ]
+      "disposition": "Full",
+      "reviewBasis": "Fresh source-backed force/effect and method-setting portfolio; integrated overall adds actual social/environmental reasoning, not child-link rollup.",
+      "contributingTopicIds": [
+        "mt_NVr4AhsvIq",
+        "mt_iiUdDUEEGY",
+        "mt_wf-SJhZ1kC",
+        "mt_yDZbQODIwp"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-structural-hazard-methods-design-2026-11-11.json",
+      "protocolReference": "/protocols/D1"
     },
     {
       "code": "ON-SCI-2022-G5-D1.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh source-backed force/effect and method-setting portfolio; integrated overall adds actual social/environmental reasoning, not child-link rollup.",
       "contributingTopicIds": [
         "mt_NVr4AhsvIq",
         "mt_iiUdDUEEGY",
         "mt_wf-SJhZ1kC"
       ],
-      "remainingConditions": [
-        "Analyse relevant natural structures as well as built structures and relate the effects to forces. A weather hazard name alone is insufficient."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-structural-hazard-methods-design-2026-11-11.json",
+      "protocolReference": "/protocols/D1.1"
     },
     {
       "code": "ON-SCI-2022-G5-D1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "reviewBasis": "Historical whole-clause judgment retained; fresh residual/task review pending.",
+      "disposition": "Full",
+      "reviewBasis": "Fresh source-backed force/effect and method-setting portfolio; integrated overall adds actual social/environmental reasoning, not child-link rollup.",
       "contributingTopicIds": [
         "mt_iiUdDUEEGY",
         "mt_yDZbQODIwp"
       ],
-      "remainingConditions": [
-        "Assess the methods across checked urban, rural and remote settings; location labels alone are not evidence of suitability or access."
-      ]
+      "remainingConditions": [],
+      "dossier": "ontario-grade5-structural-hazard-methods-design-2026-11-11.json",
+      "protocolReference": "/protocols/D1.2"
     },
     {
       "code": "ON-SCI-2022-G5-D2",
