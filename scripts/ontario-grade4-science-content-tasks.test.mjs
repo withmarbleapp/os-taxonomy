@@ -22,6 +22,9 @@ function check(rows, associations = contexts, read = name => load(`reports/${nam
     for (const id of row.contributingTopicIds) assert.ok(associations.some(context => context.topicId === id && context.country === 'CA' && context.region === 'Ontario' && context.ageRangeStart === 9 && context.ageRangeEnd === 10 && context.standards.includes(row.key)), 'Missing actual source association');
     assert.ok(protocol.caseRefs?.length && protocol.actions?.length >= 4 && protocol.actions.every(value => typeof value === 'string' && value.trim()), 'Missing concrete task actions');
     const propertyRoles = {
+      'ON-SCI-2022-G4-C1': ['societal-light-sound', 'societal-sound', 'environment-light', 'environment-sound'],
+      'ON-SCI-2022-G4-C1.1': ['societal-light-sound', 'societal-sound'],
+      'ON-SCI-2022-G4-C1.2': ['environment-light', 'environment-sound'],
       'ON-SCI-2022-G4-C2': ['light-paths', 'light-absorption', 'sound-wave', 'sound-interactions', 'sound-modification', 'light-heat', 'light-emission', 'material-interactions', 'sensory-devices'],
       'ON-SCI-2022-G4-C2.1': ['light-emission'],
       'ON-SCI-2022-G4-C2.2': ['light-emission'],
@@ -126,4 +129,16 @@ test('Grade4 mechanism transformations retain actual plane geometry and varied m
     const damaged = structuredClone(load(`reports/${name}`)); damaged.protocols[code].caseRefs = damaged.protocols[code].caseRefs.filter(value => value !== ref);
     assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
   }
+});
+
+
+test('Grade4 impact tasks cannot retain closure with only light or only societal cases', () => {
+  const name = 'ontario-grade4-light-sound-impact-design-2026-11-11.json';
+  for (const [code, ref] of [['C1', 'ship-sound'], ['C1.2', 'firefly-light'], ['C1.1', 'hearing-aid']]) {
+    const damaged = structuredClone(load(`reports/${name}`));
+    damaged.protocols[code].caseRefs = damaged.protocols[code].caseRefs.filter(value => value !== ref);
+    assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required scientific task role/);
+  }
+  const damaged = structuredClone(load(`reports/${name}`)); delete damaged.preparedCases['ship-sound'].changedCase;
+  assert.throws(() => check(ledger.expectations, contexts, report => report === name ? damaged : load(`reports/${report}`)), /Missing required property case evidence/);
 });
