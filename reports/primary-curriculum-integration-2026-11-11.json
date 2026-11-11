@@ -47,6 +47,11 @@
       "scope": "Explicit new-guide provenance precision and original summary correction",
       "head": "d585fcfc90ced8cf433aee95e1675d492808eafb",
       "url": "https://github.com/withmarbleapp/os-taxonomy/tree/d585fcfc90ced8cf433aee95e1675d492808eafb"
+    },
+    {
+      "scope": "Canonical research record order; every payload preserved by ID",
+      "head": "b54392ae922b270e4ab11034abe9dbf7558325c3",
+      "url": "https://github.com/withmarbleapp/os-taxonomy/tree/b54392ae922b270e4ab11034abe9dbf7558325c3"
     }
   ],
   "reviewedSourceScopes": {
@@ -99,7 +104,8 @@
       "newRows": 43,
       "changedOldRows": 4,
       "exactReviewedUnion": true,
-      "stableBaseAndAppendSequence": true
+      "stableBaseAndAppendSequence": false,
+      "explicitCanonicalOrder": "topicId.localeCompare(other.topicId, 'en')"
     },
     "dependencies": {
       "baseRows": 3994,
@@ -154,7 +160,7 @@
       "fail": 0,
       "skipped": 0
     },
-    "exactSourceUnion": "Eight immutable source leaves with one explicitly reviewed source correction: only new-guide timestamp rendering and one summary opening sentence. All other authored payloads, stable order and context/code union remain exact. Catalogue unchanged; archive matches PR114."
+    "exactSourceUnion": "Eight immutable source leaves plus explicit metadata/original-summary and record-order corrections. Complete reviewed payload union by ID, other artifact orders and context/code union checked; research order follows existing exporter convention. Catalogue unchanged; archive matches PR114."
   },
   "remainingWork": [
     "Ontario Social Studies Grade5 historical strand (20 records) and Grade6 continue separately; the Grade5 government strand (21 records) is included here.",
@@ -179,6 +185,7 @@
     "formattingOnlyFields": 60,
     "subMillisecondPrecisionTruncations": 22,
     "summaryOpeningSentencesRewritten": 1,
-    "acceptedGuideTimestampsChanged": 0
+    "acceptedGuideTimestampsChanged": 0,
+    "canonicalRecordOrder": "All1089 records preserved exactly by ID; array sorted under existing exporter convention. Historical source sequences remain in original commits."
   }
 }
