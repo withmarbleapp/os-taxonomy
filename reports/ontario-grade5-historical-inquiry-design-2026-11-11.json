@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "978a80141c00b49013e78f9435b922a2f38e7998",
+  "status": "Five specific inquiry duties have source-fit authoring designs; overallA2 and conclusionA2.5 retain an explicit historical chronology condition. No learner attainment is inferred.",
+  "resources": {
+    "museum-trade": {
+      "url": "https://www.historymuseum.ca/virtual-museum-of-new-france/economic-activities/fur-trade/",
+      "type": "secondary",
+      "originGroup": "museum-trade-synthesis",
+      "selectedFacts": "The selected actual passages describe existing Indigenous trade networks, European demand, reliance on routes/transport knowledge and exchanges. They also describe substantial harms; do not use speculative universal cultural explanations.",
+      "readScope": "Opening and selected networks/market/impact sections, not entire chapter."
+    },
+    "port-royal": {
+      "url": "https://parks.canada.ca/lhn-nhs/ns/portroyal/culture/histoire-history",
+      "type": "secondary",
+      "originGroup": "parks-portroyal-synthesis",
+      "selectedFacts": "The dated 1603 monopoly conditions linked trade, settlement and Christian mission.1604 Saint Croix was followed by 1605 Port-Royal. Mi’kmaq assistance and later 1613 English attack are distinct documented interactions.",
+      "readScope": "Entire main history through line91 read; later 1614 outcome explicitly distinguished."
+    },
+    "qia-iqaluit": {
+      "url": "https://www.qtcommission.ca/en/file-download/download/public/65",
+      "type": "community-authored secondary synthesis incorporating oral records",
+      "originGroup": "qia-community-history",
+      "locator": "Iqaluit printed17–19, Early Contacts; publication 2013/2014",
+      "selectedFacts": "The actual 1576–78 account distinguishes initial exchange, later captivity/conflict, English suspicion and Inuit oral records. Modern town settlement/1850 s whaling are not backdated."
+    },
+    "royal-museum": {
+      "url": "https://www.rmg.co.uk/stories/maritime-history/martin-frobisher-north-west-passage-expedition-1576-78",
+      "type": "secondary",
+      "originGroup": "rmg-exploration-synthesis",
+      "selectedFacts": "The main body identifies route-to-Asia and purported gold motives. Its unqualified claim about kidnapping five sailors must be compared with QIA’s explicitly different account, not accepted as established fact.",
+      "readScope": "Entire short main historical body read."
+    },
+    "quebec1709": {
+      "url": "https://www.historymuseum.ca/teachers-zone/women-of-new-france/catherine-moitie/966/",
+      "type": "primary map with secondary object explanation",
+      "originGroup": "bnf-catalogne 1709-map",
+      "locator": "BnF GE SH18 PF127 DIV2 P2;1709",
+      "selectedFacts": "Actual visually inspected map shows river/colonial long-plot representation; current object explanation supplies water-access interpretation. Separate map date/creator from modern explanation. Not a complete Indigenous-territory/title map."
+    },
+    "parks-land": {
+      "url": "https://parks.canada.ca/lhn-nhs/qc/fortchambly/culture/histoire-history/evenements-events/regime-seigneurial-system",
+      "type": "secondary",
+      "originGroup": "parks-seigneurial-synthesis",
+      "selectedFacts": "Actual New France landholding explanation identifies specified seigneur/habitant responsibilities and the Richelieu-area water-access pattern. The case’s location is distinct from the 1709 near-Québec map."
+    },
+    "mno-mattawa": {
+      "url": "https://www.metisnation.org/news/historic-research-report-on-metis-community-in-mattawanipissing-region-released/",
+      "type": "community-authored research-summary",
+      "originGroup": "mno-mattawa-research-summary",
+      "locator": "10 December 2014",
+      "selectedFacts": "The actual community-research summary identifies distinct interrelated Mattawa/Nipissing population in the early1800 s; it does not establish a pre-1713 Mattawa Métis community."
+    }
+  },
+  "protocols": {
+    "questions": {
+      "codes": [
+        "A2.1"
+      ],
+      "wholeClaim": "mt_FW9_8F52bw",
+      "actions": [
+        "Generate three genuine research questions about these interactions. State whose perspective each question investigates, what the source can reveal and a fact not available from it. Select at least two actual sources for each question; the following models are feasible examples rather than a script that replaces pupil questioning."
+      ],
+      "questionModels": [
+        {
+          "question": "How were trade, settlement and missionary aims related in the selected French enterprise?",
+          "sourceIds": [
+            "museum-trade",
+            "port-royal"
+          ]
+        },
+        {
+          "question": "What kinds of river access mattered in the selected colonial landholding representations, and how do the different locations limit comparison?",
+          "sourceIds": [
+            "quebec1709",
+            "parks-land"
+          ]
+        },
+        {
+          "question": "What purposes and outcomes do the two accounts of Frobisher’s expeditions describe, and what remains disputed?",
+          "sourceIds": [
+            "qia-iqaluit",
+            "royal-museum"
+          ]
+        }
+      ],
+      "success": "Three investigable questions with explicit different perspectives and actual two-source availability; copied labels or an unsupported invented historical voice do not suffice."
+    },
+    "sources": {
+      "codes": [
+        "A2.2"
+      ],
+      "wholeClaim": "mt_FW9_8F52bw",
+      "actions": [
+        "Use both digital and adult-prepared print source selections; include the actual 1709 primary map and explicitly attributed secondary accounts. Take brief organised notes in original words, recording creator/institution, source date, event period/place, perspective, supported fact and uncertainty.",
+        "Produce a short original paragraph synthesising two actual different sources. Do not count two printouts/translations of one underlying source as independent corroboration."
+      ],
+      "success": "Actual gathering, print note organisation and two-source synthesis; the primary map and modern explanation are different source roles, not two independent eyewitness accounts.",
+      "products": [
+        {
+          "id": "organised-print-notes",
+          "kind": "notes",
+          "requiredOperation": "record",
+          "instruction": "Take brief original notes from the actual selected print source and sort facts by creator, period/place, perspective, support and uncertainty."
+        },
+        {
+          "id": "two-source-paragraph",
+          "kind": "paragraph",
+          "requiredOperation": "synthesise",
+          "instruction": "Write an original paragraph combining relevant findings from two actual different sources and explain their distinct source roles."
+        }
+      ]
+    },
+    "maps": {
+      "codes": [
+        "A2.3"
+      ],
+      "wholeClaim": "mt_w4cUnN_SsQ",
+      "actions": [
+        "Analyse the actual 1709 map with its title/date/creator and an adult-selected enlargement. Identify the river/plot relationship and explain what this colonial representation omits.",
+        "Construct an original inquiry map with a key, labels, dated case locations and an explanation of a selected relationship. Use an adult-verified base/locator; distinguish a studied route/location from inferred boundaries, and leave unsupported routes unmarked.",
+        "Retain the whole familiar-environment map operation separately: create a labelled classroom/local-place plan with key and relative landmarks, then use those representation decisions in the inquiry product. Broad historical geography is not certified from copying a ready-made map."
+      ],
+      "success": "Both actual historical-map analysis and pupil map construction; retain whole familiar-map operation, not an image-viewing-only task. No exact old-unit scale conversion, all-Nations boundary inventory or fabricated route is required.",
+      "products": [
+        {
+          "id": "historical-inquiry-map",
+          "kind": "map",
+          "requiredOperation": "construct",
+          "instruction": "Construct an original dated inquiry map with labels, key and supported relationship, using an adult-verified base; explain unknown routes/boundaries rather than invent them."
+        },
+        {
+          "id": "familiar-place-map",
+          "kind": "map",
+          "requiredOperation": "construct",
+          "instruction": "Draw a familiar classroom or local-place map with a key and labels; locate landmarks relative to each other and describe a route."
+        }
+      ]
+    },
+    "evidence": {
+      "codes": [
+        "A2.4"
+      ],
+      "wholeClaim": "mt_wWlZoLQBR6",
+      "actions": [
+        "Make an agreement/disagreement table for the actual QIA and RMG accounts. Identify their shared route/wealth aims and their different treatment of the missing sailors. Explain the role of oral records, later synthesis and unsupported certainty; do not resolve the disagreement by counting websites or choosing the colonial account automatically.",
+        "Use the primary-map/secondary-explanation distinction to separate a visible feature, source-attributed interpretation and unsupported present-day title inference. Explain what additional evidence would be needed."
+      ],
+      "success": "Actual comparison, supported agreement and reasoned uncertainty, with creator/perspective/source vocabulary; supplying a hostile allegation as established fact is a near miss."
+    },
+    "communication": {
+      "codes": [
+        "A2.6"
+      ],
+      "wholeClaim": "mt_FW9_8F52bw",
+      "actions": [
+        "Communicate an original research paragraph and annotated map or oral explanation with source credits and accurate selected historical vocabulary. Explain parties and period, a supported interaction and an important uncertainty to the intended audience.",
+        "Choose terms required by the actual selected cases rather than recite every illustrative word in the curriculum. Source excerpts or modern reconstructions are labelled by their actual role."
+      ],
+      "success": "Original, source-based communication in an appropriate format; two-source synthesis and vocabulary are used to convey the inquiry, not an unsupported imagined diary."
+    },
+    "conclusions": {
+      "codes": [
+        "A2",
+        "A2.5"
+      ],
+      "wholeClaim": "mt_7VrR1GzhrN",
+      "actions": [
+        "Draw an evidence-based conclusion answering the chosen question and explicitly compare the parties’ supported perspectives. Explain what additional evidence could clarify a limited uncertainty and propose a targeted improvement to source selection.",
+        "Original fictional transfer: a new French trader wants to move a heavy load of furs through unfamiliar waterways and portages. The source packet has established reliance on Indigenous route knowledge and suitable transport. Predict a likely need or difficulty and explain which actual findings support it; the scenario does not establish a real incident or guarantee that a particular community agreed to help.",
+        "Keep the actual later Mattawa/Nipissing Métis emergence explicit. Do not invent a pre-1713 Mattawa community to fill a source list."
+      ],
+      "status": "Partial pending precise source-fit resolution of the source’s all-peoples/period wording, including later Métis ethnogenesis.",
+      "success": "A complete report/conclusion/prediction/improvement operation can be designed without irrelevant quantitative charts; readiness for the existing data-presentation hard path is a separate prerequisite condition."
+    }
+  },
+  "wholeContributorIds": [
+    "mt_FW9_8F52bw",
+    "mt_w4cUnN_SsQ",
+    "mt_wWlZoLQBR6",
+    "mt_7VrR1GzhrN"
+  ],
+  "readiness": "Retain complete contributor claims and their existing hard prerequisites. No source link, age band or brief component exercise certifies prior learner mastery. Do not manufacture a graph to satisfy a historical inquiry example.",
+  "remainingSourceCondition": "A2 overall/A2.5 explicitly retain the period/Métis chronology question until resolved; the five specific inquiry duties are independently reviewable and not blocked by that factual ambiguity.",
+  "authoringVsAttainment": "This is a prepared task/source protocol, not observation of real children or a claim anyone has passed."
+}
