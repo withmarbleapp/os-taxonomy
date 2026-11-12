@@ -67,6 +67,14 @@ unestablished pending the current-source completeness audit.
   pairs, with actual personal/household assessment and planning resources plus
   natural/built water-source assessment. Combined proposed Ontario totals:
   2,380 Full / 86 Partial, including 42 Science Partials.
+- Ontario six-machine repertoire: one reusable conceptual topic and guide cover
+  recognition, working features, everyday functions and bounded countercases.
+  Whole-claim reuse failed against the broader existing mechanism and force
+  claims; none is narrowed or age-lowered. Three further source closures and
+  five component pairs include an independent overall assessment. Combined
+  proposed totals: 2,383 Full / 83 Partial, including 39 Science Partials.
+  The new topic starts only at its supported Ontario 7–8 interval and has no
+  invented hard prerequisites. All old claims, intervals and guides remain exact.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are

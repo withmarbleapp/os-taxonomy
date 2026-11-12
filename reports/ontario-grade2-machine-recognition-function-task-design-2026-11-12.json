@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed source-authoring portfolio and one new portable conceptual claim; no delivery, efficacy or learner attainment claim.",
+  "acceptedMain": "df2d6ae43c45d75e8018252b18ae009a803fc984",
+  "preparationBase": "6654f54",
+  "newTopicId": "mt_vjMAN6sb7z",
+  "newWholeCard": {
+    "id": "mt_vjMAN6sb7z",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Forces & Motion",
+    "name": "Simple machine arrangements and everyday uses",
+    "description": "Recognise the six conventional simple-machine arrangements—lever, inclined plane, wedge, pulley, wheel and axle, and screw—from their working features, and explain an appropriate everyday function for each. Distinguish an arrangement from the whole object containing it and recognise that the benefit depends on the arrangement; a simple machine need not contain a motor or always reduce the required force.",
+    "centrality": 0,
+    "evidence": [
+      "Independently name all six arrangements from varied clear pictures or models and point to the defining feature: turning bar/support, sloping travel surface, tapering separating piece, guided rope/wheel, rigidly connected wheel/shaft, and spiral thread.",
+      "For each category, describe an accurate everyday use and connect the working arrangement to what it helps people do. A list of six tool names without functions is insufficient.",
+      "Classify fresh clearly depicted cases by their working features rather than colour, position or presence of an electric motor. Explain when an object contains more than one arrangement or its description is insufficient instead of forcing an unsupported single label.",
+      "Explain the bounded countercases that a fixed pulley changes pulling direction without automatically halving force, and that changing a lever arrangement can change its benefit. Qualitative explanation is enough; no gear ratios, moment formula, numerical mechanical advantage or formal energy vocabulary gate."
+    ],
+    "assessmentPrompt": "After studying all six, can {{name}} identify each arrangement in a fresh set, show its working feature and explain a suitable everyday use? Can they say why a fixed rope wheel can help by changing direction without claiming it always makes the load easier to lift, and why a complex tool can contain several arrangements?",
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.3",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D2.4"
+    ],
+    "ageRangeStart": 7,
+    "ageRangeEnd": 8
+  },
+  "categorySet": [
+    "lever",
+    "inclined plane",
+    "wedge",
+    "pulley",
+    "wheel and axle",
+    "screw"
+  ],
+  "claimEvidenceRegistry": [
+    "six-names-and-working-features",
+    "all-six-everyday-functions",
+    "fresh-feature-based-compound-limited-view-transfer",
+    "fixed-pulley-and-changed-lever-boundaries"
+  ],
+  "initialContext": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageRange": [
+      7,
+      8
+    ],
+    "noUnsupportedGlobalOffer": true
+  },
+  "newComponentPairs": [
+    {
+      "topicId": "mt_vjMAN6sb7z",
+      "code": "D2",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_vjMAN6sb7z",
+      "code": "D2.3",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_vjMAN6sb7z",
+      "code": "D2.4",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_B3W5EfimJw",
+      "code": "D2",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_Dg5lQZFpav",
+      "code": "D2",
+      "role": "component"
+    }
+  ],
+  "newHardPrerequisites": [],
+  "whyNoHardPrerequisite": "The full old strength/direction, gear or technical-vocabulary repertoires are not logically required before every recognition/function task; ordinary working relations are taught in the new guide.",
+  "sourceProtocol": {
+    "D2": {
+      "independentOverallNotChildCount": true,
+      "requiresIndependentPerformance": true,
+      "task": "Independently describe more than one way a small object can move or be repositioned from a marked start to a higher destination; distinguish its movement from its resulting position. Choose two different machine arrangements from the actual direct-lift/ramp/lever/pulley cards, explain their distinct contribution and compare each with direct lift using the explicitly supplied matched-load/height data. Explain the fixed-pulley direction-only and changed-lever countercases. Transfer to another everyday category/use and justify a changed route/arrangement choice. A learner explanation/model is required; six labels or child counts alone do not pass. Supplied model interpretation is not learner observation or whole practical Testing mastery.",
+      "requiredEvidence": [
+        "movement-and-position",
+        "two-machine-contributions",
+        "with-without-comparison",
+        "fixed-pulley-changed-lever",
+        "new-use-and-changed-case"
+      ],
+      "contributorIds": [
+        "mt_vjMAN6sb7z",
+        "mt_B3W5EfimJw",
+        "mt_Dg5lQZFpav"
+      ],
+      "wholeTopicAwardFromSourceTaskAlone": false
+    },
+    "D2.3": {
+      "requiresIndependentPerformance": true,
+      "allSixRequired": true,
+      "task": "Hide names/captions and use the actual fresh neutral-letter six-arrangement SVG. Independently name every category, point to working features and justify fresh classifications.",
+      "contributorIds": [
+        "mt_vjMAN6sb7z"
+      ],
+      "wholeTopicAwardFromSourceTaskAlone": false
+    },
+    "D2.4": {
+      "requiresIndependentPerformance": true,
+      "allSixRequired": true,
+      "task": "Independently give an accurate everyday use for each of six categories, connecting the arrangement to its purpose/benefit; a list of tool names or copied teaching captions is insufficient.",
+      "contributorIds": [
+        "mt_vjMAN6sb7z"
+      ],
+      "wholeTopicAwardFromSourceTaskAlone": false
+    }
+  },
+  "studyAssets": [
+    "reports/assets/ontario-grade2-machines/six-machine-resource.html",
+    "reports/assets/ontario-grade2-machines/six-machine-study.svg",
+    "reports/assets/ontario-grade2-machines/independent-six-arrangements.svg"
+  ],
+  "freshAssessmentTeacherKey": {
+    "A": "lever",
+    "B": "inclined plane",
+    "C": "wedge",
+    "D": "pulley",
+    "E": "wheel and axle",
+    "F": "screw"
+  },
+  "oldForceResource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+  "actualFreshSvgVisuallyVerified": true,
+  "wholeExistingClaimsPreserved": [
+    "Levers/Pulleys/Gears retains actual effort-distance and gears.",
+    "Force vocabulary retains contact/non-contact and all its specific terms.",
+    "Force/Motion vocabulary retains resultant/acceleration/moment/advantage.",
+    "Pushes/Pulls retains full actual strength/direction motion account.",
+    "Movement properties retains own size/shape/material comparisons.",
+    "Testing retains actual goal/predict/test/record/change/retest loop."
+  ],
+  "historicalD2_1D2_2NotRecertified": true,
+  "oldGuideFlagsRetained": true,
+  "reuseDistinction": "Six-category recognition/functions is not an easier gear/measurement level: successful old complete claims can omit wedge/screw/wheel-axle categories; successful six-category classification can omit gears/technical-force vocabulary/actual investigation. No old scope is narrowed.",
+  "publicationBoundary": "One original whole claim/guide and source-authoring protocols only; no learner migration/reset, compatibility operation or downstream publication.",
+  "reconciledBaseScope": "Consolidated machine4, India reasoning/C6 and water2 preserved; Hardware/software generated end11 and all old authored contexts retained."
+}
