@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "status": "Reviewed authoring decision, submitted for repository review",
+  "acceptedBase": "33eda30b1b35123dd04f3932aedaf2bd6f94d057",
+  "scope": "NCERT national-framework primary baseline plus applicable CBSE primary additions; configurable language/material programmes, not every named-language variant simultaneously",
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "stageEndNotRepeatedPerGrade": true,
+  "excluded": [
+    "actual PE duties",
+    "VI+ authoring",
+    "SCERT-specific/state-board programmes",
+    "CISCE"
+  ],
+  "acceptedCoverageDelta": {
+    "selectedNCERTFull": 444,
+    "selectedNCERTPartial": 4,
+    "selectedNCERTEligible": 521,
+    "selectedNCERTChanged": false,
+    "CBSECTAISupplementClassesIIITOV": {
+      "selectedOverlappingHierarchicalPositions": 21,
+      "acceptedFull": 1,
+      "acceptedLinked": 1,
+      "unreviewedPositions": 20
+    },
+    "overallIndiaDenominator": null,
+    "overallCBSEPrimaryDenominator": null
+  },
+  "formalSourceInventoryDiagnostic": {
+    "meaning": "Subset of the selected baseline, not a replacement headline national denominator; overlapping goals/competencies and applicable alternatives retained",
+    "foundationalRecords": 82,
+    "preparatoryCoreRecords": 91,
+    "preparatoryArtsPERecords": 81,
+    "total": 254,
+    "dispositions": {
+      "Full": 169,
+      "SkillWithContextualEngagement": 21,
+      "ContextualAffectiveRequirement": 5,
+      "ConditionalLanguageBinding": 10,
+      "Partial": 4,
+      "ContextualReadingEngagement": 5,
+      "OutOfScope": 33,
+      "ConditionalArtFormBinding": 4,
+      "ConditionalGraphRepresentation": 3
+    },
+    "eligibleAfterActualPEExclusions": 221,
+    "exclusions": 33
+  },
+  "languageDecision": {
+    "mandatoryNamedNationalPair": null,
+    "requiredFrameworkRoles": [
+      "R1",
+      "R2"
+    ],
+    "namedEnglishSelectionAlreadyAccepted": "Retained within selected baseline; no universal national English-only response or fixed role assignment inferred",
+    "Hindi2025": {
+      "printedPositions": 83,
+      "grade1": 41,
+      "grade2": 42,
+      "sourcePdfPages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "canonicalLanguageReadback": "Pending",
+      "scope": "Hindi-script source rendition; target language is not explicitly named in its header, so exact programme applicability remains unverified",
+      "publicIdentitiesAdded": 0,
+      "targetLanguage": null,
+      "scriptDoesNotDetermineProgramme": true
+    },
+    "Urdu2025": {
+      "rawBulletMarkers": 49,
+      "provisionalOutcomeCandidates": 47,
+      "confirmedFinalRecordCount": null,
+      "confirmedPerGradeCounts": null,
+      "sourcePdfPages": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "blockers": [
+        "Canonical wording",
+        "Parenthetical segmentation",
+        "Printed grade headers without numerals"
+      ],
+      "scope": "Neutral outcome columns pending source-accurate metadata, not automatically Hindi/English translation",
+      "publicIdentitiesAdded": 0
+    },
+    "conditions": [
+      "Applicable accessibility and exemption provisions retained",
+      "Very unfamiliar R2 may remain emergent at Foundational stage end under the formal source footnote",
+      "R1/R2 are roles; shared operations do not establish automatic cross-language mastery"
+    ]
+  },
+  "sourceLayers": [
+    {
+      "source": "ncert-ncfse-2023-ed2024",
+      "treatment": "Formal stage requirements; curricular-area inventory bounded, applicable alternatives retained"
+    },
+    {
+      "source": "ncert-fs-2025",
+      "treatment": "Suggestive contextualisable grade/programme outcomes; selected316 retained, variants independently verified before any extension; no automatic denominator change"
+    },
+    {
+      "source": "current-primary-textbooks",
+      "treatment": "Selected programme/material placement and assessment evidence; not one standard per exercise or translation"
+    },
+    {
+      "source": "ncert-elementary-learning-outcomes-2017",
+      "treatment": "304 older reference positions; current individual applicability unverified, neither declared repealed nor cumulative current obligations"
+    },
+    {
+      "source": "CBSE-primary-implementation",
+      "treatment": "Language-role, artproject/resource and transition duties; do not clone NCERT"
+    },
+    {
+      "source": "cbse-ctai-2026",
+      "treatment": "Distinct III–V supplement: 21 hierarchical positions, not overall CBSE"
+    }
+  ],
+  "officialSupport": [
+    {
+      "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+      "edition": "October 2024 printed",
+      "locator": "Part A 1.4, printed 13–14",
+      "supports": "Primary developmental domains and Preparatory area boundary, including TWAU work"
+    },
+    {
+      "url": "https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf",
+      "locator": "PDF 4–5 / printed 2–3",
+      "supports": "Integrated I/II learning, stage competencies and suggestive contextualisable outcomes"
+    },
+    {
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2025/30_Circular_2025.pdf",
+      "locator": "PDF 1–4, sections 1–3 and 5",
+      "sha256": "6ca09e9afbb0bba067cc185b4dfb3132888d591a17dec6c23d6e6a67ae802b7a",
+      "supports": "Role-based language implementation, learner language/resource mapping; named books as resources"
+    },
+    {
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2025/48_Circular_2025.pdf",
+      "locator": "PDF 1–2",
+      "supports": "Publication release and Grade V resources, not a national language pair"
+    },
+    {
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/17_Circular_2026.pdf",
+      "locator": "Subject and operative page 1",
+      "supports": "R3 begins Class VI; no primary extension"
+    },
+    {
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/49_Circular_2026.pdf",
+      "locator": "PDF 1–4, operative class sections A–D and exemptions",
+      "sha256": "34d6cb3890191dde8c46317e8fe55d3525a13ce5ac76b20d471d06c2d532ad99",
+      "supports": "Later language implementation class sections address VI–X; no new primary R3 requirement inferred",
+      "verification": "Official PDF captured with normal verified TLS; operative pages read back"
+    }
+  ],
+  "barriers": [
+    "Complete four baseline Partial language clauses and actual role bindings",
+    "Independent Hindi 83-position canonical readback and printed anomaly review",
+    "Urdu canonical wording, segmentation and grade-header resolution",
+    "Selected current material and assessment bindings",
+    "Applicable arts/current project and wellbeing boundaries",
+    "One baseline music source uncertainty and 2017 individual applicability where used",
+    "Twenty remaining CT/AI supplement records, including genuine computer procedures"
+  ],
+  "newTopics": 0,
+  "newAssociations": 0,
+  "catalogueChanges": 0,
+  "coveragePromotion": false
+}

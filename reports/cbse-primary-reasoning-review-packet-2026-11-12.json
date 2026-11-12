@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "baseCommit": "ba755361f9a047c0889cc8ff428eceef9fa45fc9",
-  "status": "Authorized local source-authoring proposal; three Full dispositions, peer review pending",
+  "baseCommit": "228e7421ed75e35e1a5a0fc91acb4884838ca086",
+  "status": "Authorized local source-authoring proposal; three Full dispositions, independent peer no substantive blocker",
   "scope": "CBSE CT/AI supplement (Classes III–V) only",
   "selectedCompetencies": [
     "C-1",
@@ -115,17 +115,16 @@
   "progress": {
     "acceptedBaseSelectedNCERTFull": 444,
     "selectedNCERTEligible": 521,
-    "acceptedBaseCTAISupplementFull": 1,
+    "acceptedBaseCTAISupplementFull": 2,
     "selectedCTAIHierarchicalPositions": 21,
-    "separateC4Proposal": 1,
+    "separateC4Proposal": 0,
     "thisProposal": 3,
     "overallIndiaDenominator": null,
     "overallCBSEPrimaryDenominator": null,
-    "proposedFullAfterThisSliceOnAcceptedBase": 4,
-    "proposedFullIfSeparateC4Accepted": 5
+    "proposedFullAfterThisSliceOnAcceptedBase": 5,
+    "acceptedC4ViaPR158": 1
   },
   "remaining": [
-    "Independent peer semantic review",
     "Reconcile actual accepted main at PR handoff; no new PR while158/159open",
     "C6 actual computer performance and operational/path review",
     "Whole goals and graded parent independent review",
@@ -188,5 +187,10 @@
       "residualKind": "none",
       "interpretation": "Complete proposed source authoring design, not observed learner attainment or whole-topic certification"
     }
-  ]
+  ],
+  "independentPeerReview": {
+    "reviewer": "Ontario parallel curator",
+    "result": "No substantive blocker",
+    "scope": "Literal source, five direct learn/assess guides,34closurecards andoperational/assessment boundaries,45hardedges,eight selected SH/THpages,completeauthoredtasksandSVG; final preservationbinding pending"
+  }
 }
