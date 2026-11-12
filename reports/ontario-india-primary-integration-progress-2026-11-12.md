@@ -170,6 +170,14 @@ unestablished pending the current-source completeness audit.
   supplement coverage is 15 of 21 hierarchical records: six competencies, six
   grade-parent records and three goals. Six abstraction/decomposition parents
   remain unfinished; this is not a national India coverage percentage.
+- India final spatial/decomposition parents: six independent portfolios cover
+  all 26 source families and six fresh integrated transfers. Twenty-seven component
+  pairs add 25 grade contexts and append one existing India 10–11 context. Only
+  Building with 3-D Shapes, Composing Shapes and Turns & Directions gain generated
+  upper compatibility bounds; every old interval, intrinsic claim, research record
+  and dependency is preserved. The complete 21-record CT/AI supplement now has
+  source-authoring designs: six competencies, 12 grade parents and three goals.
+  Each hierarchy level was assessed independently; this is not all-India coverage.
 - India role-bound language: four former Partial framework records now have
   complete written-reading, heard-summary and functional-writing authoring
   contracts with actual original example materials, changed cases and separate
@@ -200,10 +208,28 @@ unestablished pending the current-source completeness audit.
 - India reading engagement: five independently reviewed existing contracts retain
   actual-role text access, repeated specific R1 home-library loans and independent
   overall context review without quotas or forced enjoyment. Contextual labels,
-  actual-provision and learner-evidence boundaries stay explicit. Together with
-  the art and language contracts, 26 of the selected 69 typed conditions now have
-  current source/task review; the other 43 and the separate source-meaning
-  exception remain in audit. The selected Full count stays 451/521.
+  actual-provision and learner-evidence boundaries stay explicit. At that checkpoint, together with
+  the art and language contracts, 26 of the selected 69 typed conditions had
+  current source/task review. The remaining 43 are now qualified below; the
+  separate source-meaning exception remains in audit. The selected Full count stays 451/521.
+- India remaining contextual contracts: all 43 mixed skill/context, affect and
+  motor contracts now pass root and independent exact-source/task review. Actual
+  production, operation, shared work, care and independent goals remain required;
+  contextual feelings are not scored as mastery. Nature-observation bullets stay
+  distinct from their recurring-care siblings. One mixed movement source retains
+  explicit PE exclusion without deleting its identity or denominator. Together
+  with the earlier art/language/reading reviews, all 69 typed conditions in the
+  selected baseline have reviewed authoring routes, without increasing 451 Full.
+  All 45 typed conditions in the formal 221-position eligible census are included;
+  its other 176 positions have current Full authoring. Actual programme provision
+  and learner attainment remain unclaimed. One separate selected music record is
+  still Unverified; current-source/material applicability checks remain distinct.
+- India finite current CBSE circular screen: all 77 observed 2026 index entries
+  now have bounded operative-body reviews and explicit applicability decisions.
+  Closed programmes, school duties, conditional entry, regional/older-grade routes
+  and excluded PE remain separate. No additional core I–V mastery table was found
+  in the final 37. Actual annex, school/material and delivery conditions remain;
+  this finite index does not exhaust every historical notification or future rule.
 - Historical Ontario Grade 1 money: F1 and F1.1 requalified against the exact
   Canadian inventory, including the separate 50-cent representation and notes
   through $50. One overall component pair is added in the existing Ontario 6–9
@@ -229,13 +255,12 @@ unestablished pending the current-source completeness audit.
 - Ontario: 30 Science and six Social Studies source qualifications, followed by
   historical coverage audits across all subjects. The two mixed-scope Kindergarten
   records retain explicit PE exclusions; their non-PE authoring is accounted.
-- India: 43 remaining typed conditions need current source/task qualification;
-  one separate music source-meaning exception remains unresolved. Complete six
-  CBSE abstraction/decomposition grade parents and the finite current-source
-  applicability audit, including older reference outcomes where used. Actual
-  language/art programme configuration remains an explicit delivery condition,
-  rather than requiring all named alternatives at once. Do not convert each
-  example or alternative into a topic.
+- India: resolve the selected music source-meaning exception and finish the
+  current-source/material applicability accounting. Retained 2017 references,
+  programme/rendition identity and actual local language/art/school configuration
+  must be distinguished from unqualified current national curricular requirements.
+  The 21 CT/AI records and all 69 selected typed authoring contracts are reviewed;
+  no generic Full or all-language delivery is inferred from those completions.
 - Final code-set, resource/protocol, whole-claim and scoped-context audit against
   the final integration head. Report remaining genuine source limitations
   explicitly rather than declaring them covered by a link.
