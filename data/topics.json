@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1908,
+  "topicCount": 1909,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -36273,6 +36273,7 @@
       "assessmentPrompt": "Can {{name}} feel the difference between a sunny pavement and a shady one, and explain that sunlight warms up surfaces it shines on?",
       "standards": [
         "ngss-k5:K-PS3-1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
@@ -39692,6 +39693,7 @@
         "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
         "ngss-k5:2-LS2-1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
         "uk-nc-2013:Y2.Sci.P.2"
@@ -43871,6 +43873,7 @@
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.1",
         "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
         "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
@@ -48039,6 +48042,28 @@
       ],
       "ageRangeStart": 7,
       "ageRangeEnd": 8
+    },
+    {
+      "id": "mt_v8gu9eSaEg",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Energy",
+      "name": "Energy resources and limited supplies",
+      "description": "Trace familiar energy resources to the natural world and explain how repeated use affects a declared limited supply of useful fuel. Distinguish natural origin from processing, transport and local storage; explain why a new local delivery does not make the natural supply unlimited. Contrast these stock-limited fuel cases with sunlight and moving air without promising that either is available whenever needed.",
+      "centrality": 0,
+      "evidence": [
+        "Trace coal, oil and natural gas to natural underground sources, and sunlight and moving air to their natural origins. Distinguish a source from a shop, delivery or power station handling the resource.",
+        "Use a simple stated stock model to explain that repeated fuel use reduces the useful fuel available and cannot continue indefinitely when no replacement is supplied. Explain that this is a useful-resource limit, without claiming all energy or matter vanishes.",
+        "Track a transfer between two declared available supplies: explain which local store gains and which source supply loses, and why delivery changes local availability without creating unlimited natural resources. Respond to a changed supply/use case with the model’s boundaries explicit.",
+        "Explain a fitting way to reduce unnecessary use while preserving a stated essential service, relating the choice to the limited supply. Correct the claims that all natural resources behave as identical disappearing piles and that wind/sunlight must be available at every requested time."
+      ],
+      "assessmentPrompt": "After study, can {{name}} explain where the fuels, sunlight and moving air come from, show what happens as a given fuel supply is used, and explain a delivery from a second supply? Can they choose a change that preserves the needed service and makes the given useful fuel last longer, without calling every natural resource the same kind of pile?",
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.5"
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7
     }
   ]
 }
