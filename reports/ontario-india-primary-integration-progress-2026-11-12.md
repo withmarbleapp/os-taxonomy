@@ -153,6 +153,15 @@ unestablished pending the current-source completeness audit.
   and six of twelve grade-parent records with reviewed authoring; six parents and
   three integrated goals remain unfinished. The selected NCERT Full count stays
   451/521; this supplement is not the whole national denominator.
+- India independent CT/AI goals: three separately assessed portfolios now cover
+  all three stage goals without rolling up child labels. Original changed cases
+  require actual mathematical modelling, reasoned strategy/representation choices
+  and pupil operation of a compatible app. Eight component pairs include one new
+  India 10–11 context for the complete operation-choice claim; its older 8–11
+  context is preserved. No ages, claims, research or dependencies change. Current
+  supplement coverage is 15 of 21 hierarchical records: six competencies, six
+  grade-parent records and three goals. Six abstraction/decomposition parents
+  remain unfinished; this is not a national India coverage percentage.
 - India role-bound language: four former Partial framework records now have
   complete written-reading, heard-summary and functional-writing authoring
   contracts with actual original example materials, changed cases and separate
@@ -202,14 +211,16 @@ unestablished pending the current-source completeness audit.
 
 ## Remaining work
 
-- Ontario Science residuals; six Social Studies chronology/interaction
-  conditions; retained mixed-scope Kindergarten source accounting; historical coverage audits across all
-  subjects, including those currently showing zero Partials.
-- India current source completeness and applicability; formal role-bound
-  language tasks and configured resources; source rendition ambiguities; arts,
-  wellbeing and implementation conditions; independent CT/AI goal/grade-parent
-  review after the six stage competencies; current applicability of older reference
-  outcomes where used. Do not convert each example or alternative into a topic.
+- Ontario: 35 Science and six Social Studies source qualifications, followed by
+  historical coverage audits across all subjects. The two mixed-scope Kindergarten
+  records retain explicit PE exclusions; their non-PE authoring is accounted.
+- India: 43 remaining typed conditions need current source/task qualification;
+  one separate music source-meaning exception remains unresolved. Complete six
+  CBSE abstraction/decomposition grade parents and the finite current-source
+  applicability audit, including older reference outcomes where used. Actual
+  language/art programme configuration remains an explicit delivery condition,
+  rather than requiring all named alternatives at once. Do not convert each
+  example or alternative into a topic.
 - Final code-set, resource/protocol, whole-claim and scoped-context audit against
   the final integration head. Report remaining genuine source limitations
   explicitly rather than declaring them covered by a link.
