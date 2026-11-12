@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "topicId": "mt_iFFKZd-Vgv",
+  "name": "Likelihood Language",
+  "status": "Bounded factual prompt correction; no source coverage label change",
+  "exactField": "assessmentPrompt",
+  "before": "Does {{name}} use words like \"certain,\" \"likely,\" \"unlikely,\" and \"impossible\" correctly — for example, knowing that rolling a 7 on a normal die is impossible but rolling an even number is likely?",
+  "after": "Does {{name}} use words like \"certain,\" \"likely,\" \"unlikely,\" and \"impossible\" correctly — for example, knowing that rolling a 7 on a fair die labelled 1–6 is impossible, while rolling an even number has an even chance?",
+  "mathematicalReadback": {
+    "faces": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "evenFaces": [
+      2,
+      4,
+      6
+    ],
+    "evenAndNotEvenCounts": [
+      3,
+      3
+    ],
+    "fairDieEvenResult": "even chance",
+    "sevenResult": "impossible"
+  },
+  "scope": {
+    "oldOtherTopicFieldsPreserved": true,
+    "allAuthoredContextsAndAgeIntervalsPreserved": true,
+    "allGuidesAndSourceFlagsPreserved": true,
+    "allEdgesPreserved": true,
+    "sourceFullNumeratorChange": 0,
+    "learnerStateChanged": false
+  },
+  "currentGuideConsistency": "The complete saved Likelihood Language learn/assess guide already distinguishes even chance from likely and preserves its five-word/unequal-bag repertoire. No guide rewrite is needed.",
+  "downstreamPublicationQualification": "Authoring only. Before staging/publication, review this prompt correction under downstream claim-revision and private-state compatibility procedures. Do not assume earlier private evidence can be reinterpreted automatically, and do not infer or perform a learner reset or migration."
+}
