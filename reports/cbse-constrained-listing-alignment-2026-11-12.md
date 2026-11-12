@@ -1,4 +1,4 @@
-# CBSE constrained listing: one selected primary competency
+# CBSE CT/AI supplement (Classes III–V): constrained listing
 
 This bounded proposal adds one association from the CBSE CT/AI supplement (Classes III–V), Preparatory C-3 competency to existing topic `mt_gu0NPDvlhY` (Systematic Listing). The [disposition ledger](cbse-constrained-listing-alignment-2026-11-12.json) records the whole-claim contribution, concrete material binding and exclusions. No topic, prerequisite, age, guide or assessment claim changes.
 
