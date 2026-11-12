@@ -1,6 +1,6 @@
 # CBSE CT/AI supplement: primary reasoning review packet
 
-Local proposal on accepted main `228e7421ed75e35e1a5a0fc91acb4884838ca086`; exact five-pair source-authoring proposal applied locally; independent peer found no substantive blocker; validation and preservation are being requalified on the accepted base. This packet covers three selected stage-end competencies, C-1, C-2 and C-5, in the **CBSE CT/AI supplement (Classes III–V), 2026–27**. It authors five proposed component associations using five unchanged existing claims. The contextual interval is India 8–11, a Preparatory stage-end reference. The Grade IV/V examples below are teaching and assessment exemplars within that stage, rather than separate deadlines at every grade.
+Local proposal on accepted main `df2d6ae43c45d75e8018252b18ae009a803fc984`; exact five-pair source-authoring proposal applied locally; independent peer found no substantive blocker; generation, validation, generated-check and all482tests pass on the accepted base. This packet covers three selected stage-end competencies, C-1, C-2 and C-5, in the **CBSE CT/AI supplement (Classes III–V), 2026–27**. It authors five proposed component associations using five unchanged existing claims. The contextual interval is India 8–11, a Preparatory stage-end reference. The Grade IV/V examples below are teaching and assessment exemplars within that stage, rather than separate deadlines at every grade.
 
 No overall India or CBSE primary denominator is established. The historical selected NCERT baseline remains 444 Full of 521 eligible. On this packet's accepted base, two of the supplement's 21 selected hierarchical records are Full (C-3 and C-4, the latter accepted via PR158). This packet proposes three more Full source authoring dispositions, giving five within that selected supplement; it does not claim three unique skills, goal coverage, graded-parent coverage or learner attainment.
 
@@ -10,7 +10,7 @@ No overall India or CBSE primary denominator is established. The historical sele
 | C-2 | `mt_A-FyLLLLzy` Shape patterns; `mt_WXW0hjNhph` Patterns & Sequences | Append each component pair to its exact existing India 8–11 context |
 | C-5 | `mt_EBYGhd8X3x` Connecting Representations | Add one India 8–11 context within its unchanged global 6–13 interval |
 
-All other contexts, claims, ages, guides and hard edges stay intact. Full below means a complete authoring design for the selected source competency, supported jointly by components and the explicit assessment protocol. It never awards a whole target topic or any prerequisite from source-only success. Full remains a proposed source-authoring judgment: root reviewed the complete packet and authorized this exact local change; independent peer found no substantive blocker; exact-head preservation and validation remain.
+All other contexts, claims, ages, guides and hard edges stay intact. Full below means a complete authoring design for the selected source competency, supported jointly by components and the explicit assessment protocol. It never awards a whole target topic or any prerequisite from source-only success. Full remains a proposed source-authoring judgment: root reviewed the complete packet and authorized this exact local change; independent peer found no substantive blocker; the five-pair preservation proof and required checks pass on the accepted base.
 
 ## Whole claims and fit
 
@@ -84,4 +84,6 @@ The supplementary stage-end context does not turn a Grade IV example into eviden
 
 C-6 requires actual computer-procedure performance and remains separate. Three curricular goals and twelve graded parent boxes remain unreviewed as whole records; completing competency components does not promote them. The 2017 reference catalogue's current individual applicability, configured named-language role/material bindings, unresolved source renditions and actual arts/material choices remain part of the wider India audit. These 21 selected CT/AI hierarchical positions are never the denominator for overall CBSE primary.
 
-Before PR handoff: complete independent peer review, exact five-pair/context proof, reconciliation with whichever of PR157/158/159 has actually reached main, then generation, validation, generated-check and full tests. Source text and literal private proof remain outside Git. No public source text, copied diagrams or new mastery topics are needed.
+Before PR handoff: complete independent peer review, exact five-pair/context proof, reconciliation with any later accepted Ontario machine batch, then generation, validation, generated-check and full tests. Source text and literal private proof remain outside Git. No public source text, copied diagrams or new mastery topics are needed.
+
+Validation against the accepted base: generation, dataset validation, generated-check and all482tests pass. Reconcile and requalify again after the preceding Ontario machine PR reaches main before publication.
