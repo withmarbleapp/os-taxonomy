@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "source": "cbse-ctai-2026",
+  "baseCommit": "fc31307881e56d369f133d61b78024a5f2cd96fd",
+  "scope": {
+    "selectedKeys": [
+      "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3"
+    ],
+    "stage": "Preparatory",
+    "sourceGrades": [
+      3,
+      4,
+      5
+    ],
+    "contextAgeBand": [
+      8,
+      11
+    ],
+    "ageEvidence": "CBSE framework section6.1 uses ClassesIII–V; formal NCF Preparatory stage8–11 is retained in the existing reviewed India context. This is a stage window, not a deadline for each grade or a topic-global-age inference.",
+    "records": 1,
+    "newPairs": 1,
+    "topicsReused": 1,
+    "newTopics": 0,
+    "topicClaimChanges": 0
+  },
+  "coverageMeaning": "Authoring coverage of the selected source competency with existing whole claim and concrete assessment design; not learner attainment or coverage of a goal, graded parent box, handbook chapter or entire source.",
+  "records": [
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3",
+      "officialCode": "C-3",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_gu0NPDvlhY",
+          "topicName": "Systematic Listing",
+          "role": "whole"
+        }
+      ],
+      "rationale": "The existing claim enumerates two-variable choices systematically. Its accepted constrained-listing protocol already makes order, repetition, forbidden self-pairs and reverse duplicates explicit, with changed-pool/forbidden-pair transfer. Those source-fit conditions are independently confirmed by a current official GradeV companion task and teacher solution. No new mastery claim or grade duplicate is needed.",
+      "assessmentProtocols": [
+        {
+          "file": "ncert-preparatory-mathematics-assessment-protocols-2026-11-10.json",
+          "id": "constrained-listing"
+        }
+      ],
+      "remainingConditions": [],
+      "residualKind": "none",
+      "materialBindings": [
+        {
+          "id": "grade5-pool-pairing",
+          "studentUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri5SH_2026-27.pdf",
+          "studentPdfPage": 25,
+          "studentPrintedPage": 24,
+          "teacherUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri5TH_2026-27.pdf",
+          "teacherPdfPage": 43,
+          "teacherPrintedPage": 42,
+          "chapter": 6,
+          "question": 3,
+          "contribution": "The teacher solution explicitly enumerates six unordered pairs in each four-member pool, applies the repeated meeting condition and combines the pools and final. This confirms that shared-pool exclusions and duplicate handling are actual material demands.",
+          "sourceTaskIsAdditionalStandard": false
+        }
+      ]
+    }
+  ],
+  "deferredSourceScope": {
+    "notSelectedRecords": 20,
+    "notCertified": [
+      "CG-2 or any other whole goal",
+      "C-6 computer performance",
+      "Any of the twelve whole graded parent outcome boxes",
+      "All exercises or chapters in the companion handbooks"
+    ],
+    "meaning": "The selected stage competency is one record. The material sample is a resource binding, not an invented extra standard or GradeV-only version of the stage code."
+  },
+  "assessmentConditions": [
+    "A selected response alone is insufficient: require an exhaustive list/table and an explanation of excluded self-pairs and reverse duplicates.",
+    "Compare unordered pairs with two ordered roles and change the eligible pool or forbid one pair, using the existing protocol.",
+    "Count repeated meetings separately only after the unique admissible pairs are established. Arithmetic supports the material task; arithmetic results alone do not show systematic enumeration.",
+    "Teacher facilitation may introduce the task, but learner evidence must contain the enumeration/completeness argument rather than a supplied list or copied solution."
+  ],
+  "publicationTreatment": "Original task wording and source images remain private. Public report contains authored rationale, factual locators and official links only."
+}
