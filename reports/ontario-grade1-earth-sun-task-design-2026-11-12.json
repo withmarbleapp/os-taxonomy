@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed source-authoring resource with complete whole-reuse path; independent peer and main acceptance separate.",
+  "baseIntegration": "893746b",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "originalKit": {
+    "drawingInstructions": [
+      {
+        "id": "orientation-cards",
+        "fullyReproducible": true,
+        "instructions": "On three sheets draw (1) a school/ground below a sky with clouds, (2) a blue Earth ball with the school marked on its surface, (3) a Sun at centre and eight separate surrounding orbit paths with planet marks, Earth on the third. Put distant star marks outside the solar-system frame at varied declared distances. Label planet, Earth, Sun, solar system and space. State explicitly not to scale. Reveal sheets successively for zoom-out, then rearrange for independent identification. These are original models, not photographs or measurements.",
+        "assessmentBoundary": "Learner distinguishes Earth/planets, light-making Sun/star, distant stars and space; no ordered planet names or lunar co-orbit gate."
+      },
+      {
+        "id": "near-far-model",
+        "fullyReproducible": true,
+        "instructions": "Use two identical safe ordinary objects, showing they are the same actual size. Hold one near and move the second farther while learner describes apparent size, then swap them. Separately draw three representations of the SAME labelled star at successively greater declared distances, with a larger brighter-looking near symbol and smaller dimmer-looking far symbols. State that these are represented apparent views, not actual star photographs or measured brightness. Add two other stars at different much-greater distances to show they are not a single shell. No direct lamp/Sun viewing.",
+        "assessmentBoundary": "Learner explains apparent size/brightness by relative distance, rejects actual-largest and different-kind claims; do not infer every star has the same actual size/brightness."
+      },
+      {
+        "id": "motion-labels",
+        "fullyReproducible": true,
+        "instructions": "Write these four separate study cards: spin/rotation; one spin about24hours (one day); orbit; one orbit about365days (one year). Add north/south and summer/winter labels. Teach after model manipulation. Remove completed cause/effect pairings and number answers when checking independent whole-claim recall; factual cards may support a source-only attempt if that support is recorded.",
+        "assessmentBoundary": "Source-only supported reasoning is not unmodelled24/365 recall for the complete existing topic."
+      }
+    ],
+    "physicalModelInstructions": {
+      "materials": [
+        "Adult-selected cool light directed onto ball/globe, not into eyes",
+        "Ball/globe with removable axis stick and two marked surface locations north/south of an equator",
+        "Distant fixed wall arrow for keeping axis direction parallel throughout orbit",
+        "Paper and same light for comparing direct/slanted footprints at a fixed centre distance",
+        "Blank diary, neutral study cards and separate adult keys"
+      ],
+      "daily": "Keep the light fixed; rotate ball only. Predict then manipulate selected mark through lit/dark/lit, show simultaneous light on opposite side, explain apparent rise/set and that the light never switched off. Compare a separate orbit around light and its much slower year timescale. Repeat with changed mark and start.",
+      "seasonal": "Tilt the axis and keep its direction parallel to a fixed wall arrow while moving ball to opposite positions around the fixed light. Compare more-direct/longer-lit versus slanted/shorter-lit conditions for the same northern mark, and opposite conditions in the southern half. Compare direct versus slanted paper footprints with light-to-centre distance held fixed, describing concentrated versus spread light. Use actual model observation; do not invent temperature measurements.",
+      "limitations": [
+        "Not to scale; nearby light is an approximation to the Sun and its nearly parallel light.",
+        "Sun fixed only within this Earth-relative model, not an assertion of absolute immobility.",
+        "Tilt changes angle/daylight duration, not a meaningful global near/far summer switch.",
+        "Day-to-day weather can vary; seasonal pattern is not a guarantee every summer day is hot.",
+        "Numeric23.5degrees, January/perihelion, squared-paper counts and older formalSeasons vocabulary/path are not awarded by this source protocol."
+      ]
+    },
+    "skyDiary": {
+      "blankColumns": [
+        "date/time-of-day",
+        "conditions/viewpoint",
+        "Sun presence from ambient light/shadow, no direct viewing",
+        "Moon seen or not seen",
+        "stars seen or not seen",
+        "drawing/words and evidence basis"
+      ],
+      "isCompletedLearnerObservation": false,
+      "photoBackup": {
+        "url": "https://science.nasa.gov/resource/day-moon-ridge/",
+        "credit": "NASA/Bill Dunford",
+        "sourceDate": "2021-05-10",
+        "actuallyVisuallyRead": true,
+        "whatVisible": "Pale Moon above a snowy ridge in a blue daytime sky.",
+        "sourcePhotoIsLearnerObservation": false
+      },
+      "boundary": "Use real recorded observations when judging that guide evidence. If daytime Moon not visible, the verified source photo may support the permitted backup, but record photo evidence honestly. A cloudy non-sighting never proves absence."
+    }
+  },
+  "completeWholeSupport": {
+    "mt_PiWZA8Z0ZJ": {
+      "completeCriterionSupport": [
+        "Name Sun/Moon/stars",
+        "Sunlight/heat and daytime appearance",
+        "Stars visible at night, daytimeMoon possible, stars outshone rather than gone",
+        "Actual diary plus independent sort/explain, photo backup labelled"
+      ],
+      "guideReference": "data/teaching-research.json#mt_PiWZA8Z0ZJ",
+      "actualIndependentObservationOrPhotoBasisRetained": true
+    },
+    "mt_XlyF294bPR": {
+      "completeCriterionSupport": [
+        "Earth is one planet among others",
+        "Sun-and-orbiting-planets group called solar system",
+        "Space beyond everyday sky",
+        "Sun/star vs planet vs distant stars; independent why-tier and source sort"
+      ],
+      "materialReference": "/originalKit/drawingInstructions/0",
+      "guideReference": "data/teaching-research.json#mt_XlyF294bPR"
+    },
+    "mt_u3Y3Tb-G_n": {
+      "completeCriterionSupport": [
+        "Sun same kind of object as stars, closest star",
+        "Apparent size/brightness due to distance, not actuallargest",
+        "Eight-planets Sun-centred group, other stars farther and at varied distances",
+        "Independent changed-distance explanation and rejection of all three current guide misconceptions"
+      ],
+      "materialReference": "/originalKit/drawingInstructions/1",
+      "guideReference": "data/teaching-research.json#mt_u3Y3Tb-G_n",
+      "directStandardRole": false
+    },
+    "mt_w2xiMNkyyX": {
+      "completeCriterionSupport": [
+        "Actual daily spin light/shadow manipulation",
+        "Independent24hour and365day recall",
+        "Spin/day vs orbit/year",
+        "Simultaneous day elsewhere",
+        "Apparent Sun movement and light-not-switched-off countercases",
+        "Changed mark/start and explanation, not endpointmatching"
+      ],
+      "materialReference": "/originalKit/physicalModelInstructions",
+      "guideReference": "data/teaching-research.json#mt_w2xiMNkyyX"
+    }
+  },
+  "wholeCards": [
+    {
+      "id": "mt_XlyF294bPR",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Space Exploration",
+      "name": "Our Solar System",
+      "description": "Know that there are other planets besides Earth and that our group of planets orbiting the Sun is called the solar system — and that space is the vast area beyond Earth's sky",
+      "centrality": 0.03861788617886179,
+      "evidence": [
+        "State that Earth is a planet and there are other planets too",
+        "Use the term 'solar system' to describe the Sun and the planets that orbit it",
+        "Explain that space is the area beyond the Earth's sky, where the planets and stars are"
+      ],
+      "assessmentPrompt": "Does {{name}} know that Earth is one of several planets that go around the Sun, and that this group is called the solar system?",
+      "standards": [
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-7.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-7"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_PiWZA8Z0ZJ",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Space Exploration",
+      "name": "Sun, Moon & Stars",
+      "description": "Identify the Sun, Moon, and stars as objects in the sky and describe basic differences: the Sun gives light and heat during the day, stars are tiny points of light at night, and the Moon can appear in both the day and night sky",
+      "centrality": 0.04065040650406504,
+      "evidence": [
+        "Name the Sun, Moon, and stars as objects in the sky",
+        "State that the Sun appears during the day and gives us light and heat",
+        "State that stars appear at night and the Moon can sometimes be seen during the day too"
+      ],
+      "assessmentPrompt": "Can {{name}} point out the Sun, Moon, and stars and tell you something simple about each one — like that the Sun gives us light and heat?",
+      "standards": [
+        "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO05",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-C2.7",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.4"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_w2xiMNkyyX",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Space Exploration",
+      "name": "Earth's Spin & Orbit",
+      "description": "Understand that Earth moves in two ways: it rotates (spins) on its axis once every 24 hours causing day and night, and it orbits (travels around) the Sun once every 365 days, which is one year",
+      "centrality": 0.02032520325203252,
+      "evidence": [
+        "Demonstrate with a globe or ball that Earth's rotation causes day on the Sun-facing side and night on the opposite side",
+        "State that one full rotation takes about 24 hours (one day)",
+        "State that one full orbit around the Sun takes about 365 days (one year)"
+      ],
+      "assessmentPrompt": "Can {{name}} explain that we have day and night because the Earth spins, and that a year is the time it takes Earth to go all the way around the Sun?",
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.5"
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_u3Y3Tb-G_n",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Space Exploration",
+      "name": "The Sun is a star",
+      "description": "Know that the Sun is a star — the closest star to Earth — and that it is at the centre of our solar system, with all eight planets orbiting around it",
+      "centrality": 0.03760162601626017,
+      "evidence": [
+        "State that the Sun is a star, not a unique type of object",
+        "Explain that the Sun appears bigger and brighter than other stars because it is much closer",
+        "Describe the solar system as the Sun at the centre with planets orbiting around it"
+      ],
+      "assessmentPrompt": "Does {{name}} know that the Sun is actually a star — just a very close one — and that the planets go around it?",
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.4"
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 12
+    }
+  ],
+  "fullHardEdges": [
+    {
+      "topicId": "mt_u3Y3Tb-G_n",
+      "prerequisiteId": "mt_PiWZA8Z0ZJ",
+      "strength": "hard",
+      "reason": "Must know the Sun is a sky object before learning it is a star"
+    },
+    {
+      "topicId": "mt_u3Y3Tb-G_n",
+      "prerequisiteId": "mt_XlyF294bPR",
+      "strength": "hard",
+      "reason": "Must know about the solar system before learning the Sun is at its centre"
+    },
+    {
+      "topicId": "mt_w2xiMNkyyX",
+      "prerequisiteId": "mt_u3Y3Tb-G_n",
+      "strength": "hard",
+      "reason": "Must know the Sun-centred system before understanding Earth's rotation and orbit within it"
+    },
+    {
+      "topicId": "mt_XlyF294bPR",
+      "prerequisiteId": "mt_PiWZA8Z0ZJ",
+      "strength": "hard",
+      "reason": "Must know the Sun and stars before learning about planets and the solar system"
+    }
+  ],
+  "exactNewContexts": [
+    {
+      "topicId": "mt_w2xiMNkyyX",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.1"
+      ]
+    },
+    {
+      "topicId": "mt_u3Y3Tb-G_n",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "standards": [],
+      "ageOnly": true
+    }
+  ],
+  "expectedGeneratedCompatibilityLowerBounds": {
+    "mt_w2xiMNkyyX": {
+      "before": 7,
+      "after": 6
+    },
+    "mt_u3Y3Tb-G_n": {
+      "before": 7,
+      "after": 6
+    }
+  },
+  "protocols": {
+    "E2.1": {
+      "requiresIndependentPerformance": true,
+      "role": "component",
+      "contributorIds": [
+        "mt_w2xiMNkyyX"
+      ],
+      "ancestorAgeOnlyTopicId": "mt_u3Y3Tb-G_n",
+      "task": "With completed answers hidden, independently manipulate a daily-spin model, distinguish the yearly orbit, then maintain fixed tilt direction at opposite orbital positions and explain seasonal directness and daylight duration. Predict a fresh mark/start position before manipulating, explain opposite hemispheres and reject light-switch-off/daily-orbit/global-distance-only causes. State model limits and separate actual observation from source/model facts.",
+      "requiredEvidence": [
+        "daily-spin-causes-light-shadow",
+        "daily-spin-versus-yearly-orbit",
+        "seasonal-fixed-tilt-plus-orbital-position",
+        "directness-and-daylight-duration",
+        "opposite-hemispheres-not-global-distance-only",
+        "fresh-mark-position-independent-explanation",
+        "honest-model-observation-photo-limits"
+      ],
+      "wholeExistingClaimsAwardedFromSourceTaskAlone": false,
+      "olderSeasonsMasteryAwarded": false,
+      "teacherSuppliedCausalAnswersSufficient": false,
+      "isActualLearnerResult": false,
+      "teacherKey": "Day/night comes from the chosen place rotating toward/away from light while the Sun keeps shining elsewhere; year is a separate orbit. Fixed-direction tilt as Earth orbits changes directness and daylight duration, producing contrasting seasonal light patterns in opposite hemispheres. A fresh position/mark must be explained from geometry, not copied season labels or clothing/weather lists. Model limits and actual evidence basis are explicit."
+    }
+  },
+  "sourceReadBindings": [
+    {
+      "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-earth-grades-k-4/",
+      "actuallyRead": "body267–308, selecteddaily/yearly/seasonalrelations281–293",
+      "adopt": "daily24/year365/tilt/lightduration/directness/oppositehemispheres",
+      "placement": "explicitK–4, supportive but not universalreadiness"
+    },
+    {
+      "url": "https://www.esero.no/wp-content/uploads/2023/07/A-Space-Expedition-Our-sun-is-a-star.pdf",
+      "actuallyRead": "all13pagesreturnedbody, earlyeducationframework/p1–2;teacherSunstar/p4;nearfaractivityp7;rotation/apparentmotionp8",
+      "adopt": "boundedSunstar/closeness/apparentsize/nearfarmodel and apparentSunmovement relation",
+      "placement": "explicitearlyeducation/kindergarten; positiveprimarysupport",
+      "notAdopted": "fusion/particles/glossary/sunspottemperatures/imaginarylanding/directglareprocedures/claimsSunabsolutelymotionless"
+    },
+    {
+      "url": "https://sdo.gsfc.nasa.gov/assets/docs/UnitPlanElementary.pdf",
+      "actuallyRead": "Sunlesson17–19, Earth/daylight/seasons andassessment",
+      "placement": "Sunlessonexplicit3–5, contraryolderplacementretained, nottreatedas6–7evidencealone",
+      "adopt": "boundednearfarperspective andSunstarrelation, notnumericalformation/brightnessarithmetic orSunviewingextension"
+    },
+    {
+      "url": "https://science.nasa.gov/resource/day-moon-ridge/",
+      "actuallyRead": "actualcaption/creditdate andissuerphotographvisuallyread",
+      "adopt": "Moonpicturedinbluedaysky, NASA/BillDunford, sourcepageMay10 2021",
+      "privateImageSha256": "ff83fdbf447f4786ee4a044b9d19a545da0478ec1570557339f9bac5fce5e2ec",
+      "limit": "sourcepicturebackup, not fabricatedlearnerobservation, no phasecalculation orlocalappearancepromise"
+    },
+    {
+      "url": "https://www.nasa.gov/solar-system/why-can-you-see-the-moon-during-the-day-we-asked-a-nasa-scientist-episode-19/",
+      "actuallyRead": "articlebody/transcript254–262",
+      "adopt": "Mooncanappearinday, distantstarsoutshone; noactualvideoviewingclaimed"
+    }
+  ],
+  "negativeBoundaries": {
+    "newTopic": false,
+    "hardEdgeChange": false,
+    "oldIntervalChanges": false,
+    "prerequisiteOnlyFalseDirectLinks": false,
+    "olderSeasonsAgeChange": false,
+    "olderSeasonsFullAward": false,
+    "copiedAnswersOrWeatherOnlySufficient": false,
+    "actualDiaryOrLearnerOutcomeClaimed": false,
+    "globalAgeOfferAdded": false
+  },
+  "publicationBoundary": "Authoring only; no efficacy, universal readiness, actual performance, downstreampublication or state migration/reset."
+}
