@@ -1,0 +1,498 @@
+{
+  "source": "cbse-ctai-2026",
+  "sourceDocument": {
+    "publisher": "CBSE",
+    "title": "Computational Thinking and Artificial Intelligence Classes 3–8 Curriculum",
+    "edition": "Academic session 2026–27",
+    "url": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri_2026-27.pdf",
+    "retrieved": "2026-11-11",
+    "sha256": "78bed53986faafb0d0b6cd171e8d84d2fda1d00b42cb7bd332aca4762c5839e0",
+    "bytes": 1852288,
+    "pdfPages": 32
+  },
+  "sourceKind": "selected-primary-framework-goals-competencies-and-graded-parent-outcomes",
+  "publicationTreatment": "Factual identifiers and metadata only; restricted source wording, source PDF and extraction artifacts remain private.",
+  "scope": {
+    "grades": [
+      3,
+      4,
+      5
+    ],
+    "stageGoals": 3,
+    "stageCompetencies": 6,
+    "gradedParentOutcomeAreas": 12,
+    "records": 21,
+    "stageRecordsApplyOnceAcrossGrades": [
+      3,
+      4,
+      5
+    ],
+    "gradedParentRecordsByGrade": {
+      "3": 4,
+      "4": 4,
+      "5": 4
+    },
+    "goalsAndCompetenciesPdfPages": [
+      16,
+      17
+    ],
+    "gradeParentPdfPages": [
+      21,
+      22,
+      23
+    ],
+    "excluded": [
+      "Classes VI–VIII, including the lower table on PDF page 17",
+      "Nested clauses/examples as separate positions",
+      "Topic associations, topic authoring and whole-expectation coverage certification"
+    ]
+  },
+  "identifierRule": {
+    "qualifiedNativeCodes": "Generated document/stage/kind IDs retain the literal CG/C code and parent in this index; they are not native official codes.",
+    "gradedParentOutcomes": "Unnumbered parent boxes use generated grade/ordinal IDs; officialCode is null.",
+    "nativeStageHierarchy": {
+      "CG-1": [
+        "C-1",
+        "C-2"
+      ],
+      "CG-2": [
+        "C-3",
+        "C-4",
+        "C-5"
+      ],
+      "CG-3": [
+        "C-6"
+      ]
+    }
+  },
+  "implementationEvidence": {
+    "launchCircular": {
+      "number": "Acad-15/2026",
+      "date": "2026-04-01",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/15_Circular_2026.pdf",
+      "sha256": "f318c0c91ea117d0ba05afcdbbed169651b9f2f9f898efea1cf06d82aa94f2ee"
+    },
+    "resourceCircular": {
+      "number": "Acad-18/2026",
+      "date": "2026-04-09",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/18_Circular_2026.pdf",
+      "sha256": "38a1fbbf633795e68f0295facae1dff3baa4e45646a3a4025edd5a4b21d252b7"
+    },
+    "status": "CBSE introduces this framework for session 2026–27 and advises affiliated schools to implement it.",
+    "suggestedAnnualHours": 50,
+    "annualHoursFlexible": true,
+    "hoursAreMasteryCriterion": false,
+    "companionResourcesAreNewStandards": false
+  },
+  "verification": {
+    "corePdfPagesVisuallyRead": [
+      16,
+      17,
+      21,
+      22,
+      23
+    ],
+    "stageColumnReconstruction": "Primary goals/competencies independently reconstructed by column and bounded above the Classes VI–VIII heading on PDF17.",
+    "gradedWholeParentReadback": "All 12 whole parent boxes read back with nested clauses attached.",
+    "C6Retained": true,
+    "C6ComputerPerformanceRequiredForCoverageReview": true,
+    "currentSchoolImplementationAndLearnerPerformance": "Unverified; outside catalogue ingestion"
+  },
+  "baselineSeparation": {
+    "selectedNCERTExistingPositions": 570,
+    "selectedNCERTEligiblePositions": 521,
+    "selectedNCERTLinkedPositions": 495,
+    "selectedNCERTUnlinkedPositions": 26,
+    "separate2017ReferencePositions": 304,
+    "newCBSEReferencePositions": 21,
+    "newAssociations": 0,
+    "newTopics": 0,
+    "coverageMeaning": "Source positions are not independent mastery claims or proven taxonomy gaps; this source does not change the selected NCERT coverage denominator."
+  },
+  "records": [
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-GOAL-CG-1",
+      "code": "IN-CBSE-CTAI-2026-PREP-GOAL-CG-1",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "CG-1",
+      "recordKind": "curricularGoal",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-GOAL-CG-2",
+      "code": "IN-CBSE-CTAI-2026-PREP-GOAL-CG-2",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "CG-2",
+      "recordKind": "curricularGoal",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-GOAL-CG-3",
+      "code": "IN-CBSE-CTAI-2026-PREP-GOAL-CG-3",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "CG-3",
+      "recordKind": "curricularGoal",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        15
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-1",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-1",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-1",
+      "parentOfficialCode": "CG-1",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-2",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-2",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-2",
+      "parentOfficialCode": "CG-1",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-3",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-3",
+      "parentOfficialCode": "CG-2",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-4",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-4",
+      "parentOfficialCode": "CG-2",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-5",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-5",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-5",
+      "parentOfficialCode": "CG-2",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        16
+      ],
+      "printedPages": [
+        14
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-6",
+      "code": "IN-CBSE-CTAI-2026-PREP-COMP-C-6",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": "C-6",
+      "parentOfficialCode": "CG-3",
+      "recordKind": "stageCompetency",
+      "gradeLevels": [
+        3,
+        4,
+        5
+      ],
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        15
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G3-LO01",
+      "code": "IN-CBSE-CTAI-2026-G3-LO01",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        3
+      ],
+      "area": "Abstract Thinking",
+      "ordinal": 1,
+      "pdfPages": [
+        21
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G3-LO02",
+      "code": "IN-CBSE-CTAI-2026-G3-LO02",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        3
+      ],
+      "area": "Pattern Recognition",
+      "ordinal": 2,
+      "pdfPages": [
+        21
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G3-LO03",
+      "code": "IN-CBSE-CTAI-2026-G3-LO03",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        3
+      ],
+      "area": "Decomposition",
+      "ordinal": 3,
+      "pdfPages": [
+        21
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G3-LO04",
+      "code": "IN-CBSE-CTAI-2026-G3-LO04",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        3
+      ],
+      "area": "Algorithmic Thinking",
+      "ordinal": 4,
+      "pdfPages": [
+        21
+      ],
+      "printedPages": [
+        19
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G4-LO01",
+      "code": "IN-CBSE-CTAI-2026-G4-LO01",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        4
+      ],
+      "area": "Abstract Thinking",
+      "ordinal": 1,
+      "pdfPages": [
+        22
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G4-LO02",
+      "code": "IN-CBSE-CTAI-2026-G4-LO02",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        4
+      ],
+      "area": "Pattern Recognition",
+      "ordinal": 2,
+      "pdfPages": [
+        22
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G4-LO03",
+      "code": "IN-CBSE-CTAI-2026-G4-LO03",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        4
+      ],
+      "area": "Decomposition",
+      "ordinal": 3,
+      "pdfPages": [
+        22
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G4-LO04",
+      "code": "IN-CBSE-CTAI-2026-G4-LO04",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        4
+      ],
+      "area": "Algorithmic Thinking",
+      "ordinal": 4,
+      "pdfPages": [
+        22
+      ],
+      "printedPages": [
+        20
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G5-LO01",
+      "code": "IN-CBSE-CTAI-2026-G5-LO01",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        5
+      ],
+      "area": "Abstract Thinking",
+      "ordinal": 1,
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G5-LO02",
+      "code": "IN-CBSE-CTAI-2026-G5-LO02",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        5
+      ],
+      "area": "Pattern Recognition",
+      "ordinal": 2,
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G5-LO03",
+      "code": "IN-CBSE-CTAI-2026-G5-LO03",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        5
+      ],
+      "area": "Decomposition",
+      "ordinal": 3,
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        21
+      ]
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-G5-LO04",
+      "code": "IN-CBSE-CTAI-2026-G5-LO04",
+      "generatedQualifiedIdentifier": true,
+      "officialCode": null,
+      "recordKind": "gradedLearningOutcomeArea",
+      "gradeLevels": [
+        5
+      ],
+      "area": "Algorithmic Thinking",
+      "ordinal": 4,
+      "pdfPages": [
+        23
+      ],
+      "printedPages": [
+        21
+      ]
+    }
+  ]
+}
