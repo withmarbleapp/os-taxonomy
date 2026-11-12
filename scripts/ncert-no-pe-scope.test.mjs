@@ -72,7 +72,8 @@ function qualify(s) {
  assert.equal(s.scope.counts.eligible, 521);
  assert.equal(s.ledger.counts.eligibleSourceRecords, 521);
  assert.equal(s.ledger.counts.excludedPhysicalEducation, 49);
- const catalogued = new Set(s.catalogue.curricula.filter(c => ['ncert-fs-2025','ncert-ncfse-2023-ed2024'].includes(c.slug)).flatMap(c => c.topics.map(t => t.key)));
+  // This570-record historical selection excludes later rendition catalogue extensions.
+ const catalogued = new Set(s.catalogue.curricula.filter(c => ['ncert-fs-2025','ncert-ncfse-2023-ed2024'].includes(c.slug)).flatMap(c => c.topics.map(t => t.key)).filter(key => !key.startsWith('ncert-fs-2025:IN-NCERT-FS-2025-HI-TEXT-')));
  assert.equal(catalogued.size, 570);
  for(const r of s.ledger.records) {
   assert.ok(catalogued.has(r.key));

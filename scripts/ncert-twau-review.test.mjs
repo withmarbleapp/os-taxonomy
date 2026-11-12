@@ -185,7 +185,8 @@ function check(r, p, l = ledger, a = alignments) {
   }
   assert.equal(l.records.length, 570);
   assert.equal(new Set(l.records.map(row => row.key)).size, 570);
-  const acceptedPrimary = catalogue.filter(source => ['ncert-fs-2025','ncert-ncfse-2023-ed2024'].includes(source.slug)).flatMap(source => source.topics.map(row => row.key));
+  // This570-record historical selection excludes later rendition catalogue extensions.
+  const acceptedPrimary = catalogue.filter(source => ['ncert-fs-2025','ncert-ncfse-2023-ed2024'].includes(source.slug)).flatMap(source => source.topics.map(row => row.key)).filter(key => !key.startsWith('ncert-fs-2025:IN-NCERT-FS-2025-HI-TEXT-'));
   assert.deepEqual(l.records.map(row => row.key).sort(), acceptedPrimary.sort());
   const reviewed = l.records.filter(row => row.alignmentReviewStatus !== 'not-reviewed-in-this-slice').length;
   assert.equal(reviewed, 570);
