@@ -41801,7 +41801,7 @@
         "reviewNotes": [
           "This is an agent semantic rewrite of saved teaching research without fresh source verification; sources were NOT re-fetched. All activities are research-informed proposals, not validated interventions.",
           "One source (IOP Spark / SPT children's ideas about electricity) is marked verified:false in the row; treat its misconception claim as indicative, not confirmed.",
-          "The learner-level phrasings 'a battery is a portable store of electrical energy' and the wind-up radio 'makes its own electricity' are age-appropriate simplifications (a battery stores chemical energy converted to electrical current; a wind-up device stores elastic/mechanical energy driving a small generator). Kept as the original row stated them, but flagged so reviewers can decide how precise to be for this age.",
+          "The wind-up-radio example means a declared device with a mechanism that turns a generator, distinct from a purely clockwork toy; this is a source-classification contrast, not a generator-mechanism assessment. A targeted2026-11-12 check of the complete US Department of Energy Batteries main body confirms that batteries store energy chemically and can supply it electrically. Corrected the two assessment feedback statements that called a battery a store of electrical energy. Child-facing feedback says stores energy and supplies electrical energy; chemical-potential, electrode and ion vocabulary are not mastery gates. Other inherited source flags and confidence remain historical.",
           "The US NGSS mapping notes no direct grade-3/4 performance expectation for naming electrical appliances (nearest is 4-PS3-2, only foreshadowed); this topic is UK-anchored.",
           "Product/artefact-type names, fit rankings, and quiz-step vocabulary from the source were removed; the underlying tasks and feedback were preserved.",
           "The DfE statutory claim is mapped to activities that concretely deliver its safety message; it is a curriculum/convention source, not evidence that any proposed activity is effective or superior to another medium.",
@@ -41823,7 +41823,7 @@
           {
             "kind": "misconception",
             "pattern": "Anything with a plug or that you switch on uses electricity, and anything without a plug doesn't ('no plug, no electricity').",
-            "nextMove": "Sort by ENERGY SOURCE, not by plug — mains, battery, wind-up/other; show that a battery is a portable store of electrical energy.",
+            "nextMove": "Sort by ENERGY SOURCE, not by plug — mains, battery, wind-up/other; explain that a battery stores energy and can supply electrical energy to a connected device.",
             "distractor": "Only the fridge uses electricity, because it's the only one plugged into the wall.",
             "revealedBy": "Says the wind-up radio isn't electrical and can't classify battery devices.",
             "reteachPrerequisiteId": null
@@ -41839,7 +41839,7 @@
           {
             "kind": "misconception",
             "pattern": "Mains and battery electricity are two completely different things, not both electricity ('battery isn't real electricity').",
-            "nextMove": "Both deliver an electric current to make the device work; mains comes from a power station through the socket, a battery is a portable store of the same thing.",
+            "nextMove": "Both a mains supply and a battery can supply electrical energy to make a device work. Mains electricity is supplied through the socket; a battery stores energy that it can supply electrically to a connected device. Do not describe a battery as a store of electrical energy.",
             "distractor": null,
             "revealedBy": "Won't call the torch electric, or treats battery power as a separate kind of thing.",
             "reteachPrerequisiteId": null
@@ -41870,6 +41870,12 @@
           "claim": "Battery-containing household devices can expose hazardous button cells; secure compartments and adult supervision matter. A battery power source does not establish that a device is safe for a child to open.",
           "source": "Health Canada, Button batteries brochure2024 — prevention section",
           "url": "https://www.canada.ca/en/health-canada/services/household-products/battery-safety/resources/brochure-button-batteries.html",
+          "verified": true
+        },
+        {
+          "claim": "Batteries store energy chemically and supply electrical energy to an external circuit; rechargeable batteries can store energy during charging for later electrical use. This supports accurate teacher feedback, without adding chemistry vocabulary to the learner claim.",
+          "source": "US Department of Energy, DOE Explains...Batteries",
+          "url": "https://www.energy.gov/science/doe-explainsbatteries",
           "verified": true
         }
       ],
