@@ -310,3 +310,24 @@ staging publication; no learner reset or reinterpretation is assumed.
 Current remaining source Partials: 28 Science, four Social Studies and two mixed
 Kindergarten records whose in-scope non-PE authoring is accounted for. Thus 32
 in-scope expectations remain unqualified, alongside the historical audit gate.
+
+## India source-accounting and original musical portfolio
+
+The end-state ledger now binds the exact 221 eligible formal-framework keys, 33
+excluded PE keys, 30 selected material cells and named remaining source/programme
+conditions. The retained ambiguous music position has an original operational
+portfolio with 13 actual audio references and fresh assessment sequences; its
+source meaning remains Unverified and no Full, topic, link or age was added.
+
+Fresh original CBSE 2019/2020 directives establish a continuing NCERT learning-
+outcome adoption mandate. The older 304-position reference catalogue therefore
+needs actual current-edition/carry-forward and coverage reconciliation before
+claiming completion of the applicable CBSE scope. It is not merely an optional
+programme gate, and it is not automatically 304 distinct new skills. This audit
+continues. Bounded school implementation duties remain explicit without expanding
+the curriculum goal into an unrestricted institutional compliance audit.
+
+The original paired-art project remains parameterized by the actual current
+session/pair; its historical illustration is labelled. Real school provision,
+local language/material choices and pupil attainment are unperformed. The new
+ledger/resources change no canonical data or existing historical Full judgments.
