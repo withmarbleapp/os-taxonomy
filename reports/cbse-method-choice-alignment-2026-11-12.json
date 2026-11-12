@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "source": "cbse-ctai-2026",
+  "baseCommit": "d4f5f80a26b94f355c27db07f45b4870e0fb913f",
+  "scope": {
+    "selectedKeys": [
+      "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4"
+    ],
+    "stage": "Preparatory",
+    "sourceGrades": [
+      3,
+      4,
+      5
+    ],
+    "contextAgeBand": [
+      8,
+      11
+    ],
+    "attainmentReference": "stage-end",
+    "ageEvidence": "The existing reviewed India Preparatory interval is retained. Grade III material is an exemplar within the stage, not a separate deadline at each grade.",
+    "records": 1,
+    "newPairs": 1,
+    "topicsReused": 1,
+    "newTopics": 0,
+    "topicClaimChanges": 0
+  },
+  "coverageMeaning": "Authoring coverage of the selected competency using an existing claim and explicit strategy assessment. Not learner attainment or coverage of a whole goal or graded parent box.",
+  "records": [
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
+      "officialCode": "C-4",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_mQcWGh02no",
+          "topicName": "Choosing the right strategy",
+          "role": "component"
+        }
+      ],
+      "rationale": "The existing whole claim explicitly selects and justifies methods and representations. The accepted method-choice protocol tests mental, written and estimation choices rather than arithmetic success alone. Two visually checked current material contexts supply a convenient difference and a task with intermediate states; the authored strategy prompts assess the source requirement without asserting that the printed questions themselves ask for method comparison. The topic also includes harder arithmetic and other representations, so this source is a component contribution, not a replacement definition of the whole topic.",
+      "assessmentProtocols": [
+        {
+          "file": "ncert-preparatory-mathematics-assessment-protocols-2026-11-10.json",
+          "id": "method-choice"
+        }
+      ],
+      "remainingConditions": [],
+      "residualKind": "none",
+      "materialBindings": [
+        {
+          "id": "convenient-difference",
+          "grade": 3,
+          "studentUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri3SH_2026-27.pdf",
+          "studentPdfPage": 28,
+          "studentPrintedPage": 27,
+          "teacherUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri3TH_2026-27.pdf",
+          "teacherPdfPage": 45,
+          "teacherPrintedPage": 44,
+          "chapter": 6,
+          "question": 3,
+          "role": "A small difference after constrained number construction supplies a context where a mental method can be justified. The printed task and solution establish the quantities; they do not themselves certify strategy choice."
+        },
+        {
+          "id": "track-intermediate-states",
+          "grade": 3,
+          "studentUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri3SH_2026-27.pdf",
+          "studentPdfPage": 45,
+          "studentPrintedPage": 44,
+          "teacherUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri3TH_2026-27.pdf",
+          "teacherPdfPage": 79,
+          "teacherPrintedPage": 78,
+          "chapter": 12,
+          "question": 6,
+          "role": "A multi-person transfer context requires tracking intermediate quantities. The teacher solution explicitly tracks each state. This supplies a context for justifying jottings or a table rather than assuming every task should use the same mental routine."
+        }
+      ]
+    }
+  ],
+  "authoredAssessment": {
+    "setup": "Use the selected material contexts and the accepted method-choice protocol. Ask the learner to choose and explain a method before calculating; provide pencil and paper without prescribing its use.",
+    "positiveEvidence": "Explain why mental comparison is convenient in the small-difference case; choose and use a reliable method for the transfer states, explaining how it avoids lost updates. A well-justified accurate mental solution is allowed; written work is not forced simply to satisfy a label.",
+    "estimationAndTransfer": "Use the existing protocol to change numerical values and ask for a rough reasonableness check before an exact result. Make clear that this is an authored transfer prompt, not an additional official worksheet question.",
+    "nearMiss": "A correct selected answer, a copied teacher procedure, speed alone, or one unexamined routine for every task does not demonstrate appropriate strategic selection.",
+    "interpretation": "These probes assess method selection. They do not certify the learner has mastered the entire broader strategy topic or every arithmetic prerequisite.",
+    "concreteTransfer": {
+      "status": "Original authored variation, not an official handbook question",
+      "setup": "Give four named accounts 48 counters each. Move 17 from the first to the third, then 23 from the second to the first. Before exact working, ask for an approximate total and a method for keeping track of the separate accounts.",
+      "expectedReasoning": "Four amounts close to 50 suggest a total near 200. Transfers preserve the overall total. An exact check gives balances 54, 25, 65 and 48, totalling 192. A simple state table is useful, but a justified reliable alternative is acceptable.",
+      "diagnostic": "A total near 400, a transfer added without being subtracted, or a copied table without an explanation fails the reasonableness/strategy probe.",
+      "transfer": "Change one starting amount to 148 and ask which part of the mental estimate or written record must change. Do not infer a new source standard or topic from this variation."
+    }
+  },
+  "teacherProcessBinding": {
+    "grade": 3,
+    "teacherPdfPage": 9,
+    "teacherPrintedPage": 8,
+    "meaning": "Current handbook guidance supports independent attempts, facilitation and comparing approaches. This informs assessment delivery; it is not substituted for the learner evidence above."
+  },
+  "deferredSourceScope": {
+    "notSelectedRecords": 20,
+    "notCertified": [
+      "Any whole curricular goal",
+      "Any whole graded parent outcome box",
+      "C-6 computer performance",
+      "All handbook exercises"
+    ],
+    "selectedNCERTDenominatorUnchanged": true
+  },
+  "publicationTreatment": "Source wording and images remain private. Public text is authored rationale, factual locators and official links."
+}
