@@ -1,8 +1,8 @@
-# India primary inventory: candidate scope decision
+# India primary inventory: scope decision
 
-This is a proposed audit boundary against accepted main `df93fa372227fd3d07e11f16c3949a02526723bd`, not a new coverage certification. Accepted selected NCERT authoring remains **444 Full and four Partial among 521 eligible selected records**. The separate **CBSE CT/AI supplement (Classes III–V)** has one accepted Full source-competency alignment among 21 overlapping hierarchical positions. Overall India and CBSE primary denominators remain unestablished.
+This reviewed authoring decision is submitted against accepted main `33eda30b1b35123dd04f3932aedaf2bd6f94d057`; it does not independently certify new coverage. Accepted selected NCERT authoring remains **444 Full and four Partial among 521 eligible selected records**. The separate **CBSE CT/AI supplement (Classes III–V)** has one accepted Full source-competency alignment among 21 overlapping hierarchical positions. Overall India and CBSE primary denominators remain unestablished.
 
-## Decision proposed
+## Scope decision
 
 Finish a **NCERT national-framework baseline plus applicable CBSE primary additions**, for Classes I–V and the relevant Foundational/Preparatory stage requirements. Bind actual languages and resources as configurations. Do not require every named-language table, content-medium translation or school art alternative simultaneously. State boards, SCERT-specific programmes, CISCE, actual PE duties and VI+ authoring remain outside this decision.
 
@@ -35,6 +35,6 @@ The [2025 Foundational publication](https://ncert.nic.in/pdf/publication/otherpu
 | Current materials | Selected I–V mathematics, language, TWAU and arts resources; preliminary/index capture is not a complete activity audit | Verify clauses needed by each selected requirement and missing resource bindings. Check additional assessable demands explicitly; do not count every practice question as a new standard or require every translation. |
 | Arts, wellbeing and implementation | Selected art forms/resources, current art-project pairing applicability, health/self-care boundaries and textbook transition duties | Bind the actual applicable programme; preserve source differences and honest contextual conditions. A 2025–26 pairing table is not automatically certified for 2026–27. |
 | Source meaning and historical relations | One baseline Grade II musical-scale distinction; individual 2017 reference applicability | Obtain authoritative clarification where used. Keep the 304-position 2017 catalogue as a reference until current applicability is established; do not add it to a current obligation denominator or declare it repealed. |
-| CBSE supplement | Twenty unreviewed CT/AI hierarchical positions after accepted C-3; C-4 remains a separate local proposal | Review complete clauses and actual performance/material evidence, including genuine computer procedures for C-6. No goal/grade-parent promotion from a competency link. |
+| CBSE supplement | Twenty unreviewed CT/AI hierarchical positions after accepted C-3; C-4 is proposed separately in this change | Review complete clauses and actual performance/material evidence, including genuine computer procedures for C-6. No goal/grade-parent promotion from a competency link. |
 
-The next deliverable is a reviewed inventory decision with these fixed boundaries, followed by bounded alignments against the applicable requirements. Full named-programme coverage needs that programme's source verification; full framework coverage needs complete role-bound task accounting. Neither requires silently treating all language alternatives as co-required. No taxonomy, source identities, associations or accepted counts change in this proposal.
+Remaining work follows the finite barrier table, using bounded alignments against applicable requirements. Full named-programme coverage needs that programme's source verification; full framework coverage needs complete role-bound task accounting. Neither requires silently treating all language alternatives as co-required. No taxonomy, source identities, associations or accepted counts change in this proposal.
