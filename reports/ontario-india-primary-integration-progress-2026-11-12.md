@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,423 reported Full / 43 Partial, including
-35 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,428 reported Full / 38 Partial, including
+30 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 41 Partials remain
+the excluded PE component explicitly unclaimed. The other 36 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -124,6 +124,14 @@ unestablished pending the current-source completeness audit.
   Studies conditions. The remaining two Kindergarten whole-source Partials retain
   excluded PE portions; their in-scope fine-motor persistence/variety authoring is
   separately accounted without changing the denominator or claiming PE coverage.
+- Ontario Grade 3 soils: five source-authoring closures reuse existing component
+  claims with independently assessed soil health, added/absorbed substances,
+  managed composting and both broad overalls. Multiple indicators, changed cases
+  and actual-investigation versus documentary/model boundaries remain explicit.
+  No canonical data, topic, pair, interval, guide or edge changes; five earlier
+  Full soil rows are outside this fresh requalification. Current Ontario totals:
+  2,428 reported Full / 38 Partial, including 30 Science, six Social Studies and
+  two mixed PE/non-PE Kindergarten rows whose in-scope authoring is accounted.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -211,7 +219,7 @@ unestablished pending the current-source completeness audit.
 
 ## Remaining work
 
-- Ontario: 35 Science and six Social Studies source qualifications, followed by
+- Ontario: 30 Science and six Social Studies source qualifications, followed by
   historical coverage audits across all subjects. The two mixed-scope Kindergarten
   records retain explicit PE exclusions; their non-PE authoring is accounted.
 - India: 43 remaining typed conditions need current source/task qualification;
