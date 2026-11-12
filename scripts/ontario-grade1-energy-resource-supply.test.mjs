@@ -35,6 +35,9 @@ function check(r = report) {
   assert.deepEqual(r.protocols.C2.assessment.requiredEvidence, ['energy-movement-change-and-life', 'sun-principal-not-only', 'solar-air-land-water-light-green-plant', 'animal-and-person-food-energy', 'source-useful-stock-use-relation', 'changed-day-season-use-transfer']);
   assert.deepEqual(r.protocols['C2.5'].requiredEvidence, ['natural-origins-versus-handling', 'finite-useful-stock-not-energy-disappearance', 'donor-recipient-transfer', 'changed-essential-need', 'source-specific-availability']);
   assert.equal(r.originalStockResource.isObservedReserveOrLearnerResult, false);
+  assert.equal(r.fullIndependentAssessment.exactSequenceReference, '/originalStockResource/independentSequence');
+  assert.match(r.fullIndependentAssessment.materials.at(-1), /TWO counters.*available B.*independentSequence/);
+  assert.match(r.fullIndependentAssessment.materials.at(-1), /four-counter.*separate teaching model/);
   assert.match(r.originalStockResource.purposeCards.changed, /occupied.*needs suitable warmth/);
   for (const pair of r.newComponentPairs) {
     assert.equal(pair.role, 'component');

@@ -150,7 +150,7 @@
     "materials": [
       "Unordered resource labels: coal, oil, natural gas, moving air, sunlight; location labels: natural surroundings, underground deposit, shop/store, power station.",
       "Ten counters, two unheated/occupied-building job cards and one empty-room job card.",
-      "Separate new-delivery facts: four counters supplied from another explicitly finite deposit."
+      "Independent new-delivery facts: TWO counters move from the declared available B supply to the local shop, following originalStockResource.independentSequence. The four-counter new-delivery study card is a separate teaching model."
     ],
     "prompts": [
       "Trace three fuel resources and the two contrasting resources to their natural origins. Explain why the shop or power station is not the original natural source.",
@@ -171,7 +171,8 @@
       "Naming renewable/non-renewable categories without the source relation.",
       "Claiming no resources remain anywhere when one store empties.",
       "Saying all natural resources are unlimited because the wind may return."
-    ]
+    ],
+    "exactSequenceReference": "/originalStockResource/independentSequence"
   },
   "protocols": {
     "C2.5": {
