@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1909,
+  "topicCount": 1910,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -48070,6 +48070,27 @@
       ],
       "ageRangeStart": 6,
       "ageRangeEnd": 7
+    },
+    {
+      "id": "mt_WaA8ssQp2K",
+      "type": "CONCEPTUAL",
+      "subject": "Geography",
+      "domain": "Places & Environments",
+      "name": "Water availability and drinking-water access",
+      "description": "Distinguish physical fresh-water availability from safe, usable drinking-water access in particular communities. Compare accurately attributed cases from different world regions, explaining how water sources, distance, treatment/supply arrangements and changing conditions affect daily life. State what the case evidence establishes and what remains unknown instead of inferring safety or access from the mere presence of water.",
+      "centrality": 0,
+      "evidence": [
+        "Distinguish water being physically present, its fresh/salty condition, and safe drinking water being obtainable where and when people need it. Explain why a nearby freshwater source or a pipe alone does not prove all those conditions.",
+        "Describe and compare at least two accurately attributed studied community cases from different world regions, identifying the relevant natural water input and access/supply arrangement while retaining place, date and case limits.",
+        "Explain at least two case-supported consequences for community life, connecting an access condition or change to collection time, school/daily activities or supply reliability. Do not generalise a community case to everyone in a country or assume infrastructure removes every problem.",
+        "Apply the distinction to a fresh declared changed case: reason separately about physical water, access and quality, explain the resulting community consequence and identify information still needed. Do not invent an observed result, guaranteed solution or safety judgement."
+      ],
+      "assessmentPrompt": "After studying communities in different parts of the world, can {{name}} explain where their water comes from, how people obtain drinking water and how that affects daily life? If the water source remains but the supply route stops working, can they explain what changed and what they still need to know, without deciding that all water nearby must be safe?",
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.3"
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8
     }
   ]
 }

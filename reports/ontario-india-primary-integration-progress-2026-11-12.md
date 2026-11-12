@@ -5,8 +5,8 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,385 reported Full / 81 Partial, including
-37 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,386 reported Full / 80 Partial, including
+36 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 
@@ -86,6 +86,12 @@ unestablished pending the current-source completeness audit.
   6–7; existing broader environmental and resource-comparison claims remain
   unchanged. Combined proposed totals: 2,385 Full / 81 Partial, including 37
   Science Partials. These are draft counts, not acceptance on main.
+- Ontario water access: one portable concept and guide distinguish physical
+  freshwater from usable drinking-water access, using three dated community
+  cases and independent changed-condition assessment. One Ontario 7–8 context
+  and component pair close E1.3 without promoting its parent or historical water
+  rows. Combined proposed totals: 2,386 Full / 80 Partial, including 36 Science
+  Partials. All old claims, intervals, guides and edges remain exact.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
