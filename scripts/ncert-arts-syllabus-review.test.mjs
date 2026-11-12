@@ -1693,7 +1693,7 @@ const expected=[
     "taskConditions": {
       "actualObjectMaterialOriginLinks": true,
       "wholeNaturalMadeAndFibreChecks": true,
-      "inheritedFairTestCheckedSeparately": true
+      "separateFairTestMasteryNotInferred": true
     },
     "topicIds": [
       "mt_i8AGTuk4fJ"
@@ -2605,6 +2605,7 @@ const state=()=>({report:read('reports/ncert-arts-syllabus-alignment-2026-11-10.
 function verify(s){
  const rs=s.report.records,keys=new Set(rs.map(r=>r.key));assert.equal(rs.length,56);assert.equal(keys.size,56);assert.deepEqual(rs.map(project),expected,'reviewed source position/panel/conditions/components drift');
  const ps=new Map(s.protocols.protocols.map(p=>[p.id,p]));assert.equal(ps.size,21);const bs=new Map(s.protocols.sourceBindings.map(b=>[b.key,b]));assert.equal(bs.size,56);
+ const origins=ps.get('material-origins');assert(origins);assert(!/canonical hard-path assessment condition/.test(origins.task),'removed material-origin fair-test gate restored');
  const observation=ps.get('listening-and-ordered-instructions').equipmentObservationTask;assert(observation,'missing concrete equipment observation task');assert.deepEqual(observation.appliesToPanels,['listening-observing','classroom-observation-discussion']);assert(observation.equipment.length);assert.deepEqual(observation.learnerActions.map(x=>x.operation),['equipment-use','detailed-observation','comparison-from-observation','listening-discussion-response']);assert.deepEqual(observation.requiredEvidence,['actual-equipment-use','specific-observed-details','similarity-and-difference-from-observation','relevant-listening-or-discussion-response']);for(const x of observation.learnerActions)assert(x.instruction.length>0);
  const known=new Set(s.catalogue.curricula.flatMap(c=>c.topics.map(t=>t.key)));const expectedPairs=new Set();let pairs=0,conditional=0;
  for(const [id,p]of ps){assert.deepEqual(p.sourceConditions,protocolConditions[id]);for(const k of ['task','positiveEvidence','nearMiss','transfer'])assert.equal(typeof p[k],'string');}
@@ -2636,6 +2637,8 @@ test('Arts56 rejects wrong-valid panels, lost physical/material duties, invented
   s=>s.report.records.find(r=>r.taskPanel==='actual-imprint-texture-product').taskConditions.actualObjectPrintingOrImpression=false,
   s=>s.report.records.find(r=>r.taskPanel==='own-sound-small-instruments').taskConditions.actualSmallInstrumentOutput=false,
   s=>s.report.records.find(r=>r.taskPanel==='dramatic-still-images').taskConditions.actualNonSpeakingEmbodiedTableau=false,
+  s=>s.report.records.find(r=>r.taskPanel==='natural-material-origins').taskConditions.separateFairTestMasteryNotInferred=false,
+  s=>s.protocols.protocols.find(p=>p.id==='material-origins').task+=' This is a canonical hard-path assessment condition.',
   s=>s.report.records[0].requiredGradeBand=[1],
   s=>s.protocols.sourceBindings[0].tableScope=['Grade 1'],
   s=>{const r=s.report.records.find(r=>r.conditionalContributions.length),c=r.conditionalContributions[0];s.alignments.alignments.push({topicId:c.topicId,scope:'jurisdiction',country:'IN',ageRangeStart:3,ageRangeEnd:8,standards:[r.key]});},
