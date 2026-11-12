@@ -5,7 +5,7 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,386 reported Full / 80 Partial, including
+Current integrated draft: Ontario 2,410 reported Full / 56 Partial, including
 36 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
@@ -92,6 +92,14 @@ unestablished pending the current-source completeness audit.
   and component pair close E1.3 without promoting its parent or historical water
   rows. Combined proposed totals: 2,386 Full / 80 Partial, including 36 Science
   Partials. All old claims, intervals, guides and edges remain exact.
+- Ontario French local-community resources: 24 authoring closures reuse all existing
+  topics, associations and age intervals. Four independent channel portfolios bind
+  actual verified example resources and retain a truthful local substitution
+  contract, Grade 3 Ontario repertoire and independent world/sociolinguistic
+  overall tasks. All 594 French records now have source-authoring designs; actual
+  local configuration and learner performance remain required at delivery. Combined
+  proposed Ontario totals: 2,410 reported Full / 56 Partial, including 36 Science
+  Partials. Every canonical data file and old report remains byte-exact.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -126,8 +134,8 @@ unestablished pending the current-source completeness audit.
 
 ## Remaining work
 
-- Ontario Science residuals; French local-community culture bindings; Social
-  Studies community, territory and chronology bindings; Kindergarten local
+- Ontario Science residuals; Social Studies community, territory and chronology
+  bindings; Kindergarten local
   resources and mixed-scope conditions; historical coverage audits across all
   subjects, including those currently showing zero Partials.
 - India current source completeness and applicability; formal role-bound
