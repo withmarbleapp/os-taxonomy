@@ -1,6 +1,6 @@
 # CBSE CT/AI supplement: primary reasoning review packet
 
-Local proposal on accepted main `33eda30b1b35123dd04f3932aedaf2bd6f94d057`; no taxonomy data changed. This packet covers three selected stage-end competencies, C-1, C-2 and C-5, in the **CBSE CT/AI supplement (Classes III–V), 2026–27**. It proposes five component associations using five unchanged existing claims. The contextual interval is India 8–11, a Preparatory stage-end reference. The Grade IV/V examples below are teaching and assessment exemplars within that stage, rather than separate deadlines at every grade.
+Local proposal on accepted main `33eda30b1b35123dd04f3932aedaf2bd6f94d057`; exact five-pair source-authoring proposal applied locally; peer review and validation pending. This packet covers three selected stage-end competencies, C-1, C-2 and C-5, in the **CBSE CT/AI supplement (Classes III–V), 2026–27**. It authors five proposed component associations using five unchanged existing claims. The contextual interval is India 8–11, a Preparatory stage-end reference. The Grade IV/V examples below are teaching and assessment exemplars within that stage, rather than separate deadlines at every grade.
 
 No overall India or CBSE primary denominator is established. The historical selected NCERT baseline remains 444 Full of 521 eligible. On this packet's accepted base, one of the supplement's 21 selected hierarchical records is Full. C-4 is separately proposed in PR158. This packet proposes three more source authoring dispositions; it does not claim three unique skills, goal coverage, graded-parent coverage or learner attainment.
 
@@ -10,7 +10,7 @@ No overall India or CBSE primary denominator is established. The historical sele
 | C-2 | `mt_A-FyLLLLzy` Shape patterns; `mt_WXW0hjNhph` Patterns & Sequences | Append each component pair to its exact existing India 8–11 context |
 | C-5 | `mt_EBYGhd8X3x` Connecting Representations | Add one India 8–11 context within its unchanged global 6–13 interval |
 
-All other contexts, claims, ages, guides and hard edges stay intact. Full below means a complete authoring design for the selected source competency, supported jointly by components and the explicit assessment protocol. It never awards a whole target topic or any prerequisite from source-only success. Full remains a proposal pending semantic review.
+All other contexts, claims, ages, guides and hard edges stay intact. Full below means a complete authoring design for the selected source competency, supported jointly by components and the explicit assessment protocol. It never awards a whole target topic or any prerequisite from source-only success. Full remains a proposed source-authoring judgment: root reviewed the complete packet and authorized this exact local change; independent peer review and validation remain.
 
 ## Whole claims and fit
 
@@ -84,4 +84,4 @@ The supplementary stage-end context does not turn a Grade IV example into eviden
 
 C-6 requires actual computer-procedure performance and remains separate. Three curricular goals and twelve graded parent boxes remain unreviewed as whole records; completing competency components does not promote them. The 2017 reference catalogue's current individual applicability, configured named-language role/material bindings, unresolved source renditions and actual arts/material choices remain part of the wider India audit. These 21 selected CT/AI hierarchical positions are never the denominator for overall CBSE primary.
 
-Before authoring: semantic review of the complete packet, exact five-pair/context proof, reconciliation with whichever of PR157/158/159 has actually reached main, then generation, validation, generated-check and full tests. Source text and literal private proof remain outside Git. No public source text, copied diagrams or new mastery topics are needed.
+Before PR handoff: complete independent peer review, exact five-pair/context proof, reconciliation with whichever of PR157/158/159 has actually reached main, then generation, validation, generated-check and full tests. Source text and literal private proof remain outside Git. No public source text, copied diagrams or new mastery topics are needed.

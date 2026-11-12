@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "baseCommit": "33eda30b1b35123dd04f3932aedaf2bd6f94d057",
-  "status": "Local complete review proposal; taxonomy data unchanged",
+  "status": "Authorized local source-authoring proposal; three Full dispositions, peer review pending",
   "scope": "CBSE CT/AI supplement (Classes III–V) only",
   "selectedCompetencies": [
     "C-1",
     "C-2",
     "C-5"
   ],
-  "proposedSourceDisposition": "Full authoring, pending semantic review",
+  "proposedSourceDisposition": "Full authoring for C-1, C-2 and C-5; no learner or parent promotion",
   "candidatePairs": [
     {
       "competency": "C-1",
@@ -120,14 +120,73 @@
     "separateC4Proposal": 1,
     "thisProposal": 3,
     "overallIndiaDenominator": null,
-    "overallCBSEPrimaryDenominator": null
+    "overallCBSEPrimaryDenominator": null,
+    "proposedFullAfterThisSliceOnAcceptedBase": 4,
+    "proposedFullIfSeparateC4Accepted": 5
   },
   "remaining": [
-    "Semantic review of this bounded batch",
-    "Reconcile actual accepted main before authoring",
-    "Exact five-pair/context preservation proof and required data checks",
-    "C6 actual computer performance",
+    "Independent peer semantic review",
+    "Reconcile actual accepted main at PR handoff; no new PR while158/159open",
+    "C6 actual computer performance and operational/path review",
     "Whole goals and graded parent independent review",
     "Broader current-source and configured programme completeness audit"
+  ],
+  "records": [
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-1",
+      "officialCode": "C-1",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_RXnyhCRYXA",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_fLOkq-HfPB",
+          "role": "component"
+        }
+      ],
+      "rationale": "Two unchanged component claims jointly support independent puzzle constraint analysis and daily-life problem modelling. The explicit protocol requires text/quantity interpretation, visual construction, justified multi-step choices, checks of all constraints and a changed case. Whole claim and hard-path extras stay independent.",
+      "assessmentProtocol": "cbse-primary-reasoning-review-packet-2026-11-12.md",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "interpretation": "Complete proposed source authoring design, not observed learner attainment or whole-topic certification"
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-2",
+      "officialCode": "C-2",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_A-FyLLLLzy",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_WXW0hjNhph",
+          "role": "component"
+        }
+      ],
+      "rationale": "Two unchanged component claims jointly support rule inference and generation, non-verbal pattern relationships, structural explanation and application to new cases. The original dot-card and number-to-symbol resource requires constructed responses rather than lucky next-item recognition; wider repeat-unit and implicit-feature claim checks remain explicit.",
+      "assessmentProtocol": "cbse-primary-reasoning-review-packet-2026-11-12.md",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "interpretation": "Complete proposed source authoring design, not observed learner attainment or whole-topic certification"
+    },
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-5",
+      "officialCode": "C-5",
+      "disposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_EBYGhd8X3x",
+          "role": "component"
+        }
+      ],
+      "rationale": "The unchanged representation claim and explicit protocol connect concepts, procedures and representations in purchase and equal-group problems. Learners map each quantity, explain why alternate procedures express the same situation, construct representations both ways and transfer to changed cases. Broader equality/comparison and prerequisite duties stay independent.",
+      "assessmentProtocol": "cbse-primary-reasoning-review-packet-2026-11-12.md",
+      "remainingConditions": [],
+      "residualKind": "none",
+      "interpretation": "Complete proposed source authoring design, not observed learner attainment or whole-topic certification"
+    }
   ]
 }
