@@ -132,8 +132,8 @@ unestablished pending the current-source completeness audit.
   subjects, including those currently showing zero Partials.
 - India current source completeness and applicability; formal role-bound
   language tasks and configured resources; source rendition ambiguities; arts,
-  wellbeing and implementation conditions; remaining CT/AI competencies and
-  independent goal/grade-parent review; current applicability of older reference
+  wellbeing and implementation conditions; independent CT/AI goal/grade-parent
+  review after the six stage competencies; current applicability of older reference
   outcomes where used. Do not convert each example or alternative into a topic.
 - Final code-set, resource/protocol, whole-claim and scoped-context audit against
   the final integration head. Report remaining genuine source limitations
