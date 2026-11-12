@@ -75,6 +75,12 @@ unestablished pending the current-source completeness audit.
   proposed totals: 2,383 Full / 83 Partial, including 39 Science Partials.
   The new topic starts only at its supported Ontario 7–8 interval and has no
   invented hard prerequisites. All old claims, intervals and guides remain exact.
+- Ontario energy resources: one portable natural-origin/useful-supply concept,
+  guide and five component pairs close the resource-limits expectation and its
+  separately assessed energy overall. The new claim starts only in Ontario
+  6–7; existing broader environmental and resource-comparison claims remain
+  unchanged. Combined proposed totals: 2,385 Full / 81 Partial, including 37
+  Science Partials. These are draft counts, not acceptance on main.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
