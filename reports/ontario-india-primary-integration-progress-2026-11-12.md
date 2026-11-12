@@ -217,6 +217,13 @@ unestablished pending the current-source completeness audit.
   or learner-state change. Downstream claim-revision and private-state compatibility
   qualification is required before publishing this correction to staging.
 
+- Historical sorting prerequisite correction: one broad statistics-vocabulary
+  dependency becomes supporting rather than mandatory. Complete independent
+  sorting/counting/table construction does not require the full continuous-data
+  and chart-type glossary. All topic claims, ages, contexts, research and the
+  other 4,001 dependencies remain exact; no source-closure count changes. Review
+  downstream scheduling/eligibility and private-state compatibility before staging.
+
 ## Remaining work
 
 - Ontario: 30 Science and six Social Studies source qualifications, followed by
