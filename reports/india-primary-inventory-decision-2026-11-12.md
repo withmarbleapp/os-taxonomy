@@ -1,0 +1,40 @@
+# India primary inventory: candidate scope decision
+
+This is a proposed audit boundary against accepted main `df93fa372227fd3d07e11f16c3949a02526723bd`, not a new coverage certification. Accepted selected NCERT authoring remains **444 Full and four Partial among 521 eligible selected records**. The separate **CBSE CT/AI supplement (Classes III–V)** has one accepted Full source-competency alignment among 21 overlapping hierarchical positions. Overall India and CBSE primary denominators remain unestablished.
+
+## Decision proposed
+
+Finish a **NCERT national-framework baseline plus applicable CBSE primary additions**, for Classes I–V and the relevant Foundational/Preparatory stage requirements. Bind actual languages and resources as configurations. Do not require every named-language table, content-medium translation or school art alternative simultaneously. State boards, SCERT-specific programmes, CISCE, actual PE duties and VI+ authoring remain outside this decision.
+
+The formal source-area inventory is bounded enough to proceed. Completeness of configured language, material and performance coverage is not established. The selected 521-record baseline remains a separately named historical selection; neither a revised denominator nor a national percentage is introduced here.
+
+| Area | Classes I–II view | Classes III–V view | Inventory decision |
+| --- | --- | --- | --- |
+| Languages | R1/R2 communication and literacy with stage conditions | R1 and R2 stage competencies | Role-based requirements with applicable exemptions; bind language identities, scripts, accessible materials and assessor competence. |
+| Mathematics | Foundational cognitive/mathematical standards | Preparatory mathematics | Retain both stages; current books provide material placement, not one new requirement per exercise. |
+| Environment, society, inquiry and work | Integrated developmental learning | The World Around Us, including work/pre-vocational learning | No missing standalone I/II EVS book or separate primary vocational subject is inferred. |
+| Arts | Aesthetic/cultural development and integrated resources | Art Education, with published resource/choice conditions | Audit the applicable art selection; retain contextual participation separately from assessable operations. |
+| Health, safety, habits and development | Relevant developmental domains | Relevant interdisciplinary and wellbeing duties | Preserve these duties while excluding actual PE requirements; do not discard a whole book solely from its label. |
+| CBSE additions | Applicable language/material implementation | Same, plus the distinct III–V CT/AI supplement | Keep source-specific additions and implementation duties separate from NCERT records. |
+
+## Official basis and limits
+
+The [NCF-SE October 2024 edition](https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf), Part A section 1.4, printed 13–14, defines Foundational developmental domains and Preparatory R1/R2, Mathematics, Art Education, PE and TWAU. Work/pre-vocational learning sits within TWAU. This supports the area boundary above, not universal copies at each grade. The accepted factual indexes retain [82 Foundational records](ncert-ncfse-foundational-index-2026-11-09.json), [91 Preparatory core records](ncert-ncfse-preparatory-core-index-2026-11-09.json) and [81 Preparatory arts/PE records](ncert-ncfse-preparatory-arts-pe-index-2026-11-09.json), including alternatives and overlapping hierarchy. Their 254 records are not 254 unique skills or simultaneous duties.
+
+The [2025 Foundational publication](https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf), printed 2–3 / PDF 4–5, uses integrated I/II learning, distinguishes stage competencies from grade outcomes, and permits contextualisation of suggestive outcomes. Thus its programme tables need source-faithful preservation and applicability decisions, rather than automatic cumulative national mandates. [Acad-48/2025](https://cbseacademic.nic.in/web_material/Circulars/2025/48_Circular_2025.pdf) announces the publication and Grade V resources; it does not select one national language pair.
+
+[CBSE Acad-30/2025](https://cbseacademic.nic.in/web_material/Circulars/2025/30_Circular_2025.pdf), sections 1–3 and 5 / PDF 1–4, requires role-based language implementation and mapping of learners' language backgrounds. R1 familiarity, medium of instruction, staged R2 introduction and accessible resources matter. Hindi/Urdu/English books are described as available resources. **Our inventory inference:** a named-language table applies when that programme and role are selected; its existence does not make that language compulsory for every child. Applicable accessibility/exemption provisions in section 4 remain explicit. The formal Foundational source also retains the unfamiliar-R2 emergence condition. This does not certify any particular school or learner configuration. [Acad-17/2026](https://cbseacademic.nic.in/web_material/Circulars/2026/17_Circular_2026.pdf) explicitly introduces R3 in Class VI; it supplies no automatic primary R3 extension.
+
+## Finite verification barriers
+
+| Barrier | Exact unfinished scope | Decision needed to close it |
+| --- | --- | --- |
+| Formal language performance | Four accepted Partial language competencies, ten conditional language bindings and associated reading/context conditions | Complete the remaining task clauses and bind actual R1/R2, script, text and assessor. Source-neutral coverage is not proof of all named programmes. |
+| Hindi 2025 variant | PDF 35–43: 83 printed primary positions, 41 Grade I and 42 Grade II; visual boundaries and independent marker counts agree | Independent competent language readback of prepared private candidates and review of printed anomalies. Blocks a complete Hindi-programme catalogue/coverage claim; does not create 83 national compulsory skills or replace formal R1/R2 records. |
+| Urdu 2025 variant | PDF 44–48: 49 markers, provisionally 47 outcomes after attaching two parenthetical fragments; neutral right/left columns retained | Resolve canonical wording, segmentation and absent grade numerals in both printed column headers. No Grade I/II IDs or final record count invented. Blocks Urdu-programme claims, not the role-based framework inventory. |
+| Current materials | Selected I–V mathematics, language, TWAU and arts resources; preliminary/index capture is not a complete activity audit | Verify clauses needed by each selected requirement and missing resource bindings. Check additional assessable demands explicitly; do not count every practice question as a new standard or require every translation. |
+| Arts, wellbeing and implementation | Selected art forms/resources, current art-project pairing applicability, health/self-care boundaries and textbook transition duties | Bind the actual applicable programme; preserve source differences and honest contextual conditions. A 2025–26 pairing table is not automatically certified for 2026–27. |
+| Source meaning and historical relations | One baseline Grade II musical-scale distinction; individual 2017 reference applicability | Obtain authoritative clarification where used. Keep the 304-position 2017 catalogue as a reference until current applicability is established; do not add it to a current obligation denominator or declare it repealed. |
+| CBSE supplement | Twenty unreviewed CT/AI hierarchical positions after accepted C-3; C-4 remains a separate local proposal | Review complete clauses and actual performance/material evidence, including genuine computer procedures for C-6. No goal/grade-parent promotion from a competency link. |
+
+The next deliverable is a reviewed inventory decision with these fixed boundaries, followed by bounded alignments against the applicable requirements. Full named-programme coverage needs that programme's source verification; full framework coverage needs complete role-bound task accounting. Neither requires silently treating all language alternatives as co-required. No taxonomy, source identities, associations or accepted counts change in this proposal.
