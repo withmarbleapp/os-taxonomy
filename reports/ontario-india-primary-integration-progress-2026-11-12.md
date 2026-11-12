@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,430 reported Full / 36 Partial, including
-30 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,432 reported Full / 34 Partial, including
+28 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 34 Partials remain
+the excluded PE component explicitly unclaimed. The other 32 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -291,3 +291,22 @@ whole-claim decisions. Qualified commits are integrated into this one PR;
 generated artifacts are reconciled once at integration. Progress distinguishes
 accepted baseline, proposed branch changes and unfinished work. No additional
 public PR per small batch is required.
+
+## Grade 2 air and water properties: two further source closures
+
+Independent root and peer review qualified E2.1 and the separately assessed E2
+overall using the original air/water task portfolio. Actual observations, fresh
+changed cases, air and water properties, natural/built water routes, the connected
+cycle and living needs are explicit. The complete existing whole-topic operations
+remain separate; earlier E2.3/E2.4/E2.5 labels are not freshly recertified here.
+No topics, associations, ages, contexts or dependencies were added.
+
+Three factual fields were corrected: States of Matter's prompt distinguishes
+invisible water vapour from visible mist, and Cloud Types' description/prompt
+include ice crystals. Existing complete guides already support these distinctions.
+Downstream claim-revision and private-state qualification remain required before
+staging publication; no learner reset or reinterpretation is assumed.
+
+Current remaining source Partials: 28 Science, four Social Studies and two mixed
+Kindergarten records whose in-scope non-PE authoring is accounted for. Thus 32
+in-scope expectations remain unqualified, alongside the historical audit gate.
