@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "acceptedBase": "df93fa372227fd3d07e11f16c3949a02526723bd",
+  "acceptedBase": "228e7421ed75e35e1a5a0fc91acb4884838ca086",
   "snapshotDate": "2026-11-12",
   "scope": "Primary Classes I–V plus relevant Foundational/Preparatory stage records; PE duties, VI+ authoring, state-board and CISCE coverage excluded.",
   "comprehensiveCurrentIndiaDenominator": null,
@@ -41,14 +41,14 @@
       "name": "CBSE CT/AI supplement (Classes III–V), 21 selected hierarchical positions",
       "retainedPositions": 21,
       "excludedPhysicalEducationWithinSelection": 0,
-      "FullAuthoring": 1,
+      "FullAuthoring": 2,
       "PartialAuthoring": 0,
-      "unreviewedCoveragePositions": 20,
-      "linkedKeys": 1,
-      "pairs": 1,
-      "existingTopicsUsed": 1,
+      "unreviewedCoveragePositions": 19,
+      "linkedKeys": 2,
+      "pairs": 2,
+      "existingTopicsUsed": 2,
       "selectedFrameworkPositions": 21,
-      "unlinkedSelectedFrameworkPositions": 20,
+      "unlinkedSelectedFrameworkPositions": 19,
       "denominatorMeaning": "Only selected CBSE CT/AI supplement Classes III–V hierarchical positions; not overall CBSE primary or unique skills."
     }
   ],
@@ -167,22 +167,34 @@
         48
       ],
       "recordCount": null,
-      "status": "Canonical extraction and independent language readback unverified; do not invent keys."
+      "status": "Hindi-script83-position source readback independently verified; catalogue extension proposed separately. Urdu canonical wording, final segmentation and exact grade metadata remain Unverified. Target language is not inferred from script."
     },
     "currentTextbooksAndEditionRelations": "Current I–V material clauses and source completeness are not established by selected catalogue counts.",
-    "CBSEImplementation": "Actual language roles, current art-project/material choices and transition/textbook applicability remain to be bound."
-  },
-  "proposedNotAccepted": [
-    {
-      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
-      "topicId": "mt_mQcWGh02no",
-      "role": "component",
-      "proposedDisposition": "Full authoring, pending semantic review",
-      "newPairs": 1,
-      "newTopics": 0,
-      "status": "Local only, pending semantic review"
+    "CBSEImplementation": "Actual language roles, current art-project/material choices and transition/textbook applicability remain to be bound.",
+    "2025HindiScriptRendition": {
+      "source": "ncert-fs-2025",
+      "sourcePdfPages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "sourcePositions": 83,
+      "canonicalReadback": "Independently verified for the selected source rendition",
+      "targetLanguage": null,
+      "programmeApplicability": "Unverified; not explicitly named by the heading",
+      "coverageReviewed": 0,
+      "linkedKeys": 0,
+      "selectedBaselineMembership": "Outside the historical570retained/521eligible selection",
+      "report": "ncert-fs-hindi-script-primary-catalogue-2026-11-12.md"
     }
-  ],
+  },
+  "proposedNotAccepted": [],
   "completionCriteria": [
     "Establish the current source/programme and grade/language boundary before claiming comprehensive coverage.",
     "Give each selected in-scope requirement a whole-clause disposition with existing-claim evidence, material/performance conditions and justified reuse or additions.",
@@ -205,7 +217,7 @@
     "stageRecordsApplyOnce": true,
     "catalogueDoesNotDeclareUniqueSkills": true,
     "acceptedCoverageReviewed": true,
-    "acceptedCoverageReviewScope": "Only C-3; remaining 20 selected hierarchical positions are unreviewed for coverage."
+    "acceptedCoverageReviewScope": "Only C-3 and C-4; remaining19 selected hierarchical positions are unreviewed for coverage."
   },
   "overallCBSEPrimaryDenominator": null,
   "overallIndiaDenominator": null,
@@ -226,6 +238,18 @@
       "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/154",
       "disposition": "Full authoring",
       "acceptedCommit": "df93fa372227fd3d07e11f16c3949a02526723bd"
+    },
+    {
+      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
+      "topicId": "mt_mQcWGh02no",
+      "role": "component",
+      "newPairs": 1,
+      "newTopics": 0,
+      "status": "Accepted on main via PR158",
+      "disposition": "Full authoring",
+      "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/158",
+      "acceptedCommit": "228e7421ed75e35e1a5a0fc91acb4884838ca086"
     }
-  ]
+  ],
+  "scopeDecisionReport": "india-primary-inventory-decision-2026-11-12.md"
 }
