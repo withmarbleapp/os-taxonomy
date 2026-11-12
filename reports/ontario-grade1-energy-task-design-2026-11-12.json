@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Proposed source-bound authoring portfolio for four Grade 1 energy expectations, pending complete protocol review. Receiving factual cards is not evidence of delivery, efficacy or learner mastery.",
+  "ageRange": [
+    6,
+    7
+  ],
+  "localDependencyCommit": "2a7ab7e092ab7ec92622fb68141a369fccb617ff",
+  "source": {
+    "slug": "the-ontario-curriculum-science-and-technology-20",
+    "version": "2022",
+    "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/4b8f8ea5-e66a-4082-bfa0-795d8d7f8c08/SciTech_G1_AODA.pdf",
+    "expectationsSha256": "7d6463a188d376251344be94ec61a42276aa042fd77fc9cfc055c829f974d936",
+    "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+    "contextSha256": "1ade9235dcacf15c27dcc92328d1f883c3026c1687bf40368448b39ec6e4bd74"
+  },
+  "delivery": {
+    "format": "Original readable/printable text cards and assessment protocols in this JSON. An educator can read cards aloud, copy them onto paper and supply blank paper/arrows; no inaccessible private witness or special app is required.",
+    "studyAndAssessmentSeparation": "Study cards teach factual content. Independent questions, learner-created models and changed cases assess application; merely receiving cards or repeating an adult’s answer never demonstrates mastery.",
+    "recording": "Educator records the learner’s actual explanation, drawing/model, observed comparisons where required and transfer reasoning. No fictional child scores, completed observation records or learner-state writes are supplied."
+  },
+  "resources": {
+    "eia-energy": {
+      "url": "https://www.eia.gov/energyexplained/what-is-energy/",
+      "publisher": "US Energy Information Administration",
+      "readScope": "Complete explanatory main body read. Use broad everyday movement/change uses and food energy; no formal energy-type repertoire, measurements or technical store/transfer gates.",
+      "factualContribution": "Food can supply energy used for activity; energy enables useful movement and other changes."
+    },
+    "nasa-principal": {
+      "url": "https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance",
+      "publisher": "NASA Goddard Earth Sciences Division",
+      "readScope": "Complete main body read2026-11-12. Adopt only predominant input, surface heating and plant productivity; no missions, instrument histories, forecast or solar variability claims. Images not inspected.",
+      "factualContribution": "The Sun supplies the dominant energy input to Earth; this is principal, not only."
+    },
+    "nasa-warming": {
+      "url": "https://terra.nasa.gov/science/water-energy-cycle",
+      "publisher": "NASA Terra",
+      "readScope": "Complete main body read; use Sun warming atmosphere, land and ocean, not instrument/climate-prediction claims or numerical budgets. Images not inspected.",
+      "factualContribution": "Sun energy warms air, land and water."
+    },
+    "umn-green-plant": {
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/lighting-for-indoor-plants",
+      "publisher": "University of Minnesota Extension",
+      "readScope": "Actual opening main body through light-requirement comparisons read again2026-11-12. Use sufficient-light food production and growth only for selected ordinary green plants. Later species/equipment sections not claimed fully read.",
+      "factualContribution": "Selected green plants make food using light, and use energy from that food for growth; amounts and other needs matter. No universal all-plant statement or technical chemistry vocabulary adopted."
+    },
+    "noaa-producer-boundary": {
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/photochemo/",
+      "publisher": "NOAA Ocean Exploration",
+      "readScope": "Complete explanatory main body read; use existence of non-sunlight producer bases only to bound studied examples. Video not watched.",
+      "factualContribution": "Studied green-plant and sunlit marine chains do not justify a universal plant-only or sunlight-only rule."
+    }
+  },
+  "preparedCases": {
+    "common-energy": {
+      "role": "independent-move-change-generalisation",
+      "resourceRefs": [
+        "eia-energy",
+        "nasa-warming"
+      ],
+      "learnerStudyCards": [
+        "Card M: A person obtains energy from food. The person can use energy for movement and growth.",
+        "Card W: Sunlight reaches a patch of ground. In the studied comparison, the sunlit surface becomes warmer than a matched shaded surface.",
+        "Card N: Energy is a way of talking about the ability to cause movement or another change. A source, the object being changed and the change are different parts of the story."
+      ],
+      "teachingSequence": [
+        "Read the cards aloud or let the learner inspect them. Ask the learner to identify what moves or changes in each case before introducing the common energy idea.",
+        "Use the existing Sunlight guide to conduct a suitable actual sun/shade surface comparison and make a record. Do not substitute a supplied fact or pretend measurement for that separate whole-claim observation.",
+        "Ask the learner to explain the shared idea across two different cases, then put away the study cards for the independent assessment."
+      ],
+      "question": "A new story says a person uses food energy while walking and a sunlit stone warms while it stays still. Explain what energy enables in EACH case and what is common to the two examples. Is energy only about things already moving?",
+      "expectedEvidence": "Independently identifies movement and warming/change, states the common ability-to-move-or-change idea and uses both examples to reject motion-only or electricity-only meanings. A list of object names or repeating the word energy is insufficient.",
+      "nearMiss": "Names food and Sun but identifies no movement/change, says the stone has no energy relation because it stays still, or defines all energy as electricity.",
+      "changedCase": "An unfamiliar intact device is declared to use supplied energy to produce light while its case stays still. Explain the change and apply the same common idea without naming a formal energy store.",
+      "independence": "Teacher may repeat the factual premises and accept speech, drawing or usual communication, but must not provide the common-idea answer, name the change for the learner or score copied study-card wording alone.",
+      "wholeClaimBoundary": "This source task links two existing components. BodyNeeds still requires all four needs and consequences/wants; Sunlight still requires actual observation/comparison. Neither whole mastery is awarded by this task alone.",
+      "assessment": {
+        "requiresIndependentPerformance": true,
+        "teacherMaySupplyPremisesNotAnswers": true,
+        "studyCardCopyingSufficient": false,
+        "learnerActions": [
+          {
+            "operation": "movement-example",
+            "instruction": "Explain the movement or growth enabled by food energy in the independent person case."
+          },
+          {
+            "operation": "warming-example",
+            "instruction": "Explain the warming/change of the stationary sunlit stone; identify what changes."
+          },
+          {
+            "operation": "common-energy-generalisation",
+            "instruction": "State the common move-or-change idea using BOTH contrasting cases; an object list or memorised label is insufficient."
+          },
+          {
+            "operation": "new-effect-transfer",
+            "instruction": "Apply the same idea to useful light from a newly declared stationary device, without a formal type-name gate."
+          }
+        ],
+        "requiredEvidence": [
+          "movement-example",
+          "warming-example",
+          "common-energy-generalisation",
+          "new-effect-transfer"
+        ],
+        "recordingRequirement": "Record the actual learner explanation, model/diagram and changed-case reasoning. Do not fill in successful answers for the learner or invent observed measurements.",
+        "wholeTopicAwardFromThisTaskAlone": false
+      }
+    },
+    "solar-earth": {
+      "role": "principal-sun-air-land-water-light-growth",
+      "resourceRefs": [
+        "nasa-principal",
+        "nasa-warming",
+        "umn-green-plant"
+      ],
+      "learnerStudyCards": [
+        "Card S: The Sun is the principal energy source for Earth. Principal means the main source in this Earth-wide account, not the only possible source.",
+        "Card A: Energy from the Sun warms air, land and water. The Sun also supplies daylight.",
+        "Card P: The selected ordinary green plant uses light to make food; food energy supports its growth. Water, air and suitable temperature also matter. Sunlight is not a ready-made meal and soil is not the plant’s food."
+      ],
+      "teachingSequence": [
+        "Display or read the three cards. Have the learner draw their own Sun-to-Earth picture with separate air, land, water, light and green-plant-growth connections.",
+        "Ask why an electrical lamp in one room does not replace the Sun’s Earth-wide role. Distinguish main from only rather than requiring percentages or energy-budget calculations.",
+        "Put away the completed study diagram. Present the assessment setting with an unlabelled Earth scene and no pre-drawn Sun arrows."
+      ],
+      "question": "Build a new diagram or spoken model showing the main energy source for Earth and its connections to air, land, water, daylight and the growth of the selected green plant. Explain each connection; a sunshine symbol by itself is insufficient.",
+      "expectedEvidence": "Independently identifies the Sun as principal rather than only, explains all three warming targets separately, identifies daylight, and connects sufficient light with the selected plant making food and growing. Does not substitute a lamp or electricity for the Earth-wide source.",
+      "nearMiss": "Omits air or water; only names Sun; says every energy source is sunlight; says a plant eats soil or that water alone replaces needed light.",
+      "changedCase": "The community’s electric lamps stop working, but natural sunlight continues. Explain which of the five Sun relationships remain, and why loss of lamps is different from loss of the Sun’s energy. A second indoor plant is now declared to have too little daylight; explain why its situation differs from the outdoor plant in adequate sunlight.",
+      "independence": "Provide only blank scene areas and the changed factual conditions. Learner supplies the connections and explanation; copying a completed Sun diagram does not satisfy this assessment.",
+      "wholeClaimBoundary": "The source model does not replace actual Sunlight surface observations, the sky topic’s complete identification/observation work or PlantNeeds actual growth comparisons. Keep all current complete criteria and guides.",
+      "assessment": {
+        "requiresIndependentPerformance": true,
+        "teacherMaySupplyPremisesNotAnswers": true,
+        "studyCardCopyingSufficient": false,
+        "learnerActions": [
+          {
+            "operation": "principal-not-only",
+            "instruction": "Identify the Sun as the main Earth-wide energy source while rejecting the claim that no other source exists."
+          },
+          {
+            "operation": "air-warming",
+            "instruction": "Add and explain the Sun-to-air warming connection in the learner-created model."
+          },
+          {
+            "operation": "land-warming",
+            "instruction": "Add and explain the separate Sun-to-land warming connection."
+          },
+          {
+            "operation": "water-warming",
+            "instruction": "Add and explain the separate Sun-to-water warming connection."
+          },
+          {
+            "operation": "daylight",
+            "instruction": "Add and explain natural daylight independently of the warming connections."
+          },
+          {
+            "operation": "green-plant-growth",
+            "instruction": "Connect adequate light to the selected green plant making food and using its food energy for growth; retain its other needs."
+          },
+          {
+            "operation": "changed-electric-light-case",
+            "instruction": "Explain the Sun connections that continue when electric lamps stop, and the contrasting insufficient-light indoor-plant condition."
+          }
+        ],
+        "requiredEvidence": [
+          "principal-not-only",
+          "air-warming",
+          "land-warming",
+          "water-warming",
+          "daylight",
+          "green-plant-growth",
+          "changed-electric-light-case"
+        ],
+        "recordingRequirement": "Record the actual learner explanation, model/diagram and changed-case reasoning. Do not fill in successful answers for the learner or invent observed measurements.",
+        "wholeTopicAwardFromThisTaskAlone": false
+      }
+    },
+    "food-energy": {
+      "role": "food-energy-human-animal-green-plant",
+      "resourceRefs": [
+        "eia-energy",
+        "umn-green-plant",
+        "noaa-producer-boundary"
+      ],
+      "learnerStudyCards": [
+        "Card H: Food supplies energy used by people and other animals for movement and growth.",
+        "Card G: In this studied sunlight-based example, green grass makes its own food using light. It uses food energy for its life and growth.",
+        "Card C: The rabbit eats this grass; the fox eats the rabbit. These feeding relationships allow food-energy to pass from food to eater."
+      ],
+      "teachingSequence": [
+        "Read or discuss the cards, distinguishing where an organism obtains its food from what that food supplies.",
+        "Use separate organism cards and blank arrows; the learner makes the grass–rabbit–fox chain and explains producer/consumer roles. The Sun is an energy source and is not counted as one of the organisms.",
+        "Put away the ordered teaching chain. Supply a new unordered leaf-bearing green plant–caterpillar–bird case: the caterpillar eats a leaf of that plant and the bird eats the caterpillar."
+      ],
+      "question": "Create the new three-organism food chain and explain how food supplies energy to the two animals. Explain how food can also supply energy to the selected green plant even though no one gives it an animal’s food bowl. Compare this with the person obtaining food by eating.",
+      "expectedEvidence": "Draws or independently creates food-to-eater arrows; explains animal food energy and the selected green plant’s own food production/use; distinguishes human/animal eating from plant food-making and uses producer/consumer roles accurately.",
+      "nearMiss": "Copies a finished chain; reverses arrows; says food only stops hunger; says plants have no food energy, eat soil, or that every food chain everywhere must begin with a plant.",
+      "changedCase": "A character says: “The plant does not eat a rabbit, so it cannot get any energy from food.” Explain the mistake. Then a new feeding pair is declared; use food-to-eater reasoning to place its arrow rather than following a memorised left-to-right layout.",
+      "independence": "The new case gives who-eats-whom facts, not the completed order, energy arrows, food-energy explanation or plant comparison. Learner constructs and explains; repetition of supplied names alone is insufficient.",
+      "wholeClaimBoundary": "Retain complete SimpleFoodChains construction/producer/consumer/knock-on assessment. This task does not award whole human-needs or plant-investigation claims from food facts. The green-plant boundary matches accepted PR151.",
+      "assessment": {
+        "requiresIndependentPerformance": true,
+        "teacherMaySupplyPremisesNotAnswers": true,
+        "studyCardCopyingSufficient": false,
+        "learnerActions": [
+          {
+            "operation": "human-food-energy",
+            "instruction": "Explain food supplying energy for a person’s movement or growth."
+          },
+          {
+            "operation": "animal-food-energy",
+            "instruction": "Explain food energy for both animal consumers in the new feeding case."
+          },
+          {
+            "operation": "green-plant-food-energy",
+            "instruction": "Explain how the selected green plant makes its own food using light and uses food energy for life/growth; it does not eat soil."
+          },
+          {
+            "operation": "independent-three-organism-chain",
+            "instruction": "Independently construct the plant–caterpillar–bird chain from unordered organism information with food-to-eater arrows and producer/consumer roles."
+          },
+          {
+            "operation": "food-source-transfer",
+            "instruction": "Correct the plant-has-no-food-energy near miss and place a new pair’s energy arrow using the declared feeding relation."
+          }
+        ],
+        "requiredEvidence": [
+          "human-food-energy",
+          "animal-food-energy",
+          "green-plant-food-energy",
+          "independent-three-organism-chain",
+          "food-source-transfer"
+        ],
+        "recordingRequirement": "Record the actual learner explanation, model/diagram and changed-case reasoning. Do not fill in successful answers for the learner or invent observed measurements.",
+        "wholeTopicAwardFromThisTaskAlone": false
+      }
+    },
+    "various-sources": {
+      "role": "various-source-effect-use-connections",
+      "resourceRefs": [
+        "eia-energy",
+        "nasa-warming",
+        "umn-green-plant"
+      ],
+      "learnerStudyCards": [
+        "Card F: Food can supply a person with energy for walking and growing.",
+        "Card U: Sunlight can warm land or water and provide natural light.",
+        "Card E: In an optional supplied example, an intact electrical lamp uses electrical energy to provide useful light. Knowing this declared example does not establish a ten-appliance repertoire."
+      ],
+      "teachingSequence": [
+        "Have the learner make their own three-column chart: energy source, movement/change, everyday use. Include food and Sun as two distinct sources; compare source with object and effect.",
+        "Ask for a use connection rather than only a source name, then contrast two different uses of sunlight.",
+        "Remove the completed teaching chart and present the independent changed setting. The optional electrical example is a supplied fact, not a younger whole appliance offer."
+      ],
+      "question": "Explain one everyday use of food energy and two everyday uses of energy from the Sun. For each, distinguish the source from what moves or changes and why that change is useful. How do these examples show more than one energy source?",
+      "expectedEvidence": "Independently links food to human movement/growth and Sun to useful warming/light (or the selected green plant’s growth), identifying sources separately from objects/effects. Two electric variants alone do not demonstrate various sources.",
+      "nearMiss": "Only lists food/Sun; lists hats or devices with no energy-use connection; calls warming a fuel; or calls every example electricity.",
+      "changedCase": "In a new story, sunlight warms water while a person uses food energy to move a small hand-operated object. Explain both source–effect–use relationships. A nearby electrical lamp is switched off; explain why the other two declared uses need not stop.",
+      "independence": "Teacher supplies the new factual setting but no labelled chart or completed source–effect–use links. Learner must build and explain the relationships; selecting a pre-completed answer is insufficient.",
+      "wholeClaimBoundary": "Use existing age-fitting body and sunlight components. No appliance6–7context, technical energy-types repertoire or whole later transfer claim is added.",
+      "assessment": {
+        "requiresIndependentPerformance": true,
+        "teacherMaySupplyPremisesNotAnswers": true,
+        "studyCardCopyingSufficient": false,
+        "learnerActions": [
+          {
+            "operation": "food-source-effect-use",
+            "instruction": "Build and explain food→human movement/growth→everyday use, distinguishing source from person/effect."
+          },
+          {
+            "operation": "sun-source-effect-use",
+            "instruction": "Build and explain Sun→warming/light→two everyday uses, distinguishing source from object/effect."
+          },
+          {
+            "operation": "various-distinct-sources",
+            "instruction": "Explain why food and Sun provide more than one immediate source in the studied examples; two electric variants alone are insufficient."
+          },
+          {
+            "operation": "changed-use-transfer",
+            "instruction": "Apply both source–effect–use relationships in the new hand-operated-object/sun-warmed-water case and explain why an optional lamp stopping need not stop them."
+          }
+        ],
+        "requiredEvidence": [
+          "food-source-effect-use",
+          "sun-source-effect-use",
+          "various-distinct-sources",
+          "changed-use-transfer"
+        ],
+        "recordingRequirement": "Record the actual learner explanation, model/diagram and changed-case reasoning. Do not fill in successful answers for the learner or invent observed measurements.",
+        "wholeTopicAwardFromThisTaskAlone": false
+      }
+    }
+  },
+  "protocols": {
+    "common-energy": {
+      "codes": [
+        "ON-SCI-2022-G1-C2.1"
+      ],
+      "caseRefs": [
+        "common-energy"
+      ],
+      "contributorIds": [
+        "mt_cxJRc15osy",
+        "mt_iGSfQg3g5c"
+      ],
+      "actions": [
+        "Use the complete accessible study cards and teaching sequence; speech and ordinary communication are supported.",
+        "Keep every complete contributor claim and required observation/production task available through the unchanged existing guides.",
+        "Remove worked study answers before the independent question; accept factual-premise restatement but do not supply the learner’s reasoning.",
+        "Require the listed independent explanation/construction AND changed-case transfer; near-miss performance remains Partial learner evidence."
+      ],
+      "requiredCaseFields": [
+        "learnerStudyCards",
+        "teachingSequence",
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase",
+        "independence",
+        "wholeClaimBoundary",
+        "assessment"
+      ],
+      "remainingConditions": [],
+      "assessmentTaskReference": "/preparedCases/common-energy/assessment",
+      "requiredEvidence": [
+        "movement-example",
+        "warming-example",
+        "common-energy-generalisation",
+        "new-effect-transfer"
+      ]
+    },
+    "solar-earth": {
+      "codes": [
+        "ON-SCI-2022-G1-C2.2"
+      ],
+      "caseRefs": [
+        "solar-earth"
+      ],
+      "contributorIds": [
+        "mt_iGSfQg3g5c",
+        "mt_PiWZA8Z0ZJ",
+        "mt_3v0VNkwquK"
+      ],
+      "actions": [
+        "Use the complete accessible study cards and teaching sequence; speech and ordinary communication are supported.",
+        "Keep every complete contributor claim and required observation/production task available through the unchanged existing guides.",
+        "Remove worked study answers before the independent question; accept factual-premise restatement but do not supply the learner’s reasoning.",
+        "Require the listed independent explanation/construction AND changed-case transfer; near-miss performance remains Partial learner evidence."
+      ],
+      "requiredCaseFields": [
+        "learnerStudyCards",
+        "teachingSequence",
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase",
+        "independence",
+        "wholeClaimBoundary",
+        "assessment"
+      ],
+      "remainingConditions": [],
+      "assessmentTaskReference": "/preparedCases/solar-earth/assessment",
+      "requiredEvidence": [
+        "principal-not-only",
+        "air-warming",
+        "land-warming",
+        "water-warming",
+        "daylight",
+        "green-plant-growth",
+        "changed-electric-light-case"
+      ]
+    },
+    "food-energy": {
+      "codes": [
+        "ON-SCI-2022-G1-C2.3"
+      ],
+      "caseRefs": [
+        "food-energy"
+      ],
+      "contributorIds": [
+        "mt_cxJRc15osy",
+        "mt_EygMHKs8Ed"
+      ],
+      "actions": [
+        "Use the complete accessible study cards and teaching sequence; speech and ordinary communication are supported.",
+        "Keep every complete contributor claim and required observation/production task available through the unchanged existing guides.",
+        "Remove worked study answers before the independent question; accept factual-premise restatement but do not supply the learner’s reasoning.",
+        "Require the listed independent explanation/construction AND changed-case transfer; near-miss performance remains Partial learner evidence."
+      ],
+      "requiredCaseFields": [
+        "learnerStudyCards",
+        "teachingSequence",
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase",
+        "independence",
+        "wholeClaimBoundary",
+        "assessment"
+      ],
+      "remainingConditions": [],
+      "assessmentTaskReference": "/preparedCases/food-energy/assessment",
+      "requiredEvidence": [
+        "human-food-energy",
+        "animal-food-energy",
+        "green-plant-food-energy",
+        "independent-three-organism-chain",
+        "food-source-transfer"
+      ]
+    },
+    "various-sources": {
+      "codes": [
+        "ON-SCI-2022-G1-C2.4"
+      ],
+      "caseRefs": [
+        "various-sources"
+      ],
+      "contributorIds": [
+        "mt_cxJRc15osy",
+        "mt_iGSfQg3g5c"
+      ],
+      "actions": [
+        "Use the complete accessible study cards and teaching sequence; speech and ordinary communication are supported.",
+        "Keep every complete contributor claim and required observation/production task available through the unchanged existing guides.",
+        "Remove worked study answers before the independent question; accept factual-premise restatement but do not supply the learner’s reasoning.",
+        "Require the listed independent explanation/construction AND changed-case transfer; near-miss performance remains Partial learner evidence."
+      ],
+      "requiredCaseFields": [
+        "learnerStudyCards",
+        "teachingSequence",
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase",
+        "independence",
+        "wholeClaimBoundary",
+        "assessment"
+      ],
+      "remainingConditions": [],
+      "assessmentTaskReference": "/preparedCases/various-sources/assessment",
+      "requiredEvidence": [
+        "food-source-effect-use",
+        "sun-source-effect-use",
+        "various-distinct-sources",
+        "changed-use-transfer"
+      ]
+    }
+  },
+  "wholeCards": [
+    {
+      "id": "mt_EygMHKs8Ed",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Ecosystems & Habitats",
+      "name": "Simple Food Chains",
+      "description": "Describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify different sources of food",
+      "centrality": 0.09552845528455285,
+      "evidence": [
+        "Draw a simple food chain with at least three organisms using arrows to show energy flow",
+        "Explain that the studied sunlight-based food chain begins with a green plant (producer) that makes its own food using sunlight",
+        "Use the terms 'producer' and 'consumer' correctly when describing a food chain"
+      ],
+      "assessmentPrompt": "Can {{name}} draw a food chain showing how a caterpillar eats a leaf and then a bird eats the caterpillar?",
+      "standards": [
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
+        "uk-nc-2013:Y2.Sci.LTH.4"
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_iGSfQg3g5c",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Energy",
+      "name": "Sunlight warms things up",
+      "description": "Make observations to determine the effect of sunlight on Earth's surface, noticing that sunlight warms the ground, water, and objects",
+      "centrality": 0.0426829268292683,
+      "evidence": [
+        "Observe that surfaces in sunlight feel warmer than those in shade",
+        "Describe that sunlight provides warmth (heat energy) to Earth's surface",
+        "Compare temperatures of surfaces in sun vs shade using touch or a thermometer"
+      ],
+      "assessmentPrompt": "Can {{name}} feel the difference between a sunny pavement and a shady one, and explain that sunlight warms up surfaces it shines on?",
+      "standards": [
+        "ngss-k5:K-PS3-1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.3"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 7
+    },
+    {
+      "id": "mt_3v0VNkwquK",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Organisms & Life Processes",
+      "name": "What Plants Need to Grow",
+      "description": "Understand that plants need water, light, and a suitable temperature to grow and stay healthy",
+      "centrality": 0.01524390243902439,
+      "evidence": [
+        "Name three things plants need to grow: water, light, suitable temperature",
+        "Predict what happens to a plant kept in the dark, with no water, or in freezing cold",
+        "Describe the results of a simple test comparing plants grown in different conditions"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why a plant on the windowsill grows better than one left in a dark cupboard?",
+      "standards": [
+        "acara-v9:AC9S1I01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO03",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
+        "ngss-k5:2-LS2-1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
+        "uk-nc-2013:Y2.Sci.P.2"
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 9
+    },
+    {
+      "id": "mt_PiWZA8Z0ZJ",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Space Exploration",
+      "name": "Sun, Moon & Stars",
+      "description": "Identify the Sun, Moon, and stars as objects in the sky and describe basic differences: the Sun gives light and heat during the day, stars are tiny points of light at night, and the Moon can appear in both the day and night sky",
+      "centrality": 0.04065040650406504,
+      "evidence": [
+        "Name the Sun, Moon, and stars as objects in the sky",
+        "State that the Sun appears during the day and gives us light and heat",
+        "State that stars appear at night and the Moon can sometimes be seen during the day too"
+      ],
+      "assessmentPrompt": "Can {{name}} point out the Sun, Moon, and stars and tell you something simple about each one — like that the Sun gives us light and heat?",
+      "standards": [
+        "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G1-C8.10-LO05",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-C2.7",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.4"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_cxJRc15osy",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "The Human Body",
+      "name": "Basic Body Needs",
+      "description": "Know that the body needs food for energy, water to stay hydrated, sleep to rest and grow, and exercise to keep muscles and the heart strong — and that these are basic needs every human body has",
+      "centrality": 0.03048780487804878,
+      "evidence": [
+        "List the four basic needs: food (energy), water (hydration), sleep (rest and growth), exercise (strength)",
+        "Explain that food gives the body energy to move, think, and grow",
+        "Describe what happens if one need isn't met (e.g. feeling tired without sleep, thirsty without water)"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why their body needs food, water, sleep, and exercise — and what happens if they miss any of them?",
+      "standards": [
+        "acara-v9:AC9HP2P06",
+        "acara-v9:AC9TDE2K04",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG1-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.4",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.1",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.1",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E1"
+      ],
+      "ageRangeStart": 3,
+      "ageRangeEnd": 12
+    }
+  ],
+  "reviewLimits": [
+    "Only C2.1–C2.4 are proposed for fresh source closure, subject to root review. C1, C1.1, C1.2, C2 overall, C2.5 and C2.6 remain Partial in this proposed batch.",
+    "No overall promotion while the resource-limitation residual is open; independent actual overall review can be performed in a later batch.",
+    "No new topic, age interval or curriculum pair is needed: all nine selected component pairs already exist at Ontario6–7. Association roles remain components; a report disposition does not award a learner’s whole-topic mastery.",
+    "No active canonical guide changes for these four source tasks. The separately approved four-operation battery feedback correction is the only proposed guide delta.",
+    "Existing claims, guide criteria, technical repertoires, prerequisites and all other source flags/confidence/provenance are preserved. Natural-world finite-resource C2.5 remains unresolved, without lowering later topics or removing their prerequisites.",
+    "This is public authoring content and a proposed source coverage judgment, not evidence of intervention efficacy, classroom delivery or observed learner success."
+  ],
+  "scope": {
+    "codes": [
+      "ON-SCI-2022-G1-C2.1",
+      "ON-SCI-2022-G1-C2.2",
+      "ON-SCI-2022-G1-C2.3",
+      "ON-SCI-2022-G1-C2.4"
+    ],
+    "sourceTaskCoverageNotLearnerCertification": true,
+    "applianceYoungerContextApproved": false,
+    "topicAgeContextChanges": false,
+    "sixOtherEnergyRecordsRemainPartial": true
+  }
+}
