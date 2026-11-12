@@ -5,10 +5,13 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,416 reported Full / 50 Partial, including
+Current integrated draft: Ontario 2,423 reported Full / 43 Partial, including
 35 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
+Two retained Kindergarten Partials have complete in-scope non-PE authoring with
+the excluded PE component explicitly unclaimed. The other 41 Partials remain
+unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
 
@@ -114,6 +117,13 @@ unestablished pending the current-source completeness audit.
   preserved. No canonical data changes. Combined proposed totals: 2,416 reported
   Full / 50 Partial, including 35 Science Partials; six Social Studies chronology
   conditions remain independently unfinished.
+- Ontario Kindergarten local resources: seven independent source closures and
+  two overall syntheses use verified community/environment examples and honest
+  local/observation/care conditions, preserving every canonical data file. Current
+  totals: 2,423 reported Full / 43 Partial, including 35 Science and six Social
+  Studies conditions. The remaining two Kindergarten whole-source Partials retain
+  excluded PE portions; their in-scope fine-motor persistence/variety authoring is
+  separately accounted without changing the denominator or claiming PE coverage.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -135,6 +145,14 @@ unestablished pending the current-source completeness audit.
   CT/AI supplement now has six of six competencies and three of twelve graded
   parent records with authoring coverage; its three goals remain independently
   unfinished. This is not an overall India/CBSE denominator.
+- India pattern grade-parent portfolios: three more independently assessed Class
+  III–V parent closures and six exact grade-specific component pairs reuse two
+  unchanged pattern claims. Nine family tasks and three fresh integrated transfers
+  retain the full repeat-unit/generation/implicit-feature repertoire separately.
+  No ages, claims, guides or edges change. CT/AI now has six of six competencies
+  and six of twelve grade-parent records with reviewed authoring; six parents and
+  three integrated goals remain unfinished. The selected NCERT Full count stays
+  451/521; this supplement is not the whole national denominator.
 - India role-bound language: four former Partial framework records now have
   complete written-reading, heard-summary and functional-writing authoring
   contracts with actual original example materials, changed cases and separate
@@ -175,11 +193,17 @@ unestablished pending the current-source completeness audit.
   context. This is two freshly reviewed historical Full labels, not two newly
   closed Partials; all prior claims, intervals, guides and edges are preserved.
 
+- Historical probability prompt correction: Likelihood Language now correctly
+  describes an even result on a fair 1–6 die as an even chance. Only that factual
+  assessmentPrompt example changes; all other claim fields, ages, contexts,
+  research and dependencies remain exact. There is no source-closure count gain
+  or learner-state change. Downstream claim-revision and private-state compatibility
+  qualification is required before publishing this correction to staging.
+
 ## Remaining work
 
 - Ontario Science residuals; six Social Studies chronology/interaction
-  conditions; Kindergarten local
-  resources and mixed-scope conditions; historical coverage audits across all
+  conditions; retained mixed-scope Kindergarten source accounting; historical coverage audits across all
   subjects, including those currently showing zero Partials.
 - India current source completeness and applicability; formal role-bound
   language tasks and configured resources; source rendition ambiguities; arts,
