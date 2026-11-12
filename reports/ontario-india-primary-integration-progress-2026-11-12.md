@@ -87,6 +87,14 @@ unestablished pending the current-source completeness audit.
   Actual app/file/program performance is required at delivery, not claimed here.
   The Hardware/software compatibility age projection changes from 3–8 to 3–11;
   every pre-existing authored context interval and mastery criterion is retained.
+- India role-bound language: four former Partial framework records now have
+  complete written-reading, heard-summary and functional-writing authoring
+  contracts with actual original example materials, changed cases and separate
+  whole-claim checks. Proposed selected-baseline authoring Full is 448/521;
+  formal-framework diagnostic Full is 173/221, with 48 other typed conditions.
+  Every named-programme configuration and actual learner-performance gate stays
+  explicit. No claim, context, association, age, guide or edge changes in this
+  report-only batch. Historical 444/521 snapshots are retained rather than edited.
 
 ## Remaining work
 
