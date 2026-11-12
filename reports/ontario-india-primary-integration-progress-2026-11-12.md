@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,428 reported Full / 38 Partial, including
+Current integrated draft: Ontario 2,430 reported Full / 36 Partial, including
 30 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 36 Partials remain
+the excluded PE component explicitly unclaimed. The other 34 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -132,6 +132,14 @@ unestablished pending the current-source completeness audit.
   Full soil rows are outside this fresh requalification. Current Ontario totals:
   2,428 reported Full / 38 Partial, including 30 Science, six Social Studies and
   two mixed PE/non-PE Kindergarten rows whose in-scope authoring is accounted.
+- Ontario Grade 4 conflict/cooperation: two authoring closures correct an extra
+  review constraint. Both purposes are assessed across the required few-society
+  portfolio, with actual First Nation and Inuit contributions; the source does not
+  impose both functions independently in every society. Supported Inuit cooperation
+  is not relabelled a dated dispute-resolution event. The independent A3.10 task
+  and separate complete A3 synthesis retain all intrinsic knowledge/guide duties.
+  No canonical changes. Current totals: 2,430 reported Full / 36 Partial, including
+  30 Science, four Social Studies and two accounted mixed-scope Kindergarten rows.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -250,9 +258,19 @@ unestablished pending the current-source completeness audit.
   other 4,001 dependencies remain exact; no source-closure count changes. Review
   downstream scheduling/eligibility and private-state compatibility before staging.
 
+- Historical Ontario Grade 1 Data: nine old Full labels are freshly qualified
+  through actual collection, both display types, evidence-based decisions, complete
+  likelihood and equal-size distinct-population prediction/testing, with separate
+  independent overalls. One unsupported Simple Chance G1 association is removed;
+  its Ontario context changes 6–12 to 9–12 with G4/5/6 keys retained. The generated
+  start becomes 8 from the unchanged Australian context. All other authored ages,
+  claims, research and edges remain exact. No new source Full count is gained;
+  39 other Grade 1 Maths rows remain outside this fresh audit. Downstream scheduling
+  and private-state compatibility must be qualified before staging publication.
+
 ## Remaining work
 
-- Ontario: 30 Science and six Social Studies source qualifications, followed by
+- Ontario: 30 Science and four Social Studies source qualifications, followed by
   historical coverage audits across all subjects. The two mixed-scope Kindergarten
   records retain explicit PE exclusions; their non-PE authoring is accounted.
 - India: resolve the selected music source-meaning exception and finish the
