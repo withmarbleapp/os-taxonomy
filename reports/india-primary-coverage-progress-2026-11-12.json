@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "acceptedBase": "65867d3356c0eca827ac43c45f7fefa01e843d94",
+  "acceptedBase": "df93fa372227fd3d07e11f16c3949a02526723bd",
   "snapshotDate": "2026-11-12",
   "scope": "Primary Classes I–V plus relevant Foundational/Preparatory stage records; PE duties, VI+ authoring, state-board and CISCE coverage excluded.",
   "comprehensiveCurrentIndiaDenominator": null,
@@ -41,14 +41,14 @@
       "name": "CBSE CT/AI supplement (Classes III–V), 21 selected hierarchical positions",
       "retainedPositions": 21,
       "excludedPhysicalEducationWithinSelection": 0,
-      "FullAuthoring": 0,
+      "FullAuthoring": 1,
       "PartialAuthoring": 0,
-      "unreviewedCoveragePositions": 21,
-      "linkedKeys": 0,
-      "pairs": 0,
-      "existingTopicsUsed": 0,
+      "unreviewedCoveragePositions": 20,
+      "linkedKeys": 1,
+      "pairs": 1,
+      "existingTopicsUsed": 1,
       "selectedFrameworkPositions": 21,
-      "unlinkedSelectedFrameworkPositions": 21,
+      "unlinkedSelectedFrameworkPositions": 20,
       "denominatorMeaning": "Only selected CBSE CT/AI supplement Classes III–V hierarchical positions; not overall CBSE primary or unique skills."
     }
   ],
@@ -174,16 +174,6 @@
   },
   "proposedNotAccepted": [
     {
-      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3",
-      "topicId": "mt_gu0NPDvlhY",
-      "role": "whole",
-      "proposedDisposition": "Full authoring",
-      "newPairs": 1,
-      "newTopics": 0,
-      "status": "OPEN PR154, semantically reviewed, not yet accepted",
-      "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/154"
-    },
-    {
       "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
       "topicId": "mt_mQcWGh02no",
       "role": "component",
@@ -214,7 +204,8 @@
     ],
     "stageRecordsApplyOnce": true,
     "catalogueDoesNotDeclareUniqueSkills": true,
-    "acceptedCoverageReviewed": false
+    "acceptedCoverageReviewed": true,
+    "acceptedCoverageReviewScope": "Only C-3; remaining 20 selected hierarchical positions are unreviewed for coverage."
   },
   "overallCBSEPrimaryDenominator": null,
   "overallIndiaDenominator": null,
@@ -223,5 +214,18 @@
     "Languages I–V: actual role/programme/script variants and source recovery",
     "TWAU/EVS primary integrated/stage and III–V materials",
     "Arts I–V: stage/grade coverage, alternatives and current project/material requirements"
+  ],
+  "acceptedBoundedAlignments": [
+    {
+      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3",
+      "topicId": "mt_gu0NPDvlhY",
+      "role": "whole",
+      "newPairs": 1,
+      "newTopics": 0,
+      "status": "Accepted on main via PR154",
+      "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/154",
+      "disposition": "Full authoring",
+      "acceptedCommit": "df93fa372227fd3d07e11f16c3949a02526723bd"
+    }
   ]
 }
