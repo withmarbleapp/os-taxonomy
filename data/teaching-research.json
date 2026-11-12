@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "69b23f927cc1f613b8a6f1e0b93a5f242f9fa0a40a14fbbfd85ac6ede3841f57",
+  "topicFileSha256": "4017ecd3dbbb264a8935a49922bfe9d44e20f96453498d313d470fdb3702e2b9",
   "recordCount": 1092,
   "coverage": {
     "topicCount": 1907,
@@ -41669,11 +41669,11 @@
     {
       "topicId": "mt_9nxyFoYD_b",
       "pedagogy": {
-        "summary": "- **Age:** 8–9 years\n\n- **Topic:** What uses electricity at home\n\n- **Standards — UK (DfE National Curriculum, KS2 Year 4 Electricity, statutory):** 'identify common appliances that run on electricity.'\n\n- **Standards — US (NGSS):** National (NGSS): no direct grade-3/4 performance expectation for naming electrical appliances; the nearest energy strand is 4-PS3-2 (energy transferred by electric currents), which this topic only foreshadows. This topic is therefore UK-anchored.\n\n- **Operational details:** Children name and sort everyday appliances by whether they run on electricity and, within that, whether the power comes from the mains (wall socket) or from a battery. No circuit theory, no current, no quantities; the cognitive work is categorisation and safety awareness, not mechanism. The teaching aim is a clean mental sort — mains vs battery vs not-electric — plus the safety habit that mains sockets are dangerous and only batteries are for exploring.\n\n- **Checkpoint:** Tier A (concrete/observational, age 8-9).",
+        "summary": "- **Age:** 8–9 years\n\n- **Topic:** What uses electricity at home\n\n- **Standards — UK (DfE National Curriculum, KS2 Year 4 Electricity, statutory):** 'identify common appliances that run on electricity.'\n\n- **Standards — US (NGSS):** National (NGSS): no direct grade-3/4 performance expectation for naming electrical appliances; the nearest energy strand is 4-PS3-2 (energy transferred by electric currents), which this topic only foreshadows. This topic is therefore UK-anchored.\n\n- **Operational details:** Children name and sort everyday appliances by whether they run on electricity and, within that, whether the power comes from the mains (wall socket) or from a battery. No circuit theory, no current, no quantities; the cognitive work is categorisation and safety awareness, not mechanism. The teaching aim is a clean mental sort — mains vs battery vs not-electric — plus the safety habit that mains electricity is not for experimenting and battery-powered devices are not automatically safe to open. Use pictures or intact devices for this classification task; any separate circuit exploration needs an adult-selected, age-appropriate low-voltage educational kit used with supervision and its instructions.\n\n- **Checkpoint:** Tier A (concrete/observational, age 8-9).",
         "bestPractices": [
           "Start from the child's own home: have them name devices in the kitchen, lounge and bedroom, then sort into 'runs on electricity' vs 'does not' (a candle, a wind-up toy, a bicycle are not-electric foils).",
-          "Make the mains-vs-battery distinction explicit and physical — show a plug going into a wall socket vs a battery sliding into a torch — because it underpins both the later circuit work (batteries are what you build with) and the safety message (sockets are not).",
-          "Embed electrical safety as a non-negotiable: mains sockets, plugs and cables are never for experimenting; only battery-powered circuits are safe to build. This is a statutory expectation in the surrounding curriculum.",
+          "Make the mains-versus-battery distinction concrete using accurate pictures, labels and intact devices; an adult identifies the source without asking pupils to insert mains plugs, open battery compartments or dismantle appliances. Source classification prepares later circuit work but does not require it.",
+          "Mains sockets, plugs and cables are not for pupil experiments. Battery-powered does not mean safe to open: name and sort pictures or intact devices, leaving battery compartments and household-device internals closed. Any separate circuit activity uses only an adult-selected, age-appropriate low-voltage educational kit used with supervision and its instructions; this classification task does not require circuit construction.",
           "Use sorting and odd-one-out tasks rather than explanation; at this age the learning is reliable categorisation, surfaced and corrected through many quick examples.",
           "Surface edge cases that build flexible thinking: a phone has a battery AND charges from the mains; a car runs on fuel but has electric lights — discuss rather than mark wrong."
         ],
@@ -41692,7 +41692,7 @@
         ]
       },
       "learn": {
-        "summary": "For 8–9 year olds learning what uses electricity at home (UK KS2 Year 4: 'identify common appliances that run on electricity'). The learning goal is a clean three-way mental sort — mains (wall socket) vs battery vs not-electric — anchored in children's own homes, plus the safety habit that mains sockets/plugs/cables are never for experimenting and only battery-powered things are safe to explore. The work is categorisation and safety awareness, not circuit theory, current, or quantities. Deliberate foils (a candle, a wind-up/clockwork toy, a gas hob) break the misconception that anything moving, noisy, or switch-on uses electricity.",
+        "summary": "For 8–9 year olds learning what uses electricity at home (UK KS2 Year 4: 'identify common appliances that run on electricity'). The learning goal is a clean three-way mental sort — mains (wall socket) vs battery vs not-electric — anchored in children's own homes, plus the safety habit that mains sockets/plugs/cables are not for experimenting and battery-powered devices are not automatically safe to open. Use accurate pictures or intact devices without opening battery compartments or household-device internals; any separate circuit activity requires an adult-selected, age-appropriate low-voltage educational kit used with supervision and its instructions. The work is categorisation and safety awareness, not circuit theory, current, or quantities. Deliberate foils (a candle, a wind-up/clockwork toy, a gas hob) break the misconception that anything moving, noisy, or switch-on uses electricity.",
         "activities": [
           {
             "title": "Spot the electrical things in a home scene",
@@ -41705,16 +41705,17 @@
             "rationale": "At this age reliable categorisation is built and corrected through many quick concrete examples starting from the child's own home; a tap-to-reveal home scene delivers the power-source fact and the safety flag on every mains item together, with foils to break over-inclusion.",
             "sourceClaims": [
               "Year 4 Electricity statutory requirement: 'identify common appliances that run on electricity'; pupils taught to construct simple series circuits and about electrical safety.",
-              "Children commonly over-attribute 'uses electricity' to any moving/noisy device and under-attribute it to battery devices; sorting with foils addresses this."
+              "Children commonly over-attribute 'uses electricity' to any moving/noisy device and under-attribute it to battery devices; sorting with foils addresses this.",
+              "Battery-containing household devices can expose hazardous button cells; secure compartments and adult supervision matter. A battery power source does not establish that a device is safe for a child to open."
             ],
             "learnerActions": [
               "Walk through a labelled home picture (kitchen, lounge, bedroom) and name the devices you see.",
               "Tap or point to each device and say whether it runs on electricity, and if so whether its power comes from the mains (wall socket) or from a battery.",
-              "For each device, reveal or state a short fact: e.g. toaster — 'Mains: I plug into the wall. Wall sockets are grown-up only, never poke them'; torch — 'Battery: safe for you to open and explore'; candle or wind-up clock — 'No electricity at all.'",
+              "For each device, reveal or state a source fact using a picture, label or intact device: toaster — mains electricity, with no pupil plug/socket experiment; torch — battery-powered, which does NOT mean safe to open; candle or clockwork toy — not electrically powered in the supplied case. Leave battery compartments and appliance internals closed; ask an adult when the source is uncertain.",
               "Explain for each item how you can tell — does it have a plug and lead to a socket, or does it carry a battery inside?",
               "Discuss the deliberate foils: a gas hob (may look electric, but its heat comes from burning gas; some use a small electric spark only to light it) and a clockwork/wind-up toy (moves but isn't mains/battery electric)."
             ],
-            "intendedInsight": "The sort isn't simply 'electric or not' but THREE piles — mains, battery, not-electric — and the mains pile is exactly the dangerous one you must never build with, so the only things safe to experiment with are the battery ones."
+            "intendedInsight": "Mains, battery and not-electric are source categories, not safety permissions. A battery label does not make a device safe to open or experiment with, and accurate source classification does not require dismantling."
           },
           {
             "title": "Sort the appliances into three bins",
@@ -41758,12 +41759,13 @@
             ],
             "rationale": "In-role dialogue can reinforce the safety habit and answer 'why?' questions. The core target skill is silent sorting, so treat this as a supplement rather than the main vehicle.",
             "sourceClaims": [
-              "Year 4 Electricity statutory requirement: 'identify common appliances that run on electricity'; pupils taught to construct simple series circuits and about electrical safety."
+              "Year 4 Electricity statutory requirement: 'identify common appliances that run on electricity'; pupils taught to construct simple series circuits and about electrical safety.",
+              "Battery-containing household devices can expose hazardous button cells; secure compartments and adult supervision matter. A battery power source does not establish that a device is safe for a child to open."
             ],
             "learnerActions": [
               "Pose questions to an in-role 'electrician' character, e.g. 'is the toaster electric?' or 'why can't I poke the socket?'",
               "Ask 'where does the electricity come from?' for a mains item and for a battery item, and compare the answers.",
-              "Restate the safety rule in your own words: mains sockets, plugs and cables are never for experimenting; only battery-powered circuits are safe to build."
+              "Mains sockets, plugs and cables are not for pupil experiments. Battery-powered does not mean safe to open: name and sort pictures or intact devices, leaving battery compartments and household-device internals closed. Any separate circuit activity uses only an adult-selected, age-appropriate low-voltage educational kit used with supervision and its instructions; this classification task does not require circuit construction."
             ],
             "intendedInsight": "Talking through 'why' reinforces the safety habit and the idea that mains and battery are both electricity from different supplies."
           },
@@ -41788,7 +41790,7 @@
         ],
         "constraints": [
           "No circuit theory, current, or quantities at this stage; the cognitive work is categorisation and safety awareness, not mechanism.",
-          "Electrical safety is non-negotiable and a statutory expectation: mains sockets, plugs and cables are never for experimenting; only battery-powered circuits are safe to build.",
+          "Mains sockets, plugs and cables are not for pupil experiments. Battery-powered does not mean safe to open: name and sort pictures or intact devices, leaving battery compartments and household-device internals closed. Any separate circuit activity uses only an adult-selected, age-appropriate low-voltage educational kit used with supervision and its instructions; this classification task does not require circuit construction.",
           "Recognition tasks (odd-one-out, matching) assess and firm up the model more than they build it, so pair them with other activities; the interactive drag-to-sort bench, by contrast, is active and self-correcting and does help build the sort as well as check it.",
           "The in-role electrician dialogue is a useful supplement for 'why' and safety, not the main vehicle, since the target skill is silent sorting.",
           "Edge cases (phone that is both battery and mains-charging; car that runs on fuel but has electric lights) should be discussed rather than marked right/wrong.",
@@ -41802,7 +41804,8 @@
           "The learner-level phrasings 'a battery is a portable store of electrical energy' and the wind-up radio 'makes its own electricity' are age-appropriate simplifications (a battery stores chemical energy converted to electrical current; a wind-up device stores elastic/mechanical energy driving a small generator). Kept as the original row stated them, but flagged so reviewers can decide how precise to be for this age.",
           "The US NGSS mapping notes no direct grade-3/4 performance expectation for naming electrical appliances (nearest is 4-PS3-2, only foreshadowed); this topic is UK-anchored.",
           "Product/artefact-type names, fit rankings, and quiz-step vocabulary from the source were removed; the underlying tasks and feedback were preserved.",
-          "The DfE statutory claim is mapped to activities that concretely deliver its safety message; it is a curriculum/convention source, not evidence that any proposed activity is effective or superior to another medium."
+          "The DfE statutory claim is mapped to activities that concretely deliver its safety message; it is a curriculum/convention source, not evidence that any proposed activity is effective or superior to another medium.",
+          "Fresh targeted safety review2026-11-11 read Health Canada’s complete brochure main body and used only the prevention guidance on inaccessible battery compartments and adult supervision; treatment instructions, statistics and exposure thresholds are not teaching content. The public CLEAPSS GL225 description was read only as a description of purpose-selected small-component circuit work, not its member document or a universal kit safety endorsement. Replaced blanket permission to open/explore battery devices; source categorisation needs pictures or intact devices. Original whole claim, ages, repertoire, assessment and inherited source/confidence flags remain unchanged; no younger context is authorized by this correction."
         ],
         "schemaVersion": 2
       },
@@ -41862,6 +41865,12 @@
           "source": "IOP Spark / SPT — electricity teaching guidance (children's ideas about electricity)",
           "url": "https://spark.iop.org/collections/electric-circuits-misconceptions",
           "verified": false
+        },
+        {
+          "claim": "Battery-containing household devices can expose hazardous button cells; secure compartments and adult supervision matter. A battery power source does not establish that a device is safe for a child to open.",
+          "source": "Health Canada, Button batteries brochure2024 — prevention section",
+          "url": "https://www.canada.ca/en/health-canada/services/household-products/battery-safety/resources/brochure-button-batteries.html",
+          "verified": true
         }
       ],
       "confidence": "high",
@@ -76108,10 +76117,10 @@
     {
       "topicId": "mt_EygMHKs8Ed",
       "pedagogy": {
-        "summary": "- **Age:** 6–7 years\n\n- **Topic:** Simple Food Chains\n\n- **Standards — UK (DfE KS1 Year 2 'Living things and their habitats'):** 'describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food.'\n\n- **Standards — US (no direct K-2 NGSS food-chain PE):** US introduces feeding relationships informally at K-2 (LS2.A: animals depend on plants/other animals for food) but formalises food chains/energy flow later at grade 5 (5-LS2-1, 5-PS3-1). Food chains as an explicit KS1 topic are UK-led — note the divergence honestly.\n\n- **Operational details:** Children build the first big idea in ecology: energy/food passes along a chain that ALWAYS starts with a plant (producer, which makes its own food) and flows to animals (consumers) that eat it and each other. They draw a three-link chain with ARROWS and read the arrow as 'is eaten by / energy flows to'. The arrow direction is the crux — it points from the eaten to the eater, tracking the flow of food-energy, not the act of eating.\n\n- **Checkpoint:** Tier A (concrete, first causal chain). Success = drawing a 3-organism chain that starts with a plant, using arrows the correct way round, and using 'producer' and 'consumer' correctly — not reversing the arrows or starting a chain with an animal.",
+        "summary": "- **Age:** 6–7 years\n\n- **Topic:** Simple Food Chains\n\n- **Standards — UK (DfE KS1 Year 2 'Living things and their habitats'):** 'describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food.'\n\n- **Standards — US (no direct K-2 NGSS food-chain PE):** US introduces feeding relationships informally at K-2 (LS2.A: animals depend on plants/other animals for food) but formalises food chains/energy flow later at grade 5 (5-LS2-1, 5-PS3-1). Food chains as an explicit KS1 topic are UK-led — note the divergence honestly.\n\n- **Operational details:** Children build the first big idea in ecology: energy/food passes along a studied sunlight-based chain that starts with a green plant (a producer that makes its own food using sunlight) and flows to animals (consumers) that eat it and each other. They draw a three-link chain with ARROWS and read the arrow as 'is eaten by / energy flows to'. The arrow direction is the crux — it points from the eaten to the eater, tracking the flow of food-energy, not the act of eating.\n\n- **Checkpoint:** Tier A (concrete, first causal chain). Success = drawing a 3-organism chain for a supplied sunlight-based case that starts with its green plant, using arrows the correct way round, and using 'producer' and 'consumer' correctly — not reversing the arrows or starting a chain with an animal.",
         "bestPractices": [
           "Establish the arrow convention explicitly and early: the arrow means 'is eaten by / energy flows to', pointing from food to feeder.",
-          "Insist every chain STARTS with a plant (producer) and elicit why (only plants make their own food).",
+          "For the supplied grass/leaf-based chains, begin with the green plant (producer) and elicit that it makes its own food using sunlight. Do not teach that plants are the only producers or that every food chain everywhere begins with a plant.",
           "Use local, familiar organisms first (grass→rabbit→fox) before exotic ones.",
           "Draw and read chains both ways — build one, then interpret a given one — to consolidate direction.",
           "Link to prior herbivore/carnivore knowledge so consumer roles make sense."
@@ -76124,14 +76133,14 @@
         ],
         "commonMisconceptions": [
           "Drawing arrows the wrong way (pointing from the eater to the food).",
-          "Starting a food chain with an animal instead of a plant.",
+          "Starting one of the supplied green-plant food chains with its animal consumer instead of its plant producer.",
           "Thinking the arrow means 'eats' rather than 'energy/food flows to'.",
           "Believing plants get their food by eating, like animals, rather than making it.",
           "Treating the top predator as the 'start' or most important, rather than the producer."
         ]
       },
       "learn": {
-        "summary": "For ages 6–7, children learn that a simple food chain shows food-energy passing along a sequence that always starts with a plant (a producer that makes its own food) and flows to animals (consumers). The crux is the arrow convention: the arrow means 'is eaten by / energy flows to' and points from the food to the feeder. Activities span building and drawing a three-link chain, interpreting a given labelled chain, checking structure through ordering and matching, and talking through an organism's place in the chain including what happens if the producer is lost. Aligns with UK DfE KS1 Year 2 'Living things and their habitats'.",
+        "summary": "For ages 6–7, children learn that a simple food chain shows food-energy passing along a studied sunlight-based sequence beginning with a green plant (a producer that makes its own food using sunlight) and flows to animals (consumers). The crux is the arrow convention: the arrow means 'is eaten by / energy flows to' and points from the food to the feeder. Activities span building and drawing a three-link chain, interpreting a given labelled chain, checking structure through ordering and matching, and talking through an organism's place in the chain including what happens if the producer is lost. Aligns with UK DfE KS1 Year 2 'Living things and their habitats'.",
         "activities": [
           {
             "title": "Build and arrow a three-link food chain",
@@ -76141,16 +76150,16 @@
               "If a learner is reluctant to begin with grass ('grass isn't really food'), point out that the rabbit's food IS the grass, so the plant is the food source where the chain must start.",
               "Confirm success when the learner draws grass→rabbit→fox with forward arrows, names producer and consumer correctly, and can say why a plant comes first."
             ],
-            "rationale": "Constructing the chain and the arrows themselves (rather than only recognising a finished one) makes the arrow-direction rule and the plant-first rule a decision the child must make, surfacing the two common reversals so they can be corrected in the moment.",
+            "rationale": "Constructing the chain and the arrows themselves (rather than only recognising a finished one) makes the arrow-direction rule and the supplied green-plant chain’s producer-first rule a decision the child must make, surfacing the two common reversals so they can be corrected in the moment.",
             "sourceClaims": [],
             "learnerActions": [
               "Arrange organism cards (grass, rabbit, fox) into the correct order, left to right.",
               "Draw an arrow between each pair of organisms, pointing from the one that is eaten to the one that eats it.",
               "Say aloud what each arrow means: 'is eaten by / the food and energy pass to the next animal.'",
               "Label each link as 'producer' (the plant) or 'consumer' (each animal).",
-              "Explain why the chain must begin with the plant: the grass makes its own food, but the rabbit and fox must eat to get theirs."
+              "Explain why this supplied grass-based chain begins with its green plant: the grass makes its own food, but the rabbit and fox must eat to get theirs."
             ],
-            "intendedInsight": "Every food chain starts with a plant that makes its own food, and arrows track food-energy flowing from the eaten to the eater."
+            "intendedInsight": "This studied grass-based food chain begins with the green plant that makes its own food using sunlight; arrows track food-energy flowing from the eaten to the eater."
           },
           {
             "title": "Interactive chain reference: read the roles and the arrow",
@@ -76172,14 +76181,14 @@
             "title": "Order the chain and choose the starting rule",
             "feedback": [
               "For ordering errors, ask what each animal's food is and trace back to the plant.",
-              "For the 'starts with' item, confirm plants make their own food so they are the source everything else depends on.",
+              "For the supplied grass/leaf chains, explain that their green plants make food using sunlight and supply food-energy to the linked animal consumers.",
               "For arrow-direction items, restate the arrow as 'is eaten by'."
             ],
             "rationale": "Ordering, selection and matching efficiently check the structure of the chain. These response formats confirm recognition of the rule; they do not require the learner to draw arrows live, so pair them with the building activity for independent construction.",
             "sourceClaims": [],
             "learnerActions": [
               "Put a scrambled set of organisms (grass, rabbit, fox) into the correct chain order.",
-              "Answer: 'What does every food chain start with?' and choose the plant/producer.",
+              "Answer: 'What starts each of these supplied grass/leaf-based chains?' and choose its green plant/producer.",
               "Answer an arrow-direction item: which way does the arrow point between two organisms?",
               "Match each organism to its label: 'producer' or 'consumer'."
             ],
@@ -76189,7 +76198,7 @@
             "title": "Talk through an animal's place in the chain",
             "feedback": [
               "If the learner cannot name what comes before an animal, prompt 'what is its food?' and connect that to the previous link.",
-              "Steer every trace-back to the producer so the plant-first idea is reinforced through talk.",
+              "In these supplied grass/leaf chains, trace the linked consumers back to their green-plant producer; this is a statement about these cases.",
               "For the 'what if the grass died out' prompt, help the learner reason that the rabbit would lose its food and the fox in turn would lose the rabbit — the chain depends on the producer."
             ],
             "rationale": "A spoken walk-along the chain can reinforce the 'before/after' relationships and the chain's dependence on the producer through dialogue. For this age, pair it with building or seeing the chain drawn, since an abstract spoken sequence can be harder to hold than a visible chain.",
@@ -76201,18 +76210,18 @@
               "Trace the whole chain back to the plant that makes its own food.",
               "Consider what would happen to the fox if all the grass died out, and explain how the whole chain depends on the plant at the start."
             ],
-            "intendedInsight": "Each animal sits between what it eats and what eats it; following those links backwards always reaches a plant, and because every animal ultimately depends on the producer, losing the plant affects the whole chain."
+            "intendedInsight": "For the supplied three-organism green-plant chain, follow feeding links backwards to the plant producer; explain how losing that plant changes the available food-energy for the linked consumers. This model is not a claim that every food chain everywhere begins with a plant."
           }
         ],
         "constraints": [
           "Establish the arrow convention explicitly and early: the arrow means 'is eaten by / energy flows to', pointing from food to feeder.",
-          "Insist every chain starts with a plant (producer) and elicit why — plants make their own food, while animals have to eat other living things.",
+          "Use the supplied sunlight-based green-plant chains. Elicit that their plant producer makes its own food using sunlight while their animal consumers obtain food by eating. Do not require chemosynthesis, bacteria or algae vocabulary, and do not present plant-only production as a universal fact.",
           "Use local, familiar organisms first (grass→rabbit→fox) before exotic ones.",
           "Build chains both ways: construct one, then interpret a given one, to consolidate arrow direction.",
           "Link to prior herbivore/carnivore knowledge so consumer roles make sense.",
           "Reading/interpretation activities (labelled reference, ordering, matching) confirm recognition but do not require the learner to construct arrows independently; include at least one task where the learner draws the chain and arrows themselves.",
           "Spoken walk-throughs support relational understanding but should accompany, not replace, a visible or drawn chain at this age.",
-          "Address the common misconceptions directly: reversed arrows, starting with an animal, reading the arrow as 'eats', believing plants eat for their food rather than making it, and treating the top predator as the start/most important."
+          "Address the common misconceptions directly: reversed arrows, starting a supplied green-plant chain with its animal consumer, reading the arrow as 'eats', believing plants eat for their food rather than making it, and treating the top predator as the start/most important."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite of saved teaching research without fresh source verification; sources were not re-fetched. Activities are research-informed proposals, not validated interventions.",
@@ -76221,7 +76230,8 @@
           "The original claim that '3D adds nothing over a flat builder' was a catalog fit comment, not an established pedagogical law; it has been softened/omitted. A food chain is commonly represented as a flat directional sequence, which is sufficient for this objective, but this does not prove other media cannot help.",
           "The original 'bench checks flow / animates food flowing backwards and is rejected' describes an optional interactive mechanism; retained as an example of corrective feedback, not as a required mechanism.",
           "The dependency/knock-on reasoning (what happens if the producer is lost) comes from the saved assessment's probeDeeper and full-response level; it has been reinstated as an extension in the dialogue activity to preserve that assessment depth.",
-          "The comparative claim that a spoken sequence is harder to hold than a visible chain is kept only in qualified form and is not independently verified."
+          "The comparative claim that a spoken sequence is harder to hold than a visible chain is kept only in qualified form and is not independently verified.",
+          "Targeted factual-boundary review2026-11-12 read the complete NOAA Ocean Exploration main body and used the existence of non-sunlight producer bases to correct universal plant-only language. The active model remains a supplied sunlight-based chain, with learner-created three-or-more-organism sequences, food-to-eater arrows and producer/consumer understanding preserved. Other producer mechanisms and vocabulary are not additional learner gates. Existing source flags, confidence, provenance, ages, contexts and graph relationships remain unchanged; no intervention efficacy or learner-state compatibility is inferred."
         ],
         "schemaVersion": 2
       },
@@ -76231,10 +76241,10 @@
         "probeDeeper": [
           "If the arrow means 'is eaten by', who is eaten by the fox in your chain?",
           "Where does the grass get its own food from?",
-          "Could a food chain ever start with a fox? Why not?",
+          "Could this supplied grass–rabbit–fox chain start with the fox? Why not?",
           "What would happen to the fox if all the grass died out?"
         ],
-        "correctAnswer": "Arrows point grass → rabbit → fox, and an arrow means 'is eaten by' / the food and its energy pass to the next animal. The chain starts with grass because a plant is a producer — it makes its own food using sunlight, so it is the source of food and energy that everything else depends on; animals are consumers and cannot make their own food.",
+        "correctAnswer": "Arrows point grass → rabbit → fox, and an arrow means 'is eaten by' / the food and its energy pass to the next animal. The chain starts with grass because a plant is a producer — it makes its own food using sunlight, so it supplies the food-energy on which the linked rabbit and fox depend in this studied chain; animals are consumers and cannot make their own food.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -76247,15 +76257,15 @@
           {
             "kind": "misconception",
             "pattern": "'The chain starts with the biggest, strongest animal' — puts the top predator first.",
-            "nextMove": "Ask what the fox's energy ultimately came from; trace back until you reach the thing that makes its own food — the plant — and start there.",
+            "nextMove": "For the supplied grass–rabbit–fox chain, trace the fox’s food-energy back through the rabbit to the grass producer, which makes its own food using sunlight.",
             "distractor": "The chain should start with the fox, because it is the biggest and strongest.",
             "revealedBy": "Begins the chain with the fox; treats 'first' as most powerful rather than the food source.",
             "reteachPrerequisiteId": null
           },
           {
             "kind": "misconception",
-            "pattern": "'Food chains start with an animal — grass isn't really food' — does not see the plant as the producer/food source.",
-            "nextMove": "Establish plants as producers that make food; the rabbit's food IS the grass, so the plant is where the chain must begin.",
+            "pattern": "'This grass-based chain starts with an animal — grass is not really food' — does not identify the supplied plant producer.",
+            "nextMove": "For this supplied chain, explain that the green grass makes food using sunlight and the rabbit eats grass; begin the represented food-energy sequence with that producer.",
             "distractor": null,
             "revealedBy": "Reluctant to begin with grass; says food chains start with 'something that eats'.",
             "reteachPrerequisiteId": null
@@ -76263,8 +76273,8 @@
         ],
         "responseLevels": {
           "gap": "Reverses the arrows or starts the chain with an animal; cannot say what the arrow means.",
-          "full": "Draws correct direction, explains the arrow as food/energy passing to the eater, justifies the plant-first rule by producers making their own food, and predicts a knock-on effect if the producer is lost.",
-          "partial": "Draws the chain grass-first with forward arrows but explains the arrow only as 'eats', or cannot say why a plant must come first."
+          "full": "Draws the supplied green-plant chain with correct arrows, explains food-energy passing to the eater, justifies its producer-first sequence by the green plant making its own food using sunlight, and predicts a knock-on effect if that producer is lost.",
+          "partial": "Draws the supplied grass-based chain with forward arrows but explains the arrow only as 'eats', or cannot explain why this chain begins with its green-plant producer."
         },
         "diagnosticPrompt": "Say: 'A rabbit eats grass, and a fox eats the rabbit. I want you to draw this as a food chain with arrows, and tell me what each arrow means. Then tell me: why must the chain start with the grass and not with the fox?'",
         "whatMakesItDiscriminate": "A child who thinks the arrow means 'eats' draws them backwards (fox → rabbit → grass). A child who thinks the 'biggest, strongest' animal comes first starts with the fox. Only a child using the food-source/energy-flow idea puts the plant first with forward-pointing arrows — the two errors give visibly different drawings."
@@ -76280,6 +76290,12 @@
           "claim": "NGSS formalises food chains and energy flow at grade 5 (5-LS2-1 movement of matter among plants, animals, decomposers; 5-PS3-1 energy in food once came from the sun), not at K-2.",
           "source": "NGSS, 5-LS2 / 5-PS3 (Interdependent Relationships in Ecosystems)",
           "url": "https://www.nextgenscience.org/topic-arrangement/5interdependent-relationships-ecosystems",
+          "verified": true
+        },
+        {
+          "claim": "Some food chains have producer bases that use chemical energy without sunlight. Therefore the studied green-plant and sunlit marine examples must not be taught as universal plant-only rules. This factual boundary does not add chemosynthesis vocabulary or mechanisms to the learner claim.",
+          "source": "NOAA Ocean Exploration, What is the difference between photosynthesis and chemosynthesis?",
+          "url": "https://oceanexplorer.noaa.gov/ocean-fact/photochemo/",
           "verified": true
         }
       ],
@@ -120508,10 +120524,10 @@
     {
       "topicId": "mt_l6OpmOKMuT",
       "pedagogy": {
-        "summary": "• Age/Topic: Ages 5–7 — describe a simple ocean food chain: tiny plants (phytoplankton) → small animals → bigger fish → top predators like sharks, showing all ocean life depends on others for food.\n• Standards — UK (DfE KS1): Y2 'describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food' — this is the ocean instance of the KS1 food-chain objective.\n• Standards — US (NGSS): builds toward 5-PS3-1 / 5-LS2-1 (matter and energy movement) but at K–2 the accessible anchor is 'animals get food from plants and other animals' — who-eats-whom sequencing.\n• Operational details: teach the ARROW as 'is eaten by' (energy/food flows in the arrow's direction) — the single most important convention and the classic error source. Start the chain with tiny plants (phytoplankton) so children grasp that the ocean, like land, is powered by plants they can barely see. Keep to a clear 3–4 link chain (phytoplankton → small fish/krill → big fish → shark).\n• Checkpoint — Tier A (concrete, ~5–6): orders pictures big-eats-small and says 'the shark eats the fish'; Tier B (~6–7): builds a ≥3-link chain and states it starts with tiny plants; Tier C (~7): reads the arrow correctly as 'is eaten by' and explains each animal depends on the one before it.",
+        "summary": "• Age/Topic: Ages 5–7 — describe a simple ocean food chain: tiny plants (phytoplankton) → small animals → bigger fish → top predators like sharks, showing how the animal consumers in this selected sunlit marine chain depend on their food sources.\n• Standards — UK (DfE KS1): Y2 'describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food' — this is the ocean instance of the KS1 food-chain objective.\n• Standards — US (NGSS): builds toward 5-PS3-1 / 5-LS2-1 (matter and energy movement) but at K–2 the accessible anchor is 'animals get food from plants and other animals' — who-eats-whom sequencing.\n• Operational details: teach the ARROW as 'is eaten by' (energy/food flows in the arrow's direction) — the single most important convention and the classic error source. Begin the selected sunlit marine chain with its sunlight-using phytoplankton producer; do not present this model as a rule for every ocean food chain or every producer. Keep to a clear 3–4 link chain (phytoplankton → small fish/krill → big fish → shark).\n• Checkpoint — Tier A (concrete, ~5–6): orders pictures big-eats-small and says 'the shark eats the fish'; Tier B (~6–7): builds a ≥3-link chain and states it starts with tiny plants; Tier C (~7): reads the arrow correctly as 'is eaten by' and explains each animal depends on the one before it.",
         "bestPractices": [
           "Define the arrow explicitly as 'is eaten by' and rehearse reading chains aloud in the arrow direction — pre-empt the near-universal 'arrow points to who eats' reversal.",
-          "Always begin the chain with a producer (phytoplankton/algae): make visible that even the ocean's food starts with tiny plants using sunlight.",
+          "Begin the selected sunlit marine chain with its phytoplankton/algae producer and make its sunlight-based food production explicit. Do not claim all ocean food chains begin with plants or that producers obtain food by eating other organisms.",
           "Use physical/manipulable cards the child arranges into order, then link with arrows — building beats being shown a finished chain.",
           "Probe dependence with 'what if?' removal ('if the tiny plants vanished, what happens to the small fish? the shark?') to establish the chain-of-dependence idea (seeds later food-web work).",
           "Use real, recognisable ocean species (phytoplankton, krill/small fish, mackerel, shark) rather than abstract 'small/medium/big'."
@@ -120524,21 +120540,21 @@
         ],
         "commonMisconceptions": [
           "Arrow reversal: reading the arrow as 'eats' rather than 'is eaten by' — the dominant error in food-chain teaching.",
-          "'Ocean food chains start with a big animal' — missing that they start with tiny plants/plankton because those aren't obvious.",
+          "Starting the supplied sunlit marine chain with its biggest animal rather than its phytoplankton producer.",
           "'Big/scary animals are the most important' — not seeing that predators depend on everything below them.",
           "Believing the sea has no plants ('there's nothing green down there') so children can't locate the producer.",
           "Thinking each animal eats only one thing / the chain is the whole story (the web extension corrects this later)."
         ]
       },
       "learn": {
-        "summary": "Help children aged 5–7 describe a simple ocean food chain: tiny plants (phytoplankton) → small animals (krill/small fish) → bigger fish → top predator (shark). The two core goals are (1) understanding that this ocean food chain STARTS with tiny plants that make their own food from sunlight, and (2) reading the arrow correctly as 'is eaten by' so food/energy flows up the chain toward the eater. A central proposed activity is to have children build a chain from cards, then remove a link to notice that every animal depends on the one below it.",
+        "summary": "Help children aged 5–7 describe a simple ocean food chain: tiny plants (phytoplankton) → small animals (krill/small fish) → bigger fish → top predator (shark). The two core goals are (1) understanding that this selected sunlit marine chain starts with phytoplankton that make their own food using sunlight, and (2) reading the arrow correctly as 'is eaten by' so food/energy flows up the chain toward the eater. A central proposed activity is to have children build a chain from cards, then remove a link to notice that every animal depends on the one below it.",
         "activities": [
           {
             "title": "Build-and-break the ocean food chain",
             "feedback": [
               "If a child puts the shark first because it is biggest/strongest, ask 'what does the shark's dinner eat, and what does THAT eat?' — keep going down until you reach the tiny plant that makes its own food. That base is where the chain starts.",
               "If a child reads or draws the arrow as 'eats' (pointing from predator to prey), re-state the arrow as 'is eaten by' / 'gives its energy to': it points TOWARD the eater. Trace energy flowing UP the chain, not the mouth pointing down.",
-              "If a child asks what feeds the phytoplankton, explain that phytoplankton make their own food using sunlight (like plants on land), so they do not need to eat any other living thing — they are the true start of the chain.",
+              "For the selected sunlight-using phytoplankton in this model, explain that they make food using sunlight; the linked animal consumers eat to obtain food. This is not a claim that all producers are plants or that all ocean food chains depend on sunlight.",
               "When a link is removed and the child notices the animals above lose their food, name it: 'every animal depends on the one below it.'"
             ],
             "rationale": "This activity instantiates the KS1 objective of describing a simple food chain and centres the phytoplankton producer base that everything else depends on. Constructing and then disrupting the chain lets children build the sequence themselves and reason about dependence, rather than being shown a finished chain, and it rehearses the two common error sources (start-point and arrow direction). Using real, recognisable species keeps it concrete for this age. Efficacy of this specific task is proposed, not empirically validated.",
@@ -120557,7 +120573,7 @@
           {
             "title": "Tap-to-reveal predator and prey",
             "feedback": [
-              "If a child names only what an animal eats, prompt 'and what eats IT?' to surface its two-way position in the chain (except the shark, which nothing in this chain eats; and the phytoplankton, which makes its own food and eats nothing).",
+              "If a child names only what an animal eats, prompt 'and what eats it in this supplied chain?' The selected top predator has no eater shown; the model’s sunlight-using phytoplankton producer makes its own food.",
               "Reinforce that the arrow reads 'is eaten by' every time, in the same direction."
             ],
             "rationale": "A labelled reveal clearly presents the sequence and arrow meaning and is a lower-effort companion to construction. It shows the chain rather than letting the child build it or experience a link being removed, so it works best alongside the build activity. It does not by itself elicit the dependence reasoning.",
@@ -120567,7 +120583,7 @@
               "Tap each animal to reveal what it eats and what eats it, then say the relationship aloud ('the mackerel eats the small fish and is eaten by the shark').",
               "Point along the chain and say which way the food/energy travels."
             ],
-            "intendedInsight": "The producer (phytoplankton) makes its own food and has nothing below it; each animal above the base has prey below it, and every animal except the top predator also has a predator above it. The arrow consistently points to the eater."
+            "intendedInsight": "In this supplied sunlit marine chain, the phytoplankton producer makes food using sunlight; the linked animal consumers obtain food by eating. Each consumer has its shown food source below it and, except the selected top predator, an eater above it. Arrows point from food to eater; the model is not a complete ocean food web."
           },
           {
             "title": "Order the chain and explain the arrow",
@@ -120602,7 +120618,7 @@
         ],
         "constraints": [
           "Keep to a clear 3–4 link chain (phytoplankton → small fish/krill → big fish → shark); avoid longer chains at this age.",
-          "Always begin the chain with a producer (phytoplankton/algae) and make the sunlight→plant energy source explicit, so children can locate the producer despite there being 'nothing obviously green' in the sea.",
+          "For this selected sunlit marine chain, begin with its phytoplankton/algae producer and make sunlight-based food production explicit. Other food chains can have different producer bases; chemosynthesis, bacteria and algae terminology beyond the supplied producer are not learner mastery gates.",
           "Define the arrow explicitly as 'is eaten by' and rehearse reading chains aloud in the arrow direction to pre-empt the common 'arrow points to who eats' reversal.",
           "Use real, recognisable ocean species rather than abstract 'small/medium/big'.",
           "Recognition/ordering and tap-to-reveal formats confirm the sequence and stated arrow meaning but do not on their own elicit the dependence reasoning; pair them with construction and removal to meet that goal.",
@@ -120616,7 +120632,8 @@
           "The non-preferred conversation and ordering/check approaches were retained as distinct activities because they serve different purposes (curiosity/reasoning and confirmation) rather than being dropped.",
           "The original diagnostic prompt presents a deliberately wrong chain (shark first, plants last) for the child to critique; this is an assessment design detail, preserved as such and never turned into a learner-facing model of a correct chain.",
           "One source-row reteach prerequisite id is internal routing metadata and was not carried into learner-facing guidance.",
-          "Both retained sourceClaims support activity[0] because that activity directly instantiates the describe-a-food-chain objective and teaches the phytoplankton producer base; neither source attests to the efficacy of the build-and-break method itself."
+          "Both retained sourceClaims support activity[0] because that activity directly instantiates the describe-a-food-chain objective and teaches the phytoplankton producer base; neither source attests to the efficacy of the build-and-break method itself.",
+          "Targeted factual-boundary review2026-11-12 read the complete NOAA Ocean Exploration main body and used the existence of non-sunlight producer bases to correct universal plant-only language. The active model remains a supplied sunlight-based chain, with learner-created three-or-more-organism sequences, food-to-eater arrows and producer/consumer understanding preserved. Other producer mechanisms and vocabulary are not additional learner gates. Existing source flags, confidence, provenance, ages, contexts and graph relationships remain unchanged; no intervention efficacy or learner-state compatibility is inferred."
         ],
         "schemaVersion": 2
       },
@@ -120629,7 +120646,7 @@
           "'If there were no phytoplankton at all, what would happen to the little animals, and then the fish, and then the shark?' (dependence counterexample)",
           "'Which is more important to the whole chain — the shark or the tiny plants? Why?'"
         ],
-        "correctAnswer": "It's the wrong way round. The chain should START with the tiny sea plants (phytoplankton), because they make their own food from sunlight and everything else depends on them. Then small animals eat the phytoplankton, bigger fish eat the small animals, and the shark (a top predator) comes LAST. The arrows point from the food to the eater (phytoplankton → small animal → fish → shark) and mean 'is eaten by' — they show which way the food/energy goes.",
+        "correctAnswer": "It's the wrong way round. The chain should START with the tiny sea plants (phytoplankton), because they make their own food from sunlight and the animal consumers in this studied chain depend on the food-energy they produce. Then small animals eat the phytoplankton, bigger fish eat the small animals, and the shark (a top predator) comes LAST. The arrows point from the food to the eater (phytoplankton → small animal → fish → shark) and mean 'is eaten by' — they show which way the food/energy goes.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -120650,7 +120667,7 @@
           {
             "kind": "misconception",
             "pattern": "Puts a tiny plant first but thinks something must feed it too — doesn't grasp that plants make their own food",
-            "nextMove": "Explain phytoplankton make their own food from sunlight (like plants on land) — nothing has to feed them, so they are the true start of the chain.",
+            "nextMove": "For this supplied sunlit chain, explain that its selected phytoplankton make food using sunlight rather than being fed by an earlier animal. Other producer bases are outside this task; do not teach a universal plant-only rule.",
             "distractor": null,
             "revealedBy": "Asks what feeds the phytoplankton; looks for an earlier animal before it",
             "reteachPrerequisiteId": null
@@ -120676,6 +120693,12 @@
           "source": "NOAA — What are phytoplankton? (National Ocean Service)",
           "url": "https://oceanservice.noaa.gov/facts/phyto.html",
           "verified": false
+        },
+        {
+          "claim": "Some food chains have producer bases that use chemical energy without sunlight. Therefore the studied green-plant and sunlit marine examples must not be taught as universal plant-only rules. This factual boundary does not add chemosynthesis vocabulary or mechanisms to the learner claim.",
+          "source": "NOAA Ocean Exploration, What is the difference between photosynthesis and chemosynthesis?",
+          "url": "https://oceanexplorer.noaa.gov/ocean-fact/photochemo/",
+          "verified": true
         }
       ],
       "confidence": "high",
