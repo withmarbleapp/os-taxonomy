@@ -5,7 +5,18 @@ import { readFileSync } from 'node:fs';
 const load = path => JSON.parse(readFileSync(new URL(path, import.meta.url)));
 const catalogue = load('../data/curriculum-standards.json').curricula;
 const topics = new Map(load('../data/topics.json').topics.map(topic => [topic.id, topic]));
-const contexts = load('../data/curriculum-alignments.json').alignments;
+const currentContexts = load('../data/curriculum-alignments.json').alignments;
+const creativeOverlay = load('../reports/india-three-creative-writing-framework-authoring-review-2026-11-12.json');
+// These tests retain the historical source-report census. The later reviewed
+// overlay is checked against the actual union in its own binding tests; remove
+// only its five explicitly registered additions for this historical projection.
+const laterPairs = new Set(creativeOverlay.componentDeltas.flatMap(({ before, after }) =>
+  after.standards.filter(key => !(before?.standards ?? []).includes(key))
+    .map(key => JSON.stringify([after.topicId, key]))));
+const contexts = currentContexts.map(context => ({ ...context,
+  standards: context.standards.filter(key => !laterPairs.has(JSON.stringify([context.topicId, key]))),
+})).filter(context => context.standards.length || context.ageOnly);
+
 const edges = load('../data/dependencies.json').dependencies;
 const readiness = load('../reports/ncert-alignment-readiness-2026-11-10.json');
 const summary = load('../reports/ncert-primary-language-review-summary-2026-11-10.json');
@@ -565,7 +576,7 @@ test('expressive components reject Full, collapsed intervals, cross-role evidenc
   assert.throws(() => checkExpressionAssociations(noBinding), /actual material\/assessor/);
 });
 
-test('current framework graph summaries count active and withheld contributions without implying unconditional mastery', () => {
+test('historical framework graph summaries retain their reviewed projection alongside later overlays', () => {
   const ledger = load('../reports/ncert-alignment-readiness-2026-11-10.json').records;
   const keys = new Set(ledger.map(row => row.key));
   const pairs = new Set(contexts.flatMap(c => c.standards.filter(k => keys.has(k)).map(k => pairKey(c.topicId, k))));
