@@ -36,7 +36,7 @@
     },
     {
       "id": "cbse-ctai-2026",
-      "name": "CBSE 2026–27 primary framework",
+      "name": "CBSE CT/AI supplement (Classes III–V), 21 selected hierarchical positions",
       "retainedPositions": 21,
       "excludedPhysicalEducationWithinSelection": 0,
       "eligibleSelectedPositions": 21,
@@ -156,21 +156,6 @@
     "HindiUrduCanonicalMachineWording": "Unverified for 133 printed positions",
     "catalogueDoesNotDeclareSkillGaps": true
   },
-  "CBSE": {
-    "hierarchy": {
-      "goals": 3,
-      "competencies": 6,
-      "gradedParentBoxes": 12
-    },
-    "sourceGradeScope": [
-      3,
-      4,
-      5
-    ],
-    "stageRecordsApplyOnce": true,
-    "catalogueDoesNotDeclareUniqueSkills": true,
-    "acceptedCoverageReviewed": false
-  },
   "outsideSelectedBaseline": {
     "2025HindiUrduSections": {
       "sourceGradeScope": "Foundational, primary I–II view",
@@ -212,5 +197,28 @@
     "Bind actual language/script/material/assessor and selected art/resource conditions for the configured scope; do not force alternatives simultaneously.",
     "Keep contextual observations and actual PE exclusions as legitimate dispositions rather than inventing mastery topics.",
     "Verify reviewed Git acceptance; downstream publication and learner attainment remain separate."
+  ],
+  "CBSECTAISupplementClassesIIITOV": {
+    "hierarchy": {
+      "goals": 3,
+      "competencies": 6,
+      "gradedParentBoxes": 12
+    },
+    "sourceGradeScope": [
+      3,
+      4,
+      5
+    ],
+    "stageRecordsApplyOnce": true,
+    "catalogueDoesNotDeclareUniqueSkills": true,
+    "acceptedCoverageReviewed": false
+  },
+  "overallCBSEPrimaryDenominator": null,
+  "overallIndiaDenominator": null,
+  "broaderAuditPriority": [
+    "Mathematics I–V: establish current source and material applicability",
+    "Languages I–V: actual role/programme/script variants and source recovery",
+    "TWAU/EVS primary integrated/stage and III–V materials",
+    "Arts I–V: stage/grade coverage, alternatives and current project/material requirements"
   ]
 }
