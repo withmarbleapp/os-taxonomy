@@ -1,0 +1,30 @@
+# Current CBSE primary implementation accounting
+
+This is a bounded applicability review as of 12 November 2026, alongside the national NCERT framework and applicable CBSE primary curriculum. It adds no mastery topics, catalogue records, associations or source Full judgments. The [finite circular ledger](india-cbse-current-implementation-applicability-2026-11-12.json) identifies all 77 unique entries observed in the official 2026 academic circular index, with 40 distinct bounded body reviews and 37 entries screened only from the index. Its coverage is neither every CBSE directive nor a comprehensive India denominator.
+
+## Implementation contract
+
+For each applicable school programme, record its issuer and exact source edition, school year, operative dates, region, eligible class/age, responsible adult, selected language or other permitted route, actual resources and any required annexes. Preserve the difference between a direction to provide a school opportunity, a pupil choosing to enter, a suggested alternative activity, and a curricular learning requirement. An opportunity can be required of the school while individual participation remains conditional.
+
+Before delivery, verify the current call and relevant annexes, prepare the actual age-appropriate material and access arrangements, and keep adult administration separate from pupil performance. Source-authoring completeness does not assert school registration, programme implementation, learner participation, submission, positive feelings or attainment. No registration, public posting, message or learner-data handling is performed by this review.
+
+Closed calls remain part of dated implementation history. They do not become indefinite pupil obligations, and a calendar entry for a later cycle does not carry forward the old cycle’s word limits, rubric, eligibility or portal rules without an applicable call. New dates require a new applicability check.
+
+## Concrete current and dated cases
+
+| Source | Applicable implementation accounting | Learning boundary |
+| --- | --- | --- |
+| Acad-01/2026, Budding Authors 2025–26 | First round 6–31 January and second round 3–27 February 2026; both closed. Class V is the primary intersection of its V–VI category. Retain the school opportunity and conditional entrant rules separately. | The entrant’s 500–600-word original story and Hindi-or-English choice do not create a universal word-count topic or a nationally required language pair. School shortlist allocations are a different rule. |
+| Acad-72/2026, Expression Series | School activity 5–17 November; submissions 18–25 November 2026. Verify the actual topic, eligibility and format before any real participation. | The III–V entrant’s 150-word paragraph, Hindi or English, is a programme condition rather than a new universal mastery requirement. No submission is performed here. |
+| Acad-30/2026, Bharatiya Bhasha summer opportunity | Bind the actually selected Indian language and delivery arrangements; retain the summer or permitted weekend/after-school context. | There is no fixed national pair. Preserve the printed inconsistency between approximately 28 hours and 2 hours per day for 7 days; do not invent a corrected time requirement. Suggested activities are alternatives. |
+| Acad-55/2026, Nasha Mukt Vidyalaya 2026–29 | Retain ongoing school implementation and age-appropriate prevention within life skills/health education, including the stated half-yearly awareness opportunity. Use checked current age-appropriate material and responsible staff. | This is a genuine non-PE health direction. Its institutional criteria and compliance targets are not a graded I–V mastery table. The review adds no drug-treatment procedure or pupil affect score. |
+| Acad-59/2026, e-waste campaign | The September–October 2026 window is closed. Any later programme needs its own applicable call, consent and authorised adult logistics. | Awareness and responsible choices do not authorise child dismantling, hazardous battery/CRT handling or treating deposits as mastery. |
+| Acad-77/2026, book festival | A dated 24–29 November opportunity for the named Mumbai-region districts; verify actual locality and access. | This does not create an all-India compulsory field trip, book quota or required liking of reading. |
+
+Exact official links, captured-body hashes, page-read limits and remaining annex gates are in the ledger. The original wording, PDF bytes and source images are retained privately; this document is original implementation reasoning.
+
+## Finite remaining verification
+
+The 37 index-only bodies remain identified, rather than being declared optional or irrelevant from titles alone. Review a body when it may add a core primary duty or when the actual school selects its programme. Unread annexes and eligibility/material details remain explicit delivery gates. Regional, age-limited, administrative and actual PE directions retain their own reasons; excluding PE does not exclude health, accessibility, hygiene or substance-prevention education automatically.
+
+The formal NCERT primary census of 221 eligible hierarchical records and the 21-record CBSE CT/AI supplement are separate scoped inventories. This audit supplies no overall India or CBSE primary percentage. Individual 2017-outcome applicability, named-language programme/rendition bindings, current art-project bindings and the remaining selected-material checks stay distinct from circular administration. The [primary source accounting decision](india-primary-source-accounting-decision-2026-11-12.json) retains those framework, programme and material boundaries.
