@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "cbse-ctai-2026",
-  "baseCommit": "fc31307881e56d369f133d61b78024a5f2cd96fd",
+  "baseCommit": "d4f5f80a26b94f355c27db07f45b4870e0fb913f",
   "scope": {
     "selectedKeys": [
       "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3"
@@ -16,12 +16,14 @@
       8,
       11
     ],
-    "ageEvidence": "CBSE framework section6.1 uses ClassesIII–V; formal NCF Preparatory stage8–11 is retained in the existing reviewed India context. This is a stage window, not a deadline for each grade or a topic-global-age inference.",
+    "ageEvidence": "CBSE framework section 6.1 uses Classes III–V. The formal NCF Preparatory stage, ages 8–11, supplies the existing reviewed India interval. This is the stage window, not a deadline at every grade or an inference from topic-global ages.",
     "records": 1,
     "newPairs": 1,
     "topicsReused": 1,
     "newTopics": 0,
-    "topicClaimChanges": 0
+    "topicClaimChanges": 0,
+    "attainmentReference": "stage-end",
+    "materialGradeInterpretation": "Grades III and V are verified exemplars within the stage. They do not duplicate the source competency or require identical performance at each grade."
   },
   "coverageMeaning": "Authoring coverage of the selected source competency with existing whole claim and concrete assessment design; not learner attainment or coverage of a goal, graded parent box, handbook chapter or entire source.",
   "records": [
@@ -36,7 +38,7 @@
           "role": "whole"
         }
       ],
-      "rationale": "The existing claim enumerates two-variable choices systematically. Its accepted constrained-listing protocol already makes order, repetition, forbidden self-pairs and reverse duplicates explicit, with changed-pool/forbidden-pair transfer. Those source-fit conditions are independently confirmed by a current official GradeV companion task and teacher solution. No new mastery claim or grade duplicate is needed.",
+      "rationale": "The existing claim enumerates two-variable choices systematically. Its accepted constrained-listing protocol makes order, repetition, forbidden self-pairs and reverse duplicates explicit, with changed-pool and forbidden-pair transfer. Current official Grade III and V companion tasks and teacher solutions independently confirm numerical-constraint and shared-pool enumeration demands. No new mastery claim or grade duplicate is needed.",
       "assessmentProtocols": [
         {
           "file": "ncert-preparatory-mathematics-assessment-protocols-2026-11-10.json",
@@ -83,7 +85,7 @@
       "Any of the twelve whole graded parent outcome boxes",
       "All exercises or chapters in the companion handbooks"
     ],
-    "meaning": "The selected stage competency is one record. The material sample is a resource binding, not an invented extra standard or GradeV-only version of the stage code."
+    "meaning": "The selected stage competency is one record. The Grade III and V samples are resource bindings, not extra standards or grade-specific versions of the stage code."
   },
   "assessmentConditions": [
     "A selected response alone is insufficient: require an exhaustive list/table and an explanation of excluded self-pairs and reverse duplicates.",
