@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,432 reported Full / 34 Partial, including
-28 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,434 reported Full / 32 Partial, including
+26 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 32 Partials remain
+the excluded PE component explicitly unclaimed. The other 30 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -331,3 +331,17 @@ The original paired-art project remains parameterized by the actual current
 session/pair; its historical illustration is labelled. Real school provision,
 local language/material choices and pupil attainment are unperformed. The new
 ledger/resources change no canonical data or existing historical Full judgments.
+
+## Grade 2 air/water quality: two further source closures
+
+Root and independent peer review qualified E1.1 and the separately assessed E1
+overall. The resource assesses both air and water impacts, retains distinct
+attributed First Nations, Métis and Inuit perspectives, and requires an actual
+locality configuration plus an independent quality-protection plan and changed
+constraints. A quantity-only conservation slogan does not suffice. Complete
+whole-topic operations and prior household/world-access resources remain bound.
+No canonical data changed; earlier E1.2/E1.3 labels are outside this fresh review.
+
+Remaining source Partials are now 26 Science, four Social Studies and the two
+mixed Kindergarten records with in-scope non-PE authoring accounted for: 30
+unqualified in-scope expectations, plus the historical audit.
