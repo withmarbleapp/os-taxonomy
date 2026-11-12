@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed source-authoring judgments for this bounded batch; repository acceptance and downstream publication remain separate. No learner attainment certified.",
+  "acceptedBaseCommit": "ba755361f9a047c0889cc8ff428eceef9fa45fc9",
+  "preparationBaseCommit": "2abe49611e1fda5035e8a376c1d64742850b4105",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "records": [
+    {
+      "code": "ON-SCI-2022-G2-D1",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D1",
+      "qualification": "fresh-source-task",
+      "remainingConditions": [],
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "kind": "overall"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D1.1",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D1.1",
+      "qualification": "fresh-source-task",
+      "remainingConditions": [],
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "kind": "specific"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D1.2",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D1.2",
+      "qualification": "fresh-source-task",
+      "remainingConditions": [],
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "kind": "specific"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D2",
+      "qualification": "retained-partial",
+      "remainingConditions": [
+        "Review independent overall/six-category source duty against the available complete early-age mastery claims; no age lowering or new topic inferred."
+      ],
+      "historicalDisposition": "Partial",
+      "disposition": "Partial",
+      "kind": "overall"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.3",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D2.3",
+      "qualification": "retained-partial",
+      "remainingConditions": [
+        "Review independent overall/six-category source duty against the available complete early-age mastery claims; no age lowering or new topic inferred."
+      ],
+      "historicalDisposition": "Partial",
+      "disposition": "Partial",
+      "kind": "specific"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.4",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D2.4",
+      "qualification": "retained-partial",
+      "remainingConditions": [
+        "Review independent overall/six-category source duty against the available complete early-age mastery claims; no age lowering or new topic inferred."
+      ],
+      "historicalDisposition": "Partial",
+      "disposition": "Partial",
+      "kind": "specific"
+    },
+    {
+      "code": "ON-SCI-2022-G2-D2.5",
+      "resource": "ontario-grade2-machine-impact-force-task-design-2026-11-12.json",
+      "protocolReference": "/independentSourceProtocols/D2.5",
+      "qualification": "fresh-source-task",
+      "remainingConditions": [],
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "kind": "specific"
+    }
+  ],
+  "componentAssociations": [
+    {
+      "topicId": "mt_MVlTa0XKgo",
+      "code": "D1.1",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_B3W5EfimJw",
+      "code": "D2.5",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_MVlTa0XKgo",
+      "code": "D1",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_deexfCHU9m",
+      "code": "D1",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_deexfCHU9m",
+      "code": "D1.2",
+      "role": "component"
+    }
+  ],
+  "counts": {
+    "reviewedRows": 7,
+    "freshSourceClosures": 4,
+    "retainedPartial": 3,
+    "existingPairsPreserved": 2,
+    "newComponentPairs": 3,
+    "newContexts": 0,
+    "newTopics": 0,
+    "guideChanges": 0,
+    "ageChanges": 0,
+    "dependencyChanges": 0
+  },
+  "accounting": "Accepted Ontario has 92 Partial expectations, including 48 Science, after PR157. This separately reviewed four-row batch proposes 88 Partial, including 44 Science, after its own main acceptance. Historical Full qualifications and G2 D2.1/D2.2 are retained, not freshly recertified."
+}
