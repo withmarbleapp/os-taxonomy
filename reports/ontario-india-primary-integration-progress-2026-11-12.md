@@ -5,6 +5,11 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
+Current integrated draft: Ontario 2,385 reported Full / 81 Partial, including
+37 Science Partials; selected NCERT authoring Full 451/521. These figures are
+proposed and include retained historical qualifications. Main acceptance,
+current-source completeness and final historical audit remain separate gates.
+
 ## Scope and completion criteria
 
 - Ontario: the agreed primary curriculum through age 12, including the retained
@@ -101,6 +106,17 @@ unestablished pending the current-source completeness audit.
   Every named-programme configuration and actual learner-performance gate stays
   explicit. No claim, context, association, age, guide or edge changes in this
   report-only batch. Historical 444/521 snapshots are retained rather than edited.
+- India creative writing: three further source-authoring closures, five
+  component pairs and one India 8–11 context reuse Simple Stories and Writing to
+  inform alongside complete original role-bound portfolios. Developed narrative
+  and digital multimodal candidates are not imposed as source gates. Combined
+  proposed selected authoring Full: 451/521; formal diagnostic Full: 176/221,
+  with 45 other typed conditions. Existing claims, intervals and paths stay exact.
+- Historical Ontario Grade 1 money: F1 and F1.1 requalified against the exact
+  Canadian inventory, including the separate 50-cent representation and notes
+  through $50. One overall component pair is added in the existing Ontario 6–9
+  context. This is two freshly reviewed historical Full labels, not two newly
+  closed Partials; all prior claims, intervals, guides and edges are preserved.
 
 ## Remaining work
 
