@@ -19,6 +19,15 @@ Only prevention guidance supports this correction; clinical instructions and
 statistics are outside the teaching content. Existing source flags and confidence
 are preserved, with one new source and a bounded review note.
 
+The same appliance guide’s assessment feedback now distinguishes stored energy
+from its electrical supply: a battery stores energy and can supply electrical
+energy to a connected device. A targeted read of the complete [US Department of
+Energy battery explanation](https://www.energy.gov/science/doe-explainsbatteries)
+confirmed the physical distinction. Chemical storage is teacher background,
+not a new learner vocabulary requirement. The two feedback statements, their
+stale qualification note and the new citation are the complete guide correction;
+all existing assessment scenarios, response thresholds and source flags remain.
+
 ## Food-chain producer boundaries
 
 `mt_EygMHKs8Ed` (Simple Food Chains) retains learner-created chains with at least
