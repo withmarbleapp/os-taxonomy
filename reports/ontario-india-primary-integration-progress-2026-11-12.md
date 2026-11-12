@@ -5,7 +5,7 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,411 reported Full / 55 Partial, including
+Current integrated draft: Ontario 2,416 reported Full / 50 Partial, including
 35 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
@@ -107,6 +107,13 @@ unestablished pending the current-source completeness audit.
   7 to 6; all old scoped intervals, criteria, guides and edges remain exact. No
   new topic, false prerequisite association or older Seasons mastery is introduced.
   Combined proposed totals: 2,411 reported Full / 55 Partial, 35 Science Partials.
+- Ontario local Social Studies: five source-authoring closures use complete
+  attributed school/territory/community-change resources and truthful substitution
+  contracts. Independent Grade 1 services/map/distance and Grade 6 full-case
+  synthesis remain required, with all whole claims and actual-locality limits
+  preserved. No canonical data changes. Combined proposed totals: 2,416 reported
+  Full / 50 Partial, including 35 Science Partials; six Social Studies chronology
+  conditions remain independently unfinished.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -149,6 +156,19 @@ unestablished pending the current-source completeness audit.
   evidence are explicit. Conditional dispositions remain unchanged; this accounts
   for their authoring route without increasing 451/521 or certifying actual school
   configuration, all forms, learner attainment or positive feelings.
+- India language configuration: ten independently reviewed role/script/grammar
+  modules and parent portfolios include concrete original materials, complex oral
+  expression and fresh R2 reading transfer. ConditionalLanguageBinding labels and
+  actual-programme gates remain; no generic Full or language-pair claim is added.
+  The exact 70-record retained remainder and finite 254-position framework census
+  separate formal sources, implementation materials and current applicability.
+- India reading engagement: five independently reviewed existing contracts retain
+  actual-role text access, repeated specific R1 home-library loans and independent
+  overall context review without quotas or forced enjoyment. Contextual labels,
+  actual-provision and learner-evidence boundaries stay explicit. Together with
+  the art and language contracts, 26 of the selected 69 typed conditions now have
+  current source/task review; the other 43 and the separate source-meaning
+  exception remain in audit. The selected Full count stays 451/521.
 - Historical Ontario Grade 1 money: F1 and F1.1 requalified against the exact
   Canadian inventory, including the separate 50-cent representation and notes
   through $50. One overall component pair is added in the existing Ontario 6–9
@@ -157,8 +177,8 @@ unestablished pending the current-source completeness audit.
 
 ## Remaining work
 
-- Ontario Science residuals; Social Studies community, territory and chronology
-  bindings; Kindergarten local
+- Ontario Science residuals; six Social Studies chronology/interaction
+  conditions; Kindergarten local
   resources and mixed-scope conditions; historical coverage audits across all
   subjects, including those currently showing zero Partials.
 - India current source completeness and applicability; formal role-bound
