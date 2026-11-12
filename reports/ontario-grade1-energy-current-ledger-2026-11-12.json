@@ -1,13 +1,10 @@
 {
   "reviewVersion": 1,
   "date": "2026-11-12",
-  "acceptedBaseCommit": "2a7ab7e092ab7ec92622fb68141a369fccb617ff",
-  "proposalStatus": "Pending complete root semantic review; proposed Full entries are not accepted dispositions.",
+  "acceptedBaseCommit": "d4f5f80a26b94f355c27db07f45b4870e0fb913f",
   "counts": {
-    "proposedFreshFull": 4,
-    "remainingPartial": 6,
-    "acceptedFullInThisSlice": 0,
-    "acceptedPartialInThisSlice": 10
+    "freshFull": 4,
+    "remainingPartial": 6
   },
   "expectations": [
     {
@@ -15,7 +12,6 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
@@ -28,13 +24,12 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
       "remainingConditions": [
         "Check energy-specific conservation choices in both settings rather than transferring a water-saving example without explanation.",
-        "The appliance candidate has no new local age context until its complete evidence is reviewed for that interval."
+        "The complete appliance guide has been reviewed, but its broader whole transfer repertoire has no approved Ontario6–7 readiness witness. Do not add a younger context from this source subset."
       ]
     },
     {
@@ -42,7 +37,6 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
@@ -55,7 +49,6 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
@@ -68,9 +61,8 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Full",
-      "qualification": "proposed-source-task",
+      "qualification": "fresh-source-task",
       "contributingTopicIds": [
         "mt_cxJRc15osy",
         "mt_iGSfQg3g5c"
@@ -97,9 +89,8 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Full",
-      "qualification": "proposed-source-task",
+      "qualification": "fresh-source-task",
       "contributingTopicIds": [
         "mt_iGSfQg3g5c",
         "mt_PiWZA8Z0ZJ",
@@ -132,9 +123,8 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Full",
-      "qualification": "proposed-source-task",
+      "qualification": "fresh-source-task",
       "contributingTopicIds": [
         "mt_cxJRc15osy",
         "mt_EygMHKs8Ed"
@@ -161,9 +151,8 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Full",
-      "qualification": "proposed-source-task",
+      "qualification": "fresh-source-task",
       "contributingTopicIds": [
         "mt_cxJRc15osy",
         "mt_iGSfQg3g5c"
@@ -190,7 +179,6 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.5",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
@@ -203,7 +191,6 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.6",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "acceptedDisposition": "Partial",
       "disposition": "Partial",
       "qualification": "retained-partial",
       "contributingTopicIds": [],
@@ -212,5 +199,6 @@
       ]
     }
   ],
-  "accounting": "Only four proposed Partial-to-Full changes. All six other energy records stay Partial; no historical relabelling or automatic overall promotion. All nine existing scoped component pairs remain unchanged."
+  "accounting": "Exactly four fresh Partial-to-Full source-authoring closures. All six other energy records stay Partial; no historical relabelling or automatic overall promotion. All nine existing scoped component pairs remain unchanged.",
+  "reviewStatus": "Reviewed source-bound authoring judgments; repository acceptance and downstream publication are separate from this ledger."
 }

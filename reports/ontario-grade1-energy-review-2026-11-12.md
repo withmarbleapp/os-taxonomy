@@ -1,10 +1,11 @@
-# Ontario Grade 1 energy: proposed four-record source portfolio
+# Ontario Grade 1 energy: four-record source portfolio
 
-This local proposal accounts for C2.1–C2.4 through existing age-fitting components
-and an authored, accessible teaching/assessment resource. The four Full entries
+This reviewed authoring portfolio accounts for C2.1–C2.4 through existing age-fitting components
+and an authored, accessible teaching/assessment resource. The four fresh Full entries
 in the [current ledger](ontario-grade1-energy-current-ledger-2026-11-12.json) are
-proposed dispositions pending complete semantic review. They are not accepted
-coverage, classroom delivery, evaluated efficacy or observed learner mastery.
+source-bound authoring judgments. They do not establish classroom delivery,
+evaluated efficacy or observed learner mastery; repository acceptance and
+downstream publication remain separate.
 The historical grade review and cross-grade reports remain unchanged snapshots.
 
 The [task resource](ontario-grade1-energy-task-design-2026-11-12.json) contains
@@ -15,7 +16,7 @@ The study cards teach facts; receiving them, copying a worked model or repeating
 an adult's answer does not satisfy the independent assessment. Actual learner
 explanations, models and transfer reasoning must be recorded separately.
 
-| Proposed record | Required source evidence | Existing component roles |
+| Reviewed record | Required source evidence | Existing component roles |
 | --- | --- | --- |
 | C2.1 | Food-enabled movement and stationary-surface warming, independent common energy generalisation, then a new-effect transfer | Basic Body Needs; Sunlight warms things up |
 | C2.2 | Principal rather than only; separate air, land and water warming; daylight; selected green-plant food/growth; transfer when electrical lamps stop | Sunlight warms things up; Sun, Moon & Stars; What Plants Need to Grow |
@@ -31,7 +32,7 @@ remain independently applicable in the unchanged contributor guides. The Sun is
 not counted as one of the organisms in a three-organism food chain.
 
 No new topic, age interval, association, prerequisite or source catalogue record
-is proposed. In particular, the later appliance guide retains its complete
+is added. In particular, the later appliance guide retains its complete
 repertoire and current contexts; a declared lamp or fan example does not offer
 that whole claim to ages 6–7. Formal energy-type, store, current, conservation and
 resource-evaluation repertoires are neither weakened nor silently lowered.
@@ -42,7 +43,7 @@ The Ontario source is the pinned [Grade 1 Science and Technology 2022
 PDF](https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/4b8f8ea5-e66a-4082-bfa0-795d8d7f8c08/SciTech_G1_AODA.pdf),
 SHA-256 `7d6463a188d376251344be94ec61a42276aa042fd77fc9cfc055c829f974d936`.
 Its expectation wording remains private under the codes-only publication policy.
-The proposed task resource uses original cases and records bounded factual source
+The task resource uses original cases and records bounded factual source
 reads rather than copying restricted expectation text.
 
 The factual references are [EIA's energy explanation](https://www.eia.gov/energyexplained/what-is-energy/),
@@ -61,11 +62,11 @@ is recertified.
 C1, C1.1, C1.2, C2 overall, C2.5 and C2.6 remain Partial. The finite-resource case
 has factual support but no approved complete age-fitting whole-claim reuse route.
 The seasonal energy-use comparison and responsible-use/electrical-consequence
-portfolios need their own complete source-fit review. This proposal does not
+portfolios need their own complete source-fit review. This portfolio does not
 promote C2 overall while the finite-resource requirement remains acknowledged as
 unmet. Causal seasonal E2.1 is a separate retained Partial.
 
-If these four dispositions are accepted, the unchanged 2466-record eligible
+After these four dispositions reach the default branch, the unchanged 2466-record eligible
 Ontario scope would have 2364 reported Full records, including retained historical
 labels, and 102 Partial. Science Partial would become 58. Grade 1 would retain
 seven Partials: the six energy records above and E2.1. Before acceptance, the
@@ -73,7 +74,7 @@ accepted totals remain 2360 Full and 106 Partial, including 62 Science Partials.
 
 ## Checks and preservation
 
-The explicit four-code registry binds every proposed row to its actual resource,
+The explicit four-code registry binds every reviewed row to its actual resource,
 protocol, existing pair and independent performance. Negative checks reject
 missing air/plant-food/generalisation/various-source operations, absent study
 resources or source bindings, copied answers, teacher-supplied reasoning,
@@ -81,7 +82,7 @@ recognition-only chain work, missing transfer, implicit overall promotion and a
 younger whole-appliance offer. These checks protect the authored contract; they
 do not prove pedagogical efficacy or learner success.
 
-The only canonical guide change in the local batch is the separately reviewed
+The only canonical guide change in this batch is the separately reviewed
 battery stored-energy correction: two assessment feedback statements, one stale
 qualification note and one new DOE source. All other guides, topic claims/ages,
 scoped contexts, dependencies and catalogue contents are preserved against

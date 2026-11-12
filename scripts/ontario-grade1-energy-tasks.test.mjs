@@ -20,7 +20,7 @@ const fullCodes = Object.keys(bindings).map(code => `ON-SCI-2022-G1-${code}`).so
 const partialCodes = ['C1', 'C1.1', 'C1.2', 'C2', 'C2.5', 'C2.6'].map(code => `ON-SCI-2022-G1-${code}`).sort();
 function check(report = resource, current = ledger, associations = contexts) {
   assert.deepEqual(current.expectations.map(row => row.code).sort(), selected, 'Missing energy inventory');
-  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Full').map(row => row.code).sort(), fullCodes, 'Only four proposed source closures are reviewed');
+  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Full').map(row => row.code).sort(), fullCodes, 'Only four source closures are reviewed');
   assert.deepEqual(current.expectations.filter(row => row.disposition === 'Partial').map(row => row.code).sort(), partialCodes, 'Six residuals must remain Partial');
   assert.equal(report.scope.sourceTaskCoverageNotLearnerCertification, true, 'Source task cannot award learner mastery');
   assert.equal(report.scope.applianceYoungerContextApproved, false, 'No younger whole appliance offer');
@@ -29,10 +29,9 @@ function check(report = resource, current = ledger, associations = contexts) {
   for (const row of current.expectations) {
     assert.equal(row.key, `${slug}:${row.code}`);
     assert.equal(row.historicalDisposition, 'Partial', 'History cannot become a Full recertification');
-    assert.equal(row.acceptedDisposition, 'Partial', 'Proposed Full is not accepted coverage');
     if (row.disposition === 'Partial') { assert.ok(row.remainingConditions.length, 'Missing honest residual'); continue; }
     const binding = bindings[row.code.split('G1-')[1]];
-    assert.equal(row.qualification, 'proposed-source-task');
+    assert.equal(row.qualification, 'fresh-source-task');
     assert.equal(row.dossier, dossier, 'Missing actual public dossier');
     assert.equal(row.protocolReference, `/protocols/${binding.protocol}`, 'Missing actual protocol binding');
     const protocol = report.protocols?.[binding.protocol];
@@ -66,9 +65,9 @@ function check(report = resource, current = ledger, associations = contexts) {
       for (const field of ['name', 'description', 'evidence', 'assessmentPrompt']) assert.deepEqual(snapshot[field], cards.get(id)[field], 'Whole claim weakened or substituted');
     }
   }
-  assert.deepEqual(current.counts, { proposedFreshFull: 4, remainingPartial: 6, acceptedFullInThisSlice: 0, acceptedPartialInThisSlice: 10 });
+  assert.deepEqual(current.counts, { freshFull: 4, remainingPartial: 6 });
 }
-test('four proposed energy protocols bind accessible resources and exact existing components', () => check());
+test('four reviewed energy protocols bind accessible resources and exact existing components', () => check());
 test('missing rows, dossiers or source bindings cannot evade the review registry', () => {
   const missing = structuredClone(ledger); missing.expectations.pop(); assert.throws(() => check(resource, missing), /inventory/);
   const dossierMissing = structuredClone(ledger); delete dossierMissing.expectations.find(row => row.disposition === 'Full').dossier; assert.throws(() => check(resource, dossierMissing), /dossier/);
