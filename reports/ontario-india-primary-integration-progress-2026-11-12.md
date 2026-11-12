@@ -63,12 +63,22 @@ unestablished pending the current-source completeness audit.
   existing contexts, original readable/visual resources and independent force
   comparison protocols. Proposed Ontario totals: 2,378 Full / 88 Partial,
   including 44 Science Partials. No new topic or age change.
+- Ontario Grade 2 water: two further source closures using existing component
+  pairs, with actual personal/household assessment and planning resources plus
+  natural/built water-source assessment. Combined proposed Ontario totals:
+  2,380 Full / 86 Partial, including 42 Science Partials.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
   included. Proposed supplement coverage is five covered competencies; the
-  selected NCERT baseline remains 444/521 Full. Digital and graded-parent batches
-  remain separate unfinished work, not inferred covered from these components.
+  selected NCERT baseline remains 444/521 Full.
+- India digital familiarity: five component pairs and five India 8–11 contexts,
+  with complete direct and prerequisite operational protocols. All six CT/AI
+  stage competencies now have reviewed source-authoring designs on this branch;
+  the three goals and 12 graded parent boxes remain independently unfinished.
+  Actual app/file/program performance is required at delivery, not claimed here.
+  The Hardware/software compatibility age projection changes from 3–8 to 3–11;
+  every pre-existing authored context interval and mastery criterion is retained.
 
 ## Remaining work
 
