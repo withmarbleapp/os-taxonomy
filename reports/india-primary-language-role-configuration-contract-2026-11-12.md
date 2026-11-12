@@ -1,0 +1,39 @@
+# Role-bound primary language authoring contract
+
+This candidate contract addresses four remaining formal-framework Partials and the language configuration conditions indexed in the companion completion ledger. It proposes implementable authoring, not a national language pair, named-programme certification, learner attainment or a disposition change. R1 and R2 are separately configured roles. An English example below is an original, desk-checked assessment illustration; no learner trial or independent named-language programme review is claimed.
+
+## Configuration and acceptance
+
+For each role, record the language, variety, script, stage, text identifier/version, provenance, permitted access support, reading direction, symbol inventory, word-boundary and punctuation conventions, and expected written forms. Attach the actual complete learner material and assessor key. Identify who checked linguistic accuracy and stage appropriateness. Where multiple readings are acceptable, list them; distinguish a legitimate variety from an error. Do not translate an English answer key mechanically or impose its alphabet, word order or punctuation on another language.
+
+Each task has a teaching model, a fresh independent task, an explanation or authentic product, feedback for the observed error, and a changed case. Assistance during teaching is permitted and recorded; independent performance cannot be credited from an adult-supplied answer. A configuration can be authorable before an assessor is physically present. Before delivery, someone competent in the chosen variety must check that configuration and judge actual performance. An unreviewed configuration remains unverified, rather than blocking every other language configuration.
+
+Preserve all existing whole cards and hard prerequisites. A source component result does not award the complete topic. Review source requirements, whole-claim extras and prerequisite evidence in separate rubric columns. Sharing a topic ID creates no R1-to-R2, script-to-script or text-level mastery transfer.
+
+## Expressive written reading: Foundation R1 C-10.4 and Preparatory R2 C-2.3
+
+Configure two genuine written passages in the actual role, one instructional and one fresh assessment passage. Choose meaningful unfamiliar-to-the-learner text at the appropriate level; record the choice and do not substitute memorised oral recitation. Mark an assessor copy for word recognition, meaningful phrasing, punctuation pauses, expression and an opportunity to reread and self-correct. Avoid an invented universal speed threshold. Teach by modelling one phrase, contrasting an inappropriate pause with a meaning-preserving reading, then let the learner practise a different phrase.
+
+For independent assessment, the learner reads the fresh visible text, explains its meaning, rereads a selected sentence after checking it and attempts a changed passage with different wording. Record actual substitutions, omissions, pauses, expression and corrections. Accurate words with flat or meaning-breaking delivery call for phrase grouping and rereading; fluent guessing requires a return to actual word recognition. Record whether self-correction was actually observed; do not manufacture success from an adult correction. Preserve the whole target's prosody, rereading and self-correction demands separately from any narrower source result.
+
+Original English illustration for an early reading configuration: “Mina has a red bag. ‘Is this your cup?’ she asks. Arun shakes his head. ‘My cup is blue.’ Mina looks again. The blue cup is under the bag.” An assessor checks the question as a question, the full-stop pauses, the distinction between red bag and blue cup, and accurate written recognition. Changed case: replace the people, colours and location with a separately checked new passage. Do not credit recalling the first story. This is not evidence that the same passage is suitable for every Foundation R1 or Preparatory R2 learner.
+
+## Heard summary: Preparatory R1 C-1.2
+
+Supply an actual-role short oral account, an assessor key containing its central event, essential sequence and consequence, and a fresh changed account. The task remains oral: no decoding or compulsory written-note gate. Teach with a different account: model retaining what happened and why, then compare an irrelevant detail with an essential one. Allow listening access supports without supplying the summary.
+
+Original English illustrative account: “The class planned to read outside after lunch. Before lunch, rain made the benches wet. The children checked the covered entrance, but workers needed to carry boxes through it. They chose the library instead. Two children moved the book basket there, and everyone returned it afterwards. The class still shared stories, although their first place was unavailable.” The independent summary must retain the intended outdoor reading, the rain/access constraints, the library decision and continuation of reading. Exact names and verbatim sentences are unnecessary. A response only about moving a basket misses the main event. Give a changed oral account with a different problem and solution; ask for its essential sequence and reason.
+
+The existing component association remains at its reviewed 10–11 interval; the source is stage-end within 8–11. Any earlier context needs separate justification. Assess the complete broader summary card and oral-paraphrase hard prerequisite independently, including its media and quantitative obligations where required. A successful short heard summary does not establish those extras.
+
+## Functional writing: Preparatory R2 C-3.2
+
+Configure actual-R2 written models and three fresh learner-authored products: a poster, an invitation and safe written instructions. Teach audience, purpose, necessary information and revision using a different event. The independent products must be written by the pupil; drawing, adult copying, dictation or oral instructions alone do not replace the written source requirement.
+
+Original English example configuration: make a poster for a fictional classroom book swap; invite another class to a fictional story morning; write instructions for making a folded-paper bookmark without cutting or attaching objects. The book-swap poster needs what happens, intended audience, place/time and a clear action. The invitation identifies recipient, occasion, place/time and response arrangement; use fictional details. Bookmark instructions need materials and an executable ordered sequence. An unfamiliar reader uses each product to identify missing or ambiguous information. The learner revises it, explains the change and adapts a fresh product when the audience, time or materials change. Do not treat polished copying as composition. If a reader cannot follow an instruction, locate the missing action and rewrite it rather than let the adult silently repair it.
+
+Separately assess the unchanged informative-composition whole claim: a named topic, two or three relevant facts and informative drawing or diagram labels. Separately assess the complete actual-language oral-rehearsal and sentence-building hard chain. Keep the broader digital/picture-book candidate withheld unless its complete operations are actually reviewed; digital production is not introduced as a mandatory format for this source.
+
+## Finite review decision
+
+The next review is whether these concrete task families, checked example configurations and unchanged whole paths suffice for framework source authoring with explicit configuration requirements. Review the two reading levels separately and the heard-summary age/context limit explicitly. A favourable decision may close the four framework authoring Partials while retaining named-programme verification and all actual learner-performance conditions. No goal, graph candidate or named-language programme is automatically promoted.
