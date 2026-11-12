@@ -1,4 +1,4 @@
-# CBSE CT/AI supplement: appropriate methods
+# CBSE CT/AI supplement (Classes III–V): appropriate methods
 
 This local proposal adds one association from the CBSE CT/AI supplement (Classes III–V), Preparatory C-4 to existing topic `mt_mQcWGh02no` (Choosing the right strategy), with a **component** role. The [ledger](cbse-method-choice-alignment-2026-11-12.json) records the selected competency's Full authoring disposition, material bindings and authored assessment. It changes no topic meaning, evidence, assessment prompt, prerequisite or age interval.
 
