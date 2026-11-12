@@ -5,8 +5,8 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,410 reported Full / 56 Partial, including
-36 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,411 reported Full / 55 Partial, including
+35 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 
@@ -100,6 +100,13 @@ unestablished pending the current-source completeness audit.
   local configuration and learner performance remain required at delivery. Combined
   proposed Ontario totals: 2,410 reported Full / 56 Partial, including 36 Science
   Partials. Every canonical data file and old report remains byte-exact.
+- Ontario Grade 1 Earth–Sun relationships: one further source closure uses the
+  complete existing Spin & Orbit claim plus a separate independent seasonal-cause
+  protocol. Two new Ontario 6–7 contexts cover its direct component and the whole
+  Sun-is-star ancestor's age-only support. Their generated lower bounds extend
+  7 to 6; all old scoped intervals, criteria, guides and edges remain exact. No
+  new topic, false prerequisite association or older Seasons mastery is introduced.
+  Combined proposed totals: 2,411 reported Full / 55 Partial, 35 Science Partials.
 - India reasoning: three source-competency closures in the CBSE CT/AI supplement,
   five component pairs and one India context within the unchanged global age
   interval. Original assessment tasks and printable pattern resources are
@@ -126,6 +133,13 @@ unestablished pending the current-source completeness audit.
   and digital multimodal candidates are not imposed as source gates. Combined
   proposed selected authoring Full: 451/521; formal diagnostic Full: 176/221,
   with 45 other typed conditions. Existing claims, intervals and paths stay exact.
+- India art-form conditions: eleven reviewed configuration/task contracts retain
+  the seven suggestive Foundational positions and four formal Preparatory LS2
+  conditions. Actual visual and performing provision, variety, own production,
+  practical processes, true visits, shared work and independent integrated goal
+  evidence are explicit. Conditional dispositions remain unchanged; this accounts
+  for their authoring route without increasing 451/521 or certifying actual school
+  configuration, all forms, learner attainment or positive feelings.
 - Historical Ontario Grade 1 money: F1 and F1.1 requalified against the exact
   Canadian inventory, including the separate 50-cent representation and notes
   through $50. One overall component pair is added in the existing Ontario 6–9
