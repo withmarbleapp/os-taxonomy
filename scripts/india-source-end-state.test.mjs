@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const read=p=>readFileSync(new URL(`../reports/${p}`,import.meta.url),'utf8');
+const report=JSON.parse(read('india-primary-source-end-state-2026-11-12.json'));
+const ids=['formal-core-221','cbse-ctai-21','music-selected-position','2017-reference-304','hindi-script83','urdu2025-provisional47','role-language-delivery','current-mathsI-prelim','selected-material-30cells','bansuri-four-form-opportunities','cbse-art-project','cbse77-operative-screen','actual-school-learner-state'];
+function check(d=report,get=read){
+ assert.deepEqual(d.gates.map(x=>x.id),ids,'exact remaining-gate inventory');
+ assert.equal(d.formalEligibleKeys.length,221);assert.equal(new Set(d.formalEligibleKeys).size,221);assert.equal(d.formalPEExcludedKeys.length,33);assert.ok(d.formalPEExcludedKeys.every(x=>!d.formalEligibleKeys.includes(x)));
+ const prior=JSON.parse(get('india-primary-source-accounting-decision-2026-11-12.json'));const all=prior.formalSourceCensus.flatMap(x=>x.sourceKeys).sort();assert.deepEqual([...d.formalEligibleKeys,...d.formalPEExcludedKeys].sort(),all,'complete254formalsourcepositions retained');
+ assert.equal(d.countMeaning.formalFull+d.countMeaning.formalReviewedTypedContracts,221);assert.equal(d.countMeaning.selectedFull+d.countMeaning.selectedReviewedTypedContracts+d.countMeaning.selectedMeaningUnverified,521);assert.equal(d.countMeaning.overallIndiaDenominator,null);assert.equal(d.countMeaning.allCountsAreUniqueSkills,false);
+ assert.equal(d.selectedMaterialCells.length,30);assert.equal(new Set(d.selectedMaterialCells.map(x=>`${x.grade}:${x.subjectOrProgramme}`)).size,30);assert.equal(d.selectedMaterialCells.filter(x=>x.standaloneSelectedResource).length,26);assert.equal(d.selectedMaterialCells.filter(x=>x.preliminariesCaptured).length,25);
+ const maths=d.selectedMaterialCells.filter(x=>x.standaloneSelectedResource&&!x.preliminariesCaptured);assert.equal(maths.length,1);assert.equal(maths[0].grade,1);assert.equal(maths[0].subjectOrProgramme,'Mathematics');assert.equal(maths[0].sha256,null,'missingprelimnotinvented');
+ for(const row of d.gates){assert.ok(row.kind&&row.status&&row.effectOnAgreedAuthoring&&row.remainingActionOrDeliveryCondition);for(const ref of row.evidence){const [file,anchor]=ref.split('#');const body=get(file);assert.ok(body.length>100,'actual evidence resolves');if(anchor)assert.ok(body.includes(`id="${anchor}"`),'projectanchorresolves');}}
+ assert.equal(d.music.actualHindiTargetRead,true);assert.equal(d.music.meaningVerified,false);assert.equal(d.music.sourceDisposition,'Unverified');assert.equal(d.music.sourceFullPromotion,false);assert.equal(d.music.twoInterpretationsProvedExhaustive,false);assert.equal(d.music.newTopicAssociationOrAgeChange,false);
+ for(const flag of ['allNamedLanguagesSimultaneouslyRequired','all304ReferencePositionsAddedToNormativeDenominator','allBookExercisesDeclaredMandatory','schoolDutiesDiscardedBecauseNotTopics','historicalFullBlanketRecertification','actualProgrammeOrLearnerCompletionClaimed'])assert.equal(d.authoringAndDeliveryBoundary[flag],false);
+ const continuing=d.continuingDirectiveSupplement;assert.deepEqual(continuing.map(x=>x.id),['2019-05','2019-89','2020-33','26','45','95','97','91']);for(const row of continuing){assert.match(row.sha256,/^[a-f0-9]{64}$/);assert.ok(row.readScope&&row.retainedDuty&&row.remainingGate);}
+ const adoption=d.gates.find(x=>x.id==='2017-reference-304');assert.equal(adoption.kind,'continuing-mandate-edition-reconciliation');assert.match(adoption.effectOnAgreedAuthoring,/Blocks blanket current CBSE/);assert.match(adoption.effectOnAgreedAuthoring,/not merely an optional programme gate/);assert.match(continuing.find(x=>x.id==='95').remainingGate,/SOP\/health-source review remains an implementation-content gate/);
+ assert.equal(d.currentCompletionLimits.currentCBSELOEditionReconciled,false);assert.equal(d.currentCompletionLimits.blanketCurrentCBSEComplianceClaimed,false);assert.equal(d.currentCompletionLimits.currentAnimalSafetySOPContentQualified,false);assert.equal(d.currentCompletionLimits.continuingSchoolDutiesRetained,true);
+ const md=get('india-primary-source-end-state-2026-11-12.md');for(const phrase of ['2025–26 historical pairing illustration','No 2026–27 pair list','before applying this','minimum art-integrated project','weekly opportunities across four art forms','source remains Unverified'])assert.ok(md.toLowerCase().includes(phrase.toLowerCase()),'actual duty/scope contract retained: '+phrase);
+}
+test('end-state ledger retains exact framework/material/gate inventories and honest authoring/delivery boundary',()=>check());
+test('source-completeness rejects lost duties, fictional captures, global denominators and unsupported music promotion',()=>{
+ const adopted=structuredClone(report);adopted.gates.find(x=>x.id==='2017-reference-304').effectOnAgreedAuthoring='Optional programme only';assert.throws(()=>check(adopted));
+ const sop=structuredClone(report);sop.currentCompletionLimits.currentAnimalSafetySOPContentQualified=true;assert.throws(()=>check(sop));
+ const old=structuredClone(report);old.continuingDirectiveSupplement.pop();assert.throws(()=>check(old));
+ const missing=structuredClone(report);missing.gates.pop();assert.throws(()=>check(missing),/gate inventory/);
+ const material=structuredClone(report);material.selectedMaterialCells[0].preliminariesCaptured=true;assert.throws(()=>check(material));
+ const music=structuredClone(report);music.music.sourceFullPromotion=true;assert.throws(()=>check(music));
+ const all=structuredClone(report);all.authoringAndDeliveryBoundary.all304ReferencePositionsAddedToNormativeDenominator=true;assert.throws(()=>check(all));
+ const denominator=structuredClone(report);denominator.countMeaning.overallIndiaDenominator=242;assert.throws(()=>check(denominator));
+ assert.throws(()=>check(report,p=>read(p).replace('id="paired-art-original-project"','id="missing"')),/anchorresolves/);
+});
