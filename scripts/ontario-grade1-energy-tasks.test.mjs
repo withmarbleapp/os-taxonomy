@@ -17,11 +17,12 @@ const bindings = {
   'C2.4': { protocol: 'various-sources', ids: ['mt_cxJRc15osy', 'mt_iGSfQg3g5c'], evidence: ['food-source-effect-use', 'sun-source-effect-use', 'various-distinct-sources', 'changed-use-transfer'] },
 };
 const fullCodes = Object.keys(bindings).map(code => `ON-SCI-2022-G1-${code}`).sort();
-const partialCodes = ['C1', 'C1.1', 'C1.2', 'C2', 'C2.5', 'C2.6'].map(code => `ON-SCI-2022-G1-${code}`).sort();
+const followUpCodes = ['C1', 'C1.1', 'C1.2', 'C2.6'].map(code => `ON-SCI-2022-G1-${code}`).sort();
+const partialCodes = ['C2', 'C2.5'].map(code => `ON-SCI-2022-G1-${code}`).sort();
 function check(report = resource, current = ledger, associations = contexts) {
   assert.deepEqual(current.expectations.map(row => row.code).sort(), selected, 'Missing energy inventory');
-  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Full').map(row => row.code).sort(), fullCodes, 'Only four source closures are reviewed');
-  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Partial').map(row => row.code).sort(), partialCodes, 'Six residuals must remain Partial');
+  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Full').map(row => row.code).sort(), [...fullCodes, ...followUpCodes].sort(), 'Only eight source closures are reviewed');
+  assert.deepEqual(current.expectations.filter(row => row.disposition === 'Partial').map(row => row.code).sort(), partialCodes, 'Two energy residuals must remain Partial');
   assert.equal(report.scope.sourceTaskCoverageNotLearnerCertification, true, 'Source task cannot award learner mastery');
   assert.equal(report.scope.applianceYoungerContextApproved, false, 'No younger whole appliance offer');
   assert.equal(report.scope.topicAgeContextChanges, false, 'No topic/age/context changes');
@@ -31,6 +32,7 @@ function check(report = resource, current = ledger, associations = contexts) {
     assert.equal(row.historicalDisposition, 'Partial', 'History cannot become a Full recertification');
     if (row.disposition === 'Partial') { assert.ok(row.remainingConditions.length, 'Missing honest residual'); continue; }
     const binding = bindings[row.code.split('G1-')[1]];
+    if (!binding) { assert.ok(followUpCodes.includes(row.code), 'Unreviewed follow-up code'); continue; }
     assert.equal(row.qualification, 'fresh-source-task');
     assert.equal(row.dossier, dossier, 'Missing actual public dossier');
     assert.equal(row.protocolReference, `/protocols/${binding.protocol}`, 'Missing actual protocol binding');
@@ -65,12 +67,12 @@ function check(report = resource, current = ledger, associations = contexts) {
       for (const field of ['name', 'description', 'evidence', 'assessmentPrompt']) assert.deepEqual(snapshot[field], cards.get(id)[field], 'Whole claim weakened or substituted');
     }
   }
-  assert.deepEqual(current.counts, { freshFull: 4, remainingPartial: 6 });
+  assert.deepEqual(current.counts, { freshFull: 8, remainingPartial: 2 });
 }
 test('four reviewed energy protocols bind accessible resources and exact existing components', () => check());
 test('missing rows, dossiers or source bindings cannot evade the review registry', () => {
   const missing = structuredClone(ledger); missing.expectations.pop(); assert.throws(() => check(resource, missing), /inventory/);
-  const dossierMissing = structuredClone(ledger); delete dossierMissing.expectations.find(row => row.disposition === 'Full').dossier; assert.throws(() => check(resource, dossierMissing), /dossier/);
+  const dossierMissing = structuredClone(ledger); delete dossierMissing.expectations.find(row => fullCodes.includes(row.code)).dossier; assert.throws(() => check(resource, dossierMissing), /dossier/);
   const citation = structuredClone(resource); delete citation.resources['nasa-warming']; assert.throws(() => check(citation), /source/);
 });
 test('air, plant food, common generalisation and various-source uses remain independent operations', () => {
@@ -97,8 +99,8 @@ test('absent study resources, transfer, task binding or whole-claim limits fail 
   }
   const report = structuredClone(resource); delete report.protocols['solar-earth'].assessmentTaskReference; assert.throws(() => check(report), /assessment/);
 });
-test('six residuals, the unresolved overall and appliance ages cannot be promoted implicitly', () => {
-  const row = structuredClone(ledger); row.expectations.find(value => value.code.endsWith('-C2')).disposition = 'Full'; assert.throws(() => check(resource, row), /Only four/);
+test('two residuals, the unresolved overall and appliance ages cannot be promoted implicitly', () => {
+  const row = structuredClone(ledger); row.expectations.find(value => value.code.endsWith('-C2')).disposition = 'Full'; assert.throws(() => check(resource, row), /Only eight/);
   const report = structuredClone(resource); report.scope.applianceYoungerContextApproved = true; assert.throws(() => check(report), /younger/);
   const substitution = structuredClone(resource); substitution.protocols['various-sources'].contributorIds.push('mt_9nxyFoYD_b'); assert.throws(() => check(substitution), /substitution/);
   const whole = structuredClone(resource); whole.wholeCards.find(card => card.id === 'mt_cxJRc15osy').evidence.pop(); assert.throws(() => check(whole), /weakened/);

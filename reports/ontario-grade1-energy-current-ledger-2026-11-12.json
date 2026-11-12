@@ -1,10 +1,10 @@
 {
   "reviewVersion": 1,
   "date": "2026-11-12",
-  "acceptedBaseCommit": "d4f5f80a26b94f355c27db07f45b4870e0fb913f",
+  "acceptedBaseCommit": "df93fa372227fd3d07e11f16c3949a02526723bd",
   "counts": {
-    "freshFull": 4,
-    "remainingPartial": 6
+    "freshFull": 8,
+    "remainingPartial": 2
   },
   "expectations": [
     {
@@ -12,37 +12,72 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1",
       "kind": "overall",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "qualification": "retained-partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Overall coverage is reviewed against its own demand; it is not certified by counting linked children."
-      ]
+      "disposition": "Full",
+      "qualification": "fresh-source-task",
+      "contributingTopicIds": [
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade1-energy-responsibility-seasonal-task-design-2026-11-12.json",
+      "protocolReference": "/protocols/C1",
+      "associationRoles": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        }
+      ],
+      "rationale": "The independent overall assessment covers home, school and community purposes/choices with conditions and transfer; child-code counts do not establish it."
     },
     {
       "code": "ON-SCI-2022-G1-C1.1",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.1",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "qualification": "retained-partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Check energy-specific conservation choices in both settings rather than transferring a water-saving example without explanation.",
-        "The complete appliance guide has been reviewed, but its broader whole transfer repertoire has no approved Ontario6–7 readiness witness. Do not add a younger context from this source subset."
-      ]
+      "disposition": "Full",
+      "qualification": "fresh-source-task",
+      "contributingTopicIds": [
+        "mt_deexfCHU9m"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade1-energy-responsibility-seasonal-task-design-2026-11-12.json",
+      "protocolReference": "/protocols/C1.1",
+      "associationRoles": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        }
+      ],
+      "rationale": "The authored home/school assessment connects declared useful uses, optional demand reduction and the bounded source-specific environmental reason, with changed access/occupancy conditions."
     },
     {
       "code": "ON-SCI-2022-G1-C1.2",
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.2",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "qualification": "retained-partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Assess the counterfactual for humans and other organisms. Device naming is a prerequisite contribution, not the completed reasoning."
-      ]
+      "disposition": "Full",
+      "qualification": "fresh-source-task",
+      "contributingTopicIds": [
+        "mt_L1469gt34A",
+        "mt_3v0VNkwquK"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade1-energy-responsibility-seasonal-task-design-2026-11-12.json",
+      "protocolReference": "/protocols/C1.2",
+      "associationRoles": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        },
+        {
+          "topicId": "mt_3v0VNkwquK",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        }
+      ],
+      "rationale": "The authored task compares people and dependent/independent plants under the declared no-usable-device-electricity premise, retains need/light conditions and distinguishes a mains-only cut."
     },
     {
       "code": "ON-SCI-2022-G1-C2",
@@ -191,14 +226,36 @@
       "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.6",
       "kind": "specific",
       "historicalDisposition": "Partial",
-      "disposition": "Partial",
-      "qualification": "retained-partial",
-      "contributingTopicIds": [],
-      "remainingConditions": [
-        "Assess the connection between seasonal practices and energy forms explicitly. Clothing choice or season naming does not establish that comparison."
-      ]
+      "disposition": "Full",
+      "qualification": "fresh-source-task",
+      "contributingTopicIds": [
+        "mt_iGSfQg3g5c",
+        "mt_cxJRc15osy"
+      ],
+      "remainingConditions": [],
+      "dossier": "ontario-grade1-energy-responsibility-seasonal-task-design-2026-11-12.json",
+      "protocolReference": "/protocols/C2.6",
+      "associationRoles": [
+        {
+          "topicId": "mt_iGSfQg3g5c",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component",
+          "association": "new code in unchanged existing Ontario6–7 context"
+        }
+      ],
+      "rationale": "The authored four-season comparison explicitly requires uses and light, thermal/heat and movement energy examples, source/device distinctions, food-movement continuity and changed-weather transfer; weather/clothing remain prerequisite-only."
     }
   ],
-  "accounting": "Exactly four fresh Partial-to-Full source-authoring closures. All six other energy records stay Partial; no historical relabelling or automatic overall promotion. All nine existing scoped component pairs remain unchanged.",
-  "reviewStatus": "Reviewed source-bound authoring judgments; repository acceptance and downstream publication are separate from this ledger."
+  "accounting": "Eight energy records now have reviewed source-bound authoring coverage: four accepted in the first portfolio and four in this follow-up. Only four net new closures in this batch. C2 and C2.5 remain Partial; historical labels and the independent seasonal-cause E2.1 ledger are unchanged.",
+  "reviewStatus": "Reviewed source-bound authoring judgments; repository acceptance and downstream publication are separate from this ledger.",
+  "currentBatchFreshCodes": [
+    "ON-SCI-2022-G1-C1",
+    "ON-SCI-2022-G1-C1.1",
+    "ON-SCI-2022-G1-C1.2",
+    "ON-SCI-2022-G1-C2.6"
+  ]
 }

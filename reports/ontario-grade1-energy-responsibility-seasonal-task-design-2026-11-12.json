@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "acceptedBaseCommit": "df93fa372227fd3d07e11f16c3949a02526723bd",
+  "status": "Reviewed source-bound authoring portfolio for C1, C1.1, C1.2 and C2.6. Complete readable resources and independent assessments account for the specified duties; this is not delivery, efficacy or learner attainment. Repository acceptance and downstream publication remain separate.",
+  "source": {
+    "slug": "the-ontario-curriculum-science-and-technology-20",
+    "version": "2022",
+    "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/4b8f8ea5-e66a-4082-bfa0-795d8d7f8c08/SciTech_G1_AODA.pdf",
+    "expectationsSha256": "7d6463a188d376251344be94ec61a42276aa042fd77fc9cfc055c829f974d936",
+    "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+    "contextSha256": "1ade9235dcacf15c27dcc92328d1f883c3026c1687bf40368448b39ec6e4bd74"
+  },
+  "ageRange": [
+    6,
+    7
+  ],
+  "scope": {
+    "codes": [
+      "ON-SCI-2022-G1-C1",
+      "ON-SCI-2022-G1-C1.1",
+      "ON-SCI-2022-G1-C1.2",
+      "ON-SCI-2022-G1-C2.6"
+    ],
+    "C2OverallStillPartial": true,
+    "C2Point5StillPartial": true,
+    "applianceYoungerContextApproved": false,
+    "sourceTaskCoverageNotLearnerCertification": true
+  },
+  "delivery": {
+    "format": "Original print/read-aloud cards and blank paper. No private site, child data, device handling or special app required. Study content comes first; put worked answers away before the independent changed-case assessment.",
+    "independence": "Receiving cards or repeating adult explanations does not demonstrate source performance or complete topic mastery. Record actual learner reasoning separately.",
+    "means": "Read or print the complete cards, supply blank paper/tables, and accept ordinary spoken/drawn/pointed communication. No app, personal account or private resource is needed for these declared model cases."
+  },
+  "resources": {
+    "eia-conservation": {
+      "url": "https://www.eia.gov/energyexplained/use-of-energy/efficiency-and-conservation.php",
+      "readScope": "Actual main section281–315 read; use only282–283/290 unused lights, lower consumption/demand and potential emissions. No programme/legal/price claims.",
+      "fact": "Turning off unneeded lights reduces end-use consumption and electricity demand. Environmental benefits depend on generation; no instant or universal emissions guarantee."
+    },
+    "eia-electricity-environment": {
+      "url": "https://www.eia.gov/energyexplained/electricity/electricity-and-the-environment.php",
+      "readScope": "Actual section282–318 read; use only varying generation effects and existence of pollutants from fuel combustion. No percentage, clinical or legal claims.",
+      "fact": "Fuel-burning electricity generation can release pollutants; types of generation have differing effects."
+    },
+    "umn-light": {
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/lighting-for-indoor-plants",
+      "readScope": "Opening explanatory body241–290 read; selected green-plant light/food/growth and differing requirements only. Later equipment/species section not claimed fully read.",
+      "fact": "Sufficient light supports the selected ordinary green plant making food and healthy growth; electric light can supplement insufficient natural light."
+    },
+    "eia-energy": {
+      "url": "https://www.eia.gov/energyexplained/what-is-energy/",
+      "readScope": "Complete explanatory body281–305 read; ordinary useful movement/light/warming and food energy only.",
+      "fact": "Energy has useful everyday roles, including lighting and warming; source, device and useful effect are distinct."
+    }
+  },
+  "preparedCases": {
+    "three-settings": {
+      "role": "home-school-community-energy-purpose-responsibility",
+      "resources": [
+        "eia-conservation",
+        "eia-electricity-environment",
+        "eia-energy"
+      ],
+      "teachingSequence": [
+        "Have the learner explain a useful energy purpose at each of the three settings, not just name the device.",
+        "Compare optional and needed uses, then trace the stated demand→fuel-use→pollution relationship. Ask the learner to explain why this model does not establish a rule about every real grid.",
+        "Teach with the listed examples, then withdraw worked choices and supply a new occupancy/access arrangement for assessment."
+      ],
+      "requiredEvidence": [
+        "home-use-purpose",
+        "school-use-purpose",
+        "home-responsible-choice-reason",
+        "school-responsible-choice-reason",
+        "community-use-and-tradeoff",
+        "source-specific-demand-fuel-pollution-chain",
+        "needed-service-boundary"
+      ],
+      "changedCase": "The previously empty home room now has a person reading in poor daylight; the previously empty school room is now occupied by the communication-device user. The decorative library lamp is still unused after closing. Independently revise which suggestions can remain and which must change, with reasons.",
+      "nearMiss": "Names lamps without purposes; repeats turn-everything-off; supplies a water-saving answer without an energy link; treats source-model emissions as a universal immediate grid outcome; omits school or community.",
+      "wholeClaimBoundary": "RHI is an environmental problem→solution→benefit component only when the learner actually explains the declared environmental mechanism. Its whole3harms/3solutions/reasoned benefits and litter assessment remain separate. Declared device facts do not offer whole appliance naming/classification/transfer at6–7.",
+      "learnerStudyCards": [
+        "Home: a declared electric reading lamp helps someone read when daylight is insufficient. In a different empty room, an optional lamp is left on. A charged battery communication device must stay available to its user. An adult controls any switching; devices stay intact.",
+        "School: a declared electric lamp supports reading in an occupied room with insufficient daylight. In another empty room, an optional display is running with no current purpose. The communication device is needed by its user at school too.",
+        "Community: the fictional library uses electric reading lights while visitors need them. After closing, an optional decorative lamp is left on in an unused area. Declared safety/accessibility lighting must remain available.",
+        "Source model: for this fictional comparison, useful and optional electrical loads are supplied by a fuel-burning generator. Its controller is declared to burn less fuel when less output is required. Burning this fuel can release pollution; lower unnecessary demand can therefore reduce this model’s fuel use and associated pollution. This is a declared model, not a claim that every real grid responds immediately in the same way.",
+        "Responsible use means considering useful purpose and conditions. Turning off an unused optional load reduces demand; turning off needed access or light can remove a useful service. The source model does not make every electrical use bad."
+      ],
+      "question": "For home AND school, identify one useful energy use and explain its purpose. Choose a responsible optional-use change in each setting and explain how reducing unnecessary demand helps in the declared source model. For the community library, assess one useful use and one optional-use choice, explaining a service/access tradeoff. Do not suggest stopping all electrical use.",
+      "attributionLimits": "Original stipulated teaching/assessment case; no actual local observation, electricity-grid response, stakeholder testimony or learner result is fabricated. Teacher may explain factual premises, but the learner supplies the assessed relationship and changed-case reasoning.",
+      "independence": "Remove worked study choices/diagrams before assessment. Preserve access through speech, pointing, drawing or usual communication; do not supply the learner’s explanation, call copying sufficient or fill in a successful response."
+    },
+    "electricity-loss": {
+      "role": "electricity-loss-people-other-living-things",
+      "resources": [
+        "umn-light",
+        "eia-energy"
+      ],
+      "teachingSequence": [
+        "Trace what each supplied electrical use enables, then identify which part of the need or activity would be affected.",
+        "Compare plant A with B, and compare the complete supplied electricity absence with a narrower mains outage where some battery devices can still work.",
+        "Use the study cases to teach the relation; then put away worked consequences and present the changed conditions independently."
+      ],
+      "requiredEvidence": [
+        "human-life-activity-consequence",
+        "other-living-dependent-plant-consequence",
+        "other-living-independent-plant-contrast",
+        "conditions-and-timescale",
+        "no-usable-electricity-not-only-mains",
+        "appropriate-alternative-reason"
+      ],
+      "changedCase": "An adult moves plant A to enough natural daylight and the person’s next reading activity takes place in adequate daylight. Explain what is restored and what remains difficult. Then compare a different case that removes mains alone while the declared communication-device battery is charged.",
+      "nearMiss": "Only names devices; addresses people but no other living things; predicts immediate death; says all plants need electricity; uses a generator despite the counterfactual; claims a mains cut removes every energy source.",
+      "wholeClaimBoundary": "Need/consequence components and light/growth reasoning contribute. Whole living-needs repertoires and actual PlantNeeds observations remain separate. No whole appliance6–7offer, clinical advice or actual deprivation is introduced.",
+      "learnerStudyCards": [
+        "A fictional person relies on an electric reading lamp in a room with insufficient daylight. A second supplied activity uses a charged battery communication device. These facts specify electricity’s useful role without requiring the learner to classify ten appliances.",
+        "Selected green plant A is indoors with insufficient natural light; an electric growth lamp supplies the light it needs. Selected green plant B is outdoors in sufficient sunlight. Both still have their other stated needs met.",
+        "In this fictional counterfactual, usable electricity for the selected devices is unavailable from mains, batteries AND generators. Natural sunlight continues. This is broader than a street-mains outage; no claim is made that all biological electric phenomena cease.",
+        "An adult could move plant A to a suitable naturally lit place. A suitable communication alternative must match the particular person’s needs; no particular alternative is assumed to work for everybody. Nobody deprives a real plant or animal for this model task."
+      ],
+      "question": "Explain one effect on a person and the different effects on plants A and B under the stated counterfactual. Trace each consequence using the supplied electrical use and need conditions. Explain why plants do not all require electric lamps, and why batteries/generators are not an available solution in THIS declared case.",
+      "attributionLimits": "Original stipulated teaching/assessment case; no actual local observation, electricity-grid response, stakeholder testimony or learner result is fabricated. Teacher may explain factual premises, but the learner supplies the assessed relationship and changed-case reasoning.",
+      "independence": "Remove worked study choices/diagrams before assessment. Preserve access through speech, pointing, drawing or usual communication; do not supply the learner’s explanation, call copying sufficient or fill in a successful response."
+    },
+    "seasonal-uses-forms": {
+      "role": "four-season-energy-uses-forms-conditional-transfer",
+      "resources": [
+        "eia-energy"
+      ],
+      "teachingSequence": [
+        "For each selected season, let the learner explain source→device/use→energy example: light energy for illumination, thermal/heat energy for warming, and movement energy for the fan or person. Ordinary warming/moving descriptions with the correct energy connection are accepted.",
+        "Compare all four cases, distinguishing useful USES from light, thermal/heat and movement ENERGY forms/examples; a coat, arbitrary effect or season name alone is not enough.",
+        "Withdraw completed comparison tables. Present changed weather/occupancy conditions rather than a fixed season-to-device answer key."
+      ],
+      "requiredEvidence": [
+        "all-four-selected-seasons",
+        "seasonal-use-comparison",
+        "forms-light-thermal-movement",
+        "source-device-effect-distinction",
+        "use-choice-conditioned-on-weather-and-need",
+        "food-movement-constant-use-comparison"
+      ],
+      "changedCase": "A new summer day is unexpectedly cold and dark and the room is occupied. Someone proposes never using a heater or lamp in summer. Revise the use/form choice using the new conditions; then explain why a single cold summer day does not itself make it winter.",
+      "nearMiss": "Only names clothing/seasons; only compares winter/summer; supplies uses but no forms; equates electricity with one season; assumes fixed weather or fixed energy totals for every day; turns off needed access services.",
+      "wholeClaimBoundary": "SeasonalChanges and Dressing are prerequisite/context contributors, not direct evidence of this energy comparison. Their real-year observations and actual justified kit performance remain separate. SunWarming/BodyNeeds can supply warming/movement components, not a formal energy-types repertoire or whole appliance offer.",
+      "learnerStudyCards": [
+        "Selected winter day: the occupied reading room is cold and dim, so an adult uses an electric heater for warming and an electric lamp for light. This is a chosen day, not a rule for every winter day.",
+        "Selected spring day: the same room is mild and has enough natural daylight; the heater and electric lamp are not needed for the model interval. Sunlight provides useful light and warming.",
+        "Selected summer day: the room is warm and bright; an adult uses an electric fan for air movement where appropriate. No electric room heating is used in this selected interval. The fan moves air; it is not described as removing heat from every room.",
+        "Selected autumn day: the room is cool and dim, so electric warming and lighting are used again. Needed access/safety services continue in every season.",
+        "Across all four selected days, a person uses food energy for ordinary movement such as walking. This use can remain while room lighting, warming or fan use changes. Comparing seasons includes noticing a use that stays as well as uses/forms that change.",
+        "Compare useful uses and energy examples separately: reading uses light energy; warming a colder room involves thermal/heat energy; the fan and walking person have movement energy. Electricity, sunlight and food are the declared sources for the selected cases. Clothing can trap body warmth but is not itself a heat generator. These early energy labels do not require the full older energy-types vocabulary."
+      ],
+      "question": "Create your own comparison of the selected winter, spring, summer and autumn cases. Explain differences in energy USES and in light energy, thermal/heat energy and movement energy forms/examples, distinguishing each from source/device names. Explain why daylight can sometimes replace optional electric lighting in this model. Include food-enabled human movement as a use that can remain across the selected days while other uses change.",
+      "attributionLimits": "Original stipulated teaching/assessment case; no actual local observation, electricity-grid response, stakeholder testimony or learner result is fabricated. Teacher may explain factual premises, but the learner supplies the assessed relationship and changed-case reasoning.",
+      "independence": "Remove worked study choices/diagrams before assessment. Preserve access through speech, pointing, drawing or usual communication; do not supply the learner’s explanation, call copying sufficient or fill in a successful response.",
+      "teacherEnergyLanguage": {
+        "introductoryForms": [
+          "light energy",
+          "thermal/heat energy",
+          "movement energy"
+        ],
+        "wording": "For this early task, name light energy when discussing illumination, thermal or heat energy when discussing warming, and movement energy when discussing a moving fan or person. The useful effects help identify these energy examples; an arbitrary effect is not automatically a separate form of energy.",
+        "acceptedLearnerLanguage": "Accept ordinary light, warming and moving language when the learner correctly explains the energy connection. Pronouncing thermal or kinetic, naming chemical/elastic/gravitational stores, or reproducing the full older energy-types repertoire is not a mastery gate.",
+        "scope": "These introductory source-curriculum labels do not replace the later formal stores-and-transfer-pathways model. Electricity, food and the Sun are the declared sources in the cases; devices, purposes and observed effects are distinguished.",
+        "requiresFullOlderEnergyVocabulary": false,
+        "arbitraryEffectsAreSeparateFormalForms": false
+      }
+    }
+  },
+  "assessments": {
+    "home-school-responsibility": {
+      "requiresIndependentPerformance": true,
+      "teacherMaySupplyPremisesNotAnswers": true,
+      "studyCardCopyingSufficient": false,
+      "wholeTopicAwardFromThisTaskAlone": false,
+      "learnerActions": [
+        {
+          "operation": "home-use-purpose",
+          "instruction": "Explain the useful energy purpose in the supplied home case, not merely the lamp’s name."
+        },
+        {
+          "operation": "school-use-purpose",
+          "instruction": "Explain the useful energy purpose in the supplied school case separately."
+        },
+        {
+          "operation": "home-responsible-choice-reason",
+          "instruction": "Choose an optional home use to reduce and give an energy-use reason."
+        },
+        {
+          "operation": "school-responsible-choice-reason",
+          "instruction": "Choose an optional school use to reduce and give an energy-use reason."
+        },
+        {
+          "operation": "source-specific-demand-fuel-pollution-chain",
+          "instruction": "Explain the declared model’s demand→fuel→pollution link and its limit; do not generalise an immediate response to every grid."
+        },
+        {
+          "operation": "needed-service-boundary",
+          "instruction": "Revise choices when a room becomes occupied or access services are needed; keep the purpose and conditions in view."
+        }
+      ],
+      "requiredEvidence": [
+        "home-use-purpose",
+        "school-use-purpose",
+        "home-responsible-choice-reason",
+        "school-responsible-choice-reason",
+        "source-specific-demand-fuel-pollution-chain",
+        "needed-service-boundary"
+      ],
+      "recordingRequirement": "Record the actual learner’s choice, explanation/comparison/model and changed-case revision separately. Source-authoring review supplies no child scores, completed observations or mastery updates."
+    },
+    "three-setting-overall": {
+      "requiresIndependentPerformance": true,
+      "teacherMaySupplyPremisesNotAnswers": true,
+      "studyCardCopyingSufficient": false,
+      "wholeTopicAwardFromThisTaskAlone": false,
+      "learnerActions": [
+        {
+          "operation": "home-assessed-use",
+          "instruction": "Assess a useful home energy use and a responsible optional-use choice, explaining purpose and consequence."
+        },
+        {
+          "operation": "school-assessed-use",
+          "instruction": "Assess a useful school energy use and a responsible optional-use choice separately."
+        },
+        {
+          "operation": "community-assessed-use",
+          "instruction": "Assess useful library lighting and an unused decorative use, with a service/access tradeoff."
+        },
+        {
+          "operation": "responsibility-with-conditions",
+          "instruction": "Justify choices using the source model and continued access/safety needs instead of turning every service off."
+        },
+        {
+          "operation": "changed-setting-transfer",
+          "instruction": "Independently revise all affected suggestions under changed occupancy/access conditions; do not infer this overall from child-code counts."
+        }
+      ],
+      "requiredEvidence": [
+        "home-assessed-use",
+        "school-assessed-use",
+        "community-assessed-use",
+        "responsibility-with-conditions",
+        "changed-setting-transfer"
+      ],
+      "recordingRequirement": "Record the actual learner’s choice, explanation/comparison/model and changed-case revision separately. Source-authoring review supplies no child scores, completed observations or mastery updates."
+    },
+    "electricity-loss": {
+      "requiresIndependentPerformance": true,
+      "teacherMaySupplyPremisesNotAnswers": true,
+      "studyCardCopyingSufficient": false,
+      "wholeTopicAwardFromThisTaskAlone": false,
+      "learnerActions": [
+        {
+          "operation": "human-life-activity-consequence",
+          "instruction": "Explain an effect on the supplied person’s daily activity or communication using a consequence chain."
+        },
+        {
+          "operation": "other-living-dependent-plant-consequence",
+          "instruction": "Explain why plant A’s sufficient-light condition is lost when its declared electric lamp cannot work."
+        },
+        {
+          "operation": "other-living-independent-plant-contrast",
+          "instruction": "Contrast plant B in sufficient natural sunlight; do not assert all plants need electric lamps."
+        },
+        {
+          "operation": "conditions-and-timescale",
+          "instruction": "State that outcomes depend on remaining needs/light and change over time rather than predicting instant death."
+        },
+        {
+          "operation": "no-usable-electricity-not-only-mains",
+          "instruction": "Respect the absence of all usable selected device electricity, including battery/generator supplies, and distinguish it from a mains-only outage."
+        },
+        {
+          "operation": "appropriate-alternative-reason",
+          "instruction": "Explain what the changed adult-provided alternative restores, with person-specific access and remaining limits."
+        }
+      ],
+      "requiredEvidence": [
+        "human-life-activity-consequence",
+        "other-living-dependent-plant-consequence",
+        "other-living-independent-plant-contrast",
+        "conditions-and-timescale",
+        "no-usable-electricity-not-only-mains",
+        "appropriate-alternative-reason"
+      ],
+      "recordingRequirement": "Record the actual learner’s choice, explanation/comparison/model and changed-case revision separately. Source-authoring review supplies no child scores, completed observations or mastery updates."
+    },
+    "seasonal-uses-forms": {
+      "requiresIndependentPerformance": true,
+      "teacherMaySupplyPremisesNotAnswers": true,
+      "studyCardCopyingSufficient": false,
+      "wholeTopicAwardFromThisTaskAlone": false,
+      "learnerActions": [
+        {
+          "operation": "all-four-selected-seasons",
+          "instruction": "Create a comparison including the selected winter, spring, summer AND autumn conditions."
+        },
+        {
+          "operation": "seasonal-use-comparison",
+          "instruction": "Compare actual uses of lighting, warming and air movement rather than only clothes or season labels."
+        },
+        {
+          "operation": "forms-light-thermal-movement",
+          "instruction": "Identify light energy, thermal/heat energy and movement energy in the selected cases, connecting illumination, warming and movement with those energy examples rather than treating arbitrary effects or device names as forms. Accept ordinary words with correct energy reasoning; no full older vocabulary gate."
+        },
+        {
+          "operation": "source-device-effect-distinction",
+          "instruction": "Distinguish Sun/food/electricity sources from the people/devices and useful changes."
+        },
+        {
+          "operation": "use-choice-conditioned-on-weather-and-need",
+          "instruction": "Revise the cold/dark summer case using its actual conditions, preserving needed services and avoiding universal weather rules."
+        },
+        {
+          "operation": "food-movement-constant-use-comparison",
+          "instruction": "Explain that food-enabled human movement can remain across all selected seasons while optional warming/lighting choices differ."
+        }
+      ],
+      "requiredEvidence": [
+        "all-four-selected-seasons",
+        "seasonal-use-comparison",
+        "forms-light-thermal-movement",
+        "source-device-effect-distinction",
+        "use-choice-conditioned-on-weather-and-need",
+        "food-movement-constant-use-comparison"
+      ],
+      "recordingRequirement": "Record the actual learner’s choice, explanation/comparison/model and changed-case revision separately. Source-authoring review supplies no child scores, completed observations or mastery updates."
+    }
+  },
+  "protocols": {
+    "C1.1": {
+      "codes": [
+        "ON-SCI-2022-G1-C1.1"
+      ],
+      "caseRefs": [
+        "three-settings"
+      ],
+      "assessmentTaskReference": "/assessments/home-school-responsibility",
+      "contributorIds": [
+        "mt_deexfCHU9m"
+      ],
+      "associationRoles": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "role": "component; complete existing claim remains independently assessed"
+        }
+      ],
+      "actions": [
+        "Provide the complete readable study cards and bounded factual context.",
+        "Use teaching discussion to build source/purpose/consequence relationships, without treating the adult’s model as learner performance.",
+        "Withdraw worked choices/models; conduct the bound independent assessment in accessible communication.",
+        "Require the listed evidence and changed-case reasoning, recording genuine learner responses separately."
+      ],
+      "requiredEvidence": [
+        "home-use-purpose",
+        "school-use-purpose",
+        "home-responsible-choice-reason",
+        "school-responsible-choice-reason",
+        "source-specific-demand-fuel-pollution-chain",
+        "needed-service-boundary"
+      ],
+      "closureStatus": "Reviewed source-bound authoring coverage; actual learner performance remains separately assessed.",
+      "remainingConditions": []
+    },
+    "C1": {
+      "codes": [
+        "ON-SCI-2022-G1-C1"
+      ],
+      "caseRefs": [
+        "three-settings"
+      ],
+      "assessmentTaskReference": "/assessments/three-setting-overall",
+      "contributorIds": [
+        "mt_deexfCHU9m"
+      ],
+      "associationRoles": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "role": "component; complete existing claim remains independently assessed"
+        }
+      ],
+      "actions": [
+        "Provide the complete readable study cards and bounded factual context.",
+        "Use teaching discussion to build source/purpose/consequence relationships, without treating the adult’s model as learner performance.",
+        "Withdraw worked choices/models; conduct the bound independent assessment in accessible communication.",
+        "Require the listed evidence and changed-case reasoning, recording genuine learner responses separately."
+      ],
+      "requiredEvidence": [
+        "home-assessed-use",
+        "school-assessed-use",
+        "community-assessed-use",
+        "responsibility-with-conditions",
+        "changed-setting-transfer"
+      ],
+      "closureStatus": "Reviewed source-bound authoring coverage; actual learner performance remains separately assessed.",
+      "independentOverallNotChildCount": true,
+      "remainingConditions": []
+    },
+    "C1.2": {
+      "codes": [
+        "ON-SCI-2022-G1-C1.2"
+      ],
+      "caseRefs": [
+        "electricity-loss"
+      ],
+      "assessmentTaskReference": "/assessments/electricity-loss",
+      "contributorIds": [
+        "mt_L1469gt34A",
+        "mt_3v0VNkwquK"
+      ],
+      "associationRoles": [
+        {
+          "topicId": "mt_L1469gt34A",
+          "role": "component; complete existing claim remains independently assessed"
+        },
+        {
+          "topicId": "mt_3v0VNkwquK",
+          "role": "component; complete existing claim remains independently assessed"
+        }
+      ],
+      "actions": [
+        "Provide the complete readable study cards and bounded factual context.",
+        "Use teaching discussion to build source/purpose/consequence relationships, without treating the adult’s model as learner performance.",
+        "Withdraw worked choices/models; conduct the bound independent assessment in accessible communication.",
+        "Require the listed evidence and changed-case reasoning, recording genuine learner responses separately."
+      ],
+      "requiredEvidence": [
+        "human-life-activity-consequence",
+        "other-living-dependent-plant-consequence",
+        "other-living-independent-plant-contrast",
+        "conditions-and-timescale",
+        "no-usable-electricity-not-only-mains",
+        "appropriate-alternative-reason"
+      ],
+      "closureStatus": "Reviewed source-bound authoring coverage; actual learner performance remains separately assessed.",
+      "remainingConditions": []
+    },
+    "C2.6": {
+      "codes": [
+        "ON-SCI-2022-G1-C2.6"
+      ],
+      "caseRefs": [
+        "seasonal-uses-forms"
+      ],
+      "assessmentTaskReference": "/assessments/seasonal-uses-forms",
+      "contributorIds": [
+        "mt_iGSfQg3g5c",
+        "mt_cxJRc15osy"
+      ],
+      "associationRoles": [
+        {
+          "topicId": "mt_iGSfQg3g5c",
+          "role": "component; complete existing claim remains independently assessed"
+        },
+        {
+          "topicId": "mt_cxJRc15osy",
+          "role": "component; complete existing claim remains independently assessed"
+        }
+      ],
+      "actions": [
+        "Provide the complete readable study cards and bounded factual context.",
+        "Use teaching discussion to build source/purpose/consequence relationships, without treating the adult’s model as learner performance.",
+        "Withdraw worked choices/models; conduct the bound independent assessment in accessible communication.",
+        "Require the listed evidence and changed-case reasoning, recording genuine learner responses separately."
+      ],
+      "requiredEvidence": [
+        "all-four-selected-seasons",
+        "seasonal-use-comparison",
+        "forms-light-thermal-movement",
+        "source-device-effect-distinction",
+        "use-choice-conditioned-on-weather-and-need",
+        "food-movement-constant-use-comparison"
+      ],
+      "closureStatus": "Reviewed source-bound authoring coverage; actual learner performance remains separately assessed.",
+      "prerequisiteContributorIds": [
+        "mt_go5i87u2b9",
+        "mt_Dj2xr8CoI0"
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeCards": [
+    {
+      "id": "mt_deexfCHU9m",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Ecosystems & Habitats",
+      "name": "Reducing Human Impact",
+      "description": "Communicate solutions that will reduce the impact of humans on the land, water, air, and other living things in the local environment",
+      "centrality": 0.03760162601626017,
+      "evidence": [
+        "Identify at least three ways humans negatively impact the local environment (litter, pollution, habitat destruction)",
+        "Propose at least three solutions to reduce human impact (recycling, reducing waste, conserving water, planting trees)",
+        "Explain how each solution helps protect land, water, air, or living things"
+      ],
+      "assessmentPrompt": "Can {{name}} suggest ways people can help the environment — like recycling, not littering, saving water, or planting trees?",
+      "standards": [
+        "acara-v9:AC9HS1K04",
+        "acara-v9:AC9HS1S05",
+        "acara-v9:AC9HSFK03",
+        "acara-v9:AC9TDE2K01",
+        "ngss-k5:K-ESS3-3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B2",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B2.5",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B1",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B2",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B2.5"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_iGSfQg3g5c",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Energy",
+      "name": "Sunlight warms things up",
+      "description": "Make observations to determine the effect of sunlight on Earth's surface, noticing that sunlight warms the ground, water, and objects",
+      "centrality": 0.0426829268292683,
+      "evidence": [
+        "Observe that surfaces in sunlight feel warmer than those in shade",
+        "Describe that sunlight provides warmth (heat energy) to Earth's surface",
+        "Compare temperatures of surfaces in sun vs shade using touch or a thermometer"
+      ],
+      "assessmentPrompt": "Can {{name}} feel the difference between a sunny pavement and a shady one, and explain that sunlight warms up surfaces it shines on?",
+      "standards": [
+        "ngss-k5:K-PS3-1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.3"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 7
+    },
+    {
+      "id": "mt_L1469gt34A",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Organisms & Life Processes",
+      "name": "What Living Things Need",
+      "description": "Understand what plants and animals (including humans) need to survive: water, food, air, and suitable conditions",
+      "centrality": 0.1747967479674797,
+      "evidence": [
+        "List the basic needs of animals: water, food, air, shelter",
+        "List the basic needs of plants: water, light, air, suitable temperature",
+        "Explain what happens if one basic need is missing (e.g. 'the plant wilts without water')"
+      ],
+      "assessmentPrompt": "If you ask {{name}} what a pet dog or a garden plant needs to stay alive, can they list the basic things like water, food, and air?",
+      "standards": [
+        "acara-v9:AC9S1U01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG6-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG6-LO07",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C4.6-LO01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C5.1-LO01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C6.1-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G2-C6.1-LO01",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-SE-COMP-C-4.6",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-SE-COMP-C-6.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-SE-GOAL-CG-4",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-SE-GOAL-CG-6",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-1.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-2.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-3.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-4.5",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-7.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-4",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-GOAL-CG-7",
+        "ngss-k5:K-LS1-1",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-D23.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.5",
+        "uk-nc-2013:Y2.Sci.A.2",
+        "uk-nc-2013:Y2.Sci.P.2"
+      ],
+      "ageRangeStart": 3,
+      "ageRangeEnd": 11
+    },
+    {
+      "id": "mt_3v0VNkwquK",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Organisms & Life Processes",
+      "name": "What Plants Need to Grow",
+      "description": "Understand that plants need water, light, and a suitable temperature to grow and stay healthy",
+      "centrality": 0.01524390243902439,
+      "evidence": [
+        "Name three things plants need to grow: water, light, suitable temperature",
+        "Predict what happens to a plant kept in the dark, with no water, or in freezing cold",
+        "Describe the results of a simple test comparing plants grown in different conditions"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why a plant on the windowsill grows better than one left in a dark cupboard?",
+      "standards": [
+        "acara-v9:AC9S1I01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO03",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
+        "ngss-k5:2-LS2-1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
+        "uk-nc-2013:Y2.Sci.P.2"
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 9
+    },
+    {
+      "id": "mt_cxJRc15osy",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "The Human Body",
+      "name": "Basic Body Needs",
+      "description": "Know that the body needs food for energy, water to stay hydrated, sleep to rest and grow, and exercise to keep muscles and the heart strong — and that these are basic needs every human body has",
+      "centrality": 0.03048780487804878,
+      "evidence": [
+        "List the four basic needs: food (energy), water (hydration), sleep (rest and growth), exercise (strength)",
+        "Explain that food gives the body energy to move, think, and grow",
+        "Describe what happens if one need isn't met (e.g. feeling tired without sleep, thirsty without water)"
+      ],
+      "assessmentPrompt": "Can {{name}} explain why their body needs food, water, sleep, and exercise — and what happens if they miss any of them?",
+      "standards": [
+        "acara-v9:AC9HP2P06",
+        "acara-v9:AC9TDE2K04",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG1-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-COG-B3-G1-G2-C7.2-LO06",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G1-D3.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.4",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G2-D3.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G3-D1.5",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D2.2",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3",
+        "the-ontario-curriculum-health-and-physical-educa:ON-HPE-2019-G6-D3.1",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.1",
+        "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-C16.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E1"
+      ],
+      "ageRangeStart": 3,
+      "ageRangeEnd": 12
+    }
+  ],
+  "wholeClaimLimits": [
+    "The environmental choice is RHI component evidence only when the learner explains the source-specific harm→demand reduction→benefit relation; generic turn-off advice or water conservation is insufficient. Its full3harms/3solutions/benefits and independent assessment remain unchanged.",
+    "Need/consequence and plant-light reasoning contribute to the declared electricity counterfactual. Supplied facts do not replace whole living-needs repertoires or actual plant growth comparisons.",
+    "Seasonal weather and clothing are prerequisite context, not proof of seasonal energy forms. Their real-year observations and actual justified clothing choices remain independently required.",
+    "SunWarming/BodyNeeds provide actual early warming and food/movement components; the readable resource supplies the seasonal relationship and independent comparison. Formal energy-type, transfer/current and whole appliance repertoires stay separate.",
+    "The Sun is a principal source in the accepted earlier portfolio, not the only energy source. The fictional source model does not establish a universal instantaneous generating-grid response.",
+    "No live device opening, mains handling, real organism deprivation, individual medical/food advice, learner records or field observations are requested or fabricated.",
+    "C2 overall, C2.5 and seasonal cause E2.1 remain Partial. No new topic, grade clone, younger appliance context or hard-edge removal is proposed."
+  ]
+}
