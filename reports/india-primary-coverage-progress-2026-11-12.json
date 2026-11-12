@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "acceptedBase": "df93fa372227fd3d07e11f16c3949a02526723bd",
+  "snapshotDate": "2026-11-12",
+  "scope": "Primary Classes I–V plus relevant Foundational/Preparatory stage records; PE duties, VI+ authoring, state-board and CISCE coverage excluded.",
+  "comprehensiveCurrentIndiaDenominator": null,
+  "comprehensiveCurrentNCERTCBSECoverageEstablished": false,
+  "sourceSets": [
+    {
+      "id": "ncert-selected-2024-2025",
+      "name": "Selected NCERT baseline",
+      "retainedPositions": 570,
+      "excludedPhysicalEducationWithinSelection": 49,
+      "eligibleSelectedPositions": 521,
+      "FullAuthoring": 444,
+      "PartialAuthoring": 4,
+      "unreviewedCoveragePositions": 0,
+      "linkedKeys": 495,
+      "unlinkedEligibleKeys": 26,
+      "pairs": 1164,
+      "existingTopicsUsed": 246,
+      "denominatorMeaning": "Only the selected NCERT baseline eligible records after49actualPE exclusions; not comprehensive India."
+    },
+    {
+      "id": "ncert-elementary-learning-outcomes-2017",
+      "name": "2017 primary reference",
+      "retainedPositions": 304,
+      "excludedPhysicalEducationWithinSelection": 0,
+      "FullAuthoring": 0,
+      "PartialAuthoring": 0,
+      "unreviewedCoveragePositions": 304,
+      "linkedKeys": 0,
+      "pairs": 0,
+      "existingTopicsUsed": 0,
+      "selectedReferencePositions": 304,
+      "unlinkedReferencePositions": 304,
+      "denominatorMeaning": "Selected older reference positions; current individual applicability unverified, not a current obligation denominator."
+    },
+    {
+      "id": "cbse-ctai-2026",
+      "name": "CBSE CT/AI supplement (Classes III–V), 21 selected hierarchical positions",
+      "retainedPositions": 21,
+      "excludedPhysicalEducationWithinSelection": 0,
+      "FullAuthoring": 1,
+      "PartialAuthoring": 0,
+      "unreviewedCoveragePositions": 20,
+      "linkedKeys": 1,
+      "pairs": 1,
+      "existingTopicsUsed": 1,
+      "selectedFrameworkPositions": 21,
+      "unlinkedSelectedFrameworkPositions": 20,
+      "denominatorMeaning": "Only selected CBSE CT/AI supplement Classes III–V hierarchical positions; not overall CBSE primary or unique skills."
+    }
+  ],
+  "selectedBaseline": {
+    "sourceKinds": {
+      "retained": 570,
+      "formalStageRecords": 254,
+      "formalGoals": 58,
+      "formalCompetencies": 196,
+      "selectedSuggestivePositions": 316,
+      "eligible": 521,
+      "excludedPhysicalEducation": 49
+    },
+    "dispositions": {
+      "ConditionalArtFormBinding": 11,
+      "ConditionalGraphRepresentation": 3,
+      "ConditionalLanguageBinding": 10,
+      "ContextualAffectiveRequirement": 6,
+      "ContextualMotorDevelopmentRequirement": 1,
+      "ContextualReadingEngagement": 5,
+      "Full": 444,
+      "OutOfScope": 49,
+      "Partial": 4,
+      "SkillWithContextualEngagement": 36,
+      "Unverified": 1
+    },
+    "unlinkedEligibleByDisposition": {
+      "ConditionalArtFormBinding": 8,
+      "ContextualAffectiveRequirement": 6,
+      "ContextualMotorDevelopmentRequirement": 1,
+      "Unverified": 1,
+      "ConditionalLanguageBinding": 5,
+      "ContextualReadingEngagement": 5
+    },
+    "conditionalMeaning": "Conditions and link state are separate axes; source counts and associations are not unique skills.",
+    "partialSourceKeys": [
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.4",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-1.2",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.3",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-3.2"
+    ],
+    "unlinkedLanguageKeys": [
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.2",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-10.3",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LANG-COMP-C-11.2",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R1-COMP-C-3.4",
+      "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-R2-COMP-C-2.2"
+    ],
+    "allConditionalLanguageRecordsStillNeedActualRoleBinding": true
+  },
+  "reference2017": {
+    "scope": [
+      {
+        "area": "Mathematics",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "positions": 49
+      },
+      {
+        "area": "EVS",
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "positions": 43
+      },
+      {
+        "area": "English",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "positions": 79
+      },
+      {
+        "area": "Hindi",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "positions": 80
+      },
+      {
+        "area": "Urdu",
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "positions": 53
+      }
+    ],
+    "currentIndividualApplicability": "Unverified for all 304 positions",
+    "HindiUrduCanonicalMachineWording": "Unverified for 133 printed positions",
+    "catalogueDoesNotDeclareSkillGaps": true
+  },
+  "outsideSelectedBaseline": {
+    "2025HindiUrduSections": {
+      "sourceGradeScope": "Foundational, primary I–II view",
+      "sourcePdfPages": [
+        35,
+        48
+      ],
+      "recordCount": null,
+      "status": "Canonical extraction and independent language readback unverified; do not invent keys."
+    },
+    "currentTextbooksAndEditionRelations": "Current I–V material clauses and source completeness are not established by selected catalogue counts.",
+    "CBSEImplementation": "Actual language roles, current art-project/material choices and transition/textbook applicability remain to be bound."
+  },
+  "proposedNotAccepted": [
+    {
+      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-4",
+      "topicId": "mt_mQcWGh02no",
+      "role": "component",
+      "proposedDisposition": "Full authoring, pending semantic review",
+      "newPairs": 1,
+      "newTopics": 0,
+      "status": "Local only, pending semantic review"
+    }
+  ],
+  "completionCriteria": [
+    "Establish the current source/programme and grade/language boundary before claiming comprehensive coverage.",
+    "Give each selected in-scope requirement a whole-clause disposition with existing-claim evidence, material/performance conditions and justified reuse or additions.",
+    "Resolve mandatory source uncertainty and incomplete task clauses, or retain explicit agreed deferrals without labelling them complete.",
+    "Bind actual language/script/material/assessor and selected art/resource conditions for the configured scope; do not force alternatives simultaneously.",
+    "Keep contextual observations and actual PE exclusions as legitimate dispositions rather than inventing mastery topics.",
+    "Verify reviewed Git acceptance; downstream publication and learner attainment remain separate."
+  ],
+  "CBSECTAISupplementClassesIIITOV": {
+    "hierarchy": {
+      "goals": 3,
+      "competencies": 6,
+      "gradedParentBoxes": 12
+    },
+    "sourceGradeScope": [
+      3,
+      4,
+      5
+    ],
+    "stageRecordsApplyOnce": true,
+    "catalogueDoesNotDeclareUniqueSkills": true,
+    "acceptedCoverageReviewed": true,
+    "acceptedCoverageReviewScope": "Only C-3; remaining 20 selected hierarchical positions are unreviewed for coverage."
+  },
+  "overallCBSEPrimaryDenominator": null,
+  "overallIndiaDenominator": null,
+  "broaderAuditPriority": [
+    "Mathematics I–V: establish current source and material applicability",
+    "Languages I–V: actual role/programme/script variants and source recovery",
+    "TWAU/EVS primary integrated/stage and III–V materials",
+    "Arts I–V: stage/grade coverage, alternatives and current project/material requirements"
+  ],
+  "acceptedBoundedAlignments": [
+    {
+      "sourceKey": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-3",
+      "topicId": "mt_gu0NPDvlhY",
+      "role": "whole",
+      "newPairs": 1,
+      "newTopics": 0,
+      "status": "Accepted on main via PR154",
+      "PR": "https://github.com/withmarbleapp/os-taxonomy/pull/154",
+      "disposition": "Full authoring",
+      "acceptedCommit": "df93fa372227fd3d07e11f16c3949a02526723bd"
+    }
+  ]
+}
