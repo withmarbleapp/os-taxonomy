@@ -29,7 +29,10 @@ function check(r, cs, get = read) {
   for(const c of row.contributions) assert.equal(c.role,'component');
  }
  assert.equal(r.exactContextDeltas.length,26);
- for(const d of r.exactContextDeltas)assert.ok(cs.some(c=>JSON.stringify(c)===JSON.stringify(d.after)),'exact context delta is authored');
+ for(const d of r.exactContextDeltas){
+  const {standards: expectedStandards,...identity}=d.after;
+  assert.ok(cs.some(c=>{const {standards,...actualIdentity}=c;return JSON.stringify(actualIdentity)===JSON.stringify(identity)&&expectedStandards.every(k=>standards.includes(k));}),'reviewed exact context identity and every old association are retained; later source appends allowed');
+ }
  const rx=cs.filter(c=>c.topicId==='mt_RXnyhCRYXA' && c.standards.some(k=>keys.includes(k)));
  assert.equal(rx.length,1);assert.deepEqual([rx[0].ageRangeStart,rx[0].ageRangeEnd],[10,11],'RX retained whole path offers only Grade V');
  assert.deepEqual(r.compatibilityUnionEffects.map(x=>x.topicId).sort(),['mt_QNxFnxikCN','mt_MqqR7VUoz1','mt_Y9XKzLrUAZ'].sort());

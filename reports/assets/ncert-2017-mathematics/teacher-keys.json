@@ -1,0 +1,161 @@
+{
+  "viewModels": {
+    "P": {
+      "heightCells": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "total": 5,
+      "front": [
+        2,
+        1
+      ],
+      "side": [
+        2,
+        1
+      ]
+    },
+    "Q": {
+      "heightCells": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "total": 5,
+      "front": [
+        2,
+        1
+      ],
+      "side": [
+        1,
+        2
+      ]
+    },
+    "R": {
+      "baseDimensions": [
+        3,
+        2
+      ],
+      "extraAt": [
+        1,
+        1
+      ],
+      "total": 7,
+      "front": [
+        1,
+        2,
+        1
+      ],
+      "side": [
+        1,
+        2
+      ]
+    }
+  },
+  "patterns": {
+    "teachingTriangle": [
+      [
+        1,
+        0.25
+      ],
+      [
+        2,
+        0.25
+      ],
+      [
+        1,
+        0.75
+      ]
+    ],
+    "freshTriangle": [
+      [
+        1,
+        0.25
+      ],
+      [
+        2.5,
+        0.25
+      ],
+      [
+        1,
+        0.5
+      ]
+    ],
+    "centre": [
+      0,
+      0
+    ],
+    "mirrorLine": "y=0",
+    "rotations": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "polygonsInEachPattern": 8,
+    "order": 4,
+    "lineSymmetryAxes": [
+      "x=0",
+      "y=0",
+      "y=x",
+      "y=-x"
+    ]
+  },
+  "lineDisplay": {
+    "modelOnly": true,
+    "days": [
+      1,
+      2,
+      3
+    ],
+    "heightCm": [
+      2,
+      3,
+      5
+    ]
+  },
+  "pieDisplay": {
+    "modelOnly": true,
+    "counts": {
+      "Blue": 2,
+      "Green": 1,
+      "Red": 1
+    },
+    "total": 4
+  }
+}
