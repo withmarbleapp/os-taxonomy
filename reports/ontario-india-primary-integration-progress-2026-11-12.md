@@ -657,3 +657,39 @@ examples concern dog bites/scratches; they are not a universal animal-injury
 protocol. Root and independent review passed. Actual school roles, facilities
 and response remain delivery conditions; no clinical or institutional compliance
 certificate, new topic, source Full promotion or canonical data change results.
+
+
+### Ontario Language394 final source requalification complete
+
+All 394 retained historical positions now bind the complete original narratives,
+information/oral/media inputs, word/grammar profiles and independent operational
+overalls, with an actual original visual sheet and local navigation page. Root
+read all three complete resources and their final semantic changes, visually
+inspected both final assets, and verified the exact official-clause hashes.
+Independent review checked all 394 source duties, 220 complete direct claims,
+1,521 current offer memberships, all 115 distinct operational focus/routes and
+31 unique real references. The 394 keys plus 36 separately qualified cultural and
+four later keyboarding keys form the complete disjoint 434-position primary
+Language census. Actual real-world design/feedback, configured digital exchange,
+authentic creator engagement, all three connection types, genre portfolios and
+own revision/presentation remain honest delivery requirements.
+
+This finishes the finite Ontario historical source-authoring requalification
+alongside the already qualified Mathematics and Science cohorts; it adds no Full
+labels, topics, ages, associations, dependencies or guide revisions. Ontario's
+proposed total remains 2,464 reported Full and two mixed-scope Kindergarten
+Partials whose excluded PE is unclaimed and non-PE authoring is complete. No
+known in-scope Partial remains. Reviewed-main acceptance and downstream private
+compatibility/publication are still separate required steps.
+
+
+### Final combined public-content checks
+
+All 560 tests, taxonomy validation and generated checks pass on the combined
+Ontario/India source package. The accepted-main catalogue, clusters and archive
+are exact. The final canonical footprint is five new topics/guides, thirteen
+precisely corrected old cards, 34 bounded old-guide revisions and three softened
+hard dependencies, with no topic retirement or new dependency. Review/main
+acceptance and staging publication are outstanding. The restricted maintenance
+writer is being implemented separately because the routine additive contracts
+cannot apply this footprint; no learner or staging changes have occurred.
