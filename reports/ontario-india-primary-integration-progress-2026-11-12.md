@@ -444,3 +444,31 @@ A3.2, and two mixed Kindergarten records retaining excluded PE. The twelve
 in-scope residuals and the historical Full audit remain open. India’s mandatory
 2017 learning-outcome reconciliation continues; capture counts are not completed
 semantic reviews. No staging or learner state has changed.
+
+
+## Two prerequisite necessity corrections — 13 November
+
+Whole-claim counterexamples show that recognising five everyday computers is not
+necessary to complete precise everyday instructions, and one-to-one enumeration
+is not necessary to produce the complete rote number sequence. Those two links
+are now soft support rather than hard completion gates. All other 4,000 links,
+all claims, guides, scoped contexts and source records are unchanged. The full
+539-test suite, generation, validation and generated checks pass. Eligibility and
+private-state compatibility must be requalified before staging; no learner reset
+or source Full promotion follows from these corrections.
+
+
+## Nine saved-guide factual corrections — 13 November
+
+The mandatory India outcome and Ontario historical audits found 27 contradictory
+fields across nine existing guides: fraction grouping/error diagnosis, exact
+fraction locations, equivalent-fraction task materials, scaled-graph values,
+percentage bases, rectangle perimeter, the limits of estimation checks, capacity
+versus total container mass, and length units/personal benchmarks. These now agree
+with the mathematically correct operations and existing learning constraints.
+Independent peer checks and exact replacement proofs preserve the other 1,087
+guides and every unaffected field/metadata value. All intrinsic claims, criteria,
+contexts, ages, dependencies and source records are unchanged; no source Full
+promotion follows. All 539 tests, generation, validation and generated checks
+pass. Private richer-research preservation and learner compatibility remain
+downstream publication gates; no learner record has changed.
