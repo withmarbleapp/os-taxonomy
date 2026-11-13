@@ -14,7 +14,7 @@ function check(d,read=get){
   assert.match(r.key,new RegExp(`^ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-${r.languageAlternative}-G${r.grade}-LO${String(r.ordinal).padStart(2,'0')}$`));
   assert.equal(r.currentDisposition,'ConditionalProgrammeRoute');assert.equal(r.languageProgrammeCertified,false);assert.equal(r.formalRoleFrameworkAutomaticallyPromoted,false);assert.equal(r.actualLearnerAttainmentClaimed,false);assert.equal(r.actualNamedProgrammeInputStatus,'NotCertifiedByThisBatch');
   assert.ok(r.remainingGates.includes('ActualLanguageMaterialsAndAcceptedFreshKeys'));assert.ok(r.remainingGates.includes('ActualIndependentPupilPerformance'));
-  if(r.languageAlternative==='UR')assert.ok(r.remainingGates.includes('IndependentCompetentUrduSourceMeaningReadback'));
+  if(r.languageAlternative==='UR')assert.ok(r.remainingGates.includes('CanonicalUrduSourceAndVarietyConfirmation'));
   for(const ref of r.taskContractReferences){const [file,anchor]=ref.split('#');const body=read('reports/'+file).split(`<a id="${anchor}"></a>`)[1]?.split('<a id=')[0];assert.ok(body&&body.length>300,'actual source module resolves to task and evidence');}
   assert.ok(!('privateLiteral' in r)&&!('semanticDutyReadback' in r),'no restricted source payload');
  }

@@ -627,3 +627,20 @@ The retained NCERT 2017 source now has individually keyed task/component or cond
 The exact named-language inputs, accepted fresh keys, script/meaning/cadence checks and real source-required media are genuine selected-programme authoring conditions. Actual pupil delivery is separate. Hindi source mode notation and Urdu orthography, studied-work and explicit learned-recall routes have been checked/refined without inventing universal conjunction, dictation or memory duties. Root and independent peer qualification of this final report-only batch are recorded separately from accepted main.
 
 The [current end-state ledger](india-primary-source-end-state-2026-11-12.json) retains every real gate: suggestive music SourceMeaningUnverified; current Maths I preliminary/edition capture; exact 2017/current edition equivalence; rendition/programme identity and actual inputs; bounded current art-pair, school and competent animal-safety SOP/content checks. No source-access failure is treated as absence or permanent ambiguity, no current duty is silently discarded, and no blanket all-India, current CBSE-compliance, all-programme or learner-attainment claim is made.
+
+
+### Retained Hindi/Urdu133 source-accounting review complete
+
+All 80 Hindi and 53 Urdu retained positions now have exact conditional programme
+routes across 14 concrete task contracts, with root and independent review.
+Actual original-image checks preserve oral/written/signed/Braille alternatives,
+Urdu orthography rather than a compulsory dictation gloss, and the distinction
+between learned expressive recall and previously studied texts. Independent
+semantic review is complete; canonical transcription, actual selected-language
+materials, competent script/phonetic/cadence keys and genuine required media
+remain explicit programme conditions. No named programme is certified by these
+parameterized contracts, and no topic, association or canonical byte changes.
+The finite 304 reference positions now reconcile as 166 proposed authoring Full
+judgments and 138 contextual/programme conditions, with no overall India or
+unique-skill percentage. Exact-edition and genuine selected-source uncertainty
+remain visible. Current CBSE pupil animal-safety input qualification is in progress.
