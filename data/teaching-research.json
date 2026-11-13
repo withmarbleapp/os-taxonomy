@@ -17837,12 +17837,12 @@
           "If you had 12 + 5, would you still use fingers — what would you reach for instead?",
           "Can you do 8 + 7 now without any tool — what happened in your head?"
         ],
-        "correctAnswer": "No single scored answer — listen for the child noticing fingers run out past ten (a limitation) and that the ten frame helps because it shows 'fill to ten, then the rest', and for a fit-REASON tied to the numbers rather than 'I just like cubes'.",
+        "correctAnswer": "No single scored answer: listen for a valid tool-and-strategy fit reason tied to this problem. A ten frame can show the gap to ten; fingers can track counting on from eight. Showing all fifteen objects simultaneously on ten fingers exceeds that particular representation, but this is not a limitation of every finger strategy.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "Reaches for the same familiar tool every time by comfort, not fit — 'I always use my fingers' — even when the numbers cross ten",
-            "nextMove": "Pose paired problems (3+2 then 8+7) where the same tool fits one and fails the other, and make the finger limitation visible; ask which tool the numbers call for.",
+            "nextMove": "Compare 3 + 2 and 8 + 7 and ask how the chosen tool and strategy helps each. Directly showing every object on a finger runs out above ten; counting-on can still work. Discuss a real limitation of the attempted strategy rather than require a valid tool to fail.",
             "distractor": null,
             "revealedBy": "Names the same tool for every problem including 8+7 and cannot say why it suits this one",
             "reteachPrerequisiteId": null
@@ -17865,12 +17865,12 @@
           }
         ],
         "responseLevels": {
-          "gap": "Uses a tool or names a favourite but gives no fit-reason, or cannot work without it, and does not notice that fingers run out past ten.",
-          "full": "Unprompted, matches the tool to the problem (ten frame for crossing ten), names the finger limitation, explains what the frame reveals (the gap to ten), and would switch tools for a smaller problem where fingers fit.",
+          "gap": "Uses or names a tool but cannot explain how it supports the chosen problem, or treats its steps as a ritual without linking them to quantity or structure. Correct counting-on with fingers is not itself a gap.",
+          "full": "Independently chooses and uses a valid tool and strategy, explains why it helps these numbers, recognises a limitation when it actually applies, and compares an alternative or changed problem without being required to choose a predetermined tool.",
           "partial": "Chooses a sensible tool and, when prompted, says the ten frame 'shows ten', but the reason is about the tool in general rather than why it fits THIS problem, and the finger limitation is not raised spontaneously."
         },
         "diagnosticPrompt": "Here's 8 + 7. One child worked it out on their fingers, another used the ten frame. Which tool helped more for THIS problem, and why? What could go wrong with using fingers here?",
-        "whatMakesItDiscriminate": "A child who merely uses tools names a favourite; a child who chooses strategically points to the PROBLEM (the numbers cross ten) and to the tool's fit or limitation. 8+7 is chosen deliberately to cross ten so the finger limitation is real, not hypothetical — a 3+2 problem would not separate the two children."
+        "whatMakesItDiscriminate": "The fit reason distinguishes strategic choice from ritual or preference. At 8 + 7, a ten frame exposes the gap to ten; fingers can also track a valid counting-on strategy. Only representing all fifteen objects at once exceeds ten fingers. Ask how the actual strategy works and compare with 3 + 2; do not infer an error merely from the selected tool."
       },
       "sources": [
         {
@@ -39771,7 +39771,7 @@
         "responseLevels": {
           "gap": "Misnames + / −, or reads = only as 'the answer is' and cannot narrate a situation with the symbols.",
           "full": "Uses +, − and = fluently to narrate and record situations, and treats = relationally as 'is the same as', coping with sums written either way round.",
-          "partial": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the right or a missing number."
+          "partial": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the left (e.g. 5 = 3 + 2) or a missing number."
         },
         "diagnosticPrompt": "Read this out loud and tell me what is happening: 3 + 2 = 5. Now here is a story — three ducks are swimming and two more come to join them. Say a number sentence for the story, and tell me what the = sign means here.",
         "whatMakesItDiscriminate": "Listen for how the child USES the symbols in context, not whether they can define them. A child with the relational meaning of = says 'is the same as' and is untroubled by 5 = 3 + 2; a child with the operator misconception reads = as 'the answer is' and expects the total to come immediately after it. Narrating a real situation with the symbols reveals genuine command."
@@ -130812,7 +130812,7 @@
           {
             "kind": "misconception",
             "pattern": "Sorts by overall appearance as a whole rather than by dimensionality — groups round things together regardless of whether they are flat or solid",
-            "nextMove": "Give the physical test — can you hold it and turn it over, or does it only lie on the paper? — and sort by that, not by look",
+            "nextMove": "Use the dimensional test on the mathematical shape represented: does it extend in three independent directions, or is it an ideal flat shape represented by a thin card? Both a card and a ball can be held and turned, so pick-up ability alone does not separate flat from solid. Sort by dimensionality, not overall roundness.",
             "distractor": null,
             "revealedBy": "Puts the ball with the circle 'because they both look round'",
             "reteachPrerequisiteId": null

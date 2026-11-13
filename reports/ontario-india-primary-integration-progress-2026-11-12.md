@@ -5,13 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,463 reported Full / 3 Partial, including
+Current integrated draft: Ontario 2,464 reported Full / 2 Partial, including
 0 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The remaining Social Studies Partial remains
-unqualified within the agreed scope; the source-record denominator is unchanged.
+the excluded PE component explicitly unclaimed. No remaining Partial is unqualified within the agreed non-PE scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
 
@@ -530,3 +529,13 @@ All 49 primary Mathematics source positions now have complete original task and 
 Root reviewed all 49 source/task bodies, the scoped offers and complete whole-support resource. Independent final public binding reused the finite actual-read/exact-prior-review accounting for all 171 saved guides; it does not claim 171 fresh reads by either reviewer. The combined branch passes generation, validation, generated checks and all 545 tests. The historical CBSE parent-context check now preserves the exact identity and all old keys while allowing reviewed later source appends.
 
 These 49 reference positions overlap other source hierarchies and are not added to the 451/521 headline as new unique skills. EVS, English and named-language/applicability reconciliation remain open, as do historical Ontario Full audit, accepted-main review and downstream staging publication.
+
+### Final in-scope Ontario Partial resolved
+
+Grade 5 Social Studies A3.2 now has a complete original two-category interaction portfolio: distinct First Nations cooperation and an attributed Dene–Inuit earlier interaction pattern. The primary interview explicitly distinguishes its remembered before-European period from later fur-trade relationships; the task never invents a battle date or universal hostility. Independent description/comparison and fresh earlier/later/undated/recorded-date reasoning preserve source limits and the unchanged broader historical organisation claim. Root and independent final public binding passed. No canonical data changes arise from this resource.
+
+Ontario now has 2,464 reported Full / 2 Partial, resolving 90 of the original 92 Partials for source authoring. The two retained whole-source Partials include excluded PE; their non-PE authoring is complete. Historical Full audit, accepted-main review and downstream staging publication remain separate completion gates.
+
+### Historical mathematics diagnostic precision
+
+Seven assessment fields in three guides now agree with their existing correct teaching guidance: noncanonical equality can place a total on the left, fingers can support valid counting-on above ten, and holding a paper cut-out does not make its represented ideal shape three-dimensional. All other fields and intrinsic criteria are preserved. The finite 89 saved-guide qualification for the historical Grade 1 mathematics review is complete through actual reads/exact prior-review reuse; the source-specific portfolio and 28 explicit guide absences still need their final operational binding.
