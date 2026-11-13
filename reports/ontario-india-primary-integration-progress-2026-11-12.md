@@ -492,3 +492,17 @@ mixed Kindergarten records retaining excluded PE components. Three are unresolve
 within the agreed scope. Historical Full qualification and final India source
 reconciliation remain open; these figures do not certify learner attainment or
 staging publication.
+
+
+## Quantity and information-logic guidance corrections — 13 November
+
+Thirty exact fields in three existing guides now preserve the declared quantity
+and the information actually given: half a counted set is half its count even
+when objects differ in size; different tick styles do not assert unequal
+lengths; unmarked geometry may be derived from other givens; and digit length
+is a valid comparison for non-negative whole numbers without leading zeros.
+The shape-marking task specifies the equal legs of a right triangle. All
+intrinsic cards, criteria, scoped contexts, ages, dependencies, sourceClaims and
+metadata are unchanged. The other 1,094 guides remain exact. All 541 tests,
+generation, validation and generated checks pass. This does not promote source
+coverage or change learner state; downstream compatibility remains required.

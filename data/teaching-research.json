@@ -6576,7 +6576,7 @@
           "Any two pieces count as 'halves' regardless of size — the equal-parts requirement is missing",
           "A half is only the one piece you take, not seeing that both parts are halves and together make the whole",
           "Calling any fractional part 'a half' (a documented early error — IES)",
-          "Sharing a set by equal NUMBER of items rather than equal AMOUNT when items differ in size (number-vs-quantity confusion)"
+          "Confuses half the number of objects with half a measured total (such as mass). Equal counts correctly halve a counted set even if object sizes differ; a different measure requires its own equality check."
         ]
       },
       "learn": {
@@ -6587,7 +6587,7 @@
             "feedback": [
               "If the cut is off-centre: 'Would that be fair? The two parts are not the same size, so neither one is a half. Slide the cut until both parts match.'",
               "When equal: 'Now both parts are the same — these are two equal halves, and together they make the whole bar.'",
-              "For the set mode with equal counts but unequal item sizes: ask 'Same number, or same amount?' to separate quantity from count."
+              "For different-sized items, name the quantity: 'We shared half the number of objects to each person. Did we also share half the total mass?' Equal count is valid for the counted set and need not imply equal mass."
             ],
             "rationale": "Halving is an action on a whole; letting the child physically cut/fold or share and then check equality makes 'two equal parts' felt rather than told. Live equality feedback (recolouring, snapping, refusing 'done' until amounts match) makes the fairness criterion concrete. These interactions are illustrative examples of the mechanism, not required technology, and their effectiveness relative to other media is untested.",
             "sourceClaims": [
@@ -6598,7 +6598,7 @@
             "learnerActions": [
               "Drag a cutting line across a rectangular chocolate bar (cutting straight across its length); when the cut is off-centre, note that the two parts are unequal (e.g. they glow red / are labelled 'not halves – not fair') and when at the midpoint the two parts are equal (snap green / labelled 'two equal halves').",
               "Slide the two equal halves back together to remake the whole bar, saying 'two halves make one whole'.",
-              "Switch to a set mode: share a plate of biscuits (or counters) into two hoops, and only accept it as 'done' when the two amounts match.",
+              "Switch to a counted-set mode: share an even number of biscuits or counters into two hoops, and check both groups have equal numbers. If measuring total mass instead, explicitly change the whole being halved and check that measure separately.",
               "Check equality by matching or overlaying the parts, and describe each as 'a half' and 'the other half'."
             ],
             "intendedInsight": "A half requires two EQUAL parts; the count of two pieces alone does not make halves. Both parts are halves, and together they rebuild the whole."
@@ -6606,9 +6606,9 @@
           {
             "title": "Share the set first",
             "feedback": [
-              "'You gave each person the same number — but are the amounts the same? Look at the sizes.'",
-              "Use colour cues to separate quantity from count, and ask 'same number, or same amount?'",
-              "Confirm: 'When both sides have the same amount, each side is half of the whole set.'"
+              "You gave each person the same number, so each has half the counted set. If the question is half the total mass instead, we need to check mass; looking at size alone is not a measurement.",
+              "Name the quantity before judging equality: number of objects, length, area or mass. Use pictures or colour to support that distinction without rejecting a correct equal-count half-set.",
+              "When each group contains half the total number of objects, each is half the counted set. Half the total mass is a separate statement that needs equal mass."
             ],
             "rationale": "The IES progression recommends starting from sharing a set evenly before partitioning a single object, building on the halving strategy children already bring. Discrete sharing also surfaces the number-versus-quantity confusion directly. The sequence is a recommended progression, not proven more effective than alternatives.",
             "sourceClaims": [
@@ -6617,10 +6617,10 @@
             ],
             "learnerActions": [
               "Share a set of objects (for example, 8 counters, or 6 sweets) evenly between two people, giving one each in turn until the pile is gone.",
-              "State how many each person gets and, when all the objects are the same size, that each group is 'half of' the set.",
-              "With objects of different sizes (big and small sweets), check whether equal COUNT gives equal AMOUNT, and discuss which sharing is fair."
+              "State how many each person gets and that each equal-number group is half the counted set, whether or not the individual objects have the same size.",
+              "With different-sized objects, explicitly compare half the number with half a measured total. Equal counts halve the counted set; they need not halve total mass. Discuss fairness only after stating the intended quantity or agreed criterion."
             ],
-            "intendedInsight": "'Half of' a quantity is found by sharing equally into two groups; fairness means equal amount, which may differ from equal number when items vary in size."
+            "intendedInsight": "Half means one of two equal parts of a declared whole: equal count for a counted set, equal length for a length, equal area for an area, or equal mass for a mass. These are different quantities; fairness depends on the stated aim."
           },
           {
             "title": "Halved or not? Sort and choose",
@@ -6682,7 +6682,7 @@
           "If I put the two pieces back together, what do I get?",
           "Can one half ever be bigger than the other half of the same bar? Why not?",
           "Here are 6 sweets - show me half of them. How did you decide?",
-          "If I share 6 big sweets and 6 tiny sweets by giving each of us 6, do we have the same AMOUNT?"
+          "If we share twelve sweets into six each, have we each received half the number? Yes. If some sweets are larger, does that also establish half the total mass? No; that is a separate measured quantity."
         ],
         "correctAnswer": "No - the two pieces are not equal, so neither is a half. Halves must be two EQUAL parts; you would have to break the bar so both pieces are the same size. Two equal halves put back together make the whole bar.",
         "errorPatterns": [
@@ -6712,16 +6712,16 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Halving a set by equal NUMBER of items, not equal AMOUNT, when items differ in size",
-            "nextMove": "Use colour cues to separate quantity from count (IES); ask 'same number, or same amount?'",
+            "pattern": "Confuses half the number of objects with half a measured total, without naming which quantity is being halved.",
+            "nextMove": "Declare the whole and quantity: equal counts correctly halve the counted set; check an appropriate measure if the task instead asks for half the total mass, length or area.",
             "distractor": null,
-            "revealedBy": "Given big and small items, gives each side the same COUNT even though the amounts differ",
+            "revealedBy": "Claims equal counts must also give equal total mass for unequal-sized items, or rejects equal counts as half the counted set solely because item sizes differ. Equal counts alone are not an error.",
             "reteachPrerequisiteId": "mt_LpSuPgL31x"
           }
         ],
         "responseLevels": {
           "gap": "Counts any two pieces as halves regardless of size, or calls any part 'a half'.",
-          "full": "States a half is one of TWO EQUAL parts, checks equality by matching, knows two halves make the whole, and halves a set by equal amount (not just equal count).",
+          "full": "States a half is one of TWO EQUAL parts of a declared whole, checks the relevant equality, knows two halves make the whole, and halves a counted set by equal count while distinguishing this from half a separately measured quantity.",
           "partial": "Says halves must be equal for a simple shape but does not apply it to a set/quantity, or names one piece 'the half' without seeing both are halves; cannot transfer to the unequal-cut or the big/small set."
         },
         "diagnosticPrompt": "Show a chocolate bar snapped into two pieces - one big, one small. Ask: 'Is one of these pieces a half of the bar? How do you know?' Then ask: 'What would I have to do to make two halves - and if I put the two halves back together, what do I get?'",
@@ -48530,7 +48530,7 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Misorders 2- and 3-digit numbers by digit-count or first glance: places 73 above 137",
+            "pattern": "Misorders mixed-length whole numbers by ignoring their place values: places73 above137, for example by comparing7 with1 without aligning the tens and hundreds.",
             "nextMove": "Right-align by place; a number reaching the hundreds beats one that stops at tens. Line them up in columns.",
             "distractor": null,
             "revealedBy": "73 is ordered as if larger than a three-digit number, or numbers aren't aligned by place.",
@@ -48546,12 +48546,12 @@
           }
         ],
         "responseLevels": {
-          "gap": "Compares from the ones or by digit-count; symbol may be reversed.",
+          "gap": "Compares from the ones or ignores highest place values in mixed-length numbers; symbol may be reversed. Comparing digit counts is valid for non-negative whole numbers written without leading zeros, provided the higher-place reasoning is understood.",
           "full": "Compares hundreds-then-tens-then-ones, orders numbers to 1000 reliably, and records with >, =, < correctly.",
           "partial": "Orders clearly different numbers but errs on same-hundreds pairs or mixed-length sets."
         },
         "diagnosticPrompt": "Watch them compare and order. 'Put a symbol between 254 and 245. Now order these smallest to largest: 307, 370, 73, 137. Tell me which place you looked at first.' The 254/245 pair turns on the tens, and 73 tests mixing 2- and 3-digit numbers.",
-        "whatMakesItDiscriminate": "254 vs 245 share hundreds and differ only at the tens, so a ones-first comparer picks wrongly; including 73 checks whether the child aligns by place rather than counting digits. Watching where they start (hundreds) exposes the method."
+        "whatMakesItDiscriminate": "254 and245 share hundreds; the first differing place is the tens, although their ones also differ. A ones-first comparer picks wrongly. Including73 checks alignment and magnitude across two- and three-digit numbers; digit-count comparison without leading zeros is a valid shortcut when explained by the higher place. Watching the method and asking for justification exposes the place-value reasoning."
       },
       "sources": [
         {
@@ -69298,9 +69298,9 @@
         ],
         "commonMisconceptions": [
           "Reads ∠ABC as the angle at the first (or last) letter rather than the middle letter (the vertex)",
-          "Reads tick marks as a measurement or length value rather than 'equal to each other', or treats single and double ticks as equal to one another",
+          "Reads tick marks as a measurement or length value rather than 'equal to each other', or assumes different single and double tick styles alone establish equality between their groups",
           "Treats the marks as decoration and judges lengths, angles and right angles from the diagram's appearance (assumes it is drawn to scale)",
-          "Thinks the small square is just 'a corner' rather than exactly 90°, or misses that unmarked features are unknown"
+          "Thinks the small square is just a corner rather than exactly 90°, or infers an unmarked feature from appearance without supporting given or derived information."
         ]
       },
       "learn": {
@@ -69310,7 +69310,7 @@
             "title": "Mark up a plain figure, then read a 'not to scale' one",
             "feedback": [
               "If the learner labels ∠ABC using an arm letter (A or C), rehearse the rule: the middle letter is always the vertex — point to B first, then trace arms BA and BC. An optional interactive can light up the wrong angle when the wrong letter is tapped, making the mismatch visible.",
-              "If the learner reads a ticked side as a measurement (e.g. '1 unit') or treats a single-ticked and double-ticked side as equal, restate each mark as a relationship within its own pair and show that double ticks mark a separate, independent equal pair.",
+              "If the learner reads a ticked side as a measurement (e.g. '1 unit') or claims different tick styles alone prove equality between groups, restate each mark as a relationship within its own pair. Different styles establish separate equalities, not equality or inequality between groups; other givens may supply that information.",
               "If the learner calls a marked-equal pair unequal because one looks longer, insist the marks are the authority on a not-to-scale diagram.",
               "When producing a diagram, check that every stated fact carries its mark and that equal marks are never left on just one side — a stated right angle needs a square, and equal sides need matching ticks on EVERY side in the equal group (both sides of a pair, or all sides if more than two are equal)."
             ],
@@ -69352,7 +69352,7 @@
             "title": "Match and select: check interpretation and light production",
             "feedback": [
               "If the learner selects the angle at A for ∠ABC, re-state the middle-letter rule and have them trace arms BA and BC from B.",
-              "If a single-ticked and double-ticked side are matched as equal, clarify that double ticks denote a separate, independent equal pair.",
+              "If different single and double ticks alone are used to assert equality between groups, clarify that each style denotes its own equal group. Those different styles alone prove neither equality nor inequality between groups.",
               "Choosing 'the angle at point A' for ∠ABC reveals the middle-letter misread; redirect to the vertex B."
             ],
             "rationale": "Selection and matching tasks are intended to check interpretation and limited production, and the ∠ABC item specifically targets the middle-letter misconception that source 1 identifies as a convention violation. Recognition tasks are efficient checks but do not require the learner to construct a full marked diagram, so they complement rather than replace hands-on marking.",
@@ -69372,7 +69372,7 @@
             "feedback": [
               "Reinforce that two equally-ticked sides are equal regardless of apparent length.",
               "∠BCA has vertex C, so it is a different angle from ∠ABC (vertex B).",
-              "If the learner assumes an unmarked corner is a right angle because it looks square, point out that only a drawn square asserts 90°; unmarked features are unknown."
+              "If the learner assumes an unmarked corner is a right angle because it looks square, explain that appearance alone is insufficient. A square mark or stated fact gives 90° directly; other given relationships may also establish a right angle by reasoning."
             ],
             "rationale": "These prompts target the specific misconceptions of trusting appearance, misplacing the vertex, confusing single/double ticks, and assuming unmarked features. Reasoning about what the diagram does and does not state is intended to deepen the 'marks over appearance' principle.",
             "sourceClaims": [
@@ -69383,24 +69383,24 @@
               "Answer: 'This side LOOKS longer than that one, but both carry a single tick — which is actually longer?' (Answer: they are equal.)",
               "Show ∠BCA on the same diagram and decide whether it is the same as ∠ABC or a different angle.",
               "Decide what mark to add for a second pair of equal sides so no one confuses it with the first pair (double ticks).",
-              "Answer: 'This corner has no square drawn on it — can you be sure it's a right angle? How would the diagram tell you?' (You cannot assume it; unmarked features are unknown.)"
+              "Answer: 'This corner has no square drawn on it — can you be sure it is a right angle from appearance alone? What given or derived information could establish it?' Appearance alone cannot establish 90°; inspect the other stated facts before calling it unknown."
             ],
-            "intendedInsight": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not a stated fact."
+            "intendedInsight": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not directly stated by a mark, but may be derived from other givens; appearance alone is insufficient."
           }
         ],
         "constraints": [
           "Cover BOTH directions: reading marked diagrams AND producing marks when drawing. A reading-only reveal tool is a scaffold and does not assess production; pair it with construction tasks.",
           "Recognition and matching tasks check interpretation and light production but do not require constructing a complete marked diagram, so include a production task where the learner draws the square and adds matching ticks in pairs.",
           "Use deliberately not-to-scale diagrams whose appearance contradicts the marks so learners practise trusting the marks over the picture.",
-          "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must be treated as unknown.",
-          "Reserve double ticks for a second, independent equal pair, and make clear single- and double-ticked sides are NOT equal to each other. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
+          "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must not be inferred from appearance alone; other stated or derived relationships may establish them.",
+          "Reserve double ticks for a second, independent equal pair, and make clear these different marks alone do not establish equality or inequality between a single-ticked and a double-ticked side. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
           "This notation is a convention of 2-D diagrams; a 3-D environment is not required for this objective. Paper-and-pencil marking is an acceptable medium for the production half alongside any interactive tool."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions, and their efficacy wording is intended/proposed only.",
           "The original row's recommendation described marking two independent equal-side pairs on a TRIANGLE; a triangle has only three sides, so two disjoint equal pairs cannot both be marked. Corrected to a quadrilateral for the marking step so the single- and double-tick pairs are coherent. Logged as an original-row error.",
           "The legacy row claimed a 3-D environment 'has nothing to add' and that open dialogue cannot deliver this skill. These are catalog-fit opinions, not established pedagogical laws; softened to narrowly scoped notes that 2-D marking (including on paper) suffices for this objective and that spoken discussion can support reasoning about marks even if it is not the primary production medium.",
-          "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with single- and double-ticked sides NOT equal to each other. No arithmetic claims present.",
+          "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with no equality or inequality between the two groups established by those different marks alone. No arithmetic claims present.",
           "Source 1 is cited in the reading/matching activities only to support the convention-reading principle and the fact that misreading a convention is a violation; it is not evidence that any particular interaction format is effective."
         ],
         "schemaVersion": 2
@@ -69426,10 +69426,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Reads tick marks as a measurement or length value, or treats single- and double-ticked sides as equal to each other, rather than 'equal within their own pair'",
+            "pattern": "Reads tick marks as a measurement or length value, or assumes from the different tick marks alone that single- and double-ticked sides are equal to each other, rather than 'equal within their own pair'",
             "nextMove": "State each mark as a relationship ('these two are equal to each other') and use double ticks for a separate, independent equal pair.",
             "distractor": null,
-            "revealedBy": "Says a ticked side is '1 unit', or claims a single-ticked and a double-ticked side are equal",
+            "revealedBy": "Says a ticked side is '1 unit', or claims the different tick marks alone prove a single-ticked and a double-ticked side are equal",
             "reteachPrerequisiteId": null
           },
           {
@@ -69454,7 +69454,7 @@
           "full": "Reads a marked diagram as a coherent set of stated relationships (trusting the marks over appearance), identifies ∠ABC by its middle-letter vertex, and produces diagrams that correctly encode given facts with square, tick and arc marks, transferring to a new figure (relational).",
           "partial": "Reads individual marks correctly in isolation (a square = 90°, a tick pair = equal) but misplaces the vertex in three-letter notation, is swayed by appearance on a not-to-scale diagram, or omits marks when producing a diagram (multistructural)."
         },
-        "diagnosticPrompt": "Show a triangle marked with a small square at one corner, single tick marks on two of its sides, and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain diagram, mark a right angle with the correct symbol, and show that two of its sides are equal in length.'",
+        "diagnosticPrompt": "Show a triangle marked with a small square at one corner, matching single tick marks on its two legs meeting at the right angle (not a leg and hypotenuse), and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain isosceles-right-triangle diagram, mark a right angle with the correct symbol, and show that its two legs are equal in length.'",
         "whatMakesItDiscriminate": "Asking the child both to READ the marks and to PRODUCE them catches the pupil who can recite a meaning but mislabels the vertex or marks equal lengths as measurements. The ∠ABC item specifically catches the middle-letter misread, and requiring production (draw one) is the interpret-translate discriminator — recognition alone hides the gap."
       },
       "sources": [
