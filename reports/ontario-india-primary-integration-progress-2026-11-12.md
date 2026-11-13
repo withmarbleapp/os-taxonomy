@@ -506,3 +506,9 @@ intrinsic cards, criteria, scoped contexts, ages, dependencies, sourceClaims and
 metadata are unchanged. The other 1,094 guides remain exact. All 541 tests,
 generation, validation and generated checks pass. This does not promote source
 coverage or change learner state; downstream compatibility remains required.
+
+### Time and place-value diagnostic corrections
+
+Reviewed operative guidance exposed 27 precise corrections in ten existing guides. The changes accept numerically equivalent time readings, distinguish calendar weeks from month boundaries, preserve a valid unregrouped place-value subtotal, and correct comparison and missing-addend prompts. Intrinsic claims and scoped associations are unchanged.
+
+The full research payload equals the previous integration plus only the 27 declared field replacements in `ten-guide-time-place-diagnostic-corrections-2026-11-13.json`; all 1,087 other guide records and every other canonical data payload remain exact. Generation, validation, generated checks and all 541 tests passed. These are authoring corrections, not retrospective learner reassessments or a staging publication receipt.

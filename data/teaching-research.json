@@ -12099,7 +12099,7 @@
         "poeTask": null,
         "probeDeeper": [
           "'The hour hand is between the 7 and the 8. Is it half past 7 or half past 8 — how do you decide?'",
-          "'If I move the hour hand to point exactly at the 7, is it still half past 7? What time is it now?'",
+          "On a geared clock, wind back from half past seven until the hour hand points exactly at 7. Where is the minute hand now, and what time does the linked clock show? (Minute hand 12,7 o’clock.) Do not silently move only one independent hand and ask for a coherent new time.",
           "'Which hand did you look at first to know it was HALF past — and what told you it was a half?'"
         ],
         "correctAnswer": "Reads 'half past 3', explaining the minute hand on 6 means half way round (half past) and the hour hand between 3 and 4 means it is past 3 (the last number passed). Draws half past 7 with the minute hand on 6 and the hour hand HALFWAY between 7 and 8.",
@@ -27437,7 +27437,7 @@
             "title": "Drag the minute hand and watch the count-in-fives and digital readout",
             "feedback": [
               "If the child reads the numeral literally (4 -> '4 minutes past'), re-run the count-in-fives tape aloud pairing each numeral with x5 until the 4 -> 20 link is fluent.",
-              "If the child keeps counting past the half hour ('40 past 3' for 3:40), point to the 12-6 partition: right is past, left is to, and 'to' times belong to the NEXT hour, so 3:40 is 'twenty to four'.",
+              "Forty minutes past three and twenty minutes to four name the same time,3:40. Accept the equivalence; when practising conventional next-hour wording, ask the learner to count the 20 minutes remaining until four.",
               "If the child treats the time as a decimal (e.g. thinks 3.50 means half past three, or that minutes run up to 99), model the colon convention and count the real 60 minutes on the dial to show the hour is 60, not 100.",
               "If the child assigns a.m./p.m. by how late it feels, slide the day-strip marker so the same hand position lands once in the morning and once after noon, 12 hours apart."
             ],
@@ -27459,7 +27459,7 @@
           {
             "title": "Read, convert and sort: discrimination practice",
             "feedback": [
-              "'3:40' is 'twenty to four', not 'forty past three' — the minute hand is left of the 12-6 line, so name it against the next hour.",
+              "3:40 can be expressed equivalently as forty minutes past three or twenty minutes to four. Practise converting to the next-hour form when requested, rather than treating the equivalent elapsed-minutes reading as a wrong time.",
               "When a child treats the minutes as a decimal (e.g. 3.50 read as half past three), re-show the colon convention and count the 60 minutes on the dial so the hour is 60, not 100.",
               "If a.m./p.m. sorting goes by 'how late it feels', revisit the noon/midnight split and that each clock time occurs twice a day."
             ],
@@ -27469,7 +27469,7 @@
             ],
             "learnerActions": [
               "Match analogue clock faces (with a.m./p.m. given) to their 12-hour and 24-hour digital times (and back), e.g. twenty to four in the afternoon = 3:40 p.m. = 15:40.",
-              "Answer discriminating questions such as 'Is 3:40 forty past three or twenty to four?'",
+              "Express 3:40 as forty minutes past three and as twenty minutes to four, and explain why both locate the same time. Independently produce the requested next-hour form for a fresh example.",
               "Sort daily activities (breakfast, school, bedtime) into a.m. and p.m.",
               "Write a shown clock as h:mm, using a colon."
             ],
@@ -27552,18 +27552,18 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Confuses times 'past' and 'to' — keeps counting past the half hour ('40 past 3' for 3:40) instead of switching to '20 to 4'",
+            "pattern": "Cannot convert a correct elapsed-minutes reading to the next-hour to-form when explicitly asked, or names the wrong next hour. Forty minutes past three is itself equivalent to 3:40, not a numerical misconception.",
             "nextMove": "Use the vertical 12-6 partition (right=past, left=to) and a number line showing 40 past = 20 to; stress that 'to' times relate to the NEXT hour.",
             "distractor": null,
-            "revealedBy": "Reads 3:40 as 'forty past three'; never flips to naming it against the next hour",
+            "revealedBy": "When asked for minutes remaining until the next hour at 3:40, cannot find 20 minutes to four or instead says twenty to three. Merely saying forty minutes past three does not establish a wrong time reading.",
             "reteachPrerequisiteId": "mt_HNOPGJYiRK"
           },
           {
             "kind": "interference",
-            "pattern": "Treats the hour as base-10 — writes a decimal point instead of a colon and/or thinks there are 100 minutes in an hour (so 50 past 3 = 50 to 4)",
+            "pattern": "Interprets the time separator as a decimal fraction or assumes 100 minutes per hour, for example saying 50 past 3 is 50 to 4. A full-stop time separator used conventionally is not itself this error; practise the requested colon format separately.",
             "nextMove": "Model the colon convention and count the real 60 minutes on the clock face so the child sees the hour is 60, not 100 — ground it on the dial, not on the base-10 number system or 100-pence-in-a-pound.",
             "distractor": null,
-            "revealedBy": "Writes '3.25'; says 50 past 3 is 50 to 4",
+            "revealedBy": "Explains the minutes as hundredths of an hour or says 50 past 3 is 50 to 4. Writing 3.25 alone can be a conventional time notation and does not diagnose base-ten reasoning.",
             "reteachPrerequisiteId": null
           },
           {
@@ -27576,7 +27576,7 @@
           }
         ],
         "responseLevels": {
-          "gap": "Reads the numeral as the minutes, or reads a digital time literally with no past/to sense; assigns a.m./p.m. by feel; writes times with a decimal point.",
+          "gap": "Reads the clock numeral as the minutes, cannot relate equivalent past/to readings, assigns a.m./p.m. by feel, or treats minutes as hundredths of an hour. A conventional full-stop separator alone is not a mathematical gap.",
           "full": "Reads any 5-minute analogue time by counting in fives, converts fluently between analogue and 12-hour digital (colon, correct past/to), and labels a.m./p.m. correctly, knowing each time occurs twice a day and what noon and midnight mean.",
           "partial": "Reads and writes 5-minute times correctly for 'past' times and simple cases, but is caught switching to 'to' times, or muddles a.m./p.m. and noon/midnight."
         },
@@ -54682,7 +54682,7 @@
           {
             "title": "Zoom from a day to the year: nesting made visible",
             "feedback": [
-              "If the child says a week is longer than a month, show the month-grid holding several week-rows: 'Count the full weeks inside this month — there are four whole weeks, and most months have a few days left over.'",
+              "If the child says a week is longer than a month, count the days: a Gregorian calendar month lasts 28–31 days, or four seven-day durations and zero to three extra days. Calendar week rows may cross month boundaries; they are not always four complete rows inside one month.",
               "If the child can't locate a birthday month in the year, point to the year-strip: 'Find the start of the year — now count along to your birthday month.'",
               "When the child explains that a month contains several weeks, affirm the nesting idea explicitly."
             ],
@@ -54782,7 +54782,7 @@
           "'What day comes after Sunday? Does the week just stop?' (cyclic structure)",
           "'Which is longer, a week or a month? How do you know?' (nesting)"
         ],
-        "correctAnswer": "Names the day after and before Wednesday without reciting from Sunday; places a month within the year (start/middle/end); uses the calendar to count on three days and names both the date and the weekday — showing days sit inside weeks inside months inside the year.",
+        "correctAnswer": "Names the day after and before Wednesday without reciting from Sunday; places a month within the year; uses a calendar to count on three days and names both date and weekday. Relates days, weeks, months and years while recognising that a week can cross a month boundary.",
         "errorPatterns": [
           {
             "kind": "developmental",
@@ -54795,7 +54795,7 @@
           {
             "kind": "developmental",
             "pattern": "Doesn't grasp the nesting — treats week, month and year as unrelated, or a year as vaguely 'a long time'",
-            "nextMove": "Do not reteach or confront this — the nested sense of time units firms up with age. Instead, build the nested structure visually — days inside a week-row, weeks inside a month-grid, months along a year-strip — and use ordering tasks ('which are shorter than a week?').",
+            "nextMove": "Practise the related units visually: days in a week-row and calendar month, months along a year-strip. Show a week spanning two month pages; weeks are not required to fit exactly inside months. Compare durations with concrete dates rather than re-drilling the chant.",
             "distractor": null,
             "revealedBy": "Can't locate a birthday month within the year, or says a week is longer than a month",
             "reteachPrerequisiteId": null
@@ -54811,7 +54811,7 @@
         ],
         "responseLevels": {
           "gap": "Can only recite the sequence from the start, if at all; shows no sense of nesting or of the cycle.",
-          "full": "Uses days and months functionally (any starting point, both directions), grasps the nesting (days in weeks in months in a year) and the cycle (the week/year repeats), and uses a calendar to locate and count dates.",
+          "full": "Uses days and months functionally from different starting points in both directions, relates their durations without treating every week as contained within one month, understands repeating weeks/years, and uses a calendar to locate and count dates.",
           "partial": "Names days/months in order and answers 'what's next' from a running start, but stumbles going backwards, jumping in from the middle, or relating weeks/months/years."
         },
         "diagnosticPrompt": "Use a real calendar and routine talk, listening for functional USE rather than recitation: (1) 'Today is Wednesday — what day will it be tomorrow? What day was it yesterday?' (2) 'What month is your birthday in? Is that near the start or the end of the year?' (3) Using a January calendar: 'Your party is on Saturday the 6th. Three days after the party you go swimming — point to that date and tell me the day.'",
@@ -75333,7 +75333,7 @@
             ],
             "learnerActions": [
               "Work a mixed set of three-digit additions and subtractions, including several across-a-zero subtractions.",
-              "For 170+80, choose the correct result and explain why '15 tens' (a two-digit entry in the tens column) is wrong — ten of those tens must become a hundred (250).",
+              "For 170 + 80, keep the original hundred visible: 170 is 1 hundred and 7 tens, and adding 8 tens yields 1 hundred and 15 tens, a valid unregrouped representation of 250. A compact H-T-O numeral cannot place 15 as one tens digit; exchange 10 tens for an additional hundred to write 2 hundreds and 5 tens, or 250.",
               "Fill in the decomposition of 402 as 300+90+12 and use it to complete 402−137.",
               "Check each answer by estimating and, where possible, by the inverse operation."
             ],
@@ -76447,7 +76447,7 @@
         "poeTask": null,
         "probeDeeper": [
           "You found 3. In this story, is 3 a part or the whole? How do you know?",
-          "What's your evidence that 9 + 3 and 12 − 9 have the same answer?",
+          "Why is the missing number in 9 + ? = 12 the same as the answer to 12 − 9? Show how both ask for the missing part.",
           "What if it were 12 − 3 instead? Would counting up still be the quick way, or would counting back be quicker — and why?",
           "If I tell you that 8 + 5 = 13, what subtraction could you answer straight away?"
         ],
@@ -97004,7 +97004,7 @@
           {
             "title": "The 'past' to 'to' switch at the bottom of the clock",
             "feedback": [
-              "If a learner gives a '35 past three' style answer for a left-side time, remind them they have crossed the bottom of the clock onto the 'to' side, and count the minutes back to the next hour (to four).",
+              "Thirty-five minutes past three and twenty-five minutes to four are equivalent. Accept the time value, then ask for the next-hour to-form and count the 25 minutes remaining when practising that representation.",
               "Check the named hour: on the 'to' side, we name the hour the hands are heading toward, not the one just left behind.",
               "If an interactive clock is available, moving the minute hand across the 6 and watching 'twenty-five past' flip to 'twenty-five to' — with the named hour advancing — makes the switch visible; otherwise trace it with a finger on a geared clock."
             ],
@@ -97016,7 +97016,7 @@
               "Split the clock down the middle: the right-hand side is 'past', the left-hand side is 'to'.",
               "Watch (or move the minute hand) as it travels from twenty-five past across the 6 and up the left side. As it crosses the bottom, start counting the minutes BACK to the next hour instead of forward.",
               "Note that once past the half hour, the named hour becomes the NEXT hour, and the hour hand moves over halfway between the two numbers toward it.",
-              "Read twenty-five to four: minute hand on the 7, hour hand over halfway from 3 to 4 — and say why it is 'to four' and not '35 past three'."
+              "Read twenty-five to four with minute hand on 7 and hour hand over halfway from 3 to 4. Explain that it is the same time as thirty-five minutes past three; the to-form names the next hour and minutes remaining."
             ],
             "intendedInsight": "After half past, we count the minutes remaining until the NEXT hour and name that next hour; the hour hand sits over halfway between the current and next number to show this."
           },
@@ -97115,10 +97115,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "After the half hour, keeps counting 'past' instead of switching to 'to' — reads twenty-five to four as 'thirty-five minutes past three'",
+            "pattern": "Cannot express a correct after-half-hour reading in the requested next-hour to-form. Thirty-five minutes past three correctly names the same time as twenty-five to four; assess whether the learner can translate between them when asked.",
             "nextMove": "Split the clock right = 'past' / left = 'to'; after the 6, count the minutes back to the next hour.",
             "distractor": null,
-            "revealedBy": "Gives a '35 past' style answer for a left-side (to) time",
+            "revealedBy": "When explicitly asked how many minutes remain until four at 3:35, cannot determine 25 minutes or names the wrong next hour. A valid 35 past reading alone is not an error.",
             "reteachPrerequisiteId": "mt_0XxyaQLRhn"
           },
           {
@@ -97133,7 +97133,7 @@
         "responseLevels": {
           "gap": "Reads the minute-hand numeral as the minutes; cannot use 'to'; puts the hour hand on a number.",
           "full": "Reads and writes times to five minutes on both sides (past and to), including quarter past/to, places the hour hand correctly between numbers, names the correct hour for 'to' times, and translates analogue ↔ words ↔ digital for a new time.",
-          "partial": "Reads 'past' times to five minutes correctly, but keeps counting past after the half hour, confuses quarter to/past, or mislocates the hour hand for 'to' times."
+          "partial": "Reads past-times correctly but needs support to translate to a requested next-hour form, confuses quarter to with quarter past, or mislocates the hour hand. Accepts numerically equivalent past readings while assessing the required translation separately."
         },
         "diagnosticPrompt": "Interpret, then translate. (Interpret) Show a clock at 3:25 — minute hand on 5, hour hand just past 3: 'What time is this? What is each hand telling you?' Then a clock at quarter to 4 — minute hand on 9, hour hand nearly at 4: 'And this one?' (Translate) Blank clock: 'Draw the hands to show twenty to four. Then write quarter past 9 in numbers.'",
         "whatMakesItDiscriminate": "The 3:25 item catches reading the minute-hand numeral directly ('five past'); the quarter-to-4 and twenty-to-four items catch the 'to' switch, the next-hour rule, and the hour-hand position — a child can read o'clock and half past yet fail all of these."
@@ -113104,7 +113104,7 @@
           "partial": "Handles numbers without awkward zeros but slips on placeholders or on comparisons that turn on a middle place."
         },
         "diagnosticPrompt": "Watch across forms. 'Read 403,072 aloud, then write it in expanded form. Now compare 548,301 and 543,801 with < or >. Then write “four hundred thousand and seven” as a numeral.' Watch the placeholder zeros and which place the comparison turns on.",
-        "whatMakesItDiscriminate": "403,072 and 'four hundred thousand and seven' both hinge on placeholder zeros, exposing period-reading and concatenation errors; the comparison 548,301/543,801 differs only at the thousands place, so a child scanning from the wrong end picks wrongly."
+        "whatMakesItDiscriminate": "403,072 and 'four hundred thousand and seven' both hinge on placeholder zeros, exposing period-reading and concatenation errors; the comparison 548,301/543,801 has its first decisive difference at the thousands place (the hundreds digits also differ), so a child scanning from the wrong end picks wrongly."
       },
       "sources": [
         {
@@ -130028,7 +130028,7 @@
             "pattern": "Compares digit-by-digit from the right, or by which number has a bigger digit somewhere, instead of from the highest place",
             "nextMove": "Right-align the numbers in place-value columns and compare from the leftmost place, stopping at the first place that differs.",
             "distractor": null,
-            "revealedBy": "3,472 vs 3,427 is judged by the ones/tens rather than the hundreds; ordering is scrambled.",
+            "revealedBy": "3,472 vs 3,427 is judged by the ones (2 vs 7), rather than the first differing place, the tens (7 vs 2); thousands and hundreds tie.",
             "reteachPrerequisiteId": "mt_jY7uf0Cb7o"
           },
           {
@@ -130041,7 +130041,7 @@
           }
         ],
         "responseLevels": {
-          "gap": "Compares by digit-count or a stray big digit; ordering ignores place value.",
+          "gap": "Compares by a stray big digit or ignores the highest differing place; ordering ignores place value. Digit-count comparison itself is valid for non-negative whole numbers without leading zeros when linked to the extra highest place.",
           "full": "Compares from the highest differing place, orders numbers to 10,000 reliably, and justifies with place-value reasoning.",
           "partial": "Orders clearly different numbers but errs on same-digit or different-length cases."
         },
@@ -180716,7 +180716,7 @@
             ],
             "intendedInsight": "Coordinate the minute scale and hour-hand position to read and write ordinary analogue and digital time to the nearest minute.",
             "feedback": [
-              "Reads 7:43 as 8:43 because the hour hand is near 8.",
+              "If the learner reads 7:43 as 8:43 because the hour hand is near 8, trace back to the last hour passed:7. Keep the minutes 43 and check another face before concluding the hour-hand relation is secure.",
               "Ask for an explanation and a check, rather than treating one correct answer as mastery."
             ],
             "rationale": "Claim-aligned proposed activity: contrasting the target quantity with a near miss makes the operation visible. Retained citations provide historical context; this activity has not been experimentally validated.",
@@ -201544,7 +201544,7 @@
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Doesn't prioritise place value for magnitude — spreads the digit-sum evenly or fills low places, so the number isn't the largest (e.g. 333,300 or 111,138)",
+            "pattern": "Doesn't prioritise place value for magnitude — spreads the digit-sum evenly or fills low places, so the number isn't the largest (e.g. 333,330 or 111,138)",
             "nextMove": "Compare two candidates place by place: a 9 in the hundred-thousands beats any arrangement with a smaller leading digit. Make the leading-place-dominates idea explicit.",
             "distractor": null,
             "revealedBy": "The number sums to 15 but isn't maximised; big digits aren't front-loaded.",
@@ -201560,10 +201560,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Compares/orders large numbers by first digit or digit-count alone, misaligning place values",
+            "pattern": "Compares large numbers by an isolated digit or ignores the first differing place when lengths tie, misaligning place values. Comparing digit lengths is valid for non-negative whole numbers written without leading zeros.",
             "nextMove": "Line numbers up by place-value columns (right-aligned) and compare from the highest place down.",
             "distractor": null,
-            "revealedBy": "Orders 90,000; 9,000; 900,000 incorrectly, or calls a number with more digits automatically smaller/larger by looking at the wrong end.",
+            "revealedBy": "Orders 90,000; 9,000; 900,000 incorrectly, or compares same-length numbers from the wrong end. Correctly ordering this mixed-length trio by digit count is valid; ask for the corresponding highest-place explanation.",
             "reteachPrerequisiteId": "mt_JwP9QFv6gQ"
           }
         ],
