@@ -1,13 +1,17 @@
 # Runnable examples
 
-The shared player library includes two authored packages:
+The shared player library includes these authored packages:
 
 - [Cube volume](../../../../player/lessons/cube-volume): layers and units, 3D support,
   exact submitted counts, corrected work, assisted versus independent attempts.
 - [Croatoan clues](../../../../player/lessons/croatoan-clues): visual historical intro,
   map navigation, source provenance, current scene/source context and authored narration.
+- [The Moon’s daytime visit](../../../../player/lessons/moon-daytime): reused 3D space
+  and observer views; separate teaching demonstrations and child activities; animated
+  light journeys, canonical spoken/written checks, voice/button answer provenance,
+  paused/resumed work and recorded support.
 - [Equal-parts starter](../../../../player/packages/authoring-tools/template): a minimal
-  third-package example; author research and pedagogy before treating it as a lesson.
+  additional-package example; author research and pedagogy before treating it as a lesson.
 
 Use these mechanisms without copying their topics or imposing their interactions
 on another teaching goal. All run in the same player and use the same voice stack.

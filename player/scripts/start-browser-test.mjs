@@ -40,7 +40,7 @@ try {
   });
   for (const stage of ['voice', 'microphone', 'microphone-error']) {
     await b.send('Page.navigate', { url: service.origin });
-    await b.until('document.querySelectorAll(".lesson-card").length===2');
+    await b.until('document.querySelectorAll(".lesson-card").length===3');
     await b.evaluate(`(async () => {
       window.stoppedTracks = 0;
       window.microphoneRequests = 0;
@@ -71,6 +71,12 @@ try {
       document.querySelectorAll('.lesson-open')[1].click();
     `);
     await b.until("document.querySelector('#status').textContent==='Ready'");
+    // Both covers prepare an opening without speaking or starting a scene.
+    await b.until("document.querySelector('#messages').textContent.length===0");
+    for (let i = 0; i < 100 && starts < 2; i++)
+      await new Promise((resolve) => setTimeout(resolve, 20));
+    assert.equal(starts, 2);
+    const prepared = starts;
     const label = await b.evaluate("document.querySelector('#start').textContent");
     await b.evaluate('window.releaseStart()');
     // A subsequent browser task runs after the released continuation's microtasks.
@@ -81,13 +87,14 @@ try {
     assert.equal(await b.evaluate("document.querySelector('#start').textContent"), label);
     assert.equal(await b.evaluate('window.stoppedTracks'), stage === 'microphone' ? 1 : 0);
     assert.equal(await b.evaluate('window.microphoneRequests'), stage === 'voice' ? 0 : 1);
-    assert.equal(starts, 0);
+    assert.equal(starts, prepared);
     // The replacement lesson still starts when the learner explicitly presses Start.
     await b.evaluate('navigator.mediaDevices.getUserMedia = async () => ({getTracks:()=>[]})');
     await b.evaluate("document.querySelector('#start').click()");
     await b.until("document.querySelector('#start-cover').hidden");
     await b.until("document.querySelector('#messages').textContent.length>0");
-    assert.equal(starts, 1);
+    // onStart can change scene state, requiring a fresh opening.
+    assert.ok(starts === prepared || starts === prepared + 1);
     starts = 0;
   }
   assert.deepEqual(b.errors, []);

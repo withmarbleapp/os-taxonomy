@@ -1,7 +1,7 @@
 # Marble local player — developer preview
 
-A local-first desktop shell and web player for portable interactive lessons. Cubes
-and Croatoan clues share one tutor, speech connection, package loader and log store.
+A local-first desktop shell and web player for portable interactive lessons. Cubes,
+Croatoan clues and The Moon’s daytime visit share one tutor, speech connection, package loader and log store.
 This directory is the authoritative implementation in the os-taxonomy repository.
 The audio authoring skill references it directly; exported starters are generated
 artifacts, not another maintained implementation. Original prototypes remain separate.
@@ -160,3 +160,33 @@ See [device-inference.md](docs/device-inference.md). Existing Ollama/LM Studio
 preferences migrate to On this device when the service starts. External server
 adapters remain internal compatibility code; the Settings UI uses the bundled
 engine and managed model instead.
+
+### Screenshot-only visual learner experiment
+
+With a local vision model in Ollama and a configured tutor, run from `player/`:
+
+```sh
+VISUAL_LEARNER_MODEL=qwen3.5:4b node scripts/moon-visual-learner.mjs --probe
+VISUAL_LEARNER_MODEL=qwen3-vl:4b-instruct VISUAL_LEARNER_STEPS=12 node scripts/moon-visual-learner.mjs
+```
+
+The learner receives screenshots (two frames 2.8 seconds apart), delivered tutor
+text and its own recent actions. It chooses replies, normalized mouse coordinates,
+drags, waits or stopping. It receives no DOM, lesson source, snapshots, geometry,
+correct-answer flags or tutor tools. Browser setup and text-reply transport use
+the host UI; all lesson manipulation uses coordinate mouse input. Tutor settings
+are copied to an isolated temporary service and the main app is not reconfigured.
+
+This uses silent fixture audio and supplies spoken text as a listening proxy; it
+does not test audio comprehension, ASR, child behaviour or learning efficacy.
+Recorded images and actions live under `artifacts/moon/visual-learner/`. Diagnostic
+journals are saved separately and are never included in learner inference.
+Inspect attempted actions and resulting screens: valid JSON is not proof of
+successful interaction. An action limit ends the experiment, not the lesson.
+
+Use `VISUAL_LEARNER_OPENING_REPLY='Okay.'` only for a clearly labelled trial
+with an initial acknowledgment supplied by the harness. The remaining actions
+are still model-selected. `visual-learner-report.mjs RUN_DIRECTORY` builds a
+local HTML review with screenshots, tutor words and actions. A model's ability
+to locate controls does not establish that it behaves like a learner; inspect
+passive waiting, repeated clicks and missed conversational questions separately.

@@ -25,7 +25,17 @@ const settingsUI = createSettings({
   request,
   getSettings: () => settings,
   setSettings: (value) => {
+    const tutorChanged = ['provider', 'model', 'endpoint'].some(
+      (key) => settings[key] !== value[key],
+    );
     settings = value;
+    if (!tutorChanged) return;
+    session?.discardOpening();
+    if (
+      !$('start-cover').hidden &&
+      ['claude', 'codex', 'local', 'device'].includes(settings.provider)
+    )
+      session?.prepareOpening();
   },
   voice: browserVoice,
   fixture: config.speechBackend === 'fixture',
@@ -318,6 +328,7 @@ async function launch(pkg) {
         .catch((e) => status('Could not save session log: ' + e.message));
     },
   });
+  if (['claude', 'codex', 'local', 'device'].includes(settings.provider)) session.prepareOpening();
   status(settings.provider === 'preview' ? 'Explore mode · choose a tutor in Settings' : 'Ready');
 }
 async function send(text) {

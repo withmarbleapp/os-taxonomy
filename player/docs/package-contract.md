@@ -6,10 +6,23 @@
 
 `teaching.json` contains learning goals, adaptive-general focuses linked to goals,
 short tutor guidance, optional authored `teaching` resources (id, state conditions,
-action, args, text), observation/evidence event names and selfEvaluation skills.
+action, args, text, plus optional whenToUse and learnerContribution),
+observation/evidence event names and selfEvaluation skills. `explain_model` exposes
+the authored moment IDs and their instructional uses directly in its tool schema.
+Separate tutor demonstrations (provided information) from child activities
+(manipulation or committed work). Stage a moment completely in one action and
+report the current mode, visible supports and available learner actions.
 The resources are available teaching moves, not a mandatory itinerary. Put
 research, curriculum provenance, limitations and misconception handling here or
 in accompanying source notes. Avoid embedding learner records.
+
+The shared tutor system prompt owns conversational flow, explanation and confidence
+reflection, continuation offers and child-chosen stopping. Keep tutorGuidance
+specific to the subject, evidence and model tools. Supply optional deeper aspects
+and practice opportunities with prerequisites, so the tutor can offer relevant
+uncovered material. Do not duplicate general teaching policy, prescribe a closing
+sequence or treat confidence as permission to finish. Confidence prompts should
+not assume the session is ending.
 
 `experience.json` contains protocolVersion, releaseId, description, stateSchema,
 actions with JSON input schemas and named event schemas. State must distinguish
@@ -35,6 +48,32 @@ revision, source (learner/agent/system), name and data. An action command carrie
 protocolVersion, sessionId, releaseId, commandId, expectedRevision, name and args.
 Return accepted, snapshot, and an error when rejected. Reject stale revisions and
 illegal commands. Publish the matching update before returning the command result.
+
+An accepted domain action may return `speech` (1–650 characters). The shared tutor
+runtime speaks this authored text after acknowledgement. By default it ends the
+turn, without another inference rewriting it. A demonstration can additionally
+return `continueAfterSpeech: true`: once narration finishes, the runtime asks the
+tutor for a meaningful learner handoff in the same turn. Questions and task
+instructions should retain the default wait. Interruption cancels continuation.
+The opening introduction also continues into the first teaching move after Start;
+its silent prefetch must therefore contain only the introduction, not a question. This is useful for coherent quizzes and staged
+explanations; actions without it retain the normal infer-again behaviour. Choose
+one narration path for a moment: direct action speech or an `explain_model`
+resource, rather than exposing duplicate routes.
+
+For a quiz, derive screen text, action speech and button labels from one question
+object. Expose its id, exact question, choices and awaiting/paused/answered status in view
+context. Keep the submitted response explicit after completion, rather than
+leaving the tutor to infer completion from an absent question. Spoken answers resolve that same question via a scene-bound action,
+using the same scoring as buttons and retaining the actual words and modality.
+Reject stale question ids. Agent-mediated voice commits use agent event source
+so they do not cancel their own tutor turn; provenance in the attempt still says
+voice. Provide an explicit way to leave unanswered work without inventing a
+response. Preserve previous attempts and assistance on retries.
+
+Describe screen contents separately from a represented character's perceptions.
+For example, all bodies can appear in a space diagram while the Sun is below the
+explorer's horizon. Geometry values alone are not a description of the screen.
 
 The bridge supplies instruction(short scene label), narrate(authored text),
 intent(learner request) and viewChanged(). Do not duplicate microphone capture,

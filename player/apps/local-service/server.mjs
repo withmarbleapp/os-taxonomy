@@ -17,7 +17,11 @@ import {
 } from '../../packages/authoring-tools/archive.mjs';
 import { safePath } from '../../packages/lesson-contract/package.mjs';
 import { validate } from '../../packages/lesson-contract/contracts.mjs';
-import { tutorSystem, teachingTools } from '../../packages/teaching-runtime/session.mjs';
+import {
+  tutorSystem,
+  teachingTools,
+  teachingToolsFor,
+} from '../../packages/teaching-runtime/session.mjs';
 import { providerAvailability } from '../../packages/providers/availability.mjs';
 import { infer, decisionSchema } from '../../packages/providers/index.mjs';
 import { createModelStore } from '../../packages/voice/model-store.mjs';
@@ -402,7 +406,7 @@ export async function createService({
             if (!Array.isArray(input.messages) || input.messages.length > 60)
               throw Error('Invalid conversation');
             const tools = [
-              ...teachingTools,
+              ...teachingToolsFor(p),
               ...p.experience.actions.filter((a) =>
                 input.context.snapshot.availableActions.includes(a.name),
               ),
@@ -421,7 +425,7 @@ export async function createService({
                 settings,
                 system: tutorSystem(p),
                 tools,
-                standingTools: [...teachingTools, ...p.experience.actions],
+                standingTools: [...teachingToolsFor(p), ...p.experience.actions],
                 messages: input.messages,
                 context: input.context,
                 signal: controller.signal,

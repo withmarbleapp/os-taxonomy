@@ -34,7 +34,7 @@ try {
     mobile: false,
   });
   await b.send('Page.navigate', { url: service.origin });
-  await b.until("document.querySelectorAll('.lesson-card').length===2");
+  await b.until("document.querySelectorAll('.lesson-card').length===3");
   await b.evaluate("document.querySelector('#settings-open').click()");
   await b.until("document.querySelector('#claude-status').textContent==='Not installed'");
   assert.equal(
@@ -85,7 +85,7 @@ try {
   await b.send('Network.enable');
   await b.send('Network.setBlockedURLs', { urls: ['https://*'] });
   await b.send('Page.reload');
-  await b.until("document.querySelectorAll('.lesson-card').length===2");
+  await b.until("document.querySelectorAll('.lesson-card').length===3");
   await b.evaluate("document.querySelector('#settings-open').click()");
   await b.until(
     "document.querySelector('#voice-status').textContent.startsWith('Voice downloaded')",

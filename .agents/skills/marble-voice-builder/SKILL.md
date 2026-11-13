@@ -32,45 +32,55 @@ and the limits of the model. Keep child information out of reusable research.
 
 ## Design the conversation
 
-Apply these principles as flexible teaching intentions, not five locked phases:
+The shared [tutor system prompt](../../../player/packages/teaching-runtime/session.mjs)
+owns the conversational policy: introduction, progressive teaching and assessment,
+own-words explanation, confidence reflection, continuation offers and child-chosen
+stopping. Do not reproduce that policy as lesson stages, closing instructions or
+per-lesson tutor prompts. In particular, confidence does not trigger completion.
 
-- **State the intention.** In one or two child-friendly sentences, say what the
-  child will learn and why this activity helps. Then begin doing it together.
-- **Scaffold without lecturing.** Explain enough for a small next question. Bring
-  the child in progressively: count, point, predict, compare, construct or explain.
-  Listen and choose the next move from that answer. An acknowledgement is not
-  evidence that the child can do the skill. Avoid repeated readiness questions.
-- **Try, adapt and help.** Offer a new problem with less support when their work
-  suggests readiness. Adjust difficulty for a purpose. A mistake identifies what
-  needs attention: recognise what is right, correct the actual error, use a
-  smaller question or demonstration, allow revision, and later check transfer.
-  Teaching and checking can alternate throughout the conversation.
-- **Validate through explanation.** Ask the child how or why when their reasoning
-  is genuinely uncertain. Do not re-quiz a count they already entered correctly,
-  give the explanation and then ask them to repeat it, or require a set number
-  of questions. Correct performance and a reasoned explanation are different
-  evidence; assisted repair is not a fresh independent success.
-- **End with self-assessment.** Invite the child to say whether they feel capable
-  of the skills worked on. Use their own words, accept uncertainty or declining,
-  and save confidence separately from performance and interpreted understanding.
-  Respect an explicit wish to stop without imposing a closing questionnaire.
+Supply the topic-specific material the tutor needs to apply that policy:
+
+- A clear learning intention and an approachable first visual relationship.
+- Evidence criteria for correct work and a meaningful own-words explanation,
+  including what assistance or repetition cannot establish.
+- Teachable moments: what the tutor must make visible, what the child can
+  meaningfully notice or do, and what evidence that contribution can provide.
+  Distinguish their evidence while connecting demonstrations to child-led
+  investigations: what can the child try next, and what might call for more help?
+- A subject-specific difficulty map: prerequisite relationships, small checks of
+  each relationship, visible support levels, and evidence that warrants skipping
+  or fading support. Do not make a full oral explanation the first or only check.
+- Likely misconceptions, smaller questions, demonstrations and repair options.
+- Candidate fresh problems, further practice and supported deeper aspects,
+  with their prerequisites and when they are useful. Make these discoverable
+  options, not a coverage checklist or required sequence.
+- Skills the child can reflect on, with optional neutral confidence questions
+  that do not presume the session is ending.
 
 The agent owns instructional choices. The experience owns physical/mathematical
 facts, legal actions, scoring, current submissions and support provenance. The
-runtime owns voice, turn-taking, interruption, acknowledged tools and logging.
-Do not turn a lesson-specific flow or a previous failure into a universal gate.
-Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md) for examples of
-branching decisions, evidence and concise child-facing language.
+runtime owns shared conversational policy, voice, turn-taking, acknowledged tools
+and logging. Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md) for
+subject-specific evidence and teaching options that support these decisions.
 
 Before implementation, read [interaction-and-scaffolding.md](references/interaction-and-scaffolding.md).
-Map the learning relationships to focused situations, direct object interactions,
-agent tools and observable evidence. Plan a representative polished scene using
+Map each learning relationship to a teachable moment before choosing tools:
+the learning need, what is shown or animated, what is held fixed, the child's
+contribution, visible outcome, help and transfer. Interweave showing and doing
+throughout teaching: demonstrate enough to enable an action, let the child
+investigate, and use what happens to decide whether to show more or return control.
+Design these connections without imposing a fixed alternation or activity count.
+Give the tutor pedagogical tools
+that stage those moments completely; do not expect it to assemble a demonstration
+from unrelated camera, highlight and animation switches. Make the available
+moments and their uses discoverable in tool descriptions and current scene context.
+Keep ordinary navigation separate from teaching and evidence. Plan a representative polished scene using
 [visual-design.md](references/visual-design.md); do not defer art direction until
 all activities are built. A collection of controls is not an interaction design.
 
 Present a compact concept: the goal, illustrative opening, visual relationship,
 example back-and-forth, supports, candidate fresh problems, what an explanation
-would establish, and closing confidence questions. Keep the concept focused on
+would establish, and possible further exploration or practice. Keep the concept focused on
 teaching and the interactive representation. Ask for refinement and confirm the concept before
 full lesson implementation. Existing explicit approval counts; do not restart
 an approval ceremony. A request to revise an agreed lesson permits routine fixes.
@@ -175,7 +185,11 @@ and exact model outcomes, then inspect the actual browser and responsive states.
 Use contrasting learner traces: confident prior knowledge, uncertainty, a specific
 mistake, corrected work, an explanation, stopping and self-assessment. Different
 understanding should permit different next moves. A trace that always completes
-one route is not evidence of adaptation.
+one route is not evidence of adaptation. A synthetic tutor that calls every tool
+proves wiring, not that an actual tutor knows when to use the environment. Inspect
+whether uncertainty triggers an appropriate visible explanation and whether prior
+understanding can lead directly to meaningful child activity. Report live-model
+validation separately and do not treat verbal fluency as visual teaching.
 
 Verify latest submissions supersede old ones without erasing attempt history;
 help and exposed answers remain labelled assisted; navigation does not answer

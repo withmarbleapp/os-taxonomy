@@ -148,7 +148,7 @@ try {
     mobile: false,
   });
   await b.send('Page.navigate', { url: service.origin });
-  await b.until('document.querySelectorAll(".lesson-card").length===3');
+  await b.until('document.querySelectorAll(".lesson-card").length===4');
   await mkdir('artifacts', { recursive: true });
   await launch('Volume in layers');
   await b.until("document.querySelector('#walkie-chassis').dataset.phase==='idle'");
@@ -349,19 +349,19 @@ try {
   assert.equal(await b.evaluate('document.activeElement.id'), 'cancel-remove');
   await shot('remove-lesson');
   await b.evaluate("document.querySelector('#cancel-remove').click()");
-  assert.equal(await b.evaluate("document.querySelectorAll('.lesson-card').length"), 3);
+  assert.equal(await b.evaluate("document.querySelectorAll('.lesson-card').length"), 4);
   await b.evaluate(
     "document.querySelector('.lesson-remove').click(); document.querySelector('#confirm-remove').click()",
   );
   await b.until(
-    "!document.querySelector('#remove-lesson').open && document.querySelectorAll('.lesson-card').length===2",
+    "!document.querySelector('#remove-lesson').open && document.querySelectorAll('.lesson-card').length===3",
   );
   await b.send('Page.reload');
-  await b.until("document.querySelectorAll('.lesson-card').length===2");
+  await b.until("document.querySelectorAll('.lesson-card').length===3");
   assert.deepEqual(b.errors, []);
 
   console.log(
-    'PASS: cube wrong→correct revision; Roanoke source→scene focus; imported third lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
+    'PASS: cube wrong→correct revision; Roanoke source→scene focus; imported additional lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
   );
 } catch (e) {
   console.error('Browser errors', b.errors);

@@ -28,6 +28,30 @@ Chrome location can be set through `CHROME_PATH` for the bundled CDP helper.
    should be recognised rather than treated as the old error. A correct count
    should not be re-asked without a genuine reason. The model should not invent
    controls, completed actions, an inside cube or an unsupported visibility claim.
+   For visual teaching, check a child who says “I don't know”: does the real tutor
+   invoke the relevant visible moment, or merely recite the answer and quiz it?
+   Also check prior knowledge, requested manipulation, and help during an unfinished
+   task. Verify demonstrations are visible, activity controls are actually present,
+   and returning control preserves the current work and assistance history.
+   Check that a novice is offered unscored manipulation without explicitly asking for controls, and that a practice request activates useful practice rather than another oral recall question. Inspect several reflection opportunities for repeated stems, immediate re-checks and skill-by-skill questionnaires; synonym changes alone do not fix excessive assessment. Scripted tool calls alone do not validate these instructional decisions.
+   Include traces where a child gives an explanation naturally, needs prompting
+   to explain, feels unsure after correct work, feels confident with an uncovered
+   extension available, chooses more practice, declines reflection, and explicitly
+   stops before finishing the work. Check that confidence alone never causes
+   completion, continued work retains context, and explicit stopping is respected
+   without another question or offer. Evaluate these as shared tutor behavior;
+   do not fix failures by adding a separate ending policy to each lesson.
+   Also compare novice and strong-prior-knowledge traces against the authored
+   difficulty map: small supported checks should be available before whole-topic
+   synthesis, while established prerequisites can be skipped. Verify help stays
+   visible in supported checks and is removed only for intended transfer.
+   Follow the transitions between showing and doing: does a demonstration enable
+   a meaningful learner action, does an exploration outcome influence the next
+   teaching move, and does help return control on the same work? Include a trace
+   where an observation or difficulty during exploration motivates a focused
+   demonstration. Judge the reason for changing challenge or support, not just
+   tool usage or the number of activities. A lecture interrupted by oral quizzes,
+   or an activity launched without time to act, does not establish this interplay.
 5. When authorised, exercise actual PTT through recognition, the selected tutor,
    scene acknowledgement and synthesis. Verify hold/release, toggle, cancel,
    interrupting playback, late transcripts, missing services and provider errors.

@@ -4,7 +4,7 @@ import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { createInferenceEngine } from '../packages/inference/engine.mjs';
 import { loadDirectory } from '../packages/authoring-tools/archive.mjs';
-import { teachingTools, tutorSystem } from '../packages/teaching-runtime/session.mjs';
+import { teachingTools, teachingToolsFor, tutorSystem } from '../packages/teaching-runtime/session.mjs';
 import { createCubes } from '../lessons/cube-volume/model/cubes.mjs';
 import { validate } from '../packages/lesson-contract/contracts.mjs';
 const engine = createInferenceEngine({
@@ -27,7 +27,7 @@ try {
   const pkg = await loadDirectory(new URL('../lessons/cube-volume/', import.meta.url).pathname);
   const snapshot = createCubes().snapshot();
   const tools = [
-    ...teachingTools,
+    ...teachingToolsFor(pkg),
     ...pkg.experience.actions.filter((t) => snapshot.availableActions.includes(t.name)),
   ];
   const start = Date.now();
@@ -35,7 +35,7 @@ try {
   const result = await engine.infer({
     system: tutorSystem(pkg),
     tools,
-    standingTools: [...teachingTools, ...pkg.experience.actions],
+    standingTools: [...teachingToolsFor(pkg), ...pkg.experience.actions],
     onEvent: (event) => {
       if (event.type === 'inference_metrics') initialMetrics = event;
       console.log(JSON.stringify({ ...event, elapsedMs: Date.now() - start }));
@@ -59,7 +59,7 @@ try {
   const follow = await engine.infer({
     system: tutorSystem(pkg),
     tools,
-    standingTools: [...teachingTools, ...pkg.experience.actions],
+    standingTools: [...teachingToolsFor(pkg), ...pkg.experience.actions],
     messages: [
       { role: 'assistant', text: JSON.parse(result.arguments).text ?? '' },
       { role: 'user', text: 'What is a layer?' },

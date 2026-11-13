@@ -28,6 +28,31 @@ A table of possibilities is not an exhaustive decision tree. The agent may find
 another relevant response or teaching move. Use the child's reasoning and exact
 model facts; do not infer a misconception from garbled recognition alone.
 
+## Make difficulty and prerequisites explicit
+
+An adaptive conversation still needs a subject-specific progression. Describe
+which relationships make later tasks meaningful, what visible support each task
+retains, and what evidence warrants skipping or fading it. Provide small checks
+of individual relationships between demonstrations and exploration; a request for
+a whole-topic explanation should not be the only assessment option. A supported
+binary choice supplies narrow evidence, not mastery. For the Moon, reflected light
+at night supports the same mechanism by day, then horizon occlusion; predicting
+without light rays combines these relationships with less support. Treat this as
+a map of difficulty and repair options, not a mandatory route or turn count.
+
+Separate conceptual demand from support: applying a familiar relationship in a
+new setting and hiding its visual cues are two different changes. Describe both
+in the available tasks so a practice request need not become a harder test.
+Where useful, start from a familiar situation and offer controlled contrasts:
+change a meaningful condition while preserving the mechanism, making clear what
+changed and what stayed the same.
+
+For each learning opportunity, capture its prerequisite understanding, available
+support, narrow evidence and plausible next moves in the teaching brief and
+resources. Include what a mistake would call for and what would justify skipping
+ahead. This supplies the agent with a connected map rather than an unordered
+inventory of demonstrations and quizzes; no new rigid runtime schema is required.
+
 ## Three evidence channels
 
 1. **Observed work:** exact entries/actions, scoring, case and revision, with
@@ -57,11 +82,22 @@ an IVR-style menu of phrases. A natural question during help must not fail just
 because it contains a question mark. Preserve partial/interrupted speech status;
 only actually played speech may have been heard.
 
-## Closing
+## Material for reflection and continuation
 
-An explanation validates meaning when there is a real uncertainty; it is not a
-ritual after every action. A self-assessment might ask “How do you feel about
-counting a whole layer on your own?” Only ask about worked-on skills. Respect
-“not yet”, uncertainty and stopping. A reflection does not require another maths
-test. If the child asks to practise more, preserve the conversation and update
-the evidence rather than returning to a mandatory introduction.
+The shared tutor prompt owns when to invite explanation, confidence reflection,
+continuation and stopping. Lesson authors provide the evidence and opportunities,
+not a second copy of that flow. Define what an explanation would show in this
+topic, so the tutor can recognise one already given or invite one when missing.
+
+For cubes, an explanation might connect the cubes in one complete layer with
+repeated addition or multiplication across all layers. A correct total alone
+cannot establish that reasoning. Optional deeper material includes a real buried
+cube and why it is included in the middle layer; optional practice uses another
+block. Describe prerequisites and available resources so the tutor can choose
+an unexplored aspect from the conversation, without requiring every option.
+
+Confidence prompts should refer to worked-on skills without assuming an ending:
+“How do you feel about counting a whole layer on your own?” Avoid “Before we
+finish” or instructions to finish after recording confidence. Understanding,
+confidence and a desire to stop remain separate. Do not require special phrases
+or impose a closing questionnaire in the lesson content.

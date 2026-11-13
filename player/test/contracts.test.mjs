@@ -7,10 +7,10 @@ import { zipSync, strToU8 } from 'fflate';
 import { pack, unpack, install } from '../packages/authoring-tools/archive.mjs';
 import { safePath } from '../packages/lesson-contract/package.mjs';
 import { createService } from '../apps/local-service/server.mjs';
-test('both lessons roundtrip and install idempotently', async () => {
+test('bundled lessons roundtrip and install idempotently', async () => {
   const temp = await mkdtemp(join(tmpdir(), 'marble-test-'));
   try {
-    for (const id of ['cube-volume', 'croatoan-clues']) {
+    for (const id of ['cube-volume', 'croatoan-clues', 'moon-daytime']) {
       const bytes = await pack('lessons/' + id);
       assert.equal(unpack(bytes).manifest.id, id);
       const a = await install(bytes, temp),
@@ -40,7 +40,8 @@ test('service isolates opaque lesson frames from privileged APIs', async () => {
     assert.equal((await fetch(s.origin + '/api/library')).status, 403);
     const headers = { 'x-marble-token': s.token },
       list = await (await fetch(s.origin + '/api/library', { headers })).json();
-    assert.equal(list.length, 2);
+    assert.ok(list.some((p) => p.manifest.id === 'moon-daytime'));
+    assert.equal(list.length, 3);
     const frame = await fetch(s.origin + list[0].url);
     assert.match(frame.headers.get('content-security-policy'), /sandbox allow-scripts/);
     assert.match(frame.headers.get('content-security-policy'), /connect-src 'none'/);

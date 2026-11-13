@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-daytime",
+  "releaseId": "moon-daytime-lesson-v7",
+  "experienceReleaseId": "moon-daytime-v7",
+  "curriculum": [
+    "mt_PiWZA8Z0ZJ",
+    "mt_15FduGRf5c"
+  ],
+  "introduction": {
+    "objective": "Find out why we can sometimes see the Moon in the daytime sky.",
+    "successCriteria": "Explain where moonlight comes from and why the Sun and Moon can both be in our sky."
+  },
+  "learningGoals": [
+    {
+      "id": "reflected-light",
+      "objective": "Explain that sunlight reaches the Moon and reflects towards our eyes.",
+      "criteria": [
+        {
+          "id": "light-journey",
+          "lookFor": [
+            "Own words connect sunlight reaching the Moon with light from the Moon reaching our eyes.",
+            "Distinguishes the Moon reflecting light from making its own light."
+          ],
+          "notEnough": [
+            "Choosing the correct three objects after rays reveal the answer.",
+            "Repeating the tutor’s sentence without explaining its meaning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daytime-moon",
+      "objective": "Explain that the Moon can be above our horizon at the same time as the Sun.",
+      "criteria": [
+        {
+          "id": "shared-sky",
+          "lookFor": [
+            "Connects daytime to the Sun above our horizon and recognises the Moon can be above it too.",
+            "Explains that daytime does not turn the Moon off or make it disappear.",
+            "Uses a different daylight arrangement to reason whether the Moon is above or below the horizon."
+          ],
+          "notEnough": [
+            "A lucky yes/no prediction.",
+            "Merely opening the sky view.",
+            "Saying above the horizon guarantees visibility in every real sky."
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": {
+    "mode": "adaptive-general",
+    "focuses": [
+      {
+        "id": "light",
+        "goals": [
+          "reflected-light"
+        ]
+      },
+      {
+        "id": "horizon",
+        "goals": [
+          "daytime-moon"
+        ]
+      },
+      {
+        "id": "explanation",
+        "goals": [
+          "reflected-light",
+          "daytime-moon"
+        ]
+      }
+    ]
+  },
+  "selfEvaluation": {
+    "skills": [
+      {
+        "id": "moonlight",
+        "description": "Explain where the Moon’s light comes from.",
+        "prompt": "How do you feel about explaining where moonlight comes from?",
+        "focuses": [
+          "light"
+        ]
+      },
+      {
+        "id": "daytime",
+        "description": "Explain how the Moon can be in our daytime sky.",
+        "prompt": "How do you feel about explaining why we can see the Moon during the day?",
+        "focuses": [
+          "horizon",
+          "explanation"
+        ]
+      }
+    ]
+  },
+  "observationEvents": [
+    "response_committed"
+  ],
+  "evidenceEvents": [
+    "response_committed"
+  ],
+  "observationPrompt": "Respond to the latest committed answer and its assistance/provenance. A binary choice establishes only the checked relationship. Navigation is not evidence. Use current scene facts to give focused feedback or help.",
+  "teaching": [],
+  "tutorGuidance": "Use this map adaptively; the opening daytime sky poses the question, not proof of prior understanding. Each show_moment narrates a short explanation and returns control to you within the same turn; choose a small learner contribution next. Each check speaks its own exact on-screen question. You choose when to use them and respond to the learner afterwards.\n1. REFLECTED LIGHT. If unfamiliar, show night_light. Child can follow Sun → Moon → eyes, or construct build_light_path with help. Evidence: explains sunlight bouncing from the Moon; “like a mirror” with the route is useful reasoning, not a cue for more basic recall. Seeing objects alone is insufficient.\n2. SAME ROUTE BY DAY. After reflection is familiar, show daytime_light. Check day_night or moon_visible in day/night situations with visible rays. Evidence: distinguishes the explorer’s day/night from sunlight reaching the Moon; daylight does not stop reflection.\n3. BLOCKED VIEW. Show blocked_light when investigating absence. Sunlight still reaches Moon; Earth blocks Moon → explorer. Child can use turn_earth to find a position where moonlight reaches the explorer, then inspect their sky. Night or day meets that target. Interpret the result and connect it to the question. Supported moon_visible checks provide small evidence.\n4. TRANSFER. Once the route and horizon relationship are secure, predict_sky hides rays in fresh geometry. A meaningful own-words explanation connects reflection and horizon. Skip familiar ideas when reasoning warrants it; return to light_journey or horizon on the CURRENT arrangement when help is needed.\nFor a clear spoken answer, use answer_check with current question id and the learner’s words; ambiguity calls for clarification. Let a learner leave an activity without fabricating an answer. Science: the Moon reflects rather than produces light, roughly like a diffuse reflector, not a polished mirror. Above-horizon geometry alone cannot guarantee visibility in a real sky; glare, clouds and illumination are beyond this model. No phase cycle, eclipse or date forecast is supported.\nTo designate the horizon, say “the rose-colored line labeled Horizon”, not just “this line”. Use show_moment horizon if the marker is not shown, then refer to its actual position: through the explorer in space, along the sky–ground boundary in the sky view. Consult horizonMarker.shown before claiming it is on screen."
+}

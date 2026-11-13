@@ -6,6 +6,61 @@ stays fixed; what the child can change; visible consequence; a useful prompt;
 evidence of understanding; possible support and fresh transfer. This is an
 inventory of teaching opportunities, not a sequence every child must complete.
 
+## Design around teachable moments, not a control inventory
+
+For each idea distinguish the information the tutor should supply from work the
+child is ready to do. A new mechanism may need to be shown before it can be
+investigated; asking the child to guess it from an unexplained scene is not
+scaffolding. Conversely, a child who already explains the mechanism need not
+watch a compulsory demonstration. These are available teaching choices, not stages.
+
+| Design question | Example: daytime Moon |
+|---|---|
+| What needs to become visible? | Light reaches the Moon from the Sun, then reflected light can reach the observer. |
+| What does the tutor provide? | A staged space view with a sequential animated light journey and a brief explanation. |
+| What can the child contribute now? | Notice the starting point or direction; relate the animation to the Moon in the sky. Do not demand immediate repetition of the supplied explanation. |
+| What can the child try with this now? | Turn Earth with Moon fixed and light rays retained; compare the explorer’s skies. A prediction without rays is a harder later option. |
+| What might call for another demonstration? | The child notices the Moon disappear; show how Earth blocks the reflected light on that arrangement, then return control to investigate it. |
+| What does success establish? | A committed prediction or constructed route, with support history. Own-words explanation is separate evidence. |
+| How does help preserve work? | Pause the current activity, demonstrate the relevant relationship on that setup, then return control without resetting its history. |
+
+Expose high-level actions such as showing a teaching moment or starting a child
+activity. A teaching action should atomically set the needed view, geometry,
+supports and animation; acknowledge the actual resulting scene before speech.
+An animation hidden behind the wrong camera is not a demonstration. Keep a small
+number of task-relevant child controls visible, with meaningful direct manipulation.
+Do not give the child a generic control panel while the tutor talks over it.
+
+For authored `teaching` resources, include `whenToUse` and `learnerContribution`
+alongside the action and text. The shared `explain_model` tool exposes these
+moments directly. Report current mode, visible supports, available child actions,
+current attempt and what the scene actually shows. Authored examples and
+animations are provided information, never invented learner actions or mastery.
+
+## Interweave demonstration and exploration
+
+Demonstration and learner activity belong throughout teaching. For each supplied
+explanation, identify what the child can meaningfully do with it now; for each
+investigation, identify observations, questions or difficulties that could call
+for another demonstration. Expose those connections in the teaching resources
+and tool guidance so the tutor can choose them from the current learner evidence.
+Do not prescribe a fixed alternation, a time ratio or an activity quota.
+
+Demonstrate just enough to enable an action. Let the child manipulate, construct,
+compare or revise, with time to see the consequences. A surprise can motivate
+new teaching; a specific difficulty can justify showing one relationship on the
+child's current arrangement. After help, return control so they can retry or vary
+it, preserving work and support history. Successful investigation may justify
+less support or a new application without another demonstration.
+
+Unscored exploration is a teaching opportunity, not only an extension after
+mastery. Give it a relationship to investigate, visible consequences and possible
+next moves. Answering oral questions between explanations is not a substitute for
+meaningful action. Neither opening an activity nor dragging an object establishes
+understanding: use the actual outcome and the child's response to choose what
+happens next. Keep general timing and reflection policy in the shared tutor;
+lesson resources supply the concrete opportunities and their connections.
+
 ## Install one relationship at a time
 
 Start with an intelligible example and a short teaching intention. Demonstrate
@@ -38,9 +93,9 @@ object in the world or make any wet, sunlit arrangement produce one.
 
 The agent chooses based on current evidence. It may skip familiar ideas, return
 to a focused comparison after a mistake or reduce support. Multi-variable
-transfer checks whether the child can combine ideas; it should be introduced
-conversationally and followed by explanation and self-assessment, without a
-mandatory quiz count. Record assisted practice separately from independent work.
+transfer checks whether the child can combine ideas. Introduce it naturally
+and interpret the response before choosing further teaching, explanation or
+reflection; do not attach a mandatory closing sequence to it. Record assisted practice separately from independent work.
 
 ## Put actions on the things they affect
 

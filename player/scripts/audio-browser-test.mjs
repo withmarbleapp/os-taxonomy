@@ -40,7 +40,7 @@ try {
   await writeFile(audioFile, Buffer.from(await response.arrayBuffer()));
   b = await chrome({ audioFile });
   await b.send('Page.navigate', { url: service.origin });
-  await b.until('document.querySelectorAll(".lesson-card").length===2');
+  await b.until('document.querySelectorAll(".lesson-card").length===3');
   await b.evaluate(
     "document.querySelector('#settings-open').click();document.querySelector('#test-voice').click()",
   );
