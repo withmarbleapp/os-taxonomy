@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,434 reported Full / 32 Partial, including
-26 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,437 reported Full / 29 Partial, including
+23 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 30 Partials remain
+the excluded PE component explicitly unclaimed. The other 27 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -345,3 +345,18 @@ No canonical data changed; earlier E1.2/E1.3 labels are outside this fresh revie
 Remaining source Partials are now 26 Science, four Social Studies and the two
 mixed Kindergarten records with in-scope non-PE authoring accounted for: 30
 unqualified in-scope expectations, plus the historical audit.
+
+## Grade 4 local habitat and community: three source closures
+
+Independent source and complete eight-card/eight-guide review qualified B2,
+B2.1 and B2.2. A source-bound Toronto habitat portfolio provides plant/animal
+needs, actual supported interactions, a seven-node food-web model, limiting
+conditions and separately assessed overall transfer. Another locality requires a
+verified applicable packet; no present census or pupil fieldwork is asserted.
+The retained plant-growth operation is the actual same-species one-factor
+comparison, without an invented seed/bulb requirement. All earlier files and
+canonical data remain exact. Only these three source duties are freshly qualified.
+
+Current remaining source Partials: 23 Science, four Social Studies, and two mixed
+Kindergarten records with their in-scope non-PE authoring accounted for. Thus 27
+in-scope source expectations remain unqualified alongside the historical audit.
