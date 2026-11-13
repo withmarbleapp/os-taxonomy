@@ -68,7 +68,7 @@ Whole historical vocabulary is separately supported with an explicit model timel
 
 ## W06 — Work, goods, customers and limited resources
 
-Cards: mt_asRwlPZXC3,mt_RgQxPddV8v,mt_SbEaQnMQoD,mt_vpMDMbx4pc,mt__ab4knIaSL,mt_yDQmYTrrzP,mt_uP9faJlnRq,mt_SsS7GptD_o.
+Current hard-path cards: mt_asRwlPZXC3,mt_RgQxPddV8v,mt_SbEaQnMQoD,mt_vpMDMbx4pc,mt_uP9faJlnRq,mt_SsS7GptD_o. Optional existing teaching-context examples mt__ab4knIaSL and mt_yDQmYTrrzP are retained below; they are not counted in the current50-card absence set and create no source associations or new prerequisites.
 
 Original cards describe a grower producing vegetables, a carpenter making a stool, a tailor making clothing, a teacher teaching and a repairer fixing a chair. Pupil names all five jobs and explains each activity/community contribution; distinguishes tangible goods from service work and gives own additional checked examples of each. A personal interest can be linked to possible work without assigning an occupation to a child. Care and volunteering can be valuable without pay; do not teach all work is paid or all skilled workers earn more than everyone else.
 

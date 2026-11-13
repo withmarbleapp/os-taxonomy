@@ -547,3 +547,25 @@ The remaining 39 Grade 1 source positions now bind complete source-specific task
 ### Bounded rainforest and sense-assessment precision
 
 Two existing rainforest descriptions and their prompts now explicitly identify their already-tropical repertoire; this avoids rejecting genuine British temperate-rainforest examples. Ten operative sense-assessment fields replace unnecessary heat testing and nose-blocked tasting with a complete gentle sound/room-temperature self-touch protocol and matching key. The whole sense-organ operation remains unchanged. Every undeclared field, source verification/provenance, age, context and edge is exact; the descriptions require downstream revision/consumer compatibility review without automatic reinterpretation of old learner evidence. Required generation/checks and all 549 tests passed.
+
+
+### Historical Science84 source requalification complete
+
+The remaining 84 historical Science judgments now bind their complete source-duty
+protocols, checked original rationales and 106 current complete direct claims.
+Root read the complete positive task portfolio and all five explicit whole-support
+resources; independent review checked all 84 actual official clauses and current
+Ontario offer/grade intersections. This is a finite source-fit qualification, not
+a new recertification of all 101 saved guides or 192 prerequisite ancestors.
+No Full label, canonical association or age changes arise from this audit.
+
+### Twelve precise factual and example corrections
+
+Twelve fields across eight existing cards correct a decimal-place example, the
+whole-number boundary of appending a zero, regrouping across place-value
+boundaries, debit versus credit funding, conditional borrowing costs, space
+telescope location, fossil-context inference and two spelling examples. All
+undeclared intrinsic fields, 1,097 research records, contexts, edges and source
+catalogues are preserved. Corrected semantics require downstream claim-revision
+and private-state qualification; historical learner evidence is not automatically
+reinterpreted. Required generation/checks and all 551 tests passed.
