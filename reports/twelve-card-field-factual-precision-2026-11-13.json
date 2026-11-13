@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "bf75cd747893aa7f6f37e96d6568453cf9e97d54",
+  "status": "Reviewed twelve precise factual/example corrections across eight existing cards",
+  "changes": [
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_EDgw64OmfA",
+      "path": "/assessmentPrompt",
+      "old": "Can {{name}} explain that in 4.56, the digit 5 is worth 5 tenths — ten times less than the 5 in 54, and ten times more than the 5 in 0.056?",
+      "new": "Can {{name}} explain that in 4.56, the digit 5 is worth 5 tenths — ten times less than the 5 in 5.4, and ten times more than the 5 in 0.056?",
+      "reason": "0.5 is one tenth of5, but one hundredth of50; repair example without changing operation."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_HLUqHJ9Y7n",
+      "path": "/assessmentPrompt",
+      "old": "Can {{name}} explain why 10² = 100 and 10³ = 1,000, and why multiplying by 10 just adds a zero — connecting the pattern of zeros to place value?",
+      "new": "Can {{name}} explain why 10² = 100 and 10³ = 1,000, and how multiplying a whole number by 10 appends a zero while multiplying a decimal such as 3.4 by 10 gives 34 — connecting both to each digit taking a place worth ten times as much?",
+      "reason": "Appending a zero to a decimal numeral does not multiply its value by10."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_K8_RYIvrTV",
+      "path": "/evidence/1",
+      "old": "Explain that tapping a card or phone still spends real money from a bank account",
+      "new": "Explain that an ordinary debit-card or linked-account phone payment spends money from the account, while a credit-card payment creates borrowing that must be repaid; the stated payment arrangement matters",
+      "reason": "Card/phone identifies interface, not funding source; credit does not immediately debit savings."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_K8_RYIvrTV",
+      "path": "/assessmentPrompt",
+      "old": "Does {{name}} understand that when you tap a card or use a phone to pay, real money leaves your bank account even though you can't see coins changing hands?",
+      "new": "Does {{name}} understand that tapping a debit card or a phone linked to a bank account spends money from that account, while tapping a credit card creates borrowing to repay, even though no coins change hands?",
+      "reason": "Same funding-source distinction."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_bAy4dmP1-A",
+      "path": "/description",
+      "old": "What borrowing money means; that loans must be repaid with interest; what credit is; why too much debt can be risky; responsible borrowing",
+      "new": "What borrowing money means; that borrowed money must be repaid and interest or fees may be charged under the agreement; what credit is; why too much debt can be risky; responsible borrowing",
+      "reason": "Interest-free loans exist; borrowing does not universally require interest."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_bAy4dmP1-A",
+      "path": "/evidence/0",
+      "old": "Explain what a loan is and that borrowed money must be paid back with extra (interest)",
+      "new": "Explain what a loan is, that borrowed money must be repaid, and that any interest or fees depend on the agreement",
+      "reason": "Same conditional-interest correction."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_bAy4dmP1-A",
+      "path": "/assessmentPrompt",
+      "old": "Could {{name}} explain why borrowing money costs more than the amount you borrow, and why that matters?",
+      "new": "Could {{name}} explain why borrowing money may cost more than the amount borrowed when interest or fees are charged, and why checking the agreement matters?",
+      "reason": "Same conditional-interest correction."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_izien3ZX51",
+      "path": "/evidence/2",
+      "old": "Explain the strategy using place-value understanding (e.g. only the tens/hundreds digit changes)",
+      "new": "Explain the strategy using place-value understanding, including exchanges across a boundary (e.g. 10 more than 395 is 405, so more than one written digit can change)",
+      "reason": "Only-one-digit claim fails across exchange boundary."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_-SZU6cVB_-",
+      "path": "/description",
+      "old": "Know that telescopes are instruments that help us see distant objects in space, and that space telescopes like Hubble and James Webb orbit above Earth’s atmosphere to get clearer views of the universe",
+      "new": "Know that telescopes are instruments that help us see distant objects in space, and that space telescopes like Hubble and James Webb operate outside Earth’s atmosphere to get clearer views of the universe",
+      "reason": "Replace ambiguous shared orbit-above-Earth wording with correct common atmospheric-location fact. Hubble orbitsEarth;Webb orbitsSun nearSunEarthL2. No newL2technicalmastery criterion added."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_6Z42wJaKYG",
+      "path": "/assessmentPrompt",
+      "old": "If {{name}} sees a fossil of a fish in a rock on a hillside, can they explain that the area must have been underwater millions of years ago?",
+      "new": "If {{name}} sees a fish fossil in sedimentary rock on a hillside, can they explain how it provides evidence about past aquatic life and use the rock’s geological context to discuss the earlier environment, without assuming the find alone establishes an exact age or that its present location has stayed unchanged?",
+      "reason": "Preserve fossil-as-evidence operation but remove unsupported must/currentlocation/exactmillions-age inference. No newgeologicalchronologyunit or tectonicmastery criterion."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_p_jxNLdus4",
+      "path": "/evidence/0",
+      "old": "Spell 'ball', 'call', 'walk' using alternative grapheme /ɔ:/ as 'a' before ll",
+      "new": "Spell 'ball', 'call', 'fall' using alternative grapheme /ɔ:/ as 'a' before ll",
+      "reason": "Use three actual ll examples for the stated grapheme condition; walk does not contain ll. Taught pronunciation remains relevant."
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_p_jxNLdus4",
+      "path": "/evidence/1",
+      "old": "Distinguish homophones in writing: 'there/their/they’re', 'here/hear', 'quite/quiet'",
+      "new": "Distinguish homophones in writing: 'there/their/they’re', 'here/hear', 'bare/bear'",
+      "reason": "Quite and quiet are not homophones; substitute a genuine homophone pair without changing the operation."
+    }
+  ],
+  "scope": "Repair mathematical examples, payment funding-source and conditional borrowing costs, shared space-telescope location wording, fossil-context inference and two spelling examples. No new topic, age, source association, dependency or research record.",
+  "wholeClaimBoundary": "Stable IDs and intended operations retained. Corrected criteria and description semantics require explicit downstream claim-revision/private-state and consumer qualification; no automatic reset, reinterpretation of assessment history or staging publication is authorized by this report.",
+  "verifiedPrimaryBasis": [
+    {
+      "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/using-debit.html",
+      "scope": "Debit purchases, including linked mobile wallets, use the account; no current fee, product or legal-entitlement claim."
+    },
+    {
+      "url": "https://www.canada.ca/en/financial-consumer-agency/services/credit-cards/choose-credit-card.html",
+      "scope": "Credit purchases are borrowing; interest depends on agreement and repayment terms. No rate/product advice."
+    },
+    {
+      "url": "https://science.nasa.gov/mission/webb/orbit/",
+      "scope": "Webb orbits the Sun, unlike Hubble orbiting Earth; both operate outside the atmosphere. No new L2 mastery criterion."
+    },
+    {
+      "url": "https://www.nps.gov/subjects/fossils/what-is-a-fossil.htm",
+      "scope": "Fossil evidence interpreted in geological context; age and exact original position cannot be concluded from a fish fossil alone."
+    }
+  ],
+  "preservation": "All undeclared topic fields and all other canonical files remain exact except generated topic hash. No learner state, historical research provenance or staging changes."
+}
