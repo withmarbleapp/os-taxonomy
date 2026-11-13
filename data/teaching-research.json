@@ -5456,7 +5456,7 @@
           "full": "Decodes the interval from labelled marks, reads part-filled scales at varied intervals, estimates against sensible referents with the correct unit, and solves one-step mass/volume word problems — transferring across g, kg and litres.",
           "partial": "Reads the scale when intervals are labelled or 'friendly' and estimates roughly, but cannot work out an unlabelled interval value or misjudges a non-standard step; solves the word problem only when the operation is obvious."
         },
-        "diagnosticPrompt": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five small unlabelled marks between (so each is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers.",
+        "diagnosticPrompt": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five equal intervals between successive labelled 100 ml marks (four interior unlabelled marks, so each interval is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers.",
         "whatMakesItDiscriminate": "A child who understands the unit decodes the interval (reads 340) and estimates against a referent (hundreds of grams, unit = grams); a child who doesn't either counts the marks (reads '3' or '34' or the nearest labelled 300), or estimates with no unit sense ('5 kg') and mis-picks the unit. Decoding-the-interval versus counting-the-marks produces a visibly different reading of the SAME jug."
       },
       "sources": [
@@ -66740,10 +66740,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Wrong grain — not the nearest appropriate unit: picks a unit far too big or small for the object, e.g. a pencil in metres or a room in centimetres, and doesn't notice the number is unusable.",
+            "pattern": "Wrong grain for the stated purpose/precision: chooses a unit/resolution that cannot supply the requested useful measurement, for example reporting a pencil only to the nearest whole metre as 0 m. Measuring a room in centimetres is valid, especially when centimetre precision is needed; do not mark it wrong merely for its unit.",
             "nextMove": "Discuss which unit gives a sensible, readable number; anchor each unit to a benchmark size and sanity-check the result.",
             "distractor": null,
-            "revealedBy": "Reports '0 m' for a pencil, or sets out to measure the room in centimetres; accepts a nonsense-sized number.",
+            "revealedBy": "Reports 0 m for a pencil when its useful length is requested and does not notice that the resolution is inadequate. A correctly measured room length in centimetres is not evidence of this error.",
             "reteachPrerequisiteId": null
           },
           {
@@ -66766,7 +66766,7 @@
         "responseLevels": {
           "gap": "Uses a wrong-attribute tool or unit, or reports non-standard counts, or picks a grain that gives a nonsense number without noticing.",
           "full": "For each object names the attribute, selects a sensible instrument and an appropriate-grain standard unit, measures to the nearest unit, and justifies the choice (a readable, precise number) and why standard units are used at all.",
-          "partial": "Matches the right attribute and a standard unit but not to the nearest appropriate grain — measures the room in cm or the pencil in m — succeeding where the unit is obvious but not where scale or precision must be judged."
+          "partial": "Matches attribute and a standard unit, but needs support to choose resolution suited to the purpose, for example reports only 0 m for a pencil. A room measured correctly in centimetres remains valid; discuss efficiency or requested precision separately."
         },
         "diagnosticPrompt": "Lay out a range of objects — a pencil, a table, an apple, a jug of juice, a cup of water (and, if you have one, something whose temperature matters) — with a ruler and tape, a scale, a measuring jug and a thermometer available. Say: 'Measure each of these and tell me the amount.' Do not tell them which tool or unit. Watch which instrument and unit they reach for, whether the grain fits, and how they read it.",
         "whatMakesItDiscriminate": "A child who understands unit choice matches the tool to the attribute and dials the grain to a readable, precise number; a child who does not grabs a wrong-attribute tool, reports an awkward '0 m'-type figure without noticing, or offers a non-standard count — each visible in the act, none of which a child with the full concept does. It is watched, never asked about."
@@ -209231,7 +209231,7 @@
         "probeDeeper": [
           "Ask 'do your table numbers add up to how many cards we started with?' to check the reconcile habit",
           "Ask 'which fruit does the class like best — how does your table show that?' to see if the record is used to answer the question",
-          "Counterexample tuned to this topic: slip in a card for a fruit that isn't one of the three and watch whether they force it or handle it as 'other'",
+          "Counterexample within the three-category limit: start with two named fruit categories and allow an 'other' third category; slip in a card for a different fruit and watch whether the learner handles it as 'other' rather than forcing or double-counting it. Do not add a fourth category to an existing three-category task.",
           "Ask 'if two more people chose apple, what changes in your table — and does the answer change?' to test that the table is a live record"
         ],
         "correctAnswer": "A correct performance: sorts all cards into the three fruit categories, counts each, writes each fruit name beside its correct count in a table (totals reconciling with the number of cards), orders the categories, and states which fruit answers the question.",

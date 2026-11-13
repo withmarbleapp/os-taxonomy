@@ -518,3 +518,7 @@ The full research payload equals the previous integration plus only the 27 decla
 The complete local biodiversity analysis/plan/actual-action protocol and the all-three-needs space explanation with a changed-case assessment resolve B1.2 and E1.1 for source authoring. Root and independent peer read the complete final resource and source duties, eighteen whole support cards and fourteen hard edges; primary-source checks and exact prior guide reuse preserve separate whole-topic requirements. No topic, guide, association, age or edge is changed. The older Mars engineering/SETI compound remains whole at its original age.
 
 Ontario now has 2,463 reported Full / 3 Partial: the unresolved in-scope record is Grade 5 Social Studies A3.2; the other two mixed Kindergarten records retain excluded PE. This resolves 89 of the original 92 Partials for source authoring, not live learner delivery or wholesale historical recertification. India reconciliation, historical Full audit and downstream staging publication remain completion gates.
+
+### Measurement and sorting prompt precision
+
+Five fields in three existing guides now distinguish scale intervals from interior marks, accept correctly measured room lengths in centimetres and keep a fresh sorting probe within its existing three-category limit. No intrinsic criterion or scoped association changes. Exact replacement proof preserves every other field, all 1,094 other guides and other canonical data. Generation, validation, generated checks and all 543 tests passed.

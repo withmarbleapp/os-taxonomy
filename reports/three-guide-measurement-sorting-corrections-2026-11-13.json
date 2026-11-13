@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "1fb08b73ead98d54e8ff2b5c54cb82ad8d0bb51a",
+  "status": "Reviewed measurement and sorting prompt precision",
+  "changes": [
+    {
+      "topicId": "mt_-af65bxfdp",
+      "path": "/assess/diagnosticPrompt",
+      "old": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five small unlabelled marks between (so each is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers.",
+      "new": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five equal intervals between successive labelled 100 ml marks (four interior unlabelled marks, so each interval is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers."
+    },
+    {
+      "topicId": "mt_DOe893F6gN",
+      "path": "/assess/errorPatterns/1/pattern",
+      "old": "Wrong grain — not the nearest appropriate unit: picks a unit far too big or small for the object, e.g. a pencil in metres or a room in centimetres, and doesn't notice the number is unusable.",
+      "new": "Wrong grain for the stated purpose/precision: chooses a unit/resolution that cannot supply the requested useful measurement, for example reporting a pencil only to the nearest whole metre as 0 m. Measuring a room in centimetres is valid, especially when centimetre precision is needed; do not mark it wrong merely for its unit."
+    },
+    {
+      "topicId": "mt_DOe893F6gN",
+      "path": "/assess/errorPatterns/1/revealedBy",
+      "old": "Reports '0 m' for a pencil, or sets out to measure the room in centimetres; accepts a nonsense-sized number.",
+      "new": "Reports 0 m for a pencil when its useful length is requested and does not notice that the resolution is inadequate. A correctly measured room length in centimetres is not evidence of this error."
+    },
+    {
+      "topicId": "mt_DOe893F6gN",
+      "path": "/assess/responseLevels/partial",
+      "old": "Matches the right attribute and a standard unit but not to the nearest appropriate grain — measures the room in cm or the pencil in m — succeeding where the unit is obvious but not where scale or precision must be judged.",
+      "new": "Matches attribute and a standard unit, but needs support to choose resolution suited to the purpose, for example reports only 0 m for a pencil. A room measured correctly in centimetres remains valid; discuss efficiency or requested precision separately."
+    },
+    {
+      "topicId": "mt_ylXdiVRAYv",
+      "path": "/assess/probeDeeper/2",
+      "old": "Counterexample tuned to this topic: slip in a card for a fruit that isn't one of the three and watch whether they force it or handle it as 'other'",
+      "new": "Counterexample within the three-category limit: start with two named fruit categories and allow an 'other' third category; slip in a card for a different fruit and watch whether the learner handles it as 'other' rather than forcing or double-counting it. Do not add a fourth category to an existing three-category task."
+    }
+  ],
+  "scope": "Five assessment fields in three saved guides. Four interior marks define five scale intervals; correct centimetre room measurements remain valid; the sorting probe stays within the existing three-category limit.",
+  "preservation": "No intrinsic criteria, ages, contexts, source identities, metadata, historical source claims or dependencies changed. No source Full promotion or learner reassessment.",
+  "downstreamGate": "Fresh private richer-research preservation and consumer compatibility before staging; no retrospective learner reinterpretation."
+}
