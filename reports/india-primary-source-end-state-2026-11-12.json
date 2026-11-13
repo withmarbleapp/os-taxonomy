@@ -985,9 +985,10 @@
       "id": "95",
       "url": "https://cbseacademic.nic.in/web_material/Circulars/2025/95_Circular_2025.pdf",
       "sha256": "e1ef7f1ee121dfefa05d9921adc034beee1caa915c35847650088b4c183cfc70",
-      "readScope": "Operative PDF1–2 actual body read; linked SOP/PM-POSHAN/safety documents and current legal/health details not read here",
+      "readScope": "Actual CBSE operative PDF1–2; actual official AWBI scanned awareness/bite-referral PDF9–10; current WHO rabies key facts/awareness/post-exposure sections. Other institutional/clinical documents are not wholly certified.",
       "retainedDuty": "Animal-safety preventive-behaviour, first-aid and immediate-reporting awareness; adult premises/security/waste/nodal-officer/competent-inspection duties retained",
-      "remainingGate": "Current competent school SOP/health-source review remains an implementation-content gate before delivering bite first-aid/prevention instruction; no claim existing generic safety fully discharges it, no child animal-management task"
+      "remainingGate": "Bounded pupil-awareness source inputs are qualified through the original resource and checked primary SOP/health guidance. Actual school reporting, trained adult response, facilities and urgent professional-care arrangements remain delivery conditions; broader institutional duties and clinical competence are not certified.",
+      "pupilAwarenessResource": "india-cbse-pupil-animal-safety-awareness-2026-11-13.md"
     },
     {
       "id": "97",
@@ -1010,11 +1011,13 @@
     "currentCBSELOEditionReconciled": false,
     "blanketCurrentCBSEComplianceClaimed": false,
     "all304AutomaticallyAdditionalRequirements": false,
-    "currentAnimalSafetySOPContentQualified": false,
     "continuingSchoolDutiesRetained": true,
     "historical77ScreenExpandedToAllDirectives": false,
     "retained304FiniteDutyAccountingProvided": true,
-    "allNamedLanguageProgrammesCertified": false
+    "allNamedLanguageProgrammesCertified": false,
+    "pupilAnimalSafetyAwarenessInputsQualified": true,
+    "wholeInstitutionalSOPComplianceCertified": false,
+    "clinicalCompetenceCertified": false
   },
   "retained2017CurrentAccounting": {
     "sourcePositions": 304,
@@ -1044,5 +1047,34 @@
     "uniqueSkillsOrNationalDenominator": false,
     "newLanguageProgrammeFullPromotions": 0,
     "allSourceEditionsDeclaredEquivalent": false
+  },
+  "pupilAnimalSafetyAwareness": {
+    "scope": "Acad95 pupil preventive behaviour, immediate reporting and bite first-aid awareness only",
+    "sourceAuthoringQualified": true,
+    "resource": "india-cbse-pupil-animal-safety-awareness-2026-11-13.md",
+    "resourceSha256": "658ccf9dcd9ce456cd815eb154e36debfad0ae83b40b59db45a6448ef32ab4c2",
+    "officialSOP": {
+      "url": "https://awbi.gov.in/uploads/regulations/176431409245SOP-11282025001522.pdf",
+      "sha256": "493ffb4c35a00be1f1f28e9be649d2ac1b680bd4394e8bf89db8a2a43084c36c",
+      "actualPdfPagesRead": [
+        9,
+        10
+      ]
+    },
+    "healthSource": {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
+      "sourceDate": "2026-09-17",
+      "checkedDate": "2026-11-13",
+      "readSections": [
+        "Key facts",
+        "Awareness",
+        "Post-exposure prophylaxis"
+      ]
+    },
+    "rootAndIndependentReview": "PASS actual source pages and complete original prevention/reporting/first-aid/fresh-assessment resource; no canonical edits",
+    "actualSchoolResponseConfigured": false,
+    "actualPupilPerformanceClaimed": false,
+    "wholeInstitutionalSOPComplianceCertified": false,
+    "clinicalCompetenceCertified": false
   }
 }

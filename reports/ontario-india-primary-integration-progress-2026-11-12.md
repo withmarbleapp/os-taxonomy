@@ -643,4 +643,17 @@ parameterized contracts, and no topic, association or canonical byte changes.
 The finite 304 reference positions now reconcile as 166 proposed authoring Full
 judgments and 138 contextual/programme conditions, with no overall India or
 unique-skill percentage. Exact-edition and genuine selected-source uncertainty
-remain visible. Current CBSE pupil animal-safety input qualification is in progress.
+remain visible. The bounded CBSE pupil animal-safety input now has root and independent primary-source qualification; actual school response arrangements remain delivery conditions.
+
+
+### CBSE pupil animal-safety awareness inputs qualified
+
+The original prevention, immediate-reporting and dog-bite first-aid awareness
+resource is now qualified against actual official AWBI SOP pages 9–10, the CBSE
+awareness direction and current WHO health guidance. Worked and fresh cases test
+an explained prevention choice, the real primary/backup adult help route and
+recognition of adult-led first aid plus urgent professional care. The first-aid
+examples concern dog bites/scratches; they are not a universal animal-injury
+protocol. Root and independent review passed. Actual school roles, facilities
+and response remain delivery conditions; no clinical or institutional compliance
+certificate, new topic, source Full promotion or canonical data change results.
