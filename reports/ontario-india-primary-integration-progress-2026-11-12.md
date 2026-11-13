@@ -539,3 +539,7 @@ Ontario now has 2,464 reported Full / 2 Partial, resolving 90 of the original 92
 ### Historical mathematics diagnostic precision
 
 Seven assessment fields in three guides now agree with their existing correct teaching guidance: noncanonical equality can place a total on the left, fingers can support valid counting-on above ten, and holding a paper cut-out does not make its represented ideal shape three-dimensional. All other fields and intrinsic criteria are preserved. The finite 89 saved-guide qualification for the historical Grade 1 mathematics review is complete through actual reads/exact prior-review reuse; the source-specific portfolio and 28 explicit guide absences still need their final operational binding.
+
+### Grade 1 mathematics historical requalification complete
+
+The remaining 39 Grade 1 source positions now bind complete source-specific tasks, independent strand-overall assessments and an actual modelling cycle. All 89 saved operative guides are qualified through actual reads/exact prior-review reuse; all 28 real guide absences have explicit whole-operation support or the current SEL instructional/nonassessment treatment. Root read the complete final three resources and registry, and independent final source/path/public binding passed. No canonical data or Full-count increase; this strengthens evidence for the retained judgments. Later-grade mathematics, older Language and the remaining historical Science cohort still require their finite source-fit audit, rather than inheriting this qualification.
