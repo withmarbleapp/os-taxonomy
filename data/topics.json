@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "topicCount": 1910,
+  "topicCount": 1911,
   "topics": [
     {
       "id": "mt__p5n8z5soJ",
@@ -48140,6 +48140,27 @@
       ],
       "ageRangeStart": 7,
       "ageRangeEnd": 8
+    },
+    {
+      "id": "mt_7pFq2NwV8s",
+      "type": "PROCEDURAL",
+      "subject": "Mathematics",
+      "domain": "Geometry",
+      "name": "Constructing cylinders and cones from flat patterns",
+      "description": "Assemble closed cylinders and cones from purpose-designed supplied flat pieces, explain which pieces form the flat and curved surfaces and which edges join, and predict/check closure with a fresh or mismatched pattern. Independent net design and circumference, sector-angle or surface-area formulae are separate claims.",
+      "centrality": 0,
+      "evidence": [
+        "From a supplied rectangle and two matching circles, predict the joining edges, then actually roll/join and attach the circles to form a closed cylinder.",
+        "From a supplied circular sector and matching circle, predict the joining edges, then actually roll/join and attach the base to form a closed cone.",
+        "Explain how flat pieces become the flat bases and curved lateral surface; inspect joins for gaps, unintended overlaps and closure, distinguishing ideal mathematical surfaces from tape/card thickness.",
+        "Independently construct both solids from fresh supplied patterns and diagnose a mismatched base or wrong-edge join; choose a fitting alternative and check it through construction. Adult assembly or a completed-model recognition answer alone is insufficient."
+      ],
+      "assessmentPrompt": "With fresh supplied flat pieces, can {{name}} predict the joins, actually make a closed cylinder and cone, explain which piece becomes each surface, and identify and fix a base that does not fit?",
+      "standards": [
+        "ncert-elementary-learning-outcomes-2017:IN-NCERT-LO-2017-MATH-G5-LO03"
+      ],
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11
     }
   ]
 }
