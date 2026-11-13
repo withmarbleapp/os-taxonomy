@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,452 reported Full / 14 Partial, including
-11 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,461 reported Full / 5 Partial, including
+2 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 12 Partials remain
+the excluded PE component explicitly unclaimed. The other 3 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -472,3 +472,23 @@ contexts, ages, dependencies and source records are unchanged; no source Full
 promotion follows. All 539 tests, generation, validation and generated checks
 pass. Private richer-research preservation and learner compatibility remain
 downstream publication gates; no learner record has changed.
+
+
+## Nine Grade 3 structures source protocols — 13 November
+
+Complete source-authoring routes now qualify D1, D1.1, D1.2, D2, D2.1, D2.3,
+D2.4, D2.6 and D2.7, with separately produced overalls. One portable conceptual
+claim, Supporting loads and stabilising structures, supplies the coupled
+load-support/strength/stability/strut–tie relation. Its complete four-criterion
+claim is distinct from generic design tests and the older supported-beam claim;
+the sole initial context is Ontario ages 8–9 with six explicit D2 component
+associations and no hard prerequisites. All 1,911 preceding cards, 1,096 guides,
+5,121 contexts and existing edges remain exact. The complete combined suite
+passes 541 tests; generation, validation and generated checks pass.
+
+Eighty-seven of the original 92 Ontario Partial records are resolved. Five whole
+source Partials remain: two Grade 6 Science, Grade 5 Social Studies A3.2, and two
+mixed Kindergarten records retaining excluded PE components. Three are unresolved
+within the agreed scope. Historical Full qualification and final India source
+reconciliation remain open; these figures do not certify learner attainment or
+staging publication.
