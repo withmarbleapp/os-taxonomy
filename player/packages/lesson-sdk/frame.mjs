@@ -7,13 +7,14 @@ export function mountLesson({
   onStart = () => {},
   onReset = () => {},
   onTutorEvent = () => {},
+  isTextEditing = () => false,
 }) {
   let port,
     experience,
     shortcutsEnabled = false;
   const send = (type, data) => port?.postMessage({ type, ...data });
   bindTalkShortcut({
-    enabled: () => shortcutsEnabled,
+    enabled: () => shortcutsEnabled && !isTextEditing(),
     send: (action) => send('shortcut', { action }),
   });
   const api = {
