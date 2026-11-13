@@ -522,3 +522,11 @@ Ontario now has 2,463 reported Full / 3 Partial: the unresolved in-scope record 
 ### Measurement and sorting prompt precision
 
 Five fields in three existing guides now distinguish scale intervals from interior marks, accept correctly measured room lengths in centimetres and keep a fresh sorting probe within its existing three-category limit. No intrinsic criterion or scoped association changes. Exact replacement proof preserves every other field, all 1,094 other guides and other canonical data. Generation, validation, generated checks and all 543 tests passed.
+
+### Retained NCERT 2017 Mathematics: complete current authoring and associations
+
+All 49 primary Mathematics source positions now have complete original task and independent changed-case assessments with explicit actual-material, measurement, construction and software-delivery boundaries. The exact 93 component contributions comprise 92 additional associations plus the already reviewed curved-solid contribution. They add 83 contexts and append source keys to five existing contexts; every earlier identity, interval and association remains intact. No topic, intrinsic age/criterion, research record, dependency or catalogue record changes. The complete whole-operation appendix and original geometry/data assets preserve broader tasks instead of granting whole-topic mastery from source success.
+
+Root reviewed all 49 source/task bodies, the scoped offers and complete whole-support resource. Independent final public binding reused the finite actual-read/exact-prior-review accounting for all 171 saved guides; it does not claim 171 fresh reads by either reviewer. The combined branch passes generation, validation, generated checks and all 545 tests. The historical CBSE parent-context check now preserves the exact identity and all old keys while allowing reviewed later source appends.
+
+These 49 reference positions overlap other source hierarchies and are not added to the 451/521 headline as new unique skills. EVS, English and named-language/applicability reconciliation remain open, as do historical Ontario Full audit, accepted-main review and downstream staging publication.
