@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,461 reported Full / 5 Partial, including
-2 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,463 reported Full / 3 Partial, including
+0 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 3 Partials remain
+the excluded PE component explicitly unclaimed. The remaining Social Studies Partial remains
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -512,3 +512,9 @@ coverage or change learner state; downstream compatibility remains required.
 Reviewed operative guidance exposed 27 precise corrections in ten existing guides. The changes accept numerically equivalent time readings, distinguish calendar weeks from month boundaries, preserve a valid unregrouped place-value subtotal, and correct comparison and missing-addend prompts. Intrinsic claims and scoped associations are unchanged.
 
 The full research payload equals the previous integration plus only the 27 declared field replacements in `ten-guide-time-place-diagnostic-corrections-2026-11-13.json`; all 1,087 other guide records and every other canonical data payload remain exact. Generation, validation, generated checks and all 541 tests passed. These are authoring corrections, not retrospective learner reassessments or a staging publication receipt.
+
+### Final two Grade 6 Science source portfolios
+
+The complete local biodiversity analysis/plan/actual-action protocol and the all-three-needs space explanation with a changed-case assessment resolve B1.2 and E1.1 for source authoring. Root and independent peer read the complete final resource and source duties, eighteen whole support cards and fourteen hard edges; primary-source checks and exact prior guide reuse preserve separate whole-topic requirements. No topic, guide, association, age or edge is changed. The older Mars engineering/SETI compound remains whole at its original age.
+
+Ontario now has 2,463 reported Full / 3 Partial: the unresolved in-scope record is Grade 5 Social Studies A3.2; the other two mixed Kindergarten records retain excluded PE. This resolves 89 of the original 92 Partials for source authoring, not live learner delivery or wholesale historical recertification. India reconciliation, historical Full audit and downstream staging publication remain completion gates.
