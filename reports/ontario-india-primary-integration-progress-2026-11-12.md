@@ -444,3 +444,15 @@ A3.2, and two mixed Kindergarten records retaining excluded PE. The twelve
 in-scope residuals and the historical Full audit remain open. India’s mandatory
 2017 learning-outcome reconciliation continues; capture counts are not completed
 semantic reviews. No staging or learner state has changed.
+
+
+## Two prerequisite necessity corrections — 13 November
+
+Whole-claim counterexamples show that recognising five everyday computers is not
+necessary to complete precise everyday instructions, and one-to-one enumeration
+is not necessary to produce the complete rote number sequence. Those two links
+are now soft support rather than hard completion gates. All other 4,000 links,
+all claims, guides, scoped contexts and source records are unchanged. The full
+539-test suite, generation, validation and generated checks pass. Eligibility and
+private-state compatibility must be requalified before staging; no learner reset
+or source Full promotion follows from these corrections.
