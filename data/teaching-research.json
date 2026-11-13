@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "89536f707773ddac76201d473a7150b9bcde100e71bcc98f7bb301f80b07cf79",
+  "topicFileSha256": "712a1c1bf7098b4fe05188d28830777b49156a49207e054bcb41119efe21d989",
   "recordCount": 1097,
   "coverage": {
     "topicCount": 1912,
@@ -11545,7 +11545,7 @@
           "full": "Places rainforests in a belt near the Equator across several continents (Amazon/Congo/SE Asia) and explains they grow there because it's hot and wet all year, not at the poles.",
           "partial": "Names one or two rainforest regions but can't connect them to the hot, wet belt near the Equator."
         },
-        "diagnosticPrompt": "Could there be a big rainforest at the North Pole, or right here in Britain? Where on Earth do rainforests grow, and why there and not just anywhere?",
+        "diagnosticPrompt": "Could there be a big tropical rainforest at the North Pole, or right here in Britain? Where on Earth do tropical rainforests grow, and why there and not just anywhere?",
         "whatMakesItDiscriminate": "A child who thinks rainforests are 'everywhere' or only 'the Amazon' misses the Equator belt; the concept child ties location to the hot-wet climate near the Equator. The reason-tier forces the climate reason, not just naming places."
       },
       "sources": [
@@ -37645,13 +37645,13 @@
           "Mention in passing that many other animals have these senses too (though not every animal has all five), so children don't assume senses are human-only.",
           "A labelled on-screen figure names and reveals links but does not elicit real sensory handling; pair screen work with real classroom sense-play as the primary first-hand anchor.",
           "Scored matching/multiple-choice can check the mapping but does not itself elicit the first-hand experience or explanation; best-practice anchoring is to lead with real first-hand sense-play rather than relying on a scored check alone.",
-          "Smell and taste working together is a real phenomenon, but a blocked-nose taste test should only be done safely, with familiar foods and no choking or allergy risk; keep it gentle and optional."
+          "Smell contributes to flavour while the tongue detects basic tastes. Teach this with a familiar supplied cold/blocked-nose example or ordinary comfortable sensory experiences; do not blindfold, pinch/block a pupil’s nose, restrict breathing or require food tasting. Optional tasting uses only familiar adult-checked food and willing participation; lack of tasting is not failure to identify sense-organ links."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite without fresh source verification; sources were NOT re-fetched. Activities are research-informed proposals, not validated interventions.",
           "Two of the three sources are marked unverified in the row (NGSS mapping claim and the OU OpenLearn misconception/first-hand-experience claim); do not treat them as confirmed.",
           "The 'eyes send out something to see' item is listed as a misconception to keep simple; the guidance deliberately avoids teaching any seeing mechanism, which is appropriate for age 5–6.",
-          "The source's blindfold/nose-pinch taste test is retained only as an optional, safely-run demonstration; ensure no allergy/choking hazard before use.",
+          "Historical rewrite retained the source’s blindfold/nose-pinch taste test as optional. The current bounded safety clarification retires that physical manipulation and heat-testing probe in favour of optional room-temperature self-touch, a gentle sound and a supplied flavour example; source verification flags and the body-part/sense claim remain unchanged.",
           "Claims that doing-with-feedback or playful reveal 'teach better' than scored tests or passive review were softened to proposed/scoped wording, as no source in the row establishes such efficacy comparisons.",
           "The row's US/NGSS cross-standard context was condensed out of the learner guidance; the UK Y1 standard anchors the summary. Reinstate the US note only if downstream guidance needs the cross-curriculum framing."
         ],
@@ -37659,19 +37659,19 @@
       },
       "assess": {
         "method": "two_tier",
-        "poeTask": "Blindfold a child and pinch their nose shut, then have them taste small pieces of apple and raw potato (or onion). Ask them first to PREDICT whether they'll tell the foods apart by taste alone, and why. Most predict yes ('my tongue tastes it'); struggling to distinguish them with the nose blocked reveals that smell drives much of flavour.",
+        "poeTask": "Before a safe gentle sound and optional room-temperature texture trial, pupil predicts which sense/body part will notice it. With access and consent, actually present the sound/cloth, then compare the prediction and identify ears/hearing and skin/touch. Use a checked familiar smell where appropriate and the supplied cold/blocked-nose everyday example to explain that smell contributes to flavour while the tongue detects basic tastes. Do not blindfold, pinch/block the nose, restrict breathing or give unidentified food; actual tasting is not necessary to identify the five sense-organ links. Record access and which actual experiences were available.",
         "probeDeeper": [
           "If you closed your eyes, could you still tell someone was stroking your arm — which sense is that and which body part?",
           "When you have a cold and a blocked nose, does your dinner taste as strong? Why might that be?",
           "Which sense would help you cross a road safely, and which body part does it use?",
           "Can you feel with your feet or your back, or only your hands — how could we test it?"
         ],
-        "correctAnswer": "The nose smells the cookies and the ears hear the beep. Feeling is done by the skin, which covers the whole body — not just the fingers — so any bit of skin (an arm, a cheek) can feel warmth or touch.",
+        "correctAnswer": "The nose senses the supplied familiar orange-peel smell; the ears hear the gentle bell; skin on the hand/forearm senses the room-temperature cloth, and skin elsewhere can also feel. Correctly associate eyes with sight, ears with hearing, nose with smell, tongue mainly with basic taste, and skin with touch. Smell contributes to combined flavour without making the tongue stop detecting basic tastes. Record access and actual sensory experiences honestly; no hot object, blindfold, blocked breathing or required tasting.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "You feel and touch only with your fingers or hands ('you feel with your hands')",
-            "nextMove": "Touch a warm (safe) mug to the cheek or forearm and ask what they feel; the whole skin is the organ of touch.",
+            "nextMove": "If comfortable, let the pupil move a room-temperature soft cloth over their own hand and forearm and describe the texture. Explain that skin elsewhere can feel; no hot object, adult touching or forced participation is needed.",
             "distractor": "Only your fingers can feel whether something is hot.",
             "revealedBy": "Says only fingers can feel whether something is hot; doesn't offer skin as the sense organ",
             "reteachPrerequisiteId": null
@@ -37679,17 +37679,17 @@
           {
             "kind": "misconception",
             "pattern": "You smell with your mouth / taste with your nose (taste and smell muddled)",
-            "nextMove": "The nose smells and the tongue tastes; show they team up by tasting food with the nose pinched.",
+            "nextMove": "Distinguish the nose sensing smell and the tongue sensing basic tastes; explain that both contribute to flavour using a familiar supplied example. Do not block breathing or require a tasting experiment.",
             "distractor": "You smell the cookies with your mouth.",
             "revealedBy": "Assigns the wrong organ — says you smell the cookies with your mouth or taste with your nose",
             "reteachPrerequisiteId": null
           },
           {
             "kind": "misconception",
-            "pattern": "Taste is all done by the tongue — a blocked nose wouldn't change it",
-            "nextMove": "Do a nose-pinched taste test; smell contributes a lot to flavour, so blocking the nose dulls taste.",
+            "pattern": "Smell contributes nothing to food flavour — confuses basic tastes sensed mainly by the tongue with the combined flavour experience.",
+            "nextMove": "Use the supplied everyday example of food seeming less flavourful during a blocked-nose cold, while the tongue can still detect basic tastes. Explain the smell contribution without pinching or blocking the pupil’s nose or claiming the tongue stops tasting.",
             "distractor": null,
-            "revealedBy": "Says food would taste exactly the same with a blocked-up nose",
+            "revealedBy": "Denies any smell contribution to food flavour even after distinguishing it from basic taste; do not mark a correct claim that the tongue still detects basic tastes as an error.",
             "reteachPrerequisiteId": null
           }
         ],
@@ -37698,7 +37698,7 @@
           "full": "Matches all five senses to their organs, knows skin all over is the touch organ, and explains taste and smell work together with a real example.",
           "partial": "Matches the obvious organs (eyes→see, ears→hear) but muddles taste/smell or limits touch to fingers."
         },
-        "diagnosticPrompt": "You walk into the kitchen and you can smell cookies baking, then the oven timer beeps and you hear it. Which part of your body did you use to smell the cookies, and which to hear the beep? And when you touch the warm tray to see if it's hot — is it only your fingers that can feel, or can other parts of you feel too?",
+        "diagnosticPrompt": "You notice a familiar orange peel smell and hear a gentle bell. Which body parts help you smell and hear? Now use a room-temperature soft cloth on your own hand or forearm if comfortable: which sense and body part notices its texture? Can skin elsewhere feel too? Use a body picture and taught examples to match all five senses; no hot object, forced touch, tasting, blindfold or blocked breathing.",
         "whatMakesItDiscriminate": "A child who understands the sense organs names nose for smell and ears for hearing and knows touch works through skin all over. A child who has only a partial picture says only the fingers can feel, or muddles taste and smell."
       },
       "sources": [
@@ -83747,7 +83747,7 @@
           "full": "Describes a rainforest as hot AND wet with near-daily rain near the Equator, and links that combination to why plants grow tall and thick and so many animals live there; contrasts it with a hot dry desert.",
           "partial": "Knows it's hot and rainy but treats those as two separate facts and can't say the combination near the Equator is what makes it lush."
         },
-        "diagnosticPrompt": "A desert is hot and a rainforest is hot — so why isn't a rainforest just a hot, sandy place like a desert? What makes a rainforest different, and how do you know?",
+        "diagnosticPrompt": "A desert is hot and a tropical rainforest is hot — so why isn't a tropical rainforest just a hot, sandy place like a desert? What makes a tropical rainforest different, and how do you know?",
         "whatMakesItDiscriminate": "A child who thinks 'hot means dry' can't say what separates a rainforest from a desert; the child with the concept names WATER/rain as the difference. The reason-tier ('how do you know') surfaces whether they connect the daily rain to the lush growth."
       },
       "sources": [
