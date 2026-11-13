@@ -601,3 +601,21 @@ claimed. This distinct reference ledger does not add 39 unique skills to the old
 guide absences have explicit whole-operation support. Required checks and 553 tests
 passed. A separate one-field coin comparison key now correctly equates ten 20p
 coins with £2, preserving the intended equal-value/different-count operation.
+
+
+### NCERT 2017 English79 source-authoring qualification complete
+
+All 79 retained English positions now have exact source/mode and task accounting:
+78 proposed Full authoring designs and one contextual appreciation condition.
+There are 112 positive components in 91 new contexts and one existing append,
+using existing topics only. Three expressive/oral source-only routes remain
+unforced into unrelated writing or reading claims. Actual publisher newspaper
+and TV-caption inputs, original questions/keys, original print/media/song materials
+and complete dictation purposes are supplied with honest delivery conditions.
+Root and independent final source/resource binding passed; all old intrinsic
+claims, 1,097 guide records, scoped intervals and dependencies are preserved.
+Two generated compatibility upper bounds reflect three approved later offers,
+without separate age/difficulty topics. Required integrated checks and all 555
+tests passed. These are named-programme reference positions, not a fixed national
+English/R2 assignment or new unique-skill count. Hindi/Urdu programme-alternative
+accounting and final Ontario Language394 operational binding remain in progress.
