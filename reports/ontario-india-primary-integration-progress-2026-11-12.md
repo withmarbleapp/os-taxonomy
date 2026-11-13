@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,444 reported Full / 22 Partial, including
-19 Science Partials; selected NCERT authoring Full 451/521. These figures are
+Current integrated draft: Ontario 2,452 reported Full / 14 Partial, including
+11 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 20 Partials remain
+the excluded PE component explicitly unclaimed. The other 12 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -425,3 +425,22 @@ criterion, assessment, age, context, edge, source flag or learner state changes,
 and no independent odd-start mastery gate is added. This repair adds no source
 Full count. All other fields of that guide and every other existing guide remain
 unchanged; downstream private-research preservation still requires qualification.
+
+
+## Eight Grade 3 plant source protocols — 13 November
+
+The independently reviewed plant batch qualifies B1, B1.1, B1.3, B2, B2.2,
+B2.5, B2.6 and B2.7 through original teaching, independent assessment and
+changed-condition tasks. Actual cultivated First Nations, Métis and Inuit
+examples are attributed and dated; local delivery requires an honest applicable
+growing-setting configuration. Qualitative photosynthesis support does not award
+the older whole Photosynthesis claim or lower its age. All 845 preceding tracked
+files are byte-identical; this batch adds only two reports and two focused tests
+in one test file. The complete combined suite passes 539 tests.
+
+The original 92 Ontario Partial records are reduced by 78 to 14: nine Grade 3
+structures expectations, two Grade 6 Science expectations, Grade 5 Social Studies
+A3.2, and two mixed Kindergarten records retaining excluded PE. The twelve
+in-scope residuals and the historical Full audit remain open. India’s mandatory
+2017 learning-outcome reconciliation continues; capture counts are not completed
+semantic reviews. No staging or learner state has changed.
