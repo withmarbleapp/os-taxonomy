@@ -61,6 +61,8 @@ Read actual configured signs/notices and separately hear or view actual source-r
 ## L11 — Poem, story and expressive performance
 Use a checked short original text and a distinct fresh text in the actual language. Read or perform it with an appropriate audible contour, phrasing and expression; source-specific singing/cadence is separately checked rather than inferred from recital. The committed original seven-note reference is only an English illustrative mechanism and can be comfortably transposed; competent actual-language lyrics and keys are needed. Preserve the exact Urdu tarannum/prose boundary as unresolved until a competent source-specific check. Sharing or preferred responses use a genuine suitable opportunity, without forced liking, public performance or family disclosure.
 
+For a source-selected learned-recall/enactment route, actually teach and rehearse a checked short piece in the configured language, then have the pupil retell or present it in the pupil’s own language with an accessible expressive role or enacted action. Assess retained story meaning/sequence and purposeful expression; reading the visible original alone does not establish this selected recall/performance operation. Independently teach a fresh checked piece and assess a new retelling or expressive enactment after a suitable learning opportunity. Do not impose instant or verbatim recall, a fixed length, athletic movement, public theatre or the same memory requirement on every source row. Record access support honestly.
+
 <a id="l12"></a>
 
 ## L12 — Choice, interest and affective opportunity
