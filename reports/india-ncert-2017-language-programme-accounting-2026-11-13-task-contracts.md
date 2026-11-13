@@ -39,6 +39,8 @@ The competent language configurator supplies an actual two-pair sound contrast w
 ## L07 — Emergent writing and legibility
 Pupil draws a response to a new heard event, adds an own chosen label and attempts independent words using the configured script. Record drawing, invented marks, recognisable shapes and conventional spelling separately; do not collapse developmental routes into an older sentence gate. For a later legibility task, write a fresh short own message using accepted direction, size, joining, spacing and diacritics. Competent keys distinguish a legitimate form from a misleading substitution. Names may be fictional or volunteered; private family data are not required.
 
+For the accurate-dictation route, the competent language configurator supplies actual teaching words and one meaningful sentence, plus different fresh words and a fresh sentence, with accepted spelling, script form, diacritics and spacing keys. The adult actually reads the teaching input; the pupil writes or types what is heard without a displayed completed answer. Permit neutral repetitions and record support without supplying the written response. Independently dictate the fresh input and compare the actual transcription with its checked key, distinguishing auditory recognition, conventional spelling and legibility. A copied model, a self-composed account or a silent caption is not heard dictation. Do not invent Urdu tokens, force an English orthographic key or impose a universal paragraph-length requirement. Actual configured-language input selection remains a programme authoring condition, not a claim of completed Urdu delivery.
+
 <a id="l08"></a>
 
 ## L08 — Own composition, purpose and revision

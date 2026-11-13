@@ -18,6 +18,7 @@ function check(d,read=get){
   for(const ref of r.taskContractReferences){const [file,anchor]=ref.split('#');const body=read('reports/'+file).split(`<a id="${anchor}"></a>`)[1]?.split('<a id=')[0];assert.ok(body&&body.length>300,'actual source module resolves to task and evidence');}
   assert.ok(!('privateLiteral' in r)&&!('semanticDutyReadback' in r),'no restricted source payload');
  }
+ assert.ok(md.includes('adult actually reads')&&md.includes('Independently dictate the fresh input')&&md.includes('without a displayed completed answer'),'actual heard dictation, not composition substitution');
  const row=(l,g,o)=>d.records.find(r=>r.languageAlternative===l&&r.grade===g&&r.ordinal===o);
  assert.match(row('HI',3,6).specificBoundary,/both oral and written/);assert.match(row('HI',3,7).specificBoundary,/oral-or-signed/);
  for(const [g,o] of [[3,14],[5,10],[5,16]])assert.match(row('HI',g,o).specificBoundary,/not credited as Braille/);
