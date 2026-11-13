@@ -397,3 +397,31 @@ plus two retained mixed Kindergarten Partials with non-PE authoring accounted fo
 The remaining Science work is finite: plants eight, structures nine, and two
 Grade 6 local-action/space duties. Historical Full audit and India reconciliation
 remain separate completion requirements.
+
+## One portable curved-solid construction claim
+
+Independent root and peer review qualified `mt_7pFq2NwV8s`, constructing cylinders
+and cones from supplied flat patterns. Its complete original low-confidence
+teaching/assessment guide binds four actual printable SVG patterns, matched
+geometric dimensions, independent construction, mismatch diagnosis and a supplied
+changed-case comparison. Physical printing/assembly and pupil performance are
+unperformed. No formula derivation or independent net-design gate is introduced.
+
+This distinct curved-surface operation is not entailed by the existing fixed
+polyhedral nets or composition-of-solids claims. All 1,910 old cards, 1,095 old
+guides, old contexts, 4,002 dependencies and source catalogue remain exact. The
+only new offer is India ages 10–11, with one component association to the retained
+2017 Grade 5 outcome. That parent also requires cube/angle/symmetry operations
+and is not promoted by this component. The exact integrated code head passed
+537 tests and generation/validation/generated checks. Four portable topics have
+now been added across this PR; all other gap work reuses existing claims.
+
+## Historical audit: minimal skip-counting wording repair
+
+The Grade 1 audit found three teaching-guidance strings incorrectly describing
+odd/even alternation while counting by twos. They now accurately describe constant
+parity: starting at two lands on even numbers and skips odd numbers. No topic
+criterion, assessment, age, context, edge, source flag or learner state changes,
+and no independent odd-start mastery gate is added. This repair adds no source
+Full count. All other fields of that guide and every other existing guide remain
+unchanged; downstream private-research preservation still requires qualification.
