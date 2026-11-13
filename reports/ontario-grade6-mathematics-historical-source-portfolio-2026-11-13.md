@@ -112,7 +112,7 @@ Independent D2: combine an own probability model, representation, line, predicti
 
 ## E1 — properties, views and transformations
 
-E1.1: build actual quadrilateral property lists covering sides, angles, diagonals, reflection and rotational symmetry. A square has four reflection lines/order four; a non-square rectangle two/order two; a nonrectangular parallelogram zero/order two; a non-square rhombus two diagonal reflection lines/order two. Verify models rather than infer from appearance; classify and construct fresh figures from given properties.
+E1.1: build actual quadrilateral property lists covering sides, angles, diagonals, reflection and rotational symmetry. A square has four reflection lines/order four; a non-square rectangle two/order two; a parallelogram that is neither a rectangle nor a rhombus has zero reflection lines/order two; a non-square rhombus two diagonal reflection lines/order two. Verify models rather than infer from appearance; classify and construct fresh figures from given properties.
 
 E1.2: supply consistent top/front/side views and actual cubes. Construct a matching object and verify every view, reusing the qualified five/seven-cube materials in reverse where suitable. One front view does not uniquely determine the object; include a fresh view set and hidden-cube ambiguity.
 

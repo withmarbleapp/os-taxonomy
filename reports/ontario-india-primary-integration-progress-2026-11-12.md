@@ -596,5 +596,8 @@ measurement, observation, representation and comparative resources retain actual
 local/material/language checks and independent assessment. Source success awards
 no broader topic automatically, and no actual delivery or learner attainment is
 claimed. This distinct reference ledger does not add 39 unique skills to the older
-451/521 selected-framework headline. Final public peer/preservation binding remains
-explicit in its report until completed.
+451/521 selected-framework headline. Root and independent final public source/resource/preservation binding passed. All
+63 saved operative guides have exact actual-read/prior-review bindings; all 50 real
+guide absences have explicit whole-operation support. Required checks and 553 tests
+passed. A separate one-field coin comparison key now correctly equates ten 20p
+coins with £2, preserving the intended equal-value/different-count operation.
