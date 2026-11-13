@@ -5,12 +5,12 @@ is the accepted baseline; content on this branch is proposed until the PR reache
 `main`. Catalogue records, source authoring coverage and learner attainment are
 separate. Counts include overlapping source hierarchies, not unique skills.
 
-Current integrated draft: Ontario 2,437 reported Full / 29 Partial, including
+Current integrated draft: Ontario 2,440 reported Full / 26 Partial, including
 23 Science Partials; selected NCERT authoring Full 451/521. These figures are
 proposed and include retained historical qualifications. Main acceptance,
 current-source completeness and final historical audit remain separate gates.
 Two retained Kindergarten Partials have complete in-scope non-PE authoring with
-the excluded PE component explicitly unclaimed. The other 27 Partials remain
+the excluded PE component explicitly unclaimed. The other 24 Partials remain
 unqualified within the agreed scope; the source-record denominator is unchanged.
 
 ## Scope and completion criteria
@@ -360,3 +360,22 @@ canonical data remain exact. Only these three source duties are freshly qualifie
 Current remaining source Partials: 23 Science, four Social Studies, and two mixed
 Kindergarten records with their in-scope non-PE authoring accounted for. Thus 27
 in-scope source expectations remain unqualified alongside the historical audit.
+
+## Grade 5 historical inquiry and knowledge: three source closures
+
+Independent review qualified A2 and A3 against their complete overall inquiry
+and knowledge duties. Actual pre-1713 cases cover all three interaction categories
+with source roles, significant features and fresh independent products; child
+labels neither automatically award nor automatically withhold these overalls.
+
+A2.5 is qualified as an evidence-evaluation/conclusion operation, including an
+explicitly supported bounded uncertainty about chronology and collective identity.
+This does not verify a pre-1713 distinct Métis community, equate ancestry with
+identity, establish all-Canada absence or fabricate historical voices. The different
+positive-knowledge duty in A3.2 remains Partial and requires a supported
+pre-European First Nations–Inuit interaction. All whole claims and flags remain
+unchanged. No canonical edits accompany these three resource-based closures.
+
+Remaining source Partials: 23 Science, one Social Studies (G5 A3.2), and two mixed
+Kindergarten records with non-PE authoring accounted for: 24 unqualified in-scope
+expectations, plus historical requalification and India's separate source audit.
