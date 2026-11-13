@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed source-authoring implementation; independent semantic peer and main acceptance separate.",
+  "baseIntegration": "31a5072bd2592c5b6f309ef72e39ea56d4142c99",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "newTopicId": "mt_WaA8ssQp2K",
+  "newWholeCard": {
+    "id": "mt_WaA8ssQp2K",
+    "type": "CONCEPTUAL",
+    "subject": "Geography",
+    "domain": "Places & Environments",
+    "name": "Water availability and drinking-water access",
+    "description": "Distinguish physical fresh-water availability from safe, usable drinking-water access in particular communities. Compare accurately attributed cases from different world regions, explaining how water sources, distance, treatment/supply arrangements and changing conditions affect daily life. State what the case evidence establishes and what remains unknown instead of inferring safety or access from the mere presence of water.",
+    "centrality": 0,
+    "evidence": [
+      "Distinguish water being physically present, its fresh/salty condition, and safe drinking water being obtainable where and when people need it. Explain why a nearby freshwater source or a pipe alone does not prove all those conditions.",
+      "Describe and compare at least two accurately attributed studied community cases from different world regions, identifying the relevant natural water input and access/supply arrangement while retaining place, date and case limits.",
+      "Explain at least two case-supported consequences for community life, connecting an access condition or change to collection time, school/daily activities or supply reliability. Do not generalise a community case to everyone in a country or assume infrastructure removes every problem.",
+      "Apply the distinction to a fresh declared changed case: reason separately about physical water, access and quality, explain the resulting community consequence and identify information still needed. Do not invent an observed result, guaranteed solution or safety judgement."
+    ],
+    "assessmentPrompt": "After studying communities in different parts of the world, can {{name}} explain where their water comes from, how people obtain drinking water and how that affects daily life? If the water source remains but the supply route stops working, can they explain what changed and what they still need to know, without deciding that all water nearby must be safe?",
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.3"
+    ],
+    "ageRangeStart": 7,
+    "ageRangeEnd": 8
+  },
+  "initialContext": {
+    "topicId": "mt_WaA8ssQp2K",
+    "scope": "jurisdiction",
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 7,
+    "ageRangeEnd": 8,
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.3"
+    ]
+  },
+  "newHardPrerequisites": [],
+  "newComponentPairs": [
+    {
+      "topicId": "mt_WaA8ssQp2K",
+      "code": "ON-SCI-2022-G2-E1.3",
+      "role": "component"
+    }
+  ],
+  "studyCases": [
+    {
+      "id": "khormaloq",
+      "place": "Khormaloq village, Farah Province, Afghanistan",
+      "region": "Asia",
+      "accountDate": "2025-08-25",
+      "facts": "The account contrasts a previously distant stream, described as unsafe, with a solar-powered piped supply near homes. Families previously made repeated collection journeys.",
+      "supportedConsequence": "Near-home supply changes the collection burden and access for daily household use.",
+      "unknown": "The account is dated and local. Do not infer present conditions, every household in Afghanistan, or a detailed treatment process not supplied.",
+      "sourceUrl": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world"
+    },
+    {
+      "id": "sao-francisco-macuxi",
+      "place": "São Francisco Macuxi community, Roraima, Brazil",
+      "region": "South America",
+      "accountDate": "2025-08-25",
+      "facts": "River collection involved travel and seasonal difficulties. A community-identified well supplied a new system. The account reports less time needed to collect water.",
+      "supportedConsequence": "Reduced collection time leaves more time for other daily activities.",
+      "unknown": "Reported operation during drought does not prove an inexhaustible source or guarantee every future season. Do not generalise to all Brazil.",
+      "sourceUrl": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world"
+    },
+    {
+      "id": "dien-bien-schools",
+      "place": "Selected schools in Điện Biên, Viet Nam",
+      "region": "Asia",
+      "accountDate": "2025-08-25",
+      "facts": "The account describes collecting and treating rainwater for daily school use.",
+      "supportedConsequence": "The supplied collection/treatment arrangement supports daily water use at the studied schools.",
+      "unknown": "Do not invent a measured attendance gain, claim all schools share this arrangement, or describe the fictional empty-tank model as a reported event.",
+      "sourceUrl": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world"
+    }
+  ],
+  "changedCases": [
+    {
+      "id": "P",
+      "isModel": true,
+      "facts": "A declared freshwater lake remains beside a town. The pipe bringing treated water to a school is broken. No substitute delivery is supplied.",
+      "questions": [
+        "What physical source remains?",
+        "Which access changed?",
+        "What daily activity could be affected and what further supply information is needed?"
+      ],
+      "key": {
+        "physical": "The freshwater lake remains.",
+        "access": "The stated school delivery has stopped; physical source presence does not restore that route.",
+        "quality": "The premise refers to treated delivery, but supplies no fresh quality judgment about the lake.",
+        "consequence": "A daily school use needing that delivery may be interrupted; no repair or substitute has been established.",
+        "unknown": "Whether another suitable supply or repair is available."
+      }
+    },
+    {
+      "id": "Q",
+      "isModel": true,
+      "facts": "A working tap is close to homes. Its water quality has not been supplied or checked in the case.",
+      "questions": [
+        "What access advantage is given?",
+        "Does closeness prove safe drinking water?",
+        "What information is missing?"
+      ],
+      "key": {
+        "physical": "Water comes from the stated working tap; the natural input is not supplied.",
+        "access": "Nearby functioning delivery is convenient.",
+        "quality": "Unknown; do not declare safe OR unsafe from closeness alone.",
+        "consequence": "Collection may be convenient, but no guaranteed safe drinking-water outcome follows.",
+        "unknown": "Quality/suitability facts and the natural supply route."
+      }
+    },
+    {
+      "id": "R",
+      "isModel": true,
+      "facts": "A school model uses a roof/tank and treatment arrangement. The tank is now empty during a declared dry period, and no refill is supplied.",
+      "questions": [
+        "Does opening its outlet create water or guarantee supply?",
+        "What daily school use could be affected?",
+        "What supply information is needed?"
+      ],
+      "key": {
+        "physical": "No stored tank water is supplied now; the roof does not create rain.",
+        "access": "Opening the outlet does not refill the empty tank.",
+        "quality": "Treatment as a model arrangement does not create a quantity or prove a new alternative safe.",
+        "consequence": "Daily uses needing this supply may be interrupted.",
+        "unknown": "Whether rain, a refill or another suitable supply will become available."
+      }
+    }
+  ],
+  "comparisonMat": [
+    "source/input",
+    "access/quality facts",
+    "daily-life consequence"
+  ],
+  "independentProtocol": {
+    "requiresIndependentPerformance": true,
+    "contributorIds": [
+      "mt_WaA8ssQp2K"
+    ],
+    "role": "component",
+    "task": "Remove completed comparison rows and answer explanations. With neutral dated facts available or read aloud, have the learner construct a comparison of the Afghanistan and Brazil cases, identifying input/access arrangement and at least two supported daily-life consequences. Use the selected Viet Nam school case for a fresh comparison, then independently answer P/Q/R, separating physical water, access and quality and identifying what remains unknown.",
+    "requiredEvidence": [
+      "physical-versus-safe-usable-access",
+      "two-world-region-cases-place-date-limits",
+      "two-supported-community-consequences",
+      "third-case-comparison-transfer",
+      "P-source-remains-route-stops",
+      "Q-quality-unknown-withhold-both-safety-verdicts",
+      "R-empty-store-no-created-supply",
+      "explicit-evidence-limits"
+    ],
+    "completedRowsOrTeacherAnswersSufficient": false,
+    "neutralFactReadingAllowed": true,
+    "sameCountryCasesAloneSufficient": false,
+    "wholeOtherTopicAward": false,
+    "actualPupilInterventionRequiredForAuthoring": false
+  },
+  "protocols": {
+    "E1.3": {
+      "requiresIndependentPerformance": true,
+      "contributorIds": [
+        "mt_WaA8ssQp2K"
+      ],
+      "role": "component",
+      "task": "Remove completed comparison rows and answer explanations. With neutral dated facts available or read aloud, have the learner construct a comparison of the Afghanistan and Brazil cases, identifying input/access arrangement and at least two supported daily-life consequences. Use the selected Viet Nam school case for a fresh comparison, then independently answer P/Q/R, separating physical water, access and quality and identifying what remains unknown.",
+      "requiredEvidence": [
+        "physical-versus-safe-usable-access",
+        "two-world-region-cases-place-date-limits",
+        "two-supported-community-consequences",
+        "third-case-comparison-transfer",
+        "P-source-remains-route-stops",
+        "Q-quality-unknown-withhold-both-safety-verdicts",
+        "R-empty-store-no-created-supply",
+        "explicit-evidence-limits"
+      ],
+      "completedRowsOrTeacherAnswersSufficient": false,
+      "neutralFactReadingAllowed": true,
+      "sameCountryCasesAloneSufficient": false,
+      "wholeOtherTopicAward": false,
+      "actualPupilInterventionRequiredForAuthoring": false
+    }
+  },
+  "sourceReadBindings": [
+    {
+      "claim": "The dated UNICEF account supports the three named local supply cases and their bounded daily-life/collection consequences; it is not a current national guarantee.",
+      "source": "UNICEF Supply Division, complete main explanatory body/captions read; 25 August 2025 account, read2026-11-12. Linked images/stories not inspected.",
+      "url": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world",
+      "verified": true
+    },
+    {
+      "claim": "Access where and when needed and known water quality are separate conditions of safely managed drinking-water service. Collection time and daily uses can be affected by access.",
+      "source": "WHO Drinking-water, main body read87–135; adopt only access/availability/quality definition99 and general collection/daily-life relations115–116. No clinical or statistical claims adopted.",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water",
+      "verified": true
+    },
+    {
+      "claim": "Natural source, source protection, treatment and distribution have distinct roles; a source or pipe alone is not a universal quality guarantee.",
+      "source": "US EPA Basic Information about Source Water Protection, complete main15–67 read; bounded system relation only, no U.S. legal responsibility imported.",
+      "url": "https://www.epa.gov/sourcewaterprotection/basic-information-about-source-water-protection",
+      "verified": true
+    }
+  ],
+  "existingAccessibleRouteResources": [
+    "ontario-grade2-household-water-sources-task-design-2026-11-12.json"
+  ],
+  "existingWaterLocationRole": "prerequisite-only; no new direct source pair fabricated",
+  "negativeBoundaries": {
+    "countryStereotypesAllowed": false,
+    "currentServiceGuarantee": false,
+    "unknownQualityMeansUnsafe": false,
+    "numericalOrClinicalGate": false,
+    "historicalWaterRowsRecertified": false,
+    "parentRollup": false,
+    "oldClaimAwardFromSourceTask": false,
+    "downstreamPublication": false
+  },
+  "publicationBoundary": "Authoring only; actual configured delivery/performance not claimed. No learner migration/reset."
+}

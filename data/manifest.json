@@ -22,17 +22,17 @@
     "cbse-ctai-2026"
   ],
   "counts": {
-    "topics": 1907,
+    "topics": 1912,
     "topicsBySubject": {
       "Computing": 52,
       "English": 339,
-      "Geography": 33,
+      "Geography": 34,
       "History": 118,
       "Learning to Learn": 20,
       "Life Skills": 49,
-      "Mathematics": 582,
+      "Mathematics": 583,
       "Personal & Social Development": 123,
-      "Science": 579,
+      "Science": 582,
       "Art & Design": 4,
       "Performing Arts": 4,
       "Français": 4
@@ -40,20 +40,20 @@
     "dependencies": 4002,
     "curricula": 21,
     "curriculumStandards": 8721,
-    "topicStandardLinks": 12183,
+    "topicStandardLinks": 12566,
     "clusters": 177,
-    "teachingResearch": 1092,
+    "teachingResearch": 1097,
     "archivedTeachingResearch": 5,
-    "curriculumAlignments": 5068
+    "curriculumAlignments": 5368
   },
   "files": {
     "topics.json": {
-      "bytes": 2810169,
-      "sha256": "d851be3b4eff1396eabdb1f8a0ace8a16361e2b21e54b390f524fdc04adc0c9b"
+      "bytes": 2850439,
+      "sha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35"
     },
     "dependencies.json": {
-      "bytes": 880522,
-      "sha256": "a9761ae7f6df02b4717064e5ed678651b0116e5325a44ec1999202b23d53792f"
+      "bytes": 880941,
+      "sha256": "ed38d8a265699d1687a7fa8166c528999e21771d54449a84ea5362dc1d0e7758"
     },
     "curriculum-standards.json": {
       "bytes": 2859477,
@@ -64,16 +64,16 @@
       "sha256": "4e112dd2fc3373666d9f33e7a0314798f282b67b650063ec5afeb69b7af5dbc3"
     },
     "teaching-research.json": {
-      "bytes": 23993322,
-      "sha256": "2d943675a6d1eae220b684d2f23a308f6cbae2894ac36feccf013179f632c993"
+      "bytes": 24065895,
+      "sha256": "5d41734cf3d6ae9c6a947fed4ade220ea64115b75c01f8fdfc656baff25a4bb5"
     },
     "archived-teaching-research.json": {
       "bytes": 121411,
       "sha256": "28cc37220a78bdbfb37bd5693e8b729571e87c5d0ba471692707a07a7ef6c73f"
     },
     "curriculum-alignments.json": {
-      "bytes": 1736442,
-      "sha256": "6945b1f39ce1c1d98730dd2d9c4c7e0d7476335d254fc84038e3744ddbeaa802"
+      "bytes": 1819651,
+      "sha256": "63734721b57fa497e2330851b6d8fadfd09cf530b7ecd7816929515bca1264f4"
     }
   },
   "excluded": [
@@ -84,10 +84,10 @@
   "teachingResearch": {
     "schemaVersion": 1,
     "exportedAt": "2026-11-02T21:58:18.320Z",
-    "topicFileSha256": "d851be3b4eff1396eabdb1f8a0ace8a16361e2b21e54b390f524fdc04adc0c9b",
+    "topicFileSha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35",
     "coverage": {
-      "topicCount": 1907,
-      "withResearch": 1092,
+      "topicCount": 1912,
+      "withResearch": 1097,
       "withoutResearch": 815,
       "bySubject": {
         "Computing": {
@@ -101,8 +101,8 @@
           "withoutResearch": 339
         },
         "Geography": {
-          "topics": 33,
-          "withResearch": 11,
+          "topics": 34,
+          "withResearch": 12,
           "withoutResearch": 22
         },
         "History": {
@@ -121,8 +121,8 @@
           "withoutResearch": 46
         },
         "Mathematics": {
-          "topics": 582,
-          "withResearch": 500,
+          "topics": 583,
+          "withResearch": 501,
           "withoutResearch": 82
         },
         "Personal & Social Development": {
@@ -131,8 +131,8 @@
           "withoutResearch": 117
         },
         "Science": {
-          "topics": 579,
-          "withResearch": 550,
+          "topics": 582,
+          "withResearch": 553,
           "withoutResearch": 29
         },
         "Art & Design": {

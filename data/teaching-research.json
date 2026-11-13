@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "version": "v1",
   "exportedAt": "2026-11-02T21:58:18.320Z",
-  "topicFileSha256": "d851be3b4eff1396eabdb1f8a0ace8a16361e2b21e54b390f524fdc04adc0c9b",
-  "recordCount": 1092,
+  "topicFileSha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35",
+  "recordCount": 1097,
   "coverage": {
-    "topicCount": 1907,
-    "withResearch": 1092,
+    "topicCount": 1912,
+    "withResearch": 1097,
     "withoutResearch": 815,
     "bySubject": {
       "Computing": {
@@ -20,8 +20,8 @@
         "withoutResearch": 339
       },
       "Geography": {
-        "topics": 33,
-        "withResearch": 11,
+        "topics": 34,
+        "withResearch": 12,
         "withoutResearch": 22
       },
       "History": {
@@ -40,8 +40,8 @@
         "withoutResearch": 46
       },
       "Mathematics": {
-        "topics": 582,
-        "withResearch": 500,
+        "topics": 583,
+        "withResearch": 501,
         "withoutResearch": 82
       },
       "Personal & Social Development": {
@@ -50,8 +50,8 @@
         "withoutResearch": 117
       },
       "Science": {
-        "topics": 579,
-        "withResearch": 550,
+        "topics": 582,
+        "withResearch": 553,
         "withoutResearch": 29
       },
       "Art & Design": {
@@ -5456,7 +5456,7 @@
           "full": "Decodes the interval from labelled marks, reads part-filled scales at varied intervals, estimates against sensible referents with the correct unit, and solves one-step mass/volume word problems — transferring across g, kg and litres.",
           "partial": "Reads the scale when intervals are labelled or 'friendly' and estimates roughly, but cannot work out an unlabelled interval value or misjudges a non-standard step; solves the word problem only when the operation is obvious."
         },
-        "diagnosticPrompt": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five small unlabelled marks between (so each is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers.",
+        "diagnosticPrompt": "Set out (1) a measuring jug part-filled to 340 ml on a scale labelled every 100 ml with five equal intervals between successive labelled 100 ml marks (four interior unlabelled marks, so each interval is 20 ml); (2) a textbook and a 1 kg bag of sugar; (3) a card reading '3 bags each weigh 250 g — what is the total mass?'. Say: 'Read how much water is in the jug and talk me through the scale; estimate the mass of the book and tell me if you'd use grams or kilograms; then solve the card.' Watch the scale-reading method and whether the estimate is sensible — not just the numbers.",
         "whatMakesItDiscriminate": "A child who understands the unit decodes the interval (reads 340) and estimates against a referent (hundreds of grams, unit = grams); a child who doesn't either counts the marks (reads '3' or '34' or the nearest labelled 300), or estimates with no unit sense ('5 kg') and mis-picks the unit. Decoding-the-interval versus counting-the-marks produces a visibly different reading of the SAME jug."
       },
       "sources": [
@@ -6576,7 +6576,7 @@
           "Any two pieces count as 'halves' regardless of size — the equal-parts requirement is missing",
           "A half is only the one piece you take, not seeing that both parts are halves and together make the whole",
           "Calling any fractional part 'a half' (a documented early error — IES)",
-          "Sharing a set by equal NUMBER of items rather than equal AMOUNT when items differ in size (number-vs-quantity confusion)"
+          "Confuses half the number of objects with half a measured total (such as mass). Equal counts correctly halve a counted set even if object sizes differ; a different measure requires its own equality check."
         ]
       },
       "learn": {
@@ -6587,7 +6587,7 @@
             "feedback": [
               "If the cut is off-centre: 'Would that be fair? The two parts are not the same size, so neither one is a half. Slide the cut until both parts match.'",
               "When equal: 'Now both parts are the same — these are two equal halves, and together they make the whole bar.'",
-              "For the set mode with equal counts but unequal item sizes: ask 'Same number, or same amount?' to separate quantity from count."
+              "For different-sized items, name the quantity: 'We shared half the number of objects to each person. Did we also share half the total mass?' Equal count is valid for the counted set and need not imply equal mass."
             ],
             "rationale": "Halving is an action on a whole; letting the child physically cut/fold or share and then check equality makes 'two equal parts' felt rather than told. Live equality feedback (recolouring, snapping, refusing 'done' until amounts match) makes the fairness criterion concrete. These interactions are illustrative examples of the mechanism, not required technology, and their effectiveness relative to other media is untested.",
             "sourceClaims": [
@@ -6598,7 +6598,7 @@
             "learnerActions": [
               "Drag a cutting line across a rectangular chocolate bar (cutting straight across its length); when the cut is off-centre, note that the two parts are unequal (e.g. they glow red / are labelled 'not halves – not fair') and when at the midpoint the two parts are equal (snap green / labelled 'two equal halves').",
               "Slide the two equal halves back together to remake the whole bar, saying 'two halves make one whole'.",
-              "Switch to a set mode: share a plate of biscuits (or counters) into two hoops, and only accept it as 'done' when the two amounts match.",
+              "Switch to a counted-set mode: share an even number of biscuits or counters into two hoops, and check both groups have equal numbers. If measuring total mass instead, explicitly change the whole being halved and check that measure separately.",
               "Check equality by matching or overlaying the parts, and describe each as 'a half' and 'the other half'."
             ],
             "intendedInsight": "A half requires two EQUAL parts; the count of two pieces alone does not make halves. Both parts are halves, and together they rebuild the whole."
@@ -6606,9 +6606,9 @@
           {
             "title": "Share the set first",
             "feedback": [
-              "'You gave each person the same number — but are the amounts the same? Look at the sizes.'",
-              "Use colour cues to separate quantity from count, and ask 'same number, or same amount?'",
-              "Confirm: 'When both sides have the same amount, each side is half of the whole set.'"
+              "You gave each person the same number, so each has half the counted set. If the question is half the total mass instead, we need to check mass; looking at size alone is not a measurement.",
+              "Name the quantity before judging equality: number of objects, length, area or mass. Use pictures or colour to support that distinction without rejecting a correct equal-count half-set.",
+              "When each group contains half the total number of objects, each is half the counted set. Half the total mass is a separate statement that needs equal mass."
             ],
             "rationale": "The IES progression recommends starting from sharing a set evenly before partitioning a single object, building on the halving strategy children already bring. Discrete sharing also surfaces the number-versus-quantity confusion directly. The sequence is a recommended progression, not proven more effective than alternatives.",
             "sourceClaims": [
@@ -6617,10 +6617,10 @@
             ],
             "learnerActions": [
               "Share a set of objects (for example, 8 counters, or 6 sweets) evenly between two people, giving one each in turn until the pile is gone.",
-              "State how many each person gets and, when all the objects are the same size, that each group is 'half of' the set.",
-              "With objects of different sizes (big and small sweets), check whether equal COUNT gives equal AMOUNT, and discuss which sharing is fair."
+              "State how many each person gets and that each equal-number group is half the counted set, whether or not the individual objects have the same size.",
+              "With different-sized objects, explicitly compare half the number with half a measured total. Equal counts halve the counted set; they need not halve total mass. Discuss fairness only after stating the intended quantity or agreed criterion."
             ],
-            "intendedInsight": "'Half of' a quantity is found by sharing equally into two groups; fairness means equal amount, which may differ from equal number when items vary in size."
+            "intendedInsight": "Half means one of two equal parts of a declared whole: equal count for a counted set, equal length for a length, equal area for an area, or equal mass for a mass. These are different quantities; fairness depends on the stated aim."
           },
           {
             "title": "Halved or not? Sort and choose",
@@ -6682,7 +6682,7 @@
           "If I put the two pieces back together, what do I get?",
           "Can one half ever be bigger than the other half of the same bar? Why not?",
           "Here are 6 sweets - show me half of them. How did you decide?",
-          "If I share 6 big sweets and 6 tiny sweets by giving each of us 6, do we have the same AMOUNT?"
+          "If we share twelve sweets into six each, have we each received half the number? Yes. If some sweets are larger, does that also establish half the total mass? No; that is a separate measured quantity."
         ],
         "correctAnswer": "No - the two pieces are not equal, so neither is a half. Halves must be two EQUAL parts; you would have to break the bar so both pieces are the same size. Two equal halves put back together make the whole bar.",
         "errorPatterns": [
@@ -6712,16 +6712,16 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Halving a set by equal NUMBER of items, not equal AMOUNT, when items differ in size",
-            "nextMove": "Use colour cues to separate quantity from count (IES); ask 'same number, or same amount?'",
+            "pattern": "Confuses half the number of objects with half a measured total, without naming which quantity is being halved.",
+            "nextMove": "Declare the whole and quantity: equal counts correctly halve the counted set; check an appropriate measure if the task instead asks for half the total mass, length or area.",
             "distractor": null,
-            "revealedBy": "Given big and small items, gives each side the same COUNT even though the amounts differ",
+            "revealedBy": "Claims equal counts must also give equal total mass for unequal-sized items, or rejects equal counts as half the counted set solely because item sizes differ. Equal counts alone are not an error.",
             "reteachPrerequisiteId": "mt_LpSuPgL31x"
           }
         ],
         "responseLevels": {
           "gap": "Counts any two pieces as halves regardless of size, or calls any part 'a half'.",
-          "full": "States a half is one of TWO EQUAL parts, checks equality by matching, knows two halves make the whole, and halves a set by equal amount (not just equal count).",
+          "full": "States a half is one of TWO EQUAL parts of a declared whole, checks the relevant equality, knows two halves make the whole, and halves a counted set by equal count while distinguishing this from half a separately measured quantity.",
           "partial": "Says halves must be equal for a simple shape but does not apply it to a set/quantity, or names one piece 'the half' without seeing both are halves; cannot transfer to the unequal-cut or the big/small set."
         },
         "diagnosticPrompt": "Show a chocolate bar snapped into two pieces - one big, one small. Ask: 'Is one of these pieces a half of the bar? How do you know?' Then ask: 'What would I have to do to make two halves - and if I put the two halves back together, what do I get?'",
@@ -9869,7 +9869,7 @@
         "commonMisconceptions": [
           "Believing a fraction must be less than 1, so an improper fraction like 7/4 'isn't a real/proper number' or must be an error.",
           "Adding denominators when joining unit fractions: 1/4 + 1/4 = 2/8 rather than 2/4.",
-          "Whole-number bias in placing improper fractions: reading 7/4 as near 7 (or treating the 7 as the dominant number) rather than as seven quarters just past 1 3/4.",
+          "Whole-number bias in placing improper fractions: reading 7/4 as near 7 (or treating the 7 as the dominant number) rather than as seven quarters exactly at 1 3/4.",
           "Losing the unit: writing 3/5 = 1/5 + 1/5 + 1/5 but unable to say the denominator stays 5 because each part is the same size 1/5.",
           "Thinking the number line 'stops' at 1 for fractions, so not continuing the jumps past the whole."
         ]
@@ -9984,12 +9984,12 @@
         "method": "two_tier",
         "poeTask": "Before making any jumps, ask the child to PREDICT where seven jumps of 1/4 from 0 will land: before 1, exactly on 1, or past 1 — and to say WHY. The stated reason is the diagnostic part: a child expecting it to stop at or before 1 reveals the fraction-must-be-less-than-1 belief. Then iterate the seven quarter-jumps together, crossing 4/4 = 1 and landing at 1 3/4, and have the child explain the mismatch with their prediction.",
         "probeDeeper": [
-          "You made seven jumps and landed just past 1 3/4. Why doesn't 7/4 land near 7, when there's a 7 in it?",
+          "You made seven jumps and landed exactly at 1 3/4. Why doesn't 7/4 land near 7, when there's a 7 in it?",
           "What if the fraction had been 7/3 instead of 7/4 — would your jumps be bigger or smaller, and would you land further from or closer to 0? Why?",
           "When you write 7/4 = 1/4 + 1/4 + ... seven times, why does the bottom number stay 4 the whole way and not grow?",
           "At the fourth jump you reached exactly 1. What is that point as a fraction, and why does the counting not have to stop there?"
         ],
-        "correctAnswer": "Seven equal jumps of 1/4 from 0, landing at 1 3/4; 7/4 = 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4. Yes, 7/4 is a real number — it is seven quarters, a definite point just past 1 3/4 on the line.",
+        "correctAnswer": "Seven equal jumps of 1/4 from 0, landing at 1 3/4; 7/4 = 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4. Yes, 7/4 is a real number — it is seven quarters, a definite point exactly at 1 3/4 on the line.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -10009,7 +10009,7 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Whole-number bias: places 7/4 near 7 (or treats the 7 as dominant) rather than as seven quarters just past 1 3/4.",
+            "pattern": "Whole-number bias: places 7/4 near 7 (or treats the 7 as dominant) rather than as seven quarters exactly at 1 3/4.",
             "nextMove": "Count the quarters together onto the line so 7/4 is felt as seven small jumps reaching only 1 3/4. Contrast with 7 whole-ones. Reteach that the denominator sets the size of each counted unit.",
             "distractor": "7/4 is close to 7 on the number line.",
             "revealedBy": "Marks 7/4 far to the right near 7, or orders it as if larger than 6/4-and-under by the numerator alone without regard to the unit.",
@@ -11545,7 +11545,7 @@
           "full": "Places rainforests in a belt near the Equator across several continents (Amazon/Congo/SE Asia) and explains they grow there because it's hot and wet all year, not at the poles.",
           "partial": "Names one or two rainforest regions but can't connect them to the hot, wet belt near the Equator."
         },
-        "diagnosticPrompt": "Could there be a big rainforest at the North Pole, or right here in Britain? Where on Earth do rainforests grow, and why there and not just anywhere?",
+        "diagnosticPrompt": "Could there be a big tropical rainforest at the North Pole, or right here in Britain? Where on Earth do tropical rainforests grow, and why there and not just anywhere?",
         "whatMakesItDiscriminate": "A child who thinks rainforests are 'everywhere' or only 'the Amazon' misses the Equator belt; the concept child ties location to the hot-wet climate near the Equator. The reason-tier forces the climate reason, not just naming places."
       },
       "sources": [
@@ -12099,7 +12099,7 @@
         "poeTask": null,
         "probeDeeper": [
           "'The hour hand is between the 7 and the 8. Is it half past 7 or half past 8 — how do you decide?'",
-          "'If I move the hour hand to point exactly at the 7, is it still half past 7? What time is it now?'",
+          "On a geared clock, wind back from half past seven until the hour hand points exactly at 7. Where is the minute hand now, and what time does the linked clock show? (Minute hand 12,7 o’clock.) Do not silently move only one independent hand and ask for a coherent new time.",
           "'Which hand did you look at first to know it was HALF past — and what told you it was a half?'"
         ],
         "correctAnswer": "Reads 'half past 3', explaining the minute hand on 6 means half way round (half past) and the hour hand between 3 and 4 means it is past 3 (the last number passed). Draws half past 7 with the minute hand on 6 and the hour hand HALFWAY between 7 and 8.",
@@ -17837,12 +17837,12 @@
           "If you had 12 + 5, would you still use fingers — what would you reach for instead?",
           "Can you do 8 + 7 now without any tool — what happened in your head?"
         ],
-        "correctAnswer": "No single scored answer — listen for the child noticing fingers run out past ten (a limitation) and that the ten frame helps because it shows 'fill to ten, then the rest', and for a fit-REASON tied to the numbers rather than 'I just like cubes'.",
+        "correctAnswer": "No single scored answer: listen for a valid tool-and-strategy fit reason tied to this problem. A ten frame can show the gap to ten; fingers can track counting on from eight. Showing all fifteen objects simultaneously on ten fingers exceeds that particular representation, but this is not a limitation of every finger strategy.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "Reaches for the same familiar tool every time by comfort, not fit — 'I always use my fingers' — even when the numbers cross ten",
-            "nextMove": "Pose paired problems (3+2 then 8+7) where the same tool fits one and fails the other, and make the finger limitation visible; ask which tool the numbers call for.",
+            "nextMove": "Compare 3 + 2 and 8 + 7 and ask how the chosen tool and strategy helps each. Directly showing every object on a finger runs out above ten; counting-on can still work. Discuss a real limitation of the attempted strategy rather than require a valid tool to fail.",
             "distractor": null,
             "revealedBy": "Names the same tool for every problem including 8+7 and cannot say why it suits this one",
             "reteachPrerequisiteId": null
@@ -17865,12 +17865,12 @@
           }
         ],
         "responseLevels": {
-          "gap": "Uses a tool or names a favourite but gives no fit-reason, or cannot work without it, and does not notice that fingers run out past ten.",
-          "full": "Unprompted, matches the tool to the problem (ten frame for crossing ten), names the finger limitation, explains what the frame reveals (the gap to ten), and would switch tools for a smaller problem where fingers fit.",
+          "gap": "Uses or names a tool but cannot explain how it supports the chosen problem, or treats its steps as a ritual without linking them to quantity or structure. Correct counting-on with fingers is not itself a gap.",
+          "full": "Independently chooses and uses a valid tool and strategy, explains why it helps these numbers, recognises a limitation when it actually applies, and compares an alternative or changed problem without being required to choose a predetermined tool.",
           "partial": "Chooses a sensible tool and, when prompted, says the ten frame 'shows ten', but the reason is about the tool in general rather than why it fits THIS problem, and the finger limitation is not raised spontaneously."
         },
         "diagnosticPrompt": "Here's 8 + 7. One child worked it out on their fingers, another used the ten frame. Which tool helped more for THIS problem, and why? What could go wrong with using fingers here?",
-        "whatMakesItDiscriminate": "A child who merely uses tools names a favourite; a child who chooses strategically points to the PROBLEM (the numbers cross ten) and to the tool's fit or limitation. 8+7 is chosen deliberately to cross ten so the finger limitation is real, not hypothetical — a 3+2 problem would not separate the two children."
+        "whatMakesItDiscriminate": "The fit reason distinguishes strategic choice from ritual or preference. At 8 + 7, a ten frame exposes the gap to ten; fingers can also track a valid counting-on strategy. Only representing all fifteen objects at once exceeds ten fingers. Ask how the actual strategy works and compare with 3 + 2; do not infer an error merely from the selected tool."
       },
       "sources": [
         {
@@ -24982,10 +24982,10 @@
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Divides by the numerator: reads '3/8 of 24' as 24 ÷ 3 and makes 3 groups (or takes just 3 counters), giving 8 or 3",
+            "pattern": "Divides by the numerator: reads '3/8 of 24' as 24 ÷ 3, makes 3 groups of 8 instead of 8 groups of 3, and reports 8. Taking 3 single counters is a different error: treating the numerator as an item count without partitioning.",
             "nextMove": "Return to the meaning of the denominator: it says how many equal shares. Rebuild with 'how many equal groups does /8 mean?' before touching the numerator.",
             "distractor": null,
-            "revealedBy": "Child makes 3 groups instead of 8, or grabs 3 counters straight away — using the top number as the divisor",
+            "revealedBy": "Child makes 3 equal groups of 8 and reports 8, using the top number as the divisor. If the child simply grabs 3 single counters, record numerator-as-item-count confusion separately rather than infer that they divided by 3.",
             "reteachPrerequisiteId": "mt_k2WE0-22-4"
           },
           {
@@ -25001,7 +25001,7 @@
             "pattern": "Multiplies the whole by the numerator: computes 24 × 3 = 72, giving an answer larger than the starting quantity",
             "nextMove": "Trigger the plausibility check first ('can 3/8 of 24 be more than 24?'), then rebuild the divide-first step with the bar model.",
             "distractor": null,
-            "revealedBy": "Child produces a number bigger than 24 with no partitioning, or multiplies before dividing",
+            "revealedBy": "Child reports the numerator product alone (24 × 3 = 72) without completing the denominator division or explaining equivalent fraction reasoning. Multiplying first is not itself an error: 24 × 3 ÷ 8 = 9 is valid when both operations are completed and justified.",
             "reteachPrerequisiteId": "mt_k2WE0-22-4"
           }
         ],
@@ -25011,7 +25011,7 @@
           "partial": "Executes both steps for the practised case (makes 8 groups, takes 3, gets 9) but treats them as a memorised recipe — cannot explain why the denominator divides, or stalls when the fraction changes to 5/8 or the context changes to money."
         },
         "diagnosticPrompt": "Here are 24 counters. Find 3/8 of them. Do it however you like, and I'll watch — you don't need to tell me the rule.",
-        "whatMakesItDiscriminate": "Because the teacher WATCHES the procedure rather than asking about it, the two canonical breakdowns show themselves in the child's actions: a child who divides by the numerator makes 3 groups; a child who stops after one step makes 8 groups but reports 3; only a child who has the divide-then-multiply structure makes 8 groups AND takes 3 of them. 24 is chosen so 3/8 divides evenly (no remainder to mask the error) and the numerator (3) differs from the group size (also 3) is avoided — deliberately 24 gives group size 3 and numerator 3, so watch that they take 3 GROUPS not 3 counters: taking 3 counters instead of 3 groups is the exact tell for divide-by-numerator confusion."
+        "whatMakesItDiscriminate": "Watching the procedure separates the errors: making 3 groups of 8 uses the numerator as divisor; making 8 groups of 3 but reporting only 3 stops at the unit fraction; grabbing 3 single counters without partitioning treats the numerator as an item count. A secure response makes 8 groups and takes 3 groups, giving 9. Because the numerator and group size both equal 3 here, the answer 3 alone cannot distinguish the two latter errors; watch the actions and use a further case such as 3/4 of 24 (group size 6, numerator 3). Division by 3 also leaves no remainder, so a visible leftover cannot diagnose the first error. A mathematically equivalent multiply-then-divide route is also valid if both operations and the fraction meaning are explained; multiplication first alone does not establish a misconception."
       },
       "sources": [
         {
@@ -27437,7 +27437,7 @@
             "title": "Drag the minute hand and watch the count-in-fives and digital readout",
             "feedback": [
               "If the child reads the numeral literally (4 -> '4 minutes past'), re-run the count-in-fives tape aloud pairing each numeral with x5 until the 4 -> 20 link is fluent.",
-              "If the child keeps counting past the half hour ('40 past 3' for 3:40), point to the 12-6 partition: right is past, left is to, and 'to' times belong to the NEXT hour, so 3:40 is 'twenty to four'.",
+              "Forty minutes past three and twenty minutes to four name the same time,3:40. Accept the equivalence; when practising conventional next-hour wording, ask the learner to count the 20 minutes remaining until four.",
               "If the child treats the time as a decimal (e.g. thinks 3.50 means half past three, or that minutes run up to 99), model the colon convention and count the real 60 minutes on the dial to show the hour is 60, not 100.",
               "If the child assigns a.m./p.m. by how late it feels, slide the day-strip marker so the same hand position lands once in the morning and once after noon, 12 hours apart."
             ],
@@ -27459,7 +27459,7 @@
           {
             "title": "Read, convert and sort: discrimination practice",
             "feedback": [
-              "'3:40' is 'twenty to four', not 'forty past three' — the minute hand is left of the 12-6 line, so name it against the next hour.",
+              "3:40 can be expressed equivalently as forty minutes past three or twenty minutes to four. Practise converting to the next-hour form when requested, rather than treating the equivalent elapsed-minutes reading as a wrong time.",
               "When a child treats the minutes as a decimal (e.g. 3.50 read as half past three), re-show the colon convention and count the 60 minutes on the dial so the hour is 60, not 100.",
               "If a.m./p.m. sorting goes by 'how late it feels', revisit the noon/midnight split and that each clock time occurs twice a day."
             ],
@@ -27469,7 +27469,7 @@
             ],
             "learnerActions": [
               "Match analogue clock faces (with a.m./p.m. given) to their 12-hour and 24-hour digital times (and back), e.g. twenty to four in the afternoon = 3:40 p.m. = 15:40.",
-              "Answer discriminating questions such as 'Is 3:40 forty past three or twenty to four?'",
+              "Express 3:40 as forty minutes past three and as twenty minutes to four, and explain why both locate the same time. Independently produce the requested next-hour form for a fresh example.",
               "Sort daily activities (breakfast, school, bedtime) into a.m. and p.m.",
               "Write a shown clock as h:mm, using a colon."
             ],
@@ -27552,18 +27552,18 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Confuses times 'past' and 'to' — keeps counting past the half hour ('40 past 3' for 3:40) instead of switching to '20 to 4'",
+            "pattern": "Cannot convert a correct elapsed-minutes reading to the next-hour to-form when explicitly asked, or names the wrong next hour. Forty minutes past three is itself equivalent to 3:40, not a numerical misconception.",
             "nextMove": "Use the vertical 12-6 partition (right=past, left=to) and a number line showing 40 past = 20 to; stress that 'to' times relate to the NEXT hour.",
             "distractor": null,
-            "revealedBy": "Reads 3:40 as 'forty past three'; never flips to naming it against the next hour",
+            "revealedBy": "When asked for minutes remaining until the next hour at 3:40, cannot find 20 minutes to four or instead says twenty to three. Merely saying forty minutes past three does not establish a wrong time reading.",
             "reteachPrerequisiteId": "mt_HNOPGJYiRK"
           },
           {
             "kind": "interference",
-            "pattern": "Treats the hour as base-10 — writes a decimal point instead of a colon and/or thinks there are 100 minutes in an hour (so 50 past 3 = 50 to 4)",
+            "pattern": "Interprets the time separator as a decimal fraction or assumes 100 minutes per hour, for example saying 50 past 3 is 50 to 4. A full-stop time separator used conventionally is not itself this error; practise the requested colon format separately.",
             "nextMove": "Model the colon convention and count the real 60 minutes on the clock face so the child sees the hour is 60, not 100 — ground it on the dial, not on the base-10 number system or 100-pence-in-a-pound.",
             "distractor": null,
-            "revealedBy": "Writes '3.25'; says 50 past 3 is 50 to 4",
+            "revealedBy": "Explains the minutes as hundredths of an hour or says 50 past 3 is 50 to 4. Writing 3.25 alone can be a conventional time notation and does not diagnose base-ten reasoning.",
             "reteachPrerequisiteId": null
           },
           {
@@ -27576,7 +27576,7 @@
           }
         ],
         "responseLevels": {
-          "gap": "Reads the numeral as the minutes, or reads a digital time literally with no past/to sense; assigns a.m./p.m. by feel; writes times with a decimal point.",
+          "gap": "Reads the clock numeral as the minutes, cannot relate equivalent past/to readings, assigns a.m./p.m. by feel, or treats minutes as hundredths of an hour. A conventional full-stop separator alone is not a mathematical gap.",
           "full": "Reads any 5-minute analogue time by counting in fives, converts fluently between analogue and 12-hour digital (colon, correct past/to), and labels a.m./p.m. correctly, knowing each time occurs twice a day and what noon and midnight mean.",
           "partial": "Reads and writes 5-minute times correctly for 'past' times and simple cases, but is caught switching to 'to' times, or muddles a.m./p.m. and noon/midnight."
         },
@@ -37645,13 +37645,13 @@
           "Mention in passing that many other animals have these senses too (though not every animal has all five), so children don't assume senses are human-only.",
           "A labelled on-screen figure names and reveals links but does not elicit real sensory handling; pair screen work with real classroom sense-play as the primary first-hand anchor.",
           "Scored matching/multiple-choice can check the mapping but does not itself elicit the first-hand experience or explanation; best-practice anchoring is to lead with real first-hand sense-play rather than relying on a scored check alone.",
-          "Smell and taste working together is a real phenomenon, but a blocked-nose taste test should only be done safely, with familiar foods and no choking or allergy risk; keep it gentle and optional."
+          "Smell contributes to flavour while the tongue detects basic tastes. Teach this with a familiar supplied cold/blocked-nose example or ordinary comfortable sensory experiences; do not blindfold, pinch/block a pupil’s nose, restrict breathing or require food tasting. Optional tasting uses only familiar adult-checked food and willing participation; lack of tasting is not failure to identify sense-organ links."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite without fresh source verification; sources were NOT re-fetched. Activities are research-informed proposals, not validated interventions.",
           "Two of the three sources are marked unverified in the row (NGSS mapping claim and the OU OpenLearn misconception/first-hand-experience claim); do not treat them as confirmed.",
           "The 'eyes send out something to see' item is listed as a misconception to keep simple; the guidance deliberately avoids teaching any seeing mechanism, which is appropriate for age 5–6.",
-          "The source's blindfold/nose-pinch taste test is retained only as an optional, safely-run demonstration; ensure no allergy/choking hazard before use.",
+          "Historical rewrite retained the source’s blindfold/nose-pinch taste test as optional. The current bounded safety clarification retires that physical manipulation and heat-testing probe in favour of optional room-temperature self-touch, a gentle sound and a supplied flavour example; source verification flags and the body-part/sense claim remain unchanged.",
           "Claims that doing-with-feedback or playful reveal 'teach better' than scored tests or passive review were softened to proposed/scoped wording, as no source in the row establishes such efficacy comparisons.",
           "The row's US/NGSS cross-standard context was condensed out of the learner guidance; the UK Y1 standard anchors the summary. Reinstate the US note only if downstream guidance needs the cross-curriculum framing."
         ],
@@ -37659,19 +37659,19 @@
       },
       "assess": {
         "method": "two_tier",
-        "poeTask": "Blindfold a child and pinch their nose shut, then have them taste small pieces of apple and raw potato (or onion). Ask them first to PREDICT whether they'll tell the foods apart by taste alone, and why. Most predict yes ('my tongue tastes it'); struggling to distinguish them with the nose blocked reveals that smell drives much of flavour.",
+        "poeTask": "Before a safe gentle sound and optional room-temperature texture trial, pupil predicts which sense/body part will notice it. With access and consent, actually present the sound/cloth, then compare the prediction and identify ears/hearing and skin/touch. Use a checked familiar smell where appropriate and the supplied cold/blocked-nose everyday example to explain that smell contributes to flavour while the tongue detects basic tastes. Do not blindfold, pinch/block the nose, restrict breathing or give unidentified food; actual tasting is not necessary to identify the five sense-organ links. Record access and which actual experiences were available.",
         "probeDeeper": [
           "If you closed your eyes, could you still tell someone was stroking your arm — which sense is that and which body part?",
           "When you have a cold and a blocked nose, does your dinner taste as strong? Why might that be?",
           "Which sense would help you cross a road safely, and which body part does it use?",
           "Can you feel with your feet or your back, or only your hands — how could we test it?"
         ],
-        "correctAnswer": "The nose smells the cookies and the ears hear the beep. Feeling is done by the skin, which covers the whole body — not just the fingers — so any bit of skin (an arm, a cheek) can feel warmth or touch.",
+        "correctAnswer": "The nose senses the supplied familiar orange-peel smell; the ears hear the gentle bell; skin on the hand/forearm senses the room-temperature cloth, and skin elsewhere can also feel. Correctly associate eyes with sight, ears with hearing, nose with smell, tongue mainly with basic taste, and skin with touch. Smell contributes to combined flavour without making the tongue stop detecting basic tastes. Record access and actual sensory experiences honestly; no hot object, blindfold, blocked breathing or required tasting.",
         "errorPatterns": [
           {
             "kind": "misconception",
             "pattern": "You feel and touch only with your fingers or hands ('you feel with your hands')",
-            "nextMove": "Touch a warm (safe) mug to the cheek or forearm and ask what they feel; the whole skin is the organ of touch.",
+            "nextMove": "If comfortable, let the pupil move a room-temperature soft cloth over their own hand and forearm and describe the texture. Explain that skin elsewhere can feel; no hot object, adult touching or forced participation is needed.",
             "distractor": "Only your fingers can feel whether something is hot.",
             "revealedBy": "Says only fingers can feel whether something is hot; doesn't offer skin as the sense organ",
             "reteachPrerequisiteId": null
@@ -37679,17 +37679,17 @@
           {
             "kind": "misconception",
             "pattern": "You smell with your mouth / taste with your nose (taste and smell muddled)",
-            "nextMove": "The nose smells and the tongue tastes; show they team up by tasting food with the nose pinched.",
+            "nextMove": "Distinguish the nose sensing smell and the tongue sensing basic tastes; explain that both contribute to flavour using a familiar supplied example. Do not block breathing or require a tasting experiment.",
             "distractor": "You smell the cookies with your mouth.",
             "revealedBy": "Assigns the wrong organ — says you smell the cookies with your mouth or taste with your nose",
             "reteachPrerequisiteId": null
           },
           {
             "kind": "misconception",
-            "pattern": "Taste is all done by the tongue — a blocked nose wouldn't change it",
-            "nextMove": "Do a nose-pinched taste test; smell contributes a lot to flavour, so blocking the nose dulls taste.",
+            "pattern": "Smell contributes nothing to food flavour — confuses basic tastes sensed mainly by the tongue with the combined flavour experience.",
+            "nextMove": "Use the supplied everyday example of food seeming less flavourful during a blocked-nose cold, while the tongue can still detect basic tastes. Explain the smell contribution without pinching or blocking the pupil’s nose or claiming the tongue stops tasting.",
             "distractor": null,
-            "revealedBy": "Says food would taste exactly the same with a blocked-up nose",
+            "revealedBy": "Denies any smell contribution to food flavour even after distinguishing it from basic taste; do not mark a correct claim that the tongue still detects basic tastes as an error.",
             "reteachPrerequisiteId": null
           }
         ],
@@ -37698,7 +37698,7 @@
           "full": "Matches all five senses to their organs, knows skin all over is the touch organ, and explains taste and smell work together with a real example.",
           "partial": "Matches the obvious organs (eyes→see, ears→hear) but muddles taste/smell or limits touch to fingers."
         },
-        "diagnosticPrompt": "You walk into the kitchen and you can smell cookies baking, then the oven timer beeps and you hear it. Which part of your body did you use to smell the cookies, and which to hear the beep? And when you touch the warm tray to see if it's hot — is it only your fingers that can feel, or can other parts of you feel too?",
+        "diagnosticPrompt": "You notice a familiar orange peel smell and hear a gentle bell. Which body parts help you smell and hear? Now use a room-temperature soft cloth on your own hand or forearm if comfortable: which sense and body part notices its texture? Can skin elsewhere feel too? Use a body picture and taught examples to match all five senses; no hot object, forced touch, tasting, blindfold or blocked breathing.",
         "whatMakesItDiscriminate": "A child who understands the sense organs names nose for smell and ears for hearing and knows touch works through skin all over. A child who has only a partial picture says only the fingers can feel, or muddles taste and smell."
       },
       "sources": [
@@ -39771,7 +39771,7 @@
         "responseLevels": {
           "gap": "Misnames + / −, or reads = only as 'the answer is' and cannot narrate a situation with the symbols.",
           "full": "Uses +, − and = fluently to narrate and record situations, and treats = relationally as 'is the same as', coping with sums written either way round.",
-          "partial": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the right or a missing number."
+          "partial": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the left (e.g. 5 = 3 + 2) or a missing number."
         },
         "diagnosticPrompt": "Read this out loud and tell me what is happening: 3 + 2 = 5. Now here is a story — three ducks are swimming and two more come to join them. Say a number sentence for the story, and tell me what the = sign means here.",
         "whatMakesItDiscriminate": "Listen for how the child USES the symbols in context, not whether they can define them. A child with the relational meaning of = says 'is the same as' and is untroubled by 5 = 3 + 2; a child with the operator misconception reads = as 'the answer is' and expects the total to come immediately after it. Narrating a real situation with the symbols reveals genuine command."
@@ -48530,7 +48530,7 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Misorders 2- and 3-digit numbers by digit-count or first glance: places 73 above 137",
+            "pattern": "Misorders mixed-length whole numbers by ignoring their place values: places73 above137, for example by comparing7 with1 without aligning the tens and hundreds.",
             "nextMove": "Right-align by place; a number reaching the hundreds beats one that stops at tens. Line them up in columns.",
             "distractor": null,
             "revealedBy": "73 is ordered as if larger than a three-digit number, or numbers aren't aligned by place.",
@@ -48546,12 +48546,12 @@
           }
         ],
         "responseLevels": {
-          "gap": "Compares from the ones or by digit-count; symbol may be reversed.",
+          "gap": "Compares from the ones or ignores highest place values in mixed-length numbers; symbol may be reversed. Comparing digit counts is valid for non-negative whole numbers written without leading zeros, provided the higher-place reasoning is understood.",
           "full": "Compares hundreds-then-tens-then-ones, orders numbers to 1000 reliably, and records with >, =, < correctly.",
           "partial": "Orders clearly different numbers but errs on same-hundreds pairs or mixed-length sets."
         },
         "diagnosticPrompt": "Watch them compare and order. 'Put a symbol between 254 and 245. Now order these smallest to largest: 307, 370, 73, 137. Tell me which place you looked at first.' The 254/245 pair turns on the tens, and 73 tests mixing 2- and 3-digit numbers.",
-        "whatMakesItDiscriminate": "254 vs 245 share hundreds and differ only at the tens, so a ones-first comparer picks wrongly; including 73 checks whether the child aligns by place rather than counting digits. Watching where they start (hundreds) exposes the method."
+        "whatMakesItDiscriminate": "254 and245 share hundreds; the first differing place is the tens, although their ones also differ. A ones-first comparer picks wrongly. Including73 checks alignment and magnitude across two- and three-digit numbers; digit-count comparison without leading zeros is a valid shortcut when explained by the higher place. Watching the method and asking for justification exposes the place-value reasoning."
       },
       "sources": [
         {
@@ -54682,7 +54682,7 @@
           {
             "title": "Zoom from a day to the year: nesting made visible",
             "feedback": [
-              "If the child says a week is longer than a month, show the month-grid holding several week-rows: 'Count the full weeks inside this month — there are four whole weeks, and most months have a few days left over.'",
+              "If the child says a week is longer than a month, count the days: a Gregorian calendar month lasts 28–31 days, or four seven-day durations and zero to three extra days. Calendar week rows may cross month boundaries; they are not always four complete rows inside one month.",
               "If the child can't locate a birthday month in the year, point to the year-strip: 'Find the start of the year — now count along to your birthday month.'",
               "When the child explains that a month contains several weeks, affirm the nesting idea explicitly."
             ],
@@ -54782,7 +54782,7 @@
           "'What day comes after Sunday? Does the week just stop?' (cyclic structure)",
           "'Which is longer, a week or a month? How do you know?' (nesting)"
         ],
-        "correctAnswer": "Names the day after and before Wednesday without reciting from Sunday; places a month within the year (start/middle/end); uses the calendar to count on three days and names both the date and the weekday — showing days sit inside weeks inside months inside the year.",
+        "correctAnswer": "Names the day after and before Wednesday without reciting from Sunday; places a month within the year; uses a calendar to count on three days and names both date and weekday. Relates days, weeks, months and years while recognising that a week can cross a month boundary.",
         "errorPatterns": [
           {
             "kind": "developmental",
@@ -54795,7 +54795,7 @@
           {
             "kind": "developmental",
             "pattern": "Doesn't grasp the nesting — treats week, month and year as unrelated, or a year as vaguely 'a long time'",
-            "nextMove": "Do not reteach or confront this — the nested sense of time units firms up with age. Instead, build the nested structure visually — days inside a week-row, weeks inside a month-grid, months along a year-strip — and use ordering tasks ('which are shorter than a week?').",
+            "nextMove": "Practise the related units visually: days in a week-row and calendar month, months along a year-strip. Show a week spanning two month pages; weeks are not required to fit exactly inside months. Compare durations with concrete dates rather than re-drilling the chant.",
             "distractor": null,
             "revealedBy": "Can't locate a birthday month within the year, or says a week is longer than a month",
             "reteachPrerequisiteId": null
@@ -54811,7 +54811,7 @@
         ],
         "responseLevels": {
           "gap": "Can only recite the sequence from the start, if at all; shows no sense of nesting or of the cycle.",
-          "full": "Uses days and months functionally (any starting point, both directions), grasps the nesting (days in weeks in months in a year) and the cycle (the week/year repeats), and uses a calendar to locate and count dates.",
+          "full": "Uses days and months functionally from different starting points in both directions, relates their durations without treating every week as contained within one month, understands repeating weeks/years, and uses a calendar to locate and count dates.",
           "partial": "Names days/months in order and answers 'what's next' from a running start, but stumbles going backwards, jumping in from the middle, or relating weeks/months/years."
         },
         "diagnosticPrompt": "Use a real calendar and routine talk, listening for functional USE rather than recitation: (1) 'Today is Wednesday — what day will it be tomorrow? What day was it yesterday?' (2) 'What month is your birthday in? Is that near the start or the end of the year?' (3) Using a January calendar: 'Your party is on Saturday the 6th. Three days after the party you go swimming — point to that date and tell me the day.'",
@@ -61581,7 +61581,7 @@
           "'This 5p is smaller than the 2p — so how can it be worth more?' (size vs value)",
           "'You have more coins, but is it more money? Let's count what each pile is worth.'",
           "'What does the number on the coin tell us?'",
-          "'If I gave you one £2 coin or five 20p coins, would you have the same amount? Which would you rather have?' (same value, different count)"
+          "'If I gave you one £2 coin or ten 20p coins, would you have the same amount? Which would you rather have?' (same value, different count)"
         ],
         "correctAnswer": "Says the 5p is worth more than the 2p BECAUSE 5 is more than 2 (its value, not its size); says the single 50p is more money than ten pennies (50 > 10) despite fewer coins; says £2 > 50p and £10 > £5 by their values.",
         "errorPatterns": [
@@ -66740,10 +66740,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Wrong grain — not the nearest appropriate unit: picks a unit far too big or small for the object, e.g. a pencil in metres or a room in centimetres, and doesn't notice the number is unusable.",
+            "pattern": "Wrong grain for the stated purpose/precision: chooses a unit/resolution that cannot supply the requested useful measurement, for example reporting a pencil only to the nearest whole metre as 0 m. Measuring a room in centimetres is valid, especially when centimetre precision is needed; do not mark it wrong merely for its unit.",
             "nextMove": "Discuss which unit gives a sensible, readable number; anchor each unit to a benchmark size and sanity-check the result.",
             "distractor": null,
-            "revealedBy": "Reports '0 m' for a pencil, or sets out to measure the room in centimetres; accepts a nonsense-sized number.",
+            "revealedBy": "Reports 0 m for a pencil when its useful length is requested and does not notice that the resolution is inadequate. A correctly measured room length in centimetres is not evidence of this error.",
             "reteachPrerequisiteId": null
           },
           {
@@ -66766,7 +66766,7 @@
         "responseLevels": {
           "gap": "Uses a wrong-attribute tool or unit, or reports non-standard counts, or picks a grain that gives a nonsense number without noticing.",
           "full": "For each object names the attribute, selects a sensible instrument and an appropriate-grain standard unit, measures to the nearest unit, and justifies the choice (a readable, precise number) and why standard units are used at all.",
-          "partial": "Matches the right attribute and a standard unit but not to the nearest appropriate grain — measures the room in cm or the pencil in m — succeeding where the unit is obvious but not where scale or precision must be judged."
+          "partial": "Matches attribute and a standard unit, but needs support to choose resolution suited to the purpose, for example reports only 0 m for a pencil. A room measured correctly in centimetres remains valid; discuss efficiency or requested precision separately."
         },
         "diagnosticPrompt": "Lay out a range of objects — a pencil, a table, an apple, a jug of juice, a cup of water (and, if you have one, something whose temperature matters) — with a ruler and tape, a scale, a measuring jug and a thermometer available. Say: 'Measure each of these and tell me the amount.' Do not tell them which tool or unit. Watch which instrument and unit they reach for, whether the grain fits, and how they read it.",
         "whatMakesItDiscriminate": "A child who understands unit choice matches the tool to the attribute and dials the grain to a readable, precise number; a child who does not grabs a wrong-attribute tool, reports an awkward '0 m'-type figure without noticing, or offers a non-standard count — each visible in the act, none of which a child with the full concept does. It is watched, never asked about."
@@ -69298,9 +69298,9 @@
         ],
         "commonMisconceptions": [
           "Reads ∠ABC as the angle at the first (or last) letter rather than the middle letter (the vertex)",
-          "Reads tick marks as a measurement or length value rather than 'equal to each other', or treats single and double ticks as equal to one another",
+          "Reads tick marks as a measurement or length value rather than 'equal to each other', or assumes different single and double tick styles alone establish equality between their groups",
           "Treats the marks as decoration and judges lengths, angles and right angles from the diagram's appearance (assumes it is drawn to scale)",
-          "Thinks the small square is just 'a corner' rather than exactly 90°, or misses that unmarked features are unknown"
+          "Thinks the small square is just a corner rather than exactly 90°, or infers an unmarked feature from appearance without supporting given or derived information."
         ]
       },
       "learn": {
@@ -69310,7 +69310,7 @@
             "title": "Mark up a plain figure, then read a 'not to scale' one",
             "feedback": [
               "If the learner labels ∠ABC using an arm letter (A or C), rehearse the rule: the middle letter is always the vertex — point to B first, then trace arms BA and BC. An optional interactive can light up the wrong angle when the wrong letter is tapped, making the mismatch visible.",
-              "If the learner reads a ticked side as a measurement (e.g. '1 unit') or treats a single-ticked and double-ticked side as equal, restate each mark as a relationship within its own pair and show that double ticks mark a separate, independent equal pair.",
+              "If the learner reads a ticked side as a measurement (e.g. '1 unit') or claims different tick styles alone prove equality between groups, restate each mark as a relationship within its own pair. Different styles establish separate equalities, not equality or inequality between groups; other givens may supply that information.",
               "If the learner calls a marked-equal pair unequal because one looks longer, insist the marks are the authority on a not-to-scale diagram.",
               "When producing a diagram, check that every stated fact carries its mark and that equal marks are never left on just one side — a stated right angle needs a square, and equal sides need matching ticks on EVERY side in the equal group (both sides of a pair, or all sides if more than two are equal)."
             ],
@@ -69352,7 +69352,7 @@
             "title": "Match and select: check interpretation and light production",
             "feedback": [
               "If the learner selects the angle at A for ∠ABC, re-state the middle-letter rule and have them trace arms BA and BC from B.",
-              "If a single-ticked and double-ticked side are matched as equal, clarify that double ticks denote a separate, independent equal pair.",
+              "If different single and double ticks alone are used to assert equality between groups, clarify that each style denotes its own equal group. Those different styles alone prove neither equality nor inequality between groups.",
               "Choosing 'the angle at point A' for ∠ABC reveals the middle-letter misread; redirect to the vertex B."
             ],
             "rationale": "Selection and matching tasks are intended to check interpretation and limited production, and the ∠ABC item specifically targets the middle-letter misconception that source 1 identifies as a convention violation. Recognition tasks are efficient checks but do not require the learner to construct a full marked diagram, so they complement rather than replace hands-on marking.",
@@ -69372,7 +69372,7 @@
             "feedback": [
               "Reinforce that two equally-ticked sides are equal regardless of apparent length.",
               "∠BCA has vertex C, so it is a different angle from ∠ABC (vertex B).",
-              "If the learner assumes an unmarked corner is a right angle because it looks square, point out that only a drawn square asserts 90°; unmarked features are unknown."
+              "If the learner assumes an unmarked corner is a right angle because it looks square, explain that appearance alone is insufficient. A square mark or stated fact gives 90° directly; other given relationships may also establish a right angle by reasoning."
             ],
             "rationale": "These prompts target the specific misconceptions of trusting appearance, misplacing the vertex, confusing single/double ticks, and assuming unmarked features. Reasoning about what the diagram does and does not state is intended to deepen the 'marks over appearance' principle.",
             "sourceClaims": [
@@ -69383,24 +69383,24 @@
               "Answer: 'This side LOOKS longer than that one, but both carry a single tick — which is actually longer?' (Answer: they are equal.)",
               "Show ∠BCA on the same diagram and decide whether it is the same as ∠ABC or a different angle.",
               "Decide what mark to add for a second pair of equal sides so no one confuses it with the first pair (double ticks).",
-              "Answer: 'This corner has no square drawn on it — can you be sure it's a right angle? How would the diagram tell you?' (You cannot assume it; unmarked features are unknown.)"
+              "Answer: 'This corner has no square drawn on it — can you be sure it is a right angle from appearance alone? What given or derived information could establish it?' Appearance alone cannot establish 90°; inspect the other stated facts before calling it unknown."
             ],
-            "intendedInsight": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not a stated fact."
+            "intendedInsight": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not directly stated by a mark, but may be derived from other givens; appearance alone is insufficient."
           }
         ],
         "constraints": [
           "Cover BOTH directions: reading marked diagrams AND producing marks when drawing. A reading-only reveal tool is a scaffold and does not assess production; pair it with construction tasks.",
           "Recognition and matching tasks check interpretation and light production but do not require constructing a complete marked diagram, so include a production task where the learner draws the square and adds matching ticks in pairs.",
           "Use deliberately not-to-scale diagrams whose appearance contradicts the marks so learners practise trusting the marks over the picture.",
-          "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must be treated as unknown.",
-          "Reserve double ticks for a second, independent equal pair, and make clear single- and double-ticked sides are NOT equal to each other. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
+          "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must not be inferred from appearance alone; other stated or derived relationships may establish them.",
+          "Reserve double ticks for a second, independent equal pair, and make clear these different marks alone do not establish equality or inequality between a single-ticked and a double-ticked side. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
           "This notation is a convention of 2-D diagrams; a 3-D environment is not required for this objective. Paper-and-pencil marking is an acceptable medium for the production half alongside any interactive tool."
         ],
         "reviewNotes": [
           "This is an agent semantic rewrite of saved teaching research; sources were NOT re-fetched or re-verified. Activities are research-informed proposals, not validated interventions, and their efficacy wording is intended/proposed only.",
           "The original row's recommendation described marking two independent equal-side pairs on a TRIANGLE; a triangle has only three sides, so two disjoint equal pairs cannot both be marked. Corrected to a quadrilateral for the marking step so the single- and double-tick pairs are coherent. Logged as an original-row error.",
           "The legacy row claimed a 3-D environment 'has nothing to add' and that open dialogue cannot deliver this skill. These are catalog-fit opinions, not established pedagogical laws; softened to narrowly scoped notes that 2-D marking (including on paper) suffices for this objective and that spoken discussion can support reasoning about marks even if it is not the primary production medium.",
-          "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with single- and double-ticked sides NOT equal to each other. No arithmetic claims present.",
+          "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with no equality or inequality between the two groups established by those different marks alone. No arithmetic claims present.",
           "Source 1 is cited in the reading/matching activities only to support the convention-reading principle and the fact that misreading a convention is a violation; it is not evidence that any particular interaction format is effective."
         ],
         "schemaVersion": 2
@@ -69426,10 +69426,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Reads tick marks as a measurement or length value, or treats single- and double-ticked sides as equal to each other, rather than 'equal within their own pair'",
+            "pattern": "Reads tick marks as a measurement or length value, or assumes from the different tick marks alone that single- and double-ticked sides are equal to each other, rather than 'equal within their own pair'",
             "nextMove": "State each mark as a relationship ('these two are equal to each other') and use double ticks for a separate, independent equal pair.",
             "distractor": null,
-            "revealedBy": "Says a ticked side is '1 unit', or claims a single-ticked and a double-ticked side are equal",
+            "revealedBy": "Says a ticked side is '1 unit', or claims the different tick marks alone prove a single-ticked and a double-ticked side are equal",
             "reteachPrerequisiteId": null
           },
           {
@@ -69454,7 +69454,7 @@
           "full": "Reads a marked diagram as a coherent set of stated relationships (trusting the marks over appearance), identifies ∠ABC by its middle-letter vertex, and produces diagrams that correctly encode given facts with square, tick and arc marks, transferring to a new figure (relational).",
           "partial": "Reads individual marks correctly in isolation (a square = 90°, a tick pair = equal) but misplaces the vertex in three-letter notation, is swayed by appearance on a not-to-scale diagram, or omits marks when producing a diagram (multistructural)."
         },
-        "diagnosticPrompt": "Show a triangle marked with a small square at one corner, single tick marks on two of its sides, and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain diagram, mark a right angle with the correct symbol, and show that two of its sides are equal in length.'",
+        "diagnosticPrompt": "Show a triangle marked with a small square at one corner, matching single tick marks on its two legs meeting at the right angle (not a leg and hypotenuse), and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain isosceles-right-triangle diagram, mark a right angle with the correct symbol, and show that its two legs are equal in length.'",
         "whatMakesItDiscriminate": "Asking the child both to READ the marks and to PRODUCE them catches the pupil who can recite a meaning but mislabels the vertex or marks equal lengths as measurements. The ∠ABC item specifically catches the middle-letter misread, and requiring production (draw one) is the interpret-translate discriminator — recognition alone hides the gap."
       },
       "sources": [
@@ -74132,10 +74132,10 @@
         ],
         "responseLevels": {
           "gap": "Treats differently-written fractions as necessarily different amounts; cannot find an equivalent on a differently-partitioned line.",
-          "full": "Identifies same-point equivalence, generates a correct family for 1/2, explains equivalence as re-partitioning that preserves position, and correctly rejects a non-equivalent (e.g. 1/2 is not a point on a fifths line).",
+          "full": "Identifies same-point equivalence, generates a correct family for 1/2, explains equivalence as re-partitioning that preserves position, and correctly rejects a non-equivalent (e.g. no whole-number fifths tick marks 1/2, although the midpoint is still on the continuous line).",
           "partial": "Reads off an aligned equivalent (4/6 = 2/3) from stacked lines but cannot generate a family independently or explain why the point does not move — lists 2/4, 3/6 without the re-partition reasoning."
         },
-        "diagnosticPrompt": "Show stacked 0-to-1 number lines, one divided into thirds and one into sixths, lined up. Point to 2/3 on the thirds line and ask: 'Which fraction on the sixths line is at exactly the same point, and how do you know they are equal?' Then ask: 'Show me on these lines three fractions that are all equal to 1/2.'",
+        "diagnosticPrompt": "Show stacked 0-to-1 number lines, one divided into thirds and one into sixths, lined up. Point to 2/3 on the thirds line and ask: 'Which fraction on the sixths line is at exactly the same point, and how do you know they are equal?' Then ask: 'Use these lines, and draw additional equally partitioned lines or strips as needed, to show three fractions that are all equal to 1/2.'",
         "whatMakesItDiscriminate": "A child who reads equivalence as same-point identifies 4/6 and generates a correct family. The Roadblock-2.3 child insists 2/3 and 4/6 differ because the numbers differ; the additive child offers 3/4 ('2/3 plus one to each'); the whole-number-bias child says 4/6 is bigger. Both moves — interpret the aligned point and produce a family — are required."
       },
       "sources": [
@@ -75333,7 +75333,7 @@
             ],
             "learnerActions": [
               "Work a mixed set of three-digit additions and subtractions, including several across-a-zero subtractions.",
-              "For 170+80, choose the correct result and explain why '15 tens' (a two-digit entry in the tens column) is wrong — ten of those tens must become a hundred (250).",
+              "For 170 + 80, keep the original hundred visible: 170 is 1 hundred and 7 tens, and adding 8 tens yields 1 hundred and 15 tens, a valid unregrouped representation of 250. A compact H-T-O numeral cannot place 15 as one tens digit; exchange 10 tens for an additional hundred to write 2 hundreds and 5 tens, or 250.",
               "Fill in the decomposition of 402 as 300+90+12 and use it to complete 402−137.",
               "Check each answer by estimating and, where possible, by the inverse operation."
             ],
@@ -76447,7 +76447,7 @@
         "poeTask": null,
         "probeDeeper": [
           "You found 3. In this story, is 3 a part or the whole? How do you know?",
-          "What's your evidence that 9 + 3 and 12 − 9 have the same answer?",
+          "Why is the missing number in 9 + ? = 12 the same as the answer to 12 − 9? Show how both ask for the missing part.",
           "What if it were 12 − 3 instead? Would counting up still be the quick way, or would counting back be quicker — and why?",
           "If I tell you that 8 + 5 = 13, what subtraction could you answer straight away?"
         ],
@@ -83747,7 +83747,7 @@
           "full": "Describes a rainforest as hot AND wet with near-daily rain near the Equator, and links that combination to why plants grow tall and thick and so many animals live there; contrasts it with a hot dry desert.",
           "partial": "Knows it's hot and rainy but treats those as two separate facts and can't say the combination near the Equator is what makes it lush."
         },
-        "diagnosticPrompt": "A desert is hot and a rainforest is hot — so why isn't a rainforest just a hot, sandy place like a desert? What makes a rainforest different, and how do you know?",
+        "diagnosticPrompt": "A desert is hot and a tropical rainforest is hot — so why isn't a tropical rainforest just a hot, sandy place like a desert? What makes a tropical rainforest different, and how do you know?",
         "whatMakesItDiscriminate": "A child who thinks 'hot means dry' can't say what separates a rainforest from a desert; the child with the concept names WATER/rain as the difference. The reason-tier ('how do you know') surfaces whether they connect the daily rain to the lush growth."
       },
       "sources": [
@@ -97004,7 +97004,7 @@
           {
             "title": "The 'past' to 'to' switch at the bottom of the clock",
             "feedback": [
-              "If a learner gives a '35 past three' style answer for a left-side time, remind them they have crossed the bottom of the clock onto the 'to' side, and count the minutes back to the next hour (to four).",
+              "Thirty-five minutes past three and twenty-five minutes to four are equivalent. Accept the time value, then ask for the next-hour to-form and count the 25 minutes remaining when practising that representation.",
               "Check the named hour: on the 'to' side, we name the hour the hands are heading toward, not the one just left behind.",
               "If an interactive clock is available, moving the minute hand across the 6 and watching 'twenty-five past' flip to 'twenty-five to' — with the named hour advancing — makes the switch visible; otherwise trace it with a finger on a geared clock."
             ],
@@ -97016,7 +97016,7 @@
               "Split the clock down the middle: the right-hand side is 'past', the left-hand side is 'to'.",
               "Watch (or move the minute hand) as it travels from twenty-five past across the 6 and up the left side. As it crosses the bottom, start counting the minutes BACK to the next hour instead of forward.",
               "Note that once past the half hour, the named hour becomes the NEXT hour, and the hour hand moves over halfway between the two numbers toward it.",
-              "Read twenty-five to four: minute hand on the 7, hour hand over halfway from 3 to 4 — and say why it is 'to four' and not '35 past three'."
+              "Read twenty-five to four with minute hand on 7 and hour hand over halfway from 3 to 4. Explain that it is the same time as thirty-five minutes past three; the to-form names the next hour and minutes remaining."
             ],
             "intendedInsight": "After half past, we count the minutes remaining until the NEXT hour and name that next hour; the hour hand sits over halfway between the current and next number to show this."
           },
@@ -97115,10 +97115,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "After the half hour, keeps counting 'past' instead of switching to 'to' — reads twenty-five to four as 'thirty-five minutes past three'",
+            "pattern": "Cannot express a correct after-half-hour reading in the requested next-hour to-form. Thirty-five minutes past three correctly names the same time as twenty-five to four; assess whether the learner can translate between them when asked.",
             "nextMove": "Split the clock right = 'past' / left = 'to'; after the 6, count the minutes back to the next hour.",
             "distractor": null,
-            "revealedBy": "Gives a '35 past' style answer for a left-side (to) time",
+            "revealedBy": "When explicitly asked how many minutes remain until four at 3:35, cannot determine 25 minutes or names the wrong next hour. A valid 35 past reading alone is not an error.",
             "reteachPrerequisiteId": "mt_0XxyaQLRhn"
           },
           {
@@ -97133,7 +97133,7 @@
         "responseLevels": {
           "gap": "Reads the minute-hand numeral as the minutes; cannot use 'to'; puts the hour hand on a number.",
           "full": "Reads and writes times to five minutes on both sides (past and to), including quarter past/to, places the hour hand correctly between numbers, names the correct hour for 'to' times, and translates analogue ↔ words ↔ digital for a new time.",
-          "partial": "Reads 'past' times to five minutes correctly, but keeps counting past after the half hour, confuses quarter to/past, or mislocates the hour hand for 'to' times."
+          "partial": "Reads past-times correctly but needs support to translate to a requested next-hour form, confuses quarter to with quarter past, or mislocates the hour hand. Accepts numerically equivalent past readings while assessing the required translation separately."
         },
         "diagnosticPrompt": "Interpret, then translate. (Interpret) Show a clock at 3:25 — minute hand on 5, hour hand just past 3: 'What time is this? What is each hand telling you?' Then a clock at quarter to 4 — minute hand on 9, hour hand nearly at 4: 'And this one?' (Translate) Blank clock: 'Draw the hands to show twenty to four. Then write quarter past 9 in numbers.'",
         "whatMakesItDiscriminate": "The 3:25 item catches reading the minute-hand numeral directly ('five past'); the quarter-to-4 and twenty-to-four items catch the 'to' switch, the next-hour rule, and the hour-hand position — a child can read o'clock and half past yet fail all of these."
@@ -112677,7 +112677,7 @@
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Adds the side lengths instead of multiplying: gives 4 + 6 = 10 (the perimeter) as the area.",
+            "pattern": "Adds two adjacent side lengths instead of multiplying: gives 4 + 6 = 10 as area. This is only two side lengths, not the full perimeter; the 4-by-6 rectangle has perimeter 20 linear units and area 24 square units.",
             "nextMove": "Re-establish area as the covering squares by counting the tiles; contrast with the once-around edge; then rebuild the array and connect the count to multiplication.",
             "distractor": null,
             "revealedBy": "Writes 4 + 6, or answers 10 or 20; treats area like the distance around.",
@@ -112709,12 +112709,12 @@
           }
         ],
         "responseLevels": {
-          "gap": "Adds the side lengths (perimeter), or counts one by one with no array structure and no multiplication.",
+          "gap": "Adds two adjacent side lengths (4 + 6 = 10), or uses the full perimeter (20), instead of the area (24); or counts one by one with no array structure and no multiplication.",
           "full": "Tiles in rows and columns, connects the area to number-in-a-row × number-of-rows, writes and justifies the multiplication, and sees that rotation preserves the area (4 × 6 = 6 × 4).",
           "partial": "Tiles and counts correctly and even writes 4 × 6 = 24, but cannot explain why the multiplication matches the count — the rows×columns structure is not yet the reason."
         },
         "diagnosticPrompt": "Give the child a rectangle (e.g. 4 by 6) on squared paper or with unit-square tiles and say: 'Tile this, find its area, and show me why the area equals the side lengths multiplied together.' Watch whether they build rows and columns or count one by one, whether they multiply or add the sides, and whether they can explain the link.",
-        "whatMakesItDiscriminate": "A child who has structured the array multiplies rows by squares-in-a-row and can justify it; a child who has not counts one by one with no multiplication, or adds the sides for a perimeter answer, or multiplies by rote but cannot say why — each visible in how they tile, compute and explain."
+        "whatMakesItDiscriminate": "A child who has structured the array multiplies rows by squares-in-a-row and can justify it; a child who has not counts one by one with no multiplication, or adds two adjacent side lengths or calculates the full perimeter instead of area, or multiplies by rote but cannot say why — each visible in how they tile, compute and explain."
       },
       "sources": [
         {
@@ -113104,7 +113104,7 @@
           "partial": "Handles numbers without awkward zeros but slips on placeholders or on comparisons that turn on a middle place."
         },
         "diagnosticPrompt": "Watch across forms. 'Read 403,072 aloud, then write it in expanded form. Now compare 548,301 and 543,801 with < or >. Then write “four hundred thousand and seven” as a numeral.' Watch the placeholder zeros and which place the comparison turns on.",
-        "whatMakesItDiscriminate": "403,072 and 'four hundred thousand and seven' both hinge on placeholder zeros, exposing period-reading and concatenation errors; the comparison 548,301/543,801 differs only at the thousands place, so a child scanning from the wrong end picks wrongly."
+        "whatMakesItDiscriminate": "403,072 and 'four hundred thousand and seven' both hinge on placeholder zeros, exposing period-reading and concatenation errors; the comparison 548,301/543,801 has its first decisive difference at the thousands place (the hundreds digits also differ), so a child scanning from the wrong end picks wrongly."
       },
       "sources": [
         {
@@ -130028,7 +130028,7 @@
             "pattern": "Compares digit-by-digit from the right, or by which number has a bigger digit somewhere, instead of from the highest place",
             "nextMove": "Right-align the numbers in place-value columns and compare from the leftmost place, stopping at the first place that differs.",
             "distractor": null,
-            "revealedBy": "3,472 vs 3,427 is judged by the ones/tens rather than the hundreds; ordering is scrambled.",
+            "revealedBy": "3,472 vs 3,427 is judged by the ones (2 vs 7), rather than the first differing place, the tens (7 vs 2); thousands and hundreds tie.",
             "reteachPrerequisiteId": "mt_jY7uf0Cb7o"
           },
           {
@@ -130041,7 +130041,7 @@
           }
         ],
         "responseLevels": {
-          "gap": "Compares by digit-count or a stray big digit; ordering ignores place value.",
+          "gap": "Compares by a stray big digit or ignores the highest differing place; ordering ignores place value. Digit-count comparison itself is valid for non-negative whole numbers without leading zeros when linked to the extra highest place.",
           "full": "Compares from the highest differing place, orders numbers to 10,000 reliably, and justifies with place-value reasoning.",
           "partial": "Orders clearly different numbers but errs on same-digit or different-length cases."
         },
@@ -130812,7 +130812,7 @@
           {
             "kind": "misconception",
             "pattern": "Sorts by overall appearance as a whole rather than by dimensionality — groups round things together regardless of whether they are flat or solid",
-            "nextMove": "Give the physical test — can you hold it and turn it over, or does it only lie on the paper? — and sort by that, not by look",
+            "nextMove": "Use the dimensional test on the mathematical shape represented: does it extend in three independent directions, or is it an ideal flat shape represented by a thin card? Both a card and a ball can be held and turned, so pick-up ability alone does not separate flat from solid. Sort by dimensionality, not overall roundness.",
             "distractor": null,
             "revealedBy": "Puts the ball with the circle 'because they both look round'",
             "reteachPrerequisiteId": null
@@ -137918,7 +137918,7 @@
         ],
         "responseLevels": {
           "gap": "Uses 'big/bigger' for everything; says the taller bottle holds more and is heavier; cannot name attributes separately or place objects in a comparative relation.",
-          "full": "Names several measurable attributes of one object (a bottle has height, weight and capacity), treats them as separate questions, and reasons that being taller does not decide which holds more — you would fill or weigh to find out — using comparative language across a new pair unprompted.",
+          "full": "Names several measurable attributes of one object (a bottle has height, mass/weight and capacity), treats them as separate questions, and reasons that being taller does not decide which holds more. Compare capacity by filling/pouring; compare mass by weighing, rather than treating the total mass of different containers as their capacity. Uses comparative language across a new pair unprompted.",
           "partial": "Can name one or two attributes and compare on the obvious one (which is taller), but still links them — assumes taller means holds more, or bigger means heavier — listing attributes without treating them as independent."
         },
         "diagnosticPrompt": "Put a tall, thin bottle (A) next to a short, wide jar (B). Say: 'A is taller than B. Does the taller one always hold the most water? Tell me yes or no — and then tell me how you decided.'",
@@ -146741,23 +146741,23 @@
     {
       "topicId": "mt_OzRZ89GrQW",
       "pedagogy": {
-        "summary": "Children learn to estimate lengths in standard units by building a 'mental ruler' — anchoring a guess to a known referent (a fingernail ≈ 1 cm, a big stride ≈ 1 m, a doorway height ≈ 2 m) and iterating that image — then measuring to check and revise. Estimation comes AFTER hands-on measuring, and research favours explicit strategy (benchmarks, mental iteration) over unstructured guess-and-check.",
+        "summary": "Children learn to estimate lengths in standard units by building a 'mental ruler' — anchoring a guess to a known referent (known unit references and personal fingernail, stride or doorway benchmarks checked by actual measurement; a child's stride is not assumed to be1m) and iterating that image — then measuring to check and revise. Estimation comes AFTER hands-on measuring, and research favours explicit strategy (benchmarks, mental iteration) over unstructured guess-and-check.",
         "bestPractices": [
-          "Teach personal benchmarks/referents (fingernail ≈ 1 cm, hand-span, a stride ≈ 1 m, doorway ≈ 2 m) so estimates are anchored, not blind guesses.",
+          "Teach personal benchmarks/referents (actual fingernail, hand-span, stride or doorway lengths checked against known unit references, not a universal1m childstride) so estimates are anchored, not blind guesses.",
           "Require a committed estimate BEFORE measuring, so estimation is a real prediction, not a post-hoc guess.",
           "Model the mental-ruler strategy: iterate the image of a unit along the object, or compare it to a known length.",
           "Always follow up by measuring and evaluating closeness ('were you over or under? by how much?') to recalibrate the mental ruler.",
           "Choose the appropriate unit for the scale being estimated (cm for a book, m for the playground)."
         ],
         "keyRepresentations": [
-          "Personal benchmark referents: fingernail ≈ 1 cm, hand-span, stride ≈ 1 m, doorway ≈ 2 m",
+          "Personal benchmark referents calibrated by actual measurement: fingernail, hand-span, stride and doorway; no universal1m childstride",
           "A 'mental ruler' / mental number line of length magnitudes",
           "An estimate–measure–difference recording strip",
           "Everyday reference objects (an inch-long piece of gum, a metre stick)"
         ],
         "commonMisconceptions": [
           "Wild guessing with no referent — numbers untethered to any known length, often off by an order of magnitude.",
-          "Unit/scale confusion — estimating a book at '20 m' or a room at '300 cm', muddling centimetres and metres.",
+          "Unit/scale confusion — estimating a book at '20 m' rather than about20cm, muddling centimetres and metres. A300cm room length can be valid (3m), so equivalent sensible units are accepted.",
           "Not committing before measuring — treats estimation as pointless and reaches straight for the ruler.",
           "Never recalibrating — measures but doesn't compare with the estimate, so the mental ruler never improves."
         ]
@@ -146841,7 +146841,7 @@
           "The UK National Curriculum claim (Year 3/4 estimate and check by measuring) is marked verified:false in the source row; treat the KS2 citation as unverified even though it is retained as a supporting sourceClaim.",
           "Length estimation is a one-dimensional task, so a 3D scene adds spatial load without supporting the mental-ruler strategy; this is a task-fit observation, not a claim that another medium 'cannot teach'. Likewise, spoken discussion can still support estimation reasoning but does not by itself supply the measured feedback that recalibrates a guess. The legacy row's absolute 'dialogue cannot supply the measured feedback' and '3D adds nothing' phrasings are not established by the sources and have been narrowed to these observable limits.",
           "Efficacy of the interactive slider/ghost/score scaffold is untested; sourceClaims attached to it support the underlying benchmark/mental-iteration strategy, not the effectiveness of any specific interaction.",
-          "Example consistency check: a book estimated at 25 cm measuring 22 cm is a plausible small gap; a book at '20 m' or '1000 cm' and a room at '300 cm' are used only as misconception illustrations in feedback, never as correct answers."
+          "Example consistency check: a book estimated at 25 cm measuring 22 cm is a plausible small gap; a book at '20 m' or '1000 cm' are used only as misconception illustrations in feedback, never as correct answers. A room at300cm can be valid (3m) and must not be scored wrong merely for using centimetres. Personal benchmarks, including stride, are checked rather than assumed."
         ],
         "schemaVersion": 2
       },
@@ -146859,15 +146859,15 @@
           {
             "kind": "performance",
             "pattern": "Wild guess with no referent: produces a number untethered to any known length, often off by an order of magnitude, and cannot say how they got it.",
-            "nextMove": "Teach and rehearse personal benchmarks (fingernail ≈ 1 cm, stride ≈ 1 m, doorway ≈ 2 m) and 'iterate the unit in your head' before guessing; scaffold rather than reteach measuring.",
+            "nextMove": "Teach and rehearse checked personal benchmarks against an actual ruler/metre stick. Compare the learner's own finger width/stride with known units rather than assume a child's stride is1m; then mentally iterate a suitable reference and measure to check.",
             "distractor": null,
             "revealedBy": "Blurts an estimate with no basis ('a hundred?'), wildly off; when asked how, has no referent to name.",
             "reteachPrerequisiteId": null
           },
           {
             "kind": "misconception",
-            "pattern": "Unit/scale confusion: right number sense but wrong unit magnitude — estimates a book at '20 m' or a room at '300 cm', muddling centimetres and metres.",
-            "nextMove": "Anchor each unit to a vivid benchmark (cm = fingernail, m = big stride) and sanity-check the unit; more hands-on measuring to feel unit sizes.",
+            "pattern": "Unit/scale confusion: attaches a clearly inappropriate magnitude to the actual object, for example estimating an ordinary book at20m rather than about20cm. A room measurement of300cm can be valid and is not an error simply because metres might be convenient.",
+            "nextMove": "Use an actual1cm/1m reference and calibrate any personal benchmark against it. Sanity-check the estimate against the real object; accept equivalent sensible units such as300cm or3m for the same length.",
             "distractor": null,
             "revealedBy": "Estimate is a reasonable figure attached to the wrong-sized unit for the object.",
             "reteachPrerequisiteId": "mt_e4x3l2JeLI"
@@ -160964,7 +160964,7 @@
         "bestPractices": [
           "Read the scale/key first, every time ('each square stands for 5'), before reading any value",
           "Choose a sensible even scale for the data when constructing (so the largest value fits and marks are equal), and connect it to multiplication/counting in that step",
-          "Model reading intermediate values — half a symbol is half the key; a bar top halfway between 10 and 15 is 12 or 13 depending on the scale",
+          "Model reading intermediate values exactly: half a symbol is half the key; a bar top halfway between10 and15 reads12½, not12 or13. For counts of indivisible objects such as children, choose a key that makes the used part-symbols represent whole counts, for example key10 and half-symbol5.",
           "Break two-step problems into explicit steps: read each value, then decide and do the combine (sum or difference)"
         ],
         "keyRepresentations": [
@@ -161086,7 +161086,7 @@
           "Ask 'for the total of the top two, what two things do you have to do?' to surface the two-step structure",
           "Ask 'you chose each square = 5 — why is that a good scale for this data?' to probe sensible scale choice when constructing"
         ],
-        "correctAnswer": "Interpreting: reads values THROUGH the key (symbols ×5, half-symbol = 2 or 3), and gives the difference for 'how many more'. Translating: draws bars for 20 and 15 using an even scale that fits (e.g. each square = 5), equal width from the baseline.",
+        "correctAnswer": "Interpreting: reads values through the stated key; with one symbol=10 children, half a symbol=5 children. Gives the difference for how many more. A numerical bar midpoint between10 and15 is12½ when that quantity is meaningful, never rounded to12 or13 without an explicit rounding instruction. Translating: draws bars for20 and15 from a common baseline with equal widths and uniform intervals, for example each square=5; a uniform scale need not be an even integer.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -161118,7 +161118,7 @@
           "full": "Reads scaled and intermediate values via the key, solves two-step sum/difference problems, and constructs a scaled bar graph choosing a sensible even scale",
           "partial": "Reads scaled values at marked points and solves one-step problems, but misses intermediate values or the second step, or needs the scale chosen for them"
         },
-        "diagnosticPrompt": "First: here is a scaled pictogram of favourite sports where one symbol stands for 5 children (and half-symbols appear) — how many chose football, and how many MORE chose football than tennis? Then: here is the data for two more sports (swimming 20, cycling 15) — draw them as bars on this grid, choosing a sensible scale.",
+        "diagnosticPrompt": "Draw an original pictogram with key one symbol=10 children: football has two whole symbols and a half; tennis has one whole symbol and a half. Ask how many chose football and how many more football than tennis (25 and10). Then give swimming20 and cycling15 and ask the learner to draw a scaled bar graph on a grid, choosing and explaining a uniform scale. Separately, for a continuous quantity such as litres, ask the exact value halfway between10 and15 (12½); do not use a half child as an actual count.",
         "whatMakesItDiscriminate": "A child with scaled-graph fluency reads via the key/scale, handles part-symbols, computes differences, and chooses a workable even scale when drawing; a child without it counts symbols as ones, ignores half-symbols, gives the larger value for 'how many more', or draws an uneven axis. The construct step exposes whether the scale idea is owned."
       },
       "sources": [
@@ -162148,7 +162148,7 @@
         "bestPractices": [
           "Use the hundred square so +10 is a physical, repeatable move (straight down a row) the child can predict before checking",
           "Prompt prediction: 'what will happen next? will it keep happening?' so the child forms and tests an expectation rather than counting afresh",
-          "Skip-count with a visible rhythm (steps on a number track, claps) so the repeating structure is heard and seen, and highlight the odd/even alternation",
+          "Skip-count with a visible rhythm (steps on a number track, claps) so the repeating structure is heard and seen: counting by 2 from 2 lands on even numbers and skips the odd numbers between; starting on an odd number keeps the landing numbers odd.",
           "Deliberately extend a pattern one more step together and confirm the rule held, building the habit of using a noticed repeat to predict"
         ],
         "keyRepresentations": [
@@ -162196,7 +162196,7 @@
               "If the child can call the next number before reaching it, highlight that they used the repeating rhythm rather than counting every number.",
               "Use 'is 7 in your counting-by-2s?' to check whether the child notices the odd/even structure, not just the next number."
             ],
-            "rationale": "A visible, audible rhythm (steps, claps, a lit step on every 2nd count) makes the repeating structure felt, and highlights the odd/even alternation. Anticipating the next step builds the habit of using a noticed repeat to predict. An optional track that lights every second step with a beat makes the rhythm concrete; beads, steps, or claps can serve the same purpose.",
+            "rationale": "A visible, audible rhythm (steps, claps, a lit step on every 2nd count) makes the repeating structure felt. Starting from 2, each landing number is even and each skipped number between is odd; starting from an odd number keeps the landing numbers odd. Anticipating the next step builds the habit of using a noticed repeat to predict. An optional track that lights every second step with a beat makes the rhythm concrete; beads, steps, or claps can serve the same purpose.",
             "sourceClaims": [
               "Early maths should build understanding of the number system and counting structures using representations (e.g. number tracks, hundred squares) that make repeated patterns visible"
             ],
@@ -162204,7 +162204,7 @@
               "Count in 2s along a number track or line of steps: 2, 4, 6, 8, ...",
               "Add a steady beat (clap, drum, or stepping) on each number so the repeating rhythm is heard as well as seen.",
               "After a few steps, try to call the next number before you reach it.",
-              "Notice which numbers you land on and which you skip; talk about the odd/even alternation.",
+              "Notice which numbers you land on and which you skip: starting from 2, all landing numbers are even and the skipped numbers between are odd. Compare with starting from an odd number, where every landing number stays odd.",
               "Answer: 'Is 7 in your counting-by-2s? Why not?' and 'What comes after 2, 4, 6, 8 — how did you know without counting all of them?'"
             ],
             "intendedInsight": "Skip-counting in 2s follows a repeating, predictable rhythm with a steady even pattern, so you can anticipate the next number instead of counting in ones."
@@ -180716,7 +180716,7 @@
             ],
             "intendedInsight": "Coordinate the minute scale and hour-hand position to read and write ordinary analogue and digital time to the nearest minute.",
             "feedback": [
-              "Reads 7:43 as 8:43 because the hour hand is near 8.",
+              "If the learner reads 7:43 as 8:43 because the hour hand is near 8, trace back to the last hour passed:7. Keep the minutes 43 and check another face before concluding the hour-hand relation is secure.",
               "Ask for an explanation and a check, rather than treating one correct answer as mastery."
             ],
             "rationale": "Claim-aligned proposed activity: contrasting the target quantity with a near miss makes the operation visible. Retained citations provide historical context; this activity has not been experimentally validated.",
@@ -189687,7 +189687,7 @@
           "Is it ever right to write '50% = 10'? When — and how should it be written properly?",
           "The coat is '9% off'. Could 9% off ever be MORE money than 50% off? On what would that depend?"
         ],
-        "correctAnswer": "Half full = 1/2 = 0.5 = 50%, read as 'one half', 'five tenths / nought point five', 'fifty per cent'. 9% means nine out of every hundred (of the price); as a decimal 0.09; the money off is 9% OF £420, i.e. £37.80 (children may reason 1% of 420 = 4.20, so 9% = 37.80). The key usage: '9% of £420', never '9% = £37.80'.",
+        "correctAnswer": "Half full = 1/2 = 0.5 = 50%, read as 'one half', 'five tenths / nought point five', 'fifty per cent'. 9% means nine out of every hundred of the price; as a decimal0.09. The money off is9% of £420 = £37.80:1% of £420 = £4.20, so9% of £420 =9 × £4.20 = £37.80. The key usage is '9% of £420', never '9% = £37.80'.",
         "errorPatterns": [
           {
             "kind": "misconception",
@@ -200970,7 +200970,7 @@
             "pattern": "carrying errors compound across the four digits — a carry dropped or added into the wrong column",
             "nextMove": "do not reteach the method; slow the carries, jotting each above the correct column, and check against the estimate.",
             "distractor": null,
-            "revealedBy": "one digit of a partial product wrong; estimate (2500×40 = 100,000) flags it",
+            "revealedBy": "One digit of a partial product is wrong. A magnitude-changing error may conflict with the estimate, but a small carry error can remain plausible; inspect each multiplication/carry and the final addition directly.",
             "reteachPrerequisiteId": null
           },
           {
@@ -201544,7 +201544,7 @@
         "errorPatterns": [
           {
             "kind": "misconception",
-            "pattern": "Doesn't prioritise place value for magnitude — spreads the digit-sum evenly or fills low places, so the number isn't the largest (e.g. 333,300 or 111,138)",
+            "pattern": "Doesn't prioritise place value for magnitude — spreads the digit-sum evenly or fills low places, so the number isn't the largest (e.g. 333,330 or 111,138)",
             "nextMove": "Compare two candidates place by place: a 9 in the hundred-thousands beats any arrangement with a smaller leading digit. Make the leading-place-dominates idea explicit.",
             "distractor": null,
             "revealedBy": "The number sums to 15 but isn't maximised; big digits aren't front-loaded.",
@@ -201560,10 +201560,10 @@
           },
           {
             "kind": "misconception",
-            "pattern": "Compares/orders large numbers by first digit or digit-count alone, misaligning place values",
+            "pattern": "Compares large numbers by an isolated digit or ignores the first differing place when lengths tie, misaligning place values. Comparing digit lengths is valid for non-negative whole numbers written without leading zeros.",
             "nextMove": "Line numbers up by place-value columns (right-aligned) and compare from the highest place down.",
             "distractor": null,
-            "revealedBy": "Orders 90,000; 9,000; 900,000 incorrectly, or calls a number with more digits automatically smaller/larger by looking at the wrong end.",
+            "revealedBy": "Orders 90,000; 9,000; 900,000 incorrectly, or compares same-length numbers from the wrong end. Correctly ordering this mixed-length trio by digit count is valid; ask for the corresponding highest-place explanation.",
             "reteachPrerequisiteId": "mt_JwP9QFv6gQ"
           }
         ],
@@ -209231,7 +209231,7 @@
         "probeDeeper": [
           "Ask 'do your table numbers add up to how many cards we started with?' to check the reconcile habit",
           "Ask 'which fruit does the class like best — how does your table show that?' to see if the record is used to answer the question",
-          "Counterexample tuned to this topic: slip in a card for a fruit that isn't one of the three and watch whether they force it or handle it as 'other'",
+          "Counterexample within the three-category limit: start with two named fruit categories and allow an 'other' third category; slip in a card for a different fruit and watch whether the learner handles it as 'other' rather than forcing or double-counting it. Do not add a fourth category to an existing three-category task.",
           "Ask 'if two more people chose apple, what changes in your table — and does the answer change?' to test that the table is a live record"
         ],
         "correctAnswer": "A correct performance: sorts all cards into the three fruit categories, counts each, writes each fruit name beside its correct count in a table (totals reconciling with the number of cards), orders the categories, and states which fruit answers the question.",
@@ -220696,7 +220696,7 @@
           {
             "kind": "misconception",
             "pattern": "Frogs and lizards are the same group ('a frog is a reptile')",
-            "nextMove": "Amphibians have moist skin and young that live in water (tadpoles); reptiles have dry scales and lay shelled eggs on land.",
+            "nextMove": "For the supplied frog/lizard contrast, use moist skin and aquatic tadpoles for the frog, and dry scales for the lizard. Many familiar reptiles lay shelled eggs on land, but not all reptiles do; do not teach egg-laying as a universal reptile rule or as the sole classification test.",
             "distractor": null,
             "revealedBy": "Confuses amphibians and reptiles, calling a frog a reptile",
             "reteachPrerequisiteId": null
@@ -221677,6 +221677,847 @@
         "originalResearchGeneratedBy": "taxonomy-curation original authoring proposal",
         "createdAt": "2026-11-11T15:33:17.981Z",
         "updatedAt": "2026-11-11T15:46:30.000Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_vjMAN6sb7z",
+      "pedagogy": {
+        "summary": "Teach the six conventional arrangements through visible working features and accurate everyday uses, then require independent name/feature/function explanations in fresh cases. Treat supplied comparisons as declared models and preserve the full older mechanism and practical-testing claims separately.",
+        "bestPractices": [
+          "Use all six arrangements and an actual study function for each.",
+          "Separate teaching captions from independent constructed explanations.",
+          "Use arrangement-dependent benefits and compound/insufficient-view contrasts.",
+          "These are original curation proposals supported by factual primary sources, not experimentally validated teaching methods."
+        ],
+        "keyRepresentations": [
+          "Existing original six-machine study SVG/label-hidden HTML and six use cards.",
+          "New original neutral-letter independent-six-arrangements.svg.",
+          "Existing declared same-load/height input-force table, fixed pulley and changed lever countercases."
+        ],
+        "commonMisconceptions": [
+          "A machine must contain a motor.",
+          "Any triangular shape is a wedge; any metal rod is a screw.",
+          "Every pulley halves force or every lever has the same benefit.",
+          "Every whole tool belongs to exactly one simple-machine category."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Initial age guidance is supported by the complete reviewed Ontario7–8 context, not a global7–12 offer or an assertion of universal readiness. Teach and independently assess all six names/features/functions, fresh transfer and bounded countercases; preserve older gear/measurement/vocabulary claims.",
+        "activities": [
+          {
+            "title": "Learn all six working arrangements and uses",
+            "learnerActions": [
+              "Study the original six-machine primer and six everyday-use cards in reports/ontario-grade2-machine-impact-force-task-design-2026-11-12.json and its original SVG/HTML. Name each arrangement, point to its working feature and describe what the selected use helps people do.",
+              "Compare a turning supported bar, sloping travel surface, moving tapered piece, guided rope wheel, rigidly connected wheel/shaft and spiral thread. Describe the feature in ordinary words before rehearsing the category name.",
+              "For every category, explain one actual studied function: moving a load with a supported bar; raising along a ramp; separating/holding with a taper; changing rope-pull direction; turning a shaft with a larger wheel/knob; joining with a threaded fastener."
+            ],
+            "intendedInsight": "The six names refer to working arrangements, not colours, whole-object labels or motors.",
+            "feedback": [
+              "A missing name with a correct feature/function is a vocabulary need; revisit that word and later use a fresh case.",
+              "Contrast the load travelling along a ramp with a wedge moving between model pieces; do not classify by a triangular silhouette alone."
+            ],
+            "rationale": "Original study cards make the full category/function repertoire available. This is an authored teaching design, not a claim of tested comparative efficacy.",
+            "sourceClaims": [
+              "The conventional six simple-machine categories have distinct working arrangements and everyday functions."
+            ]
+          },
+          {
+            "title": "Compare benefits and break overgeneralizations",
+            "learnerActions": [
+              "Compare a plain sloped board, a fixed rope wheel and a motor-driven object. Explain why an arrangement need not contain a motor.",
+              "Interpret the explicitly supplied matched-load/height force table in the existing machine resource: fixed pulley changes direction without automatically halving effort; changed lever arrangement can change its benefit. Do not call this a learner measurement.",
+              "Explain a supplied compound-tool case such as scissors, with the lever and tapered cutting features visible; say which arrangement is being discussed, and identify when a partial view is insufficient."
+            ],
+            "intendedInsight": "A benefit depends on arrangement; the whole tool may combine simple arrangements.",
+            "feedback": [
+              "Do not replace the fixed-pulley countercase with an all-pulleys-reduce-force rule.",
+              "Preserve qualitative explanation; older gears, moments, mechanical-advantage calculations and formal energy vocabulary are not gates here."
+            ],
+            "rationale": "Contrasting cases make the category/function boundaries assessable without changing older claims.",
+            "sourceClaims": [
+              "A machine arrangement can change force direction or the force/distance relation; a fixed pulley need not reduce effort, lever placement matters, and a complex object can combine arrangements."
+            ]
+          },
+          {
+            "title": "Construct independent explanations with fresh neutral cards",
+            "learnerActions": [
+              "Put away teaching captions/names. Shuffle the taught examples and independently produce name, working feature and function for each.",
+              "Use reports/assets/ontario-grade2-machines/independent-six-arrangements.svg: six original neutral-letter structural cards, with no category answers printed. Name all six, point to each working feature and give a suitable everyday use.",
+              "Explain why an unthreaded rod is not a screw simply because it is metal; distinguish ramp travel from a taper separating pieces; do not assume a vehicle wheel demonstrates the lifting benefit of the selected wheel/shaft.",
+              "Respond to a new compound or incomplete-view case with an evidence-based explanation rather than forcing one whole-object label."
+            ],
+            "intendedInsight": "Independent feature-based recognition and function transfer distinguish understanding from caption/position recall.",
+            "feedback": [
+              "During teaching, return to the working feature. During the independent check, record missing reasoning before any explanation is supplied.",
+              "After reteaching, use a changed order/view or another clear case; do not count the repeated supplied answer as independent mastery."
+            ],
+            "rationale": "The actual original assessment image and teacher key support a fresh constructed response; recognition alone is insufficient for this complete claim.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Cover all six categories and everyday functions; do not replace them with the three older lever/pulley/gear mechanisms.",
+          "Pictures and safe models are sufficient here; no child operation of sharp tools, suspended loads or damaged equipment is prescribed.",
+          "Do not award the older Levers/Pulleys/Gears, force vocabulary or actual practical Testing claim from this source-only repertoire.",
+          "A fixed-pulley direction benefit is useful even without force reduction. Arrangements and ideal/real conditions matter.",
+          "No hard prerequisite is newly justified: ordinary visible turning/sloping/tapering relations can be introduced within this guide; entire unrelated whole claims are not gates.",
+          "Keep names/captions out of the fresh assessment image; use a teacher key separately."
+        ],
+        "reviewNotes": [
+          "Root reviewed the full four-criterion claim, guide, fresh original SVG and source duties. No old claim/age/edge or learner-state transfer is inferred.",
+          "TeachEngineering explanatory definitions and OpenStax selected explanatory sections were read directly on2026-11-12. Verified source flags mean only support for these bounded factual claims, not efficacy, universal readiness or all linked media.",
+          "TeachEngineering30–65 read; no linked video/images inspected and no grade-index readiness proof. OpenStax22–205 read; no linked video/image/formal calculation requirement adopted.",
+          "Confidence is low for the original pedagogical design; there is no empirical delivery/learner-result claim."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "After study, put names and captions away. For all six fresh neutral-letter cards, name the arrangement, point to its working feature and explain one suitable everyday use. Then explain the fixed-pulley and changed-lever countercases and a compound or insufficient-view example.",
+        "correctAnswer": "A lever, B inclined plane, C wedge, D pulley, E wheel and axle, F screw; each justified by the visible working feature and an accurate use. A fixed pulley can change pulling direction without automatically halving force; lever arrangement matters, and an object can combine arrangements or need another view.",
+        "whatMakesItDiscriminate": "All six feature/function explanations plus fresh contrasts prevent a list of familiar tool names, captions, positions or the rule all machines reduce force from passing.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Every machine has a motor, and every tool has one simple-machine name.",
+            "revealedBy": "Rejects the plain ramp or forces one label on supplied scissors.",
+            "nextMove": "Compare a plain arrangement with a motor-driven compound object; name the selected working part.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "A triangular shape is always a wedge and a metal rod is a screw.",
+            "revealedBy": "Ignores whether the load travels along a slope or a taper moves between pieces, or ignores a missing thread.",
+            "nextMove": "Point to the actual working surface/spiral thread and contrast clear near misses.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Every pulley halves effort and every lever helps in the same way.",
+            "revealedBy": "Copies the first force conclusion to the fixed pulley or changed lever.",
+            "nextMove": "Use the declared matched-load/height countercases; do not invent a practical measurement or require formal ratios.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Knows the feature and function but temporarily misses a category name.",
+            "revealedBy": "Correctly explains the arrangement while hesitating over the word.",
+            "nextMove": "Support the missing word during teaching; do not reteach the physical idea as wrong. Recheck later with a fresh card.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Which feature makes this a screw rather than a plain rod?",
+          "Why does this fixed rope wheel help even if it does not halve effort?",
+          "What would change if the lever support or effort position changed?",
+          "Could this whole tool include two arrangements, or do you need another view?"
+        ],
+        "responseLevels": {
+          "gap": "Cannot distinguish the working arrangements or treats machines as electrical devices only.",
+          "partial": "Names some categories but depends on captions/positions or gives tool labels without the working feature/function; overgeneralizes a benefit.",
+          "full": "Independently names all six, points to defining features, gives accurate functions, transfers to fresh/compound/limited-view cases and explains fixed-pulley/changed-lever boundaries."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "The conventional six simple-machine categories have distinct working arrangements and everyday functions.",
+          "source": "University of Colorado Boulder/partners TeachEngineering — Simple Machines, bounded explanatory definitions30–65",
+          "url": "https://www.teachengineering.org/popular-topics/simple-machines",
+          "verified": true
+        },
+        {
+          "claim": "A machine arrangement can change force direction or the force/distance relation; a fixed pulley need not reduce effort, lever placement matters, and a complex object can combine arrangements.",
+          "source": "OpenStax Physics9.3 — selected simple-machine explanatory text22–205, with TeachEngineering fixed-pulley definition",
+          "url": "https://openstax.org/books/physics/pages/9-3-simple-machines",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original reviewed authoring design",
+        "createdAt": "2026-11-12T15:38:13Z",
+        "updatedAt": "2026-11-12T15:38:13Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_v8gu9eSaEg",
+      "pedagogy": {
+        "summary": "Teach natural origin and useful-resource supply with actual original read-aloud cards and two visible supply locations, then require independent transfer and changed-need reasoning. This is a reviewed authoring design with low confidence in pedagogy, not a tested intervention.",
+        "bestPractices": [
+          "Proposed: separate natural source, handling location and local store in every case.",
+          "Use clearly declared stock/system conditions; counters are optional representations, not an arithmetic gate.",
+          "Keep necessary uses and changed needs explicit.",
+          "Assess constructed explanations after teaching, with fresh delivery and availability cases."
+        ],
+        "keyRepresentations": [
+          "Four original read-aloud resource cards.",
+          "Two declared available-supply mats and shop/already-used areas with counters or marks.",
+          "Independent A6/B4 transfer/job sequence and occupied/empty-to-occupied purpose cards."
+        ],
+        "commonMisconceptions": [
+          "The shop or power station is the unlimited original resource.",
+          "A delivery creates new unlimited natural fuel.",
+          "Using useful fuel makes all energy or matter disappear.",
+          "All natural resources are identical piles or wind/sunlight always work on demand.",
+          "Responsible use means stopping necessary services."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Complete age guidance is seeded only by the reviewed Ontario6–7 context. Teach the four-criterion origin/useful-stock/source-store/need relation; preserve older natural-resource environmental synthesis, classification and recycling claims separately.",
+        "activities": [
+          {
+            "title": "Study origins and distinguish source from delivery",
+            "learnerActions": [
+              "Read the four actual study cards in reports/ontario-grade1-energy-resource-supply-task-design-2026-11-12.json: underground fuels, moving-air-and-sunlight, finite-stock-model and new-delivery. Point to natural source, processing/distribution and shop/store rather than treating every handling location as the origin.",
+              "Trace three fuels and the two contrasting natural inputs in your own words. A neutral adult reading of labels is allowed; the child supplies the source relation.",
+              "Contrast a given underground supply with sunlight or moving air. Keep source-specific availability rather than classify every resource as the same disappearing pile."
+            ],
+            "intendedInsight": "The resource has a natural origin; delivery and processing are distinct roles.",
+            "feedback": [
+              "If the learner names only the shop, trace the supplied case back to its natural source.",
+              "Do not add geological dates, nuclear chemistry, reserve statistics or a full older vocabulary requirement."
+            ],
+            "rationale": "The factual study resource is actually authored; these original tasks make source relations explicit without claiming tested efficacy.",
+            "sourceClaims": [
+              "Coal, petroleum and natural gas are natural primary energy resources with limited supplies and very slow replacement; sunlight and moving air are natural sources whose useful availability depends on conditions."
+            ]
+          },
+          {
+            "title": "Model limited useful stocks and source/store transfers",
+            "learnerActions": [
+              "Set out the supplied teaching mats for available A10, available B4 and shop0. Treat these as two declared available supplies, not measurements or every possible real deposit.",
+              "Model a different transaction during teaching, moving counters when a delivery occurs; after use put counters in an already-used-for-this-purpose area. They do not disappear from the universe.",
+              "Put away explanatory answers and independently handle the supplied fresh A6/B4/shop0 case, a two-counter delivery from A, one two-counter job, then two counters from B. Explain donor/recipient changes and why delivery is not unlimited supply."
+            ],
+            "intendedInsight": "Use changes useful stock; moving a resource changes location and local availability without creating an unlimited natural source.",
+            "feedback": [
+              "Record a counting slip separately if the finite/transfer reasoning is sound; words, pointing or fewer/more marks can demonstrate it.",
+              "Keep the two supplies/system boundary explicit so new accessibility is not confused with creation."
+            ],
+            "rationale": "The stock/accounting model is an original analytic condition, not an EIA experiment or a claim that physical energy vanishes.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Preserve needs, change the case and test availability limits",
+            "learnerActions": [
+              "Explain a choice that keeps the declared occupied room suitably warm while avoiding unneeded heating in a declared empty room. Relate the change to the useful fuel left.",
+              "Change the second room to occupied and needing warmth. Reassess the first choice or say what further information is needed; do not repeat leave-it-unheated as a universal rule.",
+              "Respond to a still-wind and absent-sunlight case. Correct all-natural-resources-are-identical-piles and wind-always-works claims without a compulsory renewable/nonrenewable label."
+            ],
+            "intendedInsight": "A useful-resource decision depends on both the supply and the need; different sources have different availability conditions.",
+            "feedback": [
+              "During the independent check record missing reasoning before supplying the explanation; after teaching, use another changed case.",
+              "These are supplied room models, not instructions to handle fuel or adjust real household heating."
+            ],
+            "rationale": "An independent changed need and contrasting resource block slogan repetition while retaining necessary services.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "All three fuel origins and two contrasting natural inputs are included; precise arithmetic is not required.",
+          "Supplies are declared available within the model before delivery; moving them does not create unlimited original resources.",
+          "Counters represent useful fuel before use, not all matter or energy. No formal conservation-law vocabulary gate.",
+          "Wind/sun availability is conditional; do not make all natural resources identical stocks or promise continuous usable output.",
+          "No child fuel handling, real heating adjustment or curtailment of necessary services.",
+          "No new hard prerequisite is justified; retain all old claim/age/guide/edge evidence and no learner-state transfer."
+        ],
+        "reviewNotes": [
+          "Root reviewed the complete four-criterion claim, read-aloud/model guide, independent transfer/changed need and separate C2 overall protocol.",
+          "Core natural-origin/finite overlap with NaturalResources is acknowledged; this useful-stock/location/need operation does not replace its source-combination/environment/classification whole claim. No disjointness, age-level clone or automatic mastery-transfer claim.",
+          "EIA Sources of energy main281–311 actually read on2026-11-12. Verified means support for the bounded factual claim only, not every phrase/link, pedagogical efficacy or universal readiness.",
+          "No current reserve totals, exact formation times, U.S. energy-mix figures, nuclear chemistry or broad always-available language adopted."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Trace the three fuels and sunlight/moving air to natural origins. In the fresh two-supply/shop model, explain use and a delivery, including which location gains or loses. Choose a need-preserving change, then reassess when the empty room becomes occupied and when wind is still.",
+        "correctAnswer": "The fuels come from natural underground sources; sunlight/moving air have natural origins. Under the stated model, use reduces useful stock and transfers move it from a donor to a receiver without making total resources unlimited. Necessary warmth is retained; a newly occupied room changes the choice. Wind/sunlight are not identical fuel piles or guaranteed whenever requested.",
+        "whatMakesItDiscriminate": "Origin, limited useful stock, explicit donor/recipient transfer and changed-need/resource limits are jointly required; arithmetic, category names or saving slogans alone cannot pass.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "The next delivery proves there is unlimited fuel.",
+            "revealedBy": "Notes only the shop increase and ignores the donor supply.",
+            "nextMove": "Move the counters physically from the declared source mat to the shop and explain both changes before a fresh case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "The used counters mean all energy and matter stop existing.",
+            "revealedBy": "Says use destroys every kind of energy or material.",
+            "nextMove": "Re-label counters as useful fuel before use and the used area as already used for this purpose; do not introduce a formal conservation-law exam.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Wind always works when we want it, and every resource is the same sort of pile.",
+            "revealedBy": "Ignores the declared still period or assigns identical stock behaviour to every source.",
+            "nextMove": "Contrast the supplied conditions and source types in ordinary language, then recheck a changed case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Always stop heating the second room, even when people now need it warm.",
+            "revealedBy": "Repeats the initial saving answer after the need changes.",
+            "nextMove": "Return to the changed occupancy/need fact and ask which essential service the plan must preserve.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Makes one counting slip but explains the supply/use/transfer relation correctly.",
+            "revealedBy": "Incorrect counter total with correct donor/receiver and finite-stock reasoning.",
+            "nextMove": "Do not reteach the resource concept as wrong; recount or use qualitative fewer/more marks.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "Where did the resource come from before the shop handled it?",
+          "What changed at the donor when the local shop received more?",
+          "What changes if the second room now needs warmth?",
+          "Why does a still-wind case differ from withdrawing fuel from the stated pile?"
+        ],
+        "responseLevels": {
+          "gap": "Treats the shop/delivery as unlimited origin, ignores useful-stock limits or necessary needs.",
+          "partial": "Names origins or finite supplies but cannot explain both source/store changes, changed needs or source-specific availability.",
+          "full": "Independently explains all origins, limited useful stock, source/store transfer and changed need/availability without disappearance or unlimited-source overgeneralization."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Coal, petroleum and natural gas are natural primary energy resources with limited supplies and very slow replacement; sunlight and moving air are natural sources whose useful availability depends on conditions.",
+          "source": "U.S. Energy Information Administration — Sources of energy, bounded main281–311 read2026-11-12",
+          "url": "https://www.eia.gov/energyexplained/what-is-energy/sources-of-energy.php",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original reviewed authoring design",
+        "createdAt": "2026-11-12T16:01:18Z",
+        "updatedAt": "2026-11-12T16:01:18Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_WaA8ssQp2K",
+      "pedagogy": {
+        "summary": "Original source-bound read-aloud and comparison design with low pedagogical confidence. Three dated community cases and fresh models make physical water, access and quality distinctions explicit; no claim of tested efficacy or learner attainment.",
+        "bestPractices": [
+          "Proposed: teach separate source, route and quality questions.",
+          "Retain exact place/date and unknowns for every real case.",
+          "Keep neutral case facts accessible, removing explanatory answers for assessment.",
+          "Use two-region comparison, third-case transfer and unknown-quality countercase."
+        ],
+        "keyRepresentations": [
+          "Three actual dated source-bound community cards.",
+          "Source/input–access/quality–daily consequence comparison mat.",
+          "Complete original P/Q/R cards and separate teacher key."
+        ],
+        "commonMisconceptions": [
+          "Nearby fresh water guarantees safe home drinking water.",
+          "Any tap or clear-looking water proves quality.",
+          "Unknown quality means definitely unsafe.",
+          "One community account describes everyone in a country or guarantees present/future service.",
+          "Opening an empty tank creates water."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Initial age guidance comes only from the full Ontario7–8 context. Teach the complete four-criterion physical/access/community/evidence relation, without percentages, statistical graphs, disease vocabulary or treatment chemistry.",
+        "activities": [
+          {
+            "title": "Separate physical source, access and known quality",
+            "learnerActions": [
+              "Use the actual three dated case cards in reports/ontario-grade2-water-access-task-design-2026-11-12.json. Adult may read ordinary labels and supply location descriptions.",
+              "Ask three separate questions: Is water physically present? What route/arrangement makes it obtainable? What quality facts are actually given?",
+              "Compare a declared fresh-water source, a working pipe and a frozen/distant store; physical fresh water does not by itself prove usable safe supply. No tasting or treatment task."
+            ],
+            "intendedInsight": "Water present, usable access and known suitability are distinct.",
+            "feedback": [
+              "If the learner says they have water, ask which of the three questions that answers.",
+              "A clear image, close tap or natural freshwater label alone does not settle quality."
+            ],
+            "rationale": "Original comparison design, not tested efficacy. Ordinary case vocabulary is taught inline, without later graph or reservoir prerequisites.",
+            "sourceClaims": [
+              "Access where and when needed and known water quality are separate conditions of safely managed drinking-water service. Collection time and daily uses can be affected by access.",
+              "Natural source, source protection, treatment and distribution have distinct roles; a source or pipe alone is not a universal quality guarantee."
+            ]
+          },
+          {
+            "title": "Construct bounded community comparisons",
+            "learnerActions": [
+              "Read the exact Khormaloq, São Francisco Macuxi and selected Điện Biên school cards. Retain their places, regions, date and unknowns.",
+              "Model a separate fictional example on a source/input–access/quality–daily consequence mat. Then let the learner construct rows for the actual cases.",
+              "Remove completed rows and require an independent two-region comparison and at least two case-supported consequences, then compare the third case."
+            ],
+            "intendedInsight": "Specific supplied access arrangements affect community life; cases do not describe every person in a country.",
+            "feedback": [
+              "Return a country-wide stereotype to the named place/date.",
+              "Do not replace the learner’s causal explanation with a teacher-supplied completed row."
+            ],
+            "rationale": "Facts remain accessible while the learner supplies comparison and causal links, rather than memorising names or repeating a headline.",
+            "sourceClaims": [
+              "The dated UNICEF account supports the three named local supply cases and their bounded daily-life/collection consequences; it is not a current national guarantee."
+            ]
+          },
+          {
+            "title": "Independently reason across changed access and unknowns",
+            "learnerActions": [
+              "Use complete original model cards P/Q/R from the public resource after teaching; no completed key is shown.",
+              "For P distinguish lake presence from broken school delivery; for Q recognise convenient access while withholding both safe and unsafe verdicts; for R explain why opening an empty tank does not create supply.",
+              "Explain a supported possible daily-use effect and needed information. Record independent responses before feedback, then use a fresh changed case."
+            ],
+            "intendedInsight": "Changed supply conditions and evidence limits matter; infrastructure labels do not guarantee an outcome.",
+            "feedback": [
+              "Do not invent an observed outage result, repair, substitute supply or numerical/clinical finding.",
+              "If the learner judges Q unsafe merely because unknown, return to the missing quality fact."
+            ],
+            "rationale": "Independent countercases discriminate physical-source knowledge from the new access/quality relation.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Use actual dated cases from at least two world regions, with two supported consequences and third-case transfer.",
+          "Fresh/salty condition is separate from drinkability; quality cannot be inferred from appearance, proximity or a pipe.",
+          "Quality unknown is not a declaration of unsafe water.",
+          "Models P/Q/R are fictional, not reported events in the real studied communities.",
+          "No actual fetching, tasting, testing, treatment, clinical procedure or live community intervention required.",
+          "Old whole water-store/graph/Australian-environment/environmental-action/fairness claims and all old ages/edges remain separately preserved; no automatic mastery transfer."
+        ],
+        "reviewNotes": [
+          "Root reviewed the whole positive claim, complete guide and original independent assessment; reviewed authoring is not delivery or efficacy evidence.",
+          "The full existing candidates were read with two-way counterexamples; their additional store/graph/Australian/ethical/map operations are not new hard prerequisites.",
+          "New low-confidence design; verified flags apply only to the exact bounded factual source claims actually read. No inherited source confidence or blanket linked-content verification."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Remove completed comparison rows and answer explanations. With neutral dated facts available or read aloud, have the learner construct a comparison of the Afghanistan and Brazil cases, identifying input/access arrangement and at least two supported daily-life consequences. Use the selected Viet Nam school case for a fresh comparison, then independently answer P/Q/R, separating physical water, access and quality and identifying what remains unknown.",
+        "correctAnswer": "Accurate place/date-bound comparison separates natural input, access arrangement and supplied quality evidence, connects at least two supported daily-life consequences, and transfers to the third case. P retains lake but loses stated delivery; Q has convenient access with quality unknown, neither safe nor unsafe established; R has empty storage and no created supply. Explain relevant consequences and unknowns without stereotypes or guarantees.",
+        "whatMakesItDiscriminate": "The learner constructs causal comparisons across regions and independent changed cases; naming stores or copying supplied answers alone cannot meet the claim.",
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "There is a river or pipe, so everyone has safe water.",
+            "revealedBy": "Merges physical presence, access and known quality.",
+            "nextMove": "Separate the three questions on the mat, then assess a fresh case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Q must be unsafe because quality is unknown.",
+            "revealedBy": "Turns missing information into a negative fact.",
+            "nextMove": "Ask what is actually known and withhold either quality verdict, then change the case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "Opening the empty tank guarantees supply.",
+            "revealedBy": "Treats outlet operation as creating water.",
+            "nextMove": "Return to empty-store/no-refill premises before a fresh example.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "A particular village proves every household in the country has the same situation.",
+            "revealedBy": "Drops named place/date and case limits.",
+            "nextMove": "Locate the actual case boundary and compare another attributed case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Needs neutral reading of case labels but supplies accurate comparison and causal reasoning.",
+            "revealedBy": "Reading difficulty with correct orally constructed explanation.",
+            "nextMove": "Record reading support separately; do not mark the water relation wrong or supply the causal answer.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "probeDeeper": [
+          "What remains when the pipe stops?",
+          "What quality fact is actually given?",
+          "How does this arrangement affect daily use or collection time?",
+          "What would you need to know before claiming a changed outcome?"
+        ],
+        "responseLevels": {
+          "gap": "Conflates source/access/quality or generalises one case universally.",
+          "partial": "Names sources or supplied arrangements but lacks independent comparison, supported consequences or changed-case evidence limits.",
+          "full": "Independently meets all four criteria: two-region bounded comparison, two supported consequences, third-case transfer and P/Q/R source/access/quality/evidence reasoning."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "The dated UNICEF account supports the three named local supply cases and their bounded daily-life/collection consequences; it is not a current national guarantee.",
+          "source": "UNICEF Supply Division, complete main explanatory body/captions read; 25 August 2025 account, read2026-11-12. Linked images/stories not inspected.",
+          "url": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world",
+          "verified": true
+        },
+        {
+          "claim": "Access where and when needed and known water quality are separate conditions of safely managed drinking-water service. Collection time and daily uses can be affected by access.",
+          "source": "WHO Drinking-water, main body read87–135; adopt only access/availability/quality definition99 and general collection/daily-life relations115–116. No clinical or statistical claims adopted.",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water",
+          "verified": true
+        },
+        {
+          "claim": "Natural source, source protection, treatment and distribution have distinct roles; a source or pipe alone is not a universal quality guarantee.",
+          "source": "US EPA Basic Information about Source Water Protection, complete main15–67 read; bounded system relation only, no U.S. legal responsibility imported.",
+          "url": "https://www.epa.gov/sourcewaterprotection/basic-information-about-source-water-protection",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original reviewed authoring design",
+        "createdAt": "2026-11-12T16:16:05Z",
+        "updatedAt": "2026-11-12T16:16:05Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_7pFq2NwV8s",
+      "pedagogy": {
+        "summary": "Original low-confidence practical authoring design: commit to a join prediction, roll/assemble actual supplied pieces, explain the flat-to-curved correspondence and independently check a fresh mismatch. No efficacy or classroom-performance claim.",
+        "bestPractices": [
+          "Proposed: use checked actual-size supplied patterns and flexible card with external tape.",
+          "Separate recognition, prediction, own assembly, correspondence explanation and independent changed-case evidence.",
+          "Allow pre-cut/access support without the adult supplying the joins or completing construction."
+        ],
+        "keyRepresentations": [
+          "Four original A4SVG pattern resources and explicit teacher geometry keys.",
+          "Actual flat pieces, curved lateral surface, flat bases and meeting boundaries."
+        ],
+        "commonMisconceptions": [
+          "Any rectangle-edge join will fit the same circle.",
+          "A cone side is a triangle or requires sharp polyhedral folds.",
+          "Same circular base determines the whole cone shape.",
+          "An adult-built model or name recognition proves own construction."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Initial source-supported offer India10–11 only. Supply all actual original patterns and complete protocol. Formula derivation and independent net design are separate, while complete construction/closure/transfer are required.",
+        "activities": [
+          {
+            "title": "Roll and close a cylinder",
+            "learnerActions": [
+              "Follow the complete original protocol at reports/india-curved-flat-pattern-construction-task-design-2026-11-13.md#teach-cylinder.",
+              "Use original patternA at actual size after checking the50mm scale; an adult may pre-cut without assembling.",
+              "Predict which edges meet before rolling the rectangle; join externally and attach two matching circles.",
+              "Trace the flat-piece→surface correspondence and inspect actual closure; no formula calculation is required."
+            ],
+            "intendedInsight": "A rectangle can roll into a curved lateral surface while circles close its two rims.",
+            "feedback": [
+              "Ask which actual edges and curves should meet; return to prediction, physical checking and a fresh case rather than accept names alone.",
+              "Record access/holding/taping support separately from adult selection or assembly."
+            ],
+            "rationale": "Original bounded practical authoring design, mathematically checked; no comparative efficacy or physical classroom trial claimed.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Roll and close a cone",
+            "learnerActions": [
+              "Follow the complete original protocol at reports/india-curved-flat-pattern-construction-task-design-2026-11-13.md#teach-cone.",
+              "Use original patternB; trace its two straight radial edges and curved arc.",
+              "Predict then bring the radial edges together, roll/join and fit the matching base.",
+              "Trace the arc becoming the base rim and explain the tip/join; preserve curved rather than sharply folded side."
+            ],
+            "intendedInsight": "A sector can roll into a cone side while its curved boundary meets the base.",
+            "feedback": [
+              "Ask which actual edges and curves should meet; return to prediction, physical checking and a fresh case rather than accept names alone.",
+              "Record access/holding/taping support separately from adult selection or assembly."
+            ],
+            "rationale": "Original bounded practical authoring design, mathematically checked; no comparative efficacy or physical classroom trial claimed.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Fresh independent construction and mismatch",
+            "learnerActions": [
+              "Follow the complete original protocol at reports/india-curved-flat-pattern-construction-task-design-2026-11-13.md#independent-c-d.",
+              "Remove completedA/B models and worked answers; supply freshC/D and A larger circle as a distractor forC.",
+              "Learner predicts/selects/constructs both solids, explains surfaces and checks actual joins.",
+              "Reject the larger circle forC with an edge-fit explanation; diagnose why joining the wrong rectangle edges changes the rim."
+            ],
+            "intendedInsight": "Construction and surface correspondence transfer to non-prototype pieces; a familiar appearance alone does not determine fit.",
+            "feedback": [
+              "Ask which actual edges and curves should meet; return to prediction, physical checking and a fresh case rather than accept names alone.",
+              "Record access/holding/taping support separately from adult selection or assembly."
+            ],
+            "rationale": "Original bounded practical authoring design, mathematically checked; no comparative efficacy or physical classroom trial claimed.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Changed-pattern transfer",
+            "learnerActions": [
+              "Follow the complete original protocol at reports/india-curved-flat-pattern-construction-task-design-2026-11-13.md#changed-pattern-transfer.",
+              "CompareB/D with same30mm-radius base; construct/check whyD is taller despite the same base.",
+              "Optional further cylinder-height task requires an additional checked matching pattern before use; the actual B/D cone comparison already supplies the complete changed case.",
+              "Use the actual source task and new constraints without asking for unsupplied independent net design."
+            ],
+            "intendedInsight": "A fixed base does not determine the entire solid; fresh matching and actual checking matter.",
+            "feedback": [
+              "Ask which actual edges and curves should meet; return to prediction, physical checking and a fresh case rather than accept names alone.",
+              "Record access/holding/taping support separately from adult selection or assembly."
+            ],
+            "rationale": "Original bounded practical authoring design, mathematically checked; no comparative efficacy or physical classroom trial claimed.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "Print at100percent and check50mm scale; actual print/media assembly preflight remains unperformed.",
+          "Adult may pre-cut or support holding/taping but not select/assemble for independent evidence.",
+          "Use small external tape pieces; distinguish material tolerance from ideal mathematical boundary.",
+          "Keep old polyhedralNets, Building3D, all ages and hard edges unchanged; zero new hard prerequisites.",
+          "No circumference/sector-angle/surface-area calculation or independent pattern design is a gate.",
+          "No source-only success awards the other cube/angle/symmetry clauses or whole parent."
+        ],
+        "reviewNotes": [
+          "Actual geometry dimensions and all4rendered pages checked; no physical print/assembly, learner observations or efficacy evidence claimed.",
+          "Root and independent semantic/source/whole-neighbor/material review found no substantive blocker; exact-head preservation binding is recorded separately."
+        ]
+      },
+      "assess": {
+        "method": "performance_task",
+        "poeTask": null,
+        "diagnosticPrompt": "Remove completed models and worked answers. Give fresh patternsC/D plus A larger circle as C distractor. Ask for prediction, own construction of both solids, flat-piece/surface explanation, actual join check and mismatch diagnosis; then change pattern/height and reassess.",
+        "correctAnswer": "Cuses its15mm-radius circle bases and correctrectanglejoin;Dsemicircle rolls to a cone fitting30mm-radiusbase. Learner independently constructs both, maps pieces to surfaces and explains/repairs mismatch through actual checking. Same30mm base fitsB/DbutDhas greater height. Formulae are not required.",
+        "whatMakesItDiscriminate": "Actual construction, committed prediction, correspondence and fresh mismatch/changed-pattern reasoning cannot be replaced by naming a finished solid or copying adult joins.",
+        "probeDeeper": [
+          "Which edges will meet before you join them?",
+          "What does this flat piece become?",
+          "Why does this circle not fit that rim?",
+          "Can two cones have the same base and different heights?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Joins wrong rectangle edges and crushes mismatched circle to fit.",
+            "revealedBy": "Uses physical distortion without checking intended boundary correspondence.",
+            "nextMove": "Open the surface, compare the intended rim and circle boundary, predict a different join and test a fresh matching case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "performance",
+            "pattern": "Labels both solids but adult does the actual selection/assembly.",
+            "revealedBy": "No independent join choice or construction despite correct names.",
+            "nextMove": "Record support separately and supply accessible pre-cut fresh pieces for own prediction/assembly.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Only names models or cannot connect flat pieces to a closed solid.",
+          "partial": "Constructs one solid or follows adult joins but lacks correspondence, fresh transfer or mismatch reasoning.",
+          "full": "Meets all four criteria with both fresh solids, own predicted joins/construction, correspondence/closure explanation and independent mismatch/changed-pattern check."
+        }
+      },
+      "sources": [
+        {
+          "source": "NCERT Learning Outcomes at the Elementary Stage, April2017; generated source position MATH-G5-LO03",
+          "url": "https://ncert.nic.in/pdf/publication/otherpublications/tilops101.pdf",
+          "claim": "Source-position identity supports the selected primary construction component; literal restricted wording remains private.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original reviewed authoring design",
+        "createdAt": "2026-11-13T08:53:27Z",
+        "updatedAt": "2026-11-13T08:53:27Z"
+      },
+      "publicationNotes": {
+        "omittedCurriculumText": []
+      }
+    },
+    {
+      "topicId": "mt_Ns6Jw8Q4rB",
+      "pedagogy": {
+        "summary": "Original model-based authoring design: predict, compare controlled actual observations, explain specified member roles and transfer independently.",
+        "bestPractices": [
+          "Proposed: compare strength and stability explicitly with counterexamples.",
+          "Keep material amount/span/load position controlled or record confounds.",
+          "Declare supports/loading for every strut/tie answer.",
+          "Separate actual model observations from supplied cases and real-structure safety."
+        ],
+        "keyRepresentations": [
+          "Reproducible natural/built load diagrams and fair-test recording sheet.",
+          "Four-strip hinged square with named AC/DB diagonals.",
+          "Strong-topples versus balanced-collapses and floating-load countercases."
+        ],
+        "commonMisconceptions": [
+          "Strong always means stable.",
+          "Every diagonal is a strut or any string can push.",
+          "A classroom model certifies a real structure.",
+          "One altered-material or span comparison proves a universal form ranking."
+        ]
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Initial supported Ontario8–9 only; complete four-criterion support/strength/stability/member relation. Retain older beam-bending and full design/investigation claims separately.",
+        "activities": [
+          {
+            "title": "Compare frameworks, controlled strength and stability",
+            "learnerActions": [
+              "Use reports/ontario-grade3-structures-strength-stability-task-design-2026-11-13.md#reproducible-original-model-resources-and-first-teaching.",
+              "Use the complete original load cards, strength bench and stability bench; prepare the specified safe model materials and recording sheet.",
+              "Identify natural/built frameworks and loads; predict before actual fair repeated comparisons and record results, confounds and uncertainty.",
+              "Compare a strong model that topples with a balanced-looking model that collapses, then the preflighted floating boat with central/off-centre loads.",
+              "Explain a justified improvement rather than claim every wider/thicker form always wins."
+            ],
+            "intendedInsight": "Strength supports load; stability resists unwanted shape/balance/position changes under specified conditions.",
+            "feedback": [
+              "Ask for own evidence and explanation; labels, adult choices and one successful model are insufficient.",
+              "Record access support separately and use a fresh case after teaching rather than award from copied answers."
+            ],
+            "rationale": "Original reviewed low-confidence authoring design; no physical classroom trial or comparative efficacy claimed.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Make the specified strut/tie frame",
+            "learnerActions": [
+              "Use reports/ontario-grade3-structures-strength-stability-task-design-2026-11-13.md#reproducible-original-model-resources-and-first-teaching.",
+              "Draw/build square A bottom-left, B bottom-right, C top-right, D top-left with four equal10cm hinged strips; adult may pre-cut/make holes and hold AB.",
+              "Move the top edge right: AC tends to lengthen so a taut string tie resists tension; DB tends to shorten so a rigid strut resists compression.",
+              "Predict then gently check reverse-direction tendencies and string slack; roles follow load/support, not diagonal orientation.",
+              "Keep actual physical preflight and observation distinct from a supplied hypothetical changed case; do not fabricate a measurement or result."
+            ],
+            "intendedInsight": "Ties resist tension and struts compression in a declared loading configuration.",
+            "feedback": [
+              "Ask for own evidence and explanation; labels, adult choices and one successful model are insufficient.",
+              "Record access support separately and use a fresh case after teaching rather than award from copied answers."
+            ],
+            "rationale": "Original reviewed low-confidence authoring design; no physical classroom trial or comparative efficacy claimed.",
+            "sourceClaims": []
+          },
+          {
+            "title": "Independently explain and transfer the complete relation",
+            "learnerActions": [
+              "Use reports/ontario-grade3-structures-strength-stability-task-design-2026-11-13.md#new-whole-claim-independent-assessment-and-fresh-transfer.",
+              "Remove worked answers, give fresh natural/built cases, blank diagrams, safe materials and changed support/load brief.",
+              "Learner identifies framework/load/form/function, explains actual controlled strength comparisons, distinguishes stability and improves a specified case.",
+              "Explain specified rightward AC-tie/DB-strut roles, then independently predict/check changed loading direction or member substitution.",
+              "Transfer to changed support gap/load position and off-centre floating case; state which conclusions need another test."
+            ],
+            "intendedInsight": "Complete performance jointly requires all four criteria and independent changed-case reasoning.",
+            "feedback": [
+              "Ask for own evidence and explanation; labels, adult choices and one successful model are insufficient.",
+              "Record access support separately and use a fresh case after teaching rather than award from copied answers."
+            ],
+            "rationale": "Original reviewed low-confidence authoring design; no physical classroom trial or comparative efficacy claimed.",
+            "sourceClaims": []
+          }
+        ],
+        "constraints": [
+          "All four criteria and changed-case transfer required.",
+          "Actual small safe physical model preflight, prediction and dated observations remain delivery conditions; no invented results.",
+          "Adult pre-cutting/holding/access support permitted, independent choices/explanation still required.",
+          "No hazardous failure testing, real-structure loading or safety certification.",
+          "No force meters, formal calculations or older beam stress repertoire required.",
+          "No new hard prerequisite; preserve all old IDs/claims/ages/contexts/edges."
+        ],
+        "reviewNotes": [
+          "Root read exact nine source clauses, nineteen whole cards, four additional candidates and positive reuse proof; preparation approved.",
+          "All seventeen present operational learn/assess records read or byte-bound to recently qualified forces/plants reads; two guide absences explicit in resource.",
+          "Overlap with older LoadsAndInternalForces acknowledged; neither complete relation entails the other. No grade/difficulty clone or automatic mastery transfer.",
+          "Verified sources below support only bounded facts actually read, not pedagogy efficacy or readiness for every pupil."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "poeTask": null,
+        "diagnosticPrompt": "Can {{name}} explain how two structures support loads, use fair comparisons to improve strength and stability, and show why a strut and a tie help a simple framework differently when the load changes? Remove worked answers and use the complete independent/fresh transfer protocol in reports/ontario-grade3-structures-strength-stability-task-design-2026-11-13.md.",
+        "correctAnswer": "Identifies natural/built framework, load and functional form; explains actual fair strength evidence and justified improvement; distinguishes collapse from toppling/sliding and floating stability; explains AC tension tie/DB compression strut under specified rightward shear and revises with changed load/support/direction. States model limits.",
+        "whatMakesItDiscriminate": "All four criteria, own evidence and changed-case reasoning jointly distinguish a complete relation from naming a strong model or copying a brace.",
+        "probeDeeper": [
+          "Can a strong object still topple?",
+          "What stayed the same in this comparison?",
+          "What changes when the top moves left?",
+          "What would this model not establish about a real bridge?"
+        ],
+        "errorPatterns": [
+          {
+            "kind": "misconception",
+            "pattern": "Strong means stable.",
+            "revealedBy": "Predicts no toppling for every strong model.",
+            "nextMove": "Compare stiff tall toppling model with low flimsy collapsing support, then use a fresh case.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "All diagonals are compression struts.",
+            "revealedBy": "Ignores rightward/leftward change and string slack.",
+            "nextMove": "Return to named corners and length tendencies; check a fresh specified load.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          },
+          {
+            "kind": "misconception",
+            "pattern": "One successful model proves every real bridge safe.",
+            "revealedBy": "Generalises beyond materials/load/support evidence.",
+            "nextMove": "State the model boundary and evidence required for a changed actual structure.",
+            "distractor": null,
+            "reteachPrerequisiteId": null
+          }
+        ],
+        "responseLevels": {
+          "gap": "Labels structures or follows an adult without explaining support, evidence or roles.",
+          "partial": "Explains only some criteria, confuses strength/stability or cannot transfer loading/member roles independently.",
+          "full": "Independently meets all four criteria using actual fair-comparison evidence, justified improvement, specified tie/strut roles and fresh loading/support/stability transfer with limits."
+        }
+      },
+      "sources": [
+        {
+          "source": "Exploratorium PaperBridges pages2–3, bounded loading/form observations only",
+          "url": "https://annex.exploratorium.edu/structures/paperbridges2.html",
+          "claim": "Controlled model loading and different paper forms can supply strength comparison evidence; the separate page3 reversed beam sentence is not adopted.",
+          "verified": true
+        },
+        {
+          "source": "STAO/OCTE/ACSE Grade3 Strong and Stable Structures Experience2, selectedPDF5–10",
+          "url": "https://scitechontario.ca/wp-content/uploads/2022/12/Grade-3-Strong-and-Stable-Structures-Experience-2-.pdf",
+          "claim": "Primary practitioner authoring precedent includes strength/stability building challenges and strut/tie terms; no efficacy evidence or force/energy definition adopted.",
+          "verified": true
+        },
+        {
+          "source": "RMIT Ties and struts, actual complete explanatory body13–20",
+          "url": "https://learninglab.rmit.edu.au/Toolbox/buildright/content/bcgbc4010a/04_struct_members/04_roof_trusses/page_004.htm",
+          "claim": "A strut is a compression member and a tie a tension member; no professional truss calculations or alternate arrow convention adopted.",
+          "verified": true
+        }
+      ],
+      "confidence": "low",
+      "provenance": {
+        "originalResearchGeneratedBy": "taxonomy-curation original reviewed authoring design",
+        "createdAt": "2026-11-13T09:27:33.993272Z",
+        "updatedAt": "2026-11-13T09:27:33.993272Z"
       },
       "publicationNotes": {
         "omittedCurriculumText": []

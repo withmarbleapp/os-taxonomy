@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "bf2acb95d9b15085d1753bee704e8cb09f9b0e13",
+  "status": "Reviewed whole-claim prerequisite necessity correction",
+  "changes": [
+    {
+      "old": {
+        "topicId": "mt__p5n8z5soJ",
+        "prerequisiteId": "mt_XbGfVhfiUz",
+        "strength": "hard",
+        "reason": "Must know computers exist before understanding they follow exact instructions"
+      },
+      "proposed": {
+        "topicId": "mt__p5n8z5soJ",
+        "prerequisiteId": "mt_XbGfVhfiUz",
+        "strength": "soft",
+        "reason": "Recognising computers as instruction-following devices supports explicit comparison with human instructions; the complete five-device identification/classification claim is not necessary to writing and testing precise everyday algorithms."
+      },
+      "counterexampleToWholeNecessity": "Learner can independently write/describe an exact sandwich procedure, predict a missing/reordered step and explain that a computer executes literally, without independently recognising at least five embedded-computer devices or sorting all devices."
+    },
+    {
+      "old": {
+        "topicId": "mt_M5PPDJStGm",
+        "prerequisiteId": "mt_WcfaSfVT33",
+        "strength": "hard",
+        "reason": "One-to-one correspondence requires knowing the number name sequence"
+      },
+      "proposed": {
+        "topicId": "mt_M5PPDJStGm",
+        "prerequisiteId": "mt_WcfaSfVT33",
+        "strength": "soft",
+        "reason": "Matching number names to real objects supports meaningful counting, but rote forward/backward number-sequence production can be learned and assessed without one-to-one object enumeration."
+      },
+      "counterexampleToWholeNecessity": "Learner independently recites forward0–100/backwards20–0 and continues from arbitrary47, while an object-enumeration task reveals double-counting. The entire rote sequence contract can pass while one-to-one fails."
+    }
+  ],
+  "wholeRoteCounterexample": "A learner can produce the complete forward/backward number sequence through 100 from arbitrary starts yet double-count real objects; rote sequence production and one-to-one object enumeration are distinct operations.",
+  "preservation": "All 1911 intrinsic claims, 1096 teaching-research records, age/context records and source catalogue entries remain byte-identical. The other 4000 dependency records remain structurally identical. No learner state or history changed.",
+  "downstreamGate": "Requalify eligibility/scheduling and private learner compatibility before staging publication. No reset or automatic source Full promotion."
+}

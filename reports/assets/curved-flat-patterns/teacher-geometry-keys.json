@@ -1,0 +1,54 @@
+{
+  "status": "Original teacher-checked geometry; actual printing/material assembly not performed",
+  "rows": [
+    {
+      "code": "A",
+      "shape": "cylinder",
+      "radiusMm": 20,
+      "heightMm": 50,
+      "rectangleLengthMm": 125.66370614359172,
+      "circleCount": 2,
+      "seamMismatchMm": 0.0
+    },
+    {
+      "code": "B",
+      "shape": "cone",
+      "radiusMm": 30,
+      "heightMm": 40,
+      "sectorSlantRadiusMm": 50.0,
+      "sectorAngleDegrees": 216,
+      "circleCount": 1,
+      "seamMismatchMm": 0.0
+    },
+    {
+      "code": "C",
+      "shape": "cylinder",
+      "radiusMm": 15,
+      "heightMm": 40,
+      "rectangleLengthMm": 94.24777960769379,
+      "circleCount": 2,
+      "seamMismatchMm": 0.0
+    },
+    {
+      "code": "D",
+      "shape": "cone",
+      "radiusMm": 30,
+      "heightMm": 51.96152422706632,
+      "sectorSlantRadiusMm": 60.0,
+      "sectorAngleDegrees": 180,
+      "circleCount": 1,
+      "seamMismatchMm": 0.0
+    }
+  ],
+  "childFormulaRequired": false,
+  "tabsIncluded": false,
+  "seamMethod": "external small tape pieces; edges meet, not overlap mathematical surface",
+  "scaleCheckMm": 50,
+  "optionalTeacherSupport": {
+    "patternDSharedDiameterMidpointMm": [
+      90,
+      95
+    ],
+    "instruction": "An adult may discreetly mark this midpoint to identify the two radial edges on one straight diameter; support is recorded, not a new mastery criterion."
+  }
+}

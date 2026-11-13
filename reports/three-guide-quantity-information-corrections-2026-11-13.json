@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "fce0ea00bb301e479f9efb754216eb9a856acf68",
+  "status": "Reviewed quantity and information-logic corrections",
+  "changes": [
+    {
+      "path": "/learn/constraints/4",
+      "old": "Reserve double ticks for a second, independent equal pair, and make clear single- and double-ticked sides are NOT equal to each other. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
+      "new": "Reserve double ticks for a second, independent equal pair, and make clear these different marks alone do not establish equality or inequality between a single-ticked and a double-ticked side. Demonstrating two independent equal-side pairs needs a figure with at least four sides (a quadrilateral), not a triangle.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/reviewNotes/3",
+      "old": "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with single- and double-ticked sides NOT equal to each other. No arithmetic claims present.",
+      "new": "Self-audit: verified that ∠ABC has vertex B (middle letter) and ∠BCA has vertex C (a different angle) — consistent throughout. Verified that matching single ticks mean equal lengths and that single vs double ticks denote distinct independent pairs, with no equality or inequality between the two groups established by those different marks alone. No arithmetic claims present.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/assess/errorPatterns/1/pattern",
+      "old": "Reads tick marks as a measurement or length value, or treats single- and double-ticked sides as equal to each other, rather than 'equal within their own pair'",
+      "new": "Reads tick marks as a measurement or length value, or assumes from the different tick marks alone that single- and double-ticked sides are equal to each other, rather than 'equal within their own pair'",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/assess/errorPatterns/1/revealedBy",
+      "old": "Says a ticked side is '1 unit', or claims a single-ticked and a double-ticked side are equal",
+      "new": "Says a ticked side is '1 unit', or claims the different tick marks alone prove a single-ticked and a double-ticked side are equal",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/pedagogy/commonMisconceptions/1",
+      "old": "Reads tick marks as a measurement or length value rather than 'equal to each other', or treats single and double ticks as equal to one another",
+      "new": "Reads tick marks as a measurement or length value rather than 'equal to each other', or assumes different single and double tick styles alone establish equality between their groups",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/pedagogy/commonMisconceptions/3",
+      "old": "Thinks the small square is just 'a corner' rather than exactly 90°, or misses that unmarked features are unknown",
+      "new": "Thinks the small square is just a corner rather than exactly 90°, or infers an unmarked feature from appearance without supporting given or derived information.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/activities/0/feedback/1",
+      "old": "If the learner reads a ticked side as a measurement (e.g. '1 unit') or treats a single-ticked and double-ticked side as equal, restate each mark as a relationship within its own pair and show that double ticks mark a separate, independent equal pair.",
+      "new": "If the learner reads a ticked side as a measurement (e.g. '1 unit') or claims different tick styles alone prove equality between groups, restate each mark as a relationship within its own pair. Different styles establish separate equalities, not equality or inequality between groups; other givens may supply that information.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/activities/2/feedback/1",
+      "old": "If a single-ticked and double-ticked side are matched as equal, clarify that double ticks denote a separate, independent equal pair.",
+      "new": "If different single and double ticks alone are used to assert equality between groups, clarify that each style denotes its own equal group. Those different styles alone prove neither equality nor inequality between groups.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/activities/3/feedback/2",
+      "old": "If the learner assumes an unmarked corner is a right angle because it looks square, point out that only a drawn square asserts 90°; unmarked features are unknown.",
+      "new": "If the learner assumes an unmarked corner is a right angle because it looks square, explain that appearance alone is insufficient. A square mark or stated fact gives 90° directly; other given relationships may also establish a right angle by reasoning.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/activities/3/learnerActions/3",
+      "old": "Answer: 'This corner has no square drawn on it — can you be sure it's a right angle? How would the diagram tell you?' (You cannot assume it; unmarked features are unknown.)",
+      "new": "Answer: 'This corner has no square drawn on it — can you be sure it is a right angle from appearance alone? What given or derived information could establish it?' Appearance alone cannot establish 90°; inspect the other stated facts before calling it unknown.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/activities/3/intendedInsight",
+      "old": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not a stated fact.",
+      "new": "Marks are authoritative, three-letter names with different middle letters (vertices) denote different angles (though reversing the outer letters, as in ∠ABC and ∠CBA, names the same angle), and an unmarked feature is not directly stated by a mark, but may be derived from other givens; appearance alone is insufficient.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/learn/constraints/3",
+      "old": "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must be treated as unknown.",
+      "new": "Always add equal marks to every member of an equal group, so at least two sides are marked and never just one (e.g. both sides of an equal pair, or all three sides of an equilateral triangle); a stated right angle must carry a drawn square; unmarked features must not be inferred from appearance alone; other stated or derived relationships may establish them.",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/assess/diagnosticPrompt",
+      "old": "Show a triangle marked with a small square at one corner, single tick marks on two of its sides, and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain diagram, mark a right angle with the correct symbol, and show that two of its sides are equal in length.'",
+      "new": "Show a triangle marked with a small square at one corner, matching single tick marks on its two legs meeting at the right angle (not a leg and hypotenuse), and one angle named ∠ABC. First (read): 'What does the small square tell you? What do the tick marks tell you? Which angle is ∠ABC — point to it.' Then (produce): 'On this second plain isosceles-right-triangle diagram, mark a right angle with the correct symbol, and show that its two legs are equal in length.'",
+      "topicId": "mt_e4V6hvcuEJ"
+    },
+    {
+      "path": "/pedagogy/commonMisconceptions/3",
+      "old": "Sharing a set by equal NUMBER of items rather than equal AMOUNT when items differ in size (number-vs-quantity confusion)",
+      "new": "Confuses half the number of objects with half a measured total (such as mass). Equal counts correctly halve a counted set even if object sizes differ; a different measure requires its own equality check.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/0/feedback/2",
+      "old": "For the set mode with equal counts but unequal item sizes: ask 'Same number, or same amount?' to separate quantity from count.",
+      "new": "For different-sized items, name the quantity: 'We shared half the number of objects to each person. Did we also share half the total mass?' Equal count is valid for the counted set and need not imply equal mass.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/0/learnerActions/2",
+      "old": "Switch to a set mode: share a plate of biscuits (or counters) into two hoops, and only accept it as 'done' when the two amounts match.",
+      "new": "Switch to a counted-set mode: share an even number of biscuits or counters into two hoops, and check both groups have equal numbers. If measuring total mass instead, explicitly change the whole being halved and check that measure separately.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/feedback/0",
+      "old": "'You gave each person the same number — but are the amounts the same? Look at the sizes.'",
+      "new": "You gave each person the same number, so each has half the counted set. If the question is half the total mass instead, we need to check mass; looking at size alone is not a measurement.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/feedback/1",
+      "old": "Use colour cues to separate quantity from count, and ask 'same number, or same amount?'",
+      "new": "Name the quantity before judging equality: number of objects, length, area or mass. Use pictures or colour to support that distinction without rejecting a correct equal-count half-set.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/feedback/2",
+      "old": "Confirm: 'When both sides have the same amount, each side is half of the whole set.'",
+      "new": "When each group contains half the total number of objects, each is half the counted set. Half the total mass is a separate statement that needs equal mass.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/learnerActions/1",
+      "old": "State how many each person gets and, when all the objects are the same size, that each group is 'half of' the set.",
+      "new": "State how many each person gets and that each equal-number group is half the counted set, whether or not the individual objects have the same size.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/learnerActions/2",
+      "old": "With objects of different sizes (big and small sweets), check whether equal COUNT gives equal AMOUNT, and discuss which sharing is fair.",
+      "new": "With different-sized objects, explicitly compare half the number with half a measured total. Equal counts halve the counted set; they need not halve total mass. Discuss fairness only after stating the intended quantity or agreed criterion.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/learn/activities/1/intendedInsight",
+      "old": "'Half of' a quantity is found by sharing equally into two groups; fairness means equal amount, which may differ from equal number when items vary in size.",
+      "new": "Half means one of two equal parts of a declared whole: equal count for a counted set, equal length for a length, equal area for an area, or equal mass for a mass. These are different quantities; fairness depends on the stated aim.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/probeDeeper/3",
+      "old": "If I share 6 big sweets and 6 tiny sweets by giving each of us 6, do we have the same AMOUNT?",
+      "new": "If we share twelve sweets into six each, have we each received half the number? Yes. If some sweets are larger, does that also establish half the total mass? No; that is a separate measured quantity.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/errorPatterns/3/pattern",
+      "old": "Halving a set by equal NUMBER of items, not equal AMOUNT, when items differ in size",
+      "new": "Confuses half the number of objects with half a measured total, without naming which quantity is being halved.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/errorPatterns/3/nextMove",
+      "old": "Use colour cues to separate quantity from count (IES); ask 'same number, or same amount?'",
+      "new": "Declare the whole and quantity: equal counts correctly halve the counted set; check an appropriate measure if the task instead asks for half the total mass, length or area.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/errorPatterns/3/revealedBy",
+      "old": "Given big and small items, gives each side the same COUNT even though the amounts differ",
+      "new": "Claims equal counts must also give equal total mass for unequal-sized items, or rejects equal counts as half the counted set solely because item sizes differ. Equal counts alone are not an error.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/responseLevels/full",
+      "old": "States a half is one of TWO EQUAL parts, checks equality by matching, knows two halves make the whole, and halves a set by equal amount (not just equal count).",
+      "new": "States a half is one of TWO EQUAL parts of a declared whole, checks the relevant equality, knows two halves make the whole, and halves a counted set by equal count while distinguishing this from half a separately measured quantity.",
+      "topicId": "mt_-hTTat0mBR"
+    },
+    {
+      "path": "/assess/errorPatterns/1/pattern",
+      "old": "Misorders 2- and 3-digit numbers by digit-count or first glance: places 73 above 137",
+      "new": "Misorders mixed-length whole numbers by ignoring their place values: places73 above137, for example by comparing7 with1 without aligning the tens and hundreds.",
+      "topicId": "mt_AQcVRBddko"
+    },
+    {
+      "path": "/assess/responseLevels/gap",
+      "old": "Compares from the ones or by digit-count; symbol may be reversed.",
+      "new": "Compares from the ones or ignores highest place values in mixed-length numbers; symbol may be reversed. Comparing digit counts is valid for non-negative whole numbers written without leading zeros, provided the higher-place reasoning is understood.",
+      "topicId": "mt_AQcVRBddko"
+    },
+    {
+      "path": "/assess/whatMakesItDiscriminate",
+      "old": "254 vs 245 share hundreds and differ only at the tens, so a ones-first comparer picks wrongly; including 73 checks whether the child aligns by place rather than counting digits. Watching where they start (hundreds) exposes the method.",
+      "new": "254 and245 share hundreds; the first differing place is the tens, although their ones also differ. A ones-first comparer picks wrongly. Including73 checks alignment and magnitude across two- and three-digit numbers; digit-count comparison without leading zeros is a valid shortcut when explained by the higher place. Watching the method and asking for justification exposes the place-value reasoning.",
+      "topicId": "mt_AQcVRBddko"
+    }
+  ],
+  "scope": "Thirty exact fields in three saved guides. Half a counted set uses equal counts even with different-sized objects; different geometric tick styles do not prove inequality, and unmarked facts may be derived; digit-count comparison without leading zeros is valid. No new measurement gate or source Full promotion.",
+  "preservation": "All intrinsic cards, evidence criteria, source/context/age records, dependencies, other guide fields and all metadata/sourceClaims remain exact. No learner history or staging state changed.",
+  "downstreamGate": "Qualify preservation of richer private teaching research and learner compatibility before staging. No reset or retrospective reinterpretation."
+}

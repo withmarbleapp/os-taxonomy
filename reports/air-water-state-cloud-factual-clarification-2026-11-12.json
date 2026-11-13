@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Root exact whole-card/full-guide and primary factual review passed; bounded consistency correction only",
+  "baseIntegration": "f3e320d21fdaaa5e0f9c146bde866b2cef286167",
+  "operations": [
+    {
+      "topicId": "mt_1JFUNQDwAJ",
+      "field": "assessmentPrompt",
+      "before": "If you point to water, ice, and steam from a kettle, can {{name}} correctly call each one a liquid, solid, or gas — and use those words naturally?",
+      "after": "If you show {{name}} ice, liquid water and air in a closed flexible container, can they name and distinguish solid, liquid and gas by their behaviour, then explain that water vapour is invisible gas and the visible mist near a kettle consists of tiny liquid droplets?"
+    },
+    {
+      "topicId": "mt_IhWzO4sQPg",
+      "field": "description",
+      "before": "Identify the three main cloud types — cumulus (fluffy, fair weather), stratus (flat layers, overcast or drizzle), and cirrus (thin wisps, high up) — and understand that clouds form when water vapour in the air cools and condenses into tiny droplets",
+      "after": "Identify the three main cloud types — cumulus (fluffy, fair weather), stratus (flat layers, overcast or drizzle), and cirrus (thin wisps, high up) — and understand that clouds form as water vapour in the air cools, forming tiny water droplets or ice crystals"
+    },
+    {
+      "topicId": "mt_IhWzO4sQPg",
+      "field": "assessmentPrompt",
+      "before": "If {{name}} looked up at the sky, could they identify whether the clouds are fluffy cumulus, flat stratus, or wispy cirrus, and explain that clouds are made of tiny water droplets?",
+      "after": "If {{name}} looked up at the sky, could they identify whether the clouds are fluffy cumulus, flat stratus, or wispy cirrus, and explain that clouds are made of tiny water droplets or ice crystals?"
+    }
+  ],
+  "rationale": [
+    "Matter current full guide explicitly says invisible vapour versus visible tiny liquid droplets; old kettle prompt invites gas answer for visible mist. Proposed prompt retains whole classification/naturaluse without unsafe demonstration requirement.",
+    "Cloud current card already requires cirrus recognition, and full guide explicitly says high icy wisps and droplets or ice crystals, including a cirrusice check. Three-type identification/forming-cloud explanation/weatherprediction remains exact; candidate is a bounded factual clarification, not an added ice-cloud taxonomy criterion."
+  ],
+  "scientificBoundary": "Cloud formation phrase avoids equating condensation with direct ice deposition. Existing cirrus repertoire retained; no new phase-taxonomy gate.",
+  "sourceEvidence": {
+    "states": "Existing complete saved guide explicitly distinguishes invisible gas/water vapour from visible liquid mist; the prompt now agrees with that whole repertoire.",
+    "clouds": "Existing complete saved guide identifies cirrus as high icy wisps and separately checks ice crystals. Clarify the current three-type repertoire without adding a phase-taxonomy assessment.",
+    "primaryBoundedCheck": {
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/06/weather-to-fly-by-k-8.pdf",
+      "pdfPage": 4,
+      "use": "Actual cirrus ice-crystal paragraph and labelled cloud images inspected; broader flight/weather text not adopted."
+    }
+  },
+  "preservation": {
+    "changedTopicFields": 3,
+    "topicsAffected": 2,
+    "evidenceAndWholeCriteriaUnchanged": true,
+    "allGuidesConfidenceVerificationFlagsUnchanged": true,
+    "agesContextsPairsEdgesUnchanged": true,
+    "newSourceFullCount": 0
+  },
+  "publicationBoundary": "Before staging, qualify claim revision, scheduling and private-state compatibility. No learner evidence reinterpretation, reset, migration or staging write is performed."
+}
