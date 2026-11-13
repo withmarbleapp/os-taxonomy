@@ -22,6 +22,7 @@ function check(d,read=get){
  const row=(l,g,o)=>d.records.find(r=>r.languageAlternative===l&&r.grade===g&&r.ordinal===o);
  assert.match(row('HI',3,6).specificBoundary,/both oral and written/);assert.match(row('HI',3,7).specificBoundary,/oral-or-signed/);
  for(const [g,o] of [[3,14],[5,10],[5,16]])assert.match(row('HI',g,o).specificBoundary,/not credited as Braille/);
+ assert.match(row('UR',4,16).specificBoundary,/not an established universal source requirement/);
  assert.match(row('UR',4,1).specificBoundary,/does not discharge Urdu/);assert.match(row('UR',3,6).specificBoundary,/does not invent a singing rule/);
  assert.equal(d.finite304Accounting.mathematics.positions+d.finite304Accounting.evs.positions+d.finite304Accounting.english.positions+d.finite304Accounting.hindiUrdu.positions,304);
 }
