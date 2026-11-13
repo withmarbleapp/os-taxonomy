@@ -619,3 +619,11 @@ without separate age/difficulty topics. Required integrated checks and all 555
 tests passed. These are named-programme reference positions, not a fixed national
 English/R2 assignment or new unique-skill count. Hindi/Urdu programme-alternative
 accounting and final Ontario Language394 operational binding remain in progress.
+
+### India retained-source accounting: finite 304-position result
+
+The retained NCERT 2017 source now has individually keyed task/component or conditional programme accounting: Mathematics 49 Full; EVS 39 Full plus four contextual conditions; English 78 Full plus one contextual appreciation condition; Hindi 80 and Urdu 53 conditional programme routes. The latter use 14 bounded parameterized task contracts and do not certify all named-language programmes or create 133 topics. In total this separate source set has 166 authoring Full judgments and 138 typed conditions, not 304 unique skills or an overall India percentage. The selected 451/521 and formal 176 Full plus 45 typed conditions out of 221 remain unchanged.
+
+The exact named-language inputs, accepted fresh keys, script/meaning/cadence checks and real source-required media are genuine selected-programme authoring conditions. Actual pupil delivery is separate. Hindi source mode notation and Urdu orthography, studied-work and explicit learned-recall routes have been checked/refined without inventing universal conjunction, dictation or memory duties. Root and independent peer qualification of this final report-only batch are recorded separately from accepted main.
+
+The [current end-state ledger](india-primary-source-end-state-2026-11-12.json) retains every real gate: suggestive music SourceMeaningUnverified; current Maths I preliminary/edition capture; exact 2017/current edition equivalence; rendition/programme identity and actual inputs; bounded current art-pair, school and competent animal-safety SOP/content checks. No source-access failure is treated as absence or permanent ambiguity, no current duty is silently discarded, and no blanket all-India, current CBSE-compliance, all-programme or learner-attainment claim is made.
