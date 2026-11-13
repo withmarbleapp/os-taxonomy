@@ -20,7 +20,7 @@ function check(d,read=get){
  }
  assert.ok(md.includes('adult actually reads')&&md.includes('Independently dictate the fresh input')&&md.includes('without a displayed completed answer'),'actual heard dictation, not composition substitution');
  const row=(l,g,o)=>d.records.find(r=>r.languageAlternative===l&&r.grade===g&&r.ordinal===o);
- assert.match(row('HI',3,6).specificBoundary,/both oral and written/);assert.match(row('HI',3,7).specificBoundary,/oral-or-signed/);
+ assert.match(row('HI',3,6).specificBoundary,/without imposing a universal BOTH/);assert.match(row('HI',3,7).specificBoundary,/oral\/signed/);
  for(const [g,o] of [[3,14],[5,10],[5,16]])assert.match(row('HI',g,o).specificBoundary,/not credited as Braille/);
  assert.match(row('UR',4,16).specificBoundary,/not an established universal source requirement/);
  assert.match(row('UR',4,1).specificBoundary,/does not discharge Urdu/);assert.match(row('UR',3,6).specificBoundary,/does not invent a singing rule/);
@@ -30,6 +30,6 @@ test('Retained Hindi80 and Urdu53 have exact conditional routes with actual boun
 test('Language133 rejects absent material, forced programme Full, lost response conjunction and premature rollup',()=>{
  assert.throws(()=>check(ledger,p=>get(p).replace('id="l04"','id="missing-script"')),/bounded module/);
  const forced=structuredClone(ledger);forced.records[0].languageProgrammeCertified=true;assert.throws(()=>check(forced));
- const mode=structuredClone(ledger);mode.records.find(x=>x.languageAlternative==='HI'&&x.grade===3&&x.ordinal===6).specificBoundary='oral only';assert.throws(()=>check(mode));
+ const mode=structuredClone(ledger);mode.records.find(x=>x.languageAlternative==='HI'&&x.grade===3&&x.ordinal===6).specificBoundary='both modes are universally compulsory';assert.throws(()=>check(mode));
  assert.throws(()=>check({...ledger,sourceParentRollup:true}));
 });
