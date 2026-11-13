@@ -569,3 +569,32 @@ undeclared intrinsic fields, 1,097 research records, contexts, edges and source
 catalogues are preserved. Corrected semantics require downstream claim-revision
 and private-state qualification; historical learner evidence is not automatically
 reinterpreted. Required generation/checks and all 551 tests passed.
+
+
+### Grade 2–6 historical Mathematics295 source requalification complete
+
+All 295 retained positions now have complete original grade portfolios, independent
+strand-overall and real modelling-cycle tasks, and attributed Canadian financial
+concept cards. Independent review checked the actual official clauses, 328 complete
+direct claims and all 897 current source-component memberships/grade offers; root
+read the complete final portfolios and financial cards and verified their exact
+bindings. Existing source conventions, complete broader criteria and current A1
+instructional nonassessment remain explicit. This is not a new recertification of
+all 296 saved guides or every 388 prerequisite card, and adds no Full labels or
+canonical changes. The remaining finite Ontario historical audit is Language394.
+
+### NCERT 2017 EVS43 proposed source-authoring batch
+
+The retained Classes III–V EVS reference ledger now supplies 39 proposed Full
+source-authoring designs and four explicit contextual care/participation conditions.
+There are 93 positive component pairs in 72 new contexts plus three existing-context
+appends, using existing topics throughout. All earlier scoped intervals and intrinsic
+claims are preserved. Three generated compatibility upper bounds reflect the reviewed
+later India offers; the claims have no separate difficulty levels. One animal-group
+teaching correction removes a false universal about reptile egg-laying. Original
+measurement, observation, representation and comparative resources retain actual
+local/material/language checks and independent assessment. Source success awards
+no broader topic automatically, and no actual delivery or learner attainment is
+claimed. This distinct reference ledger does not add 39 unique skills to the older
+451/521 selected-framework headline. Final public peer/preservation binding remains
+explicit in its report until completed.
