@@ -14,7 +14,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
-import { checkTeachingResearch, checkResearchArchiveReferences } from './check-teaching-research.mjs';
+import { checkTeachingResearch, checkResearchArchiveReferences } from './check-public-teaching-research.mjs';
 import { findDependencyCycle } from './check-dependency-cycles.mjs';
 import { checkTopicCompatibility } from './check-curriculum-alignments.mjs';
 

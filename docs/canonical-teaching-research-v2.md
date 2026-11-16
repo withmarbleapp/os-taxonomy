@@ -1,9 +1,45 @@
 # Canonical teaching research v2: schema and normalization preview
 
-Status: preparation implementation, 16 November 2026. The existing v1 dataset,
-manifest, exporters and consumer behaviour remain unchanged. This implements the
-first step of the accepted [canonical research contract](canonical-teaching-research.md),
-not a publication or a completed private-record reconciliation.
+Status: source migration, 16 November 2026. The active public dataset uses v2
+records. This implements the source side of the accepted
+[canonical research contract](canonical-teaching-research.md). It does not activate
+a downstream publisher, replace private records or change deployed behaviour.
+
+## Active collection and contribution workflow
+
+`data/teaching-research.json` contains 1,097 canonical records. Its collection
+header binds the exact topic-file bytes, authored schema checksum and digest
+contract; coverage and record count are generated metadata. There is no export
+timestamp in the canonical collection. The authored record schema remains the
+same contract introduced in #163.
+
+Edit a record in place, retaining existing activity, diagnostic and citation IDs.
+New items need new unique IDs; never derive existing identities again from edited
+text or positions. Run:
+
+```sh
+node scripts/generate-alignment-artifacts.mjs --write
+node scripts/validate.mjs
+node --test scripts/*.test.mjs
+```
+
+Generation refreshes derived collection and manifest metadata without rewriting
+authored fields or list order. Unsupported contracts and unknown fields fail.
+The validator checks the complete collection, references, coverage and bindings.
+
+The migration changes 438 marked strings across 253 records: 235 guidance fields
+and 203 citation fields. Both groups received independent peer review. Confidence
+and citation verification flags are unchanged; this is not fresh verification of
+the whole source library. The remaining 844 records retain every authored value.
+No topic, dependency or curriculum alignment changes in this migration.
+
+The [ID map](../reports/canonical-research-id-migration-map-2026-11-16.json) binds
+the original public artifact to stable IDs. Original public timestamps and notes
+are retained in the [legacy metadata inventory](../reports/canonical-research-legacy-metadata-2026-11-16.json).
+Seven old index-based reference repairs are historical metadata only; active
+canonical records require no runtime repairs. All five archived originals remain
+unchanged. See the [migration report](../reports/canonical-research-content-migration-2026-11-16.json)
+for public field hashes and aggregate preservation checks.
 
 ## Authored record
 
@@ -26,7 +62,7 @@ omission placeholders, including URI-encoded placeholders, rather than rewriting
 them. This is a known-marker check, not a source-licensing or pedagogical review.
 
 The v1 schema remains the frozen legacy export shape. The v2 schema is the
-authored-record authority for this preparation contract, not a second editable
+authored-record authority, not a second editable
 copy of the same v1 contract. Future downstream consumers must pin its exact
 accepted revision/checksum; no runtime schema download is introduced.
 
@@ -40,12 +76,14 @@ attachments still require their own reconciliation and preservation.
 From a checkout, without a DB, credentials, packages or model:
 
 ```sh
-node scripts/research-canonical.mjs summary
-node scripts/research-canonical.mjs preview > /tmp/research-preview.json
+node scripts/research-canonical.mjs summary --research /tmp/legacy/data/teaching-research.json --topics /tmp/legacy/data/topics.json --manifest /tmp/legacy/data/manifest.json
+node scripts/research-canonical.mjs preview --research /tmp/legacy/data/teaching-research.json --topics /tmp/legacy/data/topics.json --manifest /tmp/legacy/data/manifest.json > /tmp/research-preview.json
 node scripts/research-canonical.mjs check --record /tmp/authored-record.json
 ```
 
-`preview` and `summary` accept explicit `--research`, `--topics`, `--manifest` and
+`preview` and `summary` convert legacy v1 snapshots only. Obtain all three files
+from the same accepted pre-migration revision; the active v2 dataset must not be
+normalized again. These commands accept explicit `--research`, `--topics`, `--manifest` and
 optional `--migration-map` files. `check` accepts one v2 record and an optional
 `--topics` file. Invalid commands and unsupported combinations fail. The tool
 reads only and writes stdout; it has no apply command or database connection.
@@ -74,8 +112,8 @@ the converter does not guess among duplicate claims.
 After cutover, authors edit canonical records and retain their IDs. Use `check`
 when editing/reordering them; do not regenerate their identities from legacy
 positions or updated prose. Existing topic IDs and prerequisite IDs do not change.
-Historical archive references still need explicit stable-item mappings before
-their legacy index-based repair path can be removed.
+Historical archive repair mappings now retain stable diagnostic IDs separately
+from the unchanged original records.
 
 ## Semantic digest
 
@@ -108,18 +146,14 @@ from every candidate (including blocked candidates), with exact original values
 and list order, and verified the complete legacy provenance/publication notes.
 It also recomputed each eligible authored digest. That demonstrates lossless
 public normalization, not lossless migration of private DB records or pedagogical
-equivalence of future wording replacements. No candidate dataset or ID map is
-activated by this report.
+equivalence of future wording replacements. This historical report describes the preview before the separately reviewed
+content migration; it is not the current collection validation result.
 
-## Remaining publication gates
+## Remaining downstream publication gates
 
-1. Review and persist all identity/source mappings.
-2. Reconcile the complete private inventory into canonical content, support,
-   metadata and preserved historical originals.
-3. Replace omission placeholders with reviewed original public guidance; confirm
-   assessment references and authoring provenance without inventing verification.
-4. Implement and qualify exact backend storage and runtime readback against the
-   accepted schema and content digests, then switch the supported publisher.
-
-Neither this tool nor a passing `check` enables #4268 or authorizes replacing
-private JSON. New records do not enter `data/` or the published manifest in this PR.
+The public source migration is reviewable independently of deployment. Consumers
+must pin the accepted schema, implement exact storage and runtime readback, retain
+private supporting material and historical originals separately, and qualify the
+complete publisher before activation. Neither a passing source check nor this
+migration enables Marble #4268 or authorizes replacing private JSON. The source
+migration alone does not establish deployed staging parity.

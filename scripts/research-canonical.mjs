@@ -19,6 +19,7 @@ try {
   } else {
     if (values.record) throw Error(usage);
     const researchBytes = readFileSync(values.research ?? fileURLToPath(new URL('../data/teaching-research.json', import.meta.url)));
+    if (JSON.parse(researchBytes).schemaVersion !== 1) throw Error('preview and summary require a legacy v1 snapshot; current v2 records must be validated, not normalized again');
     const manifest = load(values.manifest ?? fileURLToPath(new URL('../data/manifest.json', import.meta.url)));
     const preview = previewCanonicalResearch({ research: JSON.parse(researchBytes), researchBytes, topics, topicsBytes, manifest,
       migrationMap: values['migration-map'] ? load(values['migration-map']) : undefined });

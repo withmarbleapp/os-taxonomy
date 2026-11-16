@@ -1,12 +1,13 @@
 # Canonical teaching research
 
-Status: proposed contract, 16 November 2026. This document changes no schema,
-dataset or deployed behaviour. It refines the research boundary in
+Status: accepted contract, 16 November 2026. Source implementation is described
+separately below; downstream activation still requires qualification. This refines
+the research boundary in
 [authoring and publication](taxonomy-authoring-and-publication.md).
 
-The first [v2 schema and read-only normalization preview](canonical-teaching-research-v2.md)
-implements preparation tooling. It does not activate the schema or reconcile
-the private inventory.
+The [v2 source migration and normalization tools](canonical-teaching-research-v2.md)
+implement canonical public records. Private supporting material and historical
+originals remain separate; downstream publication has not been activated.
 
 ## Decision
 
@@ -45,9 +46,9 @@ hashes are not identities. Migration assigns and reviews IDs once, retaining an
 explicit old-reference mapping. Existing topic IDs remain unchanged. Pure ordered
 lists such as probe questions need no new identity unless something references them.
 
-This is a schema migration, not permission to add these fields to today's strict
-schema. A later implementation PR must supply the versioned schema, complete
-reference validation and a supported consumer before activating new records.
+The versioned source schema and complete reference validation govern authoring.
+Consumers must implement and qualify that same contract before activating their
+canonical runtime readers.
 
 ## Source material and original prose
 

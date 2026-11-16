@@ -107,8 +107,9 @@ function checkPortableFlight(guide = flightGuide) {
   }
   assert.match(guide.assess.responseLevels.full, /all four mandatory canonical criteria/i, 'Incomplete canonical Full threshold');
   assert.match(guide.assess.responseLevels.full, /turn.*surface.*mass.*angle.*transfer/i, 'Incomplete canonical Full threshold');
-  const declared = new Set(guide.sources.map(row => row.claim));
-  for (const activity of guide.learn.activities) for (const claim of activity.sourceClaims) assert.ok(declared.has(claim), 'Undeclared flight activity source contribution');
+  const canonical = Object.hasOwn(guide, 'schemaVersion') && guide.schemaVersion === 2;
+  const declared = new Set(guide.sources.map(row => canonical ? row.id : row.claim));
+  for (const activity of guide.learn.activities) for (const ref of canonical ? activity.sourceIds : activity.sourceClaims) assert.ok(declared.has(ref), 'Undeclared flight activity source contribution');
   for (const code of flightClaim.sourceDuties) assert.ok(ledger.expectations.find(row => row.code === code)?.contributingTopicIds.includes(flightClaim.topicId), 'Missing independently reviewed aerodynamic claim');
 }
 test('portable flight guide carries complete cases and assesses every canonical criterion', () => checkPortableFlight());
