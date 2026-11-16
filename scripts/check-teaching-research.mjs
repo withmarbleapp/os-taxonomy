@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { checkSchema } from './check-schema.mjs';
-const methodByType = { CONCEPTUAL: 'two_tier', PROCEDURAL: 'performance_task', REPRESENTATIONAL: 'interpret_translate', LANGUAGE: 'use_in_context', META: 'open_epistemic_probe' };
+export const methodByType = { CONCEPTUAL: 'two_tier', PROCEDURAL: 'performance_task', REPRESENTATIONAL: 'interpret_translate', LANGUAGE: 'use_in_context', META: 'open_epistemic_probe' };
 
 /** Active export repairs must describe the current published assessment.
  * Historical array indexes cannot survive an unrelated assessment rewrite. */

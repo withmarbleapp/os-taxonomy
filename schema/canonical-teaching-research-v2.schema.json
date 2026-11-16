@@ -1,0 +1,378 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical authored teaching research v2",
+  "description": "Complete authored record, separate from legacy export and DB operational metadata. Not an activated data migration.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 2
+    },
+    "namespace": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topicId": {
+      "type": "string",
+      "pattern": "^mt_"
+    },
+    "pedagogy": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "1-2 sentences: how this concept is best taught"
+        },
+        "bestPractices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Research-backed teaching approaches"
+        },
+        "keyRepresentations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Canonical models/manipulatives (number line, area model, ten-frame, …)"
+        },
+        "commonMisconceptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "summary",
+        "bestPractices",
+        "keyRepresentations",
+        "commonMisconceptions"
+      ],
+      "additionalProperties": false
+    },
+    "learn": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 2
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "activities": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "learnerActions": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "intendedInsight": {
+                "type": "string",
+                "minLength": 1
+              },
+              "feedback": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^activity_[A-Za-z0-9_-]{8,64}$"
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^citation_[A-Za-z0-9_-]{8,64}$"
+                },
+                "description": "Stable citations supporting the rationale; not evidence of activity validation."
+              }
+            },
+            "required": [
+              "title",
+              "learnerActions",
+              "intendedInsight",
+              "feedback",
+              "rationale",
+              "id",
+              "sourceIds"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Educational requirements, unsuitable shortcuts, and limits of scaffolds"
+        },
+        "reviewNotes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Uncertainties or issues requiring review; never invent evidence to resolve them"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "summary",
+        "activities",
+        "constraints",
+        "reviewNotes"
+      ],
+      "additionalProperties": false
+    },
+    "assess": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": [
+                "two_tier",
+                "performance_task",
+                "interpret_translate",
+                "use_in_context",
+                "open_epistemic_probe"
+              ],
+              "description": "Must match the topic type — see assessMethodForType"
+            },
+            "diagnosticPrompt": {
+              "type": "string",
+              "description": "One discriminating question or task, stated open — no lettered options"
+            },
+            "correctAnswer": {
+              "type": "string",
+              "description": "What a child who holds the idea says. For META, an exemplar strong response, not a key"
+            },
+            "whatMakesItDiscriminate": {
+              "type": "string",
+              "description": "Why correct reasoning cannot land on a wrong answer, and vice versa"
+            },
+            "errorPatterns": {
+              "minItems": 1,
+              "maxItems": 8,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "pattern": {
+                    "type": "string",
+                    "description": "The wrong idea, in the child's voice — not an abstract label"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "misconception",
+                      "myth",
+                      "developmental",
+                      "interference",
+                      "performance"
+                    ],
+                    "description": "What sort of error this is; dictates whether to confront it"
+                  },
+                  "revealedBy": {
+                    "type": "string",
+                    "description": "The tell — what the child says or does that exposes it"
+                  },
+                  "nextMove": {
+                    "type": "string",
+                    "description": "What the teacher does about it. For developmental/performance kinds, say what NOT to do"
+                  },
+                  "distractor": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "Option text when diagnosticPrompt can elicit this pattern; null when another task surfaces it, or the kind is developmental/performance"
+                  },
+                  "reteachPrerequisiteId": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "description": "MicroTopic id of a prerequisite to drop back to, or null to reteach in place"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^diagnostic_[A-Za-z0-9_-]{8,64}$"
+                  }
+                },
+                "required": [
+                  "pattern",
+                  "kind",
+                  "revealedBy",
+                  "nextMove",
+                  "distractor",
+                  "reteachPrerequisiteId",
+                  "id"
+                ],
+                "additionalProperties": false
+              },
+              "description": "The wrong ideas to listen for, each bound to its tell and its next move"
+            },
+            "probeDeeper": {
+              "minItems": 2,
+              "maxItems": 4,
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Topic-tuned follow-ups that push an assertion into a causal explanation"
+            },
+            "responseLevels": {
+              "type": "object",
+              "properties": {
+                "gap": {
+                  "type": "string",
+                  "description": "What a child without the idea says or does"
+                },
+                "partial": {
+                  "type": "string",
+                  "description": "Names the parts but cannot connect them — the multistructural plateau"
+                },
+                "full": {
+                  "type": "string",
+                  "description": "Links the parts causally and transfers to a new case"
+                }
+              },
+              "required": [
+                "gap",
+                "partial",
+                "full"
+              ],
+              "additionalProperties": false
+            },
+            "poeTask": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "A predict-observe-explain demonstration, or null when no such phenomenon exists"
+            }
+          },
+          "required": [
+            "method",
+            "diagnosticPrompt",
+            "correctAnswer",
+            "whatMakesItDiscriminate",
+            "errorPatterns",
+            "probeDeeper",
+            "responseLevels",
+            "poeTask"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string",
+            "description": "The pedagogical claim this source backs"
+          },
+          "source": {
+            "type": "string",
+            "description": "Named body of work / publication"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "Whether the agent confirmed the source supports the claim"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^citation_[A-Za-z0-9_-]{8,64}$"
+          }
+        },
+        "required": [
+          "claim",
+          "source",
+          "verified",
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "authorship": {
+      "type": "object",
+      "properties": {
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "attribution"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "namespace",
+    "topicId",
+    "pedagogy",
+    "learn",
+    "assess",
+    "sources",
+    "confidence",
+    "authorship"
+  ],
+  "additionalProperties": false
+}
