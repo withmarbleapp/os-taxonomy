@@ -58,8 +58,9 @@ export function checkCanonicalResearch(record, { topics }) {
   if (internal.test(JSON.stringify(record.learn))) errors.push('Internal artifact vocabulary in learning guidance');
   function checkText(value) {
     if (typeof value === 'string') {
-      let decoded = value;
-      try { decoded = decodeURIComponent(value); } catch { /* Ordinary prose may contain percent signs. */ }
+      // Inspect percent-encoded ASCII even beside literal '%' or invalid UTF-8.
+      // This never alters authored prose or its digest; the known marker is ASCII.
+      const decoded = value.replace(/%([0-9a-f]{2})/gi, (_match, hex) => String.fromCharCode(Number.parseInt(hex, 16)));
       if (/\[curriculum wording omitted;/i.test(decoded)) errors.push('Source omission placeholder requires reviewed original wording');
     } else if (Array.isArray(value)) value.forEach(checkText);
     else if (value && typeof value === 'object') Object.values(value).forEach(checkText);

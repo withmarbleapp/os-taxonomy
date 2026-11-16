@@ -105,6 +105,13 @@ test('source omissions remain unchanged and blocked; encoded markers cannot bypa
   assert.equal(preview.blockedForContentReview, 1); assert.equal(preview.records[0].authoredSha256, null); assert.equal(preview.readyToPublish, false);
   const copy = normalized(fixture()); copy.sources[0].url = 'https://example.org/' + encodeURIComponent(marker);
   assert.ok(checkCanonicalResearch(copy, input).some(error => /placeholder/.test(error)));
+  for (const prefix of ['50% chance: ', '%broken ', '%FF']) {
+    const mixed = normalized(fixture()); mixed.learn.summary += prefix + encodeURIComponent(marker);
+    assert.ok(checkCanonicalResearch(mixed, input).some(error => /placeholder/.test(error)), prefix);
+    assert.throws(() => canonicalResearchDigest(mixed, input), /placeholder/);
+  }
+  const percentages = normalized(fixture()); percentages.learn.summary += ' 50% chance, %broken, %FF';
+  assert.deepEqual(checkCanonicalResearch(percentages, input), []);
 });
 test('ambiguous legacy source claims require review instead of guessing a citation identity', () => {
   const input = fixture(), row = input.research.records[0], oldClaim = row.sources[1].claim;
