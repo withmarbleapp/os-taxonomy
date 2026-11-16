@@ -48,6 +48,11 @@ Normal Git conflicts are resolved in the PR, and checks rerun against the combin
 
 Missing public fields do not mean deletion of private fields. Consumers must define a field mapping and preserve private information. They must not reconstruct richer records by treating the current export as a complete database replacement.
 
+The proposed [canonical teaching-research contract](canonical-teaching-research.md)
+narrows that migration boundary: all active shared teaching guidance belongs in one
+reviewed authored record; private originals become supporting material or archives,
+not a competing runtime version. It is not yet an activated schema or DB migration.
+
 ## Complete public alignment format
 
 The existing [topic schema](../schema/topics.schema.json) exposes global age bounds and a flat `standards` list. Some authoring context is currently retained outside that projection. Before cutover, the public format must represent all shared country/region-specific ages and standard associations losslessly.
