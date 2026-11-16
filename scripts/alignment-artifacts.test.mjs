@@ -43,13 +43,20 @@ test('a public alignment edit refreshes only compatibility fields and bindings',
   }
 });
 
-test('unresolved alignments and invalid research coverage cannot be regenerated into success', () => {
+test('unresolved alignments cannot be regenerated and research metadata follows its format contract', () => {
   const files = fresh(), document = load(files, 'curriculum-alignments.json');
   document.alignments.find(r => r.standards.length).standards.push('missing:standard');
   assert.throws(() => generateAlignmentArtifacts({ ...files, 'curriculum-alignments.json': encode(document) }), /unresolved standard/);
   const research = load(files, 'teaching-research.json');
   research.coverage.missingTopicIds = [];
-  assert.throws(() => generateAlignmentArtifacts({ ...files, 'teaching-research.json': encode(research) }), /coverage mismatch|missing-topic list/);
+  if (research.schemaVersion === 1) {
+    assert.throws(() => generateAlignmentArtifacts({ ...files, 'teaching-research.json': encode(research) }), /coverage mismatch|missing-topic list/);
+  } else {
+    const result = load(generateAlignmentArtifacts({ ...files, 'teaching-research.json': encode(research) }), 'teaching-research.json');
+    assert.deepEqual(result, load(files, 'teaching-research.json'));
+    research.records[0].privateNotes = 'must not be projected away';
+    assert.throws(() => generateAlignmentArtifacts({ ...files, 'teaching-research.json': encode(research) }), /unexpected property/);
+  }
 });
 
 test('CLI detects stale artifacts without writing; explicit write reproduces the checked result', t => {

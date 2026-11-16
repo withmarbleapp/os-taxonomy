@@ -8,7 +8,8 @@ import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { normalizeCurriculumAlignments, projectTopicCompatibility } from './check-curriculum-alignments.mjs';
 import { checkManifestTopicInventory } from './check-manifest-topic-inventory.mjs';
-import { checkTeachingResearch } from './check-teaching-research.mjs';
+import { checkTeachingResearch } from './check-public-teaching-research.mjs';
+import { regenerateCanonicalResearchCollection, canonicalResearchManifestMetadata } from './canonical-research-collection.mjs';
 
 const json = value => Buffer.from(JSON.stringify(value, null, 2) + '\n');
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -23,7 +24,10 @@ export function generateAlignmentArtifacts(files) {
   const projection = new Map(projectTopicCompatibility(alignments, context).topics.map(t => [t.id, t]));
   const nextTopics = { ...topics, topics: topics.topics.map(topic => ({ ...topic, ...projection.get(topic.id) })) };
   const output = { 'curriculum-alignments.json': json(alignments), 'topics.json': json(nextTopics) };
-  const research = { ...load('teaching-research.json'), topicFileSha256: sha256(output['topics.json']) };
+  const originalResearch = load('teaching-research.json');
+  const research = originalResearch.schemaVersion === 2
+    ? regenerateCanonicalResearchCollection(originalResearch, { topics: nextTopics, topicsBytes: output['topics.json'] })
+    : { ...originalResearch, topicFileSha256: sha256(output['topics.json']) };
   const manifest = load('manifest.json');
   const inventoryErrors = checkManifestTopicInventory(topics, manifest);
   assert.equal(inventoryErrors.length, 0, inventoryErrors.join('\n'));
@@ -34,9 +38,12 @@ export function generateAlignmentArtifacts(files) {
   manifest.files['curriculum-standards.json'] = {bytes:files['curriculum-standards.json'].length,sha256:sha256(files['curriculum-standards.json'])};
   manifest.counts.curriculumAlignments = alignments.alignments.length;
   manifest.counts.topicStandardLinks = nextTopics.topics.reduce((n, topic) => n + topic.standards.length, 0);
-  // Only the binding changes: authored research, coverage and original timestamps
-  // must remain valid as supplied. This is not a general research repair tool.
-  manifest.teachingResearch.topicFileSha256 = research.topicFileSha256;
+  // V2 envelopes are generated; authored records are validated and preserved.
+  // Legacy v1 still requires its original coverage/timestamps as supplied.
+  if (research.schemaVersion === 2) {
+    manifest.counts.teachingResearch = research.recordCount;
+    manifest.teachingResearch = canonicalResearchManifestMetadata(research);
+  } else manifest.teachingResearch.topicFileSha256 = research.topicFileSha256;
   const errors = checkTeachingResearch(research, { topics: nextTopics, topicsBytes: output['topics.json'], manifest, schema: researchSchema });
   assert.equal(errors.length, 0, errors.join('\n'));
   output['teaching-research.json'] = json(research);

@@ -33,7 +33,7 @@ into context. Read the small candidate set needed for the goal:
 | `data/dependencies.json` | `dependencies[]`: `topicId` **depends on** `prerequisiteId`; `strength` is `hard` or `soft`. Inspect immediate prerequisites first; expand only as needed. |
 | `data/teaching-research.json` | `records[]` join through `topicId`, not an internal DB row ID. `coverage.missingTopicIds` records known gaps. |
 | `data/manifest.json` | Version, per-file checksums and counts. Research `topicFileSha256` binds it to the exact topic-file bytes. |
-| `schema/teaching-research.schema.json` | Canonical public shape; inspect when preparing a research contribution. |
+| `schema/canonical-teaching-research-v2.schema.json` | Current authored public shape; inspect when preparing a research contribution. |
 
 If files disagree on version/checksum, reconcile the checkout before relying on
 joins. Preserve stable IDs in the design note. Do not edit the taxonomy to force
@@ -42,23 +42,27 @@ goal without claiming taxonomy alignment.
 
 ## Interpret research carefully
 
-A public file currently has `schemaVersion: 1`; its records contain
-`learn.schemaVersion: 2`. These are different version levels.
+The current public collection and authored records have `schemaVersion: 2`;
+`learn.schemaVersion: 2` is a separate nested contract. Older pinned revisions may
+use collection v1: follow that revision’s schema and never mix their shapes.
 
 - `pedagogy`: summary, best practices, representations and misconceptions.
 - `learn`: summary, proposed activities, constraints and review notes. Each
   activity has learner actions, intended insight, feedback, rationale and
-  `sourceClaims`. Those claims match `sources[].claim` exactly.
+  stable `id` and `sourceIds`, resolving to `sources[].id`. Legacy v1 activities
+  instead use `sourceClaims` matching citation claim text.
 - `assess`: nullable; diagnostic/task, response levels, error patterns and next
   teaching moves. Use it alongside the topic's evidence, not as an unquestioned
   scoring algorithm. `assessmentPrompt` may include `{{name}}`; remove or
   substitute it before display without requiring the child's name.
-- `sources`, `confidence`, `provenance`: historical authoring metadata.
+- `sources`, `confidence`, `authorship.attribution`: citations, historical confidence
+  and author credit. Legacy v1 used `provenance`; original public timestamps and
+  notes now live in the separate migration inventory.
   `verified: true` is not fresh verification; high confidence is not an independent
   quality rating. Read sources for new claims that materially affect the design.
-- `publicationNotes`: paths of omitted restricted curriculum wording. Do not
-  reconstruct that wording. Use the reference/alignment and an original
-  explanation, or consult the upstream source under its terms.
+- Legacy v1 `publicationNotes` identify omitted source wording. Do not reconstruct
+  it. Current canonical records contain reviewed original public prose; private
+  support is not an active teaching override.
 
 Guidance is agent-authored and proposed, not empirically validated. Original
 pedagogy/assessment can be less qualified than updated learning guidance. Read
@@ -78,18 +82,18 @@ If the user agrees to pursue it:
    Produce topic-level reusable research, not the child's design brief. Remove
    names, ages tied to an identifiable child, interests, responses, performance
    records and conversation details. General topic age bands can remain.
-2. Ground the guidance in inspected sources. Preserve exact claim links and
-   distinguish source-backed principles from proposed activities. Record actual
-   authorship/date and verification status truthfully; never invent original DB
-   provenance. If the public schema cannot express new contribution provenance
+2. Ground the guidance in inspected sources. Preserve stable item IDs and citation links and
+   distinguish source-backed principles from proposed activities. Record authorship and verification status truthfully; keep operational dates
+   outside the authored record and never invent original DB provenance. If the public schema cannot express new contribution provenance
    honestly, propose that contract change explicitly instead of fabricating data.
 3. Keep `learn` portable: no Marble artifact types, catalog rankings, hosting
    dependencies or child-specific implementation. Match assessment method to
    topic type as required by `scripts/check-teaching-research.mjs`; check any
    referenced prerequisite IDs exist.
-4. Prepare the smallest contribution on a branch. For direct data changes, update
-   record counts, coverage and manifest byte lengths/SHA-256 checksums consistently;
-   keep `topicFileSha256` tied to unchanged canonical topic bytes. Validate with
+4. Prepare the smallest contribution on a branch. For direct data changes, run
+   `node scripts/generate-alignment-artifacts.mjs --write` to refresh derived
+   counts, coverage and manifest byte lengths/SHA-256 checksums; the generator
+   preserves authored fields and binds the exact canonical topic bytes. Validate with
    `node scripts/validate.mjs` and `node --test scripts/teaching-research.test.mjs`.
    Follow any newer repository process rather than inventing a competing format.
 5. Include the topic IDs, evidence, limitations and validation in the PR description.

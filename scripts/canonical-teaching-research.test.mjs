@@ -8,7 +8,8 @@ import { spawnSync } from 'node:child_process';
 import { canonicalResearchJson, canonicalResearchDigest, checkCanonicalResearch, previewCanonicalResearch, summarizeCanonicalResearchPreview } from './canonical-teaching-research.mjs';
 
 const load = name => JSON.parse(readFileSync(new URL(name, import.meta.url)));
-const published = load('../data/teaching-research.json'), topicFile = load('../data/topics.json');
+const legacyFixture = load('./fixtures/legacy-research-v1.json');
+const published = legacyFixture.research, topicFile = legacyFixture.topics;
 const hash = value => createHash('sha256').update(value).digest('hex');
 function seal(input) {
   input.researchBytes = Buffer.from(JSON.stringify(input.research));

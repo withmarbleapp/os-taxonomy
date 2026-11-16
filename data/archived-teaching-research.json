@@ -14,50 +14,7 @@
     "The 2026-11-10 conversion consolidation preserves three original records unchanged from accepted commit 691911d03f5531cc798ee391c86b778a735d75ab. Their relatedTopicIds are dispositions, not learner-mastery equivalences.",
     "The elapsed-duration assessment rewrite in b5aa9b9 replaced its error-pattern array. Its former index-1 active reference repair is no longer applicable and was removed; original archived research and Git history remain retained."
   ],
-  "activeReferenceRepairs": [
-    {
-      "researchTopicId": "mt_5HV4mbgSGH",
-      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
-      "from": "mt_Zks8xyInSG",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_Cqm8iy48UI",
-      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
-      "from": "mt_2yas4Unc8o",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_p6MhZJYYPN",
-      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
-      "from": "mt_Zks8xyInSG",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_SqhXQhAEUf",
-      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
-      "from": "mt_2VpdPjvewx",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_SqhXQhAEUf",
-      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
-      "from": "mt_2VpdPjvewx",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_tpT9brpI6D",
-      "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
-      "from": "mt_2VpdPjvewx",
-      "to": "mt_d8al9JcajP"
-    },
-    {
-      "researchTopicId": "mt_tpT9brpI6D",
-      "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
-      "from": "mt_2VpdPjvewx",
-      "to": "mt_d8al9JcajP"
-    }
-  ],
+  "activeReferenceRepairs": [],
   "records": [
     {
       "originalTopicId": "mt_3XJkeIn6J6",
@@ -1260,5 +1217,60 @@
         }
       }
     }
-  ]
+  ],
+  "historicalReferenceRepairs": {
+    "sourceCommit": "f849a765b84e56ea112e7f4b3ccd03843c92995a",
+    "sourceResearchSha256": "e5afd5006d1dfbfeb7ee50a2e21dc1a2f6428ae377ab33642bc8e1d5eb65eb44",
+    "entries": [
+      {
+        "researchTopicId": "mt_5HV4mbgSGH",
+        "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+        "from": "mt_Zks8xyInSG",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_78e2cf1bef522a2aff721ebd"
+      },
+      {
+        "researchTopicId": "mt_Cqm8iy48UI",
+        "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+        "from": "mt_2yas4Unc8o",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_fc53579097c08b105594b8cb"
+      },
+      {
+        "researchTopicId": "mt_p6MhZJYYPN",
+        "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+        "from": "mt_Zks8xyInSG",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_8387904e9757751c52bf178c"
+      },
+      {
+        "researchTopicId": "mt_SqhXQhAEUf",
+        "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+        "from": "mt_2VpdPjvewx",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_4280b53c07e3f604056f0f77"
+      },
+      {
+        "researchTopicId": "mt_SqhXQhAEUf",
+        "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+        "from": "mt_2VpdPjvewx",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_e5219b01eb881ea416daff42"
+      },
+      {
+        "researchTopicId": "mt_tpT9brpI6D",
+        "path": ".assess.errorPatterns[0].reteachPrerequisiteId",
+        "from": "mt_2VpdPjvewx",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_a0432af7fc2cbc9a97501f52"
+      },
+      {
+        "researchTopicId": "mt_tpT9brpI6D",
+        "path": ".assess.errorPatterns[1].reteachPrerequisiteId",
+        "from": "mt_2VpdPjvewx",
+        "to": "mt_d8al9JcajP",
+        "diagnosticId": "diagnostic_d5ed0444fcceede74fdf4ff0"
+      }
+    ]
+  }
 }

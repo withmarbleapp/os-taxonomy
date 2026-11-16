@@ -4,6 +4,11 @@ import { readFileSync } from 'node:fs';
 const read = p => JSON.parse(readFileSync(new URL(`../${p}`, import.meta.url), 'utf8'));
 const heating = 'mt_Pl-nsjYGZ3', particles = 'mt_htAYR-iCFF';
 const at = (o, path) => path.reduce((v, key) => v[key], o);
+const migrationIds = read('reports/canonical-research-id-migration-map-2026-11-16.json');
+const legacyMetadata = read('reports/canonical-research-legacy-metadata-2026-11-16.json');
+// The historical physical correction constrains teaching/assessment, not a
+// verbatim NGSS quotation that has since received an original public paraphrase.
+const teachingBody = text => text.split('\n').filter(line => !/Standards.*(?:US|NGSS)/i.test(line)).join('\n');
 const state = () => ({report: read('reports/phase-energy-and-prerequisite-correction-2026-11-11.json'), topics: read('data/topics.json').topics, guides: read('data/teaching-research.json').records, edges: read('data/dependencies.json').dependencies});
 function qualify(s) {
  const r = s.report;
@@ -16,12 +21,32 @@ function qualify(s) {
   [particles,['learn','activities',2,'feedback',4]], [particles,['learn','constraints',8]], [particles,['learn','reviewNotes',1]]
  ]);
  for (const [corrections, records, idField] of [[r.cardCorrections,s.topics,'id'],[r.guideCorrections,s.guides,'topicId']]) {
-  for (const c of corrections) assert.equal(at(records.find(x => x[idField] === c.topicId), c.path), c.after);
+  for (const c of corrections) {
+   const current = at(records.find(x => x[idField] === c.topicId), c.path);
+   if (c.path.join('.') === 'pedagogy.summary') assert.equal(teachingBody(current), teachingBody(c.after));
+   else assert.equal(current, c.after);
+  }
  }
  const h = s.guides.find(x=>x.topicId===heating), p = s.guides.find(x=>x.topicId===particles);
  for(const g of [h,p]) {
   const protectedFields = r.protectedGuideMetadata[g.topicId];
-  for(const [key,value] of Object.entries(protectedFields)) assert.deepEqual(g[key],value);
+  for(const [key,value] of Object.entries(protectedFields)) {
+   if (g.schemaVersion === 2 && key === 'publicationNotes') {
+    assert.equal(Object.hasOwn(g,'publicationNotes'),false);
+    assert.deepEqual(legacyMetadata.records.find(row=>row.topicId===g.topicId).publicationNotes,value);
+   } else if (g.schemaVersion === 2 && key === 'provenance') {
+    assert.equal(Object.hasOwn(g,'provenance'),false);
+    assert.deepEqual(legacyMetadata.records.find(row=>row.topicId===g.topicId).provenance,value);
+    assert.deepEqual(g.authorship,{attribution:value.originalResearchGeneratedBy});
+   } else if (g.schemaVersion === 2 && key === 'sources') {
+    assert.ok(Array.isArray(g.sources));
+    const ids=migrationIds.entries.find(row=>row.topicId===g.topicId).citationIds;
+    for(const [index,original] of value.entries()) {
+     const source=g.sources.find(row=>row.id===ids[index]);assert.ok(source);
+     assert.equal(source.verified,original.verified);assert.equal(source.url,original.url);
+    }
+   } else assert.deepEqual(g[key],value);
+  }
   assert.equal(g.learn.activities.length,r.counts.unchangedActivityCounts[g.topicId]);
  }
  assert.match(s.topics.find(x=>x.id===heating).evidence[2], /heating transfers energy.*warming within a state.*constant temperature.*without requiring faster motion/i);

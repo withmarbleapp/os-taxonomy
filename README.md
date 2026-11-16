@@ -45,7 +45,7 @@ All data lives in [`data/`](data/) as UTF-8 JSON. See [`schema/`](schema/) for J
 | [`data/dependencies.json`](data/dependencies.json) | Prerequisite **edges** (`topicId` depends on `prerequisiteId`). |
 | [`data/curriculum-standards.json`](data/curriculum-standards.json) | The source curriculum standards, grouped by curriculum. |
 | [`data/clusters.json`](data/clusters.json) | Parent-friendly domain summaries. |
-| [`data/teaching-research.json`](data/teaching-research.json) | Teaching research joined by `topicId`, with explicit coverage and publication notes (~24 MB). |
+| [`data/teaching-research.json`](data/teaching-research.json) | Teaching research joined by `topicId`, with explicit coverage and stable activity/citation identities. |
 | [`data/archived-teaching-research.json`](data/archived-teaching-research.json) | Historical guidance for merged or refocused topics, with original records and current topic associations. |
 | [`data/manifest.json`](data/manifest.json) | Counts, per-subject breakdown, per-file checksums. |
 | [`data/curriculum-alignments.json`](data/curriculum-alignments.json) | Scoped framework, jurisdiction and global age contexts; source for flat compatibility fields. |
@@ -177,30 +177,29 @@ subject trees.
 ## Teaching research
 
 [`data/teaching-research.json`](data/teaching-research.json) adds **how a topic
-might be taught** to the graph of what children learn. It contains **1,049 active topic records**. `coverage.missingTopicIds` and per-subject counts
-make the **809 topics without research** explicit; absence is not a judgement
+might be taught** to the graph of what children learn. It contains **1,097 active topic records**. `coverage.missingTopicIds` and per-subject counts
+make the **815 topics without research** explicit; absence is not a judgement
 about whether a topic can be taught.
 
-[`archived-teaching-research.json`](data/archived-teaching-research.json) preserves two historical records excluded from active coverage after a topic merge and a change in learning scope. Each entry includes the original topic and research record, its archive reason, and related current topic IDs. The archive also records the assessment prerequisite reference redirected after the merge.
+[`archived-teaching-research.json`](data/archived-teaching-research.json) preserves five historical records excluded from active coverage after a topic merge and a change in learning scope. Each entry includes the original topic and research record, its archive reason, and related current topic IDs. The archive retains seven historical prerequisite-reference repair mappings with stable diagnostic IDs; active records need no runtime repair.
 
-The active `teaching-research.json` file has `schemaVersion: 1` and taxonomy `version: "v1"`. Each `records[]`
+The active `teaching-research.json` file has `schemaVersion: 2` and taxonomy `version: "v1"`. Each `records[]`
 entry joins `topics.json` through `topicId` and contains:
 
 | Field | Meaning |
 |---|---|
 | `pedagogy` | Original teaching summary, practices, representations and misconceptions. |
 | `learn` | Portable learning guidance (`schemaVersion: 2`): a summary, activities, educational constraints and review notes. |
-| `learn.activities[]` | Learner actions, intended insight, feedback, rationale and supporting source claims. No product artifact types or fit rankings. |
+| `learn.activities[]` | Learner actions, intended insight, feedback, rationale and supporting citation IDs. No product artifact types or fit rankings. |
 | `assess` | Original diagnostic/task, response levels, error patterns and next teaching moves; nullable in the public interface. |
 | `sources` | Claim, named source, optional URL and the original author's verification flag. |
 | `confidence` | Original authoring confidence; not an independent quality score. |
-| `provenance` | Original authoring model and source record timestamps. The update timestamp also reflects the learning-guidance rewrite. |
-| `publicationNotes` | Paths and curriculum codes for text omitted under the codes-only publication policy. |
+| `authorship.attribution` | Retained original authoring credit. Legacy timestamps and notes are stored in the separate public migration inventory. |
 
-`sourceClaims` exactly match `sources[].claim` after publication transformations.
+Activities link to `sources[].id` through stable `sourceIds`; diagnostics and activities also retain stable IDs. See the [canonical research contract and migration](docs/canonical-teaching-research-v2.md).
 A source may support a general principle or curriculum alignment; this does not
 mean the proposed activity was tested. Some activities have no directly linked
-source claim.
+citation.
 
 These records were agent-authored. The learning guidance was rewritten for
 portability, checked by a separate factual critic, and sampled by a second agent.
