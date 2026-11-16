@@ -4,6 +4,10 @@ Status: proposed contract, 16 November 2026. This document changes no schema,
 dataset or deployed behaviour. It refines the research boundary in
 [authoring and publication](taxonomy-authoring-and-publication.md).
 
+The first [v2 schema and read-only normalization preview](canonical-teaching-research-v2.md)
+implements preparation tooling. It does not activate the schema or reconcile
+the private inventory.
+
 ## Decision
 
 There is one accepted teaching record per topic. Community contributors and
