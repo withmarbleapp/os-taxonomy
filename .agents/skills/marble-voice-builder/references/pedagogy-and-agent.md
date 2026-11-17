@@ -1,103 +1,115 @@
 # Teaching decisions and evidence
 
-These are design principles distilled from the author’s sessions, not claims
-that a particular digital lesson has been validated. Ground each new topic in
-its research before choosing a representation and supports.
+These principles come from the author's sessions building and watching these
+lessons. They are working design guidance, not findings validated with
+children. Ground each new topic in its own research before choosing a
+representation.
 
-## A conversation, not a ladder
+## The tutor needs choices that mean something
 
-An opening might say: “We’ll learn how layers help us count all the cubes. Let’s
-look at one layer together.” After showing what a layer is, the tutor can ask
-“How many cubes are in this layer, including the ones at the back?” It need not
-explain volume, every layer and interior cubes before the learner participates.
+The lesson's job is to make sure that, whatever the child says or does, the
+tutor has a sensible next move available and knows what the response does and
+does not show. For the cube lesson, an opening might be: "We'll learn how layers
+help us count all the cubes. Let's look at one layer together." After showing a
+layer, the tutor can ask "How many cubes are in this layer, including the ones
+at the back?" The child takes part before volume, every layer and interior cubes
+have all been explained.
 
-Meaningful responses lead to different choices:
-
-| Child's response/work | Possible next teaching move | What it does not establish |
+| Child's response or work | A good next move | What it does not establish |
 |---|---|---|
-| “I don’t know what a layer is.” | Open/highlight one level; explain briefly; count a row together. | That another quiz or new block is needed immediately. |
+| "I don't know what a layer is." | Open or highlight one level; explain briefly; count a row together. | That another quiz or a new block is needed straight away. |
 | Counts only the front row. | Point to the back row; ask a smaller count or compare the rows. | That they misunderstand multiplication. |
-| Counts the full layer and explains repeated addition. | Fade support; offer a small fresh block, or a focused extension. | That an interior-cube lecture is mandatory. |
-| Fresh 4/2/8 plan is correct. | Recognise it; ask how they counted only if reasoning is still uncertain. | A need to ask for four again after stating it is four. |
-| 10 per layer where the model has 12. | Address the missing cubes in that layer before changing topic; allow revision. | That a generic explanation about hidden cubes repaired the error. |
-| Corrects 2/2/4 to 4/2/8. | Treat the latest answer as correct; retain the original as history; consider a fresh check later. | That the old total is still wrong in the current submission. |
-| Says “Okay” after help. | Acknowledge; choose practice or a small question if useful. | Understanding or a request to finish. |
-| Feels confident but struggled. | Record confidence honestly; retain the observed difficulty separately. | That confidence is mastery, or that the self-report should be corrected. |
+| Counts the full layer and explains repeated addition. | Fade support; offer a small fresh block or a focused extension. | That an interior-cube explanation is required. |
+| Fresh 4/2/8 plan is correct. | Recognise it; ask how they counted only if the reasoning is still unclear. | A need to ask for "four" again after they have said four. |
+| 10 per layer where the model has 12. | Work on the missing cubes in that layer before changing topic; let them revise. | That a general talk about hidden cubes fixed the error. |
+| Corrects 2/2/4 to 4/2/8. | Treat the latest answer as correct; keep the original as history; consider a fresh check later. | That the old total is still their answer. |
+| Says "Okay" after help. | Acknowledge; choose practice or a small question if useful. | Understanding, or a wish to finish. |
+| Feels confident but struggled. | Record the confidence as given; keep the observed difficulty separately. | That confidence is mastery, or that the self-report needs correcting. |
 
-A table of possibilities is not an exhaustive decision tree. The agent may find
-another relevant response or teaching move. Use the child's reasoning and exact
-model facts; do not infer a misconception from garbled recognition alone.
+Write a table like this for your topic. It is a set of examples for the tutor to
+generalise from, so it need not be exhaustive. Base each row on the child's
+reasoning and the model's exact facts; garbled speech recognition on its own is
+too weak to diagnose a misconception from.
 
-## Make difficulty and prerequisites explicit
+## Map the difficulty
 
-An adaptive conversation still needs a subject-specific progression. Describe
-which relationships make later tasks meaningful, what visible support each task
-retains, and what evidence warrants skipping or fading it. Provide small checks
-of individual relationships between demonstrations and exploration; a request for
-a whole-topic explanation should not be the only assessment option. A supported
-binary choice supplies narrow evidence, not mastery. For the Moon, reflected light
-at night supports the same mechanism by day, then horizon occlusion; predicting
-without light rays combines these relationships with less support. Treat this as
-a map of difficulty and repair options, not a mandatory route or turn count.
+An adaptive conversation still needs to know which ideas rest on which. For each
+learning opportunity record:
 
-Separate conceptual demand from support: applying a familiar relationship in a
-new setting and hiding its visual cues are two different changes. Describe both
-in the available tasks so a practice request need not become a harder test.
-Where useful, start from a familiar situation and offer controlled contrasts:
-change a meaningful condition while preserving the mechanism, making clear what
-changed and what stayed the same.
+- the relationship it depends on;
+- the visible support it keeps;
+- a small check of that one relationship;
+- what a mistake there calls for;
+- what evidence justifies skipping it or fading its support.
 
-For each learning opportunity, capture its prerequisite understanding, available
-support, narrow evidence and plausible next moves in the teaching brief and
-resources. Include what a mistake would call for and what would justify skipping
-ahead. This supplies the agent with a connected map rather than an unordered
-inventory of demonstrations and quizzes; no new rigid runtime schema is required.
+This gives the tutor a connected map to move around, where an unordered list of
+demonstrations and quizzes would give it nothing to choose by. It lives in the
+teaching brief and the lesson's resources; no extra runtime schema is needed.
 
-## Three evidence channels
+For the Moon: reflected light at night supports the same mechanism by day, which
+supports understanding when Earth blocks the view; predicting without the light
+rays combines all three with less support.
 
-1. **Observed work:** exact entries/actions, scoring, case and revision, with
-   assistance/exposure history. The model adapter establishes mathematical or
-   physical outcomes. “Correct” does not establish why the child succeeded.
-2. **Interpreted reasoning:** actual child words, the question/context and the
-   agent's explanation of what they show. A guided count can be useful evidence
-   without becoming independent success. Unknown is an honest state.
-3. **Self-reported confidence:** capability feelings in the child's own words,
-   tracked against skills actually worked on. Use confident/needs help/unsure as
-   internal summaries, not a required spoken menu. A child may decline.
+Two things make a task harder, and they are separate dials: **conceptual
+demand** (applying a familiar relationship in a new setting) and **support**
+(hiding its visual cues). Describe both for each task, so that a child who asks
+for more practice can get the same demand again without also losing support.
+Controlled contrasts help: start from a familiar situation and change one
+meaningful condition, making clear what changed and what stayed the same.
 
-Do not collapse these into a progress percentage or infer durable mastery.
-Support should fade when the learner’s work warrants it, and return when needed.
-No compulsory item count, global threshold or “explain every topic before test”.
+Offer small checks between demonstrations and exploration, so the tutor has
+evidence long before a whole-topic explanation is possible. A supported choice
+between two options is narrow evidence about one relationship.
 
-## Language and turn-taking
+## Three kinds of evidence
 
-Use short familiar sentences, normally one brief acknowledgement plus the next
-useful idea or question. “One flat level” is more approachable than “complete
-horizontal level”; “cubes altogether” is clearer than repeating formal units
-before they are understood. Explain a necessary new word immediately.
+1. **Observed work:** exact entries and actions, scoring and revisions, each
+   with its assistance and exposure history. The model establishes the
+   mathematical or physical outcome. A correct result says what the child did,
+   not why it worked.
+2. **Interpreted reasoning:** the child's actual words, the question they were
+   answering, and the tutor's reading of what they show. A guided count is
+   useful evidence of guided counting. "Unknown" is an honest state.
+3. **Self-reported confidence:** how capable the child feels, in their own
+   words, about skills they actually worked on. Confident, needs help and unsure
+   are internal summaries; the child is not handed a menu, and may decline.
 
-Ask one meaningful question. Do not duplicate it across an explanation and a
-question slot, repeat the same counts in every reply, demand “say ready”, or give
-an IVR-style menu of phrases. A natural question during help must not fail just
-because it contains a question mark. Preserve partial/interrupted speech status;
-only actually played speech may have been heard.
+Each answers a different question, so they are stored and reported separately
+and never rolled into a progress percentage or a claim of lasting mastery.
+Support fades when the work warrants it and comes back when needed. The lesson
+sets no item count or pass threshold.
 
-## Material for reflection and continuation
+## Writing the lesson's own words
 
-The shared tutor prompt owns when to invite explanation, confidence reflection,
-continuation and stopping. Lesson authors provide the evidence and opportunities,
-not a second copy of that flow. Define what an explanation would show in this
-topic, so the tutor can recognise one already given or invite one when missing.
+The lesson authors the speech for its demonstrations and checks, and the short
+instruction on screen. Write them the way the tutor is asked to speak:
 
-For cubes, an explanation might connect the cubes in one complete layer with
-repeated addition or multiplication across all layers. A correct total alone
-cannot establish that reasoning. Optional deeper material includes a real buried
-cube and why it is included in the middle layer; optional practice uses another
-block. Describe prerequisites and available resources so the tutor can choose
-an unexplored aspect from the conversation, without requiring every option.
+- **Short and familiar.** "One flat level" lands better than "complete
+  horizontal level"; "cubes altogether" is clearer than a formal unit the child
+  has not met. Explain a necessary new word in the same breath.
+- **One idea, then one question or one thing to do.** The question appears once,
+  in the place the child is looking.
+- **Open to a natural reply.** A check accepts the answer however the child
+  phrases it; it does not depend on a set phrase such as "say ready".
+- **The same question everywhere.** Speech, on-screen text and buttons come from
+  one question object, so they cannot drift apart.
 
-Confidence prompts should refer to worked-on skills without assuming an ending:
-“How do you feel about counting a whole layer on your own?” Avoid “Before we
-finish” or instructions to finish after recording confidence. Understanding,
-confidence and a desire to stop remain separate. Do not require special phrases
-or impose a closing questionnaire in the lesson content.
+## Material for explanation, reflection and going further
+
+The shared tutor decides when to invite an explanation, when to ask about
+confidence, when to offer more and when to stop. The lesson supplies what those
+moves need:
+
+- **What an explanation would show.** For cubes: connecting the cubes in one
+  complete layer with repeated addition or multiplication across the layers. A
+  correct total alone does not show it. With this written down, the tutor can
+  recognise an explanation already given, or invite one that is missing.
+- **Deeper aspects and practice, each with prerequisites.** For cubes: a truly
+  buried cube and why the middle layer includes it; another block to count. The
+  tutor picks from these according to the conversation.
+- **Skills the child can reflect on**, phrased about the work and not about
+  ending: "How do you feel about counting a whole layer on your own?"
+
+Understanding, confidence and wanting to stop are three different things, and
+the lesson content treats them so: a confidence question carries no "before we
+finish", and nothing in the lesson asks the tutor to wrap up.

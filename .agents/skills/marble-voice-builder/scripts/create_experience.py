@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 import shutil
 
-from player_source import PLAYER
+from player_source import PLAYER, SKILL
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('destination', type=Path)
@@ -13,7 +13,9 @@ def main():
     if dest.exists():
         parser.error('Destination exists. Inspect and adapt it instead of overwriting work.')
     shutil.copytree(PLAYER / 'packages/authoring-tools/template', dest)
+    shutil.copy2(SKILL / 'assets/DESIGN.template.md', dest / 'DESIGN.md')
     print(f'Created lesson package: {dest}')
+    print('Record the brief and concept in DESIGN.md and keep it current.')
     print('Author its teaching guidance and model; validate and pack with the shared Marble CLI.')
     print('Import the .lesson file in Marble. This folder does not duplicate the runtime.')
 if __name__ == '__main__':

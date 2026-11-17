@@ -340,37 +340,6 @@ summary {
   clip-path: inset(50%);
   overflow: hidden;
 }
-.word {
-  border-bottom: 2px dashed currentColor;
-  pointer-events: auto;
-  cursor: help;
-}
-#word-help {
-  position: absolute;
-  z-index: 10;
-  right: 35px;
-  top: 50%;
-  max-width: 320px;
-  padding: 18px 45px 18px 18px;
-  background: #fdfcfa;
-  color: #141414;
-  border: 2px solid #242722;
-  border-radius: 15px;
-  box-shadow: 0 4px 0 #242722;
-}
-#word-help p {
-  margin: 0;
-}
-#word-close {
-  position: absolute;
-  right: 8px;
-  top: 7px;
-  border: 0;
-  background: none;
-  font-size: 26px;
-  min-width: 32px;
-  min-height: 32px;
-}
 #ptt kbd {
   font:
     500 12px 'Baloo 2',
@@ -448,12 +417,6 @@ dialog > label {
   }
   #commit {
     margin-left: 0;
-  }
-  #word-help {
-    left: 20px;
-    right: 20px;
-    top: 38%;
-    max-width: none;
   }
 }
 @media (max-height: 620px) and (min-width: 801px) {

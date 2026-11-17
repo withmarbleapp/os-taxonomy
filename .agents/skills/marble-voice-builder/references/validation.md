@@ -1,79 +1,91 @@
 # Validation and honest claims
 
-Use `scripts/validate_bundle.py` on the skill and `npm run player:test` from the repository root. The validator checks
-local resources and the single runtime source, not pedagogy.
-The Node suite protects shared contracts and examples. `npm run player:test:browser`
-exercises the generic adapter through the actual browser with a synthetic tutor.
-Chrome location can be set through `CHROME_PATH` for the bundled CDP helper.
+This skill checks the things that can be checked without running the tutor: the
+model is right, the scene can be seen and operated, and the teaching material
+gives a tutor real choices. It does not evaluate how a live tutor teaches with
+the lesson, how the voice loop behaves, or what children learn. No reliable
+method for those is part of the skill yet, so the report says plainly that they
+were not evaluated.
 
-## For each new lesson
+Passing tests tell you the wiring holds. Whether the feedback is sensible and
+the authored speech suits the child's age, you find out by reading it.
 
-1. Verify the core model and scoring against the intended goal: multiple valid
-   answers where relevant, specific wrong answers, fresh/revised cases, support
-   history, and immutable original attempts. Observation and action must match.
-2. Inspect the actual browser at desktop and narrow widths. Exercise the central
-   interaction, clear/blocked/hidden states where relevant, unfinished work,
-   fresh answers, correction, revision, explanation and self-assessment. Inspect
-   screenshots yourself. Source that renders is not a teaching-quality pass.
-3. Check direct manipulation and focused situations: the main actions operate
-   on scene objects with visible feedback; a supported comparison isolates a
-   meaningful decision; a close-up has a clear purpose and preserves the wider
-   scene on return. Verify the tutor can switch situations in response to a
-   misconception and introduce a fresh combined challenge. Reject instructions
-   to achieve a condition already satisfied. Inspect visual quality in each
-   learning view, not just whether the scene renders.
-4. Check contrasting synthetic/adult conversations. Prior knowledge can justify
-   an earlier fresh attempt; uncertainty can justify more demonstration; a
-   counting slip should not trigger an unrelated lecture. A corrected answer
-   should be recognised rather than treated as the old error. A correct count
-   should not be re-asked without a genuine reason. The model should not invent
-   controls, completed actions, an inside cube or an unsupported visibility claim.
-   For visual teaching, check a child who says “I don't know”: does the real tutor
-   invoke the relevant visible moment, or merely recite the answer and quiz it?
-   Also check prior knowledge, requested manipulation, and help during an unfinished
-   task. Verify demonstrations are visible, activity controls are actually present,
-   and returning control preserves the current work and assistance history.
-   Check that a novice is offered unscored manipulation without explicitly asking for controls, and that a practice request activates useful practice rather than another oral recall question. Inspect several reflection opportunities for repeated stems, immediate re-checks and skill-by-skill questionnaires; synonym changes alone do not fix excessive assessment. Scripted tool calls alone do not validate these instructional decisions.
-   Include traces where a child gives an explanation naturally, needs prompting
-   to explain, feels unsure after correct work, feels confident with an uncovered
-   extension available, chooses more practice, declines reflection, and explicitly
-   stops before finishing the work. Check that confidence alone never causes
-   completion, continued work retains context, and explicit stopping is respected
-   without another question or offer. Evaluate these as shared tutor behavior;
-   do not fix failures by adding a separate ending policy to each lesson.
-   Also compare novice and strong-prior-knowledge traces against the authored
-   difficulty map: small supported checks should be available before whole-topic
-   synthesis, while established prerequisites can be skipped. Verify help stays
-   visible in supported checks and is removed only for intended transfer.
-   Follow the transitions between showing and doing: does a demonstration enable
-   a meaningful learner action, does an exploration outcome influence the next
-   teaching move, and does help return control on the same work? Include a trace
-   where an observation or difficulty during exploration motivates a focused
-   demonstration. Judge the reason for changing challenge or support, not just
-   tool usage or the number of activities. A lecture interrupted by oral quizzes,
-   or an activity launched without time to act, does not establish this interplay.
-5. When authorised, exercise actual PTT through recognition, the selected tutor,
-   scene acknowledgement and synthesis. Verify hold/release, toggle, cancel,
-   interrupting playback, late transcripts, missing services and provider errors.
-   Scene navigation should not casually interrupt speech or answer a question.
-6. Read the final words, inference context, tool results and playback records in
-   local journals. If a failure is reported, inspect them rather than blaming
-   child understanding or guessing at transcription. Reproduce the narrow bug
-   before changing a shared policy. Historical attempts stay historical; the
-   newest checked values must be explicit in the next model request.
+## Commands
+
+From the repository root:
+
+```sh
+npm run skill:validate        # the skill's own links and player resources
+npm run player:test           # shared contracts and example lessons
+npm run player:test:browser   # shared browser fixtures
+npm --prefix player run marble -- validate /absolute/path/to/lesson
+```
+
+Set `CHROME_PATH` if the browser helper cannot find Chrome.
+
+## 1. Model and scoring
+
+Write tests for the lesson's model against the goal: several valid answers where
+they exist, specific wrong answers, fresh and revised cases, and support
+history.
+
+- Original attempts stay unchanged when a new one is submitted, and the latest
+  submission is the current one.
+- Help given and answers exposed are recorded with the attempt they affected.
+- A command based on an old revision or an old question is rejected.
+- A spoken answer and a button press score the same way, and the attempt
+  records which it was.
+- Each demonstration or check returns its authored speech, and a question's
+  speech, on-screen text and choices come from one object.
+- Unfinished work can be left without an answer being invented for it.
+
+## 2. In the browser
+
+Look at the real browser at the target width and a narrow one, and inspect the
+screenshots yourself. Exercise the central interaction; clear, blocked and
+hidden states; unfinished work; fresh answers; correction and revision.
+
+- The main actions operate on scene objects with visible feedback.
+- A supported comparison isolates one meaningful decision.
+- A close-up has a clear purpose and the wider scene is as it was on return.
+- Each demonstration is actually visible from the view its action sets, and the
+  controls for each activity are actually present when it starts.
+- An instruction never asks for a condition that is already met.
+- Help on unfinished work leaves that work and its history in place.
+
+A scene that renders has passed nothing yet about teaching.
+
+## 3. Read the teaching material as the tutor would
+
+This is a desk check, done by reading `teaching.json`, the action descriptions
+and the authored speech together. For each kind of learner below, find the move
+the material makes available and confirm the tutor would know when to use it.
+
+| Learner | The material should offer |
+|---|---|
+| Strong prior knowledge | A route to meaningful work that skips the demonstrations, with the evidence that justifies skipping |
+| "I don't know" | A visible moment for the relationship in question |
+| A novice who asks for nothing | An unscored activity the tutor can start unprompted |
+| A specific slip | A way to work on that slip on the child's current setup |
+| Corrects an answer | State that shows the latest answer as current and the old one as history |
+| Asks for practice | Practice at the same demand, separate from a harder transfer task |
+| Needs help mid-task | Help that pauses the task and returns to it |
+| Has not explained | A written description of what an explanation would show, and small checks to use before asking for one |
+| Confident, with more available | Deeper aspects or fresh problems, each with prerequisites |
+
+Also read every authored sentence aloud. It should be short, use words the child
+knows, contain one question at most, and be true of what the scene shows at
+that moment.
+
+If a row has no answer, the lesson has a gap in its map. Fill it in the lesson's
+material. How the tutor converses, reflects and stops belongs to the shared
+tutor and is not patched in a lesson.
 
 ## What to report
 
-Separate model/scoring tests, browser fixtures, scripted conversations, actual
-LLM conversations, actual local speech and child evaluation. Mark all synthetic
-inputs. A branching fake agent proves that tools support different routes; it
-does not prove the live model will choose good teaching moves. A successful
-microphone loop does not establish child recognition accuracy, low-end-device
-performance or subjective voice quality.
-
-Use the actual configured model for requested live testing, with synthetic learner
-inputs. Follow the testing scope in [SKILL.md](../SKILL.md): provider selection
-is a player setting, not an authoring approval question. Do not send private child
-journals to a provider merely to test a new lesson. If live testing is not
-configured, complete the independent checks and report what remains untested.
-Publishing and account/billing changes remain separate from lesson authoring.
+- What the model tests cover, and their result.
+- Which widths and states were checked in the browser.
+- Any gaps found in the desk check, and what was done about them.
+- Whether the visuals are functional or polished.
+- A plain statement that the tutor's live teaching, voice behaviour and
+  children's learning were not evaluated.

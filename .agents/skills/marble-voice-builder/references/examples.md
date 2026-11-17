@@ -1,23 +1,18 @@
 # Runnable examples
 
-The shared player library includes these authored packages:
+These packages ship in the player's library. Read the one closest in mechanism
+to what you are building, for how it is done. Their topics, tools and
+interactions solve their own teaching problems and are not a template for yours.
 
-- [Cube volume](../../../../player/lessons/cube-volume): layers and units, 3D support,
-  exact submitted counts, corrected work, assisted versus independent attempts.
-- [Croatoan clues](../../../../player/lessons/croatoan-clues): visual historical intro,
-  map navigation, source provenance, current scene/source context and authored narration.
-- [The Moon’s daytime visit](../../../../player/lessons/moon-daytime): reused 3D space
-  and observer views; separate teaching demonstrations and child activities; animated
-  light journeys, canonical spoken/written checks, voice/button answer provenance,
-  paused/resumed work and recorded support.
-- [Equal-parts starter](../../../../player/packages/authoring-tools/template): a minimal
-  additional-package example; author research and pedagogy before treating it as a lesson.
+| Example | What it demonstrates | Narration |
+|---|---|---|
+| [The Moon's daytime visit](../../../../player/lessons/moon-daytime) | 3D space and observer views; teaching demonstrations kept separate from child activities; animated light journeys; one question object for spoken and written checks; voice and button answers with provenance; paused and resumed work; recorded support. Its `DESIGN.md` is the model for a design note. | Lesson-worded (the default) |
+| [Cube volume](../../../../player/lessons/cube-volume) | Layers and units with 3D support; exact submitted counts; corrected work; assisted versus independent attempts | Tutor-worded `explain_model` resources |
+| [Croatoan clues](../../../../player/lessons/croatoan-clues) | Illustrated historical opening; map navigation; source provenance; current scene and source context | Tutor-worded `explain_model` resources |
+| [Equal-parts starter](../../../../player/packages/authoring-tools/template) | The smallest valid package. It has no teaching research or lesson design behind it. | None |
 
-Use these mechanisms without copying their topics or imposing their interactions
-on another teaching goal. All run in the same player and use the same voice stack.
-No per-lesson server or hardcoded registry is required.
+All of them run in the same player with the same voice stack.
 
-Older fixture screenshots in assets/screenshots are historical visual references,
-not the current player UI or evidence of child learning. Inspect the current
-browser at desktop and narrow widths. Tests use synthetic tutors and cannot
-establish live pedagogical reliability.
+Their tests use stand-in tutors, so they show that the mechanisms work. They
+say nothing about how a real tutor teaches with them or how children learn from
+them.

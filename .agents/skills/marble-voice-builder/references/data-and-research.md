@@ -1,100 +1,97 @@
-# Data, research and optional contribution
+# Taxonomy data and teaching research
 
-## Locate and read the relevant data
+The taxonomy tells you what a topic is, what it depends on and what has been
+proposed for teaching it. It gives a lesson stable IDs to cite and a head start
+on misconceptions. It does not tell you that any approach works: the guidance in
+it was written by agents and has not been tested with children.
 
-Locate os-taxonomy data in this order; never infer its location from a fixed
-number of parent directories above an installed skill:
+## Find one consistent revision
 
-1. Use `OS_TAXONOMY_DIR` when set. Verify it contains `data/topics.json`,
-   `data/manifest.json` and `schema/`. If invalid, report the configured path's
-   failure before trying another source.
-2. Check the enclosing repository of the skill and the current working directory
-   for those files. An unrelated repository is not a taxonomy checkout.
-3. If neither supplies the data, ask for a checkout location or use the public
-   data from `withmarbleapp/os-taxonomy` at an explicit release or commit SHA.
-   Record that revision and obtain all required files from it; never mix files
-   from a moving branch or different releases.
+Everything you read must come from the same revision, because the research file
+is bound by checksum to the exact bytes of the topic file. Look in this order:
 
-If no checkout or pinned public data is available, state that taxonomy grounding
-could not be checked. Continue with a clearly provisional teaching brief and
-available research when that can support a sound design; do not invent topic IDs,
-claim taxonomy alignment, or treat inaccessible files as missing teaching research.
-Ask for the data only when its absence prevents a sound design.
+1. `OS_TAXONOMY_DIR`, when set. It should contain `data/topics.json`,
+   `data/manifest.json` and `schema/`. If it does not, report that path's
+   failure before looking elsewhere, so a misconfiguration is not hidden.
+2. The repository that encloses this skill, then the current working directory.
+   Check for the same files; an unrelated repository is not a taxonomy checkout.
+3. Otherwise ask for a checkout location, or use the public data from
+   `withmarbleapp/os-taxonomy` at an explicit release or commit SHA, taking every
+   file from that one revision.
 
-Resolve all files from the same revision. Read `README.md` for coverage and
-licensing, and `PROVENANCE.md` when using upstream curriculum material.
+Record the revision in the teaching brief. If `data/manifest.json` and the files
+disagree on version or checksum, reconcile the checkout before relying on joins.
 
-Load/search files programmatically instead of dumping the large research file
-into context. Read the small candidate set needed for the goal:
+When no data can be reached, say that taxonomy grounding could not be checked
+and continue with a brief clearly marked provisional. Data you could not read is
+unknown, not absent. Ask for the data only when the design cannot be sound
+without it.
+
+## Read a small candidate set
+
+The research file is large, so search it with a script and read only the topics
+that bear on the goal. Start with `README.md` for coverage and licensing, and
+`PROVENANCE.md` when using upstream curriculum material.
 
 | File | How to use it |
 |---|---|
-| `data/topics.json` | `topics[]`: `id`, `name`, `description`, `subject`, `domain`, age range, `type`, `evidence`, `assessmentPrompt`, `standards`. Search name/description, then inspect actual candidates. |
-| `data/dependencies.json` | `dependencies[]`: `topicId` **depends on** `prerequisiteId`; `strength` is `hard` or `soft`. Inspect immediate prerequisites first; expand only as needed. |
-| `data/teaching-research.json` | `records[]` join through `topicId`, not an internal DB row ID. `coverage.missingTopicIds` records known gaps. |
+| `data/topics.json` | `topics[]`: `id`, `name`, `description`, `subject`, `domain`, age range, `type`, `evidence`, `assessmentPrompt`, `standards`. Search name and description, then read the actual candidates. |
+| `data/dependencies.json` | `dependencies[]`: `topicId` **depends on** `prerequisiteId`; `strength` is `hard` or `soft`. Read immediate prerequisites first and widen only as needed. |
+| `data/teaching-research.json` | `records[]` join through `topicId`. `coverage.missingTopicIds` lists known gaps. |
 | `data/manifest.json` | Version, per-file checksums and counts. Research `topicFileSha256` binds it to the exact topic-file bytes. |
-| `schema/teaching-research.schema.json` | Canonical public shape; inspect when preparing a research contribution. |
+| `schema/teaching-research.schema.json` | The canonical public shape. Read it when preparing a research contribution. |
 
-If files disagree on version/checksum, reconcile the checkout before relying on
-joins. Preserve stable IDs in the design note. Do not edit the taxonomy to force
-a user's goal to fit. If no topic fits, say so and design around the confirmed
-goal without claiming taxonomy alignment.
+Cite stable topic IDs in the design note. A lesson usually covers a narrower
+slice than a topic; say so. When no topic fits the confirmed goal, design
+around the goal and state that it is not taxonomy-aligned. The taxonomy is
+shared data, so it is not edited to make one lesson fit.
 
-## Interpret research carefully
+## What each part of a research record is worth
 
-A public file currently has `schemaVersion: 1`; its records contain
-`learn.schemaVersion: 2`. These are different version levels.
+The public file has `schemaVersion: 1` and its records contain
+`learn.schemaVersion: 2`; these are different version levels.
 
-- `pedagogy`: summary, best practices, representations and misconceptions.
-- `learn`: summary, proposed activities, constraints and review notes. Each
-  activity has learner actions, intended insight, feedback, rationale and
-  `sourceClaims`. Those claims match `sources[].claim` exactly.
-- `assess`: nullable; diagnostic/task, response levels, error patterns and next
-  teaching moves. Use it alongside the topic's evidence, not as an unquestioned
-  scoring algorithm. `assessmentPrompt` may include `{{name}}`; remove or
-  substitute it before display without requiring the child's name.
-- `sources`, `confidence`, `provenance`: historical authoring metadata.
-  `verified: true` is not fresh verification; high confidence is not an independent
-  quality rating. Read sources for new claims that materially affect the design.
-- `publicationNotes`: paths of omitted restricted curriculum wording. Do not
-  reconstruct that wording. Use the reference/alignment and an original
-  explanation, or consult the upstream source under its terms.
+| Part | What it contains | How far to trust it |
+|---|---|---|
+| `pedagogy` | Summary, best practices, representations, misconceptions | A useful starting list. Often older and less carefully qualified than `learn`. |
+| `learn` | Proposed activities with learner actions, intended insight, feedback, rationale and `sourceClaims` (which match `sources[].claim` exactly); constraints and review notes | Proposals. Read constraints and review notes together with the activities. |
+| `assess` | Nullable. Diagnostic task, response levels, error patterns, next teaching moves | Use alongside the topic's `evidence`, as input to your evidence criteria and not as a scoring algorithm. |
+| `sources`, `confidence`, `provenance` | Historical authoring metadata | `verified: true` records a past check, and high confidence is the author's own rating. Read the source yourself for any claim the design depends on. |
+| `publicationNotes` | Paths of restricted curriculum wording that was omitted | Use the reference and your own explanation, or consult the upstream source under its terms. The omitted wording is not to be reconstructed. |
 
-Guidance is agent-authored and proposed, not empirically validated. Original
-pedagogy/assessment can be less qualified than updated learning guidance. Read
-constraints and review notes together; do not propagate a contradiction simply
-because it occurs in the dataset.
+`assessmentPrompt` may contain `{{name}}`. Remove it or substitute a neutral
+phrase before display; a lesson never needs the child's name.
 
-## Suggesting a research PR
+Where the record has a material gap or contradicts itself, read primary research
+or authoritative guidance and write down what you found. A contradiction in the
+dataset is something to resolve in the brief, not to carry into the lesson.
 
-If newly developed research is useful beyond this child's experience and maps
-to an existing topic, briefly offer to contribute it. Do not ask again if the
-user declines, or delay the HTML to prepare a contribution. No contribution is
-needed merely because existing guidance was adapted.
+## Offering research back
 
-If the user agrees to pursue it:
+When you developed research that would help other lessons on an existing topic,
+offer once to contribute it. Adapting existing guidance is not a reason to, and
+the lesson is never held up for it. If the user agrees:
 
-1. Inspect current repository contribution instructions and the canonical schema.
-   Produce topic-level reusable research, not the child's design brief. Remove
-   names, ages tied to an identifiable child, interests, responses, performance
-   records and conversation details. General topic age bands can remain.
-2. Ground the guidance in inspected sources. Preserve exact claim links and
-   distinguish source-backed principles from proposed activities. Record actual
-   authorship/date and verification status truthfully; never invent original DB
-   provenance. If the public schema cannot express new contribution provenance
-   honestly, propose that contract change explicitly instead of fabricating data.
-3. Keep `learn` portable: no Marble artifact types, catalog rankings, hosting
-   dependencies or child-specific implementation. Match assessment method to
-   topic type as required by `scripts/check-teaching-research.mjs`; check any
-   referenced prerequisite IDs exist.
-4. Prepare the smallest contribution on a branch. For direct data changes, update
-   record counts, coverage and manifest byte lengths/SHA-256 checksums consistently;
-   keep `topicFileSha256` tied to unchanged canonical topic bytes. Validate with
+1. Read the repository's current contribution instructions and the canonical
+   schema; follow any newer process over these notes.
+2. Write topic-level research, not this lesson's brief. It carries no names,
+   interests, responses, performance or conversation details, and no age tied
+   to an identifiable child. General topic age bands are fine.
+3. Ground it in sources you read. Keep exact claim links, separate source-backed
+   principles from proposed activities, and record authorship, date and
+   verification status as they really are. If the schema cannot express that
+   honestly, propose the schema change.
+4. Keep `learn` portable: no Marble artifact types, catalogue rankings, hosting
+   dependencies or lesson-specific implementation. Match the assessment method
+   to the topic type as `scripts/check-teaching-research.mjs` requires, and
+   check that referenced prerequisite IDs exist.
+5. Make the smallest change on a branch. For direct data changes, update record
+   counts, coverage and manifest byte lengths and checksums together, leaving
+   `topicFileSha256` tied to the unchanged topic bytes. Validate with
    `node scripts/validate.mjs` and `node --test scripts/teaching-research.test.mjs`.
-   Follow any newer repository process rather than inventing a competing format.
-5. Include the topic IDs, evidence, limitations and validation in the PR description.
-   Open/push the PR only when authorized by the user and supported by available
-   GitHub access; otherwise deliver a reviewable patch. Do not merge it yourself.
+6. Put the topic IDs, evidence, limitations and validation in the PR
+   description. Push or open the PR only with the user's authorisation;
+   otherwise hand over a reviewable patch. Merging is the maintainers' step.
 
-A schema-valid record is not proof of educational quality. Contribution review
-and publication are separate from the local experience and its validation.
+A record that passes the schema is well-formed, which is a different thing from
+being good teaching.

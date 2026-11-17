@@ -5,202 +5,218 @@ description: Research, design and build child-facing interactive lessons with an
 
 # Marble Voice Builder
 
-Build a learning conversation grounded in a coherent interactive model. Reuse the
-shared player so the work concentrates on teaching research, the representation,
-lesson-specific tools and the lesson package. This skill is a portable draft;
-its examples establish working mechanisms, not proven learning efficacy. See
-[the draft validation record](references/draft-validation.md) for the actual checks.
+A Marble lesson is a conversation between a child and a tutor about something
+they can both see and change. You author a **lesson package**: the subject
+knowledge, an exact model of the phenomenon and its visuals. The shared
+[player](../../../player) supplies everything else. Work from a full os-taxonomy
+checkout; the player source there is the only runtime.
 
-## Establish the lesson
+This skill is a draft. Its examples show mechanisms that work, not teaching that
+has been proven with children.
 
-Use existing context. Clarify only missing information that changes the design:
-the child's age/readiness, language, intended skill and intended device. Do not
-request identifying details. Propose a narrow observable goal when the request
-already implies one; do not add a separate approval round for the goal alone.
+## Principles
 
-Read [data-and-research.md](references/data-and-research.md). Locate a consistent
-os-taxonomy revision, inspect relevant topics and immediate prerequisites, and
-join the teaching research by topic ID. Distinguish suggested activities and
-standards alignment from evidence that an approach works. For material gaps or
-conflicting guidance, inspect appropriate primary research or authoritative
-guidance and produce a short teaching brief. Do not invent citations or topic IDs.
-A missing checkout does not establish that research is absent.
+**1. Three owners, no overlap.**
+The shared tutor owns the conversation: how to introduce, when to check, reflect,
+offer more and stop ([its prompt](../../../player/packages/teaching-runtime/session.mjs)).
+The lesson's model owns the facts: legal actions, exact scoring, current work
+versus attempt history, and what was assisted. The lesson's teaching material
+owns subject knowledge: what is worth showing, what the child can do with it and
+what a response means. The player owns voice, controls, settings and logs.
 
-Record the goal, prerequisite assumptions, representation, likely misconceptions,
-what the child will do, what different responses mean, useful next teaching moves,
-and the limits of the model. Keep child information out of reusable research.
+So a lesson holds no conversational flow, ending logic, microphone, provider or
+tutor-loop code, and a new lesson needs no player change. Which tutor or speech
+engine runs is chosen in Settings by whoever runs the package; authoring neither
+picks nor asks about it. If a lesson seems to need to steer the conversation, it
+is either subject knowledge (author it as an option) or a shared-tutor bug
+(reproduce it and fix it there once).
 
-## Design the conversation
+**2. Author a map, not a route.**
+The tutor can only adapt if it has real choices. Every teaching moment, small
+check, practice task and deeper aspect is an option with its prerequisites, when
+it is useful, what the child contributes and what that shows. A lesson that only
+works in one order is a script; a child who already knows the idea should reach
+meaningful work directly, and a child who is lost should get something shown.
 
-The shared [tutor system prompt](../../../player/packages/teaching-runtime/session.mjs)
-owns the conversational policy: introduction, progressive teaching and assessment,
-own-words explanation, confidence reflection, continuation offers and child-chosen
-stopping. Do not reproduce that policy as lesson stages, closing instructions or
-per-lesson tutor prompts. In particular, confidence does not trigger completion.
+**3. Show enough to enable doing, then hand back.**
+For each relationship decide what must become visible, what the child can then
+do, and what consequence they see. Give the tutor one tool per moment that stages
+it completely (view, geometry, supports, animation), because a tutor cannot
+reliably assemble a demonstration from separate switches. The child acts on the
+objects themselves. Help works on the child's current setup and returns control
+with their work and its history intact.
 
-Supply the topic-specific material the tutor needs to apply that policy:
+**4. Three kinds of evidence, kept apart.**
+Observed work (exact, with whether it was assisted), interpreted reasoning (the
+child's own words) and self-reported confidence answer different questions. None
+stands in for another and none alone ends a lesson. Provide small checks of
+single relationships so a whole-topic explanation is never the only evidence
+available.
 
-- A clear learning intention and an approachable first visual relationship.
-- Evidence criteria for correct work and a meaningful own-words explanation,
-  including what assistance or repetition cannot establish.
-- Teachable moments: what the tutor must make visible, what the child can
-  meaningfully notice or do, and what evidence that contribution can provide.
-  Distinguish their evidence while connecting demonstrations to child-led
-  investigations: what can the child try next, and what might call for more help?
-- A subject-specific difficulty map: prerequisite relationships, small checks of
-  each relationship, visible support levels, and evidence that warrants skipping
-  or fading support. Do not make a full oral explanation the first or only check.
-- Likely misconceptions, smaller questions, demonstrations and repair options.
-- Candidate fresh problems, further practice and supported deeper aspects,
-  with their prerequisites and when they are useful. Make these discoverable
-  options, not a coverage checklist or required sequence.
-- Skills the child can reflect on, with optional neutral confidence questions
-  that do not presume the session is ending.
+**5. The representation is true and legible first; polish can follow.**
+Correct geometry and causality, and a scene a child can read and act on, are
+part of every lesson. Use 3D when depth, occlusion, light or viewpoint carries
+the idea and 2D when the relationship is planar. On screen, the scene fills the
+viewport with one small title and one short instruction that feedback replaces;
+everything else is the phenomenon. Visual polish (crafted terrain, materials,
+lighting, atmosphere) is a separate pass that can come after the lesson teaches
+well. Name the intended look in the concept so the scene is built in a way that
+can be upgraded, and say plainly in the report whether that pass has happened.
 
-The agent owns instructional choices. The experience owns physical/mathematical
-facts, legal actions, scoring, current submissions and support provenance. The
-runtime owns shared conversational policy, voice, turn-taking, acknowledged tools
-and logging. Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md) for
-subject-specific evidence and teaching options that support these decisions.
+**6. Claim only what you checked.**
+Ground the lesson in taxonomy topics and research by ID; suggested activities
+are proposals, not evidence. This skill checks the model, the scene in the
+browser and the teaching material on paper. It does not evaluate how a live
+tutor teaches with the lesson, how the voice loop behaves or what children
+learn, and the report says so.
 
-Before implementation, read [interaction-and-scaffolding.md](references/interaction-and-scaffolding.md).
-Map each learning relationship to a teachable moment before choosing tools:
-the learning need, what is shown or animated, what is held fixed, the child's
-contribution, visible outcome, help and transfer. Interweave showing and doing
-throughout teaching: demonstrate enough to enable an action, let the child
-investigate, and use what happens to decide whether to show more or return control.
-Design these connections without imposing a fixed alternation or activity count.
-Give the tutor pedagogical tools
-that stage those moments completely; do not expect it to assemble a demonstration
-from unrelated camera, highlight and animation switches. Make the available
-moments and their uses discoverable in tool descriptions and current scene context.
-Keep ordinary navigation separate from teaching and evidence. Plan a representative polished scene using
-[visual-design.md](references/visual-design.md); do not defer art direction until
-all activities are built. A collection of controls is not an interaction design.
+## Hard rules
 
-Present a compact concept: the goal, illustrative opening, visual relationship,
-example back-and-forth, supports, candidate fresh problems, what an explanation
-would establish, and possible further exploration or practice. Keep the concept focused on
-teaching and the interactive representation. Ask for refinement and confirm the concept before
-full lesson implementation. Existing explicit approval counts; do not restart
-an approval ceremony. A request to revise an agreed lesson permits routine fixes.
+These are boundaries, not judgment calls.
 
-## Reuse the shared player
+- Never request or store identifying details about a child. Keep logs,
+  recordings, credentials and model weights out of deliverables.
+- Never invent a topic ID, a citation or a learner action.
+- Imported lessons never get microphone control, and the desktop sandbox is
+  never disabled to make something run. If native launch fails, see
+  [linux-desktop.md](../../../player/docs/linux-desktop.md).
+- Never claim that the tutor's teaching, the voice loop or children's learning
+  was validated. Model tests and browser checks show neither.
+- Preserve third-party licence notices in anything you package.
 
-New lessons are **packages loaded by Marble**, not copies of a per-lesson server.
-Read [shared-player.md](references/shared-player.md) first. The authoritative
-implementation is [player/](../../../player) at the repository root: desktop and
-browser player, local voice, contract, SDK, tutor, package tools and examples.
-Use this skill from a full os-taxonomy checkout. There is no embedded runtime copy.
+## Phases
 
-Create a lesson folder (no runtime, credentials, weights or session logs):
+Each phase has an output and a check. Finish the check before moving on. For a
+revision, enter at the phase the change touches; routine fixes to an agreed
+lesson need no new approval.
+
+### 1. Brief
+
+Ask only what would change the design: age or readiness, language, intended
+skill, device. Then read [data-and-research.md](references/data-and-research.md),
+locate one consistent taxonomy revision, and read the relevant topics, their
+immediate prerequisites and the teaching research joined by topic ID.
+
+**Output:** a short teaching brief: a narrow observable goal, topic IDs and
+revision (or a plain statement that grounding could not be checked), assumed
+prerequisites, likely misconceptions, and the representation with its limits.
+
+**Done when:** the goal is something a child could visibly demonstrate, and each
+claim is traceable to a source or labelled as your proposal.
+
+### 2. Concept
+
+Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md),
+[interaction-and-scaffolding.md](references/interaction-and-scaffolding.md) and
+[visual-design.md](references/visual-design.md).
+
+**Output:** a compact concept: the opening question and artwork; a situation
+table with one row per relationship (what is shown, what stays fixed, what the
+child does, the visible outcome, help, transfer); a difficulty map (which
+relationships support which, and what evidence justifies skipping or fading
+support); an example exchange; what an own-words explanation would establish;
+candidate fresh problems; a few lines on the intended look.
+
+**Done when:** every row names something the child does, not only something the
+tutor says, and the user has confirmed the concept. Approval already given
+counts, and the goal alone does not need its own round.
+
+### 3. One working scene
+
+Read [player.md](references/player.md) and the
+[package contract](../../../player/docs/package-contract.md). From the repository
+root:
 
 ```sh
-python3 scripts/create_experience.py /absolute/path/to/new-lesson
+npm run player:install
+python3 .agents/skills/marble-voice-builder/scripts/create_experience.py /absolute/path/to/lesson
+npm run player:dev          # browser player at http://127.0.0.1:3235
+npm --prefix player run marble -- validate /absolute/path/to/lesson
 ```
 
-Use `npm --prefix player ci` and `npm run player:dev` from the repository root.
-For a portable standalone starter, export the current source (not a second
-maintained copy):
+The new folder contains a `DESIGN.md` with a section for each phase. Record the
+brief and concept in it now and keep it current; it is the design note you
+deliver.
 
-```sh
-python3 scripts/create_player.py /absolute/path/to/marble-player
-```
+Build the central relationship end to end: the model, the renderer, one tutor
+moment and one child activity. The visuals need to be accurate and readable
+here, not finished. Use the example closest in mechanism
+([examples.md](references/examples.md)) for how, not for what to teach; for
+narration follow the Moon lesson (see phase 4). Style with the player's
+`scene-base.css` and bundled fonts.
 
-Author the new lesson's `manifest.json`, `teaching.json`, `experience.json`, domain
-model and renderer. `teaching.json` holds goals, evidence interpretation,
-resources, candidate transfer problems, concise decision guidance and confidence
-questions. The model owns exact facts, legal actions, scoring and assistance.
-The SDK connects it to the player. Do not put microphone, provider or tutor-loop
-code in the lesson. Read `docs/package-contract.md` in the shared player.
+**Done when:** `validate` passes; model tests cover the exact outcomes; and in
+the browser at the target and a narrow width you have seen that a child could
+find the object, make the gesture and see the consequence. Look at the
+screenshots yourself. If the moments only connect through a fixed script, change
+the tools now.
 
-Use the relevant example for mechanics and visuals. Cubes demonstrates exact
-submitted counts, correction and assistance; Croatoan demonstrates visible-source
-context, source provenance and navigation. Their topics and tools are examples,
-not universal teaching stages. The equal-parts starter is deliberately minimal;
-it needs teaching research and a coherent lesson design before delivery.
+### 4. Full lesson
 
-Validate and package with the shared CLI, then import into the same player:
+Read [teaching-file.md](references/teaching-file.md). Fill in the rest of the
+map: remaining moments, small checks, practice, transfer and deeper aspects,
+reflection skills, evidence criteria, and `tutorGuidance` limited to the subject,
+the evidence and the model's tools.
 
-```sh
-npm run marble -- validate /absolute/path/to/new-lesson
-npm run marble -- pack /absolute/path/to/new-lesson /path/to/new-lesson.lesson
-```
+**The lesson words its demonstrations and checks.** Expose each one as a model
+action that returns authored `speech`, as the Moon lesson does with
+`show_moment`, `start_check` and `start_activity`. An explanation of a mechanism
+has to be correct, and a question has to match its on-screen text and buttons,
+so those words are written and checked by you, taken from one question object.
+A demonstration sets `continueAfterSpeech` so the tutor can hand straight to a
+question or activity. The tutor words everything in between. Tutor-worded
+`explain_model` resources (Cube, Croatoan) remain available for a moment where
+responding to the child's own words matters more than exact phrasing; give any
+one moment a single path.
 
-For existing lessons, change only the appropriate package or fix a reproduced
-shared-runtime bug. New phenomena may require new models and renderers; the shared
-player supplies infrastructure, not a universal representation.
+**Done when:** every row of the situation table has a resource or action behind
+it; state separates the current submission, earlier attempts and assistance;
+`teaching.json` contains no conversational flow or ending; and the child-facing
+text is in the child's language, free of runtime vocabulary.
 
-## Voice, providers and appearance
+### 5. Validate and deliver
 
-Local speech defaults to Moonshine Small Streaming recognition and
-Phonon 31M/Freya synthesis. The bundle includes worker source, dependency locks,
-model manifest/checksums and setup scripts; download large model files once on
-the target machine. Read portability limits before promising language or device
-support. English speech is the tested baseline. Local voice does not mean a
-local teaching model: cloud inference sends final words and model context to the
-configured provider. The player can also download and run its managed local teaching model in-app;
-see the player README for hardware and packaging limits.
+Read [validation.md](references/validation.md). Three checks, none of which
+runs the tutor:
 
-Tutor selection and speech setup belong to Marble Settings, not the lesson
-proposal. Author a provider-independent `.lesson` package. Do not propose an
-on-device or cloud tutor, ask the author to approve a speech/inference mode, or
-add a privacy/approval preamble to ordinary lesson authoring. The person running
-the package chooses their tutor in the player; the lesson does not change it.
+1. **Model:** tests cover scoring, attempt history, assistance, stale commands,
+   and voice and button answers scoring alike.
+2. **Browser:** at the target and a narrow width, every demonstration is visible
+   from the view its action sets and every activity's controls are present.
+3. **Desk check:** read `teaching.json`, the action descriptions and the
+   authored speech as the tutor would. For each kind of learner in the
+   validation table, the material offers a suitable move and says when to use
+   it.
 
-For testing, inspect and reuse the existing player configuration. A request to
-test with that configured tutor is sufficient; do not ask again because the
-selected provider is cloud-based. If a live test actually requires a new account,
-provider change, download or paid service outside the user's authorized scope,
-raise that concrete dependency when needed. Continue model, package and browser
-checks independently. Use synthetic learner inputs rather than private child
-records. `npm start` launches the desktop shell; `npm run dev` launches its
-browser player. See the player README for provider setup and distribution limits.
+**Done when:** all three are complete, gaps found in the desk check are filled,
+and the report states what was checked, whether the visuals are functional or
+polished, and that the tutor's live teaching, voice and children's learning
+were not evaluated.
 
-Keep the walkie-talkie, Space shortcut, cancellation, optional captions and the
-adult conversation menu in the shared player. Scenes fill the viewport, with
-safe areas for the bottom-right walkie and top-right menu; use scene-base.css
-layout variables. Keep typed replies in the player’s keyboard composer; do not duplicate controls. The shared SDK
-handles Space in app-bundled scenes while preserving lesson text and number inputs.
-Imported lessons use player-owned controls for recording; never grant a package
-microphone control just because it implements the SDK.
-Brief scene instructions and spoken dialogue have separate slots. Avoid technical
-agent/runtime language in the child's flow. Use the child's language and locale
-throughout; do not present English speech support as multilingual validation.
+**Deliver:** the `.lesson` file (`npm --prefix player run marble -- pack DIR FILE`),
+the editable folder with its completed `DESIGN.md` (brief, concept,
+responsibilities, model limits and the validation report), and launch and
+import instructions. Publishing, installing skills and
+contributing research to the taxonomy are separate tasks.
 
-Read [visual-design.md](references/visual-design.md) and
-[component-styling.md](references/component-styling.md) when composing the scene.
-Use the bundled Baloo 2 roles and tactile controls. Use a crafted cel-shaded 3D
-model when viewpoint, depth, illumination or occlusion is essential; use 2D when
-the relationship is genuinely planar. The opening should illustrate the central
-question. In the lesson, keep one small title and one short instruction; feedback
-replaces that instruction. Put definitions on demand, never inside buttons. The
-Cube's number fields are a task-specific example, not a generic dashboard pattern.
-Preserve licence notices in generated work.
+### Polish pass (when asked, or once the lesson teaches well)
 
-## Validate the teaching, not just completion
+Follow the polish section of [visual-design.md](references/visual-design.md):
+make one representative scene match the intended look, then carry it across the
+others. Polish must not change geometry, legal actions or what a check means, so
+rerun the model tests and the browser checks from phase 3 afterwards.
 
-Read [validation.md](references/validation.md). Start with the central relationship
-and exact model outcomes, then inspect the actual browser and responsive states.
-Use contrasting learner traces: confident prior knowledge, uncertainty, a specific
-mistake, corrected work, an explanation, stopping and self-assessment. Different
-understanding should permit different next moves. A trace that always completes
-one route is not evidence of adaptation. A synthetic tutor that calls every tool
-proves wiring, not that an actual tutor knows when to use the environment. Inspect
-whether uncertainty triggers an appropriate visible explanation and whether prior
-understanding can lead directly to meaningful child activity. Report live-model
-validation separately and do not treat verbal fluency as visual teaching.
+**Done when:** you have compared screenshots of the opening, a focused activity
+and a close-up with the intended look, with controls present, at the target and
+a narrow width.
 
-Verify latest submissions supersede old ones without erasing attempt history;
-help and exposed answers remain labelled assisted; navigation does not answer
-questions; actual learner actions are not invented. Listen to synthetic/adult
-voice turns when authorised, check interruption and inspect local journals.
-Read the text and tool outcomes yourself: passing tests do not establish sensible
-feedback, age-appropriate speech or child learning.
+## References
 
-Keep logs, recordings, credentials and downloaded models out of deliverables.
-Report separately what was checked with fixtures, live models, local voice and
-children. Never call scripted behavior an LLM evaluation or claim child validation
-from synthetic conversations. Deliver the `.lesson` package, editable lesson folder, player launch/import instructions,
-short teaching/research note, model limits and validation results. Publishing,
-installing a global skill and contributing taxonomy changes are separate tasks.
+- [data-and-research.md](references/data-and-research.md): locating and reading taxonomy data; interpreting research.
+- [pedagogy-and-agent.md](references/pedagogy-and-agent.md): response-to-move examples, difficulty maps, the evidence channels.
+- [interaction-and-scaffolding.md](references/interaction-and-scaffolding.md): teachable moments, focused situations, direct manipulation.
+- [visual-design.md](references/visual-design.md): scene composition, shared styles, the polish pass, redistributable assets.
+- [teaching-file.md](references/teaching-file.md): what reads each field of `teaching.json`, a valid skeleton, and how to write the tutor's map.
+- [player.md](references/player.md): commands, who owns what, what the model must keep straight, where data goes, and what can be promised (English is the only tested speech baseline).
+- [examples.md](references/examples.md): the shipped lessons and what each demonstrates.
+- [validation.md](references/validation.md): the model, browser and desk checks for phase 5.
