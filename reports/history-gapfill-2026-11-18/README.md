@@ -111,9 +111,18 @@ Low-confidence records and why:
 | Medieval Clothing | Fetched sources document elite dress; peasant fabrics rest on general knowledge a dress historian should confirm. |
 | The Crusades | Religious-conflict content with present-day associations; no religious-education, specialist or community review. |
 
+### Post-review audit
+
+After Greptile's first review, every record was re-audited for four patterns, and fixes were made where found:
+
+- **Assessments requiring untaught content.** Every god, person, date or term an answer key needs is now taught in an activity, is in the topic text, or belongs to a prerequisite. Assessments use unseen stimuli of taught content.
+- **Keys requiring information the stimulus does not give.** Authored, fictional or reconstructed stimuli are labelled as such in the prompt. Keys no longer infer authorship or details the learner cannot see.
+- **Cross-record contradictions.** The shaduf is consistent across the Egypt records: it lifted water into channels, gardens and small plots, while the grain fields depended on the inundation and basin irrigation. Year-zero arithmetic, the 1066 and Danelaw wording, the 1902 franchise and the First Fleet dates were also aligned across records.
+- **Citations not supporting their activity.** These were removed, or replaced with a newly fetched source. Where nothing fetchable supports a claim, it is flagged in reviewNotes.
+
 ### Sources and practical use
 
-[source-checks.json](source-checks.json) records **299 checked source entries** (283 distinct URLs), with the sections used, the exclusions and the topics that use each entry. Two entries were checked but are not cited by any record. Sources were fetched in this session and checked against the specific citation claim. Verification applies to that claim, not to every sentence on a page or to an activity's effectiveness.
+[source-checks.json](source-checks.json) records **314 checked source entries** (293 distinct URLs), with the sections used, the exclusions and the topics that use each entry. Two entries were checked but are not cited by any record. Sources were fetched in this session and checked against the specific citation claim. Verification applies to that claim, not to every sentence on a page or to an activity's effectiveness.
 
 Principal sources:
 

@@ -1,7 +1,7 @@
 // Re-runnable baseline capture. Run on a clean checkout of the base commit
 // (or with this branch's History additions removed) to freeze the baseline
 // honestly: node reports/history-gapfill-2026-11-18/capture-scope.mjs [--base <research.json>]
-// With --base, baseline records come from that file (e.g. `git show origin/main:data/teaching-research.json`).
+// With --base <file> --ref <ref>, the file must be byte-identical to data/teaching-research.json at <ref>; baseCommit is that ref's commit.
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
@@ -13,11 +13,16 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const SUBJECT = 'History';
 const report = 'reports/history-gapfill-2026-11-18/';
 
-const baseArg = process.argv.indexOf('--base');
-const baseRef = process.argv.includes('--ref') ? process.argv[process.argv.indexOf('--ref') + 1] : 'origin/main';
-const researchBytes = baseArg > 0 ? fs.readFileSync(process.argv[baseArg + 1])
-  : execFileSync('git', ['show', `${baseRef}:data/teaching-research.json`], { cwd: new URL(root).pathname, maxBuffer: 1 << 30 });
-const baseCommit = execFileSync('git', ['rev-parse', baseRef], { cwd: new URL(root).pathname }).toString().trim();
+const arg = name => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : undefined; };
+const cwd = new URL(root).pathname;
+const baseFile = arg('--base');
+if (baseFile && !process.argv.includes('--ref')) throw Error('--base requires an explicit --ref naming the commit the file came from');
+const baseRef = arg('--ref') ?? 'origin/main';
+const baseCommit = execFileSync('git', ['rev-parse', '--verify', baseRef + '^{commit}'], { cwd }).toString().trim();
+const refBytes = execFileSync('git', ['show', `${baseCommit}:data/teaching-research.json`], { cwd, maxBuffer: 1 << 30 });
+const researchBytes = baseFile ? fs.readFileSync(baseFile) : refBytes;
+// A file baseline is accepted only if it is byte-identical to the research file at the recorded commit.
+if (sha(researchBytes) !== sha(refBytes)) throw Error(`--base file does not match data/teaching-research.json at ${baseCommit}`);
 const topicsBytes = read('data/topics.json'), dependenciesBytes = read('data/dependencies.json');
 const topics = JSON.parse(topicsBytes), deps = JSON.parse(dependenciesBytes).dependencies, research = JSON.parse(researchBytes);
 const byId = new Map(topics.topics.map(t => [t.id, t]));
