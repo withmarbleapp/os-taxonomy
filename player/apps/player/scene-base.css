@@ -521,3 +521,54 @@ body.continuous-light #object-earth span {
 /* Player-owned overlay safe areas. Scenes fill the viewport. */
 :root{--marble-controls-right:210px;--marble-controls-bottom:260px;--marble-menu-right:88px}
 @media(max-width:800px){:root{--marble-controls-right:166px;--marble-controls-bottom:225px;--marble-menu-right:75px}}
+
+/* A sign for a far-off light source that is outside the picture: a white badge
+   whose pointed corner aims at where the Sun is, holding a plain sun symbol.
+   It is a pointer on the page, never a Sun in the scene. The scene places it
+   near the screen edge with stage.edgePoint() and sets --toward, the direction
+   to the Sun in degrees clockwise from up. */
+.sun-marker {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  margin: -31px 0 0 -31px;
+  box-sizing: border-box;
+  pointer-events: none;
+  --toward: 270deg;
+  background: #fdfcfa;
+  border: 2px solid #1d1a26;
+  border-radius: 50% 50% 4px 50%;
+  transform: rotate(calc(var(--toward) - 135deg));
+}
+.sun-marker::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg stroke='%231d1a26' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M24 4v6M24 38v6M4 24h6M38 24h6M9.9 9.9l4.2 4.2M33.9 33.9l4.2 4.2M9.9 38.1l4.2-4.2M33.9 14.1l4.2-4.2'/%3E%3Ccircle cx='24' cy='24' r='9' fill='%23ffd75e'/%3E%3C/g%3E%3C/svg%3E");
+  transform: rotate(calc(135deg - var(--toward)));
+  transition: filter 0.4s, opacity 0.4s;
+}
+.sun-marker[data-covered='true']::after {
+  filter: grayscale(1);
+  opacity: 0.45;
+}
+/* A cloud that slides across the marker. */
+.sun-veil {
+  position: absolute;
+  width: 84px;
+  height: 48px;
+  margin: -24px 0 0 -42px;
+  pointer-events: none;
+  transition: left 0.5s ease, top 0.5s ease;
+  background:
+    radial-gradient(circle at 28% 62%, #fdfdfb 0 30%, #0000 31%),
+    radial-gradient(circle at 52% 42%, #fdfdfb 0 38%, #0000 39%),
+    radial-gradient(circle at 76% 64%, #fdfdfb 0 28%, #0000 29%);
+  filter: drop-shadow(0 0 1px #16211d) drop-shadow(0 4px 0 #b9c7cc);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sun-veil,
+  .sun-marker::after {
+    transition: none;
+  }
+}

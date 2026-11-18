@@ -2,6 +2,8 @@ import { readFile, writeFile, cp, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { pack, unpack, install } from './archive.mjs';
+import { unzipSync, strFromU8 } from 'fflate';
+import { styleNotes } from './style.mjs';
 const [command, input, output] = process.argv.slice(2);
 try {
   if (command === 'create') {
@@ -15,6 +17,13 @@ try {
     const bytes = await pack(input);
     const p = unpack(bytes);
     console.log(`Valid: ${p.manifest.id} ${p.manifest.version}, ${bytes.length} bytes`);
+    const text = Object.fromEntries(
+      Object.entries(unzipSync(new Uint8Array(bytes), { filter: (f) => /\.(mjs|js)$/.test(f.name) })).map(
+        ([name, data]) => [name, strFromU8(data)],
+      ),
+    );
+    const notes = await styleNotes(text);
+    if (notes.length) console.log('Style notes:\n' + notes.map((n) => '- ' + n).join('\n'));
   } else if (command === 'pack') {
     const bytes = await pack(input),
       p = unpack(bytes),

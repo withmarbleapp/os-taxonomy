@@ -9,8 +9,8 @@ is a separate pass described at the end.
 ## Choose a representation that keeps the relationships
 
 Pick the form that preserves what the child needs to see. When depth, occlusion,
-illumination or viewpoint carries the idea, build it in 3D with Three.js in the
-cel-shaded model style, because a flat diagram cannot be looked around. For
+illumination or viewpoint carries the idea, build it in 3D on the player's
+shared stage (below), because a flat diagram cannot be looked around. For
 equal areas, grouping or fraction parts, a planar model is usually the truer
 choice. Accuracy comes first: polish on top of wrong geometry or a misleading
 cause teaches the wrong thing more convincingly.
@@ -33,6 +33,28 @@ cause teaches the wrong thing more convincingly.
 
 The player already provides the walkie-talkie, menu, typed-reply composer and
 captions. The lesson draws none of these and leaves their areas clear.
+
+## Shared 3D stage and props
+
+Marble's 3D look comes from the player: a stage with four settings (daylight,
+underwater, space, tabletop), a kit of ready-made objects, and shaping tools
+for building anything else in the same style. A package carries no three.js,
+renderer or materials of its own.
+
+```js
+import { THREE, createStage } from '/sdk/stage.mjs';
+import { countryside, character } from '/sdk/props.mjs';
+
+const stage = createStage(canvas, { setting: 'daylight' });
+stage.scene.add(countryside(), character('mia', { at: [0, 0, -3] }));
+stage.resize(innerWidth, innerHeight);
+stage.render(camera); // or stage.render(camera, rect) for an inset view
+```
+
+[kit-style.md](kit-style.md) has the style rules, the list of props, how to
+build a custom object, and the command that shows a new object beside the kit
+so you can see whether it belongs. Read it before writing scene code, and look
+at the sheet for every custom object before using it.
 
 ## Shared styles
 
@@ -98,21 +120,21 @@ A lesson can be delivered before this pass as long as the report says its
 visuals are functional and not yet polished. Name the intended look in the
 concept, so the scene is built in a way that can be upgraded.
 
-The aim is a coherent, inviting game scene. References such as Breath of the
-Wild can point at painterly terrain, composed vistas, soft atmospheric depth,
-stylised materials and restrained effects. A named reference is a direction and
-not yet a specification, so write down the palette, silhouettes, environment
-layers, materials, lighting, camera composition and motion treatment, and make
-original assets within Marble's interface roles.
+The look itself is fixed by the shared stage, so this pass is about the scene
+built on it: composition, depth and the care taken over the lesson's own
+objects. Write down the camera composition, the environment layers and any
+colours added to the palette, and make original assets within Marble's
+interface roles.
 
 Make one representative scene match that look, then carry it across the others:
 
 - foreground, midground and background depth;
-- crafted terrain and vegetation, textured surfaces, believable contact shadows;
+- shaped terrain and vegetation from the kit, with objects resting in their
+  own shadows;
 - purposeful water and light animation where it belongs.
 
-Flat empty ground, plain spheres and boxes, uniform plastic materials and debug
-labels are signs the pass is not finished. Detail serves attention: it should
+Flat empty ground, bare cones and boxes standing in for things, colours outside
+the palette and debug labels are signs the pass is not finished. Detail serves attention: it should
 never obscure the phenomenon or compete with the tutor.
 
 Compare screenshots of the opening, a focused activity and an explanatory

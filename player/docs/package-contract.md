@@ -81,7 +81,9 @@ provider code or the tutor loop in a package. The player owns speech and setting
 Narration should correspond to visible content, not reset the child's progress.
 
 Use relative module and asset imports inside the package. Shared imports are
-limited to the SDK and `/player/scene-base.css`; font assets are in
+limited to the SDK and `/player/scene-base.css`. The SDK includes the 3D stage
+(`/sdk/stage.mjs`, which also supplies three.js) and the prop kit
+(`/sdk/props.mjs`); a 3D package uses these and carries no three.js of its own; font assets are in
 `/player/assets/`. There is no arbitrary fetch/network access. Imported metadata
 is untrusted. Archive hashes detect damaged content, not trustworthy authorship.
 For browser preview, install the package into the local library and open it from

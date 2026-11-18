@@ -56,7 +56,8 @@ available.
 **5. The representation is true and legible first; polish can follow.**
 Correct geometry and causality, and a scene a child can read and act on, are
 part of every lesson. Use 3D when depth, occlusion, light or viewpoint carries
-the idea and 2D when the relationship is planar. On screen, the scene fills the
+the idea and 2D when the relationship is planar. A 3D scene is built on the
+player's shared stage and props, which carry Marble's look. On screen, the scene fills the
 viewport with one small title and one short instruction that feedback replaces;
 everything else is the phenomenon. Visual polish (crafted terrain, materials,
 lighting, atmosphere) is a separate pass that can come after the lesson teaches
@@ -107,8 +108,9 @@ claim is traceable to a source or labelled as your proposal.
 ### 2. Concept
 
 Read [pedagogy-and-agent.md](references/pedagogy-and-agent.md),
-[interaction-and-scaffolding.md](references/interaction-and-scaffolding.md) and
-[visual-design.md](references/visual-design.md).
+[interaction-and-scaffolding.md](references/interaction-and-scaffolding.md),
+[visual-design.md](references/visual-design.md) and, for a 3D scene,
+[kit-style.md](references/kit-style.md).
 
 **Output:** a compact concept: the opening question and artwork; a situation
 table with one row per relationship (what is shown, what stays fixed, what the
@@ -216,6 +218,7 @@ a narrow width.
 - [pedagogy-and-agent.md](references/pedagogy-and-agent.md): response-to-move examples, difficulty maps, the evidence channels.
 - [interaction-and-scaffolding.md](references/interaction-and-scaffolding.md): teachable moments, focused situations, direct manipulation.
 - [visual-design.md](references/visual-design.md): scene composition, shared styles, the polish pass, redistributable assets.
+- [kit-style.md](references/kit-style.md): the 3D look, settings, ready-made props, building a custom object in style, and checking it beside the kit.
 - [teaching-file.md](references/teaching-file.md): what reads each field of `teaching.json`, a valid skeleton, and how to write the tutor's map.
 - [player.md](references/player.md): commands, who owns what, what the model must keep straight, where data goes, and what can be promised (English is the only tested speech baseline).
 - [examples.md](references/examples.md): the shipped lessons and what each demonstrates.

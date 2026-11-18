@@ -14,6 +14,7 @@
     "test": "node --test --test-isolation=none test/*.test.mjs",
     "test:browser": "node scripts/browser-test.mjs && node scripts/start-browser-test.mjs && node scripts/moon-browser-test.mjs",
     "marble": "node packages/authoring-tools/cli.mjs",
+    "kit": "node scripts/kit.mjs",
     "setup:voice": "node packages/voice/setup.mjs",
     "dist:linux": "electron-builder --linux dir",
     "dist:mac": "electron-builder --mac dir",
