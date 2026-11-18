@@ -20,21 +20,20 @@ test('complete gap fill preserves baseline and satisfies the scoped checks', () 
   assert.equal(result.valid, true, JSON.stringify(result));
   assert.equal(result.added, fixture.snapshot.scope.length);
   assert.equal(result.preserved, Object.keys(fixture.snapshot.baselineRecordDigests).length);
-  assert.deepEqual(result.excluded, ['mt_I9iSzpGRn5']);
+  assert.deepEqual(result.excluded, []);
+  assert.equal(result.subjectCoverage, '123 / 123');
 });
 test('detects accidental edits to existing research', () => {
   const input = changed();
   input.collection.records[0].pedagogy.summary += ' An unintended edit.';
   assert.ok(validateGapfill(input).errors.some(e => e.includes('Existing authored research changed')));
 });
-test('detects a missing gap record and a record for the excluded bullying topic', () => {
+test('detects a missing gap record, including the bullying record', () => {
   const input = changed();
-  const row = added(input);
-  input.collection.records = input.collection.records.filter(r => r !== row);
-  input.collection.records.push({ ...structuredClone(row), topicId: 'mt_I9iSzpGRn5' });
+  input.collection.records = input.collection.records.filter(r => r !== added(input) && r.topicId !== 'mt_I9iSzpGRn5');
   const errors = validateGapfill(input).errors;
-  assert.ok(errors.some(e => e.includes('Missing new research')));
-  assert.ok(errors.some(e => e.includes('Excluded topic received a record')));
+  assert.ok(errors.some(e => e.includes('Missing new research mt_I9iSzpGRn5')));
+  assert.ok(errors.some(e => e.includes('uncovered topics')));
 });
 test('detects assessment stimuli copied from a teaching activity', () => {
   const input = changed(), row = added(input);

@@ -1,6 +1,6 @@
 {
   "baseCommit": "483796b44b0d8d8508d571a67a9a9fb54bf30eb4",
-  "capturedAt": "2026-11-18T18:43:16.866Z",
+  "capturedAt": "2026-11-18T20:23:48.945Z",
   "subject": "Personal & Social Development",
   "topicFileSha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35",
   "dependencyFileSha256": "ed38d8a265699d1687a7fa8166c528999e21771d54449a84ea5362dc1d0e7758",
@@ -1993,14 +1993,7 @@
     "withResearch": 6,
     "uncovered": 117
   },
-  "excluded": [
-    {
-      "topicId": "mt_I9iSzpGRn5",
-      "name": "Understanding Bullying",
-      "domain": "Responsible Decision-Making",
-      "reason": "scripts/bullying-definition-context.test.mjs asserts that this topic has zero teaching-research records while the proposed bullying-definition correction (reports/bullying-definition-context-review-2026-11-11.json) awaits downstream compatibility review. Authoring a record here would fail that test and pre-empt that review."
-    }
-  ],
+  "excluded": [],
   "scope": [
     {
       "topic": {
@@ -6362,6 +6355,68 @@
           "strength": "hard",
           "reason": "Peer pressure resistance builds on bystander/upstander awareness",
           "name": "Peer Pressure and Resisting It"
+        }
+      ]
+    },
+    {
+      "topic": {
+        "id": "mt_I9iSzpGRn5",
+        "type": "CONCEPTUAL",
+        "subject": "Personal & Social Development",
+        "domain": "Responsible Decision-Making",
+        "name": "Understanding Bullying",
+        "description": "Recognise bullying in the applicable school or community context: harmful aggression involving a real or perceived power imbalance, commonly repeated, including physical, verbal, social and online forms. Distinguish bullying from an ordinary disagreement, recognise that definitions and context matter, and know how to seek help for harmful behaviour without waiting for it to repeat or proving another person’s intention.",
+        "centrality": 0.02947154471544716,
+        "evidence": [
+          "Use a stated school or community definition to distinguish bullying from an ordinary disagreement, considering harm, power and the pattern or context; explain that a single harmful incident can still require help even if its label is uncertain.",
+          "Name at least three forms of bullying including cyberbullying",
+          "Describe the steps they should take if they experience or witness bullying"
+        ],
+        "assessmentPrompt": "Does {{name}} understand the difference between a one-off argument and bullying, and do they know what to do if they see someone being bullied — rather than just ignoring it?",
+        "standards": [
+          "acara-v9:AC9HP2P05",
+          "acara-v9:AC9HP4P08"
+        ],
+        "ageRangeStart": 6,
+        "ageRangeEnd": 10
+      },
+      "prerequisites": [
+        {
+          "topicId": "mt_I9iSzpGRn5",
+          "prerequisiteId": "mt_9NQEiYLQA3",
+          "strength": "soft",
+          "reason": "Understanding bullying impact benefits from perspective-taking",
+          "name": "Seeing Someone Else's Point of View"
+        },
+        {
+          "topicId": "mt_I9iSzpGRn5",
+          "prerequisiteId": "mt_h-z88yf9Pn",
+          "strength": "hard",
+          "reason": "Understanding bullying requires precise vocabulary distinguishing bullying types including 'cyberbullying'",
+          "name": "Vocabulary: ethics and citizenship"
+        },
+        {
+          "topicId": "mt_I9iSzpGRn5",
+          "prerequisiteId": "mt_Wc6cOTQ1bA",
+          "strength": "hard",
+          "reason": "Understanding bullying builds on knowing right from wrong",
+          "name": "Right and Wrong Choices"
+        }
+      ],
+      "dependents": [
+        {
+          "topicId": "mt_yCmYV9ruQu",
+          "prerequisiteId": "mt_I9iSzpGRn5",
+          "strength": "hard",
+          "reason": "Bystander/upstander builds on understanding what bullying is",
+          "name": "Bystanders and Upstanders"
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "prerequisiteId": "mt_I9iSzpGRn5",
+          "strength": "soft",
+          "reason": "Digital citizenship benefits from understanding bullying (cyberbullying)",
+          "name": "Basic digital citizenship"
         }
       ]
     },

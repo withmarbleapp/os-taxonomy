@@ -4,11 +4,11 @@
   "topicFileSha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35",
   "canonicalSchemaSha256": "a8e05a32309e4579efe71c777d25106fecd2390fc2108139f54f6a94198b8f9f",
   "digestContract": "authored-research-json-v1",
-  "recordCount": 1572,
+  "recordCount": 1573,
   "coverage": {
     "topicCount": 1912,
-    "withResearch": 1572,
-    "withoutResearch": 340,
+    "withResearch": 1573,
+    "withoutResearch": 339,
     "bySubject": {
       "Computing": {
         "topics": 52,
@@ -47,8 +47,8 @@
       },
       "Personal & Social Development": {
         "topics": 123,
-        "withResearch": 122,
-        "withoutResearch": 1
+        "withResearch": 123,
+        "withoutResearch": 0
       },
       "Science": {
         "topics": 582,
@@ -164,7 +164,6 @@
       "mt_Hqz5y_tWz2",
       "mt_HrgDjxcWvf",
       "mt_I65kFjWwnF",
-      "mt_I9iSzpGRn5",
       "mt_II6iw4BmJI",
       "mt_IX37F4rNed",
       "mt_IdFxLz-UW9",
@@ -287787,6 +287786,218 @@
         }
       ],
       "confidence": "medium",
+      "authorship": {
+        "attribution": "Claude; Personal & Social Development teaching-research gap fill, 18 November 2026. No independent review or empirical activity validation claimed."
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "namespace": "v1",
+      "topicId": "mt_I9iSzpGRn5",
+      "pedagogy": {
+        "summary": "Teach learners to apply the school or community definition that actually applies to them, using Ontario's and Australia's published frames as two declared examples rather than a universal rule. Learners weigh harm, power and the pattern or context to tell ordinary disagreement from bullying, recognise physical, verbal, social and online forms, and know that safe help-seeking never waits for repetition, proof of intention or a label.",
+        "bestPractices": [
+          "Start from the school's own stated definition card. Where useful, compare two declared frames: Ontario's guidance says bullying can be repeated or happen one time, and its Education Act definition speaks of typically repeated behaviour where harm is intended or ought to be known to be likely; Australia's national school definition requires a power imbalance, repetition or potential repetition, and intentional harm.",
+          "Reason with three questions about a fictional case: Is someone being harmed? Is there a real or perceived power imbalance? What is the pattern or context, including whether online content can keep being shared?",
+          "Keep classification and help separate: whatever the label, harmful behaviour is reported to a trusted adult, and help does not wait for a second incident, an admission of intent or the target seeming upset or calm.",
+          "Teach witness actions that keep the learner safe: do not join in, laugh or share; support the target and get help; never confront the person doing the harm alone."
+        ],
+        "keyRepresentations": [
+          "Definition cards for the applicable school frame, with Ontario and Australian frames shown as labelled examples",
+          "Harm–power–pattern question strip",
+          "Two-column chart: 'What label fits under this definition?' and 'What help is needed now?'",
+          "Safe help-seeking ladder: tell a trusted adult, use the school's reporting route (anonymously if available), support the target, keep telling until someone helps"
+        ],
+        "commonMisconceptions": []
+      },
+      "learn": {
+        "schemaVersion": 2,
+        "summary": "Teach learners to apply the school or community definition that actually applies to them, using Ontario's and Australia's published frames as two declared examples rather than a universal rule. Learners weigh harm, power and the pattern or context to tell ordinary disagreement from bullying, recognise physical, verbal, social and online forms, and know that safe help-seeking never waits for repetition, proof of intention or a label.",
+        "activities": [
+          {
+            "title": "Two declared definitions",
+            "learnerActions": [
+              "Compare two teacher-made definition cards, one summarising Ontario's guidance and one summarising Australia's national school definition, and tick which features each names: harm, real or perceived power imbalance, repeated or one-time behaviour, potential repetition online, intended or reasonably foreseeable harm.",
+              "Apply both cards to one fictional case: a much older student once pushes a younger child off the bench at the bus stop while friends watch. Record what each card says about the label and what help is needed under both."
+            ],
+            "intendedInsight": "Definitions differ between places, so the applicable school or community definition decides the label; under Ontario's frame a single power-imbalanced incident can qualify, while under Australia's frame repetition is not yet established, yet help is needed under both.",
+            "feedback": [
+              "Which feature is on one card but not the other? Does that change whether the younger child should get help, or only the label?"
+            ],
+            "rationale": "The task is an authored application of the cited teaching principle or guidance. The exact example and its effectiveness have not been evaluated with learners.",
+            "id": "activity_b720753a8859487383fc5b6ec490d4af",
+            "sourceIds": [
+              "citation_4e8f97e132144a41ba6a2438cb80f7ca",
+              "citation_defaec8577b84c7da3da7fbc51521008",
+              "citation_1ea67dbcbec84b159fb984ac44d1e0ad",
+              "citation_51509eda12964f1ca2061f7571e1ef05"
+            ]
+          },
+          {
+            "title": "Disagreement or bullying?",
+            "learnerActions": [
+              "Sort fictional case cards using the harm–power–pattern strip: two friends of similar standing argue about the rules of a card game and each says their view; over several weeks a group deliberately leaves the same classmate out of every team and tells others not to sit with her; a classmate trips over a bag by accident."
+            ],
+            "intendedInsight": "An argument between equals who can both speak up is ordinary conflict on these facts, though an adult can still help if it becomes harmful; repeated deliberate exclusion with group power fits the stated bullying criteria in both frames; an accident is neither.",
+            "feedback": [
+              "Who had more power in each card, and how could you tell from the facts given? What would make you want an adult to help even with the game argument?"
+            ],
+            "rationale": "The task is an authored application of the cited teaching principle or guidance. The exact example and its effectiveness have not been evaluated with learners.",
+            "id": "activity_9bd79504181d477a8a07e0c8881a1993",
+            "sourceIds": [
+              "citation_1ea67dbcbec84b159fb984ac44d1e0ad",
+              "citation_51509eda12964f1ca2061f7571e1ef05",
+              "citation_2bb0936d542d4e3d81d318f93c72d5a3"
+            ]
+          },
+          {
+            "title": "Forms and online sharing",
+            "learnerActions": [
+              "Match short fictional descriptions to physical, verbal, social and online forms (for example shoving, repeated name-calling described without quoting words, spreading a rumour, posting an embarrassing edited picture), then discuss why one online post that others can keep forwarding may count as potentially repeated."
+            ],
+            "intendedInsight": "Bullying can be physical, verbal, social or online, and online content can keep circulating after one action, which matters for the pattern question.",
+            "feedback": [
+              "Which form is this? If the picture was posted once, how could it keep hurting the person?"
+            ],
+            "rationale": "The task is an authored application of the cited teaching principle or guidance. The exact example and its effectiveness have not been evaluated with learners.",
+            "id": "activity_f95a6905d4484521891a4ca1e45e8a7f",
+            "sourceIds": [
+              "citation_1ea67dbcbec84b159fb984ac44d1e0ad",
+              "citation_4e8f97e132144a41ba6a2438cb80f7ca"
+            ]
+          },
+          {
+            "title": "Help that doesn't wait",
+            "learnerActions": [
+              "For a fictional witness who sees an older pupil take a younger pupil's lunch once and laugh, build a help plan on the safe help-seeking ladder, then check it against three 'wait' traps: waiting to see if it happens again, waiting until the older pupil admits meaning it, and waiting because the younger pupil looks calm."
+            ],
+            "intendedInsight": "Telling a trusted adult and supporting the target are right now, without a repeat, an admission of intent or a visible reaction; confronting the older pupil alone is not part of a safe plan.",
+            "feedback": [
+              "Which step in your plan keeps you safe? What would you do if the first adult you told did not help?"
+            ],
+            "rationale": "The task is an authored application of the cited teaching principle or guidance. The exact example and its effectiveness have not been evaluated with learners.",
+            "id": "activity_6f922cbeb8a84bf984624024c7e31d97",
+            "sourceIds": [
+              "citation_41bee14dd67443219598bf8e86cbc6d1",
+              "citation_4e8f97e132144a41ba6a2438cb80f7ca",
+              "citation_8f5a81b971ad4c8dad2fecb4d2265a6f",
+              "citation_51509eda12964f1ca2061f7571e1ef05"
+            ]
+          }
+        ],
+        "constraints": [
+          "Safeguarding: use fictional characters, stories and distanced scenarios; never require a child to disclose personal feelings, family matters, trauma, health or peer conflicts as evidence, and allow a pass. Any disclosure or concern is handled under the school's safeguarding policy by a trusted adult, not assessed. Assess reasoning about the scenario, not the child's own emotional state, expression style, eye contact or stillness.",
+          "Use the school's own stated bullying definition and reporting procedure. Ontario and Australia are declared example frames for comparison, not universal or legal definitions for other places, and a one-off harm report does not by itself certify that an incident legally constitutes bullying.",
+          "Never stage or manufacture bullying, threats, exclusion or confrontation among real pupils; do not use slurs, graphic images or private victim history; never ask whether a learner has been bullied, has bullied or knows who is involved. Any disclosure is handled under the school's safeguarding and anti-bullying procedures, not assessed.",
+          "A witness's responsibility is to stay safe, not join in or share, support the target and tell a trusted adult; learners are never expected to confront the person doing the harm alone. Help is never delayed because an incident was isolated, the target seemed calm, or someone denies intending harm.",
+          "Exercise design: Start with one declared definition card and clear-cut fictional cases, then fade the question strip and add the second frame. Vary the form (physical, verbal, social, online), who holds power (age, group, popularity, online audience) and the pattern (single, repeated, potentially repeated through sharing). Include boundary cases: equal peers in a heated but two-sided argument; an accident; a single power-imbalanced incident whose label differs between frames; facts too incomplete to know intent. For each case, keep the label decision separate from the help decision.",
+          "Keep separate worked, supported-practice and assessment stimuli. Remove scaffolds before increasing demands; record support and use fresh fictional cases before drawing a mastery conclusion. The progression is not a calibrated difficulty scale or a new age/mastery claim."
+        ],
+        "reviewNotes": [
+          "Authored by Claude from the fetched sources and complete current topic, prerequisite and dependent context. Source verification applies to each stated citation claim, not every sentence in a source or the effectiveness of this exact activity.",
+          "No learner trial, practitioner/safeguarding review or independent content review has occurred. Proposed exercises and diagnostic adaptations remain research-informed proposals.",
+          "Low confidence: definitions differ by jurisdiction and school; this record has not been reviewed by a school safeguarding or anti-bullying lead, and the help steps must be matched to each school's actual reporting procedure.",
+          "The Ontario sources refused automated fetching (HTTP 403) and were downloaded directly and read on 18 November 2026. The record follows reports/bullying-definition-context-review-2026-11-11.json and its declared frames and boundaries."
+        ]
+      },
+      "assess": {
+        "method": "two_tier",
+        "diagnosticPrompt": "Give {{name}} the school's definition card (or, for practice, the labelled Ontario and Australian cards) and three new fictional cases. (1) Two Year 5 classmates who are good friends disagree loudly about which song to play; both have their say and they sit apart for a while. (2) For three weeks, a popular group has spread an unkind rumour about a new boy and moved their chairs away whenever he sits down. (3) A Year 6 pupil once makes a fake account with a classmate's name and photo, posts mocking messages from it, and other children keep reposting them. For each case ask: what label fits under the definition card and why, considering harm, power and the pattern or context; and what should a witness do now?",
+        "correctAnswer": "(1) Ordinary disagreement on these facts: two friends of similar standing who can both speak up, with no targeted harm; an adult can still help if it turns hurtful. (2) Fits the stated bullying criteria in both frames: deliberate social and verbal harm, repeated over weeks, by a group with more social power. (3) Can fit both frames: deliberate harm, a power imbalance through impersonation and audience, and potential repetition because the posts keep circulating, even though the account was made once. For (2) and (3) a witness does not join in or repost, supports the target if safe, and tells a trusted adult or uses the school's reporting route now. Help does not wait for it to happen again, for the pupil to admit meaning harm, or for the target to look upset; and the witness never confronts the pupil alone. Uncertainty about the exact label is not a reason to delay help.",
+        "whatMakesItDiscriminate": "The three cases match the review's whole-operation witnesses: a two-sided equal disagreement (positive distinction), repeated targeted exclusion (fits both frames) and a single widely circulated impersonation (transfer). A learner who thinks every argument is bullying, that one action can never be bullying, that intent must be proven, or that the witness should confront the aggressor alone will answer at least one case wrongly, while correct harm–power–pattern reasoning with separate help decisions answers all three.",
+        "errorPatterns": [
+          {
+            "pattern": "The song argument is bullying because they were shouting and someone got upset.",
+            "kind": "performance",
+            "revealedBy": "Labels any loud or unpleasant disagreement as bullying without considering whether both sides could speak up or whether one held more power. Evidence basis: Australian Government, Bullying. No Way!, What is bullying? This is an authored observable reasoning/performance check, not a documented learner-misconception claim.",
+            "nextMove": "Return to the harm–power–pattern strip: ask who could have their say in the song argument and who could not in the chair-moving case, then compare the answers.",
+            "distractor": null,
+            "reteachPrerequisiteId": "mt_h-z88yf9Pn",
+            "id": "diagnostic_1a6f8ffc48494ff186534484fde94add"
+          },
+          {
+            "pattern": "The fake account only happened once, so it isn't bullying and nobody needs to tell anyone yet.",
+            "kind": "performance",
+            "revealedBy": "Treats a single online action as automatically outside bullying and delays telling an adult until it happens again. Evidence basis: Australian Government, Bullying. No Way!, What is bullying? This is an authored observable reasoning/performance check, not a documented learner-misconception claim.",
+            "nextMove": "Ask how many people could see the posts and whether they are still spreading, then separate the label question from the help question on the two-column chart and plan who to tell today.",
+            "distractor": null,
+            "reteachPrerequisiteId": null,
+            "id": "diagnostic_a7f5498cf9d64af583e736bcc03049d1"
+          },
+          {
+            "pattern": "You can't report it unless the pupil admits they meant it, and the best thing is to go and tell them off yourself.",
+            "kind": "performance",
+            "revealedBy": "Makes proof of intention a condition for getting help, or plans to confront the person doing the harm alone instead of telling a trusted adult. Evidence basis: NSW Department of Education, Anti-bullying: I've seen someone bullied (student advice). This is an authored observable reasoning/performance check, not a documented learner-misconception claim.",
+            "nextMove": "Use the 'wait' traps from the help activity: show that adults find out what happened after a report, and rebuild the plan on the safe help-seeking ladder with telling an adult first.",
+            "distractor": null,
+            "reteachPrerequisiteId": null,
+            "id": "diagnostic_4b2c0ac8709d454eaf8ab47864db4963"
+          }
+        ],
+        "probeDeeper": [
+          "If your school's definition says bullying has to be repeated, does that mean a single harmful incident should not be reported? Why not?",
+          "In the chair-moving case, where does the group's power come from?",
+          "What could make the song argument need an adult's help, even if it is not bullying?"
+        ],
+        "responseLevels": {
+          "gap": "Labels cases by how unpleasant they sound, or names no safe action.",
+          "partial": "Labels some cases correctly or names forms and help steps, but treats one-off or unproven-intent cases as needing no help, or applies one definition as if it held everywhere.",
+          "full": "Uses the stated definition with harm, power and pattern or context to label all three cases, explains the online circulation case, and gives safe help steps that do not wait for repetition, proven intent or a visible reaction."
+        },
+        "poeTask": null
+      },
+      "sources": [
+        {
+          "claim": "Ontario's public guidance describes bullying as behaviour that makes the person bullied feel afraid or uncomfortable, which can be unwanted repeated aggression or happen one time, by one person or a group, often where there are real or perceived power imbalances; it lists forms including physical, verbal, social and cyber-bullying, and advises students to walk away, tell an adult they trust, report (including anonymously) through their school or board, and talk to others so they do not feel alone.",
+          "source": "Government of Ontario, Bullying: we can all help stop it.",
+          "url": "https://www.ontario.ca/page/bullying-we-can-all-help-stop-it",
+          "verified": true,
+          "id": "citation_4e8f97e132144a41ba6a2438cb80f7ca"
+        },
+        {
+          "claim": "Ontario Policy/Program Memorandum 144 (issued 25 November 2021) states that bullying can be repeated or occur one time, can occur where there are real or perceived power imbalances, and cites the Education Act definition: aggressive and typically repeated behaviour that is intended, or that the pupil ought to know would be likely, to cause harm, fear or distress, in a context of real or perceived power imbalance, by physical, verbal, electronic, written or other means.",
+          "source": "Ontario Ministry of Education, Policy/Program Memorandum 144: Bullying prevention and intervention (2021).",
+          "url": "https://www.ontario.ca/document/education-ontario-policy-and-program-direction/policyprogram-memorandum-144",
+          "verified": true,
+          "id": "citation_defaec8577b84c7da3da7fbc51521008"
+        },
+        {
+          "claim": "Australia's national school definition describes bullying through three elements: a real or perceived imbalance of power, repetition or potential repetition (sharing hurtful content online even once can count because it can be shared and repeated), and intentional acts that are aggressive, negative or harmful; it can be verbal, physical, social, in person or online, overt or covert. Single incidents and conflicts between equals are not defined as bullying, but unkind actions can hurt and should be addressed.",
+          "source": "Australian Government, Bullying. No Way!, What is bullying?",
+          "url": "https://www.bullyingnoway.gov.au/understand/what-is-bullying/",
+          "verified": true,
+          "id": "citation_1ea67dbcbec84b159fb984ac44d1e0ad"
+        },
+        {
+          "claim": "The Australian definition resource summarises the three main features of bullying (power imbalance, actual or potential repetition, intentional harmful acts), says single incidents and disagreements between equals are not bullying, and states that it is important for schools to respond to any inappropriate behaviour and ensure every person feels safe.",
+          "source": "Australian Government, Bullying. No Way!, The definition of bullying (resource).",
+          "url": "https://www.bullyingnoway.gov.au/resources/the-definition-of-bullying/",
+          "verified": true,
+          "id": "citation_51509eda12964f1ca2061f7571e1ef05"
+        },
+        {
+          "claim": "By the end of primary, Relationships Education in England covers families that look different but are characterised by love and care; caring friendships that have ups and downs, include others and are worked through without violence; respectful relationships including boundaries, assertiveness versus being controlling, respecting difference, stereotypes and how to challenge them, bullying types and bystander responsibilities (primarily reporting to an adult), and seeking help.",
+          "source": "Department for Education (2025, in force 1 September 2026), Relationships Education, Relationships and Sex Education (RSE) and Health Education statutory guidance, primary Relationships Education content (pp. 8–9).",
+          "url": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+          "verified": true,
+          "id": "citation_2bb0936d542d4e3d81d318f93c72d5a3"
+        },
+        {
+          "claim": "Students who see bullying are advised to step in only if safe, support or accompany the person to get help, tell a trusted adult (privately if worried), not join in or laugh, not resend offensive messages or photos, and report online bullying to the platform and an adult.",
+          "source": "NSW Department of Education, Anti-bullying: I've seen someone bullied (student advice).",
+          "url": "https://education.nsw.gov.au/schooling/schooling-initiatives/anti-bullying/students/ive-seen-someone-bullied",
+          "verified": true,
+          "id": "citation_41bee14dd67443219598bf8e86cbc6d1"
+        },
+        {
+          "claim": "Primary Relationships Education covers respectful online interaction, risks from people who pretend online, harmful content/contact and reporting, caution about sharing information and images, boundaries, privacy and that it is not always right to keep secrets that relate to safety, that each person's body belongs to them, appropriate and unsafe contact, how to report abuse or concerns, and how to keep asking for help until heard.",
+          "source": "Department for Education (2025, in force 1 September 2026), RSHE statutory guidance, primary 'Online safety and awareness' and 'Being safe' content (p. 10).",
+          "url": "https://assets.publishing.service.gov.uk/media/6970e7e67e827090d02d42e0/Relationships_education_relationships_and_sex_education__RSE__and_health_education__for_intro_1_September_2026_.pdf",
+          "verified": true,
+          "id": "citation_8f5a81b971ad4c8dad2fecb4d2265a6f"
+        }
+      ],
+      "confidence": "low",
       "authorship": {
         "attribution": "Claude; Personal & Social Development teaching-research gap fill, 18 November 2026. No independent review or empirical activity validation claimed."
       }

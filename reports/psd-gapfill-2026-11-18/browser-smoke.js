@@ -27,7 +27,7 @@
     return JSON.parse(await exported.text());
   };
   try {
-    assert(entries.length === 116 && filtered.length === entries.length, 'Initial topic count');
+    assert(entries.length === 117 && filtered.length === entries.length, 'Initial topic count');
     input('subject', 'Personal & Social Development');
     assert(filtered.length === entries.length, 'Subject filter');
     input('domain', 'Responsible Decision-Making');

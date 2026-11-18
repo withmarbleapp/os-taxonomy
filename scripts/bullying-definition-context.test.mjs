@@ -40,5 +40,32 @@ test('canonical two-field revision retains form inventory and help assessment', 
   assert.equal(card.evidence[2], 'Describe the steps they should take if they experience or witness bullying');
   assert.ok(card.assessmentPrompt.includes('rather than just ignoring it'));
   assert.deepEqual(report.changedPaths, ['description', 'evidence[0]']);
-  assert.equal(read('data/teaching-research.json').records.filter(g => g.topicId === card.id).length, 0);
+  checkGuide(read('data/teaching-research.json').records, card.id);
+});
+// Teaching research for the revised card must keep the declared-frame reading
+// and must not make help conditional on repetition or proven intent.
+function checkGuide(records, topicId) {
+  const rows = records.filter(g => g.topicId === topicId);
+  assert.equal(rows.length, 1);
+  // Authored teaching text only: a cited source's name is not frame reasoning.
+  const { pedagogy, learn, assess } = rows[0];
+  const text = JSON.stringify({ pedagogy, learn, assess }).toLowerCase();
+  assert.doesNotMatch(text, /bullying (?:is|must be) always repeated|bullying requires (?:proof|proven|an admission) of intent/);
+  assert.ok((text.includes('ontario') && text.includes('australia')) || /applicable school or community definition/.test(text));
+  assert.match(text, /help(?:-seeking)? (?:does not|doesn't|never) waits? for/);
+}
+test('bullying guide keeps declared frames and help that does not wait', () => {
+  const records = read('data/teaching-research.json').records;
+  const row = records.find(g => g.topicId === report.topicId);
+  const mutate = edit => { const copy = structuredClone(row); edit(copy); return [...records.filter(g => g !== row), copy]; };
+  const say = sentence => r => { r.pedagogy.summary += ` ${sentence}`; };
+  const strip = pattern => r => { for (const key of ['pedagogy', 'learn', 'assess']) r[key] = JSON.parse(JSON.stringify(r[key]).replace(pattern, '')); };
+  for (const bad of [
+    records.filter(g => g !== row),
+    [...records, structuredClone(row)],
+    mutate(say('Bullying is always repeated.')),
+    mutate(say('Bullying requires proof of intent.')),
+    mutate(strip(/ontario|australia|applicable school or community definition/gi)),
+    mutate(strip(/help(?:-seeking)? (?:does not|doesn't|never) waits? for/gi)),
+  ]) assert.throws(() => checkGuide(bad, report.topicId));
 });

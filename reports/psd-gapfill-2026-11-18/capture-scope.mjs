@@ -13,9 +13,9 @@ const baseCommit = git('rev-parse', base).toString().trim();
 const atBase = path => git('show', `${baseCommit}:${path}`);
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const SUBJECT = 'Personal & Social Development';
-// scripts/bullying-definition-context.test.mjs requires this topic to have no
-// research record while its proposed definition correction awaits downstream review.
-const EXCLUDED = { mt_I9iSzpGRn5: 'scripts/bullying-definition-context.test.mjs asserts that this topic has zero teaching-research records while the proposed bullying-definition correction (reports/bullying-definition-context-review-2026-11-11.json) awaits downstream compatibility review. Authoring a record here would fail that test and pre-empt that review.' };
+// No exclusions: every uncovered topic in the subject is in scope. The mechanism is kept
+// so a future capture can document a deliberate exclusion with its reason.
+const EXCLUDED = {};
 
 const topicsBytes = atBase('data/topics.json'), dependenciesBytes = atBase('data/dependencies.json'), researchBytes = atBase('data/teaching-research.json');
 const topics = JSON.parse(topicsBytes), dependencies = JSON.parse(dependenciesBytes).dependencies, research = JSON.parse(researchBytes);
