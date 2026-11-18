@@ -510,3 +510,95 @@ test('button completion is explicitly answered in the next tutor context', async
   assert.equal(calls,2);
   session.close();
 });
+
+test('wrap-up states come from recorded evidence, with help stamped by the runtime', async () => {
+  const { outcomeFor, stampRecord } = await import('../packages/teaching-runtime/outcome.mjs');
+  const pkg = {
+    teaching: {
+      id: 'lesson',
+      curriculum: ['topic-1'],
+      evidenceEvents: ['response_committed'],
+      dialogue: {
+        focuses: [
+          { id: 'a', goals: ['g1'] },
+          { id: 'b', goals: ['g2'] },
+          { id: 'c', goals: ['g2'] },
+          { id: 'd', goals: ['g3'] },
+        ],
+      },
+      selfEvaluation: {
+        skills: [
+          { id: 'one', description: 'Do one.', focuses: ['a'] },
+          { id: 'two', description: 'Do two.', focuses: ['b', 'c'] },
+          { id: 'three', description: 'Do three.', focuses: ['d'] },
+          { id: 'four', description: 'Do four.', focuses: [] },
+        ],
+      },
+    },
+  };
+  const event = (assisted) => ({ source: 'learner', name: 'response_committed', data: { assisted } });
+  const stamp = (record, origin, events = []) =>
+    stampRecord(record, { origin, events, evidenceEvents: pkg.teaching.evidenceEvents });
+  const learning = [
+    // Own words count as the child's own.
+    stamp({ focus: 'a', interpretation: 'understood', evidence: 'said both are needed' }, 'learner'),
+    // Committed work the lesson marked as helped stays "with help", however it is described.
+    stamp({ focus: 'b', interpretation: 'understood', evidence: 'chose the right side entirely alone' }, 'observation', [event(true)]),
+    // A question or a difficulty means the skill came up, not that it was shown.
+    stamp({ focus: 'd', interpretation: 'needs_help', evidence: 'unsure where to stand' }, 'learner'),
+  ];
+  const outcome = outcomeFor(pkg, learning, { one: 'You said: “both”.', four: 'You did four.' });
+  assert.deepEqual(
+    outcome.skills.map((r) => r.state),
+    ['own', 'help', 'seen', 'none'],
+  );
+  assert.equal(outcome.skills[0].proof, 'You said: “both”.');
+  assert.equal(outcome.skills[1].proof, 'chose the right side entirely alone');
+  // A note cannot stand in for evidence.
+  assert.equal(outcome.skills[3].proof, 'We haven’t tried this one yet.');
+  assert.deepEqual([outcome.shown, outcome.complete, outcome.next], [1, false, 'two']);
+  assert.deepEqual(outcome.skills[1].goals, ['g2']);
+  assert.deepEqual(outcome.topics, ['topic-1']);
+  // Unassisted work, later, lifts the skill to "on your own".
+  learning.push(stamp({ focus: 'c', interpretation: 'understood', evidence: 'built it' }, 'observation', [event(true), event(false)]));
+  assert.equal(outcomeFor(pkg, learning).skills[1].state, 'own');
+});
+
+test('review shows the wrap-up while the tutor speaks; finishing logs the outcome', async () => {
+  const pkg = await loadDirectory('lessons/moon-daytime');
+  const skill = pkg.teaching.selfEvaluation.skills[0],
+    focus = skill.focuses[0];
+  const { createMoon } = await import('../lessons/moon-daytime/model/moon.mjs');
+  const model = createMoon({ sessionId: crypto.randomUUID() });
+  const shown = [],
+    logs = [],
+    replies = [
+      {
+        tool: 'review',
+        arguments: JSON.stringify({ text: 'Here is what you have done.', notes: [{ skill: skill.id, text: 'You said it bounces.' }] }),
+        understanding: [{ focus, interpretation: 'understood', evidence: 'said the light bounces off the Moon' }],
+      },
+      say('Let us carry on.'),
+      { tool: 'finish', arguments: JSON.stringify({ text: 'Well done today.' }) },
+    ];
+  let tools;
+  const session = new TeachingSession({
+    port: { ...model, presentation: () => ({}), start: () => {}, close: () => {} },
+    pkg,
+    infer: async (r) => ((tools = r.tools ?? tools), replies.shift()),
+    onReview: (r) => shown.push(r && { moment: r.moment, states: r.outcome.skills.map((s) => s.state), proof: r.outcome.skills[0].proof }),
+    log: (e) => logs.push(e),
+  });
+  session.started = true;
+  await session.turn('How am I doing?');
+  assert.equal(shown[0].moment, 'deciding');
+  assert.equal(shown[0].states[0], 'own');
+  assert.equal(shown[0].proof, 'You said it bounces.');
+  // Answering takes the screen away again.
+  await session.turn('I want to keep going.');
+  assert.equal(shown[1], null);
+  await session.turn('I want to stop now.');
+  assert.equal(shown.at(-1).moment, 'finished');
+  assert.equal(logs.find((e) => e.type === 'completed').outcome.skills[0].state, 'own');
+  session.close();
+});

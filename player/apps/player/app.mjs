@@ -275,6 +275,7 @@ async function launch(pkg) {
   logs = [];
   $('messages').replaceChildren();
   $('caption').hidden = true;
+  $('wrap-up').hidden = true;
   $('instruction').textContent = '';
   $('library').hidden = true;
   $('player').hidden = false;
@@ -307,6 +308,7 @@ async function launch(pkg) {
         onEvent,
       ),
     speak,
+    onReview: showWrapUp,
     onState: (state, detail) => {
       if (state === 'thinking') stopAudio();
       if (!recording) phase(['thinking', 'speaking'].includes(state) ? state : 'idle');
@@ -376,7 +378,79 @@ $('start').onclick = async () => {
     }
   }
 };
+// The wrap-up screen: what the child has done, from the session's recorded
+// evidence. The tutor opens it when offering to keep going or stop, the
+// runtime when the lesson is finished, and leaving mid-lesson shows it too.
+const MARBLES = {
+  own: '<circle cx="26" cy="26" r="23" fill="#2f7f86" stroke="#242722" stroke-width="2.5"/><path d="M15 27l8 8 15-17" fill="none" stroke="#fdfcfa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>',
+  help: '<circle cx="26" cy="26" r="23" fill="#fdfcfa"/><path d="M26 3a23 23 0 0 0 0 46z" fill="#2f7f86"/><circle cx="26" cy="26" r="23" fill="none" stroke="#242722" stroke-width="2.5"/>',
+  seen: '<circle cx="26" cy="26" r="23" fill="#fdfcfa" stroke="#242722" stroke-width="2.5"/><circle cx="26" cy="26" r="7" fill="#2f7f86"/>',
+  none: '<circle cx="26" cy="26" r="23" fill="#f1eee6" stroke="#77756c" stroke-width="2.5" stroke-dasharray="6 6"/>',
+};
+const STATE_WORDS = { own: 'On your own', help: 'With help', seen: 'Seen together', none: 'Not yet' };
+function showWrapUp(review) {
+  const box = $('wrap-up');
+  box.hidden = !review;
+  if (!review) return;
+  const { moment, outcome } = review,
+    count = outcome.skills.length,
+    over = moment !== 'deciding';
+  box.dataset.moment = moment;
+  $('wrap-lesson').textContent = $('title').textContent;
+  $('wrap-title').textContent = outcome.complete
+    ? count === 1
+      ? 'You showed it on your own'
+      : `You showed all ${['', '', 'two', 'three', 'four', 'five', 'six'][count] ?? count} on your own`
+    : over
+      ? 'Here’s where you got to'
+      : 'Here’s what you’ve done so far';
+  $('wrap-rows').replaceChildren(
+    ...outcome.skills.map((row) => {
+      const li = document.createElement('li');
+      li.dataset.state = row.state;
+      li.innerHTML = `<svg viewBox="0 0 52 52" aria-hidden="true">${MARBLES[row.state]}</svg><div><strong></strong><span></span></div><em></em>`;
+      li.querySelector('strong').textContent = row.title.replace(/\.$/, '');
+      li.querySelector('span').textContent = row.proof;
+      li.querySelector('em').textContent = STATE_WORDS[row.state];
+      return li;
+    }),
+  );
+  $('wrap-note').hidden = !over || outcome.complete;
+  $('wrap-note').textContent = 'The rest will be here when you come back.';
+  const keepGoing = () => {
+    showWrapUp(null);
+    if (moment === 'left') return;
+    session?.resume();
+    send('I want to keep going.');
+  };
+  const [primary, secondary] = [$('wrap-primary'), $('wrap-secondary')];
+  if (over) {
+    primary.textContent = outcome.complete ? 'I’m done' : 'Stop for today';
+    primary.onclick = leaveLesson;
+    secondary.textContent = outcome.complete ? 'Keep exploring' : 'Keep going';
+    secondary.onclick = keepGoing;
+  } else {
+    primary.textContent = 'Keep going';
+    primary.onclick = keepGoing;
+    secondary.textContent = 'Stop for today';
+    secondary.onclick = () => send('I want to stop now.');
+  }
+  $('wrap-title').focus({ preventScroll: true });
+}
 $('home').onclick = () => {
+  // Leaving part-way: show where the child got to before going.
+  const outcome = session?.started ? session.outcome() : null;
+  if (outcome?.skills.length && $('wrap-up').hidden) {
+    $('conversation').close();
+    session.cancel();
+    stopAudio();
+    showWrapUp({ moment: 'left', outcome });
+    return;
+  }
+  leaveLesson();
+};
+function leaveLesson() {
+  showWrapUp(null);
   closeComposer(false);
   $('conversation').close();
   keys.cancel();
@@ -391,7 +465,7 @@ $('home').onclick = () => {
   $('scene').src = 'about:blank';
   $('player').hidden = true;
   $('library').hidden = false;
-};
+}
 function closeComposer(restoreFocus = true) {
   const wasOpen = !$('compose').hidden;
   $('compose').hidden = true;

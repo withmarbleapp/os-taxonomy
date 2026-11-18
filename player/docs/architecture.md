@@ -34,6 +34,15 @@ decision it makes next, so interpreting the learner never costs an inference of
 its own. While authored narration or the introduction is being spoken, the
 runtime already requests the handover that follows and holds it until the
 speech ends; an interruption or scene change discards it.
+The wrap-up screen is a view of the session's outcome (`teaching-runtime/outcome.mjs`):
+one row per declared skill, marked on your own, with help, seen together or not
+yet by fixed rules over the recorded readings. The runtime stamps each reading
+with whether it rested on assisted work, taken from the lesson's event, so the
+tutor supplies evidence but not the mark. The tutor opens the screen with
+`review` when offering to continue or stop; `finish` and leaving mid-lesson show
+it too, and the finished outcome is written to the session log. A lesson keeps
+nothing about a child between sessions; a later layer can hand it a prior and
+read these outcomes.
 Only authored observation events trigger conversation; raw edits and gestures
 update state without grading. A response generated for an obsolete revision is
 discarded. Any current navigation supersedes a departed source in the context.

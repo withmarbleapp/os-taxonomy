@@ -1047,3 +1047,199 @@ body:has(#compose:not([hidden])) #caption {
   font-size: 15px;
   min-height: 1.4em;
 }
+
+/* The wrap-up screen: what the child has done so far, over the dimmed lesson.
+   The walkie stays clear so the child can answer by voice. */
+#wrap-up {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: linear-gradient(90deg, #0c1a14f2 0%, #0c1a14eb 64%, #0c1a1400 88%);
+  font-family: Baloo, system-ui, sans-serif;
+  color: #242722;
+}
+#wrap-panel {
+  position: absolute;
+  left: 40px;
+  top: 36px;
+  width: min(700px, calc(100vw - 300px));
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  pointer-events: auto;
+  padding: 0 6px 8px 0;
+}
+#wrap-lesson {
+  margin: 0 0 -16px;
+  color: #fdfcfad9;
+  font-size: 17px;
+  font-weight: 500;
+}
+#wrap-title {
+  margin: 0;
+  color: #fdfcfa;
+  font-size: clamp(28px, 3.9vw, 40px);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  outline: none;
+}
+#wrap-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#wrap-rows li {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 18px;
+  background: #fdfcfa;
+  border: 2px solid #242722;
+  border-radius: 18px;
+  box-shadow: 0 4px 0 #242722;
+}
+#wrap-rows svg {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+}
+#wrap-rows div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+  min-width: 0;
+}
+#wrap-rows strong {
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+#wrap-rows span {
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #55534b;
+}
+#wrap-rows em {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  border: 2px solid #242722;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  white-space: nowrap;
+  background: #f1eee6;
+}
+#wrap-rows li[data-state='own'] em {
+  background: #bfe3df;
+}
+#wrap-rows li[data-state='help'] em {
+  background: #ffda72;
+}
+#wrap-rows li[data-state='seen'] em {
+  background: #fdfcfa;
+}
+#wrap-note {
+  margin: 0;
+  color: #fdfcfa;
+  font-size: 19px;
+  font-weight: 500;
+}
+#wrap-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+#wrap-actions button {
+  font: 600 21px Baloo, system-ui, sans-serif;
+  min-height: 56px;
+  padding: 12px 22px;
+  border-radius: 16px;
+  border: 2px solid #242722;
+  box-shadow: 0 4px 0 #242722;
+  background: #fdfcfa;
+  color: #242722;
+  cursor: pointer;
+}
+#wrap-actions button:active {
+  translate: 0 3px;
+  box-shadow: 0 1px 0 #242722;
+}
+#wrap-primary {
+  background: #e23b2e !important;
+  border-color: #5c0f0a !important;
+  box-shadow: 0 4px 0 #5c0f0a !important;
+  color: #fdfcfa !important;
+}
+@media (max-width: 800px) {
+  #wrap-up {
+    background: linear-gradient(180deg, #0c1a14f2 0%, #0c1a14eb 70%, #0c1a1400 88%);
+  }
+  #wrap-panel {
+    left: 16px;
+    top: 20px;
+    width: calc(100vw - 32px);
+    max-height: calc(100vh - 215px);
+    gap: 14px;
+    padding: 0 0 6px;
+  }
+  #wrap-lesson {
+    margin-bottom: -12px;
+    font-size: 15px;
+    padding-right: 56px;
+  }
+  #wrap-title {
+    padding-right: 56px;
+  }
+  #wrap-rows {
+    gap: 10px;
+  }
+  #wrap-rows li {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 10px 12px;
+    border-radius: 16px;
+    box-shadow: 0 3px 0 #242722;
+  }
+  #wrap-rows svg {
+    width: 40px;
+    height: 40px;
+  }
+  #wrap-rows div {
+    flex-basis: calc(100% - 60px);
+  }
+  #wrap-rows strong {
+    font-size: 18px;
+  }
+  #wrap-rows span {
+    font-size: 14px;
+  }
+  #wrap-rows em {
+    margin-left: 52px;
+    padding: 1px 10px;
+    font-size: 13px;
+  }
+  #wrap-actions {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  #wrap-actions button {
+    flex: 1 1 0;
+    font-size: 18px;
+    min-height: 52px;
+    padding: 10px 8px;
+  }
+  #wrap-note {
+    font-size: 16px;
+  }
+}

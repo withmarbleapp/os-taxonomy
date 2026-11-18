@@ -14,7 +14,7 @@ for later authors go in the design note.
 | `dialogue.mode` | Must be `adaptive-general` | | |
 | `learningGoals[]` | At least one; unique `id`s | | What the lesson is for. Each goal's `criteria` are read by the tutor |
 | `dialogue.focuses[]` | At least one; each `goals` entry must name a goal | The allowed values when the tutor records what a child's words showed | The strands the tutor tracks understanding against |
-| `selfEvaluation.skills[]` | | The allowed values when the tutor invites or records confidence; with none, those tools are not offered | Skills the child can reflect on |
+| `selfEvaluation.skills[]` | | The rows of the child's wrap-up screen, and the allowed values when the tutor invites or records confidence; with none, the wrap-up and those tools are not offered | What the child can do by the end, in their words |
 | `observationEvents[]` | Each must exist in `experience.json` events | A learner event with one of these names prompts the tutor to respond | Which child actions deserve a response |
 | `evidenceEvents[]` | Each must exist in `experience.json` events | | Which events count as evidence |
 | `teaching[]` | Each `action` must exist in `experience.json` | The moments offered through `explain_model`; with none, that tool is not offered | Tutor-worded moments only. Leave it empty in a lesson-worded lesson |
@@ -117,3 +117,39 @@ only disagree with them.
 Each skill names something the child actually practised and lists the focuses
 it relates to. Phrase the `prompt` about the work ("How do you feel about
 counting a whole layer on your own?"), with no reference to finishing.
+
+## The wrap-up screen
+
+Every lesson ends on the same screen, and the tutor also opens it when it offers
+the choice to keep going or stop. It lists the lesson's
+`selfEvaluation.skills`, each marked from what was recorded during the session:
+
+| Mark | Means | Comes from |
+|---|---|---|
+| On your own | Shown independently | A reading of `understood` on one of the skill's focuses that rests on the child's own words, or on committed work the lesson did not mark as assisted |
+| With help | Shown with support | `understood`, but only on work whose event carried `assisted: true` |
+| Seen together | It came up | Any other reading on the skill's focuses: a question, a difficulty, an acknowledged demonstration |
+| Not yet | Nothing recorded | |
+
+The tutor supplies the readings and a short line for the child ("You said:
+…"). It does not choose the mark, and whether work was assisted is taken from
+the lesson's own event, not from the tutor. So write the lesson with this in
+mind:
+
+- **Write each skill as something a child would say they can do**, in a few
+  plain words with no full stop: "Say what you need for a rainbow". Two to
+  four skills is right. They are read by the child, on a phone as well.
+- **Give every skill at least one focus**, and make sure every focus that can
+  gather evidence belongs to a skill. A skill with no focus can never be
+  marked.
+- **Put `assisted` on every evidence event** (`teaching.evidenceEvents`), true
+  whenever the child's work followed a hint, a demonstration of that answer or
+  a reveal. This flag is what separates the top two marks.
+- **Make each skill reachable.** There must be something the child can say or
+  commit that would earn "on your own" for it; if a skill can only ever be
+  watched, it is not a skill of this lesson.
+
+The same record (skills, marks, the taxonomy topics in `curriculum`) is saved
+in the session log when the lesson finishes. It is what a later record of the
+child across lessons will be built from, so keep skill ids stable between
+versions of a lesson.
