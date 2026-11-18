@@ -56,6 +56,9 @@ export function validateGapfill({ snapshot, topics, topicsBytes, dependenciesByt
       if (error.reteachPrerequisiteId) assert(prerequisites.some(p => p.prerequisiteId === error.reteachPrerequisiteId), `${topic.id}: recovery is not an actual prerequisite`);
       if (row.assess.method === 'performance_task' || error.kind === 'performance' || error.kind === 'developmental') assert(error.distractor === null, `${topic.id}: performance/developmental distractor`);
       assert(error.nextMove.length > 30 && error.revealedBy.length > 30, `${topic.id}: incomplete diagnostic feedback`);
+      // A diagnostic names its own basis: one of this record's cited sources, or the topic itself.
+      const basis = error.revealedBy.match(/Evidence basis: (.*?) This is an authored observable/)?.[1];
+      assert(basis === "the topic's own stated mastery evidence; no cited source documents this specific pattern." || row.sources.some(source => source.source === basis), `${topic.id}: diagnostic evidence basis is not one of the record's sources`);
     }
     assert(!row.assess.poeTask || topic.type === 'CONCEPTUAL', `${topic.id}: POE on non-conceptual topic`);
     if (topic.type === 'META') assert(/not an answer key/i.test(row.assess.correctAnswer), `${topic.id}: scored META answer`);

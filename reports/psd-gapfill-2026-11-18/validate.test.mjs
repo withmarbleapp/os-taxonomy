@@ -43,16 +43,18 @@ test('detects assessment stimuli copied from a teaching activity', () => {
   row.assess.diagnosticPrompt = text;
   assert.ok(validateGapfill(input).overlap.some(e => e.topicId === row.topicId));
 });
-test('detects invented prerequisite recovery, performance distractors and a removed safeguarding constraint', () => {
+test('detects invented recovery, performance distractors, a removed safeguarding constraint and an uncited diagnostic basis', () => {
   const input = changed(), row = added(input);
   row.assess.errorPatterns[0].reteachPrerequisiteId = 'mt_not_a_prerequisite';
   row.assess.errorPatterns[0].kind = 'performance';
   row.assess.errorPatterns[0].distractor = 'A multiple-choice answer';
   row.learn.constraints = row.learn.constraints.filter(c => !c.startsWith('Safeguarding:'));
+  row.assess.errorPatterns[0].revealedBy = row.assess.errorPatterns[0].revealedBy.replace(/Evidence basis: .*? This is/, 'Evidence basis: An uncited habit-formation study. This is');
   const result = validateGapfill(input);
   assert.ok(result.errors.some(e => e.includes('recovery is not an actual prerequisite')));
   assert.ok(result.errors.some(e => e.includes('performance/developmental distractor')));
   assert.ok(result.errors.some(e => e.includes('no safeguarding/no-disclosure constraint')));
+  assert.ok(result.errors.some(e => e.includes('diagnostic evidence basis is not one of')));
 });
 test('detects an assessment method inconsistent with topic type', () => {
   const input = changed(), row = added(input);
