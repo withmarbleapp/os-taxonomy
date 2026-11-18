@@ -1,6 +1,6 @@
 export function createSettings({ request, getSettings, setSettings, voice, fixture, pause }) {
   const $ = (id) => document.getElementById(id);
-  const providers = ['claude', 'codex', 'device'];
+  const providers = ['claude', 'codex', 'anthropic', 'device'];
   let deviceTask,
     deviceDownloaded = false;
   let statuses = {},
@@ -14,6 +14,7 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
     missing: 'Not installed',
     unavailable: 'Could not start',
     sign_in: 'Sign in needed',
+    no_key: 'API key needed',
     signed_in: 'Signed in',
     checking: 'Checking connection…',
     ready: 'Connected',
@@ -24,16 +25,24 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
     for (const p of providers) $(p + '-status').textContent = labels[statuses[p]] ?? 'Checking…';
     const p = selected();
     $('device-setup').hidden = p !== 'device';
+    $('anthropic-setup').hidden = p !== 'anthropic';
+    $('anthropic-key-remove').hidden = !['signed_in', 'ready', 'failed', 'checking'].includes(
+      statuses.anthropic,
+    );
     $('prepare-device').hidden = deviceDownloaded;
     $('prepare-device').disabled = !!deviceTask || statuses.device === 'downloading';
     $('provider-help-note').textContent =
       p === 'device'
         ? 'First loading can take a moment. The model runs inside Marble.'
-        : 'If you’re already signed in, check your subscription’s usage allowance and try again.';
+        : p === 'anthropic'
+          ? 'If the check fails, make sure the key is active and has credit in the Claude Console.'
+          : 'If you’re already signed in, check your subscription’s usage allowance and try again.';
     $('connection-note').textContent =
       p === 'device'
         ? 'Your conversation and voice stay on this computer. No cloud fallback.'
-        : 'Uses your subscription: Claude Haiku 5.5 or GPT-6 Luna. Your conversation goes to the provider; microphone audio stays on this device.';
+        : p === 'anthropic'
+          ? 'Uses your Anthropic API key and is billed per use: Claude Haiku 5.5. Your conversation goes to Anthropic; microphone audio stays on this device.'
+          : 'Uses your subscription: Claude Haiku 5.5 or GPT-6 Luna. Your conversation goes to the provider; microphone audio stays on this device.';
     $('connection-retry').disabled = !p || !!checking;
     $('connection-help').hidden = !!p && statuses[p] === 'ready';
     for (const name of providers) $(name + '-help').hidden = p ? name !== p : false;
@@ -198,6 +207,31 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       // Selecting a tutor is all the setup needed; models are managed by Marble.
       prepareVoice().catch(() => {});
     };
+  async function setKey(key) {
+    const note = $('anthropic-key-status');
+    try {
+      const response = await request('api-key', { method: 'POST', body: { key } });
+      if (!response.ok) throw Error();
+      statuses.anthropic = (await response.json()).state;
+      $('anthropic-key').value = '';
+      note.textContent = key ? 'Key saved on this computer.' : 'Key removed.';
+      render();
+      if (key) await check();
+    } catch {
+      note.textContent = 'Could not save that key. Check it and try again.';
+    }
+  }
+  $('anthropic-key-save').onclick = () => {
+    const key = $('anthropic-key').value.trim();
+    if (key) setKey(key);
+    else $('anthropic-key-status').textContent = 'Paste your key first.';
+  };
+  $('anthropic-key-remove').onclick = () => setKey('');
+  $('anthropic-key').onkeydown = (event) => {
+    if (event.key !== 'Enter') return;
+    event.preventDefault();
+    $('anthropic-key-save').click();
+  };
   $('prepare-device').onclick = prepareDevice;
   $('connection-retry').onclick = async () => {
     await discover();

@@ -101,7 +101,9 @@ for (const provider of ['ollama', 'lmstudio'])
     }
     assert.deepEqual(
       provider === 'ollama' ? sent.format : sent.response_format.json_schema.schema,
-      provider === 'ollama' ? ollamaDecisionSchema(toolList) : decisionSchema,
+      provider === 'ollama'
+        ? ollamaDecisionSchema(toolList)
+        : { ...decisionSchema, properties: { tool: { type: 'string' }, arguments: { type: 'string' } } },
     );
   });
 test('Ollama thinking controls respect model metadata and older Qwen servers', () => {

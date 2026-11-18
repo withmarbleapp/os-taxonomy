@@ -4,7 +4,16 @@ import {
   subscriptionModels,
 } from '../../packages/providers/local.mjs';
 import http from 'node:http';
-import { readFile, writeFile, mkdir, readdir, appendFile, rm, realpath } from 'node:fs/promises';
+import {
+  readFile,
+  writeFile,
+  mkdir,
+  readdir,
+  appendFile,
+  rm,
+  realpath,
+  chmod,
+} from 'node:fs/promises';
 import { join, resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
@@ -21,9 +30,12 @@ import {
   tutorSystem,
   teachingTools,
   teachingToolsFor,
+  recordSchemaFor,
 } from '../../packages/teaching-runtime/session.mjs';
 import { providerAvailability } from '../../packages/providers/availability.mjs';
-import { infer, decisionSchema } from '../../packages/providers/index.mjs';
+import { infer, decisionSchema, providerEnvironment } from '../../packages/providers/index.mjs';
+import { claudeApiAvailability } from '../../packages/providers/claude-api.mjs';
+import { createClaudeSessions } from '../../packages/providers/claude-session.mjs';
 import { createModelStore } from '../../packages/voice/model-store.mjs';
 import { createLocalSpeech } from '../../packages/voice/local-speech.mjs';
 import { createInferenceStore } from '../../packages/inference/model-store.mjs';
@@ -40,7 +52,7 @@ export function checkSettings(input) {
   const s = { ...defaults };
   if (!input || typeof input !== 'object') throw Error('Invalid settings');
   if (
-    !['preview', 'local', 'claude', 'codex', 'ollama', 'lmstudio', 'device'].includes(
+    !['preview', 'local', 'claude', 'codex', 'anthropic', 'ollama', 'lmstudio', 'device'].includes(
       input.provider,
     )
   )
@@ -58,6 +70,7 @@ export function checkSettings(input) {
   );
   if (typeof s.speech !== 'boolean') throw Error('Invalid speech setting');
   if (subscriptionModels[s.provider]) s.model = subscriptionModels[s.provider];
+  if (s.provider === 'anthropic') s.model = '';
   if (localEndpoints[s.provider]) s.endpoint = localEndpoints[s.provider];
   if (s.provider === 'local') {
     const url = new URL(s.endpoint);
@@ -85,10 +98,16 @@ async function body(req, limit) {
 export async function createService({
   dataDir,
   port = 0,
-  inference = infer,
+  inference: suppliedInference,
+  // Long-lived Claude processes, one per lesson session. Off when a test
+  // supplies its own inference function.
+  claudeSessions = suppliedInference
+    ? null
+    : createClaudeSessions({ environment: providerEnvironment }),
   speech: suppliedSpeech,
   availability = providerAvailability,
   localDiscovery = localAvailability,
+  apiAvailability = claudeApiAvailability,
   modelStore: suppliedModelStore,
   inferenceStore: suppliedInferenceStore,
   deviceEngine: suppliedDeviceEngine,
@@ -118,7 +137,27 @@ export async function createService({
     createInferenceStore({ directory: join(dataDir, 'inference-models') });
   const deviceEngine =
     suppliedDeviceEngine ?? createInferenceEngine({ modelPath: inferenceModels.path });
-  const runInference = async (input) => {
+  const inference = suppliedInference ?? infer;
+  // The Claude API key lives in its own owner-only file. It is handed to the
+  // API adapter and to nothing else: never to the browser, settings or logs.
+  const keyFile = join(dataDir, 'anthropic-key');
+  let apiKey = '';
+  try {
+    apiKey = (await readFile(keyFile, 'utf8')).trim();
+  } catch (e) {
+    if (e.code !== 'ENOENT') throw e;
+  }
+  const apiState = () =>
+    apiKey ? { provider: 'anthropic', state: 'signed_in' } : apiAvailability();
+  const runInference = async ({ sessionKey, ...input }) => {
+    if (input.settings.provider === 'claude' && claudeSessions && sessionKey)
+      return claudeSessions.infer({
+        ...input,
+        key: sessionKey,
+        settings: { ...input.settings, model: subscriptionModels.claude },
+      });
+    if (input.settings.provider === 'anthropic')
+      return inference(apiKey ? { ...input, apiKey } : input);
     if (input.settings.provider !== 'device') return inference(input);
     if ((await inferenceModels.inspect()).state !== 'ready')
       throw Error('Download the on-device tutor in Settings first.');
@@ -226,7 +265,8 @@ export async function createService({
           json(
             200,
             await Promise.all(
-              ['claude', 'codex', 'device'].map(async (provider) => {
+              ['claude', 'codex', 'anthropic', 'device'].map(async (provider) => {
+                if (provider === 'anthropic') return apiState();
                 if (provider !== 'device') return availability(provider);
                 const state = await inferenceModels.inspect();
                 return {
@@ -339,7 +379,9 @@ export async function createService({
             const isDevice = provider === 'device';
             const status = isDevice
               ? { provider, ...(await inferenceModels.inspect()) }
-              : await (isLocal ? localDiscovery(provider) : availability(provider));
+              : provider === 'anthropic'
+                ? apiState()
+                : await (isLocal ? localDiscovery(provider) : availability(provider));
             if (
               isDevice
                 ? status.state !== 'ready'
@@ -378,6 +420,16 @@ export async function createService({
             } catch {
               json(200, { provider, state: 'failed' });
             }
+          } else if (path === '/api/api-key') {
+            const { key } = JSON.parse(await body(req, 2000));
+            if (typeof key !== 'string' || key.length > 500 || /[^\x21-\x7e]/.test(key))
+              throw Error('That does not look like an API key');
+            if (key) {
+              await writeFile(keyFile, key, { mode: 0o600 });
+              await chmod(keyFile, 0o600);
+            } else await rm(keyFile, { force: true });
+            apiKey = key;
+            json(200, apiState());
           } else if (path === '/api/settings') {
             const input = JSON.parse(await body(req, 12000));
             // The simple UI selects a provider; preserve internally managed voice settings.
@@ -386,6 +438,7 @@ export async function createService({
               mode: 0o600,
             });
             settings = next;
+            claudeSessions?.closeAll();
             speech?.close();
             speech = null;
             json(200, settings);
@@ -428,6 +481,11 @@ export async function createService({
                 standingTools: [...teachingToolsFor(p), ...p.experience.actions],
                 messages: input.messages,
                 context: input.context,
+                records: recordSchemaFor(p),
+                sessionKey:
+                  typeof input.context.snapshot.sessionId === 'string'
+                    ? `${input.lessonId}@${input.version}:${input.context.snapshot.sessionId}`
+                    : undefined,
                 signal: controller.signal,
                 onEvent: (data) => {
                   if (data.type === 'speech' && typeof data.text === 'string') event(data);
@@ -560,6 +618,7 @@ export async function createService({
     token,
     close: () => {
       inferenceModels.close();
+      claudeSessions?.closeAll();
       deviceEngine.close();
       speech?.close();
       server.closeAllConnections();

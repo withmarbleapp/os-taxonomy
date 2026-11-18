@@ -1024,3 +1024,26 @@ body:has(#compose:not([hidden])) #caption {
     bottom: 270px;
   }
 }
+#anthropic-setup {
+  margin: 14px 0;
+}
+#anthropic-setup label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+#anthropic-key {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 17px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 2px solid #29483c;
+  border-radius: 10px;
+  background: #fff;
+}
+#anthropic-key-status {
+  font-size: 15px;
+  min-height: 1.4em;
+}

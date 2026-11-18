@@ -5,24 +5,39 @@ import {
   requireLocalModel,
   ollamaTutorOptions,
 } from './local.mjs';
+import { inferClaudeApi } from './claude-api.mjs';
 import { spawn } from 'node:child_process';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir, homedir } from 'node:os';
 import { join, delimiter } from 'node:path';
 import { validate } from '../lesson-contract/contracts.mjs';
-export function ollamaDecisionSchema(tools) {
+import {
+  DECISION_FORMAT,
+  DECISION_FORMAT_OBJECT,
+  pickRecords,
+} from '../teaching-runtime/records.mjs';
+// `records` are the optional arrays a decision may carry after its arguments
+// (see teaching-runtime/records.mjs). They are required in schemas sent to
+// models, so strict structured-output modes accept them, and may be empty.
+export function ollamaDecisionSchema(tools, records = {}) {
   return {
     anyOf: tools.map((tool) => ({
       type: 'object',
-      properties: { tool: { const: tool.name }, arguments: tool.inputSchema },
-      required: ['tool', 'arguments'],
+      properties: { tool: { const: tool.name }, arguments: tool.inputSchema, ...records },
+      required: ['tool', 'arguments', ...Object.keys(records)],
       additionalProperties: false,
     })),
   };
 }
+const recordList = { type: 'array', maxItems: 3, items: { type: 'object' } };
 export const decisionSchema = {
   type: 'object',
-  properties: { tool: { type: 'string' }, arguments: { type: 'string' } },
+  properties: {
+    tool: { type: 'string' },
+    arguments: { type: 'string' },
+    understanding: recordList,
+    confidence: recordList,
+  },
   required: ['tool', 'arguments'],
   additionalProperties: false,
 };
@@ -96,9 +111,13 @@ export async function infer({
   settings,
   system,
   tools,
+  standingTools,
   messages,
   context,
+  records = {},
   signal,
+  apiKey,
+  claudeApi = inferClaudeApi,
   runner = runProcess,
   codexRunner = codexStream,
   onEvent,
@@ -111,6 +130,19 @@ export async function infer({
         text: 'You can explore this lesson here. Choose a tutor connection in Settings to have a conversation.',
       }),
     };
+  if (settings.provider === 'anthropic')
+    return claudeApi({
+      settings: { ...settings, model: '' },
+      system,
+      tools,
+      standingTools,
+      records,
+      messages,
+      context,
+      signal,
+      onEvent,
+      apiKey,
+    });
   settings = {
     ...settings,
     ...(subscriptionModels[settings.provider]
@@ -123,12 +155,9 @@ export async function infer({
       ? await requireLocalModel(settings.provider, settings.model, fetcher)
       : null;
     const ollama = settings.provider === 'ollama';
-    const localSchema = ollama ? ollamaDecisionSchema(tools) : null;
+    const localSchema = ollama ? ollamaDecisionSchema(tools, records) : null;
     const localSystem = ollama
-      ? system.replace(
-          'Return one decision as JSON: {tool:string,arguments:string}, where arguments is a JSON object encoded as a string.',
-          'Return one decision as JSON: {tool:string,arguments:object}.',
-        ) +
+      ? system.replace(DECISION_FORMAT, DECISION_FORMAT_OBJECT) +
         '\nReturn exactly one tool decision. The arguments field must be a JSON object matching the selected tool inputSchema, not a string. Example: {"tool":"say","arguments":{"text":"Ready."}}'
       : system;
     const url = new URL(localEndpoints[settings.provider] ?? settings.endpoint);
@@ -156,7 +185,20 @@ export async function infer({
             : {
                 response_format: {
                   type: 'json_schema',
-                  json_schema: { name: 'tutor_decision', strict: true, schema: decisionSchema },
+                  json_schema: {
+                    name: 'tutor_decision',
+                    strict: true,
+                    schema: {
+                      type: 'object',
+                      properties: {
+                        tool: { type: 'string' },
+                        arguments: { type: 'string' },
+                        ...records,
+                      },
+                      required: ['tool', 'arguments', ...Object.keys(records)],
+                      additionalProperties: false,
+                    },
+                  },
                 },
                 max_tokens: 1200,
               }),
@@ -170,32 +212,43 @@ export async function infer({
       const tool = tools.find((t) => t.name === decision.tool);
       if (!tool) throw Error('Local model returned an unknown tool');
       validate(tool.inputSchema, decision.arguments);
-      return { tool: decision.tool, arguments: JSON.stringify(decision.arguments) };
+      return {
+        tool: decision.tool,
+        arguments: JSON.stringify(decision.arguments),
+        ...pickRecords(decision, records),
+      };
     }
-    return JSON.parse(data.choices[0].message.content);
+    const decision = JSON.parse(data.choices[0].message.content);
+    return {
+      tool: decision.tool,
+      arguments: decision.arguments,
+      ...pickRecords(decision, records),
+    };
   }
   const env = providerEnvironment();
   const cwd = await mkdtemp(join(tmpdir(), 'marble-tutor-'));
   try {
-    const stream = decisionStream(tools, onEvent, signal);
+    const stream = decisionStream(tools, onEvent, signal, records);
     const subscriptionPrompt =
       JSON.stringify({
-        system: system.replace(
-          'Return one decision as JSON: {tool:string,arguments:string}, where arguments is a JSON object encoded as a string.',
-          'Return one decision as JSON: {tool:string,arguments:object}.',
-        ),
+        system: system.replace(DECISION_FORMAT, DECISION_FORMAT_OBJECT),
         tools,
         messages,
         context,
       }) +
-      '\nReturn a single JSON object, tool first then arguments as an OBJECT (not an encoded string). For say, put text first inside arguments. Example: {"tool":"say","arguments":{"text":"Hello."}}';
+      '\nReturn a single JSON object, tool first then arguments as an OBJECT (not an encoded string), then any records. For say, put text first inside arguments. Example: {"tool":"say","arguments":{"text":"Hello."}' +
+      Object.keys(records)
+        .map((k) => `,"${k}":[]`)
+        .join('') +
+      '}';
     const schema = {
       type: 'object',
       properties: {
         tool: { type: 'string' },
         arguments: { anyOf: tools.map((tool) => tool.inputSchema) },
+        ...records,
       },
-      required: ['tool', 'arguments'],
+      required: ['tool', 'arguments', ...Object.keys(records)],
       additionalProperties: false,
     };
     if (settings.provider === 'claude') {
@@ -220,6 +273,9 @@ export async function infer({
           '--settings',
           '{"disableAllHooks":true}',
           '--no-session-persistence',
+          // Haiku 5.5 always thinks; low effort is the only way to shorten it.
+          '--effort',
+          'low',
           '--system-prompt',
           'Return only the requested tutor decision. Do not use filesystem, shell, network or coding tools.',
           ...(settings.model ? ['--model', settings.model] : []),

@@ -155,6 +155,11 @@
             ></label
           >
           <label class="provider-choice"
+            ><input type="radio" name="provider" value="anthropic" /><span
+              ><strong>Claude API</strong><small id="anthropic-status">Checking…</small></span
+            ></label
+          >
+          <label class="provider-choice"
             ><input type="radio" name="provider" value="device" /><span
               ><strong>On this device</strong><small id="device-status">Checking…</small></span
             ></label
@@ -168,6 +173,21 @@
           <button type="button" id="prepare-device">Download tutor</button>
           <p id="device-progress-label" role="status"></p>
           <progress id="device-progress" max="1" hidden></progress>
+        </section>
+        <section id="anthropic-setup" hidden>
+          <label for="anthropic-key">Claude API key</label>
+          <input
+            type="password"
+            id="anthropic-key"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="sk-ant-…"
+          />
+          <div class="settings-actions">
+            <button type="button" id="anthropic-key-save">Save key</button
+            ><button type="button" id="anthropic-key-remove">Remove key</button>
+          </div>
+          <p id="anthropic-key-status" role="status"></p>
         </section>
         <p class="settings-note" id="connection-note">
           Uses your subscription. Your conversation goes to the provider; your microphone audio
@@ -204,6 +224,17 @@
                 subscription.
               </li>
               <li>Come back and select <strong>Check again</strong>.</li>
+            </ol>
+          </div>
+          <div id="anthropic-help" hidden>
+            <h3>Connect the Claude API</h3>
+            <ol>
+              <li>Create an API key in the Claude Console.</li>
+              <li>Paste it into the field above and select <strong>Save key</strong>.</li>
+              <li>
+                Marble keeps the key in a file only your account can read, and sends it only to
+                Anthropic. <strong>Remove key</strong> deletes it.
+              </li>
             </ol>
           </div>
           <div id="codex-help" hidden>

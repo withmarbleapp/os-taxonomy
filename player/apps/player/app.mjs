@@ -33,7 +33,7 @@ const settingsUI = createSettings({
     session?.discardOpening();
     if (
       !$('start-cover').hidden &&
-      ['claude', 'codex', 'local', 'device'].includes(settings.provider)
+      ['claude', 'codex', 'anthropic', 'local', 'device'].includes(settings.provider)
     )
       session?.prepareOpening();
   },
@@ -328,7 +328,7 @@ async function launch(pkg) {
         .catch((e) => status('Could not save session log: ' + e.message));
     },
   });
-  if (['claude', 'codex', 'local', 'device'].includes(settings.provider)) session.prepareOpening();
+  if (['claude', 'codex', 'anthropic', 'local', 'device'].includes(settings.provider)) session.prepareOpening();
   status(settings.provider === 'preview' ? 'Explore mode · choose a tutor in Settings' : 'Ready');
 }
 async function send(text) {
@@ -342,7 +342,7 @@ $('start').onclick = async () => {
     startingPort = port,
     isCurrent = () => session === startingSession && !startingSession?.closed;
   if (!startingSession || $('start').disabled) return;
-  if (!['claude', 'codex', 'local', 'device'].includes(settings.provider)) {
+  if (!['claude', 'codex', 'anthropic', 'local', 'device'].includes(settings.provider)) {
     openSettings();
     $('settings-status').textContent = 'Choose a tutor and set up local audio to begin.';
     return;

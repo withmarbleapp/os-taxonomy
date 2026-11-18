@@ -2,6 +2,11 @@ import { getLlama, LlamaChatSession, QwenChatWrapper } from 'node-llama-cpp';
 import { ollamaDecisionSchema } from '../providers/index.mjs';
 import { validate } from '../lesson-contract/contracts.mjs';
 import { partialSayText, createSentenceEmitter } from '../teaching-runtime/speech-stream.mjs';
+import {
+  DECISION_FORMAT,
+  DECISION_FORMAT_OBJECT,
+  pickRecords,
+} from '../teaching-runtime/records.mjs';
 let llama,
   model,
   context,
@@ -21,10 +26,7 @@ process.on('message', async (input) => {
       checkpoints: { interval: 1024, max: 8, maxMemory: 256 * 1024 * 1024 },
     });
     const systemPrompt =
-      input.system.replace(
-        'Return one decision as JSON: {tool:string,arguments:string}, where arguments is a JSON object encoded as a string.',
-        'Return one decision as JSON: {tool:string,arguments:object}.',
-      ) +
+      input.system.replace(DECISION_FORMAT, DECISION_FORMAT_OBJECT) +
       '\nReturn only JSON. Arguments must be an object matching the selected tool schema, not a string. Example: {"tool":"say","arguments":{"text":"Ready."}}';
     const standing =
       systemPrompt + '\nTool reference:\n' + JSON.stringify(input.standingTools ?? input.tools);
@@ -51,10 +53,11 @@ process.on('message', async (input) => {
       sessionKey = key;
       previousMessages = [];
     }
-    const nextGrammarKey = JSON.stringify(input.tools);
+    const records = input.records ?? {};
+    const nextGrammarKey = JSON.stringify([input.tools, records]);
     if (grammarKey !== nextGrammarKey) {
       grammar = await llama.createGrammarForJsonSchema({
-        oneOf: ollamaDecisionSchema(input.tools).anyOf,
+        oneOf: ollamaDecisionSchema(input.tools, records).anyOf,
       });
       grammarKey = nextGrammarKey;
     }
@@ -95,7 +98,11 @@ process.on('message', async (input) => {
     if (!tool) throw Error('Unknown tool');
     validate(tool.inputSchema, decision.arguments);
     process.send({
-      result: { tool: decision.tool, arguments: JSON.stringify(decision.arguments) },
+      result: {
+        tool: decision.tool,
+        arguments: JSON.stringify(decision.arguments),
+        ...pickRecords(decision, records),
+      },
     });
   } catch (error) {
     session?.dispose();

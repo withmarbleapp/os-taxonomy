@@ -278,22 +278,93 @@ test('lesson-specific evidence tools accept only declared skill and focus IDs', 
       text: 'How do you feel?',
     }),
   );
-  for (const name of ['self_assessment', 'record_confidence'])
-    assert.deepEqual(
-      tools.find((t) => t.name === name).inputSchema.properties.skill.enum,
-      pkg.teaching.selfEvaluation.skills.map((s) => s.id),
-    );
+  const { recordSchemaFor } = await import('../packages/teaching-runtime/session.mjs');
+  const records = recordSchemaFor(pkg);
   assert.deepEqual(
-    tools.find((t) => t.name === 'record_understanding').inputSchema.properties.focus.enum,
+    reflection.inputSchema.properties.skill.enum,
+    pkg.teaching.selfEvaluation.skills.map((s) => s.id),
+  );
+  assert.deepEqual(
+    records.confidence.items.properties.skill.enum,
+    pkg.teaching.selfEvaluation.skills.map((s) => s.id),
+  );
+  assert.deepEqual(
+    records.understanding.items.properties.focus.enum,
     pkg.teaching.dialogue.focuses.map((f) => f.id),
   );
+  // Recording is a field on a decision, never a decision of its own.
+  assert.ok(!tools.some((t) => ['record_understanding', 'record_confidence'].includes(t.name)));
   const noSkills = structuredClone(pkg);
   delete noSkills.teaching.selfEvaluation;
-  assert.ok(
-    !teachingToolsFor(noSkills).some((t) =>
-      ['self_assessment', 'record_confidence'].includes(t.name),
-    ),
+  assert.ok(!teachingToolsFor(noSkills).some((t) => t.name === 'self_assessment'));
+  assert.equal(recordSchemaFor(noSkills).confidence, undefined);
+});
+test('a reply carries its understanding and confidence records in one inference', async () => {
+  const { createMoon, tutorView } = await import('../lessons/moon-daytime/model/moon.mjs');
+  const pkg = await loadDirectory('lessons/moon-daytime');
+  const model = createMoon(),
+    logs = [];
+  let calls = 0,
+    lastRequest;
+  const session = new TeachingSession({
+    pkg,
+    port: { ...model, start() {}, close() {}, presentation: () => tutorView(model.snapshot().state) },
+    infer: async (request) => {
+      calls++;
+      lastRequest = {
+        learningSeen: request.context.learning.length,
+        messages: [...request.messages],
+      };
+      return {
+        ...say('Yes, it bounces off the Moon. Where does it go next?'),
+        understanding: [
+          { focus: 'light', interpretation: 'understood', evidence: 'Said sunlight bounces off the Moon.' },
+          { focus: 'not-a-focus', interpretation: 'understood', evidence: 'Invalid focus is dropped.' },
+        ],
+        confidence: [{ skill: 'moonlight', words: 'I think I get it.' }],
+      };
+    },
+    log: (e) => logs.push(e),
+  });
+  await session.turn('The sunlight bounces off the Moon. I think I get it.');
+  assert.equal(calls, 1);
+  assert.deepEqual(
+    session.learning.map((l) => [l.focus, l.interpretation]),
+    [['light', 'understood']],
   );
+  assert.deepEqual(session.confidence, [{ skill: 'moonlight', words: 'I think I get it.' }]);
+  assert.deepEqual(logs.filter((e) => e.type === 'error'), []);
+  assert.equal(logs.filter((e) => e.type === 'reply').length, 1);
+  // The next request shows the tutor what it recorded.
+  await session.turn('Okay.');
+  assert.equal(lastRequest.learningSeen, 1);
+  assert.ok(lastRequest.messages.some((m) => m.name === 'record_understanding'));
+  session.close();
+});
+test('the tutor is told to record inside its decision, and cannot record as a separate step', async () => {
+  const { tutorSystem, teachingToolsFor: toolsFor } = await import(
+    '../packages/teaching-runtime/session.mjs'
+  );
+  const pkg = await loadDirectory('lessons/moon-daytime');
+  const system = tutorSystem(pkg);
+  assert.match(system, /RECORDS:/);
+  assert.match(system, /Focus IDs: light, horizon, explanation\./);
+  const { createMoon, tutorView } = await import('../lessons/moon-daytime/model/moon.mjs');
+  const model = createMoon(),
+    errors = [];
+  const session = new TeachingSession({
+    pkg,
+    port: { ...model, start() {}, close() {}, presentation: () => tutorView(model.snapshot().state) },
+    infer: async () => ({
+      tool: 'record_understanding',
+      arguments: JSON.stringify({ focus: 'light', interpretation: 'understood', evidence: 'x' }),
+    }),
+    log: (e) => e.type === 'error' && errors.push(e.message),
+  });
+  await session.turn('Hello');
+  assert.deepEqual(errors, ['Tutor requested an unavailable tool']);
+  assert.ok(!toolsFor(pkg).some((t) => t.name.startsWith('record_')));
+  session.close();
 });
 test('check setup speaks its authored question once; voice answer resolves before the next scene', async () => {
   const {createMoon, tutorView} = await import('../lessons/moon-daytime/model/moon.mjs');
@@ -323,35 +394,101 @@ test('check setup speaks its authored question once; voice answer resolves befor
   session.close();
 });
 for (const interrupted of [false, true]) {
-  test(`demonstration waits for narration, then ${interrupted ? 'respects interruption' : 'hands over with a canonical check'}`, async () => {
+  test(`the handover is prepared during narration but acts only after it, ${interrupted ? 'and is discarded on interruption' : 'then starts a canonical check'}`, async () => {
     const {createMoon,tutorView}=await import('../lessons/moon-daytime/model/moon.mjs');
     const pkg=await loadDirectory('lessons/moon-daytime'), model=createMoon();
-    let calls=0, release, began;
+    let calls=0, release, began, aheadSignal;
     const begun=new Promise(resolve=>{began=resolve;});
     const gate=new Promise(resolve=>{release=resolve;});
     const errors=[];
     const session=new TeachingSession({
       pkg,port:{...model,start(){},close(){},presentation:()=>tutorView(model.snapshot().state)},
-      infer:async ()=>{
+      infer:async (request,signal)=>{
         calls++;
-        return calls===1
-          ? {tool:'show_moment',arguments:JSON.stringify({moment:'night_light'})}
-          : {tool:'start_check',arguments:JSON.stringify({question:'day_night',situation:'night'})};
+        if(calls===1)return {tool:'show_moment',arguments:JSON.stringify({moment:'night_light'})};
+        aheadSignal=signal;
+        // The prepared request already contains the narration being spoken.
+        assert.ok(request.messages.some(m=>m.role==='assistant'&&/night for the explorer/.test(m.text)));
+        return {tool:'start_check',arguments:JSON.stringify({question:'day_night',situation:'night'})};
       },
       speak:async ()=>{began();await gate;},
       log:e=>{if(e.type==='error')errors.push(e);},
     });
     const turn=session.turn('I do not know where moonlight comes from.');
     await begun;
-    assert.equal(calls,1);
+    // Inference for the handover is already running, but nothing has acted on it.
+    assert.equal(calls,2);
+    assert.equal(tutorView(model.snapshot().state).currentCheck,null);
     if(interrupted)session.cancel();
     release();await turn;
-    assert.equal(calls,interrupted?1:2);
-    if(!interrupted)assert.equal(tutorView(model.snapshot().state).currentCheck.status,'awaiting_answer');
+    assert.equal(calls,2);
+    assert.equal(aheadSignal.aborted,interrupted);
+    assert.equal(tutorView(model.snapshot().state).currentCheck?.status,interrupted?undefined:'awaiting_answer');
     assert.deepEqual(errors,[]);
     session.close();
   });
 }
+test('speech streamed by a prepared handover is held until the narration has finished', async () => {
+  const {createMoon,tutorView}=await import('../lessons/moon-daytime/model/moon.mjs');
+  const pkg=await loadDirectory('lessons/moon-daytime'), model=createMoon();
+  let calls=0, release, began, narrating=false;
+  const begun=new Promise(resolve=>{began=resolve;});
+  const gate=new Promise(resolve=>{release=resolve;});
+  const spoken=[], errors=[];
+  const session=new TeachingSession({
+    pkg,port:{...model,start(){},close(){},presentation:()=>tutorView(model.snapshot().state)},
+    infer:async (request,signal,onEvent)=>{
+      if(++calls===1)return {tool:'show_moment',arguments:JSON.stringify({moment:'night_light'})};
+      onEvent({type:'speech',text:'Where does the light start? '});
+      return say('Where does the light start? Tell me what you see.');
+    },
+    speak:async text=>{
+      assert.equal(narrating,false,'follow-up speech overlapped the narration');
+      spoken.push(text);
+      if(spoken.length===1){narrating=true;began();await gate;narrating=false;}
+    },
+    log:e=>{if(e.type==='error')errors.push(e);},
+  });
+  const turn=session.turn('I do not know where moonlight comes from.');
+  await begun;
+  assert.equal(calls,2);
+  assert.equal(spoken.length,1);
+  release();await turn;
+  assert.equal(
+    spoken.join(' ').replace(/\s+/g,' ').trim(),
+    'Here it is night for the explorer. Watch sunlight reach the Moon, then reflect towards the explorer’s eyes. Where does the light start? Tell me what you see.',
+  );
+  assert.deepEqual(errors,[]);
+  session.close();
+});
+test('a prepared handover is discarded when the scene changes during narration', async () => {
+  const {createMoon,tutorView}=await import('../lessons/moon-daytime/model/moon.mjs');
+  const pkg=await loadDirectory('lessons/moon-daytime'), model=createMoon();
+  let calls=0, release, began;
+  const begun=new Promise(resolve=>{began=resolve;});
+  const gate=new Promise(resolve=>{release=resolve;});
+  const seen=[], errors=[];
+  const session=new TeachingSession({
+    pkg,port:{...model,start(){},close(){},presentation:()=>tutorView(model.snapshot().state)},
+    infer:async request=>{
+      seen.push(request.context.snapshot.revision);
+      if(++calls===1)return {tool:'show_moment',arguments:JSON.stringify({moment:'night_light'})};
+      return say('What do you notice?');
+    },
+    speak:async ()=>{began();await gate;},
+    log:e=>{if(e.type==='error')errors.push(e);},
+  });
+  const turn=session.turn('I do not know where moonlight comes from.');
+  await begun;
+  assert.equal(calls,2);
+  // A routine view change during narration moves the revision without cancelling the turn.
+  model.learnerView(model.snapshot().state.view==='space'?'sky':'space');
+  release();await turn;
+  assert.equal(calls,3);
+  assert.equal(seen[2],model.snapshot().revision);
+  assert.deepEqual(errors,[]);
+  session.close();
+});
 test('button completion is explicitly answered in the next tutor context', async () => {
   const {createMoon,tutorView}=await import('../lessons/moon-daytime/model/moon.mjs');
   const pkg=await loadDirectory('lessons/moon-daytime'), model=createMoon();

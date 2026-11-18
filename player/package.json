@@ -21,6 +21,7 @@
     "format": "prettier --write apps packages scripts test"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.10.0",
     "@moonshine-ai/moonshine-wasm": "0.1.5",
     "fflate": "0.8.3",
     "node-llama-cpp": "3.22.2",

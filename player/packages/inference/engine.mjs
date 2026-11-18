@@ -55,7 +55,7 @@ export function createInferenceEngine({ modelPath }) {
     return child;
   }
   return {
-    async infer({ system, tools, standingTools, messages, context, signal, onEvent }) {
+    async infer({ system, tools, standingTools, messages, context, records, signal, onEvent }) {
       if (signal?.aborted) throw Error('Cancelled');
       if (pending) throw Error('The local tutor is busy. Please try again.');
       clearTimeout(timer);
@@ -66,7 +66,7 @@ export function createInferenceEngine({ modelPath }) {
       try {
         return await new Promise((resolve, reject) => {
           pending = { resolve, reject, onEvent };
-          process.send({ modelPath, system, tools, standingTools, messages, context });
+          process.send({ modelPath, system, tools, standingTools, messages, context, records });
         });
       } finally {
         clearTimeout(timeout);

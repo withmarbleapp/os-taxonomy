@@ -94,7 +94,7 @@ test('old local settings migrate to managed inference, with no external server c
     assert.equal((await request('config')).settings.provider, 'device');
     assert.deepEqual(
       (await request('connections')).map((p) => p.provider),
-      ['claude', 'codex', 'device'],
+      ['claude', 'codex', 'anthropic', 'device'],
     );
     assert.equal((await request('provider-check', { provider: 'device' })).state, 'not_installed');
     assert.equal(called, false);

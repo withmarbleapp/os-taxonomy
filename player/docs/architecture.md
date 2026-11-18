@@ -29,6 +29,11 @@ The tutor chooses explanations, questions, supports, fresh problems and endings.
 There are no fixed teaching phases. `explain_model` links a teaching resource to
 its domain action; `say` lets the tutor introduce a task or ask naturally. Exact
 submitted results remain separate from interpreted understanding and confidence.
+The tutor records understanding and confidence as optional fields on whatever
+decision it makes next, so interpreting the learner never costs an inference of
+its own. While authored narration or the introduction is being spoken, the
+runtime already requests the handover that follows and holds it until the
+speech ends; an interruption or scene change discards it.
 Only authored observation events trigger conversation; raw edits and gestures
 update state without grading. A response generated for an obsolete revision is
 discarded. Any current navigation supersedes a departed source in the context.

@@ -37,6 +37,21 @@ native microphone/lesson qualification remain separate work.
   Account tokens are never read or copied by Marble. API-key environment
   variables are not forwarded, so an inherited key does not silently select API
   billing. Subscription limits and provider eligibility still apply.
+- **Claude API:** choose Claude API in Settings and paste an API key (or start
+  Marble with `ANTHROPIC_API_KEY` set). This is billed per use, not through a
+  subscription, and is only used when chosen. A key saved in Settings is kept
+  in `anthropic-key` in Marble's data folder, readable only by the owner; it is
+  never returned to the player window, written to settings or logs, or passed
+  to the subscription CLIs. Each decision is one Messages API request for
+  `claude-haiku-5-5` whose structured-output schema lists only the tools the
+  current scene offers (`packages/providers/claude-api.mjs`), so the tutor
+  cannot return an action that is unavailable; the subscription adapters can
+  only ask for that. The tutor's rules and the lesson's full tool reference are
+  sent as a cached system block. The conversation follows as one block per
+  entry with a cache marker on the last, so each request re-reads the earlier
+  turns from the cache and only the new entries and current scene are
+  processed afresh. Thinking is on at low effort. Covered by fixture tests; not yet run against
+  the live API.
 - **Codex:** install the official CLI and run `codex login`. The experimental
   adapter invokes `codex app-server` over stdio with structured output and
   incremental text events, ephemeral sessions, read-only sandbox, disabled
@@ -45,9 +60,15 @@ native microphone/lesson qualification remain separate work.
   approved subscription authentication path**. Before distributing Marble as a
   commercial product, qualify the supported Sign in with ChatGPT / partner path.
 
-Both subscription modes send the final transcript, conversation, lesson guidance
-and current model state to the provider. They are not offline. Subprocess startup
-per decision currently adds latency. Codex sentence streaming has been checked
+The subscription and API modes send the final transcript, conversation, lesson guidance
+and current model state to the provider. They are not offline.
+
+Claude runs as one long-lived process per lesson session
+(`packages/providers/claude-session.mjs`). The lesson is sent once and each later
+decision sends only what is new, at low effort; an interrupted decision is
+stopped with the CLI's interrupt request, not by killing the process. Haiku 5.5
+always thinks, so this is a few seconds per reply, not instant. Codex still
+starts a process per decision, which adds latency. Codex sentence streaming has been checked
 with live inference; Claude streaming has protocol fixture coverage, with live
 verification pending a refreshed local Claude login.
 

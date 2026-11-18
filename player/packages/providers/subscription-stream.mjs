@@ -1,6 +1,7 @@
 import { spawn } from 'node:child_process';
 import { createSentenceEmitter, partialSayText } from '../teaching-runtime/speech-stream.mjs';
 import { validate } from '../lesson-contract/contracts.mjs';
+import { pickRecords } from '../teaching-runtime/records.mjs';
 
 export function jsonLines(onValue) {
   let pending = '';
@@ -22,7 +23,7 @@ export function jsonLines(onValue) {
   };
 }
 
-export function decisionStream(tools, onEvent, signal) {
+export function decisionStream(tools, onEvent, signal, records = {}) {
   const sentences = createSentenceEmitter((text) => {
     if (!signal?.aborted) onEvent?.({ type: 'speech', text });
   });
@@ -46,17 +47,24 @@ export function decisionStream(tools, onEvent, signal) {
       validate(tool.inputSchema, args);
       if (sentences.text && (decision.tool !== 'say' || !args.text.startsWith(sentences.text)))
         throw Error('Speech stream did not match the final reply');
-      return { tool: decision.tool, arguments: JSON.stringify(args) };
+      return {
+        tool: decision.tool,
+        arguments: JSON.stringify(args),
+        ...pickRecords(decision, records),
+      };
     },
   };
 }
 
-export function claudeStream(stream) {
+// `message` takes one parsed stream-json message, for callers that split the
+// lines themselves (a long-lived process); `push` takes raw output text.
+export function claudeStream(stream, { onResult } = {}) {
   let block, result;
-  const lines = jsonLines((message) => {
+  const message = (message) => {
     if (message.parent_tool_use_id) return;
     if (message.type === 'result') {
       result = message;
+      onResult?.();
       return;
     }
     if (message.type !== 'stream_event') return;
@@ -75,9 +83,11 @@ export function claudeStream(stream) {
       e.delta.type === 'input_json_delta'
     )
       stream.push(e.delta.partial_json);
-  });
+  };
+  const lines = jsonLines(message);
   return {
     push: lines.push,
+    message,
     finish(output) {
       // The injected runner may return a buffered result; real runner supplies chunks.
       if (!result && output) lines.push(output);
