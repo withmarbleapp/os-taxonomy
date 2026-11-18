@@ -18,7 +18,7 @@ Adds **52 canonical v2 teaching-research records** on top of `59dc370e2a58d872e9
 
 Open [index.html](index.html) directly in a browser. It is self-contained and works offline. Search or filter by domain and confidence to inspect the teaching, exercise-generation guidance, assessment, diagnostics and precise source claims together. Expected answers are collapsed initially. External sources open only when selected.
 
-Notes stay in browser local storage and are bound to the record digest present when first written. Export them to retain/share them. Rebuilt pages warn about earlier-version or unversioned notes; editing does not silently update the saved digest. **Confirm notes apply to this version** explicitly rebinds reviewed notes. Export includes original/current digests and whether they match. Back/Forward restores the topic and its notes, including source anchors, clearing filters if needed to reveal the restored topic. This page uses a separate notes key from the maths/science review.
+Notes stay in browser local storage and are bound to the record digest present when first written. Export them to retain/share them. Rebuilt pages warn about earlier-version or unversioned notes; editing does not silently update the saved digest. **Confirm notes apply to this version** explicitly rebinds reviewed notes. Export includes original/current digests and whether they match. Back/Forward restores the topic and its notes, including source anchors, clearing filters if needed to reveal the restored topic. This page uses a separate notes store from the maths/science review. Every edit is stored under a unique revision key with its parent revision, so two tabs cannot overwrite one shared snapshot. Storage events update other tabs; export rereads saved revisions. Divergent edits to the same topic (including a clear versus an edit) remain visible and are all exported until the reviewer explicitly chooses a saved version or combines the text. Resolving a conflict preserves the chosen note’s original record binding; confirming the current research version remains a separate action. Existing versioned and unversioned notes are read from the previous format without rewriting them. Superseded saved revisions are compacted; concurrent versions are retained until explicitly resolved, avoiding a full saved copy for every keystroke. If storage fails, the page warns and keeps the unsaved version in memory for export while retaining the last persisted version for reload.
 
 Rebuild after editing canonical research:
 
@@ -54,11 +54,14 @@ npm run alignments:generated-check
 npm test
 node reports/computing-gapfill-2026-11-18/validate.mjs --write
 node --test --test-isolation=none reports/computing-gapfill-2026-11-18/validate.test.mjs
+node --test reports/computing-gapfill-2026-11-18/two-tab.test.mjs
 git diff --check
 ```
 
 Repository validation, generated-artifact checks, **576 repository tests and six scoped mutation tests pass**. [validation.json](validation.json) records 52 additions, 1,208 preserved authored records, no remaining Computing gaps and no assessment/teaching passage sharing 12 consecutive tokens. Mutation tests verify detection of baseline edits, missing additions, copied stimuli, invented prerequisite recovery, prohibited distractors and a topic-type/method mismatch. Lexical overlap checks do not establish semantic independence, source entailment or effectiveness.
 
 The offline page was rendered and visually inspected in headless Chrome at 1440 × 1200 and 390 × 844. [browser-smoke.js](browser-smoke.js), appended to a temporary copy, passes at both widths: all 52 topic renders, source rendering, subject/domain/confidence/search/empty filters, previous/next, versioned/legacy/stale note persistence and export, explicit re-review, and Back/Forward through conflicting filters and source anchors. It fetches no source links. Run it only in a fresh browser profile; it temporarily writes test notes and restores prior storage in `finally`.
+
+[two-tab.test.mjs](two-tab.test.mjs) launches two real Chrome tabs against the same offline file using a temporary profile. It checks preservation of different-topic notes through edits/reload/export, storage-event updates, same-parent concurrent edits and clears, conflict visibility/export, explicit selection/combination, original digest preservation, bounded storage during ordinary typing and narrow-screen conflict controls. It uses Node’s built-in WebSocket/CDP connection, no external packages or source fetches. Set `CHROME_BIN` if Chrome is not at `/usr/bin/google-chrome`.
 
 The full repository tests and headless Chrome were run with subprocess/browser execution enabled outside the restrictive sandbox. This did not change application logic or weaken checks.

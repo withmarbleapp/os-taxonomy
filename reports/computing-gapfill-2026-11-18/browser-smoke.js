@@ -14,7 +14,8 @@
     window.addEventListener('hashchange', resolve, { once: true });
     history[direction]();
   });
-  const prior = localStorage.getItem(KEY);
+  const storedKeys = () => Object.keys(localStorage).filter(key => key === KEY || key.startsWith(NOTE_PREFIX));
+  const prior = new Map(storedKeys().map(key => [key, localStorage.getItem(key)]));
   const create = URL.createObjectURL, revoke = URL.revokeObjectURL, click = HTMLAnchorElement.prototype.click;
   const originalDigests = new Map(entries.map(e => [e.topic.id, e.digest]));
   let exported;
@@ -56,7 +57,8 @@
     select('mt_WQiVj8gIRs');
     $('notes').value = 'Browser smoke note <with literal text>';
     $('notes').dispatchEvent(new Event('input'));
-    const saved = JSON.parse(localStorage.getItem(KEY))[current];
+    refreshNotes();
+    const saved = notes[current];
     assert(saved.notes === $('notes').value && saved.researchDigest === byId.get(current).digest, 'Note and reviewed digest persistence');
     const parsed = await exportNotes();
     assert(parsed.reviews.some(r => r.topicId === current && r.notes.includes('<with literal text>') && r.researchDigest === byId.get(current).digest), 'Export content and digest');
@@ -64,7 +66,7 @@
     // Simulate loading the same saved notes after a record edit and page rebuild.
     const reviewedDigest = byId.get(current).digest;
     byId.get(current).digest = '0'.repeat(64);
-    notes = loadNotes(JSON.parse(localStorage.getItem(KEY)));
+    refreshNotes();
     render();
     assert(!$('confirm-version').hidden && $('note-status').textContent.includes('earlier version'), 'Stale note warning');
     $('notes').value += ' More detail';
@@ -74,7 +76,9 @@
     $('confirm-version').click();
     assert($('confirm-version').hidden && (await exportNotes()).reviews.find(r => r.topicId === current).matchesCurrentRecord, 'Explicit re-review confirmation');
 
-    notes = loadNotes({ [current]: 'Legacy unversioned note' });
+    for (const key of storedKeys()) localStorage.removeItem(key);
+    localStorage.setItem(KEY, JSON.stringify({ [current]: 'Legacy unversioned note' }));
+    refreshNotes();
     render();
     assert(!$('confirm-version').hidden && $('note-status').textContent.includes('no saved record version'), 'Legacy note warning');
     $('notes').value += ' More detail';
@@ -84,8 +88,8 @@
 
     // Back must restore the topic and its notes even when filters exclude it.
     const programming = entries[0], ai = entries.find(e => e.topic.domain === 'Artificial Intelligence');
-    notes[programming.topic.id] = { notes: 'Programming history note', researchDigest: programming.digest };
-    notes[ai.topic.id] = { notes: 'AI history note', researchDigest: ai.digest };
+    saveNote(programming.topic.id, 'Programming history note', programming.digest, []);
+    saveNote(ai.topic.id, 'AI history note', ai.digest, []);
     select(programming.topic.id); await settle();
     select(ai.topic.id); await settle();
     input('subject', 'Computing');
@@ -110,6 +114,7 @@
   } finally {
     URL.createObjectURL = create; URL.revokeObjectURL = revoke; HTMLAnchorElement.prototype.click = click;
     for (const entry of entries) entry.digest = originalDigests.get(entry.topic.id);
-    if (prior === null) localStorage.removeItem(KEY); else localStorage.setItem(KEY, prior);
+    for (const key of storedKeys()) localStorage.removeItem(key);
+    for (const [key, value] of prior) localStorage.setItem(key, value);
   }
 })();

@@ -26,7 +26,7 @@ const html = `<!doctype html>
 <label for="domain">Domain</label><select id="domain" class="control"><option value="">All domains</option></select>
 <label for="confidence">Confidence</label><select id="confidence" class="control"><option value="">All confidence levels</option><option value="low">Low — inspect evidence limits</option><option value="medium">Medium</option></select>
 <div id="results" role="status"></div><nav id="topics" aria-label="Research topics"></nav></aside>
-<main><div id="content" tabindex="-1"></div><section id="review-notes" class="card"><h3>Your review notes</h3><label for="notes">What needs changing, strengthening or discussion?</label><textarea id="notes" placeholder="Notes for this topic…"></textarea><div id="note-status" class="muted" role="status"></div><button id="confirm-version" hidden>Confirm notes apply to this version</button></section></main></div>
+<main><div id="content" tabindex="-1"></div><section id="review-notes" class="card"><h3>Your review notes</h3><label for="notes">What needs changing, strengthening or discussion?</label><textarea id="notes" placeholder="Notes for this topic…"></textarea><div id="note-status" class="muted" role="status"></div><button id="confirm-version" hidden>Confirm notes apply to this version</button><div id="note-conflicts" hidden></div></section></main></div>
 <script id="research-data" type="application/json">${payload}</script>
 <script>
 const DATA=JSON.parse(document.getElementById('research-data').textContent);
@@ -37,7 +37,40 @@ const para=text=>'<p>'+esc(text)+'</p>';
 const labels={two_tier:'Answer + reason',performance_task:'Observed performance',interpret_translate:'Interpret + construct',open_epistemic_probe:'Open discussion',use_in_context:'Use in context'};
 const KEY='marble-teaching-research-computing-2026-11-18';let notes={},storage=true,current='',filtered=[];
 function loadNotes(saved){const loaded={};if(!saved||typeof saved!=='object'||Array.isArray(saved))return loaded;for(const [id,note] of Object.entries(saved)){if(!byId.has(id))continue;if(typeof note==='string')loaded[id]={notes:note,researchDigest:null};else if(note&&typeof note.notes==='string'&&(note.researchDigest===null||typeof note.researchDigest==='string'))loaded[id]={notes:note.notes,researchDigest:note.researchDigest};}return loaded;}
-try{notes=loadNotes(JSON.parse(localStorage.getItem(KEY)||'{}'));}catch{storage=false;}
+// Each save gets its own key. Concurrent tabs cannot replace each other's writes.
+// Parent revisions let us retain divergent edits until the reviewer resolves them.
+const NOTE_PREFIX=KEY+':note:', pendingNotes=new Map();let noteHeads=new Map(),supersededNotes=new Set();
+function refreshNotes(){
+  const revisions=new Map(pendingNotes);let legacy={};
+  try{
+    try{legacy=loadNotes(JSON.parse(localStorage.getItem(KEY)||'{}'));}catch{}
+    for(let i=0;i<localStorage.length;i++){
+      const key=localStorage.key(i);if(!key?.startsWith(NOTE_PREFIX))continue;
+      let row;try{row=JSON.parse(localStorage.getItem(key));}catch{continue;}
+      if(row&&byId.has(row.topicId)&&typeof row.revisionId==='string'&&key===NOTE_PREFIX+row.revisionId&&Array.isArray(row.parents)&&row.parents.every(id=>typeof id==='string')&&typeof row.notes==='string'&&(row.researchDigest===null||typeof row.researchDigest==='string'))revisions.set(row.revisionId,row);
+    }
+  }catch{storage=false;}
+  // The old shared store is a read-only fallback until a topic has a revision.
+  // Superseded journal rows may then be removed without reviving an old note.
+  const revisedTopics=new Set([...revisions.values()].map(row=>row.topicId));
+  for(const [topicId,note] of Object.entries(legacy))if(!revisedTopics.has(topicId)){
+    const revisionId='legacy:'+topicId;
+    revisions.set(revisionId,{...note,topicId,revisionId,parents:[]});
+  }
+  const superseded=new Set([...revisions.values()].flatMap(row=>row.parents));
+  supersededNotes=superseded;
+  noteHeads=new Map();
+  for(const row of revisions.values())if(!superseded.has(row.revisionId)){
+    if(!noteHeads.has(row.topicId))noteHeads.set(row.topicId,[]);
+    noteHeads.get(row.topicId).push(row);
+  }
+  const previous=notes;notes={};
+  for(const [id,heads] of noteHeads){
+    heads.sort((a,b)=>a.revisionId.localeCompare(b.revisionId));
+    notes[id]=heads.find(row=>row.revisionId===previous[id]?.revisionId)||heads.at(-1);
+  }
+}
+refreshNotes();
 $('coverage').textContent=['Computing'].map(s=>s+': '+DATA.coverage[s].withResearch+' / '+DATA.coverage[s].topics+' topics covered').join(' · ');
 function render(){const e=byId.get(current);$('review-notes').hidden=!e;if(!e){$('content').innerHTML='<p class="empty">No topics match these filters.</p>';return;}
 const t=e.topic,r=e.research,a=r.assess,citations=new Map(r.sources.map((s,i)=>[s.id,i+1]));
@@ -53,8 +86,39 @@ $('content').innerHTML='<div class="eyebrow">'+esc(t.subject)+' / '+esc(t.domain
 $('notes').value=notes[current]?.notes||'';status();
 $('previous').onclick=()=>step(-1);$('next').onclick=()=>step(1);const i=filtered.findIndex(x=>x.topic.id===current);$('previous').disabled=i===0;$('next').disabled=i===filtered.length-1;
 }
-function status(){const note=notes[current],stale=!!note?.notes&&note.researchDigest!==byId.get(current)?.digest;const saved=storage?'Saved in this browser. Export notes before sharing.':'Browser storage is unavailable. Keep this page open and export notes to save them.';const warning=stale?(note.researchDigest===null?'These older notes have no saved record version.':'These notes refer to an earlier version of this record.')+' Their original version is preserved on export. Review them before confirming that they apply to this version. ':'';$('note-status').textContent=warning+saved;$('confirm-version').hidden=!stale;}
-function saveNotes(){try{localStorage.setItem(KEY,JSON.stringify(notes));storage=true;}catch{storage=false;}status();navigation();}
+function status(){
+  const note=notes[current],stale=!!note?.notes&&note.researchDigest!==byId.get(current)?.digest;
+  const saved=storage?'Saved in this browser. Export notes before sharing.':'Browser storage is unavailable. Keep this page open and export notes to save them.';
+  const warning=stale?(note.researchDigest===null?'These older notes have no saved record version.':'These notes refer to an earlier version of this record.')+' Their original version is preserved on export. Review them before confirming that they apply to this version. ':'';
+  const heads=noteHeads.get(current)||[],conflict=heads.length>1;
+  $('note-status').textContent=(conflict?'Conflicting edits from another tab are preserved. Review all versions below or export them. ':'')+warning+saved;
+  $('confirm-version').hidden=!stale;
+  $('note-conflicts').hidden=!conflict;
+  $('note-conflicts').innerHTML=conflict?'<h4>Conflicting saved notes</h4><p>Both versions are retained. Choose a version, or combine their text above and save the combined note. Version bindings are preserved.</p>'+heads.map((row,i)=>'<article class="notice"><strong>Version '+(i+1)+(row.revisionId===note?.revisionId?' (shown above)':'')+'</strong><p style="white-space:pre-wrap">'+esc(row.notes||'(cleared note)')+'</p><p class="muted"><code>'+esc(row.researchDigest===null?'Unknown record version':row.researchDigest)+'</code></p><button data-revision="'+esc(row.revisionId)+'">Use this saved version</button></article>').join('')+'<button id="resolve-current">Save current text and resolve conflict</button>':'';
+  for(const button of $('note-conflicts').querySelectorAll('[data-revision]'))button.onclick=()=>resolveNote(button.dataset.revision);
+  if(conflict)$('resolve-current').onclick=()=>resolveNote(notes[current].revisionId,$('notes').value);
+}
+function saveNote(topicId,text,digest,parents){
+  const row={topicId,notes:text,researchDigest:digest,parents,revisionId:crypto.randomUUID()};
+  pendingNotes.set(row.revisionId,row);
+  try{localStorage.setItem(NOTE_PREFIX+row.revisionId,JSON.stringify(row));pendingNotes.delete(row.revisionId);storage=pendingNotes.size===0;}catch{storage=false;}
+  refreshNotes();notes[topicId]=row;
+  // Delete only known superseded revisions, never an unseen concurrent write.
+  // Failed writes keep their last persisted parent as a reload fallback.
+  if(storage)try{for(const id of supersededNotes)localStorage.removeItem(NOTE_PREFIX+id);}catch{storage=false;}
+  status();navigation();
+}
+function resolveNote(revisionId,text){
+  refreshNotes();const heads=noteHeads.get(current)||[],chosen=heads.find(row=>row.revisionId===revisionId);
+  if(!chosen)return;
+  saveNote(current,text??chosen.notes,chosen.researchDigest,heads.map(row=>row.revisionId));
+  $('notes').value=notes[current].notes;
+}
+window.addEventListener('storage',event=>{
+  if(event.key===null||event.key===KEY||event.key.startsWith(NOTE_PREFIX)){
+    refreshNotes();$('notes').value=notes[current]?.notes||'';status();navigation();
+  }
+});
 function select(id,focus=false){current=id;location.hash=id;render();navigation();if(focus){$('content').focus();window.scrollTo({top:0,behavior:'auto'});}}
 function step(delta){const i=filtered.findIndex(x=>x.topic.id===current);if(filtered[i+delta])select(filtered[i+delta].topic.id,true);}
 function navigation(){$('topics').innerHTML=filtered.map(e=>'<button data-id="'+esc(e.topic.id)+'" aria-current="'+(e.topic.id===current)+'">'+esc(e.topic.name)+(notes[e.topic.id]?.notes?' ✎':'')+'<small>'+esc(e.topic.subject)+' · '+esc(e.research.confidence)+'</small></button>').join('');for(const b of $('topics').querySelectorAll('button'))b.onclick=()=>select(b.dataset.id,true);}
@@ -63,9 +127,19 @@ function topicForHash(fragment){if(!fragment)return entries[0].topic.id;if(byId.
 window.addEventListener('hashchange',()=>{const fragment=location.hash.slice(1),id=topicForHash(fragment);if(!id||id===current)return;if(!filtered.some(e=>e.topic.id===id))for(const control of ['search','subject','domain','confidence'])$(control).value='';current=id;filter();if(fragment!==id)document.getElementById(fragment)?.scrollIntoView();});
 for(const domain of [...new Set(entries.map(e=>e.topic.domain))].sort()){const option=document.createElement('option');option.value=domain;option.textContent=domain;$('domain').append(option);}
 for(const id of ['search','subject','domain','confidence'])$(id).addEventListener(id==='search'?'input':'change',filter);
-$('notes').addEventListener('input',()=>{if(!current)return;const previous=notes[current];notes[current]={notes:$('notes').value,researchDigest:previous?.notes?previous.researchDigest:byId.get(current).digest};saveNotes();});
-$('confirm-version').onclick=()=>{if(!current||!notes[current]?.notes)return;notes[current].researchDigest=byId.get(current).digest;saveNotes();};
-$('export').onclick=()=>{const reviewed=entries.filter(e=>notes[e.topic.id]?.notes).map(e=>({topicId:e.topic.id,name:e.topic.name,researchDigest:notes[e.topic.id].researchDigest,currentResearchDigest:e.digest,matchesCurrentRecord:notes[e.topic.id].researchDigest===e.digest,notes:notes[e.topic.id].notes}));const blob=new Blob([JSON.stringify({baseCommit:DATA.baseCommit,exportedAt:new Date().toISOString(),reviews:reviewed},null,2)],{type:'application/json'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='teaching-research-review-notes.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);};
+$('notes').addEventListener('input',()=>{
+  if(!current)return;const previous=notes[current];
+  saveNote(current,$('notes').value,previous?previous.researchDigest:byId.get(current).digest,previous?[previous.revisionId]:[]);
+});
+$('confirm-version').onclick=()=>{
+  if(!current||!notes[current]?.notes)return;const previous=notes[current];
+  saveNote(current,previous.notes,byId.get(current).digest,[previous.revisionId]);
+};
+$('export').onclick=()=>{
+  refreshNotes();$('notes').value=notes[current]?.notes||'';status();navigation();
+  const reviewed=entries.flatMap(e=>(noteHeads.get(e.topic.id)||[]).filter(row=>row.notes||(noteHeads.get(e.topic.id)||[]).length>1).map(row=>({topicId:e.topic.id,name:e.topic.name,revisionId:row.revisionId,conflictingVersions:noteHeads.get(e.topic.id).length>1,researchDigest:row.researchDigest,currentResearchDigest:e.digest,matchesCurrentRecord:row.researchDigest===e.digest,notes:row.notes})));
+  const blob=new Blob([JSON.stringify({baseCommit:DATA.baseCommit,exportedAt:new Date().toISOString(),reviews:reviewed},null,2)],{type:'application/json'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='teaching-research-review-notes.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);
+};
 $('print').onclick=()=>{for(const d of $('content').querySelectorAll('details'))d.open=true;window.print();};
 current=topicForHash(location.hash.slice(1))||entries[0].topic.id;filter();
 </script></body></html>`;
