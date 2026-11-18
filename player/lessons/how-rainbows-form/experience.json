@@ -1,0 +1,665 @@
+{
+  "protocolVersion": 1,
+  "kind": "how-rainbows-form",
+  "apiVersion": 1,
+  "releaseId": "how-rainbows-form-v1",
+  "description": "How a rainbow forms, for a child of about eight. Outdoor model: a low Sun, water drops (a rain shower or a fountain) and an explorer called Mia. A primary rainbow is every direction 42 degrees from the point opposite the Sun; Mia sees it only where sunlit drops lie in those directions and inside her view. rainbowStatus says why or why not: no_sunlight, no_drops, sun_too_high, drops_elsewhere (no drops opposite the Sun as seen from her spot), looking_away, rainbow. The rainbow is drawn only in Mia’s window, never in the meadow. Drop model: one round drop with real refraction, one reflection inside, and refraction out, for red, green and violet. Sizes and distances are illustrative; the Sun is drawn close. Not modelled: second bows, brightness, drop size, light that reflects more than once. Exact answers and assistance are stored separately from what the child says. No completion threshold.",
+  "stateSchema": {
+    "type": "object",
+    "properties": {
+      "view": {
+        "enum": [
+          "outdoor",
+          "drop"
+        ]
+      },
+      "task": {
+        "enum": [
+          "demonstration",
+          "conditions",
+          "turn",
+          "walk",
+          "build",
+          "sun_height",
+          "aim_beam",
+          "predict",
+          "check"
+        ]
+      },
+      "mode": {
+        "enum": [
+          "demonstration",
+          "activity"
+        ]
+      },
+      "moment": {
+        "type": "string"
+      },
+      "demonstratedMoments": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 7
+      },
+      "sceneId": {
+        "type": "string"
+      },
+      "sunAz": {
+        "type": "number"
+      },
+      "sunHeight": {
+        "enum": [
+          "low",
+          "mid",
+          "high"
+        ]
+      },
+      "sunShining": {
+        "type": "boolean"
+      },
+      "raining": {
+        "type": "boolean"
+      },
+      "source": {
+        "enum": [
+          "rain",
+          "fountain"
+        ]
+      },
+      "spot": {
+        "type": "number"
+      },
+      "heading": {
+        "type": "number"
+      },
+      "autoFace": {
+        "type": "boolean"
+      },
+      "rays": {
+        "enum": [
+          "none",
+          "sunlight",
+          "full"
+        ]
+      },
+      "cone": {
+        "type": "boolean"
+      },
+      "colourDrops": {
+        "type": "boolean"
+      },
+      "windowCovered": {
+        "type": "boolean"
+      },
+      "beam": {
+        "type": "number"
+      },
+      "dropStage": {
+        "enum": [
+          "full",
+          "to_bounce"
+        ]
+      },
+      "check": {
+        "type": "string"
+      },
+      "situation": {
+        "type": "string"
+      },
+      "revealed": {
+        "type": "boolean"
+      },
+      "assisted": {
+        "type": "boolean"
+      },
+      "found": {
+        "type": "boolean"
+      },
+      "attempts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "sceneId": {
+              "type": "string"
+            },
+            "task": {
+              "enum": [
+                "demonstration",
+                "conditions",
+                "turn",
+                "walk",
+                "build",
+                "sun_height",
+                "aim_beam",
+                "predict",
+                "check"
+              ]
+            },
+            "check": {
+              "type": "string"
+            },
+            "situation": {
+              "type": "string"
+            },
+            "question": {
+              "type": "string"
+            },
+            "answer": {
+              "type": "string"
+            },
+            "correct": {
+              "type": "boolean"
+            },
+            "assisted": {
+              "type": "boolean"
+            },
+            "modality": {
+              "enum": [
+                "button",
+                "voice"
+              ]
+            },
+            "words": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "sceneId",
+            "task",
+            "check",
+            "situation",
+            "question",
+            "answer",
+            "correct",
+            "assisted",
+            "modality",
+            "words"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 100
+      },
+      "finds": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "sceneId": {
+              "type": "string"
+            },
+            "task": {
+              "enum": [
+                "demonstration",
+                "conditions",
+                "turn",
+                "walk",
+                "build",
+                "sun_height",
+                "aim_beam",
+                "predict",
+                "check"
+              ]
+            },
+            "source": {
+              "enum": [
+                "rain",
+                "fountain"
+              ]
+            },
+            "assisted": {
+              "type": "boolean"
+            },
+            "amount": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "sceneId",
+            "task",
+            "source",
+            "assisted",
+            "amount"
+          ],
+          "additionalProperties": false
+        },
+        "maxItems": 100
+      },
+      "instruction": {
+        "type": "string"
+      },
+      "rainbowStatus": {
+        "enum": [
+          "no_sunlight",
+          "no_drops",
+          "sun_too_high",
+          "drops_elsewhere",
+          "looking_away",
+          "rainbow"
+        ]
+      },
+      "rainbowAmount": {
+        "type": "string"
+      },
+      "canToggleSun": {
+        "type": "boolean"
+      },
+      "canToggleWater": {
+        "type": "boolean"
+      },
+      "canTurn": {
+        "type": "boolean"
+      },
+      "canWalk": {
+        "type": "boolean"
+      },
+      "canMoveSun": {
+        "type": "boolean"
+      },
+      "canAim": {
+        "type": "boolean"
+      },
+      "canAnswer": {
+        "type": "boolean"
+      },
+      "canHint": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "view",
+      "task",
+      "mode",
+      "moment",
+      "demonstratedMoments",
+      "sceneId",
+      "sunAz",
+      "sunHeight",
+      "sunShining",
+      "raining",
+      "source",
+      "spot",
+      "heading",
+      "autoFace",
+      "rays",
+      "cone",
+      "colourDrops",
+      "windowCovered",
+      "beam",
+      "dropStage",
+      "check",
+      "situation",
+      "revealed",
+      "assisted",
+      "found",
+      "attempts",
+      "finds",
+      "instruction",
+      "rainbowStatus",
+      "rainbowAmount",
+      "canToggleSun",
+      "canToggleWater",
+      "canTurn",
+      "canWalk",
+      "canMoveSun",
+      "canAim",
+      "canAnswer",
+      "canHint"
+    ],
+    "additionalProperties": false
+  },
+  "actions": [
+    {
+      "name": "show_moment",
+      "description": "Show and narrate one moment with authored speech, then continue this turn into a question or activity for the child. rainbow_scene: the opening meadow, Sun behind Mia, rain ahead, rainbow in her window. sunlight_path: HELP on the CURRENT outdoor setup; draws sunlight arrows and any coloured light coming back to Mia, and says why she does or does not see a rainbow; marks pending work as assisted. inside_drop: close-up of one drop, light bends in, bounces off the back, bends out on the Sun’s side; use when the child wonders what the drops do. colours_spread: same close-up, white sunlight fans into colours that were already in it; use for \"where do the colours come from\" or \"the water makes the colours\". inside_drop and colours_spread pause current work without losing it; use resume_activity to return. Deeper, only once Sun-behind and the drop are familiar: why_a_bow (the drops that send colour form a circle round the line from Sun through head to shadow), red_on_top (higher drops send red, lower send violet), high_sun (midday Sun, bow below the ground). rainbow_scene and the deeper moments replace the setup, so they are refused while a question is unanswered.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "moment": {
+            "enum": [
+              "rainbow_scene",
+              "sunlight_path",
+              "inside_drop",
+              "colours_spread",
+              "why_a_bow",
+              "red_on_top",
+              "high_sun"
+            ]
+          }
+        },
+        "required": [
+          "moment"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "start_activity",
+      "description": "Start something for the child to do; speaks its authored instruction. Unscored investigations, usable unprompted: sun_and_rain (tap the clouds; rainbow needs sunlight AND drops), turn_to_find (turn Mia; she must face away from the Sun), walk_around (walk Mia round the shower while she faces it; she must stand with the Sun behind her), aim_sunbeam (drop close-up; slide the beam and see the colours always leave on the Sun’s side), sun_height (deeper; lift the Sun and watch the bow sink). Transfer: predict (a fresh arrangement with Mia’s window covered and no arrows; Yes/No; repeat for more practice at the same demand) and make_rainbow (harder: a fountain, Sun on the other side, everything free; the child builds the rainbow). A rainbow found in an investigation is reported as rainbow_found. Unanswered questions must be answered or left first.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "activity": {
+            "enum": [
+              "sun_and_rain",
+              "turn_to_find",
+              "walk_around",
+              "make_rainbow",
+              "predict",
+              "aim_sunbeam",
+              "sun_height"
+            ]
+          }
+        },
+        "required": [
+          "activity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "start_check",
+      "description": "Ask one small two-choice question about a single relationship; the runtime speaks the exact on-screen question, then wait. see_rainbow needs a situation and shows it with sunlight arrows kept and Mia’s window covered: sun_behind (yes), far_side, side_on, facing_sun, cloud_over_sun, water_off, high_sun (all no; high_sun only after that moment). sun_where: where should the Sun be (behind / in front). drop_exit: in the close-up, where the light comes out after the bounce. drop_colours: whether colours were in the sunlight or made by the drop. reach_rainbow: can Mia walk to the rainbow (deeper). Do not add a question of your own on top.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "enum": [
+              "see_rainbow",
+              "sun_where",
+              "drop_exit",
+              "drop_colours",
+              "reach_rainbow"
+            ]
+          },
+          "situation": {
+            "enum": [
+              "sun_behind",
+              "far_side",
+              "side_on",
+              "facing_sun",
+              "cloud_over_sun",
+              "water_off",
+              "high_sun"
+            ]
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "answer_check",
+      "description": "Resolve a clear SPOKEN answer to the pending two-choice question. Pass its sceneId, the index of the choice the child meant (0 = first choice shown, 1 = second) and the child’s actual words. The model scores it exactly as a button press and records that it came by voice. Never use it for an unclear reply, a guess at what the child meant, or an answer you supplied.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sceneId": {
+            "type": "string"
+          },
+          "choice": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "words": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 650
+          }
+        },
+        "required": [
+          "sceneId",
+          "choice",
+          "words"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "leave_activity",
+      "description": "Leave unfinished work when the child wants something else. Earlier attempts are kept and no answer is invented.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "resume_activity",
+      "description": "Give control back to the child after help on their current activity (returning from the drop close-up to the meadow exactly as it was), or reopen an answered question for another try. A retry after help or after the answer was shown is recorded as assisted.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "events": {
+    "scene_changed": {
+      "type": "object",
+      "properties": {
+        "task": {
+          "enum": [
+            "demonstration",
+            "conditions",
+            "turn",
+            "walk",
+            "build",
+            "sun_height",
+            "aim_beam",
+            "predict",
+            "check"
+          ]
+        },
+        "sceneId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "task",
+        "sceneId"
+      ],
+      "additionalProperties": false
+    },
+    "support_changed": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "enabled"
+      ],
+      "additionalProperties": false
+    },
+    "conditions_changed": {
+      "type": "object",
+      "properties": {
+        "sunShining": {
+          "type": "boolean"
+        },
+        "raining": {
+          "type": "boolean"
+        },
+        "sunHeight": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sunShining",
+        "raining",
+        "sunHeight"
+      ],
+      "additionalProperties": false
+    },
+    "explorer_moved": {
+      "type": "object",
+      "properties": {
+        "spot": {
+          "type": "number"
+        },
+        "heading": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "spot",
+        "heading"
+      ],
+      "additionalProperties": false
+    },
+    "beam_moved": {
+      "type": "object",
+      "properties": {
+        "beam": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "beam"
+      ],
+      "additionalProperties": false
+    },
+    "rainbow_found": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sceneId": {
+          "type": "string"
+        },
+        "task": {
+          "enum": [
+            "demonstration",
+            "conditions",
+            "turn",
+            "walk",
+            "build",
+            "sun_height",
+            "aim_beam",
+            "predict",
+            "check"
+          ]
+        },
+        "source": {
+          "enum": [
+            "rain",
+            "fountain"
+          ]
+        },
+        "assisted": {
+          "type": "boolean"
+        },
+        "amount": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sceneId",
+        "task",
+        "source",
+        "assisted",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "response_committed": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sceneId": {
+          "type": "string"
+        },
+        "task": {
+          "enum": [
+            "demonstration",
+            "conditions",
+            "turn",
+            "walk",
+            "build",
+            "sun_height",
+            "aim_beam",
+            "predict",
+            "check"
+          ]
+        },
+        "check": {
+          "type": "string"
+        },
+        "situation": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string"
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "assisted": {
+          "type": "boolean"
+        },
+        "modality": {
+          "enum": [
+            "button",
+            "voice"
+          ]
+        },
+        "words": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sceneId",
+        "task",
+        "check",
+        "situation",
+        "question",
+        "answer",
+        "correct",
+        "assisted",
+        "modality",
+        "words"
+      ],
+      "additionalProperties": false
+    },
+    "response_reopened": {
+      "type": "object",
+      "properties": {
+        "sceneId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sceneId"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
