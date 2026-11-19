@@ -1,57 +1,294 @@
-import {object,validate,commandSchema,assertSnapshot} from '../contracts.mjs';
-import {chooseTask,shapeKey,practiceShapes,scorePlan} from './cube-tasks.mjs';
-const bool={type:'boolean'},number={type:'number'},integer={type:'integer',minimum:0,maximum:999};
-const dims={type:'array',minItems:3,maxItems:3,items:{type:'integer',minimum:1,maximum:8}};
-const focus={enum:['unit','layers','inside']};
-const text={type:'string'},plan=object({perLayer:{type:'string',maxLength:3},layers:{type:'string',maxLength:3},total:{type:'string',maxLength:3}});
-const attempt=object({id:text,sceneId:text,dims,perLayer:integer,layers:integer,total:integer,correct:bool,assisted:bool});
-export const descriptor={protocolVersion:1,kind:'cube-volume',apiVersion:1,releaseId:'cube-volume-v3',
- description:'A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. Rotate to inspect; open whole horizontal layers to see every cube. Rotation does not change volume. interiorCount is how many cubes are enclosed on every side (none unless every dimension exceeds two): a fact for answering a child who leaves them out, not a topic to raise. Filling, stacking and adding back rows are real learner actions; opening layers does not add cubes. The model scores submitted layer plans exactly; events alone do not establish understanding. No required stage count.',
- stateSchema:object({task:{enum:['fill','explore','plan']},teachingFocus:{enum:['none','unit','layers','inside']},taughtConcepts:{type:'array',maxItems:3,items:{enum:['volume','layers','inside']}},layerExampleSeen:bool,cubesPerLayer:integer,layerCount:integer,sceneId:text,dims,filled:{type:'array',maxItems:6,items:text},layerComplete:bool,hasStack:bool,canDeepen:bool,layersOpen:bool,rotation:number,assisted:bool,revealed:bool,plan,attempts:{type:'array',maxItems:32,items:attempt},interiorCount:integer,hasInterior:bool,totalCubes:integer,learnerActions:{type:'array',maxItems:12,items:object({name:text,label:text,enabled:bool})}}),
- actions:[
- {name:'show_teaching',description:'Physical visual support used by explain_model. Highlights a unit cube, opens/highlights complete layers, or highlights the cubes enclosed on every side (only for a child whose count left them out). Records exposure and assistance, not understanding.',inputSchema:object({focus})},
- {name:'show_example',description:'Physical worked example used by explain_model: layer example is 3 by 2 by 2, inside example is a different 3 by 3 by 3 block, for a child who has left out cubes they cannot see. A new case is explicitly announced by the authored explanation. This is teaching, not a test.',inputSchema:object({kind:{enum:['layers','inside']}})},
- {name:'prepare_activity',description:'Start a small fill-and-stack investigation (kind fill, a 3 by 2 bottom layer), or inspect a filled 3 by 3 by 3 solid (kind explore). Discuss replacing unfinished work first. Filling launches the complete fill request automatically. These are optional teaching formats. Never reset to filling after the learner already explains layers.',inputSchema:object({kind:{enum:['fill','explore']}})},
- {name:'prepare_fresh_box',description:'Offer an optional fresh independent layer-plan problem, excluding previously seen shapes and their rotations. The first small problem is 2 by 2 by 2. Choose small, large (at least 3 in every direction) or long to vary size and shape. The learner must enter all three fields and Check my plan. Do not supply counts or open layers before commitment unless help is requested. This launches the complete plan request automatically. No three-stage gate.',inputSchema:object({difficulty:{enum:['small','large','long']}})},
- {name:'reopen_plan',description:'Let the learner revise this checked plan with help. Keep the old submitted attempt unchanged; reopen the same fields and mark the new attempt assisted. Use after correcting the specific error. A correct revision is practice, not a fresh independent check.',inputSchema:object({})},
- {name:'set_support',description:'Open or close whole layers. Opening before a plan submission permanently marks that attempt assisted; closing does not erase assistance. It does not change cube count. Use explain_model when teaching the idea, or this action when the learner asks only to open or close the layers. Never expose an independent answer before commitment unless help is needed.',inputSchema:object({opened:bool})}
- ],
- events:{teaching_shown:object({focus}),cube_placed:object({filled:integer,layerComplete:bool}),layer_stacked:object({layers:integer,totalCubes:integer}),back_rows_added:object({added:integer,totalCubes:integer}),layers_opened:object({opened:bool}),block_rotated:object({rotation:number}),plan_edited:object({field:{enum:['perLayer','layers','total']}}),response_committed:attempt,activity_prepared:object({kind:{enum:['fill','explore','plan']},sceneId:text}),support_changed:object({opened:bool}),plan_reopened:object({sceneId:text})}
-};
-export function createCubes({sessionId=crypto.randomUUID(),random=Math.random}={}){
- let revision=0,scene=0;const listeners=new Set(),commands=new Map(),used=new Set(practiceShapes);
- let state={task:'explore',sceneId:`${sessionId}:scene:0`,dims:[3,2,2],teachingFocus:'none',taughtConcepts:[],filled:[],layersOpen:false,rotation:0,assisted:false,revealed:false,plan:{perLayer:'',layers:'',total:''},attempts:[]};
- function facts(){const[w,d,h]=state.dims;return{layerExampleSeen:state.taughtConcepts.includes('layers'),cubesPerLayer:w*d,layerCount:h,layerComplete:state.task!=='fill'||state.filled.length===w*d,hasStack:h>1,canDeepen:state.task==='fill'&&d===2&&h===3,interiorCount:Math.max(0,w-2)*Math.max(0,d-2)*Math.max(0,h-2),hasInterior:w>2&&d>2&&h>2,totalCubes:state.task==='fill'&&state.filled.length<w*d?state.filled.length:w*d*h};}
- function controls(){const f=facts();return[
- {name:'place_cube',label:'Place cube',enabled:state.task==='fill'&&!f.layerComplete},
- {name:'stack_layer',label:'Stack layer',enabled:state.task==='fill'&&f.layerComplete&&state.dims[2]<3},
- {name:'add_back_rows',label:'Add back rows',enabled:f.canDeepen},
- {name:'rotate_block',label:'Turn block',enabled:true},
- {name:'open_layers',label:state.layersOpen?'Close layers':'Open layers',enabled:f.layerComplete&&state.dims[2]>1},
- {name:'edit_plan',label:'Layer plan',enabled:state.task==='plan'&&!state.revealed},
- {name:'commit_plan',label:'Check my plan',enabled:state.task==='plan'&&!state.revealed&&validPlan()},
- {name:'fresh_box',label:'Try a fresh box',enabled:f.layerExampleSeen&&(state.task!=='plan'||state.revealed)}
- ];}
- const snapshot=()=>assertSnapshot(descriptor,{protocolVersion:1,sessionId,releaseId:descriptor.releaseId,revision,state:structuredClone({...state,...facts(),learnerActions:controls()}),availableActions:descriptor.actions.filter(a=>(a.name!=='reopen_plan'||(state.task==='plan'&&state.revealed))&&!(a.name==='show_example'&&state.task==='plan'&&!state.revealed)).map(a=>a.name)});
- const enabled=name=>controls().some(a=>a.name===name&&a.enabled);
- function emit(source,name,data){revision++;const update={snapshot:snapshot(),events:[{id:`${sessionId}:${revision}`,revision,source,name,data:structuredClone(data)}]};for(const listener of listeners)listener(structuredClone(update));return update;}
- function validPlan(){return Object.values(state.plan).every(v=>/^\d{1,3}$/.test(v));}
- function support(opened){if(state.layersOpen===opened)return false;state.layersOpen=opened;if(opened&&!state.revealed)state.assisted=true;return true;}
- function prepare(kind,newDims){scene++;state={...state,task:kind,sceneId:`${sessionId}:scene:${scene}`,dims:newDims,filled:[],layersOpen:false,rotation:0,assisted:kind!=='plan',teachingFocus:'none',revealed:false,plan:{perLayer:'',layers:'',total:''}};used.add(shapeKey(newDims));}
- function teach(which){state.teachingFocus=which;state.assisted=true;if(which!=='unit')state.layersOpen=true;const concept=which==='unit'?'volume':which;if(!state.taughtConcepts.includes(concept))state.taughtConcepts.push(concept);}
- return {describe:()=>structuredClone(descriptor),snapshot,subscribe(fn){listeners.add(fn);return()=>listeners.delete(fn);},
- learnerPlace(x,z){if(!enabled('place_cube'))return false;const[w,d]=state.dims;if(x===undefined){for(let k=0;k<w*d;k++){const key=`${k%w},${Math.floor(k/w)}`;if(!state.filled.includes(key)){[x,z]=key.split(',').map(Number);break;}}}if(!Number.isInteger(x)||!Number.isInteger(z)||x<0||z<0||x>=w||z>=d||state.filled.includes(`${x},${z}`))return false;state.filled.push(`${x},${z}`);return emit('learner','cube_placed',{filled:state.filled.length,layerComplete:facts().layerComplete});},
- learnerStack(){if(!enabled('stack_layer'))return false;state.dims[2]++;return emit('learner','layer_stacked',{layers:state.dims[2],totalCubes:facts().totalCubes});},
- learnerDeepen(){if(!enabled('add_back_rows'))return false;const added=state.dims[0]*state.dims[2];state.dims[1]++;state.task='explore';return emit('learner','back_rows_added',{added,totalCubes:facts().totalCubes});},
- learnerRotate(delta){if(!Number.isFinite(delta))return false;state.rotation=(state.rotation+Math.max(-Math.PI,Math.min(Math.PI,delta)))%(Math.PI*2);return emit('learner','block_rotated',{rotation:state.rotation});},
- learnerOpen(opened=!state.layersOpen){if(!enabled('open_layers')||typeof opened!=='boolean'||!support(opened))return false;return emit('learner','layers_opened',{opened});},
- learnerEdit(field,value){if(!enabled('edit_plan')||!Object.hasOwn(state.plan,field)||typeof value!=='string'||!(value===''||/^\d{1,3}$/.test(value)))return false;state.plan[field]=value;return emit('learner','plan_edited',{field});},
- learnerFresh(){if(!enabled('fresh_box'))return false;const next=chooseTask(0,[...used],!state.attempts.length,random);if(!next)return false;prepare('plan',next);return emit('learner','activity_prepared',{kind:'plan',sceneId:state.sceneId});},
- learnerCommit(){if(!enabled('commit_plan')||state.attempts.length>=32)return false;const numbers=Object.fromEntries(Object.entries(state.plan).map(([k,v])=>[k,Number(v)]));const result={id:`${sessionId}:attempt:${revision+1}`,sceneId:state.sceneId,dims:[...state.dims],...numbers,correct:scorePlan(state.dims,numbers),assisted:state.assisted};state.revealed=true;state.layersOpen=true;state.attempts.push(result);return emit('learner','response_committed',result);},
- execute(command){const reject=(code,message)=>({commandId:command?.commandId??null,accepted:false,error:{code,message},snapshot:snapshot()});try{validate(commandSchema,command);}catch(e){return reject('invalid_command',e.message);}if(command.sessionId!==sessionId||command.releaseId!==descriptor.releaseId)return reject('wrong_session','Session or release mismatch');
- if(commands.has(command.commandId)){const previous=commands.get(command.commandId);return previous.fingerprint===JSON.stringify(command)?structuredClone(previous.result):reject('command_id_reused','Command ID was reused');}
- if(command.expectedRevision!==revision)return reject('stale_state','Read the current snapshot and reconsider');const action=descriptor.actions.find(a=>a.name===command.name);if(!action)return reject('unknown_action','Unsupported action');try{validate(action.inputSchema,command.args);}catch(e){return reject('invalid_args',e.message);}if(commands.size>=256||scene>=64)return reject('session_limit','Start a new session');
- let update;if(command.name==='reopen_plan'){if(state.task!=='plan'||!state.revealed)return reject('no_checked_plan','There is no checked plan to revise');state.revealed=false;state.assisted=true;update=emit('agent','plan_reopened',{sceneId:state.sceneId});}else if(command.name==='show_teaching'){if(!facts().layerComplete)return reject('incomplete_example','Use a complete block for this worked example');if(command.args.focus==='inside'&&!facts().hasInterior)return reject('no_interior','This block has no fully buried cubes');teach(command.args.focus);update=emit('agent','teaching_shown',command.args);}else if(command.name==='show_example'){if(state.task==='plan'&&!state.revealed)return reject('unfinished_plan','Keep the current plan; use support on this block or discuss replacing it');prepare('explore',command.args.kind==='layers'?[3,2,2]:[3,3,3]);teach(command.args.kind==='layers'?'layers':'inside');update=emit('agent','teaching_shown',{focus:state.teachingFocus});}else if(command.name==='set_support'){support(command.args.opened);update=emit('agent','support_changed',command.args);}else{let kind,newDims;if(command.name==='prepare_activity'){kind=command.args.kind;newDims=kind==='fill'?[3,2,1]:[3,3,3];}else{kind='plan';newDims=chooseTask(['small','large','long'].indexOf(command.args.difficulty),[...used],command.args.difficulty==='small'&&!state.attempts.length,random);if(!newDims)return reject('exhausted','No unused boxes remain in this group; finish or explore without claiming an independent check');}prepare(kind,newDims);update=emit('agent','activity_prepared',{kind,sceneId:state.sceneId});}
- const result={commandId:command.commandId,accepted:true,snapshot:update.snapshot};commands.set(command.commandId,{fingerprint:JSON.stringify(command),result:structuredClone(result)});return result;}
- };
+// Volume in layers, as moments on one representation: a block of equal unit
+// cubes that the child can turn, open into layers, and build.
+//
+// This file holds only what is particular to the lesson: the block, what is
+// true of it, and the words. Questions, help, retries and evidence are the
+// shared engine's (/sdk/moments.mjs).
+import { defineLesson } from '/sdk/moments.mjs';
+import { chooseTask, shapeKey, practiceShapes, scorePlan } from './cube-tasks.mjs';
+
+const bool = { type: 'boolean' },
+  number = { type: 'number' },
+  integer = { type: 'integer', minimum: 0, maximum: 999 };
+const event = (properties) => ({ type: 'object', properties, required: Object.keys(properties), additionalProperties: false });
+
+// The numbers of a block. `dims` is [across, rows back, layers high].
+function counts(s) {
+  const [w, d, h] = s.dims,
+    filling = s.building && s.filled.length < w * d;
+  return {
+    cubesPerLayer: w * d,
+    layerCount: h,
+    totalCubes: filling ? s.filled.length : w * d * h,
+    layerComplete: !filling,
+    interiorCount: Math.max(0, w - 2) * Math.max(0, d - 2) * Math.max(0, h - 2),
+    hasInterior: w > 2 && d > 2 && h > 2,
+  };
 }
+const block = (dims, more = {}) => ({ dims, ...more });
+// A block the child has not seen, in any rotation. `stage` is 0 small, 1 large, 2 long.
+const freshBlock = (stage) => (ctx) => {
+  ctx.memory.used ??= [...practiceShapes];
+  const dims = chooseTask(stage, ctx.memory.used, stage === 0 && !ctx.state.attempts.length, ctx.random);
+  if (!dims) return null;
+  ctx.memory.used.push(shapeKey(dims));
+  return block(dims);
+};
+
+// Said before the plan question; the question itself stays short on screen.
+const BOXES = 'Fill in the three boxes, then press Check my plan.';
+
+// A highlight on the block in hand. It needs a whole block to point at, and it
+// leaves the child in control: they can keep turning, opening and filling in.
+const complete = (s, f) => (f.layerComplete ? true : 'Finish the layer first: this explanation needs a complete block.');
+const highlight = (focus, extra = {}) => ({
+  stay: true,
+  available: complete,
+  support: () => ({ focus, ...(focus === 'unit' ? {} : { layersOpen: true }) }),
+  ...extra,
+});
+
+export const lesson = defineLesson({
+  kind: 'cube-volume',
+  releaseId: 'cube-volume-v4',
+  description:
+    'A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. The child can turn the block and open its whole horizontal layers at any time; neither changes how many cubes there are. interiorCount is how many cubes are enclosed on every side (none unless every dimension exceeds two): a fact for answering a child who leaves them out, not a topic to raise. Filling, stacking and adding back rows are real learner actions. The model scores a checked layer plan exactly; events alone do not establish understanding. No required stage count.',
+  idle: 'Explore how layers help count cubes.',
+
+  state: {
+    schema: {
+      dims: { type: 'array', minItems: 3, maxItems: 3, items: { type: 'integer', minimum: 1, maximum: 8 } },
+      building: bool,
+      filled: { type: 'array', maxItems: 6, items: { type: 'string' } },
+      rotation: number,
+      layersOpen: bool,
+      focus: { enum: ['none', 'unit', 'layers', 'inside'] },
+    },
+    initial: { dims: [3, 2, 2], building: false, filled: [], rotation: 0, layersOpen: false, focus: 'none' },
+    clear: { building: false, filled: [], rotation: 0, layersOpen: false, focus: 'none' },
+  },
+  facts: {
+    schema: { cubesPerLayer: integer, layerCount: integer, totalCubes: integer, layerComplete: bool, interiorCount: integer, hasInterior: bool },
+    of: counts,
+  },
+  describe(s, f) {
+    const [w, d, h] = s.dims,
+      plan = s.kind === 'ask' ? Object.fromEntries(s.entries.map((e) => [e.field, Number(e.value)])) : null,
+      expected = { perLayer: f.cubesPerLayer, layers: f.layerCount, total: f.totalCubes };
+    return {
+      block: s.building && !f.layerComplete ? `a ${w} by ${d} layer being filled: ${s.filled.length} of ${w * d} cubes placed` : `${w} cubes across, ${d} rows back, ${h} layers high`,
+      layers: s.layersOpen ? 'pulled apart, each layer its own colour' : 'closed',
+      highlighted: { none: 'nothing', unit: 'one cube', layers: 'the bottom layer', inside: 'the cubes shut in on every side' }[s.focus],
+      counts: expected,
+      // After a plan is checked: what they entered beside the block’s real counts.
+      checkedPlan: s.kind === 'ask' && s.revealed ? { entered: plan, expected, wrongFields: Object.keys(expected).filter((k) => plan[k] !== expected[k]) } : null,
+    };
+  },
+
+  gestures: {
+    turn: {
+      always: true,
+      event: 'block_rotated',
+      apply(s, delta) {
+        if (!Number.isFinite(delta)) return false;
+        s.rotation = (s.rotation + Math.max(-Math.PI, Math.min(Math.PI, delta))) % (Math.PI * 2);
+        return { rotation: s.rotation };
+      },
+    },
+    // Pulling the layers apart shows the answer to a plan, so it counts as help.
+    open: {
+      always: true,
+      event: 'layers_opened',
+      when: (s) => counts(s).layerComplete && s.dims[2] > 1,
+      apply(s, opened = !s.layersOpen, { help }) {
+        if (typeof opened !== 'boolean' || s.layersOpen === opened) return false;
+        s.layersOpen = opened;
+        if (opened) help();
+        return { opened };
+      },
+    },
+    // Put one cube into the layer being built: a named place, or the next free one.
+    place: {
+      event: 'cube_placed',
+      when: (s) => s.building && !counts(s).layerComplete,
+      apply(s, at) {
+        const [w, d] = s.dims;
+        let [x, z] = at ?? [];
+        if (x === undefined)
+          for (let k = 0; k < w * d; k++)
+            if (!s.filled.includes(`${k % w},${Math.floor(k / w)}`)) {
+              [x, z] = [k % w, Math.floor(k / w)];
+              break;
+            }
+        if (!Number.isInteger(x) || !Number.isInteger(z) || x < 0 || z < 0 || x >= w || z >= d || s.filled.includes(`${x},${z}`)) return false;
+        s.filled.push(`${x},${z}`);
+        return { filled: s.filled.length, layerComplete: counts(s).layerComplete };
+      },
+    },
+    stack: {
+      event: 'layer_stacked',
+      when: (s) => s.building && counts(s).layerComplete && s.dims[2] < 3,
+      apply(s) {
+        s.dims[2]++;
+        return { layers: s.dims[2], totalCubes: counts(s).totalCubes };
+      },
+    },
+    deepen: {
+      event: 'back_rows_added',
+      when: (s) => s.building && s.dims[1] === 2 && s.dims[2] === 3,
+      apply(s) {
+        const added = s.dims[0] * s.dims[2];
+        s.dims[1]++;
+        // The block is whole now: building is over, and it can be turned and opened.
+        s.building = false;
+        return { added, totalCubes: counts(s).totalCubes };
+      },
+    },
+  },
+  controls: {
+    set_layers: {
+      description:
+        'Open or close the block’s layers when the child asks only for that. Opening before a plan is checked marks that plan as helped; closing does not undo it. It never changes how many cubes there are. To teach the idea, use show_moment.',
+      args: { opened: bool },
+      event: 'layers_opened',
+      apply(s, { opened }, { help }) {
+        if (s.layersOpen === opened || !counts(s).layerComplete) return false;
+        s.layersOpen = opened;
+        if (opened) help();
+        return { opened };
+      },
+    },
+  },
+  events: {
+    block_rotated: event({ rotation: number }),
+    layers_opened: event({ opened: bool }),
+    cube_placed: event({ filled: integer, layerComplete: bool }),
+    layer_stacked: event({ layers: integer, totalCubes: integer }),
+    back_rows_added: event({ added: integer, totalCubes: integer }),
+  },
+
+  // Each gives a block the child has not seen before, closed, with nothing highlighted.
+  situations: {
+    small: { lead: 'Your turn with a new block. ' + BOXES, arrange: freshBlock(0) },
+    large: { lead: 'Your turn with a bigger block. ' + BOXES, arrange: freshBlock(1) },
+    long: { lead: 'Your turn with a long block. ' + BOXES, arrange: freshBlock(2) },
+  },
+
+  show: {
+    introduction: highlight('unit', {
+      when: 'once, at the very start, to say what the lesson is about; follow it with a first question about the block on the table.',
+      speech: 'We’re going to learn how to count all the small cubes in a block. We’ll count them in layers. I’ll show you first, then you can try.',
+      instruction: 'Count the cubes in layers.',
+    }),
+    one_layer: highlight('layers', {
+      when: 'the child counts only the cubes they can see on the front of the bottom layer, or does not know what a layer is. Child can: count the coloured layer, back row included.',
+      speech: (s, f) => `Look at the coloured bottom layer. It has ${f.cubesPerLayer} cubes. A layer is one flat level of cubes. It includes the cubes at the back too.`,
+      instruction: 'A layer is one flat level of cubes.',
+    }),
+    unit_help: highlight('unit', {
+      when: 'the child counts faces or squares instead of cubes, or counts a corner cube more than once. Child can: say how many cubes the coloured piece is.',
+      speech: 'Look at the coloured cube. Its top and sides are all part of the same little block. We count that cube once.',
+      instruction: 'One cube counts once.',
+    }),
+    layer_help: highlight('layers', {
+      when: 'a checked plan has the wrong number for cubes in one layer. Child can: count that layer again, front and back.',
+      speech: 'Look at the bottom layer. Count the cubes at the front and at the back. All of them together make one layer.',
+      instruction: 'Count the whole bottom layer.',
+    }),
+    repetition_help: highlight('layers', {
+      when: 'the layer count is right but the total is wrong, or the child counts every cube one by one and loses track. Child can: add or multiply the layers to reach the total.',
+      speech: (s, f) => `Each layer has ${f.cubesPerLayer} cubes. Add ${f.cubesPerLayer} again for the next layer. Keep going until you have counted every layer.`,
+      instruction: 'Every layer has the same number of cubes.',
+    }),
+    volume: highlight('unit', {
+      when: 'the child asks what volume means, or thinks a taller-looking block must always be bigger. Child can: say what is being counted to measure the block.',
+      speech: 'Volume means how much space something takes up. We can measure this block by counting its small cubes. Each little cube counts as one.',
+      instruction: 'Volume is how much space the block fills.',
+    }),
+    layers: highlight('layers', {
+      when: 'the child has one layer and needs the step to the whole block. Child can: say why every layer has the same number of cubes.',
+      speech: (s, f) =>
+        `There are ${f.cubesPerLayer} cubes in each layer and ${f.layerCount} layers. That makes ${f.totalCubes} cubes altogether. Pulling the layers apart helps us see them. The number of cubes stays the same.`,
+      instruction: 'Equal layers make the block.',
+    }),
+    no_buried: highlight('layers', {
+      when: 'only if the child themselves says nothing is hidden inside a thin block. Never to open the subject.',
+      available: (s, f) => (f.hasInterior ? 'This block does have a cube shut in on every side.' : complete(s, f)),
+      speech: (s, f) =>
+        `You’re right: no cube is completely hidden inside this block. Some may be behind others. There are ${f.cubesPerLayer} in each layer and ${f.layerCount} layers: ${f.totalCubes} cubes altogether.`,
+      instruction: 'No cube is hidden right inside this block.',
+    }),
+    inside: highlight('inside', {
+      when: 'only if the child’s own count or words leave out cubes they cannot see, or they ask whether those count, and this block has one enclosed on every side. Child can: find which layer the hidden cube belongs to.',
+      available: (s, f) => (f.hasInterior ? complete(s, f) : 'This block has no cube shut in on every side; use larger_example.'),
+      speech: 'Some cubes are hidden right inside this block. They still count! Pulling the layers apart lets us see where they belong.',
+      instruction: 'Hidden cubes belong to a layer too.',
+    }),
+    compare_plan: highlight('layers', {
+      when: 'a plan has just been checked and its numbers need comparing with the opened block. Child can: find which of their three numbers does not match.',
+      available: (s, f) => (s.kind === 'ask' && s.revealed ? true : 'There is no checked plan to compare.'),
+      speech: (s, f) =>
+        `Look at your numbers beside the opened block. There are ${f.cubesPerLayer} cubes in each layer and ${f.layerCount} layers. That makes ${f.totalCubes} cubes altogether.`,
+      instruction: 'Compare your numbers with the block.',
+    }),
+    larger_example: {
+      when: 'only if the child has left out cubes they cannot see and the current block has none enclosed on every side. It replaces the block. Child can: say why counting layers still counts the middle cube.',
+      speech: 'Here is a bigger block. A cube is hidden right in the middle. It is part of the middle layer, so counting every layer counts that cube too.',
+      instruction: 'The middle cube is part of the middle layer.',
+      arrange: () => block([3, 3, 3], { focus: 'inside', layersOpen: true }),
+    },
+    layer_example: {
+      when: 'the child needs to see equal layers on a small block before trying one alone. It replaces the block. Child can: count one layer and say how many layers there are.',
+      speech: 'This block has two layers, with 6 cubes in each. Add 6 and 6. That makes 12 cubes altogether.',
+      instruction: 'Two layers of 6 make 12.',
+      arrange: () => block([3, 2, 2], { focus: 'layers', layersOpen: true }),
+    },
+  },
+
+  do: {
+    build_layer: {
+      when: 'the child builds a layer cube by cube, stacks it and adds back rows: it shows what a layer is. Never evidence that they can count with one, and not for a child who already explains layers.',
+      speech: 'Let’s build a block. Tap the empty places to fill the bottom layer with cubes. When it is full, you can stack another layer on top.',
+      instruction: 'Build a layer using equal cubes.',
+      arrange: () => block([3, 2, 1], { building: true }),
+      can: ['place', 'stack', 'deepen'],
+      goal: (f, s) => f.layerComplete && s.dims[2] > 1,
+      target: 'A full bottom layer with at least one more layer stacked on it.',
+      detail: (f) => `${f.layerCount} layers of ${f.cubesPerLayer}`,
+      canDo: (s) => [
+        ...(counts(s).layerComplete ? [] : ['Tap an empty place (or Place cube) to put a cube in the layer']),
+        ...(counts(s).layerComplete && s.dims[2] < 3 ? ['Stack layer'] : []),
+        ...(s.dims[1] === 2 && s.dims[2] === 3 ? ['Add back rows'] : []),
+        'Turn the block',
+      ],
+    },
+    explore_block: {
+      when: 'a filled 3 by 3 by 3 block to turn and open freely. Exploration, never evidence.',
+      speech: 'Here is a bigger block to look at. Turn it round, and pull its layers apart to see inside.',
+      instruction: 'Explore how layers help count cubes.',
+      arrange: () => block([3, 3, 3]),
+      canDo: ['Turn the block', 'Open or close the layers'],
+    },
+  },
+
+  ask: {
+    layer_plan: {
+      when: 'the child counts a closed block they have not seen: cubes in one layer, number of layers, cubes altogether, then Check my plan. small is the first step (the very first is 2 by 2 by 2); large and long change the size, the shape and the arithmetic. Independent unless the layers were opened or an explanation was shown on that block first.',
+      question: 'How many cubes altogether?',
+      fields: [
+        { id: 'perLayer', label: 'Cubes in one layer' },
+        { id: 'layers', label: 'Number of layers' },
+        { id: 'total', label: 'Cubes altogether' },
+      ],
+      accept: /^\d{1,3}$/,
+      situations: ['small', 'large', 'long'],
+      correct: (values, f, s) => scorePlan(s.dims, { perLayer: Number(values.perLayer), layers: Number(values.layers), total: Number(values.total) }),
+      // Checking opens the block, so the child sees their numbers beside it.
+      reveal: () => ({ layersOpen: true }),
+      fact: (f) => `${f.cubesPerLayer} × ${f.layerCount} = ${f.totalCubes} cubes altogether.`,
+    },
+  },
+});
+
+export const { descriptor, tutorView, questionFor } = lesson;
+export const createCubes = lesson.create;

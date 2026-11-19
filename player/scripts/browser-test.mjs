@@ -62,9 +62,9 @@ const service = await createService({
         s = context.snapshot.state;
       if (s.dims) {
         if (last?.role === 'user' && /new block/i.test(last.text))
-          return { tool: 'prepare_fresh_box', arguments: '{"difficulty":"small"}' };
+          return { tool: 'start_check', arguments: '{"question":"layer_plan","situation":"small"}' };
         if (context.origin === 'observation' && s.attempts.at(-1)?.correct === false && !s.assisted)
-          return { tool: 'reopen_plan', arguments: '{}' };
+          return { tool: 'resume_activity', arguments: '{}' };
         if (s.attempts.at(-1)?.correct)
           onEvent?.({ type: 'speech', text: 'Your corrected plan is right.' });
         return say(

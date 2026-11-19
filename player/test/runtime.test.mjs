@@ -20,19 +20,19 @@ test('latest corrected plan supersedes old wrong work', async () => {
       args,
     });
   };
-  exec('prepare_fresh_box', { difficulty: 'small' });
+  exec('start_check', { question: 'layer_plan', situation: 'small' });
   for (const [k, v] of Object.entries({ perLayer: '1', layers: '1', total: '1' }))
-    model.learnerEdit(k, v);
-  model.learnerCommit();
-  exec('reopen_plan', {});
+    model.enter(k, v);
+  model.check();
+  exec('resume_activity', {});
   const s = model.snapshot().state;
   for (const [k, v] of Object.entries({
     perLayer: s.cubesPerLayer,
     layers: s.layerCount,
     total: s.totalCubes,
   }))
-    model.learnerEdit(k, String(v));
-  model.learnerCommit();
+    model.enter(k, String(v));
+  model.check();
   let request;
   const session = new TeachingSession({
     port: { ...model, presentation: () => ({}), start: () => {}, close: () => {} },
@@ -46,7 +46,7 @@ test('latest corrected plan supersedes old wrong work', async () => {
 });
 test('a decision is discarded when the scene changes while the tutor thinks, but not for a passive gesture', async () => {
   const pkg = await loadDirectory('lessons/cube-volume');
-  assert.deepEqual(pkg.teaching.passiveEvents, ['block_rotated', 'plan_edited']);
+  assert.deepEqual(pkg.teaching.passiveEvents, ['block_rotated', 'entries_edited']);
   const run = async (during) => {
     const model = createCubes({ sessionId: crypto.randomUUID() });
     let count = 0;
@@ -72,12 +72,12 @@ test('a decision is discarded when the scene changes while the tutor thinks, but
     return { spoken: spoken.join(' '), discarded: logs.includes('stale_decision_discarded') };
   };
   // Opening the layers changes what there is to talk about.
-  const opened = await run((model) => model.learnerOpen(true));
+  const opened = await run((model) => model.gesture('open', true));
   assert.equal(opened.discarded, true);
   assert.ok(opened.spoken.endsWith('Current.'));
   assert.ok(!opened.spoken.includes('Second.'));
   // Turning the block does not: the reply is spoken in full, once.
-  assert.deepEqual(await run((model) => model.learnerRotate(0.2)), { spoken: 'First. Second.', discarded: false });
+  assert.deepEqual(await run((model) => model.gesture('turn', 0.2)), { spoken: 'First. Second.', discarded: false });
 });
 test('a field that belongs to another tool is dropped instead of losing the reply', async () => {
   const pkg = await loadDirectory('lessons/cube-volume'),
@@ -248,7 +248,7 @@ for (const mode of ['cached', 'pending', 'stale', 'failure', 'action', 'settings
       assert.deepEqual(spoken, []);
       return;
     }
-    if (mode === 'stale') model.learnerRotate(0.2);
+    if (mode === 'stale') model.gesture('turn', 0.2);
     if (mode === 'settings') session.discardOpening();
     const revision = model.snapshot().revision;
     const starting = session.start();
@@ -420,7 +420,7 @@ test('check setup speaks its authored question once; voice answer resolves befor
     infer:async ({context}) => {
       calls++;
       if(calls===1) return {tool:'start_check',arguments:JSON.stringify({question:'moon_visible',situation:'day'})};
-      if(calls===2) return {tool:'answer_check',arguments:JSON.stringify({sceneId:context.view.currentCheck.id,answer:true,words:'Yes'})};
+      if(calls===2) return {tool:'answer_check',arguments:JSON.stringify({sceneId:context.view.currentCheck.id,choice:0,words:'Yes'})};
       if(calls===3) return {tool:'show_moment',arguments:JSON.stringify({moment:'blocked_light'})};
       return say('What blocks the reflected light here?');
     },
@@ -526,7 +526,7 @@ test('a prepared handover is discarded when the scene changes during narration',
   await begun;
   assert.equal(calls,2);
   // A routine view change during narration moves the revision without cancelling the turn.
-  model.learnerView(model.snapshot().state.view==='space'?'sky':'space');
+  model.control('set_view',{view:model.snapshot().state.view==='space'?'sky':'space'});
   release();await turn;
   assert.equal(calls,3);
   assert.equal(seen[2],model.snapshot().revision);
@@ -549,7 +549,7 @@ test('button completion is explicitly answered in the next tutor context', async
     },
   });
   await session.turn('A small check please.');
-  model.learnerPredict(true);
+  model.answer(0);
   await session.turn('Respond to the committed work.','observation');
   assert.equal(calls,2);
   session.close();

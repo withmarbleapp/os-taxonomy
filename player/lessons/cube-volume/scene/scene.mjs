@@ -90,7 +90,7 @@ export function createCubeScene({ canvas, onPlace, onRotate, onOpen }) {
       `A ${state.mode === 'fill' ? 'partly filled' : 'completely filled'} rectangular box of equal unit cubes. It has ${w} cubes across, ${d} rows back and ${h} layers high.`,
     );
     // While building, the space still to fill is drawn as a faint box.
-    if (state.task === 'fill') {
+    if (state.building) {
       const frame = new THREE.LineSegments(
         new THREE.EdgesGeometry(new THREE.BoxGeometry(w + 0.14, h + 0.1, d + 0.14)),
         guideLine,
@@ -109,7 +109,7 @@ export function createCubeScene({ canvas, onPlace, onRotate, onOpen }) {
     state = {
       ...s,
       dims: cover ? [3, 3, 3] : s.dims,
-      mode: s.task === 'fill' && !s.layerComplete ? 'fill' : 'explore',
+      mode: s.building && !s.layerComplete ? 'fill' : 'explore',
       filled: new Set(s.filled),
     };
     targetAngle = cover ? -0.25 : s.rotation;
@@ -245,9 +245,9 @@ export function createCubeScene({ canvas, onPlace, onRotate, onOpen }) {
       cube.position.y = y + y * spread * 2;
       if (ghost) continue;
       const inside =
-        state.teachingFocus === 'inside' && spread > 0.3 && x > 0 && z > 0 && y > 0 && x < w - 1 && z < d - 1 && y < h - 1;
-      const unit = state.teachingFocus === 'unit' && x === w - 1 && z === d - 1 && y === 0;
-      const layer = state.teachingFocus === 'layers' && y === 0;
+        state.focus === 'inside' && spread > 0.3 && x > 0 && z > 0 && y > 0 && x < w - 1 && z < d - 1 && y < h - 1;
+      const unit = state.focus === 'unit' && x === w - 1 && z === d - 1 && y === 0;
+      const layer = state.focus === 'layers' && y === 0;
       cube.material = inside || unit ? accentPaint : layerPaint[y % layerPaint.length];
       const pulse = !reduce && (inside || unit || layer) ? 1 + Math.sin(seconds * 2.2) * 0.018 : 1;
       cube.scale.setScalar(grow < 1 && z === d - 1 ? Math.max(0.01, grow) : pulse);
@@ -267,9 +267,9 @@ export function createCubeScene({ canvas, onPlace, onRotate, onOpen }) {
       rotation: angle,
       cubeCount: parts.filter((c) => !c.userData.ghost).length,
       fullyBuriedCubes: state?.interiorCount ?? 0,
-      highlightedUnit: state?.teachingFocus === 'unit',
-      highlightedLayer: state?.teachingFocus === 'layers',
-      highlightedInterior: state?.teachingFocus === 'inside' && (state?.interiorCount ?? 0) > 0,
+      highlightedUnit: state?.focus === 'unit',
+      highlightedLayer: state?.focus === 'layers',
+      highlightedInterior: state?.focus === 'inside' && (state?.interiorCount ?? 0) > 0,
       landscape: false,
     }),
     stats: () => ({ calls: stage.renderer.info.render.calls, triangles: stage.renderer.info.render.triangles }),

@@ -1,6 +1,7 @@
 import { THREE, createStage, flat, SKY } from '/sdk/stage.mjs';
 import { meadow, terrain, grass, flowers, mountains, skyClouds, scatter, cloud, sun as sunSymbol, character, fountain as fountainProp, arrow as arrowProp, ray, clear } from '/sdk/props.mjs';
-import { tutorView } from '../model/rainbow.mjs';
+import { tutorView, questionFor } from '../model/rainbow.mjs';
+import { bindMoments } from '/sdk/moments-ui.mjs';
 import { DEG, FOV, EYE_HEIGHT, WATER, rainbow, bowDirections, sunDirection, explorerPosition, wrap } from '../model/optics.mjs';
 import { createDropView, STORM } from './drop.mjs';
 
@@ -347,12 +348,8 @@ export function createScene(getModel, onVisualChange = () => {}) {
     $('water-label').textContent =
       state.source === 'rain' ? (state.raining ? 'Stop the rain' : 'Start the rain') : state.raining ? 'Turn off the fountain' : 'Turn on the fountain';
     $('water').setAttribute('aria-label', $('water-label').textContent);
-    const q = ['predict', 'check'].includes(state.task) && state.mode === 'activity' && !state.revealed ? tutorView(state).currentCheck : null;
-    show('choices', !!q);
-    if (q) q.choices.forEach((label, i) => ($('choice' + i).textContent = label));
-    show('resume', state.task !== 'demonstration' && (state.mode === 'demonstration' || state.revealed));
-    $('resume').textContent = state.revealed ? '↻ Try again' : '↗ Try it';
-    show('hint', state.canHint);
+    // Answer buttons, the hint and "try it" are the standard controls.
+    controls(snapshot, coverOpen);
 
     // World
     const rainy = state.source === 'rain';
@@ -476,9 +473,9 @@ export function createScene(getModel, onVisualChange = () => {}) {
       const g = groundPoint(e);
       if (!g || Math.hypot(g.x, g.z) < 1) return;
       const spot = wrap(Math.atan2(g.z, g.x));
-      if (Math.abs(spot - state.spot) > 0.01) getModel().learnerWalk(spot);
+      if (Math.abs(spot - state.spot) > 0.01) getModel().gesture('walk', spot);
     },
-    (step) => getModel().learnerWalk(state.spot + step * 0.14),
+    (step) => getModel().gesture('walk', state.spot + step * 0.14),
   );
   dragObject(
     'gaze',
@@ -489,25 +486,22 @@ export function createScene(getModel, onVisualChange = () => {}) {
         dz = g.z - mia.position.z;
       if (Math.hypot(dx, dz) < 0.8) return;
       const heading = wrap(Math.atan2(dz, dx));
-      if (Math.abs(heading - state.heading) > 0.01) getModel().learnerTurn(heading);
+      if (Math.abs(heading - state.heading) > 0.01) getModel().gesture('turn', heading);
     },
-    (step) => getModel().learnerTurn(state.heading + step * 0.16),
+    (step) => getModel().gesture('turn', state.heading + step * 0.16),
   );
   dragObject(
     'beam',
     (e) => {
       const b = dropView.beamAt(e.clientY, dims.w, dims.h);
-      if (b !== null && Math.abs(b - state.beam) > 0.004) getModel().learnerBeam(b);
+      if (b !== null && Math.abs(b - state.beam) > 0.004) getModel().gesture('aim', b);
     },
-    (step) => getModel().learnerBeam(state.beam + step * 0.04),
+    (step) => getModel().gesture('aim', state.beam + step * 0.04),
   );
-  $('sun-cloud').onclick = () => getModel().learnerToggleSun();
-  $('water').onclick = () => getModel().learnerToggleWater();
-  $('sun').onclick = () => getModel().learnerSunHeight();
-  $('choice0').onclick = () => getModel().learnerAnswer(0);
-  $('choice1').onclick = () => getModel().learnerAnswer(1);
-  $('hint').onclick = () => getModel().learnerHint();
-  $('resume').onclick = () => getModel().learnerResume();
+  $('sun-cloud').onclick = () => getModel().gesture('toggle_sun');
+  $('water').onclick = () => getModel().gesture('toggle_water');
+  $('sun').onclick = () => getModel().gesture('move_sun');
+  const controls = bindMoments({ model: getModel, questionFor, retryLabel: '↻ Try again' });
 
   // --- Frames ---
   function animateWater(t) {

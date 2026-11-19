@@ -91,7 +91,7 @@ body.sky.day #explanation {
   gap: 12px;
 }
 #choices,
-#pathTools {
+#order-tools {
   position: absolute;
   bottom: 115px;
   left: 24px;
@@ -101,7 +101,7 @@ body.sky.day #explanation {
   flex-wrap: wrap;
   align-items: center;
 }
-#path-order {
+#order-draft {
   width: 100%;
   margin: 0;
   font-size: 22px;
@@ -154,7 +154,7 @@ body.sky #world {
     gap: 10px;
   }
   #choices,
-  #pathTools {
+  #order-tools {
     left: 16px;
     right: 16px;
     bottom: 215px;
@@ -164,7 +164,7 @@ body.sky #world {
     font-size: 14px;
     padding: 4px 7px;
   }
-  #path-order {
+  #order-draft {
     font-size: 19px;
   }
 }
@@ -180,7 +180,7 @@ body.sky #world {
     bottom: 18px;
   }
   #choices,
-  #pathTools {
+  #order-tools {
     bottom: 90px;
   }
 }

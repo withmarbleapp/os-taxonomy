@@ -2,274 +2,223 @@
   "protocolVersion": 1,
   "kind": "cube-volume",
   "apiVersion": 1,
-  "releaseId": "cube-volume-v3",
-  "description": "A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. Rotate to inspect; open whole horizontal layers to see every cube. Rotation does not change volume. interiorCount is how many cubes are enclosed on every side (none unless every dimension exceeds two): a fact for answering a child who leaves them out, not a topic to raise. Filling, stacking and adding back rows are real learner actions; opening layers does not add cubes. The model scores submitted layer plans exactly; events alone do not establish understanding. No required stage count.",
+  "releaseId": "cube-volume-v4",
+  "description": "A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. The child can turn the block and open its whole horizontal layers at any time; neither changes how many cubes there are. interiorCount is how many cubes are enclosed on every side (none unless every dimension exceeds two): a fact for answering a child who leaves them out, not a topic to raise. Filling, stacking and adding back rows are real learner actions. The model scores a checked layer plan exactly; events alone do not establish understanding. No required stage count.",
   "stateSchema": {
     "type": "object",
     "properties": {
-      "task": {
-        "enum": ["fill", "explore", "plan"]
-      },
-      "teachingFocus": {
-        "enum": ["none", "unit", "layers", "inside"]
-      },
-      "taughtConcepts": {
+      "kind": { "enum": ["show", "do", "ask"] },
+      "item": { "type": "string" },
+      "mode": { "enum": ["demonstration", "activity"] },
+      "moment": { "type": "string" },
+      "shown": { "type": "array", "items": { "type": "string" }, "maxItems": 64 },
+      "sceneId": { "type": "string" },
+      "situation": { "type": "string" },
+      "revealed": { "type": "boolean" },
+      "assisted": { "type": "boolean" },
+      "hinted": { "type": "boolean" },
+      "reached": { "type": "boolean" },
+      "draft": { "type": "array", "items": { "type": "string" }, "maxItems": 12 },
+      "entries": {
         "type": "array",
-        "maxItems": 3,
         "items": {
-          "enum": ["volume", "layers", "inside"]
-        }
-      },
-      "layerExampleSeen": {
-        "type": "boolean"
-      },
-      "cubesPerLayer": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 999
-      },
-      "layerCount": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 999
-      },
-      "sceneId": {
-        "type": "string"
-      },
-      "dims": {
-        "type": "array",
-        "minItems": 3,
-        "maxItems": 3,
-        "items": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 8
-        }
-      },
-      "filled": {
-        "type": "array",
-        "maxItems": 6,
-        "items": {
-          "type": "string"
-        }
-      },
-      "layerComplete": {
-        "type": "boolean"
-      },
-      "hasStack": {
-        "type": "boolean"
-      },
-      "canDeepen": {
-        "type": "boolean"
-      },
-      "layersOpen": {
-        "type": "boolean"
-      },
-      "rotation": {
-        "type": "number"
-      },
-      "assisted": {
-        "type": "boolean"
-      },
-      "revealed": {
-        "type": "boolean"
-      },
-      "plan": {
-        "type": "object",
-        "properties": {
-          "perLayer": {
-            "type": "string",
-            "maxLength": 3
-          },
-          "layers": {
-            "type": "string",
-            "maxLength": 3
-          },
-          "total": {
-            "type": "string",
-            "maxLength": 3
-          }
+          "type": "object",
+          "properties": { "field": { "type": "string" }, "value": { "type": "string" } },
+          "required": ["field", "value"],
+          "additionalProperties": false
         },
-        "required": ["perLayer", "layers", "total"],
-        "additionalProperties": false
+        "maxItems": 12
       },
       "attempts": {
         "type": "array",
-        "maxItems": 32,
         "items": {
           "type": "object",
           "properties": {
-            "id": {
-              "type": "string"
-            },
-            "sceneId": {
-              "type": "string"
-            },
-            "dims": {
-              "type": "array",
-              "minItems": 3,
-              "maxItems": 3,
-              "items": {
-                "type": "integer",
-                "minimum": 1,
-                "maximum": 8
-              }
-            },
-            "perLayer": {
-              "type": "integer",
-              "minimum": 0,
-              "maximum": 999
-            },
-            "layers": {
-              "type": "integer",
-              "minimum": 0,
-              "maximum": 999
-            },
-            "total": {
-              "type": "integer",
-              "minimum": 0,
-              "maximum": 999
-            },
-            "correct": {
-              "type": "boolean"
-            },
-            "assisted": {
-              "type": "boolean"
-            }
+            "id": { "type": "string" },
+            "sceneId": { "type": "string" },
+            "item": { "type": "string" },
+            "situation": { "type": "string" },
+            "question": { "type": "string" },
+            "answer": { "type": "string" },
+            "correct": { "type": "boolean" },
+            "assisted": { "type": "boolean" },
+            "modality": { "enum": ["button", "voice"] },
+            "words": { "type": "string" },
+            "values": { "type": "array", "items": { "type": "string" }, "maxItems": 12 }
           },
           "required": [
             "id",
             "sceneId",
-            "dims",
-            "perLayer",
-            "layers",
-            "total",
+            "item",
+            "situation",
+            "question",
+            "answer",
             "correct",
-            "assisted"
+            "assisted",
+            "modality",
+            "words",
+            "values"
           ],
           "additionalProperties": false
-        }
+        },
+        "maxItems": 100
       },
-      "interiorCount": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 999
-      },
-      "hasInterior": {
-        "type": "boolean"
-      },
-      "totalCubes": {
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 999
-      },
-      "learnerActions": {
+      "results": {
         "type": "array",
-        "maxItems": 12,
         "items": {
           "type": "object",
           "properties": {
-            "name": {
-              "type": "string"
-            },
-            "label": {
-              "type": "string"
-            },
-            "enabled": {
-              "type": "boolean"
-            }
+            "id": { "type": "string" },
+            "sceneId": { "type": "string" },
+            "item": { "type": "string" },
+            "assisted": { "type": "boolean" },
+            "detail": { "type": "string" }
           },
-          "required": ["name", "label", "enabled"],
+          "required": ["id", "sceneId", "item", "assisted", "detail"],
           "additionalProperties": false
-        }
-      }
+        },
+        "maxItems": 100
+      },
+      "instruction": { "type": "string" },
+      "canAnswer": { "type": "boolean" },
+      "canHint": { "type": "boolean" },
+      "canResume": { "type": "boolean" },
+      "canTurn": { "type": "boolean" },
+      "canOpen": { "type": "boolean" },
+      "canPlace": { "type": "boolean" },
+      "canStack": { "type": "boolean" },
+      "canDeepen": { "type": "boolean" },
+      "dims": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": { "type": "integer", "minimum": 1, "maximum": 8 }
+      },
+      "building": { "type": "boolean" },
+      "filled": { "type": "array", "maxItems": 6, "items": { "type": "string" } },
+      "rotation": { "type": "number" },
+      "layersOpen": { "type": "boolean" },
+      "focus": { "enum": ["none", "unit", "layers", "inside"] },
+      "cubesPerLayer": { "type": "integer", "minimum": 0, "maximum": 999 },
+      "layerCount": { "type": "integer", "minimum": 0, "maximum": 999 },
+      "totalCubes": { "type": "integer", "minimum": 0, "maximum": 999 },
+      "layerComplete": { "type": "boolean" },
+      "interiorCount": { "type": "integer", "minimum": 0, "maximum": 999 },
+      "hasInterior": { "type": "boolean" }
     },
     "required": [
-      "task",
-      "teachingFocus",
-      "taughtConcepts",
-      "layerExampleSeen",
+      "kind",
+      "item",
+      "mode",
+      "moment",
+      "shown",
+      "sceneId",
+      "situation",
+      "revealed",
+      "assisted",
+      "hinted",
+      "reached",
+      "draft",
+      "entries",
+      "attempts",
+      "results",
+      "instruction",
+      "canAnswer",
+      "canHint",
+      "canResume",
+      "canTurn",
+      "canOpen",
+      "canPlace",
+      "canStack",
+      "canDeepen",
+      "dims",
+      "building",
+      "filled",
+      "rotation",
+      "layersOpen",
+      "focus",
       "cubesPerLayer",
       "layerCount",
-      "sceneId",
-      "dims",
-      "filled",
-      "layerComplete",
-      "hasStack",
-      "canDeepen",
-      "layersOpen",
-      "rotation",
-      "assisted",
-      "revealed",
-      "plan",
-      "attempts",
-      "interiorCount",
-      "hasInterior",
       "totalCubes",
-      "learnerActions"
+      "layerComplete",
+      "interiorCount",
+      "hasInterior"
     ],
     "additionalProperties": false
   },
   "actions": [
     {
-      "name": "show_teaching",
-      "description": "Physical visual support used by explain_model. Highlights a unit cube, opens/highlights complete layers, or highlights the cubes enclosed on every side (only for a child whose count left them out). Records exposure and assistance, not understanding.",
+      "name": "show_moment",
+      "description": "Show and narrate one moment with the lesson’s own words, then continue this turn into something for the child to notice, answer or do. Some moments are help on the work in hand: it is kept, and recorded as helped. Others replace what is on screen, so they are refused while a question is unanswered. introduction: once, at the very start, to say what the lesson is about; follow it with a first question about the block on the table. one_layer: the child counts only the cubes they can see on the front of the bottom layer, or does not know what a layer is. Child can: count the coloured layer, back row included. unit_help: the child counts faces or squares instead of cubes, or counts a corner cube more than once. Child can: say how many cubes the coloured piece is. layer_help: a checked plan has the wrong number for cubes in one layer. Child can: count that layer again, front and back. repetition_help: the layer count is right but the total is wrong, or the child counts every cube one by one and loses track. Child can: add or multiply the layers to reach the total. volume: the child asks what volume means, or thinks a taller-looking block must always be bigger. Child can: say what is being counted to measure the block. layers: the child has one layer and needs the step to the whole block. Child can: say why every layer has the same number of cubes. no_buried: only if the child themselves says nothing is hidden inside a thin block. Never to open the subject. inside: only if the child’s own count or words leave out cubes they cannot see, or they ask whether those count, and this block has one enclosed on every side. Child can: find which layer the hidden cube belongs to. compare_plan: a plan has just been checked and its numbers need comparing with the opened block. Child can: find which of their three numbers does not match. larger_example: only if the child has left out cubes they cannot see and the current block has none enclosed on every side. It replaces the block. Child can: say why counting layers still counts the middle cube. layer_example: the child needs to see equal layers on a small block before trying one alone. It replaces the block. Child can: count one layer and say how many layers there are.",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "focus": {
-            "enum": ["unit", "layers", "inside"]
+          "moment": {
+            "enum": [
+              "introduction",
+              "one_layer",
+              "unit_help",
+              "layer_help",
+              "repetition_help",
+              "volume",
+              "layers",
+              "no_buried",
+              "inside",
+              "compare_plan",
+              "larger_example",
+              "layer_example"
+            ]
           }
         },
-        "required": ["focus"],
+        "required": ["moment"],
         "additionalProperties": false
       }
     },
     {
-      "name": "show_example",
-      "description": "Physical worked example used by explain_model: layer example is 3 by 2 by 2, inside example is a different 3 by 3 by 3 block, for a child who has left out cubes they cannot see. A new case is explicitly announced by the authored explanation. This is teaching, not a test.",
+      "name": "start_activity",
+      "description": "Hand the child something to do on the scene; the lesson speaks the instruction. Unanswered work must be answered or left first. build_layer: the child builds a layer cube by cube, stacks it and adds back rows: it shows what a layer is. Never evidence that they can count with one, and not for a child who already explains layers. explore_block: a filled 3 by 3 by 3 block to turn and open freely. Exploration, never evidence.",
       "inputSchema": {
         "type": "object",
-        "properties": {
-          "kind": {
-            "enum": ["layers", "inside"]
-          }
-        },
-        "required": ["kind"],
+        "properties": { "activity": { "enum": ["build_layer", "explore_block"] } },
+        "required": ["activity"],
         "additionalProperties": false
       }
     },
     {
-      "name": "prepare_activity",
-      "description": "Start a small fill-and-stack investigation (kind fill, a 3 by 2 bottom layer), or inspect a filled 3 by 3 by 3 solid (kind explore). Discuss replacing unfinished work first. Filling launches the complete fill request automatically. These are optional teaching formats. Never reset to filling after the learner already explains layers.",
+      "name": "start_check",
+      "description": "Ask one question; the lesson speaks the exact words shown on screen. Wait for the answer and do not ask another. layer_plan: the child counts a closed block they have not seen: cubes in one layer, number of layers, cubes altogether, then Check my plan. small is the first step (the very first is 2 by 2 by 2); large and long change the size, the shape and the arithmetic. Independent unless the layers were opened or an explanation was shown on that block first. Situations: layer_plan takes small, large, long.",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "kind": {
-            "enum": ["fill", "explore"]
-          }
+          "question": { "enum": ["layer_plan"] },
+          "situation": { "enum": ["small", "large", "long"] }
         },
-        "required": ["kind"],
+        "required": ["question"],
         "additionalProperties": false
       }
     },
     {
-      "name": "prepare_fresh_box",
-      "description": "Offer an optional fresh independent layer-plan problem, excluding previously seen shapes and their rotations. The first small problem is 2 by 2 by 2. Choose small, large (at least 3 in every direction) or long to vary size and shape. The learner must enter all three fields and Check my plan. Do not supply counts or open layers before commitment unless help is requested. This launches the complete plan request automatically. No three-stage gate.",
+      "name": "answer_check",
+      "description": "Record a clear SPOKEN answer to the waiting question: its sceneId, the index of the choice the child meant, and their actual words. The model scores it. Never use it for an unclear reply, a guess at what they meant, or an answer you supplied. For a question with boxes to fill, give values instead of choice: what the child said for each box, in the order the boxes are listed, and only when they said every one.",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "difficulty": {
-            "enum": ["small", "large", "long"]
-          }
+          "sceneId": { "type": "string" },
+          "choice": { "type": "integer", "minimum": 0, "maximum": 11 },
+          "values": {
+            "type": "array",
+            "items": { "type": "string", "maxLength": 12 },
+            "maxItems": 12
+          },
+          "words": { "type": "string", "minLength": 1, "maxLength": 650 }
         },
-        "required": ["difficulty"],
+        "required": ["sceneId", "words"],
         "additionalProperties": false
       }
     },
     {
-      "name": "reopen_plan",
-      "description": "Let the learner revise this checked plan with help. Keep the old submitted attempt unchanged; reopen the same fields and mark the new attempt assisted. Use after correcting the specific error. A correct revision is practice, not a fresh independent check.",
+      "name": "leave_activity",
+      "description": "Leave unfinished work when the child chooses something else or asks to move on. Earlier attempts are kept; no answer is invented.",
       "inputSchema": {
         "type": "object",
         "properties": {},
@@ -278,42 +227,120 @@
       }
     },
     {
-      "name": "set_support",
-      "description": "Open or close whole layers. Opening before a plan submission permanently marks that attempt assisted; closing does not erase assistance. It does not change cube count. Use explain_model when teaching the idea, or this action when the learner asks only to open or close the layers. Never expose an independent answer before commitment unless help is needed.",
+      "name": "resume_activity",
+      "description": "Give the work back to the child after help, exactly as it was, or reopen an answered question for another try. Either is recorded as helped.",
       "inputSchema": {
         "type": "object",
-        "properties": {
-          "opened": {
-            "type": "boolean"
-          }
-        },
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "set_layers",
+      "description": "Open or close the block’s layers when the child asks only for that. Opening before a plan is checked marks that plan as helped; closing does not undo it. It never changes how many cubes there are. To teach the idea, use show_moment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": { "opened": { "type": "boolean" } },
         "required": ["opened"],
         "additionalProperties": false
       }
     }
   ],
   "events": {
-    "teaching_shown": {
+    "scene_changed": {
       "type": "object",
       "properties": {
-        "focus": {
-          "enum": ["unit", "layers", "inside"]
-        }
+        "kind": { "type": "string" },
+        "item": { "type": "string" },
+        "sceneId": { "type": "string" }
       },
-      "required": ["focus"],
+      "required": ["kind", "item", "sceneId"],
+      "additionalProperties": false
+    },
+    "support_changed": {
+      "type": "object",
+      "properties": { "name": { "type": "string" }, "enabled": { "type": "boolean" } },
+      "required": ["name", "enabled"],
+      "additionalProperties": false
+    },
+    "draft_edited": {
+      "type": "object",
+      "properties": { "draft": { "type": "array", "items": { "type": "string" }, "maxItems": 12 } },
+      "required": ["draft"],
+      "additionalProperties": false
+    },
+    "entries_edited": {
+      "type": "object",
+      "properties": { "field": { "type": "string" } },
+      "required": ["field"],
+      "additionalProperties": false
+    },
+    "response_committed": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "sceneId": { "type": "string" },
+        "item": { "type": "string" },
+        "situation": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "correct": { "type": "boolean" },
+        "assisted": { "type": "boolean" },
+        "modality": { "enum": ["button", "voice"] },
+        "words": { "type": "string" },
+        "values": { "type": "array", "items": { "type": "string" }, "maxItems": 12 }
+      },
+      "required": [
+        "id",
+        "sceneId",
+        "item",
+        "situation",
+        "question",
+        "answer",
+        "correct",
+        "assisted",
+        "modality",
+        "words",
+        "values"
+      ],
+      "additionalProperties": false
+    },
+    "response_reopened": {
+      "type": "object",
+      "properties": { "sceneId": { "type": "string" } },
+      "required": ["sceneId"],
+      "additionalProperties": false
+    },
+    "goal_reached": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "sceneId": { "type": "string" },
+        "item": { "type": "string" },
+        "assisted": { "type": "boolean" },
+        "detail": { "type": "string" }
+      },
+      "required": ["id", "sceneId", "item", "assisted", "detail"],
+      "additionalProperties": false
+    },
+    "block_rotated": {
+      "type": "object",
+      "properties": { "rotation": { "type": "number" } },
+      "required": ["rotation"],
+      "additionalProperties": false
+    },
+    "layers_opened": {
+      "type": "object",
+      "properties": { "opened": { "type": "boolean" } },
+      "required": ["opened"],
       "additionalProperties": false
     },
     "cube_placed": {
       "type": "object",
       "properties": {
-        "filled": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "layerComplete": {
-          "type": "boolean"
-        }
+        "filled": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "layerComplete": { "type": "boolean" }
       },
       "required": ["filled", "layerComplete"],
       "additionalProperties": false
@@ -321,16 +348,8 @@
     "layer_stacked": {
       "type": "object",
       "properties": {
-        "layers": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "totalCubes": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        }
+        "layers": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "totalCubes": { "type": "integer", "minimum": 0, "maximum": 999 }
       },
       "required": ["layers", "totalCubes"],
       "additionalProperties": false
@@ -338,125 +357,10 @@
     "back_rows_added": {
       "type": "object",
       "properties": {
-        "added": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "totalCubes": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        }
+        "added": { "type": "integer", "minimum": 0, "maximum": 999 },
+        "totalCubes": { "type": "integer", "minimum": 0, "maximum": 999 }
       },
       "required": ["added", "totalCubes"],
-      "additionalProperties": false
-    },
-    "layers_opened": {
-      "type": "object",
-      "properties": {
-        "opened": {
-          "type": "boolean"
-        }
-      },
-      "required": ["opened"],
-      "additionalProperties": false
-    },
-    "block_rotated": {
-      "type": "object",
-      "properties": {
-        "rotation": {
-          "type": "number"
-        }
-      },
-      "required": ["rotation"],
-      "additionalProperties": false
-    },
-    "plan_edited": {
-      "type": "object",
-      "properties": {
-        "field": {
-          "enum": ["perLayer", "layers", "total"]
-        }
-      },
-      "required": ["field"],
-      "additionalProperties": false
-    },
-    "response_committed": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "sceneId": {
-          "type": "string"
-        },
-        "dims": {
-          "type": "array",
-          "minItems": 3,
-          "maxItems": 3,
-          "items": {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 8
-          }
-        },
-        "perLayer": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "layers": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "total": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 999
-        },
-        "correct": {
-          "type": "boolean"
-        },
-        "assisted": {
-          "type": "boolean"
-        }
-      },
-      "required": ["id", "sceneId", "dims", "perLayer", "layers", "total", "correct", "assisted"],
-      "additionalProperties": false
-    },
-    "activity_prepared": {
-      "type": "object",
-      "properties": {
-        "kind": {
-          "enum": ["fill", "explore", "plan"]
-        },
-        "sceneId": {
-          "type": "string"
-        }
-      },
-      "required": ["kind", "sceneId"],
-      "additionalProperties": false
-    },
-    "support_changed": {
-      "type": "object",
-      "properties": {
-        "opened": {
-          "type": "boolean"
-        }
-      },
-      "required": ["opened"],
-      "additionalProperties": false
-    },
-    "plan_reopened": {
-      "type": "object",
-      "properties": {
-        "sceneId": {
-          "type": "string"
-        }
-      },
-      "required": ["sceneId"],
       "additionalProperties": false
     }
   }

@@ -5,7 +5,8 @@ This note travels with the lesson. It contains nothing about any individual chil
 The lesson was first built as a standalone prototype ("Hidden Cubes") and
 later moved into the shared player. This note was written when the scene was
 moved onto the shared 3D kit and the teaching file was rewritten (version
-1.1.0). It records the design as it stands; it is not a record of the original
+1.1.0), and revised when the lesson was moved onto the shared moment contract
+(version 2.0.0). It records the design as it stands; it is not a record of the original
 research, which was not kept with the lesson.
 
 ## Brief
@@ -40,15 +41,15 @@ is closed or open.
 
 | Relationship | Shown by | Child can | Evidence |
 |---|---|---|---|
-| One cube is one, however many faces show | `unit-help` colours one cube | say how many cubes the coloured piece is | says it is one cube |
-| A layer is one flat level, back rows included | `one-layer`, `layer-example`; the building activity | fill a layer cube by cube, then stack it | counts a whole layer without being told |
+| One cube is one, however many faces show | `unit_help` colours one cube | say how many cubes the coloured piece is | says it is one cube |
+| A layer is one flat level, back rows included | `one_layer`, `layer_example`; `build_layer` | fill a layer cube by cube, then stack it | counts a whole layer without being told |
 | Equal layers make the block | `layers`, `repetition-help`; Open layers | add or multiply the layers | joins one layer, the number of layers and the total in their own words |
-| A plan on a fresh block | `prepare_fresh_box` (small, large, long) | fill three boxes and check | all three right, with no help first |
+| A plan on a fresh block | `layer_plan` (small, large, long) | fill three boxes and check | all three right, with no help first |
 
 Leaving out cubes that cannot be seen is a common mistake, not a part of the
 map. Counting in layers already prevents it, so the tutor is told not to raise
 hidden cubes at all unless the child's own count or words show the mistake.
-Three explanations (`inside`, `larger-example`, `no-buried`) exist for that
+Three explanations (`inside`, `larger_example`, `no_buried`) exist for that
 case only, and it is not a goal or a wrap-up skill.
 
 The map is used in any order. A child who already explains layers can go
@@ -66,15 +67,34 @@ count and anything being said about the old one is out of date.
 
 ## Responsibilities
 
-- **Model (`model/cubes.mjs`):** every count, the scoring of a plan, which
-  blocks have been used, and the `assisted` flag.
+The lesson is written on the shared moment contract (`/sdk/moments.mjs`), like
+the Moon and rainbow lessons.
+
+- **Model (`model/cubes.mjs`):** only what is particular to the block: its
+  state, its counts, its gestures (turn, open, place, stack, add back rows) and
+  the lesson's words. Twelve explanations to show, two things to do (build a
+  layer, explore a block) and one question to ask (the layer plan).
+- **Shared engine:** the tutor's actions, scoring a checked plan, the retry in
+  the same boxes, and the `assisted` flag. The plan is a fill-in question:
+  three number boxes answered by typing or by saying all three numbers.
 - **Scene (`scene/scene.mjs`):** draws the block on the shared stage (tabletop
   setting, kit cube shape and palette) and reports taps, drags and arrow keys.
   It never scores.
-- **Teaching file:** the map above for the tutor, and twelve short explanations
-  the tutor can ask the lesson to speak while the block shows them
-  (`explain_model`). Unlike the Moon and rainbow lessons, the tutor words the
-  questions itself.
+- **Teaching file:** the map above for the tutor. The lesson words its own
+  explanations and its question; the tutor words everything in between.
+
+### What changed with the contract (2.0.0)
+
+- The lesson speaks its twelve explanations itself. Before, the tutor chose
+  one and spoke its own version of it.
+- A plan can be answered by voice, when the child says all three numbers.
+- An unanswered plan must be answered or left before another block is given.
+  Before, a new block silently replaced it.
+- The child can turn the block and open its layers at any time, as before; the
+  engine had to learn that some gestures are always available.
+- An explanation shown on the block during a plan leaves the boxes open, as
+  before; in the Moon and rainbow lessons help takes the work away until it is
+  resumed.
 
 ## Model limits
 

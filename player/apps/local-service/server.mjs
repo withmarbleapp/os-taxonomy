@@ -589,12 +589,13 @@ export async function createService({
       if (lesson) {
         res.setHeader(
           'Content-Security-Policy',
-          `default-src 'none'; script-src ${origin}/content/ ${origin}/sdk/; style-src ${origin}/content/ ${origin}/player/ 'unsafe-inline'; img-src ${origin}/content/ data:; font-src ${origin}/player/; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors ${origin}; sandbox allow-scripts allow-forms`,
+          `default-src 'none'; script-src ${origin}/content/ ${origin}/sdk/ ${origin}/contract/; style-src ${origin}/content/ ${origin}/player/ 'unsafe-inline'; img-src ${origin}/content/ data:; font-src ${origin}/player/; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors ${origin}; sandbox allow-scripts allow-forms`,
         );
       }
       if (
         lesson ||
         path.startsWith('/sdk/') ||
+        path.startsWith('/contract/') ||
         path === '/player/scene-base.css' ||
         path.startsWith('/player/assets/')
       ) {
