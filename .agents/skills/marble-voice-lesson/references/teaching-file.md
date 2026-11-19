@@ -17,6 +17,7 @@ for later authors go in the design note.
 | `selfEvaluation.skills[]` | | The rows of the child's wrap-up screen, and the allowed values when the tutor invites or records confidence; with none, the wrap-up and those tools are not offered | What the child can do by the end, in their words |
 | `observationEvents[]` | Each must exist in `experience.json` events | A learner event with one of these names prompts the tutor to respond | Which child actions deserve a response |
 | `evidenceEvents[]` | Each must exist in `experience.json` events | | Which events count as evidence |
+| `passiveEvents[]` | Each must exist in `experience.json` events | A learner event with one of these names does not make a reply in progress out of date. Any other change to the scene stops the tutor mid-reply and makes it think again | Which gestures change nothing the tutor would say: turning a model, typing a draft. Without this, a child who fiddles while listening keeps cutting the tutor off |
 | `teaching[]` | Each `action` must exist in `experience.json` | The moments offered through `explain_model`; with none, that tool is not offered | Tutor-worded moments only. Leave it empty in a lesson-worded lesson |
 | `tutorGuidance` | A string under 16,000 characters | | The map (see below) |
 | `introduction`, `curriculum`, `observationPrompt`, criteria and anything else | | | Read by the tutor as part of the file |
@@ -71,6 +72,7 @@ Replace every value. Names in capitals must match `manifest.json` and
   },
   "observationEvents": ["EVENT-NAME"],
   "evidenceEvents": ["EVENT-NAME"],
+  "passiveEvents": ["EVENT-NAME"],
   "observationPrompt": "What a committed answer does and does not establish in this lesson.",
   "teaching": [],
   "tutorGuidance": "See the next section."

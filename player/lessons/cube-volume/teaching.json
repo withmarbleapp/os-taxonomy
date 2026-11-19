@@ -124,6 +124,10 @@
   "evidenceEvents": [
     "response_committed"
   ],
+  "passiveEvents": [
+    "block_rotated",
+    "plan_edited"
+  ],
   "observationPrompt": "Look at the latest event. layer_stacked or back_rows_added: the child changed the block while building, so anything said about the old count is out of date; use the new counts in the event and state, and ask what they notice rather than telling them the total. response_committed: the child pressed Check my plan. Read view.currentAttempt: their three numbers, the block’s real counts, wrongFields and the assisted flag. If a number is wrong, work on that number only: layer-help for cubes in one layer, repetition-help for the total, then reopen_plan so they can put it right (that retry is recorded as assisted). If all three are right, say so and do not ask for the same counts again; if you do not yet know how they found it, ask. A right plan with assisted true is practice, not a fresh check.",
   "teaching": [
     {

@@ -44,25 +44,69 @@ test('latest corrected plan supersedes old wrong work', async () => {
   assert.equal(request.context.snapshot.state.attempts.at(-1).assisted, true);
   session.close();
 });
-test('stale decisions are discarded after a model change', async () => {
+test('a decision is discarded when the scene changes while the tutor thinks, but not for a passive gesture', async () => {
+  const pkg = await loadDirectory('lessons/cube-volume');
+  assert.deepEqual(pkg.teaching.passiveEvents, ['block_rotated', 'plan_edited']);
+  const run = async (during) => {
+    const model = createCubes({ sessionId: crypto.randomUUID() });
+    let count = 0;
+    const spoken = [],
+      logs = [];
+    const session = new TeachingSession({
+      port: { ...model, presentation: () => ({}), start: () => {}, close: () => {} },
+      pkg,
+      infer: async (request, signal, onEvent) => {
+        if (!count++) {
+          onEvent?.({ type: 'speech', text: 'First. ' });
+          during(model);
+          onEvent?.({ type: 'speech', text: 'Second.' });
+          return say('First. Second.');
+        }
+        return say('Current.');
+      },
+      speak: async (t) => spoken.push(t.trim()),
+      log: (e) => logs.push(e.type),
+    });
+    await session.turn('Look');
+    session.close();
+    return { spoken: spoken.join(' '), discarded: logs.includes('stale_decision_discarded') };
+  };
+  // Opening the layers changes what there is to talk about.
+  const opened = await run((model) => model.learnerOpen(true));
+  assert.equal(opened.discarded, true);
+  assert.ok(opened.spoken.endsWith('Current.'));
+  assert.ok(!opened.spoken.includes('Second.'));
+  // Turning the block does not: the reply is spoken in full, once.
+  assert.deepEqual(await run((model) => model.learnerRotate(0.2)), { spoken: 'First. Second.', discarded: false });
+});
+test('a field that belongs to another tool is dropped instead of losing the reply', async () => {
   const pkg = await loadDirectory('lessons/cube-volume'),
-    model = createCubes({ sessionId: crypto.randomUUID() });
-  let count = 0;
-  const spoken = [];
+    model = createCubes({ sessionId: crypto.randomUUID() }),
+    skill = pkg.teaching.selfEvaluation.skills[0].id;
+  const spoken = [],
+    logs = [],
+    shown = [];
+  const replies = [
+    { tool: 'say', arguments: JSON.stringify({ text: 'Yes, 2 times 6 is 12.', notes: [{ skill, text: 'You said: six.' }] }) },
+    { tool: 'finish', arguments: JSON.stringify({ text: 'Well done today.', notes: [{ skill, text: 'You said: six.' }] }) },
+  ];
   const session = new TeachingSession({
     port: { ...model, presentation: () => ({}), start: () => {}, close: () => {} },
     pkg,
-    infer: async () => {
-      if (!count++) {
-        model.learnerRotate(0.2);
-        return say('Stale');
-      }
-      return say('Current');
-    },
+    infer: async () => replies.shift(),
     speak: async (t) => spoken.push(t),
+    onReview: (r) => r && shown.push(r.outcome),
+    log: (e) => logs.push(e),
   });
-  await session.turn('Look');
-  assert.deepEqual(spoken, ['Current']);
+  session.started = true;
+  await session.turn('2 times 6');
+  assert.deepEqual(spoken, ['Yes, 2 times 6 is 12.']);
+  assert.deepEqual(logs.find((e) => e.type === 'arguments_trimmed').dropped, ['notes']);
+  assert.equal(logs.some((e) => e.type === 'error'), false);
+  // Finishing may carry the wrap-up notes.
+  await session.turn('I want to stop.');
+  assert.equal(logs.some((e) => e.type === 'error'), false);
+  assert.equal(shown.length, 1);
   session.close();
 });
 test('Claude disables tools, hooks, ambient MCP without disabling subscription login', async () => {
@@ -143,7 +187,7 @@ test('cancel prevents a queued observation turn from restarting the tutor', asyn
     },
   });
   session.started = true;
-  notify({ events: [{ source: 'learner', name: pkg.teaching.observationEvents[0] }] });
+  notify({ snapshot: { revision: 1 }, events: [{ source: 'learner', name: pkg.teaching.observationEvents[0] }] });
   session.cancel();
   await new Promise((resolve) => setTimeout(resolve, 550));
   assert.equal(calls, 0);

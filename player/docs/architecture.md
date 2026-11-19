@@ -46,6 +46,10 @@ entry with an outcome is where the child got to. Work with no evidence event
 behind it is never counted as independent. A lesson keeps
 nothing about a child between sessions; a later layer can hand it a prior and
 read these outcomes.
+A change to the scene while the tutor is thinking or speaking discards that
+reply, unless it is a learner gesture the lesson lists in `passiveEvents`
+(turning a model, typing a draft). A field the tutor puts on the wrong tool is
+dropped and logged (`arguments_trimmed`) instead of failing the turn.
 Only authored observation events trigger conversation; raw edits and gestures
 update state without grading. A response generated for an obsolete revision is
 discarded. Any current navigation supersedes a departed source in the context.

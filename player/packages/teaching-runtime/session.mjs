@@ -39,7 +39,7 @@ export const teachingTools = [
   {
     name: 'finish',
     description:
-      'Finish only when the child chooses to stop or confirms they are done. Confidence, correct work and declining self assessment are not permission to finish. Respect an explicit stop immediately, without further questions or offers. Give an honest brief recap without claiming unestablished mastery.',
+      'Finish only when the child chooses to stop or confirms they are done. Confidence, correct work and declining self assessment are not permission to finish. Respect an explicit stop immediately, without further questions or offers. Give an honest brief recap without claiming unestablished mastery. The wrap-up screen is shown; notes are optional and work as in review.',
     inputSchema: object({ text }),
   },
 ];
@@ -68,7 +68,7 @@ export function teachingToolsFor(pkg) {
             skill: { enum: skills.map((s) => s.id) },
           }),
         };
-      if (tool.name === 'review')
+      if (['review', 'finish'].includes(tool.name) && skills.length)
         return {
           ...tool,
           inputSchema: {
@@ -84,7 +84,7 @@ export function teachingToolsFor(pkg) {
                 }),
               },
             },
-            required: ['text', 'notes'],
+            required: tool.name === 'review' ? ['text', 'notes'] : ['text'],
             additionalProperties: false,
           },
         };
@@ -146,6 +146,12 @@ export class TeachingSession {
     this.unsubscribe = port.subscribe((u) => {
       this.events.push(...u.events);
       this.events = this.events.slice(-24);
+      // Any change to the scene makes a reply in progress out of date, except
+      // the gestures the lesson lists as passive (turning a model, typing a
+      // draft): those alter nothing the tutor would say.
+      const passive = pkg.teaching.passiveEvents ?? [];
+      if (u.events.some((e) => e.source !== 'learner' || !passive.includes(e.name)))
+        this.changed = u.snapshot.revision;
       // The child's latest committed work, kept beyond the recent-events window.
       this.work =
         u.events.findLast((e) => (pkg.teaching.evidenceEvents ?? []).includes(e.name)) ?? this.work;
@@ -251,6 +257,10 @@ export class TeachingSession {
         this.onState('idle');
       }
     }
+  }
+  // Whether the scene has changed, in a way that matters, since `revision`.
+  changedSince(revision) {
+    return (this.changed ?? 0) > revision;
   }
   // What the session has established so far (see outcome.mjs).
   outcome() {
@@ -383,7 +393,7 @@ export class TeachingSession {
         }
         const onInference = (event) => {
           if (epoch !== this.epoch || controller.signal.aborted) return;
-          if (snapshot.revision !== this.port.snapshot().revision) {
+          if (this.changedSince(snapshot.revision)) {
             speechAbort.abort();
             return;
           }
@@ -393,7 +403,7 @@ export class TeachingSession {
         const prepared = ahead;
         ahead = null;
         let decision = preparedDecision;
-        if (!decision && prepared?.revision === snapshot.revision && prepared.instruction === text) {
+        if (!decision && prepared && !this.changedSince(prepared.revision) && prepared.instruction === text) {
           prepared.attach(onInference);
           decision = await prepared.promise;
         } else {
@@ -410,17 +420,30 @@ export class TeachingSession {
           );
         }
         if (epoch !== this.epoch || controller.signal.aborted) return;
-        if (snapshot.revision !== this.port.snapshot().revision) {
+        if (this.changedSince(snapshot.revision)) {
           speechAbort.abort();
           await speechQueue.settled();
           this.log({ type: 'stale_decision_discarded', revision: snapshot.revision });
           continue;
         }
+        // The scene as it is now: the child may have turned it while the tutor
+        // was thinking, which does not make the decision wrong.
+        const current = this.port.snapshot();
         const tool = tools.find((t) => t.name === decision.tool);
         if (!tool) throw Error('Tutor requested an unavailable tool');
         if (speechQueue.text && tool.name !== 'say')
           throw Error('Unexpected streamed speech action');
         const args = JSON.parse(decision.arguments);
+        // A tutor sometimes fills in a field that belongs to another tool (the
+        // wrap-up notes on an ordinary reply). Drop it; do not lose the reply.
+        const known = tool.inputSchema.properties;
+        if (known && args && typeof args === 'object' && !Array.isArray(args)) {
+          const extra = Object.keys(args).filter((k) => !(k in known));
+          if (extra.length) {
+            for (const k of extra) delete args[k];
+            this.log({ type: 'arguments_trimmed', tool: tool.name, dropped: extra });
+          }
+        }
         validate(tool.inputSchema, args);
         const noted = pickRecords(decision, recordSchemaFor(this.pkg));
         this.log({
@@ -459,14 +482,14 @@ export class TeachingSession {
         if (tool.name === 'explain_model') {
           const resource = this.pkg.teaching.teaching?.find((m) => m.id === args.moment);
           if (!resource) throw Error('Unknown teaching resource');
-          if (Object.entries(resource.state ?? {}).some(([k, v]) => snapshot.state[k] !== v))
+          if (Object.entries(resource.state ?? {}).some(([k, v]) => current.state[k] !== v))
             throw Error('This visual resource does not match the current scene');
           const result = await this.port.execute({
             protocolVersion: 1,
             sessionId: snapshot.sessionId,
             releaseId: snapshot.releaseId,
             commandId: crypto.randomUUID(),
-            expectedRevision: snapshot.revision,
+            expectedRevision: current.revision,
             name: resource.action,
             args: resource.args,
           });
@@ -502,6 +525,7 @@ export class TeachingSession {
           // The outcome is saved as soon as the lesson is finished, not after
           // the closing words: the child may leave while they are spoken.
           if (tool.name === 'finish') {
+            for (const note of args.notes ?? []) this.notes[note.skill] = note.text;
             this.ended = true;
             this.log({ type: 'completed', outcome: this.outcome() });
             this.showReview('finished');
@@ -527,7 +551,7 @@ export class TeachingSession {
             sessionId: snapshot.sessionId,
             releaseId: snapshot.releaseId,
             commandId: crypto.randomUUID(),
-            expectedRevision: snapshot.revision,
+            expectedRevision: current.revision,
             name: tool.name,
             args,
           });

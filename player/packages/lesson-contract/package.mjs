@@ -75,7 +75,7 @@ export function validatePackage(manifest, teaching, experience) {
       /^[a-z][a-z0-9_]*$/.test(a.name) && a.inputSchema && typeof a.description === 'string',
       'Invalid action',
     );
-  for (const e of [...(teaching.observationEvents ?? []), ...(teaching.evidenceEvents ?? [])])
+  for (const e of [...(teaching.observationEvents ?? []), ...(teaching.evidenceEvents ?? []), ...(teaching.passiveEvents ?? [])])
     assert(experience.events[e], 'Unknown event: ' + e);
   for (const m of teaching.teaching ?? []) assert(actions.has(m.action), 'Unknown teaching action');
   assert(
