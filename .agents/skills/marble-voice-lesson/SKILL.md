@@ -1,9 +1,9 @@
 ---
-name: marble-voice-builder
+name: marble-voice-lesson
 description: Research, design and build child-facing interactive lessons with an adaptive conversational tutor, shared visuals and the portable Marble player. Use for new lessons or pedagogical revisions, not general curriculum lookup or standalone silent HTML activities.
 ---
 
-# Marble Voice Builder
+# Marble Voice Lesson
 
 A Marble lesson is a conversation between a child and a tutor about something
 they can both see and change. You author a **lesson package**: the subject
@@ -131,7 +131,7 @@ root:
 
 ```sh
 npm run player:install
-python3 .agents/skills/marble-voice-builder/scripts/create_experience.py /absolute/path/to/lesson
+python3 .agents/skills/marble-voice-lesson/scripts/create_experience.py /absolute/path/to/lesson
 npm run player:dev          # browser player at http://127.0.0.1:3235
 npm --prefix player run marble -- validate /absolute/path/to/lesson
 ```

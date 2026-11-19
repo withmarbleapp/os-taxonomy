@@ -7,7 +7,7 @@ An open, structured taxonomy of **what children learn** across the primary/eleme
 ## Interactive audio lessons and local app
 
 This repository also owns the [Marble player](player/README.md) and the
-[audio lesson authoring skill](.agents/skills/marble-voice-builder/SKILL.md).
+[audio lesson authoring skill](.agents/skills/marble-voice-lesson/SKILL.md).
 The taxonomy stays in `data/` and `schema/`; the software has its own dependency
 lock and build inside `player/`.
 
@@ -20,7 +20,7 @@ lock and build inside `player/`.
 | `player/packages/teaching-runtime` | Adaptive tutor orchestration |
 | `player/packages/voice`, `providers` | Local speech and inference connections |
 | `player/lessons` | Cube volume and Roanoke example packages |
-| `.agents/skills/marble-voice-builder` | Research, pedagogy and audio lesson authoring guidance |
+| `.agents/skills/marble-voice-lesson` | Research, pedagogy and audio lesson authoring guidance |
 
 ```sh
 npm run player:install          # install pinned player dependencies (Node 24+)

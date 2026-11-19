@@ -73,7 +73,7 @@ Lesson text/number inputs remain ordinary scene interactions.
 
 All paths above are relative to os-taxonomy/player. Taxonomy data and research
 remain in the repository root data/schema structure. The audio authoring skill
-lives in .agents/skills/marble-voice-builder and consumes this implementation.
+lives in .agents/skills/marble-voice-lesson and consumes this implementation.
 Keep contract, SDK, runtime, representative packages and skill instructions in
 the same change when a boundary evolves. Export a source starter with the skill
 helper when portability is needed; do not commit duplicated runtime snapshots.

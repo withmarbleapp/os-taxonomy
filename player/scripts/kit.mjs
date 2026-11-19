@@ -49,7 +49,7 @@ const shoot = (url, file, size = '1280,800') =>
 const [command, ...rest] = process.argv.slice(2);
 const flag = (name, fallback) => (rest.includes('--' + name) ? rest[rest.indexOf('--' + name) + 1] : fallback);
 if (command === 'fixtures') {
-  const out = resolve(player, '../.agents/skills/marble-voice-builder/references/visual/kit');
+  const out = resolve(player, '../.agents/skills/marble-voice-lesson/references/visual/kit');
   const names = rest.length
     ? rest
     : (await readdir(join(sdk, 'fixtures'))).filter((f) => f.endsWith('.mjs') && f !== 'sheet.mjs').map((f) => f.slice(0, -4));

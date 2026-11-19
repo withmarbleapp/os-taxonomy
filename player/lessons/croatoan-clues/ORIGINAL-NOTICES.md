@@ -2,7 +2,7 @@
 
 `public/lesson/art.mjs` contains original SVG drawing functions extracted from the user-supplied `croatoan-clues.html` (23 October 2026 copy). The illustrations have been preserved and recomposed; no new blanket licence is assigned to that supplied work. They are modern schematic reconstructions, not historical images or excavation records.
 
-The voice host and bundled Marble assets were adapted from the portable Marble Voice Builder runtime, which retains its existing content notices: `public/moon/LICENSE-CONTENT.txt`, `public/cubes/NOTICE.txt`, and associated library notices. Marble host visual assets/layout: © Generative Spark, Inc., withmarble.com, under the included content terms. These terms do not replace licences on independently supplied material.
+The voice host and bundled Marble assets were adapted from the portable Marble Voice Lesson runtime, which retains its existing content notices: `public/moon/LICENSE-CONTENT.txt`, `public/cubes/NOTICE.txt`, and associated library notices. Marble host visual assets/layout: © Generative Spark, Inc., withmarble.com, under the included content terms. These terms do not replace licences on independently supplied material.
 
 Baloo 2 is used under the SIL Open Font License 1.1. The complete notice is retained at `public/moon/assets/OFL.txt`; font provenance is in `public/moon/assets/SOURCE.md`.
 
