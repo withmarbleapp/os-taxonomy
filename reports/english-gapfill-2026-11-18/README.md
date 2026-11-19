@@ -1,6 +1,6 @@
 # English: missing teaching research
 
-Adds **339 canonical v2 teaching-research records** on top of `483796b44b0d8d8508d571a67a9a9fb54bf30eb4` (the merged Geography gap fill, #167). English coverage grows from **0 / 339 to 339 / 339**; the whole collection grows from 1,282 to 1,621 records. All 1,282 existing authored records retain their digests. Topics, dependencies, curriculum alignments, ages and standards are unchanged. Reviewing existing research remains a separate task.
+Adds **339 canonical v2 teaching-research records** on top of `e6e89715321d3b81a6448f7314c5b963cd4036ae` (main after the merged Personal & Social Development gap fill, #169; rebased from the original Geography base `483796b`). English coverage grows from **0 / 339 to 339 / 339**; the whole collection grows from 1,573 to 1,912 records, so every topic now has research (1,912 / 1,912; `coverage.withoutResearch` is 0). All 1,573 existing authored records retain their digests, and the 339 English records are byte-for-byte identical in canonical form to those reviewed before the rebase. Topics, dependencies, curriculum alignments, ages and standards are unchanged. Reviewing existing research remains a separate task.
 
 | Domain | Added | Medium | Low |
 | --- | ---: | ---: | ---: |
@@ -14,7 +14,7 @@ Adds **339 canonical v2 teaching-research records** on top of `483796b44b0d8d850
 | Speaking & Listening | 29 | 23 | 6 |
 | Writing Composition | 43 | 43 | 0 |
 
-[scope.json](scope.json) freezes every in-scope topic with its complete descriptor, evidence, assessment prompt, prerequisites and dependents, the input file hashes, baseline coverage and the authored digests of all 1,282 baseline records. It is produced by [capture-scope.mjs](capture-scope.mjs), which reads the baseline from git objects at a given ref (default: the merge base with `origin/main`), never from the working tree, so it can be re-run honestly after a rebase. Only `data/teaching-research.json`, the generated `data/manifest.json` and this folder change.
+[scope.json](scope.json) freezes every in-scope topic with its complete descriptor, evidence, assessment prompt, prerequisites and dependents, the input file hashes, baseline coverage and the authored digests of all 1,573 baseline records. It is produced by [capture-scope.mjs](capture-scope.mjs), which reads the baseline from git objects at a given ref (default: the merge base with `origin/main`), never from the working tree, so it can be re-run honestly after a rebase. Only `data/teaching-research.json`, the generated `data/manifest.json` and this folder change.
 
 ## Human review
 
@@ -79,6 +79,6 @@ node --test reports/english-gapfill-2026-11-18/two-tab.test.mjs
 git diff --check
 ```
 
-[validation.json](validation.json) reports 339 additions, 1,282 preserved records, zero English gaps and no assessment/activity passage sharing 12 consecutive tokens. validate.mjs takes its expected sizes from scope.json rather than hardcoding them, and also rejects high confidence and non-standard attribution. The six mutation tests in [validate.test.mjs](validate.test.mjs) cover baseline edits, missing records, copied stimuli, invented recovery edges, prohibited distractors and a type/method mismatch. The lexical check cannot prove semantic independence, source entailment or teaching effectiveness.
+[validation.json](validation.json) reports 339 additions, 1,573 preserved records, zero English gaps and no assessment/activity passage sharing 12 consecutive tokens. validate.mjs takes its expected sizes from scope.json rather than hardcoding them, and also rejects high confidence and non-standard attribution. The six mutation tests in [validate.test.mjs](validate.test.mjs) cover baseline edits, missing records, copied stimuli, invented recovery edges, prohibited distractors and a type/method mismatch. The lexical check cannot prove semantic independence, source entailment or teaching effectiveness.
 
 [browser-smoke.js](browser-smoke.js), appended only to a temporary copy, checks all 339 topic renders, filters, search and empty state, previous/next, versioned/legacy/stale notes and export, explicit re-review, Back/Forward through conflicting filters and source anchors, and page width at 1440 × 1200 and 390 × 844. It renders the 339 records without changing `location.hash`, because Chrome throttles more than about 200 rapid same-document navigations. [two-tab.test.mjs](two-tab.test.mjs) runs two real Chrome tabs in a temporary profile to test concurrent edits, conflict display/export/resolution, digest retention and bounded storage. Browser checks fetch no source links.
