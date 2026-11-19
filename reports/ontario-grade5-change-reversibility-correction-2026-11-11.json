@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "cea8fdc29249a72d39995939762bb56bff31bcb9",
+  "scope": "Two existing physical/chemical-change cards/guides, bounded factual clarification; no new topic or association.",
+  "beforeMeaning": "Some inherited definitions and explanations treated every reversible change as making no new substance, and every irreversible change as making a new one. Other passages said a chemical change could never reverse.",
+  "afterMeaning": "Retain selected recoverable physical examples with actual recovery operations, and selected chemical examples that form new substances and are not normally undone by simple physical actions. Chemical identity and ordinary practical reversibility are related questions, not universally equivalent categories.",
+  "topicChanges": [
+    {
+      "topicId": "mt_UKmtuAsSLN",
+      "cardFieldPaths": [
+        "/description"
+      ],
+      "researchFieldPaths": [
+        "/assess/whatMakesItDiscriminate",
+        "/assess/errorPatterns/1/pattern",
+        "/assess/errorPatterns/1/nextMove",
+        "/assess/correctAnswer",
+        "/assess/diagnosticPrompt",
+        "/assess/responseLevels/full",
+        "/assess/probeDeeper/3",
+        "/pedagogy/bestPractices/1",
+        "/pedagogy/summary",
+        "/learn/reviewNotes",
+        "/learn/activities/0/learnerActions/0",
+        "/learn/activities/0/learnerActions/4",
+        "/learn/activities/0/intendedInsight",
+        "/learn/activities/0/feedback/3",
+        "/learn/activities/1/intendedInsight",
+        "/learn/activities/2/intendedInsight",
+        "/learn/activities/3/learnerActions/3",
+        "/learn/constraints",
+        "/learn/summary",
+        "/sources"
+      ],
+      "beforeCard": {
+        "name": "Reversible Changes",
+        "description": "Demonstrate that dissolving, mixing, and changes of state are reversible changes where no new materials are formed",
+        "evidence": [
+          "Define a reversible change as one where the original materials can be recovered",
+          "Give at least three examples of reversible changes: melting, freezing, dissolving, evaporating",
+          "Explain how to reverse each example (e.g. freeze melted chocolate, evaporate a solution)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain that melting chocolate or dissolving sugar can be undone — you can get the original material back — because these are reversible changes?"
+      },
+      "afterCard": {
+        "name": "Reversible Changes",
+        "description": "Demonstrate selected recoverable physical changes — dissolving an appropriate solid, mixing separable materials and changes of state — in which no new substances form, and explain the specific operation that recovers the original materials",
+        "evidence": [
+          "Define a reversible change as one where the original materials can be recovered",
+          "Give at least three examples of reversible changes: melting, freezing, dissolving, evaporating",
+          "Explain how to reverse each example (e.g. freeze melted chocolate, evaporate a solution)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain that melting chocolate or dissolving sugar can be undone — you can get the original material back — because these are reversible changes?"
+      }
+    },
+    {
+      "topicId": "mt_rbPioPELM1",
+      "cardFieldPaths": [
+        "/assessmentPrompt",
+        "/evidence/0"
+      ],
+      "researchFieldPaths": [
+        "/assess/whatMakesItDiscriminate",
+        "/assess/errorPatterns/2/pattern",
+        "/assess/correctAnswer",
+        "/assess/responseLevels/full",
+        "/pedagogy/bestPractices/2",
+        "/pedagogy/summary",
+        "/learn/reviewNotes",
+        "/learn/activities/0/learnerActions/2",
+        "/learn/activities/0/intendedInsight",
+        "/learn/activities/1/intendedInsight",
+        "/learn/activities/1/feedback/0",
+        "/learn/activities/2/learnerActions/2",
+        "/learn/activities/2/intendedInsight",
+        "/learn/constraints",
+        "/learn/summary",
+        "/sources"
+      ],
+      "beforeCard": {
+        "name": "Irreversible Changes",
+        "description": "Explain that some changes result in the formation of new materials and are not usually reversible, such as burning, rusting, and reactions with acid",
+        "evidence": [
+          "Define an irreversible change as one that creates new materials that cannot be changed back",
+          "Give at least three examples: burning, rusting, mixing bicarbonate of soda with vinegar",
+          "Describe observable signs of irreversible change: gas produced, colour change, heat given off, new substance formed"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why you can't un-burn a piece of toast or turn rust back into shiny iron, because a completely new material has been made?"
+      },
+      "afterCard": {
+        "name": "Irreversible Changes",
+        "description": "Explain that some changes result in the formation of new materials and are not usually reversible, such as burning, rusting, and reactions with acid",
+        "evidence": [
+          "Explain that the selected changes form new substances and cannot normally be undone by simple physical actions such as cooling, filtering or evaporating",
+          "Give at least three examples: burning, rusting, mixing bicarbonate of soda with vinegar",
+          "Describe observable signs of irreversible change: gas produced, colour change, heat given off, new substance formed"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why simply cooling burnt toast or scraping rust does not turn the changed material back into bread or iron, and identify evidence that new substances formed?"
+      }
+    }
+  ],
+  "primaryFactualReference": {
+    "url": "https://primaryconnections.org.au/science-content/chemical-science-big-ideas/changing-substances",
+    "publisher": "Australian Academy of Science, Primary Connections",
+    "readScope": "Actual complete main body read; selected physical/chemical distinction and reversibility exceptions qualified. No source text, images, activity or assessment copied.",
+    "scopeLimit": "Factual correction only; no equilibrium, reaction equation, rechargeable-cell inventory or new intervention efficacy claim."
+  },
+  "secondarySourceLimit": "RSC indexed science-background text was read, but direct PDF/article retrieval returned405; no direct-page, visual or fresh blanket legacy-citation verification is claimed. No new RSC verified flag is added.",
+  "retained": "Stable IDs/types/names, selected do-and-undo/new-substance operations/examples, all age intervals/source associations/dependency edges, all original provenance/confidence and old source flags remain unchanged. The new source and dated review note qualify only this correction.",
+  "assessmentWitnesses": {
+    "positive": "Explain appropriate salt/water recovery and why simply cooling the selected reacted food or rusted material does not restore its starting substance.",
+    "nearMiss": "Calls a physical break chemical solely because it is difficult to restore, or a fizzy drink chemical solely because bubbles appear.",
+    "transfer": "Separate substance identity from practical recovery in a changed material case, without introducing a new reaction-equilibrium task."
+  },
+  "consumerCompatibility": "Existing evidence must be interpreted against the corrected factual boundary. No similarity-based mastery transfer, learner score reset/reinterpretation, historical observation edit, DB write or publication is performed here; consumers separately assess affected evidence before rollout."
+}

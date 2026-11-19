@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "sourceKey": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C9-LO01",
+  "status": "Original operational robustness portfolio; SourceMeaningUnverified; no Full or association",
+  "scaleExample": {
+    "orderedPitches": [
+      "C4",
+      "D4",
+      "E4",
+      "G4",
+      "A4"
+    ],
+    "frequenciesHz": [
+      261.625565,
+      293.664768,
+      329.627557,
+      391.995436,
+      440.0
+    ],
+    "universalScaleOrTuningRequired": false,
+    "meaning": "Five ordered example ranks; adjacent means neighbouring ranks of this declared set, not equal frequency gaps or every chromatic note. Replace with a checked familiar programme scale and comfortable register without changing the distinction being tested."
+  },
+  "pcm": {
+    "channels": 1,
+    "sampleWidthBytes": 2,
+    "rate": 16000,
+    "toneSeconds": 0.45,
+    "gapSeconds": 0.12,
+    "fadeSeconds": 0.02,
+    "peakAmplitude": 7000,
+    "sameLengthForAllClips": true
+  },
+  "records": [
+    {
+      "id": "T1",
+      "phase": "teaching",
+      "file": "T1.wav",
+      "ranks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": true,
+      "hasSkip": false,
+      "hasRepeatedNote": false,
+      "direction": "up",
+      "sha256": "b39eaae81af0781ae232774cad8bf576b380b99969f6e3b7a10eef03812b0348",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "T2",
+      "phase": "teaching",
+      "file": "T2.wav",
+      "ranks": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": true,
+      "hasSkip": false,
+      "hasRepeatedNote": false,
+      "direction": "down",
+      "sha256": "798d4eaeccc2c45760f1ffe0e16e4cecd8c0fa04b1484b338a416c61547f74b7",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "T3",
+      "phase": "teaching",
+      "file": "T3.wav",
+      "ranks": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "up",
+      "sha256": "813fd75f565d471633a39457d4055c7c3476823887d02740eb319787566bd171",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "T4",
+      "phase": "teaching",
+      "file": "T4.wav",
+      "ranks": [
+        5,
+        4,
+        2,
+        1
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "down",
+      "sha256": "ab716027b0a332684c90ee7760d97c7e42e5ef4746d5c4f7ea0c0d27fb9f29f8",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "T5",
+      "phase": "teaching",
+      "file": "T5.wav",
+      "ranks": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "changes",
+      "sha256": "dc1ed2cd61dd50b0e64730e438d98ced4d0c863534601d8113bcde25a313ae64",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "T6",
+      "phase": "teaching",
+      "file": "T6.wav",
+      "ranks": [
+        5,
+        3,
+        4,
+        2
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "changes",
+      "sha256": "af9d762d6e96b713efa4c2551e8c69d8a6ba04bdc8908126f7fd05739bf8cf50",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N1",
+      "phase": "fresh",
+      "file": "N1.wav",
+      "ranks": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": true,
+      "hasSkip": false,
+      "hasRepeatedNote": false,
+      "direction": "up",
+      "sha256": "f74e2c15285f3d1749d07dbac5e18f899428a822a0bd6e67bf96b4a64b49cd5c",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N2",
+      "phase": "fresh",
+      "file": "N2.wav",
+      "ranks": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": true,
+      "hasSkip": false,
+      "hasRepeatedNote": false,
+      "direction": "down",
+      "sha256": "db1dd06262e02bdcf2ac4e9026b0dc1287bf61537e484c1ea05a976bdceefca0",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N3",
+      "phase": "fresh",
+      "file": "N3.wav",
+      "ranks": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "up",
+      "sha256": "1ca7f41ee742072258815990f933f5316ea1be3be3cec82646c36f9e86b07427",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N4",
+      "phase": "fresh",
+      "file": "N4.wav",
+      "ranks": [
+        5,
+        3,
+        2,
+        1
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "down",
+      "sha256": "9bd13e5f722ef1dfcbaa65149937e3c1c66d9f407f4ba2f90c37f9a7729b11ed",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N5",
+      "phase": "fresh",
+      "file": "N5.wav",
+      "ranks": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "changes",
+      "sha256": "6a498eaed0cb77c0c86b59106e9e97310771b4103edbb0e9a205c9989b968e40",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "N6",
+      "phase": "fresh",
+      "file": "N6.wav",
+      "ranks": [
+        4,
+        2,
+        3,
+        1
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": true,
+      "hasRepeatedNote": false,
+      "direction": "changes",
+      "sha256": "896abd11b3710b2e7007ab9cc19959779ab55609fbeef4ef055be10662063123",
+      "sampleRate": 16000,
+      "frames": 36480
+    },
+    {
+      "id": "R",
+      "phase": "boundary",
+      "file": "R.wav",
+      "ranks": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "noteCount": 4,
+      "allTransitionsAdjacent": false,
+      "hasSkip": false,
+      "hasRepeatedNote": true,
+      "direction": "up",
+      "sha256": "f69541630b9c35f8589e2f5f0196db295a15989de53a50b2b7c14e5cf79faf5f",
+      "sampleRate": 16000,
+      "frames": 36480
+    }
+  ],
+  "claims": {
+    "sourceMeaningVerified": false,
+    "sourceFull": false,
+    "newTopics": 0,
+    "newAssociations": 0,
+    "actualAuditoryPlaybackOrLearnerPerformanceClaimed": false,
+    "allPlausibleInterpretationsProvedExhaustive": false
+  },
+  "mechanicalChecks": "Generated rank/frequency/transition keys and PCM headers/frame counts checked; auditory delivery and practical access remain actual configuration/performance gates."
+}

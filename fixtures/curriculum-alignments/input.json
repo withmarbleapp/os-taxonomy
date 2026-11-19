@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "version": "v1",
+  "alignments": [
+    {
+      "topicId": "mt_shared",
+      "country": "GB",
+      "region": null,
+      "ageRangeStart": 7,
+      "ageRangeEnd": 9,
+      "standards": [
+        "global-learning:S1",
+        "gb-lang:S1"
+      ]
+    },
+    {
+      "topicId": "mt_shared",
+      "country": "CA",
+      "region": " Ontario ",
+      "ageRangeStart": 11,
+      "ageRangeEnd": 12,
+      "standards": [
+        "global-learning:S1",
+        "ca-lang:S1"
+      ]
+    },
+    {
+      "topicId": "mt_age_only",
+      "country": "AU",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6,
+      "standards": [],
+      "ageOnly": true
+    }
+  ]
+}

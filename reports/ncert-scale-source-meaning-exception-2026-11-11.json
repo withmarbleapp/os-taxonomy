@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "sourceKey": "ncert-fs-2025:IN-NCERT-FS-2025-PM-G2-C9-LO01",
+  "disposition": "Unverified",
+  "graphRepresentation": "source-meaning-unverified-no-graph-link",
+  "source": {
+    "slug": "ncert-fs-2025",
+    "url": "https://www.ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf",
+    "edition": "Learning Outcomes at the Foundational Stage, pinned2025 edition",
+    "sha256": "484d5c18d9beeb1d79c4bee8589f6cb2b2ef42bdeb255b8f51e1eae8ac953eb2",
+    "pdfPage": 9,
+    "printedPage": 7,
+    "printedGrade": "Grade2",
+    "parentCode": "C-9",
+    "recordKind": "generated-source-position",
+    "sourceStatus": "suggestive-contextualisable-source-position",
+    "visualReadback": true
+  },
+  "question": "The source uses linear/non-linear labels for a scale-sequence distinction without a worked contrast in the selected cell. The criterion is not silently supplied by a taxonomy topic.",
+  "supportingSources": [
+    {
+      "url": "https://ncert.nic.in/textbook/pdf/cebu107.pdf",
+      "title": "Bansuri-I, Grade3, Reprint2026–27",
+      "printedPages": [
+        49,
+        54,
+        55
+      ],
+      "actuallyRead": "Actual scale-ascent/descent exercise and alankar examples;49 and55 rendered and visually inspected. No audio or video viewed.",
+      "finding": "Supports concrete ordered and varied musical-note work but does not define the two labels in the pinned2025 cell. A later supplementary reprint is not substituted for the accepted source."
+    },
+    {
+      "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+      "title": "NCFSE2023, printed first editionOctober2024",
+      "printedPages": [
+        350
+      ],
+      "actuallyRead": "Table6.1 Music/Dance progression across stages.",
+      "finding": "Lists notes/tempo/rhythm/variation and later scale/ascent/descent elements. This is not a definition of the original distinction or permission to import advanced theory into Grade2."
+    }
+  ],
+  "originalInterpretationWitness": {
+    "status": "Original analytic counterexample, not an official example or teaching-efficacy result",
+    "declaredScaleDegrees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "controls": [
+      "same sound source",
+      "equal note durations",
+      "matched loudness",
+      "no tempo change",
+      "no staff-reading or singing requirement"
+    ],
+    "sequences": [
+      {
+        "id": "adjacent-monotone",
+        "degrees": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "adjacentStepRule": true,
+        "singleDirectionRule": true
+      },
+      {
+        "id": "skipping-monotone",
+        "degrees": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "adjacentStepRule": false,
+        "singleDirectionRule": true
+      },
+      {
+        "id": "direction-reversal",
+        "degrees": [
+          1,
+          3,
+          2,
+          4
+        ],
+        "adjacentStepRule": false,
+        "singleDirectionRule": false
+      }
+    ],
+    "ruleDefinitions": {
+      "adjacentStepRule": "Progress through neighbouring scale degrees in one direction.",
+      "singleDirectionRule": "Progress in one pitch direction; skipping scale degrees is allowed."
+    },
+    "decisiveCase": "The skipping-monotone case receives different classifications. The original selected cell does not identify which of these candidate criteria, or another criterion, is intended."
+  },
+  "candidateReviews": [
+    {
+      "topicId": "mt_zwiJAMjtMU",
+      "wholeClaim": "Heard-reference pitch reproduction with adjustment and a changed reference.",
+      "limit": "A successful echo does not establish classification of a pitch sequence."
+    },
+    {
+      "topicId": "mt_2mb17lUCPD",
+      "wholeClaim": "Own sounded creation, listening and purposeful musical revision.",
+      "limit": "A sound piece can satisfy this claim without classifying scale paths."
+    },
+    {
+      "topicId": "mt_Gy9nCgUjlD",
+      "wholeClaim": "Conventional staff reading, recording, mismatch repair and transfer.",
+      "limit": "Written-score decoding is a different operation; it is not automatically a Grade2 listening requirement or proof of the publisher’s intended distinction."
+    },
+    {
+      "topicId": "mt_OTFABm2xdf",
+      "wholeClaim": "Replicate rhythm, keep beat and join repeated sound patterns.",
+      "limit": "Rhythm and repetition can remain identical while the pitch path changes."
+    },
+    {
+      "topicId": "mt_KTSoXcO7OL",
+      "wholeClaim": "Relate source features and vibration rate to pitch through observation and explanation.",
+      "limit": "Acoustic explanation does not settle the musical sequence classification."
+    }
+  ],
+  "reviewLimits": {
+    "fourAvailableCompleteGuidesRead": true,
+    "rhythmCandidateHasNoGuide": true,
+    "historicalFlagsNotUpgraded": true,
+    "boundedOfficialSearchNotExhaustiveAbsenceProof": true,
+    "failedDownloadsNotTreatedAsRead": true,
+    "noThirdPartyDefinitionAdoptedAsNCERTIntent": true
+  },
+  "decision": {
+    "retainCatalogueRecord": true,
+    "retainUnverified": true,
+    "newTopics": 0,
+    "newAssociations": 0,
+    "ageChanges": 0,
+    "learnerOperations": 0,
+    "nextEvidence": "An authoritative worked contrast or clarification of the intended sequence criterion, followed by whole-claim comparison and an actual source-fit task before any promotion.",
+    "completionLimit": "All570 records are accounted for, but this one eligible source meaning is not resolved; complete Full India coverage is not claimed."
+  }
+}

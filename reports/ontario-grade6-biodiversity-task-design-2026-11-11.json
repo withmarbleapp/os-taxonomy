@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "76451b276fb94a754ede6d4b00f6b77db8af37da",
+  "status": "Reviewed source-bound authoring portfolio: six fresh closures, with B1.2 deliberately retained Partial for its missing own-local issue/perspectives/action packet. No learner attainment inferred.",
+  "resources": {
+    "parks-diversity": {
+      "url": "https://parks.canada.ca/pn-np/nt/nahanni/info/fire/faq",
+      "publisher": "Parks Canada",
+      "readScope": "Fresh actual explanatory body read, including ecosystem/integrity/biodiversity definitions and disturbance benefits/harms. Images and linked materials not inspected. Medical, legal and visitor advice is not adopted.",
+      "role": "Three diversity levels; varied pine resistance as an example of inherited variation; landscape mosaics and resilience. Do not infer that every fire benefits every organism or that diversity guarantees survival."
+    },
+    "parks-corridors": {
+      "url": "https://parks.canada.ca/nature/science/conservation/corridors-ecologiques-ecological-corridors",
+      "publisher": "Parks Canada",
+      "readScope": "Fresh Connecting landscapes, benefits, community stewardship and ecological-network main bodies read; text alternative visible. No image, infographic PDF or video inspected.",
+      "role": "Connections among habitats enable movement and ecological processes. Actual applicability depends on organism needs and barriers; a corridor is not automatically a federally protected area."
+    },
+    "parks-pollinators": {
+      "url": "https://parks.canada.ca/pn-np/on/rouge/nature/faune-wildlife/pollen",
+      "publisher": "Parks Canada",
+      "readScope": "Fresh complete pollinator main body, crop examples and named butterfly accounts read. No images or linked monarch page inspected.",
+      "role": "Diverse pollinators support reproduction of many plants, including many crops; monarch life stages use different resources. Neither every bee is social nor every crop requires insect pollination."
+    },
+    "arizona-colony": {
+      "url": "https://extension.arizona.edu/publication/honeybee-series-inside-colony",
+      "publisher": "University of Arizona Cooperative Extension, Anne Lesenne, December 2022",
+      "readScope": "Fresh complete actual web explanation of colony duties and flexible worker roles read. Linked PDF and other beekeeping guides not inspected.",
+      "role": "Within-species cooperation through reproduction, rearing, food gathering and nest maintenance; workers can change tasks. No hive handling or colony intervention activity."
+    },
+    "parks-beaver": {
+      "url": "https://parks.canada.ca/pn-np/ab/elkisland/nature/ecologique-ecological/eau-water/castors-beaver",
+      "publisher": "Parks Canada",
+      "readScope": "Fresh complete actual beaver abundance/distribution main body read. No linked indicator pages inspected; dated counts are not adopted.",
+      "role": "Beavers alter water levels and create wetland habitat used by other species. A changed environment is not automatically suitable for every species."
+    },
+    "fao-milpa": {
+      "url": "https://www.fao.org/giahs/giahs-around-the-world/mexico-ich-kool-mayan-milpa-system/en",
+      "publisher": "Food and Agriculture Organization of the United Nations, GIAHS",
+      "readScope": "Fresh complete actual six-section site description read: global importance, livelihoods, agrobiodiversity, knowledge, culture and landscape. No photos, video or related pages inspected.",
+      "role": "Specific living Peninsular Maya agricultural system: intercropping, seed selection/conservation and a managed landscape mosaic. No universal claim about Indigenous peoples, no fire task, no unverified crop-interaction mechanism or numeric resilience guarantee."
+    },
+    "fao-potato": {
+      "url": "https://www.fao.org/plant-treaty/areas-of-work/benefit-sharing-fund/projects/projects-detail/Conservation-and-Sustainable-Use-of-Native-Potato-Diversity-in-the-Potato-Park-Cusco-Peru/en",
+      "publisher": "Food and Agriculture Organization of the United Nations, Plant Treaty Benefit-sharing Fund",
+      "readScope": "Fresh complete actual project record and goal description read, including completed status, Quechua collective management, warming-related growing changes and seed repatriation/exchange. Linked factsheets not inspected.",
+      "role": "Specific Quechua communities in Cusco, Peru conserve and use potato varieties. Do not call varieties different species, assume all belong to a single species, adopt inconsistent totals, or present a completed project as a new service."
+    }
+  },
+  "preparedCases": {
+    "diversity-levels": {
+      "role": "within-among-habitat-diversity",
+      "resourceRefs": [
+        "parks-diversity",
+        "parks-pollinators"
+      ],
+      "sourceSummary": "Parks Canada distinguishes variation among individuals of one species, variety of species in a community, and varied communities across a landscape. Its pine example includes differences in beetle resistance; its Rouge account identifies resources needed by monarch life stages.",
+      "attributionLimits": "Explicit original hypothetical model species/needs facts for cards B/C; no claim that these codes identify actual observed species or a real local community. Pine variation and monarch life-stage facts are separately attributed source examples. No invented species totals or local field observations.",
+      "question": "Compare three complete original cards. A: individuals explicitly stipulated to be one pine species differ in an inherited resistance trait. B: a community has four distinct model species, named tree T, flowering plant F, pollinating insect I and bird B; their distinct species identities are supplied, not inferred from appearance or individual totals. C: woodland contains T, which needs moist non-flooded soil; meadow contains F and I, which need open flower-rich habitat; pond habitat supports model amphibian A, which requires standing water for its early life stage. All T/F/I/B/A identities and needs are declared hypothetical conditions, not a real field assemblage. Identify within-species, among-species and community/habitat comparisons. Explain why all concern diversity and why individual counts alone cannot identify the kind of diversity. Then use the separately sourced real monarch life-stage account as a habitat-needs contrast.",
+      "expectedEvidence": "Distinguish within-species variation from species richness and communities/habitats; connect habitat differences to the organisms whose needs they meet. Use the stipulated common species identity for A rather than guessing from appearance. No claim that a resistance difference alone identifies a new species.",
+      "nearMiss": "Counts twenty identical individuals as twenty species, or calls every difference in appearance a new species; defines every level only as a species total.",
+      "changedCase": "Two landscapes have equal total species counts but different mixtures of habitats and different variation within one species. Explain which supplied comparisons can differ and what extra evidence is needed; equal species totals do not establish equal diversity at every level."
+    },
+    "within-community-resilience": {
+      "role": "within-community-resilience",
+      "resourceRefs": [
+        "parks-diversity",
+        "parks-pollinators"
+      ],
+      "sourceSummary": "Diversity can contribute to resilience. Pollinators differ in the plants they can serve. Outcomes depend on the particular organisms, their relationships and the disturbance.",
+      "attributionLimits": "Entire A/B/P/Q case is an explicitly original hypothetical model with declared compatibility and disturbance conditions, not an attributed field finding or real-species assemblage.",
+      "question": "Original hypothetical model, not a real species dataset: plants A and B reproduce when either compatible pollinator P or Q visits. Both pollinators initially occur; a stated disturbance removes P but leaves Q and its food/shelter intact. Compare with a second otherwise identical model containing only P. Trace plant reproduction and the effects on organisms depending on those plants; distinguish a supported possibility from a guaranteed numerical population forecast.",
+      "expectedEvidence": "Explain how more than one compatible relationship can help maintain a function after the specified loss, and how dependent populations can be affected. Identify the declared surviving link and its habitat needs, rather than assuming that any added species performs the same role.",
+      "nearMiss": "Says any extra species automatically replaces P, or that diverse communities cannot be damaged.",
+      "changedCase": "Change the disturbance so both P and Q are removed, or Q cannot pollinate A. Revise the inference and explain why species count alone did not guarantee resilience."
+    },
+    "among-community-resilience": {
+      "role": "among-community-resilience",
+      "resourceRefs": [
+        "parks-corridors",
+        "parks-diversity"
+      ],
+      "sourceSummary": "Ecological connections can link different habitats needed for feeding, breeding and movement, supporting populations and ecological processes across a landscape.",
+      "attributionLimits": "Original hypothetical X/W1/W2 model, not a field map or a description of a particular local community. The organism needs, disturbance and barrier are explicit assumptions.",
+      "question": "Original hypothetical landscape: organism X requires meadow feeding habitat and woodland breeding habitat; these facts are stipulated. Woodland patches W1 and W2 are connected by suitable habitat, while a second landscape has an uncrossable barrier. A stated local disturbance makes W1 temporarily unsuitable but leaves W2 and the route usable. Compare possibilities for X and organisms linked to it in each landscape. State what must be known before recommending a real corridor.",
+      "expectedEvidence": "Explain that varied, connected communities can supply different needs and alternative suitable habitat after a specified local change. Connect the among-community relationship to population persistence and ecological functions without claiming that movement always succeeds or that every habitat is interchangeable.",
+      "nearMiss": "Suggests replacing every habitat with the most species-rich patch, or treats drawing a connecting line as proof that an actual organism can cross.",
+      "changedCase": "W2 lacks the required breeding conditions, or the disturbance affects both woodlands. Revise the prediction. Distinguish habitat variety/connectivity from a guarantee against regional disturbance."
+    },
+    "relationships": {
+      "role": "within-between-environment-relationships",
+      "resourceRefs": [
+        "arizona-colony",
+        "parks-pollinators",
+        "parks-beaver"
+      ],
+      "sourceSummary": "Honey-bee colony members divide work and workers can change roles; pollinators transfer pollen enabling many plants to reproduce; beavers change water conditions and create habitat for other species.",
+      "attributionLimits": "Original teaching case based on the cited explanation; not a learner observation, local field dataset, quotation or testimony.",
+      "question": "Use three source-based fact cards: honey-bee workers gather food and rear young while a queen lays eggs; a pollinator obtains floral resources and transfers pollen; beavers build dams that change a stream into wetland habitat used by waterfowl and amphibians. For each, identify the participants, relationship and environmental connection. Explain an outcome that can sustain populations and biodiversity; trace this explicitly linked colony–flower chain: workers collect floral resources that help maintain colony members/young, and their flower visits can transfer pollen so dependent flowering plants reproduce. Explain how continued plant reproduction can maintain those floral resources. Treat the beaver–water–wetland case as a separate environment-change relationship; no beaver–bee feeding relationship is supplied or required.",
+      "expectedEvidence": "Explain within-species cooperation, a between-species relationship and a species–physical-environment relationship. Link reproduction, food, shelter or habitat change to continued populations and diversity. State that a bee colony is one species, and that a changed wetland need not benefit an organism requiring fast water.",
+      "nearMiss": "Lists queen/worker roles without their contribution, counts castes as different species, or says every environmental change benefits all organisms.",
+      "changedCase": "Suppose flowers are lost even though the colony retains all its roles, or a dam floods habitat needed by another organism. Explain both benefits and constraints and revise the biodiversity account; do not infer that cooperation removes dependence on the wider environment."
+    },
+    "agriculture-world-cases": {
+      "role": "agriculture-indigenous-world",
+      "resourceRefs": [
+        "fao-milpa",
+        "fao-potato",
+        "parks-pollinators"
+      ],
+      "sourceSummary": "FAO describes Peninsular Maya milpa intercropping, seed selection and landscape management, and Quechua communal conservation and exchange/repatriation of potato varieties under changing conditions. Parks Canada links many crops to pollinator diversity.",
+      "attributionLimits": "Original comparative teaching cards, not authentic community testimony. FAO descriptions have a limited institutional viewpoint; no invented ceremonies, voices, community consent, exact yield predictions, species totals or practical fire/seed-release instructions.",
+      "question": "Original source-based cards identify Peninsular Maya farmers in Yucatán, Mexico, growing maize, beans and squash together and conserving selected seed; and Quechua communities in Cusco, Peru, conserving and exchanging potato varieties, including varieties returned from a gene bank while growing conditions change. Compare how species/variety diversity and human knowledge sustain food production. Add a third card connecting pollinator diversity with reproduction of squash and other dependent crops. Distinguish what each source actually establishes.",
+      "expectedEvidence": "Describe how maintaining varied crops/seed resources and the ecological relationships needed by crops supports agriculture. Explain each named community’s active contemporary management rather than presenting biodiversity as unattended wilderness or all Indigenous agriculture as one method. Keep species diversity distinct from variety diversity. The food-production card contributes the production-system lens; these source cases do not certify every production-system example or any unrelated First Nations practice.",
+      "nearMiss": "Merely names two crops/countries; calls each potato variety a species; says all crops need bees, all Indigenous peoples use milpa, or a seed bank alone removes the role of farming communities.",
+      "changedCase": "A model farm retains a store of varied seeds but loses pollinator habitat for a dependent crop. Explain why seed diversity and ecological relationships are different contributions; propose what needs checking. Do not promise that one traditional technique works in every climate."
+    },
+    "importance-and-protection": {
+      "role": "importance-protection-judgment",
+      "resourceRefs": [
+        "parks-corridors",
+        "parks-pollinators",
+        "parks-beaver"
+      ],
+      "sourceSummary": "Pollination, habitat creation and landscape connectivity provide mechanisms linking biodiversity with ecological functions and human benefits. Conservation decisions require attention to actual needs and consequences.",
+      "attributionLimits": "Explicit original hypothetical planning model with stipulated relationships, not a proposed real land-use project or a local packet. No real stakeholder statements are invented.",
+      "question": "Original decision case: a proposed landscape plan retains a meadow of varied flowering plants and a wetland connected to woodland; an alternative replaces them with one landscaped grass area. The task stipulates that the meadow supports crop pollinators and the wetland supports amphibians and waterfowl. Compare biodiversity-related benefits/losses and describe two protective actions, each connected to an identified relationship. Identify a competing human use and information needed before deciding on a real site.",
+      "expectedEvidence": "Assess importance using causal links such as reproduction, food webs, habitat needs and human food production, then justify protective actions against those links. Explain that a neat appearance or total animal count alone is inadequate. A hypothetical judgment is sufficient for the broad B1 duty but does not establish B1.2’s local analysis and enacted plan.",
+      "nearMiss": "Only says nature is good; recommends any green area as an equivalent replacement without comparing needs, or reports an imagined action as completed.",
+      "changedCase": "A revised plan protects meadow habitat but blocks movement to the wetland. Reassess the protection mechanism and identify what remains unresolved; a single action need not address every relationship."
+    }
+  },
+  "protocols": {
+    "B2.2": {
+      "codes": [
+        "ON-SCI-2022-G6-B2.2"
+      ],
+      "caseRefs": [
+        "diversity-levels"
+      ],
+      "contributorIds": [
+        "mt_NDZYiLvApW",
+        "mt_1wxwg782yX",
+        "mt_e6PP4ip39V"
+      ],
+      "actions": [
+        "Supply every declared fact in the levels cards; do not ask the pupil to guess species identity.",
+        "Elicit a definition and explanation at each level, not just labels.",
+        "Use equal-count near misses to distinguish number of individuals from types of diversity.",
+        "Change the landscape and variation cards independently; assess each level from its own evidence."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.4": {
+      "codes": [
+        "ON-SCI-2022-G6-B2.4"
+      ],
+      "caseRefs": [
+        "within-community-resilience",
+        "among-community-resilience"
+      ],
+      "contributorIds": [
+        "mt_NDZYiLvApW",
+        "mt_e6PP4ip39V",
+        "mt_URTJbS3hhs"
+      ],
+      "actions": [
+        "Supply the within-community model, organism compatibility and disturbance conditions.",
+        "Require a traced ecological-function explanation, including what remains able to perform it.",
+        "Supply the distinct among-community landscape and organism needs; compare connected and blocked models.",
+        "Change the compatibility/habitat assumptions and require revision, rejecting universal resilience guarantees."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.5": {
+      "codes": [
+        "ON-SCI-2022-G6-B2.5"
+      ],
+      "caseRefs": [
+        "relationships"
+      ],
+      "contributorIds": [
+        "mt_guaaD6Dn2M",
+        "mt_H8OgKZbgGe",
+        "mt_URTJbS3hhs",
+        "mt_qixeaiswFP"
+      ],
+      "actions": [
+        "Supply all three fact cards and distinguish sourced facts from a proposed inference.",
+        "Explain within-species role interactions as contributions to survival and reproduction, not three species.",
+        "Explain a between-species relationship and an organism–physical-environment relationship with concrete mechanisms.",
+        "Trace a sustaining chain and test a loss/change that may benefit one population while harming another."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2.8": {
+      "codes": [
+        "ON-SCI-2022-G6-B2.8"
+      ],
+      "caseRefs": [
+        "agriculture-world-cases"
+      ],
+      "contributorIds": [
+        "mt_NDZYiLvApW",
+        "mt_wWpa5fFDZP",
+        "mt_VIUF5Vspbg",
+        "mt_1wxwg782yX"
+      ],
+      "actions": [
+        "Locate and name the two particular Indigenous communities/systems without generalising one method to all peoples.",
+        "Trace biodiversity contributions to agriculture in each card: crops, varieties, seed management and suitable ecological relationships.",
+        "Compare diversity of varieties with diversity among species; avoid identifying varieties as species.",
+        "Use the pollination and changed-farm case to explain distinct ecological contributions, limits and human management; no practical intervention or community role-play."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B1": {
+      "codes": [
+        "ON-SCI-2022-G6-B1"
+      ],
+      "caseRefs": [
+        "importance-and-protection"
+      ],
+      "contributorIds": [
+        "mt_NDZYiLvApW",
+        "mt_7e-lG7YOWa",
+        "mt_e6PP4ip39V",
+        "mt_wWpa5fFDZP"
+      ],
+      "actions": [
+        "Supply the entire hypothetical landscape and ecological-function facts.",
+        "Require an assessment of benefits and consequences with a causal ecological link and human benefit.",
+        "Describe at least two protective actions justified by the relationships they maintain, considering a competing use.",
+        "Use the changed connection case to revise the judgment; assess the overall duty directly rather than inheriting it from B1.2."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B2": {
+      "codes": [
+        "ON-SCI-2022-G6-B2"
+      ],
+      "caseRefs": [
+        "diversity-levels",
+        "within-community-resilience",
+        "among-community-resilience",
+        "agriculture-world-cases"
+      ],
+      "contributorIds": [
+        "mt_NDZYiLvApW",
+        "mt_1wxwg782yX",
+        "mt_e6PP4ip39V",
+        "mt_URTJbS3hhs",
+        "mt_wWpa5fFDZP",
+        "mt_VIUF5Vspbg"
+      ],
+      "actions": [
+        "Use the levels card to establish the meaning of biodiversity without importing untested classification competence.",
+        "Compare within- and among-community changes and explain resilience with concrete relations and stated limits.",
+        "Explain agricultural and other human benefits from the source-based cases, distinguishing diversity levels and human stewardship.",
+        "Ask for an integrated account and a changed-condition revision; do not infer the overall result from child-code totals or recertify every historical child claim."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": []
+    },
+    "B1.2": {
+      "codes": [
+        "ON-SCI-2022-G6-B1.2"
+      ],
+      "caseRefs": [
+        "importance-and-protection"
+      ],
+      "contributorIds": [
+        "mt_7e-lG7YOWa",
+        "mt_RNeEF1JU4J",
+        "mt_QR3vxbN1o4"
+      ],
+      "actions": [
+        "Use the original model only as a rehearsal, explicitly distinguish it from the pupil’s local environment.",
+        "Before local delivery, obtain a checked local issue packet with place, source date, evidence, relevant needs and at least two genuinely attributable perspectives.",
+        "Have the pupil analyse those perspectives, choose and justify a feasible approved plan, then carry it out and retain appropriate evidence of the action.",
+        "Assess analysis, plan and actual action separately; never use another community’s completed work or a proposed plan as proof that this learner acted."
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "remainingConditions": [
+        "A checked issue/perspectives/action packet applicable to the pupil’s local environment is not supplied. The source-bound rehearsal is not a substitute. Actual action must be observed during delivery; absence of historical learner work is not itself an authoring gap."
+      ]
+    }
+  },
+  "wholeClaimReview": [
+    {
+      "topicId": "mt_NDZYiLvApW",
+      "wholeCard": {
+        "id": "mt_NDZYiLvApW",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Animals of the World",
+        "name": "Biodiversity",
+        "description": "Understand that biodiversity — the variety of different species in an ecosystem — is essential for healthy ecosystems, and that keystone species (like wolves in Yellowstone, sea otters in kelp forests, or bees as pollinators) have an outsized impact on their ecosystem, so that losing one key species can cause a cascade of changes affecting many others",
+        "evidence": [
+          "Defines biodiversity as the variety of species in an ecosystem",
+          "Explains why biodiversity matters (stability, resilience, ecosystem services)",
+          "Defines keystone species and gives at least 2 examples",
+          "Describes a trophic cascade or chain reaction from removing/adding a species"
+        ],
+        "assessmentPrompt": "If {{name}} learns about how wolves were brought back to Yellowstone and the whole ecosystem changed, can they explain what a 'keystone species' is and why having many different species in an area matters?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing species-diversity, resilience, ecosystem-service and cascade contribution; does not itself define every within-species or landscape comparison."
+    },
+    {
+      "topicId": "mt_1wxwg782yX",
+      "wholeCard": {
+        "id": "mt_1wxwg782yX",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Organisms & Life Processes",
+        "name": "Inherited characteristics",
+        "description": "Analyse and interpret data to provide evidence that plants and animals have traits inherited from parents and that variation of these traits exists in a group of similar organisms",
+        "evidence": [
+          "Define inherited traits as characteristics passed from parents to offspring",
+          "Collect or interpret data showing variation within a group (e.g. different heights, colours, sizes)",
+          "Explain that while traits are inherited, there is natural variation among individuals of the same species"
+        ],
+        "assessmentPrompt": "If {{name}} measures the height of all the sunflowers in the garden, can they see that they're all sunflowers but each one is a slightly different height?",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing same-species inherited variation contributes the within-species comparison. No genetics mechanisms, gene inventory or new whole-card mastery inference."
+    },
+    {
+      "topicId": "mt_e6PP4ip39V",
+      "wholeCard": {
+        "id": "mt_e6PP4ip39V",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Ecosystems & Habitats",
+        "name": "Plants and animals in their habitats",
+        "description": "Use a model to represent the relationship between the needs of different plants and animals and the places they live, connecting organism needs to habitat features",
+        "evidence": [
+          "Use a simple model (drawing, diagram) to show how a habitat provides what an organism needs",
+          "Match at least three organisms to their habitats and explain why each needs that specific place",
+          "Describe what would happen if an organism were placed in a habitat that doesn't meet its needs"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why a fish needs to live in water but a cactus can live in a desert, by matching what each living thing needs to where it lives?",
+        "ageRangeStart": 5,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing needs-to-habitat modelling supports differences among habitats and required conditions. No new corridor-design procedure."
+    },
+    {
+      "topicId": "mt_guaaD6Dn2M",
+      "wholeCard": {
+        "id": "mt_guaaD6Dn2M",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Insects & Minibeasts",
+        "name": "Social insects: ants and bees",
+        "description": "Social insects: how ants and bees live and work together in colonies. Queens, workers, and drones. Division of labour — some gather food, some build, some guard. Ant tunnels and bee hives as organised homes. Parallels to human teamwork.",
+        "evidence": [
+          "Describe at least two different roles within an ant colony or bee hive such as queen, worker, or guard",
+          "Explain that social insects live together in large groups and divide up the jobs needed to survive",
+          "Compare an ant colony or bee hive to a human team, describing how different members do different tasks"
+        ],
+        "assessmentPrompt": "If {{name}} watched a nature programme about ants or bees, could they tell you about the different jobs inside the colony — like the queen, the workers, and the guards?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing colony cooperation and role division supplies within-species relationship, not a claim that all bees form colonies."
+    },
+    {
+      "topicId": "mt_H8OgKZbgGe",
+      "wholeCard": {
+        "id": "mt_H8OgKZbgGe",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Animals of the World",
+        "name": "Symbiosis",
+        "description": "Understand symbiosis — close relationships between different species — including mutualism (both benefit, like clownfish and anemones), commensalism (one benefits without harming the other, like remora fish riding sharks), and parasitism (one benefits at the other's expense, like ticks on deer) — and recognise these relationships in nature",
+        "evidence": [
+          "Defines symbiosis as a close relationship between different species",
+          "Distinguishes mutualism, commensalism, and parasitism with an example of each",
+          "Identifies symbiotic relationships when presented with new scenarios"
+        ],
+        "assessmentPrompt": "If {{name}} sees a nature programme showing a small bird picking insects off a buffalo's back, can they explain that both animals benefit from this relationship and name the type of symbiosis?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing between-species relationship concepts support the relationship explanation. This case is not certification of all three symbiosis types."
+    },
+    {
+      "topicId": "mt_URTJbS3hhs",
+      "wholeCard": {
+        "id": "mt_URTJbS3hhs",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Ecosystems & Habitats",
+        "name": "Food Webs & Interdependence",
+        "description": "Construct and interpret food webs showing the interdependence of organisms in an ecosystem, explaining how a change in one population affects others",
+        "evidence": [
+          "Draws a food web from given data with arrows showing energy flow direction",
+          "Predicts how the population of one species would change if another species increased or decreased",
+          "Distinguishes a food web from a food chain and explains why webs are more realistic",
+          "Identifies producers, primary consumers, secondary consumers, and apex predators"
+        ],
+        "assessmentPrompt": "If {{name}} was shown a diagram with lots of animals connected by arrows, could they explain what it means — tracing what eats what — and predict what would happen if one animal disappeared from the web?",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing interdependence and change propagation supports sustaining/cascade account. A single two-organism relation is not mastery of complete food-web drawing."
+    },
+    {
+      "topicId": "mt_qixeaiswFP",
+      "wholeCard": {
+        "id": "mt_qixeaiswFP",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Earth's Systems",
+        "name": "How Organisms Shape Habitats",
+        "description": "Construct an argument supported by evidence for how plants and animals can change the environment to meet their needs",
+        "evidence": [
+          "Give at least three examples of organisms changing their environment (beaver dams, bird nests, plant roots breaking rock)",
+          "Explain why organisms change their environment (to meet needs for shelter, food, water)",
+          "Construct an argument with evidence showing how a specific organism changes its environment"
+        ],
+        "assessmentPrompt": "Can {{name}} explain how a beaver builds a dam that changes a river into a pond, or how tree roots can crack rocks apart?",
+        "ageRangeStart": 5,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing evidence argument about organisms altering environments supplies beaver–water–habitat mechanism. A single case does not certify its required three-example repertoire."
+    },
+    {
+      "topicId": "mt_wWpa5fFDZP",
+      "wholeCard": {
+        "id": "mt_wWpa5fFDZP",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Ecosystems & Habitats",
+        "name": "Pollination & Pollinator Decline",
+        "description": "Explain the importance of insect pollination for plant reproduction and human food security, and discuss the consequences of pollinator decline",
+        "evidence": [
+          "Explains why many food crops depend on insect pollination to produce fruit and seeds",
+          "Names examples of crops that require insect pollination (e.g. apples, almonds, oilseed rape)",
+          "Discusses the potential impact of bee population decline on food production",
+          "Connects to plant reproduction — flowers are adapted to attract specific pollinators"
+        ],
+        "assessmentPrompt": "If {{name}} saw a news story about bees dying out, could they explain what that would actually mean for the food in your kitchen — which foods would be affected and why?",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing pollination and consequences of pollinator loss supplies agricultural/ecological contribution; no assertion every crop needs insect pollination."
+    },
+    {
+      "topicId": "mt_VIUF5Vspbg",
+      "wholeCard": {
+        "id": "mt_VIUF5Vspbg",
+        "type": "CONCEPTUAL",
+        "subject": "Geography",
+        "domain": "Places & Environments",
+        "name": "Food and fibre production",
+        "description": "Describe the main ways of producing food and fibre — cropping, livestock grazing, horticulture (fruit and vegetables), aquaculture, forestry, and wool and cotton production — including First Nations peoples' food production and land and sea management",
+        "evidence": [
+          "Match plants and animals to the products they give and the production system they come from (e.g. wheat → bread → cropping, cotton → T-shirt, pine trees → timber, wool → livestock, farmed salmon → aquaculture)",
+          "Describe the main steps in producing one food or fibre and who does each step (e.g. bread: the farmer grows wheat, the miller makes flour, the baker bakes; cotton: planting, irrigating, picking, ginning, spinning)",
+          "Describe one First Nations food production practice (e.g. stone fish traps or managing plants with fire) using a school-approved source"
+        ],
+        "assessmentPrompt": "At the supermarket, can {{name}} tell you how different foods were produced — grown as crops, in orchards, on grazing farms or in fish farms?",
+        "ageRangeStart": 7,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing cropping/food-production lens only. Maya/Quechua source cards are not described as Australian First Nations examples or whole-card mastery."
+    },
+    {
+      "topicId": "mt_7e-lG7YOWa",
+      "wholeCard": {
+        "id": "mt_7e-lG7YOWa",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Ecosystems & Habitats",
+        "name": "Communities Protecting Resources",
+        "description": "Obtain and combine information about ways individual communities use science ideas to protect the Earth's resources and environment",
+        "evidence": [
+          "Describe at least three real-world examples of communities protecting resources or the environment",
+          "Explain the science ideas behind each example (e.g. solar panels convert sunlight to electricity, reducing fossil fuel use)",
+          "Discuss how individual actions and community efforts combine to make a difference"
+        ],
+        "assessmentPrompt": "Can {{name}} describe real examples of how communities protect the environment — like using solar panels, creating nature reserves, or cleaning up rivers?",
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing mechanisms of collective conservation supplies protective-action reasoning; hypothetical rehearsal is not an enacted local community action."
+    },
+    {
+      "topicId": "mt_RNeEF1JU4J",
+      "wholeCard": {
+        "id": "mt_RNeEF1JU4J",
+        "type": "META",
+        "subject": "Personal & Social Development",
+        "domain": "Responsible Decision-Making",
+        "name": "Ethics in Real-World Issues",
+        "description": "Evaluate the ethical dimensions of real-world issues they encounter — such as environmental responsibility, fairness in sport, digital ethics, or social justice — considering multiple perspectives and forming a reasoned personal position",
+        "evidence": [
+          "Identify an ethical issue and describe at least two different perspectives on it",
+          "Explain which perspective they agree with most and give reasons for their position",
+          "Acknowledge that the other perspective has some validity even if they disagree"
+        ],
+        "assessmentPrompt": "Can {{name}} discuss a real issue — like whether it's fair that some children have more than others, or whether animals should be kept in zoos — considering different viewpoints and explaining their own position thoughtfully?",
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing ethical-perspective evaluation contributes local issue analysis when a real packet is supplied; role-play is not authentic evidence."
+    },
+    {
+      "topicId": "mt_QR3vxbN1o4",
+      "wholeCard": {
+        "id": "mt_QR3vxbN1o4",
+        "type": "META",
+        "subject": "Learning to Learn",
+        "domain": "Learning to Learn",
+        "name": "Planning a Task",
+        "description": "Make a simple plan before starting a task: what do I need to do, and what should I do first?",
+        "evidence": [
+          "Before starting a task, describe what they need to do and what order to do it in",
+          "Break a larger task into smaller steps without being prompted — e.g. 'First I'll read the question, then I'll draw a diagram'",
+          "Gather the materials or information they need before beginning, rather than starting and then stopping to find things"
+        ],
+        "assessmentPrompt": "Before {{name}} starts a bigger task — like writing a story or making something — do they take a moment to think about what they'll do first?",
+        "ageRangeStart": 3,
+        "ageRangeEnd": 12
+      },
+      "contribution": "Existing task planning contributes sequencing/feasibility; planning alone does not prove the pupil acted."
+    }
+  ],
+  "reviewLimits": [
+    "All listed canonical whole cards freshly read, including assessment evidence and age scope; retained saved guide bodies are not represented as freshly revalidated for this biodiversity slice.",
+    "Original cases are source-informed authoring proposals, not empirical evidence that an activity is effective. No original teaching-research record is changed.",
+    "B1 and B2 are directly assessed through their own tasks. Their candidate status does not mechanically promote the local B1.2 duty or certify every historical child expectation.",
+    "Existing topic scopes remain unchanged. New multi-level comparisons are assembled from explicitly identified existing components, not silently added to the species-only Biodiversity definition."
+  ],
+  "safety": [
+    "Discuss wildlife without handling, feeding or disturbing it; no hive opening, fire, release of seeds/organisms or habitat engineering.",
+    "Use reviewed school-approved sources for Indigenous agriculture; name specific communities, retain source limitations and avoid invented testimony or universal cultural claims.",
+    "A real local action requires a feasible adult-approved school/community activity; no unsupervised fieldwork or land-use intervention is prescribed."
+  ]
+}

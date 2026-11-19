@@ -1,0 +1,7 @@
+# Grade 3 historical locations and settlement effects
+
+The [dossier](ontario-grade3-historical-location-impact-review-2026-11-10.json) accounts for A3.1, A3.2 and A3.5 through seven existing-claim component pairs at Ontario ages 8–9. Actual source-attributed case markers distinguish traditional use, relocation and later colonial/current boundaries. The original Cary 1811 map is a geographic reference, not proof that later settlements or movements were already depicted.
+
+The locations include Anishinaabe Lake Superior/Fort William and Six Nations Grand River contexts in Upper Canada, Kahnawà:ke near Montréal in Lower Canada, and the Métis Drummond Island–Penetanguishene movement. The settler comparison locates the distinct Traill 1832–1835 and Black Buxton 1849–1850 cases. Names and dates come from the attributed accounts; neither a modern label nor a colonial map’s omissions determine an Indigenous territory or identity.
+
+Settlement effects compare rural clearing with Crown-linked homestead/capital-town development pressures. Traill’s actual 1832–1833 letters document wooded land converted to fields; the Mississaugas’ own Toronto/Ajetance accounts describe effects of settler pressure on existing lands, fisheries and community economy. Unmeasured urban ecological change, exact routes, universal treaty terms and invented quantities are excluded. Full authoring requires the complete tasks and evidence limits, without a learner attainment claim.

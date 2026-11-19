@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "status": "Reviewed source-fit authoring coverage of B3.2/B3.7 with existing map/key/label/construction operations; no formal scale-drawing lowering or learner attainment claim.",
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g3",
+  "codes": [
+    "B3.2",
+    "B3.7"
+  ],
+  "resources": [
+    {
+      "id": "world-political-typography",
+      "publisher": "Natural Resources Canada",
+      "url": "https://open.canada.ca/data/en/dataset/8f1749a5-ac67-467a-9c01-752b375127c3",
+      "workingMap": "Linked2021 World map, actual full map and legend inspected.",
+      "checkedFacts": [
+        "Canada is displayed as a country label, while the legend explicitly identifies a national-capital example using bold Ottawa and distinguishes other populated-place sizes.",
+        "Map typography and symbols jointly communicate categories; a digital view and a printed copy can be compared without pretending all maps use one fixed font rule."
+      ],
+      "limits": [
+        "Use this actual map\u2019s key and examples; no universal all-capitals/all-bold rule for every map or province.",
+        "The world map is not used to infer uniform precise regional distances from one global scale bar."
+      ]
+    },
+    {
+      "id": "ontario-canada-lands-2026",
+      "publisher": "Natural Resources Canada, Surveyor General Branch",
+      "url": "https://clss.nrcan-rncan.gc.ca/data-donnees/sgb-maps-dag-carte/carte-index-map/CL-MAP-TC-CARTE-ON.pdf",
+      "metadata": "https://clss.nrcan-rncan.gc.ca/data-donnees/sgb-maps-dag-carte/carte-index-map/Metadata-Map-of-Canada-Lands-Ontario.html",
+      "sourceDate": "2026-04-24",
+      "checkedFacts": [
+        "Actual PDF visually inspected, including the Ontario provincial outline, reserve/background legend, main metric scale and a separate larger-scale inset.",
+        "The main map identifies North Bay, Nipissing10 and Niagara Falls in their actual regional setting. Its main scale is1:2,000,000, with a kilometre graphic bar; the inset has its own different scale."
+      ],
+      "limits": [
+        "This is a small-scale Canada Lands index/background reference, not a traditional-territory map or a parcel/legal boundary determination.",
+        "The reserve label does not establish the full territory or identity of every community; use the Nation\u2019s own location account for the selected community label.",
+        "Keep a chosen base and its graphic scale together when printing or resizing; never use the inset\u2019s scale on the main map.",
+        "Protected-area shading does not establish every actual land use or an area with no buildings being unused."
+      ]
+    },
+    {
+      "id": "nfn-community-location",
+      "publisher": "Nipissing First Nation",
+      "url": "https://nfn.ca/the-land-the-people-the-future/",
+      "checkedFacts": [
+        "The Nation identifies its communities on Lake Nipissing\u2019s north shore between North Bay and West Nipissing, and gives its public administration location."
+      ],
+      "limits": [
+        "The public administration point is an educational location reference, not a private pupil address or the complete traditional territory.",
+        "Nipissing First Nation is distinct from the similarly named Township of Nipissing."
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "id": "MAP-TYPE",
+      "codes": [
+        "B3.2"
+      ],
+      "preparation": [
+        "Provide the actual official world political map and its key in a digital view and a printed copy. Select the Canada country label, Ottawa national-capital key example and another labelled populated place.",
+        "Provide a small original transfer map whose key explicitly uses a different font/symbol scheme for verified country/capital/place labels; label it as a teaching representation, not a new official map."
+      ],
+      "performance": [
+        "Identify the kind of entity represented by each selected label using the actual key, typography and known place context. Explain how the visual style communicates the distinction.",
+        "Compare the printed and digital representations; explain that a style is a map convention, not a fact that every uppercase label in every map must mean one entity type.",
+        "Use the different keyed teaching map to apply the convention rather than carry over a single font rule."
+      ],
+      "positive": "Correctly decodes selected entity types in both media and explains how the supplied map convention signals the difference.",
+      "nearMiss": "Reads the words but ignores the key, or declares that every bold/uppercase label is the same type in every map.",
+      "contributor": "mt_w4cUnN_SsQ contributes map-key/label interpretation. The task does not establish the whole topic\u2019s separate construction/relative-place evidence by itself."
+    },
+    {
+      "id": "MAP-METRIC",
+      "codes": [
+        "B3.7"
+      ],
+      "preparation": [
+        "Choose the main Ontario reference map, retaining its scale and a geographic extent suitable for the selected public places. Prepare the digital base and a print version without changing the base-to-bar relationship.",
+        "Verify the selected city/community points from the actual map and Nation\u2019s own account. Use North Bay, Niagara Falls and the attributed Nipissing First Nation public community/administration reference; distinguish community point, reserve outline and traditional territory.",
+        "Supply any location information needed for plotting and an accurate graphic scale in kilometres. Do not import legal survey work, a new app/account or formal ratio-redrawing demands."
+      ],
+      "performance": [
+        "Construct an original paper map or a digital map over the supplied reference base, using selected labelled Ontario city/community locations including the First Nation example, a title and a clear symbol key.",
+        "Retain the correct supplied metric scale with the map. Explain what its kilometre units mean and use repeated equal graphic-bar units to compare an appropriate approximate distance; precision must match the small-scale map.",
+        "Explain why a reserve/background reference is not a map of every traditional territory, and why changing the map size requires keeping the graphic bar with it."
+      ],
+      "positive": "Produces a coherent selected-place map with the First Nation reference and correct labels/key/metric reference, then explains and uses its units without borrowing the inset scale.",
+      "nearMiss": "Copies an unrelated scale, labels centimetres on paper as ground kilometres with no given relationship, substitutes a reserve for all traditional territory or invents precise legal boundaries.",
+      "contributor": "mt_w4cUnN_SsQ supplies map construction/key/labels; appropriate existing length-measurement and equal-unit comparison operations support the graphic-unit task. Broader formal scale-drawing and rescaling mastery is not inferred."
+    }
+  ],
+  "wholeClaimLimits": [
+    "The existing map card and all its evidence remain intact; interpreting one keyed political map is a source component, not proof of whole-topic mastery.",
+    "The broader mt_1badik7iKJ Scale drawings and maps claim includes ratio calculations, reverse lengths, changed-scale reproduction and unit conversion. It is not age-lowered or treated as mastered by this supplied-reference task.",
+    "No new topic is proposed merely for paper/digital medium, font style, a local example or a simpler numeric practice range.",
+    "A2.3/B2.3 require both print and digital map analysis/construction, including meaningful themes within a coherent inquiry. B2.3 is now accounted for in the environmental-inquiry dossier; A2.3 historical investigation remains separately under review. B3.7\u2019s medium alternatives do not erase either integrated duty."
+  ],
+  "authoringBoundary": "This is a designed source-fit protocol, not pupil attainment or a classroom-study requirement. Review of the whole selected source conditions and exact associations remains separate.",
+  "dispositions": [
+    {
+      "code": "B3.2",
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "coverageBasis": "The actual print/digital map typography task and actual selected-place map construction with retained metric bar account for their respective mandatory clauses; no universal font rule, legal overlay or formal-ratio mastery inferred.",
+      "remainingConditions": []
+    },
+    {
+      "code": "B3.7",
+      "disposition": "Full",
+      "contributingTopicIds": [
+        "mt_w4cUnN_SsQ"
+      ],
+      "coverageBasis": "The actual print/digital map typography task and actual selected-place map construction with retained metric bar account for their respective mandatory clauses; no universal font rule, legal overlay or formal-ratio mastery inferred.",
+      "remainingConditions": []
+    }
+  ]
+}

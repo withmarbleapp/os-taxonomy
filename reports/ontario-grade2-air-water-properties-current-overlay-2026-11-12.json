@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "baseIntegration": "f3e320d21fdaaa5e0f9c146bde866b2cef286167",
+  "status": "Root and independent exact-source/whole-guide/resource peer qualification passed; two source-authoring closures only",
+  "records": [
+    {
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.1",
+      "code": "E2.1",
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade2-air-water-properties-task-design-2026-11-12.md",
+      "protocolHeading": "E2.1 independent property assessment and changed case",
+      "coverageMeaning": "Complete source-authoring resource and independent assessment; not observed performance or automatic whole-topic award",
+      "independentSourcePerformanceRequired": true,
+      "wholeTopicAwardFromSourceResult": false,
+      "actualLearnerOrProgrammeEvidenceClaimed": false,
+      "independentOverallNotChildRollup": false
+    },
+    {
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2",
+      "code": "E2",
+      "historicalDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade2-air-water-properties-task-design-2026-11-12.md",
+      "protocolHeading": "E2 independent connected source assessment",
+      "coverageMeaning": "Complete source-authoring resource and independent assessment; not observed performance or automatic whole-topic award",
+      "independentSourcePerformanceRequired": true,
+      "wholeTopicAwardFromSourceResult": false,
+      "actualLearnerOrProgrammeEvidenceClaimed": false,
+      "independentOverallNotChildRollup": true
+    }
+  ],
+  "source": {
+    "document": "Ontario Science and Technology2022 Grade2",
+    "printedPage": 4,
+    "officialPdfSha256": "232598857d638b5938c4053892ee359da58185a4e7e16d3ed5f5fa934b04f538",
+    "originalWordingIncluded": false
+  },
+  "sourceRequirements": {
+    "airAndWaterPropertiesExplicit": true,
+    "sourceDoesNotPrintExhaustiveChecklist": true,
+    "airSpaceMassMovementAndContainerBehaviour": true,
+    "waterFlowShapeAmountMassAndSomeDissolving": true,
+    "threeWaterStatesAndTemperatureChanges": true,
+    "naturalAndBuiltWaterRoutes": true,
+    "cycleEvaporationCondensationPrecipitationCollection": true,
+    "plantAnimalHumanAirWaterDependence": true,
+    "freshChangedCaseAndIndependentOverall": true,
+    "teacherFactsAloneCountAsIndependentEvidence": false,
+    "sourceModelsClaimedAsPerformedInvestigations": false
+  },
+  "wholePath": {
+    "directTopics": 8,
+    "hardClosureTopics": 11,
+    "savedGuides": 11,
+    "hardEdges": 5,
+    "oldWholeOperationsRetained": true,
+    "phaseTaxonomyGateAdded": false,
+    "newOrRemovedHardEdges": 0
+  },
+  "boundResources": [
+    "ontario-grade2-household-water-sources-review-2026-11-12.md",
+    "ontario-grade2-household-water-sources-task-design-2026-11-12.json",
+    "air-water-state-cloud-factual-clarification-2026-11-12.json"
+  ],
+  "historicalSpecificRowsOutsideFreshRecertification": [
+    "E2.3",
+    "E2.4",
+    "E2.5"
+  ],
+  "separateQualifiedSourceRowRetained": "E2.2",
+  "deliveryConditions": {
+    "actualEquipmentAndAccessPreflightRequired": true,
+    "realObservationMustBeRecordedHonestly": true,
+    "actualCloudLogDistinctFromDatedPhotoExercise": true,
+    "borrowedPhotoRelabelledLocalSky": false,
+    "specificAnimalNeedsProfileRequired": true,
+    "unsafeAirWaterOrHeatExperimentRequired": false
+  },
+  "preservation": {
+    "newTopics": 0,
+    "newPairs": 0,
+    "newContexts": 0,
+    "ageChanges": 0,
+    "guideOrFlagChanges": 0,
+    "edgeChanges": 0,
+    "threeSeparateFactualFieldsOnly": true
+  },
+  "progress": {
+    "newSourceClosures": 2,
+    "sciencePartialBefore": 30,
+    "sciencePartialAfterIfIntegrated": 28,
+    "wholeSourcePartialBefore": 36,
+    "wholeSourcePartialAfterIfIntegrated": 34,
+    "sourceAuthoringOnly": true,
+    "historicalFullNotRecertifiedAutomatically": true
+  },
+  "peer": {
+    "status": "PASS",
+    "receiptPrivate": true
+  },
+  "validation": {
+    "generate": true,
+    "validate": true,
+    "generatedCheck": true,
+    "fullTestsPassed": 524,
+    "negativeReferenceAndScopeTests": 2,
+    "allOtherBaseFilesExact": 797
+  }
+}

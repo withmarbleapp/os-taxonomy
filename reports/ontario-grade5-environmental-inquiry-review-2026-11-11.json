@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "e1806707d0fa2f63385417d68edaae065ddfffbc",
+  "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
+  "status": "Eight source-fit inquiry/perspective designs reuse unchanged claims. Actual Nation and provincial accounts, source dates, digital map production and perspective/evidence limits are explicit; no learner attainment or current harvesting advice is inferred.",
+  "selectedCodes": [
+    "B2",
+    "B2.1",
+    "B2.2",
+    "B2.3",
+    "B2.4",
+    "B2.5",
+    "B2.6",
+    "B3.8"
+  ],
+  "question": "What do the dated accounts show about managing the Lake Nipissing fishery, whose responsibilities and priorities are represented, and what remains uncertain?",
+  "resources": {
+    "nation-fisheries": {
+      "url": "https://nfn.ca/natural-resources/fisheries/",
+      "provider": "Nipissing First Nation",
+      "reviewed": "Complete main body; separately dated sections retained.",
+      "originGroup": "nation-fisheries-account",
+      "use": "Nation fishery responsibilities, community/livelihood/rights context and explicit 2019 survey effort.",
+      "limits": "The old closure notice has inconsistent 2022/2023 dates and is excluded; no current legal harvesting instruction, universal member opinion or population total is inferred."
+    },
+    "nation-mou": {
+      "url": "https://nfn.ca/natural-resources/fisheries/lake-nipissing-mou/",
+      "provider": "Nipissing First Nation",
+      "reviewed": "Complete main body.",
+      "originGroup": "joint-mou2021-22",
+      "use": "Nation’s attributed partnership/recognition perspective, implementation and continuing recovery limit.",
+      "limits": "Its linked update and this summary are not independent origins; dated 2022 statement is not proof of an agreement continuing beyond its stated 2025 term."
+    },
+    "joint-update": {
+      "url": "https://nfn.ca/wp-content/uploads/2022/09/LakeNipissing-MOU-2022-EN-09-14-2022-FINAL-accessible.pdf",
+      "providers": [
+        "Nipissing First Nation",
+        "Ontario ministry named in the report"
+      ],
+      "reviewed": "Complete nine-page body read; actual page 6 survey map visually checked. Earlier Grade 4 graph/source limits retained.",
+      "originGroup": "joint-mou2021-22",
+      "use": "Actual management/reporting, dated partial recovery,44 survey sets in 2021 and joint actor roles.",
+      "limits": "Annual and longer-term comparisons differ. A goal/output is not complete recovery or an isolated causal effect, and net sets are effort rather than fish totals."
+    },
+    "province-management": {
+      "url": "https://www.ontario.ca/page/lake-nipissing-management",
+      "provider": "Government of Ontario",
+      "reviewed": "Complete main body from official HTML after browser-reader 403; page updated 2026-01-08, published 2021-04-12.",
+      "originGroup": "province-management-account",
+      "use": "Provincial account of fishery management, dated 2022 protection purposes, angling opportunities and advisory perspectives.",
+      "limits": "No instruction to fish, current entitlement decision or exact quota inventory. This account’s goals do not independently confirm the joint report’s measured outcomes."
+    },
+    "prior-resource-scope": {
+      "report": "ontario-grade4-environmental-inquiry-review-2026-11-10.json",
+      "use": "Preserve actual 48/44 effort variable, ambiguous age-profile axis and ecological/causal limits; no unrelated Niagara case is needed for this selected Grade 5 question."
+    }
+  },
+  "perspectiveRecords": [
+    {
+      "id": "nation",
+      "role": "Indigenous government",
+      "sourceIds": [
+        "nation-fisheries",
+        "nation-mou"
+      ],
+      "basis": "The Nation’s own account emphasises its fishery law, rights, community/resource use and sustainable recovery. This is an attributed institutional account, not every individual member’s view."
+    },
+    {
+      "id": "province",
+      "role": "responsible provincial government",
+      "sourceIds": [
+        "province-management"
+      ],
+      "basis": "The provincial account describes management/protection objectives, recreational opportunities and input from advisory interests. These are its stated responsibilities/priorities, not a fictional opinion assigned to every angler."
+    }
+  ],
+  "preparation": [
+    "Adult setup: prepare accessible original summaries with lawful print/digital source access, actual author/date labels and the complete selected source references. Source wording/images are not copied into this public dossier. Keep Nation governance distinct from a municipal department or a generic stakeholder with no authority.",
+    "Prepare the actual printed survey map and a digital version of the same verified geographic reference. Keep the original base, north arrow, location inset and sampling theme together; identify Lake Nipissing/North Bay broadly in Ontario. Create an editable teaching base for the learner without inventing a precise territory or legal-boundary overlay.",
+    "Prepare actual 2019:48 and 2021:44 net-set records, their unit/date/source and the original reported multi-year biomass/recovery observations. The two counts describe effort; do not manufacture fish totals or reconstruct an unexplained graph axis as raw counts.",
+    "Keep the Nation’s own account and the provincial page distinct from the jointly authored update. A linked summary/report pair is not counted as independent corroboration. Different years/documents may complement a question without independently confirming the same observation."
+  ],
+  "protocols": {
+    "questions": {
+      "codes": [
+        "B2.1"
+      ],
+      "researchQuestions": [
+        {
+          "id": "protection-and-roles",
+          "question": "How do the documented actions aim to protect fish and which responsibilities does each government describe?",
+          "sourceIds": [
+            "nation-fisheries",
+            "province-management"
+          ]
+        },
+        {
+          "id": "priorities-and-cooperation",
+          "question": "What matters in the Nation and provincial accounts, and where do their purposes overlap or differ in emphasis?",
+          "sourceIds": [
+            "nation-mou",
+            "province-management"
+          ]
+        },
+        {
+          "id": "results-and-limits",
+          "question": "What evidence supports reported progress, and do the sources establish complete recovery or only goals and partial results?",
+          "sourceIds": [
+            "joint-update",
+            "province-management"
+          ]
+        }
+      ],
+      "actions": [
+        "Generate/refine at least three substantive questions, including the actual Indigenous and responsible-government perspectives. The prepared questions are starting examples, not answers to copy.",
+        "For each question identify relevant information from at least two actual sources with distinct documentary origins. Explain how the sources complement or corroborate a point and where they share an underlying report or concern different dates. No number of links makes the evidence independent."
+      ],
+      "remainingConditions": []
+    },
+    "gather-and-organise": {
+      "codes": [
+        "B2.2"
+      ],
+      "actions": [
+        "Gather the relevant print/digital information and actual discrete records from the prepared sources. Keep the Nation’s own voice, the provincial account and the joint update identified rather than silently assigning one generic community viewpoint.",
+        "Take brief organised print-source notes under question/source/date categories; record relevant categorical and numerical data in a headed table and simple spreadsheet. Write an original paragraph synthesising two sources, not a copied provider passage.",
+        "Record the author’s actual responsibility/purpose, the action/goal/observed result and what is not established. Programme goals, the dated summary and the measured result are distinct; preserve the document’s original period."
+      ],
+      "remainingConditions": []
+    },
+    "maps": {
+      "codes": [
+        "B2.3"
+      ],
+      "products": [
+        {
+          "id": "paper-map",
+          "kind": "thematic-map",
+          "medium": "paper",
+          "requirements": [
+            "accurate base/location",
+            "chosen theme",
+            "key/labels",
+            "source/date"
+          ]
+        },
+        {
+          "id": "digital-map",
+          "kind": "thematic-map",
+          "medium": "digital",
+          "requirements": [
+            "accurate base/location",
+            "chosen theme",
+            "key/labels",
+            "source/date"
+          ]
+        },
+        {
+          "id": "familiar-plan",
+          "kind": "familiar-plan",
+          "medium": "paper",
+          "requirements": [
+            "view from above",
+            "key/labels",
+            "relative landmarks",
+            "route explanation"
+          ]
+        }
+      ],
+      "learnerSteps": [
+        {
+          "id": "analyse-references",
+          "operation": "analyse",
+          "instruction": "Analyse the actual printed survey-location map and digital reference: explain what sampling points show, their geographic scope and why they are not total fish populations or a legal territory map.",
+          "usesResources": [
+            "joint-update",
+            "province-management"
+          ],
+          "outputs": []
+        },
+        {
+          "id": "construct-paper",
+          "operation": "construct",
+          "instruction": "Create a paper thematic map locating the verified case and showing selected management/assessment features with a key, labels and date/source. The learner selects and explains the theme; a completed teacher map is not the learner’s output.",
+          "usesResources": [
+            "joint-update"
+          ],
+          "outputs": [
+            "paper-map"
+          ]
+        },
+        {
+          "id": "construct-digital",
+          "operation": "construct",
+          "instruction": "Using an accessible drawing/map tool and the verified editable base, create a digital thematic version with chosen labelled case features, a key and source/date. Explain the relationship of the mapped theme to the inquiry; do not merely view a digital screenshot or paste a teacher’s finished map. No GIS procedure or precise boundary adjudication is inferred.",
+          "usesResources": [
+            "joint-update",
+            "province-management"
+          ],
+          "outputs": [
+            "digital-map"
+          ]
+        },
+        {
+          "id": "whole-familiar-map-check",
+          "operation": "construct",
+          "instruction": "For the unchanged whole map claim, create a plan of a genuinely familiar classroom, school or local place from above, with a usable key and labels. Locate at least three known landmarks relative to one another and explain a route. This separate check prevents a supplied regional base from being mistaken for complete mastery of the familiar-plan operation; it does not require collecting a private home address.",
+          "usesResources": [],
+          "outputs": [
+            "familiar-plan"
+          ]
+        }
+      ],
+      "remainingConditions": []
+    },
+    "interpret-tools": {
+      "codes": [
+        "B2.4"
+      ],
+      "actions": [
+        "Use the headed spreadsheet/table and construct a clearly labelled bar display comparing actual 2019/2021 survey effort. Answer whether the effort was identical and why that matters to comparing evidence; the bars are not fish-population totals. This quantitative method check serves the question rather than counting source paragraphs.",
+        "Use the actual published recovery/biomass observations and original graph to identify a scientific pattern and cite specific dated observations; do not invent exact values from an unreadable plot or treat a single annual decline as proof of the entire long-term trend. Explain the relevant fishery idea and the limited inference.",
+        "Build/use a small classification key and labelled diagram to distinguish actual record types by explicit features—for example a dated numeric record with unit net sets versus one with unit biomass, or a stated future target versus a reported completed activity. Use those features to avoid mixing effort, fish result and policy promise. Grouping is not by a supposed good/bad people category.",
+        "Use a perspective/evidence matrix as another relevant tool: author/responsibility, stated aim, evidence supplied and what it cannot decide. Keep scientific evidence and the value/interest component distinct; one does not mechanically determine the other."
+      ],
+      "remainingConditions": []
+    },
+    "evaluate-and-conclude": {
+      "codes": [
+        "B2.5"
+      ],
+      "actions": [
+        "Evaluate which supplied evidence is relevant to the question, keeping the actual Nation and responsible provincial-government accounts present. State specific strengths and limits of their perspectives—for example the Nation’s direct law/community/harvest account and the provincial management/angling scope—without inventing an individual opinion or ranking a people as reliable/unreliable.",
+        "Use source purpose, dates and the reported scientific observations to explain why an account is informative for a question but does not represent every affected person or independently establish every causal effect. Common goals can coexist with different responsibilities/emphases; disagreement is not fabricated merely to produce opposing sides.",
+        "Compose a conclusion that answers the actual inquiry with specific evidence and outlines strengths and weaknesses of the represented perspectives. Give a conditional prediction for a new supplied management/monitoring situation, then a useful evidence/method improvement such as matching survey effort/coverage or adding an authentic missing account. Distinguish a prediction from an observed result and an improvement from a promise that recovery is complete."
+      ],
+      "remainingConditions": []
+    },
+    "communicate": {
+      "codes": [
+        "B2.6"
+      ],
+      "actions": [
+        "Prepare an original written report/summary and oral explanation with the actual maps/data displays as supporting formats. Use appropriate words for Nation/government responsibilities, policy/action, evidence and perspective in their correct selected-case meaning; illustrative source vocabulary is not a compulsory full constitutional glossary.",
+        "Communicate the conclusion, source-supported similarities/differences in perspectives and their limits to a simulated class audience. Answer a question by pointing to the source/date or acknowledging what is unknown. No external presentation, posting or contact is required."
+      ],
+      "remainingConditions": []
+    },
+    "perspectives": {
+      "codes": [
+        "B3.8"
+      ],
+      "actions": [
+        "Use the actual Nation and provincial accounts to explain how institutional responsibilities, rights/resource use and recreational/environmental purposes can shape emphasis on the same fishery issue. The selected issue has documented social/cultural/livelihood and environmental dimensions; do not infer a viewpoint from ethnicity or say all members agree.",
+        "Explain a supported difference and a common aim without pretending that the sources are opposed on every point. Use a clearly labelled new familiar social/community scenario, such as differing needs around a shared public resource, to explain why two honest accounts may differ and what extra information would help.",
+        "Assess the whole existing perspectives claim through explanations of reasons and changed situations; assigning two opinion labels or merely naming two organisations is insufficient."
+      ],
+      "remainingConditions": []
+    },
+    "integrated-inquiry": {
+      "codes": [
+        "B2"
+      ],
+      "requiresSpecificDispositions": [
+        "B2.1",
+        "B2.2",
+        "B2.3",
+        "B2.4",
+        "B2.5",
+        "B2.6"
+      ],
+      "actions": [
+        "Carry out all six linked inquiry phases as one coherent environmental/social issue investigation, retaining actual Indigenous and responsible-government perspectives, own questions/source work, relevant data interpretation and both required map-production media.",
+        "Explain the original conclusion, source limits and represented/missing perspectives in the selected Canadian case. This is source-fit task design, not an assumption that a learner mastered the direct topics or their prerequisites."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "contributionPairs": {
+    "mt_FW9_8F52bw": [
+      "B2",
+      "B2.1",
+      "B2.2",
+      "B2.6"
+    ],
+    "mt_w4cUnN_SsQ": [
+      "B2",
+      "B2.3"
+    ],
+    "mt_7IFpDVNsmt": [
+      "B2",
+      "B2.4"
+    ],
+    "mt_ebQURBOsM5": [
+      "B2",
+      "B2.2",
+      "B2.4"
+    ],
+    "mt_CVywzrjT_c": [
+      "B2",
+      "B2.4",
+      "B2.5"
+    ],
+    "mt_7VrR1GzhrN": [
+      "B2",
+      "B2.5",
+      "B2.6"
+    ],
+    "mt_2GDBmKCJxs": [
+      "B2",
+      "B2.5",
+      "B3.8"
+    ]
+  },
+  "wholeClaimAndReadinessBoundary": {
+    "directTopicIds": [
+      "mt_FW9_8F52bw",
+      "mt_w4cUnN_SsQ",
+      "mt_7IFpDVNsmt",
+      "mt_ebQURBOsM5",
+      "mt_CVywzrjT_c",
+      "mt_7VrR1GzhrN",
+      "mt_2GDBmKCJxs"
+    ],
+    "hardClosureReviewed": {
+      "topics": 26,
+      "hardEdges": 24
+    },
+    "policy": "All whole direct claims and relevant hard paths were read. Existing claims, guides, hard/soft strengths and intervals remain unchanged. Full direct source design is not selection readiness or learner mastery; prerequisite tests/recording/measurement/reading performances are checked separately, with no fabricated local links or irrelevant new source tasks merely to fill a path.",
+    "wholeChecks": [
+      "FW9: at least three substantive questions, two actual sources for each, print and digital research, organised print notes and original synthesis.",
+      "w4: the complete familiar-place plan/key/labels/relative-landmark/route operation is checked separately; regional thematic output alone is not whole-topic mastery.",
+      "7IF/ebQ: acquire actual data, headed table/spreadsheet, meaningful bar display, labelled diagram and a feature-based classification key. A recognition-only chart or a count of source mentions does not replace construction.",
+      "CVy: find an actual scientific pattern and cite the specific observations/values relevant to the fishery question; this is not a formal causal-strength certification.",
+      "7Vr: compose a supported oral/written conclusion, conditional prediction for a new situation and a coherent improvement.",
+      "2G: explain why honest accounts can differ, with a changed familiar social/community scenario as well as actual environmental/social-role perspectives."
+    ]
+  },
+  "nearMiss": [
+    "Maps are only viewed or the digital output is replaced by a printed screenshot.",
+    "One generic viewpoint replaces either the Nation or provincial account, or a fictional role is called real testimony.",
+    "Survey effort is relabelled fish abundance, or goal/implementation is called complete ecological recovery.",
+    "A linked summary and its report are counted as independent origins, or different dates are treated as a controlled causal comparison.",
+    "Only chart recognition, copied notes or a recount is produced, without original interpretation/conclusion/prediction/improvement."
+  ],
+  "transfer": "Use a new accurately attributed management/perspective account: decide what it adds to the inquiry, which source/period it represents and whether it changes the justified conclusion.",
+  "associationChange": {
+    "newPairs": 20,
+    "newContexts": 5,
+    "extendedContexts": 2,
+    "newClaims": 0,
+    "newEdges": 0
+  }
+}

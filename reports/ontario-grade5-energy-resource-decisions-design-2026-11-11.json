@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "017c39aec49c6f5e5b87e272a03fd352734e9c10",
+  "status": "Three remaining energy/resource impact duties accounted for as source-fit authoring designs, not measured classroom outcomes or actual household reduction.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-E1.1",
+    "ON-SCI-2022-G5-E1.2",
+    "ON-SCI-2022-G5-E1"
+  ],
+  "resources": {
+    "efficiency": {
+      "url": "https://www.eia.gov/energyexplained/use-of-energy/efficiency-and-conservation.php",
+      "locator": "27 March 2025 main efficiency/conservation explanation and consumer examples",
+      "readScope": "Actual main explanation/programme body read; statistics/linked yardstick not adopted.",
+      "facts": "Technical efficiency and reduced use are distinct. Efficient lights, programmable thermostats and turning unused equipment off can reduce consumption. Lower total consumption depends on actual operation, not a label alone."
+    },
+    "controls": {
+      "url": "https://www.energy.gov/cmei/femp/office-energy-checklist",
+      "locator": "Office Energy Checklist, lighting, computers, control/thermostat items",
+      "readScope": "Complete main checklist read, no linked products/meter instructions or images inspected.",
+      "facts": "The agency recommends LED/controlled lighting, low-standby computers and power management, programmed heating/cooling controls and checking unoccupied settings. These are options, not guarantees for every device/system."
+    },
+    "petroleum-use": {
+      "url": "https://www.eia.gov/energyexplained/oil-and-petroleum-products/use-of-oil.php",
+      "locator": "Opening main Use of oil paragraph",
+      "readScope": "Actual uses paragraph read; current national shares/figures and all downstream product sections not adopted.",
+      "facts": "Petroleum products support vehicle transport, heat, electricity and material feedstocks. A source’s US consumption ranking is not an Ontario share."
+    },
+    "climate-mechanism": {
+      "url": "https://www.eia.gov/energyexplained/energy-and-the-environment/greenhouse-gases-and-the-climate.php",
+      "locator": "Main greenhouse explanation and industrial-era emission/concentration sections, updated 18 June 2024",
+      "readScope": "Actual selected explanation and long-term source paragraphs read, no graph/figure inspection or current percentage claim.",
+      "facts": "Fossil-fuel combustion adds CO2; human emissions and atmospheric concentrations have increased over the industrial period, contributing to long-term warming. No current national percentage or local disaster attribution is adopted."
+    },
+    "climate-effects": {
+      "url": "https://science.nasa.gov/climate-change/effects/",
+      "locator": "Takeaways, introductory effects/future-dependence paragraphs and qualitative sea-level mechanism",
+      "readScope": "Actual selected main text read; no linked assessments, projected numerical sea-level range or images adopted.",
+      "facts": "Human-caused warming affects ice, sea level and heat/weather patterns over long timescales, with consequences for ecosystems, infrastructure, livelihoods and wellbeing. Future severity depends partly on cumulative emissions. Effects vary by region; no particular local disaster is attributed here."
+    },
+    "outgoing-heat": {
+      "url": "https://science.nasa.gov/climate-change/causes/",
+      "locator": "Takeaways and opening Increasing Greenhouse Gases main explanation",
+      "readScope": "Actual main introductory mechanism text read, no embedded animation/video inspected.",
+      "facts": "The natural greenhouse effect matters for life; human-added greenhouse gases slow heat loss to space. The source supports outgoing-radiation reasoning, not an ozone-hole or simply hotter-Sun explanation."
+    }
+  },
+  "preparedCases": {
+    "controlled-lighting": {
+      "area": "technology",
+      "technology": "Efficient LED lighting plus a timed/occupancy control in an original fictional classroom.",
+      "given": "A supplied comparable-use account says lampB uses less energy than lampA for the same useful brightness and duration. A control turns lights off when they are not needed. This is a qualitative illustrative comparison, not measurements of a real school.",
+      "energyEffect": "Compare both device demand and operating time. Efficiency can reduce energy for the same service; a control can avoid unnecessary run time, but extra lamps/longer operation can offset that benefit.",
+      "individualAction": "Use the correctly configured control and turn unneeded lighting off with adult agreement; check that needed safe lighting remains available.",
+      "limit": "No promised percentage or automatic lower total bill. An occupancy control must not exclude a seated/less-moving person who still needs light.",
+      "sourceRefs": [
+        "efficiency",
+        "controls"
+      ]
+    },
+    "heating-control": {
+      "area": "technology",
+      "technology": "Programmable heating/cooling control in a supplied compatible fictional room/system.",
+      "given": "The original case supplies occupied/unoccupied periods and says a qualified adult has established appropriate settings for this particular compatible system. No pupil changes real heating or a medically necessary condition.",
+      "energyEffect": "A suitable schedule avoids conditioning space unnecessarily. Compare the desired service and actual schedule; a remote-control app alone does not establish less consumption.",
+      "individualAction": "Explain how an adult-agreed programme/appropriate occupancy schedule could reduce unnecessary use; check/revise the model when the room is unexpectedly occupied.",
+      "limit": "Compatibility, comfort, safety and actual weather/use matter. Do not prescribe one schedule or temperature to every heat pump, household or person; no reduction is asserted without evidence.",
+      "sourceRefs": [
+        "efficiency",
+        "controls"
+      ]
+    },
+    "computer-power": {
+      "area": "technology",
+      "technology": "Low-standby computer with enabled power-management settings.",
+      "given": "Original fictional shared-device brief: a display and computer are left active after their work is finished; an available setting can suspend nonessential activity. A second new device would also consume energy.",
+      "energyEffect": "Appropriate low-power settings and turning unused equipment off can reduce avoidable consumption. New digital equipment creates demand too; buying a more efficient additional device does not prove lower overall use.",
+      "individualAction": "Choose an adult-approved power-management/turn-off action for unused equipment and identify what must stay running for the stated purpose.",
+      "limit": "Do not turn off safety-critical or needed equipment. Accessibility, permitted control, privacy and shared-user needs must be considered; no universal data-collection claim or purchase is required.",
+      "sourceRefs": [
+        "controls",
+        "efficiency"
+      ]
+    },
+    "transport-fuels": {
+      "area": "long-term",
+      "given": "Use the attributed petroleum-use and climate accounts. An original fictional community needs reliable travel/deliveries; some necessary journeys have no currently supplied accessible alternative.",
+      "benefitAndSociety": "Fuel supplies useful transport and services. Over time, climate-related changes can affect infrastructure, wellbeing and livelihoods; changing fuel use also has access/cost implications. These are source-backed general relationships with fictional decision facts, not measured local effects.",
+      "environment": "Repeated fossil-fuel burning adds CO2, strengthening the greenhouse effect over time; connect to altered patterns/ice/sea rather than a one-day weather claim or the ozone hole.",
+      "mitigation": "Compare reducing unnecessary journeys/energy use with providing suitable alternatives and using lower-impact energy where actually feasible. An option must retain essential access, not treat all travel or all households as identical.",
+      "limit": "No immediate reversal of accumulated warming, universal zero-impact replacement or exact local emission reduction is claimed.",
+      "sourceRefs": [
+        "petroleum-use",
+        "climate-mechanism",
+        "climate-effects",
+        "efficiency",
+        "outgoing-heat"
+      ]
+    },
+    "material-cycle": {
+      "area": "long-term",
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-manufacturing-impacts-design-2026-11-11.json",
+          "pointer": "/preparedCases/aluminium"
+        }
+      ],
+      "given": "Use the already source-checked primary-versus-recycled aluminium process account. Metal products serve real purposes; extraction/refining/smelting require resources and energy, and scrap can return material to use.",
+      "benefitAndSociety": "Useful products depend on materials and processing; decisions involve reliable supply, cost and suitable product function. These are reasoned trade-offs from the supplied process, not invented employment/savings statistics.",
+      "environment": "Over continuing production, energy/resource demand and process emissions matter. Separate direct local process pollution, finite material extraction and fuel-related greenhouse emissions rather than call every effect climate change.",
+      "mitigation": "Use/reuse appropriate sound products, collect suitable scrap and compare recycled feedstock with primary production using the dated actual process facts. Explain why recycling still requires energy and cannot remove all need for resources.",
+      "limit": "The source comparison supports mechanism and qualitative relative energy demand, not a complete current Ontario lifecycle footprint or guaranteed conservation outcome.",
+      "sourceRefs": [
+        "climate-mechanism"
+      ]
+    },
+    "three-community-options": {
+      "area": "community-options",
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-community-conservation-design-2026-11-11.json",
+          "pointer": "/protocol"
+        }
+      ],
+      "given": "Use ALL three attributed First Nation, Métis and Inuit cases and their actual named source sections.",
+      "task": "Explain how the cases link knowledge/values/observations to decisions and conservation; compare appropriate energy/resource options and the evidence/limits behind them. Sources remain available.",
+      "limit": "Community process, announced plans, implemented actions and measured outcomes remain distinct. These are not generic claims for all peoples or pupil-authored testimony."
+    }
+  },
+  "protocols": {
+    "E1.1": {
+      "codes": [
+        "ON-SCI-2022-G5-E1.1"
+      ],
+      "contributorIds": [
+        "mt_VI5kdtf28e",
+        "mt_DbI1kNg_0R",
+        "mt_7e-lG7YOWa"
+      ],
+      "caseRefs": [
+        "transport-fuels",
+        "material-cycle",
+        "three-community-options"
+      ],
+      "requiredCaseFields": [
+        "given",
+        "limit"
+      ],
+      "actions": [
+        "Actually analyse both continuing fuel and material-use cases for long-term social AND environmental effects, including the source-grounded enhanced greenhouse mechanism and consequences.",
+        "Compare feasible mitigation choices using actual source facts and the three-community portfolio, including who needs the useful service, who can act, trade-offs and what remains uncertain. A green slogan, date list or climate fact alone is insufficient."
+      ],
+      "remainingConditions": []
+    },
+    "E1.2": {
+      "codes": [
+        "ON-SCI-2022-G5-E1.2"
+      ],
+      "contributorIds": [
+        "mt_MXxVMCr7_4",
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "controlled-lighting",
+        "heating-control",
+        "computer-power"
+      ],
+      "requiredCaseFields": [
+        "technology",
+        "given",
+        "energyEffect",
+        "individualAction",
+        "limit"
+      ],
+      "actions": [
+        "Actually evaluate all three technology cases, explain what changes consumption and describe an individual use/control action with its limits. Distinguish technical efficiency, duration/number of devices, energy consumption and cost.",
+        "Change the room use, number of devices or a needed accessibility function; revise the recommendation and explain why an efficient/smart label alone does not establish the outcome."
+      ],
+      "remainingConditions": []
+    },
+    "E1": {
+      "codes": [
+        "ON-SCI-2022-G5-E1"
+      ],
+      "contributorIds": [
+        "mt_7e-lG7YOWa",
+        "mt_DbI1kNg_0R",
+        "mt_MXxVMCr7_4",
+        "mt_VI5kdtf28e",
+        "mt_cOJhDeLkPo",
+        "mt_deexfCHU9m"
+      ],
+      "caseRefs": [
+        "controlled-lighting",
+        "heating-control",
+        "computer-power",
+        "transport-fuels",
+        "material-cycle",
+        "three-community-options"
+      ],
+      "requiredCaseFields": [
+        "given",
+        "limit"
+      ],
+      "actions": [
+        "Actually complete the technology, continuing fuel/material and all-three-community cases in one portfolio. Assess what useful needs the energy/resources serve, social/environment effects and feasible conservation options with evidence, not merely link the child judgments.",
+        "Compare a proposed efficient-device purchase, changed use/control and community resource action. Explain the physical/resource mechanism, affected users/access, long-term climate relation where relevant and limits; propose a justified option and revise it when the supplied need/availability changes."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimBoundary": [
+    "Technology-impact and design-factor cards retain their complete user/exclusion/privacy-safety-wellbeing/environment and competing factor/priority operations. Energy decisions are components, not automatic mastery of every whole card.",
+    "NaturalResources retains its whole resource-origin/renewable/non-renewable/environment operation. ClimateChangeBasics retains its whole enhanced-greenhouse mechanism and consequences; no ozone or numerical inventory is silently removed.",
+    "CommunitiesProtectingResources retains three real contrasting examples, science mechanisms, multi-source evidence and individual/community action; these source applications do not certify all whole-topic/local performance from a named project or replace it with invented interviews.",
+    "All existing guide confidence/source flags remain historical. The actual new primary source facts qualify these tasks, not a fresh blanket verification of old citations."
+  ],
+  "resourceAccess": "The prepared general source accounts and explicitly fictional decision facts do not require an unfilled own-community packet. NRCan standby/thermostat pages returned403 and are not adopted from search snippets; accessible EIA/DOE sources support the selected options instead.",
+  "consumerBoundary": "Only overall E1 component pairs added. No claims, guides, age scopes, dependencies or learner state changed."
+}

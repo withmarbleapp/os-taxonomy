@@ -1,0 +1,7 @@
+# Grade 3 later policies and contemporary identity
+
+The [dossier](ontario-grade3-policy-identity-review-2026-11-10.json) accounts for A1.2/A1.4 through six existing-claim components. The reviewed Grade 1 cultural-renewal ID is reused exactly, with its earlier context preserved; no country, grade or community clone is created.
+
+The comparison uses actual First Nations, Métis and Inuit cases. Fort William’s dated earlier-life evidence is paired with later schooling and community-led Survivor Council accounts. The Métis case uses Elder Maxime Morin’s attributed Île-à-la-Crosse account: late-1700s fur-trade context is separate from his 1950s childhood and current community-led language education. Inuvialuit period evidence and later policy/renewal accounts remain dated and attributed. No remembered modern childhood is backdated, no national summary proves a named family attended a school, and no forgiveness attitude or personal testimony is required of a learner.
+
+The identity task connects actual period communities and agreements with living, distinct FNMI cultural identities, contemporary renewal and particular public heritage recognition, including Buxton. It does not demand every illustrative symbol or language, treat peoples as one culture, infer language proficiency or claim all people share one identity. The whole distinct-peoples claim includes identifying the actual creator of a particular narrative and its limits. The full protocols account for authoring; they are not observed pupil performance or an efficacy study.

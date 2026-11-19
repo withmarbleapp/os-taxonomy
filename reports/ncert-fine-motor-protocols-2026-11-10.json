@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "designStatus": "Original untested source-fit protocols; no learner observations or private state changes",
+  "protocols": [
+    {
+      "id": "functional-utensil-control",
+      "requiredTask": "Actually hold, transport and serve a suitable ordinary food/drink quantity with a cup/container/spoon as the position requires; vary the object and inspect grip, stability, tipping and spill control.",
+      "reuseCheck": "The snack claim includes serving, but a child can prepare a wrap successfully without demonstrating pouring or spoon control. Do not infer every functional manipulation from snack preparation.",
+      "boundary": "Actual glass/spoon/serving/pouring duties remain resource-specific practical checks over the serving component, not new per-container states or claims of whole snack mastery."
+    },
+    {
+      "id": "drawing-writing-control",
+      "requiredTask": "Produce actual spontaneous/controlled marks with the relevant crayon/brush/wrist/hand action; observe comfortable tool control rather than impose recognisable pictures on a spontaneous-mark position.",
+      "withheldCandidate": "mt_WBfj79OqXz",
+      "mismatch": "The existing whole WB claim also requires all 26 lowercase English letters and consistent lined-paper size, so generic motor grip does not establish its whole claim or named-language inventory.",
+      "decision": "Use one approved shared mark-making operation; keep thumb/finger handling, spontaneous production and varied material exploration explicit and separate from named-language WB requirements.",
+      "sourcePerformanceConditions": {
+        "crayonCase": "thumb-and-fingers",
+        "spontaneousProduction": "scribbling-or-painting-with-wrist-action",
+        "variedMaterials": true,
+        "recognisablePictureRequired": false
+      }
+    },
+    {
+      "id": "shaping-folding",
+      "requiredTask": "Perform actual clay/card folding/rolling/shaping or marked-line cutting for the source case, and retain the full Ft card/fabric, joining, safety and storage checks.",
+      "reuseReason": "Material change alone does not establish a separate mastery claim; actual manipulation and precision still need a task."
+    },
+    {
+      "id": "multi-action-hand-control",
+      "requiredTask": "Use a varied actual manipulation panel with threading/placement/fastening/cutting/joining/pouring actions from the source case, respecting which items are illustrative. Record independent two-hand coordination where required.",
+      "reuseReason": "Craft, serving and threading contributions are direct only for their actual operations. Naming a motor action or completing one convenient item does not close every source requirement.",
+      "wholeClaimBoundary": "Complete unchanged craft, serving and safe hand-sewing tasks are assessed independently. The actual button/zip/placement/pouring panel remains necessary; no single convenient component silently establishes the others.",
+      "sourcePerformanceConditions": {
+        "actualPanel": [
+          "threading",
+          "small-object-placement",
+          "large-button-fastening",
+          "safe-cutting",
+          "pasting",
+          "pouring",
+          "large-zip-use"
+        ],
+        "allActionsInOneConvenientExampleInferred": false
+      }
+    },
+    {
+      "id": "building-copying",
+      "requiredTask": "Build a stable small-block structure/tower and copy a supplied block/shape arrangement; retain full QNx composition/description/matching-halves and 2VR build/draw checks as applicable.",
+      "scopeBoundary": "Two-hand independent building is observed directly in the declared task, not inferred from a geometric explanation or used to impose a universal body norm."
+    },
+    {
+      "id": "puzzle-composition",
+      "requiredTask": "Actually complete a source-fit 10–25-piece arrangement puzzle using shapes and a suitable whole outline; transfer to a changed whole. Retain the complete Mqq shape-composition/recomposition checks.",
+      "reuseReason": "Mqq already has an actual fitting-pieces puzzle assessment. Piece count is a source performance condition, not an additional maths difficulty-level topic. Do not claim arbitrary picture-jigsaw knowledge from one geometric puzzle.",
+      "sourcePerformanceConditions": {
+        "piecesMinimum": 10,
+        "piecesMaximum": 25,
+        "actualAssemblyRequired": true
+      }
+    },
+    {
+      "id": "legible-production",
+      "requiredTask": "Use the source-permitted numeric-production route with complete unchanged oAK 0–9 formation and legibility checks. Record the actual numeral material set; this does not infer mastery of every script or of English letters.",
+      "reuseReason": "The source permits letters or numbers, and oAK has no hard English-alphabet prerequisite; WB is only a soft support.",
+      "sourcePerformanceConditions": {
+        "selectedRoute": "numbers",
+        "existingCanonicalInventory": "0–9",
+        "universalAlphabetOrScriptMastery": false
+      }
+    },
+    {
+      "id": "preferred-hand-observation",
+      "requiredTask": "Observe the child’s comfortable self-selected hand use over drawing/writing tasks. Do not force right/left dominance, equate switching with lack of knowledge, or infer a stable trait from one event.",
+      "recommendedRepresentation": "Retained in-scope contextual motor-development observation with an actual task protocol, not a new binary dominant-hand mastery topic or learner score. Other fine-motor production requirements remain separate.",
+      "sourcePerformanceConditions": {
+        "mode": "contextual-observation-over-actual-drawing-writing",
+        "forcedHand": false,
+        "newMasteryOrLearnerState": false
+      }
+    },
+    {
+      "id": "threading-reuse",
+      "requiredTask": "Actually use a stringing board or string whole flowers as the selected source case; beads alone do not meet this position. Separately test the complete Ff claim with a suitable supervised primary fabric-sewing task: thread a needle, secure the start, make a running-stitch seam, secure the finish and check it holds.",
+      "reuseCheck": "Beading alone does not establish sewing. Existing 9–12 guidance is not a distinct mastery claim, but an IN 6–8 association requires a justified age-appropriate whole sewing task; no simplified younger sewing clone or age lowering from one bead example.",
+      "sourcePerformanceConditions": {
+        "sourceAlternatives": [
+          "stringing-board",
+          "whole-flowers"
+        ],
+        "beadOnlySufficient": false,
+        "patternRequired": false
+      },
+      "wholePrimaryTask": "Use a suitable supervised actual fabric running join, threading the needle, securing start/end, storing it safely and checking the seam. Existing 9–12 contexts remain alongside this primary 6–8 source-fit task."
+    }
+  ]
+}

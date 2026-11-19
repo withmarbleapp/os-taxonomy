@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "27120872b53c751d3d59df443aaf132dc8b56a1c",
+  "sourceReview": "ontario-grade5-social-source-review-2026-11-11.json",
+  "status": "Integrated B1 source-fit design requires actual use of First Nation, Métis and Inuit government response cases plus the previously qualified social/environmental government-and-citizen plans. No learner attainment or real plan implementation is asserted.",
+  "selectedCodes": [
+    "B1"
+  ],
+  "resources": {
+    "nation-response": {
+      "report": "ontario-grade5-government-response-review-2026-11-11.json",
+      "use": "Previously verified NFN/provincial fishery action, purpose, survey evidence and qualified effectiveness.",
+      "limits": "Actual2015–2022 source period; no post2025 renewal, quota advice or effort→population inference."
+    },
+    "metis-response": {
+      "url": "https://www.mmf.mb.ca/emergency-updates/update-one-critical-wildfire-evacuation-information-and-call-for-essential-supplies",
+      "provider": "Manitoba Métis Federation, National Government of the Red River Métis",
+      "date": "2025-05-29",
+      "reviewed": "Complete main update body.",
+      "use": "Describes obtaining supplies/accommodation for displaced citizens and announces a command centre with support; citizens are invited to volunteer or contribute.",
+      "limits": "This is a dated government response account/announcement. It does not independently prove every placement happened, count all evacuees or establish that the emergency ended. No actual donation, enrolment, travel or use of old contact/service instructions."
+    },
+    "inuit-response": {
+      "url": "https://nunatsiavut.com/department/health-and-social-development/familyservices-2/",
+      "provider": "Nunatsiavut Government, Health and Social Development, Community Programs",
+      "reviewed": "Complete current main body, including community offices and food-security sections.",
+      "use": "Describes community/regional programme roles and food-security measures such as community freezers, kitchens and meal-bag programmes.",
+      "limits": "Undated programme descriptions read2026-11-11; the2014 food-security statistic is not a current prevalence claim. The programme’s existence or its stated intent does not establish elimination of food insecurity or identical provision in every community."
+    },
+    "both-action-plans": {
+      "report": "ontario-grade5-social-environment-action-plans-2026-11-11.json",
+      "use": "Actual original social and environmental designs, each with explicit appropriate-government and citizen steps, methods, purpose, feasibility/progress limits and changed-case check."
+    },
+    "whole-civic-operation": {
+      "report": "ontario-grade5-civic-action-review-2026-11-11.json",
+      "use": "Retain actual achieved civic case, shared values and original campaign plan rather than infer whole mastery from a response headline."
+    },
+    "whole-inquiry-operation": {
+      "report": "ontario-grade5-environmental-inquiry-review-2026-11-11.json",
+      "use": "Retain actual evidence patterns, original supported conclusion, conditional prediction and relevant improvement; no formal causal or all-group opinion inference."
+    }
+  },
+  "responseCases": {
+    "first-nation": {
+      "people": "First Nations",
+      "government": "Nipissing First Nation, alongside its distinct provincial partner in the dated case",
+      "resourceRef": "nation-response",
+      "issue": "The stressed Lake Nipissing fishery",
+      "facts": [
+        "Council introduced documented fisheries-law measures; staff gathered harvest evidence and worked with provincial staff on assessment.",
+        "The joint report records partial recovery with an unmet management goal and important year-to-year/causal limits."
+      ],
+      "assessmentFocus": "Relate actual measures and shared roles to the stated concern, and assess the available implementation/result evidence without inventing full recovery."
+    },
+    "metis": {
+      "people": "Métis",
+      "government": "Manitoba Métis Federation, National Government of the Red River Métis",
+      "resourceRef": "metis-response",
+      "issue": "Displacement and immediate needs during May2025 Manitoba wildfires",
+      "facts": [
+        "The government update reports work to obtain supplies and safe accommodation, and announces a command centre for displaced citizens.",
+        "It identifies citizen support/volunteer roles alongside the government/community resource response."
+      ],
+      "assessmentFocus": "Explain how supplies/accommodation could address the displacement issue. Distinguish the source’s reported work and announced service from verified completed placements, total need met or an end to wildfire impacts."
+    },
+    "inuit": {
+      "people": "Inuit",
+      "government": "Nunatsiavut Government, regional/community Health and Social Development programme",
+      "resourceRef": "inuit-response",
+      "issue": "Food access and associated community well-being needs in the studied Labrador Inuit region",
+      "facts": [
+        "The department describes community offices with locally tailored plans and regional support.",
+        "It describes community freezers and food-literacy/kitchen/meal-bag actions as part of a multi-part food-security approach."
+      ],
+      "assessmentFocus": "Explain the relationship between the stated need and different programme actions; identify what actual outcome evidence would be needed before claiming the issue was solved. Do not generalise a regional description to every Inuit person or community."
+    }
+  },
+  "contributionPairs": {
+    "mt_xswgDb7eIU": [
+      "B1"
+    ],
+    "mt_CVywzrjT_c": [
+      "B1"
+    ],
+    "mt_7VrR1GzhrN": [
+      "B1"
+    ],
+    "mt_g8gJIsDxmj": [
+      "B1"
+    ]
+  },
+  "protocols": {
+    "integrated-responses-and-plans": {
+      "codes": [
+        "B1"
+      ],
+      "requiresSpecificDispositions": [
+        "B1.1",
+        "B1.2",
+        "B1.3"
+      ],
+      "requiredPeople": [
+        "First Nations",
+        "Métis",
+        "Inuit"
+      ],
+      "learnerSteps": [
+        {
+          "operation": "assess-each-response",
+          "caseIds": [
+            "first-nation",
+            "metis",
+            "inuit"
+          ],
+          "instruction": "Use all three original attributed case cards and their actual sources. For each, identify the named government, significant issue, purpose and actual reported/announced response. Explain the intended relationship between action and issue, then assess what available evidence establishes about implementation or effects and what it does not. A stated intention is not a measured outcome; a limited supported assessment is valid. Keep the source dates, regional/people distinctions and government-versus-citizen roles."
+        },
+        {
+          "operation": "compare-contributions",
+          "caseIds": [
+            "first-nation",
+            "metis",
+            "inuit"
+          ],
+          "instruction": "Compare the cases without treating them as identical problems or competing success rankings. Show a supported interrelationship, such as distinct Nation/provincial assessment roles, government resources plus citizen support, or regional staff and community-tailored delivery. Use the actual fishery data for a specific scientific evidence pattern; do not force graphs of unrelated programme mentions or compare incomparable outcome units."
+        },
+        {
+          "operation": "develop-both-plans",
+          "dossier": "ontario-grade5-social-environment-action-plans-2026-11-11.json",
+          "protocolIds": [
+            "social-plan",
+            "environment-plan"
+          ],
+          "instruction": "Actually produce both previously prepared social and environmental action plans. Each must include appropriate government and citizen steps, explained purpose and role fit, feasible methods/sequence and a bounded way to check progress. Keep actual provider facts distinct from hypothetical proposed actions; choosing two governments alone is not a plan, and a citizen poster is not a measured ecological or social solution."
+        },
+        {
+          "operation": "conclude-predict-improve",
+          "resourceRefs": [
+            "whole-inquiry-operation",
+            "nation-response"
+          ],
+          "instruction": "Communicate an original supported oral/written judgment, give a clearly conditional prediction for a changed supplied response/monitoring situation, and suggest a relevant evidence or method improvement. Keep source-supported observations distinct from unsupported causation, a group-wide viewpoint or a desired political conclusion."
+        },
+        {
+          "operation": "whole-claim-and-transfer",
+          "resourceRefs": [
+            "whole-civic-operation",
+            "nation-response"
+          ],
+          "instruction": "Retain the complete prior Ontario local-governance case/entity checks and the complete civic shared-goal/achieved-case/original-plan operation. Apply the response-assessment and actor/method reasoning to a changed supplied issue, identifying an unknown responsibility fact rather than assigning a nearby city automatically. These source-component tasks do not infer complete national/Indigenous structure knowledge or any child’s whole topic mastery."
+        }
+      ],
+      "positive": "Assesses actual source-bounded responses of all three named Indigenous government kinds, relates actions/purposes/evidence/limits, and develops both government-and-citizen social/environmental plans using the qualified prior specifics.",
+      "nearMiss": [
+        "Uses only one First Nation case and calls all Indigenous government requirements complete.",
+        "Treats an announcement, programme listing or volunteer invitation as proof all needs were met.",
+        "Produces only government actions or only citizen actions, or only one social/environmental plan.",
+        "Treats all governments or Indigenous peoples as interchangeable, or gives an unsupported political judgment instead of source-based response assessment."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimLimits": "Existing cards/guides/intervals/edges remain exact. Ontario-governance contributes the actual studied Ontario authority operation; additional supplied government response facts do not silently broaden that claim or certify all current B3.3 institutions. Shared inquiry/civic operations retain their whole checks. Source-fit authoring is not a classroom trial or learner mastery."
+}

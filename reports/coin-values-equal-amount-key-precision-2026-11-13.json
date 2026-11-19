@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "729f962cbfb6cd8183367eb5b037e7802f6be8ea",
+  "topicId": "mt_cPZwlUk8Nd",
+  "status": "Reviewed one-field arithmetic-key correction",
+  "changes": [
+    {
+      "path": "assess.probeDeeper[3]",
+      "old": "'If I gave you one £2 coin or five 20p coins, would you have the same amount? Which would you rather have?' (same value, different count)",
+      "new": "'If I gave you one £2 coin or ten 20p coins, would you have the same amount? Which would you rather have?' (same value, different count)"
+    }
+  ],
+  "reason": "Ten 20p coins equal £2; five equal £1. The original equal-value/different-count comparison is preserved rather than teaching an incorrect equality.",
+  "scope": "All intrinsic claim fields, age/context records, dependencies, other guide fields and original research/source flags remain exact. No learner or staging writes."
+}

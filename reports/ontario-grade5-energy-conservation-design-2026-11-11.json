@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "0d196ad623275b60f59bedecebd7cdfcddc7cf88",
+  "status": "Two source duties accounted for by unchanged whole qualitative claim with one exact source-supported context and one intrinsic dependency correction. Design only, not learner attainment.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-E2.2",
+    "ON-SCI-2022-G5-E2.4"
+  ],
+  "preparedCases": {
+    "bounded-total": {
+      "given": "Original illustrative account: initially5 tokens are associated with a raised ball/system. After release and bouncing,2 represent remaining recoverable motion/height and3 represent energy transferred into thermal stores of floor/ball/air. Tokens are invented bookkeeping units, not measured joules or a claim about actual fractions. Include all affected surroundings and specify no energy crosses the outer boundary.",
+      "task": "State law; account for unchanged5 total; explain why changed stores do not mean creation/destruction; identify what is missing if someone only counts the ball’s remaining2.",
+      "nearMiss": "Says3 disappeared because only useful motion was counted.",
+      "changedCase": "If1 unit is supplied from outside the chosen boundary, explain why its total can rise without violating conservation; no longer claim a no-input isolated account."
+    },
+    "actual-safe-observation": {
+      "given": "Safely drop a small ball a short distance above a clear floor and observe bounce heights only. Read the actual result. Do not promise noticeable temperature rise or infer exact energy fractions from height alone. Provide the qualitative friction/air-resistance thermal-transfer account.",
+      "task": "Relate reduced useful bouncing to energy transfer to ball/floor/air thermal stores and sound; explain why a lower bounce is not evidence energy was destroyed.",
+      "nearMiss": "Treats lack of felt warmth as proof of no thermal transfer.",
+      "changedCase": "A supplied rough-surface/air-resistance comparison has more energy ending in surroundings; identify changed usefulness without inventing measured temperatures."
+    },
+    "device-and-brakes": {
+      "given": "Original supplied device account: battery-powered lamp transfers energy electrically; light is emitted and ultimately absorbed by surroundings while device parts warm. A separate provided bicycle-brake account states friction warms brake/rim and surroundings. No pupil charging/overheating test.",
+      "task": "Explain useful light versus unwanted warming, total energy versus depleted battery fuel/store, friction in braking and why wasted means less available for the chosen purpose rather than nonexistent.",
+      "nearMiss": "Calls a warm component a source creating new energy or says wasted energy vanishes.",
+      "changedCase": "Explain that sound emitted to surroundings also carries transferred energy; use the declared system boundary rather than claiming it remains only inside the lamp."
+    },
+    "perpetual-useful-machine": {
+      "given": "Original fictional advert: a box is started once, then powers a lamp forever while no fuel, battery, electrical supply, sunlight or other energy input crosses the specified outer boundary. The real box has moving contacts and warm parts. This is an illustrative claim to evaluate, not an observed machine.",
+      "task": "Explain that the machine cannot continually deliver more useful output energy than its finite initial supply. Output to the lamp and thermal dissipation to surroundings must be included; energy is transferred, not created. Real friction means energy becomes less available for the advertised purpose.",
+      "nearMiss": "Says energy is destroyed by friction, or rejects every ideal example of continued motion merely because it moves without repeated pushes.",
+      "changedCase": "Contrast an ideal lossless object continuing to move without delivering useful work with the advertised real machine supplying useful work indefinitely without input. Ongoing ideal motion does not itself promise a continuous useful energy output. If a real solar/battery input is disclosed, include it rather than calling the device input-free."
+    }
+  },
+  "resources": {
+    "iop": {
+      "url": "https://spark.iop.org/conservation-and-dissipation",
+      "readScope": "Actual short main body read; no linked collection or video claim.",
+      "claim": "Distinguish conserving total energy from reducing useful fuel/resource consumption and from energy becoming spread through surroundings."
+    }
+  },
+  "protocols": {
+    "ON-SCI-2022-G5-E2.2": {
+      "codes": [
+        "ON-SCI-2022-G5-E2.2"
+      ],
+      "contributorIds": [
+        "mt_akBotspaf2",
+        "mt_X_aDUBh-HF",
+        "mt_68pIoiiG4g"
+      ],
+      "caseRefs": [
+        "bounded-total",
+        "actual-safe-observation",
+        "device-and-brakes",
+        "perpetual-useful-machine"
+      ],
+      "requiredCaseFields": [
+        "given",
+        "task",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Actually use all four original prepared cases. State the conservation law, account for total energy across a declared no-energy-transfer outer boundary and explain changed forms/stores without creation or destruction.",
+        "Explain real friction and air resistance transferring energy into surroundings; useful outputs and energy no longer available for the selected purpose are both accounted for. Warmth may be too slight to detect; a supplied explanation is not a fabricated temperature measurement.",
+        "Evaluate the real useful-output-with-no-input advert against a finite initial supply and thermal dissipation; distinguish this from an ideal lossless object continuing motion without delivering useful work.",
+        "Transfer to an external-energy-input case, revise the chosen account and explain why a changing system total is consistent with conservation when energy crosses its boundary."
+      ],
+      "remainingConditions": []
+    },
+    "ON-SCI-2022-G5-E2.4": {
+      "codes": [
+        "ON-SCI-2022-G5-E2.4"
+      ],
+      "contributorIds": [
+        "mt_X_aDUBh-HF",
+        "mt_68pIoiiG4g"
+      ],
+      "caseRefs": [
+        "bounded-total",
+        "actual-safe-observation",
+        "device-and-brakes",
+        "perpetual-useful-machine"
+      ],
+      "requiredCaseFields": [
+        "given",
+        "task",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Actually use all four original prepared cases. State the conservation law, account for total energy across a declared no-energy-transfer outer boundary and explain changed forms/stores without creation or destruction.",
+        "Explain real friction and air resistance transferring energy into surroundings; useful outputs and energy no longer available for the selected purpose are both accounted for. Warmth may be too slight to detect; a supplied explanation is not a fabricated temperature measurement.",
+        "Evaluate the real useful-output-with-no-input advert against a finite initial supply and thermal dissipation; distinguish this from an ideal lossless object continuing motion without delivering useful work.",
+        "Transfer to an external-energy-input case, revise the chosen account and explain why a changing system total is consistent with conservation when energy crosses its boundary."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimAgeRationale": "The joint Grade5 source explicitly requires the qualitative law and dissipation to surroundings, not merely energy naming. The complete existing68p card is qualitative law, account for conserved total, real-machine friction/air-resistance dissipation and useful-versus-spread energy. The task tests ALL four requirements with explicit system boundary and changed cases. No efficiency, Sankey, algebra, pressure, nuclear process or older quantitative bundle is lowered. Existing11–12 contexts and all full Jvg stores/pathways ages stay exact. This is source-supported10–11 application of the same whole claim, not a younger weaker clone.",
+  "dependencyReview": {
+    "before": {
+      "topicId": "mt_68pIoiiG4g",
+      "prerequisiteId": "mt_Jvg_r4yWaY",
+      "strength": "hard",
+      "reason": "Conservation of energy is a property of energy stores and transfers — the stores and pathways model must be established first"
+    },
+    "after": {
+      "topicId": "mt_68pIoiiG4g",
+      "prerequisiteId": "mt_Jvg_r4yWaY",
+      "strength": "soft",
+      "reason": "The full stores-and-pathways repertoire supports disciplined energy bookkeeping; qualitative conservation and dissipation can be demonstrated with the actual stores and transfers in a supplied process without mastery of every store/pathway classification."
+    },
+    "intrinsicCounterexample": "Even within English teaching, a learner can state energy cannot be created/destroyed; explain that an isolated ball/floor/air account has unchanged total despite lower bounce; explain friction and air resistance spreading energy thermally; and explain why warm brakes are wasted for motion but energy remains in surroundings, while still failing to name nuclear/electromagnetic stores or classify all four pathways in Jvg. This satisfies whole68p but not wholeJvg. Basic transfer vocabulary and relevant store understanding remain actual teaching/readiness requirements; only whole broad-inventory hard necessity is challenged.",
+    "preserved": "Both whole claims, all old guides, all old intervals, ak vocabulary hard edge and Jvg full11–12 repertoire remain unchanged."
+  },
+  "boundaryTerminology": "For conservation of the stated total, specify that no energy crosses the outer boundary and include affected surroundings. Closed to matter does not imply isolated from energy input/output; the source task does not teach that false equivalence. Existing card wording remains unchanged in this bounded context/edge proposal.",
+  "wholeClaimBoundary": [
+    "All four existing68p evidence requirements are addressed, including the old guide’s useful-output/perpetual-machine distinction. This is not success on one simpler component used to lower a broader numeric bundle.",
+    "Naming/transfer contributors retain their actual whole operations. Source-specific contribution does not imply all Jvg stores/pathways, nuclear inventory or learner readiness has been mastered.",
+    "The new interval preserves all prior11–12 contexts. No quantitative equation, efficiency, Sankey, pressure or five-term requirement is imported."
+  ],
+  "consumerBoundary": "One exact hard→soft semantic dependency correction and one additional age10–11 source context. Consumer reassessment/readiness policy is separate; no private learner reset or automatic transfer is authorized."
+}

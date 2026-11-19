@@ -1,0 +1,326 @@
+{
+  "pedagogy": {
+    "citation": {
+      "claim": "Computing teaching can vary scaffolding, use concrete models and reading before writing code, and connect projects to user needs and criteria.",
+      "source": "Raspberry Pi Foundation, Computing pedagogy, Add variety, Create projects and Read and explore code first.",
+      "url": "https://www.raspberrypi.org/teach/pedagogy",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched current principles. Supports task-design choices; no exact example here is a tested intervention."
+  },
+  "programming": {
+    "citation": {
+      "claim": "Explicitly teaching execution, initialisation and assignment is important; the review documents beliefs that computers infer intent or variables keep several values.",
+      "source": "Waite & Sentance (2021), Teaching programming in schools, sections 1.4–1.8 and 3.1, printed pp. 10–15 and 27–28.",
+      "url": "https://www.raspberrypi.org/app/uploads/2021/11/Teaching-programming-in-schools-pedagogy-review-Raspberry-Pi-Foundation.pdf",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched review including section3.1. Much underlying misconception research concerns older students; it does not establish prevalence at all primary ages."
+  },
+  "tracing": {
+    "citation": {
+      "claim": "Reading code and recording execution flow and current values before running supports program comprehension; concurrent Scratch scripts need an explicit execution model.",
+      "source": "Raspberry Pi Foundation (2023), Pedagogy Quick Read: Code tracing, pp.1–2.",
+      "url": "https://static.raspberrypi.org/files/curriculum/quickreads/14-Pedagogy_Summary_Code_Tracing_V4_2023.pdf",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched complete two-page PDF, including notional-machine/Scratch threading discussion. Exact programs here are authored."
+  },
+  "anthropomorphism": {
+    "citation": {
+      "claim": "Human-like descriptions of AI can distort learners’ mental models; teaching should distinguish recorded input, analysis and generated output from human feelings and intentions.",
+      "source": "Raspberry Pi Foundation (2025), Pedagogy Quick Read: The effects of anthropomorphisation on students’ mental models of AI.",
+      "url": "https://static.raspberrypi.org/files/curriculum/quickreads/22-Pedagogy_Summary_Anthropomorphism_2025.pdf",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched two-page summary. Use the language/mental-model claim, not broad unsupported assertions about all possible machine cognition."
+  },
+  "aichildren": {
+    "citation": {
+      "claim": "A qualitative survey of195 Finnish fifth/sixth graders identified anthropomorphic, non-technological and pre-installed-knowledge conceptions of AI.",
+      "source": "Mertala & Fagerlund (2023), Finnish 5th and 6th graders’ misconceptions about Artificial Intelligence; author manuscript, abstract and findings.",
+      "url": "https://arxiv.org/pdf/2311.16644",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched full20-page manuscript. Specific Finnish cohort and language context; no inference of universal prevalence or identical beliefs in younger children."
+  },
+  "binary": {
+    "citation": {
+      "claim": "Bits encode two distinguishable states; weighted binary positions can represent numbers and codes for other data.",
+      "source": "University of Canterbury, CS Unplugged: Binary numbers, background and age-banded lessons.",
+      "url": "https://www.csunplugged.org/en/topics/binary-numbers/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched primary teaching page. Do not present literal absence of electrical power as the only physical implementation of zero."
+  },
+  "pixels": {
+    "citation": {
+      "claim": "Images can be represented with numeric pixel information and ultimately binary digits.",
+      "source": "University of Canterbury, CS Unplugged: Image Representation, background and lesson overview.",
+      "url": "https://www.csunplugged.org/en/topics/image-representation/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched teaching page. A simplified raster model does not describe every possible image/file format."
+  },
+  "passwords": {
+    "citation": {
+      "claim": "Use unique account passwords, avoid guessable personal details and support strong memorable passwords with random words or an appropriate password manager.",
+      "source": "UK NCSC, Using online services safely: Securing your users’ accounts, tips2–3.",
+      "url": "https://www.ncsc.gov.uk/collection/using-online-services-safely/securing-your-users-accounts",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched account guidance, including unique passwords and birthdays/names exclusions. School-managed sign-on may differ; never collect children’s real passwords."
+  },
+  "privacy": {
+    "citation": {
+      "claim": "Primary privacy teaching identifies personal information, online audiences and trusted-adult support for account security.",
+      "source": "Australian eSafety Commissioner, Privacy and security, classroom resource and webinar transcript.",
+      "url": "https://www.esafety.gov.au/educators/classroom-resources/privacy-and-security",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched classroom page/transcript. A source of recommended actions, not evidence of the exact diagnostic response’s prevalence."
+  },
+  "work": {
+    "citation": {
+      "claim": "Current empirical evidence shows uneven task changes and benefits from generative AI; exposure is not equivalent to a demonstrated job loss or a reliable future prediction.",
+      "source": "ILO (2026), The impact of GenAI on jobs, productivity and work organization: a review of the empirical evidence, summary.",
+      "url": "https://www.ilo.org/publications/impact-genai-jobs-productivity-and-work-organization-review-empirical",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched publication dated1June2026 and findings summary. Current claims date-bound; no invented future job counts."
+  },
+  "energy": {
+    "citation": {
+      "claim": "AI/data centres have electricity, emissions and water trade-offs; impacts depend on infrastructure, location and use.",
+      "source": "IEA (2026), Powering Artificial Intelligence, executive summary.",
+      "url": "https://www.iea.org/reports/powering-artificial-intelligence/executive-summary",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched executive summary. Do not equate every small model with a large training run or assign a universal per-prompt water cost."
+  },
+  "devices": {
+    "citation": {
+      "claim": "Primary computing can connect digital-device input, processing and output to physical networks and their infrastructure.",
+      "source": "NCCE Teach Computing, Year3: Connecting computers, unit overview.",
+      "url": "https://teachcomputing.org/curriculum/key-stage-2/computing-systems-and-networks-connecting-computers",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched unit overview, not gated lesson files; supports the learning sequence, not exact error prevalence."
+  },
+  "hardware": {
+    "citation": {
+      "claim": "Hardware includes physical processors, working RAM and persistent storage; these components have different functions.",
+      "source": "Stanford CS101, Computer Hardware, hardware, CPU, RAM and persistent storage sections.",
+      "url": "https://web.stanford.edu/class/cs101/hardware-1.html",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched course text. Technical reference for author accuracy, not evidence for primary-age teaching effectiveness. Ignore dated price/specification and simplified transistor/Moore-law examples."
+  },
+  "internet": {
+    "citation": {
+      "claim": "The internet interconnects networks and enables exchange through shared protocols and infrastructure.",
+      "source": "Internet Society, How It Works, introductory explanation.",
+      "url": "https://www.internetsociety.org/internet/how-it-works/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched explanation; the numbered-card classroom model is an adaptation with limitations, not a complete network protocol."
+  },
+  "ui": {
+    "citation": {
+      "claim": "Interface design should provide contrast, labels, non-colour cues, feedback and consistent navigation.",
+      "source": "W3C WAI, Designing for Web Accessibility: Tips for Getting Started.",
+      "url": "https://www.w3.org/WAI/tips/designing/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched tips and contrast/non-colour sections. Guidance supports design checks, not a claim that one child test establishes compliance."
+  },
+  "usability": {
+    "citation": {
+      "claim": "Observe another user attempting a task and explaining their actions; consistency and visible feedback help identify interface problems.",
+      "source": "University of Canterbury, Computer Science Field Guide, Interface usability, consistency and think-aloud protocol.",
+      "url": "https://www.csfieldguide.org.nz/en/chapters/human-computer-interaction/interface-usability/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched section. Adapt benign tasks for primary pupils; do not reproduce distressing adult examples or infer universal timing limits."
+  },
+  "stories": {
+    "citation": {
+      "claim": "User stories connect a persona, a goal and a reason; discussion and acceptance criteria clarify the desired outcome.",
+      "source": "Atlassian, User stories with examples and a template, standard format and3Cs.",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched professional guidance. Child activities are proposed adaptations, not evaluated agile interventions."
+  },
+  "versions": {
+    "citation": {
+      "claim": "Document version history can show who changed a file and allow earlier versions to be inspected, subject to permissions.",
+      "source": "Google Docs Editors Help, Find what’s changed in a file, version history.",
+      "url": "https://support.google.com/docs/answer/190843?hl=en",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched current product guidance. Teacher must check equivalent features/permissions in the selected school tool."
+  },
+  "discoverAI": {
+    "citation": {
+      "claim": "An8–12 lesson introduces human-created AI tools through data, patterns and predictions and asks which problems they can help solve.",
+      "source": "Raspberry Pi Foundation and Google DeepMind, Experience AI: Discovering AI (8–12), learning objectives.",
+      "url": "https://experience-ai.org/en/lessons/36",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched resource overview and objectives only. Downloaded educator-guide PDFs timed out and are not used as verified evidence."
+  },
+  "mltool": {
+    "citation": {
+      "claim": "Teachable Machine supports training no-code models to recognise supplied images, sounds or poses.",
+      "source": "Google Creative Lab (2019), Teachable Machine, experiment description.",
+      "url": "https://experiments.withgoogle.com/teachable-machine",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched original project description. Current tool approval, settings and privacy need adult verification; this citation does not verify current account/data policies."
+  },
+  "recommendations": {
+    "citation": {
+      "claim": "Recommendation systems use activity signals to shape suggestions and can narrow the range of content shown.",
+      "source": "Australian eSafety Commissioner, Echo chambers and your feed, recommender definitions.",
+      "url": "https://www.esafety.gov.au/young-people/echo-chambers-and-your-feed",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched definitions and agency suggestions. Teen-oriented page: teacher reference only; use harmless fictional hobby/media cards rather than its sensitive examples."
+  },
+  "deepfakes": {
+    "citation": {
+      "claim": "Realistic synthetic media can lack obvious visual defects; source and context checks matter more than a visual-clue checklist alone.",
+      "source": "Internet Society, Online Trust and Safety Hub: Deepfakes and AI-Generated Content, Check Where It Came From.",
+      "url": "https://onlinesafety.internetsociety.org/spotting-false-information/understand/deepfakes/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched definitions and source-checking guidance; use benign fictional/authorised material with primary pupils."
+  },
+  "bias": {
+    "citation": {
+      "claim": "A2019 NIST evaluation found demographic error-rate differences for many tested face-recognition algorithms, varying by algorithm and task.",
+      "source": "NIST (2019), Study Evaluates Effects of Race, Age, Sex on Face Recognition Software.",
+      "url": "https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched findings and explicit warning against statements across all algorithms. The study did not establish causes of differentials or current performance of all systems."
+  },
+  "ethics": {
+    "citation": {
+      "claim": "AI ethics guidance includes fairness, transparency, human oversight, privacy and environmental sustainability.",
+      "source": "UNESCO, Recommendation on the Ethics of Artificial Intelligence, values and core principles.",
+      "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched principles. Normative international guidance, not a universal legal-liability rule or child-learning study."
+  },
+  "packets": {
+    "citation": {
+      "claim": "Network packets carry payload and header information and can take different routes before reconstruction at the receiver.",
+      "source": "Cloudflare Learning Center, What is a packet?, packet switching and header/payload sections.",
+      "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-packet/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched packet/header explanation. Do not adopt the simplified claim that routes must differ, all packets contain sequence numbers or all protocols deliver every packet in order."
+  },
+  "footprint": {
+    "citation": {
+      "claim": "Online activity and other people’s uploads can form lasting data trails; copies may be shared beyond the original audience, so deletion or privacy settings are not guarantees of erasure.",
+      "source": "Australian eSafety Commissioner, Privacy and your child, digital reputation and sharing sections.",
+      "url": "https://www.esafety.gov.au/parents/issues-and-advice/privacy-child",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched digital reputation section including screenshots/copies and support without judgement. Do not adopt fear-based universal permanence or the page’s broad ownership/legal claims."
+  },
+  "tcp": {
+    "citation": {
+      "claim": "IP addressing does not itself handle ordering or error checking; TCP supplies ordered delivery and requests missing data again.",
+      "source": "Cloudflare Learning Center, What is TCP/IP?, IP and TCP comparison.",
+      "url": "https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched IP/TCP distinction. Introductory model only; do not imply all real-time applications retransmit every lost packet."
+  },
+  "aiideas": {
+    "citation": {
+      "claim": "AI includes learned patterns, representation/reasoning and sensor interpretation; training data may come from people or the system, and social impacts need explicit discussion.",
+      "source": "AAAI/CSTA AI4K12, Five Big Ideas in Artificial Intelligence poster, version2.",
+      "url": "https://ai4k12.org/wp-content/uploads/AI4K12_Five_Big_Ideas_Poster_v2.pdf",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched one-page expert framework. Technical/curricular reference, not evidence for every primary-age activity or a universal human-versus-computer sample-efficiency rule."
+  },
+  "gamelearning": {
+    "citation": {
+      "claim": "AlphaZero learned game-playing policies through self-play, contrasting with hand-crafted evaluation approaches; training is distinct from an ordinary player’s single game.",
+      "source": "Google DeepMind (2018), AlphaZero: Shedding new light on chess, shogi, and Go.",
+      "url": "https://deepmind.google/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched original research explanation; historical example, not a claim that every current game opponent learns during play."
+  },
+  "minimisation": {
+    "citation": {
+      "claim": "Collect only data necessary for a specified purpose, explain its use and protect it; permission does not justify unnecessary collection.",
+      "source": "European Data Protection Board, Data protection basics, purpose limitation, minimisation and security.",
+      "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched regulator guidance. Uses the minimisation/security principle for a classroom design exercise, not a claim of universal legal rules or certified compliance."
+  },
+  "riteaid": {
+    "citation": {
+      "claim": "The FTC’s 2023 complaint alleged harm from false face-recognition alerts and inadequate safeguards in Rite Aid’s deployment.",
+      "source": "US Federal Trade Commission (19 December 2023), Rite Aid face-recognition complaint and proposed-order announcement.",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched agency announcement. A dated allegation/proposed-order source, not an assertion of present legal status, all-system behaviour or a child misconception study."
+  },
+  "energyuses": {
+    "citation": {
+      "claim": "AI applications can support weather/renewable-output forecasting, grid monitoring/optimisation and new energy-material research, with benefits requiring evaluation.",
+      "source": "IEA (2025), Energy and AI: Understanding the energy-AI nexus, energy-sector application examples.",
+      "url": "https://www.iea.org/reports/energy-and-ai/understanding-the-energy-ai-nexus",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched report examples. Potential/application benefits are not a guaranteed net environmental saving for every deployment."
+  },
+  "turing": {
+    "citation": {
+      "claim": "Turing’s 1950 paper replaces a broad question about thinking with an imitation-game investigation using written questioning; conversational identification is a limited behavioural test.",
+      "source": "A. M. Turing (1950), Computing Machinery and Intelligence, Mind 59(236), sections 1–2; university-hosted copy.",
+      "url": "https://www.cs.toronto.edu/~frank/csc2501/Readings/R1_Turing/Turing-1950.pdf",
+      "verified": true
+    },
+    "checked": "2026-11-18; Read opening sections, PDF pages 2–3. The child-facing human/machine conversation comparison is a simplified modern presentation, not a verbatim reconstruction of the initial gender-based game or a test of consciousness."
+  },
+  "airoles": {
+    "citation": {
+      "claim": "AI work includes model/data development and distinct evaluation, human-factors, governance and oversight tasks.",
+      "source": "NIST AI Risk Management Framework 1.0 (2023), Appendix A: Descriptions of AI Actor Tasks; US BLS Occupational Outlook Handbook, Data Scientists, duties.",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/appendices/app-a-descriptions-of-ai-actor-tasks/",
+      "verified": true
+    },
+    "checked": "2026-11-18; Read NIST task categories and BLS duties at https://www.bls.gov/ooh/math/data-scientists.htm. These support examples of AI-related work, not a claim that two wholly new occupations were first created by AI, nor an employment forecast."
+  },
+  "robots": {
+    "citation": {
+      "claim": "Service robots perform real cleaning, agriculture, transport and emergency-response tasks; some medical/assistance systems are manually controlled rather than fully autonomous.",
+      "source": "International Federation of Robotics, World Robotics: Service Robots, definition and application sections.",
+      "url": "https://ifr.org/wr-service-robots",
+      "verified": true
+    },
+    "checked": "2026-11-18; Read definition, degree-of-autonomy and application examples. Only these descriptive claims are used; promotional market/ecological claims and the page’s overbroad shorthand that service robots produce nothing are not adopted. Child task cards are authored adaptations, not tested interventions."
+  },
+  "ewaste": {
+    "citation": {
+      "claim": "Shorter product lifecycles and limited repair options contribute to electronic-waste growth; repair and reuse are relevant responses.",
+      "source": "UNITAR/ITU (20 March 2024), Global E-waste Monitor 2024 launch findings, lifecycle/repair discussion.",
+      "url": "https://unitar.org/about/news-stories/press/global-e-waste-monitor-2024-electronic-waste-rising-five-times-faster-documented-e-waste-recycling",
+      "verified": true
+    },
+    "checked": "2026-11-18; Fetched the report authors’ release, specifically lifecycle/limited-repair causes and promotion of repair/reuse. No fixed environmental saving or classroom intervention effect is inferred."
+  }
+}

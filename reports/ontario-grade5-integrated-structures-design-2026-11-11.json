@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "62c2072e6ff1e911c7d848173634a129c05d3c59",
+  "status": "One integrated source-fit structural understanding programme, not a rollup of linked child codes or learner attainment.",
+  "selectedCodes": [
+    "ON-SCI-2022-G5-D2"
+  ],
+  "preparedCases": {
+    "member": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-internal-structural-forces-review-2026-11-11.json",
+          "pointer": "/preparedCases/sagging-beam"
+        }
+      ],
+      "role": "member",
+      "task": "Choose the beam as member; explain external load/support, upper compression/lower tension ONLY for the supplied sagging support case, and why rest does not mean absent internal force."
+    },
+    "outside": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-external-structural-forces-design-2026-11-11.json",
+          "pointer": "/preparedCases/supporting-column"
+        }
+      ],
+      "role": "outside",
+      "task": "Translate the actual given column load/support into a force diagram and identify the resulting squeezing/deformation. Distinguish forces on this body from forces it exerts."
+    },
+    "built-resistance": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-structural-hazard-methods-design-2026-11-11.json",
+          "pointer": "/preparedCases/wind-roof"
+        }
+      ],
+      "role": "built-resistance",
+      "task": "Explain how the stated roof connection withstands the supplied uplift and why a window barrier addresses a different debris-impact route; both have limits."
+    },
+    "natural-resistance": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-biological-force-protection-design-2026-11-11.json",
+          "pointer": "/preparedCases/buttress"
+        }
+      ],
+      "role": "natural-resistance",
+      "task": "Explain how the actual buttress support helps the tree withstand a specified tipping load; contrast with a breathing-root feature that serves another function."
+    },
+    "protective-design": {
+      "dossierRefs": [
+        {
+          "report": "ontario-grade5-protective-equipment-design-2026-11-11.json",
+          "pointer": "/preparedCases/helmet"
+        }
+      ],
+      "role": "protective-design",
+      "task": "Explain why the helmet’s supplied protective layer can reduce harmful loading consequences, with its deformation/replacement/activity-fit limit; do not certify a real helmet."
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-D2"
+    ],
+    "contributorIds": [
+      "mt_p7LBWFX60E",
+      "mt_k7GOtslF-x",
+      "mt_iiUdDUEEGY",
+      "mt_8VA40Tumth",
+      "mt_Q2Zj3L8u9C"
+    ],
+    "caseRefs": [
+      "member",
+      "outside",
+      "built-resistance",
+      "natural-resistance",
+      "protective-design"
+    ],
+    "requiredCaseFields": [
+      "role",
+      "task"
+    ],
+    "actions": [
+      "Actually complete all five linked prepared cases, retaining their original given conditions, source evidence and limits. In one portfolio explain loading→internal/material/structural response→resistance/protection for both natural and built structures.",
+      "Compare the beam’s rest/deformation, roof connection and rooted tree: relate outside loading to what changes or resists inside/at the support, distinguishing no motion from no force. Explain why changing supports, material or the kind of load can change the outcome.",
+      "Use a changed original brief: an unverified support arrangement and a proposed feature whose known role is gas exchange rather than support. State which force relationships can be reasoned from supplied facts and which cannot, rather than apply a memorised top/bottom rule or call every feature protective.",
+      "Explain why no one method guarantees survival under every load and why a designed protective object and an organism’s physical trait can both affect consequences without serving identical purposes."
+    ],
+    "remainingConditions": []
+  },
+  "wholeClaimBoundary": [
+    "The actual overall duty asks force/structural-resistance understanding. This portfolio directly tests integrated relationships; it does not certify every whole contributor from one child example.",
+    "Each linked report retains full-claim readiness and actual source/fixture limits. Existing quantitative topics, all old whole claims and all child-code judgments remain unchanged.",
+    "Original physical models and given accounts are not performed experiments or measured building/organism capacities. Actual delivery evidence is separate from authoring coverage."
+  ],
+  "consumerBoundary": "Five existing-topic overall component pairs, no new claim/guide/context/age/dependency or learner write."
+}

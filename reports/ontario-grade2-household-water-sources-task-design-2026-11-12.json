@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed bounded source-authoring portfolio; no delivery, efficacy or learner attainment claimed.",
+  "acceptedRepositoryBase": "df2d6ae43c45d75e8018252b18ae009a803fc984",
+  "integrationPreparationBase": "c333d6b",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "readableResource": "ontario-grade2-household-water-sources-review-2026-11-12.md",
+  "protocols": {
+    "E1.2": {
+      "requiresIndependentPerformance": true,
+      "requiresActualPersonalAndHouseholdUseAssessment": true,
+      "inventedHouseholdObservationsSufficient": false,
+      "copiedConservationListSufficient": false,
+      "preserveNecessaryUses": true,
+      "requiresObservedSavings": false,
+      "requiredEvidence": [
+        "actual-personal-use-assessment",
+        "actual-household-use-assessment",
+        "plan-fitted-to-record",
+        "ordered-steps-and-information",
+        "reason-and-needed-use-boundary",
+        "changed-household-transfer"
+      ],
+      "studyResource": "ontario-grade2-household-water-sources-review-2026-11-12.md",
+      "studySections": [
+        "Read-aloud study: using water responsibly",
+        "Printable E1.2 household-use record"
+      ],
+      "assessmentSection": "Independent E1.2 plan and transfer",
+      "contributors": [
+        "mt_deexfCHU9m",
+        "mt_QR3vxbN1o4"
+      ],
+      "independentTask": "Learner completes the actual-use record, assesses needed use and avoidable loss/unknowns, then constructs a fitted ordered plan with information/materials, responsible person and check. Reassess a changed household in which the first action is already done. No supplied causal answer counts during the independent check.",
+      "wholeTopicAwardFromThisTaskAlone": false
+    },
+    "E2.2": {
+      "requiresIndependentPerformance": true,
+      "genericNaturalBuiltSortSufficient": false,
+      "tapCreatesWater": false,
+      "allNaturalWaterSafeToDrink": false,
+      "requiredEvidence": [
+        "multiple-natural-water-sources",
+        "multiple-built-access-storage-supply-cases",
+        "natural-to-built-route-explanation",
+        "well-versus-groundwater-distinction",
+        "empty-tank-and-tap-countercases",
+        "fresh-learner-example"
+      ],
+      "studyResource": "ontario-grade2-household-water-sources-review-2026-11-12.md",
+      "studySections": [
+        "Read-aloud study: where water reaches us"
+      ],
+      "assessmentSection": "Independent E2.2 check",
+      "contributors": [
+        "mt_nRF_VRntrW"
+      ],
+      "independentTask": "Hide taught route descriptions/labels. Independently identify natural and built water sources in lake/treatment/tower/pipes, well/groundwater and rain/roof/tank cases. Explain functions, distinguish a well from the water it accesses, generate fresh examples and reject a tap creating water or an empty tank supplying indefinitely.",
+      "wholeTopicAwardFromThisTaskAlone": false
+    },
+    "E1": {
+      "disposition": "Partial",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ]
+    },
+    "E1.1": {
+      "disposition": "Partial",
+      "remainingConditions": [
+        "Use verified First Nations, Métis and Inuit resources for the required perspectives, alongside other relevant viewpoints; Australian Country-specific claims are not relabelled.",
+        "Assess a locally grounded plan tied to air/water quality rather than a generic action list."
+      ]
+    },
+    "E1.3": {
+      "disposition": "Partial",
+      "remainingConditions": [
+        "Use accurate world/community cases and distinguish fresh water from drinking-water access. A global volume chart alone does not assess community availability or consequences."
+      ]
+    },
+    "E2": {
+      "disposition": "Partial",
+      "remainingConditions": [
+        "Overall coverage is reviewed independently, not automatically certified by counting child associations."
+      ]
+    },
+    "E2.1": {
+      "disposition": "Partial",
+      "remainingConditions": [
+        "Specify and assess the appropriate property set using supported observations. Do not assume these examples exhaust it, or impose every later atmospheric/particle-model detail."
+      ]
+    }
+  },
+  "retainedPartial": [
+    "E1",
+    "E1.1",
+    "E1.3",
+    "E2",
+    "E2.1"
+  ],
+  "historicalE2_3E2_4E2_5NotRecertified": true,
+  "studyCases": [
+    {
+      "id": "lake-public-supply",
+      "kind": "original declared model",
+      "route": [
+        "lake",
+        "treatment facility",
+        "water tower",
+        "pipes",
+        "school tap"
+      ]
+    },
+    {
+      "id": "well-home",
+      "kind": "original declared model",
+      "route": [
+        "groundwater",
+        "constructed well",
+        "pump and pipe",
+        "home"
+      ]
+    },
+    {
+      "id": "rain-school",
+      "kind": "original declared model; treatment before drinking expressly supplied",
+      "route": [
+        "rain",
+        "roof collection",
+        "tank",
+        "treatment",
+        "use"
+      ]
+    },
+    {
+      "id": "actual-household-record",
+      "kind": "blank printable with learner-supplied actual personal/household uses; no invented results",
+      "fields": [
+        "actual use",
+        "need",
+        "current practice",
+        "necessary use",
+        "avoidable running/loss",
+        "unknown information"
+      ]
+    },
+    {
+      "id": "changed-household",
+      "kind": "independent changed case",
+      "condition": "First selected action is already in place; a different use problem is supplied."
+    }
+  ],
+  "wholeCards": [
+    {
+      "id": "mt_8dstvf-KKb",
+      "type": "META",
+      "subject": "Learning to Learn",
+      "domain": "Learning to Learn",
+      "name": "Checking Your Own Work",
+      "description": "After finishing a task, look back at what you did and ask yourself: does this seem right?",
+      "centrality": 0.1290650406504065,
+      "evidence": [
+        "After finishing a piece of work, re-read or review it without being asked to",
+        "Spot and correct at least one error in their own work by checking back through it",
+        "Describe what they checked for — e.g. 'I re-read each line to make sure my answers matched the question'"
+      ],
+      "assessmentPrompt": "After {{name}} finishes a piece of work or activity, do they look it over themselves to check it seems right before saying they're done?",
+      "standards": [
+        "ncert-fs-2025:IN-NCERT-FS-2025-MATH-G2-C8.12-LO02",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G1-A1.1",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G2-A1.1",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G3-A1.1",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G4-A1.1",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G5-A1.1",
+        "the-ontario-curriculum-language-2023:ON-LANG-2023-G6-A1.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-A1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-A1"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 13
+    },
+    {
+      "id": "mt_QR3vxbN1o4",
+      "type": "META",
+      "subject": "Learning to Learn",
+      "domain": "Learning to Learn",
+      "name": "Planning a Task",
+      "description": "Make a simple plan before starting a task: what do I need to do, and what should I do first?",
+      "centrality": 0.09654471544715447,
+      "evidence": [
+        "Before starting a task, describe what they need to do and what order to do it in",
+        "Break a larger task into smaller steps without being prompted — e.g. 'First I'll read the question, then I'll draw a diagram'",
+        "Gather the materials or information they need before beginning, rather than starting and then stopping to find things"
+      ],
+      "assessmentPrompt": "Before {{name}} starts a bigger task — like writing a story or making something — do they take a moment to think about what they'll do first?",
+      "standards": [
+        "acara-v9:AC9TDE2P04",
+        "acara-v9:AC9TDE4P05",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-G1-C12.3-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-G2-C12.3-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-ART-SYL-FS-CG13-LO08",
+        "ncert-fs-2025:IN-NCERT-FS-2025-LH-G1-C13.2-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-LH-G1-C13.4-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-LH-G2-C13.2-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-LH-G2-C13.4-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-C4.5-LO01",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G1-G2-C4.3-LO02",
+        "ncert-fs-2025:IN-NCERT-FS-2025-SE-G2-C4.5-LO02",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LH-COMP-C-13.1",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-FOUNDATION-LH-GOAL-CG-13",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-DANCE-MOVEMENT-COMP-C-3.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-DANCE-MOVEMENT-GOAL-CG-3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-MUSIC-COMP-C-3.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-MUSIC-GOAL-CG-3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-THEATRE-COMP-C-3.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-THEATRE-GOAL-CG-3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-VISUAL-COMP-C-3.2",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-ART-LS1-VISUAL-GOAL-CG-3",
+        "ncert-ncfse-2023-ed2024:IN-NCERT-NCFSE-2023-ED2024-PREP-TWAU-COMP-C-3.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G1-IMMERSION-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G2-IMMERSION-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G3-IMMERSION-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-EXTENDED-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-IMMERSION-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-EXTENDED-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G5-IMMERSION-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-EXTENDED-A1.2",
+        "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G6-IMMERSION-A1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-B1.2",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B1.3"
+      ],
+      "ageRangeStart": 3,
+      "ageRangeEnd": 12
+    },
+    {
+      "id": "mt_KsKLVW_ssY",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Earth's Systems",
+      "name": "Shapes of land and water",
+      "description": "Develop a model to represent the shapes and kinds of land (mountains, valleys, plains) and bodies of water (rivers, lakes, oceans) in an area",
+      "centrality": 0.1310975609756098,
+      "evidence": [
+        "Name and describe at least four types of landforms (mountain, valley, plain, hill, cliff)",
+        "Name and describe at least three types of water bodies (river, lake, ocean, pond)",
+        "Create or interpret a simple model or map showing land and water features of an area"
+      ],
+      "assessmentPrompt": "Can {{name}} look at a map or build a model showing mountains, rivers, and oceans, and explain what each type of land or water feature is?",
+      "standards": [
+        "acara-v9:AC9HS1K03",
+        "acara-v9:AC9HS1S02",
+        "acara-v9:AC9HS2S02",
+        "ngss-k5:2-ESS2-2"
+      ],
+      "ageRangeStart": 6,
+      "ageRangeEnd": 8
+    },
+    {
+      "id": "mt_nRF_VRntrW",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Earth's Systems",
+      "name": "Where water is found on Earth",
+      "description": "Identify where water is found on Earth and understand that water can exist as solid (ice) or liquid, recognising water in oceans, rivers, glaciers, and underground",
+      "centrality": 0.08333333333333333,
+      "evidence": [
+        "List where water is found on Earth: oceans, rivers, lakes, glaciers, underground, atmosphere",
+        "Explain that water exists as liquid (rivers, oceans) and solid (ice, glaciers, snow)",
+        "Recognise that most of Earth's water is in the oceans"
+      ],
+      "assessmentPrompt": "Can {{name}} name the different places water is found on Earth — in oceans, rivers, ice caps, and even underground — and explain that ice is just frozen water?",
+      "standards": [
+        "ngss-k5:2-ESS2-3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E2.2"
+      ],
+      "ageRangeStart": 7,
+      "ageRangeEnd": 8
+    },
+    {
+      "id": "mt_deexfCHU9m",
+      "type": "CONCEPTUAL",
+      "subject": "Science",
+      "domain": "Ecosystems & Habitats",
+      "name": "Reducing Human Impact",
+      "description": "Communicate solutions that will reduce the impact of humans on the land, water, air, and other living things in the local environment",
+      "centrality": 0.03760162601626017,
+      "evidence": [
+        "Identify at least three ways humans negatively impact the local environment (litter, pollution, habitat destruction)",
+        "Propose at least three solutions to reduce human impact (recycling, reducing waste, conserving water, planting trees)",
+        "Explain how each solution helps protect land, water, air, or living things"
+      ],
+      "assessmentPrompt": "Can {{name}} suggest ways people can help the environment — like recycling, not littering, saving water, or planting trees?",
+      "standards": [
+        "acara-v9:AC9HS1K04",
+        "acara-v9:AC9HS1S05",
+        "acara-v9:AC9HSFK03",
+        "acara-v9:AC9TDE2K01",
+        "ngss-k5:K-ESS3-3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-D1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-C1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-D1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-E1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G2-SS-B1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B2",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G3-SS-B2.5",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B1",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B1.3",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B2",
+        "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B2.5"
+      ],
+      "ageRangeStart": 5,
+      "ageRangeEnd": 11
+    }
+  ],
+  "hardEdges": [
+    {
+      "topicId": "mt_nRF_VRntrW",
+      "prerequisiteId": "mt_KsKLVW_ssY",
+      "strength": "hard",
+      "reason": "Must know land and water features before learning where water is found on Earth"
+    },
+    {
+      "topicId": "mt_QR3vxbN1o4",
+      "prerequisiteId": "mt_8dstvf-KKb",
+      "strength": "hard",
+      "reason": "Planning before a task grows from the habit of checking back after finishing — both are self-regulatory bookends"
+    }
+  ],
+  "wholeGuideAbsences": [
+    "mt_8dstvf-KKb",
+    "mt_QR3vxbN1o4"
+  ],
+  "wholeClaimBoundaries": {
+    "mt_nRF_VRntrW": "Complete six water stores incl atmosphere; liquid/solid and oceans hold most. No percentage or older graphing gate.",
+    "mt_KsKLVW_ssY": "Four landforms, three water bodies and meaningful learner map/model with shapes/positions/simplification.",
+    "mt_deexfCHU9m": "Three actual local harms/solutions/causal benefits and communication; household plan is a component.",
+    "mt_QR3vxbN1o4": "Independent ordered task planning and prior information/materials; all evidence retained.",
+    "mt_8dstvf-KKb": "Independent checking, finding/correcting an error and explaining what was checked; not automatically awarded."
+  },
+  "existingComponentPairs": [
+    {
+      "topicId": "mt_deexfCHU9m",
+      "code": "E1.2",
+      "role": "component",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRange": [
+        7,
+        8
+      ]
+    },
+    {
+      "topicId": "mt_QR3vxbN1o4",
+      "code": "E1.2",
+      "role": "component",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRange": [
+        7,
+        8
+      ]
+    },
+    {
+      "topicId": "mt_nRF_VRntrW",
+      "code": "E2.2",
+      "role": "component",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRange": [
+        7,
+        8
+      ]
+    }
+  ],
+  "negativeGuards": [
+    "No personal household observation fabricated",
+    "No local perspective/First Nations-Metis-Inuit clause inferred",
+    "No source parent promotion by child count",
+    "No historical source requalification",
+    "No old claim/age/guide/context/pair/edge change",
+    "No learner data upload or learner-state operation"
+  ],
+  "primarySourceReadBindings": [
+    {
+      "url": "https://www.usgs.gov/water-science-school/science/public-supply-water-use",
+      "readScope": "Returned main explanatory body35–49 read; adopt only surface/groundwater supply and delivery relation. No U.S. percentage/universal or historical joke adopted."
+    },
+    {
+      "url": "https://www.epa.gov/sourcewaterprotection/basic-information-about-source-water-protection",
+      "readScope": "Complete explanatory body15–67 read; adopt source/protection/treatment/distribution distinctions, not U.S. legal rules."
+    },
+    {
+      "url": "https://www.toronto.ca/services-payments/water-environment/your-water-pipes-meter/managing-water-around-the-house/",
+      "readScope": "Complete returned main body17–261 read; adopt only general unnecessary tap-running, appropriate loads and responsible-adult leak examples. No volumes, clinical/local disposal/legal/plumbing instructions."
+    },
+    {
+      "url": "https://www.unicef.org/supply/stories/securing-safe-water-children-changing-world",
+      "readScope": "Complete photo-essay body15–99 and captions read; three dated attributed community cases only, not images/linked stories or universal-country/current-access claim."
+    }
+  ],
+  "preservation": "All canonical data byte-exact to integration preparation base. No publication or learner attainment certified."
+}

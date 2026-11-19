@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "designStatus": "Original untested source-fit protocols; no learner observations or private state changes",
+  "protocols": [
+    {
+      "id": "integrated-sensory-portfolio",
+      "tasks": [
+        "Use a concrete integrated portfolio of actual shape/colour/shade, hidden-form, sound, smell/taste and touch cases plus a same-event multisensory task. The broad goal is reviewed independently, not by adding child-record labels."
+      ],
+      "includesProtocols": [
+        "shape-colour-shade-comparison",
+        "hidden-visual-form",
+        "pitch-volume-tempo",
+        "smell-taste-comparison",
+        "touch-comparison",
+        "same-experience-integration"
+      ]
+    },
+    {
+      "id": "shape-colour-shade-comparison",
+      "tasks": [
+        "Actually compare varied shapes, colours and close shades using safe visible samples and simple equipment. Include changed samples, specific perceptual differences and matching/contrasting cases; a memorised colour name alone does not demonstrate discrimination.",
+        "Retain the whole existing close-observation/equipment, shape recognition across orientation/size and complete sorting/counting/ordering checks separately. No named-script or physics-colour theory requirement is imported."
+      ]
+    },
+    {
+      "id": "hidden-visual-form",
+      "tasks": [
+        "Use the complete new hidden-sample recognition task across close foils and changed form families, indicating remembered features without a visible model, familiar-word cue or fixed answer position. No memory-capacity quota or clinical score."
+      ]
+    },
+    {
+      "id": "pitch-volume-tempo",
+      "tasks": [
+        "Actually distinguish pitch, loudness and tempo using controlled/matched sound cases, varying one property while keeping the comparison interpretable. A harder pluck is not assumed to keep every other acoustic property perfectly identical.",
+        "Retain complete pitch-source-pattern/qualitative vibration, amplitude/volume and rhythm replication/repeated-sound-participation checks; supply suitable safe sound makers and equipment. Actual perceptual comparison is not replaced by instrument vocabulary or a still picture.",
+        "Complete inherited vibration/light-sound vocabulary tasks remain separate canonical checks. They are not additional universal NCERT sensory requirements. No hertz/wave-equation/advanced acoustics gate is introduced.",
+        "Use comfortable sound levels and a reliable prepared vibration setup; no forced shouting, whisper-based amplitude inference, learner confinement or forced blindfold. A failed apparatus or inaccessible material is recorded as a task limitation rather than a learner deficit.",
+        "Retain the actual sound-to-separate-matter direction with a control separating airborne sound from direct mechanical contact. A ruler resting on a speaker cone or a tuning fork touching water alone does not establish that airborne sound moved separate matter. Use a reliable suitable non-contact sound/receiver case and record the actual apparatus conditions."
+      ],
+      "performanceConditions": {
+        "airborneSoundToSeparateMatterRequired": true,
+        "directMechanicalContactAloneSufficient": false,
+        "forceDoesNotGuaranteeFixedOtherAcousticProperties": true
+      }
+    },
+    {
+      "id": "smell-taste-comparison",
+      "tasks": [
+        "Actually match and distinguish suitable familiar smell/taste sample pairs with changed coded samples, using safe declared foods/materials, hygiene and relevant allergy/access conditions. Describing organs alone is insufficient.",
+        "Retain the complete existing equipment-based close observation and comparison task separately. No blindfold, nose pinching, raw/unknown food or forced tasting is required; an inaccessible tasting case is recorded rather than silently inferred."
+      ]
+    },
+    {
+      "id": "touch-comparison",
+      "tasks": [
+        "Actually compare safe familiar textures/materials by touch in changed cases, indicating specific differences and matching samples. Include distinctions beyond naming the skin as the sense organ. Retain complete observation/equipment requirements separately."
+      ]
+    },
+    {
+      "id": "same-experience-integration",
+      "tasks": [
+        "Use one safe episode, such as gently rubbing a familiar textured material; relate what is seen, heard and felt as aspects of the same event, including how perceptions agree/differ. Unrelated sample naming or one focus alone does not establish integration.",
+        "Use the complete new deliberate present-attention task separately, with an accessible focus, genuine noticing of attention change/thought and return, without suppressing experience or requiring private content."
+      ],
+      "performanceConditions": {
+        "sameEventPerceptions": [
+          "seeing",
+          "hearing",
+          "touch"
+        ],
+        "relatePerceptionsRequired": true,
+        "oneFocusAloneSufficient": false
+      }
+    },
+    {
+      "id": "matched-sounds",
+      "tasks": [
+        "Compare actual controlled note/sound pairs and judge whether pitch and volume match, then explain/indicate the comparison in changed cases. Retain complete unchanged pitch and volume canonical tasks separately."
+      ]
+    },
+    {
+      "id": "tempo-change",
+      "tasks": [
+        "Hear an actual change of tempo in a supplied appropriate piece and indicate it by a response such as changed beat tapping or a description. Retain complete rhythm replication and repeated sound-pattern tasks. A pitch change or louder note alone is a near miss."
+      ]
+    },
+    {
+      "id": "scale-meaning-unverified",
+      "tasks": [
+        "The official phrase about linear/nonlinear progression within a scale is retained as meaning Unverified. No automatic tempo/mathematical-pattern substitution, new advanced topic or unsupported Full judgment."
+      ],
+      "remaining": "Need a source-appropriate authoritative musical example or explanation fixing the intended distinction."
+    },
+    {
+      "id": "comfortable-longer-exhalation",
+      "tasks": [
+        "An appropriately prepared adult teaches a comfortable gentle breathing case with the out-breath actually longer than the in-breath. No retention, forced ratio, fixed rounds or therapeutic claim is added. A normal equal-duration cycle does not account for this source condition.",
+        "Assess the complete present-attention operation separately. Ordinary awareness alone does not prove the breathing performance."
+      ],
+      "performanceConditions": {
+        "outBreathLongerThanInBreath": true,
+        "fixedRatio": false,
+        "breathRetention": false
+      }
+    },
+    {
+      "id": "short-stillness-other-perceptions",
+      "tasks": [
+        "Retain a short comfortable stillness opportunity with actual attention to other sensory perceptions. Still posture alone is not evidence, and the short source duty does not become a universal behavioural quota.",
+        "Complete present-attention and close-observation tasks separately, with appropriate accessible support; do not force eye closure or positive feeling."
+      ],
+      "performanceConditions": {
+        "shortStillness": true,
+        "attentionToOtherPerceptions": true,
+        "fixedDurationQuota": false
+      }
+    },
+    {
+      "id": "taught-alternate-nostril-method",
+      "tasks": [
+        "An appropriately prepared adult demonstrates the named alternate-nostril pattern in a comfortable supported setting using ordinary unforced breathing, without any breath-holding or fixed ratio/round count.",
+        "Check the actual coordinated cycle: air enters on one side and exits the other, then enters on that second side and exits the first; appropriate gentle nostril switching is part of the taught method. Mere ordinary breath awareness or alternating hand positions without the breathing sequence does not suffice.",
+        "Keep comfortable continuous breathing and stop/reconsider an unsuitable or uncomfortable task rather than force or infer performance. Record actual support/material/access conditions.",
+        "Assess the shared present-attention claim separately. Successful awareness is a component, not proof of the named technique; likewise performing a motor sequence alone does not certify thought awareness."
+      ],
+      "performanceConditions": {
+        "procedure": "alternate-nostril-inhale-one-side-exhale-other-then-reverse",
+        "breathRetention": false,
+        "fixedRatio": false,
+        "fixedRounds": false,
+        "separateFromGenericAttention": true
+      },
+      "resourceNotes": "Named procedure/source-age duty comes from actual NCERT Grade 2 position. AYUSH 2026 printed 41–42 fixes the method; Fit India printed 45 supports no breath holding, not an alternate-nostril 5–8 table endorsement. No adult ratio/round/postural inventory or benefit claim is imported."
+    },
+    {
+      "id": "ordinary-thought-awareness",
+      "tasks": [
+        "Use the complete present-attention task with a short comfortable ordinary quiet occasion and genuine thought-flow/attention noticing. A report may identify the process without disclosing private content; no thought, distraction or upset is manufactured.",
+        "Stillness or repeating a calming phrase is not proof. If the required event has not been observed at actual use, record insufficient evidence rather than a fabricated success or failure."
+      ],
+      "performanceConditions": {
+        "ordinaryThoughtFlowAwareness": true,
+        "forcedDisclosure": false,
+        "manufacturedThoughtOrDistress": false
+      }
+    }
+  ]
+}

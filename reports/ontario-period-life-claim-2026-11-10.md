@@ -1,0 +1,7 @@
+# Community life in Canada,1780–1850
+
+The [reviewed card, original guide and case packet](ontario-period-life-claim-2026-11-10.json) add **mt_klz8bAeI8m**, with one exact Ontario8–9 association for Grade3 A3.6. Generic historical inquiry, technology-change and actual Australian/ancient-life claims do not supply this distinct Canadian period knowledge; they remain unchanged. There is one knowledge state, not a node per community or example.
+
+Five core cases cover Anishinaabe Kaministiquia, Métis Lake Superior families, Inuvialuit Kuukpak/Delta, Black Buxton1849–1850 and Traill-area settlers1832–1835. A bounded Assiniboine role supplement uses Henry’s1808–1809FortVermilion-framed account, with exact original attribution rather than relabelling it Blackfoot or Head-Smashed-In. Modern northern Alberta FortVermilion is not the historical NorthSaskatchewan/VermilionRiver post. Outsider perspectives, broad archaeological dates and later accounts are explicitly limited; no prejudicial source judgments or reenactments are required.
+
+Equivalent verified cases may replace the worked examples while retaining genuine community diversity, ordinary-life knowledge and documented roles. Full is source-fit authoring coverage of A3.6, not learner attainment or all21historical expectations. In particular, Upper/LowerCanada location and then/now comparisons retain their separate tasks. See the [current Grade3 ledger](ontario-grade3-social-current-ledger-2026-11-10.json).

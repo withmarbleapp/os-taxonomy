@@ -1,0 +1,226 @@
+{
+  "sourceCommit": "f849a765b84e56ea112e7f4b3ccd03843c92995a",
+  "scope": "Public legacy-format fixture, not active guidance or a learner record",
+  "research": {
+    "schemaVersion": 1,
+    "version": "v1",
+    "exportedAt": "2026-11-02T21:58:18.320Z",
+    "topicFileSha256": "fd96ce5963e24f11dcfb549fee46d3cb6afae5d545dc30f4d01366a406444f35",
+    "recordCount": 1,
+    "coverage": {},
+    "notes": [
+      "Agent-authored teaching research and proposed learning activities; not empirically validated interventions.",
+      "Original pedagogy and assessment were retained during the initial learning-guidance rewrite; later taxonomy-alignment repairs are recorded in individual review notes. Unrepaired fields may need separate review.",
+      "Source verified flags and confidence are historical authoring metadata, not fresh verification or independent evidence ratings. Sources were not re-fetched for this release.",
+      "Curriculum passages matching eight or more consecutive words of codes-only frameworks are omitted and marked inline. This conservative mechanical pass is not comprehensive rights clearance; third-party works retain their upstream terms. Publication notes list transformed paths.",
+      "Activity sourceClaims match sources[].claim exactly after the same publication transformation. A curriculum reference establishes alignment, not evidence that an activity was tested.",
+      "Historical exclusions and assessment-reference redirects follow archived-teaching-research.json. Original source research and provenance are unchanged; excluded guidance is listed as missing from active coverage."
+    ],
+    "records": [
+      {
+        "topicId": "mt__7hXSTbu9s",
+        "pedagogy": {
+          "summary": "• Age/Topic — 5-7 (KS1/Grades K-2): how minibeasts move — crawling, flying, slithering, jumping, burrowing, swimming — and noticing body features that go with movement, especially counting LEGS (ants 6, spiders 8, woodlice many, worms/snails none) as a first, concrete grouping cue.\n• Standards — UK (DfE): KS1 Y1 'Animals, including humans' (identify and describe common animals; notice body parts); Y2 habitats. Working-scientifically: observing closely, identifying and classifying, gathering and recording simple data (a movement/leg tally).\n• Standards — US (NGSS): 1-LS1-1 (external parts help animals survive/move); K-2 observation practices.\n• Operational details — link FORM to FUNCTION at a simple level: wings → fly, many legs → crawl fast, no legs + muscles → slither, strong back legs → jump. Counting legs is the first classification hook (leads into the 7-9 'is it an insect?' work). Use slow-motion clips and real observation, and act movements out physically.\n• Checkpoint — Tier A (age 5): names how a given minibeast moves (butterfly flies, snail slides). Tier B (age 6): counts legs on ant/spider and matches a body feature to a movement (wings→fly). Tier C (age 7): groups minibeasts by how they move and by leg number, and gives a form-function reason ('grasshoppers have big back legs so they can jump').",
+          "bestPractices": [
+            "Link form to function explicitly — the body part (wings, many legs, strong back legs, no legs) explains the movement; this is the first form-function reasoning children do.",
+            "Use slow-motion video and real observation so children can actually see how a worm ripples or a bee beats its wings.",
+            "Have children act out the movements (crawl, slither, jump) — kinaesthetic enactment cements the vocabulary.",
+            "Introduce leg-counting as a concrete, countable classification cue (6 vs 8 vs many vs none), foreshadowing later insect grouping.",
+            "Record simple movement/leg data as a tally or pictogram to fold in early working-scientifically skills."
+          ],
+          "keyRepresentations": [
+            "Animated movement clips paired with the movement word (flies, slithers, jumps, burrows, swims).",
+            "A leg-count tally chart grouping creatures by number of legs.",
+            "Feature-to-movement link cards (wings→fly, strong back legs→jump).",
+            "A sorting board with movement bins."
+          ],
+          "commonMisconceptions": [
+            "'All minibeasts crawl / move the same way' — missing the variety of movement.",
+            "'Spiders and insects are the same' — leg count (8 vs 6) is the first cue that they differ.",
+            "'Worms and snails have tiny legs' — children assume all creatures have legs; some move by muscle/foot.",
+            "'Movement isn't connected to body shape' — not yet linking wings/legs to how a creature moves.",
+            "Miscounting legs by counting antennae or by not counting both sides."
+          ]
+        },
+        "learn": {
+          "summary": "For ages 5-7 (KS1/Grades K-2): how minibeasts move (crawling, flying, slithering, jumping, burrowing, swimming) and the body features that go with each movement, with leg-counting (ant 6, spider 8, woodlouse many, worm/snail none) as a first concrete grouping cue. The core aim is form-to-function reasoning at a simple level: wings let a creature fly, strong back legs let it jump, no legs plus muscles let it slither. Children observe real movement, act it out, count legs, sort by way of moving, and record simple movement/leg data.",
+          "activities": [
+            {
+              "title": "Sort minibeasts by how they move, then count their legs",
+              "feedback": [
+                "If a creature is sorted into the wrong movement bin, let it bounce or wobble back with a hint such as 'watch how it moves again'.",
+                "If a child gives the spider 6 legs like the ant, count together touching each leg: at this age, 6 legs is the cue for an insect and 8 legs for a spider (not an insect). Let the count, not the guess, settle it.",
+                "If a child miscounts the ant by including its feelers, point to the difference between legs (used for walking) and the antennae at the head.",
+                "If a child undercounts by looking at only one side, prompt them to count both sides of the body.",
+                "Where an animation is available, tapping each leg to add it to a running tally makes the count concrete; a static labelled picture with the legs numbered works too."
+              ],
+              "rationale": "Observing closely, identifying and classifying, and gathering simple data are core KS1 working-scientifically skills, and counting legs is a developmentally appropriate first classification cue toward distinguishing insects (6 legs) from spiders (8 legs). Seeing movement (via video, live observation, or animation) and physically tallying legs is intended to make the grouping concrete for this age.",
+              "sourceClaims": [
+                "KS1 Y1 requires pupils to identify and describe common animals and their body parts; observing closely and classifying are core working-scientifically skills.",
+                "Counting legs is a developmentally appropriate first classification cue that leads toward distinguishing insects (6 legs) from arachnids (8 legs)."
+              ],
+              "learnerActions": [
+                "Watch each minibeast actually move — through slow-motion video, real observation, or an animation that plays when the creature is tapped (a grasshopper springs, a worm ripples and burrows, a bee lifts off).",
+                "Sort each creature into a way-of-moving bin by its main or most noticeable way of moving: flies / crawls / slithers / jumps / burrows / swims. Talk about creatures that move in more than one way (a grasshopper jumps but can also crawl and fly; an earthworm slithers on the surface and burrows underground; a bee flies but also crawls).",
+                "Count the legs on an ant (6) and a spider (8) by touching or tapping each leg one at a time and counting aloud; count both sides of the body so none are missed, and count only the walking legs — on the ant, do not count the two feelers (antennae) at the head as legs.",
+                "Place the ant and spider into different leg-number groups, and place worms/snails in a 'no legs' group.",
+                "Record the result as a simple tally or pictogram of how many legs each creature has."
+              ],
+              "intendedInsight": "Minibeasts move in different ways, and leg number (6 vs 8 vs many vs none) is a concrete, countable way to begin grouping them — foreshadowing later 'is it an insect?' work."
+            },
+            {
+              "title": "Match the body feature to the movement",
+              "feedback": [
+                "If a child treats leg number as a meaningless detail, ask them to act it out — walk like a six-legged ant, then wriggle like a legless worm on the carpet — so the count connects to the way of moving.",
+                "If a child cannot explain legless movement, watch a real worm (or clear video) on a damp surface and point out the body squeezing and stretching with no legs appearing; let the child 'inch' their own arm along a table to model muscle-driven motion.",
+                "Confirm correct links by replaying the movement: 'Yes — wings let the bee fly.'"
+              ],
+              "rationale": "NGSS 1-LS1-1 expects Grade 1 pupils to learn that external parts help animals survive, grow and move, so explicitly linking a body part to its movement is the intended objective. Kinaesthetic enactment and responsive pictures are intended to help cement the vocabulary and the form-function link.",
+              "sourceClaims": [
+                "Grade 1 students learn that animals have external parts that help them survive, grow and behave — including parts for movement (1-LS1-1)."
+              ],
+              "learnerActions": [
+                "Match a body-feature card to the creature and movement it enables: wings → fly (bee, butterfly), strong back legs → jump (grasshopper), many legs → crawl, no legs + muscles → slither.",
+                "Where an interactive picture is available, drag the feature onto the creature and watch the picture respond — give the grasshopper its big back legs and it can jump; remove the bee's wings and it can no longer fly.",
+                "Say or complete a reason sentence: 'Grasshoppers have big back legs SO they can jump'; 'Worms have no legs so they move by squeezing and stretching.'"
+              ],
+              "intendedInsight": "How a minibeast moves comes from the body parts it has — the first form-to-function reasoning children do."
+            },
+            {
+              "title": "Three minibeasts: count and explain (diagnostic)",
+              "feedback": [
+                "Full understanding: gives 6/8/0 correctly AND explains the worm moves by squeezing and stretching with no legs, and transfers the idea to a new case such as the snail.",
+                "Partial: counts 6/8/0 correctly but lists them as separate facts — prompt 'how does the worm actually move with no legs?' to build the connection.",
+                "Gap: gives the same number for all three or insists the worm has tiny hidden legs — put a real or large-photo ant and spider side by side and count together, and watch a real worm move to show legless motion."
+              ],
+              "rationale": "A two-tier check — count the legs, then explain how the legless one moves — is intended to discriminate a child reasoning from observation (three different numbers, legless movement described) from one working from a vague 'all bugs are the same' picture who gives equal leg counts or claims hidden legs. The snail counterexample shows legless movement is varied, not a single trick.",
+              "sourceClaims": [],
+              "learnerActions": [
+                "Look at an ant, a spider, and an earthworm. Say how many legs each one has (6, 8, and 0).",
+                "Explain how the one with no legs gets around — the worm squeezes and stretches its body, its muscles pushing it along and tiny bristles gripping the soil.",
+                "Extend to a new case: predict whether a snail has legs and how it moves (it has no legs and glides on a muscular foot over slime — a different legless mechanism from the worm).",
+                "Consider a probe: 'A centipede — would you expect 6 legs, 8, or lots more? Why?' and 'If something has 6 legs, what might it be?'"
+              ],
+              "intendedInsight": "Leg number and way of moving are connected, not memorised as separate facts; some creatures move with no legs at all, and different legless creatures (worm vs snail) can move differently."
+            }
+          ],
+          "constraints": [
+            "Keep the activity concrete and countable at this age; leg-counting is the entry classification cue that later leads into 'is it an insect?' work — do not expect full insect-vs-arachnid taxonomy yet, and treat '6 legs = insect' as an age-appropriate first cue rather than a strict definition.",
+            "A tap-to-reveal or labelled garden scene teaches the movement vocabulary and highlights legs/wings well, but it does not itself run the sort or the count; pair labelling with an actual sorting and counting task so the form-function link lands.",
+            "A quiz (sort by movement, match feature↔movement, multiple-choice leg counts) can be used to assess or to practise, but recognition responses do not elicit independent construction — have children count aloud, act out movements, and give a reason sentence as well.",
+            "Real observation and slow-motion video of live creatures are valuable: children should see a worm ripple or a bee beat its wings, not only read labels.",
+            "When teaching legless movement, distinguish the worm's body squeeze-and-stretch from the snail's gliding on a muscular foot; do not let children generalise one mechanism to all legless creatures.",
+            "Guard against the common miscounting errors: counting an ant's antennae as legs, or counting only one side of the body."
+          ],
+          "reviewNotes": [
+            "This is an agent semantic rewrite of saved teaching research without fresh source verification; all three listed sources were already marked verified:false in the source row. The activities are research-informed proposals, not validated interventions.",
+            "The original 'static image can't' phrasing was softened: a fixed or labelled image can still teach movement vocabulary; the distinct value of animation/observation is seeing the movement and running the count, stated as an affordance rather than a universal necessity.",
+            "The claim that conversation/dialogue is 'far weaker' and the concept is 'not dialogic' was not retained as a universal law; discussion and spoken explanation are in fact used in the diagnostic and reteach moves. No comparative efficacy of media is asserted because the sources do not establish it.",
+            "The 3D 'adds nothing / lower cost' framing was dropped as catalog cost-ranking, not a pedagogical fact; a 3D jump-arc or burrowing model could offer a different experience if available.",
+            "The reteach reference to a prerequisite micro-topic ID was omitted as an internal catalog identifier; the underlying reteach action (observe a real worm, model inching motion) is preserved.",
+            "Activity 3 sourceClaims set to [] because no source claim directly supports the two-tier diagnostic/discrimination principle; the leg-counting claim is retained in activity 1 where it directly supports grouping.",
+            "The antennae-miscount guard was scoped to the ant, since spiders have no antennae; the 'count both sides' guard remains general.",
+            "Woodlice are crustaceans with about 14 legs, kept as 'many' at this age; the simplification is noted rather than treated as exact."
+          ],
+          "schemaVersion": 2
+        },
+        "assess": {
+          "method": "two_tier",
+          "poeTask": null,
+          "probeDeeper": [
+            "Point to the spider: 'Show me and count — is it really 8? What would make it an insect instead?'",
+            "'A snail has no legs either. Does it move the same way as the worm, or differently?' (foot gliding on slime vs body squeezing — a same-category, different-mechanism counterexample)",
+            "'A centipede — would you expect 6 legs, 8, or lots more? Why?'",
+            "'If something has 6 legs, what does that tell you about what kind of minibeast it might be?'"
+          ],
+          "correctAnswer": "An ant has 6 legs, a spider has 8 legs, and an earthworm has 0 legs. The worm has no legs at all — it moves by squeezing and stretching its body (its muscles push it along, and tiny bristles grip the soil). Different minibeasts move in different ways: walking on legs, crawling, or wriggling.",
+          "errorPatterns": [
+            {
+              "kind": "misconception",
+              "pattern": "Thinks every minibeast has the same number of legs — gives the spider 6 like the ant, or says they all have 'lots of legs' ('they're all bugs, so they're all the same')",
+              "nextMove": "Put a real (or large photo of an) ant and spider side by side and count together, touching each leg. Name the difference: 6 legs = insect, 8 legs = not an insect (spider). Let the count, not the guess, settle it.",
+              "distractor": "They all have 6 legs — they're all bugs",
+              "revealedBy": "Assigns identical leg counts to ant and spider; cannot distinguish 6 from 8; treats 'minibeast' as one uniform kind",
+              "reteachPrerequisiteId": null
+            },
+            {
+              "kind": "misconception",
+              "pattern": "Insists the worm (or snail) has tiny hidden legs because 'it moves, so it must have legs' — cannot picture legless movement",
+              "nextMove": "Watch a real worm (or a clear video) move on a damp surface. Point out the body squeezing and stretching — no legs appear. Let them feel their own arm 'inch' along a table to model muscle-driven, legless motion.",
+              "distractor": "The worm has tiny legs too small to see",
+              "revealedBy": "Second tier: says the worm walks on little legs you can't see, or refuses to accept 0 legs",
+              "reteachPrerequisiteId": "mt_yR1moI5kX1"
+            },
+            {
+              "kind": "performance",
+              "pattern": "Counts legs but treats the number as a meaningless detail — doesn't connect it to how the creature moves or what it is",
+              "nextMove": "Ask them to act it out: walk like an ant, then wriggle like a worm on the carpet. Tie the number of legs to the way of moving so the count carries meaning.",
+              "distractor": null,
+              "revealedBy": "Gets 6/8/0 correct but shrugs at 'how does the worm move?' — no link between body and motion",
+              "reteachPrerequisiteId": null
+            }
+          ],
+          "responseLevels": {
+            "gap": "Gives the same leg count for all three, or claims the worm has hidden legs; treats all minibeasts as one uniform kind of mover.",
+            "full": "Gives 6/8/0 correctly AND explains that the worm moves by squeezing and stretching its body with no legs; transfers the idea to a new case (e.g. predicts a snail also has no legs and glides differently), showing legs-and-motion are connected, not just memorised.",
+            "partial": "Counts the legs correctly (6, 8, 0) but lists them as separate facts — cannot explain how the legless worm actually moves, or connect leg number to way of moving."
+          },
+          "diagnosticPrompt": "Here are three minibeasts: an ant, a spider, and an earthworm. How many legs does each one have? And how does the one with no legs get around?",
+          "whatMakesItDiscriminate": "A child who has actually looked at and counted legs gives three DIFFERENT numbers (6, 8, 0) and can say the worm has none. A child working from a vague 'all bugs are the same' picture gives every creature the same number of legs, or insists the worm must have tiny hidden legs — because they reason 'it moves, so it must have legs' rather than from observation. Forcing the second-tier 'how does the legless one move?' exposes whether they can imagine leg-free motion at all."
+        },
+        "sources": [
+          {
+            "claim": "KS1 Y1 requires pupils to identify and describe common animals and their body parts; observing closely and classifying are core working-scientifically skills.",
+            "source": "DfE National Curriculum in England: Science programmes of study (KS1 Y1 Animals including humans)",
+            "verified": false
+          },
+          {
+            "claim": "Grade 1 students learn that animals have external parts that help them survive, grow and behave — including parts for movement (1-LS1-1).",
+            "source": "NGSS 1-LS1-1 From Molecules to Organisms: Structures and Processes",
+            "verified": false
+          },
+          {
+            "claim": "Counting legs is a developmentally appropriate first classification cue that leads toward distinguishing insects (6 legs) from arachnids (8 legs).",
+            "source": "KS1 minibeast classification pedagogy (general practice)",
+            "verified": false
+          }
+        ],
+        "confidence": "high",
+        "provenance": {
+          "originalResearchGeneratedBy": "claude-opus-4-8 (teaching-research plugin)",
+          "createdAt": "2026-07-03T13:19:18.785Z",
+          "updatedAt": "2026-10-19T15:19:53.649Z"
+        },
+        "publicationNotes": {
+          "omittedCurriculumText": []
+        }
+      }
+    ]
+  },
+  "topics": {
+    "version": "v1",
+    "topicCount": 1,
+    "topics": [
+      {
+        "id": "mt__7hXSTbu9s",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Insects & Minibeasts",
+        "name": "How minibeasts move",
+        "description": "How minibeasts move: crawling (ants, beetles), flying (butterflies, bees), slithering (worms, slugs), jumping (grasshoppers, fleas), burrowing (earthworms). Counting legs as a first step toward grouping creatures.",
+        "centrality": 0.02845528455284553,
+        "evidence": [
+          "Describe at least three different ways minibeasts move such as crawling, flying, and slithering",
+          "Match a minibeast to its way of moving, for example grasshoppers jump and worms slither",
+          "Count legs on a minibeast and notice that ants have six while spiders have eight"
+        ],
+        "assessmentPrompt": "Can {{name}} watch a few minibeasts and describe how each one moves differently — like ants crawling, butterflies flying, and worms wriggling?",
+        "standards": [
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.2"
+        ],
+        "ageRangeStart": 5,
+        "ageRangeEnd": 8
+      }
+    ]
+  }
+}

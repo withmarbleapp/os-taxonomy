@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "e6691485dfc153c152eaafc3d24f40fe9c3be8d9",
+  "status": "Twelve prepared source-fit authoring designs; actual delivery, learner code execution and attainment remain unasserted.",
+  "source": {
+    "catalogue": "the-ontario-curriculum-science-and-technology-20",
+    "edition": 2022,
+    "selectedGrades": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "officialUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-1",
+    "verification": "All twelve actual API identities and mandatory bodies read; same retained formal cores. Specific records have empty elaboration/resource/footnote/non-curriculum lists; overalls have empty resources/why-important lists and retain their actual two child references. Grades4–6 explicitly include skilled trades and the overall includes STEM fields."
+  },
+  "counts": {
+    "positions": 12,
+    "specific": 6,
+    "overall": 6,
+    "newTopics": 0,
+    "changedClaims": 0,
+    "changedGuides": 0,
+    "changedEdges": 0,
+    "changedContexts": 0
+  },
+  "resources": {
+    "programmed-report": {
+      "kind": "Original authored science-report case",
+      "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+      "section": "Programmed reporting changes what people receive"
+    },
+    "ai-captions": {
+      "kind": "Original case with attributed product facts",
+      "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+      "section": "AI captioning can help, with limits"
+    },
+    "machinist": {
+      "kind": "Original fictional task using attributed trade facts",
+      "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+      "section": "Skilled trades: a machinist checks a program"
+    }
+  },
+  "panels": [
+    {
+      "id": "grade-1-a2-2",
+      "code": "ON-SCI-2022-G1-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A2.2",
+      "grade": 1,
+      "kind": "specific",
+      "ageBand": [
+        6,
+        7
+      ],
+      "officialItemId": "90c70f23-d059-4b1e-acbf-393f6ffb1144",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 1: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-1-a2",
+      "code": "ON-SCI-2022-G1-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A2",
+      "grade": 1,
+      "kind": "overall",
+      "ageBand": [
+        6,
+        7
+      ],
+      "officialItemId": "c7f128dd-7bbc-459d-a06a-476a89f5b3f0",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 1: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 1: precise sequence representing the observation"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    },
+    {
+      "id": "grade-2-a2-2",
+      "code": "ON-SCI-2022-G2-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.2",
+      "grade": 2,
+      "kind": "specific",
+      "ageBand": [
+        7,
+        8
+      ],
+      "officialItemId": "39791f3b-d3ac-4a97-acab-965476bab268",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 2: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-2-a2",
+      "code": "ON-SCI-2022-G2-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2",
+      "grade": 2,
+      "kind": "overall",
+      "ageBand": [
+        7,
+        8
+      ],
+      "officialItemId": "68709f0a-51be-4051-ae5a-e9a6bb7e27af",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 2: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 2: decompose, implement and join the parts"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    },
+    {
+      "id": "grade-3-a2-2",
+      "code": "ON-SCI-2022-G3-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.2",
+      "grade": 3,
+      "kind": "specific",
+      "ageBand": [
+        8,
+        9
+      ],
+      "officialItemId": "82ff83fb-1053-4161-904b-50d240be6e83",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 3: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-3-a2",
+      "code": "ON-SCI-2022-G3-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2",
+      "grade": 3,
+      "kind": "overall",
+      "ageBand": [
+        8,
+        9
+      ],
+      "officialItemId": "97d090d5-2bff-45d7-977e-a8670d53201b",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 3: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient."
+      ],
+      "skilledTradeRequired": false,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 3: test, locate and refine an actual bug"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    },
+    {
+      "id": "grade-4-a2-2",
+      "code": "ON-SCI-2022-G4-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-A2.2",
+      "grade": 4,
+      "kind": "specific",
+      "ageBand": [
+        9,
+        10
+      ],
+      "officialItemId": "45a3b532-21c4-4e1c-b2c2-6d4b59728a84",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 4: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-4-a2",
+      "code": "ON-SCI-2022-G4-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-A2",
+      "grade": 4,
+      "kind": "overall",
+      "ageBand": [
+        9,
+        10
+      ],
+      "officialItemId": "5c43a3a7-e3a0-410e-a8c2-08d91c2a4a37",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 4: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 4: deliberately different outputs for different purposes"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    },
+    {
+      "id": "grade-5-a2-2",
+      "code": "ON-SCI-2022-G5-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-A2.2",
+      "grade": 5,
+      "kind": "specific",
+      "ageBand": [
+        10,
+        11
+      ],
+      "officialItemId": "b4796626-0012-4138-bb4b-7303d4a598bd",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 5: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-5-a2",
+      "code": "ON-SCI-2022-G5-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-A2",
+      "grade": 5,
+      "kind": "overall",
+      "ageBand": [
+        10,
+        11
+      ],
+      "officialItemId": "f6b9f401-7214-4629-81c1-76333f5bddb2",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 5: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 5: store, retain and process scientific observations"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    },
+    {
+      "id": "grade-6-a2-2",
+      "code": "ON-SCI-2022-G6-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-A2.2",
+      "grade": 6,
+      "kind": "specific",
+      "ageBand": [
+        11,
+        12
+      ],
+      "officialItemId": "847395c1-e4e3-4893-a656-bace4112299f",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 6: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required."
+      ]
+    },
+    {
+      "id": "grade-6-a2",
+      "code": "ON-SCI-2022-G6-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-A2",
+      "grade": 6,
+      "kind": "overall",
+      "ageBand": [
+        11,
+        12
+      ],
+      "officialItemId": "780911ca-7ca2-4944-8375-b3f8e6423190",
+      "priorDisposition": "Partial",
+      "proposedDisposition": "Full",
+      "taskRef": {
+        "report": "assets/ontario-science-coding/everyday-impact-cases.md",
+        "section": "Grade 6: impact assessment"
+      },
+      "caseIds": [
+        "programmed-report",
+        "ai-captions",
+        "machinist"
+      ],
+      "contributorIds": [
+        "mt_AzTrT5ySCx"
+      ],
+      "requiredImpactOperations": [
+        "Trace an instruction or model output to an everyday consequence for a named user.",
+        "Explain an actual emerging-AI application using the supplied factual case, including a benefit and a relevant limit.",
+        "Change the input, instructions or user need and justify what difference it makes; device naming alone is insufficient.",
+        "Explain how program checking changes a machinist’s work and part quality, while inspection and trained judgment remain necessary; do not assume CNC itself uses AI."
+      ],
+      "skilledTradeRequired": true,
+      "remainingConditions": [],
+      "deliveryConditions": [
+        "Use the actual grade-specific elicitation and preserve the learner’s decisions in accessible spoken, drawn, pointed or written responses.",
+        "The fictional figures and errors are practice cases, not observed product performance or empirical impact measurements.",
+        "No machine operation, private audio upload, personal disclosure, purchase or account sign-in is required.",
+        "Actual saved learner-authored science program and actual run/check evidence from the referenced grade recipe are required; a paper algorithm or teacher animation is insufficient."
+      ],
+      "codingTaskRef": {
+        "report": "assets/ontario-science-coding/shadow-observation-recipes.md",
+        "section": "Grade 6: program different input methods for scientific purposes"
+      },
+      "codingSourceKey": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-A2.1",
+      "integratedAssessment": [
+        "Actually author and execute the grade-specific science investigation/model program; retain prediction, observations, saved code, actual run/check and changed-case evidence.",
+        "Use that actual run to explain how changed instructions alter the information communicated, then independently assess the supplied emerging-technology case for its user, benefit, limit and appropriate response.",
+        "For Grades4–6 include the machinist case as a STEM/trade application. Explain the relation between the programmed process, human checking and consequences; completion is not inferred by counting two child links."
+      ]
+    }
+  ],
+  "wholeClaimBoundary": "These resource-specific applications supplement existing scoped components. No one-case task establishes the complete five-example AI repertoire, full computer vocabulary/readiness, broad historical technology-change claim or a skilled trade qualification. Existing claims, ages, contexts and dependencies remain exact.",
+  "learnerState": "No learner observations, scores, receipts, mastery inferences or database operations are created.",
+  "interpretation": "Full means complete prepared source-task design. Accessible elicitation and real saved code/run evidence are still required at delivery; reading a teacher script or passing these repository checks is not pupil attainment.",
+  "historicalBoundary": "This supplement supersedes only the A2/A2.2 resource conditions in the six dated grade mappings. Historical counts and all unrelated Full/Partial judgments remain historical, not freshly recertified."
+}

@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "base": "365cbe2ef80c7f72f104f625b61d40ec2aa85534",
+  "topicId": "mt_jJjjV2WtS6",
+  "scope": "One primary-age11–12 reusable conceptual claim; no old topic/guide/age/prerequisite change.",
+  "canonicalCardBinding": {
+    "file": "data/topics.json",
+    "topicId": "mt_jJjjV2WtS6"
+  },
+  "guideBinding": {
+    "file": "data/teaching-research.json",
+    "topicId": "mt_jJjjV2WtS6"
+  },
+  "grain": "One reusable qualitative explanatory model of aerodynamic flight, not a topic per force/grade/expectation. Does not replace generic representation, actual force investigation or broader later-law claims.",
+  "existingWholeClaimMatrix": [
+    {
+      "topicId": "mt_Y9k86G8BBT",
+      "wholeCurrentCard": {
+        "id": "mt_Y9k86G8BBT",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Air Resistance & Friction",
+        "description": "Identify the effects of air resistance, water resistance, and friction, and understand that these forces act between moving surfaces to oppose motion",
+        "centrality": 0.01016260162601626,
+        "evidence": [
+          "Define air resistance, water resistance, and friction as forces that oppose motion",
+          "Give everyday examples of each force and explain how they slow things down",
+          "Describe how these forces depend on factors like speed, surface area, or surface texture"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why a parachute slows you down, why swimming is harder than walking, and why bike brakes use rubber pads?",
+        "standards": [
+          "acara-v9:AC9S4U03",
+          "acara-v9:AC9TDE4K02",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4",
+          "uk-nc-2013:Y5.Sci.F.2"
+        ],
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse drag/resistance component",
+      "decisiveMismatch": "Whole claim covers opposing resistance, including water/surface friction. Does not identify aerodynamic lift or propulsion thrust."
+    },
+    {
+      "topicId": "mt_fkcxpeYP85",
+      "wholeCurrentCard": {
+        "id": "mt_fkcxpeYP85",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Weather & Climate",
+        "name": "The Atmosphere",
+        "description": "Know that Earth is surrounded by a layer of air called the atmosphere, that air has weight and exerts pressure, that the atmosphere protects us from harmful radiation and keeps the planet warm enough for life, and that weather happens in the lowest layer (troposphere)",
+        "centrality": 0.0274390243902439,
+        "evidence": [
+          "Define the atmosphere as the layer of air surrounding Earth",
+          "State that air has weight and exerts pressure",
+          "Explain that weather occurs in the troposphere, the lowest layer of the atmosphere"
+        ],
+        "assessmentPrompt": "Can {{name}} explain that we're surrounded by a blanket of air called the atmosphere, that this air actually has weight and pushes on everything, and that all our weather happens in the lowest layer?",
+        "standards": [
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.1"
+        ],
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse air/pressure prerequisite component",
+      "decisiveMismatch": "Air mass/pressure/troposphere evidence does not require the moving-wing lift account."
+    },
+    {
+      "topicId": "mt_sUVeVXzRuq",
+      "wholeCurrentCard": {
+        "id": "mt_sUVeVXzRuq",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Mass vs Weight",
+        "description": "Distinguish between mass (amount of matter, measured in kg) and weight (gravitational force, measured in N), use the equation weight = mass × gravitational field strength, and explain why g differs on other planets and stars",
+        "centrality": 0.01524390243902439,
+        "evidence": [
+          "Explains the difference between mass and weight with correct units for each",
+          "Calculates weight using W = mg with g = 10 N/kg on Earth",
+          "Predicts what would happen to an object's weight on the Moon or Jupiter",
+          "Explains why mass stays constant but weight changes in different gravitational fields"
+        ],
+        "assessmentPrompt": "If {{name}} weighed themselves on bathroom scales and was then asked what they would weigh on the Moon, could they explain the difference between mass and weight and work out a rough answer?",
+        "standards": [
+          "ngss-ms:MS-PS2-4",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.4",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-E2.3",
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.10"
+        ],
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse weight-as-force component",
+      "decisiveMismatch": "Whole claim includes W=mg and other fields; neither lift nor propulsion knowledge is assessed."
+    },
+    {
+      "topicId": "mt_k7GOtslF-x",
+      "wholeCurrentCard": {
+        "id": "mt_k7GOtslF-x",
+        "type": "REPRESENTATIONAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Drawing Force Diagrams",
+        "description": "Draw and interpret force diagrams showing forces as labelled arrows — where the arrow's length represents the force's magnitude and its direction shows which way the force acts; show multiple forces on one object; identify from the diagram whether forces are balanced (equal arrows in opposite directions, no resultant) or unbalanced (arrows of different sizes, producing a resultant); represent the resultant with a single arrow",
+        "centrality": 0.02540650406504065,
+        "evidence": [
+          "Draw a force diagram with labelled arrows showing direction and relative size for at least two forces acting on an object",
+          "Use their diagram to explain whether forces are balanced or unbalanced and what will happen to the object",
+          "Add a resultant force arrow to a diagram and explain how they calculated it"
+        ],
+        "assessmentPrompt": "If {{name}} is asked to draw a diagram of all the forces acting on a stationary book on a table, can they draw two arrows — one pointing down for gravity and one pointing up from the table — and explain why, if they're balanced, the book doesn't move?",
+        "standards": [
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3"
+        ],
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "decision": "Keep representational claim separate",
+      "decisiveMismatch": "Can draw the directions/sizes of supplied forces without knowing where aircraft lift/thrust arise."
+    },
+    {
+      "topicId": "mt_3WMADSy0mA",
+      "wholeCurrentCard": {
+        "id": "mt_3WMADSy0mA",
+        "type": "PROCEDURAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Balanced & Unbalanced Forces",
+        "description": "Plan and conduct an investigation to provide evidence of the effects of balanced and unbalanced forces on the motion of an object",
+        "centrality": 0.02235772357723577,
+        "evidence": [
+          "Define balanced forces (equal in size, opposite in direction — no change in motion) and unbalanced forces (cause motion to change)",
+          "Plan a fair test investigating how different force sizes affect an object's motion",
+          "Use results as evidence to explain when forces are balanced versus unbalanced"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why a book sitting on a table doesn't move (balanced forces) but slides when you push it (unbalanced forces)?",
+        "standards": [
+          "ngss-k5:3-PS2-1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.4",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.6",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.3"
+        ],
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "decision": "Keep actual-investigation procedure separate",
+      "decisiveMismatch": "Fair testing force effects is distinct from knowing how aerodynamic flight works."
+    },
+    {
+      "topicId": "mt_8VA40Tumth",
+      "wholeCurrentCard": {
+        "id": "mt_8VA40Tumth",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Organisms & Life Processes",
+        "name": "Structures for Survival",
+        "description": "Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behaviour, and reproduction",
+        "centrality": 0.01321138211382114,
+        "evidence": [
+          "Give examples of external structures and their survival functions (e.g. thorns for protection, claws for catching prey)",
+          "Give examples of internal structures and their functions (e.g. heart pumps blood, lungs take in air)",
+          "Construct a reasoned argument linking a specific structure to how it helps the organism survive or reproduce"
+        ],
+        "assessmentPrompt": "Can {{name}} explain how a cactus's thick stem helps it survive in a desert, or how a bird's wings help it find food?",
+        "standards": [
+          "acara-v9:AC9S5U01",
+          "ngss-k5:4-LS1-1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-D2.4",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.5"
+        ],
+        "ageRangeStart": 9,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse organism structure/function for D2.5",
+      "decisiveMismatch": "General structure/function argument does not require an all-four-force model."
+    },
+    {
+      "topicId": "mt_fDoE-pL6Jv",
+      "wholeCurrentCard": {
+        "id": "mt_fDoE-pL6Jv",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Organisms & Life Processes",
+        "name": "Animal Body Groups",
+        "description": "Describe and compare the external body structure of common animals across groups (fish, amphibians, reptiles, birds, mammals)",
+        "centrality": 0.04776422764227643,
+        "evidence": [
+          "Describe key structural features of at least three animal groups (e.g. scales, feathers, fur)",
+          "Compare two animals from different groups, noting at least two differences",
+          "Use words like 'wings', 'fins', 'legs', 'tail' correctly when describing an animal"
+        ],
+        "assessmentPrompt": "Can {{name}} describe how a fish's body is different from a bird's body and explain features like scales, feathers, or fins?",
+        "standards": [
+          "acara-v9:AC9SFU01",
+          "ngss-k5:1-LS1-1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-B2.3",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G2-B2.1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G6-D2.5",
+          "uk-nc-2013:Y1.Sci.A.3"
+        ],
+        "ageRangeStart": 5,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse animal structural comparison",
+      "decisiveMismatch": "Naming wings/body groups is not aerodynamic cause or flight control."
+    },
+    {
+      "topicId": "mt_cOJhDeLkPo",
+      "wholeCurrentCard": {
+        "id": "mt_cOJhDeLkPo",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Design & Technology",
+        "name": "Factors that shape designs",
+        "description": "Examine factors that influence the design of products, services and environments to meet community needs — sustainability (materials, energy, waste), cost, safety, function and appearance — and explain how designers prioritise competing factors",
+        "centrality": 0.03353658536585366,
+        "evidence": [
+          "Identify the factors a designer considered in a familiar product or place (e.g. a playground: safety, cost, shade, accessibility)",
+          "Explain how sustainability affected a real design (e.g. recycled-plastic benches, solar lights in a park, a reusable coffee cup)",
+          "Rank competing factors (e.g. function, safety, cost, users' needs) for a design brief, explain the priority order and the trade-off it creates (e.g. a more sustainable choice might cost more)"
+        ],
+        "assessmentPrompt": "Can {{name}} explain why a park bench might be made from recycled plastic — and what else designers had to think about, like cost and safety?",
+        "standards": [
+          "acara-v9:AC9TDE4K01",
+          "acara-v9:AC9TDE6K01",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-C1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-C1.1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-C1.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-D1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-D1.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-C1.2",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G5-E1.2"
+        ],
+        "ageRangeStart": 8,
+        "ageRangeEnd": 12
+      },
+      "decision": "Reuse impact/design trade-off task",
+      "decisiveMismatch": "Sustainability/function/cost reasoning is not the physical flight model."
+    },
+    {
+      "topicId": "mt_GBY8enpzO0",
+      "wholeCurrentCard": {
+        "id": "mt_GBY8enpzO0",
+        "type": "LANGUAGE",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Forces Vocabulary",
+        "description": "Name and describe forces using precise vocabulary — force, push, pull, twist, stretch, squash, contact force, non-contact force, gravity, weight, friction, air resistance, upthrust — and distinguish between forces that require physical contact and forces that act at a distance",
+        "centrality": 0.0315040650406504,
+        "evidence": [
+          "Correctly name the force acting in at least five given scenarios (e.g. 'friction slows the sledge', 'gravity pulls the apple')",
+          "Distinguish between contact forces (friction, upthrust) and non-contact forces (gravity, magnetism) using the correct terms",
+          "Use 'weight' correctly as a force — distinct from 'mass' — in descriptions"
+        ],
+        "assessmentPrompt": "If {{name}} slides down a slide and slows near the bottom, can they name the force responsible and spell it correctly?",
+        "standards": [
+          "acara-v9:AC9S1U03",
+          "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.1"
+        ],
+        "ageRangeStart": 5,
+        "ageRangeEnd": 9
+      },
+      "decision": "Preserve vocabulary scope",
+      "decisiveMismatch": "Upthrust and contact/noncontact naming cannot stand in for aerodynamic lift/thrust; no silent vocabulary expansion."
+    },
+    {
+      "topicId": "mt_fkwcCB5px7",
+      "wholeCurrentCard": {
+        "id": "mt_fkwcCB5px7",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Deformation & Fluid Pressure",
+        "description": "Explain forces associated with deforming objects (elastic and inelastic deformation), thermal expansion and contraction of materials, and how fluid pressure acts in all directions and increases with depth",
+        "centrality": 0.007113821138211382,
+        "evidence": [
+          "Distinguishes elastic deformation (returns to shape) from inelastic/plastic deformation (permanently changed)",
+          "Explains why bridges and railway tracks have expansion gaps",
+          "Explains why pressure increases with depth in a liquid (e.g. why deep-sea divers need pressure suits)",
+          "Gives an everyday example of thermal expansion causing a problem or being used usefully"
+        ],
+        "assessmentPrompt": "If {{name}} noticed the lid on a jar was very tight, could they explain why running it under hot water helps — and what's happening to the metal as it heats up?",
+        "standards": [
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.5"
+        ],
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13
+      },
+      "decision": "Reject later compound as substitute",
+      "decisiveMismatch": "Elasticity, expansion and depth-dependent fluid pressure are independently assessed broader duties; not a moving-wing model."
+    },
+    {
+      "topicId": "mt_vuNjYx3qOy",
+      "wholeCurrentCard": {
+        "id": "mt_vuNjYx3qOy",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Moments, Pressure & Hooke's Law",
+        "description": "Calculate the turning effect (moment = force × perpendicular distance), explain how pressure is transmitted equally in liquids (Pascal's principle) and the concept of atmospheric pressure, and describe Hooke's Law (extension ∝ force up to the elastic limit)",
+        "centrality": 0.01117886178861789,
+        "evidence": [
+          "Calculates the moment of a force and uses the principle of moments to solve lever problems",
+          "Explains why hydraulic systems can multiply force (pressure transmitted equally)",
+          "States Hooke's Law and plots force-extension graphs identifying the elastic limit",
+          "Calculates spring constant k from a force-extension graph (k = F/x)"
+        ],
+        "assessmentPrompt": "If {{name}} was using a long spanner to loosen a tight bolt, could they explain why a longer spanner makes it easier — and work out what force would be needed with a spanner of a specific length?",
+        "standards": [
+          "ngss-ms:MS-PS2-2",
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.6",
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.9"
+        ],
+        "ageRangeStart": 12,
+        "ageRangeEnd": 14
+      },
+      "decision": "Reject later compound as substitute",
+      "decisiveMismatch": "Moments, hydraulic pressure and Hooke calculations are distinct; would add unrelated quantitative gates."
+    },
+    {
+      "topicId": "mt_tXxxCFl32J",
+      "wholeCurrentCard": {
+        "id": "mt_tXxxCFl32J",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Newton's First & Second Laws",
+        "description": "State and apply Newton's First Law (an object stays at rest or constant velocity unless acted on by a resultant force) and Second Law (force = mass × acceleration), including the relationship between mass, force, and acceleration",
+        "centrality": 0.01321138211382114,
+        "evidence": [
+          "States Newton's First Law and gives a real example (e.g. why a moving spacecraft doesn't need engines in space)",
+          "Uses F = ma to calculate force, mass, or acceleration given the other two quantities",
+          "Explains why a heavier object requires more force to achieve the same acceleration",
+          "Explains why seatbelts are needed in cars using Newton's First Law"
+        ],
+        "assessmentPrompt": "If {{name}} was asked why you need a seatbelt in a car but not when sitting still, could they explain what Newton's First Law says about moving objects — and then calculate how much force a 60 kg person experiences in a sudden stop?",
+        "standards": [
+          "ngss-ms:MS-PS2-1",
+          "ngss-ms:MS-PS2-2",
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.7"
+        ],
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13
+      },
+      "decision": "Keep later quantitative law claim",
+      "decisiveMismatch": "F=ma calculation and seatbelt/general-law applications are broader; a qualitative new model need not require all of them."
+    },
+    {
+      "topicId": "mt_fbYbe3YSVj",
+      "wholeCurrentCard": {
+        "id": "mt_fbYbe3YSVj",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Forces & Motion",
+        "name": "Newton's Third Law",
+        "description": "State and apply Newton's Third Law: every force has an equal and opposite reaction force acting on a different object, distinguishing action-reaction pairs from balanced forces",
+        "centrality": 0.01219512195121951,
+        "evidence": [
+          "States Newton's Third Law correctly, identifying both the action and reaction force and the objects they act on",
+          "Gives at least two real-world examples (e.g. rocket propulsion, swimmer pushing off a wall)",
+          "Distinguishes a Newton's Third Law pair from balanced forces on the same object",
+          "Explains why a gun recoils when fired using Newton's Third Law"
+        ],
+        "assessmentPrompt": "If {{name}} saw a video of a rocket launching into space, could they explain what force is pushing the rocket upward and where that force comes from — and which law of motion that demonstrates?",
+        "standards": [
+          "ngss-ms:MS-PS2-1",
+          "uk-nc-2013:KS3.Sci.Phys.MotionAndForces.7"
+        ],
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13
+      },
+      "decision": "Keep later reaction-pair claim",
+      "decisiveMismatch": "General equal/opposite forces on different bodies do not by themselves identify the aircraft forces or explain a wing; not required as a hard gate."
+    },
+    {
+      "topicId": "mt_mqQ-DtH5m-",
+      "wholeCurrentCard": {
+        "id": "mt_mqQ-DtH5m-",
+        "type": "CONCEPTUAL",
+        "subject": "Science",
+        "domain": "Dinosaurs & Paleontology",
+        "name": "Dinosaur-to-Bird Transition",
+        "description": "Trace the evidence for the dinosaur-to-bird transition in depth: feathered theropods from the Liaoning Formation (China), the mix of dinosaur and bird features in Archaeopteryx, and the competing ground-up versus trees-down hypotheses for the origin of flight",
+        "centrality": 0.07113821138211382,
+        "evidence": [
+          "Describes at least three specific feathered theropod fossils (e.g. Microraptor, Anchiornis, Sinosauropteryx) and what each tells us",
+          "Describes Archaeopteryx as showing a mix of bird features (feathers, wishbone) and dinosaur features (teeth, clawed wings, long bony tail)",
+          "Outlines the ground-up (running and leaping) and trees-down (gliding from trees) hypotheses for flight origin and the evidence supporting each"
+        ],
+        "assessmentPrompt": "If {{name}} was told that a sparrow is technically a living dinosaur, could they explain the chain of fossil evidence that supports this — naming at least one key transitional fossil and describing what makes it part dinosaur, part bird?",
+        "standards": [],
+        "ageRangeStart": 11,
+        "ageRangeEnd": 13
+      },
+      "decision": "Reject fossil/history substitute",
+      "decisiveMismatch": "Fixed fossil evidence and flight-origin hypotheses do not assess present-day aerodynamic flight."
+    }
+  ],
+  "independentWitnesses": {
+    "genericSuccessNewFailure": "A learner can draw and add correctly supplied force arrows, calculate weight or conduct a cart fair test, yet believe an engine directly supplies wing lift or that equal air-parcel travel time is required. Existing evidence can pass while the new explanation fails.",
+    "newSuccessGenericFailure": "A learner can explain and transfer the qualitative flight model using supplied text/arrows while not conducting an independent balanced-force experiment, calculating general F=ma/W=mg, or producing a complete force diagram. Success does not imply those whole claims.",
+    "nearMiss": "Four memorised words and a level diagram, with no source/direction or airflow account, fail the new evidence.",
+    "transfer": "An unpowered glider and an averaged bird/turn case discriminate the model from a fixed engine-lifts/always-vertical-lift picture."
+  },
+  "newDependencies": [
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_B3W5EfimJw",
+      "strength": "hard",
+      "reason": "The complete prior pushes/pulls claim supplies force strength and direction causing motion changes, which the qualitative flight account presupposes."
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_Y9k86G8BBT",
+      "strength": "soft",
+      "reason": "A familiar resistance account supports drag, but its full water/surface repertoire is not intrinsic to explaining the wing/air model."
+    }
+  ],
+  "hardGateExclusions": "No hard gate on entire mass/weight equations, force investigation, force diagrams, later Newton laws, hydraulic pressure or full atmosphere/weather claim.",
+  "sourceContributions": [
+    {
+      "claim": "Air interacting with the moving surface creates aerodynamic lift/drag; gravity and propulsion are different force sources, and their vector combination explains qualitative steady/changing flight.",
+      "source": "NASA Glenn Research Center — Four Forces on an Airplane",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+      "verified": true
+    },
+    {
+      "claim": "Pressure distribution and flow turning are compatible descriptions of aerodynamic force; the equal-transit-time wing explanation is incorrect.",
+      "source": "NASA Glenn Research Center — Bernoulli and Newton",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/",
+      "verified": true
+    },
+    {
+      "claim": "Relative flow, surface geometry and orientation affect aerodynamic force; a curved upper surface is not a universal prerequisite.",
+      "source": "NASA Glenn Research Center — Factors That Affect Lift",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/factors-that-affect-lift/",
+      "verified": true
+    },
+    {
+      "claim": "Aircraft control surfaces and propulsion have different functions; surface configuration can change aerodynamic forces.",
+      "source": "NASA Glenn Research Center — Airplane Parts and Function",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/airplane-parts-function/",
+      "verified": true
+    },
+    {
+      "claim": "Large inclination can cause flow separation; small-change force reasoning must not be extrapolated without limit.",
+      "source": "NASA Glenn Research Center — Inclination Effects on Drag",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/inclination-effects-on-drag/",
+      "verified": true
+    },
+    {
+      "claim": "Aerodynamic lift depends on relative airflow, distinct from buoyancy; a wing fixed to the ground can experience aerodynamic force in moving air.",
+      "source": "NASA Glenn Research Center — nasa-relative-air",
+      "url": "https://www.grc.nasa.gov/WWW/k-12/VirtualAero/BottleRocket/airplane/move.html",
+      "verified": true
+    },
+    {
+      "claim": "An unpowered glider can have lift, drag and weight without propulsion thrust.",
+      "source": "NASA Glenn Research Center — nasa-glider",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/three-forces-on-a-glider/",
+      "verified": true
+    },
+    {
+      "claim": "A glider with constant forward and downward velocity can have balanced force components; the straight-level four-force arrangement is not universal.",
+      "source": "NASA Glenn Research Center — nasa-equilibrium",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/equilibrium/",
+      "verified": true
+    },
+    {
+      "claim": "Bird flight feathers provide a coherent wing surface and tail feathers support flight control; feathers can also serve nonflight functions.",
+      "source": "Cornell Lab of Ornithology — Everything You Need To Know About Feathers",
+      "url": "https://academy.allaboutbirds.org/feathers-article/",
+      "verified": true
+    },
+    {
+      "claim": "The named Jamaican fruit bat study linked small wing-membrane muscles with coordinated activity and changes in wing stiffness/shape; this does not establish an identical mechanism in all bats.",
+      "source": "Brown University Engineering — Tiny muscles help bats fine-tune flight",
+      "url": "https://engineering.brown.edu/news/2014-05-24/tiny-muscles-help-bats-fine-tune-flight",
+      "verified": true
+    }
+  ],
+  "researchLimits": "Technical factual sources are checked, with explicit read scopes in the flight task dossier. Original activity proposals have low teaching-effectiveness confidence, not validated intervention claims. The canonical guide is self-contained and does not depend on report files being published.",
+  "sourceDuties": [
+    "ON-SCI-2022-G6-D2",
+    "ON-SCI-2022-G6-D2.1",
+    "ON-SCI-2022-G6-D2.2",
+    "ON-SCI-2022-G6-D2.3",
+    "ON-SCI-2022-G6-D2.4"
+  ],
+  "caseBankFile": "ontario-grade6-flight-mechanics-task-design-2026-11-11.json",
+  "requiredAssessmentCriteria": [
+    "Identify lift, drag, weight and thrust in a supplied aircraft case, explaining where each comes from and its direction: drag opposes the flyer's motion relative to surrounding air, lift is perpendicular to that motion, and weight points towards Earth. Explain that lift comes from interaction with moving air, is not merely buoyancy and cannot be inferred from a curved wing drawing or an equal-transit-time story alone.",
+    "Explain a straight, level constant-velocity case with balanced forces and an initial changed-force case that speeds up, slows or changes direction. Distinguish constant velocity from being stationary, and recognise that a constant-speed turn still changes velocity; use supplied arrows or an ordinary-language account without requiring a new drawing procedure.",
+    "Explain bounded ways to change the force account through propulsion setting, surface shape/orientation, relative airflow or carried mass. Name which forces are affected, allow interacting effects and reject the rule that increasing a wing angle always improves lift.",
+    "Transfer the model to a contrasting supplied flyer such as an unpowered descending glider or a time-averaged bird case. Explain why no engine does not mean no aerodynamic lift, why all four forces need not be nonzero, and why a straight-level diagram cannot simply be copied into every situation."
+  ],
+  "existingClaimChanges": []
+}

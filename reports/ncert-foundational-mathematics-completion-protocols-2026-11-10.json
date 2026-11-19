@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "meaning": "Original source-fit protocols, not learner observations or copied curriculum wording.",
+  "source": "ncert-ncfse-2023-ed2024",
+  "tasks": [
+    {
+      "id": "group-counting",
+      "sourceCodes": [
+        "C-8.3"
+      ],
+      "setup": "Collections below one hundred, five/ten/twenty packs and number tracks.",
+      "positiveEvidence": "Count both directions from varied starting points and connect five-, ten- and twenty-step sequences to actual equal groups. For example, show four groups of twenty and remaining single objects, and explain the same progression as a constant-step pattern.",
+      "nearMiss": "Reciting from one or reproducing only a ten-step example does not establish the full set. A twenty-step task is not a new difficulty topic.",
+      "transfer": "Use a different starting point or collection with a remainder, keeping every total within the source range."
+    },
+    {
+      "id": "both-order-directions",
+      "sourceCodes": [
+        "C-8.4"
+      ],
+      "setup": "Varied two-digit numeral cards, including close tens/ones contrasts.",
+      "positiveEvidence": "Order the cards in both directions and justify comparisons with digit values; deliberately include 36 versus 63 and adjacent decades.",
+      "nearMiss": "Copying or reversing an unexplained model sequence is insufficient. An absent descending example in the old evidence list was a performance-design condition, not a missing claim.",
+      "transfer": "Change the set and ask for the opposite order without first supplying a worked arrangement."
+    },
+    {
+      "id": "two-digit-fluency",
+      "sourceCodes": [
+        "C-8.6"
+      ],
+      "setup": "Two-digit operands, concrete/diagram/mental representations and varied everyday word problems in the nonnegative whole-number domain.",
+      "positiveEvidence": "Use accurate, efficient and explainable composition/decomposition for addition and subtraction; include higher addition results such as 76+68 and regrouping subtraction such as 84−37. Relate a representation to a mental strategy and interpret a corresponding everyday problem. The existing two-digit-operand claim has no result-below-one-hundred restriction; the source-fit protocol explicitly checks the fluency condition rather than assuming it from one correct result.",
+      "nearMiss": "Do not treat the within-one-hundred fluency claim alone as coverage of every two-digit addition result. Do not infer fluency from slow one-by-one counting, or import negative subtraction / decimals from an unbounded literal reading of operands.",
+      "transfer": "Change the numerical structure and word-problem situation; explain a suitable strategy and verify the answer without another numerical-range topic.",
+      "qualityBoundary": "The protocol specifies source-fit accuracy / efficiency / flexibility. No learner performance, timing threshold or automatic state transfer is claimed."
+    },
+    {
+      "id": "measurement-selection",
+      "sourceCodes": [
+        "C-8.9"
+      ],
+      "setup": "An immediate-environment measurement station with different length, mass and volume objects and several suitable/unsuitable instruments and unit labels.",
+      "positiveEvidence": "Independently choose a suitable tool and unit for each attribute, explain the choice, then measure and record. Use a ruler/tape for length, balance/scale for mass and measuring container for liquid volume; include misleading objects where size alone is unhelpful. The existing strategic-tool claim contributes actual choice, not merely operating an instrument handed over by an adult.",
+      "nearMiss": "A correct reading from the only supplied instrument does not establish autonomous selection. Weighing a liquid is not a volume measurement without additional assumptions.",
+      "transfer": "Choose tools for a new object from a changed mixed set, explain why an unsuitable tool fails, and use the selected tool correctly.",
+      "wholeClaimReadback": "Standard-unit and instrument-use claims retain their full scope. The strategic-choice claim is also checked with suitable primary examples of mental versus written calculation and model selection, including supplied fraction/decimal representations; a measuring-only activity is not presented as a complete assessment of that broader topic. This is one source-fit route, not an added universal NCERT fraction/decimal prerequisite."
+    },
+    {
+      "id": "calendar-intervals",
+      "sourceCodes": [
+        "C-8.10"
+      ],
+      "setup": "A supplied timer plus a calendar with explicit day, week and whole-month boundaries and a visible year change.",
+      "positiveEvidence": "Actually time a short event in minutes/hours, count calendar-day and whole-week intervals, and count marked whole-month intervals such as first of March to first of June and first of December to first of February in the next year. Explain the gap count and check it on the calendar.",
+      "nearMiss": "Reading a clock face or reciting month facts alone is insufficient. Do not count both endpoint month names inclusively, use a universal thirty-day month, or invent conventions for unmatched end-of-month dates.",
+      "transfer": "Use another marked interval, including a year change, while preserving the supplied calendar’s month structure and units.",
+      "claimChange": "The calendar claim gains explicit whole-month interval assessment coverage while retaining all previous requirements. This is not wording-only; downstream semantic compatibility needs separate review. No learner reset or transfer is authorized."
+    },
+    {
+      "id": "local-transactions",
+      "sourceCodes": [
+        "C-8.11"
+      ],
+      "setup": "Faithful local INR play money with checked values/features, stated prices and buyer/seller roles; all transaction totals within the source limit.",
+      "positiveEvidence": "Read the prices, choose/count sufficient payment, exchange the material, calculate/count back correct change and check the transaction. For example, combine two prices totalling forty-five rupees, pay fifty and return five. Include main/smaller-unit notation where the linked notation claim is assessed, with the currency relationship explicitly grounded in the material.",
+      "nearMiss": "A numerical word-problem answer or recognising a coin alone does not demonstrate the whole transaction. Do not infer value from piece size or import foreign denomination/rounding rules.",
+      "transfer": "Change the item prices or payment pieces, then reverse buyer/seller roles and identify an incorrect change amount.",
+      "resourceBoundary": "This is an authoring protocol, not an actual purchase or observed learner performance. Local material binding must be accurate; no real payment is made by the repository change."
+    },
+    {
+      "id": "receptive-expressive-vocabulary",
+      "sourceCodes": [
+        "C-8.12"
+      ],
+      "setup": "Objects, quantities, shapes, position diagrams, measurements and simple written procedures in an explicitly documented accessible task language.",
+      "positiveEvidence": "Follow and give instructions using precise quantity, shape, space and measurement words; describe a procedure, include the unit and use the relevant symbols correctly. Check meaning through action/representation as well as spoken labels.",
+      "nearMiss": "Naming a few shapes alone does not cover receptive instructions or measurement/procedure vocabulary. Skill in one language or orthography does not establish the same vocabulary in another.",
+      "transfer": "Interpret a new instruction and explain a similar procedure in a different representation without relying on a rehearsed sentence."
+    },
+    {
+      "id": "pose-and-solve",
+      "sourceCodes": [
+        "C-8.13"
+      ],
+      "setup": "A neutral scene with collections, boxes, ribbons or shape pieces; the adult does not supply the unknown or a ready mathematical question.",
+      "positiveEvidence": "The learner chooses what to find out, formulates an answerable mathematical question, identifies relevant available/needed information and an appropriate criterion/method, then uses the existing modelling and calculation/geometry/measurement claims to solve and check it. Permit speech, pointing, drawings or models.",
+      "nearMiss": "Repeating the adult’s question is not evidence of choosing the mathematical unknown. A preference question needs a mathematical criterion; a missing-data question needs its required information identified. Do not turn English grammar or question-word mastery into a hard gate.",
+      "transfer": "Pose and solve a different quantity, shape/fit, spatial or measure problem, rather than only change the numbers in a supplied addition template.",
+      "newClaim": "mt_rCy4qtUwuT supplies problem formulation; the existing modelling claims supply representation, prediction, interpretation and checking. The new claim does not duplicate solving."
+    },
+    {
+      "id": "goal-integration",
+      "sourceCodes": [
+        "CG-8"
+      ],
+      "setup": "A meaningful shared mathematical investigation with quantity resources, shapes, measures and a simple transaction; use multiple short activities rather than one overwhelming assessment.",
+      "positiveEvidence": "Choose and formulate a question, count/group/order quantities, use arithmetic or a pattern, analyse/create/classify a shape, express a spatial relationship, select a measuring method, measure/calendar-time a relevant interval and interpret a simple transaction. Communicate the methods and results. Include the separately defined contextual confidence/value reflection without converting it to a mastery score.",
+      "nearMiss": "Links to child codes alone do not establish whole-goal coverage. Neither a correct sum nor a positive reflection replaces the other academic operations.",
+      "transfer": "Adapt the investigation to a new practical or playful purpose and explain which methods and representations remain useful.",
+      "contextualRequirement": "The C8.14 reflection protocol is part of the authoring response, with its own separate contextual disposition. Full here describes the composite goal design, not a claim that C8.14 became binary mastery or that any learner has attained it."
+    }
+  ],
+  "acceptedInitialReview": "ncert-foundational-mathematics-alignment-2026-11-10.json",
+  "contextualAffectiveProtocol": "ncert-foundational-affective-protocol-2026-11-10.json"
+}

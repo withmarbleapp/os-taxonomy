@@ -1,0 +1,1682 @@
+{
+  "reviewVersion": 1,
+  "date": "2026-11-09",
+  "dependency": {
+    "state": "unmerged-proposal",
+    "branch": "curriculum/ontario-science-g2-20261109",
+    "commit": "b11e7757128d8e17ba9035b943126e31c7367e93",
+    "note": "Dependent Grade2proposal including lead-reviewed Grade1 components; not accepted-main or deployment status."
+  },
+  "source": {
+    "slug": "the-ontario-curriculum-science-and-technology-20",
+    "grade": "3",
+    "version": "2022",
+    "expectationsUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/2f86e2c9-a6e7-4c27-90a1-d36810a4aa6d/SciTech_G3_AODA.pdf",
+    "expectationsSha256": "d8fe53858d6120a5c264315bb02af494a2d850dcebc83b7bbc4b337eb21762c4",
+    "contextUrl": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/36038265-bd6d-4991-882b-52b4b06c32d0/The%20Ontario%20Curriculum%20Grades%201%E2%80%938%20%E2%80%93%20Science%20and%20Technology%202022_2.pdf",
+    "contextSha256": "1ade9235dcacf15c27dcc92328d1f883c3026c1687bf40368448b39ec6e4bd74",
+    "contextPrintedPages": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123
+    ]
+  },
+  "supportingResources": [
+    {
+      "id": "ontario-farm-soils",
+      "publisher": "Ontario Ministry of Agriculture, Food and Rural Affairs",
+      "title": "Starting a Farm in Ontario, Publication61",
+      "url": "https://files.ontario.ca/omafra-starting-a-farm-in-ontario-pub-61-en-2023-04-21.pdf",
+      "sha256": "b56521ecf4004aa1c4100e7a4b5207002dbb1277c7a6da7f27cb4ecf010fe118",
+      "printedPages": [
+        14,
+        15
+      ],
+      "role": "Verify Ontario soil-type/property examples; not a new curriculum or practical farm instruction."
+    },
+    {
+      "id": "ontario-vegetable-guide",
+      "publisher": "Ontario Ministry of Agriculture, Food and Rural Affairs",
+      "title": "Guide to Vegetable Production in Ontario, Publication839,2024",
+      "url": "https://www.ontario.ca/files/2024-02/omafra-guide-to-vegetable-production-in-ontario-en-2024-02-15.pdf",
+      "sha256": "525de1736534a5fa7a5b0f06f17e5e50a02277b9801e0728ea53d1a01d75456f",
+      "printedPages": [
+        130,
+        184
+      ],
+      "role": "Verify carrot/garlic soil-property case examples, with preferences and other growing conditions distinguished; no production rates or chemical advice."
+    },
+    {
+      "id": "ontario-soil-management",
+      "publisher": "Ontario Soil and Crop Improvement Association, Environmental Farm Plan",
+      "title": "Soil Management, Infosheet15, based on fifth-edition2025workbook",
+      "url": "https://www.ontariosoilcrop.org/wp-content/uploads/2025/09/15.-2025_EFP-Infosheet-15_Soil-Management_EN_FINAL_AODA.pdf",
+      "sha256": "a9ef060c4067065c9b3e0892e41efde378c8727863f9084cb6f14b442947efd8",
+      "pdfPages": [
+        2,
+        3
+      ],
+      "role": "Verify local erosion effects and use of vegetative cover/windbreaks; supplement provides context, not curriculum authority."
+    }
+  ],
+  "scope": {
+    "jurisdiction": "Canada/Ontario",
+    "ages": [
+      8,
+      9
+    ],
+    "selectedCodes": 55,
+    "specific": 44,
+    "overall": 11,
+    "noOfficialWordingIncluded": true
+  },
+  "interpretation": "Semantic authoring judgments do not certify learner mastery, delivered performance or consumer eligibility. Existing-topic components, prerequisites and candidate-only references are distinguished. Conditions do not authorize new topics or changes to existing claims. Supporting resources verify context examples, not additional mandatory curriculum content.",
+  "counts": {
+    "specific": {
+      "Partial": 27,
+      "Full": 17
+    },
+    "overall": {
+      "Partial": 11
+    }
+  },
+  "expectations": [
+    {
+      "code": "ON-SCI-2022-G3-A1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Existing investigation/design operations contribute; integrated science performance, safety equipment and audience-specific reporting remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.5"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-A1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_4A4RpX-Go9",
+          "topicName": "Shared Research Projects",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_vJO5Bxk4z-",
+          "topicName": "Observing with simple equipment",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        }
+      ],
+      "rationale": "Question selection, close observation, shared fact gathering and evidence-based reporting have existing claims.",
+      "remainingConditions": [
+        "Check an integrated research performance in the science strands; the collection of generic claims is not a completed investigation. Process guidance is flexible by readiness, not a requirement for advanced bibliography or bias analysis in Grade 3."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_XirhnAB6Ye",
+          "topicName": "Asking scientific questions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_MRQcEvyPJv",
+          "topicName": "Did it happen as predicted?",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_Wa44s-f8Ws",
+          "topicName": "Simple tests and experiments",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_ZFwPZaDJ0_",
+          "topicName": "Recording Data",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        }
+      ],
+      "rationale": "Existing claims cover guided experiments, predictions, recording and conclusions without importing later formal hypothesis/variable terminology.",
+      "remainingConditions": [
+        "A safe, connected performance in relevant science content remains to be demonstrated."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A1.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "topicName": "Cutting, joining and shaping safely",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_nNYo5A-7Bl",
+          "topicName": "Comparing Design Solutions",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Sketches, safe making, motion-design testing and comparisons supply existing engineering operations appropriate to the Grade 3 body content.",
+      "remainingConditions": [
+        "Assess a coherent design/build/test performance, its evidence and response to results; isolated operations are insufficient.",
+        "Use readiness-dependent process guidance without requiring every advanced engineering step."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A1.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_TTH2ouwyTW",
+          "topicName": "Safe steps in science tests",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_FtCLISvSGw",
+          "topicName": "Cutting, joining and shaping safely",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The safety and early making claims include hazard-aware plans, safe sensory exploration, careful equipment use and cleanup.",
+      "remainingConditions": [
+        "Explicitly check task-appropriate protective clothing/equipment in addition to general safe handling. Later drilling-specific safeguards do not supply a universal early investigation claim."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A1.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A1.5",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_7VrR1GzhrN",
+          "topicName": "Drawing conclusions from evidence",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_7IFpDVNsmt"
+          ]
+        },
+        {
+          "topicId": "mt_o8ciHks8t2",
+          "topicName": "Writing Process Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_NP101Zl-4g",
+          "topicName": "Using New Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Scientific reporting and existing vocabulary/audience decisions are reusable.",
+      "remainingConditions": [
+        "Check the actual scientific vocabulary and audience/format choices in a science report; generic vocabulary or writing-process success alone does not certify the integrated requirement."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Programming/debugging skills are present; applied science and explained impacts remain explicit conditions.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-A2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_sPV503BQnI",
+          "topicName": "My first visual program",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_XbGfVhfiUz",
+            "mt__p5n8z5soJ"
+          ]
+        },
+        {
+          "topicId": "mt_5UtPmgdoQ9",
+          "topicName": "Testing and debugging programs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_XbGfVhfiUz",
+            "mt__p5n8z5soJ"
+          ]
+        }
+      ],
+      "rationale": "The first-program and debugging claims already run, predict, find discrepancies, fix one change at a time and explain the debugging method.",
+      "remainingConditions": [
+        "Use an authored science model/investigation and show testing/refinement; running a supplied animation alone is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A2.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_AzTrT5ySCx",
+          "topicName": "AI in Daily Life",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_WRRv1ABECC",
+            "mt_XbGfVhfiUz"
+          ]
+        }
+      ],
+      "rationale": "Everyday AI examples include benefits and limitations, providing a direct emerging-technology contribution.",
+      "remainingConditions": [
+        "Explain an effect of programmed behaviour as well as an emerging-technology example; device naming alone is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_MVlTa0XKgo",
+          "topicName": "Technology changes how we live",
+          "reason": "Broader historical effects can support discussion, but do not themselves explain the role of a programmed instruction."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_XbGfVhfiUz"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-A3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Practical applications have support; integration and verified community contribution resources remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.3"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-A3.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Q2Zj3L8u9C",
+          "topicName": "Things people design",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_rTn43s8RNX",
+          "topicName": "Choosing the Right Material",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_SwaNNdm_Ks",
+            "mt_ZAJvTcroFO",
+            "mt_auVZZEuXjs"
+          ]
+        }
+      ],
+      "rationale": "Purposeful products and places, together with property-to-function explanations, support familiar scientific/design applications. Use a relevant example such as a spill-resistant container and its material choice, not an unrelated device list.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A3.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_RlILL2sccX",
+          "topicName": "Testing Push & Pull Designs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_4A4RpX-Go9",
+          "topicName": "Shared Research Projects",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Motion-design testing supplies science/data work and shared research supplies information gathering and writing.",
+      "remainingConditions": [
+        "Assess the integrated use of another subject in a real problem; co-listing generic skills is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-A3.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-A3.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Existing biography, community-history and ecological-knowledge claims provide candidates; the resource task does not justify separate community clones.",
+      "remainingConditions": [
+        "Verify age-appropriate resources from multiple communities and examine what the contributions changed.",
+        "Do not treat a single biography or a generic ecological statement as complete evidence."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_excSPNHJWZ",
+          "topicName": "Mary Anning, Fossil Hunter",
+          "reason": "One scientific biography is a possible example, not a multi-community review."
+        },
+        {
+          "topicId": "mt_m43jiOAOCt",
+          "topicName": "Indigenous Ecological Knowledge",
+          "reason": "Requires factual/cultural and whole-claim review before contextual reuse."
+        },
+        {
+          "topicId": "mt_2qc_Kq63Le",
+          "topicName": "Important local people and places",
+          "reason": "Investigating the importance of a local person or group can support the process, but scientific contributions and multiple communities need verified content."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Protective human choices have support; native-species perspectives and the local-food comparison remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.3"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-B1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_cM8YS6NXqi",
+          "topicName": "Habitats & Basic Needs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_Fw0bbM1e_g",
+            "mt_L1469gt34A",
+            "mt_Sa48W7KXB5",
+            "mt_zexbopQjG0"
+          ]
+        },
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Habitat provisions and protective environmental actions contribute directly; no new plant-benefit topic is needed.",
+      "remainingConditions": [
+        "Use and compare relevant perspectives and verified native-species/habitat cases; planting an arbitrary tree is not automatically beneficial."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_CBxOcjh69x",
+          "topicName": "Invasive Species",
+          "reason": "Native/introduced relationships exist inside a later invasive-species claim; no earlier context is inferred from one matching term."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_2GDBmKCJxs",
+        "mt_j7cer_Nmor"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-B1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing impact claim identifies several harms, proposes actions and explains benefits; plant/habitat cases fit that same meaning. Assess justified personal choices rather than accepting a generic conservation slogan.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B1.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B1.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Production and supply-chain knowledge provide relevant content, but a complete comparison of locally grown food is not established.",
+      "remainingConditions": [
+        "Assess a balanced case using accurate information; local does not automatically mean every impact is lower. No local-food clone is proposed."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_tqgZH11cP5",
+          "topicName": "Supply Chains",
+          "reason": "The full later-start claim traces production/transport/sale and cost effects; it is not assigned an earlier interval for one local-food comparison."
+        },
+        {
+          "topicId": "mt_VIUF5Vspbg",
+          "topicName": "Food and fibre production",
+          "reason": "Production methods are present, but are not themselves a benefits/limitations judgment."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Needs/cycles/selected adaptation and dependence have support; complete parts, gas exchange and cultural/local case sets remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.7",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.8"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_lutxvMlkwS",
+          "topicName": "What Plants Need to Thrive",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        },
+        {
+          "topicId": "mt_3v0VNkwquK",
+          "topicName": "What Plants Need to Grow",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        }
+      ],
+      "rationale": "The existing broader requirement/variation claim supplies air, nutrients and space; the growth-condition claim explicitly supplies suitable temperature and changed-condition outcomes. Their combination covers the complete selected set without another basic-needs topic.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_6xsEXxKdUX",
+          "topicName": "How Plant Parts Work",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_j7cer_Nmor",
+            "mt_xT6jPzyj92"
+          ]
+        },
+        {
+          "topicId": "mt_WNBHZ1d94L",
+          "topicName": "Pollination & Seed Dispersal",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A",
+            "mt_j7cer_Nmor",
+            "mt_xT6jPzyj92"
+          ]
+        }
+      ],
+      "rationale": "Current plant-part functions and reproduction/dispersal contribute several required parts and functions.",
+      "remainingConditions": [
+        "Check the complete named part set and cone cases explicitly. Generic flower reproduction does not establish every reproductive structure."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_ck57CDFGet",
+          "topicName": "Plant Reproduction",
+          "reason": "Later full claim includes specialised reproductive mechanisms and comparisons; no 8–9 interval is inferred from one part label."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.3",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_0B64gfJf7j",
+          "topicName": "Seeds & Plant Growth",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        },
+        {
+          "topicId": "mt_WNBHZ1d94L",
+          "topicName": "Pollination & Seed Dispersal",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A",
+            "mt_j7cer_Nmor",
+            "mt_xT6jPzyj92"
+          ]
+        },
+        {
+          "topicId": "mt_4IVWRAZoNC",
+          "topicName": "Life Cycles of Organisms",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_1J5fwxNDxL",
+            "mt_7EqhgErJyU",
+            "mt_oR6dwRj2Ll",
+            "mt_zVLOm6U7bh"
+          ]
+        }
+      ],
+      "rationale": "Seed/bulb growth supplies contrasting early stages, flowering reproduction/dispersal supplies the continuation, and cycle modelling connects the common stages. Use more than one plant case; an insect-only cycle cannot discharge this requirement.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.4",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_Wx5m6mwkpj",
+          "topicName": "Rainforest Plant Adaptations",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_-0cjwyYhce",
+            "mt_FZ_ixwU1p1",
+            "mt_x5ZrQMAZ5v"
+          ]
+        },
+        {
+          "topicId": "mt_lutxvMlkwS",
+          "topicName": "What Plants Need to Thrive",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        }
+      ],
+      "rationale": "Several rainforest structures have explicit survival functions; plant-requirement variation and predictions under removed/limited conditions supply responses to change. No later evolutionary explanation is imposed.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.5",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_6xsEXxKdUX",
+          "topicName": "How Plant Parts Work",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_j7cer_Nmor",
+            "mt_xT6jPzyj92"
+          ]
+        }
+      ],
+      "rationale": "The existing plant-part claim explicitly states that leaves use sunlight to make food.",
+      "remainingConditions": [
+        "The gas-exchange and complete energy/process account remain to be assessed; no later full claim is lowered solely for its matching component."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_zM5vu31jgl",
+          "topicName": "Photosynthesis",
+          "reason": "Existing complete claim also requires a word equation, chlorophyll and mineral distinctions, beginning at11."
+        },
+        {
+          "topicId": "mt_3-ii06P4YS",
+          "topicName": "Plants Grow from Air & Water",
+          "reason": "Existing beginning-at10 claim argues where biomass comes from and uses an investigation; that whole demand is not inferred from this simpler contribution."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.6",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.6",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_VIUF5Vspbg",
+          "topicName": "Food and fibre production",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BYl4sds1SM"
+          ]
+        }
+      ],
+      "rationale": "Food/fibre production directly relates plants to food, clothing and timber products.",
+      "remainingConditions": [
+        "Verify the cultural examples and complete use set, including medicinal knowledge, with appropriate sources. A generic production explanation is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_m43jiOAOCt",
+          "topicName": "Indigenous Ecological Knowledge",
+          "reason": "Potential ecological-use content needs factual/cultural review and cannot stand in for all world cultures."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.7",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.7",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_VIUF5Vspbg",
+          "topicName": "Food and fibre production",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BYl4sds1SM"
+          ]
+        }
+      ],
+      "rationale": "The existing production claim supplies plant-to-food cases and explicitly calls for a checked First Nations source.",
+      "remainingConditions": [
+        "Supply verified First Nations, Métis and Inuit food-plant cases and relevant local settings; one unspecified First Nations example does not cover the required set.",
+        "Do not relabel Australian cultural evidence or treat a plant-naming list as verified food-use knowledge."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_Lcqm4_wR4D",
+        "mt_j7cer_Nmor"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-B2.8",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-B2.8",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_cM8YS6NXqi",
+          "topicName": "Habitats & Basic Needs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_Fw0bbM1e_g",
+            "mt_L1469gt34A",
+            "mt_Sa48W7KXB5",
+            "mt_zexbopQjG0"
+          ]
+        },
+        {
+          "topicId": "mt_SZJ1mN7Vfk",
+          "topicName": "Bees and pollination",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_guaaD6Dn2M",
+            "mt_oNWXXAn3cn",
+            "mt_yR1moI5kX1"
+          ]
+        }
+      ],
+      "rationale": "Habitats connect needs and organism provisions; pollination explicitly includes the two-way flower/insect relationship and its significance for human food. This supplies several direct relationships without new country-specific ecology nodes.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-C1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Natural/built force effects and protective-device cases require complete applications.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-C1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_m6UaSmrQVG",
+          "topicName": "Preventing Erosion",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_KsKLVW_ssY"
+          ]
+        }
+      ],
+      "rationale": "Wind/water land change and tested protective designs supply a substantive force-effect contribution.",
+      "remainingConditions": [
+        "Check the selected natural and built settings and the consequence of a human intervention; a single generic erosion definition is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-C1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_Q2Zj3L8u9C",
+          "topicName": "Things people design",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing designed-things claim includes playground features that reduce injury severity in a fall.",
+      "remainingConditions": [
+        "Assess force harm and how devices reduce it across suitable activity cases; naming a safety item alone does not establish the physical explanation."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_B3W5EfimJw"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-C2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Existing basic force and deformation claims support all specific clauses semantically, but the overall integrated understanding is not certified solely by a union of links.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.4"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-C2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_lcf8lx-LkZ",
+          "topicName": "Contact & Non-Contact Forces",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_-p_xp4hMvh"
+          ]
+        },
+        {
+          "topicId": "mt_GBY8enpzO0",
+          "topicName": "Forces Vocabulary",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The existing concept distinguishes contact from distance interaction; force vocabulary supplies gravity as well as magnetism and several contact examples. The combined support covers varied types without another force-classification topic.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-C2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Push/pull applications with different directions and strengths already supply several ways of exerting force; no formal later mechanics is required.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-C2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.3",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_wf-SJhZ1kC",
+          "topicName": "Changing Shapes of Solids",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_ZAJvTcroFO",
+            "mt_auVZZEuXjs"
+          ]
+        }
+      ],
+      "rationale": "The motion claim compares strengths/directions and changes in movement; the solid-shape claim explicitly tests bending, twisting, stretching and squashing. Use cases that include stopping and deformation rather than certifying all clauses from one moving toy.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-C2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-C2.4",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Existing explanations of pushes/pulls and their effects transfer directly to familiar daily actions. The source application is narrower than the whole motion claim and does not certify all its evidence.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Specific structural effects on society and environment remain to be assessed.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-D1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_cOJhDeLkPo",
+          "topicName": "Factors that shape designs",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The design-factor claim explicitly weighs function, safety, sustainability and community needs.",
+      "remainingConditions": [
+        "Evaluate actual strong/stable structure cases and their effects; a general material-cost choice does not establish every structural concept."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D1.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_qixeaiswFP",
+          "topicName": "How Organisms Shape Habitats",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        },
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Animal habitat engineering and human environmental effects are existing contributions.",
+      "remainingConditions": [
+        "Assess consequences for the wider environment, not only how a nest or dam meets its builder needs."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Form/function, material choice and direct natural-framework/force components are present; complete strength/stability/bracing explanations remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.6",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.7"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_SdIWVjzopp",
+          "topicName": "Bones & Muscles",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "Bones explicitly support the body and give it shape, providing a natural-framework contribution; form/function models supply a further represented relationship.",
+      "remainingConditions": [
+        "Generalise to the complete natural/built case set and explain what is supported. No load-path calculation or new grade-specific structure topic is required."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Z5-fSCOBep",
+          "topicName": "Simple Design Problems",
+          "reason": "A measurable load can be a design criterion, but this planning claim is not by itself proof of the whole framework concept."
+        }
+      ],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_hi8cVycbwn",
+          "topicName": "Modelling with Sketches",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        }
+      ],
+      "rationale": "The modelling claim explicitly relates object shape to its needed function. Select varied structural examples rather than interpreting a successful diagram as mastery of strength/stability too.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.3",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Design criteria, making and material testing provide useful existing operations; the complete structural-strength account is not established by those operations alone.",
+      "remainingConditions": [
+        "Assess load-capacity and strengthening explanations in actual cases; a correct fold or a successful construction is insufficient. No new topic is approved by this condition."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_Z5-fSCOBep",
+          "topicName": "Simple Design Problems",
+          "reason": "Existing measurable success criteria include a load example, not the complete strength concept."
+        },
+        {
+          "topicId": "mt_AigeWFgWIo",
+          "topicName": "Judging designs against criteria",
+          "reason": "Evaluating against supplied criteria supports the task but does not supply absent structural knowledge."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_FtCLISvSGw",
+        "mt_rTn43s8RNX"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.4",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_3WMADSy0mA",
+          "topicName": "Balanced & Unbalanced Forces",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_-p_xp4hMvh",
+            "mt_k7GOtslF-x"
+          ]
+        }
+      ],
+      "rationale": "Balanced-force investigations explain when motion changes and include a resting book as a concrete case.",
+      "remainingConditions": [
+        "Assess stability and improvement in selected structures; force balance alone is not equivalent to stability, including resistance to tipping."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_hi8cVycbwn",
+        "mt_AigeWFgWIo"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.5",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_rTn43s8RNX",
+          "topicName": "Choosing the Right Material",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_SwaNNdm_Ks",
+            "mt_ZAJvTcroFO",
+            "mt_auVZZEuXjs"
+          ]
+        }
+      ],
+      "rationale": "The existing material-choice claim links properties to functional suitability and compares alternatives. Structural material cases fit the same meaning; a new construction-material clone is unnecessary.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.6",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.6",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_B3W5EfimJw",
+          "topicName": "Pushes & Pulls",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_wf-SJhZ1kC",
+          "topicName": "Changing Shapes of Solids",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_5r47Pvstyn",
+            "mt_ZAJvTcroFO",
+            "mt_auVZZEuXjs"
+          ]
+        },
+        {
+          "topicId": "mt_3WMADSy0mA",
+          "topicName": "Balanced & Unbalanced Forces",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_-p_xp4hMvh",
+            "mt_k7GOtslF-x"
+          ]
+        }
+      ],
+      "rationale": "Existing force/motion, deformation and force-balance evidence supplies direct components.",
+      "remainingConditions": [
+        "Check actual structure cases and distinguish motion balance from structural stability; isolated toy motion does not prove all structural applications."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": []
+    },
+    {
+      "code": "ON-SCI-2022-G3-D2.7",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-D2.7",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Push/pull and material reasoning provide background, but no assessed strut/tie role was found across subjects.",
+      "remainingConditions": [
+        "Resolve this exact structural application with existing-claim/source-fit review before proposing any new claim; generic force names alone are insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_F3ATPTCYm6",
+          "topicName": "Force & Motion Vocabulary",
+          "reason": "The full later vocabulary claim includes moments and resultant-force reasoning; no earlier context follows from a single structural term."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_B3W5EfimJw",
+        "mt_GBY8enpzO0"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Specific soil importance and erosion-conservation cases have support; the overall broader judgment is not automatically certified from two task examples.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.2"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E1.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.1",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_lutxvMlkwS",
+          "topicName": "What Plants Need to Thrive",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        },
+        {
+          "topicId": "mt_VIUF5Vspbg",
+          "topicName": "Food and fibre production",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BYl4sds1SM"
+          ]
+        },
+        {
+          "topicId": "mt_zir5yyAzUB",
+          "topicName": "Minibeast Habitats",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_yR1moI5kX1"
+          ]
+        }
+      ],
+      "rationale": "Soil nutrient requirements, food/fibre production and living soil habitats jointly support food-production and ecosystem cases. The reviewed task asks why those functions matter; it does not require every possible soil service.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-farm-soils"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E1.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E1.2",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_deexfCHU9m",
+          "topicName": "Reducing Human Impact",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": []
+        },
+        {
+          "topicId": "mt_m6UaSmrQVG",
+          "topicName": "Preventing Erosion",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_KsKLVW_ssY"
+          ]
+        }
+      ],
+      "rationale": "Environmental responses plus erosion prevention support contrasting removal/protection of vegetation and resulting soil-loss cases. The local reference verifies relevant human conservation practices.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-soil-management"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2",
+      "kind": "overall",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Comparisons and verified local erosion practices have support; soil health/substance and composting conditions remain.",
+      "remainingConditions": [
+        "Overall coverage is not certified by counting direct child associations."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "children": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.1",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.2",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.3",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.4",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.5",
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.6"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.1",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_yhhprm7dZK",
+          "topicName": "Rocks and soil",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_R6YoRXkRxS"
+          ]
+        },
+        {
+          "topicId": "mt_zir5yyAzUB",
+          "topicName": "Minibeast Habitats",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_BI6oGIO-xM",
+            "mt_yR1moI5kX1"
+          ]
+        }
+      ],
+      "rationale": "Rock/humus composition and living soil microhabitats already supply both kinds of component.",
+      "remainingConditions": [
+        "Assess healthy-soil characteristics explicitly; composition or a worm sighting alone is insufficient."
+      ],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [
+        "mt_lutxvMlkwS"
+      ],
+      "supportingResourceIds": [
+        "ontario-farm-soils",
+        "ontario-soil-management"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.2",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [],
+      "rationale": "Soil composition, plant requirements and nutrient cycling offer related content, but a complete substance/effect case set has not been established.",
+      "remainingConditions": [
+        "Verify and assess the relevant additions and effects. A generic pollution statement or nutrient word alone is insufficient, and no dosing or farm-management advice is implied."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_JcfP1hWKa_",
+          "topicName": "Nutrient Cycling in Thin Soil",
+          "reason": "Specific later rainforest recycling content is relevant but is not given an earlier context for one soil-nutrient component."
+        }
+      ],
+      "prerequisiteContributions": [
+        "mt_yhhprm7dZK",
+        "mt_lutxvMlkwS"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.3",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.3",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_yhhprm7dZK",
+          "topicName": "Rocks and soil",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_R6YoRXkRxS"
+          ]
+        },
+        {
+          "topicId": "mt_lutxvMlkwS",
+          "topicName": "What Plants Need to Thrive",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_L1469gt34A"
+          ]
+        }
+      ],
+      "rationale": "The existing soil-property comparison and varying plant requirements support a source-fit comparison using verified Ontario crop examples. Preferences overlap; no crop is declared exclusive to one soil.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-farm-soils",
+        "ontario-vegetable-guide"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.4",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.4",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_m6UaSmrQVG",
+          "topicName": "Preventing Erosion",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_KsKLVW_ssY"
+          ]
+        }
+      ],
+      "rationale": "The early erosion claim explicitly describes wind/water changing land and assesses protective solutions. Use an actual soil-loss case and its consequences; later rate measurement or a complete weathering/deposition taxonomy is not imposed.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-soil-management"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.5",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.5",
+      "kind": "specific",
+      "semanticDisposition": "Full",
+      "contributions": [
+        {
+          "topicId": "mt_m6UaSmrQVG",
+          "topicName": "Preventing Erosion",
+          "role": "whole-expectation",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_KsKLVW_ssY"
+          ]
+        }
+      ],
+      "rationale": "Vegetative cover and windbreak strategies already appear in the erosion claim. The checked Ontario reference confirms their local soil-conservation use; this is localization of existing knowledge, not another provincial topic.",
+      "remainingConditions": [],
+      "deferredCandidates": [],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-soil-management"
+      ]
+    },
+    {
+      "code": "ON-SCI-2022-G3-E2.6",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G3-E2.6",
+      "kind": "specific",
+      "semanticDisposition": "Partial",
+      "contributions": [
+        {
+          "topicId": "mt_R7LEuZjTmx",
+          "topicName": "The World of Minibeasts",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_v3Vz_Pgjjv"
+          ]
+        },
+        {
+          "topicId": "mt_yhhprm7dZK",
+          "topicName": "Rocks and soil",
+          "role": "component",
+          "association": "proposed",
+          "hardPrerequisitesWithoutMatchingOntarioInterval": [
+            "mt_R6YoRXkRxS"
+          ]
+        }
+      ],
+      "rationale": "Decomposer roles and decomposed organic material are already present, so composting is not treated as wholly absent biological knowledge.",
+      "remainingConditions": [
+        "Explain the managed composting sequence and its benefits with a checked case. Decomposer naming or a humus definition alone is insufficient."
+      ],
+      "deferredCandidates": [
+        {
+          "topicId": "mt_0ajzcoKAKw",
+          "topicName": "Matter Cycling in Ecosystems",
+          "reason": "The full later ecosystem matter-cycle model is not given an earlier interval for one compost example."
+        },
+        {
+          "topicId": "mt_JcfP1hWKa_",
+          "topicName": "Nutrient Cycling in Thin Soil",
+          "reason": "The later forest nutrient-cycle claim supplies related recycling content but has a broader location-specific account."
+        }
+      ],
+      "prerequisiteContributions": [],
+      "supportingResourceIds": [
+        "ontario-soil-management"
+      ]
+    }
+  ]
+}

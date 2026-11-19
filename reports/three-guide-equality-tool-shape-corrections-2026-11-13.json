@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "c5bda6129a6d591df927102cb322a3db80b6ebc2",
+  "status": "Reviewed seven-field assessment precision corrections",
+  "changes": [
+    {
+      "topicId": "mt_8RmpkDxT9L",
+      "path": "/assess/responseLevels/partial",
+      "old": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the right or a missing number.",
+      "new": "Reads and writes a standard left-to-right sum correctly but is thrown by = with the total on the left (e.g. 5 = 3 + 2) or a missing number."
+    },
+    {
+      "topicId": "mt_20WfHhnL39",
+      "path": "/assess/correctAnswer",
+      "old": "No single scored answer — listen for the child noticing fingers run out past ten (a limitation) and that the ten frame helps because it shows 'fill to ten, then the rest', and for a fit-REASON tied to the numbers rather than 'I just like cubes'.",
+      "new": "No single scored answer: listen for a valid tool-and-strategy fit reason tied to this problem. A ten frame can show the gap to ten; fingers can track counting on from eight. Showing all fifteen objects simultaneously on ten fingers exceeds that particular representation, but this is not a limitation of every finger strategy."
+    },
+    {
+      "topicId": "mt_20WfHhnL39",
+      "path": "/assess/errorPatterns/0/nextMove",
+      "old": "Pose paired problems (3+2 then 8+7) where the same tool fits one and fails the other, and make the finger limitation visible; ask which tool the numbers call for.",
+      "new": "Compare 3 + 2 and 8 + 7 and ask how the chosen tool and strategy helps each. Directly showing every object on a finger runs out above ten; counting-on can still work. Discuss a real limitation of the attempted strategy rather than require a valid tool to fail."
+    },
+    {
+      "topicId": "mt_20WfHhnL39",
+      "path": "/assess/responseLevels/gap",
+      "old": "Uses a tool or names a favourite but gives no fit-reason, or cannot work without it, and does not notice that fingers run out past ten.",
+      "new": "Uses or names a tool but cannot explain how it supports the chosen problem, or treats its steps as a ritual without linking them to quantity or structure. Correct counting-on with fingers is not itself a gap."
+    },
+    {
+      "topicId": "mt_20WfHhnL39",
+      "path": "/assess/responseLevels/full",
+      "old": "Unprompted, matches the tool to the problem (ten frame for crossing ten), names the finger limitation, explains what the frame reveals (the gap to ten), and would switch tools for a smaller problem where fingers fit.",
+      "new": "Independently chooses and uses a valid tool and strategy, explains why it helps these numbers, recognises a limitation when it actually applies, and compares an alternative or changed problem without being required to choose a predetermined tool."
+    },
+    {
+      "topicId": "mt_20WfHhnL39",
+      "path": "/assess/whatMakesItDiscriminate",
+      "old": "A child who merely uses tools names a favourite; a child who chooses strategically points to the PROBLEM (the numbers cross ten) and to the tool's fit or limitation. 8+7 is chosen deliberately to cross ten so the finger limitation is real, not hypothetical — a 3+2 problem would not separate the two children.",
+      "new": "The fit reason distinguishes strategic choice from ritual or preference. At 8 + 7, a ten frame exposes the gap to ten; fingers can also track a valid counting-on strategy. Only representing all fifteen objects at once exceeds ten fingers. Ask how the actual strategy works and compare with 3 + 2; do not infer an error merely from the selected tool."
+    },
+    {
+      "topicId": "mt_mnEVZNkX3p",
+      "path": "/assess/errorPatterns/1/nextMove",
+      "old": "Give the physical test — can you hold it and turn it over, or does it only lie on the paper? — and sort by that, not by look",
+      "new": "Use the dimensional test on the mathematical shape represented: does it extend in three independent directions, or is it an ideal flat shape represented by a thin card? Both a card and a ball can be held and turned, so pick-up ability alone does not separate flat from solid. Sort by dimensionality, not overall roundness."
+    }
+  ],
+  "scope": "Three guides: noncanonical equality with total on left, valid finger counting-on and dimensional rather than pick-up tests for ideal flat shapes.",
+  "preservation": "Only seven declared operative assessment fields change. All intrinsic claims, sourceClaims and metadata, ages, scoped associations, dependencies and other guide fields remain unchanged. No source Full promotion or learner reassessment.",
+  "downstreamGate": "Fresh richer private-research preservation and consumer compatibility before staging; no retrospective learner reinterpretation."
+}

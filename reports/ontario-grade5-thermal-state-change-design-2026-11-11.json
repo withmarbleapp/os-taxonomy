@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "ab12aeed94c93aae1e32b36bf543be35a4360a2d",
+  "scope": "Ontario Science 2022 Grade 5 C2.6, ages 10–11; existing exact contexts/claims/guides remain unchanged.",
+  "status": "Fresh paired thermal-direction task resolves the prior bidirectional-explanation residual through existing claims. Other CDE duties and overall C2 remain separately under review.",
+  "selectedCode": "ON-SCI-2022-G5-C2.6",
+  "officialSource": {
+    "url": "https://assets-us-01.kc-usercontent.com/fbd574c4-da36-0066-a0c5-849ffb2de96e/9dc43e17-b269-4a9a-a6a8-eec790df1585/SciTech_G5_AODA.pdf",
+    "edition": 2022,
+    "printedPage": 3,
+    "sourceSha256": "c50d8733125607c8d6864a258d87829d09a00916e0f96a80a2957eaef2375459",
+    "check": "Actual formal body read and page visually checked; current official API mandatory body matches the hash-pinned PDF."
+  },
+  "claimReview": {
+    "mt_Pl-nsjYGZ3": {
+      "role": "Existing whole heating/cooling observational and Celsius measurement repertoire plus direct thermal-direction contribution.",
+      "fullReview": "Description/evidence/prompt and complete pedagogy/learn/assess/source fields read. The saved guide already asks whether heat comes OUT in freezing and explicitly contrasts energy addition/removal. This residual requires connected assessment, not a new thermal fact node.",
+      "wholeChecks": [
+        "Observe and describe melting/freezing of the same substance and keep melting distinct from dissolving.",
+        "Read and record actual Celsius measurements at the change or research a supplied extreme-temperature example; normal-pressure pure water reference values are retained, without demanding handling boiling water or exotic materials.",
+        "Retain heating-energy explanation and explicit cooling/freezing energy-out distinction, including the possibility of a steady temperature during phase change."
+      ]
+    },
+    "mt_ylruY6VhOf": {
+      "role": "Retained explanatory component: qualitative particle model and state-change relationship, not a new definition-of-matter association or an additional quantitative thermal inventory.",
+      "wholeBoundary": "The complete invisible-particle/model reasoning and bulk-versus-single-particle/empty-space constraints remain unchanged. A correct arrow in this source task alone does not certify that whole model. No inference that visible temperature change is required during a phase change."
+    },
+    "readiness": "Existing state/particle-diagram/heating observations and other hard supports remain unchanged and unassumed; no extra prerequisite links, missing-age repairs or bundle lowering.",
+    "researchBoundary": "Inherited research confidence/verification remain historical. New task design is untested; fresh factual reading does not validate a teaching intervention."
+  },
+  "resources": {
+    "acs-energy-state": {
+      "url": "https://www.acs.org/content/dam/acsorg/education/resources/k-8/inquiryinaction/inquiry-in-action.pdf",
+      "publisher": "American Chemical Society, Inquiry in Action 2007, Investigation 6 teacher background",
+      "locators": [
+        "printed 330: heat/temperature and energy transfer",
+        "printed 332: melting requires energy; freezing releases it",
+        "printed 333: phase-change explanation and constant-temperature intervals"
+      ],
+      "readScope": "Selected actual teacher-background text at these locators read. The web reader exposed the relevant text; remote figure screenshot and local PDF download failed, so no figure-visual inspection is claimed. No whole-book/video claim.",
+      "sourceClaim": "Heating/melting and cooling/freezing involve opposite thermal-transfer directions; pure water may be changing state while temperature stays approximately steady under the stated conditions.",
+      "limits": "No molecular bond calculations, specific-heat arithmetic, phase diagram inventory or salt/chemical experiment is imported into the pupil task."
+    }
+  },
+  "preparedCases": {
+    "melting": {
+      "label": "Original ordinary-water task, actual observation plus taught explanation",
+      "system": "Ice/water sample",
+      "surroundings": "Warmer room and container",
+      "setup": "Adult supplies ordinary crushed water ice, a suitable cup and a safe Celsius thermometer. Observe a genuine melting ice/water mixture, stir gently as appropriate and record actual readings. No flame or boiling liquid required.",
+      "expectedRelation": "Thermal energy transfers from warmer surroundings into the sample while ice melts. A steady reading during melting is compatible with energy input; do not invent a measured energy quantity."
+    },
+    "freezing": {
+      "label": "Original paired freezing account and optional adult-prepared observation",
+      "system": "The same kind of water sample",
+      "surroundings": "Colder freezer environment",
+      "setup": "Supply a clearly labelled account of the sample cooling then freezing in a colder freezer, or adult-prepared safe before/after observations. Use a container suitable for freezing with room for expansion, not a sealed glass vessel. The source duty is an explanation; do not fabricate a classroom temperature series.",
+      "expectedRelation": "Thermal energy leaves the sample for colder surroundings as freezing proceeds. Cold is not a material flowing into it; the released energy is transferred onward, not proof the freezer must become warmer overall."
+    },
+    "condensing-transfer": {
+      "label": "Original changed case with supplied state/direction facts",
+      "system": "Water vapour condensing on the outside of a colder container",
+      "surroundings": "The colder container",
+      "question": "Does energy go into the condensing water or leave it for the colder container? Explain which state change occurs and why droplets outside do not prove the container leaked.",
+      "expectedRelation": "Energy leaves the vapour as it condenses. Outside water comes from vapour in the surrounding air, not automatically from liquid through the container. Do not equate visible mist with gaseous water."
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-C2.6"
+    ],
+    "preparation": [
+      "Name the sample/system and relevant surroundings explicitly. Supply the actual observation materials and the paired freezer account, plus blank state-before/state-after/energy-direction/reason fields.",
+      "Keep the complete existing Celsius observation/reference and melting-versus-dissolving checks when assessing the whole heating/cooling claim; the particle model remains a separately checked explanatory component."
+    ],
+    "learnerActions": [
+      "Predict and observe the melting sample, read/record actual Celsius values and describe the state change. Draw an arrow from the warmer surroundings into the sample and explain the energy input.",
+      "Use the paired freezer account to explain cooling/freezing. Draw the opposite thermal-transfer arrow and explain why cold is not a substance added to the water. The explanation must include release/transfer out, not merely the word cold.",
+      "Compare the two changes of the same substance. Explain how thermal input/removal can cause a state change without creating a different substance and why a temperature reading alone does not establish the direction or amount of energy transfer.",
+      "Apply the same reasoning to the supplied condensation case and another changed melting/freezing situation. State both the source and destination; do not infer an exact energy quantity or claim particles must speed up throughout a fixed-temperature transition."
+    ],
+    "successEvidence": [
+      "Explicit absorption/input during melting and release/output during freezing, each tied to a named system/surroundings and state change.",
+      "Correct explanation persists in the changed condensation case and is not reduced to a temperature/state label.",
+      "Actual whole-claim Celsius/observation and melting/dissolving distinctions retained when the complete heating/cooling claim is assessed."
+    ],
+    "nearMisses": [
+      "Describes melting but calls freezing cold entering the water.",
+      "Reverses arrows after seeing a freezer label, or treats any steady thermometer reading as no energy transfer.",
+      "Only names states/temperatures or invents a measured heat value."
+    ],
+    "transfer": "Give a fictional refrigerator tray containing water that is freezing while its thermometer is approximately steady near the transition. Explain whether energy can still leave the sample and why this is consistent with its state changing; no latent-heat equation is required.",
+    "contributorIds": [
+      "mt_Pl-nsjYGZ3",
+      "mt_ylruY6VhOf"
+    ],
+    "caseRefs": [
+      "melting",
+      "freezing",
+      "condensing-transfer"
+    ]
+  },
+  "disposition": "Full",
+  "remainingConditions": [],
+  "canonicalChanges": "None: both existing exact CA/Ontario 10–11 C2.6 associations, all authored claims/guide fields and dependencies are preserved.",
+  "coverageBoundary": "Source-fit authoring task, not actual completed learner observations, a new validated intervention or Full overall C2. No higher-grade kinetic/pressure/thermal calculation inventory is introduced."
+}

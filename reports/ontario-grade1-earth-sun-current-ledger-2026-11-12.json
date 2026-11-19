@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "One reviewed source-authoring closure; main acceptance separate.",
+  "records": [
+    {
+      "code": "ON-SCI-2022-G1-E2.1",
+      "disposition": "Full",
+      "historicalDisposition": "Partial",
+      "qualification": "fresh-source-task-with-complete-whole-reuse-contexts",
+      "resource": "ontario-grade1-earth-sun-task-design-2026-11-12.json",
+      "protocolReference": "/protocols/E2.1",
+      "remainingConditions": []
+    }
+  ],
+  "exactNewContexts": [
+    {
+      "topicId": "mt_w2xiMNkyyX",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "standards": [
+        "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-E2.1"
+      ]
+    },
+    {
+      "topicId": "mt_u3Y3Tb-G_n",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "standards": [],
+      "ageOnly": true
+    }
+  ],
+  "newComponentPairs": 1,
+  "newAgeOnlyAncestorContexts": 1,
+  "newTopicsHardEdgesOldIntervalChanges": 0,
+  "compatibilityLowerBoundsOnly": [
+    "mt_w2xiMNkyyX:7→6",
+    "mt_u3Y3Tb-G_n:7→6"
+  ],
+  "historicalOtherEarthSunRowsNotRecertified": true,
+  "accounting": "Accepted main92Partial/48Science unchanged. Rootdraft56/36; this one source-authoring closure proposes55/35."
+}

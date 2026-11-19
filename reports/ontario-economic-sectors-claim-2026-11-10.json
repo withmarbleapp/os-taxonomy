@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "4af84858ab480909f5daa140c6224d3928190377",
+  "status": "One shared sector-classification knowledge proposal; source-fit authoring, not all regional industrial/sustainability coverage or learner attainment.",
+  "officialSource": {
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+    "courseEdition": 2018,
+    "acceptedAggregateIdentity": "ON-SSHG-2026",
+    "code": "B3.3",
+    "sourceMeaning": "The selected clause requires the stated four-sector model and associated industry examples; the examples are not an exhaustive occupation inventory."
+  },
+  "newCard": {
+    "type": "CONCEPTUAL",
+    "subject": "Life Skills",
+    "domain": "Entrepreneurship",
+    "name": "Economic sectors and activities",
+    "description": "In an explicitly stated four-sector economic model, distinguish natural-resource production or extraction, material processing or manufacturing, general services, and information or knowledge work. Name the primary, secondary, tertiary and quaternary sectors, classify described industry activities by their main purpose, and recognize mixed activities without treating this convention as a universal legal business classification.",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 10,
+    "evidence": [
+      "Explain the four sector names under the stated model and connect each with an accurately described example industry.",
+      "Distinguish resource production/extraction from processing/manufacturing, and general services from information/knowledge work under this four-sector convention; justify the distinction using the actual activity rather than its location, tools or prestige.",
+      "Classify unfamiliar but clearly described activities and recognize different sector activities within one organization, without assuming that every economic classification system separates services in the same way."
+    ],
+    "assessmentPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+    "id": "mt_ugSofLX87k",
+    "centrality": 0
+  },
+  "originalResearch": {
+    "topicId": "mt_ugSofLX87k",
+    "pedagogy": {
+      "summary": "Teach the stated model, compare close activity descriptions and transfer to a new context. Original untested teaching design; source verification concerns the model, not instructional effectiveness.",
+      "bestPractices": [
+        "Name the four categories while keeping the model convention explicit.",
+        "Compare extraction with processing and general services with information/knowledge work using accurate activity descriptions.",
+        "Keep activity purpose distinct from place, tools, job prestige or a whole-company statistical/legal classification."
+      ],
+      "keyRepresentations": [
+        "Four labelled activity-category columns under the stated model",
+        "Short source-checked industry descriptions with main activity/output",
+        "A mixed-activity example separated into its actual described functions"
+      ],
+      "commonMisconceptions": [
+        "Everything connected with a natural resource is primary.",
+        "All services must be tertiary under every possible model.",
+        "A computer or an industrial-looking building determines a sector.",
+        "One business name proves one category regardless of the described activities."
+      ]
+    },
+    "learn": {
+      "schemaVersion": 2,
+      "summary": "Describe, contrast and apply the four-sector model with clear activity units.",
+      "activities": [
+        {
+          "title": "Name and explain the four sectors",
+          "learnerActions": [
+            "Introduce the selected four-sector convention with an accurate simple account: primary obtains or produces natural resources; secondary transforms materials into products; tertiary provides general services; quaternary develops or shares information and knowledge. Explain that some other systems group information work among services.",
+            "Study logging, paper manufacturing, transport/retail and research/education examples with clear descriptions. Ask what each activity principally does, which sector label fits under this model and why. Do not classify a person’s worth or assume all work is paid in the same way.",
+            "After study, ask the learner to name and explain all four categories and identify an associated industry example for each without merely matching a colour or copying a visible sorted answer."
+          ],
+          "intendedInsight": "Sector labels describe different main economic activities within a specified model.",
+          "feedback": [
+            "Return to the actual activity/output when a place, tool or familiar company name distracts from the criterion.",
+            "Compare a resource producer with a processor using the same raw material."
+          ],
+          "rationale": "Source-fit original design, not an intervention-effectiveness study.",
+          "sourceClaims": [
+            "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries."
+          ]
+        },
+        {
+          "title": "Test close contrasts, mixed activities and transfer",
+          "learnerActions": [
+            "Compare harvesting trees for raw timber with making paper, then delivering paper with researching a new material. Require the two close distinctions rather than only an easy four-way picture sort.",
+            "Transfer to clearly described crop production, food manufacturing, shop services and agricultural research. Give needed factual descriptions rather than test unexplained technical industry knowledge.",
+            "Separate the described crop-growing, food-processing and research functions in one mixed organization. Explain that this is an activity-classification task, not a company’s legal or statistical code.",
+            "Offer the insufficient description that a company uses computers and works with trees. Ask what extra fact is needed: harvesting trees, making products, delivering goods or studying forestry? Accept a request for clearer activity/output information instead of imposing an unsupported single label."
+          ],
+          "intendedInsight": "The same model can classify a new clear activity, while mixed or insufficient descriptions need careful units and evidence.",
+          "feedback": [
+            "Ask which described action or output supports the category.",
+            "Use a matched new context to distinguish genuine transfer from memorizing one timber chain."
+          ],
+          "rationale": "Original untested diagnostic/task design.",
+          "sourceClaims": [
+            "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries."
+          ]
+        }
+      ],
+      "constraints": [
+        "Use the exact stated four-sector convention; do not claim every economics framework separates information services identically.",
+        "Supply clear activity descriptions and factual industry examples; no company-level NAICS/legal determination.",
+        "No exhaustive occupation inventory, production-cost calculation, sustainability assessment or country-specific industrial ranking.",
+        "No new hard prerequisites inferred from age or source order."
+      ],
+      "reviewNotes": [
+        "2026-11-10: new shared knowledge claim proposed after whole-claim cross-domain search and independent root challenge. Teaching efficacy untested; factual verification limited to the official four-sector convention."
+      ]
+    },
+    "assess": {
+      "method": "two_tier",
+      "poeTask": null,
+      "diagnosticPrompt": "Using the four-sector model you have studied, can {{name}} name and explain the sectors for harvesting trees for raw timber, making paper, delivering it and researching new materials? Then try a new food or health example. Can they justify the activity’s category and say when a mixed or unclear description needs more information?",
+      "correctAnswer": "Names/explains all four sectors under the stated model, distinguishes the two close contrasts using actual described activity/output, transfers to a new context and handles mixed/insufficient accounts without a fabricated company-wide label.",
+      "whatMakesItDiscriminate": "Matched activities can involve the same material or location while belonging to different sectors; a new-context transfer checks the category criterion rather than memorization of the timber examples. An insufficient account tests whether the learner invents a label from tools alone.",
+      "probeDeeper": [
+        "What does this activity mainly do, and which fact supports your label?",
+        "Would using the same computer, building or natural material make these activities the same sector?",
+        "Which missing activity/output detail would let you classify this unclear account?"
+      ],
+      "errorPatterns": [
+        {
+          "kind": "misconception",
+          "pattern": "Classifies all resource-related work as primary or all services as tertiary, ignoring the studied model.",
+          "revealedBy": "Cannot distinguish the matched extraction/processing or service/information cases.",
+          "nextMove": "Compare what is obtained, changed, provided or developed in each description, then retry in a different context.",
+          "distractor": null,
+          "reteachPrerequisiteId": null
+        }
+      ],
+      "responseLevels": {
+        "gap": "Does not distinguish the model’s activities or relies only on location/tools.",
+        "partial": "Names some categories or memorizes a familiar chain but cannot explain both close contrasts or transfer.",
+        "full": "Names and explains all four categories, classifies clear new activities with reasons, and handles mixed/unclear descriptions within the stated model."
+      }
+    },
+    "sources": [
+      {
+        "claim": "Ontario’s selected Grade4source explicitly uses a four-sector model that distinguishes resource-based work, processing/manufacturing, services and information-based activity, with example industries.",
+        "source": "Ontario Ministry of Education, Social Studies Grade4, published course edition2018, B3.3",
+        "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g4-ss",
+        "verified": true
+      }
+    ],
+    "confidence": "low",
+    "provenance": {
+      "originalResearchGeneratedBy": "Taxonomy curation: source-verified shared economic-model knowledge and original untested teaching design",
+      "createdAt": "2026-11-10T20:50:38.523012Z",
+      "updatedAt": "2026-11-10T20:50:38.523012Z"
+    },
+    "publicationNotes": {
+      "omittedCurriculumText": []
+    }
+  },
+  "reuseComparison": [
+    {
+      "id": "mt_RgQxPddV8v",
+      "name": "Goods & Services",
+      "fullCardRead": true,
+      "guide": "None in snapshot",
+      "mismatch": "Both resource extraction and manufacturing can produce goods; both transport and research can provide services. Knowing goods/services does not establish the required within-pair sector distinctions or the four model labels."
+    },
+    {
+      "id": "mt_tqgZH11cP5",
+      "name": "Supply Chains",
+      "fullCardRead": true,
+      "guide": "None in snapshot",
+      "mismatch": "Tracing materials/making/transport/selling and explaining chain costs does not establish the information/knowledge sector, the chosen four-category model or classify independent services outside a product chain."
+    },
+    {
+      "id": "mt_yDQmYTrrzP",
+      "name": "Natural, human and capital resources",
+      "fullCardRead": true,
+      "guide": "None in snapshot",
+      "mismatch": "Classifies inputs used in production and scarcity choices; a scientist is a human resource regardless of which sector their actual activity belongs to. Different classification object and criterion."
+    },
+    {
+      "id": "mt_asRwlPZXC3",
+      "name": "Jobs People Do",
+      "fullCardRead": true,
+      "guide": "None in snapshot",
+      "mismatch": "Knowing roles, pay and interests does not supply the four-sector model or its distinction among industry activities."
+    },
+    {
+      "id": "mt_G4Fz9lw20-",
+      "name": "Land use and human needs",
+      "fullCardRead": true,
+      "guide": "Complete original guide previously authored/read; unchanged",
+      "mismatch": "Classifies uses/purposes of places and links them to needs. Resource production, manufacturing and knowledge work can occur in similar-looking or mixed-use places; this is not the economic-sector classification."
+    },
+    {
+      "id": "mt_VIUF5Vspbg",
+      "name": "Food and fibre production",
+      "fullCardRead": true,
+      "guide": "None in snapshot",
+      "mismatch": "Production methods and a particular food/fibre chain are useful components but do not establish the four-category model across economic activities."
+    }
+  ],
+  "independentAssessment": {
+    "positive": "Classifies four clearly described activities with correct model labels and explains the two close distinctions, then transfers to a different resource/service context.",
+    "nearMiss": [
+      "All forestry-related work is primary, including an unrelated research institute.",
+      "Transport is secondary because it uses a manufactured truck.",
+      "All services are tertiary without respecting the stated information/knowledge split.",
+      "A business with several described activities must have only one classification in the teaching task."
+    ],
+    "transfer": "Supply a hospital service and a separately described medical research activity, or a retailer and a separately described data-analysis institute, with model boundaries supplied clearly; justify classifications from actual purpose/output rather than place or tool.",
+    "nonImplication": "Passing generic goods/services, supply-chain or employment-interest checks cannot establish these classifications; passing the four-sector task does not infer all supply-chain/cost/needs mastery.",
+    "ambiguousWitness": "A company says it uses a computer and works with trees. This does not establish whether its main described activity is harvesting trees for raw timber, making furniture, delivering products or researching forestry. Ask what activity/output the account means rather than fail a learner for insufficient facts.",
+    "mixedWitness": "One organization grows crops, processes food and runs a research unit. Classify those explicitly described activities separately under the supplied model; do not pretend this teaching task determines a legal/NAICS whole-company code."
+  },
+  "whyNotLocalizationOnly": "The missing classification model has contrasts that remain absent even when old examples are translated or localized. It is shared knowledge usable across countries, not a Canada- or grade-specific clone. The four-sector convention is explicit rather than claimed universal.",
+  "context": {
+    "topicId": "mt_ugSofLX87k",
+    "scope": "jurisdiction",
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 9,
+    "ageRangeEnd": 10,
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G4-SS-B3.3"
+    ]
+  },
+  "newClaims": 1,
+  "newContexts": 1,
+  "newPairs": 1,
+  "dependencies": [],
+  "sourceFit": "The actual four labels, defining distinctions and associated industry examples are accounted for by the complete card and task. Other regional work and sustainability duties require their own facts and performances.",
+  "consumerImpact": "One genuinely new claim ID if approved; preserve all old cards, guides, dependencies and contexts. No learner state transfer/reset or DB action. Coordinate with India track before authoring to avoid parallel industry-model duplication.",
+  "limits": [
+    "Four-sector conventions vary across sources; the selected Ontario model explicitly separates information-based work. Do not silently present this as the only universal economic classification or import NAICS legal/statistical rules.",
+    "No exact company-wide classification or exhaustive job inventory demanded. Activities must be described unambiguously; ambiguous cases invite a request for more facts, not false failure."
+  ]
+}

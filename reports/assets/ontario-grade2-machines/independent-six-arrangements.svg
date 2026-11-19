@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0L6,3L0,6" fill="none" stroke="#175b88" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="820" fill="#f7fafc"/>
+<g font-family="Arial,sans-serif" fill="#17324a" stroke-linecap="round" stroke-linejoin="round">
+<text x="40" y="43" font-size="26" font-weight="bold">Independent arrangement cards</text>
+<text x="40" y="72" font-size="16">Name the highlighted arrangement. Point to its working feature and explain a suitable use.</text>
+<g fill="white" stroke="#ccd9e2" stroke-width="2"><rect x="25" y="100" width="370" height="330" rx="14"/><rect x="415" y="100" width="370" height="330" rx="14"/><rect x="805" y="100" width="370" height="330" rx="14"/><rect x="25" y="450" width="370" height="330" rx="14"/><rect x="415" y="450" width="370" height="330" rx="14"/><rect x="805" y="450" width="370" height="330" rx="14"/></g>
+<g font-size="24" font-weight="bold"><text x="47" y="138">A</text><text x="437" y="138">B</text><text x="827" y="138">C</text><text x="47" y="488">D</text><text x="437" y="488">E</text><text x="827" y="488">F</text></g>
+<!-- A: supported bar, changed proportions from teaching card -->
+<path d="M90,326L326,264" stroke="#d47b23" stroke-width="16"/><path d="M197,299L172,358H222Z" fill="#8395a1" stroke="#17324a" stroke-width="3"/><rect x="260" y="211" width="49" height="54" rx="4" fill="#b6d8ea" stroke="#17324a" stroke-width="3"/><path d="M106,239V309" stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"/>
+<!-- B: object travels along a sloped surface -->
+<path d="M460,350H740V200Z" fill="#e9eef1" stroke="#17324a" stroke-width="3"/><path d="M460,350L740,200" stroke="#d47b23" stroke-width="10"/><g transform="translate(568 271) rotate(-28)"><rect x="-28" y="-54" width="56" height="52" rx="3" fill="#b6d8ea" stroke="#17324a" stroke-width="3"/></g><path d="M593,309L686,258" stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"/>
+<!-- C: tapered piece separates two model blocks -->
+<path d="M877,267H950L930,352H862Z" fill="#b6d8ea" stroke="#17324a" stroke-width="3"/><path d="M1010,267H1083L1098,352H1030Z" fill="#b6d8ea" stroke="#17324a" stroke-width="3"/><path d="M945,204H1015L980,335Z" fill="#efb56e" stroke="#17324a" stroke-width="3"/><g stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"><path d="M980,153V193"/><path d="M916,310H872"/><path d="M1040,310H1084"/></g>
+<!-- D: overhead rope wheel with contrasting load and effort sides -->
+<path d="M125,520H285" stroke="#8395a1" stroke-width="10"/><path d="M205,520V557" stroke="#17324a" stroke-width="4"/><circle cx="205" cy="592" r="36" fill="#efb56e" stroke="#17324a" stroke-width="3"/><circle cx="205" cy="592" r="6" fill="#17324a"/><path d="M168,676V592A37,37 0 0 1 242,592V694" fill="none" stroke="#175b88" stroke-width="5"/><rect x="139" y="676" width="58" height="50" rx="4" fill="#b6d8ea" stroke="#17324a" stroke-width="3"/><path d="M272,629V695" stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"/>
+<!-- E: larger turning wheel connected rigidly to smaller shaft -->
+<path d="M605,613L722,642V675L605,646Z" fill="#8395a1" stroke="#17324a" stroke-width="3"/><ellipse cx="595" cy="628" rx="62" ry="85" fill="#efb56e" stroke="#17324a" stroke-width="4"/><ellipse cx="595" cy="628" rx="15" ry="22" fill="#8395a1" stroke="#17324a" stroke-width="3"/><path d="M527,543C495,570 493,628 511,658" fill="none" stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"/>
+<!-- F: spiral-threaded fastener joining two model pieces -->
+<path d="M894,645H1089V685H894Z M894,689H1089V729H894Z" fill="#d7e3df" stroke="#17324a" stroke-width="3"/><path d="M975,558H1005V715L990,738L975,715Z" fill="#efb56e" stroke="#17324a" stroke-width="3"/><path d="M964,544H1016V560H964Z" fill="#8395a1" stroke="#17324a" stroke-width="3"/><path d="M976,580L1004,592M976,603L1004,615M976,626L1004,638M976,649L1004,661M976,672L1004,684M976,695L1004,707" stroke="#17324a" stroke-width="3"/><path d="M952,524C957,505 1023,505 1032,526" fill="none" stroke="#175b88" stroke-width="5" marker-end="url(#arrow)"/>
+</g></svg>

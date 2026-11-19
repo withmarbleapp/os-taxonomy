@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "dependency": {
+    "baseCommit": "b7250f17550aa83623f90019b12c41b359914449",
+    "pullRequest": "https://github.com/withmarbleapp/os-taxonomy/pull/110",
+    "acceptance": "Dependent local follow-up; PR110 and the cultural-renewal checkpoint are not yet accepted default-branch content."
+  },
+  "newTopic": {
+    "id": "mt_wGoYDxnk6_",
+    "type": "CONCEPTUAL",
+    "subject": "Geography",
+    "domain": "Places & Environments",
+    "name": "Traditional and treaty territories in Canada",
+    "description": "Use attributed, locally verified resources to identify the traditional Indigenous territory or territories and applicable treaty reference for a Canadian place. Distinguish traditional territory, a treaty area or relationship, and a present-day reserve; these references are not interchangeable and may involve more than one people or account.",
+    "ageRangeStart": 6,
+    "ageRangeEnd": 7,
+    "centrality": 0,
+    "evidence": [
+      "Name the peoples and traditional territory or territories identified for a place by the supplied locally verified sources, attributing each account rather than assuming one exclusive owner.",
+      "Identify the applicable treaty by its full name or number and regional context when the sources establish one; do not invent a treaty where the verified resources do not establish one.",
+      "Explain that traditional territory concerns a people’s enduring connections with lands and waters, a treaty records a particular agreement or relationship, and a present reserve is a particular designated land area rather than the whole traditional territory.",
+      "Use a second verified place/resource packet to identify its different territorial and treaty references; explain why the nearest reserve or a municipal boundary alone cannot establish those references."
+    ],
+    "assessmentPrompt": "With an adult-prepared, attributed publicly available, locally verified resource packet for a school, can {{name}} name the traditional territory or territories and the applicable treaty reference that the sources support? Can they explain why the traditional territory, treaty reference and present reserve are different, then use a second place’s packet without carrying over the first place’s names or treating the nearest reserve as the answer?",
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-B3.1"
+    ]
+  },
+  "claimRationale": "Traditional territory, applicable Canadian treaty reference and current reserve are distinct geographical/historical knowledge. Generic map-reading and recognition of peoples cannot supply these meanings or the local evidence. Australian school-Country participation has different complete requirements and remains unchanged.",
+  "closestCandidates": [
+    {
+      "topicId": "mt_l-3JUgI80b",
+      "mismatch": "Australian Country/Place, cultural connection and Acknowledgement participation are genuine requirements; relabelling it Canadian would erase them."
+    },
+    {
+      "topicId": "mt_Lcqm4_wR4D",
+      "mismatch": "Names distinct contemporary Canadian peoples without establishing a school’s territory/treaty reference."
+    },
+    {
+      "topicId": "mt_w4cUnN_SsQ",
+      "mismatch": "Map key, construction and relative positions do not establish Canadian territorial/treaty knowledge."
+    },
+    {
+      "topicId": "mt_5zPXTvZTcX",
+      "mismatch": "Place significance and care do not distinguish traditional territory, treaty and reserve."
+    }
+  ],
+  "sourceContribution": {
+    "publishedNow": [
+      "ON-SSHG-2026-G1-SS-B3",
+      "ON-SSHG-2026-G1-SS-B3.1"
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "second-street-etobicoke",
+      "school": "Second Street Junior Middle School",
+      "publicLocation": "71 Second St, Etobicoke, Ontario",
+      "resources": [
+        {
+          "url": "https://schoolweb.tdsb.on.ca/secondstreet/",
+          "role": "Official school establishes the public address; it is not itself an authority for every territorial name."
+        },
+        {
+          "url": "https://mncfn.ca/the-toronto-purchase-treaty-no-13-1805/",
+          "role": "Mississaugas of the Credit First Nation explicitly includes Etobicoke in Toronto Purchase Treaty13 lands and gives its historical account."
+        },
+        {
+          "url": "https://mncfn.ca/wp-content/uploads/2021/03/Sch-1-Rules-Procedures-MCFN-Territory-Map.pdf",
+          "role": "Nation-produced regional map distinguishes MCFN territory, Treaty13 and other treaty/claim areas, municipal lines and present reserve location."
+        },
+        {
+          "url": "https://www.secondstsac.com/about-the-sac/by-laws",
+          "role": "Attributed school-council statement names ancestral connections of Mississaugas of the Credit, Anishinaabe, Chippewa, Haudenosaunee and Wendat peoples and Treaty13. The official school page was not found to link this external council site; do not present this list as independent Nation confirmation of every people or an exhaustive title finding."
+        }
+      ],
+      "workedAnswer": "For this educational regional case, the school’s official Etobicoke location and MCFN account support Toronto Purchase Treaty No13 (1805) and MCFN territorial connection. Attribute the additional ancestral peoples to the school-council statement, rather than claiming its whole list is confirmed by the Nation map. The map’s separately marked reserve is not the whole territorial area.",
+      "limits": "Regional educational identification, not parcel surveying, exclusive title, adjudication of overlapping accounts or a claim that all treaties were land sales or extinguished rights."
+    },
+    {
+      "caseId": "valleyview-kenora",
+      "school": "Valleyview Public School",
+      "publicLocation": "1529 Valley Drive, Kenora, Ontario",
+      "resources": [
+        {
+          "url": "https://vvs.kpdsb.on.ca/",
+          "role": "Official K–6 school address."
+        },
+        {
+          "url": "https://gct3.ca/cultural/gikinooamaadiwin-education/school-directory/",
+          "role": "Grand Council Treaty3 independently lists the school at the same public Kenora address."
+        },
+        {
+          "url": "https://gct3.ca/treaty-3-interactive-territory-map/",
+          "role": "GCT3 territorial-planning resource establishes its own Treaty3 territorial map and its educational/resource-management scope."
+        },
+        {
+          "url": "https://gct3.ca/grand-council-treaty-3-commemorates-the-153rd-anniversary-of-the-signing-of-treaty-3/",
+          "role": "GCT3 describes Treaty3, Manidoo Mazina’igan, as an enduring relationship between the Anishinaabe Nation and Crown, signed1873."
+        },
+        {
+          "url": "https://www.kenora.ca/your-government/indigenous-relations/",
+          "role": "City’s attributed statement identifies traditional territory of the Anishinaabe of Treaty3 and Métis people; it names Wauzhushk Onigum, Niisaachewan and Washagamis Bay as communities arising from the original collective community."
+        },
+        {
+          "url": "https://www.ontario.ca/page/map-ontario-treaties-and-reserves",
+          "role": "Provincial educational corroboration explicitly includes Kenora in North-West Angle Treaty3 (1873); its stated map limitations remain applicable."
+        }
+      ],
+      "workedAnswer": "Identify the school’s public Kenora location. Attribute the Anishinaabe Treaty3 territorial/relationship account to GCT3, the additional Métis traditional-territory acknowledgement to the City, and identify North-West Angle Treaty No3 (1873). Distinguish that broad territorial/treaty reference from individual present reserve locations.",
+      "limits": "Do not confuse northwestern Treaty3 (1873) with the Between the Lakes TreatyNo3 (1792) on the MCFN map. The City’s statement and regional resources do not establish exclusive school-parcel title or make a nearby reserve the full territory."
+    }
+  ],
+  "assessmentProtocol": {
+    "id": "canadian-school-territory-resources",
+    "sourceCodes": [
+      "B3.1"
+    ],
+    "caseIds": [
+      "second-street-etobicoke",
+      "valleyview-kenora"
+    ],
+    "materials": "Adult prepares a dated, attributed packet for the learner’s actual school using publicly available, locally verified location/resources and appropriate Nation/community territorial and treaty resources, with school/board or municipal statements separately attributed. Supply readable extracts/paraphrases and a legend/key; no private child or home address is needed.",
+    "preparationChecks": [
+      "Verify the public school location and the relevant region, not simply a school name shared with another place.",
+      "Consult relevant Indigenous Nation/community resources, applicable treaty accounts and appropriate school/board references. Preserve multiple supported peoples/accounts and identify disagreement or uncertainty instead of deciding exclusive ownership.",
+      "Identify whether the packet establishes a treaty, the full name/number and regional/date context. Never invent a numbered treaty or equate every treaty with a sale or extinguishment.",
+      "Distinguish any marked current reserve from traditional territory and treaty references. Maps are regional educational resources, not legal parcel determinations.",
+      "If suitable local information is missing or conflicting, the local application remains unverified until the adult resolves the resource question; another school’s worked example does not certify this school."
+    ],
+    "instructions": [
+      "Introduce traditional territory, treaty reference and reserve as different kinds of information, using the attributed packet and supplied map legend.",
+      "Ask the learner to identify the supported traditional territory or territories and applicable treaty for their own school, explaining which source supports each statement.",
+      "Ask whether the nearest reserve or the municipal boundary alone would justify the answer and why not.",
+      "Use the second worked public-school packet for transfer. Ask what differs, what each source establishes and what cannot be concluded."
+    ],
+    "rubric": {
+      "full": "Identifies the supported traditional territory or territories and applicable treaty reference for the actual school from the verified packet, keeps accounts attributed, distinguishes a reserve from the broader references, and transfers the distinction to another region without unsupported exclusivity.",
+      "nearMiss": "Only names generic Indigenous peoples, copies the first school’s treaty into the second, selects the nearest reserve, collapses every map boundary into territory, or claims the resources establish exclusive parcel title.",
+      "transfer": "Uses another region’s packet to identify its supported peoples and treaty reference, retaining its different name/number/date context and resource limits."
+    },
+    "coverageBoundary": "A source-fit authoring protocol, not a learner pass record. Worked cases demonstrate the design; own-school application requires the adult-prepared locally verified packet. No ceremony participation, private address collection or legal adjudication is required."
+  },
+  "resourceReview": "Primary school, Indigenous Nation/organization and municipal sources read2026-11-10. MCFN map rendered and visually reviewed to distinguish its separate regional layers. Summaries are paraphrases, not copied curriculum passages.",
+  "consumerBoundary": "New independent knowledge claim; no inferred learner mastery from generic maps, peoples recognition or Australian Country. No learner state changes or automatic transfer. Public acceptance remains separate from deployment."
+}

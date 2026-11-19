@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "baseIntegration": "53f129c453e6fb06c595316b53f002dcac4f336a",
+  "status": "Reviewed source-authoring closure; actual local configuration and learner performance remain delivery conditions",
+  "records": [
+    {
+      "code": "B2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B2",
+      "historicalDisposition": "Partial",
+      "priorCurrentDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade4-local-habitat-community-task-design-2026-11-13.md",
+      "protocolHeading": "B2 independent integrated source assessment",
+      "contributingTopicIdsUnchanged": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS",
+        "mt_uVaS12lN1i"
+      ],
+      "wholeTopicAwardFromSourceResult": false,
+      "actualProgrammeOrLearnerEvidenceClaimed": false,
+      "independentSourcePerformanceRequired": true,
+      "independentOverallNotChildRollup": true
+    },
+    {
+      "code": "B2.1",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B2.1",
+      "historicalDisposition": "Full",
+      "priorCurrentDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade4-local-habitat-community-task-design-2026-11-13.md",
+      "protocolHeading": "B2.1: necessities in the genuinely local habitat",
+      "contributingTopicIdsUnchanged": [
+        "mt_cM8YS6NXqi"
+      ],
+      "wholeTopicAwardFromSourceResult": false,
+      "actualProgrammeOrLearnerEvidenceClaimed": false,
+      "independentSourcePerformanceRequired": true,
+      "independentOverallNotChildRollup": false
+    },
+    {
+      "code": "B2.2",
+      "key": "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G4-B2.2",
+      "historicalDisposition": "Partial",
+      "priorCurrentDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade4-local-habitat-community-task-design-2026-11-13.md",
+      "protocolHeading": "B2.2: community and factors affecting survival",
+      "contributingTopicIdsUnchanged": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS"
+      ],
+      "wholeTopicAwardFromSourceResult": false,
+      "actualProgrammeOrLearnerEvidenceClaimed": false,
+      "independentSourcePerformanceRequired": true,
+      "independentOverallNotChildRollup": false
+    }
+  ],
+  "source": {
+    "document": "Ontario Science and Technology2022 Grade4",
+    "printedPage": 2,
+    "originalWordingIncluded": false
+  },
+  "localityContract": {
+    "explicitWorkedRegion": "Toronto High Park",
+    "TorontoAssumedEveryLearnersLocality": false,
+    "verifiedApplicableLocalPacketBeforeDelivery": true,
+    "pupilObservationClaimed": false,
+    "currentCensusClaimed": false
+  },
+  "wholePath": {
+    "wholeCards": 8,
+    "hardEdges": 6,
+    "savedGuides": 8,
+    "completeOperationalRequirementsRetained": true,
+    "actualSameSpeciesOneFactorGrowthComparison": true,
+    "seedBulbComparisonRequiredByGrowClaim": false
+  },
+  "sourceFactBindings": [
+    {
+      "source": "High Park Nature oaks",
+      "url": "https://highparknature.org/article/the-oaks-of-high-park/"
+    },
+    {
+      "source": "High Park Nature acorns",
+      "url": "https://highparknature.org/article/acorns-in-high-park/"
+    },
+    {
+      "source": "Dated wildlife account",
+      "url": "https://highparknature.org/article/improvements-for-wildlife/"
+    },
+    {
+      "source": "Squirrel needs",
+      "url": "https://highparknaturecentre.com/busy-squirrels/"
+    },
+    {
+      "source": "Wood decay group",
+      "url": "https://highparknaturecentre.com/lets-talk-about-rot/"
+    },
+    {
+      "source": "Named mammal identities",
+      "url": "https://highparknature.org/article/mammals-in-high-park/"
+    }
+  ],
+  "boundResources": [
+    "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+    "ontario-grade4-science-content-current-ledger-2026-11-11.json"
+  ],
+  "foodWebContract": {
+    "nodeCount": 7,
+    "foodToEater": true,
+    "twoSharedChains": true,
+    "omnivoreAndChainRoleDistinct": true,
+    "decomposerGroupNotInventedSpecies": true,
+    "nutrientReturnNotReversedEnergy": true,
+    "modelNotContemporaneousCensus": true
+  },
+  "historicalSpecificRowsOutsideFreshRecertification": [
+    "B2.3",
+    "B2.4",
+    "B2.5",
+    "B2.6",
+    "B2.7"
+  ],
+  "preservation": {
+    "canonicalChanges": 0,
+    "newTopicsPairsContextsAgesGuidesOrEdges": 0,
+    "allOldFilesPreserved": true,
+    "denominatorUnchanged": true
+  },
+  "progress": {
+    "newAuthoringClosures": 3,
+    "wholeSourcePartialBefore": 32,
+    "wholeSourcePartialAfterIfIntegrated": 29,
+    "sciencePartialBefore": 26,
+    "sciencePartialAfterIfIntegrated": 23,
+    "unqualifiedInScopeAfterIfIntegrated": 27
+  },
+  "deliveryBoundary": "Actual locality/source/access/plant comparison and independent performances are not claimed completed. No downstream publication or learner writes.",
+  "peer": {
+    "status": "PASS"
+  },
+  "validation": {
+    "validate": true,
+    "generatedCheck": true,
+    "fullTestsPassed": 532,
+    "focusedReferenceAndNegativeGuards": 2,
+    "unchangedDataNotRegenerated": true
+  }
+}

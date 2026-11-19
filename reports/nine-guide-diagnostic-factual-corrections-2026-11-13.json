@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "9c5ee31533f563086b7ed2411818d597cabd912b",
+  "status": "Reviewed factual and supplied-material diagnostic corrections",
+  "changes": [
+    {
+      "path": "/assess/errorPatterns/0/pattern",
+      "old": "Divides by the numerator: reads '3/8 of 24' as 24 ÷ 3 and makes 3 groups (or takes just 3 counters), giving 8 or 3",
+      "new": "Divides by the numerator: reads '3/8 of 24' as 24 ÷ 3, makes 3 groups of 8 instead of 8 groups of 3, and reports 8. Taking 3 single counters is a different error: treating the numerator as an item count without partitioning.",
+      "topicId": "mt_3y7xKP9MjU"
+    },
+    {
+      "path": "/assess/errorPatterns/0/revealedBy",
+      "old": "Child makes 3 groups instead of 8, or grabs 3 counters straight away — using the top number as the divisor",
+      "new": "Child makes 3 equal groups of 8 and reports 8, using the top number as the divisor. If the child simply grabs 3 single counters, record numerator-as-item-count confusion separately rather than infer that they divided by 3.",
+      "topicId": "mt_3y7xKP9MjU"
+    },
+    {
+      "path": "/assess/whatMakesItDiscriminate",
+      "old": "Because the teacher WATCHES the procedure rather than asking about it, the two canonical breakdowns show themselves in the child's actions: a child who divides by the numerator makes 3 groups; a child who stops after one step makes 8 groups but reports 3; only a child who has the divide-then-multiply structure makes 8 groups AND takes 3 of them. 24 is chosen so 3/8 divides evenly (no remainder to mask the error) and the numerator (3) differs from the group size (also 3) is avoided — deliberately 24 gives group size 3 and numerator 3, so watch that they take 3 GROUPS not 3 counters: taking 3 counters instead of 3 groups is the exact tell for divide-by-numerator confusion.",
+      "new": "Watching the procedure separates the errors: making 3 groups of 8 uses the numerator as divisor; making 8 groups of 3 but reporting only 3 stops at the unit fraction; grabbing 3 single counters without partitioning treats the numerator as an item count. A secure response makes 8 groups and takes 3 groups, giving 9. Because the numerator and group size both equal 3 here, the answer 3 alone cannot distinguish the two latter errors; watch the actions and use a further case such as 3/4 of 24 (group size 6, numerator 3). Division by 3 also leaves no remainder, so a visible leftover cannot diagnose the first error. A mathematically equivalent multiply-then-divide route is also valid if both operations and the fraction meaning are explained; multiplication first alone does not establish a misconception.",
+      "topicId": "mt_3y7xKP9MjU"
+    },
+    {
+      "path": "/assess/errorPatterns/2/revealedBy",
+      "old": "Child produces a number bigger than 24 with no partitioning, or multiplies before dividing",
+      "new": "Child reports the numerator product alone (24 × 3 = 72) without completing the denominator division or explaining equivalent fraction reasoning. Multiplying first is not itself an error: 24 × 3 ÷ 8 = 9 is valid when both operations are completed and justified.",
+      "topicId": "mt_3y7xKP9MjU"
+    },
+    {
+      "topicId": "mt_Jvvh5P06NV",
+      "path": "/assess/errorPatterns/0/pattern",
+      "old": "Adds the side lengths instead of multiplying: gives 4 + 6 = 10 (the perimeter) as the area.",
+      "new": "Adds two adjacent side lengths instead of multiplying: gives 4 + 6 = 10 as area. This is only two side lengths, not the full perimeter; the 4-by-6 rectangle has perimeter 20 linear units and area 24 square units."
+    },
+    {
+      "topicId": "mt_XLP1IM3Qbb",
+      "path": "/assess/errorPatterns/1/revealedBy",
+      "old": "one digit of a partial product wrong; estimate (2500×40 = 100,000) flags it",
+      "new": "One digit of a partial product is wrong. A magnitude-changing error may conflict with the estimate, but a small carry error can remain plausible; inspect each multiplication/carry and the final addition directly."
+    },
+    {
+      "topicId": "mt_Jvvh5P06NV",
+      "path": "/assess/responseLevels/gap",
+      "old": "Adds the side lengths (perimeter), or counts one by one with no array structure and no multiplication.",
+      "new": "Adds two adjacent side lengths (4 + 6 = 10), or uses the full perimeter (20), instead of the area (24); or counts one by one with no array structure and no multiplication."
+    },
+    {
+      "topicId": "mt_Jvvh5P06NV",
+      "path": "/assess/whatMakesItDiscriminate",
+      "old": "A child who has structured the array multiplies rows by squares-in-a-row and can justify it; a child who has not counts one by one with no multiplication, or adds the sides for a perimeter answer, or multiplies by rote but cannot say why — each visible in how they tile, compute and explain.",
+      "new": "A child who has structured the array multiplies rows by squares-in-a-row and can justify it; a child who has not counts one by one with no multiplication, or adds two adjacent side lengths or calculates the full perimeter instead of area, or multiplies by rote but cannot say why — each visible in how they tile, compute and explain."
+    },
+    {
+      "path": "/assess/probeDeeper/0",
+      "old": "You made seven jumps and landed just past 1 3/4. Why doesn't 7/4 land near 7, when there's a 7 in it?",
+      "new": "You made seven jumps and landed exactly at 1 3/4. Why doesn't 7/4 land near 7, when there's a 7 in it?",
+      "topicId": "mt_09sySPqM9Z"
+    },
+    {
+      "path": "/assess/correctAnswer",
+      "old": "Seven equal jumps of 1/4 from 0, landing at 1 3/4; 7/4 = 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4. Yes, 7/4 is a real number — it is seven quarters, a definite point just past 1 3/4 on the line.",
+      "new": "Seven equal jumps of 1/4 from 0, landing at 1 3/4; 7/4 = 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4 + 1/4. Yes, 7/4 is a real number — it is seven quarters, a definite point exactly at 1 3/4 on the line.",
+      "topicId": "mt_09sySPqM9Z"
+    },
+    {
+      "path": "/assess/errorPatterns/2/pattern",
+      "old": "Whole-number bias: places 7/4 near 7 (or treats the 7 as dominant) rather than as seven quarters just past 1 3/4.",
+      "new": "Whole-number bias: places 7/4 near 7 (or treats the 7 as dominant) rather than as seven quarters exactly at 1 3/4.",
+      "topicId": "mt_09sySPqM9Z"
+    },
+    {
+      "path": "/assess/diagnosticPrompt",
+      "old": "Show stacked 0-to-1 number lines, one divided into thirds and one into sixths, lined up. Point to 2/3 on the thirds line and ask: 'Which fraction on the sixths line is at exactly the same point, and how do you know they are equal?' Then ask: 'Show me on these lines three fractions that are all equal to 1/2.'",
+      "new": "Show stacked 0-to-1 number lines, one divided into thirds and one into sixths, lined up. Point to 2/3 on the thirds line and ask: 'Which fraction on the sixths line is at exactly the same point, and how do you know they are equal?' Then ask: 'Use these lines, and draw additional equally partitioned lines or strips as needed, to show three fractions that are all equal to 1/2.'",
+      "topicId": "mt_Ep7TDFuYUa"
+    },
+    {
+      "path": "/assess/responseLevels/full",
+      "old": "Identifies same-point equivalence, generates a correct family for 1/2, explains equivalence as re-partitioning that preserves position, and correctly rejects a non-equivalent (e.g. 1/2 is not a point on a fifths line).",
+      "new": "Identifies same-point equivalence, generates a correct family for 1/2, explains equivalence as re-partitioning that preserves position, and correctly rejects a non-equivalent (e.g. no whole-number fifths tick marks 1/2, although the midpoint is still on the continuous line).",
+      "topicId": "mt_Ep7TDFuYUa"
+    },
+    {
+      "path": "/pedagogy/bestPractices/2",
+      "old": "Model reading intermediate values — half a symbol is half the key; a bar top halfway between 10 and 15 is 12 or 13 depending on the scale",
+      "new": "Model reading intermediate values exactly: half a symbol is half the key; a bar top halfway between10 and15 reads12½, not12 or13. For counts of indivisible objects such as children, choose a key that makes the used part-symbols represent whole counts, for example key10 and half-symbol5.",
+      "topicId": "mt_r8XnXwRA6g"
+    },
+    {
+      "path": "/assess/correctAnswer",
+      "old": "Interpreting: reads values THROUGH the key (symbols ×5, half-symbol = 2 or 3), and gives the difference for 'how many more'. Translating: draws bars for 20 and 15 using an even scale that fits (e.g. each square = 5), equal width from the baseline.",
+      "new": "Interpreting: reads values through the stated key; with one symbol=10 children, half a symbol=5 children. Gives the difference for how many more. A numerical bar midpoint between10 and15 is12½ when that quantity is meaningful, never rounded to12 or13 without an explicit rounding instruction. Translating: draws bars for20 and15 from a common baseline with equal widths and uniform intervals, for example each square=5; a uniform scale need not be an even integer.",
+      "topicId": "mt_r8XnXwRA6g"
+    },
+    {
+      "path": "/assess/diagnosticPrompt",
+      "old": "First: here is a scaled pictogram of favourite sports where one symbol stands for 5 children (and half-symbols appear) — how many chose football, and how many MORE chose football than tennis? Then: here is the data for two more sports (swimming 20, cycling 15) — draw them as bars on this grid, choosing a sensible scale.",
+      "new": "Draw an original pictogram with key one symbol=10 children: football has two whole symbols and a half; tennis has one whole symbol and a half. Ask how many chose football and how many more football than tennis (25 and10). Then give swimming20 and cycling15 and ask the learner to draw a scaled bar graph on a grid, choosing and explaining a uniform scale. Separately, for a continuous quantity such as litres, ask the exact value halfway between10 and15 (12½); do not use a half child as an actual count.",
+      "topicId": "mt_r8XnXwRA6g"
+    },
+    {
+      "path": "/assess/correctAnswer",
+      "old": "Half full = 1/2 = 0.5 = 50%, read as 'one half', 'five tenths / nought point five', 'fifty per cent'. 9% means nine out of every hundred (of the price); as a decimal 0.09; the money off is 9% OF £420, i.e. £37.80 (children may reason 1% of 420 = 4.20, so 9% = 37.80). The key usage: '9% of £420', never '9% = £37.80'.",
+      "new": "Half full = 1/2 = 0.5 = 50%, read as 'one half', 'five tenths / nought point five', 'fifty per cent'. 9% means nine out of every hundred of the price; as a decimal0.09. The money off is9% of £420 = £37.80:1% of £420 = £4.20, so9% of £420 =9 × £4.20 = £37.80. The key usage is '9% of £420', never '9% = £37.80'.",
+      "topicId": "mt_W17Kbwm0-u"
+    },
+    {
+      "topicId": "mt_NtJYlJdUe9",
+      "path": "/assess/responseLevels/full",
+      "old": "Names several measurable attributes of one object (a bottle has height, weight and capacity), treats them as separate questions, and reasons that being taller does not decide which holds more — you would fill or weigh to find out — using comparative language across a new pair unprompted.",
+      "new": "Names several measurable attributes of one object (a bottle has height, mass/weight and capacity), treats them as separate questions, and reasons that being taller does not decide which holds more. Compare capacity by filling/pouring; compare mass by weighing, rather than treating the total mass of different containers as their capacity. Uses comparative language across a new pair unprompted."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/assess/errorPatterns/0/nextMove",
+      "old": "Teach and rehearse personal benchmarks (fingernail ≈ 1 cm, stride ≈ 1 m, doorway ≈ 2 m) and 'iterate the unit in your head' before guessing; scaffold rather than reteach measuring.",
+      "new": "Teach and rehearse checked personal benchmarks against an actual ruler/metre stick. Compare the learner's own finger width/stride with known units rather than assume a child's stride is1m; then mentally iterate a suitable reference and measure to check."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/assess/errorPatterns/1/pattern",
+      "old": "Unit/scale confusion: right number sense but wrong unit magnitude — estimates a book at '20 m' or a room at '300 cm', muddling centimetres and metres.",
+      "new": "Unit/scale confusion: attaches a clearly inappropriate magnitude to the actual object, for example estimating an ordinary book at20m rather than about20cm. A room measurement of300cm can be valid and is not an error simply because metres might be convenient."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/assess/errorPatterns/1/nextMove",
+      "old": "Anchor each unit to a vivid benchmark (cm = fingernail, m = big stride) and sanity-check the unit; more hands-on measuring to feel unit sizes.",
+      "new": "Use an actual1cm/1m reference and calibrate any personal benchmark against it. Sanity-check the estimate against the real object; accept equivalent sensible units such as300cm or3m for the same length."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/pedagogy/summary",
+      "old": "Children learn to estimate lengths in standard units by building a 'mental ruler' — anchoring a guess to a known referent (a fingernail ≈ 1 cm, a big stride ≈ 1 m, a doorway height ≈ 2 m) and iterating that image — then measuring to check and revise. Estimation comes AFTER hands-on measuring, and research favours explicit strategy (benchmarks, mental iteration) over unstructured guess-and-check.",
+      "new": "Children learn to estimate lengths in standard units by building a 'mental ruler' — anchoring a guess to a known referent (known unit references and personal fingernail, stride or doorway benchmarks checked by actual measurement; a child's stride is not assumed to be1m) and iterating that image — then measuring to check and revise. Estimation comes AFTER hands-on measuring, and research favours explicit strategy (benchmarks, mental iteration) over unstructured guess-and-check."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/pedagogy/bestPractices/0",
+      "old": "Teach personal benchmarks/referents (fingernail ≈ 1 cm, hand-span, a stride ≈ 1 m, doorway ≈ 2 m) so estimates are anchored, not blind guesses.",
+      "new": "Teach personal benchmarks/referents (actual fingernail, hand-span, stride or doorway lengths checked against known unit references, not a universal1m childstride) so estimates are anchored, not blind guesses."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/pedagogy/keyRepresentations/0",
+      "old": "Personal benchmark referents: fingernail ≈ 1 cm, hand-span, stride ≈ 1 m, doorway ≈ 2 m",
+      "new": "Personal benchmark referents calibrated by actual measurement: fingernail, hand-span, stride and doorway; no universal1m childstride"
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/pedagogy/commonMisconceptions/1",
+      "old": "Unit/scale confusion — estimating a book at '20 m' or a room at '300 cm', muddling centimetres and metres.",
+      "new": "Unit/scale confusion — estimating a book at '20 m' rather than about20cm, muddling centimetres and metres. A300cm room length can be valid (3m), so equivalent sensible units are accepted."
+    },
+    {
+      "topicId": "mt_OzRZ89GrQW",
+      "path": "/learn/reviewNotes/4",
+      "old": "Example consistency check: a book estimated at 25 cm measuring 22 cm is a plausible small gap; a book at '20 m' or '1000 cm' and a room at '300 cm' are used only as misconception illustrations in feedback, never as correct answers.",
+      "new": "Example consistency check: a book estimated at 25 cm measuring 22 cm is a plausible small gap; a book at '20 m' or '1000 cm' are used only as misconception illustrations in feedback, never as correct answers. A room at300cm can be valid (3m) and must not be scored wrong merely for using centimetres. Personal benchmarks, including stride, are checked rather than assumed."
+    },
+    {
+      "topicId": "mt_09sySPqM9Z",
+      "path": "/pedagogy/commonMisconceptions/2",
+      "old": "Whole-number bias in placing improper fractions: reading 7/4 as near 7 (or treating the 7 as the dominant number) rather than as seven quarters just past 1 3/4.",
+      "new": "Whole-number bias in placing improper fractions: reading 7/4 as near 7 (or treating the 7 as the dominant number) rather than as seven quarters exactly at 1 3/4."
+    }
+  ],
+  "scope": "Twenty-seven exact fields in nine existing saved guides. All intrinsic cards, evidence criteria, source/context/age records, dependencies, other guide fields and metadata remain unchanged. No source Full promotion or learner-state write.",
+  "verification": "Direct arithmetic/dimensional checks and comparison with current correct learn constraints; independent reviewer operative reads. No fresh empirical efficacy claim.",
+  "downstreamGate": "Qualify private richer-research field preservation and learner compatibility before staging; never replace a private full guide with its public projection or reinterpret existing observations."
+}

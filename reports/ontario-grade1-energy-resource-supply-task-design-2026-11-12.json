@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "status": "Reviewed source-authoring portfolio; one new portable whole concept, no delivery/efficacy/learner-state claim.",
+  "preparationBase": "101cf28",
+  "source": "the-ontario-curriculum-science-and-technology-20",
+  "newTopicId": "mt_v8gu9eSaEg",
+  "newWholeCard": {
+    "id": "mt_v8gu9eSaEg",
+    "type": "CONCEPTUAL",
+    "subject": "Science",
+    "domain": "Energy",
+    "name": "Energy resources and limited supplies",
+    "description": "Trace familiar energy resources to the natural world and explain how repeated use affects a declared limited supply of useful fuel. Distinguish natural origin from processing, transport and local storage; explain why a new local delivery does not make the natural supply unlimited. Contrast these stock-limited fuel cases with sunlight and moving air without promising that either is available whenever needed.",
+    "centrality": 0,
+    "evidence": [
+      "Trace coal, oil and natural gas to natural underground sources, and sunlight and moving air to their natural origins. Distinguish a source from a shop, delivery or power station handling the resource.",
+      "Use a simple stated stock model to explain that repeated fuel use reduces the useful fuel available and cannot continue indefinitely when no replacement is supplied. Explain that this is a useful-resource limit, without claiming all energy or matter vanishes.",
+      "Track a transfer between two declared available supplies: explain which local store gains and which source supply loses, and why delivery changes local availability without creating unlimited natural resources. Respond to a changed supply/use case with the model’s boundaries explicit.",
+      "Explain a fitting way to reduce unnecessary use while preserving a stated essential service, relating the choice to the limited supply. Correct the claims that all natural resources behave as identical disappearing piles and that wind/sunlight must be available at every requested time."
+    ],
+    "assessmentPrompt": "After study, can {{name}} explain where the fuels, sunlight and moving air come from, show what happens as a given fuel supply is used, and explain a delivery from a second supply? Can they choose a change that preserves the needed service and makes the given useful fuel last longer, without calling every natural resource the same kind of pile?",
+    "standards": [
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2",
+      "the-ontario-curriculum-science-and-technology-20:ON-SCI-2022-G1-C2.5"
+    ],
+    "ageRangeStart": 6,
+    "ageRangeEnd": 7
+  },
+  "initialContext": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageRange": [
+      6,
+      7
+    ],
+    "noUnsupportedGlobalOffer": true
+  },
+  "newHardPrerequisites": [],
+  "newComponentPairs": [
+    {
+      "topicId": "mt_v8gu9eSaEg",
+      "code": "C2",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_v8gu9eSaEg",
+      "code": "C2.5",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_cxJRc15osy",
+      "code": "C2",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_iGSfQg3g5c",
+      "code": "C2",
+      "role": "component"
+    },
+    {
+      "topicId": "mt_3v0VNkwquK",
+      "code": "C2",
+      "role": "component"
+    }
+  ],
+  "readAloudStudyCards": [
+    {
+      "id": "underground-fuels",
+      "text": [
+        "People use fuels such as coal, oil and natural gas for useful energy. These fuels come from the natural world: people obtain them from deposits underground. A shop, tanker or power station can handle a resource, but it is not where the natural resource first came from.",
+        "These fuels are not replaced on the timescale on which people use them. There is a limited supply available to obtain. Using a fuel from a deposit uses part of that supply; bringing another delivery to a local store does not make the natural supply unlimited.",
+        "This does not mean that energy itself vanishes. This lesson is about a supply of useful fuel resources, not a claim that all matter or energy disappears."
+      ]
+    },
+    {
+      "id": "moving-air-and-sunlight",
+      "text": [
+        "People can also use energy from moving air and sunlight. These come from the surrounding natural world too. They do not work like taking pieces from the particular underground fuel deposit in our model.",
+        "Wind may be still and sunlight may be unavailable at the time or place we need it. Being a different kind of resource does not guarantee useful energy is available continuously. We do not say that every resource has the same limited stock or that only underground fuels count as natural resources."
+      ]
+    },
+    {
+      "id": "finite-stock-model",
+      "text": [
+        "This is a pretend model, not a measurement of a real fuel reserve. A town has ten fuel tokens representing an available coal supply. No new coal becomes available within this model. Each selected heating job uses two tokens from that supply. Tokens mark useful fuel before use, not every material left after fuel is burned.",
+        "Some energy use meets essential needs. In this story an occupied building must stay suitably warm. A declared empty room needs no heating during the study period. Avoiding heating that empty room can make the given fuel supply last for more essential jobs; the model does not require turning off necessary heating."
+      ]
+    },
+    {
+      "id": "new-delivery",
+      "text": [
+        "The local store receives another four fuel tokens from a second declared underground supply. The store now has more fuel than before the delivery. The second supply has less available fuel by the same model amount. The delivery changed where fuel was available, without proving that the natural supply is unlimited."
+      ]
+    }
+  ],
+  "studyUse": "Read and discuss the cards and model one different two-token transaction. Do not provide the independent answers below. Offer physical tokens, oral reasoning or drawings; calculations are a representation aid, not the mastery gate. Remove the explanatory ordered text before assessment; an adult may read case facts neutrally.",
+  "originalStockResource": {
+    "teachingInitial": {
+      "availableA": 10,
+      "availableB": 4,
+      "shop": 0,
+      "alreadyUsed": 0
+    },
+    "independentInitial": {
+      "availableA": 6,
+      "availableB": 4,
+      "shop": 0,
+      "alreadyUsed": 0
+    },
+    "independentSequence": [
+      {
+        "operation": "transfer",
+        "from": "availableA",
+        "to": "shop",
+        "amount": 2
+      },
+      {
+        "operation": "use",
+        "from": "shop",
+        "to": "alreadyUsed",
+        "amount": 2
+      },
+      {
+        "operation": "transfer",
+        "from": "availableB",
+        "to": "shop",
+        "amount": 2
+      }
+    ],
+    "independentKeyFinal": {
+      "availableA": 4,
+      "availableB": 2,
+      "shop": 2,
+      "alreadyUsed": 2
+    },
+    "conditions": [
+      "Two declared available supplies before transfer",
+      "No replacement beyond the declared transfers",
+      "Counters mean useful fuel before use, not every atom/energy form",
+      "Exact arithmetic is an optional aid, not a mastery gate"
+    ],
+    "purposeCards": {
+      "initial": "Occupied room needs suitable warmth; declared empty room needs no heating this period.",
+      "changed": "Second room is now occupied and also needs suitable warmth; reassess rather than repeat the original choice."
+    },
+    "isObservedReserveOrLearnerResult": false
+  },
+  "fullIndependentAssessment": {
+    "materials": [
+      "Unordered resource labels: coal, oil, natural gas, moving air, sunlight; location labels: natural surroundings, underground deposit, shop/store, power station.",
+      "Ten counters, two unheated/occupied-building job cards and one empty-room job card.",
+      "Independent new-delivery facts: TWO counters move from the declared available B supply to the local shop, following originalStockResource.independentSequence. The four-counter new-delivery study card is a separate teaching model."
+    ],
+    "prompts": [
+      "Trace three fuel resources and the two contrasting resources to their natural origins. Explain why the shop or power station is not the original natural source.",
+      "Show what happens to the available stock after repeated two-token uses. Explain in words why it cannot supply the same jobs forever under the stated no-replacement conditions. A counting slip alone should not obscure correct finite-stock reasoning.",
+      "Choose a changed use that preserves the stated occupied-building need while reducing unnecessary use. Explain the resource consequence; do not offer only a generic saving slogan.",
+      "A friend says the next delivery proves the natural supply is unlimited. Explain what increased and what decreased, and why moving a resource is different from creating an unlimited source.",
+      "A friend says every natural energy resource is a pile that disappears in exactly the same way, while another says wind works whenever we want it. Correct both using the supplied contrasting cases."
+    ],
+    "requiredEvidence": [
+      "Natural origin across more than one underground fuel and contrasting wind/sunlight cases, with source versus processing/distribution distinguished.",
+      "Finite available useful-fuel supply related to repeated use and replenishment conditions, without all-energy-vanishes reasoning.",
+      "Independent transfer to a replenished local store, distinguishing local availability from overall natural-resource supply.",
+      "Cause-fitting responsible-use choice and non-universal wind/sun boundary."
+    ],
+    "insufficient": [
+      "Repeating supplied facts without modelling the stock or explaining the new-delivery case.",
+      "Correct arithmetic without a natural-resource explanation.",
+      "Naming renewable/non-renewable categories without the source relation.",
+      "Claiming no resources remain anywhere when one store empties.",
+      "Saying all natural resources are unlimited because the wind may return."
+    ],
+    "exactSequenceReference": "/originalStockResource/independentSequence"
+  },
+  "protocols": {
+    "C2.5": {
+      "requiresIndependentPerformance": true,
+      "requiredEvidence": [
+        "natural-origins-versus-handling",
+        "finite-useful-stock-not-energy-disappearance",
+        "donor-recipient-transfer",
+        "changed-essential-need",
+        "source-specific-availability"
+      ],
+      "wholeTopicAwardFromSourceTaskAlone": false,
+      "resourceReference": "/originalStockResource",
+      "assessmentReference": "/fullIndependentAssessment",
+      "contributorIds": [
+        "mt_v8gu9eSaEg"
+      ]
+    },
+    "C2": {
+      "requiresIndependentPerformance": true,
+      "independentOverallNotChildCount": true,
+      "assessment": {
+        "id": "independent-C2-synthesis",
+        "premises": [
+          "A fresh declared home/garden scene has sunlight, air/land/water that warm, and a studied green plant growing under suitable conditions.",
+          "An animal and person obtain energy through food; a selected light/heating device uses supplied fuel-derived electricity.",
+          "The useful fuel stock is limited. One day/season/use condition then changes."
+        ],
+        "task": "Independently construct an account of how energy affects movement/change and lives, how the Sun is the principal Earth source through air/land/water/light/green-plant links, and how food/source/use/finite-stock conditions affect a responsible choice. Explain the changed case and distinguish principal from only. Facts may be read neutrally; the learner supplies the connections.",
+        "requiredEvidence": [
+          "energy-movement-change-and-life",
+          "sun-principal-not-only",
+          "solar-air-land-water-light-green-plant",
+          "animal-and-person-food-energy",
+          "source-useful-stock-use-relation",
+          "changed-day-season-use-transfer"
+        ],
+        "childCountOrCopiedCardsSufficient": false,
+        "wholeTopicAwardFromSourceTaskAlone": false,
+        "oldApplianceAgeLowered": false
+      },
+      "contributorIds": [
+        "mt_v8gu9eSaEg",
+        "mt_cxJRc15osy",
+        "mt_iGSfQg3g5c",
+        "mt_3v0VNkwquK"
+      ]
+    }
+  },
+  "existingAccessibleResources": [
+    "ontario-grade1-energy-task-design-2026-11-12.json",
+    "ontario-grade1-energy-responsibility-seasonal-task-design-2026-11-12.json"
+  ],
+  "coreOverlapAndDistinctOperation": "NaturalResources overlaps origin/finite core. This claim explicitly assesses useful-stock/source-store transfers and changed essential needs, while old environmental/source-combination/classification/recycling repertoires remain unchanged. No claim of disjointness or automatic mastery transfer.",
+  "wholeClaimPreservation": [
+    "BodyNeeds retains all basic needs and health/food/air/water/shelter operations.",
+    "SunWarming retains actual appropriate observations and surface/light/shade contrasts.",
+    "PlantNeeds retains complete observations/growing-condition evidence; supplied scene facts do not award it.",
+    "Old NaturalResources environmental/multi-source/classification, FiniteResourcesRecycling and Renewables claims/guides/ages/edges unchanged.",
+    "No younger full appliance offer or formal energy vocabulary gate."
+  ],
+  "sourceReadBinding": {
+    "url": "https://www.eia.gov/energyexplained/what-is-energy/sources-of-energy.php",
+    "publisher": "U.S. Energy Information Administration",
+    "readReceipt": "Complete returned main body281–311 read earlier2026-11-12; current private reuse-boundary-v2 receipt retained. Adopt finite nonrenewable resources295 and natural-resource examples305/307/309; variable availability300 as caution. No current reserve totals, energy mix, geological duration or technical transformation vocabulary imported.",
+    "boundary": "Token/room/delivery models are original declared analytic conditions, not EIA experiments or real-world measurements."
+  },
+  "historicalOtherEnergyLabelsNotRecertified": true,
+  "publicationBoundary": "Authoring only; no downstream publication, learner migration/reset, efficacy or actual attainment."
+}

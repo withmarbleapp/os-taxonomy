@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "c333d6b",
+  "scope": "CBSE CT/AI supplement (Classes III–V) only; primary C-6 stage-end familiarity",
+  "source": "cbse-ctai-2026",
+  "records": [
+    {
+      "key": "cbse-ctai-2026:IN-CBSE-CTAI-2026-PREP-COMP-C-6",
+      "officialCode": "C-6",
+      "disposition": "Full",
+      "meaning": "Complete implementable source authoring; actual learner attainment is not claimed.",
+      "contributions": [
+        {
+          "topicId": "mt_o0vTMl8vj5",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_XeT37rd69f",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_zIzJGkaj0Q",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_SZrMv3YAky",
+          "role": "component"
+        },
+        {
+          "topicId": "mt_sPV503BQnI",
+          "role": "component"
+        }
+      ],
+      "assessmentProtocol": "cbse-primary-digital-operational-protocol-2026-11-12.md",
+      "remainingConditions": [],
+      "residualKind": "none"
+    }
+  ],
+  "sourceMeaning": "Guided practical familiarity with computer parts, input/output, file management, safety, educational applications and visual programming. No VI+ proficiency requirement is imported.",
+  "context": "Five new India 8–11 contexts refer to stage-end. All old contexts and intervals are preserved; no individual grade deadline is invented.",
+  "compatibilityProjection": {
+    "topicId": "mt_SZrMv3YAky",
+    "oldGlobalBounds": [
+      3,
+      8
+    ],
+    "newGlobalBounds": [
+      3,
+      11
+    ],
+    "reason": "The new India 8–11 source context projects the unchanged hardware/software claim to 3–11. Existing authored 3–8 and 6–8 contexts are retained exactly."
+  },
+  "newPairs": 5,
+  "newContexts": 5,
+  "newTopics": 0,
+  "claimChanges": 0,
+  "hardEdgeChanges": 0,
+  "savedResearchRecordChanges": 0,
+  "mechanicsVerified": "Official getting-started guide, next-costume resource, local file load/export help and motion reference implementation checked. Reset direction to 90/right, position to (0,0), and costume to 1 before comparisons.",
+  "liveGUIPreflight": "Not performed: no available browser surface. This alone is not a curriculum gap. Check device-specific mechanics where uncertain.",
+  "deliveryConditions": "Actual guided device, application, file and block use remains required. Paper or prerecorded work does not certify performed procedures. Whole-claim extras and prerequisites remain separately assessed.",
+  "notPromoted": [
+    "CG3",
+    "Any graded-parent record",
+    "Whole learner or prerequisite mastery"
+  ],
+  "progress": {
+    "acceptedMainCTAISupplementFull": 2,
+    "precedingConsolidatedProposalFull": 5,
+    "proposedAfterThisSlice": 6,
+    "selectedCTAIHierarchicalRecords": 21,
+    "selectedNCERTFull": 444,
+    "selectedNCERTEligible": 521,
+    "overallIndiaDenominator": null,
+    "overallCBSEPrimaryDenominator": null,
+    "interpretation": "Six independently reviewed competency records after this slice; three goals and twelve grade-parent records remain independently unreviewed. These are hierarchical source records, not unique skills or overall CBSE coverage."
+  },
+  "review": "Root semantic approval and independent Ontario source, whole-card, operational-path and publisher-mechanics peer review: no substantive blocker.",
+  "publication": "Local batch for root-owned consolidated draft PR160; no separate agent PR or remote push.",
+  "validation": [
+    "alignments:generate PASS",
+    "validate PASS",
+    "alignments:generated-check PASS",
+    "485 tests PASS"
+  ]
+}

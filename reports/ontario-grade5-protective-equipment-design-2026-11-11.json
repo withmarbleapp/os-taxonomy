@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "1f30635588a9ac90d3dd334cbd8c00739db4a14b",
+  "code": "ON-SCI-2022-G5-D2.5",
+  "status": "Actual protective-feature/function task on unchanged design claim; no new equipment or force-law topic.",
+  "resources": {
+    "helmet": {
+      "url": "https://www.cpsc.gov/s3fs-public/349-WhichHelmetBrochure_5-13-22_WEB_508.pdf",
+      "publisher": "US Consumer Product Safety Commission, publication 349, May 2022",
+      "readScope": "Actual two-page text, especially protection, correct activity/fit and crushable-liner/replacement paragraphs read. Screenshot calls did not provide an inspectable image, so no visual layout/image claim.",
+      "facts": "A suitable bicycle-helmet liner deforms to take up impact energy, reducing what reaches the head. This protection depends on appropriate activity, fit and condition; a helmet is not a guarantee against concussion or every injury.",
+      "limits": "No copied figures/table, Canadian standards/legal requirement, purchase advice or new specific clinical mechanism. Do not test or modify a helmet or treat a used-impact helmet as serviceable from its appearance."
+    },
+    "belt-mechanism": {
+      "url": "https://www.fmcsa.dot.gov/faq/what-do-you-say-drivers-who-think-wearing-safety-belt-isnt-going-prevent-injuries-if-they-are",
+      "publisher": "US Federal Motor Carrier Safety Administration, dated 15 April 2014",
+      "readScope": "Complete actual FAQ answer read.",
+      "facts": "A restraint keeps a person within the vehicle, distributes loading over appropriate stronger body regions and allows slowing over a longer interval.",
+      "limits": "An explanation of protection does not mean a belt exerts no force, prevents every injury or substitutes for correctly fitted child restraints."
+    },
+    "belt-fit": {
+      "url": "https://www.nhtsa.gov/vehicle-safety/seat-belts",
+      "publisher": "US National Highway Traffic Safety Administration",
+      "readScope": "Actual main overview, adult protection/fit and child-fit reference sections read; videos, linked charts and entire wider page not claimed.",
+      "facts": "The restraint routes forces through suitable pelvis/chest regions rather than soft abdomen; correct fit matters and children may require an appropriate child restraint/booster.",
+      "limits": "No current statistic, child-size threshold, US legal rule or pupil-specific fit determination is adopted."
+    }
+  },
+  "preparedCases": {
+    "helmet": {
+      "sourceRefs": [
+        "helmet"
+      ],
+      "feature": "Appropriate crushable protective liner held correctly in place",
+      "harmfulEffect": "A collision can cause rapid loading of the head.",
+      "mechanism": "The supplied account explains how controlled deformation takes up some impact energy instead of transmitting it all directly to the head; the liner has a limited capacity and the correct fit keeps protection in the intended location.",
+      "limit": "Not every helmet fits every activity or repeated impact; do not infer concussion prevention, invulnerability or a new clinical result.",
+      "changedCase": "An original fictional look-alike shell lacks a protective liner, or the protective part shifts away from its intended position. Explain why appearance/rigidity alone does not establish the stated mechanism.",
+      "protectionMechanism": "deformation"
+    },
+    "belt": {
+      "sourceRefs": [
+        "belt-mechanism",
+        "belt-fit"
+      ],
+      "feature": "Correctly routed restraint connecting occupant to vehicle",
+      "harmfulEffect": "During rapid slowing an unrestrained person can continue moving into the vehicle interior or out of it.",
+      "mechanism": "The belt applies a stopping interaction while directing/distributing loading to suitable stronger body regions and increasing the slowing interval relative to an abrupt hard impact. Protection changes how the force acts; it does not erase it.",
+      "limit": "Use a supplied appropriate adult-sized or correctly restrained model case, not a decision about a particular child. No guarantee all injuries are prevented, no airbag-only or loose-belt substitute.",
+      "changedCase": "In a clearly fictional diagram description, a strap is absent or wrongly routed through a soft region. Identify the changed force pathway and missing protection facts, without an actual crash demonstration.",
+      "protectionMechanism": "restraint"
+    }
+  },
+  "protocol": {
+    "codes": [
+      "ON-SCI-2022-G5-D2.5"
+    ],
+    "contributorIds": [
+      "mt_Q2Zj3L8u9C"
+    ],
+    "caseRefs": [
+      "helmet",
+      "belt"
+    ],
+    "requiredCaseFields": [
+      "feature",
+      "harmfulEffect",
+      "mechanism",
+      "limit",
+      "changedCase"
+    ],
+    "preparation": [
+      "Provide the two original attributed feature→harmful effect→mechanism→limit case cards and blank explanation record. No learner impact tests, equipment alteration or real crash are needed.",
+      "The existing whole design claim still includes features/purpose in a familiar product, an environment and a service. Retain those varied examples separately; these two protective products do not establish whole mastery by themselves."
+    ],
+    "learnerActions": [
+      "Use BOTH cases. Describe what feature is designed, which harmful force effect it changes, how that change helps and one actual limitation. A name or wear-it rule is insufficient.",
+      "Compare absorption/deformation in the liner with restraint/distribution in the belt. Explain why protective equipment can apply/transmit a force while reducing harmful effects, rather than saying it makes forces disappear.",
+      "Explain each supplied changed case and identify why a look-alike, missing part or wrong pathway does not establish the same protection. Separate an authoritative provided fact from an observation made in class."
+    ],
+    "successEvidence": [
+      "Two specific feature→force effect→protection explanations with stated limits and changed-case reasoning.",
+      "Cites the actual supplied mechanism rather than style, generic safety praise or a new quantitative impulse/pressure calculation."
+    ],
+    "nearMisses": [
+      "Only names helmet and seat belt or repeats a safety instruction.",
+      "Says the equipment removes every force/prevents every injury.",
+      "Treats a harder-looking shell or looser restraint as automatically safer, without its actual mechanism/fit."
+    ],
+    "transfer": "Compare a fictional protective design with a missing/changed functional part; explain what the supplied facts support and why an untested design is not certified safe."
+  },
+  "wholeClaimReview": "Complete Q2 card/evidence/prompt/soft edges read; no saved guide exists. Specific feature→purpose reasoning accommodates original protective cases without silently expanding it into engineering calculations or an independent clinical/equipment-certification inventory. Existing forces/material claims were compared, but no extra association is needed just to decorate a source task.",
+  "disposition": "Full",
+  "remainingConditions": [],
+  "canonicalChanges": "None: retain the existing exact Ontario10–11 Q2 D2.5 pair and every authored claim/guide/context/edge.",
+  "coverageBoundary": "Source-fit authoring programme, not recorded child performance, a product recommendation, medical instruction or certification that a particular equipment setup is safe."
+}

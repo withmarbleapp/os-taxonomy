@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "ced19992b3c0198b3989fc4231b201d3f21eaab4",
+  "status": "Three-record source-fit authoring design. Actual supplied cases and comparative tasks, not learner attainment or a new impact mastery claim.",
+  "resources": {
+    "aps": {
+      "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/traffic-management/traffic-signals-street-signs/types-of-traffic-signals/accessible-pedestrian-signals/",
+      "publisher": "City of Toronto",
+      "readScope": "Complete actual main text, operation and installation constraints read; modified May 6, 2026. Sound samples/images not played or viewed.",
+      "role": "Attributed accessibility, combined visual/audible/vibrating signals, ambient-volume adjustment and maintenance/cost facts. Dated 2023 installation counts are not a current inventory."
+    },
+    "hearing": {
+      "url": "https://www.fda.gov/medical-devices/hearing-aids/hearing-aid-benefits-and-limitations",
+      "publisher": "US Food and Drug Administration",
+      "readScope": "Actual complete benefits/limitations section read, including communication, background sound, adjustment and cost.",
+      "role": "Selected device benefits and limits only; US adult OTC eligibility is not transferred to Ontario children. No fitting, diagnosis or product recommendation."
+    },
+    "firefly": {
+      "url": "https://www.nps.gov/grsm/learn/nature/fireflies.htm",
+      "publisher": "US National Park Service",
+      "readScope": "Actual firefly and visitor-impact main text read; updated October 14, 2026. No media inspected.",
+      "role": "Specific Great Smoky Mountains firefly communication/light-disturbance case, not every insect or all lighting."
+    },
+    "ocean-noise": {
+      "url": "https://www.dfo-mpo.gc.ca/oceans/noise-bruit/about-a-propos/index-eng.html",
+      "publisher": "Fisheries and Oceans Canada",
+      "readScope": "Actual introduction, importance of sound, large-vessel source paragraph, masking/behaviour and complexity/reduction text read. No figures or PDF inspected.",
+      "role": "Ship propeller sound can overlap important signals; response depends on species, activity and exposure. No universal harm rate or guaranteed local recovery."
+    }
+  },
+  "preparedCases": {
+    "accessible-signal": {
+      "role": "societal-light-sound",
+      "resourceRefs": [
+        "aps"
+      ],
+      "sourceSummary": "Toronto describes paired visual, audible and vibrating pedestrian signals with adjustable sound and installation/maintenance constraints.",
+      "attributionLimits": "Original classroom analysis of an attributed municipal system, not a road-crossing lesson or testimony from all users.",
+      "question": "Compare a supplied original text description of a visual-only crossing signal with the City-described combined signal. Explain who may benefit, how the signal communicates timing/direction, and why maintenance, clear meaning and background conditions matter. Rank function/accessibility, safety, cost, energy/material use and appearance for this particular brief, explaining the trade-off.",
+      "expectedEvidence": "Explain an accessibility benefit without treating every user as identical. Visual, audible and tactile routes can complement one another; producing a louder noise alone does not guarantee an unambiguous message. Relate an actual design feature to the named need, give a limitation and justify priorities.",
+      "nearMiss": "Says brighter/louder is always better, all users can rely on one channel, or the device itself guarantees safe crossing.",
+      "changedCase": "An original fictional brief changes the setting to a quiet residential evening: reconsider an always-loud signal versus adjustment and vibration without assuming accessibility can simply be removed."
+    },
+    "hearing-aid": {
+      "role": "societal-sound",
+      "resourceRefs": [
+        "hearing"
+      ],
+      "sourceSummary": "FDA lists possible communication benefits alongside background-noise, adjustment and cost limitations.",
+      "attributionLimits": "Information task only; neither a promise of restored typical hearing nor a clinical assessment.",
+      "question": "Use the selected source summaries to compare a conversation with and without an appropriately fitted hearing aid for a fictional user. Explain a possible benefit in family/group communication and two limitations; contrast this with a signal that helps communicate outside the ear.",
+      "expectedEvidence": "Sound amplification may support communication but does not restore all hearing; unwanted background sound, adjustment and cost can matter. Compare whose needs and circumstances are met, with evidence rather than a cure claim.",
+      "nearMiss": "Says every hearing aid removes background sound completely or that difficulty means the user did not try hard enough.",
+      "changedCase": "In a noisier fictional room, identify what additional information would be needed before judging success; do not prescribe settings or equipment."
+    },
+    "firefly-light": {
+      "role": "environment-light",
+      "resourceRefs": [
+        "firefly"
+      ],
+      "sourceSummary": "At this named park, artificial visitor lighting can disrupt synchronous firefly communication; the provider limits disruptive visitor behaviour.",
+      "attributionLimits": "Specific attributed case; no inference that all insect decline has one cause or that all lights must be removed. Fictional perspectives below are original assessment roles.",
+      "question": "Original brief: a park organiser wants a well-lit event, a visitor wants a usable route and a conservation worker wants firefly signalling protected. Use the actual park account to assess a proposed continuously bright display beside the firefly area. Compare limiting unnecessary light, directed lighting and maintaining appropriate access under park rules.",
+      "expectedEvidence": "Trace artificial light to interference with the animals' communication and explain a cause-matched response. Compare the three supplied priorities, state what is still unknown and justify a design choice without a zero-impact guarantee.",
+      "nearMiss": "Claims a flower bed fixes light disturbance or that any conservation benefit proves all visitor/safety requirements can be ignored.",
+      "changedCase": "Move the proposal to daytime away from firefly display habitat: revise the light-specific conclusion rather than copy the earlier risk claim."
+    },
+    "ship-sound": {
+      "role": "environment-sound",
+      "resourceRefs": [
+        "ocean-noise"
+      ],
+      "sourceSummary": "DFO describes large-vessel propeller sound overlapping signals important to marine animals and context-dependent masking/behavioural effects.",
+      "attributionLimits": "No figure or local sound measurement is claimed. Original transport/conservation perspectives are not authentic testimony or a finding about a named vessel.",
+      "question": "Original brief: a ferry planner values a reliable connection, a conservation worker wants animal signals detectable and a coastal resident values both transport and marine life. Given the DFO summaries, assess a proposed noisy route through a supplied animal communication/feeding area. Compare investigating route, timing and noise-reduction options while checking whether the transport purpose remains met.",
+      "expectedEvidence": "Explain sound masking as interference with detecting an important signal, rather than noise literally stopping all sound travel. Compare priorities, identify evidence needed about species/exposure and justify a bounded response; acknowledge uncertainty and transport needs.",
+      "nearMiss": "Says all ocean sound is harmful, all ships cause the same effect or reducing one source proves every animal population has recovered.",
+      "changedCase": "The revised route has less overlap with the supplied animals' signal use but longer travel: weigh the changed conditions and ask for actual noise/fuel/habitat information rather than declare the longer route automatically greener."
+    }
+  },
+  "protocols": {
+    "C1.1": {
+      "codes": [
+        "ON-SCI-2022-G4-C1.1"
+      ],
+      "contributorIds": [
+        "mt_ZL9qVVnpwN",
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "accessible-signal",
+        "hearing-aid"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read and distinguish the actual provider summaries from the clearly labelled original fictional briefs. Use every bound case, not just the preferred technology.",
+        "Explain the light/sound property and the benefit or environmental mechanism, with a source-based limitation. Compare the supplied priorities rather than claim a survey of actual users.",
+        "Rank competing design factors and justify a recommendation against at least one alternative; explain what information could change it. Answer the prepared near-miss and changed-case questions.",
+        "For the overall, integrate societal benefits/limits with environmental effects of BOTH light and sound technologies, giving an evidence-based comparison; child-code links alone are insufficient."
+      ],
+      "remainingConditions": []
+    },
+    "C1.2": {
+      "codes": [
+        "ON-SCI-2022-G4-C1.2"
+      ],
+      "contributorIds": [
+        "mt__EL7DHjf5R",
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "firefly-light",
+        "ship-sound"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read and distinguish the actual provider summaries from the clearly labelled original fictional briefs. Use every bound case, not just the preferred technology.",
+        "Explain the light/sound property and the benefit or environmental mechanism, with a source-based limitation. Compare the supplied priorities rather than claim a survey of actual users.",
+        "Rank competing design factors and justify a recommendation against at least one alternative; explain what information could change it. Answer the prepared near-miss and changed-case questions.",
+        "For the overall, integrate societal benefits/limits with environmental effects of BOTH light and sound technologies, giving an evidence-based comparison; child-code links alone are insufficient."
+      ],
+      "remainingConditions": []
+    },
+    "C1": {
+      "codes": [
+        "ON-SCI-2022-G4-C1"
+      ],
+      "contributorIds": [
+        "mt_ZL9qVVnpwN",
+        "mt__EL7DHjf5R",
+        "mt_cOJhDeLkPo"
+      ],
+      "caseRefs": [
+        "accessible-signal",
+        "hearing-aid",
+        "firefly-light",
+        "ship-sound"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read and distinguish the actual provider summaries from the clearly labelled original fictional briefs. Use every bound case, not just the preferred technology.",
+        "Explain the light/sound property and the benefit or environmental mechanism, with a source-based limitation. Compare the supplied priorities rather than claim a survey of actual users.",
+        "Rank competing design factors and justify a recommendation against at least one alternative; explain what information could change it. Answer the prepared near-miss and changed-case questions.",
+        "For the overall, integrate societal benefits/limits with environmental effects of BOTH light and sound technologies, giving an evidence-based comparison; child-code links alone are insufficient."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "readScope": "Complete three contributor cards, ZL9 and insect-conservation pedagogy/learn/assess/sources/provenance read; cOJ has no saved guide. All 14 direct/transitive hard-closure cards and 11 hard edges read. No fresh blanket verification of inherited guide citations.",
+    "componentBoundaries": [
+      "ZL9 supplies device/signalling knowledge. These impact tasks do not replace its whole physical design/build/test/improve with agreed code and distance comparison. If assessing the whole claim, build two safe indoor light/string devices, test actual reception and improve; no road trial.",
+      "Insect conservation supplies the light-threat mechanism; its other threats, pollination/food and realistic actions remain whole-claim requirements. It is not a marine-noise topic.",
+      "cOJ supplies the actual competing-factor ranking/justification operation across the prepared briefs; no saved guide or older-topic scope is changed. Marine evidence comes from the source/task, not an insect score."
+    ],
+    "hardReadiness": "Existing light/sound vocabulary and insect/ecosystem paths remain intact. Source-task performance is not automatic whole-claim or prerequisite mastery."
+  },
+  "safety": "Source-based classroom comparisons, not road-crossing, hearing tests, medical fitting, bright/noisy field disturbance or animal handling. Fictional perspectives require no personal health disclosure. Any separate device build uses adult-approved low light and comfortable sound indoors."
+}

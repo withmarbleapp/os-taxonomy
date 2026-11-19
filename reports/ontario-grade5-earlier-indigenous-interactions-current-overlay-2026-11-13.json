@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "baseIntegration": "69adafe7688e63f2a567a2eefd83c3ae7141f2f7",
+  "status": "Reviewed one-row current source-authoring overlay; independent delivery and whole claims remain separate",
+  "records": [
+    {
+      "code": "A3.2",
+      "key": "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G5-SS-A3.2",
+      "priorCurrentDisposition": "Partial",
+      "disposition": "Full",
+      "resource": "ontario-grade5-earlier-indigenous-interactions-task-design-2026-11-13.md",
+      "protocolHeading": "Independent complete A3.2 description and comparison",
+      "existingComponentTopicIdsUnchanged": [
+        "mt_BPJ8x-w7_i"
+      ],
+      "wholeTopicAwardFromSourceResult": false,
+      "actualProgrammeOrLearnerEvidenceClaimed": false,
+      "independentSourcePerformanceRequired": true
+    }
+  ],
+  "sourceRoleContract": {
+    "FirstNationsAmongFirstNations": "Attributed Haudenosaunee founding-peace/shared decisions among distinct Nations",
+    "FirstNationsAndInuit": "Lucy Antsanen attributed remembered earlier conflict pattern, before Europeans/furtrade",
+    "twoRelationshipCategoriesRequired": true,
+    "attributionAndLimitsRequired": true,
+    "preciseGregorianEpisodeYearRequired": false,
+    "noUniversalWarOrInventedBattle": true
+  },
+  "chronologyTransfer": {
+    "earlierPattern": "Earlier relative account",
+    "interview2014": "Recording date, not event date",
+    "Thanalthur1715to1717": "Later than prior1713 unit frame",
+    "GwichyaWelcomeEpisode": "Positive interaction, selected episode period not established here",
+    "freshChangedDateLabelRequired": true
+  },
+  "wholeClaimContract": {
+    "topicId": "mt_BPJ8x-w7_i",
+    "fullHaudenosauneeAndClassicThuleKnowledgeRetained": true,
+    "ownComparisonAndFreshAttributedAccountRetained": true,
+    "wholeGuideAndAllContextsUnchanged": true,
+    "hardEdges": 0
+  },
+  "boundResources": [
+    "ontario-early-community-organisation-2026-11-10.json",
+    "ontario-grade5-historical-relationships-integration-2026-11-11.json"
+  ],
+  "negativeBoundaries": {
+    "laterThanalthurPeaceBackdatedBefore1713": false,
+    "recordingDateCalledEventDate": false,
+    "undatedHeadbandEpisodeAutomaticallyEarly": false,
+    "allIndigenousGroupsAlwaysAtWar": false,
+    "graphicCaptivityOrDeathDetailsRequiredForPupils": false,
+    "newInuitConflictResolutionEventCertified": false,
+    "wholeOrganisationClaimAwardedFromConflictSubset": false,
+    "otherHistoricalSourceRowsRecertified": false,
+    "learnerEvidenceOrDownstreamCompatibilityAssumed": false
+  },
+  "canonicalChanges": 0,
+  "review": {
+    "rootSemantic": "PASS: exact source/card/guide/resource review",
+    "independentPeer": "PASS: final actual source, whole card/guide, public resource, chronology and reference binding"
+  },
+  "validation": {
+    "validate": "PASS",
+    "generatedCheck": "PASS",
+    "fullTestsPassed": 545,
+    "focusedTests": 2,
+    "diffCheck": "PASS"
+  }
+}

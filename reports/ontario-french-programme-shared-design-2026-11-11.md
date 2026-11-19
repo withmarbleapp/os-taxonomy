@@ -1,0 +1,22 @@
+# Ontario Extended/Immersion French: shared language operations
+
+This [288-record design](ontario-french-programme-shared-design-2026-11-11.json) adds 819 component pairs on 26 existing topics across the nine primary Extended/Immersion courses. It adds 72 exact Ontario contexts and extends 84, without adding a topic, guide, authored claim change or dependency edit. All earlier whole-claim protocols and actual French resource bindings remain required.
+
+The source comparison uses all 594 retained primary clauses/examples and 216 nested teaching tips. Extended/Immersion **A1.3**, rather than A1.2, carries the meaning-comprehension duty corresponding to Core A1.2. Their listening-purpose A1.2 was separately addressed in the [66-record programme design](ontario-french-programme-media-design-2026-11-10.md). Identical code labels are not treated as identical meanings.
+
+| Source condition | Actual design treatment |
+| --- | --- |
+| Early Immersion familiar language and support | Complete original oral set across self, fictional family, friends and classroom; matched connected reading; brief model-supported production, real replies and simple revision. Later academic debate is not imposed as the early task. |
+| Academic contexts in Extended and later Immersion | Actual connected project text, supplied book/space information, varied-form reading and fresh writing; the starter story alone is insufficient. |
+| Unfamiliar listening language in Extended 6 and Immersion 4–6 | Actual context-supported new-word French instruction, with novelty checked for the learner and meaning recovered from heard French. Familiar-word retention remains a separate whole operation. |
+| Increasingly spontaneous messages in Extended 6 and Immersion 4–6 | Planned/rehearsed report followed by an actual unannounced relevant question or changed condition, with intelligible meaningful French response. |
+| Spontaneous interactions in every selected course | Real peer and teacher replies within the source's structured/guided or increasingly spontaneous context; no complete prescribed dialogue counted as interaction. |
+| Listening barriers in Immersion 4–6 | A task-linked barrier/strategy discussion and monitored next step, without inventing a learner failure. |
+| Reading and text forms | Meaning, fluency, full picture/text and mental-imagery operations; actual word-strategy use and sight bank; a collection spanning four categories with both original adaptations and checked authentic calendar/library material. No eight-product requirement is inferred. |
+| Writing process and reflection | Whole audience/form/tone and coherent development; planning, criteria, drafts, content feedback, editing, finished sharing/digital work, retained French spellings, and distinct teacher/peer reflection and monitored goals in all four channels. |
+
+The report contains additional original early/Grade 4 resources and binds the actual Grade 5/6 portfolios. Actual sound, print, visuals, readable layouts and introduced language must be checked and prepared before use. The whole read-aloud claim also requires a verified relation to the learner's independent French reading: a nominal grade, difficult word or read-aloud title alone cannot establish that relation. Models are teaching supports, not copied outcomes. No English result, different French corpus, age label or reference count automatically certifies a French performance.
+
+The [original English PDF](https://www.edu.gov.on.ca/eng/curriculum/elementary/fsl18-2013curr.pdf) resolves two delivery defects affecting this slice: Extended 5 A1.1 omits a strategy noun in the delivery body, and Extended 6 A2.2 repeats the preceding strategy body instead of its distinct responsive-interaction duty. Printed pages 140 and 155 were checked. Page 156 also restores an omitted opening for the separate Extended 6 A3.2 culture review. Catalogue identities and pinned delivery snapshots remain unchanged; the report records the source discrepancy rather than silently replacing wording.
+
+Together with the earlier Core and programme-media designs, these proposals account for 486 of 594 retained primary French positions. A complete-set guard reconciles their exact catalogue identities and every scoped contribution. The remaining 108 culture records stay in scope, including local-community applicability in early Immersion. These are source-fit authoring designs, not observed learner attainment, teaching-efficacy results or staging publication. All private learner state remains untouched.

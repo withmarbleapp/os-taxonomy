@@ -1,0 +1,11 @@
+# Land use and human needs: shared purpose distinction
+
+The [complete card/research dossier](ontario-land-use-claim-2026-11-10.json) introduces **mt_G4Fz9lw20-**, Land use and human needs, with one exact CA/Ontario 8–9 context for Grade 3 B3.5. The accepted base is `b5aa9b928d217944f82b35e964c98502972855d7`. This bounded claim checkpoint does not certify complete Grade 3 coverage or report learner attainment.
+
+Natural/managed/built feature classification does not distinguish a home from a factory’s purpose. Food/fibre production, goods/services, needs/wants, regional map scales and resource-input classification contribute related knowledge but do not supply the whole purpose–needs relationship. The existing Australian place-influence and environmental-comparison claims retain their specific geographical knowledge and are also preserved. All eight whole-claim comparisons are recorded in the dossier.
+
+The new diagnostic uses accurate supplied accounts, contrasts similar appearances with different uses, includes meaningful unbuilt and water uses, and transfers to a mixed-use place. It does not infer actual use from vegetation or buildings alone, treat unbuilt land as unused, or introduce ownership, zoning, advanced ecology or an exhaustive universal classification. Supplied community facts are attributed, not inferred from stereotypes.
+
+[NRCan’s land-cover/use reference](https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/land-cover-land-use) supports the purpose distinction; the [Ontario planning overview](https://www.ontario.ca/document/citizens-guide-land-use-planning) supplies ordinary community-purpose examples. The original teaching proposal has low, untested efficacy confidence; checked factual references are not an intervention study.
+
+Only one new card, its original guidance and one scoped association are authored. No old claim, guidance, context, age band, dependency or catalogue record is changed. No prerequisite is assumed. Consumers should treat the new ID as an independent claim, with no automatic mastery transfer or learner-state operation. The remaining regional, historical, governance, resource and integrated inquiry requirements stay under separate Grade 3 review.

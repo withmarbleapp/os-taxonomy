@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "632d3fd9ccb6c1eecbf745015a1a4ad2d32b5684",
+  "status": "Integrated B1 plus B1.1/B2.7 authoring designs qualified. B2 overall, B2.1 and B2.2 retain explicit remaining local-resource applicability, not a demand for pupil observation records. All prior claims/guides retained.",
+  "sourceCodes": [
+    "ON-SCI-2022-G4-B1",
+    "ON-SCI-2022-G4-B1.1",
+    "ON-SCI-2022-G4-B2",
+    "ON-SCI-2022-G4-B2.1",
+    "ON-SCI-2022-G4-B2.2",
+    "ON-SCI-2022-G4-B2.7"
+  ],
+  "resources": {
+    "toronto-savannah": {
+      "url": "https://www.toronto.ca/services-payments/water-environment/trees/forest-management/urban-forest-management/prescribed-burn/",
+      "publisher": "City of Toronto",
+      "sourceDate": "2026-04-24",
+      "readScope": "Complete actual main text, including preparation, habitat, wildlife safety and monitoring, read. No map/image or linked technical report inspection claimed.",
+      "role": "Verified Toronto habitat/stewardship example, not every Ontario locality or all Indigenous knowledge."
+    },
+    "dfo-otter": {
+      "url": "https://www.pac.dfo-mpo.gc.ca/education/docs/sea-otters-loutres-mer-eng.html",
+      "publisher": "Fisheries and Oceans Canada",
+      "sourceDate": "2025-07-18",
+      "readScope": "Complete actual July2025 main text read; image/poster PDF not viewed.",
+      "role": "Specific BC historical depletion/reintroduction and otter/prey/kelp-habitat relationships, not every food web or a universal reintroduction recommendation."
+    },
+    "dfo-recovery": {
+      "url": "https://www.canada.ca/en/environment-climate-change/services/species-risk-public-registry/recovery-strategies/sea-otter/chapter-2.html",
+      "publisher": "Fisheries and Oceans Canada / Species at Risk Public Registry",
+      "readScope": "Complete actual recovery chapter body read; dated publication context retained, not a current implementation audit.",
+      "role": "Historical threat-reduction/protection/monitoring approaches, including oil-spill readiness and habitat protection; no claim all proposed work is complete or current law is certified."
+    },
+    "original-transfer-models": {
+      "type": "original-hypothetical-case-bank",
+      "file": "ontario-grade4-habitat-community-task-design-2026-11-11.json",
+      "caseIds": [
+        "wetland-model",
+        "dry-grassland-model"
+      ],
+      "readScope": "The complete two original defined-condition cases are supplied below. They are reasoning models, not field observations, real species inventories or official local-resource packets. Their explicitly given relationships are assumptions of the constructed comparison."
+    }
+  },
+  "preparedCases": {
+    "high-park": {
+      "resourceRefs": [
+        "toronto-savannah"
+      ],
+      "sourceSummary": "Toronto reports a managed April 2026 burn with the Indigenous Land Stewardship Circle. Burning and other management aim to improve native savannah conditions while reducing competing vegetation. The account describes light, space and nutrients for regeneration, acorns as wildlife food and herbivory affecting seedlings. It also identifies smoke, access restrictions and wildlife precautions. Small burn patches leave refuges; monitoring informs future work. These are site-management statements, not a guarantee of zero harm, a numerical population limit or proof of every stated outcome.",
+      "attributionLimits": "Current City account, including its account of partnership. Do not present a generic statement as the voice of every Indigenous community or treat every fire as beneficial. Pupils never make or attend a fire.",
+      "role": "human-restoration"
+    },
+    "species-depletion": {
+      "role": "species-depletion-prevention",
+      "resourceRefs": [
+        "dfo-otter",
+        "dfo-recovery"
+      ],
+      "sourceSummary": "DFO describes severe historical reduction of BC sea otters from the fur trade, reintroduction1969–72 and their prey-related effects on kelp/eelgrass habitats; its recovery strategy proposes threat reduction and monitoring.",
+      "attributionLimits": "This is local extirpation/depletion and recovery context, not proof the species became globally extinct. Historical proposals are not certified current results.",
+      "question": "Use the named case to draw an original labelled mini-web: kelp → urchin → sea otter, and a supplied second food route involving the same otter. Arrows point from food to eater. Assess how reduced otter predation could change kelp grazing and habitat for other organisms, distinguish evidence from a conditional prediction, then explain how threat-matched habitat protection/oil-spill risk reduction and monitoring aim to prevent renewed depletion. Combine this with the prior human-effects protocol, including its distinct perspectives.",
+      "expectedEvidence": "Trace at least two interconnections and explain direct/indirect consequences rather than a single isolated animal loss. Distinguish local loss from global extinction; reducing one threat does not guarantee a fixed future population. Explain a cause-matched prevention measure and evidence needed to judge it, without treating recovery as beneficial to every species/user equally.",
+      "nearMiss": "Calls all depletion extinction, reads arrows backwards, assumes all prey populations change identically or says one conservation action solves every threat.",
+      "changedCase": "In the original changed case a predator has alternative food and an unrelated water-quality threat persists: revise the prediction and proposed action rather than claim the whole community automatically disappears or fully recovers.",
+      "preparedWeb": {
+        "nodes": [
+          "kelp",
+          "urchin",
+          "clam",
+          "sea otter"
+        ],
+        "feedingArrows": [
+          [
+            "kelp",
+            "urchin"
+          ],
+          [
+            "urchin",
+            "sea otter"
+          ],
+          [
+            "clam",
+            "sea otter"
+          ]
+        ],
+        "limits": "Partial illustrative web from the attributed diet account; clam food, other predators and detrital pathways are omitted, so do not identify missing food as evidence the clam is a producer."
+      }
+    },
+    "wetland-model": {
+      "origin": "original-hypothetical",
+      "role": "wetland-transfer",
+      "resourceRefs": [
+        "original-transfer-models"
+      ],
+      "sourceSummary": "Original defined-condition wetland model: plant W needs the supplied water and light; animal A eats plant W and uses the supplied cover. These stipulated organisms are teaching labels, not claims about named real species.",
+      "attributionLimits": "A fictional model only. It cannot establish actual local organisms, diets, adaptations, measurements or a numerical population limit.",
+      "givenFacts": [
+        "The wetland patch supplies a fixed amount of water, light and cover during this comparison.",
+        "Plant W requires water and light. Animal A feeds on W and requires cover.",
+        "No new food, water or cover is added when more A are introduced."
+      ],
+      "question": "Draw the supplied animal-to-plant feeding connection and the living-to-nonliving water/light connections. If more A are introduced while food and cover remain unchanged, explain why the model does not guarantee every animal will meet its needs. Identify a relevant observation that would distinguish adequate from inadequate supply.",
+      "expectedEvidence": "Uses the stipulated relationships rather than inventing species; explains that plants and animals need finite supplied requirements, distinguishes an organism from its nonliving support, and gives a conditional answer rather than a claimed fixed carrying capacity.",
+      "nearMiss": "Says more animals automatically cause more food or that water itself is a living member of the community.",
+      "changedCase": "The defined changed wetland has less water for W but unchanged initial animal numbers. Trace a possible plant-to-food-to-animal consequence and identify what remains unknown; do not claim every organism necessarily dies."
+    },
+    "dry-grassland-model": {
+      "origin": "original-hypothetical",
+      "role": "dry-grassland-transfer",
+      "resourceRefs": [
+        "original-transfer-models"
+      ],
+      "sourceSummary": "Original defined-condition dry-grassland model: plant G requires the supplied light, water and growing space; animal B feeds on G and requires cover. The named types are fictional teaching labels.",
+      "attributionLimits": "A fictional comparison, not a report of any actual grassland, named species, drought measurement or fixed maximum number.",
+      "givenFacts": [
+        "Plant G requires water, light and growing space; B feeds on G and requires cover.",
+        "The dry patch begins with less supplied water than the wetland comparison; no numeric species-to-species tolerance is assumed.",
+        "Adding more G or B does not itself add water, space, food or cover."
+      ],
+      "question": "Explain why adding plants or animals to this defined dry patch cannot guarantee all their needs are met when the supplies stay fixed. Compare the kinds of limiting requirements with the wetland model; say why the given facts do not determine which patch supports more animals.",
+      "expectedEvidence": "Connects both plant and animal numbers to available requirements, compares shared needs with different supplied conditions, and declines to invent a numeric maximum or rank the habitats without species/resource evidence.",
+      "nearMiss": "Says a grassland supports unlimited animals because some animals already live there, or infers an exact maximum from the word dry.",
+      "changedCase": "The defined changed patch gains more water but no extra cover. Explain why increasing one resource does not guarantee that every requirement is now sufficient."
+    }
+  },
+  "protocols": {
+    "human-effects": {
+      "codes": [
+        "ON-SCI-2022-G4-B1.1"
+      ],
+      "contributorIds": [
+        "mt_deexfCHU9m",
+        "mt_7e-lG7YOWa"
+      ],
+      "caseRefs": [
+        "high-park"
+      ],
+      "actions": [
+        "Identify a supported positive habitat consequence and a supported negative/temporary consequence or risk of the selected human management. Explain the mechanism rather than label every human action harmful.",
+        "Compare original hypothetical perspectives of a restoration worker, a visitor affected by access and a nearby smoke-sensitive resident using the actual supplied information. These roles are teaching constructions, not authentic testimony or a survey.",
+        "Assess mitigation such as timing, refuges, notification and monitoring against the relevant concern, identify a remaining limitation and state what evidence would be needed to judge success.",
+        "For changed-case transfer, consider an unplanned fire with no trained crew/refuges or monitoring; explain why the selected controlled case cannot justify it. Retain source-specific limits, not an invitation to investigate with fire."
+      ],
+      "remainingConditions": []
+    },
+    "community-needs": {
+      "codes": [
+        "ON-SCI-2022-G4-B2.2"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS"
+      ],
+      "caseRefs": [
+        "high-park",
+        "wetland-model"
+      ],
+      "actions": [
+        "Describe the studied community as interacting plant and animal species sharing the Toronto savannah habitat; connect oak/ground vegetation, acorn-feeding wildlife and seedling herbivory, rather than list unrelated species.",
+        "Connect light/space/nutrients and food/shelter to needs of the selected plants and animals. Explain a supported consequence of changing one condition, distinguishing a City observation from a pupil prediction.",
+        "Use a labelled original relationship drawing to explain a living-to-living and a living-to-nonliving connection. Do not infer that soil is an organism or that every interaction is mutually helpful.",
+        "Use the complete wetland-model case bound below: draw its explicitly supplied feeding and living/nonliving connections, explain a changed-condition consequence, and distinguish this constructed transfer from the authentic Toronto account. The model does not supply a verified local habitat packet."
+      ],
+      "remainingConditions": [
+        "The selected authentic High Park case is bound to Toronto. Preserve location/applicability explicitly; it must not be falsely presented as every pupil’s own local habitat."
+      ]
+    },
+    "finite-support": {
+      "codes": [
+        "ON-SCI-2022-G4-B2.7"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS"
+      ],
+      "caseRefs": [
+        "high-park",
+        "wetland-model",
+        "dry-grassland-model"
+      ],
+      "actions": [
+        "Explain why more plants can compete for finite light, growing space, water and nutrients, and why additional animals need food and suitable space supplied by the habitat. Tie both plant and animal limits to requirements, not only to a single deprived plant.",
+        "Use an explicitly original hypothetical patch with unchanged food and shelter supply: ask whether doubling the animals guarantees that all their needs remain met, and which observations would be needed. No invented animal count is presented as a High Park measurement.",
+        "Explain that limits can vary with season, weather and other organisms: there is no fixed universal maximum inferred from this account. Too many individuals relative to available requirements can prevent all needs being met; no live deprivation test is permitted.",
+        "Complete the bound wetland-model and dry-grassland-model questions, including their near misses and changed cases. Compare the finite requirements without inventing actual species or habitat measurements; reject the claim that the presence of some organisms proves support for unlimited numbers."
+      ],
+      "remainingConditions": []
+    },
+    "B1": {
+      "codes": [
+        "ON-SCI-2022-G4-B1"
+      ],
+      "contributorIds": [
+        "mt_deexfCHU9m",
+        "mt_7e-lG7YOWa",
+        "mt_uVaS12lN1i"
+      ],
+      "caseRefs": [
+        "high-park",
+        "species-depletion"
+      ],
+      "actions": [
+        "Complete the prior human-effects protocol's actual positive/negative restoration mechanisms and original contrasting perspectives, not simply a conservation slogan.",
+        "Use the explicit species-depletion web and attributed BC history to assess how removing/depleting an organism affects interconnected habitat/community relationships and how a cause-matched preventive action works.",
+        "Compare the worked cases, distinguish local extirpation from global extinction and evaluate evidence/limits for reducing negative and enhancing positive human effects.",
+        "Answer the species near-miss and changed-case questions and justify a recommendation without claiming one action guarantees every organism or community member benefits."
+      ],
+      "remainingConditions": [],
+      "requiredProtocols": [
+        "human-effects"
+      ]
+    },
+    "B2": {
+      "codes": [
+        "ON-SCI-2022-G4-B2"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi",
+        "mt_lutxvMlkwS",
+        "mt_uVaS12lN1i"
+      ],
+      "caseRefs": [
+        "high-park",
+        "species-depletion"
+      ],
+      "actions": [
+        "Use the prior community-needs and finite-support protocols to explain needs, interacting populations and living/nonliving limiting conditions in the studied habitat.",
+        "Interpret the explicit food-web direction and shared consumers, distinguishing a chain from a web; add the required local producer/consumer/decomposer relationships only from an adult-verified local packet.",
+        "The adult prepares local species/diet/feature evidence so the learner can classify herbivore/carnivore/omnivore and connect specific plant/animal adaptations to habitat survival. Retain source-based limits and do not invent a local species inventory.",
+        "Integrate the actual local evidence with finite support and interaction explanations; the non-local otter case supports transfer but cannot substitute for the still-unbound local account."
+      ],
+      "remainingConditions": [
+        "A verified applicable local community packet (species/interactions, diets, adaptations and limiting conditions) must be bound before full local applicability; High Park is a studied Toronto case, not every Ontario pupil's local habitat."
+      ],
+      "requiredProtocols": [
+        "community-needs",
+        "finite-support"
+      ]
+    },
+    "local-habitat-necessities": {
+      "codes": [
+        "ON-SCI-2022-G4-B2.1"
+      ],
+      "contributorIds": [
+        "mt_cM8YS6NXqi"
+      ],
+      "caseRefs": [
+        "high-park"
+      ],
+      "actions": [
+        "Use the attributed High Park account to describe a habitat as an area supplying necessities for both plants and animals, distinguishing the habitat from the organisms inhabiting it.",
+        "Connect an actual plant need and an actual animal need to the particular habitat features and resources described; identify supplied evidence rather than invent observed species.",
+        "For local application, an adult binds a verified applicable habitat packet with actual plants, animals and necessities. Identify how that habitat supplies those necessities without presenting Toronto as every learner’s locality.",
+        "Transfer to a supplied contrasting wetland account and explain what further local information would be needed; a generic list of needs or a remote example alone does not satisfy the local application."
+      ],
+      "remainingConditions": [
+        "A verified applicable local habitat packet must identify actual plant and animal necessities and how that habitat supplies them. High Park is a studied Toronto case, not every Ontario pupil’s local habitat."
+      ]
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_cM8YS6NXqi",
+      "mt_lutxvMlkwS",
+      "mt_NDZYiLvApW",
+      "mt_w4OYcWJs6H",
+      "mt_LRzjbo1Fn6",
+      "mt_deexfCHU9m",
+      "mt_7e-lG7YOWa"
+    ],
+    "completeSavedGuidesRead": [
+      "mt_cM8YS6NXqi",
+      "mt_lutxvMlkwS",
+      "mt_deexfCHU9m",
+      "mt_7e-lG7YOWa",
+      "mt_uVaS12lN1i"
+    ],
+    "reuseReason": "Existing needs/habitat interdependence and explicit crowded-plant limited-requirement reasoning support components. The actual integrated community/population explanation is tested in the prepared task, not inferred from individual whole-topic scores. No new carrying-capacity node, formal population equation or live deprivation task is needed for this qualitative source duty.",
+    "limits": "Whole existing cards and hard readiness stay unchanged. Community-protection whole claim retains its varied real-case inventory; one local example does not certify it. Older ocean/keystone inventories are not lowered or substituted for the selected local community. Full food-web claim retains producer/consumer/decomposer identification and two traced chains plus removal reasoning; the partial otter web is an additional source case, not that whole inventory by itself.",
+    "hardClosureReadScope": "All 15 direct and transitive hard-closure cards and 14 hard edges read. Four direct saved guides read in full. Broader resource/energy/circuit and vocabulary hard readiness remains separate; no edge, claim, guide or age change is proposed."
+  }
+}

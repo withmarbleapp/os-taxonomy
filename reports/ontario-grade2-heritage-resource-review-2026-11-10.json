@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "baseCommit": "dab1194",
+  "status": "Reviewed source-fit authoring resolution for A3.6/A3.7 using existing claims and attributed case/task protocols; no new heritage topic.",
+  "scope": "G2 A3.6/A3.7 ordinary community/family heritage channels; source-required specific FNMI family practice explicit.",
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g2",
+  "sourceInterpretation": "Actual A3.6/A3.7 clauses reread. They require identifying some ways heritage is passed through community/family practices, not a general cultural-transmission theory or every illustrative event. A3.7 retains at least one particular First Nation, Métis or Inuit family celebration/practice.",
+  "cases": [
+    {
+      "caseId": "metis-family-conversations",
+      "source": "https://tyrmc.org/spotlights/the-journey-to-metis-self-identity-a-collection-of-stories-from-my-great-aunt-kathy/",
+      "authority": "Stories told by Kathy Morgan, written by Ashlyn Kerr Sutcliffe, published by Toronto & York Region Métis Council.",
+      "authorityCheck": "Métis Nation of Ontario council-contacts page directly links tyrmc.org: https://www.metisnation.org/community-councils/council-contacts/",
+      "verifiedFacts": "The account describes Kathy learning family/Métis history through conversations with her mother and grandmother. It also recounts family attendance at Métis events and learning from music, gatherings and shared experiences.",
+      "childFacingSummary": "Kathy describes hearing her family’s history from her mother and grandmother. The next person could learn it because family members shared and remembered the stories. A family member also describes learning about Métis culture at events attended with relatives.",
+      "channel": "Family conversations and shared community experiences carry knowledge to another generation.",
+      "limits": "One attributed family account, not every Métis family or a definition of Métis citizenship. The interviewer explicitly identifies as non-Indigenous; learning about a relative’s culture does not automatically confer that identity. Use the short age-appropriate paraphrase, not the unrelated adult material on the whole page."
+    },
+    {
+      "caseId": "community-cookbook-written-record",
+      "source": "https://thediscoverblog.com/2024/04/25/sweet-potato-pie-a-timeless-delight-from-1909-to-today/",
+      "authority": "Dylan Roy, Reference Archivist, official Library and Archives Canada blog (2024).",
+      "verifiedFacts": "The author follows a recipe from a 1909 cookbook assembled by St. Luke’s Woman’s Auxiliary in Sault Ste. Marie. The book remains available through the archive/library catalogue.",
+      "childFacingSummary": "People in a Sault Ste. Marie community collected recipes in a book long ago. In 2024, an archivist used that surviving book to learn how to prepare one of the dishes. Written records can help later people learn a practice even when the original writer is not there.",
+      "channel": "Community publication and preservation let another generation learn practical knowledge.",
+      "limits": "This is documented recipe sharing/recreation, not proof of an uninterrupted annual family custom or a practice of every ethnic group. The social-studies task does not require cooking, copying the recipe or reproducing source images."
+    },
+    {
+      "caseId": "nipissing-community-language-sharing",
+      "source": "https://nfn.ca/culture-heritage/anishinaabemwin/",
+      "authority": "Nipissing First Nation’s own culture/language resource.",
+      "verifiedFacts": "The Nation describes community classes with fluent speakers and language/cultural teaching in children’s programmes.",
+      "childFacingSummary": "Nipissing First Nation describes fluent speakers helping others learn Anishinaabemwin, and language/cultural learning in children’s programmes. A community can share its own knowledge by teaching and using it together.",
+      "channel": "Community teaching and shared use support cultural continuity.",
+      "limits": "A particular First Nation’s programme, not all communities or proof of a particular child’s attainment. Learn about the method; no target-language pronunciation/proficiency or paid resource access is required."
+    }
+  ],
+  "protocols": [
+    {
+      "id": "community-heritage-channels",
+      "existingTopics": [
+        "mt_9REmUc8r4D",
+        "mt_zbEcwd40uv",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "caseIds": [
+        "metis-family-conversations",
+        "community-cookbook-written-record",
+        "nipissing-community-language-sharing"
+      ],
+      "task": "Use the attributed cases to identify what knowledge/practice is shared, who shares/learns it and how the community activity or surviving source lets later people learn. Compare oral conversations, written records and community teaching/gatherings; describe the actual channel rather than just name a holiday/food.",
+      "positive": "Identifies multiple concrete ways cultural/community knowledge is passed through the provided practices, with correct source/people attribution.",
+      "nearMiss": "Only names a food, language or event with no account of how people learn/share it, or generalizes one case to all peoples.",
+      "transfer": "Another ordinary source-supported community practice with a different channel, identifying what is preserved/shared rather than copying a phrase.",
+      "scopeBoundary": "The mandatory source asks identifying some ways. No abstract theory of culture, genetic-inheritance comparison, ceremony participation or universal narrative structure is imported.",
+      "sourceCodes": [
+        "A3.6"
+      ],
+      "sourceFit": "Reviewed authoring coverage; tasks identify concrete attributed channels without requiring pupil-language competence or collecting learner records."
+    },
+    {
+      "id": "family-heritage-practices",
+      "existingTopics": [
+        "mt_0O4mXv3asF",
+        "mt_zbEcwd40uv",
+        "mt_9REmUc8r4D",
+        "mt_4A7FYmvVhA",
+        "mt_NP101Zl-4g"
+      ],
+      "caseIds": [
+        "metis-family-conversations"
+      ],
+      "materials": "Use the verified Métis family practice plus another ordinary family celebration/practice supplied as an attributed source/account or a voluntary non-sensitive family example. Identify family members/relationships without assuming one household form or asking for private testimony. A clearly labelled fictional ordinary practice may rehearse the operation, but the FNMI qualifier uses the verified actual case.",
+      "task": "Describe the relevant family practice and identify who shares what with another generation and how the shared celebration/practice carries it. Compare the family conversation/gathering channel with another family practice, retaining the actual FNMI case rather than replacing it with a generic family story.",
+      "positive": "Identifies several concrete family sharing/learning practices, including the specific Métis family account, without assuming cultural membership from ancestry or participation alone.",
+      "nearMiss": "Only names relatives or a celebration; omits the sharing/learning channel or the required attributed FNMI family practice.",
+      "transfer": "A different family practice/account while keeping its people, evidence and channel distinct.",
+      "scopeBoundary": "No learner language/ceremony performance or compulsory own-family disclosure is required by this clause. The source’s actual identification requirement is separated from broader cultural-transmission theory.",
+      "sourceCodes": [
+        "A3.7"
+      ],
+      "sourceFit": "Reviewed authoring coverage; tasks identify concrete attributed channels without requiring pupil-language competence or collecting learner records."
+    }
+  ],
+  "wholeClaimReview": [
+    {
+      "topicId": "mt_9REmUc8r4D",
+      "contribution": "Explicitly explains how surviving objects, documents and stories allow later people to know past lives. Directly supports the oral/written channels in the family account and community cookbook.",
+      "limit": "Does not by itself establish every cultural practice or all contemporary language teaching."
+    },
+    {
+      "topicId": "mt_0O4mXv3asF",
+      "contribution": "Its own-family relationship/origin claim contributes a relationship component when interpreting Kathy’s family account; the account does not demonstrate the pupil’s own-family whole claim.",
+      "limit": "Do not infer whole own-family attainment or membership from understanding another family; naming relatives alone does not establish a sharing/learning channel."
+    },
+    {
+      "topicId": "mt_zbEcwd40uv",
+      "contribution": "Describes shared family/community celebrations and how they are marked. The resource task identifies which shared actions let people learn a practice.",
+      "limit": "A celebration label alone is not the required heritage-channel identification."
+    },
+    {
+      "topicId": "mt__F_i67waLN",
+      "contribution": "Continuity/change across family childhoods can support another comparative task.",
+      "limit": "No implicit universal cultural-transmission theory or all historic causes inferred."
+    },
+    {
+      "topicId": "mt_MVlTa0XKgo",
+      "contribution": "Technology changes household work/travel/communication; relevant to a separately supported change case.",
+      "limit": "Technology is one possible cause, not a required explanation for every tradition."
+    },
+    {
+      "topicId": "mt_zlSoIKPyId",
+      "contribution": "Narrative structure/retelling is a separate operation, not proof of heritage knowledge.",
+      "limit": "Do not impose a fixed beginning/middle/end on all Métis oral traditions; use clear factual description of the sharing practice here."
+    },
+    {
+      "topicId": "mt_4A7FYmvVhA",
+      "contribution": "Clearly describe actual people, events and how the resource-supported practice is shared.",
+      "limit": "Generic eloquence does not replace the factual resource/heritage relationship."
+    }
+  ],
+  "CanadianRenewalBoundary": "Approved mt_gSBJxNBQh3 remains the specific Canadian colonial-disruption→community-led renewal→identity claim, not generic transmission equivalence. Use it only for an actual relationship-supported case or a clearly labelled component; no authored expansion is proposed. Its planned G2 A1.4 reuse is a separate dependency.",
+  "curationRecommendation": "Reuse approved after full mandatory-clause, existing-claim and primary-case review. The bounded identification tasks account for A3.6/A3.7 without a general transmission theory node. This is authoring coverage, not pupil attainment.",
+  "provenanceAndLimits": "Primary-attributed sources read 2026-11-10; public factual paraphrases only. Cases demonstrate particular channels and do not represent every family/community. No source images, restricted curriculum wording, private records or direct pupil browsing requirements are included.",
+  "consumerBoundary": "No canonical topic/association/learner-state changes in this dossier checkpoint; no language proficiency or community membership inferred."
+}

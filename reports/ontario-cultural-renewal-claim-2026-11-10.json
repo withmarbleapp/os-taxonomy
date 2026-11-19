@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "dependency": {
+    "baseCommit": "e7952f1af49238864936ad41a81cd9fcc4327edd",
+    "pullRequest": "https://github.com/withmarbleapp/os-taxonomy/pull/110",
+    "acceptance": "Local follow-up depends on PR110; it is not yet an accepted default-branch change."
+  },
+  "newTopic": {
+    "id": "mt_gSBJxNBQh3",
+    "type": "CONCEPTUAL",
+    "subject": "History",
+    "domain": "Modern History",
+    "name": "Indigenous cultural renewal in Canada",
+    "description": "Explain in age-appropriate terms how colonial policies in Canada, including residential schooling, disrupted many First Nations, Métis and Inuit family, language and cultural connections. Use attributed contemporary community-led examples to explain cultural renewal and its relationship to identity and belonging, while recognizing distinct peoples and continuing cultures.",
+    "ageRangeStart": 6,
+    "ageRangeEnd": 7,
+    "centrality": 0,
+    "evidence": [
+      "Explain that colonial policies, including residential schools, separated many Indigenous children from their families and suppressed languages and cultural practices; do not imply that every person had the same experience or that cultures disappeared.",
+      "Using a named community-authoritative account, identify who leads a contemporary cultural or language renewal initiative and what is being strengthened or reclaimed.",
+      "Explain how the example can reconnect people with family, community knowledge or cultural identity, rather than merely say that the project is nice or respectful.",
+      "Transfer the historical-disruption, community-action and identity relationship to another attributed example, keeping its people and source distinct."
+    ],
+    "assessmentPrompt": "After hearing an attributed, age-appropriate account of a community-led renewal project, can {{name}} explain who leads it, what is being strengthened, and how it connects people with culture and belonging after colonial disruption, including residential schooling? Can they explain a second example without treating all First Nations, Métis and Inuit peoples as one culture?",
+    "standards": [
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A1",
+      "the-ontario-curriculum-social-studies-history-an:ON-SSHG-2026-G1-SS-A1.5"
+    ]
+  },
+  "claimRationale": "Canadian historical disruption, community-led recovery and the identity relationship are independently assessable knowledge. Generic identity, recognition of peoples or Australian colonial history do not provide these facts. One shared claim serves the overlapping G1/G2 requirements; no grade-specific clone is proposed.",
+  "closestCandidates": [
+    {
+      "topicId": "mt_Lcqm4_wR4D",
+      "mismatch": "Distinct contemporary Canadian peoples, not historical disruption or the recovery/identity relationship."
+    },
+    {
+      "topicId": "mt_oqrqjd9jm9",
+      "mismatch": "Australian diversity, kinship and language continuity; different local history and full factual scope."
+    },
+    {
+      "topicId": "mt_Am6mmH2X0s",
+      "mismatch": "Australian First Fleet contact/invasion, not Canadian residential-school and cultural-renewal knowledge."
+    },
+    {
+      "topicId": "mt_E8IfrMksV0",
+      "mismatch": "Australian colonial effects, not these Canadian facts."
+    },
+    {
+      "topicId": "mt_dXP_wBLIwU",
+      "mismatch": "General identity influences/strategies do not establish the particular historical knowledge."
+    }
+  ],
+  "sourceContribution": {
+    "publishedNow": [
+      "ON-SSHG-2026-G1-SS-A1",
+      "ON-SSHG-2026-G1-SS-A1.5"
+    ],
+    "plannedReuse": [
+      "ON-SSHG-2026-G2-SS-A1.4"
+    ],
+    "plannedReuseBoundary": "G2 official meaning has been read. No G2 association or Full judgment is authored in this follow-up; verify its traditions/customs/teachings/celebrations scope within the full G2 slice."
+  },
+  "cases": [
+    {
+      "caseId": "nipissing-anishinaabemwin",
+      "people": "Nipissing First Nation / Nbisiing Anishinaabeg",
+      "communityAuthority": "Nipissing First Nation",
+      "urls": [
+        "https://nfn.ca/culture-heritage/anishinaabemwin/"
+      ],
+      "verifiedFacts": "The Nation’s resource describes community language classes with fluent speakers and language/culture use in childcare and children’s programmes. It identifies Anishinaabemwin as the Nation’s official language.",
+      "childFacingSummary": "Nipissing First Nation describes people teaching and using their language together, including in children’s programmes. This is one community’s own work to strengthen its language and connections.",
+      "identityConnection": "The community identifies the language as part of its own shared public life and cultural continuity. Ask how learning with community members can connect generations.",
+      "scopeLimit": "This case is about Nipissing, not a claim that all First Nations share one language or programme. The page describes initiatives; this dossier does not offer enrolment or certify an intervention outcome."
+    },
+    {
+      "caseId": "metis-language-initiatives",
+      "people": "Métis communities represented in the Métis Nation of Ontario’s language initiatives",
+      "communityAuthority": "Métis Nation of Ontario; Métis National Council for the explicit language/identity connection",
+      "urls": [
+        "https://www.metisnation.org/programs-and-services/education-training/metis-languages-initiatives/",
+        "https://www.metisnation.ca/what-we-do/culture-heritage-and-language/language/"
+      ],
+      "verifiedFacts": "The MNO describes language-learning resources and support for communities and younger speakers. Its account connects language decline with colonial pressures. The Métis National Council explicitly relates Michif to Métis identity and cultural continuity.",
+      "childFacingSummary": "Métis-led language initiatives help people learn and share their languages with another generation. The sources explain why language matters to Métis identity, not just as a list of words.",
+      "identityConnection": "Discuss how learning a community language can connect people with family stories, history and a distinct identity.",
+      "scopeLimit": "Michif names related varieties in these sources; do not reduce Métis identity to mixed ancestry or infer identical language use by every Métis person. No language-production proficiency is certified here."
+    },
+    {
+      "caseId": "pirurvik-aurniarvik",
+      "people": "Inuit participants in Pirurvik’s Inuktut programme in Nunavut",
+      "communityAuthority": "Pirurvik Institute and its named Inuit instructors/participants",
+      "urls": [
+        "https://www.pirurvik.ca/aurniarvik",
+        "https://tusaalanga.ca/about"
+      ],
+      "verifiedFacts": "Aurniarvik is described as an intensive programme for Inuit who grew up using English and are building Inuktut skills. It links language learning with Inuit cultural learning and an on-the-land component. Tusaalanga supplies materials and recordings for language learning.",
+      "childFacingSummary": "Pirurvik describes Inuit people strengthening their Inuktut while also learning through Inuit cultural activities. Their own knowledge and community connections guide the work.",
+      "identityConnection": "The programme explicitly connects cultural learning, Inuit values and identity. Ask how rebuilding a connection with language and shared knowledge can support belonging.",
+      "scopeLimit": "This is a case for primary learners to learn about, not a claim that the certificate programme is a Grade 1 course. Inuktut varieties and writing systems are not interchangeable; the learner is not assessed on speaking or writing Inuktut."
+    }
+  ],
+  "assessmentProtocol": {
+    "id": "canadian-cultural-renewal-cases",
+    "sourceCodes": [
+      "A1.5"
+    ],
+    "materials": "Use the three attributed factual case summaries in this dossier, with the brief historical context, read aloud or presented as text. Images, programme enrolment and target-language pronunciation are not required.",
+    "historicalContext": "Colonial policies in Canada, including residential schooling, separated many Indigenous children from family life and suppressed languages and cultural practices. Indigenous peoples continued their cultures and today lead many forms of renewal. The general history does not establish that every individual or every named project has an identical local history.",
+    "historicalAuthority": "https://nctr.ca/education/residential-school-history/",
+    "instructions": [
+      "Introduce the historical context in plain, non-graphic language. Do not ask for a learner’s or family’s residential-school testimony.",
+      "Attribute each case to its named people/community and source. Distinguish a First Nation, Métis and Inuit case rather than treating one as all Indigenous peoples.",
+      "Ask who leads the project, what is being renewed and how that can connect people with family/community knowledge and identity.",
+      "Use a second case as a transfer check. Ask which similarities describe the broad relationship and which specific people, language or practices remain different.",
+      "Check that the explanation includes the historical disruption and contemporary community agency, not only generic respect or naming peoples."
+    ],
+    "rubric": {
+      "full": "Explains the historical disruption in introductory terms, identifies community-led action from an attributed case and connects renewal with identity/belonging; transfers the relationship without generalizing one case to all peoples.",
+      "nearMiss": "Only names Indigenous peoples, says everyone should be respected, treats cultures as gone or people as only historical, or describes a programme without the history/identity relationship.",
+      "transfer": "Explains the corresponding relationship for a second case while retaining its different people, source and practice."
+    },
+    "coverageBoundary": "Authoring source-fit protocol, not evidence that a learner passed. It teaches about cultural/language renewal, not French or Indigenous-language proficiency. Community programmes are examples of agency, not guaranteed therapeutic outcomes.",
+    "caseIds": [
+      "nipissing-anishinaabemwin",
+      "metis-language-initiatives",
+      "pirurvik-aurniarvik"
+    ]
+  },
+  "resourceReview": "Primary community/organizational pages and NCTR history were read 2026-11-10. Summaries are paraphrases, not redistributed curriculum passages. Do not send primary learners unmediated to an adult historical page or treat a contemporary programme as every community’s experience.",
+  "consumerBoundary": "No inferred mastery from recognition, respect, generic identity or Australian history. New claim has independent evidence requirements; no learner state is moved, averaged or reset. Public acceptance remains separate from deployment.",
+  "scopeDecision": "The optional Native Languages programme is excluded by user instruction 2026-11-10. This Social Studies cultural/history requirement remains in scope, without certifying any target-language proficiency."
+}

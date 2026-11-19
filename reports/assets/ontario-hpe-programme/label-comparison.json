@@ -1,0 +1,93 @@
+{
+  "status": "Original hypothetical reading exercise, not retail packaging or food analysis",
+  "countryContext": "Separate Australian-context whole-claim transfer; never presented as Canadian label features",
+  "ratingMeaning": "Given star values are for reading/interpretation only, not algorithm-calculated or verified commercial HSR scores.",
+  "panels": [
+    {
+      "name": "Original practice cereal A",
+      "per100g": {
+        "energyKJ": 1400,
+        "sugarsG": 8,
+        "sodiumMg": 100,
+        "saturatedFatG": 0.5,
+        "fibreG": 12
+      },
+      "per30g": {
+        "energyKJ": 420,
+        "sugarsG": 2.4,
+        "sodiumMg": 30,
+        "saturatedFatG": 0.15,
+        "fibreG": 3.6
+      },
+      "givenStarRating": 4.5,
+      "ratingStatus": "Hypothetical given for reading only; not algorithm-calculated or commercially verified."
+    },
+    {
+      "name": "Original practice cereal B",
+      "per100g": {
+        "energyKJ": 1600,
+        "sugarsG": 24,
+        "sodiumMg": 400,
+        "saturatedFatG": 3,
+        "fibreG": 4
+      },
+      "per30g": {
+        "energyKJ": 480,
+        "sugarsG": 7.2,
+        "sodiumMg": 120,
+        "saturatedFatG": 0.9,
+        "fibreG": 1.2
+      },
+      "givenStarRating": 2.5,
+      "ratingStatus": "Hypothetical given for reading only; not algorithm-calculated or commercially verified."
+    },
+    {
+      "name": "Original practice snack C",
+      "per100g": {
+        "energyKJ": 1500,
+        "sugarsG": 5,
+        "sodiumMg": 200,
+        "saturatedFatG": 1,
+        "fibreG": 6
+      },
+      "per20g": {
+        "energyKJ": 300,
+        "sugarsG": 1,
+        "sodiumMg": 40,
+        "saturatedFatG": 0.2,
+        "fibreG": 1.2
+      },
+      "givenStarRating": 4,
+      "ratingStatus": "Hypothetical given for reading only; not algorithm-calculated or commercially verified."
+    },
+    {
+      "name": "Original practice snack D",
+      "per100g": {
+        "energyKJ": 1800,
+        "sugarsG": 10,
+        "sodiumMg": 600,
+        "saturatedFatG": 5,
+        "fibreG": 2
+      },
+      "per40g": {
+        "energyKJ": 720,
+        "sugarsG": 4,
+        "sodiumMg": 240,
+        "saturatedFatG": 2,
+        "fibreG": 0.8
+      },
+      "givenStarRating": 2,
+      "ratingStatus": "Hypothetical given for reading only; not algorithm-calculated or commercially verified."
+    }
+  ],
+  "tasks": [
+    "Find per100g for cerealA/B: which has less sugar and more fibre? Explain why equal quantity matters.",
+    "For snackC/D compare sodium and saturated fat per100g despite20g/40g serves. Read energy only in its stated unit.",
+    "Use each given rating together with its panel to explain a same-category choice. Do not compare cereal with snack or infer balanced diet, suitable portion or allergy safety from stars."
+  ],
+  "answerKey": {
+    "cereal": "A has8g vs24g sugars and12g vs4g fibre per100g; given4.5vs2.5stars is read as supplied, not calculated.",
+    "snacks": "C has200mg vs600mg sodium and1g vs5g saturated fat per100g; given4vs2stars. Equal100g is the comparison basis, not20gvs40g portions.",
+    "limits": "Hypothetical scores are givens, not commercial claims. Nutrient comparisons are criterion-specific; stars do not establish an entire diet, a portion recommendation or allergy suitability."
+  }
+}

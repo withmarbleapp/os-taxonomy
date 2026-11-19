@@ -1,0 +1,34 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const load=p=>JSON.parse(readFileSync(new URL(p,import.meta.url)));
+const report=load('../reports/ontario-core4-french-writing-design-2026-11-10.json'),contexts=load('../data/curriculum-alignments.json').alignments,edges=load('../data/dependencies.json').dependencies,topics=load('../data/topics.json').topics;
+const written='mt_sPd4fWeY9x';
+const expected={D1:['mt_cB7hV8sw7X','mt_v5DyOEpbbr',written],'D1.1':['mt_v5DyOEpbbr'],'D1.2':['mt_cB7hV8sw7X',written],D2:['mt_9P9o6d0Qm3','mt_I65kFjWwnF','mt_nYU6x2E2T8',written],'D2.1':['mt_9P9o6d0Qm3'],'D2.2':['mt_9P9o6d0Qm3','mt_I65kFjWwnF'],'D2.3':['mt_I65kFjWwnF','mt_nYU6x2E2T8',written],'D2.4':['mt_v5yDTWEiyQ','mt_cJjnPjuvCU']};
+function verify(r,alignments,dependencies){
+ const catalogue=load('../data/curriculum-standards.json').curricula.find(c=>c.slug===r.source.catalogue),keys=new Set(catalogue.topics.map(t=>t.key));
+ assert.deepEqual(r.records.map(x=>x.code).sort(),Object.keys(expected).sort());
+ const selected=new Set(),pairs=new Set();
+ for(const row of r.records){assert.equal(row.key,`${r.source.catalogue}:ON-FSL-2013-G4-CORE-${row.code}`);assert.ok(keys.has(row.key));selected.add(row.key);assert.equal(row.disposition,'Full');assert.equal(row.role,'component');assert.deepEqual(row.topicIds,expected[row.code]);assert.deepEqual(row.remainingConditions,[]);
+  const pid=row.code.startsWith('D1')?'purpose-forms-and-production':row.code==='D2.4'?'writing-strategy-review':'planning-through-publication';assert.deepEqual(row.protocolIds,[pid],'source protocol binding');assert.ok(r.protocols[pid].codes.includes(row.code));for(const id of row.topicIds)pairs.add(JSON.stringify([id,row.key]));}
+ const actual=new Set();for(const c of alignments){const matches=c.standards.filter(k=>selected.has(k));if(!matches.length)continue;assert.deepEqual([c.scope,c.country,c.region,c.ageRangeStart,c.ageRangeEnd],['jurisdiction','CA','Ontario',9,10]);for(const k of matches)actual.add(JSON.stringify([c.topicId,k]));}
+ assert.deepEqual(actual,pairs,'exact writing source pairs');assert.equal(pairs.size,18);assert.deepEqual([r.scope.records,r.scope.componentPairs,r.scope.reusedTopics,r.scope.newTopics],[8,18,7,1]);
+ const p=r.protocols['purpose-forms-and-production'].performanceConditions;assert.equal(p.language,'French');assert.equal(p.actualWritingRequired,true,'actual French production');assert.deepEqual(p.forms,['invitation-note','short-information-text','recipe-instructions']);assert.deepEqual(p.purposes,['invite','inform','instruct']);assert.deepEqual(p.audiences,['peer','teacher','younger-reader']);
+ const s=r.protocols['planning-through-publication'].performanceConditions;assert.deepEqual(s.stages,['pre-writing','drafting','revising','editing','publishing']);assert.deepEqual(s.writingModes,['modelled','shared','guided','independent'],'all writing modes');assert.equal(s.draftFollowsModel,true);assert.equal(s.teacherRevisionSupport,true);assert.deepEqual(s.FrenchConventions,['taught-word-spelling-and-accents','capital-and-sentence-punctuation','consistent-intended-time-in-familiar-verb-forms']);assert.deepEqual(s.presentationElements,['heading-font-size','selective-emphasis']);assert.equal(s.digitalAndReadAloudWholeClaim,true);
+ const q=r.protocols['writing-strategy-review'].performanceConditions;assert.deepEqual(q.phases,['before','during','after']);assert.deepEqual(q.discussionPartners,['teacher','peer'],'teacher and peer reflection');assert.equal(q.channel,'writing-distinct-from-reading-and-speaking');assert.equal(q.strengthsAndLessSecureOperations,true);assert.equal(q.timeboundPlanMonitorReview,true);
+ assert.deepEqual(r.newClaimChecks,{topicId:written,language:'French',exactLettersAndAccents:true,delayedNoWrittenModel:true,meaningContextForHomophones:true,changedMessageUse:true,universalSourceDelayOrCount:false},'independent French written forms');
+ const topic=topics.find(t=>t.id===written);assert.ok(topic);assert.equal(topic.type,'LANGUAGE');assert.equal(topic.subject,'Français');assert.equal(topic.domain,'Orthographe');assert.match(topic.assessmentPrompt,/\{\{name\}\}/);assert.equal(load('../data/teaching-research.json').records.filter(g=>g.topicId===written).length,1);
+ assert.equal(r.communitySource.adoptedTopicId,written);assert.equal(r.communitySource.author,'dahbiahmed');assert.equal(r.communitySource.head,'749ae042d5186d8e3ab96c01d0a63096f0229925');
+ for(const id of ['peer-invitation','teacher-information','information-model','instruction-model'])assert.ok(r.resources[id]?.trim(),'actual model resource');
+ assert.deepEqual(r.dependencyReview.changes.map(c=>[c.before.topicId,c.before.prerequisiteId]),[['mt_v5DyOEpbbr','mt_82KKv0Fca3'],['mt_cB7hV8sw7X','mt_82KKv0Fca3']]);for(const c of r.dependencyReview.changes){assert.equal(c.before.strength,'hard');assert.equal(c.after.strength,'soft');assert.deepEqual(dependencies.find(e=>e.topicId===c.after.topicId&&e.prerequisiteId===c.after.prerequisiteId),c.after,'reviewed writing gate');}
+ for(const [id,pid]of [['mt_v5DyOEpbbr','mt_9P9o6d0Qm3'],['mt_cB7hV8sw7X','mt_9P9o6d0Qm3'],['mt_9P9o6d0Qm3','mt_PJyCGJz5Hv'],['mt_I65kFjWwnF','mt_OyOYHlZ2_T']])assert.equal(dependencies.find(e=>e.topicId===id&&e.prerequisiteId===pid)?.strength,'hard','retained whole writing prerequisite');
+}
+test('French writing binds eight sources to actual production, four modes, conventions, reflection and one attributed written-form claim',()=>verify(report,contexts,edges));
+test('French writing rejects missing associations, lost modes, substituted reflection and unsupported form knowledge',()=>{
+ const missing=structuredClone(contexts),key=report.records.find(r=>r.code==='D2.3').key;for(const c of missing)c.standards=c.standards.filter(k=>k!==key);assert.throws(()=>verify(report,missing,edges),/exact writing source pairs/);
+ const modes=structuredClone(report);modes.protocols['planning-through-publication'].performanceConditions.writingModes=['guided','independent'];assert.throws(()=>verify(modes,contexts,edges),/all writing modes/);
+ const reflection=structuredClone(report);reflection.protocols['writing-strategy-review'].performanceConditions.discussionPartners=['teacher'];assert.throws(()=>verify(reflection,contexts,edges),/teacher and peer reflection/);
+ const copying=structuredClone(report);copying.newClaimChecks.delayedNoWrittenModel=false;assert.throws(()=>verify(copying,contexts,edges),/independent French written forms/);
+ const resource=structuredClone(report);delete resource.resources['instruction-model'];assert.throws(()=>verify(resource,contexts,edges),/actual model resource/);
+ const gate=structuredClone(edges);gate.find(e=>e.topicId==='mt_v5DyOEpbbr'&&e.prerequisiteId==='mt_82KKv0Fca3').strength='hard';assert.throws(()=>verify(report,contexts,gate),/reviewed writing gate/);
+});

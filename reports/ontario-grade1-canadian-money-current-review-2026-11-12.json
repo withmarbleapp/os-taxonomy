@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "scope": "Two previously reported Full Grade1 Canadian-money source records; fresh historical source requalification, zero net closures",
+  "source": {
+    "edition": "Mathematics2020/January2021",
+    "printedPage": 140,
+    "publisher": "Ontario Ministry of Education"
+  },
+  "records": [
+    {
+      "key": "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-F1",
+      "previousReportedDisposition": "Full",
+      "currentAuthoringDisposition": "Full",
+      "reviewKind": "fresh-source-bound-historical-requalification",
+      "topicContributions": [
+        {
+          "topicId": "mt_FIkqA0qhnj",
+          "role": "component"
+        }
+      ],
+      "resource": "ontario-grade1-canadian-money-task-design-2026-11-12.md",
+      "independentAssessment": "F1 overall",
+      "wholeTopicMasteryFromSourceSuccess": false
+    },
+    {
+      "key": "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-F1.1",
+      "previousReportedDisposition": "Full",
+      "currentAuthoringDisposition": "Full",
+      "reviewKind": "fresh-source-bound-historical-requalification",
+      "topicContributions": [
+        {
+          "topicId": "mt_FIkqA0qhnj",
+          "role": "component"
+        }
+      ],
+      "resource": "ontario-grade1-canadian-money-task-design-2026-11-12.md",
+      "independentAssessment": "F1.1 denomination and comparison",
+      "wholeTopicMasteryFromSourceSuccess": false
+    }
+  ],
+  "associationDelta": {
+    "before": {
+      "topicId": "mt_FIkqA0qhnj",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 9,
+      "standards": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-F1.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-F1.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-F1.1"
+      ]
+    },
+    "after": {
+      "topicId": "mt_FIkqA0qhnj",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 9,
+      "standards": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-F1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G1-F1.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G2-F1.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-F1.1"
+      ]
+    },
+    "newPairs": 1,
+    "newContexts": 0
+  },
+  "verifiedMaterialBoundary": {
+    "issuerPlayMoneyPagesVisuallyRead": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "separateIssuer50CentIllustrationViewed": true,
+    "missingFromPlayMoneyPdf": [
+      "1cent",
+      "50cents"
+    ],
+    "oneCentUsesMarkedPlayRepresentation": true,
+    "exclude100DollarNoteFromGrade1Task": true,
+    "noIssuerImagesCopiedToRepo": true
+  },
+  "preserve": {
+    "allOldClaimCriteriaAgesContextsPairsEdgesGuides": true,
+    "hardWhatMoneyIsSeparatelyAssessed": true,
+    "UKCurrencySoftRelationNotRequiredForCanada": true,
+    "otherGradesAndKindergartenNotRecertified": true
+  },
+  "countDelta": {
+    "newSourceClosures": 0,
+    "historicalLabelsFreshlyRequalified": 2
+  },
+  "peerReview": "Independent Ontario literal source/complete card+hard prerequisite/current contexts and edges/all materials and protocol: no substantive blocker; final exact-delta binding follows root preservation proof.",
+  "coverageMeaning": "Complete source authoring design, not delivery, efficacy or learner attainment."
+}

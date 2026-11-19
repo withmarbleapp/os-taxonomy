@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "parentProposalCommit": "ca3a3a9ec2b893257f6620359379ee3bda8c43af",
+  "status": "Reviewed complete four-record source-fit authoring design; not learner attainment or downstream publication.",
+  "source": {
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-fsl",
+    "catalogue": "the-ontario-curriculum-french-as-a-second-langua",
+    "edition": 2013,
+    "programme": "Core French",
+    "grade": 4,
+    "ageBand": [
+      9,
+      10
+    ],
+    "treatment": "Codes-only; original expectation wording stays private."
+  },
+  "scope": {
+    "records": 4,
+    "componentPairs": 6,
+    "reusedTopics": 4,
+    "newTopics": 0,
+    "newContexts": 2,
+    "extendedContexts": 2
+  },
+  "records": [
+    {
+      "code": "C2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C2",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu",
+        "mt_aVZJhPbc_1"
+      ],
+      "protocolIds": [
+        "purposes-and-features"
+      ],
+      "remainingConditions": [],
+      "disposition": "Full"
+    },
+    {
+      "code": "C2.1",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C2.1",
+      "role": "component",
+      "topicIds": [
+        "mt_HF1t82HCJu"
+      ],
+      "protocolIds": [
+        "purposes-and-features"
+      ],
+      "remainingConditions": [],
+      "disposition": "Full"
+    },
+    {
+      "code": "C2.2",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C2.2",
+      "role": "component",
+      "topicIds": [
+        "mt_aVZJhPbc_1"
+      ],
+      "protocolIds": [
+        "purposes-and-features"
+      ],
+      "remainingConditions": [],
+      "disposition": "Full"
+    },
+    {
+      "code": "C2.3",
+      "key": "the-ontario-curriculum-french-as-a-second-langua:ON-FSL-2013-G4-CORE-C2.3",
+      "role": "component",
+      "topicIds": [
+        "mt_v5yDTWEiyQ",
+        "mt_cJjnPjuvCU"
+      ],
+      "protocolIds": [
+        "reading-strategy-review"
+      ],
+      "remainingConditions": [],
+      "disposition": "Full"
+    }
+  ],
+  "resources": [
+    {
+      "id": "original-adapted-packet",
+      "status": "Original graded teaching materials, not official text or community testimony",
+      "authorship": "Original texts by Codex for this authoring design; the prepared teaching booklet must credit its actual author and any illustrator separately.",
+      "texts": {
+        "story": {
+          "title": "La balle du chat",
+          "body": "Il était une fois un petit chat. Le chat cherche sa balle. Sous la table, il voit une boîte. Il ouvre la boîte… La balle est là !",
+          "features": "Title, character, search/problem, ordered events and resolution; the pause before the reveal can create anticipation."
+        },
+        "poem": {
+          "title": "Dans le vent",
+          "lines": [
+            "Le vent froid",
+            "passe sur ma main.",
+            "La pluie fine",
+            "frappe le chemin."
+          ],
+          "features": "Short lines, sensory language and a chosen rhythm; no rhyme scheme is required."
+        },
+        "adapted-information": {
+          "title": "À la bibliothèque",
+          "body": "À la bibliothèque, tu peux trouver des livres, de la musique et des vidéos. La page présente plusieurs cartes. Les sous-titres aident à choisir une rubrique.",
+          "attribution": "Original simplified paraphrase of the linked Ottawa Public Library page; compare with the actual authentic page, not a reproduction of its full wording."
+        },
+        "invitation-poster": {
+          "title": "Viens lire avec nous !",
+          "body": "Choisis un livre. Partage une histoire.",
+          "layout": "Large invitation heading and two brief commands; this is a fictional classroom invitation, not a real dated event."
+        },
+        "procedure": {
+          "title": "Une carte pliée",
+          "body": "Prends une feuille. Plie la feuille en deux.",
+          "features": "Goal/title and short ordered commands; the source task is recognising the form, not certifying practical paper-folding mastery."
+        }
+      }
+    },
+    {
+      "id": "authentic-graphic-calendar",
+      "publisher": "Conseil des écoles catholiques du Centre-Est",
+      "url": "https://www.ecolecatholique.ca/sites/default/files/2026-08/Calendrier%20cyclique%202026-2027%20PDF_%C3%89coles%20%C3%A9l%C3%A9mentaires.pdf",
+      "sourcePage": 1,
+      "readback": "Actual one-page PDF visually inspected: year/title, month and weekday headings, dated grid, distinct holiday/pedagogical-day legend and important-date section.",
+      "limits": "Only the named schools/edition; not every Ontario school calendar. Small cycle numbers are not day-of-month numbers. This checks text form/purpose/features, not attendance, belief or religious participation."
+    },
+    {
+      "id": "authentic-information-and-media",
+      "publisher": "Bibliothèque publique d’Ottawa",
+      "url": "https://about.biblioottawalibrary.ca/fr/obtenir-une-carte-de-bibliotheque",
+      "readback": "Complete French page body checked: service-information heading, resource list, subgroup headings, explanatory sections and action links.",
+      "limits": "Use a selected accessible French passage with visible page structure. No account, real application, identity document or family disclosure is needed. Do not generalise eligibility rules to other libraries or require every adult administrative detail."
+    }
+  ],
+  "protocols": {
+    "purposes-and-features": {
+      "codes": [
+        "C2",
+        "C2.1",
+        "C2.2"
+      ],
+      "preparation": [
+        "Provide the original graded booklet/poem/invitation/procedure alongside the ACTUAL authentic calendar and library page. Retain their French text, visible headings/layout and attribution; the original adapted summary and authentic page are different resources. Use familiar-word support appropriate to this first Core French year. The learner must inspect and interpret the selected French print; adult translation or reading the entire item aloud cannot replace evidence of reading.",
+        "For the unchanged text-type prerequisite, include a simple title/credit page naming the actual author and illustrator of the prepared materials; distinguish their roles. Do not invent an external illustrator or claim the official calendar is a storybook."
+      ],
+      "actions": [
+        "Across fictional, informational, graphic and media forms, identify a useful purpose or purposes and point to actual French words or visible features that support the answer. Choose a suitable resource for a real question such as finding a school date versus enjoying a story or learning about library services. An English label alone without understanding the selected French content is insufficient.",
+        "Identify actual structural/stylistic features in each form: story title/problem/events/reveal, poem lines/sensory wording, informative heading and list, calendar month/day grid and legend, invitation heading/commands. Explain how a selected feature helps the reader rather than naming bold print as decoration.",
+        "For the whole unchanged feature claim, explain a language choice, a structural choice and a presentational choice. Compare the story’s «petit chat» with «grand chat» for the mental picture; explain the delayed reveal and how a calendar heading/grid/legend organises its information. Do not assert every form has the same structure or one exclusive purpose.",
+        "Retain separate whole-prerequisite checks: distinguish story/poem/information and author/illustrator roles, recognise a recurring story formula, identify sensory wording in the poem and explain a personally chosen phrase. No English-specific phrase inventory is inferred.",
+        "Transfer to a changed short French information page or fictional invitation with different headings/layout. Check what its actual content and form suggest; a known logo or memorised colour is not the answer."
+      ],
+      "positive": "Uses actual supported French content and form evidence to distinguish purposes and characteristics across all four required families, with authentic and adapted resources included.",
+      "nearMiss": [
+        "Calls every large-heading item an advertisement.",
+        "Uses an English retelling while not understanding the selected French words.",
+        "Analyses only the original adapted booklet and never encounters authentic French forms."
+      ],
+      "performanceConditions": {
+        "families": [
+          "fictional",
+          "informational",
+          "graphic",
+          "media"
+        ],
+        "resourceKinds": [
+          "adapted",
+          "authentic"
+        ],
+        "wholeFeatureChannels": [
+          "language-choice",
+          "structure",
+          "presentation"
+        ]
+      },
+      "resourceIds": [
+        "original-adapted-packet",
+        "authentic-graphic-calendar",
+        "authentic-information-and-media"
+      ]
+    },
+    "reading-strategy-review": {
+      "codes": [
+        "C2.3"
+      ],
+      "actions": [
+        "Before reading, choose a strategy such as previewing a heading, predicting from the form or checking familiar vocabulary; during reading, monitor meaning and use an actual helpful clue; after reading, check a prediction against the text and state what helped. Discuss the before/during/after process with teacher AND peer.",
+        "Identify an evidence-based reading strength and a less secure operation, distinct from listening and speaking. Set a realistic time-bound next reading goal, plan practice steps, record attempts and review/adjust the approach. Do not infer a reading result from the previous oral protocol or a generic learning score.",
+        "Compare the intended process with what happened, identify a specific difference and justify a next change. An honest report of no confusion is acceptable; never manufacture a mistake or a deficit. Retain the inherited full goal-setting/task-decomposition/growth/mistake evidence as separate canonical checks using genuine available examples."
+      ],
+      "positive": "Specific before/during/after reading strategies and strengths/next steps follow from actual French text work and include monitoring/review opportunities.",
+      "nearMiss": [
+        "Lists strategy names with no connection to the reading event.",
+        "Copies the speaking self-rating without a reading example."
+      ],
+      "transfer": "Use a fresh appropriate French text, apply the chosen next step and explain what changed or what should be adjusted.",
+      "performanceConditions": {
+        "phases": [
+          "before",
+          "during",
+          "after"
+        ],
+        "discussionPartners": [
+          "teacher",
+          "peer"
+        ],
+        "channel": "reading-distinct-from-listening-and-speaking"
+      }
+    }
+  },
+  "wholeClaimBoundaries": [
+    "Four shared claims are unchanged. Component links plus explicit French tasks account for this source slice; general strategy mastery does not certify French knowledge.",
+    "The ten-topic hard closure was inspected completely; no teaching guide exists on these selected claims/closure in the current public snapshot. No guide or efficacy evidence is invented.",
+    "Author/illustrator roles and sensory/recurring literary wording remain separate whole-topic requirements; no new language, book-format or layout clone is proposed.",
+    "This is an original untested authoring design, not observed pupil attainment, a standard-setting experiment or a learner-state write.",
+    "After the prior15-record proposals, this adds four of44CoreGrade4records. The other25 and all other primary FSL programmes/grades remain in scope for separate review."
+  ],
+  "independentReview": "All4 actual clauses and10 whole direct/hard-path cards independently checked; authentic visual/body verification remains attributed to the actual resource readback."
+}

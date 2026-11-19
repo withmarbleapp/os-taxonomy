@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "note": "`topicId` depends on `prerequisiteId` (the prerequisite). Directed edges of a DAG.",
-  "edgeCount": 3986,
+  "edgeCount": 4002,
   "dependencies": [
     {
       "topicId": "mt__00ZSLnB7p",
@@ -361,7 +361,7 @@
       "topicId": "mt_0XxyaQLRhn",
       "prerequisiteId": "mt__N55B7u7HD",
       "strength": "soft",
-      "reason": "GB route: Year 1 experience of hours, minutes and seconds as units of time supports reading o'clock and half-past times; soft because this node is GB-only"
+      "reason": "Experience measuring time in hours and minutes supports discussion of clock readings; timing tool operation is not necessary for every clock-reading route."
     },
     {
       "topicId": "mt_0ZDouU664X",
@@ -1216,16 +1216,10 @@
       "reason": "Drawing ray diagrams requires measuring angles accurately with a protractor — the core skill in mt_4MFUAsbx_6"
     },
     {
-      "topicId": "mt_2VpdPjvewx",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_wPgpMJ0-PA",
-      "strength": "hard",
-      "reason": "Converting to 3dp requires ×÷ by 10/100/1000 skills"
-    },
-    {
-      "topicId": "mt_2VpdPjvewx",
-      "prerequisiteId": "mt_Zks8xyInSG",
-      "strength": "hard",
-      "reason": "Y6 unit conversion with decimals extends Y5 metric conversion"
+      "strength": "soft",
+      "reason": "Decimal powers-of-ten arithmetic supports decimal metric examples, not every unit-conversion task; it is not a universal grade-based gate."
     },
     {
       "topicId": "mt_2VR963szuk",
@@ -1242,8 +1236,8 @@
     {
       "topicId": "mt_2XDGT5tei1",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Knowing 60 min = 1 hour and 24 hours = 1 day extends from measuring time in hours/minutes/seconds"
+      "strength": "soft",
+      "reason": "Measuring time helps illustrate unit relations; operating a timer is not necessary to understand 60 minutes per hour and 24 hours per day."
     },
     {
       "topicId": "mt_2x-EwdBsgl",
@@ -1262,18 +1256,6 @@
       "prerequisiteId": "mt_E1wR8IfCV6",
       "strength": "hard",
       "reason": "Must understand nutrition before evaluating impact of diet on health"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion feeds into time-specific conversions"
-    },
-    {
-      "topicId": "mt_2yas4Unc8o",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "hard",
-      "reason": "Elapsed time problems are prerequisite to time conversion problems"
     },
     {
       "topicId": "mt_2_YoprauaJ",
@@ -1864,6 +1846,24 @@
       "reason": "Conditions are stated with triangle notation (AB, angle A), and explaining 'included' versus 'non-included' angles relies on it"
     },
     {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_2oswCNuapH",
+      "strength": "soft",
+      "reason": "Recognising stereotypes supports the claim’s requirement not to judge a person or group from a signal."
+    },
+    {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_dALEWRHXnZ",
+      "strength": "soft",
+      "reason": "Using and reading gestures and facial expressions alongside words is the base the variation knowledge builds on."
+    },
+    {
+      "topicId": "mt_4coR4NiDTl",
+      "prerequisiteId": "mt_nIl1kKZHsk",
+      "strength": "soft",
+      "reason": "Understanding that culture and experience shape emotional responses is a closely related conceptual neighbour."
+    },
+    {
       "topicId": "mt_4emC463IyW",
       "prerequisiteId": "mt_EXlmTURK_o",
       "strength": "soft",
@@ -1872,8 +1872,8 @@
     {
       "topicId": "mt_4emC463IyW",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Calculating event durations requires reading time to the minute"
+      "strength": "soft",
+      "reason": "Reading a clock face supports obtaining endpoints; supplied readable time values permit duration calculation without complete analogue clock-reading mastery."
     },
     {
       "topicId": "mt_4fK8Bb8Tr_",
@@ -2023,7 +2023,7 @@
       "topicId": "mt_4m8BimI4G5",
       "prerequisiteId": "mt_HNOPGJYiRK",
       "strength": "hard",
-      "reason": "Extends telling time to include a.m./p.m. and 24-hour notation"
+      "reason": "Five-minute analogue reading supports the clock-reading component; a.m./p.m. distinguishes the two daily occurrences of a 12-hour time."
     },
     {
       "topicId": "mt_4MFUAsbx_6",
@@ -2177,15 +2177,9 @@
     },
     {
       "topicId": "mt_5HV4mbgSGH",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Unit conversion supports measurement word problems"
-    },
-    {
-      "topicId": "mt_5J2quSTspi",
-      "prerequisiteId": "mt_4m8BimI4G5",
-      "strength": "hard",
-      "reason": "Writing 3:20 p.m. as 15:20 and 07:05 as 7:05 a.m. relies on knowing which times are before and after midday"
+      "reason": "Converting to compatible units supports measurement word problems."
     },
     {
       "topicId": "mt_5J2quSTspi",
@@ -2454,8 +2448,8 @@
     {
       "topicId": "mt_68pIoiiG4g",
       "prerequisiteId": "mt_Jvg_r4yWaY",
-      "strength": "hard",
-      "reason": "Conservation of energy is a property of energy stores and transfers — the stores and pathways model must be established first"
+      "strength": "soft",
+      "reason": "The full stores-and-pathways repertoire supports disciplined energy bookkeeping; qualitative conservation and dissipation can be demonstrated with the actual stores and transfers in a supplied process without mastery of every store/pathway classification."
     },
     {
       "topicId": "mt_69hFD2NgGe",
@@ -2664,8 +2658,8 @@
     {
       "topicId": "mt_6XCURuNwPw",
       "prerequisiteId": "mt__N55B7u7HD",
-      "strength": "hard",
-      "reason": "Sequencing intervals requires understanding time measurement"
+      "strength": "soft",
+      "reason": "Timing events supplies measured durations; ordering durations already supplied does not require operating a timer."
     },
     {
       "topicId": "mt_6XCURuNwPw",
@@ -4254,8 +4248,8 @@
     {
       "topicId": "mt_AHXePdicRf",
       "prerequisiteId": "mt_AvJMWQbDsr",
-      "strength": "hard",
-      "reason": "'Making multimodal texts' builds on 'Organising Writing into Paragraphs'"
+      "strength": "soft",
+      "reason": "Paragraph organisation can support extended multimodal writing, but planning, creating, editing and publishing writing with purposeful visuals can be demonstrated in a single-page or short-caption work without organising an extended text into several themed paragraphs. Keep the full writing-plus-image, informative paragraph, diagram/caption, audience/layout and revision requirements."
     },
     {
       "topicId": "mt_AHXePdicRf",
@@ -4650,20 +4644,20 @@
     {
       "topicId": "mt_AvJMWQbDsr",
       "prerequisiteId": "mt_lIs10UMkPG",
-      "strength": "hard",
-      "reason": "Paragraph organisation requires writing for different purposes"
+      "strength": "soft",
+      "reason": "Stamina across purposes supports longer compositions, but a short focused experience or informational piece and a reasoned boundary repair can demonstrate paragraph organisation before full-page, multi-genre sustained writing."
     },
     {
       "topicId": "mt_AvJMWQbDsr",
       "prerequisiteId": "mt_nDAcXoPa0c",
-      "strength": "hard",
-      "reason": "Organising paragraphs requires narrative writing ability"
+      "strength": "soft",
+      "reason": "Narrative authorship offers useful experience of sequence and coherence; organising complete non-narrative paragraphs and explaining their boundaries does not require independently authoring a beginning-middle-ending story first."
     },
     {
       "topicId": "mt_AvJMWQbDsr",
       "prerequisiteId": "mt_o8ciHks8t2",
-      "strength": "hard",
-      "reason": "Organising into paragraphs requires 'paragraph', 'heading', 'theme', and 'organisation' as named concepts"
+      "strength": "soft",
+      "reason": "Writing-process vocabulary supports discussing and refining organisation, but a learner can create focused paragraphs, choose headings and explain or repair a boundary in ordinary words without knowing the full process-term inventory."
     },
     {
       "topicId": "mt_AVk2EmSULC",
@@ -5692,6 +5686,24 @@
       "reason": "Savanna predator-prey (lions/zebras) is foundation for predator-prey strategies"
     },
     {
+      "topicId": "mt_bzTJH3XBrx",
+      "prerequisiteId": "mt_fL1Xz8ostr",
+      "strength": "soft",
+      "reason": "Noticing feeling and sensory phrases (\"the icy wind howled\") helps spot a personification"
+    },
+    {
+      "topicId": "mt_bzTJH3XBrx",
+      "prerequisiteId": "mt_sSQlLOnAow",
+      "strength": "soft",
+      "reason": "Recognising characters in stories supports noticing that an animal character behaves like a person"
+    },
+    {
+      "topicId": "mt_bzTJH3XBrx",
+      "prerequisiteId": "mt_SUOhjmRqv9",
+      "strength": "soft",
+      "reason": "Distinguishing literal from figurative language supports explaining a personification"
+    },
+    {
       "topicId": "mt_c29FaCTNsx",
       "prerequisiteId": "mt_xppl18avyY",
       "strength": "hard",
@@ -5790,8 +5802,8 @@
     {
       "topicId": "mt_cB7hV8sw7X",
       "prerequisiteId": "mt_82KKv0Fca3",
-      "strength": "hard",
-      "reason": "Producing coherent writing for task/purpose/audience requires these as precise, understood concepts"
+      "strength": "soft",
+      "reason": "Writing-craft vocabulary supports discussing coherent writing; deliberately matching task, purpose and audience, organising development and reviewing consistent style do not require the complete rhetoric, voice, cohesion and style terminology inventory."
     },
     {
       "topicId": "mt_cB7hV8sw7X",
@@ -6287,9 +6299,9 @@
     },
     {
       "topicId": "mt_Cqm8iy48UI",
-      "prerequisiteId": "mt_2yas4Unc8o",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "soft",
-      "reason": "Time conversion supports interpreting timetables"
+      "reason": "Unit conversion supports interpreting timetable durations; general table reading does not require every conversion family."
     },
     {
       "topicId": "mt_Cqm8iy48UI",
@@ -6618,14 +6630,14 @@
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_KaF0SQvaiu",
-      "strength": "hard",
-      "reason": "measuring in uniform units is the foundation of relating unit sizes"
+      "strength": "soft",
+      "reason": "Iterating length units can illustrate relative unit size, but practical length measurement is not required for time or other unit conversions."
     },
     {
       "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_PZ909yPrEC",
       "strength": "hard",
-      "reason": "converting 3 km to 3000 m is a multiplicative scale (3 groups of 1000): multiplication as equal groups"
+      "reason": "A conversion factor expresses equal groups of smaller units within one larger unit; multiplicative unit reasoning is essential."
     },
     {
       "topicId": "mt_DA7-JYRvtP",
@@ -6740,6 +6752,24 @@
       "prerequisiteId": "mt_NTAc_EMeHZ",
       "strength": "hard",
       "reason": "'Trying figurative language in writing' builds on 'Borrowing from books you've read'"
+    },
+    {
+      "topicId": "mt_Dc-YYfulcj",
+      "prerequisiteId": "mt_cU3LcEVkBQ",
+      "strength": "soft",
+      "reason": "Knowing that adjectives describe nouns supports sorting proper from common adjectives"
+    },
+    {
+      "topicId": "mt_Dc-YYfulcj",
+      "prerequisiteId": "mt_qzwQAOfurw",
+      "strength": "soft",
+      "reason": "Knowing the term \"adjective\" helps the child explain the rule"
+    },
+    {
+      "topicId": "mt_Dc-YYfulcj",
+      "prerequisiteId": "mt_uM6q_KBWKy",
+      "strength": "soft",
+      "reason": "Capitalising proper names helps explain why a derived adjective keeps the capital"
     },
     {
       "topicId": "mt_deexfCHU9m",
@@ -7014,8 +7044,8 @@
     {
       "topicId": "mt_DRNXFr0ds6",
       "prerequisiteId": "mt_gZIo5oiBMt",
-      "strength": "hard",
-      "reason": "Reading health and safety signs builds on knowing texts take many forms (re-pointed from retired Texts are everywhere)"
+      "strength": "soft",
+      "reason": "Recognising different forms of messages supports interpreting signs, but classifying story/poem/non-fiction books and explaining author/illustrator roles is not necessary for identifying and acting on health and safety symbols."
     },
     {
       "topicId": "mt_DRNXFr0ds6",
@@ -7050,8 +7080,8 @@
     {
       "topicId": "mt_-DuXzMVVXQ",
       "prerequisiteId": "mt_sMAcZW6vWM",
-      "strength": "hard",
-      "reason": "Paraphrasing requires the ability to identify main ideas and summarise; learners must extract key ideas before restating them in own words"
+      "strength": "soft",
+      "reason": "Identifying and recording main ideas in multi-paragraph written texts supports paraphrasing, but accurate restatement of heard or viewed material can be demonstrated orally without independent print reading or written notes. Retain the complete oral key-idea/detail and own-words requirements; written note-taking remains useful support."
     },
     {
       "topicId": "mt_DVSHx3YMkN",
@@ -7088,12 +7118,6 @@
       "prerequisiteId": "mt_Ep7TDFuYUa",
       "strength": "soft",
       "reason": "Equivalent fractions require selecting appropriate fraction models"
-    },
-    {
-      "topicId": "mt_d-WZC2OyMB",
-      "prerequisiteId": "mt_IL86kadLSS",
-      "strength": "soft",
-      "reason": "Elapsed time problems require choosing between number line and mental methods"
     },
     {
       "topicId": "mt_d-WZC2OyMB",
@@ -7770,8 +7794,8 @@
     {
       "topicId": "mt_EXlmTURK_o",
       "prerequisiteId": "mt_2XDGT5tei1",
-      "strength": "hard",
-      "reason": "Extends knowing minutes in an hour to seconds in a minute and days in months"
+      "strength": "soft",
+      "reason": "Hour/day relations support discussion of time units but do not establish or gate calendar-length and seconds-per-minute knowledge."
     },
     {
       "topicId": "mt_EXO1bJ3G_v",
@@ -7866,8 +7890,8 @@
     {
       "topicId": "mt_F62VTeHB4-",
       "prerequisiteId": "mt_QhLAeAlHI0",
-      "strength": "hard",
-      "reason": "'Preparing simple healthy snacks' builds on 'Balanced Diet & Food Groups'"
+      "strength": "soft",
+      "reason": "Understanding a local healthy-eating guide supports ingredient choices and their health rationale; preparing a selected healthy snack safely does not require the complete nutrient-function inventory or planning a whole day of meals in guide proportions."
     },
     {
       "topicId": "mt_f67qGDhyfi",
@@ -7890,8 +7914,8 @@
     {
       "topicId": "mt_f8n4txtLej",
       "prerequisiteId": "mt_6lHBTwQPrS",
-      "strength": "hard",
-      "reason": "Generating effective questions requires knowledge of question words (who, what, where, when, why, how)"
+      "strength": "soft",
+      "reason": "Question words broaden and sharpen questions, but relevant yes/no clarification and requests for help can demonstrate the complete asking-and-answering operation without command of every question-word construction."
     },
     {
       "topicId": "mt_f8n4txtLej",
@@ -8160,14 +8184,14 @@
     {
       "topicId": "mt_fk33IEGP-T",
       "prerequisiteId": "mt_EHuU1ZeUFA",
-      "strength": "hard",
-      "reason": "Describing predictable patterns of sun, moon, and stars requires planet, star, moon, orbit vocabulary"
+      "strength": "soft",
+      "reason": "Space-object vocabulary can support discussion of observed patterns, but naming all eight planets and the wider orbit / galaxy vocabulary is not necessary when familiar Sun / Moon / star labels are supplied."
     },
     {
       "topicId": "mt_fk33IEGP-T",
       "prerequisiteId": "mt_K0mZxY2AM8",
-      "strength": "hard",
-      "reason": "Must observe sun/moon/star patterns before relating daylight to time of year"
+      "strength": "soft",
+      "reason": "Prior comparison of sunrise and sunset at different times of year supplies an additional Sun-pattern case for comparison; completing the annual daylight / seasonal relationship is not required for daily sky or Moon-pattern observations."
     },
     {
       "topicId": "mt_fkcxpeYP85",
@@ -8532,8 +8556,8 @@
     {
       "topicId": "mt_FwI7q7DSIx",
       "prerequisiteId": "mt_NS5t-Jzlh8",
-      "strength": "hard",
-      "reason": "Taking turns and sharing cooperatively requires vocabulary like 'cooperate', 'take turns', and 'include'"
+      "strength": "soft",
+      "reason": "Cooperation vocabulary supports discussing turn-taking and sharing; actually taking turns, sharing materials and explaining the benefit of fair participation does not require the entire compromise/active-listening vocabulary claim."
     },
     {
       "topicId": "mt_FX4a2Q8XXN",
@@ -8720,6 +8744,18 @@
       "prerequisiteId": "mt_tF6XuKIq8_",
       "strength": "hard",
       "reason": "'Working together for a civic goal' builds on 'Why people join in'"
+    },
+    {
+      "topicId": "mt_G8PH3onbBS",
+      "prerequisiteId": "mt_frDIaXzWbx",
+      "strength": "soft",
+      "reason": "Recognising the letters on the keys and on the screen supports finding keys and spotting errors"
+    },
+    {
+      "topicId": "mt_G8PH3onbBS",
+      "prerequisiteId": "mt_nYU6x2E2T8",
+      "strength": "soft",
+      "reason": "Prior experience typing simple words on a computer makes the keyboard familiar"
     },
     {
       "topicId": "mt_g9RcQOhU5d",
@@ -9266,6 +9302,18 @@
       "prerequisiteId": "mt_scBgiMKhG_",
       "strength": "hard",
       "reason": "Noticing the gap between decoding and understanding requires first having the foundational idea that reading means making meaning"
+    },
+    {
+      "topicId": "mt_gvU3c_FLyu",
+      "prerequisiteId": "mt_9lN0SpKlEH",
+      "strength": "soft",
+      "reason": "Selecting conventions for formal letters and scripts provides the genres in which the colon conventions are used."
+    },
+    {
+      "topicId": "mt_gvU3c_FLyu",
+      "prerequisiteId": "mt_uycuqPaiJ1",
+      "strength": "soft",
+      "reason": "Knowing that a colon signals that what follows belongs to what precedes it (as in list colons) supports the label/speaker use."
     },
     {
       "topicId": "mt_gv_uoHkdjR",
@@ -10194,14 +10242,14 @@
     {
       "topicId": "mt_hzkNpp2PdV",
       "prerequisiteId": "mt_gbTyzvnWzr",
-      "strength": "hard",
-      "reason": "Y6 terminology includes active/passive which must be taught first"
+      "strength": "soft",
+      "reason": "Supports: practising passive-voice writing deepens understanding of the terms active and passive voice; knowing and explaining the terms in given sentences does not require independently producing or choosing the passive in new formal writing"
     },
     {
       "topicId": "mt_hzkNpp2PdV",
       "prerequisiteId": "mt_-tcJeAhK5k",
-      "strength": "hard",
-      "reason": "Y6 terminology builds on Y5 terminology"
+      "strength": "soft",
+      "reason": "Supports: Year 5 terms (modal verb, relative clause, parenthesis, cohesion, ambiguity) are useful background, but accurate use of the eleven Year 6 terms does not require the whole Year 5 list"
     },
     {
       "topicId": "mt_HZvTriQWTh",
@@ -10370,12 +10418,6 @@
       "prerequisiteId": "mt_bABr-c2DfV",
       "strength": "hard",
       "reason": "Diffusion in and between cells requires knowing about the cell membrane as a selectively permeable boundary"
-    },
-    {
-      "topicId": "mt_i8AGTuk4fJ",
-      "prerequisiteId": "mt_e3-_toGuWf",
-      "strength": "hard",
-      "reason": "'Natural and made materials' builds on 'Testing Materials for Uses'"
     },
     {
       "topicId": "mt_i8AGTuk4fJ",
@@ -10679,15 +10721,9 @@
     },
     {
       "topicId": "mt_IL86kadLSS",
-      "prerequisiteId": "mt_4emC463IyW",
-      "strength": "soft",
-      "reason": "GB route: Year 3 calculating the time taken by events feeds into elapsed-time problem solving; soft because this node is GB-only (both countries keep the hard nearest-minute prerequisite)"
-    },
-    {
-      "topicId": "mt_IL86kadLSS",
       "prerequisiteId": "mt_UNzojLkNdm",
-      "strength": "hard",
-      "reason": "Must read time to nearest minute before solving elapsed time problems"
+      "strength": "soft",
+      "reason": "Clock reading supports tasks presented on a clock face; supplied digital times do not require complete analogue nearest-minute mastery."
     },
     {
       "topicId": "mt_IlDaxVr60U",
@@ -10980,8 +11016,8 @@
     {
       "topicId": "mt_Iwg2diBSyW",
       "prerequisiteId": "mt_SeNxOZTHCN",
-      "strength": "hard",
-      "reason": "Calming strategies (calm, breathe, settle) rely on knowing this vocabulary to name and apply the techniques"
+      "strength": "soft",
+      "reason": "Vocabulary supports discussing calming choices; demonstrating two strategies, choosing one independently during a genuine upset and explaining its practical benefit does not require the entire anxious/overwhelmed/disappointed emotion-word inventory or distinguishing every named feeling."
     },
     {
       "topicId": "mt_iWGnyUyN2j",
@@ -11514,8 +11550,8 @@
     {
       "topicId": "mt_jHv4BgRK8B",
       "prerequisiteId": "mt_e4x3l2JeLI",
-      "strength": "hard",
-      "reason": "Must be able to measure with tools before comparing measurements in different units"
+      "strength": "soft",
+      "reason": "Standard-tool measurement provides one way to obtain counts in two units; supplied uniform informal units already support the unit-size / count relationship without the whole standard-tool selection and ruler-reading claim."
     },
     {
       "topicId": "mt_JI0Iv01hCT",
@@ -12924,8 +12960,8 @@
     {
       "topicId": "mt_LMX-nZETLM",
       "prerequisiteId": "mt_FGCFUCqJBB",
-      "strength": "hard",
-      "reason": "Choosing words for effect builds on oral rehearsal and vocabulary building"
+      "strength": "soft",
+      "reason": "Orally rehearsing varied sentence structures can support word choice, but deliberately choosing precise and vivid words and phrases in writing does not require first rehearsing dialogue or varied sentence openings aloud. Preserve the complete written comparison, intended effect and justified verb/adjective choices."
     },
     {
       "topicId": "mt_LMX-nZETLM",
@@ -13374,8 +13410,8 @@
     {
       "topicId": "mt_M5PPDJStGm",
       "prerequisiteId": "mt_WcfaSfVT33",
-      "strength": "hard",
-      "reason": "One-to-one correspondence requires knowing the number name sequence"
+      "strength": "soft",
+      "reason": "Matching number names to real objects supports meaningful counting, but rote forward/backward number-sequence production can be learned and assessed without one-to-one object enumeration."
     },
     {
       "topicId": "mt_m6UaSmrQVG",
@@ -13464,8 +13500,8 @@
     {
       "topicId": "mt__MDiDU9Vck",
       "prerequisiteId": "mt_o8ciHks8t2",
-      "strength": "hard",
-      "reason": "Informative writing requires knowing 'genre', 'audience', 'purpose', and 'detail' as concepts"
+      "strength": "soft",
+      "reason": "Writing-process vocabulary helps explain composing choices, but naming a topic and conveying relevant facts through drawing, dictation or writing does not require mastery of the entire compose/plan/draft/revise/edit/proofread/genre glossary. Retain all informative content requirements; the vocabulary remains useful support."
     },
     {
       "topicId": "mt__MDiDU9Vck",
@@ -14178,8 +14214,8 @@
     {
       "topicId": "mt_n3ojDXoaqC",
       "prerequisiteId": "mt_lyxrFwNUqE",
-      "strength": "hard",
-      "reason": "'Australia's links with the world' builds on 'Places in the Asia region'"
+      "strength": "soft",
+      "reason": "Knowledge of Asian places provides related regional context, but explaining migration, aid, tourism or cultural interconnections and their effects does not require the full Asia–Australia location/environment comparison."
     },
     {
       "topicId": "mt_n51zr0RFt4",
@@ -14208,8 +14244,8 @@
     {
       "topicId": "mt__N55B7u7HD",
       "prerequisiteId": "mt_TcG90kS8nu",
-      "strength": "hard",
-      "reason": "Measuring time in units requires understanding time comparison language first"
+      "strength": "soft",
+      "reason": "Comparative time language supports discussing measurements, but timing and recording one event do not require comparing events."
     },
     {
       "topicId": "mt_n5_Jt4ExUd",
@@ -14284,6 +14320,24 @@
       "reason": "Modal verbs modify main verbs to express possibility/necessity; learners need a secure grasp of simple verb tenses before adding modal modifiers"
     },
     {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_enj1sMcfOT",
+      "strength": "soft",
+      "reason": "The progressive form (is swimming) is the main contrast case; enj1 holds it, inside a broader tense-consistency claim."
+    },
+    {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_j351evNNnB",
+      "strength": "soft",
+      "reason": "Knowing that a word can describe a noun (adjective vs adverb) supports separating \"the swimming dog\" from a gerund."
+    },
+    {
+      "topicId": "mt_nA5OXhzkrh",
+      "prerequisiteId": "mt_yBJyCfhtem",
+      "strength": "hard",
+      "reason": "Recognising an -ing word as doing a noun’s job rather than a verb’s requires the basic noun/verb distinction itself; yBJy’s whole (use common nouns and action verbs appropriately; identify nouns and verbs in simple sentences) is entailed by every evidence item of the gerund claim."
+    },
+    {
       "topicId": "mt_NaqEP8xDhZ",
       "prerequisiteId": "mt_doX1BhmFgk",
       "strength": "hard",
@@ -14346,8 +14400,8 @@
     {
       "topicId": "mt_nDAcXoPa0c",
       "prerequisiteId": "mt_o8ciHks8t2",
-      "strength": "hard",
-      "reason": "Writing simple narratives requires 'narrative', 'sequence', 'beginning', 'middle', 'ending' as shared vocabulary"
+      "strength": "soft",
+      "reason": "Writing-process vocabulary supports reflection on narratives, but a child can independently write sequenced sentences with time words and a beginning, middle and ending/reaction without correctly naming every writing-process or genre term. Retain all simple-narrative requirements; the glossary remains useful support."
     },
     {
       "topicId": "mt_nDAcXoPa0c",
@@ -15738,8 +15792,8 @@
     {
       "topicId": "mt__p5n8z5soJ",
       "prerequisiteId": "mt_XbGfVhfiUz",
-      "strength": "hard",
-      "reason": "Must know computers exist before understanding they follow exact instructions"
+      "strength": "soft",
+      "reason": "Recognising computers as instruction-following devices supports explicit comparison with human instructions; the complete five-device identification/classification claim is not necessary to writing and testing precise everyday algorithms."
     },
     {
       "topicId": "mt_p6frRFuxS6",
@@ -15761,9 +15815,9 @@
     },
     {
       "topicId": "mt_p6MhZJYYPN",
-      "prerequisiteId": "mt_Zks8xyInSG",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Must know metric units before approximating imperial equivalences"
+      "reason": "Applying a known unit relationship supports approximate metric–imperial conversion."
     },
     {
       "topicId": "mt_p-8Hlf6_9k",
@@ -16038,8 +16092,8 @@
     {
       "topicId": "mt_PJyCGJz5Hv",
       "prerequisiteId": "mt_o8ciHks8t2",
-      "strength": "hard",
-      "reason": "Oral composition requires vocabulary like 'compose', 'sentence', and 'sequence' to participate meaningfully in the exercise"
+      "strength": "soft",
+      "reason": "Writing-process vocabulary supports discussion of oral rehearsal, but saying and repeating an intended complete sentence and practising it with a partner before writing does not require mastery of the broad writing-process glossary. Retain the full rehearsal procedure; the vocabulary remains useful support."
     },
     {
       "topicId": "mt_PJZf6WGfzl",
@@ -16086,8 +16140,8 @@
     {
       "topicId": "mt_Pl-nsjYGZ3",
       "prerequisiteId": "mt_htAYR-iCFF",
-      "strength": "hard",
-      "reason": "Observing and describing change of state requires reading particle diagrams showing how arrangement changes on heating or cooling"
+      "strength": "soft",
+      "reason": "Particle diagrams support observed state/temperature changes and the required qualitative energy explanation. Independent three-state diagram construction and compressibility reasoning are not necessary prerequisites for that whole claim."
     },
     {
       "topicId": "mt__pMF-Xb0TE",
@@ -18503,15 +18557,15 @@
     },
     {
       "topicId": "mt_SqhXQhAEUf",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "Multi-step conversion problems require conversion skills"
+      "reason": "Selecting and sequencing a conversion inside a problem draws on the unit-conversion procedure."
     },
     {
       "topicId": "mt_SqhXQhAEUf",
       "prerequisiteId": "mt_5HV4mbgSGH",
-      "strength": "hard",
-      "reason": "Measurement word problems extend Y5 measurement problem-solving"
+      "strength": "soft",
+      "reason": "Measurement word-problem experience can support choosing operations, but this broader four-operation/fraction claim is not necessary for every conversion-and-calculation problem."
     },
     {
       "topicId": "mt_sQpIV0-qY7",
@@ -18852,14 +18906,20 @@
     {
       "topicId": "mt_T9IXrlxfx2",
       "prerequisiteId": "mt_IdFxLz-UW9",
+      "strength": "soft",
+      "reason": "Supports: phrase and clause analysis (main vs subordinate clauses) helps a learner explain why a sentence is simple, compound, complex or compound-complex; the whole Phrases & Clauses claim (incl. misplaced/dangling-modifier correction) is not required to vary sentence types for effect"
+    },
+    {
+      "topicId": "mt_T9IXrlxfx2",
+      "prerequisiteId": "mt_wq-1OJ_8s5",
       "strength": "hard",
-      "reason": "Choosing sentence types requires understanding how phrases and clauses function"
+      "reason": "Constructing compound, complex and compound-complex sentences requires joining clauses with subordinating (because, when, if) and coordinating (and, but, or) conjunctions"
     },
     {
       "topicId": "mt_T9IXrlxfx2",
       "prerequisiteId": "mt_YQ64pzcLDl",
-      "strength": "hard",
-      "reason": "Constructing complex sentences uses subordinate/relative clauses from KS2"
+      "strength": "soft",
+      "reason": "Supports: relative clauses are one way to build complex and compound-complex sentences; the full sentence-type operation can use adverbial subordination instead, so whole relative-clause mastery is not required"
     },
     {
       "topicId": "mt_tAJH5BrpOx",
@@ -19283,9 +19343,9 @@
     },
     {
       "topicId": "mt_tpT9brpI6D",
-      "prerequisiteId": "mt_2VpdPjvewx",
+      "prerequisiteId": "mt_d8al9JcajP",
       "strength": "hard",
-      "reason": "KS3 unit conversion extends KS2 (Y6) metric conversion with decimals to area/volume units"
+      "reason": "Area and volume conversion extend unit-factor reasoning by deriving squared and cubed factors."
     },
     {
       "topicId": "mt_tpT9brpI6D",
@@ -19722,8 +19782,8 @@
     {
       "topicId": "mt_UHQfb-n-w3",
       "prerequisiteId": "mt_uTKgmWqSoI",
-      "strength": "hard",
-      "reason": "Understanding that actions have consequences requires the vocabulary word 'consequence' as a named concept"
+      "strength": "soft",
+      "reason": "Decision and safety vocabulary supports talking about consequences; understanding and predicting effects of actions does not depend on the full rule/fair/honest/trusted-adult vocabulary inventory or on using a particular label for the concept."
     },
     {
       "topicId": "mt_U_HQXCnAaG",
@@ -19850,12 +19910,6 @@
       "prerequisiteId": "mt_4m8BimI4G5",
       "strength": "soft",
       "reason": "mistargeted gate: its reason named five-minute telling; a.m./p.m. is illustrative 'such as' vocabulary"
-    },
-    {
-      "topicId": "mt_UNzojLkNdm",
-      "prerequisiteId": "mt_6XCURuNwPw",
-      "strength": "soft",
-      "reason": "GB route: Year 2 comparing and sequencing intervals of time is the groundwork for recording and comparing durations in seconds, minutes and hours; soft because this node is GB-only"
     },
     {
       "topicId": "mt_UNzojLkNdm",
@@ -20202,8 +20256,8 @@
     {
       "topicId": "mt_v5DyOEpbbr",
       "prerequisiteId": "mt_82KKv0Fca3",
-      "strength": "hard",
-      "reason": "Identifying audience, purpose, form, tone, and register before writing requires all these as named vocabulary"
+      "strength": "soft",
+      "reason": "Writing-craft vocabulary supports explaining form and tone choices; identifying audience and purpose, choosing an appropriate form and adjusting vocabulary, sentence length and formality do not require the complete rhetoric, voice, cohesion and style terminology inventory."
     },
     {
       "topicId": "mt_v5DyOEpbbr",
@@ -20400,8 +20454,8 @@
     {
       "topicId": "mt_VBl1T1sFCM",
       "prerequisiteId": "mt_ZL9qVVnpwN",
-      "strength": "hard",
-      "reason": "Must understand how sound works before designing a communication device using it"
+      "strength": "soft",
+      "reason": "Designing and testing a light/sound communication device offers an application of vibration knowledge; explaining vibrating sources and demonstrating that sound makes separate matter vibrate does not require the complete device design/build/test/improve operation."
     },
     {
       "topicId": "mt_VEwM7ClYYE",
@@ -20550,8 +20604,8 @@
     {
       "topicId": "mt_vJO5Bxk4z-",
       "prerequisiteId": "mt_XirhnAB6Ye",
-      "strength": "hard",
-      "reason": "Must ask questions before learning to observe closely"
+      "strength": "soft",
+      "reason": "Generating scientific questions supports learner-led investigation; careful equipment-based observation, specific description and comparison can be demonstrated for a supplied question or object without independently generating several questions and choosing among investigation methods."
     },
     {
       "topicId": "mt_vJUa62bxeR",
@@ -20646,8 +20700,8 @@
     {
       "topicId": "mt_V-ldQp56bF",
       "prerequisiteId": "mt_ZhvwM6LMBL",
-      "strength": "hard",
-      "reason": "Expressive reading builds on basic reading fluency"
+      "strength": "soft",
+      "reason": "Accurate, increasingly automatic word recognition in the actual grade-level text remains necessary and is assessed by the complete expressive-reading claim. This earlier English fluency repertoire is useful support, but its whole phonically matched-text and downstream exception-word-bank/LTR-print requirements are not universal prerequisites for accurate, appropriately paced, expressive reading with self-correction and rereading in another actual language/script. Keep all those English skills and source-specific requirements; this edge does not permit guessed words, inaccurate rapid reading or memorised recitation to establish mastery."
     },
     {
       "topicId": "mt_VLu59hpQ4T",
@@ -21122,12 +21176,6 @@
       "prerequisiteId": "mt_Z_Wu_77ybI",
       "strength": "hard",
       "reason": "The periodic table organises elements by their atomic structure — atoms and elements must be understood first"
-    },
-    {
-      "topicId": "mt_WfrE_4r-kY",
-      "prerequisiteId": "mt_5J2quSTspi",
-      "strength": "hard",
-      "reason": "Year 4 conversion between analogue and digital 12- and 24-hour clocks builds on Year 3 reading of 12- and 24-hour times"
     },
     {
       "topicId": "mt_wf-SJhZ1kC",
@@ -22554,8 +22602,8 @@
     {
       "topicId": "mt_YbX3LD0Eca",
       "prerequisiteId": "mt_NS5t-Jzlh8",
-      "strength": "hard",
-      "reason": "Active listening practice requires understanding the vocabulary of listening, agreeing, and disagreeing respectfully"
+      "strength": "soft",
+      "reason": "Working-with-others vocabulary supports reflecting on listening; attending to a speaker, waiting and responding to their actual meaning does not require mastering every term used to describe group work."
     },
     {
       "topicId": "mt_yCmYV9ruQu",
@@ -22746,8 +22794,8 @@
     {
       "topicId": "mt_YKkCM63fSC",
       "prerequisiteId": "mt_frDIaXzWbx",
-      "strength": "hard",
-      "reason": "Need to recognise letters to read sight words"
+      "strength": "soft",
+      "reason": "Recognising particular letter forms supports sight-word reading; an automatic 20–30-word connected-text bank with unusual spelling/sound correspondences can be demonstrated without naming both cases of all 26 letters, reciting A–Z and naming alternative spellings."
     },
     {
       "topicId": "mt_YKkCM63fSC",
@@ -22794,8 +22842,8 @@
     {
       "topicId": "mt_ylXdiVRAYv",
       "prerequisiteId": "mt_u5HkSxZECM",
-      "strength": "hard",
-      "reason": "Organising and representing data requires data, tally, frequency, and category vocabulary"
+      "strength": "soft",
+      "reason": "Data, tally, frequency and category vocabulary supports precise description of organising data; the full continuous-data and chart-type repertoire is not required before sorting, counting and tabulating two or three categories."
     },
     {
       "topicId": "mt_ylXdiVRAYv",
@@ -23478,8 +23526,8 @@
     {
       "topicId": "mt_ZhvwM6LMBL",
       "prerequisiteId": "mt__KHQttMde3",
-      "strength": "hard",
-      "reason": "Must be able to decode before fluency"
+      "strength": "soft",
+      "reason": "A wider range of grapheme-phoneme correspondences supports reading more texts; accurate, meaningful emergent reading of a text matched to already taught correspondences does not require responding to the entire 40+ phoneme inventory first."
     },
     {
       "topicId": "mt_ZhvwM6LMBL",
@@ -23560,16 +23608,10 @@
       "reason": "Comparing capacity requires understanding capacity as a measurable attribute"
     },
     {
-      "topicId": "mt_Zks8xyInSG",
-      "prerequisiteId": "mt_d8al9JcajP",
-      "strength": "hard",
-      "reason": "Y4 unit conversion is prerequisite to systematic metric conversions with tables"
-    },
-    {
-      "topicId": "mt_Zks8xyInSG",
+      "topicId": "mt_d8al9JcajP",
       "prerequisiteId": "mt_LlMl2PbaZe",
       "strength": "soft",
-      "reason": "×÷ by 10/100/1000 supports metric unit conversions"
+      "reason": "Multiplication and division by powers of ten support metric conversions; non-base-ten time rates use their actual relationships."
     },
     {
       "topicId": "mt_ZL9qVVnpwN",
@@ -23918,6 +23960,60 @@
       "prerequisiteId": "mt_M_xcaRcvSo",
       "strength": "soft",
       "reason": "Knight knowledge provides military context for the Crusades"
+    },
+    {
+      "topicId": "mt_ZtACVRIqmM",
+      "prerequisiteId": "mt_KaF0SQvaiu",
+      "strength": "soft",
+      "reason": "Measuring length supports checking an invariance prediction; the conceptual prediction can also be discussed with a supplied comparison, so this is not a hard gate."
+    },
+    {
+      "topicId": "mt_dLJu-KoJAM",
+      "prerequisiteId": "mt_4lp_b5Pzik",
+      "strength": "soft",
+      "reason": "Liquid measurement supports a fair check of the prediction; the conceptual reasoning need not be gated on independent instrument reading."
+    },
+    {
+      "topicId": "mt_dLJu-KoJAM",
+      "prerequisiteId": "mt_zkFbMLpu3U",
+      "strength": "soft",
+      "reason": "Capacity and volume comparison language supports explaining the apparent-height trap but can be supplied orally in the task."
+    },
+    {
+      "topicId": "mt_iFQ6cOJr6e",
+      "prerequisiteId": "mt_69w5GVudJl",
+      "strength": "soft",
+      "reason": "Ordering events supports the transmission story; dated timeline construction is not a hard prerequisite for explaining a supplied sequence."
+    },
+    {
+      "topicId": "mt_iFQ6cOJr6e",
+      "prerequisiteId": "mt_jY7uf0Cb7o",
+      "strength": "soft",
+      "reason": "Place-value understanding supports interpreting a placeholder example in the historical account; a supplied model can also provide that meaning."
+    },
+    {
+      "topicId": "mt_rCy4qtUwuT",
+      "prerequisiteId": "mt_fLOkq-HfPB",
+      "strength": "soft",
+      "reason": "Objects and drawings can externalise the relationships needed to pose a mathematical question; full prior mastery of solving a supplied model is not a hard gate."
+    },
+    {
+      "topicId": "mt_rCy4qtUwuT",
+      "prerequisiteId": "mt_lMz9nAs7VO",
+      "strength": "soft",
+      "reason": "Mathematical vocabulary can help express the question and its criterion, but pointing, drawings or a model allow formulation without a hard English grammar / question-word gate."
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_B3W5EfimJw",
+      "strength": "hard",
+      "reason": "The complete prior pushes/pulls claim supplies force strength and direction causing motion changes, which the qualitative flight account presupposes."
+    },
+    {
+      "topicId": "mt_jJjjV2WtS6",
+      "prerequisiteId": "mt_Y9k86G8BBT",
+      "strength": "soft",
+      "reason": "A familiar resistance account supports drag, but its full water/surface repertoire is not intrinsic to explaining the wing/air model."
     }
   ]
 }

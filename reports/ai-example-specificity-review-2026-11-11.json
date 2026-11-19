@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "baseCommit": "86ee611",
+  "topicId": "mt_AzTrT5ySCx",
+  "changedFields": [
+    "description",
+    "assessmentPrompt"
+  ],
+  "before": {
+    "description": "Spotting AI in daily life: face unlock on a phone, video recommendations, spelling auto-correct, automatic doors that detect people; technology that seems to 'know' things",
+    "assessmentPrompt": "Could {{name}} point out several things they use every day — like auto-correct or face unlock — and explain that these are examples of AI?"
+  },
+  "after": {
+    "description": "Recognise AI-enabled features in everyday life, such as face recognition, video recommendations, predictive text, speech recognition and translation, using information about the particular system rather than assuming that every automatic response uses AI.",
+    "assessmentPrompt": "Could {{name}} identify several documented AI-enabled features — like a predictive keyboard or face recognition — and explain how their supplied examples use patterns and data?"
+  },
+  "rationale": "The old automatic-door example treats sensing/responding alone as proof ofAI. A simple programmed rule can operate a door; a particular door may useAI but that cannot be inferred from its automatic movement. ModernAI-enabled versions of the revised examples are qualified by supplied system information, not by brand/category alone.",
+  "wholeClaimPreserved": "Stable ID, type, title, all three evidence items (including five examples), scoped associations and prerequisites remain exact. No architecture or technical mathematics criterion is added.",
+  "source": {
+    "url": "https://www.ai.gov.au/understanding-ai/artificial-intelligence-explained",
+    "readScope": "Actual National AI Centre main body read: data/model framing, language/image/prediction uses and limitations. Video was not viewed; historical expert-system AI is acknowledged, with no rule that every AI uses a neural network."
+  },
+  "review": "Full original AI, smart-device and computer-use cards and their two hard prerequisite edges read; none has a guide. Parallel source curator reviewed exact two-field correction and retained five-example/pattern/benefit-limit evidence.",
+  "publicationBoundary": "A source correction only. No learner evidence reinterpretation, reset, transfer, backfill or DB write. No new context, topic, guide or edge."
+}

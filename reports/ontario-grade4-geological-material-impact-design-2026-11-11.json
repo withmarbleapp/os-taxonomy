@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "8c5b462dbda69568720f6da69ec291997039ab25",
+  "status": "Three-record source-fit authoring design. Natural-process and material-lifecycle accounts explicitly include social and environmental effects; no new or changed mastery claim.",
+  "resources": {
+    "bgs-quake": {
+      "url": "https://www.bgs.ac.uk/discovering-geology/earth-hazards/earthquakes/how-do-earthquakes-affect-people/",
+      "publisher": "British Geological Survey",
+      "readScope": "Actual main explanatory text on ground, building materials/design and variable damage read; images/map not viewed.",
+      "role": "Local ground/building conditions alter consequences; no magnitude alone predicts damage or universally earthquake-proof design."
+    },
+    "usgs-slide": {
+      "url": "https://www.usgs.gov/programs/landslide-hazards/what-a-landslide",
+      "publisher": "US Geological Survey",
+      "readScope": "Actual definition, cause and impact sections read, including earthquake triggers, Lituya Bay1958 tree/soil loss and stream blockage/flooding. Source photos/linked event media not inspected.",
+      "role": "Selected geological land/water effects and infrastructure consequences, not a site hazard assessment or universal landslide cause."
+    },
+    "usgs-volcano": {
+      "url": "https://www.usgs.gov/faqs/what-are-some-benefits-volcanic-eruptions?items_per_page=6&page=1",
+      "publisher": "US Geological Survey",
+      "readScope": "Complete three-point FAQ main answer read, updated July 2, 2026; not linked FAQs or media.",
+      "role": "Long-term weathered volcanic material/soil and geothermal-resource benefits, not a claim fresh eruptions are safe or instantly improve farms."
+    },
+    "epa-refining": {
+      "url": "https://www.epa.gov/radiation/tenorm-bauxite-and-alumina-production-wastes",
+      "publisher": "US Environmental Protection Agency",
+      "readScope": "Complete actual main refining and waste-generation/disposal text read, updated May 4, 2026. Diagram not viewed.",
+      "role": "Bauxite-to-alumina and refining-residue concerns. No US plant count, radioactivity inventory, chemical procedure or regulatory transfer adopted."
+    },
+    "epa-manufacture": {
+      "url": "https://www.epa.gov/stationary-sources-air-pollution/primary-aluminum-reduction-plants-new-source-performance-standards",
+      "publisher": "US Environmental Protection Agency",
+      "readScope": "Complete actual rule-summary manufacturing paragraph read, updated March 4, 2026. Linked rules not read.",
+      "role": "Aluminium production followed by casting/rolling and packaging uses, not Ontario legal requirements."
+    },
+    "nsw-cans": {
+      "url": "https://www.epa.nsw.gov.au/sites/default/files/120349-aluminium.pdf",
+      "publisher": "NSW Environment Protection Authority",
+      "readScope": "Complete actual two-page November 2012 extracted fact-sheet text read; no original page images viewed.",
+      "role": "Qualitative mining/production energy and remelting/recycling versus general-waste loss. Dated Australian recovery percentages and95% numerical saving are not transferred as a universal current/Canadian result; local collection rules must be checked."
+    }
+  },
+  "preparedCases": {
+    "geological-processes": {
+      "role": "geological-society-environment",
+      "resourceRefs": [
+        "bgs-quake",
+        "usgs-slide",
+        "usgs-volcano"
+      ],
+      "sourceSummary": "Earthquake shaking can affect buildings and trigger slope movement; landslides can alter streams and vegetation. Volcanic material weathering can eventually support fertile soil and volcanic heat can be used as a resource.",
+      "attributionLimits": "Actual general accounts and named1958 Lituya Bay environmental example remain distinct from the following original fictional town scenario. No images, local risk calculation, predicted event or death tally.",
+      "question": "Original town case: supplied facts state that underground slip shakes two areas with different ground/building conditions; a triggered slide moves soil/vegetation and blocks a stream beside a road. Analyse the cause→physical change→environmental and social consequences, including possible downstream flooding and road/service disruption. Contrast immediate effects with the source-described long-term benefit of weathered volcanic material; explain the timescale difference.",
+      "expectedEvidence": "Separate underground cause, shaking, land/water change and effects on people. Explain why geology, exposure and building design matter; connect stream/vegetation change to a possible habitat consequence without inventing a measured population loss. Explain weathering/soil benefit as a long-term possibility, not every eruption being good.",
+      "nearMiss": "Describes only ground shaking or only a protective device, says all buildings respond equally or that fertile soils make an active eruption safe.",
+      "changedCase": "Original change: the same slip occurs farther from buildings and with a slope that does not fail. Revise which consequences follow; identify which supplied facts/evidence would be needed before claiming a blocked stream or community harm."
+    },
+    "aluminium-life": {
+      "role": "full-material-lifecycle",
+      "resourceRefs": [
+        "epa-refining",
+        "epa-manufacture",
+        "nsw-cans"
+      ],
+      "sourceSummary": "Bauxite is refined to alumina, then aluminium metal is manufactured/shaped into products; production uses energy and generates residues. Collected aluminium can be remelted, while material discarded in general waste may not return to production.",
+      "attributionLimits": "Original one-product pathway. A general source does not establish a current mine's compliance, every municipality's collection rules or exact lifecycle totals. No industrial/chemical demonstration.",
+      "question": "Original prepared pathway: bauxite extraction → alumina refining → aluminium production and shaping → useful drink container → collection/sorting/remelting into another product OR disposal. For each stage identify the resource transformation, a supported environmental effect/question and social use, burden or decision. Compare original fictional perspectives of a production worker concerned with useful work/safe jobs, a nearby resident concerned with residue/water protection, a container user and a recycling operator needing clean separated material. Propose an avoid/reuse/collect/recycle response and explain what it changes and leaves unresolved.",
+      "expectedEvidence": "Cover ALL five source stages: extraction, refining, manufacturing, recycling and disposal, not just the final bin. Link energy/material/residue evidence to environmental concerns and useful packaging/handling/infrastructure needs to social impacts. Compare perspectives and justify a bounded recommendation; recycling can reduce new extraction/production demand but still requires collection/energy and does not erase all earlier impacts.",
+      "nearMiss": "Says recycling cleans all mine waste, equates refining with shaping a can, treats every thrown-away can as recycled or substitutes a mineral name for the lifecycle assessment.",
+      "changedCase": "Original change: a town cannot currently collect the selected container, while another has a verified collection route. Explain how recommendations and required information differ, without asserting the worked foreign collection advice is a local rule or asking a child to handle waste.",
+      "lifecycleStages": [
+        "extraction",
+        "refining",
+        "manufacturing",
+        "recycling",
+        "disposal"
+      ]
+    }
+  },
+  "protocols": {
+    "E1.1": {
+      "codes": [
+        "ON-SCI-2022-G4-E1.1"
+      ],
+      "contributorIds": [
+        "mt_NVr4AhsvIq",
+        "mt_yDZbQODIwp",
+        "mt_m6UaSmrQVG"
+      ],
+      "caseRefs": [
+        "geological-processes"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original scenarios, distinguishing attributed facts from predictions and invented teaching roles.",
+        "Construct the actual process→change→consequence account for both society and environment. Use every required geological or material stage rather than only name a rock, hazard or recycling action.",
+        "Compare the prepared perspectives where required, justify a response using evidence, identify its limitation and answer the near-miss and changed-case questions.",
+        "For the overall integrate natural geological-process impacts with the human material-use lifecycle; linked child expectations or a whole-topic score alone do not establish this account."
+      ],
+      "remainingConditions": []
+    },
+    "E1.2": {
+      "codes": [
+        "ON-SCI-2022-G4-E1.2"
+      ],
+      "contributorIds": [
+        "mt_wH4t4TH0Yw",
+        "mt_VI5kdtf28e",
+        "mt_deexfCHU9m"
+      ],
+      "caseRefs": [
+        "aluminium-life"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original scenarios, distinguishing attributed facts from predictions and invented teaching roles.",
+        "Construct the actual process→change→consequence account for both society and environment. Use every required geological or material stage rather than only name a rock, hazard or recycling action.",
+        "Compare the prepared perspectives where required, justify a response using evidence, identify its limitation and answer the near-miss and changed-case questions.",
+        "For the overall integrate natural geological-process impacts with the human material-use lifecycle; linked child expectations or a whole-topic score alone do not establish this account."
+      ],
+      "remainingConditions": [],
+      "requiredLifecycleStages": [
+        "extraction",
+        "refining",
+        "manufacturing",
+        "recycling",
+        "disposal"
+      ]
+    },
+    "E1": {
+      "codes": [
+        "ON-SCI-2022-G4-E1"
+      ],
+      "contributorIds": [
+        "mt_NVr4AhsvIq",
+        "mt_yDZbQODIwp",
+        "mt_m6UaSmrQVG",
+        "mt_wH4t4TH0Yw",
+        "mt_VI5kdtf28e",
+        "mt_deexfCHU9m"
+      ],
+      "caseRefs": [
+        "geological-processes",
+        "aluminium-life"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Read the bound actual source summaries and original scenarios, distinguishing attributed facts from predictions and invented teaching roles.",
+        "Construct the actual process→change→consequence account for both society and environment. Use every required geological or material stage rather than only name a rock, hazard or recycling action.",
+        "Compare the prepared perspectives where required, justify a response using evidence, identify its limitation and answer the near-miss and changed-case questions.",
+        "For the overall integrate natural geological-process impacts with the human material-use lifecycle; linked child expectations or a whole-topic score alone do not establish this account."
+      ],
+      "remainingConditions": [],
+      "requiredLifecycleStages": [
+        "extraction",
+        "refining",
+        "manufacturing",
+        "recycling",
+        "disposal"
+      ]
+    }
+  },
+  "wholeClaimReview": {
+    "cardsRead": [
+      "mt_NVr4AhsvIq",
+      "mt_yDZbQODIwp",
+      "mt_m6UaSmrQVG",
+      "mt_wH4t4TH0Yw",
+      "mt_VI5kdtf28e",
+      "mt_deexfCHU9m"
+    ],
+    "guideReadScope": "NVr earthquake cause and m6 erosion guides read in full; yDZ full guidance also reviewed in the earlier structural work and relevant complete activities/constraints/assessment reread here. VI5 and deex guides fully read; wH has no guide. Inherited source verification flags remain unchanged.",
+    "limits": [
+      "Earthquake cause and protective-design contributors are components, not a substitute for environmental analysis. Whole yDZ still requires design/test/improve plus warnings/drills; this impacts task does not certify those performances.",
+      "Whole m6 still requires comparing real tests/observations of multiple erosion solutions; no claim a general landslide account demonstrates that design performance.",
+      "The geology/material source packet supplies the actual consequence/lifecycle relationship. Generic recycling knowledge and mineral/resource identification are insufficient alone.",
+      "Whole VI5 renewable/nonrenewable and obtained/combined information, wH explicit Australian resource example and deex local solutions inventory remain intact and separately assessed. No country-specific requirement or hard readiness is waived."
+    ]
+  },
+  "safety": "Information/scenario tasks, with no hazardous-site visit, rock breaking, molten metal, chemicals, radiation, disaster reenactment or waste handling. Optional separate small engineering models follow school procedures and are never treated as real building safety advice."
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "designStatus": "Original untested task design; no learner observations",
+  "protocols": [
+    {
+      "id": "integrated-social-game",
+      "tasks": [
+        "In an actual locally appropriate modified game, contribute/listen/share work, agree and review fair rules, respond appropriately to another player, care for equipment and identify/report unsafe touching. Transfer to a different game. Broad goal review is not a sum of component-code labels."
+      ],
+      "includesProtocols": [
+        "cooperative-play",
+        "make-and-review-rules",
+        "care-for-another-player",
+        "care-for-shared-equipment",
+        "protective-response"
+      ]
+    },
+    {
+      "id": "cooperative-play",
+      "tasks": [
+        "Use a genuinely interdependent small-team task with room for different ideas and roles; contribute an idea, build on another idea and complete a fair share. A solo success or merely staying on the team is insufficient."
+      ]
+    },
+    {
+      "id": "make-and-review-rules",
+      "tasks": [
+        "Agree initial game norms, play, identify a concrete fairness/safety issue and use the agreed process to review a rule. Retain the whole IiW school/community rule-maker cases and actual participation, plus rkr reasons/independent following. Local institutional examples are bound at use, not relabelled Australian political knowledge."
+      ]
+    },
+    {
+      "id": "care-for-another-player",
+      "tasks": [
+        "Use non-graphic supplied game scenarios to distinguish another person’s feelings from one’s own and choose helpful responses to physical injury, emotional stress and feeling unwell. In genuine safe opportunities, offer comfort/practical help without being prompted and seek appropriate adult support; never stage an injury or require touching/first-aid treatment. Retain the whole kindness and perspective cards and their vocabulary support as separate canonical checks. Do not infer private emotions from obedience or require positive feelings."
+      ],
+      "performanceConditions": {
+        "situations": [
+          "physical-injury",
+          "emotional-stress",
+          "feeling-unwell"
+        ],
+        "noManufacturedInjuryOrDistress": true
+      }
+    },
+    {
+      "id": "care-for-shared-equipment",
+      "tasks": [
+        "Use a complete craft making task to construct a suitable simple target/marker, retaining accurate cutting/folding/join selection/safety/storage. Then actually inspect, use, care for and restore the declared game material, play space and facilities: check for damage, store equipment appropriately, leave the space ready for another group and report an unsafe item to an appropriate adult rather than undertake repairs. Include a changed facility case, not only the craft kit. Complete fair group-work tasks separately; naming a rule does not establish actual care."
+      ],
+      "performanceConditions": {
+        "objects": [
+          "physical-activity-material",
+          "playground",
+          "facilities"
+        ],
+        "actualCareRequired": true,
+        "craftContribution": "tool-and-storage-component-only"
+      }
+    },
+    {
+      "id": "protective-response",
+      "tasks": [
+        "In the game context distinguish appropriate explained care from touching that is not OK and demonstrate telling an appropriate adult, including continuing to tell if needed. Preserve all body-ownership and protective-response checks; no injury/abuse simulation or learner-state inference."
+      ]
+    },
+    {
+      "id": "integrated-game-understanding",
+      "tasks": [
+        "Explain and play a selected familiar local game, communicating its purpose, rules, positions/basic actions and one’s own thinking/feelings. Change a condition and explain the consequence. This is a source-fit task, not a claim of knowledge of all sports."
+      ],
+      "includesProtocols": [
+        "explain-a-familiar-game",
+        "thinking-and-feeling-during-play"
+      ]
+    },
+    {
+      "id": "explain-a-familiar-game",
+      "tasks": [
+        "Give another child enough clear instructions to play a selected familiar local game: purpose, space, roles/positions, allowed basic moves and ending/scoring conditions. The listener tries it, asks a clarification and the speaker revises an unclear instruction. Retain the full receiving-four-steps and changed drawing-instruction checks of r-Bg and explain why actual rules support fairness/safety. Game-specific content is supplied/learned material, not an invented universal sport inventory."
+      ]
+    },
+    {
+      "id": "plan-record-and-reflect",
+      "tasks": [
+        "Choose a realistic personally relevant movement-learning target and timeframe, plan practice, record attempts/progress and review/adjust the approach. Targets are appropriate to the declared task/resources, not imported metre/height examples or body norms. Actual improvement is not guaranteed or required as proof of honest goal-setting. Retain whole cJ planning/monitoring/adjustment and v5 process reflection; this is a future evidence protocol, not fabricated observations. Inherited hard paths through task steps, growth mindset and learning from mistakes remain exact. Their broader canonical evidence is separately accounted for: choose an appropriate challenging multi-step task, recognise and acknowledge steps/progress, explain practice/strategy-related learning and use a genuine available past mistake/learning example. Do not create a mistake, frustration or a personal improvement history to make the evidence appear. Lack of such a child observation in this authoring review is not a coverage gap or a learner result."
+      ],
+      "performanceConditions": {
+        "actions": [
+          "set-personal-target",
+          "plan",
+          "record-progress",
+          "review-adjust"
+        ],
+        "universalDistanceOrHeightNorm": false
+      }
+    },
+    {
+      "id": "thinking-and-feeling-during-play",
+      "tasks": [
+        "At a natural pause in the game, describe a genuine feeling and the reason for a chosen action, then after the game compare the intended plan with what happened and identify a useful change. Retain whole emotional-expression and learning-reflection checks in an appropriate task language. No confusion, frustration or positive feeling is manufactured; none can be stated accurately where applicable. The during-play thinking component is checked directly rather than inferred solely from an after-game summary. Keep the whole kvr disagreement/choosing-to-tell/difficult-situation evidence separate from the source during-game feeling report; use genuine opportunities or declared scenario rehearsal as appropriate, without asserting an independent real event occurred. Reflection also requires a concrete process difference and a justified next change, not merely whether the game was liked."
+      ],
+      "performanceConditions": {
+        "timing": "during-game-with-separate-postgame-reflection",
+        "channels": [
+          "genuine-feeling",
+          "thinking-process"
+        ],
+        "forcedPositiveFeeling": false
+      }
+    }
+  ]
+}

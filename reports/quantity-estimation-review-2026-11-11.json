@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "status": "Original source-checked, low-confidence shared-operation proposal; no main/DB publication or learner transfer.",
+  "topicId": "mt_mRJkC3ae3O",
+  "sourceKeys": [
+    "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-A6",
+    "the-ontario-curriculum-kindergarten-2026:ON-K-2026-K-A6.7"
+  ],
+  "ageContext": {
+    "country": "CA",
+    "region": "Ontario",
+    "ageRangeStart": 4,
+    "ageRangeEnd": 6,
+    "meaning": "Official two-year programme applicability, not a universal developmental norm."
+  },
+  "claim": {
+    "type": "PROCEDURAL",
+    "subject": "Mathematics",
+    "domain": "Counting & Cardinality",
+    "name": "Estimating quantities in visible collections",
+    "description": "Estimate approximately how many objects are in a visible, countable collection before enumerating every item. Use an available known quantity, visual grouping or another meaningful comparison to support the estimate, then count to check and reconcile the approximation with the actual quantity. Adapt the approach to a fresh unknown-total collection with a changed layout or material at an appropriate supplied task scale. This is approximate quantity judgement, distinct from exact one-to-one counting, instant recognition of a very small set, place-value representation or rounding an already written calculation.",
+    "evidence": [
+      "Commit to an approximate quantity before exact item-by-item counting, indicating a relevant known group, visual grouping or comparison that supports the estimate; an unexplained arbitrary number or count-first answer is insufficient.",
+      "Count the actual collection accurately to check, compare the initial estimate with the result and explain what the comparison suggests about the estimate or chosen reference. An estimate may happen to be exact.",
+      "Use a fresh, not-yet-counted collection with a changed layout or material and adapt the reference/comparison rather than repeat a previous guess. Rearranging a known counted set preserves its exact total and is a separate cardinality contrast, not a new estimation trial."
+    ],
+    "assessmentPrompt": "Before counting a visible collection, can {{name}} give a sensible approximate quantity using a familiar group or another comparison, then count to check and explain the difference? Try a fresh, not-yet-counted collection with a different layout or material: can they adapt the comparison?"
+  },
+  "independenceWitness": "A learner can count20 and immediately recognise5 but make unsupported initial guesses about13; a learner can approximate13 using a familiar group and check it, while unable to represent112 as hundreds/tens/ones or round a written calculation.",
+  "closestClaims": [
+    {
+      "id": "mt_9L3NQqgqRd",
+      "name": "Representing numbers to 120"
+    },
+    {
+      "id": "mt_yqAL6O5i_v",
+      "name": "Counting objects to 20"
+    },
+    {
+      "id": "mt_t9BICauBSI",
+      "name": "Subitising to 5"
+    },
+    {
+      "id": "mt_QaYfeVL-0C",
+      "name": "Estimating by rounding"
+    },
+    {
+      "id": "mt_WcfaSfVT33",
+      "name": "One-to-one counting"
+    },
+    {
+      "id": "mt_dmNvjroCPT",
+      "name": "How Many in Total?"
+    }
+  ],
+  "reuseBoundary": "Exact counting/cardinality and subitising do not demonstrate an initial supported approximation. Calculation-rounding operates on written numerals/operations. The existing numbers-to120 claim contains the same estimation component but also a different full representation/place-value repertoire.",
+  "overlapDisposition": "9L3’s compound representation/estimation requirement is retained exactly; this new independently assessed operation does not certify its47/63/112 representation or widen it toK. No automatic equivalence/transfer. Deliberate compound separation is a distinct proposed cleanup, not silently performed.",
+  "task": "Actual9/13/18 collections plus meaningful known-group/other comparison; record an own approximation before exact enumeration, check/reconcile and adapt to a fresh unknown-total collection. No arbitrary accuracy threshold or fixed timer.",
+  "nonDiagnosticBoundary": "Rearranging a known counted set preserves its exact total. Exact groupwise enumeration is valid mathematics; when it reveals the total before approximation, choose a fresh suitable target rather than score an estimation gap.",
+  "source": {
+    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/kindergarten/grades/jk-sk",
+    "review": "Formal A6.7 and its linked reference/grouping elaboration read; illustrative benchmarks are options, not universal methods."
+  },
+  "newDependencies": 0,
+  "oldAuthoredClaimsGuidesContextsChanged": 0,
+  "learnerWrites": 0
+}

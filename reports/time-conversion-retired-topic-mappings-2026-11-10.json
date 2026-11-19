@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "691911d03f5531cc798ee391c86b778a735d75ab",
+  "date": "2026-11-10",
+  "retirements": [
+    {
+      "retiredId": "mt_2yas4Unc8o",
+      "title": "Telling time to the minute (age 9+)",
+      "destinations": [
+        {
+          "topicId": "mt_d8al9JcajP",
+          "clause": "Time-unit conversion with actual rates, mixed quantities, reverse remainders and irregular calendar safeguards."
+        }
+      ],
+      "omittedEvidence": [],
+      "originalTopicAndResearchSha256": "d9de5d8a491143269f1b9f9557097a3a14b544025c5e54072e0898afeb293951"
+    },
+    {
+      "retiredId": "mt_Zks8xyInSG",
+      "title": "Unit relationships and conversion tables",
+      "destinations": [
+        {
+          "topicId": "mt_d8al9JcajP",
+          "clause": "Relative unit sizes, decimal/compound conversion and constructing/interpreting equivalence tables."
+        }
+      ],
+      "omittedEvidence": [],
+      "originalTopicAndResearchSha256": "058d43df8c0eda7e4c86d4798b90d280af7a0df41d07d1bf7294da41aed1bf8a"
+    },
+    {
+      "retiredId": "mt_2VpdPjvewx",
+      "title": "Decimal place value",
+      "destinations": [
+        {
+          "topicId": "mt_d8al9JcajP",
+          "clause": "Forward/reverse decimal metric conversion and powers-of-ten unit reasoning through the existing three-decimal precision condition."
+        }
+      ],
+      "omittedEvidence": [],
+      "originalTopicAndResearchSha256": "6c6832f432905af77c1aa30eb263278585722ea04f5bef4d185b5c3c42ac1fc1"
+    }
+  ],
+  "compatibility": "Disposition maps preserve requirements, not learner-state equivalence. The combined assessment is broader than any individual prior profile. Consumers must review evidence and decide reassessment/migration independently; no estimate transfer, averaging or reset is authorized.",
+  "contextPolicy": "Preserve every original scope/country/region/age interval while redistributing explicit clauses to appropriate existing claims. Union standards only for an exact new identity. Generic linear clauses of broader dimensional-topic associations are retained on d8 at exact old bands; the financial scaling clause moves to existing scaling holder mt_EmR5n58jZt. Source links are component contributions, not whole-expectation certifications. No newly authored older-grade coverage.",
+  "sourceContributionMeaning": "Retained links describe source components, not fresh Full recertification. Unit-conversion contributions coexist with broader word-problem, time or dimensional requirements.",
+  "preservedAssociationRequirements": [
+    {
+      "topicId": "mt_2VpdPjvewx",
+      "scope": "jurisdiction",
+      "country": "AU",
+      "region": "ACARA v9",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 12,
+      "standards": [
+        "acara-v9:AC9M5M01",
+        "acara-v9:AC9M6M01"
+      ]
+    },
+    {
+      "topicId": "mt_2VpdPjvewx",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 12,
+      "ageRangeEnd": 13,
+      "standards": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2"
+      ]
+    },
+    {
+      "topicId": "mt_2VpdPjvewx",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "standards": [
+        "uk-nc-2013:Ma6/3.1b"
+      ]
+    },
+    {
+      "topicId": "mt_2VpdPjvewx",
+      "scope": "jurisdiction",
+      "country": "US",
+      "region": "Common Core",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 11,
+      "standards": [
+        "ccss-math:5.MD.1"
+      ]
+    },
+    {
+      "topicId": "mt_2yas4Unc8o",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "standards": [
+        "uk-nc-2013:Ma5/3.1f"
+      ]
+    },
+    {
+      "topicId": "mt_Zks8xyInSG",
+      "scope": "jurisdiction",
+      "country": "AU",
+      "region": "ACARA v9",
+      "ageRangeStart": 10,
+      "ageRangeEnd": 12,
+      "standards": [
+        "acara-v9:AC9M5M01",
+        "acara-v9:AC9M6M01"
+      ]
+    },
+    {
+      "topicId": "mt_Zks8xyInSG",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 8,
+      "ageRangeEnd": 12,
+      "standards": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G4-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1"
+      ]
+    },
+    {
+      "topicId": "mt_Zks8xyInSG",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "standards": [
+        "uk-nc-2013:Ma5/3.1a"
+      ]
+    },
+    {
+      "topicId": "mt_Zks8xyInSG",
+      "scope": "jurisdiction",
+      "country": "US",
+      "region": "Common Core",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "standards": [
+        "ccss-math:4.MD.1"
+      ]
+    },
+    {
+      "topicId": "mt_d8al9JcajP",
+      "scope": "jurisdiction",
+      "country": "AU",
+      "region": "ACARA v9",
+      "ageRangeStart": 9,
+      "ageRangeEnd": 10,
+      "standards": [
+        "acara-v9:AC9M4M03"
+      ]
+    },
+    {
+      "topicId": "mt_d8al9JcajP",
+      "scope": "jurisdiction",
+      "country": "CA",
+      "region": "Ontario",
+      "ageRangeStart": 8,
+      "ageRangeEnd": 13,
+      "standards": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G3-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G5-E2.2",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G6-E2.1",
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2"
+      ]
+    },
+    {
+      "topicId": "mt_d8al9JcajP",
+      "scope": "jurisdiction",
+      "country": "GB",
+      "ageRangeStart": 8,
+      "ageRangeEnd": 9,
+      "standards": [
+        "uk-nc-2013:Ma/KS2/Y4/M/1",
+        "uk-nc-2013:Ma/KS2/Y4/M/6"
+      ]
+    }
+  ],
+  "beforeAfter": [
+    {
+      "topicId": "mt_d8al9JcajP",
+      "before": "Generic unit conversion already included metric/time examples, a decimal input and a mixed-time assessment. Its evidence did not explicitly preserve every table, reverse-remainder and decimal diagnostic held by the duplicate profiles.",
+      "after": "One coherent unit-factor claim at task-specified precision, with retained three-decimal examples rather than a universal cap, with explicit forward/reverse decimal, mixed-unit, time-rate, equivalence-table and chained conversion evidence. Assessment must sample these requirements; historical success on a narrower profile is insufficient."
+    },
+    {
+      "topicId": "mt_tpT9brpI6D",
+      "before": "Broad standard-unit title/description mixed general time chains with squared/cubed factors; parent prompt did not test those distinctive factors.",
+      "after": "Retained ID focuses on deriving/applying squared/cubed factors and volume/capacity relationships. General chains move to the retained conversion evidence; diagnostic now asks area, volume and litre conversions. Generic linear components are represented at exact original bands on d8; the historical financial scaling component is reassigned to existing scaling holder mt_EmR5n58jZt at the exact original band."
+    },
+    {
+      "topicId": "mt_SqhXQhAEUf",
+      "before": "The evidence concerned conversion plus other operations, while the fish-tank parent prompt used one volume unit and tested rate division.",
+      "after": "Retained decision/sequencing claim; parent prompt now asks for grams for three recipe batches, requiring both conversion and multiplication."
+    },
+    {
+      "topicId": "mt_wPgpMJ0-PA",
+      "before": "Descriptor limited results to three decimal places; division examples and active guidance explicitly extended to four.",
+      "after": "Descriptor and scoped associations unchanged. Uses 45 ÷ 1000 = 0.045, removes four-decimal extensions and age-tier language from active guidance."
+    }
+  ],
+  "sourceComponents": [
+    {
+      "holders": [
+        "mt_d8al9JcajP"
+      ],
+      "keys": [
+        "uk-nc-2013:Ma/KS2/Y4/M/1",
+        "uk-nc-2013:Ma/KS2/Y4/M/6",
+        "uk-nc-2013:Ma5/3.1a",
+        "uk-nc-2013:Ma5/3.1f",
+        "uk-nc-2013:Ma6/3.1b",
+        "ccss-math:4.MD.1",
+        "ccss-math:5.MD.1"
+      ],
+      "contribution": "Unit relationships and conversion procedures, including time, decimal representation and equivalence tables. The multi-operation clause of a broader source is represented separately; this list is not a claim of whole-expectation Full coverage."
+    },
+    {
+      "holders": [
+        "mt_d8al9JcajP",
+        "mt_SqhXQhAEUf"
+      ],
+      "keys": [
+        "acara-v9:AC9M5M01",
+        "acara-v9:AC9M6M01"
+      ],
+      "contribution": "Retained generic procedure plus separately observed choice/sequencing in applied problems. Existing contributions from other topics remain untouched."
+    },
+    {
+      "holders": [
+        "mt_d8al9JcajP",
+        "mt_tpT9brpI6D"
+      ],
+      "keys": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2"
+      ],
+      "contribution": "Historical generic and dimensional conversion associations are preserved as components, without fresh Grade 7 authoring or a new coverage claim."
+    },
+    {
+      "holders": [
+        "mt_EmR5n58jZt"
+      ],
+      "keys": [
+        "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1"
+      ],
+      "contribution": "Preserved historical supplied-exchange-rate scaling component; no whole-expectation currency/rate competence is inferred. The association is removed from the refocused area/volume topic and retained on an existing accepted scaling holder at the original exact band."
+    }
+  ],
+  "edgeChanges": {
+    "before": [
+      {
+        "topicId": "mt_2VpdPjvewx",
+        "prerequisiteId": "mt_wPgpMJ0-PA",
+        "strength": "hard",
+        "reason": "Converting to 3dp requires ×÷ by 10/100/1000 skills"
+      },
+      {
+        "topicId": "mt_2VpdPjvewx",
+        "prerequisiteId": "mt_Zks8xyInSG",
+        "strength": "hard",
+        "reason": "Y6 unit conversion with decimals extends Y5 metric conversion"
+      },
+      {
+        "topicId": "mt_2yas4Unc8o",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Y4 unit conversion feeds into time-specific conversions"
+      },
+      {
+        "topicId": "mt_2yas4Unc8o",
+        "prerequisiteId": "mt_IL86kadLSS",
+        "strength": "hard",
+        "reason": "Elapsed time problems are prerequisite to time conversion problems"
+      },
+      {
+        "topicId": "mt_5HV4mbgSGH",
+        "prerequisiteId": "mt_Zks8xyInSG",
+        "strength": "hard",
+        "reason": "Unit conversion supports measurement word problems"
+      },
+      {
+        "topicId": "mt_Cqm8iy48UI",
+        "prerequisiteId": "mt_2yas4Unc8o",
+        "strength": "soft",
+        "reason": "Time conversion supports interpreting timetables"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_6oxQPNLHNv",
+        "strength": "soft",
+        "reason": "generic unit conversion (equivalent amount via the unit factor) does not require standard mass/capacity arithmetic"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_EXlmTURK_o",
+        "strength": "soft",
+        "reason": "generic conversion does not require whole calendar facts (days in each month, leap years); time examples are optional families"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_KaF0SQvaiu",
+        "strength": "hard",
+        "reason": "measuring in uniform units is the foundation of relating unit sizes"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_PZ909yPrEC",
+        "strength": "hard",
+        "reason": "converting 3 km to 3000 m is a multiplicative scale (3 groups of 1000): multiplication as equal groups"
+      },
+      {
+        "topicId": "mt_K3R0yaHVcx",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "soft",
+        "reason": "Unit conversion exercises modelling with appropriate representations"
+      },
+      {
+        "topicId": "mt_p6MhZJYYPN",
+        "prerequisiteId": "mt_Zks8xyInSG",
+        "strength": "hard",
+        "reason": "Must know metric units before approximating imperial equivalences"
+      },
+      {
+        "topicId": "mt_SqhXQhAEUf",
+        "prerequisiteId": "mt_2VpdPjvewx",
+        "strength": "hard",
+        "reason": "Multi-step conversion problems require conversion skills"
+      },
+      {
+        "topicId": "mt_tpT9brpI6D",
+        "prerequisiteId": "mt_2VpdPjvewx",
+        "strength": "hard",
+        "reason": "KS3 unit conversion extends KS2 (Y6) metric conversion with decimals to area/volume units"
+      },
+      {
+        "topicId": "mt_Zks8xyInSG",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Y4 unit conversion is prerequisite to systematic metric conversions with tables"
+      },
+      {
+        "topicId": "mt_Zks8xyInSG",
+        "prerequisiteId": "mt_LlMl2PbaZe",
+        "strength": "soft",
+        "reason": "×÷ by 10/100/1000 supports metric unit conversions"
+      }
+    ],
+    "after": [
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_wPgpMJ0-PA",
+        "strength": "soft",
+        "reason": "Decimal powers-of-ten arithmetic supports decimal metric examples, not every unit-conversion task; it is not a universal grade-based gate."
+      },
+      {
+        "topicId": "mt_5HV4mbgSGH",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Converting to compatible units supports measurement word problems."
+      },
+      {
+        "topicId": "mt_Cqm8iy48UI",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "soft",
+        "reason": "Unit conversion supports interpreting timetable durations; general table reading does not require every conversion family."
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_6oxQPNLHNv",
+        "strength": "soft",
+        "reason": "generic unit conversion (equivalent amount via the unit factor) does not require standard mass/capacity arithmetic"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_EXlmTURK_o",
+        "strength": "soft",
+        "reason": "generic conversion does not require whole calendar facts (days in each month, leap years); time examples are optional families"
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_KaF0SQvaiu",
+        "strength": "soft",
+        "reason": "Iterating length units can illustrate relative unit size, but practical length measurement is not required for time or other unit conversions."
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_PZ909yPrEC",
+        "strength": "hard",
+        "reason": "A conversion factor expresses equal groups of smaller units within one larger unit; multiplicative unit reasoning is essential."
+      },
+      {
+        "topicId": "mt_K3R0yaHVcx",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "soft",
+        "reason": "Unit conversion exercises modelling with appropriate representations"
+      },
+      {
+        "topicId": "mt_p6MhZJYYPN",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Applying a known unit relationship supports approximate metric–imperial conversion."
+      },
+      {
+        "topicId": "mt_SqhXQhAEUf",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Selecting and sequencing a conversion inside a problem draws on the unit-conversion procedure."
+      },
+      {
+        "topicId": "mt_tpT9brpI6D",
+        "prerequisiteId": "mt_d8al9JcajP",
+        "strength": "hard",
+        "reason": "Area and volume conversion extend unit-factor reasoning by deriving squared and cubed factors."
+      },
+      {
+        "topicId": "mt_d8al9JcajP",
+        "prerequisiteId": "mt_LlMl2PbaZe",
+        "strength": "soft",
+        "reason": "Multiplication and division by powers of ten support metric conversions; non-base-ten time rates use their actual relationships."
+      }
+    ],
+    "additionalChange": {
+      "topicId": "mt_SqhXQhAEUf",
+      "prerequisiteId": "mt_5HV4mbgSGH",
+      "from": "hard",
+      "to": "soft",
+      "reason": "Broader measurement-word-problem experience is useful, not a universal logical gate."
+    }
+  },
+  "counts": {
+    "retiredTopics": 3,
+    "coreContextsBefore": 12,
+    "coreStandardIncidencesBefore": 22,
+    "coreEdgesBefore": 16,
+    "coreEdgesAfter": 12,
+    "retiredResearchRecordsArchived": 3,
+    "externalResearchReferencesRedirected": 7,
+    "consolidatedContextsBeforeRedistribution": 10,
+    "consolidatedStandardIncidencesBeforeRedistribution": 20,
+    "originalCoreUniqueCodesPreserved": 16,
+    "retainedConversionContextsAfterRedistribution": 12,
+    "retainedConversionStandardIncidencesAfterRedistribution": 22,
+    "retainedConversionUniqueCodesAfterRedistribution": 18,
+    "newExactBandExistingScalingContexts": 1,
+    "financialLinksRemovedFromDimensionalClaim": 1
+  },
+  "associationRedistributions": [
+    {
+      "from": {
+        "topicId": "mt_tpT9brpI6D",
+        "scope": "jurisdiction",
+        "country": "CA",
+        "region": "Ontario",
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13,
+        "standards": [
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.1",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1"
+        ]
+      },
+      "destination": {
+        "topicId": "mt_EmR5n58jZt",
+        "scope": "jurisdiction",
+        "country": "CA",
+        "region": "Ontario",
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13,
+        "standards": [
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1"
+        ]
+      },
+      "retainedOnSource": false,
+      "clause": "Given-rate multiplicative scaling in the historical currency-conversion contribution. The existing scaling claim already holds this code at another preserved band; identifying and comparing exchange rates is not claimed by this component.",
+      "decision": "Move financial component off area/volume topic to an existing demonstrably relevant scaling holder; preserve exact source band. No new money claim or Grade7 coverage.",
+      "historicalEvidence": "reports/ontario-grade7-mathematics-mapping-2026-10-27.json already lists mt_EmR5n58jZt and mt_tpT9brpI6D for F1.1.",
+      "sourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math"
+    },
+    {
+      "from": {
+        "topicId": "mt_tpT9brpI6D",
+        "scope": "jurisdiction",
+        "country": "CA",
+        "region": "Ontario",
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13,
+        "standards": [
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.1",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2",
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-F1.1"
+        ]
+      },
+      "destination": {
+        "topicId": "mt_d8al9JcajP",
+        "scope": "jurisdiction",
+        "country": "CA",
+        "region": "Ontario",
+        "ageRangeStart": 12,
+        "ageRangeEnd": 13,
+        "standards": [
+          "the-ontario-curriculum-mathematics-2020:ON-MATH-2020-G7-E2.2"
+        ]
+      },
+      "retainedOnSource": true,
+      "clause": "Linear conversion within perimeter problems remains represented by the already-existing exact-band d8 association; area and volume unit relationships remain on tp. The volume/capacity component of E2.1 remains on tp.",
+      "decision": "Existing exact-band destination already holds the code; no additional link needed.",
+      "sourceUrl": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math"
+    },
+    {
+      "from": {
+        "topicId": "mt_tpT9brpI6D",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12,
+        "standards": [
+          "uk-nc-2013:KS3.Maths.Ratio.1"
+        ]
+      },
+      "destination": {
+        "topicId": "mt_d8al9JcajP",
+        "scope": "jurisdiction",
+        "country": "GB",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12,
+        "standards": [
+          "uk-nc-2013:KS3.Maths.Ratio.1"
+        ]
+      },
+      "retainedOnSource": true,
+      "clause": "Generic linear-unit conversion and transformation use the retained unit-factor procedure; area/volume factor reasoning remains a separate component on the refocused source topic.",
+      "decision": "component redistribution, not new coverage",
+      "sourceUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study"
+    },
+    {
+      "from": {
+        "topicId": "mt_tpT9brpI6D",
+        "scope": "jurisdiction",
+        "country": "US",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12,
+        "standards": [
+          "ccss-math:6.RP.3d"
+        ]
+      },
+      "destination": {
+        "topicId": "mt_d8al9JcajP",
+        "scope": "jurisdiction",
+        "country": "US",
+        "ageRangeStart": 11,
+        "ageRangeEnd": 12,
+        "standards": [
+          "ccss-math:6.RP.3d"
+        ]
+      },
+      "retainedOnSource": true,
+      "clause": "Generic linear-unit conversion and transformation use the retained unit-factor procedure; area/volume factor reasoning remains a separate component on the refocused source topic.",
+      "decision": "component redistribution, not new coverage",
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/6/RP/"
+    }
+  ]
+}

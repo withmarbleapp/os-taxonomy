@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-13",
+  "baseIntegration": "ce935fcf728a04dfc46342fe9f17bd16e7a07fc4",
+  "status": "Reviewed precise tropical scope and sense-assessment mechanics",
+  "changes": [
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_FZ_ixwU1p1",
+      "path": "/description",
+      "old": "Know that a rainforest is a thick, tall forest found in hot, wet places near the Equator where it rains almost every day, creating a warm, damp environment where plants and animals thrive",
+      "new": "Know that a tropical rainforest is a thick, tall forest found in hot, wet places near the Equator where it rains almost every day, creating a warm, damp environment where plants and animals thrive"
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_FZ_ixwU1p1",
+      "path": "/assess/diagnosticPrompt",
+      "old": "A desert is hot and a rainforest is hot — so why isn't a rainforest just a hot, sandy place like a desert? What makes a rainforest different, and how do you know?",
+      "new": "A desert is hot and a tropical rainforest is hot — so why isn't a tropical rainforest just a hot, sandy place like a desert? What makes a tropical rainforest different, and how do you know?"
+    },
+    {
+      "file": "data/topics.json",
+      "topicId": "mt_0u3QNroZ34",
+      "path": "/description",
+      "old": "Know that rainforests are found in a belt around the middle of the Earth — in South America (the Amazon), Central Africa (the Congo), and Southeast Asia — and that they appear on every continent except Antarctica and Europe",
+      "new": "Know that tropical rainforests are found in a belt around the middle of the Earth — in South America (the Amazon), Central Africa (the Congo), and Southeast Asia — and that they appear on every continent except Antarctica and Europe"
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_0u3QNroZ34",
+      "path": "/assess/diagnosticPrompt",
+      "old": "Could there be a big rainforest at the North Pole, or right here in Britain? Where on Earth do rainforests grow, and why there and not just anywhere?",
+      "new": "Could there be a big tropical rainforest at the North Pole, or right here in Britain? Where on Earth do tropical rainforests grow, and why there and not just anywhere?"
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/diagnosticPrompt",
+      "old": "You walk into the kitchen and you can smell cookies baking, then the oven timer beeps and you hear it. Which part of your body did you use to smell the cookies, and which to hear the beep? And when you touch the warm tray to see if it's hot — is it only your fingers that can feel, or can other parts of you feel too?",
+      "new": "You notice a familiar orange peel smell and hear a gentle bell. Which body parts help you smell and hear? Now use a room-temperature soft cloth on your own hand or forearm if comfortable: which sense and body part notices its texture? Can skin elsewhere feel too? Use a body picture and taught examples to match all five senses; no hot object, forced touch, tasting, blindfold or blocked breathing."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/poeTask",
+      "old": "Blindfold a child and pinch their nose shut, then have them taste small pieces of apple and raw potato (or onion). Ask them first to PREDICT whether they'll tell the foods apart by taste alone, and why. Most predict yes ('my tongue tastes it'); struggling to distinguish them with the nose blocked reveals that smell drives much of flavour.",
+      "new": "Before a safe gentle sound and optional room-temperature texture trial, pupil predicts which sense/body part will notice it. With access and consent, actually present the sound/cloth, then compare the prediction and identify ears/hearing and skin/touch. Use a checked familiar smell where appropriate and the supplied cold/blocked-nose everyday example to explain that smell contributes to flavour while the tongue detects basic tastes. Do not blindfold, pinch/block the nose, restrict breathing or give unidentified food; actual tasting is not necessary to identify the five sense-organ links. Record access and which actual experiences were available."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/learn/constraints/6",
+      "old": "Smell and taste working together is a real phenomenon, but a blocked-nose taste test should only be done safely, with familiar foods and no choking or allergy risk; keep it gentle and optional.",
+      "new": "Smell contributes to flavour while the tongue detects basic tastes. Teach this with a familiar supplied cold/blocked-nose example or ordinary comfortable sensory experiences; do not blindfold, pinch/block a pupil’s nose, restrict breathing or require food tasting. Optional tasting uses only familiar adult-checked food and willing participation; lack of tasting is not failure to identify sense-organ links."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/learn/reviewNotes/3",
+      "old": "The source's blindfold/nose-pinch taste test is retained only as an optional, safely-run demonstration; ensure no allergy/choking hazard before use.",
+      "new": "Historical rewrite retained the source’s blindfold/nose-pinch taste test as optional. The current bounded safety clarification retires that physical manipulation and heat-testing probe in favour of optional room-temperature self-touch, a gentle sound and a supplied flavour example; source verification flags and the body-part/sense claim remain unchanged."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/errorPatterns/0/nextMove",
+      "old": "Touch a warm (safe) mug to the cheek or forearm and ask what they feel; the whole skin is the organ of touch.",
+      "new": "If comfortable, let the pupil move a room-temperature soft cloth over their own hand and forearm and describe the texture. Explain that skin elsewhere can feel; no hot object, adult touching or forced participation is needed."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/errorPatterns/1/nextMove",
+      "old": "The nose smells and the tongue tastes; show they team up by tasting food with the nose pinched.",
+      "new": "Distinguish the nose sensing smell and the tongue sensing basic tastes; explain that both contribute to flavour using a familiar supplied example. Do not block breathing or require a tasting experiment."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/errorPatterns/2/pattern",
+      "old": "Taste is all done by the tongue — a blocked nose wouldn't change it",
+      "new": "Smell contributes nothing to food flavour — confuses basic tastes sensed mainly by the tongue with the combined flavour experience."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/errorPatterns/2/nextMove",
+      "old": "Do a nose-pinched taste test; smell contributes a lot to flavour, so blocking the nose dulls taste.",
+      "new": "Use the supplied everyday example of food seeming less flavourful during a blocked-nose cold, while the tongue can still detect basic tastes. Explain the smell contribution without pinching or blocking the pupil’s nose or claiming the tongue stops tasting."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/errorPatterns/2/revealedBy",
+      "old": "Says food would taste exactly the same with a blocked-up nose",
+      "new": "Denies any smell contribution to food flavour even after distinguishing it from basic taste; do not mark a correct claim that the tongue still detects basic tastes as an error."
+    },
+    {
+      "file": "data/teaching-research.json",
+      "topicId": "mt_83gRQ9OPkc",
+      "path": "/assess/correctAnswer",
+      "old": "The nose smells the cookies and the ears hear the beep. Feeling is done by the skin, which covers the whole body — not just the fingers — so any bit of skin (an arm, a cheek) can feel warmth or touch.",
+      "new": "The nose senses the supplied familiar orange-peel smell; the ears hear the gentle bell; skin on the hand/forearm senses the room-temperature cloth, and skin elsewhere can also feel. Correctly associate eyes with sight, ears with hearing, nose with smell, tongue mainly with basic taste, and skin with touch. Smell contributes to combined flavour without making the tongue stop detecting basic tastes. Record access and actual sensory experiences honestly; no hot object, blindfold, blocked breathing or required tasting."
+    }
+  ],
+  "scope": "Two rainforest descriptions and their diagnostic prompts explicitly name their already-tropical repertoire, rather than rejecting true temperate-rainforest examples. Ten body/sense operative fields use an optional gentle sound and room-temperature self-touch in place of heat testing or nose-blocked tasting, with a matching answer key.",
+  "wholeClaimBoundary": "Stable IDs, all evidence criteria, age/context/edge records and original source flags retained. No new level/topic or source Full promotion. The rainforest description clarifications require explicit downstream claim-revision/consumer/private-state qualification; historical assessments are not rewritten or automatically reinterpreted.",
+  "verifiedPrimaryBasis": [
+    {
+      "url": "https://www.gov.uk/government/publications/temperate-rainforest-strategy/a-plan-to-recover-englands-temperate-rainforests",
+      "scope": "Introduction: British temperate rainforests exist. No current policy/area/funding claims used."
+    },
+    {
+      "url": "https://www.nidcd.nih.gov/health/taste-disorders",
+      "scope": "How taste works: basic taste and smell contribution to flavour. No diagnosis, treatment or dietary instructions used."
+    }
+  ],
+  "preservation": "All undeclared guide/card fields, historical research claims and provenance unchanged; no learner-state or staging writes."
+}

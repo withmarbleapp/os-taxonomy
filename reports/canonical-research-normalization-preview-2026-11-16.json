@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "canonical-research-normalization-summary-v1",
+  "readyToPublish": false,
+  "digestContract": "authored-research-json-v1",
+  "canonicalSchemaSha256": "a8e05a32309e4579efe71c777d25106fecd2390fc2108139f54f6a94198b8f9f",
+  "legacyResearchSha256": "e5afd5006d1dfbfeb7ee50a2e21dc1a2f6428ae377ab33642bc8e1d5eb65eb44",
+  "candidates": 1097,
+  "structurallyEligible": 844,
+  "blockedForContentReview": 253,
+  "migrationMapSha256": "6e7fdc0f220de092b396c2227aeb47ee50091840a0af118a962abb790ccdabb6",
+  "reviewReasons": {
+    "Source omission placeholder requires reviewed original wording": 253
+  },
+  "remainingGates": [
+    "Review and persist stable item IDs and source mappings",
+    "Reconcile all private teaching/support dispositions",
+    "Resolve source placeholders with reviewed original prose",
+    "Implement and qualify exact downstream runtime readback"
+  ]
+}

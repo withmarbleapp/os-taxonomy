@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "localDependencyCommit": "46732d345a68868f5bcc3688119b304f0f34bde2",
+  "status": "Existing territory/treaty knowledge and concrete worked cases retained; Grade 6 own-community source fit is Partial pending a bound actual target-community packet.",
+  "resources": {
+    "prior-territory-programme": {
+      "report": "ontario-territory-knowledge-claim-2026-11-10.json",
+      "pointer": "/assessmentProtocol",
+      "role": "Retain the complete own-school and second-place resource protocol and all traditional/treaty/reserve distinctions, not only a name-recognition component."
+    },
+    "mcfntreaty13": {
+      "url": "https://mncfn.ca/the-toronto-purchase-treaty-no-13-1805/",
+      "role": "Previously verified Nation account places Etobicoke within Toronto Purchase Treaty 13 lands; no exclusive parcel/title inference."
+    },
+    "gct3": {
+      "url": "https://gct3.ca/treaty-3-interactive-territory-map/",
+      "role": "Previously verified Treaty 3 territorial/relationship reference; map and source attribution retained."
+    },
+    "kenora": {
+      "url": "https://www.kenora.ca/your-government/indigenous-relations/",
+      "role": "Previously reviewed City account attributes Kenora’s traditional territory to Anishinaabe of Treaty 3 and Métis people; not a one-people-exclusive-city rule."
+    }
+  },
+  "protocols": {
+    "own-community": {
+      "codes": [
+        "A3.1"
+      ],
+      "contributorIds": [
+        "mt_wGoYDxnk6_"
+      ],
+      "resourceRefs": [
+        "prior-territory-programme",
+        "mcfntreaty13",
+        "gct3",
+        "kenora"
+      ],
+      "preparation": [
+        "An adult verifies the actual named community and a public/locally verified place within it against appropriate Indigenous Nation/community, treaty and local institution references. School-region worked examples are source models, not automatic certification of a different whole community.",
+        "Prepare an attributed local packet showing the supported territory/territories, applicable treaty reference or explicit no-established-treaty finding, source/date, broad location and limits. Record multiple supported peoples/accounts or disagreement. No pupil’s home address or identity is needed.",
+        "Retain the existing two actual regional worked cases and whole school-resource operation for the shared claim. A current reserve, municipal boundary or classroom atlas alone is not sufficient."
+      ],
+      "learnerActions": [
+        "Identify the traditional territory or territories and applicable treaty reference supported for the actual own community, explain which sources support the answer and distinguish those references from a present reserve.",
+        "Explain where the relevant information was found and why a general political atlas may omit it. Explain why knowing the attributed historical/current relationships matters without requiring an acknowledgement performance or deciding a legal title dispute.",
+        "Use the second verified regional packet for transfer; explain why the first place’s names/treaty and the nearest reserve cannot simply be carried over. Keep current mapped boundaries and historic/source accounts distinct."
+      ],
+      "success": "Actual own-community territorial/treaty identification with source attribution, the complete territorial-reference distinction and second-case transfer; not generic Indigenous recognition or copied place names.",
+      "parameterizedCondition": "The authoring design requires an appropriate actual local packet. If its sources are missing/conflicting, that application remains unverified until the adult resolves the resource condition; another community’s worked example does not certify it.",
+      "requiredLocalBinding": {
+        "kind": "actual-own-community-source-packet",
+        "targetCommunity": null,
+        "sourcePacketRefs": [],
+        "workedExampleIsNotUniversalTarget": true
+      },
+      "remainingConditions": [
+        "Actual own-community source packet is unbound for general delivery. Existing worked public-school cases and the concrete preparation protocol remain useful but do not identify every pupil’s own community."
+      ]
+    }
+  },
+  "ageContextBoundary": "Add only 11–12 Ontario context. Preserve the complete existing 6–7 interval and its standards; the derived envelope’s endpoints do not certify ages in the intervening gap. No old age floor is lowered.",
+  "claimBoundary": "Reuse the unchanged entire Traditional and treaty territories in Canada claim and original guide. The community-specific task does not expand a mastery claim or transfer prior learner estimates.",
+  "historicalCheckpointStatus": "One unchanged whole-claim reuse with a prepared local-community protocol; source-fit authoring, not certification of every pupil’s community or actual attainment."
+}

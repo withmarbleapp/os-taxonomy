@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "localDependencyCommit": "8db50c0005adea4be1e1aa019bce46d9817033be",
+  "status": "Three-record current residual programme including integrated E2: formation, properties/composition, uses, fossil history and all three attributed knowledge-selection cases. Historical specific labels remain labelled historical; this is a new explicit overall source-fit design, not blanket learner mastery.",
+  "resources": {
+    "bgs": {
+      "url": "https://www.bgs.ac.uk/discovering-geology/rocks-and-minerals/",
+      "publisher": "British Geological Survey",
+      "readScope": "Complete actual main rocks/minerals text read, including formation and granite/sandstone constituents. Captions read as text; images/linked kits not viewed.",
+      "role": "Composition versus texture/formation distinction; same constituent minerals do not imply the same rock type."
+    },
+    "ugs": {
+      "url": "https://geology.utah.gov/map-pub/survey-notes/glad-you-asked/how-do-geologists-identify-minerals/",
+      "publisher": "Utah Geological Survey",
+      "readScope": "Complete actual April 2003 identification article read. Images not viewed.",
+      "role": "Multiple diagnostic physical properties and variable calcite colour. Do not adopt tasting, smelling, radioactive samples, acid or unsafe sharp-tool tests."
+    },
+    "usgs": {
+      "url": "https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral?items_per_page=6&page=0",
+      "publisher": "US Geological Survey",
+      "readScope": "Actual FAQ definition paragraphs read; not the entire linked gallery, images or related FAQs.",
+      "role": "A mineral has characteristic composition/physical properties; rocks can aggregate one or more minerals. No advanced chemistry inventory required."
+    },
+    "haida": {
+      "url": "https://www.historymuseum.ca/teachers-zone/haida-arts-and-technologies/argillite-carving/",
+      "publisher": "Canadian Museum of History",
+      "readScope": "Complete actual main Haida arts/technology teaching article read; linked objects, images and activities not inspected.",
+      "role": "Attributed museum account of Haida carvers selecting a particular workable but fragile stone, not an unrestricted quarry-access claim or all First Nations practice."
+    },
+    "metis": {
+      "url": "https://www.rupertsland.org/wp-content/uploads/2021/11/Me%CC%81tis-Culture-Traditions-Foundational-Knowledge-Theme-11.09.21-Rupertsland-Institute.pdf",
+      "publisher": "Rupertsland Institute",
+      "readScope": "Actual publication identity/introduction and complete printed15 (PDF37) Fire Bag section read from the downloaded November 9, 2021 PDF. No artifact photograph inspected.",
+      "role": "Métis-authored account of firebags holding selected fire-starting materials, including flint and steel. The physical spark mechanism is separately sourced, not falsely attributed to this paragraph."
+    },
+    "flint-mechanism": {
+      "url": "https://www.nps.gov/pisp/learn/historyculture/flint-and-steel.htm",
+      "publisher": "US National Park Service",
+      "readScope": "Complete actual short explanatory main text read, updated February 24, 2015. No image/legacy Flash movie inspected.",
+      "role": "Hard stone edge removes heated metal particles from steel; this is a separate material-mechanism account, not authority on the Métis identity or provenance of the firebag."
+    },
+    "inuit": {
+      "url": "https://www.inuitartfoundation.org/inuit-art-quarterly/iaq-online/carving-out-inuit-rights-to-quarry-stone",
+      "publisher": "Inuit Art Foundation / Inuit Art Quarterly; Elaine Anselmi",
+      "readScope": "Complete actual feature body read, online June 16, 2021, originally Winter 2019, including Lydia Qayaq interview and attributed quarry report. No artwork/photo inspected.",
+      "role": "Named Inuit carver's knowledge of harder/softer stone and material selection; specific locality, artist and report attribution retained. No blanket soapstone assumption, legal entitlement lesson or child quarry/carving task."
+    },
+    "bgs-fossils": {
+      "url": "https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/fossils/",
+      "publisher": "British Geological Survey",
+      "readScope": "Complete actual definition, evidence and four preservation sections read; image captions as text only, no images/linked specimen pages viewed.",
+      "role": "Preserved remains/traces, typical sedimentary preservation and evidence about past life/environments. No universal timescale, every fossil replaced by minerals or all metamorphism destroys fossils claim."
+    }
+  },
+  "preparedCases": {
+    "classification": {
+      "role": "composition-properties",
+      "resourceRefs": [
+        "bgs",
+        "ugs",
+        "usgs"
+      ],
+      "sourceSummary": "Mineral composition, rock constituents and physical texture/property evidence are different classification criteria. Granite and some sandstone can share quartz/feldspar/mica but arrange them differently; calcite can vary in colour.",
+      "attributionLimits": "Prepared known reference entries and adult-approved specimens; an unknown rock cannot be confidently identified from colour alone. No claim a scratch test determines exact chemical composition.",
+      "question": "Original reference tray: G is coarse interlocking granite with quartz/feldspar/mica; S is a sandstone with grains of those same named minerals cemented together; Q is a labelled quartz mineral specimen; C1 and C2 are known calcite samples with different colours; M is known mica. Adult supplies intact safe specimens and reference composition cards. Observe with lens and record texture, grain/crystal appearance, colour and lustre; compare scratch resistance only with an adult-approved safe kit. Sort/re-sort by at least two tested physical criteria, then separately group by supplied composition (single mineral/aggregate, quartz-containing and mica-containing groups can overlap).",
+      "expectedEvidence": "Record actual observations rather than invent values. Use the composition cards to distinguish constituent knowledge from appearance: granite and sandstone may share constituents but differ in grain arrangement/formation; differently coloured calcite belongs to the same known mineral identity. Explain overlaps and compare two specimens using more than colour. Mineral properties/identity constrain a classification; they do not make every similar-looking specimen the same material.",
+      "nearMiss": "Infers composition from colour, calls every crystalline rock igneous or assumes one specimen can belong to only one valid grouping.",
+      "changedCase": "Replace one colour of calcite with another known calcite and a similar-coloured quartz: retain/revise the composition grouping using references and test evidence. For an unlabelled sample say what further evidence is needed, rather than guess confidently."
+    },
+    "haida-selection": {
+      "role": "first-nations-selection",
+      "resourceRefs": [
+        "haida"
+      ],
+      "sourceSummary": "The museum account identifies a particular Haida argillite source and explains that the soft but fragile stone responds to carving tools.",
+      "attributionLimits": "Museum attribution remains explicit. Particular Haida practice, not all First Nations; no copying crest/origin-story designs, quarrying or carving protected materials.",
+      "question": "Use the selected account to explain how workability and fragility help a Haida carver select and handle this material for a detailed sculpture. Contrast with an original brief requiring a hard-wearing step stone; can one desirable property determine both choices?",
+      "expectedEvidence": "Relate learned material qualities and carver knowledge to a particular purpose; a workable stone may need careful handling. Explain why a sculpture choice does not automatically suit a load-bearing/wear purpose.",
+      "nearMiss": "Names a people or decorative object without connecting the selected rock's properties to purpose, or treats every black rock as this particular argillite.",
+      "changedCase": "An original supplied stone looks similar but crumbles under the proposed fine detail: explain why appearance alone does not establish suitability and why the expert/source distinction matters."
+    },
+    "metis-selection": {
+      "role": "metis-selection",
+      "resourceRefs": [
+        "metis",
+        "flint-mechanism"
+      ],
+      "sourceSummary": "Rupertsland describes Métis firebags carrying flint and steel for fire-starting; the separate NPS account explains hot metal particles removed using a suitable hard stone edge.",
+      "attributionLimits": "Two differently attributed sources supply cultural use and material mechanism. This does not claim Métis knowledge is reducible to the NPS explanation or that every community used identical equipment. No fire-making, gunpowder, tobacco activity or artifact handling.",
+      "question": "Read the Métis-authored purpose account alongside the separately attributed mechanism summary. Explain why carrying a suitable flint edge and steel is purpose-related material selection rather than choosing any attractive pebble. An original fictional substitute is soft and rounds off without producing the required metal particles: explain why it would not meet this particular brief.",
+      "expectedEvidence": "Connect the described material pairing/edge property to the intended fire-starting function and keep each source's contribution distinct. Explain that the sparks in this supplied flint-and-steel mechanism are heated metal particles, not the rock turning into fire.",
+      "nearMiss": "Only describes the bag's decoration, claims all rock burns or presents the US source as the Métis-authored cultural account.",
+      "changedCase": "For a changed original brief of carving fine detail rather than fire-starting, reconsider which properties matter; no cultural ranking or practical test with sparks."
+    },
+    "inuit-selection": {
+      "role": "inuit-selection",
+      "resourceRefs": [
+        "inuit"
+      ],
+      "sourceSummary": "The feature reports Lydia Qayaq's expert distinction between harder/softer stone and work with marble; its attributed quarry report values consistency, toughness, fine detail and polish.",
+      "attributionLimits": "Artist interview and cited report are distinct voices. Material names and practices vary by place/person; do not equate all Inuit carving with soapstone or infer novices can diagnose stone by colour alone.",
+      "question": "Use the named interview/report summaries to explain how a carver's knowledge of stone and intended carving informs selection. Compare detail, toughness, finish and access constraints using the actual source; distinguish expert observation from a novice colour guess.",
+      "expectedEvidence": "Explain at least two material-quality/purpose connections, including the trade-off that easiest to mark is not automatically most suitable for a durable detailed carving. Retain the artist/locality and report attributions.",
+      "nearMiss": "Labels all carving stone soapstone or treats colour alone as a universal identification test.",
+      "changedCase": "The original brief changes from a polished detailed carving to a rough low-detail model, or the available block has cracks: explain how the purpose/quality comparison changes and what expert information remains needed."
+    },
+    "formation": {
+      "role": "formation-properties",
+      "resourceRefs": [
+        "bgs"
+      ],
+      "sourceSummary": "Cooling molten rock, compaction/cementation of sediment and heat/pressure without melting form different rocks; texture and mineral constituents provide distinct evidence.",
+      "attributionLimits": "Original process/reference task, not actual melting/pressure equipment or a universally diagnostic colour key.",
+      "question": "Original process cards: cooled magma forms interlocking granite; transported grains become compacted/cemented sandstone; limestone changes to crystalline marble under heat/pressure without melting. Identify each type and describe/test supplied safe labelled specimens. Build a complete labelled cycle path through the three types, then a different shortcut using weathering/erosion or melting/cooling.",
+      "expectedEvidence": "Link formation process to type and observable properties, distinguishing crystal texture from chemical composition. Explain multiple possible paths and long geological timescales without asserting every individual stage is slow. Heat/pressure without melting differs from melting and crystallisation.",
+      "nearMiss": "Recites a fixed one-way cycle, treats every crystal as igneous or says marble must melt to form.",
+      "changedCase": "Start with metamorphic rock and weather it directly to sediment; explain why a valid path need not return through igneous first. A finer-grained igneous sample does not become sedimentary merely because its crystals are hard to see."
+    },
+    "everyday-uses": {
+      "role": "resource-uses",
+      "resourceRefs": [
+        "bgs",
+        "usgs"
+      ],
+      "sourceSummary": "Geological materials are used in construction/manufacturing and mineral properties/constituents differ.",
+      "attributionLimits": "Original matched material/use cards, not a requirement to visit a quarry or identify an unknown building stone by sight. Familiar clay/brick, sand/glass and ore/metal examples are retained from the unchanged resource card; source links support the geological-resource/manufactured distinction, not a complete industrial recipe.",
+      "question": "Original supplied cards: clay-containing material shaped/fired for a brick; quartz-rich sand as a glassmaking ingredient; iron-bearing ore processed to steel; salt as an everyday resource. Match resource to use and distinguish raw rock/mineral from a manufactured product. Explain one reason properties or processing make the use possible; compare a changed purpose rather than say every hard material is a natural rock.",
+      "expectedEvidence": "Describe everyday uses and the need to process selected resources; a brick/window is manufactured even though its ingredients came from Earth. No claim raw sand turns into glass without heat/processing or every mineral is a metal.",
+      "nearMiss": "Matches by colour only or calls a manufactured glass window a naturally formed rock.",
+      "changedCase": "An original new brief asks for a flexible cable rather than a stone block: say which reference information about a suitable processed material is missing, rather than assume the same raw rock suits every purpose."
+    },
+    "fossils": {
+      "role": "fossil-history",
+      "resourceRefs": [
+        "bgs-fossils"
+      ],
+      "sourceSummary": "Fossils preserve remains or traces and provide evidence about past life and environments; burial/mineralisation/moulds differ from an organism simply sitting unchanged in rock.",
+      "attributionLimits": "Original illustrative fossil packet, not a photographed or newly dated real find. Not all fossils retain only hard parts, replace every original material or require one universal duration.",
+      "question": "Original packet: a drawn shell impression lies within a supplied sedimentary-layer cross-section alongside other marine-shell impressions; a second panel shows a footprint trace. A modern bivalve shell outline is supplied for comparison. Explain a plausible burial/layering/preservation/exposure sequence, distinguishing the quick burial opportunity from long rock-history processes. Separate observations from inferences about organisms and ancient water conditions, using the surrounding context and the modern comparison.",
+      "expectedEvidence": "Give an ordered formation account and distinguish body/remain evidence from a trace. Explain why most remains are not preserved and why the packet supports an earlier aquatic environment without proving exact colour, behaviour or present-day sea level. Compare the ancient and modern shell features and explain similarities can inform but cannot establish that extinct and living forms are identical. More independent fossil/context evidence can strengthen the account.",
+      "nearMiss": "Treats any decorative shell shape as proof without provenance, a trace as the animal's body, or a quick clay imprint as a geological fossil formed in minutes.",
+      "changedCase": "Change the supplied context to a loose shell on a modern path: the inference about that path's ancient environment no longer follows without evidence the shell originated in the local rock. Keep the preservation explanation separate from merely guessing a place history."
+    }
+  },
+  "protocols": {
+    "E2.3": {
+      "codes": [
+        "ON-SCI-2022-G4-E2.3"
+      ],
+      "contributorIds": [
+        "mt_R6YoRXkRxS",
+        "mt_wH4t4TH0Yw"
+      ],
+      "caseRefs": [
+        "classification"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use every bound actual source and original prepared case, separating given composition/cultural accounts from observed physical test evidence.",
+        "Classify or explain the actual property-to-purpose relationship with reasons, not merely name a rock/mineral, a people or an object. Keep the three peoples and source roles distinct where bound.",
+        "Compare and regroup using stated criteria; answer the prepared near-miss and changed-case questions, including when available evidence is insufficient.",
+        "Preserve whole contributor requirements/readiness separately: safe actual rock testing/re-sorting, mineral property comparisons and resource uses remain intact. Source-specific knowledge is assessed with its available attributed resource, not inferred from a prior generic score."
+      ],
+      "remainingConditions": []
+    },
+    "E2.6": {
+      "codes": [
+        "ON-SCI-2022-G4-E2.6"
+      ],
+      "contributorIds": [
+        "mt_R6YoRXkRxS",
+        "mt_wH4t4TH0Yw"
+      ],
+      "caseRefs": [
+        "haida-selection",
+        "metis-selection",
+        "inuit-selection"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use every bound actual source and original prepared case, separating given composition/cultural accounts from observed physical test evidence.",
+        "Classify or explain the actual property-to-purpose relationship with reasons, not merely name a rock/mineral, a people or an object. Keep the three peoples and source roles distinct where bound.",
+        "Compare and regroup using stated criteria; answer the prepared near-miss and changed-case questions, including when available evidence is insufficient.",
+        "Preserve whole contributor requirements/readiness separately: safe actual rock testing/re-sorting, mineral property comparisons and resource uses remain intact. Source-specific knowledge is assessed with its available attributed resource, not inferred from a prior generic score."
+      ],
+      "remainingConditions": []
+    },
+    "E2": {
+      "codes": [
+        "ON-SCI-2022-G4-E2"
+      ],
+      "contributorIds": [
+        "mt_z7AJZapsJj",
+        "mt_R6YoRXkRxS",
+        "mt_NYA50DFcOO",
+        "mt_wH4t4TH0Yw",
+        "mt_mwirOvigWD",
+        "mt_6Z42wJaKYG"
+      ],
+      "caseRefs": [
+        "formation",
+        "classification",
+        "everyday-uses",
+        "fossils",
+        "haida-selection",
+        "metis-selection",
+        "inuit-selection"
+      ],
+      "requiredCaseFields": [
+        "question",
+        "expectedEvidence",
+        "nearMiss",
+        "changedCase"
+      ],
+      "actions": [
+        "Use ALL prepared cases: formation/cycle, physical properties and composition, everyday resources, fossil formation/history and each of the three attributed peoples' material-selection accounts.",
+        "Construct an integrated explanation connecting process, material properties, uses and historical evidence, retaining the distinction between supplied reference knowledge, actual safe observations and inference.",
+        "Explain a complete and an alternative rock-cycle route; record actual safe physical comparisons/re-sorting, then classify separately with composition references. Explain the fossil sequence and what its context can and cannot establish.",
+        "Apply the property-to-purpose operation separately to the Haida, Métis and Inuit cases with source attribution. Answer every near-miss and changed-case question; neither named child links nor a generic property score establishes the complete source account."
+      ],
+      "remainingConditions": []
+    }
+  },
+  "wholeClaimReview": {
+    "readScope": "Complete R6/wH cards and 3-card/2-edge hard closure read. Complete R6 saved guide read; wH has no guide. Existing rock-type and rock-cycle cards/guides also read during overall preparation; no changed claim/guide/age/edge. Complete NYA rock-type, z7 cycle, mwir fossil-formation and6Z fossil-evidence saved guides read during overall qualification. Their broader checks/readiness remain separate.",
+    "limits": [
+      "R6 supplies actual rock-property comparison and sorting, not exact chemical identification by colour/scratch alone.",
+      "wH supplies mineral-property/resource-use components. Its explicit Australian resource example remains a whole-claim requirement; a Canadian case is not silently substituted.",
+      "The prepared portfolio supplies actual source-specific composition and community material-selection evidence. Neither identity recognition, generic respect nor a previous property score certifies E2.6. No fixed memorised cultural case inventory is imposed."
+    ]
+  },
+  "safety": "Adult chooses known intact nonhazardous educational specimens, safe rounded equipment and school procedures. No dust generation, breaking/carving stone, tasting/licking/smelling, strong acid, unknown mineral collection, fire/sparks or handling cultural artifacts. Textual cases do not claim practical performance occurred."
+}

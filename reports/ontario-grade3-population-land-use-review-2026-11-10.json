@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "acceptedBaseCommit": "b5aa9b928d217944f82b35e964c98502972855d7",
+  "parentCheckpoint": "9db0b4e65d36e362d56b93d4900de0b305ef04e4",
+  "status": "Reviewed source-fit authoring coverage of two selected clauses; not learner attainment or a full regional demographic study.",
+  "source": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-sshg/grades/g3",
+  "codes": [
+    "B1.3",
+    "B3.6"
+  ],
+  "scope": {
+    "newTopics": 0,
+    "changedClaims": 0,
+    "proposedComponentTopics": [
+      "mt_w4cUnN_SsQ",
+      "mt_G4Fz9lw20-"
+    ],
+    "ageBand": [
+      8,
+      9
+    ]
+  },
+  "resources": [
+    {
+      "id": "nfn-member-and-housing-counts",
+      "publisher": "Nipissing First Nation",
+      "url": "https://nfn.ca/wp-content/uploads/2022/11/NFN-Annual-Report-2021-2022.pdf",
+      "page": "PDF49, printed47",
+      "date": "Membership table July2022; annual housing report2021–22",
+      "facts": [
+        "Published total-column Nation-member counts: Garden Village478, Yellek199 and Duchesnay183. These selected on-reserve member groups have different reported numbers; they are not all residents of those places.",
+        "The same report separately gives homes: Garden Village223, Yellek Village159 and Duchesnay Village123. Homes are not people."
+      ],
+      "limits": [
+        "Nation membership and census resident population are different defined populations. Do not combine them, infer household size or compare their percentages as if equivalent.",
+        "The report also lists off-reserve members; selected community counts do not represent all Nation members or all residents.",
+        "An inconsistency exists in the gender-column arithmetic of the source totals. Use the selected published community total column, not reconstructed grand totals or repaired data. Counts do not establish population density."
+      ]
+    },
+    {
+      "id": "nfn-community-location",
+      "publisher": "Municipality of West Nipissing, commissioned market study",
+      "url": "https://westnipissing.ca/wp-content/uploads/2020/11/Ec-Dev-WestNipissing2015Leakage_Analysis_and_Market_Feasibility_Study.pdf",
+      "page": "PDF17, printed16, Figure2",
+      "date": "2015",
+      "facts": [
+        "The actual labelled community-location map places Garden Village on the western part of the mapped lake-shore area and Yellek and Duchesnay on the eastern part. It supports locating the selected community-count groups."
+      ],
+      "limits": [
+        "Use this older map only for the named community locations. Do not substitute its historical area/community totals for current Nation accounts or treat its outline as traditional territory or legal adjudication.",
+        "The adjacent West Nipissing municipal census table concerns a different jurisdiction and population. It must not be attached to the Nation community symbols."
+      ]
+    },
+    {
+      "id": "nfn-trails-and-current-use",
+      "publisher": "Nipissing First Nation",
+      "urls": [
+        "https://nfn.ca/wp-content/uploads/2021/01/ANNUAL-REPORT-2019-2020-V2.pdf",
+        "https://nfn.ca/economic-development/",
+        "https://nfn.ca/public-works/"
+      ],
+      "page": "2019–20report PDF48, printed46; current web accounts",
+      "facts": [
+        "The actual Garden Village nature-trail map identifies a walking route through the wooded part of the selected local area near roads and developed places.",
+        "The Nation describes roads connecting its communities, business locations and a commercial/light-industrial business park. These accounts identify transport, recreation and work uses beyond appearance."
+      ],
+      "limits": [
+        "The small trail map is a selected-place recreation reference, not an exhaustive land-use map or readable parcel inventory.",
+        "Different report dates remain visible. A future project mentioned in an older report is not certified complete by that report. Member/affiliate access rules for a selected recreation site are not replaced by a universal public-access claim."
+      ]
+    },
+    {
+      "id": "niagara-resident-count-map",
+      "publisher": "City of Niagara Falls; published Statistics Canada census layer",
+      "url": "https://portal.niagarafalls.ca/arcgis/rest/services/Public/NF_StatsCan_CensusData/MapServer/6",
+      "date": "2021census layer, accessed2026-11-10",
+      "facts": [
+        "The actual layer is explicitly population COUNT by census dissemination area2021. Its key has five count classes:98–468,469–716,717–1209,1210–1931,1932–5313.",
+        "The rendered map shows differently sized areas with different count classes. A large south-central polygon is in the highest class, while many smaller central/eastern polygons are in lower classes. Each colour summarises a whole dissemination area."
+      ],
+      "limits": [
+        "The areas are unequal in size. A darker or larger polygon does not by itself mean higher density, an evenly spread population or more crowded homes. No synthetic density legend is supplied.",
+        "The older2016density layer has a suspect published label/unit relationship and is excluded rather than silently repaired.",
+        "Provide the actual class key, year, north reference, municipal location labels and defined population with the rendered map; the raw unlabelled export alone is not the finished teaching packet."
+      ]
+    },
+    {
+      "id": "niagara-actual-parks-trails",
+      "publisher": "City of Niagara Falls",
+      "url": "https://portal.niagarafalls.ca/arcgis/rest/services/Public/NF_ParkAndTrailLands/MapServer",
+      "date": "Current public service accessed2026-11-10",
+      "facts": [
+        "The actual service identifies existing park and trail lands and public trail lines. It includes City and other owners, such as Niagara Parks Commission, and explicitly excludes proposed park/trail lands.",
+        "The rendered map shows selected recreation patches and linked corridors, including river-side routes; these can be compared with the Garden Village selected nature-trail map."
+      ],
+      "limits": [
+        "Unshaded land is not automatically residential or unused. This is not an exhaustive land-use inventory.",
+        "Do not infer every park is City-owned or unrestricted at every time. No area fraction or relative trail length is inferred from differently scaled images."
+      ]
+    },
+    {
+      "id": "regional-orientation",
+      "publisher": "Natural Resources Canada",
+      "url": "https://clss.nrcan-rncan.gc.ca/data-donnees/sgb-maps-dag-carte/carte-index-map/CL-MAP-TC-CARTE-ON.pdf",
+      "facts": [
+        "The previously reviewed actual Ontario map locates North Bay/Nipissing and Niagara Falls for broad regional orientation. Use a globe to locate Canada and Ontario before placing the two selected regional cases."
+      ],
+      "limits": [
+        "The Canada Lands index is not a traditional-territory map. Keep its own main map/key/scale together; do not mix the inset scale."
+      ]
+    }
+  ],
+  "protocols": {
+    "population-and-use-patterns": {
+      "codes": [
+        "B1.3"
+      ],
+      "preparation": "Provide the actual source maps with readable labels and original keys; adult-added own teaching annotations must be clearly distinguished. Place the dated selected Nation-member community table beside its location map, and the2021Niagara census count key beside the actual DA map. Retain source dates, different populations and map extents. Supply actual-use accounts and the two selected trail/park maps.",
+      "actions": [
+        "Locate Canada/Ontario on a globe, then locate the Nipissing/North Bay and Niagara areas on the reviewed Ontario map. Identify the selected community labels and the north/key conventions on each detailed map.",
+        "Describe at least one supported within-region distribution pattern for EACH region. For the selected Nation-member groups, locate Garden Village versus Yellek/Duchesnay and compare their published counts. State that these are member counts by selected community, not all residents. For Niagara, locate a higher-count DA and lower-count DAs using the actual key; state that each number/class is a resident count for a differently sized area, not a density or uniform dot distribution.",
+        "Use the Nation actual-use accounts and selected trail map, and Niagara actual park/trail inventory plus previously reviewed Dufferin recreation account, to identify some land-use patterns in both regions. Relate named recreation, transport, housing and work uses only where supported by the source; do not label every unshaded place.",
+        "Construct a small labelled thematic comparison map or two-panel map with a key for the selected count groups and supported uses. Keep population symbols separate from land-use categories. Explain one relative location and why blank/unclassified land is not necessarily unused."
+      ],
+      "positive": "Describes supported population-count distributions and some actual land-use patterns in both regions, including the Nation case, using maps plus broad globe orientation and correct population/date/area units.",
+      "nearMiss": [
+        "Treats Nation membership as the complete resident census or houses as people.",
+        "Calls the highest-count Niagara DA the most densely populated from colour alone.",
+        "Infers a residential use from every unshaded polygon."
+      ],
+      "transfer": "Interpret a newly selected labelled area from the same sources or a comparable verified local packet, explaining the population definition and one key-supported pattern rather than memorising colours."
+    },
+    "compare-selected-uses": {
+      "codes": [
+        "B3.6"
+      ],
+      "actions": [
+        "Compare selected documented recreation and transport uses in the two regions: the Garden Village wooded walking route and connecting-road account versus the Niagara actual mapped park/trail corridors and selected shoreline recreation work. State one similarity and one difference using actual map/account evidence.",
+        "Bring in the reported Nation housing locations only as a selected housing example, not a count comparison against an unrelated Niagara total. Explain how housing, roads and recreation serve needs, and why wooded/open land can have a purpose.",
+        "If comparing size or number, choose a like-for-like explicitly defined source unit with appropriate matching map scales; otherwise compare supported location/purpose rather than inventing exhaustive amounts. The source requires some aspects, not every illustrative use or a regional land-use census."
+      ],
+      "positive": "Uses particular source evidence to compare some actual land-use aspects in two places, including a First Nation community, without confusing dates, membership, ownership or incomplete inventories.",
+      "nearMiss": [
+        "Says all woodland is unused.",
+        "Compares apparent feature size across mismatched map scales.",
+        "Calls the two cases identical merely because each has a park."
+      ],
+      "transfer": "Explain what extra evidence would be needed before claiming a new unlabelled place is housing or before comparing total recreation areas."
+    }
+  },
+  "wholeClaimAndSourceLimits": [
+    "Map reading and construction remain the unchanged whole map claim; the packet includes labels, a key and relative-location explanation. Its retained hard prerequisites remain separately assessed.",
+    "Land-purpose reasoning remains the unchanged whole land-use claim, including water/unbuilt/mixed-use distinctions in its existing canonical assessment. The selected local tasks are components, not automatic certification of every source example or whole-topic mastery.",
+    "Population distribution here is described using explicitly defined count groups and their locations. This is not a density study, inference of exact individuals, or a demographic equivalence between the two source populations.",
+    "No new collection/statistics claim is proposed just because the packet contains numbers; dataset acquisition, spreadsheets and a separate full graphing assessment are not imported into these two source clauses.",
+    "This design accounts for authoring requirements, not observed learner success or a current regional census. B1/B3 integrated dispositions remain separately pending completion of their remaining selected clauses."
+  ],
+  "proposedAssociations": {
+    "mt_w4cUnN_SsQ": [
+      "B1.3",
+      "B3.6"
+    ],
+    "mt_G4Fz9lw20-": [
+      "B1.3",
+      "B3.6"
+    ]
+  },
+  "reviewedCodes": [
+    "B1.3",
+    "B3.6"
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "status": "Original untested task scores and answer keys; no actual learner attainment or intervention efficacy claim",
+  "conventions": "Scientific pitch labels identify intended sounds in this answer key; a learner sees an actual staff score, not this answer key. Treble staff bottom line E4; ledger C4 below. Quarter is one beat in simple metre; compound9/8 groups three eighth notes per dotted-quarter beat.",
+  "scores": [
+    {
+      "id": "A",
+      "clef": "treble",
+      "key": "G major",
+      "time": "4/4",
+      "tempo": "Andante",
+      "dynamics": "p",
+      "articulation": "legato",
+      "bars": [
+        [
+          {
+            "pitch": "C4",
+            "quarters": 1
+          },
+          {
+            "pitch": "D4",
+            "quarters": 0.5
+          },
+          {
+            "pitch": "E4",
+            "quarters": 0.5
+          },
+          {
+            "pitch": "F#4",
+            "quarters": 1
+          },
+          {
+            "rest": true,
+            "quarters": 1
+          }
+        ],
+        [
+          {
+            "pitch": "G4",
+            "quarters": 1.5
+          },
+          {
+            "pitch": "A4",
+            "quarters": 0.5
+          },
+          {
+            "pitch": "F4",
+            "writtenAccidental": "natural",
+            "quarters": 1
+          },
+          {
+            "pitch": "E4",
+            "quarters": 1
+          }
+        ]
+      ],
+      "repeat": "Repeat the two bars once, second time f; no faster tempo implied.",
+      "diagnosticChanges": [
+        "Omit the natural on F4 in bar2: it changes to F#4 under the key signature.",
+        "Replace the final rest in bar1 with a sounding quarter note: sound/silence differs although bar duration stays four beats."
+      ],
+      "recordingTask": "After a partner sounds the original two-bar A and the learner hears/rechecks it, record the same melody on a blank treble staff with its key/metre, then compare the recovered performance. Separate reading probe uses unheard B, not a memorised A."
+    },
+    {
+      "id": "B",
+      "clef": "treble",
+      "key": "C major",
+      "time": "3/4",
+      "tempo": "Moderato",
+      "dynamics": "mf",
+      "bars": [
+        [
+          {
+            "pitch": "E4",
+            "quarters": 1
+          },
+          {
+            "pitch": "G4",
+            "quarters": 1
+          },
+          {
+            "rest": true,
+            "quarters": 1
+          }
+        ],
+        [
+          {
+            "pitch": "F4",
+            "quarters": 0.5
+          },
+          {
+            "pitch": "G4",
+            "quarters": 0.5
+          },
+          {
+            "pitch": "A4",
+            "quarters": 1
+          },
+          {
+            "pitch": "C5",
+            "quarters": 1
+          }
+        ]
+      ],
+      "performanceTask": "Perform unheard B from the score, retaining the three-beat bar and quarter rest. Produce a different recoverable three-beat second bar and exchange with a partner.",
+      "translationTask": "Translate B into a devised pitch-contour/duration representation with an explicit key and back to the staff; the contour must not erase exact pitch or silence needed for recovery."
+    },
+    {
+      "id": "C-compound",
+      "clef": "treble",
+      "key": "C major",
+      "time": "9/8",
+      "bars": [
+        [
+          {
+            "pitch": "C5",
+            "eighths": 3
+          },
+          {
+            "pitch": "D5",
+            "eighths": 1
+          },
+          {
+            "pitch": "E5",
+            "eighths": 1
+          },
+          {
+            "pitch": "F5",
+            "eighths": 1
+          },
+          {
+            "pitch": "G5",
+            "eighths": 3
+          }
+        ]
+      ],
+      "performanceTask": "Maintain three dotted-quarter groups; hear the second group subdivided into three eighths. Contrast with three ungrouped or nine equally accented events without changing the total duration."
+    },
+    {
+      "id": "D-irregular",
+      "clef": "treble",
+      "key": "C major",
+      "time": "5/4",
+      "grouping": "3+2 for this score, declared rather than asserted universal",
+      "bars": [
+        [
+          {
+            "pitch": "C5",
+            "quarters": 3
+          },
+          {
+            "pitch": "G4",
+            "quarters": 2
+          }
+        ]
+      ],
+      "performanceTask": "Realise the declared3+2 grouping and five quarter-beat bar, then compare a changed2+3 grouping with the same total."
+    },
+    {
+      "id": "E-triplet",
+      "clef": "treble",
+      "key": "C major",
+      "time": "4/4",
+      "bars": [
+        [
+          {
+            "tripletPitches": [
+              "C5",
+              "D5",
+              "E5"
+            ],
+            "quartersTotal": 1
+          },
+          {
+            "pitch": "G5",
+            "quarters": 1
+          },
+          {
+            "rest": true,
+            "quarters": 1
+          },
+          {
+            "pitch": "E5",
+            "quarters": 1
+          }
+        ]
+      ],
+      "performanceTask": "Fit three equal triplet notes within the first quarter beat; retain the other beat/rest durations. Do not stretch the bar to five beats."
+    }
+  ],
+  "youngSourceTask": {
+    "scope": "G1/G2 C1.5 components only; not staff literacy",
+    "key": {
+      "triangle": "single equal-pulse tap on a woodblock",
+      "circle": "single equal-pulse shake",
+      "emptySquare": "one silent pulse"
+    },
+    "unheardScore": [
+      "triangle",
+      "circle",
+      "circle",
+      "emptySquare",
+      "triangle",
+      "circle",
+      "circle",
+      "emptySquare"
+    ],
+    "ownEncoding": "Create and encode a different repeat-unit sound pattern containing a silent pulse, give only score+key to a partner and check the sounded recovery. Explain the repeating unit and translate its structure to object/letter form for the existing whole pattern claim.",
+    "nearMiss": "Follow teacher sounds instead of symbols; ignore empty square; give decorative marks with no stable meaning.",
+    "G3AdditionalDuty": "Read and use actual standard quarter/eighth/half/dotted-half note or rest signs in a suitable short3/4/rhythmic task AND devise a nontraditional representation. Do not call an arbitrary icon task standard notation."
+  },
+  "scoreAsset": "scores.svg"
+}

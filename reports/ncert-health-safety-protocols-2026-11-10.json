@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "designStatus": "Original untested source-fit protocols; no learner observations or private state changes",
+  "protocols": [
+    {
+      "id": "food-and-meal-care",
+      "tasks": [
+        "Use the applicable reliable local healthy-eating guide to sort foods, distinguish food groups from nutrients and plan a varied day of meals; retain all Qh whole-card nutrient/body-function checks.",
+        "Actually prepare a simple chosen snack using washing, peeling/tearing/spreading, appropriate cutting and combining; retain hand/surface hygiene, cold-food care and allergy checks.",
+        "Serve a modest initial portion with an option for more, attend to hunger/appetite and plan safe use/storage/disposal of leftovers. Food stewardship is assessed without requiring a cleaned plate or shaming a food preference.",
+        "Compare a beneficial food-choice explanation with a genuine hygiene/allergy/unsafe-food risk; do not teach that one food categorically causes disease or transfer adult quantitative dietary prescriptions to a child.",
+        "Use a checked age-appropriate local guide case with mixed dishes and qualitative group proportions. NIN reference-child diagrams are examples with declared assumptions, not individual prescriptions; no adult energy/fluid quantities, calorie counting or body-weight target is transplanted into a child task."
+      ],
+      "sourceContextualChannel": "Formal liking is retained separately from knowledge/skill and meal stewardship. Correct performance does not prove positive feeling; no forced tasting or enthusiasm.",
+      "resourceBasis": {
+        "localGuide": "ICMR-NIN Dietary Guidelines for Indians 2024",
+        "pdfPages": [
+          28,
+          54,
+          55,
+          56,
+          57,
+          66
+        ],
+        "use": "Food-group/nutrient distinction, varied meals and qualified reference-child examples; individual amounts/weights not assessed or prescribed."
+      },
+      "performanceConditions": {
+        "foodGroupsDistinctFromNutrients": true,
+        "adultQuantitiesTransferred": false,
+        "forcedTastingOrPositiveFeeling": false
+      }
+    },
+    {
+      "id": "personal-care",
+      "tasks": [
+        "Use the complete existing hygiene task design: handwashing with soap, toothbrushing, cough/sneeze hygiene and ordinary bathing/self-care routines, with appropriate privacy and materials.",
+        "Use a suitable water container, cup and serving utensil to obtain/serve a small amount without spilling; include changed container/utensil transfer rather than assume this from snack choice.",
+        "Communicate an ordinary unwell feeling to an appropriate adult and ask for practical help; do not substitute emotion-vocabulary accuracy or require diagnosis."
+      ],
+      "taskFitBoundary": "Use the serving component as a contribution while retaining the exact actual water/utensil/no-spill duty in the source task. No new per-container mastery state or inference from snack-only performance is introduced.",
+      "guideBoundary": "Do not import the legacy body-parts guide’s optional blindfold/nose-pinching/raw-food test. Canonical organ naming/mapping and actual basic hygiene remain; no such extra demonstration is required for protective-help or self-care coverage.",
+      "performanceConditions": {
+        "practicalTransfer": [
+          "water-container",
+          "cup",
+          "serving-utensil"
+        ],
+        "performance": "without-spilling",
+        "changedCase": true
+      }
+    },
+    {
+      "id": "shared-space-care",
+      "tasks": [
+        "Actually care for school books, study materials and furniture: handle them without avoidable damage, restore their assigned storage and explain/demonstrate an appropriate care adjustment. Food-workbench success alone does not prove care of a borrowed book.",
+        "Complete an appropriate teacher-supervised cleanup task across the declared classroom/play/bathroom handwashing-area cases using suitable materials and responsibilities. Retain actual clearing, cleaning and organisation, not just saying that rules matter.",
+        "Use safe selected samples to carry out the printed wet/dry sorting case. Use the locally supplied current disposal chart separately; wet/dry does not exhaust every possible waste stream or mean simply recyclable/non-recyclable.",
+        "Retain complete food-workspace hygiene, craft material/tool care and safe storage, fair group work and a separate full sorting/count/order check. Wet/dry classification alone does not establish the counting component."
+      ],
+      "currentResourceBasis": {
+        "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2219676&lang=1&reg=3",
+        "date": "2026-01-28",
+        "use": "Current resource distinguishes additional disposal streams; use a safe wet/dry sample exercise without an exhaustive two-bin assertion. No legal compliance lesson or new source catalogue ingestion."
+      },
+      "performanceConditions": {
+        "property": [
+          "books",
+          "study-materials",
+          "furniture"
+        ],
+        "actions": [
+          "care",
+          "clean",
+          "organise"
+        ],
+        "selectedWasteSorting": [
+          "wet",
+          "dry"
+        ],
+        "exhaustiveDisposalClaim": false
+      }
+    },
+    {
+      "id": "appropriate-tool-use",
+      "tasks": [
+        "Use suitable craft scissors and a child-safe soft-food knife in actual work, retaining complete Ft cutting/joining/shaping and F62 food-preparation/hygiene checks. No firmer-vegetable bridge/claw inventory is imposed merely because the source lists a small knife.",
+        "Demonstrate selecting, carrying, controlling and storing suitable tools. A taught nail-care tool case remains a source-specific practical condition where applicable; saying a safety rule is insufficient.",
+        "Independent action means the learner performs without step-by-step prompting; adult supervision/provision remains compatible with that condition and is not withdrawn to create independence."
+      ],
+      "performanceConditions": {
+        "actualTools": [
+          "craft-scissors",
+          "child-safe-soft-food-knife",
+          "taught-nail-care-tool-where-applicable"
+        ],
+        "independence": "without-step-by-step-prompting",
+        "adultSupervisionRetained": true
+      }
+    },
+    {
+      "id": "movement-safety",
+      "tasks": [
+        "Use actual local road signs/rules in a protected simulation and a suitably supervised familiar walk: choose where to walk, identify a crossing, stop/look/check and seek appropriate help.",
+        "Interpret a changed safety-symbol case and act on it; unfamiliar signs are supplied/taught rather than assumed to belong to every locality.",
+        "Retain the complete everyday-safety and sign claims; no new cycling-skill node is implied by an illustrative cycling example."
+      ],
+      "intrinsicBoundary": "The book-classification dependency is supportive rather than necessary; full sign interpretation and practical action remain required."
+    },
+    {
+      "id": "protective-help",
+      "tasks": [
+        "Use non-graphic supplied scenarios to distinguish necessary care from touching that is not OK, identify trusted adults beyond parents and rehearse a protective report.",
+        "Retain the complete body-ownership, early-warning, asking-help and no/go/tell chains, including that freezing or inability to leave is never the child’s fault and they can keep telling.",
+        "Explain a relevant rule consequence and practise a safe response to an offered gift/unknown person; do not imply known people cannot be unsafe or transfer responsibility for abuse onto a child."
+      ],
+      "performanceConditions": {
+        "safeScenarios": true,
+        "knownPeopleCanBeUnsafe": true,
+        "noBlameForFreezing": true
+      }
+    },
+    {
+      "id": "integrated-health-and-safety",
+      "tasks": [
+        "Plan a manageable health/safety routine, specify context and materials, track and reflect on its implementation design and support another person where appropriate.",
+        "Bring together meal/self-care, shared-space care, appropriate tools and protective-help tasks; goal coverage is reviewed independently rather than inferred by summing child-code labels."
+      ],
+      "authoringBoundary": "This specifies future evidence collection; it does not manufacture a week of child observations, declare a learner competent or change learner state."
+    }
+  ]
+}
