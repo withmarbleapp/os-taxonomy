@@ -108,48 +108,56 @@ test('old local settings migrate to managed inference, with no external server c
   assert.equal(closed, true);
 });
 
-test('the connection check waits for an on-device request already running', async () => {
-  const dataDir = await mkdtemp(join(tmpdir(), 'marble-device-'));
-  // An engine like the real one: one request at a time, and it says when it is free.
-  let busy = false,
-    release,
-    idle = Promise.resolve();
-  const engine = {
-    async infer() {
-      if (busy) throw Error('The local tutor is busy. Please try again.');
-      busy = true;
-      let done;
-      idle = new Promise((resolve) => (done = resolve));
-      try {
-        if (release === undefined) await new Promise((resolve) => (release = resolve));
-        return { tool: 'say', arguments: '{"text":"ready"}' };
-      } finally {
-        busy = false;
-        done();
-      }
-    },
-    idle: () => idle,
-    close() {},
+test('on-device requests take turns instead of colliding', async () => {
+  const { EventEmitter } = await import('node:events');
+  const { createInferenceEngine } = await import('../packages/inference/engine.mjs');
+  // A stand-in for the model process: it answers when told to, one job at a time.
+  const jobs = [];
+  let launches = 0,
+    overlapped = false;
+  const launch = () => {
+    launches++;
+    const child = new EventEmitter();
+    child.send = (job) => {
+      if (jobs.some((j) => !j.answered)) overlapped = true;
+      jobs.push({ ...job, child, answered: false });
+    };
+    child.kill = () => child.emit('exit');
+    return child;
   };
-  const service = await createService({
-    dataDir,
-    inferenceStore: { inspect: async () => ({ state: 'ready' }), prepare: () => ({ state: 'ready' }), close() {} },
-    deviceEngine: engine,
-  });
+  const answer = (index) => {
+    const job = jobs[index];
+    job.answered = true;
+    job.child.emit('message', { result: { tool: 'say', arguments: JSON.stringify({ text: job.system }) } });
+  };
+  const tick = () => new Promise((resolve) => setTimeout(resolve, 5));
+  const engine = createInferenceEngine({ modelPath: 'model', launch });
   try {
-    // A lesson is preparing its opening when Settings checks the connection.
-    const opening = engine.infer();
-    const check = fetch(service.origin + '/api/provider-check', {
-      method: 'POST',
-      headers: { origin: service.origin, 'x-marble-token': service.token },
-      body: JSON.stringify({ provider: 'device' }),
-    }).then((r) => r.json());
-    await new Promise((resolve) => setTimeout(resolve, 60));
-    release();
-    await opening;
-    assert.equal((await check).state, 'ready');
+    // A lesson prepares its opening, Settings checks the connection, and the
+    // lesson asks for its next move before the opening has finished.
+    const opening = engine.infer({ system: 'opening' });
+    const check = engine.infer({ system: 'check' });
+    const cancelled = new AbortController();
+    const dropped = engine.infer({ system: 'dropped', signal: cancelled.signal });
+    const next = engine.infer({ system: 'next' });
+    await tick();
+    assert.deepEqual(jobs.map((j) => j.system), ['opening']);
+    // Cancelling a request that is still waiting does not disturb the one running.
+    cancelled.abort();
+    await assert.rejects(dropped, /Cancelled/);
+    answer(0);
+    assert.equal(JSON.parse((await opening).arguments).text, 'opening');
+    await tick();
+    assert.deepEqual(jobs.map((j) => j.system), ['opening', 'check']);
+    answer(1);
+    await check;
+    await tick();
+    answer(2);
+    assert.equal(JSON.parse((await next).arguments).text, 'next');
+    assert.deepEqual(jobs.map((j) => j.system), ['opening', 'check', 'next']);
+    assert.equal(overlapped, false);
+    assert.equal(launches, 1);
   } finally {
-    await service.close();
-    await rm(dataDir, { recursive: true, force: true });
+    engine.close();
   }
 });

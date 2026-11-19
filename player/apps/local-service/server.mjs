@@ -398,10 +398,6 @@ export async function createService({
               return;
             }
             try {
-              // The on-device model answers one request at a time, and a
-              // lesson may already be preparing its opening. Wait for that
-              // rather than report a working tutor as failed.
-              if (isDevice) await deviceEngine.idle?.();
               const result = await runInference({
                 settings: {
                   ...settings,
