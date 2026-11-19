@@ -54,6 +54,7 @@ export function createInferenceEngine({ modelPath }) {
     current.on('exit', failed);
     return child;
   }
+  let idle = Promise.resolve();
   return {
     async infer({ system, tools, standingTools, messages, context, records, signal, onEvent }) {
       if (signal?.aborted) throw Error('Cancelled');
@@ -63,16 +64,22 @@ export function createInferenceEngine({ modelPath }) {
       const abort = () => stop();
       const timeout = setTimeout(stop, 120000);
       signal?.addEventListener('abort', abort, { once: true });
+      let done;
+      idle = new Promise((resolve) => (done = resolve));
       try {
         return await new Promise((resolve, reject) => {
           pending = { resolve, reject, onEvent };
           process.send({ modelPath, system, tools, standingTools, messages, context, records });
         });
       } finally {
+        done();
         clearTimeout(timeout);
         signal?.removeEventListener('abort', abort);
       }
     },
+    // Resolves when the request now running, if any, has finished. The model
+    // answers one request at a time.
+    idle: () => idle,
     close: stop,
   };
 }
