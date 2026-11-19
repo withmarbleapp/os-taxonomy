@@ -1,6 +1,6 @@
 # History: missing teaching research
 
-Adds **110 canonical v2 teaching-research records** on top of `483796b44b0d8d8508d571a67a9a9fb54bf30eb4` (the merged Geography gap fill, #167). History coverage grows from **8 / 118 to 118 / 118**; the whole collection grows from 1,282 to 1,392 records. All 1,282 existing authored records, including the 8 History records, keep their digests. Reviewing existing research remains a separate task.
+Adds **110 canonical v2 teaching-research records** on top of `b79411ffbcc8fac48082a9c0b9c12377fdbc3f68` (main after the merged Learning to Learn #168 and Life Skills #171 gap fills; originally authored on `483796b`, the Geography merge, and rebased with the baseline recaptured by `capture-scope.mjs`). History coverage grows from **8 / 118 to 118 / 118**; the whole collection grows from 1,346 to 1,456 records. All 1,346 existing authored records, including the 8 History records, keep their digests. Reviewing existing research remains a separate task.
 
 | Domain | Added |
 | --- | ---: |
@@ -166,7 +166,7 @@ All of these pass:
 [validation.json](validation.json) reports:
 
 - 110 additions;
-- 1,282 preserved authored records;
+- 1,346 preserved authored records;
 - zero History gaps;
 - no assessment passage sharing 12 consecutive tokens with an activity.
 
