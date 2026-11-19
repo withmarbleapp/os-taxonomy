@@ -8,8 +8,11 @@ export async function connectLesson(
     onNarrate = () => {},
     onIntent = () => {},
     onShortcut = () => {},
+    // Aborting abandons the load: nothing is connected and the promise rejects.
+    signal,
   } = {},
 ) {
+  if (signal?.aborted) throw Error('Lesson closed');
   const channel = new MessageChannel(),
     pending = new Map(),
     listeners = new Set();
@@ -61,23 +64,45 @@ export async function connectLesson(
       console.error('Rejected lesson message:', e.message);
     }
   };
+  // Leaving while the lesson loads must not hand this connection to whichever
+  // lesson is opened next in the same frame.
+  const abandon = () => {
+    closed = true;
+    channel.port1.close();
+    for (const p of pending.values()) {
+      clearTimeout(p.timer);
+      p.reject(Error('Lesson closed'));
+    }
+    pending.clear();
+  };
+  signal?.addEventListener('abort', abandon, { once: true });
   await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => {
-      window.removeEventListener('message', ready);
-      reject(Error('Lesson failed to load'));
-    }, 15000);
-    const ready = (e) => {
-      if (e.source !== frame.contentWindow || e.data?.type !== 'marble:ready') return;
+    const stop = () => {
       clearTimeout(timer);
       window.removeEventListener('message', ready);
+      signal?.removeEventListener('abort', abort);
+    };
+    const timer = setTimeout(() => {
+      stop();
+      reject(Error('Lesson failed to load'));
+    }, 15000);
+    const abort = () => {
+      stop();
+      reject(Error('Lesson closed'));
+    };
+    const ready = (e) => {
+      if (e.source !== frame.contentWindow || e.data?.type !== 'marble:ready') return;
+      stop();
       frame.contentWindow.postMessage({ type: 'marble:connect' }, '*', [channel.port2]);
       resolve();
     };
     window.addEventListener('message', ready);
+    signal?.addEventListener('abort', abort, { once: true });
     frame.src = pkg.url;
   });
   const sessionId = crypto.randomUUID(),
     initial = await rpc('initialize', { sessionId });
+  signal?.removeEventListener('abort', abandon);
   snapshot = initial.snapshot;
   if (snapshot.sessionId !== sessionId || snapshot.releaseId !== pkg.experience.releaseId)
     throw Error('Lesson initialized the wrong session');

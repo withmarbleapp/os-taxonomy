@@ -10,6 +10,7 @@ const $ = (id) => document.getElementById(id),
 let settings = config.settings,
   session,
   port,
+  loading,
   logs = [],
   logChain = Promise.resolve(),
   audio,
@@ -286,12 +287,27 @@ async function launch(pkg) {
   $('talk-controls').hidden = true;
   $('title').textContent = $('start-title').textContent = pkg.manifest.title;
   status('Loading lesson…');
-  port = await connectLesson($('scene'), pkg, {
-    onInstruction: (text) => ($('instruction').textContent = text),
-    onNarrate: (text) => session?.narrate(text).catch(error),
-    onIntent: (text) => send(text),
-    onShortcut: (action) => shortcut(action, 'scene'),
-  });
+  // Only the latest lesson opened may finish loading: leaving, or opening
+  // another, abandons this one.
+  loading?.abort();
+  const load = (loading = new AbortController());
+  session = null;
+  let connected;
+  try {
+    connected = await connectLesson($('scene'), pkg, {
+      onInstruction: (text) => ($('instruction').textContent = text),
+      onNarrate: (text) => session?.narrate(text).catch(error),
+      onIntent: (text) => send(text),
+      onShortcut: (action) => shortcut(action, 'scene'),
+      signal: load.signal,
+    });
+  } catch (e) {
+    if (load.signal.aborted) return;
+    throw e;
+  }
+  if (load.signal.aborted) return connected.close();
+  loading = null;
+  port = connected;
   const cover = port.presentation().cover;
   if (['illustrated', 'scene'].includes(cover?.layout)) {
     $('start-cover').dataset.layout = cover.layout;
@@ -450,6 +466,8 @@ $('home').onclick = () => {
   leaveLesson();
 };
 function leaveLesson() {
+  loading?.abort();
+  loading = null;
   showWrapUp(null);
   closeComposer(false);
   $('conversation').close();

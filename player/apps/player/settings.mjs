@@ -132,28 +132,33 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
     if (ratio === undefined) $('voice-progress').removeAttribute('value');
     else $('voice-progress').value = ratio;
     $('prepare-voice').disabled = busy;
-    $('prepare-voice').hidden = voice.ready || fixture;
+    $('prepare-voice').hidden = voiceSet() || fixture;
     $('test-voice').disabled = !voice.ready && !fixture;
   }
+  // Voice is set up once the models are loaded and the setting that turns
+  // speech on is saved. Either step can fail on its own.
+  const voiceSet = () => voice.ready && getSettings().speech === true;
   async function prepareVoice() {
-    if (voice.ready || fixture) return;
+    if (voiceSet() || fixture) return;
     if (voiceTask) return voiceTask;
     voiceTask = (async () => {
       try {
         voiceStatus('Preparing voice…', true);
-        let state = await (await request('voice-prepare', { method: 'POST', body: {} })).json();
-        while (state.state === 'downloading') {
-          voiceStatus(
-            `Downloading voice · ${Math.round(state.loaded / 1e6)} of ${Math.round(state.total / 1e6)} MB`,
-            true,
-            state.loaded / state.total,
-          );
-          await new Promise((r) => setTimeout(r, 750));
-          state = await (await request('voice')).json();
+        if (!voice.ready) {
+          let state = await (await request('voice-prepare', { method: 'POST', body: {} })).json();
+          while (state.state === 'downloading') {
+            voiceStatus(
+              `Downloading voice · ${Math.round(state.loaded / 1e6)} of ${Math.round(state.total / 1e6)} MB`,
+              true,
+              state.loaded / state.total,
+            );
+            await new Promise((r) => setTimeout(r, 750));
+            state = await (await request('voice')).json();
+          }
+          if (state.state !== 'ready')
+            throw Error(state.error ?? 'Voice setup did not finish. Please retry.');
+          await voice.load((text) => voiceStatus(text, true));
         }
-        if (state.state !== 'ready')
-          throw Error(state.error ?? 'Voice setup did not finish. Please retry.');
-        await voice.load((text) => voiceStatus(text, true));
         await save({ speech: true });
         voiceStatus('Ready · listening and speaking stay on this device');
       } catch (error) {
@@ -177,7 +182,7 @@ export function createSettings({ request, getSettings, setSettings, voice, fixtu
       if (statuses.device === 'downloading' && !deviceTask) prepareDevice();
       if (selected() && statuses[selected()] !== 'ready') check();
     });
-    if (voice.ready || fixture) voiceStatus('Ready · listening and speaking stay on this device');
+    if (voiceSet() || fixture) voiceStatus('Ready · listening and speaking stay on this device');
     else if (!voiceTask)
       request('voice')
         .then((r) => r.json())
