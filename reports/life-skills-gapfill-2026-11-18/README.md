@@ -1,6 +1,6 @@
 # Life Skills: missing teaching research
 
-Adds **46 canonical v2 teaching-research records** on top of `483796b44b0d8d8508d571a67a9a9fb54bf30eb4`, the merged Geography contribution (#167). Life Skills coverage grows from **3 / 49 to 49 / 49**; the whole collection grows from 1,282 to 1,328 records. All 1,282 existing authored records retain their digests, including the three existing Life Skills records: Economic sectors and activities, Food allergies and sensitivities, and Prescription and non-prescription medicines. Reviewing existing research remains a separate task.
+Adds **46 canonical v2 teaching-research records** on top of `b5f0d0531216afd4590c560864c9bb7786bb7b8c`, the merged Learning to Learn contribution (#168). The branch was first authored on `483796b` (#167) and rebased; scope.json was re-captured from the new main, and the 46 records' canonical digests are unchanged by the rebase. Life Skills coverage grows from **3 / 49 to 49 / 49**; the whole collection grows from 1,300 to 1,346 records. All 1,300 existing authored records retain their digests, including the three existing Life Skills records: Economic sectors and activities, Food allergies and sensitivities, and Prescription and non-prescription medicines. Reviewing existing research remains a separate task.
 
 | Domain | Added | Medium | Low |
 | --- | ---: | ---: | ---: |
@@ -89,7 +89,7 @@ All of these pass:
 - the scoped suite: one positive test and six mutation tests
 - the real two-tab Chrome regression
 
-[validate.mjs](validate.mjs) takes its expected counts from scope.json and requires zero uncovered Life Skills topics. [validation.json](validation.json) reports 46 additions, 1,282 preserved records, zero gaps and no assessment passage sharing 12 consecutive tokens with an activity.
+[validate.mjs](validate.mjs) takes its expected counts from scope.json and requires zero uncovered Life Skills topics. [validation.json](validation.json) reports 46 additions, 1,300 preserved records, zero gaps and no assessment passage sharing 12 consecutive tokens with an activity.
 
 The mutation tests cover:
 
