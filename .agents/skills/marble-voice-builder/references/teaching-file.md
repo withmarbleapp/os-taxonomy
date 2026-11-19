@@ -144,12 +144,17 @@ mind:
   marked.
 - **Put `assisted` on every evidence event** (`teaching.evidenceEvents`), true
   whenever the child's work followed a hint, a demonstration of that answer or
-  a reveal. This flag is what separates the top two marks.
+  a reveal, together with the `sceneId` of the task it answers. This flag is
+  what separates the top two marks. Committed work with no evidence event
+  behind it counts as helped, and so do the child's words about a task while
+  its committed answer was helped, so a lesson that declares no evidence
+  events can never show "on your own" for work.
 - **Make each skill reachable.** There must be something the child can say or
   commit that would earn "on your own" for it; if a skill can only ever be
   watched, it is not a skill of this lesson.
 
 The same record (skills, marks, the taxonomy topics in `curriculum`) is saved
-in the session log when the lesson finishes. It is what a later record of the
+in the session log when the lesson finishes and again when the child leaves,
+however they leave. It is what a later record of the
 child across lessons will be built from, so keep skill ids stable between
 versions of a lesson.

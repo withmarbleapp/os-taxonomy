@@ -40,7 +40,10 @@ yet by fixed rules over the recorded readings. The runtime stamps each reading
 with whether it rested on assisted work, taken from the lesson's event, so the
 tutor supplies evidence but not the mark. The tutor opens the screen with
 `review` when offering to continue or stop; `finish` and leaving mid-lesson show
-it too, and the finished outcome is written to the session log. A lesson keeps
+it too. The outcome is written to the session log when the lesson is finished
+(`completed`) and whenever a started lesson is left (`closed`), so the last
+entry with an outcome is where the child got to. Work with no evidence event
+behind it is never counted as independent. A lesson keeps
 nothing about a child between sessions; a later layer can hand it a prior and
 read these outcomes.
 Only authored observation events trigger conversation; raw edits and gestures

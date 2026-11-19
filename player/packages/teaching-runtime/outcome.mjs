@@ -18,12 +18,20 @@
 export const STATES = ['own', 'help', 'seen', 'none'];
 
 // Facts the runtime adds to a reading when it is recorded. `origin` is what
-// began the turn; `events` are the lesson's recent events, newest last.
-export function stampRecord(record, { origin, events, evidenceEvents = [] }) {
-  if (origin !== 'observation') return { ...record, basis: 'words', assisted: false };
-  // The child's committed work: the lesson says whether it had help.
-  const event = [...events].reverse().find((e) => e.source === 'learner' && evidenceEvents.includes(e.name));
-  return { ...record, basis: 'work', event: event?.name, assisted: event?.data?.assisted === true };
+// began the turn, `work` is the child's latest committed work (the last of the
+// lesson's evidence events, with the lesson's own `assisted` flag) and
+// `sceneId` is the task now on screen.
+//
+// Nothing here can be earned by default. A reading taken from committed work
+// with no evidence event behind it counts as helped, and so do the child's
+// words while the work they are talking about was itself helped.
+export function stampRecord(record, { origin, work, sceneId }) {
+  const helped = work?.data?.assisted === true;
+  if (origin !== 'observation') {
+    const sameTask = sceneId !== undefined && work?.data?.sceneId === sceneId;
+    return { ...record, basis: 'words', assisted: helped && sameTask };
+  }
+  return { ...record, basis: 'work', event: work?.name, assisted: work ? helped : true };
 }
 
 const FALLBACK = {

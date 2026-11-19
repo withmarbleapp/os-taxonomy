@@ -329,5 +329,6 @@
     }
   ],
   "observationEvents": ["response_committed"],
+  "evidenceEvents": ["response_committed"],
   "observationPrompt": "The learner checked a plan. Inspect the current attempt and exact counts. If wrong, correct the specific wrong count with review_plan and a small follow-up question, then help revise or choose useful practice. Do not ask a generic explanation or hidden-cube question while ignoring a numeric mistake. If correct, acknowledge success. The entered counts are already demonstrated. Do not ask again how many cubes are in that same bottom layer or repeat the total. If their reasoning is still uncertain, ask how they found their answer without giving it first. Use the shared tutor policy to choose the next conversational move. There is no next scripted stage. Acknowledgement alone after help does not establish understanding."
 }

@@ -536,17 +536,23 @@ test('wrap-up states come from recorded evidence, with help stamped by the runti
       },
     },
   };
-  const event = (assisted) => ({ source: 'learner', name: 'response_committed', data: { assisted } });
-  const stamp = (record, origin, events = []) =>
-    stampRecord(record, { origin, events, evidenceEvents: pkg.teaching.evidenceEvents });
+  const work = (assisted, sceneId = 's1') => ({ source: 'learner', name: 'response_committed', data: { assisted, sceneId } });
+  const stamp = (record, origin, latest, sceneId = 's1') => stampRecord(record, { origin, work: latest, sceneId });
   const learning = [
     // Own words count as the child's own.
     stamp({ focus: 'a', interpretation: 'understood', evidence: 'said both are needed' }, 'learner'),
     // Committed work the lesson marked as helped stays "with help", however it is described.
-    stamp({ focus: 'b', interpretation: 'understood', evidence: 'chose the right side entirely alone' }, 'observation', [event(true)]),
+    stamp({ focus: 'b', interpretation: 'understood', evidence: 'chose the right side entirely alone' }, 'observation', work(true)),
     // A question or a difficulty means the skill came up, not that it was shown.
     stamp({ focus: 'd', interpretation: 'needs_help', evidence: 'unsure where to stand' }, 'learner'),
   ];
+  // Independence is never the default: work with no evidence event behind it is helped,
+  assert.equal(stamp({}, 'observation').assisted, true);
+  // and so are words about a task whose committed answer was helped,
+  assert.equal(stamp({}, 'learner', work(true)).assisted, true);
+  // until the child has moved on to another task.
+  assert.equal(stamp({}, 'learner', work(true), 's2').assisted, false);
+  assert.equal(stamp({}, 'learner', work(false)).assisted, false);
   const outcome = outcomeFor(pkg, learning, { one: 'You said: “both”.', four: 'You did four.' });
   assert.deepEqual(
     outcome.skills.map((r) => r.state),
@@ -560,7 +566,7 @@ test('wrap-up states come from recorded evidence, with help stamped by the runti
   assert.deepEqual(outcome.skills[1].goals, ['g2']);
   assert.deepEqual(outcome.topics, ['topic-1']);
   // Unassisted work, later, lifts the skill to "on your own".
-  learning.push(stamp({ focus: 'c', interpretation: 'understood', evidence: 'built it' }, 'observation', [event(true), event(false)]));
+  learning.push(stamp({ focus: 'c', interpretation: 'understood', evidence: 'built it' }, 'observation', work(false)));
   assert.equal(outcomeFor(pkg, learning).skills[1].state, 'own');
 });
 
@@ -601,4 +607,46 @@ test('review shows the wrap-up while the tutor speaks; finishing logs the outcom
   assert.equal(shown.at(-1).moment, 'finished');
   assert.equal(logs.find((e) => e.type === 'completed').outcome.skills[0].state, 'own');
   session.close();
+  assert.equal(logs.at(-1).type, 'closed');
+});
+
+test('the outcome is saved when the child leaves, whether or not the closing words finish', async () => {
+  const pkg = await loadDirectory('lessons/moon-daytime');
+  const focus = pkg.teaching.selfEvaluation.skills[0].focuses[0];
+  const { createMoon } = await import('../lessons/moon-daytime/model/moon.mjs');
+  const make = (replies, speak) => {
+    const logs = [];
+    const session = new TeachingSession({
+      port: { ...createMoon({ sessionId: crypto.randomUUID() }), presentation: () => ({}), start: () => {}, close: () => {} },
+      pkg,
+      infer: async () => replies.shift(),
+      speak,
+      log: (e) => logs.push(e),
+    });
+    return { session, logs };
+  };
+  // Leaving part-way.
+  const early = make([{ ...say('Good.'), understanding: [{ focus, interpretation: 'understood', evidence: 'said it bounces' }] }]);
+  early.session.started = true;
+  await early.session.turn('It bounces off the Moon.');
+  early.session.close();
+  early.session.close();
+  assert.deepEqual(early.logs.filter((e) => e.type === 'closed').map((e) => e.outcome.skills[0].state), ['own']);
+  // Leaving while the tutor is still saying goodbye.
+  let spoken;
+  const speaking = new Promise((resolve) => (spoken = resolve));
+  const late = make([{ tool: 'finish', arguments: JSON.stringify({ text: 'Well done today.' }) }], (text, signal) => {
+    spoken();
+    return new Promise((_, reject) => signal?.addEventListener('abort', () => reject(signal.reason)));
+  });
+  late.session.started = true;
+  const turn = late.session.turn('I want to stop now.').catch(() => {});
+  await speaking;
+  late.session.close();
+  await turn;
+  assert.deepEqual(late.logs.filter((e) => e.outcome).map((e) => e.type), ['completed', 'closed']);
+  // A lesson that was opened and never begun leaves nothing.
+  const unopened = make([]);
+  unopened.session.close();
+  assert.equal(unopened.logs.some((e) => e.outcome), false);
 });

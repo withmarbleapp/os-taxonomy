@@ -146,6 +146,9 @@ export class TeachingSession {
     this.unsubscribe = port.subscribe((u) => {
       this.events.push(...u.events);
       this.events = this.events.slice(-24);
+      // The child's latest committed work, kept beyond the recent-events window.
+      this.work =
+        u.events.findLast((e) => (pkg.teaching.evidenceEvents ?? []).includes(e.name)) ?? this.work;
       log({ type: 'observation', ...u });
       if (
         this.started &&
@@ -432,8 +435,8 @@ export class TeachingSession {
           this.learning.push({
             ...stampRecord(item, {
               origin,
-              events: this.events,
-              evidenceEvents: this.pkg.teaching.evidenceEvents,
+              work: this.work,
+              sceneId: snapshot.state?.sceneId,
             }),
             revision: snapshot.revision,
           });
@@ -496,7 +499,13 @@ export class TeachingSession {
             for (const note of args.notes ?? []) this.notes[note.skill] = note.text;
             this.showReview('deciding');
           }
-          if (tool.name === 'finish') this.showReview('finished');
+          // The outcome is saved as soon as the lesson is finished, not after
+          // the closing words: the child may leave while they are spoken.
+          if (tool.name === 'finish') {
+            this.ended = true;
+            this.log({ type: 'completed', outcome: this.outcome() });
+            this.showReview('finished');
+          }
           this.onState('speaking');
           const introduction = origin === 'start' && i === 0 && tool.name === 'say';
           const afterIntroduction =
@@ -509,10 +518,7 @@ export class TeachingSession {
             this.onState('thinking');
             continue;
           }
-          if (tool.name === 'finish') {
-            this.started = false;
-            this.log({ type: 'completed', outcome: this.outcome() });
-          }
+          if (tool.name === 'finish') this.started = false;
           return;
         }
         {
@@ -566,6 +572,9 @@ export class TeachingSession {
     }
   }
   close() {
+    if (this.closed) return;
+    // However the lesson is left, the log ends with where the child got to.
+    if (this.started || this.ended) this.log({ type: 'closed', outcome: this.outcome() });
     this.closed = true;
     this.discardOpening();
     this.cancel();
