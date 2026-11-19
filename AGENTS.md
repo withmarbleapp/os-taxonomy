@@ -22,6 +22,8 @@ also apply to manual contributions. Using an agent or skill is optional for cont
   `npm run alignments:generated-check` and `npm test`. Inspect the generated diff.
   For documentation-only changes, check links and any skill metadata; do not
   regenerate unchanged data.
+- The optional MCP server in `mcp/` only reads `data/`. If a change alters a data file's
+  shape, run `npm run mcp:install` and `npm run mcp:test`.
 - Submit the actual change in an ordinary PR. Repository review accepts the
   semantics; consumers handle deployment and private-state compatibility.
 - Prefer a PR targeting the repository's default branch. For a dependent stack,
