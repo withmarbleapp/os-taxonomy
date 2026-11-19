@@ -5,7 +5,9 @@ import { join } from 'node:path';
 import { createInferenceEngine } from '../packages/inference/engine.mjs';
 import { loadDirectory } from '../packages/authoring-tools/archive.mjs';
 import { teachingTools, teachingToolsFor, tutorSystem } from '../packages/teaching-runtime/session.mjs';
-import { createCubes } from '../lessons/cube-volume/model/cubes.mjs';
+// Lesson models import the player's shared modules by their served paths.
+import '../test/support/player-paths.mjs';
+const { createCubes } = await import('../lessons/cube-volume/model/cubes.mjs');
 import { validate } from '../packages/lesson-contract/contracts.mjs';
 const engine = createInferenceEngine({
   modelPath:

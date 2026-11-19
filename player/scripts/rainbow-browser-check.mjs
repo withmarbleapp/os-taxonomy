@@ -145,7 +145,7 @@ try {
   await drag('mia', -120, 90);
   assert.notEqual((await state()).spot, spot0, 'dragging Mia walks her round');
   await shot('06-walk-partway-tablet');
-  await frame('rainbowLesson.model().learnerWalk(Math.PI)');
+  await frame('rainbowLesson.model().gesture("walk", Math.PI)');
   await both('06-walk-found');
   // Help on current work, then return
   await run('show_moment', { moment: 'inside_drop' });
@@ -194,7 +194,7 @@ try {
   await drag('beam', 0, -60);
   assert.ok((await state()).beam > beam0, 'dragging up raises the beam');
   await both('08-aim-high');
-  await frame('rainbowLesson.model().learnerBeam(0.15)');
+  await frame('rainbowLesson.model().gesture("aim", 0.15)');
   await shot('08-aim-low-tablet');
 
   // Sun height
@@ -210,14 +210,14 @@ try {
   await run('start_activity', { activity: 'make_rainbow' });
   await both('10-make-start', () => mustShow('water', 'sun-cloud', 'mia', 'gaze', 'hint'));
   await click('water');
-  await frame('rainbowLesson.model().learnerWalk(0.9)');
+  await frame('rainbowLesson.model().gesture("walk", 0.9)');
   await both('10-make-partway', () => mustShow('water', 'mia', 'gaze'));
-  await frame('rainbowLesson.model().learnerWalk(0)');
-  await frame('rainbowLesson.model().learnerTurn(Math.PI)');
+  await frame('rainbowLesson.model().gesture("walk", 0)');
+  await frame('rainbowLesson.model().gesture("turn", Math.PI)');
   assert.equal((await state()).rainbowStatus, 'rainbow');
   await both('10-make-found');
   for (let i = 0; i < 4; i++) {
-    await run('start_activity', { activity: 'predict' });
+    await run('start_check', { question: 'see_rainbow', situation: 'fresh' });
     await both('11-predict-' + i, () => mustShow('choice0', 'choice1', 'hint', 'window-cover'));
     if (i === 0) {
       await click('hint');

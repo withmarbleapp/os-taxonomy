@@ -115,18 +115,18 @@ try {
   await both('02-opening', () => mustShow('peel', 'turn'));
 
   // Teaching views
-  await run('show_teaching', { focus: 'unit' });
+  await run('show_moment', { moment: 'unit_help' });
   assert.equal(await frame('cubeLesson.view().highlightedUnit'), true);
   await both('03-unit');
-  await run('show_teaching', { focus: 'layers' });
+  await run('show_moment', { moment: 'layers' });
   await both('03-layers');
   assert.equal(await frame('cubeLesson.view().layersVisible'), true);
-  await run('show_example', { kind: 'inside' });
+  await run('show_moment', { moment: 'larger_example' });
   await both('03-inside');
   assert.equal(await frame('cubeLesson.view().highlightedInterior'), true);
 
   // Fill a layer by tapping the empty places, then stack and deepen.
-  await run('prepare_activity', { kind: 'fill' });
+  await run('start_activity', { activity: 'build_layer' });
   await both('04-fill-start', () => mustShow('place'));
   const first = await frame('cubeLesson.project(-1,0.5,-0.5)');
   await tap(first.x, first.y);
@@ -158,7 +158,7 @@ try {
   assert.equal((await state()).layersOpen, true, 'the up arrow opens the layers');
 
   // A plan: wrong, reopened with help, then right.
-  await run('prepare_fresh_box', { difficulty: 'small' });
+  await run('start_check', { question: 'layer_plan', situation: 'small' });
   await both('06-plan', () => mustShow('perLayer', 'layers', 'total', 'commit'));
   const fill = (values) =>
     frame(`for(const [id,value] of Object.entries(${JSON.stringify(values)})){const e=document.getElementById(id);e.value=value;e.dispatchEvent(new Event('input'));}document.querySelector('#plan-form').requestSubmit()`);
@@ -168,13 +168,16 @@ try {
   s = await state();
   assert.deepEqual([s.attempts.at(-1).correct, s.attempts.at(-1).assisted, s.layersOpen], [false, false, true]);
   await both('06-plan-checked');
-  await run('reopen_plan');
+  await run('resume_activity');
+  assert.equal(await frame("document.getElementById('perLayer').disabled"), false, 'the same boxes reopen');
   await fill({ perLayer: s.cubesPerLayer, layers: s.layerCount, total: s.totalCubes });
   await wait(300);
   s = await state();
   assert.deepEqual([s.attempts.at(-1).correct, s.attempts.at(-1).assisted], [true, true]);
   for (const difficulty of ['large', 'long']) {
-    await run('prepare_fresh_box', { difficulty });
+    // An unanswered plan has to be answered or left before another is asked.
+    if ((await state()).canAnswer) await run('leave_activity');
+    await run('start_check', { question: 'layer_plan', situation: difficulty });
     await both('07-plan-' + difficulty, () => mustShow('perLayer', 'layers', 'total', 'commit'));
   }
   await size('laptop');

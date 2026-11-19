@@ -18,8 +18,8 @@ function preparePlan(model) {
     releaseId: snapshot.releaseId,
     commandId: crypto.randomUUID(),
     expectedRevision: snapshot.revision,
-    name: 'prepare_fresh_box',
-    args: { difficulty: 'small' },
+    name: 'start_check',
+    args: { question: 'layer_plan', situation: 'small' },
   });
   assert.equal(result.accepted, true);
 }
@@ -164,8 +164,8 @@ for (const change of ['rotate', 'edit']) {
         spoken.push(text);
         if (spoken.length === 1) {
           const revision = model.snapshot().revision;
-          if (change === 'rotate') model.learnerRotate(0.2);
-          else model.learnerEdit('total', '12');
+          if (change === 'rotate') model.gesture('turn', 0.2);
+          else model.enter('total', '12');
           changed = model.snapshot().revision > revision;
         }
       },
@@ -181,7 +181,7 @@ test('a committed learner answer cancels the remaining tutor sentences', async (
   const pkg = await loadDirectory('lessons/cube-volume');
   const model = createCubes();
   preparePlan(model);
-  for (const field of ['perLayer', 'layers', 'total']) model.learnerEdit(field, '1');
+  for (const field of ['perLayer', 'layers', 'total']) model.enter(field, '1');
   const spoken = [];
   let committed;
   const session = new TeachingSession({
@@ -190,7 +190,7 @@ test('a committed learner answer cancels the remaining tutor sentences', async (
     infer: async () => say('Count this layer. Do not continue this question.'),
     speak: async (text) => {
       spoken.push(text);
-      committed = model.learnerCommit();
+      committed = model.check();
     },
   });
   session.started = true;
@@ -203,6 +203,9 @@ test('a committed learner answer cancels the remaining tutor sentences', async (
 test('scene change is applied before its sentence queue starts', async () => {
   const pkg = await loadDirectory('lessons/cube-volume'),
     model = createCubes();
+  // The cube lesson words its own explanations; a tutor-worded one is still
+  // supported, so give it one to exercise that path.
+  pkg.teaching.teaching = [{ id: 'layer-example', action: 'show_moment', args: { moment: 'layer_example' }, text: 'A small block with two layers.' }];
   const before = model.snapshot().revision;
   const spoken = [];
   const session = new TeachingSession({

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createRainbow, descriptor, predictionCases, questionFor, tutorView } from '../lessons/how-rainbows-form/model/rainbow.mjs';
 import { COLOURS, DEG, dropRay, rainbowAngleDeg, rainbow, bowDirections, sunDirection, facingWater, wrap } from '../lessons/how-rainbows-form/model/optics.mjs';
-import { assertUpdate } from '../lessons/how-rainbows-form/contracts.mjs';
+import { assertUpdate } from '/contract/contracts.mjs';
 
 const exec = (m, name, args = {}, patch = {}) => {
   const s = m.snapshot();
@@ -101,10 +101,10 @@ test('the opening is a demonstration, not learner work', () => {
   const { state, m } = make();
   assert.equal(state().mode, 'demonstration');
   assert.equal(state().rainbowStatus, 'rainbow');
-  assert.equal(state().attempts.length + state().finds.length, 0);
-  assert.equal(tutorView(state()).mia.sees, 'a rainbow (most of a bow)');
+  assert.equal(state().attempts.length + state().results.length, 0);
+  assert.equal(tutorView(state()).screen.mia.sees, 'a rainbow (most of a bow)');
   assert.ok(!m.snapshot().availableActions.includes('answer_check'));
-  assert.equal(m.learnerToggleSun(), false);
+  assert.equal(m.gesture('toggle_sun'), false);
 });
 
 test('every moment returns authored speech and continues the turn', () => {
@@ -116,8 +116,8 @@ test('every moment returns authored speech and continues the turn', () => {
     assert.equal(r.continueAfterSpeech, true);
     assert.equal(state().mode, 'demonstration');
     assert.equal(state().view, ['inside_drop', 'colours_spread'].includes(moment) ? 'drop' : 'outdoor');
-    assert.ok(state().demonstratedMoments.includes(moment));
-    assert.equal(state().finds.length, 0);
+    assert.ok(state().shown.includes(moment));
+    assert.equal(state().results.length, 0);
   }
   const { m, state } = make();
   exec(m, 'show_moment', { moment: 'high_sun' });
@@ -142,41 +142,41 @@ test('sun and rain: the rainbow needs both, and the first one is reported once',
   assert.ok(r.speech.includes('Tap the rain cloud'));
   assert.equal(r.continueAfterSpeech, undefined);
   assert.equal(state().rainbowStatus, 'no_drops');
-  m.learnerToggleWater();
+  m.gesture('toggle_water');
   assert.equal(state().rainbowStatus, 'rainbow');
-  assert.equal(events.filter((e) => e.name === 'rainbow_found').length, 1);
-  assert.equal(events.find((e) => e.name === 'rainbow_found').source, 'learner');
-  m.learnerToggleSun();
+  assert.equal(events.filter((e) => e.name === 'goal_reached').length, 1);
+  assert.equal(events.find((e) => e.name === 'goal_reached').source, 'learner');
+  m.gesture('toggle_sun');
   assert.equal(state().rainbowStatus, 'no_sunlight');
   assert.match(state().instruction, /No sunlight/);
-  m.learnerToggleSun();
+  m.gesture('toggle_sun');
   assert.equal(state().rainbowStatus, 'rainbow');
-  assert.equal(events.filter((e) => e.name === 'rainbow_found').length, 1, 'not reported again in the same scene');
-  assert.deepEqual(state().finds.map((f) => [f.task, f.assisted]), [['conditions', true]]);
-  assert.equal(m.learnerTurn(1), false, 'only the clouds can be changed here');
-  assert.equal(m.learnerWalk(1), false);
+  assert.equal(events.filter((e) => e.name === 'goal_reached').length, 1, 'not reported again in the same scene');
+  assert.deepEqual(state().results.map((f) => [f.item, f.assisted]), [['sun_and_rain', true]]);
+  assert.equal(m.gesture('turn', 1), false, 'only the clouds can be changed here');
+  assert.equal(m.gesture('walk', 1), false);
 });
 
 test('turning and walking isolate one decision each', () => {
   const { m, state, events } = make();
   exec(m, 'start_activity', { activity: 'turn_to_find' });
   assert.equal(state().rainbowStatus, 'looking_away');
-  assert.equal(m.learnerWalk(0), false);
-  assert.equal(m.learnerToggleSun(), false);
-  m.learnerTurn(Math.PI / 2);
+  assert.equal(m.gesture('walk', 0), false);
+  assert.equal(m.gesture('toggle_sun'), false);
+  m.gesture('turn', Math.PI / 2);
   assert.equal(state().rainbowStatus, 'looking_away');
-  m.learnerTurn(0);
+  m.gesture('turn', 0);
   assert.equal(state().rainbowStatus, 'rainbow');
-  assert.equal(events.at(-1).name, 'rainbow_found');
+  assert.equal(events.at(-1).name, 'goal_reached');
   exec(m, 'start_activity', { activity: 'walk_around' });
   assert.equal(state().rainbowStatus, 'drops_elsewhere');
-  assert.equal(m.learnerTurn(1), false);
-  m.learnerWalk(Math.PI / 2);
+  assert.equal(m.gesture('turn', 1), false);
+  m.gesture('walk', Math.PI / 2);
   assert.equal(state().rainbowStatus, 'drops_elsewhere');
   assert.ok(Math.abs(state().heading - facingWater(Math.PI / 2)) < 1e-9, 'she keeps looking at the rain');
-  m.learnerWalk(Math.PI);
+  m.gesture('walk', Math.PI);
   assert.equal(state().rainbowStatus, 'rainbow');
-  assert.equal(state().finds.length, 2);
+  assert.equal(state().results.length, 2);
 });
 
 test('make_rainbow: independent unless a hint was used', () => {
@@ -187,13 +187,13 @@ test('make_rainbow: independent unless a hint was used', () => {
     assert.equal(state().sunAz, 0);
     assert.equal(state().rainbowStatus, 'no_drops');
     assert.equal(state().rays, 'none');
-    if (hint) m.learnerHint();
-    m.learnerToggleWater();
+    if (hint) m.hint();
+    m.gesture('toggle_water');
     assert.notEqual(state().rainbowStatus, 'rainbow');
-    m.learnerWalk(0);
-    m.learnerTurn(Math.PI);
+    m.gesture('walk', 0);
+    m.gesture('turn', Math.PI);
     assert.equal(state().rainbowStatus, 'rainbow');
-    assert.deepEqual(state().finds.map((f) => [f.task, f.source, f.assisted]), [['build', 'fountain', hint]]);
+    assert.deepEqual(state().results.map((f) => [f.item, f.detail, f.assisted]), [['make_rainbow', state().rainbowAmount, hint]]);
   }
 });
 
@@ -201,24 +201,24 @@ test('sun height: the bow sinks and disappears', () => {
   const { m, state } = make();
   exec(m, 'start_activity', { activity: 'sun_height' });
   assert.equal(state().rainbowStatus, 'rainbow');
-  m.learnerSunHeight();
+  m.gesture('move_sun');
   assert.equal(state().sunHeight, 'mid');
   assert.equal(state().rainbowStatus, 'rainbow');
-  m.learnerSunHeight();
+  m.gesture('move_sun');
   assert.equal(state().rainbowStatus, 'sun_too_high');
-  assert.equal(state().finds.length, 0, 'not a finding task');
+  assert.equal(state().results.length, 0, 'not a finding task');
 });
 
 test('aim the sunbeam is unscored and clamped', () => {
   const { m, state } = make();
   exec(m, 'start_activity', { activity: 'aim_sunbeam' });
   assert.equal(state().view, 'drop');
-  m.learnerBeam(2);
+  m.gesture('aim', 2);
   assert.equal(state().beam, 0.97);
-  m.learnerBeam(0.3);
+  m.gesture('aim', 0.3);
   assert.equal(state().beam, 0.3);
   assert.equal(state().attempts.length, 0);
-  assert.ok(tutorView(state()).drop.lightLeavesDeg < 42.5);
+  assert.ok(tutorView(state()).screen.drop.lightLeavesDeg < 42.5);
 });
 
 test('checks: one question object for speech, screen and buttons; exact scoring from geometry', () => {
@@ -234,9 +234,9 @@ test('checks: one question object for speech, screen and buttons; exact scoring 
       assert.equal(q.status, 'awaiting_answer');
       assert.equal(q.response, null);
       assert.ok(state().windowCovered);
-      assert.equal(tutorView(state()).mia.sees, 'hidden from the child');
+      assert.equal(tutorView(state()).screen.mia.sees, 'hidden from the child');
       assert.equal(state().rays, 'sunlight');
-      m.learnerAnswer(pick);
+      m.answer(pick);
       const a = state().attempts.at(-1);
       assert.equal(a.answer, q.choices[pick]);
       assert.equal(a.correct, q.choices[pick] === right, `${situation} ${pick}`);
@@ -255,7 +255,7 @@ test('checks: one question object for speech, screen and buttons; exact scoring 
     assert.equal(state().view, question.startsWith('drop') ? 'drop' : 'outdoor');
     if (question === 'drop_exit') assert.equal(state().dropStage, 'to_bounce');
     if (question === 'sun_where') assert.ok(state().windowCovered);
-    m.learnerAnswer(q.choices.indexOf(right));
+    m.answer(q.choices.indexOf(right));
     assert.ok(state().attempts.at(-1).correct, question);
     assert.equal(state().dropStage, 'full');
     if (question === 'sun_where') assert.equal(state().rainbowStatus, 'rainbow');
@@ -271,7 +271,7 @@ test('a spoken answer scores like a button and keeps its words', () => {
     if (voice) {
       const r = exec(m, 'answer_check', { sceneId: state().sceneId, choice: 1, words: 'nope, the sun is in her face' });
       assert.ok(r.accepted);
-    } else m.learnerAnswer(1);
+    } else m.answer(1);
     return { a: state().attempts.at(-1), e: events.at(-1), s: state() };
   };
   const b = run(false),
@@ -296,7 +296,7 @@ test('stale commands and stale questions are rejected', () => {
   assert.equal(exec(m, 'show_moment', { moment: 'why_a_bow' }).error.code, 'unfinished_question');
   assert.equal(exec(m, 'answer_check', { sceneId: old, choice: 0, words: 'behind' }, { expectedRevision: 0 }).error.code, 'stale');
   assert.equal(state().attempts.length, 0);
-  m.learnerAnswer(0);
+  m.answer(0);
   assert.equal(exec(m, 'answer_check', { sceneId: old, choice: 1, words: 'in front' }).error.code, 'unavailable');
   exec(m, 'start_check', { question: 'drop_exit' });
   assert.equal(exec(m, 'answer_check', { sceneId: old, choice: 1, words: 'back' }).error.code, 'stale_question');
@@ -311,7 +311,7 @@ test('help pauses a question, marks it assisted, and returns to the same questio
   const help = exec(m, 'show_moment', { moment: 'sunlight_path' });
   assert.ok(help.accepted);
   assert.equal(questionFor(state()).status, 'paused_for_help');
-  assert.equal(m.learnerAnswer(1), false, 'no answering while paused');
+  assert.equal(m.answer(1), false, 'no answering while paused');
   assert.ok(state().windowCovered, 'help does not uncover the window');
   // The close-up keeps the outdoor arrangement.
   exec(m, 'show_moment', { moment: 'inside_drop' });
@@ -322,21 +322,21 @@ test('help pauses a question, marks it assisted, and returns to the same questio
   assert.equal(state().sceneId, id);
   assert.deepEqual({ spot: state().spot, heading: state().heading }, before);
   assert.equal(questionFor(state()).status, 'awaiting_answer');
-  m.learnerAnswer(1);
+  m.answer(1);
   assert.deepEqual([state().attempts[0].correct, state().attempts[0].assisted], [true, true]);
 });
 
 test('a corrected answer becomes current; the first attempt stays as history', () => {
   const { m, state } = make();
   exec(m, 'start_check', { question: 'see_rainbow', situation: 'facing_sun' });
-  m.learnerAnswer(0);
+  m.answer(0);
   const first = structuredClone(state().attempts[0]);
   assert.equal(first.correct, false);
   assert.ok(m.snapshot().availableActions.includes('resume_activity'));
   exec(m, 'resume_activity');
   assert.ok(state().windowCovered);
   assert.equal(questionFor(state()).status, 'awaiting_answer');
-  m.learnerAnswer(1);
+  m.answer(1);
   assert.deepEqual(state().attempts[0], first);
   assert.equal(state().attempts.length, 2);
   assert.deepEqual([state().attempts[1].correct, state().attempts[1].assisted], [true, true]);
@@ -355,10 +355,10 @@ test('unfinished work can be left without inventing an answer', () => {
 test('help during an investigation returns to the same arrangement with its history', () => {
   const { m, state } = make();
   exec(m, 'start_activity', { activity: 'walk_around' });
-  m.learnerWalk(1.2);
+  m.gesture('walk', 1.2);
   const spot = state().spot;
   exec(m, 'show_moment', { moment: 'colours_spread' });
-  assert.equal(m.learnerWalk(2), false);
+  assert.equal(m.gesture('walk', 2), false);
   exec(m, 'resume_activity');
   assert.equal(state().spot, spot);
   assert.equal(state().view, 'outdoor');
@@ -372,30 +372,30 @@ test('predictions are fresh, unsupported and never repeat', () => {
   const seenKeys = new Set();
   let yes = 0;
   for (let k = 0; k < 12; k++) {
-    const r = exec(m, 'start_activity', { activity: 'predict' });
+    const r = exec(m, 'start_check', { question: 'see_rainbow', situation: 'fresh' });
     assert.ok(r.accepted);
     assert.ok(r.speech.endsWith('Can Mia see a rainbow from here?'));
     const s = state();
     assert.ok(s.windowCovered);
     assert.equal(s.rays, 'none');
     assert.equal(s.assisted, false);
-    const key = [s.source, s.sunAz, s.situation].join();
+    const key = [s.source, s.sunAz, s.spot, s.heading, s.sunShining, s.raining].join();
     assert.ok(!seenKeys.has(key));
     seenKeys.add(key);
     const truth = rainbow(s).seen;
     yes += truth;
-    m.learnerAnswer(truth ? 0 : 1);
+    m.answer(truth ? 0 : 1);
     assert.ok(state().attempts.at(-1).correct);
-    assert.equal(state().attempts.at(-1).task, 'predict');
+    assert.deepEqual([state().attempts.at(-1).item, state().attempts.at(-1).situation], ['see_rainbow', 'fresh']);
   }
   assert.ok(yes >= 3 && yes <= 9);
   // A hint is recorded with the attempt it affected.
-  exec(m, 'start_activity', { activity: 'predict' });
-  m.learnerHint();
+  exec(m, 'start_check', { question: 'see_rainbow', situation: 'fresh' });
+  m.hint();
   assert.equal(state().instruction, 'Can Mia see a rainbow from here?', 'a hint leaves the question on screen');
   assert.equal(state().rays, 'full');
   assert.ok(state().windowCovered);
-  m.learnerAnswer(0);
+  m.answer(0);
   assert.equal(state().attempts.at(-1).assisted, true);
 });
 
@@ -408,5 +408,40 @@ test('repeated command ids are answered once', () => {
     b = m.execute(c);
   assert.deepEqual(a, b);
   assert.equal(m.snapshot().revision, rev);
-  assert.equal(state().task, 'conditions');
+  assert.deepEqual([state().kind, state().item], ['do', 'sun_and_rain']);
+});
+
+test('the wrap-up marks helped work as helped and unaided work as the child’s own', async () => {
+  const { loadDirectory } = await import('../packages/authoring-tools/archive.mjs');
+  const { outcomeFor, stampRecord } = await import('../packages/teaching-runtime/outcome.mjs');
+  const pkg = await loadDirectory('lessons/how-rainbows-form');
+  assert.deepEqual(pkg.teaching.evidenceEvents, ['response_committed', 'goal_reached']);
+  for (const name of pkg.teaching.evidenceEvents)
+    for (const field of ['assisted', 'sceneId']) assert.ok(descriptor.events[name].properties[field], `${name} carries ${field}`);
+  const { m, state, events } = make();
+  const stamp = (focus) =>
+    stampRecord(
+      { focus, interpretation: 'understood', evidence: 'committed work' },
+      { origin: 'observation', work: events.findLast((e) => pkg.teaching.evidenceEvents.includes(e.name)), sceneId: state().sceneId },
+    );
+  const row = (learning) => outcomeFor(pkg, learning).skills.find((s) => s.skill === 'find-a-rainbow').state;
+  // A question answered after help, then a fresh one answered unaided.
+  exec(m, 'start_check', { question: 'see_rainbow', situation: 'fresh' });
+  m.hint();
+  m.answer(rainbow(state()).seen ? 0 : 1);
+  const helped = stamp('position');
+  assert.equal(row([helped]), 'help');
+  exec(m, 'start_check', { question: 'see_rainbow', situation: 'fresh' });
+  m.answer(rainbow(state()).seen ? 0 : 1);
+  assert.equal(row([helped, stamp('position')]), 'own');
+  // An investigation's rainbow is never the child's own; building one unaided is.
+  exec(m, 'start_activity', { activity: 'sun_and_rain' });
+  m.gesture('toggle_water');
+  assert.equal(row([stamp('position')]), 'help');
+  exec(m, 'start_activity', { activity: 'make_rainbow' });
+  m.gesture('toggle_water');
+  m.gesture('walk', 0);
+  m.gesture('turn', Math.PI);
+  assert.equal(events.at(-1).name, 'goal_reached');
+  assert.equal(row([stamp('position')]), 'own');
 });

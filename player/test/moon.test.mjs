@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createMoon, descriptor } from '../lessons/moon-daytime/model/moon.mjs';
 import { facts, makeTasks, scorePath } from '../lessons/moon-daytime/model/geometry.mjs';
-import { assertUpdate } from '../lessons/moon-daytime/contracts.mjs';
+import { assertUpdate } from '/contract/contracts.mjs';
 const exec = (m, name, args = {}) => {
   const s = m.snapshot();
   return m.execute({
@@ -39,7 +39,7 @@ test('demonstration provides a view, not a learner task or success', () => {
   assert.equal(s.mode, 'demonstration');
   assert.equal(s.view, 'sky');
   assert.equal(s.canTurn, false);
-  assert.equal(m.learnerPredict(true), false);
+  assert.equal(m.answer(0), false);
   exec(m, 'show_moment', { moment: 'light_journey' });
   s = m.snapshot().state;
   assert.equal(s.view, 'space');
@@ -58,27 +58,31 @@ test('child activity supplies meaningful control and preserves geometry on view 
   let s = m.snapshot().state;
   assert.equal(s.mode, 'activity');
   assert.ok(s.canTurn);
-  assert.equal(s.canMoveMoon, false);
   assert.equal(s.moonAboveHorizon, false);
   const theta = s.theta;
-  m.learnerTurn(0.2);
+  m.gesture('turn', 0.2);
   s = m.snapshot().state;
   assert.notEqual(s.theta, theta);
   const coords = [s.theta, s.phi];
-  m.learnerView('sky');
+  m.control('set_view', { view: 'sky' });
   assert.deepEqual([m.snapshot().state.theta, m.snapshot().state.phi], coords);
   assert.equal(m.snapshot().state.attempts.length, 0);
-  m.learnerView('space');
+  m.control('set_view', { view: 'space' });
   assert.deepEqual([m.snapshot().state.theta, m.snapshot().state.phi], coords);
-  exec(m, 'start_activity', { activity: 'predict_sky' });
+  // Reaching the target is recorded, and exploration is never evidence.
+  while (!m.snapshot().state.reached) m.gesture('turn', 0.3);
+  assert.deepEqual(
+    m.snapshot().state.results.map((r) => [r.item, r.assisted]),
+    [['turn_earth', true]],
+  );
+  exec(m, 'start_check', { question: 'moon_visible', situation: 'fresh' });
   const before = m.snapshot();
-  assert.equal(m.learnerTurn(0.2), false);
-  assert.equal(m.learnerMoon(0.2), false);
+  assert.equal(m.gesture('turn', 0.2), false);
   assert.deepEqual(m.snapshot(), before);
 });
 test('support pauses current prediction then resumes same task with help provenance', () => {
   const m = createMoon();
-  exec(m, 'start_activity', { activity: 'predict_sky' });
+  exec(m, 'start_check', { question: 'moon_visible', situation: 'fresh' });
   const initial = m.snapshot().state;
   assert.equal(exec(m, 'show_moment', { moment: 'daytime_without_moon' }).accepted, false);
   exec(m, 'show_moment', { moment: 'horizon' });
@@ -86,17 +90,17 @@ test('support pauses current prediction then resumes same task with help provena
   assert.equal(s.sceneId, initial.sceneId);
   assert.equal(s.mode, 'demonstration');
   assert.equal(s.canAnswer, false);
-  assert.equal(m.learnerPredict(true), false);
+  assert.equal(m.answer(0), false);
   exec(m, 'resume_activity');
   s = m.snapshot().state;
   assert.equal(s.sceneId, initial.sceneId);
   assert.equal(s.canAnswer, true);
   assert.equal(s.assisted, true);
-  m.learnerPredict(!s.moonAboveHorizon);
+  m.answer(s.moonAboveHorizon ? 1 : 0);
   const wrong = m.snapshot().state.attempts[0];
   assert.equal(wrong.correct, false);
   exec(m, 'resume_activity');
-  m.learnerPredict(m.snapshot().state.moonAboveHorizon);
+  m.answer(m.snapshot().state.moonAboveHorizon ? 0 : 1);
   assert.deepEqual(m.snapshot().state.attempts[0], wrong);
   assert.equal(m.snapshot().state.attempts.at(-1).correct, true);
   assert.equal(m.snapshot().state.attempts.at(-1).assisted, true);
@@ -104,21 +108,28 @@ test('support pauses current prediction then resumes same task with help provena
 test('light demonstration transfers no credit and later reconstruction remains assisted', () => {
   const m = createMoon();
   exec(m, 'show_moment', { moment: 'light_journey' });
-  exec(m, 'start_activity', { activity: 'build_light_path' });
+  exec(m, 'start_check', { question: 'light_path' });
   assert.equal(m.snapshot().state.rays, false);
   assert.equal(m.snapshot().state.assisted, true);
-  m.learnerTap('sun');
-  assert.equal(m.learnerCheckPath(), false);
-  m.learnerTap('moon');
+  m.tap('sun');
+  assert.equal(m.check(), false);
+  m.tap('moon');
   exec(m, 'show_moment', { moment: 'light_journey' });
-  assert.deepEqual(m.snapshot().state.path, ['sun', 'moon']);
-  assert.equal(m.learnerTap('observer'), false);
+  assert.deepEqual(m.snapshot().state.draft, ['sun', 'moon']);
+  assert.equal(m.tap('observer'), false);
   exec(m, 'resume_activity');
-  assert.deepEqual(m.snapshot().state.path, ['sun', 'moon']);
-  m.learnerTap('observer');
-  m.learnerCheckPath();
+  assert.deepEqual(m.snapshot().state.draft, ['sun', 'moon']);
+  m.tap('observer');
+  m.check();
   assert.equal(m.snapshot().state.attempts.at(-1).correct, true);
   assert.equal(m.snapshot().state.attempts.at(-1).assisted, true);
+  // With no route drawn beforehand, building it is the child's own work.
+  const own = createMoon();
+  exec(own, 'show_moment', { moment: 'daytime_moon' });
+  exec(own, 'start_check', { question: 'light_path' });
+  for (const id of ['sun', 'moon', 'observer']) own.tap(id);
+  own.check();
+  assert.deepEqual([own.snapshot().state.attempts[0].correct, own.snapshot().state.attempts[0].assisted], [true, false]);
 });
 test('commands remain stale-safe and idempotent after new moment staging', () => {
   const m = createMoon(),
@@ -156,21 +167,21 @@ test('small supported checks score the intended relationship and preserve assist
     for (const question of ['day_night', 'moon_visible']) {
       assert.ok(exec(m, 'start_check', {question, situation}).accepted);
       const s = m.snapshot().state;
-      const answer = question === 'day_night' ? s.day : s.moonAboveHorizon;
+      const answer = (question === 'day_night' ? s.day : s.moonAboveHorizon) ? 0 : 1;
       assert.ok(s.rays && s.horizon && s.assisted && s.canAnswer);
-      assert.equal(m.learnerTurn(0.2), false);
-      m.learnerPredict(!answer);
+      assert.equal(m.gesture('turn', 0.2), false);
+      m.answer(1 - answer);
       const wrong = m.snapshot().state.attempts.at(-1);
       assert.equal(wrong.correct, false);
       exec(m, 'show_moment', {moment:'light_journey'});
       exec(m, 'resume_activity');
-      m.learnerPredict(answer);
+      m.answer(answer);
       assert.equal(m.snapshot().state.attempts.at(-1).correct, true);
       assert.equal(m.snapshot().state.attempts.at(-1).assisted, true);
       assert.deepEqual(m.snapshot().state.attempts.at(-2), wrong);
     }
   }
-  exec(m, 'start_activity', {activity:'predict_sky'});
+  exec(m, 'start_check', {question:'moon_visible', situation:'fresh'});
   assert.equal(m.snapshot().state.rays, false);
   assert.equal(m.snapshot().state.assisted, false);
 });
@@ -185,9 +196,9 @@ test('one question owns spoken text, screen text, choices and both answer modali
     assert.equal(v.speech, v.snapshot.state.instruction);
     assert.deepEqual(q.choices, question === 'day_night' ? ['Day','Night'] : ['Yes','No']);
     assert.equal(exec(voice, 'start_check', {question, situation:'night'}).accepted, false);
-    assert.equal(exec(voice, 'answer_check', {sceneId:'old', answer:true, words:'yes'}).accepted, false);
-    button.learnerPredict(true);
-    const result = exec(voice, 'answer_check', {sceneId:q.id, answer:true, words:question === 'day_night' ? 'It is day' : 'Yes'});
+    assert.equal(exec(voice, 'answer_check', {sceneId:'old', choice:0, words:'yes'}).accepted, false);
+    button.answer(0);
+    const result = exec(voice, 'answer_check', {sceneId:q.id, choice:0, words:question === 'day_night' ? 'It is day' : 'Yes'});
     assert.ok(result.accepted);
     const va = voice.snapshot().state.attempts.at(-1), ba = button.snapshot().state.attempts.at(-1);
     assert.equal(va.correct, ba.correct);
@@ -214,9 +225,9 @@ test('screen diagram and explorer visibility remain distinct at night', async ()
   const m = createMoon();
   exec(m,'show_moment',{moment:'night_light'});
   let v = tutorView(m.snapshot().state);
-  assert.equal(v.explorer.time,'nighttime');
-  assert.ok(v.screen.visibleObjects.some(x=>x.startsWith('Sun')));
+  assert.equal(v.screen.explorer.time,'nighttime');
+  assert.ok(v.screen.view.visibleObjects.some(x=>x.startsWith('Sun')));
   exec(m,'set_view',{view:'sky'});
   v = tutorView(m.snapshot().state);
-  assert.deepEqual(v.screen.aboveHorizon,['Moon']);
+  assert.deepEqual(v.screen.view.aboveHorizon,['Moon']);
 });

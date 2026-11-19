@@ -2,194 +2,137 @@
   "protocolVersion": 1,
   "kind": "moon-daytime",
   "apiVersion": 1,
-  "releaseId": "moon-daytime-v7",
-  "description": "Illustrative Sun–Earth–Moon geometry with a linked observer sky. day means Sun above the local horizon; moonAboveHorizon means Moon above it. Distances and body sizes are not to scale. This is not a real-date sky forecast: clouds, glare/contrast, eclipses, refraction and orbit tilt are omitted. Predictions use daylight quarter-like arrangements well away from the horizon and Sun. Above horizon is NOT a guarantee of real-world visibility. Turning Earth changes the observer; looking around only changes the camera. Ground view hides bodies below the horizon. Rays explain reflected sunlight, not eyes emitting light. Exact responses and assistance are separate from interpreted explanations. No completion threshold.",
+  "releaseId": "moon-daytime-v8",
+  "description": "Illustrative Sun–Earth–Moon geometry with a linked observer sky. day means Sun above the local horizon; moonAboveHorizon means Moon above it. Distances and body sizes are not to scale. This is not a real-date sky forecast: clouds, glare/contrast, eclipses, refraction and orbit tilt are omitted. Fresh predictions use daylight quarter-like arrangements well away from the horizon and Sun. Above horizon is NOT a guarantee of real-world visibility. Turning Earth changes the observer; looking around only changes the camera. Ground view hides bodies below the horizon. Rays explain reflected sunlight, not eyes emitting light. No completion threshold.",
   "stateSchema": {
     "type": "object",
     "properties": {
-      "task": {
-        "enum": [
-          "demonstration",
-          "explore",
-          "prediction",
-          "daylight",
-          "path"
-        ]
-      },
-      "mode": {
-        "enum": [
-          "demonstration",
-          "activity"
-        ]
-      },
-      "moment": {
-        "type": "string"
-      },
-      "demonstratedMoments": {
+      "kind": { "enum": ["show", "do", "ask"] },
+      "item": { "type": "string" },
+      "mode": { "enum": ["demonstration", "activity"] },
+      "moment": { "type": "string" },
+      "shown": { "type": "array", "items": { "type": "string" }, "maxItems": 64 },
+      "sceneId": { "type": "string" },
+      "situation": { "type": "string" },
+      "revealed": { "type": "boolean" },
+      "assisted": { "type": "boolean" },
+      "hinted": { "type": "boolean" },
+      "reached": { "type": "boolean" },
+      "draft": { "type": "array", "items": { "type": "string" }, "maxItems": 12 },
+      "entries": {
         "type": "array",
         "items": {
-          "type": "string"
+          "type": "object",
+          "properties": { "field": { "type": "string" }, "value": { "type": "string" } },
+          "required": ["field", "value"],
+          "additionalProperties": false
         },
-        "maxItems": 7
-      },
-      "sceneId": {
-        "type": "string"
-      },
-      "theta": {
-        "type": "number"
-      },
-      "phi": {
-        "type": "number"
-      },
-      "originTheta": {
-        "type": "number"
-      },
-      "view": {
-        "enum": [
-          "space",
-          "sky"
-        ]
-      },
-      "horizon": {
-        "type": "boolean"
-      },
-      "rays": {
-        "type": "boolean"
-      },
-      "assisted": {
-        "type": "boolean"
-      },
-      "revealed": {
-        "type": "boolean"
-      },
-      "path": {
-        "type": "array",
-        "items": {
-          "enum": [
-            "sun",
-            "moon",
-            "observer"
-          ]
-        },
-        "maxItems": 3
+        "maxItems": 12
       },
       "attempts": {
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
-            "id": {
-              "type": "string"
-            },
-            "sceneId": {
-              "type": "string"
-            },
-            "task": {
-              "enum": [
-                "demonstration",
-                "explore",
-                "prediction",
-                "daylight",
-                "path"
-              ]
-            },
-            "answer": {
-              "type": "string"
-            },
-            "correct": {
-              "type": "boolean"
-            },
-            "assisted": {
-              "type": "boolean"
-            },
-            "modality": {
-              "enum": [
-                "button",
-                "voice"
-              ]
-            },
-            "words": {
-              "type": "string"
-            },
-            "theta": {
-              "type": "number"
-            },
-            "phi": {
-              "type": "number"
-            }
+            "id": { "type": "string" },
+            "sceneId": { "type": "string" },
+            "item": { "type": "string" },
+            "situation": { "type": "string" },
+            "question": { "type": "string" },
+            "answer": { "type": "string" },
+            "correct": { "type": "boolean" },
+            "assisted": { "type": "boolean" },
+            "modality": { "enum": ["button", "voice"] },
+            "words": { "type": "string" },
+            "values": { "type": "array", "items": { "type": "string" }, "maxItems": 12 }
           },
           "required": [
             "id",
             "sceneId",
-            "task",
+            "item",
+            "situation",
+            "question",
             "answer",
             "correct",
             "assisted",
             "modality",
             "words",
-            "theta",
-            "phi"
+            "values"
           ],
           "additionalProperties": false
         },
         "maxItems": 100
       },
-      "day": {
-        "type": "boolean"
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "sceneId": { "type": "string" },
+            "item": { "type": "string" },
+            "assisted": { "type": "boolean" },
+            "detail": { "type": "string" }
+          },
+          "required": ["id", "sceneId", "item", "assisted", "detail"],
+          "additionalProperties": false
+        },
+        "maxItems": 100
       },
-      "moonAboveHorizon": {
-        "type": "boolean"
-      },
-      "sunAltitude": {
-        "type": "number"
-      },
-      "moonAltitude": {
-        "type": "number"
-      },
-      "canTurn": {
-        "type": "boolean"
-      },
-      "canMoveMoon": {
-        "type": "boolean"
-      },
-      "canAnswer": {
-        "type": "boolean"
-      },
-      "instruction": {
-        "type": "string"
-      }
+      "instruction": { "type": "string" },
+      "canAnswer": { "type": "boolean" },
+      "canHint": { "type": "boolean" },
+      "canResume": { "type": "boolean" },
+      "canTurn": { "type": "boolean" },
+      "theta": { "type": "number" },
+      "phi": { "type": "number" },
+      "originTheta": { "type": "number" },
+      "view": { "enum": ["space", "sky"] },
+      "horizon": { "type": "boolean" },
+      "rays": { "type": "boolean" },
+      "day": { "type": "boolean" },
+      "moonAboveHorizon": { "type": "boolean" },
+      "sunAltitude": { "type": "number" },
+      "moonAltitude": { "type": "number" }
     },
     "required": [
-      "task",
+      "kind",
+      "item",
       "mode",
       "moment",
-      "demonstratedMoments",
+      "shown",
       "sceneId",
+      "situation",
+      "revealed",
+      "assisted",
+      "hinted",
+      "reached",
+      "draft",
+      "entries",
+      "attempts",
+      "results",
+      "instruction",
+      "canAnswer",
+      "canHint",
+      "canResume",
+      "canTurn",
       "theta",
       "phi",
       "originTheta",
       "view",
       "horizon",
       "rays",
-      "assisted",
-      "revealed",
-      "path",
-      "attempts",
       "day",
       "moonAboveHorizon",
       "sunAltitude",
-      "moonAltitude",
-      "canTurn",
-      "canMoveMoon",
-      "canAnswer",
-      "instruction"
+      "moonAltitude"
     ],
     "additionalProperties": false
   },
   "actions": [
     {
       "name": "show_moment",
-      "description": "Show and narrate one moment, then continue this turn into a learner question or activity. night_light introduces reflected light; daytime_light applies the same route by day; blocked_light shows Earth blocking the view. light_journey and horizon support CURRENT work. horizon displays the rose-colored line labeled Horizon: use that visible name when referring to it in either view. daytime_moon/daytime_without_moon show the explorer sky. New setups require resolving or leaving pending work.",
+      "description": "Show and narrate one moment with the lesson’s own words, then continue this turn into something for the child to notice, answer or do. Some moments are help on the work in hand: it is kept, and recorded as helped. Others replace what is on screen, so they are refused while a question is unanswered. night_light: introduces reflected light, at night. daytime_light: the same route by day. blocked_light: Earth blocking the view. daytime_moon: the explorer’s sky with both Sun and Moon in it. daytime_without_moon: a daytime sky with the Moon below the horizon. light_journey: help on CURRENT work: draws the light’s route on the arrangement in hand. horizon: help on CURRENT work: displays the rose-colored line labeled Horizon; use that visible name for it in either view.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -199,94 +142,66 @@
               "daytime_light",
               "blocked_light",
               "daytime_moon",
+              "daytime_without_moon",
               "light_journey",
-              "horizon",
-              "daytime_without_moon"
+              "horizon"
             ]
           }
         },
-        "required": [
-          "moment"
-        ],
+        "required": ["moment"],
         "additionalProperties": false
       }
     },
     {
       "name": "start_activity",
-      "description": "Start and introduce a task. turn_earth: find a position where reflected moonlight reaches the explorer (night or day), then inspect their sky; use after reflection is familiar. predict_sky: fresh geometry without rays, for transfer after supported understanding. build_light_path: construct the route. Pending work must first be answered or left.",
+      "description": "Hand the child something to do on the scene; the lesson speaks the instruction. Unanswered work must be answered or left first. turn_earth: find a position where reflected moonlight reaches the explorer (night or day), then inspect their sky; use after reflection is familiar. Exploration, not evidence.",
       "inputSchema": {
         "type": "object",
-        "properties": {
-          "activity": {
-            "enum": [
-              "turn_earth",
-              "predict_sky",
-              "build_light_path"
-            ]
-          }
-        },
-        "required": [
-          "activity"
-        ],
+        "properties": { "activity": { "enum": ["turn_earth"] } },
+        "required": ["activity"],
         "additionalProperties": false
       }
     },
     {
       "name": "start_check",
-      "description": "Start a supported check with rays and horizon retained. The runtime speaks the exact on-screen question. day_night uses Day/Night; moon_visible uses Yes/No to above-horizon. Await an answer; do not invent another question.",
+      "description": "Ask one question; the lesson speaks the exact words shown on screen. Wait for the answer and do not ask another. day_night: a supported check of day and night, with the light route and horizon kept on screen. moon_visible: whether the Moon is above the explorer’s horizon. With a named situation it is a supported check; with fresh it is a new arrangement with no light route drawn, for transfer once the idea is secure. light_path: the child builds the light’s route by tapping. Independent only if the route has not been drawn for them earlier in the session. Situations: day_night takes night, day, below; moon_visible takes night, day, below, fresh (a new arrangement each time).",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "question": {
-            "enum": [
-              "day_night",
-              "moon_visible"
-            ]
-          },
-          "situation": {
-            "enum": [
-              "night",
-              "day",
-              "below"
-            ]
-          }
+          "question": { "enum": ["day_night", "moon_visible", "light_path"] },
+          "situation": { "enum": ["night", "day", "below", "fresh"] }
         },
-        "required": [
-          "question",
-          "situation"
-        ],
+        "required": ["question"],
         "additionalProperties": false
       }
     },
     {
       "name": "answer_check",
-      "description": "Resolve a clear SPOKEN answer to the pending binary question. Use its sceneId and quote the learner’s actual words. true means Day or Yes; false means Night or No. The model scores it and records voice provenance. Never use for a hypothetical, unclear reply, or answer supplied by the tutor.",
+      "description": "Record a clear SPOKEN answer to the waiting question: its sceneId, the index of the choice the child meant, and their actual words. The model scores it. Never use it for an unclear reply, a guess at what they meant, or an answer you supplied.",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "sceneId": {
-            "type": "string"
-          },
-          "answer": {
-            "type": "boolean"
-          },
-          "words": {
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 650
-          }
+          "sceneId": { "type": "string" },
+          "choice": { "type": "integer", "minimum": 0, "maximum": 11 },
+          "words": { "type": "string", "minLength": 1, "maxLength": 650 }
         },
-        "required": [
-          "sceneId",
-          "answer",
-          "words"
-        ],
+        "required": ["sceneId", "choice", "words"],
         "additionalProperties": false
       }
     },
     {
       "name": "leave_activity",
-      "description": "Leave unfinished work when the child chooses another activity or asks to move on. Preserve prior attempts; do not invent an answer.",
+      "description": "Leave unfinished work when the child chooses something else or asks to move on. Earlier attempts are kept; no answer is invented.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "resume_activity",
+      "description": "Give the work back to the child after help, exactly as it was, or reopen an answered question for another try. Either is recorded as helped.",
       "inputSchema": {
         "type": "object",
         "properties": {},
@@ -296,30 +211,11 @@
     },
     {
       "name": "set_view",
-      "description": "Navigate the CURRENT arrangement between space and the explorer sky, without resetting work. Use when the child asks to look through the explorer’s eyes or return to space; do it rather than asking permission again. For teaching a new idea prefer show_moment. Revealing sky before a prediction marks help.",
+      "description": "Navigate the CURRENT arrangement between space and the explorer sky, without resetting work. Use when the child asks to look through the explorer’s eyes or return to space; do it rather than asking permission again. For teaching a new idea prefer show_moment. Showing the sky before a prediction is answered counts as help.",
       "inputSchema": {
         "type": "object",
-        "properties": {
-          "view": {
-            "enum": [
-              "space",
-              "sky"
-            ]
-          }
-        },
-        "required": [
-          "view"
-        ],
-        "additionalProperties": false
-      }
-    },
-    {
-      "name": "resume_activity",
-      "description": "Return control to the child after demonstrating support on their current activity, or reopen their checked response for assisted correction. Preserve geometry and original attempts; do not manufacture a fresh independent success. Unavailable if no activity exists.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "required": [],
+        "properties": { "view": { "enum": ["space", "sky"] } },
+        "required": ["view"],
         "additionalProperties": false
       }
     }
@@ -328,159 +224,89 @@
     "scene_changed": {
       "type": "object",
       "properties": {
-        "task": {
-          "enum": [
-            "demonstration",
-            "explore",
-            "prediction",
-            "daylight",
-            "path"
-          ]
-        },
-        "sceneId": {
-          "type": "string"
-        }
+        "kind": { "type": "string" },
+        "item": { "type": "string" },
+        "sceneId": { "type": "string" }
       },
-      "required": [
-        "task",
-        "sceneId"
-      ],
-      "additionalProperties": false
-    },
-    "view_changed": {
-      "type": "object",
-      "properties": {
-        "view": {
-          "enum": [
-            "space",
-            "sky"
-          ]
-        }
-      },
-      "required": [
-        "view"
-      ],
-      "additionalProperties": false
-    },
-    "geometry_changed": {
-      "type": "object",
-      "properties": {
-        "theta": {
-          "type": "number"
-        },
-        "phi": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "theta",
-        "phi"
-      ],
+      "required": ["kind", "item", "sceneId"],
       "additionalProperties": false
     },
     "support_changed": {
       "type": "object",
-      "properties": {
-        "kind": {
-          "type": "string"
-        },
-        "enabled": {
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "kind",
-        "enabled"
-      ],
+      "properties": { "name": { "type": "string" }, "enabled": { "type": "boolean" } },
+      "required": ["name", "enabled"],
       "additionalProperties": false
     },
-    "path_edited": {
+    "draft_edited": {
       "type": "object",
-      "properties": {
-        "path": {
-          "type": "array",
-          "items": {
-            "enum": [
-              "sun",
-              "moon",
-              "observer"
-            ]
-          },
-          "maxItems": 3
-        }
-      },
-      "required": [
-        "path"
-      ],
+      "properties": { "draft": { "type": "array", "items": { "type": "string" }, "maxItems": 12 } },
+      "required": ["draft"],
+      "additionalProperties": false
+    },
+    "entries_edited": {
+      "type": "object",
+      "properties": { "field": { "type": "string" } },
+      "required": ["field"],
       "additionalProperties": false
     },
     "response_committed": {
       "type": "object",
       "properties": {
-        "id": {
-          "type": "string"
-        },
-        "sceneId": {
-          "type": "string"
-        },
-        "task": {
-          "enum": [
-            "demonstration",
-            "explore",
-            "prediction",
-            "daylight",
-            "path"
-          ]
-        },
-        "answer": {
-          "type": "string"
-        },
-        "correct": {
-          "type": "boolean"
-        },
-        "assisted": {
-          "type": "boolean"
-        },
-        "modality": {
-          "enum": [
-            "button",
-            "voice"
-          ]
-        },
-        "words": {
-          "type": "string"
-        },
-        "theta": {
-          "type": "number"
-        },
-        "phi": {
-          "type": "number"
-        }
+        "id": { "type": "string" },
+        "sceneId": { "type": "string" },
+        "item": { "type": "string" },
+        "situation": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "correct": { "type": "boolean" },
+        "assisted": { "type": "boolean" },
+        "modality": { "enum": ["button", "voice"] },
+        "words": { "type": "string" },
+        "values": { "type": "array", "items": { "type": "string" }, "maxItems": 12 }
       },
       "required": [
         "id",
         "sceneId",
-        "task",
+        "item",
+        "situation",
+        "question",
         "answer",
         "correct",
         "assisted",
         "modality",
         "words",
-        "theta",
-        "phi"
+        "values"
       ],
       "additionalProperties": false
     },
     "response_reopened": {
       "type": "object",
+      "properties": { "sceneId": { "type": "string" } },
+      "required": ["sceneId"],
+      "additionalProperties": false
+    },
+    "goal_reached": {
+      "type": "object",
       "properties": {
-        "sceneId": {
-          "type": "string"
-        }
+        "id": { "type": "string" },
+        "sceneId": { "type": "string" },
+        "item": { "type": "string" },
+        "assisted": { "type": "boolean" },
+        "detail": { "type": "string" }
       },
-      "required": [
-        "sceneId"
-      ],
+      "required": ["id", "sceneId", "item", "assisted", "detail"],
+      "additionalProperties": false
+    },
+    "view_changed": {
+      "type": "object",
+      "properties": { "view": { "enum": ["space", "sky"] } },
+      "required": ["view"],
+      "additionalProperties": false
+    },
+    "geometry_changed": {
+      "type": "object",
+      "properties": { "theta": { "type": "number" }, "phi": { "type": "number" } },
+      "required": ["theta", "phi"],
       "additionalProperties": false
     }
   }

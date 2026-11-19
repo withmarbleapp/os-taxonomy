@@ -18,8 +18,8 @@ const requests = {
   below: ['show_moment', { moment: 'daytime_without_moon' }],
   daylight: ['show_moment', { moment: 'daytime_moon' }],
   light: ['show_moment', { moment: 'light_journey' }],
-  prediction: ['start_activity', { activity: 'predict_sky' }],
-  path: ['start_activity', { activity: 'build_light_path' }],
+  prediction: ['start_check', { question: 'moon_visible', situation: 'fresh' }],
+  path: ['start_check', { question: 'light_path' }],
   revise: ['resume_activity', {}],
   explore: ['start_activity', { activity: 'turn_earth' }],
   space: ['set_view', { view: 'space' }],
@@ -145,18 +145,18 @@ try {
   assert.equal(await frame('moonLesson.view().lightSegments'), 2);
   await shot('night-light-desktop');
   await send('daycheck');
-  await until("moonLesson.snapshot().state.task==='daylight'");
-  assert.equal(await frame("document.querySelector('#no').textContent"), 'Night');
+  await until("moonLesson.snapshot().state.item==='day_night'");
+  assert.equal(await frame("document.querySelector('#choice1').textContent"), 'Night');
   await shot('supported-day-night');
-  await frame("document.querySelector('#no').click()");
+  await frame("document.querySelector('#choice1').click()");
   await until('moonLesson.snapshot().state.revealed');
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).correct'), true);
   await send('mooncheck');
-  await until("moonLesson.snapshot().state.task==='prediction' && !moonLesson.snapshot().state.revealed");
+  await until("moonLesson.snapshot().state.item==='moon_visible' && !moonLesson.snapshot().state.revealed");
   assert.equal(await frame('moonLesson.view().lightSegments'), 1);
-  assert.equal(await frame("document.querySelector('#no').textContent"), 'No');
+  assert.equal(await frame("document.querySelector('#choice1').textContent"), 'No');
   await shot('supported-visibility');
-  await frame("document.querySelector('#no').click()");
+  await frame("document.querySelector('#choice1').click()");
   await until('moonLesson.snapshot().state.revealed');
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).correct'), true);
   await send('below');
@@ -178,11 +178,11 @@ try {
   assert.equal(await frame('moonLesson.snapshot().state.canTurn'), false);
   await shot('light-desktop');
   await send('prediction');
-  await until("moonLesson.snapshot().state.task==='prediction'");
+  await until("moonLesson.snapshot().state.item==='moon_visible' && moonLesson.snapshot().state.situation==='fresh'");
   assert.equal(await frame("document.querySelector('#earth').hidden"), true);
   await shot('prediction-desktop');
   await frame(
-    "document.querySelector(moonLesson.snapshot().state.moonAboveHorizon?'#no':'#yes').click()",
+    "document.querySelector(moonLesson.snapshot().state.moonAboveHorizon?'#choice1':'#choice0').click()",
   );
   await until('moonLesson.snapshot().state.attempts.length===3');
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).correct'), false);
@@ -191,18 +191,18 @@ try {
   await send('revise');
   await until('!moonLesson.snapshot().state.revealed');
   await frame(
-    "document.querySelector(moonLesson.snapshot().state.moonAboveHorizon?'#yes':'#no').click()",
+    "document.querySelector(moonLesson.snapshot().state.moonAboveHorizon?'#choice0':'#choice1').click()",
   );
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).assisted'), true);
   await wait(500);
   await send('path');
-  await until("moonLesson.snapshot().state.task==='path'");
+  await until("moonLesson.snapshot().state.item==='light_path'");
   await frame(
     "document.querySelector('#sun').click();document.querySelector('#moon').dispatchEvent(new KeyboardEvent('keydown',{key:'Enter'}));document.querySelector('#observer').click()",
   );
-  await until('moonLesson.snapshot().state.path.length===3');
+  await until('moonLesson.snapshot().state.draft.length===3');
   await shot('path-desktop');
-  await frame("document.querySelector('#check-path').click()");
+  await frame("document.querySelector('#order-check').click()");
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).correct'), true);
   await wait(500);
   await send('explore');
@@ -224,21 +224,27 @@ try {
   await frame("document.querySelector('#eye').click()");
   await shot('sky-mobile');
   await send('path');
-  await until("moonLesson.snapshot().state.task==='path'");
+  await until("moonLesson.snapshot().state.item==='light_path'");
   await shot('path-mobile');
   const currentScene=await frame('moonLesson.snapshot().state.sceneId');
   await frame("document.querySelector('#sun').click()");
   await frame("document.querySelector('#hint').click()");
-  await until("moonLesson.snapshot().state.mode==='demonstration'");
-  assert.equal(await frame("document.querySelector('#pathTools').hidden"),true);
+  // A hint draws the route on the same work: nothing is lost and the child carries on.
+  await until('moonLesson.snapshot().state.rays');
+  assert.equal(await frame("document.querySelector('#order-tools').hidden"),false);
+  assert.equal(await frame("document.querySelector('#hint').hidden"),true);
   await shot('light-help-mobile');
+  // Help from the tutor pauses the work; Try it gives it back as it was.
+  await send('light');
+  await until("moonLesson.snapshot().state.mode==='demonstration'");
+  assert.equal(await frame("document.querySelector('#order-tools').hidden"),true);
   await frame("document.querySelector('#resume').click()");
   await until("moonLesson.snapshot().state.mode==='activity'");
   assert.equal(await frame('moonLesson.snapshot().state.sceneId'),currentScene);
-  assert.deepEqual(await frame('moonLesson.snapshot().state.path'),['sun']);
+  assert.deepEqual(await frame('moonLesson.snapshot().state.draft'),['sun']);
   assert.equal(await frame('moonLesson.snapshot().state.assisted'),true);
 
-  for (const selector of ['#actions', '#explanation', '#pathTools'])
+  for (const selector of ['#actions', '#explanation', '#order-tools'])
     assert.equal(
       await frame(
         `(()=>{const r=document.querySelector('${selector}').getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.bottom<=innerHeight})()`,

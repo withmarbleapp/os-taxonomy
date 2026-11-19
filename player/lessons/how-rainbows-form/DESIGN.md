@@ -93,15 +93,15 @@ Opportunities, not a sequence.
 | Light comes back from a drop | Light bounces | Whole path drawn | `drop_exit` | `inside_drop`, then `aim_sunbeam` | Child describes in–bounce–out |
 | Colours were in the sunlight | Light comes back | Whole path drawn | `drop_colours` | `colours_spread` | Child says the drop splits, not makes |
 | Sun behind, drops in front | Light comes back (for the reason); sunlight and drops | Sunlight arrows; one variable free | `sun_where`; `see_rainbow` `far_side`, `side_on`, `facing_sun` | `sunlight_path` on that arrangement, then resume | One unassisted correct prediction with a reason |
-| Prediction (`predict`) | All of the above | None: window covered, no arrows | It is the check | Hint (arrows) → assisted retry | — |
-| Building at the fountain (`make_rainbow`) | Same, in a new setting | Window open (live feedback) | `rainbow_found` with `assisted` | Hint; or `walk_around` first | — |
+| Prediction (`see_rainbow`, situation `fresh`) | All of the above | None: window covered, no arrows | It is the check | Hint (arrows) → assisted retry | — |
+| Building at the fountain (`make_rainbow`) | Same, in a new setting | Window open (live feedback) | `goal_reached` with `assisted` | Hint; or `walk_around` first | — |
 | Deeper aspects | Sun behind (bow, high Sun); drop and colours (red on top) | Circle and dotted line drawn | `reach_rainbow`; `see_rainbow` `high_sun` | The matching moment | Offered only when the child wants more |
 
 Two dials, kept separate: **demand** rises from one free variable (clouds, gaze
-or position) to a fresh arrangement (`predict`) to a new setting with everything
+or position) to a fresh arrangement (`see_rainbow` with `fresh`) to a new setting with everything
 free (`make_rainbow`). **Support** falls from open window plus arrows, to arrows
-with the window covered (checks), to neither (`predict`). More practice at the
-same demand is another `predict`.
+with the window covered (checks), to neither (a `fresh` check). More practice at the
+same demand is another `fresh` check.
 
 ### What an own-words explanation would show
 
@@ -121,11 +121,11 @@ arrangement or Yes/No answer does not show it.
 > **Child:** Rain and the Sun.
 
 Had the child answered "the Sun shines through the rain and you have to have it
-behind you", the tutor would instead go straight to `predict`.
+behind you", the tutor would instead go straight to a `fresh` check.
 
 ### Fresh problems, practice and deeper aspects
 
-- `predict`: 42 distinct arrangements (rain or fountain; Sun on either side or
+- `see_rainbow` with `fresh`: 42 distinct arrangements (rain or fountain; Sun on either side or
   behind-left/right; six situations). Only 7 of them show a rainbow, so each
   new prediction is chosen as a yes or a no with equal chance until the yes
   cases run out.
@@ -139,6 +139,15 @@ behind you", the tutor would instead go straight to `predict`.
 
 ## Responsibilities (phases 3 and 4)
 
+Since version 2.0.0 the model is a specification on the player's shared
+moment engine (`/sdk/moments.mjs`). `model/rainbow.mjs` holds only what is
+particular to this lesson: the arrangements, the optics' verdict on them, the
+child's gestures and the words, as three lists (`show`, `do`, `ask`). The
+tutor's actions, answering by voice or touch, help that returns to the same
+work, retries and the evidence events are the engine's, and the answer
+buttons, hint and "try it" are the player's standard controls
+(`/sdk/moments-ui.mjs`).
+
 - **Tutor tools** (all lesson-worded; `teaching[]` is empty):
   - `show_moment` → authored speech, `continueAfterSpeech`. `rainbow_scene`,
     `why_a_bow`, `red_on_top`, `high_sun` stage a whole scene and are refused
@@ -148,24 +157,25 @@ behind you", the tutor would instead go straight to `predict`.
     arrangement and any current work untouched.
   - `start_activity` → authored instruction, then waits. Investigations:
     `sun_and_rain`, `turn_to_find`, `walk_around`, `aim_sunbeam`, `sun_height`.
-    Transfer: `predict`, `make_rainbow`.
-  - `start_check` → the exact question, then waits.
+    Transfer: `make_rainbow`.
+  - `start_check` → the exact question, then waits. `see_rainbow` with the
+    situation `fresh` is the prediction on a new arrangement.
   - `answer_check`, `leave_activity`, `resume_activity`.
-- **Checks:** `QUESTIONS` in `model/rainbow.mjs` is the single source for the
+- **Checks:** each entry of `ask` in `model/rainbow.mjs` is the single source for the
   speech, the on-screen question and the two button labels. `see_rainbow` is
   scored from the geometry; the other four have a fixed answer. A spoken answer
   goes through `answer_check` with the scene id, the choice index and the
   child's words; it is scored by the same function as a button and recorded as
   `modality: voice`. A stale scene id is rejected.
 - **State the tutor relies on:** `attempts[]` (never rewritten; the last one
-  for the scene is current), `finds[]` (first rainbow per scene in a finding
-  task), each with `assisted`; `revealed`, `mode` (a paused question reports
+  for the scene is current), `results[]` (first rainbow per scene in a finding
+  activity), each with `assisted`; `revealed`, `mode` (a paused question reports
   `paused_for_help`); `windowCovered`; `rays`; `rainbowStatus`.
   `assisted` is set by a hint, by any help moment during unanswered work, and
   by every retry after the answer was shown.
 - **Screen versus viewpoint:** the meadow shows the Sun, cloud, water and Mia
   from outside; the rainbow exists only in "What Mia sees". The tutor view
-  reports `screen` and `mia` separately, and reports the window as covered
+  reports `screen.view` and `screen.mia` separately, and reports the window as covered
   while a prediction is pending.
 
 ## Model limits
@@ -194,7 +204,7 @@ behind you", the tutor would instead go straight to `predict`.
 
 | Check | What was run | Result |
 |---|---|---|
-| Model and scoring tests | `node --test test/*.test.mjs` (22 tests): drop optics against the 42.4°/40.6° angles; bow geometry; each status; each moment's speech and view; each activity's single free variable; every check for both answers, scored from one question object; voice and button parity with provenance; stale revision and stale question; help pausing and resuming with history intact; correction keeping the first attempt; leaving without an answer; 12 non-repeating predictions; hint recorded as assistance; idempotent command ids; `experience.json` equals the descriptor | 22 pass |
+| Model and scoring tests | `node --test test/*.test.mjs` (23 tests): drop optics against the 42.4°/40.6° angles; bow geometry; each status; each moment's speech and view; each activity's single free variable; every check for both answers, scored from one question object; voice and button parity with provenance; stale revision and stale question; help pausing and resuming with history intact; correction keeping the first attempt; leaving without an answer; 12 non-repeating predictions; hint recorded as assistance; idempotent command ids; `experience.json` equals the descriptor | 22 pass |
 | Package | `marble validate` | Valid |
 | Shared player tests | `npm --prefix player test` (the player was not changed) | 64 pass |
 | Browser checks | `player/scripts/rainbow-browser-check.mjs`: the lesson opened in the real player in headless Chrome at 1024×768 and 390×844 (opening also at 1440×900). Cover; every moment; every activity started and its controls asserted present, inside the viewport and at least 44px; real mouse taps on both clouds and the Sun; mouse drags on Mia, her arrow and the sunbeam; arrow keys finishing the turn; a wrong answer, "Try again" and a corrected answer; help in the close-up and return to the same spot; hint on a prediction; no page errors. 78 screenshots, inspected by the author | Pass |

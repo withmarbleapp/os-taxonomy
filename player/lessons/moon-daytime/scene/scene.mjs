@@ -1,4 +1,5 @@
 import { questionFor, tutorView } from '../model/moon.mjs';
+import { bindMoments } from '/sdk/moments-ui.mjs';
 import { THREE, createStage, flat, unlined } from '/sdk/stage.mjs';
 import { star, earth as kitEarth, moon as kitMoon, orbit, character, light, clear } from '/sdk/props.mjs';
 import { createGroundView } from './ground-view.mjs';
@@ -181,6 +182,7 @@ export function createScene(getModel, onVisualChange = () => {}) {
   }
   let animationStart = 0,
     animationPhase = 'none';
+  const controls = bindMoments({ model: getModel, questionFor });
   function update(snapshot, cover) {
     const previous = state;
     state = snapshot.state;
@@ -196,12 +198,14 @@ export function createScene(getModel, onVisualChange = () => {}) {
     observerGroup.position.set(...f.observer, 0.02);
     observerGroup.rotation.z = state.theta - Math.PI / 2;
     const n = normal();
+    const { ordering } = controls(snapshot, cover);
     turnRing.visible = state.canTurn;
-    orbitRing.visible = state.canMoveMoon || state.task === 'prediction';
+    // The Moon's orbit is drawn for a fresh prediction, where no light route is.
+    orbitRing.visible = state.kind === 'ask' && state.situation === 'fresh';
     focusSun.visible = focusMoon.visible = focusObserver.visible = false;
     focusMoon.position.copy(moonGroup.position).setZ(0.3);
     focusObserver.position.copy(observerGroup.position).addScaledVector(n, 0.4).setZ(0.3);
-    for (const id of state.path) {
+    for (const id of state.draft) {
       ({ sun: focusSun, moon: focusMoon, observer: focusObserver })[id].visible = true;
     }
     clearRays();
@@ -215,32 +219,15 @@ export function createScene(getModel, onVisualChange = () => {}) {
     document.body.classList.toggle('sky', inSky);
     document.body.classList.toggle('day', inSky && f.day);
     $('instruction').textContent = state.instruction;
-    show('resume', !cover && state.mode === 'demonstration' && state.task !== 'demonstration');
     show('replay', !cover && state.mode === 'demonstration' && state.rays && !inSky);
     show('earth', !cover && !inSky && state.canTurn);
-    show('sun', !cover && !inSky && state.task === 'path' && state.mode === 'activity');
-    show(
-      'moon',
-      !cover &&
-        !inSky &&
-        (state.canMoveMoon || (state.task === 'path' && state.mode === 'activity')),
-    );
-    show('observer', !cover && !inSky && state.task === 'path' && state.mode === 'activity');
-    $('moon-label').textContent = state.canMoveMoon ? 'Move Moon' : 'Moon';
+    for (const id of ['sun', 'moon', 'observer']) show(id, !cover && !inSky && ordering);
     $('eye').textContent = inSky ? '↗ Back to space' : '↘ See the sky';
-    // A prediction can still request help via the tutor; the normal reveal follows commitment.
-    show('eye', !cover && (state.task !== 'prediction' || state.revealed || state.assisted));
+    // The sky would give a fresh prediction away; after an answer or help it is offered.
+    const predicting = state.kind === 'ask' && state.item === 'moon_visible' && state.situation === 'fresh';
+    show('eye', !cover && (!predicting || state.revealed || state.assisted));
     show('lookTools', !cover && inSky);
-    show('choices', !cover && ['prediction', 'daylight'].includes(state.task) && state.canAnswer);
-    const check = questionFor(state);
-    $('yes').textContent = check?.choices[0] ?? 'Yes';
-    $('no').textContent = check?.choices[1] ?? 'No';
-    show('pathTools', !cover && state.task === 'path' && state.canAnswer);
-    show('hint', !cover && state.task !== 'explore' && state.canAnswer);
-    $('check-path').disabled = state.path.length !== 3;
-    $('path-order').textContent =
-      state.path.map((x) => ({ sun: 'Sun', moon: 'Moon', observer: 'Explorer' })[x]).join(' → ') ||
-      'Choose the first object';
+    if (ordering && !state.draft.length) $('order-draft').textContent = 'Choose the first object';
     canvas.tabIndex = inSky ? 0 : -1;
     canvas.setAttribute(
       'aria-label',
@@ -304,8 +291,7 @@ export function createScene(getModel, onVisualChange = () => {}) {
             before.x * after.y - before.y * after.x,
             before.x * after.x + before.y * after.y,
           );
-          if (id === 'earth') getModel().learnerTurn(delta);
-          else getModel().learnerMoon(delta);
+          if (id === 'earth') getModel().gesture('turn', delta);
         }
         drag.x = e.clientX;
         drag.y = e.clientY;
@@ -313,9 +299,8 @@ export function createScene(getModel, onVisualChange = () => {}) {
     });
     $(id).addEventListener('pointerup', () => {
       if (drag && !drag.moved) {
-        if (id === 'earth') getModel().learnerTurn(0.2);
-        else if (state.task === 'path') getModel().learnerTap('moon');
-        else getModel().learnerMoon(0.2);
+        if (id === 'earth') getModel().gesture('turn', 0.2);
+        else getModel().tap('moon');
       }
       drag = null;
     });
@@ -323,28 +308,19 @@ export function createScene(getModel, onVisualChange = () => {}) {
     $(id).addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
         e.preventDefault();
-        getModel()[id === 'earth' ? 'learnerTurn' : 'learnerMoon'](
-          e.key === 'ArrowLeft' ? -0.15 : 0.15,
-        );
+        if (id === 'earth') getModel().gesture('turn', e.key === 'ArrowLeft' ? -0.15 : 0.15);
       } else if (e.key === 'Enter') {
         e.preventDefault();
-        if (id === 'earth') getModel().learnerTurn(0.2);
-        else if (state.task === 'path') getModel().learnerTap('moon');
-        else getModel().learnerMoon(0.2);
+        if (id === 'earth') getModel().gesture('turn', 0.2);
+        else getModel().tap('moon');
       }
     });
   }
-  for (const id of ['sun', 'observer']) $(id).onclick = () => getModel().learnerTap(id);
-  $('resume').onclick = () => getModel().learnerResume();
+  for (const id of ['sun', 'observer']) $(id).onclick = () => getModel().tap(id);
   $('replay').onclick = () => {
     animationStart = performance.now();
   };
-  $('eye').onclick = () => getModel().learnerView(inSky ? 'space' : 'sky');
-  $('yes').onclick = () => getModel().learnerPredict(true);
-  $('no').onclick = () => getModel().learnerPredict(false);
-  $('hint').onclick = () => getModel().learnerHint();
-  $('clear-path').onclick = () => getModel().learnerClear();
-  $('check-path').onclick = () => getModel().learnerCheckPath();
+  $('eye').onclick = () => getModel().control('set_view', { view: inSky ? 'space' : 'sky' });
   $('lookSun').onclick = () => ground.lookAtBody('sun', !reduced);
   $('lookMoon').onclick = () => ground.lookAtBody('moon', !reduced);
   let lookDrag = null;
@@ -371,7 +347,7 @@ export function createScene(getModel, onVisualChange = () => {}) {
     if (moves[e.key]) {
       e.preventDefault();
       ground.look(...moves[e.key]);
-    } else if (e.key === 'Escape') getModel().learnerView('space');
+    } else if (e.key === 'Escape') getModel().control('set_view', { view: 'space' });
   });
   let last = 0;
   function frame(t) {
@@ -442,22 +418,6 @@ export function createScene(getModel, onVisualChange = () => {}) {
       lightSegments: packets.length,
       animationPhase,
       mode: state?.mode,
-      learnerCanDo: !state
-        ? []
-        : state.mode === 'demonstration'
-          ? [
-              'Look and describe what is shown',
-              ...(state.task !== 'demonstration'
-                ? ['Try it: return to the same supported activity']
-                : []),
-            ]
-          : state.task === 'explore'
-            ? ['Drag Turn Earth (or use arrow keys)', 'See the sky to check the observer’s view']
-            : state.task === 'daylight'
-              ? ['Choose Day or Night for the explorer']
-            : state.task === 'prediction'
-              ? ['Answer the displayed question with Yes or No, by voice or button']
-              : ['Tap Sun, Moon and Explorer in chosen order', 'Clear draft', 'Check the journey'],
       coverOpen,
       horizonMarker: {
         shown: !horizonLabel.hidden && !coverOpen,
