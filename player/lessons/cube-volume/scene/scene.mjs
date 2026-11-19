@@ -85,19 +85,20 @@ export function createCubeScene({ canvas, onPlace, onRotate, onOpen }) {
           cubes.add(cube);
           parts.push(cube);
         }
-    // While building, the space still to fill is drawn as a faint box.
-    if (state.task !== 'fill') return resize();
-    const frame = new THREE.LineSegments(
-      new THREE.EdgesGeometry(new THREE.BoxGeometry(w + 0.14, h + 0.1, d + 0.14)),
-      guideLine,
-    );
-    frame.position.y = h / 2;
-    frame.userData.own = true;
-    guide.add(unlined(frame));
     canvas.setAttribute(
       'aria-label',
       `A ${state.mode === 'fill' ? 'partly filled' : 'completely filled'} rectangular box of equal unit cubes. It has ${w} cubes across, ${d} rows back and ${h} layers high.`,
     );
+    // While building, the space still to fill is drawn as a faint box.
+    if (state.task === 'fill') {
+      const frame = new THREE.LineSegments(
+        new THREE.EdgesGeometry(new THREE.BoxGeometry(w + 0.14, h + 0.1, d + 0.14)),
+        guideLine,
+      );
+      frame.position.y = h / 2;
+      frame.userData.own = true;
+      guide.add(unlined(frame));
+    }
     resize();
   }
 

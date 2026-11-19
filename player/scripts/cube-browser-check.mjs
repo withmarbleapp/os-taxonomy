@@ -140,6 +140,7 @@ try {
   await click('deepen');
   assert.deepEqual((await state()).dims, [3, 3, 3]);
   await shot('04-fill-deepened-tablet');
+  assert.match(await frame("document.getElementById('world').getAttribute('aria-label')"), /3 rows back and 3 layers high/, 'the description follows the block');
 
   // Turn by dragging and by keys; open by dragging up and by the button.
   const turn0 = (await state()).rotation;
