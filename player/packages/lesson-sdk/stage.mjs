@@ -169,13 +169,25 @@ export function unlined(object) {
   return object;
 }
 
-export function createStage(canvas, { setting = 'daylight' } = {}) {
+// The shading steps belong to whichever stage is drawing: a lesson with two
+// settings (space and the ground, say) has two stages, and each sets the ramp
+// to its own before it draws.
+function useRamp(hard) {
+  if (ramp.userData.hard === hard) return;
+  ramp.userData.hard = hard;
+  ramp.image.data.set(hard ? [0, 0, 0, 0, 255, 255, 255, 255] : [0, 0, 0, 0, 128, 255, 255, 255]);
+  ramp.needsUpdate = true;
+}
+
+// `share` is another stage on the same canvas: the new stage draws with that
+// stage's renderer instead of making its own, so a lesson can keep a second
+// scene in a different setting and draw whichever one is on show.
+export function createStage(canvas, { setting = 'daylight', share } = {}) {
   const world = typeof setting === 'string' ? SETTINGS[setting] : setting;
   if (!world) throw Error('Unknown setting: ' + setting);
   const SHADE = world.shade;
-  ramp.image.data.set(world.hardLight ? [0, 0, 0, 0, 255, 255, 255, 255] : [0, 0, 0, 0, 128, 255, 255, 255]);
-  ramp.needsUpdate = true;
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: false });
+  useRamp(!!world.hardLight);
+  const renderer = share?.renderer ?? new THREE.WebGLRenderer({ canvas, antialias: false });
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
@@ -408,6 +420,7 @@ export function createStage(canvas, { setting = 'daylight' } = {}) {
     ink.uniforms.texel.value.set(1 / w, 1 / h);
     ink.uniforms.near.value = camera.near;
     ink.uniforms.far.value = camera.far;
+    useRamp(!!world.hardLight);
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
     camera.updateMatrixWorld();

@@ -167,7 +167,7 @@ has to be correct, and a question has to match its on-screen text and buttons,
 so those words are written and checked by you, taken from one question object.
 A demonstration sets `continueAfterSpeech` so the tutor can hand straight to a
 question or activity. The tutor words everything in between. Tutor-worded
-`explain_model` resources (Cube, Croatoan) remain available for a moment where
+`explain_model` resources (the Cube lesson) remain available for a moment where
 responding to the child's own words matters more than exact phrasing; give any
 one moment a single path.
 

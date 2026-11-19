@@ -19,7 +19,7 @@ lock and build inside `player/`.
 | `player/packages/lesson-contract`, `lesson-sdk` | Portable lesson format and scene bridge |
 | `player/packages/teaching-runtime` | Adaptive tutor orchestration |
 | `player/packages/voice`, `providers` | Local speech and inference connections |
-| `player/lessons` | Cube volume and Roanoke example packages |
+| `player/lessons` | Bundled example lessons: cube volume, the Moon in daytime, rainbows |
 | `.agents/skills/marble-voice-lesson` | Research, pedagogy and audio lesson authoring guidance |
 
 ```sh

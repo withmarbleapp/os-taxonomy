@@ -10,7 +10,7 @@ import { createService } from '../apps/local-service/server.mjs';
 test('bundled lessons roundtrip and install idempotently', async () => {
   const temp = await mkdtemp(join(tmpdir(), 'marble-test-'));
   try {
-    for (const id of ['cube-volume', 'croatoan-clues', 'moon-daytime', 'how-rainbows-form']) {
+    for (const id of ['cube-volume', 'moon-daytime', 'how-rainbows-form']) {
       const bytes = await pack('lessons/' + id);
       assert.equal(unpack(bytes).manifest.id, id);
       const a = await install(bytes, temp),
@@ -41,7 +41,7 @@ test('service isolates opaque lesson frames from privileged APIs', async () => {
     const headers = { 'x-marble-token': s.token },
       list = await (await fetch(s.origin + '/api/library', { headers })).json();
     assert.ok(list.some((p) => p.manifest.id === 'moon-daytime'));
-    assert.equal(list.length, 4);
+    assert.equal(list.length, 3);
     const frame = await fetch(s.origin + list[0].url);
     assert.match(frame.headers.get('content-security-policy'), /sandbox allow-scripts/);
     assert.match(frame.headers.get('content-security-policy'), /connect-src 'none'/);

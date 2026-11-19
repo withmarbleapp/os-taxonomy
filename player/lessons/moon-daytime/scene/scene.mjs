@@ -1,108 +1,79 @@
 import { questionFor, tutorView } from '../model/moon.mjs';
-import * as THREE from '../vendor/three.module.min.js';
-import { createSunVisual, createSpaceBackground } from './space-visuals.mjs';
-import { createEarthVisual, createExplorerVisual } from './world-visuals.mjs';
+import { THREE, createStage, flat, unlined } from '/sdk/stage.mjs';
+import { star, earth as kitEarth, moon as kitMoon, orbit, character, light, clear } from '/sdk/props.mjs';
 import { createGroundView } from './ground-view.mjs';
-import { R, ORBIT, facts } from '../model/geometry.mjs';
+import { R, ORBIT, SUN_X, facts } from '../model/geometry.mjs';
+// Two scenes on the shared stage: the space model, seen from above Earth's north
+// pole in the kit's space setting, and the explorer's own sky in daylight
+// (ground-view.mjs). Both draw through one renderer.
 export function createScene(getModel, onVisualChange = () => {}) {
   const $ = (id) => document.getElementById(id),
     canvas = $('world');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const show = (id, on) => ($(id).hidden = !on);
-  let renderer;
+  let stage;
   try {
-    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+    stage = createStage(canvas, { setting: 'space' });
   } catch {
     $('instruction').textContent = 'This device needs WebGL to show the Moon model.';
     for (const id of ['earth', 'sun', 'moon', 'observer']) show(id, false);
     throw new Error('WebGL unavailable');
   }
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.2;
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#0b1726');
-  const overview = new THREE.OrthographicCamera();
-  overview.position.set(0, 0, 24);
-  overview.lookAt(0, 0, 0);
-  scene.add(new THREE.AmbientLight(0x8cabcb, 0.09));
-  const sunlight = new THREE.PointLight(0xfff3d7, 3.2, 0, 0);
-  sunlight.position.set(-6.3, 0, 0);
+  const scene = stage.scene;
+  // Everything lies in the x-y plane and is seen from +z. The view is narrow and
+  // far off, so the bodies stay round wherever they sit in the picture.
+  const VIEW = 24,
+    overview = new THREE.PerspectiveCamera(VIEW, 1, 1, 200);
+  // Sunlight spreads from the Sun itself, so each body's lit half faces it. The
+  // stage's own parallel light is left out: it would also throw Earth's shadow
+  // across the Moon, which this model does not show.
+  stage.setLight({ sunlight: 0 });
+  stage.sun.castShadow = false;
+  const sunlight = new THREE.PointLight('#ffffff', Math.PI, 0, 0);
+  sunlight.color.setRGB(...stage.setting.shade.map((s) => 1 - s));
+  sunlight.position.set(SUN_X, 0, 0);
   scene.add(sunlight);
-  function mesh(geo, mat, parent = scene) {
-    const m = new THREE.Mesh(geo, mat);
-    parent.add(m);
-    return m;
-  }
-  function standard(color, extra = {}) {
-    return new THREE.MeshStandardMaterial({ color, roughness: 0.9, ...extra });
-  }
-  const globe = createEarthVisual(R);
-  const earthGroup = globe.root;
-  scene.add(earthGroup);
-  const earth = globe.surface;
-  // Kept as a visibility hook for existing presentation states; the globe has a clean ink silhouette.
-  const atmosphere = new THREE.Group();
-  scene.add(atmosphere);
-  const moonGroup = new THREE.Group();
-  scene.add(moonGroup);
-  function moonTexture() {
-    const c = document.createElement('canvas');
-    c.width = 512;
-    c.height = 256;
-    const ctx = c.getContext('2d');
-    ctx.fillStyle = '#c4c7c9';
-    ctx.fillRect(0, 0, 512, 256);
-    let seed = 43;
-    const rand = () => {
-      seed = (seed * 1664525 + 1013904223) >>> 0;
-      return seed / 4294967296;
-    };
-    for (let i = 0; i < 180; i++) {
-      const x = rand() * 512,
-        y = rand() * 256,
-        r = 2 + rand() * 12;
-      ctx.fillStyle = i % 7 === 0 ? '#939a9f' : '#a9afb3';
-      ctx.beginPath();
-      ctx.arc(x, y, r, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.strokeStyle = '#e3e4df';
-      ctx.lineWidth = 0.8;
-      ctx.beginPath();
-      ctx.arc(x, y, r, 0.3, 2.9);
-      ctx.stroke();
-    }
-    const t = new THREE.CanvasTexture(c);
-    t.colorSpace = THREE.SRGBColorSpace;
-    return t;
-  }
-  const moon = mesh(
-    new THREE.SphereGeometry(0.49, 64, 48),
-    standard('#ffffff', { map: moonTexture() }),
-    moonGroup,
+  const mark = (geometry, colour, opacity = 1) =>
+    unlined(new THREE.Mesh(geometry, flat(colour, { transparent: opacity < 1, opacity, depthWrite: false })));
+  // The kit's bodies stand with north up; here north points at the viewer.
+  const northUp = (object) => {
+    const g = new THREE.Group().add(object);
+    g.rotation.x = Math.PI / 2;
+    return g;
+  };
+  const art = new THREE.Group();
+  scene.add(art);
+  const globe = kitEarth({ radius: R }),
+    earthGroup = northUp(globe);
+  const moonGroup = new THREE.Group().add(northUp(kitMoon({ radius: 0.49 })));
+  // The explorer is a marker as much as a figure: drawn in plain colour so the
+  // child stays readable on Earth's night side.
+  const observerGroup = new THREE.Group(),
+    explorer = character('sam', { height: 0.8 });
+  explorer.userData.ready.then(() =>
+    explorer.traverse((o) => {
+      if (o.isMesh && o.material.gradientMap) o.material = flat(o.material.color, { map: o.material.map });
+    }),
   );
-  const solar = createSunVisual(0.84);
-  const sun = solar.root;
-  sun.position.set(-6.3, 0, 0);
+  observerGroup.add(explorer);
+  art.add(earthGroup, moonGroup, observerGroup);
+  const sun = star({ at: [SUN_X, 0, 0], radius: 0.84 });
   scene.add(sun);
-  const explorer = createExplorerVisual();
-  const observerGroup = explorer.root;
-  scene.add(observerGroup);
   // Rings and rays are scaffolds, never answer cues before an independent commitment.
-  function ring(radius, color, opacity = 1) {
-    const m = mesh(
-      new THREE.TorusGeometry(radius, 0.012, 8, 128),
-      new THREE.MeshBasicMaterial({ color, transparent: true, opacity }),
-    );
+  function ring(radius, colour, opacity = 1) {
+    const m = mark(new THREE.RingGeometry(radius - 0.014, radius + 0.014, 128), colour, opacity);
+    scene.add(m);
     return m;
   }
   const turnRing = ring(R + 0.26, '#76a6be', 0.7);
-  const orbitRing = ring(ORBIT, '#688497', 0.16);
+  const orbitRing = orbit({ radius: ORBIT, colour: '#688497', opacity: 0.3 });
+  orbitRing.rotation.x = 0;
+  scene.add(orbitRing);
   const focusSun = ring(1.03, '#ffe4a5');
   focusSun.position.copy(sun.position);
   const focusMoon = ring(0.67, '#ffe4a5');
-  const focusObserver = ring(0.27, '#ffe4a5');
+  const focusObserver = ring(0.5, '#ffe4a5');
+  for (const r of [focusSun, focusMoon, focusObserver]) r.position.z = 0.3;
   // Screen-space strokes remain legible at every viewport size.
   const horizonOverlay = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   horizonOverlay.id = 'horizon-overlay';
@@ -113,51 +84,25 @@ export function createScene(getModel, onVisualChange = () => {}) {
   horizonLabel.id = 'horizon-label';
   horizonLabel.textContent = 'Horizon';
   $('lesson-ui').append(horizonLabel);
-  const skyArc = new THREE.Line(
-    new THREE.BufferGeometry(),
-    new THREE.LineBasicMaterial({ color: '#9edbf6', transparent: true, opacity: 0.28 }),
-  );
-  scene.add(skyArc);
-  const spaceBackground = createSpaceBackground();
-  const stars = spaceBackground.root;
-  scene.add(stars);
+  // Each leg of the light's journey is a glowing line with a bright packet
+  // travelling along it.
   const rayGroup = new THREE.Group();
   scene.add(rayGroup);
   const packets = [];
   function clearRays() {
-    while (rayGroup.children.length) {
-      const child = rayGroup.children[0];
-      child.geometry?.dispose();
-      child.material?.dispose();
-      rayGroup.remove(child);
-    }
+    clear(rayGroup);
     packets.length = 0;
   }
-  function addRay(from, to, color) {
-    const a = from.clone(),
-      b = to.clone();
-    a.z = 0.2;
-    b.z = 0.2;
-    const line = new THREE.Line(
-      new THREE.BufferGeometry().setFromPoints([a, b]),
-      new THREE.LineDashedMaterial({
-        color,
-        dashSize: 0.12,
-        gapSize: 0.08,
-        transparent: true,
-        opacity: 0.75,
-      }),
-    );
-    line.computeLineDistances();
-    rayGroup.add(line);
-    const ball = mesh(
-      new THREE.SphereGeometry(0.055, 12, 8),
-      new THREE.MeshBasicMaterial({ color }),
-      rayGroup,
-    );
-    packets.push({ a, b, ball });
+  function addRay(from, to, colour) {
+    const a = from.clone().setZ(0.5),
+      b = to.clone().setZ(0.5),
+      tint = new THREE.Color(colour);
+    const beam = light().line(a, b, { colour: tint, width: 0.075, strength: 0.85 }).build();
+    const ball = mark(new THREE.SphereGeometry(0.075, 16, 12), colour);
+    rayGroup.add(beam, ball);
+    packets.push({ a, b, ball, beam });
   }
-  const ground = createGroundView({ moonMap: moon.material.map });
+  const ground = createGroundView(canvas, stage);
   const sky = ground.camera;
 
   let state,
@@ -170,23 +115,52 @@ export function createScene(getModel, onVisualChange = () => {}) {
   function resize() {
     dims = { w: innerWidth, h: innerHeight };
     observerGroup.scale.setScalar(dims.w <= 600 ? 1.35 : 1);
-    renderer.setSize(dims.w, dims.h);
-    spaceBackground.resize(Math.min(devicePixelRatio, 2));
+    stage.resize(dims.w, dims.h);
+    ground.resize(dims.w, dims.h);
+    if (coverOpen && state) poseCover();
+    frameView();
+  }
+  // Fits the camera to the model, or to the cover picture while the cover is up.
+  function frameView() {
     const aspect = dims.w / dims.h,
-      portrait = aspect < 0.8;
-    const half = portrait ? 7.5 / aspect : Math.max(6.15, 8 / aspect);
-    overview.left = -half * aspect;
-    overview.right = half * aspect;
-    overview.top = half;
-    overview.bottom = -half;
-    overview.near = 0.1;
-    overview.far = 150;
-    overview.position.set(portrait ? -2.7 : 0, portrait ? 0 : 0.45, 24);
-    overview.up.set(portrait ? 1 : 0, portrait ? 0 : 1, 0);
-    overview.lookAt(portrait ? -2.7 : 0, portrait ? 0 : 0.45, 0);
+      portrait = aspect < 0.8,
+      narrow = dims.w <= 800;
+    let half,
+      x = 0,
+      y = 0.45;
+    overview.up.set(0, 1, 0);
+    if (coverOpen) {
+      // Earth, the explorer and the Moon, clear of the cover's words.
+      half = (narrow ? 7.8 : Math.max(14, 8.6 * aspect)) / aspect / 2;
+      x = narrow ? -0.3 : -3.1;
+      y = 1.8;
+    } else if (portrait) {
+      // On a tall screen the Sun-Earth line runs up the picture.
+      half = 7.5 / aspect;
+      x = -2.7;
+      y = 0;
+      overview.up.set(1, 0, 0);
+    } else half = Math.max(6.15, 8 / aspect);
+    const distance = half / Math.tan(THREE.MathUtils.degToRad(VIEW / 2));
+    overview.near = Math.max(1, distance - 12);
+    overview.far = distance + 40;
+    overview.aspect = aspect;
+    overview.position.set(x, y, distance);
+    overview.lookAt(x, y, 0);
     overview.updateProjectionMatrix();
     overview.updateMatrixWorld();
-    ground.resize(dims.w, dims.h);
+  }
+  // The cover picture: the same model, posed.
+  function poseCover() {
+    const narrow = dims.w <= 800;
+    art.scale.setScalar(narrow ? 1.55 : 1);
+    globe.userData.globe.rotation.y = 0.45;
+    moonGroup.position.set(narrow ? 1.2 : 0.107, narrow ? 2.1 : 5.149, 0);
+    observerGroup.position.set(-1.068, 1.081, 0.02);
+    observerGroup.rotation.z = 2.35 - Math.PI / 2;
+    sun.visible = turnRing.visible = orbitRing.visible = false;
+    focusSun.visible = focusMoon.visible = focusObserver.visible = false;
+    rayGroup.visible = false;
   }
 
   function project(p, cam = overview) {
@@ -205,43 +179,6 @@ export function createScene(getModel, onVisualChange = () => {}) {
       el.style.width = el.style.height = Math.max(id === 'earth' ? 48 : 80, px * 2) + 'px';
     }
   }
-  const openingScene = new THREE.Scene();
-  openingScene.background = new THREE.Color('#07101f');
-  openingScene.add(stars.clone(true), new THREE.AmbientLight(0x8cabcb, 0.09));
-  const openingLight = sunlight.clone();
-  openingScene.add(openingLight);
-  const openingEarth = earthGroup.clone(true);
-  openingEarth.rotation.z = 0.45;
-  openingScene.add(openingEarth);
-  const openingMoon = moonGroup.clone(true);
-  openingMoon.position.set(0.107, 5.149, 0);
-  openingScene.add(openingMoon);
-  const openingExplorer = observerGroup.clone(true);
-  openingExplorer.position.set(-1.068, 1.081, 0.02);
-  openingExplorer.rotation.z = 2.35 - Math.PI / 2;
-  openingScene.add(openingExplorer);
-  const openingArt = new THREE.Group();
-  openingArt.add(openingEarth, openingMoon, openingExplorer);
-  openingScene.add(openingArt);
-  const openingCamera = new THREE.OrthographicCamera();
-  function renderOpening() {
-    const aspect = dims.w / dims.h,
-      narrow = dims.w <= 800,
-      width = narrow ? 7.8 : Math.max(14, 8.6 * aspect),
-      height = width / aspect;
-    openingArt.scale.setScalar(narrow ? 1.55 : 1);
-    openingMoon.position.set(narrow ? 1.2 : 0.107, narrow ? 2.1 : 5.149, 0);
-    openingCamera.left = -width / 2;
-    openingCamera.right = width / 2;
-    openingCamera.top = height / 2;
-    openingCamera.bottom = -height / 2;
-    openingCamera.near = 0.1;
-    openingCamera.far = 150;
-    openingCamera.position.set(narrow ? -0.3 : -3.1, 1.8, 24);
-    openingCamera.lookAt(narrow ? -0.3 : -3.1, 1.8, 0);
-    openingCamera.updateProjectionMatrix();
-    renderer.render(openingScene, openingCamera);
-  }
   let animationStart = 0,
     animationPhase = 'none';
   function update(snapshot, cover) {
@@ -252,17 +189,18 @@ export function createScene(getModel, onVisualChange = () => {}) {
     inSky = state.view === 'sky';
     $('lesson-ui').hidden = cover;
     const f = facts(state.theta, state.phi);
-    earthGroup.rotation.z = state.theta - state.originTheta;
+    art.scale.setScalar(1);
+    sun.visible = rayGroup.visible = true;
+    globe.userData.globe.rotation.y = state.theta - state.originTheta;
     moonGroup.position.set(...f.moon, 0);
     observerGroup.position.set(...f.observer, 0.02);
     observerGroup.rotation.z = state.theta - Math.PI / 2;
     const n = normal();
-    skyArc.visible = false;
     turnRing.visible = state.canTurn;
     orbitRing.visible = state.canMoveMoon || state.task === 'prediction';
     focusSun.visible = focusMoon.visible = focusObserver.visible = false;
-    focusMoon.position.copy(moonGroup.position);
-    focusObserver.position.copy(observerGroup.position).addScaledVector(n, 0.25);
+    focusMoon.position.copy(moonGroup.position).setZ(0.3);
+    focusObserver.position.copy(observerGroup.position).addScaledVector(n, 0.4).setZ(0.3);
     for (const id of state.path) {
       ({ sun: focusSun, moon: focusMoon, observer: focusObserver })[id].visible = true;
     }
@@ -310,6 +248,8 @@ export function createScene(getModel, onVisualChange = () => {}) {
         ? 'The explorer’s sky. Drag or use arrow keys to look around.'
         : 'An illustrative model of Earth, Sun, Moon and an explorer.',
     );
+    if (cover) poseCover();
+    frameView();
     layout();
   }
   function layout() {
@@ -338,7 +278,7 @@ export function createScene(getModel, onVisualChange = () => {}) {
     positionButton('earth', new THREE.Vector3(), R + 0.25);
     positionButton('sun', sun.position, 1);
     positionButton('moon', moonGroup.position, 0.7);
-    positionButton('observer', observerGroup.position.clone().addScaledVector(normal(), 0.3), 0.3);
+    positionButton('observer', observerGroup.position.clone().addScaledVector(normal(), 0.4), 0.42);
   }
   let drag = null;
   for (const id of ['earth', 'moon']) {
@@ -438,11 +378,13 @@ export function createScene(getModel, onVisualChange = () => {}) {
     requestAnimationFrame(frame);
     if (t - last < 1000 / 30) return;
     last = t;
+    if (!state) return;
+    sun.userData.tick(reduced ? 0 : t * 0.001);
+    explorer.userData.tick(0);
     if (coverOpen) {
-      renderOpening();
+      stage.render(overview);
       return;
     }
-    if (!state) return;
     const elapsed = reduced ? 5 : ((t - animationStart) / 1000) % 6;
     const phase =
       !state.rays || inSky
@@ -454,13 +396,15 @@ export function createScene(getModel, onVisualChange = () => {}) {
             : 'blocked_by_earth';
     for (const [i, p] of packets.entries()) {
       const u = reduced ? 0.5 : Math.max(0, Math.min(1, (elapsed - i * 2.5) / 2.5));
-      p.ball.scale.setScalar(dims.w <= 800 ? 3 : 1.6);
+      p.ball.scale.setScalar(dims.w <= 800 ? 2.4 : 1.4);
       p.ball.visible = reduced || (elapsed >= i * 2.5 && elapsed < (i + 1) * 2.5);
       p.ball.position.lerpVectors(p.a, p.b, u);
       // Reveal the second leg only after the first reaches the Moon.
-      rayGroup.children[i * 2].visible = reduced || elapsed >= i * 2.5;
+      p.beam.visible = reduced || elapsed >= i * 2.5;
     }
-    if (state.mode === 'demonstration' && state.rays && !inSky) {
+    // Help with the horizon keeps its own instruction; the rays may still be on
+    // from an earlier check.
+    if (state.mode === 'demonstration' && state.rays && !inSky && state.moment !== 'horizon') {
       $('instruction').textContent = reduced
         ? packets.length > 1
           ? 'Sun → Moon → our eyes.'
@@ -478,11 +422,10 @@ export function createScene(getModel, onVisualChange = () => {}) {
       animationPhase = phase;
       onVisualChange();
     }
-    solar.tick(reduced ? 0 : t * 0.001);
     if (inSky) {
       ground.tick(reduced ? 0 : t * 0.001);
-      renderer.render(ground.scene, ground.camera);
-    } else renderer.render(scene, overview);
+      ground.render();
+    } else stage.render(overview);
     layout();
   }
   window.addEventListener('resize', () => {

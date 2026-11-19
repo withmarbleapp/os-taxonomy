@@ -62,6 +62,8 @@ const api = mountLesson({
     api.instruction('Explore how layers help count cubes.');
   },
 });
+// For the browser check (scripts/cube-browser-check.mjs).
+window.cubeLesson = { model: () => exp, snapshot: () => exp?.snapshot(), view: () => scene.presentation(), project: scene.project };
 $('turn').onclick = () => exp.learnerRotate(0.3);
 $('peel').onclick = () => exp.learnerOpen();
 $('fresh').onclick = () => api.intent('I would like to try a new block on my own.');

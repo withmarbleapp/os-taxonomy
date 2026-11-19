@@ -1,7 +1,6 @@
 # Marble local player — developer preview
 
-A local-first desktop shell and web player for portable interactive lessons. Cubes,
-Croatoan clues and The Moon’s daytime visit share one tutor, speech connection, package loader and log store.
+A local-first desktop shell and web player for portable interactive lessons. Cube volume, The Moon’s daytime visit and How does a rainbow form? share one tutor, speech connection, package loader and log store.
 This directory is the authoritative implementation in the os-taxonomy repository.
 The audio authoring skill references it directly; exported starters are generated
 artifacts, not another maintained implementation. Original prototypes remain separate.

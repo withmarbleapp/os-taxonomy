@@ -272,13 +272,13 @@ export function grass({ radius = 110, count = 22000, heightAt = level, keep = ()
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
   geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
   const material = new THREE.ShaderMaterial({
-    uniforms: { time: { value: 0 } },
+    uniforms: { time: { value: 0 }, light: { value: new THREE.Color(1, 1, 1) } },
     side: THREE.DoubleSide,
     vertexShader: `uniform float time; varying vec2 vUv; varying vec3 vWorld;
       void main(){ vUv = uv; vec3 p = position;
         p.x += sin(time * 1.25 + position.x * 0.45 + position.z * 0.31) * 0.045 * uv.y;
         vec4 w = modelMatrix * vec4(p, 1.0); vWorld = w.xyz; gl_Position = projectionMatrix * viewMatrix * w; }`,
-    fragmentShader: `varying vec2 vUv; varying vec3 vWorld;
+    fragmentShader: `uniform vec3 light; varying vec2 vUv; varying vec3 vWorld;
       float blade(vec2 p, float root, float lean, float height, float width){
         float y = p.y / height; float centre = root + lean * y * y;
         return max(abs(p.x - centre) - width * (1.0 - y), max(-y, y - 1.0)); }
@@ -289,10 +289,13 @@ export function grass({ radius = 110, count = 22000, heightAt = level, keep = ()
         vec3 col = mix(vec3(0.19, 0.34, 0.17), vec3(0.57, 0.71, 0.29), vUv.y);
         col *= 0.94 + sin(vWorld.x * 2.1 + vWorld.z * 1.3) * 0.08;
         if (d > -0.008) col = mix(vec3(0.10, 0.18, 0.08), col, smoothstep(15.0, 75.0, length(vWorld.xz)) * 0.7);
-        gl_FragColor = vec4(pow(col, vec3(2.2)), 1.0); }`,
+        gl_FragColor = vec4(pow(col, vec3(2.2)) * light, 1.0); }`,
   });
   const g = new THREE.Group().add(new THREE.Mesh(geometry, material));
   g.userData.tick = (seconds) => (material.uniforms.time.value = seconds);
+  // The blades draw their own colour, so they do not follow the stage's light.
+  // `light` (a THREE.Color, white by default) dims and tints them, for dusk or night.
+  g.userData.light = material.uniforms.light.value;
   return unlined(g);
 }
 
@@ -558,7 +561,8 @@ export function countryside({ village: town = true, peaks = true, avoid = [] } =
     open = (x, z) => !onPlaza(x, z, 0.5) && !onLane(x, z);
   const fx = -1.35,
     fz = -10.5,
-    turf = grass({ heightAt, keep: open });
+    turf = grass({ heightAt, keep: open }),
+    clouds = skyClouds({ avoid });
   g.add(
     meadow({ heightAt }),
     plaza({ at: [square.x, 0, square.z], radius: square.r, heightAt }),
@@ -566,7 +570,7 @@ export function countryside({ village: town = true, peaks = true, avoid = [] } =
     fountain({ at: [fx, heightAt(fx, fz) + 0.075, fz] }),
     turf,
     flowers({ heightAt, keep: open }),
-    skyClouds({ avoid }),
+    clouds,
   );
   const b = batch();
   for (const [x, z, h, kind] of [[-14, -31, 7.5, 'oak'], [-17, -43, 8.2, 'oak'], [20, -50, 10, 'birch'], [-31, -65, 10, 'willow'], [37, -75, 12, 'fir'], [-27, 40, 8, 'fir'], [26, 48, 9, 'oak'], [56, 8, 11, 'willow'], [-58, 10, 12, 'birch']])
@@ -600,5 +604,9 @@ export function countryside({ village: town = true, peaks = true, avoid = [] } =
   if (peaks) g.add(mountains());
   g.userData.heightAt = heightAt;
   g.userData.tick = turf.userData.tick;
+  // For a scene that changes with the time of day: the grass (see `grass`) and
+  // the sky's clouds, to dim or hide.
+  g.userData.turf = turf;
+  g.userData.clouds = clouds;
   return g;
 }

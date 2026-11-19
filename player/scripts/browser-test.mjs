@@ -112,14 +112,6 @@ const launch = async (title) => {
     );
     await shot('cube-title');
   }
-  if (title === 'Croatoan clues') {
-    assert.equal(
-      await b.evaluate("document.querySelector('#start-title').textContent"),
-      'Where did the Roanoke settlers go?',
-    );
-    assert.equal(await frameEval("document.querySelector('.cover-art').hidden"), false);
-    await shot('roanoke-title');
-  }
   await b.evaluate("document.querySelector('#start').click()");
   await b.until("document.querySelector('#messages').textContent.length>0");
 };
@@ -260,42 +252,6 @@ try {
   assert.equal(seen.at(-1).snapshot.state.attempts.at(-1).assisted, true);
   await shot('cubes-corrected');
   await b.evaluate("document.querySelector('#home').click()");
-  await launch('Croatoan clues');
-  await b.until("document.querySelector('#instruction').textContent===''");
-  assert.equal(await frameEval("document.querySelector('.intro-stage').hidden"), false);
-  await shot('roanoke');
-  await frameEval("document.querySelector('[data-leave-intro]').click()");
-  await b.until(
-    "document.querySelector('#instruction').textContent==='Choose a place to investigate.'",
-  );
-  await frameEval("document.querySelector('[data-place=fort]').click()");
-  await wait(700);
-  const source = await frameEval(
-    "const b=document.querySelector('[data-source]');b.click();b.dataset.source",
-  );
-  await wait(850);
-  assert.equal(seen.at(-1).snapshot.state.activeSource, source);
-  await shot('roanoke-source');
-  await b.send('Emulation.setDeviceMetricsOverride', {
-    width: 390,
-    height: 844,
-    deviceScaleFactor: 1,
-    mobile: true,
-  });
-  await shot('roanoke-source-mobile');
-  assert.equal(await b.evaluate('document.documentElement.scrollWidth<=innerWidth'), true);
-  await b.send('Emulation.setDeviceMetricsOverride', {
-    width: 1440,
-    height: 960,
-    deviceScaleFactor: 1,
-    mobile: false,
-  });
-
-  await frameEval("document.querySelector('[data-close-source]').click()");
-  await wait(850);
-  assert.equal(seen.at(-1).snapshot.state.activeSource, '');
-  assert.equal(seen.at(-1).snapshot.state.scene, 'fort');
-  await b.evaluate("document.querySelector('#home').click()");
   await launch('Equal parts');
   const beforeForgery = transcriptions;
   await frameEval("window.forgedPort.postMessage({type:'shortcut',action:'talk_start'})");
@@ -361,7 +317,7 @@ try {
   assert.deepEqual(b.errors, []);
 
   console.log(
-    'PASS: cube wrong→correct revision; Roanoke source→scene focus; imported additional lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
+    'PASS: cube wrong→correct revision; imported additional lesson; isolated frames; Space in player/scene, ignored in inputs and menus.',
   );
 } catch (e) {
   console.error('Browser errors', b.errors);

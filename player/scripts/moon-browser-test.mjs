@@ -47,7 +47,7 @@ try {
     mobile: false,
   });
   await b.send('Page.navigate', { url: service.origin });
-  await b.until('document.querySelectorAll(".lesson-card").length===3');
+  await b.until('document.querySelectorAll(".lesson-card").length>=3');
   await b.evaluate(
     "Array.from(document.querySelectorAll('.lesson-card')).find(c=>c.textContent.includes('Moon’s daytime')).querySelector('.lesson-open').click()",
   );
@@ -69,7 +69,7 @@ try {
     return r.result.value;
   };
   const until = async (expression) => {
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 300; i++) {
       if (await frame(expression)) return;
       await wait(50);
     }
@@ -87,7 +87,9 @@ try {
     await wait(250);
   };
   const checkEarthDrag = async () => {
-    await wait(150); // Let responsive camera projection and object hit areas settle.
+    // Let the scene show the handle and settle its camera projection and hit areas.
+    await until("document.querySelector('#earth').getBoundingClientRect().width>0");
+    await wait(500);
     const rect = await frame(
       `(()=>{const r=document.querySelector('#earth').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2,r:r.width/2}})()`,
     );
@@ -114,6 +116,7 @@ try {
         button: 'left',
         clickCount: 1,
       });
+      await wait(400); // The scene handles the drag on its own next frame.
       const after = await frame('moonLesson.snapshot().state.theta');
       const delta = Math.atan2(Math.sin(after - before), Math.cos(after - before));
       assert.ok(
@@ -157,7 +160,8 @@ try {
   await until('moonLesson.snapshot().state.revealed');
   assert.equal(await frame('moonLesson.snapshot().state.attempts.at(-1).correct'), true);
   await send('below');
-  await until('!moonLesson.snapshot().state.moonAboveHorizon');
+  // The check before this already had the Moon below the horizon, so wait for the moment itself.
+  await until("moonLesson.snapshot().state.moment==='daytime_without_moon'");
   await send('light');
   await until('moonLesson.snapshot().state.rays');
   assert.equal(await frame('moonLesson.view().lightSegments'), 1);

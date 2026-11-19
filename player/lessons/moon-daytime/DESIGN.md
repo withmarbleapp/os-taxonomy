@@ -8,9 +8,9 @@ cycle is not required. Introduce horizon and reflection in the scene when needed
 ## Reused experience
 
 Adapted from `.agents/skills/marble-builder/examples/moon-visit/source` at taxonomy
-commit `cb47bae169ea6bf02db7ed9f52829b21489504f0`. Reuses the original Earth atlas,
-explorer, textured Moon, Sun effects, landscape and coupled sky projection. Original
-geometry and task generator are retained in `model/geometry.mjs`. Removes the
+commit `cb47bae169ea6bf02db7ed9f52829b21489504f0`. Keeps the coupled sky projection;
+the original geometry and task generator are retained in `model/geometry.mjs`. Since
+1.4.0 the pictures come from the player's shared 3D kit (see the last section). Removes the
 four-question route, global all-correct threshold, completion screen and duplicate
 feedback toast. Shared Marble owns dialogue, voice, reflection and stopping.
 
@@ -135,3 +135,35 @@ rules remain in place. The tutor receives the marker's visibility and meaning,
 and the horizon demonstration explicitly names its color and label.
 Moon model checks and the synthetic browser suite passed. Desktop and mobile
 screenshots were inspected, including label clearance from the Earth control.
+
+### Shared 3D kit (1.4.0)
+
+Both views now draw through the player's kit (`/sdk/stage.mjs`, `/sdk/props.mjs`)
+instead of the lesson's own renderer and copy of three.js, so the lesson has the
+same flat shading and hairline outlines as the others and no longer carries
+`vendor/`. The model, contracts, teaching file, controls and tutor view are
+unchanged.
+
+- **Space view** is a stage in the kit's `space` setting with the kit's `star`,
+  `earth`, `moon` and `orbit`. Light spreads from the Sun's position, so each
+  body's lit half faces the Sun wherever it is on its orbit, and nothing casts a
+  shadow: Earth's shadow falling across the Moon would suggest an eclipse every
+  month. The explorer is the kit's child figure, drawn in plain colour so it
+  stays readable on Earth's night side. Light journeys are the kit's glowing
+  `light()` lines with a bright packet travelling along them.
+- **Sky view** is a second stage in the `daylight` setting, sharing the first
+  stage's renderer, standing in the kit's `countryside`. It is the explorer's own
+  view, so the Sun is in it as the kit's soft `sun()` disc; a view from above
+  would use the edge-of-screen sign instead. The Moon shows only its sunlit
+  part, as worked out by the model. At night the same scene is relit: dark sky,
+  stars, dimmed land and no clouds.
+- **Cover** is the space scene posed and reframed, not a separate copy.
+- A horizon demonstration keeps its own instruction while light rays from an
+  earlier check are still showing.
+
+Added to the kit for this: `createStage(canvas, { share })` for a second setting
+on one canvas, a `light` tint on `grass`, and `turf` and `clouds` handles on
+`countryside`.
+
+Checked at 1440×960, 1024×768 and 390×844 in headless Chrome, which draws in
+software. Not checked on a real tablet or phone GPU.

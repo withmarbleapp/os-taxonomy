@@ -10,7 +10,7 @@ packages/teaching-runtime  Adaptive decisions, latest context, cancellation
 packages/providers        Local structured-output HTTP and official CLI adapters
 packages/voice            Browser speech workers, capture/playback and verified model provisioning
 packages/authoring-tools  Archive validation, CLI and minimal lesson starter
-lessons/                  Cubes and Croatoan models, visuals and teaching packages
+lessons/                  Bundled lessons: models, visuals and teaching packages
 ```
 
 The desktop process owns capabilities; lesson JavaScript executes only in a
