@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "cube-volume",
-  "releaseId": "cube-volume-lesson-v10",
-  "experienceReleaseId": "cube-volume-v2",
+  "releaseId": "cube-volume-lesson-v11",
+  "experienceReleaseId": "cube-volume-v3",
   "curriculum": [
     "mt_d7XktBQPxm",
     "mt_IuHa5UI5od"
@@ -26,26 +26,8 @@
             "A right total with a wrong layer count, or a right layer count with a wrong total.",
             "A plan checked after the layers were opened, after reopen_plan, or after the counts were said aloud: its event carries assisted true.",
             "Agreeing with an explanation, or repeating a count the tutor just gave.",
-            "Placing and stacking cubes in the building activity: it shows what a layer is, not that the child can count with one."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "hidden-cubes",
-      "objective": "Count every cube once, including the ones that cannot be seen.",
-      "criteria": [
-        {
-          "id": "include-hidden",
-          "lookFor": [
-            "Says the cubes at the back or in the middle are counted because each belongs to a layer, for example \"the middle one is in the middle layer\".",
-            "Says a corner cube is one cube even though three of its faces show.",
-            "Correctly says a thin block has no cube hidden right inside when hasInterior is false."
-          ],
-          "notEnough": [
-            "Opening the layers and looking.",
-            "Counting the squares on the outside faces.",
-            "Naming a hidden cube in a block where interiorCount is zero."
+            "Placing and stacking cubes in the building activity: it shows what a layer is, not that the child can count with one.",
+            "Counting the squares on the outside faces, or only the cubes that can be seen."
           ]
         }
       ]
@@ -70,12 +52,6 @@
         "id": "layers",
         "goals": [
           "layer-structure"
-        ]
-      },
-      {
-        "id": "inside",
-        "goals": [
-          "hidden-cubes"
         ]
       },
       {
@@ -104,14 +80,6 @@
         "focuses": [
           "layers",
           "strategy"
-        ]
-      },
-      {
-        "id": "include-hidden",
-        "description": "Count the cubes you cannot see",
-        "prompt": "How do you feel about making sure the cubes you cannot see get counted too?",
-        "focuses": [
-          "inside"
         ]
       }
     ]
@@ -232,7 +200,7 @@
         "focus": "layers"
       },
       "text": "You’re right: no cube is completely hidden inside this block. Some may be behind others. There are {cubesPerLayer} in each layer and {layerCount} layers: {totalCubes} cubes altogether.",
-      "whenToUse": "The child rightly says nothing is hidden right inside a thin block.",
+      "whenToUse": "Only if the child themselves says nothing is hidden inside a thin block. Never to open the subject.",
       "learnerContribution": "Nothing more; it confirms their observation."
     },
     {
@@ -246,7 +214,7 @@
         "focus": "inside"
       },
       "text": "Some cubes are hidden right inside this block. They still count! Pulling the layers apart lets us see where they belong.",
-      "whenToUse": "The block has a cube hidden right inside and the child leaves it out, or asks whether hidden cubes count.",
+      "whenToUse": "Only if the child’s own count or words leave out cubes they cannot see, or they ask whether those count, and this block has one enclosed on every side.",
       "learnerContribution": "Find which layer the hidden cube belongs to."
     },
     {
@@ -271,7 +239,7 @@
         "kind": "inside"
       },
       "text": "Here is a bigger block. A cube is hidden right in the middle. It is part of the middle layer, so counting every layer counts that cube too.",
-      "whenToUse": "The child is ready to see a cube hidden right inside and the current block has none. It replaces the block, so not during an unchecked plan.",
+      "whenToUse": "Only if the child has left out cubes they cannot see and the current block has none enclosed on every side. It replaces the block, so not during an unchecked plan.",
       "learnerContribution": "Say why counting layers still counts the middle cube."
     },
     {
@@ -286,5 +254,5 @@
       "learnerContribution": "Count one layer and say how many layers there are."
     }
   ],
-  "tutorGuidance": "Use this map adaptively; it is a set of opportunities, not an order. The block on the table is real to the model: view and state give exact counts (cubesPerLayer, layerCount, totalCubes, interiorCount, hasInterior), so never count from memory. explain_model speaks a short authored explanation while the block shows it; follow it with one small thing for the child to count, predict or explain.\n1. ONE CUBE IS ONE. Worth showing when the child counts faces or squares, or counts a corner cube twice: unit-help colours one cube. Evidence: says the coloured piece is one cube although three faces show. Not evidence: agreeing.\n2. A LAYER IS ONE FLAT LEVEL, BACK ROWS INCLUDED. one-layer colours the bottom layer and gives its count; layer-example shows a small two-layer block. The child can build one: prepare_activity fill gives an empty 3 by 2 layer to fill cube by cube, then Stack layer and Add back rows. Evidence: counts a whole layer, back row included, without being told the number. Building alone shows what a layer is, not that they can count with it.\n3. EQUAL LAYERS MAKE THE BLOCK. layers opens the block and gives cubes in one layer, layers and total; repetition-help is for a right layer count with a wrong total. Opening layers never adds cubes: the child can use Open layers or drag up to see this. Evidence: own words joining one layer, how many layers and the total; adding and multiplying are both right.\n4. A PLAN ON A FRESH BLOCK. prepare_fresh_box gives a closed block the child has not seen and three boxes to fill before pressing Check my plan. small is the first step (the very first is 2 by 2 by 2); long changes the shape and the arithmetic; buried has a cube hidden right inside. Do not say the counts or open the layers first unless the child asks for help: either makes the attempt assisted. Evidence: all three numbers right with assisted false, ideally with how they found it. A child who already explains layers at the start can go straight here.\n5. CUBES YOU CANNOT SEE. Only when hasInterior is true is a cube shut in on every side; inside colours it once the layers are open, and larger-example brings a 3 by 3 by 3 block when the current one has none. A cube behind others from this angle is different: turning the block shows it. Evidence: says the middle cube is counted because it belongs to the middle layer. If hasInterior is false and the child says nothing is hidden inside, they are right: use no-buried.\nHELP ON CURRENT WORK. After a checked plan, compare-plan sets their numbers beside the opened block; then reopen_plan lets them correct the same block, recorded as assisted. set_support opens or closes the layers when the child only asks for that; opening before a plan is checked marks it assisted. show_example replaces the block, so it is refused while a plan is unchecked: talk about leaving the plan first.\nWHAT THE MODEL RECORDS. Each checked plan is a response_committed event with the three numbers, correct and assisted. Drafts in the boxes and earlier attempts are not the current answer. If prepare_fresh_box is refused because no unused blocks are left, carry on with the examples and do not call that work a fresh check.\nFACTS TO KEEP RIGHT. Volume here is how much space the block fills, measured by counting equal cubes with no gaps. Turning the block or pulling the layers apart does not change the number of cubes. Dimensions are width, rows back and layers high; any way of slicing into equal layers would count the same total, but this model only opens horizontal layers.\nLIMITS OF THIS MODEL. The cubes have no real size, so do not give centimetres. The thin lines between cubes are drawn edges, not gaps. You know the exact counts but not which cubes the child can see from their angle, so do not say a particular cube is hidden from them. A plan with three labelled boxes hands the child the method: it does not show they would choose layers unprompted.\nWORDS. Say cubes, layer, altogether, the back row, the middle. Keep volume for when it is explained, and keep factors, horizontal, interior and independent out of what the child hears."
+  "tutorGuidance": "Use this map adaptively; it is a set of opportunities, not an order. The block on the table is real to the model: view and state give exact counts (cubesPerLayer, layerCount, totalCubes), so never count from memory. explain_model speaks a short authored explanation while the block shows it; follow it with one small thing for the child to count, predict or explain.\n1. ONE CUBE IS ONE. Worth showing when the child counts faces or squares, or counts a corner cube twice: unit-help colours one cube. Evidence: says the coloured piece is one cube although three faces show. Not evidence: agreeing.\n2. A LAYER IS ONE FLAT LEVEL, BACK ROWS INCLUDED. one-layer colours the bottom layer and gives its count; layer-example shows a small two-layer block. The child can build one: prepare_activity fill gives an empty 3 by 2 layer to fill cube by cube, then Stack layer and Add back rows. Evidence: counts a whole layer, back row included, without being told the number. Building alone shows what a layer is, not that they can count with it.\n3. EQUAL LAYERS MAKE THE BLOCK. layers opens the block and gives cubes in one layer, layers and total; repetition-help is for a right layer count with a wrong total. Opening layers never adds cubes: the child can use Open layers or drag up to see this. Evidence: own words joining one layer, how many layers and the total; adding and multiplying are both right.\n4. A PLAN ON A FRESH BLOCK. prepare_fresh_box gives a closed block the child has not seen and three boxes to fill before pressing Check my plan. small is the first step (the very first is 2 by 2 by 2); large and long change the size, the shape and the arithmetic. Do not say the counts or open the layers first unless the child asks for help: either makes the attempt assisted. Evidence: all three numbers right with assisted false, ideally with how they found it. A child who already explains layers at the start can go straight here.\nA MISTAKE TO WATCH FOR, NOT A TOPIC. Some children count only the cubes they can see, or count the squares on the faces, and so leave out cubes at the back or in the middle. Counting in layers already prevents this, so most children never need it mentioned. Do not ask about hidden cubes, do not go looking for them, and do not present them as something special. Raise it only when the child’s own count or words show the mistake, or they ask: then inside (when hasInterior is true) or larger-example shows that the cube in the middle is just part of the middle layer, and no-buried agrees with a child who says a thin block has none. Once is enough; go back to layers.\nHELP ON CURRENT WORK. After a checked plan, compare-plan sets their numbers beside the opened block; then reopen_plan lets them correct the same block, recorded as assisted. set_support opens or closes the layers when the child only asks for that; opening before a plan is checked marks it assisted. show_example replaces the block, so it is refused while a plan is unchecked: talk about leaving the plan first.\nWHAT THE MODEL RECORDS. Each checked plan is a response_committed event with the three numbers, correct and assisted. Drafts in the boxes and earlier attempts are not the current answer. If prepare_fresh_box is refused because no unused blocks are left, carry on with the examples and do not call that work a fresh check.\nFACTS TO KEEP RIGHT. Volume here is how much space the block fills, measured by counting equal cubes with no gaps. Turning the block or pulling the layers apart does not change the number of cubes. Dimensions are width, rows back and layers high; any way of slicing into equal layers would count the same total, but this model only opens horizontal layers.\nLIMITS OF THIS MODEL. The cubes have no real size, so do not give centimetres. The thin lines between cubes are drawn edges, not gaps. You know the exact counts but not what the child can see from their angle. A plan with three labelled boxes hands the child the method: it does not show they would choose layers unprompted.\nWORDS. Say cubes, layer, altogether, the back row. Keep volume for when it is explained, and keep factors, horizontal and independent out of what the child hears."
 }

@@ -26,6 +26,7 @@ import {
 } from '../../packages/authoring-tools/archive.mjs';
 import { safePath } from '../../packages/lesson-contract/package.mjs';
 import { validate } from '../../packages/lesson-contract/contracts.mjs';
+import { trimArguments } from '../../packages/teaching-runtime/records.mjs';
 import {
   tutorSystem,
   teachingTools,
@@ -495,7 +496,9 @@ export async function createService({
               validate(decisionSchema, decision);
               const t = tools.find((t) => t.name === decision.tool);
               if (!t) throw Error('Unavailable tutor tool');
-              validate(t.inputSchema, JSON.parse(decision.arguments));
+              const args = JSON.parse(decision.arguments);
+              if (trimArguments(t, args).length) decision.arguments = JSON.stringify(args);
+              validate(t.inputSchema, args);
               if (streaming) {
                 event({ type: 'decision', decision });
                 res.end();

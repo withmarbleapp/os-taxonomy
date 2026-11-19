@@ -102,3 +102,37 @@ test('imports cannot replace a bundled release or grant shortcut trust', async (
     await rm(dir, { recursive: true, force: true });
   }
 });
+
+test('the service keeps a reply whose arguments carry another tool’s field', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'marble-http-'));
+  const s = await createService({
+    dataDir: dir,
+    inference: async () => ({
+      tool: 'say',
+      arguments: JSON.stringify({ text: 'Yes, twelve.', notes: [{ skill: 'count-block', text: 'You said: twelve.' }] }),
+    }),
+  });
+  try {
+    const headers = { 'x-marble-token': s.token, origin: s.origin, 'content-type': 'application/json' };
+    const library = await (await fetch(s.origin + '/api/library', { headers })).json();
+    const lesson = library.find((l) => l.manifest.id === 'cube-volume').manifest;
+    const { createCubes } = await import('../lessons/cube-volume/model/cubes.mjs');
+    const model = createCubes({ sessionId: crypto.randomUUID() });
+    const reply = await fetch(s.origin + '/api/infer', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        lessonId: lesson.id,
+        version: lesson.version,
+        messages: [],
+        context: { snapshot: model.snapshot(), view: {}, events: [], learning: [], confidence: [] },
+      }),
+    });
+    const decision = await reply.json();
+    assert.equal(reply.status, 200, JSON.stringify(decision));
+    assert.deepEqual(JSON.parse(decision.arguments), { text: 'Yes, twelve.' });
+  } finally {
+    await s.close();
+    await rm(dir, { recursive: true, force: true });
+  }
+});

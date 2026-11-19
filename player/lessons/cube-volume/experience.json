@@ -2,8 +2,8 @@
   "protocolVersion": 1,
   "kind": "cube-volume",
   "apiVersion": 1,
-  "releaseId": "cube-volume-v2",
-  "description": "A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. Rotate to inspect; open whole horizontal layers to see occluded and interior cubes. A fully buried cube exists only when every dimension exceeds two. Rotation does not change volume. Filling, stacking and adding back rows are real learner actions; opening layers does not add cubes. The model scores submitted layer plans exactly; events alone do not establish understanding. No required stage count.",
+  "releaseId": "cube-volume-v3",
+  "description": "A filled rectangular solid made of equal unit cubes, with no gaps or overlaps. Dimensions are [width, depth, horizontal layers]; units are illustrative cubic units, not centimetres. Rotate to inspect; open whole horizontal layers to see every cube. Rotation does not change volume. interiorCount is how many cubes are enclosed on every side (none unless every dimension exceeds two): a fact for answering a child who leaves them out, not a topic to raise. Filling, stacking and adding back rows are real learner actions; opening layers does not add cubes. The model scores submitted layer plans exactly; events alone do not establish understanding. No required stage count.",
   "stateSchema": {
     "type": "object",
     "properties": {
@@ -213,7 +213,7 @@
   "actions": [
     {
       "name": "show_teaching",
-      "description": "Physical visual support used by explain_model. Highlights a unit cube, opens/highlights complete layers, or highlights actual interior cubes. Records exposure and assistance, not understanding.",
+      "description": "Physical visual support used by explain_model. Highlights a unit cube, opens/highlights complete layers, or highlights the cubes enclosed on every side (only for a child whose count left them out). Records exposure and assistance, not understanding.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -227,7 +227,7 @@
     },
     {
       "name": "show_example",
-      "description": "Physical worked example used by explain_model: layer example is 3 by 2 by 2, inside example is a different 3 by 3 by 3 block. A new case is explicitly announced by the authored explanation. This is teaching, not a test.",
+      "description": "Physical worked example used by explain_model: layer example is 3 by 2 by 2, inside example is a different 3 by 3 by 3 block, for a child who has left out cubes they cannot see. A new case is explicitly announced by the authored explanation. This is teaching, not a test.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -241,7 +241,7 @@
     },
     {
       "name": "prepare_activity",
-      "description": "Start a small fill-and-stack investigation (kind fill, a 3 by 2 bottom layer), or inspect a filled 3 by 3 by 3 solid (kind explore). Discuss replacing unfinished work first. Filling launches the complete fill request automatically. These are optional teaching formats. Never reset to filling after the learner already explains layers and hidden cubes.",
+      "description": "Start a small fill-and-stack investigation (kind fill, a 3 by 2 bottom layer), or inspect a filled 3 by 3 by 3 solid (kind explore). Discuss replacing unfinished work first. Filling launches the complete fill request automatically. These are optional teaching formats. Never reset to filling after the learner already explains layers.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -255,12 +255,12 @@
     },
     {
       "name": "prepare_fresh_box",
-      "description": "Offer an optional fresh independent layer-plan problem, excluding previously seen shapes and their rotations. The first small problem is 2 by 2 by 2. Choose small, buried or long to address a remaining uncertainty. The learner must enter all three fields and Check my plan. Do not supply counts or open layers before commitment unless help is requested. This launches the complete plan request automatically. No three-stage gate.",
+      "description": "Offer an optional fresh independent layer-plan problem, excluding previously seen shapes and their rotations. The first small problem is 2 by 2 by 2. Choose small, large (at least 3 in every direction) or long to vary size and shape. The learner must enter all three fields and Check my plan. Do not supply counts or open layers before commitment unless help is requested. This launches the complete plan request automatically. No three-stage gate.",
       "inputSchema": {
         "type": "object",
         "properties": {
           "difficulty": {
-            "enum": ["small", "buried", "long"]
+            "enum": ["small", "large", "long"]
           }
         },
         "required": ["difficulty"],

@@ -1,3 +1,4 @@
+import { trimArguments } from '../teaching-runtime/records.mjs';
 import { spawn } from 'node:child_process';
 import { createSentenceEmitter, partialSayText } from '../teaching-runtime/speech-stream.mjs';
 import { validate } from '../lesson-contract/contracts.mjs';
@@ -44,6 +45,7 @@ export function decisionStream(tools, onEvent, signal, records = {}) {
         typeof decision.arguments === 'string'
           ? JSON.parse(decision.arguments)
           : decision.arguments;
+      trimArguments(tool, args);
       validate(tool.inputSchema, args);
       if (sentences.text && (decision.tool !== 'say' || !args.text.startsWith(sentences.text)))
         throw Error('Speech stream did not match the final reply');

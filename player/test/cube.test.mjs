@@ -84,7 +84,7 @@ test('cube: a plan is scored exactly, and help before or after it is recorded', 
   assert.equal(state().attempts.at(-1).assisted, true);
   assert.equal(events.filter((e) => e.name === 'response_committed').length, 4);
   // A worked example cannot replace a plan that has not been checked.
-  exec(m, 'prepare_fresh_box', { difficulty: 'buried' });
+  exec(m, 'prepare_fresh_box', { difficulty: 'large' });
   assert.equal(state().hasInterior, true);
   assert.equal(exec(m, 'show_example', { kind: 'layers' }).error.code, 'unfinished_plan');
 });

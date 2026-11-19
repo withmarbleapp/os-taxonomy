@@ -78,3 +78,15 @@ export function recordGuidance(pkg) {
     ' Put records in the same decision as your reply or action, after arguments, and use empty arrays when there is nothing to record. There is no separate recording step.'
   );
 }
+
+// A tutor sometimes fills in a field that belongs to another tool (the wrap-up
+// notes on an ordinary reply). Those fields are removed, so the reply is kept;
+// what is left is still validated against the tool's own schema. Returns the
+// names removed.
+export function trimArguments(tool, args) {
+  const known = tool?.inputSchema?.properties;
+  if (!known || !args || typeof args !== 'object' || Array.isArray(args)) return [];
+  const extra = Object.keys(args).filter((k) => !(k in known));
+  for (const k of extra) delete args[k];
+  return extra;
+}

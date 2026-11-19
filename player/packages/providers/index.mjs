@@ -15,6 +15,7 @@ import {
   DECISION_FORMAT,
   DECISION_FORMAT_OBJECT,
   pickRecords,
+  trimArguments,
 } from '../teaching-runtime/records.mjs';
 // `records` are the optional arrays a decision may carry after its arguments
 // (see teaching-runtime/records.mjs). They are required in schemas sent to
@@ -211,6 +212,7 @@ export async function infer({
       const decision = JSON.parse(data.message.content);
       const tool = tools.find((t) => t.name === decision.tool);
       if (!tool) throw Error('Local model returned an unknown tool');
+      trimArguments(tool, decision.arguments);
       validate(tool.inputSchema, decision.arguments);
       return {
         tool: decision.tool,

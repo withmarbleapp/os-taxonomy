@@ -172,7 +172,7 @@ try {
   await wait(300);
   s = await state();
   assert.deepEqual([s.attempts.at(-1).correct, s.attempts.at(-1).assisted], [true, true]);
-  for (const difficulty of ['buried', 'long']) {
+  for (const difficulty of ['large', 'long']) {
     await run('prepare_fresh_box', { difficulty });
     await both('07-plan-' + difficulty, () => mustShow('perLayer', 'layers', 'total', 'commit'));
   }

@@ -14,15 +14,14 @@ research, which was not kept with the lesson.
   (1024×768), also checked at phone width (390×844).
 - **Goal:** on a block they have not seen, the child gives the cubes in one
   layer, the number of layers and the cubes altogether, and says how that
-  counts every cube once, including the ones they cannot see.
+  counts every cube once.
 - **Not in scope:** the formula length × width × height as a rule, cubic units
   and their notation (cm³), estimating, comparing volume with surface area,
   shapes that are not cuboids.
 - **Assumed prerequisites:** counts in equal groups or multiplies small
   numbers; has handled or seen interlocking cubes.
 - **Taxonomy:** `mt_d7XktBQPxm` Counting Unit Cubes and `mt_IuHa5UI5od` What
-  volume means. The lesson covers the layer-counting and hidden-cube parts of
-  both. It does not cover cubic-unit notation or the contrast with area, which
+  volume means. The lesson covers the layer-counting part of both. It does not cover cubic-unit notation or the contrast with area, which
   both topics include, so it claims neither whole topic.
 - **Likely misconceptions:** counting only the cubes that can be seen; counting
   a corner or edge cube once per visible face. Both are listed in the taxonomy
@@ -44,8 +43,13 @@ is closed or open.
 | One cube is one, however many faces show | `unit-help` colours one cube | say how many cubes the coloured piece is | says it is one cube |
 | A layer is one flat level, back rows included | `one-layer`, `layer-example`; the building activity | fill a layer cube by cube, then stack it | counts a whole layer without being told |
 | Equal layers make the block | `layers`, `repetition-help`; Open layers | add or multiply the layers | joins one layer, the number of layers and the total in their own words |
-| A plan on a fresh block | `prepare_fresh_box` (small, long, buried) | fill three boxes and check | all three right, with no help first |
-| Cubes that cannot be seen | `inside`, `larger-example` | find the hidden cube's layer | says it is counted because it belongs to a layer |
+| A plan on a fresh block | `prepare_fresh_box` (small, large, long) | fill three boxes and check | all three right, with no help first |
+
+Leaving out cubes that cannot be seen is a common mistake, not a part of the
+map. Counting in layers already prevents it, so the tutor is told not to raise
+hidden cubes at all unless the child's own count or words show the mistake.
+Three explanations (`inside`, `larger-example`, `no-buried`) exist for that
+case only, and it is not a goal or a wrap-up skill.
 
 The map is used in any order. A child who already explains layers can go
 straight to a fresh block.
@@ -85,7 +89,7 @@ count and anything being said about the old one is out of date.
 
 ## Validation
 
-- `test/cube.test.mjs`: counts and hidden cubes; building; exact scoring;
+- `test/cube.test.mjs`: counts; building; exact scoring;
   help recorded before and after a plan; fresh blocks never repeat a shape;
   wrap-up marks.
 - `scripts/cube-browser-check.mjs`: opens the lesson in the real player with a

@@ -1,6 +1,6 @@
 import { createSpeechQueue } from './speech-stream.mjs';
 import { validate } from '../lesson-contract/contracts.mjs';
-import { DECISION_FORMAT, recordGuidance, recordSchemaFor, pickRecords } from './records.mjs';
+import { DECISION_FORMAT, recordGuidance, recordSchemaFor, pickRecords, trimArguments } from './records.mjs';
 export { recordSchemaFor } from './records.mjs';
 import { outcomeFor, stampRecord } from './outcome.mjs';
 export { outcomeFor } from './outcome.mjs';
@@ -436,14 +436,8 @@ export class TeachingSession {
         const args = JSON.parse(decision.arguments);
         // A tutor sometimes fills in a field that belongs to another tool (the
         // wrap-up notes on an ordinary reply). Drop it; do not lose the reply.
-        const known = tool.inputSchema.properties;
-        if (known && args && typeof args === 'object' && !Array.isArray(args)) {
-          const extra = Object.keys(args).filter((k) => !(k in known));
-          if (extra.length) {
-            for (const k of extra) delete args[k];
-            this.log({ type: 'arguments_trimmed', tool: tool.name, dropped: extra });
-          }
-        }
+        const dropped = trimArguments(tool, args);
+        if (dropped.length) this.log({ type: 'arguments_trimmed', tool: tool.name, dropped });
         validate(tool.inputSchema, args);
         const noted = pickRecords(decision, recordSchemaFor(this.pkg));
         this.log({
