@@ -239,9 +239,10 @@ buttons, hint and "try it" are the player's standard controls
 ## Running
 
 The lesson ships with the player. From the os-taxonomy checkout run
-`npm run player:dev` and open it from the library. From the lesson's folder,
-`node tools/write-descriptor.mjs` and `node tools/write-teaching.mjs` regenerate
-`experience.json` and `teaching.json` after edits. From the `player` folder,
+`npm run player:dev` and open it from the library. From the `player` folder,
+`node --import ./test/support/player-paths.mjs scripts/write-experience.mjs lessons/how-rainbows-form model/rainbow.mjs`
+regenerates `experience.json`, and `node lessons/how-rainbows-form/tools/write-teaching.mjs`
+regenerates `teaching.json`, after edits. From the same folder,
 `npm test` runs its model tests (`test/rainbow.test.mjs`) and
 `OUT=/some/dir node scripts/rainbow-browser-check.mjs` repeats the browser check.
 

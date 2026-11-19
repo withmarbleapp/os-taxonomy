@@ -297,13 +297,14 @@ export function defineLesson(spec) {
       attempts: [],
       results: [],
       instruction: first ? shows[first].instruction : (spec.idle ?? ''),
-      ...call(spec.state.initial),
+      ...structuredClone(call(spec.state.initial)),
     };
     const ctx = () => ({ random, memory, state });
     // A lesson's patch may only touch its own representation.
     function apply(patch) {
       for (const key of Object.keys(patch ?? {})) if (!repKeys.includes(key)) throw Error(`A lesson patch may not set ${key}`);
-      Object.assign(state, patch);
+      // Copied, so a lesson's own initial and reset values are never the live arrays.
+      Object.assign(state, structuredClone(patch ?? {}));
     }
     if (first) apply(shows[first].arrange(ctx()));
     const snapshot = () =>

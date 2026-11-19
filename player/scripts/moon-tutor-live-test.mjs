@@ -1,4 +1,5 @@
 // Synthetic learners only. Uses the explicitly selected local player's tutor.
+//   node --import ./test/support/player-paths.mjs scripts/moon-tutor-live-test.mjs [name]
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
@@ -134,7 +135,7 @@ for (const [name, inputs] of [
     if (step.clickCurrent) {
       const s=model.snapshot().state;
       if(tutorView(s).currentCheck?.status!=='awaiting_answer') throw Error('Expected a pending button check');
-      model.learnerPredict(s.task==='daylight'?s.day:s.moonAboveHorizon);
+      model.answer((s.item==='day_night'?s.day:s.moonAboveHorizon)?0:1);
       input='The learner committed a button answer. Respond to the current result and carry the teaching forward.';
       origin='observation';
       events.push({type:'synthetic_action',action:'answer_button',state:model.snapshot().state});
@@ -142,16 +143,16 @@ for (const [name, inputs] of [
     if (step.answerCurrent) {
       const s = model.snapshot().state;
       if (tutorView(s).currentCheck?.status !== 'awaiting_answer') throw Error('Expected a pending check before synthetic answer');
-      input = s.task === 'daylight' ? (s.day ? 'Day' : 'Night') : (s.moonAboveHorizon ? 'Yes' : 'No');
+      input = s.item === 'day_night' ? (s.day ? 'Day' : 'Night') : (s.moonAboveHorizon ? 'Yes' : 'No');
     }
-    if (typeof step === 'object' && step.theta !== undefined && model.snapshot().state.canTurn) {
-      model.learnerView('space');
+    if (typeof step === 'object' && step.theta !== undefined && model.snapshot().state.item === 'turn_earth') {
+      model.control('set_view', { view: 'space' });
       for (let n = 0; n < 20; n++) {
         const delta = step.theta - model.snapshot().state.theta;
         if (Math.abs(delta) < 0.001) break;
-        model.learnerTurn(delta);
+        model.gesture('turn', delta);
       }
-      model.learnerView('sky');
+      model.control('set_view', { view: 'sky' });
       events.push({type:'synthetic_action', action:'rotate_and_view', state:model.snapshot().state});
     }
     events.push({ type: origin==='learner'?'synthetic_learner':'synthetic_observation', text: input });

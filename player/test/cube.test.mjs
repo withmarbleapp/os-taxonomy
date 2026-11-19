@@ -200,3 +200,16 @@ test('cube: the wrap-up marks helped plans as helped and unaided ones as the chi
   plan(m, right(state()));
   assert.equal(row([helped, stamp()]), 'own');
 });
+
+test('starting the layer activity again gives an empty layer, in this model and the next', () => {
+  const { m, state } = make();
+  exec(m, 'start_activity', { activity: 'build_layer' });
+  while (!state().layerComplete) m.gesture('place');
+  exec(m, 'start_activity', { activity: 'build_layer' });
+  assert.equal(state().filled.length, 0);
+  assert.equal(state().layerComplete, false);
+  assert.ok(m.gesture('place'));
+  const next = make();
+  exec(next.m, 'start_activity', { activity: 'build_layer' });
+  assert.equal(next.state().filled.length, 0);
+});

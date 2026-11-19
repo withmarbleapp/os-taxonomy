@@ -231,3 +231,17 @@ test('screen diagram and explorer visibility remain distinct at night', async ()
   v = tutorView(m.snapshot().state);
   assert.deepEqual(v.screen.view.aboveHorizon,['Moon']);
 });
+
+test('a fresh prediction is never a near copy of an arrangement already shown', () => {
+  const shown = { blocked_light: 3.95, daytime_without_moon: 3.95, daytime_moon: 2.35, daytime_light: 2.35 };
+  for (const [moment, theta] of Object.entries(shown))
+    for (let seed = 0; seed < 200; seed++) {
+      let n = seed;
+      const random = () => ((n = (n * 1103515245 + 12345) % 2147483648), n / 2147483648);
+      const m = createMoon({ sessionId: 'test', random });
+      exec(m, 'show_moment', { moment });
+      exec(m, 'start_check', { question: 'moon_visible', situation: 'fresh' });
+      const s = m.snapshot().state;
+      assert.ok(Math.abs(s.theta - theta) >= 0.15 || Math.abs(s.phi - 1.55) >= 0.15, `${moment} seed ${seed}`);
+    }
+});
