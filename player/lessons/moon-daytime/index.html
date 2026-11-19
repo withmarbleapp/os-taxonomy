@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>The Moon’s daytime visit</title>
+    <link rel="stylesheet" href="/player/scene-base.css" />
+    <link rel="stylesheet" href="scene/style.css" />
+  </head>
+  <body>
+    <canvas id="world"></canvas>
+    <div id="lesson-ui" hidden>
+      <header><h1>The Moon’s daytime visit</h1></header>
+      <aside id="explanation"><p id="instruction" role="status"></p></aside>
+      <button
+        id="earth"
+        class="object"
+        aria-label="Turn Earth. Drag or use left and right arrow keys."
+      >
+        <span class="button-label">Turn Earth</span>
+      </button>
+      <button id="sun" class="object" aria-label="Select Sun">
+        <span class="button-label">Sun</span>
+      </button>
+      <button
+        id="moon"
+        class="object"
+        aria-label="Moon. Drag or use arrow keys to move when exploring; tap to select in a light journey."
+      >
+        <span id="moon-label" class="button-label">Moon</span>
+      </button>
+      <button id="observer" class="object" aria-label="Select explorer">
+        <span class="button-label">Explorer</span>
+      </button>
+      <nav id="actions" aria-label="Explore the scene">
+        <button id="resume" class="control" hidden>↗ Try it</button
+        ><button id="replay" class="control" hidden>↻ Replay light</button
+        ><button id="eye" class="control">↘ See the sky</button>
+        <div id="lookTools" hidden>
+          <button id="lookSun" class="control">☀ Find Sun</button
+          ><button id="lookMoon" class="control">☾ Find Moon</button>
+        </div>
+        <button id="hint" class="control" hidden>✧ Show a hint</button>
+      </nav>
+      <div id="choices" hidden>
+        <button id="yes" class="control">Yes</button
+        ><button id="no" class="control">No</button>
+      </div>
+      <div id="pathTools" hidden>
+        <p id="path-order" aria-live="polite"></p>
+        <button id="clear-path" class="control">↶ Clear</button
+        ><button id="check-path" class="control primary">✓ Check the journey</button>
+      </div>
+    </div>
+    <script type="module" src="adapter.mjs"></script>
+  </body>
+</html>

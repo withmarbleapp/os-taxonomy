@@ -1,0 +1,211 @@
+body {
+  background: #0b1726;
+  color: #fff5df;
+}
+#world {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+header {
+  position: absolute;
+  left: 32px;
+  top: 24px;
+  pointer-events: none;
+}
+h1 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+#explanation {
+  position: absolute;
+  top: 90px;
+  left: 32px;
+  max-width: 460px;
+  padding: 0 14px;
+  border-left: 3px solid #8bc8fa;
+  pointer-events: none;
+  text-shadow: 0 2px 8px #07101f;
+}
+#instruction {
+  font-size: 27px;
+  line-height: 1.2;
+  margin: 0;
+}
+body.sky.day {
+  color: #172a32;
+}
+body.sky.day #explanation {
+  text-shadow: none;
+  background: #fdfcfad9;
+  border-radius: 0 12px 12px 0;
+  padding: 10px 14px;
+}
+.object {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  color: #fff9dd;
+  touch-action: none;
+}
+.object .button-label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 9px;
+  border: 2px solid #242722;
+  border-radius: 18px;
+  background: #fdfcfa;
+  color: #141414;
+  font-size: 16px;
+  box-shadow: 0 3px #242722;
+  white-space: nowrap;
+}
+#earth {
+  cursor: grab;
+}
+#observer {
+  z-index: 2;
+}
+#actions {
+  position: absolute;
+  bottom: 30px;
+  left: 24px;
+  right: var(--marble-controls-right, 210px);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#lookTools {
+  display: flex;
+  gap: 12px;
+}
+#choices,
+#pathTools {
+  position: absolute;
+  bottom: 115px;
+  left: 24px;
+  right: var(--marble-controls-right, 210px);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#path-order {
+  width: 100%;
+  margin: 0;
+  font-size: 22px;
+}
+button:focus-visible,
+#world:focus-visible {
+  outline: 4px solid #c3a3ff;
+  outline-offset: 4px;
+}
+[hidden] {
+  display: none !important;
+}
+.control {
+  font-size: 18px;
+  white-space: nowrap;
+}
+body.sky #world {
+  cursor: grab;
+}
+@media (max-width: 800px) {
+  header {
+    top: 24px;
+    left: 20px;
+    max-width: calc(100% - 100px);
+  }
+  h1 {
+    font-size: 17px;
+  }
+  #explanation {
+    top: 80px;
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+  #instruction {
+    font-size: 24px;
+  }
+  #actions {
+    left: 16px;
+    bottom: 26px;
+    gap: 10px;
+  }
+  .control {
+    font-size: 16px;
+    padding: 9px 12px;
+    min-height: 46px;
+  }
+  #lookTools {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #choices,
+  #pathTools {
+    left: 16px;
+    right: 16px;
+    bottom: 215px;
+    gap: 10px;
+  }
+  .object .button-label {
+    font-size: 14px;
+    padding: 4px 7px;
+  }
+  #path-order {
+    font-size: 19px;
+  }
+}
+@media (max-height: 600px) {
+  #explanation {
+    top: 65px;
+    max-width: 360px;
+  }
+  #instruction {
+    font-size: 21px;
+  }
+  #actions {
+    bottom: 18px;
+  }
+  #choices,
+  #pathTools {
+    bottom: 90px;
+  }
+}
+
+/* The same visual key marks the explorer's horizon in either view. */
+#horizon-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+#horizon-overlay path { fill: none; stroke-linecap: round; }
+.horizon-outline { stroke: #302232; stroke-width: 7px; }
+.horizon-line { stroke: #ffabc2; stroke-width: 4px; }
+#horizon-label {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+  padding: 2px 10px;
+  border: 2px solid #ffabc2;
+  border-radius: 9px;
+  background: #302232;
+  color: #ffe4ed;
+  font-size: 18px;
+  line-height: 1.3;
+}

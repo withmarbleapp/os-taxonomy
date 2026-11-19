@@ -13,6 +13,12 @@
     "alignments:normalize": "node scripts/curriculum-alignments.mjs normalize",
     "alignments:project": "node scripts/curriculum-alignments.mjs project",
     "alignments:generate": "node scripts/generate-alignment-artifacts.mjs --write",
-    "alignments:generated-check": "node scripts/generate-alignment-artifacts.mjs"
+    "alignments:generated-check": "node scripts/generate-alignment-artifacts.mjs",
+    "player:install": "npm --prefix player ci",
+    "player:dev": "npm --prefix player run dev",
+    "player:start": "npm --prefix player start",
+    "player:test": "npm --prefix player test",
+    "player:test:browser": "npm --prefix player run test:browser",
+    "skill:validate": "python3 .agents/skills/marble-voice-lesson/scripts/validate_bundle.py"
   }
 }

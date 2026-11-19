@@ -1,0 +1,25 @@
+Moon Visit conversational adaptation
+
+Original source: withmarbleapp/os-taxonomy,
+.agents/skills/marble-builder/examples/moon-visit/source/
+© Generative Spark, Inc. (Marble), https://withmarble.com
+Marble-authored examples and adapted artwork/source: CC BY-SA 4.0.
+Full license: LICENSE-CONTENT.txt.
+
+Reused: original atlas, explorer, landscape, sky, Sun shaders and shared geometry.
+Changed: new state/command adapter, tutor lesson binding, renderer integration,
+push-to-talk host, learner task controls, evidence/exposure records and UI flow.
+The original standalone experience is unchanged.
+
+Three.js 0.180.0: Copyright 2010-2025 Three.js Authors; MIT.
+See vendor/THREE-LICENSE.txt. Includes BufferGeometryUtils.
+Bundled fonts: SIL Open Font License 1.1. See FONT-LICENSES.md,
+Baloo2-OFL.txt, Inter-OFL.txt and EBGaramond-OFL.txt in this directory.
+
+Marble walkie-talkie UI: chassis and side-control art copied from tutor-prototype
+unity/Assets/Modules/App/UI/Companion/Graphics/walkie-talkie.svg and
+unity/Assets/Modules/UI/UI/SharedCompanionIcons/{camera,keyboard}.svg.
+Layout follows WalkieTalkieSizer and WalkieTalkieDocument; speaking spark paths
+come from CompanionSpeakingSparksController, thinking-grid geometry from
+CompanionThinkingDotsController. These internal Marble UI assets retain their
+existing ownership/terms; this local adaptation does not assign a new license.

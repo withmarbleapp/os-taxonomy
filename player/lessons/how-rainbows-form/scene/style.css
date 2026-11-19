@@ -1,0 +1,220 @@
+body {
+  background: #8fd0f5;
+  color: #141414;
+}
+body.drop {
+  background: #12283d;
+  color: #fff5df;
+}
+#lesson-ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+#lesson-ui button {
+  pointer-events: auto;
+}
+header {
+  position: absolute;
+  left: 32px;
+  top: 24px;
+  right: auto;
+  pointer-events: none;
+}
+#explanation {
+  position: absolute;
+  top: 70px;
+  left: 32px;
+  right: auto;
+  width: auto;
+  max-width: min(42vw, 440px);
+  padding: 10px 16px;
+  border-left: 4px solid #8bc8fa;
+  border-radius: 0 12px 12px 0;
+  background: #fdfcfae0;
+  pointer-events: none;
+}
+body.drop #explanation {
+  background: #07101fd0;
+}
+#instruction {
+  font-size: clamp(22px, 2.3vw, 28px);
+  line-height: 1.2;
+  margin: 0;
+}
+/* The frame round the part of the canvas that shows Mia's own view. */
+#window {
+  position: absolute;
+  top: 20px;
+  right: calc(var(--marble-menu-right, 88px) + 8px);
+  width: min(40vw, 430px);
+  aspect-ratio: 3 / 2;
+  border: 4px solid #fdfcfa;
+  border-radius: 14px;
+  box-shadow:
+    0 0 0 2px #242722,
+    0 6px 0 #242722;
+}
+.window-label {
+  position: absolute;
+  left: 10px;
+  bottom: -16px;
+  padding: 3px 10px;
+  border: 2px solid #242722;
+  border-radius: 14px;
+  background: #ffda72;
+  color: #141414;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 1;
+}
+#window-cover {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: repeating-linear-gradient(135deg, #3d4a63 0 18px, #46546f 18px 36px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#window-cover span {
+  font-size: 84px;
+  font-weight: 700;
+  color: #fdfcfa;
+  line-height: 1;
+}
+.object {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 56px;
+  min-height: 56px;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  touch-action: none;
+}
+.object .button-label {
+  position: absolute;
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -6px);
+  padding: 5px 10px;
+  border: 2px solid #242722;
+  border-radius: 18px;
+  background: #fdfcfa;
+  color: #141414;
+  font-size: 16px;
+  box-shadow: 0 3px #242722;
+  white-space: nowrap;
+}
+#mia,
+#gaze,
+#beam {
+  cursor: grab;
+}
+#gaze {
+  z-index: 2;
+}
+.object[data-chip='above'] .button-label {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 6px);
+}
+.object[data-dragging='true'] .button-label {
+  background: #ffda72;
+}
+#choices,
+#actions {
+  position: absolute;
+  left: 24px;
+  right: var(--marble-controls-right, 210px);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  pointer-events: none;
+}
+#actions {
+  bottom: 30px;
+}
+#choices {
+  bottom: 96px;
+}
+#choices .control {
+  font-size: 20px;
+  min-height: 56px;
+  padding: 10px 22px;
+  white-space: normal;
+  text-align: left;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 800px) {
+  header {
+    top: 20px;
+    left: 20px;
+    max-width: calc(100% - 110px);
+  }
+  #explanation {
+    top: 56px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+    max-width: none;
+    padding: 8px 12px;
+    background: #fdfcfae0 !important;
+  }
+  body.drop #explanation {
+    background: #07101fd0 !important;
+  }
+  #instruction {
+    font-size: 21px;
+  }
+  #window {
+    top: 150px;
+    right: 16px;
+    width: min(62vw, 300px);
+  }
+  .window-label {
+    font-size: 14px;
+  }
+  #choices,
+  #actions {
+    left: 16px;
+    right: 16px;
+    gap: 10px;
+  }
+  #choices {
+    bottom: calc(var(--marble-controls-bottom, 225px) + 8px);
+  }
+  #actions {
+    bottom: 26px;
+    right: var(--marble-controls-right, 166px);
+  }
+  #choices .control {
+    font-size: 17px;
+    min-height: 50px;
+    padding: 8px 14px;
+  }
+  .object .button-label {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+@media (max-height: 620px) and (min-width: 801px) {
+  #explanation {
+    top: 56px;
+  }
+  #window {
+    width: min(34vw, 330px);
+  }
+  #choices {
+    bottom: 84px;
+  }
+  #actions {
+    bottom: 18px;
+  }
+}

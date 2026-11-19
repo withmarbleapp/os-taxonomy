@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Volume in layers</title
+  ><link rel="stylesheet" href="/player/scene-base.css" /><link
+    rel="stylesheet"
+    href="scene/style.css"
+  /><style>
+    #lesson-ui {
+      display: contents;
+    }
+    #actions {
+      bottom: 30px;
+      left: 20px;
+      right: var(--marble-controls-right, 210px);
+    }
+    #plan-controls {
+      bottom: 170px;
+    }
+    body {
+      background: #faf2df;
+    }
+    #world {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }</style
+  ><canvas
+    id="world"
+    tabindex="0"
+    aria-label="Drag to turn the cubes; arrow keys turn or open layers"
+  ></canvas>
+  <div id="lesson-ui">
+    <div id="plan-controls" hidden>
+      <form id="plan-form">
+        <div class="equation">
+          <label
+            >Cubes in one layer<input
+              id="perLayer"
+              type="number"
+              min="0"
+              max="999"
+              required /></label
+          ><span>×</span
+          ><label
+            >Number of layers<input id="layers" type="number" min="0" max="999" required /></label
+          ><span>=</span
+          ><label
+            >Cubes altogether<input id="total" type="number" min="0" max="999" required
+          /></label>
+        </div>
+        <button class="control" id="commit">Check my plan</button>
+      </form>
+    </div>
+    <div id="actions">
+      <button class="control" id="place" hidden>Place cube</button
+      ><button class="control" id="stack" hidden>Stack layer</button
+      ><button class="control" id="deepen" hidden>Add back rows</button
+      ><button class="control" id="peel">Open layers</button
+      ><button class="control" id="turn">Turn</button
+      ><button class="control" id="fresh">Try a new block</button>
+    </div>
+  </div>
+  <script type="module" src="adapter.mjs"></script>
+</html>

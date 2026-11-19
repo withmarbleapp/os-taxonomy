@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Marble kit</title>
+<!-- Shows one fixture from ./fixtures: gallery.html?fixture=underwater
+     Fixtures are small scenes built only from the kit. They are what the kit is
+     judged against, and the pictures an author compares new work with. -->
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; font: 600 15px system-ui, sans-serif; background: #111; }
+  canvas { width: 100%; height: 100%; display: block; }
+  .label { position: absolute; transform: translate(-50%, 0); padding: 2px 9px; border-radius: 9px;
+    background: #fdfcfae6; color: #1d1a26; white-space: nowrap; }
+</style>
+<canvas id="world"></canvas>
+<script type="module">
+  import { createStage } from './stage.mjs';
+  const params = new URLSearchParams(location.search);
+  const name = params.get('fixture') ?? 'catalogue';
+  const fixture = await import(`./fixtures/${name}.mjs`);
+  const stage = createStage(document.getElementById('world'), { setting: params.get('setting') ?? fixture.setting ?? 'daylight' });
+  const { camera, labels = [], tick } = await fixture.build(stage, params);
+  const chips = labels.map(({ text, at }) => ({
+    at,
+    el: document.body.appendChild(Object.assign(document.createElement('div'), { className: 'label', textContent: text })),
+  }));
+  const still = params.has('still');
+  function frame(now = 0) {
+    tick?.(still ? Number(params.get('t') ?? 0) : now / 1000);
+    stage.resize(innerWidth, innerHeight);
+    stage.render(camera);
+    for (const { el, at } of chips) {
+      const p = at.clone().project(camera);
+      el.style.left = ((p.x + 1) / 2) * innerWidth + 'px';
+      el.style.top = ((1 - p.y) / 2) * innerHeight + 'px';
+    }
+    // A still picture is redrawn a few times: the window settles its size after load.
+    if (!still || ++drawn < 8) requestAnimationFrame(frame);
+  }
+  let drawn = 0;
+  addEventListener('resize', () => still && frame());
+  frame();
+  document.title = 'ready';
+</script>

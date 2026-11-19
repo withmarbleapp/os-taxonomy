@@ -1,0 +1,22 @@
+{
+  "id": "equal-parts",
+  "introduction": { "objective": "Name how many equal parts make one whole." },
+  "learningGoals": [{ "id": "whole-and-parts", "objective": "Count the equal parts in a whole." }],
+  "dialogue": {
+    "mode": "adaptive-general",
+    "focuses": [{ "id": "parts", "goals": ["whole-and-parts"] }]
+  },
+  "teaching": [],
+  "observationEvents": ["answer_checked"],
+  "evidenceEvents": ["answer_checked"],
+  "selfEvaluation": {
+    "skills": [
+      {
+        "id": "count-parts",
+        "description": "Count the equal parts in a whole.",
+        "focuses": ["parts"]
+      }
+    ]
+  },
+  "tutorGuidance": "This is a small authoring starter, not a complete researched lesson. The whole bar is split into equal parts. A meaningful explanation connects the number of equal parts to the whole bar. A different number of parts provides another counting example. Assess only currentAttempt after Check, never the draft. Use the visible parts to address a counting error. Available practice varies the number of parts; do not describe a repeated or revealed answer as fresh independent evidence."
+}
