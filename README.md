@@ -308,6 +308,17 @@ node scripts/validate.mjs
 node --test scripts/teaching-research.test.mjs
 ```
 
+### From an AI assistant
+
+The optional [MCP server](mcp/README.md) gives Claude, ChatGPT, Cursor and other
+MCP clients read-only tools to search topics, follow prerequisites, look up
+standards by code and read teaching research:
+
+```sh
+npm run mcp:install
+claude mcp add marble-skill-taxonomy -- node "$(pwd)/mcp/server.mjs"
+```
+
 ## Marble Builder
 
 The [`marble-builder` agent skill](.agents/skills/marble-builder/SKILL.md)
