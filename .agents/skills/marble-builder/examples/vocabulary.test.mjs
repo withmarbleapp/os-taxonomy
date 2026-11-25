@@ -41,3 +41,17 @@ test('English defaults, literal aliases and empty lexicons',()=>{
  assert.deepEqual(matcher([['literal',['a+b'],'Literal']])('a+b aaab'),[{text:'a+b',index:0,key:'literal'}]);
  assert.deepEqual(matcher([])('gravité photons'),[]);
 });
+
+test('Arabic terms match across tashkeel, tatweel and definite/clitic prefixes while preserving visible text',()=>{
+ const match=matcher([
+  ['photon',['فوتون','فوتونات'],'حزمة صغيرة من طاقة الضوء.'],
+  ['scattering',['تشتت'],'تغير اتجاه الضوء عند اصطدامه بجسيمات الهواء.']
+ ]);
+ const text='ينتقل الفُوتُون في الهواء ويحدث تَشَتُّت للفوتونات بِالفوتون.';
+ assert.deepEqual(match(text),[
+  {text:'الفُوتُون',index:6,key:'photon'},
+  {text:'تَشَتُّت',index:32,key:'scattering'},
+  {text:'للفوتونات',index:41,key:'photon'},
+  {text:'بِالفوتون',index:51,key:'photon'}
+ ]);
+});
