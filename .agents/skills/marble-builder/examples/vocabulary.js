@@ -36,14 +36,16 @@ const entries=options.entries??[
  ['perimeter',['perimeter','perimeters'],'The distance all the way around the outside edge of a flat shape.'],
  ['tessellation',['tessellation','tessellations','tiling'],'A pattern of flat shapes that fit together without gaps or overlaps.']
 ];
-const normalize=s=>s.normalize('NFC').replace(/’/g,"'").toLowerCase();
-const aliases=new Map(),definitions=new Map();for(const [key,words,text]of entries){definitions.set(key,text);for(const word of words){const alias=normalize(word);if(alias)aliases.set(alias,key);}}
+const arMarks='[\\u0640\\u064B-\\u065F\\u0670]*';
+const normalize=s=>s.normalize('NFC').replace(/[\u0640\u064B-\u065F\u0670]/g,'').replace(/’/g,"'").toLowerCase();
+const aliases=new Map(),definitions=new Map();for(const [key,words,text]of entries){definitions.set(key,text);for(const word of words){const alias=normalize(word);if(alias){aliases.set(alias,key);if(/^[\u0621-\u064A]{3,}$/.test(alias)&&!alias.startsWith('ال')){for(const p of['ال','وال','فال','بال','كال','و','ف','ب','ك'])if(!aliases.has(p+alias))aliases.set(p+alias,key);const ll='لل'+(alias.startsWith('ل')?alias.slice(1):alias);if(!aliases.has(ll))aliases.set(ll,key);}}}}
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 // Choose composed/decomposed spelling per character, not per whole alias:
 // a pasted word can mix both forms while its original visible text stays intact.
 const spelling=word=>[...word].map(char=>{
  const decomposed=char.normalize('NFD');
- return char==="'"?"['’]":char===decomposed?escape(char):'(?:'+escape(char)+'|'+escape(decomposed)+')';
+ const base=char==="'"?"['’]":char===decomposed?escape(char):'(?:'+escape(char)+'|'+escape(decomposed)+')';
+ return /[\u0621-\u064A]/.test(char)?base+arMarks:base;
 }).join('');
 const alternatives=[...aliases.keys()].sort((a,b)=>b.length-a.length).map(spelling).join('|');
 const pattern=new RegExp('(?<![\\p{L}\\p{M}])('+(alternatives||'(?!)')+')(?![\\p{L}\\p{M}])','giu');
@@ -51,13 +53,13 @@ const style=document.createElement('style');style.textContent=`
  body .vocab-term{display:inline!important;font:inherit!important;color:inherit!important;line-height:inherit!important;letter-spacing:inherit!important;border:0!important;border-radius:2px!important;padding:0!important;margin:0!important;background:none!important;box-shadow:none!important;text-decoration-line:underline;text-decoration-style:dashed;text-decoration-thickness:1.5px;text-underline-offset:.16em;cursor:help;pointer-events:auto!important;white-space:normal;transform:none!important;translate:none!important;min-height:0!important}
  body .vocab-term:hover,body .vocab-term:active{background:none!important;box-shadow:none!important;color:inherit!important;transform:none!important;translate:none!important}
  body .vocab-term:focus-visible{outline:3px solid #774dc7!important;outline-offset:4px}
- #vocab-popover{position:fixed;z-index:1000;width:max-content;max-width:min(330px,calc(100vw - 32px));margin:0;padding:18px 52px 20px 20px;border:2px solid #242722;border-radius:20px;background:#fffdf6;color:#253e38;box-shadow:0 5px 0 #242722;font-family:'Baloo 2',sans-serif;text-align:left;pointer-events:auto;box-sizing:border-box}
- #vocab-popover[hidden]{display:none!important}#vocab-word{display:block;margin:0 0 6px;font-size:16px;font-weight:500;line-height:1.2;opacity:.75}#vocab-definition{margin:0;font:500 21px/1.23 'Baloo 2',sans-serif;letter-spacing:-.2px}
- #vocab-close{position:absolute;right:4px;top:4px;display:grid;place-items:center;width:44px;height:44px;min-height:44px;margin:0;padding:0;border:0;border-radius:50%;background:transparent;color:#253e38;box-shadow:none;cursor:pointer;transform:none;translate:none}
+ #vocab-popover{position:fixed;z-index:1000;width:max-content;max-width:min(330px,calc(100vw - 32px));margin:0;padding-block:18px 20px;padding-inline:20px 52px;border:2px solid #242722;border-radius:20px;background:#fffdf6;color:#253e38;box-shadow:0 5px 0 #242722;font-family:'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;text-align:start;pointer-events:auto;box-sizing:border-box}
+ #vocab-popover[hidden]{display:none!important}#vocab-word{display:block;margin:0 0 6px;font-size:16px;font-weight:500;line-height:1.2;opacity:.75}#vocab-definition{margin:0;font:500 21px/1.23 'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;letter-spacing:0}
+ #vocab-close{position:absolute;inset-inline-end:4px;top:4px;display:grid;place-items:center;width:44px;height:44px;min-height:44px;margin:0;padding:0;border:0;border-radius:50%;background:transparent;color:#253e38;box-shadow:none;cursor:pointer;transform:none;translate:none}
  #vocab-close:hover{background:#efe7ce}#vocab-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}#vocab-close:focus-visible{outline:3px solid #774dc7;outline-offset:-3px}
  @media(max-width:600px){#vocab-definition{font-size:19px}#vocab-popover{max-width:calc(100vw - 32px)}}
  `;document.head.append(style);
-const popup=document.createElement('aside');popup.id='vocab-popover';popup.hidden=true;popup.setAttribute('role','region');popup.setAttribute('aria-label',strings.regionLabel);popup.dataset.vocabSkip='';
+const popup=document.createElement('aside');popup.id='vocab-popover';popup.hidden=true;popup.dir=document.documentElement.dir||document.body.dir||'auto';popup.setAttribute('role','region');popup.setAttribute('aria-label',strings.regionLabel);popup.dataset.vocabSkip='';
 popup.innerHTML='<strong id="vocab-word"></strong><p id="vocab-definition"></p><button id="vocab-close" type="button" ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button>';popup.querySelector('button').setAttribute('aria-label',strings.closeLabel);document.body.append(popup);
 let descriptionTarget=null,savedDescription=null;
 let anchor=null,pinned=false,leaveTimer=0,scheduled=false,restoringFocus=false;

@@ -2,12 +2,15 @@
 export function createOpening({question,dark=false,onStart,focusTarget,startLabel='Let’s find out'}){
  const style=document.createElement('style');style.textContent=`
  body.question-cover-open :is(header,aside:not(#vocab-popover),#progress,#dots,#controls,#scene-actions,#restart,#reset,#choices,#actions,#worldChoices,#waveControls,#sunHandle,#earth,#sun,#moon,#observer,#eye,#lookTools,#next,#hint,#extra,#feedbackToast,#moonLocator){visibility:hidden!important;pointer-events:none!important}
- #opening-screen{position:fixed;inset:0;z-index:30;overflow:hidden;font-family:'Baloo 2',sans-serif;color:#253e38;background:linear-gradient(90deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}
+ #opening-screen{position:fixed;inset:0;z-index:30;overflow:hidden;font-family:'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;color:#253e38;background:linear-gradient(90deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}
  #opening-screen[hidden]{display:none!important}#opening-screen.dark{color:#fff1d4;background:linear-gradient(90deg,#07101f 0%,#07101ff2 27%,#07101f00 61%)}
- #opening-copy{position:absolute;left:7%;top:27%;width:41%;max-width:620px}
- #opening-question{font:550 clamp(50px,5.6vw,80px)/1.04 'Baloo 2',sans-serif;letter-spacing:-1.6px;margin:0;text-wrap:balance;color:inherit}
- #opening-start{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:32px;min-height:58px;padding:13px 23px;border:2px solid #8b0023;border-radius:22px;background:#f42324;color:white;box-shadow:0 5px 0 #8b0023;font:500 20px 'Baloo 2',sans-serif;cursor:pointer;touch-action:manipulation;transform:none}
+ @media(min-width:801px){[dir="rtl"] #opening-screen{background:linear-gradient(270deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}[dir="rtl"] #opening-screen.dark{background:linear-gradient(270deg,#07101f 0%,#07101ff2 27%,#07101f00 61%)}}
+ #opening-copy{position:absolute;inset-inline-start:7%;top:27%;width:41%;max-width:620px}
+ #opening-question{font:550 clamp(50px,5.6vw,80px)/1.04 'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;letter-spacing:-1.6px;margin:0;text-wrap:balance;color:inherit}
+ [dir="rtl"] #opening-question{letter-spacing:0;line-height:1.18}
+ #opening-start{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:32px;min-height:58px;padding:13px 23px;border:2px solid #8b0023;border-radius:22px;background:#f42324;color:white;box-shadow:0 5px 0 #8b0023;font:500 20px 'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;cursor:pointer;touch-action:manipulation;transform:none}
  #opening-start svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+ [dir="rtl"] #opening-start svg{transform:scaleX(-1)}
  #opening-start:hover{background:#d61922;translate:0 -2px}#opening-start:active{translate:0 3px;box-shadow:0 2px 0 #8b0023}#opening-start:focus-visible{outline:4px solid #774dc7;outline-offset:6px}
  @media(max-width:800px){#opening-copy{left:24px;right:24px;top:8%;width:auto;max-width:650px}#opening-question{font-size:clamp(35px,9.8vw,58px);line-height:1.04;letter-spacing:-1px}#opening-start{position:fixed;bottom:44px;left:50%;translate:-50% 0;margin:0;white-space:nowrap;font-size:18px}#opening-start:hover{translate:-50% -2px}#opening-start:active{translate:-50% 3px}#opening-screen{background:linear-gradient(180deg,#f8f5eb 0%,#f8f5ebee 17%,#f8f5eb00 38%,#f8f5eb00 81%,#f8f5eb 98%)}#opening-screen.dark{background:linear-gradient(180deg,#07101f 0%,#07101fee 17%,#07101f00 38%,#07101f00 81%,#07101f 98%)}}
  @media(max-height:600px) and (min-width:801px){#opening-copy{top:16%}#opening-question{font-size:46px}#opening-start{margin-top:22px;min-height:50px}}

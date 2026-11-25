@@ -23,7 +23,7 @@
   --ml-copy-clear: #fdfcfa00;
   --ml-copy-shadow: none;
   --ml-focus: #774dc7;
-  font-family: "Baloo 2", sans-serif;
+  font-family: "Baloo 2", "Readex Pro", "Geeza Pro", "SF Arabic", "Arial", sans-serif;
   color: var(--ml-ink);
   background: var(--ml-paper);
 }
@@ -243,5 +243,39 @@
   .marble-learning *, .marble-learning *::before, .marble-learning *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+:is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-header {
+  left: auto;
+  right: 32px;
+}
+:is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-title,
+:is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-instruction {
+  letter-spacing: 0;
+}
+:is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-explanation {
+  left: auto;
+  right: 40px;
+  border-left: 0;
+  border-right: 4px solid var(--ml-explanation-accent);
+  background: linear-gradient(270deg, var(--ml-copy-wash), var(--ml-copy-clear));
+}
+:is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-explanation--right {
+  right: auto;
+  left: 40px;
+  background: linear-gradient(90deg, var(--ml-copy-wash), var(--ml-copy-clear));
+}
+@media (max-width: 800px) {
+  :is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-header {
+    left: auto;
+    right: 20px;
+  }
+  :is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-explanation,
+  :is([dir="rtl"] .marble-learning, .marble-learning[dir="rtl"]) .ml-explanation--right {
+    left: 20px;
+    right: 20px;
+    padding: 0 14px 0 0;
+    border-right-width: 3px;
+    background: transparent;
   }
 }
