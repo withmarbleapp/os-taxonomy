@@ -4,8 +4,7 @@ export function createOpening({question,dark=false,onStart,focusTarget,startLabe
  body.question-cover-open :is(header,aside:not(#vocab-popover),#progress,#dots,#controls,#scene-actions,#restart,#reset,#choices,#actions,#worldChoices,#waveControls,#sunHandle,#earth,#sun,#moon,#observer,#eye,#lookTools,#next,#hint,#extra,#feedbackToast,#moonLocator){visibility:hidden!important;pointer-events:none!important}
  #opening-screen{position:fixed;inset:0;z-index:30;overflow:hidden;font-family:'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;color:#253e38;background:linear-gradient(90deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}
  #opening-screen[hidden]{display:none!important}#opening-screen.dark{color:#fff1d4;background:linear-gradient(90deg,#07101f 0%,#07101ff2 27%,#07101f00 61%)}
- [dir="rtl"] #opening-screen{background:linear-gradient(270deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}
- [dir="rtl"] #opening-screen.dark{background:linear-gradient(270deg,#07101f 0%,#07101ff2 27%,#07101f00 61%)}
+ @media(min-width:801px){[dir="rtl"] #opening-screen{background:linear-gradient(270deg,#f8f5eb 0%,#f8f5ebf2 27%,#f8f5eb00 61%)}[dir="rtl"] #opening-screen.dark{background:linear-gradient(270deg,#07101f 0%,#07101ff2 27%,#07101f00 61%)}}
  #opening-copy{position:absolute;inset-inline-start:7%;top:27%;width:41%;max-width:620px}
  #opening-question{font:550 clamp(50px,5.6vw,80px)/1.04 'Baloo 2','Readex Pro','Geeza Pro','SF Arabic','Arial',sans-serif;letter-spacing:-1.6px;margin:0;text-wrap:balance;color:inherit}
  [dir="rtl"] #opening-question{letter-spacing:0;line-height:1.18}

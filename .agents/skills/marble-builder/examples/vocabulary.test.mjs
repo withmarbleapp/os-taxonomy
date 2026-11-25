@@ -47,11 +47,11 @@ test('Arabic terms match across tashkeel, tatweel and definite/clitic prefixes w
   ['photon',['فوتون','فوتونات'],'حزمة صغيرة من طاقة الضوء.'],
   ['scattering',['تشتت'],'تغير اتجاه الضوء عند اصطدامه بجسيمات الهواء.']
  ]);
- const text='ينتقل الفُوتُون في الهواء ويحدث تَشَتُّت للفوتونات بِالفوتون.';
+ const text='ينتقل الفُوتُون في الهواء ويحدث تَشَتُّت للفوتونات بِالفوتـون.';
  assert.deepEqual(match(text),[
   {text:'الفُوتُون',index:6,key:'photon'},
   {text:'تَشَتُّت',index:32,key:'scattering'},
   {text:'للفوتونات',index:41,key:'photon'},
-  {text:'بِالفوتون',index:51,key:'photon'}
+  {text:'بِالفوتـون',index:51,key:'photon'}
  ]);
 });
